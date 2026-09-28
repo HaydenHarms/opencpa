@@ -10,9 +10,21 @@ type Vars = { userId: string };
 
 const app = new Hono<{ Bindings: Env; Variables: Vars }>();
 
+/** ALLOWED_ORIGINS entries are exact origins or wildcards like https://*.opencpa.pages.dev. */
+function originAllowed(origin: string, allowed: string): boolean {
+  return allowed.split(',').some((raw) => {
+    const rule = raw.trim();
+    if (!rule.includes('*')) return rule === origin;
+    const re = new RegExp(
+      '^' + rule.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace('*', '[a-z0-9-]+') + '$',
+    );
+    return re.test(origin);
+  });
+}
+
 app.use('*', (c, next) =>
   cors({
-    origin: c.env.ALLOWED_ORIGINS.split(',').map((s) => s.trim()),
+    origin: (origin) => (originAllowed(origin, c.env.ALLOWED_ORIGINS) ? origin : null),
     allowHeaders: ['Content-Type', 'X-OpenCPA-User'],
   })(c, next),
 );

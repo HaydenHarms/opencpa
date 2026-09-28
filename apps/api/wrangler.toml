@@ -10,4 +10,4 @@ migrations_dir = "migrations"
 
 [vars]
 # Comma-separated list of origins allowed to call the API.
-ALLOWED_ORIGINS = "http://localhost:5173"
+ALLOWED_ORIGINS = "https://opencpa.pages.dev,https://*.opencpa.pages.dev,http://localhost:5173"
