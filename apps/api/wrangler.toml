@@ -1,0 +1,13 @@
+name = "opencpa-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "opencpa"
+database_id = "f6914d72-bf2d-41ee-9ada-2f3c0f7ef2c8"
+migrations_dir = "migrations"
+
+[vars]
+# Comma-separated list of origins allowed to call the API.
+ALLOWED_ORIGINS = "http://localhost:5173"

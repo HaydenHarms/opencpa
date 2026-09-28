@@ -1,0 +1,188 @@
+:root {
+  --bg: #fafaf8;
+  --fg: #1c1c1a;
+  --muted: #6b6b66;
+  --line: #e4e3de;
+  --card: #fff;
+  --accent: #1f5f4a;
+  --right: #1f7a4d;
+  --wrong: #b3372b;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #151514;
+    --fg: #ecebe6;
+    --muted: #9a9993;
+    --line: #2c2c2a;
+    --card: #1d1d1b;
+    --accent: #6cc3a0;
+    --right: #5fcf93;
+    --wrong: #f07b6e;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.shell {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 16px 64px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 20px;
+}
+.nav a.active,
+.nav .brand {
+  color: var(--fg);
+}
+.brand {
+  font-weight: 700;
+  margin-left: 0 !important;
+}
+.hero h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  line-height: 1.15;
+  margin: 24px 0 12px;
+}
+.hero p {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 60ch;
+}
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--bg);
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 12px;
+}
+.button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.tabs button {
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--fg);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+.tabs button.active {
+  background: var(--fg);
+  color: var(--bg);
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+}
+.meta,
+.muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+.stem {
+  font-size: 17px;
+  line-height: 1.55;
+}
+.choices {
+  list-style: none;
+  padding: 0;
+}
+.choice {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--fg);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 6px 0 0;
+  font: inherit;
+  cursor: pointer;
+}
+.choice.picked {
+  border-color: var(--accent);
+}
+.choice.right {
+  border-color: var(--right);
+}
+.choice.wrong {
+  border-color: var(--wrong);
+}
+.rationale {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 4px 0 8px 12px;
+}
+.right-text {
+  color: var(--right);
+  font-weight: 600;
+}
+.wrong-text,
+.error {
+  color: var(--wrong);
+  font-weight: 600;
+}
+.mastery {
+  width: 100%;
+  border-collapse: collapse;
+}
+.mastery th,
+.mastery td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+.bar {
+  display: inline-block;
+  width: 90px;
+  height: 6px;
+  background: var(--line);
+  border-radius: 3px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.bar span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 3px;
+}

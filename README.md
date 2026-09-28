@@ -19,28 +19,27 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 
 ## Architecture
 
-| Layer     | Tech                                   |
-|-----------|----------------------------------------|
-| Frontend  | SvelteKit on Cloudflare Pages          |
-| API       | Hono on Cloudflare Workers             |
-| Database  | Cloudflare D1 (SQLite) + Drizzle ORM   |
-| Storage   | Cloudflare R2 (exhibits, media)        |
-| Auth      | GitHub OAuth / email magic link        |
-| Tutor     | Claude API (tool use)                  |
+| Layer    | Tech                             |
+| -------- | -------------------------------- |
+| Frontend | React + Vite on Cloudflare Pages |
+| API      | Hono on Cloudflare Workers       |
+| Database | Cloudflare D1 (SQLite)           |
+| Storage  | Cloudflare R2 (exhibits, media)  |
+| Auth     | GitHub OAuth / email magic link  |
+| Tutor    | Claude API (tool use)            |
 
 ```
 opencpa/
 ├── apps/
-│   ├── web/          # SvelteKit frontend
-│   └── api/          # Hono Worker API + tutor endpoints
+│   ├── web/          # React + Vite frontend
+│   └── api/          # Hono Worker API, D1 migrations
 ├── packages/
-│   ├── engine/       # FSRS scheduling, grading, mastery rollups
-│   └── schema/       # Shared content + DB types (zod)
-├── content/
-│   ├── far/          # Questions & simulations as Markdown/YAML
-│   ├── aud/
-│   └── reg/
-└── docs/
+│   ├── engine/       # Grading, FSRS scheduling, mastery rollups
+│   └── schema/       # Content schema (zod), shared types
+├── content/          # One YAML file per question/simulation
+│   ├── far/  aud/  reg/
+│   └── bar/  isc/  tcp/
+└── scripts/          # Content validation + bundling
 ```
 
 ## Content
@@ -49,14 +48,21 @@ All content lives in `content/` as plain files, so contributions are just pull r
 
 ```yaml
 id: far-leases-0001
-section: FAR
-area: "Select transactions — Leases"
-skill: Application
 type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Leases
+  skill: Application
+review:
+  status: draft # only "reviewed" items are served
+  references: [ASC 842-20-30-1]
 stem: >
   A lessee signs a 5-year lease ...
-choices: [ ... ]
-answer: B
+choices:
+  - { id: A, text: '$84,248', rationale: 'Correct: $20,000 × 4.2124.' }
+  - ...
+answer: A
 explanation: >
   ...
 ```
@@ -69,12 +75,15 @@ explanation: >
 git clone https://github.com/HaydenHarms/opencpa.git
 cd opencpa
 pnpm install
-pnpm dev
+pnpm db:migrate:local   # create the local D1 database
+pnpm dev                # web on :5173, API on :8787
 ```
+
+Requires Node 22+ and pnpm 10+. `pnpm test` runs the engine and schema tests; `pnpm content:validate` checks every content file.
 
 ## Contributing
 
-Contributions are welcome, especially new questions, simulations, and explanations reviewed by CPAs or CPA candidates. See `CONTRIBUTING.md` (coming soon).
+Contributions are welcome, especially new questions, simulations, and explanations reviewed by CPAs or CPA candidates. See [CONTRIBUTING.md](CONTRIBUTING.md) for the content format and review checklist.
 
 ## Disclaimer
 

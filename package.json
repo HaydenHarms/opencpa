@@ -1,0 +1,22 @@
+{
+  "name": "opencpa",
+  "private": true,
+  "packageManager": "pnpm@10.28.0",
+  "scripts": {
+    "dev": "pnpm content:build && pnpm -r --parallel --filter ./apps/** dev",
+    "build": "pnpm content:build && pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "content:validate": "tsx scripts/content.ts validate",
+    "content:build": "tsx scripts/content.ts build",
+    "db:migrate:local": "pnpm --filter @opencpa/api db:migrate:local",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@opencpa/schema": "workspace:*",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "yaml": "^2.5.1"
+  }
+}
