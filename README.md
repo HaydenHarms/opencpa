@@ -4,7 +4,9 @@
 
 OpenCPA is a free, community-maintained alternative to commercial CPA review courses. It pairs an adaptive question engine and realistic task-based simulations with a personal AI tutor powered by Claude.
 
-> Status: early scaffolding. FAR is the first section in development.
+**Live:** [opencpa.pages.dev](https://opencpa.pages.dev)
+
+> **Status: early alpha.** The platform is deployed end to end (site, API, database, CI). The question bank is being vetted and added in reviewed batches, starting with FAR, so the site shows no questions until the first batch lands.
 
 ---
 
@@ -41,6 +43,18 @@ opencpa/
 │   └── bar/  isc/  tcp/
 └── scripts/          # Content validation + bundling
 ```
+
+## Roadmap
+
+- [x] Monorepo scaffold: React site, Hono API, D1 database, content schema, CI
+- [x] Deployed to Cloudflare (Pages + Workers + D1) with automatic deploys from `main`
+- [ ] First reviewed FAR batch (~25 questions)
+- [ ] Remaining sections, in reviewed batches
+- [ ] Task-based simulations (journal-entry grid, numeric, research)
+- [ ] Accounts (GitHub / email) so progress syncs across devices
+- [ ] AI tutor (bring your own Claude API key)
+- [ ] Rate limiting, UI redesign, custom domain
+- [ ] Exam-day mode
 
 ## Content
 
@@ -80,6 +94,16 @@ pnpm dev                # web on :5173, API on :8787
 ```
 
 Requires Node 22+ and pnpm 10+. `pnpm test` runs the engine and schema tests; `pnpm content:validate` checks every content file.
+
+## Deployment
+
+Pushes to `main` deploy automatically:
+
+- **Site:** Cloudflare Pages builds `apps/web` (build command `pnpm --filter @opencpa/web build`, output `apps/web/dist`). Set `VITE_API_URL` to the API's address and `NODE_VERSION=22`.
+- **API:** GitHub Actions runs the checks, applies any new D1 migrations, and deploys the Worker. Needs the repo secrets `CLOUDFLARE_API_TOKEN` (Workers Scripts Edit + D1 Edit) and `CLOUDFLARE_ACCOUNT_ID`.
+- **Allowed origins:** the API only accepts browser requests from the origins in `ALLOWED_ORIGINS` (`apps/api/wrangler.toml`). Add any new domain there.
+
+Forking to run your own instance? Create your own D1 database, put its id in `apps/api/wrangler.toml`, and follow the same steps.
 
 ## Contributing
 
