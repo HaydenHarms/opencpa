@@ -11,22 +11,29 @@ review:
   - ASC 470-60 (troubled debt restructurings by debtors)
   - ASU 2022-02 (eliminated TDR accounting for creditors only)
   notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Under ASC 470-60, when does a debtor account for a change in the terms of its debt as a troubled
-  debt restructuring?
+stem: Under ASC 470-60, which of the following changes in debt terms is a troubled debt restructuring
+  for the debtor?
 choices:
 - id: A
-  text: When the present value of the new cash flows differs by at least 10% from the old cash flows
-  rationale: That is the test for modification versus extinguishment, applied when the change is not a
-    troubled debt restructuring.
+  text: A lender lowers the rate to the current market rate to keep a creditworthy borrower from refinancing
+    elsewhere
+  rationale: 'No financial difficulty: a market-rate change for a healthy borrower is a modification or
+    extinguishment, not a troubled debt restructuring.'
 - id: B
-  text: When the creditor grants a concession, whether or not the debtor is in financial difficulty
-  rationale: A concession to a debtor that is not in financial difficulty is not a troubled debt restructuring.
+  text: A borrower that has missed two payments refinances with a new lender at the market rate for its
+    credit risk
+  rationale: 'No concession: market terms for the borrower''s actual risk are not a concession, even though
+    the borrower is struggling.'
 - id: C
-  text: When the debtor is experiencing financial difficulty and the creditor grants a concession
-  rationale: Correct. Both conditions are required.
+  text: A lender cuts the rate below market and defers principal because the borrower cannot meet its
+    payments
+  rationale: Correct. The debtor is in financial difficulty, and the creditor grants a concession it would
+    not otherwise give.
 - id: D
-  text: When the debtor is experiencing financial difficulty, whether or not the creditor grants a concession
-  rationale: Financial difficulty alone is not enough; the creditor must grant a concession.
+  text: A healthy borrower extends its note, and the new cash flows' present value differs from the old
+    by 12%
+  rationale: The 10% test decides modification versus extinguishment when the change is not troubled;
+    this borrower is not in difficulty.
 answer: C
 explanation: A restructuring is troubled for the debtor when the debtor is experiencing financial difficulties
   and the creditor, for economic or legal reasons related to those difficulties, grants a concession it

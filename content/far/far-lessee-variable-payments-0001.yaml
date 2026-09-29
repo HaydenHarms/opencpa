@@ -13,19 +13,18 @@ review:
 stem: Which of the following variable lease payments is included in a lessee's lease liability at commencement?
 choices:
 - id: A
-  text: Payments equal to a percentage of the lessee's sales in the leased store
+  text: Rent equal to a percentage of the lessee's sales in the leased store
   rationale: Performance-based variable payments are excluded from the liability and expensed when incurred.
 - id: B
-  text: Increases in payments from expected future rises in the Consumer Price Index
-  rationale: Index-based payments are measured at the commencement-date index; expected future changes
-    are not estimated.
+  text: A bonus payable to the lessor if the store's annual sales exceed a target
+  rationale: A payment contingent on the lessee's performance is excluded from the liability until incurred.
 - id: C
-  text: Payments based on how many hours the lessee operates the leased equipment
+  text: Rent based on how many hours the lessee operates the leased equipment
   rationale: Usage-based variable payments are excluded from the liability and expensed when incurred.
 - id: D
-  text: Payments tied to the Consumer Price Index, measured at the commencement-date index
-  rationale: Correct. Variable payments that depend on an index or rate are included, measured using the
-    index or rate at commencement.
+  text: Rent that is reset each year to the current Consumer Price Index
+  rationale: Correct. Payments that depend on an index are lease payments, measured using the index at
+    commencement; later changes are expensed as incurred.
 answer: D
 explanation: Lease payments include variable payments that depend on an index or a rate, initially measured
   using the index or rate at commencement. Later changes in the index are recognized in profit or loss

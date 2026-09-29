@@ -57,3 +57,23 @@ A separate agent solved all 25 items from the stems and choices only. It **match
 | `far-payables-cutoff-0001` (required) | $626,000 was defensible if the utility bill were classified as an accrued liability | Stem says Kirk records all vendor bills, including utilities, in accounts payable |
 | `far-equity-method-0002` | The price of the new 20% implied a higher fair value for the old 10%, inviting a remeasurement argument | Stem gives the fair value immediately before the purchase and says the price includes a premium for significant influence |
 | `far-nfp-statement-of-activities-0001`, `far-property-dividend-0001`, `far-nfp-gifts-in-kind-0001` | One weak distractor each | Replaced with single-error figures (releases omitted; carrying amount with a gain; painting recognized but warehouse omitted) |
+
+## Review gate
+
+A fresh review agent graded the batch without reading this report first. **All 25 keys correct; average estimated pass likelihood 82.4%; 16 exam-ready, 9 minor, 0 major.** Batch and bank mixes are inside every blueprint range. Fixes applied:
+
+| Item | Finding | Fix |
+| --- | --- | --- |
+| `far-notes-0003` → `far-notes-0004` | Nearly duplicated `far-subsequent-events-0003` (same income, shares, split and EPS), and "before any split" pointed at the answer | Retired and replaced: the inconsistent note is now an income tax policy that still splits deferred taxes into current and noncurrent (superseded by ASU 2015-17), matched by a current deferred tax asset on the draft balance sheet |
+| `far-consolidated-statements-0005` → `far-consolidated-statements-0006` | The stem listed the intercompany balances in the draft, so it was Application, not Analysis | Retired and replaced: the draft gives only its total assets and how it was prepared; the student must find the intercompany loan |
+| `far-lessee-variable-payments-0001` | Key was the longest choice and paired with a second CPI choice | Choices rewritten to similar length, one index-based and three performance- or usage-based |
+| `far-troubled-debt-restructuring-0001` | Three choices were combinations of the same two conditions | Choices are now four scenarios; only one has both financial difficulty and a concession |
+| `far-revenue-contract-modification-0001` | "Distinct performance obligation" is a giveaway label | Stem describes the units instead |
+| `far-investments-equity-securities-0001` | "Qualitative assessment indicates impairment" stated the conclusion | Stem gives the event (loss of a customer providing 40% of revenue) |
+| `far-payables-cutoff-0001` | "Accepts the draft" was weak; the $18,000 December 28 fact echoed another item | Replaced with $663,000 (FOB destination goods included); the goods-in-transit amount and dates changed |
+
+The reviewer's other points (template reuse in `far-accounting-errors-0004`, a collection-criteria description in `far-nfp-gifts-in-kind-0001`) are left as they are; the quality bar now covers template reuse for future batches.
+
+Gaps for batch 06 named by the reviewer: fund determination, the NFP statement of financial position, NFP cash flows and NFP notes, amortized-cost investments and debt covenants. Revenue recognition is heavily covered (about 10% of the bank). Keep Remembering and Understanding to about three items.
+
+A blind check of the seven changed items matched the key on all seven with no required fixes. It read `far-consolidated-statements-0006` as Application; the tag stays Analysis because the student must find the intercompany loan in the supporting schedules and correct a draft total (the FAR "detect, investigate and correct discrepancies" task for consolidated statements), and the next review should confirm.

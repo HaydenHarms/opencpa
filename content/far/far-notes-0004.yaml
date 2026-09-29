@@ -1,0 +1,44 @@
+id: far-notes-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Notes to financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (deferred taxes classified as noncurrent, after ASU 2015-17)
+  - ASC 855-10 (nonrecognized subsequent events)
+  - ASC 842-20 (lease maturity disclosures)
+  - ASC 360-10 (property, plant and equipment)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Galton Co.''s draft December 31, Year 1, balance sheet, for statements to be issued on March 10,
+  Year 2, reports among current assets a deferred tax asset of $12,000, property and equipment, net, of
+  $1,500,000, and operating lease liabilities of $180,000. You compare four draft note excerpts with the
+  statements. Income taxes: deferred tax assets and liabilities are classified as current or noncurrent
+  according to the classification of the related asset or liability; the $12,000 current deferred tax
+  asset arises from accrued warranty costs. Property and equipment: cost of $2,400,000 less accumulated
+  depreciation of $900,000. Leases: undiscounted lease payments of $195,000 less imputed interest of $15,000.
+  Subsequent events: on February 10, Year 2, Galton agreed to acquire a competitor for $3,000,000 in cash;
+  no amounts are recognized in Year 1. Which note reveals that the draft financial statements must be
+  corrected?'
+choices:
+- id: A
+  text: The property and equipment note
+  rationale: Consistent. $2,400,000 − $900,000 = $1,500,000.
+- id: B
+  text: The income tax note
+  rationale: Correct. Since ASU 2015-17, all deferred tax assets and liabilities are classified as noncurrent,
+    so the $12,000 must move out of current assets and the policy note must change.
+- id: C
+  text: The lease note
+  rationale: Consistent. $195,000 − $15,000 = $180,000, the liability on the balance sheet.
+- id: D
+  text: The subsequent events note
+  rationale: Consistent. An acquisition agreed after year-end is a nonrecognized event that is disclosed.
+answer: B
+explanation: ASU 2015-17 requires all deferred tax assets and liabilities to be presented as noncurrent
+  (netted by jurisdiction). The income tax note describes the superseded current/noncurrent split, and
+  the draft balance sheet follows it by showing a $12,000 current deferred tax asset, so the classification
+  and the note must be corrected. The other three notes agree with the statements and with GAAP.

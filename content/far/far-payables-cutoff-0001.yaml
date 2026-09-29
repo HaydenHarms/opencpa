@@ -13,8 +13,8 @@ review:
   notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
 stem: 'Kirk Co.''s draft December 31, Year 1, balance sheet reports accounts payable of $620,000; Kirk
   records all vendor bills, including utilities, in accounts payable. Searching for unrecorded liabilities,
-  you examine January, Year 2, payments and invoices and find: (1) an $18,000 invoice for goods shipped
-  FOB shipping point on December 20 and received December 28, not recorded until January; (2) a $9,000
+  you examine January, Year 2, payments and invoices and find: (1) a $21,000 invoice for goods shipped
+  FOB shipping point on December 22 and received December 29, not recorded until January; (2) a $9,000
   bill for December utilities, received and recorded in January; (3) a $25,000 invoice for goods shipped
   FOB destination on December 30 and received January 4; and (4) a $12,000 December supplier invoice that
   was entered twice in December. What amount should Kirk report as accounts payable at December 31, Year
@@ -24,18 +24,19 @@ choices:
   text: $608,000
   rationale: Removes the duplicate invoice but adds neither of the unrecorded December liabilities.
 - id: B
-  text: $620,000
-  rationale: Accepts the draft.
-- id: C
-  text: $626,000
-  rationale: Adds the $18,000 of goods and removes the duplicate but omits the $9,000 of December utilities,
+  text: $629,000
+  rationale: Adds the $21,000 of goods and removes the duplicate but omits the $9,000 of December utilities,
     a Year 1 liability.
-- id: D
-  text: $635,000
-  rationale: Correct. $620,000 + $18,000 + $9,000 − $12,000. The FOB destination goods became Kirk's in
+- id: C
+  text: $638,000
+  rationale: Correct. $620,000 + $21,000 + $9,000 − $12,000. The FOB destination goods became Kirk's in
     January.
-answer: D
-explanation: 'Record the Year 1 liabilities found in the search: goods received in December ($18,000;
+- id: D
+  text: $663,000
+  rationale: Also adds the $25,000 of goods shipped FOB destination. Title passed when they arrived in
+    January, so they are a Year 2 purchase.
+answer: C
+explanation: 'Record the Year 1 liabilities found in the search: goods received in December ($21,000;
   title passed at shipment in any case) and December utilities ($9,000). Remove the duplicated $12,000
   invoice. Goods shipped FOB destination belong to the seller until they arrive, so the $25,000 is a Year
-  2 purchase. Accounts payable = $620,000 + $18,000 + $9,000 − $12,000 = $635,000.'
+  2 purchase. Accounts payable = $620,000 + $21,000 + $9,000 − $12,000 = $638,000.'

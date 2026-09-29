@@ -10,11 +10,12 @@ review:
   references:
   - ASC 606-10 (contract modifications)
   notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Reed Co. contracts to deliver 120 identical units to a customer over six months for $100 per unit,
-  each unit a distinct performance obligation. After 50 units are delivered, the parties modify the contract
-  to add 30 more units at $80 each; Reed's standalone selling price for the units is $95 at that time,
-  and the discount does not reflect any cost savings or other reason tied to the added units. What revenue
-  per unit should Reed recognize for each of the 100 units delivered after the modification?
+stem: Reed Co. contracts to deliver 120 identical standard units to a customer over six months for $100
+  per unit; the customer can use each unit on its own as it is delivered. After 50 units are delivered,
+  the parties modify the contract to add 30 more units at $80 each; Reed's standalone selling price for
+  the units is $95 at that time, and the discount does not reflect any cost savings or other reason tied
+  to the added units. What revenue per unit should Reed recognize for each of the 100 units delivered
+  after the modification?
 choices:
 - id: A
   text: $80

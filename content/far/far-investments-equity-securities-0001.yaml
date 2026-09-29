@@ -14,9 +14,9 @@ review:
 stem: In January, Iredale Co. pays $400,000 for 5% of the shares of a private company whose shares have
   no readily determinable fair value, and elects the measurement alternative. In June, the investee sells
   identical shares to an unrelated investor in an orderly transaction at a price implying that Iredale's
-  shares are worth $460,000. In November, the investee loses its largest customer; Iredale's qualitative
-  assessment indicates impairment, and it estimates the shares' fair value at $380,000. At what amount
-  should Iredale report the investment at year-end?
+  shares are worth $460,000. In November, the investee loses its largest customer, which provided 40%
+  of its revenue, and Iredale estimates the shares' fair value at $380,000. At what amount should Iredale
+  report the investment at year-end?
 choices:
 - id: A
   text: $320,000

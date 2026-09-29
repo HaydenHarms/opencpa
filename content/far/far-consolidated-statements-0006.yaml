@@ -1,0 +1,38 @@
+id: far-consolidated-statements-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 810-10 (consolidation procedures: intercompany balances and transactions)'
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Pym Corp. owns 100% of Tovey Inc. Pym's draft December 31, Year 1, consolidated balance sheet reports
+  total assets of $4,200,000; to prepare it, the staff eliminated Pym's investment in Tovey against Tovey's
+  equity and added the two companies' other balances. Supporting schedules show that on July 1, Year 1,
+  Pym lent Tovey $500,000 at 6%, with interest due each June 30, and that both companies accrued interest
+  at December 31. After any corrections needed, what total assets should the consolidated balance sheet
+  report?
+choices:
+- id: A
+  text: $3,670,000
+  rationale: Eliminates the accrued interest twice, once for each company's accrual. Only Pym's $15,000
+    receivable is an asset.
+- id: B
+  text: $3,685,000
+  rationale: Correct. $4,200,000 − $500,000 note receivable − $15,000 accrued interest receivable.
+- id: C
+  text: $3,700,000
+  rationale: Eliminates the note but not the $15,000 of accrued interest receivable.
+- id: D
+  text: $4,200,000
+  rationale: Accepts the draft. Balances between parent and subsidiary are eliminated, not only the investment
+    account.
+answer: B
+explanation: Consolidated statements present the group as one entity, so the intercompany loan is eliminated
+  along with the investment. Pym's note receivable ($500,000) and accrued interest receivable ($500,000
+  × 6% × 6/12 = $15,000) come out of assets, and Tovey's matching payables come out of liabilities. Total
+  assets = $4,200,000 − $515,000 = $3,685,000.
