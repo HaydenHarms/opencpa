@@ -58,3 +58,18 @@ A separate agent solved the 23 new items from the stems and choices only. It **m
 | `bar-variance-analysis-0001` | "Price variance on quantity purchased" changed nothing because purchases equal usage | Sentence removed |
 
 The verifier read several items tagged Analysis (CVP what-if, make-or-buy, sales mix, ratio impact, revenue items, the government-wide reconciliation) as Application. The tags stay as written for now; the review gate checks each against the skill marks in the blueprint PDF.
+
+## Review gate
+
+A fresh review agent graded all 25 items without reading this report first, and read the BAR skill marks from the blueprint PDF. **All 25 keys correct; average estimated pass likelihood 84%; 15 exam-ready, 10 minor revision, 0 major.** Fixes applied:
+
+| Item | Finding | Fix |
+| --- | --- | --- |
+| `bar-government-wide-reconciliation-0001` | Its task ("prepare the schedule to reconcile") is marked Application, and the BAR blueprint tests Analysis only in Areas I and II | Retagged Application |
+| `bar-cvp-what-if-0001` | Tagged Analysis but was a single computation | Rebuilt as a comparison of two what-if proposals (price increase versus advertising); the student chooses and quantifies the difference |
+| `bar-non-gaap-measures-0001` | Tagged Analysis but was a single computation | Now also asks how the measure changed from last year, exposing the draft release's claimed 10% growth |
+| `bar-revenue-contract-analysis-0001` | $0 (rejecting the bill-and-hold) was not offered | Replaced the $250,000 choice with $0 |
+| `bar-revenue-analytics-discrepancy-0001` | The concession wording stated the conclusion | Stem gives the fact pattern (concessions on the last four year-end orders) |
+| `bar-budgetary-accounting-0001` | Task marked Application; "reserved for encumbrances" is pre-GASB 54; one choice was not a real error | Retagged Application; label now "budgetary fund balance — encumbrances"; choice replaced with the reversing entry |
+
+**Tallies after the gate:** Remembering and Understanding 3 (12%), Application 14 (56%), Analysis 8 (32%); Areas 11 / 11 / 3. Application is one item above its 45–55% range and Analysis is in range; the next BAR batch should lean toward Area I and II Analysis tasks. The reviewer's coverage gaps for BAR batch 02: economic and market influences, capital structure, balanced scorecard, Black-Scholes, working capital and SWOT (Area I); VIEs, business combinations with NCI, internal-use software under ASU 2025-06, hedge criteria, liability-classified share awards, sale-leaseback, lessee agreement review, Regulation S-X/S-K, employee benefit plan statements (Area II); fund balance and net position, interfund activity, capital assets and debt, component units, MD&A and RSI (Area III).

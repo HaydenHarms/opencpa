@@ -14,10 +14,10 @@ review:
 stem: A data analytics report of Quill Co.'s fourth-quarter revenue, which totals $2,000,000, flags three
   outliers for review. (1) A $300,000 sale to a new customer invoiced December 30; the goods were shipped
   FOB destination and delivered January 5. (2) A $400,000 December sale to a distributor that, based on
-  Quill's recent practice, will receive a $50,000 price concession; Quill granted it on January 10, and
-  it had been expected at year-end. (3) An $80,000 invoice dated December 31 for a one-year license, starting
-  January 1, that gives the customer access to Quill's continually updated online content. After resolving
-  these items, what should Quill's fourth-quarter revenue be?
+  Quill's recent practice, was granted a $50,000 price concession on January 10; Quill has granted this
+  distributor similar concessions on each of its last four year-end orders. (3) An $80,000 invoice dated
+  December 31 for a one-year license, starting January 1, that gives the customer access to Quill's continually
+  updated online content. After resolving these items, what should Quill's fourth-quarter revenue be?
 choices:
 - id: A
   text: $1,570,000

@@ -20,12 +20,12 @@ choices:
   text: Market research to test customer reaction to a new product line
   rationale: 'Excluded from R&D: market research is a selling or marketing cost.'
 - id: C
-  text: Salaries of engineers who design, build and test a preproduction prototype
-  rationale: Correct. Designing, constructing and testing preproduction prototypes is a development activity.
-- id: D
   text: Engineering follow-through in an early phase of commercial production
   rationale: 'Excluded from R&D: follow-through after production begins is a production cost.'
-answer: C
+- id: D
+  text: Salaries of engineers who design, build and test a preproduction prototype
+  rationale: Correct. Designing, constructing and testing preproduction prototypes is a development activity.
+answer: D
 explanation: ASC 730 includes conceptual formulation, design and testing of product alternatives, and
   the design, construction and testing of preproduction prototypes and models. It excludes routine quality
   control, engineering follow-through in an early phase of commercial production, and market research.

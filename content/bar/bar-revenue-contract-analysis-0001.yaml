@@ -21,21 +21,22 @@ stem: Oakes Co. reviews three December arrangements before closing its year on D
   recognize in December from these arrangements?
 choices:
 - id: A
+  text: $0
+  rationale: Treats the held equipment as undelivered. In a bill-and-hold arrangement that meets the criteria,
+    control passes before shipment.
+- id: B
   text: $120,000
   rationale: Correct. Control of the held equipment has passed to the customer; the consigned goods and
     the goods in transit under FOB destination have not transferred.
-- id: B
+- id: C
   text: $170,000
   rationale: Also recognizes the goods shipped FOB destination. Control passes when the goods reach the
     customer on January 3.
-- id: C
+- id: D
   text: $200,000
   rationale: 'Also recognizes the goods shipped to the dealer. The dealer does not control them: it pays
     only when it resells and can return unsold goods, so the arrangement is a consignment.'
-- id: D
-  text: $250,000
-  rationale: Recognizes all three arrangements.
-answer: A
+answer: B
 explanation: 'Revenue is recognized when control transfers. (1) This is a bill-and-hold arrangement that
   transfers control: the customer asked for the hold for a substantive reason (its plant is not ready),
   the equipment is set aside under its name, it is finished and accepted so it is ready for delivery,

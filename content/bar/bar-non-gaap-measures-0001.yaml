@@ -16,25 +16,27 @@ stem: Hale Inc. defines adjusted EBITDA as net income before interest, income ta
   amortization, excluding restructuring charges and gains or losses on divestitures. For Year 1, Hale
   reports net income of $500,000, which reflects income tax expense of $150,000, interest expense of $80,000,
   depreciation of $120,000, amortization of $30,000, a restructuring charge of $70,000, and a $40,000
-  gain on the sale of a division. Hale's draft earnings release reports adjusted EBITDA of $990,000. Applying
-  Hale's definition, what should adjusted EBITDA be?
+  gain on the sale of a division. Hale's draft earnings release reports adjusted EBITDA of $990,000, "up
+  10% from $900,000 last year." Applying Hale's definition, what is adjusted EBITDA, and how did it change
+  from last year's $900,000?
 choices:
 - id: A
-  text: $760,000
+  text: $760,000; down about 16%
   rationale: Leaves out the add-back for income tax expense. EBITDA starts from income before taxes.
 - id: B
-  text: $880,000
+  text: $880,000; down about 2%
   rationale: Stops at EBITDA and does not make the adjustments in Hale's definition.
 - id: C
-  text: $910,000
+  text: $910,000; up about 1%
   rationale: Correct. $500,000 + $150,000 + $80,000 + $120,000 + $30,000 + $70,000 restructuring − $40,000
-    gain.
+    gain = $910,000, about 1% above $900,000.
 - id: D
-  text: $990,000
+  text: $990,000; up 10%
   rationale: Accepts the draft, which adds back the $40,000 gain. Excluding a gain means subtracting it,
     since it is included in net income.
 answer: C
-explanation: EBITDA = $500,000 + $150,000 taxes + $80,000 interest + $120,000 depreciation + $30,000 amortization
-  = $880,000. Hale's adjustments exclude the restructuring charge (add back $70,000) and the divestiture
-  gain (subtract $40,000, because it increased net income). Adjusted EBITDA = $910,000. The draft's $990,000
-  adds the gain back instead of removing it.
+explanation: 'EBITDA = $500,000 + $150,000 taxes + $80,000 interest + $120,000 depreciation + $30,000
+  amortization = $880,000. Hale''s adjustments exclude the restructuring charge (add back $70,000) and
+  the divestiture gain (subtract $40,000, because it increased net income). Adjusted EBITDA = $910,000.
+  The draft''s $990,000 adds the gain back instead of removing it, so the release overstates growth: the
+  measure rose about 1%, not 10%.'

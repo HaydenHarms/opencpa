@@ -16,22 +16,22 @@ stem: Under ASC 280, one test that makes an operating segment reportable is base
   is that threshold?
 choices:
 - id: A
-  text: Revenue of at least 10% of combined revenue of all operating segments from external customers
-    only
-  rationale: The revenue test counts intersegment revenue too.
-- id: B
-  text: Revenue of at least 5% of the combined revenue of all operating segments, including intersegment
-    sales
-  rationale: The threshold is 10%, not 5%.
-- id: C
-  text: Revenue that brings reported segments to 75% of consolidated revenue from external customers
-  rationale: That is the separate test of whether enough segments have been reported, not the threshold
-    for an individual segment.
-- id: D
   text: Revenue of at least 10% of the combined revenue of all operating segments, including intersegment
     sales
   rationale: Correct. The revenue test includes both external and intersegment revenue.
-answer: D
+- id: B
+  text: Revenue of at least 10% of combined revenue of all operating segments from external customers
+    only
+  rationale: The revenue test counts intersegment revenue too.
+- id: C
+  text: Revenue of at least 5% of the combined revenue of all operating segments, including intersegment
+    sales
+  rationale: The threshold is 10%, not 5%.
+- id: D
+  text: Revenue that brings reported segments to 75% of consolidated revenue from external customers
+  rationale: That is the separate test of whether enough segments have been reported, not the threshold
+    for an individual segment.
+answer: A
 explanation: 'An operating segment is reportable if it meets any one of three 10% tests: its revenue (external
   and intersegment) is at least 10% of combined segment revenue; its profit or loss is at least 10% of
   the greater of combined profits or combined losses; or its assets are at least 10% of combined segment

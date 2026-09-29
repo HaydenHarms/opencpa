@@ -18,17 +18,17 @@ choices:
   text: Control activities
   rationale: A component of COSO's Internal Control — Integrated Framework, not the ERM framework.
 - id: B
+  text: Monitoring activities
+  rationale: A component of COSO's Internal Control — Integrated Framework.
+- id: C
   text: Review and revision
   rationale: Correct. The five ERM components are governance and culture; strategy and objective-setting;
     performance; review and revision; and information, communication, and reporting.
-- id: C
-  text: Monitoring activities
-  rationale: A component of COSO's Internal Control — Integrated Framework.
 - id: D
   text: Control environment
   rationale: A component of COSO's Internal Control — Integrated Framework; the ERM framework's comparable
     component is governance and culture.
-answer: B
+answer: C
 explanation: 'The 2017 COSO ERM framework has five components: governance and culture; strategy and objective-setting;
   performance; review and revision; and information, communication, and reporting. Control environment,
   control activities and monitoring activities belong to the Internal Control — Integrated Framework (2013).'

@@ -11,26 +11,29 @@ review:
   - 'Cost-volume-profit analysis: sensitivity and what-if analysis'
   notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
     nonexchange revenue items moved from FAR batch 01).
-stem: Carver Co. sells 30,000 units a year of one product at $50 per unit. Variable costs are $30 per
-  unit and fixed costs are $400,000 a year. Management is considering raising the price to $54, and its
-  market study indicates unit sales would fall by 10%. Costs per unit and fixed costs would not change.
-  What operating income should Carver expect under the proposal?
+stem: 'Carver Co. sells 30,000 units a year of one product at $50 per unit. Variable costs are $30 per
+  unit and fixed costs are $400,000 a year. Management is choosing between two proposals. Proposal 1:
+  raise the price to $54, which its market study says would cut unit sales by 10%. Proposal 2: keep the
+  price at $50 and spend $60,000 a year more on advertising, which the study says would raise unit sales
+  by 15%. Unit variable costs would not change under either proposal. Which proposal gives the higher
+  operating income, and by how much?'
 choices:
 - id: A
-  text: $140,000
-  rationale: Applies the 10% volume decline but keeps the $50 price. The proposal raises the contribution
-    margin to $24 a unit.
+  text: Proposal 1, by $18,000
+  rationale: 'Correct. Proposal 1: 27,000 × $24 − $400,000 = $248,000. Proposal 2: 34,500 × $20 − $460,000
+    = $230,000.'
 - id: B
-  text: $158,000
-  rationale: 'Uses the new revenue ($1,458,000) but variable costs for the old 30,000 units. Variable
-    costs fall with volume: 27,000 × $30.'
+  text: Proposal 2, by $42,000
+  rationale: Leaves out Proposal 2's $60,000 of extra advertising, a fixed cost the proposal adds.
 - id: C
-  text: $248,000
-  rationale: Correct. 27,000 units × ($54 − $30) − $400,000.
+  text: Proposal 1, by $90,000
+  rationale: Raises the price in Proposal 1 but ignores the expected 10% fall in unit sales ($320,000).
 - id: D
-  text: $320,000
-  rationale: Raises the price but ignores the expected 10% fall in unit sales.
-answer: C
-explanation: Under the proposal, unit sales = 30,000 × 90% = 27,000 and the contribution margin = $54
-  − $30 = $24 a unit. Operating income = 27,000 × $24 − $400,000 = $248,000, compared with 30,000 × $20
-  − $400,000 = $200,000 now, so the price increase adds $48,000.
+  text: Proposal 2, by $90,000
+  rationale: Applies Proposal 1's volume decline but keeps its old $20 margin ($140,000). The higher price
+    raises the margin to $24.
+answer: A
+explanation: 'Proposal 1: units 30,000 × 90% = 27,000; contribution margin $54 − $30 = $24; operating
+  income 27,000 × $24 − $400,000 = $248,000. Proposal 2: units 30,000 × 115% = 34,500; margin $20; fixed
+  costs $460,000; operating income 34,500 × $20 − $460,000 = $230,000. Proposal 1 is higher by $18,000
+  (current income is $200,000, so both improve it).'
