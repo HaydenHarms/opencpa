@@ -88,11 +88,12 @@ Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Sel
 
 ## Roadmap (next, in order)
 
+1. **(Hand-written in by Hayden while at work)** We need to rework the way the questions come up and the algorithm determines what the user needs to work on. Right now, any time you click off of the practice tab, it resets all progress and it runs in the same order of questions every time. To fix this, I think the best way to do this is to run practice in "sessions", maybe we could have the user select the amount of questions they want to do. This way we could save progress based on batches of work sessions rather than having to try to keep up with where a user is at all times. I also want the questions for each exam to show up semi-randomly. What I mean is instead of having the exact same order, in each session you have a mix of subjects, but then from those subjects you are given the questions that you need to study more, and if there is no data on that, pull from the subject randomly rather than the same ones every time.
 1. **Simulations:** run the review gate on the three live simulations, react to Hayden's feedback on the UI, then write the next simulation batch.
 2. **FAR batch 06** (gaps in `docs/reviews/far-batch-05.md`: fund determination, NFP statement of financial position, NFP cash flows and notes, amortized-cost investments, debt covenants; go light on revenue). About three Remembering and Understanding items at most.
-3. The other sections: BAR batch 02 (gaps in `docs/reviews/bar-batch-01.md`; lean toward Area I and II Analysis to bring Application back under 55%), then AUD/REG and the disciplines. BAR targets: Area I 40–50%, II 35–45%, III 10–20%; Remembering and Understanding 10–20%, Application 45–55%, Analysis 30–40%.
+3. Let's not work on BAR yet, let's fully finish FAR before working on BAR. The other sections: BAR batch 02 (gaps in `docs/reviews/bar-batch-01.md`; lean toward Area I and II Analysis to bring Application back under 55%), then AUD/REG and the disciplines. BAR targets: Area I 40–50%, II 35–45%, III 10–20%; Remembering and Understanding 10–20%, Application 45–55%, Analysis 30–40%.
 4. Accounts (GitHub OAuth / email magic link), migrating anonymous progress to the account.
-5. Claude tutor at `POST /me/tutor` (currently a 501 stub), using the student's own API key. Give it tools for the current item, recent misses and generating a variant.
+5. Claude tutor at `POST /me/tutor` (currently a 501 stub), using the student's own API key. Give it tools for the current item, recent misses and generating a variant. **Is there a way to directly connect Claude to use billing usage rather than API token billing? We need to find a way to do that so that it's easier to use.**
 6. Before any publicity: rate limiting, a UI redesign (the current UI is intentionally plain; Hayden wants it less bland) and a custom domain.
 7. Exam-day mode.
 
