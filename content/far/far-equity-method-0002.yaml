@@ -13,9 +13,10 @@ review:
 stem: Jade Co. owns 10% of Varro Inc., carried at fair value with changes in net income; its fair value
   on July 1, Year 1, immediately before the purchase below, is $150,000. That day Jade buys another 20%
   of Varro for $330,000, a price that includes a premium for obtaining significant influence. Varro's
-  net income is earned evenly and totals $380,000 for Year 1 ($200,000 from July 1 to December 31), and
-  Varro pays dividends of $50,000 in December. There are no basis differences. At what amount should Jade
-  report its investment in Varro at December 31, Year 1?
+  net income totals $380,000 for Year 1 ($200,000 from July 1 to December 31), and Varro pays dividends
+  of $50,000 in December. Any excess of cost over Jade's share of Varro's book value is attributable to
+  goodwill, which Jade does not amortize. At what amount should Jade report its investment in Varro at
+  December 31, Year 1?
 choices:
 - id: A
   text: $465,000
@@ -36,3 +37,85 @@ explanation: 'Since ASU 2016-07, an investor that becomes eligible for the equit
   of the new interest to the current basis of its existing interest and applies the equity method prospectively,
   with no retroactive adjustment. Basis on July 1 = $150,000 + $330,000 = $480,000. Add 30% of Varro''s
   income after July 1 ($60,000) and subtract 30% of the dividends ($15,000): $525,000.'
+variants:
+- stem: Keel Co. owns 15% of Winton Inc., carried at fair value with changes in net income; its fair value
+    on July 1, Year 1, immediately before the purchase below, is $90,000. That day Keel buys another 25%
+    of Winton for $260,000, a price that includes a premium for obtaining significant influence. Winton's
+    net income totals $500,000 for Year 1 ($240,000 from July 1 to December 31), and Winton pays dividends
+    of $80,000 in December. Any excess of cost over Keel's share of Winton's book value is attributable
+    to goodwill, which Keel does not amortize. At what amount should Keel report its investment in Winton
+    at December 31, Year 1?
+  choices:
+  - id: A
+    text: $318,000
+    rationale: Deducts Keel's share of the December dividend but never adds its share of Winton's income.
+  - id: B
+    text: $350,000
+    rationale: Stops at the combined cost basis of $350,000 without applying the equity method from July
+      1.
+  - id: C
+    text: $390,000
+    rationale: Applies only the newly purchased 25% to Winton's income and dividends. The equity method
+      applies to Keel's whole 40% interest from July 1.
+  - id: D
+    text: $414,000
+    rationale: Correct. $90,000 + $260,000 + 40% × $240,000 − 40% × $80,000.
+  answer: D
+  explanation: 'Since ASU 2016-07, an investor that becomes eligible for the equity method adds the cost
+    of the new interest to the current basis of its existing interest and applies the equity method prospectively,
+    with no retroactive adjustment. Basis on July 1 = $90,000 + $260,000 = $350,000. Add 40% of Winton''s
+    income after July 1 ($96,000) and subtract 40% of the dividends ($32,000): $414,000.'
+- stem: Lark Co. owns 5% of Ashby Inc., carried at fair value with changes in net income; its fair value
+    on July 1, Year 1, immediately before the purchase below, is $90,000. That day Lark buys another 20%
+    of Ashby for $410,000, a price that includes a premium for obtaining significant influence. Ashby's
+    net income totals $300,000 for Year 1 ($180,000 from July 1 to December 31), and Ashby pays dividends
+    of $60,000 in December. Any excess of cost over Lark's share of Ashby's book value is attributable
+    to goodwill, which Lark does not amortize. At what amount should Lark report its investment in Ashby
+    at December 31, Year 1?
+  choices:
+  - id: A
+    text: $485,000
+    rationale: Deducts Lark's share of the December dividend but never adds its share of Ashby's income.
+  - id: B
+    text: $500,000
+    rationale: Stops at the combined cost basis of $500,000 without applying the equity method from July
+      1.
+  - id: C
+    text: $524,000
+    rationale: Applies only the newly purchased 20% to Ashby's income and dividends. The equity method
+      applies to Lark's whole 25% interest from July 1.
+  - id: D
+    text: $530,000
+    rationale: Correct. $90,000 + $410,000 + 25% × $180,000 − 25% × $60,000.
+  answer: D
+  explanation: 'Since ASU 2016-07, an investor that becomes eligible for the equity method adds the cost
+    of the new interest to the current basis of its existing interest and applies the equity method prospectively,
+    with no retroactive adjustment. Basis on July 1 = $90,000 + $410,000 = $500,000. Add 25% of Ashby''s
+    income after July 1 ($45,000) and subtract 25% of the dividends ($15,000): $530,000.'
+- stem: Moss Co. owns 10% of Bexley Inc., carried at fair value with changes in net income; its fair value
+    on July 1, Year 1, immediately before the purchase below, is $120,000. That day Moss buys another
+    15% of Bexley for $300,000, a price that includes a premium for obtaining significant influence. Bexley's
+    net income totals $440,000 for Year 1 ($260,000 from July 1 to December 31), and Bexley pays dividends
+    of $100,000 in December. Any excess of cost over Moss's share of Bexley's book value is attributable
+    to goodwill, which Moss does not amortize. At what amount should Moss report its investment in Bexley
+    at December 31, Year 1?
+  choices:
+  - id: A
+    text: $395,000
+    rationale: Deducts Moss's share of the December dividend but never adds its share of Bexley's income.
+  - id: B
+    text: $420,000
+    rationale: Stops at the combined cost basis of $420,000 without applying the equity method from July
+      1.
+  - id: C
+    text: $444,000
+    rationale: Applies only the newly purchased 15% to Bexley's income and dividends. The equity method
+      applies to Moss's whole 25% interest from July 1.
+  - id: D
+    text: $460,000
+    rationale: Correct. $120,000 + $300,000 + 25% × $260,000 − 25% × $100,000.
+  answer: D
+  explanation: 'Since ASU 2016-07, an investor that becomes eligible for the equity method adds the cost
+    of the new interest to the current basis of its existing interest and applies the equity method prospectively,
+    with no retroactive adjustment. Basis on July 1 = $120,000 + $300,000 = $420,000. Add 25% of Bexley''s
+    income after July 1 ($65,000) and subtract 25% of the dividends ($25,000): $460,000.'

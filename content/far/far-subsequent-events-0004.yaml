@@ -37,3 +37,82 @@ explanation: 'The settlement gives evidence about a Year 1 condition, so the acc
   to $90,000: $40,000. The inventory double count is an error in the Year 1 statements found before issuance:
   $25,000. The customer''s bankruptcy resulted from a fire after year-end, so it is a nonrecognized event
   (disclosed if material), as is the dividend. Reduction = $65,000.'
+variants:
+- stem: 'Parish Co.''s December 31, Year 1, statements will be issued on March 10, Year 2. Between those
+    dates: (1) on January 20, a fire destroyed the plant of a major customer, which filed for bankruptcy
+    on January 30, making its $85,000 December 31 receivable uncollectible; the customer had been in good
+    financial condition at year-end; (2) on January 15, Parish settled for $140,000 a lawsuit over a Year
+    1 accident, for which it had accrued $100,000; (3) on February 20, Parish found that its December
+    31 inventory count had double-counted goods costing $32,000; and (4) on March 1, Parish''s board declared
+    a cash dividend. Ignore income taxes. By how much should Parish reduce its Year 1 pretax income?'
+  choices:
+  - id: A
+    text: $72,000
+    rationale: Correct. $40,000 more for the lawsuit settlement plus the $32,000 inventory count error.
+  - id: B
+    text: $157,000
+    rationale: Also recognizes the $85,000 receivable loss. The customer's problems arose from a fire
+      after year-end, so the loss is disclosed, not recognized.
+  - id: C
+    text: $172,000
+    rationale: Charges the full $140,000 settlement instead of the $40,000 not yet accrued.
+  - id: D
+    text: $257,000
+    rationale: Charges the full settlement and also recognizes the receivable loss.
+  answer: A
+  explanation: 'The settlement gives evidence about a Year 1 condition, so the accrual rises from $100,000
+    to $140,000: $40,000. The inventory double count is an error in the Year 1 statements found before
+    issuance: $32,000. The customer''s bankruptcy resulted from a fire after year-end, so it is a nonrecognized
+    event (disclosed if material), as is the dividend. Reduction = $72,000.'
+- stem: 'Quincy Co.''s December 31, Year 1, statements will be issued on March 10, Year 2. Between those
+    dates: (1) on January 20, a fire destroyed the plant of a major customer, which filed for bankruptcy
+    on January 30, making its $45,000 December 31 receivable uncollectible; the customer had been in good
+    financial condition at year-end; (2) on January 15, Quincy settled for $70,000 a lawsuit over a Year
+    1 accident, for which it had accrued $55,000; (3) on February 20, Quincy found that its December 31
+    inventory count had double-counted goods costing $18,000; and (4) on March 1, Quincy''s board declared
+    a cash dividend. Ignore income taxes. By how much should Quincy reduce its Year 1 pretax income?'
+  choices:
+  - id: A
+    text: $33,000
+    rationale: Correct. $15,000 more for the lawsuit settlement plus the $18,000 inventory count error.
+  - id: B
+    text: $78,000
+    rationale: Also recognizes the $45,000 receivable loss. The customer's problems arose from a fire
+      after year-end, so the loss is disclosed, not recognized.
+  - id: C
+    text: $88,000
+    rationale: Charges the full $70,000 settlement instead of the $15,000 not yet accrued.
+  - id: D
+    text: $133,000
+    rationale: Charges the full settlement and also recognizes the receivable loss.
+  answer: A
+  explanation: 'The settlement gives evidence about a Year 1 condition, so the accrual rises from $55,000
+    to $70,000: $15,000. The inventory double count is an error in the Year 1 statements found before
+    issuance: $18,000. The customer''s bankruptcy resulted from a fire after year-end, so it is a nonrecognized
+    event (disclosed if material), as is the dividend. Reduction = $33,000.'
+- stem: 'Rowan Co.''s December 31, Year 1, statements will be issued on March 10, Year 2. Between those
+    dates: (1) on January 20, a fire destroyed the plant of a major customer, which filed for bankruptcy
+    on January 30, making its $120,000 December 31 receivable uncollectible; the customer had been in
+    good financial condition at year-end; (2) on January 15, Rowan settled for $210,000 a lawsuit over
+    a Year 1 accident, for which it had accrued $150,000; (3) on February 20, Rowan found that its December
+    31 inventory count had double-counted goods costing $40,000; and (4) on March 1, Rowan''s board declared
+    a cash dividend. Ignore income taxes. By how much should Rowan reduce its Year 1 pretax income?'
+  choices:
+  - id: A
+    text: $100,000
+    rationale: Correct. $60,000 more for the lawsuit settlement plus the $40,000 inventory count error.
+  - id: B
+    text: $220,000
+    rationale: Also recognizes the $120,000 receivable loss. The customer's problems arose from a fire
+      after year-end, so the loss is disclosed, not recognized.
+  - id: C
+    text: $250,000
+    rationale: Charges the full $210,000 settlement instead of the $60,000 not yet accrued.
+  - id: D
+    text: $370,000
+    rationale: Charges the full settlement and also recognizes the receivable loss.
+  answer: A
+  explanation: 'The settlement gives evidence about a Year 1 condition, so the accrual rises from $150,000
+    to $210,000: $60,000. The inventory double count is an error in the Year 1 statements found before
+    issuance: $40,000. The customer''s bankruptcy resulted from a fire after year-end, so it is a nonrecognized
+    event (disclosed if material), as is the dividend. Reduction = $100,000.'

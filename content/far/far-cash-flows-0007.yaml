@@ -37,3 +37,88 @@ explanation: 'Two errors. An increase in inventory is subtracted under the indir
   are right: depreciation, discount amortization and the deferred tax increase are noncash charges added
   back, the gain on land is subtracted, and the payables increase is added. Corrected: $481,000 − $44,000
   − $100,000 = $337,000.'
+variants:
+- stem: 'Farrow Co.''s staff accountant prepared this draft operating section of the statement of cash
+    flows under the indirect method: net income $420,000; depreciation $75,000; amortization of discount
+    on bonds payable $6,000; increase in deferred tax liability $9,000; gain on sale of land $(30,000);
+    increase in accounts payable $24,000; increase in inventory $35,000; proceeds from issuing common
+    stock $150,000; net cash provided by operating activities $689,000. After correcting the draft to
+    comply with U.S. GAAP, what is net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $469,000
+    rationale: Correct. The inventory increase is subtracted ($70,000 swing) and the stock proceeds move
+      to financing.
+  - id: B
+    text: $539,000
+    rationale: Moves the stock proceeds to financing but still adds the increase in inventory. Buying
+      more inventory uses cash.
+  - id: C
+    text: $619,000
+    rationale: Subtracts the inventory increase but leaves the $150,000 of stock proceeds in operating
+      activities.
+  - id: D
+    text: $689,000
+    rationale: Accepts the draft.
+  answer: A
+  explanation: 'Two errors. An increase in inventory is subtracted under the indirect method, not added:
+    that changes the total by $70,000. Proceeds from issuing stock are a financing inflow. The other adjustments
+    are right: depreciation, discount amortization and the deferred tax increase are noncash charges added
+    back, the gain on land is subtracted, and the payables increase is added. Corrected: $689,000 − $70,000
+    − $150,000 = $469,000.'
+- stem: 'Grady Co.''s staff accountant prepared this draft operating section of the statement of cash
+    flows under the indirect method: net income $250,000; depreciation $40,000; amortization of discount
+    on bonds payable $3,000; increase in deferred tax liability $15,000; gain on sale of land $(18,000);
+    increase in accounts payable $11,000; increase in inventory $28,000; proceeds from issuing common
+    stock $80,000; net cash provided by operating activities $409,000. After correcting the draft to comply
+    with U.S. GAAP, what is net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $273,000
+    rationale: Correct. The inventory increase is subtracted ($56,000 swing) and the stock proceeds move
+      to financing.
+  - id: B
+    text: $329,000
+    rationale: Moves the stock proceeds to financing but still adds the increase in inventory. Buying
+      more inventory uses cash.
+  - id: C
+    text: $353,000
+    rationale: Subtracts the inventory increase but leaves the $80,000 of stock proceeds in operating
+      activities.
+  - id: D
+    text: $409,000
+    rationale: Accepts the draft.
+  answer: A
+  explanation: 'Two errors. An increase in inventory is subtracted under the indirect method, not added:
+    that changes the total by $56,000. Proceeds from issuing stock are a financing inflow. The other adjustments
+    are right: depreciation, discount amortization and the deferred tax increase are noncash charges added
+    back, the gain on land is subtracted, and the payables increase is added. Corrected: $409,000 − $56,000
+    − $80,000 = $273,000.'
+- stem: 'Hume Co.''s staff accountant prepared this draft operating section of the statement of cash flows
+    under the indirect method: net income $510,000; depreciation $90,000; amortization of discount on
+    bonds payable $5,000; increase in deferred tax liability $20,000; gain on sale of land $(42,000);
+    increase in accounts payable $16,000; increase in inventory $47,000; proceeds from issuing common
+    stock $200,000; net cash provided by operating activities $846,000. After correcting the draft to
+    comply with U.S. GAAP, what is net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $552,000
+    rationale: Correct. The inventory increase is subtracted ($94,000 swing) and the stock proceeds move
+      to financing.
+  - id: B
+    text: $646,000
+    rationale: Moves the stock proceeds to financing but still adds the increase in inventory. Buying
+      more inventory uses cash.
+  - id: C
+    text: $752,000
+    rationale: Subtracts the inventory increase but leaves the $200,000 of stock proceeds in operating
+      activities.
+  - id: D
+    text: $846,000
+    rationale: Accepts the draft.
+  answer: A
+  explanation: 'Two errors. An increase in inventory is subtracted under the indirect method, not added:
+    that changes the total by $94,000. Proceeds from issuing stock are a financing inflow. The other adjustments
+    are right: depreciation, discount amortization and the deferred tax increase are noncash charges added
+    back, the gain on land is subtracted, and the payables increase is added. Corrected: $846,000 − $94,000
+    − $200,000 = $552,000.'

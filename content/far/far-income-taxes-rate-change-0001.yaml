@@ -36,3 +36,82 @@ explanation: Deferred tax liabilities are measured at the enacted rate expected 
   reverse, and the effect of a rate change is recognized in income from continuing operations in the period
   of enactment. Ending liability = $260,000 × 25% = $65,000. Deferred tax expense = $65,000 − $42,000
   = $23,000 (including $8,000 from remeasuring the beginning differences).
+variants:
+- stem: At December 31, Year 1, Usher Co. has a deferred tax liability of $63,000 on $300,000 of taxable
+    temporary differences, measured at the 21% enacted rate. On November 1, Year 2, legislation is enacted
+    raising Usher's tax rate to 24% for Year 3 and later years. At December 31, Year 2, Usher's taxable
+    temporary differences total $340,000, all reversing in Year 3 or later. What deferred income tax expense
+    should Usher recognize for Year 2?
+  choices:
+  - id: A
+    text: $8,400
+    rationale: Measures the ending liability at the old 21% rate. Deferred taxes are measured at the enacted
+      rate for the years the differences reverse.
+  - id: B
+    text: $9,600
+    rationale: Applies the new rate only to the $40,000 of new differences and does not remeasure the
+      beginning liability for the rate change.
+  - id: C
+    text: $18,600
+    rationale: Correct. Ending liability $340,000 × 24% = $81,600, less the $63,000 beginning balance.
+  - id: D
+    text: $81,600
+    rationale: Reports the ending deferred tax liability as the year's expense, ignoring the $63,000 already
+      recorded.
+  answer: C
+  explanation: Deferred tax liabilities are measured at the enacted rate expected to apply when the differences
+    reverse, and the effect of a rate change is recognized in income from continuing operations in the
+    period of enactment. Ending liability = $340,000 × 24% = $81,600. Deferred tax expense = $81,600 −
+    $63,000 = $18,600 (including $9,000 from remeasuring the beginning differences).
+- stem: At December 31, Year 1, Vickers Co. has a deferred tax liability of $37,800 on $180,000 of taxable
+    temporary differences, measured at the 21% enacted rate. On November 1, Year 2, legislation is enacted
+    raising Vickers's tax rate to 23% for Year 3 and later years. At December 31, Year 2, Vickers's taxable
+    temporary differences total $240,000, all reversing in Year 3 or later. What deferred income tax expense
+    should Vickers recognize for Year 2?
+  choices:
+  - id: A
+    text: $12,600
+    rationale: Measures the ending liability at the old 21% rate. Deferred taxes are measured at the enacted
+      rate for the years the differences reverse.
+  - id: B
+    text: $13,800
+    rationale: Applies the new rate only to the $60,000 of new differences and does not remeasure the
+      beginning liability for the rate change.
+  - id: C
+    text: $17,400
+    rationale: Correct. Ending liability $240,000 × 23% = $55,200, less the $37,800 beginning balance.
+  - id: D
+    text: $55,200
+    rationale: Reports the ending deferred tax liability as the year's expense, ignoring the $37,800 already
+      recorded.
+  answer: C
+  explanation: Deferred tax liabilities are measured at the enacted rate expected to apply when the differences
+    reverse, and the effect of a rate change is recognized in income from continuing operations in the
+    period of enactment. Ending liability = $240,000 × 23% = $55,200. Deferred tax expense = $55,200 −
+    $37,800 = $17,400 (including $3,600 from remeasuring the beginning differences).
+- stem: At December 31, Year 1, Warde Co. has a deferred tax liability of $105,000 on $500,000 of taxable
+    temporary differences, measured at the 21% enacted rate. On November 1, Year 2, legislation is enacted
+    raising Warde's tax rate to 26% for Year 3 and later years. At December 31, Year 2, Warde's taxable
+    temporary differences total $580,000, all reversing in Year 3 or later. What deferred income tax expense
+    should Warde recognize for Year 2?
+  choices:
+  - id: A
+    text: $16,800
+    rationale: Measures the ending liability at the old 21% rate. Deferred taxes are measured at the enacted
+      rate for the years the differences reverse.
+  - id: B
+    text: $20,800
+    rationale: Applies the new rate only to the $80,000 of new differences and does not remeasure the
+      beginning liability for the rate change.
+  - id: C
+    text: $45,800
+    rationale: Correct. Ending liability $580,000 × 26% = $150,800, less the $105,000 beginning balance.
+  - id: D
+    text: $150,800
+    rationale: Reports the ending deferred tax liability as the year's expense, ignoring the $105,000
+      already recorded.
+  answer: C
+  explanation: Deferred tax liabilities are measured at the enacted rate expected to apply when the differences
+    reverse, and the effect of a rate change is recognized in income from continuing operations in the
+    period of enactment. Ending liability = $580,000 × 26% = $150,800. Deferred tax expense = $150,800
+    − $105,000 = $45,800 (including $25,000 from remeasuring the beginning differences).

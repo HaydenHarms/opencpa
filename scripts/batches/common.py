@@ -70,34 +70,98 @@ def finalize(items):
     return items
 
 
+def variant(stem, choices, answer, explanation):
+    """One variant of an item: `choices` is a list of (text, rationale); `answer` is a letter into that list."""
+    return dict(
+        stem=stem.strip(),
+        choices=[dict(id=k, text=t, rationale=r) for k, (t, r) in zip("ABCDEF", choices)],
+        answer=answer, explanation=explanation.strip(),
+    )
+
+
+def attach_variants(item, variants):
+    """Order each variant's choices the way finalize() orders the item's, then attach them.
+
+    Numeric variants are sorted ascending. Word variants keep the key in the item's position,
+    so the position carries no signal across versions.
+    """
+    for v in variants:
+        ch = v["choices"]
+        right = next(c for c in ch if c["id"] == v["answer"])
+        if is_numeric(ch):
+            new = sorted(ch, key=lambda c: _amounts(c["text"]))
+        else:
+            others = [c for c in ch if c is not right]
+            pos = "ABCDEF".index(item["answer"])
+            new = others[:pos] + [right] + others[pos:]
+        for k, c in zip("ABCDEF", new):
+            c["id"] = k
+        v["choices"] = new
+        v["answer"] = next(c["id"] for c in new if c is right)
+    item["variants"] = variants
+    return item
+
+
+def _versions(it):
+    """The item and each of its variants, labelled for warnings."""
+    yield it["id"], it
+    for n, v in enumerate(it.get("variants") or [], 1):
+        yield f"{it['id']} variant {n}", v
+
+
 def audit(items):
-    """Print warnings for cues a reviewer will flag. Returns the number of warnings."""
+    """Print warnings for cues a reviewer will flag, in the item and every variant. Returns the count."""
     warnings = []
     for it in items:
-        ch = it["choices"]
-        lens = {c["id"]: len(c["text"]) for c in ch}
-        if not is_numeric(ch):
-            right_len = lens[it["answer"]]
-            others = [v for k, v in lens.items() if k != it["answer"]]
-            if right_len > max(others) * 1.15:
-                warnings.append(f"{it['id']}: correct answer is >15% longer than every distractor")
-        if len(ch) != 4:
-            warnings.append(f"{it['id']}: has {len(ch)} choices; FAR/BAR MCQs have exactly four")
-        if len({c["text"] for c in ch}) != len(ch):
-            warnings.append(f"{it['id']}: duplicate choice text")
-        if is_numeric(ch):
-            vals = [_amounts(c["text"]) for c in ch]
-            if vals != sorted(vals):
-                warnings.append(f"{it['id']}: numeric choices not ascending")
+        answers = set()
+        for label, v in _versions(it):
+            warnings += [w.replace(it["id"], label, 1) for w in _audit_one(dict(v, id=it["id"]))]
+            key = next(c["text"] for c in v["choices"] if c["id"] == v["answer"])
+            if key in answers:
+                warnings.append(f"{label}: same correct answer as another version")
+            answers.add(key)
     for w in warnings:
         print("WARN", w, file=sys.stderr)
     return len(warnings)
 
 
+def _audit_one(it):
+    """Warnings for one version of an item."""
+    warnings = []
+    ch = it["choices"]
+    lens = {c["id"]: len(c["text"]) for c in ch}
+    if not is_numeric(ch):
+        right_len = lens[it["answer"]]
+        others = [v for k, v in lens.items() if k != it["answer"]]
+        if right_len > max(others) * 1.15:
+            warnings.append(f"{it['id']}: correct answer is >15% longer than every distractor")
+    if len(ch) != 4:
+        warnings.append(f"{it['id']}: has {len(ch)} choices; FAR/BAR MCQs have exactly four")
+    if len({c["text"] for c in ch}) != len(ch):
+        warnings.append(f"{it['id']}: duplicate choice text")
+    if is_numeric(ch):
+        vals = [_amounts(c["text"]) for c in ch]
+        if vals != sorted(vals):
+            warnings.append(f"{it['id']}: numeric choices not ascending")
+    return warnings
+
+
 def write_items(items, content_dir):
+    """Write items to YAML. Variants added later by a variants script are kept as long as the
+    item's stem is unchanged; if the stem changed, they are dropped with a warning to re-run it."""
     os.makedirs(content_dir, exist_ok=True)
     for it in items:
-        with open(os.path.join(content_dir, it["id"] + ".yaml"), "w", encoding="utf-8", newline="\n") as f:
+        path = os.path.join(content_dir, it["id"] + ".yaml")
+        if "variants" not in it and os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                old = yaml.safe_load(f)
+            if old.get("variants"):
+                if old["stem"] == it["stem"]:
+                    it["variants"] = old["variants"]
+                else:
+                    print(f"WARN {it['id']}: stem changed, so its variants were dropped; "
+                          "re-run its variants script", file=sys.stderr)
+        with open(path, "w", encoding="utf-8", newline="\n") as f:
             yaml.safe_dump(it, f, sort_keys=False, allow_unicode=True, width=100)
     dist = {}
     for it in items:

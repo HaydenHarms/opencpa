@@ -54,25 +54,56 @@ const base = {
   review: Review,
 };
 
-/** Multiple-choice question. */
+const mcqBody = {
+  stem: z.string().min(1),
+  /** Exactly four choices, A–D, as on the CPA exam. */
+  choices: z.array(Choice).length(4, 'an MCQ has exactly four choices (A–D)'),
+  answer: z.string().regex(/^[A-D]$/),
+  explanation: z.string().min(1),
+};
+
+/**
+ * Another version of a question with different numbers, so a student who sees the item
+ * again can't answer from memory. It tests the same thing with the same distractor errors.
+ */
+export const McqVariant = z.object(mcqBody);
+export type McqVariant = z.infer<typeof McqVariant>;
+
+/** Multiple-choice question. The item itself is variant 0; `variants` are 1, 2, … */
 export const McqItem = z
   .object({
     ...base,
     type: z.literal('mcq'),
-    stem: z.string().min(1),
-    /** Exactly four choices, A–D, as on the CPA exam. */
-    choices: z.array(Choice).length(4, 'an MCQ has exactly four choices (A–D)'),
-    answer: z.string().regex(/^[A-D]$/),
-    explanation: z.string().min(1),
+    ...mcqBody,
+    variants: z.array(McqVariant).max(9).optional(),
   })
   .superRefine((q, ctx) => {
-    const ids = q.choices.map((c) => c.id);
-    if (new Set(ids).size !== ids.length)
-      ctx.addIssue({ code: 'custom', message: 'duplicate choice ids' });
-    if (!ids.includes(q.answer))
-      ctx.addIssue({ code: 'custom', message: `answer ${q.answer} is not one of the choices` });
+    [q, ...(q.variants ?? [])].forEach((v, i) => {
+      const where = i ? `variant ${i}: ` : '';
+      const ids = v.choices.map((c) => c.id);
+      if (new Set(ids).size !== ids.length)
+        ctx.addIssue({ code: 'custom', message: `${where}duplicate choice ids` });
+      if (!ids.includes(v.answer))
+        ctx.addIssue({
+          code: 'custom',
+          message: `${where}answer ${v.answer} is not one of the choices`,
+        });
+      if (i && v.stem === q.stem)
+        ctx.addIssue({ code: 'custom', message: `${where}stem is identical to the item's` });
+    });
   });
 export type McqItem = z.infer<typeof McqItem>;
+
+/** How many versions an MCQ has: the item itself plus its variants. */
+export function variantCount(q: McqItem): number {
+  return 1 + (q.variants?.length ?? 0);
+}
+
+/** The item as it reads in variant `v` (0 is the item itself). */
+export function mcqVariant(q: McqItem, v: number): McqItem {
+  const alt = v > 0 ? q.variants?.[v - 1] : undefined;
+  return alt ? { ...q, ...alt } : q;
+}
 
 /** One line of a journal entry. Amounts are whole cents to avoid float error. */
 export const JournalLine = z.object({
@@ -159,15 +190,26 @@ export type Item = z.infer<typeof Item>;
 /** What the API sends to the browser: no answers, rationales, or explanations. */
 export type PublicMcq = Pick<McqItem, 'id' | 'type' | 'blueprint' | 'stem'> & {
   choices: { id: string; text: string }[];
+  /** Which version of the item this is (0 is the item itself). */
+  variant: number;
 };
 
 /** A simulation task as the browser sees it: no answer, tolerance, or explanation. */
 export type PublicTbsTask =
-  | { id: string; type: 'numeric'; prompt: string; points: number; unit: 'cents' | 'percent' | 'units' }
+  | {
+      id: string;
+      type: 'numeric';
+      prompt: string;
+      points: number;
+      unit: 'cents' | 'percent' | 'units';
+    }
   | { id: string; type: 'journal_entry'; prompt: string; points: number; accounts: string[] }
   | { id: string; type: 'research'; prompt: string; points: number };
 
-export type PublicTbs = Pick<TbsItem, 'id' | 'type' | 'blueprint' | 'title' | 'scenario' | 'exhibits'> & {
+export type PublicTbs = Pick<
+  TbsItem,
+  'id' | 'type' | 'blueprint' | 'title' | 'scenario' | 'exhibits'
+> & {
   tasks: PublicTbsTask[];
 };
 
@@ -193,12 +235,14 @@ export function toPublicTbs(t: TbsItem): PublicTbs {
   };
 }
 
-export function toPublicMcq(q: McqItem): PublicMcq {
+export function toPublicMcq(q: McqItem, variant = 0): PublicMcq {
+  const v = mcqVariant(q, variant);
   return {
     id: q.id,
     type: q.type,
     blueprint: q.blueprint,
-    stem: q.stem,
-    choices: q.choices.map(({ id, text }) => ({ id, text })),
+    stem: v.stem,
+    choices: v.choices.map(({ id, text }) => ({ id, text })),
+    variant: v === q ? 0 : variant,
   };
 }

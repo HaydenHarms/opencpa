@@ -36,3 +36,84 @@ explanation: 'The added units are distinct but not priced at standalone selling 
   is not a separate contract. Because the remaining units are distinct from those already delivered, Reed
   treats it as terminating the old contract and creating a new one: the remaining consideration (70 ×
   $100 + 30 × $80 = $9,400) is allocated to the 100 remaining units, $94 each.'
+variants:
+- stem: Selby Co. contracts to deliver 150 identical standard units to a customer over six months for
+    $150 per unit; the customer can use each unit on its own as it is delivered. After 90 units are delivered,
+    the parties modify the contract to add 60 more units at $108 each; Selby's standalone selling price
+    for the units is $142 at that time, and the discount does not reflect any cost savings or other reason
+    tied to the added units. What revenue per unit should Selby recognize for each of the 120 units delivered
+    after the modification?
+  choices:
+  - id: A
+    text: $108
+    rationale: Uses the price of the added units for all remaining units.
+  - id: B
+    text: $129
+    rationale: 'Correct. The modification is accounted for prospectively: (60 × $150 + 60 × $108) ÷ 120
+      units.'
+  - id: C
+    text: $138
+    rationale: Applies a cumulative catch-up by blending all 210 units, including the 90 already delivered.
+      When the remaining goods are distinct, the modification is prospective.
+  - id: D
+    text: $150
+    rationale: Keeps $150 for the original units and treats the added units as a separate contract. That
+      applies only when the added units are priced at their standalone selling price.
+  answer: B
+  explanation: 'The added units are distinct but not priced at standalone selling price, so the modification
+    is not a separate contract. Because the remaining units are distinct from those already delivered,
+    Selby treats it as terminating the old contract and creating a new one: the remaining consideration
+    (60 × $150 + 60 × $108 = $15,480) is allocated to the 120 remaining units, $129 each.'
+- stem: Tolland Co. contracts to deliver 80 identical standard units to a customer over six months for
+    $75 per unit; the customer can use each unit on its own as it is delivered. After 50 units are delivered,
+    the parties modify the contract to add 20 more units at $55 each; Tolland's standalone selling price
+    for the units is $70 at that time, and the discount does not reflect any cost savings or other reason
+    tied to the added units. What revenue per unit should Tolland recognize for each of the 50 units delivered
+    after the modification?
+  choices:
+  - id: A
+    text: $55
+    rationale: Uses the price of the added units for all remaining units.
+  - id: B
+    text: $67
+    rationale: 'Correct. The modification is accounted for prospectively: (30 × $75 + 20 × $55) ÷ 50 units.'
+  - id: C
+    text: $71
+    rationale: Applies a cumulative catch-up by blending all 100 units, including the 50 already delivered.
+      When the remaining goods are distinct, the modification is prospective.
+  - id: D
+    text: $75
+    rationale: Keeps $75 for the original units and treats the added units as a separate contract. That
+      applies only when the added units are priced at their standalone selling price.
+  answer: B
+  explanation: 'The added units are distinct but not priced at standalone selling price, so the modification
+    is not a separate contract. Because the remaining units are distinct from those already delivered,
+    Tolland treats it as terminating the old contract and creating a new one: the remaining consideration
+    (30 × $75 + 20 × $55 = $3,350) is allocated to the 50 remaining units, $67 each.'
+- stem: Upshaw Co. contracts to deliver 240 identical standard units to a customer over six months for
+    $120 per unit; the customer can use each unit on its own as it is delivered. After 90 units are delivered,
+    the parties modify the contract to add 60 more units at $85 each; Upshaw's standalone selling price
+    for the units is $115 at that time, and the discount does not reflect any cost savings or other reason
+    tied to the added units. What revenue per unit should Upshaw recognize for each of the 210 units delivered
+    after the modification?
+  choices:
+  - id: A
+    text: $85
+    rationale: Uses the price of the added units for all remaining units.
+  - id: B
+    text: $110
+    rationale: 'Correct. The modification is accounted for prospectively: (150 × $120 + 60 × $85) ÷ 210
+      units.'
+  - id: C
+    text: $113
+    rationale: Applies a cumulative catch-up by blending all 300 units, including the 90 already delivered.
+      When the remaining goods are distinct, the modification is prospective.
+  - id: D
+    text: $120
+    rationale: Keeps $120 for the original units and treats the added units as a separate contract. That
+      applies only when the added units are priced at their standalone selling price.
+  answer: B
+  explanation: 'The added units are distinct but not priced at standalone selling price, so the modification
+    is not a separate contract. Because the remaining units are distinct from those already delivered,
+    Upshaw treats it as terminating the old contract and creating a new one: the remaining consideration
+    (150 × $120 + 60 × $85 = $23,100) is allocated to the 210 remaining units, $110 each.'

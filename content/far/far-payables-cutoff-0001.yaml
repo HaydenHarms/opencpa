@@ -40,3 +40,91 @@ explanation: 'Record the Year 1 liabilities found in the search: goods received 
   title passed at shipment in any case) and December utilities ($9,000). Remove the duplicated $12,000
   invoice. Goods shipped FOB destination belong to the seller until they arrive, so the $25,000 is a Year
   2 purchase. Accounts payable = $620,000 + $21,000 + $9,000 − $12,000 = $638,000.'
+variants:
+- stem: 'Lowe Co.''s draft December 31, Year 1, balance sheet reports accounts payable of $840,000; Lowe
+    records all vendor bills, including utilities, in accounts payable. Searching for unrecorded liabilities,
+    you examine January, Year 2, payments and invoices and find: (1) a $33,000 invoice for goods shipped
+    FOB shipping point on December 22 and received December 29, not recorded until January; (2) a $14,000
+    bill for December utilities, received and recorded in January; (3) a $40,000 invoice for goods shipped
+    FOB destination on December 30 and received January 4; and (4) a $18,000 December supplier invoice
+    that was entered twice in December. What amount should Lowe report as accounts payable at December
+    31, Year 1?'
+  choices:
+  - id: A
+    text: $822,000
+    rationale: Removes the duplicate invoice but adds neither of the unrecorded December liabilities.
+  - id: B
+    text: $855,000
+    rationale: Adds the $33,000 of goods and removes the duplicate but omits the $14,000 of December utilities,
+      a Year 1 liability.
+  - id: C
+    text: $869,000
+    rationale: Correct. $840,000 + $33,000 + $14,000 − $18,000. The FOB destination goods became Lowe's
+      in January.
+  - id: D
+    text: $909,000
+    rationale: Also adds the $40,000 of goods shipped FOB destination. Title passed when they arrived
+      in January, so they are a Year 2 purchase.
+  answer: C
+  explanation: 'Record the Year 1 liabilities found in the search: goods received in December ($33,000;
+    title passed at shipment in any case) and December utilities ($14,000). Remove the duplicated $18,000
+    invoice. Goods shipped FOB destination belong to the seller until they arrive, so the $40,000 is a
+    Year 2 purchase. Accounts payable = $840,000 + $33,000 + $14,000 − $18,000 = $869,000.'
+- stem: 'Mercer Co.''s draft December 31, Year 1, balance sheet reports accounts payable of $455,000;
+    Mercer records all vendor bills, including utilities, in accounts payable. Searching for unrecorded
+    liabilities, you examine January, Year 2, payments and invoices and find: (1) a $16,000 invoice for
+    goods shipped FOB shipping point on December 22 and received December 29, not recorded until January;
+    (2) a $7,000 bill for December utilities, received and recorded in January; (3) a $22,000 invoice
+    for goods shipped FOB destination on December 30 and received January 4; and (4) a $10,000 December
+    supplier invoice that was entered twice in December. What amount should Mercer report as accounts
+    payable at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $445,000
+    rationale: Removes the duplicate invoice but adds neither of the unrecorded December liabilities.
+  - id: B
+    text: $461,000
+    rationale: Adds the $16,000 of goods and removes the duplicate but omits the $7,000 of December utilities,
+      a Year 1 liability.
+  - id: C
+    text: $468,000
+    rationale: Correct. $455,000 + $16,000 + $7,000 − $10,000. The FOB destination goods became Mercer's
+      in January.
+  - id: D
+    text: $490,000
+    rationale: Also adds the $22,000 of goods shipped FOB destination. Title passed when they arrived
+      in January, so they are a Year 2 purchase.
+  answer: C
+  explanation: 'Record the Year 1 liabilities found in the search: goods received in December ($16,000;
+    title passed at shipment in any case) and December utilities ($7,000). Remove the duplicated $10,000
+    invoice. Goods shipped FOB destination belong to the seller until they arrive, so the $22,000 is a
+    Year 2 purchase. Accounts payable = $455,000 + $16,000 + $7,000 − $10,000 = $468,000.'
+- stem: 'Nash Co.''s draft December 31, Year 1, balance sheet reports accounts payable of $1,230,000;
+    Nash records all vendor bills, including utilities, in accounts payable. Searching for unrecorded
+    liabilities, you examine January, Year 2, payments and invoices and find: (1) a $48,000 invoice for
+    goods shipped FOB shipping point on December 22 and received December 29, not recorded until January;
+    (2) a $21,000 bill for December utilities, received and recorded in January; (3) a $36,000 invoice
+    for goods shipped FOB destination on December 30 and received January 4; and (4) a $27,000 December
+    supplier invoice that was entered twice in December. What amount should Nash report as accounts payable
+    at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $1,203,000
+    rationale: Removes the duplicate invoice but adds neither of the unrecorded December liabilities.
+  - id: B
+    text: $1,251,000
+    rationale: Adds the $48,000 of goods and removes the duplicate but omits the $21,000 of December utilities,
+      a Year 1 liability.
+  - id: C
+    text: $1,272,000
+    rationale: Correct. $1,230,000 + $48,000 + $21,000 − $27,000. The FOB destination goods became Nash's
+      in January.
+  - id: D
+    text: $1,308,000
+    rationale: Also adds the $36,000 of goods shipped FOB destination. Title passed when they arrived
+      in January, so they are a Year 2 purchase.
+  answer: C
+  explanation: 'Record the Year 1 liabilities found in the search: goods received in December ($48,000;
+    title passed at shipment in any case) and December utilities ($21,000). Remove the duplicated $27,000
+    invoice. Goods shipped FOB destination belong to the seller until they arrive, so the $36,000 is a
+    Year 2 purchase. Accounts payable = $1,230,000 + $48,000 + $21,000 − $27,000 = $1,272,000.'

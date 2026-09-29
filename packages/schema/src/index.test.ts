@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { McqItem, TbsItem, toPublicMcq, toPublicTbs } from './index';
+import { McqItem, TbsItem, mcqVariant, toPublicMcq, toPublicTbs, variantCount } from './index';
 
 const blueprint = {
   section: 'FAR',
@@ -119,7 +119,15 @@ describe('public projections', () => {
       scenario: 'S',
       exhibits: [{ title: 'Trial balance', body: '| Account | Amount |' }],
       tasks: [
-        { id: 'n', type: 'numeric', prompt: 'P', points: 1, answer: 123400, tolerance: 100, explanation: 'secret' },
+        {
+          id: 'n',
+          type: 'numeric',
+          prompt: 'P',
+          points: 1,
+          answer: 123400,
+          tolerance: 100,
+          explanation: 'secret',
+        },
         {
           id: 'j',
           type: 'journal_entry',
@@ -132,7 +140,14 @@ describe('public projections', () => {
           ],
           explanation: 'secret',
         },
-        { id: 'r', type: 'research', prompt: 'P', points: 1, answer: ['ASC 842-20-30-1'], explanation: 'secret' },
+        {
+          id: 'r',
+          type: 'research',
+          prompt: 'P',
+          points: 1,
+          answer: ['ASC 842-20-30-1'],
+          explanation: 'secret',
+        },
       ],
     });
     const pub = toPublicTbs(t);
@@ -143,5 +158,40 @@ describe('public projections', () => {
     expect(json).not.toContain('842-20-30-1');
     expect(pub.tasks.map((x) => x.type)).toEqual(['numeric', 'journal_entry', 'research']);
     expect(pub.exhibits).toHaveLength(1);
+  });
+});
+
+describe('MCQ variants', () => {
+  const choices = (key: string) =>
+    ['A', 'B', 'C', 'D'].map((id) => ({ id, text: `$${id}${key}`, rationale: 'why' }));
+  const item = {
+    id: 'far-test-0002',
+    type: 'mcq',
+    blueprint,
+    review,
+    stem: 'Original stem',
+    choices: choices('1'),
+    answer: 'B',
+    explanation: 'Base.',
+    variants: [{ stem: 'Second stem', choices: choices('2'), answer: 'C', explanation: 'Two.' }],
+  };
+
+  it('accepts variants and serves each version', () => {
+    const q = McqItem.parse(item);
+    expect(variantCount(q)).toBe(2);
+    expect(mcqVariant(q, 1)).toMatchObject({ stem: 'Second stem', answer: 'C', id: q.id });
+    expect(mcqVariant(q, 0).stem).toBe('Original stem');
+    expect(mcqVariant(q, 5).stem).toBe('Original stem'); // out of range falls back to the item
+    const pub = toPublicMcq(q, 1);
+    expect(pub).toMatchObject({ stem: 'Second stem', variant: 1 });
+    expect(JSON.stringify(pub)).not.toMatch(/answer|rationale|explanation/);
+    expect(toPublicMcq(q, 7).variant).toBe(0);
+  });
+
+  it('rejects a variant whose answer is not a choice or whose stem repeats the item', () => {
+    const bad = (v: object) =>
+      McqItem.safeParse({ ...item, variants: [{ ...item.variants[0], ...v }] }).success;
+    expect(bad({ answer: 'E' })).toBe(false);
+    expect(bad({ stem: 'Original stem' })).toBe(false);
   });
 });

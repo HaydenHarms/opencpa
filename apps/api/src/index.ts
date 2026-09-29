@@ -1,7 +1,7 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { z } from 'zod';
-import { toPublicMcq, toPublicTbs, type Item } from '@opencpa/schema';
+import { mcqVariant, toPublicMcq, toPublicTbs, variantCount, type Item } from '@opencpa/schema';
 import {
   AREA_WEIGHTS,
   DIAGNOSTIC_SIZE,
@@ -27,8 +27,10 @@ import {
   completeIfDone,
   hasMcqAttempts,
   loadSession,
+  pickVariants,
   reveal,
   revealSimulation,
+  sessionVariant,
   sessionView,
   type SessionRow,
 } from './sessions';
@@ -108,6 +110,8 @@ const attemptBody = z.object({
   lowConfidence: z.boolean().optional(),
   durationMs: z.number().int().nonnegative().optional(),
   sessionId: z.string().uuid().optional(),
+  /** The version answered, outside a session. In a session the session decides. */
+  variant: z.number().int().min(0).max(9).optional(),
 });
 
 app.post('/me/attempts', async (c) => {
@@ -120,7 +124,10 @@ app.post('/me/attempts', async (c) => {
   const userId = c.get('userId');
   const check = await checkSession(c.env.DB, userId, sessionId, itemId);
   if ('error' in check) return c.json({ error: check.error }, check.status);
-  const result = gradeMcq(item, selected);
+  const variant = check.session ? sessionVariant(check.session, itemId) : (body.data.variant ?? 0);
+  if (variant >= variantCount(item)) return c.json({ error: 'unknown variant' }, 400);
+  const version = mcqVariant(item, variant);
+  const result = gradeMcq(version, selected);
   const now = new Date();
 
   const row = await c.env.DB.prepare('SELECT * FROM review_cards WHERE user_id = ? AND item_id = ?')
@@ -132,13 +139,23 @@ app.post('/me/attempts', async (c) => {
     now,
   );
 
-  await saveAttempt(c.env.DB, userId, item, { selected }, result, durationMs, card, sessionId);
+  await saveAttempt(
+    c.env.DB,
+    userId,
+    item,
+    { selected },
+    result,
+    durationMs,
+    card,
+    sessionId,
+    variant,
+  );
   const sessionComplete = await completeIfDone(c.env.DB, check.session);
 
   // Answer and explanation are revealed only after an attempt is recorded.
   return c.json({
     ...result,
-    ...reveal(item, selected, result.correct),
+    ...reveal(version, selected, result.correct),
     nextDue: card.due.toISOString(),
     sessionComplete,
   });
@@ -315,6 +332,7 @@ app.post('/me/sessions', async (c) => {
   }
   // Simulations are spread through the questions (exam-day mode will use the exam's order).
   ids = spreadThrough(ids, simIds);
+  const variants = await pickVariants(db, userId, ids);
 
   // Starting a new session abandons any unfinished one in the same section.
   // Its answers still count toward mastery and review scheduling.
@@ -328,9 +346,9 @@ app.post('/me/sessions', async (c) => {
       .bind(userId, section),
     db
       .prepare(
-        'INSERT INTO practice_sessions (id, user_id, section, kind, item_ids) VALUES (?, ?, ?, ?, ?)',
+        'INSERT INTO practice_sessions (id, user_id, section, kind, item_ids, variants) VALUES (?, ?, ?, ?, ?, ?)',
       )
-      .bind(id, userId, section, kind, JSON.stringify(ids)),
+      .bind(id, userId, section, kind, JSON.stringify(ids), JSON.stringify(variants)),
   ]);
   const row = await loadSession(db, userId, id);
   return c.json(await sessionView(db, row!), 201);
@@ -413,12 +431,13 @@ function saveAttempt(
   durationMs: number | undefined,
   card: Card,
   sessionId?: string,
+  variant = 0,
 ) {
   return db.batch([
     db
       .prepare(
-        `INSERT INTO attempts (user_id, item_id, section, area, response, earned, possible, correct, duration_ms, session_id)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        `INSERT INTO attempts (user_id, item_id, section, area, response, earned, possible, correct, duration_ms, session_id, variant)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       )
       .bind(
         userId,
@@ -431,6 +450,7 @@ function saveAttempt(
         result.correct ? 1 : 0,
         durationMs ?? null,
         sessionId ?? null,
+        variant,
       ),
     db
       .prepare(

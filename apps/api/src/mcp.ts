@@ -10,6 +10,7 @@ import { WebStandardStreamableHTTPServerTransport } from '@modelcontextprotocol/
 import { CfWorkerJsonSchemaValidator } from '@modelcontextprotocol/sdk/validation/cfworker';
 import { z } from 'zod';
 import {
+  mcqVariant,
   toPublicMcq,
   toPublicTbs,
   type Item,
@@ -22,6 +23,7 @@ import {
   reveal,
   revealSimulation,
   sessionItemIds,
+  sessionVariant,
   type Responses,
   type SessionRow,
 } from './sessions';
@@ -41,6 +43,7 @@ type Attempt = {
   earned: number;
   possible: number;
   created_at: number;
+  variant: number;
 };
 
 const iso = (ms: number) => new Date(ms).toISOString();
@@ -86,8 +89,8 @@ function tbsInDollars(item: TbsItem, revealed: ReturnType<typeof revealSimulatio
 }
 
 /** The public view of an item, with amounts in simulations shown as written. */
-function publicItem(item: Item) {
-  if (item.type === 'mcq') return toPublicMcq(item);
+function publicItem(item: Item, variant = 0) {
+  if (item.type === 'mcq') return toPublicMcq(item, variant);
   const t = toPublicTbs(item);
   return { ...t, note: 'Numeric answers with unit "cents" are entered in dollars on the site.' };
 }
@@ -97,14 +100,15 @@ function attemptDetail(item: Item, a: Attempt) {
   const when = iso(a.created_at);
   if (item.type === 'mcq') {
     const { selected } = JSON.parse(a.response) as { selected: string };
-    const r = reveal(item, selected, !!a.correct);
+    const version = mcqVariant(item, a.variant);
+    const r = reveal(version, selected, !!a.correct);
     return {
       id: item.id,
       type: 'multiple choice',
       blueprint: item.blueprint,
       answeredAt: when,
-      stem: item.stem,
-      choices: item.choices.map((c) => ({ id: c.id, text: c.text, rationale: c.rationale })),
+      stem: version.stem,
+      choices: version.choices.map((c) => ({ id: c.id, text: c.text, rationale: c.rationale })),
       studentChoice: r.selected,
       correctAnswer: r.answer,
       studentWasCorrect: r.correct,
@@ -154,7 +158,7 @@ function buildServer(db: D1Database, userId: string) {
     async ({ count }) => {
       const { results } = await db
         .prepare(
-          'SELECT item_id, response, correct, earned, possible, created_at FROM attempts WHERE user_id = ? ORDER BY created_at DESC, id DESC LIMIT ?',
+          'SELECT item_id, response, correct, earned, possible, created_at, variant FROM attempts WHERE user_id = ? ORDER BY created_at DESC, id DESC LIMIT ?',
         )
         .bind(userId, count ?? 1)
         .all<Attempt>();
@@ -197,7 +201,7 @@ function buildServer(db: D1Database, userId: string) {
           kind: row.kind,
           position: `${index + 1} of ${ids.length}`,
         },
-        item: publicItem(byId.get(ids[index]!)!),
+        item: publicItem(byId.get(ids[index]!)!, sessionVariant(row, ids[index]!)),
       });
     },
   );
@@ -216,7 +220,7 @@ function buildServer(db: D1Database, userId: string) {
       if (!item) return text({ error: `No item with id ${id}.` });
       const a = await db
         .prepare(
-          'SELECT item_id, response, correct, earned, possible, created_at FROM attempts WHERE user_id = ? AND item_id = ? ORDER BY created_at DESC, id DESC LIMIT 1',
+          'SELECT item_id, response, correct, earned, possible, created_at, variant FROM attempts WHERE user_id = ? AND item_id = ? ORDER BY created_at DESC, id DESC LIMIT 1',
         )
         .bind(userId, id)
         .first<Attempt>();

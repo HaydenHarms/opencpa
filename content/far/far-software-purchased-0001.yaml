@@ -36,3 +36,81 @@ answer: B
 explanation: 'The license ($240,000) and the configuration needed to make the software ready for use ($60,000)
   are capitalized: $300,000. Training ($15,000) and data conversion ($10,000) are expensed. Amortization
   starts April 1: $300,000 ÷ 5 × 9/12 = $45,000. Year 1 expense = $45,000 + $25,000 = $70,000.'
+variants:
+- stem: On January 1, Year 1, Kemp Co. buys a perpetual license for accounting software to use internally
+    for $360,000. It also pays a consultant $90,000 to configure the software for Kemp's processes, $20,000
+    to train employees, and $12,000 to convert data from its old system. The software is ready for its
+    intended use on July 1, Year 1, and Kemp amortizes it straight-line over five years. What total expense
+    related to these costs should Kemp recognize in Year 1?
+  choices:
+  - id: A
+    text: $48,200
+    rationale: Capitalizes the training and data conversion costs as well. Both are expensed as incurred.
+  - id: B
+    text: $77,000
+    rationale: Correct. Capitalized cost $450,000 ÷ 5 × 6/12 = $45,000 of amortization, plus $32,000 of
+      training and data conversion.
+  - id: C
+    text: $122,000
+    rationale: Amortizes from January 1. Amortization begins when the software is ready for its intended
+      use on July 1.
+  - id: D
+    text: $158,000
+    rationale: Expenses the $90,000 of configuration. Costs to configure internal-use software for its
+      intended use are capitalized.
+  answer: B
+  explanation: 'The license ($360,000) and the configuration needed to make the software ready for use
+    ($90,000) are capitalized: $450,000. Training ($20,000) and data conversion ($12,000) are expensed.
+    Amortization starts July 1: $450,000 ÷ 5 × 6/12 = $45,000. Year 1 expense = $45,000 + $32,000 = $77,000.'
+- stem: On January 1, Year 1, Lister Co. buys a perpetual license for accounting software to use internally
+    for $180,000. It also pays a consultant $45,000 to configure the software for Lister's processes,
+    $9,000 to train employees, and $6,000 to convert data from its old system. The software is ready for
+    its intended use on March 1, Year 1, and Lister amortizes it straight-line over four years. What total
+    expense related to these costs should Lister recognize in Year 1?
+  choices:
+  - id: A
+    text: $50,000
+    rationale: Capitalizes the training and data conversion costs as well. Both are expensed as incurred.
+  - id: B
+    text: $61,875
+    rationale: Correct. Capitalized cost $225,000 ÷ 4 × 10/12 = $46,875 of amortization, plus $15,000
+      of training and data conversion.
+  - id: C
+    text: $71,250
+    rationale: Amortizes from January 1. Amortization begins when the software is ready for its intended
+      use on March 1.
+  - id: D
+    text: $97,500
+    rationale: Expenses the $45,000 of configuration. Costs to configure internal-use software for its
+      intended use are capitalized.
+  answer: B
+  explanation: 'The license ($180,000) and the configuration needed to make the software ready for use
+    ($45,000) are capitalized: $225,000. Training ($9,000) and data conversion ($6,000) are expensed.
+    Amortization starts March 1: $225,000 ÷ 4 × 10/12 = $46,875. Year 1 expense = $46,875 + $15,000 =
+    $61,875.'
+- stem: On January 1, Year 1, Marsh Co. buys a perpetual license for accounting software to use internally
+    for $420,000. It also pays a consultant $60,000 to configure the software for Marsh's processes, $18,000
+    to train employees, and $12,000 to convert data from its old system. The software is ready for its
+    intended use on October 1, Year 1, and Marsh amortizes it straight-line over six years. What total
+    expense related to these costs should Marsh recognize in Year 1?
+  choices:
+  - id: A
+    text: $21,250
+    rationale: Capitalizes the training and data conversion costs as well. Both are expensed as incurred.
+  - id: B
+    text: $50,000
+    rationale: Correct. Capitalized cost $480,000 ÷ 6 × 3/12 = $20,000 of amortization, plus $30,000 of
+      training and data conversion.
+  - id: C
+    text: $107,500
+    rationale: Expenses the $60,000 of configuration. Costs to configure internal-use software for its
+      intended use are capitalized.
+  - id: D
+    text: $110,000
+    rationale: Amortizes from January 1. Amortization begins when the software is ready for its intended
+      use on October 1.
+  answer: B
+  explanation: 'The license ($420,000) and the configuration needed to make the software ready for use
+    ($60,000) are capitalized: $480,000. Training ($18,000) and data conversion ($12,000) are expensed.
+    Amortization starts October 1: $480,000 ÷ 6 × 3/12 = $20,000. Year 1 expense = $20,000 + $30,000 =
+    $50,000.'

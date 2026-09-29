@@ -36,3 +36,82 @@ explanation: Consolidated statements present the group as one entity, so the int
   along with the investment. Pym's note receivable ($500,000) and accrued interest receivable ($500,000
   × 6% × 6/12 = $15,000) come out of assets, and Tovey's matching payables come out of liabilities. Total
   assets = $4,200,000 − $515,000 = $3,685,000.
+variants:
+- stem: Quill Corp. owns 100% of Ramsey Inc. Quill's draft December 31, Year 1, consolidated balance sheet
+    reports total assets of $6,800,000; to prepare it, the staff eliminated Quill's investment in Ramsey
+    against Ramsey's equity and added the two companies' other balances. Supporting schedules show that
+    on April 1, Year 1, Quill lent Ramsey $800,000 at 5%, with interest due each March 31, and that both
+    companies accrued interest at December 31. After any corrections needed, what total assets should
+    the consolidated balance sheet report?
+  choices:
+  - id: A
+    text: $5,940,000
+    rationale: Eliminates the accrued interest twice, once for each company's accrual. Only Quill's $30,000
+      receivable is an asset.
+  - id: B
+    text: $5,970,000
+    rationale: Correct. $6,800,000 − $800,000 note receivable − $30,000 accrued interest receivable.
+  - id: C
+    text: $6,000,000
+    rationale: Eliminates the note but not the $30,000 of accrued interest receivable.
+  - id: D
+    text: $6,800,000
+    rationale: Accepts the draft. Balances between parent and subsidiary are eliminated, not only the
+      investment account.
+  answer: B
+  explanation: Consolidated statements present the group as one entity, so the intercompany loan is eliminated
+    along with the investment. Quill's note receivable ($800,000) and accrued interest receivable ($800,000
+    × 5% × 9/12 = $30,000) come out of assets, and Ramsey's matching payables come out of liabilities.
+    Total assets = $6,800,000 − $830,000 = $5,970,000.
+- stem: Sutter Corp. owns 100% of Vane Inc. Sutter's draft December 31, Year 1, consolidated balance sheet
+    reports total assets of $3,100,000; to prepare it, the staff eliminated Sutter's investment in Vane
+    against Vane's equity and added the two companies' other balances. Supporting schedules show that
+    on September 1, Year 1, Sutter lent Vane $400,000 at 9%, with interest due each August 31, and that
+    both companies accrued interest at December 31. After any corrections needed, what total assets should
+    the consolidated balance sheet report?
+  choices:
+  - id: A
+    text: $2,676,000
+    rationale: Eliminates the accrued interest twice, once for each company's accrual. Only Sutter's $12,000
+      receivable is an asset.
+  - id: B
+    text: $2,688,000
+    rationale: Correct. $3,100,000 − $400,000 note receivable − $12,000 accrued interest receivable.
+  - id: C
+    text: $2,700,000
+    rationale: Eliminates the note but not the $12,000 of accrued interest receivable.
+  - id: D
+    text: $3,100,000
+    rationale: Accepts the draft. Balances between parent and subsidiary are eliminated, not only the
+      investment account.
+  answer: B
+  explanation: Consolidated statements present the group as one entity, so the intercompany loan is eliminated
+    along with the investment. Sutter's note receivable ($400,000) and accrued interest receivable ($400,000
+    × 9% × 4/12 = $12,000) come out of assets, and Vane's matching payables come out of liabilities. Total
+    assets = $3,100,000 − $412,000 = $2,688,000.
+- stem: Wexford Corp. owns 100% of Yates Inc. Wexford's draft December 31, Year 1, consolidated balance
+    sheet reports total assets of $5,500,000; to prepare it, the staff eliminated Wexford's investment
+    in Yates against Yates's equity and added the two companies' other balances. Supporting schedules
+    show that on May 1, Year 1, Wexford lent Yates $1,200,000 at 4%, with interest due each April 30,
+    and that both companies accrued interest at December 31. After any corrections needed, what total
+    assets should the consolidated balance sheet report?
+  choices:
+  - id: A
+    text: $4,236,000
+    rationale: Eliminates the accrued interest twice, once for each company's accrual. Only Wexford's
+      $32,000 receivable is an asset.
+  - id: B
+    text: $4,268,000
+    rationale: Correct. $5,500,000 − $1,200,000 note receivable − $32,000 accrued interest receivable.
+  - id: C
+    text: $4,300,000
+    rationale: Eliminates the note but not the $32,000 of accrued interest receivable.
+  - id: D
+    text: $5,500,000
+    rationale: Accepts the draft. Balances between parent and subsidiary are eliminated, not only the
+      investment account.
+  answer: B
+  explanation: Consolidated statements present the group as one entity, so the intercompany loan is eliminated
+    along with the investment. Wexford's note receivable ($1,200,000) and accrued interest receivable
+    ($1,200,000 × 4% × 8/12 = $32,000) come out of assets, and Yates's matching payables come out of liabilities.
+    Total assets = $5,500,000 − $1,232,000 = $4,268,000.

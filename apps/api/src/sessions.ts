@@ -1,5 +1,12 @@
 /** Practice-session storage and what an answered item reveals, shared by the API and the MCP connector. */
-import { toPublicMcq, toPublicTbs, type McqItem, type TbsItem } from '@opencpa/schema';
+import {
+  mcqVariant,
+  toPublicMcq,
+  toPublicTbs,
+  variantCount,
+  type McqItem,
+  type TbsItem,
+} from '@opencpa/schema';
 import { gradeSimulation } from '@opencpa/engine';
 import { byId } from './content';
 
@@ -10,6 +17,8 @@ export type SessionRow = {
   kind: 'diagnostic' | 'practice';
   status: 'active' | 'completed' | 'abandoned';
   item_ids: string;
+  /** JSON array of the version served for each item, parallel to item_ids; null means all 0. */
+  variants: string | null;
   created_at: number;
   completed_at: number | null;
 };
@@ -24,6 +33,30 @@ export function loadSession(db: D1Database, userId: string, id: string) {
 /** The session's items that are still in the bank (retired items drop out). */
 export function sessionItemIds(row: SessionRow): string[] {
   return (JSON.parse(row.item_ids) as string[]).filter((id) => byId.has(id));
+}
+
+/** Which version of an item the session serves (0 when the session predates variants). */
+export function sessionVariant(row: SessionRow, itemId: string): number {
+  if (!row.variants) return 0;
+  const ids = JSON.parse(row.item_ids) as string[];
+  const variants = JSON.parse(row.variants) as number[];
+  return variants[ids.indexOf(itemId)] ?? 0;
+}
+
+/**
+ * Pick the version of each multiple-choice item to serve: rotate through the versions by how
+ * many times the student has answered that item, so a repeat shows new numbers.
+ */
+export async function pickVariants(db: D1Database, userId: string, ids: string[]) {
+  const { results } = await db
+    .prepare('SELECT item_id, COUNT(*) AS n FROM attempts WHERE user_id = ? GROUP BY item_id')
+    .bind(userId)
+    .all<{ item_id: string; n: number }>();
+  const seen = new Map(results.map((r) => [r.item_id, r.n]));
+  return ids.map((id) => {
+    const item = byId.get(id);
+    return item?.type === 'mcq' ? (seen.get(id) ?? 0) % variantCount(item) : 0;
+  });
 }
 
 export type SessionCheck =
@@ -96,16 +129,16 @@ export function revealSimulation(item: TbsItem, responses: Responses) {
 /** A session's public items, plus the revealed result of each item already answered. */
 export async function sessionView(db: D1Database, row: SessionRow) {
   const { results } = await db
-    .prepare('SELECT item_id, response, correct FROM attempts WHERE session_id = ?')
+    .prepare('SELECT item_id, response, correct, variant FROM attempts WHERE session_id = ?')
     .bind(row.id)
-    .all<{ item_id: string; response: string; correct: number }>();
+    .all<{ item_id: string; response: string; correct: number; variant: number }>();
   const answered: Record<string, ReturnType<typeof reveal> | ReturnType<typeof revealSimulation>> =
     {};
   for (const r of results) {
     const item = byId.get(r.item_id);
     if (item?.type === 'mcq') {
       const { selected } = JSON.parse(r.response) as { selected: string };
-      answered[r.item_id] = reveal(item, selected, !!r.correct);
+      answered[r.item_id] = reveal(mcqVariant(item, r.variant), selected, !!r.correct);
     } else if (item?.type === 'tbs') {
       // Grading is deterministic, so re-grading the stored responses reproduces the result.
       answered[r.item_id] = revealSimulation(item, JSON.parse(r.response) as Responses);
@@ -120,7 +153,7 @@ export async function sessionView(db: D1Database, row: SessionRow) {
     completedAt: row.completed_at,
     items: sessionItemIds(row).map((id) => {
       const item = byId.get(id)!;
-      return item.type === 'mcq' ? toPublicMcq(item) : toPublicTbs(item);
+      return item.type === 'mcq' ? toPublicMcq(item, sessionVariant(row, id)) : toPublicTbs(item);
     }),
     answered,
   };
