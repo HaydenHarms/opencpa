@@ -33,7 +33,7 @@ Commands: `pnpm install`, `pnpm dev`, `pnpm test`, `pnpm typecheck`, `pnpm conte
 - **FAR batch 01** (25 reviewed MCQs) is live on `main`, after three revisions driven by independent quality reviews (history in `docs/reviews/far-batch-01.md`). Revision 3 applied the second review: two items moved to BAR, five-choice items cut to four, giveaway wording removed, and Analysis items written in the blueprint's own task frames.
 - **BAR batch 01** (25 items) passed the review gate: 84% average estimated pass likelihood, 15 exam-ready, 10 minor, 0 major; fixes applied. Mix 12% / 56% / 32% by skill (Application one over) and 44% / 44% / 12% by area. Gaps for BAR batch 02 are listed in `docs/reviews/bar-batch-01.md`.
 - **FAR batch 04** (25 items) passed the review gate after one major fix: 83% average estimated pass likelihood, 13 exam-ready, 11 minor; all findings applied. The **100-item FAR bank** is 12% / 50% / 38% by skill and 35% / 34% / 31% by area, inside every blueprint range.
-- **Simulations:** the API (milestone 1) is on `main`. The player UI and three verified FAR simulations are on the local branch `tbs-ui` (git worktree at `C:/Users/harms/opencpa-tbs`), not pushed, waiting for Hayden to review before merge.
+- **Simulations:** the API, the player UI (`/simulations`) and three blind-verified FAR simulations are live on `main` (merged at Hayden's request; he may ask to revert the UI). Their review gate is still to run.
 - **FAR batch 03** (25 items, all new) passed the review gate: 84% average estimated pass likelihood, 23 exam-ready, 2 minor, 0 major; minor findings applied. The 75-item FAR bank is 9% / 53% / 37% by skill and 35% / 35% / 31% by area, all within the blueprint ranges.
 - **FAR batch 02** (25 items, all new) passed the review gate on the first run: 85% average estimated pass likelihood, 22 exam-ready, 3 minor, 0 major. The minor findings are applied. The 50-item FAR bank is 8% / 56% / 36% by skill (Application one item over its range) and 34% / 36% / 30% by area.
 - **FAR batch 01 passed the review gate** (revision 3: 84% average estimated pass likelihood, 18 exam-ready, 7 minor, 0 major). The gate's minor findings were applied in revision 3b; skill mix after honest retagging is 2 / 14 / 9 (8% / 56% / 36%), area mix 8 / 9 / 8.
@@ -87,7 +87,7 @@ Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Sel
 
 ## Roadmap (next, in order)
 
-1. **Hayden reviews the simulation UI** on branch `tbs-ui` (run `pnpm dev` in the worktree; three simulations are there to try). If approved, merge to `main`, run the review gate on the three simulations, and start the next simulation batch.
+1. **Simulations:** run the review gate on the three live simulations, react to Hayden's feedback on the UI, then write the next simulation batch.
 2. **FAR batch 05** (gaps in `docs/reviews/far-batch-04.md`: troubled debt restructurings, EBITDA and asset turnover, comprehensive income recall, purchased software, impairment of investments at fair value, equity method, fund determination, NFP statement of activities, foreign-currency transactions). Keep batch-level Remembering and Understanding at or below 15%.
 3. The other sections: BAR batch 02 (gaps in `docs/reviews/bar-batch-01.md`; lean toward Area I and II Analysis to bring Application back under 55%), then AUD/REG and the disciplines. BAR targets: Area I 40–50%, II 35–45%, III 10–20%; Remembering and Understanding 10–20%, Application 45–55%, Analysis 30–40%.
 4. Accounts (GitHub OAuth / email magic link), migrating anonymous progress to the account.
