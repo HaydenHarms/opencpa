@@ -1,11 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import type { TbsTask } from '@opencpa/schema';
+import type { TbsItem, TbsTask } from '@opencpa/schema';
 import {
   gradeJournalEntry,
+  gradeSimulation,
   gradeTask,
   masteryByArea,
   newCard,
   ratingFor,
+  ratingForScore,
   review,
   Rating,
 } from './index';
@@ -99,5 +101,63 @@ describe('masteryByArea', () => {
     );
     expect(m[0]!.attempts).toBe(2);
     expect(m[0]!.score).toBeGreaterThan(0.9);
+  });
+});
+
+describe('gradeSimulation', () => {
+  const sim = {
+    id: 'far-test-0005',
+    type: 'tbs',
+    blueprint: { section: 'FAR', area: 'A', topic: 'T', skill: 'Application' },
+    review: { status: 'draft', references: [] },
+    title: 'T',
+    scenario: 'S',
+    exhibits: [],
+    tasks: [
+      { id: 'n', type: 'numeric', prompt: '', points: 1, answer: 5000, tolerance: 0, unit: 'cents', explanation: '' },
+      {
+        id: 'j',
+        type: 'journal_entry',
+        prompt: '',
+        points: 2,
+        accounts: ['Cash', 'Revenue'],
+        answer: [
+          { account: 'Cash', debit: 5000, credit: 0 },
+          { account: 'Revenue', debit: 0, credit: 5000 },
+        ],
+        explanation: '',
+      },
+    ],
+  } satisfies TbsItem;
+
+  it('sums task scores and scores a missing response as zero', () => {
+    const r = gradeSimulation(sim, { n: { type: 'numeric', value: 5000 } });
+    expect(r).toMatchObject({ earned: 1, possible: 3, correct: false });
+    expect(r.tasks.j).toEqual({ earned: 0, possible: 2, correct: false });
+  });
+
+  it('is correct only when every task is', () => {
+    const r = gradeSimulation(sim, {
+      n: { type: 'numeric', value: 5000 },
+      j: {
+        type: 'journal_entry',
+        lines: [
+          { account: 'Cash', debit: 5000 },
+          { account: 'Revenue', credit: 5000 },
+        ],
+      },
+    });
+    expect(r).toMatchObject({ earned: 3, possible: 3, correct: true });
+  });
+
+  it('gives no credit for a response of the wrong type', () => {
+    const r = gradeSimulation(sim, { n: { type: 'research', citation: '5000' } });
+    expect(r.tasks.n!.earned).toBe(0);
+  });
+
+  it('maps partial scores to review ratings', () => {
+    expect(ratingForScore(0.8)).toBe(Rating.Good);
+    expect(ratingForScore(0.5)).toBe(Rating.Hard);
+    expect(ratingForScore(0.49)).toBe(Rating.Again);
   });
 });

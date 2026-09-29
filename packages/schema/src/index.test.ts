@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { McqItem, TbsItem } from './index';
+import { McqItem, TbsItem, toPublicMcq, toPublicTbs } from './index';
 
 const blueprint = {
   section: 'FAR',
@@ -89,5 +89,59 @@ describe('TbsItem', () => {
       ]),
     );
     expect(r.success).toBe(false);
+  });
+});
+
+describe('public projections', () => {
+  it('strips the answer, rationales, and explanation from an MCQ', () => {
+    const q = McqItem.parse({
+      id: 'far-test-0003',
+      type: 'mcq',
+      blueprint,
+      review,
+      stem: 'S',
+      choices: ['A', 'B', 'C', 'D'].map((id) => ({ id, text: id, rationale: 'secret' })),
+      answer: 'C',
+      explanation: 'secret',
+    });
+    const json = JSON.stringify(toPublicMcq(q));
+    expect(json).not.toContain('secret');
+    expect(json).not.toContain('"answer"');
+  });
+
+  it('strips answers, tolerances, and explanations from every simulation task', () => {
+    const t = TbsItem.parse({
+      id: 'far-test-0004',
+      type: 'tbs',
+      blueprint,
+      review,
+      title: 'T',
+      scenario: 'S',
+      exhibits: [{ title: 'Trial balance', body: '| Account | Amount |' }],
+      tasks: [
+        { id: 'n', type: 'numeric', prompt: 'P', points: 1, answer: 123400, tolerance: 100, explanation: 'secret' },
+        {
+          id: 'j',
+          type: 'journal_entry',
+          prompt: 'P',
+          points: 2,
+          accounts: ['Cash', 'Revenue'],
+          answer: [
+            { account: 'Cash', debit: 100 },
+            { account: 'Revenue', credit: 100 },
+          ],
+          explanation: 'secret',
+        },
+        { id: 'r', type: 'research', prompt: 'P', points: 1, answer: ['ASC 842-20-30-1'], explanation: 'secret' },
+      ],
+    });
+    const pub = toPublicTbs(t);
+    const json = JSON.stringify(pub);
+    expect(json).not.toContain('secret');
+    expect(json).not.toContain('"answer"');
+    expect(json).not.toContain('"tolerance"');
+    expect(json).not.toContain('842-20-30-1');
+    expect(pub.tasks.map((x) => x.type)).toEqual(['numeric', 'journal_entry', 'research']);
+    expect(pub.exhibits).toHaveLength(1);
   });
 });

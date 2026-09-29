@@ -1,6 +1,6 @@
 # Plan: task-based simulations (TBS)
 
-Status: plan only, not started. Written 2026-09-29 as roadmap item 2 in `CLAUDE.md`.
+Status: milestone 1 (schema and API) done on 2026-09-29; milestones 2–4 not started. Written as roadmap item 2 in `CLAUDE.md`.
 
 ## Why now
 
@@ -38,9 +38,15 @@ Task-based simulations are about half of the FAR score. The MCQ bank now touches
 
 ## Milestones and acceptance
 
-1. **Schema and API** — `toPublicTbs` with tests; three routes; engine tests for `gradeTask` edge cases (wrong type, empty journal lines, tolerance). Acceptance: `pnpm test` and `pnpm typecheck` pass; `GET /simulations/:id` returns no answer fields (tested).
+1. **Schema and API (done)** — `toPublicTbs` with tests; `gradeSimulation` and `ratingForScore` in the engine with tests; three routes; engine tests for `gradeTask` edge cases (wrong type, empty journal lines, tolerance). Acceptance: `pnpm test` and `pnpm typecheck` pass; `GET /simulations/:id` returns no answer fields (tested).
 2. **Player UI** — list and player pages, three task components, exhibits. Acceptance: a simulation can be completed end to end in `pnpm dev`; the journal grid blocks nothing but warns on an unbalanced entry; the layout works at phone width.
 3. **Content** — three verified FAR simulations through blind verification and the review gate. Acceptance: gate average at least ~80% with no major-revision items.
 4. **Deploy and smoke test** — confirm the live API serves the simulations without answers, and that a submission records an attempt and schedules a review.
 
 UI changes should be reviewed by Hayden in a preview deployment before they go to `main`, since the site is live.
+
+## Milestone 1 notes
+
+- `GET /simulations`, `GET /simulations/:id` and `POST /me/simulations/:id/attempts` are in `apps/api/src/index.ts`. The attempt route validates responses with zod (journal amounts are whole cents, at most 20 lines), grades with `gradeSimulation`, rates the review card with `ratingForScore`, and stores the attempt through the same `saveAttempt` helper the MCQ route now uses.
+- Smoke-tested on a local worker with a temporary simulation: the public projection carried no answers or explanations, and a partially correct submission scored 2 of 3 and scheduled a review. No simulations ship yet, so the live `/simulations` list is empty until milestone 3.
+- `/me/review/due` still returns MCQs only; simulations due for review can be added with the player UI.

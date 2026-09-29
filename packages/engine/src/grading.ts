@@ -1,4 +1,4 @@
-import type { JournalLine, McqItem, TbsTask } from '@opencpa/schema';
+import type { JournalLine, McqItem, TbsItem, TbsTask } from '@opencpa/schema';
 
 export interface GradeResult {
   /** Points earned. */
@@ -78,4 +78,32 @@ export function gradeTask(task: TbsTask, response: TaskResponse): GradeResult {
       return { earned: correct ? task.points : 0, possible: task.points, correct };
     }
   }
+}
+
+export interface SimulationResult extends GradeResult {
+  tasks: Record<string, GradeResult>;
+}
+
+/**
+ * Grade a whole simulation. A task with no response, or a response of the wrong
+ * type, earns zero. The simulation is "correct" only when every task is.
+ */
+export function gradeSimulation(
+  item: TbsItem,
+  responses: Record<string, TaskResponse | undefined>,
+): SimulationResult {
+  const tasks: Record<string, GradeResult> = {};
+  let earned = 0;
+  let possible = 0;
+  for (const task of item.tasks) {
+    const response = responses[task.id];
+    const r = response
+      ? gradeTask(task, response)
+      : { earned: 0, possible: task.points, correct: false };
+    tasks[task.id] = r;
+    earned += r.earned;
+    possible += r.possible;
+  }
+  earned = Math.round(earned * 100) / 100;
+  return { earned, possible, correct: Object.values(tasks).every((t) => t.correct), tasks };
 }

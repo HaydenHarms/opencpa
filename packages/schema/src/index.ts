@@ -161,6 +161,38 @@ export type PublicMcq = Pick<McqItem, 'id' | 'type' | 'blueprint' | 'stem'> & {
   choices: { id: string; text: string }[];
 };
 
+/** A simulation task as the browser sees it: no answer, tolerance, or explanation. */
+export type PublicTbsTask =
+  | { id: string; type: 'numeric'; prompt: string; points: number; unit: 'cents' | 'percent' | 'units' }
+  | { id: string; type: 'journal_entry'; prompt: string; points: number; accounts: string[] }
+  | { id: string; type: 'research'; prompt: string; points: number };
+
+export type PublicTbs = Pick<TbsItem, 'id' | 'type' | 'blueprint' | 'title' | 'scenario' | 'exhibits'> & {
+  tasks: PublicTbsTask[];
+};
+
+export function toPublicTbs(t: TbsItem): PublicTbs {
+  return {
+    id: t.id,
+    type: t.type,
+    blueprint: t.blueprint,
+    title: t.title,
+    scenario: t.scenario,
+    exhibits: t.exhibits,
+    tasks: t.tasks.map((task): PublicTbsTask => {
+      const { id, prompt, points } = task;
+      switch (task.type) {
+        case 'numeric':
+          return { id, type: 'numeric', prompt, points, unit: task.unit };
+        case 'journal_entry':
+          return { id, type: 'journal_entry', prompt, points, accounts: task.accounts };
+        case 'research':
+          return { id, type: 'research', prompt, points };
+      }
+    }),
+  };
+}
+
 export function toPublicMcq(q: McqItem): PublicMcq {
   return {
     id: q.id,
