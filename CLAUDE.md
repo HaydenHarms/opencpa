@@ -30,30 +30,46 @@ Commands: `pnpm install`, `pnpm dev`, `pnpm test`, `pnpm typecheck`, `pnpm conte
 ## Current state (as of 2026-09-28)
 
 - Scaffold, deploy pipeline and database are all live.
-- **FAR batch 01** (25 reviewed MCQs) is merged and live (PR #1). The review report is at `docs/reviews/far-batch-01.md`, and the generator is `scripts/batches/far-batch-01.py`. The next batch is `far-batch-02`.
+- **FAR batch 01** (25 reviewed MCQs) is merged and live (PR #1). Hayden's separate review agent then graded it (accuracy fine, but too easy and a few real defects). The fixes are on branch `content/far-batch-01-revisions`, awaiting merge. See `docs/reviews/far-batch-01.md` for the findings and the fixes. **Lesson: batch 01 was merged before the quality review. From batch 02 on, the review agent runs on the PR and its findings are applied on the same branch before Hayden merges.**
 
 ## Content pipeline: how to do a batch
 
 **Source pool:** the legacy bank lives in the repo `HaydenHarms/haydenharms.com`, file `cpa-study.html`. Line 340 (`const EXAMS = [...]`) holds about 700 MCQs across FAR/AUD/REG/BAR/ISC/TCP, and `TBS_DATA` holds 34 simulations. They were AI-generated.
 
 - Treat the bank as **brainstorming material only.** Its structure and topics are _not_ a format to follow. Every item is rebuilt into our schema.
-- **Known quality problems:** wrong distractor math (10 of 25 needed rebuilding in batch 01), items with two correct answers or none, a wrong TBS answer key (FAR TBS 1, task 2), and topics filed under FAR that now belong in BAR (pensions, consolidations/business combinations, derivatives/hedging, R&D, sale-leaseback, lease modifications).
-- Ideas can also come from scratch, where the bank is thin.
+- **Known quality problems in the bank:** wrong distractor math (10 of 25 needed rebuilding in batch 01), items with two correct answers or none, a wrong TBS answer key (FAR TBS 1, task 2), obsolete rules (pre-ASU 2016-14 NFP), and topics that now belong in BAR (pensions, consolidations/business combinations, derivatives/hedging, R&D, sale-leaseback, lease modifications).
+- Write from scratch wherever the bank is thin. That is often better than repairing a weak item.
 
-**Per batch (~25 items):**
+### Quality bar (what the review agent grades against)
 
-1. **Triage.** Only take items that fall inside the section's _current_ AICPA blueprint.
-2. **Re-solve every item** and compute _every_ number, including each distractor, in code. A distractor's rationale must name an error that actually produces that number.
-3. **Write it in the schema:** a rationale for every choice, `review.references` (ASC/GASB/IRC paragraph), a blueprint `area`/`topic`/`skill`, and `review.asOf` for anything tied to a tax year.
-4. **Balance answer positions.** Use the `place_answers()` helper in the batch script; without it, keys cluster on A.
-5. **Blind verification.** Run ONE separate subagent that sees only stems and choices (no key, no repo access to content) and solves every item, doing its arithmetic in code. Reconcile any disagreement and fix any flagged problems. Use a single verifier for independence; don't parallelize the drafting across agents.
-6. **Branch and PR.** Put each batch on a `content/<section>-batch-NN` branch with a review report at `docs/reviews/<section>-batch-NN.md` (process, problems found in the source, exclusions, fixes). Hayden merges it.
+Batch 01 passed the answer-key checks but scored about 67% average estimated pass likelihood, so these are now hard requirements:
 
-Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Select Balance Sheet Accounts`, `Area III — Select Transactions`. Topic strings follow the blueprint wording (e.g., "Revenue recognition", "Lessee accounting", "State and local government concepts"). Check the current AICPA blueprints for the other sections before tagging.
+1. **Difficulty.** At least half of each batch must be multi-step (2–4 adjustments or judgments), the way real FAR items are. Pure recall and one-step arithmetic are the minority.
+2. **Skill mix.** Follow the blueprint. FAR targets Remembering and Understanding 5–15%, Application 45–55%, Analysis 35–45%. Tag honestly: Analysis means the student must evaluate or compare, not just compute.
+3. **Coverage.** Follow blueprint weights, not availability. FAR: Area I 30–40%, Area II 30–40%, Area III 25–35%. Keep a running topic tally in the review report. Gaps after batch 01: cash, receivables, intangibles, debt, accounting changes and error corrections, subsequent events, fair value.
+4. **No giveaway stems.** Never name the classification the student must determine ("meets the criteria," "not constrained," "reasonably possible"). Describe the facts and let the student classify.
+5. **State every fact and election needed.** If GAAP permits alternatives (for example, retirement of stock charged wholly to retained earnings, or a release policy), the stem must fix the entity's choice. Otherwise a second answer is defensible.
+6. **Distractors.** Every wrong choice maps to a specific, nameable student error, and for numeric items the number must actually result from that error. A distractor that is a _permitted alternative_ is a defect unless the stem excludes it. Deliberately using the superseded rule as a distractor is fine.
+7. **Standards currency.** The stem and the key must never rely on a rule a recent ASU eliminated. When an item touches a recently changed area (2015-11 inventory, 2016-02 leases, 2016-13 credit losses, 2016-14 NFP, 2018-13 fair value, etc.), confirm the current rule from FASB, GASB, AICPA, or SEC public sources.
+8. **Choice format.** Numeric choices are listed in ascending order (the AICPA convention), and the key's position simply falls out of that. Only word-answer items get the rotated key position. The correct word answer must not be the longest or most qualified choice. `finalize()` and `audit()` in `scripts/batches/common.py` enforce this. Do not hand-shuffle.
+9. **Citations.** Paragraph-level ASC/GASB cites must be checked against the Codification or original standard. If you cannot verify a paragraph, cite the Subtopic instead. Batch 01's paragraph cites were written from memory and are unverified.
+10. **Stems are plain text.** The Practice page shows the stem as one paragraph, so no tables or line-break formatting. Put multi-item data in prose until the exhibits UI exists.
+
+### Per batch (~25 items)
+
+1. **Plan coverage first.** Pick topics from the blueprint gaps and the skill mix, then find or write items.
+2. **Draft** in a script `scripts/batches/<section>-batch-NN.py` that imports `mcq`, `finalize`, `audit`, `write_items` from `common.py`. For each item: re-solve it and compute _every_ number, including each distractor, in code; write a rationale for every choice; add `review.references` and a blueprint `area`/`topic`/`skill`; add `review.asOf` for anything tied to a tax year.
+3. **Blind verification.** Run ONE separate subagent using `docs/prompts/blind-verifier.md`, fed a file with stems and choices only (no key, no rationales, no access to content files). Reconcile every disagreement and apply every required fix. It is good at arithmetic and at some second-answer and currency problems, but it is not the quality gate.
+4. **Branch and PR.** Put each batch on a `content/<section>-batch-NN` branch, with a review report at `docs/reviews/<section>-batch-NN.md` (process, problems found in the source, exclusions, fixes, the topic and skill tallies). Do not merge until step 5.
+5. **Quality review.** Hayden runs his review agent on the branch. Apply its findings with a follow-up commit on the same branch, re-run the blind verifier on any item that changed, note the changes in the report, then Hayden merges.
+
+Retired items are deleted from `content/` (git history keeps them), and a replacement gets a new id. Never reuse an id for a different question, because student progress is keyed to it.
+
+Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Select Balance Sheet Accounts`, `Area III — Select Transactions`. Topic strings follow the blueprint wording (e.g., "Revenue recognition", "Lessee accounting", "State and local government concepts", "Inventory"). Check the current AICPA blueprints for the other sections before tagging. Blueprints are at https://www.aicpa-cima.com (search "CPA exam blueprints").
 
 ## Roadmap (next, in order)
 
-1. More FAR batches. Next priorities: inventory, receivables, debt/bonds, cash, intangibles, accounting changes/errors, subsequent events, fair value, and more government/NFP. Legacy coverage is thin here, so expect to write more explanations from scratch.
+1. More FAR batches, driven by the coverage gaps above (cash, receivables, intangibles, debt, accounting changes and errors, subsequent events, fair value) and by raising difficulty and Analysis-level items. Legacy coverage is thin here, so write from scratch. Decision pending with Hayden: whether to also rewrite the ~10 single-step items left in batch 01.
 2. The other sections, including a BAR set built from the topics moved out of FAR.
 3. TBS frontend: a journal-entry grid, numeric and research task UIs, and exhibits. Then import the vetted simulations.
 4. Accounts (GitHub OAuth / email magic link), migrating anonymous progress to the account.

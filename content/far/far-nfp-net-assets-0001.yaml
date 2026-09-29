@@ -9,31 +9,37 @@ review:
   status: reviewed
   references:
   - ASC 958-205-45-9 through 45-12
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
-stem: Clearfield Museum receives a $500,000 donation restricted to building a new gallery. The museum
-  does not have a policy of implying a time restriction on long-lived assets. During the year, the museum
-  spends the $500,000 and places the gallery in service. How are net assets affected by these two events?
+  - ASU 2016-14 (eliminated the option to imply a time restriction on long-lived assets)
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
+stem: Clearfield Museum receives a $500,000 gift in Year 1 that the donor restricts to constructing a
+  new gallery. The donor does not say how long the museum must use the gallery. In Year 2, the museum
+  spends the $500,000 completing construction and places the gallery in service. How are Clearfield's
+  net assets affected?
 choices:
 - id: A
-  text: 'Receipt: without donor restrictions +$500,000. No entry when the gallery is placed in service.'
-  rationale: Ignores the donor's restriction at receipt. Donor-restricted gifts are reported as with donor
-    restrictions.
+  text: 'Year 1: without donor restrictions +$500,000. Year 2: no reclassification is needed because the
+    gift was never restricted.'
+  rationale: Ignores the donor's restriction. A gift restricted to a purpose is reported with donor restrictions
+    when received.
 - id: B
-  text: 'Receipt: with donor restrictions +$500,000. No release until the gallery is sold or fully depreciated.'
-  rationale: Would apply only if the museum had a policy of implying a time restriction over the asset's
-    life; the facts say it does not.
+  text: 'Year 1: with donor restrictions +$500,000. Year 2: the full $500,000 is released to without donor
+    restrictions.'
+  rationale: Correct. The purpose restriction is met by the Year 2 construction spending and placing the
+    gallery in service, so the full gift is released in Year 2.
 - id: C
-  text: Receipt and use are both reported without donor restrictions because the restriction is met in
-    the same year.
-  rationale: Only allowed if the entity has elected and disclosed a same-period policy for simultaneous
-    release; not given here, and the question asks about the default.
+  text: 'Year 1: with donor restrictions +$500,000. Year 2: released to without donor restrictions over
+    the gallery''s useful life as it is depreciated.'
+  rationale: Former practice, when an entity could imply a time restriction over the asset's life. ASU
+    2016-14 eliminated that option.
 - id: D
-  text: 'Receipt: with donor restrictions +$500,000. When the gallery is placed in service: $500,000 released
-    from with donor restrictions to without donor restrictions.'
-  rationale: Correct. The purpose restriction is satisfied when the gallery is placed in service, triggering
-    a release (reclassification).
-answer: D
-explanation: A purpose-restricted gift increases net assets with donor restrictions. Without a policy
-  implying a time restriction, the restriction on a gift for a long-lived asset expires when the asset
-  is placed in service, and the amount is reported as net assets released from restrictions.
+  text: 'Year 1: with donor restrictions +$500,000. Year 2: no release until the museum sells or otherwise
+    disposes of the gallery.'
+  rationale: Confuses the restriction on the gift with a restriction on the asset's future use. Absent
+    donor stipulations on use, the restriction ends when the asset is placed in service.
+answer: B
+explanation: A gift restricted to a purpose is reported as an increase in net assets with donor restrictions.
+  When the donor gives no explicit stipulation about how long a long-lived asset must be used, the restriction
+  is met when the asset is placed in service, and the amount is reclassified as net assets released from
+  restrictions. Since ASU 2016-14, an entity may no longer imply a time restriction that spreads the release
+  over the asset's useful life.

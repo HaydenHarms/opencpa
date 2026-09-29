@@ -4,32 +4,35 @@ blueprint:
   section: FAR
   area: Area II — Select Balance Sheet Accounts
   topic: Equity
-  skill: Analysis
+  skill: Application
 review:
   status: reviewed
   references:
   - ASC 505-30-30-8
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: Mercer Inc. originally issued 1,000 shares of $2 par common stock at $14 per share. It later reacquires
-  and retires all 1,000 shares at $20 per share. No other paid-in capital from treasury or retirement
-  transactions exists. What amount is debited to retained earnings on retirement?
+  and retires all 1,000 shares at $20 per share. Mercer's policy is to charge additional paid-in capital
+  for the original paid-in capital in excess of par on the retired shares, and to charge any remaining
+  excess of the purchase price to retained earnings. What amount is debited to retained earnings on retirement?
 choices:
 - id: A
   text: $0
-  rationale: APIC can absorb only the paid-in capital from the original issuance ($12,000), not the extra
-    $6,000 paid.
+  rationale: Would let APIC absorb more than the $12,000 originally received, which Mercer's policy does
+    not do.
 - id: B
-  text: $12,000
-  rationale: Charges the original APIC amount to retained earnings instead of removing it from APIC.
-- id: C
   text: $6,000
-  rationale: Correct. Common stock ($2,000) and the original APIC ($12,000) are removed; the remaining
-    $6,000 of cost goes to retained earnings.
+  rationale: Correct. Common stock ($2,000) and APIC ($12,000) are removed at their original amounts;
+    the remaining $6,000 of the price is charged to retained earnings.
+- id: C
+  text: $18,000
+  rationale: Charges the entire excess over par ($20,000 − $2,000) to retained earnings. GAAP permits
+    that alternative, but it is not Mercer's stated policy.
 - id: D
   text: $20,000
-  rationale: Charges the entire cost to retained earnings without first removing par and APIC.
-answer: C
-explanation: 'Retirement entry: Dr Common stock $2,000; Dr APIC $12,000; Dr Retained earnings $6,000;
-  Cr Cash $20,000. The excess of retirement cost over the original issue price is charged to retained
-  earnings.'
+  rationale: Charges the entire price to retained earnings without removing par or APIC.
+answer: B
+explanation: 'Under Mercer''s policy the retirement entry is: Dr Common stock $2,000; Dr APIC $12,000;
+  Dr Retained earnings $6,000; Cr Cash $20,000. ASC 505-30 also allows an entity to charge the entire
+  excess over par to retained earnings, so the policy matters: it determines how much of the excess APIC
+  absorbs.'

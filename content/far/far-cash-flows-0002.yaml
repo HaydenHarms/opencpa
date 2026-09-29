@@ -10,8 +10,8 @@ review:
   references:
   - ASC 230-10-45-15
   - ASC 230-10-45-28
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: 'Fenwick Ltd. reports net income of $140,000. During the year: depreciation $33,000; loss on early
   retirement of bonds $8,000; accounts receivable increased $19,000; unearned revenue increased $13,000;
   dividends paid $20,000. Under the indirect method and U.S. GAAP, what is net cash provided by operating
@@ -26,13 +26,13 @@ choices:
   rationale: Subtracts the $8,000 loss instead of adding it back. A loss reduced net income without using
     operating cash.
 - id: C
-  text: $175,000
-  rationale: Correct. $140,000 + $33,000 + $8,000 − $19,000 + $13,000.
-- id: D
   text: $162,000
   rationale: Omits the unearned revenue increase. Cash collected in advance of earning revenue is an operating
     inflow.
-answer: C
+- id: D
+  text: $175,000
+  rationale: Correct. $140,000 + $33,000 + $8,000 − $19,000 + $13,000.
+answer: D
 explanation: 'Add back depreciation and the loss on bond retirement (the cash paid to retire bonds is
   financing), subtract the receivables increase, and add the unearned revenue increase: $140,000 + $33,000
   + $8,000 − $19,000 + $13,000 = $175,000. Dividends paid are reported in financing activities.'

@@ -50,3 +50,37 @@ Answer positions are balanced (A 7 · B 6 · C 6 · D 6).
 python3 scripts/batches/far-batch-01.py   # regenerates content/far/*.yaml
 pnpm content:validate
 ```
+
+## Revision 1: independent quality review
+
+A separate review agent (run by Hayden) graded the merged batch. Its findings:
+
+- **Accuracy:** all 25 keys correct under current GAAP/GASB.
+- **Exam-readiness:** 8 exam-ready, 15 minor revision, 2 major revision; estimated average pass likelihood about 67%.
+- **Main weakness:** too easy. About 10 items are single-step or recall, and several stems name the answer's classification.
+
+**What this revision changes** (branch `content/far-batch-01-revisions`):
+
+| Item                          | Problem                                                                                                           | Fix                                                                                                                                          |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `far-nfp-net-assets-0001`     | Relied on the "implied time restriction" policy that ASU 2016-14 eliminated                                       | Stem now spans two years with no policy; the key holds under any permitted release approach. Old rule kept only as a labeled distractor      |
+| `far-equity-retirement-0001`  | Second defensible answer: ASC 505-30 also permits charging the whole excess over par to retained earnings         | Stem states Mercer's policy; the $18,000 alternative is now an explicit distractor                                                           |
+| `far-revenue-allocation-0001` | Implementation could arguably combine with the license; discount could be allocated to fewer than all obligations | Stem states three distinct obligations and no evidence of a partial allocation                                                               |
+| `far-equity-issuance-0001`    | One-step par/APIC split, too easy                                                                                 | Retired. Replaced by `far-equity-paid-in-capital-0001` (allocation, noncash consideration at the more clearly evident value, offering costs) |
+| `far-ppe-composite-0001`      | Distractor D used numbers unrelated to the stem; the citation did not apply; marginal blueprint fit               | Retired. Replaced by `far-inventory-lcnrv-0001` (fills the inventory gap; item-by-item lower of cost and NRV under ASU 2015-11)              |
+| `far-contingencies-0001`      | Stem named the classification ("reasonably possible")                                                             | Stem now describes the likelihood in words; the student classifies it                                                                        |
+| `far-ppe-replacement-0001`    | Stem omitted proceeds and removal costs; distractor D was not a real entry                                        | Stem states the old roof is scrapped at no cost; D is now the old extension-of-life approach                                                 |
+| Five word-answer items        | Correct choice was the longest                                                                                    | Choices rewritten to similar length (governmental funds, AFS credit loss, income taxes 0002, PP&E replacement, contingencies)                |
+| Numeric items                 | Choices not in ascending order                                                                                    | `finalize()` now sorts numeric choices ascending and rotates the key only across word-answer items                                           |
+| Skill tags                    | Four items tagged Analysis that were not                                                                          | Retagged (governmental funds to Remembering and Understanding; AFS credit loss, finance lease, equity retirement to Application)             |
+
+**Verification of the revision:** the 10 revised items were solved blind by a separate agent. It matched the key on 10 of 10 and raised four required fixes, all applied (NFP timing, an unclear distractor explanation, the discount-allocation fact, and the PP&E stem and distractor).
+
+**Blueprint check:** state and local government concepts, NFP, and PP&E are all in the current FAR blueprint (Area I, Area I, Area II). The 2026 blueprint revisions to FAR were minor and moved no topics.
+
+**Still open after this revision:**
+
+- **Too easy.** About 10 single-step or recall items remain (for example, the conceptual framework, joint costs, encumbrances, operating-lease PV, trading securities items). Decision pending: rewrite them now, or hold the higher bar for later batches.
+- **Skill mix.** The batch is 2 Remembering and Understanding, 23 Application, 0 Analysis. The FAR blueprint targets roughly 5–15% / 45–55% / 35–45%.
+- **Area mix.** Area III is still 10 of 25 items (40%) against a 25–35% blueprint weight, and there are no items yet on cash, receivables, intangibles, debt, accounting changes, subsequent events, or fair value.
+- **Citations.** Paragraph-level ASC/GASB citations were written from memory and have not been checked against the Codification. Verify them, or cite at the Subtopic level, before relying on them.

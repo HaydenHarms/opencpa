@@ -18,6 +18,9 @@ An item moves to `reviewed` only when a reviewer has confirmed all of the follow
 3. **One defensible answer.** Distractors are plausible but clearly wrong, and the stem doesn't give the answer away.
 4. **Blueprint tag.** `section`, `area`, `topic`, and `skill` match the current AICPA blueprint.
 5. **Explanations.** The item explains why the answer is right, and every choice has a `rationale` saying why it's right or why it's tempting.
+6. **Difficulty and cues.** Multi-step where the blueprint calls for it. Numeric choices in ascending order; the correct word answer isn't the longest choice; the stem doesn't name the classification the student must determine.
+7. **Stated facts.** If GAAP permits alternative treatments, the stem fixes the entity's choice, so only one answer is defensible.
+8. **Standards currency.** Nothing in the stem or key relies on a rule a recent ASU eliminated. Cite paragraphs only if you have checked them; otherwise cite the Subtopic.
 
 ## Multiple-choice example
 

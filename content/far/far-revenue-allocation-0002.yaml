@@ -9,24 +9,24 @@ review:
   status: reviewed
   references:
   - ASC 606-10-32-31
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: Delray Corp. contracts to deliver specialized equipment and provide three years of maintenance for
   $600,000. The standalone selling prices are equipment $480,000 and maintenance $160,000 per year. How
   much of the transaction price is allocated to the equipment?
 choices:
 - id: A
-  text: $360,000
-  rationale: Includes only two years of maintenance in total SSP ($800,000).
-- id: B
   text: $300,000
   rationale: Correct. Total SSP = $480,000 + 3 × $160,000 = $960,000; $480,000 ÷ $960,000 × $600,000.
+- id: B
+  text: $360,000
+  rationale: Includes only two years of maintenance in total SSP ($800,000).
 - id: C
   text: $450,000
   rationale: Includes only one year of maintenance in total SSP ($640,000).
 - id: D
   text: $480,000
   rationale: Uses the equipment's standalone selling price instead of its allocated share.
-answer: B
+answer: A
 explanation: Total SSP = $480,000 + $480,000 = $960,000. Equipment share = 50%, so $600,000 × 50% = $300,000
   is allocated to the equipment.

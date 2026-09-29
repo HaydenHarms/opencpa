@@ -10,18 +10,18 @@ review:
   references:
   - ASC 360-10-35-17
   - ASC 360-10-35-29
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: Parkside Manufacturing's machinery (held and used) has a carrying amount of $850,000. Undiscounted
   future cash flows from its use and disposition are $820,000, and its fair value is $700,000. What impairment
   loss should Parkside recognize?
 choices:
 - id: A
-  text: $30,000
-  rationale: Uses the undiscounted cash flows to measure the loss. They are used only to test recoverability.
-- id: B
   text: $0
   rationale: Would be right only if undiscounted cash flows equaled or exceeded the carrying amount.
+- id: B
+  text: $30,000
+  rationale: Uses the undiscounted cash flows to measure the loss. They are used only to test recoverability.
 - id: C
   text: $120,000
   rationale: Measures the loss as undiscounted cash flows minus fair value; the loss is carrying amount

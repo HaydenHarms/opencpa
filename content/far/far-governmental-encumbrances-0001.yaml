@@ -9,8 +9,8 @@ review:
   status: reviewed
   references:
   - GASB Codification 1700 (budgetary accounting and encumbrances)
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: Oakdale School District's general fund issues a purchase order for $90,000 of science equipment
   and records an encumbrance. The equipment arrives with an invoice for $92,000. What is recorded when
   the goods are received?
@@ -22,12 +22,12 @@ choices:
   text: Record the equipment as a $90,000 asset and a $2,000 expenditure for the variance.
   rationale: Governmental funds record capital outlay expenditures, not assets, and at the actual amount.
 - id: C
+  text: Reverse the encumbrance at $92,000; record a $92,000 expenditure and voucher payable.
+  rationale: The reversal must equal the amount originally encumbered ($90,000), not the invoice amount.
+- id: D
   text: Reverse the $90,000 encumbrance; record a $92,000 expenditure and voucher payable.
   rationale: Correct. The encumbrance is reversed at the amount originally recorded, and the expenditure
     is recorded at the actual invoice amount.
-- id: D
-  text: Reverse the encumbrance at $92,000; record a $92,000 expenditure and voucher payable.
-  rationale: The reversal must equal the amount originally encumbered ($90,000), not the invoice amount.
-answer: C
+answer: D
 explanation: When goods arrive, the encumbrance is reversed for the amount originally recorded ($90,000),
   and the expenditure and liability are recorded at the actual cost ($92,000).

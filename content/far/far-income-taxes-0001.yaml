@@ -10,16 +10,15 @@ review:
   references:
   - ASC 740-10-25-20
   - ASC 740-10-30-8
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: 'Cypress Corp. has two book–tax differences this year: (1) $60,000 of dividends that qualify for
   a 100% dividends-received deduction, and (2) $80,000 of tax depreciation in excess of book depreciation.
   The enacted tax rate is 21%. What deferred tax liability results from these items?'
 choices:
 - id: A
-  text: $29,400
-  rationale: Treats the dividends-received deduction as a temporary difference; it is permanent and never
-    reverses.
+  text: $0
+  rationale: Treats both differences as permanent; excess tax depreciation reverses in future years.
 - id: B
   text: $12,600
   rationale: Applies the rate to the dividends instead of the depreciation.
@@ -27,8 +26,9 @@ choices:
   text: $16,800
   rationale: 'Correct. Only the depreciation difference is temporary: $80,000 × 21%.'
 - id: D
-  text: $0
-  rationale: Treats both differences as permanent; excess tax depreciation reverses in future years.
+  text: $29,400
+  rationale: Treats the dividends-received deduction as a temporary difference; it is permanent and never
+    reverses.
 answer: C
 explanation: 'Deferred taxes arise only from temporary differences. The 100% dividends-received deduction
   is permanent. Excess tax depreciation is a taxable temporary difference: $80,000 × 21% = $16,800 deferred

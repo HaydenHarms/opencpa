@@ -9,8 +9,8 @@ review:
   status: reviewed
   references:
   - FASB Concepts Statement No. 8, Chapter 3 (QC12–QC16)
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: A reviewer finds that management deliberately set its warranty reserve and its allowance for credit
   losses at the high end of their reasonable ranges, choosing both estimates because they reduce reported
   net income. Under the FASB Conceptual Framework, which ingredient of faithful representation is most

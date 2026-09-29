@@ -10,26 +10,28 @@ review:
   references:
   - ASC 606-10-32-28
   - ASC 606-10-32-31
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: Harmon Technologies sells software licenses, implementation services, and one year of post-contract
   support for a total of $450,000. The standalone selling prices are licenses $300,000, implementation
-  $150,000, and support $50,000. How much of the transaction price is allocated to the licenses?
+  $150,000, and support $50,000. Harmon concludes that each of the three is a distinct performance obligation,
+  and no observable evidence shows that the discount relates to fewer than all three. How much of the
+  transaction price is allocated to the licenses?
 choices:
 - id: A
-  text: $270,000
-  rationale: Correct. $300,000 ÷ $500,000 = 60%; 60% × $450,000.
-- id: B
-  text: $300,000
-  rationale: Uses the standalone selling price and ignores the $50,000 discount, which is allocated proportionally.
-- id: C
   text: $150,000
   rationale: Splits the price equally across the three obligations instead of using relative standalone
     selling prices.
-- id: D
+- id: B
   text: $250,000
   rationale: Uses a residual approach ($450,000 − $150,000 − $50,000), which is not permitted when all
     standalone selling prices are observable.
-answer: A
+- id: C
+  text: $270,000
+  rationale: Correct. $300,000 ÷ $500,000 = 60%; 60% × $450,000.
+- id: D
+  text: $300,000
+  rationale: Uses the standalone selling price and ignores the $50,000 discount, which is allocated proportionally.
+answer: C
 explanation: Allocate on a relative standalone selling price basis. Total SSP = $500,000, so the licenses
   get $300,000 ÷ $500,000 × $450,000 = $270,000. The $50,000 discount is spread across all three obligations.

@@ -1,0 +1,44 @@
+id: far-inventory-lcnrv-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 330-10-35-1B
+  - ASC 330-10-35-7
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
+stem: 'Crestview Co. uses FIFO and applies the lower of cost and net realizable value to each product
+  separately. At year-end: Product A has 1,000 units with FIFO cost of $12.00, selling price of $14.50,
+  cost to complete and sell of $3.00, and replacement cost of $11.20 per unit. Product B has 2,000 units
+  with FIFO cost of $8.00, selling price of $10.00, cost to complete and sell of $2.50, and replacement
+  cost of $7.60 per unit. Product C has 500 units with FIFO cost of $20.00, selling price of $25.00, cost
+  to complete and sell of $4.00, and replacement cost of $20.50 per unit. What inventory write-down should
+  Crestview recognize?'
+choices:
+- id: A
+  text: $0
+  rationale: Compares selling price with cost and ignores the costs to complete and sell that net realizable
+    value subtracts. Every selling price exceeds its cost, so this test finds no write-down.
+- id: B
+  text: $1,000
+  rationale: 'Applies the test to the inventory as a whole: total cost $38,000 against total NRV $37,000.
+    Crestview applies the test product by product, so Product C''s surplus cannot offset the shortfalls.'
+- id: C
+  text: $1,500
+  rationale: Correct. NRV is selling price less costs to complete and sell; Products A and B are each
+    $0.50 per unit below cost, and Product C is not written down.
+- id: D
+  text: $1,600
+  rationale: Measures the shortfall against replacement cost, the old lower-of-cost-or-market approach.
+    FIFO and average-cost inventory use NRV; replacement cost applies only to LIFO and the retail inventory
+    method.
+answer: C
+explanation: 'For FIFO or average-cost inventory, measure each product at the lower of cost and NRV. Product
+  A: NRV $14.50 − $3.00 = $11.50, below cost by $0.50 × 1,000 = $500. Product B: NRV $10.00 − $2.50 =
+  $7.50, below cost by $0.50 × 2,000 = $1,000. Product C: NRV $25.00 − $4.00 = $21.00, above the $20.00
+  cost, so no write-down and no write-up. Total write-down: $1,500.'

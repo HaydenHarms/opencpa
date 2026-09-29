@@ -1,0 +1,38 @@
+id: far-equity-paid-in-capital-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Equity
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 505-10 (equity securities issued for noncash consideration)
+  - 'ASC 340-10-S99-1 (SAB Topic 5.A: offering costs)'
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
+stem: Redford Corp. issues $2 par value common stock during the year. It (1) sells 5,000 shares for cash
+  at $18 per share, (2) issues 3,000 shares in exchange for land whose fair value is $60,000 (the shares
+  are thinly traded, so the land's value is more clearly evident), and (3) pays $9,000 of legal and underwriting
+  costs directly attributable to the offering. What amount of additional paid-in capital results from
+  these transactions?
+choices:
+- id: A
+  text: $119,000
+  rationale: 'Records the land at the shares'' $18 price ($54,000) instead of the land''s more clearly
+    evident $60,000 fair value. That leaves $48,000 of APIC on the land shares: $80,000 + $48,000 − $9,000.'
+- id: B
+  text: $125,000
+  rationale: Correct. APIC on the cash sale is $80,000 and on the land exchange is $54,000, less $9,000
+    of offering costs.
+- id: C
+  text: $134,000
+  rationale: Ignores the offering costs, which are netted against the proceeds of the offering.
+- id: D
+  text: $143,000
+  rationale: Adds the offering costs to APIC instead of deducting them.
+answer: B
+explanation: 'Cash sale: 5,000 × ($18 − $2 par) = $80,000 of APIC. Land exchange: the land is recorded
+  at its more clearly evident fair value of $60,000, so 3,000 shares carry $6,000 of par and $54,000 of
+  APIC. Offering costs of $9,000 reduce APIC. Total: $80,000 + $54,000 − $9,000 = $125,000.'

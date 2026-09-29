@@ -3,24 +3,18 @@
 Run: python3 scripts/batches/far-batch-01.py  (writes content/far/*.yaml)
 Every numeric answer and distractor below was recomputed in code during review.
 """
-import os, yaml
+import os
+from common import mcq as _mcq, finalize, audit, write_items, RU, AP, AN
 
 A1 = "Area I — Financial Reporting"
 A2 = "Area II — Select Balance Sheet Accounts"
 A3 = "Area III — Select Transactions"
-RU, AP, AN = "Remembering and Understanding", "Application", "Analysis"
+NOTE = ("Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved, "
+        "arithmetic checked in code, distractors rebuilt where needed.")
 
 
-def mcq(id, area, topic, skill, refs, stem, choices, answer, explanation):
-    return dict(
-        id=id, type="mcq",
-        blueprint=dict(section="FAR", area=area, topic=topic, skill=skill),
-        review=dict(status="reviewed", references=refs,
-                    notes="Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors rebuilt where needed."),
-        stem=stem.strip(),
-        choices=[dict(id=k, text=t, rationale=r) for k, (t, r) in zip("ABCDEF", choices)],
-        answer=answer, explanation=explanation.strip(),
-    )
+def mcq(*a, **k):
+    return _mcq(*a, batch=NOTE, **k)
 
 
 ITEMS = [
@@ -56,14 +50,14 @@ mcq("far-cash-flows-0002", A1, "General-purpose financial reporting: for-profit 
     """Add back depreciation and the loss on bond retirement (the cash paid to retire bonds is financing), subtract the receivables increase, and add the unearned revenue increase: $140,000 + $33,000 + $8,000 − $19,000 + $13,000 = $175,000. Dividends paid are reported in financing activities."""),
 
 mcq("far-nfp-net-assets-0001", A1, "General-purpose financial reporting: nongovernmental not-for-profit entities", AP,
-    ["ASC 958-205-45-9 through 45-12"],
-    """Clearfield Museum receives a $500,000 donation restricted to building a new gallery. The museum does not have a policy of implying a time restriction on long-lived assets. During the year, the museum spends the $500,000 and places the gallery in service. How are net assets affected by these two events?""",
-    [("Receipt: with donor restrictions +$500,000. When the gallery is placed in service: $500,000 released from with donor restrictions to without donor restrictions.", "Correct. The purpose restriction is satisfied when the gallery is placed in service, triggering a release (reclassification)."),
-     ("Receipt: without donor restrictions +$500,000. No entry when the gallery is placed in service.", "Ignores the donor's restriction at receipt. Donor-restricted gifts are reported as with donor restrictions."),
-     ("Receipt: with donor restrictions +$500,000. No release until the gallery is sold or fully depreciated.", "Would apply only if the museum had a policy of implying a time restriction over the asset's life; the facts say it does not."),
-     ("Receipt and use are both reported without donor restrictions because the restriction is met in the same year.", "Only allowed if the entity has elected and disclosed a same-period policy for simultaneous release; not given here, and the question asks about the default.")],
+    ["ASC 958-205-45-9 through 45-12", "ASU 2016-14 (eliminated the option to imply a time restriction on long-lived assets)"],
+    """Clearfield Museum receives a $500,000 gift in Year 1 that the donor restricts to constructing a new gallery. The donor does not say how long the museum must use the gallery. In Year 2, the museum spends the $500,000 completing construction and places the gallery in service. How are Clearfield's net assets affected?""",
+    [("Year 1: with donor restrictions +$500,000. Year 2: the full $500,000 is released to without donor restrictions.", "Correct. The purpose restriction is met by the Year 2 construction spending and placing the gallery in service, so the full gift is released in Year 2."),
+     ("Year 1: without donor restrictions +$500,000. Year 2: no reclassification is needed because the gift was never restricted.", "Ignores the donor's restriction. A gift restricted to a purpose is reported with donor restrictions when received."),
+     ("Year 1: with donor restrictions +$500,000. Year 2: released to without donor restrictions over the gallery's useful life as it is depreciated.", "Former practice, when an entity could imply a time restriction over the asset's life. ASU 2016-14 eliminated that option."),
+     ("Year 1: with donor restrictions +$500,000. Year 2: no release until the museum sells or otherwise disposes of the gallery.", "Confuses the restriction on the gift with a restriction on the asset's future use. Absent donor stipulations on use, the restriction ends when the asset is placed in service.")],
     "A",
-    """A purpose-restricted gift increases net assets with donor restrictions. Without a policy implying a time restriction, the restriction on a gift for a long-lived asset expires when the asset is placed in service, and the amount is reported as net assets released from restrictions."""),
+    """A gift restricted to a purpose is reported as an increase in net assets with donor restrictions. When the donor gives no explicit stipulation about how long a long-lived asset must be used, the restriction is met when the asset is placed in service, and the amount is reclassified as net assets released from restrictions. Since ASU 2016-14, an entity may no longer imply a time restriction that spreads the release over the asset's useful life."""),
 
 mcq("far-nfp-joint-costs-0001", A1, "General-purpose financial reporting: nongovernmental not-for-profit entities", AP,
     ["ASC 958-720-45-29", "ASC 958-720-45-52"],
@@ -75,13 +69,13 @@ mcq("far-nfp-joint-costs-0001", A1, "General-purpose financial reporting: nongov
     "A",
     """If a joint activity meets the purpose, audience, and content criteria, costs are allocated between program and fundraising using a reasonable method. Program = 40% × $200,000 = $80,000; fundraising = $120,000. If any criterion fails, all costs are fundraising."""),
 
-mcq("far-governmental-funds-0001", A1, "State and local government concepts", AN,
+mcq("far-governmental-funds-0001", A1, "State and local government concepts", RU,
     ["GASB Statement No. 34", "GASB Codification 1800"],
     """Riverside County issues $5,000,000 of general obligation bonds and uses the proceeds to build a courthouse. How is this reported in the governmental fund statements versus the government-wide statements?""",
-    [("Governmental funds: bond proceeds as an other financing source and a capital outlay expenditure. Government-wide: a long-term liability and a capital asset that is depreciated.", "Correct. Funds use the current financial resources focus; government-wide statements use the economic resources focus and full accrual."),
-     ("Governmental funds: a long-term liability and a capitalized asset. Government-wide: an other financing source and an expenditure.", "Reverses the two measurement focuses."),
-     ("Governmental funds: bond proceeds as revenue and the bonds as a fund liability. Government-wide: the same treatment.", "Bond proceeds are never revenue, and general long-term debt is not a governmental fund liability."),
-     ("Governmental funds: an other financing source and the bonds as a fund liability. Government-wide: the courthouse is expensed.", "Governmental funds do not report general long-term debt, and government-wide statements capitalize capital assets.")],
+    [("Governmental funds: an other financing source and capital outlay. Government-wide: a long-term liability and a depreciable capital asset.", "Correct. Funds use the current financial resources focus; government-wide statements use the economic resources focus and full accrual."),
+     ("Governmental funds: a long-term liability and a capitalized courthouse. Government-wide: an other financing source and a capital outlay expenditure.", "Reverses the two measurement focuses."),
+     ("Governmental funds: bond proceeds as revenue and the bonds as a fund liability. Government-wide: the same treatment, with depreciation added.", "Bond proceeds are never revenue, and general long-term debt is not a governmental fund liability."),
+     ("Governmental funds: an other financing source and the bonds as a fund liability. Government-wide: the courthouse is expensed when completed.", "Governmental funds do not report general long-term debt, and government-wide statements capitalize capital assets.")],
     "A",
     """Governmental funds (modified accrual, current financial resources) report the proceeds as an other financing source and construction as capital outlay expenditures; neither the debt nor the asset appears in the fund. Government-wide statements (full accrual, economic resources) report the bonds as a long-term liability and the courthouse as a depreciable capital asset."""),
 
@@ -118,23 +112,33 @@ mcq("far-ppe-exchange-0001", A2, "Property, plant and equipment", AP,
 
 mcq("far-ppe-replacement-0001", A2, "Property, plant and equipment", AP,
     ["ASC 360-10-30-1", "ASC 360-10-40"],
-    """Bellview Corp. replaces its warehouse roof. The old roof, recorded as a separate component, cost $95,000 and has accumulated depreciation of $75,000. The new roof costs $180,000 and extends the building's useful life. How should Bellview account for the replacement?""",
-    [("Capitalize $180,000, remove the old roof's $20,000 carrying amount, and recognize a $20,000 loss.", "Correct. The replaced component is derecognized, and the new component is capitalized."),
-     ("Expense $180,000 as repairs and maintenance.", "Ordinary repairs maintain an asset; a replacement that extends useful life is capitalized."),
-     ("Capitalize $180,000 and leave the old roof on the books.", "Would double-count the roof. The replaced component's cost and accumulated depreciation must be removed."),
-     ("Capitalize $180,000 and reduce accumulated depreciation by $20,000.", "Removes neither the old cost nor its full accumulated depreciation, so the asset records stay wrong.")],
-    "A",
+    """Bellview Corp. replaces its warehouse roof. The old roof, recorded as a separate component, cost $95,000 and has accumulated depreciation of $75,000. The old roof is scrapped with no proceeds and no removal cost. The new roof costs $180,000 and extends the building's useful life. How should Bellview account for the replacement?""",
+    [("Expense the $180,000 as repairs and maintenance, leaving the old roof on the books", "Ordinary repairs maintain an asset; a replacement that extends useful life is capitalized."),
+     ("Capitalize $180,000; remove the old roof's $20,000 carrying amount as a loss", "Correct. The replaced component is derecognized, and the new component is capitalized."),
+     ("Capitalize $180,000 and leave the old roof's $95,000 cost and depreciation on the books", "Would double-count the roof. The replaced component's cost and accumulated depreciation must be removed."),
+     ("Debit accumulated depreciation $180,000 for the replacement, because it extends the building's life", "The old extension-of-life approach. The replacement is a new component that is capitalized, and the old roof's cost and depreciation are removed.")],
+    "B",
     """When the replaced part's cost and depreciation are known, remove them ($95,000 cost and $75,000 accumulated depreciation), recognize a $20,000 loss on the carrying amount written off, and capitalize the new roof at $180,000."""),
 
-mcq("far-ppe-composite-0001", A2, "Property, plant and equipment", AP,
-    ["ASC 360-10-35-4"],
-    """Montrose Industries depreciates its equipment using the composite method. During the year it retires equipment with an original cost of $180,000 and receives no proceeds. Which entry records the retirement?""",
-    [("Dr Accumulated depreciation $180,000; Cr Equipment $180,000", "Correct. Under the composite method, no gain or loss is recognized on retirement; the difference goes to accumulated depreciation."),
-     ("Dr Loss on disposal $180,000; Cr Equipment $180,000", "Treats the asset as fully undepreciated and recognizes a loss, which the composite method does not do."),
-     ("Dr Depreciation expense $180,000; Cr Equipment $180,000", "Expenses the cost directly instead of charging accumulated depreciation."),
-     ("Dr Accumulated depreciation $162,000; Dr Loss $18,000; Cr Equipment $180,000", "Tracks depreciation for an individual asset, which the composite method does not do.")],
-    "A",
-    """Composite depreciation treats a group as one asset. On retirement, credit the asset for its cost and debit accumulated depreciation for cost minus any proceeds. No gain or loss is recognized."""),
+mcq("far-inventory-lcnrv-0001", A2, "Inventory", AP,
+    ["ASC 330-10-35-1B", "ASC 330-10-35-7"],
+    """Crestview Co. uses FIFO and applies the lower of cost and net realizable value to each product separately. At year-end: Product A has 1,000 units with FIFO cost of $12.00, selling price of $14.50, cost to complete and sell of $3.00, and replacement cost of $11.20 per unit. Product B has 2,000 units with FIFO cost of $8.00, selling price of $10.00, cost to complete and sell of $2.50, and replacement cost of $7.60 per unit. Product C has 500 units with FIFO cost of $20.00, selling price of $25.00, cost to complete and sell of $4.00, and replacement cost of $20.50 per unit. What inventory write-down should Crestview recognize?""",
+    [("$0", "Compares selling price with cost and ignores the costs to complete and sell that net realizable value subtracts. Every selling price exceeds its cost, so this test finds no write-down."),
+     ("$1,000", "Applies the test to the inventory as a whole: total cost $38,000 against total NRV $37,000. Crestview applies the test product by product, so Product C's surplus cannot offset the shortfalls."),
+     ("$1,500", "Correct. NRV is selling price less costs to complete and sell; Products A and B are each $0.50 per unit below cost, and Product C is not written down."),
+     ("$1,600", "Measures the shortfall against replacement cost, the old lower-of-cost-or-market approach. FIFO and average-cost inventory use NRV; replacement cost applies only to LIFO and the retail inventory method.")],
+    "C",
+    """For FIFO or average-cost inventory, measure each product at the lower of cost and NRV. Product A: NRV $14.50 − $3.00 = $11.50, below cost by $0.50 × 1,000 = $500. Product B: NRV $10.00 − $2.50 = $7.50, below cost by $0.50 × 2,000 = $1,000. Product C: NRV $25.00 − $4.00 = $21.00, above the $20.00 cost, so no write-down and no write-up. Total write-down: $1,500."""),
+
+mcq("far-equity-paid-in-capital-0001", A2, "Equity", AP,
+    ["ASC 505-10 (equity securities issued for noncash consideration)", "ASC 340-10-S99-1 (SAB Topic 5.A: offering costs)"],
+    """Redford Corp. issues $2 par value common stock during the year. It (1) sells 5,000 shares for cash at $18 per share, (2) issues 3,000 shares in exchange for land whose fair value is $60,000 (the shares are thinly traded, so the land's value is more clearly evident), and (3) pays $9,000 of legal and underwriting costs directly attributable to the offering. What amount of additional paid-in capital results from these transactions?""",
+    [("$119,000", "Records the land at the shares' $18 price ($54,000) instead of the land's more clearly evident $60,000 fair value. That leaves $48,000 of APIC on the land shares: $80,000 + $48,000 − $9,000."),
+     ("$125,000", "Correct. APIC on the cash sale is $80,000 and on the land exchange is $54,000, less $9,000 of offering costs."),
+     ("$134,000", "Ignores the offering costs, which are netted against the proceeds of the offering."),
+     ("$143,000", "Adds the offering costs to APIC instead of deducting them.")],
+    "B",
+    """Cash sale: 5,000 × ($18 − $2 par) = $80,000 of APIC. Land exchange: the land is recorded at its more clearly evident fair value of $60,000, so 3,000 shares carry $6,000 of par and $54,000 of APIC. Offering costs of $9,000 reduce APIC. Total: $80,000 + $54,000 − $9,000 = $125,000."""),
 
 mcq("far-investments-trading-0001", A2, "Investments", AP,
     ["ASC 320-10-35-1(a)"],
@@ -146,50 +150,40 @@ mcq("far-investments-trading-0001", A2, "Investments", AP,
     "C",
     """Bonds held for short-term profit are trading securities. Unrealized holding gains and losses on trading securities are included in earnings: $20,000 interest + ($522,000 − $500,000) $22,000 unrealized gain = $42,000."""),
 
-mcq("far-investments-afs-credit-loss-0001", A2, "Investments", AN,
+mcq("far-investments-afs-credit-loss-0001", A2, "Investments", AP,
     ["ASC 326-30-35-2", "ASC 326-30-35-3"],
     """Foxworth Inc. holds available-for-sale bonds with an amortized cost of $100,000 and a year-end fair value of $88,000. Of the $12,000 decline, $7,000 is attributable to expected credit losses and $5,000 to rising market interest rates. Foxworth does not intend to sell and is not likely to be required to sell. How is the decline reported?""",
-    [("$12,000 loss in net income", "Recognizes the whole decline in earnings, as if the securities were trading."),
-     ("$7,000 credit loss in net income through an allowance; $5,000 unrealized loss in other comprehensive income", "Correct. For AFS debt, the credit portion goes to net income (via an allowance) and the noncredit portion goes to OCI."),
-     ("$12,000 unrealized loss in other comprehensive income", "Ignores the credit loss, which must be recognized in earnings."),
-     ("$5,000 loss in net income; $7,000 in other comprehensive income", "Swaps the two components.")],
+    [("$12,000 loss in net income, because the security is impaired below amortized cost", "Recognizes the whole decline in earnings, as if the securities were trading."),
+     ("$7,000 credit loss in net income (allowance); $5,000 in other comprehensive income", "Correct. For AFS debt, the credit portion goes to net income (via an allowance) and the noncredit portion goes to OCI."),
+     ("$12,000 unrealized loss in other comprehensive income, with no credit loss in earnings", "Ignores the credit loss, which must be recognized in earnings."),
+     ("$5,000 market loss in net income; $7,000 credit loss in other comprehensive income", "Swaps the two components.")],
     "B",
     """Under ASC 326-30, an impaired AFS debt security the holder does not intend to sell is split: the credit loss ($7,000) is recorded through an allowance and net income (limited to the amount by which fair value is below amortized cost), and the remaining decline ($5,000) goes to OCI."""),
 
-mcq("far-equity-issuance-0001", A2, "Equity", AP,
-    ["ASC 505-10"],
-    """Redford Corp. issues 8,000 shares of $2 par value common stock for $18 per share. What are the credits in the journal entry?""",
-    [("Common stock $144,000", "Credits all proceeds to common stock. Only par value goes to common stock."),
-     ("Common stock $16,000; additional paid-in capital $128,000", "Correct. Par of 8,000 × $2 goes to common stock, and the excess over par goes to APIC."),
-     ("Common stock $16,000; additional paid-in capital $144,000", "Credits total proceeds to APIC, so the entry would not balance with $144,000 of cash."),
-     ("Common stock $128,000; additional paid-in capital $16,000", "Swaps the par and excess-over-par amounts.")],
-    "B",
-    """Cash of 8,000 × $18 = $144,000. Common stock is credited at par (8,000 × $2 = $16,000), and additional paid-in capital gets the excess (8,000 × $16 = $128,000)."""),
-
-mcq("far-equity-retirement-0001", A2, "Equity", AN,
+mcq("far-equity-retirement-0001", A2, "Equity", AP,
     ["ASC 505-30-30-8"],
-    """Mercer Inc. originally issued 1,000 shares of $2 par common stock at $14 per share. It later reacquires and retires all 1,000 shares at $20 per share. No other paid-in capital from treasury or retirement transactions exists. What amount is debited to retained earnings on retirement?""",
-    [("$6,000", "Correct. Common stock ($2,000) and the original APIC ($12,000) are removed; the remaining $6,000 of cost goes to retained earnings."),
-     ("$0", "APIC can absorb only the paid-in capital from the original issuance ($12,000), not the extra $6,000 paid."),
-     ("$12,000", "Charges the original APIC amount to retained earnings instead of removing it from APIC."),
-     ("$20,000", "Charges the entire cost to retained earnings without first removing par and APIC.")],
+    """Mercer Inc. originally issued 1,000 shares of $2 par common stock at $14 per share. It later reacquires and retires all 1,000 shares at $20 per share. Mercer's policy is to charge additional paid-in capital for the original paid-in capital in excess of par on the retired shares, and to charge any remaining excess of the purchase price to retained earnings. What amount is debited to retained earnings on retirement?""",
+    [("$6,000", "Correct. Common stock ($2,000) and APIC ($12,000) are removed at their original amounts; the remaining $6,000 of the price is charged to retained earnings."),
+     ("$0", "Would let APIC absorb more than the $12,000 originally received, which Mercer's policy does not do."),
+     ("$18,000", "Charges the entire excess over par ($20,000 − $2,000) to retained earnings. GAAP permits that alternative, but it is not Mercer's stated policy."),
+     ("$20,000", "Charges the entire price to retained earnings without removing par or APIC.")],
     "A",
-    """Retirement entry: Dr Common stock $2,000; Dr APIC $12,000; Dr Retained earnings $6,000; Cr Cash $20,000. The excess of retirement cost over the original issue price is charged to retained earnings."""),
+    """Under Mercer's policy the retirement entry is: Dr Common stock $2,000; Dr APIC $12,000; Dr Retained earnings $6,000; Cr Cash $20,000. ASC 505-30 also allows an entity to charge the entire excess over par to retained earnings, so the policy matters: it determines how much of the excess APIC absorbs."""),
 
 # ── Area III ────────────────────────────────────────────────────────────
 mcq("far-contingencies-0001", A3, "Contingencies and commitments", AP,
     ["ASC 450-20-25-2", "ASC 450-20-50-3"],
-    """Bravo Corp. is a defendant in a product liability lawsuit. Its attorneys conclude that an unfavorable outcome is reasonably possible but not probable, and estimate a loss of $2,000,000 if the plaintiff prevails. How should Bravo report the lawsuit?""",
-    [("Accrue a $2,000,000 liability because the amount can be estimated", "Accrual requires both a probable loss and a reasonable estimate; the loss is not probable."),
-     ("Disclose the contingency in the notes, but do not accrue a liability", "Correct. A reasonably possible loss requires disclosure of its nature and an estimate of the possible loss, but no accrual."),
-     ("Neither accrue nor disclose the lawsuit", "That treatment applies to remote contingencies, not reasonably possible ones."),
-     ("Accrue a probability-weighted liability", "U.S. GAAP does not accrue expected values for loss contingencies that are not probable.")],
+    """Bravo Corp. is a defendant in a product liability lawsuit. Its attorneys believe an unfavorable outcome is more than remote but less than likely, and they estimate a loss of $2,000,000 if the plaintiff prevails. How should Bravo report the lawsuit?""",
+    [("Accrue a $2,000,000 liability, because the loss can be reasonably estimated", "Accrual requires both a probable loss and a reasonable estimate. An outcome that is less than likely is not probable."),
+     ("Disclose the nature of the loss and its estimate in the notes; record no liability", "Correct. A loss that is more than remote but less than probable is reasonably possible: disclose it, but do not accrue."),
+     ("Neither record nor disclose the lawsuit until an unfavorable outcome is probable", "Describes the treatment of a remote contingency. A reasonably possible loss must be disclosed."),
+     ("Accrue a probability-weighted liability and disclose the range of possible loss", "U.S. GAAP does not accrue expected values for contingencies that are not probable.")],
     "B",
-    """Under ASC 450, a loss contingency is accrued only when it is probable and reasonably estimable. When a loss is reasonably possible, the entity discloses the nature of the contingency and an estimate of the possible loss or range, or states that an estimate cannot be made."""),
+    """Under ASC 450, a loss is accrued only when it is probable (likely to occur) and reasonably estimable. Attorneys' view that an outcome is more than remote but less than likely means the loss is reasonably possible, which requires disclosure of the nature of the contingency and an estimate of the possible loss or range, but no accrual."""),
 
 mcq("far-revenue-allocation-0001", A3, "Revenue recognition", AP,
     ["ASC 606-10-32-28", "ASC 606-10-32-31"],
-    """Harmon Technologies sells software licenses, implementation services, and one year of post-contract support for a total of $450,000. The standalone selling prices are licenses $300,000, implementation $150,000, and support $50,000. How much of the transaction price is allocated to the licenses?""",
+    """Harmon Technologies sells software licenses, implementation services, and one year of post-contract support for a total of $450,000. The standalone selling prices are licenses $300,000, implementation $150,000, and support $50,000. Harmon concludes that each of the three is a distinct performance obligation, and no observable evidence shows that the discount relates to fewer than all three. How much of the transaction price is allocated to the licenses?""",
     [("$270,000", "Correct. $300,000 ÷ $500,000 = 60%; 60% × $450,000."),
      ("$300,000", "Uses the standalone selling price and ignores the $50,000 discount, which is allocated proportionally."),
      ("$150,000", "Splits the price equally across the three obligations instead of using relative standalone selling prices."),
@@ -227,7 +221,7 @@ mcq("far-lessee-operating-0001", A3, "Lessee accounting", AP,
     "A",
     """For both operating and finance leases, the lessee measures the liability at the present value of the remaining lease payments: $120,000 × 3.4651 = $415,812. Because the payments are in arrears, the ordinary annuity factor applies."""),
 
-mcq("far-lessee-finance-0001", A3, "Lessee accounting", AN,
+mcq("far-lessee-finance-0001", A3, "Lessee accounting", AP,
     ["ASC 842-20-25-5", "ASC 842-20-35-8"],
     """On January 1, Year 1, Reeves Corp. commences a 5-year finance lease. The lease liability at commencement is $200,000 (rounded), the annual payment of $50,000 is due each December 31, and the discount rate is 8%. The right-of-use asset is amortized straight-line over the lease term. What total lease-related expense does Reeves recognize in Year 2?""",
     [("$53,280", "Correct. Year 2 interest of $13,280 on a $166,000 opening liability, plus $40,000 of amortization."),
@@ -260,10 +254,10 @@ mcq("far-income-taxes-0001", A3, "Accounting for income taxes", AP,
 mcq("far-income-taxes-0002", A3, "Accounting for income taxes", AP,
     ["ASC 740-10-35-4", "ASC 740-10-45-15"],
     """Holloway Corp. has a $300,000 taxable temporary difference that it measured at the 20% enacted rate, producing a $60,000 deferred tax liability. Before year-end, a new 25% rate is enacted that will apply when the difference reverses. No other temporary differences exist. What adjustment does Holloway record?""",
-    [("Increase the deferred tax liability by $15,000, with a charge to income tax expense from continuing operations", "Correct. Remeasure at the new enacted rate ($75,000) and recognize the change in income from continuing operations."),
-     ("No adjustment; keep the rate that applied when the difference arose", "Deferred taxes are remeasured when rates change; there is no lock-in."),
-     ("Increase the deferred tax liability by $15,000 through other comprehensive income", "The effect of a rate change is recognized in income from continuing operations."),
-     ("Record $75,000 of additional income tax expense", "Records the entire remeasured balance instead of the $15,000 change.")],
+    [("Increase the deferred tax liability by $15,000 and record it in income tax expense", "Correct. Remeasure at the new enacted rate ($75,000) and recognize the change in income from continuing operations."),
+     ("Make no adjustment, because the liability was measured at the rate in effect when the difference arose", "Deferred taxes are remeasured when rates change; there is no lock-in."),
+     ("Increase the deferred tax liability by $15,000 and record it in other comprehensive income", "The effect of a rate change is recognized in income from continuing operations."),
+     ("Increase the deferred tax liability to $75,000 and record the full $75,000 as tax expense", "Records the entire remeasured balance instead of the $15,000 change.")],
     "A",
     """Deferred tax balances are measured at the enacted rate expected to apply when differences reverse. New liability = $300,000 × 25% = $75,000; the $15,000 increase is recorded in income tax expense in the period of enactment."""),
 
@@ -278,27 +272,7 @@ mcq("far-income-taxes-0003", A3, "Accounting for income taxes", AP,
     """At year-end, the book basis is $400,000 and the tax basis is $300,000. The $100,000 excess is a taxable temporary difference, so the deferred tax liability is $100,000 × 25% = $25,000."""),
 ]
 
-def place_answers(items):
-    """Move each correct choice to a balanced, deterministic position (A, B, C, D cycling)
-    so the key's position carries no signal. Order of the other choices is preserved."""
-    for n, it in enumerate(items):
-        ch = it["choices"]
-        right = next(c for c in ch if c["id"] == it["answer"])
-        others = [c for c in ch if c is not right]
-        pos = n % len(ch)
-        new = others[:pos] + [right] + others[pos:]
-        for k, c in zip("ABCDEF", new):
-            c["id"] = k
-        it["choices"] = new
-        it["answer"] = "ABCDEF"[pos]
-    return items
-
-
 if __name__ == "__main__":
-    place_answers(ITEMS)
-    root = os.path.join(os.path.dirname(__file__), "..", "..", "content", "far")
-    os.makedirs(root, exist_ok=True)
-    for it in ITEMS:
-        with open(os.path.join(root, it["id"] + ".yaml"), "w") as f:
-            yaml.safe_dump(it, f, sort_keys=False, allow_unicode=True, width=100)
-    print(f"wrote {len(ITEMS)} items")
+    finalize(ITEMS)
+    audit(ITEMS)
+    write_items(ITEMS, os.path.join(os.path.dirname(__file__), "..", "..", "content", "far"))

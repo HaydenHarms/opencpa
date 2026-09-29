@@ -4,34 +4,33 @@ blueprint:
   section: FAR
   area: Area II — Select Balance Sheet Accounts
   topic: Investments
-  skill: Analysis
+  skill: Application
 review:
   status: reviewed
   references:
   - ASC 326-30-35-2
   - ASC 326-30-35-3
-  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
-    rebuilt where needed.
+  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
+    arithmetic checked in code, distractors rebuilt where needed.
 stem: Foxworth Inc. holds available-for-sale bonds with an amortized cost of $100,000 and a year-end fair
   value of $88,000. Of the $12,000 decline, $7,000 is attributable to expected credit losses and $5,000
   to rising market interest rates. Foxworth does not intend to sell and is not likely to be required to
   sell. How is the decline reported?
 choices:
 - id: A
-  text: $7,000 credit loss in net income through an allowance; $5,000 unrealized loss in other comprehensive
-    income
+  text: $5,000 market loss in net income; $7,000 credit loss in other comprehensive income
+  rationale: Swaps the two components.
+- id: B
+  text: $7,000 credit loss in net income (allowance); $5,000 in other comprehensive income
   rationale: Correct. For AFS debt, the credit portion goes to net income (via an allowance) and the noncredit
     portion goes to OCI.
-- id: B
-  text: $12,000 loss in net income
-  rationale: Recognizes the whole decline in earnings, as if the securities were trading.
 - id: C
-  text: $12,000 unrealized loss in other comprehensive income
-  rationale: Ignores the credit loss, which must be recognized in earnings.
+  text: $12,000 loss in net income, because the security is impaired below amortized cost
+  rationale: Recognizes the whole decline in earnings, as if the securities were trading.
 - id: D
-  text: $5,000 loss in net income; $7,000 in other comprehensive income
-  rationale: Swaps the two components.
-answer: A
+  text: $12,000 unrealized loss in other comprehensive income, with no credit loss in earnings
+  rationale: Ignores the credit loss, which must be recognized in earnings.
+answer: B
 explanation: 'Under ASC 326-30, an impaired AFS debt security the holder does not intend to sell is split:
   the credit loss ($7,000) is recorded through an allowance and net income (limited to the amount by which
   fair value is below amortized cost), and the remaining decline ($5,000) goes to OCI.'
