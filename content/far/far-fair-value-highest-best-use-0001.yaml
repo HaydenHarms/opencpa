@@ -1,0 +1,40 @@
+id: far-fair-value-highest-best-use-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Fair value measurements
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 820-10 (fair value measurement: highest and best use)'
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: Clover Corp. owns land that it uses as a parking lot and intends to keep using that way. The present
+  value of the parking cash flows is $1,900,000. Local zoning allows condominiums on the site. A market-participant
+  developer could complete a condominium project there, which would be worth $2,900,000 to market participants,
+  and completing it would take $450,000 of construction costs plus $150,000 for the profit a market-participant
+  developer would require. Clover must determine the land's fair value under ASC 820. What is the fair
+  value?
+choices:
+- id: A
+  text: $1,900,000
+  rationale: Measures the land at value in Clover's intended use. Fair value assumes the use a market
+    participant would make, not the entity's own plans.
+- id: B
+  text: $2,300,000
+  rationale: Correct. $2,900,000 − $450,000 construction − $150,000 developer profit.
+- id: C
+  text: $2,450,000
+  rationale: Deducts the construction costs but not the profit a market-participant developer would require.
+- id: D
+  text: $2,900,000
+  rationale: Uses the completed project's value and ignores the cost and required profit of developing
+    it.
+answer: B
+explanation: 'Fair value reflects the use of the asset by market participants that would maximize its
+  value, provided that use is physically possible, legally permissible, and financially feasible. Zoning
+  permits the development and it is feasible, so the land is valued as development land. A market participant
+  would pay the completed value less the costs and required profit: $2,900,000 − $450,000 − $150,000 =
+  $2,300,000, which exceeds the $1,900,000 value in Clover''s current use.'

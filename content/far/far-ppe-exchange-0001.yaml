@@ -8,28 +8,28 @@ blueprint:
 review:
   status: reviewed
   references:
-  - ASC 845-10-30-1
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  - ASC 845-10 (nonmonetary transactions)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: Harwick Corp. exchanges old machinery (book value $180,000; fair value $210,000) plus $40,000 cash
   for new equipment with a fair value of $250,000. The exchange has commercial substance. What gain does
   Harwick recognize, and at what amount is the new equipment recorded?
 choices:
 - id: A
-  text: Gain of $30,000; new equipment $250,000
-  rationale: Correct. With commercial substance, the gain is fair value minus book value of the asset
-    given up, and the new asset is recorded at fair value.
-- id: B
   text: No gain; new equipment $220,000
   rationale: Carryover-basis treatment, which applies only when the exchange lacks commercial substance.
-- id: C
+- id: B
   text: Gain of $70,000; new equipment $250,000
   rationale: Compares the new asset's fair value to the old book value and ignores the $40,000 of cash
     paid.
+- id: C
+  text: Gain of $30,000; new equipment $250,000
+  rationale: Correct. With commercial substance, the gain is fair value minus book value of the asset
+    given up, and the new asset is recorded at fair value.
 - id: D
   text: Gain of $30,000; new equipment $220,000
   rationale: 'Mixes the two methods: recognizes the gain but records the asset at carryover basis.'
-answer: A
+answer: C
 explanation: With commercial substance, the exchange is measured at fair value. Gain = $210,000 fair value
   − $180,000 book value = $30,000. The new equipment is recorded at $210,000 + $40,000 cash = $250,000,
   which equals its fair value.

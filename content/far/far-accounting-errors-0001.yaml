@@ -1,0 +1,45 @@
+id: far-accounting-errors-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 250-10 (accounting changes and error corrections)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: In Year 3, before its Year 3 financial statements are issued, Tanner Inc. finds two errors in its
+  prior-year statements. (1) On January 1, Year 1, it bought a machine for $90,000 with a 5-year life,
+  no salvage value, and straight-line depreciation, and it recorded the entire $90,000 as Year 1 expense.
+  The machine is still in use. (2) Its December 31, Year 2, ending inventory was overstated by $30,000.
+  Tanner presents single-year financial statements and applies a 25% tax rate to all corrections. What
+  adjustment should Tanner make to its January 1, Year 3, retained earnings?
+choices:
+- id: A
+  text: $18,000 increase
+  rationale: 'Correct. Machine: $54,000 pre-tax understatement ($90,000 − 2 × $18,000 of depreciation).
+    Inventory: $30,000 overstatement. Net $24,000 × 75%.'
+- id: B
+  text: $24,000 increase
+  rationale: Gets the net pre-tax effect right but omits the 25% tax effect of the corrections.
+- id: C
+  text: $40,500 increase
+  rationale: Corrects only the machine ($54,000 × 75%). The inventory overstatement also affected retained
+    earnings at December 31, Year 2.
+- id: D
+  text: $45,000 increase
+  rationale: Reverses the whole $90,000 expense and ignores the $36,000 of depreciation Years 1 and 2
+    should have carried ($90,000 − $30,000 = $60,000 × 75%).
+- id: E
+  text: $63,000 increase
+  rationale: Adds the inventory overstatement instead of subtracting it. Overstated ending inventory overstated
+    income, so it reduces the correction ($54,000 + $30,000) × 75%.
+answer: A
+explanation: 'A correction of a prior-period error adjusts the opening balance of retained earnings, net
+  of tax. Machine: expensing $90,000 in Year 1 understated retained earnings at January 1, Year 3, by
+  the asset''s carrying amount then, $90,000 − 2 × $18,000 = $54,000. Inventory: the $30,000 overstatement
+  at December 31, Year 2, overstated retained earnings. Net pre-tax effect: $54,000 − $30,000 = $24,000
+  increase; after 25% tax, $18,000 increase.'

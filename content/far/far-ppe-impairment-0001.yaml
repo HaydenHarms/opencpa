@@ -8,10 +8,9 @@ blueprint:
 review:
   status: reviewed
   references:
-  - ASC 360-10-35-17
-  - ASC 360-10-35-29
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  - ASC 360-10 (impairment of long-lived assets held and used)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: Parkside Manufacturing's machinery (held and used) has a carrying amount of $850,000. Undiscounted
   future cash flows from its use and disposition are $820,000, and its fair value is $700,000. What impairment
   loss should Parkside recognize?

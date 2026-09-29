@@ -8,9 +8,9 @@ blueprint:
 review:
   status: reviewed
   references:
-  - ASC 505-30-30-8
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  - ASC 505-30 (treasury stock and retirement of shares)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: Mercer Inc. originally issued 1,000 shares of $2 par common stock at $14 per share. It later reacquires
   and retires all 1,000 shares at $20 per share. Mercer's policy is to charge additional paid-in capital
   for the original paid-in capital in excess of par on the retired shares, and to charge any remaining

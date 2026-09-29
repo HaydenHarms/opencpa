@@ -1,0 +1,43 @@
+id: far-intangibles-goodwill-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Intangible assets
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 350-20 (goodwill)
+  - ASC 350-30 (indefinite-lived intangible assets)
+  - ASU 2017-04 (simplifying the test for goodwill impairment)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: Whitfield Corp., a public business entity, tests one reporting unit for impairment at year-end.
+  The unit's carrying amount is $12,000,000, which includes goodwill of $3,000,000 and an indefinite-lived
+  trade name carried at $2,000,000. Whitfield estimates the fair value of the reporting unit at $9,500,000
+  and the fair value of the trade name at $1,700,000. Ignore income tax effects. What goodwill impairment
+  loss should Whitfield recognize?
+choices:
+- id: A
+  text: $0
+  rationale: Compares the unit's $9,500,000 fair value with its carrying amount excluding goodwill ($9,000,000).
+    The unit's carrying amount includes goodwill.
+- id: B
+  text: $2,200,000
+  rationale: Correct. The trade name is impaired first by $300,000, leaving a carrying amount of $11,700,000;
+    the goodwill loss is $11,700,000 − $9,500,000.
+- id: C
+  text: $2,500,000
+  rationale: Measures goodwill against the full $12,000,000 carrying amount without first recognizing
+    the $300,000 trade-name impairment, so that shortfall is counted twice.
+- id: D
+  text: $3,000,000
+  rationale: Writes off all the goodwill. The loss is the amount by which carrying amount exceeds fair
+    value, limited to the goodwill balance.
+answer: B
+explanation: 'When goodwill and other assets of a reporting unit are tested together, the other assets
+  are tested first. The indefinite-lived trade name is impaired by $2,000,000 − $1,700,000 = $300,000,
+  which reduces the reporting unit''s carrying amount to $11,700,000. Goodwill impairment is the excess
+  of the unit''s carrying amount over its fair value, limited to goodwill: $11,700,000 − $9,500,000 =
+  $2,200,000, which is less than the $3,000,000 of goodwill.'

@@ -8,10 +8,9 @@ blueprint:
 review:
   status: reviewed
   references:
-  - ASC 450-20-25-2
-  - ASC 450-20-50-3
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  - ASC 450-20 (loss contingencies)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: Bravo Corp. is a defendant in a product liability lawsuit. Its attorneys believe an unfavorable
   outcome is more than remote but less than likely, and they estimate a loss of $2,000,000 if the plaintiff
   prevails. How should Bravo report the lawsuit?
@@ -24,13 +23,13 @@ choices:
   text: Neither record nor disclose the lawsuit until an unfavorable outcome is probable
   rationale: Describes the treatment of a remote contingency. A reasonably possible loss must be disclosed.
 - id: C
+  text: Accrue a probability-weighted liability and disclose the range of possible loss
+  rationale: U.S. GAAP does not accrue expected values for contingencies that are not probable.
+- id: D
   text: Disclose the nature of the loss and its estimate in the notes; record no liability
   rationale: 'Correct. A loss that is more than remote but less than probable is reasonably possible:
     disclose it, but do not accrue.'
-- id: D
-  text: Accrue a probability-weighted liability and disclose the range of possible loss
-  rationale: U.S. GAAP does not accrue expected values for contingencies that are not probable.
-answer: C
+answer: D
 explanation: Under ASC 450, a loss is accrued only when it is probable (likely to occur) and reasonably
   estimable. Attorneys' view that an outcome is more than remote but less than likely means the loss is
   reasonably possible, which requires disclosure of the nature of the contingency and an estimate of the

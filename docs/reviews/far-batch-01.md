@@ -8,7 +8,7 @@
 | Area II: Select Balance Sheet Accounts (PP&E, investments, equity)                      | 8     |
 | Area III: Select Transactions (revenue, lessee accounting, income taxes, contingencies) | 10    |
 
-Answer positions are balanced (A 7 · B 6 · C 6 · D 6).
+Answer positions fall out of the ascending order of numeric choices (see Revision 2).
 
 ## Process
 
@@ -59,7 +59,7 @@ A separate review agent (run by Hayden) graded the merged batch. Its findings:
 - **Exam-readiness:** 8 exam-ready, 15 minor revision, 2 major revision; estimated average pass likelihood about 67%.
 - **Main weakness:** too easy. About 10 items are single-step or recall, and several stems name the answer's classification.
 
-**What this revision changes** (branch `content/far-batch-01-revisions`):
+**What this revision changes** (merged to `main`):
 
 | Item                          | Problem                                                                                                           | Fix                                                                                                                                          |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -80,7 +80,48 @@ A separate review agent (run by Hayden) graded the merged batch. Its findings:
 
 **Still open after this revision:**
 
-- **Too easy.** About 10 single-step or recall items remain (for example, the conceptual framework, joint costs, encumbrances, operating-lease PV, trading securities items). Decision pending: rewrite them now, or hold the higher bar for later batches.
+- **Too easy.** About 10 single-step or recall items remain (for example, the conceptual framework, joint costs, encumbrances, operating-lease PV, trading securities items). Resolved in Revision 2 below.
 - **Skill mix.** The batch is 2 Remembering and Understanding, 23 Application, 0 Analysis. The FAR blueprint targets roughly 5–15% / 45–55% / 35–45%.
 - **Area mix.** Area III is still 10 of 25 items (40%) against a 25–35% blueprint weight, and there are no items yet on cash, receivables, intangibles, debt, accounting changes, subsequent events, or fair value.
 - **Citations.** Paragraph-level ASC/GASB citations were written from memory and have not been checked against the Codification. Verify them, or cite at the Subtopic level, before relying on them.
+
+## Revision 2: difficulty rewrite (committed straight to `main`)
+
+Hayden asked for the remaining too-easy items to be rewritten. **13 items were retired and 13 new ones written from scratch** (new ids; the old files are deleted and stay in git history).
+
+**Retired:** `far-conceptual-framework-0001`, `far-nfp-joint-costs-0001`, `far-governmental-funds-0001`, `far-governmental-encumbrances-0001`, `far-revenue-variable-consideration-0001`, `far-investments-trading-0001`, `far-lessee-operating-0001`, `far-lessee-operating-0002`, `far-revenue-allocation-0002`, `far-income-taxes-0001`, `far-income-taxes-0002`, `far-income-taxes-0003` (single-step or recall), and `far-ppe-replacement-0001` (US GAAP has no explicit rule for derecognizing a replaced component, so the key depended on practice rather than the Codification).
+
+**Added (13):** property tax revenue under two bases of accounting; NFP contributions (conditional versus unconditional, time and purpose restrictions); diluted EPS with an antidilutive convertible; comprehensive income with a reclassification adjustment; governmental fund purposes; credit-loss allowance with a bankrupt customer evaluated separately; bond extinguishment with issuance costs; goodwill impairment sequencing; equity-method carrying amount with basis differences and downstream profit; prior-period error correction; fair value of land at highest and best use; deferred taxes with permanent differences and a valuation allowance; subsequent events.
+
+**Blind verification of the 13:** solved by a separate agent without the key. It matched the key on 13 of 13. Fixes applied:
+
+| Item | Finding | Fix |
+| --- | --- | --- |
+| `far-nfp-contributions-0001` | Second defensible answer: ASC 958 lets an entity report a restricted gift met in the same period as without donor restrictions | Stem now states the foundation reports it with donor restrictions |
+| `far-comprehensive-income-0001` | Tax-rate wording ambiguous for the reclassified gain | Stem states the rate applies to all AFS gains and losses, not the translation gain |
+| `far-governmental-fund-types-0001`, `far-subsequent-events-0001` | Correct choice longest | Choices rebalanced |
+| `far-intangibles-goodwill-0001` | Missing status fact | Stem says the entity is a public business entity |
+| `far-fair-value-highest-best-use-0001` | Stem restated the highest-and-best-use tests | Reworded to facts only |
+| `far-income-taxes-deferred-0001` | Valuation allowance unsupported; stem said a deferred tax asset exists | Stem cites the taxable income forecast; "resulting deferred tax asset" removed |
+| Six items | Tagged Analysis but are multi-step computation | Retagged Application (property tax, comprehensive income, equity method, error correction, fair value, deferred taxes) |
+| `far-equity-method-0001` | Verifier asked whether downstream profit is eliminated at 100% | Checked: ASC 323-10-35-11 eliminates the investor's ownership share; key stands |
+
+**Other changes in this revision:** topic strings moved to the current FAR blueprint wording; every paragraph-level citation in the batch replaced with a Subtopic-level citation (unverified paragraph cites removed); the generator now deletes retired files.
+
+**Batch 01 tallies (25 items)**
+
+| Measure | Result | Blueprint target |
+| --- | --- | --- |
+| Area I / II / III | 8 / 10 / 7 (32% / 40% / 28%) | 30–40% / 30–40% / 25–35% |
+| Remembering and Understanding | 2 (8%) | 5–15% |
+| Application | 19 (76%) | 45–55% |
+| Analysis | 4 (16%) | 35–45% |
+| Multi-step items | about 22 of 25 | at least half |
+
+Topics covered: cash flows (2), NFP (2), government (2), EPS, comprehensive income, PP&E (2), inventory, equity (2), AFS credit loss, receivables, debt, intangibles, equity method, contingencies, revenue allocation, lessee finance lease, accounting errors, fair value, income taxes, subsequent events.
+
+**Still open**
+
+- **Analysis is short** (16% against 35–45%). Most new items are hard multi-step computations, which the verifier rightly tags Application. Batch 02 should be written around evaluating or comparing alternatives.
+- **Gaps:** cash and cash equivalents, payables and accrued liabilities, debt covenants, further revenue topics, lessee operating leases, NFP functional expenses, statement of changes in equity, ratios.
+- **Answer positions:** numeric choices are sorted ascending, so the key lands in B for 10 of 25 items. This is the AICPA convention, but watch it as more items are added.

@@ -9,9 +9,9 @@ review:
   status: reviewed
   references:
   - ASC 505-10 (equity securities issued for noncash consideration)
-  - 'ASC 340-10-S99-1 (SAB Topic 5.A: offering costs)'
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  - SEC Staff Accounting Bulletin Topic 5.A (expenses of offering)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: Redford Corp. issues $2 par value common stock during the year. It (1) sells 5,000 shares for cash
   at $18 per share, (2) issues 3,000 shares in exchange for land whose fair value is $60,000 (the shares
   are thinly traded, so the land's value is more clearly evident), and (3) pays $9,000 of legal and underwriting

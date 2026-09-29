@@ -8,10 +8,9 @@ blueprint:
 review:
   status: reviewed
   references:
-  - ASC 606-10-32-28
-  - ASC 606-10-32-31
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  - ASC 606-10 (allocating the transaction price to performance obligations)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: Harmon Technologies sells software licenses, implementation services, and one year of post-contract
   support for a total of $450,000. The standalone selling prices are licenses $300,000, implementation
   $150,000, and support $50,000. Harmon concludes that each of the three is a distinct performance obligation,

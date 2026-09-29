@@ -1,0 +1,42 @@
+id: far-eps-diluted-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Public Company Reporting Topics
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 260-10 (earnings per share)
+  - ASU 2020-06 (if-converted method for convertible instruments)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: Kestrel Corp. reports net income of $1,200,000 and 500,000 weighted-average common shares outstanding
+  for the year. It has cumulative preferred stock on which $100,000 of dividends accrued this year, none
+  of which was declared. Kestrel also has (1) options to buy 40,000 common shares at $30 per share, outstanding
+  all year, with an average market price of $50 during the year, and (2) $1,000,000 of 6% convertible
+  bonds issued at par and outstanding all year, convertible into 20,000 common shares. Kestrel's tax rate
+  is 25%. What are Kestrel's diluted earnings per share, rounded to the nearest cent?
+choices:
+- id: A
+  text: $2.04
+  rationale: Adds all 40,000 option shares. Under the treasury stock method only the shares not covered
+    by assumed repurchase (16,000) are added.
+- id: B
+  text: $2.13
+  rationale: Correct. ($1,200,000 − $100,000) ÷ (500,000 + 16,000 option shares).
+- id: C
+  text: $2.14
+  rationale: Includes the convertible bonds. Their incremental effect is $45,000 ÷ 20,000 = $2.25 per
+    share, above the $2.13 diluted EPS before the bonds, so they are antidilutive and excluded.
+- id: D
+  text: $2.33
+  rationale: Does not deduct the $100,000 of cumulative preferred dividends. Cumulative dividends are
+    deducted whether or not declared.
+answer: B
+explanation: 'Income available to common = $1,200,000 − $100,000 cumulative preferred dividends = $1,100,000.
+  Options (treasury stock method): 40,000 − (40,000 × $30 ÷ $50) = 16,000 incremental shares, which are
+  dilutive. Convertible bonds (if-converted): add back after-tax interest of $60,000 × (1 − 25%) = $45,000
+  and add 20,000 shares; the incremental effect is $2.25 per share, higher than the $2.13 EPS so far,
+  so the bonds are antidilutive and excluded. Diluted EPS = $1,100,000 ÷ 516,000 = $2.13.'

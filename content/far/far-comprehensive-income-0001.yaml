@@ -1,0 +1,49 @@
+id: far-comprehensive-income-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of comprehensive income
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 220-10 (comprehensive income)
+  - ASC 320-10 (available-for-sale debt securities)
+  - ASC 321-10 (equity securities)
+  - ASC 830-30 (translation of financial statements)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: Delmar Inc. reports net income of $420,000 for the year. Net income includes a $30,000 gain realized
+  on the sale of available-for-sale debt securities, which Delmar had reported in other comprehensive
+  income as an unrealized gain in earlier periods, and a $20,000 gain from the increase in fair value
+  of an equity investment that has a readily determinable fair value. During the year, unrealized holding
+  gains on Delmar's remaining available-for-sale debt securities arose totaling $90,000 before tax, and
+  a foreign subsidiary's financial statements produced a $50,000 translation gain. Delmar recognizes no
+  deferred taxes on the translation gain because it plans to reinvest the subsidiary's earnings indefinitely,
+  and it applies a 25% tax rate to all gains and losses on available-for-sale securities, including the
+  gain reclassified into net income, but not to the translation gain. What is Delmar's comprehensive income
+  for the year?
+choices:
+- id: A
+  text: $502,500
+  rationale: Applies the 25% rate to the translation gain as well. Delmar recognizes no deferred taxes
+    on it, so it is $50,000 in full.
+- id: B
+  text: $515,000
+  rationale: Correct. $420,000 + [($90,000 − $30,000) × 75% = $45,000] + $50,000.
+- id: C
+  text: $530,000
+  rationale: Ignores the tax effect of the unrealized holding gains ($60,000 + $50,000 of other comprehensive
+    income).
+- id: D
+  text: $537,500
+  rationale: Omits the reclassification adjustment. The $30,000 gain is already in net income, so it must
+    come out of other comprehensive income to avoid counting it twice ($67,500 + $50,000).
+answer: B
+explanation: 'Comprehensive income = net income + other comprehensive income (OCI). The $20,000 gain on
+  the equity investment is already in net income (changes in fair value of equity securities go through
+  earnings), so it is not OCI. AFS debt: unrealized holding gains of $90,000 arose, and $30,000 previously
+  in OCI moved to net income on sale (a reclassification adjustment), so pre-tax OCI is $60,000 and after
+  tax $60,000 × 75% = $45,000. The translation gain is $50,000 with no tax. OCI = $95,000; comprehensive
+  income = $420,000 + $95,000 = $515,000.'

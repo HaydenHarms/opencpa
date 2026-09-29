@@ -1,0 +1,46 @@
+id: far-income-taxes-deferred-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (income taxes)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: In its first year of operations, Ridgeway Corp. reports pretax book income of $500,000. Book income
+  includes $30,000 of tax-exempt municipal bond interest and is after deducting $40,000 of nondeductible
+  fines. It is also after warranty expense of $120,000 that is not deductible until claims are paid, and
+  no claims were paid this year. Tax depreciation exceeded book depreciation by $200,000. The enacted
+  tax rate is 25% for all years, and Ridgeway has no other differences. Based on its forecast of taxable
+  income, management concludes that it is more likely than not that $12,000 of the deferred tax asset
+  will not be realized. What is Ridgeway's total income tax expense?
+choices:
+- id: A
+  text: $115,500
+  rationale: Subtracts the valuation allowance from deferred tax expense. An allowance increases deferred
+    tax expense.
+- id: B
+  text: $127,500
+  rationale: Omits the valuation allowance ($107,500 current + $50,000 − $30,000 deferred).
+- id: C
+  text: $137,000
+  rationale: Ignores the permanent differences and computes current tax on $420,000 of taxable income
+    ($105,000 current + $32,000 deferred).
+- id: D
+  text: $139,500
+  rationale: Correct. $107,500 current + $32,000 deferred ($50,000 liability − $30,000 asset + $12,000
+    allowance).
+- id: E
+  text: $187,500
+  rationale: Treats the warranty difference as taxable (a liability) instead of deductible, and omits
+    the allowance ($107,500 current + $80,000 deferred).
+answer: D
+explanation: 'Taxable income = $500,000 − $30,000 (tax-exempt interest, permanent) + $40,000 (nondeductible
+  fines, permanent) + $120,000 (warranty, deductible later) − $200,000 (excess tax depreciation) = $430,000;
+  current tax = $107,500. Deferred: warranty gives a deferred tax asset of $120,000 × 25% = $30,000, depreciation
+  gives a deferred tax liability of $200,000 × 25% = $50,000, and the valuation allowance adds $12,000
+  of expense: $50,000 − $30,000 + $12,000 = $32,000. Total income tax expense = $107,500 + $32,000 = $139,500.'

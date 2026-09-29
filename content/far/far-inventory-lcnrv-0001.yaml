@@ -8,10 +8,9 @@ blueprint:
 review:
   status: reviewed
   references:
-  - ASC 330-10-35-1B
-  - ASC 330-10-35-7
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  - ASC 330-10 (inventory; ASU 2015-11 lower of cost and net realizable value)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: 'Crestview Co. uses FIFO and applies the lower of cost and net realizable value to each product
   separately. At year-end: Product A has 1,000 units with FIFO cost of $12.00, selling price of $14.50,
   cost to complete and sell of $3.00, and replacement cost of $11.20 per unit. Product B has 2,000 units

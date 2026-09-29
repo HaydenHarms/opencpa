@@ -3,15 +3,14 @@ type: mcq
 blueprint:
   section: FAR
   area: Area II — Select Balance Sheet Accounts
-  topic: Investments
+  topic: Investments (Financial assets at fair value)
   skill: Application
 review:
   status: reviewed
   references:
-  - ASC 326-30-35-2
-  - ASC 326-30-35-3
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  - ASC 326-30 (available-for-sale debt securities)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: Foxworth Inc. holds available-for-sale bonds with an amortized cost of $100,000 and a year-end fair
   value of $88,000. Of the $12,000 decline, $7,000 is attributable to expected credit losses and $5,000
   to rising market interest rates. Foxworth does not intend to sell and is not likely to be required to

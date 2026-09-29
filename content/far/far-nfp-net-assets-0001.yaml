@@ -3,30 +3,30 @@ type: mcq
 blueprint:
   section: FAR
   area: Area I — Financial Reporting
-  topic: 'General-purpose financial reporting: nongovernmental not-for-profit entities'
+  topic: Statement of activities (Not-for-Profit)
   skill: Application
 review:
   status: reviewed
   references:
-  - ASC 958-205-45-9 through 45-12
+  - ASC 958-205 (net assets with and without donor restrictions)
   - ASU 2016-14 (eliminated the option to imply a time restriction on long-lived assets)
-  notes: Batch 01, revised after independent quality review. Adapted from legacy bank; answers re-solved,
-    arithmetic checked in code, distractors rebuilt where needed.
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
 stem: Clearfield Museum receives a $500,000 gift in Year 1 that the donor restricts to constructing a
   new gallery. The donor does not say how long the museum must use the gallery. In Year 2, the museum
   spends the $500,000 completing construction and places the gallery in service. How are Clearfield's
   net assets affected?
 choices:
 - id: A
-  text: 'Year 1: without donor restrictions +$500,000. Year 2: no reclassification is needed because the
-    gift was never restricted.'
-  rationale: Ignores the donor's restriction. A gift restricted to a purpose is reported with donor restrictions
-    when received.
-- id: B
   text: 'Year 1: with donor restrictions +$500,000. Year 2: the full $500,000 is released to without donor
     restrictions.'
   rationale: Correct. The purpose restriction is met by the Year 2 construction spending and placing the
     gallery in service, so the full gift is released in Year 2.
+- id: B
+  text: 'Year 1: without donor restrictions +$500,000. Year 2: no reclassification is needed because the
+    gift was never restricted.'
+  rationale: Ignores the donor's restriction. A gift restricted to a purpose is reported with donor restrictions
+    when received.
 - id: C
   text: 'Year 1: with donor restrictions +$500,000. Year 2: released to without donor restrictions over
     the gallery''s useful life as it is depreciated.'
@@ -37,7 +37,7 @@ choices:
     disposes of the gallery.'
   rationale: Confuses the restriction on the gift with a restriction on the asset's future use. Absent
     donor stipulations on use, the restriction ends when the asset is placed in service.
-answer: B
+answer: A
 explanation: A gift restricted to a purpose is reported as an increase in net assets with donor restrictions.
   When the donor gives no explicit stipulation about how long a long-lived asset must be used, the restriction
   is met when the asset is placed in service, and the amount is reclassified as net assets released from

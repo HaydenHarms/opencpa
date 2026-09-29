@@ -1,0 +1,45 @@
+id: far-debt-extinguishment-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 470-50 (debt modifications and extinguishments)
+  - ASC 835-30 (interest method and presentation of debt issuance costs)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Sable Corp. issues $1,000,000 of five-year, 6% bonds, with interest paid each
+  December 31, for $920,146, a price that yields 8%. Sable pays $20,000 of issuance costs, which it presents
+  as a deduction from the bonds' carrying amount and amortizes straight-line over the five years. Sable
+  amortizes the bond discount using the effective interest method and rounds to the nearest dollar at
+  each step. On December 31, Year 2, immediately after paying interest, Sable repurchases all of the bonds
+  in the open market for $1,020,000. What loss on extinguishment does Sable recognize?
+choices:
+- id: A
+  text: $20,000
+  rationale: Compares the price with the $1,000,000 face amount. The loss is measured against the net
+    carrying amount, which reflects the unamortized discount and issuance costs.
+- id: B
+  text: $71,541
+  rationale: Ignores the $12,000 of unamortized issuance costs, which are part of the net carrying amount
+    and are written off in the loss.
+- id: C
+  text: $79,912
+  rationale: Amortizes the discount straight-line ($15,971 a year). The stem calls for the effective interest
+    method, which amortizes $13,612 and then $14,701.
+- id: D
+  text: $83,541
+  rationale: Correct. $1,020,000 − ($948,459 carrying amount − $12,000 unamortized issuance costs).
+- id: E
+  text: $91,541
+  rationale: Treats all $20,000 of issuance costs as unamortized. Two of five years have passed, so $8,000
+    has been amortized and $12,000 remains.
+answer: D
+explanation: Year 1 interest expense = $920,146 × 8% = $73,612; cash interest $60,000; discount amortization
+  $13,612; carrying amount $933,758. Year 2 interest expense = $933,758 × 8% = $74,701; amortization $14,701;
+  carrying amount $948,459. Unamortized issuance costs = $20,000 − 2 × $4,000 = $12,000, so the net carrying
+  amount is $936,459. Loss = $1,020,000 − $936,459 = $83,541.

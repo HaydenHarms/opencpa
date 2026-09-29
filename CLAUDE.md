@@ -30,7 +30,8 @@ Commands: `pnpm install`, `pnpm dev`, `pnpm test`, `pnpm typecheck`, `pnpm conte
 ## Current state (as of 2026-09-28)
 
 - Scaffold, deploy pipeline and database are all live.
-- **FAR batch 01** (25 reviewed MCQs) is merged and live (PR #1). Hayden's separate review agent then graded it (accuracy fine, but too easy and a few real defects). The fixes are on branch `content/far-batch-01-revisions`, awaiting merge. See `docs/reviews/far-batch-01.md` for the findings and the fixes. **Lesson: batch 01 was merged before the quality review. From batch 02 on, the review agent runs on the PR and its findings are applied on the same branch before Hayden merges.**
+- **FAR batch 01** (25 reviewed MCQs) is live on `main`. Hayden's review agent graded the first version (accuracy fine, but too easy, with a few real defects). Revisions and a difficulty rewrite are merged. See `docs/reviews/far-batch-01.md`. Skill mix is 2 Remembering and Understanding, 19 Application, 4 Analysis, so **Analysis is still short of the 35–45% target. Batch 02 must lean on genuine Analysis items** (compare or evaluate alternatives, not just multi-step arithmetic). Area mix is 8 / 10 / 7.
+- **Workflow: commit straight to `main`. No branches, no PRs** (Hayden's instruction). Because nothing sits on a branch for review first, run the blind verifier and the checks *before* committing, and apply Hayden's review-agent findings in follow-up commits.
 
 ## Content pipeline: how to do a batch
 
@@ -52,7 +53,7 @@ Batch 01 passed the answer-key checks but scored about 67% average estimated pas
 6. **Distractors.** Every wrong choice maps to a specific, nameable student error, and for numeric items the number must actually result from that error. A distractor that is a _permitted alternative_ is a defect unless the stem excludes it. Deliberately using the superseded rule as a distractor is fine.
 7. **Standards currency.** The stem and the key must never rely on a rule a recent ASU eliminated. When an item touches a recently changed area (2015-11 inventory, 2016-02 leases, 2016-13 credit losses, 2016-14 NFP, 2018-13 fair value, etc.), confirm the current rule from FASB, GASB, AICPA, or SEC public sources.
 8. **Choice format.** Numeric choices are listed in ascending order (the AICPA convention), and the key's position simply falls out of that. Only word-answer items get the rotated key position. The correct word answer must not be the longest or most qualified choice. `finalize()` and `audit()` in `scripts/batches/common.py` enforce this. Do not hand-shuffle.
-9. **Citations.** Paragraph-level ASC/GASB cites must be checked against the Codification or original standard. If you cannot verify a paragraph, cite the Subtopic instead. Batch 01's paragraph cites were written from memory and are unverified.
+9. **Citations.** Paragraph-level ASC/GASB cites must be checked against the Codification or original standard. If you cannot verify a paragraph, cite the Subtopic instead. Batch 01 now cites at Subtopic level throughout.
 10. **Stems are plain text.** The Practice page shows the stem as one paragraph, so no tables or line-break formatting. Put multi-item data in prose until the exhibits UI exists.
 
 ### Per batch (~25 items)
@@ -60,16 +61,16 @@ Batch 01 passed the answer-key checks but scored about 67% average estimated pas
 1. **Plan coverage first.** Pick topics from the blueprint gaps and the skill mix, then find or write items.
 2. **Draft** in a script `scripts/batches/<section>-batch-NN.py` that imports `mcq`, `finalize`, `audit`, `write_items` from `common.py`. For each item: re-solve it and compute _every_ number, including each distractor, in code; write a rationale for every choice; add `review.references` and a blueprint `area`/`topic`/`skill`; add `review.asOf` for anything tied to a tax year.
 3. **Blind verification.** Run ONE separate subagent using `docs/prompts/blind-verifier.md`, fed a file with stems and choices only (no key, no rationales, no access to content files). Reconcile every disagreement and apply every required fix. It is good at arithmetic and at some second-answer and currency problems, but it is not the quality gate.
-4. **Branch and PR.** Put each batch on a `content/<section>-batch-NN` branch, with a review report at `docs/reviews/<section>-batch-NN.md` (process, problems found in the source, exclusions, fixes, the topic and skill tallies). Do not merge until step 5.
-5. **Quality review.** Hayden runs his review agent on the branch. Apply its findings with a follow-up commit on the same branch, re-run the blind verifier on any item that changed, note the changes in the report, then Hayden merges.
+4. **Commit to `main`.** Write the review report at `docs/reviews/<section>-batch-NN.md` (process, problems found in the source, exclusions, fixes, the topic and skill tallies), run `pnpm content:validate`, then commit and push directly to `main`. No branches.
+5. **Quality review.** Hayden runs his review agent on what landed. Apply its findings in a follow-up commit to `main`, re-run the blind verifier on any item that changed, and note the changes in the report.
 
 Retired items are deleted from `content/` (git history keeps them), and a replacement gets a new id. Never reuse an id for a different question, because student progress is keyed to it.
 
-Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Select Balance Sheet Accounts`, `Area III — Select Transactions`. Topic strings follow the blueprint wording (e.g., "Revenue recognition", "Lessee accounting", "State and local government concepts", "Inventory"). Check the current AICPA blueprints for the other sections before tagging. Blueprints are at https://www.aicpa-cima.com (search "CPA exam blueprints").
+Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Select Balance Sheet Accounts`, `Area III — Select Transactions`. Topic strings follow the current blueprint wording (e.g., "Statement of cash flows", "Trade receivables", "Debt (Notes and bonds payable)", "Fair value measurements", "Lessee accounting", "Measurement focus and basis of accounting", "Purpose of funds"). Check the current AICPA blueprints for the other sections before tagging. Blueprints are at https://www.aicpa-cima.com (search "CPA exam blueprints").
 
 ## Roadmap (next, in order)
 
-1. More FAR batches, driven by the coverage gaps above (cash, receivables, intangibles, debt, accounting changes and errors, subsequent events, fair value) and by raising difficulty and Analysis-level items. Legacy coverage is thin here, so write from scratch. Decision pending with Hayden: whether to also rewrite the ~10 single-step items left in batch 01.
+1. More FAR batches. Remaining gaps after batch 01: cash and cash equivalents, payables and accrued liabilities, debt covenants, revenue beyond allocation (contract modifications, principal versus agent, licenses), lessee operating leases, NFP functional expenses, statement of changes in equity, financial ratios, special purpose frameworks, and consolidated statements presentation. Prioritize genuine Analysis-level items (see Current state).
 2. The other sections, including a BAR set built from the topics moved out of FAR.
 3. TBS frontend: a journal-entry grid, numeric and research task UIs, and exhibits. Then import the vetted simulations.
 4. Accounts (GitHub OAuth / email magic link), migrating anonymous progress to the account.
@@ -79,7 +80,6 @@ Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Sel
 
 ## Working with Hayden
 
-- He wants changes pushed directly. For each change, give him a short summary plus the changed file(s) as individual files, never a zip.
+- He wants changes pushed directly to `main`, with no branches. For each change, give him a short summary plus the changed file(s) as individual files, never a zip.
 - Actions logs may not be readable from your session. Public run and job status is available at `https://api.github.com/repos/HaydenHarms/opencpa/actions/runs`; for the actual error text, ask Hayden for a screenshot of the failing step.
-- Pull requests may have to be opened by Hayden through a compare link if no GitHub API token is available.
 - Explain Cloudflare/GitHub dashboard steps click by click.

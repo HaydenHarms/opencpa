@@ -1,0 +1,48 @@
+id: far-governmental-property-tax-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Measurement focus and basis of accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - GASB Statement No. 33 (nonexchange transactions)
+  - GASB Statement No. 34 (government-wide and fund financial statements)
+  - GASB Statement No. 65 (deferred inflows of resources)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: Lakeview Township's fiscal year is the calendar year. On January 1, Year 5, it levies $4,000,000
+  of property taxes to finance Year 5 operations. The levy becomes legally enforceable that day, and no
+  taxes were prepaid. The township expects 2% of the levy to prove uncollectible. It collects $3,650,000
+  through December 31, Year 5, and $150,000 during the first 45 days of Year 6, and it expects to collect
+  the rest of the collectible amount between 90 and 120 days after year-end. In its governmental funds,
+  the township treats property taxes as available if collected within 60 days after year-end. By how much
+  does property tax revenue in the government-wide statement of activities exceed property tax revenue
+  in the general fund's statement of revenues, expenditures, and changes in fund balance?
+choices:
+- id: A
+  text: $0
+  rationale: Applies one basis to both statements. Government-wide statements use full accrual and the
+    funds use modified accrual, so the amounts differ.
+- id: B
+  text: $120,000
+  rationale: 'Correct. Government-wide: $4,000,000 less $80,000 expected uncollectible is $3,920,000.
+    General fund: $3,650,000 + $150,000 = $3,800,000. The remaining $120,000 will arrive too late to be
+    available, so the fund reports it as a deferred inflow of resources.'
+- id: C
+  text: $200,000
+  rationale: Leaves the expected uncollectible amount out of the government-wide figure ($4,000,000 −
+    $3,800,000). Government-wide revenue is net of the $80,000 the township expects not to collect.
+- id: D
+  text: $270,000
+  rationale: Measures fund revenue at cash collected by year-end only ($3,650,000), ignoring the $150,000
+    collected within the 60-day availability period.
+answer: B
+explanation: 'Government-wide statements use the economic resources focus and full accrual. The levy is
+  for Year 5 and enforceable on January 1, so Year 5 revenue is $4,000,000 − $80,000 = $3,920,000. Governmental
+  funds use the current financial resources focus and modified accrual, so revenue is limited to amounts
+  collected by year-end or within the 60-day availability period: $3,650,000 + $150,000 = $3,800,000.
+  The $120,000 of collectible taxes expected later is a deferred inflow of resources in the fund. Difference:
+  $3,920,000 − $3,800,000 = $120,000.'

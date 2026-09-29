@@ -1,0 +1,37 @@
+id: far-governmental-fund-types-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Purpose of funds
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - GASB Statement No. 54 (governmental fund type definitions)
+  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
+    re-solved and every number and distractor computed in code.
+stem: Northgate City accounts for the four activities below. Which activity is reported in a capital projects
+  fund?
+choices:
+- id: A
+  text: Water service charges that are set to recover the full cost of running the city's water utility
+  rationale: Reported in an enterprise fund, which accounts for activities financed by fees charged to
+    external users.
+- id: B
+  text: Bond proceeds restricted for a new fire station, plus the related construction costs
+  rationale: Correct. Capital projects funds account for resources restricted, committed, or assigned
+    to capital outlay.
+- id: C
+  text: Resources accumulated to pay principal and interest on the city's general obligation bonds
+  rationale: Reported in a debt service fund, which accounts for resources set aside for debt payments.
+- id: D
+  text: Hotel occupancy tax revenue that the city council has committed to tourism promotion
+  rationale: Reported in a special revenue fund, which accounts for revenue sources restricted or committed
+    to a specific operating purpose.
+answer: B
+explanation: A capital projects fund accounts for financial resources that are restricted, committed,
+  or assigned to expenditure for capital outlay, such as bond proceeds and the construction of a fire
+  station. Debt service funds accumulate resources for principal and interest payments, special revenue
+  funds account for revenue sources restricted or committed for specific operating purposes, and enterprise
+  funds account for fee-supported business-type activities.
