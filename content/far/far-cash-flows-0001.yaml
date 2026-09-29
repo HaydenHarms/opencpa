@@ -1,0 +1,36 @@
+id: far-cash-flows-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: 'General-purpose financial reporting: for-profit business entities'
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 230-10-45-28
+  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
+    rebuilt where needed.
+stem: Marlow Corp. reports net income of $180,000. During the year, depreciation was $24,000, accounts
+  receivable increased by $31,000, inventory decreased by $12,000, and Marlow recorded a $9,000 gain on
+  the sale of equipment. Under the indirect method, what is net cash provided by operating activities?
+choices:
+- id: A
+  text: $152,000
+  rationale: Subtracts the inventory decrease. A decrease in inventory means less cash was tied up, so
+    it is added back.
+- id: B
+  text: $176,000
+  rationale: Correct. $180,000 + $24,000 − $9,000 − $31,000 + $12,000.
+- id: C
+  text: $185,000
+  rationale: Forgets to remove the $9,000 gain. The full sale proceeds belong in investing activities,
+    so the gain must come out of operating.
+- id: D
+  text: $238,000
+  rationale: Adds the receivables increase. Higher receivables mean revenue was recognized but not yet
+    collected, so the increase is subtracted.
+answer: B
+explanation: 'Start with net income, add back noncash depreciation, remove the gain (its cash is in investing),
+  subtract the increase in receivables, and add the decrease in inventory: $180,000 + $24,000 − $9,000
+  − $31,000 + $12,000 = $176,000.'

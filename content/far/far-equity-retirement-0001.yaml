@@ -1,0 +1,35 @@
+id: far-equity-retirement-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Equity
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 505-30-30-8
+  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
+    rebuilt where needed.
+stem: Mercer Inc. originally issued 1,000 shares of $2 par common stock at $14 per share. It later reacquires
+  and retires all 1,000 shares at $20 per share. No other paid-in capital from treasury or retirement
+  transactions exists. What amount is debited to retained earnings on retirement?
+choices:
+- id: A
+  text: $0
+  rationale: APIC can absorb only the paid-in capital from the original issuance ($12,000), not the extra
+    $6,000 paid.
+- id: B
+  text: $12,000
+  rationale: Charges the original APIC amount to retained earnings instead of removing it from APIC.
+- id: C
+  text: $6,000
+  rationale: Correct. Common stock ($2,000) and the original APIC ($12,000) are removed; the remaining
+    $6,000 of cost goes to retained earnings.
+- id: D
+  text: $20,000
+  rationale: Charges the entire cost to retained earnings without first removing par and APIC.
+answer: C
+explanation: 'Retirement entry: Dr Common stock $2,000; Dr APIC $12,000; Dr Retained earnings $6,000;
+  Cr Cash $20,000. The excess of retirement cost over the original issue price is charged to retained
+  earnings.'

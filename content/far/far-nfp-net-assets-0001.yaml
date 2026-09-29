@@ -1,0 +1,39 @@
+id: far-nfp-net-assets-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: 'General-purpose financial reporting: nongovernmental not-for-profit entities'
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-205-45-9 through 45-12
+  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
+    rebuilt where needed.
+stem: Clearfield Museum receives a $500,000 donation restricted to building a new gallery. The museum
+  does not have a policy of implying a time restriction on long-lived assets. During the year, the museum
+  spends the $500,000 and places the gallery in service. How are net assets affected by these two events?
+choices:
+- id: A
+  text: 'Receipt: without donor restrictions +$500,000. No entry when the gallery is placed in service.'
+  rationale: Ignores the donor's restriction at receipt. Donor-restricted gifts are reported as with donor
+    restrictions.
+- id: B
+  text: 'Receipt: with donor restrictions +$500,000. No release until the gallery is sold or fully depreciated.'
+  rationale: Would apply only if the museum had a policy of implying a time restriction over the asset's
+    life; the facts say it does not.
+- id: C
+  text: Receipt and use are both reported without donor restrictions because the restriction is met in
+    the same year.
+  rationale: Only allowed if the entity has elected and disclosed a same-period policy for simultaneous
+    release; not given here, and the question asks about the default.
+- id: D
+  text: 'Receipt: with donor restrictions +$500,000. When the gallery is placed in service: $500,000 released
+    from with donor restrictions to without donor restrictions.'
+  rationale: Correct. The purpose restriction is satisfied when the gallery is placed in service, triggering
+    a release (reclassification).
+answer: D
+explanation: A purpose-restricted gift increases net assets with donor restrictions. Without a policy
+  implying a time restriction, the restriction on a gift for a long-lived asset expires when the asset
+  is placed in service, and the amount is reported as net assets released from restrictions.
