@@ -39,3 +39,86 @@ explanation: 'Expenses are reported by function using a reasonable allocation ba
   salaries $600,000 × 20% = $120,000, plus rent $120,000 × 25% = $30,000, for $150,000. Program supplies
   are program expenses. External investment expenses are netted against investment return, so the $10,000
   adviser fee is not a functional expense.'
+variants:
+- stem: 'Magnolia Center, a not-for-profit entity, incurred these costs in Year 1: salaries of $800,000,
+    of which staff time records show 65% was spent on programs, 25% on management and general activities,
+    and 10% on fundraising; rent of $150,000, allocated by floor space 80% to programs and 20% to management
+    and general; program supplies of $90,000; and $15,000 of fees paid to an outside investment adviser
+    who manages Magnolia''s endowment. What amount should Magnolia report as management and general expenses
+    in its analysis of expenses by function?'
+  choices:
+  - id: A
+    text: $200,000
+    rationale: Leaves out management and general's 20% share of the rent. Rent is allocated to the functions
+      it supports.
+  - id: B
+    text: $230,000
+    rationale: Correct. 25% of salaries ($200,000) + 20% of rent ($30,000). External investment fees are
+      netted against investment return.
+  - id: C
+    text: $245,000
+    rationale: Adds the $15,000 of external investment fees. Since ASU 2016-14, they are netted against
+      investment return rather than reported as an expense.
+  - id: D
+    text: $310,000
+    rationale: Adds the $80,000 of fundraising salaries. Fundraising is a separate supporting function.
+  answer: B
+  explanation: 'Expenses are reported by function using a reasonable allocation basis. Management and
+    general: salaries $800,000 × 25% = $200,000, plus rent $150,000 × 20% = $30,000, for $230,000. Program
+    supplies are program expenses. External investment expenses are netted against investment return,
+    so the $15,000 adviser fee is not a functional expense.'
+- stem: 'Nutmeg Center, a not-for-profit entity, incurred these costs in Year 1: salaries of $450,000,
+    of which staff time records show 75% was spent on programs, 15% on management and general activities,
+    and 10% on fundraising; rent of $96,000, allocated by floor space 70% to programs and 30% to management
+    and general; program supplies of $60,000; and $8,000 of fees paid to an outside investment adviser
+    who manages Nutmeg''s endowment. What amount should Nutmeg report as management and general expenses
+    in its analysis of expenses by function?'
+  choices:
+  - id: A
+    text: $96,300
+    rationale: Correct. 15% of salaries ($67,500) + 30% of rent ($28,800). External investment fees are
+      netted against investment return.
+  - id: B
+    text: $104,300
+    rationale: Adds the $8,000 of external investment fees. Since ASU 2016-14, they are netted against
+      investment return rather than reported as an expense.
+  - id: C
+    text: $141,300
+    rationale: Adds the $45,000 of fundraising salaries. Fundraising is a separate supporting function.
+  - id: D
+    text: $163,500
+    rationale: Charges all of the rent to management and general. Rent is allocated by floor space, and
+      70% supports programs.
+  answer: A
+  explanation: 'Expenses are reported by function using a reasonable allocation basis. Management and
+    general: salaries $450,000 × 15% = $67,500, plus rent $96,000 × 30% = $28,800, for $96,300. Program
+    supplies are program expenses. External investment expenses are netted against investment return,
+    so the $8,000 adviser fee is not a functional expense.'
+- stem: 'Orchard Center, a not-for-profit entity, incurred these costs in Year 1: salaries of $1,000,000,
+    of which staff time records show 70% was spent on programs, 18% on management and general activities,
+    and 12% on fundraising; rent of $200,000, allocated by floor space 85% to programs and 15% to management
+    and general; program supplies of $120,000; and $25,000 of fees paid to an outside investment adviser
+    who manages Orchard''s endowment. What amount should Orchard report as management and general expenses
+    in its analysis of expenses by function?'
+  choices:
+  - id: A
+    text: $180,000
+    rationale: Leaves out management and general's 15% share of the rent. Rent is allocated to the functions
+      it supports.
+  - id: B
+    text: $210,000
+    rationale: Correct. 18% of salaries ($180,000) + 15% of rent ($30,000). External investment fees are
+      netted against investment return.
+  - id: C
+    text: $235,000
+    rationale: Adds the $25,000 of external investment fees. Since ASU 2016-14, they are netted against
+      investment return rather than reported as an expense.
+  - id: D
+    text: $380,000
+    rationale: Charges all of the rent to management and general. Rent is allocated by floor space, and
+      85% supports programs.
+  answer: B
+  explanation: 'Expenses are reported by function using a reasonable allocation basis. Management and
+    general: salaries $1,000,000 × 18% = $180,000, plus rent $200,000 × 15% = $30,000, for $210,000. Program
+    supplies are program expenses. External investment expenses are netted against investment return,
+    so the $25,000 adviser fee is not a functional expense.'

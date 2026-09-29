@@ -44,3 +44,103 @@ explanation: 'Review each item. (1) The expected award is a gain contingency: di
   $35,000 after claims paid). (3) The environmental loss is probable and estimable, and $450,000 is the
   best estimate within the range, so it is accrued. (4) An unasserted claim that is unlikely to be asserted
   requires neither accrual nor disclosure. Pretax income falls by $60,000 + $450,000 = $510,000.'
+variants:
+- stem: 'Lanier Co. is preparing its Year 1 statements, which have not been issued. Its files show: (1)
+    Lanier is suing a competitor for patent infringement, and counsel expects Lanier to be awarded about
+    $300,000; (2) Lanier''s Year 1 sales of $3,000,000 carry a one-year warranty, past experience shows
+    warranty costs of 2% of sales, and Lanier paid $40,000 of claims on these sales in Year 1; (3) the
+    Environmental Protection Agency named Lanier a potentially responsible party for a contaminated site,
+    and engineers estimate Lanier''s share of the cleanup at $200,000 to $500,000, with $350,000 the most
+    likely amount; and (4) no one has asserted a claim over a minor chemical spill at one of Lanier''s
+    plants, and counsel believes a claim is unlikely to be asserted. By how much do these matters reduce
+    Lanier''s Year 1 pretax income?'
+  choices:
+  - id: A
+    text: $260,000
+    rationale: Accrues the $200,000 low end of the environmental range. When one amount in a range is
+      the best estimate, that amount is accrued.
+  - id: B
+    text: $370,000
+    rationale: Uses the $20,000 warranty liability remaining at year-end instead of the $60,000 warranty
+      expense.
+  - id: C
+    text: $410,000
+    rationale: Correct. Warranty expense of $60,000 (2% × $3,000,000) plus the $350,000 best estimate
+      of the environmental obligation.
+  - id: D
+    text: $560,000
+    rationale: Accrues the $500,000 high end of the environmental range. When one amount in a range is
+      the best estimate, that amount is accrued.
+  answer: C
+  explanation: 'Review each item. (1) The expected award is a gain contingency: disclosed, not recognized.
+    (2) Warranty expense is recognized in the period of sale: 2% × $3,000,000 = $60,000 (the liability
+    is $20,000 after claims paid). (3) The environmental loss is probable and estimable, and $350,000
+    is the best estimate within the range, so it is accrued. (4) An unasserted claim that is unlikely
+    to be asserted requires neither accrual nor disclosure. Pretax income falls by $60,000 + $350,000
+    = $410,000.'
+- stem: 'Merritt Co. is preparing its Year 1 statements, which have not been issued. Its files show: (1)
+    Merritt is suing a competitor for patent infringement, and counsel expects Merritt to be awarded about
+    $150,000; (2) Merritt''s Year 1 sales of $1,500,000 carry a one-year warranty, past experience shows
+    warranty costs of 4% of sales, and Merritt paid $20,000 of claims on these sales in Year 1; (3) the
+    Environmental Protection Agency named Merritt a potentially responsible party for a contaminated site,
+    and engineers estimate Merritt''s share of the cleanup at $400,000 to $900,000, with $600,000 the
+    most likely amount; and (4) no one has asserted a claim over a minor chemical spill at one of Merritt''s
+    plants, and counsel believes a claim is unlikely to be asserted. By how much do these matters reduce
+    Merritt''s Year 1 pretax income?'
+  choices:
+  - id: A
+    text: $460,000
+    rationale: Accrues the $400,000 low end of the environmental range. When one amount in a range is
+      the best estimate, that amount is accrued.
+  - id: B
+    text: $510,000
+    rationale: Offsets the expected $150,000 award against the losses. A gain contingency is not recognized
+      until it is realized.
+  - id: C
+    text: $640,000
+    rationale: Uses the $40,000 warranty liability remaining at year-end instead of the $60,000 warranty
+      expense.
+  - id: D
+    text: $660,000
+    rationale: Correct. Warranty expense of $60,000 (4% × $1,500,000) plus the $600,000 best estimate
+      of the environmental obligation.
+  answer: D
+  explanation: 'Review each item. (1) The expected award is a gain contingency: disclosed, not recognized.
+    (2) Warranty expense is recognized in the period of sale: 4% × $1,500,000 = $60,000 (the liability
+    is $40,000 after claims paid). (3) The environmental loss is probable and estimable, and $600,000
+    is the best estimate within the range, so it is accrued. (4) An unasserted claim that is unlikely
+    to be asserted requires neither accrual nor disclosure. Pretax income falls by $60,000 + $600,000
+    = $660,000.'
+- stem: 'Northam Co. is preparing its Year 1 statements, which have not been issued. Its files show: (1)
+    Northam is suing a competitor for patent infringement, and counsel expects Northam to be awarded about
+    $800,000; (2) Northam''s Year 1 sales of $4,000,000 carry a one-year warranty, past experience shows
+    warranty costs of 2.5% of sales, and Northam paid $30,000 of claims on these sales in Year 1; (3)
+    the Environmental Protection Agency named Northam a potentially responsible party for a contaminated
+    site, and engineers estimate Northam''s share of the cleanup at $250,000 to $650,000, with $500,000
+    the most likely amount; and (4) no one has asserted a claim over a minor chemical spill at one of
+    Northam''s plants, and counsel believes a claim is unlikely to be asserted. By how much do these matters
+    reduce Northam''s Year 1 pretax income?'
+  choices:
+  - id: A
+    text: $350,000
+    rationale: Accrues the $250,000 low end of the environmental range. When one amount in a range is
+      the best estimate, that amount is accrued.
+  - id: B
+    text: $570,000
+    rationale: Uses the $70,000 warranty liability remaining at year-end instead of the $100,000 warranty
+      expense.
+  - id: C
+    text: $600,000
+    rationale: Correct. Warranty expense of $100,000 (2.5% × $4,000,000) plus the $500,000 best estimate
+      of the environmental obligation.
+  - id: D
+    text: $750,000
+    rationale: Accrues the $650,000 high end of the environmental range. When one amount in a range is
+      the best estimate, that amount is accrued.
+  answer: C
+  explanation: 'Review each item. (1) The expected award is a gain contingency: disclosed, not recognized.
+    (2) Warranty expense is recognized in the period of sale: 2.5% × $4,000,000 = $100,000 (the liability
+    is $70,000 after claims paid). (3) The environmental loss is probable and estimable, and $500,000
+    is the best estimate within the range, so it is accrued. (4) An unasserted claim that is unlikely
+    to be asserted requires neither accrual nor disclosure. Pretax income falls by $100,000 + $500,000
+    = $600,000.'

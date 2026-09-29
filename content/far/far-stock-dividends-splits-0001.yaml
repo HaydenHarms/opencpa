@@ -36,3 +36,83 @@ explanation: 'March 1: a 5% dividend is small, so 10,000 shares are capitalized 
   $200,000. July 1: a stock split changes the number of shares and the par value but requires no entry
   to retained earnings; shares become 420,000 at $0.50 par. November 1: a 50% dividend is large, so 210,000
   shares are capitalized at par: $105,000. Total reduction = $305,000.'
+variants:
+- stem: At January 1, Varden Corp. has 300,000 shares of $2 par common stock outstanding. On March 1 it
+    distributes a 10% stock dividend when the market price is $30 per share. On July 1 it effects a 2-for-1
+    stock split, reducing par value to $1 per share. On November 1 it distributes a 40% stock dividend
+    when the market price is $18 per share. By how much do these three transactions reduce retained earnings?
+  choices:
+  - id: A
+    text: $324,000
+    rationale: Records both stock dividends at par. The 10% dividend is small, so it is recorded at market
+      value.
+  - id: B
+    text: $1,164,000
+    rationale: Correct. 30,000 shares × $30 = $900,000 for the small dividend, plus 264,000 shares × $1
+      par = $264,000 for the large dividend.
+  - id: C
+    text: $1,428,000
+    rationale: Capitalizes the 40% dividend at the $2 par in effect before the split. After the split,
+      par is $1.
+  - id: D
+    text: $5,652,000
+    rationale: Records the 40% dividend at market value. A distribution of more than 20–25% is accounted
+      for like a split and capitalized at par.
+  answer: B
+  explanation: 'March 1: a 10% dividend is small, so 30,000 shares are capitalized at the $30 market price:
+    $900,000. July 1: a stock split changes the number of shares and the par value but requires no entry
+    to retained earnings; shares become 660,000 at $1 par. November 1: a 40% dividend is large, so 264,000
+    shares are capitalized at par: $264,000. Total reduction = $1,164,000.'
+- stem: At January 1, Welland Corp. has 120,000 shares of $1 par common stock outstanding. On March 1
+    it distributes an 8% stock dividend when the market price is $25 per share. On July 1 it effects a
+    2-for-1 stock split, reducing par value to $0.50 per share. On November 1 it distributes a 30% stock
+    dividend when the market price is $15 per share. By how much do these three transactions reduce retained
+    earnings?
+  choices:
+  - id: A
+    text: $48,480
+    rationale: Records both stock dividends at par. The 8% dividend is small, so it is recorded at market
+      value.
+  - id: B
+    text: $240,000
+    rationale: Records the 8% dividend at market value but nothing for the 30% dividend, treating it like
+      a split. A large stock dividend is still capitalized, at par.
+  - id: C
+    text: $278,880
+    rationale: Correct. 9,600 shares × $25 = $240,000 for the small dividend, plus 77,760 shares × $0.50
+      par = $38,880 for the large dividend.
+  - id: D
+    text: $317,760
+    rationale: Capitalizes the 30% dividend at the $1 par in effect before the split. After the split,
+      par is $0.50.
+  answer: C
+  explanation: 'March 1: an 8% dividend is small, so 9,600 shares are capitalized at the $25 market price:
+    $240,000. July 1: a stock split changes the number of shares and the par value but requires no entry
+    to retained earnings; shares become 259,200 at $0.50 par. November 1: a 30% dividend is large, so
+    77,760 shares are capitalized at par: $38,880. Total reduction = $278,880.'
+- stem: At January 1, Yorke Corp. has 500,000 shares of $1 par common stock outstanding. On March 1 it
+    distributes a 5% stock dividend when the market price is $16 per share. On July 1 it effects a 2-for-1
+    stock split, reducing par value to $0.50 per share. On November 1 it distributes a 60% stock dividend
+    when the market price is $9 per share. By how much do these three transactions reduce retained earnings?
+  choices:
+  - id: A
+    text: $400,000
+    rationale: Records the 5% dividend at market value but nothing for the 60% dividend, treating it like
+      a split. A large stock dividend is still capitalized, at par.
+  - id: B
+    text: $715,000
+    rationale: Correct. 25,000 shares × $16 = $400,000 for the small dividend, plus 630,000 shares × $0.50
+      par = $315,000 for the large dividend.
+  - id: C
+    text: $1,030,000
+    rationale: Capitalizes the 60% dividend at the $1 par in effect before the split. After the split,
+      par is $0.50.
+  - id: D
+    text: $6,070,000
+    rationale: Records the 60% dividend at market value. A distribution of more than 20–25% is accounted
+      for like a split and capitalized at par.
+  answer: B
+  explanation: 'March 1: a 5% dividend is small, so 25,000 shares are capitalized at the $16 market price:
+    $400,000. July 1: a stock split changes the number of shares and the par value but requires no entry
+    to retained earnings; shares become 1,050,000 at $0.50 par. November 1: a 60% dividend is large, so
+    630,000 shares are capitalized at par: $315,000. Total reduction = $715,000.'

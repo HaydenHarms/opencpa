@@ -40,3 +40,91 @@ explanation: 'Reconcile first: the subledger is missing the $9,000 sale, so its 
   accounts with credit balances are reclassified as liabilities rather than netted against other customers''
   debit balances. Accounts receivable = $512,000; customer credit balances of $14,000 are reported as
   current liabilities.'
+variants:
+- stem: At December 31, Blythe Co.'s accounts receivable subledger shows customer accounts with debit
+    balances totaling $740,000 and customer accounts with credit balances totaling $22,000, for a net
+    of $718,000. The general ledger accounts receivable control account shows $734,000. Investigating
+    the difference, the controller finds that a $16,000 credit sale made on December 27 was posted to
+    the general ledger but never to the customer's subledger account; that customer had no other balance.
+    Before any allowance for credit losses, what amount should Blythe report as accounts receivable?
+  choices:
+  - id: A
+    text: $718,000
+    rationale: Reports the unadjusted subledger net. It omits the $16,000 sale and nets customer credit
+      balances against receivables.
+  - id: B
+    text: $734,000
+    rationale: Reports the general ledger balance, which agrees with the corrected subledger net. Customer
+      credit balances are liabilities and are not netted against receivables from other customers.
+  - id: C
+    text: $756,000
+    rationale: Correct. Posting the $16,000 sale raises debit balances to $756,000; the $22,000 of credit
+      balances is reported as a current liability.
+  - id: D
+    text: $778,000
+    rationale: Adds the $22,000 of customer credit balances to receivables. They are amounts owed to customers,
+      reported as liabilities.
+  answer: C
+  explanation: 'Reconcile first: the subledger is missing the $16,000 sale, so its debit balances become
+    $756,000 and its net becomes $734,000, which agrees with the general ledger. For presentation, customer
+    accounts with credit balances are reclassified as liabilities rather than netted against other customers''
+    debit balances. Accounts receivable = $756,000; customer credit balances of $22,000 are reported as
+    current liabilities.'
+- stem: At December 31, Carver Co.'s accounts receivable subledger shows customer accounts with debit
+    balances totaling $310,000 and customer accounts with credit balances totaling $6,000, for a net of
+    $304,000. The general ledger accounts receivable control account shows $315,000. Investigating the
+    difference, the controller finds that an $11,000 credit sale made on December 27 was posted to the
+    general ledger but never to the customer's subledger account; that customer had no other balance.
+    Before any allowance for credit losses, what amount should Carver report as accounts receivable?
+  choices:
+  - id: A
+    text: $304,000
+    rationale: Reports the unadjusted subledger net. It omits the $11,000 sale and nets customer credit
+      balances against receivables.
+  - id: B
+    text: $310,000
+    rationale: Reports the subledger's debit balances without posting the $11,000 sale that is missing
+      from them.
+  - id: C
+    text: $315,000
+    rationale: Reports the general ledger balance, which agrees with the corrected subledger net. Customer
+      credit balances are liabilities and are not netted against receivables from other customers.
+  - id: D
+    text: $321,000
+    rationale: Correct. Posting the $11,000 sale raises debit balances to $321,000; the $6,000 of credit
+      balances is reported as a current liability.
+  answer: D
+  explanation: 'Reconcile first: the subledger is missing the $11,000 sale, so its debit balances become
+    $321,000 and its net becomes $315,000, which agrees with the general ledger. For presentation, customer
+    accounts with credit balances are reclassified as liabilities rather than netted against other customers''
+    debit balances. Accounts receivable = $321,000; customer credit balances of $6,000 are reported as
+    current liabilities.'
+- stem: At December 31, Dalby Co.'s accounts receivable subledger shows customer accounts with debit balances
+    totaling $1,050,000 and customer accounts with credit balances totaling $35,000, for a net of $1,015,000.
+    The general ledger accounts receivable control account shows $1,043,000. Investigating the difference,
+    the controller finds that a $28,000 credit sale made on December 27 was posted to the general ledger
+    but never to the customer's subledger account; that customer had no other balance. Before any allowance
+    for credit losses, what amount should Dalby report as accounts receivable?
+  choices:
+  - id: A
+    text: $1,043,000
+    rationale: Reports the general ledger balance, which agrees with the corrected subledger net. Customer
+      credit balances are liabilities and are not netted against receivables from other customers.
+  - id: B
+    text: $1,050,000
+    rationale: Reports the subledger's debit balances without posting the $28,000 sale that is missing
+      from them.
+  - id: C
+    text: $1,078,000
+    rationale: Correct. Posting the $28,000 sale raises debit balances to $1,078,000; the $35,000 of credit
+      balances is reported as a current liability.
+  - id: D
+    text: $1,113,000
+    rationale: Adds the $35,000 of customer credit balances to receivables. They are amounts owed to customers,
+      reported as liabilities.
+  answer: C
+  explanation: 'Reconcile first: the subledger is missing the $28,000 sale, so its debit balances become
+    $1,078,000 and its net becomes $1,043,000, which agrees with the general ledger. For presentation,
+    customer accounts with credit balances are reclassified as liabilities rather than netted against
+    other customers'' debit balances. Accounts receivable = $1,078,000; customer credit balances of $35,000
+    are reported as current liabilities.'

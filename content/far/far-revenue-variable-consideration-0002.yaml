@@ -37,3 +37,85 @@ explanation: 'The retroactive volume discount makes the consideration variable. 
   it has long experience and a shortfall has never occurred, including the discounted price is not expected
   to cause a significant revenue reversal. Q1 revenue = 3,000 × $90 = $270,000, with $30,000 recognized
   as a refund liability.'
+variants:
+- stem: On January 1, Iverson Co. agrees to sell a customer parts at $50 per unit. If the customer buys
+    more than 20,000 units during the calendar year, the price for all units bought that year falls retroactively
+    to $44. From many years of dealing with this customer, Iverson expects it to buy about 26,000 units,
+    and a shortfall below 20,000 has never occurred. In the first quarter, the customer buys 7,000 units.
+    How much revenue should Iverson recognize for the first quarter?
+  choices:
+  - id: A
+    text: $0
+    rationale: Defers all revenue until the customer passes 20,000 units. Revenue is recognized as control
+      of the parts transfers, at the estimated transaction price.
+  - id: B
+    text: $194,000
+    rationale: Deducts the whole year's expected discount (26,000 × $6 = $156,000) from first-quarter
+      sales at $50. The discount is recognized as the units it applies to are sold.
+  - id: C
+    text: $308,000
+    rationale: 'Correct. The expected volume discount is included in the transaction price: 7,000 × $44.'
+  - id: D
+    text: $350,000
+    rationale: Uses the $50 list price until the threshold is reached. The expected retroactive discount
+      is variable consideration estimated from the start.
+  answer: C
+  explanation: 'The retroactive volume discount makes the consideration variable. Iverson estimates it
+    from its experience with the customer: purchases of about 26,000 units, so the price will be $44.
+    Because it has long experience and a shortfall has never occurred, including the discounted price
+    is not expected to cause a significant revenue reversal. Q1 revenue = 7,000 × $44 = $308,000, with
+    $42,000 recognized as a refund liability.'
+- stem: On January 1, Jennings Co. agrees to sell a customer parts at $200 per unit. If the customer buys
+    more than 5,000 units during the calendar year, the price for all units bought that year falls retroactively
+    to $185. From many years of dealing with this customer, Jennings expects it to buy about 6,500 units,
+    and a shortfall below 5,000 has never occurred. In the first quarter, the customer buys 1,500 units.
+    How much revenue should Jennings recognize for the first quarter?
+  choices:
+  - id: A
+    text: $0
+    rationale: Defers all revenue until the customer passes 5,000 units. Revenue is recognized as control
+      of the parts transfers, at the estimated transaction price.
+  - id: B
+    text: $202,500
+    rationale: Deducts the whole year's expected discount (6,500 × $15 = $97,500) from first-quarter sales
+      at $200. The discount is recognized as the units it applies to are sold.
+  - id: C
+    text: $277,500
+    rationale: 'Correct. The expected volume discount is included in the transaction price: 1,500 × $185.'
+  - id: D
+    text: $300,000
+    rationale: Uses the $200 list price until the threshold is reached. The expected retroactive discount
+      is variable consideration estimated from the start.
+  answer: C
+  explanation: 'The retroactive volume discount makes the consideration variable. Jennings estimates it
+    from its experience with the customer: purchases of about 6,500 units, so the price will be $185.
+    Because it has long experience and a shortfall has never occurred, including the discounted price
+    is not expected to cause a significant revenue reversal. Q1 revenue = 1,500 × $185 = $277,500, with
+    $22,500 recognized as a refund liability.'
+- stem: On January 1, Kessler Co. agrees to sell a customer parts at $80 per unit. If the customer buys
+    more than 15,000 units during the calendar year, the price for all units bought that year falls retroactively
+    to $72. From many years of dealing with this customer, Kessler expects it to buy about 18,000 units,
+    and a shortfall below 15,000 has never occurred. In the first quarter, the customer buys 4,000 units.
+    How much revenue should Kessler recognize for the first quarter?
+  choices:
+  - id: A
+    text: $0
+    rationale: Defers all revenue until the customer passes 15,000 units. Revenue is recognized as control
+      of the parts transfers, at the estimated transaction price.
+  - id: B
+    text: $176,000
+    rationale: Deducts the whole year's expected discount (18,000 × $8 = $144,000) from first-quarter
+      sales at $80. The discount is recognized as the units it applies to are sold.
+  - id: C
+    text: $288,000
+    rationale: 'Correct. The expected volume discount is included in the transaction price: 4,000 × $72.'
+  - id: D
+    text: $320,000
+    rationale: Uses the $80 list price until the threshold is reached. The expected retroactive discount
+      is variable consideration estimated from the start.
+  answer: C
+  explanation: 'The retroactive volume discount makes the consideration variable. Kessler estimates it
+    from its experience with the customer: purchases of about 18,000 units, so the price will be $72.
+    Because it has long experience and a shortfall has never occurred, including the discounted price
+    is not expected to cause a significant revenue reversal. Q1 revenue = 4,000 × $72 = $288,000, with
+    $32,000 recognized as a refund liability.'

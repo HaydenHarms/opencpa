@@ -40,3 +40,88 @@ explanation: 'Wages: $30,000 (agrees). Vacation: vested, earned rights are accru
   more than recorded. Bonus: B = 10% × ($1,100,000 − B), so B = $100,000 (agrees). Self-insurance: $10,000
   reported and unpaid plus $55,000 incurred but not reported = $65,000, $25,000 more than recorded. Accrued
   liabilities = $30,000 + $48,000 + $100,000 + $65,000 = $243,000.'
+variants:
+- stem: 'Norcross Co.''s general ledger shows accrued liabilities of $275,000 at December 31: accrued
+    wages $45,000, accrued vacation $60,000, accrued bonus $120,000, and accrued self-insurance claims
+    $50,000. Supporting schedules show: wages earned but unpaid for the last three days of the year were
+    $45,000; employees had earned $72,000 of vested, unused vacation pay; the bonus plan pays 8% of income
+    after deducting the bonus, and income before the bonus was $1,620,000; and for its self-insured health
+    plan, Norcross owes $15,000 on claims reported but unpaid, and its actuary estimates $70,000 of claims
+    incurred but not yet reported. What amount should Norcross report as accrued liabilities?'
+  choices:
+  - id: A
+    text: $287,000
+    rationale: Updates vacation pay but leaves self-insurance at the general ledger's $50,000. The liability
+      is $15,000 reported plus $70,000 incurred but not reported.
+  - id: B
+    text: $310,000
+    rationale: Updates self-insurance but leaves vacation at $60,000. Vested vacation pay earned and unused
+      at year-end is accrued in full ($72,000).
+  - id: C
+    text: $322,000
+    rationale: Correct. $45,000 wages + $72,000 vacation + $120,000 bonus + $85,000 self-insurance.
+  - id: D
+    text: $331,600
+    rationale: Computes the bonus on income before the bonus (8% × $1,620,000). The plan pays 8% of income
+      after deducting the bonus.
+  answer: C
+  explanation: 'Wages: $45,000 (agrees). Vacation: vested, earned rights are accrued at $72,000, $12,000
+    more than recorded. Bonus: B = 8% × ($1,620,000 − B), so B = $120,000 (agrees). Self-insurance: $15,000
+    reported and unpaid plus $70,000 incurred but not reported = $85,000, $35,000 more than recorded.
+    Accrued liabilities = $45,000 + $72,000 + $120,000 + $85,000 = $322,000.'
+- stem: 'Oswego Co.''s general ledger shows accrued liabilities of $155,000 at December 31: accrued wages
+    $20,000, accrued vacation $25,000, accrued bonus $80,000, and accrued self-insurance claims $30,000.
+    Supporting schedules show: wages earned but unpaid for the last three days of the year were $20,000;
+    employees had earned $31,000 of vested, unused vacation pay; the bonus plan pays 10% of income after
+    deducting the bonus, and income before the bonus was $880,000; and for its self-insured health plan,
+    Oswego owes $6,000 on claims reported but unpaid, and its actuary estimates $40,000 of claims incurred
+    but not yet reported. What amount should Oswego report as accrued liabilities?'
+  choices:
+  - id: A
+    text: $137,000
+    rationale: Accrues only the claims already reported. Claims incurred but not yet reported are part
+      of a self-insurer's liability.
+  - id: B
+    text: $161,000
+    rationale: Updates vacation pay but leaves self-insurance at the general ledger's $30,000. The liability
+      is $6,000 reported plus $40,000 incurred but not reported.
+  - id: C
+    text: $171,000
+    rationale: Updates self-insurance but leaves vacation at $25,000. Vested vacation pay earned and unused
+      at year-end is accrued in full ($31,000).
+  - id: D
+    text: $177,000
+    rationale: Correct. $20,000 wages + $31,000 vacation + $80,000 bonus + $46,000 self-insurance.
+  answer: D
+  explanation: 'Wages: $20,000 (agrees). Vacation: vested, earned rights are accrued at $31,000, $6,000
+    more than recorded. Bonus: B = 10% × ($880,000 − B), so B = $80,000 (agrees). Self-insurance: $6,000
+    reported and unpaid plus $40,000 incurred but not reported = $46,000, $16,000 more than recorded.
+    Accrued liabilities = $20,000 + $31,000 + $80,000 + $46,000 = $177,000.'
+- stem: 'Pomfret Co.''s general ledger shows accrued liabilities of $285,000 at December 31: accrued wages
+    $60,000, accrued vacation $55,000, accrued bonus $100,000, and accrued self-insurance claims $70,000.
+    Supporting schedules show: wages earned but unpaid for the last three days of the year were $60,000;
+    employees had earned $64,000 of vested, unused vacation pay; the bonus plan pays 5% of income after
+    deducting the bonus, and income before the bonus was $2,100,000; and for its self-insured health plan,
+    Pomfret owes $20,000 on claims reported but unpaid, and its actuary estimates $90,000 of claims incurred
+    but not yet reported. What amount should Pomfret report as accrued liabilities?'
+  choices:
+  - id: A
+    text: $244,000
+    rationale: Accrues only the claims already reported. Claims incurred but not yet reported are part
+      of a self-insurer's liability.
+  - id: B
+    text: $294,000
+    rationale: Updates vacation pay but leaves self-insurance at the general ledger's $70,000. The liability
+      is $20,000 reported plus $90,000 incurred but not reported.
+  - id: C
+    text: $334,000
+    rationale: Correct. $60,000 wages + $64,000 vacation + $100,000 bonus + $110,000 self-insurance.
+  - id: D
+    text: $339,000
+    rationale: Computes the bonus on income before the bonus (5% × $2,100,000). The plan pays 5% of income
+      after deducting the bonus.
+  answer: C
+  explanation: 'Wages: $60,000 (agrees). Vacation: vested, earned rights are accrued at $64,000, $9,000
+    more than recorded. Bonus: B = 5% × ($2,100,000 − B), so B = $100,000 (agrees). Self-insurance: $20,000
+    reported and unpaid plus $90,000 incurred but not reported = $110,000, $40,000 more than recorded.
+    Accrued liabilities = $60,000 + $64,000 + $100,000 + $110,000 = $334,000.'

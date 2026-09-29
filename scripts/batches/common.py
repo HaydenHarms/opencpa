@@ -79,6 +79,21 @@ def variant(stem, choices, answer, explanation):
     )
 
 
+_ARTICLE = re.compile(r"\b(a|an) (\$?)(\d[\d,.]*)")
+
+
+def _spoken_vowel(num):
+    """Whether a number is spoken starting with a vowel: 8…, 11 (eleven), 18 (eighteen), 80, 800, 8,000…"""
+    lead = num.split(",")[0].split(".")[0]
+    return lead.startswith("8") or lead in ("11", "18")
+
+
+def fix_articles(text):
+    """'a $80,000' -> 'an $80,000' and 'an $50,000' -> 'a $50,000', for numbers a template filled in."""
+    return _ARTICLE.sub(
+        lambda mm: f"{'an' if _spoken_vowel(mm.group(3)) else 'a'} {mm.group(2)}{mm.group(3)}", text)
+
+
 def attach_variants(item, variants):
     """Order each variant's choices the way finalize() orders the item's, then attach them.
 
@@ -86,6 +101,9 @@ def attach_variants(item, variants):
     so the position carries no signal across versions.
     """
     for v in variants:
+        v["stem"], v["explanation"] = fix_articles(v["stem"]), fix_articles(v["explanation"])
+        for c in v["choices"]:
+            c["text"], c["rationale"] = fix_articles(c["text"]), fix_articles(c["rationale"])
         ch = v["choices"]
         right = next(c for c in ch if c["id"] == v["answer"])
         if is_numeric(ch):

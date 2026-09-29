@@ -63,7 +63,7 @@ variants:
   explanation: 'Under the measurement alternative, the investment is carried at cost less impairment,
     adjusted for observable price changes in orderly transactions for identical or similar securities.
     June: adjust to $310,000 (a $60,000 gain in net income). November: impairment indicators require measuring
-    the investment at fair value, $270,000 (an $40,000 loss in net income). Year-end carrying amount =
+    the investment at fair value, $270,000 (a $40,000 loss in net income). Year-end carrying amount =
     $270,000.'
 - stem: In January, Kinsey Co. pays $600,000 for 4% of the shares of a private company whose shares have
     no readily determinable fair value, and elects the measurement alternative. In June, the investee
@@ -89,9 +89,9 @@ variants:
   answer: B
   explanation: 'Under the measurement alternative, the investment is carried at cost less impairment,
     adjusted for observable price changes in orderly transactions for identical or similar securities.
-    June: adjust to $680,000 (a $80,000 gain in net income). November: impairment indicators require measuring
-    the investment at fair value, $520,000 (an $160,000 loss in net income). Year-end carrying amount
-    = $520,000.'
+    June: adjust to $680,000 (an $80,000 gain in net income). November: impairment indicators require
+    measuring the investment at fair value, $520,000 (a $160,000 loss in net income). Year-end carrying
+    amount = $520,000.'
 - stem: In January, Loftus Co. pays $150,000 for 10% of the shares of a private company whose shares have
     no readily determinable fair value, and elects the measurement alternative. In June, the investee
     sells identical shares to an unrelated investor in an orderly transaction at a price implying that
@@ -117,5 +117,5 @@ variants:
   explanation: 'Under the measurement alternative, the investment is carried at cost less impairment,
     adjusted for observable price changes in orderly transactions for identical or similar securities.
     June: adjust to $190,000 (a $40,000 gain in net income). November: impairment indicators require measuring
-    the investment at fair value, $165,000 (an $25,000 loss in net income). Year-end carrying amount =
+    the investment at fair value, $165,000 (a $25,000 loss in net income). Year-end carrying amount =
     $165,000.'

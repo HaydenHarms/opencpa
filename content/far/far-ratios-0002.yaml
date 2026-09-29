@@ -31,3 +31,67 @@ choices:
 answer: C
 explanation: Inventory turnover = cost of goods sold ÷ average inventory = $1,460,000 ÷ [($180,000 + $220,000)
   ÷ 2] = 7.3 times. Days in inventory = 365 ÷ 7.3 = 50.0 days.
+variants:
+- stem: For Year 2, Pruitt Co. reports sales of $3,650,000 and cost of goods sold of $2,190,000. Inventory
+    was $250,000 at the beginning of the year and $188,000 at the end. Using a 365-day year and average
+    inventory, what is Pruitt's number of days' sales in inventory, rounded to one decimal place?
+  choices:
+  - id: A
+    text: '10.0'
+    rationale: Stops at the inventory turnover (10.0 times). Days in inventory is 365 divided by the turnover.
+  - id: B
+    text: '21.9'
+    rationale: Computes turnover with sales ($3,650,000 ÷ $219,000). Inventory turnover uses cost of goods
+      sold, because inventory is carried at cost.
+  - id: C
+    text: '31.3'
+    rationale: Uses ending inventory ($2,190,000 ÷ $188,000 = 11.65 times). The question calls for average
+      inventory.
+  - id: D
+    text: '36.5'
+    rationale: Correct. Turnover = $2,190,000 ÷ $219,000 average inventory = 10.0; 365 ÷ 10.0 = 36.5 days.
+  answer: D
+  explanation: Inventory turnover = cost of goods sold ÷ average inventory = $2,190,000 ÷ [($250,000 +
+    $188,000) ÷ 2] = 10.0 times. Days in inventory = 365 ÷ 10.0 = 36.5 days.
+- stem: For Year 2, Quarry Co. reports sales of $1,460,000 and cost of goods sold of $1,000,000. Inventory
+    was $160,000 at the beginning of the year and $240,000 at the end. Using a 365-day year and average
+    inventory, what is Quarry's number of days' sales in inventory, rounded to one decimal place?
+  choices:
+  - id: A
+    text: '50.0'
+    rationale: Computes turnover with sales ($1,460,000 ÷ $200,000). Inventory turnover uses cost of goods
+      sold, because inventory is carried at cost.
+  - id: B
+    text: '58.4'
+    rationale: Uses beginning inventory ($1,000,000 ÷ $160,000). The question calls for average inventory.
+  - id: C
+    text: '73.0'
+    rationale: Correct. Turnover = $1,000,000 ÷ $200,000 average inventory = 5.0; 365 ÷ 5.0 = 73.0 days.
+  - id: D
+    text: '87.6'
+    rationale: Uses ending inventory ($1,000,000 ÷ $240,000 = 4.17 times). The question calls for average
+      inventory.
+  answer: C
+  explanation: Inventory turnover = cost of goods sold ÷ average inventory = $1,000,000 ÷ [($160,000 +
+    $240,000) ÷ 2] = 5.0 times. Days in inventory = 365 ÷ 5.0 = 73.0 days.
+- stem: For Year 2, Rudley Co. reports sales of $2,555,000 and cost of goods sold of $2,190,000. Inventory
+    was $400,000 at the beginning of the year and $330,000 at the end. Using a 365-day year and average
+    inventory, what is Rudley's number of days' sales in inventory, rounded to one decimal place?
+  choices:
+  - id: A
+    text: '6.0'
+    rationale: Stops at the inventory turnover (6.0 times). Days in inventory is 365 divided by the turnover.
+  - id: B
+    text: '52.1'
+    rationale: Computes turnover with sales ($2,555,000 ÷ $365,000). Inventory turnover uses cost of goods
+      sold, because inventory is carried at cost.
+  - id: C
+    text: '55.0'
+    rationale: Uses ending inventory ($2,190,000 ÷ $330,000 = 6.64 times). The question calls for average
+      inventory.
+  - id: D
+    text: '60.8'
+    rationale: Correct. Turnover = $2,190,000 ÷ $365,000 average inventory = 6.0; 365 ÷ 6.0 = 60.8 days.
+  answer: D
+  explanation: Inventory turnover = cost of goods sold ÷ average inventory = $2,190,000 ÷ [($400,000 +
+    $330,000) ÷ 2] = 6.0 times. Days in inventory = 365 ÷ 6.0 = 60.8 days.

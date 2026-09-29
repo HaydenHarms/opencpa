@@ -36,3 +36,79 @@ explanation: 'Effective interest is computed each semiannual period at 3% of the
   30: $1,148,775 × 3% = $34,463 expense; cash $40,000; premium amortized $5,537; carrying amount $1,143,238.
   December 31: $1,143,238 × 3% = $34,297 expense; premium amortized $5,703. Year 1 interest expense =
   $34,463 + $34,297 = $68,760.'
+variants:
+- stem: On January 1, Year 1, Abner Corp. issues $500,000 of five-year, 10% bonds that pay interest each
+    June 30 and December 31, for $540,554, a price that yields 8% compounded semiannually. Abner uses
+    the effective interest method and rounds to the nearest dollar at each step. What is Abner's interest
+    expense on the bonds for Year 1?
+  choices:
+  - id: A
+    text: $43,109
+    rationale: 'Correct. June 30: $540,554 × 4% = $21,622; the carrying amount falls to $537,176. December
+      31: $537,176 × 4% = $21,487.'
+  - id: B
+    text: $43,244
+    rationale: Applies the 8% annual rate to the issue price once. Interest is compounded semiannually,
+      and the carrying amount falls after the first payment.
+  - id: C
+    text: $50,000
+    rationale: Uses the cash interest paid. A premium reduces interest expense below the stated rate.
+  - id: D
+    text: $54,055
+    rationale: Applies the 10% stated rate to the carrying amount instead of the 8% yield. Interest expense
+      uses the market rate at issuance.
+  answer: A
+  explanation: 'Effective interest is computed each semiannual period at 4% of the carrying amount. June
+    30: $540,554 × 4% = $21,622 expense; cash $25,000; premium amortized $3,378; carrying amount $537,176.
+    December 31: $537,176 × 4% = $21,487 expense; premium amortized $3,513. Year 1 interest expense =
+    $21,622 + $21,487 = $43,109.'
+- stem: On January 1, Year 1, Bramwell Corp. issues $2,000,000 of eight-year, 7% bonds that pay interest
+    each June 30 and December 31, for $2,125,611, a price that yields 6% compounded semiannually. Bramwell
+    uses the effective interest method and rounds to the nearest dollar at each step. What is Bramwell's
+    interest expense on the bonds for Year 1?
+  choices:
+  - id: A
+    text: $124,299
+    rationale: Amortizes the premium straight-line ($15,701 a year). The effective interest method is
+      required unless the difference is immaterial.
+  - id: B
+    text: $127,349
+    rationale: 'Correct. June 30: $2,125,611 × 3% = $63,768; the carrying amount falls to $2,119,379.
+      December 31: $2,119,379 × 3% = $63,581.'
+  - id: C
+    text: $127,537
+    rationale: Applies the 6% annual rate to the issue price once. Interest is compounded semiannually,
+      and the carrying amount falls after the first payment.
+  - id: D
+    text: $140,000
+    rationale: Uses the cash interest paid. A premium reduces interest expense below the stated rate.
+  answer: B
+  explanation: 'Effective interest is computed each semiannual period at 3% of the carrying amount. June
+    30: $2,125,611 × 3% = $63,768 expense; cash $70,000; premium amortized $6,232; carrying amount $2,119,379.
+    December 31: $2,119,379 × 3% = $63,581 expense; premium amortized $6,419. Year 1 interest expense
+    = $63,768 + $63,581 = $127,349.'
+- stem: On January 1, Year 1, Castor Corp. issues $800,000 of six-year, 9% bonds that pay interest each
+    June 30 and December 31, for $877,307, a price that yields 7% compounded semiannually. Castor uses
+    the effective interest method and rounds to the nearest dollar at each step. What is Castor's interest
+    expense on the bonds for Year 1?
+  choices:
+  - id: A
+    text: $61,226
+    rationale: 'Correct. June 30: $877,307 × 3.5% = $30,706; the carrying amount falls to $872,013. December
+      31: $872,013 × 3.5% = $30,520.'
+  - id: B
+    text: $61,411
+    rationale: Applies the 7% annual rate to the issue price once. Interest is compounded semiannually,
+      and the carrying amount falls after the first payment.
+  - id: C
+    text: $72,000
+    rationale: Uses the cash interest paid. A premium reduces interest expense below the stated rate.
+  - id: D
+    text: $78,958
+    rationale: Applies the 9% stated rate to the carrying amount instead of the 7% yield. Interest expense
+      uses the market rate at issuance.
+  answer: A
+  explanation: 'Effective interest is computed each semiannual period at 3.5% of the carrying amount.
+    June 30: $877,307 × 3.5% = $30,706 expense; cash $36,000; premium amortized $5,294; carrying amount
+    $872,013. December 31: $872,013 × 3.5% = $30,520 expense; premium amortized $5,480. Year 1 interest
+    expense = $30,706 + $30,520 = $61,226.'

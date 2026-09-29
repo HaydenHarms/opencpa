@@ -35,3 +35,79 @@ answer: A
 explanation: 'Convert to base-year cost: Year 2 $264,000 ÷ 1.10 = $240,000 (a $40,000 layer at 1.10 =
   $44,000; LIFO inventory $244,000). Year 3 $286,000 ÷ 1.30 = $220,000, a $20,000 decrease that liquidates
   half of the Year 2 layer. Year 3 LIFO inventory = $200,000 × 1.00 + $20,000 × 1.10 = $222,000.'
+variants:
+- stem: Ellison Co. adopted dollar-value LIFO at the end of Year 1, when its inventory was $300,000 and
+    the price index was 1.00. Inventory at current year-end cost was $450,000 at the end of Year 2 (index
+    1.25) and $476,000 at the end of Year 3 (index 1.40). What is Ellison's dollar-value LIFO inventory
+    at the end of Year 3?
+  choices:
+  - id: A
+    text: $340,000
+    rationale: Stops at base-year cost ($340,000) without pricing the remaining Year 2 layer at its 1.25
+      index.
+  - id: B
+    text: $350,000
+    rationale: 'Correct. Base-year cost $340,000: the $300,000 base layer plus $40,000 left of the Year
+      2 layer, priced at 1.25 ($50,000).'
+  - id: C
+    text: $356,000
+    rationale: Prices the remaining Year 2 layer at the Year 3 index (1.40). A layer keeps the index of
+      the year it was added.
+  - id: D
+    text: $375,000
+    rationale: Keeps the whole Year 2 layer. Year 3 base-year cost fell to $340,000, so $20,000 of the
+      $60,000 Year 2 layer was liquidated.
+  answer: B
+  explanation: 'Convert to base-year cost: Year 2 $450,000 ÷ 1.25 = $360,000 (a $60,000 layer at 1.25
+    = $75,000; LIFO inventory $375,000). Year 3 $476,000 ÷ 1.40 = $340,000, a $20,000 decrease that liquidates
+    $20,000 of the $60,000 Year 2 layer. Year 3 LIFO inventory = $300,000 × 1.00 + $40,000 × 1.25 = $350,000.'
+- stem: Fairfax Co. adopted dollar-value LIFO at the end of Year 1, when its inventory was $150,000 and
+    the price index was 1.00. Inventory at current year-end cost was $194,400 at the end of Year 2 (index
+    1.08) and $204,000 at the end of Year 3 (index 1.20). What is Fairfax's dollar-value LIFO inventory
+    at the end of Year 3?
+  choices:
+  - id: A
+    text: $171,600
+    rationale: 'Correct. Base-year cost $170,000: the $150,000 base layer plus $20,000 left of the Year
+      2 layer, priced at 1.08 ($21,600).'
+  - id: B
+    text: $174,000
+    rationale: Prices the remaining Year 2 layer at the Year 3 index (1.20). A layer keeps the index of
+      the year it was added.
+  - id: C
+    text: $182,400
+    rationale: Keeps the whole Year 2 layer. Year 3 base-year cost fell to $170,000, so $10,000 of the
+      $30,000 Year 2 layer was liquidated.
+  - id: D
+    text: $204,000
+    rationale: Reports current cost. Dollar-value LIFO restates inventory to base-year cost and prices
+      each layer at its own index.
+  answer: A
+  explanation: 'Convert to base-year cost: Year 2 $194,400 ÷ 1.08 = $180,000 (a $30,000 layer at 1.08
+    = $32,400; LIFO inventory $182,400). Year 3 $204,000 ÷ 1.20 = $170,000, a $10,000 decrease that liquidates
+    $10,000 of the $30,000 Year 2 layer. Year 3 LIFO inventory = $150,000 × 1.00 + $20,000 × 1.08 = $171,600.'
+- stem: Garland Co. adopted dollar-value LIFO at the end of Year 1, when its inventory was $400,000 and
+    the price index was 1.00. Inventory at current year-end cost was $552,000 at the end of Year 2 (index
+    1.15) and $616,000 at the end of Year 3 (index 1.40). What is Garland's dollar-value LIFO inventory
+    at the end of Year 3?
+  choices:
+  - id: A
+    text: $440,000
+    rationale: Stops at base-year cost ($440,000) without pricing the remaining Year 2 layer at its 1.15
+      index.
+  - id: B
+    text: $446,000
+    rationale: 'Correct. Base-year cost $440,000: the $400,000 base layer plus $40,000 left of the Year
+      2 layer, priced at 1.15 ($46,000).'
+  - id: C
+    text: $456,000
+    rationale: Prices the remaining Year 2 layer at the Year 3 index (1.40). A layer keeps the index of
+      the year it was added.
+  - id: D
+    text: $492,000
+    rationale: Keeps the whole Year 2 layer. Year 3 base-year cost fell to $440,000, so $40,000 of the
+      $80,000 Year 2 layer was liquidated.
+  answer: B
+  explanation: 'Convert to base-year cost: Year 2 $552,000 ÷ 1.15 = $480,000 (an $80,000 layer at 1.15
+    = $92,000; LIFO inventory $492,000). Year 3 $616,000 ÷ 1.40 = $440,000, a $40,000 decrease that liquidates
+    half of the Year 2 layer. Year 3 LIFO inventory = $400,000 × 1.00 + $40,000 × 1.15 = $446,000.'

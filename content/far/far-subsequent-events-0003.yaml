@@ -38,3 +38,83 @@ explanation: 'The January sale shows that obsolescence existing at year-end had 
   net realizable value to $70,000, so a $20,000 write-down is recognized in Year 1. A stock split after
   year-end but before issuance is applied retroactively to EPS: 400,000 shares. The February 10 acquisition
   agreement is disclosed only. Basic EPS = ($600,000 − $20,000) ÷ 400,000 = $1.45.'
+variants:
+- stem: Ridgeway Co.'s December 31, Year 1, statements will be issued on March 1, Year 2. Before any subsequent-event
+    adjustments, Year 1 net income is $900,000 and weighted-average common shares outstanding are 300,000;
+    Ridgeway has no preferred stock. On January 20, Ridgeway sold inventory carried at $150,000 for $105,000
+    because the goods had become obsolete during Year 1. On February 1, it effected a 3-for-1 stock split.
+    On February 10, it agreed to acquire a competitor. Ignore income taxes. What basic earnings per share
+    should Ridgeway report for Year 1?
+  choices:
+  - id: A
+    text: $0.83
+    rationale: Writes off the inventory's whole $150,000 carrying amount. It sold for $105,000, so only
+      the $45,000 shortfall is a loss.
+  - id: B
+    text: $0.95
+    rationale: Correct. ($900,000 − $45,000 write-down) ÷ 900,000 shares, restated for the split.
+  - id: C
+    text: $1.00
+    rationale: Restates shares for the split but does not recognize the $45,000 write-down, which gives
+      evidence of the inventory's value at year-end.
+  - id: D
+    text: $2.85
+    rationale: Recognizes the write-down but does not restate shares for the split. A split before the
+      statements are issued is reflected retroactively in EPS.
+  answer: B
+  explanation: 'The January sale shows that obsolescence existing at year-end had reduced the inventory''s
+    net realizable value to $105,000, so a $45,000 write-down is recognized in Year 1. A stock split after
+    year-end but before issuance is applied retroactively to EPS: 900,000 shares. The February 10 acquisition
+    agreement is disclosed only. Basic EPS = ($900,000 − $45,000) ÷ 900,000 = $0.95.'
+- stem: Selden Co.'s December 31, Year 1, statements will be issued on March 1, Year 2. Before any subsequent-event
+    adjustments, Year 1 net income is $480,000 and weighted-average common shares outstanding are 120,000;
+    Selden has no preferred stock. On January 20, Selden sold inventory carried at $60,000 for $36,000
+    because the goods had become obsolete during Year 1. On February 1, it effected a 2-for-1 stock split.
+    On February 10, it agreed to acquire a competitor. Ignore income taxes. What basic earnings per share
+    should Selden report for Year 1?
+  choices:
+  - id: A
+    text: $1.90
+    rationale: Correct. ($480,000 − $24,000 write-down) ÷ 240,000 shares, restated for the split.
+  - id: B
+    text: $2.00
+    rationale: Restates shares for the split but does not recognize the $24,000 write-down, which gives
+      evidence of the inventory's value at year-end.
+  - id: C
+    text: $3.80
+    rationale: Recognizes the write-down but does not restate shares for the split. A split before the
+      statements are issued is reflected retroactively in EPS.
+  - id: D
+    text: $4.00
+    rationale: Makes neither adjustment.
+  answer: A
+  explanation: 'The January sale shows that obsolescence existing at year-end had reduced the inventory''s
+    net realizable value to $36,000, so a $24,000 write-down is recognized in Year 1. A stock split after
+    year-end but before issuance is applied retroactively to EPS: 240,000 shares. The February 10 acquisition
+    agreement is disclosed only. Basic EPS = ($480,000 − $24,000) ÷ 240,000 = $1.90.'
+- stem: Tamworth Co.'s December 31, Year 1, statements will be issued on March 1, Year 2. Before any subsequent-event
+    adjustments, Year 1 net income is $1,250,000 and weighted-average common shares outstanding are 500,000;
+    Tamworth has no preferred stock. On January 20, Tamworth sold inventory carried at $200,000 for $130,000
+    because the goods had become obsolete during Year 1. On February 1, it effected a 2-for-1 stock split.
+    On February 10, it agreed to acquire a competitor. Ignore income taxes. What basic earnings per share
+    should Tamworth report for Year 1?
+  choices:
+  - id: A
+    text: $1.05
+    rationale: Writes off the inventory's whole $200,000 carrying amount. It sold for $130,000, so only
+      the $70,000 shortfall is a loss.
+  - id: B
+    text: $1.18
+    rationale: Correct. ($1,250,000 − $70,000 write-down) ÷ 1,000,000 shares, restated for the split.
+  - id: C
+    text: $1.25
+    rationale: Restates shares for the split but does not recognize the $70,000 write-down, which gives
+      evidence of the inventory's value at year-end.
+  - id: D
+    text: $2.50
+    rationale: Makes neither adjustment.
+  answer: B
+  explanation: 'The January sale shows that obsolescence existing at year-end had reduced the inventory''s
+    net realizable value to $130,000, so a $70,000 write-down is recognized in Year 1. A stock split after
+    year-end but before issuance is applied retroactively to EPS: 1,000,000 shares. The February 10 acquisition
+    agreement is disclosed only. Basic EPS = ($1,250,000 − $70,000) ÷ 1,000,000 = $1.18.'
