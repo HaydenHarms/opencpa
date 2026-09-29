@@ -186,3 +186,115 @@ body {
   background: var(--accent);
   border-radius: 3px;
 }
+
+/* Simulations */
+.sim-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.sim-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--fg);
+  text-decoration: none;
+}
+.sim-body {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 1000px) {
+  .shell:has(.sim) {
+    max-width: 1200px;
+  }
+  .sim-body {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  .sim-exhibits {
+    position: sticky;
+    top: 16px;
+  }
+}
+.sim-exhibits {
+  overflow-x: auto;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 12px 0;
+  color: var(--muted);
+}
+.field input,
+.je-grid input,
+.je-grid select {
+  font: inherit;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 10px;
+  width: 100%;
+}
+.je {
+  overflow-x: auto;
+}
+.je-grid,
+.exhibit-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 8px 0;
+}
+.je-grid th,
+.je-grid td,
+.exhibit-table th,
+.exhibit-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 6px 8px;
+  text-align: left;
+}
+.je-grid td:nth-child(2),
+.je-grid td:nth-child(3),
+.exhibit-table td:not(:first-child) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.je-grid td:first-child {
+  min-width: 180px;
+}
+.je-grid td:nth-child(2),
+.je-grid td:nth-child(3) {
+  min-width: 110px;
+}
+.je-grid tfoot td {
+  font-weight: 600;
+}
+.link {
+  background: none;
+  border: 0;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  padding: 4px 0;
+}
+.link:disabled {
+  color: var(--muted);
+  cursor: default;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.warn {
+  color: var(--wrong);
+  font-size: 14px;
+}
+.task-result {
+  border-top: 1px solid var(--line);
+  margin-top: 16px;
+  padding-top: 8px;
+}

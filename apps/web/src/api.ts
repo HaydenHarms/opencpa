@@ -1,4 +1,4 @@
-import type { PublicMcq } from '@opencpa/schema';
+import type { JournalLine, PublicMcq, PublicTbs } from '@opencpa/schema';
 
 const BASE = import.meta.env.VITE_API_URL ?? '/api';
 
@@ -41,6 +41,29 @@ export interface Mastery {
   score: number;
 }
 
+/** What the student submits for one simulation task. Journal amounts are whole cents. */
+export type TaskResponse =
+  | { type: 'numeric'; value: number }
+  | { type: 'journal_entry'; lines: { account: string; debit?: number; credit?: number }[] }
+  | { type: 'research'; citation: string };
+
+export interface TaskResult {
+  id: string;
+  earned: number;
+  possible: number;
+  correct: boolean;
+  answer: number | string[] | JournalLine[];
+  explanation: string;
+}
+
+export interface SimulationResult {
+  earned: number;
+  possible: number;
+  correct: boolean;
+  tasks: TaskResult[];
+  nextDue: string;
+}
+
 export const api = {
   questions: (section?: string) =>
     call<PublicMcq[]>(`/questions${section ? `?section=${section}` : ''}`),
@@ -50,6 +73,14 @@ export const api = {
       body: JSON.stringify({ itemId, selected, durationMs }),
     }),
   mastery: () => call<Mastery[]>('/me/mastery'),
+  simulations: (section?: string) =>
+    call<PublicTbs[]>(`/simulations${section ? `?section=${section}` : ''}`),
+  simulation: (id: string) => call<PublicTbs>(`/simulations/${encodeURIComponent(id)}`),
+  submitSimulation: (id: string, responses: Record<string, TaskResponse>, durationMs: number) =>
+    call<SimulationResult>(`/me/simulations/${encodeURIComponent(id)}/attempts`, {
+      method: 'POST',
+      body: JSON.stringify({ responses, durationMs }),
+    }),
 };
 
 export const SECTIONS = ['FAR', 'AUD', 'REG', 'BAR', 'ISC', 'TCP'] as const;
