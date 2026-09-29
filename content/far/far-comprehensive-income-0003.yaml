@@ -1,0 +1,33 @@
+id: far-comprehensive-income-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of comprehensive income
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 220-10 (items of other comprehensive income)
+  - ASC 321-10 (equity securities, after ASU 2016-01)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Which of the following is reported in other comprehensive income?
+choices:
+- id: A
+  text: An unrealized holding gain on available-for-sale debt securities
+  rationale: Correct. Unrealized holding gains and losses on AFS debt securities are reported in other
+    comprehensive income.
+- id: B
+  text: An unrealized gain on equity securities that have a readily determinable fair value
+  rationale: Since ASU 2016-01, changes in the fair value of equity securities are reported in net income.
+- id: C
+  text: A gain from remeasuring a payable denominated in a foreign currency
+  rationale: A foreign currency transaction gain is reported in net income.
+- id: D
+  text: An unrealized gain on debt securities classified as trading securities
+  rationale: Changes in the fair value of trading securities are reported in net income.
+answer: A
+explanation: Other comprehensive income includes unrealized holding gains and losses on available-for-sale
+  debt securities, foreign currency translation adjustments, certain pension and postretirement amounts,
+  and effective portions of cash flow hedges. Fair value changes on equity securities and trading securities,
+  and foreign currency transaction gains and losses, go to net income.

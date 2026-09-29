@@ -1,0 +1,37 @@
+id: far-revenue-contract-modification-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 606-10 (contract modifications)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Reed Co. contracts to deliver 120 identical units to a customer over six months for $100 per unit,
+  each unit a distinct performance obligation. After 50 units are delivered, the parties modify the contract
+  to add 30 more units at $80 each; Reed's standalone selling price for the units is $95 at that time,
+  and the discount does not reflect any cost savings or other reason tied to the added units. What revenue
+  per unit should Reed recognize for each of the 100 units delivered after the modification?
+choices:
+- id: A
+  text: $80
+  rationale: Uses the price of the added units for all remaining units.
+- id: B
+  text: $94
+  rationale: 'Correct. The modification is accounted for prospectively: (70 × $100 + 30 × $80) ÷ 100 units.'
+- id: C
+  text: $96
+  rationale: Applies a cumulative catch-up by blending all 150 units, including the 50 already delivered.
+    When the remaining goods are distinct, the modification is prospective.
+- id: D
+  text: $100
+  rationale: Keeps $100 for the original units and treats the added units as a separate contract. That
+    applies only when the added units are priced at their standalone selling price.
+answer: B
+explanation: 'The added units are distinct but not priced at standalone selling price, so the modification
+  is not a separate contract. Because the remaining units are distinct from those already delivered, Reed
+  treats it as terminating the old contract and creating a new one: the remaining consideration (70 ×
+  $100 + 30 × $80 = $9,400) is allocated to the 100 remaining units, $94 each.'

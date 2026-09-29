@@ -1,0 +1,34 @@
+id: far-troubled-debt-restructuring-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 470-60 (troubled debt restructurings by debtors)
+  - ASU 2022-02 (eliminated TDR accounting for creditors only)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Under ASC 470-60, when does a debtor account for a change in the terms of its debt as a troubled
+  debt restructuring?
+choices:
+- id: A
+  text: When the present value of the new cash flows differs by at least 10% from the old cash flows
+  rationale: That is the test for modification versus extinguishment, applied when the change is not a
+    troubled debt restructuring.
+- id: B
+  text: When the creditor grants a concession, whether or not the debtor is in financial difficulty
+  rationale: A concession to a debtor that is not in financial difficulty is not a troubled debt restructuring.
+- id: C
+  text: When the debtor is experiencing financial difficulty and the creditor grants a concession
+  rationale: Correct. Both conditions are required.
+- id: D
+  text: When the debtor is experiencing financial difficulty, whether or not the creditor grants a concession
+  rationale: Financial difficulty alone is not enough; the creditor must grant a concession.
+answer: C
+explanation: A restructuring is troubled for the debtor when the debtor is experiencing financial difficulties
+  and the creditor, for economic or legal reasons related to those difficulties, grants a concession it
+  would not otherwise consider. ASU 2022-02 removed TDR accounting for creditors, but ASC 470-60 still
+  applies to debtors.

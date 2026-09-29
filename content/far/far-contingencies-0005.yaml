@@ -1,0 +1,43 @@
+id: far-contingencies-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 450-20 (loss contingencies, including unasserted claims)
+  - ASC 450-30 (gain contingencies)
+  - ASC 210-20 (offsetting; insurance recoveries presented gross)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Quenby Co. is preparing its December 31 statements, which have not been issued. Counsel''s letter
+  and other files show: (1) a customer sued Quenby in November over a defective product; counsel expects
+  Quenby to lose and estimates damages of $200,000, and Quenby''s insurer has confirmed in writing that
+  it will reimburse $150,000 of any damages; (2) an employee was injured in a December accident at Quenby''s
+  plant; no claim has been filed yet, but counsel expects one and expects Quenby to pay about $30,000;
+  and (3) Quenby is suing a competitor for patent infringement and counsel expects an award of about $80,000.
+  What total liabilities should Quenby report for these matters?'
+choices:
+- id: A
+  text: $50,000
+  rationale: Nets the insurance recovery against the lawsuit liability and omits the unasserted claim.
+- id: B
+  text: $80,000
+  rationale: Nets the $150,000 insurance recovery against the $200,000 liability. The liability and the
+    recovery receivable are reported separately.
+- id: C
+  text: $200,000
+  rationale: Omits the $30,000 unasserted claim. An unasserted claim is accrued when assertion is probable
+    and a loss is probable and estimable.
+- id: D
+  text: $230,000
+  rationale: Correct. The $200,000 lawsuit liability, reported gross, plus the $30,000 expected claim;
+    the insurance recovery is a separate receivable.
+answer: D
+explanation: '(1) The loss is probable and estimable, so Quenby accrues $200,000; the confirmed insurance
+  reimbursement is recognized as a separate $150,000 receivable, not netted against the liability. (2)
+  An unasserted claim is accrued when it is probable a claim will be asserted and probable that the outcome
+  will be unfavorable: $30,000. (3) The expected award is a gain contingency, not recognized. Liabilities
+  = $230,000.'

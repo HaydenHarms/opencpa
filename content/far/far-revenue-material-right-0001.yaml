@@ -1,0 +1,38 @@
+id: far-revenue-material-right-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 606-10 (customer options for additional goods or services: material rights)'
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Stark Co. sells a product for $1,000, its standalone selling price, and gives the customer a voucher
+  for 40% off any future purchase of up to $500 within a year. Stark offers no similar discount to other
+  customers. It expects 80% of vouchers to be redeemed, on purchases averaging $500. How much revenue
+  should Stark recognize when it delivers the product?
+choices:
+- id: A
+  text: $800
+  rationale: Subtracts the full $200 voucher value (40% × $500) without allocating the price or adjusting
+    for expected redemptions.
+- id: B
+  text: $840
+  rationale: Subtracts the voucher's $160 standalone selling price directly. The $1,000 price is allocated
+    between the product and the voucher by relative standalone selling price.
+- id: C
+  text: $862
+  rationale: Correct. Voucher standalone selling price = $500 × 40% × 80% = $160; product revenue = $1,000
+    × $1,000 ÷ $1,160.
+- id: D
+  text: $1,000
+  rationale: Ignores the voucher. A discount not available to other customers is a material right, a separate
+    performance obligation.
+answer: C
+explanation: 'The voucher gives a material right because the discount is not offered to other customers,
+  so it is a separate performance obligation. Its standalone selling price reflects the discount and the
+  likelihood of redemption: $500 × 40% × 80% = $160. Allocating the $1,000 price: product $1,000 × 1,000
+  ÷ 1,160 = $862; voucher $138, recognized when redeemed or when it expires.'

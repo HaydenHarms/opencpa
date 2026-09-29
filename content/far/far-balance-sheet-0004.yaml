@@ -1,0 +1,38 @@
+id: far-balance-sheet-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Balance sheet
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 210-10 (current liabilities)
+  - ASC 740-10 (deferred taxes classified as noncurrent, after ASU 2015-17)
+  - ASC 842-20 (lessee presentation)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Dale Co.''s draft December 31, Year 1, classified balance sheet reports total noncurrent liabilities
+  of $2,100,000: bonds payable $1,500,000, operating lease liabilities $400,000, deferred tax liability
+  $150,000, and warranty liability $50,000. Supporting schedules show that $300,000 of the bonds mature
+  on June 30, Year 2; that $60,000 of the lease liability will be paid during Year 2; and that the warranty
+  claims are all expected to be paid during Year 2. After correcting the draft, what are Dale''s total
+  noncurrent liabilities?'
+choices:
+- id: A
+  text: $1,540,000
+  rationale: Also moves the $150,000 deferred tax liability to current. Deferred taxes are always classified
+    as noncurrent.
+- id: B
+  text: $1,690,000
+  rationale: Correct. $1,200,000 of bonds + $340,000 of lease liability + $150,000 deferred tax liability.
+- id: C
+  text: $1,750,000
+  rationale: Leaves the $60,000 current portion of the lease liability in noncurrent.
+- id: D
+  text: $1,990,000
+  rationale: Leaves the $300,000 of bonds maturing in Year 2 in noncurrent.
+answer: B
+explanation: 'Liabilities due within a year are current: the $300,000 of bonds maturing in Year 2, the
+  $60,000 of lease payments due in Year 2, and the $50,000 warranty liability. Deferred tax liabilities
+  are classified as noncurrent. Noncurrent liabilities = $1,200,000 + $340,000 + $150,000 = $1,690,000.'

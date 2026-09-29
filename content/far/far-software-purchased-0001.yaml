@@ -1,0 +1,38 @@
+id: far-software-purchased-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Intangible assets
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 350-40 (internal-use software)
+  - ASU 2025-06 (targeted improvements to internal-use software; same result here)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Hart Co. buys a perpetual license for accounting software to use internally
+  for $240,000. It also pays a consultant $60,000 to configure the software for Hart's processes, $15,000
+  to train employees, and $10,000 to convert data from its old system. The software is ready for its intended
+  use on April 1, Year 1, and Hart amortizes it straight-line over five years. What total expense related
+  to these costs should Hart recognize in Year 1?
+choices:
+- id: A
+  text: $48,750
+  rationale: Capitalizes the training and data conversion costs as well. Both are expensed as incurred.
+- id: B
+  text: $70,000
+  rationale: Correct. Capitalized cost $300,000 ÷ 5 × 9/12 = $45,000 of amortization, plus $25,000 of
+    training and data conversion.
+- id: C
+  text: $85,000
+  rationale: Amortizes from January 1. Amortization begins when the software is ready for its intended
+    use on April 1.
+- id: D
+  text: $121,000
+  rationale: Expenses the $60,000 of configuration. Costs to configure internal-use software for its intended
+    use are capitalized.
+answer: B
+explanation: 'The license ($240,000) and the configuration needed to make the software ready for use ($60,000)
+  are capitalized: $300,000. Training ($15,000) and data conversion ($10,000) are expensed. Amortization
+  starts April 1: $300,000 ÷ 5 × 9/12 = $45,000. Year 1 expense = $45,000 + $25,000 = $70,000.'

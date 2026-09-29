@@ -1,0 +1,38 @@
+id: far-equity-method-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Equity method investments)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 323-10 (equity method: becoming an equity method investor, applied prospectively after ASU 2016-07)'
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Jade Co. owns 10% of Varro Inc., carried at fair value with changes in net income; its fair value
+  on July 1, Year 1, immediately before the purchase below, is $150,000. That day Jade buys another 20%
+  of Varro for $330,000, a price that includes a premium for obtaining significant influence. Varro's
+  net income is earned evenly and totals $380,000 for Year 1 ($200,000 from July 1 to December 31), and
+  Varro pays dividends of $50,000 in December. There are no basis differences. At what amount should Jade
+  report its investment in Varro at December 31, Year 1?
+choices:
+- id: A
+  text: $465,000
+  rationale: Deducts Jade's share of the December dividend but never adds its share of Varro's income.
+- id: B
+  text: $480,000
+  rationale: Stops at the combined cost basis of $480,000 without applying the equity method from July
+    1.
+- id: C
+  text: $510,000
+  rationale: Applies only the newly purchased 20% to Varro's income and dividends. The equity method applies
+    to Jade's whole 30% interest from July 1.
+- id: D
+  text: $525,000
+  rationale: Correct. $150,000 + $330,000 + 30% × $200,000 − 30% × $50,000.
+answer: D
+explanation: 'Since ASU 2016-07, an investor that becomes eligible for the equity method adds the cost
+  of the new interest to the current basis of its existing interest and applies the equity method prospectively,
+  with no retroactive adjustment. Basis on July 1 = $150,000 + $330,000 = $480,000. Add 30% of Varro''s
+  income after July 1 ($60,000) and subtract 30% of the dividends ($15,000): $525,000.'

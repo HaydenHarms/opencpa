@@ -1,0 +1,40 @@
+id: far-nfp-statement-of-activities-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of activities (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-225 (statement of activities)
+  - ASC 958-205 (net assets released from restrictions)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'For Year 1, Cedar Clinic, a not-for-profit entity, reports: contributions without donor restrictions
+  of $500,000; contributions with donor restrictions of $100,000; program service fees of $200,000; net
+  assets released from donor restrictions of $150,000; investment return on unrestricted investments,
+  net of external investment expenses, of $20,000; and expenses of $780,000 ($600,000 for programs, $120,000
+  for management and general, and $60,000 for fundraising). What is the change in Cedar''s net assets
+  without donor restrictions for Year 1?'
+choices:
+- id: A
+  text: $60,000 decrease
+  rationale: Leaves out the $150,000 released from donor restrictions. Releases increase net assets without
+    donor restrictions.
+- id: B
+  text: $90,000 increase
+  rationale: Correct. $500,000 + $200,000 + $150,000 released + $20,000 − $780,000.
+- id: C
+  text: $190,000 increase
+  rationale: Also counts the $100,000 of restricted contributions. They increase net assets with donor
+    restrictions until released.
+- id: D
+  text: $270,000 increase
+  rationale: Subtracts only the $600,000 of program expenses. Management and general and fundraising expenses
+    also reduce net assets without donor restrictions.
+answer: B
+explanation: 'Net assets without donor restrictions increase by unrestricted contributions ($500,000),
+  program service fees ($200,000), releases from restrictions ($150,000) and net investment return ($20,000),
+  and decrease by all expenses ($780,000): a $90,000 increase. The $100,000 of restricted contributions
+  increases net assets with donor restrictions.'

@@ -1,0 +1,34 @@
+id: far-bonds-between-interest-dates-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 835-30 (interest)
+  - ASC 470-10 (debt)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On April 1, Year 1, Lamb Co. issues $1,000,000 of 10-year, 6% bonds at 102 plus accrued interest.
+  The bonds are dated January 1, Year 1, and pay interest each January 1 and July 1. How much cash does
+  Lamb receive at issuance?
+choices:
+- id: A
+  text: $1,000,000
+  rationale: Uses the face amount only. The bonds sell at 102 of face, plus accrued interest.
+- id: B
+  text: $1,005,000
+  rationale: Subtracts the accrued interest instead of adding it. Buyers pay the interest accrued since
+    the last interest date and receive a full six months' interest on July 1.
+- id: C
+  text: $1,020,000
+  rationale: Includes the 2% premium but not the three months of accrued interest.
+- id: D
+  text: $1,035,000
+  rationale: Correct. $1,000,000 × 102% + $1,000,000 × 6% × 3/12 accrued interest.
+answer: D
+explanation: Price = $1,000,000 × 1.02 = $1,020,000. Interest accrued from January 1 to April 1 = $1,000,000
+  × 6% × 3/12 = $15,000, which the buyers pay now and recover on July 1. Cash received = $1,035,000; Lamb
+  records the $15,000 as interest payable (or a reduction of interest expense).

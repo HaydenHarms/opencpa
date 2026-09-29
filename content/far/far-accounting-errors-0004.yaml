@@ -1,0 +1,38 @@
+id: far-accounting-errors-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 250-10 (correction of an error in previously issued statements)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Pollard Co. paid $36,000 for a three-year insurance policy and charged the
+  full amount to Year 1 insurance expense; Year 1 statements were issued that way. Before closing its
+  Year 2 books, Pollard discovers the error. It has recorded no insurance expense in Year 2. Pollard's
+  tax rate is 25% for all effects, and it presents single-year statements. What are the effects of correcting
+  the error?
+choices:
+- id: A
+  text: $18,000 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+  rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
+    of the policy, $12,000, belongs in Year 2.
+- id: B
+  text: $18,000 increase to January 1, Year 2, retained earnings; $9,000 decrease to Year 2 net income
+  rationale: Correct. Year 1 expense was overstated by $24,000 ($18,000 after tax); Year 2 needs $12,000
+    of expense ($9,000 after tax).
+- id: C
+  text: $24,000 increase to January 1, Year 2, retained earnings; $12,000 decrease to Year 2 net income
+  rationale: Leaves out the 25% tax effect.
+- id: D
+  text: $27,000 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+  rationale: Treats all $36,000 as overstated Year 1 expense. One year of coverage, $12,000, was a proper
+    Year 1 expense.
+answer: B
+explanation: Pollard should have expensed $12,000 a year. Year 1 expense was overstated by $24,000, so
+  Year 1 net income was understated by $18,000 after tax, and January 1, Year 2, retained earnings is
+  increased by $18,000 as a prior-period adjustment (with prepaid insurance of $24,000). Year 2 then records
+  $12,000 of insurance expense, reducing Year 2 net income by $9,000 after tax.

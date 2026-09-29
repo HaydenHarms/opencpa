@@ -1,0 +1,37 @@
+id: far-inventory-gross-profit-method-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 330-10 (inventory: estimating methods)'
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A fire on August 31 destroys most of Mosley Co.'s inventory. Records show beginning inventory of
+  $200,000, purchases of $800,000, purchase returns of $20,000, freight-in of $10,000, sales of $1,100,000,
+  and sales returns of $50,000 through that date. Mosley's gross profit rate has been 30% of net sales
+  for several years. Goods costing $15,000 were salvaged undamaged. Using the gross profit method, what
+  is Mosley's estimated inventory loss?
+choices:
+- id: A
+  text: $205,000
+  rationale: Estimates cost of goods sold from gross sales ($1,100,000). Sales returns reduce the sales
+    on which cost of goods sold is based.
+- id: B
+  text: $230,000
+  rationale: Leaves the $10,000 of freight-in out of goods available for sale. Freight-in is part of inventory
+    cost.
+- id: C
+  text: $240,000
+  rationale: Correct. Goods available $990,000 − cost of goods sold $735,000 ($1,050,000 × 70%) − $15,000
+    salvaged.
+- id: D
+  text: $255,000
+  rationale: Does not subtract the $15,000 of salvaged goods.
+answer: C
+explanation: Goods available = $200,000 + $800,000 − $20,000 + $10,000 = $990,000. Net sales = $1,100,000
+  − $50,000 = $1,050,000; estimated cost of goods sold = $1,050,000 × (1 − 30%) = $735,000. Estimated
+  inventory at the date of the fire = $255,000; less $15,000 salvaged, the loss is $240,000.

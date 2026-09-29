@@ -1,0 +1,40 @@
+id: far-nfp-gifts-in-kind-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-605 (contributions of nonfinancial assets; collections)
+  - ASU 2020-07 (presentation and disclosure of contributed nonfinancial assets)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'During Year 1, Upton Food Bank, a not-for-profit entity, receives: donated food with a fair value
+  of $40,000 to distribute; free use of a warehouse for the year, which would otherwise rent for $24,000;
+  publicly traded shares worth $15,000; and a painting worth $50,000 that it adds to a collection held
+  for public exhibition, which it protects and preserves, and whose sale proceeds would go only to new
+  collection items. Upton''s policy is not to capitalize collections. What contribution revenue should
+  Upton recognize for Year 1?'
+choices:
+- id: A
+  text: $55,000
+  rationale: Omits the donated use of the warehouse. Contributed use of facilities is recognized at fair
+    value as revenue and expense.
+- id: B
+  text: $79,000
+  rationale: Correct. $40,000 of food + $24,000 of donated facilities + $15,000 of shares.
+- id: C
+  text: $105,000
+  rationale: Recognizes the painting but omits the donated use of the warehouse. The collection item is
+    not recognized under Upton's policy, and contributed use of facilities is.
+- id: D
+  text: $129,000
+  rationale: Also recognizes the painting. An entity that does not capitalize a qualifying collection
+    does not recognize contributed collection items as revenue.
+answer: B
+explanation: 'Contributions of food, use of facilities and securities are recognized at fair value: $40,000
+  + $24,000 + $15,000 = $79,000 (contributed nonfinancial assets are presented separately under ASU 2020-07).
+  Works of art added to a collection that meets the collection criteria need not be recognized, and under
+  Upton''s policy they are not.'

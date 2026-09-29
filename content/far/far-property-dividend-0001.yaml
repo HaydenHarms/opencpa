@@ -1,0 +1,38 @@
+id: far-property-dividend-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Equity
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 845-10 (nonreciprocal transfers to owners)
+  - ASC 505-10 (dividends)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Noble Corp. declares a property dividend of a parcel of land to its shareholders. The land's carrying
+  amount is $70,000, and its fair value on the declaration date is $100,000; the fair value does not change
+  before distribution. What does Noble record for the dividend?
+choices:
+- id: A
+  text: $70,000 decrease in retained earnings; no gain
+  rationale: Records the dividend at the land's carrying amount. A nonreciprocal transfer of a nonmonetary
+    asset to owners is recorded at fair value.
+- id: B
+  text: $70,000 decrease in retained earnings; $30,000 gain
+  rationale: Recognizes the gain but charges retained earnings only the land's carrying amount. The dividend
+    is recorded at the fair value distributed.
+- id: C
+  text: $100,000 decrease in retained earnings; no gain (the difference goes to paid-in capital)
+  rationale: The difference between fair value and carrying amount is a gain on disposal of the land,
+    not paid-in capital.
+- id: D
+  text: $100,000 decrease in retained earnings; $30,000 gain
+  rationale: Correct. The land is remeasured to its $100,000 fair value, recognizing a $30,000 gain, and
+    the dividend is recorded at fair value.
+answer: D
+explanation: A property dividend is a nonreciprocal transfer to owners recorded at the fair value of the
+  asset distributed. Noble remeasures the land to $100,000, recognizing a $30,000 gain in net income,
+  and debits retained earnings for $100,000 (credit property dividends payable, later settled by distributing
+  the land).

@@ -1,0 +1,37 @@
+id: far-foreign-currency-transactions-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 830-20 (foreign currency transactions)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On November 1, Year 1, Abbott Co., whose functional currency is the U.S. dollar, buys inventory
+  from a German supplier for €100,000, payable on February 1, Year 2. Exchange rates for one euro were
+  $1.10 on November 1, $1.14 on December 31, and $1.12 on February 1, when Abbott paid the invoice. What
+  foreign currency transaction gain or loss should Abbott report in Year 1 and in Year 2?
+choices:
+- id: A
+  text: $0 in Year 1; $2,000 loss in Year 2
+  rationale: Waits until settlement and compares the payment with the original rate. The payable is remeasured
+    at each balance sheet date.
+- id: B
+  text: $4,000 gain in Year 1; $2,000 loss in Year 2
+  rationale: Reverses the signs, as if Abbott held a euro receivable. A stronger euro increases what Abbott
+    owes.
+- id: C
+  text: $4,000 loss in Year 1; $2,000 gain in Year 2
+  rationale: 'Correct. Year 1: €100,000 × ($1.14 − $1.10). Year 2: €100,000 × ($1.14 − $1.12).'
+- id: D
+  text: $4,000 loss in Year 1; $2,000 loss in Year 2
+  rationale: Measures Year 2 against the original $1.10 rate instead of the December 31 rate, counting
+    part of the Year 1 loss again.
+answer: C
+explanation: 'A payable denominated in a foreign currency is remeasured at the spot rate at each balance
+  sheet date and at settlement, with changes reported in net income. December 31: the payable rises from
+  $110,000 to $114,000, a $4,000 loss in Year 1. February 1: Abbott pays $112,000, so Year 2 has a $2,000
+  gain.'

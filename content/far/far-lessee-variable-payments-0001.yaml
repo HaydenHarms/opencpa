@@ -1,0 +1,32 @@
+id: far-lessee-variable-payments-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 842-10 (lease payments: variable payments)'
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Which of the following variable lease payments is included in a lessee's lease liability at commencement?
+choices:
+- id: A
+  text: Payments equal to a percentage of the lessee's sales in the leased store
+  rationale: Performance-based variable payments are excluded from the liability and expensed when incurred.
+- id: B
+  text: Increases in payments from expected future rises in the Consumer Price Index
+  rationale: Index-based payments are measured at the commencement-date index; expected future changes
+    are not estimated.
+- id: C
+  text: Payments based on how many hours the lessee operates the leased equipment
+  rationale: Usage-based variable payments are excluded from the liability and expensed when incurred.
+- id: D
+  text: Payments tied to the Consumer Price Index, measured at the commencement-date index
+  rationale: Correct. Variable payments that depend on an index or rate are included, measured using the
+    index or rate at commencement.
+answer: D
+explanation: Lease payments include variable payments that depend on an index or a rate, initially measured
+  using the index or rate at commencement. Later changes in the index are recognized in profit or loss
+  when incurred. Variable payments based on performance or usage are not lease payments.

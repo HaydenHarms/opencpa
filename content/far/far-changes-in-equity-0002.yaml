@@ -1,0 +1,41 @@
+id: far-changes-in-equity-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 505-20 (stock splits)
+  - ASC 505-10 (dividends declared)
+  - ASC 220-10 (accumulated other comprehensive income)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Faye Inc.'s draft Year 1 statement of changes in equity reports ending retained earnings of $980,000,
+  computed as beginning retained earnings of $800,000, plus net income of $250,000, plus a $30,000 unrealized
+  holding gain on available-for-sale debt securities, less $100,000 for a 2-for-1 stock split. Supporting
+  documents show that the split was effected by halving the par value per share, and that on December
+  15, Year 1, the board declared a $40,000 cash dividend payable on January 10, Year 2, which the draft
+  omits because it had not been paid. After correcting the draft, what is Faye's ending retained earnings?
+choices:
+- id: A
+  text: $910,000
+  rationale: Removes the unrealized gain and records the dividend but still charges retained earnings
+    for the split. A split effected by halving par value needs no entry to retained earnings.
+- id: B
+  text: $1,010,000
+  rationale: Correct. $800,000 + $250,000 − $40,000 declared dividend.
+- id: C
+  text: $1,040,000
+  rationale: Records the dividend and removes the split charge but leaves the $30,000 unrealized gain
+    in retained earnings. It belongs in accumulated other comprehensive income.
+- id: D
+  text: $1,050,000
+  rationale: Removes the split charge and the unrealized gain but omits the dividend. A dividend reduces
+    retained earnings when declared, not when paid.
+answer: B
+explanation: Three corrections. (1) The unrealized gain on AFS debt securities is other comprehensive
+  income, accumulated separately from retained earnings. (2) A stock split effected by reducing par value
+  requires no entry. (3) Dividends reduce retained earnings on the declaration date. Ending retained earnings
+  = $800,000 + $250,000 − $40,000 = $1,010,000.

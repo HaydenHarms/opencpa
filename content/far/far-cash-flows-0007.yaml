@@ -1,0 +1,39 @@
+id: far-cash-flows-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 230-10 (indirect method; classification)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Eads Co.''s staff accountant prepared this draft operating section of the statement of cash flows
+  under the indirect method: net income $300,000; depreciation $50,000; amortization of discount on bonds
+  payable $4,000; increase in deferred tax liability $12,000; gain on sale of land $(25,000); increase
+  in accounts payable $18,000; increase in inventory $22,000; proceeds from issuing common stock $100,000;
+  net cash provided by operating activities $481,000. After correcting the draft to comply with U.S. GAAP,
+  what is net cash provided by operating activities?'
+choices:
+- id: A
+  text: $337,000
+  rationale: Correct. The inventory increase is subtracted ($44,000 swing) and the stock proceeds move
+    to financing.
+- id: B
+  text: $381,000
+  rationale: Moves the stock proceeds to financing but still adds the increase in inventory. Buying more
+    inventory uses cash.
+- id: C
+  text: $437,000
+  rationale: Subtracts the inventory increase but leaves the $100,000 of stock proceeds in operating activities.
+- id: D
+  text: $481,000
+  rationale: Accepts the draft.
+answer: A
+explanation: 'Two errors. An increase in inventory is subtracted under the indirect method, not added:
+  that changes the total by $44,000. Proceeds from issuing stock are a financing inflow. The other adjustments
+  are right: depreciation, discount amortization and the deferred tax increase are noncash charges added
+  back, the gain on land is subtracted, and the payables increase is added. Corrected: $481,000 − $44,000
+  − $100,000 = $337,000.'

@@ -1,0 +1,38 @@
+id: far-income-taxes-rate-change-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (measurement at enacted rates; effect of a change in tax rates)
+  notes: Batch 05. Written from scratch; answers solved and every number and distractor computed in code.
+stem: At December 31, Year 1, Tyne Co. has a deferred tax liability of $42,000 on $200,000 of taxable
+  temporary differences, measured at the 21% enacted rate. On November 1, Year 2, legislation is enacted
+  raising Tyne's tax rate to 25% for Year 3 and later years. At December 31, Year 2, Tyne's taxable temporary
+  differences total $260,000, all reversing in Year 3 or later. What deferred income tax expense should
+  Tyne recognize for Year 2?
+choices:
+- id: A
+  text: $12,600
+  rationale: Measures the ending liability at the old 21% rate. Deferred taxes are measured at the enacted
+    rate for the years the differences reverse.
+- id: B
+  text: $15,000
+  rationale: Applies the new rate only to the $60,000 of new differences and does not remeasure the beginning
+    liability for the rate change.
+- id: C
+  text: $23,000
+  rationale: Correct. Ending liability $260,000 × 25% = $65,000, less the $42,000 beginning balance.
+- id: D
+  text: $65,000
+  rationale: Reports the ending deferred tax liability as the year's expense, ignoring the $42,000 already
+    recorded.
+answer: C
+explanation: Deferred tax liabilities are measured at the enacted rate expected to apply when the differences
+  reverse, and the effect of a rate change is recognized in income from continuing operations in the period
+  of enactment. Ending liability = $260,000 × 25% = $65,000. Deferred tax expense = $65,000 − $42,000
+  = $23,000 (including $8,000 from remeasuring the beginning differences).
