@@ -88,16 +88,39 @@ Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Sel
 
 ## Roadmap (next, in order)
 
-1. **(Hand-written in by Hayden while at work)** We need to rework the way the questions come up and the algorithm determines what the user needs to work on. Right now, any time you click off of the practice tab, it resets all progress and it runs in the same order of questions every time. To fix this, I think the best way to do this is to run practice in "sessions", maybe we could have the user select the amount of questions they want to do. This way we could save progress based on batches of work sessions rather than having to try to keep up with where a user is at all times. I also want the questions for each exam to show up semi-randomly. What I mean is instead of having the exact same order, in each session you have a mix of subjects, but then from those subjects you are given the questions that you need to study more, and if there is no data on that, pull from the subject randomly rather than the same ones every time.
-- I realize now something else that we never pulled from the old question bank, changing variables. In the old tool, any time you would see a question, the numbers would rotate between 4 different variants of question so that you couldn't memorize the answer as easily after seeing it multiple times.
-1. **Simulations:** run the review gate on the three live simulations, react to Hayden's feedback on the UI, then write the next simulation batch.
-2. **FAR batch 06** (gaps in `docs/reviews/far-batch-05.md`: fund determination, NFP statement of financial position, NFP cash flows and notes, amortized-cost investments, debt covenants; go light on revenue). About three Remembering and Understanding items at most.
-3. Let's not work on BAR yet, let's fully finish FAR before working on BAR. The other sections: BAR batch 02 (gaps in `docs/reviews/bar-batch-01.md`; lean toward Area I and II Analysis to bring Application back under 55%), then AUD/REG and the disciplines. BAR targets: Area I 40–50%, II 35–45%, III 10–20%; Remembering and Understanding 10–20%, Application 45–55%, Analysis 30–40%.
-4. Accounts (GitHub OAuth / email magic link), migrating anonymous progress to the account.
-5. I would like to also add a diagnostic quiz at the outset so that the algorithm has something to work off of.
-5. Claude tutor at `POST /me/tutor` (currently a 501 stub), using the student's own API key. Give it tools for the current item, recent misses and generating a variant. **Is there a way to directly connect Claude to use billing usage rather than API token billing? We need to find a way to do that so that it's easier to use.**
-6. Before any publicity: rate limiting, a UI redesign (the current UI is intentionally plain; Hayden wants it less bland) and a custom domain.
-7. Exam-day mode.
+Hayden's direction (2026-09-29): finish FAR completely before any more BAR, AUD, REG or discipline content, and fix how practice works before adding more questions.
+
+1. **Practice sessions and adaptive question selection.** Today the Practice page serves every item in the same fixed order and loses its place whenever the student leaves the tab.
+   - **Sessions:** the student picks a section and a length (for example 10, 25 or 50 questions). The server builds the session, stores it in D1, and saves progress after every answer, so leaving the page and coming back resumes where the student was. A finished session shows a summary (score, by area and topic).
+   - **Selection:** each session mixes topics across the section's blueprint areas, roughly in proportion to the blueprint weights. Within a topic, pick items the student needs most: FSRS items that are due first, then the weakest topics by mastery, then unseen items chosen at random (never the same fixed order). Keep the rule in `packages/engine` with tests.
+   - **Diagnostic:** a student's first session in a section is a short diagnostic (about 20 questions, spread evenly across topics), so the selection has data to work from.
+2. **Claude tutor.** It explains; it never grades.
+   - Hayden asked whether students could use their Claude subscription instead of API billing. **No:** Anthropic's terms allow Claude Free, Pro and Max sign-ins only in Claude's own apps (claude.ai, Claude Desktop, Claude Code), so a third-party app can't bill a student's subscription.
+   - So ship two paths. (a) **"Ask Claude"**, which needs no key: a button that copies a ready-made prompt (the question, and after an attempt the student's choice and the explanation) and opens Claude, so the student uses their own subscription in Claude's app. Claude Desktop supports prefilled links (`claude://claude.ai/new?q=...`); on the web, copy the prompt and open claude.ai. (b) **In-app tutor** at `POST /me/tutor`, using the student's own API key: the key is stored only in the browser, and the Worker passes it through to Anthropic and never stores or logs it.
+   - Before an attempt, the tutor sees only the public item and gives hints, never the answer. After an attempt, it also sees the key, the rationales and the student's choice. Later additions: recent misses, generate a similar problem.
+   - Check the Worker stays inside the free plan's CPU limit while it streams.
+3. **Question variants.** The legacy tool rotated the numbers across four versions of each question so students couldn't memorize answers.
+   - Add optional `variants` to the MCQ schema: each variant has its own stem, choices, answer, rationales and explanation. Word-answer items don't need variants.
+   - Progress stays keyed to the item id. The API serves a different variant on each attempt and records which one it served.
+   - The batch scripts already compute every number in code, so they generate the variants too. Every variant goes through `audit()` and the blind verifier.
+   - New FAR batches ship with variants. Retrofit the existing numeric FAR items in batches.
+4. **Finish FAR.** "Done" means all of the following:
+   - every representative task in the 2026 FAR blueprint has at least two reviewed MCQs;
+   - numeric items carry variants;
+   - there are about 10 or more simulations across all three areas, each through the review gate;
+   - the bank's skill and area mix is inside the blueprint ranges.
+
+   In order:
+   - Run the review gate on the three live simulations and act on Hayden's UI feedback.
+   - Write **FAR batch 06**, covering the gaps named in `docs/reviews/far-batch-05.md`: fund determination, the NFP statement of financial position, NFP cash flows and notes, amortized-cost investments and debt covenants. Go light on revenue, with about three Remembering and Understanding items at most.
+   - Write further batches until every blueprint task is covered.
+   - Write the next simulation batches.
+5. **Other sections, after FAR is done.**
+   - BAR batch 02 comes first. Its gaps are in `docs/reviews/bar-batch-01.md`; lean toward Area I and II Analysis items to bring Application back under 55%. BAR targets: Area I 40–50%, II 35–45%, III 10–20%; Remembering and Understanding 10–20%, Application 45–55%, Analysis 30–40%.
+   - Then AUD and REG, then the disciplines.
+6. **Accounts** (GitHub OAuth or email magic link), moving a student's anonymous progress into their account.
+7. **Before any publicity:** rate limiting, a UI redesign (the current UI is intentionally plain, and Hayden wants it less bland) and a custom domain.
+8. Exam-day mode.
 
 ## Working with Hayden
 
