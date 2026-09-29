@@ -1,7 +1,13 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import type { JournalLine, PublicTbs, PublicTbsTask } from '@opencpa/schema';
-import { api, type SimulationResult, type TaskResponse, type TaskResult } from '../api';
+import {
+  api,
+  type SimulationResult,
+  type SimulationReveal,
+  type TaskResponse,
+  type TaskResult,
+} from '../api';
 
 type JeRow = { account: string; debit: string; credit: string };
 type Draft = { numeric: string; lines: JeRow[]; citation: string };
@@ -64,11 +70,19 @@ function Exhibit({ body }: { body: string }) {
           return (
             <table key={i} className="exhibit-table">
               <thead>
-                <tr>{head?.map((c, j) => <th key={j}>{c}</th>)}</tr>
+                <tr>
+                  {head?.map((c, j) => (
+                    <th key={j}>{c}</th>
+                  ))}
+                </tr>
               </thead>
               <tbody>
                 {rest.map((r, k) => (
-                  <tr key={k}>{r.map((c, j) => <td key={j}>{c}</td>)}</tr>
+                  <tr key={k}>
+                    {r.map((c, j) => (
+                      <td key={j}>{c}</td>
+                    ))}
+                  </tr>
                 ))}
               </tbody>
             </table>
@@ -170,7 +184,9 @@ function JournalGrid({
         </button>
       )}
       {dr !== cr && (dr > 0 || cr > 0) && (
-        <p className="warn">Debits and credits don’t balance yet ({dollars(Math.abs(dr - cr))} off).</p>
+        <p className="warn">
+          Debits and credits don’t balance yet ({dollars(Math.abs(dr - cr))} off).
+        </p>
       )}
     </div>
   );
@@ -198,34 +214,79 @@ function Answer({ task, result }: { task: PublicTbsTask; result: TaskResult }) {
   return <p>{task.unit === 'cents' ? dollars(n) : task.unit === 'percent' ? `${n}%` : n}</p>;
 }
 
+/** Rebuild the input drafts from a submitted response, to show a finished simulation again. */
+function draftFrom(task: PublicTbsTask, r: TaskResponse | undefined): Draft {
+  const d = emptyDraft();
+  const amount = (cents: number | undefined) => (cents ? String(cents / 100) : '');
+  if (r?.type === 'numeric')
+    d.numeric = String(task.type === 'numeric' && task.unit === 'cents' ? r.value / 100 : r.value);
+  if (r?.type === 'journal_entry')
+    d.lines = r.lines.map((l) => ({
+      account: l.account,
+      debit: amount(l.debit),
+      credit: amount(l.credit),
+    }));
+  if (r?.type === 'research') d.citation = r.citation;
+  return d;
+}
+
+/** The standalone simulation page, reached from the Simulations list. */
 export default function Simulation() {
   const { id = '' } = useParams();
   const [sim, setSim] = useState<PublicTbs | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [current, setCurrent] = useState(0);
-  const [exhibit, setExhibit] = useState(0);
-  const [drafts, setDrafts] = useState<Record<string, Draft>>({});
-  const [result, setResult] = useState<SimulationResult | null>(null);
-  const [submitting, setSubmitting] = useState(false);
-  const started = useRef(Date.now());
 
   useEffect(() => {
-    api.simulation(id).then(
-      (s) => {
-        setSim(s);
-        setDrafts(Object.fromEntries(s.tasks.map((t) => [t.id, emptyDraft()])));
-        started.current = Date.now();
-      },
-      (e: Error) => setError(e.message),
-    );
+    api.simulation(id).then(setSim, (e: Error) => setError(e.message));
   }, [id]);
 
   if (error) return <p className="error">Couldn’t load this simulation: {error}</p>;
   if (!sim) return <p className="muted">Loading…</p>;
+  return (
+    <SimulationPlayer
+      key={sim.id}
+      sim={sim}
+      crumb={
+        <>
+          <Link to="/simulations">Simulations</Link> · {sim.blueprint.section} ·{' '}
+          {sim.blueprint.topic}
+        </>
+      }
+    />
+  );
+}
+
+/**
+ * Work through and submit one simulation. Inside a practice session it is given the
+ * session id, and the previous result when the student comes back to a finished one.
+ */
+export function SimulationPlayer({
+  sim,
+  crumb,
+  sessionId,
+  previous,
+  onSubmitted,
+}: {
+  sim: PublicTbs;
+  crumb: ReactNode;
+  sessionId?: string;
+  previous?: SimulationReveal;
+  onSubmitted?: (r: SimulationResult) => void;
+}) {
+  const [error, setError] = useState<string | null>(null);
+  const [current, setCurrent] = useState(0);
+  const [exhibit, setExhibit] = useState(0);
+  const [drafts, setDrafts] = useState<Record<string, Draft>>(() =>
+    Object.fromEntries(sim.tasks.map((t) => [t.id, draftFrom(t, previous?.responses[t.id])])),
+  );
+  const [result, setResult] = useState<SimulationReveal | null>(previous ?? null);
+  const [submitting, setSubmitting] = useState(false);
+  const started = useRef(Date.now());
 
   const task = sim.tasks[current]!;
   const draft = drafts[task.id] ?? emptyDraft();
-  const update = (patch: Partial<Draft>) => setDrafts({ ...drafts, [task.id]: { ...draft, ...patch } });
+  const update = (patch: Partial<Draft>) =>
+    setDrafts({ ...drafts, [task.id]: { ...draft, ...patch } });
   const taskResult = result?.tasks.find((t) => t.id === task.id);
   const answered = sim.tasks.filter((t) => toResponse(t, drafts[t.id] ?? emptyDraft())).length;
 
@@ -238,7 +299,14 @@ export default function Simulation() {
     }
     setSubmitting(true);
     try {
-      setResult(await api.submitSimulation(sim.id, responses, Date.now() - started.current));
+      const r = await api.submitSimulation(
+        sim.id,
+        responses,
+        Date.now() - started.current,
+        sessionId,
+      );
+      setResult(r);
+      onSubmitted?.(r);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -248,9 +316,8 @@ export default function Simulation() {
 
   return (
     <section className="sim">
-      <p className="meta">
-        <Link to="/simulations">Simulations</Link> · {sim.blueprint.section} · {sim.blueprint.topic}
-      </p>
+      {error && <p className="error">Couldn’t submit: {error}</p>}
+      <p className="meta">{crumb}</p>
       <h2>{sim.title}</h2>
       <p>{sim.scenario}</p>
 
@@ -272,13 +339,18 @@ export default function Simulation() {
           </div>
           <article className="card">
             <p className="meta">
-              Task {current + 1} of {sim.tasks.length} · {task.points} point{task.points === 1 ? '' : 's'}
+              Task {current + 1} of {sim.tasks.length} · {task.points} point
+              {task.points === 1 ? '' : 's'}
             </p>
             <p className="stem">{task.prompt}</p>
 
             {task.type === 'numeric' && (
               <label className="field">
-                {task.unit === 'cents' ? 'Amount ($)' : task.unit === 'percent' ? 'Percent' : 'Value'}
+                {task.unit === 'cents'
+                  ? 'Amount ($)'
+                  : task.unit === 'percent'
+                    ? 'Percent'
+                    : 'Value'}
                 <input
                   inputMode="decimal"
                   placeholder={task.unit === 'cents' ? 'e.g. 12,500 or (1,200)' : ''}
@@ -311,7 +383,8 @@ export default function Simulation() {
             {taskResult && (
               <div className="task-result">
                 <p className={taskResult.correct ? 'right-text' : 'wrong-text'}>
-                  {taskResult.earned} of {taskResult.possible} point{taskResult.possible === 1 ? '' : 's'}
+                  {taskResult.earned} of {taskResult.possible} point
+                  {taskResult.possible === 1 ? '' : 's'}
                 </p>
                 <p className="meta">Answer</p>
                 <Answer task={task} result={taskResult} />
@@ -320,7 +393,11 @@ export default function Simulation() {
             )}
 
             <div className="row">
-              <button className="link" disabled={current === 0} onClick={() => setCurrent(current - 1)}>
+              <button
+                className="link"
+                disabled={current === 0}
+                onClick={() => setCurrent(current - 1)}
+              >
                 ← Previous
               </button>
               <button
@@ -335,12 +412,15 @@ export default function Simulation() {
 
           {!result ? (
             <button className="button" disabled={submitting} onClick={submit}>
-              {submitting ? 'Grading…' : `Submit simulation (${answered} of ${sim.tasks.length} answered)`}
+              {submitting
+                ? 'Grading…'
+                : `Submit simulation (${answered} of ${sim.tasks.length} answered)`}
             </button>
           ) : (
             <p className={result.correct ? 'right-text' : ''}>
-              Score: {result.earned} of {result.possible} points. Next review{' '}
-              {new Date(result.nextDue).toLocaleDateString()}.
+              Score: {result.earned} of {result.possible} points.
+              {'nextDue' in result &&
+                ` Next review ${new Date(result.nextDue as string).toLocaleDateString()}.`}
             </p>
           )}
         </div>
@@ -349,7 +429,11 @@ export default function Simulation() {
           <aside className="sim-exhibits card">
             <div className="tabs">
               {sim.exhibits.map((e, i) => (
-                <button key={i} className={i === exhibit ? 'active' : ''} onClick={() => setExhibit(i)}>
+                <button
+                  key={i}
+                  className={i === exhibit ? 'active' : ''}
+                  onClick={() => setExhibit(i)}
+                >
                   {e.title}
                 </button>
               ))}

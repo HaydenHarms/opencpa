@@ -1,8 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
-import type { PublicMcq } from '@opencpa/schema';
-import { api, SECTIONS, type Revealed, type Session, type SessionStatus } from '../api';
-
-const SIZES = [10, 25, 50];
+import type { PublicMcq, PublicTbs } from '@opencpa/schema';
+import {
+  api,
+  SECTIONS,
+  type Revealed,
+  type Session,
+  type SessionOption,
+  type SessionStatus,
+  type SimulationReveal,
+} from '../api';
+import { SimulationPlayer } from './Simulation';
 
 function savedSection(): string {
   try {
@@ -101,34 +108,40 @@ function StartPanel({
       <article className="card">
         <h2>Start with a diagnostic</h2>
         <p>
-          Your first {section} session is a {status.diagnosticSize}-question diagnostic drawn from
-          across the blueprint. After that, each session leans toward the topics you miss most and
-          brings back questions when they’re due for review.
+          Your first {section} session is a diagnostic drawn from across the blueprint:{' '}
+          {describe(status.diagnostic)}. After that, each session leans toward the topics you miss
+          most and brings back questions when they’re due for review.
         </p>
-        <button className="button" onClick={() => onStart(status.diagnosticSize)}>
+        <button className="button" onClick={() => onStart(status.diagnostic.questions)}>
           Start the diagnostic
         </button>
       </article>
     );
 
-  const sizes = SIZES.filter((n) => n < status.poolSize);
-  sizes.push(Math.min(status.poolSize, SIZES[SIZES.length - 1]!));
   return (
     <article className="card">
       <h2>New {section} session</h2>
       <p className="muted">
-        A mix of topics across the blueprint, weighted toward your weak spots and the questions due
-        for review. Your place is saved as you go.
+        A mix of topics and simulations across the blueprint, weighted toward your weak spots and
+        the items due for review. Your place is saved as you go.
       </p>
       <div className="row-start">
-        {[...new Set(sizes)].map((n) => (
-          <button key={n} className="button" onClick={() => onStart(n)}>
-            {n} questions
+        {status.options.map((o) => (
+          <button key={o.questions} className="button" onClick={() => onStart(o.questions)}>
+            {describe(o)}
           </button>
         ))}
       </div>
     </article>
   );
+}
+
+const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
+
+function describe(o: SessionOption) {
+  return o.simulations
+    ? `${plural(o.questions, 'question')} + ${plural(o.simulations, 'simulation')}`
+    : plural(o.questions, 'question');
 }
 
 function SessionRunner({
@@ -151,11 +164,10 @@ function SessionRunner({
   const started = useRef(Date.now());
 
   const q = items[index];
-  const result = q ? answered[q.id] : undefined;
   const label = session.kind === 'diagnostic' ? 'Diagnostic' : 'Practice session';
 
   async function submit() {
-    if (!q || !selected || busy) return;
+    if (!q || q.type !== 'mcq' || !selected || busy) return;
     setBusy(true);
     try {
       const r = await api.attempt(q.id, selected, Date.now() - started.current, session.id);
@@ -171,15 +183,24 @@ function SessionRunner({
     setIndex((i) => i + 1);
     setSelected(null);
     started.current = Date.now();
+    window.scrollTo(0, 0);
   }
 
   if (!q) return <Summary session={session} answered={answered} onNew={onNew} />;
+
+  const done = !!answered[q.id];
+  const upcoming = items[index + 1];
+  const nextButton = (
+    <button className="button" onClick={next}>
+      {!upcoming ? 'See results' : upcoming.type === 'tbs' ? 'Next: simulation' : 'Next question'}
+    </button>
+  );
 
   return (
     <>
       <div className="row">
         <span className="meta">
-          {label} · question {index + 1} of {items.length}
+          {label} · {index + 1} of {items.length}
         </span>
         <button
           className="link"
@@ -194,20 +215,34 @@ function SessionRunner({
       <div className="progress">
         <span style={{ width: `${(Object.keys(answered).length / items.length) * 100}%` }} />
       </div>
-      <Question
-        q={q}
-        selected={result?.selected ?? selected}
-        result={result}
-        onSelect={setSelected}
-      />
-      {!result ? (
-        <button className="button" disabled={!selected || busy} onClick={submit}>
-          Submit
-        </button>
+      {q.type === 'tbs' ? (
+        <>
+          <SimulationPlayer
+            key={q.id}
+            sim={q}
+            crumb={<>Simulation · {q.blueprint.topic}</>}
+            sessionId={session.id}
+            previous={answered[q.id] as SimulationReveal | undefined}
+            onSubmitted={(r) => setAnswered((a) => ({ ...a, [q.id]: r }))}
+          />
+          {done && nextButton}
+        </>
       ) : (
-        <button className="button" onClick={next}>
-          {index + 1 < items.length ? 'Next question' : 'See results'}
-        </button>
+        <>
+          <Question
+            q={q}
+            selected={(answered[q.id] as Revealed | undefined)?.selected ?? selected}
+            result={answered[q.id] as Revealed | undefined}
+            onSelect={setSelected}
+          />
+          {done ? (
+            nextButton
+          ) : (
+            <button className="button" disabled={!selected || busy} onClick={submit}>
+              Submit
+            </button>
+          )}
+        </>
       )}
     </>
   );
@@ -273,11 +308,7 @@ interface Tally {
   total: number;
 }
 
-function tally(
-  items: PublicMcq[],
-  answered: Record<string, Revealed>,
-  key: (q: PublicMcq) => string,
-) {
+function tally(items: PublicMcq[], answered: Session['answered'], key: (q: PublicMcq) => string) {
   const m = new Map<string, Tally>();
   for (const q of items) {
     const r = answered[q.id];
@@ -296,37 +327,64 @@ function Summary({
   onNew,
 }: {
   session: Session;
-  answered: Record<string, Revealed>;
+  answered: Session['answered'];
   onNew: () => void;
 }) {
-  const byArea = tally(session.items, answered, (q) => q.blueprint.area).sort((a, b) =>
+  const questions = session.items.filter((i): i is PublicMcq => i.type === 'mcq');
+  const sims = session.items.filter((i): i is PublicTbs => i.type === 'tbs');
+  const byArea = tally(questions, answered, (q) => q.blueprint.area).sort((a, b) =>
     a.name.localeCompare(b.name),
   );
-  const byTopic = tally(session.items, answered, (q) => q.blueprint.topic).sort(
+  const byTopic = tally(questions, answered, (q) => q.blueprint.topic).sort(
     (a, b) => a.right / a.total - b.right / b.total || b.total - a.total,
   );
   const right = byArea.reduce((s, t) => s + t.right, 0);
   const total = byArea.reduce((s, t) => s + t.total, 0);
-  const weak = byTopic.filter((t) => t.right < t.total).slice(0, 3);
+  const missedSimTopics = sims
+    .filter((s) => {
+      const r = answered[s.id] as SimulationReveal | undefined;
+      return r && r.earned < r.possible;
+    })
+    .map((s) => s.blueprint.topic);
+  const weak = [
+    ...new Set([
+      ...byTopic.filter((t) => t.right < t.total).map((t) => t.name),
+      ...missedSimTopics,
+    ]),
+  ].slice(0, 3);
   const pct = (t: { right: number; total: number }) =>
     t.total ? Math.round((t.right / t.total) * 100) : 0;
+  const simRows: Tally[] = sims.map((s) => {
+    const r = answered[s.id] as SimulationReveal | undefined;
+    return { name: s.title, right: r?.earned ?? 0, total: r?.possible ?? 0 };
+  });
+  const simPoints = {
+    right: simRows.reduce((s, t) => s + t.right, 0),
+    total: simRows.reduce((s, t) => s + t.total, 0),
+  };
 
   return (
     <article className="card">
       <p className="meta">{session.kind === 'diagnostic' ? 'Diagnostic' : 'Session'} complete</p>
       <h2>
-        {right} of {total} correct ({pct({ right, total })}%)
+        {right} of {total} questions correct ({pct({ right, total })}%)
       </h2>
+      {sims.length > 0 && (
+        <p className="muted">
+          Simulations: {simPoints.right} of {plural(simPoints.total, 'point')} ({pct(simPoints)}%)
+        </p>
+      )}
       {weak.length > 0 && (
         <p>
           {session.kind === 'diagnostic'
             ? 'Your next sessions will lean toward '
             : 'Worth another look: '}
-          {weak.map((t) => t.name).join(', ')}.
+          {weak.join(', ')}.
         </p>
       )}
       <TallyTable title="By blueprint area" rows={byArea} pct={pct} />
       <TallyTable title="By topic" rows={byTopic} pct={pct} />
+      {sims.length > 0 && <TallyTable title="Simulations" unit="points" rows={simRows} pct={pct} />}
       <button className="button" onClick={onNew}>
         Start a new session
       </button>
@@ -338,17 +396,19 @@ function TallyTable({
   title,
   rows,
   pct,
+  unit = 'correct',
 }: {
   title: string;
   rows: Tally[];
   pct: (t: Tally) => number;
+  unit?: 'correct' | 'points';
 }) {
   return (
     <table className="mastery">
       <thead>
         <tr>
           <th>{title}</th>
-          <th>Correct</th>
+          <th>{unit === 'points' ? 'Points' : 'Correct'}</th>
           <th>Score</th>
         </tr>
       </thead>

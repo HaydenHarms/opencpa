@@ -47,15 +47,23 @@ export interface Session {
   status: 'active' | 'completed' | 'abandoned';
   createdAt: number;
   completedAt: number | null;
-  items: PublicMcq[];
-  /** Results for the questions already answered, keyed by item id. */
-  answered: Record<string, Revealed>;
+  /** Questions and simulations, in serving order. */
+  items: (PublicMcq | PublicTbs)[];
+  /** Results for the items already answered, keyed by item id. */
+  answered: Record<string, Revealed | SimulationReveal>;
+}
+
+/** A session length on offer and the simulations that come with it. */
+export interface SessionOption {
+  questions: number;
+  simulations: number;
 }
 
 export interface SessionStatus {
   session: Session | null;
   nextKind: 'diagnostic' | 'practice';
-  diagnosticSize: number;
+  diagnostic: SessionOption;
+  options: SessionOption[];
   poolSize: number;
 }
 
@@ -81,12 +89,18 @@ export interface TaskResult {
   explanation: string;
 }
 
-export interface SimulationResult {
+/** What a submitted simulation reveals, including the student's own responses. */
+export interface SimulationReveal {
   earned: number;
   possible: number;
   correct: boolean;
   tasks: TaskResult[];
+  responses: Record<string, TaskResponse>;
+}
+
+export interface SimulationResult extends SimulationReveal {
   nextDue: string;
+  sessionComplete: boolean;
 }
 
 export const api = {
@@ -105,10 +119,15 @@ export const api = {
   simulations: (section?: string) =>
     call<PublicTbs[]>(`/simulations${section ? `?section=${section}` : ''}`),
   simulation: (id: string) => call<PublicTbs>(`/simulations/${encodeURIComponent(id)}`),
-  submitSimulation: (id: string, responses: Record<string, TaskResponse>, durationMs: number) =>
+  submitSimulation: (
+    id: string,
+    responses: Record<string, TaskResponse>,
+    durationMs: number,
+    sessionId?: string,
+  ) =>
     call<SimulationResult>(`/me/simulations/${encodeURIComponent(id)}/attempts`, {
       method: 'POST',
-      body: JSON.stringify({ responses, durationMs }),
+      body: JSON.stringify({ responses, durationMs, sessionId }),
     }),
 };
 

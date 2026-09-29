@@ -1,7 +1,7 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { z } from 'zod';
-import { toPublicMcq, toPublicTbs, type Item, type McqItem } from '@opencpa/schema';
+import { toPublicMcq, toPublicTbs, type Item, type McqItem, type TbsItem } from '@opencpa/schema';
 import {
   AREA_WEIGHTS,
   DIAGNOSTIC_SIZE,
@@ -15,6 +15,8 @@ import {
   review,
   selectDiagnosticItems,
   selectPracticeItems,
+  simulationCount,
+  spreadThrough,
   type Card,
   type GradeResult,
 } from '@opencpa/engine';
@@ -105,20 +107,8 @@ app.post('/me/attempts', async (c) => {
   if (!item || item.type !== 'mcq') return c.json({ error: 'unknown item' }, 404);
 
   const userId = c.get('userId');
-  let session: SessionRow | null = null;
-  if (sessionId) {
-    session = await loadSession(c.env.DB, userId, sessionId);
-    if (!session || session.status !== 'active')
-      return c.json({ error: 'no active session with that id' }, 404);
-    if (!sessionItemIds(session).includes(itemId))
-      return c.json({ error: 'that question is not in this session' }, 400);
-    const answered = await c.env.DB.prepare(
-      'SELECT 1 FROM attempts WHERE session_id = ? AND item_id = ? LIMIT 1',
-    )
-      .bind(sessionId, itemId)
-      .first();
-    if (answered) return c.json({ error: 'already answered in this session' }, 409);
-  }
+  const check = await checkSession(c.env.DB, userId, sessionId, itemId);
+  if ('error' in check) return c.json({ error: check.error }, check.status);
   const result = gradeMcq(item, selected);
   const now = new Date();
 
@@ -132,23 +122,7 @@ app.post('/me/attempts', async (c) => {
   );
 
   await saveAttempt(c.env.DB, userId, item, { selected }, result, durationMs, card, sessionId);
-
-  let sessionComplete = false;
-  if (session) {
-    const done = await c.env.DB.prepare(
-      'SELECT COUNT(DISTINCT item_id) AS n FROM attempts WHERE session_id = ?',
-    )
-      .bind(session.id)
-      .first<{ n: number }>();
-    if ((done?.n ?? 0) >= sessionItemIds(session).length) {
-      sessionComplete = true;
-      await c.env.DB.prepare(
-        "UPDATE practice_sessions SET status = 'completed', completed_at = ? WHERE id = ?",
-      )
-        .bind(Date.now(), session.id)
-        .run();
-    }
-  }
+  const sessionComplete = await completeIfDone(c.env.DB, check.session);
 
   // Answer and explanation are revealed only after an attempt is recorded.
   return c.json({
@@ -173,6 +147,7 @@ const taskResponse = z.discriminatedUnion('type', [
 const simulationAttemptBody = z.object({
   responses: z.record(taskResponse),
   durationMs: z.number().int().nonnegative().optional(),
+  sessionId: z.string().uuid().optional(),
 });
 
 app.post('/me/simulations/:id/attempts', async (c) => {
@@ -182,7 +157,9 @@ app.post('/me/simulations/:id/attempts', async (c) => {
   if (!item || item.type !== 'tbs') return c.json({ error: 'unknown simulation' }, 404);
 
   const userId = c.get('userId');
-  const { responses, durationMs } = body.data;
+  const { responses, durationMs, sessionId } = body.data;
+  const check = await checkSession(c.env.DB, userId, sessionId, item.id);
+  if ('error' in check) return c.json({ error: check.error }, check.status);
   const result = gradeSimulation(item, responses);
   const now = new Date();
   const row = await c.env.DB.prepare('SELECT * FROM review_cards WHERE user_id = ? AND item_id = ?')
@@ -193,18 +170,14 @@ app.post('/me/simulations/:id/attempts', async (c) => {
     ratingForScore(result.possible ? result.earned / result.possible : 0),
     now,
   );
-  await saveAttempt(c.env.DB, userId, item, responses, result, durationMs, card);
+  await saveAttempt(c.env.DB, userId, item, responses, result, durationMs, card, sessionId);
+  const sessionComplete = await completeIfDone(c.env.DB, check.session);
 
   // Answers and explanations are revealed only after an attempt is recorded.
   return c.json({
-    ...result,
-    tasks: item.tasks.map((t) => ({
-      id: t.id,
-      ...result.tasks[t.id],
-      answer: t.answer,
-      explanation: t.explanation,
-    })),
+    ...revealSimulation(item, responses),
     nextDue: card.due.toISOString(),
+    sessionComplete,
   });
 });
 
@@ -254,14 +227,22 @@ app.get('/me/sessions/current', async (c) => {
     .bind(userId, section.data)
     .first<SessionRow>();
   const poolSize = mcqs.filter((q) => q.blueprint.section === section.data).length;
+  const simPool = simulations.filter((t) => t.blueprint.section === section.data).length;
   const diagnostic = !(await hasMcqAttempts(c.env.DB, userId, section.data));
+  // The session lengths on offer, each with the simulations that come with it.
+  const option = (n: number) => ({ questions: n, simulations: simulationCount(n, simPool) });
+  const lengths = SESSION_LENGTHS.filter((n) => n < poolSize);
+  if (poolSize) lengths.push(Math.min(poolSize, SESSION_LENGTHS[SESSION_LENGTHS.length - 1]!));
   return c.json({
     session: row ? await sessionView(c.env.DB, row) : null,
     nextKind: diagnostic ? 'diagnostic' : 'practice',
-    diagnosticSize: Math.min(DIAGNOSTIC_SIZE, poolSize),
+    diagnostic: option(Math.min(DIAGNOSTIC_SIZE, poolSize)),
+    options: [...new Set(lengths)].map(option),
     poolSize,
   });
 });
+
+const SESSION_LENGTHS = [10, 25, 50];
 
 const newSessionBody = z.object({
   section: sectionSchema,
@@ -275,17 +256,19 @@ app.post('/me/sessions', async (c) => {
   const userId = c.get('userId');
   const db = c.env.DB;
 
-  const pool = mcqs
-    .filter((q) => q.blueprint.section === section)
-    .map((q) => ({ id: q.id, area: q.blueprint.area, topic: q.blueprint.topic }));
+  const toPool = (i: Item) => ({ id: i.id, area: i.blueprint.area, topic: i.blueprint.topic });
+  const pool = mcqs.filter((q) => q.blueprint.section === section).map(toPool);
+  const simPool = simulations.filter((t) => t.blueprint.section === section).map(toPool);
   if (pool.length === 0) return c.json({ error: `no ${section} questions yet` }, 404);
 
   const weights = AREA_WEIGHTS[section];
   let kind: 'diagnostic' | 'practice';
   let ids: string[];
+  let simIds: string[];
   if (!(await hasMcqAttempts(db, userId, section))) {
     kind = 'diagnostic';
     ids = selectDiagnosticItems(pool, DIAGNOSTIC_SIZE, weights);
+    simIds = selectDiagnosticItems(simPool, simulationCount(ids.length, simPool.length), weights);
   } else {
     kind = 'practice';
     const [cards, attempts] = await Promise.all([
@@ -300,9 +283,7 @@ app.post('/me/sessions', async (c) => {
         .bind(userId, section)
         .all<{ item_id: string; correct: number; created_at: number }>(),
     ]);
-    ids = selectPracticeItems({
-      pool,
-      size,
+    const history = {
       weights,
       due: new Map(cards.results.map((r) => [r.item_id, r.due])),
       topicScore: masteryByTopic(
@@ -313,8 +294,16 @@ app.post('/me/sessions', async (c) => {
             : [];
         }),
       ),
+    };
+    ids = selectPracticeItems({ ...history, pool, size });
+    simIds = selectPracticeItems({
+      ...history,
+      pool: simPool,
+      size: simulationCount(ids.length, simPool.length),
     });
   }
+  // Simulations are spread through the questions (exam-day mode will use the exam's order).
+  ids = spreadThrough(ids, simIds);
 
   // Starting a new session abandons any unfinished one in the same section.
   // Its answers still count toward mastery and review scheduling.
@@ -446,7 +435,45 @@ function loadSession(db: D1Database, userId: string, id: string) {
 
 /** The session's items that are still in the bank (retired items drop out). */
 function sessionItemIds(row: SessionRow): string[] {
-  return (JSON.parse(row.item_ids) as string[]).filter((id) => byId.get(id)?.type === 'mcq');
+  return (JSON.parse(row.item_ids) as string[]).filter((id) => byId.has(id));
+}
+
+type SessionCheck = { session: SessionRow | null } | { error: string; status: 400 | 404 | 409 };
+
+/** When an attempt names a session: it must be active, contain the item, and not have it answered yet. */
+async function checkSession(
+  db: D1Database,
+  userId: string,
+  sessionId: string | undefined,
+  itemId: string,
+): Promise<SessionCheck> {
+  if (!sessionId) return { session: null };
+  const session = await loadSession(db, userId, sessionId);
+  if (!session || session.status !== 'active')
+    return { error: 'no active session with that id', status: 404 };
+  if (!sessionItemIds(session).includes(itemId))
+    return { error: 'that item is not in this session', status: 400 };
+  const answered = await db
+    .prepare('SELECT 1 FROM attempts WHERE session_id = ? AND item_id = ? LIMIT 1')
+    .bind(sessionId, itemId)
+    .first();
+  if (answered) return { error: 'already answered in this session', status: 409 };
+  return { session };
+}
+
+/** Mark the session completed once every item has an attempt. Returns whether it is complete. */
+async function completeIfDone(db: D1Database, session: SessionRow | null) {
+  if (!session) return false;
+  const done = await db
+    .prepare('SELECT COUNT(DISTINCT item_id) AS n FROM attempts WHERE session_id = ?')
+    .bind(session.id)
+    .first<{ n: number }>();
+  if ((done?.n ?? 0) < sessionItemIds(session).length) return false;
+  await db
+    .prepare("UPDATE practice_sessions SET status = 'completed', completed_at = ? WHERE id = ?")
+    .bind(Date.now(), session.id)
+    .run();
+  return true;
 }
 
 /** What an attempt reveals: the key, the explanation and every choice's rationale. */
@@ -460,18 +487,40 @@ function reveal(item: McqItem, selected: string, correct: boolean) {
   };
 }
 
+type Responses = Parameters<typeof gradeSimulation>[1];
+
+/** What a simulation attempt reveals: the score, and each task's answer and explanation. */
+function revealSimulation(item: TbsItem, responses: Responses) {
+  const result = gradeSimulation(item, responses);
+  return {
+    ...result,
+    responses,
+    tasks: item.tasks.map((t) => ({
+      id: t.id,
+      ...result.tasks[t.id],
+      answer: t.answer,
+      explanation: t.explanation,
+    })),
+  };
+}
+
 /** A session's public items, plus the revealed result of each item already answered. */
 async function sessionView(db: D1Database, row: SessionRow) {
   const { results } = await db
     .prepare('SELECT item_id, response, correct FROM attempts WHERE session_id = ?')
     .bind(row.id)
     .all<{ item_id: string; response: string; correct: number }>();
-  const answered: Record<string, ReturnType<typeof reveal>> = {};
+  const answered: Record<string, ReturnType<typeof reveal> | ReturnType<typeof revealSimulation>> =
+    {};
   for (const r of results) {
     const item = byId.get(r.item_id);
-    if (item?.type !== 'mcq') continue;
-    const { selected } = JSON.parse(r.response) as { selected: string };
-    answered[r.item_id] = reveal(item, selected, !!r.correct);
+    if (item?.type === 'mcq') {
+      const { selected } = JSON.parse(r.response) as { selected: string };
+      answered[r.item_id] = reveal(item, selected, !!r.correct);
+    } else if (item?.type === 'tbs') {
+      // Grading is deterministic, so re-grading the stored responses reproduces the result.
+      answered[r.item_id] = revealSimulation(item, JSON.parse(r.response) as Responses);
+    }
   }
   return {
     id: row.id,
@@ -480,7 +529,10 @@ async function sessionView(db: D1Database, row: SessionRow) {
     status: row.status,
     createdAt: row.created_at,
     completedAt: row.completed_at,
-    items: sessionItemIds(row).map((id) => toPublicMcq(byId.get(id) as McqItem)),
+    items: sessionItemIds(row).map((id) => {
+      const item = byId.get(id)!;
+      return item.type === 'mcq' ? toPublicMcq(item) : toPublicTbs(item);
+    }),
     answered,
   };
 }
