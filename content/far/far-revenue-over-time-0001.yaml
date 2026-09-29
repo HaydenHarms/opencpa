@@ -38,3 +38,88 @@ explanation: 'Year 1: 1,200,000 ÷ 4,000,000 = 30% complete; gross profit 30% ×
   and estimated profit is $1,400,000. Cumulative gross profit = 75% × $1,400,000 = $1,050,000; Year 2
   gross profit = $1,050,000 − $300,000 = $750,000. The change in estimate is handled prospectively through
   the cumulative catch-up.'
+variants:
+- stem: Crane Builders has a $6,000,000 fixed-price contract to construct a building for a customer on
+    the customer's land, recognizing revenue over time using costs incurred relative to total estimated
+    costs. In Year 1 it incurred $1,000,000 of costs and estimated $4,000,000 more to complete. By the
+    end of Year 2 it had incurred $3,000,000 in total and estimated $1,000,000 more to complete. What
+    gross profit should Crane recognize in Year 2?
+  choices:
+  - id: A
+    text: $400,000
+    rationale: Measures Year 2 progress against the original $5,000,000 cost estimate. Progress uses the
+      updated $4,000,000 total estimate.
+  - id: B
+    text: $550,000
+    rationale: Applies the 55-point increase in percent complete to the original $1,000,000 profit estimate,
+      ignoring the change in estimated profit.
+  - id: C
+    text: $1,100,000
+    rationale: Applies the 55-point increase in percent complete to the revised $2,000,000 profit estimate.
+      The catch-up recognizes 75% of the revised profit, less the Year 1 amount.
+  - id: D
+    text: $1,300,000
+    rationale: Correct. Cumulative profit 75% × $2,000,000 = $1,500,000, less the $200,000 recognized
+      in Year 1.
+  answer: D
+  explanation: 'Year 1: 1,000,000 ÷ 5,000,000 = 20% complete; gross profit 20% × ($6,000,000 − $5,000,000)
+    = $200,000. Year 2: the revised total cost is $4,000,000, so progress is 3,000,000 ÷ 4,000,000 = 75%
+    and estimated profit is $2,000,000. Cumulative gross profit = 75% × $2,000,000 = $1,500,000; Year
+    2 gross profit = $1,500,000 − $200,000 = $1,300,000. The change in estimate is handled prospectively
+    through the cumulative catch-up.'
+- stem: Fordham Builders has a $10,000,000 fixed-price contract to construct a building for a customer
+    on the customer's land, recognizing revenue over time using costs incurred relative to total estimated
+    costs. In Year 1 it incurred $2,000,000 of costs and estimated $6,000,000 more to complete. By the
+    end of Year 2 it had incurred $6,300,000 in total and estimated $2,700,000 more to complete. What
+    gross profit should Fordham recognize in Year 2?
+  choices:
+  - id: A
+    text: $200,000
+    rationale: Correct. Cumulative profit 70% × $1,000,000 = $700,000, less the $500,000 recognized in
+      Year 1.
+  - id: B
+    text: $450,000
+    rationale: Applies the 45-point increase in percent complete to the revised $1,000,000 profit estimate.
+      The catch-up recognizes 70% of the revised profit, less the Year 1 amount.
+  - id: C
+    text: $700,000
+    rationale: Reports cumulative gross profit to date without subtracting the $500,000 recognized in
+      Year 1.
+  - id: D
+    text: $1,075,000
+    rationale: Measures Year 2 progress against the original $8,000,000 cost estimate. Progress uses the
+      updated $9,000,000 total estimate.
+  answer: A
+  explanation: 'Year 1: 2,000,000 ÷ 8,000,000 = 25% complete; gross profit 25% × ($10,000,000 − $8,000,000)
+    = $500,000. Year 2: the revised total cost is $9,000,000, so progress is 6,300,000 ÷ 9,000,000 = 70%
+    and estimated profit is $1,000,000. Cumulative gross profit = 70% × $1,000,000 = $700,000; Year 2
+    gross profit = $700,000 − $500,000 = $200,000. The change in estimate is handled prospectively through
+    the cumulative catch-up.'
+- stem: Galway Builders has a $4,000,000 fixed-price contract to construct a building for a customer on
+    the customer's land, recognizing revenue over time using costs incurred relative to total estimated
+    costs. In Year 1 it incurred $800,000 of costs and estimated $2,400,000 more to complete. By the end
+    of Year 2 it had incurred $2,400,000 in total and estimated $600,000 more to complete. What gross
+    profit should Galway recognize in Year 2?
+  choices:
+  - id: A
+    text: $400,000
+    rationale: Measures Year 2 progress against the original $3,200,000 cost estimate. Progress uses the
+      updated $3,000,000 total estimate.
+  - id: B
+    text: $440,000
+    rationale: Applies the 55-point increase in percent complete to the original $800,000 profit estimate,
+      ignoring the change in estimated profit.
+  - id: C
+    text: $600,000
+    rationale: Correct. Cumulative profit 80% × $1,000,000 = $800,000, less the $200,000 recognized in
+      Year 1.
+  - id: D
+    text: $800,000
+    rationale: Reports cumulative gross profit to date without subtracting the $200,000 recognized in
+      Year 1.
+  answer: C
+  explanation: 'Year 1: 800,000 ÷ 3,200,000 = 25% complete; gross profit 25% × ($4,000,000 − $3,200,000)
+    = $200,000. Year 2: the revised total cost is $3,000,000, so progress is 2,400,000 ÷ 3,000,000 = 80%
+    and estimated profit is $1,000,000. Cumulative gross profit = 80% × $1,000,000 = $800,000; Year 2
+    gross profit = $800,000 − $200,000 = $600,000. The change in estimate is handled prospectively through
+    the cumulative catch-up.'

@@ -37,3 +37,85 @@ explanation: Contributed services are recognized only if they create or enhance 
   require specialized skills, are provided by people with those skills, and would typically need to be
   purchased if not donated. The CPA's work ($12,000) and the carpentry on the addition ($18,000) qualify.
   Greeters and board members do not. Contributed services revenue = $30,000.
+variants:
+- stem: 'During Year 1, volunteers gave Beacon Museum, a not-for-profit entity, these services: a CPA
+    prepared its financial statements, which Beacon would otherwise have paid $20,000 for; carpenters
+    built a permanent exhibit hall addition worth $35,000; volunteer greeters worked at the entrance,
+    time that would cost $40,000 at local wage rates; and board members spent time at meetings valued
+    at $8,000. What amount should Beacon recognize as contributed services revenue?'
+  choices:
+  - id: A
+    text: $20,000
+    rationale: Recognizes only the specialized service. Services that create or enhance a nonfinancial
+      asset are also recognized.
+  - id: B
+    text: $35,000
+    rationale: Recognizes only the exhibit hall work. Specialized services, such as the CPA's, that Beacon
+      would otherwise purchase are also recognized.
+  - id: C
+    text: $55,000
+    rationale: Correct. The CPA's specialized service ($20,000) and the carpentry that created a nonfinancial
+      asset ($35,000).
+  - id: D
+    text: $95,000
+    rationale: Also recognizes the greeters' time. Services that neither require specialized skills nor
+      create a nonfinancial asset are not recognized, even if they have a market value.
+  answer: C
+  explanation: Contributed services are recognized only if they create or enhance nonfinancial assets,
+    or require specialized skills, are provided by people with those skills, and would typically need
+    to be purchased if not donated. The CPA's work ($20,000) and the carpentry on the addition ($35,000)
+    qualify. Greeters and board members do not. Contributed services revenue = $55,000.
+- stem: 'During Year 1, volunteers gave Corbett Museum, a not-for-profit entity, these services: a CPA
+    prepared its financial statements, which Corbett would otherwise have paid $9,000 for; carpenters
+    built a permanent exhibit hall addition worth $14,000; volunteer greeters worked at the entrance,
+    time that would cost $30,000 at local wage rates; and board members spent time at meetings valued
+    at $3,000. What amount should Corbett recognize as contributed services revenue?'
+  choices:
+  - id: A
+    text: $9,000
+    rationale: Recognizes only the specialized service. Services that create or enhance a nonfinancial
+      asset are also recognized.
+  - id: B
+    text: $12,000
+    rationale: Recognizes the CPA's work and the board members' time. Governance by board members is not
+      a specialized skill Corbett would otherwise purchase.
+  - id: C
+    text: $14,000
+    rationale: Recognizes only the exhibit hall work. Specialized services, such as the CPA's, that Corbett
+      would otherwise purchase are also recognized.
+  - id: D
+    text: $23,000
+    rationale: Correct. The CPA's specialized service ($9,000) and the carpentry that created a nonfinancial
+      asset ($14,000).
+  answer: D
+  explanation: Contributed services are recognized only if they create or enhance nonfinancial assets,
+    or require specialized skills, are provided by people with those skills, and would typically need
+    to be purchased if not donated. The CPA's work ($9,000) and the carpentry on the addition ($14,000)
+    qualify. Greeters and board members do not. Contributed services revenue = $23,000.
+- stem: 'During Year 1, volunteers gave Delmar Museum, a not-for-profit entity, these services: a CPA
+    prepared its financial statements, which Delmar would otherwise have paid $15,000 for; carpenters
+    built a permanent exhibit hall addition worth $26,000; volunteer greeters worked at the entrance,
+    time that would cost $22,000 at local wage rates; and board members spent time at meetings valued
+    at $6,000. What amount should Delmar recognize as contributed services revenue?'
+  choices:
+  - id: A
+    text: $21,000
+    rationale: Recognizes the CPA's work and the board members' time. Governance by board members is not
+      a specialized skill Delmar would otherwise purchase.
+  - id: B
+    text: $26,000
+    rationale: Recognizes only the exhibit hall work. Specialized services, such as the CPA's, that Delmar
+      would otherwise purchase are also recognized.
+  - id: C
+    text: $41,000
+    rationale: Correct. The CPA's specialized service ($15,000) and the carpentry that created a nonfinancial
+      asset ($26,000).
+  - id: D
+    text: $63,000
+    rationale: Also recognizes the greeters' time. Services that neither require specialized skills nor
+      create a nonfinancial asset are not recognized, even if they have a market value.
+  answer: C
+  explanation: Contributed services are recognized only if they create or enhance nonfinancial assets,
+    or require specialized skills, are provided by people with those skills, and would typically need
+    to be purchased if not donated. The CPA's work ($15,000) and the carpentry on the addition ($26,000)
+    qualify. Greeters and board members do not. Contributed services revenue = $41,000.

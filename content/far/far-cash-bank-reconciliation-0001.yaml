@@ -37,3 +37,85 @@ explanation: 'Reconcile both sides to the correct balance. Bank side: $48,200 + 
   − $9,300 outstanding checks = $45,300. Book side: $45,900 − $60 service charge − $1,200 NSF check −
   $90 understatement of check #412 + $750 note collected = $45,300. The book-side items all require general
   ledger adjustments; the bank-side items do not.'
+variants:
+- stem: 'Sayre Co.''s December 31 bank statement shows a balance of $64,225, and its general ledger cash
+    account shows $62,400. The controller finds: deposits in transit of $8,200; outstanding checks of
+    $11,050; a $45 bank service charge not yet recorded; a customer''s $2,300 check returned with the
+    statement marked NSF; check #412, written to a supplier for $1,260 and cleared by the bank at $1,260,
+    recorded in the ledger as $1,080; and a note receivable of $1,500, including interest, that the bank
+    collected for Sayre and credited to its account. What is Sayre''s correct cash balance at December
+    31?'
+  choices:
+  - id: A
+    text: $59,550
+    rationale: Adjusts the general ledger balance for the deposits in transit and outstanding checks.
+      Those items reconcile the bank balance, not the books.
+  - id: B
+    text: $59,875
+    rationale: Omits the $1,500 note the bank collected, which Sayre has not yet recorded.
+  - id: C
+    text: $61,375
+    rationale: 'Correct. Bank: $64,225 + $8,200 − $11,050. Books: $62,400 − $45 − $2,300 − $180 + $1,500.
+      Both equal $61,375.'
+  - id: D
+    text: $61,735
+    rationale: 'Corrects check #412 in the wrong direction. The check was $1,260 but recorded as $1,080,
+      so the ledger must be reduced by $180.'
+  answer: C
+  explanation: 'Reconcile both sides to the correct balance. Bank side: $64,225 + $8,200 deposits in transit
+    − $11,050 outstanding checks = $61,375. Book side: $62,400 − $45 service charge − $2,300 NSF check
+    − $180 understatement of check #412 + $1,500 note collected = $61,375. The book-side items all require
+    general ledger adjustments; the bank-side items do not.'
+- stem: 'Tabor Co.''s December 31 bank statement shows a balance of $23,636, and its general ledger cash
+    account shows $21,750. The controller finds: deposits in transit of $3,100; outstanding checks of
+    $4,900; a $30 bank service charge not yet recorded; a customer''s $850 check returned with the statement
+    marked NSF; check #412, written to a supplier for $615 and cleared by the bank at $615, recorded in
+    the ledger as $561; and a note receivable of $1,020, including interest, that the bank collected for
+    Tabor and credited to its account. What is Tabor''s correct cash balance at December 31?'
+  choices:
+  - id: A
+    text: $20,816
+    rationale: Omits the $1,020 note the bank collected, which Tabor has not yet recorded.
+  - id: B
+    text: $21,836
+    rationale: 'Correct. Bank: $23,636 + $3,100 − $4,900. Books: $21,750 − $30 − $850 − $54 + $1,020.
+      Both equal $21,836.'
+  - id: C
+    text: $21,944
+    rationale: 'Corrects check #412 in the wrong direction. The check was $615 but recorded as $561, so
+      the ledger must be reduced by $54.'
+  - id: D
+    text: $23,536
+    rationale: Adds back the NSF check. A returned customer check reduces cash and reinstates the receivable.
+  answer: B
+  explanation: 'Reconcile both sides to the correct balance. Bank side: $23,636 + $3,100 deposits in transit
+    − $4,900 outstanding checks = $21,836. Book side: $21,750 − $30 service charge − $850 NSF check −
+    $54 understatement of check #412 + $1,020 note collected = $21,836. The book-side items all require
+    general ledger adjustments; the bank-side items do not.'
+- stem: 'Varick Co.''s December 31 bank statement shows a balance of $90,755, and its general ledger cash
+    account shows $88,300. The controller finds: deposits in transit of $12,500; outstanding checks of
+    $15,800; a $75 bank service charge not yet recorded; a customer''s $3,100 check returned with the
+    statement marked NSF; check #412, written to a supplier for $2,340 and cleared by the bank at $2,340,
+    recorded in the ledger as $2,070; and a note receivable of $2,600, including interest, that the bank
+    collected for Varick and credited to its account. What is Varick''s correct cash balance at December
+    31?'
+  choices:
+  - id: A
+    text: $84,855
+    rationale: Omits the $2,600 note the bank collected, which Varick has not yet recorded.
+  - id: B
+    text: $85,000
+    rationale: Adjusts the general ledger balance for the deposits in transit and outstanding checks.
+      Those items reconcile the bank balance, not the books.
+  - id: C
+    text: $87,455
+    rationale: 'Correct. Bank: $90,755 + $12,500 − $15,800. Books: $88,300 − $75 − $3,100 − $270 + $2,600.
+      Both equal $87,455.'
+  - id: D
+    text: $93,655
+    rationale: Adds back the NSF check. A returned customer check reduces cash and reinstates the receivable.
+  answer: C
+  explanation: 'Reconcile both sides to the correct balance. Bank side: $90,755 + $12,500 deposits in
+    transit − $15,800 outstanding checks = $87,455. Book side: $88,300 − $75 service charge − $3,100 NSF
+    check − $270 understatement of check #412 + $2,600 note collected = $87,455. The book-side items all
+    require general ledger adjustments; the bank-side items do not.'

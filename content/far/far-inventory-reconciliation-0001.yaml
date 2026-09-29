@@ -39,3 +39,92 @@ explanation: 'Correct inventory = subledger $612,000 + $18,000 in transit (title
   $620,000. The general ledger is missing the in-transit goods, the unposted $28,000 purchase, and the
   FOB-destination goods: $562,000 + $18,000 + $28,000 + $12,000 = $620,000. The general ledger must be
   increased by $58,000 (and the premature sale reversed).'
+variants:
+- stem: 'At December 31, Tahoe Co.''s perpetual inventory subledger totals $845,000, but its general ledger
+    inventory account shows $773,000. Investigating, the controller finds: (1) goods costing $26,000 that
+    a supplier shipped FOB shipping point on December 28 arrived January 3 and are recorded in neither
+    record; (2) the subledger includes $31,000 of goods Tahoe holds on consignment for Mayer Co.; (3)
+    a $41,000 purchase received December 20 is in the subledger, but the supplier''s invoice was never
+    posted to the general ledger; and (4) goods costing $17,000 shipped to a customer FOB destination
+    on December 31, which arrived January 4, were removed from both records when shipped and the sale
+    was recorded. By how much must Tahoe increase its general ledger inventory balance?'
+  choices:
+  - id: A
+    text: $12,000
+    rationale: Computes the adjustment the subledger needs ($845,000 to $857,000), not the general ledger.
+  - id: B
+    text: $43,000
+    rationale: Omits the $41,000 purchase that is in the subledger but was never posted to the general
+      ledger.
+  - id: C
+    text: $67,000
+    rationale: Leaves out the $17,000 of goods shipped FOB destination. Title had not passed at year-end,
+      so they are still Tahoe's inventory.
+  - id: D
+    text: $84,000
+    rationale: Correct. Correct inventory is $857,000; $857,000 − $773,000 = $84,000.
+  answer: D
+  explanation: 'Correct inventory = subledger $845,000 + $26,000 in transit (title passed at shipment)
+    − $31,000 consigned goods (owned by Mayer) + $17,000 shipped FOB destination (title had not passed)
+    = $857,000. The general ledger is missing the in-transit goods, the unposted $41,000 purchase, and
+    the FOB-destination goods: $773,000 + $26,000 + $41,000 + $17,000 = $857,000. The general ledger must
+    be increased by $84,000 (and the premature sale reversed).'
+- stem: 'At December 31, Ukiah Co.''s perpetual inventory subledger totals $410,000, but its general ledger
+    inventory account shows $375,000. Investigating, the controller finds: (1) goods costing $12,000 that
+    a supplier shipped FOB shipping point on December 28 arrived January 3 and are recorded in neither
+    record; (2) the subledger includes $15,000 of goods Ukiah holds on consignment for Mayer Co.; (3)
+    a $20,000 purchase received December 20 is in the subledger, but the supplier''s invoice was never
+    posted to the general ledger; and (4) goods costing $9,000 shipped to a customer FOB destination on
+    December 31, which arrived January 4, were removed from both records when shipped and the sale was
+    recorded. By how much must Ukiah increase its general ledger inventory balance?'
+  choices:
+  - id: A
+    text: $6,000
+    rationale: Computes the adjustment the subledger needs ($410,000 to $416,000), not the general ledger.
+  - id: B
+    text: $21,000
+    rationale: Omits the $20,000 purchase that is in the subledger but was never posted to the general
+      ledger.
+  - id: C
+    text: $41,000
+    rationale: Correct. Correct inventory is $416,000; $416,000 − $375,000 = $41,000.
+  - id: D
+    text: $56,000
+    rationale: Treats the $15,000 of consigned goods as Ukiah's. Goods held on consignment belong to the
+      consignor.
+  answer: C
+  explanation: 'Correct inventory = subledger $410,000 + $12,000 in transit (title passed at shipment)
+    − $15,000 consigned goods (owned by Mayer) + $9,000 shipped FOB destination (title had not passed)
+    = $416,000. The general ledger is missing the in-transit goods, the unposted $20,000 purchase, and
+    the FOB-destination goods: $375,000 + $12,000 + $20,000 + $9,000 = $416,000. The general ledger must
+    be increased by $41,000 (and the premature sale reversed).'
+- stem: 'At December 31, Vallejo Co.''s perpetual inventory subledger totals $1,020,000, but its general
+    ledger inventory account shows $940,000. Investigating, the controller finds: (1) goods costing $35,000
+    that a supplier shipped FOB shipping point on December 28 arrived January 3 and are recorded in neither
+    record; (2) the subledger includes $28,000 of goods Vallejo holds on consignment for Mayer Co.; (3)
+    a $52,000 purchase received December 20 is in the subledger, but the supplier''s invoice was never
+    posted to the general ledger; and (4) goods costing $24,000 shipped to a customer FOB destination
+    on December 31, which arrived January 4, were removed from both records when shipped and the sale
+    was recorded. By how much must Vallejo increase its general ledger inventory balance?'
+  choices:
+  - id: A
+    text: $31,000
+    rationale: Computes the adjustment the subledger needs ($1,020,000 to $1,051,000), not the general
+      ledger.
+  - id: B
+    text: $59,000
+    rationale: Omits the $52,000 purchase that is in the subledger but was never posted to the general
+      ledger.
+  - id: C
+    text: $87,000
+    rationale: Leaves out the $24,000 of goods shipped FOB destination. Title had not passed at year-end,
+      so they are still Vallejo's inventory.
+  - id: D
+    text: $111,000
+    rationale: Correct. Correct inventory is $1,051,000; $1,051,000 − $940,000 = $111,000.
+  answer: D
+  explanation: 'Correct inventory = subledger $1,020,000 + $35,000 in transit (title passed at shipment)
+    − $28,000 consigned goods (owned by Mayer) + $24,000 shipped FOB destination (title had not passed)
+    = $1,051,000. The general ledger is missing the in-transit goods, the unposted $52,000 purchase, and
+    the FOB-destination goods: $940,000 + $35,000 + $52,000 + $24,000 = $1,051,000. The general ledger
+    must be increased by $111,000 (and the premature sale reversed).'

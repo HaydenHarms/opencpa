@@ -37,3 +37,85 @@ explanation: 'A finite-lived intangible is amortized over the shorter of its leg
   years, $30,000 a year. After three years its carrying amount is $270,000. The revised life is a change
   in accounting estimate, applied prospectively: $270,000 ÷ 5 = $54,000 a year from Year 4. The asset
   is recoverable, so there is no impairment.'
+variants:
+- stem: On January 1, Year 1, Jessop Co. buys a patent for $480,000. The patent has 20 years of legal
+    life remaining, and Jessop expects it to provide benefits for 16 years. Jessop amortizes it straight-line
+    with no residual value. On January 1, Year 5, a competitor's new technology leads Jessop to conclude
+    that the patent will provide benefits for only 6 more years; its future cash flows still exceed its
+    carrying amount. What patent amortization expense should Jessop recognize in Year 5?
+  choices:
+  - id: A
+    text: $30,000
+    rationale: Keeps the original 16-year life. A revised estimate of useful life is applied from Year
+      5 onward.
+  - id: B
+    text: $48,000
+    rationale: 'Spreads the original cost over the revised total life of 10 years. A change in estimate
+      is prospective: the remaining carrying amount is spread over the remaining life.'
+  - id: C
+    text: $60,000
+    rationale: Correct. Carrying amount $480,000 − 4 × $30,000 = $360,000, spread over the remaining 6
+      years.
+  - id: D
+    text: $80,000
+    rationale: Spreads the original $480,000 cost over the 6 remaining years, ignoring the four years
+      of amortization already recorded.
+  answer: C
+  explanation: 'A finite-lived intangible is amortized over the shorter of its legal and useful lives:
+    16 years, $30,000 a year. After four years its carrying amount is $360,000. The revised life is a
+    change in accounting estimate, applied prospectively: $360,000 ÷ 6 = $60,000 a year from Year 5. The
+    asset is recoverable, so there is no impairment.'
+- stem: On January 1, Year 1, Kimball Co. buys a patent for $240,000. The patent has 14 years of legal
+    life remaining, and Kimball expects it to provide benefits for 8 years. Kimball amortizes it straight-line
+    with no residual value. On January 1, Year 3, a competitor's new technology leads Kimball to conclude
+    that the patent will provide benefits for only 4 more years; its future cash flows still exceed its
+    carrying amount. What patent amortization expense should Kimball recognize in Year 3?
+  choices:
+  - id: A
+    text: $15,000
+    rationale: Spreads the $180,000 carrying amount over the 12 years of legal life remaining. Amortization
+      uses the shorter of legal and useful life.
+  - id: B
+    text: $30,000
+    rationale: Keeps the original 8-year life. A revised estimate of useful life is applied from Year
+      3 onward.
+  - id: C
+    text: $40,000
+    rationale: 'Spreads the original cost over the revised total life of 6 years. A change in estimate
+      is prospective: the remaining carrying amount is spread over the remaining life.'
+  - id: D
+    text: $45,000
+    rationale: Correct. Carrying amount $240,000 − 2 × $30,000 = $180,000, spread over the remaining 4
+      years.
+  answer: D
+  explanation: 'A finite-lived intangible is amortized over the shorter of its legal and useful lives:
+    8 years, $30,000 a year. After two years its carrying amount is $180,000. The revised life is a change
+    in accounting estimate, applied prospectively: $180,000 ÷ 4 = $45,000 a year from Year 3. The asset
+    is recoverable, so there is no impairment.'
+- stem: On January 1, Year 1, Lowry Co. buys a patent for $600,000. The patent has 19 years of legal life
+    remaining, and Lowry expects it to provide benefits for 12 years. Lowry amortizes it straight-line
+    with no residual value. On January 1, Year 6, a competitor's new technology leads Lowry to conclude
+    that the patent will provide benefits for only 5 more years; its future cash flows still exceed its
+    carrying amount. What patent amortization expense should Lowry recognize in Year 6?
+  choices:
+  - id: A
+    text: $25,000
+    rationale: Spreads the $350,000 carrying amount over the 14 years of legal life remaining. Amortization
+      uses the shorter of legal and useful life.
+  - id: B
+    text: $60,000
+    rationale: 'Spreads the original cost over the revised total life of 10 years. A change in estimate
+      is prospective: the remaining carrying amount is spread over the remaining life.'
+  - id: C
+    text: $70,000
+    rationale: Correct. Carrying amount $600,000 − 5 × $50,000 = $350,000, spread over the remaining 5
+      years.
+  - id: D
+    text: $120,000
+    rationale: Spreads the original $600,000 cost over the 5 remaining years, ignoring the five years
+      of amortization already recorded.
+  answer: C
+  explanation: 'A finite-lived intangible is amortized over the shorter of its legal and useful lives:
+    12 years, $50,000 a year. After five years its carrying amount is $350,000. The revised life is a
+    change in accounting estimate, applied prospectively: $350,000 ÷ 5 = $70,000 a year from Year 6. The
+    asset is recoverable, so there is no impairment.'

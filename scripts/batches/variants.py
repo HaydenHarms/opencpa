@@ -12,7 +12,7 @@ from decimal import Decimal as D, ROUND_HALF_UP
 
 import yaml
 
-from common import attach_variants, audit
+from common import attach_variants, audit, fix_articles
 
 WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight",
          9: "nine", 10: "ten", 11: "eleven", 12: "twelve"}
@@ -88,6 +88,9 @@ def run(families, content_dir):
             item = yaml.safe_load(f)
         item.pop("variants", None)
         base = build(params[0])
+        base["stem"], base["explanation"] = fix_articles(base["stem"]), fix_articles(base["explanation"])
+        for c in base["choices"]:
+            c["text"], c["rationale"] = fix_articles(c["text"]), fix_articles(c["rationale"])
         problems = same_as_reviewed(item, base)
         if problems:
             print(f"FAIL {item_id}: parameter set 0 does not rebuild the reviewed item ({', '.join(problems)})",

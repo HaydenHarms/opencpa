@@ -37,3 +37,82 @@ answer: B
 explanation: 'Lease payments include the amount the lessee expects to owe under a residual value guarantee:
   $40,000 guaranteed − $30,000 expected value = $10,000. Liability = $50,000 × 4.2124 + $10,000 × 0.7473
   = $210,620 + $7,473 = $218,093.'
+variants:
+- stem: On January 1, Year 1, Dawes Co. leases a machine for four years. It pays $80,000 at the end of
+    each year and guarantees the lessor that the machine will be worth $60,000 at the end of the lease;
+    Dawes expects its value then to be $45,000. The discount rate is 7%, and present value factors at
+    7% for four periods are 3.3872 for an ordinary annuity and 0.7629 for a single sum. At what amount
+    should Dawes initially measure its lease liability?
+  choices:
+  - id: A
+    text: $282,420
+    rationale: Correct. $80,000 × 3.3872 = $270,976, plus the $15,000 expected to be owed under the guarantee
+      × 0.7629 = $11,444.
+  - id: B
+    text: $305,307
+    rationale: Discounts the $45,000 expected residual value instead of the $15,000 Dawes expects to owe
+      under the guarantee.
+  - id: C
+    text: $316,750
+    rationale: Includes the full $60,000 guarantee. Only the amount probable of being owed ($60,000 −
+      $45,000) is a lease payment.
+  - id: D
+    text: $335,000
+    rationale: Adds the undiscounted payments and expected guarantee payment. The liability is the present
+      value of the lease payments.
+  answer: A
+  explanation: 'Lease payments include the amount the lessee expects to owe under a residual value guarantee:
+    $60,000 guaranteed − $45,000 expected value = $15,000. Liability = $80,000 × 3.3872 + $15,000 × 0.7629
+    = $270,976 + $11,444 = $282,420.'
+- stem: On January 1, Year 1, Ebbets Co. leases a machine for six years. It pays $30,000 at the end of
+    each year and guarantees the lessor that the machine will be worth $25,000 at the end of the lease;
+    Ebbets expects its value then to be $10,000. The discount rate is 5%, and present value factors at
+    5% for six periods are 5.0757 for an ordinary annuity and 0.7462 for a single sum. At what amount
+    should Ebbets initially measure its lease liability?
+  choices:
+  - id: A
+    text: $152,271
+    rationale: Omits the residual value guarantee. The amount Ebbets expects to owe under the guarantee
+      is a lease payment.
+  - id: B
+    text: $159,733
+    rationale: Discounts the $10,000 expected residual value instead of the $15,000 Ebbets expects to
+      owe under the guarantee.
+  - id: C
+    text: $163,464
+    rationale: Correct. $30,000 × 5.0757 = $152,271, plus the $15,000 expected to be owed under the guarantee
+      × 0.7462 = $11,193.
+  - id: D
+    text: $170,926
+    rationale: Includes the full $25,000 guarantee. Only the amount probable of being owed ($25,000 −
+      $10,000) is a lease payment.
+  answer: C
+  explanation: 'Lease payments include the amount the lessee expects to owe under a residual value guarantee:
+    $25,000 guaranteed − $10,000 expected value = $15,000. Liability = $30,000 × 5.0757 + $15,000 × 0.7462
+    = $152,271 + $11,193 = $163,464.'
+- stem: On January 1, Year 1, Fallon Co. leases a machine for three years. It pays $100,000 at the end
+    of each year and guarantees the lessor that the machine will be worth $80,000 at the end of the lease;
+    Fallon expects its value then to be $70,000. The discount rate is 8%, and present value factors at
+    8% for three periods are 2.5771 for an ordinary annuity and 0.7938 for a single sum. At what amount
+    should Fallon initially measure its lease liability?
+  choices:
+  - id: A
+    text: $257,710
+    rationale: Omits the residual value guarantee. The amount Fallon expects to owe under the guarantee
+      is a lease payment.
+  - id: B
+    text: $265,648
+    rationale: Correct. $100,000 × 2.5771 = $257,710, plus the $10,000 expected to be owed under the guarantee
+      × 0.7938 = $7,938.
+  - id: C
+    text: $310,000
+    rationale: Adds the undiscounted payments and expected guarantee payment. The liability is the present
+      value of the lease payments.
+  - id: D
+    text: $321,214
+    rationale: Includes the full $80,000 guarantee. Only the amount probable of being owed ($80,000 −
+      $70,000) is a lease payment.
+  answer: B
+  explanation: 'Lease payments include the amount the lessee expects to owe under a residual value guarantee:
+    $80,000 guaranteed − $70,000 expected value = $10,000. Liability = $100,000 × 2.5771 + $10,000 × 0.7938
+    = $257,710 + $7,938 = $265,648.'

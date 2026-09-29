@@ -48,3 +48,112 @@ explanation: Four corrections. (1) A short-term obligation is excluded from curr
   year is current. (4) An overdraft at a bank where the entity has no other accounts cannot be offset
   against cash elsewhere; it is a current liability. Current liabilities = $180,000 + $40,000 + $50,000
   + $35,000 = $305,000.
+variants:
+- stem: 'Everly Co.''s December 31, Year 1, financial statements will be issued on March 1, Year 2. Its
+    draft classified balance sheet reports total current liabilities of $655,000: accounts payable $260,000,
+    accrued wages $55,000, a note payable due June 30, Year 2, of $300,000, and dividends payable of $40,000.
+    Supporting documents show: (1) on February 10, Year 2, Everly signed an agreement with a bank to refinance
+    the $300,000 note with a five-year loan; the agreement cannot be cancelled by the bank before Year
+    5, the bank is financially able to honor it, and Everly is in compliance with its terms; (2) the board
+    declared the $40,000 cash dividend on January 20, Year 2; (3) Everly''s $800,000 of serial bonds,
+    all shown as noncurrent, are repaid in ten annual installments of $80,000 beginning January 15, Year
+    2; and (4) Everly netted a $20,000 overdraft at Bank B, where it has no other accounts, against its
+    cash at Bank A. After correcting the draft, what are Everly''s total current liabilities?'
+  choices:
+  - id: A
+    text: $335,000
+    rationale: Reclassifies the note and removes the dividend but leaves the $80,000 bond installment
+      due January 15, Year 2, in noncurrent liabilities.
+  - id: B
+    text: $415,000
+    rationale: Correct. $260,000 + $55,000 + $80,000 current bond installment + $20,000 overdraft. The
+      refinanced note is noncurrent and the dividend is not yet a liability.
+  - id: C
+    text: $455,000
+    rationale: Keeps the $40,000 dividend. A dividend declared after the balance sheet date is not a liability
+      at year-end.
+  - id: D
+    text: $715,000
+    rationale: Keeps the $300,000 note in current liabilities. A noncancelable refinancing agreement signed
+      before the statements are issued lets it be classified as noncurrent.
+  answer: B
+  explanation: Four corrections. (1) A short-term obligation is excluded from current liabilities if,
+    before the statements are issued, the entity enters into a financing agreement that permits long-term
+    refinancing, is noncancelable for more than a year, is with a capable lender, and is not in violation.
+    The $300,000 note meets these conditions, so it moves to noncurrent. (2) A dividend becomes a liability
+    when declared; the January 20 declaration is not a Year 1 liability. (3) The $80,000 bond installment
+    due within a year is current. (4) An overdraft at a bank where the entity has no other accounts cannot
+    be offset against cash elsewhere; it is a current liability. Current liabilities = $260,000 + $55,000
+    + $80,000 + $20,000 = $415,000.
+- stem: 'Fordyce Co.''s December 31, Year 1, financial statements will be issued on March 1, Year 2. Its
+    draft classified balance sheet reports total current liabilities of $315,000: accounts payable $120,000,
+    accrued wages $30,000, a note payable due June 30, Year 2, of $150,000, and dividends payable of $15,000.
+    Supporting documents show: (1) on February 10, Year 2, Fordyce signed an agreement with a bank to
+    refinance the $150,000 note with a five-year loan; the agreement cannot be cancelled by the bank before
+    Year 5, the bank is financially able to honor it, and Fordyce is in compliance with its terms; (2)
+    the board declared the $15,000 cash dividend on January 20, Year 2; (3) Fordyce''s $250,000 of serial
+    bonds, all shown as noncurrent, are repaid in ten annual installments of $25,000 beginning January
+    15, Year 2; and (4) Fordyce netted a $45,000 overdraft at Bank B, where it has no other accounts,
+    against its cash at Bank A. After correcting the draft, what are Fordyce''s total current liabilities?'
+  choices:
+  - id: A
+    text: $175,000
+    rationale: Leaves the $45,000 overdraft netted against cash. An overdraft at a bank where Fordyce
+      has no other accounts cannot be offset; it is a current liability.
+  - id: B
+    text: $195,000
+    rationale: Reclassifies the note and removes the dividend but leaves the $25,000 bond installment
+      due January 15, Year 2, in noncurrent liabilities.
+  - id: C
+    text: $220,000
+    rationale: Correct. $120,000 + $30,000 + $25,000 current bond installment + $45,000 overdraft. The
+      refinanced note is noncurrent and the dividend is not yet a liability.
+  - id: D
+    text: $235,000
+    rationale: Keeps the $15,000 dividend. A dividend declared after the balance sheet date is not a liability
+      at year-end.
+  answer: C
+  explanation: Four corrections. (1) A short-term obligation is excluded from current liabilities if,
+    before the statements are issued, the entity enters into a financing agreement that permits long-term
+    refinancing, is noncancelable for more than a year, is with a capable lender, and is not in violation.
+    The $150,000 note meets these conditions, so it moves to noncurrent. (2) A dividend becomes a liability
+    when declared; the January 20 declaration is not a Year 1 liability. (3) The $25,000 bond installment
+    due within a year is current. (4) An overdraft at a bank where the entity has no other accounts cannot
+    be offset against cash elsewhere; it is a current liability. Current liabilities = $120,000 + $30,000
+    + $25,000 + $45,000 = $220,000.
+- stem: 'Gresham Co.''s December 31, Year 1, financial statements will be issued on March 1, Year 2. Its
+    draft classified balance sheet reports total current liabilities of $1,030,000: accounts payable $400,000,
+    accrued wages $70,000, a note payable due June 30, Year 2, of $500,000, and dividends payable of $60,000.
+    Supporting documents show: (1) on February 10, Year 2, Gresham signed an agreement with a bank to
+    refinance the $500,000 note with a five-year loan; the agreement cannot be cancelled by the bank before
+    Year 5, the bank is financially able to honor it, and Gresham is in compliance with its terms; (2)
+    the board declared the $60,000 cash dividend on January 20, Year 2; (3) Gresham''s $1,000,000 of serial
+    bonds, all shown as noncurrent, are repaid in ten annual installments of $100,000 beginning January
+    15, Year 2; and (4) Gresham netted a $30,000 overdraft at Bank B, where it has no other accounts,
+    against its cash at Bank A. After correcting the draft, what are Gresham''s total current liabilities?'
+  choices:
+  - id: A
+    text: $570,000
+    rationale: Leaves the $30,000 overdraft netted against cash. An overdraft at a bank where Gresham
+      has no other accounts cannot be offset; it is a current liability.
+  - id: B
+    text: $600,000
+    rationale: Correct. $400,000 + $70,000 + $100,000 current bond installment + $30,000 overdraft. The
+      refinanced note is noncurrent and the dividend is not yet a liability.
+  - id: C
+    text: $660,000
+    rationale: Keeps the $60,000 dividend. A dividend declared after the balance sheet date is not a liability
+      at year-end.
+  - id: D
+    text: $1,100,000
+    rationale: Keeps the $500,000 note in current liabilities. A noncancelable refinancing agreement signed
+      before the statements are issued lets it be classified as noncurrent.
+  answer: B
+  explanation: Four corrections. (1) A short-term obligation is excluded from current liabilities if,
+    before the statements are issued, the entity enters into a financing agreement that permits long-term
+    refinancing, is noncancelable for more than a year, is with a capable lender, and is not in violation.
+    The $500,000 note meets these conditions, so it moves to noncurrent. (2) A dividend becomes a liability
+    when declared; the January 20 declaration is not a Year 1 liability. (3) The $100,000 bond installment
+    due within a year is current. (4) An overdraft at a bank where the entity has no other accounts cannot
+    be offset against cash elsewhere; it is a current liability. Current liabilities = $400,000 + $70,000
+    + $100,000 + $30,000 = $600,000.

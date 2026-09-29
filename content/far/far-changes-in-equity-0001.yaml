@@ -46,3 +46,106 @@ explanation: '(1) A stock dividend of 10% is small, so retained earnings is char
   is a prior-period error, corrected by reducing beginning retained earnings by its after-tax effect of
   $30,000. Corrected ending retained earnings = $1,000,000 − $30,000 + $420,000 − $60,000 − $150,000 =
   $1,180,000.'
+variants:
+- stem: 'Quinlan Inc.''s draft Year 2 statement of changes in equity reports ending retained earnings
+    of $2,390,000, computed as beginning retained earnings of $2,000,000 (as previously reported), plus
+    net income of $650,000, less cash dividends of $100,000, less a $40,000 stock dividend, less $120,000
+    for treasury stock. Supporting documents show: (1) the stock dividend was 20,000 shares of $2 par
+    common stock (8% of the shares outstanding), distributed when the market price was $25 per share;
+    (2) Quinlan paid $120,000 to reacquire its own shares and holds them in treasury under the cost method;
+    and (3) in Year 2 Quinlan discovered that it had omitted $60,000 of depreciation in Year 1, an error
+    with an after-tax effect of $45,000. Year 2 net income is correct. What is Quinlan''s corrected ending
+    retained earnings for Year 2?'
+  choices:
+  - id: A
+    text: $1,885,000
+    rationale: Fixes the stock dividend and the prior-period error but still charges the treasury stock
+      purchase to retained earnings. Under the cost method, treasury stock is a separate deduction from
+      total equity.
+  - id: B
+    text: $1,990,000
+    rationale: Adjusts beginning retained earnings by the $60,000 pretax error. The prior-period adjustment
+      is net of tax ($45,000).
+  - id: C
+    text: $2,005,000
+    rationale: Correct. $2,000,000 − $45,000 prior-period adjustment + $650,000 − $100,000 − $500,000
+      stock dividend at market value.
+  - id: D
+    text: $2,050,000
+    rationale: Omits the prior-period adjustment. The Year 1 error is corrected by restating beginning
+      retained earnings, net of tax.
+  answer: C
+  explanation: '(1) A stock dividend of 8% is small, so retained earnings is charged at market value:
+    20,000 × $25 = $500,000, not the $40,000 par. (2) Treasury stock under the cost method is shown as
+    a deduction from total equity; buying it does not reduce retained earnings. (3) The omitted Year 1
+    depreciation is a prior-period error, corrected by reducing beginning retained earnings by its after-tax
+    effect of $45,000. Corrected ending retained earnings = $2,000,000 − $45,000 + $650,000 − $100,000
+    − $500,000 = $2,005,000.'
+- stem: 'Rourke Inc.''s draft Year 2 statement of changes in equity reports ending retained earnings of
+    $755,000, computed as beginning retained earnings of $600,000 (as previously reported), plus net income
+    of $250,000, less cash dividends of $40,000, less a $5,000 stock dividend, less $50,000 for treasury
+    stock. Supporting documents show: (1) the stock dividend was 5,000 shares of $1 par common stock (5%
+    of the shares outstanding), distributed when the market price was $12 per share; (2) Rourke paid $50,000
+    to reacquire its own shares and holds them in treasury under the cost method; and (3) in Year 2 Rourke
+    discovered that it had omitted $20,000 of depreciation in Year 1, an error with an after-tax effect
+    of $15,000. Year 2 net income is correct. What is Rourke''s corrected ending retained earnings for
+    Year 2?'
+  choices:
+  - id: A
+    text: $685,000
+    rationale: Fixes the stock dividend and the prior-period error but still charges the treasury stock
+      purchase to retained earnings. Under the cost method, treasury stock is a separate deduction from
+      total equity.
+  - id: B
+    text: $735,000
+    rationale: Correct. $600,000 − $15,000 prior-period adjustment + $250,000 − $40,000 − $60,000 stock
+      dividend at market value.
+  - id: C
+    text: $750,000
+    rationale: Omits the prior-period adjustment. The Year 1 error is corrected by restating beginning
+      retained earnings, net of tax.
+  - id: D
+    text: $790,000
+    rationale: Records the stock dividend at par. A distribution of less than 20–25% of the shares outstanding
+      is recorded at the shares' market value.
+  answer: B
+  explanation: '(1) A stock dividend of 5% is small, so retained earnings is charged at market value:
+    5,000 × $12 = $60,000, not the $5,000 par. (2) Treasury stock under the cost method is shown as a
+    deduction from total equity; buying it does not reduce retained earnings. (3) The omitted Year 1 depreciation
+    is a prior-period error, corrected by reducing beginning retained earnings by its after-tax effect
+    of $15,000. Corrected ending retained earnings = $600,000 − $15,000 + $250,000 − $40,000 − $60,000
+    = $735,000.'
+- stem: 'Sherwood Inc.''s draft Year 2 statement of changes in equity reports ending retained earnings
+    of $1,815,000, computed as beginning retained earnings of $1,500,000 (as previously reported), plus
+    net income of $500,000, less cash dividends of $80,000, less a $15,000 stock dividend, less $90,000
+    for treasury stock. Supporting documents show: (1) the stock dividend was 15,000 shares of $1 par
+    common stock (10% of the shares outstanding), distributed when the market price was $20 per share;
+    (2) Sherwood paid $90,000 to reacquire its own shares and holds them in treasury under the cost method;
+    and (3) in Year 2 Sherwood discovered that it had omitted $80,000 of depreciation in Year 1, an error
+    with an after-tax effect of $60,000. Year 2 net income is correct. What is Sherwood''s corrected ending
+    retained earnings for Year 2?'
+  choices:
+  - id: A
+    text: $1,470,000
+    rationale: Fixes the stock dividend and the prior-period error but still charges the treasury stock
+      purchase to retained earnings. Under the cost method, treasury stock is a separate deduction from
+      total equity.
+  - id: B
+    text: $1,540,000
+    rationale: Adjusts beginning retained earnings by the $80,000 pretax error. The prior-period adjustment
+      is net of tax ($60,000).
+  - id: C
+    text: $1,560,000
+    rationale: Correct. $1,500,000 − $60,000 prior-period adjustment + $500,000 − $80,000 − $300,000 stock
+      dividend at market value.
+  - id: D
+    text: $1,845,000
+    rationale: Records the stock dividend at par. A distribution of less than 20–25% of the shares outstanding
+      is recorded at the shares' market value.
+  answer: C
+  explanation: '(1) A stock dividend of 10% is small, so retained earnings is charged at market value:
+    15,000 × $20 = $300,000, not the $15,000 par. (2) Treasury stock under the cost method is shown as
+    a deduction from total equity; buying it does not reduce retained earnings. (3) The omitted Year 1
+    depreciation is a prior-period error, corrected by reducing beginning retained earnings by its after-tax
+    effect of $60,000. Corrected ending retained earnings = $1,500,000 − $60,000 + $500,000 − $80,000
+    − $300,000 = $1,560,000.'

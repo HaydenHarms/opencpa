@@ -40,3 +40,91 @@ explanation: Cash equivalents are short-term, highly liquid investments with ori
   months when bought) and the six-month CD do not, even though little time remains. The sinking fund is
   restricted and reported separately, and the overdraft at another bank is a current liability. Cash and
   cash equivalents = $120,000 + $80,000 + $1,000 + $50,000 = $251,000.
+variants:
+- stem: 'At December 31, Year 1, Garrick Corp. has: checking account $180,000; savings account $60,000;
+    petty cash $2,000; a Treasury bill bought December 1, Year 1, that matures February 28, Year 2, $40,000;
+    a Treasury bill bought June 1, Year 1, that matures February 28, Year 2, $55,000; a six-month certificate
+    of deposit maturing March 31, Year 2, $30,000; $45,000 held by a trustee in a bond sinking fund; and
+    an $11,000 overdraft in an account at a different bank. What amount should Garrick report as cash
+    and cash equivalents?'
+  choices:
+  - id: A
+    text: $271,000
+    rationale: Nets the $11,000 overdraft at another bank against cash. An overdraft at a bank where the
+      entity has no other accounts is a current liability.
+  - id: B
+    text: $282,000
+    rationale: Correct. $180,000 + $60,000 + $2,000 + the $40,000 Treasury bill bought with a three-month
+      maturity. The overdraft at another bank is a liability and is not netted.
+  - id: C
+    text: $312,000
+    rationale: Includes the six-month certificate of deposit. Its original maturity is more than three
+      months, so it is a short-term investment, not a cash equivalent.
+  - id: D
+    text: $337,000
+    rationale: Includes the Treasury bill bought June 1. Cash equivalents must have an original maturity
+      to the holder of three months or less; this bill had about nine.
+  answer: B
+  explanation: Cash equivalents are short-term, highly liquid investments with original maturities to
+    the holder of three months or less. The December 1 Treasury bill qualifies; the June 1 bill (about
+    nine months when bought) and the six-month CD do not, even though little time remains. The sinking
+    fund is restricted and reported separately, and the overdraft at another bank is a current liability.
+    Cash and cash equivalents = $180,000 + $60,000 + $2,000 + $40,000 = $282,000.
+- stem: 'At December 31, Year 1, Hadden Corp. has: checking account $95,000; savings account $120,000;
+    petty cash $1,500; a Treasury bill bought December 1, Year 1, that matures February 28, Year 2, $70,000;
+    a Treasury bill bought June 1, Year 1, that matures February 28, Year 2, $25,000; a six-month certificate
+    of deposit maturing March 31, Year 2, $60,000; $20,000 held by a trustee in a bond sinking fund; and
+    an $18,000 overdraft in an account at a different bank. What amount should Hadden report as cash and
+    cash equivalents?'
+  choices:
+  - id: A
+    text: $286,500
+    rationale: Correct. $95,000 + $120,000 + $1,500 + the $70,000 Treasury bill bought with a three-month
+      maturity. The overdraft at another bank is a liability and is not netted.
+  - id: B
+    text: $306,500
+    rationale: Includes the $20,000 sinking fund. Cash restricted for debt retirement is not available
+      for current operations and is reported separately.
+  - id: C
+    text: $311,500
+    rationale: Includes the Treasury bill bought June 1. Cash equivalents must have an original maturity
+      to the holder of three months or less; this bill had about nine.
+  - id: D
+    text: $346,500
+    rationale: Includes the six-month certificate of deposit. Its original maturity is more than three
+      months, so it is a short-term investment, not a cash equivalent.
+  answer: A
+  explanation: Cash equivalents are short-term, highly liquid investments with original maturities to
+    the holder of three months or less. The December 1 Treasury bill qualifies; the June 1 bill (about
+    nine months when bought) and the six-month CD do not, even though little time remains. The sinking
+    fund is restricted and reported separately, and the overdraft at another bank is a current liability.
+    Cash and cash equivalents = $95,000 + $120,000 + $1,500 + $70,000 = $286,500.
+- stem: 'At December 31, Year 1, Ingalls Corp. has: checking account $210,000; savings account $45,000;
+    petty cash $1,000; a Treasury bill bought December 1, Year 1, that matures February 28, Year 2, $35,000;
+    a Treasury bill bought June 1, Year 1, that matures February 28, Year 2, $40,000; a six-month certificate
+    of deposit maturing March 31, Year 2, $25,000; $30,000 held by a trustee in a bond sinking fund; and
+    an $8,500 overdraft in an account at a different bank. What amount should Ingalls report as cash and
+    cash equivalents?'
+  choices:
+  - id: A
+    text: $282,500
+    rationale: Nets the $8,500 overdraft at another bank against cash. An overdraft at a bank where the
+      entity has no other accounts is a current liability.
+  - id: B
+    text: $291,000
+    rationale: Correct. $210,000 + $45,000 + $1,000 + the $35,000 Treasury bill bought with a three-month
+      maturity. The overdraft at another bank is a liability and is not netted.
+  - id: C
+    text: $321,000
+    rationale: Includes the $30,000 sinking fund. Cash restricted for debt retirement is not available
+      for current operations and is reported separately.
+  - id: D
+    text: $331,000
+    rationale: Includes the Treasury bill bought June 1. Cash equivalents must have an original maturity
+      to the holder of three months or less; this bill had about nine.
+  answer: B
+  explanation: Cash equivalents are short-term, highly liquid investments with original maturities to
+    the holder of three months or less. The December 1 Treasury bill qualifies; the June 1 bill (about
+    nine months when bought) and the six-month CD do not, even though little time remains. The sinking
+    fund is restricted and reported separately, and the overdraft at another bank is a current liability.
+    Cash and cash equivalents = $210,000 + $45,000 + $1,000 + $35,000 = $291,000.
