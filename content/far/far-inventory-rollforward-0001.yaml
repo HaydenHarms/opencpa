@@ -33,3 +33,73 @@ answer: B
 explanation: Book (perpetual) inventory = beginning $120,000 + purchases $900,000 − returns $20,000 +
   freight-in $15,000 − cost of goods sold $870,000 = $145,000. The count shows $125,000, so $20,000 of
   inventory is missing and is recorded as shrinkage (usually in cost of goods sold).
+variants:
+- stem: Voss Co. uses a perpetual inventory system. Its inventory rollforward for Year 1 shows beginning
+    inventory of $210,000, purchases of $1,400,000 per the accounts payable subledger, purchase returns
+    of $35,000, freight-in of $12,000, and cost of goods sold of $1,380,000 per the general ledger. A
+    year-end physical count, priced at cost, totals $181,000. What inventory shrinkage should Voss record?
+  choices:
+  - id: A
+    text: $2,000
+    rationale: Subtracts the freight-in instead of adding it. Freight-in is part of inventory cost.
+  - id: B
+    text: $14,000
+    rationale: Leaves the $12,000 of freight-in out of the rollforward. Freight-in is part of inventory
+      cost.
+  - id: C
+    text: $26,000
+    rationale: Correct. Book inventory $210,000 + $1,400,000 − $35,000 + $12,000 − $1,380,000 = $207,000,
+      less the $181,000 count.
+  - id: D
+    text: $61,000
+    rationale: Leaves the $35,000 of purchase returns out of the rollforward. Returned goods leave inventory.
+  answer: C
+  explanation: Book (perpetual) inventory = beginning $210,000 + purchases $1,400,000 − returns $35,000
+    + freight-in $12,000 − cost of goods sold $1,380,000 = $207,000. The count shows $181,000, so $26,000
+    of inventory is missing and is recorded as shrinkage (usually in cost of goods sold).
+- stem: Wolcott Co. uses a perpetual inventory system. Its inventory rollforward for Year 1 shows beginning
+    inventory of $90,000, purchases of $640,000 per the accounts payable subledger, purchase returns of
+    $15,000, freight-in of $6,000, and cost of goods sold of $610,000 per the general ledger. A year-end
+    physical count, priced at cost, totals $96,000. What inventory shrinkage should Wolcott record?
+  choices:
+  - id: A
+    text: $3,000
+    rationale: Subtracts the freight-in instead of adding it. Freight-in is part of inventory cost.
+  - id: B
+    text: $15,000
+    rationale: Correct. Book inventory $90,000 + $640,000 − $15,000 + $6,000 − $610,000 = $111,000, less
+      the $96,000 count.
+  - id: C
+    text: $30,000
+    rationale: Leaves the $15,000 of purchase returns out of the rollforward. Returned goods leave inventory.
+  - id: D
+    text: $45,000
+    rationale: Adds the purchase returns instead of subtracting them.
+  answer: B
+  explanation: Book (perpetual) inventory = beginning $90,000 + purchases $640,000 − returns $15,000 +
+    freight-in $6,000 − cost of goods sold $610,000 = $111,000. The count shows $96,000, so $15,000 of
+    inventory is missing and is recorded as shrinkage (usually in cost of goods sold).
+- stem: Yardley Co. uses a perpetual inventory system. Its inventory rollforward for Year 1 shows beginning
+    inventory of $150,000, purchases of $1,100,000 per the accounts payable subledger, purchase returns
+    of $28,000, freight-in of $10,000, and cost of goods sold of $1,060,000 per the general ledger. A
+    year-end physical count, priced at cost, totals $150,000. What inventory shrinkage should Yardley
+    record?
+  choices:
+  - id: A
+    text: $2,000
+    rationale: Subtracts the freight-in instead of adding it. Freight-in is part of inventory cost.
+  - id: B
+    text: $12,000
+    rationale: Leaves the $10,000 of freight-in out of the rollforward. Freight-in is part of inventory
+      cost.
+  - id: C
+    text: $22,000
+    rationale: Correct. Book inventory $150,000 + $1,100,000 − $28,000 + $10,000 − $1,060,000 = $172,000,
+      less the $150,000 count.
+  - id: D
+    text: $50,000
+    rationale: Leaves the $28,000 of purchase returns out of the rollforward. Returned goods leave inventory.
+  answer: C
+  explanation: Book (perpetual) inventory = beginning $150,000 + purchases $1,100,000 − returns $28,000
+    + freight-in $10,000 − cost of goods sold $1,060,000 = $172,000. The count shows $150,000, so $22,000
+    of inventory is missing and is recorded as shrinkage (usually in cost of goods sold).

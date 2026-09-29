@@ -43,21 +43,21 @@ variants:
     method, what is Norris's estimated inventory loss?
   choices:
   - id: A
-    text: $331,000
-    rationale: Estimates cost of goods sold from gross sales ($1,700,000). Sales returns reduce the sales
-      on which cost of goods sold is based.
-  - id: B
     text: $352,000
     rationale: Leaves the $18,000 of freight-in out of goods available for sale. Freight-in is part of
       inventory cost.
-  - id: C
+  - id: B
     text: $370,000
     rationale: Correct. Goods available $1,458,000 − cost of goods sold $1,066,000 ($1,640,000 × 65%)
       − $22,000 salvaged.
-  - id: D
+  - id: C
     text: $392,000
     rationale: Does not subtract the $22,000 of salvaged goods.
-  answer: C
+  - id: D
+    text: $862,000
+    rationale: Applies the 35% gross profit rate as the cost of goods sold ratio. Cost of goods sold is
+      65% of net sales.
+  answer: B
   explanation: Goods available = $320,000 + $1,150,000 − $30,000 + $18,000 = $1,458,000. Net sales = $1,700,000
     − $60,000 = $1,640,000; estimated cost of goods sold = $1,640,000 × (1 − 35%) = $1,066,000. Estimated
     inventory at the date of the fire = $392,000; less $22,000 salvaged, the loss is $370,000.
@@ -80,8 +80,9 @@ variants:
     rationale: Correct. Goods available $766,000 − cost of goods sold $645,000 ($860,000 × 75%) − $10,000
       salvaged.
   - id: D
-    text: $121,000
-    rationale: Does not subtract the $10,000 of salvaged goods.
+    text: $541,000
+    rationale: Applies the 25% gross profit rate as the cost of goods sold ratio. Cost of goods sold is
+      75% of net sales.
   answer: C
   explanation: Goods available = $150,000 + $620,000 − $12,000 + $8,000 = $766,000. Net sales = $900,000
     − $40,000 = $860,000; estimated cost of goods sold = $860,000 × (1 − 25%) = $645,000. Estimated inventory
@@ -97,17 +98,17 @@ variants:
     rationale: Estimates cost of goods sold from gross sales ($2,200,000). Sales returns reduce the sales
       on which cost of goods sold is based.
   - id: B
-    text: $575,000
-    rationale: Leaves the $15,000 of freight-in out of goods available for sale. Freight-in is part of
-      inventory cost.
-  - id: C
     text: $590,000
     rationale: Correct. Goods available $1,880,000 − cost of goods sold $1,260,000 ($2,100,000 × 60%)
       − $30,000 salvaged.
-  - id: D
+  - id: C
     text: $620,000
     rationale: Does not subtract the $30,000 of salvaged goods.
-  answer: C
+  - id: D
+    text: $1,010,000
+    rationale: Applies the 40% gross profit rate as the cost of goods sold ratio. Cost of goods sold is
+      60% of net sales.
+  answer: B
   explanation: Goods available = $410,000 + $1,480,000 − $25,000 + $15,000 = $1,880,000. Net sales = $2,200,000
     − $100,000 = $2,100,000; estimated cost of goods sold = $2,100,000 × (1 − 40%) = $1,260,000. Estimated
     inventory at the date of the fire = $620,000; less $30,000 salvaged, the loss is $590,000.

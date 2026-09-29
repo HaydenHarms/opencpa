@@ -46,21 +46,22 @@ variants:
     comply with U.S. GAAP, what is net cash provided by operating activities?'
   choices:
   - id: A
+    text: $451,000
+    rationale: Also subtracts the $9,000 increase in the deferred tax liability. Deferred tax expense
+      uses no cash, so the increase is added back.
+  - id: B
     text: $469,000
     rationale: Correct. The inventory increase is subtracted ($70,000 swing) and the stock proceeds move
       to financing.
-  - id: B
+  - id: C
     text: $539,000
     rationale: Moves the stock proceeds to financing but still adds the increase in inventory. Buying
       more inventory uses cash.
-  - id: C
+  - id: D
     text: $619,000
     rationale: Subtracts the inventory increase but leaves the $150,000 of stock proceeds in operating
       activities.
-  - id: D
-    text: $689,000
-    rationale: Accepts the draft.
-  answer: A
+  answer: B
   explanation: 'Two errors. An increase in inventory is subtracted under the indirect method, not added:
     that changes the total by $70,000. Proceeds from issuing stock are a financing inflow. The other adjustments
     are right: depreciation, discount amortization and the deferred tax increase are noncash charges added
@@ -74,21 +75,21 @@ variants:
     with U.S. GAAP, what is net cash provided by operating activities?'
   choices:
   - id: A
+    text: $243,000
+    rationale: Also subtracts the $15,000 increase in the deferred tax liability. Deferred tax expense
+      uses no cash, so the increase is added back.
+  - id: B
+    text: $267,000
+    rationale: Also subtracts the $3,000 of discount amortization. It is interest expense that uses no
+      cash, so it is added back.
+  - id: C
     text: $273,000
     rationale: Correct. The inventory increase is subtracted ($56,000 swing) and the stock proceeds move
       to financing.
-  - id: B
-    text: $329,000
-    rationale: Moves the stock proceeds to financing but still adds the increase in inventory. Buying
-      more inventory uses cash.
-  - id: C
-    text: $353,000
-    rationale: Subtracts the inventory increase but leaves the $80,000 of stock proceeds in operating
-      activities.
   - id: D
     text: $409,000
     rationale: Accepts the draft.
-  answer: A
+  answer: C
   explanation: 'Two errors. An increase in inventory is subtracted under the indirect method, not added:
     that changes the total by $56,000. Proceeds from issuing stock are a financing inflow. The other adjustments
     are right: depreciation, discount amortization and the deferred tax increase are noncash charges added
@@ -102,13 +103,13 @@ variants:
     comply with U.S. GAAP, what is net cash provided by operating activities?'
   choices:
   - id: A
+    text: $542,000
+    rationale: Also subtracts the $5,000 of discount amortization. It is interest expense that uses no
+      cash, so it is added back.
+  - id: B
     text: $552,000
     rationale: Correct. The inventory increase is subtracted ($94,000 swing) and the stock proceeds move
       to financing.
-  - id: B
-    text: $646,000
-    rationale: Moves the stock proceeds to financing but still adds the increase in inventory. Buying
-      more inventory uses cash.
   - id: C
     text: $752,000
     rationale: Subtracts the inventory increase but leaves the $200,000 of stock proceeds in operating
@@ -116,7 +117,7 @@ variants:
   - id: D
     text: $846,000
     rationale: Accepts the draft.
-  answer: A
+  answer: B
   explanation: 'Two errors. An increase in inventory is subtracted under the indirect method, not added:
     that changes the total by $94,000. Proceeds from issuing stock are a financing inflow. The other adjustments
     are right: depreciation, discount amortization and the deferred tax increase are noncash charges added

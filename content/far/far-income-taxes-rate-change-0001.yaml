@@ -48,17 +48,17 @@ variants:
     rationale: Measures the ending liability at the old 21% rate. Deferred taxes are measured at the enacted
       rate for the years the differences reverse.
   - id: B
+    text: $9,000
+    rationale: Records only the effect of the rate change on the beginning differences and leaves out
+      the tax on the $40,000 of new differences.
+  - id: C
     text: $9,600
     rationale: Applies the new rate only to the $40,000 of new differences and does not remeasure the
       beginning liability for the rate change.
-  - id: C
+  - id: D
     text: $18,600
     rationale: Correct. Ending liability $340,000 × 24% = $81,600, less the $63,000 beginning balance.
-  - id: D
-    text: $81,600
-    rationale: Reports the ending deferred tax liability as the year's expense, ignoring the $63,000 already
-      recorded.
-  answer: C
+  answer: D
   explanation: Deferred tax liabilities are measured at the enacted rate expected to apply when the differences
     reverse, and the effect of a rate change is recognized in income from continuing operations in the
     period of enactment. Ending liability = $340,000 × 24% = $81,600. Deferred tax expense = $81,600 −
@@ -96,13 +96,13 @@ variants:
     should Warde recognize for Year 2?
   choices:
   - id: A
-    text: $16,800
-    rationale: Measures the ending liability at the old 21% rate. Deferred taxes are measured at the enacted
-      rate for the years the differences reverse.
-  - id: B
     text: $20,800
     rationale: Applies the new rate only to the $80,000 of new differences and does not remeasure the
       beginning liability for the rate change.
+  - id: B
+    text: $25,000
+    rationale: Records only the effect of the rate change on the beginning differences and leaves out
+      the tax on the $80,000 of new differences.
   - id: C
     text: $45,800
     rationale: Correct. Ending liability $580,000 × 26% = $150,800, less the $105,000 beginning balance.

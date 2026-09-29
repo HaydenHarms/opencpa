@@ -35,3 +35,77 @@ answer: C
 explanation: 'Rollforward: beginning $200,000 + credit sales + $5,000 recovery reinstated − $1,180,000
   collections − $18,000 write-offs = ending $260,000. Credit sales = $260,000 + $1,180,000 + $18,000 −
   $200,000 − $5,000 = $1,253,000.'
+variants:
+- stem: Tanner Co. is preparing a rollforward of its trade receivables to determine credit sales. Receivables
+    were $340,000 at the start of the year and $310,000 at the end, per the aged subledger. Cash receipts
+    from customers, per the cash receipts journal, were $2,050,000, which includes $8,000 collected on
+    an account written off in an earlier year. Write-offs during the year were $26,000. All sales are
+    on credit. What should credit sales for the year be?
+  choices:
+  - id: A
+    text: $1,986,000
+    rationale: Adds the write-offs instead of subtracting them. Write-offs reduce receivables, so more
+      sales are needed to reach the ending balance.
+  - id: B
+    text: $2,038,000
+    rationale: Correct. $310,000 + $2,050,000 + $26,000 − $340,000 − $8,000 reinstated recovery.
+  - id: C
+    text: $2,046,000
+    rationale: Treats the $8,000 recovery as a collection of current sales. A recovery is first reinstated
+      in receivables and then collected, so it is not a sale.
+  - id: D
+    text: $2,098,000
+    rationale: Reverses the change in receivables, subtracting the ending balance and adding the beginning
+      balance.
+  answer: B
+  explanation: 'Rollforward: beginning $340,000 + credit sales + $8,000 recovery reinstated − $2,050,000
+    collections − $26,000 write-offs = ending $310,000. Credit sales = $310,000 + $2,050,000 + $26,000
+    − $340,000 − $8,000 = $2,038,000.'
+- stem: Ulrich Co. is preparing a rollforward of its trade receivables to determine credit sales. Receivables
+    were $150,000 at the start of the year and $190,000 at the end, per the aged subledger. Cash receipts
+    from customers, per the cash receipts journal, were $870,000, which includes $3,000 collected on an
+    account written off in an earlier year. Write-offs during the year were $12,000. All sales are on
+    credit. What should credit sales for the year be?
+  choices:
+  - id: A
+    text: $839,000
+    rationale: Reverses the change in receivables, subtracting the ending balance and adding the beginning
+      balance.
+  - id: B
+    text: $895,000
+    rationale: Adds the write-offs instead of subtracting them. Write-offs reduce receivables, so more
+      sales are needed to reach the ending balance.
+  - id: C
+    text: $907,000
+    rationale: Leaves out the $12,000 of write-offs.
+  - id: D
+    text: $919,000
+    rationale: Correct. $190,000 + $870,000 + $12,000 − $150,000 − $3,000 reinstated recovery.
+  answer: D
+  explanation: 'Rollforward: beginning $150,000 + credit sales + $3,000 recovery reinstated − $870,000
+    collections − $12,000 write-offs = ending $190,000. Credit sales = $190,000 + $870,000 + $12,000 −
+    $150,000 − $3,000 = $919,000.'
+- stem: Varney Co. is preparing a rollforward of its trade receivables to determine credit sales. Receivables
+    were $480,000 at the start of the year and $450,000 at the end, per the aged subledger. Cash receipts
+    from customers, per the cash receipts journal, were $3,100,000, which includes $12,000 collected on
+    an account written off in an earlier year. Write-offs during the year were $40,000. All sales are
+    on credit. What should credit sales for the year be?
+  choices:
+  - id: A
+    text: $3,018,000
+    rationale: Adds the write-offs instead of subtracting them. Write-offs reduce receivables, so more
+      sales are needed to reach the ending balance.
+  - id: B
+    text: $3,058,000
+    rationale: Leaves out the $40,000 of write-offs.
+  - id: C
+    text: $3,098,000
+    rationale: Correct. $450,000 + $3,100,000 + $40,000 − $480,000 − $12,000 reinstated recovery.
+  - id: D
+    text: $3,110,000
+    rationale: Treats the $12,000 recovery as a collection of current sales. A recovery is first reinstated
+      in receivables and then collected, so it is not a sale.
+  answer: C
+  explanation: 'Rollforward: beginning $480,000 + credit sales + $12,000 recovery reinstated − $3,100,000
+    collections − $40,000 write-offs = ending $450,000. Credit sales = $450,000 + $3,100,000 + $40,000
+    − $480,000 − $12,000 = $3,098,000.'

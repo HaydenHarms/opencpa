@@ -47,20 +47,21 @@ variants:
     at December 31, Year 1?
   choices:
   - id: A
-    text: $318,000
-    rationale: Deducts Keel's share of the December dividend but never adds its share of Winton's income.
-  - id: B
     text: $350,000
     rationale: Stops at the combined cost basis of $350,000 without applying the equity method from July
       1.
-  - id: C
+  - id: B
     text: $390,000
     rationale: Applies only the newly purchased 25% to Winton's income and dividends. The equity method
       applies to Keel's whole 40% interest from July 1.
-  - id: D
+  - id: C
     text: $414,000
     rationale: Correct. $90,000 + $260,000 + 40% × $240,000 − 40% × $80,000.
-  answer: D
+  - id: D
+    text: $453,000
+    rationale: Also adds 15% of Winton's income before July 1, applying the equity method retroactively.
+      Since ASU 2016-07 the change is applied prospectively.
+  answer: C
   explanation: 'Since ASU 2016-07, an investor that becomes eligible for the equity method adds the cost
     of the new interest to the current basis of its existing interest and applies the equity method prospectively,
     with no retroactive adjustment. Basis on July 1 = $90,000 + $260,000 = $350,000. Add 40% of Winton''s
@@ -81,13 +82,13 @@ variants:
     rationale: Stops at the combined cost basis of $500,000 without applying the equity method from July
       1.
   - id: C
-    text: $524,000
-    rationale: Applies only the newly purchased 20% to Ashby's income and dividends. The equity method
-      applies to Lark's whole 25% interest from July 1.
-  - id: D
     text: $530,000
     rationale: Correct. $90,000 + $410,000 + 25% × $180,000 − 25% × $60,000.
-  answer: D
+  - id: D
+    text: $536,000
+    rationale: Also adds 5% of Ashby's income before July 1, applying the equity method retroactively.
+      Since ASU 2016-07 the change is applied prospectively.
+  answer: C
   explanation: 'Since ASU 2016-07, an investor that becomes eligible for the equity method adds the cost
     of the new interest to the current basis of its existing interest and applies the equity method prospectively,
     with no retroactive adjustment. Basis on July 1 = $90,000 + $410,000 = $500,000. Add 25% of Ashby''s

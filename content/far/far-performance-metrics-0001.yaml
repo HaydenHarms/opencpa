@@ -36,3 +36,82 @@ answer: D
 explanation: Earnings available to common = $2,400,000 − $400,000 preferred dividends = $2,000,000; EPS
   = $2.00. Price-to-earnings ratio = $30 ÷ $2.00 = 15.0. Dividend payout ratio = common dividends ÷ earnings
   available to common = $600,000 ÷ $2,000,000 = 30%.
+variants:
+- stem: Pardee Corp. reports net income of $3,000,000 for the year. It declared $500,000 of dividends
+    on its preferred stock and $1,000,000 of dividends on its common stock. Weighted-average common shares
+    outstanding were 1,250,000, and the common stock's market price at year-end is $36. Pardee computes
+    the dividend payout ratio on earnings available to common shareholders. What are Pardee's price-to-earnings
+    ratio and dividend payout ratio?
+  choices:
+  - id: A
+    text: 15.0 P/E; 40% payout
+    rationale: Computes EPS without deducting the $500,000 of preferred dividends ($2.40), which understates
+      the P/E ratio.
+  - id: B
+    text: 18.0 P/E; 33.3% payout
+    rationale: Gets the P/E ratio right but divides common dividends by total net income for the payout
+      ratio.
+  - id: C
+    text: 18.0 P/E; 40% payout
+    rationale: Correct. EPS = ($3,000,000 − $500,000) ÷ 1,250,000 = $2.00; P/E = $36 ÷ $2.00 = 18.0; payout
+      = $1,000,000 ÷ $2,500,000 = 40%.
+  - id: D
+    text: 18.0 P/E; 60% payout
+    rationale: Includes the $500,000 of preferred dividends in the payout ratio. The ratio covers dividends
+      to common shareholders only.
+  answer: C
+  explanation: Earnings available to common = $3,000,000 − $500,000 preferred dividends = $2,500,000;
+    EPS = $2.00. Price-to-earnings ratio = $36 ÷ $2.00 = 18.0. Dividend payout ratio = common dividends
+    ÷ earnings available to common = $1,000,000 ÷ $2,500,000 = 40%.
+- stem: Quarles Corp. reports net income of $1,800,000 for the year. It declared $200,000 of dividends
+    on its preferred stock and $400,000 of dividends on its common stock. Weighted-average common shares
+    outstanding were 800,000, and the common stock's market price at year-end is $24. Quarles computes
+    the dividend payout ratio on earnings available to common shareholders. What are Quarles's price-to-earnings
+    ratio and dividend payout ratio?
+  choices:
+  - id: A
+    text: 10.7 P/E; 22.2% payout
+    rationale: Uses net income without deducting preferred dividends for both ratios. Both are based on
+      earnings available to common shareholders.
+  - id: B
+    text: 10.7 P/E; 25% payout
+    rationale: Computes EPS without deducting the $200,000 of preferred dividends ($2.25), which understates
+      the P/E ratio.
+  - id: C
+    text: 12.0 P/E; 22.2% payout
+    rationale: Gets the P/E ratio right but divides common dividends by total net income for the payout
+      ratio.
+  - id: D
+    text: 12.0 P/E; 25% payout
+    rationale: Correct. EPS = ($1,800,000 − $200,000) ÷ 800,000 = $2.00; P/E = $24 ÷ $2.00 = 12.0; payout
+      = $400,000 ÷ $1,600,000 = 25%.
+  answer: D
+  explanation: Earnings available to common = $1,800,000 − $200,000 preferred dividends = $1,600,000;
+    EPS = $2.00. Price-to-earnings ratio = $24 ÷ $2.00 = 12.0. Dividend payout ratio = common dividends
+    ÷ earnings available to common = $400,000 ÷ $1,600,000 = 25%.
+- stem: Rudd Corp. reports net income of $5,000,000 for the year. It declared $1,000,000 of dividends
+    on its preferred stock and $1,600,000 of dividends on its common stock. Weighted-average common shares
+    outstanding were 1,600,000, and the common stock's market price at year-end is $50. Rudd computes
+    the dividend payout ratio on earnings available to common shareholders. What are Rudd's price-to-earnings
+    ratio and dividend payout ratio?
+  choices:
+  - id: A
+    text: 16.0 P/E; 32% payout
+    rationale: Uses net income without deducting preferred dividends for both ratios. Both are based on
+      earnings available to common shareholders.
+  - id: B
+    text: 20.0 P/E; 32% payout
+    rationale: Gets the P/E ratio right but divides common dividends by total net income for the payout
+      ratio.
+  - id: C
+    text: 20.0 P/E; 40% payout
+    rationale: Correct. EPS = ($5,000,000 − $1,000,000) ÷ 1,600,000 = $2.50; P/E = $50 ÷ $2.50 = 20.0;
+      payout = $1,600,000 ÷ $4,000,000 = 40%.
+  - id: D
+    text: 20.0 P/E; 65% payout
+    rationale: Includes the $1,000,000 of preferred dividends in the payout ratio. The ratio covers dividends
+      to common shareholders only.
+  answer: C
+  explanation: Earnings available to common = $5,000,000 − $1,000,000 preferred dividends = $4,000,000;
+    EPS = $2.50. Price-to-earnings ratio = $50 ÷ $2.50 = 20.0. Dividend payout ratio = common dividends
+    ÷ earnings available to common = $1,600,000 ÷ $4,000,000 = 40%.

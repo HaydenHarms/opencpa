@@ -37,3 +37,89 @@ explanation: 'The software is functional intellectual property whose utility doe
   ongoing activities, so the license is a right to use recognized when control transfers: $300,000. Support
   is recognized over 24 months: $2,500 for December. The brand license is symbolic intellectual property,
   a right to access recognized over the five-year term: $500,000 ÷ 60 = $8,333. December revenue = $310,833.'
+variants:
+- stem: On December 1, Year 1, Fitch Co. sells a customer a perpetual license to its existing accounting
+    software for $240,000, together with three years of technical support for $36,000; the prices equal
+    standalone selling prices, and Fitch does not expect updates to change the software's functionality.
+    Also on December 1, Fitch grants a franchisee a ten-year license to use its restaurant brand, which
+    Fitch will continue to support with advertising and brand development, for an upfront fee of $720,000.
+    What revenue should Fitch recognize for December, Year 1?
+  choices:
+  - id: A
+    text: $13,667
+    rationale: Spreads the software license over the three-year support period. A license to functional
+      intellectual property is a right to use, recognized when control transfers.
+  - id: B
+    text: $247,000
+    rationale: Correct. $240,000 for the software license at transfer, plus $36,000 ÷ 36 = $1,000 of support
+      and $720,000 ÷ 120 = $6,000 of the brand license.
+  - id: C
+    text: $282,000
+    rationale: Recognizes the three years of support at the start. Support is a service provided over
+      the three years.
+  - id: D
+    text: $961,000
+    rationale: Recognizes the whole franchise fee at the start. A brand license supported by ongoing activities
+      gives a right to access, recognized over the license term.
+  answer: B
+  explanation: 'The software is functional intellectual property whose utility does not depend on Fitch''s
+    ongoing activities, so the license is a right to use recognized when control transfers: $240,000.
+    Support is recognized over 36 months: $1,000 for December. The brand license is symbolic intellectual
+    property, a right to access recognized over the ten-year term: $720,000 ÷ 120 = $6,000. December revenue
+    = $247,000.'
+- stem: On December 1, Year 1, Gilroy Co. sells a customer a perpetual license to its existing accounting
+    software for $450,000, together with two years of technical support for $48,000; the prices equal
+    standalone selling prices, and Gilroy does not expect updates to change the software's functionality.
+    Also on December 1, Gilroy grants a franchisee a five-year license to use its restaurant brand, which
+    Gilroy will continue to support with advertising and brand development, for an upfront fee of $300,000.
+    What revenue should Gilroy recognize for December, Year 1?
+  choices:
+  - id: A
+    text: $457,000
+    rationale: Correct. $450,000 for the software license at transfer, plus $48,000 ÷ 24 = $2,000 of support
+      and $300,000 ÷ 60 = $5,000 of the brand license.
+  - id: B
+    text: $503,000
+    rationale: Recognizes the two years of support at the start. Support is a service provided over the
+      two years.
+  - id: C
+    text: $752,000
+    rationale: Recognizes the whole franchise fee at the start. A brand license supported by ongoing activities
+      gives a right to access, recognized over the license term.
+  - id: D
+    text: $798,000
+    rationale: Recognizes everything on December 1.
+  answer: A
+  explanation: 'The software is functional intellectual property whose utility does not depend on Gilroy''s
+    ongoing activities, so the license is a right to use recognized when control transfers: $450,000.
+    Support is recognized over 24 months: $2,000 for December. The brand license is symbolic intellectual
+    property, a right to access recognized over the five-year term: $300,000 ÷ 60 = $5,000. December revenue
+    = $457,000.'
+- stem: On December 1, Year 1, Hollis Co. sells a customer a perpetual license to its existing accounting
+    software for $180,000, together with three years of technical support for $72,000; the prices equal
+    standalone selling prices, and Hollis does not expect updates to change the software's functionality.
+    Also on December 1, Hollis grants a franchisee an eight-year license to use its restaurant brand,
+    which Hollis will continue to support with advertising and brand development, for an upfront fee of
+    $480,000. What revenue should Hollis recognize for December, Year 1?
+  choices:
+  - id: A
+    text: $12,000
+    rationale: Spreads the software license over the three-year support period. A license to functional
+      intellectual property is a right to use, recognized when control transfers.
+  - id: B
+    text: $187,000
+    rationale: Correct. $180,000 for the software license at transfer, plus $72,000 ÷ 36 = $2,000 of support
+      and $480,000 ÷ 96 = $5,000 of the brand license.
+  - id: C
+    text: $662,000
+    rationale: Recognizes the whole franchise fee at the start. A brand license supported by ongoing activities
+      gives a right to access, recognized over the license term.
+  - id: D
+    text: $732,000
+    rationale: Recognizes everything on December 1.
+  answer: B
+  explanation: 'The software is functional intellectual property whose utility does not depend on Hollis''s
+    ongoing activities, so the license is a right to use recognized when control transfers: $180,000.
+    Support is recognized over 36 months: $2,000 for December. The brand license is symbolic intellectual
+    property, a right to access recognized over the eight-year term: $480,000 ÷ 96 = $5,000. December
+    revenue = $187,000.'

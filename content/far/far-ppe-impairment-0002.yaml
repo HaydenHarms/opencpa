@@ -37,3 +37,86 @@ explanation: 'The group is not recoverable ($900,000 < $1,000,000), so the loss 
   fair value. Pro rata: A $60,000, B $40,000, building $100,000. The building can absorb only $500,000
   − $460,000 = $40,000, so the other $60,000 is reallocated to the machines in a 3:2 ratio: A $36,000,
   B $24,000. Machine A''s total = $96,000.'
+variants:
+- stem: Zane Co. tests an asset group for impairment. The group consists of Machine A (carrying amount
+    $200,000), Machine B ($400,000) and a building ($400,000). The group's undiscounted future cash flows
+    are $850,000 and its fair value is $760,000. The building's own fair value is $340,000; the machines'
+    individual fair values cannot be determined without undue cost. How much of the impairment loss should
+    Zane allocate to Machine A?
+  choices:
+  - id: A
+    text: $12,000
+    rationale: Allocates to Machine A only its share of the $36,000 that could not be charged to the building.
+  - id: B
+    text: $60,000
+    rationale: Correct. Pro rata $48,000, plus 33.3% of the $36,000 the building cannot absorb (its loss
+      is capped at $60,000).
+  - id: C
+    text: $66,000
+    rationale: Splits the $36,000 the building cannot absorb equally between the machines. It is reallocated
+      by relative carrying amount.
+  - id: D
+    text: $80,000
+    rationale: Allocates the whole $240,000 loss to the two machines (33.3% to Machine A). The building
+      takes its share, limited to its $60,000 excess over fair value.
+  answer: B
+  explanation: 'The group is not recoverable ($850,000 < $1,000,000), so the loss is $1,000,000 − $760,000
+    = $240,000, allocated pro rata by carrying amount but not reducing any asset below its determinable
+    fair value. Pro rata: A $48,000, B $96,000, building $96,000. The building can absorb only $400,000
+    − $340,000 = $60,000, so the other $36,000 is reallocated to the machines in a 1:2 ratio: A $12,000,
+    B $24,000. Machine A''s total = $60,000.'
+- stem: Abel Co. tests an asset group for impairment. The group consists of Machine A (carrying amount
+    $450,000), Machine B ($150,000) and a building ($400,000). The group's undiscounted future cash flows
+    are $920,000 and its fair value is $820,000. The building's own fair value is $360,000; the machines'
+    individual fair values cannot be determined without undue cost. How much of the impairment loss should
+    Abel allocate to Machine A?
+  choices:
+  - id: A
+    text: $24,000
+    rationale: Allocates to Machine A only its share of the $32,000 that could not be charged to the building.
+  - id: B
+    text: $81,000
+    rationale: Allocates the $180,000 loss pro rata to all three assets without limiting the building
+      to its $40,000 excess over fair value.
+  - id: C
+    text: $97,000
+    rationale: Splits the $32,000 the building cannot absorb equally between the machines. It is reallocated
+      by relative carrying amount.
+  - id: D
+    text: $105,000
+    rationale: Correct. Pro rata $81,000, plus 75% of the $32,000 the building cannot absorb (its loss
+      is capped at $40,000).
+  answer: D
+  explanation: 'The group is not recoverable ($920,000 < $1,000,000), so the loss is $1,000,000 − $820,000
+    = $180,000, allocated pro rata by carrying amount but not reducing any asset below its determinable
+    fair value. Pro rata: A $81,000, B $27,000, building $72,000. The building can absorb only $400,000
+    − $360,000 = $40,000, so the other $32,000 is reallocated to the machines in a 3:1 ratio: A $24,000,
+    B $8,000. Machine A''s total = $105,000.'
+- stem: Benson Co. tests an asset group for impairment. The group consists of Machine A (carrying amount
+    $400,000), Machine B ($200,000) and a building ($600,000). The group's undiscounted future cash flows
+    are $1,100,000 and its fair value is $900,000. The building's own fair value is $510,000; the machines'
+    individual fair values cannot be determined without undue cost. How much of the impairment loss should
+    Benson allocate to Machine A?
+  choices:
+  - id: A
+    text: $100,000
+    rationale: Allocates the $300,000 loss pro rata to all three assets without limiting the building
+      to its $90,000 excess over fair value.
+  - id: B
+    text: $130,000
+    rationale: Splits the $60,000 the building cannot absorb equally between the machines. It is reallocated
+      by relative carrying amount.
+  - id: C
+    text: $140,000
+    rationale: Correct. Pro rata $100,000, plus 66.7% of the $60,000 the building cannot absorb (its loss
+      is capped at $90,000).
+  - id: D
+    text: $200,000
+    rationale: Allocates the whole $300,000 loss to the two machines (66.7% to Machine A). The building
+      takes its share, limited to its $90,000 excess over fair value.
+  answer: C
+  explanation: 'The group is not recoverable ($1,100,000 < $1,200,000), so the loss is $1,200,000 − $900,000
+    = $300,000, allocated pro rata by carrying amount but not reducing any asset below its determinable
+    fair value. Pro rata: A $100,000, B $50,000, building $150,000. The building can absorb only $600,000
+    − $510,000 = $90,000, so the other $60,000 is reallocated to the machines in a 2:1 ratio: A $40,000,
+    B $20,000. Machine A''s total = $140,000.'

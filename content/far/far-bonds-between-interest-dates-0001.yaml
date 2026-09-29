@@ -38,19 +38,19 @@ variants:
     Nolan receive at issuance?
   choices:
   - id: A
-    text: $1,980,000
-    rationale: Subtracts the accrued interest instead of adding it. Buyers pay the interest accrued since
-      the last interest date and receive a full six months' interest on July 1.
-  - id: B
     text: $2,000,000
     rationale: Uses the face amount only. The bonds sell at 101 of face, plus accrued interest.
-  - id: C
+  - id: B
     text: $2,020,000
     rationale: Includes the 1% premium but not the four months of accrued interest.
-  - id: D
+  - id: C
     text: $2,060,000
     rationale: Correct. $2,000,000 × 101% + $2,000,000 × 6% × 4/12 accrued interest.
-  answer: D
+  - id: D
+    text: $2,080,000
+    rationale: Adds a full six months of interest ($60,000). Buyers pay only the interest accrued from
+      January 1 to May 1.
+  answer: C
   explanation: Price = $2,000,000 × 1.01 = $2,020,000. Interest accrued from January 1 to May 1 = $2,000,000
     × 6% × 4/12 = $40,000, which the buyers pay now and recover on July 1. Cash received = $2,060,000;
     Nolan records the $40,000 as interest payable (or a reduction of interest expense).
@@ -59,19 +59,20 @@ variants:
     Orton receive at issuance?
   choices:
   - id: A
-    text: $600,000
-    rationale: Uses the face amount only. The bonds sell at 103 of face, plus accrued interest.
+    text: $608,000
+    rationale: Adds the accrued interest to the face amount but leaves out the 3% premium. The bonds sell
+      at 103 of face.
   - id: B
-    text: $610,000
-    rationale: Subtracts the accrued interest instead of adding it. Buyers pay the interest accrued since
-      the last interest date and receive a full six months' interest on July 1.
-  - id: C
     text: $618,000
     rationale: Includes the 3% premium but not the two months of accrued interest.
-  - id: D
+  - id: C
     text: $626,000
     rationale: Correct. $600,000 × 103% + $600,000 × 8% × 2/12 accrued interest.
-  answer: D
+  - id: D
+    text: $642,000
+    rationale: Adds a full six months of interest ($24,000). Buyers pay only the interest accrued from
+      January 1 to March 1.
+  answer: C
   explanation: Price = $600,000 × 1.03 = $618,000. Interest accrued from January 1 to March 1 = $600,000
     × 8% × 2/12 = $8,000, which the buyers pay now and recover on July 1. Cash received = $626,000; Orton
     records the $8,000 as interest payable (or a reduction of interest expense).
@@ -83,9 +84,9 @@ variants:
     text: $3,000,000
     rationale: Uses the face amount only. The bonds sell at 102 of face, plus accrued interest.
   - id: B
-    text: $3,010,000
-    rationale: Subtracts the accrued interest instead of adding it. Buyers pay the interest accrued since
-      the last interest date and receive a full six months' interest on July 1.
+    text: $3,050,000
+    rationale: Adds the accrued interest to the face amount but leaves out the 2% premium. The bonds sell
+      at 102 of face.
   - id: C
     text: $3,060,000
     rationale: Includes the 2% premium but not the five months of accrued interest.

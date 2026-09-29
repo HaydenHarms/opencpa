@@ -42,16 +42,16 @@ variants:
     text: $820,000 EBITDA; 1.26 asset turnover
     rationale: Leaves out the $330,000 of depreciation and amortization, which EBITDA adds back.
   - id: B
-    text: $1,010,000 EBITDA; 1.26 asset turnover
-    rationale: Leaves out the $140,000 of interest expense, which EBITDA adds back.
+    text: $990,000 EBITDA; 1.26 asset turnover
+    rationale: Leaves out the $160,000 of income tax expense, which EBITDA adds back.
   - id: C
-    text: $1,150,000 EBITDA; 1.17 asset turnover
-    rationale: Gets EBITDA right but divides revenue by ending total assets instead of the average.
-  - id: D
     text: $1,150,000 EBITDA; 1.26 asset turnover
     rationale: Correct. EBITDA = $520,000 + $140,000 + $160,000 + $330,000; asset turnover = $6,300,000
       ÷ $5,000,000.
-  answer: D
+  - id: D
+    text: $1,150,000 EBITDA; 1.37 asset turnover
+    rationale: Gets EBITDA right but divides revenue by beginning total assets instead of the average.
+  answer: C
   explanation: EBITDA = net income + interest + income taxes + depreciation and amortization = $520,000
     + $140,000 + $160,000 + $330,000 = $1,150,000. Asset turnover = revenue ÷ average total assets = $6,300,000
     ÷ [($4,600,000 + $5,400,000) ÷ 2] = 1.26.
@@ -61,19 +61,19 @@ variants:
     assets, what are Dover's EBITDA and asset turnover?
   choices:
   - id: A
-    text: $340,000 EBITDA; 1.20 asset turnover
-    rationale: Leaves out the $150,000 of depreciation and amortization, which EBITDA adds back.
-  - id: B
     text: $430,000 EBITDA; 1.20 asset turnover
     rationale: Leaves out the $60,000 of interest expense, which EBITDA adds back.
-  - id: C
+  - id: B
     text: $490,000 EBITDA; 1.11 asset turnover
     rationale: Gets EBITDA right but divides revenue by ending total assets instead of the average.
-  - id: D
+  - id: C
     text: $490,000 EBITDA; 1.20 asset turnover
     rationale: Correct. EBITDA = $210,000 + $60,000 + $70,000 + $150,000; asset turnover = $2,880,000
       ÷ $2,400,000.
-  answer: D
+  - id: D
+    text: $490,000 EBITDA; 1.31 asset turnover
+    rationale: Gets EBITDA right but divides revenue by beginning total assets instead of the average.
+  answer: C
   explanation: EBITDA = net income + interest + income taxes + depreciation and amortization = $210,000
     + $60,000 + $70,000 + $150,000 = $490,000. Asset turnover = revenue ÷ average total assets = $2,880,000
     ÷ [($2,200,000 + $2,600,000) ÷ 2] = 1.20.
@@ -89,8 +89,8 @@ variants:
     text: $1,450,000 EBITDA; 1.50 asset turnover
     rationale: Leaves out the $250,000 of interest expense, which EBITDA adds back.
   - id: C
-    text: $1,700,000 EBITDA; 1.38 asset turnover
-    rationale: Gets EBITDA right but divides revenue by ending total assets instead of the average.
+    text: $1,490,000 EBITDA; 1.50 asset turnover
+    rationale: Leaves out the $210,000 of income tax expense, which EBITDA adds back.
   - id: D
     text: $1,700,000 EBITDA; 1.50 asset turnover
     rationale: Correct. EBITDA = $700,000 + $250,000 + $210,000 + $540,000; asset turnover = $9,000,000

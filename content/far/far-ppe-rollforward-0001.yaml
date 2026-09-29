@@ -33,3 +33,78 @@ answer: A
 explanation: Derive the disposal from the rollforward. Cost removed = $1,200,000 + $300,000 − $1,350,000
   = $150,000. Accumulated depreciation removed = $400,000 + $110,000 − $430,000 = $80,000. Carrying amount
   = $70,000; proceeds $50,000; loss = $20,000.
+variants:
+- stem: Vesey Co.'s equipment rollforward shows gross equipment of $2,000,000 at the start of the year
+    and $2,150,000 at the end, with $400,000 of purchases per the capital expenditures report. Accumulated
+    depreciation was $700,000 at the start and $760,000 at the end, and depreciation expense was $190,000.
+    The only disposal was one item sold for $150,000 in cash. What gain or loss should Vesey report on
+    the sale?
+  choices:
+  - id: A
+    text: $30,000 gain
+    rationale: Correct. Cost removed $250,000 less accumulated depreciation removed $130,000 = carrying
+      amount $120,000; proceeds $150,000.
+  - id: B
+    text: $40,000 loss
+    rationale: 'Uses the $60,000 net change in accumulated depreciation as the amount removed. The amount
+      removed is what the rollforward leaves unexplained: $700,000 + $190,000 − $760,000 = $130,000.'
+  - id: C
+    text: $90,000 gain
+    rationale: Uses the year's $190,000 of depreciation expense as the accumulated depreciation removed.
+      The amount removed is what the rollforward leaves unexplained.
+  - id: D
+    text: $100,000 loss
+    rationale: Compares the proceeds with the equipment's cost without removing its accumulated depreciation.
+  answer: A
+  explanation: Derive the disposal from the rollforward. Cost removed = $2,000,000 + $400,000 − $2,150,000
+    = $250,000. Accumulated depreciation removed = $700,000 + $190,000 − $760,000 = $130,000. Carrying
+    amount = $120,000; proceeds $150,000; gain = $30,000.
+- stem: Whitby Co.'s equipment rollforward shows gross equipment of $1,600,000 at the start of the year
+    and $1,650,000 at the end, with $350,000 of purchases per the capital expenditures report. Accumulated
+    depreciation was $500,000 at the start and $560,000 at the end, and depreciation expense was $150,000.
+    The only disposal was one item sold for $80,000 in cash. What gain or loss should Whitby report on
+    the sale?
+  choices:
+  - id: A
+    text: $70,000 loss
+    rationale: Uses the year's $150,000 of depreciation expense as the accumulated depreciation removed.
+      The amount removed is what the rollforward leaves unexplained.
+  - id: B
+    text: $80,000 gain
+    rationale: Treats the whole $80,000 of proceeds as gain, ignoring the equipment's carrying amount.
+  - id: C
+    text: $130,000 loss
+    rationale: Correct. Cost removed $300,000 less accumulated depreciation removed $90,000 = carrying
+      amount $210,000; proceeds $80,000.
+  - id: D
+    text: $220,000 loss
+    rationale: Compares the proceeds with the equipment's cost without removing its accumulated depreciation.
+  answer: C
+  explanation: Derive the disposal from the rollforward. Cost removed = $1,600,000 + $350,000 − $1,650,000
+    = $300,000. Accumulated depreciation removed = $500,000 + $150,000 − $560,000 = $90,000. Carrying
+    amount = $210,000; proceeds $80,000; loss = $130,000.
+- stem: Xavier Co.'s equipment rollforward shows gross equipment of $1,500,000 at the start of the year
+    and $1,600,000 at the end, with $280,000 of purchases per the capital expenditures report. Accumulated
+    depreciation was $400,000 at the start and $440,000 at the end, and depreciation expense was $100,000.
+    The only disposal was one item sold for $50,000 in cash. What gain or loss should Xavier report on
+    the sale?
+  choices:
+  - id: A
+    text: $30,000 loss
+    rationale: Uses the year's $100,000 of depreciation expense as the accumulated depreciation removed.
+      The amount removed is what the rollforward leaves unexplained.
+  - id: B
+    text: $70,000 loss
+    rationale: Correct. Cost removed $180,000 less accumulated depreciation removed $60,000 = carrying
+      amount $120,000; proceeds $50,000.
+  - id: C
+    text: $90,000 loss
+    rationale: 'Uses the $40,000 net change in accumulated depreciation as the amount removed. The amount
+      removed is what the rollforward leaves unexplained: $400,000 + $100,000 − $440,000 = $60,000.'
+  - id: D
+    text: $130,000 loss
+    rationale: Compares the proceeds with the equipment's cost without removing its accumulated depreciation.
+  answer: B
+  explanation: Derive the disposal from the rollforward. Cost removed = $1,500,000 + $280,000 − $1,600,000
+    = $180,000. Accumulated depreciation removed = $400,000 + $100,000 − $440,000 = $60,000. Carrying
+    amount = $120,000; proceeds $50,000; loss = $70,000.

@@ -38,3 +38,88 @@ explanation: 'One-time termination benefits are recognized when the plan is comm
   need not work beyond the minimum retention period. Here they must stay until March 31, beyond the 60-day
   minimum, so the $300,000 (50 × $6,000) is recognized ratably over the four months from December 1 to
   March 31: $75,000 in Year 1.'
+variants:
+- stem: On November 1, Year 1, Wade Co. commits to closing a plant on March 31, Year 2, and communicates
+    the plan to the plant's 40 employees that day. Each employee who stays until the plant closes will
+    receive a $9,000 termination payment; employees who leave earlier receive nothing. Under Wade's plan
+    and local law, employees must be given at least 90 days' notice before termination. Wade expects all
+    40 to stay. Treat each month as equal in length. What termination benefit expense should Wade recognize
+    in Year 1?
+  choices:
+  - id: A
+    text: $144,000
+    rationale: Correct. The $360,000 benefit is recognized ratably from November 1 to March 31 (5 months);
+      two months fall in Year 1.
+  - id: B
+    text: $216,000
+    rationale: Recognizes the portion for the three months after year-end. Year 1 recognizes only the
+      service from November 1 to December 31.
+  - id: C
+    text: $240,000
+    rationale: Spreads the benefit over the 90-day minimum notice period. Because employees must stay
+      beyond that period to earn it, it is spread over the full period to March 31.
+  - id: D
+    text: $360,000
+    rationale: Recognizes the whole benefit when the plan is communicated. That applies only when employees
+      are not required to render service beyond the minimum retention period.
+  answer: A
+  explanation: 'One-time termination benefits are recognized when the plan is communicated if employees
+    need not work beyond the minimum retention period. Here they must stay until March 31, beyond the
+    90-day minimum, so the $360,000 (40 × $9,000) is recognized ratably over the five months from November
+    1 to March 31: $144,000 in Year 1.'
+- stem: On September 1, Year 1, Yale Co. commits to closing a plant on March 31, Year 2, and communicates
+    the plan to the plant's 35 employees that day. Each employee who stays until the plant closes will
+    receive a $8,000 termination payment; employees who leave earlier receive nothing. Under Yale's plan
+    and local law, employees must be given at least 60 days' notice before termination. Yale expects all
+    35 to stay. Treat each month as equal in length. What termination benefit expense should Yale recognize
+    in Year 1?
+  choices:
+  - id: A
+    text: $0
+    rationale: Waits until the plant closes. When employees must work to a future date to earn the benefit,
+      the cost is recognized over that service period, starting when the plan is communicated.
+  - id: B
+    text: $120,000
+    rationale: Recognizes the portion for the three months after year-end. Year 1 recognizes only the
+      service from September 1 to December 31.
+  - id: C
+    text: $160,000
+    rationale: Correct. The $280,000 benefit is recognized ratably from September 1 to March 31 (7 months);
+      four months fall in Year 1.
+  - id: D
+    text: $280,000
+    rationale: Recognizes the whole benefit when the plan is communicated. That applies only when employees
+      are not required to render service beyond the minimum retention period.
+  answer: C
+  explanation: 'One-time termination benefits are recognized when the plan is communicated if employees
+    need not work beyond the minimum retention period. Here they must stay until March 31, beyond the
+    60-day minimum, so the $280,000 (35 × $8,000) is recognized ratably over the seven months from September
+    1 to March 31: $160,000 in Year 1.'
+- stem: On December 1, Year 1, Zeller Co. commits to closing a plant on March 31, Year 2, and communicates
+    the plan to the plant's 60 employees that day. Each employee who stays until the plant closes will
+    receive a $4,000 termination payment; employees who leave earlier receive nothing. Under Zeller's
+    plan and local law, employees must be given at least 60 days' notice before termination. Zeller expects
+    all 60 to stay. Treat each month as equal in length. What termination benefit expense should Zeller
+    recognize in Year 1?
+  choices:
+  - id: A
+    text: $60,000
+    rationale: Correct. The $240,000 benefit is recognized ratably from December 1 to March 31 (4 months);
+      one month falls in Year 1.
+  - id: B
+    text: $120,000
+    rationale: Spreads the benefit over the 60-day minimum notice period. Because employees must stay
+      beyond that period to earn it, it is spread over the full period to March 31.
+  - id: C
+    text: $180,000
+    rationale: Recognizes the portion for the three months after year-end. Year 1 recognizes only the
+      service from December 1 to December 31.
+  - id: D
+    text: $240,000
+    rationale: Recognizes the whole benefit when the plan is communicated. That applies only when employees
+      are not required to render service beyond the minimum retention period.
+  answer: A
+  explanation: 'One-time termination benefits are recognized when the plan is communicated if employees
+    need not work beyond the minimum retention period. Here they must stay until March 31, beyond the
+    60-day minimum, so the $240,000 (60 × $4,000) is recognized ratably over the four months from December
+    1 to March 31: $60,000 in Year 1.'

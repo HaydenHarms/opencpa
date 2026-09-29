@@ -37,13 +37,40 @@
 
 The changed family was re-verified blind (see below).
 
-## Known limitation: the key's letter rarely moves
+## Revision 2: the key's letter now moves
 
-Numeric choices are sorted in ascending order (the AICPA convention). Every version uses the same three errors, so the correct value usually lands in the same place. In 12 of 13 families the key has the same letter in all four versions. The exception is foreign currency, which moves from C to D. A student who remembers "it was D" can still answer a repeat without re-solving it.
+In the first version of this batch, choices were sorted in ascending order (the AICPA convention) and every version used the same three errors. The key therefore sat on the same letter in all four versions for 12 of 13 families, and a student who remembered "it was D" could answer a repeat without solving it.
 
-**Proposed fix for the next variants batch:** give each family four or five distractor errors, with each version using a different three. The key's rank then moves while every distractor still maps to a named error.
+Revision 2 gives each family a pool of four or five distractors, each tied to a named error, the same approach as FAR variants 02. Each variant shows a different three. The reviewed item keeps its reviewed three, and parameter set 0 still rebuilds it word for word. The script now refuses to write a family whose key has the same letter in every version.
 
-## Re-verification
+| Item | Key letters by version | New distractor errors |
+| --- | --- | --- |
+| `far-foreign-currency-transactions-0001` | C D D D | no Year 2 remeasurement at settlement |
+| `far-performance-metrics-0002` | D C C D | income tax not added back; beginning total assets |
+| `far-balance-sheet-0004` | B C A C | warranty left noncurrent; whole lease liability moved to current |
+| `far-cash-flows-0007` | A B C B | deferred tax increase subtracted; discount amortization subtracted |
+| `far-consolidated-statements-0006` | B A C B | interest eliminated but not the note; a full year's interest eliminated |
+| `far-software-purchased-0001` | B C B B | training and conversion left out |
+| `far-equity-method-0002` | D C C D | equity method applied retroactively to the old stake |
+| `far-payables-cutoff-0001` | C B D B | duplicate left in; December goods left out |
+| `far-bonds-between-interest-dates-0001` | D C C D | a full six months of interest added |
+| `far-inventory-gross-profit-method-0001` | C B C B | gross profit rate used as the cost ratio |
+| `far-subsequent-events-0004` | A B B A | settlement treated as a Year 2 event |
+| `far-income-taxes-rate-change-0001` | C D C C | only the rate change on the beginning differences |
+| `far-revenue-contract-modification-0001` | B A B B | standalone selling price used for all remaining units |
+
+A fresh verifier agent solved all 39 revision 2 variants blind. It matched the key on all 39 and found no second defensible answer or inconsistency. Its fixes:
+
+| Finding | Fix |
+| --- | --- |
+| Required: in bonds variant 3, the "accrued interest subtracted" choice ($3,010,000) sat just above face and read like two stacked errors. | Added a "face plus accrued interest, premium left out" distractor to the pool, used in variants 2 and 3. |
+| Optional: consolidation variant 3's double elimination of interest was contrived. | Replaced with the full-year-interest distractor. |
+| Optional: in balance sheet variant 2, two distractors were $5,000 apart. | The warranty liability is now $80,000, which puts them $35,000 apart. |
+| Optional: FX variant 1 has a weak "loss in both years" distractor. | Kept. It is the reviewed item's own distractor. |
+
+A blind recheck of the four changed variants matched every key and could name every distractor's error.
+
+## Re-verification (revision 1)
 
 After the fixes, the verifier blind-rechecked all four versions of `far-equity-method-0002`:
 

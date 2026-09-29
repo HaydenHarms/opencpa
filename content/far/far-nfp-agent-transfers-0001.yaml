@@ -36,3 +36,82 @@ explanation: 'A recipient that receives assets for a specified beneficiary witho
   as an agent: it records a liability, not revenue ($40,000). Explicit variance power makes the gift Unity''s
   contribution ($20,000). The $30,000 for general use is a contribution. Riverside''s own $10,000 is held
   for its benefit and is not a contribution to Unity. Contribution revenue = $50,000.'
+variants:
+- stem: 'During the year, Civic Fund, a not-for-profit federated fundraising organization, receives: $65,000
+    from donors who specify that it go to Harbor House, an unrelated charity, with no power for Civic
+    to redirect it; $45,000 for Civic''s general use; $25,000 from a donor who names a beneficiary but
+    explicitly gives Civic the unilateral power to redirect the gift to another beneficiary; and $15,000
+    transferred by Harbor House itself for Civic to invest and hold for Harbor''s future use. What contribution
+    revenue should Civic recognize?'
+  choices:
+  - id: A
+    text: $45,000
+    rationale: Leaves out the $25,000 over which Civic has explicit variance power. That gift is Civic's
+      contribution, not an agency transfer.
+  - id: B
+    text: $70,000
+    rationale: Correct. The $45,000 for general use and the $25,000 over which Civic has variance power.
+  - id: C
+    text: $85,000
+    rationale: Also counts Harbor House's $15,000. A transfer the beneficiary makes for its own benefit
+      is not a contribution to Civic.
+  - id: D
+    text: $150,000
+    rationale: Counts every receipt as a contribution.
+  answer: B
+  explanation: 'A recipient that receives assets for a specified beneficiary without variance power acts
+    as an agent: it records a liability, not revenue ($65,000). Explicit variance power makes the gift
+    Civic''s contribution ($25,000). The $45,000 for general use is a contribution. Harbor''s own $15,000
+    is held for its benefit and is not a contribution to Civic. Contribution revenue = $70,000.'
+- stem: 'During the year, Metro Fund, a not-for-profit federated fundraising organization, receives: $30,000
+    from donors who specify that it go to Lakeside Pantry, an unrelated charity, with no power for Metro
+    to redirect it; $55,000 for Metro''s general use; $35,000 from a donor who names a beneficiary but
+    explicitly gives Metro the unilateral power to redirect the gift to another beneficiary; and $20,000
+    transferred by Lakeside Pantry itself for Metro to invest and hold for Lakeside''s future use. What
+    contribution revenue should Metro recognize?'
+  choices:
+  - id: A
+    text: $90,000
+    rationale: Correct. The $55,000 for general use and the $35,000 over which Metro has variance power.
+  - id: B
+    text: $110,000
+    rationale: Also counts Lakeside Pantry's $20,000. A transfer the beneficiary makes for its own benefit
+      is not a contribution to Metro.
+  - id: C
+    text: $120,000
+    rationale: Also counts the $30,000 designated for Lakeside without variance power. Metro acts as an
+      agent for it and records a liability.
+  - id: D
+    text: $140,000
+    rationale: Counts every receipt as a contribution.
+  answer: A
+  explanation: 'A recipient that receives assets for a specified beneficiary without variance power acts
+    as an agent: it records a liability, not revenue ($30,000). Explicit variance power makes the gift
+    Metro''s contribution ($35,000). The $55,000 for general use is a contribution. Lakeside''s own $20,000
+    is held for its benefit and is not a contribution to Metro. Contribution revenue = $90,000.'
+- stem: 'During the year, Valley Fund, a not-for-profit federated fundraising organization, receives:
+    $80,000 from donors who specify that it go to Hillcrest Clinic, an unrelated charity, with no power
+    for Valley to redirect it; $25,000 for Valley''s general use; $40,000 from a donor who names a beneficiary
+    but explicitly gives Valley the unilateral power to redirect the gift to another beneficiary; and
+    $12,000 transferred by Hillcrest Clinic itself for Valley to invest and hold for Hillcrest''s future
+    use. What contribution revenue should Valley recognize?'
+  choices:
+  - id: A
+    text: $25,000
+    rationale: Leaves out the $40,000 over which Valley has explicit variance power. That gift is Valley's
+      contribution, not an agency transfer.
+  - id: B
+    text: $65,000
+    rationale: Correct. The $25,000 for general use and the $40,000 over which Valley has variance power.
+  - id: C
+    text: $145,000
+    rationale: Also counts the $80,000 designated for Hillcrest without variance power. Valley acts as
+      an agent for it and records a liability.
+  - id: D
+    text: $157,000
+    rationale: Counts every receipt as a contribution.
+  answer: B
+  explanation: 'A recipient that receives assets for a specified beneficiary without variance power acts
+    as an agent: it records a liability, not revenue ($80,000). Explicit variance power makes the gift
+    Valley''s contribution ($40,000). The $25,000 for general use is a contribution. Hillcrest''s own
+    $12,000 is held for its benefit and is not a contribution to Valley. Contribution revenue = $65,000.'

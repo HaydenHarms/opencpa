@@ -35,3 +35,78 @@ answer: B
 explanation: 'The loss from discontinued operations includes the component''s operating results for the
   period and any loss on measuring it at fair value less cost to sell: $150,000 + ($800,000 − $740,000)
   = $210,000 before tax. Net of the 25% tax benefit, the loss is $157,500.'
+variants:
+- stem: Rennie Co.'s draft Year 1 income statement reports a loss from discontinued operations, net of
+    tax, of $189,600. The discontinued component is a division that met the held-for-sale criteria in
+    November. Supporting schedules show that the division had a pretax operating loss of $240,000 for
+    Year 1, and that when it was classified as held for sale its carrying amount was $1,200,000 and its
+    fair value less cost to sell was $1,080,000. Rennie's tax rate is 21%. After any corrections needed,
+    what is Rennie's loss from discontinued operations, net of tax?
+  choices:
+  - id: A
+    text: $284,400
+    rationale: Correct. ($240,000 operating loss + $120,000 write-down) × (1 − 21%).
+  - id: B
+    text: $309,600
+    rationale: Adds the $120,000 write-down without its tax effect. The write-down is part of the discontinued
+      component's pretax loss.
+  - id: C
+    text: $334,800
+    rationale: Nets tax against the $120,000 write-down but not against the $240,000 operating loss. The
+      component's whole pretax loss is reported net of tax.
+  - id: D
+    text: $360,000
+    rationale: Reports the whole loss before tax. Discontinued operations are presented net of tax.
+  answer: A
+  explanation: 'The loss from discontinued operations includes the component''s operating results for
+    the period and any loss on measuring it at fair value less cost to sell: $240,000 + ($1,200,000 −
+    $1,080,000) = $360,000 before tax. Net of the 21% tax benefit, the loss is $284,400.'
+- stem: Sloane Co.'s draft Year 1 income statement reports a loss from discontinued operations, net of
+    tax, of $67,500. The discontinued component is a division that met the held-for-sale criteria in November.
+    Supporting schedules show that the division had a pretax operating loss of $90,000 for Year 1, and
+    that when it was classified as held for sale its carrying amount was $500,000 and its fair value less
+    cost to sell was $470,000. Sloane's tax rate is 25%. After any corrections needed, what is Sloane's
+    loss from discontinued operations, net of tax?
+  choices:
+  - id: A
+    text: $22,500
+    rationale: Reports only the write-down, net of tax, and leaves the $90,000 operating loss in continuing
+      operations. The component's operating results are part of discontinued operations.
+  - id: B
+    text: $67,500
+    rationale: Accepts the draft, which omits the $30,000 write-down to fair value less cost to sell.
+  - id: C
+    text: $90,000
+    rationale: Correct. ($90,000 operating loss + $30,000 write-down) × (1 − 25%).
+  - id: D
+    text: $120,000
+    rationale: Reports the whole loss before tax. Discontinued operations are presented net of tax.
+  answer: C
+  explanation: 'The loss from discontinued operations includes the component''s operating results for
+    the period and any loss on measuring it at fair value less cost to sell: $90,000 + ($500,000 − $470,000)
+    = $120,000 before tax. Net of the 25% tax benefit, the loss is $90,000.'
+- stem: Tate Co.'s draft Year 1 income statement reports a loss from discontinued operations, net of tax,
+    of $126,000. The discontinued component is a division that met the held-for-sale criteria in November.
+    Supporting schedules show that the division had a pretax operating loss of $180,000 for Year 1, and
+    that when it was classified as held for sale its carrying amount was $950,000 and its fair value less
+    cost to sell was $850,000. Tate's tax rate is 30%. After any corrections needed, what is Tate's loss
+    from discontinued operations, net of tax?
+  choices:
+  - id: A
+    text: $126,000
+    rationale: Accepts the draft, which omits the $100,000 write-down to fair value less cost to sell.
+  - id: B
+    text: $196,000
+    rationale: Correct. ($180,000 operating loss + $100,000 write-down) × (1 − 30%).
+  - id: C
+    text: $226,000
+    rationale: Adds the $100,000 write-down without its tax effect. The write-down is part of the discontinued
+      component's pretax loss.
+  - id: D
+    text: $250,000
+    rationale: Nets tax against the $100,000 write-down but not against the $180,000 operating loss. The
+      component's whole pretax loss is reported net of tax.
+  answer: B
+  explanation: 'The loss from discontinued operations includes the component''s operating results for
+    the period and any loss on measuring it at fair value less cost to sell: $180,000 + ($950,000 − $850,000)
+    = $280,000 before tax. Net of the 30% tax benefit, the loss is $196,000.'

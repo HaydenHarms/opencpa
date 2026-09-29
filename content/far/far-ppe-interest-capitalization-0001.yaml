@@ -34,3 +34,77 @@ explanation: 'Weighted-average accumulated expenditures = $400,000 × 12/12 + $6
   × 0/12 = $700,000. Avoidable interest: the first $500,000 at the specific borrowing''s 8% ($40,000)
   and the remaining $200,000 at the 10% rate on other borrowings ($20,000), for $60,000. That is less
   than the $140,000 of actual interest incurred, so $60,000 is capitalized.'
+variants:
+- stem: Hadley Co. constructs a building for its own use during Year 1. It spends $600,000 on January
+    1, $800,000 on July 1, and $300,000 on December 31, and the building is completed on December 31.
+    Hadley borrowed $700,000 at 6% on January 1 specifically for the project and also has $2,000,000 of
+    other debt outstanding all year at 9%. What amount of interest should Hadley capitalize for Year 1?
+  choices:
+  - id: A
+    text: $69,000
+    rationale: 'Correct. Weighted-average accumulated expenditures $1,000,000: $700,000 × 6% + $300,000
+      × 9%.'
+  - id: B
+    text: $90,000
+    rationale: Applies the 9% rate on other debt to all $1,000,000 of weighted-average expenditures.
+  - id: C
+    text: $132,000
+    rationale: Uses total expenditures ($1,700,000) instead of the weighted average.
+  - id: D
+    text: $222,000
+    rationale: Capitalizes all interest incurred during construction. Only avoidable interest on weighted-average
+      accumulated expenditures is capitalized, up to the interest incurred.
+  answer: A
+  explanation: 'Weighted-average accumulated expenditures = $600,000 × 12/12 + $800,000 × 6/12 + $300,000
+    × 0/12 = $1,000,000. Avoidable interest: the first $700,000 at the specific borrowing''s 6% ($42,000)
+    and the remaining $300,000 at the 9% rate on other borrowings ($27,000), for $69,000. That is less
+    than the $222,000 of actual interest incurred, so $69,000 is capitalized.'
+- stem: Keller Co. constructs a building for its own use during Year 1. It spends $300,000 on January
+    1, $1,000,000 on July 1, and $400,000 on December 31, and the building is completed on December 31.
+    Keller borrowed $400,000 at 7% on January 1 specifically for the project and also has $1,500,000 of
+    other debt outstanding all year at 9%. What amount of interest should Keller capitalize for Year 1?
+  choices:
+  - id: A
+    text: $28,000
+    rationale: Capitalizes only the interest on the specific construction loan. Expenditures above the
+      specific borrowing use the rate on other debt.
+  - id: B
+    text: $64,000
+    rationale: 'Correct. Weighted-average accumulated expenditures $800,000: $400,000 × 7% + $400,000
+      × 9%.'
+  - id: C
+    text: $145,000
+    rationale: Uses total expenditures ($1,700,000) instead of the weighted average.
+  - id: D
+    text: $163,000
+    rationale: Capitalizes all interest incurred during construction. Only avoidable interest on weighted-average
+      accumulated expenditures is capitalized, up to the interest incurred.
+  answer: B
+  explanation: 'Weighted-average accumulated expenditures = $300,000 × 12/12 + $1,000,000 × 6/12 + $400,000
+    × 0/12 = $800,000. Avoidable interest: the first $400,000 at the specific borrowing''s 7% ($28,000)
+    and the remaining $400,000 at the 9% rate on other borrowings ($36,000), for $64,000. That is less
+    than the $163,000 of actual interest incurred, so $64,000 is capitalized.'
+- stem: Lyle Co. constructs a building for its own use during Year 1. It spends $500,000 on January 1,
+    $400,000 on July 1, and $250,000 on December 31, and the building is completed on December 31. Lyle
+    borrowed $600,000 at 5% on January 1 specifically for the project and also has $800,000 of other debt
+    outstanding all year at 8%. What amount of interest should Lyle capitalize for Year 1?
+  choices:
+  - id: A
+    text: $30,000
+    rationale: Capitalizes only the interest on the specific construction loan. Expenditures above the
+      specific borrowing use the rate on other debt.
+  - id: B
+    text: $35,000
+    rationale: Applies the 5% construction-loan rate to all $700,000 of weighted-average expenditures.
+  - id: C
+    text: $38,000
+    rationale: 'Correct. Weighted-average accumulated expenditures $700,000: $600,000 × 5% + $100,000
+      × 8%.'
+  - id: D
+    text: $56,000
+    rationale: Applies the 8% rate on other debt to all $700,000 of weighted-average expenditures.
+  answer: C
+  explanation: 'Weighted-average accumulated expenditures = $500,000 × 12/12 + $400,000 × 6/12 + $250,000
+    × 0/12 = $700,000. Avoidable interest: the first $600,000 at the specific borrowing''s 5% ($30,000)
+    and the remaining $100,000 at the 8% rate on other borrowings ($8,000), for $38,000. That is less
+    than the $94,000 of actual interest incurred, so $38,000 is capitalized.'

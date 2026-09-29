@@ -47,19 +47,20 @@ variants:
     a cash dividend. Ignore income taxes. By how much should Parish reduce its Year 1 pretax income?'
   choices:
   - id: A
+    text: $32,000
+    rationale: Treats the lawsuit settlement as a Year 2 event. It confirms a condition that existed at
+      year-end, so the $100,000 accrual is raised to $140,000.
+  - id: B
     text: $72,000
     rationale: Correct. $40,000 more for the lawsuit settlement plus the $32,000 inventory count error.
-  - id: B
+  - id: C
     text: $157,000
     rationale: Also recognizes the $85,000 receivable loss. The customer's problems arose from a fire
       after year-end, so the loss is disclosed, not recognized.
-  - id: C
+  - id: D
     text: $172,000
     rationale: Charges the full $140,000 settlement instead of the $40,000 not yet accrued.
-  - id: D
-    text: $257,000
-    rationale: Charges the full settlement and also recognizes the receivable loss.
-  answer: A
+  answer: B
   explanation: 'The settlement gives evidence about a Year 1 condition, so the accrual rises from $100,000
     to $140,000: $40,000. The inventory double count is an error in the Year 1 statements found before
     issuance: $32,000. The customer''s bankruptcy resulted from a fire after year-end, so it is a nonrecognized
@@ -73,19 +74,20 @@ variants:
     a cash dividend. Ignore income taxes. By how much should Quincy reduce its Year 1 pretax income?'
   choices:
   - id: A
+    text: $18,000
+    rationale: Treats the lawsuit settlement as a Year 2 event. It confirms a condition that existed at
+      year-end, so the $55,000 accrual is raised to $70,000.
+  - id: B
     text: $33,000
     rationale: Correct. $15,000 more for the lawsuit settlement plus the $18,000 inventory count error.
-  - id: B
+  - id: C
     text: $78,000
     rationale: Also recognizes the $45,000 receivable loss. The customer's problems arose from a fire
       after year-end, so the loss is disclosed, not recognized.
-  - id: C
-    text: $88,000
-    rationale: Charges the full $70,000 settlement instead of the $15,000 not yet accrued.
   - id: D
     text: $133,000
     rationale: Charges the full settlement and also recognizes the receivable loss.
-  answer: A
+  answer: B
   explanation: 'The settlement gives evidence about a Year 1 condition, so the accrual rises from $55,000
     to $70,000: $15,000. The inventory double count is an error in the Year 1 statements found before
     issuance: $18,000. The customer''s bankruptcy resulted from a fire after year-end, so it is a nonrecognized

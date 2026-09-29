@@ -44,21 +44,21 @@ variants:
     related to these costs should Kemp recognize in Year 1?
   choices:
   - id: A
+    text: $45,000
+    rationale: Records only the amortization and leaves out the $32,000 of training and data conversion,
+      which are expensed as incurred.
+  - id: B
     text: $48,200
     rationale: Capitalizes the training and data conversion costs as well. Both are expensed as incurred.
-  - id: B
+  - id: C
     text: $77,000
     rationale: Correct. Capitalized cost $450,000 ÷ 5 × 6/12 = $45,000 of amortization, plus $32,000 of
       training and data conversion.
-  - id: C
+  - id: D
     text: $122,000
     rationale: Amortizes from January 1. Amortization begins when the software is ready for its intended
       use on July 1.
-  - id: D
-    text: $158,000
-    rationale: Expenses the $90,000 of configuration. Costs to configure internal-use software for its
-      intended use are capitalized.
-  answer: B
+  answer: C
   explanation: 'The license ($360,000) and the configuration needed to make the software ready for use
     ($90,000) are capitalized: $450,000. Training ($20,000) and data conversion ($12,000) are expensed.
     Amortization starts July 1: $450,000 ÷ 5 × 6/12 = $45,000. Year 1 expense = $45,000 + $32,000 = $77,000.'
@@ -95,8 +95,9 @@ variants:
     expense related to these costs should Marsh recognize in Year 1?
   choices:
   - id: A
-    text: $21,250
-    rationale: Capitalizes the training and data conversion costs as well. Both are expensed as incurred.
+    text: $20,000
+    rationale: Records only the amortization and leaves out the $30,000 of training and data conversion,
+      which are expensed as incurred.
   - id: B
     text: $50,000
     rationale: Correct. Capitalized cost $480,000 ÷ 6 × 3/12 = $20,000 of amortization, plus $30,000 of

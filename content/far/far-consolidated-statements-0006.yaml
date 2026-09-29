@@ -45,20 +45,19 @@ variants:
     the consolidated balance sheet report?
   choices:
   - id: A
-    text: $5,940,000
-    rationale: Eliminates the accrued interest twice, once for each company's accrual. Only Quill's $30,000
-      receivable is an asset.
-  - id: B
     text: $5,970,000
     rationale: Correct. $6,800,000 − $800,000 note receivable − $30,000 accrued interest receivable.
-  - id: C
+  - id: B
     text: $6,000,000
     rationale: Eliminates the note but not the $30,000 of accrued interest receivable.
+  - id: C
+    text: $6,770,000
+    rationale: Eliminates the accrued interest but not the $800,000 note receivable.
   - id: D
     text: $6,800,000
     rationale: Accepts the draft. Balances between parent and subsidiary are eliminated, not only the
       investment account.
-  answer: B
+  answer: A
   explanation: Consolidated statements present the group as one entity, so the intercompany loan is eliminated
     along with the investment. Quill's note receivable ($800,000) and accrued interest receivable ($800,000
     × 5% × 9/12 = $30,000) come out of assets, and Ramsey's matching payables come out of liabilities.
@@ -71,20 +70,20 @@ variants:
     the consolidated balance sheet report?
   choices:
   - id: A
+    text: $2,664,000
+    rationale: Eliminates a full year's interest ($36,000). Only the 4 months accrued at December 31 are
+      on the balance sheet.
+  - id: B
     text: $2,676,000
     rationale: Eliminates the accrued interest twice, once for each company's accrual. Only Sutter's $12,000
       receivable is an asset.
-  - id: B
+  - id: C
     text: $2,688,000
     rationale: Correct. $3,100,000 − $400,000 note receivable − $12,000 accrued interest receivable.
-  - id: C
+  - id: D
     text: $2,700,000
     rationale: Eliminates the note but not the $12,000 of accrued interest receivable.
-  - id: D
-    text: $3,100,000
-    rationale: Accepts the draft. Balances between parent and subsidiary are eliminated, not only the
-      investment account.
-  answer: B
+  answer: C
   explanation: Consolidated statements present the group as one entity, so the intercompany loan is eliminated
     along with the investment. Sutter's note receivable ($400,000) and accrued interest receivable ($400,000
     × 9% × 4/12 = $12,000) come out of assets, and Vane's matching payables come out of liabilities. Total
@@ -97,9 +96,9 @@ variants:
     assets should the consolidated balance sheet report?
   choices:
   - id: A
-    text: $4,236,000
-    rationale: Eliminates the accrued interest twice, once for each company's accrual. Only Wexford's
-      $32,000 receivable is an asset.
+    text: $4,252,000
+    rationale: Eliminates a full year's interest ($48,000). Only the 8 months accrued at December 31 are
+      on the balance sheet.
   - id: B
     text: $4,268,000
     rationale: Correct. $5,500,000 − $1,200,000 note receivable − $32,000 accrued interest receivable.
@@ -107,9 +106,8 @@ variants:
     text: $4,300,000
     rationale: Eliminates the note but not the $32,000 of accrued interest receivable.
   - id: D
-    text: $5,500,000
-    rationale: Accepts the draft. Balances between parent and subsidiary are eliminated, not only the
-      investment account.
+    text: $5,468,000
+    rationale: Eliminates the accrued interest but not the $1,200,000 note receivable.
   answer: B
   explanation: Consolidated statements present the group as one entity, so the intercompany loan is eliminated
     along with the investment. Wexford's note receivable ($1,200,000) and accrued interest receivable

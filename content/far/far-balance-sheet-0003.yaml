@@ -37,3 +37,83 @@ explanation: Treasury stock is a contra-equity account, so the $50,000 comes out
   equity. Noncontrolling interest is reported within equity, separately from the parent's equity, so the
   $80,000 moves from liabilities to equity. Total equity = $1,100,000 − $50,000 + $80,000 = $1,130,000
   (the parent's share is $1,050,000).
+variants:
+- stem: 'Sykes Corp.''s draft consolidated balance sheet reports total stockholders'' equity of $2,500,000:
+    common stock $200,000, additional paid-in capital $900,000, and retained earnings $1,400,000. Supporting
+    documents show that $150,000 of Sykes''s own shares, reacquired and held in treasury, are reported
+    among noncurrent assets as "investment in treasury stock," and that the $60,000 noncontrolling interest
+    in a subsidiary is reported as a noncurrent liability. After correcting the draft, what total equity
+    should Sykes''s consolidated balance sheet report?'
+  choices:
+  - id: A
+    text: $2,350,000
+    rationale: Corrects the treasury stock but leaves the noncontrolling interest in liabilities. Noncontrolling
+      interest is part of equity in consolidated statements.
+  - id: B
+    text: $2,410,000
+    rationale: Correct. $2,500,000 − $150,000 treasury stock + $60,000 noncontrolling interest.
+  - id: C
+    text: $2,500,000
+    rationale: Accepts the draft. Treasury stock is a deduction from equity, not an asset, and noncontrolling
+      interest is equity, not a liability.
+  - id: D
+    text: $2,560,000
+    rationale: Moves the noncontrolling interest into equity but leaves the treasury stock as an asset.
+  answer: B
+  explanation: Treasury stock is a contra-equity account, so the $150,000 comes out of assets and reduces
+    equity. Noncontrolling interest is reported within equity, separately from the parent's equity, so
+    the $60,000 moves from liabilities to equity. Total equity = $2,500,000 − $150,000 + $60,000 = $2,410,000
+    (the parent's share is $2,350,000).
+- stem: 'Thorne Corp.''s draft consolidated balance sheet reports total stockholders'' equity of $750,000:
+    common stock $50,000, additional paid-in capital $250,000, and retained earnings $450,000. Supporting
+    documents show that $40,000 of Thorne''s own shares, reacquired and held in treasury, are reported
+    among noncurrent assets as "investment in treasury stock," and that the $120,000 noncontrolling interest
+    in a subsidiary is reported as a noncurrent liability. After correcting the draft, what total equity
+    should Thorne''s consolidated balance sheet report?'
+  choices:
+  - id: A
+    text: $590,000
+    rationale: Deducts the $120,000 noncontrolling interest from equity. It is added to equity, reported
+      separately from the parent's equity.
+  - id: B
+    text: $710,000
+    rationale: Corrects the treasury stock but leaves the noncontrolling interest in liabilities. Noncontrolling
+      interest is part of equity in consolidated statements.
+  - id: C
+    text: $750,000
+    rationale: Accepts the draft. Treasury stock is a deduction from equity, not an asset, and noncontrolling
+      interest is equity, not a liability.
+  - id: D
+    text: $830,000
+    rationale: Correct. $750,000 − $40,000 treasury stock + $120,000 noncontrolling interest.
+  answer: D
+  explanation: Treasury stock is a contra-equity account, so the $40,000 comes out of assets and reduces
+    equity. Noncontrolling interest is reported within equity, separately from the parent's equity, so
+    the $120,000 moves from liabilities to equity. Total equity = $750,000 − $40,000 + $120,000 = $830,000
+    (the parent's share is $710,000).
+- stem: 'Vance Corp.''s draft consolidated balance sheet reports total stockholders'' equity of $1,700,000:
+    common stock $150,000, additional paid-in capital $600,000, and retained earnings $950,000. Supporting
+    documents show that $90,000 of Vance''s own shares, reacquired and held in treasury, are reported
+    among noncurrent assets as "investment in treasury stock," and that the $200,000 noncontrolling interest
+    in a subsidiary is reported as a noncurrent liability. After correcting the draft, what total equity
+    should Vance''s consolidated balance sheet report?'
+  choices:
+  - id: A
+    text: $1,410,000
+    rationale: Deducts the $200,000 noncontrolling interest from equity. It is added to equity, reported
+      separately from the parent's equity.
+  - id: B
+    text: $1,700,000
+    rationale: Accepts the draft. Treasury stock is a deduction from equity, not an asset, and noncontrolling
+      interest is equity, not a liability.
+  - id: C
+    text: $1,810,000
+    rationale: Correct. $1,700,000 − $90,000 treasury stock + $200,000 noncontrolling interest.
+  - id: D
+    text: $1,900,000
+    rationale: Moves the noncontrolling interest into equity but leaves the treasury stock as an asset.
+  answer: C
+  explanation: Treasury stock is a contra-equity account, so the $90,000 comes out of assets and reduces
+    equity. Noncontrolling interest is reported within equity, separately from the parent's equity, so
+    the $200,000 moves from liabilities to equity. Total equity = $1,700,000 − $90,000 + $200,000 = $1,810,000
+    (the parent's share is $1,610,000).

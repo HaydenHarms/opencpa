@@ -45,45 +45,46 @@ variants:
     total noncurrent liabilities?'
   choices:
   - id: A
+    text: $1,690,000
+    rationale: Moves the whole $600,000 lease liability to current. Only the $110,000 due within the year
+      is current.
+  - id: B
     text: $2,090,000
     rationale: Also moves the $90,000 deferred tax liability to current. Deferred taxes are always classified
       as noncurrent.
-  - id: B
+  - id: C
     text: $2,180,000
     rationale: Correct. $1,600,000 of bonds + $490,000 of lease liability + $90,000 deferred tax liability.
-  - id: C
+  - id: D
     text: $2,290,000
     rationale: Leaves the $110,000 current portion of the lease liability in noncurrent.
-  - id: D
-    text: $2,580,000
-    rationale: Leaves the $400,000 of bonds maturing in Year 2 in noncurrent.
-  answer: B
+  answer: C
   explanation: 'Liabilities due within a year are current: the $400,000 of bonds maturing in Year 2, the
     $110,000 of lease payments due in Year 2, and the $70,000 warranty liability. Deferred tax liabilities
     are classified as noncurrent. Noncurrent liabilities = $1,600,000 + $490,000 + $90,000 = $2,180,000.'
 - stem: 'Gale Co.''s draft December 31, Year 1, classified balance sheet reports total noncurrent liabilities
-    of $1,310,000: bonds payable $900,000, operating lease liabilities $250,000, deferred tax liability
-    $120,000, and warranty liability $40,000. Supporting schedules show that $150,000 of the bonds mature
+    of $1,350,000: bonds payable $900,000, operating lease liabilities $250,000, deferred tax liability
+    $120,000, and warranty liability $80,000. Supporting schedules show that $150,000 of the bonds mature
     on June 30, Year 2; that $45,000 of the lease liability will be paid during Year 2; and that the warranty
     claims are all expected to be paid during Year 2. After correcting the draft, what are Gale''s total
     noncurrent liabilities?'
   choices:
   - id: A
-    text: $955,000
-    rationale: Also moves the $120,000 deferred tax liability to current. Deferred taxes are always classified
-      as noncurrent.
-  - id: B
     text: $1,075,000
     rationale: Correct. $750,000 of bonds + $205,000 of lease liability + $120,000 deferred tax liability.
-  - id: C
+  - id: B
     text: $1,120,000
     rationale: Leaves the $45,000 current portion of the lease liability in noncurrent.
+  - id: C
+    text: $1,155,000
+    rationale: Leaves the $80,000 warranty liability in noncurrent. Claims expected to be paid within
+      the year are current.
   - id: D
     text: $1,225,000
     rationale: Leaves the $150,000 of bonds maturing in Year 2 in noncurrent.
-  answer: B
+  answer: A
   explanation: 'Liabilities due within a year are current: the $150,000 of bonds maturing in Year 2, the
-    $45,000 of lease payments due in Year 2, and the $40,000 warranty liability. Deferred tax liabilities
+    $45,000 of lease payments due in Year 2, and the $80,000 warranty liability. Deferred tax liabilities
     are classified as noncurrent. Noncurrent liabilities = $750,000 + $205,000 + $120,000 = $1,075,000.'
 - stem: 'Harlow Co.''s draft December 31, Year 1, classified balance sheet reports total noncurrent liabilities
     of $3,975,000: bonds payable $3,200,000, operating lease liabilities $480,000, deferred tax liability
@@ -93,19 +94,21 @@ variants:
     noncurrent liabilities?'
   choices:
   - id: A
+    text: $2,610,000
+    rationale: Moves the whole $480,000 lease liability to current. Only the $95,000 due within the year
+      is current.
+  - id: B
     text: $2,785,000
     rationale: Also moves the $210,000 deferred tax liability to current. Deferred taxes are always classified
       as noncurrent.
-  - id: B
+  - id: C
     text: $2,995,000
     rationale: Correct. $2,400,000 of bonds + $385,000 of lease liability + $210,000 deferred tax liability.
-  - id: C
-    text: $3,090,000
-    rationale: Leaves the $95,000 current portion of the lease liability in noncurrent.
   - id: D
-    text: $3,795,000
-    rationale: Leaves the $800,000 of bonds maturing in Year 2 in noncurrent.
-  answer: B
+    text: $3,080,000
+    rationale: Leaves the $85,000 warranty liability in noncurrent. Claims expected to be paid within
+      the year are current.
+  answer: C
   explanation: 'Liabilities due within a year are current: the $800,000 of bonds maturing in Year 2, the
     $95,000 of lease payments due in Year 2, and the $85,000 warranty liability. Deferred tax liabilities
     are classified as noncurrent. Noncurrent liabilities = $2,400,000 + $385,000 + $210,000 = $2,995,000.'

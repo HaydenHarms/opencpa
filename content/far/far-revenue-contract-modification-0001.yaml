@@ -45,21 +45,22 @@ variants:
     after the modification?
   choices:
   - id: A
-    text: $108
-    rationale: Uses the price of the added units for all remaining units.
-  - id: B
     text: $129
     rationale: 'Correct. The modification is accounted for prospectively: (60 × $150 + 60 × $108) ÷ 120
       units.'
-  - id: C
+  - id: B
     text: $138
     rationale: Applies a cumulative catch-up by blending all 210 units, including the 90 already delivered.
       When the remaining goods are distinct, the modification is prospective.
+  - id: C
+    text: $142
+    rationale: Uses the $142 standalone selling price for every remaining unit. The remaining consideration
+      in the contract is allocated, not the standalone selling price.
   - id: D
     text: $150
     rationale: Keeps $150 for the original units and treats the added units as a separate contract. That
       applies only when the added units are priced at their standalone selling price.
-  answer: B
+  answer: A
   explanation: 'The added units are distinct but not priced at standalone selling price, so the modification
     is not a separate contract. Because the remaining units are distinct from those already delivered,
     Selby treats it as terminating the old contract and creating a new one: the remaining consideration
@@ -78,9 +79,9 @@ variants:
     text: $67
     rationale: 'Correct. The modification is accounted for prospectively: (30 × $75 + 20 × $55) ÷ 50 units.'
   - id: C
-    text: $71
-    rationale: Applies a cumulative catch-up by blending all 100 units, including the 50 already delivered.
-      When the remaining goods are distinct, the modification is prospective.
+    text: $70
+    rationale: Uses the $70 standalone selling price for every remaining unit. The remaining consideration
+      in the contract is allocated, not the standalone selling price.
   - id: D
     text: $75
     rationale: Keeps $75 for the original units and treats the added units as a separate contract. That

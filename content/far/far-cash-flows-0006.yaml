@@ -14,8 +14,8 @@ stem: 'Ives Co.''s controller is deriving how six Year 1 transactions affect net
   activities: (1) collected $50,000 of accounts receivable from customers; (2) paid $30,000 in December
   for insurance covering the next year; (3) sold equipment with a carrying amount of $40,000 for $55,000
   in cash; (4) paid $20,000 of interest on a bank loan; (5) accrued $12,000 of wages that will be paid
-  in January; and (6) received $15,000 of dividends on an equity investment. Under U.S. GAAP, by how much
-  do these transactions increase net cash provided by operating activities?'
+  in January; and (6) received $15,000 of dividends on an investment in equity securities. Under U.S.
+  GAAP, by how much do these transactions increase net cash provided by operating activities?'
 choices:
 - id: A
   text: $3,000
@@ -37,3 +37,86 @@ explanation: 'Operating cash flows: collections from customers +$50,000; insuran
   interest paid −$20,000 (operating under U.S. GAAP); dividends received +$15,000 (operating under U.S.
   GAAP). Net +$15,000. The $55,000 of equipment proceeds is an investing inflow (the $15,000 gain is removed
   under the indirect method), and the wage accrual has no cash effect.'
+variants:
+- stem: 'Jarvis Co.''s controller is deriving how six Year 1 transactions affect net cash provided by
+    operating activities: (1) collected $80,000 of accounts receivable from customers; (2) paid $24,000
+    in December for insurance covering the next year; (3) sold equipment with a carrying amount of $60,000
+    for $72,000 in cash; (4) paid $18,000 of interest on a bank loan; (5) accrued $9,000 of wages that
+    will be paid in January; and (6) received $10,000 of dividends on an investment in equity securities.
+    Under U.S. GAAP, by how much do these transactions increase net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $39,000
+    rationale: Deducts the $9,000 of accrued wages. An accrual records an expense without any cash payment.
+  - id: B
+    text: $48,000
+    rationale: Correct. +$80,000 − $24,000 − $18,000 + $10,000. The equipment sale is investing, and the
+      accrued wages involve no cash.
+  - id: C
+    text: $66,000
+    rationale: Leaves out the $18,000 of interest paid. Under U.S. GAAP, interest paid is an operating
+      cash outflow.
+  - id: D
+    text: $120,000
+    rationale: Adds the $72,000 of equipment sale proceeds. Proceeds from selling equipment are an investing
+      inflow.
+  answer: B
+  explanation: 'Operating cash flows: collections from customers +$80,000; insurance paid in advance −$24,000;
+    interest paid −$18,000 (operating under U.S. GAAP); dividends received +$10,000 (operating under U.S.
+    GAAP). Net +$48,000. The $72,000 of equipment proceeds is an investing inflow (the $12,000 gain is
+    removed under the indirect method), and the wage accrual has no cash effect.'
+- stem: 'Keating Co.''s controller is deriving how six Year 1 transactions affect net cash provided by
+    operating activities: (1) collected $65,000 of accounts receivable from customers; (2) paid $12,000
+    in December for insurance covering the next year; (3) sold equipment with a carrying amount of $30,000
+    for $41,000 in cash; (4) paid $25,000 of interest on a bank loan; (5) accrued $16,000 of wages that
+    will be paid in January; and (6) received $8,000 of dividends on an investment in equity securities.
+    Under U.S. GAAP, by how much do these transactions increase net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $20,000
+    rationale: Deducts the $16,000 of accrued wages. An accrual records an expense without any cash payment.
+  - id: B
+    text: $28,000
+    rationale: Leaves out the $8,000 of dividends received. Under U.S. GAAP, dividends received are an
+      operating cash inflow.
+  - id: C
+    text: $36,000
+    rationale: Correct. +$65,000 − $12,000 − $25,000 + $8,000. The equipment sale is investing, and the
+      accrued wages involve no cash.
+  - id: D
+    text: $47,000
+    rationale: Adds the $11,000 gain on the equipment sale. A gain is not a cash flow, and the proceeds
+      are an investing inflow.
+  answer: C
+  explanation: 'Operating cash flows: collections from customers +$65,000; insurance paid in advance −$12,000;
+    interest paid −$25,000 (operating under U.S. GAAP); dividends received +$8,000 (operating under U.S.
+    GAAP). Net +$36,000. The $41,000 of equipment proceeds is an investing inflow (the $11,000 gain is
+    removed under the indirect method), and the wage accrual has no cash effect.'
+- stem: 'Lang Co.''s controller is deriving how six Year 1 transactions affect net cash provided by operating
+    activities: (1) collected $120,000 of accounts receivable from customers; (2) paid $45,000 in December
+    for insurance covering the next year; (3) sold equipment with a carrying amount of $70,000 for $95,000
+    in cash; (4) paid $30,000 of interest on a bank loan; (5) accrued $20,000 of wages that will be paid
+    in January; and (6) received $25,000 of dividends on an investment in equity securities. Under U.S.
+    GAAP, by how much do these transactions increase net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $70,000
+    rationale: Correct. +$120,000 − $45,000 − $30,000 + $25,000. The equipment sale is investing, and
+      the accrued wages involve no cash.
+  - id: B
+    text: $95,000
+    rationale: Adds the $25,000 gain on the equipment sale. A gain is not a cash flow, and the proceeds
+      are an investing inflow.
+  - id: C
+    text: $100,000
+    rationale: Leaves out the $30,000 of interest paid. Under U.S. GAAP, interest paid is an operating
+      cash outflow.
+  - id: D
+    text: $165,000
+    rationale: Adds the $95,000 of equipment sale proceeds. Proceeds from selling equipment are an investing
+      inflow.
+  answer: A
+  explanation: 'Operating cash flows: collections from customers +$120,000; insurance paid in advance
+    −$45,000; interest paid −$30,000 (operating under U.S. GAAP); dividends received +$25,000 (operating
+    under U.S. GAAP). Net +$70,000. The $95,000 of equipment proceeds is an investing inflow (the $25,000
+    gain is removed under the indirect method), and the wage accrual has no cash effect.'
