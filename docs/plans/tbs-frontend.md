@@ -1,6 +1,6 @@
 # Plan: task-based simulations (TBS)
 
-Status: milestone 1 (schema and API) done on 2026-09-29; milestones 2–4 not started. Written as roadmap item 2 in `CLAUDE.md`.
+Status: milestone 1 (schema and API) is on `main`. Milestones 2 (player UI) and 3 (three verified simulations) are on the local branch `tbs-ui`, awaiting Hayden's review before merge. Written as roadmap item 2 in `CLAUDE.md`.
 
 ## Why now
 

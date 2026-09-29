@@ -1,0 +1,79 @@
+id: far-tbs-income-tax-provision-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (current and deferred taxes; temporary and permanent differences)
+  notes: FAR simulations batch 01. Written from scratch; every number computed in code.
+title: Income tax provision
+scenario: Keane Corp. completed its first year of operations with pretax financial income of $800,000.
+  The enacted federal rate for this and all future years is 21%, and there are no state taxes. Management
+  expects enough future taxable income to realize any deferred tax asset. Use the exhibit to prepare the
+  income tax provision.
+exhibits:
+- title: Book-tax differences for Year 1
+  body: '| Item | Amount |
+
+    |---|---|
+
+    | Interest on municipal bonds included in pretax income, not taxable | $20,000 |
+
+    | Tax depreciation in excess of book depreciation | $60,000 |
+
+    | Warranty expense accrued for books, deductible when paid next year | $40,000 |'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 0
+  prompt: What is Keane's taxable income for Year 1?
+  answer: 76000000
+  explanation: $800,000 − $20,000 tax-exempt interest (permanent) − $60,000 excess tax depreciation +
+    $40,000 warranty accrual not yet deductible = $760,000.
+- id: t2
+  type: journal_entry
+  points: 3
+  prompt: Prepare Keane's journal entry to record income tax expense for Year 1. Record the deferred tax
+    asset and the deferred tax liability separately (do not offset them).
+  accounts:
+  - Income tax expense — current
+  - Income tax expense — deferred
+  - Income taxes payable
+  - Deferred tax asset
+  - Deferred tax liability
+  - Valuation allowance
+  - Interest revenue
+  answer:
+  - account: Income tax expense — current
+    debit: 15960000
+    credit: 0
+  - account: Income tax expense — deferred
+    debit: 420000
+    credit: 0
+  - account: Deferred tax asset
+    debit: 840000
+    credit: 0
+  - account: Income taxes payable
+    debit: 0
+    credit: 15960000
+  - account: Deferred tax liability
+    debit: 0
+    credit: 1260000
+  explanation: Current tax = $760,000 × 21% = $159,600. The depreciation difference creates a deferred
+    tax liability of $12,600; the warranty accrual creates a deferred tax asset of $8,400. Deferred tax
+    expense = $12,600 − $8,400 = $4,200. No valuation allowance is needed.
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 0
+  prompt: What total income tax expense should Keane report for Year 1?
+  answer: 16380000
+  explanation: $159,600 current + $4,200 deferred = $163,800. The tax-exempt interest is a permanent difference,
+    so the effective rate (20.48%) is below 21%.

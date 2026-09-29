@@ -1,0 +1,86 @@
+id: far-tbs-bank-reconciliation-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice
+  notes: FAR simulations batch 01. Written from scratch; every number computed in code.
+title: Bank reconciliation and adjusting entry
+scenario: Hollis Co. is reconciling its checking account at June 30. The bank statement balance is $14,285
+  and the general ledger cash balance is $12,400. Use the exhibit to reconcile the account and record
+  the entry the general ledger needs.
+exhibits:
+- title: Reconciling items found
+  body: '| Item | Amount |
+
+    |---|---|
+
+    | Deposit of June 30 not on the bank statement | $2,300 |
+
+    | Checks written in June that have not cleared the bank | $3,100 |
+
+    | Bank service charge for June, not recorded by Hollis | $35 |
+
+    | Customer check returned by the bank for nonsufficient funds | $800 |
+
+    | Note receivable collected by the bank for Hollis ($2,000 principal plus $100 interest), not recorded
+    by Hollis | $2,100 |
+
+    | Check #884 in payment of an account payable to a supplier, cleared by the bank for its correct amount
+    of $640, recorded by Hollis as $460 | $180 |'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 0
+  prompt: What is Hollis's correct cash balance at June 30?
+  answer: 1348500
+  explanation: 'Bank side: $14,285 + $2,300 deposit in transit − $3,100 outstanding checks = $13,485.
+    Book side: $12,400 − $35 − $800 + $2,100 − $180 = $13,485.'
+- id: t2
+  type: journal_entry
+  points: 3
+  prompt: Prepare one compound journal entry to bring Hollis's general ledger into agreement with the
+    reconciliation. Record only the items that require an entry on Hollis's books, and show the net change
+    in Cash as a single line.
+  accounts:
+  - Cash
+  - Bank service charge expense
+  - Accounts receivable
+  - Accounts payable
+  - Notes receivable
+  - Interest revenue
+  - Outstanding checks
+  - Deposits in transit
+  - Allowance for credit losses
+  answer:
+  - account: Cash
+    debit: 108500
+    credit: 0
+  - account: Bank service charge expense
+    debit: 3500
+    credit: 0
+  - account: Accounts receivable
+    debit: 80000
+    credit: 0
+  - account: Accounts payable
+    debit: 18000
+    credit: 0
+  - account: Notes receivable
+    debit: 0
+    credit: 200000
+  - account: Interest revenue
+    debit: 0
+    credit: 10000
+  explanation: 'Only book-side items need entries. The NSF check reinstates the receivable ($800); the
+    service charge is an expense ($35); the collected note removes the receivable and records interest
+    ($2,000 and $100); the recording error understated the payment to the supplier, so accounts payable
+    is reduced by another $180. Net effect on cash: +$1,085. Deposits in transit and outstanding checks
+    need no entry.'

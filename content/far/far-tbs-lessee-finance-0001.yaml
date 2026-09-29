@@ -1,0 +1,94 @@
+id: far-tbs-lessee-finance-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 842-10 (lease classification)
+  - 'ASC 842-20 (lessee finance leases: initial and subsequent measurement)'
+  notes: FAR simulations batch 01. Written from scratch; every number computed in code.
+title: 'Finance lease: commencement and first year'
+scenario: On January 1, Year 1, Ridge Co. leases production equipment for five years. Ridge pays $40,000
+  at the end of each year, and title to the equipment transfers to Ridge when the lease ends. The equipment's
+  economic life is eight years. The rate implicit in the lease is not readily determinable, so Ridge uses
+  its 6% incremental borrowing rate. Ridge paid $3,000 of initial direct costs in cash at commencement.
+  Ridge depreciates owned equipment of this kind straight-line with no residual value.
+exhibits:
+- title: Present value factors at 6%
+  body: '| Periods | Single sum | Ordinary annuity | Annuity due |
+
+    |---|---|---|---|
+
+    | 5 | 0.7473 | 4.2124 | 4.4651 |
+
+    | 8 | 0.6274 | 6.2098 | 6.5824 |'
+tasks:
+- id: t1
+  type: journal_entry
+  points: 2
+  prompt: Prepare Ridge's journal entry at lease commencement on January 1, Year 1.
+  accounts:
+  - Right-of-use asset
+  - Lease liability
+  - Cash
+  - Prepaid rent
+  - Lease expense
+  - Interest expense
+  answer:
+  - account: Right-of-use asset
+    debit: 17149600
+    credit: 0
+  - account: Lease liability
+    debit: 0
+    credit: 16849600
+  - account: Cash
+    debit: 0
+    credit: 300000
+  explanation: 'Transfer of ownership makes this a finance lease. The liability is the present value of
+    the payments: $40,000 × 4.2124 = $168,496. The right-of-use asset adds the $3,000 of initial direct
+    costs: $171,496.'
+- id: t2
+  type: journal_entry
+  points: 2
+  prompt: Prepare Ridge's journal entry for the lease payment on December 31, Year 1. Record only the
+    payment; Ridge records amortization in a separate entry.
+  accounts:
+  - Interest expense
+  - Lease liability
+  - Cash
+  - Lease expense
+  - Right-of-use asset
+  - Amortization expense
+  answer:
+  - account: Interest expense
+    debit: 1011000
+    credit: 0
+  - account: Lease liability
+    debit: 2989000
+    credit: 0
+  - account: Cash
+    debit: 0
+    credit: 4000000
+  explanation: Interest = $168,496 × 6% = $10,110 (rounded to the dollar). The rest of the $40,000 payment,
+    $29,890, reduces the liability. A finance lease has no single straight-line lease expense.
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 0
+  prompt: What amortization expense on the right-of-use asset should Ridge recognize for Year 1?
+  answer: 2143700
+  explanation: 'Because ownership transfers, the asset is amortized over its eight-year economic life,
+    not the five-year lease term: $171,496 ÷ 8 = $21,437.'
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 0
+  prompt: What is the carrying amount of Ridge's lease liability at December 31, Year 1?
+  answer: 13860600
+  explanation: $168,496 − $29,890 principal reduction = $138,606.
