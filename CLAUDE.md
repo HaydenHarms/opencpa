@@ -94,6 +94,7 @@ Blueprint areas used for FAR: `Area I — Financial Reporting`, `Area II — Sel
 2. **FAR batch 06** (gaps in `docs/reviews/far-batch-05.md`: fund determination, NFP statement of financial position, NFP cash flows and notes, amortized-cost investments, debt covenants; go light on revenue). About three Remembering and Understanding items at most.
 3. Let's not work on BAR yet, let's fully finish FAR before working on BAR. The other sections: BAR batch 02 (gaps in `docs/reviews/bar-batch-01.md`; lean toward Area I and II Analysis to bring Application back under 55%), then AUD/REG and the disciplines. BAR targets: Area I 40–50%, II 35–45%, III 10–20%; Remembering and Understanding 10–20%, Application 45–55%, Analysis 30–40%.
 4. Accounts (GitHub OAuth / email magic link), migrating anonymous progress to the account.
+5. I would like to also add a diagnostic quiz at the outset so that the algorithm has something to work off of.
 5. Claude tutor at `POST /me/tutor` (currently a 501 stub), using the student's own API key. Give it tools for the current item, recent misses and generating a variant. **Is there a way to directly connect Claude to use billing usage rather than API token billing? We need to find a way to do that so that it's easier to use.**
 6. Before any publicity: rate limiting, a UI redesign (the current UI is intentionally plain; Hayden wants it less bland) and a custom domain.
 7. Exam-day mode.
