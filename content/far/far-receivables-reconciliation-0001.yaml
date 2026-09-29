@@ -12,30 +12,31 @@ review:
   - 'ASC 210-10 (presentation: credit balances in customer accounts)'
   notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
 stem: At December 31, Arden Co.'s accounts receivable subledger shows customer accounts with debit balances
-  totaling $512,000 and customer accounts with credit balances totaling $14,000 (overpayments and advance
-  deposits), for a net of $498,000. The general ledger accounts receivable control account shows $505,000.
-  Investigating the difference, the controller finds that a $7,000 credit memo for goods returned on December
-  30 was posted to the customer's subledger account but not to the general ledger. Before any allowance
+  totaling $503,000 and customer accounts with credit balances totaling $14,000, for a net of $489,000.
+  The general ledger accounts receivable control account shows $498,000. Investigating the difference,
+  the controller finds that a $9,000 credit sale made on December 27 was posted to the general ledger
+  but never to the customer's subledger account; that customer had no other balance. Before any allowance
   for credit losses, what amount should Arden report as accounts receivable?
 choices:
 - id: A
-  text: $491,000
-  rationale: Posts the $7,000 credit memo twice, subtracting it from the subledger net that already reflects
-    it.
+  text: $489,000
+  rationale: Reports the unadjusted subledger net. It omits the $9,000 sale and nets customer credit balances
+    against receivables.
 - id: B
   text: $498,000
-  rationale: Reports the subledger net. Customer credit balances are liabilities and are not netted against
-    receivables from other customers.
+  rationale: Reports the general ledger balance, which agrees with the corrected subledger net. Customer
+    credit balances are liabilities and are not netted against receivables from other customers.
 - id: C
-  text: $505,000
-  rationale: Reports the unadjusted general ledger, which does not yet reflect the $7,000 credit memo.
+  text: $503,000
+  rationale: Reports the subledger's debit balances without posting the $9,000 sale that is missing from
+    them.
 - id: D
   text: $512,000
-  rationale: Correct. After the credit memo is posted, the ledger agrees with the subledger net ($498,000);
-    receivables are the $512,000 of debit balances, and the $14,000 of credit balances is a current liability.
+  rationale: Correct. Posting the $9,000 sale raises debit balances to $512,000; the $14,000 of credit
+    balances is reported as a current liability.
 answer: D
-explanation: 'Reconcile first: the general ledger is $7,000 too high because the credit memo was never
-  posted; $505,000 − $7,000 = $498,000 agrees with the subledger net. For presentation, customer accounts
-  with credit balances are reclassified as liabilities rather than netted against other customers'' debit
-  balances. Accounts receivable = $512,000; customer credit balances of $14,000 are reported as current
-  liabilities.'
+explanation: 'Reconcile first: the subledger is missing the $9,000 sale, so its debit balances become
+  $512,000 and its net becomes $498,000, which agrees with the general ledger. For presentation, customer
+  accounts with credit balances are reclassified as liabilities rather than netted against other customers''
+  debit balances. Accounts receivable = $512,000; customer credit balances of $14,000 are reported as
+  current liabilities.'

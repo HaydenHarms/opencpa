@@ -63,3 +63,16 @@ A separate agent solved all 25 items from the stems and choices only. It **match
 | `far-cash-bank-reconciliation-0002` | Company name duplicated another item | Renamed to Dunmore Co. |
 
 It read `far-contingencies-0003` as Application; the tag stays Analysis because the item maps to the blueprint's "review supporting documentation to determine whether a contingency requires recognition and/or disclosure" task, as `far-contingencies-0002` did in batch 01.
+
+## Review gate
+
+A fresh review agent graded the batch without reading this report first. **All 25 keys correct; average estimated pass likelihood 84.3%; 23 exam-ready, 2 minor revision, 0 major.** Skill and area mix confirmed inside the blueprint ranges for the batch and the 75-item bank. Its tool checks were interrupted partway (a service outage), so it could not read the skill marks for lessee accounting and subsequent events or check standards online; those points rest on its own knowledge. Fixes applied:
+
+| Item | Finding | Fix |
+| --- | --- | --- |
+| `far-receivables-reconciliation-0001` | The reconciling item did not change the key, so the reconciliation was decorative; it also reused batch 02's "$7,000 credit memo on December 30" | The reconciling item is now a $9,000 sale missing from the subledger, which changes the debit-balance total; the hint "(overpayments and advance deposits)" is gone |
+| `far-bonds-premium-0001` | Choice C showed $68,926 for $68,926.50, a round-half-to-even artifact | Now $68,927 |
+| `far-ratios-0002` | One distractor needed two errors at once | Replaced with the common single error (ending inventory, 55.0 days) |
+| `far-eps-basic-0001` | One distractor was a sign slip | Replaced with not applying the stock dividend retroactively ($3.77) |
+
+Quality-bar additions from this review are in `CLAUDE.md`: a reconciliation item's reconciling entries must change the key, amounts round half up, and new items are checked against the bank for reused amounts and phrasing.

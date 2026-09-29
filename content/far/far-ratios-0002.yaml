@@ -19,15 +19,15 @@ choices:
   rationale: Computes turnover with sales ($2,190,000 ÷ $200,000). Inventory turnover uses cost of goods
     sold, because inventory is carried at cost.
 - id: B
-  text: '36.7'
-  rationale: Uses sales and ending inventory ($2,190,000 ÷ $220,000). Use cost of goods sold and average
-    inventory.
-- id: C
   text: '45.0'
   rationale: Uses beginning inventory ($1,460,000 ÷ $180,000). The question calls for average inventory.
-- id: D
+- id: C
   text: '50.0'
   rationale: Correct. Turnover = $1,460,000 ÷ $200,000 average inventory = 7.3; 365 ÷ 7.3 = 50.0 days.
-answer: D
+- id: D
+  text: '55.0'
+  rationale: Uses ending inventory ($1,460,000 ÷ $220,000 = 6.64 times). The question calls for average
+    inventory.
+answer: C
 explanation: Inventory turnover = cost of goods sold ÷ average inventory = $1,460,000 ÷ [($180,000 + $220,000)
   ÷ 2] = 7.3 times. Days in inventory = 365 ÷ 7.3 = 50.0 days.
