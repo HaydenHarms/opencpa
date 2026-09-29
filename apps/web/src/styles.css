@@ -298,3 +298,27 @@ body {
   margin-top: 16px;
   padding-top: 8px;
 }
+.progress {
+  height: 4px;
+  background: var(--line);
+  border-radius: 2px;
+  margin: 8px 0 16px;
+}
+.progress span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.2s;
+}
+.row-start {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.card h2 {
+  margin: 4px 0 12px;
+}
+.card .mastery {
+  margin: 16px 0;
+}

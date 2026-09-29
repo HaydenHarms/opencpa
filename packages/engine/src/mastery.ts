@@ -41,3 +41,23 @@ export function masteryByArea(
     .map((g) => ({ section: g.section, area: g.area, attempts: g.n, score: g.w ? g.wc / g.w : 0 }))
     .sort((a, b) => a.section.localeCompare(b.section) || a.area.localeCompare(b.area));
 }
+
+/**
+ * Recency-weighted accuracy per topic, with the same half-life as `masteryByArea`.
+ * Used to steer practice sessions toward weak topics.
+ */
+export function masteryByTopic(
+  attempts: { topic: string; correct: boolean; at: number }[],
+  now = Date.now(),
+  halfLifeDays = 14,
+): Map<string, number> {
+  const groups = new Map<string, { w: number; wc: number }>();
+  for (const a of attempts) {
+    const g = groups.get(a.topic) ?? { w: 0, wc: 0 };
+    const weight = Math.pow(0.5, Math.max(0, now - a.at) / 86_400_000 / halfLifeDays);
+    g.w += weight;
+    g.wc += a.correct ? weight : 0;
+    groups.set(a.topic, g);
+  }
+  return new Map([...groups].map(([topic, g]) => [topic, g.w ? g.wc / g.w : 0]));
+}

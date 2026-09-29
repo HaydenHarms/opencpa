@@ -26,12 +26,37 @@ async function call<T>(path: string, init?: RequestInit): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-export interface AttemptResult {
+/** What an answered question reveals. */
+export interface Revealed {
+  selected: string;
   correct: boolean;
   answer: string;
   explanation: string;
   rationales: Record<string, string>;
+}
+
+export interface AttemptResult extends Revealed {
   nextDue: string;
+  sessionComplete: boolean;
+}
+
+export interface Session {
+  id: string;
+  section: string;
+  kind: 'diagnostic' | 'practice';
+  status: 'active' | 'completed' | 'abandoned';
+  createdAt: number;
+  completedAt: number | null;
+  items: PublicMcq[];
+  /** Results for the questions already answered, keyed by item id. */
+  answered: Record<string, Revealed>;
+}
+
+export interface SessionStatus {
+  session: Session | null;
+  nextKind: 'diagnostic' | 'practice';
+  diagnosticSize: number;
+  poolSize: number;
 }
 
 export interface Mastery {
@@ -67,11 +92,15 @@ export interface SimulationResult {
 export const api = {
   questions: (section?: string) =>
     call<PublicMcq[]>(`/questions${section ? `?section=${section}` : ''}`),
-  attempt: (itemId: string, selected: string, durationMs: number) =>
+  attempt: (itemId: string, selected: string, durationMs: number, sessionId?: string) =>
     call<AttemptResult>('/me/attempts', {
       method: 'POST',
-      body: JSON.stringify({ itemId, selected, durationMs }),
+      body: JSON.stringify({ itemId, selected, durationMs, sessionId }),
     }),
+  currentSession: (section: string) =>
+    call<SessionStatus>(`/me/sessions/current?section=${section}`),
+  startSession: (section: string, size: number) =>
+    call<Session>('/me/sessions', { method: 'POST', body: JSON.stringify({ section, size }) }),
   mastery: () => call<Mastery[]>('/me/mastery'),
   simulations: (section?: string) =>
     call<PublicTbs[]>(`/simulations${section ? `?section=${section}` : ''}`),

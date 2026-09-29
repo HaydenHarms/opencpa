@@ -1,15 +1,20 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { z } from 'zod';
-import { toPublicMcq, toPublicTbs, type Item } from '@opencpa/schema';
+import { toPublicMcq, toPublicTbs, type Item, type McqItem } from '@opencpa/schema';
 import {
+  AREA_WEIGHTS,
+  DIAGNOSTIC_SIZE,
   gradeMcq,
   gradeSimulation,
   masteryByArea,
+  masteryByTopic,
   newCard,
   ratingFor,
   ratingForScore,
   review,
+  selectDiagnosticItems,
+  selectPracticeItems,
   type Card,
   type GradeResult,
 } from '@opencpa/engine';
@@ -89,16 +94,31 @@ const attemptBody = z.object({
   selected: z.string().regex(/^[A-F]$/),
   lowConfidence: z.boolean().optional(),
   durationMs: z.number().int().nonnegative().optional(),
+  sessionId: z.string().uuid().optional(),
 });
 
 app.post('/me/attempts', async (c) => {
   const body = attemptBody.safeParse(await c.req.json().catch(() => null));
   if (!body.success) return c.json({ error: body.error.flatten() }, 400);
-  const { itemId, selected, lowConfidence, durationMs } = body.data;
+  const { itemId, selected, lowConfidence, durationMs, sessionId } = body.data;
   const item = byId.get(itemId);
   if (!item || item.type !== 'mcq') return c.json({ error: 'unknown item' }, 404);
 
   const userId = c.get('userId');
+  let session: SessionRow | null = null;
+  if (sessionId) {
+    session = await loadSession(c.env.DB, userId, sessionId);
+    if (!session || session.status !== 'active')
+      return c.json({ error: 'no active session with that id' }, 404);
+    if (!sessionItemIds(session).includes(itemId))
+      return c.json({ error: 'that question is not in this session' }, 400);
+    const answered = await c.env.DB.prepare(
+      'SELECT 1 FROM attempts WHERE session_id = ? AND item_id = ? LIMIT 1',
+    )
+      .bind(sessionId, itemId)
+      .first();
+    if (answered) return c.json({ error: 'already answered in this session' }, 409);
+  }
   const result = gradeMcq(item, selected);
   const now = new Date();
 
@@ -111,15 +131,31 @@ app.post('/me/attempts', async (c) => {
     now,
   );
 
-  await saveAttempt(c.env.DB, userId, item, { selected }, result, durationMs, card);
+  await saveAttempt(c.env.DB, userId, item, { selected }, result, durationMs, card, sessionId);
+
+  let sessionComplete = false;
+  if (session) {
+    const done = await c.env.DB.prepare(
+      'SELECT COUNT(DISTINCT item_id) AS n FROM attempts WHERE session_id = ?',
+    )
+      .bind(session.id)
+      .first<{ n: number }>();
+    if ((done?.n ?? 0) >= sessionItemIds(session).length) {
+      sessionComplete = true;
+      await c.env.DB.prepare(
+        "UPDATE practice_sessions SET status = 'completed', completed_at = ? WHERE id = ?",
+      )
+        .bind(Date.now(), session.id)
+        .run();
+    }
+  }
 
   // Answer and explanation are revealed only after an attempt is recorded.
   return c.json({
     ...result,
-    answer: item.answer,
-    explanation: item.explanation,
-    rationales: Object.fromEntries(item.choices.map((ch) => [ch.id, ch.rationale])),
+    ...reveal(item, selected, result.correct),
     nextDue: card.due.toISOString(),
+    sessionComplete,
   });
 });
 
@@ -200,6 +236,113 @@ app.get('/me/mastery', async (c) => {
   );
 });
 
+/**
+ * Practice sessions. The server picks the questions (`packages/engine/src/selection.ts`),
+ * and progress is the set of attempts tagged with the session id, so a student can
+ * leave and come back.
+ */
+const sectionSchema = z.enum(['FAR', 'AUD', 'REG', 'BAR', 'ISC', 'TCP']);
+
+app.get('/me/sessions/current', async (c) => {
+  const section = sectionSchema.safeParse(c.req.query('section')?.toUpperCase());
+  if (!section.success) return c.json({ error: 'unknown section' }, 400);
+  const userId = c.get('userId');
+  const row = await c.env.DB.prepare(
+    `SELECT * FROM practice_sessions WHERE user_id = ? AND section = ? AND status = 'active'
+     ORDER BY created_at DESC LIMIT 1`,
+  )
+    .bind(userId, section.data)
+    .first<SessionRow>();
+  const poolSize = mcqs.filter((q) => q.blueprint.section === section.data).length;
+  const diagnostic = !(await hasMcqAttempts(c.env.DB, userId, section.data));
+  return c.json({
+    session: row ? await sessionView(c.env.DB, row) : null,
+    nextKind: diagnostic ? 'diagnostic' : 'practice',
+    diagnosticSize: Math.min(DIAGNOSTIC_SIZE, poolSize),
+    poolSize,
+  });
+});
+
+const newSessionBody = z.object({
+  section: sectionSchema,
+  size: z.number().int().min(1).max(100),
+});
+
+app.post('/me/sessions', async (c) => {
+  const body = newSessionBody.safeParse(await c.req.json().catch(() => null));
+  if (!body.success) return c.json({ error: body.error.flatten() }, 400);
+  const { section, size } = body.data;
+  const userId = c.get('userId');
+  const db = c.env.DB;
+
+  const pool = mcqs
+    .filter((q) => q.blueprint.section === section)
+    .map((q) => ({ id: q.id, area: q.blueprint.area, topic: q.blueprint.topic }));
+  if (pool.length === 0) return c.json({ error: `no ${section} questions yet` }, 404);
+
+  const weights = AREA_WEIGHTS[section];
+  let kind: 'diagnostic' | 'practice';
+  let ids: string[];
+  if (!(await hasMcqAttempts(db, userId, section))) {
+    kind = 'diagnostic';
+    ids = selectDiagnosticItems(pool, DIAGNOSTIC_SIZE, weights);
+  } else {
+    kind = 'practice';
+    const [cards, attempts] = await Promise.all([
+      db
+        .prepare('SELECT item_id, due FROM review_cards WHERE user_id = ?')
+        .bind(userId)
+        .all<{ item_id: string; due: number }>(),
+      db
+        .prepare(
+          'SELECT item_id, correct, created_at FROM attempts WHERE user_id = ? AND section = ?',
+        )
+        .bind(userId, section)
+        .all<{ item_id: string; correct: number; created_at: number }>(),
+    ]);
+    ids = selectPracticeItems({
+      pool,
+      size,
+      weights,
+      due: new Map(cards.results.map((r) => [r.item_id, r.due])),
+      topicScore: masteryByTopic(
+        attempts.results.flatMap((r) => {
+          const item = byId.get(r.item_id);
+          return item
+            ? [{ topic: item.blueprint.topic, correct: !!r.correct, at: r.created_at }]
+            : [];
+        }),
+      ),
+    });
+  }
+
+  // Starting a new session abandons any unfinished one in the same section.
+  // Its answers still count toward mastery and review scheduling.
+  const id = crypto.randomUUID();
+  await db.batch([
+    db
+      .prepare(
+        `UPDATE practice_sessions SET status = 'abandoned'
+         WHERE user_id = ? AND section = ? AND status = 'active'`,
+      )
+      .bind(userId, section),
+    db
+      .prepare(
+        'INSERT INTO practice_sessions (id, user_id, section, kind, item_ids) VALUES (?, ?, ?, ?, ?)',
+      )
+      .bind(id, userId, section, kind, JSON.stringify(ids)),
+  ]);
+  const row = await loadSession(db, userId, id);
+  return c.json(await sessionView(db, row!), 201);
+});
+
+app.get('/me/sessions/:id', async (c) => {
+  const id = z.string().uuid().safeParse(c.req.param('id'));
+  const row = id.success ? await loadSession(c.env.DB, c.get('userId'), id.data) : null;
+  if (!row) return c.json({ error: 'not found' }, 404);
+  return c.json(await sessionView(c.env.DB, row));
+});
+
 /** Tutor: wired up in a later milestone (Claude API, bring-your-own-key). */
 app.post('/me/tutor', (c) => c.json({ error: 'The tutor is not available yet.' }, 501));
 
@@ -212,42 +355,48 @@ function saveAttempt(
   result: GradeResult,
   durationMs: number | undefined,
   card: Card,
+  sessionId?: string,
 ) {
   return db.batch([
-    db.prepare(
-      `INSERT INTO attempts (user_id, item_id, section, area, response, earned, possible, correct, duration_ms)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-    ).bind(
-      userId,
-      item.id,
-      item.blueprint.section,
-      item.blueprint.area,
-      JSON.stringify(response),
-      result.earned,
-      result.possible,
-      result.correct ? 1 : 0,
-      durationMs ?? null,
-    ),
-    db.prepare(
-      `INSERT INTO review_cards (user_id, item_id, due, stability, difficulty, elapsed_days, scheduled_days, reps, lapses, state, last_review)
+    db
+      .prepare(
+        `INSERT INTO attempts (user_id, item_id, section, area, response, earned, possible, correct, duration_ms, session_id)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      )
+      .bind(
+        userId,
+        item.id,
+        item.blueprint.section,
+        item.blueprint.area,
+        JSON.stringify(response),
+        result.earned,
+        result.possible,
+        result.correct ? 1 : 0,
+        durationMs ?? null,
+        sessionId ?? null,
+      ),
+    db
+      .prepare(
+        `INSERT INTO review_cards (user_id, item_id, due, stability, difficulty, elapsed_days, scheduled_days, reps, lapses, state, last_review)
        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
        ON CONFLICT(user_id, item_id) DO UPDATE SET
          due = excluded.due, stability = excluded.stability, difficulty = excluded.difficulty,
          elapsed_days = excluded.elapsed_days, scheduled_days = excluded.scheduled_days,
          reps = excluded.reps, lapses = excluded.lapses, state = excluded.state, last_review = excluded.last_review`,
-    ).bind(
-      userId,
-      item.id,
-      card.due.getTime(),
-      card.stability,
-      card.difficulty,
-      card.elapsed_days,
-      card.scheduled_days,
-      card.reps,
-      card.lapses,
-      card.state,
-      card.last_review?.getTime() ?? null,
-    ),
+      )
+      .bind(
+        userId,
+        item.id,
+        card.due.getTime(),
+        card.stability,
+        card.difficulty,
+        card.elapsed_days,
+        card.scheduled_days,
+        card.reps,
+        card.lapses,
+        card.state,
+        card.last_review?.getTime() ?? null,
+      ),
   ]);
 }
 
@@ -275,6 +424,74 @@ function rowToCard(r: CardRow): Card {
     state: r.state,
     last_review: r.last_review ? new Date(r.last_review) : undefined,
   } as Card;
+}
+
+type SessionRow = {
+  id: string;
+  user_id: string;
+  section: string;
+  kind: 'diagnostic' | 'practice';
+  status: 'active' | 'completed' | 'abandoned';
+  item_ids: string;
+  created_at: number;
+  completed_at: number | null;
+};
+
+function loadSession(db: D1Database, userId: string, id: string) {
+  return db
+    .prepare('SELECT * FROM practice_sessions WHERE id = ? AND user_id = ?')
+    .bind(id, userId)
+    .first<SessionRow>();
+}
+
+/** The session's items that are still in the bank (retired items drop out). */
+function sessionItemIds(row: SessionRow): string[] {
+  return (JSON.parse(row.item_ids) as string[]).filter((id) => byId.get(id)?.type === 'mcq');
+}
+
+/** What an attempt reveals: the key, the explanation and every choice's rationale. */
+function reveal(item: McqItem, selected: string, correct: boolean) {
+  return {
+    selected,
+    correct,
+    answer: item.answer,
+    explanation: item.explanation,
+    rationales: Object.fromEntries(item.choices.map((ch) => [ch.id, ch.rationale])),
+  };
+}
+
+/** A session's public items, plus the revealed result of each item already answered. */
+async function sessionView(db: D1Database, row: SessionRow) {
+  const { results } = await db
+    .prepare('SELECT item_id, response, correct FROM attempts WHERE session_id = ?')
+    .bind(row.id)
+    .all<{ item_id: string; response: string; correct: number }>();
+  const answered: Record<string, ReturnType<typeof reveal>> = {};
+  for (const r of results) {
+    const item = byId.get(r.item_id);
+    if (item?.type !== 'mcq') continue;
+    const { selected } = JSON.parse(r.response) as { selected: string };
+    answered[r.item_id] = reveal(item, selected, !!r.correct);
+  }
+  return {
+    id: row.id,
+    section: row.section,
+    kind: row.kind,
+    status: row.status,
+    createdAt: row.created_at,
+    completedAt: row.completed_at,
+    items: sessionItemIds(row).map((id) => toPublicMcq(byId.get(id) as McqItem)),
+    answered,
+  };
+}
+
+/** Whether the student has answered any multiple-choice question in this section. */
+async function hasMcqAttempts(db: D1Database, userId: string, section: string) {
+  const { results } = await db
+    .prepare('SELECT DISTINCT item_id FROM attempts WHERE user_id = ? AND section = ?')
+    .bind(userId, section)
+    .all<{ item_id: string }>();
+  return results.some((r) => byId.get(r.item_id)?.type === 'mcq');
 }
 
 export default app;
