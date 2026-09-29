@@ -1,0 +1,36 @@
+id: bar-variable-absorption-costing-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Managerial and cost accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Absorption and variable costing: income reconciliation'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: In its first year, Fenn Co. produced 10,000 units and sold 8,000. Fixed manufacturing overhead was
+  $150,000, and there was no beginning inventory. Operating income under absorption costing was $210,000.
+  What was Fenn's operating income under variable costing?
+choices:
+- id: A
+  text: $90,000
+  rationale: Subtracts the $120,000 of fixed overhead in the units sold. Both methods expense that amount;
+    only the overhead in ending inventory differs.
+- id: B
+  text: $180,000
+  rationale: Correct. Absorption costing defers 2,000 × $15 = $30,000 of fixed overhead in ending inventory;
+    variable costing expenses it.
+- id: C
+  text: $210,000
+  rationale: Assumes the two methods give the same income. They differ whenever production and sales differ.
+- id: D
+  text: $240,000
+  rationale: Adds the deferred fixed overhead instead of subtracting it. With inventory rising, absorption
+    income is the higher figure.
+answer: B
+explanation: Fixed overhead per unit under absorption costing = $150,000 ÷ 10,000 = $15. Ending inventory
+  of 2,000 units carries $30,000 of fixed overhead that absorption costing defers and variable costing
+  expenses in full. Variable costing income = $210,000 − $30,000 = $180,000.

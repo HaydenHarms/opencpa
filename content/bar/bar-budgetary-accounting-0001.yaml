@@ -1,0 +1,36 @@
+id: bar-budgetary-accounting-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area III — State and Local Governments
+  topic: Budgetary accounting
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - GASB Codification 1700 (budgetary accounting; encumbrances)
+  - GASB Statement No. 54 (encumbrances within fund balance)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: A city's general fund, which records encumbrances, issues a purchase order for $40,000 of supplies.
+  Which entry does it record when the order is issued?
+choices:
+- id: A
+  text: Debit encumbrances; credit budgetary fund balance — reserved for encumbrances, $40,000
+  rationale: Correct. An encumbrance entry commits the appropriation when the order is issued.
+- id: B
+  text: Debit expenditures; credit vouchers payable, $40,000, and close the related appropriation
+  rationale: The expenditure and liability are recorded when the supplies are received, not when the order
+    is placed.
+- id: C
+  text: Debit appropriations; credit encumbrances, $40,000, to reduce the spending authority available
+  rationale: Not a standard entry; appropriations are recorded when the budget is adopted and closed at
+    year-end.
+- id: D
+  text: Debit supplies inventory; credit accounts payable, $40,000, at the purchase order price
+  rationale: A full-accrual entry on receipt of goods; the order alone creates no asset or liability.
+answer: A
+explanation: When a purchase order is issued, a government using encumbrance accounting records Dr Encumbrances,
+  Cr Budgetary fund balance — reserved for encumbrances, to track the commitment against the appropriation.
+  When the goods arrive, it reverses the encumbrance and records the expenditure and liability at the
+  actual amount.

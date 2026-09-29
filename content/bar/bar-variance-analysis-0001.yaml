@@ -1,0 +1,38 @@
+id: bar-variance-analysis-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Managerial and cost accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Standard costing: direct materials price and quantity variances'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Brook Co.'s standard cost for each unit of its product includes 4 pounds of material at $3.00 per
+  pound. During the month Brook produced 5,000 units, buying and using 21,000 pounds of material at $3.20
+  per pound. What are the direct materials price and quantity variances?
+choices:
+- id: A
+  text: $3,000 unfavorable price; $4,200 unfavorable quantity
+  rationale: Swaps the two variances. The price variance is the price difference times the actual quantity
+    ($0.20 × 21,000); the quantity variance is the excess pounds at standard price.
+- id: B
+  text: $4,000 unfavorable price; $3,200 unfavorable quantity
+  rationale: Uses the standard quantity for the price variance and the actual price for the quantity variance.
+    Price variance uses actual quantity; quantity variance uses standard price.
+- id: C
+  text: $4,200 unfavorable price; $3,000 unfavorable quantity
+  rationale: 'Correct. Price: ($3.20 − $3.00) × 21,000 = $4,200 U. Quantity: (21,000 − 20,000) × $3.00
+    = $3,000 U.'
+- id: D
+  text: $4,200 unfavorable price; $3,200 unfavorable quantity
+  rationale: Prices the 1,000 excess pounds at the actual $3.20. The quantity variance uses the standard
+    price, so price effects are not counted twice.
+answer: C
+explanation: Standard quantity allowed = 5,000 units × 4 pounds = 20,000 pounds. Price variance = (actual
+  price − standard price) × actual quantity = $0.20 × 21,000 = $4,200 unfavorable. Quantity variance =
+  (actual quantity − standard quantity) × standard price = 1,000 × $3.00 = $3,000 unfavorable. Together
+  they explain the $7,200 total variance.

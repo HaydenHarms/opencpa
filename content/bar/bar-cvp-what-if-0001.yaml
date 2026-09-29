@@ -1,0 +1,36 @@
+id: bar-cvp-what-if-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Budgeting, forecasting and projection
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'Cost-volume-profit analysis: sensitivity and what-if analysis'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Carver Co. sells 30,000 units a year of one product at $50 per unit. Variable costs are $30 per
+  unit and fixed costs are $400,000 a year. Management is considering raising the price to $54, and its
+  market study indicates unit sales would fall by 10%. Costs per unit and fixed costs would not change.
+  What operating income should Carver expect under the proposal?
+choices:
+- id: A
+  text: $140,000
+  rationale: Applies the 10% volume decline but keeps the $50 price. The proposal raises the contribution
+    margin to $24 a unit.
+- id: B
+  text: $158,000
+  rationale: 'Uses the new revenue ($1,458,000) but variable costs for the old 30,000 units. Variable
+    costs fall with volume: 27,000 × $30.'
+- id: C
+  text: $248,000
+  rationale: Correct. 27,000 units × ($54 − $30) − $400,000.
+- id: D
+  text: $320,000
+  rationale: Raises the price but ignores the expected 10% fall in unit sales.
+answer: C
+explanation: Under the proposal, unit sales = 30,000 × 90% = 27,000 and the contribution margin = $54
+  − $30 = $24 a unit. Operating income = 27,000 × $24 − $400,000 = $248,000, compared with 30,000 × $20
+  − $400,000 = $200,000 now, so the price increase adds $48,000.

@@ -1,0 +1,41 @@
+id: bar-interest-rate-swap-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Derivatives and hedge accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 815-20 and 815-30 (cash flow hedges)
+  - ASU 2017-12 (targeted improvements to hedge accounting)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: On January 1, Year 1, Nash Co. borrows $1,000,000 at a variable rate of SOFR plus 1%, reset annually.
+  To fix its interest cost, it enters into an interest rate swap to pay 5% fixed and receive SOFR on a
+  $1,000,000 notional amount, and designates the swap as a cash flow hedge that qualifies for hedge accounting
+  and is fully effective. SOFR for Year 1 is 4.5%, and settlements occur each December 31. At December
+  31, Year 1, the swap's fair value rises to an asset of $12,000. What interest expense does Nash report
+  for Year 1, and what amount does it report in other comprehensive income?
+choices:
+- id: A
+  text: $48,000 interest expense; $0 in other comprehensive income
+  rationale: Reports the $12,000 gain in earnings as a reduction of interest. For a qualifying cash flow
+    hedge, the change in the swap's fair value goes to OCI.
+- id: B
+  text: $55,000 interest expense; $12,000 in other comprehensive income
+  rationale: Omits the $5,000 net swap payment, which is part of Nash's interest cost.
+- id: C
+  text: $60,000 interest expense; $0 in other comprehensive income
+  rationale: Recognizes interest correctly but puts the swap's fair value change in earnings.
+- id: D
+  text: $60,000 interest expense; $12,000 in other comprehensive income
+  rationale: Correct. Debt interest $55,000 (5.5%) plus the $5,000 net swap payment; the $12,000 fair
+    value change goes to OCI.
+answer: D
+explanation: 'Interest on the debt = $1,000,000 × (4.5% + 1%) = $55,000. The swap''s net settlement: Nash
+  pays 5% and receives 4.5%, a net payment of $5,000, recorded as interest expense, so total interest
+  expense is $60,000 (a fixed 6%). For a qualifying cash flow hedge, the change in the swap''s fair value
+  ($12,000) is recorded in other comprehensive income and reclassified to earnings when the hedged interest
+  payments affect earnings.'

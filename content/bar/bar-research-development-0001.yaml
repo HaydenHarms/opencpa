@@ -1,0 +1,31 @@
+id: bar-research-development-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Research and development costs
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 730-10 (research and development: activities included and excluded)'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Which of the following costs is research and development expense under ASC 730?
+choices:
+- id: A
+  text: Routine quality-control testing of products during commercial production
+  rationale: 'Excluded from R&D: quality control during commercial production is a production cost.'
+- id: B
+  text: Market research to test customer reaction to a new product line
+  rationale: 'Excluded from R&D: market research is a selling or marketing cost.'
+- id: C
+  text: Salaries of engineers who design, build and test a preproduction prototype
+  rationale: Correct. Designing, constructing and testing preproduction prototypes is a development activity.
+- id: D
+  text: Engineering follow-through in an early phase of commercial production
+  rationale: 'Excluded from R&D: follow-through after production begins is a production cost.'
+answer: C
+explanation: ASC 730 includes conceptual formulation, design and testing of product alternatives, and
+  the design, construction and testing of preproduction prototypes and models. It excludes routine quality
+  control, engineering follow-through in an early phase of commercial production, and market research.

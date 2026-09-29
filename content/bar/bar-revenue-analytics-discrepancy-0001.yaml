@@ -1,0 +1,42 @@
+id: bar-revenue-analytics-discrepancy-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Revenue recognition
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 606-10 (transfer of control; variable consideration; licenses providing a right to access)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: A data analytics report of Quill Co.'s fourth-quarter revenue, which totals $2,000,000, flags three
+  outliers for review. (1) A $300,000 sale to a new customer invoiced December 30; the goods were shipped
+  FOB destination and delivered January 5. (2) A $400,000 December sale to a distributor that, based on
+  Quill's recent practice, will receive a $50,000 price concession; Quill granted it on January 10, and
+  it had been expected at year-end. (3) An $80,000 invoice dated December 31 for a one-year license, starting
+  January 1, that gives the customer access to Quill's continually updated online content. After resolving
+  these items, what should Quill's fourth-quarter revenue be?
+choices:
+- id: A
+  text: $1,570,000
+  rationale: Correct. $2,000,000 − $300,000 undelivered sale − $50,000 expected concession − $80,000 license
+    for next year.
+- id: B
+  text: $1,620,000
+  rationale: Keeps the full $400,000 for the distributor sale. An expected price concession is variable
+    consideration that reduces revenue when the sale is recognized.
+- id: C
+  text: $1,650,000
+  rationale: Keeps the $80,000 license. A license that gives access to continually updated content is
+    recognized over the license period, which begins January 1.
+- id: D
+  text: $1,870,000
+  rationale: Keeps the $300,000 sale. Under FOB destination, control passed on delivery in January.
+answer: A
+explanation: (1) Control of the goods passed on delivery on January 5, so the $300,000 is next year's
+  revenue. (2) Quill's practice made a price concession expected when the sale was made, so the transaction
+  price was $350,000; reduce revenue by $50,000. (3) A right-to-access license is recognized over time
+  as access is provided, starting January 1; none belongs in the fourth quarter. Revenue = $2,000,000
+  − $300,000 − $50,000 − $80,000 = $1,570,000.

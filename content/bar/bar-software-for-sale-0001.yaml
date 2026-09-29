@@ -1,0 +1,41 @@
+id: bar-software-for-sale-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Internally developed software
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 985-20 (costs of software to be sold, leased or otherwise marketed)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Lyle Software develops a product to sell to customers. Before establishing technological feasibility
+  it spent $300,000 on planning, design and testing. After technological feasibility and before the product
+  was released for general sale on January 1, Year 1, it spent $200,000 on coding and testing. After release
+  it spent $20,000 producing copies for customers and $30,000 on customer support. Year 1 revenue from
+  the product is $400,000, and Lyle expects total revenue of $1,600,000 over the product's five-year economic
+  life. What amortization of capitalized software costs should Lyle recognize in Year 1?
+choices:
+- id: A
+  text: $40,000
+  rationale: Uses straight-line amortization only. Amortization is the greater of the revenue-ratio amount
+    and the straight-line amount.
+- id: B
+  text: $50,000
+  rationale: Correct. Capitalized costs of $200,000; revenue ratio 25% gives $50,000, which exceeds straight-line
+    ($40,000).
+- id: C
+  text: $100,000
+  rationale: Capitalizes all $500,000 of development costs and amortizes it straight-line. Costs before
+    technological feasibility are research and development expense.
+- id: D
+  text: $125,000
+  rationale: Capitalizes all $500,000 of development costs before applying the 25% revenue ratio.
+answer: B
+explanation: Costs incurred before technological feasibility ($300,000) are R&D expense. Costs from technological
+  feasibility until general release ($200,000) are capitalized. Duplication costs are inventory and support
+  is expensed. Annual amortization is the greater of (a) current revenue ÷ total expected revenue × capitalized
+  costs = $400,000 ÷ $1,600,000 × $200,000 = $50,000 and (b) straight-line over the remaining life = $200,000
+  ÷ 5 = $40,000. Year 1 amortization = $50,000.

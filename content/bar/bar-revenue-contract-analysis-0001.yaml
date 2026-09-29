@@ -1,0 +1,44 @@
+id: bar-revenue-contract-analysis-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Revenue recognition
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 606-10 (control transfer; bill-and-hold arrangements; consignment arrangements)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Oakes Co. reviews three December arrangements before closing its year on December 31. (1) Oakes
+  finished building $120,000 of equipment to one customer's specifications. The customer, whose new plant
+  will not open until February, asked in writing that Oakes keep the equipment until then; it inspected
+  and accepted the equipment in December and was billed on normal terms, and Oakes has set it aside in
+  its warehouse under the customer's name. (2) Oakes shipped $80,000 of goods to a dealer, which pays
+  Oakes only when it sells them to its own customers and may return any unsold goods. (3) On December
+  30 Oakes shipped $50,000 of goods FOB destination; they arrived January 3. What revenue should Oakes
+  recognize in December from these arrangements?
+choices:
+- id: A
+  text: $120,000
+  rationale: Correct. Control of the held equipment has passed to the customer; the consigned goods and
+    the goods in transit under FOB destination have not transferred.
+- id: B
+  text: $170,000
+  rationale: Also recognizes the goods shipped FOB destination. Control passes when the goods reach the
+    customer on January 3.
+- id: C
+  text: $200,000
+  rationale: 'Also recognizes the goods shipped to the dealer. The dealer does not control them: it pays
+    only when it resells and can return unsold goods, so the arrangement is a consignment.'
+- id: D
+  text: $250,000
+  rationale: Recognizes all three arrangements.
+answer: A
+explanation: 'Revenue is recognized when control transfers. (1) This is a bill-and-hold arrangement that
+  transfers control: the customer asked for the hold for a substantive reason (its plant is not ready),
+  the equipment is set aside under its name, it is finished and accepted so it is ready for delivery,
+  and because it is built to the customer''s specifications Oakes cannot use it for anyone else: $120,000.
+  (2) The dealer arrangement is a consignment: Oakes keeps control until the dealer sells. (3) Under FOB
+  destination, control passes on delivery in January. December revenue = $120,000.'

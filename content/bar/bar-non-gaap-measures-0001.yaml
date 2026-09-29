@@ -1,0 +1,40 @@
+id: bar-non-gaap-measures-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Non-financial and non-GAAP measures of performance
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - SEC Regulation G and Item 10(e) of Regulation S-K (non-GAAP measures)
+  - 'Non-GAAP measures: EBITDA and adjusted EBITDA'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Hale Inc. defines adjusted EBITDA as net income before interest, income taxes, depreciation and
+  amortization, excluding restructuring charges and gains or losses on divestitures. For Year 1, Hale
+  reports net income of $500,000, which reflects income tax expense of $150,000, interest expense of $80,000,
+  depreciation of $120,000, amortization of $30,000, a restructuring charge of $70,000, and a $40,000
+  gain on the sale of a division. Hale's draft earnings release reports adjusted EBITDA of $990,000. Applying
+  Hale's definition, what should adjusted EBITDA be?
+choices:
+- id: A
+  text: $760,000
+  rationale: Leaves out the add-back for income tax expense. EBITDA starts from income before taxes.
+- id: B
+  text: $880,000
+  rationale: Stops at EBITDA and does not make the adjustments in Hale's definition.
+- id: C
+  text: $910,000
+  rationale: Correct. $500,000 + $150,000 + $80,000 + $120,000 + $30,000 + $70,000 restructuring − $40,000
+    gain.
+- id: D
+  text: $990,000
+  rationale: Accepts the draft, which adds back the $40,000 gain. Excluding a gain means subtracting it,
+    since it is included in net income.
+answer: C
+explanation: EBITDA = $500,000 + $150,000 taxes + $80,000 interest + $120,000 depreciation + $30,000 amortization
+  = $880,000. Hale's adjustments exclude the restructuring charge (add back $70,000) and the divestiture
+  gain (subtract $40,000, because it increased net income). Adjusted EBITDA = $910,000. The draft's $990,000
+  adds the gain back instead of removing it.

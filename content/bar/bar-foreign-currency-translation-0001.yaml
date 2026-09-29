@@ -1,0 +1,38 @@
+id: bar-foreign-currency-translation-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Consolidated financial statements
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 830-30 (translation of financial statements; cumulative translation adjustment)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Moss Corp.'s foreign subsidiary uses the euro as its functional currency. At the beginning of the
+  year its net assets were €1,000,000, when the exchange rate was $1.10 per euro. During the year it earned
+  net income of €200,000 (average rate $1.15) and paid dividends of €50,000 when the rate was $1.12. The
+  year-end rate is $1.20. What translation adjustment arises for the year in Moss's consolidated statements?
+choices:
+- id: A
+  text: $6,000 gain
+  rationale: Captures only the effect on the year's income and dividends and ignores the change in rate
+    on the beginning net assets.
+- id: B
+  text: $96,000 gain
+  rationale: Translates net income at the year-end rate. Income is translated at the average rate.
+- id: C
+  text: $100,000 gain
+  rationale: Captures only the rate change on the beginning net assets and ignores the year's income and
+    dividends.
+- id: D
+  text: $106,000 gain
+  rationale: Correct. Ending net assets €1,150,000 × $1.20 = $1,380,000, less $1,100,000 + $230,000 −
+    $56,000 = $1,274,000.
+answer: D
+explanation: 'Translate each change in net assets at its historical rate: beginning €1,000,000 × $1.10
+  = $1,100,000; income €200,000 × $1.15 = $230,000; dividends €50,000 × $1.12 = $56,000. Total $1,274,000.
+  Ending net assets at the current rate: €1,150,000 × $1.20 = $1,380,000. Translation adjustment = $106,000
+  gain, reported in other comprehensive income.'

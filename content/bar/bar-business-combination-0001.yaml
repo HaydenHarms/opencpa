@@ -1,0 +1,38 @@
+id: bar-business-combination-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Business combinations
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 805-30 (goodwill; consideration transferred including contingent consideration)
+  - ASC 805-10 (acquisition-related costs expensed)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Kent Corp. acquires 100% of Lark Inc. by paying $800,000 in cash and agreeing to pay more if Lark
+  meets earnings targets; the acquisition-date fair value of that contingent payment is $50,000. The acquisition-date
+  fair values of Lark's identifiable assets and liabilities are $1,100,000 and $400,000. Kent also pays
+  $30,000 of legal and advisory fees to complete the acquisition. What amount of goodwill should Kent
+  recognize?
+choices:
+- id: A
+  text: $50,000
+  rationale: Subtracts the contingent consideration from the cash paid. Its acquisition-date fair value
+    is part of the consideration transferred.
+- id: B
+  text: $100,000
+  rationale: Leaves out the $50,000 of contingent consideration.
+- id: C
+  text: $150,000
+  rationale: Correct. Consideration $850,000 less identifiable net assets $700,000.
+- id: D
+  text: $180,000
+  rationale: Adds the $30,000 of acquisition costs to the consideration. Acquisition-related costs are
+    expensed as incurred.
+answer: C
+explanation: Consideration transferred = $800,000 cash + $50,000 fair value of contingent consideration
+  = $850,000. Identifiable net assets at fair value = $1,100,000 − $400,000 = $700,000. Goodwill = $850,000
+  − $700,000 = $150,000. The $30,000 of legal and advisory fees is expensed.

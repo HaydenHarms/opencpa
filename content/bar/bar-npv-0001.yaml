@@ -1,0 +1,37 @@
+id: bar-npv-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Investment alternatives using financial valuation decision models
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Capital budgeting: net present value'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: 'Delta Co. is evaluating Project Y, which costs $100,000 today and is expected to produce after-tax
+  cash inflows of $55,000 at the end of each of Years 3, 4 and 5, with nothing in Years 1 and 2. Delta''s
+  discount rate is 10%. Present value factors at 10% are: single sum — Year 3 0.7513, Year 4 0.6830, Year
+  5 0.6209; ordinary annuity for 3 years 2.4869 and for 5 years 3.7908. What is Project Y''s net present
+  value?'
+choices:
+- id: A
+  text: $13,036
+  rationale: Correct. $55,000 × (0.7513 + 0.6830 + 0.6209) = $113,036, less the $100,000 cost.
+- id: B
+  text: $36,780
+  rationale: Discounts the three inflows as if received in Years 1–3 ($55,000 × 2.4869). They arrive in
+    Years 3–5.
+- id: C
+  text: $65,000
+  rationale: 'Ignores the time value of money: $165,000 of inflows less $100,000.'
+- id: D
+  text: $108,494
+  rationale: Applies the five-year annuity factor to the $55,000 ($208,494) as if the inflows came every
+    year for five years, then subtracts the cost. Years 1 and 2 have no inflow.
+answer: A
+explanation: 'NPV = present value of inflows − initial cost. Each inflow is discounted with its own single-sum
+  factor because there are no inflows in Years 1 and 2: $55,000 × (0.7513 + 0.6830 + 0.6209) = $55,000
+  × 2.0552 = $113,036. NPV = $113,036 − $100,000 = $13,036.'

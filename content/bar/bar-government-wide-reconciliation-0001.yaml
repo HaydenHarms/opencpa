@@ -1,0 +1,44 @@
+id: bar-government-wide-reconciliation-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area III — State and Local Governments
+  topic: Deriving government-wide financial statements and reconciliation requirements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - GASB Statement No. 34 (reconciliation of governmental fund balances to net position of governmental
+    activities)
+  - GASB Statement No. 65 (deferred inflows of resources)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: 'Rowan County''s governmental funds report total fund balances of $2,000,000. Other information:
+  capital assets used in governmental activities, net of accumulated depreciation, $5,000,000; general
+  obligation bonds payable, $3,000,000; interest accrued on those bonds but not due until next year, $50,000;
+  property taxes that will be collected after the availability period and are reported as deferred inflows
+  of resources in the funds, $120,000; and an internal service fund, whose net position of $200,000 serves
+  mainly governmental departments. What net position should Rowan report for governmental activities in
+  its government-wide statement of net position?'
+choices:
+- id: A
+  text: $4,030,000
+  rationale: Subtracts the $120,000 of unavailable property taxes instead of adding it. Under full accrual
+    they are revenue, so the deferred inflow is removed and net position rises.
+- id: B
+  text: $4,070,000
+  rationale: Leaves out the internal service fund. When it serves mainly governmental departments, its
+    net position is included in governmental activities.
+- id: C
+  text: $4,150,000
+  rationale: Leaves the $120,000 of unavailable property taxes as a deferred inflow. Availability is a
+    modified accrual concept; full accrual recognizes the revenue.
+- id: D
+  text: $4,270,000
+  rationale: Correct. $2,000,000 + $5,000,000 − $3,000,000 − $50,000 + $120,000 + $200,000.
+answer: D
+explanation: 'Start from governmental fund balances and adjust to the economic resources focus: add capital
+  assets ($5,000,000), subtract long-term debt ($3,000,000) and accrued interest not yet due ($50,000),
+  add back property taxes deferred only because they are unavailable ($120,000), and add the internal
+  service fund''s net position ($200,000) because it mainly serves governmental activities. Net position
+  = $4,270,000.'

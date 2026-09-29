@@ -1,0 +1,41 @@
+id: bar-make-or-buy-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Investment alternatives using financial valuation decision models
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'Relevant costs: make-or-buy decisions and opportunity cost'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: 'Irwin Co. makes 10,000 units a year of a component at these costs per unit: direct materials $12,
+  direct labor $8, variable overhead $5, and fixed overhead $10 (allocated from $100,000 of total fixed
+  overhead). An outside supplier offers to sell the component for $30 per unit. If Irwin buys it, it can
+  eliminate a $60,000 supervisor salary included in fixed overhead and rent the freed space to another
+  company for $25,000 a year; the rest of the fixed overhead would continue. How would buying the component
+  affect Irwin''s annual operating income?'
+choices:
+- id: A
+  text: $10,000 increase
+  rationale: Leaves out the $25,000 of rent Irwin could earn on the freed space, an opportunity cost of
+    continuing to make the part.
+- id: B
+  text: $35,000 increase
+  rationale: 'Correct. Relevant cost to make: $250,000 variable + $60,000 avoidable salary + $25,000 forgone
+    rent = $335,000, versus $300,000 to buy.'
+- id: C
+  text: $50,000 decrease
+  rationale: Compares only variable costs ($250,000) with the purchase price, ignoring the avoidable salary
+    and the rent.
+- id: D
+  text: $75,000 increase
+  rationale: Treats all $100,000 of fixed overhead as avoidable. Only the $60,000 salary goes away if
+    Irwin buys.
+answer: B
+explanation: 'Relevant costs are those that differ between the alternatives. Making: variable costs 10,000
+  × $25 = $250,000, avoidable fixed overhead $60,000, and the $25,000 rent forgone = $335,000. Buying:
+  10,000 × $30 = $300,000. Buying raises operating income by $35,000. The other $40,000 of fixed overhead
+  continues either way.'

@@ -1,0 +1,36 @@
+id: bar-cost-of-capital-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Capital structure
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - Weighted average cost of capital
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: 'Easton Corp.''s capital structure at market values is: debt $4,000,000 with a pretax yield of 8%;
+  preferred stock $1,000,000 with a dividend yield of 7%; and common equity $5,000,000 with a required
+  return of 12%. Easton''s income tax rate is 25%. What is Easton''s weighted average cost of capital?'
+choices:
+- id: A
+  text: 8.3%
+  rationale: Takes a simple average of the three component costs (6%, 7% and 12%) instead of weighting
+    by market value.
+- id: B
+  text: 8.9%
+  rationale: Tax-adjusts the preferred dividend yield as well. Preferred dividends are not deductible,
+    so preferred's cost is its full 7%.
+- id: C
+  text: 9.1%
+  rationale: Correct. 40% × 6% after-tax debt + 10% × 7% + 50% × 12%.
+- id: D
+  text: 9.9%
+  rationale: Uses the 8% pretax cost of debt. Interest is deductible, so debt's cost is 8% × (1 − 25%)
+    = 6%.
+answer: C
+explanation: 'Weights at market value: debt 40%, preferred 10%, common 50%. After-tax cost of debt = 8%
+  × (1 − 25%) = 6%. Preferred dividends and common returns are not deductible. WACC = 0.40 × 6% + 0.10
+  × 7% + 0.50 × 12% = 2.4% + 0.7% + 6.0% = 9.1%.'

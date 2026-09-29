@@ -1,0 +1,38 @@
+id: bar-stock-compensation-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Stock compensation (share-based payments)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 718-10 (equity-classified awards; forfeitures)
+  - ASU 2016-09 (election to estimate forfeitures or account for them as they occur)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: On January 1, Year 1, Hunt Corp. grants 10,000 stock options with a grant-date fair value of $12
+  each. The options cliff-vest after four years of service. Hunt's policy is to estimate forfeitures.
+  At grant it expected 10% of the options to be forfeited; at the end of Year 2 it revises that estimate
+  to 20%. What compensation cost should Hunt recognize in Year 2?
+choices:
+- id: A
+  text: $21,000
+  rationale: Correct. Cumulative cost through Year 2 is $120,000 × 80% × 2/4 = $48,000, less the $27,000
+    recognized in Year 1.
+- id: B
+  text: $24,000
+  rationale: Uses the revised estimate for Year 2's quarter share only ($120,000 × 80% ÷ 4), without the
+    catch-up for Year 1.
+- id: C
+  text: $27,000
+  rationale: Keeps the original 10% forfeiture estimate. A change in the estimate is recognized in the
+    period of change through a cumulative catch-up.
+- id: D
+  text: $30,000
+  rationale: Ignores forfeitures, although Hunt's policy is to estimate them.
+answer: A
+explanation: 'Total expected compensation cost = 10,000 × $12 × (1 − forfeiture rate), recognized over
+  the four-year service period. Year 1: $120,000 × 90% × 1/4 = $27,000. At the end of Year 2, cumulative
+  cost = $120,000 × 80% × 2/4 = $48,000. Year 2 cost = $48,000 − $27,000 = $21,000.'

@@ -1,0 +1,40 @@
+id: bar-lessor-sales-type-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Leases
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 842-30 (lessor accounting: sales-type leases)'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: On January 1, Year 1, Pratt Equipment leases a machine to a customer for five years, with $85,000
+  due at the beginning of each year. Title transfers to the customer at the end of the lease. The machine's
+  carrying amount on Pratt's books is $300,000 and its fair value is $366,529. The rate implicit in the
+  lease is 8%; present value factors at 8% for five periods are 4.3121 for an annuity due and 3.9927 for
+  an ordinary annuity. What selling profit should Pratt recognize at lease commencement?
+choices:
+- id: A
+  text: $0
+  rationale: Defers the profit over the lease term. A lease that transfers ownership is a sales-type lease,
+    and selling profit is recognized at commencement.
+- id: B
+  text: $39,380
+  rationale: Discounts the payments as an ordinary annuity ($339,380). Payments are due at the beginning
+    of each year, so the annuity-due factor applies.
+- id: C
+  text: $66,529
+  rationale: Correct. Present value of payments $85,000 × 4.3121 = $366,529, less the $300,000 carrying
+    amount.
+- id: D
+  text: $125,000
+  rationale: Uses the undiscounted payments ($425,000). The lessor measures the sale at the present value
+    of the lease payments.
+answer: C
+explanation: 'Transfer of ownership makes this a sales-type lease. Revenue equals the lower of fair value
+  and the present value of lease payments: $85,000 × 4.3121 = $366,529, which equals fair value. Selling
+  profit = $366,529 − $300,000 carrying amount = $66,529, recognized at commencement, with a net investment
+  in the lease of $366,529.'

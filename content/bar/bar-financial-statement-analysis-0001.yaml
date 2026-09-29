@@ -1,0 +1,40 @@
+id: bar-financial-statement-analysis-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Financial statement analysis
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'Financial statement analysis: interpreting profitability and activity ratios'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Gale Co.'s sales rose 10% from Year 1 to Year 2. Over the same period its gross margin fell from
+  40% to 35%, its accounts receivable turnover fell from 8.0 to 6.0 times, and its inventory turnover
+  fell from 6.0 to 4.0 times. Which explanation is most consistent with all of these changes?
+choices:
+- id: A
+  text: Gale cut prices and eased credit terms to win sales, while slow-moving goods built up in its warehouses.
+  rationale: Correct. Lower prices reduce gross margin, easier credit slows collections, and unsold goods
+    slow inventory turnover.
+- id: B
+  text: Gale tightened credit and trimmed inventory to free up cash, and it raised prices on its best
+    sellers.
+  rationale: Tighter credit and leaner inventory would raise both turnovers, and higher prices would lift
+    gross margin.
+- id: C
+  text: Gale raised selling prices on steady unit volume, which lifted both its revenue and its gross
+    margin.
+  rationale: Gross margin fell, which is inconsistent with price increases on steady costs.
+- id: D
+  text: Gale shifted toward cash sales and just-in-time purchasing, which let it grow sales with less
+    capital.
+  rationale: More cash sales and just-in-time purchasing would raise receivable and inventory turnover,
+    not lower them.
+answer: A
+explanation: Each ratio points the same way. A lower gross margin on higher sales suggests price cuts
+  or rising costs. A lower receivables turnover means collections slowed relative to sales, consistent
+  with easier credit terms. A lower inventory turnover means inventory grew faster than cost of sales,
+  consistent with slow-moving goods. Only the first explanation fits all three.

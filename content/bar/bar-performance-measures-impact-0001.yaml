@@ -1,0 +1,36 @@
+id: bar-performance-measures-impact-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Risk management
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'Liquidity ratios: effect of transactions on the current and quick ratios'
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Kerr Co. has current assets of $600,000, of which $300,000 are quick assets (cash, marketable securities
+  and receivables), and current liabilities of $400,000. Management proposes using $100,000 of cash to
+  pay suppliers before year-end. If it does, what will Kerr's current ratio and quick ratio be?
+choices:
+- id: A
+  text: 1.25 current ratio; 0.50 quick ratio
+  rationale: Reduces the assets but not the liabilities. Paying suppliers lowers both cash and accounts
+    payable.
+- id: B
+  text: 1.50 current ratio; 0.75 quick ratio
+  rationale: Assumes paying a liability with cash leaves both ratios unchanged. That holds only when a
+    ratio equals 1.0.
+- id: C
+  text: 1.67 current ratio; 0.67 quick ratio
+  rationale: 'Correct. Current: $500,000 ÷ $300,000. Quick: $200,000 ÷ $300,000.'
+- id: D
+  text: 1.67 current ratio; 0.50 quick ratio
+  rationale: Gets the current ratio right but, for the quick ratio, reduces quick assets without reducing
+    current liabilities ($200,000 ÷ $400,000).
+answer: C
+explanation: 'Paying $100,000 of payables with cash reduces current assets, quick assets and current liabilities
+  by the same amount. Current ratio: $500,000 ÷ $300,000 = 1.67 (up from 1.50, because it was above 1.0).
+  Quick ratio: $200,000 ÷ $300,000 = 0.67 (down from 0.75, because it was below 1.0).'

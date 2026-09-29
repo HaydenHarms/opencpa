@@ -1,0 +1,34 @@
+id: bar-coso-erm-0001
+type: mcq
+blueprint:
+  section: BAR
+  area: Area I — Business Analysis
+  topic: Risk management
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - COSO Enterprise Risk Management — Integrating with Strategy and Performance (2017)
+  notes: BAR batch 01. Answers solved and every number and distractor computed in code (the goodwill and
+    nonexchange revenue items moved from FAR batch 01).
+stem: Which of the following is one of the five components of COSO's 2017 Enterprise Risk Management —
+  Integrating with Strategy and Performance framework?
+choices:
+- id: A
+  text: Control activities
+  rationale: A component of COSO's Internal Control — Integrated Framework, not the ERM framework.
+- id: B
+  text: Review and revision
+  rationale: Correct. The five ERM components are governance and culture; strategy and objective-setting;
+    performance; review and revision; and information, communication, and reporting.
+- id: C
+  text: Monitoring activities
+  rationale: A component of COSO's Internal Control — Integrated Framework.
+- id: D
+  text: Control environment
+  rationale: A component of COSO's Internal Control — Integrated Framework; the ERM framework's comparable
+    component is governance and culture.
+answer: B
+explanation: 'The 2017 COSO ERM framework has five components: governance and culture; strategy and objective-setting;
+  performance; review and revision; and information, communication, and reporting. Control environment,
+  control activities and monitoring activities belong to the Internal Control — Integrated Framework (2013).'
