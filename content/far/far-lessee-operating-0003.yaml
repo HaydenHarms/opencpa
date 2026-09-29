@@ -1,0 +1,43 @@
+id: far-lessee-operating-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 842-10 (lease classification)
+  - 'ASC 842-20 (lessee operating leases: single lease cost)'
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Yardley Co. leases office equipment for 5 years. The equipment's economic
+  life is 20 years, ownership stays with the lessor, there is no purchase option, the present value of
+  the payments is 40% of the equipment's fair value, and the equipment is not specialized. Annual payments,
+  due each December 31, are $40,000 in Year 1 and increase by $2,000 each year. Yardley pays $5,000 of
+  initial direct costs at commencement, and its incremental borrowing rate is 6%. What total lease cost
+  should Yardley recognize in Year 1?
+choices:
+- id: A
+  text: $40,000
+  rationale: Recognizes the Year 1 cash payment. Operating lease cost is recognized straight-line over
+    the term.
+- id: B
+  text: $41,000
+  rationale: Adds the initial direct costs' amortization to the Year 1 cash payment instead of the straight-line
+    payment amount.
+- id: C
+  text: $44,000
+  rationale: Uses straight-line payments but omits the $1,000 of amortization of initial direct costs,
+    which is part of the single lease cost.
+- id: D
+  text: $45,000
+  rationale: Correct. Total payments $220,000 ÷ 5 = $44,000 straight-line, plus $5,000 ÷ 5 = $1,000 of
+    initial direct costs.
+answer: D
+explanation: 'None of the finance-lease criteria is met (no transfer of ownership or purchase option,
+  a term that is 25% of economic life, present value well below substantially all of fair value, and nonspecialized
+  equipment), so the lease is an operating lease. Its single lease cost is the total lease payments plus
+  initial direct costs, recognized straight-line: ($40,000 + $42,000 + $44,000 + $46,000 + $48,000 + $5,000)
+  ÷ 5 = $45,000. The discount rate affects the measurement of the liability and right-of-use asset, not
+  the straight-line cost.'

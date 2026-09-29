@@ -1,0 +1,39 @@
+id: far-receivables-factoring-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 860-10 (transfers of financial assets: sale accounting)'
+  - ASC 860-20 (sales of financial assets)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Kemp Co. transfers $500,000 of trade receivables to a factor without recourse. The receivables are
+  legally isolated from Kemp, the factor may sell or pledge them, and Kemp has no agreement or right to
+  repurchase them. The factor charges a fee of 4% of the receivables transferred and holds back 10% of
+  the receivables to cover sales returns and allowances, to be paid to Kemp after the accounts are collected.
+  Kemp expects no returns or allowances. How much cash does Kemp receive at the transfer, and what loss
+  does it recognize?
+choices:
+- id: A
+  text: $430,000 cash; $20,000 loss
+  rationale: Correct. $500,000 − $20,000 fee − $50,000 holdback; the fee is the loss, and the holdback
+    is a receivable from the factor.
+- id: B
+  text: $430,000 cash; $70,000 loss
+  rationale: Treats the $50,000 holdback as part of the loss. Kemp expects to collect it, so it is a receivable
+    from the factor.
+- id: C
+  text: $432,000 cash; $18,000 loss
+  rationale: Computes the fee on the $450,000 advanced. The fee is 4% of the $500,000 of receivables transferred.
+- id: D
+  text: $480,000 cash; $20,000 loss
+  rationale: Treats the holdback as paid at the transfer. The factor keeps it until the accounts are collected.
+answer: A
+explanation: 'The transfer meets the conditions for sale accounting: the receivables are isolated from
+  Kemp, the factor can pledge or sell them, and Kemp keeps no effective control. Kemp derecognizes the
+  receivables. Cash = $500,000 − 4% fee ($20,000) − 10% holdback ($50,000) = $430,000. The holdback is
+  recorded as a receivable from the factor, and the $20,000 fee is the loss on sale.'

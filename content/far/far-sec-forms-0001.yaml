@@ -1,0 +1,33 @@
+id: far-sec-forms-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Public Company Reporting Topics
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - SEC Form 10-K (Part II, Items 7, 7A and 8)
+  - SEC Regulation S-K Item 305 (quantitative and qualitative disclosures about market risk)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A U.S. registrant is drafting its annual report on Form 10-K. Where in the Form 10-K does it present
+  its quantitative and qualitative disclosures about market risk, such as its exposure to changes in interest
+  rates and foreign-currency exchange rates?
+choices:
+- id: A
+  text: Part II, Item 7
+  rationale: Item 7 is Management's Discussion and Analysis of Financial Condition and Results of Operations.
+- id: B
+  text: Part II, Item 7A
+  rationale: Correct. Item 7A is Quantitative and Qualitative Disclosures About Market Risk.
+- id: C
+  text: Part II, Item 8
+  rationale: Item 8 is Financial Statements and Supplementary Data.
+- id: D
+  text: Part I, Item 1A
+  rationale: Item 1A is Risk Factors, a narrative of material risks, not the market-risk disclosures.
+answer: B
+explanation: Form 10-K Part II contains Item 7 (MD&A), Item 7A (Quantitative and Qualitative Disclosures
+  About Market Risk), and Item 8 (Financial Statements and Supplementary Data). Market-risk sensitivity
+  to interest rates, exchange rates and commodity prices belongs in Item 7A.

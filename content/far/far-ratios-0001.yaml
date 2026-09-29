@@ -1,0 +1,34 @@
+id: far-ratios-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Financial statement analysis: liquidity ratios (quick or acid-test ratio)'
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At year-end, Garner Co. reports the following current assets: cash $60,000; Treasury bills purchased
+  with a two-month maturity $40,000; trading debt securities $50,000; accounts receivable, net $150,000;
+  inventory $200,000; and prepaid insurance $20,000. Current liabilities total $250,000. What is Garner''s
+  quick ratio?'
+choices:
+- id: A
+  text: '1.20'
+  rationale: Correct. ($60,000 + $40,000 + $50,000 + $150,000) ÷ $250,000.
+- id: B
+  text: '1.28'
+  rationale: Includes prepaid insurance. Prepaid expenses will not convert to cash, so they are excluded
+    along with inventory.
+- id: C
+  text: '2.00'
+  rationale: Includes inventory. The quick ratio excludes inventory and prepaid expenses.
+- id: D
+  text: '2.08'
+  rationale: Computes the current ratio. The quick ratio excludes inventory and prepaid expenses.
+answer: A
+explanation: 'Quick assets are cash and cash equivalents, marketable securities, and net receivables:
+  $60,000 + $40,000 + $50,000 + $150,000 = $300,000. Quick ratio = $300,000 ÷ $250,000 = 1.20. Inventory
+  and prepaid expenses are excluded.'

@@ -1,0 +1,41 @@
+id: far-treasury-stock-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Equity
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 505-30 (treasury stock: cost method)'
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: At the start of the year, Sutton Corp.'s equity includes $3,000 of additional paid-in capital from
+  earlier treasury stock transactions in its preferred stock and none from transactions in its common
+  stock. During the year, under the cost method, Sutton reacquires 2,000 shares of its common stock at
+  $30 per share, later resells 800 of them at $36 per share, and later resells another 1,000 at $24 per
+  share. Sutton charges losses on treasury stock to paid-in capital to the maximum extent ASC 505-30 permits.
+  What amount does Sutton debit to retained earnings as a result of these transactions?
+choices:
+- id: A
+  text: $0
+  rationale: Absorbs the rest of the loss with the $3,000 of APIC from preferred treasury transactions.
+    Only APIC from treasury transactions in the same class of stock (common) may absorb the loss.
+- id: B
+  text: $1,200
+  rationale: Correct. The $6,000 loss on the second resale is charged first to the $4,800 of APIC from
+    the first resale, and the remaining $1,200 to retained earnings.
+- id: C
+  text: $3,000
+  rationale: Uses the preferred-stock APIC ($3,000) instead of the $4,800 created by the first resale
+    of common treasury shares.
+- id: D
+  text: $6,000
+  rationale: Charges the entire loss on the second resale to retained earnings, ignoring the $4,800 of
+    APIC from the first resale.
+answer: B
+explanation: 'Cost method: treasury stock is debited at cost, 2,000 × $30 = $60,000. First resale: 800
+  × ($36 − $30) = $4,800 credited to APIC–treasury stock (common). Second resale: 1,000 × ($30 − $24)
+  = $6,000 below cost, charged first to APIC from earlier treasury transactions in the same class ($4,800)
+  and the remaining $1,200 to retained earnings. APIC from preferred-stock treasury transactions cannot
+  absorb a loss on common shares.'

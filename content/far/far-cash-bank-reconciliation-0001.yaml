@@ -1,0 +1,39 @@
+id: far-cash-bank-reconciliation-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Ridley Co.''s December 31 bank statement shows a balance of $48,200, and its general ledger cash
+  account shows $45,900. The controller finds: deposits in transit of $6,400; outstanding checks of $9,300;
+  a $60 bank service charge not yet recorded; a customer''s $1,200 check returned with the statement marked
+  NSF; check #412, written to a supplier for $540 and cleared by the bank at $540, recorded in the ledger
+  as $450; and a note receivable of $750, including interest, that the bank collected for Ridley and credited
+  to its account. What is Ridley''s correct cash balance at December 31?'
+choices:
+- id: A
+  text: $44,550
+  rationale: Omits the $750 note the bank collected, which Ridley has not yet recorded.
+- id: B
+  text: $45,300
+  rationale: 'Correct. Bank: $48,200 + $6,400 − $9,300. Books: $45,900 − $60 − $1,200 − $90 + $750. Both
+    equal $45,300.'
+- id: C
+  text: $45,480
+  rationale: 'Corrects check #412 in the wrong direction. The check was $540 but recorded as $450, so
+    the ledger must be reduced by $90.'
+- id: D
+  text: $47,700
+  rationale: Adds back the NSF check. A returned customer check reduces cash and reinstates the receivable.
+answer: B
+explanation: 'Reconcile both sides to the correct balance. Bank side: $48,200 + $6,400 deposits in transit
+  − $9,300 outstanding checks = $45,300. Book side: $45,900 − $60 service charge − $1,200 NSF check −
+  $90 understatement of check #412 + $750 note collected = $45,300. The book-side items all require general
+  ledger adjustments; the bank-side items do not.'

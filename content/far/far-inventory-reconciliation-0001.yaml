@@ -1,0 +1,41 @@
+id: far-inventory-reconciliation-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory)
+  - ASC 330-10 (goods in transit and goods held on consignment)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Lassen Co.''s perpetual inventory subledger totals $612,000, but its general ledger
+  inventory account shows $562,000. Investigating, the controller finds: (1) goods costing $18,000 that
+  a supplier shipped FOB shipping point on December 28 arrived January 3 and are recorded in neither record;
+  (2) the subledger includes $22,000 of goods Lassen holds on consignment for Mayer Co.; (3) a $28,000
+  purchase received December 20 is in the subledger, but the supplier''s invoice was never posted to the
+  general ledger; and (4) goods costing $12,000 shipped to a customer FOB destination on December 31,
+  which arrived January 4, were removed from both records when shipped and the sale was recorded. By how
+  much must Lassen increase its general ledger inventory balance?'
+choices:
+- id: A
+  text: $8,000
+  rationale: Computes the adjustment the subledger needs ($612,000 to $620,000), not the general ledger.
+- id: B
+  text: $30,000
+  rationale: Omits the $28,000 purchase that is in the subledger but was never posted to the general ledger.
+- id: C
+  text: $58,000
+  rationale: Correct. Correct inventory is $620,000; $620,000 − $562,000 = $58,000.
+- id: D
+  text: $80,000
+  rationale: Treats the $22,000 of consigned goods as Lassen's. Goods held on consignment belong to the
+    consignor.
+answer: C
+explanation: 'Correct inventory = subledger $612,000 + $18,000 in transit (title passed at shipment) −
+  $22,000 consigned goods (owned by Mayer) + $12,000 shipped FOB destination (title had not passed) =
+  $620,000. The general ledger is missing the in-transit goods, the unposted $28,000 purchase, and the
+  FOB-destination goods: $562,000 + $18,000 + $28,000 + $12,000 = $620,000. The general ledger must be
+  increased by $58,000 (and the premature sale reversed).'

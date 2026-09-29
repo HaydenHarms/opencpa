@@ -1,0 +1,49 @@
+id: far-income-statement-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 205-20 (discontinued operations)
+  - ASC 225-20 (unusual or infrequently occurring items; ASU 2015-01 eliminated extraordinary items)
+  - ASC 830-20 (foreign currency transactions)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Oberon Corp.''s draft Year 1 multi-step income statement reports income from continuing operations
+  before income taxes of $900,000. Reviewing the supporting schedules, you find: (1) continuing operations
+  include a $150,000 pretax operating loss of Oberon''s South American division, which is Oberon''s only
+  operation on that continent and produced 30% of consolidated revenue; in November the board approved
+  a plan to sell the division, began actively marketing it at a reasonable price, and expects a sale within
+  a year; (2) a $40,000 loss from remeasuring a yen-denominated account payable at the year-end exchange
+  rate is reported in other comprehensive income; and (3) a $70,000 hurricane loss, which Oberon considers
+  both unusual and infrequent, is reported below income from continuing operations as an extraordinary
+  item. What is Oberon''s corrected income from continuing operations before income taxes?'
+choices:
+- id: A
+  text: $640,000
+  rationale: Subtracts the division's $150,000 loss again instead of removing it from continuing operations.
+    Moving a loss to discontinued operations raises income from continuing operations.
+- id: B
+  text: $790,000
+  rationale: Corrects the exchange loss and the hurricane loss but leaves the division's loss in continuing
+    operations. Selling the company's only operation on a continent, which produced 30% of revenue, is
+    a strategic shift with a major effect, so it is reported in discontinued operations.
+- id: C
+  text: $940,000
+  rationale: Correct. $900,000 + $150,000 division loss moved to discontinued operations − $40,000 exchange
+    loss − $70,000 hurricane loss.
+- id: D
+  text: $980,000
+  rationale: Leaves the $40,000 exchange loss in OCI. A remeasurement loss on a foreign-currency payable
+    is a transaction loss reported in income.
+answer: C
+explanation: '(1) The division is a component that meets the held-for-sale criteria (approved plan, actively
+  marketed at a reasonable price, sale expected within a year) and its disposal is a strategic shift with
+  a major effect (exiting a major geographic area that produced 30% of revenue), so its results move to
+  discontinued operations: add back $150,000. (2) Remeasuring a foreign-currency payable produces a transaction
+  loss that belongs in income: subtract $40,000. (3) Since ASU 2015-01 there is no extraordinary-item
+  classification; the hurricane loss is reported within continuing operations: subtract $70,000. Corrected:
+  $900,000 + $150,000 − $40,000 − $70,000 = $940,000.'

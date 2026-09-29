@@ -1,0 +1,44 @@
+id: far-revenue-principal-agent-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 606-10 (principal versus agent considerations)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Voya Travel operates a website with two lines of business. Hotel bookings: customers book and pay
+  Voya $300 per room night; the hotel sets the room rate, is responsible for providing the room, and bears
+  the risk if rooms go unsold, and Voya keeps $45 of each booking and remits $255 to the hotel. During
+  the year Voya arranged 10,000 room nights. Tour packages: Voya buys blocks of hotel rooms months in
+  advance under nonrefundable contracts, sets the package price, and is responsible to customers for fixing
+  any problem with the stay. It sold 2,000 packages at $900 each, whose rooms cost it $600 each. What
+  total revenue should Voya recognize for the year?'
+choices:
+- id: A
+  text: $1,050,000
+  rationale: Reports both lines net. Voya controls the package rooms before transfer (it bears inventory
+    risk, sets the price and is responsible for fulfillment), so it is the principal for packages and
+    reports them gross.
+- id: B
+  text: $1,800,000
+  rationale: 'Reports the packages gross but recognizes nothing for hotel bookings. As an agent, Voya
+    still earns revenue: its $45 fee per room night.'
+- id: C
+  text: $2,250,000
+  rationale: Correct. Hotel bookings net as agent (10,000 × $45 = $450,000) plus tour packages gross as
+    principal (2,000 × $900 = $1,800,000).
+- id: D
+  text: $3,600,000
+  rationale: Reports hotel bookings gross and packages net, the reverse of who controls the rooms in each
+    line.
+answer: C
+explanation: 'An entity is a principal if it controls the good or service before transfer to the customer;
+  indicators include primary responsibility for fulfillment, inventory risk, and pricing discretion. Hotel
+  bookings: the hotel fulfills, bears inventory risk and sets the price, so Voya is an agent and recognizes
+  its net fee of $450,000. Tour packages: Voya commits to the rooms in advance (inventory risk), sets
+  the price and answers for the stay, so it is the principal and recognizes $1,800,000 gross, with the
+  $1,200,000 room cost in cost of sales. Total revenue = $2,250,000.'

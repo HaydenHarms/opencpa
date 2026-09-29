@@ -1,0 +1,40 @@
+id: far-special-purpose-frameworks-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Special Purpose Frameworks
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - AU-C 800 (special purpose frameworks)
+  - ASC 606-10 (revenue recognized as performance obligations are satisfied)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Dalton Consulting keeps its records on the cash basis. In Year 2 it received $480,000 in cash from
+  clients. Client accounts receivable were $60,000 on January 1 and $85,000 on December 31, and during
+  the year Dalton wrote off $5,000 of client receivables as uncollectible. Client advances for work not
+  yet performed were $20,000 on January 1 and $12,000 on December 31. What is Dalton's Year 2 consulting
+  revenue on the accrual basis?
+choices:
+- id: A
+  text: $468,000
+  rationale: Subtracts the $25,000 increase in receivables. Revenue earned but not yet collected raises
+    accrual revenue above cash received.
+- id: B
+  text: $502,000
+  rationale: Subtracts the $8,000 decrease in client advances. Advances earned during the year exceed
+    new advances received, so accrual revenue is higher than cash.
+- id: C
+  text: $513,000
+  rationale: Omits the $5,000 written off. Those receivables were billed as revenue even though they were
+    never collected.
+- id: D
+  text: $518,000
+  rationale: Correct. $480,000 + $25,000 increase in receivables + $5,000 written off + $8,000 decrease
+    in client advances.
+answer: D
+explanation: Revenue = cash received + ending receivables − beginning receivables + receivables written
+  off + beginning advances − ending advances. $480,000 + ($85,000 − $60,000) + $5,000 + ($20,000 − $12,000)
+  = $518,000. The written-off receivables were revenue that never reached cash, and the net decrease in
+  advances is revenue earned from cash collected in an earlier year.

@@ -1,0 +1,41 @@
+id: far-change-in-estimate-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 250-10 (change in accounting estimate effected by a change in accounting principle)
+  - ASC 360-10 (depreciation)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Weller Co. bought a machine for $800,000, estimated a 10-year life and $50,000
+  salvage value, and depreciated it straight-line. On January 1, Year 4, after studying how the machine's
+  benefits are consumed, Weller switches to the double-declining-balance method, which it concludes better
+  reflects that pattern, and revises the remaining life to 5 years and the salvage value to $30,000. What
+  depreciation expense should Weller recognize in Year 4?
+choices:
+- id: A
+  text: $75,000
+  rationale: Keeps the original straight-line depreciation. The new method and estimates apply from Year
+    4.
+- id: B
+  text: $109,000
+  rationale: 'Applies the revised life and salvage value but keeps straight-line: ($575,000 − $30,000)
+    ÷ 5.'
+- id: C
+  text: $218,000
+  rationale: Deducts the $30,000 salvage value before applying the 40% rate. Double-declining balance
+    ignores salvage value except as a floor.
+- id: D
+  text: $230,000
+  rationale: Correct. Carrying amount $800,000 − 3 × $75,000 = $575,000; double-declining rate 2 ÷ 5 =
+    40%.
+answer: D
+explanation: A change in depreciation method is a change in accounting estimate effected by a change in
+  accounting principle, so it is applied prospectively to the carrying amount at the date of change. Carrying
+  amount at January 1, Year 4 = $800,000 − 3 × ($750,000 ÷ 10) = $575,000. Double-declining-balance rate
+  = 2 ÷ 5 = 40%; Year 4 depreciation = $575,000 × 40% = $230,000. Salvage value limits depreciation only
+  in later years.

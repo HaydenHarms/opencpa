@@ -1,0 +1,39 @@
+id: far-investments-htm-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at amortized cost)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 320-10 (held-to-maturity debt securities)
+  - ASC 310-20 (interest method)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Nolan Corp. pays $479,499 for $500,000 face amount of five-year, 6% bonds
+  that pay interest each December 31, a price that yields 7%. Nolan has the positive intent and ability
+  to hold the bonds to maturity and expects no credit losses on them. It uses the effective interest method
+  and rounds to the nearest dollar at each step. At December 31, Year 2, the bonds' fair value is $490,000.
+  At what amount should Nolan report the investment at December 31, Year 2?
+choices:
+- id: A
+  text: $486,878
+  rationale: 'Correct. Year 1: $479,499 + ($33,565 − $30,000) = $483,064. Year 2: $483,064 + ($33,814
+    − $30,000) = $486,878.'
+- id: B
+  text: $487,699
+  rationale: Amortizes the discount straight-line ($4,100 a year). The effective interest method is required
+    unless the difference is immaterial.
+- id: C
+  text: $489,499
+  rationale: Computes interest income at 7% of face ($35,000), amortizing $5,000 a year. Effective interest
+    applies the yield to the carrying amount.
+- id: D
+  text: $490,000
+  rationale: Reports fair value. Held-to-maturity securities are carried at amortized cost.
+answer: A
+explanation: Held-to-maturity debt securities are carried at amortized cost. Year 1 interest income =
+  $479,499 × 7% = $33,565; cash interest $30,000; discount amortized $3,565; carrying amount $483,064.
+  Year 2 interest income = $483,064 × 7% = $33,814; amortization $3,814; carrying amount $486,878. Fair
+  value is disclosed, not recognized.

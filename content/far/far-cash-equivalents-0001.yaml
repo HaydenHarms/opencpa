@@ -1,0 +1,42 @@
+id: far-cash-equivalents-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 305-10 (cash equivalents: original maturity of three months or less)'
+  - ASC 210-10 (restricted cash; offsetting)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Year 1, Fulton Corp. has: checking account $120,000; savings account $80,000; petty
+  cash $1,000; a Treasury bill bought December 1, Year 1, that matures February 28, Year 2, $50,000; a
+  Treasury bill bought June 1, Year 1, that matures February 28, Year 2, $30,000; a six-month certificate
+  of deposit maturing March 31, Year 2, $40,000; $25,000 held by a trustee in a bond sinking fund; and
+  an $8,000 overdraft in an account at a different bank. What amount should Fulton report as cash and
+  cash equivalents?'
+choices:
+- id: A
+  text: $251,000
+  rationale: Correct. $120,000 + $80,000 + $1,000 + the $50,000 Treasury bill bought with a three-month
+    maturity. The overdraft at another bank is a liability and is not netted.
+- id: B
+  text: $276,000
+  rationale: Includes the $25,000 sinking fund. Cash restricted for debt retirement is not available for
+    current operations and is reported separately.
+- id: C
+  text: $281,000
+  rationale: Includes the Treasury bill bought June 1. Cash equivalents must have an original maturity
+    to the holder of three months or less; this bill had about nine.
+- id: D
+  text: $291,000
+  rationale: Includes the six-month certificate of deposit. Its original maturity is more than three months,
+    so it is a short-term investment, not a cash equivalent.
+answer: A
+explanation: Cash equivalents are short-term, highly liquid investments with original maturities to the
+  holder of three months or less. The December 1 Treasury bill qualifies; the June 1 bill (about nine
+  months when bought) and the six-month CD do not, even though little time remains. The sinking fund is
+  restricted and reported separately, and the overdraft at another bank is a current liability. Cash and
+  cash equivalents = $120,000 + $80,000 + $1,000 + $50,000 = $251,000.

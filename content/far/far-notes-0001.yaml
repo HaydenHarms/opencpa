@@ -1,0 +1,51 @@
+id: far-notes-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Notes to financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 470-10 (classification of debt callable because of a covenant violation)
+  - ASC 855-10 (nonrecognized subsequent events)
+  - ASC 330-10 (inventory)
+  - ASC 842-20 (lessee presentation)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Marlin Corp.''s draft December 31, Year 1, balance sheet reports inventory of $840,000 and classifies
+  all of its long-term debt, including a $300,000 term loan due in Year 6, as noncurrent. The statements
+  will be issued on March 5, Year 2. You compare four draft note excerpts with the statements and supporting
+  documents. Inventory note: inventories of $840,000 are stated at the lower of FIFO cost and net realizable
+  value, after a $12,000 write-down charged to cost of sales. Debt note: at December 31, Marlin did not
+  meet the current-ratio covenant in its term loan agreement, which makes the loan payable on demand;
+  on January 20 the lender waived that right until September 30, Year 2. Subsequent events note: on February
+  5 a fire destroyed uninsured inventory costing $90,000; the loss will be recognized in Year 2. Lease
+  note: operating lease cost of $48,000 is included in selling expenses, and the right-of-use asset and
+  lease liability are presented separately in the balance sheet. Which note reveals that the draft financial
+  statements must be corrected?'
+choices:
+- id: A
+  text: The debt note
+  rationale: Correct. A covenant violation that makes the loan callable at year-end requires current classification
+    unless the lender waives the right for more than one year from the balance sheet date. The waiver
+    runs only to September 30, Year 2, so the $300,000 is current.
+- id: B
+  text: The inventory note
+  rationale: Consistent. The write-down to net realizable value is charged to cost of sales and the carrying
+    amount matches the balance sheet.
+- id: C
+  text: The subsequent events note
+  rationale: 'Consistent. The fire is a condition that arose after year-end: it is disclosed, not recognized
+    in Year 1.'
+- id: D
+  text: The lease note
+  rationale: Consistent. A lessee presents operating lease right-of-use assets and liabilities separately,
+    and reports a single lease cost in income from operations.
+answer: A
+explanation: Long-term debt that is callable by the creditor at the balance sheet date because of a covenant
+  violation is classified as current unless the creditor waives or loses the right to demand repayment
+  for more than one year from the balance sheet date (or the violation will probably be cured within a
+  grace period). Marlin's waiver lasts only nine months, so the $300,000 term loan must be reclassified
+  to current liabilities, and the note is inconsistent with the draft balance sheet. The other three notes
+  agree with the statements and with GAAP.

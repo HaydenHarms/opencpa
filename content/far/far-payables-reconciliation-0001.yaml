@@ -1,0 +1,44 @@
+id: far-payables-reconciliation-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 405-10 (liabilities)
+  - 'ASC 330-10 (inventory: goods in transit)'
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Loring Co.''s accounts payable subledger totals $412,000, and its general ledger
+  accounts payable control account shows $392,000. Investigating, the controller finds: (1) a $14,000
+  supplier invoice was posted correctly to the supplier''s subledger account, but the general ledger entry
+  credited accrued liabilities instead of accounts payable; (2) goods costing $9,000 shipped by a supplier
+  FOB shipping point on December 29 and received January 3 have not been invoiced or recorded in either
+  record; and (3) a $6,000 payment to a supplier on December 30 was recorded in the general ledger but
+  not in the supplier''s subledger account. What amount should Loring report as accounts payable at December
+  31?'
+choices:
+- id: A
+  text: $392,000
+  rationale: Accepts the general ledger. It omits the $14,000 invoice credited to accrued liabilities
+    and the $9,000 of goods in transit.
+- id: B
+  text: $406,000
+  rationale: Omits the $9,000 of goods shipped FOB shipping point. Title passed at shipment, so Loring
+    owes the supplier at year-end.
+- id: C
+  text: $412,000
+  rationale: Accepts the subledger. The subledger still includes the $6,000 already paid and omits the
+    $9,000 of goods in transit.
+- id: D
+  text: $415,000
+  rationale: Correct. General ledger $392,000 + $14,000 misposted invoice + $9,000 goods in transit; subledger
+    $412,000 − $6,000 payment + $9,000 agrees.
+answer: D
+explanation: 'Reconcile both records to the correct balance. General ledger: $392,000 + $14,000 invoice
+  credited to the wrong account + $9,000 goods in transit (title passed at shipment) = $415,000. Subledger:
+  $412,000 − $6,000 payment not yet posted + $9,000 goods in transit = $415,000. Adjustments: reclassify
+  $14,000 from accrued liabilities to accounts payable, record the $9,000 purchase, and post the payment
+  to the subledger.'

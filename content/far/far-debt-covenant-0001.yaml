@@ -1,0 +1,41 @@
+id: far-debt-covenant-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Debt covenant compliance)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - Debt agreement covenant calculations
+  - ASC 460-10 (warranty obligations)
+  - ASC 505-20 (dividends payable on declaration)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Kade Inc.''s loan agreement requires its ratio of total liabilities to total stockholders'' equity
+  to be no more than 1.60 at each year-end. Before year-end adjustments, Kade''s December 31 balance sheet
+  shows total liabilities of $1,800,000 and total stockholders'' equity of $1,250,000. Two adjustments
+  have not yet been recorded: an accrual for $60,000 of warranty costs on Year 1 sales, and a $50,000
+  cash dividend the board declared on December 20, payable January 15. Ignore income taxes. What is Kade''s
+  debt-to-equity ratio for the covenant test?'
+choices:
+- id: A
+  text: '1.44'
+  rationale: Uses the balances before the year-end adjustments.
+- id: B
+  text: '1.53'
+  rationale: Adds the $110,000 to liabilities but does not reduce stockholders' equity for the warranty
+    expense and the dividend.
+- id: C
+  text: '1.56'
+  rationale: Records the warranty accrual but not the dividend declared December 20, which is a liability
+    at year-end.
+- id: D
+  text: '1.68'
+  rationale: Correct. ($1,800,000 + $110,000) ÷ ($1,250,000 − $110,000) = 1.68, which violates the 1.60
+    limit.
+answer: D
+explanation: Both adjustments increase liabilities and decrease equity. The warranty accrual is an expense
+  (reducing retained earnings) and a liability; the declared dividend reduces retained earnings and creates
+  dividends payable. Liabilities = $1,800,000 + $60,000 + $50,000 = $1,910,000. Equity = $1,250,000 −
+  $110,000 = $1,140,000. Ratio = $1,910,000 ÷ $1,140,000 = 1.68, above the 1.60 covenant.

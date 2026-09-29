@@ -1,0 +1,38 @@
+id: far-uncertain-tax-positions-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (accounting for uncertainty in income taxes)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Under ASC 740, which statement correctly describes how an entity accounts for an uncertain tax position?
+choices:
+- id: A
+  text: It recognizes a benefit only if the position is probable of being sustained on examination.
+  rationale: Uses the contingency threshold. The recognition threshold for tax positions is more likely
+    than not.
+- id: B
+  text: It measures a recognized benefit at the single most likely amount to be sustained on settlement.
+  rationale: The benefit is the largest amount with a greater than 50% cumulative likelihood of being
+    realized, not the single most likely outcome.
+- id: C
+  text: It recognizes a benefit only if the position is more likely than not to be sustained on its technical
+    merits.
+  rationale: Correct. Recognition requires a more-likely-than-not threshold, assuming examination by a
+    taxing authority with full knowledge of all relevant information.
+- id: D
+  text: It considers the chance that the taxing authority will not examine the position when deciding
+    recognition.
+  rationale: The entity must assume the position will be examined by an authority with full knowledge;
+    detection risk is ignored.
+answer: C
+explanation: 'ASC 740-10 uses a two-step approach. Recognition: a benefit is recognized only if it is
+  more likely than not (greater than 50%) that the position will be sustained on examination based on
+  its technical merits, presuming the taxing authority examines it with full knowledge. Measurement: the
+  benefit recognized is the largest amount that is more than 50% likely to be realized on ultimate settlement,
+  based on cumulative probabilities.'

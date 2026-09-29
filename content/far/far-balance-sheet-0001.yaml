@@ -1,0 +1,50 @@
+id: far-balance-sheet-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Balance sheet
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 210-10 (balance sheet classification)
+  - ASC 470-10 (classification of short-term obligations expected to be refinanced; current maturities)
+  - 'ASC 505-20 (dividends: declaration creates the liability)'
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Corbin Co.''s December 31, Year 1, financial statements will be issued on March 1, Year 2. Its
+  draft classified balance sheet reports total current liabilities of $445,000: accounts payable $180,000,
+  accrued wages $40,000, a note payable due June 30, Year 2, of $200,000, and dividends payable of $25,000.
+  Supporting documents show: (1) on February 10, Year 2, Corbin signed an agreement with a bank to refinance
+  the $200,000 note with a five-year loan; the agreement cannot be cancelled by the bank before Year 5,
+  the bank is financially able to honor it, and Corbin is in compliance with its terms; (2) the board
+  declared the $25,000 cash dividend on January 20, Year 2; (3) Corbin''s $500,000 of serial bonds, all
+  shown as noncurrent, are repaid in ten annual installments of $50,000 beginning January 15, Year 2;
+  and (4) Corbin netted a $35,000 overdraft at Bank B, where it has no other accounts, against its cash
+  at Bank A. After correcting the draft, what are Corbin''s total current liabilities?'
+choices:
+- id: A
+  text: $255,000
+  rationale: Reclassifies the note and removes the dividend but leaves the $50,000 bond installment due
+    January 15, Year 2, in noncurrent liabilities.
+- id: B
+  text: $270,000
+  rationale: Leaves the $35,000 overdraft netted against cash. An overdraft at a bank where Corbin has
+    no other accounts cannot be offset; it is a current liability.
+- id: C
+  text: $305,000
+  rationale: Correct. $180,000 + $40,000 + $50,000 current bond installment + $35,000 overdraft. The refinanced
+    note is noncurrent and the dividend is not yet a liability.
+- id: D
+  text: $330,000
+  rationale: Keeps the $25,000 dividend. A dividend declared after the balance sheet date is not a liability
+    at year-end.
+answer: C
+explanation: Four corrections. (1) A short-term obligation is excluded from current liabilities if, before
+  the statements are issued, the entity enters into a financing agreement that permits long-term refinancing,
+  is noncancelable for more than a year, is with a capable lender, and is not in violation. The $200,000
+  note meets these conditions, so it moves to noncurrent. (2) A dividend becomes a liability when declared;
+  the January 20 declaration is not a Year 1 liability. (3) The $50,000 bond installment due within a
+  year is current. (4) An overdraft at a bank where the entity has no other accounts cannot be offset
+  against cash elsewhere; it is a current liability. Current liabilities = $180,000 + $40,000 + $50,000
+  + $35,000 = $305,000.

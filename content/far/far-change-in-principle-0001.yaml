@@ -1,0 +1,40 @@
+id: far-change-in-principle-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 250-10 (change in accounting principle: retrospective application)'
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At the start of Year 3, Tate Co. changes its inventory method from weighted-average cost to FIFO
+  because FIFO better reflects its flow of goods. It can determine the effects for all prior periods.
+  Inventory under each method was: December 31, Year 1 — weighted-average $400,000, FIFO $450,000; December
+  31, Year 2 — weighted-average $460,000, FIFO $540,000. The tax rate is 25%, and the change also applies
+  for tax purposes. Tate issues comparative statements for Years 2 and 3. How does the change affect the
+  Year 2 amounts in those statements?'
+choices:
+- id: A
+  text: $0 to January 1, Year 2, retained earnings; $60,000 in Year 3 net income
+  rationale: Reports a cumulative effect in current-year income, the approach used before retrospective
+    application was required.
+- id: B
+  text: $37,500 to January 1, Year 2, retained earnings; $22,500 to Year 2 net income
+  rationale: Correct. Opening adjustment $50,000 × 75%; Year 2 income rises by the $30,000 increase in
+    the difference, × 75%.
+- id: C
+  text: $50,000 to January 1, Year 2, retained earnings; $30,000 to Year 2 net income
+  rationale: Ignores the 25% tax effect of the change.
+- id: D
+  text: $60,000 to January 1, Year 2, retained earnings; $22,500 to Year 2 net income
+  rationale: Uses the December 31, Year 2, difference ($80,000 × 75%) for the opening balance. The opening
+    balance of the earliest period presented reflects the difference at December 31, Year 1.
+answer: B
+explanation: 'A change in accounting principle is applied retrospectively. The cumulative effect on periods
+  before the earliest period presented adjusts the opening retained earnings of Year 2: ($450,000 − $400,000)
+  × 75% = $37,500 increase. Year 2 is restated: FIFO raises ending inventory by $80,000 versus $50,000
+  at the start, so cost of goods sold falls by $30,000 and net income rises by $30,000 × 75% = $22,500.
+  December 31, Year 2, retained earnings rises by $60,000 in total.'

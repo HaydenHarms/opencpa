@@ -1,0 +1,39 @@
+id: far-intangibles-patent-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Intangible assets
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 350-30 (finite-lived intangible assets: amortization over useful life)'
+  - ASC 250-10 (change in accounting estimate)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Ivers Co. buys a patent for $360,000. The patent has 15 years of legal life
+  remaining, and Ivers expects it to provide benefits for 12 years. Ivers amortizes it straight-line with
+  no residual value. On January 1, Year 4, a competitor's new technology leads Ivers to conclude that
+  the patent will provide benefits for only 5 more years; its future cash flows still exceed its carrying
+  amount. What patent amortization expense should Ivers recognize in Year 4?
+choices:
+- id: A
+  text: $22,500
+  rationale: Spreads the $270,000 carrying amount over the 12 years of legal life remaining. Amortization
+    uses the shorter of legal and useful life.
+- id: B
+  text: $30,000
+  rationale: Keeps the original 12-year life. A revised estimate of useful life is applied from Year 4
+    onward.
+- id: C
+  text: $45,000
+  rationale: 'Spreads the original cost over the revised total life of 8 years. A change in estimate is
+    prospective: the remaining carrying amount is spread over the remaining life.'
+- id: D
+  text: $54,000
+  rationale: Correct. Carrying amount $360,000 − 3 × $30,000 = $270,000, spread over the remaining 5 years.
+answer: D
+explanation: 'A finite-lived intangible is amortized over the shorter of its legal and useful lives: 12
+  years, $30,000 a year. After three years its carrying amount is $270,000. The revised life is a change
+  in accounting estimate, applied prospectively: $270,000 ÷ 5 = $54,000 a year from Year 4. The asset
+  is recoverable, so there is no impairment.'

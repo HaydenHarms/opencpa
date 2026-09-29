@@ -1,0 +1,40 @@
+id: far-nfp-cash-flows-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 230-10 (contributions restricted for long-term purposes are financing inflows)
+  - ASC 958-230 (not-for-profit statement of cash flows)
+  notes: Batch 02. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'During Year 1, Hillcrest Museum, a not-for-profit entity, received these amounts in cash: $400,000
+  from a donor who restricted the gift to constructing a new wing, $250,000 from a donor who required
+  it to be invested in perpetuity with the income used for operations, and $180,000 of contributions without
+  donor restrictions. Hillcrest also paid $300,000 of construction costs for the new wing and repaid $50,000
+  of principal on its mortgage. What is Hillcrest''s net cash provided by financing activities for Year
+  1?'
+choices:
+- id: A
+  text: $200,000
+  rationale: Reports the $400,000 building gift as an operating inflow. Contributions restricted to acquiring
+    long-lived assets are financing inflows.
+- id: B
+  text: $350,000
+  rationale: Leaves the $250,000 endowment gift out of financing. Contributions restricted for permanent
+    endowment are financing inflows.
+- id: C
+  text: $600,000
+  rationale: Correct. $400,000 building gift + $250,000 endowment gift − $50,000 mortgage principal.
+- id: D
+  text: $780,000
+  rationale: Also counts the $180,000 of unrestricted contributions. Contributions without donor restrictions
+    are operating inflows.
+answer: C
+explanation: 'For a not-for-profit entity, cash contributions that donors restrict to long-term purposes
+  (acquiring, constructing or improving long-lived assets, or establishing or increasing an endowment)
+  are financing inflows. Financing: $400,000 + $250,000 − $50,000 mortgage principal = $600,000. The unrestricted
+  contributions are operating, and the construction payments are investing.'

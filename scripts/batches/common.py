@@ -13,7 +13,7 @@ import yaml
 # Skill levels (AICPA blueprint wording)
 RU, AP, AN, EV = "Remembering and Understanding", "Application", "Analysis", "Evaluation"
 
-_AMOUNT = re.compile(r"^\$([\d,]+(?:\.\d+)?)")
+_AMOUNT = re.compile(r"^\$?([\d,]+(?:\.\d+)?)(?![\d-])")
 
 
 def mcq(id, area, topic, skill, refs, stem, choices, answer, explanation, section="FAR", batch="Batch"):
@@ -35,11 +35,12 @@ def _amount(text):
 
 def _amounts(text):
     """Every dollar amount in a choice, in order: paired choices ("$30,000 gain; asset $250,000") sort on each."""
-    return tuple(float(a.replace(",", "")) for a in re.findall(r"\$([\d,]+(?:\.\d+)?)", text))
+    found = re.findall(r"\$([\d,]+(?:\.\d+)?)", text) or [_AMOUNT.match(text).group(1)]
+    return tuple(float(a.replace(",", "")) for a in found)
 
 
 def is_numeric(choices):
-    """True when every choice leads with a dollar amount, i.e. the item is a 'pick the number' item."""
+    """True when every choice leads with a number or dollar amount, i.e. the item is a 'pick the number' item."""
     return all(_amount(c["text"]) is not None for c in choices)
 
 
