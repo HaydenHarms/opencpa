@@ -40,3 +40,88 @@ explanation: 'Corrections: interest income (−$25,000) and interest expense (+$
   items for a manufacturer, so they move out of operating income. The loss on the sale of equipment (−$40,000)
   and the inventory write-down (−$30,000) are operating items that the draft placed below operating income.
   Operating income = $500,000 − $25,000 − $40,000 − $30,000 + $15,000 = $420,000.'
+variants:
+- stem: 'Mayfield Co.''s draft multi-step income statement reports operating income of $800,000. Reviewing
+    the supporting schedules, you find: (1) sales revenue includes $35,000 of interest earned on notes
+    receivable; (2) a $55,000 loss on the sale of warehouse equipment is reported in other expenses, below
+    operating income; (3) a $20,000 write-down of obsolete inventory is also reported in other expenses;
+    and (4) general and administrative expenses include $45,000 of interest expense on a bank loan. Mayfield
+    is a manufacturer. After correcting the draft, what is Mayfield''s operating income?'
+  choices:
+  - id: A
+    text: $690,000
+    rationale: Leaves the $45,000 of interest expense in general and administrative expenses. For a manufacturer,
+      interest expense is nonoperating.
+  - id: B
+    text: $735,000
+    rationale: Correct. $800,000 − $35,000 interest income − $55,000 loss on sale − $20,000 inventory
+      write-down + $45,000 interest expense.
+  - id: C
+    text: $755,000
+    rationale: Leaves the $20,000 inventory write-down below operating income. Write-downs of inventory
+      are part of cost of goods sold.
+  - id: D
+    text: $790,000
+    rationale: Leaves the $55,000 loss below operating income. Gains and losses on sales of long-lived
+      assets are reported within income from operations.
+  answer: B
+  explanation: 'Corrections: interest income (−$35,000) and interest expense (+$45,000) are nonoperating
+    items for a manufacturer, so they move out of operating income. The loss on the sale of equipment
+    (−$55,000) and the inventory write-down (−$20,000) are operating items that the draft placed below
+    operating income. Operating income = $800,000 − $35,000 − $55,000 − $20,000 + $45,000 = $735,000.'
+- stem: 'Norwood Co.''s draft multi-step income statement reports operating income of $350,000. Reviewing
+    the supporting schedules, you find: (1) sales revenue includes $12,000 of interest earned on notes
+    receivable; (2) a $28,000 loss on the sale of warehouse equipment is reported in other expenses, below
+    operating income; (3) a $45,000 write-down of obsolete inventory is also reported in other expenses;
+    and (4) general and administrative expenses include $8,000 of interest expense on a bank loan. Norwood
+    is a manufacturer. After correcting the draft, what is Norwood''s operating income?'
+  choices:
+  - id: A
+    text: $273,000
+    rationale: Correct. $350,000 − $12,000 interest income − $28,000 loss on sale − $45,000 inventory
+      write-down + $8,000 interest expense.
+  - id: B
+    text: $285,000
+    rationale: Leaves the $12,000 of interest income in sales revenue. For a manufacturer, interest income
+      is nonoperating.
+  - id: C
+    text: $301,000
+    rationale: Leaves the $28,000 loss below operating income. Gains and losses on sales of long-lived
+      assets are reported within income from operations.
+  - id: D
+    text: $318,000
+    rationale: Leaves the $45,000 inventory write-down below operating income. Write-downs of inventory
+      are part of cost of goods sold.
+  answer: A
+  explanation: 'Corrections: interest income (−$12,000) and interest expense (+$8,000) are nonoperating
+    items for a manufacturer, so they move out of operating income. The loss on the sale of equipment
+    (−$28,000) and the inventory write-down (−$45,000) are operating items that the draft placed below
+    operating income. Operating income = $350,000 − $12,000 − $28,000 − $45,000 + $8,000 = $273,000.'
+- stem: 'Oakley Co.''s draft multi-step income statement reports operating income of $620,000. Reviewing
+    the supporting schedules, you find: (1) sales revenue includes $30,000 of interest earned on notes
+    receivable; (2) a $70,000 loss on the sale of warehouse equipment is reported in other expenses, below
+    operating income; (3) a $25,000 write-down of obsolete inventory is also reported in other expenses;
+    and (4) general and administrative expenses include $20,000 of interest expense on a bank loan. Oakley
+    is a manufacturer. After correcting the draft, what is Oakley''s operating income?'
+  choices:
+  - id: A
+    text: $495,000
+    rationale: Leaves the $20,000 of interest expense in general and administrative expenses. For a manufacturer,
+      interest expense is nonoperating.
+  - id: B
+    text: $515,000
+    rationale: Correct. $620,000 − $30,000 interest income − $70,000 loss on sale − $25,000 inventory
+      write-down + $20,000 interest expense.
+  - id: C
+    text: $545,000
+    rationale: Leaves the $30,000 of interest income in sales revenue. For a manufacturer, interest income
+      is nonoperating.
+  - id: D
+    text: $585,000
+    rationale: Leaves the $70,000 loss below operating income. Gains and losses on sales of long-lived
+      assets are reported within income from operations.
+  answer: B
+  explanation: 'Corrections: interest income (−$30,000) and interest expense (+$20,000) are nonoperating
+    items for a manufacturer, so they move out of operating income. The loss on the sale of equipment
+    (−$70,000) and the inventory write-down (−$25,000) are operating items that the draft placed below
+    operating income. Operating income = $620,000 − $30,000 − $70,000 − $25,000 + $20,000 = $515,000.'

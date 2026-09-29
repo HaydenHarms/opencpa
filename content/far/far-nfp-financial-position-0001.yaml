@@ -39,3 +39,85 @@ explanation: 'Net assets with donor restrictions: promises to give due in a futu
   restriction) $80,000; the perpetual endowment $500,000; unappropriated earnings on the donor-restricted
   endowment $60,000; and the unspent scholarship gifts $45,000. Total $685,000. The board-designated quasi-endowment
   and the property bought with unrestricted funds are without donor restrictions.'
+variants:
+- stem: 'At year-end, Birch Lane Trust, a not-for-profit entity, has: unconditional promises to give of
+    $120,000, due next year, for which donors specified no purpose; an endowment gift of $750,000 that
+    donors require to be held in perpetuity; $90,000 of accumulated earnings on that endowment that the
+    board has not yet appropriated for spending; $300,000 that the board itself has set aside as a quasi-endowment;
+    $30,000 of unspent gifts that donors restricted to scholarships; and $1,200,000 of property and equipment
+    bought with unrestricted funds. What total should Birch Lane report as net assets with donor restrictions?'
+  choices:
+  - id: A
+    text: $960,000
+    rationale: Omits the $30,000 of unspent scholarship gifts. A donor's purpose restriction lasts until
+      the gifts are spent for that purpose.
+  - id: B
+    text: $990,000
+    rationale: Correct. $120,000 + $750,000 + $90,000 + $30,000.
+  - id: C
+    text: $1,290,000
+    rationale: Includes the $300,000 quasi-endowment. Board designations are net assets without donor
+      restrictions; only donors can impose restrictions.
+  - id: D
+    text: $2,190,000
+    rationale: Includes the $1,200,000 of property bought with unrestricted funds. Property carries a
+      donor restriction only when the gifts used to buy it were restricted.
+  answer: B
+  explanation: 'Net assets with donor restrictions: promises to give due in a future period (implied time
+    restriction) $120,000; the perpetual endowment $750,000; unappropriated earnings on the donor-restricted
+    endowment $90,000; and the unspent scholarship gifts $30,000. Total $990,000. The board-designated
+    quasi-endowment and the property bought with unrestricted funds are without donor restrictions.'
+- stem: 'At year-end, Cedar Ridge Alliance, a not-for-profit entity, has: unconditional promises to give
+    of $50,000, due next year, for which donors specified no purpose; an endowment gift of $300,000 that
+    donors require to be held in perpetuity; $25,000 of accumulated earnings on that endowment that the
+    board has not yet appropriated for spending; $150,000 that the board itself has set aside as a quasi-endowment;
+    $70,000 of unspent gifts that donors restricted to scholarships; and $600,000 of property and equipment
+    bought with unrestricted funds. What total should Cedar Ridge report as net assets with donor restrictions?'
+  choices:
+  - id: A
+    text: $375,000
+    rationale: Omits the $70,000 of unspent scholarship gifts. A donor's purpose restriction lasts until
+      the gifts are spent for that purpose.
+  - id: B
+    text: $395,000
+    rationale: Omits the $50,000 of promises to give. Amounts receivable in a later period carry an implied
+      time restriction until they are due.
+  - id: C
+    text: $420,000
+    rationale: Omits the $25,000 of unappropriated endowment earnings. Earnings on a donor-restricted
+      endowment stay restricted until appropriated for spending.
+  - id: D
+    text: $445,000
+    rationale: Correct. $50,000 + $300,000 + $25,000 + $70,000.
+  answer: D
+  explanation: 'Net assets with donor restrictions: promises to give due in a future period (implied time
+    restriction) $50,000; the perpetual endowment $300,000; unappropriated earnings on the donor-restricted
+    endowment $25,000; and the unspent scholarship gifts $70,000. Total $445,000. The board-designated
+    quasi-endowment and the property bought with unrestricted funds are without donor restrictions.'
+- stem: 'At year-end, Elm Street Guild, a not-for-profit entity, has: unconditional promises to give of
+    $95,000, due next year, for which donors specified no purpose; an endowment gift of $400,000 that
+    donors require to be held in perpetuity; $40,000 of accumulated earnings on that endowment that the
+    board has not yet appropriated for spending; $250,000 that the board itself has set aside as a quasi-endowment;
+    $55,000 of unspent gifts that donors restricted to scholarships; and $700,000 of property and equipment
+    bought with unrestricted funds. What total should Elm Street report as net assets with donor restrictions?'
+  choices:
+  - id: A
+    text: $495,000
+    rationale: Omits the $95,000 of promises to give. Amounts receivable in a later period carry an implied
+      time restriction until they are due.
+  - id: B
+    text: $535,000
+    rationale: Omits the $55,000 of unspent scholarship gifts. A donor's purpose restriction lasts until
+      the gifts are spent for that purpose.
+  - id: C
+    text: $590,000
+    rationale: Correct. $95,000 + $400,000 + $40,000 + $55,000.
+  - id: D
+    text: $840,000
+    rationale: Includes the $250,000 quasi-endowment. Board designations are net assets without donor
+      restrictions; only donors can impose restrictions.
+  answer: C
+  explanation: 'Net assets with donor restrictions: promises to give due in a future period (implied time
+    restriction) $95,000; the perpetual endowment $400,000; unappropriated earnings on the donor-restricted
+    endowment $40,000; and the unspent scholarship gifts $55,000. Total $590,000. The board-designated
+    quasi-endowment and the property bought with unrestricted funds are without donor restrictions.'

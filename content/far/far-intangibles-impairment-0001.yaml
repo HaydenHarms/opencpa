@@ -33,3 +33,71 @@ answer: C
 explanation: A finite-lived intangible is tested for recoverability like other long-lived assets. Carrying
   amount = $400,000 − 3 × ($400,000 ÷ 8) = $250,000. Undiscounted cash flows of $230,000 are less than
   the carrying amount, so the asset is impaired. Loss = $250,000 − $180,000 fair value = $70,000.
+variants:
+- stem: Arlen Co. bought a customer list for $600,000 four years ago and amortizes it straight-line over
+    10 years with no residual value. After losing a major customer, Arlen estimates the list's remaining
+    undiscounted cash flows at $330,000 and its fair value at $250,000. What impairment loss should Arlen
+    recognize?
+  choices:
+  - id: A
+    text: $30,000
+    rationale: Measures the loss as carrying amount minus undiscounted cash flows. Undiscounted cash flows
+      only test recoverability; the loss is measured against fair value.
+  - id: B
+    text: $110,000
+    rationale: Correct. Carrying amount $600,000 − 4 × $60,000 = $360,000, less fair value $250,000.
+  - id: C
+    text: $170,000
+    rationale: Records only three years of amortization. The list has been amortized for four years.
+  - id: D
+    text: $350,000
+    rationale: Compares fair value with the original $600,000 cost, ignoring four years of amortization.
+  answer: B
+  explanation: A finite-lived intangible is tested for recoverability like other long-lived assets. Carrying
+    amount = $600,000 − 4 × ($600,000 ÷ 10) = $360,000. Undiscounted cash flows of $330,000 are less than
+    the carrying amount, so the asset is impaired. Loss = $360,000 − $250,000 fair value = $110,000.
+- stem: Bristow Co. bought a customer list for $240,000 two years ago and amortizes it straight-line over
+    6 years with no residual value. After losing a major customer, Bristow estimates the list's remaining
+    undiscounted cash flows at $150,000 and its fair value at $100,000. What impairment loss should Bristow
+    recognize?
+  choices:
+  - id: A
+    text: $10,000
+    rationale: Measures the loss as carrying amount minus undiscounted cash flows. Undiscounted cash flows
+      only test recoverability; the loss is measured against fair value.
+  - id: B
+    text: $50,000
+    rationale: Measures the loss as undiscounted cash flows minus fair value. The loss is carrying amount
+      minus fair value.
+  - id: C
+    text: $60,000
+    rationale: Correct. Carrying amount $240,000 − 2 × $40,000 = $160,000, less fair value $100,000.
+  - id: D
+    text: $100,000
+    rationale: Records only one years of amortization. The list has been amortized for two years.
+  answer: C
+  explanation: A finite-lived intangible is tested for recoverability like other long-lived assets. Carrying
+    amount = $240,000 − 2 × ($240,000 ÷ 6) = $160,000. Undiscounted cash flows of $150,000 are less than
+    the carrying amount, so the asset is impaired. Loss = $160,000 − $100,000 fair value = $60,000.
+- stem: Cortland Co. bought a customer list for $900,000 five years ago and amortizes it straight-line
+    over 12 years with no residual value. After losing a major customer, Cortland estimates the list's
+    remaining undiscounted cash flows at $480,000 and its fair value at $390,000. What impairment loss
+    should Cortland recognize?
+  choices:
+  - id: A
+    text: $90,000
+    rationale: Measures the loss as undiscounted cash flows minus fair value. The loss is carrying amount
+      minus fair value.
+  - id: B
+    text: $135,000
+    rationale: Correct. Carrying amount $900,000 − 5 × $75,000 = $525,000, less fair value $390,000.
+  - id: C
+    text: $210,000
+    rationale: Records only four years of amortization. The list has been amortized for five years.
+  - id: D
+    text: $510,000
+    rationale: Compares fair value with the original $900,000 cost, ignoring five years of amortization.
+  answer: B
+  explanation: A finite-lived intangible is tested for recoverability like other long-lived assets. Carrying
+    amount = $900,000 − 5 × ($900,000 ÷ 12) = $525,000. Undiscounted cash flows of $480,000 are less than
+    the carrying amount, so the asset is impaired. Loss = $525,000 − $390,000 fair value = $135,000.

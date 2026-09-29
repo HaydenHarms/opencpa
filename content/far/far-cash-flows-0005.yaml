@@ -39,3 +39,91 @@ explanation: 'Three corrections. (1) Only $150,000 of the equipment was paid in 
   by a note is a noncash activity disclosed separately. (2) Interest and dividends received are operating
   cash flows under U.S. GAAP. (3) Cash flows from securities acquired specifically for resale (trading)
   are operating. Investing: −$150,000 + $90,000 − $40,000 + $10,000 = −$90,000.'
+variants:
+- stem: 'Calloway Co.''s staff accountant prepared the investing section of the draft statement of cash
+    flows: purchases of equipment $(400,000); proceeds from sales of available-for-sale debt securities
+    $120,000; interest and dividends received $18,000; loan made to a supplier $(60,000); principal collected
+    on that loan $20,000; purchases of debt securities bought and held principally to sell in the near
+    term $(45,000); net cash used in investing activities $(347,000). Supporting documents show that $150,000
+    of the equipment was acquired by signing a note payable to the seller. After correcting the draft
+    to comply with U.S. GAAP, what is net cash used in investing activities?'
+  choices:
+  - id: A
+    text: $152,000
+    rationale: Keeps the $18,000 of interest and dividends received in investing. Under U.S. GAAP they
+      are operating cash inflows.
+  - id: B
+    text: $170,000
+    rationale: Correct. −$250,000 cash paid for equipment + $120,000 AFS proceeds − $60,000 loan + $20,000
+      collected.
+  - id: C
+    text: $215,000
+    rationale: Keeps the $45,000 of trading-security purchases in investing. Securities bought principally
+      to sell in the near term are classified by their nature, as operating cash flows.
+  - id: D
+    text: $320,000
+    rationale: Keeps the $150,000 of equipment financed by the seller. Buying an asset with a note is
+      a noncash investing and financing activity, disclosed but not in the cash flow totals.
+  answer: B
+  explanation: 'Three corrections. (1) Only $250,000 of the equipment was paid in cash; the $150,000 financed
+    by a note is a noncash activity disclosed separately. (2) Interest and dividends received are operating
+    cash flows under U.S. GAAP. (3) Cash flows from securities acquired specifically for resale (trading)
+    are operating. Investing: −$250,000 + $120,000 − $60,000 + $20,000 = −$170,000.'
+- stem: 'Dorsey Co.''s staff accountant prepared the investing section of the draft statement of cash
+    flows: purchases of equipment $(180,000); proceeds from sales of available-for-sale debt securities
+    $40,000; interest and dividends received $9,000; loan made to a supplier $(25,000); principal collected
+    on that loan $5,000; purchases of debt securities bought and held principally to sell in the near
+    term $(20,000); net cash used in investing activities $(171,000). Supporting documents show that $60,000
+    of the equipment was acquired by signing a note payable to the seller. After correcting the draft
+    to comply with U.S. GAAP, what is net cash used in investing activities?'
+  choices:
+  - id: A
+    text: $100,000
+    rationale: Correct. −$120,000 cash paid for equipment + $40,000 AFS proceeds − $25,000 loan + $5,000
+      collected.
+  - id: B
+    text: $120,000
+    rationale: Keeps the $20,000 of trading-security purchases in investing. Securities bought principally
+      to sell in the near term are classified by their nature, as operating cash flows.
+  - id: C
+    text: $160,000
+    rationale: Keeps the $60,000 of equipment financed by the seller. Buying an asset with a note is a
+      noncash investing and financing activity, disclosed but not in the cash flow totals.
+  - id: D
+    text: $171,000
+    rationale: Accepts the draft, which also counts interest and dividends received (operating under U.S.
+      GAAP), the note-financed equipment, and the trading securities.
+  answer: A
+  explanation: 'Three corrections. (1) Only $120,000 of the equipment was paid in cash; the $60,000 financed
+    by a note is a noncash activity disclosed separately. (2) Interest and dividends received are operating
+    cash flows under U.S. GAAP. (3) Cash flows from securities acquired specifically for resale (trading)
+    are operating. Investing: −$120,000 + $40,000 − $25,000 + $5,000 = −$100,000.'
+- stem: 'Easton Co.''s staff accountant prepared the investing section of the draft statement of cash
+    flows: purchases of equipment $(320,000); proceeds from sales of available-for-sale debt securities
+    $70,000; interest and dividends received $14,000; loan made to a supplier $(50,000); principal collected
+    on that loan $15,000; purchases of debt securities bought and held principally to sell in the near
+    term $(35,000); net cash used in investing activities $(306,000). Supporting documents show that $120,000
+    of the equipment was acquired by signing a note payable to the seller. After correcting the draft
+    to comply with U.S. GAAP, what is net cash used in investing activities?'
+  choices:
+  - id: A
+    text: $151,000
+    rationale: Keeps the $14,000 of interest and dividends received in investing. Under U.S. GAAP they
+      are operating cash inflows.
+  - id: B
+    text: $165,000
+    rationale: Correct. −$200,000 cash paid for equipment + $70,000 AFS proceeds − $50,000 loan + $15,000
+      collected.
+  - id: C
+    text: $285,000
+    rationale: Keeps the $120,000 of equipment financed by the seller. Buying an asset with a note is
+      a noncash investing and financing activity, disclosed but not in the cash flow totals.
+  - id: D
+    text: $306,000
+    rationale: Accepts the draft, which also counts interest and dividends received (operating under U.S.
+      GAAP), the note-financed equipment, and the trading securities.
+  answer: B
+  explanation: 'Three corrections. (1) Only $200,000 of the equipment was paid in cash; the $120,000 financed
+    by a note is a noncash activity disclosed separately. (2) Interest and dividends received are operating
+    cash flows under U.S. GAAP. (3) Cash flows from securities acquired specifically for resale (trading)
+    are operating. Investing: −$200,000 + $70,000 − $50,000 + $15,000 = −$165,000.'

@@ -38,3 +38,85 @@ explanation: 'Contributions of food, use of facilities and securities are recogn
   + $24,000 + $15,000 = $79,000 (contributed nonfinancial assets are presented separately under ASU 2020-07).
   Works of art added to a collection that meets the collection criteria need not be recognized, and under
   Upton''s policy they are not.'
+variants:
+- stem: 'During Year 1, Kendall Food Bank, a not-for-profit entity, receives: donated food with a fair
+    value of $65,000 to distribute; free use of a warehouse for the year, which would otherwise rent for
+    $30,000; publicly traded shares worth $20,000; and a painting worth $40,000 that it adds to a collection
+    held for public exhibition, which it protects and preserves, and whose sale proceeds would go only
+    to new collection items. Kendall''s policy is not to capitalize collections. What contribution revenue
+    should Kendall recognize for Year 1?'
+  choices:
+  - id: A
+    text: $50,000
+    rationale: Omits the donated food because Kendall will give it away. Contributed goods are recognized
+      at fair value when received, even if they will be distributed.
+  - id: B
+    text: $85,000
+    rationale: Omits the donated use of the warehouse. Contributed use of facilities is recognized at
+      fair value as revenue and expense.
+  - id: C
+    text: $115,000
+    rationale: Correct. $65,000 of food + $30,000 of donated facilities + $20,000 of shares.
+  - id: D
+    text: $155,000
+    rationale: Also recognizes the painting. An entity that does not capitalize a qualifying collection
+      does not recognize contributed collection items as revenue.
+  answer: C
+  explanation: 'Contributions of food, use of facilities and securities are recognized at fair value:
+    $65,000 + $30,000 + $20,000 = $115,000 (contributed nonfinancial assets are presented separately under
+    ASU 2020-07). Works of art added to a collection that meets the collection criteria need not be recognized,
+    and under Kendall''s policy they are not.'
+- stem: 'During Year 1, Linden Food Bank, a not-for-profit entity, receives: donated food with a fair
+    value of $25,000 to distribute; free use of a warehouse for the year, which would otherwise rent for
+    $36,000; publicly traded shares worth $10,000; and a painting worth $90,000 that it adds to a collection
+    held for public exhibition, which it protects and preserves, and whose sale proceeds would go only
+    to new collection items. Linden''s policy is not to capitalize collections. What contribution revenue
+    should Linden recognize for Year 1?'
+  choices:
+  - id: A
+    text: $35,000
+    rationale: Omits the donated use of the warehouse. Contributed use of facilities is recognized at
+      fair value as revenue and expense.
+  - id: B
+    text: $71,000
+    rationale: Correct. $25,000 of food + $36,000 of donated facilities + $10,000 of shares.
+  - id: C
+    text: $125,000
+    rationale: Recognizes the painting but omits the donated use of the warehouse. The collection item
+      is not recognized under Linden's policy, and contributed use of facilities is.
+  - id: D
+    text: $161,000
+    rationale: Also recognizes the painting. An entity that does not capitalize a qualifying collection
+      does not recognize contributed collection items as revenue.
+  answer: B
+  explanation: 'Contributions of food, use of facilities and securities are recognized at fair value:
+    $25,000 + $36,000 + $10,000 = $71,000 (contributed nonfinancial assets are presented separately under
+    ASU 2020-07). Works of art added to a collection that meets the collection criteria need not be recognized,
+    and under Linden''s policy they are not.'
+- stem: 'During Year 1, Maple Food Bank, a not-for-profit entity, receives: donated food with a fair value
+    of $50,000 to distribute; free use of a warehouse for the year, which would otherwise rent for $18,000;
+    publicly traded shares worth $30,000; and a painting worth $60,000 that it adds to a collection held
+    for public exhibition, which it protects and preserves, and whose sale proceeds would go only to new
+    collection items. Maple''s policy is not to capitalize collections. What contribution revenue should
+    Maple recognize for Year 1?'
+  choices:
+  - id: A
+    text: $48,000
+    rationale: Omits the donated food because Maple will give it away. Contributed goods are recognized
+      at fair value when received, even if they will be distributed.
+  - id: B
+    text: $80,000
+    rationale: Omits the donated use of the warehouse. Contributed use of facilities is recognized at
+      fair value as revenue and expense.
+  - id: C
+    text: $98,000
+    rationale: Correct. $50,000 of food + $18,000 of donated facilities + $30,000 of shares.
+  - id: D
+    text: $140,000
+    rationale: Recognizes the painting but omits the donated use of the warehouse. The collection item
+      is not recognized under Maple's policy, and contributed use of facilities is.
+  answer: C
+  explanation: 'Contributions of food, use of facilities and securities are recognized at fair value:
+    $50,000 + $18,000 + $30,000 = $98,000 (contributed nonfinancial assets are presented separately under
+    ASU 2020-07). Works of art added to a collection that meets the collection criteria need not be recognized,
+    and under Maple''s policy they are not.'

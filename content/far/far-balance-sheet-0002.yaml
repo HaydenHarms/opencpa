@@ -40,3 +40,85 @@ explanation: 'Current assets are those expected to be realized or consumed withi
   cycle). Reclassify to noncurrent: the $60,000 fund for bonds due in Year 5, the $50,000 officer loan
   due in Year 4, the $10,000 of insurance covering Year 3, and the $50,000 cash surrender value, which
   is a long-term investment. Current assets = $90,000 + $80,000 + $250,000 + $400,000 + $10,000 = $830,000.'
+variants:
+- stem: 'Lorne Co.''s draft December 31, Year 1, classified balance sheet reports total current assets
+    of $1,310,000: cash $220,000, trading debt securities $60,000, receivables $410,000, inventory $520,000,
+    prepaid insurance $30,000, and cash surrender value of officers'' life insurance $70,000. Supporting
+    documents show that the cash includes $80,000 the board set aside in a fund to retire bonds maturing
+    in Year 5; receivables include a $35,000 loan to an officer due in Year 4; and the prepaid insurance
+    is a two-year policy ($15,000 per year) that began January 1, Year 2, paid in December. After correcting
+    the draft, what are Lorne''s total current assets?'
+  choices:
+  - id: A
+    text: $1,095,000
+    rationale: Removes all of the prepaid insurance. The portion covering the next twelve months is a
+      current asset.
+  - id: B
+    text: $1,110,000
+    rationale: Correct. $1,310,000 − $80,000 bond fund − $35,000 officer loan − $15,000 second-year insurance
+      − $70,000 cash surrender value.
+  - id: C
+    text: $1,145,000
+    rationale: Leaves the $35,000 officer loan due in Year 4 in current receivables.
+  - id: D
+    text: $1,180,000
+    rationale: Leaves the $70,000 cash surrender value in current assets. It is a long-term investment.
+  answer: B
+  explanation: 'Current assets are those expected to be realized or consumed within a year (or the operating
+    cycle). Reclassify to noncurrent: the $80,000 fund for bonds due in Year 5, the $35,000 officer loan
+    due in Year 4, the $15,000 of insurance covering Year 3, and the $70,000 cash surrender value, which
+    is a long-term investment. Current assets = $140,000 + $60,000 + $375,000 + $520,000 + $15,000 = $1,110,000.'
+- stem: 'Marlow Co.''s draft December 31, Year 1, classified balance sheet reports total current assets
+    of $716,000: cash $90,000, trading debt securities $120,000, receivables $200,000, inventory $260,000,
+    prepaid insurance $16,000, and cash surrender value of officers'' life insurance $30,000. Supporting
+    documents show that the cash includes $40,000 the board set aside in a fund to retire bonds maturing
+    in Year 5; receivables include a $25,000 loan to an officer due in Year 4; and the prepaid insurance
+    is a two-year policy ($8,000 per year) that began January 1, Year 2, paid in December. After correcting
+    the draft, what are Marlow''s total current assets?'
+  choices:
+  - id: A
+    text: $613,000
+    rationale: Correct. $716,000 − $40,000 bond fund − $25,000 officer loan − $8,000 second-year insurance
+      − $30,000 cash surrender value.
+  - id: B
+    text: $638,000
+    rationale: Leaves the $25,000 officer loan due in Year 4 in current receivables.
+  - id: C
+    text: $643,000
+    rationale: Leaves the $30,000 cash surrender value in current assets. It is a long-term investment.
+  - id: D
+    text: $653,000
+    rationale: Leaves the $40,000 bond retirement fund in cash. Cash set aside to retire long-term debt
+      is not available for current operations.
+  answer: A
+  explanation: 'Current assets are those expected to be realized or consumed within a year (or the operating
+    cycle). Reclassify to noncurrent: the $40,000 fund for bonds due in Year 5, the $25,000 officer loan
+    due in Year 4, the $8,000 of insurance covering Year 3, and the $30,000 cash surrender value, which
+    is a long-term investment. Current assets = $50,000 + $120,000 + $175,000 + $260,000 + $8,000 = $613,000.'
+- stem: 'Nesbit Co.''s draft December 31, Year 1, classified balance sheet reports total current assets
+    of $1,664,000: cash $300,000, trading debt securities $50,000, receivables $500,000, inventory $700,000,
+    prepaid insurance $24,000, and cash surrender value of officers'' life insurance $90,000. Supporting
+    documents show that the cash includes $120,000 the board set aside in a fund to retire bonds maturing
+    in Year 5; receivables include a $60,000 loan to an officer due in Year 4; and the prepaid insurance
+    is a two-year policy ($12,000 per year) that began January 1, Year 2, paid in December. After correcting
+    the draft, what are Nesbit''s total current assets?'
+  choices:
+  - id: A
+    text: $1,370,000
+    rationale: Removes all of the prepaid insurance. The portion covering the next twelve months is a
+      current asset.
+  - id: B
+    text: $1,382,000
+    rationale: Correct. $1,664,000 − $120,000 bond fund − $60,000 officer loan − $12,000 second-year insurance
+      − $90,000 cash surrender value.
+  - id: C
+    text: $1,442,000
+    rationale: Leaves the $60,000 officer loan due in Year 4 in current receivables.
+  - id: D
+    text: $1,472,000
+    rationale: Leaves the $90,000 cash surrender value in current assets. It is a long-term investment.
+  answer: B
+  explanation: 'Current assets are those expected to be realized or consumed within a year (or the operating
+    cycle). Reclassify to noncurrent: the $120,000 fund for bonds due in Year 5, the $60,000 officer loan
+    due in Year 4, the $12,000 of insurance covering Year 3, and the $90,000 cash surrender value, which
+    is a long-term investment. Current assets = $180,000 + $50,000 + $440,000 + $700,000 + $12,000 = $1,382,000.'

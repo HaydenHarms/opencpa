@@ -38,3 +38,82 @@ explanation: The net operating loss carryforward gives rise to a deferred tax as
   = $84,000. Because Abbot expects to use the entire carryforward, no valuation allowance is needed, and
   the $84,000 is a deferred income tax benefit that offsets the pretax loss. The 80% limitation affects
   the timing of use, not the total, when future taxable income is sufficient.
+variants:
+- stem: In Year 1, Bexley Corp. has a pretax book loss and a taxable loss of $650,000, with no temporary
+    or permanent differences. Under current federal law the loss can be carried forward indefinitely but
+    not back, and in any future year it can offset only 80% of that year's taxable income. Bexley expects
+    enough future taxable income to use the whole loss and needs no valuation allowance. The enacted tax
+    rate is 21%. What income tax benefit should Bexley report in Year 1?
+  choices:
+  - id: A
+    text: $0
+    rationale: Recognizes no benefit because the loss cannot be carried back. A carryforward creates a
+      deferred tax asset when realization is more likely than not.
+  - id: B
+    text: $109,200
+    rationale: Applies the 80% limitation to the deferred tax asset. The limit affects how fast the loss
+      is used, not how much of it is used, when future income is sufficient.
+  - id: C
+    text: $136,500
+    rationale: Correct. Deferred tax asset $650,000 × 21% = $136,500, with a matching deferred tax benefit.
+  - id: D
+    text: $273,000
+    rationale: Records both a current tax refund and a deferred tax asset for the same loss. With no carryback,
+      the whole benefit is a deferred tax benefit.
+  answer: C
+  explanation: The net operating loss carryforward gives rise to a deferred tax asset of $650,000 × 21%
+    = $136,500. Because Bexley expects to use the entire carryforward, no valuation allowance is needed,
+    and the $136,500 is a deferred income tax benefit that offsets the pretax loss. The 80% limitation
+    affects the timing of use, not the total, when future taxable income is sufficient.
+- stem: In Year 1, Carrow Corp. has a pretax book loss and a taxable loss of $300,000, with no temporary
+    or permanent differences. Under current federal law the loss can be carried forward indefinitely but
+    not back, and in any future year it can offset only 80% of that year's taxable income. Carrow expects
+    enough future taxable income to use the whole loss and needs no valuation allowance. The enacted tax
+    rate is 25%. What income tax benefit should Carrow report in Year 1?
+  choices:
+  - id: A
+    text: $0
+    rationale: Recognizes no benefit because the loss cannot be carried back. A carryforward creates a
+      deferred tax asset when realization is more likely than not.
+  - id: B
+    text: $15,000
+    rationale: Recognizes a benefit only for the 20% of each future year's income the loss cannot offset.
+      The limit slows the loss's use; the whole loss is still used.
+  - id: C
+    text: $60,000
+    rationale: Applies the 80% limitation to the deferred tax asset. The limit affects how fast the loss
+      is used, not how much of it is used, when future income is sufficient.
+  - id: D
+    text: $75,000
+    rationale: Correct. Deferred tax asset $300,000 × 25% = $75,000, with a matching deferred tax benefit.
+  answer: D
+  explanation: The net operating loss carryforward gives rise to a deferred tax asset of $300,000 × 25%
+    = $75,000. Because Carrow expects to use the entire carryforward, no valuation allowance is needed,
+    and the $75,000 is a deferred income tax benefit that offsets the pretax loss. The 80% limitation
+    affects the timing of use, not the total, when future taxable income is sufficient.
+- stem: In Year 1, Denton Corp. has a pretax book loss and a taxable loss of $520,000, with no temporary
+    or permanent differences. Under current federal law the loss can be carried forward indefinitely but
+    not back, and in any future year it can offset only 80% of that year's taxable income. Denton expects
+    enough future taxable income to use the whole loss and needs no valuation allowance. The enacted tax
+    rate is 24%. What income tax benefit should Denton report in Year 1?
+  choices:
+  - id: A
+    text: $24,960
+    rationale: Recognizes a benefit only for the 20% of each future year's income the loss cannot offset.
+      The limit slows the loss's use; the whole loss is still used.
+  - id: B
+    text: $99,840
+    rationale: Applies the 80% limitation to the deferred tax asset. The limit affects how fast the loss
+      is used, not how much of it is used, when future income is sufficient.
+  - id: C
+    text: $124,800
+    rationale: Correct. Deferred tax asset $520,000 × 24% = $124,800, with a matching deferred tax benefit.
+  - id: D
+    text: $249,600
+    rationale: Records both a current tax refund and a deferred tax asset for the same loss. With no carryback,
+      the whole benefit is a deferred tax benefit.
+  answer: C
+  explanation: The net operating loss carryforward gives rise to a deferred tax asset of $520,000 × 24%
+    = $124,800. Because Denton expects to use the entire carryforward, no valuation allowance is needed,
+    and the $124,800 is a deferred income tax benefit that offsets the pretax loss. The 80% limitation
+    affects the timing of use, not the total, when future taxable income is sufficient.

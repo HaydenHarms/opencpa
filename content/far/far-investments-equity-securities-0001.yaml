@@ -37,3 +37,85 @@ explanation: 'Under the measurement alternative, the investment is carried at co
   for observable price changes in orderly transactions for identical or similar securities. June: adjust
   to $460,000 (a $60,000 gain in net income). November: impairment indicators require measuring the investment
   at fair value, $380,000 (an $80,000 loss in net income). Year-end carrying amount = $380,000.'
+variants:
+- stem: In January, Jolley Co. pays $250,000 for 8% of the shares of a private company whose shares have
+    no readily determinable fair value, and elects the measurement alternative. In June, the investee
+    sells identical shares to an unrelated investor in an orderly transaction at a price implying that
+    Jolley's shares are worth $310,000. In November, the investee loses its largest customer, which provided
+    35% of its revenue, and Jolley estimates the shares' fair value at $270,000. At what amount should
+    Jolley report the investment at year-end?
+  choices:
+  - id: A
+    text: $210,000
+    rationale: Measures the impairment from cost ($250,000 − $40,000). The June observable price change
+      had already raised the carrying amount to $310,000.
+  - id: B
+    text: $250,000
+    rationale: Keeps cost, ignoring both the observable price change and the impairment.
+  - id: C
+    text: $270,000
+    rationale: Correct. Adjusted up to $310,000 for the observable price change, then written down to
+      its $270,000 fair value when impaired.
+  - id: D
+    text: $310,000
+    rationale: Records the June observable price change but not the November impairment.
+  answer: C
+  explanation: 'Under the measurement alternative, the investment is carried at cost less impairment,
+    adjusted for observable price changes in orderly transactions for identical or similar securities.
+    June: adjust to $310,000 (a $60,000 gain in net income). November: impairment indicators require measuring
+    the investment at fair value, $270,000 (an $40,000 loss in net income). Year-end carrying amount =
+    $270,000.'
+- stem: In January, Kinsey Co. pays $600,000 for 4% of the shares of a private company whose shares have
+    no readily determinable fair value, and elects the measurement alternative. In June, the investee
+    sells identical shares to an unrelated investor in an orderly transaction at a price implying that
+    Kinsey's shares are worth $680,000. In November, the investee loses its largest customer, which provided
+    45% of its revenue, and Kinsey estimates the shares' fair value at $520,000. At what amount should
+    Kinsey report the investment at year-end?
+  choices:
+  - id: A
+    text: $440,000
+    rationale: Measures the impairment from cost ($600,000 − $160,000). The June observable price change
+      had already raised the carrying amount to $680,000.
+  - id: B
+    text: $520,000
+    rationale: Correct. Adjusted up to $680,000 for the observable price change, then written down to
+      its $520,000 fair value when impaired.
+  - id: C
+    text: $600,000
+    rationale: Keeps cost, ignoring both the observable price change and the impairment.
+  - id: D
+    text: $680,000
+    rationale: Records the June observable price change but not the November impairment.
+  answer: B
+  explanation: 'Under the measurement alternative, the investment is carried at cost less impairment,
+    adjusted for observable price changes in orderly transactions for identical or similar securities.
+    June: adjust to $680,000 (a $80,000 gain in net income). November: impairment indicators require measuring
+    the investment at fair value, $520,000 (an $160,000 loss in net income). Year-end carrying amount
+    = $520,000.'
+- stem: In January, Loftus Co. pays $150,000 for 10% of the shares of a private company whose shares have
+    no readily determinable fair value, and elects the measurement alternative. In June, the investee
+    sells identical shares to an unrelated investor in an orderly transaction at a price implying that
+    Loftus's shares are worth $190,000. In November, the investee loses its largest customer, which provided
+    30% of its revenue, and Loftus estimates the shares' fair value at $165,000. At what amount should
+    Loftus report the investment at year-end?
+  choices:
+  - id: A
+    text: $125,000
+    rationale: Measures the impairment from cost ($150,000 − $25,000). The June observable price change
+      had already raised the carrying amount to $190,000.
+  - id: B
+    text: $150,000
+    rationale: Keeps cost, ignoring both the observable price change and the impairment.
+  - id: C
+    text: $165,000
+    rationale: Correct. Adjusted up to $190,000 for the observable price change, then written down to
+      its $165,000 fair value when impaired.
+  - id: D
+    text: $190,000
+    rationale: Records the June observable price change but not the November impairment.
+  answer: C
+  explanation: 'Under the measurement alternative, the investment is carried at cost less impairment,
+    adjusted for observable price changes in orderly transactions for identical or similar securities.
+    June: adjust to $190,000 (a $40,000 gain in net income). November: impairment indicators require measuring
+    the investment at fair value, $165,000 (an $25,000 loss in net income). Year-end carrying amount =
+    $165,000.'

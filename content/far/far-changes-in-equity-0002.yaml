@@ -39,3 +39,85 @@ explanation: Three corrections. (1) The unrealized gain on AFS debt securities i
   income, accumulated separately from retained earnings. (2) A stock split effected by reducing par value
   requires no entry. (3) Dividends reduce retained earnings on the declaration date. Ending retained earnings
   = $800,000 + $250,000 − $40,000 = $1,010,000.
+variants:
+- stem: Gilbert Inc.'s draft Year 1 statement of changes in equity reports ending retained earnings of
+    $1,475,000, computed as beginning retained earnings of $1,200,000, plus net income of $380,000, plus
+    a $45,000 unrealized holding gain on available-for-sale debt securities, less $150,000 for a 2-for-1
+    stock split. Supporting documents show that the split was effected by halving the par value per share,
+    and that on December 15, Year 1, the board declared a $60,000 cash dividend payable on January 10,
+    Year 2, which the draft omits because it had not been paid. After correcting the draft, what is Gilbert's
+    ending retained earnings?
+  choices:
+  - id: A
+    text: $1,370,000
+    rationale: Removes the unrealized gain and records the dividend but still charges retained earnings
+      for the split. A split effected by halving par value needs no entry to retained earnings.
+  - id: B
+    text: $1,475,000
+    rationale: Accepts the draft.
+  - id: C
+    text: $1,520,000
+    rationale: Correct. $1,200,000 + $380,000 − $60,000 declared dividend.
+  - id: D
+    text: $1,580,000
+    rationale: Removes the split charge and the unrealized gain but omits the dividend. A dividend reduces
+      retained earnings when declared, not when paid.
+  answer: C
+  explanation: Three corrections. (1) The unrealized gain on AFS debt securities is other comprehensive
+    income, accumulated separately from retained earnings. (2) A stock split effected by reducing par
+    value requires no entry. (3) Dividends reduce retained earnings on the declaration date. Ending retained
+    earnings = $1,200,000 + $380,000 − $60,000 = $1,520,000.
+- stem: Ingle Inc.'s draft Year 1 statement of changes in equity reports ending retained earnings of $630,000,
+    computed as beginning retained earnings of $500,000, plus net income of $160,000, plus a $20,000 unrealized
+    holding gain on available-for-sale debt securities, less $50,000 for a 2-for-1 stock split. Supporting
+    documents show that the split was effected by halving the par value per share, and that on December
+    15, Year 1, the board declared a $35,000 cash dividend payable on January 10, Year 2, which the draft
+    omits because it had not been paid. After correcting the draft, what is Ingle's ending retained earnings?
+  choices:
+  - id: A
+    text: $575,000
+    rationale: Removes the unrealized gain and records the dividend but still charges retained earnings
+      for the split. A split effected by halving par value needs no entry to retained earnings.
+  - id: B
+    text: $625,000
+    rationale: Correct. $500,000 + $160,000 − $35,000 declared dividend.
+  - id: C
+    text: $645,000
+    rationale: Records the dividend and removes the split charge but leaves the $20,000 unrealized gain
+      in retained earnings. It belongs in accumulated other comprehensive income.
+  - id: D
+    text: $660,000
+    rationale: Removes the split charge and the unrealized gain but omits the dividend. A dividend reduces
+      retained earnings when declared, not when paid.
+  answer: B
+  explanation: Three corrections. (1) The unrealized gain on AFS debt securities is other comprehensive
+    income, accumulated separately from retained earnings. (2) A stock split effected by reducing par
+    value requires no entry. (3) Dividends reduce retained earnings on the declaration date. Ending retained
+    earnings = $500,000 + $160,000 − $35,000 = $625,000.
+- stem: Jessup Inc.'s draft Year 1 statement of changes in equity reports ending retained earnings of
+    $1,165,000, computed as beginning retained earnings of $950,000, plus net income of $300,000, plus
+    a $35,000 unrealized holding gain on available-for-sale debt securities, less $120,000 for a 2-for-1
+    stock split. Supporting documents show that the split was effected by halving the par value per share,
+    and that on December 15, Year 1, the board declared a $50,000 cash dividend payable on January 10,
+    Year 2, which the draft omits because it had not been paid. After correcting the draft, what is Jessup's
+    ending retained earnings?
+  choices:
+  - id: A
+    text: $1,165,000
+    rationale: Accepts the draft.
+  - id: B
+    text: $1,200,000
+    rationale: Correct. $950,000 + $300,000 − $50,000 declared dividend.
+  - id: C
+    text: $1,235,000
+    rationale: Records the dividend and removes the split charge but leaves the $35,000 unrealized gain
+      in retained earnings. It belongs in accumulated other comprehensive income.
+  - id: D
+    text: $1,250,000
+    rationale: Removes the split charge and the unrealized gain but omits the dividend. A dividend reduces
+      retained earnings when declared, not when paid.
+  answer: B
+  explanation: Three corrections. (1) The unrealized gain on AFS debt securities is other comprehensive
+    income, accumulated separately from retained earnings. (2) A stock split effected by reducing par
+    value requires no entry. (3) Dividends reduce retained earnings on the declaration date. Ending retained
+    earnings = $950,000 + $300,000 − $50,000 = $1,200,000.

@@ -36,3 +36,82 @@ explanation: 'The voucher gives a material right because the discount is not off
   so it is a separate performance obligation. Its standalone selling price reflects the discount and the
   likelihood of redemption: $500 × 40% × 80% = $160. Allocating the $1,000 price: product $1,000 × 1,000
   ÷ 1,160 = $862; voucher $138, recognized when redeemed or when it expires.'
+variants:
+- stem: Tarrant Co. sells a product for $2,000, its standalone selling price, and gives the customer a
+    voucher for 30% off any future purchase of up to $1,000 within a year. Tarrant offers no similar discount
+    to other customers. It expects 60% of vouchers to be redeemed, on purchases averaging $1,000. How
+    much revenue should Tarrant recognize when it delivers the product?
+  choices:
+  - id: A
+    text: $1,700
+    rationale: Subtracts the full $300 voucher value (30% × $1,000) without allocating the price or adjusting
+      for expected redemptions.
+  - id: B
+    text: $1,739
+    rationale: Leaves out the expected redemption rate. The voucher's standalone selling price reflects
+      the 60% of vouchers expected to be used.
+  - id: C
+    text: $1,820
+    rationale: Subtracts the voucher's $180 standalone selling price directly. The $2,000 price is allocated
+      between the product and the voucher by relative standalone selling price.
+  - id: D
+    text: $1,835
+    rationale: Correct. Voucher standalone selling price = $1,000 × 30% × 60% = $180; product revenue
+      = $2,000 × $2,000 ÷ $2,180.
+  answer: D
+  explanation: 'The voucher gives a material right because the discount is not offered to other customers,
+    so it is a separate performance obligation. Its standalone selling price reflects the discount and
+    the likelihood of redemption: $1,000 × 30% × 60% = $180. Allocating the $2,000 price: product $2,000
+    × 2,000 ÷ 2,180 = $1,835; voucher $165, recognized when redeemed or when it expires.'
+- stem: Upland Co. sells a product for $600, its standalone selling price, and gives the customer a voucher
+    for 50% off any future purchase of up to $300 within a year. Upland offers no similar discount to
+    other customers. It expects 70% of vouchers to be redeemed, on purchases averaging $300. How much
+    revenue should Upland recognize when it delivers the product?
+  choices:
+  - id: A
+    text: $450
+    rationale: Subtracts the full $150 voucher value (50% × $300) without allocating the price or adjusting
+      for expected redemptions.
+  - id: B
+    text: $495
+    rationale: Subtracts the voucher's $105 standalone selling price directly. The $600 price is allocated
+      between the product and the voucher by relative standalone selling price.
+  - id: C
+    text: $511
+    rationale: Correct. Voucher standalone selling price = $300 × 50% × 70% = $105; product revenue =
+      $600 × $600 ÷ $705.
+  - id: D
+    text: $600
+    rationale: Ignores the voucher. A discount not available to other customers is a material right, a
+      separate performance obligation.
+  answer: C
+  explanation: 'The voucher gives a material right because the discount is not offered to other customers,
+    so it is a separate performance obligation. Its standalone selling price reflects the discount and
+    the likelihood of redemption: $300 × 50% × 70% = $105. Allocating the $600 price: product $600 × 600
+    ÷ 705 = $511; voucher $89, recognized when redeemed or when it expires.'
+- stem: Vickery Co. sells a product for $1,500, its standalone selling price, and gives the customer a
+    voucher for 40% off any future purchase of up to $600 within a year. Vickery offers no similar discount
+    to other customers. It expects 50% of vouchers to be redeemed, on purchases averaging $600. How much
+    revenue should Vickery recognize when it delivers the product?
+  choices:
+  - id: A
+    text: $1,260
+    rationale: Subtracts the full $240 voucher value (40% × $600) without allocating the price or adjusting
+      for expected redemptions.
+  - id: B
+    text: $1,293
+    rationale: Leaves out the expected redemption rate. The voucher's standalone selling price reflects
+      the 50% of vouchers expected to be used.
+  - id: C
+    text: $1,380
+    rationale: Subtracts the voucher's $120 standalone selling price directly. The $1,500 price is allocated
+      between the product and the voucher by relative standalone selling price.
+  - id: D
+    text: $1,389
+    rationale: Correct. Voucher standalone selling price = $600 × 40% × 50% = $120; product revenue =
+      $1,500 × $1,500 ÷ $1,620.
+  answer: D
+  explanation: 'The voucher gives a material right because the discount is not offered to other customers,
+    so it is a separate performance obligation. Its standalone selling price reflects the discount and
+    the likelihood of redemption: $600 × 40% × 50% = $120. Allocating the $1,500 price: product $1,500
+    × 1,500 ÷ 1,620 = $1,389; voucher $111, recognized when redeemed or when it expires.'

@@ -35,3 +35,81 @@ explanation: 'Income available to common = $500,000 − 5% × $1,000,000 = $450,
   are deducted even if not declared). A stock dividend is applied retroactively to all shares outstanding
   before it: 100,000 × 1.10 × 12/12 = 110,000; 20,000 × 1.10 × 9/12 = 16,500; treasury shares −6,000 ×
   3/12 = −1,500. Weighted average = 125,000. Basic EPS = $450,000 ÷ 125,000 = $3.60.'
+variants:
+- stem: Draper Corp. had 200,000 common shares outstanding on January 1. It issued 40,000 shares for cash
+    on April 1, distributed a 5% stock dividend on July 1, and bought 12,000 shares as treasury stock
+    on October 1. Net income for the year is $900,000. Draper also has 6% cumulative preferred stock with
+    a par value of $2,000,000; no preferred dividends were declared this year. What is Draper's basic
+    earnings per share, rounded to the nearest cent?
+  choices:
+  - id: A
+    text: $3.27
+    rationale: Correct. ($900,000 − $120,000) ÷ 238,500 weighted-average shares.
+  - id: B
+    text: $3.35
+    rationale: Applies the stock dividend only from July 1 (233,000 weighted shares). A stock dividend
+      is applied retroactively to all shares outstanding before it.
+  - id: C
+    text: $3.44
+    rationale: Ignores the stock dividend (227,000 weighted shares). A stock dividend is applied retroactively
+      to all periods and shares before it.
+  - id: D
+    text: $3.77
+    rationale: Ignores the cumulative preferred dividends. For cumulative preferred stock, the current
+      year's dividend is deducted whether or not declared.
+  answer: A
+  explanation: 'Income available to common = $900,000 − 6% × $2,000,000 = $780,000 (cumulative dividends
+    are deducted even if not declared). A stock dividend is applied retroactively to all shares outstanding
+    before it: 200,000 × 1.05 × 12/12 = 210,000; 40,000 × 1.05 × 9/12 = 31,500; treasury shares −12,000
+    × 3/12 = −3,000. Weighted average = 238,500. Basic EPS = $780,000 ÷ 238,500 = $3.27.'
+- stem: Elgin Corp. had 150,000 common shares outstanding on January 1. It issued 30,000 shares for cash
+    on April 1, distributed a 20% stock dividend on July 1, and bought 9,000 shares as treasury stock
+    on October 1. Net income for the year is $600,000. Elgin also has 8% cumulative preferred stock with
+    a par value of $500,000; no preferred dividends were declared this year. What is Elgin's basic earnings
+    per share, rounded to the nearest cent?
+  choices:
+  - id: A
+    text: $2.71
+    rationale: Uses the 207,000 shares outstanding at year-end instead of the weighted average.
+  - id: B
+    text: $2.74
+    rationale: Correct. ($600,000 − $40,000) ÷ 204,750 weighted-average shares.
+  - id: C
+    text: $2.93
+    rationale: Ignores the cumulative preferred dividends. For cumulative preferred stock, the current
+      year's dividend is deducted whether or not declared.
+  - id: D
+    text: $2.97
+    rationale: Applies the stock dividend only from July 1 (188,250 weighted shares). A stock dividend
+      is applied retroactively to all shares outstanding before it.
+  answer: B
+  explanation: 'Income available to common = $600,000 − 8% × $500,000 = $560,000 (cumulative dividends
+    are deducted even if not declared). A stock dividend is applied retroactively to all shares outstanding
+    before it: 150,000 × 1.20 × 12/12 = 180,000; 30,000 × 1.20 × 9/12 = 27,000; treasury shares −9,000
+    × 3/12 = −2,250. Weighted average = 204,750. Basic EPS = $560,000 ÷ 204,750 = $2.74.'
+- stem: Fairley Corp. had 80,000 common shares outstanding on January 1. It issued 16,000 shares for cash
+    on April 1, distributed a 10% stock dividend on July 1, and bought 4,000 shares as treasury stock
+    on October 1. Net income for the year is $420,000. Fairley also has 7% cumulative preferred stock
+    with a par value of $600,000; no preferred dividends were declared this year. What is Fairley's basic
+    earnings per share, rounded to the nearest cent?
+  choices:
+  - id: A
+    text: $3.77
+    rationale: Correct. ($420,000 − $42,000) ÷ 100,200 weighted-average shares.
+  - id: B
+    text: $3.95
+    rationale: Applies the stock dividend only from July 1 (95,800 weighted shares). A stock dividend
+      is applied retroactively to all shares outstanding before it.
+  - id: C
+    text: $4.15
+    rationale: Ignores the stock dividend (91,000 weighted shares). A stock dividend is applied retroactively
+      to all periods and shares before it.
+  - id: D
+    text: $4.19
+    rationale: Ignores the cumulative preferred dividends. For cumulative preferred stock, the current
+      year's dividend is deducted whether or not declared.
+  answer: A
+  explanation: 'Income available to common = $420,000 − 7% × $600,000 = $378,000 (cumulative dividends
+    are deducted even if not declared). A stock dividend is applied retroactively to all shares outstanding
+    before it: 80,000 × 1.10 × 12/12 = 88,000; 16,000 × 1.10 × 9/12 = 13,200; treasury shares −4,000 ×
+    3/12 = −1,000. Weighted average = 100,200. Basic EPS = $378,000 ÷ 100,200 = $3.77.'

@@ -41,3 +41,94 @@ explanation: '(1) A guarantor recognizes a liability for the fair value of the o
   is recognized when the market price falls below the contract price: $30,000. (3) A reasonably possible
   loss is disclosed, not accrued. (4) The risk of future uninsured losses is not a liability until an
   event occurs. Total = $45,000.'
+variants:
+- stem: 'Eston Co. is preparing its year-end statements, which have not been issued. Its files show: (1)
+    on December 31, for a fee, Eston guaranteed a $800,000 bank loan of an unrelated supplier; the guarantee''s
+    fair value at inception was $24,000; the supplier is current on all its payments and has a strong
+    credit rating, and expected credit losses on the guarantee are immaterial; (2) Eston has a noncancelable,
+    unhedged commitment to buy materials next year for $350,000, and their market price has fallen to
+    $310,000; (3) in a $600,000 lawsuit against Eston, counsel believes Eston has strong defenses and
+    will more likely than not prevail, but cannot rule out an adverse verdict; and (4) Eston does not
+    insure its warehouses against fire, and none has occurred. What total liabilities should Eston recognize
+    for these matters?'
+  choices:
+  - id: A
+    text: $0
+    rationale: Treats every matter as a disclosure. A guarantee is recognized at fair value at inception
+      even when default is unlikely, and a loss on a firm purchase commitment is accrued.
+  - id: B
+    text: $24,000
+    rationale: Recognizes the guarantee but not the $40,000 loss on the purchase commitment.
+  - id: C
+    text: $64,000
+    rationale: Correct. The $24,000 guarantee obligation plus the $40,000 loss on the purchase commitment.
+  - id: D
+    text: $664,000
+    rationale: Also accrues the $600,000 lawsuit. A loss that is reasonably possible but not probable
+      is disclosed, not accrued.
+  answer: C
+  explanation: '(1) A guarantor recognizes a liability for the fair value of the obligation it undertakes
+    at inception ($24,000), even if payment is remote. (2) A loss on a noncancelable purchase commitment
+    is recognized when the market price falls below the contract price: $40,000. (3) A reasonably possible
+    loss is disclosed, not accrued. (4) The risk of future uninsured losses is not a liability until an
+    event occurs. Total = $64,000.'
+- stem: 'Farrell Co. is preparing its year-end statements, which have not been issued. Its files show:
+    (1) on December 31, for a fee, Farrell guaranteed a $300,000 bank loan of an unrelated supplier; the
+    guarantee''s fair value at inception was $9,000; the supplier is current on all its payments and has
+    a strong credit rating, and expected credit losses on the guarantee are immaterial; (2) Farrell has
+    a noncancelable, unhedged commitment to buy materials next year for $120,000, and their market price
+    has fallen to $105,000; (3) in a $250,000 lawsuit against Farrell, counsel believes Farrell has strong
+    defenses and will more likely than not prevail, but cannot rule out an adverse verdict; and (4) Farrell
+    does not insure its warehouses against fire, and none has occurred. What total liabilities should
+    Farrell recognize for these matters?'
+  choices:
+  - id: A
+    text: $0
+    rationale: Treats every matter as a disclosure. A guarantee is recognized at fair value at inception
+      even when default is unlikely, and a loss on a firm purchase commitment is accrued.
+  - id: B
+    text: $9,000
+    rationale: Recognizes the guarantee but not the $15,000 loss on the purchase commitment.
+  - id: C
+    text: $15,000
+    rationale: Recognizes the purchase commitment loss but not the guarantee. A guarantee creates a noncontingent
+      obligation to stand ready, recognized at fair value.
+  - id: D
+    text: $24,000
+    rationale: Correct. The $9,000 guarantee obligation plus the $15,000 loss on the purchase commitment.
+  answer: D
+  explanation: '(1) A guarantor recognizes a liability for the fair value of the obligation it undertakes
+    at inception ($9,000), even if payment is remote. (2) A loss on a noncancelable purchase commitment
+    is recognized when the market price falls below the contract price: $15,000. (3) A reasonably possible
+    loss is disclosed, not accrued. (4) The risk of future uninsured losses is not a liability until an
+    event occurs. Total = $24,000.'
+- stem: 'Gantry Co. is preparing its year-end statements, which have not been issued. Its files show:
+    (1) on December 31, for a fee, Gantry guaranteed a $1,200,000 bank loan of an unrelated supplier;
+    the guarantee''s fair value at inception was $30,000; the supplier is current on all its payments
+    and has a strong credit rating, and expected credit losses on the guarantee are immaterial; (2) Gantry
+    has a noncancelable, unhedged commitment to buy materials next year for $500,000, and their market
+    price has fallen to $440,000; (3) in a $900,000 lawsuit against Gantry, counsel believes Gantry has
+    strong defenses and will more likely than not prevail, but cannot rule out an adverse verdict; and
+    (4) Gantry does not insure its warehouses against fire, and none has occurred. What total liabilities
+    should Gantry recognize for these matters?'
+  choices:
+  - id: A
+    text: $30,000
+    rationale: Recognizes the guarantee but not the $60,000 loss on the purchase commitment.
+  - id: B
+    text: $60,000
+    rationale: Recognizes the purchase commitment loss but not the guarantee. A guarantee creates a noncontingent
+      obligation to stand ready, recognized at fair value.
+  - id: C
+    text: $90,000
+    rationale: Correct. The $30,000 guarantee obligation plus the $60,000 loss on the purchase commitment.
+  - id: D
+    text: $990,000
+    rationale: Also accrues the $900,000 lawsuit. A loss that is reasonably possible but not probable
+      is disclosed, not accrued.
+  answer: C
+  explanation: '(1) A guarantor recognizes a liability for the fair value of the obligation it undertakes
+    at inception ($30,000), even if payment is remote. (2) A loss on a noncancelable purchase commitment
+    is recognized when the market price falls below the contract price: $60,000. (3) A reasonably possible
+    loss is disclosed, not accrued. (4) The risk of future uninsured losses is not a liability until an
+    event occurs. Total = $90,000.'

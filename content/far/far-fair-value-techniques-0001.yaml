@@ -35,3 +35,82 @@ answer: B
 explanation: 'Fair value is a market-based measurement: it uses the assumptions market participants would
   use, not entity-specific synergies or the entity''s own cost of capital. Fair value = $100,000 × 3.7908
   = $379,080.'
+variants:
+- stem: Dalton Co. must measure the fair value of a patent using an income approach. Market participants
+    would expect the patent to generate cash flows of $80,000 at the end of each of the next six years
+    and would discount them at 9%. Dalton itself expects $95,000 a year because of synergies with its
+    other products, and its own cost of capital is 7%. Present value factors for a six-year ordinary annuity
+    are 4.4859 at 9% and 4.7665 at 7%; the five-year factor at 9% is 3.8897. What is the patent's fair
+    value?
+  choices:
+  - id: A
+    text: $358,872
+    rationale: Correct. $80,000 × 4.4859, using market participants' cash flows and discount rate.
+  - id: B
+    text: $381,320
+    rationale: Discounts market participants' cash flows at Dalton's own 7% cost of capital. Fair value
+      uses market participants' discount rate.
+  - id: C
+    text: $391,176
+    rationale: Treats the cash flows as received at the start of each year ($80,000 + $80,000 × 3.8897).
+      They arrive at the end of each year.
+  - id: D
+    text: $426,161
+    rationale: Uses Dalton's own expected cash flows, including entity-specific synergies. Fair value
+      reflects market participant assumptions.
+  answer: A
+  explanation: 'Fair value is a market-based measurement: it uses the assumptions market participants
+    would use, not entity-specific synergies or the entity''s own cost of capital. Fair value = $80,000
+    × 4.4859 = $358,872.'
+- stem: Ebert Co. must measure the fair value of a patent using an income approach. Market participants
+    would expect the patent to generate cash flows of $150,000 at the end of each of the next four years
+    and would discount them at 8%. Ebert itself expects $170,000 a year because of synergies with its
+    other products, and its own cost of capital is 11%. Present value factors for a four-year ordinary
+    annuity are 3.3121 at 8% and 3.1024 at 11%; the three-year factor at 8% is 2.5771. What is the patent's
+    fair value?
+  choices:
+  - id: A
+    text: $465,360
+    rationale: Discounts market participants' cash flows at Ebert's own 11% cost of capital. Fair value
+      uses market participants' discount rate.
+  - id: B
+    text: $496,815
+    rationale: Correct. $150,000 × 3.3121, using market participants' cash flows and discount rate.
+  - id: C
+    text: $527,408
+    rationale: Uses Ebert's own expected cash flows and its own 11% cost of capital. Fair value uses market
+      participants' cash flows and discount rate.
+  - id: D
+    text: $536,565
+    rationale: Treats the cash flows as received at the start of each year ($150,000 + $150,000 × 2.5771).
+      They arrive at the end of each year.
+  answer: B
+  explanation: 'Fair value is a market-based measurement: it uses the assumptions market participants
+    would use, not entity-specific synergies or the entity''s own cost of capital. Fair value = $150,000
+    × 3.3121 = $496,815.'
+- stem: Grayson Co. must measure the fair value of a patent using an income approach. Market participants
+    would expect the patent to generate cash flows of $60,000 at the end of each of the next five years
+    and would discount them at 12%. Grayson itself expects $64,000 a year because of synergies with its
+    other products, and its own cost of capital is 10%. Present value factors for a five-year ordinary
+    annuity are 3.6048 at 12% and 3.7908 at 10%; the four-year factor at 12% is 3.0373. What is the patent's
+    fair value?
+  choices:
+  - id: A
+    text: $216,288
+    rationale: Correct. $60,000 × 3.6048, using market participants' cash flows and discount rate.
+  - id: B
+    text: $227,448
+    rationale: Discounts market participants' cash flows at Grayson's own 10% cost of capital. Fair value
+      uses market participants' discount rate.
+  - id: C
+    text: $230,707
+    rationale: Uses Grayson's own expected cash flows, including entity-specific synergies. Fair value
+      reflects market participant assumptions.
+  - id: D
+    text: $242,611
+    rationale: Uses Grayson's own expected cash flows and its own 10% cost of capital. Fair value uses
+      market participants' cash flows and discount rate.
+  answer: A
+  explanation: 'Fair value is a market-based measurement: it uses the assumptions market participants
+    would use, not entity-specific synergies or the entity''s own cost of capital. Fair value = $60,000
+    × 3.6048 = $216,288.'

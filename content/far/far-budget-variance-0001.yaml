@@ -36,3 +36,85 @@ explanation: 'The flexible budget restates the budget at the actual 11,000 units
   − flexible $100,000 = $5,000 unfavorable (revenue $11,000 F, variable costs $11,000 U, fixed costs $5,000
   U). The $15,000 favorable static-budget variance splits into this $5,000 U and a $20,000 F sales-volume
   variance.'
+variants:
+- stem: 'Orwell Co.''s static budget for Year 1 was based on 20,000 units: revenue $800,000, variable
+    costs $500,000, and fixed costs $200,000, for operating income of $100,000. Orwell actually sold 18,000
+    units, with revenue of $756,000, variable costs of $459,000, and fixed costs of $190,000, for operating
+    income of $107,000. What is the flexible-budget variance for operating income?'
+  choices:
+  - id: A
+    text: $7,000 favorable
+    rationale: Compares actual results with the static budget. That static-budget variance mixes the effect
+      of selling fewer units with the flexible-budget variance.
+  - id: B
+    text: $30,000 unfavorable
+    rationale: 'Computes the sales-volume variance: 2,000 fewer units × the $15 budgeted contribution
+      margin.'
+  - id: C
+    text: $37,000 favorable
+    rationale: Correct. The flexible budget for 18,000 units is 18,000 × $15 − $200,000 = $70,000; actual
+      operating income of $107,000 is $37,000 higher.
+  - id: D
+    text: $37,000 unfavorable
+    rationale: Gets the amount right but the direction wrong. Actual operating income is above the flexible
+      budget.
+  answer: C
+  explanation: 'The flexible budget restates the budget at the actual 18,000 units: revenue $720,000,
+    variable costs $450,000, fixed costs $200,000, operating income $70,000. Flexible-budget variance
+    = actual $107,000 − flexible $70,000 = $37,000 favorable (revenue $36,000 F, variable costs $9,000
+    U, fixed costs $10,000 F). The $7,000 favorable static-budget variance splits into this $37,000 F
+    and a $30,000 U sales-volume variance.'
+- stem: 'Pell Co.''s static budget for Year 1 was based on 5,000 units: revenue $400,000, variable costs
+    $250,000, and fixed costs $90,000, for operating income of $60,000. Pell actually sold 6,000 units,
+    with revenue of $474,000, variable costs of $306,000, and fixed costs of $88,000, for operating income
+    of $80,000. What is the flexible-budget variance for operating income?'
+  choices:
+  - id: A
+    text: $6,000 unfavorable
+    rationale: Compares only actual revenue with flexible-budget revenue ($480,000). The flexible-budget
+      variance for operating income includes the cost variances too.
+  - id: B
+    text: $10,000 unfavorable
+    rationale: Correct. The flexible budget for 6,000 units is 6,000 × $30 − $90,000 = $90,000; actual
+      operating income of $80,000 is $10,000 lower.
+  - id: C
+    text: $20,000 favorable
+    rationale: Compares actual results with the static budget. That static-budget variance mixes the effect
+      of selling more units with the flexible-budget variance.
+  - id: D
+    text: $30,000 favorable
+    rationale: 'Computes the sales-volume variance: 1,000 extra units × the $30 budgeted contribution
+      margin.'
+  answer: B
+  explanation: 'The flexible budget restates the budget at the actual 6,000 units: revenue $480,000, variable
+    costs $300,000, fixed costs $90,000, operating income $90,000. Flexible-budget variance = actual $80,000
+    − flexible $90,000 = $10,000 unfavorable (revenue $6,000 U, variable costs $6,000 U, fixed costs $2,000
+    F). The $20,000 favorable static-budget variance splits into this $10,000 U and a $30,000 F sales-volume
+    variance.'
+- stem: 'Quade Co.''s static budget for Year 1 was based on 8,000 units: revenue $480,000, variable costs
+    $288,000, and fixed costs $100,000, for operating income of $92,000. Quade actually sold 9,000 units,
+    with revenue of $549,000, variable costs of $333,000, and fixed costs of $104,000, for operating income
+    of $112,000. What is the flexible-budget variance for operating income?'
+  choices:
+  - id: A
+    text: $4,000 favorable
+    rationale: Gets the amount right but the direction wrong. Actual operating income is below the flexible
+      budget.
+  - id: B
+    text: $4,000 unfavorable
+    rationale: Correct. The flexible budget for 9,000 units is 9,000 × $24 − $100,000 = $116,000; actual
+      operating income of $112,000 is $4,000 lower.
+  - id: C
+    text: $9,000 favorable
+    rationale: Compares only actual revenue with flexible-budget revenue ($540,000). The flexible-budget
+      variance for operating income includes the cost variances too.
+  - id: D
+    text: $24,000 favorable
+    rationale: 'Computes the sales-volume variance: 1,000 extra units × the $24 budgeted contribution
+      margin.'
+  answer: B
+  explanation: 'The flexible budget restates the budget at the actual 9,000 units: revenue $540,000, variable
+    costs $324,000, fixed costs $100,000, operating income $116,000. Flexible-budget variance = actual
+    $112,000 − flexible $116,000 = $4,000 unfavorable (revenue $9,000 F, variable costs $9,000 U, fixed
+    costs $4,000 U). The $20,000 favorable static-budget variance splits into this $4,000 U and a $24,000
+    F sales-volume variance.'

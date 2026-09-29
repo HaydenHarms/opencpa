@@ -38,3 +38,91 @@ explanation: 'A change in debt terms is an extinguishment if the present value o
   10% from the present value of the remaining original cash flows. New: $50,000 × 3.9927 = $199,635 +
   $1,000,000 × 0.6806 = $680,600 + $20,000 fee = $900,235. Old: $1,000,000. Difference 9.98% < 10%, so
   it is a modification: the fee is amortized as an adjustment of interest over the remaining term.'
+variants:
+- stem: Ashford Co. owes a bank $2,000,000 on a note with 4 years remaining and 7% interest paid annually;
+    the note's carrying amount is $2,000,000. The bank agrees to cut the rate to 4%, with the principal
+    and maturity unchanged, and Ashford pays the bank a $30,000 fee to modify the note. Ashford is not
+    experiencing financial difficulty. At 7%, the present value factors for 4 periods are 3.3872 for an
+    ordinary annuity and 0.7629 for a single sum. By what percentage do the present value of the new cash
+    flows and the present value of the old cash flows differ, and how is the change accounted for?
+  choices:
+  - id: A
+    text: 3.00% change; modification
+    rationale: Compares the interest rates (7% − 4%) instead of the present values of the cash flows.
+  - id: B
+    text: 8.20% change; modification
+    rationale: Compares undiscounted cash flows ($2,350,000 against $2,560,000). The test discounts both
+      at the original effective rate.
+  - id: C
+    text: 8.66% change; modification
+    rationale: 'Correct. New cash flows: $80,000 × 3.3872 + $2,000,000 × 0.7629 + $30,000 fee = $1,826,776,
+      8.66% below $2,000,000.'
+  - id: D
+    text: 10.16% change; extinguishment
+    rationale: Leaves out the $30,000 fee paid to the lender, which is part of the new debt's cash flows
+      in the 10% test.
+  answer: C
+  explanation: 'A change in debt terms is an extinguishment if the present value of the new cash flows,
+    including fees paid to the creditor and discounted at the original effective rate, differs by at least
+    10% from the present value of the remaining original cash flows. New: $80,000 × 3.3872 = $270,976
+    + $2,000,000 × 0.7629 = $1,525,800 + $30,000 fee = $1,826,776. Old: $2,000,000. Difference 8.66% <
+    10%, so it is a modification: the fee is amortized as an adjustment of interest over the remaining
+    term.'
+- stem: Brandt Co. owes a bank $500,000 on a note with 6 years remaining and 9% interest paid annually;
+    the note's carrying amount is $500,000. The bank agrees to cut the rate to 4%, with the principal
+    and maturity unchanged, and Brandt pays the bank a $5,000 fee to modify the note. Brandt is not experiencing
+    financial difficulty. At 9%, the present value factors for 6 periods are 4.4859 for an ordinary annuity
+    and 0.5963 for a single sum. By what percentage do the present value of the new cash flows and the
+    present value of the old cash flows differ, and how is the change accounted for?
+  choices:
+  - id: A
+    text: 5.00% change; modification
+    rationale: Compares the interest rates (9% − 4%) instead of the present values of the cash flows.
+  - id: B
+    text: 18.83% change; extinguishment
+    rationale: Compares undiscounted cash flows ($625,000 against $770,000). The test discounts both at
+      the original effective rate.
+  - id: C
+    text: 21.43% change; extinguishment
+    rationale: 'Correct. New cash flows: $20,000 × 4.4859 + $500,000 × 0.5963 + $5,000 fee = $392,868,
+      21.43% below $500,000.'
+  - id: D
+    text: 22.43% change; extinguishment
+    rationale: Leaves out the $5,000 fee paid to the lender, which is part of the new debt's cash flows
+      in the 10% test.
+  answer: C
+  explanation: 'A change in debt terms is an extinguishment if the present value of the new cash flows,
+    including fees paid to the creditor and discounted at the original effective rate, differs by at least
+    10% from the present value of the remaining original cash flows. New: $20,000 × 4.4859 = $89,718 +
+    $500,000 × 0.5963 = $298,150 + $5,000 fee = $392,868. Old: $500,000. Difference 21.43% ≥ 10%, so it
+    is an extinguishment: the old note is derecognized, the new note is recorded at fair value, and the
+    fee is included in the gain or loss on extinguishment.'
+- stem: Colby Co. owes a bank $1,500,000 on a note with 5 years remaining and 6% interest paid annually;
+    the note's carrying amount is $1,500,000. The bank agrees to cut the rate to 4%, with the principal
+    and maturity unchanged, and Colby pays the bank a $30,000 fee to modify the note. Colby is not experiencing
+    financial difficulty. At 6%, the present value factors for 5 periods are 4.2124 for an ordinary annuity
+    and 0.7473 for a single sum. By what percentage do the present value of the new cash flows and the
+    present value of the old cash flows differ, and how is the change accounted for?
+  choices:
+  - id: A
+    text: 2.00% change; modification
+    rationale: Compares the interest rates (6% − 4%) instead of the present values of the cash flows.
+  - id: B
+    text: 6.42% change; modification
+    rationale: 'Correct. New cash flows: $60,000 × 4.2124 + $1,500,000 × 0.7473 + $30,000 fee = $1,403,694,
+      6.42% below $1,500,000.'
+  - id: C
+    text: 8.42% change; modification
+    rationale: Leaves out the $30,000 fee paid to the lender, which is part of the new debt's cash flows
+      in the 10% test.
+  - id: D
+    text: 10.42% change; extinguishment
+    rationale: Subtracts the $30,000 fee from the new cash flows. A fee the borrower pays the lender adds
+      to the new debt's cash flows.
+  answer: B
+  explanation: 'A change in debt terms is an extinguishment if the present value of the new cash flows,
+    including fees paid to the creditor and discounted at the original effective rate, differs by at least
+    10% from the present value of the remaining original cash flows. New: $60,000 × 4.2124 = $252,744
+    + $1,500,000 × 0.7473 = $1,120,950 + $30,000 fee = $1,403,694. Old: $1,500,000. Difference 6.42% <
+    10%, so it is a modification: the fee is amortized as an adjustment of interest over the remaining
+    term.'

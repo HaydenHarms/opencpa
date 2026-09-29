@@ -36,3 +36,83 @@ explanation: Pollard should have expensed $12,000 a year. Year 1 expense was ove
   Year 1 net income was understated by $18,000 after tax, and January 1, Year 2, retained earnings is
   increased by $18,000 as a prior-period adjustment (with prepaid insurance of $24,000). Year 2 then records
   $12,000 of insurance expense, reducing Year 2 net income by $9,000 after tax.
+variants:
+- stem: On January 1, Year 1, Quimby Co. paid $60,000 for a four-year insurance policy and charged the
+    full amount to Year 1 insurance expense; Year 1 statements were issued that way. Before closing its
+    Year 2 books, Quimby discovers the error. It has recorded no insurance expense in Year 2. Quimby's
+    tax rate is 21% for all effects, and it presents single-year statements. What are the effects of correcting
+    the error?
+  choices:
+  - id: A
+    text: $35,550 increase to January 1, Year 2, retained earnings; $11,850 decrease to Year 2 net income
+    rationale: Correct. Year 1 expense was overstated by $45,000 ($35,550 after tax); Year 2 needs $15,000
+      of expense ($11,850 after tax).
+  - id: B
+    text: $35,550 increase to January 1, Year 2, retained earnings; $11,850 increase to Year 2 net income
+    rationale: Gets the prior-period adjustment right but treats the Year 2 insurance expense as an increase
+      to income. Recording the expense lowers Year 2 net income.
+  - id: C
+    text: $45,000 increase to January 1, Year 2, retained earnings; $15,000 decrease to Year 2 net income
+    rationale: Leaves out the 21% tax effect.
+  - id: D
+    text: $47,400 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Treats all $60,000 as overstated Year 1 expense. One year of coverage, $15,000, was a proper
+      Year 1 expense.
+  answer: A
+  explanation: Quimby should have expensed $15,000 a year. Year 1 expense was overstated by $45,000, so
+    Year 1 net income was understated by $35,550 after tax, and January 1, Year 2, retained earnings is
+    increased by $35,550 as a prior-period adjustment (with prepaid insurance of $45,000). Year 2 then
+    records $15,000 of insurance expense, reducing Year 2 net income by $11,850 after tax.
+- stem: On January 1, Year 1, Radley Co. paid $48,000 for a two-year insurance policy and charged the
+    full amount to Year 1 insurance expense; Year 1 statements were issued that way. Before closing its
+    Year 2 books, Radley discovers the error. It has recorded no insurance expense in Year 2. Radley's
+    tax rate is 30% for all effects, and it presents single-year statements. What are the effects of correcting
+    the error?
+  choices:
+  - id: A
+    text: $16,800 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
+      of the policy, $24,000, belongs in Year 2.
+  - id: B
+    text: $16,800 increase to January 1, Year 2, retained earnings; $16,800 decrease to Year 2 net income
+    rationale: Correct. Year 1 expense was overstated by $24,000 ($16,800 after tax); Year 2 needs $24,000
+      of expense ($16,800 after tax).
+  - id: C
+    text: $24,000 increase to January 1, Year 2, retained earnings; $24,000 decrease to Year 2 net income
+    rationale: Leaves out the 30% tax effect.
+  - id: D
+    text: $33,600 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Treats all $48,000 as overstated Year 1 expense. One year of coverage, $24,000, was a proper
+      Year 1 expense.
+  answer: B
+  explanation: Radley should have expensed $24,000 a year. Year 1 expense was overstated by $24,000, so
+    Year 1 net income was understated by $16,800 after tax, and January 1, Year 2, retained earnings is
+    increased by $16,800 as a prior-period adjustment (with prepaid insurance of $24,000). Year 2 then
+    records $24,000 of insurance expense, reducing Year 2 net income by $16,800 after tax.
+- stem: On January 1, Year 1, Saxon Co. paid $90,000 for a five-year insurance policy and charged the
+    full amount to Year 1 insurance expense; Year 1 statements were issued that way. Before closing its
+    Year 2 books, Saxon discovers the error. It has recorded no insurance expense in Year 2. Saxon's tax
+    rate is 25% for all effects, and it presents single-year statements. What are the effects of correcting
+    the error?
+  choices:
+  - id: A
+    text: $54,000 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
+      of the policy, $18,000, belongs in Year 2.
+  - id: B
+    text: $54,000 increase to January 1, Year 2, retained earnings; $13,500 decrease to Year 2 net income
+    rationale: Correct. Year 1 expense was overstated by $72,000 ($54,000 after tax); Year 2 needs $18,000
+      of expense ($13,500 after tax).
+  - id: C
+    text: $54,000 increase to January 1, Year 2, retained earnings; $13,500 increase to Year 2 net income
+    rationale: Gets the prior-period adjustment right but treats the Year 2 insurance expense as an increase
+      to income. Recording the expense lowers Year 2 net income.
+  - id: D
+    text: $67,500 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Treats all $90,000 as overstated Year 1 expense. One year of coverage, $18,000, was a proper
+      Year 1 expense.
+  answer: B
+  explanation: Saxon should have expensed $18,000 a year. Year 1 expense was overstated by $72,000, so
+    Year 1 net income was understated by $54,000 after tax, and January 1, Year 2, retained earnings is
+    increased by $54,000 as a prior-period adjustment (with prepaid insurance of $72,000). Year 2 then
+    records $18,000 of insurance expense, reducing Year 2 net income by $13,500 after tax.

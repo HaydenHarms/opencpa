@@ -35,3 +35,81 @@ explanation: The repairs should have been expensed in Year 1. Year 1 income was 
   − $12,000 = $48,000 before tax, $36,000 after tax, so January 1, Year 2, retained earnings is reduced
   by $36,000 as a prior-period adjustment. The $12,000 of Year 2 depreciation on the capitalized repairs
   is reversed, raising Year 2 pretax income by $12,000 and net income by $9,000.
+variants:
+- stem: In Year 1, Ulster Co. capitalized $90,000 of routine repair costs as equipment and recorded $15,000
+    of depreciation on it (6-year life). Before closing its Year 2 books, Ulster discovers the error;
+    it has already recorded another $15,000 of Year 2 depreciation on the capitalized amount. Ulster's
+    tax rate is 21% for all effects, and it presents single-year statements. What are the effects of correcting
+    the error?
+  choices:
+  - id: A
+    text: $59,250 decrease to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Gets the prior-period adjustment right but leaves the $15,000 of Year 2 depreciation on
+      the repairs in Year 2 expense.
+  - id: B
+    text: $59,250 decrease to January 1, Year 2, retained earnings; $11,850 decrease to Year 2 net income
+    rationale: Gets the prior-period adjustment right but treats reversing the Year 2 depreciation as
+      a decrease. Removing an expense raises Year 2 net income.
+  - id: C
+    text: $59,250 decrease to January 1, Year 2, retained earnings; $11,850 increase to Year 2 net income
+    rationale: Correct. Year 1 was overstated by ($90,000 − $15,000) × 79%; reversing Year 2's $15,000
+      of depreciation raises Year 2 income by $11,850.
+  - id: D
+    text: $71,100 decrease to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Ignores the Year 1 depreciation already recorded; the prior-period effect is net of it.
+  answer: C
+  explanation: The repairs should have been expensed in Year 1. Year 1 income was overstated by $90,000
+    − $15,000 = $75,000 before tax, $59,250 after tax, so January 1, Year 2, retained earnings is reduced
+    by $59,250 as a prior-period adjustment. The $15,000 of Year 2 depreciation on the capitalized repairs
+    is reversed, raising Year 2 pretax income by $15,000 and net income by $11,850.
+- stem: In Year 1, Vardon Co. capitalized $40,000 of routine repair costs as equipment and recorded $10,000
+    of depreciation on it (4-year life). Before closing its Year 2 books, Vardon discovers the error;
+    it has already recorded another $10,000 of Year 2 depreciation on the capitalized amount. Vardon's
+    tax rate is 30% for all effects, and it presents single-year statements. What are the effects of correcting
+    the error?
+  choices:
+  - id: A
+    text: $21,000 decrease to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Gets the prior-period adjustment right but leaves the $10,000 of Year 2 depreciation on
+      the repairs in Year 2 expense.
+  - id: B
+    text: $21,000 decrease to January 1, Year 2, retained earnings; $7,000 decrease to Year 2 net income
+    rationale: Gets the prior-period adjustment right but treats reversing the Year 2 depreciation as
+      a decrease. Removing an expense raises Year 2 net income.
+  - id: C
+    text: $21,000 decrease to January 1, Year 2, retained earnings; $7,000 increase to Year 2 net income
+    rationale: Correct. Year 1 was overstated by ($40,000 − $10,000) × 70%; reversing Year 2's $10,000
+      of depreciation raises Year 2 income by $7,000.
+  - id: D
+    text: $30,000 decrease to January 1, Year 2, retained earnings; $10,000 increase to Year 2 net income
+    rationale: Leaves out the 30% tax effect on both amounts.
+  answer: C
+  explanation: The repairs should have been expensed in Year 1. Year 1 income was overstated by $40,000
+    − $10,000 = $30,000 before tax, $21,000 after tax, so January 1, Year 2, retained earnings is reduced
+    by $21,000 as a prior-period adjustment. The $10,000 of Year 2 depreciation on the capitalized repairs
+    is reversed, raising Year 2 pretax income by $10,000 and net income by $7,000.
+- stem: In Year 1, Wexler Co. capitalized $75,000 of routine repair costs as equipment and recorded $15,000
+    of depreciation on it (5-year life). Before closing its Year 2 books, Wexler discovers the error;
+    it has already recorded another $15,000 of Year 2 depreciation on the capitalized amount. Wexler's
+    tax rate is 25% for all effects, and it presents single-year statements. What are the effects of correcting
+    the error?
+  choices:
+  - id: A
+    text: $45,000 decrease to January 1, Year 2, retained earnings; $11,250 decrease to Year 2 net income
+    rationale: Gets the prior-period adjustment right but treats reversing the Year 2 depreciation as
+      a decrease. Removing an expense raises Year 2 net income.
+  - id: B
+    text: $45,000 decrease to January 1, Year 2, retained earnings; $11,250 increase to Year 2 net income
+    rationale: Correct. Year 1 was overstated by ($75,000 − $15,000) × 75%; reversing Year 2's $15,000
+      of depreciation raises Year 2 income by $11,250.
+  - id: C
+    text: $56,250 decrease to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Ignores the Year 1 depreciation already recorded; the prior-period effect is net of it.
+  - id: D
+    text: $60,000 decrease to January 1, Year 2, retained earnings; $15,000 increase to Year 2 net income
+    rationale: Leaves out the 25% tax effect on both amounts.
+  answer: B
+  explanation: The repairs should have been expensed in Year 1. Year 1 income was overstated by $75,000
+    − $15,000 = $60,000 before tax, $45,000 after tax, so January 1, Year 2, retained earnings is reduced
+    by $45,000 as a prior-period adjustment. The $15,000 of Year 2 depreciation on the capitalized repairs
+    is reversed, raising Year 2 pretax income by $15,000 and net income by $11,250.

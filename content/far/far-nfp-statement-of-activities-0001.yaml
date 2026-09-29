@@ -38,3 +38,85 @@ explanation: 'Net assets without donor restrictions increase by unrestricted con
   program service fees ($200,000), releases from restrictions ($150,000) and net investment return ($20,000),
   and decrease by all expenses ($780,000): a $90,000 increase. The $100,000 of restricted contributions
   increases net assets with donor restrictions.'
+variants:
+- stem: 'For Year 1, Dogwood Clinic, a not-for-profit entity, reports: contributions without donor restrictions
+    of $700,000; contributions with donor restrictions of $150,000; program service fees of $260,000;
+    net assets released from donor restrictions of $180,000; investment return on unrestricted investments,
+    net of external investment expenses, of $35,000; and expenses of $1,040,000 ($820,000 for programs,
+    $150,000 for management and general, and $70,000 for fundraising). What is the change in Dogwood''s
+    net assets without donor restrictions for Year 1?'
+  choices:
+  - id: A
+    text: $45,000 decrease
+    rationale: Leaves out the $180,000 released from donor restrictions. Releases increase net assets
+      without donor restrictions.
+  - id: B
+    text: $100,000 increase
+    rationale: Leaves out the $35,000 of net investment return. Return on unrestricted investments increases
+      net assets without donor restrictions.
+  - id: C
+    text: $135,000 increase
+    rationale: Correct. $700,000 + $260,000 + $180,000 released + $35,000 − $1,040,000.
+  - id: D
+    text: $285,000 increase
+    rationale: Also counts the $150,000 of restricted contributions. They increase net assets with donor
+      restrictions until released.
+  answer: C
+  explanation: 'Net assets without donor restrictions increase by unrestricted contributions ($700,000),
+    program service fees ($260,000), releases from restrictions ($180,000) and net investment return ($35,000),
+    and decrease by all expenses ($1,040,000): a $135,000 increase. The $150,000 of restricted contributions
+    increases net assets with donor restrictions.'
+- stem: 'For Year 1, Evergreen Clinic, a not-for-profit entity, reports: contributions without donor restrictions
+    of $400,000; contributions with donor restrictions of $80,000; program service fees of $150,000; net
+    assets released from donor restrictions of $120,000; investment return on unrestricted investments,
+    net of external investment expenses, of $25,000; and expenses of $670,000 ($520,000 for programs,
+    $110,000 for management and general, and $40,000 for fundraising). What is the change in Evergreen''s
+    net assets without donor restrictions for Year 1?'
+  choices:
+  - id: A
+    text: $25,000 increase
+    rationale: Correct. $400,000 + $150,000 + $120,000 released + $25,000 − $670,000.
+  - id: B
+    text: $95,000 decrease
+    rationale: Leaves out the $120,000 released from donor restrictions. Releases increase net assets
+      without donor restrictions.
+  - id: C
+    text: $105,000 increase
+    rationale: Also counts the $80,000 of restricted contributions. They increase net assets with donor
+      restrictions until released.
+  - id: D
+    text: $175,000 increase
+    rationale: Subtracts only the $520,000 of program expenses. Management and general and fundraising
+      expenses also reduce net assets without donor restrictions.
+  answer: A
+  explanation: 'Net assets without donor restrictions increase by unrestricted contributions ($400,000),
+    program service fees ($150,000), releases from restrictions ($120,000) and net investment return ($25,000),
+    and decrease by all expenses ($670,000): a $25,000 increase. The $80,000 of restricted contributions
+    increases net assets with donor restrictions.'
+- stem: 'For Year 1, Foxglove Clinic, a not-for-profit entity, reports: contributions without donor restrictions
+    of $600,000; contributions with donor restrictions of $120,000; program service fees of $240,000;
+    net assets released from donor restrictions of $100,000; investment return on unrestricted investments,
+    net of external investment expenses, of $30,000; and expenses of $920,000 ($700,000 for programs,
+    $140,000 for management and general, and $80,000 for fundraising). What is the change in Foxglove''s
+    net assets without donor restrictions for Year 1?'
+  choices:
+  - id: A
+    text: $20,000 increase
+    rationale: Leaves out the $30,000 of net investment return. Return on unrestricted investments increases
+      net assets without donor restrictions.
+  - id: B
+    text: $50,000 increase
+    rationale: Correct. $600,000 + $240,000 + $100,000 released + $30,000 − $920,000.
+  - id: C
+    text: $170,000 increase
+    rationale: Also counts the $120,000 of restricted contributions. They increase net assets with donor
+      restrictions until released.
+  - id: D
+    text: $270,000 increase
+    rationale: Subtracts only the $700,000 of program expenses. Management and general and fundraising
+      expenses also reduce net assets without donor restrictions.
+  answer: B
+  explanation: 'Net assets without donor restrictions increase by unrestricted contributions ($600,000),
+    program service fees ($240,000), releases from restrictions ($100,000) and net investment return ($30,000),
+    and decrease by all expenses ($920,000): a $50,000 increase. The $120,000 of restricted contributions
+    increases net assets with donor restrictions.'

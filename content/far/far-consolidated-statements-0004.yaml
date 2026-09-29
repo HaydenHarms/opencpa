@@ -40,3 +40,98 @@ explanation: 'The noncontrolling interest shares in the subsidiary''s income as 
   fair value adjustments and by the unrealized profit on its upstream sale still in Pace''s inventory:
   25% × ($100,000 − $60,000) = $10,000. Adjusted income = $175,000; noncontrolling interest = 20% × $175,000
   = $35,000.'
+variants:
+- stem: Rand Corp. owns 70% of Tellis Inc. and measured the noncontrolling interest at fair value at acquisition.
+    For Year 2, Tellis reports net income of $300,000. Consolidation adjustments for Year 2 include $20,000
+    of amortization of the excess of fair value over book value of Tellis's equipment at the acquisition
+    date. During Year 2 Tellis also sold goods to Rand for $150,000 that had cost Tellis $90,000, and
+    Rand still holds 40% of them at year-end. Rand attributes the elimination of profit on Tellis's sales
+    to Rand proportionately between the parent and the noncontrolling interest. Rand's draft consolidated
+    income statement reports net income attributable to the noncontrolling interest of $90,000. After
+    any corrections needed, what should that amount be?
+  choices:
+  - id: A
+    text: $66,000
+    rationale: Eliminates all $60,000 of profit on the intercompany sales. Only the profit on the 40%
+      still in Rand's inventory is unrealized.
+  - id: B
+    text: $76,800
+    rationale: Correct. 30% × ($300,000 − $20,000 amortization − $24,000 unrealized profit on Tellis's
+      sale).
+  - id: C
+    text: $82,800
+    rationale: Adjusts for the unrealized profit but not the $20,000 amortization of Tellis's fair value
+      step-up.
+  - id: D
+    text: $90,000
+    rationale: Accepts the draft, which applies 30% to Tellis's reported income without either consolidation
+      adjustment.
+  answer: B
+  explanation: 'The noncontrolling interest shares in the subsidiary''s income as adjusted in consolidation.
+    Tellis''s reported income of $300,000 is reduced by the $20,000 amortization of its acquisition-date
+    fair value adjustments and by the unrealized profit on its upstream sale still in Rand''s inventory:
+    40% × ($150,000 − $90,000) = $24,000. Adjusted income = $256,000; noncontrolling interest = 30% ×
+    $256,000 = $76,800.'
+- stem: Stroud Corp. owns 90% of Umber Inc. and measured the noncontrolling interest at fair value at
+    acquisition. For Year 2, Umber reports net income of $450,000. Consolidation adjustments for Year
+    2 include $30,000 of amortization of the excess of fair value over book value of Umber's equipment
+    at the acquisition date. During Year 2 Umber also sold goods to Stroud for $200,000 that had cost
+    Umber $120,000, and Stroud still holds 50% of them at year-end. Stroud attributes the elimination
+    of profit on Umber's sales to Stroud proportionately between the parent and the noncontrolling interest.
+    Stroud's draft consolidated income statement reports net income attributable to the noncontrolling
+    interest of $45,000. After any corrections needed, what should that amount be?
+  choices:
+  - id: A
+    text: $38,000
+    rationale: Correct. 10% × ($450,000 − $30,000 amortization − $40,000 unrealized profit on Umber's
+      sale).
+  - id: B
+    text: $41,000
+    rationale: Adjusts for the unrealized profit but not the $30,000 amortization of Umber's fair value
+      step-up.
+  - id: C
+    text: $42,000
+    rationale: Adjusts Umber's income for the amortization but not for the unrealized profit. Stroud attributes
+      the elimination of upstream profit proportionately, so the noncontrolling interest bears 10% of
+      it.
+  - id: D
+    text: $45,000
+    rationale: Accepts the draft, which applies 10% to Umber's reported income without either consolidation
+      adjustment.
+  answer: A
+  explanation: 'The noncontrolling interest shares in the subsidiary''s income as adjusted in consolidation.
+    Umber''s reported income of $450,000 is reduced by the $30,000 amortization of its acquisition-date
+    fair value adjustments and by the unrealized profit on its upstream sale still in Stroud''s inventory:
+    50% × ($200,000 − $120,000) = $40,000. Adjusted income = $380,000; noncontrolling interest = 10% ×
+    $380,000 = $38,000.'
+- stem: Whitcomb Corp. owns 75% of Arden Inc. and measured the noncontrolling interest at fair value at
+    acquisition. For Year 2, Arden reports net income of $240,000. Consolidation adjustments for Year
+    2 include $12,000 of amortization of the excess of fair value over book value of Arden's equipment
+    at the acquisition date. During Year 2 Arden also sold goods to Whitcomb for $80,000 that had cost
+    Arden $50,000, and Whitcomb still holds 20% of them at year-end. Whitcomb attributes the elimination
+    of profit on Arden's sales to Whitcomb proportionately between the parent and the noncontrolling interest.
+    Whitcomb's draft consolidated income statement reports net income attributable to the noncontrolling
+    interest of $60,000. After any corrections needed, what should that amount be?
+  choices:
+  - id: A
+    text: $49,500
+    rationale: Eliminates all $30,000 of profit on the intercompany sales. Only the profit on the 20%
+      still in Whitcomb's inventory is unrealized.
+  - id: B
+    text: $55,500
+    rationale: Correct. 25% × ($240,000 − $12,000 amortization − $6,000 unrealized profit on Arden's sale).
+  - id: C
+    text: $57,000
+    rationale: Adjusts Arden's income for the amortization but not for the unrealized profit. Whitcomb
+      attributes the elimination of upstream profit proportionately, so the noncontrolling interest bears
+      25% of it.
+  - id: D
+    text: $58,500
+    rationale: Adjusts for the unrealized profit but not the $12,000 amortization of Arden's fair value
+      step-up.
+  answer: B
+  explanation: 'The noncontrolling interest shares in the subsidiary''s income as adjusted in consolidation.
+    Arden''s reported income of $240,000 is reduced by the $12,000 amortization of its acquisition-date
+    fair value adjustments and by the unrealized profit on its upstream sale still in Whitcomb''s inventory:
+    20% × ($80,000 − $50,000) = $6,000. Adjusted income = $222,000; noncontrolling interest = 25% × $222,000
+    = $55,500.'
