@@ -1,0 +1,42 @@
+id: far-income-statement-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 225-10 (income statement)
+  - ASC 360-10 (gains and losses on sales of long-lived assets are included in income from operations)
+  - ASC 330-10 (inventory write-downs)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Lund Co.''s draft multi-step income statement reports operating income of $500,000. Reviewing the
+  supporting schedules, you find: (1) sales revenue includes $25,000 of interest earned on notes receivable;
+  (2) a $40,000 loss on the sale of warehouse equipment is reported in other expenses, below operating
+  income; (3) a $30,000 write-down of obsolete inventory is also reported in other expenses; and (4) general
+  and administrative expenses include $15,000 of interest expense on a bank loan. Lund is a manufacturer.
+  After correcting the draft, what is Lund''s operating income?'
+choices:
+- id: A
+  text: $420,000
+  rationale: Correct. $500,000 − $25,000 interest income − $40,000 loss on sale − $30,000 inventory write-down
+    + $15,000 interest expense.
+- id: B
+  text: $445,000
+  rationale: Leaves the $25,000 of interest income in sales revenue. For a manufacturer, interest income
+    is nonoperating.
+- id: C
+  text: $450,000
+  rationale: Leaves the $30,000 inventory write-down below operating income. Write-downs of inventory
+    are part of cost of goods sold.
+- id: D
+  text: $460,000
+  rationale: Leaves the $40,000 loss below operating income. Gains and losses on sales of long-lived assets
+    are reported within income from operations.
+answer: A
+explanation: 'Corrections: interest income (−$25,000) and interest expense (+$15,000) are nonoperating
+  items for a manufacturer, so they move out of operating income. The loss on the sale of equipment (−$40,000)
+  and the inventory write-down (−$30,000) are operating items that the draft placed below operating income.
+  Operating income = $500,000 − $25,000 − $40,000 − $30,000 + $15,000 = $420,000.'

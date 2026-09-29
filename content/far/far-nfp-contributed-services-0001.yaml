@@ -1,0 +1,39 @@
+id: far-nfp-contributed-services-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-605 (contributed services)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'During Year 1, volunteers gave Aster Museum, a not-for-profit entity, these services: a CPA prepared
+  its financial statements, which Aster would otherwise have paid $12,000 for; carpenters built a permanent
+  exhibit hall addition worth $18,000; volunteer greeters worked at the entrance, time that would cost
+  $25,000 at local wage rates; and board members spent time at meetings valued at $5,000. What amount
+  should Aster recognize as contributed services revenue?'
+choices:
+- id: A
+  text: $12,000
+  rationale: Recognizes only the specialized service. Services that create or enhance a nonfinancial asset
+    are also recognized.
+- id: B
+  text: $17,000
+  rationale: Recognizes the CPA's work and the board members' time. Governance by board members is not
+    a specialized skill Aster would otherwise purchase.
+- id: C
+  text: $18,000
+  rationale: Recognizes only the exhibit hall work. Specialized services, such as the CPA's, that Aster
+    would otherwise purchase are also recognized.
+- id: D
+  text: $30,000
+  rationale: Correct. The CPA's specialized service ($12,000) and the carpentry that created a nonfinancial
+    asset ($18,000).
+answer: D
+explanation: Contributed services are recognized only if they create or enhance nonfinancial assets, or
+  require specialized skills, are provided by people with those skills, and would typically need to be
+  purchased if not donated. The CPA's work ($12,000) and the carpentry on the addition ($18,000) qualify.
+  Greeters and board members do not. Contributed services revenue = $30,000.

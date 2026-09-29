@@ -1,0 +1,38 @@
+id: far-stock-dividends-splits-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Equity
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 505-20 (stock dividends and stock splits)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: At January 1, Tolland Corp. has 200,000 shares of $1 par common stock outstanding. On March 1 it
+  distributes a 5% stock dividend when the market price is $20 per share. On July 1 it effects a 2-for-1
+  stock split, reducing par value to $0.50 per share. On November 1 it distributes a 50% stock dividend
+  when the market price is $12 per share. By how much do these three transactions reduce retained earnings?
+choices:
+- id: A
+  text: $115,000
+  rationale: Records both stock dividends at par. The 5% dividend is small, so it is recorded at market
+    value.
+- id: B
+  text: $200,000
+  rationale: Records the 5% dividend at market value but nothing for the 50% dividend, treating it like
+    a split. A large stock dividend is still capitalized, at par.
+- id: C
+  text: $305,000
+  rationale: Correct. 10,000 shares × $20 = $200,000 for the small dividend, plus 210,000 shares × $0.50
+    par = $105,000 for the large dividend.
+- id: D
+  text: $2,720,000
+  rationale: Records the 50% dividend at market value. A distribution of more than 20–25% is accounted
+    for like a split and capitalized at par.
+answer: C
+explanation: 'March 1: a 5% dividend is small, so 10,000 shares are capitalized at the $20 market price:
+  $200,000. July 1: a stock split changes the number of shares and the par value but requires no entry
+  to retained earnings; shares become 420,000 at $0.50 par. November 1: a 50% dividend is large, so 210,000
+  shares are capitalized at par: $105,000. Total reduction = $305,000.'

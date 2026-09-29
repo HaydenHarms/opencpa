@@ -1,0 +1,40 @@
+id: far-revenue-over-time-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 606-10 (performance obligations satisfied over time; measuring progress with an input method)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Barlow Builders has a $5,000,000 fixed-price contract to construct a building for a customer on
+  the customer's land, recognizing revenue over time using costs incurred relative to total estimated
+  costs. In Year 1 it incurred $1,200,000 of costs and estimated $2,800,000 more to complete. By the end
+  of Year 2 it had incurred $2,700,000 in total and estimated $900,000 more to complete. What gross profit
+  should Barlow recognize in Year 2?
+choices:
+- id: A
+  text: $375,000
+  rationale: Measures Year 2 progress against the original $4,000,000 cost estimate. Progress uses the
+    updated $3,600,000 total estimate.
+- id: B
+  text: $450,000
+  rationale: Applies the 45-point increase in percent complete to the original $1,000,000 profit estimate,
+    ignoring the change in estimated profit.
+- id: C
+  text: $750,000
+  rationale: Correct. Cumulative profit 75% × $1,400,000 = $1,050,000, less the $300,000 recognized in
+    Year 1.
+- id: D
+  text: $1,050,000
+  rationale: Reports cumulative gross profit to date without subtracting the $300,000 recognized in Year
+    1.
+answer: C
+explanation: 'Year 1: 1,200,000 ÷ 4,000,000 = 30% complete; gross profit 30% × ($5,000,000 − $4,000,000)
+  = $300,000. Year 2: the revised total cost is $3,600,000, so progress is 2,700,000 ÷ 3,600,000 = 75%
+  and estimated profit is $1,400,000. Cumulative gross profit = 75% × $1,400,000 = $1,050,000; Year 2
+  gross profit = $1,050,000 − $300,000 = $750,000. The change in estimate is handled prospectively through
+  the cumulative catch-up.'

@@ -1,0 +1,42 @@
+id: far-accrued-liabilities-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 710-10 (compensated absences)
+  - ASC 450-20 (self-insurance and incurred but not reported claims)
+  - ASC 405-10 (liabilities)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Morrow Co.''s general ledger shows accrued liabilities of $210,000 at December 31: accrued wages
+  $30,000, accrued vacation $40,000, accrued bonus $100,000, and accrued self-insurance claims $40,000.
+  Supporting schedules show: wages earned but unpaid for the last three days of the year were $30,000;
+  employees had earned $48,000 of vested, unused vacation pay; the bonus plan pays 10% of income after
+  deducting the bonus, and income before the bonus was $1,100,000; and for its self-insured health plan,
+  Morrow owes $10,000 on claims reported but unpaid, and its actuary estimates $55,000 of claims incurred
+  but not yet reported. What amount should Morrow report as accrued liabilities?'
+choices:
+- id: A
+  text: $188,000
+  rationale: Accrues only the claims already reported. Claims incurred but not yet reported are part of
+    a self-insurer's liability.
+- id: B
+  text: $218,000
+  rationale: Updates vacation pay but leaves self-insurance at the general ledger's $40,000. The liability
+    is $10,000 reported plus $55,000 incurred but not reported.
+- id: C
+  text: $235,000
+  rationale: Updates self-insurance but leaves vacation at $40,000. Vested vacation pay earned and unused
+    at year-end is accrued in full ($48,000).
+- id: D
+  text: $243,000
+  rationale: Correct. $30,000 wages + $48,000 vacation + $100,000 bonus + $65,000 self-insurance.
+answer: D
+explanation: 'Wages: $30,000 (agrees). Vacation: vested, earned rights are accrued at $48,000, $8,000
+  more than recorded. Bonus: B = 10% × ($1,100,000 − B), so B = $100,000 (agrees). Self-insurance: $10,000
+  reported and unpaid plus $55,000 incurred but not reported = $65,000, $25,000 more than recorded. Accrued
+  liabilities = $30,000 + $48,000 + $100,000 + $65,000 = $243,000.'

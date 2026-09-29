@@ -1,0 +1,41 @@
+id: far-nfp-functional-expenses-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of activities (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-720 (reporting expenses by nature and function)
+  - ASC 958-225 (investment return reported net of external and direct internal investment expenses)
+  - ASU 2016-14
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Linden Center, a not-for-profit entity, incurred these costs in Year 1: salaries of $600,000, of
+  which staff time records show 70% was spent on programs, 20% on management and general activities, and
+  10% on fundraising; rent of $120,000, allocated by floor space 75% to programs and 25% to management
+  and general; program supplies of $80,000; and $10,000 of fees paid to an outside investment adviser
+  who manages Linden''s endowment. What amount should Linden report as management and general expenses
+  in its analysis of expenses by function?'
+choices:
+- id: A
+  text: $150,000
+  rationale: Correct. 20% of salaries ($120,000) + 25% of rent ($30,000). External investment fees are
+    netted against investment return.
+- id: B
+  text: $160,000
+  rationale: Adds the $10,000 of external investment fees. Since ASU 2016-14, they are netted against
+    investment return rather than reported as an expense.
+- id: C
+  text: $210,000
+  rationale: Adds the $60,000 of fundraising salaries. Fundraising is a separate supporting function.
+- id: D
+  text: $240,000
+  rationale: Charges all of the rent to management and general. Rent is allocated by floor space, and
+    75% supports programs.
+answer: A
+explanation: 'Expenses are reported by function using a reasonable allocation basis. Management and general:
+  salaries $600,000 × 20% = $120,000, plus rent $120,000 × 25% = $30,000, for $150,000. Program supplies
+  are program expenses. External investment expenses are netted against investment return, so the $10,000
+  adviser fee is not a functional expense.'

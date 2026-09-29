@@ -1,0 +1,41 @@
+id: far-consolidated-statements-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 810-10 (consolidation procedures: intercompany transfers of long-lived assets)'
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Pike Corp. owns 100% of Sully Inc. On January 1, Year 2, Sully sold equipment to Pike for $90,000.
+  Sully's carrying amount for the equipment was $60,000, and Pike depreciates it straight-line over its
+  5-year remaining life with no salvage value. For Year 2, Pike reports net income of $400,000 from its
+  own operations, excluding any income from its investment in Sully, and Sully reports net income of $150,000.
+  Pike's draft Year 2 consolidated income statement reports consolidated net income of $550,000. After
+  any corrections needed, what is consolidated net income?
+choices:
+- id: A
+  text: $514,000
+  rationale: Eliminates the gain but also deducts the $6,000 of excess depreciation. Pike's depreciation
+    on the $90,000 price is $6,000 higher than on Sully's $60,000 carrying amount, so eliminating it increases
+    consolidated income.
+- id: B
+  text: $520,000
+  rationale: Eliminates the $30,000 intercompany gain but not the $6,000 of excess depreciation on the
+    stepped-up cost.
+- id: C
+  text: $526,000
+  rationale: Correct. $550,000 − $30,000 intercompany gain + $6,000 excess depreciation.
+- id: D
+  text: $550,000
+  rationale: Accepts the draft. A gain on a sale between consolidated entities is not realized until the
+    equipment is used up or sold outside the group.
+answer: C
+explanation: The draft simply adds the two companies' income. In consolidation, Sully's $30,000 gain ($90,000
+  − $60,000) on the sale to Pike is eliminated, and the equipment is carried at Sully's original basis.
+  Pike's depreciation of $90,000 ÷ 5 = $18,000 exceeds depreciation on the $60,000 basis ($12,000) by
+  $6,000, which is eliminated each year as the gain is realized through use. Consolidated net income =
+  $550,000 − $30,000 + $6,000 = $526,000.

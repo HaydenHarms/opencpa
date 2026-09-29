@@ -1,0 +1,39 @@
+id: far-accounting-errors-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 250-10 (correction of an error: counterbalancing errors)'
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: In Year 3, before its Year 3 statements are issued, Rook Co. discovers that its inventory at December
+  31, Year 1, was overstated by $40,000. Inventory at December 31, Year 2, was correct. Ignore income
+  taxes. As originally reported, by how much were Rook's Year 2 net income and its December 31, Year 2,
+  retained earnings misstated?
+choices:
+- id: A
+  text: $0 net income; $40,000 overstated retained earnings
+  rationale: Treats the error as affecting only Year 1 and carrying into retained earnings. The overstated
+    beginning inventory also overstated Year 2 cost of goods sold.
+- id: B
+  text: $40,000 understated net income; $0 retained earnings
+  rationale: Correct. Year 2 cost of goods sold was overstated, understating Year 2 income by $40,000
+    and offsetting Year 1's overstatement, so retained earnings at the end of Year 2 was correct.
+- id: C
+  text: $40,000 overstated net income; $40,000 overstated retained earnings
+  rationale: Reverses the direction for Year 2. An overstated beginning inventory raises cost of goods
+    sold and lowers income.
+- id: D
+  text: $40,000 understated net income; $40,000 understated retained earnings
+  rationale: Counts the Year 2 understatement in retained earnings without the Year 1 overstatement it
+    offsets.
+answer: B
+explanation: Overstated ending inventory in Year 1 understated Year 1 cost of goods sold and overstated
+  Year 1 net income by $40,000. That inventory became Year 2's beginning inventory, overstating Year 2
+  cost of goods sold and understating Year 2 net income by $40,000. The two errors counterbalance, so
+  retained earnings at December 31, Year 2, was correct, and no adjustment to Year 3 opening retained
+  earnings is needed; the Year 2 comparative figures are restated if presented.

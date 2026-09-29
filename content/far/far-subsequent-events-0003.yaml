@@ -1,0 +1,40 @@
+id: far-subsequent-events-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 855-10 (subsequent events)
+  - ASC 260-10 (retroactive adjustment of EPS for stock splits after the balance sheet date)
+  - ASC 330-10 (net realizable value)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Pell Co.'s December 31, Year 1, statements will be issued on March 1, Year 2. Before any subsequent-event
+  adjustments, Year 1 net income is $600,000 and weighted-average common shares outstanding are 200,000;
+  Pell has no preferred stock. On January 20, Pell sold inventory carried at $90,000 for $70,000 because
+  the goods had become obsolete during Year 1. On February 1, it effected a 2-for-1 stock split. On February
+  10, it agreed to acquire a competitor. Ignore income taxes. What basic earnings per share should Pell
+  report for Year 1?
+choices:
+- id: A
+  text: $1.45
+  rationale: Correct. ($600,000 − $20,000 write-down) ÷ 400,000 shares, restated for the split.
+- id: B
+  text: $1.50
+  rationale: Restates shares for the split but does not recognize the $20,000 write-down, which gives
+    evidence of the inventory's value at year-end.
+- id: C
+  text: $2.90
+  rationale: Recognizes the write-down but does not restate shares for the split. A split before the statements
+    are issued is reflected retroactively in EPS.
+- id: D
+  text: $3.00
+  rationale: Makes neither adjustment.
+answer: A
+explanation: 'The January sale shows that obsolescence existing at year-end had reduced the inventory''s
+  net realizable value to $70,000, so a $20,000 write-down is recognized in Year 1. A stock split after
+  year-end but before issuance is applied retroactively to EPS: 400,000 shares. The February 10 acquisition
+  agreement is disclosed only. Basic EPS = ($600,000 − $20,000) ÷ 400,000 = $1.45.'

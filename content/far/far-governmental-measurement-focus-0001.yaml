@@ -1,0 +1,35 @@
+id: far-governmental-measurement-focus-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Measurement focus and basis of accounting
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - GASB Statement No. 34 (measurement focus and basis of accounting)
+  - GASB Codification 1600
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A city reports the activities below. Which is reported using the current financial resources measurement
+  focus and the modified accrual basis of accounting?
+choices:
+- id: A
+  text: The general fund, in the governmental funds statements
+  rationale: Correct. Governmental funds use the current financial resources focus and the modified accrual
+    basis.
+- id: B
+  text: The water utility, in the proprietary funds statements
+  rationale: Enterprise funds use the economic resources focus and the accrual basis.
+- id: C
+  text: The police pension plan, in the fiduciary funds statements
+  rationale: Fiduciary funds use the economic resources focus and the accrual basis.
+- id: D
+  text: Governmental activities, in the government-wide statements
+  rationale: Government-wide statements use the economic resources focus and the accrual basis for all
+    activities.
+answer: A
+explanation: Governmental funds (general, special revenue, capital projects, debt service, permanent)
+  use the current financial resources measurement focus and the modified accrual basis. Proprietary and
+  fiduciary funds, and all government-wide statements, use the economic resources measurement focus and
+  the accrual basis.

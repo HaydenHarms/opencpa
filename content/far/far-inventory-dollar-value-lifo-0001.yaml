@@ -1,0 +1,37 @@
+id: far-inventory-dollar-value-lifo-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 330-10 (inventory: LIFO and dollar-value LIFO)'
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Dorset Co. adopted dollar-value LIFO at the end of Year 1, when its inventory was $200,000 and the
+  price index was 1.00. Inventory at current year-end cost was $264,000 at the end of Year 2 (index 1.10)
+  and $286,000 at the end of Year 3 (index 1.30). What is Dorset's dollar-value LIFO inventory at the
+  end of Year 3?
+choices:
+- id: A
+  text: $222,000
+  rationale: 'Correct. Base-year cost $220,000: the $200,000 base layer plus $20,000 left of the Year
+    2 layer, priced at 1.10 ($22,000).'
+- id: B
+  text: $226,000
+  rationale: Prices the remaining Year 2 layer at the Year 3 index (1.30). A layer keeps the index of
+    the year it was added.
+- id: C
+  text: $244,000
+  rationale: Keeps the whole Year 2 layer. Year 3 base-year cost fell to $220,000, so $20,000 of the $40,000
+    Year 2 layer was liquidated.
+- id: D
+  text: $286,000
+  rationale: Reports current cost. Dollar-value LIFO restates inventory to base-year cost and prices each
+    layer at its own index.
+answer: A
+explanation: 'Convert to base-year cost: Year 2 $264,000 ÷ 1.10 = $240,000 (a $40,000 layer at 1.10 =
+  $44,000; LIFO inventory $244,000). Year 3 $286,000 ÷ 1.30 = $220,000, a $20,000 decrease that liquidates
+  half of the Year 2 layer. Year 3 LIFO inventory = $200,000 × 1.00 + $20,000 × 1.10 = $222,000.'

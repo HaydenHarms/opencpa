@@ -1,0 +1,33 @@
+id: far-special-purpose-frameworks-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Special Purpose Frameworks
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'AU-C 800 (financial statements prepared in accordance with special purpose frameworks: titles)'
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A small business prepares its financial statements on the cash basis of accounting. Which title
+  is appropriate for the statement that reports its revenues and expenses?
+choices:
+- id: A
+  text: Statement of income and changes in retained earnings
+  rationale: Uses titles associated with GAAP statements, which could suggest the statements follow GAAP.
+- id: B
+  text: Statement of revenues collected and expenses paid
+  rationale: Correct. A title that reflects the cash basis distinguishes the statement from a GAAP income
+    statement.
+- id: C
+  text: Statement of comprehensive income for the year
+  rationale: A GAAP title; comprehensive income is an accrual-basis concept.
+- id: D
+  text: Income statement
+  rationale: A GAAP title. Special purpose framework statements use titles that do not imply GAAP presentation.
+answer: B
+explanation: Financial statements prepared under a special purpose framework should have titles that distinguish
+  them from GAAP statements. For the cash basis, "statement of assets and liabilities arising from cash
+  transactions" replaces the balance sheet and "statement of revenues collected and expenses paid" replaces
+  the income statement.

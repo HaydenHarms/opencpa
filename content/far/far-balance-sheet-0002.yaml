@@ -1,0 +1,42 @@
+id: far-balance-sheet-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Balance sheet
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 210-10 (current assets)
+  - ASC 325-30 (investments in insurance contracts)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Keel Co.''s draft December 31, Year 1, classified balance sheet reports total current assets of
+  $1,000,000: cash $150,000, trading debt securities $80,000, receivables $300,000, inventory $400,000,
+  prepaid insurance $20,000, and cash surrender value of officers'' life insurance $50,000. Supporting
+  documents show that the cash includes $60,000 the board set aside in a fund to retire bonds maturing
+  in Year 5; receivables include a $50,000 loan to an officer due in Year 4; and the prepaid insurance
+  is a two-year policy ($10,000 per year) that began January 1, Year 2, paid in December. After correcting
+  the draft, what are Keel''s total current assets?'
+choices:
+- id: A
+  text: $750,000
+  rationale: Also removes the $80,000 of trading securities. Securities held for sale in the near term
+    are current assets.
+- id: B
+  text: $820,000
+  rationale: Removes all of the prepaid insurance. The portion covering the next twelve months is a current
+    asset.
+- id: C
+  text: $830,000
+  rationale: Correct. $1,000,000 − $60,000 bond fund − $50,000 officer loan − $10,000 second-year insurance
+    − $50,000 cash surrender value.
+- id: D
+  text: $890,000
+  rationale: Leaves the $60,000 bond retirement fund in cash. Cash set aside to retire long-term debt
+    is not available for current operations.
+answer: C
+explanation: 'Current assets are those expected to be realized or consumed within a year (or the operating
+  cycle). Reclassify to noncurrent: the $60,000 fund for bonds due in Year 5, the $50,000 officer loan
+  due in Year 4, the $10,000 of insurance covering Year 3, and the $50,000 cash surrender value, which
+  is a long-term investment. Current assets = $90,000 + $80,000 + $250,000 + $400,000 + $10,000 = $830,000.'

@@ -1,0 +1,37 @@
+id: far-eps-basic-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Public Company Reporting Topics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 260-10 (basic earnings per share; stock dividends applied retroactively)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Crane Corp. had 100,000 common shares outstanding on January 1. It issued 20,000 shares for cash
+  on April 1, distributed a 10% stock dividend on July 1, and bought 6,000 shares as treasury stock on
+  October 1. Net income for the year is $500,000. Crane also has 5% cumulative preferred stock with a
+  par value of $1,000,000; no preferred dividends were declared this year. What is Crane's basic earnings
+  per share, rounded to the nearest cent?
+choices:
+- id: A
+  text: $3.52
+  rationale: Adds the treasury shares' 1,500 weighted shares instead of subtracting them. Reacquired shares
+    are removed from the weighted average from the date bought.
+- id: B
+  text: $3.57
+  rationale: Uses the 126,000 shares outstanding at year-end instead of the weighted average.
+- id: C
+  text: $3.60
+  rationale: Correct. ($500,000 − $50,000) ÷ 125,000 weighted-average shares.
+- id: D
+  text: $4.00
+  rationale: Ignores the cumulative preferred dividends. For cumulative preferred stock, the current year's
+    dividend is deducted whether or not declared.
+answer: C
+explanation: 'Income available to common = $500,000 − 5% × $1,000,000 = $450,000 (cumulative dividends
+  are deducted even if not declared). A stock dividend is applied retroactively to all shares outstanding
+  before it: 100,000 × 1.10 × 12/12 = 110,000; 20,000 × 1.10 × 9/12 = 16,500; treasury shares −6,000 ×
+  3/12 = −1,500. Weighted average = 125,000. Basic EPS = $450,000 ÷ 125,000 = $3.60.'

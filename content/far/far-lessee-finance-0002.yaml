@@ -1,0 +1,39 @@
+id: far-lessee-finance-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 842-10 (lease payments: residual value guarantees)'
+  - ASC 842-20 (lessee initial measurement)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Casey Co. leases a machine for five years. It pays $50,000 at the end of each
+  year and guarantees the lessor that the machine will be worth $40,000 at the end of the lease; Casey
+  expects its value then to be $30,000. The discount rate is 6%, and present value factors at 6% for five
+  periods are 4.2124 for an ordinary annuity and 0.7473 for a single sum. At what amount should Casey
+  initially measure its lease liability?
+choices:
+- id: A
+  text: $210,620
+  rationale: Omits the residual value guarantee. The amount Casey expects to owe under the guarantee is
+    a lease payment.
+- id: B
+  text: $218,093
+  rationale: Correct. $50,000 × 4.2124 = $210,620, plus the $10,000 expected to be owed under the guarantee
+    × 0.7473 = $7,473.
+- id: C
+  text: $240,512
+  rationale: Includes the full $40,000 guarantee. Only the amount probable of being owed ($40,000 − $30,000)
+    is a lease payment.
+- id: D
+  text: $260,000
+  rationale: Adds the undiscounted payments and expected guarantee payment. The liability is the present
+    value of the lease payments.
+answer: B
+explanation: 'Lease payments include the amount the lessee expects to owe under a residual value guarantee:
+  $40,000 guaranteed − $30,000 expected value = $10,000. Liability = $50,000 × 4.2124 + $10,000 × 0.7473
+  = $210,620 + $7,473 = $218,093.'

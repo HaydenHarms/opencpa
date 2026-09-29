@@ -1,0 +1,36 @@
+id: far-ppe-interest-capitalization-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 835-20 (capitalization of interest)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Garvey Co. constructs a building for its own use during Year 1. It spends $400,000 on January 1,
+  $600,000 on July 1, and $200,000 on December 31, and the building is completed on December 31. Garvey
+  borrowed $500,000 at 8% on January 1 specifically for the project and also has $1,000,000 of other debt
+  outstanding all year at 10%. What amount of interest should Garvey capitalize for Year 1?
+choices:
+- id: A
+  text: $40,000
+  rationale: Capitalizes only the interest on the specific construction loan. Expenditures above the specific
+    borrowing use the rate on other debt.
+- id: B
+  text: $56,000
+  rationale: Applies the 8% construction-loan rate to all $700,000 of weighted-average expenditures.
+- id: C
+  text: $60,000
+  rationale: 'Correct. Weighted-average accumulated expenditures $700,000: $500,000 × 8% + $200,000 ×
+    10%.'
+- id: D
+  text: $70,000
+  rationale: Applies the 10% rate on other debt to all $700,000 of weighted-average expenditures.
+answer: C
+explanation: 'Weighted-average accumulated expenditures = $400,000 × 12/12 + $600,000 × 6/12 + $200,000
+  × 0/12 = $700,000. Avoidable interest: the first $500,000 at the specific borrowing''s 8% ($40,000)
+  and the remaining $200,000 at the 10% rate on other borrowings ($20,000), for $60,000. That is less
+  than the $140,000 of actual interest incurred, so $60,000 is capitalized.'

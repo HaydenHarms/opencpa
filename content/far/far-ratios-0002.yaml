@@ -1,0 +1,33 @@
+id: far-ratios-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Financial statement analysis: inventory turnover and days in inventory'
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: For Year 2, Mott Co. reports sales of $2,190,000 and cost of goods sold of $1,460,000. Inventory
+  was $180,000 at the beginning of the year and $220,000 at the end. Using a 365-day year and average
+  inventory, what is Mott's number of days' sales in inventory, rounded to one decimal place?
+choices:
+- id: A
+  text: '33.3'
+  rationale: Computes turnover with sales ($2,190,000 ÷ $200,000). Inventory turnover uses cost of goods
+    sold, because inventory is carried at cost.
+- id: B
+  text: '36.7'
+  rationale: Uses sales and ending inventory ($2,190,000 ÷ $220,000). Use cost of goods sold and average
+    inventory.
+- id: C
+  text: '45.0'
+  rationale: Uses beginning inventory ($1,460,000 ÷ $180,000). The question calls for average inventory.
+- id: D
+  text: '50.0'
+  rationale: Correct. Turnover = $1,460,000 ÷ $200,000 average inventory = 7.3; 365 ÷ 7.3 = 50.0 days.
+answer: D
+explanation: Inventory turnover = cost of goods sold ÷ average inventory = $1,460,000 ÷ [($180,000 + $220,000)
+  ÷ 2] = 7.3 times. Days in inventory = 365 ÷ 7.3 = 50.0 days.

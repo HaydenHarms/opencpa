@@ -1,0 +1,44 @@
+id: far-ppe-held-for-sale-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 360-10 (long-lived assets to be disposed of by sale)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On October 1, Year 1, Harlow Co.'s board approves selling a piece of equipment it no longer needs.
+  Harlow takes it out of service that day and lists it with a dealer at $255,000, in line with recent
+  sales of similar equipment; it expects a buyer within six months and does not expect to change the plan.
+  The equipment cost $500,000; accumulated depreciation was $200,000 at January 1, Year 1, and annual
+  depreciation is $40,000. On October 1, the equipment's fair value is $250,000 and the estimated cost
+  to sell is $15,000. On December 31, Year 1, it is still unsold, its fair value is $260,000, and the
+  estimated cost to sell is still $15,000. At what amount should the equipment be reported at December
+  31, Year 1?
+choices:
+- id: A
+  text: $235,000
+  rationale: Keeps the October 1 measurement. A later increase in fair value less cost to sell is recognized
+    as a gain, up to the loss previously recognized.
+- id: B
+  text: $245,000
+  rationale: Correct. Carrying amount at October 1 is $270,000; it is written down to $235,000 and then
+    increased to $245,000 at year-end.
+- id: C
+  text: $260,000
+  rationale: Uses fair value without deducting the cost to sell.
+- id: D
+  text: $270,000
+  rationale: Reclassifies the equipment at its carrying amount without comparing it with fair value less
+    cost to sell.
+answer: B
+explanation: 'The board''s approval, the listing at a price in line with the market, the asset''s immediate
+  availability, and the expected sale within six months meet the held-for-sale criteria on October 1.
+  Depreciation runs until then: $200,000 + 9/12 × $40,000 = $230,000 of accumulated depreciation, so the
+  carrying amount on October 1 is $270,000. A held-for-sale asset is measured at the lower of carrying
+  amount and fair value less cost to sell ($235,000), a $35,000 loss, and is no longer depreciated. At
+  year-end, fair value less cost to sell is $245,000; the $10,000 increase is recognized as a gain because
+  it does not exceed the $35,000 loss recognized earlier.'

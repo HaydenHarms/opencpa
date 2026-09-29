@@ -1,0 +1,39 @@
+id: far-revenue-variable-consideration-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 606-10 (variable consideration: volume discounts; constraint)'
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Harlan Co. agrees to sell a customer parts at $100 per unit. If the customer buys
+  more than 10,000 units during the calendar year, the price for all units bought that year falls retroactively
+  to $90. From many years of dealing with this customer, Harlan expects it to buy about 12,000 units,
+  and a shortfall below 10,000 has never occurred. In the first quarter, the customer buys 3,000 units.
+  How much revenue should Harlan recognize for the first quarter?
+choices:
+- id: A
+  text: $180,000
+  rationale: Deducts the whole year's expected discount (12,000 × $10 = $120,000) from first-quarter sales
+    at $100. The discount is recognized as the units it applies to are sold.
+- id: B
+  text: $270,000
+  rationale: 'Correct. The expected volume discount is included in the transaction price: 3,000 × $90.'
+- id: C
+  text: $285,000
+  rationale: Averages the two prices. With strong experience that the threshold will be met, the $90 price
+    is the best estimate.
+- id: D
+  text: $300,000
+  rationale: Uses the $100 list price until the threshold is reached. The expected retroactive discount
+    is variable consideration estimated from the start.
+answer: B
+explanation: 'The retroactive volume discount makes the consideration variable. Harlan estimates it from
+  its experience with the customer: purchases of about 12,000 units, so the price will be $90. Because
+  it has long experience and a shortfall has never occurred, including the discounted price is not expected
+  to cause a significant revenue reversal. Q1 revenue = 3,000 × $90 = $270,000, with $30,000 recognized
+  as a refund liability.'

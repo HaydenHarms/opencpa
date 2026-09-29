@@ -1,0 +1,38 @@
+id: far-bonds-premium-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 835-30 (interest method)
+  - ASC 470-10 (debt)
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Wynn Corp. issues $1,000,000 of ten-year, 8% bonds that pay interest each
+  June 30 and December 31, for $1,148,775, a price that yields 6% compounded semiannually. Wynn uses the
+  effective interest method and rounds to the nearest dollar at each step. What is Wynn's interest expense
+  on the bonds for Year 1?
+choices:
+- id: A
+  text: $65,123
+  rationale: Amortizes the premium straight-line ($14,878 a year). The effective interest method is required
+    unless the difference is immaterial.
+- id: B
+  text: $68,760
+  rationale: 'Correct. June 30: $1,148,775 × 3% = $34,463; the carrying amount falls to $1,143,238. December
+    31: $1,143,238 × 3% = $34,297.'
+- id: C
+  text: $68,926
+  rationale: Applies the 6% annual rate to the issue price once. Interest is compounded semiannually,
+    and the carrying amount falls after the first payment.
+- id: D
+  text: $80,000
+  rationale: Uses the cash interest paid. A premium reduces interest expense below the stated rate.
+answer: B
+explanation: 'Effective interest is computed each semiannual period at 3% of the carrying amount. June
+  30: $1,148,775 × 3% = $34,463 expense; cash $40,000; premium amortized $5,537; carrying amount $1,143,238.
+  December 31: $1,143,238 × 3% = $34,297 expense; premium amortized $5,703. Year 1 interest expense =
+  $34,463 + $34,297 = $68,760.'

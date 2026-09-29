@@ -1,0 +1,32 @@
+id: far-fair-value-hierarchy-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Fair value measurements
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 820-10 (fair value hierarchy: Levels 1, 2 and 3)'
+  notes: Batch 03. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Under ASC 820, which of these inputs is a Level 2 input?
+choices:
+- id: A
+  text: A quoted price in an active market for an asset identical to the one measured
+  rationale: A quoted price for an identical asset in an active market is a Level 1 input.
+- id: B
+  text: A broker quote that the entity adjusts using significant assumptions of its own
+  rationale: Significant unobservable adjustments make the measurement Level 3.
+- id: C
+  text: A quoted price in an active market for an asset similar to the one measured
+  rationale: Correct. Quoted prices for similar assets in active markets are observable inputs other than
+    Level 1 prices.
+- id: D
+  text: The entity's own projections of cash flows from using the asset
+  rationale: The entity's own data, not observable in the market, is a Level 3 input.
+answer: C
+explanation: Level 1 inputs are unadjusted quoted prices in active markets for identical assets. Level
+  2 inputs are other observable inputs, such as quoted prices for similar assets in active markets, quoted
+  prices in inactive markets, and observable interest rates and yield curves. Level 3 inputs are unobservable,
+  including the entity's own assumptions and significantly adjusted quotes.
