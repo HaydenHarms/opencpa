@@ -11,8 +11,8 @@ review:
   - ASC 958-605 (contributions received, including conditional contributions)
   - ASC 958-205 (net assets with and without donor restrictions)
   - ASU 2018-08 (clarifying the scope and the accounting guidance for contributions)
-  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
-    re-solved and every number and distractor computed in code.
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
 stem: Harbor Arts Foundation, a not-for-profit entity, has these transactions in Year 1. (1) On December
   31 it receives a written promise of $80,000 payable on January 1, Year 3; nothing else is required of
   the foundation to receive it, and the donor states no use for the money. The promise has a present value
@@ -22,7 +22,7 @@ stem: Harbor Arts Foundation, a not-for-profit entity, has these transactions in
   gifts by the end of Year 2. By December 31, Year 1, the foundation has raised no matching gifts. (4)
   It receives a $100,000 cash gift with no donor stipulations. The foundation reports every restricted
   gift as with donor restrictions when received, even if the restriction is met in the same period. Ignoring
-  interest accretion, by what amount do net assets with donor restrictions increase in Year 1?
+  interest accretion, what is the net change in net assets with donor restrictions for Year 1?
 choices:
 - id: A
   text: $107,000
@@ -35,8 +35,9 @@ choices:
     at present value.
 - id: C
   text: $132,000
-  rationale: Leaves out the $25,000 release. Spending on the donor's purpose moves that amount out of
-    net assets with donor restrictions.
+  rationale: Reports the restricted contributions only and leaves out the $25,000 release. Spending on
+    the donor's purpose moves that amount out of net assets with donor restrictions, so the net change
+    is smaller.
 - id: D
   text: $257,000
   rationale: Counts the $150,000 as revenue with donor restrictions. Because the donor can recover it
@@ -47,5 +48,5 @@ explanation: 'The $80,000 promise carries no condition other than the passage of
   The $60,000 scholarship gift is restricted to a purpose; spending $25,000 on it releases that amount,
   leaving a $35,000 net increase. The $150,000 depends on a measurable barrier (matching gifts) and includes
   a right of return, so it is not revenue until the barrier is overcome; the cash is a refundable advance.
-  The $100,000 gift is without donor restrictions. Increase with donor restrictions: $72,000 + $60,000
-  − $25,000 = $107,000.'
+  The $100,000 gift is without donor restrictions. Net change in net assets with donor restrictions: $72,000
+  + $60,000 − $25,000 = $107,000 increase.'

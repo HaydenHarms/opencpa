@@ -1,0 +1,45 @@
+id: far-contingencies-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 450-20 (loss contingencies: recognition, measurement within a range, disclosure)'
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
+stem: 'Bravo Corp.''s December 31 financial statements have not yet been issued. Its outside counsel''s
+  letter describes two lawsuits filed against Bravo during the year. Claim 1: last year the same court
+  ruled against a competitor on nearly identical facts, Bravo has offered to settle, and counsel expects
+  Bravo to pay damages of between $400,000 and $900,000, with no amount in that range a better estimate
+  than any other. Claim 2: counsel believes Bravo''s defenses are stronger than the plaintiff''s case
+  and that Bravo will more likely than not prevail, but counsel cannot dismiss the chance of an adverse
+  judgment; if Bravo loses, damages would be about $300,000. What total liability should Bravo accrue
+  for the two lawsuits at December 31?'
+choices:
+- id: A
+  text: $400,000
+  rationale: Correct. Claim 1 is probable with no best estimate in the range, so Bravo accrues the minimum
+    and discloses the further $500,000 of possible loss. Claim 2 is only disclosed.
+- id: B
+  text: $650,000
+  rationale: Accrues the midpoint of Claim 1's range. When no amount in a range is a better estimate than
+    any other, U.S. GAAP accrues the minimum.
+- id: C
+  text: $700,000
+  rationale: Also accrues Claim 2. A loss that is more than remote but less than probable is disclosed,
+    not accrued.
+- id: D
+  text: $900,000
+  rationale: Accrues the top of Claim 1's range. The minimum is accrued, and the rest of the range is
+    disclosed.
+answer: A
+explanation: 'Claim 1: the adverse precedent, the settlement offer, and counsel''s expectation of payment
+  make the loss probable, and it can be estimated as a range. With no amount in the range better than
+  any other, ASC 450-20 requires accruing the minimum ($400,000) and disclosing the reasonably possible
+  additional loss of up to $500,000. Claim 2: a loss that counsel thinks is less likely than not but cannot
+  dismiss is reasonably possible, so Bravo discloses its nature and the $300,000 estimate but records
+  nothing. Total accrual: $400,000.'

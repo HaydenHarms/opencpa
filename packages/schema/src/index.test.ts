@@ -29,6 +29,12 @@ describe('McqItem', () => {
     expect(McqItem.safeParse({ ...valid, answer: 'E' }).success).toBe(false);
   });
 
+  it('rejects anything other than four choices', () => {
+    const e = { id: 'E', text: 'Choice E', rationale: 'why' };
+    expect(McqItem.safeParse({ ...valid, choices: [...valid.choices, e] }).success).toBe(false);
+    expect(McqItem.safeParse({ ...valid, choices: valid.choices.slice(0, 3) }).success).toBe(false);
+  });
+
   it('rejects a malformed id', () => {
     expect(McqItem.safeParse({ ...valid, id: 'FAR_1' }).success).toBe(false);
   });

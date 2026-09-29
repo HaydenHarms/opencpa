@@ -1,0 +1,50 @@
+id: far-comprehensive-income-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of comprehensive income
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 220-10 (comprehensive income; reclassification adjustments)
+  - ASC 320-10 (available-for-sale debt securities)
+  - ASC 321-10 (equity securities)
+  - ASC 830-20 (foreign currency transactions)
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
+stem: Delmar Inc.'s draft statement of comprehensive income reports net income of $400,000 and other comprehensive
+  income (OCI) of $97,500, for comprehensive income of $497,500. All amounts below are net of tax. Net
+  income includes a $22,500 gain on the sale of available-for-sale debt securities that Delmar bought
+  three years ago and whose fair value did not change during the current year before the sale, and a $15,000
+  gain from the increase in fair value of an equity investment that has a readily determinable fair value.
+  The draft's OCI consists of $67,500 of unrealized holding gains that arose this year on Delmar's remaining
+  available-for-sale debt securities and a $30,000 gain from remeasuring a euro-denominated account payable
+  at the year-end exchange rate. What is Delmar's corrected comprehensive income for the year?
+choices:
+- id: A
+  text: $445,000
+  rationale: Takes the $30,000 exchange gain out of OCI but never adds it to net income. A remeasurement
+    gain on a foreign-currency payable is a transaction gain reported in net income, so it stays in comprehensive
+    income.
+- id: B
+  text: $475,000
+  rationale: Correct. Net income $430,000 ($400,000 + $30,000 transaction gain) + OCI $45,000 ($67,500
+    − $22,500 reclassification adjustment).
+- id: C
+  text: $497,500
+  rationale: 'Accepts the draft total. Moving the exchange gain to net income does not change the total,
+    but the draft omits the reclassification adjustment: the $22,500 gain sat in OCI in earlier years
+    and is now in net income, so it must come out of OCI.'
+- id: D
+  text: $505,000
+  rationale: Adds the $30,000 exchange gain to net income and makes the reclassification adjustment, but
+    also leaves the gain in OCI, so it is counted twice.
+answer: B
+explanation: 'The draft has two errors. (1) The $30,000 gain on remeasuring a euro payable is a foreign-currency
+  transaction gain, which is reported in net income, not OCI; corrected net income is $430,000. (2) The
+  $22,500 gain on the AFS securities was recognized in OCI as an unrealized gain in earlier years (their
+  fair value did not change this year), so moving it into net income on the sale requires a reclassification
+  adjustment out of OCI: $67,500 − $22,500 = $45,000. The $15,000 equity-investment gain is correctly
+  in net income (ASC 321). Comprehensive income = $430,000 + $45,000 = $475,000.'

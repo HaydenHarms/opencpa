@@ -9,30 +9,30 @@ review:
   status: reviewed
   references:
   - ASC 855-10 (subsequent events)
-  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
-    re-solved and every number and distractor computed in code.
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
 stem: Alder Corp.'s financial statements for the year ended December 31, Year 5, are issued on March 10,
   Year 6. Which of the following events, occurring between year-end and the issuance date, requires Alder
   to adjust its Year 5 financial statements?
 choices:
 - id: A
-  text: On March 1, a court rules against Alder in a suit over an accident in October, Year 5.
-  rationale: Correct. The accident occurred before year-end, so the ruling gives added evidence about
-    a condition that existed at the balance sheet date.
-- id: B
   text: On February 10, a fire destroys one of Alder's warehouses and all of the inventory stored inside
     it, with no insurance.
   rationale: A condition that arose after year-end. It is disclosed but not recognized in the Year 5 statements.
-- id: C
+- id: B
   text: On January 20, Alder issues $5,000,000 of bonds to finance the expansion of one of its manufacturing
     plants.
   rationale: A new financing that arose after year-end. It is disclosed but not recognized.
-- id: D
+- id: C
   text: In February, a broad market downturn sharply reduces the fair value of Alder's investments in
     trading securities.
   rationale: Fair value declines after year-end reflect conditions that arose after the balance sheet
     date, so they are not recognized.
-answer: A
+- id: D
+  text: On March 1, a court rules against Alder in a suit over an accident in October, Year 5.
+  rationale: Correct. The accident occurred before year-end, so the ruling gives added evidence about
+    a condition that existed at the balance sheet date.
+answer: D
 explanation: Subsequent events that give additional evidence about conditions that existed at the balance
   sheet date are recognized by adjusting the statements. Events reflecting conditions that arose after
   the balance sheet date are not recognized, though some are disclosed. The court ruling settles an obligation

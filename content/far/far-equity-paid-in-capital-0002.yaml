@@ -1,0 +1,44 @@
+id: far-equity-paid-in-capital-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Equity
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 505-10 (equity securities issued for noncash consideration)
+  - 'ASC 845-10 (nonmonetary transactions: measurement at the more clearly evident fair value)'
+  - SEC Staff Accounting Bulletin Topic 5.A (expenses of offering)
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
+stem: 'During the year, Redford Corp. issues $2 par value common stock as follows: (1) 5,000 shares sold
+  for cash at $18 per share, and (2) 3,000 shares issued for a parcel of land. On the exchange date, Redford''s
+  shares trade actively on a national exchange at $19 per share, and an independent appraisal values the
+  land at $60,000. Redford also pays $9,000 of legal and underwriting costs directly attributable to issuing
+  the shares. Redford''s draft year-end statements show land of $60,000, additional paid-in capital of
+  $134,000 from these issuances, and $9,000 of legal and underwriting fees in general and administrative
+  expense. After any corrections needed, what is the total additional paid-in capital from these issuances?'
+choices:
+- id: A
+  text: $122,000
+  rationale: Correct. Cash sale $80,000 + land $51,000 (3,000 × $17) − $9,000 of offering costs.
+- id: B
+  text: $125,000
+  rationale: Nets the offering costs against APIC but keeps the land at its $60,000 appraisal. The actively
+    traded share price ($57,000 for 3,000 shares) is the more reliable measure.
+- id: C
+  text: $131,000
+  rationale: Measures the land at the share price but leaves the $9,000 of offering costs in expense.
+    Direct costs of issuing shares reduce the proceeds, so they reduce APIC.
+- id: D
+  text: $134,000
+  rationale: Accepts the draft, which records the land at the appraisal ($54,000 of APIC) and expenses
+    the offering costs.
+answer: A
+explanation: 'Stock issued for a noncash asset is recorded at the fair value of the stock or of the asset,
+  whichever is more clearly evident. A quoted price in an active market is more reliable than an appraisal,
+  so the land is recorded at 3,000 × $19 = $57,000: $6,000 of par and $51,000 of APIC. Cash sale: 5,000
+  × ($18 − $2) = $80,000 of APIC. Direct costs of issuing equity reduce the proceeds, so the $9,000 is
+  reclassified from expense to a reduction of APIC. Total: $80,000 + $51,000 − $9,000 = $122,000.'

@@ -125,3 +125,56 @@ Topics covered: cash flows (2), NFP (2), government (2), EPS, comprehensive inco
 - **Analysis is short** (16% against 35–45%). Most new items are hard multi-step computations, which the verifier rightly tags Application. Batch 02 should be written around evaluating or comparing alternatives.
 - **Gaps:** cash and cash equivalents, payables and accrued liabilities, debt covenants, further revenue topics, lessee operating leases, NFP functional expenses, statement of changes in equity, ratios.
 - **Answer positions:** numeric choices are sorted ascending, so the key lands in B for 10 of 25 items. This is the AICPA convention, but watch it as more items are added.
+
+## Revision 3: second independent review and 2026 blueprint scope
+
+**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026. Scope claims below were checked against the official PDF.
+
+A fresh review agent graded Revision 2 without reading this report first. All 25 keys matched its own solutions and every numeric distractor reproduced, but it rated 8 items exam-ready, 15 minor revision and 2 major revision, with an average estimated pass likelihood of 74% (up from about 67%). Analysis was about 12–16% against a 35–45% target.
+
+**Correction to Revision 1.** Revision 1 said the 2026 blueprint "moved no topics." That was wrong. Under the 2026 edition, goodwill and other indefinite-lived intangibles are BAR Area II A, and government nonexchange-revenue calculations are BAR Area III. FAR keeps only state and local government *concepts* (recall measurement focus and basis of accounting; determine the appropriate fund). Consolidated financial statements with wholly-owned subsidiaries and noncontrolling interests, on the other hand, are FAR Area I (the old CLAUDE.md wrongly listed consolidations as BAR).
+
+**Moved to BAR** (new ids, content unchanged, now in `content/bar/` via `scripts/batches/bar-batch-01.py`):
+
+| Old FAR id | New BAR id | BAR task |
+| --- | --- | --- |
+| `far-intangibles-goodwill-0001` | `bar-goodwill-impairment-0001` | Area II A: goodwill and indefinite-lived intangibles, including impairment |
+| `far-governmental-property-tax-0001` | `bar-nonexchange-revenue-0001` | Area III: nonexchange revenue on the modified accrual and accrual bases |
+
+**Retired and replaced** (a changed answer or a different question gets a new id):
+
+| Retired | Replacement | Change |
+| --- | --- | --- |
+| `far-cash-flows-0001` (easy) | `far-cash-flows-0003` | Analysis: correct a staff accountant's draft operating section (proceeds, gain, dividends) |
+| `far-comprehensive-income-0001` (CTA is BAR; stem cued the reclassification) | `far-comprehensive-income-0002` | Analysis: correct a draft that put a foreign-currency *transaction* gain in OCI and omitted the reclassification adjustment |
+| `far-contingencies-0001` (definition wording; recall) | `far-contingencies-0002` | Analysis: read counsel's letter on two claims; accrue the minimum of a range with no best estimate |
+| `far-equity-paid-in-capital-0001` ("more clearly evident" gave it away) | `far-equity-paid-in-capital-0002` | Analysis: find and correct a draft that used an appraisal instead of an active share price and expensed offering costs |
+| `far-equity-retirement-0001` (stated policy was the solution) | `far-equity-retirement-0002` | Policy named, not spelled out; APIC from treasury transactions of the same class must also be applied |
+| `far-investments-afs-credit-loss-0001` (conceptual; swapped-component distractor) | `far-investments-afs-credit-loss-0002` | Numeric: credit loss from the present value of expected cash flows, net of an existing allowance |
+| `far-receivables-credit-losses-0001` (tagged Analysis; five choices) | `far-receivables-credit-losses-0002` | Analysis: reconcile a subledger and a control account that are both wrong (duplicate GL batch, unposted credit memo), then CECL expense net of the existing allowance |
+| `far-revenue-allocation-0001` (one step; stem said "distinct") | `far-revenue-allocation-0003` | Student decides distinctness from facts and allocates the discount to a regularly sold bundle (ASC 606-10-32-37) |
+| (goodwill, moved to BAR) | `far-intangibles-cloud-computing-0001` | FAR task on cloud computing arrangements: expense versus capitalize implementation costs, amortization term and start |
+| (property tax, moved to BAR) | `far-consolidated-statements-0001` | Analysis: find and correct a draft NCI balance (fair value at acquisition, share of adjusted income, dividends) |
+
+**Edited in place** (same question and key): four items cut from five choices to four (`far-debt-extinguishment-0001`, `far-equity-method-0001`, `far-income-taxes-deferred-0001`, `far-accounting-errors-0001`); `far-debt-extinguishment-0001` no longer states the required presentation and says straight-line issuance-cost amortization is used because it is not materially different; `far-ppe-exchange-0001` describes the change in cash flows instead of saying "has commercial substance"; `far-nfp-contributions-0001` asks for the "net change." Retagged: `far-nfp-net-assets-0001` to Remembering and Understanding (one rule); `far-accounting-errors-0001` to Analysis (the blueprint's "derive the impact ... of an error correction" task).
+
+**Tooling:** the schema and `audit()` now require exactly four choices; `write_items()` writes LF line endings; `pnpm content:validate` now works on Windows paths.
+
+**Batch 01 tallies after Revision 3 (25 items)**
+
+| Measure | Result | Blueprint target |
+| --- | --- | --- |
+| Area I / II / III | 8 / 10 / 7 (32% / 40% / 28%) | 30–40% / 30–40% / 25–35% |
+| Remembering and Understanding | 3 (12%) | 5–15% |
+| Application | 13 (52%) | 45–55% |
+| Analysis | 9 (36%) | 35–45% |
+
+**Blind verification of the 13 new or changed items:** a separate agent solved them from stems and choices only. It **matched the key on 13 of 13** and confirmed FAR scope for all 13 against the 2026 blueprint PDF. Fixes applied:
+
+| Item | Finding | Fix |
+| --- | --- | --- |
+| `far-equity-retirement-0002` | ASC 505-30 allows APIC from treasury transactions of the same *issue*, not class, so $6,000 was arguable | Stem says the treasury APIC comes from the same issue |
+| `far-ppe-exchange-0001` | "Cash flows differ significantly in amount and timing" is the commercial-substance definition | Stem now gives only business facts (different product, customers, contracts) |
+| `far-consolidated-statements-0001`, `far-equity-paid-in-capital-0002`, `far-receivables-credit-losses-0002` | The stem described the error, so these were Application, not Analysis | Stems now give only the draft figures (and, for receivables, two reconciling items affecting different records); the student finds the errors |
+| `far-intangibles-cloud-computing-0001` | Explanation leaned on project-stage wording that ASU 2025-06 removes | Explanation justifies each treatment directly and notes ASU 2025-06 does not change the answer |
+| `far-consolidated-statements-0001` | Subsidiary shared a name with the debt item's issuer | Renamed to Tern Inc. |

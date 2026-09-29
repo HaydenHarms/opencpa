@@ -1,0 +1,47 @@
+id: far-consolidated-statements-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 805-20 (noncontrolling interest measured at acquisition-date fair value)
+  - ASC 810-10 (noncontrolling interests in consolidated financial statements)
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Pratt Corp. acquires 80% of the voting stock of Tern Inc. for $800,000 in
+  cash. The acquisition-date fair value of the 20% noncontrolling interest is $200,000. Tern's net assets
+  had a book value of $700,000. Its equipment, with a 5-year remaining life and straight-line depreciation,
+  had a fair value $100,000 above book value, and every other identifiable asset and liability had a fair
+  value equal to book value. For Year 1, Tern reports net income of $150,000 on its own books and pays
+  dividends of $50,000. Pratt's draft December 31, Year 1, consolidated balance sheet reports noncontrolling
+  interest of $160,000. After any correction needed, at what amount should noncontrolling interest be
+  reported?
+choices:
+- id: A
+  text: $160,000
+  rationale: Accepts the draft, which is 20% of the $800,000 of net assets on Tern's own year-end books.
+    Noncontrolling interest starts at its acquisition-date fair value, not at a share of the subsidiary's
+    book value.
+- id: B
+  text: $176,000
+  rationale: Starts from 20% of the fair value of Tern's identifiable net assets ($160,000), which leaves
+    out the noncontrolling interest's share of goodwill. U.S. GAAP measures noncontrolling interest at
+    its full acquisition-date fair value.
+- id: C
+  text: $216,000
+  rationale: Correct. $200,000 + 20% × ($150,000 − $20,000 extra depreciation) − 20% × $50,000 dividends.
+- id: D
+  text: $220,000
+  rationale: Allocates 20% of Tern's reported $150,000 without first deducting the $20,000 of depreciation
+    on the equipment's fair value step-up.
+answer: C
+explanation: Under ASC 805 and 810, noncontrolling interest is measured at acquisition-date fair value
+  ($200,000), which includes its share of goodwill. It is then increased by its share of the subsidiary's
+  income as adjusted for the acquisition-date fair value differences and reduced by its share of dividends.
+  Consolidated Year 1 income of Tern = $150,000 − $100,000 ÷ 5 = $130,000; the noncontrolling interest's
+  share is $26,000. Dividends to the noncontrolling interest are 20% × $50,000 = $10,000. NCI = $200,000
+  + $26,000 − $10,000 = $216,000.

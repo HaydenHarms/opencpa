@@ -9,8 +9,8 @@ review:
   status: reviewed
   references:
   - ASC 740-10 (income taxes)
-  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
-    re-solved and every number and distractor computed in code.
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
 stem: In its first year of operations, Ridgeway Corp. reports pretax book income of $500,000. Book income
   includes $30,000 of tax-exempt municipal bond interest and is after deducting $40,000 of nondeductible
   fines. It is also after warranty expense of $120,000 that is not deductible until claims are paid, and
@@ -34,10 +34,6 @@ choices:
   text: $139,500
   rationale: Correct. $107,500 current + $32,000 deferred ($50,000 liability − $30,000 asset + $12,000
     allowance).
-- id: E
-  text: $187,500
-  rationale: Treats the warranty difference as taxable (a liability) instead of deductible, and omits
-    the allowance ($107,500 current + $80,000 deferred).
 answer: D
 explanation: 'Taxable income = $500,000 − $30,000 (tax-exempt interest, permanent) + $40,000 (nondeductible
   fines, permanent) + $120,000 (warranty, deductible later) − $200,000 (excess tax depreciation) = $430,000;

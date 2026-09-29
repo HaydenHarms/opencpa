@@ -75,6 +75,8 @@ def audit(items):
             others = [v for k, v in lens.items() if k != it["answer"]]
             if right_len > max(others) * 1.15:
                 warnings.append(f"{it['id']}: correct answer is >15% longer than every distractor")
+        if len(ch) != 4:
+            warnings.append(f"{it['id']}: has {len(ch)} choices; FAR/BAR MCQs have exactly four")
         if len({c["text"] for c in ch}) != len(ch):
             warnings.append(f"{it['id']}: duplicate choice text")
         if is_numeric(ch):
@@ -89,7 +91,7 @@ def audit(items):
 def write_items(items, content_dir):
     os.makedirs(content_dir, exist_ok=True)
     for it in items:
-        with open(os.path.join(content_dir, it["id"] + ".yaml"), "w") as f:
+        with open(os.path.join(content_dir, it["id"] + ".yaml"), "w", encoding="utf-8", newline="\n") as f:
             yaml.safe_dump(it, f, sort_keys=False, allow_unicode=True, width=100)
     dist = {}
     for it in items:

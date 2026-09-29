@@ -9,8 +9,8 @@ review:
   status: reviewed
   references:
   - ASC 323-10 (equity method investments)
-  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
-    re-solved and every number and distractor computed in code.
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
 stem: On January 1, Year 1, Pillar Corp. pays $1,500,000 for 30% of the common stock of Quarry Inc. and
   can significantly influence Quarry's operating decisions. Quarry's net assets have a book value of $4,000,000.
   Quarry's equipment, which has a 4-year remaining life and is depreciated straight-line, has a fair value
@@ -22,24 +22,20 @@ stem: On January 1, Year 1, Pillar Corp. pays $1,500,000 for 30% of the common s
   Year 1?
 choices:
 - id: A
-  text: $1,533,000
-  rationale: Amortizes the entire $300,000 excess over the equipment's life ($75,000). Only the $120,000
-    attributed to the equipment is amortized; the $180,000 remainder is goodwill and is not amortized.
-- id: B
   text: $1,550,000
   rationale: Eliminates 100% of the unrealized profit ($40,000). Pillar eliminates only its 30% share
     ($12,000).
-- id: C
+- id: B
   text: $1,578,000
   rationale: Correct. $1,500,000 + $180,000 share of income − $60,000 dividends − $30,000 equipment amortization
     − $12,000 unrealized profit.
-- id: D
+- id: C
   text: $1,590,000
   rationale: Does not eliminate any of the unrealized profit on the inventory Quarry still holds.
-- id: E
+- id: D
   text: $1,608,000
   rationale: Omits the $30,000 amortization of the equipment's basis difference.
-answer: C
+answer: B
 explanation: Excess of cost over share of book value = $1,500,000 − (30% × $4,000,000) = $300,000. Of
   that, 30% × $400,000 = $120,000 relates to the equipment (amortized over 4 years, $30,000 a year) and
   $180,000 is goodwill (not amortized). Carrying amount = $1,500,000 + 30% × $600,000 ($180,000) − 30%

@@ -4,13 +4,13 @@ blueprint:
   section: FAR
   area: Area III — Select Transactions
   topic: Accounting changes and error corrections
-  skill: Application
+  skill: Analysis
 review:
   status: reviewed
   references:
   - ASC 250-10 (accounting changes and error corrections)
-  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
-    re-solved and every number and distractor computed in code.
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
 stem: In Year 3, before its Year 3 financial statements are issued, Tanner Inc. finds two errors in its
   prior-year statements. (1) On January 1, Year 1, it bought a machine for $90,000 with a 5-year life,
   no salvage value, and straight-line depreciation, and it recorded the entire $90,000 as Year 1 expense.
@@ -30,10 +30,6 @@ choices:
   rationale: Corrects only the machine ($54,000 × 75%). The inventory overstatement also affected retained
     earnings at December 31, Year 2.
 - id: D
-  text: $45,000 increase
-  rationale: Reverses the whole $90,000 expense and ignores the $36,000 of depreciation Years 1 and 2
-    should have carried ($90,000 − $30,000 = $60,000 × 75%).
-- id: E
   text: $63,000 increase
   rationale: Adds the inventory overstatement instead of subtracting it. Overstated ending inventory overstated
     income, so it reduces the correction ($54,000 + $30,000) × 75%.

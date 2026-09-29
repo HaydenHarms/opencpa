@@ -1,18 +1,18 @@
-id: far-intangibles-goodwill-0001
+id: bar-goodwill-impairment-0001
 type: mcq
 blueprint:
-  section: FAR
-  area: Area II — Select Balance Sheet Accounts
-  topic: Intangible assets
-  skill: Analysis
+  section: BAR
+  area: Area II — Technical Accounting and Reporting
+  topic: Indefinite-lived intangible assets, including goodwill
+  skill: Application
 review:
   status: reviewed
   references:
   - ASC 350-20 (goodwill)
   - ASC 350-30 (indefinite-lived intangible assets)
   - ASU 2017-04 (simplifying the test for goodwill impairment)
-  notes: Batch 01, revised after independent quality review and a second pass to raise difficulty. Answers
-    re-solved and every number and distractor computed in code.
+  notes: BAR batch 01. Moved from FAR batch 01 (2026 blueprint scope); answers re-solved and every number
+    and distractor computed in code.
 stem: Whitfield Corp., a public business entity, tests one reporting unit for impairment at year-end.
   The unit's carrying amount is $12,000,000, which includes goodwill of $3,000,000 and an indefinite-lived
   trade name carried at $2,000,000. Whitfield estimates the fair value of the reporting unit at $9,500,000

@@ -4,7 +4,7 @@
  *   build    — validate, then bundle reviewed items into apps/api/src/generated/content.json.
  */
 import { readdirSync, readFileSync, statSync, mkdirSync, writeFileSync } from 'node:fs';
-import { join, relative } from 'node:path';
+import { join, relative, sep } from 'node:path';
 import { parse } from 'yaml';
 import { Item } from '@opencpa/schema';
 
@@ -25,7 +25,7 @@ const errors: string[] = [];
 const seen = new Map<string, string>();
 
 for (const file of files) {
-  const rel = relative(root, file);
+  const rel = relative(root, file).split(sep).join('/');
   let data: unknown;
   try {
     data = parse(readFileSync(file, 'utf8'));

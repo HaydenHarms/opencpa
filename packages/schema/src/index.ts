@@ -42,7 +42,7 @@ export const Review = z.object({
 });
 
 const Choice = z.object({
-  id: z.string().regex(/^[A-F]$/),
+  id: z.string().regex(/^[A-D]$/),
   text: z.string().min(1),
   /** Why this choice is right, or why it is a tempting wrong answer. */
   rationale: z.string().min(1),
@@ -60,8 +60,9 @@ export const McqItem = z
     ...base,
     type: z.literal('mcq'),
     stem: z.string().min(1),
-    choices: z.array(Choice).min(3).max(6),
-    answer: z.string().regex(/^[A-F]$/),
+    /** Exactly four choices, A–D, as on the CPA exam. */
+    choices: z.array(Choice).length(4, 'an MCQ has exactly four choices (A–D)'),
+    answer: z.string().regex(/^[A-D]$/),
     explanation: z.string().min(1),
   })
   .superRefine((q, ctx) => {
