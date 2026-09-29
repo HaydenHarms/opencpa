@@ -48,7 +48,7 @@ opencpa/
 
 - [x] Monorepo scaffold: React site, Hono API, D1 database, content schema, CI
 - [x] Deployed to Cloudflare (Pages + Workers + D1) with automatic deploys from `main`
-- [ ] First reviewed FAR batch (~25 questions)
+- [x] First reviewed FAR batch (~25 questions)
 - [ ] Remaining sections, in reviewed batches
 - [ ] Task-based simulations (journal-entry grid, numeric, research)
 - [ ] Accounts (GitHub / email) so progress syncs across devices
