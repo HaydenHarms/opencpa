@@ -19,7 +19,7 @@ Answer positions are balanced (A 7 · B 6 · C 6 · D 6).
 
 ## Problems found in the legacy source
 
-**Distractors whose stated error doesn't produce the number shown (9, all rebuilt):**
+**Distractors whose stated error doesn't produce the number shown (10, all rebuilt):**
 
 | Legacy item                 | Problem                                                                                              | Fix                                                                               |
 | --------------------------- | ---------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
