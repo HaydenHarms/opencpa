@@ -30,7 +30,7 @@ Commands: `pnpm install`, `pnpm dev`, `pnpm test`, `pnpm typecheck`, `pnpm conte
 ## Current state (as of 2026-09-28)
 
 - Scaffold, deploy pipeline and database are all live.
-- **FAR batch 01** (25 reviewed MCQs) is on branch `content/far-batch-01`, waiting for Hayden to open and merge the PR. The review report is at `docs/reviews/far-batch-01.md`, and the generator is `scripts/batches/far-batch-01.py`.
+- **FAR batch 01** (25 reviewed MCQs) is merged and live (PR #1). The review report is at `docs/reviews/far-batch-01.md`, and the generator is `scripts/batches/far-batch-01.py`. The next batch is `far-batch-02`.
 
 ## Content pipeline: how to do a batch
 
