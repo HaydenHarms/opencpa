@@ -1,0 +1,37 @@
+id: far-income-statement-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 205-20 (discontinued operations: presentation)'
+  - ASC 360-10 (long-lived assets held for sale)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Quinn Co.'s draft Year 1 income statement reports a loss from discontinued operations, net of tax,
+  of $112,500. The discontinued component is a division that met the held-for-sale criteria in November.
+  Supporting schedules show that the division had a pretax operating loss of $150,000 for Year 1, and
+  that when it was classified as held for sale its carrying amount of $800,000 exceeded its fair value
+  less cost to sell of $740,000, a loss that is not in the draft. Quinn's tax rate is 25%. After any corrections
+  needed, what is Quinn's loss from discontinued operations, net of tax?
+choices:
+- id: A
+  text: $112,500
+  rationale: Accepts the draft, which omits the $60,000 write-down to fair value less cost to sell.
+- id: B
+  text: $157,500
+  rationale: Correct. ($150,000 operating loss + $60,000 write-down) × (1 − 25%).
+- id: C
+  text: $172,500
+  rationale: Adds the $60,000 write-down without its tax effect. The write-down is part of the discontinued
+    component's pretax loss.
+- id: D
+  text: $210,000
+  rationale: Reports the whole loss before tax. Discontinued operations are presented net of tax.
+answer: B
+explanation: 'The loss from discontinued operations includes the component''s operating results for the
+  period and any loss on measuring it at fair value less cost to sell: $150,000 + ($800,000 − $740,000)
+  = $210,000 before tax. Net of the 25% tax benefit, the loss is $157,500.'

@@ -1,0 +1,41 @@
+id: far-lessee-classification-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 842-10 (lease classification criteria; ASC 842-10-55-2 thresholds)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Cole Co. is the lessee in three new leases, none of which transfers ownership, includes a purchase
+  option Cole is reasonably certain to exercise, or includes a residual value guarantee. Cole uses 75%
+  of economic life as a "major part" and 90% of fair value as "substantially all." Lease 1: a 7-year lease
+  of equipment with a 9-year economic life. Lease 2: a 3-year lease of a truck with an 8-year economic
+  life whose lease payments have a present value equal to 60% of its fair value. Lease 3: a 2-year lease
+  of a machine built to Cole''s specifications that the lessor could not use for anyone else without major
+  modification. Which leases are finance leases?'
+choices:
+- id: A
+  text: Leases 1 and 3
+  rationale: Correct. Lease 1 covers 78% of the economic life, and Lease 3's asset has no alternative
+    use to the lessor.
+- id: B
+  text: Lease 1 only
+  rationale: Misses Lease 3. An asset so specialized that it has no alternative use to the lessor makes
+    the lease a finance lease.
+- id: C
+  text: Lease 3 only
+  rationale: Misses Lease 1. A term of 7 of 9 years (78%) is a major part of the economic life.
+- id: D
+  text: Leases 1, 2 and 3
+  rationale: 'Includes Lease 2, which meets none of the criteria: its term is short and its payments are
+    60% of fair value.'
+answer: A
+explanation: 'A lease is a finance lease if it meets any of five criteria: transfer of ownership, a purchase
+  option reasonably certain to be exercised, a term that is a major part of the remaining economic life,
+  payments (plus any residual guarantee) that are substantially all of fair value, or an asset so specialized
+  it has no alternative use to the lessor. Lease 1: 7 ÷ 9 = 78% ≥ 75%, finance. Lease 2: meets none, operating.
+  Lease 3: specialized asset, finance.'

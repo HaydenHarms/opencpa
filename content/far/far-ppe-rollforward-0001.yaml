@@ -1,0 +1,35 @@
+id: far-ppe-rollforward-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 360-10 (property, plant and equipment; gains and losses on disposal)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Ulm Co.'s equipment rollforward shows gross equipment of $1,200,000 at the start of the year and
+  $1,350,000 at the end, with $300,000 of purchases per the capital expenditures report. Accumulated depreciation
+  was $400,000 at the start and $430,000 at the end, and depreciation expense was $110,000. The only disposal
+  was one item sold for $50,000 in cash. What gain or loss should Ulm report on the sale?
+choices:
+- id: A
+  text: $20,000 loss
+  rationale: Correct. Cost removed $150,000 less accumulated depreciation removed $80,000 = carrying amount
+    $70,000; proceeds $50,000.
+- id: B
+  text: $50,000 gain
+  rationale: Treats the whole $50,000 of proceeds as gain, ignoring the equipment's carrying amount.
+- id: C
+  text: $70,000 loss
+  rationale: 'Uses the $30,000 net change in accumulated depreciation as the amount removed. The amount
+    removed is what the rollforward leaves unexplained: $400,000 + $110,000 − $430,000 = $80,000.'
+- id: D
+  text: $100,000 loss
+  rationale: Compares the proceeds with the equipment's cost without removing its accumulated depreciation.
+answer: A
+explanation: Derive the disposal from the rollforward. Cost removed = $1,200,000 + $300,000 − $1,350,000
+  = $150,000. Accumulated depreciation removed = $400,000 + $110,000 − $430,000 = $80,000. Carrying amount
+  = $70,000; proceeds $50,000; loss = $20,000.

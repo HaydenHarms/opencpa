@@ -1,0 +1,38 @@
+id: far-performance-metrics-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Financial statement analysis: price-to-earnings ratio and dividend payout ratio'
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Oates Corp. reports net income of $2,400,000 for the year. It declared $400,000 of dividends on
+  its preferred stock and $600,000 of dividends on its common stock. Weighted-average common shares outstanding
+  were 1,000,000, and the common stock's market price at year-end is $30. Oates computes the dividend
+  payout ratio on earnings available to common shareholders. What are Oates's price-to-earnings ratio
+  and dividend payout ratio?
+choices:
+- id: A
+  text: 12.5 P/E; 25% payout
+  rationale: Uses net income without deducting preferred dividends for both ratios. Both are based on
+    earnings available to common shareholders.
+- id: B
+  text: 12.5 P/E; 30% payout
+  rationale: Computes EPS without deducting the $400,000 of preferred dividends ($2.40), which understates
+    the P/E ratio.
+- id: C
+  text: 15.0 P/E; 25% payout
+  rationale: Gets the P/E ratio right but divides common dividends by total net income for the payout
+    ratio.
+- id: D
+  text: 15.0 P/E; 30% payout
+  rationale: Correct. EPS = ($2,400,000 − $400,000) ÷ 1,000,000 = $2.00; P/E = $30 ÷ $2.00 = 15.0; payout
+    = $600,000 ÷ $2,000,000 = 30%.
+answer: D
+explanation: Earnings available to common = $2,400,000 − $400,000 preferred dividends = $2,000,000; EPS
+  = $2.00. Price-to-earnings ratio = $30 ÷ $2.00 = 15.0. Dividend payout ratio = common dividends ÷ earnings
+  available to common = $600,000 ÷ $2,000,000 = 30%.

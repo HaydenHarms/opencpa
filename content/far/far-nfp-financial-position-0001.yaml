@@ -1,0 +1,41 @@
+id: far-nfp-financial-position-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of financial position (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-210 (not-for-profit statement of financial position)
+  - ASC 958-205 (net assets with and without donor restrictions)
+  - ASC 958-605 (implied time restrictions on promises to give)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At year-end, Oak Hollow Society, a not-for-profit entity, has: unconditional promises to give of
+  $80,000, due next year, for which donors specified no purpose; an endowment gift of $500,000 that donors
+  require to be held in perpetuity; $60,000 of accumulated earnings on that endowment that the board has
+  not yet appropriated for spending; $200,000 that the board itself has set aside as a quasi-endowment;
+  $45,000 of unspent gifts that donors restricted to scholarships; and $900,000 of property and equipment
+  bought with unrestricted funds. What total should Oak Hollow report as net assets with donor restrictions?'
+choices:
+- id: A
+  text: $605,000
+  rationale: Omits the $80,000 of promises to give. Amounts receivable in a later period carry an implied
+    time restriction until they are due.
+- id: B
+  text: $625,000
+  rationale: Omits the $60,000 of unappropriated endowment earnings. Earnings on a donor-restricted endowment
+    stay restricted until appropriated for spending.
+- id: C
+  text: $685,000
+  rationale: Correct. $80,000 + $500,000 + $60,000 + $45,000.
+- id: D
+  text: $885,000
+  rationale: Includes the $200,000 quasi-endowment. Board designations are net assets without donor restrictions;
+    only donors can impose restrictions.
+answer: C
+explanation: 'Net assets with donor restrictions: promises to give due in a future period (implied time
+  restriction) $80,000; the perpetual endowment $500,000; unappropriated earnings on the donor-restricted
+  endowment $60,000; and the unspent scholarship gifts $45,000. Total $685,000. The board-designated quasi-endowment
+  and the property bought with unrestricted funds are without donor restrictions.'

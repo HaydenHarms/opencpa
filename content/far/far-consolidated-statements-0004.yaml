@@ -1,0 +1,41 @@
+id: far-consolidated-statements-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 810-10 (noncontrolling interests; intercompany profit elimination)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Pace Corp. owns 80% of Sorel Inc. and measured the noncontrolling interest at fair value at acquisition.
+  For Year 2, Sorel reports net income of $200,000. Consolidation adjustments for Year 2 include $15,000
+  of amortization of the excess of fair value over book value of Sorel's equipment at the acquisition
+  date. During Year 2 Sorel also sold goods to Pace for $100,000 that had cost Sorel $60,000, and Pace
+  still holds 25% of them at year-end. Pace's draft consolidated income statement reports net income attributable
+  to the noncontrolling interest of $40,000. After any corrections needed, what should that amount be?
+choices:
+- id: A
+  text: $35,000
+  rationale: Correct. 20% × ($200,000 − $15,000 amortization − $10,000 unrealized profit on Sorel's sale).
+- id: B
+  text: $37,000
+  rationale: Adjusts Sorel's income for the amortization but not for the unrealized profit. Profit on
+    an upstream sale is earned by the subsidiary, so its elimination is shared with the noncontrolling
+    interest.
+- id: C
+  text: $38,000
+  rationale: Adjusts for the unrealized profit but not the $15,000 amortization of Sorel's fair value
+    step-up.
+- id: D
+  text: $40,000
+  rationale: Accepts the draft, which applies 20% to Sorel's reported income without either consolidation
+    adjustment.
+answer: A
+explanation: 'The noncontrolling interest shares in the subsidiary''s income as adjusted in consolidation.
+  Sorel''s reported income of $200,000 is reduced by the $15,000 amortization of its acquisition-date
+  fair value adjustments and by the unrealized profit on its upstream sale still in Pace''s inventory:
+  25% × ($100,000 − $60,000) = $10,000. Adjusted income = $175,000; noncontrolling interest = 20% × $175,000
+  = $35,000.'

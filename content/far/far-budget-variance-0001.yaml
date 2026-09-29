@@ -1,0 +1,38 @@
+id: far-budget-variance-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Budget-versus-actual analysis: flexible budget variances'
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Norris Co.''s static budget for Year 1 was based on 10,000 units: revenue $500,000, variable costs
+  $300,000, and fixed costs $120,000, for operating income of $80,000. Norris actually sold 11,000 units,
+  with revenue of $561,000, variable costs of $341,000, and fixed costs of $125,000, for operating income
+  of $95,000. What is the flexible-budget variance for operating income?'
+choices:
+- id: A
+  text: $5,000 unfavorable
+  rationale: Correct. The flexible budget for 11,000 units is 11,000 × $20 − $120,000 = $100,000; actual
+    operating income of $95,000 is $5,000 lower.
+- id: B
+  text: $5,000 favorable
+  rationale: Gets the amount right but the direction wrong. Actual operating income is below the flexible
+    budget.
+- id: C
+  text: $15,000 favorable
+  rationale: Compares actual results with the static budget. That static-budget variance mixes the effect
+    of selling more units with the flexible-budget variance.
+- id: D
+  text: $20,000 favorable
+  rationale: 'Computes the sales-volume variance: 1,000 extra units × the $20 budgeted contribution margin.'
+answer: A
+explanation: 'The flexible budget restates the budget at the actual 11,000 units: revenue $550,000, variable
+  costs $330,000, fixed costs $120,000, operating income $100,000. Flexible-budget variance = actual $95,000
+  − flexible $100,000 = $5,000 unfavorable (revenue $11,000 F, variable costs $11,000 U, fixed costs $5,000
+  U). The $15,000 favorable static-budget variance splits into this $5,000 U and a $20,000 F sales-volume
+  variance.'

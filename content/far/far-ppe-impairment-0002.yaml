@@ -1,0 +1,39 @@
+id: far-ppe-impairment-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 360-10 (impairment of an asset group: allocation of the loss)'
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Yates Co. tests an asset group for impairment. The group consists of Machine A (carrying amount
+  $300,000), Machine B ($200,000) and a building ($500,000). The group's undiscounted future cash flows
+  are $900,000 and its fair value is $800,000. The building's own fair value is $460,000; the machines'
+  individual fair values cannot be determined without undue cost. How much of the impairment loss should
+  Yates allocate to Machine A?
+choices:
+- id: A
+  text: $36,000
+  rationale: Allocates to Machine A only its share of the $60,000 that could not be charged to the building.
+- id: B
+  text: $60,000
+  rationale: Allocates the $200,000 loss pro rata to all three assets without limiting the building to
+    its $40,000 excess over fair value.
+- id: C
+  text: $96,000
+  rationale: Correct. Pro rata $60,000, plus 60% of the $60,000 the building cannot absorb (its loss is
+    capped at $40,000).
+- id: D
+  text: $120,000
+  rationale: Allocates the whole $200,000 loss to the two machines (60% to Machine A). The building takes
+    its share, limited to its $40,000 excess over fair value.
+answer: C
+explanation: 'The group is not recoverable ($900,000 < $1,000,000), so the loss is $1,000,000 − $800,000
+  = $200,000, allocated pro rata by carrying amount but not reducing any asset below its determinable
+  fair value. Pro rata: A $60,000, B $40,000, building $100,000. The building can absorb only $500,000
+  − $460,000 = $40,000, so the other $60,000 is reallocated to the machines in a 3:2 ratio: A $36,000,
+  B $24,000. Machine A''s total = $96,000.'

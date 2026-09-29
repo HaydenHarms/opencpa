@@ -1,0 +1,34 @@
+id: far-valuation-allowance-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 740-10 (valuation allowance: positive and negative evidence)'
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: In deciding whether a deferred tax asset needs a valuation allowance, which of the following is
+  significant negative evidence that is difficult to overcome?
+choices:
+- id: A
+  text: A firm sales backlog that will produce taxable income
+  rationale: 'Positive evidence: expected future taxable income supports realizing the asset.'
+- id: B
+  text: Appreciated assets whose sale would produce taxable income
+  rationale: 'Positive evidence: a tax-planning source of future taxable income.'
+- id: C
+  text: Taxable temporary differences reversing in the carryforward period
+  rationale: 'Positive evidence: a source of taxable income against which the deductible amounts can be
+    used.'
+- id: D
+  text: Cumulative pretax losses in the three most recent years
+  rationale: Correct. Cumulative losses in recent years are significant negative evidence that is difficult
+    to overcome.
+answer: D
+explanation: A valuation allowance is needed if it is more likely than not that some or all of a deferred
+  tax asset will not be realized. Cumulative losses in recent years are significant negative evidence
+  that is difficult to overcome. A sales backlog, appreciated assets, and reversing taxable temporary
+  differences are sources of taxable income that support realization.

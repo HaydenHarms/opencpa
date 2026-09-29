@@ -1,0 +1,40 @@
+id: far-exit-costs-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 420-10 (exit or disposal cost obligations: one-time employee termination benefits)'
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On December 1, Year 1, Vail Co. commits to closing a plant on March 31, Year 2, and communicates
+  the plan to the plant's 50 employees that day. Each employee who stays until the plant closes will receive
+  a $6,000 termination payment; employees who leave earlier receive nothing. Under Vail's plan and local
+  law, employees must be given at least 60 days' notice before termination. Vail expects all 50 to stay.
+  Vail recognizes such costs ratably by month. What termination benefit expense should Vail recognize
+  in Year 1?
+choices:
+- id: A
+  text: $0
+  rationale: Waits until the plant closes. When employees must work to a future date to earn the benefit,
+    the cost is recognized over that service period, starting when the plan is communicated.
+- id: B
+  text: $75,000
+  rationale: Correct. The $300,000 benefit is recognized ratably from December 1 to March 31 (4 months);
+    one month falls in Year 1.
+- id: C
+  text: $150,000
+  rationale: Spreads the benefit over the 60-day minimum notice period. Because employees must stay beyond
+    that period to earn it, it is spread over the full period to March 31.
+- id: D
+  text: $300,000
+  rationale: Recognizes the whole benefit when the plan is communicated. That applies only when employees
+    are not required to render service beyond the minimum retention period.
+answer: B
+explanation: 'One-time termination benefits are recognized when the plan is communicated if employees
+  need not work beyond the minimum retention period. Here they must stay until March 31, beyond the 60-day
+  minimum, so the $300,000 (50 × $6,000) is recognized ratably over the four months from December 1 to
+  March 31: $75,000 in Year 1.'

@@ -1,0 +1,39 @@
+id: far-cash-flows-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 230-10 (classification of cash receipts and payments)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Ives Co.''s controller is deriving how six Year 1 transactions affect net cash provided by operating
+  activities: (1) collected $50,000 of accounts receivable from customers; (2) paid $30,000 in December
+  for insurance covering the next year; (3) sold equipment with a carrying amount of $40,000 for $55,000
+  in cash; (4) paid $20,000 of interest on a bank loan; (5) accrued $12,000 of wages that will be paid
+  in January; and (6) received $15,000 of dividends on an equity investment. Under U.S. GAAP, by how much
+  do these transactions increase net cash provided by operating activities?'
+choices:
+- id: A
+  text: $3,000
+  rationale: Deducts the $12,000 of accrued wages. An accrual records an expense without any cash payment.
+- id: B
+  text: $15,000
+  rationale: Correct. +$50,000 − $30,000 − $20,000 + $15,000. The equipment sale is investing, and the
+    accrued wages involve no cash.
+- id: C
+  text: $35,000
+  rationale: Leaves out the $20,000 of interest paid. Under U.S. GAAP, interest paid is an operating cash
+    outflow.
+- id: D
+  text: $70,000
+  rationale: Adds the $55,000 of equipment sale proceeds. Proceeds from selling equipment are an investing
+    inflow.
+answer: B
+explanation: 'Operating cash flows: collections from customers +$50,000; insurance paid in advance −$30,000;
+  interest paid −$20,000 (operating under U.S. GAAP); dividends received +$15,000 (operating under U.S.
+  GAAP). Net +$15,000. The $55,000 of equipment proceeds is an investing inflow (the $15,000 gain is removed
+  under the indirect method), and the wage accrual has no cash effect.'

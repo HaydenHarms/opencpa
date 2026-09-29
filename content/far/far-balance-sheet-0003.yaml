@@ -1,0 +1,39 @@
+id: far-balance-sheet-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Balance sheet
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 505-30 (treasury stock)
+  - ASC 810-10 (noncontrolling interest presented in equity)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Reyes Corp.''s draft consolidated balance sheet reports total stockholders'' equity of $1,100,000:
+  common stock $100,000, additional paid-in capital $400,000, and retained earnings $600,000. Supporting
+  documents show that $50,000 of Reyes''s own shares, reacquired and held in treasury, are reported among
+  noncurrent assets as "investment in treasury stock," and that the $80,000 noncontrolling interest in
+  a subsidiary is reported as a noncurrent liability. After correcting the draft, what is Reyes''s total
+  equity?'
+choices:
+- id: A
+  text: $1,050,000
+  rationale: Corrects the treasury stock but leaves the noncontrolling interest in liabilities. Noncontrolling
+    interest is part of equity in consolidated statements.
+- id: B
+  text: $1,100,000
+  rationale: Accepts the draft. Treasury stock is a deduction from equity, not an asset, and noncontrolling
+    interest is equity, not a liability.
+- id: C
+  text: $1,130,000
+  rationale: Correct. $1,100,000 − $50,000 treasury stock + $80,000 noncontrolling interest.
+- id: D
+  text: $1,180,000
+  rationale: Moves the noncontrolling interest into equity but leaves the treasury stock as an asset.
+answer: C
+explanation: Treasury stock is a contra-equity account, so the $50,000 comes out of assets and reduces
+  equity. Noncontrolling interest is reported within equity, separately from the parent's equity, so the
+  $80,000 moves from liabilities to equity. Total equity = $1,100,000 − $50,000 + $80,000 = $1,130,000
+  (the parent's share is $1,050,000).

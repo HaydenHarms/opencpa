@@ -1,0 +1,34 @@
+id: far-sec-forms-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Public Company Reporting Topics
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'SEC Form 8-K (Item 5.02: departure of principal officers)'
+  - Securities Exchange Act of 1934
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: The chief executive officer of a U.S. registrant resigns unexpectedly in the middle of a quarter.
+  Which filing must the registrant make, and within what period?
+choices:
+- id: A
+  text: Form 10-Q, within 40 or 45 days after quarter-end
+  rationale: The 10-Q is the quarterly report; a principal officer's departure requires a current report.
+- id: B
+  text: Form 8-K, generally within four business days
+  rationale: Correct. The departure of a principal officer is a Form 8-K event, reported within four business
+    days.
+- id: C
+  text: Form 8-K, within 15 calendar days
+  rationale: The 15-day window applied before the SEC's 2004 amendments; most 8-K items are now due in
+    four business days.
+- id: D
+  text: Form 10-K, within 60 to 90 days after year-end
+  rationale: The 10-K is the annual report; current events are reported on Form 8-K.
+answer: B
+explanation: Form 8-K is the current report for significant events between periodic reports. The departure
+  of a principal executive officer (Item 5.02) must generally be reported within four business days. Forms
+  10-Q and 10-K are the quarterly and annual periodic reports.

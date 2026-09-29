@@ -1,0 +1,35 @@
+id: far-intangibles-impairment-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Intangible assets
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 350-30 (finite-lived intangibles tested under ASC 360-10)
+  - ASC 360-10 (recoverability test and measurement)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Zane Co. bought a customer list for $400,000 three years ago and amortizes it straight-line over
+  8 years with no residual value. After losing a major customer, Zane estimates the list's remaining undiscounted
+  cash flows at $230,000 and its fair value at $180,000. What impairment loss should Zane recognize?
+choices:
+- id: A
+  text: $20,000
+  rationale: Measures the loss as carrying amount minus undiscounted cash flows. Undiscounted cash flows
+    only test recoverability; the loss is measured against fair value.
+- id: B
+  text: $50,000
+  rationale: Measures the loss as undiscounted cash flows minus fair value. The loss is carrying amount
+    minus fair value.
+- id: C
+  text: $70,000
+  rationale: Correct. Carrying amount $400,000 − 3 × $50,000 = $250,000, less fair value $180,000.
+- id: D
+  text: $220,000
+  rationale: Compares fair value with the original $400,000 cost, ignoring three years of amortization.
+answer: C
+explanation: A finite-lived intangible is tested for recoverability like other long-lived assets. Carrying
+  amount = $400,000 − 3 × ($400,000 ÷ 8) = $250,000. Undiscounted cash flows of $230,000 are less than
+  the carrying amount, so the asset is impaired. Loss = $250,000 − $180,000 fair value = $70,000.

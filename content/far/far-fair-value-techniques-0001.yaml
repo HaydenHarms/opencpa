@@ -1,0 +1,37 @@
+id: far-fair-value-techniques-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Fair value measurements
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 820-10 (income approach; market participant assumptions)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Barr Co. must measure the fair value of a patent using an income approach. Market participants would
+  expect the patent to generate cash flows of $100,000 at the end of each of the next five years and would
+  discount them at 10%. Barr itself expects $120,000 a year because of synergies with its other products,
+  and its own cost of capital is 12%. Present value factors for a five-year ordinary annuity are 3.7908
+  at 10% and 3.6048 at 12%; the four-year factor at 10% is 3.1699. What is the patent's fair value?
+choices:
+- id: A
+  text: $360,480
+  rationale: Discounts market participants' cash flows at Barr's own 12% cost of capital. Fair value uses
+    market participants' discount rate.
+- id: B
+  text: $379,080
+  rationale: Correct. $100,000 × 3.7908, using market participants' cash flows and discount rate.
+- id: C
+  text: $416,990
+  rationale: Treats the cash flows as received at the start of each year ($100,000 + $100,000 × 3.1699).
+    They arrive at the end of each year.
+- id: D
+  text: $454,896
+  rationale: Uses Barr's own expected cash flows, including entity-specific synergies. Fair value reflects
+    market participant assumptions.
+answer: B
+explanation: 'Fair value is a market-based measurement: it uses the assumptions market participants would
+  use, not entity-specific synergies or the entity''s own cost of capital. Fair value = $100,000 × 3.7908
+  = $379,080.'

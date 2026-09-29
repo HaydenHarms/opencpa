@@ -1,0 +1,46 @@
+id: far-notes-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Notes to financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 606-10 (performance obligations satisfied over time; contract liabilities)
+  - 'ASC 330-10 (inventory: LIFO)'
+  - ASC 470-10 (debt maturities)
+  - ASC 360-10 (property, plant and equipment)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Linwood Co.''s fiscal year ends June 30. Its draft June 30, Year 2, balance sheet reports property
+  and equipment, net, of $1,800,000; inventories of $640,000; long-term debt of $1,500,000, of which $100,000
+  is current; and no contract liabilities. You compare four draft note excerpts with the statements. Property
+  note: cost $3,000,000, less accumulated depreciation of $1,200,000. Inventory note: inventories are
+  stated at LIFO cost; they would be $90,000 higher under FIFO. Debt note: maturities are $100,000 in
+  fiscal Year 3, $200,000 in each of fiscal Years 4 and 5, and $1,000,000 thereafter. Revenue note: revenue
+  from one-year customer support contracts, which Linwood bills and collects every January 1, is recognized
+  when billed; contracts billed on January 1, Year 2, totaled $240,000. Which note reveals that the draft
+  financial statements must be corrected?'
+choices:
+- id: A
+  text: The revenue note
+  rationale: 'Correct. Support is a service provided over the year, so half of the $240,000 billed on
+    January 1 is unearned at June 30: a $120,000 contract liability is missing.'
+- id: B
+  text: The property note
+  rationale: Consistent. Cost less accumulated depreciation equals the $1,800,000 on the balance sheet.
+- id: C
+  text: The inventory note
+  rationale: Consistent. Disclosing the FIFO difference (the LIFO reserve) is expected; it does not change
+    the LIFO carrying amount.
+- id: D
+  text: The debt note
+  rationale: Consistent. The maturities total $1,500,000, and the $100,000 due in fiscal Year 3 matches
+    the current portion.
+answer: A
+explanation: 'Support contracts are performance obligations satisfied over time, so revenue is recognized
+  as the year of support passes, not when billed. On June 30, Year 2, six months of the contracts billed
+  January 1 remain: $240,000 × 6/12 = $120,000 should be a contract liability, and revenue is overstated
+  by the same amount. The revenue note describes a policy that does not comply with ASC 606 and reveals
+  the misstatement. The other three notes agree with the statements.'

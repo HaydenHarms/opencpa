@@ -1,0 +1,38 @@
+id: far-nfp-agent-transfers-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-605 (transfers received as an agent, trustee or intermediary; variance power)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'During the year, Unity Fund, a not-for-profit federated fundraising organization, receives: $50,000
+  from donors who specify that it go to Riverside Shelter, an unrelated charity, with no power for Unity
+  to redirect it; $30,000 for Unity''s general use; $20,000 from a donor who names a beneficiary but explicitly
+  gives Unity the unilateral power to redirect the gift to another beneficiary; and $10,000 transferred
+  by Riverside Shelter itself for Unity to invest and hold for Riverside''s future use. What contribution
+  revenue should Unity recognize?'
+choices:
+- id: A
+  text: $50,000
+  rationale: Correct. The $30,000 for general use and the $20,000 over which Unity has variance power.
+- id: B
+  text: $60,000
+  rationale: Also counts Riverside Shelter's $10,000. A transfer the beneficiary makes for its own benefit
+    is not a contribution to Unity.
+- id: C
+  text: $100,000
+  rationale: Also counts the $50,000 designated for Riverside without variance power. Unity acts as an
+    agent for it and records a liability.
+- id: D
+  text: $110,000
+  rationale: Counts every receipt as a contribution.
+answer: A
+explanation: 'A recipient that receives assets for a specified beneficiary without variance power acts
+  as an agent: it records a liability, not revenue ($50,000). Explicit variance power makes the gift Unity''s
+  contribution ($20,000). The $30,000 for general use is a contribution. Riverside''s own $10,000 is held
+  for its benefit and is not a contribution to Unity. Contribution revenue = $50,000.'

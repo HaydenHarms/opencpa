@@ -1,0 +1,34 @@
+id: far-asset-retirement-obligations-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 410-20 (asset retirement obligations)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Under ASC 410-20, how is an asset retirement obligation initially measured, and how is the later
+  increase in the liability for the passage of time reported?
+choices:
+- id: A
+  text: Undiscounted estimated retirement costs; no accretion is recorded in later periods
+  rationale: The obligation is measured at fair value, typically a present value, and accreted each period.
+- id: B
+  text: Present value at the incremental borrowing rate; accretion is reported as interest expense
+  rationale: The discount rate is a credit-adjusted risk-free rate, and accretion is not interest cost.
+- id: C
+  text: Fair value, discounting at a credit-adjusted risk-free rate; accretion is an operating expense
+  rationale: Correct. The liability is initially measured at fair value and accreted over time; accretion
+    is classified as an operating expense, not interest.
+- id: D
+  text: Fair value, discounting at a credit-adjusted risk-free rate; accretion is interest expense
+  rationale: The measurement is right, but accretion expense is an operating item; ASC 410-20 says it
+    is not interest cost.
+answer: C
+explanation: An asset retirement obligation is recognized at fair value when incurred, usually measured
+  as the present value of expected cash flows discounted at a credit-adjusted risk-free rate, and the
+  same amount is added to the asset's carrying amount. The liability is then accreted each period; accretion
+  expense is classified as an operating item, not as interest cost.

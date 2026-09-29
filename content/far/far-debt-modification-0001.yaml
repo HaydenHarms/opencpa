@@ -1,0 +1,40 @@
+id: far-debt-modification-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 470-50 (modification or exchange of debt: 10% cash flow test)'
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Wade Co. owes a bank $1,000,000 on a note with 5 years remaining and 8% interest paid annually;
+  the note's carrying amount is $1,000,000. The bank agrees to cut the rate to 5%, with the principal
+  and maturity unchanged, and Wade pays the bank a $20,000 fee to modify the note. Wade is not experiencing
+  financial difficulty. At 8%, the present value factors for 5 periods are 3.9927 for an ordinary annuity
+  and 0.6806 for a single sum. By what percentage do the present value of the new cash flows and the present
+  value of the old cash flows differ, and how is the change accounted for?
+choices:
+- id: A
+  text: 3.00% change; modification
+  rationale: Compares the interest rates (8% − 5%) instead of the present values of the cash flows.
+- id: B
+  text: 9.98% change; modification
+  rationale: 'Correct. New cash flows: $50,000 × 3.9927 + $1,000,000 × 0.6806 + $20,000 fee = $900,235,
+    9.98% below $1,000,000.'
+- id: C
+  text: 11.98% change; extinguishment
+  rationale: Leaves out the $20,000 fee paid to the lender, which is part of the new debt's cash flows
+    in the 10% test.
+- id: D
+  text: 13.98% change; extinguishment
+  rationale: Subtracts the $20,000 fee from the new cash flows. A fee the borrower pays the lender adds
+    to the new debt's cash flows.
+answer: B
+explanation: 'A change in debt terms is an extinguishment if the present value of the new cash flows,
+  including fees paid to the creditor and discounted at the original effective rate, differs by at least
+  10% from the present value of the remaining original cash flows. New: $50,000 × 3.9927 = $199,635 +
+  $1,000,000 × 0.6806 = $680,600 + $20,000 fee = $900,235. Old: $1,000,000. Difference 9.98% < 10%, so
+  it is a modification: the fee is amortized as an adjustment of interest over the remaining term.'

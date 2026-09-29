@@ -1,0 +1,39 @@
+id: far-revenue-licenses-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 606-10 (licenses of intellectual property: right to use versus right to access)'
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On December 1, Year 1, Egan Co. sells a customer a perpetual license to its existing accounting
+  software for $300,000, together with two years of technical support for $60,000; the prices equal standalone
+  selling prices, and Egan does not expect updates to change the software's functionality. Also on December
+  1, Egan grants a franchisee a five-year license to use its restaurant brand, which Egan will continue
+  to support with advertising and brand development, for an upfront fee of $500,000. What revenue should
+  Egan recognize for December, Year 1?
+choices:
+- id: A
+  text: $310,833
+  rationale: Correct. $300,000 for the software license at transfer, plus $60,000 ÷ 24 = $2,500 of support
+    and $500,000 ÷ 60 = $8,333 of the brand license.
+- id: B
+  text: $368,333
+  rationale: Recognizes the two years of support at the start. Support is a service provided over the
+    two years.
+- id: C
+  text: $802,500
+  rationale: Recognizes the whole franchise fee at the start. A brand license supported by ongoing activities
+    gives a right to access, recognized over the license term.
+- id: D
+  text: $860,000
+  rationale: Recognizes everything on December 1.
+answer: A
+explanation: 'The software is functional intellectual property whose utility does not depend on Egan''s
+  ongoing activities, so the license is a right to use recognized when control transfers: $300,000. Support
+  is recognized over 24 months: $2,500 for December. The brand license is symbolic intellectual property,
+  a right to access recognized over the five-year term: $500,000 ÷ 60 = $8,333. December revenue = $310,833.'

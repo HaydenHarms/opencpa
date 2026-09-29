@@ -1,0 +1,39 @@
+id: far-income-taxes-nol-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (deferred tax assets for net operating loss carryforwards)
+  - IRC §172 (net operating loss carryforward; 80% limitation)
+  notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
+stem: In Year 1, Abbot Corp. has a pretax book loss and a taxable loss of $400,000, with no temporary
+  or permanent differences. Under current federal law the loss can be carried forward indefinitely but
+  not back, and in any future year it can offset only 80% of that year's taxable income. Abbot expects
+  enough future taxable income to use the whole loss and needs no valuation allowance. The enacted tax
+  rate is 21%. What income tax benefit should Abbot report in Year 1?
+choices:
+- id: A
+  text: $0
+  rationale: Recognizes no benefit because the loss cannot be carried back. A carryforward creates a deferred
+    tax asset when realization is more likely than not.
+- id: B
+  text: $16,800
+  rationale: Recognizes a benefit only for the 20% of each future year's income the loss cannot offset.
+    The limit slows the loss's use; the whole loss is still used.
+- id: C
+  text: $67,200
+  rationale: Applies the 80% limitation to the deferred tax asset. The limit affects how fast the loss
+    is used, not how much of it is used, when future income is sufficient.
+- id: D
+  text: $84,000
+  rationale: Correct. Deferred tax asset $400,000 × 21% = $84,000, with a matching deferred tax benefit.
+answer: D
+explanation: The net operating loss carryforward gives rise to a deferred tax asset of $400,000 × 21%
+  = $84,000. Because Abbot expects to use the entire carryforward, no valuation allowance is needed, and
+  the $84,000 is a deferred income tax benefit that offsets the pretax loss. The 80% limitation affects
+  the timing of use, not the total, when future taxable income is sufficient.
