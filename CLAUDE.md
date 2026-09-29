@@ -129,6 +129,7 @@ Hayden's direction (2026-09-29): finish FAR completely before any more BAR, AUD,
 5. **Other sections, after FAR is done.**
    - BAR batch 02 comes first. Its gaps are in `docs/reviews/bar-batch-01.md`; lean toward Area I and II Analysis items to bring Application back under 55%. BAR targets: Area I 40–50%, II 35–45%, III 10–20%; Remembering and Understanding 10–20%, Application 45–55%, Analysis 30–40%.
    - Then AUD and REG, then the disciplines.
+6. **Advanced settings** allowing users to change their question weighting towards their strengths or weaknesses, brainstorm other advanced settings.
 6. **Accounts** (GitHub OAuth or email magic link), moving a student's anonymous progress into their account.
 7. **Before any publicity:** rate limiting, a UI redesign (the current UI is intentionally plain, and Hayden wants it less bland) and a custom domain.
 8. Exam-day mode.
