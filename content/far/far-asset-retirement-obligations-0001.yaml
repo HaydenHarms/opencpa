@@ -14,8 +14,9 @@ stem: Under ASC 410-20, how is an asset retirement obligation initially measured
   increase in the liability for the passage of time reported?
 choices:
 - id: A
-  text: Undiscounted estimated retirement costs; no accretion is recorded in later periods
-  rationale: The obligation is measured at fair value, typically a present value, and accreted each period.
+  text: Fair value, discounting at a credit-adjusted risk-free rate; remeasured to fair value each period
+  rationale: The liability is not remeasured to fair value each period; it is accreted, and only revisions
+    to estimated cash flows change it.
 - id: B
   text: Present value at the incremental borrowing rate; accretion is reported as interest expense
   rationale: The discount rate is a credit-adjusted risk-free rate, and accretion is not interest cost.
@@ -24,7 +25,8 @@ choices:
   rationale: Correct. The liability is initially measured at fair value and accreted over time; accretion
     is classified as an operating expense, not interest.
 - id: D
-  text: Fair value, discounting at a credit-adjusted risk-free rate; accretion is interest expense
+  text: Fair value, discounting at a credit-adjusted risk-free rate; accretion is reported as interest
+    expense
   rationale: The measurement is right, but accretion expense is an operating item; ASC 410-20 says it
     is not interest cost.
 answer: C

@@ -14,17 +14,18 @@ stem: Pace Corp. owns 80% of Sorel Inc. and measured the noncontrolling interest
   For Year 2, Sorel reports net income of $200,000. Consolidation adjustments for Year 2 include $15,000
   of amortization of the excess of fair value over book value of Sorel's equipment at the acquisition
   date. During Year 2 Sorel also sold goods to Pace for $100,000 that had cost Sorel $60,000, and Pace
-  still holds 25% of them at year-end. Pace's draft consolidated income statement reports net income attributable
-  to the noncontrolling interest of $40,000. After any corrections needed, what should that amount be?
+  still holds 25% of them at year-end. Pace attributes the elimination of profit on Sorel's sales to Pace
+  proportionately between the parent and the noncontrolling interest. Pace's draft consolidated income
+  statement reports net income attributable to the noncontrolling interest of $40,000. After any corrections
+  needed, what should that amount be?
 choices:
 - id: A
   text: $35,000
   rationale: Correct. 20% × ($200,000 − $15,000 amortization − $10,000 unrealized profit on Sorel's sale).
 - id: B
   text: $37,000
-  rationale: Adjusts Sorel's income for the amortization but not for the unrealized profit. Profit on
-    an upstream sale is earned by the subsidiary, so its elimination is shared with the noncontrolling
-    interest.
+  rationale: Adjusts Sorel's income for the amortization but not for the unrealized profit. Pace attributes
+    the elimination of upstream profit proportionately, so the noncontrolling interest bears 20% of it.
 - id: C
   text: $38,000
   rationale: Adjusts for the unrealized profit but not the $15,000 amortization of Sorel's fair value

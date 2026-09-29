@@ -66,3 +66,26 @@ A separate agent solved all 25 items from the stems and choices only. It **match
 **Scope note.** The verifier asked whether splitting a static-budget variance into flexible-budget and volume variances is BAR managerial content. `far-budget-variance-0001` stays in FAR: it maps to the FAR Area I.F task "Calculate variances between budget and actual results", and it asks only for the budget-versus-actual variance. The review gate is asked to confirm.
 
 It read `far-cash-flows-0006` as Application; the tag stays Analysis because it maps to the FAR task "derive the impact of transactions on the statement of cash flows".
+
+## Review gate
+
+A fresh review agent graded the batch without reading this report first and read the skill marks from the PDF. **All 25 keys correct; average estimated pass likelihood 82.9%; 13 exam-ready, 11 minor, 1 major.** It confirmed that `far-budget-variance-0001` is FAR (Area I.F, marked Application) and that the rollforward tasks and "derive the impact of transactions on the statement of cash flows" are marked Analysis. Fixes applied:
+
+| Item | Finding | Fix |
+| --- | --- | --- |
+| `far-consolidated-statements-0004` (major) | ASC 810-10-45-18 says the upstream profit elimination *may* be allocated to the noncontrolling interest, so full attribution to the parent made $37,000 defensible | Stem states that Pace attributes the elimination proportionately |
+| `far-contingencies-0004` | "Reasonably possible" and "remote" are forbidden labels | Replaced with facts from counsel and the supplier's credit position |
+| `far-income-statement-0003` | "A loss that is not in the draft" named the error | Clause removed |
+| `far-balance-sheet-0003` | "Total equity" could be read as the parent's share only | Asks what the consolidated balance sheet should report |
+| `far-receivables-rollforward-0001` | "Test reported credit sales" promised a figure that was not given | Now "determine credit sales" |
+| `far-exit-costs-0001` | "Recognizes ratably by month" stated the answer as a policy | Replaced with a neutral whole-months convention |
+| `far-asset-retirement-obligations-0001` | Key still the longest choice; two choices shared a first clause | Choices rebalanced; a second fair-value choice with a wrong measurement removes the pairing cue |
+| `far-debt-modification-0001`, `far-lessee-classification-0001` | Their blueprint tasks are marked Remembering and Understanding | Retagged |
+| `far-nfp-agent-transfers-0001` | The key equalled the $50,000 gift designated for Riverside | That gift is now $40,000 |
+| `far-income-taxes-nol-0001` | Depends on current federal law but had no `review.asOf` | `asOf` added |
+
+A blind check of the five changed items matched the key on all five with no required fixes.
+
+**Tallies after the gate:** batch 04 is 5 / 10 / 10 (20% / 40% / 40%), so the batch alone is above the Remembering and Understanding range, but the 100-item FAR bank is 12 / 50 / 38, inside every range. Areas are unchanged (9 / 8 / 8; bank 35 / 34 / 31).
+
+Gaps for batch 05 named by the reviewer: troubled debt restructurings, EBITDA and asset turnover, statement of comprehensive income recall, purchased software, impairment of investments at fair value, the equity method, fund determination, preparing the NFP statement of activities, and a stand-alone foreign-currency transaction item.

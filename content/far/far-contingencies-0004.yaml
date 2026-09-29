@@ -14,17 +14,17 @@ review:
   notes: Batch 04. Written from scratch; answers solved and every number and distractor computed in code.
 stem: 'Dunn Co. is preparing its year-end statements, which have not been issued. Its files show: (1)
   on December 31, for a fee, Dunn guaranteed a $500,000 bank loan of an unrelated supplier; the guarantee''s
-  fair value at inception was $15,000, and default is considered remote, so expected credit losses on
-  the guarantee are immaterial; (2) Dunn has a noncancelable, unhedged commitment to buy materials next
-  year for $200,000, and their market price has fallen to $170,000; (3) counsel considers an unfavorable
-  outcome in a $400,000 lawsuit against Dunn reasonably possible but not probable; and (4) Dunn does not
-  insure its warehouses against fire, and none has occurred. What total liabilities should Dunn recognize
-  for these matters?'
+  fair value at inception was $15,000; the supplier is current on all its payments and has a strong credit
+  rating, and expected credit losses on the guarantee are immaterial; (2) Dunn has a noncancelable, unhedged
+  commitment to buy materials next year for $200,000, and their market price has fallen to $170,000; (3)
+  in a $400,000 lawsuit against Dunn, counsel believes Dunn has strong defenses and will more likely than
+  not prevail, but cannot rule out an adverse verdict; and (4) Dunn does not insure its warehouses against
+  fire, and none has occurred. What total liabilities should Dunn recognize for these matters?'
 choices:
 - id: A
   text: $0
   rationale: Treats every matter as a disclosure. A guarantee is recognized at fair value at inception
-    even when default is remote, and a loss on a firm purchase commitment is accrued.
+    even when default is unlikely, and a loss on a firm purchase commitment is accrued.
 - id: B
   text: $15,000
   rationale: Recognizes the guarantee but not the $30,000 loss on the purchase commitment.
