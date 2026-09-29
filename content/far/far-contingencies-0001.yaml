@@ -1,0 +1,35 @@
+id: far-contingencies-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 450-20-25-2
+  - ASC 450-20-50-3
+  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
+    rebuilt where needed.
+stem: Bravo Corp. is a defendant in a product liability lawsuit. Its attorneys conclude that an unfavorable
+  outcome is reasonably possible but not probable, and estimate a loss of $2,000,000 if the plaintiff
+  prevails. How should Bravo report the lawsuit?
+choices:
+- id: A
+  text: Accrue a $2,000,000 liability because the amount can be estimated
+  rationale: Accrual requires both a probable loss and a reasonable estimate; the loss is not probable.
+- id: B
+  text: Neither accrue nor disclose the lawsuit
+  rationale: That treatment applies to remote contingencies, not reasonably possible ones.
+- id: C
+  text: Accrue a probability-weighted liability
+  rationale: U.S. GAAP does not accrue expected values for loss contingencies that are not probable.
+- id: D
+  text: Disclose the contingency in the notes, but do not accrue a liability
+  rationale: Correct. A reasonably possible loss requires disclosure of its nature and an estimate of
+    the possible loss, but no accrual.
+answer: D
+explanation: Under ASC 450, a loss contingency is accrued only when it is probable and reasonably estimable.
+  When a loss is reasonably possible, the entity discloses the nature of the contingency and an estimate
+  of the possible loss or range, or states that an estimate cannot be made.

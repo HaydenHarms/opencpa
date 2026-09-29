@@ -1,0 +1,36 @@
+id: far-ppe-impairment-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 360-10-35-17
+  - ASC 360-10-35-29
+  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
+    rebuilt where needed.
+stem: Parkside Manufacturing's machinery (held and used) has a carrying amount of $850,000. Undiscounted
+  future cash flows from its use and disposition are $820,000, and its fair value is $700,000. What impairment
+  loss should Parkside recognize?
+choices:
+- id: A
+  text: $30,000
+  rationale: Uses the undiscounted cash flows to measure the loss. They are used only to test recoverability.
+- id: B
+  text: $0
+  rationale: Would be right only if undiscounted cash flows equaled or exceeded the carrying amount.
+- id: C
+  text: $120,000
+  rationale: Measures the loss as undiscounted cash flows minus fair value; the loss is carrying amount
+    minus fair value.
+- id: D
+  text: $150,000
+  rationale: Correct. The asset fails the recoverability test ($850,000 > $820,000), so the loss is carrying
+    amount minus fair value.
+answer: D
+explanation: 'Step 1 (recoverability): carrying amount $850,000 exceeds undiscounted cash flows of $820,000,
+  so the asset is not recoverable. Step 2 (measurement): loss = carrying amount − fair value = $850,000
+  − $700,000 = $150,000.'

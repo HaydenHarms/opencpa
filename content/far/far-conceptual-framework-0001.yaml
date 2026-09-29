@@ -1,0 +1,38 @@
+id: far-conceptual-framework-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: 'General-purpose financial reporting: for-profit business entities'
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - FASB Concepts Statement No. 8, Chapter 3 (QC12–QC16)
+  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
+    rebuilt where needed.
+stem: A reviewer finds that management deliberately set its warranty reserve and its allowance for credit
+  losses at the high end of their reasonable ranges, choosing both estimates because they reduce reported
+  net income. Under the FASB Conceptual Framework, which ingredient of faithful representation is most
+  directly threatened?
+choices:
+- id: A
+  text: Neutrality
+  rationale: Correct. Selecting assumptions to push results in a chosen direction is bias, and neutrality
+    means information is free from bias.
+- id: B
+  text: Verifiability
+  rationale: Tempting because estimates are hard to replicate, but verifiability is an enhancing characteristic,
+    not an ingredient of faithful representation.
+- id: C
+  text: Timeliness
+  rationale: An enhancing characteristic about when information is available; nothing in the facts concerns
+    timing.
+- id: D
+  text: Comparability
+  rationale: An enhancing characteristic comparing entities or periods; the problem here is directional
+    bias, not inconsistency.
+answer: A
+explanation: 'Faithful representation has three ingredients: completeness, neutrality, and freedom from
+  error. Systematically choosing assumptions to lower income is bias, which violates neutrality. Verifiability,
+  comparability, and timeliness are enhancing characteristics.'

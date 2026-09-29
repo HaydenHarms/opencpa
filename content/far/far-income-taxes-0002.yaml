@@ -1,0 +1,36 @@
+id: far-income-taxes-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10-35-4
+  - ASC 740-10-45-15
+  notes: Batch 01. Adapted from legacy bank; answer re-solved, arithmetic checked in code, distractors
+    rebuilt where needed.
+stem: Holloway Corp. has a $300,000 taxable temporary difference that it measured at the 20% enacted rate,
+  producing a $60,000 deferred tax liability. Before year-end, a new 25% rate is enacted that will apply
+  when the difference reverses. No other temporary differences exist. What adjustment does Holloway record?
+choices:
+- id: A
+  text: No adjustment; keep the rate that applied when the difference arose
+  rationale: Deferred taxes are remeasured when rates change; there is no lock-in.
+- id: B
+  text: Increase the deferred tax liability by $15,000 through other comprehensive income
+  rationale: The effect of a rate change is recognized in income from continuing operations.
+- id: C
+  text: Record $75,000 of additional income tax expense
+  rationale: Records the entire remeasured balance instead of the $15,000 change.
+- id: D
+  text: Increase the deferred tax liability by $15,000, with a charge to income tax expense from continuing
+    operations
+  rationale: Correct. Remeasure at the new enacted rate ($75,000) and recognize the change in income from
+    continuing operations.
+answer: D
+explanation: Deferred tax balances are measured at the enacted rate expected to apply when differences
+  reverse. New liability = $300,000 × 25% = $75,000; the $15,000 increase is recorded in income tax expense
+  in the period of enactment.
