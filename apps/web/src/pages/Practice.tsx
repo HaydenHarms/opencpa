@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import type { PublicMcq, PublicTbs } from '@opencpa/schema';
 import {
   api,
@@ -296,6 +297,9 @@ function Question({
             {result.correct ? 'Correct.' : `Not quite — the answer is ${result.answer}.`}
           </p>
           <p>{result.explanation}</p>
+          <p className="meta">
+            Still unsure? <Link to="/claude">Talk it through with Claude</Link>.
+          </p>
         </>
       )}
     </article>

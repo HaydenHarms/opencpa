@@ -67,6 +67,13 @@ export interface SessionStatus {
   poolSize: number;
 }
 
+/** Whether the student has a Claude connector link. Times are epoch ms. */
+export interface ConnectorStatus {
+  connected: boolean;
+  createdAt: number | null;
+  lastUsedAt: number | null;
+}
+
 export interface Mastery {
   section: string;
   area: string;
@@ -116,6 +123,9 @@ export const api = {
   startSession: (section: string, size: number) =>
     call<Session>('/me/sessions', { method: 'POST', body: JSON.stringify({ section, size }) }),
   mastery: () => call<Mastery[]>('/me/mastery'),
+  connector: () => call<ConnectorStatus>('/me/connector'),
+  newConnectorLink: () => call<{ url: string }>('/me/connector', { method: 'POST' }),
+  disconnect: () => call<ConnectorStatus>('/me/connector', { method: 'DELETE' }),
   simulations: (section?: string) =>
     call<PublicTbs[]>(`/simulations${section ? `?section=${section}` : ''}`),
   simulation: (id: string) => call<PublicTbs>(`/simulations/${encodeURIComponent(id)}`),

@@ -1,4 +1,5 @@
 import { NavLink, Route, Routes } from 'react-router-dom';
+import Claude from './pages/Claude';
 import Home from './pages/Home';
 import Practice from './pages/Practice';
 import Progress from './pages/Progress';
@@ -16,6 +17,7 @@ export default function App() {
           <NavLink to="/practice">Practice</NavLink>
           <NavLink to="/simulations">Simulations</NavLink>
           <NavLink to="/progress">Progress</NavLink>
+          <NavLink to="/claude">Claude</NavLink>
         </nav>
       </header>
       <main>
@@ -25,6 +27,7 @@ export default function App() {
           <Route path="/simulations" element={<Simulations />} />
           <Route path="/simulations/:id" element={<Simulation />} />
           <Route path="/progress" element={<Progress />} />
+          <Route path="/claude" element={<Claude />} />
         </Routes>
       </main>
     </div>

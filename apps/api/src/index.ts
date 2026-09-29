@@ -1,7 +1,7 @@
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { z } from 'zod';
-import { toPublicMcq, toPublicTbs, type Item, type McqItem, type TbsItem } from '@opencpa/schema';
+import { toPublicMcq, toPublicTbs, type Item } from '@opencpa/schema';
 import {
   AREA_WEIGHTS,
   DIAGNOSTIC_SIZE,
@@ -21,6 +21,17 @@ import {
   type GradeResult,
 } from '@opencpa/engine';
 import { byId, items, mcqs, simulations } from './content';
+import { handleMcp, hashToken, newToken } from './mcp';
+import {
+  checkSession,
+  completeIfDone,
+  hasMcqAttempts,
+  loadSession,
+  reveal,
+  revealSimulation,
+  sessionView,
+  type SessionRow,
+} from './sessions';
 
 type Env = { DB: D1Database; ALLOWED_ORIGINS: string };
 type Vars = { userId: string };
@@ -332,6 +343,63 @@ app.get('/me/sessions/:id', async (c) => {
   return c.json(await sessionView(c.env.DB, row));
 });
 
+/**
+ * Claude connector link. The student adds `<api>/mcp/<token>` as a custom connector in
+ * Claude; the token maps to their id. Treat it like a password: making a new link
+ * replaces the old one, and deleting it disconnects Claude.
+ */
+app.get('/me/connector', async (c) => {
+  const row = await c.env.DB.prepare(
+    'SELECT created_at, last_used_at FROM connector_tokens WHERE user_id = ?',
+  )
+    .bind(c.get('userId'))
+    .first<{ created_at: number; last_used_at: number | null }>();
+  return c.json({
+    connected: !!row,
+    createdAt: row?.created_at ?? null,
+    lastUsedAt: row?.last_used_at ?? null,
+  });
+});
+
+app.post('/me/connector', async (c) => {
+  const userId = c.get('userId');
+  const token = newToken();
+  await c.env.DB.batch([
+    c.env.DB.prepare('DELETE FROM connector_tokens WHERE user_id = ?').bind(userId),
+    c.env.DB.prepare('INSERT INTO connector_tokens (token_hash, user_id) VALUES (?, ?)').bind(
+      await hashToken(token),
+      userId,
+    ),
+  ]);
+  return c.json({ url: `${new URL(c.req.url).origin}/mcp/${token}` }, 201);
+});
+
+app.delete('/me/connector', async (c) => {
+  await c.env.DB.prepare('DELETE FROM connector_tokens WHERE user_id = ?')
+    .bind(c.get('userId'))
+    .run();
+  return c.json({ connected: false });
+});
+
+/** The MCP endpoint Claude calls. See `src/mcp.ts`. */
+app.all('/mcp/:token', async (c) => {
+  const hash = await hashToken(c.req.param('token'));
+  const row = await c.env.DB.prepare('SELECT user_id FROM connector_tokens WHERE token_hash = ?')
+    .bind(hash)
+    .first<{ user_id: string }>();
+  if (!row)
+    return c.json(
+      { error: 'This OpenCPA connector link is not valid. Make a new one on the Claude page.' },
+      401,
+    );
+  c.executionCtx.waitUntil(
+    c.env.DB.prepare('UPDATE connector_tokens SET last_used_at = ? WHERE token_hash = ?')
+      .bind(Date.now(), hash)
+      .run(),
+  );
+  return handleMcp(c.req.raw, c.env.DB, row.user_id);
+});
+
 /** Tutor: wired up in a later milestone (Claude API, bring-your-own-key). */
 app.post('/me/tutor', (c) => c.json({ error: 'The tutor is not available yet.' }, 501));
 
@@ -413,137 +481,6 @@ function rowToCard(r: CardRow): Card {
     state: r.state,
     last_review: r.last_review ? new Date(r.last_review) : undefined,
   } as Card;
-}
-
-type SessionRow = {
-  id: string;
-  user_id: string;
-  section: string;
-  kind: 'diagnostic' | 'practice';
-  status: 'active' | 'completed' | 'abandoned';
-  item_ids: string;
-  created_at: number;
-  completed_at: number | null;
-};
-
-function loadSession(db: D1Database, userId: string, id: string) {
-  return db
-    .prepare('SELECT * FROM practice_sessions WHERE id = ? AND user_id = ?')
-    .bind(id, userId)
-    .first<SessionRow>();
-}
-
-/** The session's items that are still in the bank (retired items drop out). */
-function sessionItemIds(row: SessionRow): string[] {
-  return (JSON.parse(row.item_ids) as string[]).filter((id) => byId.has(id));
-}
-
-type SessionCheck = { session: SessionRow | null } | { error: string; status: 400 | 404 | 409 };
-
-/** When an attempt names a session: it must be active, contain the item, and not have it answered yet. */
-async function checkSession(
-  db: D1Database,
-  userId: string,
-  sessionId: string | undefined,
-  itemId: string,
-): Promise<SessionCheck> {
-  if (!sessionId) return { session: null };
-  const session = await loadSession(db, userId, sessionId);
-  if (!session || session.status !== 'active')
-    return { error: 'no active session with that id', status: 404 };
-  if (!sessionItemIds(session).includes(itemId))
-    return { error: 'that item is not in this session', status: 400 };
-  const answered = await db
-    .prepare('SELECT 1 FROM attempts WHERE session_id = ? AND item_id = ? LIMIT 1')
-    .bind(sessionId, itemId)
-    .first();
-  if (answered) return { error: 'already answered in this session', status: 409 };
-  return { session };
-}
-
-/** Mark the session completed once every item has an attempt. Returns whether it is complete. */
-async function completeIfDone(db: D1Database, session: SessionRow | null) {
-  if (!session) return false;
-  const done = await db
-    .prepare('SELECT COUNT(DISTINCT item_id) AS n FROM attempts WHERE session_id = ?')
-    .bind(session.id)
-    .first<{ n: number }>();
-  if ((done?.n ?? 0) < sessionItemIds(session).length) return false;
-  await db
-    .prepare("UPDATE practice_sessions SET status = 'completed', completed_at = ? WHERE id = ?")
-    .bind(Date.now(), session.id)
-    .run();
-  return true;
-}
-
-/** What an attempt reveals: the key, the explanation and every choice's rationale. */
-function reveal(item: McqItem, selected: string, correct: boolean) {
-  return {
-    selected,
-    correct,
-    answer: item.answer,
-    explanation: item.explanation,
-    rationales: Object.fromEntries(item.choices.map((ch) => [ch.id, ch.rationale])),
-  };
-}
-
-type Responses = Parameters<typeof gradeSimulation>[1];
-
-/** What a simulation attempt reveals: the score, and each task's answer and explanation. */
-function revealSimulation(item: TbsItem, responses: Responses) {
-  const result = gradeSimulation(item, responses);
-  return {
-    ...result,
-    responses,
-    tasks: item.tasks.map((t) => ({
-      id: t.id,
-      ...result.tasks[t.id],
-      answer: t.answer,
-      explanation: t.explanation,
-    })),
-  };
-}
-
-/** A session's public items, plus the revealed result of each item already answered. */
-async function sessionView(db: D1Database, row: SessionRow) {
-  const { results } = await db
-    .prepare('SELECT item_id, response, correct FROM attempts WHERE session_id = ?')
-    .bind(row.id)
-    .all<{ item_id: string; response: string; correct: number }>();
-  const answered: Record<string, ReturnType<typeof reveal> | ReturnType<typeof revealSimulation>> =
-    {};
-  for (const r of results) {
-    const item = byId.get(r.item_id);
-    if (item?.type === 'mcq') {
-      const { selected } = JSON.parse(r.response) as { selected: string };
-      answered[r.item_id] = reveal(item, selected, !!r.correct);
-    } else if (item?.type === 'tbs') {
-      // Grading is deterministic, so re-grading the stored responses reproduces the result.
-      answered[r.item_id] = revealSimulation(item, JSON.parse(r.response) as Responses);
-    }
-  }
-  return {
-    id: row.id,
-    section: row.section,
-    kind: row.kind,
-    status: row.status,
-    createdAt: row.created_at,
-    completedAt: row.completed_at,
-    items: sessionItemIds(row).map((id) => {
-      const item = byId.get(id)!;
-      return item.type === 'mcq' ? toPublicMcq(item) : toPublicTbs(item);
-    }),
-    answered,
-  };
-}
-
-/** Whether the student has answered any multiple-choice question in this section. */
-async function hasMcqAttempts(db: D1Database, userId: string, section: string) {
-  const { results } = await db
-    .prepare('SELECT DISTINCT item_id FROM attempts WHERE user_id = ? AND section = ?')
-    .bind(userId, section)
-    .all<{ item_id: string }>();
-  return results.some((r) => byId.get(r.item_id)?.type === 'mcq');
 }
 
 export default app;

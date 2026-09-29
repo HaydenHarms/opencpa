@@ -314,11 +314,59 @@ body {
 .row-start {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
+}
+.row-start .link {
+  margin: 12px 0 0 8px;
 }
 .card h2 {
   margin: 4px 0 12px;
 }
 .card .mastery {
   margin: 16px 0;
+}
+
+/* Study with Claude */
+.prose h1 {
+  font-size: clamp(26px, 4vw, 34px);
+  margin: 8px 0 12px;
+}
+.prose > p {
+  line-height: 1.55;
+  max-width: 65ch;
+}
+.prose .card {
+  margin: 16px 0;
+}
+.prose li {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+.prose a {
+  color: var(--accent);
+}
+.copy-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.copy-row input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 14px;
+  color: var(--fg);
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 9px 10px;
+}
+.copy-row .button {
+  margin-top: 0;
+}
+@media (max-width: 480px) {
+  .nav a {
+    margin-left: 12px;
+  }
 }
