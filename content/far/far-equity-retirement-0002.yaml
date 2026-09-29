@@ -9,14 +9,15 @@ review:
   status: reviewed
   references:
   - ASC 505-30 (treasury stock and retirement of shares)
+  - ASU 2025-12 (adds an APIC-only method for retirements; not Mercer's method)
   notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
     frames). Answers re-solved and every number and distractor computed in code.
 stem: Mercer Inc. has 10,000 shares of $2 par common stock outstanding, all originally issued at $14 per
   share. Its equity also includes $1,500 of additional paid-in capital from earlier sales, at more than
   cost, of treasury shares from that same issue. Mercer reacquires 1,000 shares at $20 per share and retires
-  them immediately. Mercer's policy is to charge additional paid-in capital on a retirement to the maximum
-  extent ASC 505-30 permits and to charge any remainder to retained earnings. What amount is debited to
-  retained earnings on the retirement?
+  them immediately. Mercer's policy is to allocate the excess of cost over par between additional paid-in
+  capital and retained earnings, charging additional paid-in capital to the maximum extent that allocation
+  method permits. What amount is debited to retained earnings on the retirement?
 choices:
 - id: A
   text: $4,500
@@ -34,11 +35,11 @@ choices:
 - id: D
   text: $18,000
   rationale: Charges the entire excess over par to retained earnings. ASC 505-30 permits that alternative,
-    but Mercer's policy is to use APIC first.
+    but Mercer allocates the excess and uses APIC first.
 answer: A
-explanation: On retirement, common stock is debited at par (1,000 × $2 = $2,000) and the $18,000 excess
-  of cost over par is charged either entirely to retained earnings or allocated between APIC and retained
-  earnings. When it is allocated, the APIC charge is limited to APIC from earlier retirements and net
-  gains on treasury stock of the same issue ($1,500) plus the pro rata APIC on the same issue (1,000 ×
-  $12 = $12,000). Mercer charges APIC to that limit, $13,500, and retained earnings $18,000 − $13,500
-  = $4,500.
+explanation: On retirement, common stock is debited at par (1,000 × $2 = $2,000). ASC 505-30 lets the
+  $18,000 excess of cost over par be charged entirely to retained earnings, allocated between APIC and
+  retained earnings, or (after ASU 2025-12) charged entirely to APIC; Mercer uses the allocation method.
+  When it is allocated, the APIC charge is limited to APIC from earlier retirements and net gains on treasury
+  stock of the same issue ($1,500) plus the pro rata APIC on the same issue (1,000 × $12 = $12,000). Mercer
+  charges APIC to that limit, $13,500, and retained earnings $18,000 − $13,500 = $4,500.

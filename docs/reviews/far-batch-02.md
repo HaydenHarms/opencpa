@@ -28,7 +28,7 @@ Batch 01 left these FAR groups with no items: balance sheet classification, the 
 | `far-payables-reconciliation-0001` | II.G Reconcile and investigate subledger and general ledger differences | Analysis |
 | `far-debt-covenant-0001` | II.H.2 Perform debt covenant calculations | Application |
 | `far-treasury-stock-0001` | II.I Journal entries for treasury stock | Application |
-| `far-change-in-principle-0001` | III.A Derive the impact of an accounting change | Analysis |
+| `far-change-in-principle-0001` | III.A Calculate the adjustment for an accounting change (retagged from Analysis after review) | Application |
 | `far-change-in-estimate-0001` | III.A Calculate the adjustment for a change in estimate | Application |
 | `far-revenue-principal-agent-0001` | III.C Determine the amount of revenue (principal versus agent) | Application |
 | `far-revenue-contract-costs-0001` | III.C Contract costs | Application |
@@ -50,8 +50,8 @@ Batch 01 left these FAR groups with no items: balance sheet classification, the 
 | --- | --- | --- | --- |
 | Area I / II / III | 9 / 9 / 7 (36% / 36% / 28%) | 17 / 18 / 15 (34% / 36% / 30%) | 30–40% / 30–40% / 25–35% |
 | Remembering and Understanding | 2 (8%) | 4 (8%) | 5–15% |
-| Application | 13 (52%) | 27 (54%) | 45–55% |
-| Analysis | 10 (40%) | 19 (38%) | 35–45% |
+| Application | 14 (56%) | 28 (56%) | 45–55% |
+| Analysis | 9 (36%) | 18 (36%) | 35–45% |
 
 ## Blind verification
 
@@ -65,3 +65,17 @@ A separate agent solved all 25 items from the stems and choices only. It **match
 | `far-treasury-stock-0001` | ASC 505-30 says losses "may" be charged to same-class paid-in capital, leaving a thin case for $6,000 | Stem names Sutton's election (paid-in capital to the maximum extent permitted) |
 
 It rated `far-debt-covenant-0001` as Application (as tagged) and `far-cash-equivalents-0001` as borderline Remembering and Understanding; tags unchanged.
+
+## Review gate
+
+A fresh review agent graded the batch with `docs/prompts/review-agent.md` without reading this report first. **All 25 keys correct; average estimated pass likelihood 85.4%; 22 exam-ready, 3 minor revision, 0 major.** It read the blueprint's skill marks from the PDF and confirmed every tag except `far-change-in-principle-0001`. Fixes applied:
+
+| Item | Finding | Fix |
+| --- | --- | --- |
+| `far-notes-0001` | Only the debt was described in detail, pointing at the answer; the other notes had no figures to check | Every note now has draft figures to compare; two consistent notes look odd but are right (a write-down not reversed after prices recover; a right-of-use asset below the lease liability); the subsequent event is now an acquisition, not a second uninsured fire |
+| `far-change-in-principle-0001` | Choice A answered about Year 3, so it could be ruled out on form; tax wording ambiguous; close to the "calculate" task | Asks for the change in Year 2 net income and year-end retained earnings, so every choice answers the same question and the student derives the effect on two statements; 25% applies to every effect |
+| `far-uncertain-tax-positions-0001` | Key was the longest choice | Choices shortened; the key is now the second shortest |
+
+**Currency finding for batch 01.** ASU 2025-12 (December 2025) added a third method for share retirements: charge the whole excess over par to APIC. `far-equity-retirement-0002` said Mercer charges APIC "to the maximum extent ASC 505-30 permits," which under the new method would mean $0 to retained earnings. The stem now names Mercer's method (allocation between APIC and retained earnings), and the quality bar now requires naming the method rather than "the maximum extent permitted."
+
+A final blind check of the four changed items matched the key on 4 of 4 with no required fixes. Both it and the review agent read `far-change-in-principle-0001` as Application (calculating a retrospective adjustment), so it is retagged. That leaves Application one item above its range for the batch and the bank (56% against 45–55%), with Analysis at 36%. Batch 03 should be about 40% Analysis and 48% Application to bring the bank back inside.

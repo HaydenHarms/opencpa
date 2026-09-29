@@ -4,7 +4,7 @@ blueprint:
   section: FAR
   area: Area III — Select Transactions
   topic: Accounting changes and error corrections
-  skill: Analysis
+  skill: Application
 review:
   status: reviewed
   references:
@@ -13,28 +13,29 @@ review:
 stem: 'At the start of Year 3, Tate Co. changes its inventory method from weighted-average cost to FIFO
   because FIFO better reflects its flow of goods. It can determine the effects for all prior periods.
   Inventory under each method was: December 31, Year 1 — weighted-average $400,000, FIFO $450,000; December
-  31, Year 2 — weighted-average $460,000, FIFO $540,000. The tax rate is 25%, and the change also applies
-  for tax purposes. Tate issues comparative statements for Years 2 and 3. How does the change affect the
-  Year 2 amounts in those statements?'
+  31, Year 2 — weighted-average $460,000, FIFO $540,000. Apply a 25% tax rate to every effect. Tate issues
+  comparative statements for Years 2 and 3. Compared with the amounts originally reported, by how much
+  do Year 2 net income and December 31, Year 2, retained earnings change in those statements?'
 choices:
 - id: A
-  text: $0 to January 1, Year 2, retained earnings; $60,000 in Year 3 net income
-  rationale: Reports a cumulative effect in current-year income, the approach used before retrospective
-    application was required.
+  text: $0 net income; $0 retained earnings
+  rationale: Applies the change prospectively from Year 3. A change in accounting principle is applied
+    retrospectively, so Year 2 is restated.
 - id: B
-  text: $37,500 to January 1, Year 2, retained earnings; $22,500 to Year 2 net income
-  rationale: Correct. Opening adjustment $50,000 × 75%; Year 2 income rises by the $30,000 increase in
-    the difference, × 75%.
+  text: $22,500 net income; $37,500 retained earnings
+  rationale: Carries only the January 1, Year 2, adjustment ($50,000 × 75%) to year-end retained earnings,
+    leaving out the restated Year 2 income.
 - id: C
-  text: $50,000 to January 1, Year 2, retained earnings; $30,000 to Year 2 net income
-  rationale: Ignores the 25% tax effect of the change.
+  text: $22,500 net income; $60,000 retained earnings
+  rationale: Correct. Year 2 income rises by ($80,000 − $50,000) × 75% = $22,500; year-end retained earnings
+    rises by $80,000 × 75% = $60,000.
 - id: D
-  text: $60,000 to January 1, Year 2, retained earnings; $22,500 to Year 2 net income
-  rationale: Uses the December 31, Year 2, difference ($80,000 × 75%) for the opening balance. The opening
-    balance of the earliest period presented reflects the difference at December 31, Year 1.
-answer: B
+  text: $30,000 net income; $80,000 retained earnings
+  rationale: Ignores the 25% tax effect of the change.
+answer: C
 explanation: 'A change in accounting principle is applied retrospectively. The cumulative effect on periods
   before the earliest period presented adjusts the opening retained earnings of Year 2: ($450,000 − $400,000)
   × 75% = $37,500 increase. Year 2 is restated: FIFO raises ending inventory by $80,000 versus $50,000
   at the start, so cost of goods sold falls by $30,000 and net income rises by $30,000 × 75% = $22,500.
-  December 31, Year 2, retained earnings rises by $60,000 in total.'
+  December 31, Year 2, retained earnings rises by $37,500 + $22,500 = $60,000 (the $80,000 year-end difference,
+  net of tax).'

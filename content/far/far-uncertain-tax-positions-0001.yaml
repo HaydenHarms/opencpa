@@ -21,13 +21,11 @@ choices:
   rationale: The benefit is the largest amount with a greater than 50% cumulative likelihood of being
     realized, not the single most likely outcome.
 - id: C
-  text: It recognizes a benefit only if the position is more likely than not to be sustained on its technical
-    merits.
+  text: It recognizes a benefit only if the position is more likely than not to be sustained.
   rationale: Correct. Recognition requires a more-likely-than-not threshold, assuming examination by a
     taxing authority with full knowledge of all relevant information.
 - id: D
-  text: It considers the chance that the taxing authority will not examine the position when deciding
-    recognition.
+  text: It considers the chance that the taxing authority will never examine the position.
   rationale: The entity must assume the position will be examined by an authority with full knowledge;
     detection risk is ignored.
 answer: C
