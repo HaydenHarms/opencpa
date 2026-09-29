@@ -2,9 +2,9 @@ id: far-nfp-contributions-0001
 type: mcq
 blueprint:
   section: FAR
-  area: Area I — Financial Reporting
-  topic: Statement of activities (Not-for-Profit)
-  skill: Analysis
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
 review:
   status: reviewed
   references:

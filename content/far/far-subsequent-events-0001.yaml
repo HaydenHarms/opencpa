@@ -24,15 +24,15 @@ choices:
     plants.
   rationale: A new financing that arose after year-end. It is disclosed but not recognized.
 - id: C
+  text: On March 1, a court rules against Alder in a suit over an accident in October, Year 5.
+  rationale: Correct. The accident occurred before year-end, so the ruling gives added evidence about
+    a condition that existed at the balance sheet date.
+- id: D
   text: In February, a broad market downturn sharply reduces the fair value of Alder's investments in
     trading securities.
   rationale: Fair value declines after year-end reflect conditions that arose after the balance sheet
     date, so they are not recognized.
-- id: D
-  text: On March 1, a court rules against Alder in a suit over an accident in October, Year 5.
-  rationale: Correct. The accident occurred before year-end, so the ruling gives added evidence about
-    a condition that existed at the balance sheet date.
-answer: D
+answer: C
 explanation: Subsequent events that give additional evidence about conditions that existed at the balance
   sheet date are recognized by adjusting the statements. Events reflecting conditions that arose after
   the balance sheet date are not recognized, though some are disclosed. The court ruling settles an obligation

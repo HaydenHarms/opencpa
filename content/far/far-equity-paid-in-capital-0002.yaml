@@ -2,14 +2,14 @@ id: far-equity-paid-in-capital-0002
 type: mcq
 blueprint:
   section: FAR
-  area: Area II — Select Balance Sheet Accounts
-  topic: Equity
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
   skill: Analysis
 review:
   status: reviewed
   references:
   - ASC 505-10 (equity securities issued for noncash consideration)
-  - 'ASC 845-10 (nonmonetary transactions: measurement at the more clearly evident fair value)'
+  - ASC 718 (share-based payments to nonemployees for goods, after ASU 2018-07)
   - SEC Staff Accounting Bulletin Topic 5.A (expenses of offering)
   notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
     frames). Answers re-solved and every number and distractor computed in code.
@@ -26,8 +26,8 @@ choices:
   rationale: Correct. Cash sale $80,000 + land $51,000 (3,000 × $17) − $9,000 of offering costs.
 - id: B
   text: $125,000
-  rationale: Nets the offering costs against APIC but keeps the land at its $60,000 appraisal. The actively
-    traded share price ($57,000 for 3,000 shares) is the more reliable measure.
+  rationale: Nets the offering costs against APIC but keeps the land at its $60,000 appraisal. Shares
+    issued for an asset are measured at the shares' fair value, and the quoted $19 price gives $57,000.
 - id: C
   text: $131,000
   rationale: Measures the land at the share price but leaves the $9,000 of offering costs in expense.
@@ -37,8 +37,9 @@ choices:
   rationale: Accepts the draft, which records the land at the appraisal ($54,000 of APIC) and expenses
     the offering costs.
 answer: A
-explanation: 'Stock issued for a noncash asset is recorded at the fair value of the stock or of the asset,
-  whichever is more clearly evident. A quoted price in an active market is more reliable than an appraisal,
-  so the land is recorded at 3,000 × $19 = $57,000: $6,000 of par and $51,000 of APIC. Cash sale: 5,000
-  × ($18 − $2) = $80,000 of APIC. Direct costs of issuing equity reduce the proceeds, so the $9,000 is
-  reclassified from expense to a reduction of APIC. Total: $80,000 + $51,000 − $9,000 = $122,000.'
+explanation: 'Since ASU 2018-07, shares issued to a nonemployee for goods used in operations are measured
+  under ASC 718 at the fair value of the shares issued; the quoted price in an active market is also more
+  reliable than an appraisal. The land is recorded at 3,000 × $19 = $57,000: $6,000 of par and $51,000
+  of APIC. Cash sale: 5,000 × ($18 − $2) = $80,000 of APIC. Direct costs of issuing equity reduce the
+  proceeds, so the $9,000 is reclassified from expense to a reduction of APIC. Total: $80,000 + $51,000
+  − $9,000 = $122,000.'

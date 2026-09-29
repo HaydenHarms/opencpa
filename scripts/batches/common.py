@@ -33,6 +33,11 @@ def _amount(text):
     return float(m.group(1).replace(",", "")) if m else None
 
 
+def _amounts(text):
+    """Every dollar amount in a choice, in order: paired choices ("$30,000 gain; asset $250,000") sort on each."""
+    return tuple(float(a.replace(",", "")) for a in re.findall(r"\$([\d,]+(?:\.\d+)?)", text))
+
+
 def is_numeric(choices):
     """True when every choice leads with a dollar amount, i.e. the item is a 'pick the number' item."""
     return all(_amount(c["text"]) is not None for c in choices)
@@ -51,7 +56,7 @@ def finalize(items):
         ch = it["choices"]
         right = next(c for c in ch if c["id"] == it["answer"])
         if is_numeric(ch):
-            new = sorted(ch, key=lambda c: (_amount(c["text"]), len(c["text"])))
+            new = sorted(ch, key=lambda c: _amounts(c["text"]))
         else:
             others = [c for c in ch if c is not right]
             pos = word_n % len(ch)
@@ -80,7 +85,7 @@ def audit(items):
         if len({c["text"] for c in ch}) != len(ch):
             warnings.append(f"{it['id']}: duplicate choice text")
         if is_numeric(ch):
-            vals = [_amount(c["text"]) for c in ch]
+            vals = [_amounts(c["text"]) for c in ch]
             if vals != sorted(vals):
                 warnings.append(f"{it['id']}: numeric choices not ascending")
     for w in warnings:

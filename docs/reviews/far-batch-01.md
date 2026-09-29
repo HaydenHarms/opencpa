@@ -178,3 +178,32 @@ A fresh review agent graded Revision 2 without reading this report first. All 25
 | `far-consolidated-statements-0001`, `far-equity-paid-in-capital-0002`, `far-receivables-credit-losses-0002` | The stem described the error, so these were Application, not Analysis | Stems now give only the draft figures (and, for receivables, two reconciling items affecting different records); the student finds the errors |
 | `far-intangibles-cloud-computing-0001` | Explanation leaned on project-stage wording that ASU 2025-06 removes | Explanation justifies each treatment directly and notes ASU 2025-06 does not change the answer |
 | `far-consolidated-statements-0001` | Subsidiary shared a name with the debt item's issuer | Renamed to Tern Inc. |
+
+## Revision 3b: review gate passed; minor findings applied
+
+A fresh review agent graded Revision 3 using `docs/prompts/review-agent.md`, without reading this report first. **All 25 keys correct; average estimated pass likelihood 84.3% (up from 74%); 18 exam-ready, 7 minor revision, 0 major.** That clears the gate in `CLAUDE.md`. It read the blueprint's skill marks from their positions in the PDF and found five tags that did not match the task's mark, which would have left Analysis at 28%. Changes:
+
+| Item | Finding | Fix |
+| --- | --- | --- |
+| `far-eps-diluted-0001` | The only EPS task is marked Application | Retagged Application |
+| `far-nfp-contributions-0001` | The NFP statement of activities has no Analysis task | Retagged Area III, Revenue recognition ("calculate the amount to be recognized for contributions"), Application |
+| `far-governmental-fund-types-0001` | "Determine the appropriate fund(s)" is marked Application | Retagged Application |
+| `far-comprehensive-income-0002` | The statement of comprehensive income has only recall tasks | Topic changed to Income statement (its "detect, investigate and correct" task), still Analysis |
+| `far-equity-paid-in-capital-0002` | The Equity topic has only an Application task; explanation cited ASC 845 | Retagged Area I, Statement of changes in equity (Analysis); explanation now cites ASC 718 after ASU 2018-07 (same answer) |
+| `far-receivables-credit-losses-0002` | ASU 2025-05 adds an election the stem did not fix; two distractors clustered within $720 of the key | Stem says the practical expedient is not elected; the subledger-based distractor is replaced with the 3% historical-rate error |
+| `far-ppe-exchange-0001` | Paired numeric choices were not in ascending order | Choices lead with the dollar amount; `finalize()` now sorts on every amount in a choice |
+| `far-ppe-impairment-0001` (easiest item) | Retired to restore the Analysis share | Replaced by `far-ppe-reconciliation-0001`: reconcile the fixed-asset subledger to the GL and correct pretax income |
+| `far-cash-flows-0002` | Retired to restore the Analysis share (indirect method is still covered by `far-cash-flows-0003`) | Replaced by `far-cash-flows-0004`: derive the financing section from six transactions, including a noncash conversion and interest paid |
+
+**Batch 01 tallies after Revision 3b (25 items)**
+
+| Measure | Result | Blueprint target |
+| --- | --- | --- |
+| Area I / II / III | 8 / 9 / 8 (32% / 36% / 32%) | 30–40% / 30–40% / 25–35% |
+| Remembering and Understanding | 2 (8%) | 5–15% |
+| Application | 14 (56%) | 45–55% |
+| Analysis | 9 (36%) | 35–45% |
+
+**Still open:** Application is one item over its range; batch 02 should be about 40% Analysis to pull the bank toward the middle. Numeric keys land in D only once in 25, a side effect of ascending order; watch it as the bank grows. Coverage gaps (cash, payables, debt covenants, balance sheet classification, notes, SEC forms, special purpose frameworks, ratios, held-to-maturity, contract costs, operating leases) are the batch 02 plan.
+
+**Blind verification of the 4 new or changed items** (`far-cash-flows-0004`, `far-ppe-reconciliation-0001`, `far-receivables-credit-losses-0002`, `far-equity-paid-in-capital-0002`): matched the key on 4 of 4 with no required fixes. Applied its suggestion to state that depreciation on the sold machine was recorded through the date of sale. It rated `far-cash-flows-0004` and `far-equity-paid-in-capital-0002` as borderline Application; they stay tagged Analysis because they map to the blueprint's "derive the impact of transactions on the statement of cash flows" and "detect, investigate and correct discrepancies" (statement of changes in equity) tasks, but batch 02 should make its Analysis items less arguable.

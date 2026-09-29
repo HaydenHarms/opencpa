@@ -10,6 +10,7 @@ review:
   references:
   - ASC 326-20 (credit losses on financial instruments measured at amortized cost)
   - ASC 310-10 (receivables)
+  - ASU 2025-05 (practical expedient for current receivables; not elected here)
   notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
     frames). Answers re-solved and every number and distractor computed in code.
 stem: 'At year-end, Orchard Supply Co.''s accounts receivable subledger totals $1,007,000, and the general
@@ -20,18 +21,19 @@ stem: 'At year-end, Orchard Supply Co.''s accounts receivable subledger totals $
   $150,000 is owed by one customer that has filed for bankruptcy; Orchard expects to collect 30% of that
   balance in the proceedings. The remaining balances are owed by customers with similar credit profiles.
   Orchard''s historical loss rate on such balances is 3%, and its reasonable and supportable forecast
-  indicates losses 1 percentage point above that rate. Before adjustment, the allowance for credit losses
-  has a $25,000 credit balance. After the reconciling items are corrected, what credit loss expense should
+  indicates losses 1 percentage point above that rate. Orchard does not elect the practical expedient
+  for current trade receivables in ASU 2025-05. Before adjustment, the allowance for credit losses has
+  a $25,000 credit balance. After the reconciling items are corrected, what credit loss expense should
   Orchard record for the year?'
 choices:
 - id: A
+  text: $105,500
+  rationale: Uses the 3% historical rate for the pool. Expected credit losses must reflect reasonable
+    and supportable forecasts, which raise the rate to 4%.
+- id: B
   text: $114,000
   rationale: Correct. The corrected receivables balance is $1,000,000, so the pool is $850,000. Required
     allowance $105,000 + $850,000 × 4% = $139,000, less the $25,000 already in the allowance.
-- id: B
-  text: $114,280
-  rationale: Treats the subledger as correct ($1,007,000, a pool of $857,000). The $7,000 credit memo
-    has not yet reached the customer's account, so the subledger is overstated too.
 - id: C
   text: $114,720
   rationale: Uses the unadjusted control account ($1,018,000, a pool of $868,000). The duplicated $18,000
@@ -40,7 +42,7 @@ choices:
   text: $139,000
   rationale: Records the whole required allowance as expense and ignores the $25,000 credit balance already
     in the allowance.
-answer: A
+answer: B
 explanation: 'First reconcile. The control account is overstated by the duplicated $18,000 batch: $1,018,000
   − $18,000 = $1,000,000. The subledger is overstated by the unposted $7,000 credit memo: $1,007,000 −
   $7,000 = $1,000,000. Both records agree at $1,000,000 after correction, so the pool is $1,000,000 −

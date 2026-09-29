@@ -3,7 +3,7 @@ type: mcq
 blueprint:
   section: FAR
   area: Area I — Financial Reporting
-  topic: Statement of comprehensive income
+  topic: Income statement
   skill: Analysis
 review:
   status: reviewed

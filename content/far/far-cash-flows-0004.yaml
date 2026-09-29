@@ -1,0 +1,42 @@
+id: far-cash-flows-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 230-10 (statement of cash flows: classification of cash receipts and payments; noncash investing
+    and financing activities)'
+  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
+    frames). Answers re-solved and every number and distractor computed in code.
+stem: During the year, Fenwick Ltd. (1) retired bonds with a carrying amount of $192,000 by paying bondholders
+  $200,000 in cash, (2) paid $20,000 of cash dividends to its shareholders, (3) issued common stock for
+  $150,000 in cash, (4) issued common stock to holders of its preferred stock, who converted preferred
+  shares with a carrying amount of $100,000, (5) paid $12,000 of interest on its bonds, and (6) paid $30,000
+  to reacquire its own common shares as treasury stock. Under U.S. GAAP, what is Fenwick's net cash used
+  in financing activities for the year?
+choices:
+- id: A
+  text: $0
+  rationale: Treats the $100,000 preferred-to-common conversion as a financing inflow. No cash changes
+    hands; it is disclosed as a noncash financing activity.
+- id: B
+  text: $92,000
+  rationale: Uses the bonds' $192,000 carrying amount instead of the $200,000 of cash paid to retire them.
+    The $8,000 loss is not cash; the financing outflow is the cash paid.
+- id: C
+  text: $100,000
+  rationale: Correct. −$200,000 bond retirement − $20,000 dividends + $150,000 stock issued − $30,000
+    treasury stock.
+- id: D
+  text: $112,000
+  rationale: Also includes the $12,000 of interest paid. Under U.S. GAAP, interest paid is an operating
+    outflow.
+answer: C
+explanation: 'Financing activities under U.S. GAAP: cash paid to retire debt (the $200,000 paid, not the
+  carrying amount) −$200,000; dividends paid −$20,000; proceeds from issuing stock +$150,000; purchase
+  of treasury stock −$30,000. Net cash used = $100,000. The preferred-to-common conversion involves no
+  cash and is disclosed as a noncash financing activity, and interest paid is an operating cash flow.'

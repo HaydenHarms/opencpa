@@ -18,22 +18,22 @@ stem: Harwick Corp. exchanges old machinery (book value $180,000; fair value $21
   and at what amount is the new equipment recorded?
 choices:
 - id: A
-  text: No gain; new equipment $220,000
+  text: $0 gain; new equipment $220,000
   rationale: Carryover-basis treatment, which applies only when an exchange lacks commercial substance.
     Replacing a discontinued line with a different product sold under new contracts changes Harwick's
     future cash flows significantly.
 - id: B
-  text: Gain of $70,000; new equipment $250,000
-  rationale: Compares the new asset's fair value to the old book value and ignores the $40,000 of cash
-    paid.
+  text: $30,000 gain; new equipment $220,000
+  rationale: 'Mixes the two methods: recognizes the gain but records the asset at carryover basis.'
 - id: C
-  text: Gain of $30,000; new equipment $250,000
+  text: $30,000 gain; new equipment $250,000
   rationale: 'Correct. The new equipment serves a different product, customers, and pricing, so Harwick''s
     future cash flows change significantly and the exchange has commercial substance: the gain is fair
     value minus book value of the asset given up, and the new asset is recorded at fair value.'
 - id: D
-  text: Gain of $30,000; new equipment $220,000
-  rationale: 'Mixes the two methods: recognizes the gain but records the asset at carryover basis.'
+  text: $70,000 gain; new equipment $250,000
+  rationale: Compares the new asset's fair value to the old book value and ignores the $40,000 of cash
+    paid.
 answer: C
 explanation: An exchange has commercial substance when the entity's future cash flows are expected to
   change significantly as a result of it. Here the new equipment makes a different product for different
