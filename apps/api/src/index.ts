@@ -425,6 +425,7 @@ app.get('/me/library', async (c) => {
         simulations: number;
         seen: number;
         attempts: number;
+        correct: number;
       }
     >();
     for (const i of inSection) {
