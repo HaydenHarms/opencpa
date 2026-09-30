@@ -50,3 +50,118 @@ explanation: 'The $80,000 promise carries no condition other than the passage of
   a right of return, so it is not revenue until the barrier is overcome; the cash is a refundable advance.
   The $100,000 gift is without donor restrictions. Net change in net assets with donor restrictions: $72,000
   + $60,000 − $25,000 = $107,000 increase.'
+variants:
+- stem: Cypress Arts Foundation, a not-for-profit entity, has these transactions in Year 1. (1) On December
+    31 it receives a written promise of $120,000 payable on January 1, Year 3; nothing else is required
+    of the foundation to receive it, and the donor states no use for the money. The promise has a present
+    value of $106,000. (2) It receives $90,000 in cash that the donor requires to be used for scholarships,
+    and it spends $40,000 on qualifying scholarships during Year 1. (3) It receives $200,000 in cash under
+    an agreement that lets the donor recover the money if the foundation does not raise $200,000 of matching
+    gifts by the end of Year 2. By December 31, Year 1, the foundation has raised no matching gifts. (4)
+    It receives a $150,000 cash gift with no donor stipulations. The foundation reports every restricted
+    gift as with donor restrictions when received, even if the restriction is met in the same period.
+    Ignoring interest accretion, what is the net change in net assets with donor restrictions for Year
+    1?
+  choices:
+  - id: A
+    text: $50,000
+    rationale: Leaves out the promise because it is not due until Year 3. An unconditional promise is
+      recognized when made, with a time restriction.
+  - id: B
+    text: $156,000
+    rationale: Correct. $106,000 for the promise (restricted by time) + $90,000 for the scholarship gift
+      − $40,000 released when the scholarships were funded. The $200,000 is a refundable advance, and
+      the $150,000 gift is without donor restrictions.
+  - id: C
+    text: $170,000
+    rationale: Measures the promise at its $120,000 face amount. A promise due in a future period is recorded
+      at present value.
+  - id: D
+    text: $196,000
+    rationale: Reports the restricted contributions only and leaves out the $40,000 release. Spending
+      on the donor's purpose moves that amount out of net assets with donor restrictions, so the net change
+      is smaller.
+  answer: B
+  explanation: 'The $120,000 promise carries no condition other than the passage of time, so it is recognized
+    now at present value ($106,000) as an increase in net assets with donor restrictions (time restriction).
+    The $90,000 scholarship gift is restricted to a purpose; spending $40,000 on it releases that amount,
+    leaving a $50,000 net increase. The $200,000 depends on a measurable barrier (matching gifts) and
+    includes a right of return, so it is not revenue until the barrier is overcome; the cash is a refundable
+    advance. The $150,000 gift is without donor restrictions. Net change in net assets with donor restrictions:
+    $106,000 + $90,000 − $40,000 = $156,000 increase.'
+- stem: Dunes Arts Foundation, a not-for-profit entity, has these transactions in Year 1. (1) On December
+    31 it receives a written promise of $50,000 payable on January 1, Year 3; nothing else is required
+    of the foundation to receive it, and the donor states no use for the money. The promise has a present
+    value of $46,000. (2) It receives $40,000 in cash that the donor requires to be used for scholarships,
+    and it spends $30,000 on qualifying scholarships during Year 1. (3) It receives $100,000 in cash under
+    an agreement that lets the donor recover the money if the foundation does not raise $100,000 of matching
+    gifts by the end of Year 2. By December 31, Year 1, the foundation has raised no matching gifts. (4)
+    It receives a $60,000 cash gift with no donor stipulations. The foundation reports every restricted
+    gift as with donor restrictions when received, even if the restriction is met in the same period.
+    Ignoring interest accretion, what is the net change in net assets with donor restrictions for Year
+    1?
+  choices:
+  - id: A
+    text: $56,000
+    rationale: Correct. $46,000 for the promise (restricted by time) + $40,000 for the scholarship gift
+      − $30,000 released when the scholarships were funded. The $100,000 is a refundable advance, and
+      the $60,000 gift is without donor restrictions.
+  - id: B
+    text: $86,000
+    rationale: Reports the restricted contributions only and leaves out the $30,000 release. Spending
+      on the donor's purpose moves that amount out of net assets with donor restrictions, so the net change
+      is smaller.
+  - id: C
+    text: $116,000
+    rationale: Also counts the $60,000 gift with no donor stipulations. It increases net assets without
+      donor restrictions.
+  - id: D
+    text: $156,000
+    rationale: Counts the $100,000 as revenue with donor restrictions. Because the donor can recover it
+      until the matching gifts are raised, it is a refundable advance (a liability), not revenue.
+  answer: A
+  explanation: 'The $50,000 promise carries no condition other than the passage of time, so it is recognized
+    now at present value ($46,000) as an increase in net assets with donor restrictions (time restriction).
+    The $40,000 scholarship gift is restricted to a purpose; spending $30,000 on it releases that amount,
+    leaving a $10,000 net increase. The $100,000 depends on a measurable barrier (matching gifts) and
+    includes a right of return, so it is not revenue until the barrier is overcome; the cash is a refundable
+    advance. The $60,000 gift is without donor restrictions. Net change in net assets with donor restrictions:
+    $46,000 + $40,000 − $30,000 = $56,000 increase.'
+- stem: Estuary Arts Foundation, a not-for-profit entity, has these transactions in Year 1. (1) On December
+    31 it receives a written promise of $200,000 payable on January 1, Year 3; nothing else is required
+    of the foundation to receive it, and the donor states no use for the money. The promise has a present
+    value of $178,000. (2) It receives $75,000 in cash that the donor requires to be used for scholarships,
+    and it spends $50,000 on qualifying scholarships during Year 1. (3) It receives $250,000 in cash under
+    an agreement that lets the donor recover the money if the foundation does not raise $250,000 of matching
+    gifts by the end of Year 2. By December 31, Year 1, the foundation has raised no matching gifts. (4)
+    It receives a $120,000 cash gift with no donor stipulations. The foundation reports every restricted
+    gift as with donor restrictions when received, even if the restriction is met in the same period.
+    Ignoring interest accretion, what is the net change in net assets with donor restrictions for Year
+    1?
+  choices:
+  - id: A
+    text: $25,000
+    rationale: Leaves out the promise because it is not due until Year 3. An unconditional promise is
+      recognized when made, with a time restriction.
+  - id: B
+    text: $203,000
+    rationale: Correct. $178,000 for the promise (restricted by time) + $75,000 for the scholarship gift
+      − $50,000 released when the scholarships were funded. The $250,000 is a refundable advance, and
+      the $120,000 gift is without donor restrictions.
+  - id: C
+    text: $253,000
+    rationale: Reports the restricted contributions only and leaves out the $50,000 release. Spending
+      on the donor's purpose moves that amount out of net assets with donor restrictions, so the net change
+      is smaller.
+  - id: D
+    text: $323,000
+    rationale: Also counts the $120,000 gift with no donor stipulations. It increases net assets without
+      donor restrictions.
+  answer: B
+  explanation: 'The $200,000 promise carries no condition other than the passage of time, so it is recognized
+    now at present value ($178,000) as an increase in net assets with donor restrictions (time restriction).
+    The $75,000 scholarship gift is restricted to a purpose; spending $50,000 on it releases that amount,
+    leaving a $25,000 net increase. The $250,000 depends on a measurable barrier (matching gifts) and
+    includes a right of return, so it is not revenue until the barrier is overcome; the cash is a refundable
+    advance. The $120,000 gift is without donor restrictions. Net change in net assets with donor restrictions:
+    $178,000 + $75,000 − $50,000 = $203,000 increase.'

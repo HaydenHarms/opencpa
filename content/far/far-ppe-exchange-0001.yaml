@@ -41,3 +41,94 @@ explanation: An exchange has commercial substance when the entity's future cash 
   from the old machinery's. With commercial substance, the exchange is measured at fair value. Gain =
   $210,000 fair value − $180,000 book value = $30,000. The new equipment is recorded at $210,000 + $40,000
   cash = $250,000, which equals its fair value.
+variants:
+- stem: Ivanhoe Corp. exchanges old machinery (book value $300,000; fair value $360,000) plus $50,000
+    cash for new equipment with a fair value of $410,000. The old machinery stamped metal brackets for
+    a product line Ivanhoe is discontinuing; the new equipment will mold plastic housings for a different
+    customer base, under three-year supply contracts at different volumes and prices. What gain does Ivanhoe
+    recognize, and at what amount is the new equipment recorded?
+  choices:
+  - id: A
+    text: $0 gain; new equipment $350,000
+    rationale: Carryover-basis treatment, which applies only when an exchange lacks commercial substance.
+      Replacing a discontinued line with a different product sold under new contracts changes Ivanhoe's
+      future cash flows significantly.
+  - id: B
+    text: $60,000 gain; new equipment $350,000
+    rationale: 'Mixes the two methods: recognizes the gain but records the asset at carryover basis.'
+  - id: C
+    text: $60,000 gain; new equipment $360,000
+    rationale: Recognizes the gain but records the new equipment at the old machinery's $360,000 fair
+      value, leaving out the $50,000 of cash paid.
+  - id: D
+    text: $60,000 gain; new equipment $410,000
+    rationale: 'Correct. The new equipment serves a different product, customers, and pricing, so Ivanhoe''s
+      future cash flows change significantly and the exchange has commercial substance: the gain is fair
+      value minus book value of the asset given up, and the new asset is recorded at fair value.'
+  answer: D
+  explanation: An exchange has commercial substance when the entity's future cash flows are expected to
+    change significantly as a result of it. Here the new equipment makes a different product for different
+    customers at different volumes and prices, so the risk, timing, and amount of its cash flows differ
+    from the old machinery's. With commercial substance, the exchange is measured at fair value. Gain
+    = $360,000 fair value − $300,000 book value = $60,000. The new equipment is recorded at $360,000 +
+    $50,000 cash = $410,000, which equals its fair value.
+- stem: Jardine Corp. exchanges old machinery (book value $95,000; fair value $110,000) plus $25,000 cash
+    for new equipment with a fair value of $135,000. The old machinery stamped metal brackets for a product
+    line Jardine is discontinuing; the new equipment will mold plastic housings for a different customer
+    base, under three-year supply contracts at different volumes and prices. What gain does Jardine recognize,
+    and at what amount is the new equipment recorded?
+  choices:
+  - id: A
+    text: $0 gain; new equipment $120,000
+    rationale: Carryover-basis treatment, which applies only when an exchange lacks commercial substance.
+      Replacing a discontinued line with a different product sold under new contracts changes Jardine's
+      future cash flows significantly.
+  - id: B
+    text: $15,000 gain; new equipment $120,000
+    rationale: 'Mixes the two methods: recognizes the gain but records the asset at carryover basis.'
+  - id: C
+    text: $15,000 gain; new equipment $135,000
+    rationale: 'Correct. The new equipment serves a different product, customers, and pricing, so Jardine''s
+      future cash flows change significantly and the exchange has commercial substance: the gain is fair
+      value minus book value of the asset given up, and the new asset is recorded at fair value.'
+  - id: D
+    text: $40,000 gain; new equipment $135,000
+    rationale: Compares the new asset's fair value to the old book value and ignores the $25,000 of cash
+      paid.
+  answer: C
+  explanation: An exchange has commercial substance when the entity's future cash flows are expected to
+    change significantly as a result of it. Here the new equipment makes a different product for different
+    customers at different volumes and prices, so the risk, timing, and amount of its cash flows differ
+    from the old machinery's. With commercial substance, the exchange is measured at fair value. Gain
+    = $110,000 fair value − $95,000 book value = $15,000. The new equipment is recorded at $110,000 +
+    $25,000 cash = $135,000, which equals its fair value.
+- stem: Kerrigan Corp. exchanges old machinery (book value $520,000; fair value $600,000) plus $70,000
+    cash for new equipment with a fair value of $670,000. The old machinery stamped metal brackets for
+    a product line Kerrigan is discontinuing; the new equipment will mold plastic housings for a different
+    customer base, under three-year supply contracts at different volumes and prices. What gain does Kerrigan
+    recognize, and at what amount is the new equipment recorded?
+  choices:
+  - id: A
+    text: $0 gain; new equipment $590,000
+    rationale: Carryover-basis treatment, which applies only when an exchange lacks commercial substance.
+      Replacing a discontinued line with a different product sold under new contracts changes Kerrigan's
+      future cash flows significantly.
+  - id: B
+    text: $80,000 gain; new equipment $590,000
+    rationale: 'Mixes the two methods: recognizes the gain but records the asset at carryover basis.'
+  - id: C
+    text: $80,000 gain; new equipment $600,000
+    rationale: Recognizes the gain but records the new equipment at the old machinery's $600,000 fair
+      value, leaving out the $70,000 of cash paid.
+  - id: D
+    text: $80,000 gain; new equipment $670,000
+    rationale: 'Correct. The new equipment serves a different product, customers, and pricing, so Kerrigan''s
+      future cash flows change significantly and the exchange has commercial substance: the gain is fair
+      value minus book value of the asset given up, and the new asset is recorded at fair value.'
+  answer: D
+  explanation: An exchange has commercial substance when the entity's future cash flows are expected to
+    change significantly as a result of it. Here the new equipment makes a different product for different
+    customers at different volumes and prices, so the risk, timing, and amount of its cash flows differ
+    from the old machinery's. With commercial substance, the exchange is measured at fair value. Gain
+    = $600,000 fair value − $520,000 book value = $80,000. The new equipment is recorded at $600,000 +
+    $70,000 cash = $670,000, which equals its fair value.

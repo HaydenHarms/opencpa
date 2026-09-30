@@ -41,3 +41,94 @@ explanation: 'For an AFS debt security the holder neither intends nor is likely 
   by which fair value is below amortized cost: $100,000 − $93,000 = $7,000, within the $12,000 limit.
   The allowance is adjusted from $2,000 to $7,000, so Year 2 credit loss expense is $5,000. The remaining
   $5,000 of the decline ($12,000 − $7,000) is reported in other comprehensive income.'
+variants:
+- stem: Glover Inc. holds available-for-sale debt securities whose amortized cost was $250,000 at the
+    end of both Year 1 and Year 2. At the end of Year 1, Glover recorded a $5,000 allowance for credit
+    losses on them. At the end of Year 2, their fair value is $226,000, and the present value of the cash
+    flows Glover expects to collect, discounted at the securities' effective interest rate, is $238,000.
+    Glover does not intend to sell the securities, and it is not more likely than not that it will be
+    required to sell them before recovering their amortized cost. What credit loss expense should Glover
+    recognize in net income for Year 2?
+  choices:
+  - id: A
+    text: $0
+    rationale: Recognizes no credit loss because Glover does not intend to sell. The intent-to-sell test
+      decides whether the whole decline goes to earnings; a credit loss is recognized either way.
+  - id: B
+    text: $7,000
+    rationale: Correct. The allowance must be $12,000 ($250,000 − $238,000); it already holds $5,000,
+      so Year 2 expense is $7,000.
+  - id: C
+    text: $12,000
+    rationale: Records the full credit loss as this year's expense and ignores the $5,000 already in the
+      allowance.
+  - id: D
+    text: $24,000
+    rationale: Recognizes the whole decline in earnings, as if the securities were trading, and ignores
+      the existing allowance.
+  answer: B
+  explanation: 'For an AFS debt security the holder neither intends nor is likely to be required to sell,
+    the credit loss is amortized cost minus the present value of expected cash flows, limited to the amount
+    by which fair value is below amortized cost: $250,000 − $238,000 = $12,000, within the $24,000 limit.
+    The allowance is adjusted from $5,000 to $12,000, so Year 2 credit loss expense is $7,000. The remaining
+    $12,000 of the decline ($24,000 − $12,000) is reported in other comprehensive income.'
+- stem: Hampden Inc. holds available-for-sale debt securities whose amortized cost was $80,000 at the
+    end of both Year 1 and Year 2. At the end of Year 1, Hampden recorded a $1,500 allowance for credit
+    losses on them. At the end of Year 2, their fair value is $74,000, and the present value of the cash
+    flows Hampden expects to collect, discounted at the securities' effective interest rate, is $71,000.
+    Hampden does not intend to sell the securities, and it is not more likely than not that it will be
+    required to sell them before recovering their amortized cost. What credit loss expense should Hampden
+    recognize in net income for Year 2?
+  choices:
+  - id: A
+    text: $0
+    rationale: Recognizes no credit loss because Hampden does not intend to sell. The intent-to-sell test
+      decides whether the whole decline goes to earnings; a credit loss is recognized either way.
+  - id: B
+    text: $4,500
+    rationale: Correct. The credit loss of $9,000 is limited to the $6,000 by which fair value is below
+      amortized cost; the allowance already holds $1,500, so Year 2 expense is $4,500.
+  - id: C
+    text: $6,000
+    rationale: Records the full credit loss as this year's expense and ignores the $1,500 already in the
+      allowance.
+  - id: D
+    text: $7,500
+    rationale: Ignores the fair value floor. The allowance for an available-for-sale debt security is
+      limited to the $6,000 by which fair value is below amortized cost.
+  answer: B
+  explanation: 'For an AFS debt security the holder neither intends nor is likely to be required to sell,
+    the credit loss is amortized cost minus the present value of expected cash flows, limited to the amount
+    by which fair value is below amortized cost: $80,000 − $71,000 = $9,000, limited to the $6,000 by
+    which fair value is below amortized cost. The allowance is adjusted from $1,500 to $6,000, so Year
+    2 credit loss expense is $4,500. None of the decline is left for other comprehensive income.'
+- stem: Ivory Inc. holds available-for-sale debt securities whose amortized cost was $400,000 at the end
+    of both Year 1 and Year 2. At the end of Year 1, Ivory recorded a $10,000 allowance for credit losses
+    on them. At the end of Year 2, their fair value is $360,000, and the present value of the cash flows
+    Ivory expects to collect, discounted at the securities' effective interest rate, is $375,000. Ivory
+    does not intend to sell the securities, and it is not more likely than not that it will be required
+    to sell them before recovering their amortized cost. What credit loss expense should Ivory recognize
+    in net income for Year 2?
+  choices:
+  - id: A
+    text: $15,000
+    rationale: Correct. The allowance must be $25,000 ($400,000 − $375,000); it already holds $10,000,
+      so Year 2 expense is $15,000.
+  - id: B
+    text: $25,000
+    rationale: Records the full credit loss as this year's expense and ignores the $10,000 already in
+      the allowance.
+  - id: C
+    text: $30,000
+    rationale: Treats the whole $40,000 decline below amortized cost as a credit loss, less the existing
+      allowance. The $15,000 of the decline not explained by expected cash flows goes to OCI.
+  - id: D
+    text: $40,000
+    rationale: Recognizes the whole decline in earnings, as if the securities were trading, and ignores
+      the existing allowance.
+  answer: A
+  explanation: 'For an AFS debt security the holder neither intends nor is likely to be required to sell,
+    the credit loss is amortized cost minus the present value of expected cash flows, limited to the amount
+    by which fair value is below amortized cost: $400,000 − $375,000 = $25,000, within the $40,000 limit.
+    The allowance is adjusted from $10,000 to $25,000, so Year 2 credit loss expense is $15,000. The remaining
+    $15,000 of the decline ($40,000 − $25,000) is reported in other comprehensive income.'

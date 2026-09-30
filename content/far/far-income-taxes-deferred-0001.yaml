@@ -40,3 +40,94 @@ explanation: 'Taxable income = $500,000 − $30,000 (tax-exempt interest, perman
   current tax = $107,500. Deferred: warranty gives a deferred tax asset of $120,000 × 25% = $30,000, depreciation
   gives a deferred tax liability of $200,000 × 25% = $50,000, and the valuation allowance adds $12,000
   of expense: $50,000 − $30,000 + $12,000 = $32,000. Total income tax expense = $107,500 + $32,000 = $139,500.'
+variants:
+- stem: In its first year of operations, Stanhope Corp. reports pretax book income of $800,000. Book income
+    includes $50,000 of tax-exempt municipal bond interest and is after deducting $20,000 of nondeductible
+    fines. It is also after warranty expense of $160,000 that is not deductible until claims are paid,
+    and no claims were paid this year. Tax depreciation exceeded book depreciation by $240,000. The enacted
+    tax rate is 21% for all years, and Stanhope has no other differences. Based on its forecast of taxable
+    income, management concludes that it is more likely than not that $15,000 of the deferred tax asset
+    will not be realized. What is Stanhope's total income tax expense?
+  choices:
+  - id: A
+    text: $146,700
+    rationale: Subtracts the valuation allowance from deferred tax expense. An allowance increases deferred
+      tax expense.
+  - id: B
+    text: $161,700
+    rationale: Omits the valuation allowance ($144,900 current + $50,400 − $33,600 deferred).
+  - id: C
+    text: $176,700
+    rationale: Correct. $144,900 current + $31,800 deferred ($50,400 liability − $33,600 asset + $15,000
+      allowance).
+  - id: D
+    text: $183,000
+    rationale: Ignores the permanent differences and computes current tax on $720,000 of taxable income
+      ($151,200 current + $31,800 deferred).
+  answer: C
+  explanation: 'Taxable income = $800,000 − $50,000 (tax-exempt interest, permanent) + $20,000 (nondeductible
+    fines, permanent) + $160,000 (warranty, deductible later) − $240,000 (excess tax depreciation) = $690,000;
+    current tax = $144,900. Deferred: warranty gives a deferred tax asset of $160,000 × 21% = $33,600,
+    depreciation gives a deferred tax liability of $240,000 × 21% = $50,400, and the valuation allowance
+    adds $15,000 of expense: $50,400 − $33,600 + $15,000 = $31,800. Total income tax expense = $144,900
+    + $31,800 = $176,700.'
+- stem: In its first year of operations, Thornbury Corp. reports pretax book income of $300,000. Book
+    income includes $10,000 of tax-exempt municipal bond interest and is after deducting $25,000 of nondeductible
+    fines. It is also after warranty expense of $60,000 that is not deductible until claims are paid,
+    and no claims were paid this year. Tax depreciation exceeded book depreciation by $100,000. The enacted
+    tax rate is 25% for all years, and Thornbury has no other differences. Based on its forecast of taxable
+    income, management concludes that it is more likely than not that $8,000 of the deferred tax asset
+    will not be realized. What is Thornbury's total income tax expense?
+  choices:
+  - id: A
+    text: $70,750
+    rationale: Subtracts the valuation allowance from deferred tax expense. An allowance increases deferred
+      tax expense.
+  - id: B
+    text: $83,000
+    rationale: Ignores the permanent differences and computes current tax on $260,000 of taxable income
+      ($65,000 current + $18,000 deferred).
+  - id: C
+    text: $86,750
+    rationale: Correct. $68,750 current + $18,000 deferred ($25,000 liability − $15,000 asset + $8,000
+      allowance).
+  - id: D
+    text: $116,750
+    rationale: Adds the $15,000 deferred tax asset to deferred tax expense. A deferred tax asset reduces
+      deferred tax expense.
+  answer: C
+  explanation: 'Taxable income = $300,000 − $10,000 (tax-exempt interest, permanent) + $25,000 (nondeductible
+    fines, permanent) + $60,000 (warranty, deductible later) − $100,000 (excess tax depreciation) = $275,000;
+    current tax = $68,750. Deferred: warranty gives a deferred tax asset of $60,000 × 25% = $15,000, depreciation
+    gives a deferred tax liability of $100,000 × 25% = $25,000, and the valuation allowance adds $8,000
+    of expense: $25,000 − $15,000 + $8,000 = $18,000. Total income tax expense = $68,750 + $18,000 = $86,750.'
+- stem: In its first year of operations, Ulverston Corp. reports pretax book income of $1,000,000. Book
+    income includes $80,000 of tax-exempt municipal bond interest and is after deducting $30,000 of nondeductible
+    fines. It is also after warranty expense of $200,000 that is not deductible until claims are paid,
+    and no claims were paid this year. Tax depreciation exceeded book depreciation by $400,000. The enacted
+    tax rate is 25% for all years, and Ulverston has no other differences. Based on its forecast of taxable
+    income, management concludes that it is more likely than not that $20,000 of the deferred tax asset
+    will not be realized. What is Ulverston's total income tax expense?
+  choices:
+  - id: A
+    text: $237,500
+    rationale: Omits the valuation allowance ($187,500 current + $100,000 − $50,000 deferred).
+  - id: B
+    text: $257,500
+    rationale: Correct. $187,500 current + $70,000 deferred ($100,000 liability − $50,000 asset + $20,000
+      allowance).
+  - id: C
+    text: $270,000
+    rationale: Ignores the permanent differences and computes current tax on $800,000 of taxable income
+      ($200,000 current + $70,000 deferred).
+  - id: D
+    text: $357,500
+    rationale: Adds the $50,000 deferred tax asset to deferred tax expense. A deferred tax asset reduces
+      deferred tax expense.
+  answer: B
+  explanation: 'Taxable income = $1,000,000 − $80,000 (tax-exempt interest, permanent) + $30,000 (nondeductible
+    fines, permanent) + $200,000 (warranty, deductible later) − $400,000 (excess tax depreciation) = $750,000;
+    current tax = $187,500. Deferred: warranty gives a deferred tax asset of $200,000 × 25% = $50,000,
+    depreciation gives a deferred tax liability of $400,000 × 25% = $100,000, and the valuation allowance
+    adds $20,000 of expense: $100,000 − $50,000 + $20,000 = $70,000. Total income tax expense = $187,500
+    + $70,000 = $257,500.'

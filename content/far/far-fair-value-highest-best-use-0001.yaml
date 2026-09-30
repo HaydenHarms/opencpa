@@ -38,3 +38,88 @@ explanation: 'Fair value reflects the use of the asset by market participants th
   permits the development and it is feasible, so the land is valued as development land. A market participant
   would pay the completed value less the costs and required profit: $2,900,000 − $450,000 − $150,000 =
   $2,300,000, which exceeds the $1,900,000 value in Clover''s current use.'
+variants:
+- stem: Eldridge Corp. owns land that it uses as a parking lot and intends to keep using that way. The
+    present value of the parking cash flows is $3,200,000. Local zoning allows condominiums on the site.
+    A market-participant developer could complete a condominium project there, which would be worth $5,000,000
+    to market participants, and completing it would take $900,000 of construction costs plus $300,000
+    for the profit a market-participant developer would require. Eldridge must determine the land's fair
+    value under ASC 820. What is the fair value?
+  choices:
+  - id: A
+    text: $3,200,000
+    rationale: Measures the land at value in Eldridge's intended use. Fair value assumes the use a market
+      participant would make, not the entity's own plans.
+  - id: B
+    text: $3,800,000
+    rationale: Correct. $5,000,000 − $900,000 construction − $300,000 developer profit.
+  - id: C
+    text: $4,100,000
+    rationale: Deducts the construction costs but not the profit a market-participant developer would
+      require.
+  - id: D
+    text: $5,000,000
+    rationale: Uses the completed project's value and ignores the cost and required profit of developing
+      it.
+  answer: B
+  explanation: 'Fair value reflects the use of the asset by market participants that would maximize its
+    value, provided that use is physically possible, legally permissible, and financially feasible. Zoning
+    permits the development and it is feasible, so the land is valued as development land. A market participant
+    would pay the completed value less the costs and required profit: $5,000,000 − $900,000 − $300,000
+    = $3,800,000, which exceeds the $3,200,000 value in Eldridge''s current use.'
+- stem: Fairmont Corp. owns land that it uses as a parking lot and intends to keep using that way. The
+    present value of the parking cash flows is $800,000. Local zoning allows condominiums on the site.
+    A market-participant developer could complete a condominium project there, which would be worth $1,600,000
+    to market participants, and completing it would take $450,000 of construction costs plus $120,000
+    for the profit a market-participant developer would require. Fairmont must determine the land's fair
+    value under ASC 820. What is the fair value?
+  choices:
+  - id: A
+    text: $800,000
+    rationale: Measures the land at value in Fairmont's intended use. Fair value assumes the use a market
+      participant would make, not the entity's own plans.
+  - id: B
+    text: $1,030,000
+    rationale: Correct. $1,600,000 − $450,000 construction − $120,000 developer profit.
+  - id: C
+    text: $1,150,000
+    rationale: Deducts the construction costs but not the profit a market-participant developer would
+      require.
+  - id: D
+    text: $1,600,000
+    rationale: Uses the completed project's value and ignores the cost and required profit of developing
+      it.
+  answer: B
+  explanation: 'Fair value reflects the use of the asset by market participants that would maximize its
+    value, provided that use is physically possible, legally permissible, and financially feasible. Zoning
+    permits the development and it is feasible, so the land is valued as development land. A market participant
+    would pay the completed value less the costs and required profit: $1,600,000 − $450,000 − $120,000
+    = $1,030,000, which exceeds the $800,000 value in Fairmont''s current use.'
+- stem: Glenwood Corp. owns land that it uses as a parking lot and intends to keep using that way. The
+    present value of the parking cash flows is $2,500,000. Local zoning allows condominiums on the site.
+    A market-participant developer could complete a condominium project there, which would be worth $4,200,000
+    to market participants, and completing it would take $1,000,000 of construction costs plus $250,000
+    for the profit a market-participant developer would require. Glenwood must determine the land's fair
+    value under ASC 820. What is the fair value?
+  choices:
+  - id: A
+    text: $2,950,000
+    rationale: Correct. $4,200,000 − $1,000,000 construction − $250,000 developer profit.
+  - id: B
+    text: $3,200,000
+    rationale: Deducts the construction costs but not the profit a market-participant developer would
+      require.
+  - id: C
+    text: $3,950,000
+    rationale: Deducts the developer's required profit but not the construction costs of completing the
+      project.
+  - id: D
+    text: $4,200,000
+    rationale: Uses the completed project's value and ignores the cost and required profit of developing
+      it.
+  answer: A
+  explanation: 'Fair value reflects the use of the asset by market participants that would maximize its
+    value, provided that use is physically possible, legally permissible, and financially feasible. Zoning
+    permits the development and it is feasible, so the land is valued as development land. A market participant
+    would pay the completed value less the costs and required profit: $4,200,000 − $1,000,000 − $250,000
+    = $2,950,000, which exceeds the $2,500,000 value in Glenwood''s current use.'

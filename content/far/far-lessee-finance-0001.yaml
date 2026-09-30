@@ -31,3 +31,69 @@ choices:
 answer: C
 explanation: 'Year 1: interest $16,000, principal reduction $34,000, ending liability $166,000. Year 2:
   interest = $166,000 × 8% = $13,280. Amortization = $200,000 ÷ 5 = $40,000. Total Year 2 expense = $53,280.'
+variants:
+- stem: On January 1, Year 1, Prentiss Corp. commences a 4-year finance lease. The lease liability at
+    commencement is $200,000 (rounded), the annual payment of $56,400 is due each December 31, and the
+    discount rate is 5%. The right-of-use asset is amortized straight-line over the lease term. What total
+    lease-related expense does Prentiss recognize in Year 2?
+  choices:
+  - id: A
+    text: $7,680
+    rationale: Includes only interest. A finance lease also amortizes the right-of-use asset.
+  - id: B
+    text: $50,000
+    rationale: Includes only amortization. A finance lease also has interest expense.
+  - id: C
+    text: $56,400
+    rationale: Treats the cash payment as the expense.
+  - id: D
+    text: $57,680
+    rationale: Correct. Year 2 interest of $7,680 on a $153,600 opening liability, plus $50,000 of amortization.
+  answer: D
+  explanation: 'Year 1: interest $10,000, principal reduction $46,400, ending liability $153,600. Year
+    2: interest = $153,600 × 5% = $7,680. Amortization = $200,000 ÷ 4 = $50,000. Total Year 2 expense
+    = $57,680.'
+- stem: On January 1, Year 1, Quigley Corp. commences a 5-year finance lease. The lease liability at commencement
+    is $190,000 (rounded), the annual payment of $50,000 is due each December 31, and the discount rate
+    is 10%. The right-of-use asset is amortized straight-line over the lease term. What total lease-related
+    expense does Quigley recognize in Year 2?
+  choices:
+  - id: A
+    text: $15,900
+    rationale: Includes only interest. A finance lease also amortizes the right-of-use asset.
+  - id: B
+    text: $38,000
+    rationale: Includes only amortization. A finance lease also has interest expense.
+  - id: C
+    text: $53,900
+    rationale: Correct. Year 2 interest of $15,900 on a $159,000 opening liability, plus $38,000 of amortization.
+  - id: D
+    text: $57,000
+    rationale: Uses Year 1 interest ($19,000) without reducing the liability for the Year 1 principal
+      payment.
+  answer: C
+  explanation: 'Year 1: interest $19,000, principal reduction $31,000, ending liability $159,000. Year
+    2: interest = $159,000 × 10% = $15,900. Amortization = $190,000 ÷ 5 = $38,000. Total Year 2 expense
+    = $53,900.'
+- stem: On January 1, Year 1, Rowntree Corp. commences a 5-year finance lease. The lease liability at
+    commencement is $295,000 (rounded), the annual payment of $70,000 is due each December 31, and the
+    discount rate is 6%. The right-of-use asset is amortized straight-line over the lease term. What total
+    lease-related expense does Rowntree recognize in Year 2?
+  choices:
+  - id: A
+    text: $14,562
+    rationale: Includes only interest. A finance lease also amortizes the right-of-use asset.
+  - id: B
+    text: $59,000
+    rationale: Includes only amortization. A finance lease also has interest expense.
+  - id: C
+    text: $73,562
+    rationale: Correct. Year 2 interest of $14,562 on a $242,700 opening liability, plus $59,000 of amortization.
+  - id: D
+    text: $76,700
+    rationale: Uses Year 1 interest ($17,700) without reducing the liability for the Year 1 principal
+      payment.
+  answer: C
+  explanation: 'Year 1: interest $17,700, principal reduction $52,300, ending liability $242,700. Year
+    2: interest = $242,700 × 6% = $14,562. Amortization = $295,000 ÷ 5 = $59,000. Total Year 2 expense
+    = $73,562.'
