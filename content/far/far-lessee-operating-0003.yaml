@@ -41,3 +41,94 @@ explanation: 'None of the finance-lease criteria is met (no transfer of ownershi
   initial direct costs, recognized straight-line: ($40,000 + $42,000 + $44,000 + $46,000 + $48,000 + $5,000)
   ÷ 5 = $45,000. The discount rate affects the measurement of the liability and right-of-use asset, not
   the straight-line cost.'
+variants:
+- stem: On January 1, Year 1, Zenith Co. leases office equipment for 4 years. The equipment's economic
+    life is 16 years, ownership stays with the lessor, there is no purchase option, the present value
+    of the payments is 40% of the equipment's fair value, and the equipment is not specialized. Annual
+    payments, due each December 31, are $60,000 in Year 1 and increase by $3,000 each year. Zenith pays
+    $8,000 of initial direct costs at commencement, and its incremental borrowing rate is 6%. What total
+    lease cost should Zenith recognize in Year 1?
+  choices:
+  - id: A
+    text: $60,000
+    rationale: Recognizes the Year 1 cash payment. Operating lease cost is recognized straight-line over
+      the term.
+  - id: B
+    text: $64,500
+    rationale: Uses straight-line payments but omits the $2,000 of amortization of initial direct costs,
+      which is part of the single lease cost.
+  - id: C
+    text: $66,500
+    rationale: Correct. Total payments $258,000 ÷ 4 = $64,500 straight-line, plus $8,000 ÷ 4 = $2,000
+      of initial direct costs.
+  - id: D
+    text: $72,500
+    rationale: Expenses all $8,000 of initial direct costs in Year 1. They are included in the single
+      lease cost, recognized straight-line over the term.
+  answer: C
+  explanation: 'None of the finance-lease criteria is met (no transfer of ownership or purchase option,
+    a term that is 25% of economic life, present value well below substantially all of fair value, and
+    nonspecialized equipment), so the lease is an operating lease. Its single lease cost is the total
+    lease payments plus initial direct costs, recognized straight-line: ($60,000 + $63,000 + $66,000 +
+    $69,000 + $8,000) ÷ 4 = $66,500. The discount rate affects the measurement of the liability and right-of-use
+    asset, not the straight-line cost.'
+- stem: On January 1, Year 1, Alder Co. leases office equipment for 6 years. The equipment's economic
+    life is 24 years, ownership stays with the lessor, there is no purchase option, the present value
+    of the payments is 40% of the equipment's fair value, and the equipment is not specialized. Annual
+    payments, due each December 31, are $25,000 in Year 1 and increase by $1,000 each year. Alder pays
+    $3,000 of initial direct costs at commencement, and its incremental borrowing rate is 6%. What total
+    lease cost should Alder recognize in Year 1?
+  choices:
+  - id: A
+    text: $25,000
+    rationale: Recognizes the Year 1 cash payment. Operating lease cost is recognized straight-line over
+      the term.
+  - id: B
+    text: $25,500
+    rationale: Adds the initial direct costs' amortization to the Year 1 cash payment instead of the straight-line
+      payment amount.
+  - id: C
+    text: $27,500
+    rationale: Uses straight-line payments but omits the $500 of amortization of initial direct costs,
+      which is part of the single lease cost.
+  - id: D
+    text: $28,000
+    rationale: Correct. Total payments $165,000 ÷ 6 = $27,500 straight-line, plus $3,000 ÷ 6 = $500 of
+      initial direct costs.
+  answer: D
+  explanation: 'None of the finance-lease criteria is met (no transfer of ownership or purchase option,
+    a term that is 25% of economic life, present value well below substantially all of fair value, and
+    nonspecialized equipment), so the lease is an operating lease. Its single lease cost is the total
+    lease payments plus initial direct costs, recognized straight-line: ($25,000 + $26,000 + $27,000 +
+    $28,000 + $29,000 + $30,000 + $3,000) ÷ 6 = $28,000. The discount rate affects the measurement of
+    the liability and right-of-use asset, not the straight-line cost.'
+- stem: On January 1, Year 1, Birchwood Co. leases office equipment for 5 years. The equipment's economic
+    life is 25 years, ownership stays with the lessor, there is no purchase option, the present value
+    of the payments is 40% of the equipment's fair value, and the equipment is not specialized. Annual
+    payments, due each December 31, are $90,000 in Year 1 and increase by $5,000 each year. Birchwood
+    pays $10,000 of initial direct costs at commencement, and its incremental borrowing rate is 6%. What
+    total lease cost should Birchwood recognize in Year 1?
+  choices:
+  - id: A
+    text: $92,000
+    rationale: Adds the initial direct costs' amortization to the Year 1 cash payment instead of the straight-line
+      payment amount.
+  - id: B
+    text: $100,000
+    rationale: Uses straight-line payments but omits the $2,000 of amortization of initial direct costs,
+      which is part of the single lease cost.
+  - id: C
+    text: $102,000
+    rationale: Correct. Total payments $500,000 ÷ 5 = $100,000 straight-line, plus $10,000 ÷ 5 = $2,000
+      of initial direct costs.
+  - id: D
+    text: $110,000
+    rationale: Expenses all $10,000 of initial direct costs in Year 1. They are included in the single
+      lease cost, recognized straight-line over the term.
+  answer: C
+  explanation: 'None of the finance-lease criteria is met (no transfer of ownership or purchase option,
+    a term that is 20% of economic life, present value well below substantially all of fair value, and
+    nonspecialized equipment), so the lease is an operating lease. Its single lease cost is the total
+    lease payments plus initial direct costs, recognized straight-line: ($90,000 + $95,000 + $100,000
+    + $105,000 + $110,000 + $10,000) ÷ 5 = $102,000. The discount rate affects the measurement of the
+    liability and right-of-use asset, not the straight-line cost.'

@@ -42,3 +42,98 @@ explanation: 'An entity is a principal if it controls the good or service before
   its net fee of $450,000. Tour packages: Voya commits to the rooms in advance (inventory risk), sets
   the price and answers for the stay, so it is the principal and recognizes $1,800,000 gross, with the
   $1,200,000 room cost in cost of sales. Total revenue = $2,250,000.'
+variants:
+- stem: 'Wander Travel operates a website with two lines of business. Hotel bookings: customers book and
+    pay Wander $250 per room night; the hotel sets the room rate, is responsible for providing the room,
+    and bears the risk if rooms go unsold, and Wander keeps $30 of each booking and remits $220 to the
+    hotel. During the year Wander arranged 20,000 room nights. Tour packages: Wander buys blocks of hotel
+    rooms months in advance under nonrefundable contracts, sets the package price, and is responsible
+    to customers for fixing any problem with the stay. It sold 3,000 packages at $700 each, whose rooms
+    cost it $480 each. What total revenue should Wander recognize for the year?'
+  choices:
+  - id: A
+    text: $2,100,000
+    rationale: 'Reports the packages gross but recognizes nothing for hotel bookings. As an agent, Wander
+      still earns revenue: its $30 fee per room night.'
+  - id: B
+    text: $2,700,000
+    rationale: Correct. Hotel bookings net as agent (20,000 × $30 = $600,000) plus tour packages gross
+      as principal (3,000 × $700 = $2,100,000).
+  - id: C
+    text: $5,660,000
+    rationale: Reports hotel bookings gross and packages net, the reverse of who controls the rooms in
+      each line.
+  - id: D
+    text: $7,100,000
+    rationale: Reports both lines gross. For hotel bookings the hotel controls the room, so Wander reports
+      only its fee.
+  answer: B
+  explanation: 'An entity is a principal if it controls the good or service before transfer to the customer;
+    indicators include primary responsibility for fulfillment, inventory risk, and pricing discretion.
+    Hotel bookings: the hotel fulfills, bears inventory risk and sets the price, so Wander is an agent
+    and recognizes its net fee of $600,000. Tour packages: Wander commits to the rooms in advance (inventory
+    risk), sets the price and answers for the stay, so it is the principal and recognizes $2,100,000 gross,
+    with the $1,440,000 room cost in cost of sales. Total revenue = $2,700,000.'
+- stem: 'Xplore Travel operates a website with two lines of business. Hotel bookings: customers book and
+    pay Xplore $400 per room night; the hotel sets the room rate, is responsible for providing the room,
+    and bears the risk if rooms go unsold, and Xplore keeps $60 of each booking and remits $340 to the
+    hotel. During the year Xplore arranged 5,000 room nights. Tour packages: Xplore buys blocks of hotel
+    rooms months in advance under nonrefundable contracts, sets the package price, and is responsible
+    to customers for fixing any problem with the stay. It sold 1,500 packages at $1,200 each, whose rooms
+    cost it $850 each. What total revenue should Xplore recognize for the year?'
+  choices:
+  - id: A
+    text: $825,000
+    rationale: Reports both lines net. Xplore controls the package rooms before transfer (it bears inventory
+      risk, sets the price and is responsible for fulfillment), so it is the principal for packages and
+      reports them gross.
+  - id: B
+    text: $1,800,000
+    rationale: 'Reports the packages gross but recognizes nothing for hotel bookings. As an agent, Xplore
+      still earns revenue: its $60 fee per room night.'
+  - id: C
+    text: $2,100,000
+    rationale: Correct. Hotel bookings net as agent (5,000 × $60 = $300,000) plus tour packages gross
+      as principal (1,500 × $1,200 = $1,800,000).
+  - id: D
+    text: $2,525,000
+    rationale: Reports hotel bookings gross and packages net, the reverse of who controls the rooms in
+      each line.
+  answer: C
+  explanation: 'An entity is a principal if it controls the good or service before transfer to the customer;
+    indicators include primary responsibility for fulfillment, inventory risk, and pricing discretion.
+    Hotel bookings: the hotel fulfills, bears inventory risk and sets the price, so Xplore is an agent
+    and recognizes its net fee of $300,000. Tour packages: Xplore commits to the rooms in advance (inventory
+    risk), sets the price and answers for the stay, so it is the principal and recognizes $1,800,000 gross,
+    with the $1,275,000 room cost in cost of sales. Total revenue = $2,100,000.'
+- stem: 'Yonder Travel operates a website with two lines of business. Hotel bookings: customers book and
+    pay Yonder $180 per room night; the hotel sets the room rate, is responsible for providing the room,
+    and bears the risk if rooms go unsold, and Yonder keeps $25 of each booking and remits $155 to the
+    hotel. During the year Yonder arranged 30,000 room nights. Tour packages: Yonder buys blocks of hotel
+    rooms months in advance under nonrefundable contracts, sets the package price, and is responsible
+    to customers for fixing any problem with the stay. It sold 4,000 packages at $650 each, whose rooms
+    cost it $420 each. What total revenue should Yonder recognize for the year?'
+  choices:
+  - id: A
+    text: $2,600,000
+    rationale: 'Reports the packages gross but recognizes nothing for hotel bookings. As an agent, Yonder
+      still earns revenue: its $25 fee per room night.'
+  - id: B
+    text: $3,350,000
+    rationale: Correct. Hotel bookings net as agent (30,000 × $25 = $750,000) plus tour packages gross
+      as principal (4,000 × $650 = $2,600,000).
+  - id: C
+    text: $6,320,000
+    rationale: Reports hotel bookings gross and packages net, the reverse of who controls the rooms in
+      each line.
+  - id: D
+    text: $8,000,000
+    rationale: Reports both lines gross. For hotel bookings the hotel controls the room, so Yonder reports
+      only its fee.
+  answer: B
+  explanation: 'An entity is a principal if it controls the good or service before transfer to the customer;
+    indicators include primary responsibility for fulfillment, inventory risk, and pricing discretion.
+    Hotel bookings: the hotel fulfills, bears inventory risk and sets the price, so Yonder is an agent
+    and recognizes its net fee of $750,000. Tour packages: Yonder commits to the rooms in advance (inventory
+    risk), sets the price and answers for the stay, so it is the principal and recognizes $2,600,000 gross,
+    with the $1,680,000 room cost in cost of sales. Total revenue = $3,350,000.'

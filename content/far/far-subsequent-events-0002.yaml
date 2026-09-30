@@ -41,3 +41,95 @@ explanation: 'Events that give evidence about conditions existing at the balance
   rises from $10,000 to $60,000 ($80,000 − $20,000): a $50,000 charge. The settlement confirms a Year
   1 obligation at $150,000: $50,000 more than accrued. Year 1 pretax income falls by $100,000. The fire
   and the bond issue reflect conditions arising after year-end; they are disclosed, not recognized.'
+variants:
+- stem: 'Umber Co.''s December 31, Year 1, statements will be issued on March 15, Year 2. Between those
+    dates: (1) on January 25, a customer that owed $120,000 at year-end filed for bankruptcy because of
+    financial difficulties that had built up over Year 1; Umber now expects to collect $30,000, and its
+    allowance included $15,000 for this customer; (2) on February 10, Umber settled for $200,000 a lawsuit
+    over a Year 1 injury for which it had accrued $160,000; (3) on February 20, a fire destroyed an uninsured
+    warehouse with a carrying amount of $450,000; and (4) on March 1, Umber issued $2,000,000 of bonds.
+    What is the effect on Umber''s Year 1 pretax income, and which events require disclosure without adjustment?'
+  choices:
+  - id: A
+    text: $0 decrease; disclose all four events
+    rationale: Treats every event as nonrecognized. The bankruptcy and the settlement give evidence about
+      conditions that existed at year-end, so they are recognized.
+  - id: B
+    text: $40,000 decrease; disclose the fire and the bond issue
+    rationale: Adjusts for the settlement but not the customer's bankruptcy, which resulted from difficulties
+      that built up during Year 1.
+  - id: C
+    text: $115,000 decrease; disclose the fire and the bond issue
+    rationale: Correct. The customer's loss ($75,000 more allowance) and the settlement ($40,000 more
+      accrual) are recognized; the fire and the bond issue are disclosed.
+  - id: D
+    text: $130,000 decrease; disclose the fire and the bond issue
+    rationale: Charges the whole $90,000 shortfall without using the $15,000 already in the allowance
+      for this customer.
+  answer: C
+  explanation: 'Events that give evidence about conditions existing at the balance sheet date are recognized.
+    The customer''s bankruptcy resulted from deterioration during Year 1, so the allowance for that customer
+    rises from $15,000 to $90,000 ($120,000 − $30,000): a $75,000 charge. The settlement confirms a Year
+    1 obligation at $200,000: $40,000 more than accrued. Year 1 pretax income falls by $115,000. The fire
+    and the bond issue reflect conditions arising after year-end; they are disclosed, not recognized.'
+- stem: 'Varley Co.''s December 31, Year 1, statements will be issued on March 15, Year 2. Between those
+    dates: (1) on January 25, a customer that owed $60,000 at year-end filed for bankruptcy because of
+    financial difficulties that had built up over Year 1; Varley now expects to collect $15,000, and its
+    allowance included $5,000 for this customer; (2) on February 10, Varley settled for $90,000 a lawsuit
+    over a Year 1 injury for which it had accrued $70,000; (3) on February 20, a fire destroyed an uninsured
+    warehouse with a carrying amount of $200,000; and (4) on March 1, Varley issued $800,000 of bonds.
+    What is the effect on Varley''s Year 1 pretax income, and which events require disclosure without
+    adjustment?'
+  choices:
+  - id: A
+    text: $40,000 decrease; disclose the fire and the bond issue
+    rationale: Adjusts for the customer's bankruptcy but not the settlement, which confirms the amount
+      of a Year 1 obligation.
+  - id: B
+    text: $60,000 decrease; disclose the fire and the bond issue
+    rationale: Correct. The customer's loss ($40,000 more allowance) and the settlement ($20,000 more
+      accrual) are recognized; the fire and the bond issue are disclosed.
+  - id: C
+    text: $60,000 decrease; disclose the fire only
+    rationale: Omits the bond issue. A significant financing after year-end is a nonrecognized event that
+      is disclosed.
+  - id: D
+    text: $260,000 decrease; disclose the bond issue only
+    rationale: Also recognizes the fire loss. The fire happened after year-end, so it is disclosed, not
+      recognized.
+  answer: B
+  explanation: 'Events that give evidence about conditions existing at the balance sheet date are recognized.
+    The customer''s bankruptcy resulted from deterioration during Year 1, so the allowance for that customer
+    rises from $5,000 to $45,000 ($60,000 − $15,000): a $40,000 charge. The settlement confirms a Year
+    1 obligation at $90,000: $20,000 more than accrued. Year 1 pretax income falls by $60,000. The fire
+    and the bond issue reflect conditions arising after year-end; they are disclosed, not recognized.'
+- stem: 'Wyatt Co.''s December 31, Year 1, statements will be issued on March 15, Year 2. Between those
+    dates: (1) on January 25, a customer that owed $200,000 at year-end filed for bankruptcy because of
+    financial difficulties that had built up over Year 1; Wyatt now expects to collect $50,000, and its
+    allowance included $30,000 for this customer; (2) on February 10, Wyatt settled for $300,000 a lawsuit
+    over a Year 1 injury for which it had accrued $250,000; (3) on February 20, a fire destroyed an uninsured
+    warehouse with a carrying amount of $500,000; and (4) on March 1, Wyatt issued $3,000,000 of bonds.
+    What is the effect on Wyatt''s Year 1 pretax income, and which events require disclosure without adjustment?'
+  choices:
+  - id: A
+    text: $0 decrease; disclose all four events
+    rationale: Treats every event as nonrecognized. The bankruptcy and the settlement give evidence about
+      conditions that existed at year-end, so they are recognized.
+  - id: B
+    text: $50,000 decrease; disclose the fire and the bond issue
+    rationale: Adjusts for the settlement but not the customer's bankruptcy, which resulted from difficulties
+      that built up during Year 1.
+  - id: C
+    text: $120,000 decrease; disclose the fire and the bond issue
+    rationale: Adjusts for the customer's bankruptcy but not the settlement, which confirms the amount
+      of a Year 1 obligation.
+  - id: D
+    text: $170,000 decrease; disclose the fire and the bond issue
+    rationale: Correct. The customer's loss ($120,000 more allowance) and the settlement ($50,000 more
+      accrual) are recognized; the fire and the bond issue are disclosed.
+  answer: D
+  explanation: 'Events that give evidence about conditions existing at the balance sheet date are recognized.
+    The customer''s bankruptcy resulted from deterioration during Year 1, so the allowance for that customer
+    rises from $30,000 to $150,000 ($200,000 − $50,000): a $120,000 charge. The settlement confirms a
+    Year 1 obligation at $300,000: $50,000 more than accrued. Year 1 pretax income falls by $170,000.
+    The fire and the bond issue reflect conditions arising after year-end; they are disclosed, not recognized.'

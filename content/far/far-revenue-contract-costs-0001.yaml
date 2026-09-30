@@ -40,3 +40,94 @@ explanation: 'Only incremental costs of obtaining a contract, those that would n
   and proposal travel are incurred regardless and are expensed ($9,000). The commission is amortized over
   the period of expected benefit, the three-year term plus the expected two-year renewal (no commensurate
   renewal commission): $24,000 ÷ 5 × ½ = $2,400 in Year 1. Total expense = $11,400.'
+variants:
+- stem: On July 1, Year 1, Delphi Services signs a four-year contract to provide IT support. Delphi expects
+    the customer to renew it once for two more years, and it pays no commission on renewals. In obtaining
+    the contract, Delphi paid its salesperson a $36,000 commission that is owed only because the contract
+    was signed, paid outside counsel $12,000 to draft the contract, a fee owed whether or not the customer
+    signed, and incurred $4,000 of travel costs to present its proposal, which it would also have incurred
+    had it lost the bid. Delphi amortizes capitalized contract costs straight-line. What total expense
+    related to these costs should Delphi recognize in Year 1?
+  choices:
+  - id: A
+    text: $8,000
+    rationale: Capitalizes the $12,000 legal fee with the commission. Only costs incurred because the
+      contract was obtained are capitalized; the fee was owed either way.
+  - id: B
+    text: $19,000
+    rationale: Correct. $12,000 legal + $4,000 travel expensed, plus $36,000 ÷ 6 years × ½ year = $3,000
+      of amortization.
+  - id: C
+    text: $20,500
+    rationale: Amortizes the commission over the four-year initial term. It is amortized over the period
+      of expected benefit, including the anticipated renewal, since no commission is paid on renewal.
+  - id: D
+    text: $22,000
+    rationale: Amortizes a full year of the commission. Amortization begins when the contract starts on
+      July 1, so Year 1 has half a year ($3,000).
+  answer: B
+  explanation: 'Only incremental costs of obtaining a contract, those that would not have been incurred
+    had the contract not been obtained, are capitalized: the $36,000 commission. Legal fees for drafting
+    and proposal travel are incurred regardless and are expensed ($16,000). The commission is amortized
+    over the period of expected benefit, the four-year term plus the expected two-year renewal (no commensurate
+    renewal commission): $36,000 ÷ 6 × ½ = $3,000 in Year 1. Total expense = $19,000.'
+- stem: On July 1, Year 1, Eclipse Services signs a two-year contract to provide IT support. Eclipse expects
+    the customer to renew it once for three more years, and it pays no commission on renewals. In obtaining
+    the contract, Eclipse paid its salesperson a $30,000 commission that is owed only because the contract
+    was signed, paid outside counsel $5,000 to draft the contract, a fee owed whether or not the customer
+    signed, and incurred $2,000 of travel costs to present its proposal, which it would also have incurred
+    had it lost the bid. Eclipse amortizes capitalized contract costs straight-line. What total expense
+    related to these costs should Eclipse recognize in Year 1?
+  choices:
+  - id: A
+    text: $10,000
+    rationale: Correct. $5,000 legal + $2,000 travel expensed, plus $30,000 ÷ 5 years × ½ year = $3,000
+      of amortization.
+  - id: B
+    text: $13,000
+    rationale: Amortizes a full year of the commission. Amortization begins when the contract starts on
+      July 1, so Year 1 has half a year ($3,000).
+  - id: C
+    text: $14,500
+    rationale: Amortizes the commission over the two-year initial term. It is amortized over the period
+      of expected benefit, including the anticipated renewal, since no commission is paid on renewal.
+  - id: D
+    text: $37,000
+    rationale: Expenses the commission. The practical expedient to expense commissions applies only when
+      the amortization period is one year or less.
+  answer: A
+  explanation: 'Only incremental costs of obtaining a contract, those that would not have been incurred
+    had the contract not been obtained, are capitalized: the $30,000 commission. Legal fees for drafting
+    and proposal travel are incurred regardless and are expensed ($7,000). The commission is amortized
+    over the period of expected benefit, the two-year term plus the expected three-year renewal (no commensurate
+    renewal commission): $30,000 ÷ 5 × ½ = $3,000 in Year 1. Total expense = $10,000.'
+- stem: On July 1, Year 1, Fulcrum Services signs a three-year contract to provide IT support. Fulcrum
+    expects the customer to renew it once for two more years, and it pays no commission on renewals. In
+    obtaining the contract, Fulcrum paid its salesperson a $60,000 commission that is owed only because
+    the contract was signed, paid outside counsel $10,000 to draft the contract, a fee owed whether or
+    not the customer signed, and incurred $6,000 of travel costs to present its proposal, which it would
+    also have incurred had it lost the bid. Fulcrum amortizes capitalized contract costs straight-line.
+    What total expense related to these costs should Fulcrum recognize in Year 1?
+  choices:
+  - id: A
+    text: $13,000
+    rationale: Capitalizes the $10,000 legal fee with the commission. Only costs incurred because the
+      contract was obtained are capitalized; the fee was owed either way.
+  - id: B
+    text: $22,000
+    rationale: Correct. $10,000 legal + $6,000 travel expensed, plus $60,000 ÷ 5 years × ½ year = $6,000
+      of amortization.
+  - id: C
+    text: $28,000
+    rationale: Amortizes a full year of the commission. Amortization begins when the contract starts on
+      July 1, so Year 1 has half a year ($6,000).
+  - id: D
+    text: $76,000
+    rationale: Expenses the commission. The practical expedient to expense commissions applies only when
+      the amortization period is one year or less.
+  answer: B
+  explanation: 'Only incremental costs of obtaining a contract, those that would not have been incurred
+    had the contract not been obtained, are capitalized: the $60,000 commission. Legal fees for drafting
+    and proposal travel are incurred regardless and are expensed ($16,000). The commission is amortized
+    over the period of expected benefit, the three-year term plus the expected two-year renewal (no commensurate
+    renewal commission): $60,000 ÷ 5 × ½ = $6,000 in Year 1. Total expense = $22,000.'

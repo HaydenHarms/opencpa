@@ -42,3 +42,97 @@ explanation: 'Reconcile both records to the correct balance. General ledger: $39
   $412,000 − $6,000 payment not yet posted + $9,000 goods in transit = $415,000. Adjustments: reclassify
   $14,000 from accrued liabilities to accounts payable, record the $9,000 purchase, and post the payment
   to the subledger.'
+variants:
+- stem: 'At December 31, Rainier Co.''s accounts payable subledger totals $530,000, and its general ledger
+    accounts payable control account shows $494,000. Investigating, the controller finds: (1) a $21,000
+    supplier invoice was posted correctly to the supplier''s subledger account, but the general ledger
+    entry credited accrued liabilities instead of accounts payable; (2) goods costing $8,000 shipped by
+    a supplier FOB shipping point on December 29 and received January 3 have not been invoiced or recorded
+    in either record; and (3) a $15,000 payment to a supplier on December 30 was recorded in the general
+    ledger but not in the supplier''s subledger account. What amount should Rainier report as accounts
+    payable at December 31?'
+  choices:
+  - id: A
+    text: $494,000
+    rationale: Accepts the general ledger. It omits the $21,000 invoice credited to accrued liabilities
+      and the $8,000 of goods in transit.
+  - id: B
+    text: $515,000
+    rationale: Omits the $8,000 of goods shipped FOB shipping point. Title passed at shipment, so Rainier
+      owes the supplier at year-end.
+  - id: C
+    text: $523,000
+    rationale: Correct. General ledger $494,000 + $21,000 misposted invoice + $8,000 goods in transit;
+      subledger $530,000 − $15,000 payment + $8,000 agrees.
+  - id: D
+    text: $530,000
+    rationale: Accepts the subledger. The subledger still includes the $15,000 already paid and omits
+      the $8,000 of goods in transit.
+  answer: C
+  explanation: 'Reconcile both records to the correct balance. General ledger: $494,000 + $21,000 invoice
+    credited to the wrong account + $8,000 goods in transit (title passed at shipment) = $523,000. Subledger:
+    $530,000 − $15,000 payment not yet posted + $8,000 goods in transit = $523,000. Adjustments: reclassify
+    $21,000 from accrued liabilities to accounts payable, record the $8,000 purchase, and post the payment
+    to the subledger.'
+- stem: 'At December 31, Sonoma Co.''s accounts payable subledger totals $260,000, and its general ledger
+    accounts payable control account shows $247,000. Investigating, the controller finds: (1) a $9,000
+    supplier invoice was posted correctly to the supplier''s subledger account, but the general ledger
+    entry credited accrued liabilities instead of accounts payable; (2) goods costing $12,000 shipped
+    by a supplier FOB shipping point on December 29 and received January 3 have not been invoiced or recorded
+    in either record; and (3) a $4,000 payment to a supplier on December 30 was recorded in the general
+    ledger but not in the supplier''s subledger account. What amount should Sonoma report as accounts
+    payable at December 31?'
+  choices:
+  - id: A
+    text: $247,000
+    rationale: Accepts the general ledger. It omits the $9,000 invoice credited to accrued liabilities
+      and the $12,000 of goods in transit.
+  - id: B
+    text: $256,000
+    rationale: Omits the $12,000 of goods shipped FOB shipping point. Title passed at shipment, so Sonoma
+      owes the supplier at year-end.
+  - id: C
+    text: $260,000
+    rationale: Accepts the subledger. The subledger still includes the $4,000 already paid and omits the
+      $12,000 of goods in transit.
+  - id: D
+    text: $268,000
+    rationale: Correct. General ledger $247,000 + $9,000 misposted invoice + $12,000 goods in transit;
+      subledger $260,000 − $4,000 payment + $12,000 agrees.
+  answer: D
+  explanation: 'Reconcile both records to the correct balance. General ledger: $247,000 + $9,000 invoice
+    credited to the wrong account + $12,000 goods in transit (title passed at shipment) = $268,000. Subledger:
+    $260,000 − $4,000 payment not yet posted + $12,000 goods in transit = $268,000. Adjustments: reclassify
+    $9,000 from accrued liabilities to accounts payable, record the $12,000 purchase, and post the payment
+    to the subledger.'
+- stem: 'At December 31, Tulare Co.''s accounts payable subledger totals $715,000, and its general ledger
+    accounts payable control account shows $657,000. Investigating, the controller finds: (1) a $32,000
+    supplier invoice was posted correctly to the supplier''s subledger account, but the general ledger
+    entry credited accrued liabilities instead of accounts payable; (2) goods costing $11,000 shipped
+    by a supplier FOB shipping point on December 29 and received January 3 have not been invoiced or recorded
+    in either record; and (3) a $26,000 payment to a supplier on December 30 was recorded in the general
+    ledger but not in the supplier''s subledger account. What amount should Tulare report as accounts
+    payable at December 31?'
+  choices:
+  - id: A
+    text: $668,000
+    rationale: Adds the goods in transit to the general ledger but leaves the $32,000 invoice in accrued
+      liabilities. It is owed to a supplier, so it belongs in accounts payable.
+  - id: B
+    text: $689,000
+    rationale: Omits the $11,000 of goods shipped FOB shipping point. Title passed at shipment, so Tulare
+      owes the supplier at year-end.
+  - id: C
+    text: $700,000
+    rationale: Correct. General ledger $657,000 + $32,000 misposted invoice + $11,000 goods in transit;
+      subledger $715,000 − $26,000 payment + $11,000 agrees.
+  - id: D
+    text: $715,000
+    rationale: Accepts the subledger. The subledger still includes the $26,000 already paid and omits
+      the $11,000 of goods in transit.
+  answer: C
+  explanation: 'Reconcile both records to the correct balance. General ledger: $657,000 + $32,000 invoice
+    credited to the wrong account + $11,000 goods in transit (title passed at shipment) = $700,000. Subledger:
+    $715,000 − $26,000 payment not yet posted + $11,000 goods in transit = $700,000. Adjustments: reclassify
+    $32,000 from accrued liabilities to accounts payable, record the $11,000 purchase, and post the payment
+    to the subledger.'

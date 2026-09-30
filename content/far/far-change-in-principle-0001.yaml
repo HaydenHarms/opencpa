@@ -39,3 +39,92 @@ explanation: 'A change in accounting principle is applied retrospectively. The c
   at the start, so cost of goods sold falls by $30,000 and net income rises by $30,000 × 75% = $22,500.
   December 31, Year 2, retained earnings rises by $37,500 + $22,500 = $60,000 (the $80,000 year-end difference,
   net of tax).'
+variants:
+- stem: 'At the start of Year 3, Daly Co. changes its inventory method from weighted-average cost to FIFO
+    because FIFO better reflects its flow of goods. It can determine the effects for all prior periods.
+    Inventory under each method was: December 31, Year 1 — weighted-average $600,000, FIFO $680,000; December
+    31, Year 2 — weighted-average $700,000, FIFO $820,000. Apply a 21% tax rate to every effect. Daly
+    issues comparative statements for Years 2 and 3. Compared with the amounts originally reported, by
+    how much do Year 2 net income and December 31, Year 2, retained earnings change in those statements?'
+  choices:
+  - id: A
+    text: $0 net income; $0 retained earnings
+    rationale: Applies the change prospectively from Year 3. A change in accounting principle is applied
+      retrospectively, so Year 2 is restated.
+  - id: B
+    text: $31,600 net income; $94,800 retained earnings
+    rationale: Correct. Year 2 income rises by ($120,000 − $80,000) × 79% = $31,600; year-end retained
+      earnings rises by $120,000 × 79% = $94,800.
+  - id: C
+    text: $40,000 net income; $120,000 retained earnings
+    rationale: Ignores the 21% tax effect of the change.
+  - id: D
+    text: $94,800 net income; $94,800 retained earnings
+    rationale: Treats the whole $120,000 year-end difference as a Year 2 effect. Only the $40,000 increase
+      in the difference during Year 2 affects Year 2 income.
+  answer: B
+  explanation: 'A change in accounting principle is applied retrospectively. The cumulative effect on
+    periods before the earliest period presented adjusts the opening retained earnings of Year 2: ($680,000
+    − $600,000) × 79% = $63,200 increase. Year 2 is restated: FIFO raises ending inventory by $120,000
+    versus $80,000 at the start, so cost of goods sold falls by $40,000 and net income rises by $40,000
+    × 79% = $31,600. December 31, Year 2, retained earnings rises by $63,200 + $31,600 = $94,800 (the
+    $120,000 year-end difference, net of tax).'
+- stem: 'At the start of Year 3, Eames Co. changes its inventory method from weighted-average cost to
+    FIFO because FIFO better reflects its flow of goods. It can determine the effects for all prior periods.
+    Inventory under each method was: December 31, Year 1 — weighted-average $300,000, FIFO $335,000; December
+    31, Year 2 — weighted-average $350,000, FIFO $410,000. Apply a 30% tax rate to every effect. Eames
+    issues comparative statements for Years 2 and 3. Compared with the amounts originally reported, by
+    how much do Year 2 net income and December 31, Year 2, retained earnings change in those statements?'
+  choices:
+  - id: A
+    text: $0 net income; $0 retained earnings
+    rationale: Applies the change prospectively from Year 3. A change in accounting principle is applied
+      retrospectively, so Year 2 is restated.
+  - id: B
+    text: $17,500 net income; $24,500 retained earnings
+    rationale: Carries only the January 1, Year 2, adjustment ($35,000 × 70%) to year-end retained earnings,
+      leaving out the restated Year 2 income.
+  - id: C
+    text: $17,500 net income; $42,000 retained earnings
+    rationale: Correct. Year 2 income rises by ($60,000 − $35,000) × 70% = $17,500; year-end retained
+      earnings rises by $60,000 × 70% = $42,000.
+  - id: D
+    text: $25,000 net income; $60,000 retained earnings
+    rationale: Ignores the 30% tax effect of the change.
+  answer: C
+  explanation: 'A change in accounting principle is applied retrospectively. The cumulative effect on
+    periods before the earliest period presented adjusts the opening retained earnings of Year 2: ($335,000
+    − $300,000) × 70% = $24,500 increase. Year 2 is restated: FIFO raises ending inventory by $60,000
+    versus $35,000 at the start, so cost of goods sold falls by $25,000 and net income rises by $25,000
+    × 70% = $17,500. December 31, Year 2, retained earnings rises by $24,500 + $17,500 = $42,000 (the
+    $60,000 year-end difference, net of tax).'
+- stem: 'At the start of Year 3, Gantt Co. changes its inventory method from weighted-average cost to
+    FIFO because FIFO better reflects its flow of goods. It can determine the effects for all prior periods.
+    Inventory under each method was: December 31, Year 1 — weighted-average $900,000, FIFO $1,000,000;
+    December 31, Year 2 — weighted-average $1,050,000, FIFO $1,200,000. Apply a 25% tax rate to every
+    effect. Gantt issues comparative statements for Years 2 and 3. Compared with the amounts originally
+    reported, by how much do Year 2 net income and December 31, Year 2, retained earnings change in those
+    statements?'
+  choices:
+  - id: A
+    text: $0 net income; $0 retained earnings
+    rationale: Applies the change prospectively from Year 3. A change in accounting principle is applied
+      retrospectively, so Year 2 is restated.
+  - id: B
+    text: $37,500 net income; $112,500 retained earnings
+    rationale: Correct. Year 2 income rises by ($150,000 − $100,000) × 75% = $37,500; year-end retained
+      earnings rises by $150,000 × 75% = $112,500.
+  - id: C
+    text: $50,000 net income; $150,000 retained earnings
+    rationale: Ignores the 25% tax effect of the change.
+  - id: D
+    text: $112,500 net income; $112,500 retained earnings
+    rationale: Treats the whole $150,000 year-end difference as a Year 2 effect. Only the $50,000 increase
+      in the difference during Year 2 affects Year 2 income.
+  answer: B
+  explanation: 'A change in accounting principle is applied retrospectively. The cumulative effect on
+    periods before the earliest period presented adjusts the opening retained earnings of Year 2: ($1,000,000
+    − $900,000) × 75% = $75,000 increase. Year 2 is restated: FIFO raises ending inventory by $150,000
+    versus $100,000 at the start, so cost of goods sold falls by $50,000 and net income rises by $50,000
+    × 75% = $37,500. December 31, Year 2, retained earnings rises by $75,000 + $37,500 = $112,500 (the
+    $150,000 year-end difference, net of tax).'

@@ -37,3 +37,83 @@ explanation: Held-to-maturity debt securities are carried at amortized cost. Yea
   $479,499 × 7% = $33,565; cash interest $30,000; discount amortized $3,565; carrying amount $483,064.
   Year 2 interest income = $483,064 × 7% = $33,814; amortization $3,814; carrying amount $486,878. Fair
   value is disclosed, not recognized.
+variants:
+- stem: On January 1, Year 1, Orland Corp. pays $772,279 for $800,000 face amount of four-year, 5% bonds
+    that pay interest each December 31, a price that yields 6%. Orland has the positive intent and ability
+    to hold the bonds to maturity and expects no credit losses on them. It uses the effective interest
+    method and rounds to the nearest dollar at each step. At December 31, Year 2, the bonds' fair value
+    is $776,333. At what amount should Orland report the investment at December 31, Year 2?
+  choices:
+  - id: A
+    text: $776,333
+    rationale: Reports fair value. Held-to-maturity securities are carried at amortized cost.
+  - id: B
+    text: $778,616
+    rationale: Stops after one year of amortization. By December 31, Year 2, two years of discount amortization
+      have been recorded.
+  - id: C
+    text: $785,333
+    rationale: 'Correct. Year 1: $772,279 + ($46,337 − $40,000) = $778,616. Year 2: $778,616 + ($46,717
+      − $40,000) = $785,333.'
+  - id: D
+    text: $786,140
+    rationale: Amortizes the discount straight-line ($6,930 a year). The effective interest method is
+      required unless the difference is immaterial.
+  answer: C
+  explanation: Held-to-maturity debt securities are carried at amortized cost. Year 1 interest income
+    = $772,279 × 6% = $46,337; cash interest $40,000; discount amortized $6,337; carrying amount $778,616.
+    Year 2 interest income = $778,616 × 6% = $46,717; amortization $6,717; carrying amount $785,333. Fair
+    value is disclosed, not recognized.
+- stem: On January 1, Year 1, Prescott Corp. pays $953,771 for $1,000,000 face amount of six-year, 7%
+    bonds that pay interest each December 31, a price that yields 8%. Prescott has the positive intent
+    and ability to hold the bonds to maturity and expects no credit losses on them. It uses the effective
+    interest method and rounds to the nearest dollar at each step. At December 31, Year 2, the bonds'
+    fair value is $978,879. At what amount should Prescott report the investment at December 31, Year
+    2?
+  choices:
+  - id: A
+    text: $966,879
+    rationale: 'Correct. Year 1: $953,771 + ($76,302 − $70,000) = $960,073. Year 2: $960,073 + ($76,806
+      − $70,000) = $966,879.'
+  - id: B
+    text: $969,181
+    rationale: Amortizes the discount straight-line ($7,705 a year). The effective interest method is
+      required unless the difference is immaterial.
+  - id: C
+    text: $973,771
+    rationale: Computes interest income at 8% of face ($80,000), amortizing $10,000 a year. Effective
+      interest applies the yield to the carrying amount.
+  - id: D
+    text: $978,879
+    rationale: Reports fair value. Held-to-maturity securities are carried at amortized cost.
+  answer: A
+  explanation: Held-to-maturity debt securities are carried at amortized cost. Year 1 interest income
+    = $953,771 × 8% = $76,302; cash interest $70,000; discount amortized $6,302; carrying amount $960,073.
+    Year 2 interest income = $960,073 × 8% = $76,806; amortization $6,806; carrying amount $966,879. Fair
+    value is disclosed, not recognized.
+- stem: On January 1, Year 1, Quimper Corp. pays $287,012 for $300,000 face amount of five-year, 4% bonds
+    that pay interest each December 31, a price that yields 5%. Quimper has the positive intent and ability
+    to hold the bonds to maturity and expects no credit losses on them. It uses the effective interest
+    method and rounds to the nearest dollar at each step. At December 31, Year 2, the bonds' fair value
+    is $285,831. At what amount should Quimper report the investment at December 31, Year 2?
+  choices:
+  - id: A
+    text: $285,831
+    rationale: Reports fair value. Held-to-maturity securities are carried at amortized cost.
+  - id: B
+    text: $289,363
+    rationale: Stops after one year of amortization. By December 31, Year 2, two years of discount amortization
+      have been recorded.
+  - id: C
+    text: $291,831
+    rationale: 'Correct. Year 1: $287,012 + ($14,351 − $12,000) = $289,363. Year 2: $289,363 + ($14,468
+      − $12,000) = $291,831.'
+  - id: D
+    text: $293,012
+    rationale: Computes interest income at 5% of face ($15,000), amortizing $3,000 a year. Effective interest
+      applies the yield to the carrying amount.
+  answer: C
+  explanation: Held-to-maturity debt securities are carried at amortized cost. Year 1 interest income
+    = $287,012 × 5% = $14,351; cash interest $12,000; discount amortized $2,351; carrying amount $289,363.
+    Year 2 interest income = $289,363 × 5% = $14,468; amortization $2,468; carrying amount $291,831. Fair
+    value is disclosed, not recognized.

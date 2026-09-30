@@ -39,3 +39,91 @@ explanation: 'Cost method: treasury stock is debited at cost, 2,000 × $30 = $60
   = $6,000 below cost, charged first to APIC from earlier treasury transactions in the same class ($4,800)
   and the remaining $1,200 to retained earnings. APIC from preferred-stock treasury transactions cannot
   absorb a loss on common shares.'
+variants:
+- stem: At the start of the year, Tennant Corp.'s equity includes $5,000 of additional paid-in capital
+    from earlier treasury stock transactions in its preferred stock and none from transactions in its
+    common stock. During the year, under the cost method, Tennant reacquires 3,000 shares of its common
+    stock at $40 per share, later resells 1,000 of them at $44 per share, and later resells another 1,500
+    at $32 per share. Tennant charges losses on treasury stock to paid-in capital to the maximum extent
+    ASC 505-30 permits. What amount does Tennant debit to retained earnings as a result of these transactions?
+  choices:
+  - id: A
+    text: $3,000
+    rationale: Absorbs the rest of the loss with the $5,000 of APIC from preferred treasury transactions.
+      Only APIC from treasury transactions in the same class of stock (common) may absorb the loss.
+  - id: B
+    text: $7,000
+    rationale: Uses the preferred-stock APIC ($5,000) instead of the $4,000 created by the first resale
+      of common treasury shares.
+  - id: C
+    text: $8,000
+    rationale: Correct. The $12,000 loss on the second resale is charged first to the $4,000 of APIC from
+      the first resale, and the remaining $8,000 to retained earnings.
+  - id: D
+    text: $12,000
+    rationale: Charges the entire loss on the second resale to retained earnings, ignoring the $4,000
+      of APIC from the first resale.
+  answer: C
+  explanation: 'Cost method: treasury stock is debited at cost, 3,000 × $40 = $120,000. First resale:
+    1,000 × ($44 − $40) = $4,000 credited to APIC–treasury stock (common). Second resale: 1,500 × ($40
+    − $32) = $12,000 below cost, charged first to APIC from earlier treasury transactions in the same
+    class ($4,000) and the remaining $8,000 to retained earnings. APIC from preferred-stock treasury transactions
+    cannot absorb a loss on common shares.'
+- stem: At the start of the year, Vesper Corp.'s equity includes $2,000 of additional paid-in capital
+    from earlier treasury stock transactions in its preferred stock and none from transactions in its
+    common stock. During the year, under the cost method, Vesper reacquires 5,000 shares of its common
+    stock at $20 per share, later resells 2,000 of them at $25 per share, and later resells another 2,500
+    at $14 per share. Vesper charges losses on treasury stock to paid-in capital to the maximum extent
+    ASC 505-30 permits. What amount does Vesper debit to retained earnings as a result of these transactions?
+  choices:
+  - id: A
+    text: $3,000
+    rationale: Absorbs the rest of the loss with the $2,000 of APIC from preferred treasury transactions.
+      Only APIC from treasury transactions in the same class of stock (common) may absorb the loss.
+  - id: B
+    text: $5,000
+    rationale: Correct. The $15,000 loss on the second resale is charged first to the $10,000 of APIC
+      from the first resale, and the remaining $5,000 to retained earnings.
+  - id: C
+    text: $13,000
+    rationale: Uses the preferred-stock APIC ($2,000) instead of the $10,000 created by the first resale
+      of common treasury shares.
+  - id: D
+    text: $15,000
+    rationale: Charges the entire loss on the second resale to retained earnings, ignoring the $10,000
+      of APIC from the first resale.
+  answer: B
+  explanation: 'Cost method: treasury stock is debited at cost, 5,000 × $20 = $100,000. First resale:
+    2,000 × ($25 − $20) = $10,000 credited to APIC–treasury stock (common). Second resale: 2,500 × ($20
+    − $14) = $15,000 below cost, charged first to APIC from earlier treasury transactions in the same
+    class ($10,000) and the remaining $5,000 to retained earnings. APIC from preferred-stock treasury
+    transactions cannot absorb a loss on common shares.'
+- stem: At the start of the year, Winslow Corp.'s equity includes $4,000 of additional paid-in capital
+    from earlier treasury stock transactions in its preferred stock and none from transactions in its
+    common stock. During the year, under the cost method, Winslow reacquires 2,500 shares of its common
+    stock at $50 per share, later resells 600 of them at $58 per share, and later resells another 1,200
+    at $44 per share. Winslow charges losses on treasury stock to paid-in capital to the maximum extent
+    ASC 505-30 permits. What amount does Winslow debit to retained earnings as a result of these transactions?
+  choices:
+  - id: A
+    text: $0
+    rationale: Absorbs the rest of the loss with the $4,000 of APIC from preferred treasury transactions.
+      Only APIC from treasury transactions in the same class of stock (common) may absorb the loss.
+  - id: B
+    text: $2,400
+    rationale: Correct. The $7,200 loss on the second resale is charged first to the $4,800 of APIC from
+      the first resale, and the remaining $2,400 to retained earnings.
+  - id: C
+    text: $3,200
+    rationale: Uses the preferred-stock APIC ($4,000) instead of the $4,800 created by the first resale
+      of common treasury shares.
+  - id: D
+    text: $7,200
+    rationale: Charges the entire loss on the second resale to retained earnings, ignoring the $4,800
+      of APIC from the first resale.
+  answer: B
+  explanation: 'Cost method: treasury stock is debited at cost, 2,500 × $50 = $125,000. First resale:
+    600 × ($58 − $50) = $4,800 credited to APIC–treasury stock (common). Second resale: 1,200 × ($50 −
+    $44) = $7,200 below cost, charged first to APIC from earlier treasury transactions in the same class
+    ($4,800) and the remaining $2,400 to retained earnings. APIC from preferred-stock treasury transactions
+    cannot absorb a loss on common shares.'

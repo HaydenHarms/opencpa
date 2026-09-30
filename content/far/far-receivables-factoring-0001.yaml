@@ -37,3 +37,88 @@ explanation: 'The transfer meets the conditions for sale accounting: the receiva
   Kemp, the factor can pledge or sell them, and Kemp keeps no effective control. Kemp derecognizes the
   receivables. Cash = $500,000 − 4% fee ($20,000) − 10% holdback ($50,000) = $430,000. The holdback is
   recorded as a receivable from the factor, and the $20,000 fee is the loss on sale.'
+variants:
+- stem: Lorimer Co. transfers $800,000 of trade receivables to a factor without recourse. The receivables
+    are legally isolated from Lorimer, the factor may sell or pledge them, and Lorimer has no agreement
+    or right to repurchase them. The factor charges a fee of 3% of the receivables transferred and holds
+    back 5% of the receivables to cover sales returns and allowances, to be paid to Lorimer after the
+    accounts are collected. Lorimer expects no returns or allowances. How much cash does Lorimer receive
+    at the transfer, and what loss does it recognize?
+  choices:
+  - id: A
+    text: $736,000 cash; $0 loss
+    rationale: Records no loss on the sale. The factor's fee is a cost of selling the receivables, recognized
+      as a loss.
+  - id: B
+    text: $736,000 cash; $24,000 loss
+    rationale: Correct. $800,000 − $24,000 fee − $40,000 holdback; the fee is the loss, and the holdback
+      is a receivable from the factor.
+  - id: C
+    text: $736,000 cash; $64,000 loss
+    rationale: Treats the $40,000 holdback as part of the loss. Lorimer expects to collect it, so it is
+      a receivable from the factor.
+  - id: D
+    text: $776,000 cash; $24,000 loss
+    rationale: Treats the holdback as paid at the transfer. The factor keeps it until the accounts are
+      collected.
+  answer: B
+  explanation: 'The transfer meets the conditions for sale accounting: the receivables are isolated from
+    Lorimer, the factor can pledge or sell them, and Lorimer keeps no effective control. Lorimer derecognizes
+    the receivables. Cash = $800,000 − 3% fee ($24,000) − 5% holdback ($40,000) = $736,000. The holdback
+    is recorded as a receivable from the factor, and the $24,000 fee is the loss on sale.'
+- stem: Merton Co. transfers $300,000 of trade receivables to a factor without recourse. The receivables
+    are legally isolated from Merton, the factor may sell or pledge them, and Merton has no agreement
+    or right to repurchase them. The factor charges a fee of 5% of the receivables transferred and holds
+    back 8% of the receivables to cover sales returns and allowances, to be paid to Merton after the accounts
+    are collected. Merton expects no returns or allowances. How much cash does Merton receive at the transfer,
+    and what loss does it recognize?
+  choices:
+  - id: A
+    text: $261,000 cash; $15,000 loss
+    rationale: Correct. $300,000 − $15,000 fee − $24,000 holdback; the fee is the loss, and the holdback
+      is a receivable from the factor.
+  - id: B
+    text: $261,000 cash; $39,000 loss
+    rationale: Treats the $24,000 holdback as part of the loss. Merton expects to collect it, so it is
+      a receivable from the factor.
+  - id: C
+    text: $262,200 cash; $13,800 loss
+    rationale: Computes the fee on the $276,000 advanced. The fee is 5% of the $300,000 of receivables
+      transferred.
+  - id: D
+    text: $285,000 cash; $15,000 loss
+    rationale: Treats the holdback as paid at the transfer. The factor keeps it until the accounts are
+      collected.
+  answer: A
+  explanation: 'The transfer meets the conditions for sale accounting: the receivables are isolated from
+    Merton, the factor can pledge or sell them, and Merton keeps no effective control. Merton derecognizes
+    the receivables. Cash = $300,000 − 5% fee ($15,000) − 8% holdback ($24,000) = $261,000. The holdback
+    is recorded as a receivable from the factor, and the $15,000 fee is the loss on sale.'
+- stem: Nesbitt Co. transfers $1,200,000 of trade receivables to a factor without recourse. The receivables
+    are legally isolated from Nesbitt, the factor may sell or pledge them, and Nesbitt has no agreement
+    or right to repurchase them. The factor charges a fee of 2% of the receivables transferred and holds
+    back 10% of the receivables to cover sales returns and allowances, to be paid to Nesbitt after the
+    accounts are collected. Nesbitt expects no returns or allowances. How much cash does Nesbitt receive
+    at the transfer, and what loss does it recognize?
+  choices:
+  - id: A
+    text: $1,056,000 cash; $0 loss
+    rationale: Records no loss on the sale. The factor's fee is a cost of selling the receivables, recognized
+      as a loss.
+  - id: B
+    text: $1,056,000 cash; $24,000 loss
+    rationale: Correct. $1,200,000 − $24,000 fee − $120,000 holdback; the fee is the loss, and the holdback
+      is a receivable from the factor.
+  - id: C
+    text: $1,058,400 cash; $21,600 loss
+    rationale: Computes the fee on the $1,080,000 advanced. The fee is 2% of the $1,200,000 of receivables
+      transferred.
+  - id: D
+    text: $1,176,000 cash; $24,000 loss
+    rationale: Treats the holdback as paid at the transfer. The factor keeps it until the accounts are
+      collected.
+  answer: B
+  explanation: 'The transfer meets the conditions for sale accounting: the receivables are isolated from
+    Nesbitt, the factor can pledge or sell them, and Nesbitt keeps no effective control. Nesbitt derecognizes
+    the receivables. Cash = $1,200,000 − 2% fee ($24,000) − 10% holdback ($120,000) = $1,056,000. The
+    holdback is recorded as a receivable from the factor, and the $24,000 fee is the loss on sale.'
