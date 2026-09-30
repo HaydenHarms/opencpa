@@ -65,3 +65,41 @@ Kept, with the reasons:
 
 - **Two of the Analysis tags** were read as Application, because the stems name the reconciling items: `far-cash-unreconciled-0001` and `far-inventory-rollforward-0002`. The tag stays Analysis. Both map to the blueprint's Analysis-marked tasks (investigate unreconciled cash; inventory rollforward), and the student must work out each item's effect and which side it belongs on. The review gate should confirm.
 - **Key clustering in some families:** the key is C in three of four versions in four families. The letter does move, so this was left alone.
+
+## Review gate
+
+The first run passed: **82.4% average estimated pass likelihood** (batch 05 scored 82%), with 17 exam-ready, 8 minor and 0 major. All 25 version-0 keys are correct, and the reviewer re-solved all 63 variants in code with no breaks. It confirmed from the PDF that both disputed Analysis tags are honest (II.A.c and II.C.c are marked Analysis).
+
+**Minor fixes, not yet applied (next session):**
+
+1. `far-nfp-financial-position-0002`:
+   - The key is the longest choice; shorten it.
+   - Replace the budget-comparison choice with "each net asset class as a self-balancing set of accounts".
+2. `far-nfp-notes-0001`:
+   - Recast it as correcting a draft note of $715,000, to fit I.B.4a.
+   - Swap the quasi-endowment point, which repeats `nfp-financial-position-0003`, for another limit on availability.
+3. `far-special-purpose-frameworks-0003`:
+   - Say only "its one modification is capitalizing and depreciating equipment" instead of spelling out the cash basis.
+   - Optionally add fees collected in advance.
+4. `far-ratios-0004`:
+   - State the fixed redemption amount, or that the entity is a public business entity (ASC 480-10-65-1).
+   - Replace the two-error 0.36 distractor.
+5. `far-cash-unreconciled-0001`:
+   - Delete "an error the bank has agreed to correct" and state the deposit slip total instead.
+   - Optionally add a finding that needs no entry.
+6. `far-receivables-reconciliation-0002`:
+   - Replace the "as recorded" distractor D with one that uses the control-account items ($597,900 or $589,800).
+   - Cite ASC 310-10 or Reg. S-X 5-02 instead of ASC 310-10-45.
+7. `far-investments-amortized-cost-0001`: the key is the longest choice and uses the textbook wording. Reword it, and lengthen A.
+8. `far-contingencies-0006`: replace the $48,000 "second-year only" distractor with $3,000 (the first-year estimate only).
+
+**Also flagged:**
+
+- `far-receivables-rollforward-0002`, variant 2: write-offs and the required ending allowance are both $26,000. Change ending receivables to $296,000.
+- The coverage map has three errors:
+  - II.D.d is Application in the PDF.
+  - III.C.c is Remembering and Understanding.
+  - `income-taxes-provision-0001` fits III.D.c better.
+- The mix needs attention:
+  - This batch is 48% / 44% / 8% by area, so batch 07 must be mostly Area III. The bank as a whole stays in range.
+  - Version-0 keys are 56% B, because numeric choices are ascending. Rebalance distractor pools toward A and D.
