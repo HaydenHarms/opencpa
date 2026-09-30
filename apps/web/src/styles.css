@@ -370,3 +370,49 @@ body {
     margin-left: 12px;
   }
 }
+
+/* Library */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--fg);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+.tile:hover {
+  border-color: var(--accent);
+}
+.tile.empty {
+  opacity: 0.55;
+}
+.tile .progress {
+  margin: 4px 0 0;
+}
+.tile-code {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+}
+.meter-row {
+  font-size: 14px;
+  color: var(--muted);
+}
+.area-head {
+  margin: 24px 0 12px;
+  font-size: 16px;
+}
+.crumbs a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.row {
+  align-items: center;
+  gap: 12px;
+}

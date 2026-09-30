@@ -88,14 +88,19 @@ export default function Practice() {
   );
 }
 
-function StartPanel({
+export function StartPanel({
   section,
   status,
   onStart,
+  title,
+  blurb,
 }: {
   section: string;
   status: SessionStatus;
   onStart: (size: number) => void;
+  /** Library topic sessions override the heading and description. */
+  title?: string;
+  blurb?: string;
 }) {
   if (status.poolSize === 0)
     return (
@@ -121,10 +126,11 @@ function StartPanel({
 
   return (
     <article className="card">
-      <h2>New {section} session</h2>
+      <h2>{title ?? `New ${section} session`}</h2>
       <p className="muted">
-        A mix of topics and simulations across the blueprint, weighted toward your weak spots and
-        the items due for review. Your place is saved as you go.
+        {blurb ??
+          'A mix of topics and simulations across the blueprint, weighted toward your weak spots and the items due for review.'}{' '}
+        Your place is saved as you go.
       </p>
       <div className="row-start">
         {status.options.map((o) => (
@@ -139,13 +145,13 @@ function StartPanel({
 
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
-function describe(o: SessionOption) {
+export function describe(o: SessionOption) {
   return o.simulations
     ? `${plural(o.questions, 'question')} + ${plural(o.simulations, 'simulation')}`
     : plural(o.questions, 'question');
 }
 
-function SessionRunner({
+export function SessionRunner({
   session,
   onError,
   onNew,
@@ -165,7 +171,12 @@ function SessionRunner({
   const started = useRef(Date.now());
 
   const q = items[index];
-  const label = session.kind === 'diagnostic' ? 'Diagnostic' : 'Practice session';
+  const label =
+    session.kind === 'diagnostic'
+      ? 'Diagnostic'
+      : session.topic
+        ? `Topic practice · ${session.topic}`
+        : 'Practice session';
 
   async function submit() {
     if (!q || q.type !== 'mcq' || !selected || busy) return;
@@ -249,7 +260,7 @@ function SessionRunner({
   );
 }
 
-function Question({
+export function Question({
   q,
   selected,
   result,

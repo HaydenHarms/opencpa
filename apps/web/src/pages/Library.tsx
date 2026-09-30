@@ -1,0 +1,391 @@
+/**
+ * Library: browse every exam, drill into its blueprint topics, practice any topic, and
+ * look up any question in the archive. Every answer here is a normal attempt, so it feeds
+ * mastery, review scheduling and the Progress page.
+ */
+import { useEffect, useRef, useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import {
+  api,
+  SECTION_NAMES,
+  type LibraryEntry,
+  type LibraryQuestion,
+  type LibrarySection,
+  type LibraryTopic,
+  type Revealed,
+  type Session,
+  type SessionStatus,
+} from '../api';
+import { Question, SessionRunner, StartPanel } from './Practice';
+
+const pct = (x: number) => `${Math.round(x * 100)}%`;
+const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
+const topicPath = (section: string, topic: string) =>
+  `/library/${section}/topic/${encodeURIComponent(topic)}`;
+
+function useLibrary() {
+  const [data, setData] = useState<LibrarySection[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  useEffect(() => {
+    api.library().then(setData, (e: Error) => setError(e.message));
+  }, []);
+  return { data, error };
+}
+
+function Crumbs({ section, topic }: { section?: string; topic?: string }) {
+  return (
+    <p className="meta crumbs">
+      <Link to="/library">Library</Link>
+      {section && (
+        <>
+          {' / '}
+          {topic ? <Link to={`/library/${section}`}>{section}</Link> : section}
+        </>
+      )}
+      {section && topic && <> / {topic}</>}
+    </p>
+  );
+}
+
+function Meter({ value }: { value: number | null }) {
+  return (
+    <span className="meter-row">
+      <span className="bar">
+        <span style={{ width: `${Math.round((value ?? 0) * 100)}%` }} />
+      </span>
+      {value === null ? 'Not started' : pct(value)}
+    </span>
+  );
+}
+
+/** /library — one tile per exam section. */
+export function LibraryHome() {
+  const { data, error } = useLibrary();
+  if (error) return <p className="error">Couldn’t load the library: {error}</p>;
+  if (!data) return <p className="muted">Loading…</p>;
+  return (
+    <section>
+      <h2>Library</h2>
+      <p className="muted">
+        Every exam, every blueprint topic and every reviewed question. Pick an exam to browse its
+        topics, practice one topic, or look up any question you’ve answered.
+      </p>
+      <div className="tiles">
+        {data.map((s) => {
+          const total = s.questions + s.simulations;
+          return (
+            <Link
+              key={s.section}
+              to={`/library/${s.section}`}
+              className={`card tile ${total ? '' : 'empty'}`}
+            >
+              <span className="tile-code">{s.section}</span>
+              <b>{SECTION_NAMES[s.section]}</b>
+              <span className="meta">
+                {total
+                  ? `${plural(s.questions, 'question')} · ${plural(s.simulations, 'simulation')} · ${plural(s.topics.length, 'topic')}`
+                  : 'Coming soon'}
+              </span>
+              {total > 0 && (
+                <>
+                  <span className="meta">
+                    Seen {s.seen} of {total}
+                  </span>
+                  <div className="progress">
+                    <span style={{ width: `${(s.seen / total) * 100}%` }} />
+                  </div>
+                </>
+              )}
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+/** /library/:section — the section's topics, grouped by blueprint area. */
+export function LibrarySectionPage() {
+  const { section = '' } = useParams();
+  const { data, error } = useLibrary();
+  if (error) return <p className="error">Couldn’t load the library: {error}</p>;
+  if (!data) return <p className="muted">Loading…</p>;
+  const s = data.find((x) => x.section === section.toUpperCase());
+  if (!s) return <p className="error">No exam called {section}.</p>;
+
+  const areas = new Map<string, LibraryTopic[]>();
+  for (const t of s.topics) areas.set(t.area, [...(areas.get(t.area) ?? []), t]);
+
+  return (
+    <section>
+      <Crumbs section={s.section} />
+      <h2>
+        {s.section} · {SECTION_NAMES[s.section]}
+      </h2>
+      {s.topics.length === 0 ? (
+        <p className="muted">No reviewed {s.section} questions yet. They’re being written.</p>
+      ) : (
+        <p className="muted">
+          {plural(s.topics.length, 'topic')} · seen {s.seen} of {s.questions + s.simulations} items
+          {s.accuracy !== null && <> · {pct(s.accuracy)} correct overall</>}
+        </p>
+      )}
+      {[...areas].map(([area, topics]) => (
+        <div key={area}>
+          <h3 className="area-head">{area}</h3>
+          <div className="tiles">
+            {topics.map((t) => (
+              <Link key={t.topic} to={topicPath(s.section, t.topic)} className="card tile">
+                <b>{t.topic}</b>
+                <span className="meta">
+                  {plural(t.questions, 'question')}
+                  {t.simulations > 0 && ` · ${plural(t.simulations, 'simulation')}`}
+                </span>
+                <span className="meta">
+                  Seen {t.seen} of {t.questions + t.simulations}
+                </span>
+                <Meter value={t.mastery} />
+              </Link>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+}
+
+type Filter = 'all' | 'new' | 'missed' | 'correct';
+
+/** /library/:section/topic/:topic — practice the topic, and the archive of its items. */
+export function LibraryTopicPage() {
+  const { section: rawSection = '', topic = '' } = useParams();
+  const section = rawSection.toUpperCase();
+  const [status, setStatus] = useState<SessionStatus | null>(null);
+  const [session, setSession] = useState<Session | null>(null);
+  const [entries, setEntries] = useState<LibraryEntry[] | null>(null);
+  const [filter, setFilter] = useState<Filter>('all');
+  const [error, setError] = useState<string | null>(null);
+  const fail = (e: Error) => setError(e.message);
+
+  function load() {
+    setStatus(null);
+    setEntries(null);
+    api.currentSession(section, topic).then((st) => {
+      setStatus(st);
+      setSession(st.session);
+    }, fail);
+    api.libraryItems(section, topic).then(setEntries, fail);
+  }
+  useEffect(load, [section, topic]);
+
+  async function start(size: number) {
+    setError(null);
+    try {
+      setSession(await api.startSession(section, size, topic));
+    } catch (e) {
+      fail(e as Error);
+    }
+  }
+
+  if (session)
+    return (
+      <section>
+        <Crumbs section={section} topic={topic} />
+        <SessionRunner
+          key={session.id}
+          session={session}
+          onError={fail}
+          onNew={() => {
+            setSession(null);
+            load();
+          }}
+        />
+        {error && <p className="error">{error}</p>}
+      </section>
+    );
+
+  const shown = (entries ?? []).filter((e) =>
+    filter === 'all'
+      ? true
+      : filter === 'new'
+        ? e.attempts === 0
+        : filter === 'missed'
+          ? e.lastCorrect === false
+          : e.lastCorrect === true,
+  );
+  const count = (f: Filter) =>
+    (entries ?? []).filter((e) =>
+      f === 'new' ? !e.attempts : f === 'missed' ? e.lastCorrect === false : e.lastCorrect === true,
+    ).length;
+
+  return (
+    <section>
+      <Crumbs section={section} topic={topic} />
+      <h2>{topic}</h2>
+      {error && <p className="error">Couldn’t reach the API: {error}</p>}
+      {!status && !error && <p className="muted">Loading…</p>}
+      {status && (
+        <StartPanel
+          section={topic}
+          status={status}
+          onStart={start}
+          title={`Practice ${topic}`}
+          blurb="A session on this topic only, starting with questions you haven’t seen or are due for review. Your answers count toward your overall progress."
+        />
+      )}
+
+      {entries && entries.length > 0 && (
+        <>
+          <h3 className="area-head">Question archive</h3>
+          <div className="tabs">
+            {(['all', 'new', 'missed', 'correct'] as const).map((f) => (
+              <button key={f} className={f === filter ? 'active' : ''} onClick={() => setFilter(f)}>
+                {f === 'all'
+                  ? `All ${entries.length}`
+                  : f === 'new'
+                    ? `Unanswered ${count('new')}`
+                    : f === 'missed'
+                      ? `Missed ${count('missed')}`
+                      : `Correct ${count('correct')}`}
+              </button>
+            ))}
+          </div>
+          {shown.length === 0 && <p className="muted">Nothing here yet.</p>}
+          <ul className="sim-list">
+            {shown.map((e) => (
+              <li key={e.id}>
+                <Link
+                  to={e.type === 'tbs' ? `/simulations/${e.id}` : `/library/${section}/q/${e.id}`}
+                  className="card sim-link"
+                >
+                  <span>
+                    {e.type === 'tbs' && <b>Simulation · </b>}
+                    {e.title}
+                  </span>
+                  <span className="meta">
+                    {e.blueprint.skill} ·{' '}
+                    {e.attempts === 0 ? (
+                      'Not answered yet'
+                    ) : (
+                      <>
+                        {plural(e.attempts, 'attempt')} · last{' '}
+                        <span className={e.lastCorrect ? 'right-text' : 'wrong-text'}>
+                          {e.type === 'tbs' && e.lastScore !== null
+                            ? pct(e.lastScore)
+                            : e.lastCorrect
+                              ? 'correct'
+                              : 'missed'}
+                        </span>
+                      </>
+                    )}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+    </section>
+  );
+}
+
+/** /library/:section/q/:id — one archive question: review the last attempt or answer it. */
+export function LibraryQuestionPage() {
+  const { section = '', id = '' } = useParams();
+  const navigate = useNavigate();
+  const [data, setData] = useState<LibraryQuestion | null>(null);
+  const [mode, setMode] = useState<'review' | 'answer'>('review');
+  const [selected, setSelected] = useState<string | null>(null);
+  const [result, setResult] = useState<Revealed | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const started = useRef(Date.now());
+
+  function load() {
+    setData(null);
+    setResult(null);
+    setSelected(null);
+    api.libraryQuestion(id).then(
+      (d) => {
+        setData(d);
+        setMode(d.last ? 'review' : 'answer');
+        started.current = Date.now();
+      },
+      (e: Error) => setError(e.message),
+    );
+  }
+  useEffect(load, [id]);
+
+  async function submit() {
+    if (!data || !selected || busy) return;
+    setBusy(true);
+    try {
+      setResult(
+        await api.attemptOutsideSession(
+          id,
+          selected,
+          Date.now() - started.current,
+          data.item.variant,
+        ),
+      );
+    } catch (e) {
+      setError((e as Error).message);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  if (error) return <p className="error">Couldn’t load this question: {error}</p>;
+  if (!data) return <p className="muted">Loading…</p>;
+  const { item, last } = data;
+  const topic = item.blueprint.topic;
+  const back = (
+    <button className="link" onClick={() => navigate(topicPath(section.toUpperCase(), topic))}>
+      ← Back to {topic}
+    </button>
+  );
+
+  return (
+    <section>
+      <Crumbs section={section.toUpperCase()} topic={topic} />
+      <p className="meta">
+        {data.attempts === 0
+          ? 'You haven’t answered this one yet.'
+          : `Answered ${plural(data.attempts, 'time')} · ${data.correct} correct`}
+      </p>
+      {mode === 'review' && last ? (
+        <>
+          <p className="meta">Your last attempt, {new Date(last.at).toLocaleDateString()}:</p>
+          <Question q={last.item} selected={last.selected} result={last} onSelect={() => {}} />
+          <div className="row">
+            {back}
+            <button className="button" onClick={() => setMode('answer')}>
+              Answer it again{item.variant !== last.item.variant ? ' (new numbers)' : ''}
+            </button>
+          </div>
+        </>
+      ) : (
+        <>
+          <Question
+            q={item}
+            selected={result?.selected ?? selected}
+            result={result ?? undefined}
+            onSelect={setSelected}
+          />
+          <div className="row">
+            {back}
+            {result ? (
+              <button className="button" onClick={load}>
+                Done
+              </button>
+            ) : (
+              <button className="button" disabled={!selected || busy} onClick={submit}>
+                Submit
+              </button>
+            )}
+          </div>
+        </>
+      )}
+    </section>
+  );
+}

@@ -248,15 +248,19 @@ app.get('/me/sessions/current', async (c) => {
   const section = sectionSchema.safeParse(c.req.query('section')?.toUpperCase());
   if (!section.success) return c.json({ error: 'unknown section' }, 400);
   const userId = c.get('userId');
+  const topic = c.req.query('topic') || null;
+  const inScope = (i: Item) =>
+    i.blueprint.section === section.data && (!topic || i.blueprint.topic === topic);
   const row = await c.env.DB.prepare(
     `SELECT * FROM practice_sessions WHERE user_id = ? AND section = ? AND status = 'active'
-     ORDER BY created_at DESC LIMIT 1`,
+     AND topic IS ? ORDER BY created_at DESC LIMIT 1`,
   )
-    .bind(userId, section.data)
+    .bind(userId, section.data, topic)
     .first<SessionRow>();
-  const poolSize = mcqs.filter((q) => q.blueprint.section === section.data).length;
-  const simPool = simulations.filter((t) => t.blueprint.section === section.data).length;
-  const diagnostic = !(await hasMcqAttempts(c.env.DB, userId, section.data));
+  const poolSize = mcqs.filter(inScope).length;
+  const simPool = simulations.filter(inScope).length;
+  // A topic session from the Library never starts with the section diagnostic.
+  const diagnostic = !topic && !(await hasMcqAttempts(c.env.DB, userId, section.data));
   // The session lengths on offer, each with the simulations that come with it.
   const option = (n: number) => ({ questions: n, simulations: simulationCount(n, simPool) });
   const lengths = SESSION_LENGTHS.filter((n) => n < poolSize);
@@ -275,25 +279,31 @@ const SESSION_LENGTHS = [10, 25, 50];
 const newSessionBody = z.object({
   section: sectionSchema,
   size: z.number().int().min(1).max(100),
+  /** Library: limit the session to one blueprint topic. */
+  topic: z.string().min(1).max(200).optional(),
 });
 
 app.post('/me/sessions', async (c) => {
   const body = newSessionBody.safeParse(await c.req.json().catch(() => null));
   if (!body.success) return c.json({ error: body.error.flatten() }, 400);
   const { section, size } = body.data;
+  const topic = body.data.topic ?? null;
   const userId = c.get('userId');
   const db = c.env.DB;
 
   const toPool = (i: Item) => ({ id: i.id, area: i.blueprint.area, topic: i.blueprint.topic });
-  const pool = mcqs.filter((q) => q.blueprint.section === section).map(toPool);
-  const simPool = simulations.filter((t) => t.blueprint.section === section).map(toPool);
-  if (pool.length === 0) return c.json({ error: `no ${section} questions yet` }, 404);
+  const inScope = (i: Item) =>
+    i.blueprint.section === section && (!topic || i.blueprint.topic === topic);
+  const pool = mcqs.filter(inScope).map(toPool);
+  const simPool = simulations.filter(inScope).map(toPool);
+  if (pool.length === 0 && (!topic || simPool.length === 0))
+    return c.json({ error: `no ${topic ?? section} questions yet` }, 404);
 
   const weights = AREA_WEIGHTS[section];
   let kind: 'diagnostic' | 'practice';
   let ids: string[];
   let simIds: string[];
-  if (!(await hasMcqAttempts(db, userId, section))) {
+  if (!topic && !(await hasMcqAttempts(db, userId, section))) {
     kind = 'diagnostic';
     ids = selectDiagnosticItems(pool, DIAGNOSTIC_SIZE, weights);
     simIds = selectDiagnosticItems(simPool, simulationCount(ids.length, simPool.length), weights);
@@ -327,28 +337,29 @@ app.post('/me/sessions', async (c) => {
     simIds = selectPracticeItems({
       ...history,
       pool: simPool,
-      size: simulationCount(ids.length, simPool.length),
+      // A topic with simulations but no questions yet still gets one simulation.
+      size: ids.length ? simulationCount(ids.length, simPool.length) : Math.min(1, simPool.length),
     });
   }
   // Simulations are spread through the questions (exam-day mode will use the exam's order).
   ids = spreadThrough(ids, simIds);
   const variants = await pickVariants(db, userId, ids);
 
-  // Starting a new session abandons any unfinished one in the same section.
-  // Its answers still count toward mastery and review scheduling.
+  // Starting a new session abandons any unfinished one in the same section (or the same
+  // Library topic). Its answers still count toward mastery and review scheduling.
   const id = crypto.randomUUID();
   await db.batch([
     db
       .prepare(
         `UPDATE practice_sessions SET status = 'abandoned'
-         WHERE user_id = ? AND section = ? AND status = 'active'`,
+         WHERE user_id = ? AND section = ? AND status = 'active' AND topic IS ?`,
       )
-      .bind(userId, section),
+      .bind(userId, section, topic),
     db
       .prepare(
-        'INSERT INTO practice_sessions (id, user_id, section, kind, item_ids, variants) VALUES (?, ?, ?, ?, ?, ?)',
+        'INSERT INTO practice_sessions (id, user_id, section, kind, item_ids, variants, topic) VALUES (?, ?, ?, ?, ?, ?, ?)',
       )
-      .bind(id, userId, section, kind, JSON.stringify(ids), JSON.stringify(variants)),
+      .bind(id, userId, section, kind, JSON.stringify(ids), JSON.stringify(variants), topic),
   ]);
   const row = await loadSession(db, userId, id);
   return c.json(await sessionView(db, row!), 201);
@@ -360,6 +371,164 @@ app.get('/me/sessions/:id', async (c) => {
   if (!row) return c.json({ error: 'not found' }, 404);
   return c.json(await sessionView(c.env.DB, row));
 });
+
+/**
+ * Library: every exam, its blueprint topics, and the full archive of reviewed items, with
+ * the student's own progress on each. Only public fields leave the server; an item's key
+ * is revealed only through the student's own past attempts.
+ */
+type AttemptLite = {
+  item_id: string;
+  correct: number;
+  earned: number;
+  possible: number;
+  created_at: number;
+};
+
+async function userAttempts(db: D1Database, userId: string) {
+  const { results } = await db
+    .prepare(
+      'SELECT item_id, correct, earned, possible, created_at FROM attempts WHERE user_id = ? ORDER BY created_at',
+    )
+    .bind(userId)
+    .all<AttemptLite>();
+  return results;
+}
+
+app.get('/me/library', async (c) => {
+  const attempts = await userAttempts(c.env.DB, c.get('userId'));
+  const byItem = new Map<string, AttemptLite[]>();
+  for (const a of attempts) byItem.set(a.item_id, [...(byItem.get(a.item_id) ?? []), a]);
+  const topicMastery = masteryByTopic(
+    attempts.flatMap((a) => {
+      const item = byId.get(a.item_id);
+      return item
+        ? [
+            {
+              topic: `${item.blueprint.section}::${item.blueprint.topic}`,
+              correct: !!a.correct,
+              at: a.created_at,
+            },
+          ]
+        : [];
+    }),
+  );
+
+  const sections = SECTION_LIST.map((section) => {
+    const inSection = items.filter((i) => i.blueprint.section === section);
+    const topics = new Map<
+      string,
+      {
+        area: string;
+        topic: string;
+        questions: number;
+        simulations: number;
+        seen: number;
+        attempts: number;
+      }
+    >();
+    for (const i of inSection) {
+      const t = topics.get(i.blueprint.topic) ?? {
+        area: i.blueprint.area,
+        topic: i.blueprint.topic,
+        questions: 0,
+        simulations: 0,
+        seen: 0,
+        attempts: 0,
+      };
+      if (i.type === 'mcq') t.questions++;
+      else t.simulations++;
+      const n = byItem.get(i.id)?.length ?? 0;
+      if (n) t.seen++;
+      t.attempts += n;
+      topics.set(i.blueprint.topic, t);
+    }
+    const list = [...topics.values()]
+      .map((t) => ({
+        ...t,
+        mastery: t.attempts ? (topicMastery.get(`${section}::${t.topic}`) ?? 0) : null,
+      }))
+      .sort((a, b) => a.area.localeCompare(b.area) || a.topic.localeCompare(b.topic));
+    const seen = inSection.filter((i) => byItem.has(i.id)).length;
+    const sectionAttempts = inSection.flatMap((i) => byItem.get(i.id) ?? []);
+    return {
+      section,
+      questions: inSection.filter((i) => i.type === 'mcq').length,
+      simulations: inSection.filter((i) => i.type === 'tbs').length,
+      seen,
+      attempts: sectionAttempts.length,
+      accuracy: sectionAttempts.length
+        ? sectionAttempts.filter((a) => a.correct).length / sectionAttempts.length
+        : null,
+      topics: list,
+    };
+  });
+  return c.json(sections);
+});
+
+app.get('/me/library/items', async (c) => {
+  const section = sectionSchema.safeParse(c.req.query('section')?.toUpperCase());
+  if (!section.success) return c.json({ error: 'unknown section' }, 400);
+  const topic = c.req.query('topic');
+  const attempts = await userAttempts(c.env.DB, c.get('userId'));
+  const list = items
+    .filter((i) => i.blueprint.section === section.data && (!topic || i.blueprint.topic === topic))
+    .map((i) => {
+      const mine = attempts.filter((a) => a.item_id === i.id);
+      const last = mine[mine.length - 1];
+      return {
+        id: i.id,
+        type: i.type,
+        blueprint: i.blueprint,
+        /** A short preview: the simulation title, or the start of the question stem. */
+        title:
+          i.type === 'tbs'
+            ? i.title
+            : i.stem.length > 180
+              ? i.stem.slice(0, 177).trimEnd() + '…'
+              : i.stem,
+        attempts: mine.length,
+        lastCorrect: last ? !!last.correct : null,
+        lastScore: last && last.possible ? last.earned / last.possible : null,
+        lastAt: last?.created_at ?? null,
+      };
+    });
+  return c.json(list);
+});
+
+/**
+ * One archive question. `item` is the version to answer next (rotating through the
+ * variants like a session does); `last` reveals the student's most recent attempt,
+ * with the version they actually saw.
+ */
+app.get('/me/library/items/:id', async (c) => {
+  const item = byId.get(c.req.param('id'));
+  if (!item || item.type !== 'mcq') return c.json({ error: 'not found' }, 404);
+  const { results } = await c.env.DB.prepare(
+    'SELECT response, correct, variant, created_at FROM attempts WHERE user_id = ? AND item_id = ? ORDER BY created_at',
+  )
+    .bind(c.get('userId'), item.id)
+    .all<{ response: string; correct: number; variant: number; created_at: number }>();
+  const nextVariant = results.length % variantCount(item);
+  const lastRow = results[results.length - 1];
+  let last = null;
+  if (lastRow) {
+    const { selected } = JSON.parse(lastRow.response) as { selected: string };
+    last = {
+      item: toPublicMcq(item, lastRow.variant),
+      at: lastRow.created_at,
+      ...reveal(mcqVariant(item, lastRow.variant), selected, !!lastRow.correct),
+    };
+  }
+  return c.json({
+    item: toPublicMcq(item, nextVariant),
+    attempts: results.length,
+    correct: results.filter((r) => r.correct).length,
+    last,
+  });
+});
+
+const SECTION_LIST = sectionSchema.options;
 
 /**
  * Claude connector link. The student adds `<api>/mcp/<token>` as a custom connector in

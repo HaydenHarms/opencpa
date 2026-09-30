@@ -44,6 +44,8 @@ export interface Session {
   id: string;
   section: string;
   kind: 'diagnostic' | 'practice';
+  /** Set when the session covers one blueprint topic (started from the Library). */
+  topic: string | null;
   status: 'active' | 'completed' | 'abandoned';
   createdAt: number;
   completedAt: number | null;
@@ -110,6 +112,53 @@ export interface SimulationResult extends SimulationReveal {
   sessionComplete: boolean;
 }
 
+export interface LibraryTopic {
+  area: string;
+  topic: string;
+  questions: number;
+  simulations: number;
+  /** Items in the topic the student has answered at least once. */
+  seen: number;
+  attempts: number;
+  /** Recency-weighted accuracy (0–1), or null before any attempt. */
+  mastery: number | null;
+}
+
+export interface LibrarySection {
+  section: string;
+  questions: number;
+  simulations: number;
+  seen: number;
+  attempts: number;
+  accuracy: number | null;
+  topics: LibraryTopic[];
+}
+
+export interface LibraryEntry {
+  id: string;
+  type: 'mcq' | 'tbs';
+  blueprint: PublicMcq['blueprint'];
+  title: string;
+  attempts: number;
+  lastCorrect: boolean | null;
+  lastScore: number | null;
+  lastAt: number | null;
+}
+
+export interface LibraryQuestion {
+  item: PublicMcq;
+  attempts: number;
+  correct: number;
+  last: (Revealed & { item: PublicMcq; at: number }) | null;
+}
+
+const q = (params: Record<string, string | undefined>) => {
+  const s = new URLSearchParams(
+    Object.entries(params).filter((e): e is [string, string] => !!e[1]),
+  ).toString();
+  return s ? `?${s}` : '';
+};
+
 export const api = {
   questions: (section?: string) =>
     call<PublicMcq[]>(`/questions${section ? `?section=${section}` : ''}`),
@@ -118,10 +167,23 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ itemId, selected, durationMs, sessionId }),
     }),
-  currentSession: (section: string) =>
-    call<SessionStatus>(`/me/sessions/current?section=${section}`),
-  startSession: (section: string, size: number) =>
-    call<Session>('/me/sessions', { method: 'POST', body: JSON.stringify({ section, size }) }),
+  currentSession: (section: string, topic?: string) =>
+    call<SessionStatus>(`/me/sessions/current${q({ section, topic })}`),
+  startSession: (section: string, size: number, topic?: string) =>
+    call<Session>('/me/sessions', {
+      method: 'POST',
+      body: JSON.stringify({ section, size, topic }),
+    }),
+  attemptOutsideSession: (itemId: string, selected: string, durationMs: number, variant: number) =>
+    call<AttemptResult>('/me/attempts', {
+      method: 'POST',
+      body: JSON.stringify({ itemId, selected, durationMs, variant }),
+    }),
+  library: () => call<LibrarySection[]>('/me/library'),
+  libraryItems: (section: string, topic?: string) =>
+    call<LibraryEntry[]>(`/me/library/items${q({ section, topic })}`),
+  libraryQuestion: (id: string) =>
+    call<LibraryQuestion>(`/me/library/items/${encodeURIComponent(id)}`),
   mastery: () => call<Mastery[]>('/me/mastery'),
   connector: () => call<ConnectorStatus>('/me/connector'),
   newConnectorLink: () => call<{ url: string }>('/me/connector', { method: 'POST' }),
@@ -142,3 +204,12 @@ export const api = {
 };
 
 export const SECTIONS = ['FAR', 'AUD', 'REG', 'BAR', 'ISC', 'TCP'] as const;
+
+export const SECTION_NAMES: Record<string, string> = {
+  FAR: 'Financial Accounting and Reporting',
+  AUD: 'Auditing and Attestation',
+  REG: 'Taxation and Regulation',
+  BAR: 'Business Analysis and Reporting',
+  ISC: 'Information Systems and Controls',
+  TCP: 'Tax Compliance and Planning',
+};
