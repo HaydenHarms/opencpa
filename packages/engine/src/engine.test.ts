@@ -43,6 +43,36 @@ describe('gradeJournalEntry', () => {
     expect(r.correct).toBe(false);
   });
 
+  it('nets split and gross lines by account before matching', () => {
+    const key = [
+      { account: 'Income tax expense', debit: 16380000, credit: 0 },
+      { account: 'Deferred tax asset', debit: 840000, credit: 0 },
+      { account: 'Income taxes payable', debit: 0, credit: 15960000 },
+      { account: 'Deferred tax liability', debit: 0, credit: 1260000 },
+    ];
+    const gross = [
+      { account: 'Income tax expense', debit: 15960000 },
+      { account: 'Income taxes payable', credit: 15960000 },
+      { account: 'Income tax expense', debit: 1260000 },
+      { account: 'Deferred tax liability', credit: 1260000 },
+      { account: 'Deferred tax asset', debit: 840000 },
+      { account: 'Income tax expense', credit: 840000 },
+    ];
+    expect(gradeJournalEntry(key, gross, 3)).toEqual({ earned: 3, possible: 3, correct: true });
+  });
+
+  it('scores a wrong amount as a miss and an extra', () => {
+    const r = gradeJournalEntry(
+      expected,
+      [
+        { account: 'Cash', debit: 580000 },
+        { account: 'Contract liability', credit: 58000 },
+      ],
+      2,
+    );
+    expect(r.earned).toBe(0);
+  });
+
   it('gives half credit when one line is missing', () => {
     const r = gradeJournalEntry(expected, [{ account: 'Cash', debit: 580000 }], 2);
     expect(r.earned).toBe(1);

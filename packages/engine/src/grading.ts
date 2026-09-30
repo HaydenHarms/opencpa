@@ -22,34 +22,41 @@ const normCite = (s: string) =>
 
 type JournalResponse = { account: string; debit?: number; credit?: number }[];
 
+/** Net each account to one signed amount (debits positive), dropping accounts that net to zero. */
+function netByAccount(lines: { account: string; debit?: number; credit?: number }[]) {
+  const net = new Map<string, number>();
+  for (const l of lines) {
+    const account = norm(l.account);
+    if (!account) continue;
+    net.set(account, (net.get(account) ?? 0) + (l.debit ?? 0) - (l.credit ?? 0));
+  }
+  for (const [account, amount] of net) if (amount === 0) net.delete(account);
+  return net;
+}
+
 /**
- * Journal entries earn partial credit: one point-share per expected line matched
- * exactly (same account, same side, same amount). Extra lines cost a share each.
- * A task is "correct" only when every line matches and nothing extra was entered.
+ * Journal entries earn partial credit: one point-share per expected account whose
+ * net amount matches. Both the key and the response are netted to one line per
+ * account first, so a split entry (two Cash lines) or a gross one (debit and credit
+ * the same account) scores the same as the combined entry. A response account that
+ * doesn't match (wrong amount, wrong side, or not in the key) costs a share.
+ * A task is "correct" only when every account matches and nothing extra was entered.
  */
 export function gradeJournalEntry(
   expected: JournalLine[],
   response: JournalResponse,
   points: number,
 ): GradeResult {
-  const remaining = response.map((l) => ({
-    account: norm(l.account),
-    debit: l.debit ?? 0,
-    credit: l.credit ?? 0,
-  }));
+  const want = netByAccount(expected);
+  const got = netByAccount(response);
   let matched = 0;
-  for (const e of expected) {
-    const i = remaining.findIndex(
-      (r) => r.account === norm(e.account) && r.debit === e.debit && r.credit === e.credit,
-    );
-    if (i >= 0) {
-      matched++;
-      remaining.splice(i, 1);
-    }
+  let extras = 0;
+  for (const [account, amount] of got) {
+    if (want.get(account) === amount) matched++;
+    else extras++;
   }
-  const extras = remaining.filter((r) => r.account && (r.debit || r.credit)).length;
-  const score = Math.max(0, matched - extras) / expected.length;
-  const correct = matched === expected.length && extras === 0;
+  const score = Math.max(0, matched - extras) / want.size;
+  const correct = matched === want.size && extras === 0;
   return { earned: Math.round(score * points * 100) / 100, possible: points, correct };
 }
 

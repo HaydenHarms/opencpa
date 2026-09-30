@@ -1,0 +1,178 @@
+id: far-tbs-bank-reconciliation-0002
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice
+  notes: FAR simulations batch 01, revision 2 (after the review gate). Written from scratch; every number
+    computed in code.
+title: June bank reconciliation
+scenario: Hollis Co. reconciles its only checking account each month. Its general ledger cash balance
+  at June 30 is $13,585. The exhibits show the May reconciliation, the June bank statement, Hollis's June
+  cash journals and three supporting documents. Hollis also keeps a $300 petty cash fund, which is not
+  part of this account.
+exhibits:
+- title: 'Exhibit 1: May 31 reconciliation (summary)'
+  body: '| Item | Amount |
+
+    |---|---|
+
+    | Balance per bank statement | $15,000 |
+
+    | Deposit in transit (May 31) | $2,050 |
+
+    | Outstanding check 861 | $1,200 |
+
+    | Outstanding check 866 | $415 |
+
+    | Balance per books | $15,435 |'
+- title: 'Exhibit 2: June bank statement'
+  body: '| Date | Description | Debits | Credits | Balance |
+
+    |---|---|---|---|---|
+
+    | May 31 | Opening balance | | | $15,000 |
+
+    | June 1 | Deposit |  | $2,050 | $17,050 |
+
+    | June 3 | Check 861 | $1,200 |  | $15,850 |
+
+    | June 6 | Check 870 | $2,480 |  | $13,370 |
+
+    | June 11 | Check 871 | $910 |  | $12,460 |
+
+    | June 12 | Deposit |  | $1,520 | $13,980 |
+
+    | June 18 | Returned item: customer check (Patel Co.), insufficient funds | $800 |  | $13,180 |
+
+    | June 20 | Deposit |  | $3,300 | $16,480 |
+
+    | June 23 | Check 873 | $640 |  | $15,840 |
+
+    | June 25 | ACH credit: Oakley Ltd. |  | $1,560 | $17,400 |
+
+    | June 26 | Check 874 | $3,150 |  | $14,250 |
+
+    | June 27 | Wire transfer fee (vendor inquiry) | $25 |  | $14,225 |
+
+    | June 30 | Interest earned |  | $42 | $14,267 |
+
+    | June 30 | Monthly service charge | $35 |  | $14,232 |'
+- title: 'Exhibit 3: Hollis''s June cash journals'
+  body: 'Cash receipts (deposits):
+
+
+    | Date | Amount |
+
+    |---|---|
+
+    | June 12 | $1,250 |
+
+    | June 20 | $3,300 |
+
+    | June 30 | $2,700 |
+
+
+    Cash disbursements (checks):
+
+
+    | Check | Date | Payee | Amount |
+
+    |---|---|---|---|
+
+    | 870 | June 3 | Bayside Supply (on account) | $2,480 |
+
+    | 871 | June 8 | June rent | $910 |
+
+    | 872 | June 15 | Corbel Freight (on account) | $1,375 |
+
+    | 873 | June 19 | Lark Paper (on account) | $460 |
+
+    | 874 | June 24 | Transfer to payroll account | $3,150 |
+
+    | 875 | June 29 | Utilities | $725 |'
+- title: 'Exhibit 4: Source documents'
+  body: '| Document | Detail |
+
+    |---|---|
+
+    | Deposit slip, June 12 | Customer checks from Avery Co. $700 and Boyle Inc. $550; total $1,250 |
+
+    | Lark Paper invoice 2231, dated June 2 | Office paper; amount due $640; paid by check 873 |
+
+    | Oakley Ltd. remittance advice, June 25 | ACH payment of $1,560 for Hollis invoice 5518, dated May
+    20 |'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What are Hollis's deposits in transit at June 30?
+  answer: 270000
+  explanation: The June 30 deposit of $2,700 is in the cash receipts journal but not on the bank statement.
+    The June 1 bank deposit is May's deposit in transit, and the June 12 and June 20 deposits reached
+    the bank.
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the total of Hollis's outstanding checks at June 30?
+  answer: 251500
+  explanation: 'Check 866 ($415) from May still hasn''t cleared, and neither have June checks 872 ($1,375)
+    and 875 ($725): $2,515. Check 861 cleared in June, and check 873 cleared for $640.'
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the correct (adjusted) balance of Hollis's checking account at June 30?
+  answer: 1414700
+  explanation: 'Bank side: $14,232 + $2,700 deposits in transit − $2,515 outstanding checks − $270 bank
+    error (the bank credited $1,520 for a $1,250 deposit) = $14,147. Book side: $13,585 + $1,560 ACH collection
+    + $42 interest − $800 NSF check − $60 fees − $180 understatement of check 873 = $14,147.'
+- id: t4
+  type: journal_entry
+  points: 3
+  prompt: Prepare Hollis's journal entry, or entries, to bring the general ledger into agreement with
+    the reconciliation.
+  accounts:
+  - Cash
+  - Accounts receivable
+  - Accounts payable
+  - Bank service charge expense
+  - Interest revenue
+  - Deposits in transit
+  - Outstanding checks
+  - Allowance for credit losses
+  - Sales revenue
+  - Petty cash
+  answer:
+  - account: Cash
+    debit: 56200
+    credit: 0
+  - account: Bank service charge expense
+    debit: 6000
+    credit: 0
+  - account: Accounts payable
+    debit: 18000
+    credit: 0
+  - account: Accounts receivable
+    debit: 0
+    credit: 76000
+  - account: Interest revenue
+    debit: 0
+    credit: 4200
+  explanation: 'Only items the bank recorded first need entries on Hollis''s books: the ACH collection
+    (Cash and Accounts receivable, $1,560), the interest ($42), the NSF check, which reinstates the receivable
+    ($800), the wire fee and service charge ($60), and check 873, recorded at $460 instead of $640, which
+    understates the payment to Lark Paper by $180. Net, Cash increases $562 and Accounts receivable decreases
+    $760. Deposits in transit, outstanding checks and the bank''s error need no entry by Hollis; the bank
+    corrects its own error.'

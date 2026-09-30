@@ -174,6 +174,12 @@ export const TbsItem = z
           code: 'custom',
           message: `task ${task.id}: entry does not balance (${dr} vs ${cr})`,
         });
+      const accounts = task.answer.map((l) => l.account);
+      if (new Set(accounts).size !== accounts.length)
+        ctx.addIssue({
+          code: 'custom',
+          message: `task ${task.id}: the key must have one line per account (the grader nets by account)`,
+        });
       for (const l of task.answer)
         if (!task.accounts.includes(l.account))
           ctx.addIssue({

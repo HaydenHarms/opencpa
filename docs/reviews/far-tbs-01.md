@@ -1,27 +1,60 @@
 # Review report: FAR simulations batch 01
 
+**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026.
+
 **3 simulations**, written from scratch (`scripts/batches/far-tbs-01.py`), with numeric and journal-entry tasks only. Research tasks wait until cited paragraphs can be checked against the Codification (see `docs/plans/tbs-frontend.md`).
+
+## Current version (revision 2)
 
 | Simulation | Blueprint task | Skill | Tasks |
 | --- | --- | --- | --- |
-| `far-tbs-lessee-finance-0001` | III.F Calculate lessee assets and liabilities and prepare journal entries | Application | 2 journal entries, 2 numeric (6 points) |
-| `far-tbs-bank-reconciliation-0001` | II.A Reconcile the bank balance to the general ledger | Analysis | 1 numeric, 1 compound journal entry (4 points) |
-| `far-tbs-income-tax-provision-0001` | III.D Calculate income tax expense and prepare the provision entry | Application | 2 numeric, 1 journal entry (5 points) |
+| `far-tbs-lessee-accounting-0001` | III.F Calculate lessee assets and liabilities and prepare journal entries | Application | 2 journal entries, 4 numeric (9 points) |
+| `far-tbs-bank-reconciliation-0002` | II.A Reconcile the cash balance per the bank statement to the general ledger | Analysis | 3 numeric, 1 journal entry (6 points) |
+| `far-tbs-income-tax-provision-0002` | III.D Calculate income tax expense and deferred taxes; prepare the provision entry | Application | 5 numeric, 1 journal entry (8 points) |
 
-Every amount is computed in the script with `Decimal`, rounded half up, and stored in cents. The script asserts that the bank and book sides of the reconciliation agree.
+Revision 2 replaced the three revision-1 simulations with new ones under new ids, because student progress is keyed to the id:
 
-**End-to-end test:** on a local worker, `GET /simulations` returned the three simulations with no answer, tolerance or explanation fields, and a fully correct submission of the tax provision scored 5 of 5.
+- **Lessee.** A six-year lease with a purchase option that Ridge is reasonably certain to exercise. The candidate has to judge the classification from the facts, include the option price in the liability, and amortize over the nine-year economic life. The exhibits include data to reject: fair value, an 8% bank quote, the 9-period and annuity-due factors, and third-party maintenance.
+- **Bank reconciliation.** It's now built from source documents: the May reconciliation, the June bank statement, the June cash journals and three supporting documents. The candidate finds the deposits in transit, the outstanding checks (including a May check still outstanding), a bank error and a book error.
+- **Income tax provision.** Year 2 with opening deferred balances and an enacted rate change. It adds unearned rent (a deferred tax asset), a nondeductible fine, estimated payments recorded as prepaid taxes, net presentation of the deferred balances, and two irrelevant items (a taxable gain and dividends).
 
-## Blind verification
+Every amount is computed in the script with `Decimal`, rounded half up, and stored in cents. The script asserts that the bank and book sides of the reconciliation agree. Currency tasks accept ±$1, and every scenario says how to round.
 
-A separate agent solved every task from the scenario, exhibits, prompts and account lists only. All answers matched. Fixes applied:
+**Grader change (in the same commit).** `gradeJournalEntry` now nets each account to one signed amount before matching, in both the key and the response. A correct entry scores the same whether it is split, gross or combined. The schema requires one line per account in each key.
+
+## Review gate
+
+| Run | Average pass likelihood | Verdicts | Outcome |
+| --- | --- | --- | --- |
+| Revision 1 | 69% (66 / 68 / 74) | 3 minor | Failed the ~80% bar. No key was wrong. The grader rejected correct entries, the exhibits did the candidate's sorting, and the bank reconciliation reused the template of `far-cash-bank-reconciliation-0001`. |
+| Revision 2 | 79.7% (76 / 79 / 84) | 3 minor | All 17 keys matched. The reviewer confirmed from the blueprint PDF that the bank reconciliation task is marked Analysis. It found two required fixes and expected about 84% with them applied. |
+
+Fixes applied after the revision 2 gate:
 
 | Simulation | Finding | Fix |
 | --- | --- | --- |
-| Income tax provision (required) | ASC 740 lets deferred tax assets and liabilities of the same jurisdiction be offset, so a netted entry would be marked wrong by the exact-match grader; deferred expense and the DTA were both $6,300 | Prompt says to record the DTA and DTL separately; warranty accrual changed to $40,000 so the amounts differ (DTA $8,400, deferred expense $4,200) |
-| Bank reconciliation (required) | A split cash debit and credit is a correct entry the grader would reject; check #884 did not say it paid an account payable | Prompt asks for the net change in Cash as one line; exhibit says the check paid an account payable |
-| Finance lease | A candidate might fold amortization into the payment entry | Prompt says to record only the payment |
+| Lessee (required) | The task wording ("record only the payment; amortization separately", "amortization expense on the right-of-use asset") told the candidate the lease was a finance lease. | Task 2 now asks for the December 31 entries "for the lease payment and any related amortization or expense", with Lease expense kept as the operating-lease trap. Task 3 asks for the right-of-use asset's carrying amount. |
+| Lessee | Task 6 (total lease cost) was the sum of two other tasks, so one error cost two points. | Replaced with the financing cash outflow for the lease. The scenario states that Ridge reports initial direct costs as investing. |
+| Lessee | A private company could elect a risk-free discount rate. | The scenario says Ridge is a public business entity. |
+| Bank (required) | "Correct cash balance" could include the $300 petty cash fund. | Now asks for the adjusted balance of the checking account. |
+| Bank | The scenario said the bank had confirmed its error. | Removed. Exhibit 4 (the deposit slip, the supplier's invoice and the customer's remittance advice) now carries the evidence. |
+| Tax | "Taxable income far above its future deductions" all but stated the valuation-allowance conclusion. | Replaced with projected pretax income of about $700,000 a year. |
+| Tax | A candidate booking one net deferred movement would lose most of the entry. | The prompt says Keane keeps separate deferred tax asset and liability accounts. |
 
-The verifier read the bank reconciliation as Application; it stays Analysis because it maps to the FAR task "Reconcile the cash balance per the bank statement to the general ledger," which the blueprint marks Analysis.
+## Blind verification
 
-**Still to do:** the review gate on these three, and Hayden's review of the player UI (branch `tbs-ui`, not yet merged).
+- **Revision 1:** all answers matched. The entry-structure findings that led to the grader change are recorded in git history.
+- **Revision 2:** all 16 answers matched. Its required fixes were applied before the gate:
+  - Task 6 now says "lease cost, as ASC 842 defines it".
+  - The tax entry now says to apply the estimated payments.
+  - The simulations got new ids, so that `lessee-finance` no longer shows in the URL.
+- **Revision 2 after the gate fixes:** all 16 tasks were re-solved blind and every answer matched, with no required fixes. The bank statement running balances, the book rollforward and Exhibit 4 all tie.
+
+## Still to do
+
+- Hayden's review of the player UI.
+- **A `select` (dropdown) task type.** Real simulations use many classification cells, such as lease type, permanent or temporary difference, and which side of the reconciliation an item belongs on. Without them, authors drift toward prompts that leak the classification.
+- **Next simulation batch** (about seven more to reach ten):
+  - It needs an Area I simulation first: cash flows, a wholly owned consolidation worksheet, or finding and correcting errors in a draft statement.
+  - Then bonds with a partial retirement, contingencies and subsequent events from a legal letter, a receivables reconciliation with expected credit losses, and a multi-element revenue contract.
+  - At least four of them should be Analysis.

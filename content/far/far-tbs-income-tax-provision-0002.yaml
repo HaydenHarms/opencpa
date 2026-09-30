@@ -1,0 +1,145 @@
+id: far-tbs-income-tax-provision-0002
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (current and deferred taxes; temporary and permanent differences; enacted rates)
+  - ASC 740-10-45 (balance sheet presentation of deferred taxes)
+  notes: FAR simulations batch 01, revision 2 (after the review gate). Written from scratch; every number
+    computed in code.
+title: Year 2 income tax provision
+scenario: Keane Corp. is preparing its Year 2 income tax provision. Its pretax financial income for Year
+  2 is $900,000. The enacted income tax rate is 21% for Year 2; legislation enacted in November, Year
+  2, sets the rate at 25% for Year 3 and all later years, when all of Keane's temporary differences will
+  reverse. There are no state taxes, and Keane files in one jurisdiction. Keane has reported taxable income
+  in every year since it was formed, and its signed sales backlog supports projected pretax income of
+  about $700,000 a year for Years 3 through 5. During Year 2 Keane paid $150,000 of estimated taxes, which
+  it recorded as debits to Prepaid income taxes. Round every amount to the nearest dollar.
+exhibits:
+- title: 'Exhibit 1: Deferred tax balances at January 1, Year 2'
+  body: '| Account | Balance | Source |
+
+    |---|---|---|
+
+    | Deferred tax liability | $12,600 | Cumulative tax depreciation in excess of book depreciation, $60,000
+    |
+
+    | Deferred tax asset | $8,400 | Warranty liability, $40,000 |'
+- title: 'Exhibit 2: Controller''s notes on Year 2 book and tax amounts'
+  body: '| Item | Detail |
+
+    |---|---|
+
+    | Depreciation | Book $90,000; tax $150,000 |
+
+    | Warranties | Expense accrued for books $55,000; claims paid in cash $35,000. Warranty costs are
+    deductible for tax when paid. |
+
+    | Rent | On December 1, Year 2, a tenant paid $36,000 for 12 months'' rent on unused warehouse space.
+    Keane recognized $3,000 as Year 2 rent revenue; the full amount is taxable in Year 2. |
+
+    | Municipal bonds | Interest income of $20,000 is included in pretax income and is exempt from tax.
+    |
+
+    | Fine | A $15,000 penalty paid to a state environmental agency is included in expenses and is not
+    deductible. |
+
+    | Equipment sale | A $12,000 gain on equipment sold in March is included in pretax income and is taxable
+    in Year 2. |
+
+    | Dividends | Keane declared and paid $80,000 of cash dividends in Year 2. |'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is Keane's taxable income for Year 2?
+  answer: 88800000
+  explanation: $900,000 − $20,000 municipal interest + $15,000 fine − $60,000 excess tax depreciation
+    + $20,000 warranty accrual in excess of payments + $33,000 rent taxed before it is earned = $888,000.
+    The equipment gain is in both, and dividends affect neither.
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What deferred tax asset should Keane report at December 31, Year 2, before any offsetting?
+  answer: 2325000
+  explanation: 'Deductible temporary differences: warranty liability $40,000 + $55,000 − $35,000 = $60,000,
+    and unearned rent $36,000 − $3,000 = $33,000; total $93,000 × 25% enacted future rate = $23,250. No
+    valuation allowance is needed: Keane''s history of taxable income and its backlog are positive evidence,
+    and the taxable depreciation difference also reverses in future years.'
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What deferred tax liability should Keane report at December 31, Year 2, before any offsetting?
+  answer: 3000000
+  explanation: Cumulative excess tax depreciation $60,000 + $60,000 = $120,000 × 25% = $30,000. Deferred
+    balances are measured at the enacted rate for the years they reverse.
+- id: t4
+  type: journal_entry
+  points: 3
+  prompt: Prepare Keane's journal entry to record its Year 2 income tax provision, applying the estimated
+    payments recorded in Prepaid income taxes. Keane keeps separate deferred tax asset and deferred tax
+    liability accounts.
+  accounts:
+  - Income tax expense — current
+  - Income tax expense — deferred
+  - Income taxes payable
+  - Prepaid income taxes
+  - Deferred tax asset
+  - Deferred tax liability
+  - Valuation allowance
+  - Unearned rent revenue
+  - Retained earnings
+  answer:
+  - account: Income tax expense — current
+    debit: 18648000
+    credit: 0
+  - account: Income tax expense — deferred
+    debit: 255000
+    credit: 0
+  - account: Deferred tax asset
+    debit: 1485000
+    credit: 0
+  - account: Prepaid income taxes
+    debit: 0
+    credit: 15000000
+  - account: Income taxes payable
+    debit: 0
+    credit: 3648000
+  - account: Deferred tax liability
+    debit: 0
+    credit: 1740000
+  explanation: Current tax = $888,000 × 21% = $186,480; $150,000 was prepaid, so $36,480 is payable. The
+    deferred tax liability rises from $12,600 to $30,000 ($17,400), and the deferred tax asset from $8,400
+    to $23,250 ($14,850). Deferred tax expense = $17,400 − $14,850 = $2,550, which includes the effect
+    of the rate change on the opening balances.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What total income tax expense should Keane report for Year 2?
+  answer: 18903000
+  explanation: $186,480 current + $2,550 deferred = $189,030.
+- id: t6
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: Keane presents its deferred tax asset and liability as one net amount. What net deferred tax
+    amount should Keane report on its December 31, Year 2, balance sheet? Enter a net liability as a positive
+    amount and a net asset as a negative amount.
+  answer: 675000
+  explanation: $30,000 deferred tax liability − $23,250 deferred tax asset = $6,750, a net liability.
+    Deferred tax balances of one tax-paying component in one jurisdiction are offset and presented as
+    noncurrent.

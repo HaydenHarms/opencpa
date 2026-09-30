@@ -37,7 +37,7 @@ Commands: `pnpm install`, `pnpm dev`, `pnpm test`, `pnpm typecheck`, `pnpm conte
 - **BAR batch 01** (25 items) passed the review gate: 84% average estimated pass likelihood, 15 exam-ready, 10 minor, 0 major; fixes applied. Mix 12% / 56% / 32% by skill (Application one over) and 44% / 44% / 12% by area. Gaps for BAR batch 02 are listed in `docs/reviews/bar-batch-01.md`.
 - **FAR batch 05** (25 items) passed the review gate: 82% average estimated pass likelihood, 16 exam-ready, 9 minor, 0 major; the main findings are applied (two items replaced). The **125-item FAR MCQ bank** is 12% / 50% / 38% by skill and 35% / 34% / 31% by area.
 - **FAR batch 04** (25 items) passed the review gate after one major fix: 83% average estimated pass likelihood, 13 exam-ready, 11 minor; all findings applied. The **100-item FAR bank** is 12% / 50% / 38% by skill and 35% / 34% / 31% by area, inside every blueprint range.
-- **Simulations:** the API, the player UI (`/simulations`) and three blind-verified FAR simulations are live on `main` (merged at Hayden's request; he may ask to revert the UI). Their review gate is still to run.
+- **Simulations:** the API, the player UI (`/simulations`) and three FAR simulations are live on `main` (the UI was merged at Hayden's request; he may ask to revert it). Batch 01 failed its first review gate (69%) and was rebuilt as revision 2 under new ids. That version scored 79.7% with no major items, and the reviewer's required fixes are applied (`docs/reviews/far-tbs-01.md`). The journal-entry grader nets each account before matching.
 - **FAR batch 03** (25 items, all new) passed the review gate: 84% average estimated pass likelihood, 23 exam-ready, 2 minor, 0 major; minor findings applied. The 75-item FAR bank is 9% / 53% / 37% by skill and 35% / 35% / 31% by area, all within the blueprint ranges.
 - **FAR batch 02** (25 items, all new) passed the review gate on the first run: 85% average estimated pass likelihood, 22 exam-ready, 3 minor, 0 major. The minor findings are applied. The 50-item FAR bank is 8% / 56% / 36% by skill (Application one item over its range) and 34% / 36% / 30% by area.
 - **FAR batch 01 passed the review gate** (revision 3: 84% average estimated pass likelihood, 18 exam-ready, 7 minor, 0 major). The gate's minor findings were applied in revision 3b; skill mix after honest retagging is 2 / 14 / 9 (8% / 56% / 36%), area mix 8 / 9 / 8.
@@ -76,6 +76,14 @@ These are hard requirements:
 10. **Choice format.** Exactly four choices, A–D (the schema and `audit()` both enforce this). Numeric choices are in ascending order (the AICPA convention), and the key's position falls out of that. Paired numeric choices ("$30,000 gain; equipment $250,000") lead with a dollar amount and sort on each amount in turn. Avoid clustering distractors from the same error family within a few hundred dollars of the key; spread them across different errors. Only word-answer items get the rotated key position. The correct word answer must not be the longest or most qualified choice. `finalize()` and `audit()` in `scripts/batches/common.py` enforce this. Do not hand-shuffle.
 11. **Citations.** Paragraph-level ASC/GASB cites must be checked against the Codification or original standard. If you cannot verify a paragraph, cite the Subtopic instead.
 12. **Stems are plain text.** The Practice page shows the stem as one paragraph, so no tables or line-break formatting. Put multi-item data in prose until the exhibits UI exists.
+
+**Simulations** (from the batch 01 gate, `docs/reviews/far-tbs-01.md`) also need:
+
+- **Exhibits.** At least two exhibits in source-document style (statements, journals, invoices, agreement terms), with data the candidate must reject. Evidence goes in the exhibits, not in narrated conclusions. An exhibit title that sorts the facts ("Reconciling items found") is a giveaway.
+- **No cross-task giveaways.** The candidate sees every task at once, so no prompt may reveal what another task tests (for example, "record amortization separately" reveals a finance lease).
+- **Scope.** Aim for 6–10 points. A simulation must be harder than any MCQ on the same topic, and must not reuse an MCQ's template.
+- **Precision.** Say how to round. Scope every "balance" question (the checking account, or cash to report?). State the entity type wherever private companies have an election.
+- **Journal entries.** Keys have one line per account; the grader nets each account first. Where GAAP allows a gross or a net presentation, the prompt fixes which accounts to use.
 
 ### Per batch (~25 items)
 

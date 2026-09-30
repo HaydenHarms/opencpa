@@ -1,0 +1,156 @@
+id: far-tbs-lessee-accounting-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 842-10 (lease classification; lease term and purchase options)
+  - 'ASC 842-20 (lessee finance leases: initial and subsequent measurement, amortization period)'
+  notes: FAR simulations batch 01, revision 2 (after the review gate). Written from scratch; every number
+    computed in code.
+title: 'Equipment lease: commencement and first year'
+scenario: Ridge Co., a public business entity, signed the equipment lease summarized in Exhibit 1 and
+  must record it for Year 1. Ridge reports the initial direct costs it pays as an investing cash outflow.
+  Use the present value factors in Exhibit 2 and round every amount to the nearest dollar.
+exhibits:
+- title: 'Exhibit 1: Lease summary prepared by Ridge''s controller'
+  body: '| Term | Detail |
+
+    |---|---|
+
+    | Asset | Packaging line, delivered and ready for use on January 1, Year 1 |
+
+    | Lease term | Six years from January 1, Year 1; not cancellable |
+
+    | Payments | $50,000 at the end of each year (December 31), starting in Year 1 |
+
+    | Purchase option | Ridge may buy the line for $20,000 at the end of Year 6. Ridge''s engineers estimate
+    the line will then be worth about $95,000, and Ridge has no other line that could replace it. |
+
+    | Economic life | Nine years from January 1, Year 1, with no residual value |
+
+    | Fair value at commencement | $300,000 |
+
+    | Rates | The lessor has not disclosed its implicit rate. Ridge''s incremental borrowing rate is 7%;
+    its bank quoted 8% for a five-year unsecured loan. |
+
+    | Initial direct costs | $4,000 of commissions, paid in cash on January 1, Year 1 |
+
+    | Maintenance | Ridge pays a separate service company $3,000 a year to maintain the line |
+
+    | Ridge''s policy | Owned equipment of this kind is depreciated straight-line |'
+- title: 'Exhibit 2: Present value factors'
+  body: '| Rate | Periods | Single sum | Ordinary annuity | Annuity due |
+
+    |---|---|---|---|---|
+
+    | 7% | 6 | 0.6663 | 4.7665 | 5.1002 |
+
+    | 7% | 9 | 0.5439 | 6.5152 | 6.9713 |
+
+    | 8% | 6 | 0.6302 | 4.6229 | 4.9927 |
+
+    | 8% | 9 | 0.5002 | 6.2469 | 6.7466 |'
+tasks:
+- id: t1
+  type: journal_entry
+  points: 2
+  prompt: Prepare Ridge's journal entry at lease commencement on January 1, Year 1.
+  accounts:
+  - Right-of-use asset
+  - Lease liability
+  - Cash
+  - Prepaid rent
+  - Lease expense
+  - Interest expense
+  - Equipment
+  answer:
+  - account: Right-of-use asset
+    debit: 25565100
+    credit: 0
+  - account: Lease liability
+    debit: 0
+    credit: 25165100
+  - account: Cash
+    debit: 0
+    credit: 400000
+  explanation: 'Ridge is reasonably certain to exercise the $20,000 purchase option (the line should be
+    worth about $95,000 then, and Ridge has no substitute), so the lease is a finance lease and the option
+    price is a lease payment. The rate implicit in the lease isn''t known, so Ridge uses its 7% incremental
+    borrowing rate. Liability = $50,000 × 4.7665 + $20,000 × 0.6663 = $238,325 + $13,326 = $251,651. The
+    right-of-use asset adds the $4,000 of initial direct costs: $255,651. The $300,000 fair value and
+    the maintenance paid to a third party are not lease payments.'
+- id: t2
+  type: journal_entry
+  points: 3
+  prompt: Prepare Ridge's journal entries on December 31, Year 1, for the lease payment and any related
+    amortization or expense.
+  accounts:
+  - Interest expense
+  - Amortization expense
+  - Lease expense
+  - Lease liability
+  - Right-of-use asset
+  - Cash
+  - Prepaid rent
+  answer:
+  - account: Interest expense
+    debit: 1761600
+    credit: 0
+  - account: Amortization expense
+    debit: 2840600
+    credit: 0
+  - account: Lease liability
+    debit: 3238400
+    credit: 0
+  - account: Right-of-use asset
+    debit: 0
+    credit: 2840600
+  - account: Cash
+    debit: 0
+    credit: 5000000
+  explanation: 'Payment: interest = $251,651 × 7% = $17,616, and the rest of the $50,000 payment, $32,384,
+    reduces the liability. Amortization: because Ridge is reasonably certain to exercise the purchase
+    option, the right-of-use asset is amortized over the nine-year economic life, not the six-year lease
+    term: $255,651 ÷ 9 = $28,406. A finance lease has no single straight-line lease expense.'
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the carrying amount of Ridge's right-of-use asset at December 31, Year 1?
+  answer: 22724500
+  explanation: $255,651 − $28,406 amortization over the nine-year economic life = $227,245.
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the total carrying amount of Ridge's lease liability at December 31, Year 1?
+  answer: 21926700
+  explanation: $251,651 − $32,384 = $219,267.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount of the lease liability should Ridge classify as current at December 31, Year 1 (the
+    principal to be repaid within 12 months)?
+  answer: 3465100
+  explanation: 'The current portion is the principal that the Year 2 payment will repay: Year 2 interest
+    is $219,267 × 7% = $15,349, so $50,000 − $15,349 = $34,651.'
+- id: t6
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount should Ridge report as financing cash outflows for the lease in its Year 1 statement
+    of cash flows?
+  answer: 3238400
+  explanation: 'For a finance lease, the part of each payment that repays principal is a financing outflow:
+    $32,384. The $17,616 of interest is an operating outflow, and Ridge reports the $4,000 of initial
+    direct costs as investing. The maintenance is paid to a third party and is an operating outflow.'
