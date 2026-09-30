@@ -1,0 +1,127 @@
+id: far-debt-covenant-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Debt covenant compliance)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Debt covenant compliance: leverage ratio as defined in the loan agreement'
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Kilburn Corp.'s loan agreement requires its ratio of funded debt to EBITDA to be no more than 3.00
+  at each year-end. The agreement defines funded debt as borrowed money plus finance lease liabilities,
+  excluding operating lease liabilities, and defines EBITDA as net income plus interest, income taxes,
+  and depreciation and amortization, excluding gains and losses on sales of long-lived assets. For Year
+  1, Kilburn reports net income of $1,200,000, which includes a $250,000 gain on the sale of a building;
+  interest expense of $400,000; income tax expense of $300,000; and depreciation and amortization of $700,000.
+  At December 31, Kilburn has a term loan of $5,500,000, finance lease liabilities of $900,000, operating
+  lease liabilities of $1,200,000, and accounts payable of $800,000. What is Kilburn's ratio of funded
+  debt to EBITDA for the covenant test, rounded to two decimal places?
+choices:
+- id: A
+  text: '2.34'
+  rationale: Leaves out the $900,000 of finance lease liabilities, which the agreement includes in funded
+    debt.
+- id: B
+  text: '2.46'
+  rationale: Leaves the $250,000 gain on the building sale in EBITDA. The agreement excludes gains on
+    sales of long-lived assets.
+- id: C
+  text: '2.72'
+  rationale: Correct. ($5,500,000 + $900,000) ÷ $2,350,000.
+- id: D
+  text: '3.23'
+  rationale: Includes the $1,200,000 of operating lease liabilities, which the agreement excludes from
+    funded debt.
+answer: C
+explanation: EBITDA as defined = $1,200,000 + $400,000 + $300,000 + $700,000 − $250,000 gain on the building
+  = $2,350,000. Funded debt = term loan $5,500,000 + finance lease liabilities $900,000 = $6,400,000;
+  operating lease liabilities and accounts payable are excluded. Ratio = $6,400,000 ÷ $2,350,000 = 2.72.
+variants:
+- stem: Lambeth Corp.'s loan agreement requires its ratio of funded debt to EBITDA to be no more than
+    2.75 at each year-end. The agreement defines funded debt as borrowed money plus finance lease liabilities,
+    excluding operating lease liabilities, and defines EBITDA as net income plus interest, income taxes,
+    and depreciation and amortization, excluding gains and losses on sales of long-lived assets. For Year
+    1, Lambeth reports net income of $900,000, which includes a $180,000 gain on the sale of a building;
+    interest expense of $300,000; income tax expense of $240,000; and depreciation and amortization of
+    $560,000. At December 31, Lambeth has a term loan of $3,600,000, finance lease liabilities of $700,000,
+    operating lease liabilities of $900,000, and accounts payable of $600,000. What is Lambeth's ratio
+    of funded debt to EBITDA for the covenant test, rounded to two decimal places?
+  choices:
+  - id: A
+    text: '1.98'
+    rationale: Leaves out the $700,000 of finance lease liabilities, which the agreement includes in funded
+      debt.
+  - id: B
+    text: '2.15'
+    rationale: Leaves the $180,000 gain on the building sale in EBITDA. The agreement excludes gains on
+      sales of long-lived assets.
+  - id: C
+    text: '2.36'
+    rationale: Correct. ($3,600,000 + $700,000) ÷ $1,820,000.
+  - id: D
+    text: '2.69'
+    rationale: Includes the $600,000 of accounts payable. Trade payables aren't borrowed money.
+  answer: C
+  explanation: EBITDA as defined = $900,000 + $300,000 + $240,000 + $560,000 − $180,000 gain on the building
+    = $1,820,000. Funded debt = term loan $3,600,000 + finance lease liabilities $700,000 = $4,300,000;
+    operating lease liabilities and accounts payable are excluded. Ratio = $4,300,000 ÷ $1,820,000 = 2.36.
+- stem: Marlow Corp.'s loan agreement requires its ratio of funded debt to EBITDA to be no more than 3.50
+    at each year-end. The agreement defines funded debt as borrowed money plus finance lease liabilities,
+    excluding operating lease liabilities, and defines EBITDA as net income plus interest, income taxes,
+    and depreciation and amortization, excluding gains and losses on sales of long-lived assets. For Year
+    1, Marlow reports net income of $2,000,000, which includes a $400,000 gain on the sale of a building;
+    interest expense of $650,000; income tax expense of $520,000; and depreciation and amortization of
+    $1,100,000. At December 31, Marlow has a term loan of $9,000,000, finance lease liabilities of $1,500,000,
+    operating lease liabilities of $2,200,000, and accounts payable of $1,300,000. What is Marlow's ratio
+    of funded debt to EBITDA for the covenant test, rounded to two decimal places?
+  choices:
+  - id: A
+    text: '2.46'
+    rationale: Leaves the $400,000 gain on the building sale in EBITDA. The agreement excludes gains on
+      sales of long-lived assets.
+  - id: B
+    text: '2.71'
+    rationale: Correct. ($9,000,000 + $1,500,000) ÷ $3,870,000.
+  - id: C
+    text: '3.05'
+    rationale: Includes the $1,300,000 of accounts payable. Trade payables aren't borrowed money.
+  - id: D
+    text: '3.28'
+    rationale: Includes the $2,200,000 of operating lease liabilities, which the agreement excludes from
+      funded debt.
+  answer: B
+  explanation: EBITDA as defined = $2,000,000 + $650,000 + $520,000 + $1,100,000 − $400,000 gain on the
+    building = $3,870,000. Funded debt = term loan $9,000,000 + finance lease liabilities $1,500,000 =
+    $10,500,000; operating lease liabilities and accounts payable are excluded. Ratio = $10,500,000 ÷
+    $3,870,000 = 2.71.
+- stem: Nuneaton Corp.'s loan agreement requires its ratio of funded debt to EBITDA to be no more than
+    2.50 at each year-end. The agreement defines funded debt as borrowed money plus finance lease liabilities,
+    excluding operating lease liabilities, and defines EBITDA as net income plus interest, income taxes,
+    and depreciation and amortization, excluding gains and losses on sales of long-lived assets. For Year
+    1, Nuneaton reports net income of $650,000, which includes a $120,000 gain on the sale of a building;
+    interest expense of $210,000; income tax expense of $170,000; and depreciation and amortization of
+    $390,000. At December 31, Nuneaton has a term loan of $2,400,000, finance lease liabilities of $450,000,
+    operating lease liabilities of $800,000, and accounts payable of $500,000. What is Nuneaton's ratio
+    of funded debt to EBITDA for the covenant test, rounded to two decimal places?
+  choices:
+  - id: A
+    text: '1.85'
+    rationale: Leaves out the $450,000 of finance lease liabilities, which the agreement includes in funded
+      debt.
+  - id: B
+    text: '2.19'
+    rationale: Correct. ($2,400,000 + $450,000) ÷ $1,300,000.
+  - id: C
+    text: '2.58'
+    rationale: Includes the $500,000 of accounts payable. Trade payables aren't borrowed money.
+  - id: D
+    text: '2.81'
+    rationale: Includes the $800,000 of operating lease liabilities, which the agreement excludes from
+      funded debt.
+  answer: B
+  explanation: EBITDA as defined = $650,000 + $210,000 + $170,000 + $390,000 − $120,000 gain on the building
+    = $1,300,000. Funded debt = term loan $2,400,000 + finance lease liabilities $450,000 = $2,850,000;
+    operating lease liabilities and accounts payable are excluded. Ratio = $2,850,000 ÷ $1,300,000 = 2.19.

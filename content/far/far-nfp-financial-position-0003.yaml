@@ -1,0 +1,146 @@
+id: far-nfp-financial-position-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of financial position (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-210 (statement of financial position)
+  - ASC 958-605 (conditional contributions)
+  - ASC 958-205 (releases from donor restrictions)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Maple Grove Clinic, a not-for-profit entity, reports net assets without donor restrictions of $1,200,000
+  in its draft December 31, Year 1, statement of financial position. Reviewing the supporting records,
+  the controller finds: (1) $150,000 that the board of trustees set aside as a quasi-endowment is reported
+  in net assets with donor restrictions; (2) an unconditional promise of $80,000, due in Year 2, that
+  the donor restricted to Maple''s Year 2 youth program is reported in net assets without donor restrictions;
+  (3) a $60,000 grant that the grantor will pay only if Maple raises matching gifts by June 30, Year 2,
+  is reported as a receivable and as revenue without donor restrictions; and (4) $40,000 of gifts restricted
+  to buying medical supplies was spent on those supplies in December, but no release from restrictions
+  was recorded. After correcting the draft, what should Maple report as net assets without donor restrictions?'
+choices:
+- id: A
+  text: $1,100,000
+  rationale: Leaves the $150,000 quasi-endowment in net assets with donor restrictions. A board designation
+    is self-imposed, so those net assets stay without donor restrictions.
+- id: B
+  text: $1,210,000
+  rationale: Records no release for the $40,000 spent on medical supplies. Meeting the donor's purpose
+    releases the restriction.
+- id: C
+  text: $1,250,000
+  rationale: Correct. $1,200,000 + $150,000 − $80,000 − $60,000 + $40,000.
+- id: D
+  text: $1,310,000
+  rationale: Keeps the $60,000 grant as revenue. A promise that depends on a barrier (raising matching
+    gifts) and lets the grantor keep its money if the barrier isn't met is conditional, so it isn't recognized
+    yet.
+answer: C
+explanation: '(1) Board designations are not donor restrictions: add $150,000. (2) The promise is restricted
+  by purpose and time, so it belongs in net assets with donor restrictions: subtract $80,000. (3) The
+  grant has a barrier and a right of release, so it is conditional and is not recognized until the matching
+  gifts are raised: subtract $60,000. (4) Spending on the donor''s purpose releases $40,000 to net assets
+  without donor restrictions: add it. $1,200,000 + $150,000 − $80,000 − $60,000 + $40,000 = $1,250,000.'
+variants:
+- stem: 'Juniper Family Clinic, a not-for-profit entity, reports net assets without donor restrictions
+    of $860,000 in its draft December 31, Year 1, statement of financial position. Reviewing the supporting
+    records, the controller finds: (1) $120,000 that the board of trustees set aside as a quasi-endowment
+    is reported in net assets with donor restrictions; (2) an unconditional promise of $50,000, due in
+    Year 2, that the donor restricted to Juniper''s Year 2 youth program is reported in net assets without
+    donor restrictions; (3) a $75,000 grant that the grantor will pay only if Juniper raises matching
+    gifts by June 30, Year 2, is reported as a receivable and as revenue without donor restrictions; and
+    (4) $30,000 of gifts restricted to buying medical supplies was spent on those supplies in December,
+    but no release from restrictions was recorded. After correcting the draft, what should Juniper report
+    as net assets without donor restrictions?'
+  choices:
+  - id: A
+    text: $855,000
+    rationale: Records no release for the $30,000 spent on medical supplies. Meeting the donor's purpose
+      releases the restriction.
+  - id: B
+    text: $885,000
+    rationale: Correct. $860,000 + $120,000 − $50,000 − $75,000 + $30,000.
+  - id: C
+    text: $935,000
+    rationale: Leaves the $50,000 promise in net assets without donor restrictions. The donor restricted
+      it to a program, and it is also due in a later period.
+  - id: D
+    text: $960,000
+    rationale: Keeps the $75,000 grant as revenue. A promise that depends on a barrier (raising matching
+      gifts) and lets the grantor keep its money if the barrier isn't met is conditional, so it isn't
+      recognized yet.
+  answer: B
+  explanation: '(1) Board designations are not donor restrictions: add $120,000. (2) The promise is restricted
+    by purpose and time, so it belongs in net assets with donor restrictions: subtract $50,000. (3) The
+    grant has a barrier and a right of release, so it is conditional and is not recognized until the matching
+    gifts are raised: subtract $75,000. (4) Spending on the donor''s purpose releases $30,000 to net assets
+    without donor restrictions: add it. $860,000 + $120,000 − $50,000 − $75,000 + $30,000 = $885,000.'
+- stem: 'Kestrel Valley Clinic, a not-for-profit entity, reports net assets without donor restrictions
+    of $2,100,000 in its draft December 31, Year 1, statement of financial position. Reviewing the supporting
+    records, the controller finds: (1) $300,000 that the board of trustees set aside as a quasi-endowment
+    is reported in net assets with donor restrictions; (2) an unconditional promise of $140,000, due in
+    Year 2, that the donor restricted to Kestrel''s Year 2 youth program is reported in net assets without
+    donor restrictions; (3) a $100,000 grant that the grantor will pay only if Kestrel raises matching
+    gifts by June 30, Year 2, is reported as a receivable and as revenue without donor restrictions; and
+    (4) $65,000 of gifts restricted to buying medical supplies was spent on those supplies in December,
+    but no release from restrictions was recorded. After correcting the draft, what should Kestrel report
+    as net assets without donor restrictions?'
+  choices:
+  - id: A
+    text: $1,925,000
+    rationale: Leaves the $300,000 quasi-endowment in net assets with donor restrictions. A board designation
+      is self-imposed, so those net assets stay without donor restrictions.
+  - id: B
+    text: $2,225,000
+    rationale: Correct. $2,100,000 + $300,000 − $140,000 − $100,000 + $65,000.
+  - id: C
+    text: $2,325,000
+    rationale: Keeps the $100,000 grant as revenue. A promise that depends on a barrier (raising matching
+      gifts) and lets the grantor keep its money if the barrier isn't met is conditional, so it isn't
+      recognized yet.
+  - id: D
+    text: $2,365,000
+    rationale: Leaves the $140,000 promise in net assets without donor restrictions. The donor restricted
+      it to a program, and it is also due in a later period.
+  answer: B
+  explanation: '(1) Board designations are not donor restrictions: add $300,000. (2) The promise is restricted
+    by purpose and time, so it belongs in net assets with donor restrictions: subtract $140,000. (3) The
+    grant has a barrier and a right of release, so it is conditional and is not recognized until the matching
+    gifts are raised: subtract $100,000. (4) Spending on the donor''s purpose releases $65,000 to net
+    assets without donor restrictions: add it. $2,100,000 + $300,000 − $140,000 − $100,000 + $65,000 =
+    $2,225,000.'
+- stem: 'Linden Street Clinic, a not-for-profit entity, reports net assets without donor restrictions
+    of $640,000 in its draft December 31, Year 1, statement of financial position. Reviewing the supporting
+    records, the controller finds: (1) $90,000 that the board of trustees set aside as a quasi-endowment
+    is reported in net assets with donor restrictions; (2) an unconditional promise of $45,000, due in
+    Year 2, that the donor restricted to Linden''s Year 2 youth program is reported in net assets without
+    donor restrictions; (3) a $35,000 grant that the grantor will pay only if Linden raises matching gifts
+    by June 30, Year 2, is reported as a receivable and as revenue without donor restrictions; and (4)
+    $20,000 of gifts restricted to buying medical supplies was spent on those supplies in December, but
+    no release from restrictions was recorded. After correcting the draft, what should Linden report as
+    net assets without donor restrictions?'
+  choices:
+  - id: A
+    text: $580,000
+    rationale: Leaves the $90,000 quasi-endowment in net assets with donor restrictions. A board designation
+      is self-imposed, so those net assets stay without donor restrictions.
+  - id: B
+    text: $650,000
+    rationale: Records no release for the $20,000 spent on medical supplies. Meeting the donor's purpose
+      releases the restriction.
+  - id: C
+    text: $670,000
+    rationale: Correct. $640,000 + $90,000 − $45,000 − $35,000 + $20,000.
+  - id: D
+    text: $715,000
+    rationale: Leaves the $45,000 promise in net assets without donor restrictions. The donor restricted
+      it to a program, and it is also due in a later period.
+  answer: C
+  explanation: '(1) Board designations are not donor restrictions: add $90,000. (2) The promise is restricted
+    by purpose and time, so it belongs in net assets with donor restrictions: subtract $45,000. (3) The
+    grant has a barrier and a right of release, so it is conditional and is not recognized until the matching
+    gifts are raised: subtract $35,000. (4) Spending on the donor''s purpose releases $20,000 to net assets
+    without donor restrictions: add it. $640,000 + $90,000 − $45,000 − $35,000 + $20,000 = $670,000.'

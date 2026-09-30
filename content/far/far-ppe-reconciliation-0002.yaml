@@ -1,0 +1,121 @@
+id: far-ppe-reconciliation-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 360-10 (property, plant and equipment; retirements; repairs and maintenance)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Pryor Co.''s fixed-asset subledger shows total equipment cost of $3,262,000, while
+  the general ledger equipment account shows $3,400,000. The controller''s investigation finds: a fully
+  depreciated machine that cost $75,000 was scrapped in June and removed from the subledger, but no entry
+  was made in the general ledger; $18,000 of routine maintenance was debited to the equipment account
+  in the general ledger; and a machine costing $45,000, placed in service on December 28, was recorded
+  in the general ledger but hasn''t yet been added to the subledger. What should the corrected equipment
+  cost balance be at December 31?'
+choices:
+- id: A
+  text: $3,262,000
+  rationale: Uses the subledger as recorded. It still lacks the $45,000 machine placed in service on December
+    28.
+- id: B
+  text: $3,307,000
+  rationale: Correct. $3,400,000 − $75,000 scrapped machine − $18,000 maintenance, which equals the subledger
+    $3,262,000 + $45,000.
+- id: C
+  text: $3,325,000
+  rationale: Removes the scrapped machine but leaves the $18,000 of routine maintenance, which is an expense.
+- id: D
+  text: $3,382,000
+  rationale: Removes the maintenance but not the scrapped machine. Retiring a fully depreciated asset
+    removes its $75,000 cost from the account.
+answer: B
+explanation: 'General ledger: $3,400,000 − $75,000 cost of the scrapped machine (its accumulated depreciation
+  is removed too) − $18,000 maintenance, which is expense = $3,307,000. Subledger: $3,262,000 + $45,000
+  new machine = $3,307,000. The records now agree.'
+variants:
+- stem: 'At December 31, Quillan Co.''s fixed-asset subledger shows total equipment cost of $2,046,000,
+    while the general ledger equipment account shows $2,150,000. The controller''s investigation finds:
+    a fully depreciated machine that cost $52,000 was scrapped in June and removed from the subledger,
+    but no entry was made in the general ledger; $14,000 of routine maintenance was debited to the equipment
+    account in the general ledger; and a machine costing $38,000, placed in service on December 28, was
+    recorded in the general ledger but hasn''t yet been added to the subledger. What should the corrected
+    equipment cost balance be at December 31?'
+  choices:
+  - id: A
+    text: $2,046,000
+    rationale: Uses the subledger as recorded. It still lacks the $38,000 machine placed in service on
+      December 28.
+  - id: B
+    text: $2,070,000
+    rationale: Also subtracts the maintenance from the subledger balance, which never included it.
+  - id: C
+    text: $2,084,000
+    rationale: Correct. $2,150,000 − $52,000 scrapped machine − $14,000 maintenance, which equals the
+      subledger $2,046,000 + $38,000.
+  - id: D
+    text: $2,098,000
+    rationale: Removes the scrapped machine but leaves the $14,000 of routine maintenance, which is an
+      expense.
+  answer: C
+  explanation: 'General ledger: $2,150,000 − $52,000 cost of the scrapped machine (its accumulated depreciation
+    is removed too) − $14,000 maintenance, which is expense = $2,084,000. Subledger: $2,046,000 + $38,000
+    new machine = $2,084,000. The records now agree.'
+- stem: 'At December 31, Renshaw Co.''s fixed-asset subledger shows total equipment cost of $5,570,000,
+    while the general ledger equipment account shows $5,780,000. The controller''s investigation finds:
+    a fully depreciated machine that cost $120,000 was scrapped in June and removed from the subledger,
+    but no entry was made in the general ledger; $26,000 of routine maintenance was debited to the equipment
+    account in the general ledger; and a machine costing $64,000, placed in service on December 28, was
+    recorded in the general ledger but hasn''t yet been added to the subledger. What should the corrected
+    equipment cost balance be at December 31?'
+  choices:
+  - id: A
+    text: $5,608,000
+    rationale: Also subtracts the maintenance from the subledger balance, which never included it.
+  - id: B
+    text: $5,634,000
+    rationale: Correct. $5,780,000 − $120,000 scrapped machine − $26,000 maintenance, which equals the
+      subledger $5,570,000 + $64,000.
+  - id: C
+    text: $5,660,000
+    rationale: Removes the scrapped machine but leaves the $26,000 of routine maintenance, which is an
+      expense.
+  - id: D
+    text: $5,754,000
+    rationale: Removes the maintenance but not the scrapped machine. Retiring a fully depreciated asset
+      removes its $120,000 cost from the account.
+  answer: B
+  explanation: 'General ledger: $5,780,000 − $120,000 cost of the scrapped machine (its accumulated depreciation
+    is removed too) − $26,000 maintenance, which is expense = $5,634,000. Subledger: $5,570,000 + $64,000
+    new machine = $5,634,000. The records now agree.'
+- stem: 'At December 31, Stanway Co.''s fixed-asset subledger shows total equipment cost of $1,563,000,
+    while the general ledger equipment account shows $1,640,000. The controller''s investigation finds:
+    a fully depreciated machine that cost $41,000 was scrapped in June and removed from the subledger,
+    but no entry was made in the general ledger; $9,000 of routine maintenance was debited to the equipment
+    account in the general ledger; and a machine costing $27,000, placed in service on December 28, was
+    recorded in the general ledger but hasn''t yet been added to the subledger. What should the corrected
+    equipment cost balance be at December 31?'
+  choices:
+  - id: A
+    text: $1,563,000
+    rationale: Uses the subledger as recorded. It still lacks the $27,000 machine placed in service on
+      December 28.
+  - id: B
+    text: $1,581,000
+    rationale: Also subtracts the maintenance from the subledger balance, which never included it.
+  - id: C
+    text: $1,590,000
+    rationale: Correct. $1,640,000 − $41,000 scrapped machine − $9,000 maintenance, which equals the subledger
+      $1,563,000 + $27,000.
+  - id: D
+    text: $1,631,000
+    rationale: Removes the maintenance but not the scrapped machine. Retiring a fully depreciated asset
+      removes its $41,000 cost from the account.
+  answer: C
+  explanation: 'General ledger: $1,640,000 − $41,000 cost of the scrapped machine (its accumulated depreciation
+    is removed too) − $9,000 maintenance, which is expense = $1,590,000. Subledger: $1,563,000 + $27,000
+    new machine = $1,590,000. The records now agree.'

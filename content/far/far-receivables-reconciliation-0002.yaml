@@ -1,0 +1,120 @@
+id: far-receivables-reconciliation-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 310-10-45 (credit balances in receivables reported as liabilities)
+  - ASC 606-10-55 (consignment arrangements)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Arlo Supply''s accounts receivable subledger shows a net balance of $598,500, which
+  includes customer accounts with credit balances from overpayments totaling $3,000. The general ledger
+  control account shows $604,800. The controller''s investigation finds: a $4,500 credit memo for returned
+  goods was posted to the customer''s subledger account but not to the control account; the December 14
+  sales journal total of $84,600 was posted to the control account as $86,400; and a $7,200 invoice was
+  recorded in both records for goods shipped on December 30 to a dealer that holds them on consignment
+  for Arlo. Before any allowance for credit losses, what amount should Arlo report as accounts receivable?'
+choices:
+- id: A
+  text: $591,300
+  rationale: Corrects both records but reports the net balance. The $3,000 of customer credit balances
+    is a liability, so receivables are reported without netting it.
+- id: B
+  text: $594,300
+  rationale: Correct. $598,500 − $7,200 consignment invoice + $3,000 of credit balances reclassified.
+- id: C
+  text: $598,500
+  rationale: Uses the subledger balance as recorded.
+- id: D
+  text: $604,800
+  rationale: Uses the control account as recorded, before correcting it.
+answer: B
+explanation: 'Control account: $604,800 − $4,500 credit memo − $1,800 posting error − $7,200 consignment
+  invoice = $591,300. Subledger: $598,500 − $7,200 = $591,300. The records now agree. The $3,000 of credit
+  balances is reclassified to liabilities, so accounts receivable is $591,300 + $3,000 = $594,300.'
+variants:
+- stem: 'At December 31, Beckett Supply''s accounts receivable subledger shows a net balance of $742,300,
+    which includes customer accounts with credit balances from overpayments totaling $5,400. The general
+    ledger control account shows $750,300. The controller''s investigation finds: a $6,200 credit memo
+    for returned goods was posted to the customer''s subledger account but not to the control account;
+    the December 14 sales journal total of $51,300 was posted to the control account as $53,100; and a
+    $9,800 invoice was recorded in both records for goods shipped on December 30 to a dealer that holds
+    them on consignment for Beckett. Before any allowance for credit losses, what amount should Beckett
+    report as accounts receivable?'
+  choices:
+  - id: A
+    text: $732,500
+    rationale: Corrects both records but reports the net balance. The $5,400 of customer credit balances
+      is a liability, so receivables are reported without netting it.
+  - id: B
+    text: $737,900
+    rationale: Correct. $742,300 − $9,800 consignment invoice + $5,400 of credit balances reclassified.
+  - id: C
+    text: $747,700
+    rationale: Doesn't remove the $9,800 consignment invoice. Goods held by a consignee are still Beckett's
+      inventory, not a sale.
+  - id: D
+    text: $750,300
+    rationale: Uses the control account as recorded, before correcting it.
+  answer: B
+  explanation: 'Control account: $750,300 − $6,200 credit memo − $1,800 posting error − $9,800 consignment
+    invoice = $732,500. Subledger: $742,300 − $9,800 = $732,500. The records now agree. The $5,400 of
+    credit balances is reclassified to liabilities, so accounts receivable is $732,500 + $5,400 = $737,900.'
+- stem: 'At December 31, Carrow Supply''s accounts receivable subledger shows a net balance of $415,800,
+    which includes customer accounts with credit balances from overpayments totaling $2,600. The general
+    ledger control account shows $423,400. The controller''s investigation finds: a $3,100 credit memo
+    for returned goods was posted to the customer''s subledger account but not to the control account;
+    the December 14 sales journal total of $62,700 was posted to the control account as $67,200; and a
+    $5,500 invoice was recorded in both records for goods shipped on December 30 to a dealer that holds
+    them on consignment for Carrow. Before any allowance for credit losses, what amount should Carrow
+    report as accounts receivable?'
+  choices:
+  - id: A
+    text: $410,300
+    rationale: Corrects both records but reports the net balance. The $2,600 of customer credit balances
+      is a liability, so receivables are reported without netting it.
+  - id: B
+    text: $412,900
+    rationale: Correct. $415,800 − $5,500 consignment invoice + $2,600 of credit balances reclassified.
+  - id: C
+    text: $415,800
+    rationale: Uses the subledger balance as recorded.
+  - id: D
+    text: $418,400
+    rationale: Doesn't remove the $5,500 consignment invoice. Goods held by a consignee are still Carrow's
+      inventory, not a sale.
+  answer: B
+  explanation: 'Control account: $423,400 − $3,100 credit memo − $4,500 posting error − $5,500 consignment
+    invoice = $410,300. Subledger: $415,800 − $5,500 = $410,300. The records now agree. The $2,600 of
+    credit balances is reclassified to liabilities, so accounts receivable is $410,300 + $2,600 = $412,900.'
+- stem: 'At December 31, Delancey Supply''s accounts receivable subledger shows a net balance of $1,026,400,
+    which includes customer accounts with credit balances from overpayments totaling $8,200. The general
+    ledger control account shows $1,035,600. The controller''s investigation finds: a $7,400 credit memo
+    for returned goods was posted to the customer''s subledger account but not to the control account;
+    the December 14 sales journal total of $93,500 was posted to the control account as $95,300; and a
+    $12,600 invoice was recorded in both records for goods shipped on December 30 to a dealer that holds
+    them on consignment for Delancey. Before any allowance for credit losses, what amount should Delancey
+    report as accounts receivable?'
+  choices:
+  - id: A
+    text: $1,022,000
+    rationale: Correct. $1,026,400 − $12,600 consignment invoice + $8,200 of credit balances reclassified.
+  - id: B
+    text: $1,026,400
+    rationale: Uses the subledger balance as recorded.
+  - id: C
+    text: $1,034,600
+    rationale: Doesn't remove the $12,600 consignment invoice. Goods held by a consignee are still Delancey's
+      inventory, not a sale.
+  - id: D
+    text: $1,035,600
+    rationale: Uses the control account as recorded, before correcting it.
+  answer: A
+  explanation: 'Control account: $1,035,600 − $7,400 credit memo − $1,800 posting error − $12,600 consignment
+    invoice = $1,013,800. Subledger: $1,026,400 − $12,600 = $1,013,800. The records now agree. The $8,200
+    of credit balances is reclassified to liabilities, so accounts receivable is $1,013,800 + $8,200 =
+    $1,022,000.'

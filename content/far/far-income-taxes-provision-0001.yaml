@@ -1,0 +1,137 @@
+id: far-income-taxes-provision-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (current and deferred tax expense; temporary and permanent differences)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Corliss Corp. reports pretax financial income of $600,000 for Year 1, its first year of operations,
+  including $40,000 of interest on municipal bonds that is exempt from tax. Tax depreciation exceeds book
+  depreciation by $70,000, and warranty expense accrued for books exceeds warranty claims paid by $30,000;
+  warranty costs are deductible when paid. The enacted tax rate is 25% for all years, and Corliss expects
+  ample future taxable income. During Year 1, Corliss paid estimated taxes of $100,000, which it recorded
+  as prepaid income taxes. After the estimated payments are applied, what income taxes payable should
+  Corliss report on its December 31, Year 1, balance sheet, and what total income tax expense should it
+  report for Year 1?
+choices:
+- id: A
+  text: $30,000 payable; $130,000 expense
+  rationale: Records only current tax expense. The deferred tax liability and asset change deferred tax
+    expense.
+- id: B
+  text: $30,000 payable; $140,000 expense
+  rationale: Correct. Current tax $130,000 − $100,000 prepaid = $30,000 payable; expense $130,000 + $17,500
+    − $7,500 = $140,000.
+- id: C
+  text: $40,000 payable; $150,000 expense
+  rationale: Taxes the $40,000 of municipal bond interest. Tax-exempt interest is a permanent difference,
+    excluded from taxable income and from tax expense.
+- id: D
+  text: $130,000 payable; $140,000 expense
+  rationale: Reports the whole $130,000 of current tax as payable. The $100,000 of estimated payments
+    already made is applied against it.
+answer: B
+explanation: Taxable income = $600,000 − $40,000 tax-exempt interest − $70,000 excess tax depreciation
+  + $30,000 warranty accrual not yet deductible = $520,000. Current tax = $520,000 × 25% = $130,000; after
+  applying the $100,000 of estimated payments recorded as prepaid income taxes, $30,000 remains payable.
+  Deferred tax liability = $70,000 × 25% = $17,500; deferred tax asset = $30,000 × 25% = $7,500. Total
+  expense = $130,000 + $17,500 − $7,500 = $140,000.
+variants:
+- stem: Denholm Corp. reports pretax financial income of $850,000 for Year 1, its first year of operations,
+    including $50,000 of interest on municipal bonds that is exempt from tax. Tax depreciation exceeds
+    book depreciation by $120,000, and warranty expense accrued for books exceeds warranty claims paid
+    by $40,000; warranty costs are deductible when paid. The enacted tax rate is 21% for all years, and
+    Denholm expects ample future taxable income. During Year 1, Denholm paid estimated taxes of $140,000,
+    which it recorded as prepaid income taxes. After the estimated payments are applied, what income taxes
+    payable should Denholm report on its December 31, Year 1, balance sheet, and what total income tax
+    expense should it report for Year 1?
+  choices:
+  - id: A
+    text: $11,200 payable; $168,000 expense
+    rationale: Correct. Current tax $151,200 − $140,000 prepaid = $11,200 payable; expense $151,200 +
+      $25,200 − $8,400 = $168,000.
+  - id: B
+    text: $11,200 payable; $176,400 expense
+    rationale: Records the $25,200 deferred tax liability but not the $8,400 deferred tax asset from the
+      warranty accrual.
+  - id: C
+    text: $11,200 payable; $184,800 expense
+    rationale: Adds the $8,400 deferred tax asset to expense. A deferred tax asset reduces deferred tax
+      expense.
+  - id: D
+    text: $151,200 payable; $168,000 expense
+    rationale: Reports the whole $151,200 of current tax as payable. The $140,000 of estimated payments
+      already made is applied against it.
+  answer: A
+  explanation: Taxable income = $850,000 − $50,000 tax-exempt interest − $120,000 excess tax depreciation
+    + $40,000 warranty accrual not yet deductible = $720,000. Current tax = $720,000 × 21% = $151,200;
+    after applying the $140,000 of estimated payments recorded as prepaid income taxes, $11,200 remains
+    payable. Deferred tax liability = $120,000 × 21% = $25,200; deferred tax asset = $40,000 × 21% = $8,400.
+    Total expense = $151,200 + $25,200 − $8,400 = $168,000.
+- stem: Elsdon Corp. reports pretax financial income of $420,000 for Year 1, its first year of operations,
+    including $20,000 of interest on municipal bonds that is exempt from tax. Tax depreciation exceeds
+    book depreciation by $60,000, and warranty expense accrued for books exceeds warranty claims paid
+    by $24,000; warranty costs are deductible when paid. The enacted tax rate is 25% for all years, and
+    Elsdon expects ample future taxable income. During Year 1, Elsdon paid estimated taxes of $80,000,
+    which it recorded as prepaid income taxes. After the estimated payments are applied, what income taxes
+    payable should Elsdon report on its December 31, Year 1, balance sheet, and what total income tax
+    expense should it report for Year 1?
+  choices:
+  - id: A
+    text: $11,000 payable; $91,000 expense
+    rationale: Records only current tax expense. The deferred tax liability and asset change deferred
+      tax expense.
+  - id: B
+    text: $11,000 payable; $100,000 expense
+    rationale: Correct. Current tax $91,000 − $80,000 prepaid = $11,000 payable; expense $91,000 + $15,000
+      − $6,000 = $100,000.
+  - id: C
+    text: $11,000 payable; $112,000 expense
+    rationale: Adds the $6,000 deferred tax asset to expense. A deferred tax asset reduces deferred tax
+      expense.
+  - id: D
+    text: $16,000 payable; $105,000 expense
+    rationale: Taxes the $20,000 of municipal bond interest. Tax-exempt interest is a permanent difference,
+      excluded from taxable income and from tax expense.
+  answer: B
+  explanation: Taxable income = $420,000 − $20,000 tax-exempt interest − $60,000 excess tax depreciation
+    + $24,000 warranty accrual not yet deductible = $364,000. Current tax = $364,000 × 25% = $91,000;
+    after applying the $80,000 of estimated payments recorded as prepaid income taxes, $11,000 remains
+    payable. Deferred tax liability = $60,000 × 25% = $15,000; deferred tax asset = $24,000 × 25% = $6,000.
+    Total expense = $91,000 + $15,000 − $6,000 = $100,000.
+- stem: Frimley Corp. reports pretax financial income of $1,200,000 for Year 1, its first year of operations,
+    including $100,000 of interest on municipal bonds that is exempt from tax. Tax depreciation exceeds
+    book depreciation by $160,000, and warranty expense accrued for books exceeds warranty claims paid
+    by $80,000; warranty costs are deductible when paid. The enacted tax rate is 21% for all years, and
+    Frimley expects ample future taxable income. During Year 1, Frimley paid estimated taxes of $200,000,
+    which it recorded as prepaid income taxes. After the estimated payments are applied, what income taxes
+    payable should Frimley report on its December 31, Year 1, balance sheet, and what total income tax
+    expense should it report for Year 1?
+  choices:
+  - id: A
+    text: $14,200 payable; $214,200 expense
+    rationale: Records only current tax expense. The deferred tax liability and asset change deferred
+      tax expense.
+  - id: B
+    text: $14,200 payable; $231,000 expense
+    rationale: Correct. Current tax $214,200 − $200,000 prepaid = $14,200 payable; expense $214,200 +
+      $33,600 − $16,800 = $231,000.
+  - id: C
+    text: $14,200 payable; $247,800 expense
+    rationale: Records the $33,600 deferred tax liability but not the $16,800 deferred tax asset from
+      the warranty accrual.
+  - id: D
+    text: $35,200 payable; $252,000 expense
+    rationale: Taxes the $100,000 of municipal bond interest. Tax-exempt interest is a permanent difference,
+      excluded from taxable income and from tax expense.
+  answer: B
+  explanation: Taxable income = $1,200,000 − $100,000 tax-exempt interest − $160,000 excess tax depreciation
+    + $80,000 warranty accrual not yet deductible = $1,020,000. Current tax = $1,020,000 × 21% = $214,200;
+    after applying the $200,000 of estimated payments recorded as prepaid income taxes, $14,200 remains
+    payable. Deferred tax liability = $160,000 × 21% = $33,600; deferred tax asset = $80,000 × 21% = $16,800.
+    Total expense = $214,200 + $33,600 − $16,800 = $231,000.

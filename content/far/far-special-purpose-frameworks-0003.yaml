@@ -1,0 +1,127 @@
+id: far-special-purpose-frameworks-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Special Purpose Frameworks
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - AICPA special purpose frameworks (modified cash basis)
+  - AU-C 800 (financial statements prepared under special purpose frameworks)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Dover Surveying prepares its financial statements on a modified cash basis: it capitalizes purchases
+  of equipment and depreciates them, and it otherwise records revenues when cash is received and expenses
+  when cash is paid. In Year 3 it collected $500,000 from clients and paid $320,000 of operating expenses.
+  It also paid $60,000 for new equipment in January; depreciation on the equipment for Year 3 is $15,000.
+  At year-end, employees had earned $12,000 of wages that Dover will pay in January, Year 4, and client
+  receivables had increased by $30,000 during the year. What excess of revenues over expenses should Dover
+  report in its Year 3 statement of revenues and expenses—modified cash basis?'
+choices:
+- id: A
+  text: $120,000
+  rationale: Expenses the $60,000 of equipment when paid. Dover's modified cash basis capitalizes equipment
+    and depreciates it.
+- id: B
+  text: $165,000
+  rationale: Correct. $500,000 − $320,000 − $15,000 depreciation.
+- id: C
+  text: $180,000
+  rationale: Capitalizes the equipment but records no depreciation. The basis depreciates capitalized
+    equipment.
+- id: D
+  text: $183,000
+  rationale: Converts to the accrual basis by adding the $30,000 increase in receivables and accruing
+    the $12,000 of wages. This basis doesn't record receivables or accrued expenses.
+answer: B
+explanation: Under Dover's modified cash basis, revenues are the $500,000 collected and expenses are the
+  $320,000 paid, plus depreciation on the capitalized equipment ($15,000). The equipment purchase itself
+  isn't an expense, and the unpaid wages and the increase in receivables aren't recorded. $500,000 − $320,000
+  − $15,000 = $165,000.
+variants:
+- stem: 'Easton Design prepares its financial statements on a modified cash basis: it capitalizes purchases
+    of equipment and depreciates them, and it otherwise records revenues when cash is received and expenses
+    when cash is paid. In Year 3 it collected $380,000 from clients and paid $250,000 of operating expenses.
+    It also paid $45,000 for new equipment in January; depreciation on the equipment for Year 3 is $9,000.
+    At year-end, employees had earned $14,000 of wages that Easton will pay in January, Year 4, and client
+    receivables had increased by $22,000 during the year. What excess of revenues over expenses should
+    Easton report in its Year 3 statement of revenues and expenses—modified cash basis?'
+  choices:
+  - id: A
+    text: $107,000
+    rationale: Accrues the $14,000 of unpaid wages. Under this basis, expenses other than depreciation
+      are recorded when paid.
+  - id: B
+    text: $121,000
+    rationale: Correct. $380,000 − $250,000 − $9,000 depreciation.
+  - id: C
+    text: $129,000
+    rationale: Converts to the accrual basis by adding the $22,000 increase in receivables and accruing
+      the $14,000 of wages. This basis doesn't record receivables or accrued expenses.
+  - id: D
+    text: $130,000
+    rationale: Capitalizes the equipment but records no depreciation. The basis depreciates capitalized
+      equipment.
+  answer: B
+  explanation: Under Easton's modified cash basis, revenues are the $380,000 collected and expenses are
+    the $250,000 paid, plus depreciation on the capitalized equipment ($9,000). The equipment purchase
+    itself isn't an expense, and the unpaid wages and the increase in receivables aren't recorded. $380,000
+    − $250,000 − $9,000 = $121,000.
+- stem: 'Fenwick Engineering prepares its financial statements on a modified cash basis: it capitalizes
+    purchases of equipment and depreciates them, and it otherwise records revenues when cash is received
+    and expenses when cash is paid. In Year 3 it collected $720,000 from clients and paid $470,000 of
+    operating expenses. It also paid $90,000 for new equipment in January; depreciation on the equipment
+    for Year 3 is $18,000. At year-end, employees had earned $20,000 of wages that Fenwick will pay in
+    January, Year 4, and client receivables had increased by $35,000 during the year. What excess of revenues
+    over expenses should Fenwick report in its Year 3 statement of revenues and expenses—modified cash
+    basis?'
+  choices:
+  - id: A
+    text: $160,000
+    rationale: Expenses the $90,000 of equipment when paid. Fenwick's modified cash basis capitalizes
+      equipment and depreciates it.
+  - id: B
+    text: $212,000
+    rationale: Accrues the $20,000 of unpaid wages. Under this basis, expenses other than depreciation
+      are recorded when paid.
+  - id: C
+    text: $232,000
+    rationale: Correct. $720,000 − $470,000 − $18,000 depreciation.
+  - id: D
+    text: $250,000
+    rationale: Capitalizes the equipment but records no depreciation. The basis depreciates capitalized
+      equipment.
+  answer: C
+  explanation: Under Fenwick's modified cash basis, revenues are the $720,000 collected and expenses are
+    the $470,000 paid, plus depreciation on the capitalized equipment ($18,000). The equipment purchase
+    itself isn't an expense, and the unpaid wages and the increase in receivables aren't recorded. $720,000
+    − $470,000 − $18,000 = $232,000.
+- stem: 'Grafton Appraisals prepares its financial statements on a modified cash basis: it capitalizes
+    purchases of equipment and depreciates them, and it otherwise records revenues when cash is received
+    and expenses when cash is paid. In Year 3 it collected $260,000 from clients and paid $170,000 of
+    operating expenses. It also paid $40,000 for new equipment in January; depreciation on the equipment
+    for Year 3 is $8,000. At year-end, employees had earned $6,000 of wages that Grafton will pay in January,
+    Year 4, and client receivables had increased by $15,000 during the year. What excess of revenues over
+    expenses should Grafton report in its Year 3 statement of revenues and expenses—modified cash basis?'
+  choices:
+  - id: A
+    text: $50,000
+    rationale: Expenses the $40,000 of equipment when paid. Grafton's modified cash basis capitalizes
+      equipment and depreciates it.
+  - id: B
+    text: $76,000
+    rationale: Accrues the $6,000 of unpaid wages. Under this basis, expenses other than depreciation
+      are recorded when paid.
+  - id: C
+    text: $82,000
+    rationale: Correct. $260,000 − $170,000 − $8,000 depreciation.
+  - id: D
+    text: $91,000
+    rationale: Converts to the accrual basis by adding the $15,000 increase in receivables and accruing
+      the $6,000 of wages. This basis doesn't record receivables or accrued expenses.
+  answer: C
+  explanation: Under Grafton's modified cash basis, revenues are the $260,000 collected and expenses are
+    the $170,000 paid, plus depreciation on the capitalized equipment ($8,000). The equipment purchase
+    itself isn't an expense, and the unpaid wages and the increase in receivables aren't recorded. $260,000
+    − $170,000 − $8,000 = $82,000.

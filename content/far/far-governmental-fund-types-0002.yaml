@@ -1,0 +1,38 @@
+id: far-governmental-fund-types-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Purpose of funds
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - GASB Statement No. 54 (governmental fund type definitions)
+  - GASB Statement No. 84 (fiduciary activities)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A county receives a $2,000,000 gift from a resident's estate. The will requires the county to keep
+  the gift intact and to use only the investment earnings to maintain the county's public cemetery. In
+  which fund should the county report the gift?
+choices:
+- id: A
+  text: A private-purpose trust fund
+  rationale: A private-purpose trust fund holds resources whose earnings benefit individuals, private
+    organizations or other governments. The cemetery is the county's own program.
+- id: B
+  text: A special revenue fund
+  rationale: A special revenue fund reports revenues restricted or committed to a purpose that are spent.
+    Here the principal must be kept intact, so only the earnings can be spent.
+- id: C
+  text: A permanent fund
+  rationale: Correct. A permanent fund reports resources restricted so that only earnings, not principal,
+    may be used, to support the government's own programs.
+- id: D
+  text: A custodial fund
+  rationale: A custodial fund holds resources the government collects for other parties, outside a trust.
+    The county controls this gift and uses it for its own program.
+answer: C
+explanation: Under GASB 54, a permanent fund is a governmental fund for resources that are legally restricted
+  so that only earnings, not principal, may be used for purposes that support the government's own programs,
+  such as a perpetual-care fund for a public cemetery. If the earnings benefited individuals, private
+  organizations or other governments, the gift would be reported in a private-purpose trust fund.

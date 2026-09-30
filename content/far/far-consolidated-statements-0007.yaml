@@ -1,0 +1,126 @@
+id: far-consolidated-statements-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 810-10-45 (elimination of intercompany profit; wholly owned subsidiaries)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Brandt Corp. owns 100% of Cole Inc. During Year 1, Brandt sold Cole goods for $200,000 at its usual
+  price of cost plus 25%, and Cole sold Brandt goods at its usual gross margin of 30% of the selling price.
+  At December 31, Year 1, Cole's inventory of $250,000 includes goods bought from Brandt for $60,000,
+  and Brandt's inventory of $400,000 includes goods bought from Cole for $50,000. In preparing the consolidated
+  balance sheet, what amount should Brandt report as inventory at December 31, Year 1?
+choices:
+- id: A
+  text: $540,000
+  rationale: Removes the full intercompany prices. Only the unrealized profit is eliminated; the goods
+    stay in consolidated inventory at the selling affiliate's cost.
+- id: B
+  text: $620,000
+  rationale: Computes the profit on Brandt's sales as 25% of the $60,000 selling price. A 25% markup on
+    cost is 25/125 of the selling price, or $12,000.
+- id: C
+  text: $623,000
+  rationale: Correct. $650,000 − $12,000 unrealized profit on Brandt's sales − $15,000 on Cole's sales.
+- id: D
+  text: $635,000
+  rationale: Eliminates only the profit on goods Cole sold to Brandt. The unrealized profit on Brandt's
+    sales to its subsidiary is eliminated too.
+answer: C
+explanation: 'Consolidated inventory is carried at the group''s original cost, so the unrealized intercompany
+  profit in ending inventory is eliminated, from both directions when the subsidiary is wholly owned.
+  Goods from Brandt: a 25% markup on cost is 25/125 of the price, so $60,000 × 25/125 = $12,000. Goods
+  from Cole: $50,000 × 30% = $15,000. Inventory = $400,000 + $250,000 − $12,000 − $15,000 = $623,000.
+  The $200,000 of intercompany sales affects the elimination of sales and cost of goods sold, not ending
+  inventory.'
+variants:
+- stem: Dunmore Corp. owns 100% of Ellery Inc. During Year 1, Dunmore sold Ellery goods for $300,000 at
+    its usual price of cost plus 50%, and Ellery sold Dunmore goods at its usual gross margin of 25% of
+    the selling price. At December 31, Year 1, Ellery's inventory of $310,000 includes goods bought from
+    Dunmore for $90,000, and Dunmore's inventory of $520,000 includes goods bought from Ellery for $40,000.
+    In preparing the consolidated balance sheet, what amount should Dunmore report as inventory at December
+    31, Year 1?
+  choices:
+  - id: A
+    text: $790,000
+    rationale: Correct. $830,000 − $30,000 unrealized profit on Dunmore's sales − $10,000 on Ellery's
+      sales.
+  - id: B
+    text: $800,000
+    rationale: Eliminates only the profit on Dunmore's sales to Ellery. Unrealized profit on the subsidiary's
+      sales to the parent is also eliminated in full.
+  - id: C
+    text: $820,000
+    rationale: Eliminates only the profit on goods Ellery sold to Dunmore. The unrealized profit on Dunmore's
+      sales to its subsidiary is eliminated too.
+  - id: D
+    text: $830,000
+    rationale: Adds the two inventories without eliminating the unrealized intercompany profit.
+  answer: A
+  explanation: 'Consolidated inventory is carried at the group''s original cost, so the unrealized intercompany
+    profit in ending inventory is eliminated, from both directions when the subsidiary is wholly owned.
+    Goods from Dunmore: a 50% markup on cost is 50/150 of the price, so $90,000 × 50/150 = $30,000. Goods
+    from Ellery: $40,000 × 25% = $10,000. Inventory = $520,000 + $310,000 − $30,000 − $10,000 = $790,000.
+    The $300,000 of intercompany sales affects the elimination of sales and cost of goods sold, not ending
+    inventory.'
+- stem: Farrow Corp. owns 100% of Gault Inc. During Year 1, Farrow sold Gault goods for $150,000 at its
+    usual price of cost plus 20%, and Gault sold Farrow goods at its usual gross margin of 40% of the
+    selling price. At December 31, Year 1, Gault's inventory of $190,000 includes goods bought from Farrow
+    for $48,000, and Farrow's inventory of $280,000 includes goods bought from Gault for $30,000. In preparing
+    the consolidated balance sheet, what amount should Farrow report as inventory at December 31, Year
+    1?
+  choices:
+  - id: A
+    text: $392,000
+    rationale: Removes the full intercompany prices. Only the unrealized profit is eliminated; the goods
+      stay in consolidated inventory at the selling affiliate's cost.
+  - id: B
+    text: $448,400
+    rationale: Computes the profit on Farrow's sales as 20% of the $48,000 selling price. A 20% markup
+      on cost is 20/120 of the selling price, or $8,000.
+  - id: C
+    text: $450,000
+    rationale: Correct. $470,000 − $8,000 unrealized profit on Farrow's sales − $12,000 on Gault's sales.
+  - id: D
+    text: $470,000
+    rationale: Adds the two inventories without eliminating the unrealized intercompany profit.
+  answer: C
+  explanation: 'Consolidated inventory is carried at the group''s original cost, so the unrealized intercompany
+    profit in ending inventory is eliminated, from both directions when the subsidiary is wholly owned.
+    Goods from Farrow: a 20% markup on cost is 20/120 of the price, so $48,000 × 20/120 = $8,000. Goods
+    from Gault: $30,000 × 40% = $12,000. Inventory = $280,000 + $190,000 − $8,000 − $12,000 = $450,000.
+    The $150,000 of intercompany sales affects the elimination of sales and cost of goods sold, not ending
+    inventory.'
+- stem: Halden Corp. owns 100% of Ives Inc. During Year 1, Halden sold Ives goods for $400,000 at its
+    usual price of cost plus 40%, and Ives sold Halden goods at its usual gross margin of 20% of the selling
+    price. At December 31, Year 1, Ives's inventory of $360,000 includes goods bought from Halden for
+    $84,000, and Halden's inventory of $640,000 includes goods bought from Ives for $70,000. In preparing
+    the consolidated balance sheet, what amount should Halden report as inventory at December 31, Year
+    1?
+  choices:
+  - id: A
+    text: $846,000
+    rationale: Removes the full intercompany prices. Only the unrealized profit is eliminated; the goods
+      stay in consolidated inventory at the selling affiliate's cost.
+  - id: B
+    text: $962,000
+    rationale: Correct. $1,000,000 − $24,000 unrealized profit on Halden's sales − $14,000 on Ives's sales.
+  - id: C
+    text: $986,000
+    rationale: Eliminates only the profit on goods Ives sold to Halden. The unrealized profit on Halden's
+      sales to its subsidiary is eliminated too.
+  - id: D
+    text: $1,000,000
+    rationale: Adds the two inventories without eliminating the unrealized intercompany profit.
+  answer: B
+  explanation: 'Consolidated inventory is carried at the group''s original cost, so the unrealized intercompany
+    profit in ending inventory is eliminated, from both directions when the subsidiary is wholly owned.
+    Goods from Halden: a 40% markup on cost is 40/140 of the price, so $84,000 × 40/140 = $24,000. Goods
+    from Ives: $70,000 × 20% = $14,000. Inventory = $640,000 + $360,000 − $24,000 − $14,000 = $962,000.
+    The $400,000 of intercompany sales affects the elimination of sales and cost of goods sold, not ending
+    inventory.'

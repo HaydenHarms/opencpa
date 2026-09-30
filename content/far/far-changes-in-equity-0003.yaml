@@ -1,0 +1,132 @@
+id: far-changes-in-equity-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 505-10 (equity)
+  - ASC 505-20 (stock dividends)
+  - ASC 505-30 (treasury stock)
+  - ASC 220-10 (other comprehensive income)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Marston Inc.'s total stockholders' equity was $2,400,000 at January 1, Year 2. During Year 2, Marston
+  reported net income of $350,000; declared cash dividends of $90,000, of which $60,000 had been paid
+  by December 31; distributed a 10% stock dividend when the shares distributed had a fair value of $150,000;
+  bought treasury shares for $120,000 and later reissued treasury shares that had cost $60,000 for $75,000;
+  reported other comprehensive income of $25,000, net of tax, from an unrealized holding gain on available-for-sale
+  debt securities; and issued new common shares for $180,000 in cash. What total stockholders' equity
+  should Marston report at December 31, Year 2?
+choices:
+- id: A
+  text: $2,670,000
+  rationale: Subtracts the $150,000 stock dividend. A stock dividend moves amounts from retained earnings
+    to paid-in capital and doesn't change total equity.
+- id: B
+  text: $2,795,000
+  rationale: Leaves out the $25,000 of other comprehensive income. It isn't in net income, but it increases
+    accumulated other comprehensive income, part of equity.
+- id: C
+  text: $2,820,000
+  rationale: Correct. $2,400,000 + $350,000 − $90,000 − $120,000 + $75,000 + $25,000 + $180,000.
+- id: D
+  text: $2,850,000
+  rationale: Subtracts only the $60,000 of dividends paid. Equity falls by the full $90,000 declared;
+    the unpaid part is a liability.
+answer: C
+explanation: Total equity rises by net income ($350,000), other comprehensive income ($25,000), the $180,000
+  share issuance and the $75,000 received on reissuing treasury shares. It falls by dividends declared
+  ($90,000; whether paid doesn't matter) and the $120,000 treasury share purchase. The stock dividend
+  only reclassifies amounts within equity. $2,400,000 + $350,000 − $90,000 − $120,000 + $75,000 + $25,000
+  + $180,000 = $2,820,000.
+variants:
+- stem: Norwell Inc.'s total stockholders' equity was $1,800,000 at January 1, Year 2. During Year 2,
+    Norwell reported net income of $240,000; declared cash dividends of $70,000, of which $35,000 had
+    been paid by December 31; distributed a 10% stock dividend when the shares distributed had a fair
+    value of $110,000; bought treasury shares for $90,000 and later reissued treasury shares that had
+    cost $50,000 for $64,000; reported other comprehensive income of $18,000, net of tax, from an unrealized
+    holding gain on available-for-sale debt securities; and issued new common shares for $150,000 in cash.
+    What total stockholders' equity should Norwell report at December 31, Year 2?
+  choices:
+  - id: A
+    text: $2,002,000
+    rationale: Subtracts the $110,000 stock dividend. A stock dividend moves amounts from retained earnings
+      to paid-in capital and doesn't change total equity.
+  - id: B
+    text: $2,094,000
+    rationale: Leaves out the $18,000 of other comprehensive income. It isn't in net income, but it increases
+      accumulated other comprehensive income, part of equity.
+  - id: C
+    text: $2,098,000
+    rationale: Adds back only the $50,000 cost of the reissued treasury shares. Equity increases by the
+      full $64,000 received.
+  - id: D
+    text: $2,112,000
+    rationale: Correct. $1,800,000 + $240,000 − $70,000 − $90,000 + $64,000 + $18,000 + $150,000.
+  answer: D
+  explanation: Total equity rises by net income ($240,000), other comprehensive income ($18,000), the
+    $150,000 share issuance and the $64,000 received on reissuing treasury shares. It falls by dividends
+    declared ($70,000; whether paid doesn't matter) and the $90,000 treasury share purchase. The stock
+    dividend only reclassifies amounts within equity. $1,800,000 + $240,000 − $70,000 − $90,000 + $64,000
+    + $18,000 + $150,000 = $2,112,000.
+- stem: Oakridge Inc.'s total stockholders' equity was $3,600,000 at January 1, Year 2. During Year 2,
+    Oakridge reported net income of $520,000; declared cash dividends of $150,000, of which $100,000 had
+    been paid by December 31; distributed a 10% stock dividend when the shares distributed had a fair
+    value of $260,000; bought treasury shares for $200,000 and later reissued treasury shares that had
+    cost $120,000 for $138,000; reported other comprehensive income of $40,000, net of tax, from an unrealized
+    holding gain on available-for-sale debt securities; and issued new common shares for $300,000 in cash.
+    What total stockholders' equity should Oakridge report at December 31, Year 2?
+  choices:
+  - id: A
+    text: $3,988,000
+    rationale: Subtracts the $260,000 stock dividend. A stock dividend moves amounts from retained earnings
+      to paid-in capital and doesn't change total equity.
+  - id: B
+    text: $4,230,000
+    rationale: Adds back only the $120,000 cost of the reissued treasury shares. Equity increases by the
+      full $138,000 received.
+  - id: C
+    text: $4,248,000
+    rationale: Correct. $3,600,000 + $520,000 − $150,000 − $200,000 + $138,000 + $40,000 + $300,000.
+  - id: D
+    text: $4,298,000
+    rationale: Subtracts only the $100,000 of dividends paid. Equity falls by the full $150,000 declared;
+      the unpaid part is a liability.
+  answer: C
+  explanation: Total equity rises by net income ($520,000), other comprehensive income ($40,000), the
+    $300,000 share issuance and the $138,000 received on reissuing treasury shares. It falls by dividends
+    declared ($150,000; whether paid doesn't matter) and the $200,000 treasury share purchase. The stock
+    dividend only reclassifies amounts within equity. $3,600,000 + $520,000 − $150,000 − $200,000 + $138,000
+    + $40,000 + $300,000 = $4,248,000.
+- stem: Pembury Inc.'s total stockholders' equity was $950,000 at January 1, Year 2. During Year 2, Pembury
+    reported net income of $160,000; declared cash dividends of $45,000, of which $30,000 had been paid
+    by December 31; distributed a 10% stock dividend when the shares distributed had a fair value of $80,000;
+    bought treasury shares for $60,000 and later reissued treasury shares that had cost $30,000 for $41,000;
+    reported other comprehensive income of $12,000, net of tax, from an unrealized holding gain on available-for-sale
+    debt securities; and issued new common shares for $100,000 in cash. What total stockholders' equity
+    should Pembury report at December 31, Year 2?
+  choices:
+  - id: A
+    text: $1,078,000
+    rationale: Subtracts the $80,000 stock dividend. A stock dividend moves amounts from retained earnings
+      to paid-in capital and doesn't change total equity.
+  - id: B
+    text: $1,146,000
+    rationale: Leaves out the $12,000 of other comprehensive income. It isn't in net income, but it increases
+      accumulated other comprehensive income, part of equity.
+  - id: C
+    text: $1,158,000
+    rationale: Correct. $950,000 + $160,000 − $45,000 − $60,000 + $41,000 + $12,000 + $100,000.
+  - id: D
+    text: $1,173,000
+    rationale: Subtracts only the $30,000 of dividends paid. Equity falls by the full $45,000 declared;
+      the unpaid part is a liability.
+  answer: C
+  explanation: Total equity rises by net income ($160,000), other comprehensive income ($12,000), the
+    $100,000 share issuance and the $41,000 received on reissuing treasury shares. It falls by dividends
+    declared ($45,000; whether paid doesn't matter) and the $60,000 treasury share purchase. The stock
+    dividend only reclassifies amounts within equity. $950,000 + $160,000 − $45,000 − $60,000 + $41,000
+    + $12,000 + $100,000 = $1,158,000.

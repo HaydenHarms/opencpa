@@ -1,0 +1,126 @@
+id: far-ppe-rollforward-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 360-10 (property, plant and equipment)
+  - ASC 230-10-50 (noncash investing and financing activities)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Ormond Co.'s equipment rollforward for Year 2 shows gross equipment of $2,000,000 at January 1 and
+  $2,260,000 at December 31, and accumulated depreciation of $800,000 at January 1 and $870,000 at December
+  31. During the year, Ormond sold equipment that cost $180,000, with accumulated depreciation of $140,000,
+  for $55,000 in cash, and acquired equipment costing $90,000 by signing a note payable to the seller.
+  All other acquisitions were paid in cash. What amount should Ormond report as cash paid to purchase
+  equipment in the investing section of its Year 2 statement of cash flows?
+choices:
+- id: A
+  text: $170,000
+  rationale: Ignores the equipment sold. Its $180,000 cost left the account, so purchases exceed the net
+    increase.
+- id: B
+  text: $210,000
+  rationale: Adds back the carrying amount of the equipment sold ($40,000) instead of its cost. The gross
+    equipment account removes cost.
+- id: C
+  text: $350,000
+  rationale: Correct. $2,260,000 − $2,000,000 + $180,000 cost of equipment sold − $90,000 bought with
+    a note.
+- id: D
+  text: $440,000
+  rationale: Includes the $90,000 of equipment bought with a note. A noncash acquisition is disclosed,
+    not reported as an investing cash outflow.
+answer: C
+explanation: 'Gross equipment: $2,000,000 + acquisitions − $180,000 cost of equipment sold = $2,260,000,
+  so acquisitions were $440,000. Of those, $90,000 was bought with a note, a noncash investing activity
+  disclosed separately. Cash paid = $440,000 − $90,000 = $350,000. The accumulated depreciation figures
+  aren''t needed for this amount.'
+variants:
+- stem: Pelham Co.'s equipment rollforward for Year 2 shows gross equipment of $3,500,000 at January 1
+    and $3,820,000 at December 31, and accumulated depreciation of $1,400,000 at January 1 and $1,510,000
+    at December 31. During the year, Pelham sold equipment that cost $260,000, with accumulated depreciation
+    of $190,000, for $85,000 in cash, and acquired equipment costing $150,000 by signing a note payable
+    to the seller. All other acquisitions were paid in cash. What amount should Pelham report as cash
+    paid to purchase equipment in the investing section of its Year 2 statement of cash flows?
+  choices:
+  - id: A
+    text: $170,000
+    rationale: Ignores the equipment sold. Its $260,000 cost left the account, so purchases exceed the
+      net increase.
+  - id: B
+    text: $345,000
+    rationale: Nets the $85,000 of sale proceeds against the purchases. The proceeds are a separate investing
+      inflow.
+  - id: C
+    text: $430,000
+    rationale: Correct. $3,820,000 − $3,500,000 + $260,000 cost of equipment sold − $150,000 bought with
+      a note.
+  - id: D
+    text: $580,000
+    rationale: Includes the $150,000 of equipment bought with a note. A noncash acquisition is disclosed,
+      not reported as an investing cash outflow.
+  answer: C
+  explanation: 'Gross equipment: $3,500,000 + acquisitions − $260,000 cost of equipment sold = $3,820,000,
+    so acquisitions were $580,000. Of those, $150,000 was bought with a note, a noncash investing activity
+    disclosed separately. Cash paid = $580,000 − $150,000 = $430,000. The accumulated depreciation figures
+    aren''t needed for this amount.'
+- stem: Quenby Co.'s equipment rollforward for Year 2 shows gross equipment of $1,200,000 at January 1
+    and $1,350,000 at December 31, and accumulated depreciation of $450,000 at January 1 and $500,000
+    at December 31. During the year, Quenby sold equipment that cost $110,000, with accumulated depreciation
+    of $80,000, for $35,000 in cash, and acquired equipment costing $60,000 by signing a note payable
+    to the seller. All other acquisitions were paid in cash. What amount should Quenby report as cash
+    paid to purchase equipment in the investing section of its Year 2 statement of cash flows?
+  choices:
+  - id: A
+    text: $120,000
+    rationale: Adds back the carrying amount of the equipment sold ($30,000) instead of its cost. The
+      gross equipment account removes cost.
+  - id: B
+    text: $165,000
+    rationale: Nets the $35,000 of sale proceeds against the purchases. The proceeds are a separate investing
+      inflow.
+  - id: C
+    text: $200,000
+    rationale: Correct. $1,350,000 − $1,200,000 + $110,000 cost of equipment sold − $60,000 bought with
+      a note.
+  - id: D
+    text: $260,000
+    rationale: Includes the $60,000 of equipment bought with a note. A noncash acquisition is disclosed,
+      not reported as an investing cash outflow.
+  answer: C
+  explanation: 'Gross equipment: $1,200,000 + acquisitions − $110,000 cost of equipment sold = $1,350,000,
+    so acquisitions were $260,000. Of those, $60,000 was bought with a note, a noncash investing activity
+    disclosed separately. Cash paid = $260,000 − $60,000 = $200,000. The accumulated depreciation figures
+    aren''t needed for this amount.'
+- stem: Radley Co.'s equipment rollforward for Year 2 shows gross equipment of $5,600,000 at January 1
+    and $6,100,000 at December 31, and accumulated depreciation of $2,200,000 at January 1 and $2,380,000
+    at December 31. During the year, Radley sold equipment that cost $420,000, with accumulated depreciation
+    of $310,000, for $140,000 in cash, and acquired equipment costing $240,000 by signing a note payable
+    to the seller. All other acquisitions were paid in cash. What amount should Radley report as cash
+    paid to purchase equipment in the investing section of its Year 2 statement of cash flows?
+  choices:
+  - id: A
+    text: $260,000
+    rationale: Ignores the equipment sold. Its $420,000 cost left the account, so purchases exceed the
+      net increase.
+  - id: B
+    text: $370,000
+    rationale: Adds back the carrying amount of the equipment sold ($110,000) instead of its cost. The
+      gross equipment account removes cost.
+  - id: C
+    text: $540,000
+    rationale: Nets the $140,000 of sale proceeds against the purchases. The proceeds are a separate investing
+      inflow.
+  - id: D
+    text: $680,000
+    rationale: Correct. $6,100,000 − $5,600,000 + $420,000 cost of equipment sold − $240,000 bought with
+      a note.
+  answer: D
+  explanation: 'Gross equipment: $5,600,000 + acquisitions − $420,000 cost of equipment sold = $6,100,000,
+    so acquisitions were $920,000. Of those, $240,000 was bought with a note, a noncash investing activity
+    disclosed separately. Cash paid = $920,000 − $240,000 = $680,000. The accumulated depreciation figures
+    aren''t needed for this amount.'

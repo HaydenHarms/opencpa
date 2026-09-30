@@ -1,0 +1,107 @@
+id: far-ratios-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Financial statement analysis: return on common stockholders'' equity'
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Ashford Corp. reports Year 2 net income of $600,000. Its total stockholders' equity was $5,000,000
+  at January 1 and $5,400,000 at December 31. Both amounts include $1,000,000 of 6% cumulative, nonconvertible
+  preferred stock that was outstanding all year, and Ashford declared and paid the full year's preferred
+  dividend. What was Ashford's return on common stockholders' equity for Year 2, based on average common
+  equity?
+choices:
+- id: A
+  text: 10.4%
+  rationale: Divides by average total equity, including the $1,000,000 of preferred stock. The denominator
+    is common equity only.
+- id: B
+  text: 12.3%
+  rationale: Divides by ending common equity instead of the average for the year.
+- id: C
+  text: 12.9%
+  rationale: Correct. ($600,000 − $60,000) ÷ $4,200,000.
+- id: D
+  text: 14.3%
+  rationale: Doesn't subtract the $60,000 preferred dividend. Return on common equity uses income available
+    to common stockholders.
+answer: C
+explanation: Income available to common stockholders = $600,000 − $60,000 preferred dividend (6% × $1,000,000)
+  = $540,000. Average common equity = ($5,000,000 + $5,400,000) ÷ 2 − $1,000,000 preferred = $4,200,000.
+  Return on common equity = $540,000 ÷ $4,200,000 = 12.9%.
+variants:
+- stem: Bexley Corp. reports Year 2 net income of $450,000. Its total stockholders' equity was $3,200,000
+    at January 1 and $3,600,000 at December 31. Both amounts include $500,000 of 8% cumulative, nonconvertible
+    preferred stock that was outstanding all year, and Bexley declared and paid the full year's preferred
+    dividend. What was Bexley's return on common stockholders' equity for Year 2, based on average common
+    equity?
+  choices:
+  - id: A
+    text: 12.1%
+    rationale: Divides by average total equity, including the $500,000 of preferred stock. The denominator
+      is common equity only.
+  - id: B
+    text: 13.2%
+    rationale: Divides net income by average total equity, which is return on total equity.
+  - id: C
+    text: 14.1%
+    rationale: Correct. ($450,000 − $40,000) ÷ $2,900,000.
+  - id: D
+    text: 15.5%
+    rationale: Doesn't subtract the $40,000 preferred dividend. Return on common equity uses income available
+      to common stockholders.
+  answer: C
+  explanation: Income available to common stockholders = $450,000 − $40,000 preferred dividend (8% × $500,000)
+    = $410,000. Average common equity = ($3,200,000 + $3,600,000) ÷ 2 − $500,000 preferred = $2,900,000.
+    Return on common equity = $410,000 ÷ $2,900,000 = 14.1%.
+- stem: Cardew Corp. reports Year 2 net income of $900,000. Its total stockholders' equity was $8,000,000
+    at January 1 and $8,600,000 at December 31. Both amounts include $2,000,000 of 5% cumulative, nonconvertible
+    preferred stock that was outstanding all year, and Cardew declared and paid the full year's preferred
+    dividend. What was Cardew's return on common stockholders' equity for Year 2, based on average common
+    equity?
+  choices:
+  - id: A
+    text: 10.8%
+    rationale: Divides net income by average total equity, which is return on total equity.
+  - id: B
+    text: 12.1%
+    rationale: Divides by ending common equity instead of the average for the year.
+  - id: C
+    text: 12.7%
+    rationale: Correct. ($900,000 − $100,000) ÷ $6,300,000.
+  - id: D
+    text: 14.3%
+    rationale: Doesn't subtract the $100,000 preferred dividend. Return on common equity uses income available
+      to common stockholders.
+  answer: C
+  explanation: Income available to common stockholders = $900,000 − $100,000 preferred dividend (5% ×
+    $2,000,000) = $800,000. Average common equity = ($8,000,000 + $8,600,000) ÷ 2 − $2,000,000 preferred
+    = $6,300,000. Return on common equity = $800,000 ÷ $6,300,000 = 12.7%.
+- stem: Dalby Corp. reports Year 2 net income of $280,000. Its total stockholders' equity was $2,100,000
+    at January 1 and $2,300,000 at December 31. Both amounts include $400,000 of 7% cumulative, nonconvertible
+    preferred stock that was outstanding all year, and Dalby declared and paid the full year's preferred
+    dividend. What was Dalby's return on common stockholders' equity for Year 2, based on average common
+    equity?
+  choices:
+  - id: A
+    text: 11.5%
+    rationale: Divides by average total equity, including the $400,000 of preferred stock. The denominator
+      is common equity only.
+  - id: B
+    text: 12.7%
+    rationale: Divides net income by average total equity, which is return on total equity.
+  - id: C
+    text: 13.3%
+    rationale: Divides by ending common equity instead of the average for the year.
+  - id: D
+    text: 14.0%
+    rationale: Correct. ($280,000 − $28,000) ÷ $1,800,000.
+  answer: D
+  explanation: Income available to common stockholders = $280,000 − $28,000 preferred dividend (7% × $400,000)
+    = $252,000. Average common equity = ($2,100,000 + $2,300,000) ÷ 2 − $400,000 preferred = $1,800,000.
+    Return on common equity = $252,000 ÷ $1,800,000 = 14.0%.

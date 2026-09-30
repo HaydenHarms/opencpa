@@ -1,0 +1,114 @@
+id: far-inventory-reconciliation-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory; LIFO reserve)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Kerrigan Co. keeps its perpetual inventory subledger at FIFO cost and reports inventory at LIFO,
+  recording the difference in a LIFO reserve account. At December 31, the subledger totals $840,000, and
+  the general ledger inventory account, which is also kept at FIFO, shows $803,000. The controller finds
+  that goods costing $26,000 received on December 29 are in the subledger but the supplier's invoice was
+  never posted to the general ledger, and that goods costing $11,000 returned to a supplier on December
+  30 were recorded in the general ledger but not in the subledger. The LIFO reserve was $110,000 at January
+  1, and Kerrigan's LIFO calculation requires a reserve of $135,000 at December 31. What amount should
+  Kerrigan report as inventory at December 31?
+choices:
+- id: A
+  text: $668,000
+  rationale: Uses the general ledger balance without posting the $26,000 December 29 receipt.
+- id: B
+  text: $694,000
+  rationale: Correct. ($840,000 − $11,000) − $135,000 LIFO reserve.
+- id: C
+  text: $705,000
+  rationale: Doesn't remove the $11,000 of returned goods from the subledger amount.
+- id: D
+  text: $829,000
+  rationale: Reports the corrected FIFO cost. The $135,000 LIFO reserve reduces it to LIFO.
+answer: B
+explanation: 'Corrected FIFO cost: subledger $840,000 − $11,000 return = $829,000; general ledger $803,000
+  + $26,000 receipt = $829,000. The balance sheet reports LIFO: $829,000 − $135,000 reserve = $694,000.'
+variants:
+- stem: Lomax Co. keeps its perpetual inventory subledger at FIFO cost and reports inventory at LIFO,
+    recording the difference in a LIFO reserve account. At December 31, the subledger totals $1,260,000,
+    and the general ledger inventory account, which is also kept at FIFO, shows $1,205,000. The controller
+    finds that goods costing $38,000 received on December 29 are in the subledger but the supplier's invoice
+    was never posted to the general ledger, and that goods costing $17,000 returned to a supplier on December
+    30 were recorded in the general ledger but not in the subledger. The LIFO reserve was $165,000 at
+    January 1, and Lomax's LIFO calculation requires a reserve of $190,000 at December 31. What amount
+    should Lomax report as inventory at December 31?
+  choices:
+  - id: A
+    text: $1,015,000
+    rationale: Uses the general ledger balance without posting the $38,000 December 29 receipt.
+  - id: B
+    text: $1,053,000
+    rationale: Correct. ($1,260,000 − $17,000) − $190,000 LIFO reserve.
+  - id: C
+    text: $1,070,000
+    rationale: Doesn't remove the $17,000 of returned goods from the subledger amount.
+  - id: D
+    text: $1,218,000
+    rationale: Subtracts only this year's $25,000 change in the reserve. The balance sheet deducts the
+      whole reserve.
+  answer: B
+  explanation: 'Corrected FIFO cost: subledger $1,260,000 − $17,000 return = $1,243,000; general ledger
+    $1,205,000 + $38,000 receipt = $1,243,000. The balance sheet reports LIFO: $1,243,000 − $190,000 reserve
+    = $1,053,000.'
+- stem: Merriman Co. keeps its perpetual inventory subledger at FIFO cost and reports inventory at LIFO,
+    recording the difference in a LIFO reserve account. At December 31, the subledger totals $565,000,
+    and the general ledger inventory account, which is also kept at FIFO, shows $538,000. The controller
+    finds that goods costing $19,000 received on December 29 are in the subledger but the supplier's invoice
+    was never posted to the general ledger, and that goods costing $8,000 returned to a supplier on December
+    30 were recorded in the general ledger but not in the subledger. The LIFO reserve was $72,000 at January
+    1, and Merriman's LIFO calculation requires a reserve of $88,000 at December 31. What amount should
+    Merriman report as inventory at December 31?
+  choices:
+  - id: A
+    text: $450,000
+    rationale: Uses the general ledger balance without posting the $19,000 December 29 receipt.
+  - id: B
+    text: $469,000
+    rationale: Correct. ($565,000 − $8,000) − $88,000 LIFO reserve.
+  - id: C
+    text: $541,000
+    rationale: Subtracts only this year's $16,000 change in the reserve. The balance sheet deducts the
+      whole reserve.
+  - id: D
+    text: $557,000
+    rationale: Reports the corrected FIFO cost. The $88,000 LIFO reserve reduces it to LIFO.
+  answer: B
+  explanation: 'Corrected FIFO cost: subledger $565,000 − $8,000 return = $557,000; general ledger $538,000
+    + $19,000 receipt = $557,000. The balance sheet reports LIFO: $557,000 − $88,000 reserve = $469,000.'
+- stem: Northam Co. keeps its perpetual inventory subledger at FIFO cost and reports inventory at LIFO,
+    recording the difference in a LIFO reserve account. At December 31, the subledger totals $2,140,000,
+    and the general ledger inventory account, which is also kept at FIFO, shows $2,063,000. The controller
+    finds that goods costing $54,000 received on December 29 are in the subledger but the supplier's invoice
+    was never posted to the general ledger, and that goods costing $23,000 returned to a supplier on December
+    30 were recorded in the general ledger but not in the subledger. The LIFO reserve was $260,000 at
+    January 1, and Northam's LIFO calculation requires a reserve of $305,000 at December 31. What amount
+    should Northam report as inventory at December 31?
+  choices:
+  - id: A
+    text: $1,812,000
+    rationale: Correct. ($2,140,000 − $23,000) − $305,000 LIFO reserve.
+  - id: B
+    text: $1,835,000
+    rationale: Doesn't remove the $23,000 of returned goods from the subledger amount.
+  - id: C
+    text: $2,072,000
+    rationale: Subtracts only this year's $45,000 change in the reserve. The balance sheet deducts the
+      whole reserve.
+  - id: D
+    text: $2,117,000
+    rationale: Reports the corrected FIFO cost. The $305,000 LIFO reserve reduces it to LIFO.
+  answer: A
+  explanation: 'Corrected FIFO cost: subledger $2,140,000 − $23,000 return = $2,117,000; general ledger
+    $2,063,000 + $54,000 receipt = $2,117,000. The balance sheet reports LIFO: $2,117,000 − $305,000 reserve
+    = $1,812,000.'

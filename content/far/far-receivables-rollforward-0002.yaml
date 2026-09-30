@@ -1,0 +1,119 @@
+id: far-receivables-rollforward-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 326-20 (allowance for credit losses; write-offs and recoveries)
+  - ASC 310-10 (receivables)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Linwood Co. is preparing rollforwards of its trade receivables and its allowance for credit losses
+  for Year 2. Per the aged subledger, accounts receivable were $400,000 at January 1 and $436,000 at December
+  31. Credit sales were $2,000,000. Cash collected from customers was $1,940,000, which includes $4,000
+  received on accounts written off in earlier years; Linwood reinstates such an account before recording
+  the collection. The allowance was $30,000 at January 1, and Linwood's expected credit loss estimate
+  requires a balance of $36,000 at December 31. The year's write-offs are not separately recorded in the
+  rollforward schedules. What credit loss expense should Linwood record for Year 2?
+choices:
+- id: A
+  text: $26,000
+  rationale: Leaves the reinstatements out of the receivables rollforward, so write-offs come out $4,000
+    too low ($24,000).
+- id: B
+  text: $30,000
+  rationale: Correct. Write-offs $28,000; expense = $36,000 − $30,000 + $28,000 − $4,000.
+- id: C
+  text: $34,000
+  rationale: Ignores the $4,000 of recoveries in the allowance rollforward. Reinstating a written-off
+    account credits the allowance.
+- id: D
+  text: $36,000
+  rationale: Uses the required $36,000 ending allowance as the expense, ignoring the balance already in
+    the allowance.
+answer: B
+explanation: 'Receivables rollforward: $400,000 + $2,000,000 credit sales + $4,000 reinstated − $1,940,000
+  collected − write-offs = $436,000, so write-offs are $28,000. Allowance rollforward: $30,000 − $28,000
+  write-offs + $4,000 recoveries + expense = $36,000, so credit loss expense is $30,000.'
+variants:
+- stem: Mayfield Co. is preparing rollforwards of its trade receivables and its allowance for credit losses
+    for Year 2. Per the aged subledger, accounts receivable were $620,000 at January 1 and $662,000 at
+    December 31. Credit sales were $3,400,000. Cash collected from customers was $3,310,000, which includes
+    $7,000 received on accounts written off in earlier years; Mayfield reinstates such an account before
+    recording the collection. The allowance was $45,000 at January 1, and Mayfield's expected credit loss
+    estimate requires a balance of $60,000 at December 31. The year's write-offs are not separately recorded
+    in the rollforward schedules. What credit loss expense should Mayfield record for Year 2?
+  choices:
+  - id: A
+    text: $55,000
+    rationale: Uses the $55,000 of write-offs as the expense, which is the direct write-off method.
+  - id: B
+    text: $60,000
+    rationale: Uses the required $60,000 ending allowance as the expense, ignoring the balance already
+      in the allowance.
+  - id: C
+    text: $63,000
+    rationale: Correct. Write-offs $55,000; expense = $60,000 − $45,000 + $55,000 − $7,000.
+  - id: D
+    text: $70,000
+    rationale: Ignores the $7,000 of recoveries in the allowance rollforward. Reinstating a written-off
+      account credits the allowance.
+  answer: C
+  explanation: 'Receivables rollforward: $620,000 + $3,400,000 credit sales + $7,000 reinstated − $3,310,000
+    collected − write-offs = $662,000, so write-offs are $55,000. Allowance rollforward: $45,000 − $55,000
+    write-offs + $7,000 recoveries + expense = $60,000, so credit loss expense is $63,000.'
+- stem: Newbury Co. is preparing rollforwards of its trade receivables and its allowance for credit losses
+    for Year 2. Per the aged subledger, accounts receivable were $280,000 at January 1 and $295,000 at
+    December 31. Credit sales were $1,500,000. Cash collected from customers was $1,462,000, which includes
+    $3,000 received on accounts written off in earlier years; Newbury reinstates such an account before
+    recording the collection. The allowance was $21,000 at January 1, and Newbury's expected credit loss
+    estimate requires a balance of $26,000 at December 31. The year's write-offs are not separately recorded
+    in the rollforward schedules. What credit loss expense should Newbury record for Year 2?
+  choices:
+  - id: A
+    text: $25,000
+    rationale: Leaves the reinstatements out of the receivables rollforward, so write-offs come out $3,000
+      too low ($23,000).
+  - id: B
+    text: $26,000
+    rationale: Uses the $26,000 of write-offs as the expense, which is the direct write-off method.
+  - id: C
+    text: $28,000
+    rationale: Correct. Write-offs $26,000; expense = $26,000 − $21,000 + $26,000 − $3,000.
+  - id: D
+    text: $31,000
+    rationale: Ignores the $3,000 of recoveries in the allowance rollforward. Reinstating a written-off
+      account credits the allowance.
+  answer: C
+  explanation: 'Receivables rollforward: $280,000 + $1,500,000 credit sales + $3,000 reinstated − $1,462,000
+    collected − write-offs = $295,000, so write-offs are $26,000. Allowance rollforward: $21,000 − $26,000
+    write-offs + $3,000 recoveries + expense = $26,000, so credit loss expense is $28,000.'
+- stem: Orland Co. is preparing rollforwards of its trade receivables and its allowance for credit losses
+    for Year 2. Per the aged subledger, accounts receivable were $900,000 at January 1 and $968,000 at
+    December 31. Credit sales were $5,200,000. Cash collected from customers was $5,080,000, which includes
+    $12,000 received on accounts written off in earlier years; Orland reinstates such an account before
+    recording the collection. The allowance was $70,000 at January 1, and Orland's expected credit loss
+    estimate requires a balance of $84,000 at December 31. The year's write-offs are not separately recorded
+    in the rollforward schedules. What credit loss expense should Orland record for Year 2?
+  choices:
+  - id: A
+    text: $54,000
+    rationale: Leaves the reinstatements out of the receivables rollforward, so write-offs come out $12,000
+      too low ($52,000).
+  - id: B
+    text: $64,000
+    rationale: Uses the $64,000 of write-offs as the expense, which is the direct write-off method.
+  - id: C
+    text: $66,000
+    rationale: Correct. Write-offs $64,000; expense = $84,000 − $70,000 + $64,000 − $12,000.
+  - id: D
+    text: $84,000
+    rationale: Uses the required $84,000 ending allowance as the expense, ignoring the balance already
+      in the allowance.
+  answer: C
+  explanation: 'Receivables rollforward: $900,000 + $5,200,000 credit sales + $12,000 reinstated − $5,080,000
+    collected − write-offs = $968,000, so write-offs are $64,000. Allowance rollforward: $70,000 − $64,000
+    write-offs + $12,000 recoveries + expense = $84,000, so credit loss expense is $66,000.'

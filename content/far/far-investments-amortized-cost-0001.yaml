@@ -1,0 +1,37 @@
+id: far-investments-amortized-cost-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at amortized cost)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 320-10-25 (classification of debt securities)
+  - ASC 321-10-35 (equity securities without readily determinable fair values)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Which of the following investments may an entity report at amortized cost?
+choices:
+- id: A
+  text: A debt security the entity may sell if interest rates change or it needs cash
+  rationale: Available-for-sale. A debt security that may be sold before maturity is reported at fair
+    value, with unrealized holding gains and losses in other comprehensive income.
+- id: B
+  text: A debt security bought for a portfolio traded to profit from short-term price changes
+  rationale: Trading. Trading debt securities are reported at fair value, with changes in net income.
+- id: C
+  text: Common shares of a private company with no readily determinable fair value
+  rationale: 'Equity securities are never reported at amortized cost. Without a readily determinable fair
+    value, the entity may use the measurement alternative: cost less impairment, adjusted for observable
+    price changes.'
+- id: D
+  text: A debt security the entity has the positive intent and ability to hold until it matures
+  rationale: Correct. A debt security classified as held to maturity is reported at amortized cost, less
+    an allowance for credit losses.
+answer: D
+explanation: 'Only debt securities can be reported at amortized cost, and only when classified as held
+  to maturity: the entity must have the positive intent and ability to hold them to maturity. Debt securities
+  that may be sold are available-for-sale, and those bought for short-term trading are trading securities;
+  both are reported at fair value. Equity securities are reported at fair value, or under the measurement
+  alternative when no readily determinable fair value exists.'

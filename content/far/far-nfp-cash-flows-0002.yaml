@@ -1,0 +1,35 @@
+id: far-nfp-cash-flows-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows (Not-for-Profit)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 958-230-45 (contributions restricted for long-term purposes are financing activities)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: In a nongovernmental not-for-profit entity's statement of cash flows, how is a cash gift that a
+  donor has restricted to constructing a building reported?
+choices:
+- id: A
+  text: As a cash inflow from operating activities
+  rationale: Unrestricted contributions and gifts restricted to current operations are operating inflows.
+    A gift restricted to acquiring long-lived assets is a financing inflow.
+- id: B
+  text: As a cash inflow from financing activities
+  rationale: Correct. Cash contributions that donors restrict to long-term purposes, such as acquiring
+    or constructing long-lived assets or establishing an endowment, are financing inflows.
+- id: C
+  text: As a cash inflow from investing activities
+  rationale: Investing activities include buying and selling the building itself, not receiving a gift
+    restricted to its construction.
+- id: D
+  text: Only in a note, as a noncash activity, until the building is built
+  rationale: The gift was received in cash, so it is a cash inflow when received. Only noncash gifts,
+    such as donated land, are disclosed as noncash activities.
+answer: B
+explanation: Under ASC 958-230, receipts of cash contributions that donors restrict to long-term purposes
+  (acquiring, constructing or improving long-lived assets, or establishing or increasing an endowment)
+  are financing activities. The payments to build the building are investing outflows.

@@ -1,0 +1,120 @@
+id: far-cash-bank-reconciliation-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Proof of cash (four-column bank reconciliation) practice
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Garnet Co. prepares a proof of cash for June. The bank statement shows June deposits and other credits
+  of $85,000. Deposits in transit were $4,000 at May 31 and $6,500 at June 30. The June bank credits include
+  $1,200 from a note receivable that the bank collected for Garnet, which Garnet hasn't recorded, and
+  a $500 deposit of another company that the bank credited to Garnet's account in error. Garnet's cash
+  receipts journal shows June receipts of $85,800. What are Garnet's correct cash receipts for June?
+choices:
+- id: A
+  text: $82,000
+  rationale: 'Reverses the deposit-in-transit adjustments: May''s deposit in transit is subtracted from
+    June''s bank credits and June''s is added.'
+- id: B
+  text: $84,500
+  rationale: Ignores the deposits in transit. May's $4,000 reached the bank in June but is a May receipt,
+    and June's $6,500 is a June receipt the bank hasn't recorded.
+- id: C
+  text: $87,000
+  rationale: Correct. $85,000 − $4,000 + $6,500 − $500, which equals $85,800 per books + $1,200 note collection.
+- id: D
+  text: $87,500
+  rationale: Leaves in the $500 the bank credited in error. Another company's deposit is not Garnet's
+    receipt.
+answer: C
+explanation: 'From the bank side: $85,000 of June credits − $4,000 May deposit in transit (a May receipt)
+  + $6,500 June deposit in transit − $500 bank error = $87,000. From the book side: $85,800 recorded +
+  $1,200 note collection not yet recorded = $87,000. The two sides agree.'
+variants:
+- stem: Harlow Co. prepares a proof of cash for June. The bank statement shows June deposits and other
+    credits of $126,400. Deposits in transit were $7,200 at May 31 and $5,300 at June 30. The June bank
+    credits include $2,500 from a note receivable that the bank collected for Harlow, which Harlow hasn't
+    recorded, and a $900 deposit of another company that the bank credited to Harlow's account in error.
+    Harlow's cash receipts journal shows June receipts of $121,100. What are Harlow's correct cash receipts
+    for June?
+  choices:
+  - id: A
+    text: $121,100
+    rationale: Uses the cash receipts journal as recorded. The $2,500 note collection is a June receipt
+      that Harlow hasn't recorded yet.
+  - id: B
+    text: $123,600
+    rationale: Correct. $126,400 − $7,200 + $5,300 − $900, which equals $121,100 per books + $2,500 note
+      collection.
+  - id: C
+    text: $124,500
+    rationale: Leaves in the $900 the bank credited in error. Another company's deposit is not Harlow's
+      receipt.
+  - id: D
+    text: $125,500
+    rationale: Ignores the deposits in transit. May's $7,200 reached the bank in June but is a May receipt,
+      and June's $5,300 is a June receipt the bank hasn't recorded.
+  answer: B
+  explanation: 'From the bank side: $126,400 of June credits − $7,200 May deposit in transit (a May receipt)
+    + $5,300 June deposit in transit − $900 bank error = $123,600. From the book side: $121,100 recorded
+    + $2,500 note collection not yet recorded = $123,600. The two sides agree.'
+- stem: Iverson Co. prepares a proof of cash for June. The bank statement shows June deposits and other
+    credits of $64,300. Deposits in transit were $3,100 at May 31 and $4,800 at June 30. The June bank
+    credits include $1,500 from a note receivable that the bank collected for Iverson, which Iverson hasn't
+    recorded, and a $650 deposit of another company that the bank credited to Iverson's account in error.
+    Iverson's cash receipts journal shows June receipts of $63,850. What are Iverson's correct cash receipts
+    for June?
+  choices:
+  - id: A
+    text: $61,950
+    rationale: 'Reverses the deposit-in-transit adjustments: May''s deposit in transit is subtracted from
+      June''s bank credits and June''s is added.'
+  - id: B
+    text: $63,850
+    rationale: Uses the cash receipts journal as recorded. The $1,500 note collection is a June receipt
+      that Iverson hasn't recorded yet.
+  - id: C
+    text: $65,350
+    rationale: Correct. $64,300 − $3,100 + $4,800 − $650, which equals $63,850 per books + $1,500 note
+      collection.
+  - id: D
+    text: $66,000
+    rationale: Leaves in the $650 the bank credited in error. Another company's deposit is not Iverson's
+      receipt.
+  answer: C
+  explanation: 'From the bank side: $64,300 of June credits − $3,100 May deposit in transit (a May receipt)
+    + $4,800 June deposit in transit − $650 bank error = $65,350. From the book side: $63,850 recorded
+    + $1,500 note collection not yet recorded = $65,350. The two sides agree.'
+- stem: Jarrow Co. prepares a proof of cash for June. The bank statement shows June deposits and other
+    credits of $212,000. Deposits in transit were $12,500 at May 31 and $9,800 at June 30. The June bank
+    credits include $3,000 from a note receivable that the bank collected for Jarrow, which Jarrow hasn't
+    recorded, and a $1,400 deposit of another company that the bank credited to Jarrow's account in error.
+    Jarrow's cash receipts journal shows June receipts of $204,900. What are Jarrow's correct cash receipts
+    for June?
+  choices:
+  - id: A
+    text: $204,900
+    rationale: Uses the cash receipts journal as recorded. The $3,000 note collection is a June receipt
+      that Jarrow hasn't recorded yet.
+  - id: B
+    text: $207,900
+    rationale: Correct. $212,000 − $12,500 + $9,800 − $1,400, which equals $204,900 per books + $3,000
+      note collection.
+  - id: C
+    text: $210,600
+    rationale: Ignores the deposits in transit. May's $12,500 reached the bank in June but is a May receipt,
+      and June's $9,800 is a June receipt the bank hasn't recorded.
+  - id: D
+    text: $213,300
+    rationale: 'Reverses the deposit-in-transit adjustments: May''s deposit in transit is subtracted from
+      June''s bank credits and June''s is added.'
+  answer: B
+  explanation: 'From the bank side: $212,000 of June credits − $12,500 May deposit in transit (a May receipt)
+    + $9,800 June deposit in transit − $1,400 bank error = $207,900. From the book side: $204,900 recorded
+    + $3,000 note collection not yet recorded = $207,900. The two sides agree.'

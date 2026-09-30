@@ -1,0 +1,120 @@
+id: far-ratios-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Financial statement analysis: solvency ratios'
+  - ASC 480-10 (mandatorily redeemable financial instruments)
+  - ASC 842-20-45 (lease liabilities presented on the balance sheet)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: At December 31, Ferris Corp.'s balance sheet reports total assets of $3,600,000. Its obligations
+  are current liabilities of $400,000, including $50,000 of unearned revenue; long-term debt of $900,000;
+  and operating lease liabilities of $300,000. Ferris also has $200,000 of preferred shares that it must
+  redeem for cash on a fixed date in Year 6, which its draft balance sheet presents within stockholders'
+  equity. After any correction needed, what is Ferris's total debt ratio (total liabilities divided by
+  total assets), rounded to two decimal places?
+choices:
+- id: A
+  text: '0.36'
+  rationale: Leaves out both the operating lease liabilities and the mandatorily redeemable preferred
+    shares.
+- id: B
+  text: '0.42'
+  rationale: Leaves out the $300,000 of operating lease liabilities, which are liabilities on the balance
+    sheet.
+- id: C
+  text: '0.44'
+  rationale: Leaves the $200,000 of mandatorily redeemable preferred shares in equity. Shares the issuer
+    must redeem for cash on a fixed date are liabilities.
+- id: D
+  text: '0.50'
+  rationale: Correct. ($400,000 + $900,000 + $300,000 + $200,000) ÷ $3,600,000.
+answer: D
+explanation: Preferred shares that must be redeemed for cash on a fixed date are mandatorily redeemable
+  financial instruments, reported as liabilities, so $200,000 moves out of equity. Operating lease liabilities
+  and unearned revenue are liabilities too. Total liabilities = $400,000 + $900,000 + $300,000 + $200,000
+  = $1,800,000; total assets are unchanged. $1,800,000 ÷ $3,600,000 = 0.50.
+variants:
+- stem: At December 31, Gresham Corp.'s balance sheet reports total assets of $5,000,000. Its obligations
+    are current liabilities of $700,000, including $80,000 of unearned revenue; long-term debt of $1,400,000;
+    and operating lease liabilities of $350,000. Gresham also has $250,000 of preferred shares that it
+    must redeem for cash on a fixed date in Year 6, which its draft balance sheet presents within stockholders'
+    equity. After any correction needed, what is Gresham's total debt ratio (total liabilities divided
+    by total assets), rounded to two decimal places?
+  choices:
+  - id: A
+    text: '0.47'
+    rationale: Leaves out the $350,000 of operating lease liabilities, which are liabilities on the balance
+      sheet.
+  - id: B
+    text: '0.49'
+    rationale: Leaves the $250,000 of mandatorily redeemable preferred shares in equity. Shares the issuer
+      must redeem for cash on a fixed date are liabilities.
+  - id: C
+    text: '0.54'
+    rationale: Correct. ($700,000 + $1,400,000 + $350,000 + $250,000) ÷ $5,000,000.
+  - id: D
+    text: '1.17'
+    rationale: Divides total liabilities by stockholders' equity, which is the debt-to-equity ratio.
+  answer: C
+  explanation: Preferred shares that must be redeemed for cash on a fixed date are mandatorily redeemable
+    financial instruments, reported as liabilities, so $250,000 moves out of equity. Operating lease liabilities
+    and unearned revenue are liabilities too. Total liabilities = $700,000 + $1,400,000 + $350,000 + $250,000
+    = $2,700,000; total assets are unchanged. $2,700,000 ÷ $5,000,000 = 0.54.
+- stem: At December 31, Hartwell Corp.'s balance sheet reports total assets of $2,500,000. Its obligations
+    are current liabilities of $300,000, including $40,000 of unearned revenue; long-term debt of $500,000;
+    and operating lease liabilities of $240,000. Hartwell also has $160,000 of preferred shares that it
+    must redeem for cash on a fixed date in Year 6, which its draft balance sheet presents within stockholders'
+    equity. After any correction needed, what is Hartwell's total debt ratio (total liabilities divided
+    by total assets), rounded to two decimal places?
+  choices:
+  - id: A
+    text: '0.32'
+    rationale: Leaves out both the operating lease liabilities and the mandatorily redeemable preferred
+      shares.
+  - id: B
+    text: '0.42'
+    rationale: Leaves the $160,000 of mandatorily redeemable preferred shares in equity. Shares the issuer
+      must redeem for cash on a fixed date are liabilities.
+  - id: C
+    text: '0.48'
+    rationale: Correct. ($300,000 + $500,000 + $240,000 + $160,000) ÷ $2,500,000.
+  - id: D
+    text: '0.92'
+    rationale: Divides total liabilities by stockholders' equity, which is the debt-to-equity ratio.
+  answer: C
+  explanation: Preferred shares that must be redeemed for cash on a fixed date are mandatorily redeemable
+    financial instruments, reported as liabilities, so $160,000 moves out of equity. Operating lease liabilities
+    and unearned revenue are liabilities too. Total liabilities = $300,000 + $500,000 + $240,000 + $160,000
+    = $1,200,000; total assets are unchanged. $1,200,000 ÷ $2,500,000 = 0.48.
+- stem: At December 31, Inchcape Corp.'s balance sheet reports total assets of $8,000,000. Its obligations
+    are current liabilities of $1,100,000, including $120,000 of unearned revenue; long-term debt of $2,400,000;
+    and operating lease liabilities of $500,000. Inchcape also has $400,000 of preferred shares that it
+    must redeem for cash on a fixed date in Year 6, which its draft balance sheet presents within stockholders'
+    equity. After any correction needed, what is Inchcape's total debt ratio (total liabilities divided
+    by total assets), rounded to two decimal places?
+  choices:
+  - id: A
+    text: '0.44'
+    rationale: Leaves out both the operating lease liabilities and the mandatorily redeemable preferred
+      shares.
+  - id: B
+    text: '0.49'
+    rationale: Leaves out the $500,000 of operating lease liabilities, which are liabilities on the balance
+      sheet.
+  - id: C
+    text: '0.55'
+    rationale: Correct. ($1,100,000 + $2,400,000 + $500,000 + $400,000) ÷ $8,000,000.
+  - id: D
+    text: '1.22'
+    rationale: Divides total liabilities by stockholders' equity, which is the debt-to-equity ratio.
+  answer: C
+  explanation: Preferred shares that must be redeemed for cash on a fixed date are mandatorily redeemable
+    financial instruments, reported as liabilities, so $400,000 moves out of equity. Operating lease liabilities
+    and unearned revenue are liabilities too. Total liabilities = $1,100,000 + $2,400,000 + $500,000 +
+    $400,000 = $4,400,000; total assets are unchanged. $4,400,000 ÷ $8,000,000 = 0.55.

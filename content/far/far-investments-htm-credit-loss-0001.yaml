@@ -1,0 +1,137 @@
+id: far-investments-htm-credit-loss-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at amortized cost)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 326-20 (current expected credit losses on held-to-maturity debt securities; discounted cash flow
+    method)
+  - ASC 320-10 (held-to-maturity classification)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Tanager Co. bought $500,000 face amount of bonds at par on January 1, Year 1, and classifies them
+  as held to maturity. The bonds pay 6% interest each December 31 and mature on December 31, Year 5. On
+  December 31, Year 3, after receiving that day's interest, Tanager learns that the issuer is in financial
+  difficulty. Tanager now expects to receive the two remaining interest payments in full but only $400,000
+  of the principal at maturity. The bonds' fair value is $381,500, and the market rate for similar bonds
+  is 9%. Tanager measures expected credit losses by discounting expected cash flows at the bonds' effective
+  interest rate, and it had recorded no allowance before. Present value factors for two periods are 1.8334
+  (ordinary annuity) and 0.8900 (single sum) at 6%, and 1.7591 and 0.8417 at 9%. What credit loss expense
+  should Tanager recognize for Year 3?
+choices:
+- id: A
+  text: $88,998
+  rationale: Correct. $500,000 amortized cost − $411,002 present value of expected cash flows at 6%.
+- id: B
+  text: $100,000
+  rationale: Uses the undiscounted $100,000 principal shortfall. Expected cash flows are discounted.
+- id: C
+  text: $110,547
+  rationale: Discounts the expected cash flows at the 9% market rate. Tanager's method discounts them
+    at the bonds' 6% effective interest rate.
+- id: D
+  text: $118,500
+  rationale: Writes the bonds down to their $381,500 fair value, as for an available-for-sale security.
+    A held-to-maturity security's allowance reflects expected credit losses, not fair value.
+answer: A
+explanation: 'Under the current expected credit loss model, a held-to-maturity security carries an allowance
+  equal to its amortized cost minus the present value of the cash flows expected, discounted here at the
+  6% effective rate; fair value doesn''t enter. Expected cash flows: interest $30,000 × 1.8334 = $55,002,
+  plus principal $400,000 × 0.8900 = $356,000, for $411,002. The bonds were bought at par, so amortized
+  cost is $500,000. Allowance and expense = $88,998.'
+variants:
+- stem: Umber Co. bought $800,000 face amount of bonds at par on January 1, Year 1, and classifies them
+    as held to maturity. The bonds pay 5% interest each December 31 and mature on December 31, Year 5.
+    On December 31, Year 3, after receiving that day's interest, Umber learns that the issuer is in financial
+    difficulty. Umber now expects to receive the two remaining interest payments in full but only $620,000
+    of the principal at maturity. The bonds' fair value is $598,000, and the market rate for similar bonds
+    is 8%. Umber measures expected credit losses by discounting expected cash flows at the bonds' effective
+    interest rate, and it had recorded no allowance before. Present value factors for two periods are
+    1.8594 (ordinary annuity) and 0.9070 (single sum) at 5%, and 1.7833 and 0.8573 at 8%. What credit
+    loss expense should Umber recognize for Year 3?
+  choices:
+  - id: A
+    text: $0
+    rationale: Recognizes no loss because Umber intends to hold the bonds to maturity. Held-to-maturity
+      securities carry an allowance for expected credit losses.
+  - id: B
+    text: $163,284
+    rationale: Correct. $800,000 amortized cost − $636,716 present value of expected cash flows at 5%.
+  - id: C
+    text: $197,142
+    rationale: Discounts the expected cash flows at the 8% market rate. Umber's method discounts them
+      at the bonds' 5% effective interest rate.
+  - id: D
+    text: $202,000
+    rationale: Writes the bonds down to their $598,000 fair value, as for an available-for-sale security.
+      A held-to-maturity security's allowance reflects expected credit losses, not fair value.
+  answer: B
+  explanation: 'Under the current expected credit loss model, a held-to-maturity security carries an allowance
+    equal to its amortized cost minus the present value of the cash flows expected, discounted here at
+    the 5% effective rate; fair value doesn''t enter. Expected cash flows: interest $40,000 × 1.8594 =
+    $74,376, plus principal $620,000 × 0.9070 = $562,340, for $636,716. The bonds were bought at par,
+    so amortized cost is $800,000. Allowance and expense = $163,284.'
+- stem: Vireo Co. bought $320,000 face amount of bonds at par on January 1, Year 1, and classifies them
+    as held to maturity. The bonds pay 7% interest each December 31 and mature on December 31, Year 5.
+    On December 31, Year 3, after receiving that day's interest, Vireo learns that the issuer is in financial
+    difficulty. Vireo now expects to receive the two remaining interest payments in full but only $260,000
+    of the principal at maturity. The bonds' fair value is $250,500, and the market rate for similar bonds
+    is 10%. Vireo measures expected credit losses by discounting expected cash flows at the bonds' effective
+    interest rate, and it had recorded no allowance before. Present value factors for two periods are
+    1.8080 (ordinary annuity) and 0.8734 (single sum) at 7%, and 1.7355 and 0.8264 at 10%. What credit
+    loss expense should Vireo recognize for Year 3?
+  choices:
+  - id: A
+    text: $0
+    rationale: Recognizes no loss because Vireo intends to hold the bonds to maturity. Held-to-maturity
+      securities carry an allowance for expected credit losses.
+  - id: B
+    text: $52,417
+    rationale: Correct. $320,000 amortized cost − $267,583 present value of expected cash flows at 7%.
+  - id: C
+    text: $60,000
+    rationale: Uses the undiscounted $60,000 principal shortfall. Expected cash flows are discounted.
+  - id: D
+    text: $66,261
+    rationale: Discounts the expected cash flows at the 10% market rate. Vireo's method discounts them
+      at the bonds' 7% effective interest rate.
+  answer: B
+  explanation: 'Under the current expected credit loss model, a held-to-maturity security carries an allowance
+    equal to its amortized cost minus the present value of the cash flows expected, discounted here at
+    the 7% effective rate; fair value doesn''t enter. Expected cash flows: interest $22,400 × 1.8080 =
+    $40,499, plus principal $260,000 × 0.8734 = $227,084, for $267,583. The bonds were bought at par,
+    so amortized cost is $320,000. Allowance and expense = $52,417.'
+- stem: Wren Co. bought $1,000,000 face amount of bonds at par on January 1, Year 1, and classifies them
+    as held to maturity. The bonds pay 4% interest each December 31 and mature on December 31, Year 5.
+    On December 31, Year 3, after receiving that day's interest, Wren learns that the issuer is in financial
+    difficulty. Wren now expects to receive the two remaining interest payments in full but only $850,000
+    of the principal at maturity. The bonds' fair value is $812,000, and the market rate for similar bonds
+    is 7%. Wren measures expected credit losses by discounting expected cash flows at the bonds' effective
+    interest rate, and it had recorded no allowance before. Present value factors for two periods are
+    1.8861 (ordinary annuity) and 0.9246 (single sum) at 4%, and 1.8080 and 0.8734 at 7%. What credit
+    loss expense should Wren recognize for Year 3?
+  choices:
+  - id: A
+    text: $0
+    rationale: Recognizes no loss because Wren intends to hold the bonds to maturity. Held-to-maturity
+      securities carry an allowance for expected credit losses.
+  - id: B
+    text: $138,646
+    rationale: Correct. $1,000,000 amortized cost − $861,354 present value of expected cash flows at 4%.
+  - id: C
+    text: $185,290
+    rationale: Discounts the expected cash flows at the 7% market rate. Wren's method discounts them at
+      the bonds' 4% effective interest rate.
+  - id: D
+    text: $188,000
+    rationale: Writes the bonds down to their $812,000 fair value, as for an available-for-sale security.
+      A held-to-maturity security's allowance reflects expected credit losses, not fair value.
+  answer: B
+  explanation: 'Under the current expected credit loss model, a held-to-maturity security carries an allowance
+    equal to its amortized cost minus the present value of the cash flows expected, discounted here at
+    the 4% effective rate; fair value doesn''t enter. Expected cash flows: interest $40,000 × 1.8861 =
+    $75,444, plus principal $850,000 × 0.9246 = $785,910, for $861,354. The bonds were bought at par,
+    so amortized cost is $1,000,000. Allowance and expense = $138,646.'

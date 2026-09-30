@@ -1,0 +1,130 @@
+id: far-nfp-cash-flows-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 958-230 (NFP statement of cash flows: restricted contributions as financing)'
+  - ASC 230-10 (indirect method; noncash activities)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Pine Ridge Shelter, a not-for-profit entity, prepares its statement of cash flows using the indirect
+  method. Its draft reports net cash provided by operating activities of $710,000. The reconciliation
+  starts with the change in total net assets, which includes: a $150,000 cash gift that the donor requires
+  Pine to hold in perpetuity, which the draft leaves in operating activities; a $25,000 gain on the sale
+  of investments, which the draft reconciliation adds to the change in net assets; land donated to Pine,
+  with a fair value of $100,000, for which the draft reconciliation makes no adjustment; and $180,000
+  of cash contributions without donor restrictions. After correcting the draft, what is Pine''s net cash
+  provided by operating activities?'
+choices:
+- id: A
+  text: $230,000
+  rationale: Also moves the $180,000 of unrestricted contributions to financing activities. Only contributions
+    restricted to long-term purposes are financing inflows.
+- id: B
+  text: $410,000
+  rationale: Correct. $710,000 − $150,000 endowment gift − 2 × $25,000 gain − $100,000 donated land.
+- id: C
+  text: $435,000
+  rationale: Removes the $25,000 gain from the reconciliation but doesn't subtract it. A gain on sale
+    is subtracted from the change in net assets; the proceeds are an investing inflow.
+- id: D
+  text: $560,000
+  rationale: Leaves the $150,000 endowment gift in operating activities. Cash contributions restricted
+    to endowment are financing activities.
+answer: B
+explanation: 'The endowment gift is a financing inflow, so it comes out of operating activities: − $150,000.
+  The gain was added instead of subtracted, so correcting it takes out twice the gain: − $50,000. The
+  donated land is a noncash contribution, subtracted in the reconciliation: − $100,000. Unrestricted contributions
+  stay in operating activities. $710,000 − $150,000 − $50,000 − $100,000 = $410,000.'
+variants:
+- stem: 'Quarry Hill Shelter, a not-for-profit entity, prepares its statement of cash flows using the
+    indirect method. Its draft reports net cash provided by operating activities of $540,000. The reconciliation
+    starts with the change in total net assets, which includes: a $120,000 cash gift that the donor requires
+    Quarry to hold in perpetuity, which the draft leaves in operating activities; a $15,000 gain on the
+    sale of investments, which the draft reconciliation adds to the change in net assets; land donated
+    to Quarry, with a fair value of $60,000, for which the draft reconciliation makes no adjustment; and
+    $150,000 of cash contributions without donor restrictions. After correcting the draft, what is Quarry''s
+    net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $330,000
+    rationale: Correct. $540,000 − $120,000 endowment gift − 2 × $15,000 gain − $60,000 donated land.
+  - id: B
+    text: $345,000
+    rationale: Removes the $15,000 gain from the reconciliation but doesn't subtract it. A gain on sale
+      is subtracted from the change in net assets; the proceeds are an investing inflow.
+  - id: C
+    text: $390,000
+    rationale: Leaves the donated land in. A noncash contribution is subtracted in the reconciliation
+      and disclosed as a noncash activity.
+  - id: D
+    text: $450,000
+    rationale: Leaves the $120,000 endowment gift in operating activities. Cash contributions restricted
+      to endowment are financing activities.
+  answer: A
+  explanation: 'The endowment gift is a financing inflow, so it comes out of operating activities: − $120,000.
+    The gain was added instead of subtracted, so correcting it takes out twice the gain: − $30,000. The
+    donated land is a noncash contribution, subtracted in the reconciliation: − $60,000. Unrestricted
+    contributions stay in operating activities. $540,000 − $120,000 − $30,000 − $60,000 = $330,000.'
+- stem: 'Rowan Street Shelter, a not-for-profit entity, prepares its statement of cash flows using the
+    indirect method. Its draft reports net cash provided by operating activities of $980,000. The reconciliation
+    starts with the change in total net assets, which includes: a $250,000 cash gift that the donor requires
+    Rowan to hold in perpetuity, which the draft leaves in operating activities; a $40,000 gain on the
+    sale of investments, which the draft reconciliation adds to the change in net assets; land donated
+    to Rowan, with a fair value of $150,000, for which the draft reconciliation makes no adjustment; and
+    $220,000 of cash contributions without donor restrictions. After correcting the draft, what is Rowan''s
+    net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $280,000
+    rationale: Also moves the $220,000 of unrestricted contributions to financing activities. Only contributions
+      restricted to long-term purposes are financing inflows.
+  - id: B
+    text: $500,000
+    rationale: Correct. $980,000 − $250,000 endowment gift − 2 × $40,000 gain − $150,000 donated land.
+  - id: C
+    text: $540,000
+    rationale: Removes the $40,000 gain from the reconciliation but doesn't subtract it. A gain on sale
+      is subtracted from the change in net assets; the proceeds are an investing inflow.
+  - id: D
+    text: $650,000
+    rationale: Leaves the donated land in. A noncash contribution is subtracted in the reconciliation
+      and disclosed as a noncash activity.
+  answer: B
+  explanation: 'The endowment gift is a financing inflow, so it comes out of operating activities: − $250,000.
+    The gain was added instead of subtracted, so correcting it takes out twice the gain: − $80,000. The
+    donated land is a noncash contribution, subtracted in the reconciliation: − $150,000. Unrestricted
+    contributions stay in operating activities. $980,000 − $250,000 − $80,000 − $150,000 = $500,000.'
+- stem: 'Sable Point Shelter, a not-for-profit entity, prepares its statement of cash flows using the
+    indirect method. Its draft reports net cash provided by operating activities of $455,000. The reconciliation
+    starts with the change in total net assets, which includes: a $90,000 cash gift that the donor requires
+    Sable to hold in perpetuity, which the draft leaves in operating activities; a $20,000 gain on the
+    sale of investments, which the draft reconciliation adds to the change in net assets; land donated
+    to Sable, with a fair value of $75,000, for which the draft reconciliation makes no adjustment; and
+    $130,000 of cash contributions without donor restrictions. After correcting the draft, what is Sable''s
+    net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $120,000
+    rationale: Also moves the $130,000 of unrestricted contributions to financing activities. Only contributions
+      restricted to long-term purposes are financing inflows.
+  - id: B
+    text: $250,000
+    rationale: Correct. $455,000 − $90,000 endowment gift − 2 × $20,000 gain − $75,000 donated land.
+  - id: C
+    text: $325,000
+    rationale: Leaves the donated land in. A noncash contribution is subtracted in the reconciliation
+      and disclosed as a noncash activity.
+  - id: D
+    text: $340,000
+    rationale: Leaves the $90,000 endowment gift in operating activities. Cash contributions restricted
+      to endowment are financing activities.
+  answer: B
+  explanation: 'The endowment gift is a financing inflow, so it comes out of operating activities: − $90,000.
+    The gain was added instead of subtracted, so correcting it takes out twice the gain: − $40,000. The
+    donated land is a noncash contribution, subtracted in the reconciliation: − $75,000. Unrestricted
+    contributions stay in operating activities. $455,000 − $90,000 − $40,000 − $75,000 = $250,000.'

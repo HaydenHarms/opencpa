@@ -1,0 +1,119 @@
+id: far-inventory-rollforward-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory cost; goods in transit and on consignment)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Tamsworth Co. uses a periodic inventory system. For Year 1, its records show beginning inventory
+  of $180,000, purchases of $1,200,000 per the accounts payable subledger, freight-in of $25,000, and
+  purchase returns of $40,000. The physical count, taken on the morning of December 31 and priced at cost,
+  totals $210,000. Cutoff testing finds that: purchases include $30,000 of goods a supplier shipped FOB
+  destination on December 30, which arrived January 5; goods costing $18,000 held by a consignee on Tamsworth''s
+  behalf were not counted; and the count includes goods costing $12,000 that a customer''s carrier picked
+  up that afternoon under FOB shipping point terms, recorded as a Year 1 sale. What is Tamsworth''s corrected
+  cost of goods sold for Year 1?'
+choices:
+- id: A
+  text: $1,107,000
+  rationale: Leaves the $12,000 of goods sold FOB shipping point in ending inventory. Title passed to
+    the customer when the carrier picked them up.
+- id: B
+  text: $1,119,000
+  rationale: Correct. $180,000 + $1,170,000 + $25,000 − $40,000 − $216,000.
+- id: C
+  text: $1,137,000
+  rationale: Leaves out the $18,000 of consigned goods, which Tamsworth still owns.
+- id: D
+  text: $1,149,000
+  rationale: Leaves the $30,000 of goods in transit in purchases. Under FOB destination, title passes
+    when the goods arrive in January.
+answer: B
+explanation: 'Purchases: $1,200,000 − $30,000 in transit under FOB destination = $1,170,000. Ending inventory:
+  $210,000 + $18,000 on consignment − $12,000 sold and shipped = $216,000. Cost of goods sold = $180,000
+  + $1,170,000 + $25,000 freight-in − $40,000 returns − $216,000 = $1,119,000.'
+variants:
+- stem: 'Upshaw Co. uses a periodic inventory system. For Year 1, its records show beginning inventory
+    of $240,000, purchases of $1,650,000 per the accounts payable subledger, freight-in of $33,000, and
+    purchase returns of $55,000. The physical count, taken on the morning of December 31 and priced at
+    cost, totals $265,000. Cutoff testing finds that: purchases include $42,000 of goods a supplier shipped
+    FOB destination on December 30, which arrived January 5; goods costing $24,000 held by a consignee
+    on Upshaw''s behalf were not counted; and the count includes goods costing $15,000 that a customer''s
+    carrier picked up that afternoon under FOB shipping point terms, recorded as a Year 1 sale. What is
+    Upshaw''s corrected cost of goods sold for Year 1?'
+  choices:
+  - id: A
+    text: $1,519,000
+    rationale: Leaves out the $33,000 of freight-in, which is part of the cost of inventory.
+  - id: B
+    text: $1,537,000
+    rationale: Leaves the $15,000 of goods sold FOB shipping point in ending inventory. Title passed to
+      the customer when the carrier picked them up.
+  - id: C
+    text: $1,552,000
+    rationale: Correct. $240,000 + $1,608,000 + $33,000 − $55,000 − $274,000.
+  - id: D
+    text: $1,594,000
+    rationale: Leaves the $42,000 of goods in transit in purchases. Under FOB destination, title passes
+      when the goods arrive in January.
+  answer: C
+  explanation: 'Purchases: $1,650,000 − $42,000 in transit under FOB destination = $1,608,000. Ending
+    inventory: $265,000 + $24,000 on consignment − $15,000 sold and shipped = $274,000. Cost of goods
+    sold = $240,000 + $1,608,000 + $33,000 freight-in − $55,000 returns − $274,000 = $1,552,000.'
+- stem: 'Venner Co. uses a periodic inventory system. For Year 1, its records show beginning inventory
+    of $95,000, purchases of $720,000 per the accounts payable subledger, freight-in of $14,000, and purchase
+    returns of $22,000. The physical count, taken on the morning of December 31 and priced at cost, totals
+    $110,000. Cutoff testing finds that: purchases include $18,000 of goods a supplier shipped FOB destination
+    on December 30, which arrived January 5; goods costing $9,000 held by a consignee on Venner''s behalf
+    were not counted; and the count includes goods costing $7,000 that a customer''s carrier picked up
+    that afternoon under FOB shipping point terms, recorded as a Year 1 sale. What is Venner''s corrected
+    cost of goods sold for Year 1?'
+  choices:
+  - id: A
+    text: $663,000
+    rationale: Leaves out the $14,000 of freight-in, which is part of the cost of inventory.
+  - id: B
+    text: $670,000
+    rationale: Leaves the $7,000 of goods sold FOB shipping point in ending inventory. Title passed to
+      the customer when the carrier picked them up.
+  - id: C
+    text: $677,000
+    rationale: Correct. $95,000 + $702,000 + $14,000 − $22,000 − $112,000.
+  - id: D
+    text: $686,000
+    rationale: Leaves out the $9,000 of consigned goods, which Venner still owns.
+  answer: C
+  explanation: 'Purchases: $720,000 − $18,000 in transit under FOB destination = $702,000. Ending inventory:
+    $110,000 + $9,000 on consignment − $7,000 sold and shipped = $112,000. Cost of goods sold = $95,000
+    + $702,000 + $14,000 freight-in − $22,000 returns − $112,000 = $677,000.'
+- stem: 'Wardle Co. uses a periodic inventory system. For Year 1, its records show beginning inventory
+    of $410,000, purchases of $2,800,000 per the accounts payable subledger, freight-in of $52,000, and
+    purchase returns of $90,000. The physical count, taken on the morning of December 31 and priced at
+    cost, totals $455,000. Cutoff testing finds that: purchases include $65,000 of goods a supplier shipped
+    FOB destination on December 30, which arrived January 5; goods costing $38,000 held by a consignee
+    on Wardle''s behalf were not counted; and the count includes goods costing $26,000 that a customer''s
+    carrier picked up that afternoon under FOB shipping point terms, recorded as a Year 1 sale. What is
+    Wardle''s corrected cost of goods sold for Year 1?'
+  choices:
+  - id: A
+    text: $2,588,000
+    rationale: Leaves out the $52,000 of freight-in, which is part of the cost of inventory.
+  - id: B
+    text: $2,614,000
+    rationale: Leaves the $26,000 of goods sold FOB shipping point in ending inventory. Title passed to
+      the customer when the carrier picked them up.
+  - id: C
+    text: $2,640,000
+    rationale: Correct. $410,000 + $2,735,000 + $52,000 − $90,000 − $467,000.
+  - id: D
+    text: $2,678,000
+    rationale: Leaves out the $38,000 of consigned goods, which Wardle still owns.
+  answer: C
+  explanation: 'Purchases: $2,800,000 − $65,000 in transit under FOB destination = $2,735,000. Ending
+    inventory: $455,000 + $38,000 on consignment − $26,000 sold and shipped = $467,000. Cost of goods
+    sold = $410,000 + $2,735,000 + $52,000 freight-in − $90,000 returns − $467,000 = $2,640,000.'

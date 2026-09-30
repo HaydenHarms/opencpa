@@ -1,0 +1,143 @@
+id: far-nfp-notes-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Notes to financial statements (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-210-50 (liquidity and availability of financial assets)
+  - ASC 958-205 (board-designated net assets)
+  notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Sparrow Hill Center, a not-for-profit entity, is preparing its note on the liquidity and availability
+  of financial assets. At June 30, Year 2, it holds: cash of $250,000, including $90,000 that a donor
+  restricted to constructing a new building over the next three years; contributions receivable without
+  donor restrictions of $180,000, of which $60,000 is due after June 30, Year 3; and investments of $1,100,000,
+  made up of a donor-restricted endowment of $700,000 whose original gift must be held in perpetuity,
+  a quasi-endowment of $200,000 that the board designated for long-term investment and does not intend
+  to spend from beyond amounts appropriated under its spending policy, and $200,000 of other investments.
+  Under its spending policy, Sparrow will appropriate $35,000 of endowment return for general operations
+  in the coming year. What amount should the note report as financial assets available to meet general
+  expenditures within one year?'
+choices:
+- id: A
+  text: $480,000
+  rationale: Leaves out the $35,000 of endowment return appropriated for next year's general operations,
+    which is available within one year.
+- id: B
+  text: $515,000
+  rationale: Correct. Cash $160,000 + receivables due within one year $120,000 + other investments $200,000
+    + endowment appropriation $35,000.
+- id: C
+  text: $575,000
+  rationale: Includes the $60,000 of contributions receivable due in more than one year.
+- id: D
+  text: $715,000
+  rationale: Includes the $200,000 quasi-endowment. The board has designated it for long-term investment,
+    so it isn't available for general expenditure without a board action; that amount is disclosed separately.
+answer: B
+explanation: 'The note reports financial assets available for general expenditure within one year of the
+  balance sheet date. Cash available: $250,000 − $90,000 restricted to the building = $160,000. Receivables
+  due within one year: $180,000 − $60,000 = $120,000. Investments: the endowment corpus and the board-designated
+  quasi-endowment are excluded, leaving $200,000; the $35,000 appropriated from the endowment for next
+  year''s operations is added. Total = $515,000.'
+variants:
+- stem: 'Thistle Park Center, a not-for-profit entity, is preparing its note on the liquidity and availability
+    of financial assets. At June 30, Year 2, it holds: cash of $320,000, including $150,000 that a donor
+    restricted to constructing a new building over the next three years; contributions receivable without
+    donor restrictions of $140,000, of which $45,000 is due after June 30, Year 3; and investments of
+    $1,310,000, made up of a donor-restricted endowment of $900,000 whose original gift must be held in
+    perpetuity, a quasi-endowment of $250,000 that the board designated for long-term investment and does
+    not intend to spend from beyond amounts appropriated under its spending policy, and $160,000 of other
+    investments. Under its spending policy, Thistle will appropriate $40,000 of endowment return for general
+    operations in the coming year. What amount should the note report as financial assets available to
+    meet general expenditures within one year?'
+  choices:
+  - id: A
+    text: $425,000
+    rationale: Leaves out the $40,000 of endowment return appropriated for next year's general operations,
+      which is available within one year.
+  - id: B
+    text: $465,000
+    rationale: Correct. Cash $170,000 + receivables due within one year $95,000 + other investments $160,000
+      + endowment appropriation $40,000.
+  - id: C
+    text: $615,000
+    rationale: Includes the $150,000 of cash restricted by a donor to building construction, which can't
+      be used for general expenditure.
+  - id: D
+    text: $715,000
+    rationale: Includes the $250,000 quasi-endowment. The board has designated it for long-term investment,
+      so it isn't available for general expenditure without a board action; that amount is disclosed separately.
+  answer: B
+  explanation: 'The note reports financial assets available for general expenditure within one year of
+    the balance sheet date. Cash available: $320,000 − $150,000 restricted to the building = $170,000.
+    Receivables due within one year: $140,000 − $45,000 = $95,000. Investments: the endowment corpus and
+    the board-designated quasi-endowment are excluded, leaving $160,000; the $40,000 appropriated from
+    the endowment for next year''s operations is added. Total = $465,000.'
+- stem: 'Upland Arts Center, a not-for-profit entity, is preparing its note on the liquidity and availability
+    of financial assets. At June 30, Year 2, it holds: cash of $180,000, including $60,000 that a donor
+    restricted to constructing a new building over the next three years; contributions receivable without
+    donor restrictions of $220,000, of which $90,000 is due after June 30, Year 3; and investments of
+    $760,000, made up of a donor-restricted endowment of $500,000 whose original gift must be held in
+    perpetuity, a quasi-endowment of $120,000 that the board designated for long-term investment and does
+    not intend to spend from beyond amounts appropriated under its spending policy, and $140,000 of other
+    investments. Under its spending policy, Upland will appropriate $25,000 of endowment return for general
+    operations in the coming year. What amount should the note report as financial assets available to
+    meet general expenditures within one year?'
+  choices:
+  - id: A
+    text: $415,000
+    rationale: Correct. Cash $120,000 + receivables due within one year $130,000 + other investments $140,000
+      + endowment appropriation $25,000.
+  - id: B
+    text: $475,000
+    rationale: Includes the $60,000 of cash restricted by a donor to building construction, which can't
+      be used for general expenditure.
+  - id: C
+    text: $505,000
+    rationale: Includes the $90,000 of contributions receivable due in more than one year.
+  - id: D
+    text: $535,000
+    rationale: Includes the $120,000 quasi-endowment. The board has designated it for long-term investment,
+      so it isn't available for general expenditure without a board action; that amount is disclosed separately.
+  answer: A
+  explanation: 'The note reports financial assets available for general expenditure within one year of
+    the balance sheet date. Cash available: $180,000 − $60,000 restricted to the building = $120,000.
+    Receivables due within one year: $220,000 − $90,000 = $130,000. Investments: the endowment corpus
+    and the board-designated quasi-endowment are excluded, leaving $140,000; the $25,000 appropriated
+    from the endowment for next year''s operations is added. Total = $415,000.'
+- stem: 'Vesper Hall Center, a not-for-profit entity, is preparing its note on the liquidity and availability
+    of financial assets. At June 30, Year 2, it holds: cash of $410,000, including $200,000 that a donor
+    restricted to constructing a new building over the next three years; contributions receivable without
+    donor restrictions of $160,000, of which $70,000 is due after June 30, Year 3; and investments of
+    $1,760,000, made up of a donor-restricted endowment of $1,200,000 whose original gift must be held
+    in perpetuity, a quasi-endowment of $300,000 that the board designated for long-term investment and
+    does not intend to spend from beyond amounts appropriated under its spending policy, and $260,000
+    of other investments. Under its spending policy, Vesper will appropriate $50,000 of endowment return
+    for general operations in the coming year. What amount should the note report as financial assets
+    available to meet general expenditures within one year?'
+  choices:
+  - id: A
+    text: $560,000
+    rationale: Leaves out the $50,000 of endowment return appropriated for next year's general operations,
+      which is available within one year.
+  - id: B
+    text: $610,000
+    rationale: Correct. Cash $210,000 + receivables due within one year $90,000 + other investments $260,000
+      + endowment appropriation $50,000.
+  - id: C
+    text: $680,000
+    rationale: Includes the $70,000 of contributions receivable due in more than one year.
+  - id: D
+    text: $910,000
+    rationale: Includes the $300,000 quasi-endowment. The board has designated it for long-term investment,
+      so it isn't available for general expenditure without a board action; that amount is disclosed separately.
+  answer: B
+  explanation: 'The note reports financial assets available for general expenditure within one year of
+    the balance sheet date. Cash available: $410,000 − $200,000 restricted to the building = $210,000.
+    Receivables due within one year: $160,000 − $70,000 = $90,000. Investments: the endowment corpus and
+    the board-designated quasi-endowment are excluded, leaving $260,000; the $50,000 appropriated from
+    the endowment for next year''s operations is added. Total = $610,000.'
