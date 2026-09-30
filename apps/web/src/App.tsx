@@ -21,8 +21,8 @@ export default function App() {
         </NavLink>
         <nav>
           <NavLink to="/practice">Practice</NavLink>
-          <NavLink to="/library">Library</NavLink>
           <NavLink to="/simulations">Simulations</NavLink>
+          <NavLink to="/library">Library</NavLink>
           <NavLink to="/progress">Progress</NavLink>
           <NavLink to="/claude">Claude</NavLink>
         </nav>
