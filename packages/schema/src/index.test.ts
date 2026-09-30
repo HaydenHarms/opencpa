@@ -1,5 +1,13 @@
 import { describe, expect, it } from 'vitest';
-import { McqItem, TbsItem, mcqVariant, toPublicMcq, toPublicTbs, variantCount } from './index';
+import {
+  McqItem,
+  TbsItem,
+  mcqVariant,
+  taskAnswer,
+  toPublicMcq,
+  toPublicTbs,
+  variantCount,
+} from './index';
 
 const blueprint = {
   section: 'FAR',
@@ -158,6 +166,71 @@ describe('public projections', () => {
     expect(json).not.toContain('842-20-30-1');
     expect(pub.tasks.map((x) => x.type)).toEqual(['numeric', 'journal_entry', 'research']);
     expect(pub.exhibits).toHaveLength(1);
+  });
+});
+
+describe('select tasks', () => {
+  const sim = (rows: object[], options?: string[]) => ({
+    id: 'far-test-0005',
+    type: 'tbs',
+    blueprint,
+    review,
+    title: 'T',
+    scenario: 'S',
+    tasks: [
+      {
+        id: 's',
+        type: 'select',
+        prompt: 'Classify each cash flow.',
+        points: 2,
+        ...(options ? { options } : {}),
+        rows,
+        explanation: 'secret',
+      },
+    ],
+  });
+  const shared = ['Operating', 'Investing', 'Financing'];
+
+  it('serves every row its options and no answers', () => {
+    const t = TbsItem.parse(
+      sim(
+        [
+          { id: 'a', label: 'Dividends paid', answer: 'Financing' },
+          { id: 'b', label: 'Tone', options: ['Accrue', 'Disclose only'], answer: 'Accrue' },
+        ],
+        shared,
+      ),
+    );
+    const pub = toPublicTbs(t);
+    expect(pub.tasks[0]).toEqual({
+      id: 's',
+      type: 'select',
+      prompt: 'Classify each cash flow.',
+      points: 2,
+      rows: [
+        { id: 'a', label: 'Dividends paid', options: shared },
+        { id: 'b', label: 'Tone', options: ['Accrue', 'Disclose only'] },
+      ],
+    });
+    expect(JSON.stringify(pub)).not.toMatch(/answer|secret/);
+    expect(taskAnswer(t.tasks[0]!)).toEqual({ a: 'Financing', b: 'Accrue' });
+  });
+
+  it('rejects a row whose answer is not an option, a row with no options, and repeated row ids', () => {
+    const ok = (rows: object[], options?: string[]) =>
+      TbsItem.safeParse(sim(rows, options)).success;
+    expect(ok([{ id: 'a', label: 'L', answer: 'Operating' }], shared)).toBe(true);
+    expect(ok([{ id: 'a', label: 'L', answer: 'Other' }], shared)).toBe(false);
+    expect(ok([{ id: 'a', label: 'L', answer: 'Operating' }])).toBe(false);
+    expect(
+      ok(
+        [
+          { id: 'a', label: 'L', answer: 'Operating' },
+          { id: 'a', label: 'M', answer: 'Investing' },
+        ],
+        shared,
+      ),
+    ).toBe(false);
   });
 });
 

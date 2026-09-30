@@ -230,7 +230,8 @@ body {
 }
 .field input,
 .je-grid input,
-.je-grid select {
+.je-grid select,
+.select-grid select {
   font: inherit;
   color: var(--fg);
   background: var(--bg);
@@ -243,6 +244,7 @@ body {
   overflow-x: auto;
 }
 .je-grid,
+.select-grid,
 .exhibit-table {
   border-collapse: collapse;
   width: 100%;
@@ -250,6 +252,7 @@ body {
 }
 .je-grid th,
 .je-grid td,
+.select-grid td,
 .exhibit-table th,
 .exhibit-table td {
   border-bottom: 1px solid var(--line);
@@ -268,6 +271,22 @@ body {
 .je-grid td:nth-child(2),
 .je-grid td:nth-child(3) {
   min-width: 110px;
+}
+.select-grid td:last-child {
+  width: 45%;
+  min-width: 160px;
+}
+@media (max-width: 600px) {
+  .select-grid td {
+    display: block;
+    width: auto;
+    border-bottom: 0;
+  }
+  .select-grid tr {
+    display: block;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+  }
 }
 .je-grid tfoot td {
   font-weight: 600;

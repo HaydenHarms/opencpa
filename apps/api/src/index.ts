@@ -112,7 +112,14 @@ app.get('/library/search-index', (c) => {
       text:
         i.type === 'mcq'
           ? [i.stem, ...i.choices.map((ch) => ch.text)].join(' ')
-          : [i.title, i.scenario, ...i.tasks.map((t) => t.prompt)].join(' '),
+          : [
+              i.title,
+              i.scenario,
+              ...i.tasks.flatMap((t) => [
+                t.prompt,
+                ...(t.type === 'select' ? t.rows.map((r) => r.label) : []),
+              ]),
+            ].join(' '),
       refs: i.review.references,
     })),
   );
@@ -195,6 +202,12 @@ const taskResponse = z.discriminatedUnion('type', [
       .max(20),
   }),
   z.object({ type: z.literal('research'), citation: z.string().max(100) }),
+  z.object({
+    type: z.literal('select'),
+    choices: z
+      .record(z.string().max(300))
+      .refine((c) => Object.keys(c).length <= 50, 'at most 50 rows'),
+  }),
 ]);
 const simulationAttemptBody = z.object({
   responses: z.record(taskResponse),

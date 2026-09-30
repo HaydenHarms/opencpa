@@ -145,8 +145,45 @@ export const TbsTask = z.discriminatedUnion('type', [
     answer: z.array(z.string()).min(1),
     explanation: z.string(),
   }),
+  z.object({
+    id: z.string(),
+    type: z.literal('select'),
+    prompt: z.string(),
+    points: z.number().int().positive(),
+    /** Options offered in every row's drop-down, unless a row lists its own. */
+    options: z.array(z.string()).min(2).optional(),
+    /**
+     * One drop-down per row, as in the exam's option-list and document-review tasks
+     * (classify each item, or pick the correction for each highlighted phrase).
+     * `answer` is the text of the correct option.
+     */
+    rows: z
+      .array(
+        z.object({
+          id: z.string(),
+          label: z.string().min(1),
+          options: z.array(z.string()).min(2).optional(),
+          answer: z.string(),
+        }),
+      )
+      .min(1),
+    explanation: z.string(),
+  }),
 ]);
 export type TbsTask = z.infer<typeof TbsTask>;
+export type SelectTask = Extract<TbsTask, { type: 'select' }>;
+
+/** The options in one row's drop-down: its own list, or the task's shared one. */
+export function rowOptions(task: SelectTask, row: SelectTask['rows'][number]): string[] {
+  return row.options ?? task.options ?? [];
+}
+
+/** A task's key as revealed after an attempt. A select task's key is the correct option per row id. */
+export function taskAnswer(task: TbsTask) {
+  return task.type === 'select'
+    ? Object.fromEntries(task.rows.map((r) => [r.id, r.answer]))
+    : task.answer;
+}
 
 export const Exhibit = z.object({
   title: z.string(),
@@ -166,6 +203,30 @@ export const TbsItem = z
   })
   .superRefine((t, ctx) => {
     for (const task of t.tasks) {
+      if (task.type === 'select') {
+        const ids = task.rows.map((r) => r.id);
+        if (new Set(ids).size !== ids.length)
+          ctx.addIssue({ code: 'custom', message: `task ${task.id}: duplicate row ids` });
+        for (const r of task.rows) {
+          const opts = rowOptions(task, r);
+          if (opts.length < 2)
+            ctx.addIssue({
+              code: 'custom',
+              message: `task ${task.id}: row ${r.id} has no options (give the task or the row a list)`,
+            });
+          else if (!opts.includes(r.answer))
+            ctx.addIssue({
+              code: 'custom',
+              message: `task ${task.id}: row ${r.id} answer "${r.answer}" is not one of its options`,
+            });
+          if (new Set(opts).size !== opts.length)
+            ctx.addIssue({
+              code: 'custom',
+              message: `task ${task.id}: row ${r.id} repeats an option`,
+            });
+        }
+        continue;
+      }
       if (task.type !== 'journal_entry') continue;
       const dr = task.answer.reduce((s, l) => s + l.debit, 0);
       const cr = task.answer.reduce((s, l) => s + l.credit, 0);
@@ -210,7 +271,14 @@ export type PublicTbsTask =
       unit: 'cents' | 'percent' | 'units';
     }
   | { id: string; type: 'journal_entry'; prompt: string; points: number; accounts: string[] }
-  | { id: string; type: 'research'; prompt: string; points: number };
+  | { id: string; type: 'research'; prompt: string; points: number }
+  | {
+      id: string;
+      type: 'select';
+      prompt: string;
+      points: number;
+      rows: { id: string; label: string; options: string[] }[];
+    };
 
 export type PublicTbs = Pick<
   TbsItem,
@@ -236,6 +304,18 @@ export function toPublicTbs(t: TbsItem): PublicTbs {
           return { id, type: 'journal_entry', prompt, points, accounts: task.accounts };
         case 'research':
           return { id, type: 'research', prompt, points };
+        case 'select':
+          return {
+            id,
+            type: 'select',
+            prompt,
+            points,
+            rows: task.rows.map((r) => ({
+              id: r.id,
+              label: r.label,
+              options: rowOptions(task, r),
+            })),
+          };
       }
     }),
   };

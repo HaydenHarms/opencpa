@@ -63,7 +63,8 @@ export function gradeJournalEntry(
 export type TaskResponse =
   | { type: 'numeric'; value: number }
   | { type: 'journal_entry'; lines: JournalResponse }
-  | { type: 'research'; citation: string };
+  | { type: 'research'; citation: string }
+  | { type: 'select'; choices: Record<string, string> };
 
 export function gradeTask(task: TbsTask, response: TaskResponse): GradeResult {
   if (task.type !== response.type) return { earned: 0, possible: task.points, correct: false };
@@ -83,6 +84,13 @@ export function gradeTask(task: TbsTask, response: TaskResponse): GradeResult {
       const c = normCite((response as Extract<TaskResponse, { type: 'research' }>).citation);
       const correct = task.answer.some((a) => normCite(a) === c);
       return { earned: correct ? task.points : 0, possible: task.points, correct };
+    }
+    case 'select': {
+      // One point-share per row whose drop-down matches the key; a blank row earns nothing.
+      const picks = (response as Extract<TaskResponse, { type: 'select' }>).choices;
+      const matched = task.rows.filter((r) => picks[r.id] === r.answer).length;
+      const earned = Math.round((matched / task.rows.length) * task.points * 100) / 100;
+      return { earned, possible: task.points, correct: matched === task.rows.length };
     }
   }
 }

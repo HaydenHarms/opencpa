@@ -92,6 +92,35 @@ describe('gradeTask', () => {
     expect(gradeTask(task, { type: 'research', citation: 'irc 162(a)' }).correct).toBe(true);
   });
 
+  it('gives select tasks a share of the points per matching row', () => {
+    const task = {
+      id: 's',
+      type: 'select',
+      prompt: '',
+      points: 3,
+      options: ['Operating', 'Investing', 'Financing'],
+      rows: [
+        { id: 'a', label: 'Dividends paid', answer: 'Financing' },
+        { id: 'b', label: 'Equipment bought', answer: 'Investing' },
+        { id: 'c', label: 'Interest paid', answer: 'Operating' },
+      ],
+      explanation: '',
+    } satisfies TbsTask;
+    const all = { a: 'Financing', b: 'Investing', c: 'Operating' };
+    expect(gradeTask(task, { type: 'select', choices: all })).toEqual({
+      earned: 3,
+      possible: 3,
+      correct: true,
+    });
+    expect(gradeTask(task, { type: 'select', choices: { ...all, c: 'Financing' } })).toEqual({
+      earned: 2,
+      possible: 3,
+      correct: false,
+    });
+    expect(gradeTask(task, { type: 'select', choices: { a: 'Financing' } }).earned).toBe(1);
+    expect(gradeTask(task, { type: 'numeric', value: 1 }).earned).toBe(0);
+  });
+
   it('respects numeric tolerance', () => {
     const task = {
       id: 't',
@@ -144,7 +173,16 @@ describe('gradeSimulation', () => {
     scenario: 'S',
     exhibits: [],
     tasks: [
-      { id: 'n', type: 'numeric', prompt: '', points: 1, answer: 5000, tolerance: 0, unit: 'cents', explanation: '' },
+      {
+        id: 'n',
+        type: 'numeric',
+        prompt: '',
+        points: 1,
+        answer: 5000,
+        tolerance: 0,
+        unit: 'cents',
+        explanation: '',
+      },
       {
         id: 'j',
         type: 'journal_entry',

@@ -11,9 +11,11 @@ import { CfWorkerJsonSchemaValidator } from '@modelcontextprotocol/sdk/validatio
 import { z } from 'zod';
 import {
   mcqVariant,
+  taskAnswer,
   toPublicMcq,
   toPublicTbs,
   type Item,
+  type TbsTask,
   type JournalLine,
   type TbsItem,
 } from '@opencpa/schema';
@@ -49,6 +51,12 @@ type Attempt = {
 const iso = (ms: number) => new Date(ms).toISOString();
 const dollars = (cents: number | undefined) => (cents ?? 0) / 100;
 
+/** A select task's picks keyed by row label rather than row id, so Claude can read them. */
+function byRow(t: TbsTask, picks: Record<string, string>) {
+  if (t.type !== 'select') return picks;
+  return Object.fromEntries(t.rows.map((r) => [r.label, picks[r.id] ?? '(no answer)']));
+}
+
 /** Simulation amounts are stored in cents; show dollars so Claude doesn't misread them. */
 function tbsInDollars(item: TbsItem, revealed: ReturnType<typeof revealSimulation>) {
   const unitOf = new Map(item.tasks.map((t) => [t.id, t.type === 'numeric' ? t.unit : null]));
@@ -73,7 +81,9 @@ function tbsInDollars(item: TbsItem, revealed: ReturnType<typeof revealSimulatio
               ? lines(given.lines)
               : given?.type === 'research'
                 ? given.citation
-                : '(no answer)',
+                : given?.type === 'select'
+                  ? byRow(t, given.choices)
+                  : '(no answer)',
         correctAnswer:
           t.type === 'numeric'
             ? cents
@@ -81,7 +91,9 @@ function tbsInDollars(item: TbsItem, revealed: ReturnType<typeof revealSimulatio
               : t.answer
             : t.type === 'journal_entry'
               ? lines(t.answer as JournalLine[])
-              : t.answer,
+              : t.type === 'select'
+                ? byRow(t, taskAnswer(t) as Record<string, string>)
+                : t.answer,
         explanation: t.explanation,
       };
     }),

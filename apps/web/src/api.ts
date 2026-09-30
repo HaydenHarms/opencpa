@@ -87,14 +87,16 @@ export interface Mastery {
 export type TaskResponse =
   | { type: 'numeric'; value: number }
   | { type: 'journal_entry'; lines: { account: string; debit?: number; credit?: number }[] }
-  | { type: 'research'; citation: string };
+  | { type: 'research'; citation: string }
+  | { type: 'select'; choices: Record<string, string> };
 
 export interface TaskResult {
   id: string;
   earned: number;
   possible: number;
   correct: boolean;
-  answer: number | string[] | JournalLine[];
+  /** A select task's key is the correct option per row id. */
+  answer: number | string[] | JournalLine[] | Record<string, string>;
   explanation: string;
 }
 

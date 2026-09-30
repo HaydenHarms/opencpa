@@ -1,6 +1,7 @@
 /** Practice-session storage and what an answered item reveals, shared by the API and the MCP connector. */
 import {
   mcqVariant,
+  taskAnswer,
   toPublicMcq,
   toPublicTbs,
   variantCount,
@@ -122,7 +123,7 @@ export function revealSimulation(item: TbsItem, responses: Responses) {
     tasks: item.tasks.map((t) => ({
       id: t.id,
       ...result.tasks[t.id],
-      answer: t.answer,
+      answer: taskAnswer(t),
       explanation: t.explanation,
     })),
   };

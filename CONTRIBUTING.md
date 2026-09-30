@@ -62,13 +62,14 @@ explanation: >
 
 ## Simulation (TBS) task types
 
-| Type            | Student does                         | Graded by                                                           |
-| --------------- | ------------------------------------ | ------------------------------------------------------------------- |
-| `journal_entry` | Builds an entry from an account list | Line-by-line match; partial credit; extra lines cost credit         |
-| `numeric`       | Enters an amount                     | Exact match within `tolerance`                                      |
-| `research`      | Cites authoritative literature       | Match against accepted citations (`ASC 606-10-25-1`, `IRC §162(a)`) |
+| Type            | Student does                                                                                                     | Graded by                                                           |
+| --------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `journal_entry` | Builds an entry from an account list                                                                             | Line-by-line match; partial credit; extra lines cost credit         |
+| `numeric`       | Enters an amount                                                                                                 | Exact match within `tolerance`                                      |
+| `research`      | Cites authoritative literature                                                                                   | Match against accepted citations (`ASC 606-10-25-1`, `IRC §162(a)`) |
+| `select`        | Picks an option in each row's drop-down (classify items, or choose the correction for each phrase in a document) | A share of the points per matching row                              |
 
-The schema in `packages/schema/src/index.ts` is the source of truth. Journal entries must balance, and every answer account must appear in the task's account list; CI rejects anything that doesn't.
+The schema in `packages/schema/src/index.ts` is the source of truth. Journal entries must balance, and every answer account must appear in the task's account list. Each `select` row's answer must be one of its options (the row's own `options`, or the task's shared list). CI rejects anything that doesn't.
 
 ## Checking your work
 
