@@ -11,8 +11,8 @@ review:
   - ASC 450-20 (disclosure of loss contingencies)
   - ASC 460-10 (guarantor disclosures)
   notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Under U.S. GAAP, which of the following must an entity disclose in its notes even when the likelihood
-  of any loss is remote?
+stem: Under U.S. GAAP, which of the following must an entity disclose in its notes even when the chance
+  of any loss is slight?
 choices:
 - id: A
   text: A guarantee of another company's bank loan, where default is not expected

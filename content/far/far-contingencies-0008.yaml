@@ -21,8 +21,8 @@ stem: The controller of Pellington Tools is reviewing documents before Pellingto
   Board minutes record that an internal review confirmed Pellington overbilled a state agency $60,000
   during the year, an error the agency has not detected, and that the board has decided to report it to
   the agency in January; counsel expects the agency to demand repayment in full. In its December 31 statements,
-  what total should Pellington accrue for these matters, and what total loss beyond the amounts accrued
-  should its notes disclose as reasonably possible?
+  what total should Pellington accrue for these matters, and what total additional loss, beyond the amounts
+  accrued, must its notes disclose?
 choices:
 - id: A
   text: $310,000 accrued; $630,000 disclosed
@@ -61,8 +61,8 @@ variants:
     (4) Board minutes record that an internal review confirmed Quennell overbilled a state agency $45,000
     during the year, an error the agency has not detected, and that the board has decided to report it
     to the agency in January; counsel expects the agency to demand repayment in full. In its December
-    31 statements, what total should Quennell accrue for these matters, and what total loss beyond the
-    amounts accrued should its notes disclose as reasonably possible?
+    31 statements, what total should Quennell accrue for these matters, and what total additional loss,
+    beyond the amounts accrued, must its notes disclose?
   choices:
   - id: A
     text: $195,000 accrued; $470,000 disclosed
@@ -99,8 +99,8 @@ variants:
     (4) Board minutes record that an internal review confirmed Rushmore overbilled a state agency $85,000
     during the year, an error the agency has not detected, and that the board has decided to report it
     to the agency in January; counsel expects the agency to demand repayment in full. In its December
-    31 statements, what total should Rushmore accrue for these matters, and what total loss beyond the
-    amounts accrued should its notes disclose as reasonably possible?
+    31 statements, what total should Rushmore accrue for these matters, and what total additional loss,
+    beyond the amounts accrued, must its notes disclose?
   choices:
   - id: A
     text: $550,000 accrued; $570,000 disclosed
@@ -138,8 +138,8 @@ variants:
     (4) Board minutes record that an internal review confirmed Stanwick overbilled a state agency $70,000
     during the year, an error the agency has not detected, and that the board has decided to report it
     to the agency in January; counsel expects the agency to demand repayment in full. In its December
-    31 statements, what total should Stanwick accrue for these matters, and what total loss beyond the
-    amounts accrued should its notes disclose as reasonably possible?
+    31 statements, what total should Stanwick accrue for these matters, and what total additional loss,
+    beyond the amounts accrued, must its notes disclose?
   choices:
   - id: A
     text: $270,000 accrued; $610,000 disclosed

@@ -484,8 +484,14 @@ FAMILIES = [
 ]
 
 
+ASOF = "U.S. GAAP (ASC 740) and federal tax law in effect for 2026; rates are as stated in the stem"
+
+
 def main():
     items = [family(*f) for f in FAMILIES]
+    for it in items:
+        if it["id"].startswith("far-income-taxes-"):
+            it["review"]["asOf"] = ASOF
     finalize(items)
     failed = False
     for it in items:

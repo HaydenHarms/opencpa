@@ -678,7 +678,7 @@ WORD_ITEMS = [
     mcq("far-nfp-financial-position-0002", A1, "Statement of financial position (Not-for-Profit)", RU,
         ["ASC 958-210-05 and 958-210-45 (purpose and presentation of the statement of financial position)"],
         """What is the focus of a nongovernmental not-for-profit entity's statement of financial position?""",
-        [("The entity as a whole, including its liquidity and financial flexibility", "Correct. The statement reports assets, liabilities and net assets for the entity as a whole and helps users assess liquidity, financial flexibility and the relationship between assets and liabilities."),
+        [("The whole entity, including its liquidity and financial flexibility", "Correct. The statement reports assets, liabilities and net assets for the entity as a whole and helps users assess liquidity, financial flexibility and the relationship between assets and liabilities."),
          ("Each of the entity's funds, reported side by side in separate columns", "Fund reporting is not required. The statement focuses on the entity as a whole; net assets are shown in two classes by donor restriction."),
          ("Each net asset class, kept as a self-balancing set of accounts", "The two net asset classes are not self-balancing fund groups with their own assets and liabilities. The statement reports total assets and liabilities for the entity as a whole, and only net assets are split by donor restriction."),
          ("The cost of each of its programs, with expenses reported by function", "Expenses by function are reported in the statement of activities, a statement of functional expenses or the notes, not in the statement of financial position.")],
@@ -714,8 +714,14 @@ WORD_ITEMS = [
 ]
 
 
+ASOF = "U.S. GAAP (ASC 740) and federal tax law in effect for 2026; rates are as stated in the stem"
+
+
 def main():
     items = [family(*f) for f in FAMILIES] + WORD_ITEMS
+    for it in items:
+        if it["id"].startswith("far-income-taxes-"):
+            it["review"]["asOf"] = ASOF
     finalize(items)
     failed = False
     for it in items:

@@ -13,7 +13,7 @@ review:
 stem: What is the focus of a nongovernmental not-for-profit entity's statement of financial position?
 choices:
 - id: A
-  text: The entity as a whole, including its liquidity and financial flexibility
+  text: The whole entity, including its liquidity and financial flexibility
   rationale: Correct. The statement reports assets, liabilities and net assets for the entity as a whole
     and helps users assess liquidity, financial flexibility and the relationship between assets and liabilities.
 - id: B
