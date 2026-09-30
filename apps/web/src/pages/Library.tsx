@@ -162,6 +162,8 @@ export function LibraryTopicPage() {
   const section = rawSection.toUpperCase();
   const [status, setStatus] = useState<SessionStatus | null>(null);
   const [session, setSession] = useState<Session | null>(null);
+  /** Whether the session runner is showing. Landing on the topic page shows the topic, with a resume card. */
+  const [open, setOpen] = useState(false);
   const [entries, setEntries] = useState<LibraryEntry[] | null>(null);
   const [filter, setFilter] = useState<Filter>('all');
   const [error, setError] = useState<string | null>(null);
@@ -182,21 +184,33 @@ export function LibraryTopicPage() {
     setError(null);
     try {
       setSession(await api.startSession(section, size, topic));
+      setOpen(true);
     } catch (e) {
       fail(e as Error);
     }
   }
 
-  if (session)
+  if (session && open)
     return (
       <section>
         <Crumbs section={section} topic={topic} />
+        <button
+          className="link"
+          onClick={() => {
+            // Leave the session without ending it; it resumes from the topic page.
+            setOpen(false);
+            load();
+          }}
+        >
+          ← Back to {topic}
+        </button>
         <SessionRunner
           key={session.id}
           session={session}
           onError={fail}
           onNew={() => {
             setSession(null);
+            setOpen(false);
             load();
           }}
         />
@@ -224,6 +238,18 @@ export function LibraryTopicPage() {
       <h2>{topic}</h2>
       {error && <p className="error">Couldn’t reach the API: {error}</p>}
       {!status && !error && <p className="muted">Loading…</p>}
+      {session && session.status === 'active' && (
+        <article className="card resume">
+          <h2>Session in progress</h2>
+          <p className="muted">
+            {Object.keys(session.answered).length} of {session.items.length} answered. Pick up where
+            you left off, or start a new session below (your answers so far still count).
+          </p>
+          <button className="button" onClick={() => setOpen(true)}>
+            Resume session
+          </button>
+        </article>
+      )}
       {status && (
         <StartPanel
           section={topic}

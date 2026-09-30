@@ -416,3 +416,6 @@ body {
   align-items: center;
   gap: 12px;
 }
+.resume {
+  margin-bottom: 16px;
+}
