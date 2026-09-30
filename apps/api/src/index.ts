@@ -94,6 +94,30 @@ app.get('/simulations/:id', (c) => {
   return c.json(toPublicTbs(t));
 });
 
+/**
+ * Library search index: public text only (topic, area, skill, stem, choice text, titles and
+ * the authoritative references). No keys, rationales or explanations. The browser ranks it.
+ */
+app.get('/library/search-index', (c) => {
+  c.header('Cache-Control', 'public, max-age=300');
+  return c.json(
+    items.map((i) => ({
+      id: i.id,
+      type: i.type,
+      section: i.blueprint.section,
+      area: i.blueprint.area,
+      topic: i.blueprint.topic,
+      skill: i.blueprint.skill,
+      title: i.type === 'tbs' ? i.title : null,
+      text:
+        i.type === 'mcq'
+          ? [i.stem, ...i.choices.map((ch) => ch.text)].join(' ')
+          : [i.title, i.scenario, ...i.tasks.map((t) => t.prompt)].join(' '),
+      refs: i.review.references,
+    })),
+  );
+});
+
 // Everything below needs a student id. Until auth lands, the browser sends an anonymous device id.
 const userIdSchema = z.string().uuid();
 app.use('/me/*', async (c, next) => {

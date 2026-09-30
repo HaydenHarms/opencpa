@@ -154,6 +154,19 @@ export interface LibraryQuestion {
   last: (Revealed & { item: PublicMcq; at: number }) | null;
 }
 
+/** One item in the Library search index (public text only). */
+export interface SearchDoc {
+  id: string;
+  type: 'mcq' | 'tbs';
+  section: string;
+  area: string;
+  topic: string;
+  skill: string;
+  title: string | null;
+  text: string;
+  refs: string[];
+}
+
 const q = (params: Record<string, string | undefined>) => {
   const s = new URLSearchParams(
     Object.entries(params).filter((e): e is [string, string] => !!e[1]),
@@ -181,6 +194,7 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ itemId, selected, durationMs, variant }),
     }),
+  searchIndex: () => call<SearchDoc[]>('/library/search-index'),
   library: () => call<LibrarySection[]>('/me/library'),
   libraryItems: (section: string, topic?: string) =>
     call<LibraryEntry[]>(`/me/library/items${q({ section, topic })}`),

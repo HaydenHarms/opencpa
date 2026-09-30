@@ -16,7 +16,7 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 
 - **Practice sessions.** Pick a section and a length; the server builds a session that mixes blueprint areas by weight, brings back questions when they're due for review and leans toward your weak topics. Your first session in a section is a short diagnostic, and leaving the page never loses your place.
 - **Question versions.** Numeric questions come in several versions with different numbers, so a repeat is a new problem, not a memorized answer.
-- **Library.** Browse every exam by blueprint area and topic, practice any single topic, and look up any question in the archive (unanswered, missed, correct). Answers stay hidden until you've attempted a question.
+- **Library.** Browse every exam by blueprint area and topic, practice any single topic, and look up any question in the archive (unanswered, missed, correct). Search understands accounting synonyms and ASC numbers, so “fixed assets” finds PP&E and “DTL” finds income taxes. Answers stay hidden until you've attempted a question.
 - **Progress.** Coverage by section ("seen 12 of 150"), mastery by blueprint area, and mastery by topic, weakest first.
 - **Simulations.** Task-based simulations with exhibits, journal-entry grids, numeric and research tasks, graded deterministically with partial credit.
 - **Study with Claude.** Add OpenCPA as a connector in your own Claude account, and Claude can look up the question you just answered and explain it, using the official rationale. It explains; it never grades.
@@ -65,6 +65,7 @@ opencpa/
 - [x] Question versions (new numbers on every numeric FAR question)
 - [x] Task-based simulations (journal-entry grid, numeric, research)
 - [x] Library: browse by exam and topic, topic practice, question archive
+- [x] Library search: finds related topics and questions, not just exact wording (synonyms, ASC numbers, typos)
 - [ ] Finish FAR: two or more reviewed questions for every blueprint task, about 10 simulations
 - [ ] Remaining sections, in reviewed batches (BAR, then AUD and REG, then ISC and TCP)
 - [ ] Advanced practice settings

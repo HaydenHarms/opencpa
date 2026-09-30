@@ -3,7 +3,7 @@
  * look up any question in the archive. Every answer here is a normal attempt, so it feeds
  * mastery, review scheduling and the Progress page.
  */
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
   api,
@@ -17,6 +17,7 @@ import {
   type SessionStatus,
 } from '../api';
 import { Question, SessionRunner, StartPanel } from './Practice';
+import { makeSearch } from '../search';
 
 const pct = (x: number) => `${Math.round(x * 100)}%`;
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
@@ -58,6 +59,125 @@ function Meter({ value }: { value: number | null }) {
   );
 }
 
+let searchIndex: Promise<ReturnType<typeof makeSearch>> | null = null;
+/** The search index loads once per page load, on first use. */
+function loadSearch() {
+  searchIndex ??= api.searchIndex().then(makeSearch);
+  searchIndex.catch(() => (searchIndex = null));
+  return searchIndex;
+}
+
+/**
+ * Library search box. With a query it shows ranked topics and questions instead of the
+ * page's tiles; `children` render when the box is empty.
+ */
+function LibrarySearch({ section, children }: { section?: string; children: React.ReactNode }) {
+  const [query, setQuery] = useState('');
+  const [search, setSearch] = useState<ReturnType<typeof makeSearch> | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const results = useMemo(
+    () => (search && query.trim() ? search(query, section) : null),
+    [search, query, section],
+  );
+
+  function begin() {
+    if (!search)
+      loadSearch().then(
+        // Wrapped, because React would treat a bare function as a state updater.
+        (fn) => setSearch(() => fn),
+        (e: Error) => setError(e.message),
+      );
+  }
+
+  return (
+    <>
+      <input
+        className="search"
+        type="search"
+        placeholder={
+          section
+            ? `Search ${section} topics and questions…`
+            : 'Search topics and questions, e.g. fixed assets, DTL, ASC 842, lawsuit…'
+        }
+        value={query}
+        onFocus={begin}
+        onChange={(e) => {
+          begin();
+          setQuery(e.target.value);
+        }}
+      />
+      {error && <p className="error">Search isn’t available right now: {error}</p>}
+      {!query.trim() ? (
+        children
+      ) : !results ? (
+        <p className="muted">Loading search…</p>
+      ) : results.topics.length === 0 && results.items.length === 0 ? (
+        <p className="muted">
+          Nothing matches “{query}”. Try a broader term or a related one (for example “leases”
+          instead of a specific lease clause).
+        </p>
+      ) : (
+        <>
+          {results.topics.length > 0 && (
+            <>
+              <h3 className="area-head">Topics</h3>
+              <div className="tiles">
+                {results.topics.map((t) => (
+                  <Link
+                    key={t.section + t.topic}
+                    to={topicPath(t.section, t.topic)}
+                    className="card tile"
+                  >
+                    <span className="meta">
+                      {t.section} · {t.area}
+                    </span>
+                    <b>{t.topic}</b>
+                    <span className="meta">
+                      {t.matches
+                        ? `${plural(t.matches, 'matching item')} of ${t.items}`
+                        : `Related topic · ${plural(t.items, 'item')}`}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
+          {results.items.length > 0 && (
+            <>
+              <h3 className="area-head">Questions</h3>
+              <ul className="sim-list">
+                {results.items.map(({ doc }) => (
+                  <li key={doc.id}>
+                    <Link
+                      to={
+                        doc.type === 'tbs'
+                          ? `/simulations/${doc.id}`
+                          : `/library/${doc.section}/q/${doc.id}`
+                      }
+                      className="card sim-link"
+                    >
+                      <span>
+                        {doc.type === 'tbs' && <b>Simulation · </b>}
+                        {doc.title ??
+                          (doc.text.length > 160
+                            ? doc.text.slice(0, 157).trimEnd() + '…'
+                            : doc.text)}
+                      </span>
+                      <span className="meta">
+                        {doc.section} · {doc.topic} · {doc.skill}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </>
+      )}
+    </>
+  );
+}
+
 /** /library — one tile per exam section. */
 export function LibraryHome() {
   const { data, error } = useLibrary();
@@ -70,36 +190,38 @@ export function LibraryHome() {
         Every exam, every blueprint topic and every reviewed question. Pick an exam to browse its
         topics, practice one topic, or look up any question you’ve answered.
       </p>
-      <div className="tiles">
-        {data.map((s) => {
-          const total = s.questions + s.simulations;
-          return (
-            <Link
-              key={s.section}
-              to={`/library/${s.section}`}
-              className={`card tile ${total ? '' : 'empty'}`}
-            >
-              <span className="tile-code">{s.section}</span>
-              <b>{SECTION_NAMES[s.section]}</b>
-              <span className="meta">
-                {total
-                  ? `${plural(s.questions, 'question')} · ${plural(s.simulations, 'simulation')} · ${plural(s.topics.length, 'topic')}`
-                  : 'Coming soon'}
-              </span>
-              {total > 0 && (
-                <>
-                  <span className="meta">
-                    Seen {s.seen} of {total}
-                  </span>
-                  <div className="progress">
-                    <span style={{ width: `${(s.seen / total) * 100}%` }} />
-                  </div>
-                </>
-              )}
-            </Link>
-          );
-        })}
-      </div>
+      <LibrarySearch>
+        <div className="tiles">
+          {data.map((s) => {
+            const total = s.questions + s.simulations;
+            return (
+              <Link
+                key={s.section}
+                to={`/library/${s.section}`}
+                className={`card tile ${total ? '' : 'empty'}`}
+              >
+                <span className="tile-code">{s.section}</span>
+                <b>{SECTION_NAMES[s.section]}</b>
+                <span className="meta">
+                  {total
+                    ? `${plural(s.questions, 'question')} · ${plural(s.simulations, 'simulation')} · ${plural(s.topics.length, 'topic')}`
+                    : 'Coming soon'}
+                </span>
+                {total > 0 && (
+                  <>
+                    <span className="meta">
+                      Seen {s.seen} of {total}
+                    </span>
+                    <div className="progress">
+                      <span style={{ width: `${(s.seen / total) * 100}%` }} />
+                    </div>
+                  </>
+                )}
+              </Link>
+            );
+          })}
+        </div>
+      </LibrarySearch>
     </section>
   );
 }
@@ -130,26 +252,30 @@ export function LibrarySectionPage() {
           {s.accuracy !== null && <> · {pct(s.accuracy)} correct overall</>}
         </p>
       )}
-      {[...areas].map(([area, topics]) => (
-        <div key={area}>
-          <h3 className="area-head">{area}</h3>
-          <div className="tiles">
-            {topics.map((t) => (
-              <Link key={t.topic} to={topicPath(s.section, t.topic)} className="card tile">
-                <b>{t.topic}</b>
-                <span className="meta">
-                  {plural(t.questions, 'question')}
-                  {t.simulations > 0 && ` · ${plural(t.simulations, 'simulation')}`}
-                </span>
-                <span className="meta">
-                  Seen {t.seen} of {t.questions + t.simulations}
-                </span>
-                <Meter value={t.mastery} />
-              </Link>
-            ))}
-          </div>
-        </div>
-      ))}
+      {s.topics.length > 0 && (
+        <LibrarySearch section={s.section}>
+          {[...areas].map(([area, topics]) => (
+            <div key={area}>
+              <h3 className="area-head">{area}</h3>
+              <div className="tiles">
+                {topics.map((t) => (
+                  <Link key={t.topic} to={topicPath(s.section, t.topic)} className="card tile">
+                    <b>{t.topic}</b>
+                    <span className="meta">
+                      {plural(t.questions, 'question')}
+                      {t.simulations > 0 && ` · ${plural(t.simulations, 'simulation')}`}
+                    </span>
+                    <span className="meta">
+                      Seen {t.seen} of {t.questions + t.simulations}
+                    </span>
+                    <Meter value={t.mastery} />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </LibrarySearch>
+      )}
     </section>
   );
 }
