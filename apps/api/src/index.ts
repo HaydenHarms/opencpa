@@ -435,12 +435,14 @@ app.get('/me/library', async (c) => {
         simulations: 0,
         seen: 0,
         attempts: 0,
+        correct: 0,
       };
       if (i.type === 'mcq') t.questions++;
       else t.simulations++;
       const n = byItem.get(i.id)?.length ?? 0;
       if (n) t.seen++;
       t.attempts += n;
+      t.correct += byItem.get(i.id)?.filter((a) => a.correct).length ?? 0;
       topics.set(i.blueprint.topic, t);
     }
     const list = [...topics.values()]

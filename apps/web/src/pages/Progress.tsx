@@ -118,6 +118,9 @@ export default function Progress() {
                         <span style={{ width: `${Math.round(t.mastery! * 100)}%` }} />
                       </div>
                       {Math.round(t.mastery! * 100)}%
+                      <div className="meta">
+                        {t.correct} of {t.attempts} correct
+                      </div>
                     </td>
                   </tr>
                 ))}

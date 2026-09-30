@@ -120,6 +120,8 @@ export interface LibraryTopic {
   /** Items in the topic the student has answered at least once. */
   seen: number;
   attempts: number;
+  /** Attempts answered correctly (simulations count when fully correct). */
+  correct: number;
   /** Recency-weighted accuracy (0–1), or null before any attempt. */
   mastery: number | null;
 }
