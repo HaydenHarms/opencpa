@@ -138,6 +138,15 @@ def audit(items):
             if key in answers:
                 warnings.append(f"{label}: same correct answer as another version")
             answers.add(key)
+    if not os.environ.get("SKIP_LINT"):  # SKIP_LINT=1 when re-running an old batch script on purpose
+        import lint  # imported here: lint.py imports this module
+        pool = {d["id"]: d for d in lint.load([os.path.join(lint.REPO, "content")])}
+        pool.update({it["id"]: it for it in items})
+        for label, rule, msg in lint.lint_items(items, lint.build_context(list(pool.values()))):
+            if rule in lint.NOTE_RULES:
+                print(f"NOTE {label}: [{rule}] {msg}", file=sys.stderr)
+            else:
+                warnings.append(f"{label}: [{rule}] {msg}")
     for w in warnings:
         print("WARN", w, file=sys.stderr)
     return len(warnings)
@@ -148,11 +157,6 @@ def _audit_one(it):
     warnings = []
     ch = it["choices"]
     lens = {c["id"]: len(c["text"]) for c in ch}
-    if not is_numeric(ch):
-        right_len = lens[it["answer"]]
-        others = [v for k, v in lens.items() if k != it["answer"]]
-        if right_len > max(others) * 1.15:
-            warnings.append(f"{it['id']}: correct answer is >15% longer than every distractor")
     if len(ch) != 4:
         warnings.append(f"{it['id']}: has {len(ch)} choices; FAR/BAR MCQs have exactly four")
     if len({c["text"] for c in ch}) != len(ch):
