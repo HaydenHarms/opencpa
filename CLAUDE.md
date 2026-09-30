@@ -87,6 +87,16 @@ These are hard requirements:
 - **Precision.** Say how to round. Scope every "balance" question (the checking account, or cash to report?). State the entity type wherever private companies have an election.
 - **Journal entries.** Keys have one line per account; the grader nets each account first. Where GAAP allows a gross or a net presentation, the prompt fixes which accounts to use.
 
+### Scaling the bank (Hayden's decision, 2026-09-30)
+
+Long-term goal: about **2,000 questions per exam section**. Running one batch at a time is too slow for that, so the pipeline uses these three tactics. The quality bar above does not change.
+
+1. **Parallel batches.** Split the gap list (`scripts/far-coverage.py`, and its equivalent for later sections) into non-overlapping slices, normally one per blueprint area, and give each slice to its own subagent with its own batch script (`scripts/batches/<section>-batch-NN.py`, one NN per slice) and its own blind verifier. Slices must not share topics or blueprint tasks, so no two agents write near-duplicate items or touch the same files. Before committing, the lead merges the slices: run `pnpm content:validate` and `audit()` on everything, check across slices for duplicates by concept and number set, and recompute the section's skill and area mix. The review gate then runs once on the combined set, with one report per batch number.
+2. **Versions count toward the goal.** A question is a distinct problem a student can't memorize, so each numeric item's three variants count alongside it: an item with variants is four problems. Report both numbers (items, and items plus variants) in reviews and status updates. Variants still go through `audit()` and the blind verifier like any item.
+3. **Question families.** When one scenario is set up well (facts, the rule, error-derived distractors), a builder can produce several *distinct* items from it, not only new-number variants: a different figure asked for, different facts that change the treatment, or a different error tested. Each family member gets its own id, its own blueprint task and skill tag, its own rationales and its own variants, and must pass the duplicate rules in the quality bar (no shared stem and choice template for the same task; a student who has seen one must still have to reason through the next). Family members are counted as separate items only if the review gate agrees they test something different.
+
+Sampled review (every item reviewed only in part) was considered and **not** adopted: every item still goes through the full review gate.
+
 ### Per batch (~25 items)
 
 1. **Plan coverage first.** Pick topics from the blueprint gaps and the skill mix, then find or write items.

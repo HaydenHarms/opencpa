@@ -6,29 +6,40 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 
 **Live:** [opencpa.pages.dev](https://opencpa.pages.dev)
 
-> **Status: early alpha.** The platform is deployed end to end (site, API, database, CI). The question bank is being vetted and added in reviewed batches, starting with FAR, so the site shows no questions until the first batch lands.
+> **Status: alpha.** The platform is deployed end to end (site, API, database, CI). The question bank grows in reviewed batches, FAR first: today there are 150 FAR questions (with about 300 new-number versions), 3 FAR simulations and 25 BAR questions. AUD, REG, ISC and TCP come after FAR is complete. The long-term goal is about 2,000 questions per section.
 
 ---
 
-## Features (planned)
+## Features
+
+**Live now**
+
+- **Practice sessions.** Pick a section and a length; the server builds a session that mixes blueprint areas by weight, brings back questions when they're due for review and leans toward your weak topics. Your first session in a section is a short diagnostic, and leaving the page never loses your place.
+- **Question versions.** Numeric questions come in several versions with different numbers, so a repeat is a new problem, not a memorized answer.
+- **Library.** Browse every exam by blueprint area and topic, practice any single topic, and look up any question in the archive (unanswered, missed, correct). Answers stay hidden until you've attempted a question.
+- **Progress.** Coverage by section ("seen 12 of 150"), mastery by blueprint area, and mastery by topic, weakest first.
+- **Simulations.** Task-based simulations with exhibits, journal-entry grids, numeric and research tasks, graded deterministically with partial credit.
+- **Study with Claude.** Add OpenCPA as a connector in your own Claude account, and Claude can look up the question you just answered and explain it, using the official rationale. It explains; it never grades.
+
+**Planned**
 
 - **Blueprint-aligned content.** Every question and simulation is tagged to the AICPA blueprint by section (FAR, AUD, REG, plus BAR/ISC/TCP), content area, and skill level.
 - **Adaptive review.** Spaced repetition (FSRS) schedules individual items, and results roll up into a mastery map by blueprint area so you can see your weak spots at a glance.
-- **Task-based simulations (TBS).** Interactive journal-entry grids, spreadsheet exhibits, and authoritative-literature research tasks, all graded deterministically.
-- **AI tutor.** Claude explains why an answer is right, why a distractor is tempting, and creates fresh variants to check that the concept stuck. The tutor explains; it never grades.
+- **More simulation task types,** starting with dropdown (select) tasks.
 - **Exam-day mode.** Timed testlets modeled on the real exam interface, with a calculator, flag-for-review, and a literature panel.
-- **Bring your own key.** Use your own Anthropic API key for the tutor, so the project stays free to host and free to use.
+- **In-app tutor** using your own Anthropic API key, so the project stays free to host and free to use.
+- **Advanced settings** for weighting practice toward your strengths or weaknesses.
 
 ## Architecture
 
-| Layer    | Tech                             |
-| -------- | -------------------------------- |
-| Frontend | React + Vite on Cloudflare Pages |
-| API      | Hono on Cloudflare Workers       |
-| Database | Cloudflare D1 (SQLite)           |
-| Storage  | Cloudflare R2 (exhibits, media)  |
-| Auth     | GitHub OAuth / email magic link  |
-| Tutor    | Claude API (tool use)            |
+| Layer    | Tech                                                                   |
+| -------- | ---------------------------------------------------------------------- |
+| Frontend | React + Vite on Cloudflare Pages                                       |
+| API      | Hono on Cloudflare Workers                                             |
+| Database | Cloudflare D1 (SQLite)                                                 |
+| Tutor    | Remote MCP connector on the API; students use their own Claude account |
+| Storage  | Cloudflare R2 (planned: exhibits, media)                               |
+| Auth     | Anonymous device id today; GitHub OAuth / email magic link planned     |
 
 ```
 opencpa/
@@ -49,10 +60,16 @@ opencpa/
 - [x] Monorepo scaffold: React site, Hono API, D1 database, content schema, CI
 - [x] Deployed to Cloudflare (Pages + Workers + D1) with automatic deploys from `main`
 - [x] First reviewed FAR batch (~25 questions)
-- [ ] Remaining sections, in reviewed batches
-- [ ] Task-based simulations (journal-entry grid, numeric, research)
+- [x] Practice sessions with adaptive selection and a diagnostic
+- [x] Claude connector: study with your own Claude account
+- [x] Question versions (new numbers on every numeric FAR question)
+- [x] Task-based simulations (journal-entry grid, numeric, research)
+- [x] Library: browse by exam and topic, topic practice, question archive
+- [ ] Finish FAR: two or more reviewed questions for every blueprint task, about 10 simulations
+- [ ] Remaining sections, in reviewed batches (BAR, then AUD and REG, then ISC and TCP)
+- [ ] Advanced practice settings
 - [ ] Accounts (GitHub / email) so progress syncs across devices
-- [ ] AI tutor (bring your own Claude API key)
+- [ ] In-app tutor (bring your own Claude API key)
 - [ ] Rate limiting, UI redesign, custom domain
 - [ ] Exam-day mode
 
