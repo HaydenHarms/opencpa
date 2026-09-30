@@ -1,0 +1,158 @@
+id: far-income-statement-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 220-10 (income statement presentation)
+  - ASC 205-20 (discontinued operations)
+  - 'ASC 321-10 (equity securities: fair value changes in net income)'
+  - 'ASC 320-10 (available-for-sale debt securities: unrealized holding gains in other comprehensive income)'
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Easby Corp.''s adjusted trial balance for Year 1 includes the following pretax amounts: sales $2,400,000;
+  sales returns and allowances $60,000; cost of goods sold $1,380,000; selling expenses $240,000; general
+  and administrative expenses $310,000; interest revenue $18,000; interest expense $45,000; gain on sale
+  of equipment $22,000; unrealized gain on equity securities with readily determinable fair values $15,000;
+  unrealized holding gain on available-for-sale debt securities $30,000; operating loss of the furniture
+  division $90,000; and dividends declared $50,000. The furniture division was one of Easby''s three business
+  segments; Easby sold it in November, Year 1, and no longer makes furniture. What amount should Easby
+  report as income from continuing operations before income taxes in its Year 1 multi-step income statement?'
+choices:
+- id: A
+  text: $330,000
+  rationale: Subtracts the $90,000 loss of the furniture division. The division was a separate segment,
+    and selling it took Easby out of the furniture business, a strategic shift, so its results are reported
+    in discontinued operations, below income from continuing operations.
+- id: B
+  text: $370,000
+  rationale: Subtracts the $50,000 of dividends declared. Dividends are distributions of equity, reported
+    in the statement of changes in equity, not expenses.
+- id: C
+  text: $405,000
+  rationale: Leaves out the $15,000 unrealized gain on the equity securities. Changes in the fair value
+    of equity securities with readily determinable fair values are reported in net income.
+- id: D
+  text: $420,000
+  rationale: Correct. Net sales $2,340,000 − $1,380,000 − $240,000 − $310,000 + $18,000 − $45,000 + $22,000
+    + $15,000.
+answer: D
+explanation: 'Net sales = $2,400,000 − $60,000 = $2,340,000. Subtract cost of goods sold ($1,380,000),
+  selling expenses ($240,000) and general and administrative expenses ($310,000) for operating income
+  of $410,000. Other income and expense: + $18,000 interest revenue − $45,000 interest expense + $22,000
+  gain on the equipment + $15,000 unrealized gain on equity securities, whose fair value changes go to
+  net income. Income from continuing operations before income taxes = $420,000. The unrealized gain on
+  available-for-sale debt securities is other comprehensive income; the division''s loss is reported in
+  discontinued operations because its sale was a strategic shift out of a whole segment; dividends declared
+  are not expenses.'
+variants:
+- stem: 'Fenby Corp.''s adjusted trial balance for Year 1 includes the following pretax amounts: sales
+    $3,150,000; sales returns and allowances $85,000; cost of goods sold $1,890,000; selling expenses
+    $320,000; general and administrative expenses $405,000; interest revenue $24,000; interest expense
+    $60,000; gain on sale of equipment $31,000; unrealized gain on equity securities with readily determinable
+    fair values $26,000; unrealized holding gain on available-for-sale debt securities $42,000; operating
+    loss of the furniture division $130,000; and dividends declared $75,000. The furniture division was
+    one of Fenby''s three business segments; Fenby sold it in November, Year 1, and no longer makes furniture.
+    What amount should Fenby report as income from continuing operations before income taxes in its Year
+    1 multi-step income statement?'
+  choices:
+  - id: A
+    text: $396,000
+    rationale: Subtracts the $75,000 of dividends declared. Dividends are distributions of equity, reported
+      in the statement of changes in equity, not expenses.
+  - id: B
+    text: $471,000
+    rationale: Correct. Net sales $3,065,000 − $1,890,000 − $320,000 − $405,000 + $24,000 − $60,000 +
+      $31,000 + $26,000.
+  - id: C
+    text: $513,000
+    rationale: Adds the $42,000 unrealized holding gain on available-for-sale debt securities, which is
+      reported in other comprehensive income, not in net income.
+  - id: D
+    text: $556,000
+    rationale: Starts from gross sales. The $85,000 of sales returns and allowances is deducted to arrive
+      at net sales.
+  answer: B
+  explanation: 'Net sales = $3,150,000 − $85,000 = $3,065,000. Subtract cost of goods sold ($1,890,000),
+    selling expenses ($320,000) and general and administrative expenses ($405,000) for operating income
+    of $450,000. Other income and expense: + $24,000 interest revenue − $60,000 interest expense + $31,000
+    gain on the equipment + $26,000 unrealized gain on equity securities, whose fair value changes go
+    to net income. Income from continuing operations before income taxes = $471,000. The unrealized gain
+    on available-for-sale debt securities is other comprehensive income; the division''s loss is reported
+    in discontinued operations because its sale was a strategic shift out of a whole segment; dividends
+    declared are not expenses.'
+- stem: 'Glaisdale Corp.''s adjusted trial balance for Year 1 includes the following pretax amounts: sales
+    $1,760,000; sales returns and allowances $40,000; cost of goods sold $1,010,000; selling expenses
+    $185,000; general and administrative expenses $230,000; interest revenue $12,000; interest expense
+    $36,000; gain on sale of equipment $15,000; unrealized gain on equity securities with readily determinable
+    fair values $11,000; unrealized holding gain on available-for-sale debt securities $24,000; operating
+    loss of the furniture division $65,000; and dividends declared $30,000. The furniture division was
+    one of Glaisdale''s three business segments; Glaisdale sold it in November, Year 1, and no longer
+    makes furniture. What amount should Glaisdale report as income from continuing operations before income
+    taxes in its Year 1 multi-step income statement?'
+  choices:
+  - id: A
+    text: $232,000
+    rationale: Subtracts the $65,000 loss of the furniture division. The division was a separate segment,
+      and selling it took Glaisdale out of the furniture business, a strategic shift, so its results are
+      reported in discontinued operations, below income from continuing operations.
+  - id: B
+    text: $297,000
+    rationale: Correct. Net sales $1,720,000 − $1,010,000 − $185,000 − $230,000 + $12,000 − $36,000 +
+      $15,000 + $11,000.
+  - id: C
+    text: $321,000
+    rationale: Adds the $24,000 unrealized holding gain on available-for-sale debt securities, which is
+      reported in other comprehensive income, not in net income.
+  - id: D
+    text: $337,000
+    rationale: Starts from gross sales. The $40,000 of sales returns and allowances is deducted to arrive
+      at net sales.
+  answer: B
+  explanation: 'Net sales = $1,760,000 − $40,000 = $1,720,000. Subtract cost of goods sold ($1,010,000),
+    selling expenses ($185,000) and general and administrative expenses ($230,000) for operating income
+    of $295,000. Other income and expense: + $12,000 interest revenue − $36,000 interest expense + $15,000
+    gain on the equipment + $11,000 unrealized gain on equity securities, whose fair value changes go
+    to net income. Income from continuing operations before income taxes = $297,000. The unrealized gain
+    on available-for-sale debt securities is other comprehensive income; the division''s loss is reported
+    in discontinued operations because its sale was a strategic shift out of a whole segment; dividends
+    declared are not expenses.'
+- stem: 'Hathersage Corp.''s adjusted trial balance for Year 1 includes the following pretax amounts:
+    sales $4,200,000; sales returns and allowances $110,000; cost of goods sold $2,480,000; selling expenses
+    $430,000; general and administrative expenses $560,000; interest revenue $35,000; interest expense
+    $82,000; gain on sale of equipment $40,000; unrealized gain on equity securities with readily determinable
+    fair values $33,000; unrealized holding gain on available-for-sale debt securities $55,000; operating
+    loss of the furniture division $170,000; and dividends declared $100,000. The furniture division was
+    one of Hathersage''s three business segments; Hathersage sold it in November, Year 1, and no longer
+    makes furniture. What amount should Hathersage report as income from continuing operations before
+    income taxes in its Year 1 multi-step income statement?'
+  choices:
+  - id: A
+    text: $476,000
+    rationale: Subtracts the $170,000 loss of the furniture division. The division was a separate segment,
+      and selling it took Hathersage out of the furniture business, a strategic shift, so its results
+      are reported in discontinued operations, below income from continuing operations.
+  - id: B
+    text: $613,000
+    rationale: Leaves out the $33,000 unrealized gain on the equity securities. Changes in the fair value
+      of equity securities with readily determinable fair values are reported in net income.
+  - id: C
+    text: $646,000
+    rationale: Correct. Net sales $4,090,000 − $2,480,000 − $430,000 − $560,000 + $35,000 − $82,000 +
+      $40,000 + $33,000.
+  - id: D
+    text: $756,000
+    rationale: Starts from gross sales. The $110,000 of sales returns and allowances is deducted to arrive
+      at net sales.
+  answer: C
+  explanation: 'Net sales = $4,200,000 − $110,000 = $4,090,000. Subtract cost of goods sold ($2,480,000),
+    selling expenses ($430,000) and general and administrative expenses ($560,000) for operating income
+    of $620,000. Other income and expense: + $35,000 interest revenue − $82,000 interest expense + $40,000
+    gain on the equipment + $33,000 unrealized gain on equity securities, whose fair value changes go
+    to net income. Income from continuing operations before income taxes = $646,000. The unrealized gain
+    on available-for-sale debt securities is other comprehensive income; the division''s loss is reported
+    in discontinued operations because its sale was a strategic shift out of a whole segment; dividends
+    declared are not expenses.'

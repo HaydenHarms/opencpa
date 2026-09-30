@@ -1,0 +1,164 @@
+id: far-revenue-contract-costs-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 340-40 (other assets and deferred costs: contracts with customers)'
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Carraway Payroll Services elects the practical expedient to expense the costs of obtaining a contract
+  when the amortization period would be one year or less. On April 1, Year 1, it signed a four-year contract
+  to process a client's payroll, with services running from July 1, Year 1, through June 30, Year 5; renewal
+  isn't expected. Carraway paid its salesperson a $38,400 commission owed only because the contract was
+  signed. Before services began, Carraway spent $57,600 migrating and testing the client's payroll data
+  and setting up the client's pay rules in its existing processing systems (costs not within the scope
+  of any other Topic), work that transfers no service to the client and that the contract's fees are priced
+  to recover. It also spent $12,000 training its staff on its updated processing systems, and a regional
+  manager earned an $8,800 bonus based on the region's total sales for the quarter. On November 1, Year
+  1, Carraway signed a 10-month contract with another client, which isn't expected to be renewed either,
+  and paid a $9,000 commission that relates only to that contract. Carraway amortizes capitalized contract
+  costs straight-line over the period services are provided. What total contract cost assets should Carraway
+  report at December 31, Year 1?
+choices:
+- id: A
+  text: $33,600
+  rationale: Expenses the $57,600 of setup. Setup costs that relate directly to the contract, create a
+    resource used to provide the services and are expected to be recovered are fulfillment costs, capitalized.
+- id: B
+  text: $84,000
+  rationale: Correct. ($38,400 + $57,600) × 42/48.
+- id: C
+  text: $91,200
+  rationale: Capitalizes the $9,000 commission on the 10-month contract. Carraway elected the practical
+    expedient, so a cost of obtaining a contract with an amortization period of one year or less is expensed.
+- id: D
+  text: $94,500
+  rationale: Capitalizes the $12,000 of staff training. Training doesn't create or enhance a resource
+    used to satisfy this contract, so it is expensed as incurred.
+answer: B
+explanation: 'The $38,400 commission is an incremental cost of obtaining the four-year contract and is
+  capitalized. The $57,600 of setup relates directly to the contract, creates a resource Carraway uses
+  to provide the services and is expected to be recovered, so it is a capitalized fulfillment cost. Training
+  and the sales-based regional bonus are expensed. The 10-month contract''s commission would be amortized
+  over one year or less, so under the elected expedient it is expensed. Both assets are amortized over
+  the 48 months of service from July 1, Year 1; six months have passed at December 31, leaving 42/48:
+  ($38,400 + $57,600) × 42/48 = $84,000.'
+variants:
+- stem: Dunleavy Payroll Services elects the practical expedient to expense the costs of obtaining a contract
+    when the amortization period would be one year or less. On April 1, Year 1, it signed a four-year
+    contract to process a client's payroll, with services running from July 1, Year 1, through June 30,
+    Year 5; renewal isn't expected. Dunleavy paid its salesperson a $28,800 commission owed only because
+    the contract was signed. Before services began, Dunleavy spent $19,200 migrating and testing the client's
+    payroll data and setting up the client's pay rules in its existing processing systems (costs not within
+    the scope of any other Topic), work that transfers no service to the client and that the contract's
+    fees are priced to recover. It also spent $7,200 training its staff on its updated processing systems,
+    and a regional manager earned a $6,400 bonus based on the region's total sales for the quarter. On
+    November 1, Year 1, Dunleavy signed a 10-month contract with another client, which isn't expected
+    to be renewed either, and paid a $5,500 commission that relates only to that contract. Dunleavy amortizes
+    capitalized contract costs straight-line over the period services are provided. What total contract
+    cost assets should Dunleavy report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $25,200
+    rationale: Expenses the $19,200 of setup. Setup costs that relate directly to the contract, create
+      a resource used to provide the services and are expected to be recovered are fulfillment costs,
+      capitalized.
+  - id: B
+    text: $39,000
+    rationale: Starts amortization on April 1, when the contract was signed. The asset is amortized as
+      the services are provided, starting July 1.
+  - id: C
+    text: $42,000
+    rationale: Correct. ($28,800 + $19,200) × 42/48.
+  - id: D
+    text: $46,400
+    rationale: Capitalizes the $5,500 commission on the 10-month contract. Dunleavy elected the practical
+      expedient, so a cost of obtaining a contract with an amortization period of one year or less is
+      expensed.
+  answer: C
+  explanation: 'The $28,800 commission is an incremental cost of obtaining the four-year contract and
+    is capitalized. The $19,200 of setup relates directly to the contract, creates a resource Dunleavy
+    uses to provide the services and is expected to be recovered, so it is a capitalized fulfillment cost.
+    Training and the sales-based regional bonus are expensed. The 10-month contract''s commission would
+    be amortized over one year or less, so under the elected expedient it is expensed. Both assets are
+    amortized over the 48 months of service from July 1, Year 1; six months have passed at December 31,
+    leaving 42/48: ($28,800 + $19,200) × 42/48 = $42,000.'
+- stem: Ellsworth Payroll Services elects the practical expedient to expense the costs of obtaining a
+    contract when the amortization period would be one year or less. On April 1, Year 1, it signed a four-year
+    contract to process a client's payroll, with services running from July 1, Year 1, through June 30,
+    Year 5; renewal isn't expected. Ellsworth paid its salesperson a $52,800 commission owed only because
+    the contract was signed. Before services began, Ellsworth spent $38,400 migrating and testing the
+    client's payroll data and setting up the client's pay rules in its existing processing systems (costs
+    not within the scope of any other Topic), work that transfers no service to the client and that the
+    contract's fees are priced to recover. It also spent $16,000 training its staff on its updated processing
+    systems, and a regional manager earned a $12,800 bonus based on the region's total sales for the quarter.
+    On November 1, Year 1, Ellsworth signed a 10-month contract with another client, which isn't expected
+    to be renewed either, and paid an $11,000 commission that relates only to that contract. Ellsworth
+    amortizes capitalized contract costs straight-line over the period services are provided. What total
+    contract cost assets should Ellsworth report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $46,200
+    rationale: Expenses the $38,400 of setup. Setup costs that relate directly to the contract, create
+      a resource used to provide the services and are expected to be recovered are fulfillment costs,
+      capitalized.
+  - id: B
+    text: $79,800
+    rationale: Correct. ($52,800 + $38,400) × 42/48.
+  - id: C
+    text: $91,200
+    rationale: Records no amortization for Year 1. Services began July 1, so six months of the 48-month
+      service period have passed.
+  - id: D
+    text: $93,800
+    rationale: Capitalizes the $16,000 of staff training. Training doesn't create or enhance a resource
+      used to satisfy this contract, so it is expensed as incurred.
+  answer: B
+  explanation: 'The $52,800 commission is an incremental cost of obtaining the four-year contract and
+    is capitalized. The $38,400 of setup relates directly to the contract, creates a resource Ellsworth
+    uses to provide the services and is expected to be recovered, so it is a capitalized fulfillment cost.
+    Training and the sales-based regional bonus are expensed. The 10-month contract''s commission would
+    be amortized over one year or less, so under the elected expedient it is expensed. Both assets are
+    amortized over the 48 months of service from July 1, Year 1; six months have passed at December 31,
+    leaving 42/48: ($52,800 + $38,400) × 42/48 = $79,800.'
+- stem: Farnsworth Payroll Services elects the practical expedient to expense the costs of obtaining a
+    contract when the amortization period would be one year or less. On April 1, Year 1, it signed a four-year
+    contract to process a client's payroll, with services running from July 1, Year 1, through June 30,
+    Year 5; renewal isn't expected. Farnsworth paid its salesperson a $24,000 commission owed only because
+    the contract was signed. Before services began, Farnsworth spent $33,600 migrating and testing the
+    client's payroll data and setting up the client's pay rules in its existing processing systems (costs
+    not within the scope of any other Topic), work that transfers no service to the client and that the
+    contract's fees are priced to recover. It also spent $9,600 training its staff on its updated processing
+    systems, and a regional manager earned a $5,600 bonus based on the region's total sales for the quarter.
+    On November 1, Year 1, Farnsworth signed a 10-month contract with another client, which isn't expected
+    to be renewed either, and paid a $7,500 commission that relates only to that contract. Farnsworth
+    amortizes capitalized contract costs straight-line over the period services are provided. What total
+    contract cost assets should Farnsworth report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $46,800
+    rationale: Starts amortization on April 1, when the contract was signed. The asset is amortized as
+      the services are provided, starting July 1.
+  - id: B
+    text: $50,400
+    rationale: Correct. ($24,000 + $33,600) × 42/48.
+  - id: C
+    text: $55,300
+    rationale: Capitalizes the $5,600 bonus. It depends on the region's total sales, not on obtaining
+      this contract, so it isn't an incremental cost of this contract.
+  - id: D
+    text: $57,600
+    rationale: Records no amortization for Year 1. Services began July 1, so six months of the 48-month
+      service period have passed.
+  answer: B
+  explanation: 'The $24,000 commission is an incremental cost of obtaining the four-year contract and
+    is capitalized. The $33,600 of setup relates directly to the contract, creates a resource Farnsworth
+    uses to provide the services and is expected to be recovered, so it is a capitalized fulfillment cost.
+    Training and the sales-based regional bonus are expensed. The 10-month contract''s commission would
+    be amortized over one year or less, so under the elected expedient it is expensed. Both assets are
+    amortized over the 48 months of service from July 1, Year 1; six months have passed at December 31,
+    leaving 42/48: ($24,000 + $33,600) × 42/48 = $50,400.'

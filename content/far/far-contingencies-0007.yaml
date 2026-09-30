@@ -1,0 +1,142 @@
+id: far-contingencies-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 410-30 (environmental obligations)
+  - 'ASC 450-20 (loss contingencies: measurement within a range)'
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: In Year 1, a state environmental agency designated Ostrander Chemical as a party responsible for
+  cleaning up contamination at a site it formerly operated. At December 31, Year 1, Ostrander's engineers
+  estimated the cleanup cost at between $600,000 and $1,000,000, with no amount in the range more likely
+  than any other, and Ostrander recorded its liability in accordance with GAAP. During Year 2, Ostrander
+  paid $250,000 of cleanup costs, charging them to the liability. At December 31, Year 2, an updated study
+  estimates the remaining cost at between $500,000 and $1,100,000, with $720,000 the most likely amount.
+  Ostrander has filed a $300,000 claim with its insurer, which disputes coverage and has paid nothing.
+  The timing of future payments is not reliably determinable, so the liability is not discounted. What
+  environmental remediation expense should Ostrander recognize for Year 2?
+choices:
+- id: A
+  text: $120,000
+  rationale: Leaves out the $250,000 charged against the liability in Year 2. Those payments used up part
+    of the accrual, so the expense must restore it to $720,000.
+- id: B
+  text: $170,000
+  rationale: Assumes the Year 1 accrual was the $800,000 midpoint. When no amount in a range is a better
+    estimate, the minimum ($600,000) is accrued.
+- id: C
+  text: $370,000
+  rationale: Correct. Ending liability $720,000 − ($600,000 − $250,000 paid) = $370,000.
+- id: D
+  text: $750,000
+  rationale: Uses the $1,100,000 high end of the Year 2 range. The best estimate, $720,000, is accrued;
+    the rest of the range is disclosed.
+answer: C
+explanation: At December 31, Year 1, no amount in the range was a better estimate, so Ostrander accrued
+  the minimum, $600,000. Year 2 payments of $250,000 reduced the liability to $350,000. At December 31,
+  Year 2, the best estimate of remaining costs is $720,000, so the liability is increased by $720,000
+  − $350,000 = $370,000, charged to expense (debit remediation expense, credit environmental liability).
+  The disputed insurance claim is not probable of recovery, so it is not recognized and is not netted
+  against the expense.
+variants:
+- stem: In Year 1, a state environmental agency designated Prendergast Coatings as a party responsible
+    for cleaning up contamination at a site it formerly operated. At December 31, Year 1, Prendergast's
+    engineers estimated the cleanup cost at between $450,000 and $790,000, with no amount in the range
+    more likely than any other, and Prendergast recorded its liability in accordance with GAAP. During
+    Year 2, Prendergast paid $180,000 of cleanup costs, charging them to the liability. At December 31,
+    Year 2, an updated study estimates the remaining cost at between $380,000 and $800,000, with $520,000
+    the most likely amount. Prendergast has filed a $150,000 claim with its insurer, which disputes coverage
+    and has paid nothing. The timing of future payments is not reliably determinable, so the liability
+    is not discounted. What environmental remediation expense should Prendergast recognize for Year 2?
+  choices:
+  - id: A
+    text: $100,000
+    rationale: Nets the $150,000 insurance claim against the expense. A recovery is recognized only when
+      it is probable, and the insurer disputes coverage.
+  - id: B
+    text: $110,000
+    rationale: Uses the $380,000 low end of the Year 2 range. When one amount in the range is the best
+      estimate ($520,000), that amount is accrued.
+  - id: C
+    text: $180,000
+    rationale: Expenses only the cleanup costs paid in Year 2. The liability is remeasured to the new
+      best estimate, and the change is Year 2 expense.
+  - id: D
+    text: $250,000
+    rationale: Correct. Ending liability $520,000 − ($450,000 − $180,000 paid) = $250,000.
+  answer: D
+  explanation: At December 31, Year 1, no amount in the range was a better estimate, so Prendergast accrued
+    the minimum, $450,000. Year 2 payments of $180,000 reduced the liability to $270,000. At December
+    31, Year 2, the best estimate of remaining costs is $520,000, so the liability is increased by $520,000
+    − $270,000 = $250,000, charged to expense (debit remediation expense, credit environmental liability).
+    The disputed insurance claim is not probable of recovery, so it is not recognized and is not netted
+    against the expense.
+- stem: In Year 1, a state environmental agency designated Quintrell Metals as a party responsible for
+    cleaning up contamination at a site it formerly operated. At December 31, Year 1, Quintrell's engineers
+    estimated the cleanup cost at between $800,000 and $1,200,000, with no amount in the range more likely
+    than any other, and Quintrell recorded its liability in accordance with GAAP. During Year 2, Quintrell
+    paid $320,000 of cleanup costs, charging them to the liability. At December 31, Year 2, an updated
+    study estimates the remaining cost at between $700,000 and $1,300,000, with $960,000 the most likely
+    amount. Quintrell has filed a $350,000 claim with its insurer, which disputes coverage and has paid
+    nothing. The timing of future payments is not reliably determinable, so the liability is not discounted.
+    What environmental remediation expense should Quintrell recognize for Year 2?
+  choices:
+  - id: A
+    text: $160,000
+    rationale: Leaves out the $320,000 charged against the liability in Year 2. Those payments used up
+      part of the accrual, so the expense must restore it to $960,000.
+  - id: B
+    text: $220,000
+    rationale: Uses the $700,000 low end of the Year 2 range. When one amount in the range is the best
+      estimate ($960,000), that amount is accrued.
+  - id: C
+    text: $280,000
+    rationale: Assumes the Year 1 accrual was the $1,000,000 midpoint. When no amount in a range is a
+      better estimate, the minimum ($800,000) is accrued.
+  - id: D
+    text: $480,000
+    rationale: Correct. Ending liability $960,000 − ($800,000 − $320,000 paid) = $480,000.
+  answer: D
+  explanation: At December 31, Year 1, no amount in the range was a better estimate, so Quintrell accrued
+    the minimum, $800,000. Year 2 payments of $320,000 reduced the liability to $480,000. At December
+    31, Year 2, the best estimate of remaining costs is $960,000, so the liability is increased by $960,000
+    − $480,000 = $480,000, charged to expense (debit remediation expense, credit environmental liability).
+    The disputed insurance claim is not probable of recovery, so it is not recognized and is not netted
+    against the expense.
+- stem: In Year 1, a state environmental agency designated Rosswell Tanning as a party responsible for
+    cleaning up contamination at a site it formerly operated. At December 31, Year 1, Rosswell's engineers
+    estimated the cleanup cost at between $300,000 and $700,000, with no amount in the range more likely
+    than any other, and Rosswell recorded its liability in accordance with GAAP. During Year 2, Rosswell
+    paid $140,000 of cleanup costs, charging them to the liability. At December 31, Year 2, an updated
+    study estimates the remaining cost at between $260,000 and $620,000, with $430,000 the most likely
+    amount. Rosswell has filed a $120,000 claim with its insurer, which disputes coverage and has paid
+    nothing. The timing of future payments is not reliably determinable, so the liability is not discounted.
+    What environmental remediation expense should Rosswell recognize for Year 2?
+  choices:
+  - id: A
+    text: $130,000
+    rationale: Leaves out the $140,000 charged against the liability in Year 2. Those payments used up
+      part of the accrual, so the expense must restore it to $430,000.
+  - id: B
+    text: $140,000
+    rationale: Expenses only the cleanup costs paid in Year 2. The liability is remeasured to the new
+      best estimate, and the change is Year 2 expense.
+  - id: C
+    text: $270,000
+    rationale: Correct. Ending liability $430,000 − ($300,000 − $140,000 paid) = $270,000.
+  - id: D
+    text: $460,000
+    rationale: Uses the $620,000 high end of the Year 2 range. The best estimate, $430,000, is accrued;
+      the rest of the range is disclosed.
+  answer: C
+  explanation: At December 31, Year 1, no amount in the range was a better estimate, so Rosswell accrued
+    the minimum, $300,000. Year 2 payments of $140,000 reduced the liability to $160,000. At December
+    31, Year 2, the best estimate of remaining costs is $430,000, so the liability is increased by $430,000
+    − $160,000 = $270,000, charged to expense (debit remediation expense, credit environmental liability).
+    The disputed insurance claim is not probable of recovery, so it is not recognized and is not netted
+    against the expense.

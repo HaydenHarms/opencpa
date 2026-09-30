@@ -1,0 +1,141 @@
+id: far-income-taxes-provision-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (deferred tax liabilities)
+  - 'ASC 740-20 (intraperiod tax allocation: tax effects of items in other comprehensive income)'
+  - ASC 320-10 (available-for-sale debt securities)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Pendle Corp. keeps separate deferred tax asset and deferred tax liability accounts and records
+  all of its Year 2 income tax entries at December 31. The enacted tax rate is 21% for all years, and
+  Pendle expects ample future taxable income. Its temporary differences were: cumulative tax depreciation
+  in excess of book depreciation, $300,000 at January 1, Year 2, and $380,000 at December 31; unrealized
+  holding gains on available-for-sale debt securities, which are taxed when the securities are sold, $40,000
+  at January 1 and $100,000 at December 31; and accrued compensation that is deductible when paid, $50,000
+  at January 1 and $70,000 at December 31. What total amount should Pendle credit to the deferred tax
+  liability account for Year 2?'
+choices:
+- id: A
+  text: $16,800
+  rationale: Records only the deferred tax on depreciation. The $12,600 tax effect of the Year 2 unrealized
+    gain on the available-for-sale securities is also credited to the deferred tax liability, with the
+    debit to other comprehensive income.
+- id: B
+  text: $29,400
+  rationale: Correct. ($380,000 − $300,000) × 21% + ($100,000 − $40,000) × 21%.
+- id: C
+  text: $37,800
+  rationale: Records deferred tax on the whole $100,000 of December 31 unrealized gains. $40,000 of those
+    gains arose before Year 2 and was tax-effected then.
+- id: D
+  text: $100,800
+  rationale: Credits the whole December 31 liability. Only the change during Year 2 is recorded; the January
+    1 balance is already on the books.
+answer: B
+explanation: 'Both taxable temporary differences grew during Year 2, and each increase is recorded in
+  the deferred tax liability account. Depreciation: ($380,000 − $300,000) × 21% = $16,800, charged to
+  deferred tax expense. Unrealized gains: ($100,000 − $40,000) × 21% = $12,600, charged to other comprehensive
+  income, where the gain itself is reported (intraperiod tax allocation). Total credit = $29,400. The
+  $4,200 increase in the deferred tax asset on accrued compensation is recorded in the separate asset
+  account.'
+variants:
+- stem: 'Quorndon Corp. keeps separate deferred tax asset and deferred tax liability accounts and records
+    all of its Year 2 income tax entries at December 31. The enacted tax rate is 25% for all years, and
+    Quorndon expects ample future taxable income. Its temporary differences were: cumulative tax depreciation
+    in excess of book depreciation, $220,000 at January 1, Year 2, and $300,000 at December 31; unrealized
+    holding gains on available-for-sale debt securities, which are taxed when the securities are sold,
+    $30,000 at January 1 and $70,000 at December 31; and accrued compensation that is deductible when
+    paid, $60,000 at January 1 and $84,000 at December 31. What total amount should Quorndon credit to
+    the deferred tax liability account for Year 2?'
+  choices:
+  - id: A
+    text: $24,000
+    rationale: Nets the $6,000 increase in the deferred tax asset for accrued compensation into the liability.
+      Quorndon keeps separate asset and liability accounts, so that change is recorded in the asset account.
+  - id: B
+    text: $30,000
+    rationale: Correct. ($300,000 − $220,000) × 25% + ($70,000 − $30,000) × 25%.
+  - id: C
+    text: $37,500
+    rationale: Records deferred tax on the whole $70,000 of December 31 unrealized gains. $30,000 of those
+      gains arose before Year 2 and was tax-effected then.
+  - id: D
+    text: $92,500
+    rationale: Credits the whole December 31 liability. Only the change during Year 2 is recorded; the
+      January 1 balance is already on the books.
+  answer: B
+  explanation: 'Both taxable temporary differences grew during Year 2, and each increase is recorded in
+    the deferred tax liability account. Depreciation: ($300,000 − $220,000) × 25% = $20,000, charged to
+    deferred tax expense. Unrealized gains: ($70,000 − $30,000) × 25% = $10,000, charged to other comprehensive
+    income, where the gain itself is reported (intraperiod tax allocation). Total credit = $30,000. The
+    $6,000 increase in the deferred tax asset on accrued compensation is recorded in the separate asset
+    account.'
+- stem: 'Rufford Corp. keeps separate deferred tax asset and deferred tax liability accounts and records
+    all of its Year 2 income tax entries at December 31. The enacted tax rate is 21% for all years, and
+    Rufford expects ample future taxable income. Its temporary differences were: cumulative tax depreciation
+    in excess of book depreciation, $500,000 at January 1, Year 2, and $560,000 at December 31; unrealized
+    holding gains on available-for-sale debt securities, which are taxed when the securities are sold,
+    $80,000 at January 1 and $150,000 at December 31; and accrued compensation that is deductible when
+    paid, $90,000 at January 1 and $60,000 at December 31. What total amount should Rufford credit to
+    the deferred tax liability account for Year 2?'
+  choices:
+  - id: A
+    text: $27,300
+    rationale: Correct. ($560,000 − $500,000) × 21% + ($150,000 − $80,000) × 21%.
+  - id: B
+    text: $33,600
+    rationale: Nets the $6,300 decrease in the deferred tax asset for accrued compensation into the liability.
+      Rufford keeps separate asset and liability accounts, so that change is recorded in the asset account.
+  - id: C
+    text: $44,100
+    rationale: Records deferred tax on the whole $150,000 of December 31 unrealized gains. $80,000 of
+      those gains arose before Year 2 and was tax-effected then.
+  - id: D
+    text: $149,100
+    rationale: Credits the whole December 31 liability. Only the change during Year 2 is recorded; the
+      January 1 balance is already on the books.
+  answer: A
+  explanation: 'Both taxable temporary differences grew during Year 2, and each increase is recorded in
+    the deferred tax liability account. Depreciation: ($560,000 − $500,000) × 21% = $12,600, charged to
+    deferred tax expense. Unrealized gains: ($150,000 − $80,000) × 21% = $14,700, charged to other comprehensive
+    income, where the gain itself is reported (intraperiod tax allocation). Total credit = $27,300. The
+    $6,300 decrease in the deferred tax asset on accrued compensation is recorded in the separate asset
+    account.'
+- stem: 'Sedbergh Corp. keeps separate deferred tax asset and deferred tax liability accounts and records
+    all of its Year 2 income tax entries at December 31. The enacted tax rate is 25% for all years, and
+    Sedbergh expects ample future taxable income. Its temporary differences were: cumulative tax depreciation
+    in excess of book depreciation, $140,000 at January 1, Year 2, and $200,000 at December 31; unrealized
+    holding gains on available-for-sale debt securities, which are taxed when the securities are sold,
+    $20,000 at January 1 and $52,000 at December 31; and accrued compensation that is deductible when
+    paid, $36,000 at January 1 and $52,000 at December 31. What total amount should Sedbergh credit to
+    the deferred tax liability account for Year 2?'
+  choices:
+  - id: A
+    text: $15,000
+    rationale: Records only the deferred tax on depreciation. The $8,000 tax effect of the Year 2 unrealized
+      gain on the available-for-sale securities is also credited to the deferred tax liability, with the
+      debit to other comprehensive income.
+  - id: B
+    text: $19,000
+    rationale: Nets the $4,000 increase in the deferred tax asset for accrued compensation into the liability.
+      Sedbergh keeps separate asset and liability accounts, so that change is recorded in the asset account.
+  - id: C
+    text: $23,000
+    rationale: Correct. ($200,000 − $140,000) × 25% + ($52,000 − $20,000) × 25%.
+  - id: D
+    text: $63,000
+    rationale: Credits the whole December 31 liability. Only the change during Year 2 is recorded; the
+      January 1 balance is already on the books.
+  answer: C
+  explanation: 'Both taxable temporary differences grew during Year 2, and each increase is recorded in
+    the deferred tax liability account. Depreciation: ($200,000 − $140,000) × 25% = $15,000, charged to
+    deferred tax expense. Unrealized gains: ($52,000 − $20,000) × 25% = $8,000, charged to other comprehensive
+    income, where the gain itself is reported (intraperiod tax allocation). Total credit = $23,000. The
+    $4,000 increase in the deferred tax asset on accrued compensation is recorded in the separate asset
+    account.'

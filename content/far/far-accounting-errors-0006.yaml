@@ -1,0 +1,158 @@
+id: far-accounting-errors-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 250-10 (correction of an error in previously issued financial statements)
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Before closing its Year 4 books, Halvorsen Co. reviews its records and finds the following. Its
+  December 31, Year 1, ending inventory was overstated by $27,000. Its December 31, Year 2, ending inventory
+  was understated by $34,000. On January 1, Year 2, it paid $45,000 for a three-year insurance policy
+  and charged the whole amount to Year 2 expense. A machine bought on January 1, Year 2, for $110,000,
+  with a five-year life and no salvage value, was recorded as equipment but has never been depreciated.
+  Wages of $19,000 earned in late December, Year 3, were not accrued; they were paid in January, Year
+  4, and charged to Year 4 wage expense. Every other amount is correct, and the Year 1 to Year 3 statements
+  have been issued. Halvorsen's draft Year 4 statement of retained earnings begins with the January 1,
+  Year 4, balance as previously reported, $1,846,000. Ignoring income taxes, what January 1, Year 4, retained
+  earnings, as adjusted, should Halvorsen report?
+choices:
+- id: A
+  text: $1,798,000
+  rationale: Correct. $1,846,000 − $19,000 wages + $15,000 unexpired insurance − $44,000 depreciation.
+- id: B
+  text: $1,817,000
+  rationale: Treats the $19,000 of unrecorded Year 3 wages as having corrected itself. It reverses only
+    when Year 4 closes; at January 1, Year 4, retained earnings are still overstated.
+- id: C
+  text: $1,820,000
+  rationale: Subtracts only one year of the missing depreciation ($22,000). Depreciation was omitted for
+    both Year 2 and Year 3.
+- id: D
+  text: $1,832,000
+  rationale: Adds back the $34,000 understatement of Year 2 ending inventory. It understated Year 2 income
+    and overstated Year 3 income by the same amount, so it had reversed by December 31, Year 3.
+answer: A
+explanation: 'Take each error to its cumulative effect on retained earnings at December 31, Year 3. Year
+  1 ending inventory overstated: Year 1 income over, Year 2 income under by $27,000; reversed by the end
+  of Year 2, so no effect. Year 2 ending inventory understated: Year 2 income under, Year 3 income over
+  by $34,000; reversed by the end of Year 3, so no effect. Insurance: Year 2 expense was overstated by
+  two years'' cost and Year 3 expense understated by one year''s ($15,000), leaving retained earnings
+  understated by the unexpired $15,000. Depreciation: two years omitted, $22,000 a year, so retained earnings
+  are overstated by $44,000. Wages: Year 3 expense understated by $19,000; that reverses only when Year
+  4 is closed, so opening retained earnings are overstated by $19,000. $1,846,000 − $19,000 + $15,000
+  − $44,000 = $1,798,000.'
+variants:
+- stem: Before closing its Year 4 books, Isherwood Co. reviews its records and finds the following. Its
+    December 31, Year 1, ending inventory was overstated by $18,000. Its December 31, Year 2, ending inventory
+    was understated by $22,000. On January 1, Year 2, it paid $36,000 for a three-year insurance policy
+    and charged the whole amount to Year 2 expense. A machine bought on January 1, Year 2, for $120,000,
+    with a five-year life and no salvage value, was recorded as equipment but has never been depreciated.
+    Wages of $14,000 earned in late December, Year 3, were not accrued; they were paid in January, Year
+    4, and charged to Year 4 wage expense. Every other amount is correct, and the Year 1 to Year 3 statements
+    have been issued. Isherwood's draft Year 4 statement of retained earnings begins with the January
+    1, Year 4, balance as previously reported, $962,000. Ignoring income taxes, what January 1, Year 4,
+    retained earnings, as adjusted, should Isherwood report?
+  choices:
+  - id: A
+    text: $888,000
+    rationale: Includes Year 4 depreciation in the opening adjustment. Year 4 depreciation is a Year 4
+      expense, not a prior-period adjustment.
+  - id: B
+    text: $894,000
+    rationale: Subtracts the $18,000 overstatement of Year 1 ending inventory. That error reversed in
+      Year 2 and no longer affects retained earnings.
+  - id: C
+    text: $900,000
+    rationale: Treats the insurance error as fully reversed. At December 31, Year 3, one year of coverage
+      ($12,000) remained unexpired and had already been expensed.
+  - id: D
+    text: $912,000
+    rationale: Correct. $962,000 − $14,000 wages + $12,000 unexpired insurance − $48,000 depreciation.
+  answer: D
+  explanation: 'Take each error to its cumulative effect on retained earnings at December 31, Year 3.
+    Year 1 ending inventory overstated: Year 1 income over, Year 2 income under by $18,000; reversed by
+    the end of Year 2, so no effect. Year 2 ending inventory understated: Year 2 income under, Year 3
+    income over by $22,000; reversed by the end of Year 3, so no effect. Insurance: Year 2 expense was
+    overstated by two years'' cost and Year 3 expense understated by one year''s ($12,000), leaving retained
+    earnings understated by the unexpired $12,000. Depreciation: two years omitted, $24,000 a year, so
+    retained earnings are overstated by $48,000. Wages: Year 3 expense understated by $14,000; that reverses
+    only when Year 4 is closed, so opening retained earnings are overstated by $14,000. $962,000 − $14,000
+    + $12,000 − $48,000 = $912,000.'
+- stem: Before closing its Year 4 books, Jurado Co. reviews its records and finds the following. Its December
+    31, Year 1, ending inventory was overstated by $41,000. Its December 31, Year 2, ending inventory
+    was understated by $29,000. On January 1, Year 2, it paid $60,000 for a three-year insurance policy
+    and charged the whole amount to Year 2 expense. A machine bought on January 1, Year 2, for $140,000,
+    with a five-year life and no salvage value, was recorded as equipment but has never been depreciated.
+    Wages of $26,000 earned in late December, Year 3, were not accrued; they were paid in January, Year
+    4, and charged to Year 4 wage expense. Every other amount is correct, and the Year 1 to Year 3 statements
+    have been issued. Jurado's draft Year 4 statement of retained earnings begins with the January 1,
+    Year 4, balance as previously reported, $2,415,000. Ignoring income taxes, what January 1, Year 4,
+    retained earnings, as adjusted, should Jurado report?
+  choices:
+  - id: A
+    text: $2,312,000
+    rationale: Subtracts the $41,000 overstatement of Year 1 ending inventory. That error reversed in
+      Year 2 and no longer affects retained earnings.
+  - id: B
+    text: $2,353,000
+    rationale: Correct. $2,415,000 − $26,000 wages + $20,000 unexpired insurance − $56,000 depreciation.
+  - id: C
+    text: $2,379,000
+    rationale: Treats the $26,000 of unrecorded Year 3 wages as having corrected itself. It reverses only
+      when Year 4 closes; at January 1, Year 4, retained earnings are still overstated.
+  - id: D
+    text: $2,381,000
+    rationale: Subtracts only one year of the missing depreciation ($28,000). Depreciation was omitted
+      for both Year 2 and Year 3.
+  answer: B
+  explanation: 'Take each error to its cumulative effect on retained earnings at December 31, Year 3.
+    Year 1 ending inventory overstated: Year 1 income over, Year 2 income under by $41,000; reversed by
+    the end of Year 2, so no effect. Year 2 ending inventory understated: Year 2 income under, Year 3
+    income over by $29,000; reversed by the end of Year 3, so no effect. Insurance: Year 2 expense was
+    overstated by two years'' cost and Year 3 expense understated by one year''s ($20,000), leaving retained
+    earnings understated by the unexpired $20,000. Depreciation: two years omitted, $28,000 a year, so
+    retained earnings are overstated by $56,000. Wages: Year 3 expense understated by $26,000; that reverses
+    only when Year 4 is closed, so opening retained earnings are overstated by $26,000. $2,415,000 − $26,000
+    + $20,000 − $56,000 = $2,353,000.'
+- stem: Before closing its Year 4 books, Kittredge Co. reviews its records and finds the following. Its
+    December 31, Year 1, ending inventory was overstated by $23,000. Its December 31, Year 2, ending inventory
+    was understated by $31,000. On January 1, Year 2, it paid $54,000 for a three-year insurance policy
+    and charged the whole amount to Year 2 expense. A machine bought on January 1, Year 2, for $150,000,
+    with a five-year life and no salvage value, was recorded as equipment but has never been depreciated.
+    Wages of $12,000 earned in late December, Year 3, were not accrued; they were paid in January, Year
+    4, and charged to Year 4 wage expense. Every other amount is correct, and the Year 1 to Year 3 statements
+    have been issued. Kittredge's draft Year 4 statement of retained earnings begins with the January
+    1, Year 4, balance as previously reported, $1,378,000. Ignoring income taxes, what January 1, Year
+    4, retained earnings, as adjusted, should Kittredge report?
+  choices:
+  - id: A
+    text: $1,294,000
+    rationale: Includes Year 4 depreciation in the opening adjustment. Year 4 depreciation is a Year 4
+      expense, not a prior-period adjustment.
+  - id: B
+    text: $1,306,000
+    rationale: Treats the insurance error as fully reversed. At December 31, Year 3, one year of coverage
+      ($18,000) remained unexpired and had already been expensed.
+  - id: C
+    text: $1,324,000
+    rationale: Correct. $1,378,000 − $12,000 wages + $18,000 unexpired insurance − $60,000 depreciation.
+  - id: D
+    text: $1,355,000
+    rationale: Adds back the $31,000 understatement of Year 2 ending inventory. It understated Year 2
+      income and overstated Year 3 income by the same amount, so it had reversed by December 31, Year
+      3.
+  answer: C
+  explanation: 'Take each error to its cumulative effect on retained earnings at December 31, Year 3.
+    Year 1 ending inventory overstated: Year 1 income over, Year 2 income under by $23,000; reversed by
+    the end of Year 2, so no effect. Year 2 ending inventory understated: Year 2 income under, Year 3
+    income over by $31,000; reversed by the end of Year 3, so no effect. Insurance: Year 2 expense was
+    overstated by two years'' cost and Year 3 expense understated by one year''s ($18,000), leaving retained
+    earnings understated by the unexpired $18,000. Depreciation: two years omitted, $30,000 a year, so
+    retained earnings are overstated by $60,000. Wages: Year 3 expense understated by $12,000; that reverses
+    only when Year 4 is closed, so opening retained earnings are overstated by $12,000. $1,378,000 − $12,000
+    + $18,000 − $60,000 = $1,324,000.'

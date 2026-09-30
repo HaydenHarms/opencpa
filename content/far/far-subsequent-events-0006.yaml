@@ -1,0 +1,149 @@
+id: far-subsequent-events-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 855-10 (recognized and nonrecognized subsequent events; evaluation through the date the statements
+    are issued)
+  - ASC 450-20 (loss contingencies)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Caister Co.''s December 31, Year 1, financial statements were issued on March 10, Year 2. Its unadjusted
+  trial balance reports accrued liabilities for claims and litigation of $230,000: $150,000 for a suit
+  by a customer injured at one of Caister''s stores in September, Year 1, and $80,000 for a state agency''s
+  claim over a chemical spill at Caister''s plant in Year 1, which was Caister''s best estimate at year-end
+  and was still its best estimate when the statements were issued. After year-end: on January 8, a customer
+  filed a claim over a defective shipment it received from Caister in December, and on February 2, Caister
+  agreed to pay it $45,000; on January 22, one of Caister''s delivery trucks injured a pedestrian, who
+  sued in February, and Caister''s counsel expects Caister to pay about $100,000; on February 12, Caister
+  settled the customer injury suit for $190,000; and on March 20, Caister settled the state agency''s
+  claim for $110,000. What total liability for claims and litigation should Caister report on its December
+  31, Year 1, balance sheet?'
+choices:
+- id: A
+  text: $230,000
+  rationale: Makes no adjustment to the unadjusted balances.
+- id: B
+  text: $270,000
+  rationale: Doesn't accrue the $45,000 for the defective December shipment. The defect existed at year-end;
+    the January claim and February agreement are evidence of that liability.
+- id: C
+  text: $315,000
+  rationale: Correct. $190,000 injury settlement + $45,000 shipment claim + $80,000 state agency claim.
+- id: D
+  text: $415,000
+  rationale: Also accrues the $100,000 for the January truck accident. The accident happened after year-end,
+    so it is disclosed, not recognized.
+answer: C
+explanation: 'Events before the statements are issued that give evidence about conditions existing at
+  year-end are recognized. The injury suit arose in Year 1, so its accrual rises to the $190,000 settlement.
+  The defective shipment was made in December, so the $45,000 agreed in February is accrued. The truck
+  accident happened in January: disclose it, don''t accrue it. The state agency''s claim stays at $80,000,
+  the best estimate when the statements were issued; the March 20 settlement came after issuance. Total
+  = $190,000 + $45,000 + $80,000 = $315,000.'
+variants:
+- stem: 'Denby Co.''s December 31, Year 1, financial statements were issued on March 10, Year 2. Its unadjusted
+    trial balance reports accrued liabilities for claims and litigation of $340,000: $220,000 for a suit
+    by a customer injured at one of Denby''s stores in September, Year 1, and $120,000 for a state agency''s
+    claim over a chemical spill at Denby''s plant in Year 1, which was Denby''s best estimate at year-end
+    and was still its best estimate when the statements were issued. After year-end: on January 8, a customer
+    filed a claim over a defective shipment it received from Denby in December, and on February 2, Denby
+    agreed to pay it $60,000; on January 22, one of Denby''s delivery trucks injured a pedestrian, who
+    sued in February, and Denby''s counsel expects Denby to pay about $140,000; on February 12, Denby
+    settled the customer injury suit for $265,000; and on March 20, Denby settled the state agency''s
+    claim for $150,000. What total liability for claims and litigation should Denby report on its December
+    31, Year 1, balance sheet?'
+  choices:
+  - id: A
+    text: $340,000
+    rationale: Makes no adjustment to the unadjusted balances.
+  - id: B
+    text: $445,000
+    rationale: Correct. $265,000 injury settlement + $60,000 shipment claim + $120,000 state agency claim.
+  - id: C
+    text: $475,000
+    rationale: Uses the $150,000 March 20 settlement of the state agency's claim. That settlement came
+      after the statements were issued on March 10, so it isn't reflected in them.
+  - id: D
+    text: $585,000
+    rationale: Also accrues the $140,000 for the January truck accident. The accident happened after year-end,
+      so it is disclosed, not recognized.
+  answer: B
+  explanation: 'Events before the statements are issued that give evidence about conditions existing at
+    year-end are recognized. The injury suit arose in Year 1, so its accrual rises to the $265,000 settlement.
+    The defective shipment was made in December, so the $60,000 agreed in February is accrued. The truck
+    accident happened in January: disclose it, don''t accrue it. The state agency''s claim stays at $120,000,
+    the best estimate when the statements were issued; the March 20 settlement came after issuance. Total
+    = $265,000 + $60,000 + $120,000 = $445,000.'
+- stem: 'Elland Co.''s December 31, Year 1, financial statements were issued on March 10, Year 2. Its
+    unadjusted trial balance reports accrued liabilities for claims and litigation of $145,000: $90,000
+    for a suit by a customer injured at one of Elland''s stores in September, Year 1, and $55,000 for
+    a state agency''s claim over a chemical spill at Elland''s plant in Year 1, which was Elland''s best
+    estimate at year-end and was still its best estimate when the statements were issued. After year-end:
+    on January 8, a customer filed a claim over a defective shipment it received from Elland in December,
+    and on February 2, Elland agreed to pay it $32,000; on January 22, one of Elland''s delivery trucks
+    injured a pedestrian, who sued in February, and Elland''s counsel expects Elland to pay about $75,000;
+    on February 12, Elland settled the customer injury suit for $118,000; and on March 20, Elland settled
+    the state agency''s claim for $70,000. What total liability for claims and litigation should Elland
+    report on its December 31, Year 1, balance sheet?'
+  choices:
+  - id: A
+    text: $173,000
+    rationale: Doesn't accrue the $32,000 for the defective December shipment. The defect existed at year-end;
+      the January claim and February agreement are evidence of that liability.
+  - id: B
+    text: $205,000
+    rationale: Correct. $118,000 injury settlement + $32,000 shipment claim + $55,000 state agency claim.
+  - id: C
+    text: $220,000
+    rationale: Uses the $70,000 March 20 settlement of the state agency's claim. That settlement came
+      after the statements were issued on March 10, so it isn't reflected in them.
+  - id: D
+    text: $280,000
+    rationale: Also accrues the $75,000 for the January truck accident. The accident happened after year-end,
+      so it is disclosed, not recognized.
+  answer: B
+  explanation: 'Events before the statements are issued that give evidence about conditions existing at
+    year-end are recognized. The injury suit arose in Year 1, so its accrual rises to the $118,000 settlement.
+    The defective shipment was made in December, so the $32,000 agreed in February is accrued. The truck
+    accident happened in January: disclose it, don''t accrue it. The state agency''s claim stays at $55,000,
+    the best estimate when the statements were issued; the March 20 settlement came after issuance. Total
+    = $118,000 + $32,000 + $55,000 = $205,000.'
+- stem: 'Frodsham Co.''s December 31, Year 1, financial statements were issued on March 10, Year 2. Its
+    unadjusted trial balance reports accrued liabilities for claims and litigation of $460,000: $310,000
+    for a suit by a customer injured at one of Frodsham''s stores in September, Year 1, and $150,000 for
+    a state agency''s claim over a chemical spill at Frodsham''s plant in Year 1, which was Frodsham''s
+    best estimate at year-end and was still its best estimate when the statements were issued. After year-end:
+    on January 8, a customer filed a claim over a defective shipment it received from Frodsham in December,
+    and on February 2, Frodsham agreed to pay it $85,000; on January 22, one of Frodsham''s delivery trucks
+    injured a pedestrian, who sued in February, and Frodsham''s counsel expects Frodsham to pay about
+    $200,000; on February 12, Frodsham settled the customer injury suit for $360,000; and on March 20,
+    Frodsham settled the state agency''s claim for $195,000. What total liability for claims and litigation
+    should Frodsham report on its December 31, Year 1, balance sheet?'
+  choices:
+  - id: A
+    text: $510,000
+    rationale: Doesn't accrue the $85,000 for the defective December shipment. The defect existed at year-end;
+      the January claim and February agreement are evidence of that liability.
+  - id: B
+    text: $545,000
+    rationale: Keeps the $310,000 accrual for the injury suit. The February settlement is evidence of
+      the liability that existed at year-end, so the accrual rises to $360,000.
+  - id: C
+    text: $595,000
+    rationale: Correct. $360,000 injury settlement + $85,000 shipment claim + $150,000 state agency claim.
+  - id: D
+    text: $795,000
+    rationale: Also accrues the $200,000 for the January truck accident. The accident happened after year-end,
+      so it is disclosed, not recognized.
+  answer: C
+  explanation: 'Events before the statements are issued that give evidence about conditions existing at
+    year-end are recognized. The injury suit arose in Year 1, so its accrual rises to the $360,000 settlement.
+    The defective shipment was made in December, so the $85,000 agreed in February is accrued. The truck
+    accident happened in January: disclose it, don''t accrue it. The state agency''s claim stays at $150,000,
+    the best estimate when the statements were issued; the March 20 settlement came after issuance. Total
+    = $360,000 + $85,000 + $150,000 = $595,000.'

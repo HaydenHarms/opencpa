@@ -1,0 +1,39 @@
+id: far-revenue-five-step-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 606-10-25 (identifying performance obligations: distinct goods or services)'
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Under ASC 606, which of the following indicates that a promised good or service is not separately
+  identifiable from other promises in a contract with a customer?
+choices:
+- id: A
+  text: The customer can benefit from it together with resources that are readily available
+  rationale: That shows the good or service is capable of being distinct, the other half of the test;
+    it says nothing against separate identifiability.
+- id: B
+  text: The entity uses it as an input to make the combined item the customer ordered
+  rationale: Correct. When the entity provides a significant service of integrating goods or services
+    into a combined output the customer specified, they are not separately identifiable.
+- id: C
+  text: The entity regularly sells it on its own to other customers at a standalone price
+  rationale: Regular separate sales show the item is capable of being distinct. They don't show that it
+    is integrated with the other promises.
+- id: D
+  text: It will be delivered at a different time from the other goods promised in the contract
+  rationale: Timing of transfer doesn't decide whether a promise is separately identifiable; goods delivered
+    at different times can still be distinct.
+answer: B
+explanation: A promised good or service is distinct if it is capable of being distinct (the customer can
+  benefit from it on its own or with readily available resources) and it is separately identifiable within
+  the contract. Indicators that it is not separately identifiable include the entity's significant service
+  of integrating it with other goods or services into a combined output the customer contracted for, one
+  item significantly modifying or customizing another, and items being highly interdependent or interrelated.
+  Selling an item separately and being able to use it with readily available resources speak to the first
+  criterion; timing of delivery is not a factor.

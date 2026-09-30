@@ -1,0 +1,153 @@
+id: far-accounting-errors-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 250-10 (change in accounting estimate effected by a change in accounting principle)
+  - ASC 360-10 (depreciation)
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'On January 1, Year 1, Brisco Manufacturing bought a machine for $1,280,000, with an 8-year life
+  and no salvage value, and depreciated it by the double-declining-balance method. On January 1, Year
+  4, Brisco switched to the straight-line method for the machine because it better reflects how the machine''s
+  benefits are now being consumed; the life and salvage value estimates are unchanged. Brisco''s draft
+  Year 4 statement of retained earnings shows: January 1 balance as originally reported, $3,450,000; cumulative
+  effect of change in depreciation method, net of tax, $195,000 (an increase); net income, $610,000; dividends,
+  $180,000; December 31 balance, $4,075,000. Draft net income includes Year 4 depreciation on the machine
+  of $160,000. Brisco''s tax rate is 25% for all effects. What December 31, Year 4, retained earnings
+  should Brisco report?'
+choices:
+- id: A
+  text: $3,880,000
+  rationale: 'Removes the $195,000 cumulative-effect adjustment but keeps Year 4 depreciation of $160,000.
+    Prospectively, the $540,000 book value at January 1, Year 4, is depreciated over the 5 remaining years:
+    $108,000.'
+- id: B
+  text: $3,898,750
+  rationale: Removes the adjustment but keeps double-declining-balance depreciation ($135,000) for Year
+    4. The new straight-line method applies from January 1, Year 4.
+- id: C
+  text: $3,919,000
+  rationale: Correct. $4,075,000 − $195,000 cumulative-effect adjustment + $39,000 after-tax reduction
+    in Year 4 depreciation.
+- id: D
+  text: $3,932,000
+  rationale: Removes the adjustment and recomputes Year 4 depreciation, but adds back the full $52,000
+    reduction in depreciation. Lower depreciation raises income tax expense at 25%, so net income rises
+    by only $39,000.
+answer: C
+explanation: 'A change in depreciation method is a change in accounting estimate effected by a change
+  in accounting principle, so it is applied prospectively: no cumulative-effect adjustment, and no restatement.
+  Book value at January 1, Year 4: $1,280,000 less three years of double-declining-balance depreciation
+  ($740,000) = $540,000. Year 4 straight-line depreciation = $540,000 ÷ 5 remaining years = $108,000,
+  not $160,000. Corrections to the draft: remove the $195,000 adjustment, and raise net income by ($160,000
+  − $108,000) × (1 − 25%) = $39,000. $4,075,000 − $195,000 + $39,000 = $3,919,000.'
+variants:
+- stem: 'On January 1, Year 1, Cantrell Foods bought a machine for $500,000, with a 5-year life and no
+    salvage value, and depreciated it by the double-declining-balance method. On January 1, Year 4, Cantrell
+    switched to the straight-line method for the machine because it better reflects how the machine''s
+    benefits are now being consumed; the life and salvage value estimates are unchanged. Cantrell''s draft
+    Year 4 statement of retained earnings shows: January 1 balance as originally reported, $1,240,000;
+    cumulative effect of change in depreciation method, net of tax, $69,000 (an increase); net income,
+    $265,000; dividends, $90,000; December 31 balance, $1,484,000. Draft net income includes Year 4 depreciation
+    on the machine of $100,000. Cantrell''s tax rate is 25% for all effects. What December 31, Year 4,
+    retained earnings should Cantrell report?'
+  choices:
+  - id: A
+    text: $1,449,500
+    rationale: Correct. $1,484,000 − $69,000 cumulative-effect adjustment + $34,500 after-tax reduction
+      in Year 4 depreciation.
+  - id: B
+    text: $1,457,600
+    rationale: Removes the adjustment but keeps double-declining-balance depreciation ($43,200) for Year
+      4. The new straight-line method applies from January 1, Year 4.
+  - id: C
+    text: $1,473,800
+    rationale: Spreads the $108,000 book value over the original 5-year life ($21,600). Only 2 years of
+      life remain.
+  - id: D
+    text: $1,484,000
+    rationale: 'Accepts the draft. A change in depreciation method is a change in accounting estimate
+      effected by a change in accounting principle, applied prospectively: no cumulative-effect adjustment
+      to opening retained earnings.'
+  answer: A
+  explanation: 'A change in depreciation method is a change in accounting estimate effected by a change
+    in accounting principle, so it is applied prospectively: no cumulative-effect adjustment, and no restatement.
+    Book value at January 1, Year 4: $500,000 less three years of double-declining-balance depreciation
+    ($392,000) = $108,000. Year 4 straight-line depreciation = $108,000 ÷ 2 remaining years = $54,000,
+    not $100,000. Corrections to the draft: remove the $69,000 adjustment, and raise net income by ($100,000
+    − $54,000) × (1 − 25%) = $34,500. $1,484,000 − $69,000 + $34,500 = $1,449,500.'
+- stem: 'On January 1, Year 1, Dorrance Printing bought a machine for $875,000, with a 10-year life and
+    no salvage value, and depreciated it by the double-declining-balance method. On January 1, Year 4,
+    Dorrance switched to the straight-line method for the machine because it better reflects how the machine''s
+    benefits are now being consumed; the life and salvage value estimates are unchanged. Dorrance''s draft
+    Year 4 statement of retained earnings shows: January 1 balance as originally reported, $2,180,000;
+    cumulative effect of change in depreciation method, net of tax, $123,375 (an increase); net income,
+    $344,000; dividends, $120,000; December 31 balance, $2,527,375. Draft net income includes Year 4 depreciation
+    on the machine of $87,500. Dorrance''s tax rate is 25% for all effects. What December 31, Year 4,
+    retained earnings should Dorrance report?'
+  choices:
+  - id: A
+    text: $2,421,625
+    rationale: Correct. $2,527,375 − $123,375 cumulative-effect adjustment + $17,625 after-tax reduction
+      in Year 4 depreciation.
+  - id: B
+    text: $2,427,500
+    rationale: Removes the adjustment and recomputes Year 4 depreciation, but adds back the full $23,500
+      reduction in depreciation. Lower depreciation raises income tax expense at 25%, so net income rises
+      by only $17,625.
+  - id: C
+    text: $2,436,025
+    rationale: Spreads the $448,000 book value over the original 10-year life ($44,800). Only 7 years
+      of life remain.
+  - id: D
+    text: $2,527,375
+    rationale: 'Accepts the draft. A change in depreciation method is a change in accounting estimate
+      effected by a change in accounting principle, applied prospectively: no cumulative-effect adjustment
+      to opening retained earnings.'
+  answer: A
+  explanation: 'A change in depreciation method is a change in accounting estimate effected by a change
+    in accounting principle, so it is applied prospectively: no cumulative-effect adjustment, and no restatement.
+    Book value at January 1, Year 4: $875,000 less three years of double-declining-balance depreciation
+    ($427,000) = $448,000. Year 4 straight-line depreciation = $448,000 ÷ 7 remaining years = $64,000,
+    not $87,500. Corrections to the draft: remove the $123,375 adjustment, and raise net income by ($87,500
+    − $64,000) × (1 − 25%) = $17,625. $2,527,375 − $123,375 + $17,625 = $2,421,625.'
+- stem: 'On January 1, Year 1, Esterly Plastics bought a machine for $2,560,000, with an 8-year life and
+    no salvage value, and depreciated it by the double-declining-balance method. On January 1, Year 4,
+    Esterly switched to the straight-line method for the machine because it better reflects how the machine''s
+    benefits are now being consumed; the life and salvage value estimates are unchanged. Esterly''s draft
+    Year 4 statement of retained earnings shows: January 1 balance as originally reported, $6,900,000;
+    cumulative effect of change in depreciation method, net of tax, $410,800 (an increase); net income,
+    $1,150,000; dividends, $400,000; December 31 balance, $8,060,800. Draft net income includes Year 4
+    depreciation on the machine of $320,000. Esterly''s tax rate is 21% for all effects. What December
+    31, Year 4, retained earnings should Esterly report?'
+  choices:
+  - id: A
+    text: $7,650,000
+    rationale: 'Removes the $410,800 cumulative-effect adjustment but keeps Year 4 depreciation of $320,000.
+      Prospectively, the $1,080,000 book value at January 1, Year 4, is depreciated over the 5 remaining
+      years: $216,000.'
+  - id: B
+    text: $7,732,160
+    rationale: Correct. $8,060,800 − $410,800 cumulative-effect adjustment + $82,160 after-tax reduction
+      in Year 4 depreciation.
+  - id: C
+    text: $7,796,150
+    rationale: Spreads the $1,080,000 book value over the original 8-year life ($135,000). Only 5 years
+      of life remain.
+  - id: D
+    text: $8,060,800
+    rationale: 'Accepts the draft. A change in depreciation method is a change in accounting estimate
+      effected by a change in accounting principle, applied prospectively: no cumulative-effect adjustment
+      to opening retained earnings.'
+  answer: B
+  explanation: 'A change in depreciation method is a change in accounting estimate effected by a change
+    in accounting principle, so it is applied prospectively: no cumulative-effect adjustment, and no restatement.
+    Book value at January 1, Year 4: $2,560,000 less three years of double-declining-balance depreciation
+    ($1,480,000) = $1,080,000. Year 4 straight-line depreciation = $1,080,000 ÷ 5 remaining years = $216,000,
+    not $320,000. Corrections to the draft: remove the $410,800 adjustment, and raise net income by ($320,000
+    − $216,000) × (1 − 21%) = $82,160. $8,060,800 − $410,800 + $82,160 = $7,732,160.'

@@ -1,0 +1,122 @@
+id: far-cash-flows-0008
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 230-10-50 (supplemental disclosure of interest paid, net of amounts capitalized)
+  - ASC 835-20 (capitalization of interest)
+  - ASC 835-30 (amortization of discount)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Farndale Co.'s Year 1 income statement reports interest expense of $84,000, which includes $6,000
+  of amortization of the discount on its bonds payable. During Year 1, Farndale also capitalized $16,000
+  of interest as part of the cost of a warehouse it built for its own use. Interest payable was $9,000
+  at January 1 and $14,000 at December 31. In the supplemental disclosures to its Year 1 statement of
+  cash flows, what amount should Farndale report as interest paid, net of amounts capitalized?
+choices:
+- id: A
+  text: $73,000
+  rationale: Correct. $84,000 expense − $6,000 amortization − $5,000 increase in interest payable.
+- id: B
+  text: $78,000
+  rationale: Ignores the $5,000 increase in interest payable. Interest paid is expense adjusted for the
+    change in the payable.
+- id: C
+  text: $83,000
+  rationale: Adjusts for the change in interest payable in the wrong direction. An increase in the payable
+    means Farndale paid less than it incurred.
+- id: D
+  text: $89,000
+  rationale: Reports all interest paid, $89,000, including the $16,000 capitalized. The disclosure is
+    interest paid net of amounts capitalized; capitalized interest paid is part of the payments for the
+    warehouse.
+answer: A
+explanation: Interest incurred = $84,000 expensed + $16,000 capitalized = $100,000. Cash paid for interest
+  = $100,000 − $6,000 discount amortization (not paid in cash) − $5,000 increase in interest payable =
+  $89,000. Net of the $16,000 capitalized, which is reported with the payments for the warehouse, the
+  disclosure is $73,000.
+variants:
+- stem: Grinton Co.'s Year 1 income statement reports interest expense of $126,000, which includes $9,000
+    of amortization of the discount on its bonds payable. During Year 1, Grinton also capitalized $22,000
+    of interest as part of the cost of a warehouse it built for its own use. Interest payable was $21,000
+    at January 1 and $15,000 at December 31. In the supplemental disclosures to its Year 1 statement of
+    cash flows, what amount should Grinton report as interest paid, net of amounts capitalized?
+  choices:
+  - id: A
+    text: $101,000
+    rationale: Subtracts the $22,000 of capitalized interest from interest expense. Interest expense already
+      excludes the capitalized interest, so this removes it twice.
+  - id: B
+    text: $123,000
+    rationale: Correct. $126,000 expense − $9,000 amortization + $6,000 decrease in interest payable.
+  - id: C
+    text: $141,000
+    rationale: Adds the $9,000 of discount amortization. Amortization is interest expense that is not
+      paid in cash, so it is subtracted.
+  - id: D
+    text: $145,000
+    rationale: Reports all interest paid, $145,000, including the $22,000 capitalized. The disclosure
+      is interest paid net of amounts capitalized; capitalized interest paid is part of the payments for
+      the warehouse.
+  answer: B
+  explanation: Interest incurred = $126,000 expensed + $22,000 capitalized = $148,000. Cash paid for interest
+    = $148,000 − $9,000 discount amortization (not paid in cash) + $6,000 decrease in interest payable
+    = $145,000. Net of the $22,000 capitalized, which is reported with the payments for the warehouse,
+    the disclosure is $123,000.
+- stem: Hawes Co.'s Year 1 income statement reports interest expense of $58,000, which includes $4,000
+    of amortization of the discount on its bonds payable. During Year 1, Hawes also capitalized $12,000
+    of interest as part of the cost of a warehouse it built for its own use. Interest payable was $6,000
+    at January 1 and $9,000 at December 31. In the supplemental disclosures to its Year 1 statement of
+    cash flows, what amount should Hawes report as interest paid, net of amounts capitalized?
+  choices:
+  - id: A
+    text: $39,000
+    rationale: Subtracts the $12,000 of capitalized interest from interest expense. Interest expense already
+      excludes the capitalized interest, so this removes it twice.
+  - id: B
+    text: $51,000
+    rationale: Correct. $58,000 expense − $4,000 amortization − $3,000 increase in interest payable.
+  - id: C
+    text: $54,000
+    rationale: Ignores the $3,000 increase in interest payable. Interest paid is expense adjusted for
+      the change in the payable.
+  - id: D
+    text: $63,000
+    rationale: Reports all interest paid, $63,000, including the $12,000 capitalized. The disclosure is
+      interest paid net of amounts capitalized; capitalized interest paid is part of the payments for
+      the warehouse.
+  answer: B
+  explanation: Interest incurred = $58,000 expensed + $12,000 capitalized = $70,000. Cash paid for interest
+    = $70,000 − $4,000 discount amortization (not paid in cash) − $3,000 increase in interest payable
+    = $63,000. Net of the $12,000 capitalized, which is reported with the payments for the warehouse,
+    the disclosure is $51,000.
+- stem: Ingleton Co.'s Year 1 income statement reports interest expense of $212,000, which includes $15,000
+    of amortization of the discount on its bonds payable. During Year 1, Ingleton also capitalized $38,000
+    of interest as part of the cost of a warehouse it built for its own use. Interest payable was $30,000
+    at January 1 and $22,000 at December 31. In the supplemental disclosures to its Year 1 statement of
+    cash flows, what amount should Ingleton report as interest paid, net of amounts capitalized?
+  choices:
+  - id: A
+    text: $167,000
+    rationale: Subtracts the $38,000 of capitalized interest from interest expense. Interest expense already
+      excludes the capitalized interest, so this removes it twice.
+  - id: B
+    text: $189,000
+    rationale: Adjusts for the change in interest payable in the wrong direction. An decrease in the payable
+      means Ingleton paid more than it incurred.
+  - id: C
+    text: $197,000
+    rationale: Ignores the $8,000 decrease in interest payable. Interest paid is expense adjusted for
+      the change in the payable.
+  - id: D
+    text: $205,000
+    rationale: Correct. $212,000 expense − $15,000 amortization + $8,000 decrease in interest payable.
+  answer: D
+  explanation: Interest incurred = $212,000 expensed + $38,000 capitalized = $250,000. Cash paid for interest
+    = $250,000 − $15,000 discount amortization (not paid in cash) + $8,000 decrease in interest payable
+    = $243,000. Net of the $38,000 capitalized, which is reported with the payments for the warehouse,
+    the disclosure is $205,000.

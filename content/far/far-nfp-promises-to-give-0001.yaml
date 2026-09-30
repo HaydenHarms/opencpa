@@ -1,0 +1,39 @@
+id: far-nfp-promises-to-give-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 958-605 (contributions received: promises to give, conditional contributions)'
+  - ASU 2018-08 (clarifying the scope and the accounting guidance for contributions)
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A not-for-profit entity receives each of the following during Year 1. Which should it recognize
+  as contribution revenue in Year 1?
+choices:
+- id: A
+  text: A donor's letter saying she has named the entity as a beneficiary in her will
+  rationale: A will can be changed until death, so the letter is an intention to give, not a promise to
+    give; nothing is recognized.
+- id: B
+  text: An advance on a cost-reimbursement grant for a program that starts in Year 2
+  rationale: 'The grant is conditional: the entity must incur qualifying costs (a barrier), and unspent
+    funds must be returned. The advance is a refundable advance (a liability) until the costs are incurred.'
+- id: C
+  text: A written pledge for a research program, payable in three annual installments
+  rationale: Correct. An unconditional promise to give is recognized when received, as revenue with donor
+    restrictions (purpose and time), at the present value of the installments.
+- id: D
+  text: A pledge that lapses unless the state licenses the entity's new shelter by June 30
+  rationale: Obtaining the license is a barrier, and the donor is released if it isn't met, so the pledge
+    is conditional and is not recognized until the license is granted.
+answer: C
+explanation: Under ASC 958-605, as amended by ASU 2018-08, a promise to give is conditional when it contains
+  both a barrier the recipient must overcome and a right of return of assets transferred or a right of
+  release from the promisor's obligation. Conditional promises are recognized only when the barrier is
+  overcome. Unconditional promises are recognized when received, even if they are payable later or restricted
+  to a purpose; the restriction affects the net asset class, not the timing. An intention to give, such
+  as naming the entity in a revocable will, is not a promise and is not recognized.

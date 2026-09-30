@@ -1,0 +1,38 @@
+id: far-contingencies-0010
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 450-20 (disclosure of loss contingencies)
+  - ASC 460-10 (guarantor disclosures)
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Under U.S. GAAP, which of the following must an entity disclose in its notes even when the likelihood
+  of any loss is remote?
+choices:
+- id: A
+  text: A guarantee of another company's bank loan, where default is not expected
+  rationale: Correct. A guarantor discloses the nature, term and maximum potential payments of a guarantee
+    even when the likelihood of having to pay is remote.
+- id: B
+  text: A pending lawsuit that counsel expects the entity to win with near certainty
+  rationale: A loss contingency whose likelihood is remote is neither accrued nor disclosed. Guarantees
+    are the exception.
+- id: C
+  text: An unasserted claim that the potential claimant is not expected to assert
+  rationale: When assertion is not probable, an unasserted claim is not disclosed, however large the potential
+    loss.
+- id: D
+  text: General business risks, such as a possible fall in demand for its products
+  rationale: General or unspecified business risks are not loss contingencies; they are neither accrued
+    nor disclosed under ASC 450-20.
+answer: A
+explanation: 'ASC 450-20 requires no accrual or disclosure of a loss contingency whose likelihood is remote,
+  with one notable exception: guarantees. ASC 460-10 requires a guarantor to disclose the nature of each
+  guarantee, its term, the maximum potential future payments and the carrying amount of any liability,
+  even when the likelihood of payment is remote. An unasserted claim is disclosed only if assertion is
+  probable and a loss is at least reasonably possible, and general business risks are not loss contingencies.'

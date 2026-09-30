@@ -9,7 +9,7 @@ Open-source CPA exam study platform. Owner: Hayden Harms (accounting student, CP
 | Web     | `apps/web`: React + Vite + React Router                  | Cloudflare Pages project `opencpa`. It rebuilds on every push to `main`. The env var `VITE_API_URL=https://opencpa-api.haydenharms.workers.dev` is baked in at build time. |
 | API     | `apps/api`: Hono on Cloudflare Workers (`opencpa-api`)   | Deployed by the GitHub Actions `deploy-api` job on push to `main`, after the checks pass.                                                                                  |
 | DB      | Cloudflare D1 `opencpa` (id in `apps/api/wrangler.toml`) | Migrations live in `apps/api/migrations/` and CI applies them (`wrangler d1 migrations apply --remote`). `0001_init`, `0002_sessions` (practice sessions, plus `attempts.session_id`), `0003_connector_tokens`, `0004_variants` (`attempts.variant`, `practice_sessions.variants`) and `0005_topic_sessions` (`practice_sessions.topic`) exist; CI applies anything new on push.                             |
-| Schema  | `packages/schema` (zod)                                  | Source of truth for content: MCQ, plus TBS with `journal_entry` / `numeric` / `research` tasks.                                                                            |
+| Schema  | `packages/schema` (zod)                                  | Source of truth for content: MCQ, plus TBS with `journal_entry` / `numeric` / `research` / `select` tasks.                                                                            |
 | Engine  | `packages/engine`                                        | Grading (JE partial credit), FSRS scheduling via ts-fsrs, recency-weighted mastery by blueprint area.                                                                      |
 | Content | `content/<section>/<id>.yaml`                            | One item per file. Only `review.status: reviewed` items are served. `pnpm content:build` bundles them into the API.                                                        |
 
@@ -31,8 +31,8 @@ Commands: `pnpm install`, `pnpm dev`, `pnpm test`, `pnpm typecheck`, `pnpm conte
 
 - **Live:** web (React + Vite on Cloudflare Pages), API (Hono Worker), D1 with migrations 0001–0005, practice sessions with adaptive selection and a 20-question first-session diagnostic, the Library (topic browsing, question archive, in-browser search), the simulations player (`/simulations`, including a `select` task type) and the Claude connector (MCP, four read-only tools at `/mcp/<token>`). Design notes and API routes for each: `docs/history.md`.
 - **Variants:** `McqItem.variants` holds other versions of a question with new numbers, and sessions rotate through them. Every numeric FAR MCQ has three, except four whose wrong answers sit in a fixed order around the key (`far-accounting-errors-0002`, `far-contingencies-0005`, `far-debt-covenant-0001`, `far-revenue-allocation-0003`). Simulations have none yet.
-- **Bank:** 150 FAR MCQs (12% / 51% / 37% by skill, 37% / 35% / 27% by area, all inside the blueprint ranges) with 372 variants; 25 BAR MCQs (batch 01); 3 FAR simulations (revision 2). `python3 scripts/far-coverage.py` maps every FAR MCQ to one of the 113 blueprint tasks and prints the tasks with fewer than two items: about 98 more items are needed.
-- **Gate record:** every batch so far passed the review gate (FAR batches 82–85%, BAR batch 01 84%, simulations 79.7%, none with a major item). Findings and fixes are in `docs/reviews/`. FAR batch 06's minor fixes are applied. **Next: FAR batch 07, mostly Area III** (batch 06 was 48% / 44% / 8% by area).
+- **Bank:** 175 FAR MCQs (12% / 52% / 36% by skill, 34% / 32% / 34% by area, all inside the blueprint ranges) with 438 variants; 25 BAR MCQs (batch 01); 3 FAR simulations (revision 2). `python3 scripts/far-coverage.py` maps every FAR MCQ to one of the 113 blueprint tasks and prints the tasks with fewer than two items: 44 of 113 tasks have two or more, and about 82 more items are needed.
+- **Gate record:** every batch so far passed the review gate (FAR batches 82–85%, BAR batch 01 84%, simulations 79.7%, none with a major item). Findings and fixes are in `docs/reviews/`. FAR batch 06's minor fixes are applied. **FAR batches 07 and 08** (25 items, 66 variants, 18 in Area III, built as two parallel slices) are on `main` and blind-verified twice; **their review gate is pending.**
 - **Claude leads this project.** Hayden has asked Claude to decide priorities and run the pipeline end to end, then report outcomes. Every batch passes an independent review agent (`docs/prompts/review-agent.md`) before it counts as done: average estimated pass likelihood of at least ~80% and no major-revision items, measured on the items the stratified gate covers.
 - **Workflow: commit straight to `main`. No branches, no PRs** (Hayden's instruction). Because nothing sits on a branch for review first, run the blind verifier and the checks *before* committing, and apply Hayden's review-agent findings in follow-up commits.
 
@@ -120,8 +120,8 @@ Hayden's direction (2026-09-29): finish FAR completely before any more BAR, AUD,
    - the bank's skill and area mix is inside the blueprint ranges.
 
    In order:
-   - Simulations batch 01 passed its review gate after revision 2. Still open: Hayden's UI feedback (the `select` task type is done).
-   - FAR batch 06 passed its gate (82.4%) and its minor fixes are applied. Next: write batch 07, mostly Area III.
+   - Simulations batch 01 passed its review gate after revision 2. Still open: Hayden's UI feedback (the `select` task type is done; use it in simulations batch 02 for classification choices).
+   - FAR batch 06: gate passed, fixes applied. FAR batches 07 and 08: review gate pending (stratified, per tactic 4).
    - Write further batches from the gaps `python3 scripts/far-coverage.py` prints until every blueprint task has two items, keeping the skill and area mix in range. Add each new id to the map in the same commit.
    - Write the next simulation batches.
 5. **Other sections, after FAR is done.**

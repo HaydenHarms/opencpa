@@ -1,0 +1,135 @@
+id: far-income-taxes-deferred-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (measuring deferred tax assets and liabilities at enacted rates for the years the differences
+    reverse)
+  - ASC 740-10-45 (balance sheet presentation of deferred taxes)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Hexham Corp. is measuring its deferred taxes at December 31, Year 2. At that date, cumulative tax
+  depreciation exceeds book depreciation by $200,000; the difference will reverse by $80,000 in Year 3
+  and $120,000 in Year 4. Hexham also has an accrued warranty liability of $50,000, deductible for tax
+  when paid, which it expects to pay in Year 3. During Year 2, Hexham paid $30,000 of fines that are not
+  deductible. Hexham's enacted tax rates are 20% for Year 2, 24% for Year 3, and 28% for Year 4 and later
+  years. In December, Year 2, a bill was proposed, but not enacted, that would set the rate for Year 4
+  and later years at 23%. Hexham expects ample future taxable income, files in a single tax jurisdiction,
+  and presents its deferred taxes as one net amount. What net deferred tax liability should Hexham report
+  at December 31, Year 2?
+choices:
+- id: A
+  text: $34,800
+  rationale: Uses the proposed 23% rate for Year 4. Only enacted rates are used; a bill that hasn't been
+    enacted is ignored.
+- id: B
+  text: $40,800
+  rationale: Correct. $80,000 × 24% + $120,000 × 28% − $50,000 × 24%.
+- id: C
+  text: $42,000
+  rationale: Measures every difference at 28%, the rate for Year 4 and later. The differences reversing
+    in Year 3 are measured at the Year 3 rate of 24%.
+- id: D
+  text: $52,800
+  rationale: Leaves out the $12,000 deferred tax asset on the warranty liability. The warranty costs will
+    be deducted when paid in Year 3.
+answer: B
+explanation: 'Deferred taxes are measured at the enacted rates expected to apply when the differences
+  reverse; proposed legislation is ignored. Deferred tax liability: $80,000 × 24% = $19,200 plus $120,000
+  × 28% = $33,600, for $52,800. Deferred tax asset: $50,000 × 24% = $12,000. The fines are a permanent
+  difference and create no deferred tax. Net deferred tax liability = $52,800 − $12,000 = $40,800.'
+variants:
+- stem: Ilsley Corp. is measuring its deferred taxes at December 31, Year 2. At that date, cumulative
+    tax depreciation exceeds book depreciation by $200,000; the difference will reverse by $60,000 in
+    Year 3 and $140,000 in Year 4. Ilsley also has an accrued warranty liability of $40,000, deductible
+    for tax when paid, which it expects to pay in Year 3. During Year 2, Ilsley paid $25,000 of fines
+    that are not deductible. Ilsley's enacted tax rates are 25% for Year 2, 23% for Year 3, and 21% for
+    Year 4 and later years. In December, Year 2, a bill was proposed, but not enacted, that would set
+    the rate for Year 4 and later years at 18%. Ilsley expects ample future taxable income, files in a
+    single tax jurisdiction, and presents its deferred taxes as one net amount. What net deferred tax
+    liability should Ilsley report at December 31, Year 2?
+  choices:
+  - id: A
+    text: $29,800
+    rationale: Uses the proposed 18% rate for Year 4. Only enacted rates are used; a bill that hasn't
+      been enacted is ignored.
+  - id: B
+    text: $34,000
+    rationale: Correct. $60,000 × 23% + $140,000 × 21% − $40,000 × 23%.
+  - id: C
+    text: $40,000
+    rationale: Measures every difference at the 25% Year 2 rate. Deferred taxes are measured at the enacted
+      rates for the years in which the differences reverse.
+  - id: D
+    text: $43,200
+    rationale: Leaves out the $9,200 deferred tax asset on the warranty liability. The warranty costs
+      will be deducted when paid in Year 3.
+  answer: B
+  explanation: 'Deferred taxes are measured at the enacted rates expected to apply when the differences
+    reverse; proposed legislation is ignored. Deferred tax liability: $60,000 × 23% = $13,800 plus $140,000
+    × 21% = $29,400, for $43,200. Deferred tax asset: $40,000 × 23% = $9,200. The fines are a permanent
+    difference and create no deferred tax. Net deferred tax liability = $43,200 − $9,200 = $34,000.'
+- stem: Jevington Corp. is measuring its deferred taxes at December 31, Year 2. At that date, cumulative
+    tax depreciation exceeds book depreciation by $250,000; the difference will reverse by $150,000 in
+    Year 3 and $100,000 in Year 4. Jevington also has an accrued warranty liability of $70,000, deductible
+    for tax when paid, which it expects to pay in Year 3. During Year 2, Jevington paid $40,000 of fines
+    that are not deductible. Jevington's enacted tax rates are 21% for Year 2, 23% for Year 3, and 26%
+    for Year 4 and later years. In December, Year 2, a bill was proposed, but not enacted, that would
+    set the rate for Year 4 and later years at 24%. Jevington expects ample future taxable income, files
+    in a single tax jurisdiction, and presents its deferred taxes as one net amount. What net deferred
+    tax liability should Jevington report at December 31, Year 2?
+  choices:
+  - id: A
+    text: $37,800
+    rationale: Measures every difference at the 21% Year 2 rate. Deferred taxes are measured at the enacted
+      rates for the years in which the differences reverse.
+  - id: B
+    text: $42,400
+    rationale: Uses the proposed 24% rate for Year 4. Only enacted rates are used; a bill that hasn't
+      been enacted is ignored.
+  - id: C
+    text: $44,400
+    rationale: Correct. $150,000 × 23% + $100,000 × 26% − $70,000 × 23%.
+  - id: D
+    text: $76,600
+    rationale: Adds the $16,100 deferred tax asset to the liability. A deferred tax asset reduces the
+      net liability.
+  answer: C
+  explanation: 'Deferred taxes are measured at the enacted rates expected to apply when the differences
+    reverse; proposed legislation is ignored. Deferred tax liability: $150,000 × 23% = $34,500 plus $100,000
+    × 26% = $26,000, for $60,500. Deferred tax asset: $70,000 × 23% = $16,100. The fines are a permanent
+    difference and create no deferred tax. Net deferred tax liability = $60,500 − $16,100 = $44,400.'
+- stem: Kentmere Corp. is measuring its deferred taxes at December 31, Year 2. At that date, cumulative
+    tax depreciation exceeds book depreciation by $300,000; the difference will reverse by $90,000 in
+    Year 3 and $210,000 in Year 4. Kentmere also has an accrued warranty liability of $60,000, deductible
+    for tax when paid, which it expects to pay in Year 3. During Year 2, Kentmere paid $20,000 of fines
+    that are not deductible. Kentmere's enacted tax rates are 30% for Year 2, 27% for Year 3, and 24%
+    for Year 4 and later years. In December, Year 2, a bill was proposed, but not enacted, that would
+    set the rate for Year 4 and later years at 21%. Kentmere expects ample future taxable income, files
+    in a single tax jurisdiction, and presents its deferred taxes as one net amount. What net deferred
+    tax liability should Kentmere report at December 31, Year 2?
+  choices:
+  - id: A
+    text: $58,500
+    rationale: Correct. $90,000 × 27% + $210,000 × 24% − $60,000 × 27%.
+  - id: B
+    text: $72,000
+    rationale: Measures every difference at the 30% Year 2 rate. Deferred taxes are measured at the enacted
+      rates for the years in which the differences reverse.
+  - id: C
+    text: $74,700
+    rationale: Leaves out the $16,200 deferred tax asset on the warranty liability. The warranty costs
+      will be deducted when paid in Year 3.
+  - id: D
+    text: $90,900
+    rationale: Adds the $16,200 deferred tax asset to the liability. A deferred tax asset reduces the
+      net liability.
+  answer: A
+  explanation: 'Deferred taxes are measured at the enacted rates expected to apply when the differences
+    reverse; proposed legislation is ignored. Deferred tax liability: $90,000 × 27% = $24,300 plus $210,000
+    × 24% = $50,400, for $74,700. Deferred tax asset: $60,000 × 27% = $16,200. The fines are a permanent
+    difference and create no deferred tax. Net deferred tax liability = $74,700 − $16,200 = $58,500.'

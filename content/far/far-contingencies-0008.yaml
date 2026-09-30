@@ -1,0 +1,167 @@
+id: far-contingencies-0008
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 450-20 (loss contingencies: accrual, disclosure, unasserted claims)'
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: The controller of Pellington Tools is reviewing documents before Pellington's December 31 statements
+  are issued. (1) Outside counsel's letter on a product-liability suit states that counsel expects the
+  court to find Pellington liable and estimates damages at between $250,000 and $700,000, with $400,000
+  the most likely amount. (2) Pellington's insurer has written that it will not cover a $180,000 claim
+  by a former distributor; counsel's letter on that claim says courts have split on the legal question
+  and counsel cannot predict the outcome. (3) Board minutes note a customer's written demand for $90,000
+  for late deliveries, and counsel's advice that the contract's limitation-of-liability clause bars the
+  claim, since courts in the jurisdiction have enforced identical clauses in every reported case. (4)
+  Board minutes record that an internal review confirmed Pellington overbilled a state agency $60,000
+  during the year, an error the agency has not detected, and that the board has decided to report it to
+  the agency in January; counsel expects the agency to demand repayment in full. In its December 31 statements,
+  what total should Pellington accrue for these matters, and what total loss beyond the amounts accrued
+  should its notes disclose as reasonably possible?
+choices:
+- id: A
+  text: $310,000 accrued; $630,000 disclosed
+  rationale: Accrues the $250,000 low end of the product-liability range. The low end is used only when
+    no amount is a better estimate; counsel named $400,000 as most likely.
+- id: B
+  text: $400,000 accrued; $480,000 disclosed
+  rationale: Accrues nothing for the $60,000 overbilling because the agency hasn't asserted a claim. An
+    unasserted claim is accrued when assertion is probable and a loss is probable and estimable; Pellington
+    has decided to report it.
+- id: C
+  text: $460,000 accrued; $180,000 disclosed
+  rationale: Discloses only the distributor claim. The exposure above the $400,000 accrued for the product-liability
+    suit, up to $700,000, must also be disclosed.
+- id: D
+  text: $460,000 accrued; $480,000 disclosed
+  rationale: Correct. Accrue $400,000 + $60,000; disclose $300,000 + $180,000.
+answer: D
+explanation: '(1) A loss is probable and $400,000 is the best estimate in the range, so $400,000 is accrued,
+  and the reasonably possible loss above it ($700,000 − $400,000 = $300,000) is disclosed. (2) Counsel
+  cannot predict the outcome, so the loss is reasonably possible, not probable: disclose $180,000, accrue
+  nothing; the insurer''s denial means there is no recovery to consider. (3) Given the enforceability
+  of the clause, a loss is remote: neither accrued nor disclosed. (4) The claim is unasserted, but Pellington
+  will report the overbilling, so assertion is probable and repayment of $60,000 is probable and estimable:
+  accrue it. Accrued: $400,000 + $60,000 = $460,000. Disclosed beyond the accruals: $300,000 + $180,000
+  = $480,000.'
+variants:
+- stem: The controller of Quennell Outfitters is reviewing documents before Quennell's December 31 statements
+    are issued. (1) Outside counsel's letter on a product-liability suit states that counsel expects the
+    court to find Quennell liable and estimates damages at between $150,000 and $500,000, with $260,000
+    the most likely amount. (2) Quennell's insurer has written that it will not cover a $120,000 claim
+    by a former distributor; counsel's letter on that claim says courts have split on the legal question
+    and counsel cannot predict the outcome. (3) Board minutes note a customer's written demand for $75,000
+    for late deliveries, and counsel's advice that the contract's limitation-of-liability clause bars
+    the claim, since courts in the jurisdiction have enforced identical clauses in every reported case.
+    (4) Board minutes record that an internal review confirmed Quennell overbilled a state agency $45,000
+    during the year, an error the agency has not detected, and that the board has decided to report it
+    to the agency in January; counsel expects the agency to demand repayment in full. In its December
+    31 statements, what total should Quennell accrue for these matters, and what total loss beyond the
+    amounts accrued should its notes disclose as reasonably possible?
+  choices:
+  - id: A
+    text: $195,000 accrued; $470,000 disclosed
+    rationale: Accrues the $150,000 low end of the product-liability range. The low end is used only when
+      no amount is a better estimate; counsel named $260,000 as most likely.
+  - id: B
+    text: $305,000 accrued; $360,000 disclosed
+    rationale: Correct. Accrue $260,000 + $45,000; disclose $240,000 + $120,000.
+  - id: C
+    text: $305,000 accrued; $435,000 disclosed
+    rationale: Includes the $75,000 customer demand in the disclosure. Counsel's advice makes a loss remote,
+      and a remote loss contingency is not disclosed.
+  - id: D
+    text: $425,000 accrued; $240,000 disclosed
+    rationale: Accrues the $120,000 distributor claim. Counsel cannot predict the outcome, so a loss is
+      not probable; it is disclosed, not accrued.
+  answer: B
+  explanation: '(1) A loss is probable and $260,000 is the best estimate in the range, so $260,000 is
+    accrued, and the reasonably possible loss above it ($500,000 − $260,000 = $240,000) is disclosed.
+    (2) Counsel cannot predict the outcome, so the loss is reasonably possible, not probable: disclose
+    $120,000, accrue nothing; the insurer''s denial means there is no recovery to consider. (3) Given
+    the enforceability of the clause, a loss is remote: neither accrued nor disclosed. (4) The claim is
+    unasserted, but Quennell will report the overbilling, so assertion is probable and repayment of $45,000
+    is probable and estimable: accrue it. Accrued: $260,000 + $45,000 = $305,000. Disclosed beyond the
+    accruals: $240,000 + $120,000 = $360,000.'
+- stem: The controller of Rushmore Instruments is reviewing documents before Rushmore's December 31 statements
+    are issued. (1) Outside counsel's letter on a product-liability suit states that counsel expects the
+    court to find Rushmore liable and estimates damages at between $400,000 and $900,000, with $550,000
+    the most likely amount. (2) Rushmore's insurer has written that it will not cover a $220,000 claim
+    by a former distributor; counsel's letter on that claim says courts have split on the legal question
+    and counsel cannot predict the outcome. (3) Board minutes note a customer's written demand for $130,000
+    for late deliveries, and counsel's advice that the contract's limitation-of-liability clause bars
+    the claim, since courts in the jurisdiction have enforced identical clauses in every reported case.
+    (4) Board minutes record that an internal review confirmed Rushmore overbilled a state agency $85,000
+    during the year, an error the agency has not detected, and that the board has decided to report it
+    to the agency in January; counsel expects the agency to demand repayment in full. In its December
+    31 statements, what total should Rushmore accrue for these matters, and what total loss beyond the
+    amounts accrued should its notes disclose as reasonably possible?
+  choices:
+  - id: A
+    text: $550,000 accrued; $570,000 disclosed
+    rationale: Accrues nothing for the $85,000 overbilling because the agency hasn't asserted a claim.
+      An unasserted claim is accrued when assertion is probable and a loss is probable and estimable;
+      Rushmore has decided to report it.
+  - id: B
+    text: $635,000 accrued; $570,000 disclosed
+    rationale: Correct. Accrue $550,000 + $85,000; disclose $350,000 + $220,000.
+  - id: C
+    text: $635,000 accrued; $700,000 disclosed
+    rationale: Includes the $130,000 customer demand in the disclosure. Counsel's advice makes a loss
+      remote, and a remote loss contingency is not disclosed.
+  - id: D
+    text: $855,000 accrued; $350,000 disclosed
+    rationale: Accrues the $220,000 distributor claim. Counsel cannot predict the outcome, so a loss is
+      not probable; it is disclosed, not accrued.
+  answer: B
+  explanation: '(1) A loss is probable and $550,000 is the best estimate in the range, so $550,000 is
+    accrued, and the reasonably possible loss above it ($900,000 − $550,000 = $350,000) is disclosed.
+    (2) Counsel cannot predict the outcome, so the loss is reasonably possible, not probable: disclose
+    $220,000, accrue nothing; the insurer''s denial means there is no recovery to consider. (3) Given
+    the enforceability of the clause, a loss is remote: neither accrued nor disclosed. (4) The claim is
+    unasserted, but Rushmore will report the overbilling, so assertion is probable and repayment of $85,000
+    is probable and estimable: accrue it. Accrued: $550,000 + $85,000 = $635,000. Disclosed beyond the
+    accruals: $350,000 + $220,000 = $570,000.'
+- stem: The controller of Stanwick Hydraulics is reviewing documents before Stanwick's December 31 statements
+    are issued. (1) Outside counsel's letter on a product-liability suit states that counsel expects the
+    court to find Stanwick liable and estimates damages at between $200,000 and $650,000, with $350,000
+    the most likely amount. (2) Stanwick's insurer has written that it will not cover a $160,000 claim
+    by a former distributor; counsel's letter on that claim says courts have split on the legal question
+    and counsel cannot predict the outcome. (3) Board minutes note a customer's written demand for $110,000
+    for late deliveries, and counsel's advice that the contract's limitation-of-liability clause bars
+    the claim, since courts in the jurisdiction have enforced identical clauses in every reported case.
+    (4) Board minutes record that an internal review confirmed Stanwick overbilled a state agency $70,000
+    during the year, an error the agency has not detected, and that the board has decided to report it
+    to the agency in January; counsel expects the agency to demand repayment in full. In its December
+    31 statements, what total should Stanwick accrue for these matters, and what total loss beyond the
+    amounts accrued should its notes disclose as reasonably possible?
+  choices:
+  - id: A
+    text: $270,000 accrued; $610,000 disclosed
+    rationale: Accrues the $200,000 low end of the product-liability range. The low end is used only when
+      no amount is a better estimate; counsel named $350,000 as most likely.
+  - id: B
+    text: $420,000 accrued; $160,000 disclosed
+    rationale: Discloses only the distributor claim. The exposure above the $350,000 accrued for the product-liability
+      suit, up to $650,000, must also be disclosed.
+  - id: C
+    text: $420,000 accrued; $460,000 disclosed
+    rationale: Correct. Accrue $350,000 + $70,000; disclose $300,000 + $160,000.
+  - id: D
+    text: $580,000 accrued; $300,000 disclosed
+    rationale: Accrues the $160,000 distributor claim. Counsel cannot predict the outcome, so a loss is
+      not probable; it is disclosed, not accrued.
+  answer: C
+  explanation: '(1) A loss is probable and $350,000 is the best estimate in the range, so $350,000 is
+    accrued, and the reasonably possible loss above it ($650,000 − $350,000 = $300,000) is disclosed.
+    (2) Counsel cannot predict the outcome, so the loss is reasonably possible, not probable: disclose
+    $160,000, accrue nothing; the insurer''s denial means there is no recovery to consider. (3) Given
+    the enforceability of the clause, a loss is remote: neither accrued nor disclosed. (4) The claim is
+    unasserted, but Stanwick will report the overbilling, so assertion is probable and repayment of $70,000
+    is probable and estimable: accrue it. Accrued: $350,000 + $70,000 = $420,000. Disclosed beyond the
+    accruals: $300,000 + $160,000 = $460,000.'

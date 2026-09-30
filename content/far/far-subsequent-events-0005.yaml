@@ -1,0 +1,154 @@
+id: far-subsequent-events-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 855-10 (recognized and nonrecognized subsequent events)
+  - ASC 330-10 (lower of cost and net realizable value)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Wexley Co. measures its inventory at the lower of FIFO cost and net realizable value. Its December
+  31, Year 1, inventory count, priced at cost, totals $900,000, and its financial statements will be issued
+  on March 12, Year 2. The following came to light after year-end: on January 18, Wexley sold its entire
+  stock of one line of speakers, carried at $120,000, for $85,000 net of selling costs; demand for those
+  speakers had collapsed in November, Year 1, when a competitor released a cheaper successor model. On
+  January 25, Wexley found that goods costing $25,000 included in the count had been ruined by a roof
+  leak in December and scrapped them. On February 6, a flood destroyed uninsured goods costing $60,000
+  that had been on hand at year-end. On February 22, after commodity prices fell sharply in February,
+  Wexley cut its selling prices on a headphone line, so that the net realizable value of the headphones
+  it held at year-end, which cost $200,000, is now $170,000. What amount should Wexley report as inventory
+  at December 31, Year 1?'
+choices:
+- id: A
+  text: $755,000
+  rationale: Removes the whole $120,000 of speakers sold in January. They were on hand at December 31;
+    the sale shows that their net realizable value was $85,000, so they are written down by $35,000, not
+    removed.
+- id: B
+  text: $780,000
+  rationale: Also writes off the $60,000 of goods destroyed by the February flood. The flood is a condition
+    that arose after year-end, so it is disclosed, not recognized.
+- id: C
+  text: $810,000
+  rationale: Also writes the headphone line down by $30,000 for the February price cuts. The cuts respond
+    to a February market decline, a condition that arose after year-end.
+- id: D
+  text: $840,000
+  rationale: Correct. $900,000 − $35,000 write-down of the speakers − $25,000 of goods damaged in December.
+answer: D
+explanation: 'Events that give evidence about conditions at the balance sheet date are recognized; those
+  that reflect conditions arising after it are disclosed. The speakers'' value had collapsed in November,
+  so the January sale is evidence of their year-end net realizable value: write down $120,000 − $85,000
+  = $35,000. The goods ruined in December had no value at year-end: remove $25,000. The February flood
+  and the February price cuts arose after year-end, so they are not recognized. Inventory = $900,000 −
+  $35,000 − $25,000 = $840,000.'
+variants:
+- stem: 'Yeadon Co. measures its inventory at the lower of FIFO cost and net realizable value. Its December
+    31, Year 1, inventory count, priced at cost, totals $1,250,000, and its financial statements will
+    be issued on March 12, Year 2. The following came to light after year-end: on January 18, Yeadon sold
+    its entire stock of one line of speakers, carried at $160,000, for $104,000 net of selling costs;
+    demand for those speakers had collapsed in November, Year 1, when a competitor released a cheaper
+    successor model. On January 25, Yeadon found that goods costing $38,000 included in the count had
+    been ruined by a roof leak in December and scrapped them. On February 6, a flood destroyed uninsured
+    goods costing $90,000 that had been on hand at year-end. On February 22, after commodity prices fell
+    sharply in February, Yeadon cut its selling prices on a headphone line, so that the net realizable
+    value of the headphones it held at year-end, which cost $240,000, is now $195,000. What amount should
+    Yeadon report as inventory at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $1,066,000
+    rationale: Also writes off the $90,000 of goods destroyed by the February flood. The flood is a condition
+      that arose after year-end, so it is disclosed, not recognized.
+  - id: B
+    text: $1,156,000
+    rationale: Correct. $1,250,000 − $56,000 write-down of the speakers − $38,000 of goods damaged in
+      December.
+  - id: C
+    text: $1,194,000
+    rationale: Keeps the $38,000 of goods damaged in December in inventory. The damage happened in Year
+      1, so those goods had no value at year-end.
+  - id: D
+    text: $1,212,000
+    rationale: Doesn't write down the speakers. Their value collapsed in November, Year 1, and the January
+      sale is evidence of their net realizable value at year-end.
+  answer: B
+  explanation: 'Events that give evidence about conditions at the balance sheet date are recognized; those
+    that reflect conditions arising after it are disclosed. The speakers'' value had collapsed in November,
+    so the January sale is evidence of their year-end net realizable value: write down $160,000 − $104,000
+    = $56,000. The goods ruined in December had no value at year-end: remove $38,000. The February flood
+    and the February price cuts arose after year-end, so they are not recognized. Inventory = $1,250,000
+    − $56,000 − $38,000 = $1,156,000.'
+- stem: 'Axholme Co. measures its inventory at the lower of FIFO cost and net realizable value. Its December
+    31, Year 1, inventory count, priced at cost, totals $640,000, and its financial statements will be
+    issued on March 12, Year 2. The following came to light after year-end: on January 18, Axholme sold
+    its entire stock of one line of speakers, carried at $90,000, for $66,000 net of selling costs; demand
+    for those speakers had collapsed in November, Year 1, when a competitor released a cheaper successor
+    model. On January 25, Axholme found that goods costing $14,000 included in the count had been ruined
+    by a roof leak in December and scrapped them. On February 6, a flood destroyed uninsured goods costing
+    $45,000 that had been on hand at year-end. On February 22, after commodity prices fell sharply in
+    February, Axholme cut its selling prices on a headphone line, so that the net realizable value of
+    the headphones it held at year-end, which cost $150,000, is now $128,000. What amount should Axholme
+    report as inventory at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $536,000
+    rationale: Removes the whole $90,000 of speakers sold in January. They were on hand at December 31;
+      the sale shows that their net realizable value was $66,000, so they are written down by $24,000,
+      not removed.
+  - id: B
+    text: $580,000
+    rationale: Also writes the headphone line down by $22,000 for the February price cuts. The cuts respond
+      to a February market decline, a condition that arose after year-end.
+  - id: C
+    text: $602,000
+    rationale: Correct. $640,000 − $24,000 write-down of the speakers − $14,000 of goods damaged in December.
+  - id: D
+    text: $616,000
+    rationale: Keeps the $14,000 of goods damaged in December in inventory. The damage happened in Year
+      1, so those goods had no value at year-end.
+  answer: C
+  explanation: 'Events that give evidence about conditions at the balance sheet date are recognized; those
+    that reflect conditions arising after it are disclosed. The speakers'' value had collapsed in November,
+    so the January sale is evidence of their year-end net realizable value: write down $90,000 − $66,000
+    = $24,000. The goods ruined in December had no value at year-end: remove $14,000. The February flood
+    and the February price cuts arose after year-end, so they are not recognized. Inventory = $640,000
+    − $24,000 − $14,000 = $602,000.'
+- stem: 'Brampton Co. measures its inventory at the lower of FIFO cost and net realizable value. Its December
+    31, Year 1, inventory count, priced at cost, totals $1,580,000, and its financial statements will
+    be issued on March 12, Year 2. The following came to light after year-end: on January 18, Brampton
+    sold its entire stock of one line of speakers, carried at $210,000, for $150,000 net of selling costs;
+    demand for those speakers had collapsed in November, Year 1, when a competitor released a cheaper
+    successor model. On January 25, Brampton found that goods costing $42,000 included in the count had
+    been ruined by a roof leak in December and scrapped them. On February 6, a flood destroyed uninsured
+    goods costing $120,000 that had been on hand at year-end. On February 22, after commodity prices fell
+    sharply in February, Brampton cut its selling prices on a headphone line, so that the net realizable
+    value of the headphones it held at year-end, which cost $300,000, is now $252,000. What amount should
+    Brampton report as inventory at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $1,430,000
+    rationale: Also writes the headphone line down by $48,000 for the February price cuts. The cuts respond
+      to a February market decline, a condition that arose after year-end.
+  - id: B
+    text: $1,478,000
+    rationale: Correct. $1,580,000 − $60,000 write-down of the speakers − $42,000 of goods damaged in
+      December.
+  - id: C
+    text: $1,520,000
+    rationale: Keeps the $42,000 of goods damaged in December in inventory. The damage happened in Year
+      1, so those goods had no value at year-end.
+  - id: D
+    text: $1,538,000
+    rationale: Doesn't write down the speakers. Their value collapsed in November, Year 1, and the January
+      sale is evidence of their net realizable value at year-end.
+  answer: B
+  explanation: 'Events that give evidence about conditions at the balance sheet date are recognized; those
+    that reflect conditions arising after it are disclosed. The speakers'' value had collapsed in November,
+    so the January sale is evidence of their year-end net realizable value: write down $210,000 − $150,000
+    = $60,000. The goods ruined in December had no value at year-end: remove $42,000. The February flood
+    and the February price cuts arose after year-end, so they are not recognized. Inventory = $1,580,000
+    − $60,000 − $42,000 = $1,478,000.'

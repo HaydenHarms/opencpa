@@ -1,0 +1,144 @@
+id: far-subsequent-events-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 855-10 (recognized and nonrecognized subsequent events)
+  - ASC 210-10 (current assets and current liabilities)
+  - ASC 330-10 (lower of cost and net realizable value)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Garsdale Co.''s loan agreement requires a current ratio of at least 1.75 at each December 31. Before
+  considering subsequent events, Garsdale''s draft December 31, Year 1, balance sheet reports current
+  assets of $1,800,000 and current liabilities of $900,000, which include a $180,000 accrued liability
+  for a suit over an injury at Garsdale''s plant in Year 1. The statements will be issued on March 5,
+  Year 2. After year-end: on January 18, Garsdale settled the suit for $260,000, payable in April; on
+  February 3, Garsdale sold inventory that had cost $150,000 for $90,000, net of selling costs, because
+  a competitor''s product introduced in October, Year 1, had made it obsolete; on February 14, a flood
+  destroyed uninsured inventory that had cost $240,000; and on February 25, the board declared a cash
+  dividend of $100,000, payable March 20. After any adjustments required, what current ratio should Garsdale
+  report at December 31, Year 1, rounded to two decimal places?'
+choices:
+- id: A
+  text: '1.50'
+  rationale: Adds the whole $260,000 settlement to current liabilities without removing the $180,000 already
+    accrued.
+- id: B
+  text: '1.53'
+  rationale: Also removes the $240,000 of inventory destroyed in the February flood, a condition that
+    arose after year-end. It is disclosed, not recognized.
+- id: C
+  text: '1.61'
+  rationale: Also adds the $100,000 dividend declared in February as a liability. A dividend is a liability
+    only once declared, after year-end here.
+- id: D
+  text: '1.78'
+  rationale: Correct. ($1,800,000 − $60,000) ÷ ($900,000 + $80,000) = $1,740,000 ÷ $980,000.
+answer: D
+explanation: 'Recognized: the settlement of a Year 1 injury suit raises the accrued liability by $260,000
+  − $180,000 = $80,000, and the sale of inventory made obsolete in October shows a year-end net realizable
+  value $60,000 below cost. Not recognized (disclosed): the February flood and the February dividend declaration.
+  Current assets = $1,800,000 − $60,000 = $1,740,000; current liabilities = $900,000 + $80,000 = $980,000.
+  Current ratio = $1,740,000 ÷ $980,000 = 1.78, below the 1.75 the loan agreement requires.'
+variants:
+- stem: 'Hebden Co.''s loan agreement requires a current ratio of at least 1.40 at each December 31. Before
+    considering subsequent events, Hebden''s draft December 31, Year 1, balance sheet reports current
+    assets of $2,400,000 and current liabilities of $1,500,000, which include a $240,000 accrued liability
+    for a suit over an injury at Hebden''s plant in Year 1. The statements will be issued on March 5,
+    Year 2. After year-end: on January 18, Hebden settled the suit for $330,000, payable in April; on
+    February 3, Hebden sold inventory that had cost $200,000 for $120,000, net of selling costs, because
+    a competitor''s product introduced in October, Year 1, had made it obsolete; on February 14, a flood
+    destroyed uninsured inventory that had cost $260,000; and on February 25, the board declared a cash
+    dividend of $150,000, payable March 20. After any adjustments required, what current ratio should
+    Hebden report at December 31, Year 1, rounded to two decimal places?'
+  choices:
+  - id: A
+    text: '1.30'
+    rationale: Also removes the $260,000 of inventory destroyed in the February flood, a condition that
+      arose after year-end. It is disclosed, not recognized.
+  - id: B
+    text: '1.46'
+    rationale: Correct. ($2,400,000 − $80,000) ÷ ($1,500,000 + $90,000) = $2,320,000 ÷ $1,590,000.
+  - id: C
+    text: '1.51'
+    rationale: Doesn't write down the obsolete inventory. It became obsolete in October, Year 1, and the
+      February sale is evidence of its net realizable value at year-end.
+  - id: D
+    text: '1.60'
+    rationale: Uses the draft balances without any subsequent-event adjustments.
+  answer: B
+  explanation: 'Recognized: the settlement of a Year 1 injury suit raises the accrued liability by $330,000
+    − $240,000 = $90,000, and the sale of inventory made obsolete in October shows a year-end net realizable
+    value $80,000 below cost. Not recognized (disclosed): the February flood and the February dividend
+    declaration. Current assets = $2,400,000 − $80,000 = $2,320,000; current liabilities = $1,500,000
+    + $90,000 = $1,590,000. Current ratio = $2,320,000 ÷ $1,590,000 = 1.46, below the 1.40 the loan agreement
+    requires.'
+- stem: 'Ickworth Co.''s loan agreement requires a current ratio of at least 2.00 at each December 31.
+    Before considering subsequent events, Ickworth''s draft December 31, Year 1, balance sheet reports
+    current assets of $1,300,000 and current liabilities of $560,000, which include a $100,000 accrued
+    liability for a suit over an injury at Ickworth''s plant in Year 1. The statements will be issued
+    on March 5, Year 2. After year-end: on January 18, Ickworth settled the suit for $150,000, payable
+    in April; on February 3, Ickworth sold inventory that had cost $110,000 for $70,000, net of selling
+    costs, because a competitor''s product introduced in October, Year 1, had made it obsolete; on February
+    14, a flood destroyed uninsured inventory that had cost $180,000; and on February 25, the board declared
+    a cash dividend of $80,000, payable March 20. After any adjustments required, what current ratio should
+    Ickworth report at December 31, Year 1, rounded to two decimal places?'
+  choices:
+  - id: A
+    text: '1.77'
+    rationale: Adds the whole $150,000 settlement to current liabilities without removing the $100,000
+      already accrued.
+  - id: B
+    text: '1.83'
+    rationale: Also adds the $80,000 dividend declared in February as a liability. A dividend is a liability
+      only once declared, after year-end here.
+  - id: C
+    text: '2.07'
+    rationale: Correct. ($1,300,000 − $40,000) ÷ ($560,000 + $50,000) = $1,260,000 ÷ $610,000.
+  - id: D
+    text: '2.13'
+    rationale: Doesn't write down the obsolete inventory. It became obsolete in October, Year 1, and the
+      February sale is evidence of its net realizable value at year-end.
+  answer: C
+  explanation: 'Recognized: the settlement of a Year 1 injury suit raises the accrued liability by $150,000
+    − $100,000 = $50,000, and the sale of inventory made obsolete in October shows a year-end net realizable
+    value $40,000 below cost. Not recognized (disclosed): the February flood and the February dividend
+    declaration. Current assets = $1,300,000 − $40,000 = $1,260,000; current liabilities = $560,000 +
+    $50,000 = $610,000. Current ratio = $1,260,000 ÷ $610,000 = 2.07, below the 2.00 the loan agreement
+    requires.'
+- stem: 'Kelmscott Co.''s loan agreement requires a current ratio of at least 1.60 at each December 31.
+    Before considering subsequent events, Kelmscott''s draft December 31, Year 1, balance sheet reports
+    current assets of $3,100,000 and current liabilities of $1,700,000, which include a $300,000 accrued
+    liability for a suit over an injury at Kelmscott''s plant in Year 1. The statements will be issued
+    on March 5, Year 2. After year-end: on January 18, Kelmscott settled the suit for $420,000, payable
+    in April; on February 3, Kelmscott sold inventory that had cost $260,000 for $170,000, net of selling
+    costs, because a competitor''s product introduced in October, Year 1, had made it obsolete; on February
+    14, a flood destroyed uninsured inventory that had cost $350,000; and on February 25, the board declared
+    a cash dividend of $200,000, payable March 20. After any adjustments required, what current ratio
+    should Kelmscott report at December 31, Year 1, rounded to two decimal places?'
+  choices:
+  - id: A
+    text: '1.49'
+    rationale: Also adds the $200,000 dividend declared in February as a liability. A dividend is a liability
+      only once declared, after year-end here.
+  - id: B
+    text: '1.65'
+    rationale: Correct. ($3,100,000 − $90,000) ÷ ($1,700,000 + $120,000) = $3,010,000 ÷ $1,820,000.
+  - id: C
+    text: '1.70'
+    rationale: Doesn't write down the obsolete inventory. It became obsolete in October, Year 1, and the
+      February sale is evidence of its net realizable value at year-end.
+  - id: D
+    text: '1.82'
+    rationale: Uses the draft balances without any subsequent-event adjustments.
+  answer: B
+  explanation: 'Recognized: the settlement of a Year 1 injury suit raises the accrued liability by $420,000
+    − $300,000 = $120,000, and the sale of inventory made obsolete in October shows a year-end net realizable
+    value $90,000 below cost. Not recognized (disclosed): the February flood and the February dividend
+    declaration. Current assets = $3,100,000 − $90,000 = $3,010,000; current liabilities = $1,700,000
+    + $120,000 = $1,820,000. Current ratio = $3,010,000 ÷ $1,820,000 = 1.65, below the 1.60 the loan agreement
+    requires.'

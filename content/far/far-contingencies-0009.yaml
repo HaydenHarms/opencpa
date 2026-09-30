@@ -1,0 +1,149 @@
+id: far-contingencies-0009
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 450-20 (loss contingencies: recognition, measurement within a range, disclosure)'
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Winslade Corp. is finalizing its Year 2 financial statements, which have not been issued. Its files
+  show: (1) Counsel''s letter a year ago estimated damages in a customer''s lawsuit at between $200,000
+  and $500,000, with no amount more likely than another, and Winslade''s Year 1 statements reported an
+  accrued liability of $200,000. Counsel''s current letter reports that in November, Year 2, the trial
+  court entered a judgment of $380,000 against Winslade; Winslade has appealed, but counsel expects the
+  judgment to be upheld. (2) Board minutes from December, Year 2, approve spending $250,000 in Year 3
+  to modify a plant to meet emissions rules that take effect in Year 4. (3) A former employee filed a
+  discrimination claim in Year 2; counsel expects Winslade to settle for between $40,000 and $90,000,
+  with no amount in the range more likely than another. (4) A supplier has threatened to sue Winslade
+  for $150,000; counsel''s letter says the law on the issue is unsettled and it cannot predict the outcome.
+  What total loss from these matters should Winslade recognize in its Year 2 income statement?'
+choices:
+- id: A
+  text: $220,000
+  rationale: Correct. ($380,000 − $200,000) + $40,000.
+- id: B
+  text: $245,000
+  rationale: Accrues the $65,000 midpoint of the settlement range. With no better estimate in the range,
+    the minimum ($40,000) is accrued.
+- id: C
+  text: $420,000
+  rationale: Charges the whole $380,000 judgment to Year 2. $200,000 was already accrued and expensed
+    in Year 1; only the increase is a Year 2 loss.
+- id: D
+  text: $470,000
+  rationale: Accrues the $250,000 plant modification. The cost relates to future operations under a rule
+    not yet in effect; there is no present obligation, so nothing is accrued.
+answer: A
+explanation: '(1) The judgment, which counsel expects to be upheld, makes a loss of $380,000 probable
+  and estimable. $200,000 was accrued in Year 1, so Year 2 recognizes the increase: $380,000 − $200,000
+  = $180,000. (2) The plant modification is a future cost with no past event creating an obligation: not
+  accrued. (3) Settlement is probable and no amount in the range is a better estimate, so the minimum,
+  $40,000, is accrued, and the range is disclosed. (4) An outcome counsel cannot predict is reasonably
+  possible: disclosed, not accrued. Year 2 loss = $180,000 + $40,000 = $220,000.'
+variants:
+- stem: 'Yelverton Corp. is finalizing its Year 2 financial statements, which have not been issued. Its
+    files show: (1) Counsel''s letter a year ago estimated damages in a customer''s lawsuit at between
+    $120,000 and $360,000, with no amount more likely than another, and Yelverton''s Year 1 statements
+    reported an accrued liability of $120,000. Counsel''s current letter reports that in November, Year
+    2, the trial court entered a judgment of $290,000 against Yelverton; Yelverton has appealed, but counsel
+    expects the judgment to be upheld. (2) Board minutes from December, Year 2, approve spending $180,000
+    in Year 3 to modify a plant to meet emissions rules that take effect in Year 4. (3) A former employee
+    filed a discrimination claim in Year 2; counsel expects Yelverton to settle for between $25,000 and
+    $65,000, with no amount in the range more likely than another. (4) A supplier has threatened to sue
+    Yelverton for $110,000; counsel''s letter says the law on the issue is unsettled and it cannot predict
+    the outcome. What total loss from these matters should Yelverton recognize in its Year 2 income statement?'
+  choices:
+  - id: A
+    text: $25,000
+    rationale: Makes no further accrual for the lawsuit while the appeal is pending. Counsel expects the
+      judgment to stand, so the loss is probable and measured at the judgment.
+  - id: B
+    text: $195,000
+    rationale: Correct. ($290,000 − $120,000) + $25,000.
+  - id: C
+    text: $305,000
+    rationale: Accrues the $110,000 threatened suit. Counsel cannot predict the outcome, so a loss is
+      not probable; it is disclosed, not accrued.
+  - id: D
+    text: $315,000
+    rationale: Charges the whole $290,000 judgment to Year 2. $120,000 was already accrued and expensed
+      in Year 1; only the increase is a Year 2 loss.
+  answer: B
+  explanation: '(1) The judgment, which counsel expects to be upheld, makes a loss of $290,000 probable
+    and estimable. $120,000 was accrued in Year 1, so Year 2 recognizes the increase: $290,000 − $120,000
+    = $170,000. (2) The plant modification is a future cost with no past event creating an obligation:
+    not accrued. (3) Settlement is probable and no amount in the range is a better estimate, so the minimum,
+    $25,000, is accrued, and the range is disclosed. (4) An outcome counsel cannot predict is reasonably
+    possible: disclosed, not accrued. Year 2 loss = $170,000 + $25,000 = $195,000.'
+- stem: 'Zimmerly Corp. is finalizing its Year 2 financial statements, which have not been issued. Its
+    files show: (1) Counsel''s letter a year ago estimated damages in a customer''s lawsuit at between
+    $300,000 and $650,000, with no amount more likely than another, and Zimmerly''s Year 1 statements
+    reported an accrued liability of $300,000. Counsel''s current letter reports that in November, Year
+    2, the trial court entered a judgment of $540,000 against Zimmerly; Zimmerly has appealed, but counsel
+    expects the judgment to be upheld. (2) Board minutes from December, Year 2, approve spending $400,000
+    in Year 3 to modify a plant to meet emissions rules that take effect in Year 4. (3) A former employee
+    filed a discrimination claim in Year 2; counsel expects Zimmerly to settle for between $70,000 and
+    $140,000, with no amount in the range more likely than another. (4) A supplier has threatened to sue
+    Zimmerly for $220,000; counsel''s letter says the law on the issue is unsettled and it cannot predict
+    the outcome. What total loss from these matters should Zimmerly recognize in its Year 2 income statement?'
+  choices:
+  - id: A
+    text: $310,000
+    rationale: Correct. ($540,000 − $300,000) + $70,000.
+  - id: B
+    text: $530,000
+    rationale: Accrues the $220,000 threatened suit. Counsel cannot predict the outcome, so a loss is
+      not probable; it is disclosed, not accrued.
+  - id: C
+    text: $610,000
+    rationale: Charges the whole $540,000 judgment to Year 2. $300,000 was already accrued and expensed
+      in Year 1; only the increase is a Year 2 loss.
+  - id: D
+    text: $710,000
+    rationale: Accrues the $400,000 plant modification. The cost relates to future operations under a
+      rule not yet in effect; there is no present obligation, so nothing is accrued.
+  answer: A
+  explanation: '(1) The judgment, which counsel expects to be upheld, makes a loss of $540,000 probable
+    and estimable. $300,000 was accrued in Year 1, so Year 2 recognizes the increase: $540,000 − $300,000
+    = $240,000. (2) The plant modification is a future cost with no past event creating an obligation:
+    not accrued. (3) Settlement is probable and no amount in the range is a better estimate, so the minimum,
+    $70,000, is accrued, and the range is disclosed. (4) An outcome counsel cannot predict is reasonably
+    possible: disclosed, not accrued. Year 2 loss = $240,000 + $70,000 = $310,000.'
+- stem: 'Averill Corp. is finalizing its Year 2 financial statements, which have not been issued. Its
+    files show: (1) Counsel''s letter a year ago estimated damages in a customer''s lawsuit at between
+    $150,000 and $420,000, with no amount more likely than another, and Averill''s Year 1 statements reported
+    an accrued liability of $150,000. Counsel''s current letter reports that in November, Year 2, the
+    trial court entered a judgment of $330,000 against Averill; Averill has appealed, but counsel expects
+    the judgment to be upheld. (2) Board minutes from December, Year 2, approve spending $210,000 in Year
+    3 to modify a plant to meet emissions rules that take effect in Year 4. (3) A former employee filed
+    a discrimination claim in Year 2; counsel expects Averill to settle for between $35,000 and $85,000,
+    with no amount in the range more likely than another. (4) A supplier has threatened to sue Averill
+    for $95,000; counsel''s letter says the law on the issue is unsettled and it cannot predict the outcome.
+    What total loss from these matters should Averill recognize in its Year 2 income statement?'
+  choices:
+  - id: A
+    text: $35,000
+    rationale: Makes no further accrual for the lawsuit while the appeal is pending. Counsel expects the
+      judgment to stand, so the loss is probable and measured at the judgment.
+  - id: B
+    text: $215,000
+    rationale: Correct. ($330,000 − $150,000) + $35,000.
+  - id: C
+    text: $240,000
+    rationale: Accrues the $60,000 midpoint of the settlement range. With no better estimate in the range,
+      the minimum ($35,000) is accrued.
+  - id: D
+    text: $310,000
+    rationale: Accrues the $95,000 threatened suit. Counsel cannot predict the outcome, so a loss is not
+      probable; it is disclosed, not accrued.
+  answer: B
+  explanation: '(1) The judgment, which counsel expects to be upheld, makes a loss of $330,000 probable
+    and estimable. $150,000 was accrued in Year 1, so Year 2 recognizes the increase: $330,000 − $150,000
+    = $180,000. (2) The plant modification is a future cost with no past event creating an obligation:
+    not accrued. (3) Settlement is probable and no amount in the range is a better estimate, so the minimum,
+    $35,000, is accrued, and the range is disclosed. (4) An outcome counsel cannot predict is reasonably
+    possible: disclosed, not accrued. Year 2 loss = $180,000 + $35,000 = $215,000.'

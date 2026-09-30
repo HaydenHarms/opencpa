@@ -1,0 +1,151 @@
+id: far-consolidated-statements-0008
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 810-10 (consolidation procedures: intercompany eliminations; attribution of net income to the
+    parent and the noncontrolling interest)'
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Gilmore Corp. has owned 80% of Holme Inc. since acquiring it at the beginning of Year 1. For Year
+  2, Holme reports net income of $300,000 and pays dividends of $50,000. Gilmore''s draft Year 2 consolidated
+  income statement reports net income attributable to Gilmore of $1,000,000 and net income attributable
+  to the noncontrolling interest of $60,000. The controller has identified these errors in the draft:
+  (1) Gilmore''s $40,000 of dividend income from Holme was included in consolidated net income; (2) the
+  Year 2 amortization of $20,000 on the excess of the acquisition-date fair value of Holme''s equipment
+  over its book value was not recorded; (3) unrealized profit of $15,000 in Gilmore''s ending inventory,
+  on goods bought from Holme, was not eliminated; and (4) management fees of $30,000 that Holme paid Gilmore
+  were not eliminated. Gilmore attributes the elimination of profit on Holme''s sales to Gilmore proportionately
+  between the parent and the noncontrolling interest. After correcting the errors, what net income attributable
+  to Gilmore should the consolidated income statement report?'
+choices:
+- id: A
+  text: $902,000
+  rationale: Also subtracts the $30,000 management fee. Eliminating it removes equal amounts of revenue
+    and expense, so consolidated net income doesn't change.
+- id: B
+  text: $932,000
+  rationale: Correct. $1,000,000 − $40,000 dividend income − 80% × ($20,000 + $15,000).
+- id: C
+  text: $948,000
+  rationale: Doesn't record the $20,000 of amortization, whose 80% share ($16,000) reduces income attributable
+    to Gilmore.
+- id: D
+  text: $972,000
+  rationale: Leaves the $40,000 of dividend income in. Dividends from a consolidated subsidiary are intercompany
+    and are eliminated.
+answer: B
+explanation: '(1) The $40,000 of dividend income is intercompany: eliminate it, all from Gilmore''s income.
+  (2) and (3) The amortization and the unrealized profit on Holme''s upstream sales both reduce Holme''s
+  income as consolidated, $20,000 + $15,000 = $35,000, shared 80% / 20%, so Gilmore''s share is $28,000.
+  (4) Eliminating the management fee removes equal revenue and expense and doesn''t change net income.
+  Net income attributable to Gilmore = $1,000,000 − $40,000 − $28,000 = $932,000. The noncontrolling interest''s
+  share becomes $60,000 − $7,000 = $53,000.'
+variants:
+- stem: 'Keswick Corp. has owned 70% of Lorton Inc. since acquiring it at the beginning of Year 1. For
+    Year 2, Lorton reports net income of $420,000 and pays dividends of $80,000. Keswick''s draft Year
+    2 consolidated income statement reports net income attributable to Keswick of $1,310,000 and net income
+    attributable to the noncontrolling interest of $126,000. The controller has identified these errors
+    in the draft: (1) Keswick''s $56,000 of dividend income from Lorton was included in consolidated net
+    income; (2) the Year 2 amortization of $30,000 on the excess of the acquisition-date fair value of
+    Lorton''s equipment over its book value was not recorded; (3) unrealized profit of $20,000 in Keswick''s
+    ending inventory, on goods bought from Lorton, was not eliminated; and (4) management fees of $45,000
+    that Lorton paid Keswick were not eliminated. Keswick attributes the elimination of profit on Lorton''s
+    sales to Keswick proportionately between the parent and the noncontrolling interest. After correcting
+    the errors, what net income attributable to Keswick should the consolidated income statement report?'
+  choices:
+  - id: A
+    text: $1,174,000
+    rationale: Also subtracts the $45,000 management fee. Eliminating it removes equal amounts of revenue
+      and expense, so consolidated net income doesn't change.
+  - id: B
+    text: $1,204,000
+    rationale: Charges all of the $30,000 amortization and $20,000 unrealized profit to Keswick. Both
+      relate to Lorton, so 30% is attributed to the noncontrolling interest.
+  - id: C
+    text: $1,219,000
+    rationale: Correct. $1,310,000 − $56,000 dividend income − 70% × ($30,000 + $20,000).
+  - id: D
+    text: $1,275,000
+    rationale: Leaves the $56,000 of dividend income in. Dividends from a consolidated subsidiary are
+      intercompany and are eliminated.
+  answer: C
+  explanation: '(1) The $56,000 of dividend income is intercompany: eliminate it, all from Keswick''s
+    income. (2) and (3) The amortization and the unrealized profit on Lorton''s upstream sales both reduce
+    Lorton''s income as consolidated, $30,000 + $20,000 = $50,000, shared 70% / 30%, so Keswick''s share
+    is $35,000. (4) Eliminating the management fee removes equal revenue and expense and doesn''t change
+    net income. Net income attributable to Keswick = $1,310,000 − $56,000 − $35,000 = $1,219,000. The
+    noncontrolling interest''s share becomes $126,000 − $15,000 = $111,000.'
+- stem: 'Morland Corp. has owned 90% of Newby Inc. since acquiring it at the beginning of Year 1. For
+    Year 2, Newby reports net income of $250,000 and pays dividends of $40,000. Morland''s draft Year
+    2 consolidated income statement reports net income attributable to Morland of $871,000 and net income
+    attributable to the noncontrolling interest of $25,000. The controller has identified these errors
+    in the draft: (1) Morland''s $36,000 of dividend income from Newby was included in consolidated net
+    income; (2) the Year 2 amortization of $10,000 on the excess of the acquisition-date fair value of
+    Newby''s equipment over its book value was not recorded; (3) unrealized profit of $12,000 in Morland''s
+    ending inventory, on goods bought from Newby, was not eliminated; and (4) management fees of $25,000
+    that Newby paid Morland were not eliminated. Morland attributes the elimination of profit on Newby''s
+    sales to Morland proportionately between the parent and the noncontrolling interest. After correcting
+    the errors, what net income attributable to Morland should the consolidated income statement report?'
+  choices:
+  - id: A
+    text: $790,200
+    rationale: Also subtracts the $25,000 management fee. Eliminating it removes equal amounts of revenue
+      and expense, so consolidated net income doesn't change.
+  - id: B
+    text: $815,200
+    rationale: Correct. $871,000 − $36,000 dividend income − 90% × ($10,000 + $12,000).
+  - id: C
+    text: $824,200
+    rationale: Doesn't record the $10,000 of amortization, whose 90% share ($9,000) reduces income attributable
+      to Morland.
+  - id: D
+    text: $851,200
+    rationale: Leaves the $36,000 of dividend income in. Dividends from a consolidated subsidiary are
+      intercompany and are eliminated.
+  answer: B
+  explanation: '(1) The $36,000 of dividend income is intercompany: eliminate it, all from Morland''s
+    income. (2) and (3) The amortization and the unrealized profit on Newby''s upstream sales both reduce
+    Newby''s income as consolidated, $10,000 + $12,000 = $22,000, shared 90% / 10%, so Morland''s share
+    is $19,800. (4) Eliminating the management fee removes equal revenue and expense and doesn''t change
+    net income. Net income attributable to Morland = $871,000 − $36,000 − $19,800 = $815,200. The noncontrolling
+    interest''s share becomes $25,000 − $2,200 = $22,800.'
+- stem: 'Penrith Corp. has owned 75% of Quernmore Inc. since acquiring it at the beginning of Year 1.
+    For Year 2, Quernmore reports net income of $520,000 and pays dividends of $100,000. Penrith''s draft
+    Year 2 consolidated income statement reports net income attributable to Penrith of $1,805,000 and
+    net income attributable to the noncontrolling interest of $130,000. The controller has identified
+    these errors in the draft: (1) Penrith''s $75,000 of dividend income from Quernmore was included in
+    consolidated net income; (2) the Year 2 amortization of $36,000 on the excess of the acquisition-date
+    fair value of Quernmore''s equipment over its book value was not recorded; (3) unrealized profit of
+    $24,000 in Penrith''s ending inventory, on goods bought from Quernmore, was not eliminated; and (4)
+    management fees of $60,000 that Quernmore paid Penrith were not eliminated. Penrith attributes the
+    elimination of profit on Quernmore''s sales to Penrith proportionately between the parent and the
+    noncontrolling interest. After correcting the errors, what net income attributable to Penrith should
+    the consolidated income statement report?'
+  choices:
+  - id: A
+    text: $1,670,000
+    rationale: Charges all of the $36,000 amortization and $24,000 unrealized profit to Penrith. Both
+      relate to Quernmore, so 25% is attributed to the noncontrolling interest.
+  - id: B
+    text: $1,685,000
+    rationale: Correct. $1,805,000 − $75,000 dividend income − 75% × ($36,000 + $24,000).
+  - id: C
+    text: $1,703,000
+    rationale: Doesn't eliminate the $24,000 of unrealized profit, whose 75% share ($18,000) reduces income
+      attributable to Penrith.
+  - id: D
+    text: $1,712,000
+    rationale: Doesn't record the $36,000 of amortization, whose 75% share ($27,000) reduces income attributable
+      to Penrith.
+  answer: B
+  explanation: '(1) The $75,000 of dividend income is intercompany: eliminate it, all from Penrith''s
+    income. (2) and (3) The amortization and the unrealized profit on Quernmore''s upstream sales both
+    reduce Quernmore''s income as consolidated, $36,000 + $24,000 = $60,000, shared 75% / 25%, so Penrith''s
+    share is $45,000. (4) Eliminating the management fee removes equal revenue and expense and doesn''t
+    change net income. Net income attributable to Penrith = $1,805,000 − $75,000 − $45,000 = $1,685,000.
+    The noncontrolling interest''s share becomes $130,000 − $15,000 = $115,000.'

@@ -1,0 +1,165 @@
+id: far-investments-fair-value-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at fair value)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 320-10 (available-for-sale debt securities: unrealized holding gains and losses; reclassification
+    on sale)'
+  - 'ASC 321-10 (equity securities: changes in fair value in net income)'
+  - ASC 326-30 (credit losses on available-for-sale debt securities)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 2, Kirkwood Co. held these investments. First, 4% of the common shares of a listed company,
+  over which it has no significant influence, carried at a fair value of $200,000 at January 1 and worth
+  $226,000 at December 31; Kirkwood received dividends of $6,000 on them. Second, debt securities that
+  Kirkwood bought at par for $100,000 in Year 1 and classified as available for sale, carried at a fair
+  value of $108,000 at January 1, Year 2, and sold on March 1, Year 2, for $111,000; no interest was due
+  on them in Year 2 before the sale. Third, $250,000 face amount of 4% bonds bought at par on January
+  1, Year 2, and classified as available for sale, which pay interest each December 31 and were worth
+  $236,000 at December 31 because market interest rates rose. Kirkwood does not intend to sell the bonds,
+  is not likely to be required to sell them before recovery, and expects to collect all of their contractual
+  cash flows. Ignoring income taxes, what total amount should Kirkwood recognize in net income for Year
+  2 from these investments?
+choices:
+- id: A
+  text: $27,000
+  rationale: Leaves the $26,000 increase in the fair value of the listed shares out of net income. Changes
+    in the fair value of equity securities are reported in net income.
+- id: B
+  text: $39,000
+  rationale: Includes the $14,000 decline in the bonds' fair value in net income. With no expected credit
+    loss and no intent or requirement to sell, the unrealized loss on available-for-sale bonds goes to
+    other comprehensive income.
+- id: C
+  text: $45,000
+  rationale: Measures the gain on the securities sold from their $108,000 January 1 fair value, recognizing
+    only $3,000. The realized gain in net income is proceeds minus amortized cost, $11,000; the $8,000
+    unrealized gain from Year 1 is reclassified out of accumulated other comprehensive income.
+- id: D
+  text: $53,000
+  rationale: Correct. $6,000 dividends + $26,000 fair value increase on the shares + $11,000 realized
+    gain + $10,000 interest.
+answer: D
+explanation: 'Listed shares: dividends of $6,000 plus the $26,000 increase in fair value, both in net
+  income. Securities sold: the realized gain is proceeds minus amortized cost, $111,000 − $100,000 = $11,000,
+  which includes the $8,000 unrealized gain reclassified from accumulated other comprehensive income.
+  Bonds: interest income of $250,000 × 4% = $10,000; the $14,000 decline in fair value is not a credit
+  loss and Kirkwood won''t sell, so it goes to other comprehensive income. Net income = $6,000 + $26,000
+  + $11,000 + $10,000 = $53,000.'
+variants:
+- stem: During Year 2, Lamplugh Co. held these investments. First, 3% of the common shares of a listed
+    company, over which it has no significant influence, carried at a fair value of $320,000 at January
+    1 and worth $351,000 at December 31; Lamplugh received dividends of $9,000 on them. Second, debt securities
+    that Lamplugh bought at par for $150,000 in Year 1 and classified as available for sale, carried at
+    a fair value of $162,000 at January 1, Year 2, and sold on March 1, Year 2, for $166,000; no interest
+    was due on them in Year 2 before the sale. Third, $400,000 face amount of 5% bonds bought at par on
+    January 1, Year 2, and classified as available for sale, which pay interest each December 31 and were
+    worth $381,000 at December 31 because market interest rates rose. Lamplugh does not intend to sell
+    the bonds, is not likely to be required to sell them before recovery, and expects to collect all of
+    their contractual cash flows. Ignoring income taxes, what total amount should Lamplugh recognize in
+    net income for Year 2 from these investments?
+  choices:
+  - id: A
+    text: $45,000
+    rationale: Leaves the $31,000 increase in the fair value of the listed shares out of net income. Changes
+      in the fair value of equity securities are reported in net income.
+  - id: B
+    text: $64,000
+    rationale: Measures the gain on the securities sold from their $162,000 January 1 fair value, recognizing
+      only $4,000. The realized gain in net income is proceeds minus amortized cost, $16,000; the $12,000
+      unrealized gain from Year 1 is reclassified out of accumulated other comprehensive income.
+  - id: C
+    text: $76,000
+    rationale: Correct. $9,000 dividends + $31,000 fair value increase on the shares + $16,000 realized
+      gain + $20,000 interest.
+  - id: D
+    text: $88,000
+    rationale: Adds the $12,000 reclassified from accumulated other comprehensive income on top of the
+      $16,000 realized gain. The reclassification is how the $16,000 reaches net income; it isn't additional
+      income.
+  answer: C
+  explanation: 'Listed shares: dividends of $9,000 plus the $31,000 increase in fair value, both in net
+    income. Securities sold: the realized gain is proceeds minus amortized cost, $166,000 − $150,000 =
+    $16,000, which includes the $12,000 unrealized gain reclassified from accumulated other comprehensive
+    income. Bonds: interest income of $400,000 × 5% = $20,000; the $19,000 decline in fair value is not
+    a credit loss and Lamplugh won''t sell, so it goes to other comprehensive income. Net income = $9,000
+    + $31,000 + $16,000 + $20,000 = $76,000.'
+- stem: During Year 2, Muncaster Co. held these investments. First, 2% of the common shares of a listed
+    company, over which it has no significant influence, carried at a fair value of $140,000 at January
+    1 and worth $158,000 at December 31; Muncaster received dividends of $4,000 on them. Second, debt
+    securities that Muncaster bought at par for $80,000 in Year 1 and classified as available for sale,
+    carried at a fair value of $87,000 at January 1, Year 2, and sold on March 1, Year 2, for $90,000;
+    no interest was due on them in Year 2 before the sale. Third, $200,000 face amount of 6% bonds bought
+    at par on January 1, Year 2, and classified as available for sale, which pay interest each December
+    31 and were worth $183,000 at December 31 because market interest rates rose. Muncaster does not intend
+    to sell the bonds, is not likely to be required to sell them before recovery, and expects to collect
+    all of their contractual cash flows. Ignoring income taxes, what total amount should Muncaster recognize
+    in net income for Year 2 from these investments?
+  choices:
+  - id: A
+    text: $27,000
+    rationale: Includes the $17,000 decline in the bonds' fair value in net income. With no expected credit
+      loss and no intent or requirement to sell, the unrealized loss on available-for-sale bonds goes
+      to other comprehensive income.
+  - id: B
+    text: $37,000
+    rationale: Measures the gain on the securities sold from their $87,000 January 1 fair value, recognizing
+      only $3,000. The realized gain in net income is proceeds minus amortized cost, $10,000; the $7,000
+      unrealized gain from Year 1 is reclassified out of accumulated other comprehensive income.
+  - id: C
+    text: $44,000
+    rationale: Correct. $4,000 dividends + $18,000 fair value increase on the shares + $10,000 realized
+      gain + $12,000 interest.
+  - id: D
+    text: $51,000
+    rationale: Adds the $7,000 reclassified from accumulated other comprehensive income on top of the
+      $10,000 realized gain. The reclassification is how the $10,000 reaches net income; it isn't additional
+      income.
+  answer: C
+  explanation: 'Listed shares: dividends of $4,000 plus the $18,000 increase in fair value, both in net
+    income. Securities sold: the realized gain is proceeds minus amortized cost, $90,000 − $80,000 = $10,000,
+    which includes the $7,000 unrealized gain reclassified from accumulated other comprehensive income.
+    Bonds: interest income of $200,000 × 6% = $12,000; the $17,000 decline in fair value is not a credit
+    loss and Muncaster won''t sell, so it goes to other comprehensive income. Net income = $4,000 + $18,000
+    + $10,000 + $12,000 = $44,000.'
+- stem: During Year 2, Netherby Co. held these investments. First, 5% of the common shares of a listed
+    company, over which it has no significant influence, carried at a fair value of $450,000 at January
+    1 and worth $492,000 at December 31; Netherby received dividends of $12,000 on them. Second, debt
+    securities that Netherby bought at par for $220,000 in Year 1 and classified as available for sale,
+    carried at a fair value of $236,000 at January 1, Year 2, and sold on March 1, Year 2, for $241,000;
+    no interest was due on them in Year 2 before the sale. Third, $500,000 face amount of 4% bonds bought
+    at par on January 1, Year 2, and classified as available for sale, which pay interest each December
+    31 and were worth $468,000 at December 31 because market interest rates rose. Netherby does not intend
+    to sell the bonds, is not likely to be required to sell them before recovery, and expects to collect
+    all of their contractual cash flows. Ignoring income taxes, what total amount should Netherby recognize
+    in net income for Year 2 from these investments?
+  choices:
+  - id: A
+    text: $53,000
+    rationale: Leaves the $42,000 increase in the fair value of the listed shares out of net income. Changes
+      in the fair value of equity securities are reported in net income.
+  - id: B
+    text: $63,000
+    rationale: Includes the $32,000 decline in the bonds' fair value in net income. With no expected credit
+      loss and no intent or requirement to sell, the unrealized loss on available-for-sale bonds goes
+      to other comprehensive income.
+  - id: C
+    text: $95,000
+    rationale: Correct. $12,000 dividends + $42,000 fair value increase on the shares + $21,000 realized
+      gain + $20,000 interest.
+  - id: D
+    text: $111,000
+    rationale: Adds the $16,000 reclassified from accumulated other comprehensive income on top of the
+      $21,000 realized gain. The reclassification is how the $21,000 reaches net income; it isn't additional
+      income.
+  answer: C
+  explanation: 'Listed shares: dividends of $12,000 plus the $42,000 increase in fair value, both in net
+    income. Securities sold: the realized gain is proceeds minus amortized cost, $241,000 − $220,000 =
+    $21,000, which includes the $16,000 unrealized gain reclassified from accumulated other comprehensive
+    income. Bonds: interest income of $500,000 × 4% = $20,000; the $32,000 decline in fair value is not
+    a credit loss and Netherby won''t sell, so it goes to other comprehensive income. Net income = $12,000
+    + $42,000 + $21,000 + $20,000 = $95,000.'

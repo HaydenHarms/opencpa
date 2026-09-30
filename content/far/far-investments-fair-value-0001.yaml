@@ -1,0 +1,141 @@
+id: far-investments-fair-value-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at fair value)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 320-10 (trading, available-for-sale and held-to-maturity debt securities)
+  - ASC 321-10 (equity securities with readily determinable fair values)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Year 2, Kirkby Co. holds four investments: debt securities bought for a portfolio
+  Kirkby actively trades to profit from short-term price changes, with a cost of $150,000 and a fair value
+  of $138,000; debt securities that Kirkby may sell before maturity if it needs cash, with an amortized
+  cost of $300,000 and a fair value of $345,000; bonds that Kirkby has the positive intent and ability
+  to hold to maturity, with an amortized cost of $480,000 and a fair value of $455,000; and 3% of the
+  common shares of a company listed on a national stock exchange, bought for $90,000 and worth $125,000.
+  Kirkby has no significant influence over the listed company and expects to collect all contractual cash
+  flows on its debt securities. What total carrying amount should Kirkby report for these investments
+  on its December 31, Year 2, balance sheet?'
+choices:
+- id: A
+  text: $1,043,000
+  rationale: Reports the debt securities Kirkby may sell at their $300,000 amortized cost. Available-for-sale
+    debt securities are carried at fair value, with unrealized gains and losses in other comprehensive
+    income.
+- id: B
+  text: $1,053,000
+  rationale: Reports the listed shares at their $90,000 cost. Equity securities with readily determinable
+    fair values are carried at fair value.
+- id: C
+  text: $1,063,000
+  rationale: Reports the bonds Kirkby will hold to maturity at their $455,000 fair value. Held-to-maturity
+    debt securities are carried at amortized cost.
+- id: D
+  text: $1,088,000
+  rationale: Correct. $138,000 + $345,000 + $480,000 + $125,000.
+answer: D
+explanation: The actively traded debt securities are trading securities, carried at fair value ($138,000).
+  The debt securities that may be sold are available for sale, also carried at fair value ($345,000).
+  The bonds held to maturity are carried at amortized cost ($480,000), with no allowance because no credit
+  losses are expected. The listed shares have a readily determinable fair value and no significant influence,
+  so they are carried at fair value ($125,000). Total = $1,088,000.
+variants:
+- stem: 'At December 31, Year 2, Lowther Co. holds four investments: debt securities bought for a portfolio
+    Lowther actively trades to profit from short-term price changes, with a cost of $220,000 and a fair
+    value of $236,000; debt securities that Lowther may sell before maturity if it needs cash, with an
+    amortized cost of $410,000 and a fair value of $384,000; bonds that Lowther has the positive intent
+    and ability to hold to maturity, with an amortized cost of $600,000 and a fair value of $572,000;
+    and 2% of the common shares of a company listed on a national stock exchange, bought for $140,000
+    and worth $121,000. Lowther has no significant influence over the listed company and expects to collect
+    all contractual cash flows on its debt securities. What total carrying amount should Lowther report
+    for these investments on its December 31, Year 2, balance sheet?'
+  choices:
+  - id: A
+    text: $1,313,000
+    rationale: Reports the bonds Lowther will hold to maturity at their $572,000 fair value. Held-to-maturity
+      debt securities are carried at amortized cost.
+  - id: B
+    text: $1,325,000
+    rationale: Reports the actively traded debt securities at their $220,000 cost. Trading securities
+      are carried at fair value, with changes in net income.
+  - id: C
+    text: $1,341,000
+    rationale: Correct. $236,000 + $384,000 + $600,000 + $121,000.
+  - id: D
+    text: $1,367,000
+    rationale: Reports the debt securities Lowther may sell at their $410,000 amortized cost. Available-for-sale
+      debt securities are carried at fair value, with unrealized gains and losses in other comprehensive
+      income.
+  answer: C
+  explanation: The actively traded debt securities are trading securities, carried at fair value ($236,000).
+    The debt securities that may be sold are available for sale, also carried at fair value ($384,000).
+    The bonds held to maturity are carried at amortized cost ($600,000), with no allowance because no
+    credit losses are expected. The listed shares have a readily determinable fair value and no significant
+    influence, so they are carried at fair value ($121,000). Total = $1,341,000.
+- stem: 'At December 31, Year 2, Millom Co. holds four investments: debt securities bought for a portfolio
+    Millom actively trades to profit from short-term price changes, with a cost of $110,000 and a fair
+    value of $96,000; debt securities that Millom may sell before maturity if it needs cash, with an amortized
+    cost of $260,000 and a fair value of $281,000; bonds that Millom has the positive intent and ability
+    to hold to maturity, with an amortized cost of $350,000 and a fair value of $362,000; and 4% of the
+    common shares of a company listed on a national stock exchange, bought for $80,000 and worth $52,000.
+    Millom has no significant influence over the listed company and expects to collect all contractual
+    cash flows on its debt securities. What total carrying amount should Millom report for these investments
+    on its December 31, Year 2, balance sheet?'
+  choices:
+  - id: A
+    text: $758,000
+    rationale: Reports the debt securities Millom may sell at their $260,000 amortized cost. Available-for-sale
+      debt securities are carried at fair value, with unrealized gains and losses in other comprehensive
+      income.
+  - id: B
+    text: $779,000
+    rationale: Correct. $96,000 + $281,000 + $350,000 + $52,000.
+  - id: C
+    text: $793,000
+    rationale: Reports the actively traded debt securities at their $110,000 cost. Trading securities
+      are carried at fair value, with changes in net income.
+  - id: D
+    text: $807,000
+    rationale: Reports the listed shares at their $80,000 cost. Equity securities with readily determinable
+      fair values are carried at fair value.
+  answer: B
+  explanation: The actively traded debt securities are trading securities, carried at fair value ($96,000).
+    The debt securities that may be sold are available for sale, also carried at fair value ($281,000).
+    The bonds held to maturity are carried at amortized cost ($350,000), with no allowance because no
+    credit losses are expected. The listed shares have a readily determinable fair value and no significant
+    influence, so they are carried at fair value ($52,000). Total = $779,000.
+- stem: 'At December 31, Year 2, Naworth Co. holds four investments: debt securities bought for a portfolio
+    Naworth actively trades to profit from short-term price changes, with a cost of $310,000 and a fair
+    value of $327,000; debt securities that Naworth may sell before maturity if it needs cash, with an
+    amortized cost of $520,000 and a fair value of $496,000; bonds that Naworth has the positive intent
+    and ability to hold to maturity, with an amortized cost of $750,000 and a fair value of $690,000;
+    and 5% of the common shares of a company listed on a national stock exchange, bought for $180,000
+    and worth $214,000. Naworth has no significant influence over the listed company and expects to collect
+    all contractual cash flows on its debt securities. What total carrying amount should Naworth report
+    for these investments on its December 31, Year 2, balance sheet?'
+  choices:
+  - id: A
+    text: $1,727,000
+    rationale: Reports the bonds Naworth will hold to maturity at their $690,000 fair value. Held-to-maturity
+      debt securities are carried at amortized cost.
+  - id: B
+    text: $1,753,000
+    rationale: Reports the listed shares at their $180,000 cost. Equity securities with readily determinable
+      fair values are carried at fair value.
+  - id: C
+    text: $1,770,000
+    rationale: Reports the actively traded debt securities at their $310,000 cost. Trading securities
+      are carried at fair value, with changes in net income.
+  - id: D
+    text: $1,787,000
+    rationale: Correct. $327,000 + $496,000 + $750,000 + $214,000.
+  answer: D
+  explanation: The actively traded debt securities are trading securities, carried at fair value ($327,000).
+    The debt securities that may be sold are available for sale, also carried at fair value ($496,000).
+    The bonds held to maturity are carried at amortized cost ($750,000), with no allowance because no
+    credit losses are expected. The listed shares have a readily determinable fair value and no significant
+    influence, so they are carried at fair value ($214,000). Total = $1,787,000.

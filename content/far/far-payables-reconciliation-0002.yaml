@@ -1,0 +1,150 @@
+id: far-payables-reconciliation-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 405-10 (liabilities)
+  - Reconciliation of a subsidiary ledger to its general ledger control account
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Delacroix Supply''s accounts payable subledger (the trial balance of vendor accounts)
+  totals $476,500, and its general ledger accounts payable control account shows $486,000. The controller''s
+  investigation finds: (1) a $7,000 vendor credit memo for returned merchandise was posted to the vendor''s
+  subledger account, but no general ledger entry was made; (2) the December purchases journal was footed
+  at $214,000, but the invoices in it total $224,000; the journal total was posted to the general ledger,
+  and each invoice was posted to its vendor''s account; (3) a $3,200 freight invoice was recorded in the
+  general ledger but posted to the wrong vendor''s subledger account; (4) a $12,500 payment on December
+  30 was correctly recorded in the cash disbursements journal but posted twice to the vendor''s subledger
+  account; and (5) a $15,000 invoice for goods shipped FOB shipping point and received December 28 was
+  found in the unmatched-invoice file and has not been recorded anywhere. What net adjustment should Delacroix
+  make to its general ledger accounts payable control account?'
+choices:
+- id: A
+  text: $3,000 net credit
+  rationale: Leaves out the $15,000 unrecorded invoice because it isn't a difference between the two records.
+    The goods were received December 28, so the liability belongs in both.
+- id: B
+  text: $5,500 net credit
+  rationale: Also debits the control account for the $12,500 payment. The payment was recorded correctly
+    in the general ledger; only the subledger posted it twice.
+- id: C
+  text: $8,000 net credit
+  rationale: Ignores the $10,000 underfooting. The general ledger received the journal's wrong total,
+    so the control account is understated.
+- id: D
+  text: $18,000 net credit
+  rationale: Correct. Credit $10,000 underfooting + credit $15,000 unrecorded invoice − debit $7,000 credit
+    memo.
+answer: D
+explanation: 'Correct each record separately. General ledger: $486,000 − $7,000 credit memo + $10,000
+  underfooting + $15,000 unrecorded invoice = $504,000. Subledger: $476,500 + $12,500 duplicate payment
+  posting reversed + $15,000 unrecorded invoice = $504,000. The two agree. The misposted freight invoice
+  is corrected between vendor accounts and changes neither total. Net adjustment to the control account:
+  $10,000 + $15,000 − $7,000 = $18,000 credit.'
+variants:
+- stem: 'At December 31, Emberly Supply''s accounts payable subledger (the trial balance of vendor accounts)
+    totals $347,500, and its general ledger accounts payable control account shows $352,000. The controller''s
+    investigation finds: (1) a $5,500 vendor credit memo for returned merchandise was posted to the vendor''s
+    subledger account, but no general ledger entry was made; (2) the December purchases journal was footed
+    at $168,000, but the invoices in it total $177,000; the journal total was posted to the general ledger,
+    and each invoice was posted to its vendor''s account; (3) a $2,600 freight invoice was recorded in
+    the general ledger but posted to the wrong vendor''s subledger account; (4) an $8,000 payment on December
+    30 was correctly recorded in the cash disbursements journal but posted twice to the vendor''s subledger
+    account; and (5) an $11,000 invoice for goods shipped FOB shipping point and received December 28
+    was found in the unmatched-invoice file and has not been recorded anywhere. What net adjustment should
+    Emberly make to its general ledger accounts payable control account?'
+  choices:
+  - id: A
+    text: $3,500 net credit
+    rationale: Leaves out the $11,000 unrecorded invoice because it isn't a difference between the two
+      records. The goods were received December 28, so the liability belongs in both.
+  - id: B
+    text: $14,500 net credit
+    rationale: Correct. Credit $9,000 underfooting + credit $11,000 unrecorded invoice − debit $5,500
+      credit memo.
+  - id: C
+    text: $17,100 net credit
+    rationale: Credits the control account for the $2,600 freight invoice. It is already in the general
+      ledger; posting it to the wrong vendor affects only the subledger detail, not either total.
+  - id: D
+    text: $20,000 net credit
+    rationale: Ignores the $5,500 credit memo. The return reduces the liability, and only the subledger
+      recorded it.
+  answer: B
+  explanation: 'Correct each record separately. General ledger: $352,000 − $5,500 credit memo + $9,000
+    underfooting + $11,000 unrecorded invoice = $366,500. Subledger: $347,500 + $8,000 duplicate payment
+    posting reversed + $11,000 unrecorded invoice = $366,500. The two agree. The misposted freight invoice
+    is corrected between vendor accounts and changes neither total. Net adjustment to the control account:
+    $9,000 + $11,000 − $5,500 = $14,500 credit.'
+- stem: 'At December 31, Fairweather Supply''s accounts payable subledger (the trial balance of vendor
+    accounts) totals $604,000, and its general ledger accounts payable control account shows $611,000.
+    The controller''s investigation finds: (1) a $9,000 vendor credit memo for returned merchandise was
+    posted to the vendor''s subledger account, but no general ledger entry was made; (2) the December
+    purchases journal was footed at $275,000, but the invoices in it total $293,000; the journal total
+    was posted to the general ledger, and each invoice was posted to its vendor''s account; (3) a $4,100
+    freight invoice was recorded in the general ledger but posted to the wrong vendor''s subledger account;
+    (4) a $16,000 payment on December 30 was correctly recorded in the cash disbursements journal but
+    posted twice to the vendor''s subledger account; and (5) a $13,000 invoice for goods shipped FOB shipping
+    point and received December 28 was found in the unmatched-invoice file and has not been recorded anywhere.
+    What net adjustment should Fairweather make to its general ledger accounts payable control account?'
+  choices:
+  - id: A
+    text: $6,000 net credit
+    rationale: Also debits the control account for the $16,000 payment. The payment was recorded correctly
+      in the general ledger; only the subledger posted it twice.
+  - id: B
+    text: $22,000 net credit
+    rationale: Correct. Credit $18,000 underfooting + credit $13,000 unrecorded invoice − debit $9,000
+      credit memo.
+  - id: C
+    text: $26,100 net credit
+    rationale: Credits the control account for the $4,100 freight invoice. It is already in the general
+      ledger; posting it to the wrong vendor affects only the subledger detail, not either total.
+  - id: D
+    text: $31,000 net credit
+    rationale: Ignores the $9,000 credit memo. The return reduces the liability, and only the subledger
+      recorded it.
+  answer: B
+  explanation: 'Correct each record separately. General ledger: $611,000 − $9,000 credit memo + $18,000
+    underfooting + $13,000 unrecorded invoice = $633,000. Subledger: $604,000 + $16,000 duplicate payment
+    posting reversed + $13,000 unrecorded invoice = $633,000. The two agree. The misposted freight invoice
+    is corrected between vendor accounts and changes neither total. Net adjustment to the control account:
+    $18,000 + $13,000 − $9,000 = $22,000 credit.'
+- stem: 'At December 31, Gladstone Supply''s accounts payable subledger (the trial balance of vendor accounts)
+    totals $267,500, and its general ledger accounts payable control account shows $274,000. The controller''s
+    investigation finds: (1) a $4,000 vendor credit memo for returned merchandise was posted to the vendor''s
+    subledger account, but no general ledger entry was made; (2) the December purchases journal was footed
+    at $131,000, but the invoices in it total $137,000; the journal total was posted to the general ledger,
+    and each invoice was posted to its vendor''s account; (3) a $1,900 freight invoice was recorded in
+    the general ledger but posted to the wrong vendor''s subledger account; (4) an $8,500 payment on December
+    30 was correctly recorded in the cash disbursements journal but posted twice to the vendor''s subledger
+    account; and (5) a $9,500 invoice for goods shipped FOB shipping point and received December 28 was
+    found in the unmatched-invoice file and has not been recorded anywhere. What net adjustment should
+    Gladstone make to its general ledger accounts payable control account?'
+  choices:
+  - id: A
+    text: $3,000 net credit
+    rationale: Also debits the control account for the $8,500 payment. The payment was recorded correctly
+      in the general ledger; only the subledger posted it twice.
+  - id: B
+    text: $5,500 net credit
+    rationale: Ignores the $6,000 underfooting. The general ledger received the journal's wrong total,
+      so the control account is understated.
+  - id: C
+    text: $11,500 net credit
+    rationale: Correct. Credit $6,000 underfooting + credit $9,500 unrecorded invoice − debit $4,000 credit
+      memo.
+  - id: D
+    text: $15,500 net credit
+    rationale: Ignores the $4,000 credit memo. The return reduces the liability, and only the subledger
+      recorded it.
+  answer: C
+  explanation: 'Correct each record separately. General ledger: $274,000 − $4,000 credit memo + $6,000
+    underfooting + $9,500 unrecorded invoice = $285,500. Subledger: $267,500 + $8,500 duplicate payment
+    posting reversed + $9,500 unrecorded invoice = $285,500. The two agree. The misposted freight invoice
+    is corrected between vendor accounts and changes neither total. Net adjustment to the control account:
+    $6,000 + $9,500 − $4,000 = $11,500 credit.'

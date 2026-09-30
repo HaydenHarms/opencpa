@@ -1,0 +1,140 @@
+id: far-cash-flows-0009
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 230-10-45 (classification of cash receipts and payments, including insurance proceeds)
+  - ASC 230-10-50 (noncash investing and financing activities)
+  - ASC 230-10-20 (cash equivalents)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 1, Ingleby Co. sold equipment with a carrying amount of $70,000 for $95,000 in cash;
+  bought machinery costing $500,000, paying $260,000 in cash and signing a note payable to the seller
+  for the rest; received $120,000 from its insurer for a warehouse destroyed by fire; bought 90-day Treasury
+  bills for $50,000; acquired land with a fair value of $200,000 by issuing common shares; received $8,000
+  of interest on a note receivable; and paid $40,000 of principal on the machinery note. Ingleby treats
+  investments with original maturities of three months or less as cash equivalents. What net cash used
+  in investing activities results from these transactions in Ingleby's Year 1 statement of cash flows?
+choices:
+- id: A
+  text: $45,000
+  rationale: Correct. $260,000 paid for machinery − $95,000 sale proceeds − $120,000 insurance proceeds.
+- id: B
+  text: $95,000
+  rationale: Treats the $50,000 of 90-day Treasury bills as an investing outflow. Under Ingleby's policy
+    they are cash equivalents, so buying them doesn't change cash and cash equivalents.
+- id: C
+  text: $115,000
+  rationale: Counts only the $25,000 gain on the equipment as an investing inflow. The whole $95,000 of
+    proceeds is the investing inflow; the gain is subtracted in the operating section under the indirect
+    method.
+- id: D
+  text: $165,000
+  rationale: Classifies the $120,000 of insurance proceeds as operating. Proceeds from insurance claims
+    are classified by the nature of the loss, and a destroyed building is an investing item.
+answer: A
+explanation: 'Investing outflow: $260,000 of cash paid for the machinery; the $240,000 financed by the
+  seller is disclosed as a noncash activity. Investing inflows: $95,000 of proceeds from the equipment
+  sale and $120,000 of insurance proceeds for the destroyed warehouse, which are classified by the nature
+  of the loss. Net cash used = $260,000 − $95,000 − $120,000 = $45,000. The Treasury bills are cash equivalents,
+  the land-for-shares exchange is noncash, interest received is operating, and principal paid on the note
+  is financing.'
+variants:
+- stem: During Year 1, Jervaulx Co. sold equipment with a carrying amount of $110,000 for $140,000 in
+    cash; bought machinery costing $720,000, paying $390,000 in cash and signing a note payable to the
+    seller for the rest; received $150,000 from its insurer for a warehouse destroyed by fire; bought
+    90-day Treasury bills for $80,000; acquired land with a fair value of $260,000 by issuing common shares;
+    received $12,000 of interest on a note receivable; and paid $55,000 of principal on the machinery
+    note. Jervaulx treats investments with original maturities of three months or less as cash equivalents.
+    What net cash used in investing activities results from these transactions in Jervaulx's Year 1 statement
+    of cash flows?
+  choices:
+  - id: A
+    text: $88,000
+    rationale: Counts the $12,000 of interest received as an investing inflow. Interest received is an
+      operating cash flow.
+  - id: B
+    text: $100,000
+    rationale: Correct. $390,000 paid for machinery − $140,000 sale proceeds − $150,000 insurance proceeds.
+  - id: C
+    text: $360,000
+    rationale: Reports the $260,000 of land acquired for shares as an investing outflow. It is a noncash
+      investing and financing activity.
+  - id: D
+    text: $430,000
+    rationale: Reports the full $720,000 cost of the machinery as an outflow. The $330,000 financed by
+      the seller's note is a noncash investing and financing activity, disclosed rather than reported
+      as a cash flow.
+  answer: B
+  explanation: 'Investing outflow: $390,000 of cash paid for the machinery; the $330,000 financed by the
+    seller is disclosed as a noncash activity. Investing inflows: $140,000 of proceeds from the equipment
+    sale and $150,000 of insurance proceeds for the destroyed warehouse, which are classified by the nature
+    of the loss. Net cash used = $390,000 − $140,000 − $150,000 = $100,000. The Treasury bills are cash
+    equivalents, the land-for-shares exchange is noncash, interest received is operating, and principal
+    paid on the note is financing.'
+- stem: During Year 1, Knaresby Co. sold equipment with a carrying amount of $45,000 for $62,000 in cash;
+    bought machinery costing $340,000, paying $180,000 in cash and signing a note payable to the seller
+    for the rest; received $70,000 from its insurer for a warehouse destroyed by fire; bought 90-day Treasury
+    bills for $30,000; acquired land with a fair value of $150,000 by issuing common shares; received
+    $5,000 of interest on a note receivable; and paid $25,000 of principal on the machinery note. Knaresby
+    treats investments with original maturities of three months or less as cash equivalents. What net
+    cash used in investing activities results from these transactions in Knaresby's Year 1 statement of
+    cash flows?
+  choices:
+  - id: A
+    text: $43,000
+    rationale: Counts the $5,000 of interest received as an investing inflow. Interest received is an
+      operating cash flow.
+  - id: B
+    text: $48,000
+    rationale: Correct. $180,000 paid for machinery − $62,000 sale proceeds − $70,000 insurance proceeds.
+  - id: C
+    text: $73,000
+    rationale: Includes the $25,000 of principal paid on the machinery note, which is a financing outflow.
+  - id: D
+    text: $78,000
+    rationale: Treats the $30,000 of 90-day Treasury bills as an investing outflow. Under Knaresby's policy
+      they are cash equivalents, so buying them doesn't change cash and cash equivalents.
+  answer: B
+  explanation: 'Investing outflow: $180,000 of cash paid for the machinery; the $160,000 financed by the
+    seller is disclosed as a noncash activity. Investing inflows: $62,000 of proceeds from the equipment
+    sale and $70,000 of insurance proceeds for the destroyed warehouse, which are classified by the nature
+    of the loss. Net cash used = $180,000 − $62,000 − $70,000 = $48,000. The Treasury bills are cash equivalents,
+    the land-for-shares exchange is noncash, interest received is operating, and principal paid on the
+    note is financing.'
+- stem: During Year 1, Lindale Co. sold equipment with a carrying amount of $150,000 for $190,000 in cash;
+    bought machinery costing $900,000, paying $520,000 in cash and signing a note payable to the seller
+    for the rest; received $210,000 from its insurer for a warehouse destroyed by fire; bought 90-day
+    Treasury bills for $100,000; acquired land with a fair value of $320,000 by issuing common shares;
+    received $15,000 of interest on a note receivable; and paid $70,000 of principal on the machinery
+    note. Lindale treats investments with original maturities of three months or less as cash equivalents.
+    What net cash used in investing activities results from these transactions in Lindale's Year 1 statement
+    of cash flows?
+  choices:
+  - id: A
+    text: $105,000
+    rationale: Counts the $15,000 of interest received as an investing inflow. Interest received is an
+      operating cash flow.
+  - id: B
+    text: $120,000
+    rationale: Correct. $520,000 paid for machinery − $190,000 sale proceeds − $210,000 insurance proceeds.
+  - id: C
+    text: $270,000
+    rationale: Counts only the $40,000 gain on the equipment as an investing inflow. The whole $190,000
+      of proceeds is the investing inflow; the gain is subtracted in the operating section under the indirect
+      method.
+  - id: D
+    text: $440,000
+    rationale: Reports the $320,000 of land acquired for shares as an investing outflow. It is a noncash
+      investing and financing activity.
+  answer: B
+  explanation: 'Investing outflow: $520,000 of cash paid for the machinery; the $380,000 financed by the
+    seller is disclosed as a noncash activity. Investing inflows: $190,000 of proceeds from the equipment
+    sale and $210,000 of insurance proceeds for the destroyed warehouse, which are classified by the nature
+    of the loss. Net cash used = $520,000 − $190,000 − $210,000 = $120,000. The Treasury bills are cash
+    equivalents, the land-for-shares exchange is noncash, interest received is operating, and principal
+    paid on the note is financing.'

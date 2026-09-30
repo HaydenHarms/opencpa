@@ -1,0 +1,129 @@
+id: far-income-taxes-provision-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10 (current and deferred tax expense; deferred tax assets and liabilities)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Lathom Corp. records its income tax provision in a single year-end journal entry, using separate
+  deferred tax asset and deferred tax liability accounts. Its Year 2 taxable income is $480,000, and the
+  enacted tax rate is 25% for all years. At January 1, Year 2, cumulative tax depreciation exceeded book
+  depreciation by $120,000, and Lathom had an accrued warranty liability of $40,000; warranty costs are
+  deductible when paid. At December 31, Year 2, those amounts are $180,000 and $64,000. Lathom has no
+  other temporary differences and expects ample future taxable income. In its Year 2 entry, what amount
+  should Lathom debit to income tax expense?
+choices:
+- id: A
+  text: $120,000
+  rationale: Debits only the $120,000 of current tax. The entry also records deferred tax expense for
+    the net change in the deferred tax accounts.
+- id: B
+  text: $129,000
+  rationale: Correct. Current $120,000 + $15,000 increase in the liability − $6,000 increase in the asset.
+- id: C
+  text: $141,000
+  rationale: Adds the $6,000 increase in the deferred tax asset to expense. An increase in a deferred
+    tax asset is a deferred tax benefit, which reduces expense.
+- id: D
+  text: $149,000
+  rationale: Uses the December 31 deferred tax balances instead of the year's changes. The January 1 balances
+    were already recorded in earlier years.
+answer: B
+explanation: 'The entry is: debit income tax expense and the deferred tax asset; credit income taxes payable
+  and the deferred tax liability. Current tax = $480,000 × 25% = $120,000. The deferred tax liability
+  increases by ($180,000 − $120,000) × 25% = $15,000. The deferred tax asset increases by ($64,000 − $40,000)
+  × 25% = $6,000, a deferred benefit. Income tax expense = $120,000 + $15,000 − $6,000 = $129,000.'
+variants:
+- stem: Mapperley Corp. records its income tax provision in a single year-end journal entry, using separate
+    deferred tax asset and deferred tax liability accounts. Its Year 2 taxable income is $720,000, and
+    the enacted tax rate is 21% for all years. At January 1, Year 2, cumulative tax depreciation exceeded
+    book depreciation by $200,000, and Mapperley had an accrued warranty liability of $50,000; warranty
+    costs are deductible when paid. At December 31, Year 2, those amounts are $300,000 and $90,000. Mapperley
+    has no other temporary differences and expects ample future taxable income. In its Year 2 entry, what
+    amount should Mapperley debit to income tax expense?
+  choices:
+  - id: A
+    text: $142,800
+    rationale: Records the $8,400 increase in the deferred tax asset but not the $21,000 increase in the
+      deferred tax liability.
+  - id: B
+    text: $151,200
+    rationale: Debits only the $151,200 of current tax. The entry also records deferred tax expense for
+      the net change in the deferred tax accounts.
+  - id: C
+    text: $163,800
+    rationale: Correct. Current $151,200 + $21,000 increase in the liability − $8,400 increase in the
+      asset.
+  - id: D
+    text: $172,200
+    rationale: Records the $21,000 increase in the deferred tax liability but not the $8,400 increase
+      in the deferred tax asset.
+  answer: C
+  explanation: 'The entry is: debit income tax expense and the deferred tax asset; credit income taxes
+    payable and the deferred tax liability. Current tax = $720,000 × 21% = $151,200. The deferred tax
+    liability increases by ($300,000 − $200,000) × 21% = $21,000. The deferred tax asset increases by
+    ($90,000 − $50,000) × 21% = $8,400, a deferred benefit. Income tax expense = $151,200 + $21,000 −
+    $8,400 = $163,800.'
+- stem: Nettleton Corp. records its income tax provision in a single year-end journal entry, using separate
+    deferred tax asset and deferred tax liability accounts. Its Year 2 taxable income is $360,000, and
+    the enacted tax rate is 25% for all years. At January 1, Year 2, cumulative tax depreciation exceeded
+    book depreciation by $80,000, and Nettleton had an accrued warranty liability of $30,000; warranty
+    costs are deductible when paid. At December 31, Year 2, those amounts are $140,000 and $46,000. Nettleton
+    has no other temporary differences and expects ample future taxable income. In its Year 2 entry, what
+    amount should Nettleton debit to income tax expense?
+  choices:
+  - id: A
+    text: $101,000
+    rationale: Correct. Current $90,000 + $15,000 increase in the liability − $4,000 increase in the asset.
+  - id: B
+    text: $105,000
+    rationale: Records the $15,000 increase in the deferred tax liability but not the $4,000 increase
+      in the deferred tax asset.
+  - id: C
+    text: $109,000
+    rationale: Adds the $4,000 increase in the deferred tax asset to expense. An increase in a deferred
+      tax asset is a deferred tax benefit, which reduces expense.
+  - id: D
+    text: $113,500
+    rationale: Uses the December 31 deferred tax balances instead of the year's changes. The January 1
+      balances were already recorded in earlier years.
+  answer: A
+  explanation: 'The entry is: debit income tax expense and the deferred tax asset; credit income taxes
+    payable and the deferred tax liability. Current tax = $360,000 × 25% = $90,000. The deferred tax liability
+    increases by ($140,000 − $80,000) × 25% = $15,000. The deferred tax asset increases by ($46,000 −
+    $30,000) × 25% = $4,000, a deferred benefit. Income tax expense = $90,000 + $15,000 − $4,000 = $101,000.'
+- stem: Ormskirk Corp. records its income tax provision in a single year-end journal entry, using separate
+    deferred tax asset and deferred tax liability accounts. Its Year 2 taxable income is $950,000, and
+    the enacted tax rate is 21% for all years. At January 1, Year 2, cumulative tax depreciation exceeded
+    book depreciation by $60,000, and Ormskirk had an accrued warranty liability of $90,000; warranty
+    costs are deductible when paid. At December 31, Year 2, those amounts are $160,000 and $130,000. Ormskirk
+    has no other temporary differences and expects ample future taxable income. In its Year 2 entry, what
+    amount should Ormskirk debit to income tax expense?
+  choices:
+  - id: A
+    text: $191,100
+    rationale: Records the $8,400 increase in the deferred tax asset but not the $21,000 increase in the
+      deferred tax liability.
+  - id: B
+    text: $199,500
+    rationale: Debits only the $199,500 of current tax. The entry also records deferred tax expense for
+      the net change in the deferred tax accounts.
+  - id: C
+    text: $205,800
+    rationale: Uses the December 31 deferred tax balances instead of the year's changes. The January 1
+      balances were already recorded in earlier years.
+  - id: D
+    text: $212,100
+    rationale: Correct. Current $199,500 + $21,000 increase in the liability − $8,400 increase in the
+      asset.
+  answer: D
+  explanation: 'The entry is: debit income tax expense and the deferred tax asset; credit income taxes
+    payable and the deferred tax liability. Current tax = $950,000 × 21% = $199,500. The deferred tax
+    liability increases by ($160,000 − $60,000) × 21% = $21,000. The deferred tax asset increases by ($130,000
+    − $90,000) × 21% = $8,400, a deferred benefit. Income tax expense = $199,500 + $21,000 − $8,400 =
+    $212,100.'

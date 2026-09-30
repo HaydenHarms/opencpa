@@ -1,0 +1,141 @@
+id: far-lessee-operating-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 842-20 (lessee initial measurement of the lease liability and right-of-use asset)
+  - ASC 842-10 (initial direct costs; lease incentives)
+  notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Thornaby Co. signs an 8-year lease of office space, which begins that day
+  and which Thornaby classifies as an operating lease. Annual payments of $50,000 are due each January
+  1, beginning at commencement, and Thornaby made the first payment on January 1, Year 1. The rate implicit
+  in the lease isn't readily determinable, and Thornaby's incremental borrowing rate is 7%. At commencement,
+  Thornaby paid a leasing agent a $6,000 commission that was due only upon signing and paid $3,000 of
+  outside legal fees for negotiating the lease terms, and the lessor paid Thornaby $10,000 in cash as
+  an incentive to sign. Present value factors at 7% for 8 periods are 6.3893 for an annuity due and 5.9713
+  for an ordinary annuity. At what amount should Thornaby initially measure its right-of-use asset?
+choices:
+- id: A
+  text: $269,465
+  rationale: Reports the $269,465 lease liability. The right-of-use asset also includes the payment made
+    at commencement and initial direct costs, less incentives received.
+- id: B
+  text: $309,465
+  rationale: Leaves out the $6,000 commission. A commission owed only because the lease was signed is
+    an initial direct cost, added to the right-of-use asset.
+- id: C
+  text: $315,465
+  rationale: Correct. $50,000 × 6.3893 = $319,465, + $6,000 commission − $10,000 incentive.
+- id: D
+  text: $325,465
+  rationale: Doesn't subtract the $10,000 incentive received from the lessor. Lease incentives received
+    reduce the right-of-use asset.
+answer: C
+explanation: 'The lease liability is the present value of the payments not yet made: $50,000 × 6.3893
+  = $319,465 for all 8 payments, less the $50,000 paid at commencement, = $269,465. The right-of-use asset
+  = the liability + payments made at or before commencement + initial direct costs − lease incentives
+  received = $269,465 + $50,000 + $6,000 − $10,000 = $315,465. The commission is an initial direct cost
+  because it was owed only if the lease was signed; the legal fees for negotiating the terms are not,
+  and are expensed.'
+variants:
+- stem: On January 1, Year 1, Upholland Co. signs a 6-year lease of office space, which begins that day
+    and which Upholland classifies as an operating lease. Annual payments of $72,000 are due each January
+    1, beginning at commencement, and Upholland made the first payment on January 1, Year 1. The rate
+    implicit in the lease isn't readily determinable, and Upholland's incremental borrowing rate is 6%.
+    At commencement, Upholland paid a leasing agent an $8,000 commission that was due only upon signing
+    and paid $5,000 of outside legal fees for negotiating the lease terms, and the lessor paid Upholland
+    $15,000 in cash as an incentive to sign. Present value factors at 6% for 6 periods are 5.2124 for
+    an annuity due and 4.9173 for an ordinary annuity. At what amount should Upholland initially measure
+    its right-of-use asset?
+  choices:
+  - id: A
+    text: $347,046
+    rationale: Discounts the payments as an ordinary annuity. The payments are due at the start of each
+      year, so the annuity-due factor applies.
+  - id: B
+    text: $368,293
+    rationale: Correct. $72,000 × 5.2124 = $375,293, + $8,000 commission − $15,000 incentive.
+  - id: C
+    text: $373,293
+    rationale: Adds the $5,000 of legal fees. Costs of negotiating a lease are incurred whether or not
+      the lease is signed, so they aren't initial direct costs; they are expensed.
+  - id: D
+    text: $383,293
+    rationale: Doesn't subtract the $15,000 incentive received from the lessor. Lease incentives received
+      reduce the right-of-use asset.
+  answer: B
+  explanation: 'The lease liability is the present value of the payments not yet made: $72,000 × 5.2124
+    = $375,293 for all 6 payments, less the $72,000 paid at commencement, = $303,293. The right-of-use
+    asset = the liability + payments made at or before commencement + initial direct costs − lease incentives
+    received = $303,293 + $72,000 + $8,000 − $15,000 = $368,293. The commission is an initial direct cost
+    because it was owed only if the lease was signed; the legal fees for negotiating the terms are not,
+    and are expensed.'
+- stem: On January 1, Year 1, Vowchurch Co. signs a 10-year lease of office space, which begins that day
+    and which Vowchurch classifies as an operating lease. Annual payments of $36,000 are due each January
+    1, beginning at commencement, and Vowchurch made the first payment on January 1, Year 1. The rate
+    implicit in the lease isn't readily determinable, and Vowchurch's incremental borrowing rate is 8%.
+    At commencement, Vowchurch paid a leasing agent a $4,000 commission that was due only upon signing
+    and paid $2,500 of outside legal fees for negotiating the lease terms, and the lessor paid Vowchurch
+    $6,000 in cash as an incentive to sign. Present value factors at 8% for 10 periods are 7.2469 for
+    an annuity due and 6.7101 for an ordinary annuity. At what amount should Vowchurch initially measure
+    its right-of-use asset?
+  choices:
+  - id: A
+    text: $224,888
+    rationale: Reports the $224,888 lease liability. The right-of-use asset also includes the payment
+      made at commencement and initial direct costs, less incentives received.
+  - id: B
+    text: $239,564
+    rationale: Discounts the payments as an ordinary annuity. The payments are due at the start of each
+      year, so the annuity-due factor applies.
+  - id: C
+    text: $254,888
+    rationale: Leaves out the $4,000 commission. A commission owed only because the lease was signed is
+      an initial direct cost, added to the right-of-use asset.
+  - id: D
+    text: $258,888
+    rationale: Correct. $36,000 × 7.2469 = $260,888, + $4,000 commission − $6,000 incentive.
+  answer: D
+  explanation: 'The lease liability is the present value of the payments not yet made: $36,000 × 7.2469
+    = $260,888 for all 10 payments, less the $36,000 paid at commencement, = $224,888. The right-of-use
+    asset = the liability + payments made at or before commencement + initial direct costs − lease incentives
+    received = $224,888 + $36,000 + $4,000 − $6,000 = $258,888. The commission is an initial direct cost
+    because it was owed only if the lease was signed; the legal fees for negotiating the terms are not,
+    and are expensed.'
+- stem: On January 1, Year 1, Wetheral Co. signs a 5-year lease of office space, which begins that day
+    and which Wetheral classifies as an operating lease. Annual payments of $90,000 are due each January
+    1, beginning at commencement, and Wetheral made the first payment on January 1, Year 1. The rate implicit
+    in the lease isn't readily determinable, and Wetheral's incremental borrowing rate is 5%. At commencement,
+    Wetheral paid a leasing agent a $9,000 commission that was due only upon signing and paid $6,000 of
+    outside legal fees for negotiating the lease terms, and the lessor paid Wetheral $20,000 in cash as
+    an incentive to sign. Present value factors at 5% for 5 periods are 4.5460 for an annuity due and
+    4.3295 for an ordinary annuity. At what amount should Wetheral initially measure its right-of-use
+    asset?
+  choices:
+  - id: A
+    text: $319,140
+    rationale: Reports the $319,140 lease liability. The right-of-use asset also includes the payment
+      made at commencement and initial direct costs, less incentives received.
+  - id: B
+    text: $389,140
+    rationale: Leaves out the $9,000 commission. A commission owed only because the lease was signed is
+      an initial direct cost, added to the right-of-use asset.
+  - id: C
+    text: $398,140
+    rationale: Correct. $90,000 × 4.5460 = $409,140, + $9,000 commission − $20,000 incentive.
+  - id: D
+    text: $404,140
+    rationale: Adds the $6,000 of legal fees. Costs of negotiating a lease are incurred whether or not
+      the lease is signed, so they aren't initial direct costs; they are expensed.
+  answer: C
+  explanation: 'The lease liability is the present value of the payments not yet made: $90,000 × 4.5460
+    = $409,140 for all 5 payments, less the $90,000 paid at commencement, = $319,140. The right-of-use
+    asset = the liability + payments made at or before commencement + initial direct costs − lease incentives
+    received = $319,140 + $90,000 + $9,000 − $20,000 = $398,140. The commission is an initial direct cost
+    because it was owed only if the lease was signed; the legal fees for negotiating the terms are not,
+    and are expensed.'

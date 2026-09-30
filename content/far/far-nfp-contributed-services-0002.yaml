@@ -1,0 +1,137 @@
+id: far-nfp-contributed-services-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-605 (contributed services)
+  notes: Batch 07. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Foxhollow Animal Shelter, a not-for-profit entity, received these volunteer services and gifts
+  in Year 1: a licensed veterinarian performed surgeries for which Foxhollow would otherwise have paid
+  a local clinic $28,000; a licensed electrician rewired Foxhollow''s kennel building, labor with a fair
+  value of $14,000, using wiring and fixtures worth $6,000 donated by a supply store; an attorney answered
+  phones at the front desk, time valued at $9,000 at her usual billing rate; a marketing firm ran an advertising
+  campaign with a fair value of $22,000, which Foxhollow''s board says it would not have paid for; and
+  community volunteers walked dogs, time valued at $17,000 at local wage rates. What contribution revenue
+  from contributed services should Foxhollow recognize for Year 1?'
+choices:
+- id: A
+  text: $28,000
+  rationale: Recognizes only the veterinarian's services. The electrician's labor enhanced the kennel
+    building, a nonfinancial asset, so it is recognized as well.
+- id: B
+  text: $42,000
+  rationale: Correct. Veterinarian $28,000 + electrician $14,000.
+- id: C
+  text: $51,000
+  rationale: Includes the attorney's $9,000. She has specialized skills, but answering phones doesn't
+    use them and creates no asset, so the services aren't recognized.
+- id: D
+  text: $64,000
+  rationale: Includes the $22,000 ad campaign. Specialized services are recognized only if the entity
+    would typically need to buy them if not donated; Foxhollow would not have paid for the campaign.
+answer: B
+explanation: Contributed services are recognized only if they create or enhance a nonfinancial asset,
+  or require specialized skills, are provided by people with those skills, and would typically need to
+  be purchased if not donated. The veterinarian's surgeries meet the second test ($28,000), and the electrician's
+  rewiring enhances the kennel building ($14,000). The attorney isn't using her specialized skills, Foxhollow
+  would not have bought the ad campaign, and dog walking needs no specialized skills. The donated wiring
+  is a gift in kind, not a service. Revenue = $28,000 + $14,000 = $42,000.
+variants:
+- stem: 'Glenhaven Animal Rescue, a not-for-profit entity, received these volunteer services and gifts
+    in Year 1: a licensed veterinarian performed surgeries for which Glenhaven would otherwise have paid
+    a local clinic $19,000; a licensed electrician rewired Glenhaven''s kennel building, labor with a
+    fair value of $11,000, using wiring and fixtures worth $4,500 donated by a supply store; an attorney
+    answered phones at the front desk, time valued at $7,500 at her usual billing rate; a marketing firm
+    ran an advertising campaign with a fair value of $16,000, which Glenhaven''s board says it would not
+    have paid for; and community volunteers walked dogs, time valued at $12,000 at local wage rates. What
+    contribution revenue from contributed services should Glenhaven recognize for Year 1?'
+  choices:
+  - id: A
+    text: $11,000
+    rationale: Recognizes only services that create or enhance a nonfinancial asset. Specialized services
+      the entity would otherwise buy, such as the veterinarian's surgeries, are recognized too.
+  - id: B
+    text: $19,000
+    rationale: Recognizes only the veterinarian's services. The electrician's labor enhanced the kennel
+      building, a nonfinancial asset, so it is recognized as well.
+  - id: C
+    text: $30,000
+    rationale: Correct. Veterinarian $19,000 + electrician $11,000.
+  - id: D
+    text: $34,500
+    rationale: Includes the $4,500 of donated wiring and fixtures. They are a contribution of nonfinancial
+      assets (a gift in kind), not contributed services.
+  answer: C
+  explanation: Contributed services are recognized only if they create or enhance a nonfinancial asset,
+    or require specialized skills, are provided by people with those skills, and would typically need
+    to be purchased if not donated. The veterinarian's surgeries meet the second test ($19,000), and the
+    electrician's rewiring enhances the kennel building ($11,000). The attorney isn't using her specialized
+    skills, Glenhaven would not have bought the ad campaign, and dog walking needs no specialized skills.
+    The donated wiring is a gift in kind, not a service. Revenue = $19,000 + $11,000 = $30,000.
+- stem: 'Harwood Humane Society, a not-for-profit entity, received these volunteer services and gifts
+    in Year 1: a licensed veterinarian performed surgeries for which Harwood would otherwise have paid
+    a local clinic $36,000; a licensed electrician rewired Harwood''s kennel building, labor with a fair
+    value of $21,000, using wiring and fixtures worth $8,000 donated by a supply store; an attorney answered
+    phones at the front desk, time valued at $12,000 at her usual billing rate; a marketing firm ran an
+    advertising campaign with a fair value of $30,000, which Harwood''s board says it would not have paid
+    for; and community volunteers walked dogs, time valued at $24,000 at local wage rates. What contribution
+    revenue from contributed services should Harwood recognize for Year 1?'
+  choices:
+  - id: A
+    text: $57,000
+    rationale: Correct. Veterinarian $36,000 + electrician $21,000.
+  - id: B
+    text: $65,000
+    rationale: Includes the $8,000 of donated wiring and fixtures. They are a contribution of nonfinancial
+      assets (a gift in kind), not contributed services.
+  - id: C
+    text: $69,000
+    rationale: Includes the attorney's $12,000. She has specialized skills, but answering phones doesn't
+      use them and creates no asset, so the services aren't recognized.
+  - id: D
+    text: $81,000
+    rationale: Includes the $24,000 of dog walking. The volunteers need no specialized skills and create
+      no nonfinancial asset.
+  answer: A
+  explanation: Contributed services are recognized only if they create or enhance a nonfinancial asset,
+    or require specialized skills, are provided by people with those skills, and would typically need
+    to be purchased if not donated. The veterinarian's surgeries meet the second test ($36,000), and the
+    electrician's rewiring enhances the kennel building ($21,000). The attorney isn't using her specialized
+    skills, Harwood would not have bought the ad campaign, and dog walking needs no specialized skills.
+    The donated wiring is a gift in kind, not a service. Revenue = $36,000 + $21,000 = $57,000.
+- stem: 'Inglewood Pet Refuge, a not-for-profit entity, received these volunteer services and gifts in
+    Year 1: a licensed veterinarian performed surgeries for which Inglewood would otherwise have paid
+    a local clinic $15,000; a licensed electrician rewired Inglewood''s kennel building, labor with a
+    fair value of $9,000, using wiring and fixtures worth $3,500 donated by a supply store; an attorney
+    answered phones at the front desk, time valued at $6,000 at her usual billing rate; a marketing firm
+    ran an advertising campaign with a fair value of $13,000, which Inglewood''s board says it would not
+    have paid for; and community volunteers walked dogs, time valued at $10,000 at local wage rates. What
+    contribution revenue from contributed services should Inglewood recognize for Year 1?'
+  choices:
+  - id: A
+    text: $9,000
+    rationale: Recognizes only services that create or enhance a nonfinancial asset. Specialized services
+      the entity would otherwise buy, such as the veterinarian's surgeries, are recognized too.
+  - id: B
+    text: $24,000
+    rationale: Correct. Veterinarian $15,000 + electrician $9,000.
+  - id: C
+    text: $34,000
+    rationale: Includes the $10,000 of dog walking. The volunteers need no specialized skills and create
+      no nonfinancial asset.
+  - id: D
+    text: $37,000
+    rationale: Includes the $13,000 ad campaign. Specialized services are recognized only if the entity
+      would typically need to buy them if not donated; Inglewood would not have paid for the campaign.
+  answer: B
+  explanation: Contributed services are recognized only if they create or enhance a nonfinancial asset,
+    or require specialized skills, are provided by people with those skills, and would typically need
+    to be purchased if not donated. The veterinarian's surgeries meet the second test ($15,000), and the
+    electrician's rewiring enhances the kennel building ($9,000). The attorney isn't using her specialized
+    skills, Inglewood would not have bought the ad campaign, and dog walking needs no specialized skills.
+    The donated wiring is a gift in kind, not a service. Revenue = $15,000 + $9,000 = $24,000.
