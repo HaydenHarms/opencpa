@@ -43,3 +43,97 @@ explanation: 'Since ASU 2018-07, shares issued to a nonemployee for goods used i
   of APIC. Cash sale: 5,000 × ($18 − $2) = $80,000 of APIC. Direct costs of issuing equity reduce the
   proceeds, so the $9,000 is reclassified from expense to a reduction of APIC. Total: $80,000 + $51,000
   − $9,000 = $122,000.'
+variants:
+- stem: 'During the year, Selwyn Corp. issues $1 par value common stock as follows: (1) 8,000 shares sold
+    for cash at $25 per share, and (2) 4,000 shares issued for a parcel of land. On the exchange date,
+    Selwyn''s shares trade actively on a national exchange at $27 per share, and an independent appraisal
+    values the land at $100,000. Selwyn also pays $12,000 of legal and underwriting costs directly attributable
+    to issuing the shares. Selwyn''s draft year-end statements show land of $100,000, additional paid-in
+    capital of $288,000 from these issuances, and $12,000 of legal and underwriting fees in general and
+    administrative expense. After any corrections needed, what is the total additional paid-in capital
+    from these issuances?'
+  choices:
+  - id: A
+    text: $276,000
+    rationale: Nets the offering costs against APIC but keeps the land at its $100,000 appraisal. Shares
+      issued for an asset are measured at the shares' fair value, and the quoted $27 price gives $108,000.
+  - id: B
+    text: $284,000
+    rationale: Correct. Cash sale $192,000 + land $104,000 (4,000 × $26) − $12,000 of offering costs.
+  - id: C
+    text: $288,000
+    rationale: Accepts the draft, which records the land at the appraisal ($96,000 of APIC) and expenses
+      the offering costs.
+  - id: D
+    text: $296,000
+    rationale: Measures the land at the share price but leaves the $12,000 of offering costs in expense.
+      Direct costs of issuing shares reduce the proceeds, so they reduce APIC.
+  answer: B
+  explanation: 'Since ASU 2018-07, shares issued to a nonemployee for goods used in operations are measured
+    under ASC 718 at the fair value of the shares issued; the quoted price in an active market is also
+    more reliable than an appraisal. The land is recorded at 4,000 × $27 = $108,000: $4,000 of par and
+    $104,000 of APIC. Cash sale: 8,000 × ($25 − $1) = $192,000 of APIC. Direct costs of issuing equity
+    reduce the proceeds, so the $12,000 is reclassified from expense to a reduction of APIC. Total: $192,000
+    + $104,000 − $12,000 = $284,000.'
+- stem: 'During the year, Tolliver Corp. issues $5 par value common stock as follows: (1) 3,000 shares
+    sold for cash at $30 per share, and (2) 2,000 shares issued for a parcel of land. On the exchange
+    date, Tolliver''s shares trade actively on a national exchange at $32 per share, and an independent
+    appraisal values the land at $70,000. Tolliver also pays $4,000 of legal and underwriting costs directly
+    attributable to issuing the shares. Tolliver''s draft year-end statements show land of $70,000, additional
+    paid-in capital of $135,000 from these issuances, and $4,000 of legal and underwriting fees in general
+    and administrative expense. After any corrections needed, what is the total additional paid-in capital
+    from these issuances?'
+  choices:
+  - id: A
+    text: $125,000
+    rationale: Correct. Cash sale $75,000 + land $54,000 (2,000 × $27) − $4,000 of offering costs.
+  - id: B
+    text: $129,000
+    rationale: Measures the land at the share price but leaves the $4,000 of offering costs in expense.
+      Direct costs of issuing shares reduce the proceeds, so they reduce APIC.
+  - id: C
+    text: $131,000
+    rationale: Nets the offering costs against APIC but keeps the land at its $70,000 appraisal. Shares
+      issued for an asset are measured at the shares' fair value, and the quoted $32 price gives $64,000.
+  - id: D
+    text: $150,000
+    rationale: Credits the full proceeds to APIC without first crediting common stock for the par value
+      of the shares issued.
+  answer: A
+  explanation: 'Since ASU 2018-07, shares issued to a nonemployee for goods used in operations are measured
+    under ASC 718 at the fair value of the shares issued; the quoted price in an active market is also
+    more reliable than an appraisal. The land is recorded at 2,000 × $32 = $64,000: $10,000 of par and
+    $54,000 of APIC. Cash sale: 3,000 × ($30 − $5) = $75,000 of APIC. Direct costs of issuing equity reduce
+    the proceeds, so the $4,000 is reclassified from expense to a reduction of APIC. Total: $75,000 +
+    $54,000 − $4,000 = $125,000.'
+- stem: 'During the year, Underhill Corp. issues $2 par value common stock as follows: (1) 10,000 shares
+    sold for cash at $15 per share, and (2) 5,000 shares issued for a parcel of land. On the exchange
+    date, Underhill''s shares trade actively on a national exchange at $16 per share, and an independent
+    appraisal values the land at $72,000. Underhill also pays $10,000 of legal and underwriting costs
+    directly attributable to issuing the shares. Underhill''s draft year-end statements show land of $72,000,
+    additional paid-in capital of $192,000 from these issuances, and $10,000 of legal and underwriting
+    fees in general and administrative expense. After any corrections needed, what is the total additional
+    paid-in capital from these issuances?'
+  choices:
+  - id: A
+    text: $182,000
+    rationale: Nets the offering costs against APIC but keeps the land at its $72,000 appraisal. Shares
+      issued for an asset are measured at the shares' fair value, and the quoted $16 price gives $80,000.
+  - id: B
+    text: $190,000
+    rationale: Correct. Cash sale $130,000 + land $70,000 (5,000 × $14) − $10,000 of offering costs.
+  - id: C
+    text: $200,000
+    rationale: Measures the land at the share price but leaves the $10,000 of offering costs in expense.
+      Direct costs of issuing shares reduce the proceeds, so they reduce APIC.
+  - id: D
+    text: $220,000
+    rationale: Credits the full proceeds to APIC without first crediting common stock for the par value
+      of the shares issued.
+  answer: B
+  explanation: 'Since ASU 2018-07, shares issued to a nonemployee for goods used in operations are measured
+    under ASC 718 at the fair value of the shares issued; the quoted price in an active market is also
+    more reliable than an appraisal. The land is recorded at 5,000 × $16 = $80,000: $10,000 of par and
+    $70,000 of APIC. Cash sale: 10,000 × ($15 − $2) = $130,000 of APIC. Direct costs of issuing equity
+    reduce the proceeds, so the $10,000 is reclassified from expense to a reduction of APIC. Total: $130,000
+    + $70,000 − $10,000 = $190,000.'

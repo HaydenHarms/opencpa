@@ -39,3 +39,89 @@ explanation: 'A correction of a prior-period error adjusts the opening balance o
   the asset''s carrying amount then, $90,000 − 2 × $18,000 = $54,000. Inventory: the $30,000 overstatement
   at December 31, Year 2, overstated retained earnings. Net pre-tax effect: $54,000 − $30,000 = $24,000
   increase; after 25% tax, $18,000 increase.'
+variants:
+- stem: In Year 3, before its Year 3 financial statements are issued, Garvin Inc. finds two errors in
+    its prior-year statements. (1) On January 1, Year 1, it bought a machine for $120,000 with a 6-year
+    life, no salvage value, and straight-line depreciation, and it recorded the entire $120,000 as Year
+    1 expense. The machine is still in use. (2) Its December 31, Year 2, ending inventory was overstated
+    by $25,000. Garvin presents single-year financial statements and applies a 21% tax rate to all corrections.
+    What adjustment should Garvin make to its January 1, Year 3, retained earnings?
+  choices:
+  - id: A
+    text: $27,650 increase
+    rationale: Removes three years of depreciation, including Year 3. The January 1, Year 3, balance reflects
+      only Years 1 and 2.
+  - id: B
+    text: $43,450 increase
+    rationale: 'Correct. Machine: $80,000 pre-tax understatement ($120,000 − 2 × $20,000 of depreciation).
+      Inventory: $25,000 overstatement. Net $55,000 × 79%.'
+  - id: C
+    text: $55,000 increase
+    rationale: Gets the net pre-tax effect right but omits the 21% tax effect of the corrections.
+  - id: D
+    text: $63,200 increase
+    rationale: Corrects only the machine ($80,000 × 79%). The inventory overstatement also affected retained
+      earnings at December 31, Year 2.
+  answer: B
+  explanation: 'A correction of a prior-period error adjusts the opening balance of retained earnings,
+    net of tax. Machine: expensing $120,000 in Year 1 understated retained earnings at January 1, Year
+    3, by the asset''s carrying amount then, $120,000 − 2 × $20,000 = $80,000. Inventory: the $25,000
+    overstatement at December 31, Year 2, overstated retained earnings. Net pre-tax effect: $80,000 −
+    $25,000 = $55,000 increase; after 21% tax, $43,450 increase.'
+- stem: In Year 3, before its Year 3 financial statements are issued, Hartwell Inc. finds two errors in
+    its prior-year statements. (1) On January 1, Year 1, it bought a machine for $60,000 with a 4-year
+    life, no salvage value, and straight-line depreciation, and it recorded the entire $60,000 as Year
+    1 expense. The machine is still in use. (2) Its December 31, Year 2, ending inventory was overstated
+    by $10,000. Hartwell presents single-year financial statements and applies a 30% tax rate to all corrections.
+    What adjustment should Hartwell make to its January 1, Year 3, retained earnings?
+  choices:
+  - id: A
+    text: $14,000 increase
+    rationale: 'Correct. Machine: $30,000 pre-tax understatement ($60,000 − 2 × $15,000 of depreciation).
+      Inventory: $10,000 overstatement. Net $20,000 × 70%.'
+  - id: B
+    text: $20,000 increase
+    rationale: Gets the net pre-tax effect right but omits the 30% tax effect of the corrections.
+  - id: C
+    text: $21,000 increase
+    rationale: Corrects only the machine ($30,000 × 70%). The inventory overstatement also affected retained
+      earnings at December 31, Year 2.
+  - id: D
+    text: $28,000 increase
+    rationale: Adds the inventory overstatement instead of subtracting it. Overstated ending inventory
+      overstated income, so it reduces the correction ($30,000 + $10,000) × 70%.
+  answer: A
+  explanation: 'A correction of a prior-period error adjusts the opening balance of retained earnings,
+    net of tax. Machine: expensing $60,000 in Year 1 understated retained earnings at January 1, Year
+    3, by the asset''s carrying amount then, $60,000 − 2 × $15,000 = $30,000. Inventory: the $10,000 overstatement
+    at December 31, Year 2, overstated retained earnings. Net pre-tax effect: $30,000 − $10,000 = $20,000
+    increase; after 30% tax, $14,000 increase.'
+- stem: In Year 3, before its Year 3 financial statements are issued, Ingersoll Inc. finds two errors
+    in its prior-year statements. (1) On January 1, Year 1, it bought a machine for $200,000 with an 8-year
+    life, no salvage value, and straight-line depreciation, and it recorded the entire $200,000 as Year
+    1 expense. The machine is still in use. (2) Its December 31, Year 2, ending inventory was overstated
+    by $60,000. Ingersoll presents single-year financial statements and applies a 25% tax rate to all
+    corrections. What adjustment should Ingersoll make to its January 1, Year 3, retained earnings?
+  choices:
+  - id: A
+    text: $48,750 increase
+    rationale: Removes three years of depreciation, including Year 3. The January 1, Year 3, balance reflects
+      only Years 1 and 2.
+  - id: B
+    text: $67,500 increase
+    rationale: 'Correct. Machine: $150,000 pre-tax understatement ($200,000 − 2 × $25,000 of depreciation).
+      Inventory: $60,000 overstatement. Net $90,000 × 75%.'
+  - id: C
+    text: $112,500 increase
+    rationale: Corrects only the machine ($150,000 × 75%). The inventory overstatement also affected retained
+      earnings at December 31, Year 2.
+  - id: D
+    text: $157,500 increase
+    rationale: Adds the inventory overstatement instead of subtracting it. Overstated ending inventory
+      overstated income, so it reduces the correction ($150,000 + $60,000) × 75%.
+  answer: B
+  explanation: 'A correction of a prior-period error adjusts the opening balance of retained earnings,
+    net of tax. Machine: expensing $200,000 in Year 1 understated retained earnings at January 1, Year
+    3, by the asset''s carrying amount then, $200,000 − 2 × $25,000 = $150,000. Inventory: the $60,000
+    overstatement at December 31, Year 2, overstated retained earnings. Net pre-tax effect: $150,000 −
+    $60,000 = $90,000 increase; after 25% tax, $67,500 increase.'

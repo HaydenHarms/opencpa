@@ -41,3 +41,95 @@ explanation: Excess of cost over share of book value = $1,500,000 − (30% × $4
   $180,000 is goodwill (not amortized). Carrying amount = $1,500,000 + 30% × $600,000 ($180,000) − 30%
   × $200,000 ($60,000 dividends) − $30,000 amortization − 30% × (40% × $100,000) = $12,000 unrealized
   profit = $1,578,000.
+variants:
+- stem: On January 1, Year 1, Rollins Corp. pays $2,400,000 for 25% of the common stock of Shasta Inc.
+    and can significantly influence Shasta's operating decisions. Shasta's net assets have a book value
+    of $8,000,000. Shasta's equipment, which has a 5-year remaining life and is depreciated straight-line,
+    has a fair value $800,000 above its book value, and no other asset or liability has a fair value that
+    differs from book value. For the year, Shasta reports net income of $1,000,000 and pays dividends
+    of $400,000. During Year 1, Rollins sold inventory to Shasta at a profit of $160,000. Shasta resold
+    75% of that inventory to outsiders during the year and holds the rest at year-end. Ignore income taxes,
+    and assume Rollins has not elected the fair value option. What is the carrying amount of Rollins's
+    investment in Shasta at December 31, Year 1?
+  choices:
+  - id: A
+    text: $2,500,000
+    rationale: Correct. $2,400,000 + $250,000 share of income − $100,000 dividends − $40,000 equipment
+      amortization − $10,000 unrealized profit.
+  - id: B
+    text: $2,510,000
+    rationale: Does not eliminate any of the unrealized profit on the inventory Shasta still holds.
+  - id: C
+    text: $2,540,000
+    rationale: Omits the $40,000 amortization of the equipment's basis difference.
+  - id: D
+    text: $2,600,000
+    rationale: Does not reduce the investment for Rollins's $100,000 share of dividends. Dividends from
+      an equity-method investee are a return of the investment.
+  answer: A
+  explanation: Excess of cost over share of book value = $2,400,000 − (25% × $8,000,000) = $400,000. Of
+    that, 25% × $800,000 = $200,000 relates to the equipment (amortized over 5 years, $40,000 a year)
+    and $200,000 is goodwill (not amortized). Carrying amount = $2,400,000 + 25% × $1,000,000 ($250,000)
+    − 25% × $400,000 ($100,000 dividends) − $40,000 amortization − 25% × (25% × $160,000) = $10,000 unrealized
+    profit = $2,500,000.
+- stem: On January 1, Year 1, Trent Corp. pays $900,000 for 20% of the common stock of Umpqua Inc. and
+    can significantly influence Umpqua's operating decisions. Umpqua's net assets have a book value of
+    $3,500,000. Umpqua's equipment, which has a 5-year remaining life and is depreciated straight-line,
+    has a fair value $500,000 above its book value, and no other asset or liability has a fair value that
+    differs from book value. For the year, Umpqua reports net income of $450,000 and pays dividends of
+    $150,000. During Year 1, Trent sold inventory to Umpqua at a profit of $80,000. Umpqua resold 75%
+    of that inventory to outsiders during the year and holds the rest at year-end. Ignore income taxes,
+    and assume Trent has not elected the fair value option. What is the carrying amount of Trent's investment
+    in Umpqua at December 31, Year 1?
+  choices:
+  - id: A
+    text: $920,000
+    rationale: Eliminates 100% of the unrealized profit ($20,000). Trent eliminates only its 20% share
+      ($4,000).
+  - id: B
+    text: $928,000
+    rationale: Eliminates 20% of the profit on the 75% Umpqua resold. That profit was realized in sales
+      to outsiders; only the 25% still held is unrealized.
+  - id: C
+    text: $936,000
+    rationale: Correct. $900,000 + $90,000 share of income − $30,000 dividends − $20,000 equipment amortization
+      − $4,000 unrealized profit.
+  - id: D
+    text: $940,000
+    rationale: Does not eliminate any of the unrealized profit on the inventory Umpqua still holds.
+  answer: C
+  explanation: Excess of cost over share of book value = $900,000 − (20% × $3,500,000) = $200,000. Of
+    that, 20% × $500,000 = $100,000 relates to the equipment (amortized over 5 years, $20,000 a year)
+    and $100,000 is goodwill (not amortized). Carrying amount = $900,000 + 20% × $450,000 ($90,000) −
+    20% × $150,000 ($30,000 dividends) − $20,000 amortization − 20% × (25% × $80,000) = $4,000 unrealized
+    profit = $936,000.
+- stem: On January 1, Year 1, Vinton Corp. pays $3,000,000 for 40% of the common stock of Wasco Inc. and
+    can significantly influence Wasco's operating decisions. Wasco's net assets have a book value of $6,000,000.
+    Wasco's equipment, which has a 6-year remaining life and is depreciated straight-line, has a fair
+    value $600,000 above its book value, and no other asset or liability has a fair value that differs
+    from book value. For the year, Wasco reports net income of $900,000 and pays dividends of $300,000.
+    During Year 1, Vinton sold inventory to Wasco at a profit of $200,000. Wasco resold 70% of that inventory
+    to outsiders during the year and holds the rest at year-end. Ignore income taxes, and assume Vinton
+    has not elected the fair value option. What is the carrying amount of Vinton's investment in Wasco
+    at December 31, Year 1?
+  choices:
+  - id: A
+    text: $3,140,000
+    rationale: Eliminates 100% of the unrealized profit ($60,000). Vinton eliminates only its 40% share
+      ($24,000).
+  - id: B
+    text: $3,176,000
+    rationale: Correct. $3,000,000 + $360,000 share of income − $120,000 dividends − $40,000 equipment
+      amortization − $24,000 unrealized profit.
+  - id: C
+    text: $3,200,000
+    rationale: Does not eliminate any of the unrealized profit on the inventory Wasco still holds.
+  - id: D
+    text: $3,216,000
+    rationale: Omits the $40,000 amortization of the equipment's basis difference.
+  answer: B
+  explanation: Excess of cost over share of book value = $3,000,000 − (40% × $6,000,000) = $600,000. Of
+    that, 40% × $600,000 = $240,000 relates to the equipment (amortized over 6 years, $40,000 a year)
+    and $360,000 is goodwill (not amortized). Carrying amount = $3,000,000 + 40% × $900,000 ($360,000)
+    − 40% × $300,000 ($120,000 dividends) − $40,000 amortization − 40% × (30% × $200,000) = $24,000 unrealized
+    profit = $3,176,000.

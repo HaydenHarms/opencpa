@@ -43,3 +43,98 @@ explanation: On retirement, common stock is debited at par (1,000 × $2 = $2,000
   When it is allocated, the APIC charge is limited to APIC from earlier retirements and net gains on treasury
   stock of the same issue ($1,500) plus the pro rata APIC on the same issue (1,000 × $12 = $12,000). Mercer
   charges APIC to that limit, $13,500, and retained earnings $18,000 − $13,500 = $4,500.
+variants:
+- stem: Norland Inc. has 20,000 shares of $1 par common stock outstanding, all originally issued at $10
+    per share. Its equity also includes $3,000 of additional paid-in capital from earlier sales, at more
+    than cost, of treasury shares from that same issue. Norland reacquires 2,000 shares at $16 per share
+    and retires them immediately. Norland's policy is to allocate the excess of cost over par between
+    additional paid-in capital and retained earnings, charging additional paid-in capital to the maximum
+    extent that allocation method permits. What amount is debited to retained earnings on the retirement?
+  choices:
+  - id: A
+    text: $0
+    rationale: Charges the whole excess to additional paid-in capital. That APIC-only method, added by
+      ASU 2025-12, is not Norland's; under the allocation method APIC absorbs only $21,000.
+  - id: B
+    text: $9,000
+    rationale: Correct. The $30,000 excess over par is charged first to the pro rata original APIC ($18,000)
+      and the $3,000 of APIC from treasury transactions in the same issue; the remaining $9,000 goes to
+      retained earnings.
+  - id: C
+    text: $12,000
+    rationale: Charges only the pro rata original APIC ($18,000). APIC from earlier treasury stock gains
+      on the same issue can also absorb the excess.
+  - id: D
+    text: $27,000
+    rationale: Charges only the $3,000 of APIC from treasury transactions and none of the $18,000 of original
+      APIC on the retired shares.
+  answer: B
+  explanation: On retirement, common stock is debited at par (2,000 × $1 = $2,000). ASC 505-30 lets the
+    $30,000 excess of cost over par be charged entirely to retained earnings, allocated between APIC and
+    retained earnings, or (after ASU 2025-12) charged entirely to APIC; Norland uses the allocation method.
+    When it is allocated, the APIC charge is limited to APIC from earlier retirements and net gains on
+    treasury stock of the same issue ($3,000) plus the pro rata APIC on the same issue (2,000 × $9 = $18,000).
+    Norland charges APIC to that limit, $21,000, and retained earnings $30,000 − $21,000 = $9,000.
+- stem: Ossining Inc. has 50,000 shares of $5 par common stock outstanding, all originally issued at $20
+    per share. Its equity also includes $4,000 of additional paid-in capital from earlier sales, at more
+    than cost, of treasury shares from that same issue. Ossining reacquires 3,000 shares at $30 per share
+    and retires them immediately. Ossining's policy is to allocate the excess of cost over par between
+    additional paid-in capital and retained earnings, charging additional paid-in capital to the maximum
+    extent that allocation method permits. What amount is debited to retained earnings on the retirement?
+  choices:
+  - id: A
+    text: $26,000
+    rationale: Correct. The $75,000 excess over par is charged first to the pro rata original APIC ($45,000)
+      and the $4,000 of APIC from treasury transactions in the same issue; the remaining $26,000 goes
+      to retained earnings.
+  - id: B
+    text: $30,000
+    rationale: Charges only the pro rata original APIC ($45,000). APIC from earlier treasury stock gains
+      on the same issue can also absorb the excess.
+  - id: C
+    text: $71,000
+    rationale: Charges only the $4,000 of APIC from treasury transactions and none of the $45,000 of original
+      APIC on the retired shares.
+  - id: D
+    text: $75,000
+    rationale: Charges the entire excess over par to retained earnings. ASC 505-30 permits that alternative,
+      but Ossining allocates the excess and uses APIC first.
+  answer: A
+  explanation: On retirement, common stock is debited at par (3,000 × $5 = $15,000). ASC 505-30 lets the
+    $75,000 excess of cost over par be charged entirely to retained earnings, allocated between APIC and
+    retained earnings, or (after ASU 2025-12) charged entirely to APIC; Ossining uses the allocation method.
+    When it is allocated, the APIC charge is limited to APIC from earlier retirements and net gains on
+    treasury stock of the same issue ($4,000) plus the pro rata APIC on the same issue (3,000 × $15 =
+    $45,000). Ossining charges APIC to that limit, $49,000, and retained earnings $75,000 − $49,000 =
+    $26,000.
+- stem: Peyton Inc. has 8,000 shares of $3 par common stock outstanding, all originally issued at $15
+    per share. Its equity also includes $2,500 of additional paid-in capital from earlier sales, at more
+    than cost, of treasury shares from that same issue. Peyton reacquires 500 shares at $28 per share
+    and retires them immediately. Peyton's policy is to allocate the excess of cost over par between additional
+    paid-in capital and retained earnings, charging additional paid-in capital to the maximum extent that
+    allocation method permits. What amount is debited to retained earnings on the retirement?
+  choices:
+  - id: A
+    text: $0
+    rationale: Charges the whole excess to additional paid-in capital. That APIC-only method, added by
+      ASU 2025-12, is not Peyton's; under the allocation method APIC absorbs only $8,500.
+  - id: B
+    text: $4,000
+    rationale: Correct. The $12,500 excess over par is charged first to the pro rata original APIC ($6,000)
+      and the $2,500 of APIC from treasury transactions in the same issue; the remaining $4,000 goes to
+      retained earnings.
+  - id: C
+    text: $10,000
+    rationale: Charges only the $2,500 of APIC from treasury transactions and none of the $6,000 of original
+      APIC on the retired shares.
+  - id: D
+    text: $12,500
+    rationale: Charges the entire excess over par to retained earnings. ASC 505-30 permits that alternative,
+      but Peyton allocates the excess and uses APIC first.
+  answer: B
+  explanation: On retirement, common stock is debited at par (500 × $3 = $1,500). ASC 505-30 lets the
+    $12,500 excess of cost over par be charged entirely to retained earnings, allocated between APIC and
+    retained earnings, or (after ASU 2025-12) charged entirely to APIC; Peyton uses the allocation method.
+    When it is allocated, the APIC charge is limited to APIC from earlier retirements and net gains on
+    treasury stock of the same issue ($2,500) plus the pro rata APIC on the same issue (500 × $12 = $6,000).
+    Peyton charges APIC to that limit, $8,500, and retained earnings $12,500 − $8,500 = $4,000.

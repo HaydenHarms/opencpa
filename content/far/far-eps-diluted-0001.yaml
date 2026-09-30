@@ -40,3 +40,88 @@ explanation: 'Income available to common = $1,200,000 − $100,000 cumulative pr
   dilutive. Convertible bonds (if-converted): add back after-tax interest of $60,000 × (1 − 25%) = $45,000
   and add 20,000 shares; the incremental effect is $2.25 per share, higher than the $2.13 EPS so far,
   so the bonds are antidilutive and excluded. Diluted EPS = $1,100,000 ÷ 516,000 = $2.13.'
+variants:
+- stem: Larkin Corp. reports net income of $2,000,000 and 800,000 weighted-average common shares outstanding
+    for the year. It has cumulative preferred stock on which $200,000 of dividends accrued this year,
+    none of which was declared. Larkin also has (1) options to buy 60,000 common shares at $40 per share,
+    outstanding all year, with an average market price of $60 during the year, and (2) $2,000,000 of 5%
+    convertible bonds issued at par and outstanding all year, convertible into 25,000 common shares. Larkin's
+    tax rate is 25%. What are Larkin's diluted earnings per share, rounded to the nearest cent?
+  choices:
+  - id: A
+    text: $2.20
+    rationale: Correct. ($2,000,000 − $200,000) ÷ (800,000 + 20,000 option shares).
+  - id: B
+    text: $2.22
+    rationale: Includes the convertible bonds. Their incremental effect is $75,000 ÷ 25,000 = $3.00 per
+      share, above the $2.20 diluted EPS before the bonds, so they are antidilutive and excluded.
+  - id: C
+    text: $2.25
+    rationale: Reports basic EPS. The options are dilutive, so their incremental shares are included in
+      diluted EPS.
+  - id: D
+    text: $2.44
+    rationale: Does not deduct the $200,000 of cumulative preferred dividends. Cumulative dividends are
+      deducted whether or not declared.
+  answer: A
+  explanation: 'Income available to common = $2,000,000 − $200,000 cumulative preferred dividends = $1,800,000.
+    Options (treasury stock method): 60,000 − (60,000 × $40 ÷ $60) = 20,000 incremental shares, which
+    are dilutive. Convertible bonds (if-converted): add back after-tax interest of $100,000 × (1 − 25%)
+    = $75,000 and add 25,000 shares; the incremental effect is $3.00 per share, higher than the $2.20
+    EPS so far, so the bonds are antidilutive and excluded. Diluted EPS = $1,800,000 ÷ 820,000 = $2.20.'
+- stem: Merrick Corp. reports net income of $900,000 and 300,000 weighted-average common shares outstanding
+    for the year. It has cumulative preferred stock on which $60,000 of dividends accrued this year, none
+    of which was declared. Merrick also has (1) options to buy 30,000 common shares at $20 per share,
+    outstanding all year, with an average market price of $40 during the year, and (2) $1,500,000 of 7%
+    convertible bonds issued at par and outstanding all year, convertible into 25,000 common shares. Merrick's
+    tax rate is 21%. What are Merrick's diluted earnings per share, rounded to the nearest cent?
+  choices:
+  - id: A
+    text: $2.55
+    rationale: Adds all 30,000 option shares. Under the treasury stock method only the shares not covered
+      by assumed repurchase (15,000) are added.
+  - id: B
+    text: $2.67
+    rationale: Correct. ($900,000 − $60,000) ÷ (300,000 + 15,000 option shares).
+  - id: C
+    text: $2.71
+    rationale: Includes the convertible bonds. Their incremental effect is $82,950 ÷ 25,000 = $3.32 per
+      share, above the $2.67 diluted EPS before the bonds, so they are antidilutive and excluded.
+  - id: D
+    text: $2.80
+    rationale: Reports basic EPS. The options are dilutive, so their incremental shares are included in
+      diluted EPS.
+  answer: B
+  explanation: 'Income available to common = $900,000 − $60,000 cumulative preferred dividends = $840,000.
+    Options (treasury stock method): 30,000 − (30,000 × $20 ÷ $40) = 15,000 incremental shares, which
+    are dilutive. Convertible bonds (if-converted): add back after-tax interest of $105,000 × (1 − 21%)
+    = $82,950 and add 25,000 shares; the incremental effect is $3.32 per share, higher than the $2.67
+    EPS so far, so the bonds are antidilutive and excluded. Diluted EPS = $840,000 ÷ 315,000 = $2.67.'
+- stem: Nutley Corp. reports net income of $3,000,000 and 1,000,000 weighted-average common shares outstanding
+    for the year. It has cumulative preferred stock on which $250,000 of dividends accrued this year,
+    none of which was declared. Nutley also has (1) options to buy 100,000 common shares at $45 per share,
+    outstanding all year, with an average market price of $75 during the year, and (2) $3,000,000 of 6%
+    convertible bonds issued at par and outstanding all year, convertible into 40,000 common shares. Nutley's
+    tax rate is 25%. What are Nutley's diluted earnings per share, rounded to the nearest cent?
+  choices:
+  - id: A
+    text: $2.64
+    rationale: Correct. ($3,000,000 − $250,000) ÷ (1,000,000 + 40,000 option shares).
+  - id: B
+    text: $2.67
+    rationale: Includes the convertible bonds. Their incremental effect is $135,000 ÷ 40,000 = $3.38 per
+      share, above the $2.64 diluted EPS before the bonds, so they are antidilutive and excluded.
+  - id: C
+    text: $2.75
+    rationale: Reports basic EPS. The options are dilutive, so their incremental shares are included in
+      diluted EPS.
+  - id: D
+    text: $2.88
+    rationale: Does not deduct the $250,000 of cumulative preferred dividends. Cumulative dividends are
+      deducted whether or not declared.
+  answer: A
+  explanation: 'Income available to common = $3,000,000 − $250,000 cumulative preferred dividends = $2,750,000.
+    Options (treasury stock method): 100,000 − (100,000 × $45 ÷ $75) = 40,000 incremental shares, which
+    are dilutive. Convertible bonds (if-converted): add back after-tax interest of $180,000 × (1 − 25%)
+    = $135,000 and add 40,000 shares; the incremental effect is $3.38 per share, higher than the $2.64
+    EPS so far, so the bonds are antidilutive and excluded. Diluted EPS = $2,750,000 ÷ 1,040,000 = $2.64.'

@@ -40,3 +40,85 @@ explanation: 'Financing activities under U.S. GAAP: cash paid to retire debt (th
   carrying amount) −$200,000; dividends paid −$20,000; proceeds from issuing stock +$150,000; purchase
   of treasury stock −$30,000. Net cash used = $100,000. The preferred-to-common conversion involves no
   cash and is disclosed as a noncash financing activity, and interest paid is an operating cash flow.'
+variants:
+- stem: During the year, Garrison Ltd. (1) retired bonds with a carrying amount of $288,000 by paying
+    bondholders $300,000 in cash, (2) paid $45,000 of cash dividends to its shareholders, (3) issued common
+    stock for $200,000 in cash, (4) issued common stock to holders of its preferred stock, who converted
+    preferred shares with a carrying amount of $60,000, (5) paid $18,000 of interest on its bonds, and
+    (6) paid $25,000 to reacquire its own common shares as treasury stock. Under U.S. GAAP, what is Garrison's
+    net cash used in financing activities for the year?
+  choices:
+  - id: A
+    text: $110,000
+    rationale: Treats the $60,000 preferred-to-common conversion as a financing inflow. No cash changes
+      hands; it is disclosed as a noncash financing activity.
+  - id: B
+    text: $145,000
+    rationale: Leaves out the $25,000 paid to reacquire treasury stock, a financing outflow.
+  - id: C
+    text: $158,000
+    rationale: Uses the bonds' $288,000 carrying amount instead of the $300,000 of cash paid to retire
+      them. The $12,000 loss is not cash; the financing outflow is the cash paid.
+  - id: D
+    text: $170,000
+    rationale: Correct. −$300,000 bond retirement − $45,000 dividends + $200,000 stock issued − $25,000
+      treasury stock.
+  answer: D
+  explanation: 'Financing activities under U.S. GAAP: cash paid to retire debt (the $300,000 paid, not
+    the carrying amount) −$300,000; dividends paid −$45,000; proceeds from issuing stock +$200,000; purchase
+    of treasury stock −$25,000. Net cash used = $170,000. The preferred-to-common conversion involves
+    no cash and is disclosed as a noncash financing activity, and interest paid is an operating cash flow.'
+- stem: During the year, Hollister Ltd. (1) retired bonds with a carrying amount of $470,000 by paying
+    bondholders $480,000 in cash, (2) paid $60,000 of cash dividends to its shareholders, (3) issued common
+    stock for $400,000 in cash, (4) issued common stock to holders of its preferred stock, who converted
+    preferred shares with a carrying amount of $150,000, (5) paid $30,000 of interest on its bonds, and
+    (6) paid $50,000 to reacquire its own common shares as treasury stock. Under U.S. GAAP, what is Hollister's
+    net cash used in financing activities for the year?
+  choices:
+  - id: A
+    text: $140,000
+    rationale: Leaves out the $50,000 paid to reacquire treasury stock, a financing outflow.
+  - id: B
+    text: $180,000
+    rationale: Uses the bonds' $470,000 carrying amount instead of the $480,000 of cash paid to retire
+      them. The $10,000 loss is not cash; the financing outflow is the cash paid.
+  - id: C
+    text: $190,000
+    rationale: Correct. −$480,000 bond retirement − $60,000 dividends + $400,000 stock issued − $50,000
+      treasury stock.
+  - id: D
+    text: $220,000
+    rationale: Also includes the $30,000 of interest paid. Under U.S. GAAP, interest paid is an operating
+      outflow.
+  answer: C
+  explanation: 'Financing activities under U.S. GAAP: cash paid to retire debt (the $480,000 paid, not
+    the carrying amount) −$480,000; dividends paid −$60,000; proceeds from issuing stock +$400,000; purchase
+    of treasury stock −$50,000. Net cash used = $190,000. The preferred-to-common conversion involves
+    no cash and is disclosed as a noncash financing activity, and interest paid is an operating cash flow.'
+- stem: During the year, Irwin Ltd. (1) retired bonds with a carrying amount of $145,000 by paying bondholders
+    $150,000 in cash, (2) paid $15,000 of cash dividends to its shareholders, (3) issued common stock
+    for $100,000 in cash, (4) issued common stock to holders of its preferred stock, who converted preferred
+    shares with a carrying amount of $40,000, (5) paid $9,000 of interest on its bonds, and (6) paid $20,000
+    to reacquire its own common shares as treasury stock. Under U.S. GAAP, what is Irwin's net cash used
+    in financing activities for the year?
+  choices:
+  - id: A
+    text: $45,000
+    rationale: Treats the $40,000 preferred-to-common conversion as a financing inflow. No cash changes
+      hands; it is disclosed as a noncash financing activity.
+  - id: B
+    text: $65,000
+    rationale: Leaves out the $20,000 paid to reacquire treasury stock, a financing outflow.
+  - id: C
+    text: $80,000
+    rationale: Uses the bonds' $145,000 carrying amount instead of the $150,000 of cash paid to retire
+      them. The $5,000 loss is not cash; the financing outflow is the cash paid.
+  - id: D
+    text: $85,000
+    rationale: Correct. −$150,000 bond retirement − $15,000 dividends + $100,000 stock issued − $20,000
+      treasury stock.
+  answer: D
+  explanation: 'Financing activities under U.S. GAAP: cash paid to retire debt (the $150,000 paid, not
+    the carrying amount) −$150,000; dividends paid −$15,000; proceeds from issuing stock +$100,000; purchase
+    of treasury stock −$20,000. Net cash used = $85,000. The preferred-to-common conversion involves no
+    cash and is disclosed as a noncash financing activity, and interest paid is an operating cash flow.'

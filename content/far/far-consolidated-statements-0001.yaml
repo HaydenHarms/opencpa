@@ -45,3 +45,98 @@ explanation: Under ASC 805 and 810, noncontrolling interest is measured at acqui
   Consolidated Year 1 income of Tern = $150,000 − $100,000 ÷ 5 = $130,000; the noncontrolling interest's
   share is $26,000. Dividends to the noncontrolling interest are 20% × $50,000 = $10,000. NCI = $200,000
   + $26,000 − $10,000 = $216,000.
+variants:
+- stem: On January 1, Year 1, Raleigh Corp. acquires 70% of the voting stock of Stowe Inc. for $1,400,000
+    in cash. The acquisition-date fair value of the 30% noncontrolling interest is $570,000. Stowe's net
+    assets had a book value of $1,600,000. Its equipment, with a 4-year remaining life and straight-line
+    depreciation, had a fair value $200,000 above book value, and every other identifiable asset and liability
+    had a fair value equal to book value. For Year 1, Stowe reports net income of $300,000 on its own
+    books and pays dividends of $100,000. Raleigh's draft December 31, Year 1, consolidated balance sheet
+    reports noncontrolling interest of $540,000. After any correction needed, at what amount should noncontrolling
+    interest be reported?
+  choices:
+  - id: A
+    text: $585,000
+    rationale: Starts from 30% of the fair value of Stowe's identifiable net assets ($540,000), which
+      leaves out the noncontrolling interest's share of goodwill. U.S. GAAP measures noncontrolling interest
+      at its full acquisition-date fair value.
+  - id: B
+    text: $615,000
+    rationale: Correct. $570,000 + 30% × ($300,000 − $50,000 extra depreciation) − 30% × $100,000 dividends.
+  - id: C
+    text: $630,000
+    rationale: Allocates 30% of Stowe's reported $300,000 without first deducting the $50,000 of depreciation
+      on the equipment's fair value step-up.
+  - id: D
+    text: $645,000
+    rationale: Leaves out the $30,000 of dividends paid to the noncontrolling interest, which reduce it.
+  answer: B
+  explanation: Under ASC 805 and 810, noncontrolling interest is measured at acquisition-date fair value
+    ($570,000), which includes its share of goodwill. It is then increased by its share of the subsidiary's
+    income as adjusted for the acquisition-date fair value differences and reduced by its share of dividends.
+    Consolidated Year 1 income of Stowe = $300,000 − $200,000 ÷ 4 = $250,000; the noncontrolling interest's
+    share is $75,000. Dividends to the noncontrolling interest are 30% × $100,000 = $30,000. NCI = $570,000
+    + $75,000 − $30,000 = $615,000.
+- stem: On January 1, Year 1, Thayer Corp. acquires 90% of the voting stock of Umbra Inc. for $1,800,000
+    in cash. The acquisition-date fair value of the 10% noncontrolling interest is $190,000. Umbra's net
+    assets had a book value of $1,500,000. Its equipment, with a 5-year remaining life and straight-line
+    depreciation, had a fair value $150,000 above book value, and every other identifiable asset and liability
+    had a fair value equal to book value. For Year 1, Umbra reports net income of $250,000 on its own
+    books and pays dividends of $80,000. Thayer's draft December 31, Year 1, consolidated balance sheet
+    reports noncontrolling interest of $167,000. After any correction needed, at what amount should noncontrolling
+    interest be reported?
+  choices:
+  - id: A
+    text: $167,000
+    rationale: Accepts the draft, which is 10% of the $1,670,000 of net assets on Umbra's own year-end
+      books. Noncontrolling interest starts at its acquisition-date fair value, not at a share of the
+      subsidiary's book value.
+  - id: B
+    text: $179,000
+    rationale: Starts from 10% of the fair value of Umbra's identifiable net assets ($165,000), which
+      leaves out the noncontrolling interest's share of goodwill. U.S. GAAP measures noncontrolling interest
+      at its full acquisition-date fair value.
+  - id: C
+    text: $204,000
+    rationale: Correct. $190,000 + 10% × ($250,000 − $30,000 extra depreciation) − 10% × $80,000 dividends.
+  - id: D
+    text: $212,000
+    rationale: Leaves out the $8,000 of dividends paid to the noncontrolling interest, which reduce it.
+  answer: C
+  explanation: Under ASC 805 and 810, noncontrolling interest is measured at acquisition-date fair value
+    ($190,000), which includes its share of goodwill. It is then increased by its share of the subsidiary's
+    income as adjusted for the acquisition-date fair value differences and reduced by its share of dividends.
+    Consolidated Year 1 income of Umbra = $250,000 − $150,000 ÷ 5 = $220,000; the noncontrolling interest's
+    share is $22,000. Dividends to the noncontrolling interest are 10% × $80,000 = $8,000. NCI = $190,000
+    + $22,000 − $8,000 = $204,000.
+- stem: On January 1, Year 1, Whitmore Corp. acquires 75% of the voting stock of Yolo Inc. for $1,200,000
+    in cash. The acquisition-date fair value of the 25% noncontrolling interest is $400,000. Yolo's net
+    assets had a book value of $1,300,000. Its equipment, with a 6-year remaining life and straight-line
+    depreciation, had a fair value $240,000 above book value, and every other identifiable asset and liability
+    had a fair value equal to book value. For Year 1, Yolo reports net income of $360,000 on its own books
+    and pays dividends of $120,000. Whitmore's draft December 31, Year 1, consolidated balance sheet reports
+    noncontrolling interest of $385,000. After any correction needed, at what amount should noncontrolling
+    interest be reported?
+  choices:
+  - id: A
+    text: $435,000
+    rationale: Starts from 25% of the fair value of Yolo's identifiable net assets ($385,000), which leaves
+      out the noncontrolling interest's share of goodwill. U.S. GAAP measures noncontrolling interest
+      at its full acquisition-date fair value.
+  - id: B
+    text: $450,000
+    rationale: Correct. $400,000 + 25% × ($360,000 − $40,000 extra depreciation) − 25% × $120,000 dividends.
+  - id: C
+    text: $460,000
+    rationale: Allocates 25% of Yolo's reported $360,000 without first deducting the $40,000 of depreciation
+      on the equipment's fair value step-up.
+  - id: D
+    text: $480,000
+    rationale: Leaves out the $30,000 of dividends paid to the noncontrolling interest, which reduce it.
+  answer: B
+  explanation: Under ASC 805 and 810, noncontrolling interest is measured at acquisition-date fair value
+    ($400,000), which includes its share of goodwill. It is then increased by its share of the subsidiary's
+    income as adjusted for the acquisition-date fair value differences and reduced by its share of dividends.
+    Consolidated Year 1 income of Yolo = $360,000 − $240,000 ÷ 6 = $320,000; the noncontrolling interest's
+    share is $80,000. Dividends to the noncontrolling interest are 25% × $120,000 = $30,000. NCI = $400,000
+    + $80,000 − $30,000 = $450,000.

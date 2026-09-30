@@ -43,3 +43,100 @@ explanation: 'Claim 1: the adverse precedent, the settlement offer, and counsel'
   additional loss of up to $500,000. Claim 2: a loss that counsel thinks is less likely than not but cannot
   dismiss is reasonably possible, so Bravo discloses its nature and the $300,000 estimate but records
   nothing. Total accrual: $400,000.'
+variants:
+- stem: 'Cartwright Corp.''s December 31 financial statements have not yet been issued. Its outside counsel''s
+    letter describes two lawsuits filed against Cartwright during the year. Claim 1: last year the same
+    court ruled against a competitor on nearly identical facts, Cartwright has offered to settle, and
+    counsel expects Cartwright to pay damages of between $250,000 and $750,000, with no amount in that
+    range a better estimate than any other. Claim 2: counsel believes Cartwright''s defenses are stronger
+    than the plaintiff''s case and that Cartwright will more likely than not prevail, but counsel cannot
+    dismiss the chance of an adverse judgment; if Cartwright loses, damages would be about $180,000. What
+    total liability should Cartwright accrue for the two lawsuits at December 31?'
+  choices:
+  - id: A
+    text: $0
+    rationale: Only discloses Claim 1 because no amount in its range is a better estimate. A probable
+      loss with an estimable range is accrued at the minimum.
+  - id: B
+    text: $250,000
+    rationale: Correct. Claim 1 is probable with no best estimate in the range, so Cartwright accrues
+      the minimum and discloses the further $500,000 of possible loss. Claim 2 is only disclosed.
+  - id: C
+    text: $430,000
+    rationale: Also accrues Claim 2. A loss that is more than remote but less than probable is disclosed,
+      not accrued.
+  - id: D
+    text: $500,000
+    rationale: Accrues the midpoint of Claim 1's range. When no amount in a range is a better estimate
+      than any other, U.S. GAAP accrues the minimum.
+  answer: B
+  explanation: 'Claim 1: the adverse precedent, the settlement offer, and counsel''s expectation of payment
+    make the loss probable, and it can be estimated as a range. With no amount in the range better than
+    any other, ASC 450-20 requires accruing the minimum ($250,000) and disclosing the reasonably possible
+    additional loss of up to $500,000. Claim 2: a loss that counsel thinks is less likely than not but
+    cannot dismiss is reasonably possible, so Cartwright discloses its nature and the $180,000 estimate
+    but records nothing. Total accrual: $250,000.'
+- stem: 'Delancey Corp.''s December 31 financial statements have not yet been issued. Its outside counsel''s
+    letter describes two lawsuits filed against Delancey during the year. Claim 1: last year the same
+    court ruled against a competitor on nearly identical facts, Delancey has offered to settle, and counsel
+    expects Delancey to pay damages of between $600,000 and $1,000,000, with no amount in that range a
+    better estimate than any other. Claim 2: counsel believes Delancey''s defenses are stronger than the
+    plaintiff''s case and that Delancey will more likely than not prevail, but counsel cannot dismiss
+    the chance of an adverse judgment; if Delancey loses, damages would be about $350,000. What total
+    liability should Delancey accrue for the two lawsuits at December 31?'
+  choices:
+  - id: A
+    text: $600,000
+    rationale: Correct. Claim 1 is probable with no best estimate in the range, so Delancey accrues the
+      minimum and discloses the further $400,000 of possible loss. Claim 2 is only disclosed.
+  - id: B
+    text: $800,000
+    rationale: Accrues the midpoint of Claim 1's range. When no amount in a range is a better estimate
+      than any other, U.S. GAAP accrues the minimum.
+  - id: C
+    text: $950,000
+    rationale: Also accrues Claim 2. A loss that is more than remote but less than probable is disclosed,
+      not accrued.
+  - id: D
+    text: $1,000,000
+    rationale: Accrues the top of Claim 1's range. The minimum is accrued, and the rest of the range is
+      disclosed.
+  answer: A
+  explanation: 'Claim 1: the adverse precedent, the settlement offer, and counsel''s expectation of payment
+    make the loss probable, and it can be estimated as a range. With no amount in the range better than
+    any other, ASC 450-20 requires accruing the minimum ($600,000) and disclosing the reasonably possible
+    additional loss of up to $400,000. Claim 2: a loss that counsel thinks is less likely than not but
+    cannot dismiss is reasonably possible, so Delancey discloses its nature and the $350,000 estimate
+    but records nothing. Total accrual: $600,000.'
+- stem: 'Fontaine Corp.''s December 31 financial statements have not yet been issued. Its outside counsel''s
+    letter describes two lawsuits filed against Fontaine during the year. Claim 1: last year the same
+    court ruled against a competitor on nearly identical facts, Fontaine has offered to settle, and counsel
+    expects Fontaine to pay damages of between $150,000 and $450,000, with no amount in that range a better
+    estimate than any other. Claim 2: counsel believes Fontaine''s defenses are stronger than the plaintiff''s
+    case and that Fontaine will more likely than not prevail, but counsel cannot dismiss the chance of
+    an adverse judgment; if Fontaine loses, damages would be about $400,000. What total liability should
+    Fontaine accrue for the two lawsuits at December 31?'
+  choices:
+  - id: A
+    text: $0
+    rationale: Only discloses Claim 1 because no amount in its range is a better estimate. A probable
+      loss with an estimable range is accrued at the minimum.
+  - id: B
+    text: $150,000
+    rationale: Correct. Claim 1 is probable with no best estimate in the range, so Fontaine accrues the
+      minimum and discloses the further $300,000 of possible loss. Claim 2 is only disclosed.
+  - id: C
+    text: $300,000
+    rationale: Accrues the midpoint of Claim 1's range. When no amount in a range is a better estimate
+      than any other, U.S. GAAP accrues the minimum.
+  - id: D
+    text: $450,000
+    rationale: Accrues the top of Claim 1's range. The minimum is accrued, and the rest of the range is
+      disclosed.
+  answer: B
+  explanation: 'Claim 1: the adverse precedent, the settlement offer, and counsel''s expectation of payment
+    make the loss probable, and it can be estimated as a range. With no amount in the range better than
+    any other, ASC 450-20 requires accruing the minimum ($150,000) and disclosing the reasonably possible
+    additional loss of up to $300,000. Claim 2: a loss that counsel thinks is less likely than not but
+    cannot dismiss is reasonably possible, so Fontaine discloses its nature and the $400,000 estimate
+    but records nothing. Total accrual: $150,000.'

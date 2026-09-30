@@ -39,3 +39,87 @@ explanation: Year 1 interest expense = $920,146 × 8% = $73,612; cash interest $
   $13,612; carrying amount $933,758. Year 2 interest expense = $933,758 × 8% = $74,701; amortization $14,701;
   carrying amount $948,459. Unamortized issuance costs = $20,000 − 2 × $4,000 = $12,000, so the net carrying
   amount is $936,459. Loss = $1,020,000 − $936,459 = $83,541.
+variants:
+- stem: On January 1, Year 1, Tarleton Corp. issues $500,000 of four-year, 5% bonds, with interest paid
+    each December 31, for $466,128, a price that yields 7%. Tarleton pays $12,000 of issuance costs and
+    amortizes them straight-line over the four years, because the result is not materially different from
+    the interest method. Tarleton amortizes the bond discount using the effective interest method and
+    rounds to the nearest dollar at each step. On December 31, Year 2, immediately after paying interest,
+    Tarleton repurchases all of the bonds in the open market for $505,000. What loss on extinguishment
+    does Tarleton recognize?
+  choices:
+  - id: A
+    text: $11,000
+    rationale: Measures the loss against the bonds' $500,000 face amount instead of their carrying amount.
+  - id: B
+    text: $23,080
+    rationale: Ignores the $6,000 of unamortized issuance costs, which are part of the net carrying amount
+      and are written off in the loss.
+  - id: C
+    text: $27,936
+    rationale: Amortizes the discount straight-line ($8,468 a year). The stem calls for the effective
+      interest method, which amortizes $7,629 and then $8,163.
+  - id: D
+    text: $29,080
+    rationale: Correct. $505,000 − ($481,920 carrying amount − $6,000 unamortized issuance costs).
+  answer: D
+  explanation: Year 1 interest expense = $466,128 × 7% = $32,629; cash interest $25,000; discount amortization
+    $7,629; carrying amount $473,757. Year 2 interest expense = $473,757 × 7% = $33,163; amortization
+    $8,163; carrying amount $481,920. Unamortized issuance costs = $12,000 − 2 × $3,000 = $6,000, so the
+    net carrying amount is $475,920. Loss = $505,000 − $475,920 = $29,080.
+- stem: On January 1, Year 1, Vardaman Corp. issues $2,000,000 of six-year, 7% bonds, with interest paid
+    each December 31, for $1,820,563, a price that yields 9%. Vardaman pays $30,000 of issuance costs
+    and amortizes them straight-line over the six years, because the result is not materially different
+    from the interest method. Vardaman amortizes the bond discount using the effective interest method
+    and rounds to the nearest dollar at each step. On December 31, Year 2, immediately after paying interest,
+    Vardaman repurchases all of the bonds in the open market for $1,990,000. What loss on extinguishment
+    does Vardaman recognize?
+  choices:
+  - id: A
+    text: $119,589
+    rationale: Ignores the $20,000 of unamortized issuance costs, which are part of the net carrying amount
+      and are written off in the loss.
+  - id: B
+    text: $129,625
+    rationale: Amortizes the discount straight-line ($29,906 a year). The stem calls for the effective
+      interest method, which amortizes $23,851 and then $25,997.
+  - id: C
+    text: $139,589
+    rationale: Correct. $1,990,000 − ($1,870,411 carrying amount − $20,000 unamortized issuance costs).
+  - id: D
+    text: $149,589
+    rationale: Treats all $30,000 of issuance costs as unamortized. Two of six years have passed, so $10,000
+      has been amortized and $20,000 remains.
+  answer: C
+  explanation: Year 1 interest expense = $1,820,563 × 9% = $163,851; cash interest $140,000; discount
+    amortization $23,851; carrying amount $1,844,414. Year 2 interest expense = $1,844,414 × 9% = $165,997;
+    amortization $25,997; carrying amount $1,870,411. Unamortized issuance costs = $30,000 − 2 × $5,000
+    = $20,000, so the net carrying amount is $1,850,411. Loss = $1,990,000 − $1,850,411 = $139,589.
+- stem: On January 1, Year 1, Wickham Corp. issues $800,000 of five-year, 4% bonds, with interest paid
+    each December 31, for $732,602, a price that yields 6%. Wickham pays $15,000 of issuance costs and
+    amortizes them straight-line over the five years, because the result is not materially different from
+    the interest method. Wickham amortizes the bond discount using the effective interest method and rounds
+    to the nearest dollar at each step. On December 31, Year 2, immediately after paying interest, Wickham
+    repurchases all of the bonds in the open market for $790,000. What loss on extinguishment does Wickham
+    recognize?
+  choices:
+  - id: A
+    text: $32,769
+    rationale: Ignores the $9,000 of unamortized issuance costs, which are part of the net carrying amount
+      and are written off in the loss.
+  - id: B
+    text: $39,438
+    rationale: Amortizes the discount straight-line ($13,480 a year). The stem calls for the effective
+      interest method, which amortizes $11,956 and then $12,673.
+  - id: C
+    text: $41,769
+    rationale: Correct. $790,000 − ($757,231 carrying amount − $9,000 unamortized issuance costs).
+  - id: D
+    text: $47,769
+    rationale: Treats all $15,000 of issuance costs as unamortized. Two of five years have passed, so
+      $6,000 has been amortized and $9,000 remains.
+  answer: C
+  explanation: Year 1 interest expense = $732,602 × 6% = $43,956; cash interest $32,000; discount amortization
+    $11,956; carrying amount $744,558. Year 2 interest expense = $744,558 × 6% = $44,673; amortization
+    $12,673; carrying amount $757,231. Unamortized issuance costs = $15,000 − 2 × $3,000 = $9,000, so
+    the net carrying amount is $748,231. Loss = $790,000 − $748,231 = $41,769.

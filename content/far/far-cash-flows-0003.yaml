@@ -40,3 +40,91 @@ explanation: 'The draft has three errors. (1) The $45,000 of sale proceeds is an
   under the indirect method the gain is subtracted, because its cash is reported in investing. (3) Dividends
   paid are a financing outflow under U.S. GAAP. Corrected: $180,000 + $24,000 − $9,000 − $31,000 + $12,000
   = $176,000.'
+variants:
+- stem: 'Norwich Corp.''s staff accountant prepared the operating section of the draft statement of cash
+    flows under the indirect method as follows: net income $260,000; plus depreciation $38,000; plus proceeds
+    from the sale of equipment $70,000; less increase in accounts receivable $44,000; plus decrease in
+    inventory $15,000; less dividends paid $30,000; net cash provided by operating activities $309,000.
+    The equipment sold had a carrying amount of $52,000, and the sale is reflected in net income. After
+    correcting the draft to comply with U.S. GAAP, what is net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $217,000
+    rationale: Subtracts the equipment's $52,000 carrying amount instead of the $18,000 gain. Under the
+      indirect method only the gain included in net income is removed.
+  - id: B
+    text: $221,000
+    rationale: Moves the proceeds to investing and removes the gain, but leaves the $30,000 of dividends
+      paid in operating activities. Under U.S. GAAP, dividends paid are a financing outflow.
+  - id: C
+    text: $251,000
+    rationale: Correct. $260,000 + $38,000 − $18,000 gain − $44,000 + $15,000. The $70,000 of proceeds
+      is investing and the dividends are financing.
+  - id: D
+    text: $269,000
+    rationale: Removes the proceeds and the dividends but not the $18,000 gain ($70,000 − $52,000) inside
+      net income. The gain's cash is part of the investing inflow, so it must come out of operating.
+  answer: C
+  explanation: 'The draft has three errors. (1) The $70,000 of sale proceeds is an investing inflow, so
+    it comes out of operating. (2) Net income includes an $18,000 gain ($70,000 − $52,000 carrying amount);
+    under the indirect method the gain is subtracted, because its cash is reported in investing. (3) Dividends
+    paid are a financing outflow under U.S. GAAP. Corrected: $260,000 + $38,000 − $18,000 − $44,000 +
+    $15,000 = $251,000.'
+- stem: 'Oxbow Corp.''s staff accountant prepared the operating section of the draft statement of cash
+    flows under the indirect method as follows: net income $120,000; plus depreciation $15,000; plus proceeds
+    from the sale of equipment $30,000; less increase in accounts receivable $18,000; plus decrease in
+    inventory $9,000; less dividends paid $12,000; net cash provided by operating activities $144,000.
+    The equipment sold had a carrying amount of $26,000, and the sale is reflected in net income. After
+    correcting the draft to comply with U.S. GAAP, what is net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $122,000
+    rationale: Correct. $120,000 + $15,000 − $4,000 gain − $18,000 + $9,000. The $30,000 of proceeds is
+      investing and the dividends are financing.
+  - id: B
+    text: $126,000
+    rationale: Removes the proceeds and the dividends but not the $4,000 gain ($30,000 − $26,000) inside
+      net income. The gain's cash is part of the investing inflow, so it must come out of operating.
+  - id: C
+    text: $144,000
+    rationale: Accepts the draft. Proceeds from selling equipment are an investing inflow and dividends
+      paid are a financing outflow; neither belongs in operating activities.
+  - id: D
+    text: $158,000
+    rationale: Adds the $18,000 increase in accounts receivable. Sales not yet collected raise net income
+      without cash, so the increase is subtracted.
+  answer: A
+  explanation: 'The draft has three errors. (1) The $30,000 of sale proceeds is an investing inflow, so
+    it comes out of operating. (2) Net income includes a $4,000 gain ($30,000 − $26,000 carrying amount);
+    under the indirect method the gain is subtracted, because its cash is reported in investing. (3) Dividends
+    paid are a financing outflow under U.S. GAAP. Corrected: $120,000 + $15,000 − $4,000 − $18,000 + $9,000
+    = $122,000.'
+- stem: 'Pembroke Corp.''s staff accountant prepared the operating section of the draft statement of cash
+    flows under the indirect method as follows: net income $400,000; plus depreciation $55,000; plus proceeds
+    from the sale of equipment $120,000; less increase in accounts receivable $60,000; plus decrease in
+    inventory $20,000; less dividends paid $50,000; net cash provided by operating activities $485,000.
+    The equipment sold had a carrying amount of $90,000, and the sale is reflected in net income. After
+    correcting the draft to comply with U.S. GAAP, what is net cash provided by operating activities?'
+  choices:
+  - id: A
+    text: $335,000
+    rationale: Moves the proceeds to investing and removes the gain, but leaves the $50,000 of dividends
+      paid in operating activities. Under U.S. GAAP, dividends paid are a financing outflow.
+  - id: B
+    text: $385,000
+    rationale: Correct. $400,000 + $55,000 − $30,000 gain − $60,000 + $20,000. The $120,000 of proceeds
+      is investing and the dividends are financing.
+  - id: C
+    text: $415,000
+    rationale: Removes the proceeds and the dividends but not the $30,000 gain ($120,000 − $90,000) inside
+      net income. The gain's cash is part of the investing inflow, so it must come out of operating.
+  - id: D
+    text: $485,000
+    rationale: Accepts the draft. Proceeds from selling equipment are an investing inflow and dividends
+      paid are a financing outflow; neither belongs in operating activities.
+  answer: B
+  explanation: 'The draft has three errors. (1) The $120,000 of sale proceeds is an investing inflow,
+    so it comes out of operating. (2) Net income includes a $30,000 gain ($120,000 − $90,000 carrying
+    amount); under the indirect method the gain is subtracted, because its cash is reported in investing.
+    (3) Dividends paid are a financing outflow under U.S. GAAP. Corrected: $400,000 + $55,000 − $30,000
+    − $60,000 + $20,000 = $385,000.'
