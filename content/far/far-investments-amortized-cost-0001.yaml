@@ -14,7 +14,7 @@ review:
 stem: Which of the following investments may an entity report at amortized cost?
 choices:
 - id: A
-  text: A debt security the entity may sell if interest rates change or it needs cash
+  text: A debt security the entity may sell if interest rates change or if it needs cash for operations
   rationale: Available-for-sale. A debt security that may be sold before maturity is reported at fair
     value, with unrealized holding gains and losses in other comprehensive income.
 - id: B
@@ -26,7 +26,7 @@ choices:
     value, the entity may use the measurement alternative: cost less impairment, adjusted for observable
     price changes.'
 - id: D
-  text: A debt security the entity has the positive intent and ability to hold until it matures
+  text: A bond the entity intends to hold, and is able to hold, until it matures
   rationale: Correct. A debt security classified as held to maturity is reported at amortized cost, less
     an allowance for credit losses.
 answer: D

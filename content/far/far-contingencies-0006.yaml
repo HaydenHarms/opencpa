@@ -20,10 +20,10 @@ stem: Corbett Appliances began selling a new appliance in Year 1 and sold 8,000 
   report at December 31, Year 1?
 choices:
 - id: A
-  text: $48,000
-  rationale: Accrues only the second-year repairs. The first-year repairs ($24,000) are also accrued at
-    the sale, and because units sold during Year 1 are still within their first 12 months, the liability
-    is the total estimate less the $21,000 already spent.
+  text: $3,000
+  rationale: Accrues only the first-year repairs ($24,000) less the $21,000 spent. The second-year repairs
+    ($48,000) are also part of the warranty included in the price, so their cost is accrued at the sale
+    too.
 - id: B
   text: $51,000
   rationale: Correct. 8,000 × 6% × $150 = $72,000, less $21,000 paid.
@@ -50,9 +50,10 @@ variants:
     should Dalton report at December 31, Year 1?
   choices:
   - id: A
-    text: $0
-    rationale: Expenses warranty repairs when paid. The cost of a warranty included in the price is accrued
-      when the product is sold.
+    text: $3,200
+    rationale: Accrues only the first-year repairs ($43,200) less the $40,000 spent. The second-year repairs
+      ($72,000) are also part of the warranty included in the price, so their cost is accrued at the sale
+      too.
   - id: B
     text: $75,200
     rationale: Correct. 12,000 × 8% × $120 = $115,200, less $40,000 paid.
@@ -78,21 +79,21 @@ variants:
     report at December 31, Year 1?
   choices:
   - id: A
-    text: $0
-    rationale: Expenses warranty repairs when paid. The cost of a warranty included in the price is accrued
-      when the product is sold.
+    text: $3,000
+    rationale: Accrues only the first-year repairs ($40,000) less the $37,000 spent. The second-year repairs
+      ($60,000) are also part of the warranty included in the price, so their cost is accrued at the sale
+      too.
   - id: B
-    text: $60,000
-    rationale: Accrues only the second-year repairs. The first-year repairs ($40,000) are also accrued
-      at the sale, and because units sold during Year 1 are still within their first 12 months, the liability
-      is the total estimate less the $37,000 already spent.
-  - id: C
     text: $63,000
     rationale: Correct. 5,000 × 10% × $200 = $100,000, less $37,000 paid.
-  - id: D
+  - id: C
     text: $100,000
     rationale: Doesn't subtract the $37,000 of repairs made in Year 1.
-  answer: C
+  - id: D
+    text: $123,000
+    rationale: Adds the $60,000 received for extended service plans. Those plans are a separate service,
+      reported as a contract liability (unearned revenue), not as an accrued warranty cost.
+  answer: B
   explanation: 'The two-year warranty is included in the price and covers defects, so its expected cost
     over both years is accrued when the units are sold: 5,000 × (4% + 6%) × $200 = $100,000. Repairs of
     $37,000 in Year 1 reduce the liability to $63,000. The extended service plans are sold separately
@@ -111,10 +112,10 @@ variants:
     rationale: Expenses warranty repairs when paid. The cost of a warranty included in the price is accrued
       when the product is sold.
   - id: B
-    text: $150,000
-    rationale: Accrues only the second-year repairs. The first-year repairs ($50,000) are also accrued
-      at the sale, and because units sold during Year 1 are still within their first 12 months, the liability
-      is the total estimate less the $47,000 already spent.
+    text: $3,000
+    rationale: Accrues only the first-year repairs ($50,000) less the $47,000 spent. The second-year repairs
+      ($150,000) are also part of the warranty included in the price, so their cost is accrued at the
+      sale too.
   - id: C
     text: $153,000
     rationale: Correct. 20,000 × 4% × $250 = $200,000, less $47,000 paid.

@@ -70,7 +70,7 @@ Kept, with the reasons:
 
 The first run passed: **82.4% average estimated pass likelihood** (batch 05 scored 82%), with 17 exam-ready, 8 minor and 0 major. All 25 version-0 keys are correct, and the reviewer re-solved all 63 variants in code with no breaks. It confirmed from the PDF that both disputed Analysis tags are honest (II.A.c and II.C.c are marked Analysis).
 
-**Minor fixes, not yet applied (next session):**
+**Minor fixes** (applied 2026-09-30; see "Follow-up" below):
 
 1. `far-nfp-financial-position-0002`:
    - The key is the longest choice; shorten it.
@@ -103,3 +103,24 @@ The first run passed: **82.4% average estimated pass likelihood** (batch 05 scor
 - The mix needs attention:
   - This batch is 48% / 44% / 8% by area, so batch 07 must be mostly Area III. The bank as a whole stays in range.
   - Version-0 keys are 56% B, because numeric choices are ascending. Rebalance distractor pools toward A and D.
+
+## Follow-up (2026-09-30): gate findings applied
+
+All eight minor fixes, the variant fix and the three coverage-map corrections are applied in `far-batch-06.py` and `far-coverage.py`:
+
+| Item | Change |
+| --- | --- |
+| `far-nfp-financial-position-0002` | The key is shortened so it is no longer the longest choice. The budget-comparison choice is replaced by "each net asset class, kept as a self-balancing set of accounts". |
+| `far-nfp-notes-0001` | Recast for I.B.4a: the student corrects a draft note ($715,000 in version 0) built as total cash + all receivables + other investments. The quasi-endowment point, which repeated `nfp-financial-position-0003`, is replaced by a bond-indenture debt service reserve (a contractual limit). The receivables are "unconditional" and donors placed no purpose restriction on them. |
+| `far-special-purpose-frameworks-0003` | The stem says only that the one modification is capitalizing and depreciating equipment. Fees collected in advance were added, with a distractor that defers them. |
+| `far-ratios-0004` | The entity is a public business entity, and the shares redeem at a fixed amount on a fixed date (ASC 480). The two-error 0.36 distractor is replaced by "current liabilities left out". |
+| `far-cash-unreconciled-0001` | "An error the bank has agreed to correct" is gone. The stem now gives the bank-validated deposit slip total, and adds a May check that cleared in June, which needs no entry (with a distractor). |
+| `far-receivables-reconciliation-0002` | Distractor D ("control account as recorded") is replaced by a control-account error: the posting difference added instead of subtracted. The citation is now ASC 310-10 and Reg. S-X 5-02. |
+| `far-investments-amortized-cost-0001` | The key no longer uses the textbook wording and isn't the longest choice; choice A is longer. |
+| `far-contingencies-0006` | The $48,000 "second-year only" distractor is replaced by the first-year estimate less repairs paid ($3,000). Versions 1 and 2 swap the weak $0 distractor for a real error. |
+| `far-receivables-rollforward-0002` variant 2 | Ending receivables are now $296,000, so write-offs ($25,000) no longer equal the required allowance. |
+| `scripts/far-coverage.py` | II.D.d is Application and III.C.c is Remembering and Understanding. `income-taxes-provision-0001` moves to III.D.c, which leaves III.D.e with no items. |
+
+A blind verifier re-solved all 27 changed versions and agreed with every key. It found one problem, which is fixed: `far-ratios-0004` variant 3 lacked the item's core distractor (the mandatorily redeemable shares left in equity, 0.50). It also suggested three optional changes, all applied: the receivables wording, the $0 warranty distractor, and a more natural distractor in variant 3 of the receivables reconciliation.
+
+**Not changed:** the version-0 key skew (bank keys 34% B). Batches 07 and 08 choose their version-0 distractors so the key lands on A or D in at least half of their numeric items.

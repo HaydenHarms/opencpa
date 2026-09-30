@@ -13,7 +13,7 @@ review:
 stem: What is the focus of a nongovernmental not-for-profit entity's statement of financial position?
 choices:
 - id: A
-  text: The entity as a whole, including information about its liquidity and financial flexibility
+  text: The entity as a whole, including its liquidity and financial flexibility
   rationale: Correct. The statement reports assets, liabilities and net assets for the entity as a whole
     and helps users assess liquidity, financial flexibility and the relationship between assets and liabilities.
 - id: B
@@ -21,16 +21,17 @@ choices:
   rationale: Fund reporting is not required. The statement focuses on the entity as a whole; net assets
     are shown in two classes by donor restriction.
 - id: C
-  text: Compliance with the entity's budget, comparing actual amounts with budgeted amounts
-  rationale: Budget-to-actual comparisons belong to state and local government reporting, not to a nongovernmental
-    not-for-profit entity's statement of financial position.
+  text: Each net asset class, kept as a self-balancing set of accounts
+  rationale: The two net asset classes are not self-balancing fund groups with their own assets and liabilities.
+    The statement reports total assets and liabilities for the entity as a whole, and only net assets
+    are split by donor restriction.
 - id: D
-  text: The cost of each program the entity provides, with expenses reported by function
+  text: The cost of each of its programs, with expenses reported by function
   rationale: Expenses by function are reported in the statement of activities, a statement of functional
     expenses or the notes, not in the statement of financial position.
 answer: A
 explanation: ASC 958-210 says the statement of financial position focuses on the not-for-profit entity
   as a whole and reports total assets, liabilities and net assets, with net assets split between those
   with and without donor restrictions. With the notes, it provides information about liquidity, financial
-  flexibility and the interrelationship of assets and liabilities. Budget comparisons are a government
-  reporting feature, and functional expenses are reported with the statement of activities.
+  flexibility and the interrelationship of assets and liabilities. Net asset classes are not self-balancing
+  funds, and functional expenses are reported with the statement of activities.

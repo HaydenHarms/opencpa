@@ -15,9 +15,10 @@ stem: 'Wexford Co.''s June 30 bank reconciliation shows an adjusted bank balance
   in transit and outstanding checks, and an adjusted book balance of $47,685 after recording the bank''s
   charges and collections, leaving an unreconciled difference of $955. Investigating, the controller finds:
   a customer''s check for $1,450 was recorded in the cash receipts journal as $1,540; check 5120, for
-  $1,315, was recorded twice in the cash disbursements journal; and the bank recorded Wexford''s June
-  18 deposit of $2,300 as $2,030, an error the bank has agreed to correct. What adjustment should Wexford
-  make to its general ledger cash balance?'
+  $1,315, was recorded twice in the cash disbursements journal; the bank recorded Wexford''s June 18 deposit
+  as $2,030, although the bank-validated deposit slip totals $2,300; and check 5087, for $640, which was
+  outstanding at May 31, cleared the bank on June 4. What adjustment should Wexford make to its general
+  ledger cash balance?'
 choices:
 - id: A
   text: $955 increase
@@ -36,21 +37,23 @@ choices:
 answer: B
 explanation: 'Book errors: the duplicated check understated cash by $1,315, and the receipt recorded as
   $1,540 instead of $1,450 overstated it by $90. The ledger adjustment is $1,315 − $90 = a $1,225 increase,
-  giving $48,910. The bank''s $270 understatement of the deposit is corrected by the bank: $48,640 + $270
-  = $48,910, so both sides agree.'
+  giving $48,910. The validated deposit slip shows the correct amount, so the $270 understatement of the
+  deposit is the bank''s error, a reconciling item on the bank side: $48,640 + $270 = $48,910, so both
+  sides agree. The May check that cleared in June was recorded when written and needs no entry.'
 variants:
 - stem: 'Yarmouth Co.''s June 30 bank reconciliation shows an adjusted bank balance of $73,210 after deposits
     in transit and outstanding checks, and an adjusted book balance of $71,385 after recording the bank''s
     charges and collections, leaving an unreconciled difference of $1,825. Investigating, the controller
     finds: a customer''s check for $2,680 was recorded in the cash receipts journal as $2,860; check 5120,
-    for $2,140, was recorded twice in the cash disbursements journal; and the bank recorded Yarmouth''s
-    June 18 deposit of $4,150 as $4,015, an error the bank has agreed to correct. What adjustment should
-    Yarmouth make to its general ledger cash balance?'
+    for $2,140, was recorded twice in the cash disbursements journal; the bank recorded Yarmouth''s June
+    18 deposit as $4,015, although the bank-validated deposit slip totals $4,150; and check 5087, for
+    $875, which was outstanding at May 31, cleared the bank on June 4. What adjustment should Yarmouth
+    make to its general ledger cash balance?'
   choices:
   - id: A
     text: $135 increase
-    rationale: Records only the bank's $135 error in the ledger. The bank corrects its own error; the
-      ledger needs the corrections for Yarmouth's own recording errors.
+    rationale: Records only the bank's $135 error in the ledger. The validated deposit slip shows the
+      error is the bank's; the ledger needs the corrections for Yarmouth's own recording errors.
   - id: B
     text: $1,960 increase
     rationale: Correct. $2,140 duplicated check added back − $180 receipt overstatement.
@@ -64,15 +67,17 @@ variants:
   answer: B
   explanation: 'Book errors: the duplicated check understated cash by $2,140, and the receipt recorded
     as $2,860 instead of $2,680 overstated it by $180. The ledger adjustment is $2,140 − $180 = a $1,960
-    increase, giving $73,345. The bank''s $135 understatement of the deposit is corrected by the bank:
-    $73,210 + $135 = $73,345, so both sides agree.'
+    increase, giving $73,345. The validated deposit slip shows the correct amount, so the $135 understatement
+    of the deposit is the bank''s error, a reconciling item on the bank side: $73,210 + $135 = $73,345,
+    so both sides agree. The May check that cleared in June was recorded when written and needs no entry.'
 - stem: 'Zeller Co.''s June 30 bank reconciliation shows an adjusted bank balance of $36,480 after deposits
     in transit and outstanding checks, and an adjusted book balance of $36,115 after recording the bank''s
     charges and collections, leaving an unreconciled difference of $365. Investigating, the controller
     finds: a customer''s check for $960 was recorded in the cash receipts journal as $990; check 5120,
-    for $845, was recorded twice in the cash disbursements journal; and the bank recorded Zeller''s June
-    18 deposit of $1,720 as $1,270, an error the bank has agreed to correct. What adjustment should Zeller
-    make to its general ledger cash balance?'
+    for $845, was recorded twice in the cash disbursements journal; the bank recorded Zeller''s June 18
+    deposit as $1,270, although the bank-validated deposit slip totals $1,720; and check 5087, for $390,
+    which was outstanding at May 31, cleared the bank on June 4. What adjustment should Zeller make to
+    its general ledger cash balance?'
   choices:
   - id: A
     text: $365 increase
@@ -80,8 +85,8 @@ variants:
       bank corrects.
   - id: B
     text: $450 increase
-    rationale: Records only the bank's $450 error in the ledger. The bank corrects its own error; the
-      ledger needs the corrections for Zeller's own recording errors.
+    rationale: Records only the bank's $450 error in the ledger. The validated deposit slip shows the
+      error is the bank's; the ledger needs the corrections for Zeller's own recording errors.
   - id: C
     text: $815 increase
     rationale: Correct. $845 duplicated check added back − $30 receipt overstatement.
@@ -91,20 +96,22 @@ variants:
   answer: C
   explanation: 'Book errors: the duplicated check understated cash by $845, and the receipt recorded as
     $990 instead of $960 overstated it by $30. The ledger adjustment is $845 − $30 = an $815 increase,
-    giving $36,930. The bank''s $450 understatement of the deposit is corrected by the bank: $36,480 +
-    $450 = $36,930, so both sides agree.'
+    giving $36,930. The validated deposit slip shows the correct amount, so the $450 understatement of
+    the deposit is the bank''s error, a reconciling item on the bank side: $36,480 + $450 = $36,930, so
+    both sides agree. The May check that cleared in June was recorded when written and needs no entry.'
 - stem: 'Abington Co.''s June 30 bank reconciliation shows an adjusted bank balance of $92,750 after deposits
     in transit and outstanding checks, and an adjusted book balance of $90,510 after recording the bank''s
     charges and collections, leaving an unreconciled difference of $2,240. Investigating, the controller
     finds: a customer''s check for $3,470 was recorded in the cash receipts journal as $3,740; check 5120,
-    for $2,960, was recorded twice in the cash disbursements journal; and the bank recorded Abington''s
-    June 18 deposit of $5,820 as $5,370, an error the bank has agreed to correct. What adjustment should
-    Abington make to its general ledger cash balance?'
+    for $2,960, was recorded twice in the cash disbursements journal; the bank recorded Abington''s June
+    18 deposit as $5,370, although the bank-validated deposit slip totals $5,820; and check 5087, for
+    $1,180, which was outstanding at May 31, cleared the bank on June 4. What adjustment should Abington
+    make to its general ledger cash balance?'
   choices:
   - id: A
     text: $450 increase
-    rationale: Records only the bank's $450 error in the ledger. The bank corrects its own error; the
-      ledger needs the corrections for Abington's own recording errors.
+    rationale: Records only the bank's $450 error in the ledger. The validated deposit slip shows the
+      error is the bank's; the ledger needs the corrections for Abington's own recording errors.
   - id: B
     text: $2,240 increase
     rationale: Books the whole $2,240 unreconciled difference. Part of it is the bank's error, which the
@@ -119,5 +126,6 @@ variants:
   answer: C
   explanation: 'Book errors: the duplicated check understated cash by $2,960, and the receipt recorded
     as $3,740 instead of $3,470 overstated it by $270. The ledger adjustment is $2,960 − $270 = a $2,690
-    increase, giving $93,200. The bank''s $450 understatement of the deposit is corrected by the bank:
-    $92,750 + $450 = $93,200, so both sides agree.'
+    increase, giving $93,200. The validated deposit slip shows the correct amount, so the $450 understatement
+    of the deposit is the bank''s error, a reconciling item on the bank side: $92,750 + $450 = $93,200,
+    so both sides agree. The May check that cleared in June was recorded when written and needs no entry.'

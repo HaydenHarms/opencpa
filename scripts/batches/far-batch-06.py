@@ -154,20 +154,21 @@ def nfp_scf_adjust(p):
 
 def nfp_liquidity(p):
     org, s = p["org"], short(p["org"])
-    inv = p["endow"] + p["quasi"] + p["other"]
-    key_v = p["cash"] - p["bldg"] + p["recv"] - p["lt"] + p["other"] + p["approp"]
+    draft = p["cash"] + p["recv"] + p["other"]
+    key_v = draft - p["bldg"] - p["dsr"] - p["lt"] + p["approp"]
     pool = {
-        "board": (m(key_v + p["quasi"]), f"Includes the {m(p['quasi'])} quasi-endowment. The board has designated it for long-term investment, so it isn't available for general expenditure without a board action; that amount is disclosed separately."),
-        "lt_recv": (m(key_v + p["lt"]), f"Includes the {m(p['lt'])} of contributions receivable due in more than one year."),
-        "no_approp": (m(key_v - p["approp"]), f"Leaves out the {m(p['approp'])} of endowment return appropriated for next year's general operations, which is available within one year."),
-        "bldg": (m(key_v + p["bldg"]), f"Includes the {m(p['bldg'])} of cash restricted by a donor to building construction, which can't be used for general expenditure."),
+        "dsr": (m(key_v + p["dsr"]), f"Leaves in the {m(p['dsr'])} debt service reserve. The bond indenture requires that cash to be held until the bonds mature, a contractual limit that makes it unavailable for general expenditure."),
+        "lt_recv": (m(key_v + p["lt"]), f"Leaves in the {m(p['lt'])} of contributions receivable due in more than one year."),
+        "no_approp": (m(key_v - p["approp"]), f"Doesn't add the {m(p['approp'])} of endowment return appropriated for next year's general operations, which is available within one year."),
+        "bldg": (m(key_v + p["bldg"]), f"Leaves in the {m(p['bldg'])} of cash restricted by a donor to building construction, which can't be used for general expenditure."),
     }
-    key = (m(key_v), f"Correct. Cash {m(p['cash'] - p['bldg'])} + receivables due within one year {m(p['recv'] - p['lt'])} + other investments {m(p['other'])} + endowment appropriation {m(p['approp'])}.")
+    assert len({v for v, _ in pool.values()} | {m(key_v)}) == 5
+    key = (m(key_v), f"Correct. {m(draft)} − {m(p['bldg'])} building cash − {m(p['dsr'])} debt service reserve − {m(p['lt'])} long-term receivables + {m(p['approp'])} appropriation.")
     choices, ans = pick(pool, key, p["use"])
     return variant(
-        f"""{org}, a not-for-profit entity, is preparing its note on the liquidity and availability of financial assets. At June 30, Year 2, it holds: cash of {m(p['cash'])}, including {m(p['bldg'])} that a donor restricted to constructing a new building over the next three years; contributions receivable without donor restrictions of {m(p['recv'])}, of which {m(p['lt'])} is due after June 30, Year 3; and investments of {m(inv)}, made up of a donor-restricted endowment of {m(p['endow'])} whose original gift must be held in perpetuity, a quasi-endowment of {m(p['quasi'])} that the board designated for long-term investment and does not intend to spend from beyond amounts appropriated under its spending policy, and {m(p['other'])} of other investments. Under its spending policy, {s} will appropriate {m(p['approp'])} of endowment return for general operations in the coming year. What amount should the note report as financial assets available to meet general expenditures within one year?""",
+        f"""{org}, a not-for-profit entity, is reviewing the draft of its note on the liquidity and availability of financial assets at June 30, Year 2. The draft reports {m(draft)} of financial assets available to meet general expenditures within one year, computed as total cash plus total contributions receivable plus other investments. The supporting records show: cash of {m(p['cash'])}, including {m(p['bldg'])} that a donor restricted to constructing a new building over the next three years and {m(p['dsr'])} that a bond indenture requires {s} to hold in a debt service reserve until the bonds mature in Year 9; unconditional contributions receivable of {m(p['recv'])}, which donors did not restrict to any purpose, of which {m(p['lt'])} is due after June 30, Year 3; other investments of {m(p['other'])}, all readily marketable; and a donor-restricted endowment of {m(p['endow'])} whose original gift must be held in perpetuity, which the draft excludes. Under its spending policy, {s} will appropriate {m(p['approp'])} of endowment return for general operations in the coming year. What amount should the corrected note report as financial assets available to meet general expenditures within one year?""",
         choices, ans,
-        f"""The note reports financial assets available for general expenditure within one year of the balance sheet date. Cash available: {m(p['cash'])} − {m(p['bldg'])} restricted to the building = {m(p['cash'] - p['bldg'])}. Receivables due within one year: {m(p['recv'])} − {m(p['lt'])} = {m(p['recv'] - p['lt'])}. Investments: the endowment corpus and the board-designated quasi-endowment are excluded, leaving {m(p['other'])}; the {m(p['approp'])} appropriated from the endowment for next year's operations is added. Total = {m(key_v)}.""",
+        f"""The note reports financial assets available for general expenditure within one year of the balance sheet date, excluding amounts limited by donor restrictions, contracts or timing. Starting from the draft's {m(draft)}: subtract the {m(p['bldg'])} of cash restricted to the building and the {m(p['dsr'])} debt service reserve, which the indenture makes unavailable (a contractual limit); subtract the {m(p['lt'])} of receivables not due within one year; and add the {m(p['approp'])} appropriated from the endowment for next year's operations, which the draft left out. The endowment corpus stays excluded. Corrected total = {m(key_v)}.""",
     )
 
 
@@ -176,16 +177,18 @@ def modified_cash(p):
     key_v = p["rec"] - p["paid"] - p["dep"]
     pool = {
         "cash_basis": (m(p["rec"] - p["paid"] - p["equip"]), f"Expenses the {m(p['equip'])} of equipment when paid. {s}'s modified cash basis capitalizes equipment and depreciates it."),
-        "accrual": (m(key_v + p["ar"] - p["wages"]), f"Converts to the accrual basis by adding the {m(p['ar'])} increase in receivables and accruing the {m(p['wages'])} of wages. This basis doesn't record receivables or accrued expenses."),
+        "accrual": (m(key_v + p["ar"] - p["wages"] - p["adv"]), f"Converts to the accrual basis: adds the {m(p['ar'])} increase in receivables, accrues the {m(p['wages'])} of wages and defers the {m(p['adv'])} of advance fees. This basis records none of those."),
         "no_dep": (m(key_v + p["dep"]), "Capitalizes the equipment but records no depreciation. The basis depreciates capitalized equipment."),
         "wages": (m(key_v - p["wages"]), f"Accrues the {m(p['wages'])} of unpaid wages. Under this basis, expenses other than depreciation are recorded when paid."),
+        "advance": (m(key_v - p["adv"]), f"Defers the {m(p['adv'])} of fees received in advance. Under this basis, revenues are recorded when cash is received."),
     }
+    assert len({v for v, _ in pool.values()} | {m(key_v)}) == 6
     key = (m(key_v), f"Correct. {m(p['rec'])} − {m(p['paid'])} − {m(p['dep'])} depreciation.")
     choices, ans = pick(pool, key, p["use"])
     return variant(
-        f"""{co} prepares its financial statements on a modified cash basis: it capitalizes purchases of equipment and depreciates them, and it otherwise records revenues when cash is received and expenses when cash is paid. In Year 3 it collected {m(p['rec'])} from clients and paid {m(p['paid'])} of operating expenses. It also paid {m(p['equip'])} for new equipment in January; depreciation on the equipment for Year 3 is {m(p['dep'])}. At year-end, employees had earned {m(p['wages'])} of wages that {s} will pay in January, Year 4, and client receivables had increased by {m(p['ar'])} during the year. What excess of revenues over expenses should {s} report in its Year 3 statement of revenues and expenses—modified cash basis?""",
+        f"""{co} prepares its financial statements on a modified cash basis; its one modification of the cash basis is capitalizing and depreciating equipment. In Year 3 it collected {m(p['rec'])} from clients, including {m(p['adv'])} received in December for services it will perform in January, Year 4, and paid {m(p['paid'])} of operating expenses. It also paid {m(p['equip'])} for new equipment in January; depreciation on the equipment for Year 3 is {m(p['dep'])}. At year-end, employees had earned {m(p['wages'])} of wages that {s} will pay in January, Year 4, and client receivables had increased by {m(p['ar'])} during the year. What excess of revenues over expenses should {s} report in its Year 3 statement of revenues and expenses—modified cash basis?""",
         choices, ans,
-        f"""Under {s}'s modified cash basis, revenues are the {m(p['rec'])} collected and expenses are the {m(p['paid'])} paid, plus depreciation on the capitalized equipment ({m(p['dep'])}). The equipment purchase itself isn't an expense, and the unpaid wages and the increase in receivables aren't recorded. {m(p['rec'])} − {m(p['paid'])} − {m(p['dep'])} = {m(key_v)}.""",
+        f"""Under {s}'s modified cash basis, revenues are the {m(p['rec'])} collected and expenses are the {m(p['paid'])} paid, plus depreciation on the capitalized equipment ({m(p['dep'])}). Cash received in advance is revenue when received. The equipment purchase itself isn't an expense, and the unpaid wages and the increase in receivables aren't recorded. {m(p['rec'])} − {m(p['paid'])} − {m(p['dep'])} = {m(key_v)}.""",
     )
 
 
@@ -221,15 +224,16 @@ def debt_ratio(p):
     pool = {
         "no_mrp": (two(D(liab - p["mrp"]) / p["assets"]), f"Leaves the {m(p['mrp'])} of mandatorily redeemable preferred shares in equity. Shares the issuer must redeem for cash on a fixed date are liabilities."),
         "no_ol": (two(D(liab - p["ol"]) / p["assets"]), f"Leaves out the {m(p['ol'])} of operating lease liabilities, which are liabilities on the balance sheet."),
-        "neither": (two(D(liab - p["ol"] - p["mrp"]) / p["assets"]), "Leaves out both the operating lease liabilities and the mandatorily redeemable preferred shares."),
+        "no_cl": (two(D(liab - p["cl"]) / p["assets"]), f"Leaves out the {m(p['cl'])} of current liabilities. The total debt ratio uses all liabilities, not only long-term obligations."),
         "de": (two(D(liab) / (p["assets"] - liab)), "Divides total liabilities by stockholders' equity, which is the debt-to-equity ratio."),
     }
+    assert len({v for v, _ in pool.values()} | {two(key_v)}) == 5
     key = (two(key_v), f"Correct. ({m(p['cl'])} + {m(p['ltd'])} + {m(p['ol'])} + {m(p['mrp'])}) ÷ {m(p['assets'])}.")
     choices, ans = pick(pool, key, p["use"])
     return variant(
-        f"""At December 31, {co}'s balance sheet reports total assets of {m(p['assets'])}. Its obligations are current liabilities of {m(p['cl'])}, including {m(p['unearned'])} of unearned revenue; long-term debt of {m(p['ltd'])}; and operating lease liabilities of {m(p['ol'])}. {s} also has {m(p['mrp'])} of preferred shares that it must redeem for cash on a fixed date in Year 6, which its draft balance sheet presents within stockholders' equity. After any correction needed, what is {s}'s total debt ratio (total liabilities divided by total assets), rounded to two decimal places?""",
+        f"""At December 31, {co}'s balance sheet reports total assets of {m(p['assets'])}. Its obligations are current liabilities of {m(p['cl'])}, including {m(p['unearned'])} of unearned revenue; long-term debt of {m(p['ltd'])}; and operating lease liabilities of {m(p['ol'])}. {s}, a public business entity, also has preferred shares that it must redeem for cash at a fixed redemption amount of {m(p['mrp'])} on June 30, Year 6, which its draft balance sheet presents within stockholders' equity. After any correction needed, what is {s}'s total debt ratio (total liabilities divided by total assets), rounded to two decimal places?""",
         choices, ans,
-        f"""Preferred shares that must be redeemed for cash on a fixed date are mandatorily redeemable financial instruments, reported as liabilities, so {m(p['mrp'])} moves out of equity. Operating lease liabilities and unearned revenue are liabilities too. Total liabilities = {m(p['cl'])} + {m(p['ltd'])} + {m(p['ol'])} + {m(p['mrp'])} = {m(liab)}; total assets are unchanged. {m(liab)} ÷ {m(p['assets'])} = {two(key_v)}.""",
+        f"""Preferred shares that must be redeemed for a fixed amount of cash on a fixed date are mandatorily redeemable financial instruments, reported as liabilities, so {m(p['mrp'])} moves out of equity. Operating lease liabilities and unearned revenue are liabilities too. Total liabilities = {m(p['cl'])} + {m(p['ltd'])} + {m(p['ol'])} + {m(p['mrp'])} = {m(liab)}; total assets are unchanged. {m(liab)} ÷ {m(p['assets'])} = {two(key_v)}.""",
     )
 
 
@@ -269,14 +273,16 @@ def unreconciled(p):
         "whole_diff": (inc(diff), f"Books the whole {m(diff)} unreconciled difference. Part of it is the bank's error, which the bank corrects."),
         "no_transp": (inc(p["dup"]), f"Corrects only the duplicated check. The receipt was also recorded {m(over)} too high."),
         "transp_sign": (inc(p["dup"] + over), f"Adds the {m(over)} receipt error instead of subtracting it. The receipt was recorded as {m(p['rec_r'])} instead of {m(p['true_r'])}, overstating cash."),
-        "bank_only": (inc(under_bank), f"Records only the bank's {m(under_bank)} error in the ledger. The bank corrects its own error; the ledger needs the corrections for {s}'s own recording errors."),
+        "bank_only": (inc(under_bank), f"Records only the bank's {m(under_bank)} error in the ledger. The validated deposit slip shows the error is the bank's; the ledger needs the corrections for {s}'s own recording errors."),
+        "cleared": (inc(key_v - p["old"]), f"Also reduces cash by the {m(p['old'])} May check that cleared in June. {s} recorded that check when it was written, so its clearing needs no entry."),
     }
+    assert key_v - p["old"] > 0 and len({v for v, _ in pool.values()} | {inc(key_v)}) == 6
     key = (inc(key_v), f"Correct. {m(p['dup'])} duplicated check added back − {m(over)} receipt overstatement.")
     choices, ans = pick(pool, key, p["use"])
     return variant(
-        f"""{co}'s June 30 bank reconciliation shows an adjusted bank balance of {m(p['B'])} after deposits in transit and outstanding checks, and an adjusted book balance of {m(K)} after recording the bank's charges and collections, leaving an unreconciled difference of {m(diff)}. Investigating, the controller finds: a customer's check for {m(p['true_r'])} was recorded in the cash receipts journal as {m(p['rec_r'])}; check 5120, for {m(p['dup'])}, was recorded twice in the cash disbursements journal; and the bank recorded {s}'s June 18 deposit of {m(p['true_d'])} as {m(p['rec_d'])}, an error the bank has agreed to correct. What adjustment should {s} make to its general ledger cash balance?""",
+        f"""{co}'s June 30 bank reconciliation shows an adjusted bank balance of {m(p['B'])} after deposits in transit and outstanding checks, and an adjusted book balance of {m(K)} after recording the bank's charges and collections, leaving an unreconciled difference of {m(diff)}. Investigating, the controller finds: a customer's check for {m(p['true_r'])} was recorded in the cash receipts journal as {m(p['rec_r'])}; check 5120, for {m(p['dup'])}, was recorded twice in the cash disbursements journal; the bank recorded {s}'s June 18 deposit as {m(p['rec_d'])}, although the bank-validated deposit slip totals {m(p['true_d'])}; and check 5087, for {m(p['old'])}, which was outstanding at May 31, cleared the bank on June 4. What adjustment should {s} make to its general ledger cash balance?""",
         choices, ans,
-        f"""Book errors: the duplicated check understated cash by {m(p['dup'])}, and the receipt recorded as {m(p['rec_r'])} instead of {m(p['true_r'])} overstated it by {m(over)}. The ledger adjustment is {m(p['dup'])} − {m(over)} = a {m(key_v)} increase, giving {m(K + key_v)}. The bank's {m(under_bank)} understatement of the deposit is corrected by the bank: {m(p['B'])} + {m(under_bank)} = {m(correct)}, so both sides agree.""",
+        f"""Book errors: the duplicated check understated cash by {m(p['dup'])}, and the receipt recorded as {m(p['rec_r'])} instead of {m(p['true_r'])} overstated it by {m(over)}. The ledger adjustment is {m(p['dup'])} − {m(over)} = a {m(key_v)} increase, giving {m(K + key_v)}. The validated deposit slip shows the correct amount, so the {m(under_bank)} understatement of the deposit is the bank's error, a reconciling item on the bank side: {m(p['B'])} + {m(under_bank)} = {m(correct)}, so both sides agree. The May check that cleared in June was recorded when written and needs no entry.""",
     )
 
 
@@ -311,7 +317,10 @@ def ar_reconciliation(p):
         "net": (m(correct), f"Corrects both records but reports the net balance. The {m(p['cb'])} of customer credit balances is a liability, so receivables are reported without netting it."),
         "sub": (m(p["S"]), "Uses the subledger balance as recorded."),
         "no_consign": (m(p["S"] + p["cb"]), f"Doesn't remove the {m(p['consign'])} consignment invoice. Goods held by a consignee are still {s}'s inventory, not a sale."),
+        "post_sign": (m(key_v + 2 * over), f"Adds the {m(over)} posting difference to the control account instead of subtracting it. The control account was posted {m(over)} too high."),
+        "memo_both": (m(key_v - p["memo"]), f"Also subtracts the {m(p['memo'])} credit memo from the subledger, which already reflects it. Only the control account is missing the memo."),
     }
+    assert len({v for v, _ in pool.values()} | {m(key_v)}) == 7
     key = (m(key_v), f"Correct. {m(p['S'])} − {m(p['consign'])} consignment invoice + {m(p['cb'])} of credit balances reclassified.")
     choices, ans = pick(pool, key, p["use"])
     return variant(
@@ -452,10 +461,10 @@ def warranty(p):
     y1 = p["units"] * p["p1"] * p["cost"] // 100
     y2 = p["units"] * p["p2"] * p["cost"] // 100
     key_v = y1 + y2 - p["paid"]
-    assert key_v > 0 and p["paid"] != y1
+    assert key_v > 0 and y1 > p["paid"]
     pool = {
         "plus_ext": (m(key_v + p["eu"] * p["ep"]), f"Adds the {m(p['eu'] * p['ep'])} received for extended service plans. Those plans are a separate service, reported as a contract liability (unearned revenue), not as an accrued warranty cost."),
-        "y2_only": (m(y2), f"Accrues only the second-year repairs. The first-year repairs ({m(y1)}) are also accrued at the sale, and because units sold during Year 1 are still within their first 12 months, the liability is the total estimate less the {m(p['paid'])} already spent."),
+        "y1_only": (m(y1 - p["paid"]), f"Accrues only the first-year repairs ({m(y1)}) less the {m(p['paid'])} spent. The second-year repairs ({m(y2)}) are also part of the warranty included in the price, so their cost is accrued at the sale too."),
         "gross": (m(y1 + y2), f"Doesn't subtract the {m(p['paid'])} of repairs made in Year 1."),
         "cash": ("$0", "Expenses warranty repairs when paid. The cost of a warranty included in the price is accrued when the product is sold."),
     }
@@ -536,20 +545,20 @@ FAMILIES = [
         dict(org="Sable Point Shelter", draft=455000, endow=90000, gain=20000, land=75000, unres=130000, use=["no_endow", "no_land", "unres_fin"]),
      ]),
     ("far-nfp-notes-0001", A1, "Notes to financial statements (Not-for-Profit)", AP,
-     ["ASC 958-210-50 (liquidity and availability of financial assets)", "ASC 958-205 (board-designated net assets)"],
+     ["ASC 958-210-50 (liquidity and availability of financial assets; donor, contractual and time limits)"],
      nfp_liquidity, [
-        dict(org="Sparrow Hill Center", cash=250000, bldg=90000, recv=180000, lt=60000, endow=700000, quasi=200000, other=200000, approp=35000, use=["board", "lt_recv", "no_approp"]),
-        dict(org="Thistle Park Center", cash=320000, bldg=150000, recv=140000, lt=45000, endow=900000, quasi=250000, other=160000, approp=40000, use=["no_approp", "bldg", "board"]),
-        dict(org="Upland Arts Center", cash=180000, bldg=60000, recv=220000, lt=90000, endow=500000, quasi=120000, other=140000, approp=25000, use=["lt_recv", "bldg", "board"]),
-        dict(org="Vesper Hall Center", cash=410000, bldg=200000, recv=160000, lt=70000, endow=1200000, quasi=300000, other=260000, approp=50000, use=["no_approp", "lt_recv", "board"]),
+        dict(org="Sparrow Hill Center", cash=300000, bldg=90000, dsr=60000, recv=180000, lt=50000, other=235000, endow=700000, approp=35000, use=["dsr", "lt_recv", "bldg"]),
+        dict(org="Thistle Park Center", cash=420000, bldg=150000, dsr=80000, recv=140000, lt=45000, other=160000, endow=900000, approp=40000, use=["no_approp", "bldg", "dsr"]),
+        dict(org="Upland Arts Center", cash=240000, bldg=60000, dsr=40000, recv=220000, lt=90000, other=140000, endow=500000, approp=25000, use=["lt_recv", "bldg", "dsr"]),
+        dict(org="Vesper Hall Center", cash=520000, bldg=200000, dsr=110000, recv=160000, lt=70000, other=260000, endow=1200000, approp=50000, use=["no_approp", "dsr", "bldg"]),
      ]),
     ("far-special-purpose-frameworks-0003", A1, "Special Purpose Frameworks", AP,
      ["AICPA special purpose frameworks (modified cash basis)", "AU-C 800 (financial statements prepared under special purpose frameworks)"],
      modified_cash, [
-        dict(co="Dover Surveying", rec=500000, paid=320000, equip=60000, dep=15000, wages=12000, ar=30000, use=["cash_basis", "accrual", "no_dep"]),
-        dict(co="Easton Design", rec=380000, paid=250000, equip=45000, dep=9000, wages=14000, ar=22000, use=["wages", "no_dep", "accrual"]),
-        dict(co="Fenwick Engineering", rec=720000, paid=470000, equip=90000, dep=18000, wages=20000, ar=35000, use=["cash_basis", "wages", "no_dep"]),
-        dict(co="Grafton Appraisals", rec=260000, paid=170000, equip=40000, dep=8000, wages=6000, ar=15000, use=["accrual", "cash_basis", "wages"]),
+        dict(co="Dover Surveying", rec=500000, paid=320000, equip=60000, dep=15000, wages=12000, ar=30000, adv=8000, use=["cash_basis", "wages", "advance"]),
+        dict(co="Easton Design", rec=380000, paid=250000, equip=45000, dep=9000, wages=14000, ar=22000, adv=6000, use=["wages", "no_dep", "accrual"]),
+        dict(co="Fenwick Engineering", rec=720000, paid=470000, equip=90000, dep=18000, wages=20000, ar=35000, adv=12000, use=["cash_basis", "wages", "no_dep"]),
+        dict(co="Grafton Appraisals", rec=260000, paid=170000, equip=40000, dep=8000, wages=6000, ar=15000, adv=5000, use=["accrual", "cash_basis", "wages"]),
      ]),
     ("far-ratios-0003", A1, "Financial Statement Ratios and Performance Metrics", AP,
      ["Financial statement analysis: return on common stockholders' equity"],
@@ -560,12 +569,12 @@ FAMILIES = [
         dict(co="Dalby Corp.", ni=280000, pref=400000, rate=7, beg=2100000, end=2300000, use=["total_eq", "ending", "ni_total"]),
      ]),
     ("far-ratios-0004", A1, "Financial Statement Ratios and Performance Metrics", AP,
-     ["Financial statement analysis: solvency ratios", "ASC 480-10 (mandatorily redeemable financial instruments)", "ASC 842-20-45 (lease liabilities presented on the balance sheet)"],
+     ["Financial statement analysis: solvency ratios", "ASC 480-10 (mandatorily redeemable financial instruments of public business entities)", "ASC 842-20-45 (lease liabilities presented on the balance sheet)"],
      debt_ratio, [
-        dict(co="Ferris Corp.", assets=3600000, cl=400000, unearned=50000, ltd=900000, ol=300000, mrp=200000, use=["no_mrp", "no_ol", "neither"]),
+        dict(co="Ferris Corp.", assets=3600000, cl=400000, unearned=50000, ltd=900000, ol=300000, mrp=200000, use=["no_mrp", "no_ol", "no_cl"]),
         dict(co="Gresham Corp.", assets=5000000, cl=700000, unearned=80000, ltd=1400000, ol=350000, mrp=250000, use=["de", "no_mrp", "no_ol"]),
-        dict(co="Hartwell Corp.", assets=2500000, cl=300000, unearned=40000, ltd=500000, ol=240000, mrp=160000, use=["neither", "de", "no_mrp"]),
-        dict(co="Inchcape Corp.", assets=8000000, cl=1100000, unearned=120000, ltd=2400000, ol=500000, mrp=400000, use=["no_ol", "neither", "de"]),
+        dict(co="Hartwell Corp.", assets=2500000, cl=300000, unearned=40000, ltd=500000, ol=240000, mrp=160000, use=["no_cl", "de", "no_mrp"]),
+        dict(co="Inchcape Corp.", assets=8000000, cl=1100000, unearned=120000, ltd=2400000, ol=500000, mrp=400000, use=["no_mrp", "no_cl", "de"]),
      ]),
     ("far-cash-bank-reconciliation-0003", A2, "Cash and cash equivalents", AN,
      ["ASC 305-10 (cash)", "Proof of cash (four-column bank reconciliation) practice"],
@@ -578,26 +587,26 @@ FAMILIES = [
     ("far-cash-unreconciled-0001", A2, "Cash and cash equivalents", AN,
      ["ASC 305-10 (cash)", "Bank reconciliation practice (errors by the bank and by the depositor)"],
      unreconciled, [
-        dict(co="Wexford Co.", B=48640, true_r=1450, rec_r=1540, dup=1315, true_d=2300, rec_d=2030, use=["whole_diff", "no_transp", "transp_sign"]),
-        dict(co="Yarmouth Co.", B=73210, true_r=2680, rec_r=2860, dup=2140, true_d=4150, rec_d=4015, use=["no_transp", "bank_only", "transp_sign"]),
-        dict(co="Zeller Co.", B=36480, true_r=960, rec_r=990, dup=845, true_d=1720, rec_d=1270, use=["bank_only", "whole_diff", "no_transp"]),
-        dict(co="Abington Co.", B=92750, true_r=3470, rec_r=3740, dup=2960, true_d=5820, rec_d=5370, use=["transp_sign", "whole_diff", "bank_only"]),
+        dict(co="Wexford Co.", B=48640, true_r=1450, rec_r=1540, dup=1315, true_d=2300, rec_d=2030, old=640, use=["whole_diff", "no_transp", "transp_sign"]),
+        dict(co="Yarmouth Co.", B=73210, true_r=2680, rec_r=2860, dup=2140, true_d=4150, rec_d=4015, old=875, use=["no_transp", "bank_only", "transp_sign"]),
+        dict(co="Zeller Co.", B=36480, true_r=960, rec_r=990, dup=845, true_d=1720, rec_d=1270, old=390, use=["bank_only", "whole_diff", "no_transp"]),
+        dict(co="Abington Co.", B=92750, true_r=3470, rec_r=3740, dup=2960, true_d=5820, rec_d=5370, old=1180, use=["transp_sign", "whole_diff", "bank_only"]),
      ]),
     ("far-receivables-rollforward-0002", A2, "Trade receivables", AN,
      ["ASC 326-20 (allowance for credit losses; write-offs and recoveries)", "ASC 310-10 (receivables)"],
      allowance_rollforward, [
         dict(co="Linwood Co.", ar_b=400000, sales=2000000, coll=1940000, ar_e=436000, recov=4000, al_b=30000, req=36000, use=["no_reinstate", "no_recov", "ending"]),
         dict(co="Mayfield Co.", ar_b=620000, sales=3400000, coll=3310000, ar_e=662000, recov=7000, al_b=45000, req=60000, use=["direct", "no_recov", "ending"]),
-        dict(co="Newbury Co.", ar_b=280000, sales=1500000, coll=1462000, ar_e=295000, recov=3000, al_b=21000, req=26000, use=["no_reinstate", "direct", "no_recov"]),
+        dict(co="Newbury Co.", ar_b=280000, sales=1500000, coll=1462000, ar_e=296000, recov=3000, al_b=21000, req=26000, use=["no_reinstate", "direct", "no_recov"]),
         dict(co="Orland Co.", ar_b=900000, sales=5200000, coll=5080000, ar_e=968000, recov=12000, al_b=70000, req=84000, use=["ending", "direct", "no_reinstate"]),
      ]),
     ("far-receivables-reconciliation-0002", A2, "Trade receivables", AN,
-     ["ASC 310-10-45 (credit balances in receivables reported as liabilities)", "ASC 606-10-55 (consignment arrangements)"],
+     ["ASC 310-10 (receivables)", "SEC Regulation S-X, Rule 5-02 (receivables; credit balances reported as liabilities)", "ASC 606-10-55 (consignment arrangements)"],
      ar_reconciliation, [
-        dict(co="Arlo Supply", S=598500, cb=3000, memo=4500, true=84600, posted=86400, consign=7200, use=["gl", "net", "sub"]),
-        dict(co="Beckett Supply", S=742300, cb=5400, memo=6200, true=51300, posted=53100, consign=9800, use=["no_consign", "net", "gl"]),
+        dict(co="Arlo Supply", S=598500, cb=3000, memo=4500, true=84600, posted=86400, consign=7200, use=["post_sign", "no_consign", "sub"]),
+        dict(co="Beckett Supply", S=742300, cb=5400, memo=6200, true=51300, posted=53100, consign=9800, use=["no_consign", "net", "post_sign"]),
         dict(co="Carrow Supply", S=415800, cb=2600, memo=3100, true=62700, posted=67200, consign=5500, use=["sub", "no_consign", "net"]),
-        dict(co="Delancey Supply", S=1026400, cb=8200, memo=7400, true=93500, posted=95300, consign=12600, use=["gl", "sub", "no_consign"]),
+        dict(co="Delancey Supply", S=1026400, cb=8200, memo=7400, true=93500, posted=95300, consign=12600, use=["post_sign", "sub", "no_consign"]),
      ]),
     ("far-inventory-rollforward-0002", A2, "Inventory", AN,
      ["ASC 330-10 (inventory cost; goods in transit and on consignment)"],
@@ -650,10 +659,10 @@ FAMILIES = [
     ("far-contingencies-0006", A3, "Contingencies and commitments", AP,
      ["ASC 460-10 (product warranties)", "ASC 606-10-55 (warranties: assurance-type versus service-type)"],
      warranty, [
-        dict(co="Corbett Appliances", units=8000, p1=2, p2=4, cost=150, paid=21000, eu=1000, ep=60, use=["y2_only", "gross", "plus_ext"]),
-        dict(co="Dalton Appliances", units=12000, p1=3, p2=5, cost=120, paid=40000, eu=1500, ep=45, use=["cash", "gross", "plus_ext"]),
-        dict(co="Eaton Appliances", units=5000, p1=4, p2=6, cost=200, paid=37000, eu=800, ep=75, use=["cash", "y2_only", "gross"]),
-        dict(co="Fairley Appliances", units=20000, p1=1, p2=3, cost=250, paid=47000, eu=2500, ep=50, use=["cash", "y2_only", "plus_ext"]),
+        dict(co="Corbett Appliances", units=8000, p1=2, p2=4, cost=150, paid=21000, eu=1000, ep=60, use=["y1_only", "gross", "plus_ext"]),
+        dict(co="Dalton Appliances", units=12000, p1=3, p2=5, cost=120, paid=40000, eu=1500, ep=45, use=["y1_only", "gross", "plus_ext"]),
+        dict(co="Eaton Appliances", units=5000, p1=4, p2=6, cost=200, paid=37000, eu=800, ep=75, use=["plus_ext", "y1_only", "gross"]),
+        dict(co="Fairley Appliances", units=20000, p1=1, p2=3, cost=250, paid=47000, eu=2500, ep=50, use=["cash", "y1_only", "plus_ext"]),
      ]),
     ("far-income-taxes-provision-0001", A3, "Accounting for income taxes", AP,
      ["ASC 740-10 (current and deferred tax expense; temporary and permanent differences)"],
@@ -669,12 +678,12 @@ WORD_ITEMS = [
     mcq("far-nfp-financial-position-0002", A1, "Statement of financial position (Not-for-Profit)", RU,
         ["ASC 958-210-05 and 958-210-45 (purpose and presentation of the statement of financial position)"],
         """What is the focus of a nongovernmental not-for-profit entity's statement of financial position?""",
-        [("The entity as a whole, including information about its liquidity and financial flexibility", "Correct. The statement reports assets, liabilities and net assets for the entity as a whole and helps users assess liquidity, financial flexibility and the relationship between assets and liabilities."),
+        [("The entity as a whole, including its liquidity and financial flexibility", "Correct. The statement reports assets, liabilities and net assets for the entity as a whole and helps users assess liquidity, financial flexibility and the relationship between assets and liabilities."),
          ("Each of the entity's funds, reported side by side in separate columns", "Fund reporting is not required. The statement focuses on the entity as a whole; net assets are shown in two classes by donor restriction."),
-         ("Compliance with the entity's budget, comparing actual amounts with budgeted amounts", "Budget-to-actual comparisons belong to state and local government reporting, not to a nongovernmental not-for-profit entity's statement of financial position."),
-         ("The cost of each program the entity provides, with expenses reported by function", "Expenses by function are reported in the statement of activities, a statement of functional expenses or the notes, not in the statement of financial position.")],
+         ("Each net asset class, kept as a self-balancing set of accounts", "The two net asset classes are not self-balancing fund groups with their own assets and liabilities. The statement reports total assets and liabilities for the entity as a whole, and only net assets are split by donor restriction."),
+         ("The cost of each of its programs, with expenses reported by function", "Expenses by function are reported in the statement of activities, a statement of functional expenses or the notes, not in the statement of financial position.")],
         "A",
-        """ASC 958-210 says the statement of financial position focuses on the not-for-profit entity as a whole and reports total assets, liabilities and net assets, with net assets split between those with and without donor restrictions. With the notes, it provides information about liquidity, financial flexibility and the interrelationship of assets and liabilities. Budget comparisons are a government reporting feature, and functional expenses are reported with the statement of activities."""),
+        """ASC 958-210 says the statement of financial position focuses on the not-for-profit entity as a whole and reports total assets, liabilities and net assets, with net assets split between those with and without donor restrictions. With the notes, it provides information about liquidity, financial flexibility and the interrelationship of assets and liabilities. Net asset classes are not self-balancing funds, and functional expenses are reported with the statement of activities."""),
     mcq("far-nfp-cash-flows-0002", A1, "Statement of cash flows (Not-for-Profit)", RU,
         ["ASC 958-230-45 (contributions restricted for long-term purposes are financing activities)"],
         """In a nongovernmental not-for-profit entity's statement of cash flows, how is a cash gift that a donor has restricted to constructing a building reported?""",
@@ -696,10 +705,10 @@ WORD_ITEMS = [
     mcq("far-investments-amortized-cost-0001", A2, "Investments (Financial assets at amortized cost)", RU,
         ["ASC 320-10-25 (classification of debt securities)", "ASC 321-10-35 (equity securities without readily determinable fair values)"],
         """Which of the following investments may an entity report at amortized cost?""",
-        [("A debt security the entity may sell if interest rates change or it needs cash", "Available-for-sale. A debt security that may be sold before maturity is reported at fair value, with unrealized holding gains and losses in other comprehensive income."),
+        [("A debt security the entity may sell if interest rates change or if it needs cash for operations", "Available-for-sale. A debt security that may be sold before maturity is reported at fair value, with unrealized holding gains and losses in other comprehensive income."),
          ("A debt security bought for a portfolio traded to profit from short-term price changes", "Trading. Trading debt securities are reported at fair value, with changes in net income."),
          ("Common shares of a private company with no readily determinable fair value", "Equity securities are never reported at amortized cost. Without a readily determinable fair value, the entity may use the measurement alternative: cost less impairment, adjusted for observable price changes."),
-         ("A debt security the entity has the positive intent and ability to hold until it matures", "Correct. A debt security classified as held to maturity is reported at amortized cost, less an allowance for credit losses.")],
+         ("A bond the entity intends to hold, and is able to hold, until it matures", "Correct. A debt security classified as held to maturity is reported at amortized cost, less an allowance for credit losses.")],
         "D",
         """Only debt securities can be reported at amortized cost, and only when classified as held to maturity: the entity must have the positive intent and ability to hold them to maturity. Debt securities that may be sold are available-for-sale, and those bought for short-term trading are trading securities; both are reported at fair value. Equity securities are reported at fair value, or under the measurement alternative when no readily determinable fair value exists."""),
 ]

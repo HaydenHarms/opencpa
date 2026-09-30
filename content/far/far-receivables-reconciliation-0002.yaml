@@ -8,7 +8,8 @@ blueprint:
 review:
   status: reviewed
   references:
-  - ASC 310-10-45 (credit balances in receivables reported as liabilities)
+  - ASC 310-10 (receivables)
+  - SEC Regulation S-X, Rule 5-02 (receivables; credit balances reported as liabilities)
   - ASC 606-10-55 (consignment arrangements)
   notes: Batch 06. Written from scratch; answers solved and every number and distractor computed in code.
 stem: 'At December 31, Arlo Supply''s accounts receivable subledger shows a net balance of $598,500, which
@@ -20,19 +21,20 @@ stem: 'At December 31, Arlo Supply''s accounts receivable subledger shows a net 
   for Arlo. Before any allowance for credit losses, what amount should Arlo report as accounts receivable?'
 choices:
 - id: A
-  text: $591,300
-  rationale: Corrects both records but reports the net balance. The $3,000 of customer credit balances
-    is a liability, so receivables are reported without netting it.
-- id: B
   text: $594,300
   rationale: Correct. $598,500 − $7,200 consignment invoice + $3,000 of credit balances reclassified.
+- id: B
+  text: $597,900
+  rationale: Adds the $1,800 posting difference to the control account instead of subtracting it. The
+    control account was posted $1,800 too high.
 - id: C
   text: $598,500
   rationale: Uses the subledger balance as recorded.
 - id: D
-  text: $604,800
-  rationale: Uses the control account as recorded, before correcting it.
-answer: B
+  text: $601,500
+  rationale: Doesn't remove the $7,200 consignment invoice. Goods held by a consignee are still Arlo's
+    inventory, not a sale.
+answer: A
 explanation: 'Control account: $604,800 − $4,500 credit memo − $1,800 posting error − $7,200 consignment
   invoice = $591,300. Subledger: $598,500 − $7,200 = $591,300. The records now agree. The $3,000 of credit
   balances is reclassified to liabilities, so accounts receivable is $591,300 + $3,000 = $594,300.'
@@ -54,12 +56,13 @@ variants:
     text: $737,900
     rationale: Correct. $742,300 − $9,800 consignment invoice + $5,400 of credit balances reclassified.
   - id: C
+    text: $741,500
+    rationale: Adds the $1,800 posting difference to the control account instead of subtracting it. The
+      control account was posted $1,800 too high.
+  - id: D
     text: $747,700
     rationale: Doesn't remove the $9,800 consignment invoice. Goods held by a consignee are still Beckett's
       inventory, not a sale.
-  - id: D
-    text: $750,300
-    rationale: Uses the control account as recorded, before correcting it.
   answer: B
   explanation: 'Control account: $750,300 − $6,200 credit memo − $1,800 posting error − $9,800 consignment
     invoice = $732,500. Subledger: $742,300 − $9,800 = $732,500. The records now agree. The $5,400 of
@@ -104,15 +107,16 @@ variants:
     text: $1,022,000
     rationale: Correct. $1,026,400 − $12,600 consignment invoice + $8,200 of credit balances reclassified.
   - id: B
+    text: $1,025,600
+    rationale: Adds the $1,800 posting difference to the control account instead of subtracting it. The
+      control account was posted $1,800 too high.
+  - id: C
     text: $1,026,400
     rationale: Uses the subledger balance as recorded.
-  - id: C
+  - id: D
     text: $1,034,600
     rationale: Doesn't remove the $12,600 consignment invoice. Goods held by a consignee are still Delancey's
       inventory, not a sale.
-  - id: D
-    text: $1,035,600
-    rationale: Uses the control account as recorded, before correcting it.
   answer: A
   explanation: 'Control account: $1,035,600 − $7,400 credit memo − $1,800 posting error − $12,600 consignment
     invoice = $1,013,800. Subledger: $1,026,400 − $12,600 = $1,013,800. The records now agree. The $8,200
