@@ -12,19 +12,20 @@ review:
     for an entity that is not an SEC filer)
   - ASC 326-20 (allowance for credit losses)
   notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'Langdale Co., a private company that is not an SEC filer, is finalizing its December 31, Year 1,
-  financial statements. They were available to be issued on April 2, Year 2, and Langdale delivered them
-  to its lender on April 20. The draft allowance for credit losses is $64,000. It includes $12,000 for
-  the $90,000 owed by Pryce Foods and $14,000 for the $35,000 owed by Ruskin Mills, and nothing specific
-  for the $40,000 owed by Stainton Traders, which was current and financially sound at year-end. After
-  year-end: on February 8, Pryce Foods, which had reported losses throughout Year 1, filed for bankruptcy,
-  and Langdale now expects to collect 30% of Pryce''s balance; on March 3, a tornado destroyed Stainton''s
-  only warehouse, and Langdale now expects to collect nothing from Stainton; and on April 10, Ruskin Mills,
-  whose balance was 120 days past due at year-end and which had defaulted on its bank loans in November,
-  Year 1, filed for bankruptcy. Langdale has not elected the ASU 2025-05 practical expedient or the related
-  accounting policy election for current receivables. The draft''s $14,000 for Ruskin was management''s
-  expected credit loss at year-end, based on all information then available, including the past-due balance
-  and the loan default. What allowance for credit losses should Langdale report at December 31, Year 1?'
+stem: 'Langdale Co. is a private company that is not an SEC filer. Its December 31, Year 1, financial
+  statements were available to be issued on April 2, Year 2, and Langdale delivered them to its lender
+  on April 20. The draft allowance for credit losses is $64,000. It includes $12,000 for the $90,000 owed
+  by Pryce Foods and $14,000 for the $35,000 owed by Ruskin Mills, and nothing specific for the $40,000
+  owed by Stainton Traders, which was current and financially sound at year-end. After year-end: on February
+  8, Pryce Foods, which had reported losses throughout Year 1, filed for bankruptcy, and Langdale now
+  expects to collect 30% of Pryce''s balance; on March 3, a tornado destroyed Stainton''s only warehouse,
+  and Langdale now expects to collect nothing from Stainton; and on April 10, Ruskin Mills, whose balance
+  was 120 days past due at year-end and which had defaulted on its bank loans in November, Year 1, filed
+  for bankruptcy. Langdale has not elected the ASU 2025-05 practical expedient or the related accounting
+  policy election for current receivables. The draft''s $14,000 for Ruskin was management''s expected
+  credit loss at year-end, based on all information then available, including the past-due balance and
+  the loan default. What allowance for credit losses should those statements report at December 31, Year
+  1?'
 choices:
 - id: A
   text: $64,000
@@ -49,20 +50,20 @@ explanation: 'A company that is not an SEC filer evaluates subsequent events thr
   it, don''t recognize it. Ruskin''s bankruptcy on April 10 came after the available-to-be-issued date,
   so these statements don''t reflect it. Allowance = $64,000 + $51,000 = $115,000.'
 variants:
-- stem: 'Malham Co., a private company that is not an SEC filer, is finalizing its December 31, Year 1,
-    financial statements. They were available to be issued on April 2, Year 2, and Malham delivered them
-    to its lender on April 20. The draft allowance for credit losses is $88,000. It includes $18,000 for
-    the $120,000 owed by Pryce Foods and $20,000 for the $48,000 owed by Ruskin Mills, and nothing specific
-    for the $55,000 owed by Stainton Traders, which was current and financially sound at year-end. After
-    year-end: on February 8, Pryce Foods, which had reported losses throughout Year 1, filed for bankruptcy,
-    and Malham now expects to collect 25% of Pryce''s balance; on March 3, a tornado destroyed Stainton''s
+- stem: 'Malham Co. is a private company that is not an SEC filer. Its December 31, Year 1, financial
+    statements were available to be issued on April 2, Year 2, and Malham delivered them to its lender
+    on April 20. The draft allowance for credit losses is $88,000. It includes $18,000 for the $120,000
+    owed by Pryce Foods and $20,000 for the $48,000 owed by Ruskin Mills, and nothing specific for the
+    $55,000 owed by Stainton Traders, which was current and financially sound at year-end. After year-end:
+    on February 8, Pryce Foods, which had reported losses throughout Year 1, filed for bankruptcy, and
+    Malham now expects to collect 25% of Pryce''s balance; on March 3, a tornado destroyed Stainton''s
     only warehouse, and Malham now expects to collect nothing from Stainton; and on April 10, Ruskin Mills,
     whose balance was 120 days past due at year-end and which had defaulted on its bank loans in November,
     Year 1, filed for bankruptcy. Malham has not elected the ASU 2025-05 practical expedient or the related
     accounting policy election for current receivables. The draft''s $20,000 for Ruskin was management''s
     expected credit loss at year-end, based on all information then available, including the past-due
-    balance and the loan default. What allowance for credit losses should Malham report at December 31,
-    Year 1?'
+    balance and the loan default. What allowance for credit losses should those statements report at December
+    31, Year 1?'
   choices:
   - id: A
     text: $88,000
@@ -86,19 +87,19 @@ variants:
     = $90,000, and the allowance rises by $90,000 − $18,000 = $72,000. The tornado arose after year-end:
     disclose it, don''t recognize it. Ruskin''s bankruptcy on April 10 came after the available-to-be-issued
     date, so these statements don''t reflect it. Allowance = $88,000 + $72,000 = $160,000.'
-- stem: 'Nidderdale Co., a private company that is not an SEC filer, is finalizing its December 31, Year
-    1, financial statements. They were available to be issued on April 2, Year 2, and Nidderdale delivered
-    them to its lender on April 20. The draft allowance for credit losses is $47,000. It includes $9,000
-    for the $60,000 owed by Pryce Foods and $10,000 for the $26,000 owed by Ruskin Mills, and nothing
-    specific for the $32,000 owed by Stainton Traders, which was current and financially sound at year-end.
-    After year-end: on February 8, Pryce Foods, which had reported losses throughout Year 1, filed for
-    bankruptcy, and Nidderdale now expects to collect 40% of Pryce''s balance; on March 3, a tornado destroyed
-    Stainton''s only warehouse, and Nidderdale now expects to collect nothing from Stainton; and on April
-    10, Ruskin Mills, whose balance was 120 days past due at year-end and which had defaulted on its bank
-    loans in November, Year 1, filed for bankruptcy. Nidderdale has not elected the ASU 2025-05 practical
-    expedient or the related accounting policy election for current receivables. The draft''s $10,000
-    for Ruskin was management''s expected credit loss at year-end, based on all information then available,
-    including the past-due balance and the loan default. What allowance for credit losses should Nidderdale
+- stem: 'Nidderdale Co. is a private company that is not an SEC filer. Its December 31, Year 1, financial
+    statements were available to be issued on April 2, Year 2, and Nidderdale delivered them to its lender
+    on April 20. The draft allowance for credit losses is $47,000. It includes $9,000 for the $60,000
+    owed by Pryce Foods and $10,000 for the $26,000 owed by Ruskin Mills, and nothing specific for the
+    $32,000 owed by Stainton Traders, which was current and financially sound at year-end. After year-end:
+    on February 8, Pryce Foods, which had reported losses throughout Year 1, filed for bankruptcy, and
+    Nidderdale now expects to collect 40% of Pryce''s balance; on March 3, a tornado destroyed Stainton''s
+    only warehouse, and Nidderdale now expects to collect nothing from Stainton; and on April 10, Ruskin
+    Mills, whose balance was 120 days past due at year-end and which had defaulted on its bank loans in
+    November, Year 1, filed for bankruptcy. Nidderdale has not elected the ASU 2025-05 practical expedient
+    or the related accounting policy election for current receivables. The draft''s $10,000 for Ruskin
+    was management''s expected credit loss at year-end, based on all information then available, including
+    the past-due balance and the loan default. What allowance for credit losses should those statements
     report at December 31, Year 1?'
   choices:
   - id: A
@@ -122,19 +123,19 @@ variants:
     = $36,000, and the allowance rises by $36,000 − $9,000 = $27,000. The tornado arose after year-end:
     disclose it, don''t recognize it. Ruskin''s bankruptcy on April 10 came after the available-to-be-issued
     date, so these statements don''t reflect it. Allowance = $47,000 + $27,000 = $74,000.'
-- stem: 'Otterburn Co., a private company that is not an SEC filer, is finalizing its December 31, Year
-    1, financial statements. They were available to be issued on April 2, Year 2, and Otterburn delivered
-    them to its lender on April 20. The draft allowance for credit losses is $126,000. It includes $22,000
-    for the $160,000 owed by Pryce Foods and $25,000 for the $70,000 owed by Ruskin Mills, and nothing
-    specific for the $85,000 owed by Stainton Traders, which was current and financially sound at year-end.
-    After year-end: on February 8, Pryce Foods, which had reported losses throughout Year 1, filed for
-    bankruptcy, and Otterburn now expects to collect 20% of Pryce''s balance; on March 3, a tornado destroyed
-    Stainton''s only warehouse, and Otterburn now expects to collect nothing from Stainton; and on April
-    10, Ruskin Mills, whose balance was 120 days past due at year-end and which had defaulted on its bank
-    loans in November, Year 1, filed for bankruptcy. Otterburn has not elected the ASU 2025-05 practical
-    expedient or the related accounting policy election for current receivables. The draft''s $25,000
-    for Ruskin was management''s expected credit loss at year-end, based on all information then available,
-    including the past-due balance and the loan default. What allowance for credit losses should Otterburn
+- stem: 'Otterburn Co. is a private company that is not an SEC filer. Its December 31, Year 1, financial
+    statements were available to be issued on April 2, Year 2, and Otterburn delivered them to its lender
+    on April 20. The draft allowance for credit losses is $126,000. It includes $22,000 for the $160,000
+    owed by Pryce Foods and $25,000 for the $70,000 owed by Ruskin Mills, and nothing specific for the
+    $85,000 owed by Stainton Traders, which was current and financially sound at year-end. After year-end:
+    on February 8, Pryce Foods, which had reported losses throughout Year 1, filed for bankruptcy, and
+    Otterburn now expects to collect 20% of Pryce''s balance; on March 3, a tornado destroyed Stainton''s
+    only warehouse, and Otterburn now expects to collect nothing from Stainton; and on April 10, Ruskin
+    Mills, whose balance was 120 days past due at year-end and which had defaulted on its bank loans in
+    November, Year 1, filed for bankruptcy. Otterburn has not elected the ASU 2025-05 practical expedient
+    or the related accounting policy election for current receivables. The draft''s $25,000 for Ruskin
+    was management''s expected credit loss at year-end, based on all information then available, including
+    the past-due balance and the loan default. What allowance for credit losses should those statements
     report at December 31, Year 1?'
   choices:
   - id: A

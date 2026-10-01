@@ -18,8 +18,8 @@ stem: 'At December 31, Year 2, Kirkby Co. holds four investments: debt securitie
   until they mature, which Kirkby''s cash forecasts show it can do, with an amortized cost of $480,000
   and a fair value of $455,000; and 3% of the common shares of a company listed on a national stock exchange,
   bought for $90,000 and worth $125,000. Kirkby has no significant influence over the listed company and
-  expects to collect all contractual cash flows on its debt securities. What total carrying amount should
-  Kirkby report for these investments on its December 31, Year 2, balance sheet?'
+  expects no credit losses on its debt securities, so it records no allowance for them. What total carrying
+  amount should Kirkby report for these investments on its December 31, Year 2, balance sheet?'
 choices:
 - id: A
   text: $1,008,000
@@ -53,9 +53,9 @@ variants:
     resolved to keep until they mature, which Lowther''s cash forecasts show it can do, with an amortized
     cost of $600,000 and a fair value of $572,000; and 2% of the common shares of a company listed on
     a national stock exchange, bought for $140,000 and worth $121,000. Lowther has no significant influence
-    over the listed company and expects to collect all contractual cash flows on its debt securities.
-    What total carrying amount should Lowther report for these investments on its December 31, Year 2,
-    balance sheet?'
+    over the listed company and expects no credit losses on its debt securities, so it records no allowance
+    for them. What total carrying amount should Lowther report for these investments on its December 31,
+    Year 2, balance sheet?'
   choices:
   - id: A
     text: $1,313,000
@@ -87,8 +87,9 @@ variants:
     to keep until they mature, which Millom''s cash forecasts show it can do, with an amortized cost of
     $350,000 and a fair value of $362,000; and 4% of the common shares of a company listed on a national
     stock exchange, bought for $80,000 and worth $52,000. Millom has no significant influence over the
-    listed company and expects to collect all contractual cash flows on its debt securities. What total
-    carrying amount should Millom report for these investments on its December 31, Year 2, balance sheet?'
+    listed company and expects no credit losses on its debt securities, so it records no allowance for
+    them. What total carrying amount should Millom report for these investments on its December 31, Year
+    2, balance sheet?'
   choices:
   - id: A
     text: $758,000
@@ -120,9 +121,9 @@ variants:
     resolved to keep until they mature, which Naworth''s cash forecasts show it can do, with an amortized
     cost of $750,000 and a fair value of $690,000; and 5% of the common shares of a company listed on
     a national stock exchange, bought for $180,000 and worth $214,000. Naworth has no significant influence
-    over the listed company and expects to collect all contractual cash flows on its debt securities.
-    What total carrying amount should Naworth report for these investments on its December 31, Year 2,
-    balance sheet?'
+    over the listed company and expects no credit losses on its debt securities, so it records no allowance
+    for them. What total carrying amount should Naworth report for these investments on its December 31,
+    Year 2, balance sheet?'
   choices:
   - id: A
     text: $1,727,000

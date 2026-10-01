@@ -1,6 +1,6 @@
 # Plan: task-based simulations (TBS)
 
-Status: milestones 1–3 (API, player UI, three verified simulations) are on `main`, merged 2026-09-29 at Hayden's request; he will ask for a revert if the UI doesn't look right. Remaining: the review gate on the three simulations, and research tasks. Written as roadmap item 2 in `CLAUDE.md`.
+Status: milestones 1–3 (API, player UI, three verified simulations) are on `main`, merged 2026-09-29 at Hayden's request and approved by him for now on 2026-09-30. Remaining: the review gate on the three simulations, and research tasks. Written as roadmap item 2 in `CLAUDE.md`.
 
 ## Why now
 

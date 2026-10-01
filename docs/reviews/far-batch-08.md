@@ -90,6 +90,6 @@ See `far-batch-07.md` for the sample and method; the gate ran once on both batch
 
 Exam-ready: `cash-flows-0009` (84%; the gate confirmed the Analysis tag, at the low end), `lessee-operating-0004` (86%), `investments-fair-value-0002` (83%), and from the sample `income-taxes-deferred-0002` (87%), `income-taxes-provision-0003` (86%) and `consolidated-statements-0008` (86%).
 
-**Not yet done:** the blind re-check of these four changed items (`investments-fair-value-0001`, `-0002`, `lessee-operating-0004`, `subsequent-events-0008`). The verifier stopped on a usage limit before reporting, so run it next session.
+**Final blind check (done 2026-09-30):** a fresh verifier re-solved all 16 versions of the four changed items and matched every key. It found no second answer and no superseded rule. One required fix is applied: `subsequent-events-0008` no longer says the company "is finalizing" statements that were available to be issued on April 2, which could have moved the cutoff past the April 10 event. Also applied: `investments-fair-value-0001` now says the entity expects no credit losses and records no allowance, since "expects to collect all contractual cash flows" doesn't by itself mean a zero allowance under CECL.
 
 **Bank after batches 07 and 08:** 175 FAR MCQs, 12% / 52% / 36% by skill and 34.3% / 32.0% / 33.7% by area, all in range. Analysis is 1 point above its floor and Area III is 1.3 points below its ceiling, so the next batches lean toward Areas I and II with Analysis at 40% or more.
