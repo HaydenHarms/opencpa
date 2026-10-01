@@ -22,10 +22,10 @@ stem: 'Jolliffe Co. is preparing its December 31, Year 1, balance sheet, which w
   the price. (4) Packaging equipment, $175,000: idle since November; the board approved its sale, and
   Jolliffe began marketing it at a reasonable price, on January 15, Year 2. (5) Jolliffe''s headquarters
   building, $2,300,000: approved for sale in November and marketed at a price in line with comparable
-  sales; a buyer''s offer was accepted in December and the sale should close in February, Year 2, after
-  which Jolliffe will move to leased offices that are already prepared. The plans are not expected to
-  change. What total carrying amount should Jolliffe report as assets held for sale at December 31, Year
-  1?'
+  sales; a buyer''s offer was accepted in December and the sale should close in February, Year 2, and
+  Jolliffe will vacate the building at closing, moving to leased offices that are already prepared. The
+  plans are not expected to change. What total carrying amount should Jolliffe report as assets held for
+  sale at December 31, Year 1?'
 choices:
 - id: A
   text: $640,000
@@ -49,10 +49,10 @@ explanation: 'An asset is classified as held for sale when management with autho
   the asset is available for immediate sale in its present condition (subject only to usual and customary
   terms), an active program to find a buyer has begun, the sale is probable within one year, the price
   is reasonable in relation to fair value, and the plan is unlikely to change. The warehouse ($640,000)
-  qualifies. So does the headquarters building ($2,300,000): vacating it after closing is a usual and
-  customary term. The trucks are still in use and not marketed; the office building''s asking price is
-  unreasonable; and the packaging equipment met the criteria only after year-end, so it is held and used
-  at December 31. Total = $2,940,000.'
+  qualifies. So does the headquarters building ($2,300,000): vacating it at closing is a usual and customary
+  term. The trucks are still in use and not marketed; the office building''s asking price is unreasonable;
+  and the packaging equipment met the criteria only after year-end, so it is held and used at December
+  31. Total = $2,940,000.'
 variants:
 - stem: 'Kershaw Co. is preparing its December 31, Year 1, balance sheet, which will be issued on March
     1, Year 2. Each asset below has a fair value less cost to sell above its carrying amount. (1) A warehouse,
@@ -66,9 +66,9 @@ variants:
     sale, and Kershaw began marketing it at a reasonable price, on January 15, Year 2. (5) Kershaw''s
     headquarters building, $1,600,000: approved for sale in November and marketed at a price in line with
     comparable sales; a buyer''s offer was accepted in December and the sale should close in February,
-    Year 2, after which Kershaw will move to leased offices that are already prepared. The plans are not
-    expected to change. What total carrying amount should Kershaw report as assets held for sale at December
-    31, Year 1?'
+    Year 2, and Kershaw will vacate the building at closing, moving to leased offices that are already
+    prepared. The plans are not expected to change. What total carrying amount should Kershaw report as
+    assets held for sale at December 31, Year 1?'
   choices:
   - id: A
     text: $2,420,000
@@ -91,10 +91,10 @@ variants:
     the asset is available for immediate sale in its present condition (subject only to usual and customary
     terms), an active program to find a buyer has begun, the sale is probable within one year, the price
     is reasonable in relation to fair value, and the plan is unlikely to change. The warehouse ($820,000)
-    qualifies. So does the headquarters building ($1,600,000): vacating it after closing is a usual and
-    customary term. The trucks are still in use and not marketed; the office building''s asking price
-    is unreasonable; and the packaging equipment met the criteria only after year-end, so it is held and
-    used at December 31. Total = $2,420,000.'
+    qualifies. So does the headquarters building ($1,600,000): vacating it at closing is a usual and customary
+    term. The trucks are still in use and not marketed; the office building''s asking price is unreasonable;
+    and the packaging equipment met the criteria only after year-end, so it is held and used at December
+    31. Total = $2,420,000.'
 - stem: 'Lumb Co. is preparing its December 31, Year 1, balance sheet, which will be issued on March 1,
     Year 2. Each asset below has a fair value less cost to sell above its carrying amount. (1) A warehouse,
     carrying amount $455,000: in October, management with the authority to do so approved its sale; it
@@ -106,9 +106,10 @@ variants:
     lowered the price. (4) Packaging equipment, $120,000: idle since November; the board approved its
     sale, and Lumb began marketing it at a reasonable price, on January 15, Year 2. (5) Lumb''s headquarters
     building, $2,750,000: approved for sale in November and marketed at a price in line with comparable
-    sales; a buyer''s offer was accepted in December and the sale should close in February, Year 2, after
-    which Lumb will move to leased offices that are already prepared. The plans are not expected to change.
-    What total carrying amount should Lumb report as assets held for sale at December 31, Year 1?'
+    sales; a buyer''s offer was accepted in December and the sale should close in February, Year 2, and
+    Lumb will vacate the building at closing, moving to leased offices that are already prepared. The
+    plans are not expected to change. What total carrying amount should Lumb report as assets held for
+    sale at December 31, Year 1?'
   choices:
   - id: A
     text: $455,000
@@ -131,10 +132,10 @@ variants:
     the asset is available for immediate sale in its present condition (subject only to usual and customary
     terms), an active program to find a buyer has begun, the sale is probable within one year, the price
     is reasonable in relation to fair value, and the plan is unlikely to change. The warehouse ($455,000)
-    qualifies. So does the headquarters building ($2,750,000): vacating it after closing is a usual and
-    customary term. The trucks are still in use and not marketed; the office building''s asking price
-    is unreasonable; and the packaging equipment met the criteria only after year-end, so it is held and
-    used at December 31. Total = $3,205,000.'
+    qualifies. So does the headquarters building ($2,750,000): vacating it at closing is a usual and customary
+    term. The trucks are still in use and not marketed; the office building''s asking price is unreasonable;
+    and the packaging equipment met the criteria only after year-end, so it is held and used at December
+    31. Total = $3,205,000.'
 - stem: 'Marsden Co. is preparing its December 31, Year 1, balance sheet, which will be issued on March
     1, Year 2. Each asset below has a fair value less cost to sell above its carrying amount. (1) A warehouse,
     carrying amount $1,100,000: in October, management with the authority to do so approved its sale;
@@ -147,9 +148,9 @@ variants:
     sale, and Marsden began marketing it at a reasonable price, on January 15, Year 2. (5) Marsden''s
     headquarters building, $1,950,000: approved for sale in November and marketed at a price in line with
     comparable sales; a buyer''s offer was accepted in December and the sale should close in February,
-    Year 2, after which Marsden will move to leased offices that are already prepared. The plans are not
-    expected to change. What total carrying amount should Marsden report as assets held for sale at December
-    31, Year 1?'
+    Year 2, and Marsden will vacate the building at closing, moving to leased offices that are already
+    prepared. The plans are not expected to change. What total carrying amount should Marsden report as
+    assets held for sale at December 31, Year 1?'
   choices:
   - id: A
     text: $1,100,000
@@ -173,7 +174,7 @@ variants:
     the asset is available for immediate sale in its present condition (subject only to usual and customary
     terms), an active program to find a buyer has begun, the sale is probable within one year, the price
     is reasonable in relation to fair value, and the plan is unlikely to change. The warehouse ($1,100,000)
-    qualifies. So does the headquarters building ($1,950,000): vacating it after closing is a usual and
-    customary term. The trucks are still in use and not marketed; the office building''s asking price
-    is unreasonable; and the packaging equipment met the criteria only after year-end, so it is held and
-    used at December 31. Total = $3,050,000.'
+    qualifies. So does the headquarters building ($1,950,000): vacating it at closing is a usual and customary
+    term. The trucks are still in use and not marketed; the office building''s asking price is unreasonable;
+    and the packaging equipment met the criteria only after year-end, so it is held and used at December
+    31. Total = $3,050,000.'

@@ -16,9 +16,10 @@ stem: 'Quarmby Corp.''s draft note on long-term debt at December 31, Year 1, rep
   of $410,000 for Year 2. The controller identifies these errors and omissions in that amount: it includes
   $64,000 of payments due in Year 2 under Quarmby''s operating leases; it omits a $250,000 term loan signed
   on December 1, Year 1, which is repayable in five equal annual principal installments beginning December
-  1, Year 2; it leaves out a $120,000 note payable due June 30, Year 2, which the draft lists under Year
-  3 because Quarmby intends to refinance it, and it includes $38,000 of interest that Quarmby will pay
-  on its debt in Year 2. What principal amount should the corrected note report as maturing in Year 2?'
+  1, Year 2; it leaves out a $120,000 note payable, originally issued with a three-year term and due June
+  30, Year 2, which the draft lists under Year 3 because Quarmby intends to refinance it, and it includes
+  $38,000 of interest that Quarmby will pay on its debt in Year 2. What principal amount should the corrected
+  note report as maturing in Year 2?'
 choices:
 - id: A
   text: $358,000
@@ -46,10 +47,10 @@ variants:
     of $585,000 for Year 2. The controller identifies these errors and omissions in that amount: it includes
     $92,000 of payments due in Year 2 under Ratcliffe''s operating leases; it omits a $400,000 term loan
     signed on December 1, Year 1, which is repayable in five equal annual principal installments beginning
-    December 1, Year 2; it leaves out a $150,000 note payable due June 30, Year 2, which the draft lists
-    under Year 3 because Ratcliffe intends to refinance it, and it includes $51,000 of interest that Ratcliffe
-    will pay on its debt in Year 2. What principal amount should the corrected note report as maturing
-    in Year 2?'
+    December 1, Year 2; it leaves out a $150,000 note payable, originally issued with a three-year term
+    and due June 30, Year 2, which the draft lists under Year 3 because Ratcliffe intends to refinance
+    it, and it includes $51,000 of interest that Ratcliffe will pay on its debt in Year 2. What principal
+    amount should the corrected note report as maturing in Year 2?'
   choices:
   - id: A
     text: $522,000
@@ -75,10 +76,10 @@ variants:
     of $296,000 for Year 2. The controller identifies these errors and omissions in that amount: it includes
     $45,000 of payments due in Year 2 under Scarth''s operating leases; it omits a $175,000 term loan
     signed on December 1, Year 1, which is repayable in five equal annual principal installments beginning
-    December 1, Year 2; it leaves out an $80,000 note payable due June 30, Year 2, which the draft lists
-    under Year 3 because Scarth intends to refinance it, and it includes $27,000 of interest that Scarth
-    will pay on its debt in Year 2. What principal amount should the corrected note report as maturing
-    in Year 2?'
+    December 1, Year 2; it leaves out an $80,000 note payable, originally issued with a three-year term
+    and due June 30, Year 2, which the draft lists under Year 3 because Scarth intends to refinance it,
+    and it includes $27,000 of interest that Scarth will pay on its debt in Year 2. What principal amount
+    should the corrected note report as maturing in Year 2?'
   choices:
   - id: A
     text: $259,000
@@ -104,10 +105,10 @@ variants:
     of $830,000 for Year 2. The controller identifies these errors and omissions in that amount: it includes
     $118,000 of payments due in Year 2 under Thwaite''s operating leases; it omits a $600,000 term loan
     signed on December 1, Year 1, which is repayable in five equal annual principal installments beginning
-    December 1, Year 2; it leaves out a $210,000 note payable due June 30, Year 2, which the draft lists
-    under Year 3 because Thwaite intends to refinance it, and it includes $74,000 of interest that Thwaite
-    will pay on its debt in Year 2. What principal amount should the corrected note report as maturing
-    in Year 2?'
+    December 1, Year 2; it leaves out a $210,000 note payable, originally issued with a three-year term
+    and due June 30, Year 2, which the draft lists under Year 3 because Thwaite intends to refinance it,
+    and it includes $74,000 of interest that Thwaite will pay on its debt in Year 2. What principal amount
+    should the corrected note report as maturing in Year 2?'
   choices:
   - id: A
     text: $758,000

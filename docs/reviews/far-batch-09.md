@@ -98,4 +98,19 @@ One verifier solved all 88 versions and matched every key. Fixes applied:
 
 ## Review gate
 
-Pending.
+**Stratified gate** (tactic 4): 23 of 25 items. Twenty-two were reviewed in full: the 10 Analysis items, the 11 first items on empty tasks, and `inventory-lcm-0001` (ASU 2015-11). One was drawn at random from the other three (seed 20261001): `foreign-currency-transactions-0002`. Not gated: `receivables-factoring-0002`, `debt-noninterest-note-0001`.
+
+**Result: passed.** The gated items average **84.9%** estimated pass likelihood (batches 07–08: 84.0%). 20 are exam-ready, 3 need minor revision and none need major revision, with no wrong keys in 81 versions. The sampled item was exam-ready, so escalation was not triggered. The gate mapped every item to a blueprint task independently and agreed with `far-coverage.py` on all 23, and it judged the mostly-B/C version-0 keys not to be a cue.
+
+| Item | Gate | Fix |
+| --- | --- | --- |
+| `far-notes-0005` (78%) | Nothing said the note due June 30, Year 2 was long-term, so leaving it out of the maturities note was defensible. | The note was "originally issued with a three-year term". |
+| `far-changes-in-equity-0004` (78%) | The "treasury excess left in income" distractor still charged the shortfall to paid-in capital from treasury stock, which that error would leave at zero; and "requires only par value … of that size" hinted at the correction. | The distractor is recomputed with the errors interacting ($2,130,000 / $1,367,000 / $3,320,000 / $869,000), and the stem says neutrally that state law requires par value to be capitalized for stock dividends. |
+| `far-investments-fair-value-0003` (80%) | The key's "a company it must consolidate" echoed the ASC 825-10-15-5 exclusion wording. | The key is now "common shares giving it 70% of the voting shares of a regional distributor". |
+| Nits | Held-for-sale move-out timing; "site of a future plant"; FX variant 1 ordering. | "Will vacate the building at closing"; "land for the new plant"; FX variant 1 swaps the loss distractor so its choices sort cleanly. |
+
+**Blind re-check after the fixes:** a fresh verifier re-solved all 21 versions of the six changed items. It matched every key and found no second answers. Its one item-level fix is applied: variant 2 of `ppe-reconciliation-0003` swaps the weak "repair deducted twice" distractor ($3,286,600) for "no depreciation fix" ($3,250,000), as in the other versions.
+
+**Open, bank-wide:** the verifier noted that none of those 21 keys is D. Because numeric choices sort ascending and each version 0 now has distractors on both sides of the key, the largest value is rarely correct. Bank-wide D keys are scarce (version 0: A 44, B 63, C 58, D 35 before this batch). The next batch should put some keys at D, using variants or items whose natural errors understate, without making every distractor err the same way.
+
+**Bank after batch 09:** 200 FAR MCQs (501 variants), 12% / 51.5% / 36.5% by skill and 35.5% / 35% / 29.5% by area, all in range. Tasks I.A.3a and I.F.a still have no items.

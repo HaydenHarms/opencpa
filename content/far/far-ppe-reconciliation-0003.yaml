@@ -16,10 +16,10 @@ stem: 'At December 31, Year 2, Sunderland Co.''s fixed-asset subledger shows equ
   straight-line from the month it is placed in service. The controller''s investigation finds: a machine
   costing $240,000, placed in service on October 1, Year 2, with a five-year life and no residual value,
   was depreciated for a full year in the general ledger, while the subledger follows the policy; the general
-  ledger equipment account includes $310,000 paid on November 15 for land bought as the site of a future
-  plant, on which no depreciation was recorded; and the subledger includes $8,500 spent on December 30
-  for routine repairs of a forklift, which the general ledger recorded as repairs expense. What net carrying
-  amount of equipment should Sunderland report at December 31, Year 2?'
+  ledger equipment account includes $310,000 paid on November 15 for land for the new plant, on which
+  no depreciation was recorded; and the subledger includes $8,500 spent on December 30 for routine repairs
+  of a forklift, which the general ledger recorded as repairs expense. What net carrying amount of equipment
+  should Sunderland report at December 31, Year 2?'
 choices:
 - id: A
   text: $2,589,000
@@ -48,10 +48,10 @@ variants:
     straight-line from the month it is placed in service. The controller''s investigation finds: a machine
     costing $160,000, placed in service on October 1, Year 2, with a five-year life and no residual value,
     was depreciated for a full year in the general ledger, while the subledger follows the policy; the
-    general ledger equipment account includes $185,000 paid on November 15 for land bought as the site
-    of a future plant, on which no depreciation was recorded; and the subledger includes $6,200 spent
-    on December 30 for routine repairs of a forklift, which the general ledger recorded as repairs expense.
-    What net carrying amount of equipment should Tetley report at December 31, Year 2?'
+    general ledger equipment account includes $185,000 paid on November 15 for land for the new plant,
+    on which no depreciation was recorded; and the subledger includes $6,200 spent on December 30 for
+    routine repairs of a forklift, which the general ledger recorded as repairs expense. What net carrying
+    amount of equipment should Tetley report at December 31, Year 2?'
   choices:
   - id: A
     text: $1,695,000
@@ -80,17 +80,18 @@ variants:
     straight-line from the month it is placed in service. The controller''s investigation finds: a machine
     costing $320,000, placed in service on October 1, Year 2, with a five-year life and no residual value,
     was depreciated for a full year in the general ledger, while the subledger follows the policy; the
-    general ledger equipment account includes $420,000 paid on November 15 for land bought as the site
-    of a future plant, on which no depreciation was recorded; and the subledger includes $11,400 spent
-    on December 30 for routine repairs of a forklift, which the general ledger recorded as repairs expense.
-    What net carrying amount of equipment should Ushaw report at December 31, Year 2?'
+    general ledger equipment account includes $420,000 paid on November 15 for land for the new plant,
+    on which no depreciation was recorded; and the subledger includes $11,400 spent on December 30 for
+    routine repairs of a forklift, which the general ledger recorded as repairs expense. What net carrying
+    amount of equipment should Ushaw report at December 31, Year 2?'
   choices:
   - id: A
     text: $3,202,000
     rationale: Adds the $48,000 excess depreciation to accumulated depreciation instead of removing it.
   - id: B
-    text: $3,286,600
-    rationale: Also subtracts the $11,400 of repairs from the general ledger, which already expensed them.
+    text: $3,250,000
+    rationale: 'Keeps the general ledger''s full year of depreciation on the new machine. Under Ushaw''s
+      policy it is depreciated from October, three months: the $48,000 excess is reversed.'
   - id: C
     text: $3,298,000
     rationale: Correct. ($6,450,000 − $420,000) − ($2,780,000 − $48,000), which equals the subledger $3,309,400
@@ -110,10 +111,10 @@ variants:
     straight-line from the month it is placed in service. The controller''s investigation finds: a machine
     costing $120,000, placed in service on October 1, Year 2, with a five-year life and no residual value,
     was depreciated for a full year in the general ledger, while the subledger follows the policy; the
-    general ledger equipment account includes $140,000 paid on November 15 for land bought as the site
-    of a future plant, on which no depreciation was recorded; and the subledger includes $4,700 spent
-    on December 30 for routine repairs of a forklift, which the general ledger recorded as repairs expense.
-    What net carrying amount of equipment should Waddington report at December 31, Year 2?'
+    general ledger equipment account includes $140,000 paid on November 15 for land for the new plant,
+    on which no depreciation was recorded; and the subledger includes $4,700 spent on December 30 for
+    routine repairs of a forklift, which the general ledger recorded as repairs expense. What net carrying
+    amount of equipment should Waddington report at December 31, Year 2?'
   choices:
   - id: A
     text: $1,080,000

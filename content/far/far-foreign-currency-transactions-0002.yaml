@@ -58,9 +58,9 @@ variants:
     rationale: Also remeasures the CHF 80,000 advance to the supplier. A nonrefundable advance for goods
       is a nonmonetary asset, carried at the historical rate, so it produces no exchange gain or loss.
   - id: C
-    text: $12,000 net loss
-    rationale: Recognizes only the realized $12,000 loss on the payable settled in December. The $20,000
-      gain on the receivable still outstanding at year-end is recognized in Year 1 income too.
+    text: $20,000 net gain
+    rationale: Leaves out the $12,000 loss on the payable because it was settled within the year. A realized
+      exchange loss on settlement is a transaction loss in income.
   - id: D
     text: $32,000 net gain
     rationale: 'Treats the $12,000 on the Canadian payable as a gain. The Canadian dollar strengthened

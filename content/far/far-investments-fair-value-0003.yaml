@@ -15,7 +15,7 @@ stem: During Year 1, Fenmore Corp. acquires each of the financial assets below a
   not available?
 choices:
 - id: A
-  text: Common shares giving it 70% of the votes of a company it must consolidate
+  text: Common shares giving it 70% of the voting shares of a regional distributor
   rationale: Correct. An investment in a subsidiary that the entity is required to consolidate is excluded
     from the fair value option; the subsidiary is consolidated.
 - id: B

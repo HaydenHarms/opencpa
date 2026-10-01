@@ -17,16 +17,18 @@ stem: 'Hallam Corp.''s draft Year 2 statement of changes in equity reports addit
   40,000 shares of $1 par common stock for $14 per share and credited the entire proceeds to common stock;
   (2) in March, Hallam reissued treasury shares, which it carries at cost, for $18,000 more than their
   cost and credited the excess to a gain in net income; (3) in May, Hallam distributed a 30% stock dividend
-  of 36,000 shares when the market price was $16 per share and recorded it at the market price, although
-  state law requires only par value to be capitalized for a stock dividend of that size; and (4) in November,
-  it reissued other treasury shares for $7,000 less than their cost and charged the shortfall to retained
-  earnings. Before Year 2, Hallam had no paid-in capital from treasury stock transactions. What additional
-  paid-in capital should the corrected statement report at December 31, Year 2?'
+  of 36,000 shares when the market price was $16 per share and recorded it at the market price; state
+  law requires par value to be capitalized for stock dividends; and (4) in November, it reissued other
+  treasury shares for $7,000 less than their cost and charged the shortfall to retained earnings. Before
+  Year 2, Hallam had no paid-in capital from treasury stock transactions. What additional paid-in capital
+  should the corrected statement report at December 31, Year 2?'
 choices:
 - id: A
-  text: $2,123,000
-  rationale: Leaves the $18,000 excess on reissuing treasury shares in income. A company doesn't report
-    gains on its own shares; the excess is paid-in capital from treasury stock.
+  text: $2,130,000
+  rationale: Leaves the $18,000 excess on reissuing treasury shares in income, so it finds no paid-in
+    capital from treasury stock and leaves the $7,000 shortfall in retained earnings. A company doesn't
+    report gains on its own shares; the excess is paid-in capital from treasury stock, and the shortfall
+    is charged against it.
 - id: B
   text: $2,141,000
   rationale: Correct. $2,150,000 + $520,000 − $540,000 + $18,000 − $7,000.
@@ -53,11 +55,10 @@ variants:
     stock; (2) in March, Ibbotson reissued treasury shares, which it carries at cost, for $12,000 more
     than their cost and credited the excess to a gain in net income; (3) in May, Ibbotson distributed
     a 30% stock dividend of 27,000 shares when the market price was $21 per share and recorded it at the
-    market price, although state law requires only par value to be capitalized for a stock dividend of
-    that size; and (4) in November, it reissued other treasury shares for $5,000 less than their cost
-    and charged the shortfall to retained earnings. Before Year 2, Ibbotson had no paid-in capital from
-    treasury stock transactions. What additional paid-in capital should the corrected statement report
-    at December 31, Year 2?'
+    market price; state law requires par value to be capitalized for stock dividends; and (4) in November,
+    it reissued other treasury shares for $5,000 less than their cost and charged the shortfall to retained
+    earnings. Before Year 2, Ibbotson had no paid-in capital from treasury stock transactions. What additional
+    paid-in capital should the corrected statement report at December 31, Year 2?'
   choices:
   - id: A
     text: $974,000
@@ -88,20 +89,22 @@ variants:
     60,000 shares of $1 par common stock for $11 per share and credited the entire proceeds to common
     stock; (2) in March, Jagoe reissued treasury shares, which it carries at cost, for $26,000 more than
     their cost and credited the excess to a gain in net income; (3) in May, Jagoe distributed a 30% stock
-    dividend of 45,000 shares when the market price was $13 per share and recorded it at the market price,
-    although state law requires only par value to be capitalized for a stock dividend of that size; and
-    (4) in November, it reissued other treasury shares for $9,000 less than their cost and charged the
-    shortfall to retained earnings. Before Year 2, Jagoe had no paid-in capital from treasury stock transactions.
-    What additional paid-in capital should the corrected statement report at December 31, Year 2?'
+    dividend of 45,000 shares when the market price was $13 per share and recorded it at the market price;
+    state law requires par value to be capitalized for stock dividends; and (4) in November, it reissued
+    other treasury shares for $9,000 less than their cost and charged the shortfall to retained earnings.
+    Before Year 2, Jagoe had no paid-in capital from treasury stock transactions. What additional paid-in
+    capital should the corrected statement report at December 31, Year 2?'
   choices:
   - id: A
     text: $2,737,000
     rationale: Leaves the whole issuance in common stock. Only par value ($60,000) belongs there; the
       $600,000 received above par is additional paid-in capital.
   - id: B
-    text: $3,311,000
-    rationale: Leaves the $26,000 excess on reissuing treasury shares in income. A company doesn't report
-      gains on its own shares; the excess is paid-in capital from treasury stock.
+    text: $3,320,000
+    rationale: Leaves the $26,000 excess on reissuing treasury shares in income, so it finds no paid-in
+      capital from treasury stock and leaves the $9,000 shortfall in retained earnings. A company doesn't
+      report gains on its own shares; the excess is paid-in capital from treasury stock, and the shortfall
+      is charged against it.
   - id: C
     text: $3,337,000
     rationale: Correct. $3,260,000 + $600,000 − $540,000 + $26,000 − $9,000.
@@ -123,20 +126,21 @@ variants:
     stock; (2) in March, Kitching reissued treasury shares, which it carries at cost, for $9,000 more
     than their cost and credited the excess to a gain in net income; (3) in May, Kitching distributed
     a 30% stock dividend of 18,000 shares when the market price was $27 per share and recorded it at the
-    market price, although state law requires only par value to be capitalized for a stock dividend of
-    that size; and (4) in November, it reissued other treasury shares for $4,000 less than their cost
-    and charged the shortfall to retained earnings. Before Year 2, Kitching had no paid-in capital from
-    treasury stock transactions. What additional paid-in capital should the corrected statement report
-    at December 31, Year 2?'
+    market price; state law requires par value to be capitalized for stock dividends; and (4) in November,
+    it reissued other treasury shares for $4,000 less than their cost and charged the shortfall to retained
+    earnings. Before Year 2, Kitching had no paid-in capital from treasury stock transactions. What additional
+    paid-in capital should the corrected statement report at December 31, Year 2?'
   choices:
   - id: A
     text: $589,000
     rationale: Leaves the whole issuance in common stock. Only par value ($75,000) belongs there; the
       $285,000 received above par is additional paid-in capital.
   - id: B
-    text: $865,000
-    rationale: Leaves the $9,000 excess on reissuing treasury shares in income. A company doesn't report
-      gains on its own shares; the excess is paid-in capital from treasury stock.
+    text: $869,000
+    rationale: Leaves the $9,000 excess on reissuing treasury shares in income, so it finds no paid-in
+      capital from treasury stock and leaves the $4,000 shortfall in retained earnings. A company doesn't
+      report gains on its own shares; the excess is paid-in capital from treasury stock, and the shortfall
+      is charged against it.
   - id: C
     text: $874,000
     rationale: Correct. $980,000 + $285,000 − $396,000 + $9,000 − $4,000.
