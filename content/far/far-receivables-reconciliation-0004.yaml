@@ -15,8 +15,8 @@ review:
 stem: 'At December 31, Allendale Supply''s accounts receivable subledger totals $871,830, and the general
   ledger control account shows $897,700. The controller traces the difference and finds: a customer''s
   $4,600 check, returned by the bank in December marked NSF, was charged back to the customer''s subledger
-  account, but the clerk''s journal entry recorded only the reduction of cash, debiting a suspense expense
-  account rather than accounts receivable; customers took $7,350 of sales discounts in December, which
+  account, but the clerk''s journal entry recorded only the reduction of cash, debiting miscellaneous
+  expense rather than accounts receivable; customers took $7,350 of sales discounts in December, which
   were recorded in the discount column of the cash receipts journal and posted with its totals, while
   the clerk credited each customer''s subledger account only for the cash received; a customer''s $38,000
   past-due account was converted in December into a six-month note receivable, which the clerk recorded
@@ -49,8 +49,8 @@ variants:
 - stem: 'At December 31, Blanchland Supply''s accounts receivable subledger totals $648,540, and the general
     ledger control account shows $666,800. The controller traces the difference and finds: a customer''s
     $3,400 check, returned by the bank in December marked NSF, was charged back to the customer''s subledger
-    account, but the clerk''s journal entry recorded only the reduction of cash, debiting a suspense expense
-    account rather than accounts receivable; customers took $5,480 of sales discounts in December, which
+    account, but the clerk''s journal entry recorded only the reduction of cash, debiting miscellaneous
+    expense rather than accounts receivable; customers took $5,480 of sales discounts in December, which
     were recorded in the discount column of the cash receipts journal and posted with its totals, while
     the clerk credited each customer''s subledger account only for the cash received; a customer''s $27,500
     past-due account was converted in December into a six-month note receivable, which the clerk recorded
@@ -84,15 +84,14 @@ variants:
 - stem: 'At December 31, Bellingham Supply''s accounts receivable subledger totals $1,148,510, and the
     general ledger control account shows $1,181,400. The controller traces the difference and finds: a
     customer''s $6,200 check, returned by the bank in December marked NSF, was charged back to the customer''s
-    subledger account, but the clerk''s journal entry recorded only the reduction of cash, debiting a
-    suspense expense account rather than accounts receivable; customers took $9,640 of sales discounts
-    in December, which were recorded in the discount column of the cash receipts journal and posted with
-    its totals, while the clerk credited each customer''s subledger account only for the cash received;
-    a customer''s $49,000 past-due account was converted in December into a six-month note receivable,
-    which the clerk recorded by closing the customer''s subledger account and opening a note receivable
-    record, without a journal entry; and a $16,580 sales invoice was posted to the customer''s subledger
-    account as $16,850. What net adjustment should Bellingham make to its accounts receivable control
-    account?'
+    subledger account, but the clerk''s journal entry recorded only the reduction of cash, debiting miscellaneous
+    expense rather than accounts receivable; customers took $9,640 of sales discounts in December, which
+    were recorded in the discount column of the cash receipts journal and posted with its totals, while
+    the clerk credited each customer''s subledger account only for the cash received; a customer''s $49,000
+    past-due account was converted in December into a six-month note receivable, which the clerk recorded
+    by closing the customer''s subledger account and opening a note receivable record, without a journal
+    entry; and a $16,580 sales invoice was posted to the customer''s subledger account as $16,850. What
+    net adjustment should Bellingham make to its accounts receivable control account?'
   choices:
   - id: A
     text: $32,890 decrease
@@ -120,8 +119,8 @@ variants:
 - stem: 'At December 31, Seahouses Supply''s accounts receivable subledger totals $483,290, and the general
     ledger control account shows $497,300. The controller traces the difference and finds: a customer''s
     $2,600 check, returned by the bank in December marked NSF, was charged back to the customer''s subledger
-    account, but the clerk''s journal entry recorded only the reduction of cash, debiting a suspense expense
-    account rather than accounts receivable; customers took $4,120 of sales discounts in December, which
+    account, but the clerk''s journal entry recorded only the reduction of cash, debiting miscellaneous
+    expense rather than accounts receivable; customers took $4,120 of sales discounts in December, which
     were recorded in the discount column of the cash receipts journal and posted with its totals, while
     the clerk credited each customer''s subledger account only for the cash received; a customer''s $21,000
     past-due account was converted in December into a six-month note receivable, which the clerk recorded

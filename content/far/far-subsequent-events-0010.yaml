@@ -24,21 +24,21 @@ stem: 'Eskdale Homewares''s draft December 31, Year 1, balance sheet reports tot
   Eskdale report at December 31, Year 1?'
 choices:
 - id: A
-  text: $3,292,000
-  rationale: Removes the injury suit from liabilities altogether because it was settled. The $185,000
-    settlement isn't payable until April, so it is still owed at December 31.
-- id: B
   text: $3,405,000
   rationale: Leaves out the $72,000 of warranty repairs. The defect existed in units sold before year-end,
     so the February testing gives evidence about a liability that existed at December 31.
-- id: C
+- id: B
   text: $3,477,000
   rationale: Correct. $3,460,000 − ($240,000 − $185,000) + $72,000.
-- id: D
+- id: C
   text: $3,532,000
   rationale: Leaves the $240,000 accrual for the Year 1 injury suit unchanged. The settlement gives better
     evidence of the liability that existed at year-end, so the accrual is reduced to the $185,000 settlement.
-answer: C
+- id: D
+  text: $3,627,000
+  rationale: Adds the $150,000 dividend declared on February 5. A dividend becomes a liability when declared,
+    which was after year-end; it is disclosed, not recognized.
+answer: B
 explanation: 'Events that give more evidence about conditions at December 31 are recognized: the settlement
   shows the Year 1 injury suit was worth $185,000, not $240,000 (− $55,000), and the defect existed in
   heaters sold before year-end, so the warranty liability rises by $72,000. The January injury, the dividend

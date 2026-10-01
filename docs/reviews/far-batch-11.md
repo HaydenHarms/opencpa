@@ -47,7 +47,7 @@ The batch takes a second item on six Area III Remembering and Understanding task
 
 - Numeric: six version-0 keys are on D (`balance-sheet-0008`, `income-statement-0007`, `nfp-statement-of-activities-0003`, `cash-flows-0015`, `accrued-liabilities-0002`, `cash-bank-reconciliation-0005`) and four on A (`receivables-credit-losses-0003`, `investments-htm-0002`, `receivables-reconciliation-0004`, `ppe-rollforward-0004`). In each, the variants bring in a distractor on the other side of the key, so the letter moves.
 - Word items (rotated by `finalize()`): `contingencies-0011` A, `revenue-five-step-0002` B, `nfp-promises-to-give-0002` C, `uncertain-tax-positions-0002` D, `lessee-residual-value-0001` A, `lessee-classification-0002` B.
-- Overall: A 6, B 6, C 6, D 7.
+- Overall: A 6, B 7, C 7, D 5 (after the gate fixes; A 6, B 6, C 6, D 7 as built).
 - Across all 82 versions: A 20, B 30, C 20, D 12 (after the blind-verifier fixes). Nine families have only one natural error on the low side of the key (for example, a forgotten NSF charge-back is the only error that lowers the receivables adjustment), so their versions alternate between A and B; the D keys come from the families with three or more low-side errors.
 
 | Item | Key letters (version 0, variants 1–3) |
@@ -59,18 +59,18 @@ The batch takes a second item on six Area III Remembering and Understanding task
 | `nfp-statement-of-activities-0003` | D A C B |
 | `changes-in-equity-0006` | B A B A |
 | `cash-flows-0014` | B A B B |
-| `cash-flows-0015` | D C B C |
+| `cash-flows-0015` | C C B C |
 | `receivables-credit-losses-0003` | A B B B |
 | `ppe-lump-sum-0001` | C D C D |
 | `investments-htm-0002` | A C B A |
-| `accrued-liabilities-0002` | D A D D |
+| `accrued-liabilities-0002` | C A D D |
 | `cash-bank-reconciliation-0005` | D A C C |
 | `cash-unreconciled-0003` | B A C A |
 | `receivables-reconciliation-0004` | A B B B |
 | `inventory-rollforward-0004` | B A B B |
 | `ppe-rollforward-0004` | A B B B |
 | `accounting-errors-0007` | C D B C |
-| `subsequent-events-0010` | C A B A |
+| `subsequent-events-0010` | B A B A |
 
 ## Process
 
@@ -108,4 +108,18 @@ One verifier solved all 82 versions blind, and its answers matched the key on ev
 
 ## Review gate
 
-_Placeholder for the lead: stratified sample, result and fixes._
+**Stratified gate** (tactic 4): 21 of 25 items. Nineteen were reviewed in full: the 10 Analysis items; the two items on new templates (`lessee-residual-value-0001`, `ppe-lump-sum-0001`); the items on recently changed standards (`receivables-credit-losses-0003` for ASU 2016-13 and 2025-05, `nfp-promises-to-give-0002` for ASU 2018-08, `nfp-financial-position-0004` and `nfp-statement-of-activities-0003` for ASU 2016-14, and `lessee-classification-0002` for ASU 2016-02); and the two items changed after blind verification (`accrued-liabilities-0002`, `income-statement-0007`). Two were drawn at random from the other six (seed 20261003): `cash-flows-0013` and `contingencies-0011`. Not gated: `revenue-five-step-0002`, `uncertain-tax-positions-0002`, `balance-sheet-0008`, `investments-htm-0002`.
+
+**Result: passed.** The 21 gated items average **84.2%** estimated pass likelihood (batch 10: 84.6%). 19 are exam-ready, 2 need minor revision and none need major revision. Every key is correct in all the versions the gate solved. Both sampled items were exam-ready, so escalation was not triggered. The gate checked ASU 2025-05 against the FASB text: stating that the entity is a public business entity correctly rules out the additional election that is available only to entities other than PBEs.
+
+| Item | Gate | Fix |
+| --- | --- | --- |
+| `far-cash-flows-0015` (78%) | Version 0 had no distractor for the item's main twist: payables settled by issuing a note, treated as paid in cash. Only variants 1 and 2 had one. | Version 0 swaps "inventory change ignored" ($2,718,000) for "note settlement treated as cash" ($2,869,000). Choices are $2,652,000 / $2,738,000 / **$2,784,000** / $2,869,000, so the key moves from D to C. |
+| `far-subsequent-events-0010` (80%) | Version 0's distractors tested only the recognized events, and A ($3,292,000) was weak. | Version 0 swaps "suit removed altogether" for "February dividend accrued" ($3,627,000). Choices are $3,405,000 / **$3,477,000** / $3,532,000 / $3,627,000, so the key moves from C to B. |
+| Optional, applied | `accrued-liabilities-0002` version 0 lacked the classic error of computing sales tax on gross receipts; `receivables-reconciliation-0004` said "a suspense expense account"; `nfp-promises-to-give-0002` cited 958-605-50 for the conditional-promise disclosure. | Version 0 swaps "vacation left out" for "tax at 7% of gross receipts" ($150,798), so the key moves from D to C, between two distractors. The receivables item now reads "debiting miscellaneous expense". The NFP reference is now Subtopic ASC 958-310-50. |
+
+**Not changed:** the gate called `cash-flows-0015`'s Analysis tag borderline but accepted it under I.A.5d ("derive the impact of transactions on the statement of cash flows"), which the blueprint marks Analysis.
+
+**Gate suggestion for the pipeline** (open): version 0 must include a distractor for the item's central twist, not only the variants; a builder can enforce this by requiring that error in parameter set 0's `use`.
+
+**Blind re-check after the gate fixes:** a fresh verifier re-solved version 0 of the three items whose distractors changed and all four versions of `receivables-reconciliation-0004` (7 versions). It matched every key and traced every distractor to a single error, with no required fixes.

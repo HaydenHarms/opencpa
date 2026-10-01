@@ -24,21 +24,21 @@ stem: Mickley Hardware Co.'s December, Year 1, records show the following, none 
   Mickley report at December 31, Year 1, for the other liabilities arising from these items?
 choices:
 - id: A
-  text: $106,358
-  rationale: Leaves out the $41,500 of vested vacation pay. Compensation for vested absences that relates
-    to services already rendered is accrued when earned.
-- id: B
   text: $119,958
   rationale: Leaves out the $27,900 of income tax withheld. Amounts withheld from employees are owed to
     the government until Mickley remits them.
-- id: C
+- id: B
   text: $133,629
   rationale: Leaves out Mickley's matching $14,229 of payroll taxes. The employer's share is an expense
     and a liability until it is remitted.
-- id: D
+- id: C
   text: $147,858
   rationale: Correct. $42,000 + $27,900 + 2 × $14,229 + $41,500 + $8,000.
-answer: D
+- id: D
+  text: $150,798
+  rationale: 'Computes sales tax as 7% of total receipts. The receipts include the tax, so the tax is
+    7/107 of them: $42,000.'
+answer: C
 explanation: 'Sales tax payable = $642,000 × 7/107 = $42,000. Payroll liabilities = $27,900 income tax
   withheld + $14,229 employees'' share + $14,229 employer''s share = $56,358; the net pay was paid. Vacation
   pay that vests and relates to services already rendered is accrued: $41,500. Interest payable = $240,000

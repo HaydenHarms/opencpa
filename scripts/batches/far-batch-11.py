@@ -457,7 +457,7 @@ def ar_recon_adjust(p):
     key = (dec(adj), f"Correct. − {m(p['N'])} note + {m(p['n'])} NSF check; the control account becomes {m(C)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""At December 31, {co}'s accounts receivable subledger totals {m(Sub)}, and the general ledger control account shows {m(GL)}. The controller traces the difference and finds: a customer's {m(p['n'])} check, returned by the bank in December marked NSF, was charged back to the customer's subledger account, but the clerk's journal entry recorded only the reduction of cash, debiting a suspense expense account rather than accounts receivable; customers took {m(p['sd'])} of sales discounts in December, which were recorded in the discount column of the cash receipts journal and posted with its totals, while the clerk credited each customer's subledger account only for the cash received; a customer's {m(p['N'])} past-due account was converted in December into a six-month note receivable, which the clerk recorded by closing the customer's subledger account and opening a note receivable record, without a journal entry; and a {m(p['X'])} sales invoice was posted to the customer's subledger account as {m(p['Y'])}. What net adjustment should {s} make to its accounts receivable control account?""",
+        f"""At December 31, {co}'s accounts receivable subledger totals {m(Sub)}, and the general ledger control account shows {m(GL)}. The controller traces the difference and finds: a customer's {m(p['n'])} check, returned by the bank in December marked NSF, was charged back to the customer's subledger account, but the clerk's journal entry recorded only the reduction of cash, debiting miscellaneous expense rather than accounts receivable; customers took {m(p['sd'])} of sales discounts in December, which were recorded in the discount column of the cash receipts journal and posted with its totals, while the clerk credited each customer's subledger account only for the cash received; a customer's {m(p['N'])} past-due account was converted in December into a six-month note receivable, which the clerk recorded by closing the customer's subledger account and opening a note receivable record, without a journal entry; and a {m(p['X'])} sales invoice was posted to the customer's subledger account as {m(p['Y'])}. What net adjustment should {s} make to its accounts receivable control account?""",
         choices, ans,
         f"""Work out which record each item affects. The NSF charge-back is in the subledger but not the control account: + {m(p['n'])}. The discounts are in the control account but not the subledger: the subledger needs − {m(p['sd'])}. The note conversion is in the subledger but not the control account: − {m(p['N'])}. The invoice error is in the subledger only: − {m(p['Y'] - p['X'])}. Control account: {m(GL)} + {m(p['n'])} − {m(p['N'])} = {m(C)}, a net decrease of {m(adj)}. Subledger: {m(Sub)} − {m(p['sd'])} − {m(p['Y'] - p['X'])} = {m(C)}, so the records agree.""",
     )
@@ -612,7 +612,7 @@ FAMILIES = [
     ("far-cash-flows-0015", A1, "Statement of cash flows", AN,
      ["ASC 230-10-45 (direct method: cash paid to suppliers)", "ASC 230-10-50-3 (noncash investing and financing activities)", "ASC 330-10-35 (inventory write-down to net realizable value)"],
      suppliers_paid, [
-        dict(co="Craster Trading Co.", C=2840000, wd=46000, I0=512000, I1=578000, P0=294000, P1=331000, nt=85000, use=["wd", "inv_sign", "no_inv"]),
+        dict(co="Craster Trading Co.", C=2840000, wd=46000, I0=512000, I1=578000, P0=294000, P1=331000, nt=85000, use=["wd", "inv_sign", "no_note"]),
         dict(co="Dilston Trading Co.", C=2115000, wd=34000, I0=381000, I1=430000, P0=219000, P1=247000, nt=63000, use=["wd", "no_inv", "no_note"]),
         dict(co="Eglingham Trading Co.", C=3560000, wd=58000, I0=642000, I1=725000, P0=368000, P1=415000, nt=107000, use=["inv_sign", "no_note", "ap_sign"]),
         dict(co="Elwick Trading Co.", C=1470000, wd=24000, I0=265000, I1=299000, P0=152000, P1=172000, nt=44000, use=["inv_sign", "no_inv", "ap_sign"]),
@@ -645,7 +645,7 @@ FAMILIES = [
     ("far-accrued-liabilities-0002", A2, "Payables and accrued liabilities", AP,
      ["ASC 405-10 (liabilities, including sales taxes collected for a taxing authority)", "ASC 710-10-25 (compensated absences: vested vacation pay)", "Payroll accounting practice (amounts withheld from employees; employer payroll taxes)", "ASC 835-10 (interest)"],
      accrued, [
-        dict(co="Mickley Hardware Co.", Rt=642000, t=7, G=186000, wf=27900, v=41500, N=240000, i=8, nd="August 1", mo=5, use=["no_match", "no_wf", "no_vac"]),
+        dict(co="Mickley Hardware Co.", Rt=642000, t=7, G=186000, wf=27900, v=41500, N=240000, i=8, nd="August 1", mo=5, use=["no_match", "no_wf", "tax_gross"]),
         dict(co="Prudhoe Hardware Co.", Rt=481500, t=7, G=142000, wf=21300, v=31800, N=180000, i=9, nd="September 1", mo=4, use=["tax_gross", "net_pay", "int_full"]),
         dict(co="Healey Hardware Co.", Rt=848000, t=6, G=244000, wf=36600, v=54400, N=300000, i=8, nd="July 1", mo=6, use=["no_vac", "no_int", "no_wf"]),
         dict(co="Ninebanks Hardware Co.", Rt=349800, t=6, G=104000, wf=15600, v=23300, N=150000, i=10, nd="October 1", mo=3, use=["no_wf", "no_int", "no_match"]),
@@ -703,7 +703,7 @@ FAMILIES = [
     ("far-subsequent-events-0010", A3, "Subsequent events", AN,
      ["ASC 855-10-25 (recognized and nonrecognized subsequent events)", "ASC 855-10-55 (examples: settlement of litigation; events after the balance sheet date)", "ASC 460-10 (product warranties)"],
      se_liabilities, [
-        dict(co="Eskdale Homewares", L=3460000, a=240000, sx=185000, w=72000, jd=9, x=60000, Dv=150000, Bl=500000, use=["warr_none", "settled_out", "keep"]),
+        dict(co="Eskdale Homewares", L=3460000, a=240000, sx=185000, w=72000, jd=9, x=60000, Dv=150000, Bl=500000, use=["warr_none", "keep", "div"]),
         dict(co="Hawkshead Homewares", L=2580000, a=180000, sx=139000, w=54000, jd=14, x=45000, Dv=110000, Bl=375000, use=["div", "new_suit", "loan"]),
         dict(co="Loweswater Homewares", L=4720000, a=330000, sx=254000, w=98000, jd=7, x=82000, Dv=205000, Bl=680000, use=["warr_none", "div", "keep"]),
         dict(co="Mardale Homewares", L=1940000, a=135000, sx=104000, w=41000, jd=17, x=46000, Dv=85000, Bl=280000, use=["keep", "new_suit", "div"]),
@@ -730,7 +730,7 @@ WORD_ITEMS = [
         "B",
         """Step 1 of the five-step model identifies a contract with a customer. Under ASC 606-10-25-1, a contract exists only if the parties have approved it (in writing, orally or by customary practice) and are committed to perform, each party's rights and the payment terms can be identified, the contract has commercial substance, and it is probable the entity will collect substantially all of the consideration to which it will be entitled. A customer that is unlikely to pay fails the collectibility criterion. Variable consideration and performance spread over several periods are dealt with in later steps."""),
     mcq("far-nfp-promises-to-give-0002", A3, "Revenue recognition", RU,
-        ["ASC 958-605-25 (conditional promises to give: barrier and right of return or release, as amended by ASU 2018-08)", "ASC 958-605-50 (disclosure of conditional promises to give)"],
+        ["ASC 958-605-25 (conditional promises to give: barrier and right of return or release, as amended by ASU 2018-08)", "ASC 958-310-50 (disclosure of conditional promises to give)"],
         """In October, Year 1, a foundation promised Chatton Literacy Center, a not-for-profit entity, $150,000 for its tutoring program, to be paid only if Chatton raises $150,000 in new gifts from other donors by June 30, Year 2; if Chatton falls short, the foundation will pay nothing. By December 31, Year 1, Chatton had raised $95,000 toward the match, and its development director is unsure whether the rest will come in by the deadline. How should Chatton report the foundation's promise in its Year 1 financial statements?""",
         [("As $150,000 of contribution revenue with donor restrictions, because the gift is for the tutoring program", "A purpose restriction limits how a gift is used once it is recognized. This promise depends on a barrier (the match) and releases the foundation if it isn't met, so it is conditional and isn't recognized yet."),
          ("As a $150,000 receivable, offset by a refundable advance until the match is reached", "A refundable advance arises only when cash is received before a condition is met. Chatton has received nothing, so there is no asset or liability to record."),

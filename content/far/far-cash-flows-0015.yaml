@@ -25,18 +25,18 @@ choices:
   rationale: Subtracts the $66,000 increase in inventory from cost of goods sold. Inventory rose, so purchases
     exceeded cost of goods sold.
 - id: B
-  text: $2,718,000
-  rationale: Starts from cost of goods sold without adjusting for the $66,000 increase in inventory. Purchases
-    = cost of goods sold + the increase in inventory.
-- id: C
   text: $2,738,000
   rationale: Deducts the $46,000 write-down as a noncash part of cost of goods sold. Ending inventory
     is already net of the write-down, so cost of goods sold + ending inventory − beginning inventory gives
     purchases without any further adjustment.
-- id: D
+- id: C
   text: $2,784,000
   rationale: Correct. Purchases $2,906,000 − $37,000 increase in payables − $85,000 settled by note.
-answer: D
+- id: D
+  text: $2,869,000
+  rationale: Treats the $85,000 of payables settled by issuing a note as paid in cash. The note replaced
+    the payable without cash changing hands; it is a noncash transaction.
+answer: C
 explanation: 'Purchases = cost of goods sold + ending inventory − beginning inventory = $2,840,000 + $578,000
   − $512,000 = $2,906,000. The write-down is in both cost of goods sold and the reduced ending inventory,
   so this identity already accounts for it. Accounts payable: $294,000 + $2,906,000 − payments − $85,000
