@@ -1,0 +1,137 @@
+id: far-accrued-liabilities-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 405-10 (liabilities, including sales taxes collected for a taxing authority)
+  - 'ASC 710-10-25 (compensated absences: vested vacation pay)'
+  - Payroll accounting practice (amounts withheld from employees; employer payroll taxes)
+  - ASC 835-10 (interest)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Mickley Hardware Co.'s December, Year 1, records show the following, none of which had been paid
+  or remitted at December 31 unless stated. Cash register receipts for December totaled $642,000, including
+  the 7% sales tax charged on every sale. The payroll for the last half of December, paid to employees
+  on December 31, had gross wages of $186,000, from which Mickley withheld $27,900 of federal income tax
+  and $14,229 of employees' social security and Medicare taxes (7.65%); Mickley owes a matching 7.65%
+  of gross wages. Employees had earned $41,500 of vacation pay that vests and will be paid in Year 2.
+  On August 1, Year 1, Mickley signed a one-year, 8% note payable for $240,000, with principal and interest
+  due at maturity. Mickley reports the note's principal separately as a note payable. What total should
+  Mickley report at December 31, Year 1, for the other liabilities arising from these items?
+choices:
+- id: A
+  text: $106,358
+  rationale: Leaves out the $41,500 of vested vacation pay. Compensation for vested absences that relates
+    to services already rendered is accrued when earned.
+- id: B
+  text: $119,958
+  rationale: Leaves out the $27,900 of income tax withheld. Amounts withheld from employees are owed to
+    the government until Mickley remits them.
+- id: C
+  text: $133,629
+  rationale: Leaves out Mickley's matching $14,229 of payroll taxes. The employer's share is an expense
+    and a liability until it is remitted.
+- id: D
+  text: $147,858
+  rationale: Correct. $42,000 + $27,900 + 2 × $14,229 + $41,500 + $8,000.
+answer: D
+explanation: 'Sales tax payable = $642,000 × 7/107 = $42,000. Payroll liabilities = $27,900 income tax
+  withheld + $14,229 employees'' share + $14,229 employer''s share = $56,358; the net pay was paid. Vacation
+  pay that vests and relates to services already rendered is accrued: $41,500. Interest payable = $240,000
+  × 8% × 5/12 = $8,000. Total = $147,858.'
+variants:
+- stem: Prudhoe Hardware Co.'s December, Year 1, records show the following, none of which had been paid
+    or remitted at December 31 unless stated. Cash register receipts for December totaled $481,500, including
+    the 7% sales tax charged on every sale. The payroll for the last half of December, paid to employees
+    on December 31, had gross wages of $142,000, from which Prudhoe withheld $21,300 of federal income
+    tax and $10,863 of employees' social security and Medicare taxes (7.65%); Prudhoe owes a matching
+    7.65% of gross wages. Employees had earned $31,800 of vacation pay that vests and will be paid in
+    Year 2. On September 1, Year 1, Prudhoe signed a one-year, 9% note payable for $180,000, with principal
+    and interest due at maturity. Prudhoe reports the note's principal separately as a note payable. What
+    total should Prudhoe report at December 31, Year 1, for the other liabilities arising from these items?
+  choices:
+  - id: A
+    text: $111,726
+    rationale: Correct. $31,500 + $21,300 + 2 × $10,863 + $31,800 + $5,400.
+  - id: B
+    text: $113,931
+    rationale: 'Computes sales tax as 7% of total receipts. The receipts include the tax, so the tax is
+      7/107 of them: $31,500.'
+  - id: C
+    text: $122,526
+    rationale: Accrues a full year's interest on the note. It was signed on September 1, so only 4 months
+      of interest have accrued.
+  - id: D
+    text: $221,563
+    rationale: Includes the $109,837 of net pay. The employees were paid on December 31; only the amounts
+      withheld from them and the employer's taxes remain owed.
+  answer: A
+  explanation: 'Sales tax payable = $481,500 × 7/107 = $31,500. Payroll liabilities = $21,300 income tax
+    withheld + $10,863 employees'' share + $10,863 employer''s share = $43,026; the net pay was paid.
+    Vacation pay that vests and relates to services already rendered is accrued: $31,800. Interest payable
+    = $180,000 × 9% × 4/12 = $5,400. Total = $111,726.'
+- stem: Healey Hardware Co.'s December, Year 1, records show the following, none of which had been paid
+    or remitted at December 31 unless stated. Cash register receipts for December totaled $848,000, including
+    the 6% sales tax charged on every sale. The payroll for the last half of December, paid to employees
+    on December 31, had gross wages of $244,000, from which Healey withheld $36,600 of federal income
+    tax and $18,666 of employees' social security and Medicare taxes (7.65%); Healey owes a matching 7.65%
+    of gross wages. Employees had earned $54,400 of vacation pay that vests and will be paid in Year 2.
+    On July 1, Year 1, Healey signed a one-year, 8% note payable for $300,000, with principal and interest
+    due at maturity. Healey reports the note's principal separately as a note payable. What total should
+    Healey report at December 31, Year 1, for the other liabilities arising from these items?
+  choices:
+  - id: A
+    text: $133,932
+    rationale: Leaves out the $54,400 of vested vacation pay. Compensation for vested absences that relates
+      to services already rendered is accrued when earned.
+  - id: B
+    text: $151,732
+    rationale: Leaves out the $36,600 of income tax withheld. Amounts withheld from employees are owed
+      to the government until Healey remits them.
+  - id: C
+    text: $176,332
+    rationale: 'Accrues no interest on the note because nothing is payable until maturity. Interest accrues
+      with time: 6 months ($12,000) had accrued by December 31.'
+  - id: D
+    text: $188,332
+    rationale: Correct. $48,000 + $36,600 + 2 × $18,666 + $54,400 + $12,000.
+  answer: D
+  explanation: 'Sales tax payable = $848,000 × 6/106 = $48,000. Payroll liabilities = $36,600 income tax
+    withheld + $18,666 employees'' share + $18,666 employer''s share = $73,932; the net pay was paid.
+    Vacation pay that vests and relates to services already rendered is accrued: $54,400. Interest payable
+    = $300,000 × 8% × 6/12 = $12,000. Total = $188,332.'
+- stem: Ninebanks Hardware Co.'s December, Year 1, records show the following, none of which had been
+    paid or remitted at December 31 unless stated. Cash register receipts for December totaled $349,800,
+    including the 6% sales tax charged on every sale. The payroll for the last half of December, paid
+    to employees on December 31, had gross wages of $104,000, from which Ninebanks withheld $15,600 of
+    federal income tax and $7,956 of employees' social security and Medicare taxes (7.65%); Ninebanks
+    owes a matching 7.65% of gross wages. Employees had earned $23,300 of vacation pay that vests and
+    will be paid in Year 2. On October 1, Year 1, Ninebanks signed a one-year, 10% note payable for $150,000,
+    with principal and interest due at maturity. Ninebanks reports the note's principal separately as
+    a note payable. What total should Ninebanks report at December 31, Year 1, for the other liabilities
+    arising from these items?
+  choices:
+  - id: A
+    text: $62,762
+    rationale: Leaves out the $15,600 of income tax withheld. Amounts withheld from employees are owed
+      to the government until Ninebanks remits them.
+  - id: B
+    text: $70,406
+    rationale: Leaves out Ninebanks's matching $7,956 of payroll taxes. The employer's share is an expense
+      and a liability until it is remitted.
+  - id: C
+    text: $74,612
+    rationale: 'Accrues no interest on the note because nothing is payable until maturity. Interest accrues
+      with time: 3 months ($3,750) had accrued by December 31.'
+  - id: D
+    text: $78,362
+    rationale: Correct. $19,800 + $15,600 + 2 × $7,956 + $23,300 + $3,750.
+  answer: D
+  explanation: 'Sales tax payable = $349,800 × 6/106 = $19,800. Payroll liabilities = $15,600 income tax
+    withheld + $7,956 employees'' share + $7,956 employer''s share = $31,512; the net pay was paid. Vacation
+    pay that vests and relates to services already rendered is accrued: $23,300. Interest payable = $150,000
+    × 10% × 3/12 = $3,750. Total = $78,362.'

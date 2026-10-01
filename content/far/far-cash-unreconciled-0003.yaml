@@ -1,0 +1,143 @@
+id: far-cash-unreconciled-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice (unreconciled differences; recording errors; unrecorded bank charges;
+    omitted outstanding checks)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Knarsdale Co.''s bookkeeper reconciled the September 30 bank statement as follows: bank balance
+  $94,360, plus deposits in transit $8,420, less outstanding checks $15,730, gives $87,050. The general
+  ledger showed $89,730, so the bookkeeper recorded the $2,680 difference as miscellaneous expense, bringing
+  the ledger to $87,050. The controller reverses that entry and investigates. She finds: check no. 6118,
+  a $2,760 payment to a supplier that cleared the bank in September, was entered in the cash receipts
+  journal instead of the cash disbursements journal; a customer''s $4,850 check, deposited and credited
+  by the bank on September 14, was recorded in the cash receipts journal as $4,085; check no. 6194 for
+  $3,915, issued and recorded on September 28, is missing from the bookkeeper''s list of outstanding checks
+  and hasn''t cleared the bank; and on September 30 the bank deducted a $1,840 monthly loan payment under
+  Knarsdale''s automatic payment arrangement, which Knarsdale hasn''t recorded. What cash balance should
+  Knarsdale report at September 30?'
+choices:
+- id: A
+  text: $81,605
+  rationale: Deducts the $765 difference on the deposit. It was recorded at $4,085 but was $4,850, so
+    the books understate cash.
+- id: B
+  text: $83,135
+  rationale: Correct. $94,360 + $8,420 − ($15,730 + $3,915) = $89,730 − $5,520 + $765 − $1,840.
+- id: C
+  text: $85,895
+  rationale: 'Corrects the check entered as a receipt by only $2,760. Recording a $2,760 payment as a
+    receipt overstated cash by twice its amount: the receipt must be removed and the payment recorded.'
+- id: D
+  text: $87,050
+  rationale: Accepts the ledger after the plug. That balance only matches the bookkeeper's adjusted bank
+    balance, which leaves out check no. 6194 for $3,915, still outstanding.
+answer: B
+explanation: 'Bank side: the omitted outstanding check is deducted: $94,360 + $8,420 − $15,730 − $3,915
+  = $83,135. Book side, after reversing the plug: $89,730 − $5,520 (remove the $2,760 recorded as a receipt
+  and record it as a payment) + $765 (the deposit was $4,850, not $4,085) − $1,840 loan payment = $83,135.
+  The $2,680 plug hid these four items.'
+variants:
+- stem: 'Kirkhaugh Co.''s bookkeeper reconciled the September 30 bank statement as follows: bank balance
+    $67,250, plus deposits in transit $6,130, less outstanding checks $11,480, gives $61,900. The general
+    ledger showed $64,244, so the bookkeeper recorded the $2,344 difference as miscellaneous expense,
+    bringing the ledger to $61,900. The controller reverses that entry and investigates. She finds: check
+    no. 4407, a $1,985 payment to a supplier that cleared the bank in September, was entered in the cash
+    receipts journal instead of the cash disbursements journal; a customer''s $3,640 check, deposited
+    and credited by the bank on September 14, was recorded in the cash receipts journal as $3,064; check
+    no. 4475 for $2,370, issued and recorded on September 28, is missing from the bookkeeper''s list of
+    outstanding checks and hasn''t cleared the bank; and on September 30 the bank deducted a $1,320 monthly
+    loan payment under Kirkhaugh''s automatic payment arrangement, which Kirkhaugh hasn''t recorded. What
+    cash balance should Kirkhaugh report at September 30?'
+  choices:
+  - id: A
+    text: $59,530
+    rationale: Correct. $67,250 + $6,130 − ($11,480 + $2,370) = $64,244 − $3,970 + $576 − $1,320.
+  - id: B
+    text: $60,850
+    rationale: Works from the books without the $1,320 loan payment the bank deducted automatically, which
+      Kirkhaugh hasn't recorded.
+  - id: C
+    text: $61,900
+    rationale: Accepts the ledger after the plug. That balance only matches the bookkeeper's adjusted
+      bank balance, which leaves out check no. 4475 for $2,370, still outstanding.
+  - id: D
+    text: $64,244
+    rationale: Reverses the plug and stops there. The ledger before the plug still contains the receipt
+      that was really a payment, the understated deposit and the unrecorded loan payment.
+  answer: A
+  explanation: 'Bank side: the omitted outstanding check is deducted: $67,250 + $6,130 − $11,480 − $2,370
+    = $59,530. Book side, after reversing the plug: $64,244 − $3,970 (remove the $1,985 recorded as a
+    receipt and record it as a payment) + $576 (the deposit was $3,640, not $3,064) − $1,320 loan payment
+    = $59,530. The $2,344 plug hid these four items.'
+- stem: 'Garrigill Co.''s bookkeeper reconciled the September 30 bank statement as follows: bank balance
+    $125,840, plus deposits in transit $11,260, less outstanding checks $20,940, gives $116,160. The general
+    ledger showed $119,805, so the bookkeeper recorded the $3,645 difference as miscellaneous expense,
+    bringing the ledger to $116,160. The controller reverses that entry and investigates. She finds: check
+    no. 8851, a $3,640 payment to a supplier that cleared the bank in September, was entered in the cash
+    receipts journal instead of the cash disbursements journal; a customer''s $6,420 check, deposited
+    and credited by the bank on September 14, was recorded in the cash receipts journal as $4,620; check
+    no. 8926 for $4,285, issued and recorded on September 28, is missing from the bookkeeper''s list of
+    outstanding checks and hasn''t cleared the bank; and on September 30 the bank deducted a $2,450 monthly
+    loan payment under Garrigill''s automatic payment arrangement, which Garrigill hasn''t recorded. What
+    cash balance should Garrigill report at September 30?'
+  choices:
+  - id: A
+    text: $107,590
+    rationale: Deducts check no. 8926 from the book balance. It was recorded on September 28, so the books
+      already reflect it; it is an outstanding check, deducted only from the bank balance.
+  - id: B
+    text: $108,275
+    rationale: Deducts the $1,800 difference on the deposit. It was recorded at $4,620 but was $6,420,
+      so the books understate cash.
+  - id: C
+    text: $111,875
+    rationale: Correct. $125,840 + $11,260 − ($20,940 + $4,285) = $119,805 − $7,280 + $1,800 − $2,450.
+  - id: D
+    text: $114,325
+    rationale: Works from the books without the $2,450 loan payment the bank deducted automatically, which
+      Garrigill hasn't recorded.
+  answer: C
+  explanation: 'Bank side: the omitted outstanding check is deducted: $125,840 + $11,260 − $20,940 − $4,285
+    = $111,875. Book side, after reversing the plug: $119,805 − $7,280 (remove the $3,640 recorded as
+    a receipt and record it as a payment) + $1,800 (the deposit was $6,420, not $4,620) − $2,450 loan
+    payment = $111,875. The $3,645 plug hid these four items.'
+- stem: 'Nenthead Co.''s bookkeeper reconciled the September 30 bank statement as follows: bank balance
+    $48,930, plus deposits in transit $4,470, less outstanding checks $8,360, gives $45,040. The general
+    ledger showed $46,058, so the bookkeeper recorded the $1,018 difference as miscellaneous expense,
+    bringing the ledger to $45,040. The controller reverses that entry and investigates. She finds: check
+    no. 3329, a $1,450 payment to a supplier that cleared the bank in September, was entered in the cash
+    receipts journal instead of the cash disbursements journal; a customer''s $2,780 check, deposited
+    and credited by the bank on September 14, was recorded in the cash receipts journal as $2,078; check
+    no. 3388 for $2,140, issued and recorded on September 28, is missing from the bookkeeper''s list of
+    outstanding checks and hasn''t cleared the bank; and on September 30 the bank deducted a $960 monthly
+    loan payment under Nenthead''s automatic payment arrangement, which Nenthead hasn''t recorded. What
+    cash balance should Nenthead report at September 30?'
+  choices:
+  - id: A
+    text: $42,900
+    rationale: Correct. $48,930 + $4,470 − ($8,360 + $2,140) = $46,058 − $2,900 + $702 − $960.
+  - id: B
+    text: $44,350
+    rationale: 'Corrects the check entered as a receipt by only $1,450. Recording a $1,450 payment as
+      a receipt overstated cash by twice its amount: the receipt must be removed and the payment recorded.'
+  - id: C
+    text: $45,040
+    rationale: Accepts the ledger after the plug. That balance only matches the bookkeeper's adjusted
+      bank balance, which leaves out check no. 3388 for $2,140, still outstanding.
+  - id: D
+    text: $46,058
+    rationale: Reverses the plug and stops there. The ledger before the plug still contains the receipt
+      that was really a payment, the understated deposit and the unrecorded loan payment.
+  answer: A
+  explanation: 'Bank side: the omitted outstanding check is deducted: $48,930 + $4,470 − $8,360 − $2,140
+    = $42,900. Book side, after reversing the plug: $46,058 − $2,900 (remove the $1,450 recorded as a
+    receipt and record it as a payment) + $702 (the deposit was $2,780, not $2,078) − $960 loan payment
+    = $42,900. The $1,018 plug hid these four items.'

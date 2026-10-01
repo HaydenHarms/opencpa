@@ -1,0 +1,42 @@
+id: far-lessee-residual-value-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 842-10-30-5 (lease payments: purchase options reasonably certain to be exercised; amounts probable
+    of being owed under residual value guarantees)'
+  - ASC 842-20-30-1 (initial measurement of the lease liability)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Budle Co. leases a delivery truck from a dealer for four years. Budle guarantees the dealer that
+  the truck will be worth at least $18,000 at the end of the lease and will pay any shortfall; at commencement,
+  it expects the truck to be worth $13,000 at that date. The lease also lets Budle buy the truck at the
+  end of the lease for $15,000, which Budle does not expect to do. Besides the fixed monthly rent, what
+  does Budle include in the lease payments used to measure its lease liability at commencement?
+choices:
+- id: A
+  text: The $5,000 it expects to owe under the residual value guarantee
+  rationale: 'Correct. A lessee''s lease payments include amounts it is probable of owing under a residual
+    value guarantee: the $18,000 guaranteed less the $13,000 expected value.'
+- id: B
+  text: The full $18,000 residual value it has guaranteed to the dealer
+  rationale: Only the amount probable of being owed under the guarantee is included, not the whole guaranteed
+    value.
+- id: C
+  text: The $15,000 exercise price of the option to buy the truck
+  rationale: An option's exercise price is included only if the lessee is reasonably certain to exercise
+    it, and Budle doesn't expect to.
+- id: D
+  text: Nothing more, because a guarantee is disclosed rather than measured
+  rationale: A lessee's residual value guarantee is part of the lease payments to the extent amounts are
+    probable of being owed.
+answer: A
+explanation: Under ASC 842-10-30-5, lease payments include fixed payments, the exercise price of a purchase
+  option the lessee is reasonably certain to exercise, and, for a lessee, amounts probable of being owed
+  under residual value guarantees. Budle guarantees $18,000 and expects the truck to be worth $13,000,
+  so it expects to owe $5,000, which is included. The $15,000 purchase option is excluded because Budle
+  isn't reasonably certain to exercise it.

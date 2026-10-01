@@ -1,0 +1,143 @@
+id: far-cash-bank-reconciliation-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice (outstanding checks carried from the prior month; deposits in transit;
+    bank errors; recording errors)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Carrshield Co.''s December 31 bank statement shows a balance of $58,740, and its general ledger
+  cash account shows $48,580. The November 30 reconciliation listed a deposit in transit of $4,215, which
+  the bank credited on December 1, and two outstanding checks: no. 3306 for $1,875 and no. 3311 for $2,460.
+  In December, Carrshield wrote checks no. 3347 for $3,190, no. 3348 for $3,850 (recorded in the cash
+  disbursements journal as $8,350), no. 3349 for $2,745 and no. 3350 for $4,380. The checks paid by the
+  bank in December were nos. 3306, 3347 and 3348, each for the amount written on it. Carrshield''s December
+  31 deposit of $5,230 was credited by the bank on January 2. The December statement also shows a $45
+  service charge, which Carrshield hasn''t recorded, and a $1,350 deposit belonging to another company,
+  which the bank credited to Carrshield''s account in error. What cash balance should Carrshield report
+  at December 31?'
+choices:
+- id: A
+  text: $47,805
+  rationale: Leaves out the $5,230 deposit made on December 31. The bank hadn't credited it by year-end,
+    so it is a deposit in transit, added to the bank balance.
+- id: B
+  text: $48,535
+  rationale: Works from the books without correcting check no. 3348. It cleared at $3,850, its correct
+    amount, but was recorded as $8,350, so the books understate cash by $4,500.
+- id: C
+  text: $51,160
+  rationale: Also deducts check no. 3306, which was outstanding at November 30 but cleared the bank in
+    December.
+- id: D
+  text: $53,035
+  rationale: Correct. $58,740 + $5,230 − ($2,460 + $2,745 + $4,380) − $1,350 = $48,580 − $45 + $4,500.
+answer: D
+explanation: 'Outstanding checks at December 31 are those written and not yet paid: no. 3311 from November
+  ($2,460) and nos. 3349 and 3350 ($2,745 and $4,380), $9,585 in all; no. 3306 cleared in December. Bank
+  side: $58,740 + $5,230 deposit in transit − $9,585 − $1,350 bank error = $53,035. Book side: $48,580
+  − $45 service charge + $4,500 overstatement of check no. 3348 = $53,035. The November deposit in transit
+  is already in the bank balance.'
+variants:
+- stem: 'Coanwood Co.''s December 31 bank statement shows a balance of $43,620, and its general ledger
+    cash account shows $37,620. The November 30 reconciliation listed a deposit in transit of $3,180,
+    which the bank credited on December 1, and two outstanding checks: no. 2214 for $1,425 and no. 2219
+    for $1,870. In December, Coanwood wrote checks no. 2250 for $2,360, no. 2251 for $2,470 (recorded
+    in the cash disbursements journal as $4,270), no. 2252 for $2,085 and no. 2253 for $3,260. The checks
+    paid by the bank in December were nos. 2214, 2250 and 2251, each for the amount written on it. Coanwood''s
+    December 31 deposit of $3,940 was credited by the bank on January 2. The December statement also shows
+    a $35 service charge, which Coanwood hasn''t recorded, and a $960 deposit belonging to another company,
+    which the bank credited to Coanwood''s account in error. What cash balance should Coanwood report
+    at December 31?'
+  choices:
+  - id: A
+    text: $39,385
+    rationale: Correct. $43,620 + $3,940 − ($1,870 + $2,085 + $3,260) − $960 = $37,620 − $35 + $1,800.
+  - id: B
+    text: $40,345
+    rationale: Ignores the $960 deposit of another company that the bank credited to Coanwood's account
+      in error. The bank will reverse it, so it is deducted from the bank balance.
+  - id: C
+    text: $41,255
+    rationale: Treats check no. 2219 as cleared. It was outstanding at November 30 and isn't on the December
+      statement, so it is still outstanding.
+  - id: D
+    text: $42,565
+    rationale: Adds the $3,180 November 30 deposit in transit. The bank credited it on December 1, so
+      it is already in the December 31 bank balance.
+  answer: A
+  explanation: 'Outstanding checks at December 31 are those written and not yet paid: no. 2219 from November
+    ($1,870) and nos. 2252 and 2253 ($2,085 and $3,260), $7,215 in all; no. 2214 cleared in December.
+    Bank side: $43,620 + $3,940 deposit in transit − $7,215 − $960 bank error = $39,385. Book side: $37,620
+    − $35 service charge + $1,800 overstatement of check no. 2251 = $39,385. The November deposit in transit
+    is already in the bank balance.'
+- stem: 'Featherstone Co.''s December 31 bank statement shows a balance of $81,350, and its general ledger
+    cash account shows $70,600. The November 30 reconciliation listed a deposit in transit of $5,870,
+    which the bank credited on December 1, and two outstanding checks: no. 4482 for $2,640 and no. 4490
+    for $3,415. In December, Featherstone wrote checks no. 4526 for $4,410, no. 4527 for $2,350 (recorded
+    in the cash disbursements journal as $5,320), no. 4528 for $3,820 and no. 4529 for $6,075. The checks
+    paid by the bank in December were nos. 4482, 4526 and 4527, each for the amount written on it. Featherstone''s
+    December 31 deposit of $7,260 was credited by the bank on January 2. The December statement also shows
+    a $60 service charge, which Featherstone hasn''t recorded, and a $1,790 deposit belonging to another
+    company, which the bank credited to Featherstone''s account in error. What cash balance should Featherstone
+    report at December 31?'
+  choices:
+  - id: A
+    text: $66,250
+    rationale: Leaves out the $7,260 deposit made on December 31. The bank hadn't credited it by year-end,
+      so it is a deposit in transit, added to the bank balance.
+  - id: B
+    text: $70,540
+    rationale: Works from the books without correcting check no. 4527. It cleared at $2,350, its correct
+      amount, but was recorded as $5,320, so the books understate cash by $2,970.
+  - id: C
+    text: $73,510
+    rationale: Correct. $81,350 + $7,260 − ($3,415 + $3,820 + $6,075) − $1,790 = $70,600 − $60 + $2,970.
+  - id: D
+    text: $76,925
+    rationale: Treats check no. 4490 as cleared. It was outstanding at November 30 and isn't on the December
+      statement, so it is still outstanding.
+  answer: C
+  explanation: 'Outstanding checks at December 31 are those written and not yet paid: no. 4490 from November
+    ($3,415) and nos. 4528 and 4529 ($3,820 and $6,075), $13,310 in all; no. 4482 cleared in December.
+    Bank side: $81,350 + $7,260 deposit in transit − $13,310 − $1,790 bank error = $73,510. Book side:
+    $70,600 − $60 service charge + $2,970 overstatement of check no. 4527 = $73,510. The November deposit
+    in transit is already in the bank balance.'
+- stem: 'Lambley Co.''s December 31 bank statement shows a balance of $31,480, and its general ledger
+    cash account shows $24,785. The November 30 reconciliation listed a deposit in transit of $2,350,
+    which the bank credited on December 1, and two outstanding checks: no. 1617 for $1,060 and no. 1622
+    for $1,385. In December, Lambley wrote checks no. 1658 for $1,730, no. 1659 for $1,580 (recorded in
+    the cash disbursements journal as $5,180), no. 1660 for $1,515 and no. 1661 for $2,390. The checks
+    paid by the bank in December were nos. 1617, 1658 and 1659, each for the amount written on it. Lambley''s
+    December 31 deposit of $2,875 was credited by the bank on January 2. The December statement also shows
+    a $30 service charge, which Lambley hasn''t recorded, and a $710 deposit belonging to another company,
+    which the bank credited to Lambley''s account in error. What cash balance should Lambley report at
+    December 31?'
+  choices:
+  - id: A
+    text: $25,480
+    rationale: Leaves out the $2,875 deposit made on December 31. The bank hadn't credited it by year-end,
+      so it is a deposit in transit, added to the bank balance.
+  - id: B
+    text: $27,295
+    rationale: Also deducts check no. 1617, which was outstanding at November 30 but cleared the bank
+      in December.
+  - id: C
+    text: $28,355
+    rationale: Correct. $31,480 + $2,875 − ($1,385 + $1,515 + $2,390) − $710 = $24,785 − $30 + $3,600.
+  - id: D
+    text: $29,065
+    rationale: Ignores the $710 deposit of another company that the bank credited to Lambley's account
+      in error. The bank will reverse it, so it is deducted from the bank balance.
+  answer: C
+  explanation: 'Outstanding checks at December 31 are those written and not yet paid: no. 1622 from November
+    ($1,385) and nos. 1660 and 1661 ($1,515 and $2,390), $5,290 in all; no. 1617 cleared in December.
+    Bank side: $31,480 + $2,875 deposit in transit − $5,290 − $710 bank error = $28,355. Book side: $24,785
+    − $30 service charge + $3,600 overstatement of check no. 1659 = $28,355. The November deposit in transit
+    is already in the bank balance.'

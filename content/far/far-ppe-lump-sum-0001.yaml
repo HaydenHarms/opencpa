@@ -1,0 +1,133 @@
+id: far-ppe-lump-sum-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 360-10-30 (initial measurement of property, plant and equipment: costs to acquire and prepare
+    for use)'
+  - 'ASC 805-50-30 (asset acquisitions: cost allocated to the assets acquired on the basis of relative
+    fair values)'
+  - ASC 360-10-35 (depreciation)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 10, Year 1, Lucker Co. paid $2,400,000 for land and a building on it, and paid $48,000
+  of legal fees and title costs to complete the purchase. An independent appraisal valued the land at
+  $780,000 and the building at $1,820,000; the local property tax assessments were $900,000 for the land
+  and $1,100,000 for the building. Lucker spent $186,000 renovating the building before moving in, and
+  placed it in service as its head office on April 1, Year 1. It depreciates the building straight-line
+  over 30 years with a residual value of $120,000, taking depreciation for each month the building is
+  in service and rounding Year 1 depreciation to the nearest dollar. What carrying amount should Lucker
+  report for the building at December 31, Year 1?
+choices:
+- id: A
+  text: $1,497,090
+  rationale: Allocates the purchase cost using the property tax assessments. A lump-sum purchase price
+    is allocated on the relative fair values of the assets, from the appraisal.
+- id: B
+  text: $1,822,350
+  rationale: Leaves the $48,000 of legal fees and title costs out of the cost of the property. Costs needed
+    to acquire the assets are part of their cost and are allocated with the price.
+- id: C
+  text: $1,855,110
+  rationale: Correct. $1,899,600 cost − $44,490 depreciation.
+- id: D
+  text: $1,899,600
+  rationale: Records no depreciation in Year 1. Depreciation begins when the building is placed in service,
+    on April 1.
+answer: C
+explanation: 'The $2,400,000 price plus the $48,000 of acquisition costs ($2,448,000) is allocated on
+  relative appraised fair values: building = $2,448,000 × $1,820,000 / $2,600,000 = $1,713,600. The renovation
+  before use is added: cost = $1,899,600. Depreciation for the 9 months from April 1 = ($1,899,600 − $120,000)
+  ÷ 30 × 9/12 = $44,490. Carrying amount = $1,899,600 − $44,490 = $1,855,110.'
+variants:
+- stem: On January 10, Year 1, Newbrough Co. paid $1,800,000 for land and a building on it, and paid $36,000
+    of legal fees and title costs to complete the purchase. An independent appraisal valued the land at
+    $630,000 and the building at $1,470,000; the local property tax assessments were $700,000 for the
+    land and $800,000 for the building. Newbrough spent $144,000 renovating the building before moving
+    in, and placed it in service as its head office on May 1, Year 1. It depreciates the building straight-line
+    over 25 years with a residual value of $90,000, taking depreciation for each month the building is
+    in service and rounding Year 1 depreciation to the nearest dollar. What carrying amount should Newbrough
+    report for the building at December 31, Year 1?
+  choices:
+  - id: A
+    text: $1,253,328
+    rationale: Expenses the $144,000 renovation. Costs to get the building ready for its intended use
+      before it is placed in service are part of its cost.
+  - id: B
+    text: $1,368,960
+    rationale: Leaves the $36,000 of legal fees and title costs out of the cost of the property. Costs
+      needed to acquire the assets are part of their cost and are allocated with the price.
+  - id: C
+    text: $1,375,632
+    rationale: Records a full year of depreciation. The building was placed in service on May 1, so only
+      8 months of depreciation are recorded in Year 1.
+  - id: D
+    text: $1,393,488
+    rationale: Correct. $1,429,200 cost − $35,712 depreciation.
+  answer: D
+  explanation: 'The $1,800,000 price plus the $36,000 of acquisition costs ($1,836,000) is allocated on
+    relative appraised fair values: building = $1,836,000 × $1,470,000 / $2,100,000 = $1,285,200. The
+    renovation before use is added: cost = $1,429,200. Depreciation for the 8 months from May 1 = ($1,429,200
+    − $90,000) ÷ 25 × 8/12 = $35,712. Carrying amount = $1,429,200 − $35,712 = $1,393,488.'
+- stem: On January 10, Year 1, Rothbury Co. paid $3,200,000 for land and a building on it, and paid $64,000
+    of legal fees and title costs to complete the purchase. An independent appraisal valued the land at
+    $1,050,000 and the building at $2,450,000; the local property tax assessments were $1,000,000 for
+    the land and $1,500,000 for the building. Rothbury spent $232,000 renovating the building before moving
+    in, and placed it in service as its head office on March 1, Year 1. It depreciates the building straight-line
+    over 40 years with a residual value of $160,000, taking depreciation for each month the building is
+    in service and rounding Year 1 depreciation to the nearest dollar. What carrying amount should Rothbury
+    report for the building at December 31, Year 1?
+  choices:
+  - id: A
+    text: $2,148,100
+    rationale: Allocates the purchase cost using the property tax assessments. A lump-sum purchase price
+      is allocated on the relative fair values of the assets, from the appraisal.
+  - id: B
+    text: $2,457,880
+    rationale: Records a full year of depreciation. The building was placed in service on March 1, so
+      only 10 months of depreciation are recorded in Year 1.
+  - id: C
+    text: $2,467,700
+    rationale: Correct. $2,516,800 cost − $49,100 depreciation.
+  - id: D
+    text: $2,516,800
+    rationale: Records no depreciation in Year 1. Depreciation begins when the building is placed in service,
+      on March 1.
+  answer: C
+  explanation: 'The $3,200,000 price plus the $64,000 of acquisition costs ($3,264,000) is allocated on
+    relative appraised fair values: building = $3,264,000 × $2,450,000 / $3,500,000 = $2,284,800. The
+    renovation before use is added: cost = $2,516,800. Depreciation for the 10 months from March 1 = ($2,516,800
+    − $160,000) ÷ 40 × 10/12 = $49,100. Carrying amount = $2,516,800 − $49,100 = $2,467,700.'
+- stem: On January 10, Year 1, Stocksfield Co. paid $1,500,000 for land and a building on it, and paid
+    $30,000 of legal fees and title costs to complete the purchase. An independent appraisal valued the
+    land at $480,000 and the building at $1,120,000; the local property tax assessments were $600,000
+    for the land and $650,000 for the building. Stocksfield spent $118,000 renovating the building before
+    moving in, and placed it in service as its head office on June 1, Year 1. It depreciates the building
+    straight-line over 20 years with a residual value of $75,000, taking depreciation for each month the
+    building is in service and rounding Year 1 depreciation to the nearest dollar. What carrying amount
+    should Stocksfield report for the building at December 31, Year 1?
+  choices:
+  - id: A
+    text: $889,141
+    rationale: Allocates the purchase cost using the property tax assessments. A lump-sum purchase price
+      is allocated on the relative fair values of the assets, from the appraisal.
+  - id: B
+    text: $1,041,950
+    rationale: Expenses the $118,000 renovation. Costs to get the building ready for its intended use
+      before it is placed in service are part of its cost.
+  - id: C
+    text: $1,133,300
+    rationale: Records a full year of depreciation. The building was placed in service on June 1, so only
+      7 months of depreciation are recorded in Year 1.
+  - id: D
+    text: $1,156,508
+    rationale: Correct. $1,189,000 cost − $32,492 depreciation.
+  answer: D
+  explanation: 'The $1,500,000 price plus the $30,000 of acquisition costs ($1,530,000) is allocated on
+    relative appraised fair values: building = $1,530,000 × $1,120,000 / $1,600,000 = $1,071,000. The
+    renovation before use is added: cost = $1,189,000. Depreciation for the 7 months from June 1 = ($1,189,000
+    − $75,000) ÷ 20 × 7/12 = $32,492. Carrying amount = $1,189,000 − $32,492 = $1,156,508.'

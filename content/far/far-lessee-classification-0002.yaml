@@ -1,0 +1,50 @@
+id: far-lessee-classification-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 842-10-25-2 (lease classification criteria for lessees)
+  - 'ASC 842-10-55-2 (one reasonable approach: 75% of economic life, 90% of fair value, commencement in
+    the last 25% of economic life)'
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Etal Co. is the lessee in each of the following leases. None transfers ownership, includes a residual
+  value guarantee or is for an asset specialized to Etal's needs. Etal treats 75% or more of an asset's
+  total economic life as a major part of it, 90% or more of its fair value as substantially all of it,
+  and a commencement date in the last 25% of an asset's total economic life as at or near its end. Which
+  lease should Etal classify as a finance lease?
+choices:
+- id: A
+  text: A three-year lease of a used press with a 20-year total life, 4 years of it left, payments worth
+    40% of its value
+  rationale: The lease covers 75% of the press's remaining life, but it begins in the last 25% of the
+    press's total life, so the economic-life test isn't applied; the payments are well short of substantially
+    all of its fair value. It is an operating lease.
+- id: B
+  text: A three-year lease of a van with a five-year life and an option to buy it then for $500, when
+    it should be worth $9,000
+  rationale: Correct. An option priced far below the van's expected value makes Etal reasonably certain
+    to exercise it, so the lease meets the purchase-option criterion and is a finance lease.
+- id: C
+  text: A four-year lease of a forklift with a ten-year life, payments worth 85% of its value and an option
+    to buy at fair value
+  rationale: The term is 40% of the forklift's life and the payments are 85% of its fair value, under
+    90%. An option to buy at fair value gives no incentive to exercise. It is an operating lease.
+- id: D
+  text: A six-year lease of a loader with a ten-year life, payments worth 70% of its value and a renewal
+    option at market rent
+  rationale: Six years is 60% of the loader's life and the payments are 70% of its fair value. A renewal
+    at market rent gives no economic incentive to renew, so the term stays six years. It is an operating
+    lease.
+answer: B
+explanation: 'A lessee classifies a lease as a finance lease if it meets any one of the ASC 842-10-25-2
+  criteria: transfer of ownership, a purchase option the lessee is reasonably certain to exercise, a term
+  for a major part of the asset''s remaining economic life (not applied when the lease begins at or near
+  the end of that life), payments worth substantially all of its fair value, or a specialized asset. A
+  $500 option on a van expected to be worth $9,000 is one Etal is reasonably certain to exercise. The
+  press lease begins in the last 25% of the press''s 20-year life (16 years have passed), so its 75% coverage
+  of the remaining life doesn''t count. The forklift and loader leases fall short of every threshold.'

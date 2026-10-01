@@ -1,0 +1,156 @@
+id: far-nfp-statement-of-activities-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of activities (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-225 (statement of activities)
+  - ASC 958-205-45 (net assets released from restrictions; long-lived assets placed in service, as amended
+    by ASU 2016-14)
+  - ASC 958-605-25 (implied time restrictions; conditional promises to give)
+  - ASC 958-205-45 (endowment return with donor restrictions until appropriated)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 2, Shilbottle Senior Services, a not-for-profit entity, received $240,000 in cash gifts
+  restricted by donors to its meals-on-wheels program and spent $185,000 on that program, and received
+  a $60,000 cash gift restricted to buying a delivery van, which it bought for $54,000 and placed in service
+  in August. Its donor-restricted endowment earned a total return of $96,000; the board appropriated $40,000
+  of the endowment's return for the general operating purposes the endowment's donors specified, and Shilbottle
+  spent it in Year 2. A donor made an unconditional pledge of $35,000, payable in Year 3, and stated no
+  purpose. Another donor promised $50,000 if Shilbottle raises the same amount in new gifts by March,
+  Year 3; it has raised very little so far. What is the net change in Shilbottle's net assets with donor
+  restrictions for Year 2?
+choices:
+- id: A
+  text: $96,000 increase
+  rationale: Reports the $96,000 return on the donor-restricted endowment as without donor restrictions,
+    so the $40,000 appropriated and spent is never released from net assets with donor restrictions either.
+    Return on a donor-restricted endowment fund is with donor restrictions until the board appropriates
+    it for spending.
+- id: B
+  text: $117,000 increase
+  rationale: Reports the $35,000 pledge payable next year as without donor restrictions. An unconditional
+    promise payable in a future period carries an implied time restriction, unless the donor says it is
+    for the current period's activities.
+- id: C
+  text: $146,000 increase
+  rationale: Reports the $60,000 van gift as without donor restrictions, so neither the gift nor its release
+    passes through net assets with donor restrictions. The donor restricted the gift to buying a van,
+    so it is with donor restrictions until the van is placed in service, and the $6,000 not spent stays
+    restricted.
+- id: D
+  text: $152,000 increase
+  rationale: Correct. $240,000 + $60,000 + $96,000 + $35,000 − $185,000 − $54,000 − $40,000.
+answer: D
+explanation: 'Increases: program gifts $240,000, the van gift $60,000, the endowment return $96,000 (with
+  donor restrictions until appropriated) and the $35,000 pledge, which carries an implied time restriction
+  because it is payable in Year 3. Releases: $185,000 spent on the program, $54,000 for the van (the restriction
+  is met when the asset is placed in service), and the $40,000 of endowment return appropriated and spent.
+  The conditional matching pledge isn''t recognized. Net change = $431,000 − $279,000 = $152,000 increase.'
+variants:
+- stem: During Year 2, Snitter Community Kitchen, a not-for-profit entity, received $182,000 in cash gifts
+    restricted by donors to its meals-on-wheels program and spent $139,000 on that program, and received
+    a $45,000 cash gift restricted to buying a delivery van, which it bought for $41,000 and placed in
+    service in August. Its donor-restricted endowment earned a total return of $72,000; the board appropriated
+    $30,000 of the endowment's return for the general operating purposes the endowment's donors specified,
+    and Snitter spent it in Year 2. A donor made an unconditional pledge of $26,000, payable in Year 3,
+    and stated no purpose. Another donor promised $38,000 if Snitter raises the same amount in new gifts
+    by March, Year 3; it has raised very little so far. What is the net change in Snitter's net assets
+    with donor restrictions for Year 2?
+  choices:
+  - id: A
+    text: $115,000 increase
+    rationale: Correct. $182,000 + $45,000 + $72,000 + $26,000 − $139,000 − $41,000 − $30,000.
+  - id: B
+    text: $145,000 increase
+    rationale: Leaves out the release of the $30,000 of endowment return that the board appropriated and
+      spent. Appropriation and spending for the stated purpose release the amount from restriction.
+  - id: C
+    text: $153,000 increase
+    rationale: 'Includes the $38,000 matching pledge. It is conditional: the donor pays only if Snitter
+      raises matching gifts, which hasn''t happened, so no revenue is recognized yet.'
+  - id: D
+    text: $156,000 increase
+    rationale: Keeps the $41,000 spent on the van in net assets with donor restrictions. The donor's restriction
+      was met when Snitter bought the van and placed it in service; since ASU 2016-14, an NFP can't imply
+      a further time restriction over the asset's life.
+  answer: A
+  explanation: 'Increases: program gifts $182,000, the van gift $45,000, the endowment return $72,000
+    (with donor restrictions until appropriated) and the $26,000 pledge, which carries an implied time
+    restriction because it is payable in Year 3. Releases: $139,000 spent on the program, $41,000 for
+    the van (the restriction is met when the asset is placed in service), and the $30,000 of endowment
+    return appropriated and spent. The conditional matching pledge isn''t recognized. Net change = $325,000
+    − $210,000 = $115,000 increase.'
+- stem: During Year 2, Thropton Meals Network, a not-for-profit entity, received $310,000 in cash gifts
+    restricted by donors to its meals-on-wheels program and spent $244,000 on that program, and received
+    a $78,000 cash gift restricted to buying a delivery van, which it bought for $71,000 and placed in
+    service in August. Its donor-restricted endowment earned a total return of $124,000; the board appropriated
+    $52,000 of the endowment's return for the general operating purposes the endowment's donors specified,
+    and Thropton spent it in Year 2. A donor made an unconditional pledge of $45,000, payable in Year
+    3, and stated no purpose. Another donor promised $65,000 if Thropton raises the same amount in new
+    gifts by March, Year 3; it has raised very little so far. What is the net change in Thropton's net
+    assets with donor restrictions for Year 2?
+  choices:
+  - id: A
+    text: $118,000 increase
+    rationale: Reports the $124,000 return on the donor-restricted endowment as without donor restrictions,
+      so the $52,000 appropriated and spent is never released from net assets with donor restrictions
+      either. Return on a donor-restricted endowment fund is with donor restrictions until the board appropriates
+      it for spending.
+  - id: B
+    text: $183,000 increase
+    rationale: Reports the $78,000 van gift as without donor restrictions, so neither the gift nor its
+      release passes through net assets with donor restrictions. The donor restricted the gift to buying
+      a van, so it is with donor restrictions until the van is placed in service, and the $7,000 not spent
+      stays restricted.
+  - id: C
+    text: $190,000 increase
+    rationale: Correct. $310,000 + $78,000 + $124,000 + $45,000 − $244,000 − $71,000 − $52,000.
+  - id: D
+    text: $255,000 increase
+    rationale: 'Includes the $65,000 matching pledge. It is conditional: the donor pays only if Thropton
+      raises matching gifts, which hasn''t happened, so no revenue is recognized yet.'
+  answer: C
+  explanation: 'Increases: program gifts $310,000, the van gift $78,000, the endowment return $124,000
+    (with donor restrictions until appropriated) and the $45,000 pledge, which carries an implied time
+    restriction because it is payable in Year 3. Releases: $244,000 spent on the program, $71,000 for
+    the van (the restriction is met when the asset is placed in service), and the $52,000 of endowment
+    return appropriated and spent. The conditional matching pledge isn''t recognized. Net change = $557,000
+    − $367,000 = $190,000 increase.'
+- stem: During Year 2, Ulgham Home Care Alliance, a not-for-profit entity, received $128,000 in cash gifts
+    restricted by donors to its meals-on-wheels program and spent $97,000 on that program, and received
+    a $32,000 cash gift restricted to buying a delivery van, which it bought for $29,000 and placed in
+    service in August. Its donor-restricted endowment earned a total return of $51,000; the board appropriated
+    $21,000 of the endowment's return for the general operating purposes the endowment's donors specified,
+    and Ulgham spent it in Year 2. A donor made an unconditional pledge of $18,000, payable in Year 3,
+    and stated no purpose. Another donor promised $27,000 if Ulgham raises the same amount in new gifts
+    by March, Year 3; it has raised very little so far. What is the net change in Ulgham's net assets
+    with donor restrictions for Year 2?
+  choices:
+  - id: A
+    text: $64,000 increase
+    rationale: Reports the $18,000 pledge payable next year as without donor restrictions. An unconditional
+      promise payable in a future period carries an implied time restriction, unless the donor says it
+      is for the current period's activities.
+  - id: B
+    text: $82,000 increase
+    rationale: Correct. $128,000 + $32,000 + $51,000 + $18,000 − $97,000 − $29,000 − $21,000.
+  - id: C
+    text: $103,000 increase
+    rationale: Leaves out the release of the $21,000 of endowment return that the board appropriated and
+      spent. Appropriation and spending for the stated purpose release the amount from restriction.
+  - id: D
+    text: $111,000 increase
+    rationale: Keeps the $29,000 spent on the van in net assets with donor restrictions. The donor's restriction
+      was met when Ulgham bought the van and placed it in service; since ASU 2016-14, an NFP can't imply
+      a further time restriction over the asset's life.
+  answer: B
+  explanation: 'Increases: program gifts $128,000, the van gift $32,000, the endowment return $51,000
+    (with donor restrictions until appropriated) and the $18,000 pledge, which carries an implied time
+    restriction because it is payable in Year 3. Releases: $97,000 spent on the program, $29,000 for the
+    van (the restriction is met when the asset is placed in service), and the $21,000 of endowment return
+    appropriated and spent. The conditional matching pledge isn''t recognized. Net change = $229,000 −
+    $147,000 = $82,000 increase.'

@@ -1,0 +1,42 @@
+id: far-revenue-five-step-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 606-10-25-1 (criteria for identifying a contract with a customer)
+  - ASC 606-10-25-2 (contracts may be written, oral or implied by customary business practices)
+  - ASC 606-10-32 (variable consideration)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Belford Tooling agrees to build and sell custom molds to a new customer for $640,000. Which one
+  of the following facts, by itself, would mean that the arrangement is not yet a contract with a customer
+  to which Belford applies the ASC 606 five-step model?
+choices:
+- id: A
+  text: The agreement is oral, which is the customary practice in the customer's industry
+  rationale: A contract can be written, oral or implied by customary business practices, so an oral agreement
+    can still be a contract under ASC 606.
+- id: B
+  text: The customer's finances make it unlikely Belford will collect most of the price
+  rationale: Correct. Step 1 requires that it be probable the entity will collect substantially all of
+    the consideration it is entitled to. Until that is met, the arrangement isn't a contract and consideration
+    received is a liability.
+- id: C
+  text: $64,000 of the price is a bonus that is payable only if the molds are delivered early
+  rationale: A bonus is variable consideration, which is estimated and constrained in step 3; it doesn't
+    stop the arrangement from being a contract.
+- id: D
+  text: Belford will build and deliver the molds over two of its annual reporting periods
+  rationale: Timing of performance affects when revenue is recognized (step 5), not whether a contract
+    exists.
+answer: B
+explanation: Step 1 of the five-step model identifies a contract with a customer. Under ASC 606-10-25-1,
+  a contract exists only if the parties have approved it (in writing, orally or by customary practice)
+  and are committed to perform, each party's rights and the payment terms can be identified, the contract
+  has commercial substance, and it is probable the entity will collect substantially all of the consideration
+  to which it will be entitled. A customer that is unlikely to pay fails the collectibility criterion.
+  Variable consideration and performance spread over several periods are dealt with in later steps.

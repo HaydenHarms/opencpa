@@ -1,0 +1,47 @@
+id: far-uncertain-tax-positions-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 740-10-25 (uncertain tax positions: recognition, and subsequent recognition when new information
+    becomes available)'
+  - ASC 740-10-35 (subsequent measurement of uncertain tax positions)
+  - ASC 855-10 (subsequent events)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: At December 31, Year 2, Corbridge Corp. recognized no benefit for a deduction it took on its Year
+  2 tax return, because it concluded the deduction would likely be disallowed if examined. On February
+  12, Year 3, before its Year 2 financial statements were issued, a federal court decided another taxpayer's
+  case with nearly identical facts in the taxpayer's favor, and Corbridge now expects its deduction to
+  be sustained. How should Corbridge reflect this development?
+choices:
+- id: A
+  text: Adjust its Year 2 statements, because the ruling clarifies tax law that existed at year-end
+  rationale: 'ASC 740 overrides the general subsequent-events model for uncertain tax positions: a change
+    in judgment from information that arises after the reporting date is recognized in the period it arises,
+    not in the earlier statements.'
+- id: B
+  text: Recognize the benefit only when the statute of limitations on the Year 2 return expires
+  rationale: Expiry of the statute of limitations is one way a position can become effectively settled,
+    but new information that changes the judgment is enough on its own.
+- id: C
+  text: Restate its Year 2 statements in Year 3 as the correction of an error
+  rationale: The Year 2 judgment was reasonable on the information then available, so it wasn't an error,
+    and nothing is restated.
+- id: D
+  text: Recognize the benefit in Year 3, when the new information became available
+  rationale: Correct. Recognition, derecognition and measurement of a tax position reflect the information
+    available at the reporting date; a change in judgment caused by information arising later, even before
+    the statements are issued, is recognized in the period in which the information arises.
+answer: D
+explanation: ASC 740-10 requires an entity to recognize the benefit of a tax position only when it is
+  more likely than not to be sustained on examination, based on the information available at the reporting
+  date. When new information, such as a court decision in a similar case, changes that judgment, the change
+  is recognized in the period in which the new information becomes available. This applies even when the
+  information arrives after the balance sheet date but before the statements are issued, so Corbridge
+  recognizes the benefit in Year 3 rather than adjusting its Year 2 statements. The Year 2 judgment wasn't
+  an error, so there is no restatement.

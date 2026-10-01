@@ -1,0 +1,43 @@
+id: far-contingencies-0011
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 450-30-25-1 (gain contingencies not recognized before realization)
+  - ASC 450-30-50-1 (disclosure of gain contingencies, avoiding misleading implications)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: In November, Year 2, a jury awarded Bamburgh Corp. $2,350,000 of damages in its patent infringement
+  suit against a competitor. The competitor has appealed. Bamburgh's counsel expects the award to be upheld,
+  but nothing will be paid until the appeal is decided, probably in Year 4. How should Bamburgh report
+  the award in its December 31, Year 2, financial statements?
+choices:
+- id: A
+  text: Disclose it in the notes, without recognizing a gain or a receivable
+  rationale: Correct. A gain contingency is not recognized until it is realized or realizable, which an
+    award under appeal is not. It is disclosed, with care to avoid misleading implications about the likelihood
+    that it will be realized.
+- id: B
+  text: Recognize a $2,350,000 gain and receivable, since counsel expects the award to stand
+  rationale: Counsel's confidence doesn't make a gain contingency realizable. Recognizing it could record
+    income before it is realized, which ASC 450-30 doesn't permit.
+- id: C
+  text: Recognize a gain equal to the award's present value, discounted to its expected payment in Year
+    4
+  rationale: 'Discounting doesn''t solve the problem: a gain contingency isn''t recognized at any amount
+    until it is realized or realizable.'
+- id: D
+  text: Neither recognize nor mention it, because GAAP doesn't allow gain contingencies to be disclosed
+  rationale: Gain contingencies may be disclosed, and adequate disclosure is made; the disclosure must
+    simply avoid misleading implications about the likelihood of realization.
+answer: A
+explanation: Under ASC 450-30, a gain contingency is not reflected in the financial statements, because
+  recognizing it could mean recognizing income before it is realized. A jury award that the defendant
+  has appealed remains a contingency until the appeal is resolved and payment is realizable. Adequate
+  disclosure is made in the notes, worded to avoid misleading implications about the likelihood that the
+  gain will be realized. The loss-contingency rules (accrual when a loss is probable and estimable) do
+  not apply symmetrically to gains.

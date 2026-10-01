@@ -1,0 +1,133 @@
+id: far-cash-flows-0015
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 230-10-45 (direct method: cash paid to suppliers)'
+  - ASC 230-10-50-3 (noncash investing and financing activities)
+  - ASC 330-10-35 (inventory write-down to net realizable value)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Craster Trading Co. buys all of its merchandise on account. For Year 2 it reports cost of goods
+  sold of $2,840,000, which includes a $46,000 write-down of obsolete goods to net realizable value at
+  December 31. Inventory was $512,000 at January 1 and $578,000, after the write-down, at December 31.
+  Accounts payable to suppliers was $294,000 at January 1 and $331,000 at December 31. In October, a supplier
+  agreed to accept a two-year interest-bearing note payable in settlement of $85,000 that Craster owed
+  it on account. What cash paid to suppliers should Craster report in the operating section of its Year
+  2 statement of cash flows under the direct method?
+choices:
+- id: A
+  text: $2,652,000
+  rationale: Subtracts the $66,000 increase in inventory from cost of goods sold. Inventory rose, so purchases
+    exceeded cost of goods sold.
+- id: B
+  text: $2,718,000
+  rationale: Starts from cost of goods sold without adjusting for the $66,000 increase in inventory. Purchases
+    = cost of goods sold + the increase in inventory.
+- id: C
+  text: $2,738,000
+  rationale: Deducts the $46,000 write-down as a noncash part of cost of goods sold. Ending inventory
+    is already net of the write-down, so cost of goods sold + ending inventory − beginning inventory gives
+    purchases without any further adjustment.
+- id: D
+  text: $2,784,000
+  rationale: Correct. Purchases $2,906,000 − $37,000 increase in payables − $85,000 settled by note.
+answer: D
+explanation: 'Purchases = cost of goods sold + ending inventory − beginning inventory = $2,840,000 + $578,000
+  − $512,000 = $2,906,000. The write-down is in both cost of goods sold and the reduced ending inventory,
+  so this identity already accounts for it. Accounts payable: $294,000 + $2,906,000 − payments − $85,000
+  settled by the note = $331,000, so cash paid = $2,906,000 − $37,000 − $85,000 = $2,784,000. The note
+  is a noncash financing activity.'
+variants:
+- stem: Dilston Trading Co. buys all of its merchandise on account. For Year 2 it reports cost of goods
+    sold of $2,115,000, which includes a $34,000 write-down of obsolete goods to net realizable value
+    at December 31. Inventory was $381,000 at January 1 and $430,000, after the write-down, at December
+    31. Accounts payable to suppliers was $219,000 at January 1 and $247,000 at December 31. In October,
+    a supplier agreed to accept a two-year interest-bearing note payable in settlement of $63,000 that
+    Dilston owed it on account. What cash paid to suppliers should Dilston report in the operating section
+    of its Year 2 statement of cash flows under the direct method?
+  choices:
+  - id: A
+    text: $2,024,000
+    rationale: Starts from cost of goods sold without adjusting for the $49,000 increase in inventory.
+      Purchases = cost of goods sold + the increase in inventory.
+  - id: B
+    text: $2,039,000
+    rationale: Deducts the $34,000 write-down as a noncash part of cost of goods sold. Ending inventory
+      is already net of the write-down, so cost of goods sold + ending inventory − beginning inventory
+      gives purchases without any further adjustment.
+  - id: C
+    text: $2,073,000
+    rationale: Correct. Purchases $2,164,000 − $28,000 increase in payables − $63,000 settled by note.
+  - id: D
+    text: $2,136,000
+    rationale: Treats the $63,000 of payables settled by issuing a note as paid in cash. The note replaced
+      the payable without cash changing hands; it is a noncash transaction.
+  answer: C
+  explanation: 'Purchases = cost of goods sold + ending inventory − beginning inventory = $2,115,000 +
+    $430,000 − $381,000 = $2,164,000. The write-down is in both cost of goods sold and the reduced ending
+    inventory, so this identity already accounts for it. Accounts payable: $219,000 + $2,164,000 − payments
+    − $63,000 settled by the note = $247,000, so cash paid = $2,164,000 − $28,000 − $63,000 = $2,073,000.
+    The note is a noncash financing activity.'
+- stem: Eglingham Trading Co. buys all of its merchandise on account. For Year 2 it reports cost of goods
+    sold of $3,560,000, which includes a $58,000 write-down of obsolete goods to net realizable value
+    at December 31. Inventory was $642,000 at January 1 and $725,000, after the write-down, at December
+    31. Accounts payable to suppliers was $368,000 at January 1 and $415,000 at December 31. In October,
+    a supplier agreed to accept a two-year interest-bearing note payable in settlement of $107,000 that
+    Eglingham owed it on account. What cash paid to suppliers should Eglingham report in the operating
+    section of its Year 2 statement of cash flows under the direct method?
+  choices:
+  - id: A
+    text: $3,323,000
+    rationale: Subtracts the $83,000 increase in inventory from cost of goods sold. Inventory rose, so
+      purchases exceeded cost of goods sold.
+  - id: B
+    text: $3,489,000
+    rationale: Correct. Purchases $3,643,000 − $47,000 increase in payables − $107,000 settled by note.
+  - id: C
+    text: $3,583,000
+    rationale: Adds the $47,000 increase in accounts payable. A rise in payables means Eglingham paid
+      less than it bought.
+  - id: D
+    text: $3,596,000
+    rationale: Treats the $107,000 of payables settled by issuing a note as paid in cash. The note replaced
+      the payable without cash changing hands; it is a noncash transaction.
+  answer: B
+  explanation: 'Purchases = cost of goods sold + ending inventory − beginning inventory = $3,560,000 +
+    $725,000 − $642,000 = $3,643,000. The write-down is in both cost of goods sold and the reduced ending
+    inventory, so this identity already accounts for it. Accounts payable: $368,000 + $3,643,000 − payments
+    − $107,000 settled by the note = $415,000, so cash paid = $3,643,000 − $47,000 − $107,000 = $3,489,000.
+    The note is a noncash financing activity.'
+- stem: Elwick Trading Co. buys all of its merchandise on account. For Year 2 it reports cost of goods
+    sold of $1,470,000, which includes a $24,000 write-down of obsolete goods to net realizable value
+    at December 31. Inventory was $265,000 at January 1 and $299,000, after the write-down, at December
+    31. Accounts payable to suppliers was $152,000 at January 1 and $172,000 at December 31. In October,
+    a supplier agreed to accept a two-year interest-bearing note payable in settlement of $44,000 that
+    Elwick owed it on account. What cash paid to suppliers should Elwick report in the operating section
+    of its Year 2 statement of cash flows under the direct method?
+  choices:
+  - id: A
+    text: $1,372,000
+    rationale: Subtracts the $34,000 increase in inventory from cost of goods sold. Inventory rose, so
+      purchases exceeded cost of goods sold.
+  - id: B
+    text: $1,406,000
+    rationale: Starts from cost of goods sold without adjusting for the $34,000 increase in inventory.
+      Purchases = cost of goods sold + the increase in inventory.
+  - id: C
+    text: $1,440,000
+    rationale: Correct. Purchases $1,504,000 − $20,000 increase in payables − $44,000 settled by note.
+  - id: D
+    text: $1,480,000
+    rationale: Adds the $20,000 increase in accounts payable. A rise in payables means Elwick paid less
+      than it bought.
+  answer: C
+  explanation: 'Purchases = cost of goods sold + ending inventory − beginning inventory = $1,470,000 +
+    $299,000 − $265,000 = $1,504,000. The write-down is in both cost of goods sold and the reduced ending
+    inventory, so this identity already accounts for it. Accounts payable: $152,000 + $1,504,000 − payments
+    − $44,000 settled by the note = $172,000, so cash paid = $1,504,000 − $20,000 − $44,000 = $1,440,000.
+    The note is a noncash financing activity.'

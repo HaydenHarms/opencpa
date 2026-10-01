@@ -232,7 +232,7 @@ mcq("far-lessee-classification-0001", A3, "Lessee accounting", RU,
     "B",
     """A lease is a finance lease if it meets any of five criteria: transfer of ownership, a purchase option reasonably certain to be exercised, a term that is a major part of the remaining economic life, payments (plus any residual guarantee) that are substantially all of fair value, or an asset so specialized it has no alternative use to the lessor. Lease 1: 7 ÷ 9 = 78% ≥ 75%, finance. Lease 2: meets none, operating. Lease 3: specialized asset, finance."""),
 
-mcq("far-nfp-agent-transfers-0001", A3, "Revenue recognition", AP,
+mcq("far-nfp-agent-transfers-0001", A3, "Revenue recognition", RU,
     ["ASC 958-605 (transfers received as an agent, trustee or intermediary; variance power)"],
     """During the year, Unity Fund, a not-for-profit federated fundraising organization, receives: $40,000 from donors who specify that it go to Riverside Shelter, an unrelated charity, with no power for Unity to redirect it; $30,000 for Unity's general use; $20,000 from a donor who names a beneficiary but explicitly gives Unity the unilateral power to redirect the gift to another beneficiary; and $10,000 transferred by Riverside Shelter itself for Unity to invest and hold for Riverside's future use. What contribution revenue should Unity recognize?""",
     [("$50,000", "Correct. The $30,000 for general use and the $20,000 over which Unity has variance power."),

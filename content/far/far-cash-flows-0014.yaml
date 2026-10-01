@@ -1,0 +1,168 @@
+id: far-cash-flows-0014
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 230-10-45-15 (financing outflows, including debt prepayment and extinguishment costs, as amended
+    by ASU 2016-15)
+  - 'ASC 842-20-45-5 (finance lease payments: principal in financing, interest in operating)'
+  - ASC 230-10-50-3 (noncash investing and financing activities)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Acklington Co.''s draft Year 2 statement of cash flows reports net cash provided by operating activities
+  of $684,000, net cash used in investing activities of $1,362,000 (purchases of equipment $412,000 and
+  purchase of an office building $950,000), and net cash provided by financing activities of $1,154,000
+  (proceeds from bonds issued, net of issue costs paid, $1,470,000; repayment of a term loan ($600,000);
+  payments on finance lease obligations ($96,000); dividends paid ($140,000); and mortgage loan on office
+  building $520,000), for a net increase in cash of $476,000. The supporting documents show: the seller
+  of the building received $430,000 in cash, and Acklington assumed the seller''s $520,000 mortgage for
+  the rest of the price; besides the $600,000 of principal, Acklington paid the term lender an $18,000
+  prepayment penalty, which net income includes as a loss on extinguishment and which the operating section
+  does not adjust; and the finance lease payments consisted of $75,000 of principal and $21,000 of interest.
+  Under U.S. GAAP, what should the corrected statement report as net cash provided by financing activities?'
+choices:
+- id: A
+  text: $616,000
+  rationale: Keeps all $96,000 of finance lease payments in financing activities. The $21,000 interest
+    portion is an operating outflow; only the principal portion is financing.
+- id: B
+  text: $637,000
+  rationale: Correct. $1,154,000 − $18,000 + $21,000 − $520,000.
+- id: C
+  text: $655,000
+  rationale: Leaves the $18,000 prepayment penalty out of financing activities. Cash paid for debt prepayment
+    or extinguishment costs is a financing outflow, so the operating section adds it back and the financing
+    section reports it.
+- id: D
+  text: $1,157,000
+  rationale: 'Keeps the $520,000 mortgage assumed on the building as a financing inflow. No cash was borrowed:
+    assuming the seller''s mortgage is a noncash investing and financing activity, disclosed rather than
+    reported in the statement.'
+answer: B
+explanation: Three items in the financing section need correcting. The mortgage was assumed, not borrowed,
+  so the $520,000 inflow is removed (and the building's cash purchase price falls to $430,000); the assumption
+  is disclosed as a noncash activity. The $18,000 prepayment penalty is a cash outflow for debt extinguishment
+  costs, which ASC 230-10-45-15 classifies as financing, so it moves out of operating activities (where
+  it is added back) into financing. Of the $96,000 paid on finance leases, the $21,000 of interest is
+  operating (ASC 842-20-45-5), so financing outflows fall by $21,000. The bond proceeds, net of the issue
+  costs paid, are correctly financing. Corrected financing = $1,154,000 − $520,000 − $18,000 + $21,000
+  = $637,000.
+variants:
+- stem: 'Bardon Co.''s draft Year 2 statement of cash flows reports net cash provided by operating activities
+    of $512,000, net cash used in investing activities of $1,030,000 (purchases of equipment $310,000
+    and purchase of an office building $720,000), and net cash provided by financing activities of $843,000
+    (proceeds from bonds issued, net of issue costs paid, $1,080,000; repayment of a term loan ($450,000);
+    payments on finance lease obligations ($72,000); dividends paid ($105,000); and mortgage loan on office
+    building $390,000), for a net increase in cash of $325,000. The supporting documents show: the seller
+    of the building received $330,000 in cash, and Bardon assumed the seller''s $390,000 mortgage for
+    the rest of the price; besides the $450,000 of principal, Bardon paid the term lender a $13,500 prepayment
+    penalty, which net income includes as a loss on extinguishment and which the operating section does
+    not adjust; and the finance lease payments consisted of $56,000 of principal and $16,000 of interest.
+    Under U.S. GAAP, what should the corrected statement report as net cash provided by financing activities?'
+  choices:
+  - id: A
+    text: $455,500
+    rationale: Correct. $843,000 − $13,500 + $16,000 − $390,000.
+  - id: B
+    text: $469,000
+    rationale: Leaves the $13,500 prepayment penalty out of financing activities. Cash paid for debt prepayment
+      or extinguishment costs is a financing outflow, so the operating section adds it back and the financing
+      section reports it.
+  - id: C
+    text: $511,500
+    rationale: Moves all $72,000 of finance lease payments out of financing activities. Only the $16,000
+      interest portion is operating; the $56,000 of principal repayments is financing.
+  - id: D
+    text: $845,500
+    rationale: 'Keeps the $390,000 mortgage assumed on the building as a financing inflow. No cash was
+      borrowed: assuming the seller''s mortgage is a noncash investing and financing activity, disclosed
+      rather than reported in the statement.'
+  answer: A
+  explanation: Three items in the financing section need correcting. The mortgage was assumed, not borrowed,
+    so the $390,000 inflow is removed (and the building's cash purchase price falls to $330,000); the
+    assumption is disclosed as a noncash activity. The $13,500 prepayment penalty is a cash outflow for
+    debt extinguishment costs, which ASC 230-10-45-15 classifies as financing, so it moves out of operating
+    activities (where it is added back) into financing. Of the $72,000 paid on finance leases, the $16,000
+    of interest is operating (ASC 842-20-45-5), so financing outflows fall by $16,000. The bond proceeds,
+    net of the issue costs paid, are correctly financing. Corrected financing = $843,000 − $390,000 −
+    $13,500 + $16,000 = $455,500.
+- stem: 'Cambo Co.''s draft Year 2 statement of cash flows reports net cash provided by operating activities
+    of $938,000, net cash used in investing activities of $1,866,000 (purchases of equipment $566,000
+    and purchase of an office building $1,300,000), and net cash provided by financing activities of $1,542,000
+    (proceeds from bonds issued, net of issue costs paid, $1,960,000; repayment of a term loan ($800,000);
+    payments on finance lease obligations ($128,000); dividends paid ($190,000); and mortgage loan on
+    office building $700,000), for a net increase in cash of $614,000. The supporting documents show:
+    the seller of the building received $600,000 in cash, and Cambo assumed the seller''s $700,000 mortgage
+    for the rest of the price; besides the $800,000 of principal, Cambo paid the term lender a $24,000
+    prepayment penalty, which net income includes as a loss on extinguishment and which the operating
+    section does not adjust; and the finance lease payments consisted of $99,000 of principal and $29,000
+    of interest. Under U.S. GAAP, what should the corrected statement report as net cash provided by financing
+    activities?'
+  choices:
+  - id: A
+    text: $818,000
+    rationale: Keeps all $128,000 of finance lease payments in financing activities. The $29,000 interest
+      portion is an operating outflow; only the principal portion is financing.
+  - id: B
+    text: $847,000
+    rationale: Correct. $1,542,000 − $24,000 + $29,000 − $700,000.
+  - id: C
+    text: $871,000
+    rationale: Leaves the $24,000 prepayment penalty out of financing activities. Cash paid for debt prepayment
+      or extinguishment costs is a financing outflow, so the operating section adds it back and the financing
+      section reports it.
+  - id: D
+    text: $946,000
+    rationale: Moves all $128,000 of finance lease payments out of financing activities. Only the $29,000
+      interest portion is operating; the $99,000 of principal repayments is financing.
+  answer: B
+  explanation: Three items in the financing section need correcting. The mortgage was assumed, not borrowed,
+    so the $700,000 inflow is removed (and the building's cash purchase price falls to $600,000); the
+    assumption is disclosed as a noncash activity. The $24,000 prepayment penalty is a cash outflow for
+    debt extinguishment costs, which ASC 230-10-45-15 classifies as financing, so it moves out of operating
+    activities (where it is added back) into financing. Of the $128,000 paid on finance leases, the $29,000
+    of interest is operating (ASC 842-20-45-5), so financing outflows fall by $29,000. The bond proceeds,
+    net of the issue costs paid, are correctly financing. Corrected financing = $1,542,000 − $700,000
+    − $24,000 + $29,000 = $847,000.
+- stem: 'Chollerton Co.''s draft Year 2 statement of cash flows reports net cash provided by operating
+    activities of $376,000, net cash used in investing activities of $768,000 (purchases of equipment
+    $228,000 and purchase of an office building $540,000), and net cash provided by financing activities
+    of $618,000 (proceeds from bonds issued, net of issue costs paid, $790,000; repayment of a term loan
+    ($330,000); payments on finance lease obligations ($54,000); dividends paid ($78,000); and mortgage
+    loan on office building $290,000), for a net increase in cash of $226,000. The supporting documents
+    show: the seller of the building received $250,000 in cash, and Chollerton assumed the seller''s $290,000
+    mortgage for the rest of the price; besides the $330,000 of principal, Chollerton paid the term lender
+    a $9,900 prepayment penalty, which net income includes as a loss on extinguishment and which the operating
+    section does not adjust; and the finance lease payments consisted of $42,000 of principal and $12,000
+    of interest. Under U.S. GAAP, what should the corrected statement report as net cash provided by financing
+    activities?'
+  choices:
+  - id: A
+    text: $318,100
+    rationale: Keeps all $54,000 of finance lease payments in financing activities. The $12,000 interest
+      portion is an operating outflow; only the principal portion is financing.
+  - id: B
+    text: $330,100
+    rationale: Correct. $618,000 − $9,900 + $12,000 − $290,000.
+  - id: C
+    text: $372,100
+    rationale: Moves all $54,000 of finance lease payments out of financing activities. Only the $12,000
+      interest portion is operating; the $42,000 of principal repayments is financing.
+  - id: D
+    text: $620,100
+    rationale: 'Keeps the $290,000 mortgage assumed on the building as a financing inflow. No cash was
+      borrowed: assuming the seller''s mortgage is a noncash investing and financing activity, disclosed
+      rather than reported in the statement.'
+  answer: B
+  explanation: Three items in the financing section need correcting. The mortgage was assumed, not borrowed,
+    so the $290,000 inflow is removed (and the building's cash purchase price falls to $250,000); the
+    assumption is disclosed as a noncash activity. The $9,900 prepayment penalty is a cash outflow for
+    debt extinguishment costs, which ASC 230-10-45-15 classifies as financing, so it moves out of operating
+    activities (where it is added back) into financing. Of the $54,000 paid on finance leases, the $12,000
+    of interest is operating (ASC 842-20-45-5), so financing outflows fall by $12,000. The bond proceeds,
+    net of the issue costs paid, are correctly financing. Corrected financing = $618,000 − $290,000 −
+    $9,900 + $12,000 = $330,100.

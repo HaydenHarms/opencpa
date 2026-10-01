@@ -1,0 +1,129 @@
+id: far-investments-htm-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at amortized cost)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 320-10-35 (held-to-maturity debt securities at amortized cost)
+  - 'ASC 310-20-35 (interest method: amortization of premium)'
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On July 1, Year 1, Thockrington Corp. paid $834,121 for $800,000 face amount of 5-year, 7% bonds
+  issued that day, which pay interest each June 30 and December 31; the price gives a yield of 6% a year,
+  compounded semiannually. Thockrington classifies the bonds as held to maturity and expects no credit
+  losses on them, so it records no allowance. It amortizes the premium by the effective interest method,
+  rounding each period's figures to the nearest dollar. At December 31, Year 2, the bonds' fair value
+  is $839,500. At what amount should Thockrington report the investment at December 31, Year 2?
+choices:
+- id: A
+  text: $824,921
+  rationale: 'Correct. $834,121 less three periods of premium amortization: $2,976, $3,066, $3,158.'
+- id: B
+  text: $834,121
+  rationale: Leaves the bonds at their $834,121 cost. The premium is amortized as an adjustment of interest
+    income over the bonds' life.
+- id: C
+  text: $839,500
+  rationale: Reports the bonds at their $839,500 fair value. Held-to-maturity securities are reported
+    at amortized cost.
+- id: D
+  text: $843,321
+  rationale: Adds the premium amortization to the carrying amount. Amortizing a premium reduces the carrying
+    amount toward face value.
+answer: A
+explanation: Each semiannual coupon is $800,000 × 7% ÷ 2 = $28,000, and interest income is the carrying
+  amount × 6% ÷ 2. $834,121 × 3% = $25,024 interest income, $28,000 − $25,024 = $2,976 amortized; $831,145
+  × 3% = $24,934 interest income, $28,000 − $24,934 = $3,066 amortized; $828,079 × 3% = $24,842 interest
+  income, $28,000 − $24,842 = $3,158 amortized. Carrying amount at December 31, Year 2 = $834,121 − $9,200
+  = $824,921. Held-to-maturity securities are reported at amortized cost, so the fair value is not used.
+variants:
+- stem: On July 1, Year 1, Tritlington Corp. paid $642,118 for $600,000 face amount of 4-year, 8% bonds
+    issued that day, which pay interest each June 30 and December 31; the price gives a yield of 6% a
+    year, compounded semiannually. Tritlington classifies the bonds as held to maturity and expects no
+    credit losses on them, so it records no allowance. It amortizes the premium by the effective interest
+    method, rounding each period's figures to the nearest dollar. At December 31, Year 2, the bonds' fair
+    value is $618,000. At what amount should Tritlington report the investment at December 31, Year 2?
+  choices:
+  - id: A
+    text: $618,000
+    rationale: Reports the bonds at their $618,000 fair value. Held-to-maturity securities are reported
+      at amortized cost.
+  - id: B
+    text: $626,324
+    rationale: Amortizes the premium straight-line, $5,265 each half-year. Tritlington uses the effective
+      interest method, under which the amortization grows each period.
+  - id: C
+    text: $627,478
+    rationale: 'Correct. $642,118 less three periods of premium amortization: $4,736, $4,879, $5,025.'
+  - id: D
+    text: $642,118
+    rationale: Leaves the bonds at their $642,118 cost. The premium is amortized as an adjustment of interest
+      income over the bonds' life.
+  answer: C
+  explanation: Each semiannual coupon is $600,000 × 8% ÷ 2 = $24,000, and interest income is the carrying
+    amount × 6% ÷ 2. $642,118 × 3% = $19,264 interest income, $24,000 − $19,264 = $4,736 amortized; $637,382
+    × 3% = $19,121 interest income, $24,000 − $19,121 = $4,879 amortized; $632,503 × 3% = $18,975 interest
+    income, $24,000 − $18,975 = $5,025 amortized. Carrying amount at December 31, Year 2 = $642,118 −
+    $14,640 = $627,478. Held-to-maturity securities are reported at amortized cost, so the fair value
+    is not used.
+- stem: On July 1, Year 1, Wylam Corp. paid $1,051,289 for $1,000,000 face amount of 6-year, 6% bonds
+    issued that day, which pay interest each June 30 and December 31; the price gives a yield of 5% a
+    year, compounded semiannually. Wylam classifies the bonds as held to maturity and expects no credit
+    losses on them, so it records no allowance. It amortizes the premium by the effective interest method,
+    rounding each period's figures to the nearest dollar. At December 31, Year 2, the bonds' fair value
+    is $1,031,000. At what amount should Wylam report the investment at December 31, Year 2?
+  choices:
+  - id: A
+    text: $1,038,467
+    rationale: Amortizes the premium straight-line, $4,274 each half-year. Wylam uses the effective interest
+      method, under which the amortization grows each period.
+  - id: B
+    text: $1,039,854
+    rationale: 'Correct. $1,051,289 less three periods of premium amortization: $3,718, $3,811, $3,906.'
+  - id: C
+    text: $1,043,760
+    rationale: Stops after two interest payments, at June 30, Year 2. Three semiannual payments (December
+      31, Year 1, and June 30 and December 31, Year 2) have been received.
+  - id: D
+    text: $1,062,724
+    rationale: Adds the premium amortization to the carrying amount. Amortizing a premium reduces the
+      carrying amount toward face value.
+  answer: B
+  explanation: Each semiannual coupon is $1,000,000 × 6% ÷ 2 = $30,000, and interest income is the carrying
+    amount × 5% ÷ 2. $1,051,289 × 2.5% = $26,282 interest income, $30,000 − $26,282 = $3,718 amortized;
+    $1,047,571 × 2.5% = $26,189 interest income, $30,000 − $26,189 = $3,811 amortized; $1,043,760 × 2.5%
+    = $26,094 interest income, $30,000 − $26,094 = $3,906 amortized. Carrying amount at December 31, Year
+    2 = $1,051,289 − $11,435 = $1,039,854. Held-to-maturity securities are reported at amortized cost,
+    so the fair value is not used.
+- stem: On July 1, Year 1, Acomb Corp. paid $541,583 for $500,000 face amount of 5-year, 9% bonds issued
+    that day, which pay interest each June 30 and December 31; the price gives a yield of 7% a year, compounded
+    semiannually. Acomb classifies the bonds as held to maturity and expects no credit losses on them,
+    so it records no allowance. It amortizes the premium by the effective interest method, rounding each
+    period's figures to the nearest dollar. At December 31, Year 2, the bonds' fair value is $524,000.
+    At what amount should Acomb report the investment at December 31, Year 2?
+  choices:
+  - id: A
+    text: $530,572
+    rationale: 'Correct. $541,583 less three periods of premium amortization: $3,545, $3,669, $3,797.'
+  - id: B
+    text: $534,369
+    rationale: Stops after two interest payments, at June 30, Year 2. Three semiannual payments (December
+      31, Year 1, and June 30 and December 31, Year 2) have been received.
+  - id: C
+    text: $541,583
+    rationale: Leaves the bonds at their $541,583 cost. The premium is amortized as an adjustment of interest
+      income over the bonds' life.
+  - id: D
+    text: $552,594
+    rationale: Adds the premium amortization to the carrying amount. Amortizing a premium reduces the
+      carrying amount toward face value.
+  answer: A
+  explanation: Each semiannual coupon is $500,000 × 9% ÷ 2 = $22,500, and interest income is the carrying
+    amount × 7% ÷ 2. $541,583 × 3.5% = $18,955 interest income, $22,500 − $18,955 = $3,545 amortized;
+    $538,038 × 3.5% = $18,831 interest income, $22,500 − $18,831 = $3,669 amortized; $534,369 × 3.5% =
+    $18,703 interest income, $22,500 − $18,703 = $3,797 amortized. Carrying amount at December 31, Year
+    2 = $541,583 − $11,011 = $530,572. Held-to-maturity securities are reported at amortized cost, so
+    the fair value is not used.

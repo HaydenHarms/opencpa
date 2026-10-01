@@ -1,0 +1,169 @@
+id: far-income-statement-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 220-10 (income statement presentation)
+  - ASC 360-10-45-4 (impairment loss on a long-lived asset held and used included in income from operations
+    when that subtotal is presented)
+  - ASC 360-10-45-5 (gain or loss on the sale of a long-lived asset that is not a discontinued operation
+    included in income from operations when that subtotal is presented)
+  - ASC 205-20 (discontinued operations)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Ellingham Corp.''s adjusted trial balance for Year 3 includes these pretax amounts: sales $4,860,000;
+  sales returns and allowances $92,000; sales discounts $38,000; cost of goods sold $2,915,000; selling
+  expenses, including freight on shipments to customers, $486,000; general and administrative expenses
+  $612,000; a loss of $145,000 from writing down a warehouse that Ellingham continues to use to its fair
+  value; a gain of $34,000 on the sale of delivery equipment; interest expense $68,000; dividend revenue
+  $21,000; and a loss of $118,000 from operating its furniture division, a business segment that Ellingham
+  sold in September, Year 3, after deciding to leave that business. Ellingham presents a multi-step income
+  statement that includes a subtotal for income from operations. What income from operations should it
+  report for Year 3?'
+choices:
+- id: A
+  text: $488,000
+  rationale: Deducts the $118,000 loss of the discontinued component. Discontinued operations are reported
+    separately, after income from continuing operations, net of tax.
+- id: B
+  text: $538,000
+  rationale: Deducts the $68,000 of interest expense. Interest is a financing cost, reported after income
+    from operations.
+- id: C
+  text: $572,000
+  rationale: Reports the $34,000 gain on the sale of equipment as other income, below income from operations.
+    A gain on the sale of a long-lived asset that isn't a discontinued operation is included in a subtotal
+    such as income from operations when one is presented (ASC 360-10-45-5). The textbook layout that puts
+    such gains under other gains and losses, below operating income doesn't comply once Ellingham presents
+    that subtotal.
+- id: D
+  text: $606,000
+  rationale: Correct. $4,860,000 − $92,000 − $38,000 − $2,915,000 − $486,000 − $612,000 − $145,000 + $34,000.
+    ASC 360-10-45-4 and 45-5 put the impairment loss and the gain on the sale inside income from operations
+    when that subtotal is presented.
+answer: D
+explanation: Net sales = $4,860,000 − $92,000 − $38,000 = $4,730,000. Gross profit = net sales − $2,915,000
+  = $1,815,000. Operating expenses are the selling expenses (freight-out included), general and administrative
+  expenses and the $145,000 impairment loss on the warehouse held and used; the $34,000 gain on the equipment
+  sale is also included, because ASC 360-10-45-4 and 45-5 require impairment losses and gains or losses
+  on sales of long-lived assets that aren't discontinued operations to be included in a subtotal such
+  as income from operations. Income from operations = $606,000. Interest expense and dividend revenue
+  are nonoperating, and the furniture division's loss is reported in discontinued operations.
+variants:
+- stem: 'Embleton Corp.''s adjusted trial balance for Year 3 includes these pretax amounts: sales $3,720,000;
+    sales returns and allowances $71,000; sales discounts $29,000; cost of goods sold $2,230,000; selling
+    expenses, including freight on shipments to customers, $371,000; general and administrative expenses
+    $468,000; a loss of $112,000 from writing down a warehouse that Embleton continues to use to its fair
+    value; a gain of $26,000 on the sale of delivery equipment; interest expense $52,000; dividend revenue
+    $16,000; and a loss of $91,000 from operating its marine division, a business segment that Embleton
+    sold in September, Year 3, after deciding to leave that business. Embleton presents a multi-step income
+    statement that includes a subtotal for income from operations. What income from operations should
+    it report for Year 3?'
+  choices:
+  - id: A
+    text: $413,000
+    rationale: Deducts the $52,000 of interest expense. Interest is a financing cost, reported after income
+      from operations.
+  - id: B
+    text: $465,000
+    rationale: Correct. $3,720,000 − $71,000 − $29,000 − $2,230,000 − $371,000 − $468,000 − $112,000 +
+      $26,000. ASC 360-10-45-4 and 45-5 put the impairment loss and the gain on the sale inside income
+      from operations when that subtotal is presented.
+  - id: C
+    text: $481,000
+    rationale: Adds the $16,000 of dividend revenue. Investment income from equity securities is reported
+      after income from operations.
+  - id: D
+    text: $577,000
+    rationale: Reports the $112,000 impairment loss below income from operations. An impairment loss on
+      a long-lived asset held and used is included in income from continuing operations before income
+      taxes, and in a subtotal such as income from operations when one is presented (ASC 360-10-45-4).
+  answer: B
+  explanation: Net sales = $3,720,000 − $71,000 − $29,000 = $3,620,000. Gross profit = net sales − $2,230,000
+    = $1,390,000. Operating expenses are the selling expenses (freight-out included), general and administrative
+    expenses and the $112,000 impairment loss on the warehouse held and used; the $26,000 gain on the
+    equipment sale is also included, because ASC 360-10-45-4 and 45-5 require impairment losses and gains
+    or losses on sales of long-lived assets that aren't discontinued operations to be included in a subtotal
+    such as income from operations. Income from operations = $465,000. Interest expense and dividend revenue
+    are nonoperating, and the marine division's loss is reported in discontinued operations.
+- stem: 'Felton Corp.''s adjusted trial balance for Year 3 includes these pretax amounts: sales $6,150,000;
+    sales returns and allowances $118,000; sales discounts $47,000; cost of goods sold $3,690,000; selling
+    expenses, including freight on shipments to customers, $615,000; general and administrative expenses
+    $774,000; a loss of $184,000 from writing down a warehouse that Felton continues to use to its fair
+    value; a gain of $43,000 on the sale of delivery equipment; interest expense $86,000; dividend revenue
+    $27,000; and a loss of $149,000 from operating its printing division, a business segment that Felton
+    sold in September, Year 3, after deciding to leave that business. Felton presents a multi-step income
+    statement that includes a subtotal for income from operations. What income from operations should
+    it report for Year 3?'
+  choices:
+  - id: A
+    text: $616,000
+    rationale: Deducts the $149,000 loss of the discontinued component. Discontinued operations are reported
+      separately, after income from continuing operations, net of tax.
+  - id: B
+    text: $722,000
+    rationale: Reports the $43,000 gain on the sale of equipment as other income, below income from operations.
+      A gain on the sale of a long-lived asset that isn't a discontinued operation is included in a subtotal
+      such as income from operations when one is presented (ASC 360-10-45-5). The textbook layout that
+      puts such gains under other gains and losses, below operating income doesn't comply once Felton
+      presents that subtotal.
+  - id: C
+    text: $765,000
+    rationale: Correct. $6,150,000 − $118,000 − $47,000 − $3,690,000 − $615,000 − $774,000 − $184,000
+      + $43,000. ASC 360-10-45-4 and 45-5 put the impairment loss and the gain on the sale inside income
+      from operations when that subtotal is presented.
+  - id: D
+    text: $949,000
+    rationale: Reports the $184,000 impairment loss below income from operations. An impairment loss on
+      a long-lived asset held and used is included in income from continuing operations before income
+      taxes, and in a subtotal such as income from operations when one is presented (ASC 360-10-45-4).
+  answer: C
+  explanation: Net sales = $6,150,000 − $118,000 − $47,000 = $5,985,000. Gross profit = net sales − $3,690,000
+    = $2,295,000. Operating expenses are the selling expenses (freight-out included), general and administrative
+    expenses and the $184,000 impairment loss on the warehouse held and used; the $43,000 gain on the
+    equipment sale is also included, because ASC 360-10-45-4 and 45-5 require impairment losses and gains
+    or losses on sales of long-lived assets that aren't discontinued operations to be included in a subtotal
+    such as income from operations. Income from operations = $765,000. Interest expense and dividend revenue
+    are nonoperating, and the printing division's loss is reported in discontinued operations.
+- stem: 'Glanton Corp.''s adjusted trial balance for Year 3 includes these pretax amounts: sales $2,940,000;
+    sales returns and allowances $56,000; sales discounts $23,000; cost of goods sold $1,765,000; selling
+    expenses, including freight on shipments to customers, $294,000; general and administrative expenses
+    $370,000; a loss of $88,000 from writing down a warehouse that Glanton continues to use to its fair
+    value; a gain of $21,000 on the sale of delivery equipment; interest expense $41,000; dividend revenue
+    $13,000; and a loss of $72,000 from operating its catering division, a business segment that Glanton
+    sold in September, Year 3, after deciding to leave that business. Glanton presents a multi-step income
+    statement that includes a subtotal for income from operations. What income from operations should
+    it report for Year 3?'
+  choices:
+  - id: A
+    text: $324,000
+    rationale: Deducts the $41,000 of interest expense. Interest is a financing cost, reported after income
+      from operations.
+  - id: B
+    text: $344,000
+    rationale: Reports the $21,000 gain on the sale of equipment as other income, below income from operations.
+      A gain on the sale of a long-lived asset that isn't a discontinued operation is included in a subtotal
+      such as income from operations when one is presented (ASC 360-10-45-5). The textbook layout that
+      puts such gains under other gains and losses, below operating income doesn't comply once Glanton
+      presents that subtotal.
+  - id: C
+    text: $365,000
+    rationale: Correct. $2,940,000 − $56,000 − $23,000 − $1,765,000 − $294,000 − $370,000 − $88,000 +
+      $21,000. ASC 360-10-45-4 and 45-5 put the impairment loss and the gain on the sale inside income
+      from operations when that subtotal is presented.
+  - id: D
+    text: $378,000
+    rationale: Adds the $13,000 of dividend revenue. Investment income from equity securities is reported
+      after income from operations.
+  answer: C
+  explanation: Net sales = $2,940,000 − $56,000 − $23,000 = $2,861,000. Gross profit = net sales − $1,765,000
+    = $1,096,000. Operating expenses are the selling expenses (freight-out included), general and administrative
+    expenses and the $88,000 impairment loss on the warehouse held and used; the $21,000 gain on the equipment
+    sale is also included, because ASC 360-10-45-4 and 45-5 require impairment losses and gains or losses
+    on sales of long-lived assets that aren't discontinued operations to be included in a subtotal such
+    as income from operations. Income from operations = $365,000. Interest expense and dividend revenue
+    are nonoperating, and the catering division's loss is reported in discontinued operations.

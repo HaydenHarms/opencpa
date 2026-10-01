@@ -1,0 +1,144 @@
+id: far-inventory-rollforward-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory; shrinkage)
+  - 'ASC 606-10-25-30 (transfer of control: FOB destination shipments)'
+  - ASC 606-10-55 (consignment arrangements)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Wark Outdoor Co. uses a perpetual inventory system. Its Year 1 inventory rollforward, taken from
+  the perpetual records, shows beginning inventory of $684,000, purchases of $4,215,000, cost of goods
+  sold of $4,128,000 and ending inventory of $771,000. The December 31 physical count, priced at cost,
+  totals $659,300. Cutoff work finds: purchases include goods costing $38,000 that a supplier shipped
+  on December 28, FOB destination, and that arrived on January 4; goods costing $26,500, shipped to a
+  customer on December 30, FOB destination, and delivered on January 3, were recorded as a December sale
+  and removed from the perpetual records; and goods costing $31,000 that Wark sent to a dealer in November
+  to sell on Wark''s behalf were not counted. What inventory shrinkage should Wark recognize for Year
+  1?'
+choices:
+- id: A
+  text: $16,200
+  rationale: Adds the $26,500 of goods in transit to the customer to the count but leaves them out of
+    the perpetual records. The sale was recorded early, so the records also need the goods restored.
+- id: B
+  text: $42,700
+  rationale: Correct. ($771,000 − $38,000 + $26,500) − ($659,300 + $26,500 + $31,000).
+- id: C
+  text: $73,700
+  rationale: Leaves out the $31,000 of goods held by the consignee. Wark still owns consigned goods, so
+    they are added to the count.
+- id: D
+  text: $80,700
+  rationale: Leaves the $38,000 of goods shipped FOB destination in the perpetual records. They weren't
+    Wark's until they arrived on January 4, so the purchase and the inventory are removed from Year 1.
+answer: B
+explanation: 'Corrected perpetual balance: $771,000 − $38,000 (goods shipped FOB destination belong to
+  the seller until delivered) + $26,500 (goods shipped FOB destination to the customer are still Wark''s)
+  = $759,500. Corrected count: $659,300 + $26,500 goods in transit to the customer + $31,000 consigned
+  goods = $716,800. Shrinkage = $759,500 − $716,800 = $42,700. The goods in transit to the customer affect
+  both sides equally.'
+variants:
+- stem: 'Warkworth Outdoor Co. uses a perpetual inventory system. Its Year 1 inventory rollforward, taken
+    from the perpetual records, shows beginning inventory of $512,000, purchases of $3,160,000, cost of
+    goods sold of $3,094,000 and ending inventory of $578,000. The December 31 physical count, priced
+    at cost, totals $493,300. Cutoff work finds: purchases include goods costing $28,500 that a supplier
+    shipped on December 28, FOB destination, and that arrived on January 4; goods costing $19,800, shipped
+    to a customer on December 30, FOB destination, and delivered on January 3, were recorded as a December
+    sale and removed from the perpetual records; and goods costing $23,200 that Warkworth sent to a dealer
+    in November to sell on Warkworth''s behalf were not counted. What inventory shrinkage should Warkworth
+    recognize for Year 1?'
+  choices:
+  - id: A
+    text: $33,000
+    rationale: Correct. ($578,000 − $28,500 + $19,800) − ($493,300 + $19,800 + $23,200).
+  - id: B
+    text: $52,800
+    rationale: Restores the $19,800 of goods in transit to the customer to the perpetual records but not
+      to the count. They were Warkworth's at year-end and weren't in the warehouse, so both the records
+      and the count must include them.
+  - id: C
+    text: $56,200
+    rationale: Leaves out the $23,200 of goods held by the consignee. Warkworth still owns consigned goods,
+      so they are added to the count.
+  - id: D
+    text: $61,500
+    rationale: Leaves the $28,500 of goods shipped FOB destination in the perpetual records. They weren't
+      Warkworth's until they arrived on January 4, so the purchase and the inventory are removed from
+      Year 1.
+  answer: A
+  explanation: 'Corrected perpetual balance: $578,000 − $28,500 (goods shipped FOB destination belong
+    to the seller until delivered) + $19,800 (goods shipped FOB destination to the customer are still
+    Warkworth''s) = $569,300. Corrected count: $493,300 + $19,800 goods in transit to the customer + $23,200
+    consigned goods = $536,300. Shrinkage = $569,300 − $536,300 = $33,000. The goods in transit to the
+    customer affect both sides equally.'
+- stem: 'Wooler Outdoor Co. uses a perpetual inventory system. Its Year 1 inventory rollforward, taken
+    from the perpetual records, shows beginning inventory of $856,000, purchases of $5,270,000, cost of
+    goods sold of $5,162,000 and ending inventory of $964,000. The December 31 physical count, priced
+    at cost, totals $825,100. Cutoff work finds: purchases include goods costing $47,500 that a supplier
+    shipped on December 28, FOB destination, and that arrived on January 4; goods costing $33,100, shipped
+    to a customer on December 30, FOB destination, and delivered on January 3, were recorded as a December
+    sale and removed from the perpetual records; and goods costing $38,800 that Wooler sent to a dealer
+    in November to sell on Wooler''s behalf were not counted. What inventory shrinkage should Wooler recognize
+    for Year 1?'
+  choices:
+  - id: A
+    text: $19,500
+    rationale: Adds the $33,100 of goods in transit to the customer to the count but leaves them out of
+      the perpetual records. The sale was recorded early, so the records also need the goods restored.
+  - id: B
+    text: $52,600
+    rationale: Correct. ($964,000 − $47,500 + $33,100) − ($825,100 + $33,100 + $38,800).
+  - id: C
+    text: $85,700
+    rationale: Restores the $33,100 of goods in transit to the customer to the perpetual records but not
+      to the count. They were Wooler's at year-end and weren't in the warehouse, so both the records and
+      the count must include them.
+  - id: D
+    text: $100,100
+    rationale: Leaves the $47,500 of goods shipped FOB destination in the perpetual records. They weren't
+      Wooler's until they arrived on January 4, so the purchase and the inventory are removed from Year
+      1.
+  answer: B
+  explanation: 'Corrected perpetual balance: $964,000 − $47,500 (goods shipped FOB destination belong
+    to the seller until delivered) + $33,100 (goods shipped FOB destination to the customer are still
+    Wooler''s) = $949,600. Corrected count: $825,100 + $33,100 goods in transit to the customer + $38,800
+    consigned goods = $897,000. Shrinkage = $949,600 − $897,000 = $52,600. The goods in transit to the
+    customer affect both sides equally.'
+- stem: 'Glenridding Outdoor Co. uses a perpetual inventory system. Its Year 1 inventory rollforward,
+    taken from the perpetual records, shows beginning inventory of $398,000, purchases of $2,455,000,
+    cost of goods sold of $2,404,000 and ending inventory of $449,000. The December 31 physical count,
+    priced at cost, totals $384,000. Cutoff work finds: purchases include goods costing $22,100 that a
+    supplier shipped on December 28, FOB destination, and that arrived on January 4; goods costing $15,400,
+    shipped to a customer on December 30, FOB destination, and delivered on January 3, were recorded as
+    a December sale and removed from the perpetual records; and goods costing $18,100 that Glenridding
+    sent to a dealer in November to sell on Glenridding''s behalf were not counted. What inventory shrinkage
+    should Glenridding recognize for Year 1?'
+  choices:
+  - id: A
+    text: $9,400
+    rationale: Adds the $15,400 of goods in transit to the customer to the count but leaves them out of
+      the perpetual records. The sale was recorded early, so the records also need the goods restored.
+  - id: B
+    text: $24,800
+    rationale: Correct. ($449,000 − $22,100 + $15,400) − ($384,000 + $15,400 + $18,100).
+  - id: C
+    text: $40,200
+    rationale: Restores the $15,400 of goods in transit to the customer to the perpetual records but not
+      to the count. They were Glenridding's at year-end and weren't in the warehouse, so both the records
+      and the count must include them.
+  - id: D
+    text: $42,900
+    rationale: Leaves out the $18,100 of goods held by the consignee. Glenridding still owns consigned
+      goods, so they are added to the count.
+  answer: B
+  explanation: 'Corrected perpetual balance: $449,000 − $22,100 (goods shipped FOB destination belong
+    to the seller until delivered) + $15,400 (goods shipped FOB destination to the customer are still
+    Glenridding''s) = $442,300. Corrected count: $384,000 + $15,400 goods in transit to the customer +
+    $18,100 consigned goods = $417,500. Shrinkage = $442,300 − $417,500 = $24,800. The goods in transit
+    to the customer affect both sides equally.'

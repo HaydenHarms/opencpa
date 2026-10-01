@@ -1,0 +1,139 @@
+id: far-receivables-credit-losses-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 326-20 (current expected credit losses: loss-rate method by aging; write-offs and recoveries)'
+  - 'ASU 2025-05 (practical expedient for current accounts receivable and contract assets: conditions
+    at the balance sheet date assumed to persist; elected here)'
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Falstone Supply Corp., a public business entity, has adopted ASU 2025-05 and elects its practical
+  expedient for current trade receivables. Its allowance for credit losses had a credit balance of $52,000
+  at January 1, Year 2. During Year 2, Falstone wrote off $31,000 of customer accounts and collected $4,500
+  on an account it had written off in Year 1. Its December 31, Year 2, aging of trade receivables, all
+  due within 60 days of sale, with loss rates based on its historical loss experience adjusted for conditions
+  at year-end, is: not yet due, $1,240,000 (0.8%); 1 to 30 days past due, $386,000 (3%); 31 to 90 days
+  past due, $142,000 (12%); more than 90 days past due, $58,000 (45%). Its economists'' reasonable and
+  supportable forecast calls for a recession in Year 3 that would add 1 percentage point to each loss
+  rate. What credit loss expense should Falstone recognize for Year 2?'
+choices:
+- id: A
+  text: $39,140
+  rationale: Correct. $64,640 required − ($52,000 − $31,000 + $4,500).
+- id: B
+  text: $43,640
+  rationale: Ignores the $4,500 recovery. Collecting an account written off earlier reinstates it and
+    credits the allowance, which reduces the expense needed.
+- id: C
+  text: $57,400
+  rationale: Adds the forecast increase of 1 percentage point to each rate. Under the practical expedient
+    Falstone elected, it assumes the conditions at the balance sheet date continue for the receivables'
+    remaining lives, so it adjusts historical losses for current conditions only.
+- id: D
+  text: $64,640
+  rationale: Records the whole required allowance of $64,640 as expense. Expense is the amount needed
+    to bring the existing balance ($25,500) up to $64,640.
+answer: A
+explanation: 'Required allowance: $9,920 + $11,580 + $17,040 + $26,100 = $64,640. With the ASU 2025-05
+  practical expedient, Falstone assumes the conditions at the balance sheet date persist over the receivables''
+  remaining lives, so the recession forecast isn''t added to the rates. Allowance before adjustment =
+  $52,000 − $31,000 write-offs + $4,500 recovery = $25,500. Credit loss expense = $64,640 − $25,500 =
+  $39,140.'
+variants:
+- stem: 'Haltwhistle Supply Corp., a public business entity, has adopted ASU 2025-05 and elects its practical
+    expedient for current trade receivables. Its allowance for credit losses had a credit balance of $34,000
+    at January 1, Year 2. During Year 2, Haltwhistle wrote off $24,000 of customer accounts and collected
+    $3,800 on an account it had written off in Year 1. Its December 31, Year 2, aging of trade receivables,
+    all due within 60 days of sale, with loss rates based on its historical loss experience adjusted for
+    conditions at year-end, is: not yet due, $968,000 (0.6%); 1 to 30 days past due, $302,000 (2.5%);
+    31 to 90 days past due, $111,000 (10%); more than 90 days past due, $46,000 (40%). Its economists''
+    reasonable and supportable forecast calls for a recession in Year 3 that would add 1.5 percentage
+    points to each loss rate. What credit loss expense should Haltwhistle recognize for Year 2?'
+  choices:
+  - id: A
+    text: $5,058
+    rationale: Ignores the $24,000 of write-offs, which used up part of the beginning allowance.
+  - id: B
+    text: $29,058
+    rationale: Correct. $42,858 required − ($34,000 − $24,000 + $3,800).
+  - id: C
+    text: $42,858
+    rationale: Records the whole required allowance of $42,858 as expense. Expense is the amount needed
+      to bring the existing balance ($13,800) up to $42,858.
+  - id: D
+    text: $50,463
+    rationale: Adds the forecast increase of 1.5 percentage points to each rate. Under the practical expedient
+      Haltwhistle elected, it assumes the conditions at the balance sheet date continue for the receivables'
+      remaining lives, so it adjusts historical losses for current conditions only.
+  answer: B
+  explanation: 'Required allowance: $5,808 + $7,550 + $11,100 + $18,400 = $42,858. With the ASU 2025-05
+    practical expedient, Haltwhistle assumes the conditions at the balance sheet date persist over the
+    receivables'' remaining lives, so the recession forecast isn''t added to the rates. Allowance before
+    adjustment = $34,000 − $24,000 write-offs + $3,800 recovery = $13,800. Credit loss expense = $42,858
+    − $13,800 = $29,058.'
+- stem: 'Howick Supply Corp., a public business entity, has adopted ASU 2025-05 and elects its practical
+    expedient for current trade receivables. Its allowance for credit losses had a credit balance of $72,000
+    at January 1, Year 2. During Year 2, Howick wrote off $51,000 of customer accounts and collected $7,200
+    on an account it had written off in Year 1. Its December 31, Year 2, aging of trade receivables, all
+    due within 60 days of sale, with loss rates based on its historical loss experience adjusted for conditions
+    at year-end, is: not yet due, $1,585,000 (0.8%); 1 to 30 days past due, $494,000 (3.5%); 31 to 90
+    days past due, $182,000 (14%); more than 90 days past due, $74,000 (50%). Its economists'' reasonable
+    and supportable forecast calls for a recession in Year 3 that would add 1 percentage point to each
+    loss rate. What credit loss expense should Howick recognize for Year 2?'
+  choices:
+  - id: A
+    text: $13,250
+    rationale: Ignores the $51,000 of write-offs, which used up part of the beginning allowance.
+  - id: B
+    text: $64,250
+    rationale: Correct. $92,450 required − ($72,000 − $51,000 + $7,200).
+  - id: C
+    text: $71,450
+    rationale: Ignores the $7,200 recovery. Collecting an account written off earlier reinstates it and
+      credits the allowance, which reduces the expense needed.
+  - id: D
+    text: $92,450
+    rationale: Records the whole required allowance of $92,450 as expense. Expense is the amount needed
+      to bring the existing balance ($28,200) up to $92,450.
+  answer: B
+  explanation: 'Required allowance: $12,680 + $17,290 + $25,480 + $37,000 = $92,450. With the ASU 2025-05
+    practical expedient, Howick assumes the conditions at the balance sheet date persist over the receivables''
+    remaining lives, so the recession forecast isn''t added to the rates. Allowance before adjustment
+    = $72,000 − $51,000 write-offs + $7,200 recovery = $28,200. Credit loss expense = $92,450 − $28,200
+    = $64,250.'
+- stem: 'Kirkharle Supply Corp., a public business entity, has adopted ASU 2025-05 and elects its practical
+    expedient for current trade receivables. Its allowance for credit losses had a credit balance of $36,000
+    at January 1, Year 2. During Year 2, Kirkharle wrote off $26,000 of customer accounts and collected
+    $3,500 on an account it had written off in Year 1. Its December 31, Year 2, aging of trade receivables,
+    all due within 60 days of sale, with loss rates based on its historical loss experience adjusted for
+    conditions at year-end, is: not yet due, $742,000 (1%); 1 to 30 days past due, $231,000 (4%); 31 to
+    90 days past due, $85,000 (15%); more than 90 days past due, $35,000 (50%). Its economists'' reasonable
+    and supportable forecast calls for a recession in Year 3 that would add 2 percentage points to each
+    loss rate. What credit loss expense should Kirkharle recognize for Year 2?'
+  choices:
+  - id: A
+    text: $7,410
+    rationale: Ignores the $26,000 of write-offs, which used up part of the beginning allowance.
+  - id: B
+    text: $33,410
+    rationale: Correct. $46,910 required − ($36,000 − $26,000 + $3,500).
+  - id: C
+    text: $36,910
+    rationale: Ignores the $3,500 recovery. Collecting an account written off earlier reinstates it and
+      credits the allowance, which reduces the expense needed.
+  - id: D
+    text: $55,270
+    rationale: Adds the forecast increase of 2 percentage points to each rate. Under the practical expedient
+      Kirkharle elected, it assumes the conditions at the balance sheet date continue for the receivables'
+      remaining lives, so it adjusts historical losses for current conditions only.
+  answer: B
+  explanation: 'Required allowance: $7,420 + $9,240 + $12,750 + $17,500 = $46,910. With the ASU 2025-05
+    practical expedient, Kirkharle assumes the conditions at the balance sheet date persist over the receivables''
+    remaining lives, so the recession forecast isn''t added to the rates. Allowance before adjustment
+    = $36,000 − $26,000 write-offs + $3,500 recovery = $13,500. Credit loss expense = $46,910 − $13,500
+    = $33,410.'

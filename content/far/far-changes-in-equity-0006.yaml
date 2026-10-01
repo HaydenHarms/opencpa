@@ -1,0 +1,161 @@
+id: far-changes-in-equity-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 220-10-45 (other comprehensive income; reclassification adjustments)
+  - 'ASC 321-10-35 (equity securities: fair value changes in net income)'
+  - 'ASC 326-30 (credit losses on available-for-sale debt securities: allowance through net income)'
+  - 'ASC 320-10-35 (available-for-sale debt securities: unrealized holding gains and losses in OCI)'
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Whalton Corp.''s draft Year 2 statement of changes in stockholders'' equity shows accumulated other
+  comprehensive income (AOCI) of $146,000 at January 1 plus other comprehensive income of $20,000, giving
+  $166,000 at December 31. The OCI line is the net change in the fair value of all of Whalton''s securities
+  during Year 2: an increase of $58,000 in its portfolio of available-for-sale corporate bonds; an increase
+  of $34,000 in the common shares it holds, which have readily determinable fair values; and a decrease
+  of $72,000 in a Ponteland Mills bond, classified as available for sale, that Whalton bought at par in
+  March, Year 2. Whalton''s analysis of the cash flows it expects to collect from Ponteland Mills puts
+  the expected credit loss on that bond at $27,000; Whalton does not intend to sell the bond and is not
+  likely to be required to sell it before recovery. The supporting schedules also show that in November,
+  Whalton sold available-for-sale bonds whose fair value had not changed during Year 2; their unrealized
+  gain of $19,000, included in AOCI at January 1, was reported in Year 2 net income as a realized gain.
+  Ignore income taxes. What AOCI should Whalton''s corrected statement report at December 31, Year 2?'
+choices:
+- id: A
+  text: $113,000
+  rationale: Leaves the $27,000 credit loss in OCI. For an available-for-sale debt security, the credit
+    loss is recorded through an allowance and net income; only the $45,000 of the decline not due to credit
+    goes to OCI.
+- id: B
+  text: $140,000
+  rationale: Correct. $146,000 + $58,000 − ($72,000 − $27,000) − $19,000.
+- id: C
+  text: $159,000
+  rationale: Leaves the $19,000 of unrealized gain on the bonds sold in accumulated OCI. When a gain on
+    an available-for-sale security is realized in net income, a reclassification adjustment removes it
+    from accumulated OCI.
+- id: D
+  text: $174,000
+  rationale: Leaves the $34,000 increase in the fair value of the equity securities in OCI. Changes in
+    the fair value of equity securities with readily determinable fair values are reported in net income.
+answer: B
+explanation: 'Corrected OCI for Year 2: the $58,000 unrealized gain on the available-for-sale portfolio;
+  the Ponteland Mills bond''s decline less its credit loss, − ($72,000 − $27,000) = − $45,000, because
+  the $27,000 credit loss is recognized in net income through an allowance; and a reclassification adjustment
+  of − $19,000 for the gain realized on the bonds sold. The $34,000 gain on the equity securities belongs
+  in net income. AOCI = $146,000 + $58,000 − $45,000 − $19,000 = $140,000.'
+variants:
+- stem: 'Widdrington Corp.''s draft Year 2 statement of changes in stockholders'' equity shows accumulated
+    other comprehensive income (AOCI) of $212,000 at January 1 plus other comprehensive income of $32,000,
+    giving $244,000 at December 31. The OCI line is the net change in the fair value of all of Widdrington''s
+    securities during Year 2: an increase of $81,000 in its portfolio of available-for-sale corporate
+    bonds; an increase of $47,000 in the common shares it holds, which have readily determinable fair
+    values; and a decrease of $96,000 in a Slaley Foods bond, classified as available for sale, that Widdrington
+    bought at par in March, Year 2. Widdrington''s analysis of the cash flows it expects to collect from
+    Slaley Foods puts the expected credit loss on that bond at $38,000; Widdrington does not intend to
+    sell the bond and is not likely to be required to sell it before recovery. The supporting schedules
+    also show that in November, Widdrington sold available-for-sale bonds whose fair value had not changed
+    during Year 2; their unrealized gain of $26,000, included in AOCI at January 1, was reported in Year
+    2 net income as a realized gain. Ignore income taxes. What AOCI should Widdrington''s corrected statement
+    report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $209,000
+    rationale: Correct. $212,000 + $81,000 − ($96,000 − $38,000) − $26,000.
+  - id: B
+    text: $244,000
+    rationale: Accepts the draft. It includes the equity securities' gain, puts the whole decline on the
+      Slaley Foods bond in OCI and makes no reclassification for the bonds sold.
+  - id: C
+    text: $256,000
+    rationale: Leaves the $47,000 increase in the fair value of the equity securities in OCI. Changes
+      in the fair value of equity securities with readily determinable fair values are reported in net
+      income.
+  - id: D
+    text: $267,000
+    rationale: Removes the whole $96,000 decline on the Slaley Foods bond from OCI. Only the $38,000 credit
+      loss goes to net income; the rest of the decline is an unrealized loss in OCI.
+  answer: A
+  explanation: 'Corrected OCI for Year 2: the $81,000 unrealized gain on the available-for-sale portfolio;
+    the Slaley Foods bond''s decline less its credit loss, − ($96,000 − $38,000) = − $58,000, because
+    the $38,000 credit loss is recognized in net income through an allowance; and a reclassification adjustment
+    of − $26,000 for the gain realized on the bonds sold. The $47,000 gain on the equity securities belongs
+    in net income. AOCI = $212,000 + $81,000 − $58,000 − $26,000 = $209,000.'
+- stem: 'Yetlington Corp.''s draft Year 2 statement of changes in stockholders'' equity shows accumulated
+    other comprehensive income (AOCI) of $98,000 at January 1 plus other comprehensive income of $13,000,
+    giving $111,000 at December 31. The OCI line is the net change in the fair value of all of Yetlington''s
+    securities during Year 2: an increase of $42,000 in its portfolio of available-for-sale corporate
+    bonds; an increase of $25,000 in the common shares it holds, which have readily determinable fair
+    values; and a decrease of $54,000 in a Stamfordham Paper bond, classified as available for sale, that
+    Yetlington bought at par in March, Year 2. Yetlington''s analysis of the cash flows it expects to
+    collect from Stamfordham Paper puts the expected credit loss on that bond at $19,000; Yetlington does
+    not intend to sell the bond and is not likely to be required to sell it before recovery. The supporting
+    schedules also show that in November, Yetlington sold available-for-sale bonds whose fair value had
+    not changed during Year 2; their unrealized gain of $14,000, included in AOCI at January 1, was reported
+    in Year 2 net income as a realized gain. Ignore income taxes. What AOCI should Yetlington''s corrected
+    statement report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $72,000
+    rationale: Leaves the $19,000 credit loss in OCI. For an available-for-sale debt security, the credit
+      loss is recorded through an allowance and net income; only the $35,000 of the decline not due to
+      credit goes to OCI.
+  - id: B
+    text: $91,000
+    rationale: Correct. $98,000 + $42,000 − ($54,000 − $19,000) − $14,000.
+  - id: C
+    text: $111,000
+    rationale: Accepts the draft. It includes the equity securities' gain, puts the whole decline on the
+      Stamfordham Paper bond in OCI and makes no reclassification for the bonds sold.
+  - id: D
+    text: $126,000
+    rationale: Removes the whole $54,000 decline on the Stamfordham Paper bond from OCI. Only the $19,000
+      credit loss goes to net income; the rest of the decline is an unrealized loss in OCI.
+  answer: B
+  explanation: 'Corrected OCI for Year 2: the $42,000 unrealized gain on the available-for-sale portfolio;
+    the Stamfordham Paper bond''s decline less its credit loss, − ($54,000 − $19,000) = − $35,000, because
+    the $19,000 credit loss is recognized in net income through an allowance; and a reclassification adjustment
+    of − $14,000 for the gain realized on the bonds sold. The $25,000 gain on the equity securities belongs
+    in net income. AOCI = $98,000 + $42,000 − $35,000 − $14,000 = $91,000.'
+- stem: 'Bywell Corp.''s draft Year 2 statement of changes in stockholders'' equity shows accumulated
+    other comprehensive income (AOCI) of $275,000 at January 1 plus other comprehensive income of $47,000,
+    giving $322,000 at December 31. The OCI line is the net change in the fair value of all of Bywell''s
+    securities during Year 2: an increase of $104,000 in its portfolio of available-for-sale corporate
+    bonds; an increase of $61,000 in the common shares it holds, which have readily determinable fair
+    values; and a decrease of $118,000 in a Simonburn Glass bond, classified as available for sale, that
+    Bywell bought at par in March, Year 2. Bywell''s analysis of the cash flows it expects to collect
+    from Simonburn Glass puts the expected credit loss on that bond at $46,000; Bywell does not intend
+    to sell the bond and is not likely to be required to sell it before recovery. The supporting schedules
+    also show that in November, Bywell sold available-for-sale bonds whose fair value had not changed
+    during Year 2; their unrealized gain of $33,000, included in AOCI at January 1, was reported in Year
+    2 net income as a realized gain. Ignore income taxes. What AOCI should Bywell''s corrected statement
+    report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $274,000
+    rationale: Correct. $275,000 + $104,000 − ($118,000 − $46,000) − $33,000.
+  - id: B
+    text: $307,000
+    rationale: Leaves the $33,000 of unrealized gain on the bonds sold in accumulated OCI. When a gain
+      on an available-for-sale security is realized in net income, a reclassification adjustment removes
+      it from accumulated OCI.
+  - id: C
+    text: $335,000
+    rationale: Leaves the $61,000 increase in the fair value of the equity securities in OCI. Changes
+      in the fair value of equity securities with readily determinable fair values are reported in net
+      income.
+  - id: D
+    text: $346,000
+    rationale: Removes the whole $118,000 decline on the Simonburn Glass bond from OCI. Only the $46,000
+      credit loss goes to net income; the rest of the decline is an unrealized loss in OCI.
+  answer: A
+  explanation: 'Corrected OCI for Year 2: the $104,000 unrealized gain on the available-for-sale portfolio;
+    the Simonburn Glass bond''s decline less its credit loss, − ($118,000 − $46,000) = − $72,000, because
+    the $46,000 credit loss is recognized in net income through an allowance; and a reclassification adjustment
+    of − $33,000 for the gain realized on the bonds sold. The $61,000 gain on the equity securities belongs
+    in net income. AOCI = $275,000 + $104,000 − $72,000 − $33,000 = $274,000.'

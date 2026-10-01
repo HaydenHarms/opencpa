@@ -1,0 +1,140 @@
+id: far-ppe-rollforward-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 360-10-30 (cost of property, plant and equipment: sales tax, installation and testing)'
+  - ASC 360-10-40 (derecognition at cost with accumulated depreciation)
+  - ASC 360-10 (property, plant and equipment; repairs and maintenance)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Threlkeld Co.''s staff prepared this Year 2 rollforward of the equipment account (at cost): January
+  1 balance $4,260,000; additions $815,000; disposals ($72,000); December 31 balance $5,003,000. The controller
+  reviews the supporting documents. The additions are the capital expenditures report, which includes
+  a new press recorded at its $420,000 invoice price, a delivery truck, and $46,000 of routine repair
+  and maintenance work on existing machines; the $25,200 of sales tax on the press and the $31,000 paid
+  to install and test it before use were charged to expense. The disposal is a machine sold in July for
+  $80,000 that had cost $265,000 and had accumulated depreciation of $193,000 at the date of sale. In
+  October, Threlkeld scrapped a fully depreciated lathe that had cost $94,000, and no entry was made.
+  What equipment balance should the corrected rollforward show at December 31, Year 2?'
+choices:
+- id: A
+  text: $4,726,200
+  rationale: Correct. $5,003,000 − $46,000 + $56,200 − $193,000 − $94,000.
+- id: B
+  text: $4,772,200
+  rationale: Keeps the $46,000 of routine repairs in the additions. Ordinary repairs and maintenance that
+    don't extend an asset's life or improve it are expensed.
+- id: C
+  text: $4,820,200
+  rationale: Leaves the $94,000 lathe in the equipment account. An asset that is scrapped is removed at
+    cost, with its accumulated depreciation, even though it was fully depreciated.
+- id: D
+  text: $4,919,200
+  rationale: Removes only the sold machine's $72,000 carrying amount from gross equipment. The equipment
+    account carries cost, so the $265,000 cost comes out (and the $193,000 of accumulated depreciation
+    comes out of that account).
+answer: A
+explanation: 'Additions: the routine repairs are expensed (− $46,000), and the press''s cost includes
+  the sales tax and installation and testing (+ $56,200). Disposals at cost: the machine sold comes out
+  at $265,000, not its $72,000 carrying amount (− $193,000 more), and the scrapped lathe comes out at
+  $94,000. Corrected balance = $5,003,000 − $46,000 + $56,200 − $193,000 − $94,000 = $4,726,200.'
+variants:
+- stem: 'Troutbeck Co.''s staff prepared this Year 2 rollforward of the equipment account (at cost): January
+    1 balance $3,180,000; additions $607,000; disposals ($54,000); December 31 balance $3,733,000. The
+    controller reviews the supporting documents. The additions are the capital expenditures report, which
+    includes a new press recorded at its $310,000 invoice price, a delivery truck, and $34,000 of routine
+    repair and maintenance work on existing machines; the $18,600 of sales tax on the press and the $23,000
+    paid to install and test it before use were charged to expense. The disposal is a machine sold in
+    July for $61,000 that had cost $198,000 and had accumulated depreciation of $144,000 at the date of
+    sale. In October, Troutbeck scrapped a fully depreciated lathe that had cost $70,000, and no entry
+    was made. What equipment balance should the corrected rollforward show at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $3,485,000
+    rationale: Leaves the $18,600 of sales tax and $23,000 of installation and testing out of the press's
+      cost. Costs needed to get an asset ready for its intended use are capitalized.
+  - id: B
+    text: $3,526,600
+    rationale: Correct. $3,733,000 − $34,000 + $41,600 − $144,000 − $70,000.
+  - id: C
+    text: $3,560,600
+    rationale: Keeps the $34,000 of routine repairs in the additions. Ordinary repairs and maintenance
+      that don't extend an asset's life or improve it are expensed.
+  - id: D
+    text: $3,663,600
+    rationale: Removes the sold machine at its $61,000 sale price. The equipment account carries cost,
+      so the machine comes out at its $198,000 cost; the difference between the price and the carrying
+      amount is a gain or loss.
+  answer: B
+  explanation: 'Additions: the routine repairs are expensed (− $34,000), and the press''s cost includes
+    the sales tax and installation and testing (+ $41,600). Disposals at cost: the machine sold comes
+    out at $198,000, not its $54,000 carrying amount (− $144,000 more), and the scrapped lathe comes out
+    at $70,000. Corrected balance = $3,733,000 − $34,000 + $41,600 − $144,000 − $70,000 = $3,526,600.'
+- stem: 'Wythburn Co.''s staff prepared this Year 2 rollforward of the equipment account (at cost): January
+    1 balance $5,640,000; additions $1,078,000; disposals ($96,000); December 31 balance $6,622,000. The
+    controller reviews the supporting documents. The additions are the capital expenditures report, which
+    includes a new press recorded at its $560,000 invoice price, a delivery truck, and $61,000 of routine
+    repair and maintenance work on existing machines; the $33,600 of sales tax on the press and the $41,000
+    paid to install and test it before use were charged to expense. The disposal is a machine sold in
+    July for $104,000 that had cost $352,000 and had accumulated depreciation of $256,000 at the date
+    of sale. In October, Wythburn scrapped a fully depreciated lathe that had cost $125,000, and no entry
+    was made. What equipment balance should the corrected rollforward show at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $6,180,000
+    rationale: Leaves the $33,600 of sales tax and $41,000 of installation and testing out of the press's
+      cost. Costs needed to get an asset ready for its intended use are capitalized.
+  - id: B
+    text: $6,254,600
+    rationale: Correct. $6,622,000 − $61,000 + $74,600 − $256,000 − $125,000.
+  - id: C
+    text: $6,379,600
+    rationale: Leaves the $125,000 lathe in the equipment account. An asset that is scrapped is removed
+      at cost, with its accumulated depreciation, even though it was fully depreciated.
+  - id: D
+    text: $6,510,600
+    rationale: Removes only the sold machine's $96,000 carrying amount from gross equipment. The equipment
+      account carries cost, so the $352,000 cost comes out (and the $256,000 of accumulated depreciation
+      comes out of that account).
+  answer: B
+  explanation: 'Additions: the routine repairs are expensed (− $61,000), and the press''s cost includes
+    the sales tax and installation and testing (+ $74,600). Disposals at cost: the machine sold comes
+    out at $352,000, not its $96,000 carrying amount (− $256,000 more), and the scrapped lathe comes out
+    at $125,000. Corrected balance = $6,622,000 − $61,000 + $74,600 − $256,000 − $125,000 = $6,254,600.'
+- stem: 'Watendlath Co.''s staff prepared this Year 2 rollforward of the equipment account (at cost):
+    January 1 balance $2,370,000; additions $452,000; disposals ($40,000); December 31 balance $2,782,000.
+    The controller reviews the supporting documents. The additions are the capital expenditures report,
+    which includes a new press recorded at its $230,000 invoice price, a delivery truck, and $25,000 of
+    routine repair and maintenance work on existing machines; the $13,800 of sales tax on the press and
+    the $17,000 paid to install and test it before use were charged to expense. The disposal is a machine
+    sold in July for $45,000 that had cost $147,000 and had accumulated depreciation of $107,000 at the
+    date of sale. In October, Watendlath scrapped a fully depreciated lathe that had cost $52,000, and
+    no entry was made. What equipment balance should the corrected rollforward show at December 31, Year
+    2?'
+  choices:
+  - id: A
+    text: $2,598,000
+    rationale: Leaves the $13,800 of sales tax and $17,000 of installation and testing out of the press's
+      cost. Costs needed to get an asset ready for its intended use are capitalized.
+  - id: B
+    text: $2,628,800
+    rationale: Correct. $2,782,000 − $25,000 + $30,800 − $107,000 − $52,000.
+  - id: C
+    text: $2,680,800
+    rationale: Leaves the $52,000 lathe in the equipment account. An asset that is scrapped is removed
+      at cost, with its accumulated depreciation, even though it was fully depreciated.
+  - id: D
+    text: $2,730,800
+    rationale: Removes the sold machine at its $45,000 sale price. The equipment account carries cost,
+      so the machine comes out at its $147,000 cost; the difference between the price and the carrying
+      amount is a gain or loss.
+  answer: B
+  explanation: 'Additions: the routine repairs are expensed (− $25,000), and the press''s cost includes
+    the sales tax and installation and testing (+ $30,800). Disposals at cost: the machine sold comes
+    out at $147,000, not its $40,000 carrying amount (− $107,000 more), and the scrapped lathe comes out
+    at $52,000. Corrected balance = $2,782,000 − $25,000 + $30,800 − $107,000 − $52,000 = $2,628,800.'

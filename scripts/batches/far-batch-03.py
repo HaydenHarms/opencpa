@@ -161,7 +161,7 @@ mcq("far-receivables-reconciliation-0001", A2, "Trade receivables", AN,
     "D",
     """Reconcile first: the subledger is missing the $9,000 sale, so its debit balances become $512,000 and its net becomes $498,000, which agrees with the general ledger. For presentation, customer accounts with credit balances are reclassified as liabilities rather than netted against other customers' debit balances. Accounts receivable = $512,000; customer credit balances of $14,000 are reported as current liabilities."""),
 
-mcq("far-accrued-liabilities-0001", A2, "Payables and accrued liabilities", AN,
+mcq("far-accrued-liabilities-0001", A2, "Payables and accrued liabilities", AP,
     ["ASC 710-10 (compensated absences)", "ASC 450-20 (self-insurance and incurred but not reported claims)", "ASC 405-10 (liabilities)"],
     """Morrow Co.'s general ledger shows accrued liabilities of $210,000 at December 31: accrued wages $30,000, accrued vacation $40,000, accrued bonus $100,000, and accrued self-insurance claims $40,000. Supporting schedules show: wages earned but unpaid for the last three days of the year were $30,000; employees had earned $48,000 of vested, unused vacation pay; the bonus plan pays 10% of income after deducting the bonus, and income before the bonus was $1,100,000; and for its self-insured health plan, Morrow owes $10,000 on claims reported but unpaid, and its actuary estimates $55,000 of claims incurred but not yet reported. What amount should Morrow report as accrued liabilities?""",
     [("$188,000", "Accrues only the claims already reported. Claims incurred but not yet reported are part of a self-insurer's liability."),

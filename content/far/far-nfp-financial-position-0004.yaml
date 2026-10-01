@@ -1,0 +1,159 @@
+id: far-nfp-financial-position-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of financial position (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-210 (not-for-profit statement of financial position)
+  - ASC 958-205-45 (net assets with and without donor restrictions; underwater endowment funds, as amended
+    by ASU 2016-14)
+  - ASC 958-605-25 (conditional contributions; refundable advances)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: At June 30, Year 2, Matfen Reading Society, a not-for-profit entity, has total assets of $3,840,000
+  and total liabilities of $612,000. The assets include an endowment fund created with gifts of $1,500,000
+  that donors require Matfen to hold in perpetuity, now invested in securities with a fair value of $1,380,000
+  after a market decline; $164,000 of unspent cash gifts that donors restricted to a reading program for
+  adults; $225,000 of unconditional pledges, due in Year 3, that donors restricted to buying a bookmobile;
+  and $400,000 of investments that Matfen's board has set aside to function as an endowment. The liabilities
+  include $90,000 that a foundation paid in advance under a grant that it will pay only to the extent
+  Matfen incurs costs for a new tutoring program and that Matfen must return otherwise; Matfen has incurred
+  none of those costs. What amount should Matfen report as net assets without donor restrictions at June
+  30, Year 2?
+choices:
+- id: A
+  text: $1,059,000
+  rationale: Leaves out the $400,000 that the board set aside as a quasi-endowment. A board designation
+    is a self-imposed limit that the board can reverse; the amount stays in net assets without donor restrictions.
+- id: B
+  text: $1,339,000
+  rationale: Charges the $120,000 by which the endowment has fallen below the original gift to net assets
+    without donor restrictions. That was the rule before ASU 2016-14; now an underwater endowment fund
+    stays in net assets with donor restrictions at its fair value.
+- id: C
+  text: $1,459,000
+  rationale: Correct. $3,840,000 − $612,000 − ($1,380,000 + $164,000 + $225,000).
+- id: D
+  text: $1,549,000
+  rationale: Treats the $90,000 grant advance as unrestricted contribution revenue. The grant is conditional
+    on Matfen incurring qualifying costs, which it hasn't done, so the advance is a refundable advance
+    (a liability).
+answer: C
+explanation: 'Net assets with donor restrictions are the endowment at its $1,380,000 fair value (under
+  ASU 2016-14 an underwater endowment fund is reported in net assets with donor restrictions, and the
+  shortfall below the original gift is disclosed), the $164,000 of purpose-restricted gifts and the $225,000
+  of restricted pledges: $1,769,000. The board-designated quasi-endowment is a self-imposed limit, so
+  it remains without donor restrictions, and the conditional grant advance is a refundable advance, already
+  in liabilities. Net assets without donor restrictions = $3,840,000 − $612,000 − $1,769,000 = $1,459,000.'
+variants:
+- stem: At June 30, Year 2, Mitford Literacy League, a not-for-profit entity, has total assets of $2,960,000
+    and total liabilities of $471,000. The assets include an endowment fund created with gifts of $1,150,000
+    that donors require Mitford to hold in perpetuity, now invested in securities with a fair value of
+    $1,062,000 after a market decline; $127,000 of unspent cash gifts that donors restricted to a reading
+    program for adults; $174,000 of unconditional pledges, due in Year 3, that donors restricted to buying
+    a bookmobile; and $310,000 of investments that Mitford's board has set aside to function as an endowment.
+    The liabilities include $68,000 that a foundation paid in advance under a grant that it will pay only
+    to the extent Mitford incurs costs for a new tutoring program and that Mitford must return otherwise;
+    Mitford has incurred none of those costs. What amount should Mitford report as net assets without
+    donor restrictions at June 30, Year 2?
+  choices:
+  - id: A
+    text: $816,000
+    rationale: Leaves out the $310,000 that the board set aside as a quasi-endowment. A board designation
+      is a self-imposed limit that the board can reverse; the amount stays in net assets without donor
+      restrictions.
+  - id: B
+    text: $1,126,000
+    rationale: Correct. $2,960,000 − $471,000 − ($1,062,000 + $127,000 + $174,000).
+  - id: C
+    text: $1,194,000
+    rationale: Treats the $68,000 grant advance as unrestricted contribution revenue. The grant is conditional
+      on Mitford incurring qualifying costs, which it hasn't done, so the advance is a refundable advance
+      (a liability).
+  - id: D
+    text: $2,489,000
+    rationale: Reports total net assets, $2,960,000 − $471,000. The $1,363,000 of donor-restricted amounts
+      is reported separately as net assets with donor restrictions.
+  answer: B
+  explanation: 'Net assets with donor restrictions are the endowment at its $1,062,000 fair value (under
+    ASU 2016-14 an underwater endowment fund is reported in net assets with donor restrictions, and the
+    shortfall below the original gift is disclosed), the $127,000 of purpose-restricted gifts and the
+    $174,000 of restricted pledges: $1,363,000. The board-designated quasi-endowment is a self-imposed
+    limit, so it remains without donor restrictions, and the conditional grant advance is a refundable
+    advance, already in liabilities. Net assets without donor restrictions = $2,960,000 − $471,000 − $1,363,000
+    = $1,126,000.'
+- stem: At June 30, Year 2, Ovingham Learning Trust, a not-for-profit entity, has total assets of $5,120,000
+    and total liabilities of $818,000. The assets include an endowment fund created with gifts of $2,000,000
+    that donors require Ovingham to hold in perpetuity, now invested in securities with a fair value of
+    $1,846,000 after a market decline; $219,000 of unspent cash gifts that donors restricted to a reading
+    program for adults; $300,000 of unconditional pledges, due in Year 3, that donors restricted to buying
+    a bookmobile; and $530,000 of investments that Ovingham's board has set aside to function as an endowment.
+    The liabilities include $120,000 that a foundation paid in advance under a grant that it will pay
+    only to the extent Ovingham incurs costs for a new tutoring program and that Ovingham must return
+    otherwise; Ovingham has incurred none of those costs. What amount should Ovingham report as net assets
+    without donor restrictions at June 30, Year 2?
+  choices:
+  - id: A
+    text: $1,407,000
+    rationale: Leaves out the $530,000 that the board set aside as a quasi-endowment. A board designation
+      is a self-imposed limit that the board can reverse; the amount stays in net assets without donor
+      restrictions.
+  - id: B
+    text: $1,783,000
+    rationale: Charges the $154,000 by which the endowment has fallen below the original gift to net assets
+      without donor restrictions. That was the rule before ASU 2016-14; now an underwater endowment fund
+      stays in net assets with donor restrictions at its fair value.
+  - id: C
+    text: $1,937,000
+    rationale: Correct. $5,120,000 − $818,000 − ($1,846,000 + $219,000 + $300,000).
+  - id: D
+    text: $4,302,000
+    rationale: Reports total net assets, $5,120,000 − $818,000. The $2,365,000 of donor-restricted amounts
+      is reported separately as net assets with donor restrictions.
+  answer: C
+  explanation: 'Net assets with donor restrictions are the endowment at its $1,846,000 fair value (under
+    ASU 2016-14 an underwater endowment fund is reported in net assets with donor restrictions, and the
+    shortfall below the original gift is disclosed), the $219,000 of purpose-restricted gifts and the
+    $300,000 of restricted pledges: $2,365,000. The board-designated quasi-endowment is a self-imposed
+    limit, so it remains without donor restrictions, and the conditional grant advance is a refundable
+    advance, already in liabilities. Net assets without donor restrictions = $5,120,000 − $818,000 − $2,365,000
+    = $1,937,000.'
+- stem: At June 30, Year 2, Rennington Book Fund, a not-for-profit entity, has total assets of $2,210,000
+    and total liabilities of $356,000. The assets include an endowment fund created with gifts of $860,000
+    that donors require Rennington to hold in perpetuity, now invested in securities with a fair value
+    of $791,000 after a market decline; $94,000 of unspent cash gifts that donors restricted to a reading
+    program for adults; $129,000 of unconditional pledges, due in Year 3, that donors restricted to buying
+    a bookmobile; and $230,000 of investments that Rennington's board has set aside to function as an
+    endowment. The liabilities include $51,000 that a foundation paid in advance under a grant that it
+    will pay only to the extent Rennington incurs costs for a new tutoring program and that Rennington
+    must return otherwise; Rennington has incurred none of those costs. What amount should Rennington
+    report as net assets without donor restrictions at June 30, Year 2?
+  choices:
+  - id: A
+    text: $771,000
+    rationale: Charges the $69,000 by which the endowment has fallen below the original gift to net assets
+      without donor restrictions. That was the rule before ASU 2016-14; now an underwater endowment fund
+      stays in net assets with donor restrictions at its fair value.
+  - id: B
+    text: $840,000
+    rationale: Correct. $2,210,000 − $356,000 − ($791,000 + $94,000 + $129,000).
+  - id: C
+    text: $891,000
+    rationale: Treats the $51,000 grant advance as unrestricted contribution revenue. The grant is conditional
+      on Rennington incurring qualifying costs, which it hasn't done, so the advance is a refundable advance
+      (a liability).
+  - id: D
+    text: $1,854,000
+    rationale: Reports total net assets, $2,210,000 − $356,000. The $1,014,000 of donor-restricted amounts
+      is reported separately as net assets with donor restrictions.
+  answer: B
+  explanation: 'Net assets with donor restrictions are the endowment at its $791,000 fair value (under
+    ASU 2016-14 an underwater endowment fund is reported in net assets with donor restrictions, and the
+    shortfall below the original gift is disclosed), the $94,000 of purpose-restricted gifts and the $129,000
+    of restricted pledges: $1,014,000. The board-designated quasi-endowment is a self-imposed limit, so
+    it remains without donor restrictions, and the conditional grant advance is a refundable advance,
+    already in liabilities. Net assets without donor restrictions = $2,210,000 − $356,000 − $1,014,000
+    = $840,000.'

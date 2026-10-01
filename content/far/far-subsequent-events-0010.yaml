@@ -1,0 +1,145 @@
+id: far-subsequent-events-0010
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 855-10-25 (recognized and nonrecognized subsequent events)
+  - 'ASC 855-10-55 (examples: settlement of litigation; events after the balance sheet date)'
+  - ASC 460-10 (product warranties)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Eskdale Homewares''s draft December 31, Year 1, balance sheet reports total liabilities of $3,460,000,
+  including a $240,000 accrual for a customer''s suit over an injury at one of Eskdale''s stores in Year
+  1. The statements will be issued on March 12, Year 2. After year-end: on January 22, Eskdale settled
+  the injury suit for $185,000, payable in April; in February, testing found a defective part in all of
+  the space heaters Eskdale sold in November and December, Year 1, and Eskdale estimates that repairing
+  them under its standard one-year warranty will cost $72,000, none of which was in its year-end warranty
+  accrual; on January 9, a shopper was injured in one of Eskdale''s stores, and counsel expects the resulting
+  suit to cost Eskdale $60,000; on February 5, the board declared a cash dividend of $150,000, payable
+  March 31; and on February 20, Eskdale borrowed $500,000 from its bank. What total liabilities should
+  Eskdale report at December 31, Year 1?'
+choices:
+- id: A
+  text: $3,292,000
+  rationale: Removes the injury suit from liabilities altogether because it was settled. The $185,000
+    settlement isn't payable until April, so it is still owed at December 31.
+- id: B
+  text: $3,405,000
+  rationale: Leaves out the $72,000 of warranty repairs. The defect existed in units sold before year-end,
+    so the February testing gives evidence about a liability that existed at December 31.
+- id: C
+  text: $3,477,000
+  rationale: Correct. $3,460,000 − ($240,000 − $185,000) + $72,000.
+- id: D
+  text: $3,532,000
+  rationale: Leaves the $240,000 accrual for the Year 1 injury suit unchanged. The settlement gives better
+    evidence of the liability that existed at year-end, so the accrual is reduced to the $185,000 settlement.
+answer: C
+explanation: 'Events that give more evidence about conditions at December 31 are recognized: the settlement
+  shows the Year 1 injury suit was worth $185,000, not $240,000 (− $55,000), and the defect existed in
+  heaters sold before year-end, so the warranty liability rises by $72,000. The January injury, the dividend
+  declaration and the new loan arise from events after year-end; they are disclosed if material but not
+  recognized. Total liabilities = $3,460,000 − $55,000 + $72,000 = $3,477,000.'
+variants:
+- stem: 'Hawkshead Homewares''s draft December 31, Year 1, balance sheet reports total liabilities of
+    $2,580,000, including a $180,000 accrual for a customer''s suit over an injury at one of Hawkshead''s
+    stores in Year 1. The statements will be issued on March 12, Year 2. After year-end: on January 22,
+    Hawkshead settled the injury suit for $139,000, payable in April; in February, testing found a defective
+    part in all of the space heaters Hawkshead sold in November and December, Year 1, and Hawkshead estimates
+    that repairing them under its standard one-year warranty will cost $54,000, none of which was in its
+    year-end warranty accrual; on January 14, a shopper was injured in one of Hawkshead''s stores, and
+    counsel expects the resulting suit to cost Hawkshead $45,000; on February 5, the board declared a
+    cash dividend of $110,000, payable March 31; and on February 20, Hawkshead borrowed $375,000 from
+    its bank. What total liabilities should Hawkshead report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $2,593,000
+    rationale: Correct. $2,580,000 − ($180,000 − $139,000) + $54,000.
+  - id: B
+    text: $2,638,000
+    rationale: Accrues the $45,000 expected on the suit over the January 14 accident. The accident happened
+      after year-end, so it is a nonrecognized subsequent event, disclosed if material.
+  - id: C
+    text: $2,703,000
+    rationale: Adds the $110,000 dividend declared on February 5. A dividend becomes a liability when
+      declared, which was after year-end; it is disclosed, not recognized.
+  - id: D
+    text: $2,968,000
+    rationale: Adds the $375,000 borrowed in February. The loan didn't exist at December 31; it is disclosed,
+      not recognized.
+  answer: A
+  explanation: 'Events that give more evidence about conditions at December 31 are recognized: the settlement
+    shows the Year 1 injury suit was worth $139,000, not $180,000 (− $41,000), and the defect existed
+    in heaters sold before year-end, so the warranty liability rises by $54,000. The January injury, the
+    dividend declaration and the new loan arise from events after year-end; they are disclosed if material
+    but not recognized. Total liabilities = $2,580,000 − $41,000 + $54,000 = $2,593,000.'
+- stem: 'Loweswater Homewares''s draft December 31, Year 1, balance sheet reports total liabilities of
+    $4,720,000, including a $330,000 accrual for a customer''s suit over an injury at one of Loweswater''s
+    stores in Year 1. The statements will be issued on March 12, Year 2. After year-end: on January 22,
+    Loweswater settled the injury suit for $254,000, payable in April; in February, testing found a defective
+    part in all of the space heaters Loweswater sold in November and December, Year 1, and Loweswater
+    estimates that repairing them under its standard one-year warranty will cost $98,000, none of which
+    was in its year-end warranty accrual; on January 7, a shopper was injured in one of Loweswater''s
+    stores, and counsel expects the resulting suit to cost Loweswater $82,000; on February 5, the board
+    declared a cash dividend of $205,000, payable March 31; and on February 20, Loweswater borrowed $680,000
+    from its bank. What total liabilities should Loweswater report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $4,644,000
+    rationale: Leaves out the $98,000 of warranty repairs. The defect existed in units sold before year-end,
+      so the February testing gives evidence about a liability that existed at December 31.
+  - id: B
+    text: $4,742,000
+    rationale: Correct. $4,720,000 − ($330,000 − $254,000) + $98,000.
+  - id: C
+    text: $4,818,000
+    rationale: Leaves the $330,000 accrual for the Year 1 injury suit unchanged. The settlement gives
+      better evidence of the liability that existed at year-end, so the accrual is reduced to the $254,000
+      settlement.
+  - id: D
+    text: $4,947,000
+    rationale: Adds the $205,000 dividend declared on February 5. A dividend becomes a liability when
+      declared, which was after year-end; it is disclosed, not recognized.
+  answer: B
+  explanation: 'Events that give more evidence about conditions at December 31 are recognized: the settlement
+    shows the Year 1 injury suit was worth $254,000, not $330,000 (− $76,000), and the defect existed
+    in heaters sold before year-end, so the warranty liability rises by $98,000. The January injury, the
+    dividend declaration and the new loan arise from events after year-end; they are disclosed if material
+    but not recognized. Total liabilities = $4,720,000 − $76,000 + $98,000 = $4,742,000.'
+- stem: 'Mardale Homewares''s draft December 31, Year 1, balance sheet reports total liabilities of $1,940,000,
+    including a $135,000 accrual for a customer''s suit over an injury at one of Mardale''s stores in
+    Year 1. The statements will be issued on March 12, Year 2. After year-end: on January 22, Mardale
+    settled the injury suit for $104,000, payable in April; in February, testing found a defective part
+    in all of the space heaters Mardale sold in November and December, Year 1, and Mardale estimates that
+    repairing them under its standard one-year warranty will cost $41,000, none of which was in its year-end
+    warranty accrual; on January 17, a shopper was injured in one of Mardale''s stores, and counsel expects
+    the resulting suit to cost Mardale $46,000; on February 5, the board declared a cash dividend of $85,000,
+    payable March 31; and on February 20, Mardale borrowed $280,000 from its bank. What total liabilities
+    should Mardale report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $1,950,000
+    rationale: Correct. $1,940,000 − ($135,000 − $104,000) + $41,000.
+  - id: B
+    text: $1,981,000
+    rationale: Leaves the $135,000 accrual for the Year 1 injury suit unchanged. The settlement gives
+      better evidence of the liability that existed at year-end, so the accrual is reduced to the $104,000
+      settlement.
+  - id: C
+    text: $1,996,000
+    rationale: Accrues the $46,000 expected on the suit over the January 17 accident. The accident happened
+      after year-end, so it is a nonrecognized subsequent event, disclosed if material.
+  - id: D
+    text: $2,035,000
+    rationale: Adds the $85,000 dividend declared on February 5. A dividend becomes a liability when declared,
+      which was after year-end; it is disclosed, not recognized.
+  answer: A
+  explanation: 'Events that give more evidence about conditions at December 31 are recognized: the settlement
+    shows the Year 1 injury suit was worth $104,000, not $135,000 (− $31,000), and the defect existed
+    in heaters sold before year-end, so the warranty liability rises by $41,000. The January injury, the
+    dividend declaration and the new loan arise from events after year-end; they are disclosed if material
+    but not recognized. Total liabilities = $1,940,000 − $31,000 + $41,000 = $1,950,000.'

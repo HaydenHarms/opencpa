@@ -1,0 +1,47 @@
+id: far-nfp-promises-to-give-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 958-605-25 (conditional promises to give: barrier and right of return or release, as amended
+    by ASU 2018-08)'
+  - ASC 958-605-50 (disclosure of conditional promises to give)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: In October, Year 1, a foundation promised Chatton Literacy Center, a not-for-profit entity, $150,000
+  for its tutoring program, to be paid only if Chatton raises $150,000 in new gifts from other donors
+  by June 30, Year 2; if Chatton falls short, the foundation will pay nothing. By December 31, Year 1,
+  Chatton had raised $95,000 toward the match, and its development director is unsure whether the rest
+  will come in by the deadline. How should Chatton report the foundation's promise in its Year 1 financial
+  statements?
+choices:
+- id: A
+  text: As $150,000 of contribution revenue with donor restrictions, because the gift is for the tutoring
+    program
+  rationale: A purpose restriction limits how a gift is used once it is recognized. This promise depends
+    on a barrier (the match) and releases the foundation if it isn't met, so it is conditional and isn't
+    recognized yet.
+- id: B
+  text: As a $150,000 receivable, offset by a refundable advance until the match is reached
+  rationale: A refundable advance arises only when cash is received before a condition is met. Chatton
+    has received nothing, so there is no asset or liability to record.
+- id: C
+  text: As no contribution revenue yet, with the promise disclosed in the notes
+  rationale: Correct. The promise has a measurable barrier and a release from obligation if the barrier
+    isn't overcome, so it is conditional. It is recognized when the match is reached, and conditional
+    promises are disclosed meanwhile.
+- id: D
+  text: As $95,000 of contribution revenue, matching the share of the gifts already raised
+  rationale: Partial recognition fits a promise that pays dollar for dollar as gifts come in. This one
+    pays nothing unless the whole $150,000 is raised, so none of the barrier has been overcome.
+answer: C
+explanation: Under ASC 958-605 as amended by ASU 2018-08, a promise to give is conditional if the agreement
+  contains a barrier the recipient must overcome and a right of return or release from the obligation
+  if it doesn't. A matching requirement with an all-or-nothing deadline is such a barrier. A conditional
+  promise is recognized as contribution revenue only when the barrier is overcome; until then, the recipient
+  discloses it (the total amount and a description). Donor restrictions on purpose are a separate question
+  that arises only once a contribution is recognized.

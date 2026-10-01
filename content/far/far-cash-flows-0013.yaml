@@ -1,0 +1,140 @@
+id: far-cash-flows-0013
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 230-10-50-2 (supplemental disclosure of income taxes paid under the indirect method)
+  - ASC 740-10-45 and 740-20-45 (deferred tax expense; tax effects allocated to other comprehensive income)
+  notes: Batch 11. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Harbottle Inc. reports income tax expense of $486,000 in its Year 2 income statement. Its balance
+  sheets show income taxes payable of $42,000 at January 1, Year 2, and $57,000 at December 31; a deferred
+  tax liability of $118,000 and $171,000; and a deferred tax asset, with no valuation allowance, of $36,000
+  and $41,000. Of the increase in the deferred tax liability, $19,000 arose from unrealized holding gains
+  on available-for-sale debt securities and was charged to other comprehensive income. Harbottle has no
+  other tax balances and made no other tax entries. What amount should Harbottle disclose as income taxes
+  paid for Year 2 in its statement of cash flows, which uses the indirect method?
+choices:
+- id: A
+  text: $423,000
+  rationale: Treats the whole $53,000 increase in the deferred tax liability as deferred tax expense.
+    $19,000 of it was charged to other comprehensive income with the unrealized gains on available-for-sale
+    securities, so it isn't part of income tax expense.
+- id: B
+  text: $432,000
+  rationale: Adds the $5,000 increase in the deferred tax asset to deferred tax expense. An increase in
+    a deferred tax asset is a deferred tax benefit, which reduces deferred tax expense.
+- id: C
+  text: $442,000
+  rationale: Correct. $486,000 − $29,000 deferred = $457,000 current; $457,000 − $15,000 increase in taxes
+    payable.
+- id: D
+  text: $472,000
+  rationale: Adds the $15,000 increase in income taxes payable. A rise in the payable means less was paid
+    than the current tax expense.
+answer: C
+explanation: 'Deferred tax expense is the change in deferred tax balances that runs through income: the
+  deferred tax liability rose by $53,000, of which $19,000 was charged to OCI, leaving $34,000; less the
+  $5,000 increase in the deferred tax asset, a benefit: $34,000 − $5,000 = $29,000. Current tax expense
+  = $486,000 − $29,000 = $457,000. Income taxes payable rose by $15,000, so less was paid than the current
+  expense: taxes paid = $457,000 − $15,000 = $442,000. ASC 230-10-50-2 requires an entity using the indirect
+  method to disclose income taxes paid.'
+variants:
+- stem: Kielder Inc. reports income tax expense of $362,000 in its Year 2 income statement. Its balance
+    sheets show income taxes payable of $31,000 at January 1, Year 2, and $43,000 at December 31; a deferred
+    tax liability of $87,000 and $126,000; and a deferred tax asset, with no valuation allowance, of $27,000
+    and $35,000. Of the increase in the deferred tax liability, $14,000 arose from unrealized holding
+    gains on available-for-sale debt securities and was charged to other comprehensive income. Kielder
+    has no other tax balances and made no other tax entries. What amount should Kielder disclose as income
+    taxes paid for Year 2 in its statement of cash flows, which uses the indirect method?
+  choices:
+  - id: A
+    text: $333,000
+    rationale: Correct. $362,000 − $17,000 deferred = $345,000 current; $345,000 − $12,000 increase in
+      taxes payable.
+  - id: B
+    text: $345,000
+    rationale: Reports current income tax expense of $345,000 as the amount paid. The $12,000 increase
+      in income taxes payable was not paid during Year 2.
+  - id: C
+    text: $350,000
+    rationale: Ignores deferred taxes, taking all $362,000 of income tax expense as current. Deferred
+      tax expense of $17,000 involves no payment to the tax authorities.
+  - id: D
+    text: $357,000
+    rationale: Adds the $12,000 increase in income taxes payable. A rise in the payable means less was
+      paid than the current tax expense.
+  answer: A
+  explanation: 'Deferred tax expense is the change in deferred tax balances that runs through income:
+    the deferred tax liability rose by $39,000, of which $14,000 was charged to OCI, leaving $25,000;
+    less the $8,000 increase in the deferred tax asset, a benefit: $25,000 − $8,000 = $17,000. Current
+    tax expense = $362,000 − $17,000 = $345,000. Income taxes payable rose by $12,000, so less was paid
+    than the current expense: taxes paid = $345,000 − $12,000 = $333,000. ASC 230-10-50-2 requires an
+    entity using the indirect method to disclose income taxes paid.'
+- stem: Lesbury Inc. reports income tax expense of $615,000 in its Year 2 income statement. Its balance
+    sheets show income taxes payable of $54,000 at January 1, Year 2, and $72,000 at December 31; a deferred
+    tax liability of $149,000 and $216,000; and a deferred tax asset, with no valuation allowance, of
+    $46,000 and $52,000. Of the increase in the deferred tax liability, $24,000 arose from unrealized
+    holding gains on available-for-sale debt securities and was charged to other comprehensive income.
+    Lesbury has no other tax balances and made no other tax entries. What amount should Lesbury disclose
+    as income taxes paid for Year 2 in its statement of cash flows, which uses the indirect method?
+  choices:
+  - id: A
+    text: $548,000
+    rationale: Adds the $6,000 increase in the deferred tax asset to deferred tax expense. An increase
+      in a deferred tax asset is a deferred tax benefit, which reduces deferred tax expense.
+  - id: B
+    text: $560,000
+    rationale: Correct. $615,000 − $37,000 deferred = $578,000 current; $578,000 − $18,000 increase in
+      taxes payable.
+  - id: C
+    text: $578,000
+    rationale: Reports current income tax expense of $578,000 as the amount paid. The $18,000 increase
+      in income taxes payable was not paid during Year 2.
+  - id: D
+    text: $597,000
+    rationale: Ignores deferred taxes, taking all $615,000 of income tax expense as current. Deferred
+      tax expense of $37,000 involves no payment to the tax authorities.
+  answer: B
+  explanation: 'Deferred tax expense is the change in deferred tax balances that runs through income:
+    the deferred tax liability rose by $67,000, of which $24,000 was charged to OCI, leaving $43,000;
+    less the $6,000 increase in the deferred tax asset, a benefit: $43,000 − $6,000 = $37,000. Current
+    tax expense = $615,000 − $37,000 = $578,000. Income taxes payable rose by $18,000, so less was paid
+    than the current expense: taxes paid = $578,000 − $18,000 = $560,000. ASC 230-10-50-2 requires an
+    entity using the indirect method to disclose income taxes paid.'
+- stem: Longhorsley Inc. reports income tax expense of $248,000 in its Year 2 income statement. Its balance
+    sheets show income taxes payable of $21,000 at January 1, Year 2, and $29,000 at December 31; a deferred
+    tax liability of $59,000 and $86,000; and a deferred tax asset, with no valuation allowance, of $18,000
+    and $21,000. Of the increase in the deferred tax liability, $9,000 arose from unrealized holding gains
+    on available-for-sale debt securities and was charged to other comprehensive income. Longhorsley has
+    no other tax balances and made no other tax entries. What amount should Longhorsley disclose as income
+    taxes paid for Year 2 in its statement of cash flows, which uses the indirect method?
+  choices:
+  - id: A
+    text: $216,000
+    rationale: Treats the whole $27,000 increase in the deferred tax liability as deferred tax expense.
+      $9,000 of it was charged to other comprehensive income with the unrealized gains on available-for-sale
+      securities, so it isn't part of income tax expense.
+  - id: B
+    text: $219,000
+    rationale: Adds the $3,000 increase in the deferred tax asset to deferred tax expense. An increase
+      in a deferred tax asset is a deferred tax benefit, which reduces deferred tax expense.
+  - id: C
+    text: $225,000
+    rationale: Correct. $248,000 − $15,000 deferred = $233,000 current; $233,000 − $8,000 increase in
+      taxes payable.
+  - id: D
+    text: $240,000
+    rationale: Ignores deferred taxes, taking all $248,000 of income tax expense as current. Deferred
+      tax expense of $15,000 involves no payment to the tax authorities.
+  answer: C
+  explanation: 'Deferred tax expense is the change in deferred tax balances that runs through income:
+    the deferred tax liability rose by $27,000, of which $9,000 was charged to OCI, leaving $18,000; less
+    the $3,000 increase in the deferred tax asset, a benefit: $18,000 − $3,000 = $15,000. Current tax
+    expense = $248,000 − $15,000 = $233,000. Income taxes payable rose by $8,000, so less was paid than
+    the current expense: taxes paid = $233,000 − $8,000 = $225,000. ASC 230-10-50-2 requires an entity
+    using the indirect method to disclose income taxes paid.'
