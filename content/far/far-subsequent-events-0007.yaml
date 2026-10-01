@@ -43,7 +43,7 @@ explanation: 'Recognized: the settlement of a Year 1 injury suit raises the accr
   − $180,000 = $80,000, and the sale of inventory made obsolete in October shows a year-end net realizable
   value $60,000 below cost. Not recognized (disclosed): the February flood and the February dividend declaration.
   Current assets = $1,800,000 − $60,000 = $1,740,000; current liabilities = $900,000 + $80,000 = $980,000.
-  Current ratio = $1,740,000 ÷ $980,000 = 1.78, below the 1.75 the loan agreement requires.'
+  Current ratio = $1,740,000 ÷ $980,000 = 1.78, which meets the 1.75 the loan agreement requires.'
 variants:
 - stem: 'Hebden Co.''s loan agreement requires a current ratio of at least 1.40 at each December 31. Before
     considering subsequent events, Hebden''s draft December 31, Year 1, balance sheet reports current
@@ -75,8 +75,8 @@ variants:
     − $240,000 = $90,000, and the sale of inventory made obsolete in October shows a year-end net realizable
     value $80,000 below cost. Not recognized (disclosed): the February flood and the February dividend
     declaration. Current assets = $2,400,000 − $80,000 = $2,320,000; current liabilities = $1,500,000
-    + $90,000 = $1,590,000. Current ratio = $2,320,000 ÷ $1,590,000 = 1.46, below the 1.40 the loan agreement
-    requires.'
+    + $90,000 = $1,590,000. Current ratio = $2,320,000 ÷ $1,590,000 = 1.46, which meets the 1.40 the loan
+    agreement requires.'
 - stem: 'Ickworth Co.''s loan agreement requires a current ratio of at least 2.00 at each December 31.
     Before considering subsequent events, Ickworth''s draft December 31, Year 1, balance sheet reports
     current assets of $1,300,000 and current liabilities of $560,000, which include a $100,000 accrued
@@ -108,7 +108,7 @@ variants:
     − $100,000 = $50,000, and the sale of inventory made obsolete in October shows a year-end net realizable
     value $40,000 below cost. Not recognized (disclosed): the February flood and the February dividend
     declaration. Current assets = $1,300,000 − $40,000 = $1,260,000; current liabilities = $560,000 +
-    $50,000 = $610,000. Current ratio = $1,260,000 ÷ $610,000 = 2.07, below the 2.00 the loan agreement
+    $50,000 = $610,000. Current ratio = $1,260,000 ÷ $610,000 = 2.07, which meets the 2.00 the loan agreement
     requires.'
 - stem: 'Kelmscott Co.''s loan agreement requires a current ratio of at least 1.60 at each December 31.
     Before considering subsequent events, Kelmscott''s draft December 31, Year 1, balance sheet reports
@@ -140,5 +140,5 @@ variants:
     − $300,000 = $120,000, and the sale of inventory made obsolete in October shows a year-end net realizable
     value $90,000 below cost. Not recognized (disclosed): the February flood and the February dividend
     declaration. Current assets = $3,100,000 − $90,000 = $3,010,000; current liabilities = $1,700,000
-    + $120,000 = $1,820,000. Current ratio = $3,010,000 ÷ $1,820,000 = 1.65, below the 1.60 the loan agreement
-    requires.'
+    + $120,000 = $1,820,000. Current ratio = $3,010,000 ÷ $1,820,000 = 1.65, which meets the 1.60 the
+    loan agreement requires.'

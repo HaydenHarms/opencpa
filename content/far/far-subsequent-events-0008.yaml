@@ -21,9 +21,10 @@ stem: 'Langdale Co., a private company that is not an SEC filer, is finalizing i
   and Langdale now expects to collect 30% of Pryce''s balance; on March 3, a tornado destroyed Stainton''s
   only warehouse, and Langdale now expects to collect nothing from Stainton; and on April 10, Ruskin Mills,
   whose balance was 120 days past due at year-end and which had defaulted on its bank loans in November,
-  Year 1, filed for bankruptcy. The draft''s $14,000 for Ruskin was management''s expected credit loss
-  at year-end, based on all information then available, including the past-due balance and the loan default.
-  What allowance for credit losses should Langdale report at December 31, Year 1?'
+  Year 1, filed for bankruptcy. Langdale has not elected the ASU 2025-05 practical expedient or the related
+  accounting policy election for current receivables. The draft''s $14,000 for Ruskin was management''s
+  expected credit loss at year-end, based on all information then available, including the past-due balance
+  and the loan default. What allowance for credit losses should Langdale report at December 31, Year 1?'
 choices:
 - id: A
   text: $64,000
@@ -57,9 +58,11 @@ variants:
     and Malham now expects to collect 25% of Pryce''s balance; on March 3, a tornado destroyed Stainton''s
     only warehouse, and Malham now expects to collect nothing from Stainton; and on April 10, Ruskin Mills,
     whose balance was 120 days past due at year-end and which had defaulted on its bank loans in November,
-    Year 1, filed for bankruptcy. The draft''s $20,000 for Ruskin was management''s expected credit loss
-    at year-end, based on all information then available, including the past-due balance and the loan
-    default. What allowance for credit losses should Malham report at December 31, Year 1?'
+    Year 1, filed for bankruptcy. Malham has not elected the ASU 2025-05 practical expedient or the related
+    accounting policy election for current receivables. The draft''s $20,000 for Ruskin was management''s
+    expected credit loss at year-end, based on all information then available, including the past-due
+    balance and the loan default. What allowance for credit losses should Malham report at December 31,
+    Year 1?'
   choices:
   - id: A
     text: $88,000
@@ -92,10 +95,11 @@ variants:
     bankruptcy, and Nidderdale now expects to collect 40% of Pryce''s balance; on March 3, a tornado destroyed
     Stainton''s only warehouse, and Nidderdale now expects to collect nothing from Stainton; and on April
     10, Ruskin Mills, whose balance was 120 days past due at year-end and which had defaulted on its bank
-    loans in November, Year 1, filed for bankruptcy. The draft''s $10,000 for Ruskin was management''s
-    expected credit loss at year-end, based on all information then available, including the past-due
-    balance and the loan default. What allowance for credit losses should Nidderdale report at December
-    31, Year 1?'
+    loans in November, Year 1, filed for bankruptcy. Nidderdale has not elected the ASU 2025-05 practical
+    expedient or the related accounting policy election for current receivables. The draft''s $10,000
+    for Ruskin was management''s expected credit loss at year-end, based on all information then available,
+    including the past-due balance and the loan default. What allowance for credit losses should Nidderdale
+    report at December 31, Year 1?'
   choices:
   - id: A
     text: $47,000
@@ -127,10 +131,11 @@ variants:
     bankruptcy, and Otterburn now expects to collect 20% of Pryce''s balance; on March 3, a tornado destroyed
     Stainton''s only warehouse, and Otterburn now expects to collect nothing from Stainton; and on April
     10, Ruskin Mills, whose balance was 120 days past due at year-end and which had defaulted on its bank
-    loans in November, Year 1, filed for bankruptcy. The draft''s $25,000 for Ruskin was management''s
-    expected credit loss at year-end, based on all information then available, including the past-due
-    balance and the loan default. What allowance for credit losses should Otterburn report at December
-    31, Year 1?'
+    loans in November, Year 1, filed for bankruptcy. Otterburn has not elected the ASU 2025-05 practical
+    expedient or the related accounting policy election for current receivables. The draft''s $25,000
+    for Ruskin was management''s expected credit loss at year-end, based on all information then available,
+    including the past-due balance and the loan default. What allowance for credit losses should Otterburn
+    report at December 31, Year 1?'
   choices:
   - id: A
     text: $232,000

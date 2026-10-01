@@ -52,4 +52,13 @@ Kept: the verifier asked whether the NFP items belong under a topic other than "
 
 ## Review gate
 
-Pending.
+**Stratified gate** (tactic 4 in `CLAUDE.md`), run once on batches 07 and 08 together: 18 of 25 items. Thirteen were reviewed in full (Analysis items, new topics, recent ASUs). Five were drawn at random from the other 12 (seed 20260930): `nfp-contributed-services-0002`, `contingencies-0007`, `income-taxes-deferred-0002`, `income-taxes-provision-0003`, `consolidated-statements-0008`. Not gated: `contingencies-0010`, `revenue-contract-costs-0002`, `income-statement-0004`, `cash-flows-0008`, `income-taxes-provision-0002`, `subsequent-events-0005`, `subsequent-events-0006`.
+
+**Result: passed.** The 18 items average **84.0%** estimated pass likelihood (batch 06: 82.4%). 15 are exam-ready, 3 need minor revision, and none need major revision. All 72 versions agree with their keys. The sample had no minor or major items, so escalation was not triggered.
+
+Every batch 07 item the gate reviewed is exam-ready: `accounting-errors-0005` (88%), `accounting-errors-0006` (85%), `contingencies-0008` (86%), `contingencies-0009` (85%), `payables-reconciliation-0002` (86%), `revenue-five-step-0001` (85%), `nfp-promises-to-give-0001` (84%), and from the sample `nfp-contributed-services-0002` (84%) and `contingencies-0007` (85%).
+
+Noted, not changed:
+- Variant 1 of `accounting-errors-0006` reuses the $36,000 three-year insurance policy from `accounting-errors-0004`.
+- `contingencies-0007` and `-0009` both test "Year 1 accrued the minimum of the range" with a midpoint distractor.
+- III.A.b and III.B.c now have six items each, so new items on them must change at least two component events (added to quality bar item 8).

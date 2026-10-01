@@ -17,13 +17,12 @@ stem: During Year 2, Kirkwood Co. held these investments. First, 4% of the commo
   over which it has no significant influence, carried at a fair value of $200,000 at January 1 and worth
   $226,000 at December 31; Kirkwood received dividends of $6,000 on them. Second, debt securities that
   Kirkwood bought at par for $100,000 in Year 1 and classified as available for sale, carried at a fair
-  value of $108,000 at January 1, Year 2, and sold on March 1, Year 2, for $111,000; no interest was due
-  on them in Year 2 before the sale. Third, $250,000 face amount of 4% bonds bought at par on January
-  1, Year 2, and classified as available for sale, which pay interest each December 31 and were worth
-  $236,000 at December 31 because market interest rates rose. Kirkwood does not intend to sell the bonds,
-  is not likely to be required to sell them before recovery, and expects to collect all of their contractual
-  cash flows. Ignoring income taxes, what total amount should Kirkwood recognize in net income for Year
-  2 from these investments?
+  value of $108,000 at January 1, Year 2, and sold on March 1, Year 2, for $111,000; ignore interest on
+  these securities. Third, $250,000 face amount of 4% bonds bought at par on January 1, Year 2, and classified
+  as available for sale, which pay interest each December 31 and were worth $236,000 at December 31 because
+  market interest rates rose. Kirkwood does not intend to sell the bonds, is not likely to be required
+  to sell them before recovery, and expects to collect all of their contractual cash flows. Ignoring income
+  taxes, what total amount should Kirkwood recognize in net income for Year 2 from these investments?
 choices:
 - id: A
   text: $27,000
@@ -55,13 +54,13 @@ variants:
     company, over which it has no significant influence, carried at a fair value of $320,000 at January
     1 and worth $351,000 at December 31; Lamplugh received dividends of $9,000 on them. Second, debt securities
     that Lamplugh bought at par for $150,000 in Year 1 and classified as available for sale, carried at
-    a fair value of $162,000 at January 1, Year 2, and sold on March 1, Year 2, for $166,000; no interest
-    was due on them in Year 2 before the sale. Third, $400,000 face amount of 5% bonds bought at par on
-    January 1, Year 2, and classified as available for sale, which pay interest each December 31 and were
-    worth $381,000 at December 31 because market interest rates rose. Lamplugh does not intend to sell
-    the bonds, is not likely to be required to sell them before recovery, and expects to collect all of
-    their contractual cash flows. Ignoring income taxes, what total amount should Lamplugh recognize in
-    net income for Year 2 from these investments?
+    a fair value of $162,000 at January 1, Year 2, and sold on March 1, Year 2, for $166,000; ignore interest
+    on these securities. Third, $400,000 face amount of 5% bonds bought at par on January 1, Year 2, and
+    classified as available for sale, which pay interest each December 31 and were worth $381,000 at December
+    31 because market interest rates rose. Lamplugh does not intend to sell the bonds, is not likely to
+    be required to sell them before recovery, and expects to collect all of their contractual cash flows.
+    Ignoring income taxes, what total amount should Lamplugh recognize in net income for Year 2 from these
+    investments?
   choices:
   - id: A
     text: $45,000
@@ -93,12 +92,12 @@ variants:
     1 and worth $158,000 at December 31; Muncaster received dividends of $4,000 on them. Second, debt
     securities that Muncaster bought at par for $80,000 in Year 1 and classified as available for sale,
     carried at a fair value of $87,000 at January 1, Year 2, and sold on March 1, Year 2, for $90,000;
-    no interest was due on them in Year 2 before the sale. Third, $200,000 face amount of 6% bonds bought
-    at par on January 1, Year 2, and classified as available for sale, which pay interest each December
-    31 and were worth $183,000 at December 31 because market interest rates rose. Muncaster does not intend
-    to sell the bonds, is not likely to be required to sell them before recovery, and expects to collect
-    all of their contractual cash flows. Ignoring income taxes, what total amount should Muncaster recognize
-    in net income for Year 2 from these investments?
+    ignore interest on these securities. Third, $200,000 face amount of 6% bonds bought at par on January
+    1, Year 2, and classified as available for sale, which pay interest each December 31 and were worth
+    $183,000 at December 31 because market interest rates rose. Muncaster does not intend to sell the
+    bonds, is not likely to be required to sell them before recovery, and expects to collect all of their
+    contractual cash flows. Ignoring income taxes, what total amount should Muncaster recognize in net
+    income for Year 2 from these investments?
   choices:
   - id: A
     text: $27,000
@@ -131,12 +130,12 @@ variants:
     1 and worth $492,000 at December 31; Netherby received dividends of $12,000 on them. Second, debt
     securities that Netherby bought at par for $220,000 in Year 1 and classified as available for sale,
     carried at a fair value of $236,000 at January 1, Year 2, and sold on March 1, Year 2, for $241,000;
-    no interest was due on them in Year 2 before the sale. Third, $500,000 face amount of 4% bonds bought
-    at par on January 1, Year 2, and classified as available for sale, which pay interest each December
-    31 and were worth $468,000 at December 31 because market interest rates rose. Netherby does not intend
-    to sell the bonds, is not likely to be required to sell them before recovery, and expects to collect
-    all of their contractual cash flows. Ignoring income taxes, what total amount should Netherby recognize
-    in net income for Year 2 from these investments?
+    ignore interest on these securities. Third, $500,000 face amount of 4% bonds bought at par on January
+    1, Year 2, and classified as available for sale, which pay interest each December 31 and were worth
+    $468,000 at December 31 because market interest rates rose. Netherby does not intend to sell the bonds,
+    is not likely to be required to sell them before recovery, and expects to collect all of their contractual
+    cash flows. Ignoring income taxes, what total amount should Netherby recognize in net income for Year
+    2 from these investments?
   choices:
   - id: A
     text: $53,000

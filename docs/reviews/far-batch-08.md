@@ -78,4 +78,18 @@ Every swapped-in distractor comes from a pool the first pass had already verifie
 
 ## Review gate
 
-Pending.
+See `far-batch-07.md` for the sample and method; the gate ran once on both batches (**84.0%**, no major items).
+
+| Item | Gate | Fix |
+| --- | --- | --- |
+| `far-subsequent-events-0007` (72%, minor) | Every explanation said the corrected ratio was "below" the covenant after the covenant values were raised; in every version it meets it. | The builder now computes "meets" / "falls below" from the numbers. Quality bar item 8 now requires this for every comparative in an explanation. |
+| `far-subsequent-events-0008` (82%, minor) | A private company's allowance on current receivables, without saying whether it elects ASU 2025-05. | The stem says Langdale has not elected the practical expedient or the related policy election. The key does not change. |
+| `far-investments-fair-value-0001` (78%, minor) | The stem recited the held-to-maturity and trading tests word for word. | The stem now gives facts (a treasury desk turning the securities over within weeks; a board resolution to hold bonds to maturity, backed by cash forecasts). It adds a distractor for "only trading securities are at fair value". |
+| `far-investments-fair-value-0002` (nit) | "No interest was due" didn't rule out accrued interest. | "Ignore interest on these securities." |
+| `far-lessee-operating-0004` (nit) | Entity type not stated (private companies may elect a risk-free rate). | The lessee is a public business entity. |
+
+Exam-ready: `cash-flows-0009` (84%; the gate confirmed the Analysis tag, at the low end), `lessee-operating-0004` (86%), `investments-fair-value-0002` (83%), and from the sample `income-taxes-deferred-0002` (87%), `income-taxes-provision-0003` (86%) and `consolidated-statements-0008` (86%).
+
+**Not yet done:** the blind re-check of these four changed items (`investments-fair-value-0001`, `-0002`, `lessee-operating-0004`, `subsequent-events-0008`). The verifier stopped on a usage limit before reporting, so run it next session.
+
+**Bank after batches 07 and 08:** 175 FAR MCQs, 12% / 52% / 36% by skill and 34.3% / 32.0% / 33.7% by area, all in range. Analysis is 1 point above its floor and Area III is 1.3 points below its ceiling, so the next batches lean toward Areas I and II with Analysis at 40% or more.

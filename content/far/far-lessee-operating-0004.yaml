@@ -11,14 +11,15 @@ review:
   - ASC 842-20 (lessee initial measurement of the lease liability and right-of-use asset)
   - ASC 842-10 (initial direct costs; lease incentives)
   notes: Batch 08. Written from scratch; answers solved and every number and distractor computed in code.
-stem: On January 1, Year 1, Thornaby Co. signs an 8-year lease of office space, which begins that day
-  and which Thornaby classifies as an operating lease. Annual payments of $50,000 are due each January
-  1, beginning at commencement, and Thornaby made the first payment on January 1, Year 1. The rate implicit
-  in the lease isn't readily determinable, and Thornaby's incremental borrowing rate is 7%. At commencement,
-  Thornaby paid a leasing agent a $6,000 commission that was due only upon signing and paid $3,000 of
-  outside legal fees for negotiating the lease terms, and the lessor paid Thornaby $10,000 in cash as
-  an incentive to sign. Present value factors at 7% for 8 periods are 6.3893 for an annuity due and 5.9713
-  for an ordinary annuity. At what amount should Thornaby initially measure its right-of-use asset?
+stem: On January 1, Year 1, Thornaby Co., a public business entity, signs an 8-year lease of office space,
+  which begins that day and which Thornaby classifies as an operating lease. Annual payments of $50,000
+  are due each January 1, beginning at commencement, and Thornaby made the first payment on January 1,
+  Year 1. The rate implicit in the lease isn't readily determinable, and Thornaby's incremental borrowing
+  rate is 7%. At commencement, Thornaby paid a leasing agent a $6,000 commission that was due only upon
+  signing and paid $3,000 of outside legal fees for negotiating the lease terms, and the lessor paid Thornaby
+  $10,000 in cash as an incentive to sign. Present value factors at 7% for 8 periods are 6.3893 for an
+  annuity due and 5.9713 for an ordinary annuity. At what amount should Thornaby initially measure its
+  right-of-use asset?
 choices:
 - id: A
   text: $269,465
@@ -43,15 +44,15 @@ explanation: 'The lease liability is the present value of the payments not yet m
   because it was owed only if the lease was signed; the legal fees for negotiating the terms are not,
   and are expensed.'
 variants:
-- stem: On January 1, Year 1, Upholland Co. signs a 6-year lease of office space, which begins that day
-    and which Upholland classifies as an operating lease. Annual payments of $72,000 are due each January
-    1, beginning at commencement, and Upholland made the first payment on January 1, Year 1. The rate
-    implicit in the lease isn't readily determinable, and Upholland's incremental borrowing rate is 6%.
-    At commencement, Upholland paid a leasing agent an $8,000 commission that was due only upon signing
-    and paid $5,000 of outside legal fees for negotiating the lease terms, and the lessor paid Upholland
-    $15,000 in cash as an incentive to sign. Present value factors at 6% for 6 periods are 5.2124 for
-    an annuity due and 4.9173 for an ordinary annuity. At what amount should Upholland initially measure
-    its right-of-use asset?
+- stem: On January 1, Year 1, Upholland Co., a public business entity, signs a 6-year lease of office
+    space, which begins that day and which Upholland classifies as an operating lease. Annual payments
+    of $72,000 are due each January 1, beginning at commencement, and Upholland made the first payment
+    on January 1, Year 1. The rate implicit in the lease isn't readily determinable, and Upholland's incremental
+    borrowing rate is 6%. At commencement, Upholland paid a leasing agent an $8,000 commission that was
+    due only upon signing and paid $5,000 of outside legal fees for negotiating the lease terms, and the
+    lessor paid Upholland $15,000 in cash as an incentive to sign. Present value factors at 6% for 6 periods
+    are 5.2124 for an annuity due and 4.9173 for an ordinary annuity. At what amount should Upholland
+    initially measure its right-of-use asset?
   choices:
   - id: A
     text: $347,046
@@ -75,15 +76,15 @@ variants:
     received = $303,293 + $72,000 + $8,000 − $15,000 = $368,293. The commission is an initial direct cost
     because it was owed only if the lease was signed; the legal fees for negotiating the terms are not,
     and are expensed.'
-- stem: On January 1, Year 1, Vowchurch Co. signs a 10-year lease of office space, which begins that day
-    and which Vowchurch classifies as an operating lease. Annual payments of $36,000 are due each January
-    1, beginning at commencement, and Vowchurch made the first payment on January 1, Year 1. The rate
-    implicit in the lease isn't readily determinable, and Vowchurch's incremental borrowing rate is 8%.
-    At commencement, Vowchurch paid a leasing agent a $4,000 commission that was due only upon signing
-    and paid $2,500 of outside legal fees for negotiating the lease terms, and the lessor paid Vowchurch
-    $6,000 in cash as an incentive to sign. Present value factors at 8% for 10 periods are 7.2469 for
-    an annuity due and 6.7101 for an ordinary annuity. At what amount should Vowchurch initially measure
-    its right-of-use asset?
+- stem: On January 1, Year 1, Vowchurch Co., a public business entity, signs a 10-year lease of office
+    space, which begins that day and which Vowchurch classifies as an operating lease. Annual payments
+    of $36,000 are due each January 1, beginning at commencement, and Vowchurch made the first payment
+    on January 1, Year 1. The rate implicit in the lease isn't readily determinable, and Vowchurch's incremental
+    borrowing rate is 8%. At commencement, Vowchurch paid a leasing agent a $4,000 commission that was
+    due only upon signing and paid $2,500 of outside legal fees for negotiating the lease terms, and the
+    lessor paid Vowchurch $6,000 in cash as an incentive to sign. Present value factors at 8% for 10 periods
+    are 7.2469 for an annuity due and 6.7101 for an ordinary annuity. At what amount should Vowchurch
+    initially measure its right-of-use asset?
   choices:
   - id: A
     text: $224,888
@@ -107,15 +108,15 @@ variants:
     received = $224,888 + $36,000 + $4,000 − $6,000 = $258,888. The commission is an initial direct cost
     because it was owed only if the lease was signed; the legal fees for negotiating the terms are not,
     and are expensed.'
-- stem: On January 1, Year 1, Wetheral Co. signs a 5-year lease of office space, which begins that day
-    and which Wetheral classifies as an operating lease. Annual payments of $90,000 are due each January
-    1, beginning at commencement, and Wetheral made the first payment on January 1, Year 1. The rate implicit
-    in the lease isn't readily determinable, and Wetheral's incremental borrowing rate is 5%. At commencement,
-    Wetheral paid a leasing agent a $9,000 commission that was due only upon signing and paid $6,000 of
-    outside legal fees for negotiating the lease terms, and the lessor paid Wetheral $20,000 in cash as
-    an incentive to sign. Present value factors at 5% for 5 periods are 4.5460 for an annuity due and
-    4.3295 for an ordinary annuity. At what amount should Wetheral initially measure its right-of-use
-    asset?
+- stem: On January 1, Year 1, Wetheral Co., a public business entity, signs a 5-year lease of office space,
+    which begins that day and which Wetheral classifies as an operating lease. Annual payments of $90,000
+    are due each January 1, beginning at commencement, and Wetheral made the first payment on January
+    1, Year 1. The rate implicit in the lease isn't readily determinable, and Wetheral's incremental borrowing
+    rate is 5%. At commencement, Wetheral paid a leasing agent a $9,000 commission that was due only upon
+    signing and paid $6,000 of outside legal fees for negotiating the lease terms, and the lessor paid
+    Wetheral $20,000 in cash as an incentive to sign. Present value factors at 5% for 5 periods are 4.5460
+    for an annuity due and 4.3295 for an ordinary annuity. At what amount should Wetheral initially measure
+    its right-of-use asset?
   choices:
   - id: A
     text: $319,140
