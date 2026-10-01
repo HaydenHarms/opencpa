@@ -22,8 +22,8 @@ stem: Horton Co. is rolling forward its accounts receivable control account for 
 choices:
 - id: A
   text: $230,000
-  rationale: Subtracts all $3,365,000 of cash received. The $284,000 of cash sales never passed through
-    accounts receivable.
+  rationale: Doesn't remove the $284,000 of cash sales from the cash receipts. Cash sales never passed
+    through accounts receivable, so only $3,081,000 of the receipts were collections of receivables.
 - id: B
   text: $502,000
   rationale: Also subtracts the $12,000 increase in the refund liability for expected returns. Expected
@@ -54,8 +54,8 @@ variants:
   choices:
   - id: A
     text: $172,000
-    rationale: Subtracts all $2,540,000 of cash received. The $205,000 of cash sales never passed through
-      accounts receivable.
+    rationale: Doesn't remove the $205,000 of cash sales from the cash receipts. Cash sales never passed
+      through accounts receivable, so only $2,335,000 of the receipts were collections of receivables.
   - id: B
     text: $368,000
     rationale: Also subtracts the $9,000 increase in the refund liability for expected returns. Expected
@@ -114,8 +114,8 @@ variants:
   choices:
   - id: A
     text: $127,600
-    rationale: Subtracts all $1,860,000 of cash received. The $148,000 of cash sales never passed through
-      accounts receivable.
+    rationale: Doesn't remove the $148,000 of cash sales from the cash receipts. Cash sales never passed
+      through accounts receivable, so only $1,712,000 of the receipts were collections of receivables.
   - id: B
     text: $269,100
     rationale: Also subtracts the $6,500 increase in the refund liability for expected returns. Expected

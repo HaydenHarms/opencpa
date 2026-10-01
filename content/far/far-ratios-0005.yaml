@@ -10,9 +10,9 @@ review:
   references:
   - 'Financial statement analysis: choosing ratios (coverage, leverage, liquidity and profitability ratios)'
   notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
-stem: A bank is deciding whether to renew Calverley Co.'s term loan. Its credit officer wants to judge
-  whether Calverley's earnings are large enough to meet the interest on its debt, and by how wide a margin.
-  Which ratio best serves that purpose?
+stem: A bank is deciding whether to renew Calverley Co.'s term loan. Its credit officer wants to know
+  how far Calverley's operating profit could fall before it would no longer cover the annual cost of its
+  borrowings. Which measure best serves that purpose?
 choices:
 - id: A
   text: Debt-to-equity ratio
@@ -27,9 +27,9 @@ choices:
   rationale: 'This is a liquidity measure: it compares a year''s operating cash flow with obligations
     due within a year, not earnings with interest charges.'
 - id: D
-  text: Return on total assets
-  rationale: Return on assets measures how profitably the company uses its assets; it doesn't compare
-    earnings with interest charges.
+  text: Cash debt coverage (operating cash flow ÷ average total liabilities)
+  rationale: Cash debt coverage compares a year's operating cash flow with all of the company's debt,
+    which bears on its ability to repay principal, not on how many times profit covers the interest charge.
 answer: B
 explanation: Coverage ratios answer whether earnings can service debt. Times interest earned (earnings
   before interest and taxes ÷ interest expense) shows how many times earnings cover the year's interest,

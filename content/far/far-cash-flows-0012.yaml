@@ -44,34 +44,34 @@ explanation: Accumulated depreciation removed with the equipment sold = $1,120,0
 variants:
 - stem: Litton Co.'s comparative balance sheets show equipment of $1,960,000 at January 1, Year 2, and
     $2,215,000 at December 31, and accumulated depreciation on equipment of $780,000 and $846,000. Year
-    2 depreciation expense on equipment was $171,000. During Year 2, Litton sold equipment that had cost
-    $210,000 and reported a gain of $12,000 on the sale; it acquired a machine costing $135,000 by paying
+    2 depreciation expense on equipment was $180,000. During Year 2, Litton sold equipment that had cost
+    $210,000 and reported a gain of $12,000 on the sale; it acquired a machine costing $140,000 by paying
     $30,000 in cash and signing a note payable to the seller for the rest; and it bought other equipment
     for cash. No other equipment was retired. What net cash used in investing activities do these equipment
     transactions produce in Litton's Year 2 statement of cash flows?
   choices:
   - id: A
-    text: $33,000
+    text: $37,000
     rationale: Takes equipment purchases to be the $255,000 net increase in the equipment account. The
       equipment sold took $210,000 out of the account, so purchases were $465,000.
   - id: B
-    text: $138,000
+    text: $133,000
     rationale: 'Ignores the accumulated depreciation removed with the equipment sold, so it puts the proceeds
-      at $210,000 cost plus the gain. Accumulated depreciation: $780,000 + $171,000 − $846,000 = $105,000
+      at $210,000 cost plus the gain. Accumulated depreciation: $780,000 + $180,000 − $846,000 = $114,000
       was removed.'
   - id: C
-    text: $243,000
-    rationale: Correct. Cash purchases $360,000 − proceeds $117,000.
+    text: $247,000
+    rationale: Correct. Cash purchases $355,000 − proceeds $108,000.
   - id: D
-    text: $348,000
-    rationale: Treats the whole $135,000 machine as a cash purchase. Only the $30,000 down payment was
-      cash; the $105,000 note to the seller is a noncash investing and financing activity.
+    text: $357,000
+    rationale: Treats the whole $140,000 machine as a cash purchase. Only the $30,000 down payment was
+      cash; the $110,000 note to the seller is a noncash investing and financing activity.
   answer: C
-  explanation: Accumulated depreciation removed with the equipment sold = $780,000 + $171,000 − $846,000
-    = $105,000, so its carrying amount was $210,000 − $105,000 = $105,000 and the proceeds were $105,000
-    + $12,000 gain = $117,000. Equipment acquired = $2,215,000 − $1,960,000 + $210,000 = $465,000, of
-    which the $105,000 financed by the seller's note is noncash, leaving cash purchases of $360,000. Net
-    cash used in investing activities = $360,000 − $117,000 = $243,000.
+  explanation: Accumulated depreciation removed with the equipment sold = $780,000 + $180,000 − $846,000
+    = $114,000, so its carrying amount was $210,000 − $114,000 = $96,000 and the proceeds were $96,000
+    + $12,000 gain = $108,000. Equipment acquired = $2,215,000 − $1,960,000 + $210,000 = $465,000, of
+    which the $110,000 financed by the seller's note is noncash, leaving cash purchases of $355,000. Net
+    cash used in investing activities = $355,000 − $108,000 = $247,000.
 - stem: Halton Co.'s comparative balance sheets show equipment of $4,150,000 at January 1, Year 2, and
     $4,580,000 at December 31, and accumulated depreciation on equipment of $1,640,000 and $1,772,000.
     Year 2 depreciation expense on equipment was $362,000. During Year 2, Halton sold equipment that had

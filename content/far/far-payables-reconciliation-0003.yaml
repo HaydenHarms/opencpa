@@ -10,7 +10,7 @@ review:
   references:
   - ASC 405-10 (liabilities)
   - ASC 210-10-45 (debit balances in payables reported as assets)
-  - 'ASC 310-10 (cash discounts: net method)'
+  - 'ASC 330-10-30 (inventory cost: purchases recorded net of cash discounts)'
   notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
 stem: 'At December 31, Swinden Co.''s accounts payable subledger totals $516,500, and its general ledger
   control account shows $508,900. Swinden records purchases net of available cash discounts. The controller''s

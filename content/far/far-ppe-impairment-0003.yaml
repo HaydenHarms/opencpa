@@ -22,21 +22,22 @@ stem: On January 1, Year 1, Rylstone Co. bought a bottling machine for $1,200,00
   Rylstone recognize at December 31, Year 3?
 choices:
 - id: A
+  text: $270,000
+  rationale: Measures the loss against the $480,000 present value of Rylstone's own expected cash flows
+    at its borrowing rate (a value-in-use measure, as under IFRS). U.S. GAAP measures the loss against
+    fair value, the $405,000 a market participant would pay.
+- id: B
   text: $345,000
   rationale: Correct. $750,000 carrying amount − $405,000 fair value.
-- id: B
+- id: C
   text: $363,000
   rationale: Measures the loss against fair value less the $18,000 cost to sell. That is the measure for
     assets held for sale; Rylstone is keeping the machine, so the loss is carrying amount less fair value.
-- id: C
+- id: D
   text: $495,000
   rationale: Tests the carrying amount before Year 3 depreciation ($900,000). Depreciation for the year
     is recorded first, then the machine is tested.
-- id: D
-  text: $795,000
-  rationale: Measures the loss from the $1,200,000 cost, ignoring accumulated depreciation. The test uses
-    the carrying amount, $750,000.
-answer: A
+answer: B
 explanation: 'Carrying amount = $1,200,000 − 3 × $150,000 = $750,000. Recoverability test: undiscounted
   cash flows of $110,000 × 5 + $60,000 = $610,000 are less than $750,000, so the carrying amount is not
   recoverable. For an asset held and used, the loss is the carrying amount less fair value: $750,000 −

@@ -19,22 +19,23 @@ stem: Keld Co.'s warehouse, which cost $1,470,000 and had accumulated depreciati
   Keld recognize in Year 4 on the destruction of the warehouse?
 choices:
 - id: A
+  text: $0
+  rationale: Defers the gain because Keld reinvested the proceeds in a replacement warehouse. Under U.S.
+    GAAP, a gain or loss on an involuntary conversion is recognized even when the proceeds are reinvested;
+    deferral is a tax rule.
+- id: B
   text: $178,000
   rationale: Leaves out depreciation from January 1 to the date of the fire ($19,600). Depreciation is
     recorded up to the date of an involuntary conversion, which lowers the carrying amount and raises
     the gain.
-- id: B
+- id: C
   text: $197,600
   rationale: Correct. $1,060,000 − ($1,470,000 − $588,000 − $19,600).
-- id: C
-  text: $222,600
-  rationale: Adds back the $25,000 deductible. The gain is measured with the $1,060,000 Keld actually
-    received.
 - id: D
   text: $236,800
   rationale: Records a full year of depreciation ($58,800). The warehouse was destroyed on April 30, so
     only 4 months ($19,600) are recorded.
-answer: B
+answer: C
 explanation: 'An involuntary conversion is accounted for like any other disposal: depreciation is recorded
   to the date of the fire, and the difference between the insurance proceeds and the carrying amount is
   a gain or loss, whether or not the proceeds are reinvested. Depreciation for 4 months = $58,800 × 4/12

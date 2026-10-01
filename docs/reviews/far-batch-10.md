@@ -43,9 +43,9 @@ The batch takes the two FAR tasks that had no items (I.A.3a, I.F.a), a second it
 
 ### Version-0 key letters
 
-- Numeric: six version-0 keys are on D (`nfp-functional-expenses-0002`, `nfp-cash-flows-0004`, `ratios-0006`, `income-statement-0006`, `receivables-rollforward-0004`, `payables-reconciliation-0003`), using items whose natural errors understate the key. In each, the variants bring in an overstating distractor, so the key moves off D. Three are on A (`cash-flows-0012`, `ppe-impairment-0003`, `cash-unreconciled-0002`).
+- Numeric: six version-0 keys are on D (`nfp-functional-expenses-0002`, `nfp-cash-flows-0004`, `ratios-0006`, `income-statement-0006`, `receivables-rollforward-0004`, `payables-reconciliation-0003`), using items whose natural errors understate the key. In each, the variants bring in an overstating distractor, so the key moves off D. Two are on A (`cash-flows-0012`, `cash-unreconciled-0002`). After the gate fixes, `ppe-impairment-0003` is on B and `ppe-involuntary-conversion-0001` is on C.
 - Word items (rotated by `finalize()`): `comprehensive-income-0004` A, `ratios-0005` B, `governmental-measurement-focus-0002` C, `asset-retirement-obligations-0002` D, `valuation-allowance-0002` A, `subsequent-events-0009` B, `notes-0007` C.
-- Overall: A 5, B 7, C 6, D 7.
+- Overall: A 4, B 7, C 7, D 7 (after the gate fixes; A 5, B 7, C 6, D 7 as built).
 - Across all 79 versions: A 9, B 26, C 36, D 8 (the variants lean to B and C because each mixes overstating and understating distractors).
 
 | Item | Key letters (version 0, variants 1–3) |
@@ -55,8 +55,8 @@ The batch takes the two FAR tasks that had no items (I.A.3a, I.F.a), a second it
 | `nfp-cash-flows-0004` | D B C C |
 | `special-purpose-frameworks-0005` | B A C C |
 | `ratios-0006` | D C C C |
-| `ppe-involuntary-conversion-0001` | B C B C |
-| `ppe-impairment-0003` | A B C C |
+| `ppe-involuntary-conversion-0001` | C C B C |
+| `ppe-impairment-0003` | B B C C |
 | `investments-htm-credit-loss-0002` | B B A B |
 | `exit-costs-0002` | B C A C |
 | `balance-sheet-0007` | C B C B |
@@ -90,4 +90,22 @@ One verifier solved all 79 versions blind, and its answers matched the key on ev
 
 ## Review gate
 
-_Placeholder for the lead: stratified sample, result and fixes._
+**Stratified gate** (tactic 4): 22 of 25 items at first. Twenty were reviewed in full: the 10 Analysis items; the items on a new task or template (`comprehensive-income-0004`, `ratios-0005`, `ppe-involuntary-conversion-0001`); the items on recently changed standards (`investments-htm-credit-loss-0002` for ASU 2016-13, `nfp-functional-expenses-0002` and `nfp-cash-flows-0004` for ASU 2016-14, and `exit-costs-0002` for ASC 420 after ASU 2016-02); and the items the builder flagged or the verifier changed (`consolidated-statements-0009`, `valuation-allowance-0002`, `subsequent-events-0009`). Two were drawn at random from the other five (seed 20261002): `asset-retirement-obligations-0002` and `ppe-impairment-0003`.
+
+**Escalation.** One of the two sampled items needed minor revision (50%, above the ~30% threshold), so the remaining three (`governmental-measurement-focus-0002`, `special-purpose-frameworks-0005`, `ratios-0006`) were gated too. All three are exam-ready, so in the end all 25 items were gated.
+
+**Result: passed.** The 25 items average **84.6%** estimated pass likelihood (batch 09: 84.9%). 21 are exam-ready, 4 need minor revision and none need major revision. No key is wrong in any of the 88 versions the gate solved. The gate checked every skill tag against the blueprint's skill marks and found them all correct, and it confirmed the currency points: ASU 2025-05 doesn't reach HTM debt, and the ASC 420-10-25-9 minimum retention period is 60 days when no notice is legally required.
+
+| Item | Gate | Fix |
+| --- | --- | --- |
+| `far-receivables-rollforward-0004` (82%) | Distractor A's rationale ("subtracts all of the cash received") didn't describe the error that produces its number. | The rationale now says the cash sales were not removed from cash receipts, which is exactly the error behind the number (all versions). |
+| `far-payables-reconciliation-0003` (84%) | The reference "ASC 310-10 (cash discounts: net method)" is wrong, because Topic 310 covers receivables. | The reference is now ASC 330-10-30 (purchases recorded net of cash discounts). |
+| `far-ratios-0005` (76%) | The stem's wording ("earnings large enough to meet the interest") nearly named the key, and return on assets was a weak distractor. | The stem now asks how far operating profit could fall before it no longer covers the annual cost of borrowing. Choice D is now cash debt coverage. |
+| `far-ppe-impairment-0003` (80%) | In version 0, D (cost less fair value, ignoring depreciation) was implausible, and the strongest error was missing: measuring against value in use, as IFRS does. | Version 0 now uses the value-in-use distractor ($270,000). Choices are $270,000 / **$345,000** / $363,000 / $495,000, so the key moves to B. |
+| Optional, applied | `cash-flows-0012` variant 1 used $105,000 for three different facts; `consolidated-statements-0010` variant 1 had the corrected payable equal to the dividend; version 0 of `ppe-involuntary-conversion-0001` lacked the "gain deferred because reinvested" error; the HTM stem's accrued-interest election sentence was clutter once interest is ignored. | Cash-flows variant 1: the machine costs $140,000 and depreciation is $180,000. Consolidation variant 1: the dividend is $70,000 (key $1,677,000). Involuntary conversion version 0: $0 replaces the deductible add-back (key C). HTM stem: "Ignore interest in this question." |
+
+**Not changed:** the gate noted that `ratios-0006` defines times interest earned in its stem, which could cue a student who meets it before `ratios-0005`. Changing 0005 to a different ratio would make it a different question under a live id, so the reworded stem stands. The next item on I.F.a should test a different ratio. The gate also noted that a flood is now the nonrecognized event in three subsequent-events items, so the next one should use a different event.
+
+**Gate suggestions for the pipeline** (open): (1) a builder check that no two different facts in one version share an amount; (2) a check that each distractor's rationale describes the computation that produces its number.
+
+**Blind re-check after the fixes:** a fresh verifier re-solved all 26 versions of the eight items changed after the first blind pass. It matched every key. Its one required fix is applied: in `consolidated-statements-0010`, the $118,000 eliminated balance could be read as including the management fees receivable, which would make the "fees missed" figure correct. The stem now calls it Cracoe's *trade* receivable and says the fees sit in a separate management fees receivable (all versions; no amounts changed). It found the `cash-flows-0012` variant 1–3 distractors weak. They are kept, because the first verifier traced each one to a named error (cost of equipment sold not added back when solving for purchases; net change in equipment less proceeds).

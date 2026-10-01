@@ -273,7 +273,7 @@ def consol_cl(p):
     key = (m(key_v), f"Correct. {m(p['Pc'])} + {m(p['Sc'])} − {m(p['y'] - p['t'])} trade payable to {sp} − {m(p['x'])} fees − {m(p['Dv'] - nci_div)} dividend owed to {sp}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{P} owns 80% of {S}{"" if S.endswith(".") else "."} To prepare {sp}'s draft December 31, Year 2, consolidated balance sheet, the staff added {sp}'s current liabilities of {m(p['Pc'])} and {ss}'s of {m(p['Sc'])}, then eliminated {m(p['y'])} for {ss}'s trade payable to {sp} (the balance of {sp}'s receivable from {ss}) and {m(p['Dv'])} for the dividend {ss} declared on December 20, payable January 15, Year 3, reporting total current liabilities of {m(X)}. Supporting schedules show: {sp}'s receivable from {ss} includes {m(p['t'])} for goods that {sp} shipped FOB shipping point on December 30 and {ss} received and recorded on January 4; {ss}'s accrued liabilities include {m(p['x'])} of December management fees owed to {sp}, which {sp} has recorded as a receivable; and {ss} has no other balances with {sp}. After any corrections needed, what total current liabilities should the consolidated balance sheet report?""",
+        f"""{P} owns 80% of {S}{"" if S.endswith(".") else "."} To prepare {sp}'s draft December 31, Year 2, consolidated balance sheet, the staff added {sp}'s current liabilities of {m(p['Pc'])} and {ss}'s of {m(p['Sc'])}, then eliminated {m(p['y'])} for {ss}'s trade payable to {sp} (the balance of {sp}'s trade receivable from {ss}) and {m(p['Dv'])} for the dividend {ss} declared on December 20, payable January 15, Year 3, reporting total current liabilities of {m(X)}. Supporting schedules show: {sp}'s trade receivable from {ss} includes {m(p['t'])} for goods that {sp} shipped FOB shipping point on December 30 and {ss} received and recorded on January 4; {ss}'s accrued liabilities include {m(p['x'])} of December management fees owed to {sp}, which {sp} has recorded in a separate management fees receivable, not in its trade receivable; and {ss} has no other balances with {sp}. After any corrections needed, what total current liabilities should the consolidated balance sheet report?""",
         choices, ans,
         f"""Only balances owed within the group are eliminated. {ss}'s books show a trade payable to {sp} of {m(p['y'])} − {m(p['t'])} in transit = {m(p['y'] - p['t'])}, so that is the liability to eliminate; the in-transit goods are handled on the asset side. The {m(p['x'])} of management fees {ss} owes {sp} is also eliminated. Of the {m(p['Dv'])} dividend payable, 80% ({m(p['Dv'] - nci_div)}) is owed to {sp} and eliminated, while {m(nci_div)} is owed to the noncontrolling shareholders and stays a liability. {m(p['Pc'])} + {m(p['Sc'])} − {m(p['y'] - p['t'])} − {m(p['x'])} − {m(p['Dv'] - nci_div)} = {m(key_v)}.""",
     )
@@ -344,7 +344,7 @@ def cecl_htm(p):
     key = (m(key_v), f"Correct. {m(ending)} required − ({m(p['B0'])} − {m(wo)}) remaining.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}, a public business entity, holds a portfolio of unsecured corporate bonds classified as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a loss rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and to write off uncollectible accrued interest by reversing interest income; ignore interest in this question. The allowance for credit losses was {m(p['B0'])} at January 1, Year 2. In June, the issuer of one bond, with an amortized cost of {m(p['W'])}, filed for bankruptcy; in October it paid {m(p['pc'])} in final settlement, and {s} wrote off the rest. At December 31, Year 2, the remaining bonds have an amortized cost of {m(p['X'])} and a fair value {m(p['u'])} below it, mostly because market interest rates rose. Based on historical losses adjusted for current conditions and reasonable and supportable forecasts, {s} expects {p['r']}% of the amortized cost of the remaining bonds not to be collected over their lives. What credit loss expense should {s} recognize for Year 2?""",
+        f"""{co}, a public business entity, holds a portfolio of unsecured corporate bonds classified as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a loss rate to amortized cost. Ignore interest in this question. The allowance for credit losses was {m(p['B0'])} at January 1, Year 2. In June, the issuer of one bond, with an amortized cost of {m(p['W'])}, filed for bankruptcy; in October it paid {m(p['pc'])} in final settlement, and {s} wrote off the rest. At December 31, Year 2, the remaining bonds have an amortized cost of {m(p['X'])} and a fair value {m(p['u'])} below it, mostly because market interest rates rose. Based on historical losses adjusted for current conditions and reasonable and supportable forecasts, {s} expects {p['r']}% of the amortized cost of the remaining bonds not to be collected over their lives. What credit loss expense should {s} recognize for Year 2?""",
         choices, ans,
         f"""The allowance at December 31 must equal expected credit losses over the bonds' lives: {p['r']}% × {m(p['X'])} = {m(ending)}. The write-off is the part of the defaulted bond not collected: {m(p['W'])} − {m(p['pc'])} = {m(wo)}, charged against the allowance, which leaves {m(p['B0'])} − {m(wo)} = {m(p['B0'] - wo)}. Credit loss expense = {m(ending)} − {m(p['B0'] - wo)} = {m(key_v)}. The decline in fair value caused by rising interest rates doesn't affect held-to-maturity securities carried at amortized cost.""",
     )
@@ -402,7 +402,7 @@ def ar_rollforward_end(p):
     co, s = p["co"], short(p["co"])
     key_v = p["B"] + p["S"] + p["rv"] - (p["C"] - p["cs"]) - p["w"] - p["e"]
     pool = {
-        "cs_in": (m(key_v - p["cs"]), f"Subtracts all {m(p['C'])} of cash received. The {m(p['cs'])} of cash sales never passed through accounts receivable."),
+        "cs_in": (m(key_v - p["cs"]), f"Doesn't remove the {m(p['cs'])} of cash sales from the cash receipts. Cash sales never passed through accounts receivable, so only {m(p['C'] - p['cs'])} of the receipts were collections of receivables."),
         "no_reinstate": (m(key_v - p["rv"]), f"Treats the {m(p['rv'])} received on the account written off in Year 1 as a collection of current receivables. That account was already out of receivables; collecting it reinstates and then clears it (or goes straight to the allowance), so it doesn't reduce the balance."),
         "refund": (m(key_v - p["y"]), f"Also subtracts the {m(p['y'])} increase in the refund liability for expected returns. Expected returns are a liability, not a reduction of the amounts customers owe."),
         "no_equip": (m(key_v + p["e"]), f"Leaves the {m(p['e'])} account settled with a delivery van in receivables. The account was settled, even though no cash was received."),
@@ -552,7 +552,7 @@ FAMILIES = [
      ["ASC 230-10-45-13 (cash flows from investing activities)", "ASC 230-10-50-3 (noncash investing and financing activities)", "ASC 360-10 (derecognition of equipment)"],
      scf_investing_derive, [
         dict(co="Hetton Co.", G0=2840000, G1=3175000, A0=1120000, A1=1205000, Dx=248000, Sc=290000, g=17000, Mn=180000, dn=40000, use=["gross_note", "proceeds_ca", "no_proceeds"]),
-        dict(co="Litton Co.", G0=1960000, G1=2215000, A0=780000, A1=846000, Dx=171000, Sc=210000, g=12000, Mn=135000, dn=30000, use=["no_sale_cost", "gross_note", "ad_zero"]),
+        dict(co="Litton Co.", G0=1960000, G1=2215000, A0=780000, A1=846000, Dx=180000, Sc=210000, g=12000, Mn=140000, dn=30000, use=["no_sale_cost", "gross_note", "ad_zero"]),
         dict(co="Halton Co.", G0=4150000, G1=4580000, A0=1640000, A1=1772000, Dx=362000, Sc=405000, g=24000, Mn=260000, dn=55000, use=["proceeds_ca", "ad_zero", "gross_note"]),
         dict(co="Gayle Co.", G0=1380000, G1=1572000, A0=536000, A1=581000, Dx=121000, Sc=148000, g=9000, Mn=96000, dn=20000, use=["ad_zero", "no_sale_cost", "proceeds_ca"]),
      ]),
@@ -560,7 +560,7 @@ FAMILIES = [
      ["ASC 810-10-45 (consolidation procedures: intra-entity balances)", "ASC 810-10 (noncontrolling interests)"],
      consol_cl, [
         dict(P="Cracoe Corp.", S="Aysgarth Inc.", Pc=1840000, Sc=760000, y=118000, t=26000, x=21000, Dv=90000, use=["full_div", "no_transit", "no_fee"]),
-        dict(P="Linton Corp.", S="Sedbusk Inc.", Pc=1265000, Sc=548000, y=84000, t=19000, x=15000, Dv=65000, use=["no_fee", "div_none", "full_div"]),
+        dict(P="Linton Corp.", S="Sedbusk Inc.", Pc=1265000, Sc=548000, y=84000, t=19000, x=15000, Dv=70000, use=["no_fee", "div_none", "full_div"]),
         dict(P="Healaugh Corp.", S="Muker Inc.", Pc=2470000, Sc=1020000, y=156000, t=34000, x=28000, Dv=120000, use=["no_transit", "no_fee", "div_none"]),
         dict(P="Carperby Corp.", S="Keasden Inc.", Pc=930000, Sc=402000, y=62000, t=14000, x=11000, Dv=45000, use=["div_none", "full_div", "no_transit"]),
      ]),
@@ -568,7 +568,7 @@ FAMILIES = [
     ("far-ppe-involuntary-conversion-0001", A2, "Property, plant and equipment", AP,
      ["ASC 610-30 (gains and losses on involuntary conversions of nonmonetary assets to monetary assets)", "ASC 360-10 (depreciation)"],
      involuntary, [
-        dict(co="Keld Co.", C=1470000, A0=588000, d=58800, date="April 30", mo=4, P=1060000, ded=25000, R=1600000, use=["no_partial", "full_year", "deductible"]),
+        dict(co="Keld Co.", C=1470000, A0=588000, d=58800, date="April 30", mo=4, P=1060000, ded=25000, R=1600000, use=["no_partial", "full_year", "zero"]),
         dict(co="Lindley Co.", C=984000, A0=393600, d=39360, date="July 31", mo=7, P=705000, ded=20000, R=1100000, use=["zero", "no_partial", "deductible"]),
         dict(co="Otley Co.", C=2256000, A0=1128000, d=90240, date="March 31", mo=3, P=1480000, ded=50000, R=2500000, use=["full_year", "deductible", "zero"]),
         dict(co="Pateley Co.", C=768000, A0=230400, d=30720, date="September 30", mo=9, P=640000, ded=15000, R=850000, use=["zero", "full_year", "no_partial"]),
@@ -576,7 +576,7 @@ FAMILIES = [
     ("far-ppe-impairment-0003", A2, "Property, plant and equipment", AP,
      ["ASC 360-10-35 (impairment of long-lived assets held and used: recoverability test and measurement at fair value)", "ASC 820-10 (fair value)"],
      impairment, [
-        dict(co="Rylstone Co.", what="bottling machine", K=1200000, n=8, c=110000, sv=60000, F=405000, cs=18000, rate=8, use=["cts", "no_dep", "cost"]),
+        dict(co="Rylstone Co.", what="bottling machine", K=1200000, n=8, c=110000, sv=60000, F=405000, cs=18000, rate=8, use=["viu", "cts", "no_dep"]),
         dict(co="Farnhill Co.", what="printing press", K=900000, n=6, c=125000, sv=40000, F=310000, cs=14000, rate=7, use=["undiscounted", "cts", "no_dep"]),
         dict(co="Uldale Co.", what="molding machine", K=1500000, n=10, c=120000, sv=80000, F=560000, cs=25000, rate=9, use=["viu", "undiscounted", "cts"]),
         dict(co="Wensley Co.", what="packaging line", K=720000, n=6, c=105000, sv=30000, F=226000, cs=11000, rate=8, use=["viu", "no_dep", "undiscounted"]),
@@ -630,7 +630,7 @@ FAMILIES = [
         dict(co="Scosthrop Co.", C=1291000, As=86000, x=23000, K=180000, use=["catchup", "sold_both", "gl"]),
      ]),
     ("far-payables-reconciliation-0003", A2, "Payables and accrued liabilities", AN,
-     ["ASC 405-10 (liabilities)", "ASC 210-10-45 (debit balances in payables reported as assets)", "ASC 310-10 (cash discounts: net method)"],
+     ["ASC 405-10 (liabilities)", "ASC 210-10-45 (debit balances in payables reported as assets)", "ASC 330-10-30 (inventory cost: purchases recorded net of cash discounts)"],
      ap_recon, [
         dict(co="Swinden Co.", C=538600, db=12400, h=17300, g=185000, dm=3900, use=["net_db", "held", "sub"]),
         dict(co="Threshfield Co.", C=724900, db=11200, h=23600, g=260000, dm=5300, use=["gross", "gl", "held"]),
@@ -651,11 +651,11 @@ WORD_ITEMS = [
         """The statement of comprehensive income reports all changes in equity during a period other than those from investments by and distributions to owners: net income plus other comprehensive income. Under ASC 220-10-45 an entity presents it in one continuous statement (net income, the components of OCI, then total comprehensive income) or in two separate but consecutive statements. A consolidated entity presents total comprehensive income and the amounts attributable to the parent and to the noncontrolling interest. OCI components may be shown net of tax or before tax with a single tax line. The option of reporting OCI only in the statement of changes in equity was removed by ASU 2011-05."""),
     mcq("far-ratios-0005", A1, "Financial Statement Ratios and Performance Metrics", RU,
         ["Financial statement analysis: choosing ratios (coverage, leverage, liquidity and profitability ratios)"],
-        """A bank is deciding whether to renew Calverley Co.'s term loan. Its credit officer wants to judge whether Calverley's earnings are large enough to meet the interest on its debt, and by how wide a margin. Which ratio best serves that purpose?""",
+        """A bank is deciding whether to renew Calverley Co.'s term loan. Its credit officer wants to know how far Calverley's operating profit could fall before it would no longer cover the annual cost of its borrowings. Which measure best serves that purpose?""",
         [("Times interest earned", "Correct. Times interest earned divides earnings before interest and taxes by interest expense, showing how many times earnings cover the interest charges, which is the margin the officer wants."),
          ("Debt-to-equity ratio", "Debt to equity measures how the company is financed (leverage), not whether its earnings cover the interest on that debt."),
          ("Operating cash flow to current liabilities", "This is a liquidity measure: it compares a year's operating cash flow with obligations due within a year, not earnings with interest charges."),
-         ("Return on total assets", "Return on assets measures how profitably the company uses its assets; it doesn't compare earnings with interest charges.")],
+         ("Cash debt coverage (operating cash flow ÷ average total liabilities)", "Cash debt coverage compares a year's operating cash flow with all of the company's debt, which bears on its ability to repay principal, not on how many times profit covers the interest charge.")],
         "A",
         """Coverage ratios answer whether earnings can service debt. Times interest earned (earnings before interest and taxes ÷ interest expense) shows how many times earnings cover the year's interest, so a higher figure means a wider margin before a fall in earnings would leave interest unpaid. Leverage ratios such as debt to equity describe the capital structure, liquidity ratios compare resources with short-term obligations, and profitability ratios such as return on assets measure returns."""),
     mcq("far-governmental-measurement-focus-0002", A1, "Measurement focus and basis of accounting", RU,

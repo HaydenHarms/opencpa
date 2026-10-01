@@ -13,15 +13,14 @@ review:
   notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
 stem: Askrigg Corp., a public business entity, holds a portfolio of unsecured corporate bonds classified
   as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a loss
-  rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and to write
-  off uncollectible accrued interest by reversing interest income; ignore interest in this question. The
-  allowance for credit losses was $46,000 at January 1, Year 2. In June, the issuer of one bond, with
-  an amortized cost of $60,000, filed for bankruptcy; in October it paid $24,000 in final settlement,
-  and Askrigg wrote off the rest. At December 31, Year 2, the remaining bonds have an amortized cost of
-  $4,800,000 and a fair value $135,000 below it, mostly because market interest rates rose. Based on historical
-  losses adjusted for current conditions and reasonable and supportable forecasts, Askrigg expects 1.2%
-  of the amortized cost of the remaining bonds not to be collected over their lives. What credit loss
-  expense should Askrigg recognize for Year 2?
+  rate to amortized cost. Ignore interest in this question. The allowance for credit losses was $46,000
+  at January 1, Year 2. In June, the issuer of one bond, with an amortized cost of $60,000, filed for
+  bankruptcy; in October it paid $24,000 in final settlement, and Askrigg wrote off the rest. At December
+  31, Year 2, the remaining bonds have an amortized cost of $4,800,000 and a fair value $135,000 below
+  it, mostly because market interest rates rose. Based on historical losses adjusted for current conditions
+  and reasonable and supportable forecasts, Askrigg expects 1.2% of the amortized cost of the remaining
+  bonds not to be collected over their lives. What credit loss expense should Askrigg recognize for Year
+  2?
 choices:
 - id: A
   text: $11,600
@@ -48,15 +47,14 @@ explanation: 'The allowance at December 31 must equal expected credit losses ove
 variants:
 - stem: Bainbridge Corp., a public business entity, holds a portfolio of unsecured corporate bonds classified
     as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a
-    loss rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and
-    to write off uncollectible accrued interest by reversing interest income; ignore interest in this
-    question. The allowance for credit losses was $38,000 at January 1, Year 2. In June, the issuer of
-    one bond, with an amortized cost of $50,000, filed for bankruptcy; in October it paid $18,000 in final
-    settlement, and Bainbridge wrote off the rest. At December 31, Year 2, the remaining bonds have an
-    amortized cost of $3,600,000 and a fair value $96,000 below it, mostly because market interest rates
-    rose. Based on historical losses adjusted for current conditions and reasonable and supportable forecasts,
-    Bainbridge expects 1.4% of the amortized cost of the remaining bonds not to be collected over their
-    lives. What credit loss expense should Bainbridge recognize for Year 2?
+    loss rate to amortized cost. Ignore interest in this question. The allowance for credit losses was
+    $38,000 at January 1, Year 2. In June, the issuer of one bond, with an amortized cost of $50,000,
+    filed for bankruptcy; in October it paid $18,000 in final settlement, and Bainbridge wrote off the
+    rest. At December 31, Year 2, the remaining bonds have an amortized cost of $3,600,000 and a fair
+    value $96,000 below it, mostly because market interest rates rose. Based on historical losses adjusted
+    for current conditions and reasonable and supportable forecasts, Bainbridge expects 1.4% of the amortized
+    cost of the remaining bonds not to be collected over their lives. What credit loss expense should
+    Bainbridge recognize for Year 2?
   choices:
   - id: A
     text: $12,400
@@ -81,15 +79,14 @@ variants:
     doesn''t affect held-to-maturity securities carried at amortized cost.'
 - stem: Coverham Corp., a public business entity, holds a portfolio of unsecured corporate bonds classified
     as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a
-    loss rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and
-    to write off uncollectible accrued interest by reversing interest income; ignore interest in this
-    question. The allowance for credit losses was $62,000 at January 1, Year 2. In June, the issuer of
-    one bond, with an amortized cost of $85,000, filed for bankruptcy; in October it paid $40,000 in final
-    settlement, and Coverham wrote off the rest. At December 31, Year 2, the remaining bonds have an amortized
-    cost of $6,200,000 and a fair value $171,000 below it, mostly because market interest rates rose.
-    Based on historical losses adjusted for current conditions and reasonable and supportable forecasts,
-    Coverham expects 1.1% of the amortized cost of the remaining bonds not to be collected over their
-    lives. What credit loss expense should Coverham recognize for Year 2?
+    loss rate to amortized cost. Ignore interest in this question. The allowance for credit losses was
+    $62,000 at January 1, Year 2. In June, the issuer of one bond, with an amortized cost of $85,000,
+    filed for bankruptcy; in October it paid $40,000 in final settlement, and Coverham wrote off the rest.
+    At December 31, Year 2, the remaining bonds have an amortized cost of $6,200,000 and a fair value
+    $171,000 below it, mostly because market interest rates rose. Based on historical losses adjusted
+    for current conditions and reasonable and supportable forecasts, Coverham expects 1.1% of the amortized
+    cost of the remaining bonds not to be collected over their lives. What credit loss expense should
+    Coverham recognize for Year 2?
   choices:
   - id: A
     text: $51,200
@@ -115,15 +112,14 @@ variants:
     doesn''t affect held-to-maturity securities carried at amortized cost.'
 - stem: Draughton Corp., a public business entity, holds a portfolio of unsecured corporate bonds classified
     as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a
-    loss rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and
-    to write off uncollectible accrued interest by reversing interest income; ignore interest in this
-    question. The allowance for credit losses was $29,000 at January 1, Year 2. In June, the issuer of
-    one bond, with an amortized cost of $40,000, filed for bankruptcy; in October it paid $15,000 in final
-    settlement, and Draughton wrote off the rest. At December 31, Year 2, the remaining bonds have an
-    amortized cost of $2,750,000 and a fair value $58,000 below it, mostly because market interest rates
-    rose. Based on historical losses adjusted for current conditions and reasonable and supportable forecasts,
-    Draughton expects 1.3% of the amortized cost of the remaining bonds not to be collected over their
-    lives. What credit loss expense should Draughton recognize for Year 2?
+    loss rate to amortized cost. Ignore interest in this question. The allowance for credit losses was
+    $29,000 at January 1, Year 2. In June, the issuer of one bond, with an amortized cost of $40,000,
+    filed for bankruptcy; in October it paid $15,000 in final settlement, and Draughton wrote off the
+    rest. At December 31, Year 2, the remaining bonds have an amortized cost of $2,750,000 and a fair
+    value $58,000 below it, mostly because market interest rates rose. Based on historical losses adjusted
+    for current conditions and reasonable and supportable forecasts, Draughton expects 1.3% of the amortized
+    cost of the remaining bonds not to be collected over their lives. What credit loss expense should
+    Draughton recognize for Year 2?
   choices:
   - id: A
     text: $6,750
