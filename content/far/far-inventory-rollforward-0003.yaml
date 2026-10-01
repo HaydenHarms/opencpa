@@ -1,0 +1,131 @@
+id: far-inventory-rollforward-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory cost; freight; purchase discounts)
+  - ASC 606-10-55 (consignment arrangements)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Firth Co. uses a periodic inventory system and records purchases at gross amounts. Its Year 2 records
+  show beginning inventory of $265,000, purchases of $1,840,000, purchase discounts taken of $29,000,
+  and freight of $58,000, of which $17,000 was paid to deliver goods to customers. In August, a warehouse
+  fire destroyed goods costing $36,000; Firth reports casualty losses separately from cost of goods sold.
+  The December 31 physical count, priced at cost, totals $298,000. It includes goods costing $22,000 that
+  a supplier shipped to Firth in December to sell on the supplier's behalf on consignment; Firth has not
+  recorded them as a purchase. What should Firth report as cost of goods sold for Year 2?
+choices:
+- id: A
+  text: $1,783,000
+  rationale: Leaves the $22,000 of consigned goods in ending inventory. They belong to the supplier, so
+    they come out of the count; since they were never recorded as a purchase, nothing else changes.
+- id: B
+  text: $1,805,000
+  rationale: Correct. $265,000 + $1,840,000 − $29,000 + $41,000 − $36,000 − ($298,000 − $22,000).
+- id: C
+  text: $1,834,000
+  rationale: Ignores the $29,000 of purchase discounts taken, which reduce the cost of purchases.
+- id: D
+  text: $1,841,000
+  rationale: Leaves the $36,000 of goods destroyed by fire in cost of goods sold. Firth reports casualty
+    losses separately.
+answer: B
+explanation: 'Cost of goods available: $265,000 + $1,840,000 purchases − $29,000 discounts + freight-in
+  ($58,000 − $17,000 freight-out, a selling expense) = $2,117,000, less the $36,000 destroyed by fire
+  (reported as a separate loss). Ending inventory = $298,000 − $22,000 consigned goods, which belong to
+  the supplier = $276,000. The consigned goods were never recorded as a purchase, so only the count changes.
+  Cost of goods sold = $1,805,000.'
+variants:
+- stem: Greenwood Co. uses a periodic inventory system and records purchases at gross amounts. Its Year
+    2 records show beginning inventory of $410,000, purchases of $2,960,000, purchase discounts taken
+    of $44,000, and freight of $86,000, of which $25,000 was paid to deliver goods to customers. In August,
+    a warehouse fire destroyed goods costing $52,000; Greenwood reports casualty losses separately from
+    cost of goods sold. The December 31 physical count, priced at cost, totals $452,000. It includes goods
+    costing $31,000 that a supplier shipped to Greenwood in December to sell on the supplier's behalf
+    on consignment; Greenwood has not recorded them as a purchase. What should Greenwood report as cost
+    of goods sold for Year 2?
+  choices:
+  - id: A
+    text: $2,883,000
+    rationale: Leaves the $31,000 of consigned goods in ending inventory. They belong to the supplier,
+      so they come out of the count; since they were never recorded as a purchase, nothing else changes.
+  - id: B
+    text: $2,914,000
+    rationale: Correct. $410,000 + $2,960,000 − $44,000 + $61,000 − $52,000 − ($452,000 − $31,000).
+  - id: C
+    text: $2,939,000
+    rationale: Includes the $25,000 of freight on deliveries to customers in inventory cost. Freight-out
+      is a selling expense.
+  - id: D
+    text: $2,966,000
+    rationale: Leaves the $52,000 of goods destroyed by fire in cost of goods sold. Greenwood reports
+      casualty losses separately.
+  answer: B
+  explanation: 'Cost of goods available: $410,000 + $2,960,000 purchases − $44,000 discounts + freight-in
+    ($86,000 − $25,000 freight-out, a selling expense) = $3,387,000, less the $52,000 destroyed by fire
+    (reported as a separate loss). Ending inventory = $452,000 − $31,000 consigned goods, which belong
+    to the supplier = $421,000. The consigned goods were never recorded as a purchase, so only the count
+    changes. Cost of goods sold = $2,914,000.'
+- stem: Holroyd Co. uses a periodic inventory system and records purchases at gross amounts. Its Year
+    2 records show beginning inventory of $148,000, purchases of $1,020,000, purchase discounts taken
+    of $16,000, and freight of $33,000, of which $9,000 was paid to deliver goods to customers. In August,
+    a warehouse fire destroyed goods costing $21,000; Holroyd reports casualty losses separately from
+    cost of goods sold. The December 31 physical count, priced at cost, totals $171,000. It includes goods
+    costing $13,000 that a supplier shipped to Holroyd in December to sell on the supplier's behalf on
+    consignment; Holroyd has not recorded them as a purchase. What should Holroyd report as cost of goods
+    sold for Year 2?
+  choices:
+  - id: A
+    text: $973,000
+    rationale: Treats all freight as a selling expense. The $24,000 paid to bring goods in is part of
+      inventory cost; only the $9,000 of delivery freight is a selling expense.
+  - id: B
+    text: $984,000
+    rationale: Leaves the $13,000 of consigned goods in ending inventory. They belong to the supplier,
+      so they come out of the count; since they were never recorded as a purchase, nothing else changes.
+  - id: C
+    text: $997,000
+    rationale: Correct. $148,000 + $1,020,000 − $16,000 + $24,000 − $21,000 − ($171,000 − $13,000).
+  - id: D
+    text: $1,006,000
+    rationale: Includes the $9,000 of freight on deliveries to customers in inventory cost. Freight-out
+      is a selling expense.
+  answer: C
+  explanation: 'Cost of goods available: $148,000 + $1,020,000 purchases − $16,000 discounts + freight-in
+    ($33,000 − $9,000 freight-out, a selling expense) = $1,176,000, less the $21,000 destroyed by fire
+    (reported as a separate loss). Ending inventory = $171,000 − $13,000 consigned goods, which belong
+    to the supplier = $158,000. The consigned goods were never recorded as a purchase, so only the count
+    changes. Cost of goods sold = $997,000.'
+- stem: Ingham Co. uses a periodic inventory system and records purchases at gross amounts. Its Year 2
+    records show beginning inventory of $530,000, purchases of $3,710,000, purchase discounts taken of
+    $58,000, and freight of $104,000, of which $31,000 was paid to deliver goods to customers. In August,
+    a warehouse fire destroyed goods costing $67,000; Ingham reports casualty losses separately from cost
+    of goods sold. The December 31 physical count, priced at cost, totals $585,000. It includes goods
+    costing $40,000 that a supplier shipped to Ingham in December to sell on the supplier's behalf on
+    consignment; Ingham has not recorded them as a purchase. What should Ingham report as cost of goods
+    sold for Year 2?
+  choices:
+  - id: A
+    text: $3,643,000
+    rationale: Correct. $530,000 + $3,710,000 − $58,000 + $73,000 − $67,000 − ($585,000 − $40,000).
+  - id: B
+    text: $3,674,000
+    rationale: Includes the $31,000 of freight on deliveries to customers in inventory cost. Freight-out
+      is a selling expense.
+  - id: C
+    text: $3,701,000
+    rationale: Ignores the $58,000 of purchase discounts taken, which reduce the cost of purchases.
+  - id: D
+    text: $3,710,000
+    rationale: Leaves the $67,000 of goods destroyed by fire in cost of goods sold. Ingham reports casualty
+      losses separately.
+  answer: A
+  explanation: 'Cost of goods available: $530,000 + $3,710,000 purchases − $58,000 discounts + freight-in
+    ($104,000 − $31,000 freight-out, a selling expense) = $4,255,000, less the $67,000 destroyed by fire
+    (reported as a separate loss). Ending inventory = $585,000 − $40,000 consigned goods, which belong
+    to the supplier = $545,000. The consigned goods were never recorded as a purchase, so only the count
+    changes. Cost of goods sold = $3,643,000.'

@@ -1,0 +1,128 @@
+id: far-debt-noninterest-note-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 835-30 (imputation of interest on notes exchanged for property)
+  - ASC 835-30-35 (effective interest method)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On April 1, Year 1, Cawthorne Corp. acquires a machine by issuing a $500,000 note that bears no
+  stated interest and is due in full on March 31, Year 4. The machine has no reliably determinable cash
+  price, the note has no market value, and Cawthorne's incremental borrowing rate for a similar note is
+  8%, compounded annually. The present value of 1 for three periods at 8% is 0.7938. Cawthorne uses the
+  effective interest method, computes interest for each year of the note's term, accrues it evenly within
+  that year, and rounds to the nearest dollar at each step. What interest expense on the note should Cawthorne
+  report for the calendar year Year 2?
+choices:
+- id: A
+  text: $23,814
+  rationale: Reports the interest for Year 1 (April through December). The question asks for Year 2.
+- id: B
+  text: $31,752
+  rationale: Uses the first note year's interest (April, Year 1, to March, Year 2) for the whole calendar
+    year. Nine months of Year 2 fall in the second note year, when the carrying amount is higher.
+- id: C
+  text: $33,657
+  rationale: Correct. 3/12 × $31,752 + 9/12 × $34,292.
+- id: D
+  text: $40,000
+  rationale: Applies the 8% rate to the $500,000 face amount. Interest is the rate times the note's carrying
+    amount, which starts at its present value.
+answer: C
+explanation: 'With no stated interest and no reliable cash price, the note is recorded at its present
+  value at the imputed 8% rate: $500,000 × 0.7938 = $396,900. Interest for the first note year (to March
+  31, Year 2) = $396,900 × 8% = $31,752; for the second note year = ($396,900 + $31,752) × 8% = $34,292.
+  Year 2 includes three months of the first note year and nine of the second: $31,752 × 3/12 = $7,938,
+  plus $34,292 × 9/12 = $25,719, for $33,657.'
+variants:
+- stem: On April 1, Year 1, Dewhirst Corp. acquires a machine by issuing a $750,000 note that bears no
+    stated interest and is due in full on March 31, Year 4. The machine has no reliably determinable cash
+    price, the note has no market value, and Dewhirst's incremental borrowing rate for a similar note
+    is 7%, compounded annually. The present value of 1 for three periods at 7% is 0.8163. Dewhirst uses
+    the effective interest method, computes interest for each year of the note's term, accrues it evenly
+    within that year, and rounds to the nearest dollar at each step. What interest expense on the note
+    should Dewhirst report for the calendar year Year 2?
+  choices:
+  - id: A
+    text: $42,856
+    rationale: Uses the first note year's interest (April, Year 1, to March, Year 2) for the whole calendar
+      year. Nine months of Year 2 fall in the second note year, when the carrying amount is higher.
+  - id: B
+    text: $45,106
+    rationale: Correct. 3/12 × $42,856 + 9/12 × $45,856.
+  - id: C
+    text: $45,856
+    rationale: Uses the second note year's interest for the whole calendar year. January through March
+      of Year 2 belong to the first note year.
+  - id: D
+    text: $52,500
+    rationale: Applies the 7% rate to the $750,000 face amount. Interest is the rate times the note's
+      carrying amount, which starts at its present value.
+  answer: B
+  explanation: 'With no stated interest and no reliable cash price, the note is recorded at its present
+    value at the imputed 7% rate: $750,000 × 0.8163 = $612,225. Interest for the first note year (to March
+    31, Year 2) = $612,225 × 7% = $42,856; for the second note year = ($612,225 + $42,856) × 7% = $45,856.
+    Year 2 includes three months of the first note year and nine of the second: $42,856 × 3/12 = $10,714,
+    plus $45,856 × 9/12 = $34,392, for $45,106.'
+- stem: On April 1, Year 1, Eccleston Corp. acquires a machine by issuing a $400,000 note that bears no
+    stated interest and is due in full on March 31, Year 4. The machine has no reliably determinable cash
+    price, the note has no market value, and Eccleston's incremental borrowing rate for a similar note
+    is 9%, compounded annually. The present value of 1 for three periods at 9% is 0.7722. Eccleston uses
+    the effective interest method, computes interest for each year of the note's term, accrues it evenly
+    within that year, and rounds to the nearest dollar at each step. What interest expense on the note
+    should Eccleston report for the calendar year Year 2?
+  choices:
+  - id: A
+    text: $20,849
+    rationale: Reports the interest for Year 1 (April through December). The question asks for Year 2.
+  - id: B
+    text: $29,676
+    rationale: Correct. 3/12 × $27,799 + 9/12 × $30,301.
+  - id: C
+    text: $30,373
+    rationale: Spreads the $91,120 discount evenly over three years ($91,120 ÷ 3 = $30,373, rounded to
+      the nearest dollar). The effective interest method applies the rate to the note's carrying amount,
+      which grows each year.
+  - id: D
+    text: $36,000
+    rationale: Applies the 9% rate to the $400,000 face amount. Interest is the rate times the note's
+      carrying amount, which starts at its present value.
+  answer: B
+  explanation: 'With no stated interest and no reliable cash price, the note is recorded at its present
+    value at the imputed 9% rate: $400,000 × 0.7722 = $308,880. Interest for the first note year (to March
+    31, Year 2) = $308,880 × 9% = $27,799; for the second note year = ($308,880 + $27,799) × 9% = $30,301.
+    Year 2 includes three months of the first note year and nine of the second: $27,799 × 3/12 = $6,950,
+    plus $30,301 × 9/12 = $22,726, for $29,676.'
+- stem: On April 1, Year 1, Fairbank Corp. acquires a machine by issuing a $1,000,000 note that bears
+    no stated interest and is due in full on March 31, Year 4. The machine has no reliably determinable
+    cash price, the note has no market value, and Fairbank's incremental borrowing rate for a similar
+    note is 6%, compounded annually. The present value of 1 for three periods at 6% is 0.8396. Fairbank
+    uses the effective interest method, computes interest for each year of the note's term, accrues it
+    evenly within that year, and rounds to the nearest dollar at each step. What interest expense on the
+    note should Fairbank report for the calendar year Year 2?
+  choices:
+  - id: A
+    text: $37,782
+    rationale: Reports the interest for Year 1 (April through December). The question asks for Year 2.
+  - id: B
+    text: $50,376
+    rationale: Uses the first note year's interest (April, Year 1, to March, Year 2) for the whole calendar
+      year. Nine months of Year 2 fall in the second note year, when the carrying amount is higher.
+  - id: C
+    text: $52,643
+    rationale: Correct. 3/12 × $50,376 + 9/12 × $53,399.
+  - id: D
+    text: $53,399
+    rationale: Uses the second note year's interest for the whole calendar year. January through March
+      of Year 2 belong to the first note year.
+  answer: C
+  explanation: 'With no stated interest and no reliable cash price, the note is recorded at its present
+    value at the imputed 6% rate: $1,000,000 × 0.8396 = $839,600. Interest for the first note year (to
+    March 31, Year 2) = $839,600 × 6% = $50,376; for the second note year = ($839,600 + $50,376) × 6%
+    = $53,399. Year 2 includes three months of the first note year and nine of the second: $50,376 × 3/12
+    = $12,594, plus $53,399 × 9/12 = $40,049, for $52,643.'

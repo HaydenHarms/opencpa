@@ -1,0 +1,133 @@
+id: far-receivables-factoring-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 860-10-40 (conditions for sale accounting)
+  - ASC 860-20 (sales of financial assets; recourse obligations measured at fair value)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'On March 1, Year 1, Sedgwick Co. transfers $800,000 of trade receivables to a factor with recourse:
+  Sedgwick must reimburse the factor for uncollectible accounts, up to $40,000. Legal counsel concludes
+  that the receivables are beyond the reach of Sedgwick and its creditors, even in bankruptcy; the factor
+  may sell or pledge them; and Sedgwick has no right or obligation to buy any of them back. The factor
+  charges a fee of 3% of the receivables and holds back 10% of them to cover sales returns, payable to
+  Sedgwick after the accounts are collected; Sedgwick expects no returns. The fair value of the recourse
+  obligation is $14,000. What loss should Sedgwick recognize on the transfer?'
+choices:
+- id: A
+  text: $0
+  rationale: 'Treats the transfer as a secured borrowing because it is with recourse. Recourse doesn''t
+    prevent sale accounting when Sedgwick has surrendered control: the receivables are isolated, the factor
+    may sell or pledge them, and Sedgwick can''t reclaim them.'
+- id: B
+  text: $24,000
+  rationale: Records only the $24,000 fee. The recourse obligation is a liability Sedgwick takes on in
+    the sale, measured at its $14,000 fair value, which reduces the proceeds.
+- id: C
+  text: $38,000
+  rationale: Correct. $24,000 fee + $14,000 recourse obligation.
+- id: D
+  text: $64,000
+  rationale: Measures the recourse obligation at the $40,000 maximum. It is measured at its $14,000 fair
+    value.
+answer: C
+explanation: Sedgwick has surrendered control (the receivables are legally isolated, the factor can pledge
+  or sell them, and Sedgwick keeps no effective control), so the transfer is a sale even though it is
+  with recourse. Proceeds are cash of $696,000 plus the $80,000 receivable from the factor, less the recourse
+  obligation at its $14,000 fair value. Loss = $800,000 carrying amount − ($696,000 + $80,000 − $14,000)
+  = $24,000 + $14,000 = $38,000.
+variants:
+- stem: 'On June 1, Year 1, Tattersall Co. transfers $600,000 of trade receivables to a factor with recourse:
+    Tattersall must reimburse the factor for uncollectible accounts, up to $35,000. Legal counsel concludes
+    that the receivables are beyond the reach of Tattersall and its creditors, even in bankruptcy; the
+    factor may sell or pledge them; and Tattersall has no right or obligation to buy any of them back.
+    The factor charges a fee of 5% of the receivables and holds back 8% of them to cover sales returns,
+    payable to Tattersall after the accounts are collected; Tattersall expects no returns. The fair value
+    of the recourse obligation is $9,000. What loss should Tattersall recognize on the transfer?'
+  choices:
+  - id: A
+    text: $0
+    rationale: 'Treats the transfer as a secured borrowing because it is with recourse. Recourse doesn''t
+      prevent sale accounting when Tattersall has surrendered control: the receivables are isolated, the
+      factor may sell or pledge them, and Tattersall can''t reclaim them.'
+  - id: B
+    text: $39,000
+    rationale: Correct. $30,000 fee + $9,000 recourse obligation.
+  - id: C
+    text: $65,000
+    rationale: Measures the recourse obligation at the $35,000 maximum. It is measured at its $9,000 fair
+      value.
+  - id: D
+    text: $87,000
+    rationale: Also treats the $48,000 holdback as a loss. The holdback is a receivable from the factor,
+      due to Tattersall once the accounts are collected; no returns are expected.
+  answer: B
+  explanation: Tattersall has surrendered control (the receivables are legally isolated, the factor can
+    pledge or sell them, and Tattersall keeps no effective control), so the transfer is a sale even though
+    it is with recourse. Proceeds are cash of $522,000 plus the $48,000 receivable from the factor, less
+    the recourse obligation at its $9,000 fair value. Loss = $600,000 carrying amount − ($522,000 + $48,000
+    − $9,000) = $30,000 + $9,000 = $39,000.
+- stem: 'On September 1, Year 1, Utley Co. transfers $1,000,000 of trade receivables to a factor with
+    recourse: Utley must reimburse the factor for uncollectible accounts, up to $50,000. Legal counsel
+    concludes that the receivables are beyond the reach of Utley and its creditors, even in bankruptcy;
+    the factor may sell or pledge them; and Utley has no right or obligation to buy any of them back.
+    The factor charges a fee of 2% of the receivables and holds back 12% of them to cover sales returns,
+    payable to Utley after the accounts are collected; Utley expects no returns. The fair value of the
+    recourse obligation is $16,000. What loss should Utley recognize on the transfer?'
+  choices:
+  - id: A
+    text: $20,000
+    rationale: Records only the $20,000 fee. The recourse obligation is a liability Utley takes on in
+      the sale, measured at its $16,000 fair value, which reduces the proceeds.
+  - id: B
+    text: $36,000
+    rationale: Correct. $20,000 fee + $16,000 recourse obligation.
+  - id: C
+    text: $70,000
+    rationale: Measures the recourse obligation at the $50,000 maximum. It is measured at its $16,000
+      fair value.
+  - id: D
+    text: $156,000
+    rationale: Also treats the $120,000 holdback as a loss. The holdback is a receivable from the factor,
+      due to Utley once the accounts are collected; no returns are expected.
+  answer: B
+  explanation: Utley has surrendered control (the receivables are legally isolated, the factor can pledge
+    or sell them, and Utley keeps no effective control), so the transfer is a sale even though it is with
+    recourse. Proceeds are cash of $860,000 plus the $120,000 receivable from the factor, less the recourse
+    obligation at its $16,000 fair value. Loss = $1,000,000 carrying amount − ($860,000 + $120,000 − $16,000)
+    = $20,000 + $16,000 = $36,000.
+- stem: 'On November 1, Year 1, Vipond Co. transfers $450,000 of trade receivables to a factor with recourse:
+    Vipond must reimburse the factor for uncollectible accounts, up to $25,000. Legal counsel concludes
+    that the receivables are beyond the reach of Vipond and its creditors, even in bankruptcy; the factor
+    may sell or pledge them; and Vipond has no right or obligation to buy any of them back. The factor
+    charges a fee of 4% of the receivables and holds back 10% of them to cover sales returns, payable
+    to Vipond after the accounts are collected; Vipond expects no returns. The fair value of the recourse
+    obligation is $11,000. What loss should Vipond recognize on the transfer?'
+  choices:
+  - id: A
+    text: $0
+    rationale: 'Treats the transfer as a secured borrowing because it is with recourse. Recourse doesn''t
+      prevent sale accounting when Vipond has surrendered control: the receivables are isolated, the factor
+      may sell or pledge them, and Vipond can''t reclaim them.'
+  - id: B
+    text: $18,000
+    rationale: Records only the $18,000 fee. The recourse obligation is a liability Vipond takes on in
+      the sale, measured at its $11,000 fair value, which reduces the proceeds.
+  - id: C
+    text: $29,000
+    rationale: Correct. $18,000 fee + $11,000 recourse obligation.
+  - id: D
+    text: $74,000
+    rationale: Also treats the $45,000 holdback as a loss. The holdback is a receivable from the factor,
+      due to Vipond once the accounts are collected; no returns are expected.
+  answer: C
+  explanation: Vipond has surrendered control (the receivables are legally isolated, the factor can pledge
+    or sell them, and Vipond keeps no effective control), so the transfer is a sale even though it is
+    with recourse. Proceeds are cash of $387,000 plus the $45,000 receivable from the factor, less the
+    recourse obligation at its $11,000 fair value. Loss = $450,000 carrying amount − ($387,000 + $45,000
+    − $11,000) = $18,000 + $11,000 = $29,000.

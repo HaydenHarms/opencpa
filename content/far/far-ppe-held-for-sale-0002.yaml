@@ -1,0 +1,179 @@
+id: far-ppe-held-for-sale-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 360-10-45 (long-lived assets classified as held for sale)
+  - 'ASC 360-10-55 (implementation guidance: usual and customary terms)'
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Jolliffe Co. is preparing its December 31, Year 1, balance sheet, which will be issued on March
+  1, Year 2. Each asset below has a fair value less cost to sell above its carrying amount. (1) A warehouse,
+  carrying amount $640,000: in October, management with the authority to do so approved its sale; it is
+  vacant and listed with a broker at a price in line with recent sales of similar warehouses, and a sale
+  is expected by mid-Year 2. (2) Delivery trucks, $210,000: management approved their sale in December,
+  but Jolliffe will keep using them until replacement trucks arrive in June, Year 2, and will list them
+  then. (3) An office building, $1,150,000: approved for sale in September and listed since then at a
+  price 40% above its appraised fair value; no offers have been received, and Jolliffe hasn''t lowered
+  the price. (4) Packaging equipment, $175,000: idle since November; the board approved its sale, and
+  Jolliffe began marketing it at a reasonable price, on January 15, Year 2. (5) Jolliffe''s headquarters
+  building, $2,300,000: approved for sale in November and marketed at a price in line with comparable
+  sales; a buyer''s offer was accepted in December and the sale should close in February, Year 2, after
+  which Jolliffe will move to leased offices that are already prepared. The plans are not expected to
+  change. What total carrying amount should Jolliffe report as assets held for sale at December 31, Year
+  1?'
+choices:
+- id: A
+  text: $640,000
+  rationale: Leaves out the headquarters building because Jolliffe still occupies it. Staying only until
+    a closing and then moving out within the usual time doesn't stop the building from being available
+    for immediate sale.
+- id: B
+  text: $2,940,000
+  rationale: Correct. Warehouse $640,000 + headquarters building $2,300,000.
+- id: C
+  text: $3,115,000
+  rationale: Includes the packaging equipment. Its plan was approved and marketing began on January 15,
+    Year 2; when the criteria are first met after the balance sheet date, the asset stays held and used
+    at December 31.
+- id: D
+  text: $4,090,000
+  rationale: Includes the office building. An asking price 40% above fair value, unchanged despite no
+    offers, isn't a price reasonable in relation to fair value, so a sale within a year isn't probable.
+answer: B
+explanation: 'An asset is classified as held for sale when management with authority commits to a plan,
+  the asset is available for immediate sale in its present condition (subject only to usual and customary
+  terms), an active program to find a buyer has begun, the sale is probable within one year, the price
+  is reasonable in relation to fair value, and the plan is unlikely to change. The warehouse ($640,000)
+  qualifies. So does the headquarters building ($2,300,000): vacating it after closing is a usual and
+  customary term. The trucks are still in use and not marketed; the office building''s asking price is
+  unreasonable; and the packaging equipment met the criteria only after year-end, so it is held and used
+  at December 31. Total = $2,940,000.'
+variants:
+- stem: 'Kershaw Co. is preparing its December 31, Year 1, balance sheet, which will be issued on March
+    1, Year 2. Each asset below has a fair value less cost to sell above its carrying amount. (1) A warehouse,
+    carrying amount $820,000: in October, management with the authority to do so approved its sale; it
+    is vacant and listed with a broker at a price in line with recent sales of similar warehouses, and
+    a sale is expected by mid-Year 2. (2) Delivery trucks, $165,000: management approved their sale in
+    December, but Kershaw will keep using them until replacement trucks arrive in June, Year 2, and will
+    list them then. (3) An office building, $940,000: approved for sale in September and listed since
+    then at a price 40% above its appraised fair value; no offers have been received, and Kershaw hasn''t
+    lowered the price. (4) Packaging equipment, $230,000: idle since November; the board approved its
+    sale, and Kershaw began marketing it at a reasonable price, on January 15, Year 2. (5) Kershaw''s
+    headquarters building, $1,600,000: approved for sale in November and marketed at a price in line with
+    comparable sales; a buyer''s offer was accepted in December and the sale should close in February,
+    Year 2, after which Kershaw will move to leased offices that are already prepared. The plans are not
+    expected to change. What total carrying amount should Kershaw report as assets held for sale at December
+    31, Year 1?'
+  choices:
+  - id: A
+    text: $2,420,000
+    rationale: Correct. Warehouse $820,000 + headquarters building $1,600,000.
+  - id: B
+    text: $2,585,000
+    rationale: Includes the delivery trucks. Kershaw will keep using them until June and hasn't listed
+      them, so they aren't available for immediate sale and aren't being marketed.
+  - id: C
+    text: $2,650,000
+    rationale: Includes the packaging equipment. Its plan was approved and marketing began on January
+      15, Year 2; when the criteria are first met after the balance sheet date, the asset stays held and
+      used at December 31.
+  - id: D
+    text: $3,360,000
+    rationale: Includes the office building. An asking price 40% above fair value, unchanged despite no
+      offers, isn't a price reasonable in relation to fair value, so a sale within a year isn't probable.
+  answer: A
+  explanation: 'An asset is classified as held for sale when management with authority commits to a plan,
+    the asset is available for immediate sale in its present condition (subject only to usual and customary
+    terms), an active program to find a buyer has begun, the sale is probable within one year, the price
+    is reasonable in relation to fair value, and the plan is unlikely to change. The warehouse ($820,000)
+    qualifies. So does the headquarters building ($1,600,000): vacating it after closing is a usual and
+    customary term. The trucks are still in use and not marketed; the office building''s asking price
+    is unreasonable; and the packaging equipment met the criteria only after year-end, so it is held and
+    used at December 31. Total = $2,420,000.'
+- stem: 'Lumb Co. is preparing its December 31, Year 1, balance sheet, which will be issued on March 1,
+    Year 2. Each asset below has a fair value less cost to sell above its carrying amount. (1) A warehouse,
+    carrying amount $455,000: in October, management with the authority to do so approved its sale; it
+    is vacant and listed with a broker at a price in line with recent sales of similar warehouses, and
+    a sale is expected by mid-Year 2. (2) Delivery trucks, $290,000: management approved their sale in
+    December, but Lumb will keep using them until replacement trucks arrive in June, Year 2, and will
+    list them then. (3) An office building, $1,380,000: approved for sale in September and listed since
+    then at a price 40% above its appraised fair value; no offers have been received, and Lumb hasn''t
+    lowered the price. (4) Packaging equipment, $120,000: idle since November; the board approved its
+    sale, and Lumb began marketing it at a reasonable price, on January 15, Year 2. (5) Lumb''s headquarters
+    building, $2,750,000: approved for sale in November and marketed at a price in line with comparable
+    sales; a buyer''s offer was accepted in December and the sale should close in February, Year 2, after
+    which Lumb will move to leased offices that are already prepared. The plans are not expected to change.
+    What total carrying amount should Lumb report as assets held for sale at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $455,000
+    rationale: Leaves out the headquarters building because Lumb still occupies it. Staying only until
+      a closing and then moving out within the usual time doesn't stop the building from being available
+      for immediate sale.
+  - id: B
+    text: $3,205,000
+    rationale: Correct. Warehouse $455,000 + headquarters building $2,750,000.
+  - id: C
+    text: $3,495,000
+    rationale: Includes the delivery trucks. Lumb will keep using them until June and hasn't listed them,
+      so they aren't available for immediate sale and aren't being marketed.
+  - id: D
+    text: $4,585,000
+    rationale: Includes the office building. An asking price 40% above fair value, unchanged despite no
+      offers, isn't a price reasonable in relation to fair value, so a sale within a year isn't probable.
+  answer: B
+  explanation: 'An asset is classified as held for sale when management with authority commits to a plan,
+    the asset is available for immediate sale in its present condition (subject only to usual and customary
+    terms), an active program to find a buyer has begun, the sale is probable within one year, the price
+    is reasonable in relation to fair value, and the plan is unlikely to change. The warehouse ($455,000)
+    qualifies. So does the headquarters building ($2,750,000): vacating it after closing is a usual and
+    customary term. The trucks are still in use and not marketed; the office building''s asking price
+    is unreasonable; and the packaging equipment met the criteria only after year-end, so it is held and
+    used at December 31. Total = $3,205,000.'
+- stem: 'Marsden Co. is preparing its December 31, Year 1, balance sheet, which will be issued on March
+    1, Year 2. Each asset below has a fair value less cost to sell above its carrying amount. (1) A warehouse,
+    carrying amount $1,100,000: in October, management with the authority to do so approved its sale;
+    it is vacant and listed with a broker at a price in line with recent sales of similar warehouses,
+    and a sale is expected by mid-Year 2. (2) Delivery trucks, $340,000: management approved their sale
+    in December, but Marsden will keep using them until replacement trucks arrive in June, Year 2, and
+    will list them then. (3) An office building, $760,000: approved for sale in September and listed since
+    then at a price 40% above its appraised fair value; no offers have been received, and Marsden hasn''t
+    lowered the price. (4) Packaging equipment, $410,000: idle since November; the board approved its
+    sale, and Marsden began marketing it at a reasonable price, on January 15, Year 2. (5) Marsden''s
+    headquarters building, $1,950,000: approved for sale in November and marketed at a price in line with
+    comparable sales; a buyer''s offer was accepted in December and the sale should close in February,
+    Year 2, after which Marsden will move to leased offices that are already prepared. The plans are not
+    expected to change. What total carrying amount should Marsden report as assets held for sale at December
+    31, Year 1?'
+  choices:
+  - id: A
+    text: $1,100,000
+    rationale: Leaves out the headquarters building because Marsden still occupies it. Staying only until
+      a closing and then moving out within the usual time doesn't stop the building from being available
+      for immediate sale.
+  - id: B
+    text: $3,050,000
+    rationale: Correct. Warehouse $1,100,000 + headquarters building $1,950,000.
+  - id: C
+    text: $3,460,000
+    rationale: Includes the packaging equipment. Its plan was approved and marketing began on January
+      15, Year 2; when the criteria are first met after the balance sheet date, the asset stays held and
+      used at December 31.
+  - id: D
+    text: $3,810,000
+    rationale: Includes the office building. An asking price 40% above fair value, unchanged despite no
+      offers, isn't a price reasonable in relation to fair value, so a sale within a year isn't probable.
+  answer: B
+  explanation: 'An asset is classified as held for sale when management with authority commits to a plan,
+    the asset is available for immediate sale in its present condition (subject only to usual and customary
+    terms), an active program to find a buyer has begun, the sale is probable within one year, the price
+    is reasonable in relation to fair value, and the plan is unlikely to change. The warehouse ($1,100,000)
+    qualifies. So does the headquarters building ($1,950,000): vacating it after closing is a usual and
+    customary term. The trucks are still in use and not marketed; the office building''s asking price
+    is unreasonable; and the packaging equipment met the criteria only after year-end, so it is held and
+    used at December 31. Total = $3,050,000.'

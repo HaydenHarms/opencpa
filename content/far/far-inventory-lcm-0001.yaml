@@ -1,0 +1,143 @@
+id: far-inventory-lcm-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 330-10-35 (lower of cost or market for inventory measured using LIFO or the retail inventory method)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Wadsworth Co. uses the LIFO method and applies its inventory measurement rule to each product separately.
+  Its normal profit margin is 20% of selling price. At December 31, its records show: product X: 2,000
+  units, LIFO cost $15.00, replacement cost $13.00, selling price $18.00 and cost to complete and sell
+  $2.00 per unit; product Y: 1,500 units, LIFO cost $22.00, replacement cost $21.00, selling price $24.00
+  and cost to complete and sell $4.00 per unit; product Z: 800 units, LIFO cost $10.00, replacement cost
+  $7.00, selling price $14.00 and cost to complete and sell $1.50 per unit. What inventory write-down
+  should Wadsworth recognize at December 31?'
+choices:
+- id: A
+  text: $3,000
+  rationale: Applies the lower of cost and net realizable value. Wadsworth uses LIFO, so it applies the
+    lower of cost or market, with replacement cost limited by the ceiling and floor.
+- id: B
+  text: $5,740
+  rationale: Applies the floor but not the ceiling. Market can't exceed net realizable value.
+- id: C
+  text: $7,240
+  rationale: Correct. X $4,000; Y $3,000; Z $240.
+- id: D
+  text: $7,900
+  rationale: Uses replacement cost as market without applying the ceiling (net realizable value) or the
+    floor (net realizable value less a normal profit margin).
+answer: C
+explanation: 'Inventory measured using LIFO is reported at the lower of cost or market. Market is replacement
+  cost, but not more than net realizable value (the ceiling) or less than net realizable value minus a
+  normal profit margin (the floor). Product X: ceiling $18.00 − $2.00 = $16.00; floor $16.00 − 20% × $18.00
+  = $12.40; replacement cost $13.00 is between the floor and the ceiling, so market is replacement cost,
+  $13.00; write-down ($15.00 − $13.00) × 2,000 = $4,000. Product Y: ceiling $24.00 − $4.00 = $20.00; floor
+  $20.00 − 20% × $24.00 = $15.20; replacement cost $21.00 is above the ceiling, so market is the ceiling,
+  $20.00; write-down ($22.00 − $20.00) × 1,500 = $3,000. Product Z: ceiling $14.00 − $1.50 = $12.50; floor
+  $12.50 − 20% × $14.00 = $9.70; replacement cost $7.00 is below the floor, so market is the floor, $9.70;
+  write-down ($10.00 − $9.70) × 800 = $240. Total write-down = $7,240.'
+variants:
+- stem: 'Yarker Co. uses the LIFO method and applies its inventory measurement rule to each product separately.
+    Its normal profit margin is 25% of selling price. At December 31, its records show: product A: 1,200
+    units, LIFO cost $30.00, replacement cost $26.00, selling price $34.00 and cost to complete and sell
+    $3.00 per unit; product B: 900 units, LIFO cost $18.00, replacement cost $17.50, selling price $20.00
+    and cost to complete and sell $3.50 per unit; product C: 2,500 units, LIFO cost $8.00, replacement
+    cost $5.00, selling price $10.00 and cost to complete and sell $1.00 per unit. What inventory write-down
+    should Yarker recognize at December 31?'
+  choices:
+  - id: A
+    text: $1,350
+    rationale: Applies the lower of cost and net realizable value. Yarker uses LIFO, so it applies the
+      lower of cost or market, with replacement cost limited by the ceiling and floor.
+  - id: B
+    text: $9,900
+    rationale: Correct. A $4,800; B $1,350; C $3,750.
+  - id: C
+    text: $12,750
+    rationale: Uses replacement cost as market without applying the ceiling (net realizable value) or
+      the floor (net realizable value less a normal profit margin).
+  - id: D
+    text: $13,650
+    rationale: Applies the ceiling but not the floor. Market can't be less than net realizable value less
+      a normal profit margin.
+  answer: B
+  explanation: 'Inventory measured using LIFO is reported at the lower of cost or market. Market is replacement
+    cost, but not more than net realizable value (the ceiling) or less than net realizable value minus
+    a normal profit margin (the floor). Product A: ceiling $34.00 − $3.00 = $31.00; floor $31.00 − 25%
+    × $34.00 = $22.50; replacement cost $26.00 is between the floor and the ceiling, so market is replacement
+    cost, $26.00; write-down ($30.00 − $26.00) × 1,200 = $4,800. Product B: ceiling $20.00 − $3.50 = $16.50;
+    floor $16.50 − 25% × $20.00 = $11.50; replacement cost $17.50 is above the ceiling, so market is the
+    ceiling, $16.50; write-down ($18.00 − $16.50) × 900 = $1,350. Product C: ceiling $10.00 − $1.00 =
+    $9.00; floor $9.00 − 25% × $10.00 = $6.50; replacement cost $5.00 is below the floor, so market is
+    the floor, $6.50; write-down ($8.00 − $6.50) × 2,500 = $3,750. Total write-down = $9,900.'
+- stem: 'Ackroyd Co. uses the LIFO method and applies its inventory measurement rule to each product separately.
+    Its normal profit margin is 15% of selling price. At December 31, its records show: product P: 3,000
+    units, LIFO cost $6.00, replacement cost $5.20, selling price $7.00 and cost to complete and sell
+    $0.60 per unit; product Q: 1,000 units, LIFO cost $40.00, replacement cost $39.00, selling price $42.00
+    and cost to complete and sell $5.00 per unit; product R: 600 units, LIFO cost $25.00, replacement
+    cost $24.00, selling price $30.00 and cost to complete and sell $2.00 per unit. What inventory write-down
+    should Ackroyd recognize at December 31?'
+  choices:
+  - id: A
+    text: $3,000
+    rationale: Applies the lower of cost and net realizable value. Ackroyd uses LIFO, so it applies the
+      lower of cost or market, with replacement cost limited by the ceiling and floor.
+  - id: B
+    text: $4,000
+    rationale: Uses replacement cost as market without applying the ceiling (net realizable value) or
+      the floor (net realizable value less a normal profit margin).
+  - id: C
+    text: $5,550
+    rationale: Correct. P $1,950; Q $3,000; R $600.
+  - id: D
+    text: $6,000
+    rationale: Applies the ceiling but not the floor. Market can't be less than net realizable value less
+      a normal profit margin.
+  answer: C
+  explanation: 'Inventory measured using LIFO is reported at the lower of cost or market. Market is replacement
+    cost, but not more than net realizable value (the ceiling) or less than net realizable value minus
+    a normal profit margin (the floor). Product P: ceiling $7.00 − $0.60 = $6.40; floor $6.40 − 15% ×
+    $7.00 = $5.35; replacement cost $5.20 is below the floor, so market is the floor, $5.35; write-down
+    ($6.00 − $5.35) × 3,000 = $1,950. Product Q: ceiling $42.00 − $5.00 = $37.00; floor $37.00 − 15% ×
+    $42.00 = $30.70; replacement cost $39.00 is above the ceiling, so market is the ceiling, $37.00; write-down
+    ($40.00 − $37.00) × 1,000 = $3,000. Product R: ceiling $30.00 − $2.00 = $28.00; floor $28.00 − 15%
+    × $30.00 = $23.50; replacement cost $24.00 is between the floor and the ceiling, so market is replacement
+    cost, $24.00; write-down ($25.00 − $24.00) × 600 = $600. Total write-down = $5,550.'
+- stem: 'Brearley Co. uses the LIFO method and applies its inventory measurement rule to each product
+    separately. Its normal profit margin is 20% of selling price. At December 31, its records show: product
+    L: 1,800 units, LIFO cost $12.00, replacement cost $11.40, selling price $14.00 and cost to complete
+    and sell $1.60 per unit; product M: 700 units, LIFO cost $50.00, replacement cost $49.00, selling
+    price $52.00 and cost to complete and sell $6.00 per unit; product N: 2,200 units, LIFO cost $9.00,
+    replacement cost $6.00, selling price $12.00 and cost to complete and sell $1.00 per unit. What inventory
+    write-down should Brearley recognize at December 31?'
+  choices:
+  - id: A
+    text: $2,660
+    rationale: Applies the floor but not the ceiling. Market can't exceed net realizable value.
+  - id: B
+    text: $4,760
+    rationale: Correct. L $1,080; M $2,800; N $880.
+  - id: C
+    text: $8,380
+    rationale: Uses replacement cost as market without applying the ceiling (net realizable value) or
+      the floor (net realizable value less a normal profit margin).
+  - id: D
+    text: $10,480
+    rationale: Applies the ceiling but not the floor. Market can't be less than net realizable value less
+      a normal profit margin.
+  answer: B
+  explanation: 'Inventory measured using LIFO is reported at the lower of cost or market. Market is replacement
+    cost, but not more than net realizable value (the ceiling) or less than net realizable value minus
+    a normal profit margin (the floor). Product L: ceiling $14.00 − $1.60 = $12.40; floor $12.40 − 20%
+    × $14.00 = $9.60; replacement cost $11.40 is between the floor and the ceiling, so market is replacement
+    cost, $11.40; write-down ($12.00 − $11.40) × 1,800 = $1,080. Product M: ceiling $52.00 − $6.00 = $46.00;
+    floor $46.00 − 20% × $52.00 = $35.60; replacement cost $49.00 is above the ceiling, so market is the
+    ceiling, $46.00; write-down ($50.00 − $46.00) × 700 = $2,800. Product N: ceiling $12.00 − $1.00 =
+    $11.00; floor $11.00 − 20% × $12.00 = $8.60; replacement cost $6.00 is below the floor, so market
+    is the floor, $8.60; write-down ($9.00 − $8.60) × 2,200 = $880. Total write-down = $4,760.'

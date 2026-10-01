@@ -1,0 +1,124 @@
+id: far-inventory-reconciliation-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory; write-down to net realizable value)
+  - ASC 606-10-55 (consignment arrangements; shipping terms)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Jagger Co.''s perpetual inventory subledger totals $1,311,160, and the general
+  ledger inventory account shows $1,297,300. Investigating the difference, the controller finds: the subledger
+  extends 1,600 units of part K-14 at $23.40 each, while the purchase invoices show $24.30; an $18,500
+  write-down of obsolete goods to net realizable value was recorded in the general ledger but not in the
+  subledger; goods costing $12,800 shipped to a customer FOB shipping point on December 31 were removed
+  from the subledger, but the cost of goods sold entry was not posted to the general ledger; and the subledger
+  includes goods costing $9,600 that a supplier delivered on December 29 for Jagger to sell on consignment.
+  What amount should Jagger report as inventory at December 31?'
+choices:
+- id: A
+  text: $1,281,620
+  rationale: Subtracts the $1,440 pricing difference. The subledger used $23.40 instead of $24.30, so
+    it is understated.
+- id: B
+  text: $1,284,500
+  rationale: Correct. Subledger $1,311,160 + $1,440 − $18,500 − $9,600 = ledger $1,297,300 − $12,800.
+- id: C
+  text: $1,294,100
+  rationale: Leaves the $9,600 of consigned goods in inventory. Jagger holds them for the supplier, which
+    still owns them.
+- id: D
+  text: $1,303,000
+  rationale: Treats the $18,500 write-down as a general ledger error. The write-down to net realizable
+    value is correct; the subledger needs it too.
+answer: B
+explanation: 'Subledger: $1,311,160 + $1,440 pricing correction (1,600 × ($24.30 − $23.40)) − $18,500
+  write-down − $9,600 consigned goods held for the supplier = $1,284,500. General ledger: $1,297,300 −
+  $12,800 goods whose title passed to the customer at shipment = $1,284,500. The records agree at $1,284,500.'
+variants:
+- stem: 'At December 31, Kilner Co.''s perpetual inventory subledger totals $897,080, and the general
+    ledger inventory account shows $886,000. Investigating the difference, the controller finds: the subledger
+    extends 2,400 units of part B-207 at $11.85 each, while the purchase invoices show $12.15; a $14,200
+    write-down of obsolete goods to net realizable value was recorded in the general ledger but not in
+    the subledger; goods costing $9,700 shipped to a customer FOB shipping point on December 31 were removed
+    from the subledger, but the cost of goods sold entry was not posted to the general ledger; and the
+    subledger includes goods costing $7,300 that a supplier delivered on December 29 for Kilner to sell
+    on consignment. What amount should Kilner report as inventory at December 31?'
+  choices:
+  - id: A
+    text: $862,100
+    rationale: Also subtracts the $14,200 write-down from the general ledger, which already includes it.
+  - id: B
+    text: $874,860
+    rationale: Subtracts the $720 pricing difference. The subledger used $11.85 instead of $12.15, so
+      it is understated.
+  - id: C
+    text: $876,300
+    rationale: Correct. Subledger $897,080 + $720 − $14,200 − $7,300 = ledger $886,000 − $9,700.
+  - id: D
+    text: $886,000
+    rationale: Uses the general ledger as recorded. The $9,700 of goods shipped FOB shipping point on
+      December 31 belong to the customer and are relieved from the ledger.
+  answer: C
+  explanation: 'Subledger: $897,080 + $720 pricing correction (2,400 × ($12.15 − $11.85)) − $14,200 write-down
+    − $7,300 consigned goods held for the supplier = $876,300. General ledger: $886,000 − $9,700 goods
+    whose title passed to the customer at shipment = $876,300. The records agree at $876,300.'
+- stem: 'At December 31, Laycock Co.''s perpetual inventory subledger totals $1,676,730, and the general
+    ledger inventory account shows $1,659,200. Investigating the difference, the controller finds: the
+    subledger extends 950 units of part T-33 at $47.60 each, while the purchase invoices show $48.20;
+    a $22,600 write-down of obsolete goods to net realizable value was recorded in the general ledger
+    but not in the subledger; goods costing $16,400 shipped to a customer FOB shipping point on December
+    31 were removed from the subledger, but the cost of goods sold entry was not posted to the general
+    ledger; and the subledger includes goods costing $11,900 that a supplier delivered on December 29
+    for Laycock to sell on consignment. What amount should Laycock report as inventory at December 31?'
+  choices:
+  - id: A
+    text: $1,620,200
+    rationale: Also subtracts the $22,600 write-down from the general ledger, which already includes it.
+  - id: B
+    text: $1,642,800
+    rationale: Correct. Subledger $1,676,730 + $570 − $22,600 − $11,900 = ledger $1,659,200 − $16,400.
+  - id: C
+    text: $1,654,700
+    rationale: Leaves the $11,900 of consigned goods in inventory. Laycock holds them for the supplier,
+      which still owns them.
+  - id: D
+    text: $1,665,400
+    rationale: Treats the $22,600 write-down as a general ledger error. The write-down to net realizable
+      value is correct; the subledger needs it too.
+  answer: B
+  explanation: 'Subledger: $1,676,730 + $570 pricing correction (950 × ($48.20 − $47.60)) − $22,600 write-down
+    − $11,900 consigned goods held for the supplier = $1,642,800. General ledger: $1,659,200 − $16,400
+    goods whose title passed to the customer at shipment = $1,642,800. The records agree at $1,642,800.'
+- stem: 'At December 31, Moorhouse Co.''s perpetual inventory subledger totals $552,750, and the general
+    ledger inventory account shows $546,000. Investigating the difference, the controller finds: the subledger
+    extends 3,000 units of part M-5 at $6.45 each, while the purchase invoices show $6.90; a $9,800 write-down
+    of obsolete goods to net realizable value was recorded in the general ledger but not in the subledger;
+    goods costing $7,100 shipped to a customer FOB shipping point on December 31 were removed from the
+    subledger, but the cost of goods sold entry was not posted to the general ledger; and the subledger
+    includes goods costing $5,400 that a supplier delivered on December 29 for Moorhouse to sell on consignment.
+    What amount should Moorhouse report as inventory at December 31?'
+  choices:
+  - id: A
+    text: $536,200
+    rationale: Subtracts the $1,350 pricing difference. The subledger used $6.45 instead of $6.90, so
+      it is understated.
+  - id: B
+    text: $538,900
+    rationale: Correct. Subledger $552,750 + $1,350 − $9,800 − $5,400 = ledger $546,000 − $7,100.
+  - id: C
+    text: $546,000
+    rationale: Uses the general ledger as recorded. The $7,100 of goods shipped FOB shipping point on
+      December 31 belong to the customer and are relieved from the ledger.
+  - id: D
+    text: $548,700
+    rationale: Treats the $9,800 write-down as a general ledger error. The write-down to net realizable
+      value is correct; the subledger needs it too.
+  answer: B
+  explanation: 'Subledger: $552,750 + $1,350 pricing correction (3,000 × ($6.90 − $6.45)) − $9,800 write-down
+    − $5,400 consigned goods held for the supplier = $538,900. General ledger: $546,000 − $7,100 goods
+    whose title passed to the customer at shipment = $538,900. The records agree at $538,900.'

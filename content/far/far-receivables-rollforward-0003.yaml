@@ -1,0 +1,131 @@
+id: far-receivables-rollforward-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 310-10 (receivables)
+  - ASC 606-10-32 (sales returns and discounts)
+  - ASC 326-20 (write-offs)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Verity Co.''s staff accountant computed Year 2 cash collected on accounts receivable as $2,615,000:
+  beginning receivables of $380,000, plus gross sales of $2,650,000, less ending receivables of $415,000,
+  per the aged subledger, which agrees with the general ledger. Supporting records show: gross sales include
+  $310,000 of cash sales; customers returned goods from credit sales for credits of $42,000; customers
+  who paid within the discount period took $28,000 of sales discounts; $19,000 of accounts were written
+  off; in October, a customer''s past-due account of $35,000 was converted into a 12-month interest-bearing
+  note receivable; and the allowance for credit losses increased from $22,000 to $27,000. What cash did
+  Verity collect on accounts receivable in Year 2?'
+choices:
+- id: A
+  text: $2,176,000
+  rationale: Also subtracts the $5,000 increase in the allowance for credit losses. The rollforward is
+    of gross receivables; the allowance doesn't affect them.
+- id: B
+  text: $2,181,000
+  rationale: Correct. $380,000 + ($2,650,000 − $310,000) − $42,000 − $28,000 − $19,000 − $35,000 − $415,000.
+- id: C
+  text: $2,216,000
+  rationale: Treats the $35,000 account converted into a note as collected. The note replaced the account
+    receivable; no cash was received.
+- id: D
+  text: $2,491,000
+  rationale: Leaves the $310,000 of cash sales in the rollforward. Cash sales never pass through accounts
+    receivable.
+answer: B
+explanation: 'Receivables rollforward: beginning $380,000 + credit sales ($2,650,000 − $310,000 cash sales
+  = $2,340,000) − returns $42,000 − discounts $28,000 − write-offs $19,000 − account converted to a note
+  $35,000 − collections = ending $415,000. Collections = $2,181,000. The allowance is a separate contra
+  account and doesn''t enter the rollforward of gross receivables.'
+variants:
+- stem: 'Whiteley Co.''s staff accountant computed Year 2 cash collected on accounts receivable as $3,354,000:
+    beginning receivables of $520,000, plus gross sales of $3,400,000, less ending receivables of $566,000,
+    per the aged subledger, which agrees with the general ledger. Supporting records show: gross sales
+    include $450,000 of cash sales; customers returned goods from credit sales for credits of $61,000;
+    customers who paid within the discount period took $37,000 of sales discounts; $26,000 of accounts
+    were written off; in October, a customer''s past-due account of $48,000 was converted into a 12-month
+    interest-bearing note receivable; and the allowance for credit losses increased from $31,000 to $39,000.
+    What cash did Whiteley collect on accounts receivable in Year 2?'
+  choices:
+  - id: A
+    text: $2,724,000
+    rationale: Also subtracts the $8,000 increase in the allowance for credit losses. The rollforward
+      is of gross receivables; the allowance doesn't affect them.
+  - id: B
+    text: $2,732,000
+    rationale: Correct. $520,000 + ($3,400,000 − $450,000) − $61,000 − $37,000 − $26,000 − $48,000 − $566,000.
+  - id: C
+    text: $2,769,000
+    rationale: Ignores the $37,000 of sales discounts. Discounts taken reduce receivables without any
+      cash being collected.
+  - id: D
+    text: $3,182,000
+    rationale: Leaves the $450,000 of cash sales in the rollforward. Cash sales never pass through accounts
+      receivable.
+  answer: B
+  explanation: 'Receivables rollforward: beginning $520,000 + credit sales ($3,400,000 − $450,000 cash
+    sales = $2,950,000) − returns $61,000 − discounts $37,000 − write-offs $26,000 − account converted
+    to a note $48,000 − collections = ending $566,000. Collections = $2,732,000. The allowance is a separate
+    contra account and doesn''t enter the rollforward of gross receivables.'
+- stem: 'Yewdall Co.''s staff accountant computed Year 2 cash collected on accounts receivable as $1,454,000:
+    beginning receivables of $210,000, plus gross sales of $1,480,000, less ending receivables of $236,000,
+    per the aged subledger, which agrees with the general ledger. Supporting records show: gross sales
+    include $170,000 of cash sales; customers returned goods from credit sales for credits of $23,000;
+    customers who paid within the discount period took $15,000 of sales discounts; $11,000 of accounts
+    were written off; in October, a customer''s past-due account of $20,000 was converted into a 12-month
+    interest-bearing note receivable; and the allowance for credit losses increased from $12,000 to $16,000.
+    What cash did Yewdall collect on accounts receivable in Year 2?'
+  choices:
+  - id: A
+    text: $1,211,000
+    rationale: Also subtracts the $4,000 increase in the allowance for credit losses. The rollforward
+      is of gross receivables; the allowance doesn't affect them.
+  - id: B
+    text: $1,215,000
+    rationale: Correct. $210,000 + ($1,480,000 − $170,000) − $23,000 − $15,000 − $11,000 − $20,000 − $236,000.
+  - id: C
+    text: $1,226,000
+    rationale: Ignores the $11,000 of write-offs. Accounts written off leave receivables without any cash
+      being collected.
+  - id: D
+    text: $1,235,000
+    rationale: Treats the $20,000 account converted into a note as collected. The note replaced the account
+      receivable; no cash was received.
+  answer: B
+  explanation: 'Receivables rollforward: beginning $210,000 + credit sales ($1,480,000 − $170,000 cash
+    sales = $1,310,000) − returns $23,000 − discounts $15,000 − write-offs $11,000 − account converted
+    to a note $20,000 − collections = ending $236,000. Collections = $1,215,000. The allowance is a separate
+    contra account and doesn''t enter the rollforward of gross receivables.'
+- stem: 'Armitage Co.''s staff accountant computed Year 2 cash collected on accounts receivable as $4,698,000:
+    beginning receivables of $690,000, plus gross sales of $4,750,000, less ending receivables of $742,000,
+    per the aged subledger, which agrees with the general ledger. Supporting records show: gross sales
+    include $560,000 of cash sales; customers returned goods from credit sales for credits of $84,000;
+    customers who paid within the discount period took $52,000 of sales discounts; $33,000 of accounts
+    were written off; in October, a customer''s past-due account of $65,000 was converted into a 12-month
+    interest-bearing note receivable; and the allowance for credit losses increased from $41,000 to $50,000.
+    What cash did Armitage collect on accounts receivable in Year 2?'
+  choices:
+  - id: A
+    text: $3,904,000
+    rationale: Correct. $690,000 + ($4,750,000 − $560,000) − $84,000 − $52,000 − $33,000 − $65,000 − $742,000.
+  - id: B
+    text: $3,956,000
+    rationale: Ignores the $52,000 of sales discounts. Discounts taken reduce receivables without any
+      cash being collected.
+  - id: C
+    text: $3,969,000
+    rationale: Treats the $65,000 account converted into a note as collected. The note replaced the account
+      receivable; no cash was received.
+  - id: D
+    text: $4,464,000
+    rationale: Leaves the $560,000 of cash sales in the rollforward. Cash sales never pass through accounts
+      receivable.
+  answer: A
+  explanation: 'Receivables rollforward: beginning $690,000 + credit sales ($4,750,000 − $560,000 cash
+    sales = $4,190,000) − returns $84,000 − discounts $52,000 − write-offs $33,000 − account converted
+    to a note $65,000 − collections = ending $742,000. Collections = $3,904,000. The allowance is a separate
+    contra account and doesn''t enter the rollforward of gross receivables.'

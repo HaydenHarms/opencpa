@@ -1,0 +1,133 @@
+id: far-foreign-currency-transactions-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 830-20 (foreign currency transactions; remeasurement of monetary items)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Normanton Co., whose functional currency is the U.S. dollar, has three Year 1 transactions denominated
+  in foreign currencies. On October 1, it sold goods to a Swiss customer for 600,000 Swiss francs (CHF),
+  due February 15, Year 2. On November 1, it bought equipment from a Canadian supplier for 250,000 Canadian
+  dollars (CAD) and paid the invoice on December 15. On December 1, it paid a Swiss supplier a nonrefundable
+  advance of CHF 100,000 for goods to be delivered in March, Year 2. The dollar value of one Swiss franc
+  was $1.10 on October 1, $1.11 on December 1 and $1.13 on December 31; one Canadian dollar was worth
+  $0.72 on November 1 and $0.75 on December 15. What net foreign currency transaction gain or loss should
+  Normanton report in its Year 1 income statement?
+choices:
+- id: A
+  text: $7,500 net loss
+  rationale: Recognizes only the realized $7,500 loss on the payable settled in December. The $18,000
+    gain on the receivable still outstanding at year-end is recognized in Year 1 income too.
+- id: B
+  text: $10,500 net gain
+  rationale: Correct. $18,000 gain on the receivable − $7,500 loss on the payable.
+- id: C
+  text: $18,000 net gain
+  rationale: Leaves out the $7,500 loss on the payable because it was settled within the year. A realized
+    exchange loss on settlement is a transaction loss in income.
+- id: D
+  text: $25,500 net gain
+  rationale: 'Treats the $7,500 on the Canadian payable as a gain. The Canadian dollar strengthened before
+    Normanton paid, so settling the payable cost more dollars: a loss.'
+answer: B
+explanation: 'Monetary items denominated in a foreign currency are remeasured at the current rate, and
+  the change goes to income. The CHF receivable: 600,000 × ($1.13 − $1.10) = $18,000 gain. The CAD payable,
+  settled December 15: 250,000 × ($0.75 − $0.72) = $7,500 more dollars paid, a loss. The equipment and
+  the advance to the supplier are nonmonetary and stay at their historical rates. Net = $18,000 − $7,500
+  = $10,500 net gain.'
+variants:
+- stem: Ockenden Co., whose functional currency is the U.S. dollar, has three Year 1 transactions denominated
+    in foreign currencies. On October 1, it sold goods to a Swiss customer for 400,000 Swiss francs (CHF),
+    due February 15, Year 2. On November 1, it bought equipment from a Canadian supplier for 300,000 Canadian
+    dollars (CAD) and paid the invoice on December 15. On December 1, it paid a Swiss supplier a nonrefundable
+    advance of CHF 80,000 for goods to be delivered in March, Year 2. The dollar value of one Swiss franc
+    was $1.15 on October 1, $1.17 on December 1 and $1.20 on December 31; one Canadian dollar was worth
+    $0.70 on November 1 and $0.74 on December 15. What net foreign currency transaction gain or loss should
+    Ockenden report in its Year 1 income statement?
+  choices:
+  - id: A
+    text: $8,000 net gain
+    rationale: Correct. $20,000 gain on the receivable − $12,000 loss on the payable.
+  - id: B
+    text: $10,400 net gain
+    rationale: Also remeasures the CHF 80,000 advance to the supplier. A nonrefundable advance for goods
+      is a nonmonetary asset, carried at the historical rate, so it produces no exchange gain or loss.
+  - id: C
+    text: $12,000 net loss
+    rationale: Recognizes only the realized $12,000 loss on the payable settled in December. The $20,000
+      gain on the receivable still outstanding at year-end is recognized in Year 1 income too.
+  - id: D
+    text: $32,000 net gain
+    rationale: 'Treats the $12,000 on the Canadian payable as a gain. The Canadian dollar strengthened
+      before Ockenden paid, so settling the payable cost more dollars: a loss.'
+  answer: A
+  explanation: 'Monetary items denominated in a foreign currency are remeasured at the current rate, and
+    the change goes to income. The CHF receivable: 400,000 × ($1.20 − $1.15) = $20,000 gain. The CAD payable,
+    settled December 15: 300,000 × ($0.74 − $0.70) = $12,000 more dollars paid, a loss. The equipment
+    and the advance to the supplier are nonmonetary and stay at their historical rates. Net = $20,000
+    − $12,000 = $8,000 net gain.'
+- stem: Pexton Co., whose functional currency is the U.S. dollar, has three Year 1 transactions denominated
+    in foreign currencies. On October 1, it sold goods to a Swiss customer for 900,000 Swiss francs (CHF),
+    due February 15, Year 2. On November 1, it bought equipment from a Canadian supplier for 500,000 Canadian
+    dollars (CAD) and paid the invoice on December 15. On December 1, it paid a Swiss supplier a nonrefundable
+    advance of CHF 150,000 for goods to be delivered in March, Year 2. The dollar value of one Swiss franc
+    was $1.05 on October 1, $1.06 on December 1 and $1.09 on December 31; one Canadian dollar was worth
+    $0.73 on November 1 and $0.76 on December 15. What net foreign currency transaction gain or loss should
+    Pexton report in its Year 1 income statement?
+  choices:
+  - id: A
+    text: $15,000 net loss
+    rationale: Recognizes only the realized $15,000 loss on the payable settled in December. The $36,000
+      gain on the receivable still outstanding at year-end is recognized in Year 1 income too.
+  - id: B
+    text: $21,000 net gain
+    rationale: Correct. $36,000 gain on the receivable − $15,000 loss on the payable.
+  - id: C
+    text: $25,500 net gain
+    rationale: Also remeasures the CHF 150,000 advance to the supplier. A nonrefundable advance for goods
+      is a nonmonetary asset, carried at the historical rate, so it produces no exchange gain or loss.
+  - id: D
+    text: $36,000 net gain
+    rationale: Leaves out the $15,000 loss on the payable because it was settled within the year. A realized
+      exchange loss on settlement is a transaction loss in income.
+  answer: B
+  explanation: 'Monetary items denominated in a foreign currency are remeasured at the current rate, and
+    the change goes to income. The CHF receivable: 900,000 × ($1.09 − $1.05) = $36,000 gain. The CAD payable,
+    settled December 15: 500,000 × ($0.76 − $0.73) = $15,000 more dollars paid, a loss. The equipment
+    and the advance to the supplier are nonmonetary and stay at their historical rates. Net = $36,000
+    − $15,000 = $21,000 net gain.'
+- stem: Rawcliffe Co., whose functional currency is the U.S. dollar, has three Year 1 transactions denominated
+    in foreign currencies. On October 1, it sold goods to a Swiss customer for 500,000 Swiss francs (CHF),
+    due February 15, Year 2. On November 1, it bought equipment from a Canadian supplier for 200,000 Canadian
+    dollars (CAD) and paid the invoice on December 15. On December 1, it paid a Swiss supplier a nonrefundable
+    advance of CHF 120,000 for goods to be delivered in March, Year 2. The dollar value of one Swiss franc
+    was $1.12 on October 1, $1.14 on December 1 and $1.16 on December 31; one Canadian dollar was worth
+    $0.74 on November 1 and $0.79 on December 15. What net foreign currency transaction gain or loss should
+    Rawcliffe report in its Year 1 income statement?
+  choices:
+  - id: A
+    text: $10,000 net gain
+    rationale: Correct. $20,000 gain on the receivable − $10,000 loss on the payable.
+  - id: B
+    text: $12,400 net gain
+    rationale: Also remeasures the CHF 120,000 advance to the supplier. A nonrefundable advance for goods
+      is a nonmonetary asset, carried at the historical rate, so it produces no exchange gain or loss.
+  - id: C
+    text: $20,000 net gain
+    rationale: Leaves out the $10,000 loss on the payable because it was settled within the year. A realized
+      exchange loss on settlement is a transaction loss in income.
+  - id: D
+    text: $30,000 net gain
+    rationale: 'Treats the $10,000 on the Canadian payable as a gain. The Canadian dollar strengthened
+      before Rawcliffe paid, so settling the payable cost more dollars: a loss.'
+  answer: A
+  explanation: 'Monetary items denominated in a foreign currency are remeasured at the current rate, and
+    the change goes to income. The CHF receivable: 500,000 × ($1.16 − $1.12) = $20,000 gain. The CAD payable,
+    settled December 15: 200,000 × ($0.79 − $0.74) = $10,000 more dollars paid, a loss. The equipment
+    and the advance to the supplier are nonmonetary and stay at their historical rates. Net = $20,000
+    − $10,000 = $10,000 net gain.'

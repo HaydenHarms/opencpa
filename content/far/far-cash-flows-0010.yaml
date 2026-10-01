@@ -1,0 +1,138 @@
+id: far-cash-flows-0010
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 230-10-45 (classification of cash receipts and payments)
+  - ASC 230-10-50 (noncash investing and financing activities)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Lavery Co.''s draft Year 2 statement of cash flows reports net cash provided by financing activities
+  of $355,000: proceeds from long-term borrowing $500,000; repayment of long-term debt ($180,000); dividends
+  paid ($120,000); interest paid ($45,000); and common stock issued on conversion of bonds $200,000. The
+  controller identifies these errors: the dividends line shows the $120,000 of dividends declared in Year
+  2, although dividends payable increased by $30,000 during the year; interest paid is reported in financing
+  activities; the conversion, in which bondholders exchanged bonds with a carrying amount of $200,000
+  for common shares, is reported as a cash inflow; and $85,000 paid to buy treasury shares is reported
+  in investing activities. Lavery follows U.S. GAAP. What net cash provided by financing activities should
+  the corrected statement report?'
+choices:
+- id: A
+  text: $100,000
+  rationale: Leaves the $45,000 of interest paid in financing activities. Under U.S. GAAP, interest paid
+    is an operating cash flow.
+- id: B
+  text: $115,000
+  rationale: Keeps dividends declared as the outflow. Dividends payable rose by $30,000, so cash paid
+    was $90,000.
+- id: C
+  text: $145,000
+  rationale: Correct. $500,000 borrowed − $180,000 repaid − $90,000 dividends paid − $85,000 treasury
+    shares.
+- id: D
+  text: $230,000
+  rationale: Leaves the $85,000 treasury share purchase out of financing activities. Buying back the company's
+    own shares is a financing outflow.
+answer: C
+explanation: Dividends paid = $120,000 declared − $30,000 increase in dividends payable = $90,000. Interest
+  paid moves to operating activities. The conversion is a noncash financing activity, disclosed rather
+  than reported as a cash flow. The treasury share purchase is a financing outflow. Net cash provided
+  by financing activities = $500,000 − $180,000 − $90,000 − $85,000 = $145,000.
+variants:
+- stem: 'Mottram Co.''s draft Year 2 statement of cash flows reports net cash provided by financing activities
+    of $578,000: proceeds from long-term borrowing $750,000; repayment of long-term debt ($260,000); dividends
+    paid ($150,000); interest paid ($62,000); and common stock issued on conversion of bonds $300,000.
+    The controller identifies these errors: the dividends line shows the $150,000 of dividends declared
+    in Year 2, although dividends payable increased by $25,000 during the year; interest paid is reported
+    in financing activities; the conversion, in which bondholders exchanged bonds with a carrying amount
+    of $300,000 for common shares, is reported as a cash inflow; and $110,000 paid to buy treasury shares
+    is reported in investing activities. Mottram follows U.S. GAAP. What net cash provided by financing
+    activities should the corrected statement report?'
+  choices:
+  - id: A
+    text: $230,000
+    rationale: Keeps dividends declared as the outflow. Dividends payable rose by $25,000, so cash paid
+      was $125,000.
+  - id: B
+    text: $255,000
+    rationale: Correct. $750,000 borrowed − $260,000 repaid − $125,000 dividends paid − $110,000 treasury
+      shares.
+  - id: C
+    text: $365,000
+    rationale: Leaves the $110,000 treasury share purchase out of financing activities. Buying back the
+      company's own shares is a financing outflow.
+  - id: D
+    text: $555,000
+    rationale: Keeps the bond conversion as a cash inflow. Converting bonds into shares involves no cash;
+      it is disclosed as a noncash financing activity.
+  answer: B
+  explanation: Dividends paid = $150,000 declared − $25,000 increase in dividends payable = $125,000.
+    Interest paid moves to operating activities. The conversion is a noncash financing activity, disclosed
+    rather than reported as a cash flow. The treasury share purchase is a financing outflow. Net cash
+    provided by financing activities = $750,000 − $260,000 − $125,000 − $110,000 = $255,000.
+- stem: 'Nuttall Co.''s draft Year 2 statement of cash flows reports net cash provided by financing activities
+    of $299,000: proceeds from long-term borrowing $400,000; repayment of long-term debt ($120,000); dividends
+    paid ($90,000); interest paid ($41,000); and common stock issued on conversion of bonds $150,000.
+    The controller identifies these errors: the dividends line shows the $90,000 of dividends declared
+    in Year 2, although dividends payable increased by $18,000 during the year; interest paid is reported
+    in financing activities; the conversion, in which bondholders exchanged bonds with a carrying amount
+    of $150,000 for common shares, is reported as a cash inflow; and $70,000 paid to buy treasury shares
+    is reported in investing activities. Nuttall follows U.S. GAAP. What net cash provided by financing
+    activities should the corrected statement report?'
+  choices:
+  - id: A
+    text: $97,000
+    rationale: Leaves the $41,000 of interest paid in financing activities. Under U.S. GAAP, interest
+      paid is an operating cash flow.
+  - id: B
+    text: $102,000
+    rationale: Adds the $18,000 increase in dividends payable to dividends declared. An increase in the
+      payable means less was paid than declared.
+  - id: C
+    text: $138,000
+    rationale: Correct. $400,000 borrowed − $120,000 repaid − $72,000 dividends paid − $70,000 treasury
+      shares.
+  - id: D
+    text: $208,000
+    rationale: Leaves the $70,000 treasury share purchase out of financing activities. Buying back the
+      company's own shares is a financing outflow.
+  answer: C
+  explanation: Dividends paid = $90,000 declared − $18,000 increase in dividends payable = $72,000. Interest
+    paid moves to operating activities. The conversion is a noncash financing activity, disclosed rather
+    than reported as a cash flow. The treasury share purchase is a financing outflow. Net cash provided
+    by financing activities = $400,000 − $120,000 − $72,000 − $70,000 = $138,000.
+- stem: 'Openshaw Co.''s draft Year 2 statement of cash flows reports net cash provided by financing activities
+    of $526,000: proceeds from long-term borrowing $900,000; repayment of long-term debt ($350,000); dividends
+    paid ($200,000); interest paid ($74,000); and common stock issued on conversion of bonds $250,000.
+    The controller identifies these errors: the dividends line shows the $200,000 of dividends declared
+    in Year 2, although dividends payable increased by $40,000 during the year; interest paid is reported
+    in financing activities; the conversion, in which bondholders exchanged bonds with a carrying amount
+    of $250,000 for common shares, is reported as a cash inflow; and $130,000 paid to buy treasury shares
+    is reported in investing activities. Openshaw follows U.S. GAAP. What net cash provided by financing
+    activities should the corrected statement report?'
+  choices:
+  - id: A
+    text: $180,000
+    rationale: Adds the $40,000 increase in dividends payable to dividends declared. An increase in the
+      payable means less was paid than declared.
+  - id: B
+    text: $186,000
+    rationale: Leaves the $74,000 of interest paid in financing activities. Under U.S. GAAP, interest
+      paid is an operating cash flow.
+  - id: C
+    text: $260,000
+    rationale: Correct. $900,000 borrowed − $350,000 repaid − $160,000 dividends paid − $130,000 treasury
+      shares.
+  - id: D
+    text: $510,000
+    rationale: Keeps the bond conversion as a cash inflow. Converting bonds into shares involves no cash;
+      it is disclosed as a noncash financing activity.
+  answer: C
+  explanation: Dividends paid = $200,000 declared − $40,000 increase in dividends payable = $160,000.
+    Interest paid moves to operating activities. The conversion is a noncash financing activity, disclosed
+    rather than reported as a cash flow. The treasury share purchase is a financing outflow. Net cash
+    provided by financing activities = $900,000 − $350,000 − $160,000 − $130,000 = $260,000.

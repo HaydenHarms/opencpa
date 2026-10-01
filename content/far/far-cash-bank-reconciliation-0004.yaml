@@ -1,0 +1,137 @@
+id: far-cash-bank-reconciliation-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice (certified checks; checks written but not mailed at year-end)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Pashley Co.''s December 31 bank statement shows a balance of $248,600, and its general ledger cash
+  account shows $242,350. The bookkeeper''s reconciliation lists deposits in transit of $21,450 and outstanding
+  checks of $38,720. Further work finds: the outstanding check list includes a $4,800 check that the bank
+  certified for a supplier on December 22 at Pashley''s request; the list also includes check no. 8812,
+  for $6,350, which was written and recorded on December 30 but was still in the controller''s desk, unmailed,
+  on January 6; on December 31 the bank deducted a $9,400 loan payment, which Pashley hasn''t recorded;
+  and the bank credited Pashley''s account with a $3,180 dividend wired by a company whose shares Pashley
+  holds, which Pashley hasn''t recorded. What cash balance should Pashley report at December 31?'
+choices:
+- id: A
+  text: $237,680
+  rationale: Deducts the $4,800 certified check as outstanding. The bank deducted it from Pashley's account
+    when it certified the check, so the bank balance already reflects it.
+- id: B
+  text: $239,300
+  rationale: Leaves out the $3,180 dividend the bank received for Pashley. It is cash Pashley hasn't recorded
+    yet, so it is added to the book balance.
+- id: C
+  text: $242,480
+  rationale: Correct. Bank $248,600 + $21,450 − $27,570 outstanding checks = book $242,350 + $6,350 −
+    $9,400 + $3,180.
+- id: D
+  text: $251,880
+  rationale: Leaves out the $9,400 loan payment the bank deducted. Pashley records it, reducing its book
+    balance.
+answer: C
+explanation: 'Bank side: the certified check was deducted by the bank when certified, and the unmailed
+  check hasn''t been issued, so true outstanding checks are $38,720 − $4,800 − $6,350 = $27,570. Correct
+  balance = $248,600 + $21,450 − $27,570 = $242,480. Book side: $242,350 + $6,350 unmailed check restored
+  − $9,400 loan payment + $3,180 dividend received = $242,480. The two sides agree.'
+variants:
+- stem: 'Rishworth Co.''s December 31 bank statement shows a balance of $173,250, and its general ledger
+    cash account shows $167,880. The bookkeeper''s reconciliation lists deposits in transit of $15,800
+    and outstanding checks of $29,460. Further work finds: the outstanding check list includes a $3,500
+    check that the bank certified for a supplier on December 22 at Rishworth''s request; the list also
+    includes check no. 5120, for $4,900, which was written and recorded on December 30 but was still in
+    the controller''s desk, unmailed, on January 6; on December 31 the bank deducted a $7,250 loan payment,
+    which Rishworth hasn''t recorded; and the bank credited Rishworth''s account with a $2,460 dividend
+    wired by a company whose shares Rishworth holds, which Rishworth hasn''t recorded. What cash balance
+    should Rishworth report at December 31?'
+  choices:
+  - id: A
+    text: $164,490
+    rationale: Deducts the $3,500 certified check as outstanding. The bank deducted it from Rishworth's
+      account when it certified the check, so the bank balance already reflects it.
+  - id: B
+    text: $165,530
+    rationale: Leaves out the $2,460 dividend the bank received for Rishworth. It is cash Rishworth hasn't
+      recorded yet, so it is added to the book balance.
+  - id: C
+    text: $167,990
+    rationale: Correct. Bank $173,250 + $15,800 − $21,060 outstanding checks = book $167,880 + $4,900
+      − $7,250 + $2,460.
+  - id: D
+    text: $175,240
+    rationale: Leaves out the $7,250 loan payment the bank deducted. Rishworth records it, reducing its
+      book balance.
+  answer: C
+  explanation: 'Bank side: the certified check was deducted by the bank when certified, and the unmailed
+    check hasn''t been issued, so true outstanding checks are $29,460 − $3,500 − $4,900 = $21,060. Correct
+    balance = $173,250 + $15,800 − $21,060 = $167,990. Book side: $167,880 + $4,900 unmailed check restored
+    − $7,250 loan payment + $2,460 dividend received = $167,990. The two sides agree.'
+- stem: 'Shackleton Co.''s December 31 bank statement shows a balance of $312,900, and its general ledger
+    cash account shows $303,650. The bookkeeper''s reconciliation lists deposits in transit of $27,600
+    and outstanding checks of $51,300. Further work finds: the outstanding check list includes a $6,200
+    check that the bank certified for a supplier on December 22 at Shackleton''s request; the list also
+    includes check no. 10457, for $8,750, which was written and recorded on December 30 but was still
+    in the controller''s desk, unmailed, on January 6; on December 31 the bank deducted a $12,600 loan
+    payment, which Shackleton hasn''t recorded; and the bank credited Shackleton''s account with a $4,350
+    dividend wired by a company whose shares Shackleton holds, which Shackleton hasn''t recorded. What
+    cash balance should Shackleton report at December 31?'
+  choices:
+  - id: A
+    text: $295,400
+    rationale: Treats the unmailed $8,750 check as outstanding. A check still in Shackleton's hands at
+      year-end hasn't been paid out; the book entry is reversed and the check isn't outstanding.
+  - id: B
+    text: $297,950
+    rationale: Deducts the $6,200 certified check as outstanding. The bank deducted it from Shackleton's
+      account when it certified the check, so the bank balance already reflects it.
+  - id: C
+    text: $304,150
+    rationale: Correct. Bank $312,900 + $27,600 − $36,350 outstanding checks = book $303,650 + $8,750
+      − $12,600 + $4,350.
+  - id: D
+    text: $316,750
+    rationale: Leaves out the $12,600 loan payment the bank deducted. Shackleton records it, reducing
+      its book balance.
+  answer: C
+  explanation: 'Bank side: the certified check was deducted by the bank when certified, and the unmailed
+    check hasn''t been issued, so true outstanding checks are $51,300 − $6,200 − $8,750 = $36,350. Correct
+    balance = $312,900 + $27,600 − $36,350 = $304,150. Book side: $303,650 + $8,750 unmailed check restored
+    − $12,600 loan payment + $4,350 dividend received = $304,150. The two sides agree.'
+- stem: 'Thornber Co.''s December 31 bank statement shows a balance of $96,400, and its general ledger
+    cash account shows $93,720. The bookkeeper''s reconciliation lists deposits in transit of $9,750 and
+    outstanding checks of $17,880. Further work finds: the outstanding check list includes a $2,100 check
+    that the bank certified for a supplier on December 22 at Thornber''s request; the list also includes
+    check no. 3309, for $3,300, which was written and recorded on December 30 but was still in the controller''s
+    desk, unmailed, on January 6; on December 31 the bank deducted a $4,600 loan payment, which Thornber
+    hasn''t recorded; and the bank credited Thornber''s account with a $1,250 dividend wired by a company
+    whose shares Thornber holds, which Thornber hasn''t recorded. What cash balance should Thornber report
+    at December 31?'
+  choices:
+  - id: A
+    text: $90,370
+    rationale: Treats the unmailed $3,300 check as outstanding. A check still in Thornber's hands at year-end
+      hasn't been paid out; the book entry is reversed and the check isn't outstanding.
+  - id: B
+    text: $91,570
+    rationale: Deducts the $2,100 certified check as outstanding. The bank deducted it from Thornber's
+      account when it certified the check, so the bank balance already reflects it.
+  - id: C
+    text: $92,420
+    rationale: Leaves out the $1,250 dividend the bank received for Thornber. It is cash Thornber hasn't
+      recorded yet, so it is added to the book balance.
+  - id: D
+    text: $93,670
+    rationale: Correct. Bank $96,400 + $9,750 − $12,480 outstanding checks = book $93,720 + $3,300 − $4,600
+      + $1,250.
+  answer: D
+  explanation: 'Bank side: the certified check was deducted by the bank when certified, and the unmailed
+    check hasn''t been issued, so true outstanding checks are $17,880 − $2,100 − $3,300 = $12,480. Correct
+    balance = $96,400 + $9,750 − $12,480 = $93,670. Book side: $93,720 + $3,300 unmailed check restored
+    − $4,600 loan payment + $1,250 dividend received = $93,670. The two sides agree.'

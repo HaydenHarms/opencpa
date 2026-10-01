@@ -1,0 +1,45 @@
+id: far-intangibles-classification-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Intangible assets
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 350-30-25 (recognition of intangible assets acquired individually; internally developed intangibles)
+  - ASC 350-30-35 (useful life; intangibles not subject to amortization)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Corvell Co. bought, or incurred costs for, each of the following during Year 1. Which should Corvell
+  report as an intangible asset that is not amortized?
+choices:
+- id: A
+  text: A bought patent with 14 years of legal life left, which it expects to use for all 14 years
+  rationale: The patent's legal life limits its useful life to 14 years, so it is a finite-lived intangible,
+    amortized over that period.
+- id: B
+  text: Costs of a two-year advertising campaign to build its own brand name, expected to benefit it for
+    decades
+  rationale: Costs of developing or maintaining an intangible that is not specifically identifiable or
+    is inherent in a continuing business, such as building a brand internally, are expensed as incurred.
+    No asset is recognized.
+- id: C
+  text: A bought broadcast license, renewable every 10 years at little cost, which it expects to keep
+    renewing
+  rationale: Correct. The license can be renewed indefinitely at little cost, and no legal, regulatory,
+    contractual or economic factor limits the period it will contribute cash flows, so its useful life
+    is indefinite and it isn't amortized.
+- id: D
+  text: A bought customer list that it expects to produce repeat sales for about six years
+  rationale: The list's expected six-year benefit period is a finite useful life, so it is amortized over
+    six years.
+answer: C
+explanation: An intangible asset acquired individually is recognized at cost. Costs of internally developing,
+  maintaining or restoring intangibles that are not specifically identifiable, have indeterminate lives,
+  or are inherent in a continuing business are expensed when incurred, so the brand-building campaign
+  creates no asset. A recognized intangible is amortized over its useful life unless no legal, regulatory,
+  contractual, competitive, economic or other factor limits that life; then it is indefinite-lived and
+  not amortized. Renewals that are expected and can be obtained at little cost, without substantial modification,
+  extend the useful life, which is why the broadcast license is indefinite-lived while the patent and
+  customer list are finite-lived.

@@ -1,0 +1,135 @@
+id: far-special-purpose-frameworks-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Special Purpose Frameworks
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'AICPA AU-C 800 (special purpose frameworks: income tax basis)'
+  - IRC §§ 61, 166, 168 and 461(h) (rent received in advance, bad debts, depreciation, economic performance)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+  asOf: Federal income tax rules in effect for 2026 (rent received in advance, bad debts, depreciation,
+    economic performance)
+stem: 'Ferrand Design LLC, a limited liability company taxed as a partnership that uses the accrual method
+  for tax, issues financial statements prepared on the income tax basis of accounting. Its Year 2 net
+  income under U.S. GAAP is $410,000. GAAP and tax amounts differ only for these items: depreciation is
+  $60,000 under GAAP and $95,000 on the tax return; $24,000 of rent that Ferrand collected from a subtenant
+  in December for the first half of Year 3 is deferred under GAAP; warranty expense accrued under GAAP
+  is $18,000, while warranty repairs paid in Year 2 total $11,000; and credit loss expense under GAAP
+  is $14,000, while accounts written off as worthless in Year 2 total $9,000. What net income should Ferrand''s
+  Year 2 statement of revenues and expenses—income tax basis report?'
+choices:
+- id: A
+  text: $363,000
+  rationale: Subtracts the $24,000 of advance rent instead of adding it. GAAP deferred it; the tax basis
+    recognizes it when received, which raises income.
+- id: B
+  text: $404,000
+  rationale: Keeps the $18,000 GAAP warranty accrual. For tax, warranty costs are deducted when paid ($11,000).
+- id: C
+  text: $411,000
+  rationale: Correct. $410,000 + $60,000 − $95,000 + $24,000 + $18,000 − $11,000 + $14,000 − $9,000.
+- id: D
+  text: $446,000
+  rationale: Keeps GAAP depreciation ($60,000). Tax basis statements use the $95,000 of depreciation on
+    the tax return.
+answer: C
+explanation: 'Income tax basis statements recognize revenues and expenses as the tax return does. Starting
+  from GAAP net income of $410,000: replace GAAP depreciation with tax depreciation (+ $60,000 − $95,000);
+  include the $24,000 of advance rent, taxable when received; replace the warranty accrual with warranty
+  costs paid (+ $18,000 − $11,000); and replace credit loss expense with specific write-offs (+ $14,000
+  − $9,000). Tax basis net income = $411,000.'
+variants:
+- stem: 'Garside Studio LLC, a limited liability company taxed as a partnership that uses the accrual
+    method for tax, issues financial statements prepared on the income tax basis of accounting. Its Year
+    2 net income under U.S. GAAP is $285,000. GAAP and tax amounts differ only for these items: depreciation
+    is $42,000 under GAAP and $70,000 on the tax return; $18,000 of rent that Garside collected from a
+    subtenant in December for the first half of Year 3 is deferred under GAAP; warranty expense accrued
+    under GAAP is $13,000, while warranty repairs paid in Year 2 total $8,000; and credit loss expense
+    under GAAP is $11,000, while accounts written off as worthless in Year 2 total $4,000. What net income
+    should Garside''s Year 2 statement of revenues and expenses—income tax basis report?'
+  choices:
+  - id: A
+    text: $269,000
+    rationale: Keeps the GAAP deferral of the $18,000 of rent collected in advance. For tax, rent received
+      in advance is income when received.
+  - id: B
+    text: $280,000
+    rationale: Keeps the $11,000 GAAP credit loss expense. For tax, bad debts are deducted when specific
+      accounts are written off ($4,000).
+  - id: C
+    text: $287,000
+    rationale: Correct. $285,000 + $42,000 − $70,000 + $18,000 + $13,000 − $8,000 + $11,000 − $4,000.
+  - id: D
+    text: $315,000
+    rationale: Keeps GAAP depreciation ($42,000). Tax basis statements use the $70,000 of depreciation
+      on the tax return.
+  answer: C
+  explanation: 'Income tax basis statements recognize revenues and expenses as the tax return does. Starting
+    from GAAP net income of $285,000: replace GAAP depreciation with tax depreciation (+ $42,000 − $70,000);
+    include the $18,000 of advance rent, taxable when received; replace the warranty accrual with warranty
+    costs paid (+ $13,000 − $8,000); and replace credit loss expense with specific write-offs (+ $11,000
+    − $4,000). Tax basis net income = $287,000.'
+- stem: 'Hepworth Partners LLC, a limited liability company taxed as a partnership that uses the accrual
+    method for tax, issues financial statements prepared on the income tax basis of accounting. Its Year
+    2 net income under U.S. GAAP is $620,000. GAAP and tax amounts differ only for these items: depreciation
+    is $85,000 under GAAP and $130,000 on the tax return; $36,000 of rent that Hepworth collected from
+    a subtenant in December for the first half of Year 3 is deferred under GAAP; warranty expense accrued
+    under GAAP is $27,000, while warranty repairs paid in Year 2 total $16,000; and credit loss expense
+    under GAAP is $21,000, while accounts written off as worthless in Year 2 total $12,000. What net income
+    should Hepworth''s Year 2 statement of revenues and expenses—income tax basis report?'
+  choices:
+  - id: A
+    text: $559,000
+    rationale: Subtracts the $36,000 of advance rent instead of adding it. GAAP deferred it; the tax basis
+      recognizes it when received, which raises income.
+  - id: B
+    text: $595,000
+    rationale: Keeps the GAAP deferral of the $36,000 of rent collected in advance. For tax, rent received
+      in advance is income when received.
+  - id: C
+    text: $631,000
+    rationale: Correct. $620,000 + $85,000 − $130,000 + $36,000 + $27,000 − $16,000 + $21,000 − $12,000.
+  - id: D
+    text: $676,000
+    rationale: Keeps GAAP depreciation ($85,000). Tax basis statements use the $130,000 of depreciation
+      on the tax return.
+  answer: C
+  explanation: 'Income tax basis statements recognize revenues and expenses as the tax return does. Starting
+    from GAAP net income of $620,000: replace GAAP depreciation with tax depreciation (+ $85,000 − $130,000);
+    include the $36,000 of advance rent, taxable when received; replace the warranty accrual with warranty
+    costs paid (+ $27,000 − $16,000); and replace credit loss expense with specific write-offs (+ $21,000
+    − $12,000). Tax basis net income = $631,000.'
+- stem: 'Ilkley Surveying LLC, a limited liability company taxed as a partnership that uses the accrual
+    method for tax, issues financial statements prepared on the income tax basis of accounting. Its Year
+    2 net income under U.S. GAAP is $198,000. GAAP and tax amounts differ only for these items: depreciation
+    is $30,000 under GAAP and $52,000 on the tax return; $15,000 of rent that Ilkley collected from a
+    subtenant in December for the first half of Year 3 is deferred under GAAP; warranty expense accrued
+    under GAAP is $9,000, while warranty repairs paid in Year 2 total $5,000; and credit loss expense
+    under GAAP is $8,000, while accounts written off as worthless in Year 2 total $3,000. What net income
+    should Ilkley''s Year 2 statement of revenues and expenses—income tax basis report?'
+  choices:
+  - id: A
+    text: $170,000
+    rationale: Subtracts the $15,000 of advance rent instead of adding it. GAAP deferred it; the tax basis
+      recognizes it when received, which raises income.
+  - id: B
+    text: $195,000
+    rationale: Keeps the $8,000 GAAP credit loss expense. For tax, bad debts are deducted when specific
+      accounts are written off ($3,000).
+  - id: C
+    text: $196,000
+    rationale: Keeps the $9,000 GAAP warranty accrual. For tax, warranty costs are deducted when paid
+      ($5,000).
+  - id: D
+    text: $200,000
+    rationale: Correct. $198,000 + $30,000 − $52,000 + $15,000 + $9,000 − $5,000 + $8,000 − $3,000.
+  answer: D
+  explanation: 'Income tax basis statements recognize revenues and expenses as the tax return does. Starting
+    from GAAP net income of $198,000: replace GAAP depreciation with tax depreciation (+ $30,000 − $52,000);
+    include the $15,000 of advance rent, taxable when received; replace the warranty accrual with warranty
+    costs paid (+ $9,000 − $5,000); and replace credit loss expense with specific write-offs (+ $8,000
+    − $3,000). Tax basis net income = $200,000.'

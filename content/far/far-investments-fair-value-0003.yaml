@@ -1,0 +1,39 @@
+id: far-investments-fair-value-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at fair value)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 825-10-15 (fair value option: eligible items and scope exceptions)'
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 1, Fenmore Corp. acquires each of the financial assets below and, when it first recognizes
+  each one, considers electing the fair value option for it. For which of them is the fair value option
+  not available?
+choices:
+- id: A
+  text: Common shares giving it 70% of the votes of a company it must consolidate
+  rationale: Correct. An investment in a subsidiary that the entity is required to consolidate is excluded
+    from the fair value option; the subsidiary is consolidated.
+- id: B
+  text: Common shares giving it 30% of the votes and significant influence over the investee
+  rationale: Available. An investment that would otherwise be accounted for by the equity method may be
+    measured at fair value under the fair value option.
+- id: C
+  text: A five-year note receivable from a supplier, issued in exchange for cash
+  rationale: Available. A note receivable is a recognized financial asset, which the fair value option
+    covers.
+- id: D
+  text: Bonds of a utility that its board has resolved to keep until they mature
+  rationale: Available. A debt security may be measured at fair value under the option, whatever classification
+    it would otherwise have.
+answer: A
+explanation: The fair value option in ASC 825-10 covers most recognized financial assets and liabilities,
+  including investments that would otherwise use the equity method, loans and notes receivable, and debt
+  securities, and it is elected instrument by instrument when the item is first recognized. The exclusions
+  include an investment in a subsidiary (or a variable interest entity) that the entity must consolidate,
+  pension and other postretirement obligations, financial assets and liabilities recognized under leases,
+  demand deposit liabilities of banks, and instruments the issuer classifies in equity.

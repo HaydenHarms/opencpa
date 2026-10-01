@@ -1,0 +1,155 @@
+id: far-income-statement-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 360-10 (capitalization and depreciation)
+  - ASC 460-10 (assurance-type warranties)
+  - ASC 606-10-25 (transfer of control; shipping terms)
+  - ASC 250-10 (prior-period adjustments only through retained earnings)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Tunstall Corp.''s draft Year 2 income statement reports income before income taxes of $760,000.
+  The controller identifies these errors: (1) equipment costing $90,000, bought and placed in service
+  on July 1, Year 2, was charged to repairs and maintenance expense; it has a five-year life and no residual
+  value, and Tunstall depreciates equipment straight-line from the month it is placed in service; (2)
+  no warranty expense was recorded for the assurance-type warranties on Year 2 sales, whose estimated
+  future repair cost is $22,000, and no claims were paid in Year 2; (3) a $31,000 loss on the sale of
+  a warehouse in Year 2 was debited directly to retained earnings; and (4) sales include $48,000 for goods
+  shipped on December 30 under FOB destination terms and received by the customer on January 4, Year 3,
+  and their $30,000 cost was charged to cost of goods sold. Ignoring income taxes, what is Tunstall''s
+  corrected income before income taxes?'
+choices:
+- id: A
+  text: $740,000
+  rationale: Reverses the $48,000 sale but leaves its $30,000 cost in cost of goods sold. Under FOB destination
+    the goods were still Tunstall's inventory at year-end, so their cost comes out of cost of goods sold
+    too.
+- id: B
+  text: $770,000
+  rationale: Correct. $760,000 + $90,000 − $9,000 depreciation − $22,000 warranty − $31,000 loss − ($48,000
+    − $30,000) on the sale reversed.
+- id: C
+  text: $779,000
+  rationale: Capitalizes the equipment but records no depreciation on it. Six months of depreciation ($9,000)
+    belong in Year 2.
+- id: D
+  text: $801,000
+  rationale: Leaves the $31,000 loss in retained earnings. A loss on selling a warehouse is part of income;
+    only prior-period error corrections go directly to retained earnings.
+answer: B
+explanation: '(1) The equipment is capitalized, which removes $90,000 of expense, and depreciated for
+  six months: $90,000 ÷ 5 × 6/12 = $9,000. (2) Assurance-type warranty costs are accrued when the goods
+  are sold: − $22,000. (3) The loss on the warehouse belongs in income: − $31,000. (4) Under FOB destination,
+  control passes when the customer receives the goods, in Year 3, so the $48,000 sale and its $30,000
+  cost both come out of Year 2: − $18,000. Corrected income = $760,000 + $90,000 − $9,000 − $22,000 −
+  $31,000 − $18,000 = $770,000.'
+variants:
+- stem: 'Ullswater Corp.''s draft Year 2 income statement reports income before income taxes of $1,240,000.
+    The controller identifies these errors: (1) equipment costing $140,000, bought and placed in service
+    on July 1, Year 2, was charged to repairs and maintenance expense; it has a five-year life and no
+    residual value, and Ullswater depreciates equipment straight-line from the month it is placed in service;
+    (2) no warranty expense was recorded for the assurance-type warranties on Year 2 sales, whose estimated
+    future repair cost is $35,000, and no claims were paid in Year 2; (3) a $26,000 loss on the sale of
+    a warehouse in Year 2 was debited directly to retained earnings; and (4) sales include $75,000 for
+    goods shipped on December 30 under FOB destination terms and received by the customer on January 4,
+    Year 3, and their $51,000 cost was charged to cost of goods sold. Ignoring income taxes, what is Ullswater''s
+    corrected income before income taxes?'
+  choices:
+  - id: A
+    text: $1,230,000
+    rationale: Reverses the $75,000 sale but leaves its $51,000 cost in cost of goods sold. Under FOB
+      destination the goods were still Ullswater's inventory at year-end, so their cost comes out of cost
+      of goods sold too.
+  - id: B
+    text: $1,267,000
+    rationale: Takes a full year of depreciation ($28,000). Equipment placed in service on July 1 is depreciated
+      for six months.
+  - id: C
+    text: $1,281,000
+    rationale: Correct. $1,240,000 + $140,000 − $14,000 depreciation − $35,000 warranty − $26,000 loss
+      − ($75,000 − $51,000) on the sale reversed.
+  - id: D
+    text: $1,316,000
+    rationale: Records warranty expense only when claims are paid. The $35,000 estimated cost of assurance-type
+      warranties on Year 2 sales is accrued in Year 2.
+  answer: C
+  explanation: '(1) The equipment is capitalized, which removes $140,000 of expense, and depreciated for
+    six months: $140,000 ÷ 5 × 6/12 = $14,000. (2) Assurance-type warranty costs are accrued when the
+    goods are sold: − $35,000. (3) The loss on the warehouse belongs in income: − $26,000. (4) Under FOB
+    destination, control passes when the customer receives the goods, in Year 3, so the $75,000 sale and
+    its $51,000 cost both come out of Year 2: − $24,000. Corrected income = $1,240,000 + $140,000 − $14,000
+    − $35,000 − $26,000 − $24,000 = $1,281,000.'
+- stem: 'Vowell Corp.''s draft Year 2 income statement reports income before income taxes of $530,000.
+    The controller identifies these errors: (1) equipment costing $60,000, bought and placed in service
+    on July 1, Year 2, was charged to repairs and maintenance expense; it has a five-year life and no
+    residual value, and Vowell depreciates equipment straight-line from the month it is placed in service;
+    (2) no warranty expense was recorded for the assurance-type warranties on Year 2 sales, whose estimated
+    future repair cost is $15,000, and no claims were paid in Year 2; (3) a $19,000 loss on the sale of
+    a warehouse in Year 2 was debited directly to retained earnings; and (4) sales include $32,000 for
+    goods shipped on December 30 under FOB destination terms and received by the customer on January 4,
+    Year 3, and their $20,000 cost was charged to cost of goods sold. Ignoring income taxes, what is Vowell''s
+    corrected income before income taxes?'
+  choices:
+  - id: A
+    text: $532,000
+    rationale: Takes a full year of depreciation ($12,000). Equipment placed in service on July 1 is depreciated
+      for six months.
+  - id: B
+    text: $538,000
+    rationale: Correct. $530,000 + $60,000 − $6,000 depreciation − $15,000 warranty − $19,000 loss − ($32,000
+      − $20,000) on the sale reversed.
+  - id: C
+    text: $553,000
+    rationale: Records warranty expense only when claims are paid. The $15,000 estimated cost of assurance-type
+      warranties on Year 2 sales is accrued in Year 2.
+  - id: D
+    text: $557,000
+    rationale: Leaves the $19,000 loss in retained earnings. A loss on selling a warehouse is part of
+      income; only prior-period error corrections go directly to retained earnings.
+  answer: B
+  explanation: '(1) The equipment is capitalized, which removes $60,000 of expense, and depreciated for
+    six months: $60,000 ÷ 5 × 6/12 = $6,000. (2) Assurance-type warranty costs are accrued when the goods
+    are sold: − $15,000. (3) The loss on the warehouse belongs in income: − $19,000. (4) Under FOB destination,
+    control passes when the customer receives the goods, in Year 3, so the $32,000 sale and its $20,000
+    cost both come out of Year 2: − $12,000. Corrected income = $530,000 + $60,000 − $6,000 − $15,000
+    − $19,000 − $12,000 = $538,000.'
+- stem: 'Wexcombe Corp.''s draft Year 2 income statement reports income before income taxes of $2,050,000.
+    The controller identifies these errors: (1) equipment costing $210,000, bought and placed in service
+    on July 1, Year 2, was charged to repairs and maintenance expense; it has a five-year life and no
+    residual value, and Wexcombe depreciates equipment straight-line from the month it is placed in service;
+    (2) no warranty expense was recorded for the assurance-type warranties on Year 2 sales, whose estimated
+    future repair cost is $48,000, and no claims were paid in Year 2; (3) a $57,000 loss on the sale of
+    a warehouse in Year 2 was debited directly to retained earnings; and (4) sales include $120,000 for
+    goods shipped on December 30 under FOB destination terms and received by the customer on January 4,
+    Year 3, and their $84,000 cost was charged to cost of goods sold. Ignoring income taxes, what is Wexcombe''s
+    corrected income before income taxes?'
+  choices:
+  - id: A
+    text: $2,014,000
+    rationale: Reverses the $120,000 sale but leaves its $84,000 cost in cost of goods sold. Under FOB
+      destination the goods were still Wexcombe's inventory at year-end, so their cost comes out of cost
+      of goods sold too.
+  - id: B
+    text: $2,077,000
+    rationale: Takes a full year of depreciation ($42,000). Equipment placed in service on July 1 is depreciated
+      for six months.
+  - id: C
+    text: $2,098,000
+    rationale: Correct. $2,050,000 + $210,000 − $21,000 depreciation − $48,000 warranty − $57,000 loss
+      − ($120,000 − $84,000) on the sale reversed.
+  - id: D
+    text: $2,119,000
+    rationale: Capitalizes the equipment but records no depreciation on it. Six months of depreciation
+      ($21,000) belong in Year 2.
+  answer: C
+  explanation: '(1) The equipment is capitalized, which removes $210,000 of expense, and depreciated for
+    six months: $210,000 ÷ 5 × 6/12 = $21,000. (2) Assurance-type warranty costs are accrued when the
+    goods are sold: − $48,000. (3) The loss on the warehouse belongs in income: − $57,000. (4) Under FOB
+    destination, control passes when the customer receives the goods, in Year 3, so the $120,000 sale
+    and its $84,000 cost both come out of Year 2: − $36,000. Corrected income = $2,050,000 + $210,000
+    − $21,000 − $48,000 − $57,000 − $36,000 = $2,098,000.'

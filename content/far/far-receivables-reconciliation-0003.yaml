@@ -1,0 +1,130 @@
+id: far-receivables-reconciliation-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 310-10 (receivables)
+  - Subsidiary ledger and control account reconciliation practice
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Barraclough Supply''s accounts receivable subledger totals $742,350, and the general
+  ledger control account shows $755,200. The controller''s investigation finds: a $3,850 credit memo for
+  a customer''s returned goods was posted to that customer''s subledger account twice; the accounts receivable
+  column of the December cash receipts journal was underfooted by $2,700 before the total was posted to
+  the control account; a $6,300 customer account written off in December was removed from the subledger,
+  but the write-off was never posted to the general ledger; and a $4,100 payment from one customer was
+  posted to another customer''s subledger account. Before any allowance for credit losses, what amount
+  should Barraclough report as accounts receivable?'
+choices:
+- id: A
+  text: $738,500
+  rationale: Subtracts the duplicated $3,850 credit memo from the subledger again instead of adding it
+    back.
+- id: B
+  text: $742,350
+  rationale: Uses the subledger as recorded. The $3,850 credit memo was posted twice, so the subledger
+    is understated by that amount.
+- id: C
+  text: $746,200
+  rationale: Correct. Subledger $742,350 + $3,850 = control account $755,200 − $2,700 − $6,300.
+- id: D
+  text: $752,500
+  rationale: Doesn't post the $6,300 write-off to the control account. The account was written off, so
+    it comes out of the general ledger too.
+answer: C
+explanation: 'Subledger: $742,350 + $3,850 duplicated credit memo reversed = $746,200. The misposted payment
+  moves between two customer accounts and doesn''t change the total. Control account: $755,200 − $2,700
+  for the underfooted receipts (receivables were credited too little) − $6,300 write-off not yet posted
+  = $746,200. The records agree at $746,200.'
+variants:
+- stem: 'At December 31, Crowther Supply''s accounts receivable subledger totals $510,300, and the general
+    ledger control account shows $519,500. The controller''s investigation finds: a $2,600 credit memo
+    for a customer''s returned goods was posted to that customer''s subledger account twice; the accounts
+    receivable column of the December cash receipts journal was underfooted by $1,900 before the total
+    was posted to the control account; a $4,700 customer account written off in December was removed from
+    the subledger, but the write-off was never posted to the general ledger; and a $3,300 payment from
+    one customer was posted to another customer''s subledger account. Before any allowance for credit
+    losses, what amount should Crowther report as accounts receivable?'
+  choices:
+  - id: A
+    text: $510,300
+    rationale: Uses the subledger as recorded. The $2,600 credit memo was posted twice, so the subledger
+      is understated by that amount.
+  - id: B
+    text: $512,900
+    rationale: Correct. Subledger $510,300 + $2,600 = control account $519,500 − $1,900 − $4,700.
+  - id: C
+    text: $516,700
+    rationale: Adds the $1,900 underfooting to the control account. Underfooting the receipts column credited
+      receivables too little, so the control account is too high.
+  - id: D
+    text: $517,600
+    rationale: Doesn't post the $4,700 write-off to the control account. The account was written off,
+      so it comes out of the general ledger too.
+  answer: B
+  explanation: 'Subledger: $510,300 + $2,600 duplicated credit memo reversed = $512,900. The misposted
+    payment moves between two customer accounts and doesn''t change the total. Control account: $519,500
+    − $1,900 for the underfooted receipts (receivables were credited too little) − $4,700 write-off not
+    yet posted = $512,900. The records agree at $512,900.'
+- stem: 'At December 31, Dobson Supply''s accounts receivable subledger totals $933,650, and the general
+    ledger control account shows $950,100. The controller''s investigation finds: a $4,750 credit memo
+    for a customer''s returned goods was posted to that customer''s subledger account twice; the accounts
+    receivable column of the December cash receipts journal was underfooted by $3,600 before the total
+    was posted to the control account; an $8,100 customer account written off in December was removed
+    from the subledger, but the write-off was never posted to the general ledger; and a $5,200 payment
+    from one customer was posted to another customer''s subledger account. Before any allowance for credit
+    losses, what amount should Dobson report as accounts receivable?'
+  choices:
+  - id: A
+    text: $933,200
+    rationale: Subtracts the $5,200 misposted payment. Posting a payment to the wrong customer's account
+      doesn't change the subledger total; it is corrected between the two accounts.
+  - id: B
+    text: $938,400
+    rationale: Correct. Subledger $933,650 + $4,750 = control account $950,100 − $3,600 − $8,100.
+  - id: C
+    text: $945,600
+    rationale: Adds the $3,600 underfooting to the control account. Underfooting the receipts column credited
+      receivables too little, so the control account is too high.
+  - id: D
+    text: $946,500
+    rationale: Doesn't post the $8,100 write-off to the control account. The account was written off,
+      so it comes out of the general ledger too.
+  answer: B
+  explanation: 'Subledger: $933,650 + $4,750 duplicated credit memo reversed = $938,400. The misposted
+    payment moves between two customer accounts and doesn''t change the total. Control account: $950,100
+    − $3,600 for the underfooted receipts (receivables were credited too little) − $8,100 write-off not
+    yet posted = $938,400. The records agree at $938,400.'
+- stem: 'At December 31, Exley Supply''s accounts receivable subledger totals $363,850, and the general
+    ledger control account shows $371,000. The controller''s investigation finds: a $1,850 credit memo
+    for a customer''s returned goods was posted to that customer''s subledger account twice; the accounts
+    receivable column of the December cash receipts journal was underfooted by $1,400 before the total
+    was posted to the control account; a $3,900 customer account written off in December was removed from
+    the subledger, but the write-off was never posted to the general ledger; and a $2,250 payment from
+    one customer was posted to another customer''s subledger account. Before any allowance for credit
+    losses, what amount should Exley report as accounts receivable?'
+  choices:
+  - id: A
+    text: $362,000
+    rationale: Subtracts the duplicated $1,850 credit memo from the subledger again instead of adding
+      it back.
+  - id: B
+    text: $365,700
+    rationale: Correct. Subledger $363,850 + $1,850 = control account $371,000 − $1,400 − $3,900.
+  - id: C
+    text: $368,500
+    rationale: Adds the $1,400 underfooting to the control account. Underfooting the receipts column credited
+      receivables too little, so the control account is too high.
+  - id: D
+    text: $369,600
+    rationale: Doesn't post the $3,900 write-off to the control account. The account was written off,
+      so it comes out of the general ledger too.
+  answer: B
+  explanation: 'Subledger: $363,850 + $1,850 duplicated credit memo reversed = $365,700. The misposted
+    payment moves between two customer accounts and doesn''t change the total. Control account: $371,000
+    − $1,400 for the underfooted receipts (receivables were credited too little) − $3,900 write-off not
+    yet posted = $365,700. The records agree at $365,700.'

@@ -1,0 +1,41 @@
+id: far-equity-method-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Equity method investments)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 323-10-15 (significant influence; presumptions and indicators)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Heseltine Co. buys common stock of four companies during Year 1 and does not elect the fair value
+  option for any of them. Which investment should Heseltine account for by the equity method?
+choices:
+- id: A
+  text: Holding 30% of the voting shares, under a standstill agreement giving up its votes and any board
+    seat
+  rationale: Holding 20% or more creates a presumption of significant influence, but an agreement under
+    which the investor surrenders significant shareholder rights is evidence that it has none. The shares
+    are reported under ASC 321.
+- id: B
+  text: Holding 16% of the voting shares; it names two of nine directors and is the investee's main supplier
+  rationale: Correct. Holding less than 20% creates a presumption of no significant influence, but board
+    representation and material transactions with the investee are evidence that overcomes it.
+- id: C
+  text: Holding 55% of the voting shares, which lets Heseltine elect a majority of the directors
+  rationale: A majority voting interest gives control, so the investee is consolidated, not accounted
+    for by the equity method.
+- id: D
+  text: Holding 19% of the voting shares, with no directors, contracts or other dealings with the investee
+  rationale: With less than 20% and no other evidence of influence, the presumption of no significant
+    influence stands. The shares are reported under ASC 321.
+answer: B
+explanation: The equity method applies when an investor can exercise significant influence over an investee's
+  operating and financial policies but does not control it. Owning 20% or more of the voting stock creates
+  a presumption of significant influence, and owning less creates a presumption against it; either presumption
+  can be overcome. Evidence of influence includes board representation, participation in policy-making,
+  material intra-entity transactions, interchange of managers and technological dependency. Evidence against
+  it includes an agreement surrendering significant shareholder rights, such as a standstill agreement.
+  A controlling (majority) interest is consolidated.

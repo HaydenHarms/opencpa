@@ -1,0 +1,155 @@
+id: far-changes-in-equity-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 505-10 (equity; issuance of shares)
+  - ASC 505-20 (stock dividends; large stock dividends)
+  - ASC 505-30 (treasury stock; cost method)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Hallam Corp.''s draft Year 2 statement of changes in equity reports additional paid-in capital
+  of $2,150,000 at December 31. The controller identifies these errors: (1) in February, Hallam issued
+  40,000 shares of $1 par common stock for $14 per share and credited the entire proceeds to common stock;
+  (2) in March, Hallam reissued treasury shares, which it carries at cost, for $18,000 more than their
+  cost and credited the excess to a gain in net income; (3) in May, Hallam distributed a 30% stock dividend
+  of 36,000 shares when the market price was $16 per share and recorded it at the market price, although
+  state law requires only par value to be capitalized for a stock dividend of that size; and (4) in November,
+  it reissued other treasury shares for $7,000 less than their cost and charged the shortfall to retained
+  earnings. Before Year 2, Hallam had no paid-in capital from treasury stock transactions. What additional
+  paid-in capital should the corrected statement report at December 31, Year 2?'
+choices:
+- id: A
+  text: $2,123,000
+  rationale: Leaves the $18,000 excess on reissuing treasury shares in income. A company doesn't report
+    gains on its own shares; the excess is paid-in capital from treasury stock.
+- id: B
+  text: $2,141,000
+  rationale: Correct. $2,150,000 + $520,000 − $540,000 + $18,000 − $7,000.
+- id: C
+  text: $2,148,000
+  rationale: Leaves the $7,000 shortfall in retained earnings. Under the cost method a shortfall is charged
+    first to paid-in capital from treasury stock, which the March reissuance had credited with $18,000.
+- id: D
+  text: $2,681,000
+  rationale: Keeps the stock dividend at market price. For a dividend this large (30%), Hallam capitalizes
+    only the par value that state law requires, so the $540,000 credited to APIC is reversed.
+answer: B
+explanation: '(1) The excess over par on the share issuance is APIC: 40,000 × ($14 − $1) = $520,000. (2)
+  The $18,000 excess on the March reissuance is paid-in capital from treasury stock, not a gain. (3) A
+  30% stock dividend is a large stock dividend; with state law requiring only par, Hallam transfers par
+  value from retained earnings to common stock, so the draft''s 36,000 × ($16 − $1) = $540,000 credit
+  to APIC is reversed. (4) The November shortfall of $7,000 is charged against that $18,000 balance before
+  any is charged to retained earnings, so it reduces APIC. APIC = $2,150,000 + $520,000 − $540,000 + $18,000
+  − $7,000 = $2,141,000.'
+variants:
+- stem: 'Ibbotson Corp.''s draft Year 2 statement of changes in equity reports additional paid-in capital
+    of $1,480,000 at December 31. The controller identifies these errors: (1) in February, Ibbotson issued
+    25,000 shares of $2 par common stock for $18 per share and credited the entire proceeds to common
+    stock; (2) in March, Ibbotson reissued treasury shares, which it carries at cost, for $12,000 more
+    than their cost and credited the excess to a gain in net income; (3) in May, Ibbotson distributed
+    a 30% stock dividend of 27,000 shares when the market price was $21 per share and recorded it at the
+    market price, although state law requires only par value to be capitalized for a stock dividend of
+    that size; and (4) in November, it reissued other treasury shares for $5,000 less than their cost
+    and charged the shortfall to retained earnings. Before Year 2, Ibbotson had no paid-in capital from
+    treasury stock transactions. What additional paid-in capital should the corrected statement report
+    at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $974,000
+    rationale: Leaves the whole issuance in common stock. Only par value ($50,000) belongs there; the
+      $400,000 received above par is additional paid-in capital.
+  - id: B
+    text: $1,374,000
+    rationale: Correct. $1,480,000 + $400,000 − $513,000 + $12,000 − $5,000.
+  - id: C
+    text: $1,379,000
+    rationale: Leaves the $5,000 shortfall in retained earnings. Under the cost method a shortfall is
+      charged first to paid-in capital from treasury stock, which the March reissuance had credited with
+      $12,000.
+  - id: D
+    text: $1,887,000
+    rationale: Keeps the stock dividend at market price. For a dividend this large (30%), Ibbotson capitalizes
+      only the par value that state law requires, so the $513,000 credited to APIC is reversed.
+  answer: B
+  explanation: '(1) The excess over par on the share issuance is APIC: 25,000 × ($18 − $2) = $400,000.
+    (2) The $12,000 excess on the March reissuance is paid-in capital from treasury stock, not a gain.
+    (3) A 30% stock dividend is a large stock dividend; with state law requiring only par, Ibbotson transfers
+    par value from retained earnings to common stock, so the draft''s 27,000 × ($21 − $2) = $513,000 credit
+    to APIC is reversed. (4) The November shortfall of $5,000 is charged against that $12,000 balance
+    before any is charged to retained earnings, so it reduces APIC. APIC = $1,480,000 + $400,000 − $513,000
+    + $12,000 − $5,000 = $1,374,000.'
+- stem: 'Jagoe Corp.''s draft Year 2 statement of changes in equity reports additional paid-in capital
+    of $3,260,000 at December 31. The controller identifies these errors: (1) in February, Jagoe issued
+    60,000 shares of $1 par common stock for $11 per share and credited the entire proceeds to common
+    stock; (2) in March, Jagoe reissued treasury shares, which it carries at cost, for $26,000 more than
+    their cost and credited the excess to a gain in net income; (3) in May, Jagoe distributed a 30% stock
+    dividend of 45,000 shares when the market price was $13 per share and recorded it at the market price,
+    although state law requires only par value to be capitalized for a stock dividend of that size; and
+    (4) in November, it reissued other treasury shares for $9,000 less than their cost and charged the
+    shortfall to retained earnings. Before Year 2, Jagoe had no paid-in capital from treasury stock transactions.
+    What additional paid-in capital should the corrected statement report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,737,000
+    rationale: Leaves the whole issuance in common stock. Only par value ($60,000) belongs there; the
+      $600,000 received above par is additional paid-in capital.
+  - id: B
+    text: $3,311,000
+    rationale: Leaves the $26,000 excess on reissuing treasury shares in income. A company doesn't report
+      gains on its own shares; the excess is paid-in capital from treasury stock.
+  - id: C
+    text: $3,337,000
+    rationale: Correct. $3,260,000 + $600,000 − $540,000 + $26,000 − $9,000.
+  - id: D
+    text: $3,877,000
+    rationale: Keeps the stock dividend at market price. For a dividend this large (30%), Jagoe capitalizes
+      only the par value that state law requires, so the $540,000 credited to APIC is reversed.
+  answer: C
+  explanation: '(1) The excess over par on the share issuance is APIC: 60,000 × ($11 − $1) = $600,000.
+    (2) The $26,000 excess on the March reissuance is paid-in capital from treasury stock, not a gain.
+    (3) A 30% stock dividend is a large stock dividend; with state law requiring only par, Jagoe transfers
+    par value from retained earnings to common stock, so the draft''s 45,000 × ($13 − $1) = $540,000 credit
+    to APIC is reversed. (4) The November shortfall of $9,000 is charged against that $26,000 balance
+    before any is charged to retained earnings, so it reduces APIC. APIC = $3,260,000 + $600,000 − $540,000
+    + $26,000 − $9,000 = $3,337,000.'
+- stem: 'Kitching Corp.''s draft Year 2 statement of changes in equity reports additional paid-in capital
+    of $980,000 at December 31. The controller identifies these errors: (1) in February, Kitching issued
+    15,000 shares of $5 par common stock for $24 per share and credited the entire proceeds to common
+    stock; (2) in March, Kitching reissued treasury shares, which it carries at cost, for $9,000 more
+    than their cost and credited the excess to a gain in net income; (3) in May, Kitching distributed
+    a 30% stock dividend of 18,000 shares when the market price was $27 per share and recorded it at the
+    market price, although state law requires only par value to be capitalized for a stock dividend of
+    that size; and (4) in November, it reissued other treasury shares for $4,000 less than their cost
+    and charged the shortfall to retained earnings. Before Year 2, Kitching had no paid-in capital from
+    treasury stock transactions. What additional paid-in capital should the corrected statement report
+    at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $589,000
+    rationale: Leaves the whole issuance in common stock. Only par value ($75,000) belongs there; the
+      $285,000 received above par is additional paid-in capital.
+  - id: B
+    text: $865,000
+    rationale: Leaves the $9,000 excess on reissuing treasury shares in income. A company doesn't report
+      gains on its own shares; the excess is paid-in capital from treasury stock.
+  - id: C
+    text: $874,000
+    rationale: Correct. $980,000 + $285,000 − $396,000 + $9,000 − $4,000.
+  - id: D
+    text: $878,000
+    rationale: Leaves the $4,000 shortfall in retained earnings. Under the cost method a shortfall is
+      charged first to paid-in capital from treasury stock, which the March reissuance had credited with
+      $9,000.
+  answer: C
+  explanation: '(1) The excess over par on the share issuance is APIC: 15,000 × ($24 − $5) = $285,000.
+    (2) The $9,000 excess on the March reissuance is paid-in capital from treasury stock, not a gain.
+    (3) A 30% stock dividend is a large stock dividend; with state law requiring only par, Kitching transfers
+    par value from retained earnings to common stock, so the draft''s 18,000 × ($27 − $5) = $396,000 credit
+    to APIC is reversed. (4) The November shortfall of $4,000 is charged against that $9,000 balance before
+    any is charged to retained earnings, so it reduces APIC. APIC = $980,000 + $285,000 − $396,000 + $9,000
+    − $4,000 = $874,000.'

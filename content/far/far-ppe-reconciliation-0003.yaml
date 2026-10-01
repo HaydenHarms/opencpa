@@ -1,0 +1,138 @@
+id: far-ppe-reconciliation-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 360-10 (property, plant and equipment; depreciation; repairs and maintenance)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Year 2, Sunderland Co.''s fixed-asset subledger shows equipment with a net carrying
+  amount (cost less accumulated depreciation) of $2,669,500. The general ledger shows equipment cost of
+  $4,860,000 and accumulated depreciation of $1,925,000. Sunderland''s policy is to depreciate equipment
+  straight-line from the month it is placed in service. The controller''s investigation finds: a machine
+  costing $240,000, placed in service on October 1, Year 2, with a five-year life and no residual value,
+  was depreciated for a full year in the general ledger, while the subledger follows the policy; the general
+  ledger equipment account includes $310,000 paid on November 15 for land bought as the site of a future
+  plant, on which no depreciation was recorded; and the subledger includes $8,500 spent on December 30
+  for routine repairs of a forklift, which the general ledger recorded as repairs expense. What net carrying
+  amount of equipment should Sunderland report at December 31, Year 2?'
+choices:
+- id: A
+  text: $2,589,000
+  rationale: Adds the $36,000 excess depreciation to accumulated depreciation instead of removing it.
+- id: B
+  text: $2,625,000
+  rationale: 'Keeps the general ledger''s full year of depreciation on the new machine. Under Sunderland''s
+    policy it is depreciated from October, three months: the $36,000 excess is reversed.'
+- id: C
+  text: $2,661,000
+  rationale: Correct. ($4,860,000 − $310,000) − ($1,925,000 − $36,000), which equals the subledger $2,669,500
+    − $8,500.
+- id: D
+  text: $2,971,000
+  rationale: Leaves the $310,000 of land in the equipment account. Land is a separate, nondepreciable
+    asset, not equipment.
+answer: C
+explanation: 'General ledger: cost $4,860,000 − $310,000 land reclassified = $4,550,000. Depreciation
+  on the new machine should be $240,000 ÷ 5 × 3/12 = $12,000, not $48,000, so accumulated depreciation
+  falls by $36,000 to $1,889,000. Net = $4,550,000 − $1,889,000 = $2,661,000. Subledger: $2,669,500 −
+  $8,500 repairs expensed = $2,661,000. The records agree.'
+variants:
+- stem: 'At December 31, Year 2, Tetley Co.''s fixed-asset subledger shows equipment with a net carrying
+    amount (cost less accumulated depreciation) of $1,725,200. The general ledger shows equipment cost
+    of $3,120,000 and accumulated depreciation of $1,240,000. Tetley''s policy is to depreciate equipment
+    straight-line from the month it is placed in service. The controller''s investigation finds: a machine
+    costing $160,000, placed in service on October 1, Year 2, with a five-year life and no residual value,
+    was depreciated for a full year in the general ledger, while the subledger follows the policy; the
+    general ledger equipment account includes $185,000 paid on November 15 for land bought as the site
+    of a future plant, on which no depreciation was recorded; and the subledger includes $6,200 spent
+    on December 30 for routine repairs of a forklift, which the general ledger recorded as repairs expense.
+    What net carrying amount of equipment should Tetley report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $1,695,000
+    rationale: 'Keeps the general ledger''s full year of depreciation on the new machine. Under Tetley''s
+      policy it is depreciated from October, three months: the $24,000 excess is reversed.'
+  - id: B
+    text: $1,719,000
+    rationale: Correct. ($3,120,000 − $185,000) − ($1,240,000 − $24,000), which equals the subledger $1,725,200
+      − $6,200.
+  - id: C
+    text: $1,725,200
+    rationale: Uses the subledger as recorded. The $6,200 of routine repairs is an expense, so the subledger's
+      capitalization of it is reversed.
+  - id: D
+    text: $1,904,000
+    rationale: Leaves the $185,000 of land in the equipment account. Land is a separate, nondepreciable
+      asset, not equipment.
+  answer: B
+  explanation: 'General ledger: cost $3,120,000 − $185,000 land reclassified = $2,935,000. Depreciation
+    on the new machine should be $160,000 ÷ 5 × 3/12 = $8,000, not $32,000, so accumulated depreciation
+    falls by $24,000 to $1,216,000. Net = $2,935,000 − $1,216,000 = $1,719,000. Subledger: $1,725,200
+    − $6,200 repairs expensed = $1,719,000. The records agree.'
+- stem: 'At December 31, Year 2, Ushaw Co.''s fixed-asset subledger shows equipment with a net carrying
+    amount (cost less accumulated depreciation) of $3,309,400. The general ledger shows equipment cost
+    of $6,450,000 and accumulated depreciation of $2,780,000. Ushaw''s policy is to depreciate equipment
+    straight-line from the month it is placed in service. The controller''s investigation finds: a machine
+    costing $320,000, placed in service on October 1, Year 2, with a five-year life and no residual value,
+    was depreciated for a full year in the general ledger, while the subledger follows the policy; the
+    general ledger equipment account includes $420,000 paid on November 15 for land bought as the site
+    of a future plant, on which no depreciation was recorded; and the subledger includes $11,400 spent
+    on December 30 for routine repairs of a forklift, which the general ledger recorded as repairs expense.
+    What net carrying amount of equipment should Ushaw report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $3,202,000
+    rationale: Adds the $48,000 excess depreciation to accumulated depreciation instead of removing it.
+  - id: B
+    text: $3,286,600
+    rationale: Also subtracts the $11,400 of repairs from the general ledger, which already expensed them.
+  - id: C
+    text: $3,298,000
+    rationale: Correct. ($6,450,000 − $420,000) − ($2,780,000 − $48,000), which equals the subledger $3,309,400
+      − $11,400.
+  - id: D
+    text: $3,718,000
+    rationale: Leaves the $420,000 of land in the equipment account. Land is a separate, nondepreciable
+      asset, not equipment.
+  answer: C
+  explanation: 'General ledger: cost $6,450,000 − $420,000 land reclassified = $6,030,000. Depreciation
+    on the new machine should be $320,000 ÷ 5 × 3/12 = $16,000, not $64,000, so accumulated depreciation
+    falls by $48,000 to $2,732,000. Net = $6,030,000 − $2,732,000 = $3,298,000. Subledger: $3,309,400
+    − $11,400 repairs expensed = $3,298,000. The records agree.'
+- stem: 'At December 31, Year 2, Waddington Co.''s fixed-asset subledger shows equipment with a net carrying
+    amount (cost less accumulated depreciation) of $1,102,700. The general ledger shows equipment cost
+    of $2,080,000 and accumulated depreciation of $860,000. Waddington''s policy is to depreciate equipment
+    straight-line from the month it is placed in service. The controller''s investigation finds: a machine
+    costing $120,000, placed in service on October 1, Year 2, with a five-year life and no residual value,
+    was depreciated for a full year in the general ledger, while the subledger follows the policy; the
+    general ledger equipment account includes $140,000 paid on November 15 for land bought as the site
+    of a future plant, on which no depreciation was recorded; and the subledger includes $4,700 spent
+    on December 30 for routine repairs of a forklift, which the general ledger recorded as repairs expense.
+    What net carrying amount of equipment should Waddington report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $1,080,000
+    rationale: 'Keeps the general ledger''s full year of depreciation on the new machine. Under Waddington''s
+      policy it is depreciated from October, three months: the $18,000 excess is reversed.'
+  - id: B
+    text: $1,098,000
+    rationale: Correct. ($2,080,000 − $140,000) − ($860,000 − $18,000), which equals the subledger $1,102,700
+      − $4,700.
+  - id: C
+    text: $1,102,700
+    rationale: Uses the subledger as recorded. The $4,700 of routine repairs is an expense, so the subledger's
+      capitalization of it is reversed.
+  - id: D
+    text: $1,238,000
+    rationale: Leaves the $140,000 of land in the equipment account. Land is a separate, nondepreciable
+      asset, not equipment.
+  answer: B
+  explanation: 'General ledger: cost $2,080,000 − $140,000 land reclassified = $1,940,000. Depreciation
+    on the new machine should be $120,000 ÷ 5 × 3/12 = $6,000, not $24,000, so accumulated depreciation
+    falls by $18,000 to $842,000. Net = $1,940,000 − $842,000 = $1,098,000. Subledger: $1,102,700 − $4,700
+    repairs expensed = $1,098,000. The records agree.'

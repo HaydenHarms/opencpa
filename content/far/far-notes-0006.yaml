@@ -1,0 +1,55 @@
+id: far-notes-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Notes to financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 505-20 and ASC 505-10-50 (dividends declared; equity disclosures)
+  - ASC 842-20-50 (lessee disclosures; leases not yet commenced)
+  - ASC 470-10-50 (debt maturities)
+  - ASC 360-10-50 (property and equipment disclosures)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'A senior accountant is tying Oldroyd Co.''s draft notes to its draft December 31, Year 1, balance
+  sheet before the statements are issued on March 3, Year 2. The draft balance sheet shows property and
+  equipment, net, of $2,140,000; operating lease liabilities of $48,000 (current) and $212,000 (noncurrent);
+  long-term debt of $75,000 (current) and $525,000 (noncurrent); accrued liabilities of $96,000, made
+  up of accrued wages of $61,000 and accrued interest of $35,000; trade accounts payable of $214,000,
+  all owed to suppliers of goods and services; and no other current liabilities. The draft notes say:
+  property and equipment, cost of $3,560,000 less accumulated depreciation of $1,420,000, with cost including
+  $180,000 of fully depreciated equipment still in use; leases, undiscounted lease payments of $292,000
+  less imputed interest of $32,000, plus a warehouse lease signed on December 1, Year 1, beginning March
+  1, Year 2, with undiscounted payments of $400,000, not yet recognized; long-term debt, a $600,000 term
+  loan repayable in installments of $75,000 each September 30; and stockholders'' equity, a cash dividend
+  of $0.30 per share on the 400,000 common shares outstanding, declared by the board on December 18, Year
+  1, payable January 20, Year 2, to holders of record on January 6. Which draft note is inconsistent with
+  the draft balance sheet?'
+choices:
+- id: A
+  text: The property and equipment note
+  rationale: Consistent. $3,560,000 − $1,420,000 = $2,140,000. Fully depreciated equipment still in use
+    stays in cost and accumulated depreciation until it is retired.
+- id: B
+  text: The lease note
+  rationale: Consistent. $292,000 − $32,000 = $260,000, the total of the current and noncurrent lease
+    liabilities. A lease that hasn't commenced is disclosed but not recognized until its commencement
+    date.
+- id: C
+  text: The long-term debt note
+  rationale: Consistent. The $75,000 installment due next September 30 is current, and the remaining $525,000
+    is noncurrent, as the balance sheet reports.
+- id: D
+  text: The stockholders' equity note
+  rationale: Correct. A cash dividend becomes a liability when the board declares it. The $120,000 (400,000
+    × $0.30) declared on December 18 should be a current liability, and retained earnings should be lower,
+    but the draft balance sheet shows no dividends payable.
+answer: D
+explanation: 'Each note''s figures can be traced to the draft balance sheet. Property: $3,560,000 − $1,420,000
+  = $2,140,000. Leases: $292,000 − $32,000 = $260,000 = $48,000 + $212,000; the warehouse lease that begins
+  in March is disclosed only, because a lessee recognizes a lease at commencement. Debt: $75,000 current
+  and $525,000 noncurrent of the $600,000 loan. Equity: the dividend declared on December 18 is a liability
+  from the declaration date, so the balance sheet should report $120,000 of dividends payable, which it
+  does not. The draft statements must be corrected.'

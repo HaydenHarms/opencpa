@@ -1,0 +1,160 @@
+id: far-changes-in-equity-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 505-20 (property dividends at fair value)
+  - ASC 505-30 (retirement of treasury stock)
+  - ASC 470-20 (conversion of convertible debt under its original terms)
+  - 'ASC 320-10 (trading debt securities: unrealized gains and losses in net income)'
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Gledhill Inc.''s draft Year 2 statement of changes in equity reports total stockholders'' equity
+  of $4,345,000 at December 31, built up as follows: January 1 balance $4,200,000; net income $610,000;
+  other comprehensive income $80,000, made up of $52,000 of unrealized holding gains on available-for-sale
+  debt securities and $28,000 of unrealized holding gains on trading debt securities; cash dividends ($180,000);
+  property dividend ($95,000); purchase of treasury stock ($120,000); and retirement of treasury stock
+  ($150,000). Supporting documents show: net income includes all of the year''s fair value changes on
+  the trading securities; the property dividend distributed land with a carrying amount of $95,000 and
+  a fair value of $140,000 on the declaration date, and net income includes the $45,000 gain from remeasuring
+  the land to fair value; the treasury shares retired in June had been bought in Year 1 for $150,000;
+  and in September, bondholders converted bonds with a carrying amount of $500,000 into common shares,
+  then worth $560,000, under the bonds'' original conversion terms. What total stockholders'' equity should
+  Gledhill''s corrected statement report at December 31, Year 2?'
+choices:
+- id: A
+  text: $4,772,000
+  rationale: Keeps the $150,000 retirement as a reduction of equity. The treasury shares reduced equity
+    when they were bought in Year 1; retiring them only reclassifies amounts within equity.
+- id: B
+  text: $4,922,000
+  rationale: Correct. $4,345,000 − $28,000 − $45,000 + $150,000 + $500,000.
+- id: C
+  text: $4,950,000
+  rationale: Keeps the $28,000 of trading-security gains in other comprehensive income. They are already
+    in net income, so the draft counts them twice.
+- id: D
+  text: $4,967,000
+  rationale: Leaves the property dividend at the land's $95,000 carrying amount. Net income already includes
+    the $45,000 remeasurement gain, so the dividend is recorded at the $140,000 fair value.
+answer: B
+explanation: 'The trading-security gains are in net income, so the $28,000 in other comprehensive income
+  is a double count: − $28,000. A property dividend is recorded at the property''s fair value; with the
+  $45,000 gain already in net income, the dividend should be $140,000, not $95,000: − $45,000. Retiring
+  treasury shares that were deducted from equity when bought doesn''t change total equity, so the draft''s
+  deduction is reversed: + $150,000. The conversion adds the bonds'' $500,000 carrying amount to equity.
+  The cash dividends and the Year 2 treasury purchase are correct. $4,345,000 − $28,000 − $45,000 + $150,000
+  + $500,000 = $4,922,000.'
+variants:
+- stem: 'Haigh Inc.''s draft Year 2 statement of changes in equity reports total stockholders'' equity
+    of $2,884,000 at December 31, built up as follows: January 1 balance $2,750,000; net income $420,000;
+    other comprehensive income $49,000, made up of $30,000 of unrealized holding gains on available-for-sale
+    debt securities and $19,000 of unrealized holding gains on trading debt securities; cash dividends
+    ($110,000); property dividend ($60,000); purchase of treasury stock ($75,000); and retirement of treasury
+    stock ($90,000). Supporting documents show: net income includes all of the year''s fair value changes
+    on the trading securities; the property dividend distributed land with a carrying amount of $60,000
+    and a fair value of $85,000 on the declaration date, and net income includes the $25,000 gain from
+    remeasuring the land to fair value; the treasury shares retired in June had been bought in Year 1
+    for $90,000; and in September, bondholders converted bonds with a carrying amount of $300,000 into
+    common shares, then worth $345,000, under the bonds'' original conversion terms. What total stockholders''
+    equity should Haigh''s corrected statement report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,930,000
+    rationale: Leaves out the conversion. Equity increases by the $300,000 carrying amount of the bonds
+      converted.
+  - id: B
+    text: $3,140,000
+    rationale: Keeps the $90,000 retirement as a reduction of equity. The treasury shares reduced equity
+      when they were bought in Year 1; retiring them only reclassifies amounts within equity.
+  - id: C
+    text: $3,230,000
+    rationale: Correct. $2,884,000 − $19,000 − $25,000 + $90,000 + $300,000.
+  - id: D
+    text: $3,249,000
+    rationale: Keeps the $19,000 of trading-security gains in other comprehensive income. They are already
+      in net income, so the draft counts them twice.
+  answer: C
+  explanation: 'The trading-security gains are in net income, so the $19,000 in other comprehensive income
+    is a double count: − $19,000. A property dividend is recorded at the property''s fair value; with
+    the $25,000 gain already in net income, the dividend should be $85,000, not $60,000: − $25,000. Retiring
+    treasury shares that were deducted from equity when bought doesn''t change total equity, so the draft''s
+    deduction is reversed: + $90,000. The conversion adds the bonds'' $300,000 carrying amount to equity.
+    The cash dividends and the Year 2 treasury purchase are correct. $2,884,000 − $19,000 − $25,000 +
+    $90,000 + $300,000 = $3,230,000.'
+- stem: 'Illingworth Inc.''s draft Year 2 statement of changes in equity reports total stockholders''
+    equity of $6,323,000 at December 31, built up as follows: January 1 balance $6,100,000; net income
+    $890,000; other comprehensive income $103,000, made up of $62,000 of unrealized holding gains on available-for-sale
+    debt securities and $41,000 of unrealized holding gains on trading debt securities; cash dividends
+    ($260,000); property dividend ($130,000); purchase of treasury stock ($170,000); and retirement of
+    treasury stock ($210,000). Supporting documents show: net income includes all of the year''s fair
+    value changes on the trading securities; the property dividend distributed land with a carrying amount
+    of $130,000 and a fair value of $205,000 on the declaration date, and net income includes the $75,000
+    gain from remeasuring the land to fair value; the treasury shares retired in June had been bought
+    in Year 1 for $210,000; and in September, bondholders converted bonds with a carrying amount of $750,000
+    into common shares, then worth $820,000, under the bonds'' original conversion terms. What total stockholders''
+    equity should Illingworth''s corrected statement report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $6,417,000
+    rationale: Leaves out the conversion. Equity increases by the $750,000 carrying amount of the bonds
+      converted.
+  - id: B
+    text: $6,957,000
+    rationale: Keeps the $210,000 retirement as a reduction of equity. The treasury shares reduced equity
+      when they were bought in Year 1; retiring them only reclassifies amounts within equity.
+  - id: C
+    text: $7,167,000
+    rationale: Correct. $6,323,000 − $41,000 − $75,000 + $210,000 + $750,000.
+  - id: D
+    text: $7,242,000
+    rationale: Leaves the property dividend at the land's $130,000 carrying amount. Net income already
+      includes the $75,000 remeasurement gain, so the dividend is recorded at the $205,000 fair value.
+  answer: C
+  explanation: 'The trading-security gains are in net income, so the $41,000 in other comprehensive income
+    is a double count: − $41,000. A property dividend is recorded at the property''s fair value; with
+    the $75,000 gain already in net income, the dividend should be $205,000, not $130,000: − $75,000.
+    Retiring treasury shares that were deducted from equity when bought doesn''t change total equity,
+    so the draft''s deduction is reversed: + $210,000. The conversion adds the bonds'' $750,000 carrying
+    amount to equity. The cash dividends and the Year 2 treasury purchase are correct. $6,323,000 − $41,000
+    − $75,000 + $210,000 + $750,000 = $7,167,000.'
+- stem: 'Jowett Inc.''s draft Year 2 statement of changes in equity reports total stockholders'' equity
+    of $1,925,000 at December 31, built up as follows: January 1 balance $1,850,000; net income $270,000;
+    other comprehensive income $35,000, made up of $21,000 of unrealized holding gains on available-for-sale
+    debt securities and $14,000 of unrealized holding gains on trading debt securities; cash dividends
+    ($75,000); property dividend ($40,000); purchase of treasury stock ($50,000); and retirement of treasury
+    stock ($65,000). Supporting documents show: net income includes all of the year''s fair value changes
+    on the trading securities; the property dividend distributed land with a carrying amount of $40,000
+    and a fair value of $62,000 on the declaration date, and net income includes the $22,000 gain from
+    remeasuring the land to fair value; the treasury shares retired in June had been bought in Year 1
+    for $65,000; and in September, bondholders converted bonds with a carrying amount of $200,000 into
+    common shares, then worth $228,000, under the bonds'' original conversion terms. What total stockholders''
+    equity should Jowett''s corrected statement report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,089,000
+    rationale: Keeps the $65,000 retirement as a reduction of equity. The treasury shares reduced equity
+      when they were bought in Year 1; retiring them only reclassifies amounts within equity.
+  - id: B
+    text: $2,154,000
+    rationale: Correct. $1,925,000 − $14,000 − $22,000 + $65,000 + $200,000.
+  - id: C
+    text: $2,176,000
+    rationale: Leaves the property dividend at the land's $40,000 carrying amount. Net income already
+      includes the $22,000 remeasurement gain, so the dividend is recorded at the $62,000 fair value.
+  - id: D
+    text: $2,182,000
+    rationale: Records the conversion at the shares' $228,000 market value. A conversion under the bonds'
+      original terms is recorded at the bonds' $200,000 carrying amount, with no gain or loss.
+  answer: B
+  explanation: 'The trading-security gains are in net income, so the $14,000 in other comprehensive income
+    is a double count: − $14,000. A property dividend is recorded at the property''s fair value; with
+    the $22,000 gain already in net income, the dividend should be $62,000, not $40,000: − $22,000. Retiring
+    treasury shares that were deducted from equity when bought doesn''t change total equity, so the draft''s
+    deduction is reversed: + $65,000. The conversion adds the bonds'' $200,000 carrying amount to equity.
+    The cash dividends and the Year 2 treasury purchase are correct. $1,925,000 − $14,000 − $22,000 +
+    $65,000 + $200,000 = $2,154,000.'

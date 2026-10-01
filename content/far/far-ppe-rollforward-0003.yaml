@@ -1,0 +1,123 @@
+id: far-ppe-rollforward-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 360-10 (property, plant and equipment; depreciation; disposals)
+  notes: Batch 09. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Nutter Co.'s equipment rollforward for Year 2 shows gross equipment of $3,400,000 at January 1 and
+  $3,720,000 at December 31, and accumulated depreciation of $1,260,000 at January 1 and $1,395,000 at
+  December 31. During Year 2, Nutter sold a machine that had cost $240,000 for $95,000 in cash and reported
+  a $15,000 gain on the sale, and it scrapped fully depreciated equipment that had cost $60,000, receiving
+  nothing. All other changes in the two accounts came from purchases of equipment and depreciation. What
+  depreciation expense should Nutter report for Year 2?
+choices:
+- id: A
+  text: $295,000
+  rationale: Ignores the scrapped equipment. Removing it took its $60,000 of accumulated depreciation
+    out of the account.
+- id: B
+  text: $325,000
+  rationale: Adds the $15,000 gain to the proceeds to get the machine's carrying amount. A gain means
+    the carrying amount was below the $95,000 proceeds.
+- id: C
+  text: $355,000
+  rationale: Correct. $1,395,000 − $1,260,000 + $160,000 on the machine sold + $60,000 on the scrapped
+    equipment.
+- id: D
+  text: $435,000
+  rationale: Removes the machine's full $240,000 cost from accumulated depreciation. Only its $160,000
+    of accumulated depreciation is removed.
+answer: C
+explanation: 'The machine sold had a carrying amount of $95,000 − $15,000 gain = $80,000, so its accumulated
+  depreciation was $240,000 − $80,000 = $160,000. The scrapped equipment was fully depreciated, so $60,000
+  of accumulated depreciation was removed with it. Accumulated depreciation: $1,260,000 + depreciation
+  − $160,000 − $60,000 = $1,395,000, so depreciation expense = $355,000.'
+variants:
+- stem: Oddy Co.'s equipment rollforward for Year 2 shows gross equipment of $2,150,000 at January 1 and
+    $2,380,000 at December 31, and accumulated depreciation of $840,000 at January 1 and $905,000 at December
+    31. During Year 2, Oddy sold a machine that had cost $180,000 for $62,000 in cash and reported an
+    $8,000 gain on the sale, and it scrapped fully depreciated equipment that had cost $45,000, receiving
+    nothing. All other changes in the two accounts came from purchases of equipment and depreciation.
+    What depreciation expense should Oddy report for Year 2?
+  choices:
+  - id: A
+    text: $191,000
+    rationale: Ignores the scrapped equipment. Removing it took its $45,000 of accumulated depreciation
+      out of the account.
+  - id: B
+    text: $228,000
+    rationale: Ignores the $8,000 gain and takes the machine's carrying amount to be the $62,000 proceeds,
+      which understates the accumulated depreciation removed by $8,000.
+  - id: C
+    text: $236,000
+    rationale: Correct. $905,000 − $840,000 + $126,000 on the machine sold + $45,000 on the scrapped equipment.
+  - id: D
+    text: $290,000
+    rationale: Removes the machine's full $180,000 cost from accumulated depreciation. Only its $126,000
+      of accumulated depreciation is removed.
+  answer: C
+  explanation: 'The machine sold had a carrying amount of $62,000 − $8,000 gain = $54,000, so its accumulated
+    depreciation was $180,000 − $54,000 = $126,000. The scrapped equipment was fully depreciated, so $45,000
+    of accumulated depreciation was removed with it. Accumulated depreciation: $840,000 + depreciation
+    − $126,000 − $45,000 = $905,000, so depreciation expense = $236,000.'
+- stem: Priestley Co.'s equipment rollforward for Year 2 shows gross equipment of $5,600,000 at January
+    1 and $6,050,000 at December 31, and accumulated depreciation of $2,100,000 at January 1 and $2,310,000
+    at December 31. During Year 2, Priestley sold a machine that had cost $420,000 for $150,000 in cash
+    and reported a $22,000 gain on the sale, and it scrapped fully depreciated equipment that had cost
+    $95,000, receiving nothing. All other changes in the two accounts came from purchases of equipment
+    and depreciation. What depreciation expense should Priestley report for Year 2?
+  choices:
+  - id: A
+    text: $553,000
+    rationale: Adds the $22,000 gain to the proceeds to get the machine's carrying amount. A gain means
+      the carrying amount was below the $150,000 proceeds.
+  - id: B
+    text: $575,000
+    rationale: Ignores the $22,000 gain and takes the machine's carrying amount to be the $150,000 proceeds,
+      which understates the accumulated depreciation removed by $22,000.
+  - id: C
+    text: $597,000
+    rationale: Correct. $2,310,000 − $2,100,000 + $292,000 on the machine sold + $95,000 on the scrapped
+      equipment.
+  - id: D
+    text: $725,000
+    rationale: Removes the machine's full $420,000 cost from accumulated depreciation. Only its $292,000
+      of accumulated depreciation is removed.
+  answer: C
+  explanation: 'The machine sold had a carrying amount of $150,000 − $22,000 gain = $128,000, so its accumulated
+    depreciation was $420,000 − $128,000 = $292,000. The scrapped equipment was fully depreciated, so
+    $95,000 of accumulated depreciation was removed with it. Accumulated depreciation: $2,100,000 + depreciation
+    − $292,000 − $95,000 = $2,310,000, so depreciation expense = $597,000.'
+- stem: Riley Co.'s equipment rollforward for Year 2 shows gross equipment of $1,280,000 at January 1
+    and $1,410,000 at December 31, and accumulated depreciation of $470,000 at January 1 and $520,000
+    at December 31. During Year 2, Riley sold a machine that had cost $110,000 for $38,000 in cash and
+    reported a $6,000 gain on the sale, and it scrapped fully depreciated equipment that had cost $24,000,
+    receiving nothing. All other changes in the two accounts came from purchases of equipment and depreciation.
+    What depreciation expense should Riley report for Year 2?
+  choices:
+  - id: A
+    text: $50,000
+    rationale: Uses only the net change in accumulated depreciation, ignoring the depreciation removed
+      for the machine sold and the equipment scrapped.
+  - id: B
+    text: $128,000
+    rationale: Ignores the scrapped equipment. Removing it took its $24,000 of accumulated depreciation
+      out of the account.
+  - id: C
+    text: $146,000
+    rationale: Ignores the $6,000 gain and takes the machine's carrying amount to be the $38,000 proceeds,
+      which understates the accumulated depreciation removed by $6,000.
+  - id: D
+    text: $152,000
+    rationale: Correct. $520,000 − $470,000 + $78,000 on the machine sold + $24,000 on the scrapped equipment.
+  answer: D
+  explanation: 'The machine sold had a carrying amount of $38,000 − $6,000 gain = $32,000, so its accumulated
+    depreciation was $110,000 − $32,000 = $78,000. The scrapped equipment was fully depreciated, so $24,000
+    of accumulated depreciation was removed with it. Accumulated depreciation: $470,000 + depreciation
+    − $78,000 − $24,000 = $520,000, so depreciation expense = $152,000.'
