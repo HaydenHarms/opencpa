@@ -1,0 +1,111 @@
+id: far-ratios-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Financial statement analysis: solvency ratios (times interest earned)'
+  - ASC 835-20 (capitalization of interest)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Brough Corp. computes its times-interest-earned ratio as earnings before interest expense and income
+  taxes divided by interest expense. For Year 2, it reports net income of $642,000 after income tax expense
+  of $214,000. During Year 2 it incurred $196,000 of interest on its borrowings, of which $46,000 was
+  capitalized as part of the cost of a warehouse it was building; it paid $138,000 of interest in cash.
+  What is Brough's Year 2 times-interest-earned ratio, rounded to two decimal places?
+choices:
+- id: A
+  text: '4.28'
+  rationale: Divides net income by interest expense. The numerator is earnings before interest expense
+    and income taxes.
+- id: B
+  text: '5.13'
+  rationale: Divides by the $196,000 of interest incurred. The $46,000 capitalized into the warehouse
+    isn't interest expense; the ratio's denominator is the $150,000 expensed.
+- id: C
+  text: '5.28'
+  rationale: Leaves out the $214,000 of income tax expense. Earnings before interest and taxes add back
+    both interest expense and income tax expense to net income.
+- id: D
+  text: '6.71'
+  rationale: Correct. ($642,000 + $214,000 + $150,000) ÷ $150,000.
+answer: D
+explanation: 'Interest expense is the interest incurred less the amount capitalized: $196,000 − $46,000
+  = $150,000. Earnings before interest expense and income taxes = $642,000 + $214,000 + $150,000 = $1,006,000.
+  Times interest earned = $1,006,000 ÷ $150,000 = 6.71. Cash interest paid doesn''t enter the ratio.'
+variants:
+- stem: Catterick Corp. computes its times-interest-earned ratio as earnings before interest expense and
+    income taxes divided by interest expense. For Year 2, it reports net income of $455,000 after income
+    tax expense of $152,000. During Year 2 it incurred $148,000 of interest on its borrowings, of which
+    $33,000 was capitalized as part of the cost of a warehouse it was building; it paid $104,000 of interest
+    in cash. What is Catterick's Year 2 times-interest-earned ratio, rounded to two decimal places?
+  choices:
+  - id: A
+    text: '4.96'
+    rationale: Leaves out the $152,000 of income tax expense. Earnings before interest and taxes add back
+      both interest expense and income tax expense to net income.
+  - id: B
+    text: '5.10'
+    rationale: Uses the $148,000 of interest incurred in both the numerator and the denominator. Only
+      the $115,000 expensed reduced net income, so only that amount is added back and divided by.
+  - id: C
+    text: '6.28'
+    rationale: Correct. ($455,000 + $152,000 + $115,000) ÷ $115,000.
+  - id: D
+    text: '6.94'
+    rationale: Divides by the $104,000 of interest paid in cash. The ratio uses interest expense, $115,000.
+  answer: C
+  explanation: 'Interest expense is the interest incurred less the amount capitalized: $148,000 − $33,000
+    = $115,000. Earnings before interest expense and income taxes = $455,000 + $152,000 + $115,000 = $722,000.
+    Times interest earned = $722,000 ÷ $115,000 = 6.28. Cash interest paid doesn''t enter the ratio.'
+- stem: Dacre Corp. computes its times-interest-earned ratio as earnings before interest expense and income
+    taxes divided by interest expense. For Year 2, it reports net income of $918,000 after income tax
+    expense of $306,000. During Year 2 it incurred $264,000 of interest on its borrowings, of which $59,000
+    was capitalized as part of the cost of a warehouse it was building; it paid $187,000 of interest in
+    cash. What is Dacre's Year 2 times-interest-earned ratio, rounded to two decimal places?
+  choices:
+  - id: A
+    text: '4.48'
+    rationale: Divides net income by interest expense. The numerator is earnings before interest expense
+      and income taxes.
+  - id: B
+    text: '5.64'
+    rationale: Uses the $264,000 of interest incurred in both the numerator and the denominator. Only
+      the $205,000 expensed reduced net income, so only that amount is added back and divided by.
+  - id: C
+    text: '6.97'
+    rationale: Correct. ($918,000 + $306,000 + $205,000) ÷ $205,000.
+  - id: D
+    text: '7.64'
+    rationale: Divides by the $187,000 of interest paid in cash. The ratio uses interest expense, $205,000.
+  answer: C
+  explanation: 'Interest expense is the interest incurred less the amount capitalized: $264,000 − $59,000
+    = $205,000. Earnings before interest expense and income taxes = $918,000 + $306,000 + $205,000 = $1,429,000.
+    Times interest earned = $1,429,000 ÷ $205,000 = 6.97. Cash interest paid doesn''t enter the ratio.'
+- stem: Gargrave Corp. computes its times-interest-earned ratio as earnings before interest expense and
+    income taxes divided by interest expense. For Year 2, it reports net income of $377,000 after income
+    tax expense of $126,000. During Year 2 it incurred $121,000 of interest on its borrowings, of which
+    $27,000 was capitalized as part of the cost of a warehouse it was building; it paid $86,000 of interest
+    in cash. What is Gargrave's Year 2 times-interest-earned ratio, rounded to two decimal places?
+  choices:
+  - id: A
+    text: '4.93'
+    rationale: Divides by the $121,000 of interest incurred. The $27,000 capitalized into the warehouse
+      isn't interest expense; the ratio's denominator is the $94,000 expensed.
+  - id: B
+    text: '5.16'
+    rationale: Uses the $121,000 of interest incurred in both the numerator and the denominator. Only
+      the $94,000 expensed reduced net income, so only that amount is added back and divided by.
+  - id: C
+    text: '6.35'
+    rationale: Correct. ($377,000 + $126,000 + $94,000) ÷ $94,000.
+  - id: D
+    text: '6.94'
+    rationale: Divides by the $86,000 of interest paid in cash. The ratio uses interest expense, $94,000.
+  answer: C
+  explanation: 'Interest expense is the interest incurred less the amount capitalized: $121,000 − $27,000
+    = $94,000. Earnings before interest expense and income taxes = $377,000 + $126,000 + $94,000 = $597,000.
+    Times interest earned = $597,000 ÷ $94,000 = 6.35. Cash interest paid doesn''t enter the ratio.'

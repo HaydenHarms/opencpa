@@ -1,0 +1,154 @@
+id: far-consolidated-statements-0010
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 810-10-45 (consolidation procedures: intra-entity balances)'
+  - ASC 810-10 (noncontrolling interests)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Cracoe Corp. owns 80% of Aysgarth Inc. To prepare Cracoe''s draft December 31, Year 2, consolidated
+  balance sheet, the staff added Cracoe''s current liabilities of $1,840,000 and Aysgarth''s of $760,000,
+  then eliminated $118,000 for Aysgarth''s trade payable to Cracoe (the balance of Cracoe''s receivable
+  from Aysgarth) and $90,000 for the dividend Aysgarth declared on December 20, payable January 15, Year
+  3, reporting total current liabilities of $2,392,000. Supporting schedules show: Cracoe''s receivable
+  from Aysgarth includes $26,000 for goods that Cracoe shipped FOB shipping point on December 30 and Aysgarth
+  received and recorded on January 4; Aysgarth''s accrued liabilities include $21,000 of December management
+  fees owed to Cracoe, which Cracoe has recorded as a receivable; and Aysgarth has no other balances with
+  Cracoe. After any corrections needed, what total current liabilities should the consolidated balance
+  sheet report?'
+choices:
+- id: A
+  text: $2,389,000
+  rationale: Leaves the elimination at the $118,000 on Cracoe's books. Aysgarth had recorded only $92,000
+    of that payable at year-end, so eliminating $118,000 removed $26,000 of Aysgarth's liabilities to
+    outsiders.
+- id: B
+  text: $2,397,000
+  rationale: Eliminates all of Aysgarth's $90,000 dividend payable. Only Cracoe's 80% is owed within the
+    group; the $18,000 owed to the noncontrolling shareholders is a liability of the consolidated entity.
+- id: C
+  text: $2,415,000
+  rationale: Correct. $1,840,000 + $760,000 − $92,000 trade payable to Cracoe − $21,000 fees − $72,000
+    dividend owed to Cracoe.
+- id: D
+  text: $2,436,000
+  rationale: Leaves the $21,000 of management fees Aysgarth owes Cracoe in current liabilities. Balances
+    owed within the group are eliminated.
+answer: C
+explanation: Only balances owed within the group are eliminated. Aysgarth's books show a trade payable
+  to Cracoe of $118,000 − $26,000 in transit = $92,000, so that is the liability to eliminate; the in-transit
+  goods are handled on the asset side. The $21,000 of management fees Aysgarth owes Cracoe is also eliminated.
+  Of the $90,000 dividend payable, 80% ($72,000) is owed to Cracoe and eliminated, while $18,000 is owed
+  to the noncontrolling shareholders and stays a liability. $1,840,000 + $760,000 − $92,000 − $21,000
+  − $72,000 = $2,415,000.
+variants:
+- stem: 'Linton Corp. owns 80% of Sedbusk Inc. To prepare Linton''s draft December 31, Year 2, consolidated
+    balance sheet, the staff added Linton''s current liabilities of $1,265,000 and Sedbusk''s of $548,000,
+    then eliminated $84,000 for Sedbusk''s trade payable to Linton (the balance of Linton''s receivable
+    from Sedbusk) and $65,000 for the dividend Sedbusk declared on December 20, payable January 15, Year
+    3, reporting total current liabilities of $1,664,000. Supporting schedules show: Linton''s receivable
+    from Sedbusk includes $19,000 for goods that Linton shipped FOB shipping point on December 30 and
+    Sedbusk received and recorded on January 4; Sedbusk''s accrued liabilities include $15,000 of December
+    management fees owed to Linton, which Linton has recorded as a receivable; and Sedbusk has no other
+    balances with Linton. After any corrections needed, what total current liabilities should the consolidated
+    balance sheet report?'
+  choices:
+  - id: A
+    text: $1,668,000
+    rationale: Eliminates all of Sedbusk's $65,000 dividend payable. Only Linton's 80% is owed within
+      the group; the $13,000 owed to the noncontrolling shareholders is a liability of the consolidated
+      entity.
+  - id: B
+    text: $1,681,000
+    rationale: Correct. $1,265,000 + $548,000 − $65,000 trade payable to Linton − $15,000 fees − $52,000
+      dividend owed to Linton.
+  - id: C
+    text: $1,696,000
+    rationale: Leaves the $15,000 of management fees Sedbusk owes Linton in current liabilities. Balances
+      owed within the group are eliminated.
+  - id: D
+    text: $1,733,000
+    rationale: Eliminates none of the dividend payable. The $52,000 owed to Linton is an intragroup balance
+      and is eliminated.
+  answer: B
+  explanation: Only balances owed within the group are eliminated. Sedbusk's books show a trade payable
+    to Linton of $84,000 − $19,000 in transit = $65,000, so that is the liability to eliminate; the in-transit
+    goods are handled on the asset side. The $15,000 of management fees Sedbusk owes Linton is also eliminated.
+    Of the $65,000 dividend payable, 80% ($52,000) is owed to Linton and eliminated, while $13,000 is
+    owed to the noncontrolling shareholders and stays a liability. $1,265,000 + $548,000 − $65,000 − $15,000
+    − $52,000 = $1,681,000.
+- stem: 'Healaugh Corp. owns 80% of Muker Inc. To prepare Healaugh''s draft December 31, Year 2, consolidated
+    balance sheet, the staff added Healaugh''s current liabilities of $2,470,000 and Muker''s of $1,020,000,
+    then eliminated $156,000 for Muker''s trade payable to Healaugh (the balance of Healaugh''s receivable
+    from Muker) and $120,000 for the dividend Muker declared on December 20, payable January 15, Year
+    3, reporting total current liabilities of $3,214,000. Supporting schedules show: Healaugh''s receivable
+    from Muker includes $34,000 for goods that Healaugh shipped FOB shipping point on December 30 and
+    Muker received and recorded on January 4; Muker''s accrued liabilities include $28,000 of December
+    management fees owed to Healaugh, which Healaugh has recorded as a receivable; and Muker has no other
+    balances with Healaugh. After any corrections needed, what total current liabilities should the consolidated
+    balance sheet report?'
+  choices:
+  - id: A
+    text: $3,210,000
+    rationale: Leaves the elimination at the $156,000 on Healaugh's books. Muker had recorded only $122,000
+      of that payable at year-end, so eliminating $156,000 removed $34,000 of Muker's liabilities to outsiders.
+  - id: B
+    text: $3,244,000
+    rationale: Correct. $2,470,000 + $1,020,000 − $122,000 trade payable to Healaugh − $28,000 fees −
+      $96,000 dividend owed to Healaugh.
+  - id: C
+    text: $3,272,000
+    rationale: Leaves the $28,000 of management fees Muker owes Healaugh in current liabilities. Balances
+      owed within the group are eliminated.
+  - id: D
+    text: $3,340,000
+    rationale: Eliminates none of the dividend payable. The $96,000 owed to Healaugh is an intragroup
+      balance and is eliminated.
+  answer: B
+  explanation: Only balances owed within the group are eliminated. Muker's books show a trade payable
+    to Healaugh of $156,000 − $34,000 in transit = $122,000, so that is the liability to eliminate; the
+    in-transit goods are handled on the asset side. The $28,000 of management fees Muker owes Healaugh
+    is also eliminated. Of the $120,000 dividend payable, 80% ($96,000) is owed to Healaugh and eliminated,
+    while $24,000 is owed to the noncontrolling shareholders and stays a liability. $2,470,000 + $1,020,000
+    − $122,000 − $28,000 − $96,000 = $3,244,000.
+- stem: 'Carperby Corp. owns 80% of Keasden Inc. To prepare Carperby''s draft December 31, Year 2, consolidated
+    balance sheet, the staff added Carperby''s current liabilities of $930,000 and Keasden''s of $402,000,
+    then eliminated $62,000 for Keasden''s trade payable to Carperby (the balance of Carperby''s receivable
+    from Keasden) and $45,000 for the dividend Keasden declared on December 20, payable January 15, Year
+    3, reporting total current liabilities of $1,225,000. Supporting schedules show: Carperby''s receivable
+    from Keasden includes $14,000 for goods that Carperby shipped FOB shipping point on December 30 and
+    Keasden received and recorded on January 4; Keasden''s accrued liabilities include $11,000 of December
+    management fees owed to Carperby, which Carperby has recorded as a receivable; and Keasden has no
+    other balances with Carperby. After any corrections needed, what total current liabilities should
+    the consolidated balance sheet report?'
+  choices:
+  - id: A
+    text: $1,223,000
+    rationale: Leaves the elimination at the $62,000 on Carperby's books. Keasden had recorded only $48,000
+      of that payable at year-end, so eliminating $62,000 removed $14,000 of Keasden's liabilities to
+      outsiders.
+  - id: B
+    text: $1,228,000
+    rationale: Eliminates all of Keasden's $45,000 dividend payable. Only Carperby's 80% is owed within
+      the group; the $9,000 owed to the noncontrolling shareholders is a liability of the consolidated
+      entity.
+  - id: C
+    text: $1,237,000
+    rationale: Correct. $930,000 + $402,000 − $48,000 trade payable to Carperby − $11,000 fees − $36,000
+      dividend owed to Carperby.
+  - id: D
+    text: $1,273,000
+    rationale: Eliminates none of the dividend payable. The $36,000 owed to Carperby is an intragroup
+      balance and is eliminated.
+  answer: C
+  explanation: Only balances owed within the group are eliminated. Keasden's books show a trade payable
+    to Carperby of $62,000 − $14,000 in transit = $48,000, so that is the liability to eliminate; the
+    in-transit goods are handled on the asset side. The $11,000 of management fees Keasden owes Carperby
+    is also eliminated. Of the $45,000 dividend payable, 80% ($36,000) is owed to Carperby and eliminated,
+    while $9,000 is owed to the noncontrolling shareholders and stays a liability. $930,000 + $402,000
+    − $48,000 − $11,000 − $36,000 = $1,237,000.

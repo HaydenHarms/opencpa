@@ -1,0 +1,149 @@
+id: far-investments-htm-credit-loss-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at amortized cost)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 326-20 (current expected credit losses: pooled measurement, write-offs, accrued interest elections)'
+  - ASC 320-10 (held-to-maturity debt securities)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Askrigg Corp., a public business entity, holds a portfolio of unsecured corporate bonds classified
+  as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a loss
+  rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and to write
+  off uncollectible accrued interest by reversing interest income; ignore interest in this question. The
+  allowance for credit losses was $46,000 at January 1, Year 2. In June, the issuer of one bond, with
+  an amortized cost of $60,000, filed for bankruptcy; in October it paid $24,000 in final settlement,
+  and Askrigg wrote off the rest. At December 31, Year 2, the remaining bonds have an amortized cost of
+  $4,800,000 and a fair value $135,000 below it, mostly because market interest rates rose. Based on historical
+  losses adjusted for current conditions and reasonable and supportable forecasts, Askrigg expects 1.2%
+  of the amortized cost of the remaining bonds not to be collected over their lives. What credit loss
+  expense should Askrigg recognize for Year 2?
+choices:
+- id: A
+  text: $11,600
+  rationale: Ignores the $36,000 write-off, which used up part of the beginning allowance. The allowance
+    before adjustment was $10,000.
+- id: B
+  text: $47,600
+  rationale: Correct. $57,600 required − ($46,000 − $36,000) remaining.
+- id: C
+  text: $57,600
+  rationale: Records the whole required allowance of $57,600 as expense. Expense is the amount needed
+    to bring the existing allowance ($10,000 after the write-off) up to $57,600.
+- id: D
+  text: $135,000
+  rationale: Records the $135,000 by which fair value is below amortized cost. Held-to-maturity securities
+    are carried at amortized cost less an allowance for expected credit losses; declines in fair value
+    from changes in interest rates aren't credit losses.
+answer: B
+explanation: 'The allowance at December 31 must equal expected credit losses over the bonds'' lives: 1.2%
+  × $4,800,000 = $57,600. The write-off is the part of the defaulted bond not collected: $60,000 − $24,000
+  = $36,000, charged against the allowance, which leaves $46,000 − $36,000 = $10,000. Credit loss expense
+  = $57,600 − $10,000 = $47,600. The decline in fair value caused by rising interest rates doesn''t affect
+  held-to-maturity securities carried at amortized cost.'
+variants:
+- stem: Bainbridge Corp., a public business entity, holds a portfolio of unsecured corporate bonds classified
+    as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a
+    loss rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and
+    to write off uncollectible accrued interest by reversing interest income; ignore interest in this
+    question. The allowance for credit losses was $38,000 at January 1, Year 2. In June, the issuer of
+    one bond, with an amortized cost of $50,000, filed for bankruptcy; in October it paid $18,000 in final
+    settlement, and Bainbridge wrote off the rest. At December 31, Year 2, the remaining bonds have an
+    amortized cost of $3,600,000 and a fair value $96,000 below it, mostly because market interest rates
+    rose. Based on historical losses adjusted for current conditions and reasonable and supportable forecasts,
+    Bainbridge expects 1.4% of the amortized cost of the remaining bonds not to be collected over their
+    lives. What credit loss expense should Bainbridge recognize for Year 2?
+  choices:
+  - id: A
+    text: $12,400
+    rationale: Ignores the $32,000 write-off, which used up part of the beginning allowance. The allowance
+      before adjustment was $6,000.
+  - id: B
+    text: $44,400
+    rationale: Correct. $50,400 required − ($38,000 − $32,000) remaining.
+  - id: C
+    text: $50,400
+    rationale: Records the whole required allowance of $50,400 as expense. Expense is the amount needed
+      to bring the existing allowance ($6,000 after the write-off) up to $50,400.
+  - id: D
+    text: $62,400
+    rationale: Writes off the bond's whole $50,000 amortized cost. Bainbridge received $18,000, so only
+      $32,000 was written off against the allowance.
+  answer: B
+  explanation: 'The allowance at December 31 must equal expected credit losses over the bonds'' lives:
+    1.4% × $3,600,000 = $50,400. The write-off is the part of the defaulted bond not collected: $50,000
+    − $18,000 = $32,000, charged against the allowance, which leaves $38,000 − $32,000 = $6,000. Credit
+    loss expense = $50,400 − $6,000 = $44,400. The decline in fair value caused by rising interest rates
+    doesn''t affect held-to-maturity securities carried at amortized cost.'
+- stem: Coverham Corp., a public business entity, holds a portfolio of unsecured corporate bonds classified
+    as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a
+    loss rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and
+    to write off uncollectible accrued interest by reversing interest income; ignore interest in this
+    question. The allowance for credit losses was $62,000 at January 1, Year 2. In June, the issuer of
+    one bond, with an amortized cost of $85,000, filed for bankruptcy; in October it paid $40,000 in final
+    settlement, and Coverham wrote off the rest. At December 31, Year 2, the remaining bonds have an amortized
+    cost of $6,200,000 and a fair value $171,000 below it, mostly because market interest rates rose.
+    Based on historical losses adjusted for current conditions and reasonable and supportable forecasts,
+    Coverham expects 1.1% of the amortized cost of the remaining bonds not to be collected over their
+    lives. What credit loss expense should Coverham recognize for Year 2?
+  choices:
+  - id: A
+    text: $51,200
+    rationale: Correct. $68,200 required − ($62,000 − $45,000) remaining.
+  - id: B
+    text: $68,200
+    rationale: Records the whole required allowance of $68,200 as expense. Expense is the amount needed
+      to bring the existing allowance ($17,000 after the write-off) up to $68,200.
+  - id: C
+    text: $91,200
+    rationale: Writes off the bond's whole $85,000 amortized cost. Coverham received $40,000, so only
+      $45,000 was written off against the allowance.
+  - id: D
+    text: $171,000
+    rationale: Records the $171,000 by which fair value is below amortized cost. Held-to-maturity securities
+      are carried at amortized cost less an allowance for expected credit losses; declines in fair value
+      from changes in interest rates aren't credit losses.
+  answer: A
+  explanation: 'The allowance at December 31 must equal expected credit losses over the bonds'' lives:
+    1.1% × $6,200,000 = $68,200. The write-off is the part of the defaulted bond not collected: $85,000
+    − $40,000 = $45,000, charged against the allowance, which leaves $62,000 − $45,000 = $17,000. Credit
+    loss expense = $68,200 − $17,000 = $51,200. The decline in fair value caused by rising interest rates
+    doesn''t affect held-to-maturity securities carried at amortized cost.'
+- stem: Draughton Corp., a public business entity, holds a portfolio of unsecured corporate bonds classified
+    as held to maturity. It measures expected credit losses on the portfolio as a pool, by applying a
+    loss rate to amortized cost, and it has elected to exclude accrued interest from amortized cost and
+    to write off uncollectible accrued interest by reversing interest income; ignore interest in this
+    question. The allowance for credit losses was $29,000 at January 1, Year 2. In June, the issuer of
+    one bond, with an amortized cost of $40,000, filed for bankruptcy; in October it paid $15,000 in final
+    settlement, and Draughton wrote off the rest. At December 31, Year 2, the remaining bonds have an
+    amortized cost of $2,750,000 and a fair value $58,000 below it, mostly because market interest rates
+    rose. Based on historical losses adjusted for current conditions and reasonable and supportable forecasts,
+    Draughton expects 1.3% of the amortized cost of the remaining bonds not to be collected over their
+    lives. What credit loss expense should Draughton recognize for Year 2?
+  choices:
+  - id: A
+    text: $6,750
+    rationale: Ignores the $25,000 write-off, which used up part of the beginning allowance. The allowance
+      before adjustment was $4,000.
+  - id: B
+    text: $31,750
+    rationale: Correct. $35,750 required − ($29,000 − $25,000) remaining.
+  - id: C
+    text: $46,750
+    rationale: Writes off the bond's whole $40,000 amortized cost. Draughton received $15,000, so only
+      $25,000 was written off against the allowance.
+  - id: D
+    text: $58,000
+    rationale: Records the $58,000 by which fair value is below amortized cost. Held-to-maturity securities
+      are carried at amortized cost less an allowance for expected credit losses; declines in fair value
+      from changes in interest rates aren't credit losses.
+  answer: B
+  explanation: 'The allowance at December 31 must equal expected credit losses over the bonds'' lives:
+    1.3% × $2,750,000 = $35,750. The write-off is the part of the defaulted bond not collected: $40,000
+    − $15,000 = $25,000, charged against the allowance, which leaves $29,000 − $25,000 = $4,000. Credit
+    loss expense = $35,750 − $4,000 = $31,750. The decline in fair value caused by rising interest rates
+    doesn''t affect held-to-maturity securities carried at amortized cost.'

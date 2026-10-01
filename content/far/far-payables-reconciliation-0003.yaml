@@ -1,0 +1,151 @@
+id: far-payables-reconciliation-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 405-10 (liabilities)
+  - ASC 210-10-45 (debit balances in payables reported as assets)
+  - 'ASC 310-10 (cash discounts: net method)'
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Swinden Co.''s accounts payable subledger totals $516,500, and its general ledger
+  control account shows $508,900. Swinden records purchases net of available cash discounts. The controller''s
+  review finds: several vendor accounts have debit balances, totaling $12,400, from duplicate payments
+  that the vendors have agreed to refund, and both totals are net of them; checks totaling $17,300, recorded
+  as payments on December 31 in both records, were kept in the treasurer''s office and not mailed to the
+  vendors until January 12; an invoice for $185,000 with terms 2/10, n/30, received on December 27, was
+  posted to the vendor''s subledger account at its gross amount, while the general ledger recorded it
+  correctly; and a $3,900 debit memo for goods returned to a vendor on December 29 was recorded in the
+  general ledger but not in the subledger. What amount should Swinden report as accounts payable at December
+  31?'
+choices:
+- id: A
+  text: $516,500
+  rationale: Uses the subledger as recorded. It nets the debit balances, treats the held checks as paid,
+    carries the invoice at gross and lacks the $3,900 debit memo.
+- id: B
+  text: $521,300
+  rationale: Treats the $17,300 of checks held in the office as paid. A check not delivered to the vendor
+    by year-end hasn't settled the payable.
+- id: C
+  text: $526,200
+  rationale: Leaves the vendor accounts with $12,400 of debit balances netted against payables. Amounts
+    vendors owe Swinden are receivables, so accounts payable is the total of the credit balances.
+- id: D
+  text: $538,600
+  rationale: Correct. Ledger $508,900 + $12,400 + $17,300 = subledger $516,500 + $12,400 + $17,300 − $3,700
+    − $3,900.
+answer: D
+explanation: 'Accounts payable is the total of the amounts Swinden owes. Debit balances in vendor accounts
+  are receivables, so the $12,400 netted in both records is added back. Checks still held at year-end
+  haven''t paid anything, so the $17,300 is restored to both records. In the subledger, the invoice is
+  reduced to its net amount (− $3,700) and the debit memo is posted (− $3,900). General ledger: $508,900
+  + $12,400 + $17,300 = $538,600. Subledger: $516,500 + $12,400 + $17,300 − $3,700 − $3,900 = $538,600.
+  The records agree at $538,600.'
+variants:
+- stem: 'At December 31, Threshfield Co.''s accounts payable subledger totals $700,600, and its general
+    ledger control account shows $690,100. Threshfield records purchases net of available cash discounts.
+    The controller''s review finds: several vendor accounts have debit balances, totaling $11,200, from
+    duplicate payments that the vendors have agreed to refund, and both totals are net of them; checks
+    totaling $23,600, recorded as payments on December 31 in both records, were kept in the treasurer''s
+    office and not mailed to the vendors until January 12; an invoice for $260,000 with terms 2/10, n/30,
+    received on December 27, was posted to the vendor''s subledger account at its gross amount, while
+    the general ledger recorded it correctly; and a $5,300 debit memo for goods returned to a vendor on
+    December 29 was recorded in the general ledger but not in the subledger. What amount should Threshfield
+    report as accounts payable at December 31?'
+  choices:
+  - id: A
+    text: $690,100
+    rationale: Uses the general ledger as recorded. It nets the $11,200 of debit balances against payables
+      and treats the $23,600 of held checks as paid.
+  - id: B
+    text: $701,300
+    rationale: Treats the $23,600 of checks held in the office as paid. A check not delivered to the vendor
+      by year-end hasn't settled the payable.
+  - id: C
+    text: $724,900
+    rationale: Correct. Ledger $690,100 + $11,200 + $23,600 = subledger $700,600 + $11,200 + $23,600 −
+      $5,200 − $5,300.
+  - id: D
+    text: $730,100
+    rationale: Reports the $260,000 invoice at its gross amount. Threshfield records purchases net of
+      available discounts, so the invoice is a $254,800 payable.
+  answer: C
+  explanation: 'Accounts payable is the total of the amounts Threshfield owes. Debit balances in vendor
+    accounts are receivables, so the $11,200 netted in both records is added back. Checks still held at
+    year-end haven''t paid anything, so the $23,600 is restored to both records. In the subledger, the
+    invoice is reduced to its net amount (− $5,200) and the debit memo is posted (− $5,300). General ledger:
+    $690,100 + $11,200 + $23,600 = $724,900. Subledger: $700,600 + $11,200 + $23,600 − $5,200 − $5,300
+    = $724,900. The records agree at $724,900.'
+- stem: 'At December 31, Wigglesworth Co.''s accounts payable subledger totals $378,300, and its general
+    ledger control account shows $372,800. Wigglesworth records purchases net of available cash discounts.
+    The controller''s review finds: several vendor accounts have debit balances, totaling $6,100, from
+    duplicate payments that the vendors have agreed to refund, and both totals are net of them; checks
+    totaling $12,800, recorded as payments on December 31 in both records, were kept in the treasurer''s
+    office and not mailed to the vendors until January 12; an invoice for $140,000 with terms 2/10, n/30,
+    received on December 27, was posted to the vendor''s subledger account at its gross amount, while
+    the general ledger recorded it correctly; and a $2,700 debit memo for goods returned to a vendor on
+    December 29 was recorded in the general ledger but not in the subledger. What amount should Wigglesworth
+    report as accounts payable at December 31?'
+  choices:
+  - id: A
+    text: $378,900
+    rationale: Treats the $12,800 of checks held in the office as paid. A check not delivered to the vendor
+      by year-end hasn't settled the payable.
+  - id: B
+    text: $385,600
+    rationale: Leaves the vendor accounts with $6,100 of debit balances netted against payables. Amounts
+      vendors owe Wigglesworth are receivables, so accounts payable is the total of the credit balances.
+  - id: C
+    text: $391,700
+    rationale: Correct. Ledger $372,800 + $6,100 + $12,800 = subledger $378,300 + $6,100 + $12,800 − $2,800
+      − $2,700.
+  - id: D
+    text: $394,500
+    rationale: Reports the $140,000 invoice at its gross amount. Wigglesworth records purchases net of
+      available discounts, so the invoice is a $137,200 payable.
+  answer: C
+  explanation: 'Accounts payable is the total of the amounts Wigglesworth owes. Debit balances in vendor
+    accounts are receivables, so the $6,100 netted in both records is added back. Checks still held at
+    year-end haven''t paid anything, so the $12,800 is restored to both records. In the subledger, the
+    invoice is reduced to its net amount (− $2,800) and the debit memo is posted (− $2,700). General ledger:
+    $372,800 + $6,100 + $12,800 = $391,700. Subledger: $378,300 + $6,100 + $12,800 − $2,800 − $2,700 =
+    $391,700. The records agree at $391,700.'
+- stem: 'At December 31, Cononley Co.''s accounts payable subledger totals $932,800, and its general ledger
+    control account shows $919,400. Cononley records purchases net of available cash discounts. The controller''s
+    review finds: several vendor accounts have debit balances, totaling $14,700, from duplicate payments
+    that the vendors have agreed to refund, and both totals are net of them; checks totaling $31,200,
+    recorded as payments on December 31 in both records, were kept in the treasurer''s office and not
+    mailed to the vendors until January 12; an invoice for $330,000 with terms 2/10, n/30, received on
+    December 27, was posted to the vendor''s subledger account at its gross amount, while the general
+    ledger recorded it correctly; and a $6,800 debit memo for goods returned to a vendor on December 29
+    was recorded in the general ledger but not in the subledger. What amount should Cononley report as
+    accounts payable at December 31?'
+  choices:
+  - id: A
+    text: $919,400
+    rationale: Uses the general ledger as recorded. It nets the $14,700 of debit balances against payables
+      and treats the $31,200 of held checks as paid.
+  - id: B
+    text: $950,600
+    rationale: Leaves the vendor accounts with $14,700 of debit balances netted against payables. Amounts
+      vendors owe Cononley are receivables, so accounts payable is the total of the credit balances.
+  - id: C
+    text: $965,300
+    rationale: Correct. Ledger $919,400 + $14,700 + $31,200 = subledger $932,800 + $14,700 + $31,200 −
+      $6,600 − $6,800.
+  - id: D
+    text: $971,900
+    rationale: Reports the $330,000 invoice at its gross amount. Cononley records purchases net of available
+      discounts, so the invoice is a $323,400 payable.
+  answer: C
+  explanation: 'Accounts payable is the total of the amounts Cononley owes. Debit balances in vendor accounts
+    are receivables, so the $14,700 netted in both records is added back. Checks still held at year-end
+    haven''t paid anything, so the $31,200 is restored to both records. In the subledger, the invoice
+    is reduced to its net amount (− $6,600) and the debit memo is posted (− $6,800). General ledger: $919,400
+    + $14,700 + $31,200 = $965,300. Subledger: $932,800 + $14,700 + $31,200 − $6,600 − $6,800 = $965,300.
+    The records agree at $965,300.'

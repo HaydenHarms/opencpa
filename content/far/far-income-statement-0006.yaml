@@ -1,0 +1,149 @@
+id: far-income-statement-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 606-10-25 (transfer of control; contract liabilities)
+  - ASC 330-10 (inventory; goods in transit)
+  - 'ASC 321-10-35 (equity securities: fair value changes in net income)'
+  - ASC 340-10 (prepaid expenses)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Thoralby Co.''s draft Year 2 income statement reports income before income taxes of $651,000, built
+  up as follows: sales $3,840,000; cost of goods sold ($2,310,000); operating expenses ($905,000); and
+  other income of $26,000, the increase in fair value of equity securities with readily determinable fair
+  values that Thoralby held all year. Thoralby uses a periodic inventory system. Supporting documents
+  show: sales include $82,000 received on December 15 from a customer as a deposit on machines from Thoralby''s
+  standard catalog that it will deliver in March, Year 3; the December 31 physical count, used to compute
+  cost of goods sold, left out goods costing $52,000 that a supplier shipped FOB shipping point on December
+  28 and Thoralby received on January 3, although their purchase was recorded in December; and operating
+  expenses include the $48,000 premium Thoralby paid on October 1, Year 2, for a one-year insurance policy
+  beginning that day. What should Thoralby''s corrected income before income taxes be?'
+choices:
+- id: A
+  text: $605,000
+  rationale: Leaves ending inventory without the $52,000 of goods in transit. Shipped FOB shipping point
+    on December 28, they were Thoralby's at year-end, and their purchase is already recorded, so the count
+    understated inventory and overstated cost of goods sold.
+- id: B
+  text: $621,000
+  rationale: Leaves the whole $48,000 premium in operating expenses. Only October through December has
+    expired; the other nine months ($36,000) are a prepaid asset.
+- id: C
+  text: $631,000
+  rationale: Removes the $26,000 fair value gain on the equity securities. Changes in the fair value of
+    equity securities with readily determinable fair values are reported in net income.
+- id: D
+  text: $657,000
+  rationale: Correct. $651,000 − $82,000 + $52,000 + $36,000.
+answer: D
+explanation: 'The deposit is a contract liability until Thoralby delivers the machines in Year 3: − $82,000.
+  Goods shipped FOB shipping point belong to the buyer from shipment; the purchase is recorded, so adding
+  them to ending inventory lowers cost of goods sold: + $52,000. Nine months of the insurance premium
+  are prepaid at December 31: $48,000 × 9/12 = + $36,000. The fair value gain on equity securities is
+  correctly in net income. $651,000 − $82,000 + $52,000 + $36,000 = $657,000.'
+variants:
+- stem: 'Arncliffe Co.''s draft Year 2 income statement reports income before income taxes of $499,000,
+    built up as follows: sales $2,960,000; cost of goods sold ($1,785,000); operating expenses ($694,000);
+    and other income of $18,000, the increase in fair value of equity securities with readily determinable
+    fair values that Arncliffe held all year. Arncliffe uses a periodic inventory system. Supporting documents
+    show: sales include $55,000 received on December 15 from a customer as a deposit on machines from
+    Arncliffe''s standard catalog that it will deliver in March, Year 3; the December 31 physical count,
+    used to compute cost of goods sold, left out goods costing $29,000 that a supplier shipped FOB shipping
+    point on December 28 and Arncliffe received on January 3, although their purchase was recorded in
+    December; and operating expenses include the $36,000 premium Arncliffe paid on October 1, Year 2,
+    for a one-year insurance policy beginning that day. What should Arncliffe''s corrected income before
+    income taxes be?'
+  choices:
+  - id: A
+    text: $482,000
+    rationale: Removes the $18,000 fair value gain on the equity securities. Changes in the fair value
+      of equity securities with readily determinable fair values are reported in net income.
+  - id: B
+    text: $500,000
+    rationale: Correct. $499,000 − $55,000 + $29,000 + $27,000.
+  - id: C
+    text: $509,000
+    rationale: Removes the whole $36,000 premium from expenses. The three months from October through
+      December ($9,000) have expired and are Year 2 expense.
+  - id: D
+    text: $555,000
+    rationale: Leaves the $55,000 deposit in sales. Revenue is recognized when control of the goods passes,
+      in March, Year 3; until then the deposit is a contract liability.
+  answer: B
+  explanation: 'The deposit is a contract liability until Arncliffe delivers the machines in Year 3: −
+    $55,000. Goods shipped FOB shipping point belong to the buyer from shipment; the purchase is recorded,
+    so adding them to ending inventory lowers cost of goods sold: + $29,000. Nine months of the insurance
+    premium are prepaid at December 31: $36,000 × 9/12 = + $27,000. The fair value gain on equity securities
+    is correctly in net income. $499,000 − $55,000 + $29,000 + $27,000 = $500,000.'
+- stem: 'Burnsall Co.''s draft Year 2 income statement reports income before income taxes of $854,000,
+    built up as follows: sales $5,120,000; cost of goods sold ($3,090,000); operating expenses ($1,210,000);
+    and other income of $34,000, the increase in fair value of equity securities with readily determinable
+    fair values that Burnsall held all year. Burnsall uses a periodic inventory system. Supporting documents
+    show: sales include $96,000 received on December 15 from a customer as a deposit on machines from
+    Burnsall''s standard catalog that it will deliver in March, Year 3; the December 31 physical count,
+    used to compute cost of goods sold, left out goods costing $51,000 that a supplier shipped FOB shipping
+    point on December 28 and Burnsall received on January 3, although their purchase was recorded in December;
+    and operating expenses include the $64,000 premium Burnsall paid on October 1, Year 2, for a one-year
+    insurance policy beginning that day. What should Burnsall''s corrected income before income taxes
+    be?'
+  choices:
+  - id: A
+    text: $806,000
+    rationale: Leaves ending inventory without the $51,000 of goods in transit. Shipped FOB shipping point
+      on December 28, they were Burnsall's at year-end, and their purchase is already recorded, so the
+      count understated inventory and overstated cost of goods sold.
+  - id: B
+    text: $809,000
+    rationale: Leaves the whole $64,000 premium in operating expenses. Only October through December has
+      expired; the other nine months ($48,000) are a prepaid asset.
+  - id: C
+    text: $857,000
+    rationale: Correct. $854,000 − $96,000 + $51,000 + $48,000.
+  - id: D
+    text: $953,000
+    rationale: Leaves the $96,000 deposit in sales. Revenue is recognized when control of the goods passes,
+      in March, Year 3; until then the deposit is a contract liability.
+  answer: C
+  explanation: 'The deposit is a contract liability until Burnsall delivers the machines in Year 3: −
+    $96,000. Goods shipped FOB shipping point belong to the buyer from shipment; the purchase is recorded,
+    so adding them to ending inventory lowers cost of goods sold: + $51,000. Nine months of the insurance
+    premium are prepaid at December 31: $64,000 × 9/12 = + $48,000. The fair value gain on equity securities
+    is correctly in net income. $854,000 − $96,000 + $51,000 + $48,000 = $857,000.'
+- stem: 'Conistone Co.''s draft Year 2 income statement reports income before income taxes of $378,000,
+    built up as follows: sales $2,215,000; cost of goods sold ($1,330,000); operating expenses ($521,000);
+    and other income of $14,000, the increase in fair value of equity securities with readily determinable
+    fair values that Conistone held all year. Conistone uses a periodic inventory system. Supporting documents
+    show: sales include $42,000 received on December 15 from a customer as a deposit on machines from
+    Conistone''s standard catalog that it will deliver in March, Year 3; the December 31 physical count,
+    used to compute cost of goods sold, left out goods costing $22,000 that a supplier shipped FOB shipping
+    point on December 28 and Conistone received on January 3, although their purchase was recorded in
+    December; and operating expenses include the $28,800 premium Conistone paid on October 1, Year 2,
+    for a one-year insurance policy beginning that day. What should Conistone''s corrected income before
+    income taxes be?'
+  choices:
+  - id: A
+    text: $358,000
+    rationale: Leaves the whole $28,800 premium in operating expenses. Only October through December has
+      expired; the other nine months ($21,600) are a prepaid asset.
+  - id: B
+    text: $379,600
+    rationale: Correct. $378,000 − $42,000 + $22,000 + $21,600.
+  - id: C
+    text: $386,800
+    rationale: Removes the whole $28,800 premium from expenses. The three months from October through
+      December ($7,200) have expired and are Year 2 expense.
+  - id: D
+    text: $421,600
+    rationale: Leaves the $42,000 deposit in sales. Revenue is recognized when control of the goods passes,
+      in March, Year 3; until then the deposit is a contract liability.
+  answer: B
+  explanation: 'The deposit is a contract liability until Conistone delivers the machines in Year 3: −
+    $42,000. Goods shipped FOB shipping point belong to the buyer from shipment; the purchase is recorded,
+    so adding them to ending inventory lowers cost of goods sold: + $22,000. Nine months of the insurance
+    premium are prepaid at December 31: $28,800 × 9/12 = + $21,600. The fair value gain on equity securities
+    is correctly in net income. $378,000 − $42,000 + $22,000 + $21,600 = $379,600.'

@@ -1,0 +1,160 @@
+id: far-ppe-reconciliation-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 360-10 (depreciation; derecognition; fully depreciated assets)
+  - ASC 250-10-45-17 (change in accounting estimate applied prospectively)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: At December 31, Year 3, Eshton Co.'s fixed-asset subledger shows accumulated depreciation of $2,514,000,
+  and the general ledger shows $2,446,000. The controller's investigation finds three differences. A machine
+  sold for cash on November 30, with accumulated depreciation of $164,000 at that date, was removed from
+  the general ledger but is still in the subledger. The general ledger recorded $42,000 of Year 3 depreciation
+  on a stamping press that was fully depreciated at the end of Year 2 and is still in use, while the subledger
+  recorded none. Delivery trucks bought on January 1, Year 1, for $360,000 were depreciated straight-line
+  over five years with no residual value until January 1, Year 3, when management concluded that their
+  total useful life would be four years, still with no residual value; the subledger kept depreciating
+  them over five years, while the general ledger first recorded an adjustment to bring their accumulated
+  depreciation to what a four-year life would have produced and then recorded a year's depreciation over
+  four years. What accumulated depreciation should Eshton report at December 31, Year 3?
+choices:
+- id: A
+  text: $2,350,000
+  rationale: 'Depreciates the trucks over the original five-year life ($72,000). After the revision, the
+    $216,000 carrying amount is depreciated over the two remaining years: $108,000 a year.'
+- id: B
+  text: $2,386,000
+  rationale: Correct. Ledger $2,446,000 − $42,000 − $18,000 = subledger $2,514,000 − $164,000 + $36,000.
+- id: C
+  text: $2,404,000
+  rationale: 'Accepts the general ledger''s catch-up adjustment on the trucks. A change in useful life
+    is a change in estimate, applied prospectively: the remaining carrying amount is spread over the remaining
+    life, with no catch-up.'
+- id: D
+  text: $2,428,000
+  rationale: Keeps the $42,000 of depreciation on the fully depreciated press. An asset's accumulated
+    depreciation can't exceed its depreciable cost, so no further depreciation is recorded while it stays
+    in use.
+answer: B
+explanation: 'The machine sold leaves the subledger: − $164,000. The press was fully depreciated, so the
+  general ledger''s $42,000 is reversed. The trucks'' new life is a change in estimate, applied prospectively:
+  at January 1, Year 3, their carrying amount was $360,000 − 2 × $72,000 = $216,000, depreciated over
+  the two remaining years at $108,000 a year. The subledger recorded $72,000 ($36,000 too little); the
+  general ledger recorded a catch-up of $36,000 plus $90,000, $126,000 in all ($18,000 too much). Subledger:
+  $2,514,000 − $164,000 + $36,000 = $2,386,000. General ledger: $2,446,000 − $42,000 − $18,000 = $2,386,000.'
+variants:
+- stem: At December 31, Year 3, Gordale Co.'s fixed-asset subledger shows accumulated depreciation of
+    $1,842,000, and the general ledger shows $1,791,000. The controller's investigation finds three differences.
+    A machine sold for cash on November 30, with accumulated depreciation of $118,000 at that date, was
+    removed from the general ledger but is still in the subledger. The general ledger recorded $31,000
+    of Year 3 depreciation on a stamping press that was fully depreciated at the end of Year 2 and is
+    still in use, while the subledger recorded none. Delivery trucks bought on January 1, Year 1, for
+    $240,000 were depreciated straight-line over five years with no residual value until January 1, Year
+    3, when management concluded that their total useful life would be four years, still with no residual
+    value; the subledger kept depreciating them over five years, while the general ledger first recorded
+    an adjustment to bring their accumulated depreciation to what a four-year life would have produced
+    and then recorded a year's depreciation over four years. What accumulated depreciation should Gordale
+    report at December 31, Year 3?
+  choices:
+  - id: A
+    text: $1,630,000
+    rationale: Also subtracts the sold machine's $118,000 from the general ledger, which already removed
+      it.
+  - id: B
+    text: $1,724,000
+    rationale: 'Depreciates the trucks over the original five-year life ($48,000). After the revision,
+      the $144,000 carrying amount is depreciated over the two remaining years: $72,000 a year.'
+  - id: C
+    text: $1,748,000
+    rationale: Correct. Ledger $1,791,000 − $31,000 − $12,000 = subledger $1,842,000 − $118,000 + $24,000.
+  - id: D
+    text: $1,791,000
+    rationale: Uses the general ledger as recorded. It includes $31,000 of depreciation on a press that
+      was already fully depreciated, and a catch-up adjustment on the trucks.
+  answer: C
+  explanation: 'The machine sold leaves the subledger: − $118,000. The press was fully depreciated, so
+    the general ledger''s $31,000 is reversed. The trucks'' new life is a change in estimate, applied
+    prospectively: at January 1, Year 3, their carrying amount was $240,000 − 2 × $48,000 = $144,000,
+    depreciated over the two remaining years at $72,000 a year. The subledger recorded $48,000 ($24,000
+    too little); the general ledger recorded a catch-up of $24,000 plus $60,000, $84,000 in all ($12,000
+    too much). Subledger: $1,842,000 − $118,000 + $24,000 = $1,748,000. General ledger: $1,791,000 − $31,000
+    − $12,000 = $1,748,000.'
+- stem: At December 31, Year 3, Hanlith Co.'s fixed-asset subledger shows accumulated depreciation of
+    $3,288,000, and the general ledger shows $3,204,000. The controller's investigation finds three differences.
+    A machine sold for cash on November 30, with accumulated depreciation of $212,000 at that date, was
+    removed from the general ledger but is still in the subledger. The general ledger recorded $56,000
+    of Year 3 depreciation on a stamping press that was fully depreciated at the end of Year 2 and is
+    still in use, while the subledger recorded none. Delivery trucks bought on January 1, Year 1, for
+    $480,000 were depreciated straight-line over five years with no residual value until January 1, Year
+    3, when management concluded that their total useful life would be four years, still with no residual
+    value; the subledger kept depreciating them over five years, while the general ledger first recorded
+    an adjustment to bring their accumulated depreciation to what a four-year life would have produced
+    and then recorded a year's depreciation over four years. What accumulated depreciation should Hanlith
+    report at December 31, Year 3?
+  choices:
+  - id: A
+    text: $3,076,000
+    rationale: 'Depreciates the trucks over the original five-year life ($96,000). After the revision,
+      the $288,000 carrying amount is depreciated over the two remaining years: $144,000 a year.'
+  - id: B
+    text: $3,124,000
+    rationale: Correct. Ledger $3,204,000 − $56,000 − $24,000 = subledger $3,288,000 − $212,000 + $48,000.
+  - id: C
+    text: $3,180,000
+    rationale: Keeps the $56,000 of depreciation on the fully depreciated press. An asset's accumulated
+      depreciation can't exceed its depreciable cost, so no further depreciation is recorded while it
+      stays in use.
+  - id: D
+    text: $3,288,000
+    rationale: Uses the subledger as recorded. It still includes the $212,000 for the machine sold, and
+      its trucks are depreciated over the old five-year life.
+  answer: B
+  explanation: 'The machine sold leaves the subledger: − $212,000. The press was fully depreciated, so
+    the general ledger''s $56,000 is reversed. The trucks'' new life is a change in estimate, applied
+    prospectively: at January 1, Year 3, their carrying amount was $480,000 − 2 × $96,000 = $288,000,
+    depreciated over the two remaining years at $144,000 a year. The subledger recorded $96,000 ($48,000
+    too little); the general ledger recorded a catch-up of $48,000 plus $120,000, $168,000 in all ($24,000
+    too much). Subledger: $3,288,000 − $212,000 + $48,000 = $3,124,000. General ledger: $3,204,000 − $56,000
+    − $24,000 = $3,124,000.'
+- stem: At December 31, Year 3, Scosthrop Co.'s fixed-asset subledger shows accumulated depreciation of
+    $1,359,000, and the general ledger shows $1,323,000. The controller's investigation finds three differences.
+    A machine sold for cash on November 30, with accumulated depreciation of $86,000 at that date, was
+    removed from the general ledger but is still in the subledger. The general ledger recorded $23,000
+    of Year 3 depreciation on a stamping press that was fully depreciated at the end of Year 2 and is
+    still in use, while the subledger recorded none. Delivery trucks bought on January 1, Year 1, for
+    $180,000 were depreciated straight-line over five years with no residual value until January 1, Year
+    3, when management concluded that their total useful life would be four years, still with no residual
+    value; the subledger kept depreciating them over five years, while the general ledger first recorded
+    an adjustment to bring their accumulated depreciation to what a four-year life would have produced
+    and then recorded a year's depreciation over four years. What accumulated depreciation should Scosthrop
+    report at December 31, Year 3?
+  choices:
+  - id: A
+    text: $1,205,000
+    rationale: Also subtracts the sold machine's $86,000 from the general ledger, which already removed
+      it.
+  - id: B
+    text: $1,291,000
+    rationale: Correct. Ledger $1,323,000 − $23,000 − $9,000 = subledger $1,359,000 − $86,000 + $18,000.
+  - id: C
+    text: $1,300,000
+    rationale: 'Accepts the general ledger''s catch-up adjustment on the trucks. A change in useful life
+      is a change in estimate, applied prospectively: the remaining carrying amount is spread over the
+      remaining life, with no catch-up.'
+  - id: D
+    text: $1,323,000
+    rationale: Uses the general ledger as recorded. It includes $23,000 of depreciation on a press that
+      was already fully depreciated, and a catch-up adjustment on the trucks.
+  answer: B
+  explanation: 'The machine sold leaves the subledger: − $86,000. The press was fully depreciated, so
+    the general ledger''s $23,000 is reversed. The trucks'' new life is a change in estimate, applied
+    prospectively: at January 1, Year 3, their carrying amount was $180,000 − 2 × $36,000 = $108,000,
+    depreciated over the two remaining years at $54,000 a year. The subledger recorded $36,000 ($18,000
+    too little); the general ledger recorded a catch-up of $18,000 plus $45,000, $63,000 in all ($9,000
+    too much). Subledger: $1,359,000 − $86,000 + $18,000 = $1,291,000. General ledger: $1,323,000 − $23,000
+    − $9,000 = $1,291,000.'

@@ -1,0 +1,43 @@
+id: far-governmental-measurement-focus-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Measurement focus and basis of accounting
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'GASB Statement No. 34 (governmental funds: current financial resources measurement focus and modified
+    accrual basis; capital assets reported only in the government-wide statements)'
+  - GASB Codification 1600 (basis of accounting)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Rosedale County's general fund pays cash for a new fire engine with a ten-year useful life. Given
+  the measurement focus and basis of accounting used for the general fund, how is the purchase reported
+  in the county's governmental funds financial statements?
+choices:
+- id: A
+  text: As a capital asset in the general fund, depreciated over ten years
+  rationale: That is how the government-wide statements report it, using the economic resources measurement
+    focus and the accrual basis. The general fund doesn't report capital assets or depreciation.
+- id: B
+  text: As a capital asset in the general fund, with no depreciation recorded
+  rationale: The general fund reports only current financial resources, so it doesn't carry the fire engine
+    as an asset, depreciated or not.
+- id: C
+  text: As an expenditure for the full cost in the year of purchase
+  rationale: Correct. Governmental funds use the current financial resources measurement focus and the
+    modified accrual basis, so buying a capital asset is an expenditure (capital outlay) when the liability
+    is incurred; the asset isn't recorded in the fund.
+- id: D
+  text: As a deferred outflow of resources, amortized over the engine's ten-year life
+  rationale: A deferred outflow is a consumption of net assets that applies to a future period in specific
+    situations GASB defines; buying a capital asset is not one of them, and governmental funds don't amortize
+    capital costs.
+answer: C
+explanation: Governmental funds, including the general fund, report using the current financial resources
+  measurement focus and the modified accrual basis of accounting. They report what has happened to spendable
+  resources, so a capital asset purchase is recognized as an expenditure, typically capital outlay, for
+  its full cost when the liability is incurred, and no asset or depreciation appears in the fund. The
+  government-wide statements, which use the economic resources measurement focus and the accrual basis,
+  report the fire engine as a capital asset and depreciate it.

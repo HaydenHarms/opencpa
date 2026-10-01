@@ -1,0 +1,146 @@
+id: far-cash-unreconciled-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice (unrecorded outstanding checks; errors in recording disbursements; bank
+    collections and charges)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Austwick Co.''s bookkeeper could not reconcile the March 31 bank statement. The bank balance of
+  $86,420, plus deposits in transit of $7,350 and less outstanding checks of $12,680, gave $81,090; the
+  general ledger balance of $73,380, less an $840 customer check the bank returned for insufficient funds,
+  plus the bank''s collection of a $6,000 note receivable with $180 of interest, less the bank''s $35
+  collection fee, gave $78,685. The controller investigates the $2,405 difference and finds: check no.
+  7214, for $4,385, issued and recorded on March 29, is missing from the list of outstanding checks and
+  has not cleared the bank; check no. 7190, to a supplier, cleared the bank for $5,630, the amount written
+  on it, but was recorded in the cash disbursements journal as $3,650; and a $3,215 deposit made on February
+  28 was credited by the bank on March 2. What cash balance should Austwick report at March 31?'
+choices:
+- id: A
+  text: $76,705
+  rationale: Correct. Bank $86,420 + $7,350 − ($12,680 + $4,385) = book $73,380 − $840 + $6,000 + $180
+    − $35 − $1,980.
+- id: B
+  text: $78,685
+  rationale: Uses the bookkeeper's adjusted book balance. Check no. 7190 was paid at $5,630 but recorded
+    at $3,650, so the books overstate cash by $1,980.
+- id: C
+  text: $81,090
+  rationale: Uses the bookkeeper's adjusted bank balance. Check no. 7214 for $4,385 was issued and recorded
+    but hasn't cleared, so it is outstanding.
+- id: D
+  text: $85,475
+  rationale: Adds check no. 7214 to the adjusted bank balance. An outstanding check is deducted from the
+    bank balance, because the bank hasn't yet paid it.
+answer: A
+explanation: 'Bank side: the omitted check is outstanding, so the correct balance is $86,420 + $7,350
+  − $12,680 − $4,385 = $76,705. Book side: the check recorded at $3,650 was paid at $5,630, so the books
+  need a further $1,980 deduction: $78,685 − $1,980 = $76,705. The February 28 deposit was in transit
+  last month and is already in the March bank balance, so it is not a reconciling item. The $2,405 difference
+  was $4,385 − $1,980, and both sides now agree at $76,705.'
+variants:
+- stem: 'Clapham Co.''s bookkeeper could not reconcile the March 31 bank statement. The bank balance of
+    $64,180, plus deposits in transit of $5,240 and less outstanding checks of $9,875, gave $59,545; the
+    general ledger balance of $53,660, less a $615 customer check the bank returned for insufficient funds,
+    plus the bank''s collection of a $4,500 note receivable with $135 of interest, less the bank''s $25
+    collection fee, gave $57,655. The controller investigates the $1,890 difference and finds: check no.
+    5532, for $4,860, issued and recorded on March 29, is missing from the list of outstanding checks
+    and has not cleared the bank; check no. 5507, to a supplier, cleared the bank for $8,150, the amount
+    written on it, but was recorded in the cash disbursements journal as $5,180; and a $2,460 deposit
+    made on February 28 was credited by the bank on March 2. What cash balance should Clapham report at
+    March 31?'
+  choices:
+  - id: A
+    text: $52,225
+    rationale: Deducts the $2,460 February deposit that the bank credited on March 2. It was in transit
+      at February 28 and is already in the March bank balance; it isn't a reconciling item at March 31.
+  - id: B
+    text: $54,685
+    rationale: Correct. Bank $64,180 + $5,240 − ($9,875 + $4,860) = book $53,660 − $615 + $4,500 + $135
+      − $25 − $2,970.
+  - id: C
+    text: $57,655
+    rationale: Uses the bookkeeper's adjusted book balance. Check no. 5507 was paid at $8,150 but recorded
+      at $5,180, so the books overstate cash by $2,970.
+  - id: D
+    text: $59,545
+    rationale: Uses the bookkeeper's adjusted bank balance. Check no. 5532 for $4,860 was issued and recorded
+      but hasn't cleared, so it is outstanding.
+  answer: B
+  explanation: 'Bank side: the omitted check is outstanding, so the correct balance is $64,180 + $5,240
+    − $9,875 − $4,860 = $54,685. Book side: the check recorded at $5,180 was paid at $8,150, so the books
+    need a further $2,970 deduction: $57,655 − $2,970 = $54,685. The February 28 deposit was in transit
+    last month and is already in the March bank balance, so it is not a reconciling item. The $1,890 difference
+    was $4,860 − $2,970, and both sides now agree at $54,685.'
+- stem: 'Feizor Co.''s bookkeeper could not reconcile the March 31 bank statement. The bank balance of
+    $112,650, plus deposits in transit of $9,820 and less outstanding checks of $16,340, gave $106,130;
+    the general ledger balance of $95,910, less a $1,125 customer check the bank returned for insufficient
+    funds, plus the bank''s collection of an $8,000 note receivable with $240 of interest, less the bank''s
+    $40 collection fee, gave $102,985. The controller investigates the $3,145 difference and finds: check
+    no. 9047, for $5,125, issued and recorded on March 29, is missing from the list of outstanding checks
+    and has not cleared the bank; check no. 9011, to a supplier, cleared the bank for $9,270, the amount
+    written on it, but was recorded in the cash disbursements journal as $7,290; and a $4,370 deposit
+    made on February 28 was credited by the bank on March 2. What cash balance should Feizor report at
+    March 31?'
+  choices:
+  - id: A
+    text: $96,635
+    rationale: Deducts the $4,370 February deposit that the bank credited on March 2. It was in transit
+      at February 28 and is already in the March bank balance; it isn't a reconciling item at March 31.
+  - id: B
+    text: $101,005
+    rationale: Correct. Bank $112,650 + $9,820 − ($16,340 + $5,125) = book $95,910 − $1,125 + $8,000 +
+      $240 − $40 − $1,980.
+  - id: C
+    text: $104,965
+    rationale: Adds the $1,980 difference on check no. 9011 to the book balance. The check was recorded
+      for less than it paid out, so the correction lowers cash.
+  - id: D
+    text: $106,130
+    rationale: Uses the bookkeeper's adjusted bank balance. Check no. 9047 for $5,125 was issued and recorded
+      but hasn't cleared, so it is outstanding.
+  answer: B
+  explanation: 'Bank side: the omitted check is outstanding, so the correct balance is $112,650 + $9,820
+    − $16,340 − $5,125 = $101,005. Book side: the check recorded at $7,290 was paid at $9,270, so the
+    books need a further $1,980 deduction: $102,985 − $1,980 = $101,005. The February 28 deposit was in
+    transit last month and is already in the March bank balance, so it is not a reconciling item. The
+    $3,145 difference was $5,125 − $1,980, and both sides now agree at $101,005.'
+- stem: 'Giggleswick Co.''s bookkeeper could not reconcile the March 31 bank statement. The bank balance
+    of $47,390, plus deposits in transit of $4,160 and less outstanding checks of $7,520, gave $44,030;
+    the general ledger balance of $40,235, less a $470 customer check the bank returned for insufficient
+    funds, plus the bank''s collection of a $3,000 note receivable with $90 of interest, less the bank''s
+    $20 collection fee, gave $42,835. The controller investigates the $1,195 difference and finds: check
+    no. 3318, for $3,175, issued and recorded on March 29, is missing from the list of outstanding checks
+    and has not cleared the bank; check no. 3296, to a supplier, cleared the bank for $3,810, the amount
+    written on it, but was recorded in the cash disbursements journal as $1,830; and a $1,940 deposit
+    made on February 28 was credited by the bank on March 2. What cash balance should Giggleswick report
+    at March 31?'
+  choices:
+  - id: A
+    text: $38,915
+    rationale: Deducts the $1,940 February deposit that the bank credited on March 2. It was in transit
+      at February 28 and is already in the March bank balance; it isn't a reconciling item at March 31.
+  - id: B
+    text: $40,855
+    rationale: Correct. Bank $47,390 + $4,160 − ($7,520 + $3,175) = book $40,235 − $470 + $3,000 + $90
+      − $20 − $1,980.
+  - id: C
+    text: $44,815
+    rationale: Adds the $1,980 difference on check no. 3296 to the book balance. The check was recorded
+      for less than it paid out, so the correction lowers cash.
+  - id: D
+    text: $47,205
+    rationale: Adds check no. 3318 to the adjusted bank balance. An outstanding check is deducted from
+      the bank balance, because the bank hasn't yet paid it.
+  answer: B
+  explanation: 'Bank side: the omitted check is outstanding, so the correct balance is $47,390 + $4,160
+    − $7,520 − $3,175 = $40,855. Book side: the check recorded at $1,830 was paid at $3,810, so the books
+    need a further $1,980 deduction: $42,835 − $1,980 = $40,855. The February 28 deposit was in transit
+    last month and is already in the March bank balance, so it is not a reconciling item. The $1,195 difference
+    was $3,175 − $1,980, and both sides now agree at $40,855.'

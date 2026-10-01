@@ -1,0 +1,44 @@
+id: far-comprehensive-income-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of comprehensive income
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 220-10-45 (presentation of comprehensive income: one continuous statement or two consecutive
+    statements; tax effects of OCI components)'
+  - ASC 810-10-45 (attribution of comprehensive income to the parent and the noncontrolling interest)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Hawkhurst Corp., a public company with a 70%-owned subsidiary, has several items of other comprehensive
+  income (OCI) for Year 2. Which statement describes how Hawkhurst reports comprehensive income under
+  U.S. GAAP?
+choices:
+- id: A
+  text: It may report net income and OCI in one continuous statement or in two consecutive statements
+  rationale: 'Correct. U.S. GAAP requires comprehensive income to be reported either in a single continuous
+    statement of comprehensive income or in two separate but consecutive statements: an income statement
+    followed immediately by a statement of OCI.'
+- id: B
+  text: It may report the components of OCI solely in its statement of changes in stockholders' equity
+  rationale: Reporting OCI only in the statement of changes in equity was an option before ASU 2011-05
+    removed it. Comprehensive income must now be reported in a performance statement.
+- id: C
+  text: It reports only the comprehensive income attributable to the parent, leaving out the noncontrolling
+    interest's share
+  rationale: Total comprehensive income includes the noncontrolling interest's share; the amounts attributable
+    to the parent and to the noncontrolling interest are each presented.
+- id: D
+  text: It must report each component of OCI net of tax, with no line for the related income tax effects
+  rationale: Components of OCI may be presented net of tax, or before tax with one amount for the related
+    income tax; either way, the tax on each component is disclosed.
+answer: A
+explanation: 'The statement of comprehensive income reports all changes in equity during a period other
+  than those from investments by and distributions to owners: net income plus other comprehensive income.
+  Under ASC 220-10-45 an entity presents it in one continuous statement (net income, the components of
+  OCI, then total comprehensive income) or in two separate but consecutive statements. A consolidated
+  entity presents total comprehensive income and the amounts attributable to the parent and to the noncontrolling
+  interest. OCI components may be shown net of tax or before tax with a single tax line. The option of
+  reporting OCI only in the statement of changes in equity was removed by ASU 2011-05.'

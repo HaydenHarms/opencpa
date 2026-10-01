@@ -1,0 +1,148 @@
+id: far-inventory-reconciliation-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10-30 (inventory cost, including inbound freight)
+  - ASC 330-10 (ownership of goods held by others)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Winskill Co.''s perpetual inventory subledger totals $1,158,880, and its general
+  ledger inventory account shows $1,175,480. The controller''s investigation finds: a December 18 receiving
+  report for goods costing $14,600 was posted to the subledger twice; goods costing $37,800 that Winskill
+  moved on December 20 to a public warehouse, which stores them for Winskill for a fee, were removed from
+  the subledger as if sold, while the general ledger made no entry; Winskill paid $18,000 of inbound freight
+  on a December 2 purchase of 5,000 units, 1,200 of which were still on hand at December 31, and the general
+  ledger charged all of the freight to inventory, while the subledger recorded none of it and cost of
+  goods sold entries, posted from the subledger''s costs, relieved none of it from the general ledger;
+  and goods costing $24,600 that a customer returned on December 30 were restored to the subledger, but
+  the general ledger entry was not posted. What amount should Winskill report as inventory at December
+  31?'
+choices:
+- id: A
+  text: $1,148,600
+  rationale: Leaves out the $37,800 of goods in the public warehouse. Winskill still owns goods it stores
+    with a third party.
+- id: B
+  text: $1,182,080
+  rationale: Expenses all of the freight. Inbound freight is part of inventory cost, so the $4,320 on
+    units still on hand stays in inventory.
+- id: C
+  text: $1,186,400
+  rationale: Correct. Subledger $1,158,880 − $14,600 + $37,800 + $4,320 = ledger $1,175,480 − $13,680
+    + $24,600.
+- id: D
+  text: $1,200,080
+  rationale: Keeps all $18,000 of freight in inventory. Freight on the 3,800 units sold belongs in cost
+    of goods sold; only $4,320 stays in inventory.
+answer: C
+explanation: 'Freight on the December 2 purchase is part of its cost: $18,000 × 1,200/5,000 = $4,320 belongs
+  to units still on hand and $13,680 to units sold. Subledger: $1,158,880 − $14,600 duplicate posting
+  + $37,800 goods in the public warehouse, which Winskill still owns, + $4,320 freight on hand = $1,186,400.
+  General ledger: $1,175,480 − $13,680 freight on units sold + $24,600 customer return = $1,186,400. The
+  records agree at $1,186,400.'
+variants:
+- stem: 'At December 31, Airton Co.''s perpetual inventory subledger totals $823,800, and its general
+    ledger inventory account shows $832,400. The controller''s investigation finds: a December 18 receiving
+    report for goods costing $10,800 was posted to the subledger twice; goods costing $26,500 that Airton
+    moved on December 20 to a public warehouse, which stores them for Airton for a fee, were removed from
+    the subledger as if sold, while the general ledger made no entry; Airton paid $12,800 of inbound freight
+    on a December 2 purchase of 4,000 units, 1,000 of which were still on hand at December 31, and the
+    general ledger charged all of the freight to inventory, while the subledger recorded none of it and
+    cost of goods sold entries, posted from the subledger''s costs, relieved none of it from the general
+    ledger; and goods costing $19,900 that a customer returned on December 30 were restored to the subledger,
+    but the general ledger entry was not posted. What amount should Airton report as inventory at December
+    31?'
+  choices:
+  - id: A
+    text: $816,200
+    rationale: Leaves out the $26,500 of goods in the public warehouse. Airton still owns goods it stores
+      with a third party.
+  - id: B
+    text: $823,800
+    rationale: Uses the subledger as recorded. It counts the $10,800 receipt twice, leaves out the $26,500
+      of goods in the public warehouse, and omits the $3,200 of freight on units still on hand.
+  - id: C
+    text: $832,400
+    rationale: Uses the general ledger as recorded. It still carries the $9,600 of freight on units already
+      sold and lacks the $19,900 customer return.
+  - id: D
+    text: $842,700
+    rationale: Correct. Subledger $823,800 − $10,800 + $26,500 + $3,200 = ledger $832,400 − $9,600 + $19,900.
+  answer: D
+  explanation: 'Freight on the December 2 purchase is part of its cost: $12,800 × 1,000/4,000 = $3,200
+    belongs to units still on hand and $9,600 to units sold. Subledger: $823,800 − $10,800 duplicate posting
+    + $26,500 goods in the public warehouse, which Airton still owns, + $3,200 freight on hand = $842,700.
+    General ledger: $832,400 − $9,600 freight on units sold + $19,900 customer return = $842,700. The
+    records agree at $842,700.'
+- stem: 'At December 31, Bordley Co.''s perpetual inventory subledger totals $1,537,600, and its general
+    ledger inventory account shows $1,559,700. The controller''s investigation finds: a December 18 receiving
+    report for goods costing $19,500 was posted to the subledger twice; goods costing $48,200 that Bordley
+    moved on December 20 to a public warehouse, which stores them for Bordley for a fee, were removed
+    from the subledger as if sold, while the general ledger made no entry; Bordley paid $25,000 of inbound
+    freight on a December 2 purchase of 10,000 units, 3,200 of which were still on hand at December 31,
+    and the general ledger charged all of the freight to inventory, while the subledger recorded none
+    of it and cost of goods sold entries, posted from the subledger''s costs, relieved none of it from
+    the general ledger; and goods costing $31,600 that a customer returned on December 30 were restored
+    to the subledger, but the general ledger entry was not posted. What amount should Bordley report as
+    inventory at December 31?'
+  choices:
+  - id: A
+    text: $1,559,700
+    rationale: Uses the general ledger as recorded. It still carries the $17,000 of freight on units already
+      sold and lacks the $31,600 customer return.
+  - id: B
+    text: $1,566,300
+    rationale: Expenses all of the freight. Inbound freight is part of inventory cost, so the $8,000 on
+      units still on hand stays in inventory.
+  - id: C
+    text: $1,574,300
+    rationale: Correct. Subledger $1,537,600 − $19,500 + $48,200 + $8,000 = ledger $1,559,700 − $17,000
+      + $31,600.
+  - id: D
+    text: $1,591,300
+    rationale: Keeps all $25,000 of freight in inventory. Freight on the 6,800 units sold belongs in cost
+      of goods sold; only $8,000 stays in inventory.
+  answer: C
+  explanation: 'Freight on the December 2 purchase is part of its cost: $25,000 × 3,200/10,000 = $8,000
+    belongs to units still on hand and $17,000 to units sold. Subledger: $1,537,600 − $19,500 duplicate
+    posting + $48,200 goods in the public warehouse, which Bordley still owns, + $8,000 freight on hand
+    = $1,574,300. General ledger: $1,559,700 − $17,000 freight on units sold + $31,600 customer return
+    = $1,574,300. The records agree at $1,574,300.'
+- stem: 'At December 31, Calton Co.''s perpetual inventory subledger totals $613,820, and its general
+    ledger inventory account shows $619,920. The controller''s investigation finds: a December 18 receiving
+    report for goods costing $8,200 was posted to the subledger twice; goods costing $19,400 that Calton
+    moved on December 20 to a public warehouse, which stores them for Calton for a fee, were removed from
+    the subledger as if sold, while the general ledger made no entry; Calton paid $9,600 of inbound freight
+    on a December 2 purchase of 3,000 units, 900 of which were still on hand at December 31, and the general
+    ledger charged all of the freight to inventory, while the subledger recorded none of it and cost of
+    goods sold entries, posted from the subledger''s costs, relieved none of it from the general ledger;
+    and goods costing $14,700 that a customer returned on December 30 were restored to the subledger,
+    but the general ledger entry was not posted. What amount should Calton report as inventory at December
+    31?'
+  choices:
+  - id: A
+    text: $608,500
+    rationale: Leaves out the $19,400 of goods in the public warehouse. Calton still owns goods it stores
+      with a third party.
+  - id: B
+    text: $613,820
+    rationale: Uses the subledger as recorded. It counts the $8,200 receipt twice, leaves out the $19,400
+      of goods in the public warehouse, and omits the $2,880 of freight on units still on hand.
+  - id: C
+    text: $627,900
+    rationale: Correct. Subledger $613,820 − $8,200 + $19,400 + $2,880 = ledger $619,920 − $6,720 + $14,700.
+  - id: D
+    text: $634,620
+    rationale: Keeps all $9,600 of freight in inventory. Freight on the 2,100 units sold belongs in cost
+      of goods sold; only $2,880 stays in inventory.
+  answer: C
+  explanation: 'Freight on the December 2 purchase is part of its cost: $9,600 × 900/3,000 = $2,880 belongs
+    to units still on hand and $6,720 to units sold. Subledger: $613,820 − $8,200 duplicate posting +
+    $19,400 goods in the public warehouse, which Calton still owns, + $2,880 freight on hand = $627,900.
+    General ledger: $619,920 − $6,720 freight on units sold + $14,700 customer return = $627,900. The
+    records agree at $627,900.'

@@ -1,0 +1,149 @@
+id: far-nfp-cash-flows-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-230-55 (not-for-profit statement of cash flows)
+  - ASC 230-10-45-14 and 45-21A (contributions restricted to long-lived assets; sales of donated financial
+    assets)
+  - ASC 230-10-50 (noncash investing and financing activities)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 1, Pinchbeck Research Institute, a not-for-profit entity, bought laboratory equipment
+  for $420,000 in cash and bought marketable securities for its endowment for $650,000. It sold other
+  investments, with a carrying amount of $230,000, for $275,000. It received $300,000 in cash from a donor
+  who stipulated that the gift be used to buy equipment, and $38,000 of interest and dividends on its
+  endowment investments, which the donors allowed Pinchbeck to spend for any purpose. A donor gave Pinchbeck
+  shares of stock with no restrictions, and under its policy of converting donated securities into cash
+  on receipt, Pinchbeck sold them four days later for $64,000. Another donor gave it land with a fair
+  value of $500,000. What net cash used in investing activities should Pinchbeck report in its Year 1
+  statement of cash flows?
+choices:
+- id: A
+  text: $495,000
+  rationale: Reports the $300,000 gift restricted to buying equipment as an investing inflow. Cash contributions
+    restricted to acquiring long-lived assets are financing inflows.
+- id: B
+  text: $731,000
+  rationale: Reports the $64,000 from selling the donated shares as an investing inflow. Donated securities
+    received without restrictions and converted into cash almost immediately produce an operating cash
+    inflow.
+- id: C
+  text: $757,000
+  rationale: Reports the $38,000 of interest and dividends as an investing inflow. Investment income without
+    donor restrictions is an operating cash flow.
+- id: D
+  text: $795,000
+  rationale: Correct. $420,000 equipment + $650,000 endowment securities − $275,000 proceeds from investments
+    sold.
+answer: D
+explanation: 'Investing activities: equipment bought (− $420,000), endowment securities bought (− $650,000)
+  and proceeds from investments sold (+ $275,000), for net cash used of $795,000. The gift restricted
+  to buying equipment is a financing inflow. Interest and dividends that can be spent for any purpose
+  are operating inflows, and so is the $64,000 from donated shares that came without restrictions and
+  were sold almost at once. The donated land is a noncash transaction, disclosed rather than reported
+  in the statement.'
+variants:
+- stem: During Year 1, Rendle Marine Institute, a not-for-profit entity, bought laboratory equipment for
+    $310,000 in cash and bought marketable securities for its endowment for $480,000. It sold other investments,
+    with a carrying amount of $150,000, for $186,000. It received $220,000 in cash from a donor who stipulated
+    that the gift be used to buy equipment, and $27,000 of interest and dividends on its endowment investments,
+    which the donors allowed Rendle to spend for any purpose. A donor gave Rendle shares of stock with
+    no restrictions, and under its policy of converting donated securities into cash on receipt, Rendle
+    sold them four days later for $52,000. Another donor gave it land with a fair value of $350,000. What
+    net cash used in investing activities should Rendle report in its Year 1 statement of cash flows?
+  choices:
+  - id: A
+    text: $384,000
+    rationale: Reports the $220,000 gift restricted to buying equipment as an investing inflow. Cash contributions
+      restricted to acquiring long-lived assets are financing inflows.
+  - id: B
+    text: $604,000
+    rationale: Correct. $310,000 equipment + $480,000 endowment securities − $186,000 proceeds from investments
+      sold.
+  - id: C
+    text: $640,000
+    rationale: Reports the investments sold at their $150,000 carrying amount. The cash inflow is the
+      $186,000 received.
+  - id: D
+    text: $954,000
+    rationale: Reports the $350,000 of donated land as an investing outflow. A gift of land involves no
+      cash; it is disclosed as a noncash investing and financing activity.
+  answer: B
+  explanation: 'Investing activities: equipment bought (− $310,000), endowment securities bought (− $480,000)
+    and proceeds from investments sold (+ $186,000), for net cash used of $604,000. The gift restricted
+    to buying equipment is a financing inflow. Interest and dividends that can be spent for any purpose
+    are operating inflows, and so is the $52,000 from donated shares that came without restrictions and
+    were sold almost at once. The donated land is a noncash transaction, disclosed rather than reported
+    in the statement.'
+- stem: During Year 1, Satterly Medical Research Trust, a not-for-profit entity, bought laboratory equipment
+    for $560,000 in cash and bought marketable securities for its endowment for $820,000. It sold other
+    investments, with a carrying amount of $340,000, for $395,000. It received $410,000 in cash from a
+    donor who stipulated that the gift be used to buy equipment, and $49,000 of interest and dividends
+    on its endowment investments, which the donors allowed Satterly to spend for any purpose. A donor
+    gave Satterly shares of stock with no restrictions, and under its policy of converting donated securities
+    into cash on receipt, Satterly sold them four days later for $88,000. Another donor gave it land with
+    a fair value of $640,000. What net cash used in investing activities should Satterly report in its
+    Year 1 statement of cash flows?
+  choices:
+  - id: A
+    text: $897,000
+    rationale: Reports the $88,000 from selling the donated shares as an investing inflow. Donated securities
+      received without restrictions and converted into cash almost immediately produce an operating cash
+      inflow.
+  - id: B
+    text: $936,000
+    rationale: Reports the $49,000 of interest and dividends as an investing inflow. Investment income
+      without donor restrictions is an operating cash flow.
+  - id: C
+    text: $985,000
+    rationale: Correct. $560,000 equipment + $820,000 endowment securities − $395,000 proceeds from investments
+      sold.
+  - id: D
+    text: $1,040,000
+    rationale: Reports the investments sold at their $340,000 carrying amount. The cash inflow is the
+      $395,000 received.
+  answer: C
+  explanation: 'Investing activities: equipment bought (− $560,000), endowment securities bought (− $820,000)
+    and proceeds from investments sold (+ $395,000), for net cash used of $985,000. The gift restricted
+    to buying equipment is a financing inflow. Interest and dividends that can be spent for any purpose
+    are operating inflows, and so is the $88,000 from donated shares that came without restrictions and
+    were sold almost at once. The donated land is a noncash transaction, disclosed rather than reported
+    in the statement.'
+- stem: During Year 1, Tregear Science Foundation, a not-for-profit entity, bought laboratory equipment
+    for $245,000 in cash and bought marketable securities for its endowment for $390,000. It sold other
+    investments, with a carrying amount of $120,000, for $152,000. It received $175,000 in cash from a
+    donor who stipulated that the gift be used to buy equipment, and $21,000 of interest and dividends
+    on its endowment investments, which the donors allowed Tregear to spend for any purpose. A donor gave
+    Tregear shares of stock with no restrictions, and under its policy of converting donated securities
+    into cash on receipt, Tregear sold them four days later for $43,000. Another donor gave it land with
+    a fair value of $280,000. What net cash used in investing activities should Tregear report in its
+    Year 1 statement of cash flows?
+  choices:
+  - id: A
+    text: $308,000
+    rationale: Reports the $175,000 gift restricted to buying equipment as an investing inflow. Cash contributions
+      restricted to acquiring long-lived assets are financing inflows.
+  - id: B
+    text: $462,000
+    rationale: Reports the $21,000 of interest and dividends as an investing inflow. Investment income
+      without donor restrictions is an operating cash flow.
+  - id: C
+    text: $483,000
+    rationale: Correct. $245,000 equipment + $390,000 endowment securities − $152,000 proceeds from investments
+      sold.
+  - id: D
+    text: $763,000
+    rationale: Reports the $280,000 of donated land as an investing outflow. A gift of land involves no
+      cash; it is disclosed as a noncash investing and financing activity.
+  answer: C
+  explanation: 'Investing activities: equipment bought (− $245,000), endowment securities bought (− $390,000)
+    and proceeds from investments sold (+ $152,000), for net cash used of $483,000. The gift restricted
+    to buying equipment is a financing inflow. Interest and dividends that can be spent for any purpose
+    are operating inflows, and so is the $43,000 from donated shares that came without restrictions and
+    were sold almost at once. The donated land is a noncash transaction, disclosed rather than reported
+    in the statement.'

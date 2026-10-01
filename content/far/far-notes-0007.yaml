@@ -1,0 +1,55 @@
+id: far-notes-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Notes to financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 606-10-55 (consignment arrangements; contract liabilities; disaggregation of revenue)
+  - ASC 323-10 (equity method investments)
+  - 'ASC 460-10-30 (guarantees: initial recognition at fair value)'
+  - ASC 410-20 (asset retirement obligations)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'A senior accountant is comparing Hartlepool Co.''s draft notes with its draft December 31, Year
+  1, financial statements before they are issued on March 6, Year 2. The draft balance sheet shows inventories
+  of $1,265,000; an investment in Kelso Ltd., accounted for by the equity method, of $742,000; contract
+  liabilities of $88,000; and other noncurrent liabilities of $157,000. The draft income statement shows
+  revenue of $6,430,000. The draft notes say: inventories, stated at the lower of FIFO cost and net realizable
+  value, total $1,265,000, which includes $96,000 of goods that a manufacturer has placed with Hartlepool
+  to sell on the manufacturer''s behalf, paying the manufacturer only when it sells them; the investment
+  is a 30% interest in Kelso, carried at $690,000 at January 1, plus Hartlepool''s $81,000 share of Kelso''s
+  net income, less $29,000 of dividends received; revenue consists of $5,210,000 from product sales, recognized
+  when goods are delivered, and $1,220,000 from service contracts, recognized over the contract terms,
+  with $88,000 billed in advance for services not yet performed reported as contract liabilities; and
+  other noncurrent liabilities consist of a $112,000 asset retirement obligation and a $45,000 liability
+  for Hartlepool''s guarantee of an unrelated supplier''s bank loan, recognized at its fair value when
+  the guarantee was issued. Which draft note reveals that the draft financial statements must be corrected?'
+choices:
+- id: A
+  text: The equity method investment note
+  rationale: Consistent. $690,000 + $81,000 − $29,000 = $742,000. Dividends from an equity method investee
+    reduce the investment's carrying amount.
+- id: B
+  text: The revenue note
+  rationale: Consistent. $5,210,000 + $1,220,000 = $6,430,000, and amounts billed for services not yet
+    performed are contract liabilities, matching the $88,000 on the balance sheet.
+- id: C
+  text: The inventories note
+  rationale: Correct. Goods held on consignment belong to the manufacturer (the consignor), which keeps
+    control until Hartlepool sells them. The $96,000 must come out of inventories, so the balance sheet
+    should report $1,169,000.
+- id: D
+  text: The other noncurrent liabilities note
+  rationale: Consistent. $112,000 + $45,000 = $157,000. A guarantor recognizes a liability at the guarantee's
+    fair value at inception.
+answer: C
+explanation: 'Each note''s figures can be traced to the draft statements. Equity method: $690,000 + $81,000
+  − $29,000 = $742,000. Revenue: $5,210,000 + $1,220,000 = $6,430,000, and the $88,000 billed in advance
+  agrees with contract liabilities. Other noncurrent liabilities: $112,000 + $45,000 = $157,000, and a
+  guarantee of an unrelated party''s debt is recognized at fair value at inception. The inventory note,
+  though it agrees with the balance sheet, describes goods a manufacturer has consigned to Hartlepool:
+  the consignor controls them until they are sold, so they are not Hartlepool''s inventory, and both the
+  note and the balance sheet must be corrected to $1,169,000.'

@@ -1,0 +1,150 @@
+id: far-balance-sheet-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Balance sheet
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 210-10-45 (current assets and current liabilities; cash restricted for noncurrent uses)
+  - ASC 470-10-45 (current maturities of long-term debt)
+  - ASC 606-10-55 (consignment arrangements)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Marske Co.''s staff computed working capital of $952,000 at December 31, Year 1, from its draft
+  balance sheet: current assets of $1,480,000 (cash $318,000, accounts receivable, net $486,000, inventory
+  $642,000 and prepaid expenses $34,000) less current liabilities of $528,000 (accounts payable $402,000
+  and accrued liabilities $126,000). The year-end close file shows that cash includes $27,000 of customers''
+  checks dated in January, Year 2, which Marske received in December and will deposit on their dates,
+  and $150,000 of proceeds from a construction loan, held in a separate account that may be used only
+  to pay the contractors building Marske''s new warehouse. Inventory excludes goods costing $58,000 that
+  Marske shipped in December to dealers who sell them on its behalf and who still held them at year-end.
+  A five-year term loan taken out on March 1, Year 1, reported entirely among noncurrent liabilities at
+  $480,000, is repayable in five equal annual installments of $96,000 beginning March 1, Year 2. What
+  working capital should Marske''s corrected balance sheet report?'
+choices:
+- id: A
+  text: $706,000
+  rationale: Leaves out the $58,000 of goods held by dealers. Goods Marske shipped on consignment remain
+    its inventory until the dealers sell them.
+- id: B
+  text: $737,000
+  rationale: Removes the $27,000 of postdated customer checks from current assets. They aren't cash until
+    their dates, but they are receivables, so moving them from cash to accounts receivable leaves current
+    assets unchanged.
+- id: C
+  text: $764,000
+  rationale: Correct. $952,000 − $150,000 − $96,000 + $58,000.
+- id: D
+  text: $860,000
+  rationale: Leaves the whole term loan in noncurrent liabilities. The $96,000 installment due on March
+    1, Year 2, is a current liability.
+answer: C
+explanation: 'Postdated checks are receivables, not cash, so reclassifying the $27,000 leaves current
+  assets unchanged. Cash restricted to paying for the construction of a noncurrent asset is not a current
+  asset: − $150,000. Consigned goods still held by the dealers belong to Marske: + $58,000. The installment
+  due March 1, Year 2, is a current liability: − $96,000. Working capital = $952,000 − $150,000 + $58,000
+  − $96,000 = $764,000.'
+variants:
+- stem: 'Nappa Co.''s staff computed working capital of $735,000 at December 31, Year 1, from its draft
+    balance sheet: current assets of $1,150,000 (cash $255,000, accounts receivable, net $371,000, inventory
+    $498,000 and prepaid expenses $26,000) less current liabilities of $415,000 (accounts payable $318,000
+    and accrued liabilities $97,000). The year-end close file shows that cash includes $19,000 of customers''
+    checks dated in January, Year 2, which Nappa received in December and will deposit on their dates,
+    and $120,000 of proceeds from a construction loan, held in a separate account that may be used only
+    to pay the contractors building Nappa''s new warehouse. Inventory excludes goods costing $44,000 that
+    Nappa shipped in December to dealers who sell them on its behalf and who still held them at year-end.
+    A five-year term loan taken out on March 1, Year 1, reported entirely among noncurrent liabilities
+    at $350,000, is repayable in five equal annual installments of $70,000 beginning March 1, Year 2.
+    What working capital should Nappa''s corrected balance sheet report?'
+  choices:
+  - id: A
+    text: $570,000
+    rationale: Removes the $19,000 of postdated customer checks from current assets. They aren't cash
+      until their dates, but they are receivables, so moving them from cash to accounts receivable leaves
+      current assets unchanged.
+  - id: B
+    text: $589,000
+    rationale: Correct. $735,000 − $120,000 − $70,000 + $44,000.
+  - id: C
+    text: $659,000
+    rationale: Leaves the whole term loan in noncurrent liabilities. The $70,000 installment due on March
+      1, Year 2, is a current liability.
+  - id: D
+    text: $709,000
+    rationale: Leaves the $120,000 of construction loan proceeds in current assets. Cash that may be used
+      only to pay for building a noncurrent asset is excluded from current assets.
+  answer: B
+  explanation: 'Postdated checks are receivables, not cash, so reclassifying the $19,000 leaves current
+    assets unchanged. Cash restricted to paying for the construction of a noncurrent asset is not a current
+    asset: − $120,000. Consigned goods still held by the dealers belong to Nappa: + $44,000. The installment
+    due March 1, Year 2, is a current liability: − $70,000. Working capital = $735,000 − $120,000 + $44,000
+    − $70,000 = $589,000.'
+- stem: 'Redmire Co.''s staff computed working capital of $1,184,000 at December 31, Year 1, from its
+    draft balance sheet: current assets of $1,866,000 (cash $412,000, accounts receivable, net $598,000,
+    inventory $815,000 and prepaid expenses $41,000) less current liabilities of $682,000 (accounts payable
+    $534,000 and accrued liabilities $148,000). The year-end close file shows that cash includes $36,000
+    of customers'' checks dated in January, Year 2, which Redmire received in December and will deposit
+    on their dates, and $210,000 of proceeds from a construction loan, held in a separate account that
+    may be used only to pay the contractors building Redmire''s new warehouse. Inventory excludes goods
+    costing $73,000 that Redmire shipped in December to dealers who sell them on its behalf and who still
+    held them at year-end. A five-year term loan taken out on March 1, Year 1, reported entirely among
+    noncurrent liabilities at $625,000, is repayable in five equal annual installments of $125,000 beginning
+    March 1, Year 2. What working capital should Redmire''s corrected balance sheet report?'
+  choices:
+  - id: A
+    text: $849,000
+    rationale: Leaves out the $73,000 of goods held by dealers. Goods Redmire shipped on consignment remain
+      its inventory until the dealers sell them.
+  - id: B
+    text: $886,000
+    rationale: Removes the $36,000 of postdated customer checks from current assets. They aren't cash
+      until their dates, but they are receivables, so moving them from cash to accounts receivable leaves
+      current assets unchanged.
+  - id: C
+    text: $922,000
+    rationale: Correct. $1,184,000 − $210,000 − $125,000 + $73,000.
+  - id: D
+    text: $1,132,000
+    rationale: Leaves the $210,000 of construction loan proceeds in current assets. Cash that may be used
+      only to pay for building a noncurrent asset is excluded from current assets.
+  answer: C
+  explanation: 'Postdated checks are receivables, not cash, so reclassifying the $36,000 leaves current
+    assets unchanged. Cash restricted to paying for the construction of a noncurrent asset is not a current
+    asset: − $210,000. Consigned goods still held by the dealers belong to Redmire: + $73,000. The installment
+    due March 1, Year 2, is a current liability: − $125,000. Working capital = $1,184,000 − $210,000 +
+    $73,000 − $125,000 = $922,000.'
+- stem: 'Starbotton Co.''s staff computed working capital of $525,000 at December 31, Year 1, from its
+    draft balance sheet: current assets of $822,000 (cash $184,000, accounts receivable, net $263,000,
+    inventory $357,000 and prepaid expenses $18,000) less current liabilities of $297,000 (accounts payable
+    $226,000 and accrued liabilities $71,000). The year-end close file shows that cash includes $14,000
+    of customers'' checks dated in January, Year 2, which Starbotton received in December and will deposit
+    on their dates, and $85,000 of proceeds from a construction loan, held in a separate account that
+    may be used only to pay the contractors building Starbotton''s new warehouse. Inventory excludes goods
+    costing $31,000 that Starbotton shipped in December to dealers who sell them on its behalf and who
+    still held them at year-end. A five-year term loan taken out on March 1, Year 1, reported entirely
+    among noncurrent liabilities at $260,000, is repayable in five equal annual installments of $52,000
+    beginning March 1, Year 2. What working capital should Starbotton''s corrected balance sheet report?'
+  choices:
+  - id: A
+    text: $388,000
+    rationale: Leaves out the $31,000 of goods held by dealers. Goods Starbotton shipped on consignment
+      remain its inventory until the dealers sell them.
+  - id: B
+    text: $419,000
+    rationale: Correct. $525,000 − $85,000 − $52,000 + $31,000.
+  - id: C
+    text: $471,000
+    rationale: Leaves the whole term loan in noncurrent liabilities. The $52,000 installment due on March
+      1, Year 2, is a current liability.
+  - id: D
+    text: $504,000
+    rationale: Leaves the $85,000 of construction loan proceeds in current assets. Cash that may be used
+      only to pay for building a noncurrent asset is excluded from current assets.
+  answer: B
+  explanation: 'Postdated checks are receivables, not cash, so reclassifying the $14,000 leaves current
+    assets unchanged. Cash restricted to paying for the construction of a noncurrent asset is not a current
+    asset: − $85,000. Consigned goods still held by the dealers belong to Starbotton: + $31,000. The installment
+    due March 1, Year 2, is a current liability: − $52,000. Working capital = $525,000 − $85,000 + $31,000
+    − $52,000 = $419,000.'

@@ -1,0 +1,164 @@
+id: far-nfp-functional-expenses-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of activities (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-720-45 (functional classification of expenses; joint costs of activities that include fundraising)
+  - ASC 958-605-25-16 (contributed services)
+  - ASU 2016-14 (analysis of expenses by nature and function)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Larkham Health Outreach, a not-for-profit entity that runs free glaucoma screening clinics, reports
+  these Year 1 costs. Its development director, whose time records show she worked only on soliciting
+  gifts, was paid $84,000. Its executive director was paid $130,000; her time records show 60% program
+  oversight, 25% management and general, and 15% fundraising. It paid a consultant $12,000 to write grant
+  proposals to private foundations. It spent $46,000 on a mailing to 40,000 households that described
+  the warning signs of glaucoma, urged readers to book a free screening at its clinics, and asked for
+  donations; the mailing list was bought from a broker who selected households with a record of giving
+  to health charities, and management proposes to charge 60% of the mailing's cost, the share of its space
+  given to the health message, to the screening program. Volunteers also staffed a weekend phone campaign
+  asking for pledges; paying for their time at market rates would have cost $9,500. What amount should
+  Larkham report as fundraising expenses in its analysis of expenses by nature and function for Year 1?
+choices:
+- id: A
+  text: $133,900
+  rationale: Allocates 60% of the mailing ($27,600) to the screening program. Joint costs can be allocated
+    only when the activity meets the purpose, audience and content criteria; this audience was chosen
+    for its giving history, so all of the mailing's cost is fundraising.
+- id: B
+  text: $142,000
+  rationale: Leaves out the executive director's fundraising time. Time records put 15% of the $130,000
+    salary ($19,500) in fundraising, and salaries are allocated to functions on that basis.
+- id: C
+  text: $149,500
+  rationale: Reports the $12,000 paid to the grant writer as management and general. Soliciting grants
+    from foundations is a fundraising activity.
+- id: D
+  text: $161,500
+  rationale: Correct. $84,000 + $19,500 + $46,000 + $12,000.
+answer: D
+explanation: 'Salaries are reported by function in line with the time records: the development director''s
+  $84,000 and 15% of the executive director''s salary ($19,500) are fundraising. The grant writer solicits
+  contributions, so the $12,000 is fundraising. The mailing combines a program message with a solicitation,
+  but its audience was selected for its likelihood to give rather than for its need for the health message,
+  so it fails the audience criterion for allocating joint costs, and all $46,000 is fundraising. The volunteers''
+  phone work requires no specialized skills, so their services aren''t recognized and add no expense.
+  Fundraising = $84,000 + $19,500 + $12,000 + $46,000 = $161,500.'
+variants:
+- stem: Mabey Heart Foundation, a not-for-profit entity that runs free heart disease screening clinics,
+    reports these Year 1 costs. Its development director, whose time records show she worked only on soliciting
+    gifts, was paid $96,000. Its executive director was paid $150,000; her time records show 55% program
+    oversight, 25% management and general, and 20% fundraising. It paid a consultant $15,000 to write
+    grant proposals to private foundations. It spent $58,000 on a mailing to 50,000 households that described
+    the warning signs of heart disease, urged readers to book a free screening at its clinics, and asked
+    for donations; the mailing list was bought from a broker who selected households with a record of
+    giving to health charities, and management proposes to charge 70% of the mailing's cost, the share
+    of its space given to the health message, to the screening program. Volunteers also staffed a weekend
+    phone campaign asking for pledges; paying for their time at market rates would have cost $11,000.
+    What amount should Mabey report as fundraising expenses in its analysis of expenses by nature and
+    function for Year 1?
+  choices:
+  - id: A
+    text: $158,400
+    rationale: Allocates 70% of the mailing ($40,600) to the screening program. Joint costs can be allocated
+      only when the activity meets the purpose, audience and content criteria; this audience was chosen
+      for its giving history, so all of the mailing's cost is fundraising.
+  - id: B
+    text: $169,000
+    rationale: Leaves out the executive director's fundraising time. Time records put 20% of the $150,000
+      salary ($30,000) in fundraising, and salaries are allocated to functions on that basis.
+  - id: C
+    text: $199,000
+    rationale: Correct. $96,000 + $30,000 + $58,000 + $15,000.
+  - id: D
+    text: $210,000
+    rationale: Includes the $11,000 market value of the volunteers' time. Soliciting pledges by phone
+      doesn't require specialized skills and doesn't create or enhance a nonfinancial asset, so the contributed
+      services aren't recognized and produce no expense.
+  answer: C
+  explanation: 'Salaries are reported by function in line with the time records: the development director''s
+    $96,000 and 20% of the executive director''s salary ($30,000) are fundraising. The grant writer solicits
+    contributions, so the $15,000 is fundraising. The mailing combines a program message with a solicitation,
+    but its audience was selected for its likelihood to give rather than for its need for the health message,
+    so it fails the audience criterion for allocating joint costs, and all $58,000 is fundraising. The
+    volunteers'' phone work requires no specialized skills, so their services aren''t recognized and add
+    no expense. Fundraising = $96,000 + $30,000 + $15,000 + $58,000 = $199,000.'
+- stem: Nettleford Kidney Alliance, a not-for-profit entity that runs free kidney disease screening clinics,
+    reports these Year 1 costs. Its development director, whose time records show she worked only on soliciting
+    gifts, was paid $72,000. Its executive director was paid $118,000; her time records show 65% program
+    oversight, 25% management and general, and 10% fundraising. It paid a consultant $9,000 to write grant
+    proposals to private foundations. It spent $38,000 on a mailing to 30,000 households that described
+    the warning signs of kidney disease, urged readers to book a free screening at its clinics, and asked
+    for donations; the mailing list was bought from a broker who selected households with a record of
+    giving to health charities, and management proposes to charge 50% of the mailing's cost, the share
+    of its space given to the health message, to the screening program. Volunteers also staffed a weekend
+    phone campaign asking for pledges; paying for their time at market rates would have cost $8,000. What
+    amount should Nettleford report as fundraising expenses in its analysis of expenses by nature and
+    function for Year 1?
+  choices:
+  - id: A
+    text: $111,800
+    rationale: Allocates 50% of the mailing ($19,000) to the screening program. Joint costs can be allocated
+      only when the activity meets the purpose, audience and content criteria; this audience was chosen
+      for its giving history, so all of the mailing's cost is fundraising.
+  - id: B
+    text: $121,800
+    rationale: Reports the $9,000 paid to the grant writer as management and general. Soliciting grants
+      from foundations is a fundraising activity.
+  - id: C
+    text: $130,800
+    rationale: Correct. $72,000 + $11,800 + $38,000 + $9,000.
+  - id: D
+    text: $138,800
+    rationale: Includes the $8,000 market value of the volunteers' time. Soliciting pledges by phone doesn't
+      require specialized skills and doesn't create or enhance a nonfinancial asset, so the contributed
+      services aren't recognized and produce no expense.
+  answer: C
+  explanation: 'Salaries are reported by function in line with the time records: the development director''s
+    $72,000 and 10% of the executive director''s salary ($11,800) are fundraising. The grant writer solicits
+    contributions, so the $9,000 is fundraising. The mailing combines a program message with a solicitation,
+    but its audience was selected for its likelihood to give rather than for its need for the health message,
+    so it fails the audience criterion for allocating joint costs, and all $38,000 is fundraising. The
+    volunteers'' phone work requires no specialized skills, so their services aren''t recognized and add
+    no expense. Fundraising = $72,000 + $11,800 + $9,000 + $38,000 = $130,800.'
+- stem: Orrell Skin Cancer Network, a not-for-profit entity that runs free skin cancer screening clinics,
+    reports these Year 1 costs. Its development director, whose time records show she worked only on soliciting
+    gifts, was paid $105,000. Its executive director was paid $160,000; her time records show 60% program
+    oversight, 15% management and general, and 25% fundraising. It paid a consultant $18,000 to write
+    grant proposals to private foundations. It spent $64,000 on a mailing to 60,000 households that described
+    the warning signs of skin cancer, urged readers to book a free screening at its clinics, and asked
+    for donations; the mailing list was bought from a broker who selected households with a record of
+    giving to health charities, and management proposes to charge 65% of the mailing's cost, the share
+    of its space given to the health message, to the screening program. Volunteers also staffed a weekend
+    phone campaign asking for pledges; paying for their time at market rates would have cost $14,000.
+    What amount should Orrell report as fundraising expenses in its analysis of expenses by nature and
+    function for Year 1?
+  choices:
+  - id: A
+    text: $187,000
+    rationale: Leaves out the executive director's fundraising time. Time records put 25% of the $160,000
+      salary ($40,000) in fundraising, and salaries are allocated to functions on that basis.
+  - id: B
+    text: $209,000
+    rationale: Reports the $18,000 paid to the grant writer as management and general. Soliciting grants
+      from foundations is a fundraising activity.
+  - id: C
+    text: $227,000
+    rationale: Correct. $105,000 + $40,000 + $64,000 + $18,000.
+  - id: D
+    text: $241,000
+    rationale: Includes the $14,000 market value of the volunteers' time. Soliciting pledges by phone
+      doesn't require specialized skills and doesn't create or enhance a nonfinancial asset, so the contributed
+      services aren't recognized and produce no expense.
+  answer: C
+  explanation: 'Salaries are reported by function in line with the time records: the development director''s
+    $105,000 and 25% of the executive director''s salary ($40,000) are fundraising. The grant writer solicits
+    contributions, so the $18,000 is fundraising. The mailing combines a program message with a solicitation,
+    but its audience was selected for its likelihood to give rather than for its need for the health message,
+    so it fails the audience criterion for allocating joint costs, and all $64,000 is fundraising. The
+    volunteers'' phone work requires no specialized skills, so their services aren''t recognized and add
+    no expense. Fundraising = $105,000 + $40,000 + $18,000 + $64,000 = $227,000.'

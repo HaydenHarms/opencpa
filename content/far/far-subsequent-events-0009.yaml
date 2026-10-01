@@ -1,0 +1,42 @@
+id: far-subsequent-events-0009
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 855-10-25 (recognized and nonrecognized subsequent events)
+  - ASC 855-10-55 (examples of recognized and nonrecognized subsequent events)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Bellerby Corp.'s financial statements for the year ended December 31, Year 3, are issued on March
+  8, Year 4. Which of these events, each occurring in February, Year 4, should Bellerby not reflect by
+  adjusting its Year 3 financial statements?
+choices:
+- id: A
+  text: A customer whose finances had worsened steadily all through Year 3 files for bankruptcy
+  rationale: The bankruptcy confirms a condition, the customer's deteriorating finances, that existed
+    at December 31, so the year-end allowance is adjusted.
+- id: B
+  text: A flood destroys a customer's only plant, making the customer unable to pay its December 31 balance
+  rationale: 'Correct. The flood is a condition that arose after the balance sheet date, so it is a nonrecognized
+    subsequent event: Bellerby discloses it if needed to keep the statements from being misleading, but
+    doesn''t adjust them.'
+- id: C
+  text: Goods that were obsolete at year-end are sold for less than their December 31 carrying amount
+  rationale: The sale gives evidence about the goods' net realizable value at December 31, so inventory
+    is adjusted.
+- id: D
+  text: A lawsuit over a defect in goods sold in Year 3 is settled for more than the amount accrued at
+    December 31
+  rationale: The settlement gives evidence about a liability for a Year 3 defect that existed at December
+    31, so the accrued liability is adjusted to the settlement amount.
+answer: B
+explanation: ASC 855 distinguishes events that provide more evidence about conditions existing at the
+  balance sheet date (recognized subsequent events, which adjust the statements) from events about conditions
+  that arose after that date (nonrecognized subsequent events, which may need disclosure). A customer's
+  bankruptcy caused by deterioration that existed at year-end, a sale showing that inventory was impaired
+  at year-end, and the settlement of a lawsuit over a Year 3 defect are all recognized. A loss on a receivable
+  caused by a customer's casualty, such as a flood, after year-end is nonrecognized.

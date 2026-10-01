@@ -1,0 +1,127 @@
+id: far-special-purpose-frameworks-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Special Purpose Frameworks
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'AU-C 800 (special purpose frameworks: cash and modified cash bases)'
+  - ASC 606-10 and ASC 360-10 (accrual-basis revenue, expenses and depreciation)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Upcott Veterinary Clinic keeps its books on the cash basis. Its Year 2 cash receipts from clients
+  exceeded its cash payments by $186,000. The payments include $48,000 paid in March for new imaging equipment,
+  whose depreciation for Year 2 on the accrual basis is $6,000. Balances at January 1 and December 31,
+  Year 2, were: client receivables, $21,000 and $33,000; accrued wages and other expenses payable, $9,000
+  and $14,500; and prepaid insurance, $7,200 and $4,800. There are no other differences between the cash
+  and accrual bases. What is Upcott''s Year 2 net income on the accrual basis?'
+choices:
+- id: A
+  text: $208,100
+  rationale: Subtracts the $12,000 increase in client receivables. Fees earned but not yet collected make
+    accrual revenue larger than cash received.
+- id: B
+  text: $232,100
+  rationale: Correct. $186,000 + $12,000 − $5,500 − $2,400 + $48,000 − $6,000.
+- id: C
+  text: $238,100
+  rationale: Capitalizes the equipment but records no depreciation. The $6,000 of Year 2 depreciation
+    is an accrual-basis expense.
+- id: D
+  text: $243,100
+  rationale: Adds the $5,500 increase in accrued expenses. Expenses incurred but not yet paid make accrual
+    expenses larger than cash paid, which lowers income.
+answer: B
+explanation: 'Start with the $186,000 excess of receipts over payments. Revenue: receivables rose by $12,000,
+  so fees earned exceeded cash collected: + $12,000. Expenses: accrued expenses payable rose by $5,500,
+  so expenses incurred exceeded cash paid: − $5,500; prepaid insurance fell by $2,400, so insurance expense
+  exceeded the premiums paid: − $2,400. The equipment is an asset, not an expense (+ $48,000), and its
+  depreciation is (− $6,000). Accrual net income = $232,100.'
+variants:
+- stem: 'Vardy Animal Hospital keeps its books on the cash basis. Its Year 2 cash receipts from clients
+    exceeded its cash payments by $243,000. The payments include $65,000 paid in March for new imaging
+    equipment, whose depreciation for Year 2 on the accrual basis is $9,750. Balances at January 1 and
+    December 31, Year 2, were: client receivables, $28,000 and $41,500; accrued wages and other expenses
+    payable, $12,000 and $19,000; and prepaid insurance, $9,600 and $6,000. There are no other differences
+    between the cash and accrual bases. What is Vardy''s Year 2 net income on the accrual basis?'
+  choices:
+  - id: A
+    text: $301,150
+    rationale: Correct. $243,000 + $13,500 − $7,000 − $3,600 + $65,000 − $9,750.
+  - id: B
+    text: $308,350
+    rationale: Adds the $3,600 decrease in prepaid insurance. Using up insurance paid for in an earlier
+      year adds expense without any payment this year, which lowers income.
+  - id: C
+    text: $310,900
+    rationale: Capitalizes the equipment but records no depreciation. The $9,750 of Year 2 depreciation
+      is an accrual-basis expense.
+  - id: D
+    text: $315,150
+    rationale: Adds the $7,000 increase in accrued expenses. Expenses incurred but not yet paid make accrual
+      expenses larger than cash paid, which lowers income.
+  answer: A
+  explanation: 'Start with the $243,000 excess of receipts over payments. Revenue: receivables rose by
+    $13,500, so fees earned exceeded cash collected: + $13,500. Expenses: accrued expenses payable rose
+    by $7,000, so expenses incurred exceeded cash paid: − $7,000; prepaid insurance fell by $3,600, so
+    insurance expense exceeded the premiums paid: − $3,600. The equipment is an asset, not an expense
+    (+ $65,000), and its depreciation is (− $9,750). Accrual net income = $301,150.'
+- stem: 'Wetherall Pet Clinic keeps its books on the cash basis. Its Year 2 cash receipts from clients
+    exceeded its cash payments by $128,000. The payments include $36,000 paid in March for new imaging
+    equipment, whose depreciation for Year 2 on the accrual basis is $4,500. Balances at January 1 and
+    December 31, Year 2, were: client receivables, $15,500 and $24,000; accrued wages and other expenses
+    payable, $6,200 and $9,800; and prepaid insurance, $5,400 and $3,600. There are no other differences
+    between the cash and accrual bases. What is Wetherall''s Year 2 net income on the accrual basis?'
+  choices:
+  - id: A
+    text: $131,100
+    rationale: Leaves the $36,000 equipment purchase as an expense. On the accrual basis the equipment
+      is capitalized, and only its $4,500 of depreciation is expense.
+  - id: B
+    text: $145,600
+    rationale: Subtracts the $8,500 increase in client receivables. Fees earned but not yet collected
+      make accrual revenue larger than cash received.
+  - id: C
+    text: $162,600
+    rationale: Correct. $128,000 + $8,500 − $3,600 − $1,800 + $36,000 − $4,500.
+  - id: D
+    text: $167,100
+    rationale: Capitalizes the equipment but records no depreciation. The $4,500 of Year 2 depreciation
+      is an accrual-basis expense.
+  answer: C
+  explanation: 'Start with the $128,000 excess of receipts over payments. Revenue: receivables rose by
+    $8,500, so fees earned exceeded cash collected: + $8,500. Expenses: accrued expenses payable rose
+    by $3,600, so expenses incurred exceeded cash paid: − $3,600; prepaid insurance fell by $1,800, so
+    insurance expense exceeded the premiums paid: − $1,800. The equipment is an asset, not an expense
+    (+ $36,000), and its depreciation is (− $4,500). Accrual net income = $162,600.'
+- stem: 'Allerton Veterinary Practice keeps its books on the cash basis. Its Year 2 cash receipts from
+    clients exceeded its cash payments by $312,000. The payments include $84,000 paid in March for new
+    imaging equipment, whose depreciation for Year 2 on the accrual basis is $10,500. Balances at January
+    1 and December 31, Year 2, were: client receivables, $37,000 and $52,000; accrued wages and other
+    expenses payable, $16,000 and $23,500; and prepaid insurance, $12,000 and $8,400. There are no other
+    differences between the cash and accrual bases. What is Allerton''s Year 2 net income on the accrual
+    basis?'
+  choices:
+  - id: A
+    text: $315,900
+    rationale: Leaves the $84,000 equipment purchase as an expense. On the accrual basis the equipment
+      is capitalized, and only its $10,500 of depreciation is expense.
+  - id: B
+    text: $359,400
+    rationale: Subtracts the $15,000 increase in client receivables. Fees earned but not yet collected
+      make accrual revenue larger than cash received.
+  - id: C
+    text: $389,400
+    rationale: Correct. $312,000 + $15,000 − $7,500 − $3,600 + $84,000 − $10,500.
+  - id: D
+    text: $404,400
+    rationale: Adds the $7,500 increase in accrued expenses. Expenses incurred but not yet paid make accrual
+      expenses larger than cash paid, which lowers income.
+  answer: C
+  explanation: 'Start with the $312,000 excess of receipts over payments. Revenue: receivables rose by
+    $15,000, so fees earned exceeded cash collected: + $15,000. Expenses: accrued expenses payable rose
+    by $7,500, so expenses incurred exceeded cash paid: − $7,500; prepaid insurance fell by $3,600, so
+    insurance expense exceeded the premiums paid: − $3,600. The equipment is an asset, not an expense
+    (+ $84,000), and its depreciation is (− $10,500). Accrual net income = $389,400.'

@@ -1,0 +1,139 @@
+id: far-ppe-impairment-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 360-10-35 (impairment of long-lived assets held and used: recoverability test and measurement
+    at fair value)'
+  - ASC 820-10 (fair value)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Rylstone Co. bought a bottling machine for $1,200,000, which it depreciates
+  straight-line over 8 years with no residual value. At December 31, Year 3, after recording that year's
+  depreciation, demand for the product the machine makes has fallen sharply. Rylstone now expects the
+  machine to generate net cash inflows of $110,000 a year for its remaining 5 years, plus $60,000 from
+  selling it at the end of that time. Dealers in similar used machines would pay $405,000 for it today,
+  and selling it would cost $18,000. Discounted at Rylstone's 8% incremental borrowing rate, the expected
+  cash flows are worth $480,000. Rylstone plans to keep using the machine. What impairment loss should
+  Rylstone recognize at December 31, Year 3?
+choices:
+- id: A
+  text: $345,000
+  rationale: Correct. $750,000 carrying amount − $405,000 fair value.
+- id: B
+  text: $363,000
+  rationale: Measures the loss against fair value less the $18,000 cost to sell. That is the measure for
+    assets held for sale; Rylstone is keeping the machine, so the loss is carrying amount less fair value.
+- id: C
+  text: $495,000
+  rationale: Tests the carrying amount before Year 3 depreciation ($900,000). Depreciation for the year
+    is recorded first, then the machine is tested.
+- id: D
+  text: $795,000
+  rationale: Measures the loss from the $1,200,000 cost, ignoring accumulated depreciation. The test uses
+    the carrying amount, $750,000.
+answer: A
+explanation: 'Carrying amount = $1,200,000 − 3 × $150,000 = $750,000. Recoverability test: undiscounted
+  cash flows of $110,000 × 5 + $60,000 = $610,000 are less than $750,000, so the carrying amount is not
+  recoverable. For an asset held and used, the loss is the carrying amount less fair value: $750,000 −
+  $405,000 = $345,000. Costs to sell are not deducted because the machine is not held for sale, and the
+  present value of Rylstone''s own cash flows is not fair value.'
+variants:
+- stem: On January 1, Year 1, Farnhill Co. bought a printing press for $900,000, which it depreciates
+    straight-line over 6 years with no residual value. At December 31, Year 3, after recording that year's
+    depreciation, demand for the product the machine makes has fallen sharply. Farnhill now expects the
+    machine to generate net cash inflows of $125,000 a year for its remaining 3 years, plus $40,000 from
+    selling it at the end of that time. Dealers in similar used machines would pay $310,000 for it today,
+    and selling it would cost $14,000. Discounted at Farnhill's 7% incremental borrowing rate, the expected
+    cash flows are worth $361,000. Farnhill plans to keep using the machine. What impairment loss should
+    Farnhill recognize at December 31, Year 3?
+  choices:
+  - id: A
+    text: $35,000
+    rationale: Measures the loss as the carrying amount less the $415,000 of undiscounted cash flows.
+      Undiscounted cash flows only test recoverability; the loss is measured against fair value.
+  - id: B
+    text: $140,000
+    rationale: Correct. $450,000 carrying amount − $310,000 fair value.
+  - id: C
+    text: $154,000
+    rationale: Measures the loss against fair value less the $14,000 cost to sell. That is the measure
+      for assets held for sale; Farnhill is keeping the machine, so the loss is carrying amount less fair
+      value.
+  - id: D
+    text: $290,000
+    rationale: Tests the carrying amount before Year 3 depreciation ($600,000). Depreciation for the year
+      is recorded first, then the machine is tested.
+  answer: B
+  explanation: 'Carrying amount = $900,000 − 3 × $150,000 = $450,000. Recoverability test: undiscounted
+    cash flows of $125,000 × 3 + $40,000 = $415,000 are less than $450,000, so the carrying amount is
+    not recoverable. For an asset held and used, the loss is the carrying amount less fair value: $450,000
+    − $310,000 = $140,000. Costs to sell are not deducted because the machine is not held for sale, and
+    the present value of Farnhill''s own cash flows is not fair value.'
+- stem: On January 1, Year 1, Uldale Co. bought a molding machine for $1,500,000, which it depreciates
+    straight-line over 10 years with no residual value. At December 31, Year 3, after recording that year's
+    depreciation, demand for the product the machine makes has fallen sharply. Uldale now expects the
+    machine to generate net cash inflows of $120,000 a year for its remaining 7 years, plus $80,000 from
+    selling it at the end of that time. Dealers in similar used machines would pay $560,000 for it today,
+    and selling it would cost $25,000. Discounted at Uldale's 9% incremental borrowing rate, the expected
+    cash flows are worth $648,000. Uldale plans to keep using the machine. What impairment loss should
+    Uldale recognize at December 31, Year 3?
+  choices:
+  - id: A
+    text: $130,000
+    rationale: Measures the loss as the carrying amount less the $920,000 of undiscounted cash flows.
+      Undiscounted cash flows only test recoverability; the loss is measured against fair value.
+  - id: B
+    text: $402,000
+    rationale: Measures the loss against the $648,000 present value of Uldale's own expected cash flows
+      at its borrowing rate (a value-in-use measure, as under IFRS). U.S. GAAP measures the loss against
+      fair value, the $560,000 a market participant would pay.
+  - id: C
+    text: $490,000
+    rationale: Correct. $1,050,000 carrying amount − $560,000 fair value.
+  - id: D
+    text: $515,000
+    rationale: Measures the loss against fair value less the $25,000 cost to sell. That is the measure
+      for assets held for sale; Uldale is keeping the machine, so the loss is carrying amount less fair
+      value.
+  answer: C
+  explanation: 'Carrying amount = $1,500,000 − 3 × $150,000 = $1,050,000. Recoverability test: undiscounted
+    cash flows of $120,000 × 7 + $80,000 = $920,000 are less than $1,050,000, so the carrying amount is
+    not recoverable. For an asset held and used, the loss is the carrying amount less fair value: $1,050,000
+    − $560,000 = $490,000. Costs to sell are not deducted because the machine is not held for sale, and
+    the present value of Uldale''s own cash flows is not fair value.'
+- stem: On January 1, Year 1, Wensley Co. bought a packaging line for $720,000, which it depreciates straight-line
+    over 6 years with no residual value. At December 31, Year 3, after recording that year's depreciation,
+    demand for the product the machine makes has fallen sharply. Wensley now expects the machine to generate
+    net cash inflows of $105,000 a year for its remaining 3 years, plus $30,000 from selling it at the
+    end of that time. Dealers in similar used machines would pay $226,000 for it today, and selling it
+    would cost $11,000. Discounted at Wensley's 8% incremental borrowing rate, the expected cash flows
+    are worth $294,000. Wensley plans to keep using the machine. What impairment loss should Wensley recognize
+    at December 31, Year 3?
+  choices:
+  - id: A
+    text: $15,000
+    rationale: Measures the loss as the carrying amount less the $345,000 of undiscounted cash flows.
+      Undiscounted cash flows only test recoverability; the loss is measured against fair value.
+  - id: B
+    text: $66,000
+    rationale: Measures the loss against the $294,000 present value of Wensley's own expected cash flows
+      at its borrowing rate (a value-in-use measure, as under IFRS). U.S. GAAP measures the loss against
+      fair value, the $226,000 a market participant would pay.
+  - id: C
+    text: $134,000
+    rationale: Correct. $360,000 carrying amount − $226,000 fair value.
+  - id: D
+    text: $254,000
+    rationale: Tests the carrying amount before Year 3 depreciation ($480,000). Depreciation for the year
+      is recorded first, then the machine is tested.
+  answer: C
+  explanation: 'Carrying amount = $720,000 − 3 × $120,000 = $360,000. Recoverability test: undiscounted
+    cash flows of $105,000 × 3 + $30,000 = $345,000 are less than $360,000, so the carrying amount is
+    not recoverable. For an asset held and used, the loss is the carrying amount less fair value: $360,000
+    − $226,000 = $134,000. Costs to sell are not deducted because the machine is not held for sale, and
+    the present value of Wensley''s own cash flows is not fair value.'

@@ -1,0 +1,134 @@
+id: far-cash-flows-0012
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 230-10-45-13 (cash flows from investing activities)
+  - ASC 230-10-50-3 (noncash investing and financing activities)
+  - ASC 360-10 (derecognition of equipment)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Hetton Co.'s comparative balance sheets show equipment of $2,840,000 at January 1, Year 2, and $3,175,000
+  at December 31, and accumulated depreciation on equipment of $1,120,000 and $1,205,000. Year 2 depreciation
+  expense on equipment was $248,000. During Year 2, Hetton sold equipment that had cost $290,000 and reported
+  a gain of $17,000 on the sale; it acquired a machine costing $180,000 by paying $40,000 in cash and
+  signing a note payable to the seller for the rest; and it bought other equipment for cash. No other
+  equipment was retired. What net cash used in investing activities do these equipment transactions produce
+  in Hetton's Year 2 statement of cash flows?
+choices:
+- id: A
+  text: $341,000
+  rationale: Correct. Cash purchases $485,000 − proceeds $144,000.
+- id: B
+  text: $358,000
+  rationale: 'Takes the sale proceeds to be the equipment''s $127,000 carrying amount. The $17,000 gain
+    means Hetton received more than that: $144,000.'
+- id: C
+  text: $481,000
+  rationale: Treats the whole $180,000 machine as a cash purchase. Only the $40,000 down payment was cash;
+    the $140,000 note to the seller is a noncash investing and financing activity.
+- id: D
+  text: $485,000
+  rationale: Leaves out the $144,000 received for the equipment sold. Proceeds from selling equipment
+    are an investing inflow; only the gain is removed from operating activities.
+answer: A
+explanation: Accumulated depreciation removed with the equipment sold = $1,120,000 + $248,000 − $1,205,000
+  = $163,000, so its carrying amount was $290,000 − $163,000 = $127,000 and the proceeds were $127,000
+  + $17,000 gain = $144,000. Equipment acquired = $3,175,000 − $2,840,000 + $290,000 = $625,000, of which
+  the $140,000 financed by the seller's note is noncash, leaving cash purchases of $485,000. Net cash
+  used in investing activities = $485,000 − $144,000 = $341,000.
+variants:
+- stem: Litton Co.'s comparative balance sheets show equipment of $1,960,000 at January 1, Year 2, and
+    $2,215,000 at December 31, and accumulated depreciation on equipment of $780,000 and $846,000. Year
+    2 depreciation expense on equipment was $171,000. During Year 2, Litton sold equipment that had cost
+    $210,000 and reported a gain of $12,000 on the sale; it acquired a machine costing $135,000 by paying
+    $30,000 in cash and signing a note payable to the seller for the rest; and it bought other equipment
+    for cash. No other equipment was retired. What net cash used in investing activities do these equipment
+    transactions produce in Litton's Year 2 statement of cash flows?
+  choices:
+  - id: A
+    text: $33,000
+    rationale: Takes equipment purchases to be the $255,000 net increase in the equipment account. The
+      equipment sold took $210,000 out of the account, so purchases were $465,000.
+  - id: B
+    text: $138,000
+    rationale: 'Ignores the accumulated depreciation removed with the equipment sold, so it puts the proceeds
+      at $210,000 cost plus the gain. Accumulated depreciation: $780,000 + $171,000 − $846,000 = $105,000
+      was removed.'
+  - id: C
+    text: $243,000
+    rationale: Correct. Cash purchases $360,000 − proceeds $117,000.
+  - id: D
+    text: $348,000
+    rationale: Treats the whole $135,000 machine as a cash purchase. Only the $30,000 down payment was
+      cash; the $105,000 note to the seller is a noncash investing and financing activity.
+  answer: C
+  explanation: Accumulated depreciation removed with the equipment sold = $780,000 + $171,000 − $846,000
+    = $105,000, so its carrying amount was $210,000 − $105,000 = $105,000 and the proceeds were $105,000
+    + $12,000 gain = $117,000. Equipment acquired = $2,215,000 − $1,960,000 + $210,000 = $465,000, of
+    which the $105,000 financed by the seller's note is noncash, leaving cash purchases of $360,000. Net
+    cash used in investing activities = $360,000 − $117,000 = $243,000.
+- stem: Halton Co.'s comparative balance sheets show equipment of $4,150,000 at January 1, Year 2, and
+    $4,580,000 at December 31, and accumulated depreciation on equipment of $1,640,000 and $1,772,000.
+    Year 2 depreciation expense on equipment was $362,000. During Year 2, Halton sold equipment that had
+    cost $405,000 and reported a gain of $24,000 on the sale; it acquired a machine costing $260,000 by
+    paying $55,000 in cash and signing a note payable to the seller for the rest; and it bought other
+    equipment for cash. No other equipment was retired. What net cash used in investing activities do
+    these equipment transactions produce in Halton's Year 2 statement of cash flows?
+  choices:
+  - id: A
+    text: $201,000
+    rationale: 'Ignores the accumulated depreciation removed with the equipment sold, so it puts the proceeds
+      at $405,000 cost plus the gain. Accumulated depreciation: $1,640,000 + $362,000 − $1,772,000 = $230,000
+      was removed.'
+  - id: B
+    text: $431,000
+    rationale: Correct. Cash purchases $630,000 − proceeds $199,000.
+  - id: C
+    text: $455,000
+    rationale: 'Takes the sale proceeds to be the equipment''s $175,000 carrying amount. The $24,000 gain
+      means Halton received more than that: $199,000.'
+  - id: D
+    text: $636,000
+    rationale: Treats the whole $260,000 machine as a cash purchase. Only the $55,000 down payment was
+      cash; the $205,000 note to the seller is a noncash investing and financing activity.
+  answer: B
+  explanation: Accumulated depreciation removed with the equipment sold = $1,640,000 + $362,000 − $1,772,000
+    = $230,000, so its carrying amount was $405,000 − $230,000 = $175,000 and the proceeds were $175,000
+    + $24,000 gain = $199,000. Equipment acquired = $4,580,000 − $4,150,000 + $405,000 = $835,000, of
+    which the $205,000 financed by the seller's note is noncash, leaving cash purchases of $630,000. Net
+    cash used in investing activities = $630,000 − $199,000 = $431,000.
+- stem: Gayle Co.'s comparative balance sheets show equipment of $1,380,000 at January 1, Year 2, and
+    $1,572,000 at December 31, and accumulated depreciation on equipment of $536,000 and $581,000. Year
+    2 depreciation expense on equipment was $121,000. During Year 2, Gayle sold equipment that had cost
+    $148,000 and reported a gain of $9,000 on the sale; it acquired a machine costing $96,000 by paying
+    $20,000 in cash and signing a note payable to the seller for the rest; and it bought other equipment
+    for cash. No other equipment was retired. What net cash used in investing activities do these equipment
+    transactions produce in Gayle's Year 2 statement of cash flows?
+  choices:
+  - id: A
+    text: $35,000
+    rationale: Takes equipment purchases to be the $192,000 net increase in the equipment account. The
+      equipment sold took $148,000 out of the account, so purchases were $340,000.
+  - id: B
+    text: $107,000
+    rationale: 'Ignores the accumulated depreciation removed with the equipment sold, so it puts the proceeds
+      at $148,000 cost plus the gain. Accumulated depreciation: $536,000 + $121,000 − $581,000 = $76,000
+      was removed.'
+  - id: C
+    text: $183,000
+    rationale: Correct. Cash purchases $264,000 − proceeds $81,000.
+  - id: D
+    text: $192,000
+    rationale: 'Takes the sale proceeds to be the equipment''s $72,000 carrying amount. The $9,000 gain
+      means Gayle received more than that: $81,000.'
+  answer: C
+  explanation: Accumulated depreciation removed with the equipment sold = $536,000 + $121,000 − $581,000
+    = $76,000, so its carrying amount was $148,000 − $76,000 = $72,000 and the proceeds were $72,000 +
+    $9,000 gain = $81,000. Equipment acquired = $1,572,000 − $1,380,000 + $148,000 = $340,000, of which
+    the $76,000 financed by the seller's note is noncash, leaving cash purchases of $264,000. Net cash
+    used in investing activities = $264,000 − $81,000 = $183,000.

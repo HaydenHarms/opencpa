@@ -1,0 +1,159 @@
+id: far-consolidated-statements-0009
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 810-10-45 (consolidation procedures: intra-entity profit; attribution to the noncontrolling interest)'
+  - ASC 810-10 (noncontrolling interests)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Aldous Corp. has owned 80% of Gisburn Inc. since acquiring it at the beginning of Year 1, when it
+  measured the noncontrolling interest at fair value. For Year 3, Gisburn reports net income of $360,000.
+  On January 1, Year 3, Gisburn sold equipment to Aldous for $160,000; its carrying amount on Gisburn's
+  books was $120,000, and Aldous depreciates it straight-line over its remaining 5-year life with no residual
+  value. Consolidation also records $15,000 a year of amortization of the acquisition-date excess of fair
+  value over book value of Gisburn's building. During Year 3, Gisburn paid Aldous management fees of $24,000,
+  and Aldous sold goods to Gisburn at a profit; Gisburn's December 31 inventory includes $25,000 of Aldous's
+  profit on those goods. Aldous attributes the elimination of profit on Gisburn's sales to Aldous proportionately
+  between the parent and the noncontrolling interest. What net income attributable to the noncontrolling
+  interest should Aldous's Year 3 consolidated income statement report?
+choices:
+- id: A
+  text: $57,600
+  rationale: Also charges the NCI with 20% of the $25,000 of unrealized profit on Aldous's sales to Gisburn.
+    Profit on a downstream sale is the parent's, so its elimination is attributed entirely to Aldous.
+- id: B
+  text: $61,000
+  rationale: Eliminates the $40,000 gain but not the $8,000 of it realized in Year 3. Aldous depreciates
+    the equipment on its $160,000 cost, so $40,000 ÷ 5 = $8,000 of the extra depreciation is added back.
+- id: C
+  text: $62,600
+  rationale: Correct. 20% × ($360,000 − $40,000 + $8,000 − $15,000) = 20% × $313,000.
+- id: D
+  text: $69,000
+  rationale: Leaves the $40,000 gain on Gisburn's sale of equipment to Aldous in Gisburn's income. Profit
+    on a sale within the group isn't realized until the equipment is used up or sold outside the group,
+    and Aldous attributes the elimination proportionately, so the NCI bears 20% of it.
+answer: C
+explanation: The NCI's share is 20% of Gisburn's income as adjusted in consolidation. Start with Gisburn's
+  $360,000. The $40,000 gain on the upstream equipment sale is unrealized and eliminated, and the $8,000
+  of it realized through Aldous's higher depreciation ($40,000 ÷ 5) is added back; under Aldous's policy
+  these upstream eliminations are shared with the NCI. The $15,000 amortization of the building's fair
+  value excess reduces Gisburn's income. The management fees eliminate without changing income, and the
+  profit in Gisburn's inventory came from Aldous's (downstream) sales, so its elimination falls entirely
+  on Aldous. 20% × ($360,000 − $40,000 + $8,000 − $15,000) = 20% × $313,000 = $62,600.
+variants:
+- stem: Dellow Corp. has owned 80% of Hartop Inc. since acquiring it at the beginning of Year 1, when
+    it measured the noncontrolling interest at fair value. For Year 3, Hartop reports net income of $520,000.
+    On January 1, Year 3, Hartop sold equipment to Dellow for $210,000; its carrying amount on Hartop's
+    books was $150,000, and Dellow depreciates it straight-line over its remaining 4-year life with no
+    residual value. Consolidation also records $22,000 a year of amortization of the acquisition-date
+    excess of fair value over book value of Hartop's building. During Year 3, Hartop paid Dellow management
+    fees of $30,000, and Dellow sold goods to Hartop at a profit; Hartop's December 31 inventory includes
+    $35,000 of Dellow's profit on those goods. Dellow attributes the elimination of profit on Hartop's
+    sales to Dellow proportionately between the parent and the noncontrolling interest. What net income
+    attributable to the noncontrolling interest should Dellow's Year 3 consolidated income statement report?
+  choices:
+  - id: A
+    text: $87,600
+    rationale: Eliminates the $60,000 gain but not the $15,000 of it realized in Year 3. Dellow depreciates
+      the equipment on its $210,000 cost, so $60,000 ÷ 4 = $15,000 of the extra depreciation is added
+      back.
+  - id: B
+    text: $90,600
+    rationale: Correct. 20% × ($520,000 − $60,000 + $15,000 − $22,000) = 20% × $453,000.
+  - id: C
+    text: $95,000
+    rationale: Leaves out the $22,000 amortization of the excess of fair value over book value of Hartop's
+      building. It reduces Hartop's income as measured in the consolidated statements, so the NCI's share
+      is based on income after it.
+  - id: D
+    text: $96,600
+    rationale: Adds back the $30,000 of management fees Hartop paid Dellow. Eliminating the fee removes
+      Dellow's revenue and Hartop's expense together; it doesn't change Hartop's income or the NCI's share
+      of it.
+  answer: B
+  explanation: The NCI's share is 20% of Hartop's income as adjusted in consolidation. Start with Hartop's
+    $520,000. The $60,000 gain on the upstream equipment sale is unrealized and eliminated, and the $15,000
+    of it realized through Dellow's higher depreciation ($60,000 ÷ 4) is added back; under Dellow's policy
+    these upstream eliminations are shared with the NCI. The $22,000 amortization of the building's fair
+    value excess reduces Hartop's income. The management fees eliminate without changing income, and the
+    profit in Hartop's inventory came from Dellow's (downstream) sales, so its elimination falls entirely
+    on Dellow. 20% × ($520,000 − $60,000 + $15,000 − $22,000) = 20% × $453,000 = $90,600.
+- stem: Embry Corp. has owned 80% of Iveson Inc. since acquiring it at the beginning of Year 1, when it
+    measured the noncontrolling interest at fair value. For Year 3, Iveson reports net income of $245,000.
+    On January 1, Year 3, Iveson sold equipment to Embry for $96,000; its carrying amount on Iveson's
+    books was $69,000, and Embry depreciates it straight-line over its remaining 3-year life with no residual
+    value. Consolidation also records $11,000 a year of amortization of the acquisition-date excess of
+    fair value over book value of Iveson's building. During Year 3, Iveson paid Embry management fees
+    of $14,000, and Embry sold goods to Iveson at a profit; Iveson's December 31 inventory includes $16,000
+    of Embry's profit on those goods. Embry attributes the elimination of profit on Iveson's sales to
+    Embry proportionately between the parent and the noncontrolling interest. What net income attributable
+    to the noncontrolling interest should Embry's Year 3 consolidated income statement report?
+  choices:
+  - id: A
+    text: $40,000
+    rationale: Also charges the NCI with 20% of the $16,000 of unrealized profit on Embry's sales to Iveson.
+      Profit on a downstream sale is the parent's, so its elimination is attributed entirely to Embry.
+  - id: B
+    text: $41,400
+    rationale: Eliminates the $27,000 gain but not the $9,000 of it realized in Year 3. Embry depreciates
+      the equipment on its $96,000 cost, so $27,000 ÷ 3 = $9,000 of the extra depreciation is added back.
+  - id: C
+    text: $43,200
+    rationale: Correct. 20% × ($245,000 − $27,000 + $9,000 − $11,000) = 20% × $216,000.
+  - id: D
+    text: $45,400
+    rationale: Leaves out the $11,000 amortization of the excess of fair value over book value of Iveson's
+      building. It reduces Iveson's income as measured in the consolidated statements, so the NCI's share
+      is based on income after it.
+  answer: C
+  explanation: The NCI's share is 20% of Iveson's income as adjusted in consolidation. Start with Iveson's
+    $245,000. The $27,000 gain on the upstream equipment sale is unrealized and eliminated, and the $9,000
+    of it realized through Embry's higher depreciation ($27,000 ÷ 3) is added back; under Embry's policy
+    these upstream eliminations are shared with the NCI. The $11,000 amortization of the building's fair
+    value excess reduces Iveson's income. The management fees eliminate without changing income, and the
+    profit in Iveson's inventory came from Embry's (downstream) sales, so its elimination falls entirely
+    on Embry. 20% × ($245,000 − $27,000 + $9,000 − $11,000) = 20% × $216,000 = $43,200.
+- stem: Fanshaw Corp. has owned 80% of Kemble Inc. since acquiring it at the beginning of Year 1, when
+    it measured the noncontrolling interest at fair value. For Year 3, Kemble reports net income of $680,000.
+    On January 1, Year 3, Kemble sold equipment to Fanshaw for $300,000; its carrying amount on Kemble's
+    books was $225,000, and Fanshaw depreciates it straight-line over its remaining 5-year life with no
+    residual value. Consolidation also records $26,000 a year of amortization of the acquisition-date
+    excess of fair value over book value of Kemble's building. During Year 3, Kemble paid Fanshaw management
+    fees of $42,000, and Fanshaw sold goods to Kemble at a profit; Kemble's December 31 inventory includes
+    $48,000 of Fanshaw's profit on those goods. Fanshaw attributes the elimination of profit on Kemble's
+    sales to Fanshaw proportionately between the parent and the noncontrolling interest. What net income
+    attributable to the noncontrolling interest should Fanshaw's Year 3 consolidated income statement
+    report?
+  choices:
+  - id: A
+    text: $118,800
+    rationale: Correct. 20% × ($680,000 − $75,000 + $15,000 − $26,000) = 20% × $594,000.
+  - id: B
+    text: $124,000
+    rationale: Leaves out the $26,000 amortization of the excess of fair value over book value of Kemble's
+      building. It reduces Kemble's income as measured in the consolidated statements, so the NCI's share
+      is based on income after it.
+  - id: C
+    text: $127,200
+    rationale: Adds back the $42,000 of management fees Kemble paid Fanshaw. Eliminating the fee removes
+      Fanshaw's revenue and Kemble's expense together; it doesn't change Kemble's income or the NCI's
+      share of it.
+  - id: D
+    text: $130,800
+    rationale: Leaves the $75,000 gain on Kemble's sale of equipment to Fanshaw in Kemble's income. Profit
+      on a sale within the group isn't realized until the equipment is used up or sold outside the group,
+      and Fanshaw attributes the elimination proportionately, so the NCI bears 20% of it.
+  answer: A
+  explanation: The NCI's share is 20% of Kemble's income as adjusted in consolidation. Start with Kemble's
+    $680,000. The $75,000 gain on the upstream equipment sale is unrealized and eliminated, and the $15,000
+    of it realized through Fanshaw's higher depreciation ($75,000 ÷ 5) is added back; under Fanshaw's
+    policy these upstream eliminations are shared with the NCI. The $26,000 amortization of the building's
+    fair value excess reduces Kemble's income. The management fees eliminate without changing income,
+    and the profit in Kemble's inventory came from Fanshaw's (downstream) sales, so its elimination falls
+    entirely on Fanshaw. 20% × ($680,000 − $75,000 + $15,000 − $26,000) = 20% × $594,000 = $118,800.

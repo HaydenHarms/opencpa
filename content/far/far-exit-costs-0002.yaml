@@ -1,0 +1,173 @@
+id: far-exit-costs-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 420-10-25 (one-time employee termination benefits; contract termination costs; other associated
+    costs)
+  - ASC 420-10-30 (measurement at fair value)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On November 20, Year 1, Embsay Co.'s board approved a plan to close a distribution center on February
+  28, Year 2, and on December 1, Year 1, Embsay told the affected employees. Its 40 warehouse staff will
+  be terminated on January 20, Year 2, and each will receive $3,000 if they work until then; no law or
+  agreement requires Embsay to give notice of termination. Its 6 supervisors will each receive $12,000,
+  but only if they stay until the center closes. On December 15, Year 1, Embsay sent written notice terminating
+  the center's equipment maintenance contract, which is not a lease, and became liable for its $18,000
+  cancellation penalty. The center's security monitoring contract, also not a lease, runs to December,
+  Year 2; Embsay will pay $21,000 under it for the months after the center closes and will get no benefit
+  from it then. Moving the center's equipment to other sites, at an expected cost of $35,000, will happen
+  in March, Year 2. Ignore discounting and treat each month as equal in length. What total liability for
+  exit and disposal costs should Embsay report at December 31, Year 1?
+choices:
+- id: A
+  text: $144,000
+  rationale: Leaves out the $18,000 cancellation penalty. A cost to terminate a contract is recognized
+    when the contract is terminated under its terms, which the December 15 notice did.
+- id: B
+  text: $162,000
+  rationale: Correct. $120,000 staff + $18,000 penalty + $72,000 × 1/3 supervisors.
+- id: C
+  text: $197,000
+  rationale: Includes the $35,000 cost of moving equipment. Costs to relocate assets are recognized when
+    incurred, in March, Year 2.
+- id: D
+  text: $210,000
+  rationale: 'Recognizes all $72,000 of the supervisors'' benefits at once. They must work until February
+    28, more than 60 days after December 1, so their benefits are recognized ratably over December through
+    February: one-third in Year 1.'
+answer: B
+explanation: 'One-time termination benefits are recognized when the plan is communicated if employees
+  need not work beyond the minimum retention period (the legal notification period, or 60 days when, as
+  here, no notice is required); otherwise they are recognized ratably over the future service period.
+  The warehouse staff work only to January 20, within 60 days of December 1, so all 40 × $3,000 = $120,000
+  is recognized on December 1. The supervisors must stay until February 28, beyond 60 days, so their 6
+  × $12,000 = $72,000 is spread over December, January and February: $24,000 in Year 1. The contract cancellation
+  penalty is recognized when the contract is terminated (December 15): $18,000. The monitoring payments
+  are recognized at the cease-use date in Year 2, and relocation costs when incurred. Liability = $120,000
+  + $18,000 + $24,000 = $162,000.'
+variants:
+- stem: On November 20, Year 1, Flasby Co.'s board approved a plan to close a distribution center on February
+    28, Year 2, and on December 1, Year 1, Flasby told the affected employees. Its 55 warehouse staff
+    will be terminated on January 20, Year 2, and each will receive $2,500 if they work until then; no
+    law or agreement requires Flasby to give notice of termination. Its 8 supervisors will each receive
+    $9,000, but only if they stay until the center closes. On December 15, Year 1, Flasby sent written
+    notice terminating the center's equipment maintenance contract, which is not a lease, and became liable
+    for its $14,000 cancellation penalty. The center's security monitoring contract, also not a lease,
+    runs to December, Year 2; Flasby will pay $16,500 under it for the months after the center closes
+    and will get no benefit from it then. Moving the center's equipment to other sites, at an expected
+    cost of $28,000, will happen in March, Year 2. Ignore discounting and treat each month as equal in
+    length. What total liability for exit and disposal costs should Flasby report at December 31, Year
+    1?
+  choices:
+  - id: A
+    text: $38,000
+    rationale: Leaves out the warehouse staff's $137,500. They work only until January 20, within the
+      60-day minimum retention period that applies when no notice is legally required, so the whole liability
+      is recognized when the plan is communicated, on December 1.
+  - id: B
+    text: $161,500
+    rationale: Leaves out the $14,000 cancellation penalty. A cost to terminate a contract is recognized
+      when the contract is terminated under its terms, which the December 15 notice did.
+  - id: C
+    text: $175,500
+    rationale: Correct. $137,500 staff + $14,000 penalty + $72,000 × 1/3 supervisors.
+  - id: D
+    text: $192,000
+    rationale: Includes the $16,500 of monitoring payments after the center closes. A liability for costs
+      that continue under a contract without benefit to Flasby is recognized on the date Flasby stops
+      using the right, February 28, Year 2.
+  answer: C
+  explanation: 'One-time termination benefits are recognized when the plan is communicated if employees
+    need not work beyond the minimum retention period (the legal notification period, or 60 days when,
+    as here, no notice is required); otherwise they are recognized ratably over the future service period.
+    The warehouse staff work only to January 20, within 60 days of December 1, so all 55 × $2,500 = $137,500
+    is recognized on December 1. The supervisors must stay until February 28, beyond 60 days, so their
+    8 × $9,000 = $72,000 is spread over December, January and February: $24,000 in Year 1. The contract
+    cancellation penalty is recognized when the contract is terminated (December 15): $14,000. The monitoring
+    payments are recognized at the cease-use date in Year 2, and relocation costs when incurred. Liability
+    = $137,500 + $14,000 + $24,000 = $175,500.'
+- stem: On November 20, Year 1, Kettlewell Co.'s board approved a plan to close a distribution center
+    on February 28, Year 2, and on December 1, Year 1, Kettlewell told the affected employees. Its 30
+    warehouse staff will be terminated on January 20, Year 2, and each will receive $4,000 if they work
+    until then; no law or agreement requires Kettlewell to give notice of termination. Its 5 supervisors
+    will each receive $15,000, but only if they stay until the center closes. On December 15, Year 1,
+    Kettlewell sent written notice terminating the center's equipment maintenance contract, which is not
+    a lease, and became liable for its $22,000 cancellation penalty. The center's security monitoring
+    contract, also not a lease, runs to December, Year 2; Kettlewell will pay $26,000 under it for the
+    months after the center closes and will get no benefit from it then. Moving the center's equipment
+    to other sites, at an expected cost of $41,000, will happen in March, Year 2. Ignore discounting and
+    treat each month as equal in length. What total liability for exit and disposal costs should Kettlewell
+    report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $167,000
+    rationale: Correct. $120,000 staff + $22,000 penalty + $75,000 × 1/3 supervisors.
+  - id: B
+    text: $193,000
+    rationale: Includes the $26,000 of monitoring payments after the center closes. A liability for costs
+      that continue under a contract without benefit to Kettlewell is recognized on the date Kettlewell
+      stops using the right, February 28, Year 2.
+  - id: C
+    text: $208,000
+    rationale: Includes the $41,000 cost of moving equipment. Costs to relocate assets are recognized
+      when incurred, in March, Year 2.
+  - id: D
+    text: $217,000
+    rationale: 'Recognizes all $75,000 of the supervisors'' benefits at once. They must work until February
+      28, more than 60 days after December 1, so their benefits are recognized ratably over December through
+      February: one-third in Year 1.'
+  answer: A
+  explanation: 'One-time termination benefits are recognized when the plan is communicated if employees
+    need not work beyond the minimum retention period (the legal notification period, or 60 days when,
+    as here, no notice is required); otherwise they are recognized ratably over the future service period.
+    The warehouse staff work only to January 20, within 60 days of December 1, so all 30 × $4,000 = $120,000
+    is recognized on December 1. The supervisors must stay until February 28, beyond 60 days, so their
+    5 × $15,000 = $75,000 is spread over December, January and February: $25,000 in Year 1. The contract
+    cancellation penalty is recognized when the contract is terminated (December 15): $22,000. The monitoring
+    payments are recognized at the cease-use date in Year 2, and relocation costs when incurred. Liability
+    = $120,000 + $22,000 + $25,000 = $167,000.'
+- stem: On November 20, Year 1, Langcliffe Co.'s board approved a plan to close a distribution center
+    on February 28, Year 2, and on December 1, Year 1, Langcliffe told the affected employees. Its 64
+    warehouse staff will be terminated on January 20, Year 2, and each will receive $2,000 if they work
+    until then; no law or agreement requires Langcliffe to give notice of termination. Its 7 supervisors
+    will each receive $10,500, but only if they stay until the center closes. On December 15, Year 1,
+    Langcliffe sent written notice terminating the center's equipment maintenance contract, which is not
+    a lease, and became liable for its $12,000 cancellation penalty. The center's security monitoring
+    contract, also not a lease, runs to December, Year 2; Langcliffe will pay $19,000 under it for the
+    months after the center closes and will get no benefit from it then. Moving the center's equipment
+    to other sites, at an expected cost of $24,000, will happen in March, Year 2. Ignore discounting and
+    treat each month as equal in length. What total liability for exit and disposal costs should Langcliffe
+    report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $36,500
+    rationale: Leaves out the warehouse staff's $128,000. They work only until January 20, within the
+      60-day minimum retention period that applies when no notice is legally required, so the whole liability
+      is recognized when the plan is communicated, on December 1.
+  - id: B
+    text: $152,500
+    rationale: Leaves out the $12,000 cancellation penalty. A cost to terminate a contract is recognized
+      when the contract is terminated under its terms, which the December 15 notice did.
+  - id: C
+    text: $164,500
+    rationale: Correct. $128,000 staff + $12,000 penalty + $73,500 × 1/3 supervisors.
+  - id: D
+    text: $213,500
+    rationale: 'Recognizes all $73,500 of the supervisors'' benefits at once. They must work until February
+      28, more than 60 days after December 1, so their benefits are recognized ratably over December through
+      February: one-third in Year 1.'
+  answer: C
+  explanation: 'One-time termination benefits are recognized when the plan is communicated if employees
+    need not work beyond the minimum retention period (the legal notification period, or 60 days when,
+    as here, no notice is required); otherwise they are recognized ratably over the future service period.
+    The warehouse staff work only to January 20, within 60 days of December 1, so all 64 × $2,000 = $128,000
+    is recognized on December 1. The supervisors must stay until February 28, beyond 60 days, so their
+    7 × $10,500 = $73,500 is spread over December, January and February: $24,500 in Year 1. The contract
+    cancellation penalty is recognized when the contract is terminated (December 15): $12,000. The monitoring
+    payments are recognized at the cease-use date in Year 2, and relocation costs when incurred. Liability
+    = $128,000 + $12,000 + $24,500 = $164,500.'

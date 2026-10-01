@@ -1,0 +1,41 @@
+id: far-asset-retirement-obligations-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 410-20-35 (subsequent measurement of asset retirement obligations: revisions to the timing or
+    amount of estimated cash flows)'
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Corrie Mining recognized an asset retirement obligation for a quarry in Year 1, discounting the
+  expected cash flows at its credit-adjusted risk-free rate at that time, 6%. In Year 4, it raises its
+  estimate of the undiscounted cash flows needed to restore the site, and its credit-adjusted risk-free
+  rate is now 8%. At what rate should Corrie discount the increase in the estimated cash flows?
+choices:
+- id: A
+  text: The 6% credit-adjusted risk-free rate used for the original obligation
+  rationale: The original rate applies to downward revisions, which reduce existing layers. An increase
+    is a new layer, discounted at today's rate.
+- id: B
+  text: A risk-free rate, with no adjustment for Corrie's own credit standing
+  rationale: Asset retirement obligations are discounted at a credit-adjusted risk-free rate, which reflects
+    the entity's credit standing.
+- id: C
+  text: A weighted average of the credit-adjusted rates used for the existing layers
+  rationale: A weighted-average rate is used for a downward revision when the layer it relates to can't
+    be identified, not for an increase.
+- id: D
+  text: Its current credit-adjusted risk-free rate of 8%
+  rationale: Correct. An upward revision in estimated undiscounted cash flows creates a new layer of the
+    liability, measured using the current credit-adjusted risk-free rate.
+answer: D
+explanation: Under ASC 410-20, changes in an asset retirement obligation from revisions to the timing
+  or amount of estimated undiscounted cash flows are recognized as changes in the liability and the related
+  asset retirement cost. An upward revision is a new liability layer, discounted at the entity's current
+  credit-adjusted risk-free rate. A downward revision is discounted at the rate used when the related
+  layer was first recognized (or a weighted-average rate if that layer can't be identified). The rate
+  is always credit-adjusted.

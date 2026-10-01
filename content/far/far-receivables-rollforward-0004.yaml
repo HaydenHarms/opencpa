@@ -1,0 +1,134 @@
+id: far-receivables-rollforward-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 310-10 (receivables)
+  - ASC 326-20-35 (write-offs and recoveries)
+  - 'ASC 606-10-55 (sales with a right of return: refund liability)'
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Horton Co. is rolling forward its accounts receivable control account for Year 2 to test the aged
+  subledger. Receivables were $462,000 at January 1. Year 2 sales on account were $3,180,000. The cash
+  receipts journal shows $3,365,000 received, including $284,000 of cash sales and $7,000 collected on
+  an account written off in Year 1. Accounts written off in Year 2 totaled $23,000. In November, a customer
+  settled its $31,000 account by transferring to Horton a delivery van with a fair value of $31,000. During
+  the year, Horton's refund liability for expected sales returns increased by $12,000. What balance should
+  the rollforward show for accounts receivable, before any allowance, at December 31, Year 2?
+choices:
+- id: A
+  text: $230,000
+  rationale: Subtracts all $3,365,000 of cash received. The $284,000 of cash sales never passed through
+    accounts receivable.
+- id: B
+  text: $502,000
+  rationale: Also subtracts the $12,000 increase in the refund liability for expected returns. Expected
+    returns are a liability, not a reduction of the amounts customers owe.
+- id: C
+  text: $507,000
+  rationale: Treats the $7,000 received on the account written off in Year 1 as a collection of current
+    receivables. That account was already out of receivables; collecting it reinstates and then clears
+    it (or goes straight to the allowance), so it doesn't reduce the balance.
+- id: D
+  text: $514,000
+  rationale: Correct. $462,000 + $3,180,000 − ($3,365,000 − $284,000 − $7,000) − $23,000 − $31,000.
+answer: D
+explanation: 'Collections that reduce current receivables exclude the $284,000 of cash sales and the $7,000
+  recovery of an account written off in Year 1 (it is reinstated and collected, or credited to the allowance,
+  with no net effect on receivables): $3,365,000 − $284,000 − $7,000 = $3,074,000. Ending receivables
+  = $462,000 + $3,180,000 − $3,074,000 − $23,000 write-offs − $31,000 settled with the van = $514,000.
+  The refund liability is a separate liability and doesn''t change receivables.'
+variants:
+- stem: Ribblehead Co. is rolling forward its accounts receivable control account for Year 2 to test the
+    aged subledger. Receivables were $338,000 at January 1. Year 2 sales on account were $2,410,000. The
+    cash receipts journal shows $2,540,000 received, including $205,000 of cash sales and $5,500 collected
+    on an account written off in Year 1. Accounts written off in Year 2 totaled $17,500. In November,
+    a customer settled its $24,000 account by transferring to Ribblehead a delivery van with a fair value
+    of $24,000. During the year, Ribblehead's refund liability for expected sales returns increased by
+    $9,000. What balance should the rollforward show for accounts receivable, before any allowance, at
+    December 31, Year 2?
+  choices:
+  - id: A
+    text: $172,000
+    rationale: Subtracts all $2,540,000 of cash received. The $205,000 of cash sales never passed through
+      accounts receivable.
+  - id: B
+    text: $368,000
+    rationale: Also subtracts the $9,000 increase in the refund liability for expected returns. Expected
+      returns are a liability, not a reduction of the amounts customers owe.
+  - id: C
+    text: $377,000
+    rationale: Correct. $338,000 + $2,410,000 − ($2,540,000 − $205,000 − $5,500) − $17,500 − $24,000.
+  - id: D
+    text: $401,000
+    rationale: Leaves the $24,000 account settled with a delivery van in receivables. The account was
+      settled, even though no cash was received.
+  answer: C
+  explanation: 'Collections that reduce current receivables exclude the $205,000 of cash sales and the
+    $5,500 recovery of an account written off in Year 1 (it is reinstated and collected, or credited to
+    the allowance, with no net effect on receivables): $2,540,000 − $205,000 − $5,500 = $2,329,500. Ending
+    receivables = $338,000 + $2,410,000 − $2,329,500 − $17,500 write-offs − $24,000 settled with the van
+    = $377,000. The refund liability is a separate liability and doesn''t change receivables.'
+- stem: Selside Co. is rolling forward its accounts receivable control account for Year 2 to test the
+    aged subledger. Receivables were $615,000 at January 1. Year 2 sales on account were $4,270,000. The
+    cash receipts journal shows $4,525,000 received, including $372,000 of cash sales and $9,200 collected
+    on an account written off in Year 1. Accounts written off in Year 2 totaled $31,000. In November,
+    a customer settled its $46,000 account by transferring to Selside a delivery van with a fair value
+    of $46,000. During the year, Selside's refund liability for expected sales returns increased by $15,000.
+    What balance should the rollforward show for accounts receivable, before any allowance, at December
+    31, Year 2?
+  choices:
+  - id: A
+    text: $655,000
+    rationale: Treats the $9,200 received on the account written off in Year 1 as a collection of current
+      receivables. That account was already out of receivables; collecting it reinstates and then clears
+      it (or goes straight to the allowance), so it doesn't reduce the balance.
+  - id: B
+    text: $664,200
+    rationale: Correct. $615,000 + $4,270,000 − ($4,525,000 − $372,000 − $9,200) − $31,000 − $46,000.
+  - id: C
+    text: $695,200
+    rationale: Leaves out the $31,000 of Year 2 write-offs, which remove accounts from receivables.
+  - id: D
+    text: $710,200
+    rationale: Leaves the $46,000 account settled with a delivery van in receivables. The account was
+      settled, even though no cash was received.
+  answer: B
+  explanation: 'Collections that reduce current receivables exclude the $372,000 of cash sales and the
+    $9,200 recovery of an account written off in Year 1 (it is reinstated and collected, or credited to
+    the allowance, with no net effect on receivables): $4,525,000 − $372,000 − $9,200 = $4,143,800. Ending
+    receivables = $615,000 + $4,270,000 − $4,143,800 − $31,000 write-offs − $46,000 settled with the van
+    = $664,200. The refund liability is a separate liability and doesn''t change receivables.'
+- stem: Stainforth Co. is rolling forward its accounts receivable control account for Year 2 to test the
+    aged subledger. Receivables were $249,000 at January 1. Year 2 sales on account were $1,765,000. The
+    cash receipts journal shows $1,860,000 received, including $148,000 of cash sales and $4,100 collected
+    on an account written off in Year 1. Accounts written off in Year 2 totaled $12,500. In November,
+    a customer settled its $18,000 account by transferring to Stainforth a delivery van with a fair value
+    of $18,000. During the year, Stainforth's refund liability for expected sales returns increased by
+    $6,500. What balance should the rollforward show for accounts receivable, before any allowance, at
+    December 31, Year 2?
+  choices:
+  - id: A
+    text: $127,600
+    rationale: Subtracts all $1,860,000 of cash received. The $148,000 of cash sales never passed through
+      accounts receivable.
+  - id: B
+    text: $269,100
+    rationale: Also subtracts the $6,500 increase in the refund liability for expected returns. Expected
+      returns are a liability, not a reduction of the amounts customers owe.
+  - id: C
+    text: $275,600
+    rationale: Correct. $249,000 + $1,765,000 − ($1,860,000 − $148,000 − $4,100) − $12,500 − $18,000.
+  - id: D
+    text: $288,100
+    rationale: Leaves out the $12,500 of Year 2 write-offs, which remove accounts from receivables.
+  answer: C
+  explanation: 'Collections that reduce current receivables exclude the $148,000 of cash sales and the
+    $4,100 recovery of an account written off in Year 1 (it is reinstated and collected, or credited to
+    the allowance, with no net effect on receivables): $1,860,000 − $148,000 − $4,100 = $1,707,900. Ending
+    receivables = $249,000 + $1,765,000 − $1,707,900 − $12,500 write-offs − $18,000 settled with the van
+    = $275,600. The refund liability is a separate liability and doesn''t change receivables.'

@@ -1,0 +1,42 @@
+id: far-valuation-allowance-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 740-10-30-5 (valuation allowance: more likely than not)'
+  - ASC 740-10-30-16 to 30-25 (weighing positive and negative evidence)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: At December 31, Year 2, Ardley Corp. reports a deferred tax asset for a tax credit carryforward
+  that expires in Year 6. After weighing all available positive and negative evidence, management estimates
+  a 55% likelihood that part of the credit will expire unused. How should Ardley report the deferred tax
+  asset?
+choices:
+- id: A
+  text: Reduce it by a valuation allowance for the part expected to expire unused
+  rationale: Correct. A valuation allowance is needed when it is more likely than not (a likelihood of
+    more than 50%) that some portion of a deferred tax asset will not be realized, and it reduces the
+    asset to the amount more likely than not to be realized.
+- id: B
+  text: Report it in full, since expiry of any part of the credit isn't yet probable
+  rationale: 'Probable is the loss-contingency threshold. The valuation allowance threshold is lower:
+    more likely than not.'
+- id: C
+  text: Reduce it by a valuation allowance equal to 55% of the deferred tax asset's amount
+  rationale: The allowance isn't a probability-weighted share of the asset. It covers the portion that
+    is more likely than not to go unrealized.
+- id: D
+  text: Write off the whole deferred tax asset, because part of the credit could expire unused
+  rationale: The allowance covers only the portion more likely than not to go unrealized, not the whole
+    asset.
+answer: A
+explanation: ASC 740 requires a deferred tax asset to be reduced by a valuation allowance if, based on
+  the weight of available evidence, it is more likely than not (a likelihood of more than 50%) that some
+  portion or all of it will not be realized. The allowance is the amount needed to reduce the asset to
+  the amount that is more likely than not to be realized. A 55% likelihood that part of the credit will
+  expire unused meets that threshold for that part, so Ardley records an allowance for it, and the rest
+  of the asset is reported without one.

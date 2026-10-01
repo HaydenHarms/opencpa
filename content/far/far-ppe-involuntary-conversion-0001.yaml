@@ -1,0 +1,132 @@
+id: far-ppe-involuntary-conversion-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 610-30 (gains and losses on involuntary conversions of nonmonetary assets to monetary assets)
+  - ASC 360-10 (depreciation)
+  notes: Batch 10. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Keld Co.'s warehouse, which cost $1,470,000 and had accumulated depreciation of $588,000 at January
+  1, Year 4, was destroyed by fire on April 30, Year 4. Keld depreciates the warehouse straight-line at
+  $58,800 a year and records depreciation up to the date of any disposal. In November, its insurer paid
+  $1,060,000 in settlement of the claim, after deducting the policy's $25,000 deductible. In December,
+  Keld used the proceeds and other cash to buy a replacement warehouse for $1,600,000. What gain should
+  Keld recognize in Year 4 on the destruction of the warehouse?
+choices:
+- id: A
+  text: $178,000
+  rationale: Leaves out depreciation from January 1 to the date of the fire ($19,600). Depreciation is
+    recorded up to the date of an involuntary conversion, which lowers the carrying amount and raises
+    the gain.
+- id: B
+  text: $197,600
+  rationale: Correct. $1,060,000 − ($1,470,000 − $588,000 − $19,600).
+- id: C
+  text: $222,600
+  rationale: Adds back the $25,000 deductible. The gain is measured with the $1,060,000 Keld actually
+    received.
+- id: D
+  text: $236,800
+  rationale: Records a full year of depreciation ($58,800). The warehouse was destroyed on April 30, so
+    only 4 months ($19,600) are recorded.
+answer: B
+explanation: 'An involuntary conversion is accounted for like any other disposal: depreciation is recorded
+  to the date of the fire, and the difference between the insurance proceeds and the carrying amount is
+  a gain or loss, whether or not the proceeds are reinvested. Depreciation for 4 months = $58,800 × 4/12
+  = $19,600. Carrying amount = $1,470,000 − $588,000 − $19,600 = $862,400. Gain = $1,060,000 − $862,400
+  = $197,600. The replacement warehouse is recorded at its $1,600,000 cost.'
+variants:
+- stem: Lindley Co.'s warehouse, which cost $984,000 and had accumulated depreciation of $393,600 at January
+    1, Year 4, was destroyed by fire on July 31, Year 4. Lindley depreciates the warehouse straight-line
+    at $39,360 a year and records depreciation up to the date of any disposal. In November, its insurer
+    paid $705,000 in settlement of the claim, after deducting the policy's $20,000 deductible. In December,
+    Lindley used the proceeds and other cash to buy a replacement warehouse for $1,100,000. What gain
+    should Lindley recognize in Year 4 on the destruction of the warehouse?
+  choices:
+  - id: A
+    text: $0
+    rationale: Defers the gain because Lindley reinvested the proceeds in a replacement warehouse. Under
+      U.S. GAAP, a gain or loss on an involuntary conversion is recognized even when the proceeds are
+      reinvested; deferral is a tax rule.
+  - id: B
+    text: $114,600
+    rationale: Leaves out depreciation from January 1 to the date of the fire ($22,960). Depreciation
+      is recorded up to the date of an involuntary conversion, which lowers the carrying amount and raises
+      the gain.
+  - id: C
+    text: $137,560
+    rationale: Correct. $705,000 − ($984,000 − $393,600 − $22,960).
+  - id: D
+    text: $157,560
+    rationale: Adds back the $20,000 deductible. The gain is measured with the $705,000 Lindley actually
+      received.
+  answer: C
+  explanation: 'An involuntary conversion is accounted for like any other disposal: depreciation is recorded
+    to the date of the fire, and the difference between the insurance proceeds and the carrying amount
+    is a gain or loss, whether or not the proceeds are reinvested. Depreciation for 7 months = $39,360
+    × 7/12 = $22,960. Carrying amount = $984,000 − $393,600 − $22,960 = $567,440. Gain = $705,000 − $567,440
+    = $137,560. The replacement warehouse is recorded at its $1,100,000 cost.'
+- stem: Otley Co.'s warehouse, which cost $2,256,000 and had accumulated depreciation of $1,128,000 at
+    January 1, Year 4, was destroyed by fire on March 31, Year 4. Otley depreciates the warehouse straight-line
+    at $90,240 a year and records depreciation up to the date of any disposal. In November, its insurer
+    paid $1,480,000 in settlement of the claim, after deducting the policy's $50,000 deductible. In December,
+    Otley used the proceeds and other cash to buy a replacement warehouse for $2,500,000. What gain should
+    Otley recognize in Year 4 on the destruction of the warehouse?
+  choices:
+  - id: A
+    text: $0
+    rationale: Defers the gain because Otley reinvested the proceeds in a replacement warehouse. Under
+      U.S. GAAP, a gain or loss on an involuntary conversion is recognized even when the proceeds are
+      reinvested; deferral is a tax rule.
+  - id: B
+    text: $374,560
+    rationale: Correct. $1,480,000 − ($2,256,000 − $1,128,000 − $22,560).
+  - id: C
+    text: $424,560
+    rationale: Adds back the $50,000 deductible. The gain is measured with the $1,480,000 Otley actually
+      received.
+  - id: D
+    text: $442,240
+    rationale: Records a full year of depreciation ($90,240). The warehouse was destroyed on March 31,
+      so only 3 months ($22,560) are recorded.
+  answer: B
+  explanation: 'An involuntary conversion is accounted for like any other disposal: depreciation is recorded
+    to the date of the fire, and the difference between the insurance proceeds and the carrying amount
+    is a gain or loss, whether or not the proceeds are reinvested. Depreciation for 3 months = $90,240
+    × 3/12 = $22,560. Carrying amount = $2,256,000 − $1,128,000 − $22,560 = $1,105,440. Gain = $1,480,000
+    − $1,105,440 = $374,560. The replacement warehouse is recorded at its $2,500,000 cost.'
+- stem: Pateley Co.'s warehouse, which cost $768,000 and had accumulated depreciation of $230,400 at January
+    1, Year 4, was destroyed by fire on September 30, Year 4. Pateley depreciates the warehouse straight-line
+    at $30,720 a year and records depreciation up to the date of any disposal. In November, its insurer
+    paid $640,000 in settlement of the claim, after deducting the policy's $15,000 deductible. In December,
+    Pateley used the proceeds and other cash to buy a replacement warehouse for $850,000. What gain should
+    Pateley recognize in Year 4 on the destruction of the warehouse?
+  choices:
+  - id: A
+    text: $0
+    rationale: Defers the gain because Pateley reinvested the proceeds in a replacement warehouse. Under
+      U.S. GAAP, a gain or loss on an involuntary conversion is recognized even when the proceeds are
+      reinvested; deferral is a tax rule.
+  - id: B
+    text: $102,400
+    rationale: Leaves out depreciation from January 1 to the date of the fire ($23,040). Depreciation
+      is recorded up to the date of an involuntary conversion, which lowers the carrying amount and raises
+      the gain.
+  - id: C
+    text: $125,440
+    rationale: Correct. $640,000 − ($768,000 − $230,400 − $23,040).
+  - id: D
+    text: $133,120
+    rationale: Records a full year of depreciation ($30,720). The warehouse was destroyed on September
+      30, so only 9 months ($23,040) are recorded.
+  answer: C
+  explanation: 'An involuntary conversion is accounted for like any other disposal: depreciation is recorded
+    to the date of the fire, and the difference between the insurance proceeds and the carrying amount
+    is a gain or loss, whether or not the proceeds are reinvested. Depreciation for 9 months = $30,720
+    × 9/12 = $23,040. Carrying amount = $768,000 − $230,400 − $23,040 = $514,560. Gain = $640,000 − $514,560
+    = $125,440. The replacement warehouse is recorded at its $850,000 cost.'
