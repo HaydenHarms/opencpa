@@ -111,6 +111,6 @@ One verifier solved all 88 versions and matched every key. Fixes applied:
 
 **Blind re-check after the fixes:** a fresh verifier re-solved all 21 versions of the six changed items. It matched every key and found no second answers. Its one item-level fix is applied: variant 2 of `ppe-reconciliation-0003` swaps the weak "repair deducted twice" distractor ($3,286,600) for "no depreciation fix" ($3,250,000), as in the other versions.
 
-**Open, bank-wide:** the verifier noted that none of those 21 keys is D. Because numeric choices sort ascending and each version 0 now has distractors on both sides of the key, the largest value is rarely correct. Bank-wide D keys are scarce (version 0: A 44, B 63, C 58, D 35 before this batch). The next batch should put some keys at D, using variants or items whose natural errors understate, without making every distractor err the same way.
+**Open, bank-wide:** the verifier noted that none of those 21 keys is D. Because numeric choices sort ascending and each version 0 now has distractors on both sides of the key, the largest value is rarely correct. Bank-wide D keys are scarce (version-0 keys across all 200 FAR MCQs: A 40, B 67, C 60, D 33). The next batch should put some keys at D, using variants or items whose natural errors understate, without making every distractor err the same way.
 
 **Bank after batch 09:** 200 FAR MCQs (501 variants), 12% / 51.5% / 36.5% by skill and 35.5% / 35% / 29.5% by area, all in range. Tasks I.A.3a and I.F.a still have no items.
