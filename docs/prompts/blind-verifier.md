@@ -27,4 +27,4 @@ Output a markdown table: id | your answer | confidence | problems (or "clean"), 
 Be skeptical and specific.
 ```
 
-After the verifier reports: compare its letters to the key, reconcile every disagreement, and apply every required fix. Note that a blind solve mostly checks the arithmetic; the review agent (below in CLAUDE.md) is the gate for difficulty and standards currency.
+After the verifier reports: compare its letters to the key, reconcile every disagreement, and apply every required fix. Note that a blind solve mostly checks the arithmetic; the review agent (step 5 in `docs/content-pipeline.md`) is the gate for difficulty and standards currency.
