@@ -55,4 +55,10 @@ Revision 1 went to `main` at the owner's request before the gate fixes. Revision
 | Balance sheet | Exhibit 2 detailed only the balances that turned out wrong; the bonds' original term was missing. | Added clean detail for prepaid expenses and accrued liabilities; the bonds are ten-year bonds issued January 1, Year 1, due Year 10. |
 | Cash flows | "No cash changed hands" made the noncash classification easy. | Removed. |
 
+**Blind verification of revision 2.** A fresh verifier re-solved every task in all six simulations and matched every key. It found two required fixes and one point to confirm:
+
+- **EPS:** giving both a July–December and a full-year average price made the option shares ambiguous (7,500 or 6,000). Only the July–December average is given now.
+- **Cash flows:** the select row now reads "interest paid on the bonds and the note", consistent with task 4.
+- **Income statement, task 2:** the verifier asked that the warehouse loss's placement be pinned. The key stays $357,000, because ASC 360-10-45-5 requires a disposal loss that is not a discontinued operation to be included in income from operations when that subtotal is presented. Textbook layouts that put it under "other gains and losses" are not GAAP, so the scenario doesn't state the placement; that is the judgment the task tests.
+
 The old ids `far-tbs-eps-0001` and `far-tbs-nfp-activities-0001` are retired and must not be reused.

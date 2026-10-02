@@ -165,7 +165,7 @@ SIM1 = tbs(
                 ("r2", "Acquisition of the packaging machine on March 1", "Noncash investing and financing disclosure"),
                 ("r3", "December 31 payment on the equipment note", "Financing activities"),
                 ("r4", "Repurchase of shares on October 5", "Financing activities"),
-                ("r5", "Interest paid on the bonds", "Operating activities")],
+                ("r5", "Interest paid on the bonds and the note", "Operating activities")],
                "The sale proceeds are investing. The machine bought with a note involves no cash at acquisition, so it is disclosed as a noncash investing and financing activity, and the later principal payment on the note is a financing outflow. Buying treasury stock is a financing outflow. Under U.S. GAAP, interest paid is an operating cash flow, even on debt whose principal is a financing item.",
                points=2),
     ],
@@ -499,7 +499,7 @@ SIM5 = tbs(
                 ("r5", "Hollin family gift", "Recognized — with donor restrictions"),
                 ("r6", "Pemberton Realty building", "Recognized — without donor restrictions"),
                 ("r7", "Delacroix family gift", "Recognized — without donor restrictions")],
-               f"The Larkspur promise depends on a barrier Wrenfield hasn't overcome (opening a staffed dental unit) and the foundation owes nothing if it fails, so it is conditional and not recognized. The Okafor promise is unconditional and restricted to the diabetes program (and payable later), so it is with donor restrictions. The physicians' services need specialized skills Wrenfield would otherwise buy, so they are recognized ({PHYS_HOURS} × ${PHYS_RATE} = {d(PHYS)}) as revenue and as program expense. The reception and mailing work needs no specialized skills and doesn't create or enhance a nonfinancial asset, so it isn't recognized. The Hollin gift must be held in perpetuity, so it is with donor restrictions. The building came with no donor stipulation, so it is support without donor restrictions at its {d(BUILDING)} fair value; GAAP no longer lets an entity imply a time restriction on a gift of a long-lived asset. The Delacroix gift was restricted to the flu drive, but the restriction was met in the year received, so under Wrenfield's policy it is reported without donor restrictions.",
+               f"The Larkspur promise depends on a barrier Wrenfield hasn't overcome (opening a staffed dental unit) and the foundation owes nothing if it fails, so it is conditional and not recognized. The Okafor promise is unconditional and restricted to the diabetes program (and payable later), so it is with donor restrictions. The physicians' services need specialized skills Wrenfield would otherwise buy, so they are recognized ({PHYS_HOURS} × ${PHYS_RATE} = {d(PHYS)}) as revenue and as program expense (patient care is Wrenfield's program). The reception and mailing work needs no specialized skills and doesn't create or enhance a nonfinancial asset, so it isn't recognized. The Hollin gift must be held in perpetuity, so it is with donor restrictions. The building came with no donor stipulation, so it is support without donor restrictions at its {d(BUILDING)} fair value; GAAP no longer lets an entity imply a time restriction on a gift of a long-lived asset. The Delacroix gift was restricted to the flu drive, but the restriction was met in the year received, so under Wrenfield's policy it is reported without donor restrictions.",
                points=2),
         num("t2", "What is Wrenfield's change in net assets without donor restrictions for Year 2?", wodr,
             f"Patient service revenue {d(PATIENT)} + cash gifts {d(CASH_GIFTS)} + Delacroix gift {d(FLU)} + donated building {d(BUILDING)} + contributed physician services {d(PHYS)} + investment gain {d(INV_GAIN)} + net assets released from restrictions {d(released)} − expenses {d(expenses)} = {d(wodr)}. Expenses = program {d(PROGRAM)} + donated physician services {d(PHYS)} + management and general {d(MG)} + fundraising {d(FR)}. The board's set-aside is an internal designation and leaves the reserve without donor restrictions.",
@@ -530,12 +530,11 @@ avail = NI6  # noncumulative preferred, no dividend declared
 basic = cents2(Decimal(avail) / wa)
 pref_full = int(PREF_SH * PREF_PAR * PREF_RATE)
 basic_if_pref = cents2(Decimal(NI6 - pref_full) / wa)
-OPT, EX, AVG_PERIOD, AVG_YEAR, YE = 40000, 24, 32, 30, 35
+OPT, EX, AVG_PERIOD, YE = 40000, 24, 32, 35
 inc_pre = Decimal(OPT - OPT * EX / AVG_PERIOD) * 6 / 12
 inc = inc_pre * SPLIT
 assert inc == inc.to_integral_value()
 inc = int(inc)
-inc_year_avg = int((Decimal(OPT - Decimal(OPT * EX) / AVG_YEAR) * 6 / 12 * SPLIT).to_integral_value(ROUND_HALF_UP))
 bond_int_pre = Decimal(remain) * COUPON + Decimal(CONVERTED) * COUPON * 8 / 12
 bond_int = int((bond_int_pre * (1 - CT)).to_integral_value(ROUND_HALF_UP))
 assert bond_int == bond_int_pre * (1 - CT)
@@ -563,9 +562,9 @@ SIM6 = tbs(
      ("Exhibit 2: Potential common shares and market data", f"""
 | Item | Detail |
 |---|---|
-| Convertible bonds | {d(BONDS6)} face, {int(COUPON * 100)}% interest paid each December 31 issued at par in Year 0. Bonds converted during the year are paid interest accrued to the conversion date. Each $1,000 bond converts into {CONV} common shares. |
+| Convertible bonds | {d(BONDS6)} face, {int(COUPON * 100)}% interest paid each December 31, issued at par in Year 0. Bonds converted during the year are paid interest accrued to the conversion date. Each $1,000 bond converts into {CONV} common shares. |
 | Stock options | {OPT:,} options with an exercise price of ${EX}, granted July 1, Year 2; none exercised or forfeited |
-| Market price of common stock | Average for July–December, Year 2, ${AVG_PERIOD}; average for all of Year 2, ${AVG_YEAR}; December 31, Year 2, ${YE} |
+| Market price of common stock | Average for July–December, Year 2, ${AVG_PERIOD}; December 31, Year 2, ${YE} |
 | Note | Every share count, price and conversion ratio in Exhibits 1 and 2 is stated before the 3-for-2 split. |
 """)],
     [
@@ -575,7 +574,7 @@ SIM6 = tbs(
         num("t2", "What is Corwin's basic EPS for Year 2?", basic,
             f"{d(avail)} ÷ {wa:,} = {basic}. The preferred stock is noncumulative and no dividend was declared for Year 2, so nothing is deducted (deducting a full year's {d(pref_full)} would give {basic_if_pref}). The common dividend doesn't affect EPS.", tolerance=0),
         units("t3", "How many incremental shares do the stock options add to the denominator of diluted EPS?", inc,
-              f"Treasury stock method, using the average price for the period the options were outstanding: {OPT:,} − {OPT:,} × ${EX} ÷ ${AVG_PERIOD} = {OPT - OPT * EX // AVG_PERIOD:,} shares, weighted for the six months since the July 1 grant = {int(inc_pre):,}, × 1.5 for the split = {inc:,}. Using the full-year average price would give {inc_year_avg:,}."),
+              f"Treasury stock method, using the average price for the period the options were outstanding: {OPT:,} − {OPT:,} × ${EX} ÷ ${AVG_PERIOD} = {OPT - OPT * EX // AVG_PERIOD:,} shares, weighted for the six months since the July 1 grant = {int(inc_pre):,}, × 1.5 for the split = {inc:,}. Using the December 31 price would not be appropriate; the treasury stock method uses an average price."),
         num("t4", "By what amount does Corwin adjust the numerator of diluted EPS for the convertible bonds?", bond_int,
             f"Add back the after-tax interest recognized in Year 2 on all the bonds: {d(remain)} × {int(COUPON * 100)}% = {d(int(remain * COUPON))} on the bonds still outstanding, plus {d(CONVERTED)} × {int(COUPON * 100)}% × 8/12 = {d(int(CONVERTED * COUPON * 8 / 12))} on the converted bonds until September 1, a total of {d(int(bond_int_pre))}, × (1 − 25%) = {d(bond_int)}."),
         num("t5", "What is Corwin's diluted EPS for Year 2?", diluted,

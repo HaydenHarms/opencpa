@@ -182,7 +182,7 @@ tasks:
     label: Repurchase of shares on October 5
     answer: Financing activities
   - id: r5
-    label: Interest paid on the bonds
+    label: Interest paid on the bonds and the note
     answer: Operating activities
   explanation: The sale proceeds are investing. The machine bought with a note involves no cash at acquisition,
     so it is disclosed as a noncash investing and financing activity, and the later principal payment

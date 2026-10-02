@@ -118,13 +118,13 @@ tasks:
     dental unit) and the foundation owes nothing if it fails, so it is conditional and not recognized.
     The Okafor promise is unconditional and restricted to the diabetes program (and payable later), so
     it is with donor restrictions. The physicians' services need specialized skills Wrenfield would otherwise
-    buy, so they are recognized (600 × $75 = $45,000) as revenue and as program expense. The reception
-    and mailing work needs no specialized skills and doesn't create or enhance a nonfinancial asset, so
-    it isn't recognized. The Hollin gift must be held in perpetuity, so it is with donor restrictions.
-    The building came with no donor stipulation, so it is support without donor restrictions at its $220,000
-    fair value; GAAP no longer lets an entity imply a time restriction on a gift of a long-lived asset.
-    The Delacroix gift was restricted to the flu drive, but the restriction was met in the year received,
-    so under Wrenfield's policy it is reported without donor restrictions.
+    buy, so they are recognized (600 × $75 = $45,000) as revenue and as program expense (patient care
+    is Wrenfield's program). The reception and mailing work needs no specialized skills and doesn't create
+    or enhance a nonfinancial asset, so it isn't recognized. The Hollin gift must be held in perpetuity,
+    so it is with donor restrictions. The building came with no donor stipulation, so it is support without
+    donor restrictions at its $220,000 fair value; GAAP no longer lets an entity imply a time restriction
+    on a gift of a long-lived asset. The Delacroix gift was restricted to the flu drive, but the restriction
+    was met in the year received, so under Wrenfield's policy it is reported without donor restrictions.
 - id: t2
   type: numeric
   points: 2

@@ -43,15 +43,15 @@ exhibits:
 
     |---|---|
 
-    | Convertible bonds | $1,500,000 face, 4% interest paid each December 31 issued at par in Year 0.
+    | Convertible bonds | $1,500,000 face, 4% interest paid each December 31, issued at par in Year 0.
     Bonds converted during the year are paid interest accrued to the conversion date. Each $1,000 bond
     converts into 30 common shares. |
 
     | Stock options | 40,000 options with an exercise price of $24, granted July 1, Year 2; none exercised
     or forfeited |
 
-    | Market price of common stock | Average for July–December, Year 2, $32; average for all of Year 2,
-    $30; December 31, Year 2, $35 |
+    | Market price of common stock | Average for July–December, Year 2, $32; December 31, Year 2, $35
+    |
 
     | Note | Every share count, price and conversion ratio in Exhibits 1 and 2 is stated before the 3-for-2
     split. |'
@@ -86,7 +86,8 @@ tasks:
   answer: 7500
   explanation: 'Treasury stock method, using the average price for the period the options were outstanding:
     40,000 − 40,000 × $24 ÷ $32 = 10,000 shares, weighted for the six months since the July 1 grant =
-    5,000, × 1.5 for the split = 7,500. Using the full-year average price would give 6,000.'
+    5,000, × 1.5 for the split = 7,500. Using the December 31 price would not be appropriate; the treasury
+    stock method uses an average price.'
 - id: t4
   type: numeric
   points: 1
