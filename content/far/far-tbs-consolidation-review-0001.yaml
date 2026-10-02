@@ -107,8 +107,8 @@ exhibits:
     | Acquisition | Pomeroy bought all of Strand''s stock on January 1, Year 1, for $1,500,000 cash. Strand''s
     book equity then was $1,200,000 (common stock and paid-in capital $700,000, retained earnings $500,000).
     Book values equaled fair values except Strand''s equipment, whose fair value was $200,000 above book
-    value; the equipment then had a 10-year remaining life with no residual value and is depreciated straight-line.
-    Any remaining excess is goodwill, which has not been impaired. |
+    value; the equipment then had a 10-year remaining life with no residual value, is depreciated straight-line
+    and is still in use. Any remaining excess is goodwill, which has not been impaired. |
 
     | Appraisal | An appraisal commissioned in December, Year 3, values Strand''s equipment at $950,000
     and Strand as a whole at $2,100,000. |
@@ -179,7 +179,7 @@ tasks:
   points: 1
   unit: cents
   tolerance: 100
-  prompt: What is the correct consolidated cost of goods sold for Year 3?
+  prompt: What amount should Pomeroy report as consolidated cost of goods sold for Year 3?
   answer: 237000000
   explanation: $1,920,000 + $840,000 − $400,000 intra-entity sales + $25,000 unrealized profit in ending
     inventory ($100,000 × 25%) − $15,000 profit in beginning inventory realized this year ($60,000 × 25%)
@@ -189,7 +189,7 @@ tasks:
   points: 2
   unit: cents
   tolerance: 100
-  prompt: What is the correct consolidated net income for Year 3?
+  prompt: What amount should Pomeroy report as consolidated net income for Year 3?
   answer: 66460000
   explanation: Pomeroy $594,000 − $80,000 dividend from Strand + Strand $180,600 − $20,000 step-up depreciation
     − $25,000 ending unrealized profit + $15,000 beginning profit realized = $664,600. The intra-entity
@@ -200,7 +200,7 @@ tasks:
   points: 1
   unit: cents
   tolerance: 100
-  prompt: What is the correct consolidated equipment, net, at December 31, Year 3?
+  prompt: What amount should Pomeroy report as consolidated equipment, net, at December 31, Year 3?
   answer: 214000000
   explanation: $1,300,000 + $700,000 + $200,000 step-up − $60,000 accumulated step-up depreciation ($20,000
     × 3 years) = $2,140,000. The December appraisal is not recorded; equipment stays at cost less depreciation.
@@ -209,7 +209,7 @@ tasks:
   points: 2
   unit: cents
   tolerance: 100
-  prompt: What is the correct consolidated retained earnings at December 31, Year 3?
+  prompt: What amount should Pomeroy report as consolidated retained earnings at December 31, Year 3?
   answer: 313500000
   explanation: Pomeroy's retained earnings $2,900,000 (which already include the dividends it received
     from Strand) + Strand's growth in retained earnings since the acquisition, $820,000 − $500,000 = $320,000,

@@ -26,7 +26,17 @@ FAR now has 9 simulations: Area I 6, Area II 1, Area III 2, with 4 of the 9 tagg
 
 ## Blind verification
 
-(pending)
+One verifier solved all 33 tasks from the scenarios, exhibits and prompts alone, doing the arithmetic in Python. **Every answer matched the key.** It confirmed that every exhibit foots and ties: both comparative balance sheets, the draft and corrected Quillon balance sheets, and both draft statements.
+
+Required fixes, all applied (no key changed):
+
+| Simulation | Finding | Fix |
+| --- | --- | --- |
+| Balance sheet review | A candidate had to infer that the December 18 dividend wasn't recorded; assuming it was booked to accrued liabilities gives $409,000 retained earnings. | The board-minutes exhibit now notes that no entry has been made for the dividend. The consignment line also says Quillon recorded no purchase for the consigned goods. |
+| NFP activities | The van fund didn't say what happens to the $25,000 not spent on the van, so a $120,000 release was defensible (changing tasks 2–4). | The fund is restricted to buying and equipping the van, and the donor's agreement requires any unspent balance to go to the van's medical equipment. |
+| Income statement review | Confirm that task 2's key puts the warehouse loss inside income from operations (ASC 360-10). | It does ($405,000), and the explanation says why. The prompt doesn't state the placement, since that is what the task tests. |
+
+Suggestions also applied: neutral wording on consolidation tasks 2, 4 and 5 ("What amount should Pomeroy report…" rather than "the correct…", which hinted that those lines were wrong); the revalued equipment is stated to be still in use; the NFP classification options read "Recognized — …" so they cover gains; and the equipment note's interest terms are stated. The verifier also asked whether currency tasks accept whole-dollar entries. They do: the player converts dollars to cents.
 
 ## Review gate
 

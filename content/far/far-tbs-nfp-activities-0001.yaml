@@ -71,7 +71,9 @@ exhibits:
 
     |---|---|---|
 
-    | Mobile clinic van fund | $120,000 | Cash gift received in Year 1, restricted to buying a van |
+    | Mobile clinic van fund | $120,000 | Cash gift received in Year 1, restricted to buying and equipping
+    a mobile clinic van; the donor''s agreement requires any unspent balance to be used for the van''s
+    medical equipment |
 
     | Diabetes education program | $80,000 | Cash grant received in Year 1, restricted to that program
     |'
@@ -82,28 +84,28 @@ tasks:
   prompt: Indicate whether Wrenfield should recognize each item as revenue, gains or other support in
     its Year 2 statement of activities, and if so in which net asset class.
   options:
-  - Revenue — without donor restrictions
-  - Revenue — with donor restrictions
-  - Not recognized as revenue
+  - Recognized — without donor restrictions
+  - Recognized — with donor restrictions
+  - Not recognized
   rows:
   - id: r1
     label: Larkspur Foundation promise
-    answer: Not recognized as revenue
+    answer: Not recognized
   - id: r2
     label: Okafor Trust promise
-    answer: Revenue — with donor restrictions
+    answer: Recognized — with donor restrictions
   - id: r3
     label: Volunteer physicians' services
-    answer: Revenue — without donor restrictions
+    answer: Recognized — without donor restrictions
   - id: r4
     label: Community volunteers' services
-    answer: Not recognized as revenue
+    answer: Not recognized
   - id: r5
     label: Hollin family gift
-    answer: Revenue — with donor restrictions
+    answer: Recognized — with donor restrictions
   - id: r6
     label: Net gain on the operating reserve investments
-    answer: Revenue — without donor restrictions
+    answer: Recognized — without donor restrictions
   explanation: The Larkspur promise depends on a barrier Wrenfield hasn't overcome (a matching requirement)
     with a right of release, so it is conditional and not recognized. The Okafor promise is unconditional;
     because the cash comes in a later period, it carries an implied time restriction and is revenue with

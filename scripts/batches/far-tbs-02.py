@@ -139,7 +139,7 @@ SIM1 = tbs(
 | Date | Note |
 |---|---|
 | February 10 | Sold equipment that had cost {d(SOLD_COST)} and had accumulated depreciation of {d(SOLD_AD)}, for {d(SOLD_PROCEEDS)} cash. |
-| March 1 | Acquired a packaging machine by signing a {d(NOTE_EQUIP)} three-year note payable to the seller. No cash changed hands. A {d(NOTE_PAID)} principal payment on the note was made on December 31. |
+| March 1 | Acquired a packaging machine by signing a {d(NOTE_EQUIP)} three-year, 6% note payable to the seller, with interest paid each December 31 and included in interest expense. No cash changed hands. A {d(NOTE_PAID)} principal payment on the note was made on December 31. |
 | May 15 | Declared and distributed a 10% stock dividend on the 200,000 shares then outstanding, when the market price was ${STOCK_DIV_PRICE} per share. |
 | June 30 | Issued {ISSUE_SH:,} shares of common stock for cash at ${ISSUE_PRICE} per share. |
 | August 12 | Bought equipment for {d(CASH_EQUIP)} cash. |
@@ -253,7 +253,7 @@ SIM2 = tbs(
      ("Exhibit 3: Consolidation file notes", f"""
 | Topic | Note |
 |---|---|
-| Acquisition | Pomeroy bought all of Strand's stock on January 1, Year 1, for {d(PRICE)} cash. Strand's book equity then was {d(S_EQ_ACQ)} (common stock and paid-in capital {d(S_CS_ACQ)}, retained earnings {d(S_RE_ACQ)}). Book values equaled fair values except Strand's equipment, whose fair value was {d(STEP_UP)} above book value; the equipment then had a {LIFE}-year remaining life with no residual value and is depreciated straight-line. Any remaining excess is goodwill, which has not been impaired. |
+| Acquisition | Pomeroy bought all of Strand's stock on January 1, Year 1, for {d(PRICE)} cash. Strand's book equity then was {d(S_EQ_ACQ)} (common stock and paid-in capital {d(S_CS_ACQ)}, retained earnings {d(S_RE_ACQ)}). Book values equaled fair values except Strand's equipment, whose fair value was {d(STEP_UP)} above book value; the equipment then had a {LIFE}-year remaining life with no residual value, is depreciated straight-line and is still in use. Any remaining excess is goodwill, which has not been impaired. |
 | Appraisal | An appraisal commissioned in December, Year 3, values Strand's equipment at $950,000 and Strand as a whole at $2,100,000. |
 | Merchandise | Strand sells goods to Pomeroy at a 25% gross margin on the selling price. Strand's Year 3 sales to Pomeroy were {d(IC_SALES)}. Pomeroy's inventory included goods bought from Strand of {d(BEG_HELD)} at January 1, Year 3, and {d(END_HELD)} at December 31, Year 3, at Pomeroy's cost. Pomeroy sold the January 1 goods to outside customers in Year 3. |
 | Loan | On January 1, Year 3, Pomeroy lent Strand {d(LOAN)} at {int(LOAN_RATE * 100)}%, interest paid each December 31. The rest of Strand's notes payable is owed to its bank. |
@@ -264,14 +264,14 @@ SIM2 = tbs(
                SEL, sel2,
                f"Sales: the {d(IC_SALES)} of intra-entity sales were eliminated, so the draft is correct. Cost of goods sold: the draft eliminated {d(IC_SALES)} but not the profit in inventory; it must add the {d(end_up)} unrealized at year end and remove the {d(beg_up)} from January 1 that was realized in Year 3, so the draft is understated by {d(cor['cogs'] - draft['cogs'])}. Depreciation: the {d(extra_dep)} a year on the equipment step-up is missing (understated). Interest expense: only the {d(loan_int)} on the intra-entity loan was eliminated, which is correct. Dividend income: the {d(S_DIV)} from Strand is intra-entity and must be eliminated (overstated). Inventory includes {d(end_up)} of unrealized profit (overstated). Equipment includes the full {d(STEP_UP)} step-up with none of the {d(extra_dep * YEARS)} of depreciation for Years 1–3 (overstated). Goodwill = {d(PRICE)} − {d(S_EQ_ACQ)} − {d(STEP_UP)} = {d(goodwill)}, correct. Notes payable still includes the {d(LOAN)} owed to Pomeroy (overstated). Retained earnings added all of Strand's retained earnings, including the {d(S_RE_ACQ)} earned before the acquisition (overstated).",
                points=3),
-        num("t2", "What is the correct consolidated cost of goods sold for Year 3?", cor["cogs"],
+        num("t2", "What amount should Pomeroy report as consolidated cost of goods sold for Year 3?", cor["cogs"],
             f"{d(P['cogs'])} + {d(S['cogs'])} − {d(IC_SALES)} intra-entity sales + {d(end_up)} unrealized profit in ending inventory ({d(END_HELD)} × 25%) − {d(beg_up)} profit in beginning inventory realized this year ({d(BEG_HELD)} × 25%) = {d(cor['cogs'])}."),
-        num("t3", "What is the correct consolidated net income for Year 3?", cor["ni"],
+        num("t3", "What amount should Pomeroy report as consolidated net income for Year 3?", cor["ni"],
             f"Pomeroy {d(P['ni'])} − {d(S_DIV)} dividend from Strand + Strand {d(S['ni'])} − {d(extra_dep)} step-up depreciation − {d(end_up)} ending unrealized profit + {d(beg_up)} beginning profit realized = {d(cor['ni'])}. The intra-entity interest ({d(loan_int)}) is income to Pomeroy and expense to Strand, so eliminating it doesn't change net income.",
             points=2),
-        num("t4", "What is the correct consolidated equipment, net, at December 31, Year 3?", cor_bs["equip"],
+        num("t4", "What amount should Pomeroy report as consolidated equipment, net, at December 31, Year 3?", cor_bs["equip"],
             f"{d(P_BS['equip'])} + {d(S_BS['equip'])} + {d(STEP_UP)} step-up − {d(extra_dep * YEARS)} accumulated step-up depreciation ({d(extra_dep)} × {YEARS} years) = {d(cor_bs['equip'])}. The December appraisal is not recorded; equipment stays at cost less depreciation."),
-        num("t5", "What is the correct consolidated retained earnings at December 31, Year 3?", cor_bs["re"],
+        num("t5", "What amount should Pomeroy report as consolidated retained earnings at December 31, Year 3?", cor_bs["re"],
             f"Pomeroy's retained earnings {d(P_BS['re'])} (which already include the dividends it received from Strand) + Strand's growth in retained earnings since the acquisition, {d(S_BS['re'])} − {d(S_RE_ACQ)} = {d(S_BS['re'] - S_RE_ACQ)}, − {d(extra_dep * YEARS)} step-up depreciation for Years 1–3 − {d(end_up)} unrealized profit in ending inventory = {d(cor_bs['re'])}. The profit in the January 1 inventory was realized in Year 3 and no longer affects retained earnings.",
             points=2),
     ],
@@ -330,7 +330,7 @@ SIM3 = tbs(
 |---|---|
 | Cash and cash equivalents | Checking account {d(CHECKING)}; petty cash {d(PETTY)}; U.S. Treasury bill bought November 20, Year 2, maturing January 31, Year 3, {d(TBILL)}; bank certificate of deposit bought October 1, Year 2, maturing March 31, Year 3, {d(CD)}. |
 | Accounts receivable, net | Aged trial balance: customer accounts with debit balances {d(AR_DEBIT)}; two customers who prepaid orders not yet shipped have credit balances totaling {d(AR_CREDIT)}; allowance for credit losses {d(ALLOW)}, per the credit manager's estimate. The draft nets all three. |
-| Inventory | Count at December 31: {d(INV_DRAFT)}, including goods costing {d(CONSIGNED)} that Sedley Co. shipped to Quillon on consignment; Quillon sells them for Sedley on commission. Goods bought from Ames Supply, FOB shipping point, were shipped December 29, Year 2, and arrived January 4, Year 3; Quillon recorded the {d(IN_TRANSIT)} invoice in purchases and accounts payable on December 29, but the goods were not in the count. |
+| Inventory | Count at December 31: {d(INV_DRAFT)}, including goods costing {d(CONSIGNED)} that Sedley Co. shipped to Quillon on consignment; Quillon sells them for Sedley on commission and recorded no purchase for them. Goods bought from Ames Supply, FOB shipping point, were shipped December 29, Year 2, and arrived January 4, Year 3; Quillon recorded the {d(IN_TRANSIT)} invoice in purchases and accounts payable on December 29, but the goods were not in the count. |
 | Bond sinking fund | Cash and securities held by a trustee, to be used only to retire the bonds due in Year 9. |
 | Term loan payable | Five-year bank loan taken out on July 1, Year 2; the {d(TERM_LOAN)} balance is repaid in equal installments of {d(INSTALLMENT)} each June 30. Quillon is in compliance with its covenants. |
 | Treasury stock | {TS_SHARES:,} shares of Quillon's own common stock bought back in August, Year 2, at cost; market value at December 31 is $49,000. |
@@ -338,7 +338,7 @@ SIM3 = tbs(
      ("Exhibit 3: Board minutes, December 18, Year 2 (extract)", f"""
 | Item | Resolution |
 |---|---|
-| 4 | Declared a cash dividend of ${DPS} per share on common stock outstanding, payable January 15, Year 3, to holders of record on January 5, Year 3. |
+| 4 | Declared a cash dividend of ${DPS} per share on common stock outstanding, payable January 15, Year 3, to holders of record on January 5, Year 3. (Bookkeeper's note: no entry has been made for this dividend.) |
 | 5 | Approved a capital budget of $300,000 for Year 3 equipment purchases. |
 """)],
     [
@@ -479,18 +479,18 @@ SIM5 = tbs(
 | Operating reserve | Investments with no donor restrictions had a net gain of {d(INV_GAIN)}. In December the board set aside {d(BOARD)} of these investments as a fund for future building repairs. |
 """),
      ("Exhibit 3: Net assets with donor restrictions at January 1, Year 2", table(["Purpose", "Balance", "Source"], [
-         ("Mobile clinic van fund", d(VAN_GIFT), "Cash gift received in Year 1, restricted to buying a van"),
+         ("Mobile clinic van fund", d(VAN_GIFT), "Cash gift received in Year 1, restricted to buying and equipping a mobile clinic van; the donor's agreement requires any unspent balance to be used for the van's medical equipment"),
          ("Diabetes education program", d(GRANT), "Cash grant received in Year 1, restricted to that program"),
      ]))],
     [
         select("t1", "Indicate whether Wrenfield should recognize each item as revenue, gains or other support in its Year 2 statement of activities, and if so in which net asset class.",
-               ["Revenue — without donor restrictions", "Revenue — with donor restrictions", "Not recognized as revenue"],
-               [("r1", "Larkspur Foundation promise", "Not recognized as revenue"),
-                ("r2", "Okafor Trust promise", "Revenue — with donor restrictions"),
-                ("r3", "Volunteer physicians' services", "Revenue — without donor restrictions"),
-                ("r4", "Community volunteers' services", "Not recognized as revenue"),
-                ("r5", "Hollin family gift", "Revenue — with donor restrictions"),
-                ("r6", "Net gain on the operating reserve investments", "Revenue — without donor restrictions")],
+               ["Recognized — without donor restrictions", "Recognized — with donor restrictions", "Not recognized"],
+               [("r1", "Larkspur Foundation promise", "Not recognized"),
+                ("r2", "Okafor Trust promise", "Recognized — with donor restrictions"),
+                ("r3", "Volunteer physicians' services", "Recognized — without donor restrictions"),
+                ("r4", "Community volunteers' services", "Not recognized"),
+                ("r5", "Hollin family gift", "Recognized — with donor restrictions"),
+                ("r6", "Net gain on the operating reserve investments", "Recognized — without donor restrictions")],
                f"The Larkspur promise depends on a barrier Wrenfield hasn't overcome (a matching requirement) with a right of release, so it is conditional and not recognized. The Okafor promise is unconditional; because the cash comes in a later period, it carries an implied time restriction and is revenue with donor restrictions. The physicians' services need specialized skills Wrenfield would otherwise buy, so they are recognized ({d(PHYS)}) as revenue and as program expense. The reception and mailing work needs no specialized skills and doesn't create or enhance a nonfinancial asset, so it isn't recognized. The Hollin gift must be held in perpetuity, so it is with donor restrictions. The operating reserve gain has no donor stipulation; the board's December set-aside of {d(BOARD)} is an internal designation, not a donor restriction, so the gain stays without donor restrictions.",
                points=2),
         num("t2", "What is Wrenfield's change in net assets without donor restrictions for Year 2?", wodr,
