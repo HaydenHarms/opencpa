@@ -125,8 +125,6 @@ export interface Session {
   kind: 'diagnostic' | 'practice';
   /** Set when the session covers one blueprint topic (started from the Library). */
   topic: string | null;
-  /** Practice keeps questions and simulations apart; a Library topic session mixes them. */
-  mode: SessionMode | 'mixed';
   status: 'active' | 'completed' | 'abandoned';
   createdAt: number;
   completedAt: number | null;
@@ -136,13 +134,8 @@ export interface Session {
   answered: Record<string, Revealed | SimulationReveal>;
 }
 
-/** The two kinds of Practice session, matching the exam's two kinds of testlet. */
-export type SessionMode = 'questions' | 'simulations';
-
 /** A session length on offer and the simulations that come with it. */
 export interface SessionOption {
-  /** What to send as `size` to start it: questions, or simulations in a simulations session. */
-  size: number;
   questions: number;
   simulations: number;
 }
@@ -280,17 +273,12 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ itemId, selected, durationMs, sessionId }),
     }),
-  /** Pass a topic for a Library topic session, or a mode for a Practice session. */
-  currentSession: (section: string, scope: { topic?: string; mode?: SessionMode } = {}) =>
-    call<SessionStatus>(`/me/sessions/current${q({ section, ...scope })}`),
-  startSession: (
-    section: string,
-    size: number,
-    scope: { topic?: string; mode?: SessionMode } = {},
-  ) =>
+  currentSession: (section: string, topic?: string) =>
+    call<SessionStatus>(`/me/sessions/current${q({ section, topic })}`),
+  startSession: (section: string, size: number, topic?: string) =>
     call<Session>('/me/sessions', {
       method: 'POST',
-      body: JSON.stringify({ section, size, ...scope }),
+      body: JSON.stringify({ section, size, topic }),
     }),
   attemptOutsideSession: (itemId: string, selected: string, durationMs: number, variant: number) =>
     call<AttemptResult>('/me/attempts', {

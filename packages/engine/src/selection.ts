@@ -130,20 +130,6 @@ export function simulationCount(questions: number, available: number): number {
   return Math.min(available, Math.max(1, Math.floor(questions / 8)));
 }
 
-/** Spread `extras` evenly through `base`, never first, so simulations break up a run of questions. */
-export function spreadThrough<T>(base: T[], extras: T[]): T[] {
-  const out: T[] = [];
-  const step = base.length / (extras.length + 1);
-  let next = 0;
-  base.forEach((b, i) => {
-    out.push(b);
-    while (next < extras.length && i + 1 >= Math.round(step * (next + 1)))
-      out.push(extras[next++]!);
-  });
-  while (next < extras.length) out.push(extras[next++]!);
-  return out;
-}
-
 /**
  * Split `size` across the pool's areas in proportion to `weights` (largest
  * remainder), never giving an area more items than it has. Unlisted areas get the

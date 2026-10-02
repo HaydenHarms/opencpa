@@ -371,7 +371,7 @@ export function LibraryTopicPage() {
   function load() {
     setStatus(null);
     setEntries(null);
-    api.currentSession(section, { topic }).then((st) => {
+    api.currentSession(section, topic).then((st) => {
       setStatus(st);
       setSession(st.session);
     }, fail);
@@ -382,7 +382,7 @@ export function LibraryTopicPage() {
   async function start(size: number) {
     setError(null);
     try {
-      setSession(await api.startSession(section, size, { topic }));
+      setSession(await api.startSession(section, size, topic));
       setOpen(true);
     } catch (e) {
       fail(e as Error);

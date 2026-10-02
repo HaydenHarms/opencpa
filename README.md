@@ -14,7 +14,7 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 
 **Live now**
 
-- **Practice sessions.** Pick a section, questions or simulations (kept apart, as on the exam), and a length; the server builds a session that mixes blueprint areas by weight, brings back questions when they're due for review and leans toward your weak topics. Your first session in a section is a short diagnostic, and leaving the page never loses your place.
+- **Practice sessions.** Pick a section and a length; the server builds a session, with questions and simulations on separate tabs as on the exam, that mixes blueprint areas by weight, brings back questions when they're due for review and leans toward your weak topics. Your first session in a section is a short diagnostic, and leaving the page never loses your place.
 - **Question versions.** Numeric questions come in several versions with different numbers, so a repeat is a new problem, not a memorized answer.
 - **Library.** Browse every exam by blueprint area and topic, practice any single topic, and look up any question in the archive (unanswered, missed, correct). Search understands accounting synonyms and ASC numbers, so “fixed assets” finds PP&E and “DTL” finds income taxes. Answers stay hidden until you've attempted a question.
 - **Progress.** Coverage by section ("seen 12 of 318"), mastery by blueprint area, and mastery by topic, weakest first.

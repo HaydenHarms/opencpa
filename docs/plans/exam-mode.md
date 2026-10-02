@@ -1,27 +1,23 @@
 # Plan: exam-day mode and the practice split
 
-Hayden's direction (2026-10-02): build a timed mock exam modeled on the real FAR exam, and split Practice so multiple-choice questions and simulations are separate, as they are on the exam (testlets of one kind). No calculator: students have their own. Two or three mock exams' worth of distinct simulations is enough to start (Becker offers two).
+Hayden's direction (2026-10-02): build a timed mock exam modeled on the real FAR exam, and put a practice session's multiple-choice questions and simulations on separate tabs, as the exam puts them in separate testlets. No calculator: students have their own. Two or three mock exams' worth of distinct simulations is enough to start (Becker offers two).
 
-Three phases, each shippable on its own: **A** the practice split, **B** exam mode, **C** the literature panel and research tasks.
+Three phases, each shippable on its own: **A** the practice tabs, **B** exam mode, **C** the literature panel and research tasks.
 
-## Phase A: split Practice into Questions and Simulations
+## Phase A: questions and simulations on separate tabs
 
-**Done 2026-10-02** (migration `0007_session_modes`; see `docs/history.md`).
+**Done 2026-10-02.** One practice session per section, as before, with its questions and simulations on separate tabs inside it, as the exam puts them in separate testlets. A single simulation is in the Library.
 
-The Practice page gets two tabs under the section tabs: **Questions** and **Simulations**.
-
-- **Questions:** today's sessions with no simulations mixed in (10, 25 or 50 questions). The diagnostic becomes questions only.
-- **Simulations:** a session of 1, 2 or 3 simulations chosen by the same selection rules (due reviews, then unseen, then leaning toward weak topics, area by blueprint weight). Same player and results as now.
-- **API:** `POST /me/sessions` takes `mode: 'questions' | 'simulations'`. `GET /me/sessions/current` takes `mode` too, and each mode keeps its own active session. A student can have one of each open at once.
-- **Data:** migration `0007` adds `practice_sessions.mode` (default `'questions'`). Existing active sessions with simulations still play through unchanged; only new ones are split. `simulationCount` and `spreadThrough` are no longer used by Practice (exam mode builds its own order).
-- **Library topic sessions** keep both kinds, since a topic drill is about the topic, not exam format. The connector's `get_current_question` looks at the most recent active session in either mode.
-- **Size:** about half a day. Tests: selection per mode, the two active sessions not abandoning each other.
+- **Session order:** questions first, then simulations (`spreadThrough` is gone). The diagnostic includes simulations again.
+- **Tabs** show "Questions · answered of total" and "Simulations · answered of total". Switching tabs opens that kind's first unanswered item. "Next" goes to the next unanswered item on the same tab, then the other tab, then the results.
+- **Library topic sessions** use the same runner, so they get the tabs too.
+- **History:** the first version (migration `0007_session_modes`) split Practice into separate question and simulation sessions. Hayden meant tabs inside one session, so `0008_drop_session_modes` removed the column and ended any simulation-only sessions.
 
 ## Phase B: exam mode
 
 ### What the student gets
 
-A **Mock exam** entry on the Practice page (a third tab), with a short page on what to expect, then the exam:
+A **Mock exam** entry on the Practice page, with a short page on what to expect, then the exam:
 
 - **FAR format:** 5 testlets. Testlets 1 and 2: 25 multiple-choice questions each. Testlets 3, 4 and 5: 2, 3 and 2 simulations. The real exam scores multiple choice and simulations 50/50.
 - **Clock:** 4 hours, counting down, run by the server so a refresh or a different device can't reset it. Leaving the page doesn't stop it (as on the real exam), but the student can come back and resume.
@@ -96,7 +92,7 @@ The real exam's simulations include research tasks: find the paragraph of the Co
 
 ## Order
 
-1. Phase A (practice split).
+1. Phase A (practice tabs).
 2. Phase B (exam mode).
 3. Phase C (literature panel and research tasks), after or alongside far-tbs-05.
 

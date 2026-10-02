@@ -6,48 +6,31 @@ import {
   SECTIONS,
   type Revealed,
   type Session,
-  type SessionMode,
   type SessionOption,
   type SessionStatus,
   type SimulationReveal,
 } from '../api';
 import { SimulationPlayer } from './Simulation';
 
-function saved(key: string, fallback: string): string {
+function savedSection(): string {
   try {
-    return localStorage.getItem(key) ?? fallback;
+    return localStorage.getItem('opencpa:section') ?? 'FAR';
   } catch {
-    return fallback;
+    return 'FAR';
   }
 }
-
-function remember(key: string, value: string) {
-  try {
-    localStorage.setItem(key, value);
-  } catch {
-    // Remembering the tab is only a convenience.
-  }
-}
-
-const MODES: { id: SessionMode; label: string }[] = [
-  { id: 'questions', label: 'Questions' },
-  { id: 'simulations', label: 'Simulations' },
-];
 
 export default function Practice() {
-  const [section, setSection] = useState(() => saved('opencpa:section', 'FAR'));
-  const [mode, setMode] = useState<SessionMode>(() =>
-    saved('opencpa:practice-mode', 'questions') === 'simulations' ? 'simulations' : 'questions',
-  );
+  const [section, setSection] = useState(savedSection);
   const [status, setStatus] = useState<SessionStatus | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  function load() {
+  function load(s: string) {
     setStatus(null);
     setSession(null);
     setError(null);
-    api.currentSession(section, { mode }).then((st) => {
+    api.currentSession(s).then((st) => {
       setStatus(st);
       setSession(st.session);
     }, fail);
@@ -58,15 +41,18 @@ export default function Practice() {
   }
 
   useEffect(() => {
-    remember('opencpa:section', section);
-    remember('opencpa:practice-mode', mode);
-    load();
-  }, [section, mode]);
+    try {
+      localStorage.setItem('opencpa:section', section);
+    } catch {
+      // Remembering the tab is only a convenience.
+    }
+    load(section);
+  }, [section]);
 
   async function start(size: number) {
     setError(null);
     try {
-      setSession(await api.startSession(section, size, { mode }));
+      setSession(await api.startSession(section, size));
     } catch (e) {
       fail(e as Error);
     }
@@ -81,23 +67,10 @@ export default function Practice() {
           </button>
         ))}
       </div>
-      <div className="tabs">
-        {MODES.map((m) => (
-          <button
-            key={m.id}
-            className={m.id === mode ? 'active' : ''}
-            onClick={() => setMode(m.id)}
-          >
-            {m.label}
-          </button>
-        ))}
-      </div>
 
       {error && <p className="error">Couldn’t reach the API: {error}</p>}
       {!status && !error && <p className="muted">Loading…</p>}
-      {status && !session && (
-        <StartPanel section={section} status={status} onStart={start} mode={mode} />
-      )}
+      {status && !session && <StartPanel section={section} status={status} onStart={start} />}
       {session && (
         <SessionRunner
           key={session.id}
@@ -107,7 +80,7 @@ export default function Practice() {
             // Show the start panel; the unfinished session is abandoned only when a new one starts.
             setSession(null);
             setStatus(null);
-            api.currentSession(section, { mode }).then(setStatus, fail);
+            api.currentSession(section).then(setStatus, fail);
           }}
         />
       )}
@@ -121,13 +94,10 @@ export function StartPanel({
   onStart,
   title,
   blurb,
-  mode = 'questions',
 }: {
   section: string;
   status: SessionStatus;
   onStart: (size: number) => void;
-  /** A Practice simulations session; Library topic sessions leave this as 'questions'. */
-  mode?: SessionMode;
   /** Library topic sessions override the heading and description. */
   title?: string;
   blurb?: string;
@@ -135,8 +105,7 @@ export function StartPanel({
   if (status.poolSize === 0)
     return (
       <p className="muted">
-        No reviewed {section} {mode === 'simulations' ? 'simulations' : 'questions'} yet. They’re
-        being added — check back soon.
+        No reviewed {section} questions yet. They’re being added — check back soon.
       </p>
     );
 
@@ -149,7 +118,7 @@ export function StartPanel({
           {describe(status.diagnostic)}. After that, each session leans toward the topics you miss
           most and brings back questions when they’re due for review.
         </p>
-        <button className="button" onClick={() => onStart(status.diagnostic.size)}>
+        <button className="button" onClick={() => onStart(status.diagnostic.questions)}>
           Start the diagnostic
         </button>
       </article>
@@ -157,19 +126,15 @@ export function StartPanel({
 
   return (
     <article className="card">
-      <h2>
-        {title ?? `New ${section} ${mode === 'simulations' ? 'simulation session' : 'session'}`}
-      </h2>
+      <h2>{title ?? `New ${section} session`}</h2>
       <p className="muted">
         {blurb ??
-          (mode === 'simulations'
-            ? 'Simulations from across the blueprint, as on the exam’s simulation testlets, weighted toward your weak spots and the ones due for review.'
-            : 'Multiple-choice questions from across the blueprint, as on the exam’s question testlets, weighted toward your weak spots and the items due for review.')}{' '}
+          'Questions and simulations across the blueprint, on separate tabs as on the exam, weighted toward your weak spots and the items due for review.'}{' '}
         Your place is saved as you go.
       </p>
       <div className="row-start">
         {status.options.map((o) => (
-          <button key={o.size} className="button" onClick={() => onStart(o.size)}>
+          <button key={o.questions} className="button" onClick={() => onStart(o.questions)}>
             {describe(o)}
           </button>
         ))}
@@ -181,12 +146,21 @@ export function StartPanel({
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
 export function describe(o: SessionOption) {
-  if (!o.questions) return plural(o.simulations, 'simulation');
   return o.simulations
     ? `${plural(o.questions, 'question')} + ${plural(o.simulations, 'simulation')}`
     : plural(o.questions, 'question');
 }
 
+type Kind = 'mcq' | 'tbs';
+const KIND_LABEL: Record<Kind, [string, string]> = {
+  mcq: ['Question', 'Questions'],
+  tbs: ['Simulation', 'Simulations'],
+};
+
+/**
+ * Works through a session. Questions and simulations sit on separate tabs, as the exam puts
+ * them in separate testlets; the student can switch tabs at any point.
+ */
 export function SessionRunner({
   session,
   onError,
@@ -212,9 +186,10 @@ export function SessionRunner({
       ? 'Diagnostic'
       : session.topic
         ? `Topic practice · ${session.topic}`
-        : session.mode === 'simulations'
-          ? 'Simulation session'
-          : 'Practice session';
+        : 'Practice session';
+  const ofKind = (k: Kind) =>
+    items.map((it, i) => [it, i] as const).filter(([it]) => it.type === k);
+  const kinds = (['mcq', 'tbs'] as const).filter((k) => ofKind(k).length > 0);
 
   async function submit() {
     if (!q || q.type !== 'mcq' || !selected || busy) return;
@@ -229,28 +204,54 @@ export function SessionRunner({
     }
   }
 
-  function next() {
-    setIndex((i) => i + 1);
+  function go(i: number) {
+    setIndex(i);
     setSelected(null);
     started.current = Date.now();
     window.scrollTo(0, 0);
   }
 
+  /** The next unanswered item: later on this tab first, then anywhere. Null when all are done. */
+  function nextOpen(): number | null {
+    const open = (i: number) => i !== index && !answered[items[i]!.id];
+    const kind = q?.type;
+    const sameTab = items.findIndex((it, i) => i > index && it.type === kind && open(i));
+    if (sameTab !== -1) return sameTab;
+    const later = items.findIndex((_, i) => i > index && open(i));
+    if (later !== -1) return later;
+    const earlier = items.findIndex((_, i) => open(i));
+    return earlier === -1 ? null : earlier;
+  }
+
+  /** Switch tabs: to the first unanswered item of that kind, or its first item if all are done. */
+  function openTab(k: Kind) {
+    const list = ofKind(k);
+    const target = list.find(([it]) => !answered[it.id]) ?? list[0];
+    if (target) go(target[1]);
+  }
+
   if (!q) return <Summary session={session} answered={answered} onNew={onNew} />;
 
   const done = !!answered[q.id];
-  const upcoming = items[index + 1];
+  const target = nextOpen();
+  const upcoming = target === null ? null : items[target]!;
   const nextButton = (
-    <button className="button" onClick={next}>
-      {!upcoming ? 'See results' : upcoming.type === 'tbs' ? 'Next: simulation' : 'Next question'}
+    <button className="button" onClick={() => go(target ?? items.length)}>
+      {!upcoming
+        ? 'See results'
+        : upcoming.type !== q.type
+          ? `Next: ${KIND_LABEL[upcoming.type][1].toLowerCase()}`
+          : `Next ${KIND_LABEL[upcoming.type][0].toLowerCase()}`}
     </button>
   );
+  const tab = ofKind(q.type);
+  const position = tab.findIndex(([, i]) => i === index) + 1;
 
   return (
     <>
       <div className="row">
         <span className="meta">
-          {label} · {index + 1} of {items.length}
+          {label} · {KIND_LABEL[q.type][0]} {position} of {tab.length}
         </span>
         <button
           className="link"
@@ -262,6 +263,19 @@ export function SessionRunner({
           New session
         </button>
       </div>
+      {kinds.length > 1 && (
+        <div className="tabs">
+          {kinds.map((k) => {
+            const list = ofKind(k);
+            const n = list.filter(([it]) => answered[it.id]).length;
+            return (
+              <button key={k} className={k === q.type ? 'active' : ''} onClick={() => openTab(k)}>
+                {KIND_LABEL[k][1]} · {n} of {list.length}
+              </button>
+            );
+          })}
+        </div>
+      )}
       <div className="progress">
         <span style={{ width: `${(Object.keys(answered).length / items.length) * 100}%` }} />
       </div>
@@ -419,16 +433,10 @@ function Summary({
   return (
     <article className="card">
       <p className="meta">{session.kind === 'diagnostic' ? 'Diagnostic' : 'Session'} complete</p>
-      {questions.length > 0 ? (
-        <h2>
-          {right} of {total} questions correct ({pct({ right, total })}%)
-        </h2>
-      ) : (
-        <h2>
-          {simPoints.right} of {plural(simPoints.total, 'point')} ({pct(simPoints)}%)
-        </h2>
-      )}
-      {sims.length > 0 && questions.length > 0 && (
+      <h2>
+        {right} of {total} questions correct ({pct({ right, total })}%)
+      </h2>
+      {sims.length > 0 && (
         <p className="muted">
           Simulations: {simPoints.right} of {plural(simPoints.total, 'point')} ({pct(simPoints)}%)
         </p>
@@ -441,12 +449,8 @@ function Summary({
           {weak.join(', ')}.
         </p>
       )}
-      {questions.length > 0 && (
-        <>
-          <TallyTable title="By blueprint area" rows={byArea} pct={pct} />
-          <TallyTable title="By topic" rows={byTopic} pct={pct} />
-        </>
-      )}
+      <TallyTable title="By blueprint area" rows={byArea} pct={pct} />
+      <TallyTable title="By topic" rows={byTopic} pct={pct} />
       {sims.length > 0 && <TallyTable title="Simulations" unit="points" rows={simRows} pct={pct} />}
       <button className="button" onClick={onNew}>
         Start a new session

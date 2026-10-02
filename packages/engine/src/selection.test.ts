@@ -6,7 +6,6 @@ import {
   selectDiagnosticItems,
   selectPracticeItems,
   simulationCount,
-  spreadThrough,
   type PoolItem,
 } from './index';
 
@@ -136,14 +135,5 @@ describe('simulations in a session', () => {
     expect([10, 20, 25, 50].map((n) => simulationCount(n, 10))).toEqual([1, 2, 3, 6]);
     expect(simulationCount(50, 3)).toBe(3);
     expect(simulationCount(10, 0)).toBe(0);
-  });
-
-  it('spreads simulations evenly through the questions', () => {
-    const q = Array.from({ length: 9 }, (_, i) => `q${i}`);
-    expect(spreadThrough(q, ['s0', 's1'])).toEqual([
-      ...['q0', 'q1', 'q2', 's0', 'q3', 'q4', 'q5', 's1', 'q6', 'q7', 'q8'],
-    ]);
-    expect(spreadThrough(['q0'], ['s0'])).toEqual(['q0', 's0']);
-    expect(spreadThrough([], ['s0'])).toEqual(['s0']);
   });
 });
