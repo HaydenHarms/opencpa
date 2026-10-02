@@ -1,0 +1,160 @@
+id: far-investments-fair-value-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at fair value)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 321-10-35 (equity securities at fair value)
+  - ASC 320-10-35 (trading and available-for-sale debt securities at fair value)
+  - 'ASC 326-30 (credit losses on available-for-sale debt securities: allowance)'
+  - ASC 825-10-25 (fair value option, including for investments otherwise accounted for by the equity
+    method)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Year 2, Helmsdale Corp. holds these investments, all bought during Year 2: 4% of
+  the common shares of Brora Mills, a listed company, which cost $210,000 and are worth $246,000; debt
+  securities that Helmsdale holds to collect interest but may sell if it needs cash or interest rates
+  change, with an amortized cost of $500,000 and a fair value of $462,000, on which Helmsdale estimates
+  an expected credit loss of $14,000 and which it neither intends to sell nor is likely to be required
+  to sell before recovery; corporate bonds that its trading desk bought in December to resell within weeks,
+  which cost $180,000 and are worth $171,500; and 25% of the common shares of Golspie Foods, a listed
+  company over which Helmsdale has significant influence, for which Helmsdale elected the fair value option
+  when it bought them for $1,350,000. Helmsdale''s share of Golspie''s net income since then is $180,000,
+  Helmsdale has received dividends of $60,000 from it, and the shares are worth $1,412,000. What total
+  carrying amount should Helmsdale report for these investments?'
+choices:
+- id: A
+  text: $2,255,500
+  rationale: Reports the Brora shares at their $210,000 cost. Equity securities with readily determinable
+    fair values are measured at fair value, with changes in net income.
+- id: B
+  text: $2,277,500
+  rationale: Deducts the $14,000 credit loss allowance from the debt securities' $462,000 fair value.
+    Debt securities that may be sold before maturity are reported at fair value; the allowance and the
+    unrealized loss in OCI together bridge amortized cost ($500,000) to fair value.
+- id: C
+  text: $2,291,500
+  rationale: Correct. $246,000 + $462,000 + $171,500 + $1,412,000.
+- id: D
+  text: $2,349,500
+  rationale: Reports the Golspie shares by the equity method, $1,350,000 + $180,000 − $60,000 = $1,470,000.
+    Helmsdale elected the fair value option for this investment, so it is reported at fair value.
+answer: C
+explanation: All four are carried at fair value. The listed shares ($246,000) are equity securities with
+  readily determinable fair values. The debt securities that may be sold are available for sale, reported
+  at fair value ($462,000); the $14,000 credit loss is recorded through an allowance and net income, and
+  the rest of the decline below amortized cost is in OCI, but the balance sheet amount is fair value.
+  The bonds held for resale within weeks are trading securities at fair value ($171,500). The Golspie
+  shares would otherwise be under the equity method, but Helmsdale elected the fair value option, so they
+  are at fair value ($1,412,000). Total = $2,291,500.
+variants:
+- stem: 'At December 31, Year 2, Montrose Corp. holds these investments, all bought during Year 2: 4%
+    of the common shares of Brechin Paper, a listed company, which cost $147,000 and are worth $172,000;
+    debt securities that Montrose holds to collect interest but may sell if it needs cash or interest
+    rates change, with an amortized cost of $350,000 and a fair value of $323,000, on which Montrose estimates
+    an expected credit loss of $10,000 and which it neither intends to sell nor is likely to be required
+    to sell before recovery; corporate bonds that its trading desk bought in December to resell within
+    weeks, which cost $126,000 and are worth $120,000; and 25% of the common shares of Edzell Dairies,
+    a listed company over which Montrose has significant influence, for which Montrose elected the fair
+    value option when it bought them for $950,000. Montrose''s share of Edzell''s net income since then
+    is $126,000, Montrose has received dividends of $42,000 from it, and the shares are worth $988,000.
+    What total carrying amount should Montrose report for these investments?'
+  choices:
+  - id: A
+    text: $1,578,000
+    rationale: Reports the Brechin shares at their $147,000 cost. Equity securities with readily determinable
+      fair values are measured at fair value, with changes in net income.
+  - id: B
+    text: $1,603,000
+    rationale: Correct. $172,000 + $323,000 + $120,000 + $988,000.
+  - id: C
+    text: $1,620,000
+    rationale: Reports the debt securities at amortized cost less the allowance, $350,000 − $10,000. Debt
+      securities that may be sold before maturity are reported at fair value.
+  - id: D
+    text: $1,649,000
+    rationale: Reports the Edzell shares by the equity method, $950,000 + $126,000 − $42,000 = $1,034,000.
+      Montrose elected the fair value option for this investment, so it is reported at fair value.
+  answer: B
+  explanation: All four are carried at fair value. The listed shares ($172,000) are equity securities
+    with readily determinable fair values. The debt securities that may be sold are available for sale,
+    reported at fair value ($323,000); the $10,000 credit loss is recorded through an allowance and net
+    income, and the rest of the decline below amortized cost is in OCI, but the balance sheet amount is
+    fair value. The bonds held for resale within weeks are trading securities at fair value ($120,000).
+    The Edzell shares would otherwise be under the equity method, but Montrose elected the fair value
+    option, so they are at fair value ($988,000). Total = $1,603,000.
+- stem: 'At December 31, Year 2, Kirriemuir Corp. holds these investments, all bought during Year 2: 4%
+    of the common shares of Forfar Textiles, a listed company, which cost $273,000 and are worth $320,000;
+    debt securities that Kirriemuir holds to collect interest but may sell if it needs cash or interest
+    rates change, with an amortized cost of $650,000 and a fair value of $601,000, on which Kirriemuir
+    estimates an expected credit loss of $18,000 and which it neither intends to sell nor is likely to
+    be required to sell before recovery; corporate bonds that its trading desk bought in December to resell
+    within weeks, which cost $234,000 and are worth $223,000; and 25% of the common shares of Glamis Brewing,
+    a listed company over which Kirriemuir has significant influence, for which Kirriemuir elected the
+    fair value option when it bought them for $1,760,000. Kirriemuir''s share of Glamis''s net income
+    since then is $234,000, Kirriemuir has received dividends of $78,000 from it, and the shares are worth
+    $1,836,000. What total carrying amount should Kirriemuir report for these investments?'
+  choices:
+  - id: A
+    text: $2,933,000
+    rationale: Reports the Forfar shares at their $273,000 cost. Equity securities with readily determinable
+      fair values are measured at fair value, with changes in net income.
+  - id: B
+    text: $2,962,000
+    rationale: Deducts the $18,000 credit loss allowance from the debt securities' $601,000 fair value.
+      Debt securities that may be sold before maturity are reported at fair value; the allowance and the
+      unrealized loss in OCI together bridge amortized cost ($650,000) to fair value.
+  - id: C
+    text: $2,980,000
+    rationale: Correct. $320,000 + $601,000 + $223,000 + $1,836,000.
+  - id: D
+    text: $3,011,000
+    rationale: Reports the debt securities at amortized cost less the allowance, $650,000 − $18,000. Debt
+      securities that may be sold before maturity are reported at fair value.
+  answer: C
+  explanation: All four are carried at fair value. The listed shares ($320,000) are equity securities
+    with readily determinable fair values. The debt securities that may be sold are available for sale,
+    reported at fair value ($601,000); the $18,000 credit loss is recorded through an allowance and net
+    income, and the rest of the decline below amortized cost is in OCI, but the balance sheet amount is
+    fair value. The bonds held for resale within weeks are trading securities at fair value ($223,000).
+    The Glamis shares would otherwise be under the equity method, but Kirriemuir elected the fair value
+    option, so they are at fair value ($1,836,000). Total = $2,980,000.
+- stem: 'At December 31, Year 2, Alyth Corp. holds these investments, all bought during Year 2: 4% of
+    the common shares of Blairgowrie Seeds, a listed company, which cost $116,000 and are worth $135,000;
+    debt securities that Alyth holds to collect interest but may sell if it needs cash or interest rates
+    change, with an amortized cost of $280,000 and a fair value of $254,000, on which Alyth estimates
+    an expected credit loss of $8,000 and which it neither intends to sell nor is likely to be required
+    to sell before recovery; corporate bonds that its trading desk bought in December to resell within
+    weeks, which cost $99,000 and are worth $94,500; and 25% of the common shares of Dunkeld Timber, a
+    listed company over which Alyth has significant influence, for which Alyth elected the fair value
+    option when it bought them for $740,000. Alyth''s share of Dunkeld''s net income since then is $99,000,
+    Alyth has received dividends of $33,000 from it, and the shares are worth $777,000. What total carrying
+    amount should Alyth report for these investments?'
+  choices:
+  - id: A
+    text: $1,252,500
+    rationale: Deducts the $8,000 credit loss allowance from the debt securities' $254,000 fair value.
+      Debt securities that may be sold before maturity are reported at fair value; the allowance and the
+      unrealized loss in OCI together bridge amortized cost ($280,000) to fair value.
+  - id: B
+    text: $1,260,500
+    rationale: Correct. $135,000 + $254,000 + $94,500 + $777,000.
+  - id: C
+    text: $1,278,500
+    rationale: Reports the debt securities at amortized cost less the allowance, $280,000 − $8,000. Debt
+      securities that may be sold before maturity are reported at fair value.
+  - id: D
+    text: $1,289,500
+    rationale: Reports the Dunkeld shares by the equity method, $740,000 + $99,000 − $33,000 = $806,000.
+      Alyth elected the fair value option for this investment, so it is reported at fair value.
+  answer: B
+  explanation: All four are carried at fair value. The listed shares ($135,000) are equity securities
+    with readily determinable fair values. The debt securities that may be sold are available for sale,
+    reported at fair value ($254,000); the $8,000 credit loss is recorded through an allowance and net
+    income, and the rest of the decline below amortized cost is in OCI, but the balance sheet amount is
+    fair value. The bonds held for resale within weeks are trading securities at fair value ($94,500).
+    The Dunkeld shares would otherwise be under the equity method, but Alyth elected the fair value option,
+    so they are at fair value ($777,000). Total = $1,260,500.

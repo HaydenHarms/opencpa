@@ -1,0 +1,157 @@
+id: far-subsequent-events-0012
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 855-10-25-1 and 25-3 (recognized and nonrecognized subsequent events)
+  - ASC 855-10-25-2 (entities that are not SEC filers evaluate subsequent events through the date the
+    statements are available to be issued)
+  - 'ASC 450-20 (loss contingencies: product recalls)'
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Arisaig Housewares Co., a private company that is not an SEC filer, had its December 31, Year 1,
+  financial statements available to be issued on April 6, Year 2, and delivered them to its bank on April
+  24. Its draft Year 1 income before income taxes is $2,184,000. After year-end: on January 19, Arisaig
+  found that a December, Year 1, shipment to a customer had been billed and recorded as a sale twice,
+  overstating Year 1 sales by $37,000; on February 9, a regulator ordered a recall of a pressure cooker
+  model that Arisaig sold in Year 1, because of a design flaw present when the cookers were sold, and
+  Arisaig estimates the recall will cost $148,000, none of which it has accrued; in March, Arisaig agreed
+  to buy a competitor and incurred $92,000 of legal and advisory fees on the deal; and on April 15, Arisaig
+  settled a former distributor''s Year 1 claim for $260,000, against the $200,000 it had accrued at December
+  31. What income before income taxes should Arisaig report for Year 1?'
+choices:
+- id: A
+  text: $1,739,000
+  rationale: Charges the whole $260,000 April 15 settlement to Year 1 on top of the $200,000 already accrued.
+    The settlement came after April 6, the date the statements were available to be issued, so these statements
+    reflect only the $200,000 accrual made at year-end.
+- id: B
+  text: $1,907,000
+  rationale: Deducts the $92,000 of acquisition fees. They were incurred in Year 2 on a deal agreed after
+    year-end; the acquisition is disclosed, not recognized.
+- id: C
+  text: $1,939,000
+  rationale: Also deducts the $60,000 by which the April 15 settlement exceeded the accrual. A company
+    that isn't an SEC filer evaluates subsequent events through the date its statements are available
+    to be issued, April 6, so the settlement isn't reflected in these statements.
+- id: D
+  text: $1,999,000
+  rationale: Correct. $2,184,000 − $37,000 − $148,000.
+answer: D
+explanation: 'A company that is not an SEC filer evaluates subsequent events through the date the statements
+  are available to be issued, April 6. Before that date, the duplicate billing and the recall reveal conditions
+  that existed at year-end (the sale was recorded twice; the flaw was in cookers already sold), so both
+  are recognized: − $37,000 and − $148,000. The March acquisition is a nonrecognized event, and its fees
+  are a Year 2 expense. The April 15 settlement came after the statements were available to be issued,
+  so it isn''t reflected in them. Income before income taxes = $2,184,000 − $37,000 − $148,000 = $1,999,000.'
+variants:
+- stem: 'Brodick Housewares Co., a private company that is not an SEC filer, had its December 31, Year
+    1, financial statements available to be issued on April 6, Year 2, and delivered them to its bank
+    on April 24. Its draft Year 1 income before income taxes is $1,529,000. After year-end: on January
+    19, Brodick found that a December, Year 1, shipment to a customer had been billed and recorded as
+    a sale twice, overstating Year 1 sales by $26,000; on February 9, a regulator ordered a recall of
+    a pressure cooker model that Brodick sold in Year 1, because of a design flaw present when the cookers
+    were sold, and Brodick estimates the recall will cost $104,000, none of which it has accrued; in March,
+    Brodick agreed to buy a competitor and incurred $64,000 of legal and advisory fees on the deal; and
+    on April 15, Brodick settled a former distributor''s Year 1 claim for $180,000, against the $140,000
+    it had accrued at December 31. What income before income taxes should Brodick report for Year 1?'
+  choices:
+  - id: A
+    text: $1,359,000
+    rationale: Also deducts the $40,000 by which the April 15 settlement exceeded the accrual. A company
+      that isn't an SEC filer evaluates subsequent events through the date its statements are available
+      to be issued, April 6, so the settlement isn't reflected in these statements.
+  - id: B
+    text: $1,399,000
+    rationale: Correct. $1,529,000 − $26,000 − $104,000.
+  - id: C
+    text: $1,425,000
+    rationale: Leaves the duplicate $26,000 sale in Year 1 revenue. The error existed at year-end and
+      was found before the statements were available to be issued, so it is corrected.
+  - id: D
+    text: $1,503,000
+    rationale: Leaves out the recall. The design flaw existed when the cookers were sold in Year 1, so
+      the order is evidence about conditions at year-end, and the $104,000 cost is accrued in Year 1.
+  answer: B
+  explanation: 'A company that is not an SEC filer evaluates subsequent events through the date the statements
+    are available to be issued, April 6. Before that date, the duplicate billing and the recall reveal
+    conditions that existed at year-end (the sale was recorded twice; the flaw was in cookers already
+    sold), so both are recognized: − $26,000 and − $104,000. The March acquisition is a nonrecognized
+    event, and its fees are a Year 2 expense. The April 15 settlement came after the statements were available
+    to be issued, so it isn''t reflected in them. Income before income taxes = $1,529,000 − $26,000 −
+    $104,000 = $1,399,000.'
+- stem: 'Lamlash Housewares Co., a private company that is not an SEC filer, had its December 31, Year
+    1, financial statements available to be issued on April 6, Year 2, and delivered them to its bank
+    on April 24. Its draft Year 1 income before income taxes is $2,948,000. After year-end: on January
+    19, Lamlash found that a December, Year 1, shipment to a customer had been billed and recorded as
+    a sale twice, overstating Year 1 sales by $50,000; on February 9, a regulator ordered a recall of
+    a pressure cooker model that Lamlash sold in Year 1, because of a design flaw present when the cookers
+    were sold, and Lamlash estimates the recall will cost $200,000, none of which it has accrued; in March,
+    Lamlash agreed to buy a competitor and incurred $124,000 of legal and advisory fees on the deal; and
+    on April 15, Lamlash settled a former distributor''s Year 1 claim for $350,000, against the $270,000
+    it had accrued at December 31. What income before income taxes should Lamlash report for Year 1?'
+  choices:
+  - id: A
+    text: $2,574,000
+    rationale: Deducts the $124,000 of acquisition fees. They were incurred in Year 2 on a deal agreed
+      after year-end; the acquisition is disclosed, not recognized.
+  - id: B
+    text: $2,698,000
+    rationale: Correct. $2,948,000 − $50,000 − $200,000.
+  - id: C
+    text: $2,748,000
+    rationale: Leaves the duplicate $50,000 sale in Year 1 revenue. The error existed at year-end and
+      was found before the statements were available to be issued, so it is corrected.
+  - id: D
+    text: $2,898,000
+    rationale: Leaves out the recall. The design flaw existed when the cookers were sold in Year 1, so
+      the order is evidence about conditions at year-end, and the $200,000 cost is accrued in Year 1.
+  answer: B
+  explanation: 'A company that is not an SEC filer evaluates subsequent events through the date the statements
+    are available to be issued, April 6. Before that date, the duplicate billing and the recall reveal
+    conditions that existed at year-end (the sale was recorded twice; the flaw was in cookers already
+    sold), so both are recognized: − $50,000 and − $200,000. The March acquisition is a nonrecognized
+    event, and its fees are a Year 2 expense. The April 15 settlement came after the statements were available
+    to be issued, so it isn''t reflected in them. Income before income taxes = $2,948,000 − $50,000 −
+    $200,000 = $2,698,000.'
+- stem: 'Lochranza Housewares Co., a private company that is not an SEC filer, had its December 31, Year
+    1, financial statements available to be issued on April 6, Year 2, and delivered them to its bank
+    on April 24. Its draft Year 1 income before income taxes is $1,310,000. After year-end: on January
+    19, Lochranza found that a December, Year 1, shipment to a customer had been billed and recorded as
+    a sale twice, overstating Year 1 sales by $22,000; on February 9, a regulator ordered a recall of
+    a pressure cooker model that Lochranza sold in Year 1, because of a design flaw present when the cookers
+    were sold, and Lochranza estimates the recall will cost $89,000, none of which it has accrued; in
+    March, Lochranza agreed to buy a competitor and incurred $55,000 of legal and advisory fees on the
+    deal; and on April 15, Lochranza settled a former distributor''s Year 1 claim for $155,000, against
+    the $120,000 it had accrued at December 31. What income before income taxes should Lochranza report
+    for Year 1?'
+  choices:
+  - id: A
+    text: $1,044,000
+    rationale: Charges the whole $155,000 April 15 settlement to Year 1 on top of the $120,000 already
+      accrued. The settlement came after April 6, the date the statements were available to be issued,
+      so these statements reflect only the $120,000 accrual made at year-end.
+  - id: B
+    text: $1,164,000
+    rationale: Also deducts the $35,000 by which the April 15 settlement exceeded the accrual. A company
+      that isn't an SEC filer evaluates subsequent events through the date its statements are available
+      to be issued, April 6, so the settlement isn't reflected in these statements.
+  - id: C
+    text: $1,199,000
+    rationale: Correct. $1,310,000 − $22,000 − $89,000.
+  - id: D
+    text: $1,288,000
+    rationale: Leaves out the recall. The design flaw existed when the cookers were sold in Year 1, so
+      the order is evidence about conditions at year-end, and the $89,000 cost is accrued in Year 1.
+  answer: C
+  explanation: 'A company that is not an SEC filer evaluates subsequent events through the date the statements
+    are available to be issued, April 6. Before that date, the duplicate billing and the recall reveal
+    conditions that existed at year-end (the sale was recorded twice; the flaw was in cookers already
+    sold), so both are recognized: − $22,000 and − $89,000. The March acquisition is a nonrecognized event,
+    and its fees are a Year 2 expense. The April 15 settlement came after the statements were available
+    to be issued, so it isn''t reflected in them. Income before income taxes = $1,310,000 − $22,000 −
+    $89,000 = $1,199,000.'

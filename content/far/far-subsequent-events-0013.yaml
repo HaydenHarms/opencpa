@@ -1,0 +1,161 @@
+id: far-subsequent-events-0013
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 855-10-25-1 and 25-3 (recognized and nonrecognized subsequent events)
+  - ASC 740-10-25-47 and 740-10-35-4 (effects of changes in tax laws or rates recognized at the enactment
+    date)
+  - ASC 740-10-45-6 (deferred tax liabilities and assets of one jurisdiction offset)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+  asOf: U.S. GAAP (ASC 740 and ASC 855) in effect for 2026; tax rates are as stated in the stem
+stem: 'Morar Logistics Inc., a public company, will issue its December 31, Year 1, financial statements
+  on March 8, Year 2. At December 31, its only temporary differences are the $1,480,000 by which the carrying
+  amount of its depreciable assets exceeds their tax basis, and an accrued liability of $160,000 for a
+  customer''s lawsuit over a Year 1 incident, which will be deductible for tax when paid. Under the tax
+  law enacted at December 31, the tax rate for all future years is 25%, and Morar expects enough future
+  taxable income to realize any deferred tax asset. Before the statements are issued: on January 20, Morar
+  finds that Year 1 book depreciation of $64,000 on a machine placed in service in Year 1 had been recorded
+  twice (the machine''s tax depreciation was deducted correctly); on February 4, it settles the lawsuit
+  for $260,000, payable in April; and on February 25, the legislature enacts a law cutting the rate to
+  21% for years after Year 1. All of Morar''s deferred taxes are in one tax jurisdiction. What net deferred
+  tax liability should Morar report at December 31, Year 1?'
+choices:
+- id: A
+  text: $269,640
+  rationale: Measures the deferred taxes at the new 21% rate. Deferred taxes use the tax law enacted at
+    the balance sheet date; the effect of a rate change enacted after year-end is recognized when it is
+    enacted, in Year 2, and disclosed.
+- id: B
+  text: $289,000
+  rationale: Deducts the $64,000 from the taxable difference. Removing duplicate book depreciation raises
+    the carrying amount further above the tax basis, so the difference grows.
+- id: C
+  text: $305,000
+  rationale: Leaves the duplicate $64,000 of depreciation in place. Reversing it raises the assets' carrying
+    amount, so the taxable temporary difference rises to $1,544,000.
+- id: D
+  text: $321,000
+  rationale: Correct. ($1,480,000 + $64,000 − $260,000) × 25%.
+answer: D
+explanation: 'The duplicate depreciation and the settlement are recognized subsequent events: reversing
+  the duplicate raises the machine''s book carrying amount at year-end, so the taxable difference rises
+  to $1,544,000, and the settlement shows the lawsuit liability, and so the deductible difference, was
+  $260,000. The rate change was enacted after year-end, so deferred taxes at December 31 stay at the 25%
+  rate enacted then (ASC 740-10-25-47); the change is recognized in Year 2. Net deferred tax liability
+  = ($1,544,000 − $260,000) × 25% = $321,000.'
+variants:
+- stem: 'Kilninver Logistics Inc., a public company, will issue its December 31, Year 1, financial statements
+    on March 8, Year 2. At December 31, its only temporary differences are the $1,036,000 by which the
+    carrying amount of its depreciable assets exceeds their tax basis, and an accrued liability of $112,000
+    for a customer''s lawsuit over a Year 1 incident, which will be deductible for tax when paid. Under
+    the tax law enacted at December 31, the tax rate for all future years is 25%, and Kilninver expects
+    enough future taxable income to realize any deferred tax asset. Before the statements are issued:
+    on January 20, Kilninver finds that Year 1 book depreciation of $44,000 on a machine placed in service
+    in Year 1 had been recorded twice (the machine''s tax depreciation was deducted correctly); on February
+    4, it settles the lawsuit for $184,000, payable in April; and on February 25, the legislature enacts
+    a law cutting the rate to 21% for years after Year 1. All of Kilninver''s deferred taxes are in one
+    tax jurisdiction. What net deferred tax liability should Kilninver report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $188,160
+    rationale: Measures the deferred taxes at the new 21% rate. Deferred taxes use the tax law enacted
+      at the balance sheet date; the effect of a rate change enacted after year-end is recognized when
+      it is enacted, in Year 2, and disclosed.
+  - id: B
+    text: $202,000
+    rationale: Deducts the $44,000 from the taxable difference. Removing duplicate book depreciation raises
+      the carrying amount further above the tax basis, so the difference grows.
+  - id: C
+    text: $224,000
+    rationale: Correct. ($1,036,000 + $44,000 − $184,000) × 25%.
+  - id: D
+    text: $242,000
+    rationale: Keeps the lawsuit's deductible temporary difference at the $112,000 accrued. The settlement
+      is evidence that the liability at year-end was $184,000, so the accrual and the deductible difference
+      rise to $184,000.
+  answer: C
+  explanation: 'The duplicate depreciation and the settlement are recognized subsequent events: reversing
+    the duplicate raises the machine''s book carrying amount at year-end, so the taxable difference rises
+    to $1,080,000, and the settlement shows the lawsuit liability, and so the deductible difference, was
+    $184,000. The rate change was enacted after year-end, so deferred taxes at December 31 stay at the
+    25% rate enacted then (ASC 740-10-25-47); the change is recognized in Year 2. Net deferred tax liability
+    = ($1,080,000 − $184,000) × 25% = $224,000.'
+- stem: 'Whiting Logistics Inc., a public company, will issue its December 31, Year 1, financial statements
+    on March 8, Year 2. At December 31, its only temporary differences are the $1,924,000 by which the
+    carrying amount of its depreciable assets exceeds their tax basis, and an accrued liability of $208,000
+    for a customer''s lawsuit over a Year 1 incident, which will be deductible for tax when paid. Under
+    the tax law enacted at December 31, the tax rate for all future years is 25%, and Whiting expects
+    enough future taxable income to realize any deferred tax asset. Before the statements are issued:
+    on January 20, Whiting finds that Year 1 book depreciation of $84,000 on a machine placed in service
+    in Year 1 had been recorded twice (the machine''s tax depreciation was deducted correctly); on February
+    4, it settles the lawsuit for $340,000, payable in April; and on February 25, the legislature enacts
+    a law cutting the rate to 21% for years after Year 1. All of Whiting''s deferred taxes are in one
+    tax jurisdiction. What net deferred tax liability should Whiting report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $350,280
+    rationale: Measures the deferred taxes at the new 21% rate. Deferred taxes use the tax law enacted
+      at the balance sheet date; the effect of a rate change enacted after year-end is recognized when
+      it is enacted, in Year 2, and disclosed.
+  - id: B
+    text: $417,000
+    rationale: Correct. ($1,924,000 + $84,000 − $340,000) × 25%.
+  - id: C
+    text: $450,000
+    rationale: Keeps the lawsuit's deductible temporary difference at the $208,000 accrued. The settlement
+      is evidence that the liability at year-end was $340,000, so the accrual and the deductible difference
+      rise to $340,000.
+  - id: D
+    text: $502,000
+    rationale: Reports the deferred tax liability, ($1,924,000 + $84,000) × 25%, without offsetting the
+      $85,000 deferred tax asset from the lawsuit. Deferred tax liabilities and assets of one tax jurisdiction
+      are offset and presented as one net amount.
+  answer: B
+  explanation: 'The duplicate depreciation and the settlement are recognized subsequent events: reversing
+    the duplicate raises the machine''s book carrying amount at year-end, so the taxable difference rises
+    to $2,008,000, and the settlement shows the lawsuit liability, and so the deductible difference, was
+    $340,000. The rate change was enacted after year-end, so deferred taxes at December 31 stay at the
+    25% rate enacted then (ASC 740-10-25-47); the change is recognized in Year 2. Net deferred tax liability
+    = ($2,008,000 − $340,000) × 25% = $417,000.'
+- stem: 'Blackwaterfoot Logistics Inc., a public company, will issue its December 31, Year 1, financial
+    statements on March 8, Year 2. At December 31, its only temporary differences are the $888,000 by
+    which the carrying amount of its depreciable assets exceeds their tax basis, and an accrued liability
+    of $96,000 for a customer''s lawsuit over a Year 1 incident, which will be deductible for tax when
+    paid. Under the tax law enacted at December 31, the tax rate for all future years is 25%, and Blackwaterfoot
+    expects enough future taxable income to realize any deferred tax asset. Before the statements are
+    issued: on January 20, Blackwaterfoot finds that Year 1 book depreciation of $40,000 on a machine
+    placed in service in Year 1 had been recorded twice (the machine''s tax depreciation was deducted
+    correctly); on February 4, it settles the lawsuit for $156,000, payable in April; and on February
+    25, the legislature enacts a law cutting the rate to 21% for years after Year 1. All of Blackwaterfoot''s
+    deferred taxes are in one tax jurisdiction. What net deferred tax liability should Blackwaterfoot
+    report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $162,120
+    rationale: Measures the deferred taxes at the new 21% rate. Deferred taxes use the tax law enacted
+      at the balance sheet date; the effect of a rate change enacted after year-end is recognized when
+      it is enacted, in Year 2, and disclosed.
+  - id: B
+    text: $173,000
+    rationale: Deducts the $40,000 from the taxable difference. Removing duplicate book depreciation raises
+      the carrying amount further above the tax basis, so the difference grows.
+  - id: C
+    text: $183,000
+    rationale: Leaves the duplicate $40,000 of depreciation in place. Reversing it raises the assets'
+      carrying amount, so the taxable temporary difference rises to $928,000.
+  - id: D
+    text: $193,000
+    rationale: Correct. ($888,000 + $40,000 − $156,000) × 25%.
+  answer: D
+  explanation: 'The duplicate depreciation and the settlement are recognized subsequent events: reversing
+    the duplicate raises the machine''s book carrying amount at year-end, so the taxable difference rises
+    to $928,000, and the settlement shows the lawsuit liability, and so the deductible difference, was
+    $156,000. The rate change was enacted after year-end, so deferred taxes at December 31 stay at the
+    25% rate enacted then (ASC 740-10-25-47); the change is recognized in Year 2. Net deferred tax liability
+    = ($928,000 − $156,000) × 25% = $193,000.'

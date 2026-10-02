@@ -1,0 +1,148 @@
+id: far-cash-flows-0016
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 230-10-45-28 (indirect method: adjustments to reconcile net income)'
+  - 'ASC 230-10-45-15 (financing outflows: dividends paid)'
+  - ASC 835-30-35 (amortization of bond premium)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Applecross Co.''s draft Year 2 statement of cash flows, prepared by the indirect method, reports
+  net cash provided by operating activities of $1,128,000. The controller identifies these errors in the
+  operating section: (1) net income includes a $46,000 gain on the sale of equipment, which the draft
+  doesn''t adjust for (the $131,000 of proceeds is correctly reported in investing activities); (2) accounts
+  receivable increased by $74,000 during Year 2, and the draft adds the increase to net income; (3) the
+  draft adds back $18,000 of amortization of the premium on Applecross''s bonds payable as a noncash expense;
+  and (4) the draft deducts the $210,000 of dividends that Applecross paid to its shareholders. Applecross
+  follows U.S. GAAP. What net cash provided by operating activities should the corrected statement report?'
+choices:
+- id: A
+  text: $1,108,000
+  rationale: Correct. $1,128,000 − $46,000 − 2 × $74,000 − 2 × $18,000 + $210,000.
+- id: B
+  text: $1,126,000
+  rationale: 'Removes the $18,000 add-back but doesn''t deduct the premium amortization. Amortizing a
+    premium makes interest expense less than the interest paid in cash, so it is subtracted from net income:
+    the correction is 2 × $18,000.'
+- id: C
+  text: $1,154,000
+  rationale: Leaves the $46,000 gain in operating activities. The gain is part of the sale proceeds reported
+    in investing activities, so it is deducted from net income.
+- id: D
+  text: $1,182,000
+  rationale: 'Removes the $74,000 that the draft added for receivables but doesn''t deduct the increase.
+    An increase in receivables means cash collected was less than revenue, so it is subtracted: the correction
+    is 2 × $74,000.'
+answer: A
+explanation: '(1) The gain is deducted, because the whole sale price is an investing inflow: − $46,000.
+  (2) The increase in receivables should have been subtracted; reversing the addition and subtracting
+  it: − 2 × $74,000. (3) Premium amortization reduces interest expense below the cash paid, so it is subtracted,
+  not added: − 2 × $18,000. (4) Dividends paid are a financing outflow under ASC 230, so they come out
+  of operating activities: + $210,000. Corrected net cash provided by operating activities = $1,128,000
+  − $46,000 − $148,000 − $36,000 + $210,000 = $1,108,000.'
+variants:
+- stem: 'Corpach Co.''s draft Year 2 statement of cash flows, prepared by the indirect method, reports
+    net cash provided by operating activities of $846,000. The controller identifies these errors in the
+    operating section: (1) net income includes a $35,000 gain on the sale of equipment, which the draft
+    doesn''t adjust for (the $98,000 of proceeds is correctly reported in investing activities); (2) accounts
+    receivable increased by $56,000 during Year 2, and the draft adds the increase to net income; (3)
+    the draft adds back $14,000 of amortization of the premium on Corpach''s bonds payable as a noncash
+    expense; and (4) the draft deducts the $160,000 of dividends that Corpach paid to its shareholders.
+    Corpach follows U.S. GAAP. What net cash provided by operating activities should the corrected statement
+    report?'
+  choices:
+  - id: A
+    text: $671,000
+    rationale: Leaves the $160,000 of dividends paid in operating activities. Under U.S. GAAP, dividends
+      paid are a financing outflow.
+  - id: B
+    text: $831,000
+    rationale: Correct. $846,000 − $35,000 − 2 × $56,000 − 2 × $14,000 + $160,000.
+  - id: C
+    text: $866,000
+    rationale: Leaves the $35,000 gain in operating activities. The gain is part of the sale proceeds
+      reported in investing activities, so it is deducted from net income.
+  - id: D
+    text: $887,000
+    rationale: 'Removes the $56,000 that the draft added for receivables but doesn''t deduct the increase.
+      An increase in receivables means cash collected was less than revenue, so it is subtracted: the
+      correction is 2 × $56,000.'
+  answer: B
+  explanation: '(1) The gain is deducted, because the whole sale price is an investing inflow: − $35,000.
+    (2) The increase in receivables should have been subtracted; reversing the addition and subtracting
+    it: − 2 × $56,000. (3) Premium amortization reduces interest expense below the cash paid, so it is
+    subtracted, not added: − 2 × $14,000. (4) Dividends paid are a financing outflow under ASC 230, so
+    they come out of operating activities: + $160,000. Corrected net cash provided by operating activities
+    = $846,000 − $35,000 − $112,000 − $28,000 + $160,000 = $831,000.'
+- stem: 'Roybridge Co.''s draft Year 2 statement of cash flows, prepared by the indirect method, reports
+    net cash provided by operating activities of $1,466,000. The controller identifies these errors in
+    the operating section: (1) net income includes a $60,000 gain on the sale of equipment, which the
+    draft doesn''t adjust for (the $170,000 of proceeds is correctly reported in investing activities);
+    (2) accounts receivable increased by $96,000 during Year 2, and the draft adds the increase to net
+    income; (3) the draft adds back $23,000 of amortization of the premium on Roybridge''s bonds payable
+    as a noncash expense; and (4) the draft deducts the $270,000 of dividends that Roybridge paid to its
+    shareholders. Roybridge follows U.S. GAAP. What net cash provided by operating activities should the
+    corrected statement report?'
+  choices:
+  - id: A
+    text: $1,438,000
+    rationale: Correct. $1,466,000 − $60,000 − 2 × $96,000 − 2 × $23,000 + $270,000.
+  - id: B
+    text: $1,461,000
+    rationale: 'Removes the $23,000 add-back but doesn''t deduct the premium amortization. Amortizing
+      a premium makes interest expense less than the interest paid in cash, so it is subtracted from net
+      income: the correction is 2 × $23,000.'
+  - id: C
+    text: $1,498,000
+    rationale: Leaves the $60,000 gain in operating activities. The gain is part of the sale proceeds
+      reported in investing activities, so it is deducted from net income.
+  - id: D
+    text: $1,534,000
+    rationale: 'Removes the $96,000 that the draft added for receivables but doesn''t deduct the increase.
+      An increase in receivables means cash collected was less than revenue, so it is subtracted: the
+      correction is 2 × $96,000.'
+  answer: A
+  explanation: '(1) The gain is deducted, because the whole sale price is an investing inflow: − $60,000.
+    (2) The increase in receivables should have been subtracted; reversing the addition and subtracting
+    it: − 2 × $96,000. (3) Premium amortization reduces interest expense below the cash paid, so it is
+    subtracted, not added: − 2 × $23,000. (4) Dividends paid are a financing outflow under ASC 230, so
+    they come out of operating activities: + $270,000. Corrected net cash provided by operating activities
+    = $1,466,000 − $60,000 − $192,000 − $46,000 + $270,000 = $1,438,000.'
+- stem: 'Laggan Co.''s draft Year 2 statement of cash flows, prepared by the indirect method, reports
+    net cash provided by operating activities of $677,000. The controller identifies these errors in the
+    operating section: (1) net income includes a $28,000 gain on the sale of equipment, which the draft
+    doesn''t adjust for (the $79,000 of proceeds is correctly reported in investing activities); (2) accounts
+    receivable increased by $44,000 during Year 2, and the draft adds the increase to net income; (3)
+    the draft adds back $11,000 of amortization of the premium on Laggan''s bonds payable as a noncash
+    expense; and (4) the draft deducts the $125,000 of dividends that Laggan paid to its shareholders.
+    Laggan follows U.S. GAAP. What net cash provided by operating activities should the corrected statement
+    report?'
+  choices:
+  - id: A
+    text: $539,000
+    rationale: Leaves the $125,000 of dividends paid in operating activities. Under U.S. GAAP, dividends
+      paid are a financing outflow.
+  - id: B
+    text: $664,000
+    rationale: Correct. $677,000 − $28,000 − 2 × $44,000 − 2 × $11,000 + $125,000.
+  - id: C
+    text: $675,000
+    rationale: 'Removes the $11,000 add-back but doesn''t deduct the premium amortization. Amortizing
+      a premium makes interest expense less than the interest paid in cash, so it is subtracted from net
+      income: the correction is 2 × $11,000.'
+  - id: D
+    text: $692,000
+    rationale: Leaves the $28,000 gain in operating activities. The gain is part of the sale proceeds
+      reported in investing activities, so it is deducted from net income.
+  answer: B
+  explanation: '(1) The gain is deducted, because the whole sale price is an investing inflow: − $28,000.
+    (2) The increase in receivables should have been subtracted; reversing the addition and subtracting
+    it: − 2 × $44,000. (3) Premium amortization reduces interest expense below the cash paid, so it is
+    subtracted, not added: − 2 × $11,000. (4) Dividends paid are a financing outflow under ASC 230, so
+    they come out of operating activities: + $125,000. Corrected net cash provided by operating activities
+    = $677,000 − $28,000 − $88,000 − $22,000 + $125,000 = $664,000.'

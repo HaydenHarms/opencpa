@@ -1,0 +1,146 @@
+id: far-special-purpose-frameworks-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Special Purpose Frameworks
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - AICPA special purpose frameworks (cash and modified cash bases; modifications with substantial support)
+  - 'AU-C 800 (financial statements prepared under special purpose frameworks: statement titles)'
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Lochinver Design Partners, a partnership, prepares its financial statements on a modified cash
+  basis: the only departure from the pure cash basis is that it capitalizes the equipment it buys and
+  depreciates it. At January 1, Year 2, it had cash of $48,000 and equipment that had cost $196,000, with
+  accumulated depreciation of $71,000. During Year 2, it collected $612,000 from clients; paid $438,000
+  of operating expenses, including $9,600 paid in December for insurance coverage in Year 3; paid $72,000
+  for new equipment in March; borrowed $50,000 from a bank and repaid $12,000 of the principal; and the
+  partners withdrew $95,000. Depreciation for Year 2 on all of the equipment is $27,000. At December 31,
+  clients owed Lochinver $41,000 for services performed in Year 2, and Lochinver owed employees $8,500
+  of wages. What total assets should Lochinver report in its December 31, Year 2, statement of assets,
+  liabilities, and equity—modified cash basis?'
+choices:
+- id: A
+  text: $263,000
+  rationale: Correct. Cash $48,000 + $612,000 − $438,000 − $72,000 + $50,000 − $12,000 − $95,000 = $93,000;
+    equipment $268,000 − $98,000 = $170,000.
+- id: B
+  text: $272,600
+  rationale: Reports the $9,600 paid for Year 3 insurance as a prepaid asset. Prepaid expenses are an
+    accrual-basis item outside Lochinver's one modification, so the payment is an expense when paid.
+- id: C
+  text: $304,000
+  rationale: Includes the $41,000 that clients owe. Revenue is recorded when cash is collected, and Lochinver's
+    only modification is for equipment, so receivables are not recognized.
+- id: D
+  text: $335,000
+  rationale: Doesn't deduct the $72,000 paid for equipment from cash, so the purchase is counted in both
+    cash and equipment. Cash at year-end is $93,000.
+answer: A
+explanation: On this modified cash basis the assets are cash and equipment, net of depreciation. Cash
+  = $48,000 + $612,000 collected − $438,000 operating payments (the Year 3 insurance included) − $72,000
+  equipment + $50,000 borrowed − $12,000 repaid − $95,000 withdrawn = $93,000. Equipment = $268,000 cost
+  − $98,000 accumulated depreciation = $170,000. Receivables, prepaid insurance and unpaid wages are accrual
+  items that Lochinver's one modification doesn't cover. Total assets = $263,000.
+variants:
+- stem: 'Dufftown Survey Partners, a partnership, prepares its financial statements on a modified cash
+    basis: the only departure from the pure cash basis is that it capitalizes the equipment it buys and
+    depreciates it. At January 1, Year 2, it had cash of $38,000 and equipment that had cost $155,000,
+    with accumulated depreciation of $57,000. During Year 2, it collected $490,000 from clients; paid
+    $350,000 of operating expenses, including $7,700 paid in December for insurance coverage in Year 3;
+    paid $58,000 for new equipment in March; borrowed $40,000 from a bank and repaid $10,000 of the principal;
+    and the partners withdrew $76,000. Depreciation for Year 2 on all of the equipment is $22,000. At
+    December 31, clients owed Dufftown $33,000 for services performed in Year 2, and Dufftown owed employees
+    $7,000 of wages. What total assets should Dufftown report in its December 31, Year 2, statement of
+    assets, liabilities, and equity—modified cash basis?'
+  choices:
+  - id: A
+    text: $150,000
+    rationale: Treats the $58,000 of equipment bought in March as an expense, leaving it out of equipment.
+      Under Dufftown's modification, equipment purchases are capitalized.
+  - id: B
+    text: $208,000
+    rationale: Correct. Cash $38,000 + $490,000 − $350,000 − $58,000 + $40,000 − $10,000 − $76,000 = $74,000;
+      equipment $213,000 − $79,000 = $134,000.
+  - id: C
+    text: $215,700
+    rationale: Reports the $7,700 paid for Year 3 insurance as a prepaid asset. Prepaid expenses are an
+      accrual-basis item outside Dufftown's one modification, so the payment is an expense when paid.
+  - id: D
+    text: $287,000
+    rationale: Reports the equipment at its $213,000 cost. Under Dufftown's modification, equipment is
+      depreciated, so it is reported net of $79,000 of accumulated depreciation.
+  answer: B
+  explanation: On this modified cash basis the assets are cash and equipment, net of depreciation. Cash
+    = $38,000 + $490,000 collected − $350,000 operating payments (the Year 3 insurance included) − $58,000
+    equipment + $40,000 borrowed − $10,000 repaid − $76,000 withdrawn = $74,000. Equipment = $213,000
+    cost − $79,000 accumulated depreciation = $134,000. Receivables, prepaid insurance and unpaid wages
+    are accrual items that Dufftown's one modification doesn't cover. Total assets = $208,000.
+- stem: 'Aberlour Design Partners, a partnership, prepares its financial statements on a modified cash
+    basis: the only departure from the pure cash basis is that it capitalizes the equipment it buys and
+    depreciates it. At January 1, Year 2, it had cash of $60,000 and equipment that had cost $245,000,
+    with accumulated depreciation of $89,000. During Year 2, it collected $765,000 from clients; paid
+    $548,000 of operating expenses, including $12,000 paid in December for insurance coverage in Year
+    3; paid $90,000 for new equipment in March; borrowed $65,000 from a bank and repaid $15,000 of the
+    principal; and the partners withdrew $119,000. Depreciation for Year 2 on all of the equipment is
+    $34,000. At December 31, clients owed Aberlour $51,000 for services performed in Year 2, and Aberlour
+    owed employees $10,500 of wages. What total assets should Aberlour report in its December 31, Year
+    2, statement of assets, liabilities, and equity—modified cash basis?'
+  choices:
+  - id: A
+    text: $118,000
+    rationale: Leaves the equipment out, as the pure cash basis would. Aberlour's modification capitalizes
+      equipment, so it is an asset at $335,000 − $123,000 = $212,000.
+  - id: B
+    text: $240,000
+    rationale: Treats the $90,000 of equipment bought in March as an expense, leaving it out of equipment.
+      Under Aberlour's modification, equipment purchases are capitalized.
+  - id: C
+    text: $330,000
+    rationale: Correct. Cash $60,000 + $765,000 − $548,000 − $90,000 + $65,000 − $15,000 − $119,000 =
+      $118,000; equipment $335,000 − $123,000 = $212,000.
+  - id: D
+    text: $381,000
+    rationale: Includes the $51,000 that clients owe. Revenue is recorded when cash is collected, and
+      Aberlour's only modification is for equipment, so receivables are not recognized.
+  answer: C
+  explanation: On this modified cash basis the assets are cash and equipment, net of depreciation. Cash
+    = $60,000 + $765,000 collected − $548,000 operating payments (the Year 3 insurance included) − $90,000
+    equipment + $65,000 borrowed − $15,000 repaid − $119,000 withdrawn = $118,000. Equipment = $335,000
+    cost − $123,000 accumulated depreciation = $212,000. Receivables, prepaid insurance and unpaid wages
+    are accrual items that Aberlour's one modification doesn't cover. Total assets = $330,000.
+- stem: 'Tomintoul Survey Partners, a partnership, prepares its financial statements on a modified cash
+    basis: the only departure from the pure cash basis is that it capitalizes the equipment it buys and
+    depreciates it. At January 1, Year 2, it had cash of $31,000 and equipment that had cost $125,000,
+    with accumulated depreciation of $46,000. During Year 2, it collected $398,000 from clients; paid
+    $285,000 of operating expenses, including $6,200 paid in December for insurance coverage in Year 3;
+    paid $47,000 for new equipment in March; borrowed $35,000 from a bank and repaid $8,000 of the principal;
+    and the partners withdrew $60,000. Depreciation for Year 2 on all of the equipment is $20,000. At
+    December 31, clients owed Tomintoul $27,000 for services performed in Year 2, and Tomintoul owed employees
+    $5,500 of wages. What total assets should Tomintoul report in its December 31, Year 2, statement of
+    assets, liabilities, and equity—modified cash basis?'
+  choices:
+  - id: A
+    text: $64,000
+    rationale: Leaves the equipment out, as the pure cash basis would. Tomintoul's modification capitalizes
+      equipment, so it is an asset at $172,000 − $66,000 = $106,000.
+  - id: B
+    text: $123,000
+    rationale: Treats the $47,000 of equipment bought in March as an expense, leaving it out of equipment.
+      Under Tomintoul's modification, equipment purchases are capitalized.
+  - id: C
+    text: $170,000
+    rationale: Correct. Cash $31,000 + $398,000 − $285,000 − $47,000 + $35,000 − $8,000 − $60,000 = $64,000;
+      equipment $172,000 − $66,000 = $106,000.
+  - id: D
+    text: $217,000
+    rationale: Doesn't deduct the $47,000 paid for equipment from cash, so the purchase is counted in
+      both cash and equipment. Cash at year-end is $64,000.
+  answer: C
+  explanation: On this modified cash basis the assets are cash and equipment, net of depreciation. Cash
+    = $31,000 + $398,000 collected − $285,000 operating payments (the Year 3 insurance included) − $47,000
+    equipment + $35,000 borrowed − $8,000 repaid − $60,000 withdrawn = $64,000. Equipment = $172,000 cost
+    − $66,000 accumulated depreciation = $106,000. Receivables, prepaid insurance and unpaid wages are
+    accrual items that Tomintoul's one modification doesn't cover. Total assets = $170,000.

@@ -1,0 +1,155 @@
+id: far-contingencies-0013
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 450-20-25-2 (accrual of loss contingencies)
+  - ASC 450-20-30-1 (best estimate within a range; minimum when no amount is better)
+  - ASC 450-20-50 (disclosure of loss contingencies)
+  - ASC 450-20 (no accrual for general or unspecified business risks)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Kiltarlity Food Co.'s draft December 31, Year 1, balance sheet, for statements not yet issued, reports
+  a liability for litigation and claims of $895,000, made up of $600,000 for a customer's suit over an
+  injury caused by one of Kiltarlity's products, $175,000 for a former distributor's suit seeking that
+  amount for breach of contract, and a $120,000 reserve for possible future accidents involving Kiltarlity's
+  uninsured delivery trucks. Counsel's letter says counsel expects the jury to find against Kiltarlity
+  in the customer's suit and puts the damages at $250,000 to $600,000, with $380,000 the most likely amount;
+  on the distributor's suit, it says the law on the central question is unsettled and counsel can't predict
+  the outcome. Kiltarlity's trucks have had no accidents that haven't been settled. On December 21, Kiltarlity
+  signed an agreement to pay a supplier $65,000 on February 15, Year 2, to settle a dispute over a cancelled
+  order, and Kiltarlity has not recorded it; Kiltarlity reports amounts owed under settled claims in its
+  liability for litigation and claims. What liability for litigation and claims should the corrected balance
+  sheet report?
+choices:
+- id: A
+  text: $445,000
+  rationale: Correct. $380,000 for the customer's suit + $65,000 for the signed settlement.
+- id: B
+  text: $565,000
+  rationale: Keeps the $120,000 reserve for future truck accidents. No accident had happened, so no liability
+    existed at year-end; GAAP doesn't allow general reserves for future losses.
+- id: C
+  text: $620,000
+  rationale: Keeps the $175,000 accrual for the distributor's suit. Counsel can't predict the outcome,
+    so a loss isn't probable; the suit is disclosed, not accrued.
+- id: D
+  text: $665,000
+  rationale: Keeps the customer's suit at the top of the range, $600,000. When one amount in the range
+    is a better estimate than any other, that amount, $380,000, is accrued; the possible excess is disclosed.
+answer: A
+explanation: 'The customer''s suit is a probable loss that can be estimated, and counsel names a most
+  likely amount within the range, so $380,000 is accrued and the reasonably possible excess up to $600,000
+  is disclosed. The distributor''s suit has an outcome counsel can''t predict, so it is disclosed but
+  not accrued. A reserve for future accidents isn''t a liability: no event had occurred by year-end. The
+  signed settlement is a liability for a fixed amount. Corrected liability = $380,000 + $65,000 = $445,000.'
+variants:
+- stem: Machrihanish Food Co.'s draft December 31, Year 1, balance sheet, for statements not yet issued,
+    reports a liability for litigation and claims of $630,000, made up of $420,000 for a customer's suit
+    over an injury caused by one of Machrihanish's products, $125,000 for a former distributor's suit
+    seeking that amount for breach of contract, and an $85,000 reserve for possible future accidents involving
+    Machrihanish's uninsured delivery trucks. Counsel's letter says counsel expects the jury to find against
+    Machrihanish in the customer's suit and puts the damages at $175,000 to $420,000, with $265,000 the
+    most likely amount; on the distributor's suit, it says the law on the central question is unsettled
+    and counsel can't predict the outcome. Machrihanish's trucks have had no accidents that haven't been
+    settled. On December 21, Machrihanish signed an agreement to pay a supplier $46,000 on February 15,
+    Year 2, to settle a dispute over a cancelled order, and Machrihanish has not recorded it; Machrihanish
+    reports amounts owed under settled claims in its liability for litigation and claims. What liability
+    for litigation and claims should the corrected balance sheet report?
+  choices:
+  - id: A
+    text: $221,000
+    rationale: Accrues the bottom of the range, $175,000. The minimum is accrued only when no amount in
+      the range is a better estimate than any other; counsel names $265,000 as the most likely amount.
+  - id: B
+    text: $265,000
+    rationale: Leaves out the $46,000 settlement. Once Machrihanish signed the agreement, it owed a fixed
+      amount, which is recognized as a liability.
+  - id: C
+    text: $311,000
+    rationale: Correct. $265,000 for the customer's suit + $46,000 for the signed settlement.
+  - id: D
+    text: $436,000
+    rationale: Keeps the $125,000 accrual for the distributor's suit. Counsel can't predict the outcome,
+      so a loss isn't probable; the suit is disclosed, not accrued.
+  answer: C
+  explanation: 'The customer''s suit is a probable loss that can be estimated, and counsel names a most
+    likely amount within the range, so $265,000 is accrued and the reasonably possible excess up to $420,000
+    is disclosed. The distributor''s suit has an outcome counsel can''t predict, so it is disclosed but
+    not accrued. A reserve for future accidents isn''t a liability: no event had occurred by year-end.
+    The signed settlement is a liability for a fixed amount. Corrected liability = $265,000 + $46,000
+    = $311,000.'
+- stem: Lochgilphead Food Co.'s draft December 31, Year 1, balance sheet, for statements not yet issued,
+    reports a liability for litigation and claims of $1,255,000, made up of $840,000 for a customer's
+    suit over an injury caused by one of Lochgilphead's products, $245,000 for a former distributor's
+    suit seeking that amount for breach of contract, and a $170,000 reserve for possible future accidents
+    involving Lochgilphead's uninsured delivery trucks. Counsel's letter says counsel expects the jury
+    to find against Lochgilphead in the customer's suit and puts the damages at $350,000 to $840,000,
+    with $530,000 the most likely amount; on the distributor's suit, it says the law on the central question
+    is unsettled and counsel can't predict the outcome. Lochgilphead's trucks have had no accidents that
+    haven't been settled. On December 21, Lochgilphead signed an agreement to pay a supplier $91,000 on
+    February 15, Year 2, to settle a dispute over a cancelled order, and Lochgilphead has not recorded
+    it; Lochgilphead reports amounts owed under settled claims in its liability for litigation and claims.
+    What liability for litigation and claims should the corrected balance sheet report?
+  choices:
+  - id: A
+    text: $530,000
+    rationale: Leaves out the $91,000 settlement. Once Lochgilphead signed the agreement, it owed a fixed
+      amount, which is recognized as a liability.
+  - id: B
+    text: $621,000
+    rationale: Correct. $530,000 for the customer's suit + $91,000 for the signed settlement.
+  - id: C
+    text: $791,000
+    rationale: Keeps the $170,000 reserve for future truck accidents. No accident had happened, so no
+      liability existed at year-end; GAAP doesn't allow general reserves for future losses.
+  - id: D
+    text: $931,000
+    rationale: Keeps the customer's suit at the top of the range, $840,000. When one amount in the range
+      is a better estimate than any other, that amount, $530,000, is accrued; the possible excess is disclosed.
+  answer: B
+  explanation: 'The customer''s suit is a probable loss that can be estimated, and counsel names a most
+    likely amount within the range, so $530,000 is accrued and the reasonably possible excess up to $840,000
+    is disclosed. The distributor''s suit has an outcome counsel can''t predict, so it is disclosed but
+    not accrued. A reserve for future accidents isn''t a liability: no event had occurred by year-end.
+    The signed settlement is a liability for a fixed amount. Corrected liability = $530,000 + $91,000
+    = $621,000.'
+- stem: Inveraray Food Co.'s draft December 31, Year 1, balance sheet, for statements not yet issued,
+    reports a liability for litigation and claims of $490,000, made up of $330,000 for a customer's suit
+    over an injury caused by one of Inveraray's products, $95,000 for a former distributor's suit seeking
+    that amount for breach of contract, and a $65,000 reserve for possible future accidents involving
+    Inveraray's uninsured delivery trucks. Counsel's letter says counsel expects the jury to find against
+    Inveraray in the customer's suit and puts the damages at $140,000 to $330,000, with $210,000 the most
+    likely amount; on the distributor's suit, it says the law on the central question is unsettled and
+    counsel can't predict the outcome. Inveraray's trucks have had no accidents that haven't been settled.
+    On December 21, Inveraray signed an agreement to pay a supplier $36,000 on February 15, Year 2, to
+    settle a dispute over a cancelled order, and Inveraray has not recorded it; Inveraray reports amounts
+    owed under settled claims in its liability for litigation and claims. What liability for litigation
+    and claims should the corrected balance sheet report?
+  choices:
+  - id: A
+    text: $176,000
+    rationale: Accrues the bottom of the range, $140,000. The minimum is accrued only when no amount in
+      the range is a better estimate than any other; counsel names $210,000 as the most likely amount.
+  - id: B
+    text: $246,000
+    rationale: Correct. $210,000 for the customer's suit + $36,000 for the signed settlement.
+  - id: C
+    text: $311,000
+    rationale: Keeps the $65,000 reserve for future truck accidents. No accident had happened, so no liability
+      existed at year-end; GAAP doesn't allow general reserves for future losses.
+  - id: D
+    text: $341,000
+    rationale: Keeps the $95,000 accrual for the distributor's suit. Counsel can't predict the outcome,
+      so a loss isn't probable; the suit is disclosed, not accrued.
+  answer: B
+  explanation: 'The customer''s suit is a probable loss that can be estimated, and counsel names a most
+    likely amount within the range, so $210,000 is accrued and the reasonably possible excess up to $330,000
+    is disclosed. The distributor''s suit has an outcome counsel can''t predict, so it is disclosed but
+    not accrued. A reserve for future accidents isn''t a liability: no event had occurred by year-end.
+    The signed settlement is a liability for a fixed amount. Corrected liability = $210,000 + $36,000
+    = $246,000.'

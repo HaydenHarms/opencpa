@@ -1,0 +1,147 @@
+id: far-subsequent-events-0011
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 855-10-25-1 and 25-3 (recognized and nonrecognized subsequent events)
+  - 'ASC 855-10-55 (examples: events after the balance sheet date that are not recognized)'
+  - ASC 855-10-25-1A (SEC filers evaluate subsequent events through the date the statements are issued)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Glenelg Instruments Inc., a public company that files with the SEC, will issue its December 31,
+  Year 1, financial statements on March 9, Year 2. Its draft balance sheet reports total stockholders''
+  equity of $6,240,000. After year-end: on January 14, internal auditors found that a cashier had stolen
+  $86,000 from Glenelg from October through December, Year 1, hiding the thefts in the cash records, and
+  Glenelg has no insurance or other way to recover the money; on February 2, Glenelg received an engineering
+  firm''s invoice for $54,000 for work done in December, Year 1, which Glenelg had not accrued; on February
+  10, the board declared a cash dividend of $180,000, payable March 31; during February, a broad market
+  decline cut the fair value of Glenelg''s portfolio of listed equity securities by $210,000; and on March
+  2, Glenelg issued common shares for $1,500,000 in cash. Ignore income taxes. What total stockholders''
+  equity should Glenelg report at December 31, Year 1?'
+choices:
+- id: A
+  text: $5,890,000
+  rationale: Also deducts the $210,000 February decline in the securities' fair value. The decline reflects
+    market conditions after year-end, so it is a nonrecognized subsequent event, disclosed if material.
+- id: B
+  text: $6,100,000
+  rationale: Correct. $6,240,000 − $86,000 − $54,000.
+- id: C
+  text: $6,186,000
+  rationale: Leaves out the $86,000 theft. The cash was already gone at December 31, so its discovery
+    is evidence about conditions at year-end and is recognized.
+- id: D
+  text: $7,600,000
+  rationale: Adds the $1,500,000 of shares issued on March 2. Shares issued after year-end don't change
+    the December 31 balance sheet; the issuance is disclosed.
+answer: B
+explanation: 'An SEC filer evaluates subsequent events through the date its statements are issued. The
+  theft and the December engineering work existed at year-end, so they are recognized subsequent events:
+  cash falls by $86,000, and an expense and a liability of $54,000 are recorded, each reducing equity.
+  The dividend declaration, the February market decline and the March share issuance arise from events
+  after year-end; they are disclosed if material but not recognized. Equity = $6,240,000 − $86,000 − $54,000
+  = $6,100,000.'
+variants:
+- stem: 'Largs Instruments Inc., a public company that files with the SEC, will issue its December 31,
+    Year 1, financial statements on March 9, Year 2. Its draft balance sheet reports total stockholders''
+    equity of $4,370,000. After year-end: on January 14, internal auditors found that a cashier had stolen
+    $60,000 from Largs from October through December, Year 1, hiding the thefts in the cash records, and
+    Largs has no insurance or other way to recover the money; on February 2, Largs received an engineering
+    firm''s invoice for $38,000 for work done in December, Year 1, which Largs had not accrued; on February
+    10, the board declared a cash dividend of $125,000, payable March 31; during February, a broad market
+    decline cut the fair value of Largs''s portfolio of listed equity securities by $150,000; and on March
+    2, Largs issued common shares for $1,050,000 in cash. Ignore income taxes. What total stockholders''
+    equity should Largs report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $4,147,000
+    rationale: Deducts the $125,000 dividend declared on February 10. A dividend is recognized when it
+      is declared, which was after year-end.
+  - id: B
+    text: $4,272,000
+    rationale: Correct. $4,370,000 − $60,000 − $38,000.
+  - id: C
+    text: $4,310,000
+    rationale: Leaves out the $38,000 engineering invoice. The work was done in December, so the expense
+      and the liability belong in Year 1.
+  - id: D
+    text: $5,322,000
+    rationale: Adds the $1,050,000 of shares issued on March 2. Shares issued after year-end don't change
+      the December 31 balance sheet; the issuance is disclosed.
+  answer: B
+  explanation: 'An SEC filer evaluates subsequent events through the date its statements are issued. The
+    theft and the December engineering work existed at year-end, so they are recognized subsequent events:
+    cash falls by $60,000, and an expense and a liability of $38,000 are recorded, each reducing equity.
+    The dividend declaration, the February market decline and the March share issuance arise from events
+    after year-end; they are disclosed if material but not recognized. Equity = $4,370,000 − $60,000 −
+    $38,000 = $4,272,000.'
+- stem: 'Fairlie Instruments Inc., a public company that files with the SEC, will issue its December 31,
+    Year 1, financial statements on March 9, Year 2. Its draft balance sheet reports total stockholders''
+    equity of $8,110,000. After year-end: on January 14, internal auditors found that a cashier had stolen
+    $112,000 from Fairlie from October through December, Year 1, hiding the thefts in the cash records,
+    and Fairlie has no insurance or other way to recover the money; on February 2, Fairlie received an
+    engineering firm''s invoice for $70,000 for work done in December, Year 1, which Fairlie had not accrued;
+    on February 10, the board declared a cash dividend of $235,000, payable March 31; during February,
+    a broad market decline cut the fair value of Fairlie''s portfolio of listed equity securities by $270,000;
+    and on March 2, Fairlie issued common shares for $1,950,000 in cash. Ignore income taxes. What total
+    stockholders'' equity should Fairlie report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $7,658,000
+    rationale: Also deducts the $270,000 February decline in the securities' fair value. The decline reflects
+      market conditions after year-end, so it is a nonrecognized subsequent event, disclosed if material.
+  - id: B
+    text: $7,693,000
+    rationale: Deducts the $235,000 dividend declared on February 10. A dividend is recognized when it
+      is declared, which was after year-end.
+  - id: C
+    text: $7,928,000
+    rationale: Correct. $8,110,000 − $112,000 − $70,000.
+  - id: D
+    text: $8,040,000
+    rationale: Leaves out the $112,000 theft. The cash was already gone at December 31, so its discovery
+      is evidence about conditions at year-end and is recognized.
+  answer: C
+  explanation: 'An SEC filer evaluates subsequent events through the date its statements are issued. The
+    theft and the December engineering work existed at year-end, so they are recognized subsequent events:
+    cash falls by $112,000, and an expense and a liability of $70,000 are recorded, each reducing equity.
+    The dividend declaration, the February market decline and the March share issuance arise from events
+    after year-end; they are disclosed if material but not recognized. Equity = $8,110,000 − $112,000
+    − $70,000 = $7,928,000.'
+- stem: 'Millport Instruments Inc., a public company that files with the SEC, will issue its December
+    31, Year 1, financial statements on March 9, Year 2. Its draft balance sheet reports total stockholders''
+    equity of $3,430,000. After year-end: on January 14, internal auditors found that a cashier had stolen
+    $47,000 from Millport from October through December, Year 1, hiding the thefts in the cash records,
+    and Millport has no insurance or other way to recover the money; on February 2, Millport received
+    an engineering firm''s invoice for $30,000 for work done in December, Year 1, which Millport had not
+    accrued; on February 10, the board declared a cash dividend of $100,000, payable March 31; during
+    February, a broad market decline cut the fair value of Millport''s portfolio of listed equity securities
+    by $120,000; and on March 2, Millport issued common shares for $850,000 in cash. Ignore income taxes.
+    What total stockholders'' equity should Millport report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $3,233,000
+    rationale: Also deducts the $120,000 February decline in the securities' fair value. The decline reflects
+      market conditions after year-end, so it is a nonrecognized subsequent event, disclosed if material.
+  - id: B
+    text: $3,353,000
+    rationale: Correct. $3,430,000 − $47,000 − $30,000.
+  - id: C
+    text: $3,383,000
+    rationale: Leaves out the $30,000 engineering invoice. The work was done in December, so the expense
+      and the liability belong in Year 1.
+  - id: D
+    text: $4,203,000
+    rationale: Adds the $850,000 of shares issued on March 2. Shares issued after year-end don't change
+      the December 31 balance sheet; the issuance is disclosed.
+  answer: B
+  explanation: 'An SEC filer evaluates subsequent events through the date its statements are issued. The
+    theft and the December engineering work existed at year-end, so they are recognized subsequent events:
+    cash falls by $47,000, and an expense and a liability of $30,000 are recorded, each reducing equity.
+    The dividend declaration, the February market decline and the March share issuance arise from events
+    after year-end; they are disclosed if material but not recognized. Equity = $3,430,000 − $47,000 −
+    $30,000 = $3,353,000.'

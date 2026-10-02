@@ -1,0 +1,144 @@
+id: far-accounting-errors-0009
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 250-10-45-23 (restatement of previously issued financial statements)
+  - ASC 330-10 (inventory cost, including freight-in)
+  - 'ASC 606-10-25-30 (transfer of control: FOB destination)'
+  - ASC 606-10-55 (consignment arrangements)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Beauly Trading Co. uses a periodic inventory system. Its Year 2 income statement, already issued,
+  reported cost of goods sold of $3,846,000. While preparing its Year 3 statements, Beauly finds: goods
+  costing $58,000 that arrived on December 28, Year 1, and were included in the December 31, Year 1, count
+  were recorded as a purchase when the supplier''s invoice arrived on January 6, Year 2; the December
+  31, Year 2, count included goods costing $41,000 that a supplier had shipped to Beauly on consignment;
+  $27,500 of freight paid on Year 2 purchases of merchandise was charged to delivery expense, and all
+  of those goods were sold in Year 2; and goods costing $36,000 that Beauly shipped to a customer on December
+  30, Year 2, FOB destination, which arrived on January 3, Year 3, were recorded as a Year 2 sale and
+  left out of the Year 2 count. What cost of goods sold should Beauly report for Year 2 in its comparative
+  statements for Years 2 and 3?'
+choices:
+- id: A
+  text: $3,738,500
+  rationale: Deducts the $41,000 of consigned goods from cost of goods sold. They belong to the supplier,
+    so removing them lowers ending inventory and raises cost of goods sold.
+- id: B
+  text: $3,793,000
+  rationale: Leaves the $27,500 of freight on purchases in delivery expense. Freight-in is part of the
+    cost of inventory, and the goods were sold in Year 2, so it belongs in cost of goods sold.
+- id: C
+  text: $3,820,500
+  rationale: Correct. $3,846,000 − $58,000 + $41,000 + $27,500 − $36,000.
+- id: D
+  text: $3,878,500
+  rationale: Treats the late-recorded purchase as a Year 1 error only. Recording the $58,000 purchase
+    in Year 2 overstated Year 2 purchases, and so Year 2 cost of goods sold.
+answer: C
+explanation: 'Cost of goods sold = beginning inventory + purchases − ending inventory. The late invoice
+  put a Year 1 purchase into Year 2 purchases: − $58,000 (Year 2''s beginning inventory already included
+  the goods). Consigned-in goods belong to the consignor, so ending inventory falls: + $41,000. Freight-in
+  is an inventory cost of goods sold in Year 2: + $27,500. Goods shipped FOB destination were still Beauly''s
+  at year-end, so ending inventory rises: − $36,000. Restated cost of goods sold = $3,820,500.'
+variants:
+- stem: 'Tarbert Trading Co. uses a periodic inventory system. Its Year 2 income statement, already issued,
+    reported cost of goods sold of $2,692,000. While preparing its Year 3 statements, Tarbert finds: goods
+    costing $41,000 that arrived on December 28, Year 1, and were included in the December 31, Year 1,
+    count were recorded as a purchase when the supplier''s invoice arrived on January 6, Year 2; the December
+    31, Year 2, count included goods costing $29,000 that a supplier had shipped to Tarbert on consignment;
+    $19,500 of freight paid on Year 2 purchases of merchandise was charged to delivery expense, and all
+    of those goods were sold in Year 2; and goods costing $25,000 that Tarbert shipped to a customer on
+    December 30, Year 2, FOB destination, which arrived on January 3, Year 3, were recorded as a Year
+    2 sale and left out of the Year 2 count. What cost of goods sold should Tarbert report for Year 2
+    in its comparative statements for Years 2 and 3?'
+  choices:
+  - id: A
+    text: $2,616,500
+    rationale: Deducts the $29,000 of consigned goods from cost of goods sold. They belong to the supplier,
+      so removing them lowers ending inventory and raises cost of goods sold.
+  - id: B
+    text: $2,674,500
+    rationale: Correct. $2,692,000 − $41,000 + $29,000 + $19,500 − $25,000.
+  - id: C
+    text: $2,699,500
+    rationale: Leaves the $25,000 shipment out of inventory. Goods shipped FOB destination remain Tarbert's
+      until delivered, so they belong in December 31, Year 2, inventory, which lowers cost of goods sold.
+  - id: D
+    text: $2,756,500
+    rationale: Adds the $41,000 purchase to Year 2 cost of goods sold. It was already recorded in Year
+      2 purchases, wrongly; the correction removes it.
+  answer: B
+  explanation: 'Cost of goods sold = beginning inventory + purchases − ending inventory. The late invoice
+    put a Year 1 purchase into Year 2 purchases: − $41,000 (Year 2''s beginning inventory already included
+    the goods). Consigned-in goods belong to the consignor, so ending inventory falls: + $29,000. Freight-in
+    is an inventory cost of goods sold in Year 2: + $19,500. Goods shipped FOB destination were still
+    Tarbert''s at year-end, so ending inventory rises: − $25,000. Restated cost of goods sold = $2,674,500.'
+- stem: 'Carradale Trading Co. uses a periodic inventory system. Its Year 2 income statement, already
+    issued, reported cost of goods sold of $5,192,000. While preparing its Year 3 statements, Carradale
+    finds: goods costing $78,000 that arrived on December 28, Year 1, and were included in the December
+    31, Year 1, count were recorded as a purchase when the supplier''s invoice arrived on January 6, Year
+    2; the December 31, Year 2, count included goods costing $55,000 that a supplier had shipped to Carradale
+    on consignment; $37,000 of freight paid on Year 2 purchases of merchandise was charged to delivery
+    expense, and all of those goods were sold in Year 2; and goods costing $49,000 that Carradale shipped
+    to a customer on December 30, Year 2, FOB destination, which arrived on January 3, Year 3, were recorded
+    as a Year 2 sale and left out of the Year 2 count. What cost of goods sold should Carradale report
+    for Year 2 in its comparative statements for Years 2 and 3?'
+  choices:
+  - id: A
+    text: $5,120,000
+    rationale: Leaves the $37,000 of freight on purchases in delivery expense. Freight-in is part of the
+      cost of inventory, and the goods were sold in Year 2, so it belongs in cost of goods sold.
+  - id: B
+    text: $5,157,000
+    rationale: Correct. $5,192,000 − $78,000 + $55,000 + $37,000 − $49,000.
+  - id: C
+    text: $5,206,000
+    rationale: Leaves the $49,000 shipment out of inventory. Goods shipped FOB destination remain Carradale's
+      until delivered, so they belong in December 31, Year 2, inventory, which lowers cost of goods sold.
+  - id: D
+    text: $5,235,000
+    rationale: Treats the late-recorded purchase as a Year 1 error only. Recording the $78,000 purchase
+      in Year 2 overstated Year 2 purchases, and so Year 2 cost of goods sold.
+  answer: B
+  explanation: 'Cost of goods sold = beginning inventory + purchases − ending inventory. The late invoice
+    put a Year 1 purchase into Year 2 purchases: − $78,000 (Year 2''s beginning inventory already included
+    the goods). Consigned-in goods belong to the consignor, so ending inventory falls: + $55,000. Freight-in
+    is an inventory cost of goods sold in Year 2: + $37,000. Goods shipped FOB destination were still
+    Carradale''s at year-end, so ending inventory rises: − $49,000. Restated cost of goods sold = $5,157,000.'
+- stem: 'Campbeltown Trading Co. uses a periodic inventory system. Its Year 2 income statement, already
+    issued, reported cost of goods sold of $2,115,000. While preparing its Year 3 statements, Campbeltown
+    finds: goods costing $32,000 that arrived on December 28, Year 1, and were included in the December
+    31, Year 1, count were recorded as a purchase when the supplier''s invoice arrived on January 6, Year
+    2; the December 31, Year 2, count included goods costing $23,000 that a supplier had shipped to Campbeltown
+    on consignment; $15,000 of freight paid on Year 2 purchases of merchandise was charged to delivery
+    expense, and all of those goods were sold in Year 2; and goods costing $20,000 that Campbeltown shipped
+    to a customer on December 30, Year 2, FOB destination, which arrived on January 3, Year 3, were recorded
+    as a Year 2 sale and left out of the Year 2 count. What cost of goods sold should Campbeltown report
+    for Year 2 in its comparative statements for Years 2 and 3?'
+  choices:
+  - id: A
+    text: $2,055,000
+    rationale: Deducts the $23,000 of consigned goods from cost of goods sold. They belong to the supplier,
+      so removing them lowers ending inventory and raises cost of goods sold.
+  - id: B
+    text: $2,086,000
+    rationale: Leaves the $15,000 of freight on purchases in delivery expense. Freight-in is part of the
+      cost of inventory, and the goods were sold in Year 2, so it belongs in cost of goods sold.
+  - id: C
+    text: $2,101,000
+    rationale: Correct. $2,115,000 − $32,000 + $23,000 + $15,000 − $20,000.
+  - id: D
+    text: $2,165,000
+    rationale: Adds the $32,000 purchase to Year 2 cost of goods sold. It was already recorded in Year
+      2 purchases, wrongly; the correction removes it.
+  answer: C
+  explanation: 'Cost of goods sold = beginning inventory + purchases − ending inventory. The late invoice
+    put a Year 1 purchase into Year 2 purchases: − $32,000 (Year 2''s beginning inventory already included
+    the goods). Consigned-in goods belong to the consignor, so ending inventory falls: + $23,000. Freight-in
+    is an inventory cost of goods sold in Year 2: + $15,000. Goods shipped FOB destination were still
+    Campbeltown''s at year-end, so ending inventory rises: − $20,000. Restated cost of goods sold = $2,101,000.'

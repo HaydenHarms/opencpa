@@ -1,0 +1,156 @@
+id: far-nfp-financial-position-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of financial position (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-210 (statement of financial position)
+  - ASC 958-605-30 (contributions measured at fair value)
+  - ASC 958-605 (transfers to an agent or intermediary for a specified beneficiary are not contributions)
+  - ASC 958-605-45 (implied time restrictions on promises to give)
+  - ASC 958-205-45 (releases from donor restrictions)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Gairloch Wildlife Trust, a not-for-profit entity, reports net assets with donor restrictions of
+  $2,145,000 in its draft December 31, Year 2, statement of financial position. The controller identifies
+  these errors: (1) land that a donor gave in May, requiring that it be used forever as a nature preserve,
+  was recorded as a contribution with donor restrictions at the donor''s original cost of $40,000; its
+  fair value on the date of the gift was $310,000; (2) $75,000 that a donor gave Gairloch in November
+  to pass on to a named animal shelter, which Gairloch has no power to redirect, was recorded as a contribution
+  with donor restrictions; (3) an unconditional pledge of $90,000, payable in Year 3 with no purpose stated,
+  was recorded as contribution revenue without donor restrictions; and (4) $62,000 of gifts that donors
+  made in Year 1, restricted to a summer camp program, was spent on the program in Year 2, but no release
+  from restrictions was recorded. What net assets with donor restrictions should the corrected statement
+  report?'
+choices:
+- id: A
+  text: $2,098,000
+  rationale: Leaves the land at the donor's $40,000 cost. Contributed assets are recognized at fair value
+    on the date of the gift, $310,000, so net assets with donor restrictions rise by $270,000.
+- id: B
+  text: $2,278,000
+  rationale: Leaves the $90,000 pledge in net assets without donor restrictions. A pledge payable in a
+    later period carries an implied time restriction, so it is with donor restrictions until that period.
+- id: C
+  text: $2,368,000
+  rationale: Correct. $2,145,000 + ($310,000 − $40,000) − $75,000 + $90,000 − $62,000.
+- id: D
+  text: $2,443,000
+  rationale: Keeps the $75,000 for the animal shelter in net assets. Gairloch received it as an agent
+    for a beneficiary the donor named, with no power to redirect it, so it is a liability, not a contribution.
+answer: C
+explanation: '(1) The land is a contribution with a perpetual donor restriction, measured at its fair
+  value on the date of the gift: + ($310,000 − $40,000). (2) Cash received for a beneficiary the donor
+  specified, with no variance power, is a liability of an agent, not a contribution: − $75,000. (3) An
+  unconditional pledge payable in a later period carries an implied time restriction: + $90,000. (4) Spending
+  the camp gifts on the camp met the purpose restriction, so they are released: − $62,000. Corrected net
+  assets with donor restrictions = $2,368,000.'
+variants:
+- stem: 'Banff Heritage Trust, a not-for-profit entity, reports net assets with donor restrictions of
+    $1,502,000 in its draft December 31, Year 2, statement of financial position. The controller identifies
+    these errors: (1) land that a donor gave in May, requiring that it be used forever as a nature preserve,
+    was recorded as a contribution with donor restrictions at the donor''s original cost of $28,000; its
+    fair value on the date of the gift was $215,000; (2) $53,000 that a donor gave Banff in November to
+    pass on to a named animal shelter, which Banff has no power to redirect, was recorded as a contribution
+    with donor restrictions; (3) an unconditional pledge of $63,000, payable in Year 3 with no purpose
+    stated, was recorded as contribution revenue without donor restrictions; and (4) $43,000 of gifts
+    that donors made in Year 1, restricted to a summer camp program, was spent on the program in Year
+    2, but no release from restrictions was recorded. What net assets with donor restrictions should the
+    corrected statement report?'
+  choices:
+  - id: A
+    text: $1,441,000
+    rationale: Moves the land to net assets without donor restrictions, at its $215,000 fair value. The
+      donor's requirement that the land be used forever as a preserve is a restriction that never expires,
+      so the gift stays in net assets with donor restrictions.
+  - id: B
+    text: $1,593,000
+    rationale: Leaves the $63,000 pledge in net assets without donor restrictions. A pledge payable in
+      a later period carries an implied time restriction, so it is with donor restrictions until that
+      period.
+  - id: C
+    text: $1,656,000
+    rationale: Correct. $1,502,000 + ($215,000 − $28,000) − $53,000 + $63,000 − $43,000.
+  - id: D
+    text: $1,699,000
+    rationale: Doesn't record the $43,000 release. Spending the gifts on the camp program met the donor's
+      purpose restriction, so they move to net assets without donor restrictions.
+  answer: C
+  explanation: '(1) The land is a contribution with a perpetual donor restriction, measured at its fair
+    value on the date of the gift: + ($215,000 − $28,000). (2) Cash received for a beneficiary the donor
+    specified, with no variance power, is a liability of an agent, not a contribution: − $53,000. (3)
+    An unconditional pledge payable in a later period carries an implied time restriction: + $63,000.
+    (4) Spending the camp gifts on the camp met the purpose restriction, so they are released: − $43,000.
+    Corrected net assets with donor restrictions = $1,656,000.'
+- stem: 'Macduff Nature Society, a not-for-profit entity, reports net assets with donor restrictions of
+    $3,003,000 in its draft December 31, Year 2, statement of financial position. The controller identifies
+    these errors: (1) land that a donor gave in May, requiring that it be used forever as a nature preserve,
+    was recorded as a contribution with donor restrictions at the donor''s original cost of $56,000; its
+    fair value on the date of the gift was $435,000; (2) $105,000 that a donor gave Macduff in November
+    to pass on to a named animal shelter, which Macduff has no power to redirect, was recorded as a contribution
+    with donor restrictions; (3) an unconditional pledge of $126,000, payable in Year 3 with no purpose
+    stated, was recorded as contribution revenue without donor restrictions; and (4) $87,000 of gifts
+    that donors made in Year 1, restricted to a summer camp program, was spent on the program in Year
+    2, but no release from restrictions was recorded. What net assets with donor restrictions should the
+    corrected statement report?'
+  choices:
+  - id: A
+    text: $2,881,000
+    rationale: Moves the land to net assets without donor restrictions, at its $435,000 fair value. The
+      donor's requirement that the land be used forever as a preserve is a restriction that never expires,
+      so the gift stays in net assets with donor restrictions.
+  - id: B
+    text: $3,316,000
+    rationale: Correct. $3,003,000 + ($435,000 − $56,000) − $105,000 + $126,000 − $87,000.
+  - id: C
+    text: $3,403,000
+    rationale: Doesn't record the $87,000 release. Spending the gifts on the camp program met the donor's
+      purpose restriction, so they move to net assets without donor restrictions.
+  - id: D
+    text: $3,421,000
+    rationale: Keeps the $105,000 for the animal shelter in net assets. Macduff received it as an agent
+      for a beneficiary the donor named, with no power to redirect it, so it is a liability, not a contribution.
+  answer: B
+  explanation: '(1) The land is a contribution with a perpetual donor restriction, measured at its fair
+    value on the date of the gift: + ($435,000 − $56,000). (2) Cash received for a beneficiary the donor
+    specified, with no variance power, is a liability of an agent, not a contribution: − $105,000. (3)
+    An unconditional pledge payable in a later period carries an implied time restriction: + $126,000.
+    (4) Spending the camp gifts on the camp met the purpose restriction, so they are released: − $87,000.
+    Corrected net assets with donor restrictions = $3,316,000.'
+- stem: 'Turriff Countryside Fund, a not-for-profit entity, reports net assets with donor restrictions
+    of $1,180,000 in its draft December 31, Year 2, statement of financial position. The controller identifies
+    these errors: (1) land that a donor gave in May, requiring that it be used forever as a nature preserve,
+    was recorded as a contribution with donor restrictions at the donor''s original cost of $22,000; its
+    fair value on the date of the gift was $170,000; (2) $41,000 that a donor gave Turriff in November
+    to pass on to a named animal shelter, which Turriff has no power to redirect, was recorded as a contribution
+    with donor restrictions; (3) an unconditional pledge of $50,000, payable in Year 3 with no purpose
+    stated, was recorded as contribution revenue without donor restrictions; and (4) $34,000 of gifts
+    that donors made in Year 1, restricted to a summer camp program, was spent on the program in Year
+    2, but no release from restrictions was recorded. What net assets with donor restrictions should the
+    corrected statement report?'
+  choices:
+  - id: A
+    text: $1,155,000
+    rationale: Leaves the land at the donor's $22,000 cost. Contributed assets are recognized at fair
+      value on the date of the gift, $170,000, so net assets with donor restrictions rise by $148,000.
+  - id: B
+    text: $1,303,000
+    rationale: Correct. $1,180,000 + ($170,000 − $22,000) − $41,000 + $50,000 − $34,000.
+  - id: C
+    text: $1,337,000
+    rationale: Doesn't record the $34,000 release. Spending the gifts on the camp program met the donor's
+      purpose restriction, so they move to net assets without donor restrictions.
+  - id: D
+    text: $1,344,000
+    rationale: Keeps the $41,000 for the animal shelter in net assets. Turriff received it as an agent
+      for a beneficiary the donor named, with no power to redirect it, so it is a liability, not a contribution.
+  answer: B
+  explanation: '(1) The land is a contribution with a perpetual donor restriction, measured at its fair
+    value on the date of the gift: + ($170,000 − $22,000). (2) Cash received for a beneficiary the donor
+    specified, with no variance power, is a liability of an agent, not a contribution: − $41,000. (3)
+    An unconditional pledge payable in a later period carries an implied time restriction: + $50,000.
+    (4) Spending the camp gifts on the camp met the purpose restriction, so they are released: − $34,000.
+    Corrected net assets with donor restrictions = $1,303,000.'

@@ -1,0 +1,154 @@
+id: far-nfp-statement-of-activities-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of activities (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-225-45-14 (investment return reported net of external and direct internal investment expenses)
+  - ASC 958-605-25-16 (contributed services)
+  - ASC 958-360 (property and equipment of NFPs; depreciation)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Poolewe Food Pantry, a not-for-profit entity, reports total expenses of $1,864,000 in its draft
+  Year 2 statement of activities. Reviewing the draft, the controller notes: (1) an accounting firm prepared
+  Poolewe''s grant reports at no charge, work Poolewe would otherwise have had to pay for, with a fair
+  value of $24,000, and nothing was recorded; (2) $17,500 of fees paid to an outside firm for managing
+  Poolewe''s investment portfolio is reported in management and general expenses, and investment return
+  is reported before those fees; (3) a delivery van bought for $60,000 on July 1, Year 2, was charged
+  to program expenses; the van has a 5-year useful life and no residual value, and Poolewe depreciates
+  vans straight-line by month; and (4) volunteers without special skills who staffed a fundraising phone
+  bank gave time valued at $31,000, and nothing was recorded. What total expenses should Poolewe''s corrected
+  statement of activities report?'
+choices:
+- id: A
+  text: $1,810,500
+  rationale: Removes the $60,000 van from expenses without recording depreciation. The van was in service
+    for six months of Year 2, so $60,000 ÷ 5 × 6/12 = $6,000 of depreciation is an expense.
+- id: B
+  text: $1,816,500
+  rationale: Correct. $1,864,000 + $24,000 − $17,500 − $60,000 + $6,000.
+- id: C
+  text: $1,834,000
+  rationale: Leaves the $17,500 of external investment management fees in expenses. An NFP reports investment
+    return net of external and direct internal investment expenses, so the fees are netted against the
+    return.
+- id: D
+  text: $1,847,500
+  rationale: Adds the $31,000 of phone-bank volunteers' time. Contributed services are recognized only
+    if they create or enhance a nonfinancial asset or need specialized skills that would otherwise be
+    bought; staffing a phone bank does neither.
+answer: B
+explanation: '(1) Donated services that need specialized skills and would otherwise be bought are recognized
+  as revenue and expense: + $24,000. (2) Investment return is reported net of external investment expenses
+  (ASC 958-225-45-14), so the fees come out of expenses: − $17,500. (3) The van is capitalized, and six
+  months of depreciation are expensed: − $60,000 + $6,000. (4) The phone-bank volunteers'' time needs
+  no specialized skills, so it is correctly not recognized. Corrected total expenses = $1,864,000 + $24,000
+  − $17,500 − $60,000 + $6,000 = $1,816,500.'
+variants:
+- stem: 'Fyvie Meals Network, a not-for-profit entity, reports total expenses of $1,398,000 in its draft
+    Year 2 statement of activities. Reviewing the draft, the controller notes: (1) an accounting firm
+    prepared Fyvie''s grant reports at no charge, work Fyvie would otherwise have had to pay for, with
+    a fair value of $18,000, and nothing was recorded; (2) $13,000 of fees paid to an outside firm for
+    managing Fyvie''s investment portfolio is reported in management and general expenses, and investment
+    return is reported before those fees; (3) a delivery van bought for $48,000 on July 1, Year 2, was
+    charged to program expenses; the van has a 4-year useful life and no residual value, and Fyvie depreciates
+    vans straight-line by month; and (4) volunteers without special skills who staffed a fundraising phone
+    bank gave time valued at $23,000, and nothing was recorded. What total expenses should Fyvie''s corrected
+    statement of activities report?'
+  choices:
+  - id: A
+    text: $1,361,000
+    rationale: Correct. $1,398,000 + $18,000 − $13,000 − $48,000 + $6,000.
+  - id: B
+    text: $1,374,000
+    rationale: Leaves the $13,000 of external investment management fees in expenses. An NFP reports investment
+      return net of external and direct internal investment expenses, so the fees are netted against the
+      return.
+  - id: C
+    text: $1,384,000
+    rationale: Adds the $23,000 of phone-bank volunteers' time. Contributed services are recognized only
+      if they create or enhance a nonfinancial asset or need specialized skills that would otherwise be
+      bought; staffing a phone bank does neither.
+  - id: D
+    text: $1,403,000
+    rationale: 'Leaves the $48,000 cost of the van in program expenses. A van is a long-lived asset: it
+      is capitalized, and only the Year 2 depreciation of $6,000 is an expense.'
+  answer: A
+  explanation: '(1) Donated services that need specialized skills and would otherwise be bought are recognized
+    as revenue and expense: + $18,000. (2) Investment return is reported net of external investment expenses
+    (ASC 958-225-45-14), so the fees come out of expenses: − $13,000. (3) The van is capitalized, and
+    six months of depreciation are expensed: − $48,000 + $6,000. (4) The phone-bank volunteers'' time
+    needs no specialized skills, so it is correctly not recognized. Corrected total expenses = $1,398,000
+    + $18,000 − $13,000 − $48,000 + $6,000 = $1,361,000.'
+- stem: 'Insch Family Shelter, a not-for-profit entity, reports total expenses of $2,423,000 in its draft
+    Year 2 statement of activities. Reviewing the draft, the controller notes: (1) an accounting firm
+    prepared Insch''s grant reports at no charge, work Insch would otherwise have had to pay for, with
+    a fair value of $31,000, and nothing was recorded; (2) $23,000 of fees paid to an outside firm for
+    managing Insch''s investment portfolio is reported in management and general expenses, and investment
+    return is reported before those fees; (3) a delivery van bought for $84,000 on July 1, Year 2, was
+    charged to program expenses; the van has a 6-year useful life and no residual value, and Insch depreciates
+    vans straight-line by month; and (4) volunteers without special skills who staffed a fundraising phone
+    bank gave time valued at $40,000, and nothing was recorded. What total expenses should Insch''s corrected
+    statement of activities report?'
+  choices:
+  - id: A
+    text: $2,323,000
+    rationale: Leaves out the $31,000 of donated accounting services. They need specialized skills and
+      would otherwise have been bought, so they are recognized as contribution revenue and as an expense.
+  - id: B
+    text: $2,347,000
+    rationale: Removes the $84,000 van from expenses without recording depreciation. The van was in service
+      for six months of Year 2, so $84,000 ÷ 6 × 6/12 = $7,000 of depreciation is an expense.
+  - id: C
+    text: $2,354,000
+    rationale: Correct. $2,423,000 + $31,000 − $23,000 − $84,000 + $7,000.
+  - id: D
+    text: $2,377,000
+    rationale: Leaves the $23,000 of external investment management fees in expenses. An NFP reports investment
+      return net of external and direct internal investment expenses, so the fees are netted against the
+      return.
+  answer: C
+  explanation: '(1) Donated services that need specialized skills and would otherwise be bought are recognized
+    as revenue and expense: + $31,000. (2) Investment return is reported net of external investment expenses
+    (ASC 958-225-45-14), so the fees come out of expenses: − $23,000. (3) The van is capitalized, and
+    six months of depreciation are expensed: − $84,000 + $7,000. (4) The phone-bank volunteers'' time
+    needs no specialized skills, so it is correctly not recognized. Corrected total expenses = $2,423,000
+    + $31,000 − $23,000 − $84,000 + $7,000 = $2,354,000.'
+- stem: 'Huntly Youth Trust, a not-for-profit entity, reports total expenses of $1,118,000 in its draft
+    Year 2 statement of activities. Reviewing the draft, the controller notes: (1) an accounting firm
+    prepared Huntly''s grant reports at no charge, work Huntly would otherwise have had to pay for, with
+    a fair value of $14,000, and nothing was recorded; (2) $10,500 of fees paid to an outside firm for
+    managing Huntly''s investment portfolio is reported in management and general expenses, and investment
+    return is reported before those fees; (3) a delivery van bought for $40,000 on July 1, Year 2, was
+    charged to program expenses; the van has a 5-year useful life and no residual value, and Huntly depreciates
+    vans straight-line by month; and (4) volunteers without special skills who staffed a fundraising phone
+    bank gave time valued at $19,000, and nothing was recorded. What total expenses should Huntly''s corrected
+    statement of activities report?'
+  choices:
+  - id: A
+    text: $1,071,500
+    rationale: Leaves out the $14,000 of donated accounting services. They need specialized skills and
+      would otherwise have been bought, so they are recognized as contribution revenue and as an expense.
+  - id: B
+    text: $1,085,500
+    rationale: Correct. $1,118,000 + $14,000 − $10,500 − $40,000 + $4,000.
+  - id: C
+    text: $1,096,000
+    rationale: Leaves the $10,500 of external investment management fees in expenses. An NFP reports investment
+      return net of external and direct internal investment expenses, so the fees are netted against the
+      return.
+  - id: D
+    text: $1,104,500
+    rationale: Adds the $19,000 of phone-bank volunteers' time. Contributed services are recognized only
+      if they create or enhance a nonfinancial asset or need specialized skills that would otherwise be
+      bought; staffing a phone bank does neither.
+  answer: B
+  explanation: '(1) Donated services that need specialized skills and would otherwise be bought are recognized
+    as revenue and expense: + $14,000. (2) Investment return is reported net of external investment expenses
+    (ASC 958-225-45-14), so the fees come out of expenses: − $10,500. (3) The van is capitalized, and
+    six months of depreciation are expensed: − $40,000 + $4,000. (4) The phone-bank volunteers'' time
+    needs no specialized skills, so it is correctly not recognized. Corrected total expenses = $1,118,000
+    + $14,000 − $10,500 − $40,000 + $4,000 = $1,085,500.'

@@ -1,0 +1,151 @@
+id: far-changes-in-equity-0008
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 505-10 (equity)
+  - ASC 505-30 (treasury stock)
+  - ASC 220-10-45 and ASC 320-10-35 (unrealized holding losses on available-for-sale debt securities in
+    OCI)
+  - 'ASC 340-10-S99-1 (SAB Topic 5.A: share issue costs charged against the proceeds)'
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Kyleakin Corp.''s draft statement of changes in stockholders'' equity reports total stockholders''
+  equity of $4,286,000 at December 31, Year 2. The controller identifies these errors: (1) a cash dividend
+  of $95,000, declared on December 14 and payable January 12, Year 3, has not been recorded; (2) the $148,000
+  that Kyleakin paid in October to buy back some of its own common shares, which it holds as treasury
+  stock, was debited to an investment account reported among its assets; (3) an unrealized holding loss
+  of $36,000 on available-for-sale debt securities, none of it a credit loss, was reported in net income;
+  and (4) $22,000 of legal and underwriting costs of issuing new common shares in March was charged to
+  general and administrative expense. Ignore income taxes. What total stockholders'' equity should the
+  corrected statement report at December 31, Year 2?'
+choices:
+- id: A
+  text: $4,007,000
+  rationale: Records the $36,000 loss in other comprehensive income but leaves it in net income as well,
+    counting it twice. Moving it from net income to OCI leaves total equity unchanged.
+- id: B
+  text: $4,021,000
+  rationale: Reduces additional paid-in capital by the $22,000 of issue costs but leaves them in expense
+    too, counting them twice.
+- id: C
+  text: $4,043,000
+  rationale: Correct. $4,286,000 − $95,000 − $148,000; the other two corrections move amounts between
+    components of equity.
+- id: D
+  text: $4,191,000
+  rationale: Leaves the $148,000 buyback as an investment. A company's own reacquired shares are treasury
+    stock, a deduction from stockholders' equity, not an asset.
+answer: C
+explanation: 'Two corrections reduce total equity: the declared dividend (− $95,000 of retained earnings,
+  with a dividend payable) and the treasury shares, which are a deduction from equity rather than an asset
+  (− $148,000). The other two only move amounts between components: the $36,000 unrealized loss moves
+  from net income (retained earnings) to accumulated other comprehensive income, and the $22,000 of issue
+  costs moves from expense (retained earnings) to a reduction of additional paid-in capital. Corrected
+  total stockholders'' equity = $4,286,000 − $95,000 − $148,000 = $4,043,000.'
+variants:
+- stem: 'Ballachulish Corp.''s draft statement of changes in stockholders'' equity reports total stockholders''
+    equity of $3,000,000 at December 31, Year 2. The controller identifies these errors: (1) a cash dividend
+    of $67,000, declared on December 14 and payable January 12, Year 3, has not been recorded; (2) the
+    $104,000 that Ballachulish paid in October to buy back some of its own common shares, which it holds
+    as treasury stock, was debited to an investment account reported among its assets; (3) an unrealized
+    holding loss of $25,000 on available-for-sale debt securities, none of it a credit loss, was reported
+    in net income; and (4) $15,000 of legal and underwriting costs of issuing new common shares in March
+    was charged to general and administrative expense. Ignore income taxes. What total stockholders''
+    equity should the corrected statement report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,829,000
+    rationale: Correct. $3,000,000 − $67,000 − $104,000; the other two corrections move amounts between
+      components of equity.
+  - id: B
+    text: $2,844,000
+    rationale: Adds the $15,000 of issue costs back to net income without reducing additional paid-in
+      capital. Issue costs reduce the proceeds credited to paid-in capital, so moving them out of expense
+      leaves total equity unchanged.
+  - id: C
+    text: $2,854,000
+    rationale: Adds the $25,000 loss back to net income without recording it in other comprehensive income.
+      The loss moves from net income to OCI, so total equity doesn't change.
+  - id: D
+    text: $2,896,000
+    rationale: Leaves out the $67,000 dividend. A cash dividend reduces retained earnings, and creates
+      a liability, when it is declared.
+  answer: A
+  explanation: 'Two corrections reduce total equity: the declared dividend (− $67,000 of retained earnings,
+    with a dividend payable) and the treasury shares, which are a deduction from equity rather than an
+    asset (− $104,000). The other two only move amounts between components: the $25,000 unrealized loss
+    moves from net income (retained earnings) to accumulated other comprehensive income, and the $15,000
+    of issue costs moves from expense (retained earnings) to a reduction of additional paid-in capital.
+    Corrected total stockholders'' equity = $3,000,000 − $67,000 − $104,000 = $2,829,000.'
+- stem: 'Kinlochleven Corp.''s draft statement of changes in stockholders'' equity reports total stockholders''
+    equity of $6,215,000 at December 31, Year 2. The controller identifies these errors: (1) a cash dividend
+    of $138,000, declared on December 14 and payable January 12, Year 3, has not been recorded; (2) the
+    $215,000 that Kinlochleven paid in October to buy back some of its own common shares, which it holds
+    as treasury stock, was debited to an investment account reported among its assets; (3) an unrealized
+    holding loss of $52,000 on available-for-sale debt securities, none of it a credit loss, was reported
+    in net income; and (4) $32,000 of legal and underwriting costs of issuing new common shares in March
+    was charged to general and administrative expense. Ignore income taxes. What total stockholders''
+    equity should the corrected statement report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $5,810,000
+    rationale: Records the $52,000 loss in other comprehensive income but leaves it in net income as well,
+      counting it twice. Moving it from net income to OCI leaves total equity unchanged.
+  - id: B
+    text: $5,830,000
+    rationale: Reduces additional paid-in capital by the $32,000 of issue costs but leaves them in expense
+      too, counting them twice.
+  - id: C
+    text: $5,862,000
+    rationale: Correct. $6,215,000 − $138,000 − $215,000; the other two corrections move amounts between
+      components of equity.
+  - id: D
+    text: $6,000,000
+    rationale: Leaves out the $138,000 dividend. A cash dividend reduces retained earnings, and creates
+      a liability, when it is declared.
+  answer: C
+  explanation: 'Two corrections reduce total equity: the declared dividend (− $138,000 of retained earnings,
+    with a dividend payable) and the treasury shares, which are a deduction from equity rather than an
+    asset (− $215,000). The other two only move amounts between components: the $52,000 unrealized loss
+    moves from net income (retained earnings) to accumulated other comprehensive income, and the $32,000
+    of issue costs moves from expense (retained earnings) to a reduction of additional paid-in capital.
+    Corrected total stockholders'' equity = $6,215,000 − $138,000 − $215,000 = $5,862,000.'
+- stem: 'Onich Corp.''s draft statement of changes in stockholders'' equity reports total stockholders''
+    equity of $2,357,000 at December 31, Year 2. The controller identifies these errors: (1) a cash dividend
+    of $52,000, declared on December 14 and payable January 12, Year 3, has not been recorded; (2) the
+    $81,000 that Onich paid in October to buy back some of its own common shares, which it holds as treasury
+    stock, was debited to an investment account reported among its assets; (3) an unrealized holding loss
+    of $20,000 on available-for-sale debt securities, none of it a credit loss, was reported in net income;
+    and (4) $12,000 of legal and underwriting costs of issuing new common shares in March was charged
+    to general and administrative expense. Ignore income taxes. What total stockholders'' equity should
+    the corrected statement report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,204,000
+    rationale: Records the $20,000 loss in other comprehensive income but leaves it in net income as well,
+      counting it twice. Moving it from net income to OCI leaves total equity unchanged.
+  - id: B
+    text: $2,224,000
+    rationale: Correct. $2,357,000 − $52,000 − $81,000; the other two corrections move amounts between
+      components of equity.
+  - id: C
+    text: $2,236,000
+    rationale: Adds the $12,000 of issue costs back to net income without reducing additional paid-in
+      capital. Issue costs reduce the proceeds credited to paid-in capital, so moving them out of expense
+      leaves total equity unchanged.
+  - id: D
+    text: $2,305,000
+    rationale: Leaves the $81,000 buyback as an investment. A company's own reacquired shares are treasury
+      stock, a deduction from stockholders' equity, not an asset.
+  answer: B
+  explanation: 'Two corrections reduce total equity: the declared dividend (− $52,000 of retained earnings,
+    with a dividend payable) and the treasury shares, which are a deduction from equity rather than an
+    asset (− $81,000). The other two only move amounts between components: the $20,000 unrealized loss
+    moves from net income (retained earnings) to accumulated other comprehensive income, and the $12,000
+    of issue costs moves from expense (retained earnings) to a reduction of additional paid-in capital.
+    Corrected total stockholders'' equity = $2,357,000 − $52,000 − $81,000 = $2,224,000.'

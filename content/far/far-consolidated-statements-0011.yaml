@@ -1,0 +1,143 @@
+id: far-consolidated-statements-0011
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 810-10-45-1 (intra-entity balances and transactions eliminated in full)
+  - 'ASC 810-10-45 (consolidation procedures: intra-entity profit in inventory)'
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Lochcarron Corp. owns all of the common stock of Shieldaig Ltd., which it formed in Year 1. Shieldaig
+  sells goods to Lochcarron at a gross margin of 25% of the selling price. Lochcarron''s draft December
+  31, Year 2, consolidated balance sheet reports total current assets of $2,964,000. The controller identifies
+  these errors: (1) Shieldaig''s $98,000 trade receivable from Lochcarron for goods sold in December,
+  and Lochcarron''s matching payable, were not eliminated; (2) Lochcarron''s December 31 inventory includes
+  goods it bought from Shieldaig for $160,000, and the draft eliminated the whole $160,000 from consolidated
+  inventory; and (3) a dividend of $35,000 that Shieldaig declared on December 20, payable January 10,
+  Year 3, is included in Lochcarron''s dividends receivable. What total current assets should the corrected
+  consolidated balance sheet report?'
+choices:
+- id: A
+  text: $2,831,000
+  rationale: Leaves the draft's elimination of the whole $160,000. Only the unrealized profit, $160,000
+    × 25% = $40,000, is eliminated; the goods stay in consolidated inventory at Shieldaig's cost, $120,000.
+- id: B
+  text: $2,951,000
+  rationale: Correct. $2,964,000 − $98,000 + ($160,000 − $40,000) − $35,000.
+- id: C
+  text: $2,991,000
+  rationale: Restores the full $160,000 without eliminating any profit. Shieldaig's $40,000 profit on
+    goods still held by the group is unrealized and is removed.
+- id: D
+  text: $3,049,000
+  rationale: Leaves the $98,000 intercompany receivable in consolidated current assets. Amounts the group
+    owes itself are eliminated.
+answer: B
+explanation: '(1) The intercompany receivable is eliminated with the matching payable: − $98,000. (2)
+  Goods bought within the group stay in consolidated inventory at the selling affiliate''s cost; only
+  the unrealized profit is eliminated. Shieldaig''s profit is 25% of the $160,000 price, $40,000, so the
+  draft''s $160,000 elimination is reversed and $40,000 eliminated: + $120,000. (3) The dividend receivable
+  from the subsidiary is eliminated against its dividend payable: − $35,000. Corrected current assets
+  = $2,964,000 − $98,000 + $120,000 − $35,000 = $2,951,000.'
+variants:
+- stem: 'Newtonmore Corp. owns all of the common stock of Kingussie Ltd., which it formed in Year 1. Kingussie
+    sells goods to Newtonmore at a gross margin of 25% of the selling price. Newtonmore''s draft December
+    31, Year 2, consolidated balance sheet reports total current assets of $2,075,000. The controller
+    identifies these errors: (1) Kingussie''s $69,000 trade receivable from Newtonmore for goods sold
+    in December, and Newtonmore''s matching payable, were not eliminated; (2) Newtonmore''s December 31
+    inventory includes goods it bought from Kingussie for $120,000, and the draft eliminated the whole
+    $120,000 from consolidated inventory; and (3) a dividend of $25,000 that Kingussie declared on December
+    20, payable January 10, Year 3, is included in Newtonmore''s dividends receivable. What total current
+    assets should the corrected consolidated balance sheet report?'
+  choices:
+  - id: A
+    text: $1,981,000
+    rationale: Leaves the draft's elimination of the whole $120,000. Only the unrealized profit, $120,000
+      × 25% = $30,000, is eliminated; the goods stay in consolidated inventory at Kingussie's cost, $90,000.
+  - id: B
+    text: $2,071,000
+    rationale: Correct. $2,075,000 − $69,000 + ($120,000 − $30,000) − $25,000.
+  - id: C
+    text: $2,077,000
+    rationale: Treats the 25% gross margin as a markup on cost, eliminating $120,000 × 25/125 = $24,000.
+      The margin is 25% of the selling price, so the unrealized profit is $30,000.
+  - id: D
+    text: $2,096,000
+    rationale: Leaves the $25,000 dividend receivable from Kingussie. A dividend declared by a wholly
+      owned subsidiary is owed within the group, so the receivable is eliminated against Kingussie's dividend
+      payable.
+  answer: B
+  explanation: '(1) The intercompany receivable is eliminated with the matching payable: − $69,000. (2)
+    Goods bought within the group stay in consolidated inventory at the selling affiliate''s cost; only
+    the unrealized profit is eliminated. Kingussie''s profit is 25% of the $120,000 price, $30,000, so
+    the draft''s $120,000 elimination is reversed and $30,000 eliminated: + $90,000. (3) The dividend
+    receivable from the subsidiary is eliminated against its dividend payable: − $25,000. Corrected current
+    assets = $2,075,000 − $69,000 + $90,000 − $25,000 = $2,071,000.'
+- stem: 'Carrbridge Corp. owns all of the common stock of Tomatin Ltd., which it formed in Year 1. Tomatin
+    sells goods to Carrbridge at a gross margin of 25% of the selling price. Carrbridge''s draft December
+    31, Year 2, consolidated balance sheet reports total current assets of $4,001,000. The controller
+    identifies these errors: (1) Tomatin''s $132,000 trade receivable from Carrbridge for goods sold in
+    December, and Carrbridge''s matching payable, were not eliminated; (2) Carrbridge''s December 31 inventory
+    includes goods it bought from Tomatin for $220,000, and the draft eliminated the whole $220,000 from
+    consolidated inventory; and (3) a dividend of $45,000 that Tomatin declared on December 20, payable
+    January 10, Year 3, is included in Carrbridge''s dividends receivable. What total current assets should
+    the corrected consolidated balance sheet report?'
+  choices:
+  - id: A
+    text: $3,989,000
+    rationale: Correct. $4,001,000 − $132,000 + ($220,000 − $55,000) − $45,000.
+  - id: B
+    text: $4,000,000
+    rationale: Treats the 25% gross margin as a markup on cost, eliminating $220,000 × 25/125 = $44,000.
+      The margin is 25% of the selling price, so the unrealized profit is $55,000.
+  - id: C
+    text: $4,044,000
+    rationale: Restores the full $220,000 without eliminating any profit. Tomatin's $55,000 profit on
+      goods still held by the group is unrealized and is removed.
+  - id: D
+    text: $4,121,000
+    rationale: Leaves the $132,000 intercompany receivable in consolidated current assets. Amounts the
+      group owes itself are eliminated.
+  answer: A
+  explanation: '(1) The intercompany receivable is eliminated with the matching payable: − $132,000. (2)
+    Goods bought within the group stay in consolidated inventory at the selling affiliate''s cost; only
+    the unrealized profit is eliminated. Tomatin''s profit is 25% of the $220,000 price, $55,000, so the
+    draft''s $220,000 elimination is reversed and $55,000 eliminated: + $165,000. (3) The dividend receivable
+    from the subsidiary is eliminated against its dividend payable: − $45,000. Corrected current assets
+    = $4,001,000 − $132,000 + $165,000 − $45,000 = $3,989,000.'
+- stem: 'Findhorn Corp. owns all of the common stock of Forres Ltd., which it formed in Year 1. Forres
+    sells goods to Findhorn at a gross margin of 25% of the selling price. Findhorn''s draft December
+    31, Year 2, consolidated balance sheet reports total current assets of $1,630,000. The controller
+    identifies these errors: (1) Forres''s $54,000 trade receivable from Findhorn for goods sold in December,
+    and Findhorn''s matching payable, were not eliminated; (2) Findhorn''s December 31 inventory includes
+    goods it bought from Forres for $80,000, and the draft eliminated the whole $80,000 from consolidated
+    inventory; and (3) a dividend of $16,000 that Forres declared on December 20, payable January 10,
+    Year 3, is included in Findhorn''s dividends receivable. What total current assets should the corrected
+    consolidated balance sheet report?'
+  choices:
+  - id: A
+    text: $1,560,000
+    rationale: Leaves the draft's elimination of the whole $80,000. Only the unrealized profit, $80,000
+      × 25% = $20,000, is eliminated; the goods stay in consolidated inventory at Forres's cost, $60,000.
+  - id: B
+    text: $1,620,000
+    rationale: Correct. $1,630,000 − $54,000 + ($80,000 − $20,000) − $16,000.
+  - id: C
+    text: $1,636,000
+    rationale: Leaves the $16,000 dividend receivable from Forres. A dividend declared by a wholly owned
+      subsidiary is owed within the group, so the receivable is eliminated against Forres's dividend payable.
+  - id: D
+    text: $1,674,000
+    rationale: Leaves the $54,000 intercompany receivable in consolidated current assets. Amounts the
+      group owes itself are eliminated.
+  answer: B
+  explanation: '(1) The intercompany receivable is eliminated with the matching payable: − $54,000. (2)
+    Goods bought within the group stay in consolidated inventory at the selling affiliate''s cost; only
+    the unrealized profit is eliminated. Forres''s profit is 25% of the $80,000 price, $20,000, so the
+    draft''s $80,000 elimination is reversed and $20,000 eliminated: + $60,000. (3) The dividend receivable
+    from the subsidiary is eliminated against its dividend payable: − $16,000. Corrected current assets
+    = $1,630,000 − $54,000 + $60,000 − $16,000 = $1,620,000.'

@@ -1,0 +1,165 @@
+id: far-changes-in-equity-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 505-10 (statement of changes in equity)
+  - ASC 250-10-45-23 (prior-period adjustments)
+  - ASC 845-10-30 (nonreciprocal transfers to owners measured at fair value)
+  - ASC 505-20-30 (small stock dividends at fair value)
+  - ASC 505-30 (treasury stock reissued below cost)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Plockton Corp.'s Year 2 statement of changes in stockholders' equity begins with retained earnings
+  of $3,410,000 at January 1, as previously reported. In Year 2, Plockton found that a computational error
+  had overstated its Year 1 depreciation expense by $96,000; its income tax rate is 25% for all years.
+  Year 2 net income, correctly computed and including the gain on the land distribution described below,
+  was $692,000. During Year 2, the board declared cash dividends of $240,000, of which $180,000 had been
+  paid by December 31; distributed to shareholders land that Plockton held as an investment, which had
+  a carrying amount of $95,000 and a fair value of $160,000 on the distribution date; and declared and
+  distributed a 5% stock dividend on its 400,000 outstanding $1 par common shares when their market price
+  was $18 per share. Plockton accounts for treasury stock by the cost method. It also reissued treasury
+  shares that had cost $84,000 for $61,000; before that sale, its paid-in capital from treasury stock
+  transactions had a balance of $15,000. What retained earnings should Plockton report at December 31,
+  Year 2?
+choices:
+- id: A
+  text: $3,391,000
+  rationale: Charges the whole $23,000 shortfall on the treasury shares to retained earnings. It is charged
+    first against the $15,000 of paid-in capital from treasury stock transactions; only the remaining
+    $8,000 reduces retained earnings.
+- id: B
+  text: $3,406,000
+  rationale: Correct. $3,410,000 + $72,000 + $692,000 − $240,000 − $160,000 − $360,000 − $8,000.
+- id: C
+  text: $3,471,000
+  rationale: Charges retained earnings with the land's $95,000 carrying amount. A property dividend is
+    recorded at the fair value of the asset distributed, $160,000; the $65,000 gain on remeasuring the
+    land is already in net income.
+- id: D
+  text: $3,746,000
+  rationale: 'Charges retained earnings with only the $1 par value of the 20,000 shares distributed, $20,000.
+    A 5% stock dividend is a small stock dividend, recorded at the shares'' market price: 20,000 × $18
+    = $360,000.'
+answer: B
+explanation: 'Opening retained earnings are restated for the error, net of tax: $3,410,000 + $96,000 ×
+  75% = $3,482,000. Add net income ($692,000, which already includes the gain on remeasuring the land).
+  Deduct dividends when declared: cash $240,000; the property dividend at the land''s fair value, $160,000;
+  and the small (5%) stock dividend at market price, 20,000 shares × $18 = $360,000. The $23,000 shortfall
+  on the treasury shares is charged first to the $15,000 of paid-in capital from treasury stock, and the
+  remaining $8,000 to retained earnings. Retained earnings at December 31 = $3,406,000.'
+variants:
+- stem: Fionnphort Corp.'s Year 2 statement of changes in stockholders' equity begins with retained earnings
+    of $2,560,000 at January 1, as previously reported. In Year 2, Fionnphort found that a computational
+    error had overstated its Year 1 depreciation expense by $72,000; its income tax rate is 25% for all
+    years. Year 2 net income, correctly computed and including the gain on the land distribution described
+    below, was $520,000. During Year 2, the board declared cash dividends of $180,000, of which $135,000
+    had been paid by December 31; distributed to shareholders land that Fionnphort held as an investment,
+    which had a carrying amount of $71,000 and a fair value of $120,000 on the distribution date; and
+    declared and distributed a 4% stock dividend on its 300,000 outstanding $1 par common shares when
+    their market price was $22 per share. Fionnphort accounts for treasury stock by the cost method. It
+    also reissued treasury shares that had cost $63,000 for $46,000; before that sale, its paid-in capital
+    from treasury stock transactions had a balance of $11,000. What retained earnings should Fionnphort
+    report at December 31, Year 2?
+  choices:
+  - id: A
+    text: $2,564,000
+    rationale: Correct. $2,560,000 + $54,000 + $520,000 − $180,000 − $120,000 − $264,000 − $6,000.
+  - id: B
+    text: $2,582,000
+    rationale: Adds the whole $72,000 pretax overstatement to opening retained earnings. Correcting it
+      also raises Year 1 income tax expense, so the prior-period adjustment is $72,000 × 75% = $54,000.
+  - id: C
+    text: $2,609,000
+    rationale: Deducts only the $135,000 of cash dividends paid. Retained earnings is reduced when dividends
+      are declared, $180,000; the unpaid $45,000 is a liability.
+  - id: D
+    text: $2,816,000
+    rationale: 'Charges retained earnings with only the $1 par value of the 12,000 shares distributed,
+      $12,000. A 4% stock dividend is a small stock dividend, recorded at the shares'' market price: 12,000
+      × $22 = $264,000.'
+  answer: A
+  explanation: 'Opening retained earnings are restated for the error, net of tax: $2,560,000 + $72,000
+    × 75% = $2,614,000. Add net income ($520,000, which already includes the gain on remeasuring the land).
+    Deduct dividends when declared: cash $180,000; the property dividend at the land''s fair value, $120,000;
+    and the small (4%) stock dividend at market price, 12,000 shares × $22 = $264,000. The $17,000 shortfall
+    on the treasury shares is charged first to the $11,000 of paid-in capital from treasury stock, and
+    the remaining $6,000 to retained earnings. Retained earnings at December 31 = $2,564,000.'
+- stem: Lismore Corp.'s Year 2 statement of changes in stockholders' equity begins with retained earnings
+    of $4,430,000 at January 1, as previously reported. In Year 2, Lismore found that a computational
+    error had overstated its Year 1 depreciation expense by $124,000; its income tax rate is 25% for all
+    years. Year 2 net income, correctly computed and including the gain on the land distribution described
+    below, was $900,000. During Year 2, the board declared cash dividends of $310,000, of which $235,000
+    had been paid by December 31; distributed to shareholders land that Lismore held as an investment,
+    which had a carrying amount of $118,000 and a fair value of $210,000 on the distribution date; and
+    declared and distributed a 6% stock dividend on its 500,000 outstanding $1 par common shares when
+    their market price was $15 per share. Lismore accounts for treasury stock by the cost method. It also
+    reissued treasury shares that had cost $109,000 for $79,000; before that sale, its paid-in capital
+    from treasury stock transactions had a balance of $20,000. What retained earnings should Lismore report
+    at December 31, Year 2?
+  choices:
+  - id: A
+    text: $4,423,000
+    rationale: Charges the whole $30,000 shortfall on the treasury shares to retained earnings. It is
+      charged first against the $20,000 of paid-in capital from treasury stock transactions; only the
+      remaining $10,000 reduces retained earnings.
+  - id: B
+    text: $4,443,000
+    rationale: Correct. $4,430,000 + $93,000 + $900,000 − $310,000 − $210,000 − $450,000 − $10,000.
+  - id: C
+    text: $4,518,000
+    rationale: Deducts only the $235,000 of cash dividends paid. Retained earnings is reduced when dividends
+      are declared, $310,000; the unpaid $75,000 is a liability.
+  - id: D
+    text: $4,535,000
+    rationale: Charges retained earnings with the land's $118,000 carrying amount. A property dividend
+      is recorded at the fair value of the asset distributed, $210,000; the $92,000 gain on remeasuring
+      the land is already in net income.
+  answer: B
+  explanation: 'Opening retained earnings are restated for the error, net of tax: $4,430,000 + $124,000
+    × 75% = $4,523,000. Add net income ($900,000, which already includes the gain on remeasuring the land).
+    Deduct dividends when declared: cash $310,000; the property dividend at the land''s fair value, $210,000;
+    and the small (6%) stock dividend at market price, 30,000 shares × $15 = $450,000. The $30,000 shortfall
+    on the treasury shares is charged first to the $20,000 of paid-in capital from treasury stock, and
+    the remaining $10,000 to retained earnings. Retained earnings at December 31 = $4,443,000.'
+- stem: Appin Corp.'s Year 2 statement of changes in stockholders' equity begins with retained earnings
+    of $2,050,000 at January 1, as previously reported. In Year 2, Appin found that a computational error
+    had overstated its Year 1 depreciation expense by $56,000; its income tax rate is 25% for all years.
+    Year 2 net income, correctly computed and including the gain on the land distribution described below,
+    was $416,000. During Year 2, the board declared cash dividends of $145,000, of which $110,000 had
+    been paid by December 31; distributed to shareholders land that Appin held as an investment, which
+    had a carrying amount of $57,000 and a fair value of $95,000 on the distribution date; and declared
+    and distributed an 8% stock dividend on its 250,000 outstanding $1 par common shares when their market
+    price was $12 per share. Appin accounts for treasury stock by the cost method. It also reissued treasury
+    shares that had cost $50,000 for $37,000; before that sale, its paid-in capital from treasury stock
+    transactions had a balance of $9,000. What retained earnings should Appin report at December 31, Year
+    2?
+  choices:
+  - id: A
+    text: $2,024,000
+    rationale: Correct. $2,050,000 + $42,000 + $416,000 − $145,000 − $95,000 − $240,000 − $4,000.
+  - id: B
+    text: $2,038,000
+    rationale: Adds the whole $56,000 pretax overstatement to opening retained earnings. Correcting it
+      also raises Year 1 income tax expense, so the prior-period adjustment is $56,000 × 75% = $42,000.
+  - id: C
+    text: $2,062,000
+    rationale: Charges retained earnings with the land's $57,000 carrying amount. A property dividend
+      is recorded at the fair value of the asset distributed, $95,000; the $38,000 gain on remeasuring
+      the land is already in net income.
+  - id: D
+    text: $2,244,000
+    rationale: 'Charges retained earnings with only the $1 par value of the 20,000 shares distributed,
+      $20,000. A 8% stock dividend is a small stock dividend, recorded at the shares'' market price: 20,000
+      × $12 = $240,000.'
+  answer: A
+  explanation: 'Opening retained earnings are restated for the error, net of tax: $2,050,000 + $56,000
+    × 75% = $2,092,000. Add net income ($416,000, which already includes the gain on remeasuring the land).
+    Deduct dividends when declared: cash $145,000; the property dividend at the land''s fair value, $95,000;
+    and the small (8%) stock dividend at market price, 20,000 shares × $12 = $240,000. The $13,000 shortfall
+    on the treasury shares is charged first to the $9,000 of paid-in capital from treasury stock, and
+    the remaining $4,000 to retained earnings. Retained earnings at December 31 = $2,024,000.'

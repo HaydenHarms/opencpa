@@ -1,0 +1,151 @@
+id: far-change-in-principle-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 250-10-45-5 (retrospective application of a change in accounting principle: cumulative effect
+    in opening retained earnings of the earliest period presented)'
+  - ASC 250-10-45-23 (correction of an error in previously issued financial statements)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'In Year 3, Alness Hardware Co. changes its inventory method from LIFO to FIFO because FIFO better
+  matches its flow of goods, and it can determine the effect on every prior period. Its inventories were:
+  December 31, Year 1, LIFO $540,000 and FIFO $660,000; December 31, Year 2, LIFO $575,000 and FIFO $759,000.
+  Also in Year 3, Alness found that a $36,000 invoice for repairs made in December, Year 1, had never
+  been accrued; Alness paid it in January, Year 2, and charged it to Year 2 repairs expense. Alness''s
+  retained earnings at January 1, Year 2, as originally reported, were $2,760,000. Its income tax rate
+  is 25% for all years and all effects. In its comparative financial statements for Years 2 and 3, what
+  retained earnings should Alness report at January 1, Year 2, as adjusted?'
+choices:
+- id: A
+  text: $2,733,000
+  rationale: Applies the change in inventory method prospectively, from Year 3. A change in accounting
+    principle is applied retrospectively when its period-specific effects can be determined, so the earliest
+    period presented carries the $90,000 cumulative effect.
+- id: B
+  text: $2,823,000
+  rationale: Correct. $2,760,000 + $120,000 × 75% − $36,000 × 75%.
+- id: C
+  text: $2,850,000
+  rationale: 'Leaves out the repairs invoice on the view that the error counterbalanced. It did, but only
+    by the end of Year 2: at January 1, Year 2, Year 1 income was still overstated by $36,000 before tax,
+    so opening retained earnings fall by $27,000.'
+- id: D
+  text: $2,871,000
+  rationale: Uses the inventory difference at December 31, Year 2, $184,000 × 75%. The adjustment to January
+    1, Year 2, retained earnings is the cumulative effect on periods before Year 2, measured by the difference
+    at December 31, Year 1.
+answer: B
+explanation: 'The change to FIFO is applied retrospectively: the Years 2 and 3 statements are presented
+  on FIFO, and the cumulative effect on periods before Year 2 adjusts retained earnings at January 1,
+  Year 2. That effect is the higher Year 1 ending inventory under FIFO, $120,000, net of tax: + $90,000.
+  The repairs error is corrected by restatement: Year 1 income was overstated by $36,000 (Year 2 income
+  understated by the same amount, so the error had counterbalanced only by December 31, Year 2), so January
+  1, Year 2, retained earnings fall by $27,000 after tax. Adjusted retained earnings = $2,760,000 + $90,000
+  − $27,000 = $2,823,000.'
+variants:
+- stem: 'In Year 3, Crianlarich Hardware Co. changes its inventory method from LIFO to FIFO because FIFO
+    better matches its flow of goods, and it can determine the effect on every prior period. Its inventories
+    were: December 31, Year 1, LIFO $410,000 and FIFO $490,000; December 31, Year 2, LIFO $436,000 and
+    FIFO $576,000. Also in Year 3, Crianlarich found that a $24,000 invoice for repairs made in December,
+    Year 1, had never been accrued; Crianlarich paid it in January, Year 2, and charged it to Year 2 repairs
+    expense. Crianlarich''s retained earnings at January 1, Year 2, as originally reported, were $2,070,000.
+    Its income tax rate is 25% for all years and all effects. In its comparative financial statements
+    for Years 2 and 3, what retained earnings should Crianlarich report at January 1, Year 2, as adjusted?'
+  choices:
+  - id: A
+    text: $2,112,000
+    rationale: Correct. $2,070,000 + $80,000 × 75% − $24,000 × 75%.
+  - id: B
+    text: $2,126,000
+    rationale: Adjusts by the pretax amounts, + $80,000 − $24,000. Each effect also changes income taxes,
+      so retained earnings change by 75% of each.
+  - id: C
+    text: $2,148,000
+    rationale: Adds the $18,000 after-tax repairs correction. The unrecorded Year 1 repairs overstated
+      Year 1 income, so retained earnings are reduced.
+  - id: D
+    text: $2,157,000
+    rationale: Uses the inventory difference at December 31, Year 2, $140,000 × 75%. The adjustment to
+      January 1, Year 2, retained earnings is the cumulative effect on periods before Year 2, measured
+      by the difference at December 31, Year 1.
+  answer: A
+  explanation: 'The change to FIFO is applied retrospectively: the Years 2 and 3 statements are presented
+    on FIFO, and the cumulative effect on periods before Year 2 adjusts retained earnings at January 1,
+    Year 2. That effect is the higher Year 1 ending inventory under FIFO, $80,000, net of tax: + $60,000.
+    The repairs error is corrected by restatement: Year 1 income was overstated by $24,000 (Year 2 income
+    understated by the same amount, so the error had counterbalanced only by December 31, Year 2), so
+    January 1, Year 2, retained earnings fall by $18,000 after tax. Adjusted retained earnings = $2,070,000
+    + $60,000 − $18,000 = $2,112,000.'
+- stem: 'In Year 3, Tyndrum Hardware Co. changes its inventory method from LIFO to FIFO because FIFO better
+    matches its flow of goods, and it can determine the effect on every prior period. Its inventories
+    were: December 31, Year 1, LIFO $702,000 and FIFO $862,000; December 31, Year 2, LIFO $748,000 and
+    FIFO $988,000. Also in Year 3, Tyndrum found that a $48,000 invoice for repairs made in December,
+    Year 1, had never been accrued; Tyndrum paid it in January, Year 2, and charged it to Year 2 repairs
+    expense. Tyndrum''s retained earnings at January 1, Year 2, as originally reported, were $3,590,000.
+    Its income tax rate is 25% for all years and all effects. In its comparative financial statements
+    for Years 2 and 3, what retained earnings should Tyndrum report at January 1, Year 2, as adjusted?'
+  choices:
+  - id: A
+    text: $3,554,000
+    rationale: Applies the change in inventory method prospectively, from Year 3. A change in accounting
+      principle is applied retrospectively when its period-specific effects can be determined, so the
+      earliest period presented carries the $120,000 cumulative effect.
+  - id: B
+    text: $3,674,000
+    rationale: Correct. $3,590,000 + $160,000 × 75% − $48,000 × 75%.
+  - id: C
+    text: $3,702,000
+    rationale: Adjusts by the pretax amounts, + $160,000 − $48,000. Each effect also changes income taxes,
+      so retained earnings change by 75% of each.
+  - id: D
+    text: $3,710,000
+    rationale: 'Leaves out the repairs invoice on the view that the error counterbalanced. It did, but
+      only by the end of Year 2: at January 1, Year 2, Year 1 income was still overstated by $48,000 before
+      tax, so opening retained earnings fall by $36,000.'
+  answer: B
+  explanation: 'The change to FIFO is applied retrospectively: the Years 2 and 3 statements are presented
+    on FIFO, and the cumulative effect on periods before Year 2 adjusts retained earnings at January 1,
+    Year 2. That effect is the higher Year 1 ending inventory under FIFO, $160,000, net of tax: + $120,000.
+    The repairs error is corrected by restatement: Year 1 income was overstated by $48,000 (Year 2 income
+    understated by the same amount, so the error had counterbalanced only by December 31, Year 2), so
+    January 1, Year 2, retained earnings fall by $36,000 after tax. Adjusted retained earnings = $3,590,000
+    + $120,000 − $36,000 = $3,674,000.'
+- stem: 'In Year 3, Dalmally Hardware Co. changes its inventory method from LIFO to FIFO because FIFO
+    better matches its flow of goods, and it can determine the effect on every prior period. Its inventories
+    were: December 31, Year 1, LIFO $324,000 and FIFO $388,000; December 31, Year 2, LIFO $345,000 and
+    FIFO $457,000. Also in Year 3, Dalmally found that a $20,000 invoice for repairs made in December,
+    Year 1, had never been accrued; Dalmally paid it in January, Year 2, and charged it to Year 2 repairs
+    expense. Dalmally''s retained earnings at January 1, Year 2, as originally reported, were $1,660,000.
+    Its income tax rate is 25% for all years and all effects. In its comparative financial statements
+    for Years 2 and 3, what retained earnings should Dalmally report at January 1, Year 2, as adjusted?'
+  choices:
+  - id: A
+    text: $1,645,000
+    rationale: Applies the change in inventory method prospectively, from Year 3. A change in accounting
+      principle is applied retrospectively when its period-specific effects can be determined, so the
+      earliest period presented carries the $48,000 cumulative effect.
+  - id: B
+    text: $1,693,000
+    rationale: Correct. $1,660,000 + $64,000 × 75% − $20,000 × 75%.
+  - id: C
+    text: $1,723,000
+    rationale: Adds the $15,000 after-tax repairs correction. The unrecorded Year 1 repairs overstated
+      Year 1 income, so retained earnings are reduced.
+  - id: D
+    text: $1,729,000
+    rationale: Uses the inventory difference at December 31, Year 2, $112,000 × 75%. The adjustment to
+      January 1, Year 2, retained earnings is the cumulative effect on periods before Year 2, measured
+      by the difference at December 31, Year 1.
+  answer: B
+  explanation: 'The change to FIFO is applied retrospectively: the Years 2 and 3 statements are presented
+    on FIFO, and the cumulative effect on periods before Year 2 adjusts retained earnings at January 1,
+    Year 2. That effect is the higher Year 1 ending inventory under FIFO, $64,000, net of tax: + $48,000.
+    The repairs error is corrected by restatement: Year 1 income was overstated by $20,000 (Year 2 income
+    understated by the same amount, so the error had counterbalanced only by December 31, Year 2), so
+    January 1, Year 2, retained earnings fall by $15,000 after tax. Adjusted retained earnings = $1,660,000
+    + $48,000 − $15,000 = $1,693,000.'

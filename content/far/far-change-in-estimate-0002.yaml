@@ -1,0 +1,157 @@
+id: far-change-in-estimate-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 250-10-45-17 (change in accounting estimate applied prospectively)
+  - ASC 250-10-45-23 (correction of a prior-period error through opening retained earnings)
+  - ASC 360-10-35 (depreciation)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Dingwall Fabrication Co. bought a machine on January 1, Year 1, for $960,000 and depreciated it
+  straight-line over 12 years with a residual value of $60,000. On January 1, Year 3, after an engineering
+  study, Dingwall concluded that the machine will last 6 more years and have a residual value of $30,000.
+  Dingwall's draft Year 3 income statement reports income before income taxes of $1,412,000. The supporting
+  records show that the draft (1) records Year 3 depreciation on the machine on the original estimates;
+  (2) includes in Year 3 sales commission expense $38,000 of commissions that sales staff earned on December,
+  Year 2, sales, which were not accrued at December 31, Year 2, and were paid in January, Year 3; and
+  (3) includes in Year 3 depreciation expense $31,000 of Year 1 depreciation on a delivery truck that
+  was never recorded in Year 1 (the truck's Year 3 depreciation is recorded correctly). Dingwall's Year
+  2 statements have been issued, it presents single-year statements, and both errors are material. Ignore
+  income taxes. What corrected income before income taxes should Dingwall report for Year 3?
+choices:
+- id: A
+  text: $1,316,000
+  rationale: 'Applies the revised annual depreciation of $130,000 to Years 1 and 2 as well and charges
+    the catch-up to Year 3: $130,000 + 2 × ($130,000 − $75,000) = $240,000 of Year 3 depreciation. A change
+    in estimate is applied prospectively, with no catch-up: Year 3 depreciation is $130,000.'
+- id: B
+  text: $1,388,000
+  rationale: Leaves the $38,000 of commissions in Year 3 expense. They were earned on Year 2 sales, so
+    correcting the error charges them to Year 2 (through opening retained earnings), not Year 3.
+- id: C
+  text: $1,395,000
+  rationale: Leaves the $31,000 of Year 1 truck depreciation in Year 3. A prior-period error is corrected
+    by adjusting opening retained earnings, not through current income.
+- id: D
+  text: $1,426,000
+  rationale: Correct. $1,412,000 + $75,000 − $130,000 + $38,000 + $31,000.
+answer: D
+explanation: 'The revised life and residual value are a change in estimate, applied prospectively. Carrying
+  amount at January 1, Year 3 = $960,000 − 2 × $75,000 = $810,000; Year 3 depreciation = ($810,000 − $30,000)
+  ÷ 6 = $130,000, replacing the $75,000 in the draft. The unaccrued commissions and the omitted Year 1
+  depreciation are prior-period errors: they are corrected by adjusting retained earnings at January 1,
+  Year 3, so both come out of Year 3 expense. Corrected income before income taxes = $1,412,000 + $75,000
+  − $130,000 + $38,000 + $31,000 = $1,426,000.'
+variants:
+- stem: Taynuilt Fabrication Co. bought a machine on January 1, Year 1, for $720,000 and depreciated it
+    straight-line over 10 years with a residual value of $40,000. On January 1, Year 3, after an engineering
+    study, Taynuilt concluded that the machine will last 5 more years and have a residual value of $20,000.
+    Taynuilt's draft Year 3 income statement reports income before income taxes of $1,046,000. The supporting
+    records show that the draft (1) records Year 3 depreciation on the machine on the original estimates;
+    (2) includes in Year 3 sales commission expense $29,000 of commissions that sales staff earned on
+    December, Year 2, sales, which were not accrued at December 31, Year 2, and were paid in January,
+    Year 3; and (3) includes in Year 3 depreciation expense $23,000 of Year 1 depreciation on a delivery
+    truck that was never recorded in Year 1 (the truck's Year 3 depreciation is recorded correctly). Taynuilt's
+    Year 2 statements have been issued, it presents single-year statements, and both errors are material.
+    Ignore income taxes. What corrected income before income taxes should Taynuilt report for Year 3?
+  choices:
+  - id: A
+    text: $963,600
+    rationale: 'Applies the revised annual depreciation of $112,800 to Years 1 and 2 as well and charges
+      the catch-up to Year 3: $112,800 + 2 × ($112,800 − $68,000) = $202,400 of Year 3 depreciation. A
+      change in estimate is applied prospectively, with no catch-up: Year 3 depreciation is $112,800.'
+  - id: B
+    text: $1,026,000
+    rationale: 'Spreads the machine''s full cost less the new residual value over the 5 remaining years:
+      ($720,000 − $20,000) ÷ 5 = $140,000. What remains to be depreciated is the $584,000 carrying amount
+      at January 1, Year 3, less the residual value.'
+  - id: C
+    text: $1,030,200
+    rationale: Leaves the $23,000 of Year 1 truck depreciation in Year 3. A prior-period error is corrected
+      by adjusting opening retained earnings, not through current income.
+  - id: D
+    text: $1,053,200
+    rationale: Correct. $1,046,000 + $68,000 − $112,800 + $29,000 + $23,000.
+  answer: D
+  explanation: 'The revised life and residual value are a change in estimate, applied prospectively. Carrying
+    amount at January 1, Year 3 = $720,000 − 2 × $68,000 = $584,000; Year 3 depreciation = ($584,000 −
+    $20,000) ÷ 5 = $112,800, replacing the $68,000 in the draft. The unaccrued commissions and the omitted
+    Year 1 depreciation are prior-period errors: they are corrected by adjusting retained earnings at
+    January 1, Year 3, so both come out of Year 3 expense. Corrected income before income taxes = $1,046,000
+    + $68,000 − $112,800 + $29,000 + $23,000 = $1,053,200.'
+- stem: Connel Fabrication Co. bought a machine on January 1, Year 1, for $1,260,000 and depreciated it
+    straight-line over 15 years with a residual value of $60,000. On January 1, Year 3, after an engineering
+    study, Connel concluded that the machine will last 8 more years and have a residual value of $36,000.
+    Connel's draft Year 3 income statement reports income before income taxes of $1,835,000. The supporting
+    records show that the draft (1) records Year 3 depreciation on the machine on the original estimates;
+    (2) includes in Year 3 sales commission expense $47,000 of commissions that sales staff earned on
+    December, Year 2, sales, which were not accrued at December 31, Year 2, and were paid in January,
+    Year 3; and (3) includes in Year 3 depreciation expense $39,000 of Year 1 depreciation on a delivery
+    truck that was never recorded in Year 1 (the truck's Year 3 depreciation is recorded correctly). Connel's
+    Year 2 statements have been issued, it presents single-year statements, and both errors are material.
+    Ignore income taxes. What corrected income before income taxes should Connel report for Year 3?
+  choices:
+  - id: A
+    text: $1,829,000
+    rationale: Leaves the $39,000 of Year 1 truck depreciation in Year 3. A prior-period error is corrected
+      by adjusting opening retained earnings, not through current income.
+  - id: B
+    text: $1,848,000
+    rationale: 'Spreads the machine''s full cost less the new residual value over the 8 remaining years:
+      ($1,260,000 − $36,000) ÷ 8 = $153,000. What remains to be depreciated is the $1,100,000 carrying
+      amount at January 1, Year 3, less the residual value.'
+  - id: C
+    text: $1,868,000
+    rationale: Correct. $1,835,000 + $80,000 − $133,000 + $47,000 + $39,000.
+  - id: D
+    text: $1,921,000
+    rationale: Keeps depreciating the machine on the original estimates, $80,000 a year. The revised life
+      and residual value apply from Year 3 onward.
+  answer: C
+  explanation: 'The revised life and residual value are a change in estimate, applied prospectively. Carrying
+    amount at January 1, Year 3 = $1,260,000 − 2 × $80,000 = $1,100,000; Year 3 depreciation = ($1,100,000
+    − $36,000) ÷ 8 = $133,000, replacing the $80,000 in the draft. The unaccrued commissions and the omitted
+    Year 1 depreciation are prior-period errors: they are corrected by adjusting retained earnings at
+    January 1, Year 3, so both come out of Year 3 expense. Corrected income before income taxes = $1,835,000
+    + $80,000 − $133,000 + $47,000 + $39,000 = $1,868,000.'
+- stem: Benderloch Fabrication Co. bought a machine on January 1, Year 1, for $540,000 and depreciated
+    it straight-line over 8 years with a residual value of $28,000. On January 1, Year 3, after an engineering
+    study, Benderloch concluded that the machine will last 4 more years and have a residual value of $12,000.
+    Benderloch's draft Year 3 income statement reports income before income taxes of $788,000. The supporting
+    records show that the draft (1) records Year 3 depreciation on the machine on the original estimates;
+    (2) includes in Year 3 sales commission expense $21,000 of commissions that sales staff earned on
+    December, Year 2, sales, which were not accrued at December 31, Year 2, and were paid in January,
+    Year 3; and (3) includes in Year 3 depreciation expense $17,000 of Year 1 depreciation on a delivery
+    truck that was never recorded in Year 1 (the truck's Year 3 depreciation is recorded correctly). Benderloch's
+    Year 2 statements have been issued, it presents single-year statements, and both errors are material.
+    Ignore income taxes. What corrected income before income taxes should Benderloch report for Year 3?
+  choices:
+  - id: A
+    text: $718,000
+    rationale: 'Applies the revised annual depreciation of $100,000 to Years 1 and 2 as well and charges
+      the catch-up to Year 3: $100,000 + 2 × ($100,000 − $64,000) = $172,000 of Year 3 depreciation. A
+      change in estimate is applied prospectively, with no catch-up: Year 3 depreciation is $100,000.'
+  - id: B
+    text: $758,000
+    rationale: 'Spreads the machine''s full cost less the new residual value over the 4 remaining years:
+      ($540,000 − $12,000) ÷ 4 = $132,000. What remains to be depreciated is the $412,000 carrying amount
+      at January 1, Year 3, less the residual value.'
+  - id: C
+    text: $769,000
+    rationale: Leaves the $21,000 of commissions in Year 3 expense. They were earned on Year 2 sales,
+      so correcting the error charges them to Year 2 (through opening retained earnings), not Year 3.
+  - id: D
+    text: $790,000
+    rationale: Correct. $788,000 + $64,000 − $100,000 + $21,000 + $17,000.
+  answer: D
+  explanation: 'The revised life and residual value are a change in estimate, applied prospectively. Carrying
+    amount at January 1, Year 3 = $540,000 − 2 × $64,000 = $412,000; Year 3 depreciation = ($412,000 −
+    $12,000) ÷ 4 = $100,000, replacing the $64,000 in the draft. The unaccrued commissions and the omitted
+    Year 1 depreciation are prior-period errors: they are corrected by adjusting retained earnings at
+    January 1, Year 3, so both come out of Year 3 expense. Corrected income before income taxes = $788,000
+    + $64,000 − $100,000 + $21,000 + $17,000 = $790,000.'

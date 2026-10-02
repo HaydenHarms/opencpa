@@ -1,0 +1,141 @@
+id: far-cash-equivalents-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 305-10-20 (cash equivalents: original maturity of three months or less to the entity holding
+    the investment)'
+  - ASC 310-10 (receivables)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Year 1, Durness Freight Co.''s records show: a checking account balance of $186,400;
+  shares of a money market fund, redeemable on demand at $1 per share, $75,000; commercial paper bought
+  on November 15, Year 1, that matures on February 15, Year 2, $50,000; a six-month certificate of deposit
+  bought on September 1, Year 1, that matures on February 28, Year 2, $40,000; a customer''s check dated
+  January 10, Year 2, received in December, $6,200; a customer''s check that the bank returned in December
+  marked NSF, $3,450; travel advances to employees, $4,800; and petty cash, $1,500. Durness treats as
+  cash equivalents all investments that meet the GAAP definition of a cash equivalent. What amount should
+  Durness report as cash and cash equivalents?'
+choices:
+- id: A
+  text: $312,900
+  rationale: Correct. $186,400 + $75,000 + $50,000 + $1,500.
+- id: B
+  text: $316,350
+  rationale: Includes the $3,450 check returned NSF. A returned check is a claim against the customer,
+    a receivable.
+- id: C
+  text: $319,100
+  rationale: Includes the $6,200 postdated check. A check dated after year-end can't be deposited until
+    then, so it is a receivable.
+- id: D
+  text: $352,900
+  rationale: Includes the $40,000 certificate of deposit because it matures within three months of year-end.
+    The test is the maturity when Durness bought it; it had six months to run, so it is a short-term investment.
+answer: A
+explanation: 'Cash includes the checking balance ($186,400) and petty cash ($1,500). Cash equivalents
+  are short-term, highly liquid investments with an original maturity, to the holder, of three months
+  or less: the money market fund ($75,000) and the three-month commercial paper ($50,000). The certificate
+  of deposit had six months to run when bought, so it is a short-term investment even though it now matures
+  within three months. The postdated check, the NSF check and the travel advances are receivables. Total
+  = $312,900.'
+variants:
+- stem: 'At December 31, Year 1, Braemar Freight Co.''s records show: a checking account balance of $130,500;
+    shares of a money market fund, redeemable on demand at $1 per share, $53,000; commercial paper bought
+    on November 15, Year 1, that matures on February 15, Year 2, $35,000; a six-month certificate of deposit
+    bought on September 1, Year 1, that matures on February 28, Year 2, $30,000; a customer''s check dated
+    January 10, Year 2, received in December, $4,350; a customer''s check that the bank returned in December
+    marked NSF, $2,400; travel advances to employees, $3,400; and petty cash, $1,100. Braemar treats as
+    cash equivalents all investments that meet the GAAP definition of a cash equivalent. What amount should
+    Braemar report as cash and cash equivalents?'
+  choices:
+  - id: A
+    text: $166,600
+    rationale: Leaves out the $53,000 money market fund, which is redeemable on demand at a fixed $1 a
+      share and is a cash equivalent.
+  - id: B
+    text: $184,600
+    rationale: Leaves out the $35,000 of commercial paper. It had three months to maturity when Braemar
+      bought it, so it is a cash equivalent.
+  - id: C
+    text: $219,600
+    rationale: Correct. $130,500 + $53,000 + $35,000 + $1,100.
+  - id: D
+    text: $223,950
+    rationale: Includes the $4,350 postdated check. A check dated after year-end can't be deposited until
+      then, so it is a receivable.
+  answer: C
+  explanation: 'Cash includes the checking balance ($130,500) and petty cash ($1,100). Cash equivalents
+    are short-term, highly liquid investments with an original maturity, to the holder, of three months
+    or less: the money market fund ($53,000) and the three-month commercial paper ($35,000). The certificate
+    of deposit had six months to run when bought, so it is a short-term investment even though it now
+    matures within three months. The postdated check, the NSF check and the travel advances are receivables.
+    Total = $219,600.'
+- stem: 'At December 31, Year 1, Ballater Freight Co.''s records show: a checking account balance of $261,000;
+    shares of a money market fund, redeemable on demand at $1 per share, $105,000; commercial paper bought
+    on November 15, Year 1, that matures on February 15, Year 2, $70,000; a six-month certificate of deposit
+    bought on September 1, Year 1, that matures on February 28, Year 2, $55,000; a customer''s check dated
+    January 10, Year 2, received in December, $8,700; a customer''s check that the bank returned in December
+    marked NSF, $4,850; travel advances to employees, $6,700; and petty cash, $2,100. Ballater treats
+    as cash equivalents all investments that meet the GAAP definition of a cash equivalent. What amount
+    should Ballater report as cash and cash equivalents?'
+  choices:
+  - id: A
+    text: $333,100
+    rationale: Leaves out the $105,000 money market fund, which is redeemable on demand at a fixed $1
+      a share and is a cash equivalent.
+  - id: B
+    text: $438,100
+    rationale: Correct. $261,000 + $105,000 + $70,000 + $2,100.
+  - id: C
+    text: $442,950
+    rationale: Includes the $4,850 check returned NSF. A returned check is a claim against the customer,
+      a receivable.
+  - id: D
+    text: $493,100
+    rationale: Includes the $55,000 certificate of deposit because it matures within three months of year-end.
+      The test is the maturity when Ballater bought it; it had six months to run, so it is a short-term
+      investment.
+  answer: B
+  explanation: 'Cash includes the checking balance ($261,000) and petty cash ($2,100). Cash equivalents
+    are short-term, highly liquid investments with an original maturity, to the holder, of three months
+    or less: the money market fund ($105,000) and the three-month commercial paper ($70,000). The certificate
+    of deposit had six months to run when bought, so it is a short-term investment even though it now
+    matures within three months. The postdated check, the NSF check and the travel advances are receivables.
+    Total = $438,100.'
+- stem: 'At December 31, Year 1, Aboyne Freight Co.''s records show: a checking account balance of $102,500;
+    shares of a money market fund, redeemable on demand at $1 per share, $41,000; commercial paper bought
+    on November 15, Year 1, that matures on February 15, Year 2, $30,000; a six-month certificate of deposit
+    bought on September 1, Year 1, that matures on February 28, Year 2, $20,000; a customer''s check dated
+    January 10, Year 2, received in December, $3,400; a customer''s check that the bank returned in December
+    marked NSF, $1,900; travel advances to employees, $2,600; and petty cash, $800. Aboyne treats as cash
+    equivalents all investments that meet the GAAP definition of a cash equivalent. What amount should
+    Aboyne report as cash and cash equivalents?'
+  choices:
+  - id: A
+    text: $133,300
+    rationale: Leaves out the $41,000 money market fund, which is redeemable on demand at a fixed $1 a
+      share and is a cash equivalent.
+  - id: B
+    text: $144,300
+    rationale: Leaves out the $30,000 of commercial paper. It had three months to maturity when Aboyne
+      bought it, so it is a cash equivalent.
+  - id: C
+    text: $174,300
+    rationale: Correct. $102,500 + $41,000 + $30,000 + $800.
+  - id: D
+    text: $194,300
+    rationale: Includes the $20,000 certificate of deposit because it matures within three months of year-end.
+      The test is the maturity when Aboyne bought it; it had six months to run, so it is a short-term
+      investment.
+  answer: C
+  explanation: 'Cash includes the checking balance ($102,500) and petty cash ($800). Cash equivalents
+    are short-term, highly liquid investments with an original maturity, to the holder, of three months
+    or less: the money market fund ($41,000) and the three-month commercial paper ($30,000). The certificate
+    of deposit had six months to run when bought, so it is a short-term investment even though it now
+    matures within three months. The postdated check, the NSF check and the travel advances are receivables.
+    Total = $174,300.'

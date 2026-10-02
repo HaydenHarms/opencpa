@@ -1,0 +1,149 @@
+id: far-contingencies-0014
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 450-30-25-1 (gain contingencies not recognized before realization)
+  - 'ASC 610-30 (involuntary conversions: insurance recoveries of recognized losses)'
+  - ASC 310-10 (receivables)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Fortrose Textile Co. is preparing its December 31, Year 1, financial statements, which have not
+  been issued. Its files show: (1) a November fire destroyed inventory that had cost $640,000, and Fortrose
+  recognized a $640,000 loss; in December, its insurer accepted the claim in writing and will pay, in
+  January, the inventory''s $610,000 replacement cost less the policy''s $25,000 deductible; (2) in December,
+  a jury awarded Fortrose $900,000 in its patent suit against a competitor, which has appealed; (3) on
+  December 18, a former supplier signed an agreement to pay Fortrose $86,000 by February 15, Year 2, to
+  settle Fortrose''s claim over defective materials, and the supplier is financially sound; and (4) Fortrose
+  has filed a $140,000 claim with a different insurer for business lost during the fire, and that insurer
+  says its policy doesn''t cover the loss. What total receivables from these matters should Fortrose report
+  at December 31, Year 1?'
+choices:
+- id: A
+  text: $86,000
+  rationale: Leaves out the $585,000 insurance recovery until the cash arrives. A recovery of a loss already
+    recognized is recorded when it is probable, as it is once the insurer accepts the claim in writing.
+- id: B
+  text: $585,000
+  rationale: Leaves out the $86,000 settlement because it is a gain. The supplier's signed agreement makes
+    the amount realizable, so it is no longer a contingency and the receivable is recognized.
+- id: C
+  text: $671,000
+  rationale: Correct. ($610,000 − $25,000) + $86,000.
+- id: D
+  text: $1,571,000
+  rationale: Includes the $900,000 jury award. The competitor has appealed, so the award is a gain contingency,
+    which isn't recognized until it is realized or realizable; it may be disclosed.
+answer: C
+explanation: 'The insurance recovery on the fire loss is probable, since the insurer has accepted the
+  claim in writing, and it doesn''t exceed the $640,000 loss recognized, so a receivable is recognized
+  for the amount to be paid: $610,000 − $25,000 = $585,000. The supplier''s signed settlement is realizable,
+  so $86,000 is a receivable. The jury award under appeal is a gain contingency (ASC 450-30), not recognized
+  until realized, and the disputed business-interruption claim isn''t probable of recovery. Total receivables
+  = $671,000.'
+variants:
+- stem: 'Strachur Textile Co. is preparing its December 31, Year 1, financial statements, which have not
+    been issued. Its files show: (1) a November fire destroyed inventory that had cost $450,000, and Strachur
+    recognized a $450,000 loss; in December, its insurer accepted the claim in writing and will pay, in
+    January, the inventory''s $425,000 replacement cost less the policy''s $18,000 deductible; (2) in
+    December, a jury awarded Strachur $630,000 in its patent suit against a competitor, which has appealed;
+    (3) on December 18, a former supplier signed an agreement to pay Strachur $60,000 by February 15,
+    Year 2, to settle Strachur''s claim over defective materials, and the supplier is financially sound;
+    and (4) Strachur has filed a $100,000 claim with a different insurer for business lost during the
+    fire, and that insurer says its policy doesn''t cover the loss. What total receivables from these
+    matters should Strachur report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $467,000
+    rationale: Correct. ($425,000 − $18,000) + $60,000.
+  - id: B
+    text: $485,000
+    rationale: Records the insurance recovery at the full $425,000 replacement cost, ignoring the $18,000
+      deductible that the insurer will withhold.
+  - id: C
+    text: $567,000
+    rationale: Includes the $100,000 business-interruption claim. The insurer denies coverage, so a recovery
+      isn't probable and no receivable is recognized.
+  - id: D
+    text: $1,097,000
+    rationale: Includes the $630,000 jury award. The competitor has appealed, so the award is a gain contingency,
+      which isn't recognized until it is realized or realizable; it may be disclosed.
+  answer: A
+  explanation: 'The insurance recovery on the fire loss is probable, since the insurer has accepted the
+    claim in writing, and it doesn''t exceed the $450,000 loss recognized, so a receivable is recognized
+    for the amount to be paid: $425,000 − $18,000 = $407,000. The supplier''s signed settlement is realizable,
+    so $60,000 is a receivable. The jury award under appeal is a gain contingency (ASC 450-30), not recognized
+    until realized, and the disputed business-interruption claim isn''t probable of recovery. Total receivables
+    = $467,000.'
+- stem: 'Dunoon Textile Co. is preparing its December 31, Year 1, financial statements, which have not
+    been issued. Its files show: (1) a November fire destroyed inventory that had cost $830,000, and Dunoon
+    recognized an $830,000 loss; in December, its insurer accepted the claim in writing and will pay,
+    in January, the inventory''s $795,000 replacement cost less the policy''s $33,000 deductible; (2)
+    in December, a jury awarded Dunoon $1,170,000 in its patent suit against a competitor, which has appealed;
+    (3) on December 18, a former supplier signed an agreement to pay Dunoon $112,000 by February 15, Year
+    2, to settle Dunoon''s claim over defective materials, and the supplier is financially sound; and
+    (4) Dunoon has filed a $180,000 claim with a different insurer for business lost during the fire,
+    and that insurer says its policy doesn''t cover the loss. What total receivables from these matters
+    should Dunoon report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $112,000
+    rationale: Leaves out the $762,000 insurance recovery until the cash arrives. A recovery of a loss
+      already recognized is recorded when it is probable, as it is once the insurer accepts the claim
+      in writing.
+  - id: B
+    text: $874,000
+    rationale: Correct. ($795,000 − $33,000) + $112,000.
+  - id: C
+    text: $907,000
+    rationale: Records the insurance recovery at the full $795,000 replacement cost, ignoring the $33,000
+      deductible that the insurer will withhold.
+  - id: D
+    text: $2,044,000
+    rationale: Includes the $1,170,000 jury award. The competitor has appealed, so the award is a gain
+      contingency, which isn't recognized until it is realized or realizable; it may be disclosed.
+  answer: B
+  explanation: 'The insurance recovery on the fire loss is probable, since the insurer has accepted the
+    claim in writing, and it doesn''t exceed the $830,000 loss recognized, so a receivable is recognized
+    for the amount to be paid: $795,000 − $33,000 = $762,000. The supplier''s signed settlement is realizable,
+    so $112,000 is a receivable. The jury award under appeal is a gain contingency (ASC 450-30), not recognized
+    until realized, and the disputed business-interruption claim isn''t probable of recovery. Total receivables
+    = $874,000.'
+- stem: 'Rothesay Textile Co. is preparing its December 31, Year 1, financial statements, which have not
+    been issued. Its files show: (1) a November fire destroyed inventory that had cost $385,000, and Rothesay
+    recognized a $385,000 loss; in December, its insurer accepted the claim in writing and will pay, in
+    January, the inventory''s $365,000 replacement cost less the policy''s $15,000 deductible; (2) in
+    December, a jury awarded Rothesay $540,000 in its patent suit against a competitor, which has appealed;
+    (3) on December 18, a former supplier signed an agreement to pay Rothesay $52,000 by February 15,
+    Year 2, to settle Rothesay''s claim over defective materials, and the supplier is financially sound;
+    and (4) Rothesay has filed an $85,000 claim with a different insurer for business lost during the
+    fire, and that insurer says its policy doesn''t cover the loss. What total receivables from these
+    matters should Rothesay report at December 31, Year 1?'
+  choices:
+  - id: A
+    text: $52,000
+    rationale: Leaves out the $350,000 insurance recovery until the cash arrives. A recovery of a loss
+      already recognized is recorded when it is probable, as it is once the insurer accepts the claim
+      in writing.
+  - id: B
+    text: $350,000
+    rationale: Leaves out the $52,000 settlement because it is a gain. The supplier's signed agreement
+      makes the amount realizable, so it is no longer a contingency and the receivable is recognized.
+  - id: C
+    text: $402,000
+    rationale: Correct. ($365,000 − $15,000) + $52,000.
+  - id: D
+    text: $487,000
+    rationale: Includes the $85,000 business-interruption claim. The insurer denies coverage, so a recovery
+      isn't probable and no receivable is recognized.
+  answer: C
+  explanation: 'The insurance recovery on the fire loss is probable, since the insurer has accepted the
+    claim in writing, and it doesn''t exceed the $385,000 loss recognized, so a receivable is recognized
+    for the amount to be paid: $365,000 − $15,000 = $350,000. The supplier''s signed settlement is realizable,
+    so $52,000 is a receivable. The jury award under appeal is a gain contingency (ASC 450-30), not recognized
+    until realized, and the disputed business-interruption claim isn''t probable of recovery. Total receivables
+    = $402,000.'

@@ -1,0 +1,50 @@
+id: far-ppe-held-for-sale-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 360-10-45-9 (criteria for classifying a long-lived asset as held for sale)
+  - 'ASC 360-10-55 (implementation guidance: assets not available for immediate sale; actions to complete
+    the plan)'
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Strontian Haulage Co. issues its calendar-year financial statements each March. At December 31,
+  Year 1, it is deciding how to classify four long-lived assets that it plans to dispose of. Which one
+  should it classify as held for sale at December 31, Year 1?
+choices:
+- id: A
+  text: A depot vacated in November once the board approved its sale; a broker is marketing it near appraised
+    value, and a buyer's letter of intent sets a March closing
+  rationale: Correct. The board, which has the authority, has committed to the sale; the depot is empty
+    and can be sold as it is; it is being actively marketed at a price close to its value; and a signed
+    letter of intent makes a sale within a year likely. Every condition for held-for-sale classification
+    is met.
+- id: B
+  text: A truck wash that the board approved selling in December, which needs an overhaul, not finished
+    until April, Year 2, before any buyer will consider it
+  rationale: 'The truck wash can''t be sold in its present condition: the overhaul isn''t a usual and
+    customary term of selling such an asset, so it is not available for immediate sale and stays held
+    and used.'
+- id: C
+  text: A parts warehouse that a regional manager has proposed selling and is showing to buyers, though
+    only the board, which next meets in February, can approve asset sales
+  rationale: No one with the authority to approve the sale has committed to a plan. Until the board approves
+    it, the warehouse is held and used, however actively it is shown to buyers.
+- id: D
+  text: A loading crane that the board approved selling in December, which Strontian plans to advertise
+    in Year 3, after a replacement crane is installed
+  rationale: There is no active program to find a buyer, and the sale isn't expected within a year, so
+    the crane stays held and used.
+answer: A
+explanation: ASC 360-10-45-9 classifies a long-lived asset as held for sale only when management with
+  the authority to approve the action commits to a plan to sell it; it is available for immediate sale
+  in its present condition, subject only to usual and customary terms; an active program to find a buyer
+  has begun; the sale is probable and expected to be completed within one year; it is being marketed at
+  a reasonable price; and significant changes to the plan are unlikely. The depot meets every condition.
+  The truck wash isn't available for immediate sale because of the overhaul, the warehouse lacks approval
+  by someone with the authority to sell it, and the crane has no active marketing and no expected sale
+  within a year.

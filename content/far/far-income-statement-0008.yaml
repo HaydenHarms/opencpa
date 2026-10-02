@@ -1,0 +1,151 @@
+id: far-income-statement-0008
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 220-10 (income statement)
+  - ASC 606-10-55 (consignment arrangements)
+  - 'ASC 321-10-35 (equity securities: changes in fair value in net income)'
+  - ASC 505-20 (dividends are distributions, not expenses)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Balmacara Outfitting Co.''s draft Year 2 income statement reports income before income taxes of
+  $946,000. The controller identifies these errors: (1) goods costing $38,500 that Balmacara had shipped
+  to a dealer, who sells them on Balmacara''s behalf for a commission, were left out of Balmacara''s December
+  31 inventory, so their cost was included in cost of goods sold; (2) a $27,000 increase during Year 2
+  in the fair value of listed common shares that Balmacara holds, without significant influence over the
+  issuer, was reported in other comprehensive income; (3) on December 1, Balmacara received $54,000 from
+  a tenant as rent for warehouse space for December through May, Year 3, and credited the whole amount
+  to rent revenue; and (4) cash dividends of $120,000 that Balmacara''s board declared in December were
+  debited to an expense account. What corrected income before income taxes should Balmacara report for
+  Year 2?'
+choices:
+- id: A
+  text: $966,500
+  rationale: Leaves the $120,000 of dividends among the expenses. Dividends are distributions of retained
+    earnings to owners, not expenses, so they come out of the income statement.
+- id: B
+  text: $1,009,500
+  rationale: Deducts the $38,500 of goods held by the dealer instead of adding them back. Goods out on
+    consignment still belong to Balmacara, so ending inventory rises and cost of goods sold falls by $38,500.
+- id: C
+  text: $1,059,500
+  rationale: Leaves the $27,000 fair value increase in other comprehensive income. Changes in the fair
+    value of equity securities with readily determinable fair values are recognized in net income.
+- id: D
+  text: $1,086,500
+  rationale: Correct. $946,000 + $38,500 + $27,000 − $45,000 + $120,000.
+answer: D
+explanation: '(1) Consigned goods remain the consignor''s inventory, so ending inventory rises and cost
+  of goods sold falls: + $38,500. (2) Fair value changes on equity securities with readily determinable
+  fair values go to net income: + $27,000. (3) One month of the six-month rent, $9,000, was earned in
+  Year 2, so $45,000 is reclassified to unearned rent: − $45,000. (4) Dividends are distributions to owners,
+  charged to retained earnings, not expenses: + $120,000. Corrected income before income taxes = $946,000
+  + $38,500 + $27,000 − $45,000 + $120,000 = $1,086,500.'
+variants:
+- stem: 'Tobermory Outfitting Co.''s draft Year 2 income statement reports income before income taxes
+    of $662,000. The controller identifies these errors: (1) goods costing $27,000 that Tobermory had
+    shipped to a dealer, who sells them on Tobermory''s behalf for a commission, were left out of Tobermory''s
+    December 31 inventory, so their cost was included in cost of goods sold; (2) a $19,000 increase during
+    Year 2 in the fair value of listed common shares that Tobermory holds, without significant influence
+    over the issuer, was reported in other comprehensive income; (3) on December 1, Tobermory received
+    $36,000 from a tenant as rent for warehouse space for December through May, Year 3, and credited the
+    whole amount to rent revenue; and (4) cash dividends of $85,000 that Tobermory''s board declared in
+    December were debited to an expense account. What corrected income before income taxes should Tobermory
+    report for Year 2?'
+  choices:
+  - id: A
+    text: $709,000
+    rationale: Deducts the $27,000 of goods held by the dealer instead of adding them back. Goods out
+      on consignment still belong to Tobermory, so ending inventory rises and cost of goods sold falls
+      by $27,000.
+  - id: B
+    text: $744,000
+    rationale: Leaves the $19,000 fair value increase in other comprehensive income. Changes in the fair
+      value of equity securities with readily determinable fair values are recognized in net income.
+  - id: C
+    text: $763,000
+    rationale: Correct. $662,000 + $27,000 + $19,000 − $30,000 + $85,000.
+  - id: D
+    text: $793,000
+    rationale: Leaves all $36,000 of rent in revenue. Only December's rent, $36,000 ÷ 6 = $6,000, was
+      earned in Year 2; the $30,000 for January through May is unearned revenue, a liability.
+  answer: C
+  explanation: '(1) Consigned goods remain the consignor''s inventory, so ending inventory rises and cost
+    of goods sold falls: + $27,000. (2) Fair value changes on equity securities with readily determinable
+    fair values go to net income: + $19,000. (3) One month of the six-month rent, $6,000, was earned in
+    Year 2, so $30,000 is reclassified to unearned rent: − $30,000. (4) Dividends are distributions to
+    owners, charged to retained earnings, not expenses: + $85,000. Corrected income before income taxes
+    = $662,000 + $27,000 + $19,000 − $30,000 + $85,000 = $763,000.'
+- stem: 'Craignure Outfitting Co.''s draft Year 2 income statement reports income before income taxes
+    of $1,324,000. The controller identifies these errors: (1) goods costing $54,000 that Craignure had
+    shipped to a dealer, who sells them on Craignure''s behalf for a commission, were left out of Craignure''s
+    December 31 inventory, so their cost was included in cost of goods sold; (2) a $38,000 increase during
+    Year 2 in the fair value of listed common shares that Craignure holds, without significant influence
+    over the issuer, was reported in other comprehensive income; (3) on December 1, Craignure received
+    $78,000 from a tenant as rent for warehouse space for December through May, Year 3, and credited the
+    whole amount to rent revenue; and (4) cash dividends of $170,000 that Craignure''s board declared
+    in December were debited to an expense account. What corrected income before income taxes should Craignure
+    report for Year 2?'
+  choices:
+  - id: A
+    text: $1,351,000
+    rationale: Leaves the $170,000 of dividends among the expenses. Dividends are distributions of retained
+      earnings to owners, not expenses, so they come out of the income statement.
+  - id: B
+    text: $1,413,000
+    rationale: Deducts the $54,000 of goods held by the dealer instead of adding them back. Goods out
+      on consignment still belong to Craignure, so ending inventory rises and cost of goods sold falls
+      by $54,000.
+  - id: C
+    text: $1,521,000
+    rationale: Correct. $1,324,000 + $54,000 + $38,000 − $65,000 + $170,000.
+  - id: D
+    text: $1,586,000
+    rationale: Leaves all $78,000 of rent in revenue. Only December's rent, $78,000 ÷ 6 = $13,000, was
+      earned in Year 2; the $65,000 for January through May is unearned revenue, a liability.
+  answer: C
+  explanation: '(1) Consigned goods remain the consignor''s inventory, so ending inventory rises and cost
+    of goods sold falls: + $54,000. (2) Fair value changes on equity securities with readily determinable
+    fair values go to net income: + $38,000. (3) One month of the six-month rent, $13,000, was earned
+    in Year 2, so $65,000 is reclassified to unearned rent: − $65,000. (4) Dividends are distributions
+    to owners, charged to retained earnings, not expenses: + $170,000. Corrected income before income
+    taxes = $1,324,000 + $54,000 + $38,000 − $65,000 + $170,000 = $1,521,000.'
+- stem: 'Bunessan Outfitting Co.''s draft Year 2 income statement reports income before income taxes of
+    $520,000. The controller identifies these errors: (1) goods costing $21,000 that Bunessan had shipped
+    to a dealer, who sells them on Bunessan''s behalf for a commission, were left out of Bunessan''s December
+    31 inventory, so their cost was included in cost of goods sold; (2) a $15,000 increase during Year
+    2 in the fair value of listed common shares that Bunessan holds, without significant influence over
+    the issuer, was reported in other comprehensive income; (3) on December 1, Bunessan received $30,000
+    from a tenant as rent for warehouse space for December through May, Year 3, and credited the whole
+    amount to rent revenue; and (4) cash dividends of $65,000 that Bunessan''s board declared in December
+    were debited to an expense account. What corrected income before income taxes should Bunessan report
+    for Year 2?'
+  choices:
+  - id: A
+    text: $531,000
+    rationale: Leaves the $65,000 of dividends among the expenses. Dividends are distributions of retained
+      earnings to owners, not expenses, so they come out of the income statement.
+  - id: B
+    text: $554,000
+    rationale: Deducts the $21,000 of goods held by the dealer instead of adding them back. Goods out
+      on consignment still belong to Bunessan, so ending inventory rises and cost of goods sold falls
+      by $21,000.
+  - id: C
+    text: $581,000
+    rationale: Leaves the $15,000 fair value increase in other comprehensive income. Changes in the fair
+      value of equity securities with readily determinable fair values are recognized in net income.
+  - id: D
+    text: $596,000
+    rationale: Correct. $520,000 + $21,000 + $15,000 − $25,000 + $65,000.
+  answer: D
+  explanation: '(1) Consigned goods remain the consignor''s inventory, so ending inventory rises and cost
+    of goods sold falls: + $21,000. (2) Fair value changes on equity securities with readily determinable
+    fair values go to net income: + $15,000. (3) One month of the six-month rent, $5,000, was earned in
+    Year 2, so $25,000 is reclassified to unearned rent: − $25,000. (4) Dividends are distributions to
+    owners, charged to retained earnings, not expenses: + $65,000. Corrected income before income taxes
+    = $520,000 + $21,000 + $15,000 − $25,000 + $65,000 = $596,000.'

@@ -1,0 +1,142 @@
+id: far-investments-fair-value-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at fair value)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 320-10-35-1 (available-for-sale debt securities: unrealized holding gains and losses in OCI)'
+  - 'ASC 310-20-35 and ASC 835-30-35 (interest method: amortization of discount)'
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Dornoch Co. paid $478,938 for $500,000 face amount of 5-year, 5% bonds that
+  pay interest each December 31; the price gives a yield of 6%. Dornoch classifies the bonds as available
+  for sale and amortizes the discount by the effective interest method, rounding to the nearest dollar.
+  It does not intend to sell the bonds and is not likely to be required to sell them before they recover
+  in value, and it expects to collect all of their contractual cash flows. The bonds' fair value was $471,000
+  at December 31, Year 1, and $493,000 at December 31, Year 2. In its December 31, Year 2, entry to adjust
+  the bonds to fair value, what amount should Dornoch credit to other comprehensive income?
+choices:
+- id: A
+  text: $6,366
+  rationale: Records only the $6,366 by which fair value exceeds amortized cost at December 31, Year 2
+    ($493,000 − $486,634), without reversing the $11,674 unrealized loss recorded in OCI for Year 1. The
+    entry moves the fair value adjustment from an $11,674 credit balance to a $6,366 debit balance.
+- id: B
+  text: $11,674
+  rationale: Reverses the $11,674 Year 1 unrealized loss but records none of the $6,366 by which fair
+    value exceeds amortized cost at December 31, Year 2.
+- id: C
+  text: $14,062
+  rationale: Compares the December 31, Year 2, fair value with the $478,938 purchase price. The comparison
+    is with amortized cost, $486,634, and the Year 1 loss already in OCI is reversed.
+- id: D
+  text: $18,040
+  rationale: Correct. ($493,000 − $486,634) − ($471,000 − $482,674) = $6,366 + $11,674.
+answer: D
+explanation: 'Amortized cost: Year 1 interest income $478,938 × 6% = $28,736, less the $25,000 coupon,
+  amortizes $3,736, so amortized cost is $482,674; Year 2 interest income $482,674 × 6% = $28,960 amortizes
+  $3,960, giving $486,634. At December 31, Year 1, fair value was $11,674 below amortized cost, an unrealized
+  loss in OCI. At December 31, Year 2, it is $6,366 above. The Year 2 entry moves the fair value adjustment
+  by $6,366 + $11,674 = $18,040, debiting the adjustment account and crediting OCI (an unrealized holding
+  gain).'
+variants:
+- stem: On January 1, Year 1, Aberfeldy Co. paid $379,697 for $400,000 face amount of 6-year, 4% bonds
+    that pay interest each December 31; the price gives a yield of 5%. Aberfeldy classifies the bonds
+    as available for sale and amortizes the discount by the effective interest method, rounding to the
+    nearest dollar. It does not intend to sell the bonds and is not likely to be required to sell them
+    before they recover in value, and it expects to collect all of their contractual cash flows. The bonds'
+    fair value was $372,000 at December 31, Year 1, and $394,000 at December 31, Year 2. In its December
+    31, Year 2, entry to adjust the bonds to fair value, what amount should Aberfeldy credit to other
+    comprehensive income?
+  choices:
+  - id: A
+    text: $10,682
+    rationale: Reverses the $10,682 Year 1 unrealized loss but records none of the $8,184 by which fair
+      value exceeds amortized cost at December 31, Year 2.
+  - id: B
+    text: $14,303
+    rationale: Compares the December 31, Year 2, fair value with the $379,697 purchase price. The comparison
+      is with amortized cost, $385,816, and the Year 1 loss already in OCI is reversed.
+  - id: C
+    text: $18,866
+    rationale: Correct. ($394,000 − $385,816) − ($372,000 − $382,682) = $8,184 + $10,682.
+  - id: D
+    text: $22,000
+    rationale: Takes the $394,000 − $372,000 change in fair value. The amortized cost also rose in Year
+      2, by the $3,134 of discount amortized, so OCI records only the change in the gap between fair value
+      and amortized cost.
+  answer: C
+  explanation: 'Amortized cost: Year 1 interest income $379,697 × 5% = $18,985, less the $16,000 coupon,
+    amortizes $2,985, so amortized cost is $382,682; Year 2 interest income $382,682 × 5% = $19,134 amortizes
+    $3,134, giving $385,816. At December 31, Year 1, fair value was $10,682 below amortized cost, an unrealized
+    loss in OCI. At December 31, Year 2, it is $8,184 above. The Year 2 entry moves the fair value adjustment
+    by $8,184 + $10,682 = $18,866, debiting the adjustment account and crediting OCI (an unrealized holding
+    gain).'
+- stem: On January 1, Year 1, Kenmore Co. paid $767,198 for $800,000 face amount of 5-year, 6% bonds that
+    pay interest each December 31; the price gives a yield of 7%. Kenmore classifies the bonds as available
+    for sale and amortizes the discount by the effective interest method, rounding to the nearest dollar.
+    It does not intend to sell the bonds and is not likely to be required to sell them before they recover
+    in value, and it expects to collect all of their contractual cash flows. The bonds' fair value was
+    $751,000 at December 31, Year 1, and $788,000 at December 31, Year 2. In its December 31, Year 2,
+    entry to adjust the bonds to fair value, what amount should Kenmore credit to other comprehensive
+    income?
+  choices:
+  - id: A
+    text: $8,995
+    rationale: Records only the $8,995 by which fair value exceeds amortized cost at December 31, Year
+      2 ($788,000 − $779,005), without reversing the $21,902 unrealized loss recorded in OCI for Year
+      1. The entry moves the fair value adjustment from a $21,902 credit balance to an $8,995 debit balance.
+  - id: B
+    text: $21,902
+    rationale: Reverses the $21,902 Year 1 unrealized loss but records none of the $8,995 by which fair
+      value exceeds amortized cost at December 31, Year 2.
+  - id: C
+    text: $30,897
+    rationale: Correct. ($788,000 − $779,005) − ($751,000 − $772,902) = $8,995 + $21,902.
+  - id: D
+    text: $37,000
+    rationale: Takes the $788,000 − $751,000 change in fair value. The amortized cost also rose in Year
+      2, by the $6,103 of discount amortized, so OCI records only the change in the gap between fair value
+      and amortized cost.
+  answer: C
+  explanation: 'Amortized cost: Year 1 interest income $767,198 × 7% = $53,704, less the $48,000 coupon,
+    amortizes $5,704, so amortized cost is $772,902; Year 2 interest income $772,902 × 7% = $54,103 amortizes
+    $6,103, giving $779,005. At December 31, Year 1, fair value was $21,902 below amortized cost, an unrealized
+    loss in OCI. At December 31, Year 2, it is $8,995 above. The Year 2 entry moves the fair value adjustment
+    by $8,995 + $21,902 = $30,897, debiting the adjustment account and crediting OCI (an unrealized holding
+    gain).'
+- stem: On January 1, Year 1, Killin Co. paid $580,127 for $600,000 face amount of 4-year, 7% bonds that
+    pay interest each December 31; the price gives a yield of 8%. Killin classifies the bonds as available
+    for sale and amortizes the discount by the effective interest method, rounding to the nearest dollar.
+    It does not intend to sell the bonds and is not likely to be required to sell them before they recover
+    in value, and it expects to collect all of their contractual cash flows. The bonds' fair value was
+    $568,000 at December 31, Year 1, and $596,000 at December 31, Year 2. In its December 31, Year 2,
+    entry to adjust the bonds to fair value, what amount should Killin credit to other comprehensive income?
+  choices:
+  - id: A
+    text: $6,700
+    rationale: Records only the $6,700 by which fair value exceeds amortized cost at December 31, Year
+      2 ($596,000 − $589,300), without reversing the $16,537 unrealized loss recorded in OCI for Year
+      1. The entry moves the fair value adjustment from a $16,537 credit balance to a $6,700 debit balance.
+  - id: B
+    text: $16,537
+    rationale: Reverses the $16,537 Year 1 unrealized loss but records none of the $6,700 by which fair
+      value exceeds amortized cost at December 31, Year 2.
+  - id: C
+    text: $23,237
+    rationale: Correct. ($596,000 − $589,300) − ($568,000 − $584,537) = $6,700 + $16,537.
+  - id: D
+    text: $28,000
+    rationale: Takes the $596,000 − $568,000 change in fair value. The amortized cost also rose in Year
+      2, by the $4,763 of discount amortized, so OCI records only the change in the gap between fair value
+      and amortized cost.
+  answer: C
+  explanation: 'Amortized cost: Year 1 interest income $580,127 × 8% = $46,410, less the $42,000 coupon,
+    amortizes $4,410, so amortized cost is $584,537; Year 2 interest income $584,537 × 8% = $46,763 amortizes
+    $4,763, giving $589,300. At December 31, Year 1, fair value was $16,537 below amortized cost, an unrealized
+    loss in OCI. At December 31, Year 2, it is $6,700 above. The Year 2 entry moves the fair value adjustment
+    by $6,700 + $16,537 = $23,237, debiting the adjustment account and crediting OCI (an unrealized holding
+    gain).'

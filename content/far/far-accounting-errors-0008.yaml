@@ -1,0 +1,158 @@
+id: far-accounting-errors-0008
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 250-10-45-23 (correction of an error in previously issued financial statements: restatement)'
+  - 'ASC 835-30-35-2 (interest method: amortization of discount)'
+  - ASC 330-10 (inventory; goods in transit)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Strathpeffer Corp. issued $2,000,000 face amount of 10-year, 6% bonds, with
+  interest paid each December 31, for $1,731,597, a price that gives a yield of 8%. In Year 3, before
+  its Year 3 statements are issued, Strathpeffer finds that it has recorded interest expense equal to
+  the cash paid each year and has never amortized the discount. It also finds that goods costing $36,000,
+  bought on December 29, Year 2, FOB shipping point and in transit at year-end, were recorded as a purchase
+  and as inventory only when they arrived on January 4, Year 3; and that its December 31, Year 1, inventory
+  had been understated by $52,000 because of a counting error. Strathpeffer presents comparative statements
+  for Years 2 and 3; its December 31, Year 2, total stockholders' equity, as originally reported, was
+  $5,480,000. Strathpeffer uses the effective interest method, rounded to the nearest dollar. Ignore income
+  taxes. What total stockholders' equity should Strathpeffer report at December 31, Year 2, in its comparative
+  balance sheet?
+choices:
+- id: A
+  text: $5,441,462
+  rationale: Correct. $5,480,000 − ($18,528 + $20,010).
+- id: B
+  text: $5,459,990
+  rationale: Corrects only Year 2's $20,010 of amortization. The discount should have been amortized in
+    Year 1 too, so the cumulative $38,538 is corrected at December 31, Year 2.
+- id: C
+  text: $5,477,462
+  rationale: Adds the $36,000 of goods in transit to Year 2 inventory without also recording the purchase,
+    raising equity by $36,000. Both the purchase and the inventory were left out, so Year 2 cost of goods
+    sold and equity are unaffected.
+- id: D
+  text: $5,493,462
+  rationale: Corrects the Year 1 inventory error, raising equity by $52,000. The understated Year 1 ending
+    inventory was Year 2's beginning inventory, so Year 2 income was overstated by the same amount, and
+    the error had reversed by December 31, Year 2.
+answer: A
+explanation: 'Discount amortization omitted: Year 1, $1,731,597 × 8% − $120,000 = $18,528; Year 2, $1,750,125
+  × 8% − $120,000 = $20,010; in all $38,538 of extra interest expense, which lowers retained earnings,
+  and so equity, at December 31, Year 2 (and raises bonds payable). The goods in transit were left out
+  of both purchases and ending inventory, so Year 2 cost of goods sold and equity are unaffected (the
+  correction adds the inventory and an account payable). The Year 1 inventory error counterbalanced in
+  Year 2. Restated equity = $5,480,000 − $38,538 = $5,441,462.'
+variants:
+- stem: On January 1, Year 1, Kilmartin Corp. issued $1,500,000 face amount of 8-year, 5% bonds, with
+    interest paid each December 31, for $1,320,861, a price that gives a yield of 7%. In Year 3, before
+    its Year 3 statements are issued, Kilmartin finds that it has recorded interest expense equal to the
+    cash paid each year and has never amortized the discount. It also finds that goods costing $27,000,
+    bought on December 29, Year 2, FOB shipping point and in transit at year-end, were recorded as a purchase
+    and as inventory only when they arrived on January 4, Year 3; and that its December 31, Year 1, inventory
+    had been understated by $41,000 because of a counting error. Kilmartin presents comparative statements
+    for Years 2 and 3; its December 31, Year 2, total stockholders' equity, as originally reported, was
+    $4,120,000. Kilmartin uses the effective interest method, rounded to the nearest dollar. Ignore income
+    taxes. What total stockholders' equity should Kilmartin report at December 31, Year 2, in its comparative
+    balance sheet?
+  choices:
+  - id: A
+    text: $3,940,861
+    rationale: Charges the whole $179,139 discount against equity. Only the $36,142 that the effective
+      interest method amortizes in Years 1 and 2 is interest expense of those years; the rest is amortized
+      over the remaining 6 years.
+  - id: B
+    text: $4,075,216
+    rationale: 'Amortizes the discount straight-line, $22,392 a year, so equity falls by $44,784. Kilmartin
+      uses the effective interest method: $17,460 in Year 1 and $18,682 in Year 2.'
+  - id: C
+    text: $4,083,858
+    rationale: Correct. $4,120,000 − ($17,460 + $18,682).
+  - id: D
+    text: $4,110,858
+    rationale: Adds the $27,000 of goods in transit to Year 2 inventory without also recording the purchase,
+      raising equity by $27,000. Both the purchase and the inventory were left out, so Year 2 cost of
+      goods sold and equity are unaffected.
+  answer: C
+  explanation: 'Discount amortization omitted: Year 1, $1,320,861 × 7% − $75,000 = $17,460; Year 2, $1,338,321
+    × 7% − $75,000 = $18,682; in all $36,142 of extra interest expense, which lowers retained earnings,
+    and so equity, at December 31, Year 2 (and raises bonds payable). The goods in transit were left out
+    of both purchases and ending inventory, so Year 2 cost of goods sold and equity are unaffected (the
+    correction adds the inventory and an account payable). The Year 1 inventory error counterbalanced
+    in Year 2. Restated equity = $4,120,000 − $36,142 = $4,083,858.'
+- stem: On January 1, Year 1, Crinan Corp. issued $3,000,000 face amount of 10-year, 7% bonds, with interest
+    paid each December 31, for $2,614,941, a price that gives a yield of 9%. In Year 3, before its Year
+    3 statements are issued, Crinan finds that it has recorded interest expense equal to the cash paid
+    each year and has never amortized the discount. It also finds that goods costing $54,000, bought on
+    December 29, Year 2, FOB shipping point and in transit at year-end, were recorded as a purchase and
+    as inventory only when they arrived on January 4, Year 3; and that its December 31, Year 1, inventory
+    had been understated by $76,000 because of a counting error. Crinan presents comparative statements
+    for Years 2 and 3; its December 31, Year 2, total stockholders' equity, as originally reported, was
+    $8,350,000. Crinan uses the effective interest method, rounded to the nearest dollar. Ignore income
+    taxes. What total stockholders' equity should Crinan report at December 31, Year 2, in its comparative
+    balance sheet?
+  choices:
+  - id: A
+    text: $8,272,988
+    rationale: 'Amortizes the discount straight-line, $38,506 a year, so equity falls by $77,012. Crinan
+      uses the effective interest method: $25,345 in Year 1 and $27,626 in Year 2.'
+  - id: B
+    text: $8,297,029
+    rationale: Correct. $8,350,000 − ($25,345 + $27,626).
+  - id: C
+    text: $8,322,374
+    rationale: Corrects only Year 2's $27,626 of amortization. The discount should have been amortized
+      in Year 1 too, so the cumulative $52,971 is corrected at December 31, Year 2.
+  - id: D
+    text: $8,373,029
+    rationale: Corrects the Year 1 inventory error, raising equity by $76,000. The understated Year 1
+      ending inventory was Year 2's beginning inventory, so Year 2 income was overstated by the same amount,
+      and the error had reversed by December 31, Year 2.
+  answer: B
+  explanation: 'Discount amortization omitted: Year 1, $2,614,941 × 9% − $210,000 = $25,345; Year 2, $2,640,286
+    × 9% − $210,000 = $27,626; in all $52,971 of extra interest expense, which lowers retained earnings,
+    and so equity, at December 31, Year 2 (and raises bonds payable). The goods in transit were left out
+    of both purchases and ending inventory, so Year 2 cost of goods sold and equity are unaffected (the
+    correction adds the inventory and an account payable). The Year 1 inventory error counterbalanced
+    in Year 2. Restated equity = $8,350,000 − $52,971 = $8,297,029.'
+- stem: On January 1, Year 1, Tayvallich Corp. issued $1,000,000 face amount of 6-year, 4% bonds, with
+    interest paid each December 31, for $901,654, a price that gives a yield of 6%. In Year 3, before
+    its Year 3 statements are issued, Tayvallich finds that it has recorded interest expense equal to
+    the cash paid each year and has never amortized the discount. It also finds that goods costing $19,000,
+    bought on December 29, Year 2, FOB shipping point and in transit at year-end, were recorded as a purchase
+    and as inventory only when they arrived on January 4, Year 3; and that its December 31, Year 1, inventory
+    had been understated by $28,000 because of a counting error. Tayvallich presents comparative statements
+    for Years 2 and 3; its December 31, Year 2, total stockholders' equity, as originally reported, was
+    $2,940,000. Tayvallich uses the effective interest method, rounded to the nearest dollar. Ignore income
+    taxes. What total stockholders' equity should Tayvallich report at December 31, Year 2, in its comparative
+    balance sheet?
+  choices:
+  - id: A
+    text: $2,841,654
+    rationale: Charges the whole $98,346 discount against equity. Only the $29,044 that the effective
+      interest method amortizes in Years 1 and 2 is interest expense of those years; the rest is amortized
+      over the remaining 4 years.
+  - id: B
+    text: $2,910,956
+    rationale: Correct. $2,940,000 − ($14,099 + $14,945).
+  - id: C
+    text: $2,925,055
+    rationale: Corrects only Year 2's $14,945 of amortization. The discount should have been amortized
+      in Year 1 too, so the cumulative $29,044 is corrected at December 31, Year 2.
+  - id: D
+    text: $2,938,956
+    rationale: Corrects the Year 1 inventory error, raising equity by $28,000. The understated Year 1
+      ending inventory was Year 2's beginning inventory, so Year 2 income was overstated by the same amount,
+      and the error had reversed by December 31, Year 2.
+  answer: B
+  explanation: 'Discount amortization omitted: Year 1, $901,654 × 6% − $40,000 = $14,099; Year 2, $915,753
+    × 6% − $40,000 = $14,945; in all $29,044 of extra interest expense, which lowers retained earnings,
+    and so equity, at December 31, Year 2 (and raises bonds payable). The goods in transit were left out
+    of both purchases and ending inventory, so Year 2 cost of goods sold and equity are unaffected (the
+    correction adds the inventory and an account payable). The Year 1 inventory error counterbalanced
+    in Year 2. Restated equity = $2,940,000 − $29,044 = $2,910,956.'

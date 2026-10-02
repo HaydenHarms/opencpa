@@ -1,0 +1,150 @@
+id: far-ppe-held-for-sale-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 360-10-35-43 (asset held for sale measured at the lower of carrying amount and fair value less
+    cost to sell; not depreciated)
+  - ASC 360-10-35-40 (gain on a later increase in fair value less cost to sell limited to cumulative losses
+    previously recognized)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Bettyhill Printing Co. prepares quarterly financial statements. On May 1, Year 1, its board approved
+  selling a warehouse that Bettyhill had been using; Bettyhill vacated it that day and listed it with
+  a broker at a price close to its fair value. The warehouse had cost $1,200,000, its accumulated depreciation
+  was $420,000 at January 1, Year 1, and Bettyhill depreciates it straight-line at $48,000 a year. Its
+  fair value was $740,000 on May 1, $705,000 at June 30 and $800,000 at September 30, and the estimated
+  costs to sell were $22,000 throughout. The warehouse was still unsold at September 30, and Bettyhill
+  expects to sell it by March, Year 2. At what amount should Bettyhill report the warehouse in its September
+  30, Year 1, balance sheet?
+choices:
+- id: A
+  text: $683,000
+  rationale: Keeps the warehouse at its June 30 fair value less cost to sell, $705,000 − $22,000. The
+    increase in the third quarter is recognized as a gain, up to the $81,000 of losses recognized earlier.
+- id: B
+  text: $744,000
+  rationale: 'Keeps depreciating the warehouse after it was classified as held for sale: $764,000 − $48,000
+    × 5/12. A long-lived asset isn''t depreciated while it is classified as held for sale.'
+- id: C
+  text: $764,000
+  rationale: Correct. $1,200,000 − $420,000 − $48,000 × 4/12 = $764,000; the September 30 fair value less
+    cost to sell ($778,000) exceeds it, so the write-up stops at $764,000.
+- id: D
+  text: $778,000
+  rationale: Writes the warehouse up to its $778,000 fair value less cost to sell. A later increase is
+    recognized as a gain only up to the losses previously recognized, so the carrying amount can't exceed
+    $764,000, its carrying amount when it was classified as held for sale.
+answer: C
+explanation: 'Depreciation stops when the warehouse is classified as held for sale on May 1: carrying
+  amount = $1,200,000 − $420,000 − $48,000 × 4/12 = $764,000. It is then measured at the lower of that
+  amount and fair value less cost to sell: $718,000 on May 1 (a loss of $46,000) and $683,000 at June
+  30 (a further loss of $35,000). At September 30, fair value less cost to sell is $778,000. A gain is
+  recognized for the increase, but only up to the $81,000 of losses recognized earlier (ASC 360-10-35-40),
+  so the warehouse is reported at $764,000.'
+variants:
+- stem: Banchory Printing Co. prepares quarterly financial statements. On April 1, Year 1, its board approved
+    selling a workshop that Banchory had been using; Banchory vacated it that day and listed it with a
+    broker at a price close to its fair value. The workshop had cost $840,000, its accumulated depreciation
+    was $276,000 at January 1, Year 1, and Banchory depreciates it straight-line at $36,000 a year. Its
+    fair value was $548,000 on April 1, $521,000 at June 30 and $592,000 at September 30, and the estimated
+    costs to sell were $17,000 throughout. The workshop was still unsold at September 30, and Banchory
+    expects to sell it by March, Year 2. At what amount should Banchory report the workshop in its September
+    30, Year 1, balance sheet?
+  choices:
+  - id: A
+    text: $555,000
+    rationale: Correct. $840,000 − $276,000 − $36,000 × 3/12 = $555,000; the September 30 fair value less
+      cost to sell ($575,000) exceeds it, so the write-up stops at $555,000.
+  - id: B
+    text: $564,000
+    rationale: 'Leaves out depreciation for the 3 months before April 1: $840,000 − $276,000. Depreciation
+      continues until the asset is classified as held for sale.'
+  - id: C
+    text: $575,000
+    rationale: Writes the workshop up to its $575,000 fair value less cost to sell. A later increase is
+      recognized as a gain only up to the losses previously recognized, so the carrying amount can't exceed
+      $555,000, its carrying amount when it was classified as held for sale.
+  - id: D
+    text: $592,000
+    rationale: Reports the workshop at its $592,000 fair value. An asset held for sale is measured at
+      the lower of its carrying amount and fair value less cost to sell, and any write-up is limited to
+      the losses recognized earlier.
+  answer: A
+  explanation: 'Depreciation stops when the workshop is classified as held for sale on April 1: carrying
+    amount = $840,000 − $276,000 − $36,000 × 3/12 = $555,000. It is then measured at the lower of that
+    amount and fair value less cost to sell: $531,000 on April 1 (a loss of $24,000) and $504,000 at June
+    30 (a further loss of $27,000). At September 30, fair value less cost to sell is $575,000. A gain
+    is recognized for the increase, but only up to the $51,000 of losses recognized earlier (ASC 360-10-35-40),
+    so the workshop is reported at $555,000.'
+- stem: Stonehaven Printing Co. prepares quarterly financial statements. On March 1, Year 1, its board
+    approved selling a warehouse that Stonehaven had been using; Stonehaven vacated it that day and listed
+    it with a broker at a price close to its fair value. The warehouse had cost $1,560,000, its accumulated
+    depreciation was $612,000 at January 1, Year 1, and Stonehaven depreciates it straight-line at $60,000
+    a year. Its fair value was $902,000 on March 1, $861,000 at June 30 and $985,000 at September 30,
+    and the estimated costs to sell were $26,000 throughout. The warehouse was still unsold at September
+    30, and Stonehaven expects to sell it by March, Year 2. At what amount should Stonehaven report the
+    warehouse in its September 30, Year 1, balance sheet?
+  choices:
+  - id: A
+    text: $835,000
+    rationale: Keeps the warehouse at its June 30 fair value less cost to sell, $861,000 − $26,000. The
+      increase in the third quarter is recognized as a gain, up to the $103,000 of losses recognized earlier.
+  - id: B
+    text: $903,000
+    rationale: 'Keeps depreciating the warehouse after it was classified as held for sale: $938,000 −
+      $60,000 × 7/12. A long-lived asset isn''t depreciated while it is classified as held for sale.'
+  - id: C
+    text: $938,000
+    rationale: Correct. $1,560,000 − $612,000 − $60,000 × 2/12 = $938,000; the September 30 fair value
+      less cost to sell ($959,000) exceeds it, so the write-up stops at $938,000.
+  - id: D
+    text: $959,000
+    rationale: Writes the warehouse up to its $959,000 fair value less cost to sell. A later increase
+      is recognized as a gain only up to the losses previously recognized, so the carrying amount can't
+      exceed $938,000, its carrying amount when it was classified as held for sale.
+  answer: C
+  explanation: 'Depreciation stops when the warehouse is classified as held for sale on March 1: carrying
+    amount = $1,560,000 − $612,000 − $60,000 × 2/12 = $938,000. It is then measured at the lower of that
+    amount and fair value less cost to sell: $876,000 on March 1 (a loss of $62,000) and $835,000 at June
+    30 (a further loss of $41,000). At September 30, fair value less cost to sell is $959,000. A gain
+    is recognized for the increase, but only up to the $103,000 of losses recognized earlier (ASC 360-10-35-40),
+    so the warehouse is reported at $938,000.'
+- stem: Inverbervie Printing Co. prepares quarterly financial statements. On June 1, Year 1, its board
+    approved selling a depot that Inverbervie had been using; Inverbervie vacated it that day and listed
+    it with a broker at a price close to its fair value. The depot had cost $660,000, its accumulated
+    depreciation was $228,000 at January 1, Year 1, and Inverbervie depreciates it straight-line at $24,000
+    a year. Its fair value was $405,000 on June 1, $382,000 at June 30 and $451,000 at September 30, and
+    the estimated costs to sell were $14,000 throughout. The depot was still unsold at September 30, and
+    Inverbervie expects to sell it by March, Year 2. At what amount should Inverbervie report the depot
+    in its September 30, Year 1, balance sheet?
+  choices:
+  - id: A
+    text: $368,000
+    rationale: Keeps the depot at its June 30 fair value less cost to sell, $382,000 − $14,000. The increase
+      in the third quarter is recognized as a gain, up to the $54,000 of losses recognized earlier.
+  - id: B
+    text: $422,000
+    rationale: Correct. $660,000 − $228,000 − $24,000 × 5/12 = $422,000; the September 30 fair value less
+      cost to sell ($437,000) exceeds it, so the write-up stops at $422,000.
+  - id: C
+    text: $437,000
+    rationale: Writes the depot up to its $437,000 fair value less cost to sell. A later increase is recognized
+      as a gain only up to the losses previously recognized, so the carrying amount can't exceed $422,000,
+      its carrying amount when it was classified as held for sale.
+  - id: D
+    text: $451,000
+    rationale: Reports the depot at its $451,000 fair value. An asset held for sale is measured at the
+      lower of its carrying amount and fair value less cost to sell, and any write-up is limited to the
+      losses recognized earlier.
+  answer: B
+  explanation: 'Depreciation stops when the depot is classified as held for sale on June 1: carrying amount
+    = $660,000 − $228,000 − $24,000 × 5/12 = $422,000. It is then measured at the lower of that amount
+    and fair value less cost to sell: $391,000 on June 1 (a loss of $31,000) and $368,000 at June 30 (a
+    further loss of $23,000). At September 30, fair value less cost to sell is $437,000. A gain is recognized
+    for the increase, but only up to the $54,000 of losses recognized earlier (ASC 360-10-35-40), so the
+    depot is reported at $422,000.'

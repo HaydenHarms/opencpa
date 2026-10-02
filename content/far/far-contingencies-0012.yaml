@@ -1,0 +1,48 @@
+id: far-contingencies-0012
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 450-20-25-2 (accrual of a loss contingency: probable and reasonably estimable)'
+  - ASC 450-20-50 (disclosure when a loss can't be estimated)
+  - ASC 440-10-50 (unconditional purchase obligations)
+  - ASC 450-20 (no accrual for uninsured risks before a loss occurs)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Before issuing its December 31, Year 1, financial statements, Kilchoan Cycle Works reviews documents
+  on four matters: counsel''s letter, a purchase contract, insurance records and an engineering report.
+  For which one should Kilchoan accrue a liability at December 31, Year 1?'
+choices:
+- id: A
+  text: A dealer's $500,000 suit that counsel expects to succeed, though counsel sees no basis yet for
+    estimating the damages, even as a range
+  rationale: A loss that is probable but can't be reasonably estimated, even as a range, isn't accrued;
+    the suit is disclosed, with a statement that an estimate can't be made.
+- id: B
+  text: Engineers' finding of a brake defect in bicycles sold in Year 1, which Kilchoan has begun to recall,
+    with repairs estimated at $310,000
+  rationale: Correct. The defect existed in bicycles already sold, so the obligation arose in Year 1;
+    Kilchoan has started the recall, making the cost probable, and has estimated it. Both conditions for
+    accrual are met.
+- id: C
+  text: A noncancelable order to buy $420,000 of aluminum during Year 2, whose market price has since
+    risen to $455,000
+  rationale: A firm purchase commitment produces an accrued loss only when the market price falls below
+    the contract price. Here the price has risen, so there is no loss; the commitment may be disclosed.
+- id: D
+  text: Its uninsured showroom, which hasn't been damaged, though an actuary puts its expected annual
+    storm losses at $90,000
+  rationale: No storm damage had occurred by year-end, so there is no liability. GAAP doesn't permit accruing
+    a reserve for future losses on uninsured risks.
+answer: B
+explanation: A loss contingency is accrued only when information available before the statements are issued
+  shows it is probable that a liability had been incurred at the balance sheet date and the amount can
+  be reasonably estimated (ASC 450-20-25-2). The brake defect existed in bicycles sold in Year 1, Kilchoan
+  has begun a recall, and engineers have estimated the cost, so both conditions are met. The dealer's
+  suit fails the estimation condition and is disclosed. The aluminum contract would produce a loss only
+  if the market price fell below the contract price. Exposure to uninsured future storms isn't a liability
+  until a loss occurs.

@@ -1,0 +1,159 @@
+id: far-balance-sheet-0009
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Balance sheet
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 210-10-45 (current assets and current liabilities; current maturities of long-term debt)
+  - 'ASC 210-20 (offsetting: bank overdrafts at different banks)'
+  - ASC 505-30 (treasury stock is a deduction from equity)
+  - ASC 606-10-45 (contract liabilities)
+  notes: Batch 12. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Achnasheen Supply Co.''s draft December 31, Year 1, balance sheet reports total current assets
+  of $1,846,000 and total current liabilities of $968,000. The controller identifies these errors, none
+  of which has been corrected: (1) interest of $14,400 that had accrued on a note payable by December
+  31 has not been recorded; (2) a $36,000 deposit that a customer paid on December 19 for goods to be
+  delivered in February, Year 2, was credited to sales revenue; (3) the $125,000 principal installment
+  of a long-term bank loan that falls due on June 30, Year 2, is included in long-term debt; (4) cash
+  is reported net of a $22,500 overdraft in Achnasheen''s account at a second bank, which has no right
+  to offset it against Achnasheen''s other accounts; and (5) the $58,000 that Achnasheen paid in November
+  to reacquire some of its own common shares, which it holds for reissue, is included in short-term investments.
+  What working capital should Achnasheen''s corrected balance sheet report?'
+choices:
+- id: A
+  text: $622,100
+  rationale: 'Adds the $22,500 overdraft to current liabilities but leaves cash net of it: $1,788,000
+    − $1,165,900. Reporting the overdraft separately also raises cash by $22,500, so this correction leaves
+    working capital unchanged.'
+- id: B
+  text: $644,600
+  rationale: Correct. ($1,846,000 − $58,000 + $22,500) − ($968,000 + $14,400 + $36,000 + $125,000 + $22,500)
+    = $1,810,500 − $1,165,900.
+- id: C
+  text: $702,600
+  rationale: Leaves the $58,000 of reacquired shares in short-term investments. Treasury stock is a deduction
+    from stockholders' equity, not an asset, so current assets fall by $58,000.
+- id: D
+  text: $769,600
+  rationale: Leaves the $125,000 installment in long-term debt. The part of long-term debt due within
+    a year of the balance sheet date is a current liability.
+answer: B
+explanation: 'Current assets: the reacquired shares are treasury stock, a deduction from equity, so they
+  come out of short-term investments (− $58,000); and the overdraft at the second bank can''t be netted
+  against cash at another bank, so cash is reported gross (+ $22,500). Corrected current assets = $1,810,500.
+  Current liabilities: accrued interest (+ $14,400), the customer deposit, a contract liability until
+  the goods are delivered (+ $36,000), the installment due within a year (+ $125,000) and the overdraft
+  (+ $22,500). Corrected current liabilities = $1,165,900. Working capital = $1,810,500 − $1,165,900 =
+  $644,600. The overdraft raises both sides equally, so it doesn''t change working capital.'
+variants:
+- stem: 'Mallaig Supply Co.''s draft December 31, Year 1, balance sheet reports total current assets of
+    $1,330,000 and total current liabilities of $696,000. The controller identifies these errors, none
+    of which has been corrected: (1) interest of $10,400 that had accrued on a note payable by December
+    31 has not been recorded; (2) a $26,000 deposit that a customer paid on December 19 for goods to be
+    delivered in February, Year 2, was credited to sales revenue; (3) the $90,000 principal installment
+    of a long-term bank loan that falls due on April 30, Year 2, is included in long-term debt; (4) cash
+    is reported net of a $16,000 overdraft in Mallaig''s account at a second bank, which has no right
+    to offset it against Mallaig''s other accounts; and (5) the $42,000 that Mallaig paid in November
+    to reacquire some of its own common shares, which it holds for reissue, is included in short-term
+    investments. What working capital should Mallaig''s corrected balance sheet report?'
+  choices:
+  - id: A
+    text: $465,600
+    rationale: Correct. ($1,330,000 − $42,000 + $16,000) − ($696,000 + $10,400 + $26,000 + $90,000 + $16,000)
+      = $1,304,000 − $838,400.
+  - id: B
+    text: $491,600
+    rationale: Leaves the $26,000 deposit in sales revenue. Until the goods are delivered, the deposit
+      is a contract liability, which is current.
+  - id: C
+    text: $507,600
+    rationale: Leaves the $42,000 of reacquired shares in short-term investments. Treasury stock is a
+      deduction from stockholders' equity, not an asset, so current assets fall by $42,000.
+  - id: D
+    text: $555,600
+    rationale: Leaves the $90,000 installment in long-term debt. The part of long-term debt due within
+      a year of the balance sheet date is a current liability.
+  answer: A
+  explanation: 'Current assets: the reacquired shares are treasury stock, a deduction from equity, so
+    they come out of short-term investments (− $42,000); and the overdraft at the second bank can''t be
+    netted against cash at another bank, so cash is reported gross (+ $16,000). Corrected current assets
+    = $1,304,000. Current liabilities: accrued interest (+ $10,400), the customer deposit, a contract
+    liability until the goods are delivered (+ $26,000), the installment due within a year (+ $90,000)
+    and the overdraft (+ $16,000). Corrected current liabilities = $838,400. Working capital = $1,304,000
+    − $838,400 = $465,600. The overdraft raises both sides equally, so it doesn''t change working capital.'
+- stem: 'Acharacle Supply Co.''s draft December 31, Year 1, balance sheet reports total current assets
+    of $2,492,000 and total current liabilities of $1,306,000. The controller identifies these errors,
+    none of which has been corrected: (1) interest of $19,400 that had accrued on a note payable by December
+    31 has not been recorded; (2) a $49,000 deposit that a customer paid on December 19 for goods to be
+    delivered in February, Year 2, was credited to sales revenue; (3) the $170,000 principal installment
+    of a long-term bank loan that falls due on September 30, Year 2, is included in long-term debt; (4)
+    cash is reported net of a $30,500 overdraft in Acharacle''s account at a second bank, which has no
+    right to offset it against Acharacle''s other accounts; and (5) the $78,000 that Acharacle paid in
+    November to reacquire some of its own common shares, which it holds for reissue, is included in short-term
+    investments. What working capital should Acharacle''s corrected balance sheet report?'
+  choices:
+  - id: A
+    text: $839,100
+    rationale: 'Adds the $30,500 overdraft to current liabilities but leaves cash net of it: $2,414,000
+      − $1,574,900. Reporting the overdraft separately also raises cash by $30,500, so this correction
+      leaves working capital unchanged.'
+  - id: B
+    text: $869,600
+    rationale: Correct. ($2,492,000 − $78,000 + $30,500) − ($1,306,000 + $19,400 + $49,000 + $170,000
+      + $30,500) = $2,444,500 − $1,574,900.
+  - id: C
+    text: $889,000
+    rationale: Leaves out the $19,400 of accrued interest. Interest accrued by year-end is a current liability
+      even though it hasn't been paid.
+  - id: D
+    text: $947,600
+    rationale: Leaves the $78,000 of reacquired shares in short-term investments. Treasury stock is a
+      deduction from stockholders' equity, not an asset, so current assets fall by $78,000.
+  answer: B
+  explanation: 'Current assets: the reacquired shares are treasury stock, a deduction from equity, so
+    they come out of short-term investments (− $78,000); and the overdraft at the second bank can''t be
+    netted against cash at another bank, so cash is reported gross (+ $30,500). Corrected current assets
+    = $2,444,500. Current liabilities: accrued interest (+ $19,400), the customer deposit, a contract
+    liability until the goods are delivered (+ $49,000), the installment due within a year (+ $170,000)
+    and the overdraft (+ $30,500). Corrected current liabilities = $1,574,900. Working capital = $2,444,500
+    − $1,574,900 = $869,600. The overdraft raises both sides equally, so it doesn''t change working capital.'
+- stem: 'Kilchoan Supply Co.''s draft December 31, Year 1, balance sheet reports total current assets
+    of $1,070,000 and total current liabilities of $562,000. The controller identifies these errors, none
+    of which has been corrected: (1) interest of $8,400 that had accrued on a note payable by December
+    31 has not been recorded; (2) a $21,000 deposit that a customer paid on December 19 for goods to be
+    delivered in February, Year 2, was credited to sales revenue; (3) the $75,000 principal installment
+    of a long-term bank loan that falls due on March 31, Year 2, is included in long-term debt; (4) cash
+    is reported net of a $13,000 overdraft in Kilchoan''s account at a second bank, which has no right
+    to offset it against Kilchoan''s other accounts; and (5) the $34,000 that Kilchoan paid in November
+    to reacquire some of its own common shares, which it holds for reissue, is included in short-term
+    investments. What working capital should Kilchoan''s corrected balance sheet report?'
+  choices:
+  - id: A
+    text: $356,600
+    rationale: 'Adds the $13,000 overdraft to current liabilities but leaves cash net of it: $1,036,000
+      − $679,400. Reporting the overdraft separately also raises cash by $13,000, so this correction leaves
+      working capital unchanged.'
+  - id: B
+    text: $369,600
+    rationale: Correct. ($1,070,000 − $34,000 + $13,000) − ($562,000 + $8,400 + $21,000 + $75,000 + $13,000)
+      = $1,049,000 − $679,400.
+  - id: C
+    text: $378,000
+    rationale: Leaves out the $8,400 of accrued interest. Interest accrued by year-end is a current liability
+      even though it hasn't been paid.
+  - id: D
+    text: $390,600
+    rationale: Leaves the $21,000 deposit in sales revenue. Until the goods are delivered, the deposit
+      is a contract liability, which is current.
+  answer: B
+  explanation: 'Current assets: the reacquired shares are treasury stock, a deduction from equity, so
+    they come out of short-term investments (− $34,000); and the overdraft at the second bank can''t be
+    netted against cash at another bank, so cash is reported gross (+ $13,000). Corrected current assets
+    = $1,049,000. Current liabilities: accrued interest (+ $8,400), the customer deposit, a contract liability
+    until the goods are delivered (+ $21,000), the installment due within a year (+ $75,000) and the overdraft
+    (+ $13,000). Corrected current liabilities = $679,400. Working capital = $1,049,000 − $679,400 = $369,600.
+    The overdraft raises both sides equally, so it doesn''t change working capital.'
