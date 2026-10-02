@@ -176,11 +176,13 @@ export function SessionRunner({
     const i = items.findIndex((q) => !session.answered[q.id]);
     return i === -1 ? items.length : i;
   });
-  const [selected, setSelected] = useState<string | null>(null);
+  /** Unsubmitted picks by question id, kept while the student moves between questions. */
+  const [picks, setPicks] = useState<Record<string, string>>({});
   const [busy, setBusy] = useState(false);
   const started = useRef(Date.now());
 
   const q = items[index];
+  const selected = q ? (picks[q.id] ?? null) : null;
   const label =
     session.kind === 'diagnostic'
       ? 'Diagnostic'
@@ -206,7 +208,6 @@ export function SessionRunner({
 
   function go(i: number) {
     setIndex(i);
-    setSelected(null);
     started.current = Date.now();
     window.scrollTo(0, 0);
   }
@@ -297,7 +298,7 @@ export function SessionRunner({
             q={q}
             selected={(answered[q.id] as Revealed | undefined)?.selected ?? selected}
             result={answered[q.id] as Revealed | undefined}
-            onSelect={setSelected}
+            onSelect={(id) => setPicks((p) => ({ ...p, [q.id]: id }))}
           />
           {done ? (
             nextButton
@@ -306,6 +307,22 @@ export function SessionRunner({
               Submit
             </button>
           )}
+          <div className="row">
+            <button
+              className="link"
+              disabled={position <= 1}
+              onClick={() => go(tab[position - 2]![1])}
+            >
+              ← Previous question
+            </button>
+            <button
+              className="link"
+              disabled={position >= tab.length}
+              onClick={() => go(tab[position]![1])}
+            >
+              Next question →
+            </button>
+          </div>
         </>
       )}
     </>
