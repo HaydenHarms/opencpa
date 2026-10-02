@@ -1,9 +1,10 @@
-import { Link, NavLink, Route, Routes } from 'react-router-dom';
+import { Link, NavLink, Navigate, Route, Routes } from 'react-router-dom';
 import AccountPage, { SigninDone, SigninEmail, useAuthStatus } from './pages/Account';
 import Claude from './pages/Claude';
 import { Privacy, Terms } from './pages/Legal';
 import Home from './pages/Home';
 import {
+  LegacySimulationRedirect,
   LibraryHome,
   LibraryQuestionPage,
   LibrarySectionPage,
@@ -12,7 +13,6 @@ import {
 import Practice from './pages/Practice';
 import Progress from './pages/Progress';
 import Simulation from './pages/Simulation';
-import Simulations from './pages/Simulations';
 
 export default function App() {
   const { status } = useAuthStatus();
@@ -24,7 +24,6 @@ export default function App() {
         </NavLink>
         <nav>
           <NavLink to="/practice">Practice</NavLink>
-          <NavLink to="/simulations">Simulations</NavLink>
           <NavLink to="/library">Library</NavLink>
           <NavLink to="/progress">Progress</NavLink>
           <NavLink to="/claude">Claude</NavLink>
@@ -35,12 +34,13 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/practice" element={<Practice />} />
-          <Route path="/simulations" element={<Simulations />} />
-          <Route path="/simulations/:id" element={<Simulation />} />
+          <Route path="/simulations" element={<Navigate to="/library" replace />} />
+          <Route path="/simulations/:id" element={<LegacySimulationRedirect />} />
           <Route path="/library" element={<LibraryHome />} />
           <Route path="/library/:section" element={<LibrarySectionPage />} />
           <Route path="/library/:section/topic/:topic" element={<LibraryTopicPage />} />
           <Route path="/library/:section/q/:id" element={<LibraryQuestionPage />} />
+          <Route path="/library/:section/sim/:id" element={<Simulation />} />
           <Route path="/progress" element={<Progress />} />
           <Route path="/claude" element={<Claude />} />
           <Route path="/account" element={<AccountPage />} />

@@ -4,7 +4,8 @@
  * mastery, review scheduling and the Progress page.
  */
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
+import type { PublicTbs } from '@opencpa/schema';
 import {
   api,
   SECTION_NAMES,
@@ -23,6 +24,7 @@ const pct = (x: number) => `${Math.round(x * 100)}%`;
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 const topicPath = (section: string, topic: string) =>
   `/library/${section}/topic/${encodeURIComponent(topic)}`;
+const simPath = (section: string, id: string) => `/library/${section}/sim/${id}`;
 
 function useLibrary() {
   const [data, setData] = useState<LibrarySection[] | null>(null);
@@ -151,7 +153,7 @@ function LibrarySearch({ section, children }: { section?: string; children: Reac
                     <Link
                       to={
                         doc.type === 'tbs'
-                          ? `/simulations/${doc.id}`
+                          ? simPath(doc.section, doc.id)
                           : `/library/${doc.section}/q/${doc.id}`
                       }
                       className="card sim-link"
@@ -187,8 +189,9 @@ export function LibraryHome() {
     <section>
       <h2>Library</h2>
       <p className="muted">
-        Every exam, every blueprint topic and every reviewed question. Pick an exam to browse its
-        topics, practice one topic, or look up any question you’ve answered.
+        Every exam, every blueprint topic, every reviewed question and every simulation. Pick an
+        exam to browse its topics and simulations, practice one topic, or look up any question
+        you’ve answered.
       </p>
       <LibrarySearch>
         <div className="tiles">
@@ -226,10 +229,60 @@ export function LibraryHome() {
   );
 }
 
-/** /library/:section — the section's topics, grouped by blueprint area. */
+/** The section's simulations, as a flat list. */
+function SectionSimulations({ section }: { section: string }) {
+  const [sims, setSims] = useState<PublicTbs[] | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  useEffect(() => {
+    setSims(null);
+    setError(null);
+    api.simulations(section).then(setSims, (e: Error) => setError(e.message));
+  }, [section]);
+
+  if (error) return <p className="error">Couldn’t load simulations: {error}</p>;
+  if (!sims) return <p className="muted">Loading…</p>;
+  if (sims.length === 0)
+    return <p className="muted">No reviewed {section} simulations yet. They’re being written.</p>;
+  return (
+    <ul className="sim-list">
+      {sims.map((t) => (
+        <li key={t.id}>
+          <Link to={simPath(section, t.id)} className="card sim-link">
+            <b>{t.title}</b>
+            <span className="meta">
+              {t.blueprint.topic} · {plural(t.tasks.length, 'task')} ·{' '}
+              {plural(
+                t.tasks.reduce((n, task) => n + task.points, 0),
+                'point',
+              )}
+            </span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/** /simulations/:id (the old address) — send to the simulation's place in the Library. */
+export function LegacySimulationRedirect() {
+  const { id = '' } = useParams();
+  const [to, setTo] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  useEffect(() => {
+    api.simulation(id).then(
+      (sim) => setTo(simPath(sim.blueprint.section, sim.id)),
+      (e: Error) => setError(e.message),
+    );
+  }, [id]);
+  if (error) return <p className="error">Couldn’t load this simulation: {error}</p>;
+  return to ? <Navigate to={to} replace /> : <p className="muted">Loading…</p>;
+}
+
+/** /library/:section — the section's topics, grouped by blueprint area, and its simulations. */
 export function LibrarySectionPage() {
   const { section = '' } = useParams();
   const { data, error } = useLibrary();
+  const [view, setView] = useState<'topics' | 'simulations'>('topics');
   if (error) return <p className="error">Couldn’t load the library: {error}</p>;
   if (!data) return <p className="muted">Loading…</p>;
   const s = data.find((x) => x.section === section.toUpperCase());
@@ -254,26 +307,46 @@ export function LibrarySectionPage() {
       )}
       {s.topics.length > 0 && (
         <LibrarySearch section={s.section}>
-          {[...areas].map(([area, topics]) => (
-            <div key={area}>
-              <h3 className="area-head">{area}</h3>
-              <div className="tiles">
-                {topics.map((t) => (
-                  <Link key={t.topic} to={topicPath(s.section, t.topic)} className="card tile">
-                    <b>{t.topic}</b>
-                    <span className="meta">
-                      {plural(t.questions, 'question')}
-                      {t.simulations > 0 && ` · ${plural(t.simulations, 'simulation')}`}
-                    </span>
-                    <span className="meta">
-                      Seen {t.seen} of {t.questions + t.simulations}
-                    </span>
-                    <Meter value={t.mastery} />
-                  </Link>
-                ))}
-              </div>
+          {s.simulations > 0 && (
+            <div className="tabs">
+              <button
+                className={view === 'topics' ? 'active' : ''}
+                onClick={() => setView('topics')}
+              >
+                Topics {s.topics.length}
+              </button>
+              <button
+                className={view === 'simulations' ? 'active' : ''}
+                onClick={() => setView('simulations')}
+              >
+                Simulations {s.simulations}
+              </button>
             </div>
-          ))}
+          )}
+          {view === 'simulations' && s.simulations > 0 ? (
+            <SectionSimulations section={s.section} />
+          ) : (
+            [...areas].map(([area, topics]) => (
+              <div key={area}>
+                <h3 className="area-head">{area}</h3>
+                <div className="tiles">
+                  {topics.map((t) => (
+                    <Link key={t.topic} to={topicPath(s.section, t.topic)} className="card tile">
+                      <b>{t.topic}</b>
+                      <span className="meta">
+                        {plural(t.questions, 'question')}
+                        {t.simulations > 0 && ` · ${plural(t.simulations, 'simulation')}`}
+                      </span>
+                      <span className="meta">
+                        Seen {t.seen} of {t.questions + t.simulations}
+                      </span>
+                      <Meter value={t.mastery} />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ))
+          )}
         </LibrarySearch>
       )}
     </section>
@@ -407,7 +480,7 @@ export function LibraryTopicPage() {
             {shown.map((e) => (
               <li key={e.id}>
                 <Link
-                  to={e.type === 'tbs' ? `/simulations/${e.id}` : `/library/${section}/q/${e.id}`}
+                  to={e.type === 'tbs' ? simPath(section, e.id) : `/library/${section}/q/${e.id}`}
                   className="card sim-link"
                 >
                   <span>

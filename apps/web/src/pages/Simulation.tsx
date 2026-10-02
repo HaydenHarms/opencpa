@@ -299,7 +299,7 @@ function draftFrom(task: PublicTbsTask, r: TaskResponse | undefined): Draft {
   return d;
 }
 
-/** The standalone simulation page, reached from the Simulations list. */
+/** The standalone simulation page, reached from a Library exam or topic page. */
 export default function Simulation() {
   const { id = '' } = useParams();
   const [sim, setSim] = useState<PublicTbs | null>(null);
@@ -317,8 +317,13 @@ export default function Simulation() {
       sim={sim}
       crumb={
         <>
-          <Link to="/simulations">Simulations</Link> · {sim.blueprint.section} ·{' '}
-          {sim.blueprint.topic}
+          <Link to="/library">Library</Link> /{' '}
+          <Link to={`/library/${sim.blueprint.section}`}>{sim.blueprint.section}</Link> /{' '}
+          <Link
+            to={`/library/${sim.blueprint.section}/topic/${encodeURIComponent(sim.blueprint.topic)}`}
+          >
+            {sim.blueprint.topic}
+          </Link>
         </>
       }
     />
