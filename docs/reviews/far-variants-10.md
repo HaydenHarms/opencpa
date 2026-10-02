@@ -22,8 +22,10 @@ could put the key above, below or between the others:
 - `far-debt-covenant-0001`: the three original distractors (no adjustment, both adjustments added to
   liabilities only, and the warranty accrual recorded without the dividend) all understate the ratio.
   Added: recording the dividend but not the warranty accrual (also understates it, for more choice below
-  the key), and two duplicate-posting errors — double-counting both adjustments, or just the dividend, in
-  liabilities while equity reflects them only once — which overstate the ratio above the key.
+  the key), and confusing the debt-to-equity ratio with the equity multiplier (adjusted total assets ÷
+  adjusted equity), which always equals the correct ratio plus 1 and so sits well above the key. An earlier
+  draft used two "double-posts an adjustment twice" distractors instead of the equity multiplier; the gate
+  (below) called that an implausible, invented-for-arithmetic error, so both were dropped.
 - `far-revenue-allocation-0003`: the three original distractors (all the discount to the license, the
   discount spread across all three obligations, and the license's full standalone price) bracket the key
   with one below and two above. Added: dividing the discount equally among the three obligations instead
@@ -45,9 +47,9 @@ could put the key above, below or between the others:
 
 | Item | Area | Key letters by version | New distractor errors |
 | --- | --- | --- | --- |
-| `far-accounting-errors-0002` | III | B D C C | believes the error fully resolved; treats it as a direct retained-earnings adjustment |
+| `far-accounting-errors-0002` | III | B D A C | believes the error fully resolved; treats it as a direct retained-earnings adjustment |
 | `far-contingencies-0005` | III | D C B B | confirmed insurance recovery added as a liability; gain contingency misread as a loss |
-| `far-debt-covenant-0001` | II | D C B C | dividend recorded without the warranty accrual; both adjustments, or just the dividend, double-posted |
+| `far-debt-covenant-0001` | II | D C D C | dividend recorded without the warranty accrual; confuses the ratio with the equity multiplier (total assets ÷ equity = the ratio + 1) |
 | `far-revenue-allocation-0003` | III | B A B B | discount split equally among the three obligations; residual approach (ASC 606-10-32-34(c) bars it here) |
 
 Three families' key letters move across at least three of the four letters; `far-revenue-allocation-0003`
@@ -79,4 +81,41 @@ One verifier solved all 16 versions blind and matched every key. Its required fi
 
 ## Review gate
 
-No version-0 distractor set changed, but the distractor pools are new designs, so a gate covers all four families' variants (results below once run).
+Passed: average estimated pass likelihood ~85-86% across the 16 versions, no wrong keys, no major-revision
+items (`C:\Users\harms\AppData\Local\Temp\claude\opencpa-gate\v10\gate.md`). The gate required three fixes,
+applied here (re-run, audited, linted and validated; not committed by this pass):
+
+1. **`far-contingencies-0005`, v0 choice B ($80,000), v1 choice B ($105,000) and v3 choice A ($145,000):**
+   the rationale said the computation nets the insurance recovery against the base lawsuit liability alone,
+   but the number nets it against the lawsuit-plus-unasserted-claim total. Reworded to show the actual
+   computation, e.g. v0: "Nets the $150,000 insurance recovery against the $200,000 lawsuit liability, then
+   adds back the $30,000 unasserted claim: $200,000 − $150,000 + $30,000 = $80,000." This is a rationale-only
+   change to v0's choice B; the stem, key amount, tested concept and every other choice are unchanged.
+2. **`far-debt-covenant-0001`:** every "double-posts an adjustment twice" distractor (v1 choice D, v2
+   choices C and D, v3 choice D) was dropped as an implausible, invented-for-arithmetic error. Replaced with
+   the family's existing natural errors (pre-adjustment balances; both adjustments added to liabilities
+   without reducing equity; only the warranty recorded; only the dividend recorded) plus one new natural
+   above-key error: confusing the ratio with the equity multiplier (adjusted total assets ÷ adjusted equity),
+   which always equals the ratio plus 1. Key letters are now D (v0, v2, the multiplier absent) and C (v1, v3,
+   the multiplier shown) — still moves, per the gate's suggested design.
+3. **`far-accounting-errors-0002`:** `common.py`'s sort rule changed so "understated"/"overstated" after a
+   dollar amount counts as a sign for the ascending-choice-order check (understated negative, overstated and
+   $0 non-negative), and v0 and v2 were out of order under the new rule (this is also what the gate flagged
+   independently). `attach_variants` already re-sorts versions 1-3 on every run, but version 0 is loaded
+   from disk as-is and was never re-sorted that way, so I added a one-time `presort_v0()` step that re-sorts
+   version 0's choices and recomputes its answer letter under the current rule before `run()` loads it.
+   Only the choice order and ids changed; every choice's text and rationale, the stem and the explanation
+   are untouched. **v0's key letter changed from B to... B** (coincidentally the same letter after
+   resorting: new order is A = "both understated" [the old D], B = the key [unchanged content], C = "$0 net
+   income, overstated RE" [the old A], D = "both overstated" [the old C]). v2's key letter changed from C to
+   A.
+
+Final key letters after all three fixes: `far-accounting-errors-0002` B D A C, `far-contingencies-0005`
+D C B B (unchanged — only rationale wording changed), `far-debt-covenant-0001` D C D C. A second blind pass
+of just the nine changed versions (debt-covenant v1-v3, contingencies v0/v1/v3, accounting-errors v0-v2) is
+queued at `C:\Users\harms\AppData\Local\Temp\claude\opencpa-gate\v10\recheck2-blind.md` and
+`recheck2-keys.json`.
+
+**Blind re-check of the gate fixes:** a fresh verifier re-solved the 9 changed versions (`far-debt-covenant-0001` v1-v3, `far-contingencies-0005` v0, v1, v3, `far-accounting-errors-0002` v0-v2): 9 of 9 matched the key, and the choices sort correctly, including signed order for "understated" and "overstated". It could not derive the debt-covenant choices 2.76 (v1) and 2.59 (v3) from linear combinations of the stem amounts. They are the equity-multiplier error: adjusted total assets ÷ adjusted equity, which equals 1 plus the debt-to-equity ratio. That is a known confusion between two leverage ratios, so they were kept.
+
+**Tooling:** `common.py` now treats "understated" and "overstated" after an amount as directions in the signed-value sort, with understated first. A bank-wide scan found only `far-accounting-errors-0002` out of order.

@@ -16,21 +16,21 @@ stem: In Year 3, before its Year 3 statements are issued, Rook Co. discovers tha
   retained earnings misstated?
 choices:
 - id: A
-  text: $0 net income; $40,000 overstated retained earnings
-  rationale: Treats the error as affecting only Year 1 and carrying into retained earnings. The overstated
-    beginning inventory also overstated Year 2 cost of goods sold.
+  text: $40,000 understated net income; $40,000 understated retained earnings
+  rationale: Counts the Year 2 understatement in retained earnings without the Year 1 overstatement it
+    offsets.
 - id: B
   text: $40,000 understated net income; $0 retained earnings
   rationale: Correct. Year 2 cost of goods sold was overstated, understating Year 2 income by $40,000
     and offsetting Year 1's overstatement, so retained earnings at the end of Year 2 was correct.
 - id: C
+  text: $0 net income; $40,000 overstated retained earnings
+  rationale: Treats the error as affecting only Year 1 and carrying into retained earnings. The overstated
+    beginning inventory also overstated Year 2 cost of goods sold.
+- id: D
   text: $40,000 overstated net income; $40,000 overstated retained earnings
   rationale: Reverses the direction for Year 2. An overstated beginning inventory raises cost of goods
     sold and lowers income.
-- id: D
-  text: $40,000 understated net income; $40,000 understated retained earnings
-  rationale: Counts the Year 2 understatement in retained earnings without the Year 1 overstatement it
-    offsets.
 answer: B
 explanation: Overstated ending inventory in Year 1 understated Year 1 cost of goods sold and overstated
   Year 1 net income by $40,000. That inventory became Year 2's beginning inventory, overstating Year 2
@@ -44,14 +44,14 @@ variants:
     31, Year 2, retained earnings misstated?
   choices:
   - id: A
+    text: $0 net income; $55,000 understated retained earnings
+    rationale: Treats the error as affecting only Year 1 and carrying into retained earnings. The understated
+      beginning inventory also understated Year 2 cost of goods sold.
+  - id: B
     text: $0 net income; $0 retained earnings
     rationale: Believes the error is fully resolved because Year 2 ending inventory was stated correctly,
       overlooking that Year 2 beginning inventory, Year 1's understated ending inventory, still understated
       Year 2 cost of goods sold.
-  - id: B
-    text: $0 net income; $55,000 understated retained earnings
-    rationale: Treats the error as affecting only Year 1 and carrying into retained earnings. The understated
-      beginning inventory also understated Year 2 cost of goods sold.
   - id: C
     text: $0 net income; $55,000 overstated retained earnings
     rationale: Treats the Year 1 error as a direct adjustment to retained earnings, overstated it by $55,000,
@@ -72,24 +72,24 @@ variants:
     31, Year 2, retained earnings misstated?
   choices:
   - id: A
-    text: $0 net income; $0 retained earnings
-    rationale: Believes the error is fully resolved because Year 2 ending inventory was stated correctly,
-      overlooking that Year 2 beginning inventory, Year 1's overstated ending inventory, still overstated
-      Year 2 cost of goods sold.
+    text: $28,000 understated net income; $0 retained earnings
+    rationale: Correct. Year 2 cost of goods sold was overstated, understating Year 2 income by $28,000
+      and offsetting Year 1's overstatement, so retained earnings at the end of Year 2 was correct.
   - id: B
     text: $0 net income; $28,000 understated retained earnings
     rationale: Treats the Year 1 error as a direct adjustment to retained earnings, understated it by
       $28,000, without recognizing that Year 2's own overstated cost of goods sold already reversed the
       effect.
   - id: C
-    text: $28,000 understated net income; $0 retained earnings
-    rationale: Correct. Year 2 cost of goods sold was overstated, understating Year 2 income by $28,000
-      and offsetting Year 1's overstatement, so retained earnings at the end of Year 2 was correct.
+    text: $0 net income; $0 retained earnings
+    rationale: Believes the error is fully resolved because Year 2 ending inventory was stated correctly,
+      overlooking that Year 2 beginning inventory, Year 1's overstated ending inventory, still overstated
+      Year 2 cost of goods sold.
   - id: D
     text: $28,000 overstated net income; $28,000 overstated retained earnings
     rationale: Reverses the direction for Year 2. An overstated beginning inventory raises cost of goods
       sold and lowers income.
-  answer: C
+  answer: A
   explanation: Overstated ending inventory in Year 1 understated Year 1 cost of goods sold and overstated
     Year 1 net income by $28,000. That inventory became Year 2's beginning inventory, overstating Year
     2 cost of goods sold and understating Year 2 net income by $28,000. The two errors counterbalance,

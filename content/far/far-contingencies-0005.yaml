@@ -25,8 +25,9 @@ choices:
   rationale: Nets the insurance recovery against the lawsuit liability and omits the unasserted claim.
 - id: B
   text: $80,000
-  rationale: Nets the $150,000 insurance recovery against the $200,000 liability. The liability and the
-    recovery receivable are reported separately.
+  rationale: 'Nets the $150,000 insurance recovery against the $200,000 lawsuit liability, then adds back
+    the $30,000 unasserted claim: $200,000 − $150,000 + $30,000 = $80,000. The liability and the recovery
+    receivable are reported separately.'
 - id: C
   text: $200,000
   rationale: Omits the $30,000 unasserted claim. An unasserted claim is accrued when assertion is probable
@@ -55,8 +56,9 @@ variants:
     rationale: Nets the insurance recovery against the lawsuit liability and omits the unasserted claim.
   - id: B
     text: $105,000
-    rationale: Nets the $260,000 insurance recovery against the $320,000 liability. The liability and
-      the recovery receivable are reported separately.
+    rationale: 'Nets the $260,000 insurance recovery against the $320,000 lawsuit liability, then adds
+      back the $45,000 unasserted claim: $320,000 − $260,000 + $45,000 = $105,000. The liability and the
+      recovery receivable are reported separately.'
   - id: C
     text: $365,000
     rationale: Correct. The $320,000 lawsuit liability, reported gross, plus the $45,000 expected claim;
@@ -111,8 +113,9 @@ variants:
   choices:
   - id: A
     text: $145,000
-    rationale: Nets the $310,000 insurance recovery against the $400,000 liability. The liability and
-      the recovery receivable are reported separately.
+    rationale: 'Nets the $310,000 insurance recovery against the $400,000 lawsuit liability, then adds
+      back the $55,000 unasserted claim: $400,000 − $310,000 + $55,000 = $145,000. The liability and the
+      recovery receivable are reported separately.'
   - id: B
     text: $455,000
     rationale: Correct. The $400,000 lawsuit liability, reported gross, plus the $55,000 expected claim;

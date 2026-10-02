@@ -39,12 +39,12 @@ def _amounts(text):
     return tuple(float(a.replace(",", "")) for a in found)
 
 
-_SIGNED = re.compile(r"\$([\d,]+(?:\.\d+)?)(?:\s+(increase|decrease|gain|loss)\b)?")
+_SIGNED = re.compile(r"\$([\d,]+(?:\.\d+)?)(?:\s+(increase|decrease|gain|loss|overstated|understated)\b)?")
 
 
 def _signs(text):
     """The direction word after each amount: -1 for a decrease or loss, +1 otherwise."""
-    return tuple(-1 if w in ("decrease", "loss") else 1 for _, w in _SIGNED.findall(text))
+    return tuple(-1 if w in ("decrease", "loss", "understated") else 1 for _, w in _SIGNED.findall(text))
 
 
 def sort_keys(choices):

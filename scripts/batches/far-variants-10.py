@@ -12,10 +12,36 @@ Run: python3 scripts/batches/far-variants-10.py   See docs/reviews/far-variants-
 import os
 from decimal import Decimal as D, ROUND_HALF_UP
 
-from common import variant
+import yaml
+
+from common import is_numeric, sort_numeric, variant
 from variants import m, pick, rd, run
 
 CONTENT = os.path.join(os.path.dirname(__file__), "..", "..", "content", "far")
+
+
+def presort_v0(item_id):
+    """Re-sort an on-disk item's version-0 choices under the current ascending-order rule (common.py's
+    sort_keys), since run() loads version 0 from disk as-is and never re-sorts it the way attach_variants
+    re-sorts versions 1-3. Needed after a common.py change to the sort rule (e.g. "understated" now
+    counting as a negative direction) makes a previously-correct order wrong under the new rule."""
+    path = os.path.join(CONTENT, item_id + ".yaml")
+    with open(path, encoding="utf-8") as f:
+        item = yaml.safe_load(f)
+    ch = item["choices"]
+    if not is_numeric(ch):
+        return
+    right = next(c for c in ch if c["id"] == item["answer"])
+    new = sort_numeric(ch)
+    if new == ch:
+        return
+    for k, c in zip("ABCDEF", new):
+        c["id"] = k
+    item["choices"] = new
+    item["answer"] = next(c["id"] for c in new if c is right)
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        yaml.safe_dump(item, f, sort_keys=False, allow_unicode=True, width=100)
+    print(f"{item_id}: version 0 re-sorted under the updated rule; new key letter {item['answer']}")
 
 
 def r2(x):
@@ -84,8 +110,9 @@ def contingency_liabilities(p):
         "nets_omits": (m(L - R),
                        "Nets the insurance recovery against the lawsuit liability and omits the unasserted claim."),
         "nets_only": (m(L - R + U),
-                      f"Nets the {m(R)} insurance recovery against the {m(L)} liability. The liability and "
-                      "the recovery receivable are reported separately."),
+                      f"Nets the {m(R)} insurance recovery against the {m(L)} lawsuit liability, then adds "
+                      f"back the {m(U)} unasserted claim: {m(L)} − {m(R)} + {m(U)} = {m(L - R + U)}. "
+                      "The liability and the recovery receivable are reported separately."),
         "omits_claim": (m(L),
                         f"Omits the {m(U)} unasserted claim. An unasserted claim is accrued when assertion "
                         "is probable and a loss is probable and estimable."),
@@ -140,12 +167,10 @@ def debt_covenant(p):
         "dividend_only": (r2((liab0 + d) / (eq0 - d)),
                           "Records the dividend payable but not the warranty accrual, which is also a "
                           "liability at year-end for sales already made."),
-        "dup_both": (r2((liab0 + 2 * wd) / (eq0 - wd)),
-                     f"Double-posts both year-end adjustments, counting the {m(wd)} warranty-and-dividend "
-                     "effect twice in liabilities while equity reflects it only once."),
-        "dup_div": (r2((liab0 + w + 2 * d) / (eq0 - wd)),
-                    "Double-posts the dividend payable, counting it twice in liabilities while equity "
-                    "reflects both adjustments only once."),
+        "equity_multiplier": (r2(key_v + 1),
+                              "Confuses the ratio with the equity multiplier, total assets ÷ equity, "
+                              f"which equals the debt-to-equity ratio plus 1: {r2(key_v)} + 1 = "
+                              f"{r2(key_v + 1)}."),
     }
     key = (r2(key_v),
            f"Correct. ({m(liab0)} + {m(wd)}) ÷ ({m(eq0)} − {m(wd)}) = {r2(key_v)}, which violates "
@@ -249,11 +274,11 @@ FAMILIES = {
         dict(co="Kade Inc.", limit="1.60", liab0=1800000, eq0=1250000, w=60000, d=50000, day=20,
              use=["no_adjust", "liab_only", "warranty_only"]),
         dict(co="Larchmont Inc.", limit="1.50", liab0=2400000, eq0=1600000, w=80000, d=70000, day=18,
-             use=["no_adjust", "dividend_only", "dup_div"]),
-        dict(co="Marchetti Inc.", limit="1.40", liab0=900000, eq0=620000, w=25000, d=35000, day=22,
-             use=["liab_only", "dup_both", "dup_div"]),
+             use=["no_adjust", "dividend_only", "equity_multiplier"]),
+        dict(co="Marchetti Inc.", limit="1.40", liab0=900000, eq0=620000, w=25000, d=30000, day=22,
+             use=["liab_only", "warranty_only", "dividend_only"]),
         dict(co="Norwood Inc.", limit="1.30", liab0=3100000, eq0=2200000, w=95000, d=60000, day=27,
-             use=["dividend_only", "warranty_only", "dup_both"]),
+             use=["dividend_only", "warranty_only", "equity_multiplier"]),
     ]),
     "far-revenue-allocation-0003": (revenue_allocation, [
         dict(co="Harmon Technologies", L=240000, S=60000, I=100000, BP=270000,
@@ -268,4 +293,5 @@ FAMILIES = {
 }
 
 if __name__ == "__main__":
+    presort_v0("far-accounting-errors-0002")
     run(FAMILIES, CONTENT)

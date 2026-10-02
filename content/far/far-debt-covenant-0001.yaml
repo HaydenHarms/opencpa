@@ -59,9 +59,9 @@ variants:
     rationale: Correct. ($2,400,000 + $150,000) ÷ ($1,600,000 − $150,000) = 1.76, which violates the 1.50
       limit.
   - id: D
-    text: '1.81'
-    rationale: Double-posts the dividend payable, counting it twice in liabilities while equity reflects
-      both adjustments only once.
+    text: '2.76'
+    rationale: 'Confuses the ratio with the equity multiplier, total assets ÷ equity, which equals the
+      debt-to-equity ratio plus 1: 1.76 + 1 = 2.76.'
   answer: C
   explanation: Both adjustments increase liabilities and decrease equity. The warranty accrual is an expense
     (reducing retained earnings) and a liability; the declared dividend reduces retained earnings and
@@ -71,29 +71,29 @@ variants:
     equity to be no more than 1.40 at each year-end. Before year-end adjustments, Marchetti''s December
     31 balance sheet shows total liabilities of $900,000 and total stockholders'' equity of $620,000.
     Two adjustments have not yet been recorded: an accrual for $25,000 of warranty costs on Year 1 sales,
-    and a $35,000 cash dividend the board declared on December 22, payable January 15. Ignore income taxes.
+    and a $30,000 cash dividend the board declared on December 22, payable January 15. Ignore income taxes.
     What is Marchetti''s debt-to-equity ratio for the covenant test?'
   choices:
   - id: A
-    text: '1.55'
-    rationale: Adds the $60,000 to liabilities but does not reduce stockholders' equity for the warranty
+    text: '1.54'
+    rationale: Adds the $55,000 to liabilities but does not reduce stockholders' equity for the warranty
       expense and the dividend.
   - id: B
-    text: '1.71'
-    rationale: Correct. ($900,000 + $60,000) ÷ ($620,000 − $60,000) = 1.71, which violates the 1.40 limit.
+    text: '1.55'
+    rationale: Records the warranty accrual but not the dividend declared December 22, which is a liability
+      at year-end.
   - id: C
-    text: '1.78'
-    rationale: Double-posts the dividend payable, counting it twice in liabilities while equity reflects
-      both adjustments only once.
+    text: '1.58'
+    rationale: Records the dividend payable but not the warranty accrual, which is also a liability at
+      year-end for sales already made.
   - id: D
-    text: '1.82'
-    rationale: Double-posts both year-end adjustments, counting the $60,000 warranty-and-dividend effect
-      twice in liabilities while equity reflects it only once.
-  answer: B
+    text: '1.69'
+    rationale: Correct. ($900,000 + $55,000) ÷ ($620,000 − $55,000) = 1.69, which violates the 1.40 limit.
+  answer: D
   explanation: Both adjustments increase liabilities and decrease equity. The warranty accrual is an expense
     (reducing retained earnings) and a liability; the declared dividend reduces retained earnings and
-    creates dividends payable. Liabilities = $900,000 + $25,000 + $35,000 = $960,000. Equity = $620,000
-    − $60,000 = $560,000. Ratio = $960,000 ÷ $560,000 = 1.71, above the 1.40 covenant.
+    creates dividends payable. Liabilities = $900,000 + $25,000 + $30,000 = $955,000. Equity = $620,000
+    − $55,000 = $565,000. Ratio = $955,000 ÷ $565,000 = 1.69, above the 1.40 covenant.
 - stem: 'Norwood Inc.''s loan agreement requires its ratio of total liabilities to total stockholders''
     equity to be no more than 1.30 at each year-end. Before year-end adjustments, Norwood''s December
     31 balance sheet shows total liabilities of $3,100,000 and total stockholders'' equity of $2,200,000.
@@ -114,9 +114,9 @@ variants:
     rationale: Correct. ($3,100,000 + $155,000) ÷ ($2,200,000 − $155,000) = 1.59, which violates the 1.30
       limit.
   - id: D
-    text: '1.67'
-    rationale: Double-posts both year-end adjustments, counting the $155,000 warranty-and-dividend effect
-      twice in liabilities while equity reflects it only once.
+    text: '2.59'
+    rationale: 'Confuses the ratio with the equity multiplier, total assets ÷ equity, which equals the
+      debt-to-equity ratio plus 1: 1.59 + 1 = 2.59.'
   answer: C
   explanation: Both adjustments increase liabilities and decrease equity. The warranty accrual is an expense
     (reducing retained earnings) and a liability; the declared dividend reduces retained earnings and
