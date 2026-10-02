@@ -135,7 +135,6 @@ export default function ExamPage() {
                 report shows how long and how often you paused, so you can tell a real-conditions
                 run from a paused one.
               </li>
-              <li>There’s no on-screen calculator: use your own.</li>
             </ul>
           </article>
           <p className="muted">
