@@ -658,9 +658,6 @@ app.delete('/me/account', async (c) => {
   return c.json({ deleted: true });
 });
 
-/** Tutor: wired up in a later milestone (Claude API, bring-your-own-key). */
-app.post('/me/tutor', (c) => c.json({ error: 'The tutor is not available yet.' }, 501));
-
 /** Record one attempt and the item's updated review card in a single batch. */
 function saveAttempt(
   db: D1Database,

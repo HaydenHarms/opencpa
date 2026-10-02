@@ -1,8 +1,8 @@
 # OpenCPA
 
-**An open-source CPA exam study platform with an AI tutor built in.**
+**An open-source CPA exam study platform that you can study with Claude.**
 
-OpenCPA is a free, community-maintained alternative to commercial CPA review courses. It pairs an adaptive question engine and realistic task-based simulations with a personal AI tutor powered by Claude.
+OpenCPA is a free, community-maintained alternative to commercial CPA review courses. It pairs an adaptive question engine and realistic task-based simulations with Claude as a study partner, connected through your own Claude account.
 
 **Live:** [opencpa.pages.dev](https://opencpa.pages.dev)
 
@@ -22,12 +22,13 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 - **Blueprint-aligned content.** Every question and simulation is tagged to the AICPA blueprint by section, content area, topic and skill level, and every item passes an independent review before it's served.
 - **Adaptive review.** Spaced repetition (FSRS) schedules individual questions, and results roll up into a mastery map by blueprint area.
 - **Study with Claude.** Add OpenCPA as a connector in your own Claude account, and Claude can look up the question you just answered and explain it, using the official rationale. It explains; it never grades.
+- **Accounts.** Sign in with GitHub to keep your progress on every device; whatever you did before signing in moves into your account. Signing in is optional, and you can delete your account (or a device's data) at any time.
 
 **Planned**
 
 - **More FAR simulations,** about 10+ across all three blueprint areas, then simulations for the other sections.
 - **Exam-day mode.** Timed testlets modeled on the real exam interface, with a calculator, flag-for-review, and a literature panel.
-- **In-app tutor** using your own Anthropic API key, so the project stays free to host and free to use.
+- **Email sign-in** (a one-time link, no password), once the site has its own domain.
 - **Advanced settings** for weighting practice toward your strengths or weaknesses.
 
 ## Architecture
@@ -37,9 +38,9 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 | Frontend | React + Vite on Cloudflare Pages                                       |
 | API      | Hono on Cloudflare Workers                                             |
 | Database | Cloudflare D1 (SQLite)                                                 |
-| Tutor    | Remote MCP connector on the API; students use their own Claude account |
+| Claude   | Remote MCP connector on the API; students use their own Claude account |
 | Storage  | Cloudflare R2 (planned: exhibits, media)                               |
-| Auth     | Anonymous device id today; GitHub OAuth / email magic link planned     |
+| Auth     | GitHub OAuth; anonymous device id when signed out; email link planned  |
 
 ```
 opencpa/
@@ -70,8 +71,8 @@ opencpa/
 - [ ] Finish FAR: about 10+ simulations across all three areas, skill mix inside the blueprint ranges
 - [ ] Remaining sections, in reviewed batches (BAR, then AUD and REG, then ISC and TCP)
 - [ ] Advanced practice settings
-- [ ] Accounts (GitHub / email) so progress syncs across devices
-- [ ] In-app tutor (bring your own Claude API key)
+- [x] Accounts: GitHub sign-in, progress syncs across devices, account deletion
+- [ ] Email sign-in (needs a custom domain)
 - [ ] Rate limiting, UI redesign, custom domain
 - [ ] Exam-day mode
 
@@ -112,7 +113,7 @@ pnpm db:migrate:local   # create the local D1 database
 pnpm dev                # web on :5173, API on :8787
 ```
 
-Requires Node 22+ and pnpm 10+. `pnpm test` runs the engine and schema tests; `pnpm content:validate` checks every content file.
+Requires Node 22+ and pnpm 10+. `pnpm test` runs the engine and schema tests; `pnpm content:validate` checks every content file. To try sign-in locally, see [docs/accounts.md](docs/accounts.md).
 
 ## Deployment
 
@@ -130,7 +131,7 @@ Contributions are welcome, especially new questions, simulations, and explanatio
 
 ## Disclaimer
 
-OpenCPA is not affiliated with the AICPA, NASBA, or any state board of accountancy. "CPA" is used descriptively. Content is for study purposes only.
+OpenCPA is not affiliated with the AICPA, NASBA, or any state board of accountancy. "CPA" is used descriptively. Content is for study purposes only. See the site's [Terms of Use](https://opencpa.pages.dev/terms) and [Privacy Policy](https://opencpa.pages.dev/privacy).
 
 ## License
 
