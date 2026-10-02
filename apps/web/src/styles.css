@@ -624,3 +624,22 @@ body {
 .exam-report .tiles .card p {
   margin: 4px 0;
 }
+
+/* Session length slider */
+.length {
+  max-width: 480px;
+}
+.length-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 8px;
+}
+.length-slider input[type='range'] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+.length-ends {
+  display: flex;
+  justify-content: space-between;
+}

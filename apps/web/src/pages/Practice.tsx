@@ -137,14 +137,73 @@ export function StartPanel({
           'Questions and simulations across the blueprint, on separate tabs as on the exam, weighted toward your weak spots and the items due for review.'}{' '}
         Your place is saved as you go.
       </p>
-      <div className="row-start">
-        {status.options.map((o) => (
-          <button key={o.questions} className="button" onClick={() => onStart(o.questions)}>
-            {describe(o)}
-          </button>
-        ))}
-      </div>
+      <LengthSlider status={status} onStart={onStart} />
     </article>
+  );
+}
+
+/** The API takes up to this many questions per session. */
+const MAX_SESSION = 100;
+const LENGTH_KEY = 'opencpa:session-length';
+
+/** Simulations that come with `questions` questions: mirrors `simulationCount` in the engine. */
+const simulationsFor = (questions: number, available: number) =>
+  Math.min(available, Math.max(1, Math.floor(questions / 8)));
+
+/** Pick a session length with a slider; the last choice is remembered in this browser. */
+function LengthSlider({
+  status,
+  onStart,
+}: {
+  status: SessionStatus;
+  onStart: (size: number) => void;
+}) {
+  const max = Math.min(status.poolSize, MAX_SESSION);
+  const min = Math.min(5, max);
+  const [size, setSize] = useState(() => {
+    let saved = 25;
+    try {
+      saved = Number(localStorage.getItem(LENGTH_KEY)) || 25;
+    } catch {
+      // Only a convenience.
+    }
+    return Math.min(max, Math.max(min, saved));
+  });
+  const choice = { questions: size, simulations: simulationsFor(size, status.simulationPool) };
+
+  function start() {
+    try {
+      localStorage.setItem(LENGTH_KEY, String(size));
+    } catch {
+      // Only a convenience.
+    }
+    onStart(size);
+  }
+
+  return (
+    <div className="length">
+      {max > min && (
+        <label className="length-slider">
+          <span className="meta">Session length</span>
+          <input
+            type="range"
+            min={min}
+            max={max}
+            step={1}
+            value={size}
+            aria-valuetext={describe(choice)}
+            onChange={(e) => setSize(Number(e.target.value))}
+          />
+          <span className="meta length-ends">
+            <span>{min}</span>
+            <span>{max}</span>
+          </span>
+        </label>
+      )}
+      <button className="button" onClick={start}>
+        Start: {describe(choice)}
+      </button>
+    </div>
   );
 }
 

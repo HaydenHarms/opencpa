@@ -146,6 +146,7 @@ export interface SessionStatus {
   diagnostic: SessionOption;
   options: SessionOption[];
   poolSize: number;
+  simulationPool: number;
 }
 
 /** Whether the student has a Claude connector link. Times are epoch ms. */

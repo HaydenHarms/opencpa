@@ -124,7 +124,8 @@ export function selectDiagnosticItems(
 /**
  * How many simulations go with `questions` multiple-choice questions: about one per
  * eight (the FAR exam has 50 questions and 7 simulations), at least one, and never
- * more than the bank holds.
+ * more than the bank holds. Mirrored by `simulationsFor` in apps/web/src/pages/Practice.tsx
+ * (the session-length slider).
  */
 export function simulationCount(questions: number, available: number): number {
   return Math.min(available, Math.max(1, Math.floor(questions / 8)));

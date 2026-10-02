@@ -294,6 +294,8 @@ app.get('/me/sessions/current', async (c) => {
     diagnostic: option(Math.min(DIAGNOSTIC_SIZE, poolSize)),
     options: [...new Set(lengths)].map(option),
     poolSize,
+    /** Simulations in scope; the start panel's slider adds `simulationCount` of them. */
+    simulationPool: simPool,
   });
 });
 
