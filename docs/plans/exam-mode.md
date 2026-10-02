@@ -24,7 +24,8 @@ The Practice page gets two tabs under the section tabs: **Questions** and **Simu
 A **Mock exam** entry on the Practice page (a third tab), with a short page on what to expect, then the exam:
 
 - **FAR format:** 5 testlets. Testlets 1 and 2: 25 multiple-choice questions each. Testlets 3, 4 and 5: 2, 3 and 2 simulations. The real exam scores multiple choice and simulations 50/50.
-- **Clock:** 4 hours, counting down, run by the server so a refresh or a different device can't reset it. Leaving the page doesn't stop it (as on the real exam), but the student can come back and resume. Add pause button for studying at home.
+- **Clock:** 4 hours, counting down, run by the server so a refresh or a different device can't reset it. Leaving the page doesn't stop it (as on the real exam), but the student can come back and resume.
+- **Pause** (Hayden, 2026-10-02), for studying at home: stops the clock and hides the items until resumed, so it can't be used to work on a question off the clock. The report shows how long and how often the exam was paused, so a student can tell a real-conditions run from a paused one.
 - **Optional 15-minute break after testlet 3**, which doesn't count against the clock. Time past 15 minutes does.
 - **Within a testlet:** move freely, change answers, flag items for review, strike out choices, and see a navigator showing answered, unanswered and flagged items. Nothing is graded or revealed until the end.
 - **Submitting a testlet locks it.** A warning lists unanswered and flagged items first. No going back.
@@ -51,7 +52,7 @@ Once the exam ends:
 
 Today `POST /me/attempts` grades and reveals at once. Exam mode can't use it, or the key would be in the browser mid-exam. So:
 
-- **New routes** under `/me/exams`: start, get the current exam (public items, saved responses, clock), save responses for the open testlet (debounced, so a refresh loses nothing), submit a testlet, start and end the break, and get a finished exam's report.
+- **New routes** under `/me/exams`: start, get the current exam (public items, saved responses, clock), save responses for the open testlet (debounced, so a refresh loses nothing), submit a testlet, start and end the break, pause and resume, and get a finished exam's report. While paused, the current-exam route returns the clock but no items.
 - **Submitting a testlet** grades every item on the server and writes the `attempts` rows (tagged with the exam's session id, so mastery and review scheduling count them), but the response holds only "received". Keys come back only from the report route, once the exam is finished.
 - **Unanswered items** count as wrong in the exam score but write no attempt, so they stay "unseen" for Practice.
 - **The connector:** `get_last_attempt` must not reveal an item from an unfinished exam, and `get_current_question` doesn't serve exam items. Otherwise Claude could be asked for the key mid-exam.
@@ -62,7 +63,7 @@ Today `POST /me/attempts` grades and reveals at once. Exam mode can't use it, or
 Migration `0008`:
 
 - `practice_sessions.kind` gains `'exam'`.
-- A new `exam_state` table, keyed by session id: the testlet layout (item ids per testlet), the current testlet, the start time, break start and end, and the saved responses and flags per item as JSON.
+- A new `exam_state` table, keyed by session id: the testlet layout (item ids per testlet), the current testlet, the start time, break start and end, pause start and total paused time (with a pause count), and the saved responses and flags per item as JSON. Time used is the time since starting, less the break (up to 15 minutes) and pauses.
 - Starting a new exam abandons an unfinished one (after a confirmation in the UI); its submitted testlets still count toward mastery.
 
 ### Size
