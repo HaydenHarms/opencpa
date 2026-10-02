@@ -1,0 +1,38 @@
+id: far-special-purpose-frameworks-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Special Purpose Frameworks
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'AU-C 800 (financial statements prepared in accordance with special purpose frameworks: titles that
+    avoid implying GAAP presentation)'
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A company prepares its financial statements using the same recognition and measurement as its federal
+  income tax return. Which title should it use for the statement reporting its assets, liabilities and
+  equity?
+choices:
+- id: A
+  text: Balance sheet
+  rationale: A GAAP title. Special purpose framework statements use titles that do not suggest GAAP presentation.
+- id: B
+  text: Statement of assets and liabilities arising from cash transactions
+  rationale: That title identifies cash basis statements, not income tax basis statements; using it here
+    would misdescribe the basis of accounting.
+- id: C
+  text: Statement of financial position
+  rationale: A GAAP title commonly used by not-for-profit entities; it does not indicate that the statement
+    follows the income tax basis.
+- id: D
+  text: Statement of assets, liabilities, and equity—tax basis
+  rationale: Correct. A title that identifies the income tax basis distinguishes the statement from a
+    GAAP balance sheet.
+answer: D
+explanation: Financial statements prepared under a special purpose framework use titles that distinguish
+  them from GAAP statements and identify the basis used. For the income tax basis, "statement of assets,
+  liabilities, and equity—tax basis" and "statement of revenue and expenses—tax basis" are appropriate;
+  "statement of assets and liabilities arising from cash transactions" identifies the cash basis instead,
+  and "balance sheet" and "statement of financial position" are GAAP titles.

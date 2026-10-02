@@ -1,0 +1,161 @@
+id: far-notes-0009
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Notes to financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 606-10-45-2 (contract liabilities for consideration received before performance)
+  - ASC 450-20-25 (accrual of a warranty liability under the expected cost method)
+  - ASC 321-10-35 (equity securities with a readily determinable fair value measured at fair value through
+    net income)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Before Hexham Textiles Co.''s financial statements for the year ended December 31, Year 1, go out,
+  a senior accountant ties its draft notes back to the draft statements. The draft balance sheet reports
+  contract liabilities of $64,000; an accrued warranty liability of $68,000; intangible assets, net, of
+  $210,000; and investments in equity securities of $95,000. The draft notes say: the contract liabilities
+  are advance payments from customers for goods not yet delivered, all of which are expected to be recognized
+  as revenue within one year, totaling $64,000; the warranty liability, estimated under the expected cost
+  method over the one-year warranty period, is $55,000; the intangible assets consist of a patent with
+  $210,000 of remaining cost, amortized over its 3-year remaining legal life; and the equity securities,
+  which have readily determinable fair values, have a fair value of $95,000, with changes in fair value
+  recognized in net income. Which of these draft statement balances is inconsistent with its note?'
+choices:
+- id: A
+  text: $64,000 of contract liabilities
+  rationale: The contract liabilities note describes $64,000 of advance customer payments, all expected
+    to be recognized as revenue within a year, which matches the $64,000 on the balance sheet.
+- id: B
+  text: $68,000 of accrued warranty liability
+  rationale: Correct. The warranty note estimates the liability, under the expected cost method, at $55,000,
+    but the balance sheet reports an accrued warranty liability of $68,000, $13,000 less than the note
+    supports.
+- id: C
+  text: $95,000 of investments in equity securities
+  rationale: The equity securities note's $95,000 fair value matches the $95,000 investment balance on
+    the balance sheet.
+- id: D
+  text: $210,000 of intangible assets, net
+  rationale: The intangibles note's $210,000 of remaining patent cost matches the $210,000 intangible
+    assets on the balance sheet.
+answer: B
+explanation: 'Correct. The warranty note estimates the liability, under the expected cost method, at $55,000,
+  but the balance sheet reports an accrued warranty liability of $68,000, $13,000 less than the note supports.
+  The other three balances agree with their notes: The contract liabilities note describes $64,000 of
+  advance customer payments, all expected to be recognized as revenue within a year, which matches the
+  $64,000 on the balance sheet., The intangibles note''s $210,000 of remaining patent cost matches the
+  $210,000 intangible assets on the balance sheet., The equity securities note''s $95,000 fair value matches
+  the $95,000 investment balance on the balance sheet.'
+variants:
+- stem: 'Before Ingleby Textiles Co.''s financial statements for the year ended December 31, Year 1, go
+    out, a senior accountant ties its draft notes back to the draft statements. The draft balance sheet
+    reports contract liabilities of $58,000; an accrued warranty liability of $37,000; intangible assets,
+    net, of $200,000; and investments in equity securities of $103,000. The draft notes say: the contract
+    liabilities are advance payments from customers for goods not yet delivered, all of which are expected
+    to be recognized as revenue within one year, totaling $58,000; the warranty liability, estimated under
+    the expected cost method over the one-year warranty period, is $37,000; the intangible assets consist
+    of a patent with $185,000 of remaining cost, amortized over its 4-year remaining legal life; and the
+    equity securities, which have readily determinable fair values, have a fair value of $103,000, with
+    changes in fair value recognized in net income. Which of these draft statement balances is inconsistent
+    with its note?'
+  choices:
+  - id: A
+    text: $37,000 of accrued warranty liability
+    rationale: The warranty note's expected-cost estimate of $37,000 matches the $37,000 accrued warranty
+      liability on the balance sheet.
+  - id: B
+    text: $58,000 of contract liabilities
+    rationale: The contract liabilities note describes $58,000 of advance customer payments, all expected
+      to be recognized as revenue within a year, which matches the $58,000 on the balance sheet.
+  - id: C
+    text: $103,000 of investments in equity securities
+    rationale: The equity securities note's $103,000 fair value matches the $103,000 investment balance
+      on the balance sheet.
+  - id: D
+    text: $200,000 of intangible assets, net
+    rationale: Correct. The intangibles note supports $185,000 of remaining patent cost, but the balance
+      sheet reports intangible assets, net, of $200,000, $15,000 more than the note supports.
+  answer: D
+  explanation: 'Correct. The intangibles note supports $185,000 of remaining patent cost, but the balance
+    sheet reports intangible assets, net, of $200,000, $15,000 more than the note supports. The other
+    three balances agree with their notes: The contract liabilities note describes $58,000 of advance
+    customer payments, all expected to be recognized as revenue within a year, which matches the $58,000
+    on the balance sheet., The warranty note''s expected-cost estimate of $37,000 matches the $37,000
+    accrued warranty liability on the balance sheet., The equity securities note''s $103,000 fair value
+    matches the $103,000 investment balance on the balance sheet.'
+- stem: 'Before Juniper Textiles Co.''s financial statements for the year ended December 31, Year 1, go
+    out, a senior accountant ties its draft notes back to the draft statements. The draft balance sheet
+    reports contract liabilities of $71,000; an accrued warranty liability of $29,000; intangible assets,
+    net, of $226,000; and investments in equity securities of $97,000. The draft notes say: the contract
+    liabilities are advance payments from customers for goods not yet delivered, all of which are expected
+    to be recognized as revenue within one year, totaling $71,000; the warranty liability, estimated under
+    the expected cost method over the one-year warranty period, is $29,000; the intangible assets consist
+    of a patent with $226,000 of remaining cost, amortized over its 5-year remaining legal life; and the
+    equity securities, which have readily determinable fair values, have a fair value of $88,000, with
+    changes in fair value recognized in net income. Which of these draft statement balances is inconsistent
+    with its note?'
+  choices:
+  - id: A
+    text: $29,000 of accrued warranty liability
+    rationale: The warranty note's expected-cost estimate of $29,000 matches the $29,000 accrued warranty
+      liability on the balance sheet.
+  - id: B
+    text: $71,000 of contract liabilities
+    rationale: The contract liabilities note describes $71,000 of advance customer payments, all expected
+      to be recognized as revenue within a year, which matches the $71,000 on the balance sheet.
+  - id: C
+    text: $97,000 of investments in equity securities
+    rationale: Correct. The equity securities note gives a fair value of $88,000, but the balance sheet
+      reports the investment at $97,000, $9,000 less than the note supports.
+  - id: D
+    text: $226,000 of intangible assets, net
+    rationale: The intangibles note's $226,000 of remaining patent cost matches the $226,000 intangible
+      assets on the balance sheet.
+  answer: C
+  explanation: 'Correct. The equity securities note gives a fair value of $88,000, but the balance sheet
+    reports the investment at $97,000, $9,000 less than the note supports. The other three balances agree
+    with their notes: The contract liabilities note describes $71,000 of advance customer payments, all
+    expected to be recognized as revenue within a year, which matches the $71,000 on the balance sheet.,
+    The warranty note''s expected-cost estimate of $29,000 matches the $29,000 accrued warranty liability
+    on the balance sheet., The intangibles note''s $226,000 of remaining patent cost matches the $226,000
+    intangible assets on the balance sheet.'
+- stem: 'Before Kielder Textiles Co.''s financial statements for the year ended December 31, Year 1, go
+    out, a senior accountant ties its draft notes back to the draft statements. The draft balance sheet
+    reports contract liabilities of $61,000; an accrued warranty liability of $33,000; intangible assets,
+    net, of $198,000; and investments in equity securities of $112,000. The draft notes say: the contract
+    liabilities are advance payments from customers for goods not yet delivered, all of which are expected
+    to be recognized as revenue within one year, totaling $49,000; the warranty liability, estimated under
+    the expected cost method over the one-year warranty period, is $33,000; the intangible assets consist
+    of a patent with $198,000 of remaining cost, amortized over its 2-year remaining legal life; and the
+    equity securities, which have readily determinable fair values, have a fair value of $112,000, with
+    changes in fair value recognized in net income. Which of these draft statement balances is inconsistent
+    with its note?'
+  choices:
+  - id: A
+    text: $33,000 of accrued warranty liability
+    rationale: The warranty note's expected-cost estimate of $33,000 matches the $33,000 accrued warranty
+      liability on the balance sheet.
+  - id: B
+    text: $61,000 of contract liabilities
+    rationale: Correct. The note describes $49,000 of advance customer payments expected to be recognized
+      within a year, but the balance sheet reports contract liabilities of $61,000, $12,000 more than
+      the note supports.
+  - id: C
+    text: $112,000 of investments in equity securities
+    rationale: The equity securities note's $112,000 fair value matches the $112,000 investment balance
+      on the balance sheet.
+  - id: D
+    text: $198,000 of intangible assets, net
+    rationale: The intangibles note's $198,000 of remaining patent cost matches the $198,000 intangible
+      assets on the balance sheet.
+  answer: B
+  explanation: 'Correct. The note describes $49,000 of advance customer payments expected to be recognized
+    within a year, but the balance sheet reports contract liabilities of $61,000, $12,000 more than the
+    note supports. The other three balances agree with their notes: The warranty note''s expected-cost
+    estimate of $33,000 matches the $33,000 accrued warranty liability on the balance sheet., The intangibles
+    note''s $198,000 of remaining patent cost matches the $198,000 intangible assets on the balance sheet.,
+    The equity securities note''s $112,000 fair value matches the $112,000 investment balance on the balance
+    sheet.'

@@ -1,0 +1,42 @@
+id: far-comprehensive-income-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of comprehensive income
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 220-10-05 (comprehensive income: the change in equity from nonowner sources)'
+  - ASC 505-10-50 (transactions with owners, such as issuing stock, dividends and treasury purchases,
+    excluded from comprehensive income)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 2, Thornbury Co. reports net income of $340,000 and an unrealized holding loss of $25,000
+  on its available-for-sale debt securities. It also issues common stock for $200,000 cash, declares cash
+  dividends of $60,000, and reacquires $45,000 of its own shares as treasury stock. What should Thornbury
+  report as comprehensive income for Year 2?
+choices:
+- id: A
+  text: Net income less the unrealized holding loss, $315,000
+  rationale: Correct. Comprehensive income is net income plus other comprehensive income. The stock issuance,
+    dividends and treasury purchase are transactions with owners and are excluded.
+- id: B
+  text: Net income alone, $340,000, since the loss is unrealized and stays out of any performance measure
+  rationale: Other comprehensive income is still part of comprehensive income even though its components
+    are unrealized; it is simply kept out of net income.
+- id: C
+  text: Net income, less the OCI loss, less the dividends and the treasury purchase, plus the stock issuance,
+    $390,000
+  rationale: Mixes in transactions with owners. Issuing stock, paying dividends and buying treasury stock
+    change equity, but not through nonowner sources, so none of them enters comprehensive income.
+- id: D
+  text: Net income, less the OCI loss and the treasury purchase, $270,000
+  rationale: The treasury stock purchase is a transaction with an owner (the selling shareholder) and
+    does not affect comprehensive income.
+answer: A
+explanation: 'Comprehensive income is the change in equity from nonowner sources during a period: net
+  income plus other comprehensive income (ASC 220-10-05). Transactions with owners, such as issuing stock,
+  declaring dividends and purchasing treasury stock, change equity but are excluded from both net income
+  and other comprehensive income. Thornbury''s comprehensive income is $340,000 net income minus the $25,000
+  unrealized loss on available-for-sale debt securities, $315,000.'

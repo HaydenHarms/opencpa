@@ -1,0 +1,42 @@
+id: far-debt-modification-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 470-50-40-17 and 40-18 (fees paid to the lender in a modification deferred and amortized as an
+    adjustment of interest; third-party costs expensed as incurred)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Garrick Co. and its lender agree to modify the terms of a note; after performing the required cash
+  flow test, the change is accounted for as a modification rather than an extinguishment. Garrick pays
+  the lender $15,000 as a fee for agreeing to the new terms and separately pays its own outside legal
+  counsel $6,000 for advice on negotiating the modification. How should Garrick account for these two
+  payments?
+choices:
+- id: A
+  text: The $15,000 fee is deferred and amortized over the remaining term; the $6,000 fee is expensed
+  rationale: Correct. A fee paid to the lender in a modification is capitalized and amortized over the
+    remaining term as an adjustment of the effective interest rate; costs paid to third parties, such
+    as Garrick's own counsel, are expensed when incurred.
+- id: B
+  text: Both fees are deferred and amortized over the note's remaining term as debt issuance costs
+  rationale: Only the fee paid to the lender is deferred. A fee paid to an outside party, such as Garrick's
+    own legal counsel, is expensed as incurred.
+- id: C
+  text: Both fees are expensed immediately, since the change is only a modification and not an extinguishment
+  rationale: A modification does not mean every related cost is expensed; the fee paid to the lender is
+    still deferred and amortized over the remaining term.
+- id: D
+  text: The $15,000 lender fee is expensed immediately, and the $6,000 legal fee is deferred and amortized
+  rationale: 'Reverses the correct treatment: the lender fee is the one that is deferred, and the third-party
+    legal fee is the one that is expensed.'
+answer: A
+explanation: In a modification (as opposed to an extinguishment), a fee paid to the lender is deferred
+  and amortized as an adjustment of interest expense over the remaining term of the modified debt (ASC
+  470-50-40-17). Costs paid to third parties, such as Garrick's own legal counsel, are expensed as incurred
+  (ASC 470-50-40-18) and are not part of the cash flow test used to decide whether the change is a modification
+  or an extinguishment.

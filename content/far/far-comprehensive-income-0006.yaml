@@ -1,0 +1,49 @@
+id: far-comprehensive-income-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of comprehensive income
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 326-30-35 (credit losses on available-for-sale debt securities recognized through an allowance,
+    in net income, after ASU 2016-13)
+  - ASC 825-10-45-5 (the portion of a change in the fair value of a fair-value-option liability attributable
+    to the entity's own instrument-specific credit risk reported in other comprehensive income)
+  - ASC 220-10-45 (items of other comprehensive income, including foreign currency translation adjustments)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 2, Dunwich Corp. (1) recognizes an unrealized holding gain on an available-for-sale
+  debt security; (2) recognizes a credit loss on a different available-for-sale debt security through
+  an allowance for credit losses; (3) has elected the fair value option for a liability, and identifies
+  the portion of the change in that liability's fair value attributable to Dunwich's own instrument-specific
+  credit risk; and (4) translates the financial statements of a foreign subsidiary whose functional currency
+  is not the dollar, producing a translation adjustment. Which of these is reported in net income rather
+  than other comprehensive income?
+choices:
+- id: A
+  text: The unrealized holding gain on the available-for-sale debt security
+  rationale: Unrealized holding gains and losses on available-for-sale debt securities, apart from any
+    credit loss component, are reported in other comprehensive income.
+- id: B
+  text: The credit loss recognized on the available-for-sale debt security
+  rationale: Correct. Since ASU 2016-13, a credit loss on an available-for-sale debt security is recognized
+    through an allowance for credit losses, with the loss (and any later recovery) in net income, rather
+    than as a direct write-down through other comprehensive income.
+- id: C
+  text: The instrument-specific credit risk portion of the fair-value-option liability's fair value change
+  rationale: The portion of the change in fair value of a liability measured under the fair value option
+    that is attributable to the entity's own credit risk is reported in other comprehensive income, not
+    net income.
+- id: D
+  text: The foreign currency translation adjustment
+  rationale: Foreign currency translation adjustments from consolidating a foreign subsidiary are reported
+    in other comprehensive income, not net income.
+answer: B
+explanation: Other comprehensive income includes unrealized holding gains and losses on available-for-sale
+  debt securities (apart from credit losses), the instrument-specific credit risk portion of a fair-value-option
+  liability's change in fair value (ASC 825-10-45-5), and foreign currency translation adjustments (ASC
+  220-10-45). Since ASU 2016-13, a credit loss on an available-for-sale debt security is no longer a direct
+  write-down of the security; it is recognized through an allowance, with the credit loss (and any later
+  recovery) in net income (ASC 326-30-35).

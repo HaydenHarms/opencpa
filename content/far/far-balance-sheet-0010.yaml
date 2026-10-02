@@ -1,0 +1,154 @@
+id: far-balance-sheet-0010
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Classified balance sheet
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 321-10-35 (equity securities with a readily determinable fair value measured at fair value through
+    net income, after ASU 2016-01)
+  - 'ASC 210-10-45 (current asset classification: collection or use within one year or the operating cycle)'
+  - 'ASC 340-10-05 (prepaid expenses: the unexpired cost applicable to each future period)'
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'In its draft classified balance sheet dated December 31, Year 1, Trevelyan Retail Co. reports total
+  current assets of $845,000: cash of $180,000, equity securities held for trading, at cost, of $50,000,
+  accounts receivable (including the note described below) of $275,000, inventory of $310,000, and prepaid
+  insurance of $30,000. Supporting records show: the trading securities'' fair value at December 31 is
+  $62,000; $35,000 of the receivables is a note from a customer due in eighteen months; the prepaid insurance
+  is the unexpired balance of a 20-month policy, 5 months of which had elapsed by December 31; and $25,000
+  of the cash is a compensating balance that Trevelyan''s loan agreement restricts from use until the
+  loan matures in eighteen months. By how much is Trevelyan''s draft total current assets overstated or
+  understated?'
+choices:
+- id: A
+  text: $19,000 current assets overstated
+  rationale: Keeps the $35,000 note receivable due in eighteen months in current assets. An asset collectible
+    more than twelve months after the balance sheet date is noncurrent.
+- id: B
+  text: $48,000 current assets overstated
+  rationale: Reports the entire $30,000 of unexpired insurance as current. Only the 12 months' worth expiring
+    within a year, $24,000, is current; the $6,000 covering later months is noncurrent.
+- id: C
+  text: $54,000 current assets overstated
+  rationale: 'Correct. $845,000 draft − $791,000 corrected: + fair-value write-up $12,000 − note $35,000
+    − noncurrent prepaid $6,000 − restricted cash $25,000 = $54,000.'
+- id: D
+  text: $66,000 current assets overstated
+  rationale: Leaves the trading securities at their $50,000 cost instead of their $62,000 fair value.
+    Since ASU 2016-01, equity securities with a readily determinable fair value are measured at fair value
+    through net income, with no cost-basis alternative.
+answer: C
+explanation: Trading equity securities are measured at fair value through net income, so cost is replaced
+  with the $62,000 fair value, a $12,000 write-up. The $35,000 note collectible in eighteen months is
+  noncurrent. Of the $30,000 unexpired insurance (15 months remaining), only 12 months, $24,000, expires
+  within a year; the remaining $6,000 is noncurrent. The $25,000 compensating balance is restricted beyond
+  one year and is excluded from current assets. Corrected total current assets = $791,000, so the draft's
+  $845,000 is $54,000 current assets overstated.
+variants:
+- stem: 'In its draft classified balance sheet dated December 31, Year 1, Minehead Retail Co. reports
+    total current assets of $617,200: cash of $137,000, equity securities held for trading, at cost, of
+    $36,000, accounts receivable (including the note described below) of $197,000, inventory of $228,000,
+    and prepaid insurance of $19,200. Supporting records show: the trading securities'' fair value at
+    December 31 is $27,000; $22,000 of the receivables is a note from a customer due in eighteen months;
+    the prepaid insurance is the unexpired balance of a 20-month policy, 4 months of which had elapsed
+    by December 31; and $19,000 of the cash is a compensating balance that Minehead''s loan agreement
+    restricts from use until the loan matures in eighteen months. By how much is Minehead''s draft total
+    current assets overstated or understated?'
+  choices:
+  - id: A
+    text: $32,800 current assets overstated
+    rationale: Keeps the $22,000 note receivable due in eighteen months in current assets. An asset collectible
+      more than twelve months after the balance sheet date is noncurrent.
+  - id: B
+    text: $35,800 current assets overstated
+    rationale: Includes the $19,000 compensating-balance deposit, restricted under the loan agreement
+      until it matures in eighteen months, as unrestricted current cash. Cash whose use is restricted
+      beyond one year is excluded from current assets.
+  - id: C
+    text: $50,000 current assets overstated
+    rationale: Reports the entire $19,200 of unexpired insurance as current. Only the 12 months' worth
+      expiring within a year, $14,400, is current; the $4,800 covering later months is noncurrent.
+  - id: D
+    text: $54,800 current assets overstated
+    rationale: 'Correct. $617,200 draft − $562,400 corrected: + fair-value write-up $-9,000 − note $22,000
+      − noncurrent prepaid $4,800 − restricted cash $19,000 = $54,800.'
+  answer: D
+  explanation: Trading equity securities are measured at fair value through net income, so cost is replaced
+    with the $27,000 fair value, a $-9,000 write-up. The $22,000 note collectible in eighteen months is
+    noncurrent. Of the $19,200 unexpired insurance (16 months remaining), only 12 months, $14,400, expires
+    within a year; the remaining $4,800 is noncurrent. The $19,000 compensating balance is restricted
+    beyond one year and is excluded from current assets. Corrected total current assets = $562,400, so
+    the draft's $617,200 is $54,800 current assets overstated.
+- stem: 'In its draft classified balance sheet dated December 31, Year 1, Dulverton Retail Co. reports
+    total current assets of $1,097,000: cash of $235,000, equity securities held for trading, at cost,
+    of $64,000, accounts receivable (including the note described below) of $358,000, inventory of $398,000,
+    and prepaid insurance of $42,000. Supporting records show: the trading securities'' fair value at
+    December 31 is $79,000; $46,000 of the receivables is a note from a customer due in eighteen months;
+    the prepaid insurance is the unexpired balance of a 20-month policy, 6 months of which had elapsed
+    by December 31; and $33,000 of the cash is a compensating balance that Dulverton''s loan agreement
+    restricts from use until the loan matures in eighteen months. By how much is Dulverton''s draft total
+    current assets overstated or understated?'
+  choices:
+  - id: A
+    text: $37,000 current assets overstated
+    rationale: Includes the $33,000 compensating-balance deposit, restricted under the loan agreement
+      until it matures in eighteen months, as unrestricted current cash. Cash whose use is restricted
+      beyond one year is excluded from current assets.
+  - id: B
+    text: $64,000 current assets overstated
+    rationale: Reports the entire $42,000 of unexpired insurance as current. Only the 12 months' worth
+      expiring within a year, $36,000, is current; the $6,000 covering later months is noncurrent.
+  - id: C
+    text: $70,000 current assets overstated
+    rationale: 'Correct. $1,097,000 draft − $1,027,000 corrected: + fair-value write-up $15,000 − note
+      $46,000 − noncurrent prepaid $6,000 − restricted cash $33,000 = $70,000.'
+  - id: D
+    text: $85,000 current assets overstated
+    rationale: Leaves the trading securities at their $64,000 cost instead of their $79,000 fair value.
+      Since ASU 2016-01, equity securities with a readily determinable fair value are measured at fair
+      value through net income, with no cost-basis alternative.
+  answer: C
+  explanation: Trading equity securities are measured at fair value through net income, so cost is replaced
+    with the $79,000 fair value, a $15,000 write-up. The $46,000 note collectible in eighteen months is
+    noncurrent. Of the $42,000 unexpired insurance (14 months remaining), only 12 months, $36,000, expires
+    within a year; the remaining $6,000 is noncurrent. The $33,000 compensating balance is restricted
+    beyond one year and is excluded from current assets. Corrected total current assets = $1,027,000,
+    so the draft's $1,097,000 is $70,000 current assets overstated.
+- stem: 'In its draft classified balance sheet dated December 31, Year 1, Porlock Retail Co. reports total
+    current assets of $487,000: cash of $110,000, equity securities held for trading, at cost, of $28,000,
+    accounts receivable (including the note described below) of $158,000, inventory of $176,000, and prepaid
+    insurance of $15,000. Supporting records show: the trading securities'' fair value at December 31
+    is $34,000; $18,000 of the receivables is a note from a customer due in eighteen months; the prepaid
+    insurance is the unexpired balance of a 20-month policy, 5 months of which had elapsed by December
+    31; and $14,000 of the cash is a compensating balance that Porlock''s loan agreement restricts from
+    use until the loan matures in eighteen months. By how much is Porlock''s draft total current assets
+    overstated or understated?'
+  choices:
+  - id: A
+    text: $11,000 current assets overstated
+    rationale: Keeps the $18,000 note receivable due in eighteen months in current assets. An asset collectible
+      more than twelve months after the balance sheet date is noncurrent.
+  - id: B
+    text: $15,000 current assets overstated
+    rationale: Includes the $14,000 compensating-balance deposit, restricted under the loan agreement
+      until it matures in eighteen months, as unrestricted current cash. Cash whose use is restricted
+      beyond one year is excluded from current assets.
+  - id: C
+    text: $29,000 current assets overstated
+    rationale: 'Correct. $487,000 draft − $458,000 corrected: + fair-value write-up $6,000 − note $18,000
+      − noncurrent prepaid $3,000 − restricted cash $14,000 = $29,000.'
+  - id: D
+    text: $35,000 current assets overstated
+    rationale: Leaves the trading securities at their $28,000 cost instead of their $34,000 fair value.
+      Since ASU 2016-01, equity securities with a readily determinable fair value are measured at fair
+      value through net income, with no cost-basis alternative.
+  answer: C
+  explanation: Trading equity securities are measured at fair value through net income, so cost is replaced
+    with the $34,000 fair value, a $6,000 write-up. The $18,000 note collectible in eighteen months is
+    noncurrent. Of the $15,000 unexpired insurance (15 months remaining), only 12 months, $12,000, expires
+    within a year; the remaining $3,000 is noncurrent. The $14,000 compensating balance is restricted
+    beyond one year and is excluded from current assets. Corrected total current assets = $458,000, so
+    the draft's $487,000 is $29,000 current assets overstated.

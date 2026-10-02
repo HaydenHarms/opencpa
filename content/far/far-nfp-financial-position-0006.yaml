@@ -1,0 +1,41 @@
+id: far-nfp-financial-position-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of financial position (Not-for-Profit)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 958-210 (statement of financial position; liquidity and availability of resources)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Marshwood Museum, a nongovernmental not-for-profit entity, is deciding how to present assets and
+  liabilities on its statement of financial position. Which of the following correctly describes a requirement
+  for that presentation?
+choices:
+- id: A
+  text: It must present a classified balance sheet, separating current and noncurrent assets and liabilities
+  rationale: A classified presentation is permitted but not required. An unclassified presentation, sequenced
+    by nearness to cash and maturity, is also acceptable.
+- id: B
+  text: It must report each donor restriction in a separate column of net assets
+  rationale: Net assets are reported in only two classes, with and without donor restrictions; the composition
+    of each class, including individual restrictions, is disclosed in the notes, not displayed in separate
+    columns.
+- id: C
+  text: It may order assets and liabilities by nearness to cash and maturity
+  rationale: Correct. A not-for-profit entity is not required to present a classified balance sheet; it
+    may instead order items by nearness to cash and maturity, so long as the statement, the notes, or
+    both convey information about liquidity and the availability of resources.
+- id: D
+  text: It must report three classes of net assets, matching the entity's unrestricted, temporarily restricted
+    and permanently restricted funds
+  rationale: Since ASU 2016-14, net assets are reported in two classes, with and without donor restrictions,
+    not three.
+answer: C
+explanation: ASC 958-210 does not require a not-for-profit entity to classify assets and liabilities as
+  current and noncurrent. It may instead present them in order of nearness to cash and maturity, so long
+  as the statement, the notes, or both convey information about liquidity and the availability of resources
+  to meet near-term cash needs. Net assets are reported in two classes, with and without donor restrictions,
+  since ASU 2016-14 eliminated the three-class presentation.

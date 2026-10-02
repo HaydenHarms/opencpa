@@ -1,0 +1,148 @@
+id: far-cash-flows-0017
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 230-10-45-15 (financing activities: proceeds from issuing stock and treasury stock purchases)'
+  - ASC 842-20-45-5 (a finance lease's principal payment is financing; interest is operating)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'In its draft Year 2 statement of cash flows, Elberton Freight Co. reports net cash provided by
+  financing activities totaling $320,000: proceeds from issuing bonds $600,000; repayment of a long-term
+  note ($150,000); cash dividends paid ($90,000); proceeds from issuing common stock $80,000; and payments
+  on a finance lease ($120,000), all of which was classified as financing. Supporting records show: of
+  the $120,000 finance lease payment, $40,000 is interest and $80,000 is principal; Elberton paid $60,000
+  during the year to reacquire its own shares as treasury stock, recorded only as a reduction of additional
+  paid-in capital with no related cash flow statement entry; and $90,000 of proceeds from employees exercising
+  stock options was included in the draft''s operating activities. By how much does Elberton''s net cash
+  provided by financing activities change when these items are corrected?'
+choices:
+- id: A
+  text: $30,000 increase
+  rationale: Reports the full $120,000 finance lease payment as financing. Only the $80,000 principal
+    portion is a financing outflow; the $40,000 interest portion is an operating outflow.
+- id: B
+  text: $70,000 increase
+  rationale: Correct. + $40,000 lease interest reclassified to operating − $60,000 treasury purchase added
+    − $90,000 option proceeds reclassified from operating = $70,000.
+- id: C
+  text: $90,000 increase
+  rationale: Leaves the full $120,000 lease payment in financing with no split for the $40,000 interest
+    portion, and leaves out the $60,000 treasury stock purchase entirely, while correctly moving the $90,000
+    of option proceeds into financing.
+- id: D
+  text: $130,000 increase
+  rationale: Leaves out the $60,000 payment to reacquire treasury stock, which was recorded directly against
+    additional paid-in capital with no cash flow statement entry. Treasury stock purchases are financing
+    outflows.
+answer: B
+explanation: Only the $80,000 principal portion of a finance lease payment is a financing outflow; the
+  $40,000 interest portion is operating, so $40,000 moves back into financing. The $60,000 treasury stock
+  purchase, a financing outflow, was omitted entirely and must be added. Proceeds from stock option exercises
+  are financing inflows, so the $90,000 misclassified as operating moves into financing. Corrected financing
+  activities = $320,000 + $40,000 − $60,000 + $90,000 = $390,000, a $70,000 increase.
+variants:
+- stem: 'In its draft Year 2 statement of cash flows, Falstone Freight Co. reports net cash provided by
+    financing activities totaling $270,000: proceeds from issuing bonds $480,000; repayment of a long-term
+    note ($110,000); cash dividends paid ($65,000); proceeds from issuing common stock $55,000; and payments
+    on a finance lease ($90,000), all of which was classified as financing. Supporting records show: of
+    the $90,000 finance lease payment, $28,000 is interest and $62,000 is principal; Falstone paid $45,000
+    during the year to reacquire its own shares as treasury stock, recorded only as a reduction of additional
+    paid-in capital with no related cash flow statement entry; and $62,000 of proceeds from employees
+    exercising stock options was included in the draft''s operating activities. By how much does Falstone''s
+    net cash provided by financing activities change when these items are corrected?'
+  choices:
+  - id: A
+    text: $17,000 decrease
+    rationale: Leaves the $62,000 of proceeds from employee stock option exercises in operating activities.
+      Proceeds from issuing stock, including on option exercises, are financing inflows.
+  - id: B
+    text: $45,000 increase
+    rationale: Correct. + $28,000 lease interest reclassified to operating − $45,000 treasury purchase
+      added − $62,000 option proceeds reclassified from operating = $45,000.
+  - id: C
+    text: $62,000 increase
+    rationale: Leaves the full $90,000 lease payment in financing with no split for the $28,000 interest
+      portion, and leaves out the $45,000 treasury stock purchase entirely, while correctly moving the
+      $62,000 of option proceeds into financing.
+  - id: D
+    text: $90,000 increase
+    rationale: Leaves out the $45,000 payment to reacquire treasury stock, which was recorded directly
+      against additional paid-in capital with no cash flow statement entry. Treasury stock purchases are
+      financing outflows.
+  answer: B
+  explanation: Only the $62,000 principal portion of a finance lease payment is a financing outflow; the
+    $28,000 interest portion is operating, so $28,000 moves back into financing. The $45,000 treasury
+    stock purchase, a financing outflow, was omitted entirely and must be added. Proceeds from stock option
+    exercises are financing inflows, so the $62,000 misclassified as operating moves into financing. Corrected
+    financing activities = $270,000 + $28,000 − $45,000 + $62,000 = $315,000, a $45,000 increase.
+- stem: 'In its draft Year 2 statement of cash flows, Greenhead Freight Co. reports net cash provided
+    by financing activities totaling $360,000: proceeds from issuing bonds $720,000; repayment of a long-term
+    note ($190,000); cash dividends paid ($120,000); proceeds from issuing common stock $100,000; and
+    payments on a finance lease ($150,000), all of which was classified as financing. Supporting records
+    show: of the $150,000 finance lease payment, $52,000 is interest and $98,000 is principal; Greenhead
+    paid $78,000 during the year to reacquire its own shares as treasury stock, recorded only as a reduction
+    of additional paid-in capital with no related cash flow statement entry; and $115,000 of proceeds
+    from employees exercising stock options was included in the draft''s operating activities. By how
+    much does Greenhead''s net cash provided by financing activities change when these items are corrected?'
+  choices:
+  - id: A
+    text: $26,000 decrease
+    rationale: Leaves the $115,000 of proceeds from employee stock option exercises in operating activities.
+      Proceeds from issuing stock, including on option exercises, are financing inflows.
+  - id: B
+    text: $37,000 increase
+    rationale: Reports the full $150,000 finance lease payment as financing. Only the $98,000 principal
+      portion is a financing outflow; the $52,000 interest portion is an operating outflow.
+  - id: C
+    text: $89,000 increase
+    rationale: Correct. + $52,000 lease interest reclassified to operating − $78,000 treasury purchase
+      added − $115,000 option proceeds reclassified from operating = $89,000.
+  - id: D
+    text: $115,000 increase
+    rationale: Leaves the full $150,000 lease payment in financing with no split for the $52,000 interest
+      portion, and leaves out the $78,000 treasury stock purchase entirely, while correctly moving the
+      $115,000 of option proceeds into financing.
+  answer: C
+  explanation: Only the $98,000 principal portion of a finance lease payment is a financing outflow; the
+    $52,000 interest portion is operating, so $52,000 moves back into financing. The $78,000 treasury
+    stock purchase, a financing outflow, was omitted entirely and must be added. Proceeds from stock option
+    exercises are financing inflows, so the $115,000 misclassified as operating moves into financing.
+    Corrected financing activities = $360,000 + $52,000 − $78,000 + $115,000 = $449,000, an $89,000 increase.
+- stem: 'In its draft Year 2 statement of cash flows, Haltwhistle Freight Co. reports net cash provided
+    by financing activities totaling $229,000: proceeds from issuing bonds $390,000; repayment of a long-term
+    note ($85,000); cash dividends paid ($48,000); proceeds from issuing common stock $42,000; and payments
+    on a finance lease ($70,000), all of which was classified as financing. Supporting records show: of
+    the $70,000 finance lease payment, $21,000 is interest and $49,000 is principal; Haltwhistle paid
+    $33,000 during the year to reacquire its own shares as treasury stock, recorded only as a reduction
+    of additional paid-in capital with no related cash flow statement entry; and $48,000 of proceeds from
+    employees exercising stock options was included in the draft''s operating activities. By how much
+    does Haltwhistle''s net cash provided by financing activities change when these items are corrected?'
+  choices:
+  - id: A
+    text: $12,000 decrease
+    rationale: Leaves the $48,000 of proceeds from employee stock option exercises in operating activities.
+      Proceeds from issuing stock, including on option exercises, are financing inflows.
+  - id: B
+    text: $15,000 increase
+    rationale: Reports the full $70,000 finance lease payment as financing. Only the $49,000 principal
+      portion is a financing outflow; the $21,000 interest portion is an operating outflow.
+  - id: C
+    text: $36,000 increase
+    rationale: Correct. + $21,000 lease interest reclassified to operating − $33,000 treasury purchase
+      added − $48,000 option proceeds reclassified from operating = $36,000.
+  - id: D
+    text: $69,000 increase
+    rationale: Leaves out the $33,000 payment to reacquire treasury stock, which was recorded directly
+      against additional paid-in capital with no cash flow statement entry. Treasury stock purchases are
+      financing outflows.
+  answer: C
+  explanation: Only the $49,000 principal portion of a finance lease payment is a financing outflow; the
+    $21,000 interest portion is operating, so $21,000 moves back into financing. The $33,000 treasury
+    stock purchase, a financing outflow, was omitted entirely and must be added. Proceeds from stock option
+    exercises are financing inflows, so the $48,000 misclassified as operating moves into financing. Corrected
+    financing activities = $229,000 + $21,000 − $33,000 + $48,000 = $265,000, a $36,000 increase.

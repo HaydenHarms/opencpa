@@ -1,0 +1,46 @@
+id: far-equity-method-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Equity method investments)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 323-10-15-13 (the equity method applies to investments in common stock or in-substance common
+    stock)
+  - ASC 323-30-25 (presumption of significant influence over a noncontrolling investment in a partnership
+    or limited liability company)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Orwell Co. holds investments in four entities, each giving it the ability to exercise significant
+  influence over the investee's operating and financial policies, and it elects the fair value option
+  for none of them. For which investment is the equity method not appropriate?
+choices:
+- id: A
+  text: Common stock representing 25% of the investee's voting shares
+  rationale: Common stock carrying the ability to exercise significant influence is accounted for by the
+    equity method; this is the ordinary case the method is designed for.
+- id: B
+  text: In-substance common stock of an investee that has not yet issued legal common shares
+  rationale: In-substance common stock is treated the same as common stock for this purpose and is eligible
+    for the equity method.
+- id: C
+  text: A noncontrolling general partnership interest that lets Orwell participate in managing the partnership's
+    operations
+  rationale: An investor in a partnership or limited liability company that can participate in management
+    is presumed to have significant influence and applies the equity method, similarly to an investor
+    in common stock.
+- id: D
+  text: Nonconvertible preferred stock that carries none of the characteristics of common stock
+  rationale: Correct. The equity method applies to investments in common stock or in-substance common
+    stock. Preferred stock without substantive common stock characteristics is accounted for under the
+    guidance for that instrument, not the equity method, even where the holder has significant influence
+    through other means.
+answer: D
+explanation: The equity method is applied to investments in common stock or in-substance common stock
+  of an investee over which the investor can exercise significant influence (ASC 323-10-15-13); investments
+  in unincorporated entities such as partnerships and LLCs are included by analogy when the investor can
+  participate in management (ASC 323-30). Preferred stock without substantive common stock characteristics
+  does not qualify for the equity method, regardless of any influence the holder has through other investments
+  or relationships; it is accounted for under the guidance applicable to that instrument.

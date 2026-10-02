@@ -1,0 +1,42 @@
+id: far-investments-amortized-cost-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Financial assets at amortized cost)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 320-10-25-6 (changes in circumstance, such as a sale near maturity, that do not call into question
+    an entity's held-to-maturity classification)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Teel Co. classifies several debt securities as held-to-maturity. Which of the following sales would
+  NOT call into question Teel's intent and ability to hold its remaining held-to-maturity securities to
+  maturity?
+choices:
+- id: A
+  text: Selling a bond because market interest rates rose and Teel wants to reinvest at the higher rate
+  rationale: Selling to take advantage of interest rate or market price changes is inconsistent with the
+    positive intent and ability to hold required for held-to-maturity classification.
+- id: B
+  text: Selling a bond to raise cash for an unexpected, but foreseeable, operating need
+  rationale: A need for cash that could have been anticipated when the securities were classified is not
+    one of the specific exceptions, and selling for it taints the held-to-maturity classification.
+- id: C
+  text: Selling a bond after collecting at least 85% of its principal through scheduled payments and prepayments
+  rationale: Correct. A sale after substantially all of the principal has already been collected is specifically
+    excluded from tainting the held-to-maturity classification, because so little of the original investment
+    or interest rate risk remains.
+- id: D
+  text: Selling a bond after the rating agency placed it on negative watch, though there is no evidence
+    yet of significant deterioration in the issuer's creditworthiness
+  rationale: The exception requires evidence of significant deterioration in creditworthiness that has
+    already occurred, not merely the possibility signaled by a ratings watch.
+answer: C
+explanation: A sale of a held-to-maturity debt security generally casts doubt on the investor's intent
+  and ability to hold its remaining such securities to maturity. ASC 320-10-25-6 lists specific exceptions
+  that do not taint the classification, including a sale after the investor has already collected at least
+  85% of the security's original principal, a sale within three months of maturity, and a sale following
+  significant deterioration in the issuer's creditworthiness that has actually occurred. Selling in response
+  to interest rate changes, a foreseeable liquidity need, or a mere ratings watch is not among the exceptions.

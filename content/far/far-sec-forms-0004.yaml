@@ -1,0 +1,39 @@
+id: far-sec-forms-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Public Company Reporting Topics
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - SEC Form 10-K, Item 1C (cybersecurity risk management, strategy and governance)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A U.S. registrant's disclosure committee is assigning responsibility for drafting sections of its
+  annual report on Form 10-K. Which Item requires the registrant to describe its processes for assessing,
+  identifying and managing material risks from cybersecurity threats, and the board's oversight of those
+  risks?
+choices:
+- id: A
+  text: Item 1A, Risk Factors
+  rationale: Item 1A discloses material risks facing the registrant generally; cybersecurity governance
+    and process disclosures have their own item, 1C.
+- id: B
+  text: Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations
+  rationale: Item 7 discusses financial condition and operating results, not cybersecurity risk management
+    and governance.
+- id: C
+  text: Item 1C, Cybersecurity
+  rationale: Correct. Item 1C requires disclosure of the registrant's cybersecurity risk management processes,
+    strategy, and board and management oversight of cybersecurity risks.
+- id: D
+  text: Item 9A, Controls and Procedures
+  rationale: Item 9A addresses disclosure controls and internal control over financial reporting, a narrower
+    topic than the cybersecurity risk management and governance Item 1C covers.
+answer: C
+explanation: Form 10-K Item 1C requires a registrant to describe its processes, if any, for assessing,
+  identifying and managing material risks from cybersecurity threats, whether any risks from cybersecurity
+  threats have materially affected it, and the board of directors' and management's oversight of cybersecurity
+  risks. Item 1A covers risk factors generally, Item 7 is MD&A, and Item 9A covers disclosure controls
+  and internal control over financial reporting.

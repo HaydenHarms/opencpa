@@ -1,0 +1,41 @@
+id: far-nfp-net-assets-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of activities (Not-for-Profit)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 958-225-05 (purpose of the statement of activities: a period''s revenues, expenses, gains, losses
+    and reclassifications, by net asset class)'
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: A new controller preparing the first annual report for Wyre Forest Trust, a not-for-profit entity,
+  asks what the statement of activities is meant to show. Which answer correctly states its purpose?
+choices:
+- id: A
+  text: The entity's cash receipts and payments for the period, classified into operating, investing and
+    financing activities
+  rationale: That description fits the statement of cash flows, not the statement of activities.
+- id: B
+  text: The entity's assets, liabilities and net assets at a single date, split between the two net asset
+    classes
+  rationale: That description fits the statement of financial position, which reports balances at a point
+    in time, not activity over a period.
+- id: C
+  text: Each program's and supporting activity's expenses, classified by both their natural and functional
+    categories
+  rationale: That description fits the statement of functional expenses (or an equivalent note), one of
+    several ways functional expense information may be presented, not the statement of activities.
+- id: D
+  text: The entity's revenues, expenses, gains, losses and reclassifications, by net asset class and in
+    total
+  rationale: Correct. The statement of activities reports the change in net assets for the period, both
+    in total and separately for the classes with and without donor restrictions.
+answer: D
+explanation: 'The statement of activities reports the change in a not-for-profit entity''s net assets
+  for a period: its revenues, expenses, gains, losses, and reclassifications between net assets with and
+  without donor restrictions, presented in total and by net asset class (ASC 958-225). It is a period
+  statement, like an income statement, not a point-in-time statement (the statement of financial position)
+  or a cash-basis statement (the statement of cash flows), and functional expense detail is reported separately.'

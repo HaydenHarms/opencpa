@@ -1,0 +1,165 @@
+id: far-changes-in-equity-0009
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of changes in equity
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 505-20-25 (a stock dividend of 20-25% or more is accounted for like a split, at par value, not
+    fair value)
+  - ASC 505-30-30 (gains on treasury stock transactions credited to additional paid-in capital)
+  - 'ASC 250-10-45 (correction of an error in previously issued financial statements: restate beginning
+    retained earnings)'
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Ashcombe Corp.'s draft Year 2 statement of changes in equity reports ending retained earnings of
+  $961,000, built from beginning retained earnings of $900,000 (as previously reported), plus net income
+  of $310,000, less cash dividends of $85,000, less a 30% stock dividend recorded at its $180,000 fair
+  value (par value $12,000), plus a $16,000 gain on reissuing treasury shares, credited to retained earnings.
+  It reports ending additional paid-in capital of $818,000, made up of a beginning balance of $650,000
+  plus the $168,000 excess of the stock dividend's fair value over par. During the review, the controller
+  finds that $25,000 of Year 1 advertising expense, properly incurred that year, was never recorded in
+  any period. What should Ashcombe's corrected ending retained earnings and ending additional paid-in
+  capital be?
+choices:
+- id: A
+  text: $920,000; $834,000
+  rationale: 'Keeps the stock dividend at its $180,000 fair value, crediting $168,000 to additional paid-in
+    capital. A dividend of 30% of the shares outstanding is large enough that ASC 505-20 treats it like
+    a stock split effected in dividend form: retained earnings is reduced only by the $12,000 par value
+    of the new shares, with no additional paid-in capital.'
+- id: B
+  text: $936,000; $818,000
+  rationale: Keeps the stock dividend at its $180,000 fair value and keeps the $16,000 treasury-stock
+    gain in retained earnings, correcting only the advertising-expense error. Both the stock dividend
+    and the treasury gain still need correcting, as in the other wrong answers above.
+- id: C
+  text: $1,088,000; $666,000
+  rationale: 'Correct retained earnings: $900,000 − $25,000 + $310,000 − $85,000 − $12,000 = $1,088,000.
+    Correct additional paid-in capital: $650,000 + $16,000 = $666,000.'
+- id: D
+  text: $1,104,000; $650,000
+  rationale: Keeps the $16,000 gain on reissuing the treasury shares in retained earnings. Gains on treasury
+    stock transactions are credited to additional paid-in capital, not retained earnings.
+answer: C
+explanation: 'The 30% stock dividend is large enough to be accounted for like a stock split in dividend
+  form (ASC 505-20-25): retained earnings is reduced only by the $12,000 par value of the new shares,
+  and no additional paid-in capital is recognized, so the draft''s $168,000 addition to additional paid-in
+  capital is reversed. The $16,000 gain on reissuing treasury stock belongs in additional paid-in capital,
+  not retained earnings. The unrecorded $25,000 of Year 1 advertising expense is a correction of an error,
+  reducing beginning retained earnings. Corrected retained earnings = $1,088,000; corrected additional
+  paid-in capital = $666,000.'
+variants:
+- stem: Bickleigh Corp.'s draft Year 2 statement of changes in equity reports ending retained earnings
+    of $1,208,800, built from beginning retained earnings of $1,150,000 (as previously reported), plus
+    net income of $420,000, less cash dividends of $110,000, less a 28% stock dividend recorded at its
+    $277,200 fair value (par value $15,400), plus a $26,000 gain on reissuing treasury shares, credited
+    to retained earnings. It reports ending additional paid-in capital of $1,081,800, made up of a beginning
+    balance of $820,000 plus the $261,800 excess of the stock dividend's fair value over par. During the
+    review, the controller finds that $31,000 of Year 1 advertising expense, properly incurred that year,
+    was never recorded in any period. What should Bickleigh's corrected ending retained earnings and ending
+    additional paid-in capital be?
+  choices:
+  - id: A
+    text: $1,151,800; $1,107,800
+    rationale: 'Keeps the stock dividend at its $277,200 fair value, crediting $261,800 to additional
+      paid-in capital. A dividend of 28% of the shares outstanding is large enough that ASC 505-20 treats
+      it like a stock split effected in dividend form: retained earnings is reduced only by the $15,400
+      par value of the new shares, with no additional paid-in capital.'
+  - id: B
+    text: $1,177,800; $1,081,800
+    rationale: Keeps the stock dividend at its $277,200 fair value and keeps the $26,000 treasury-stock
+      gain in retained earnings, correcting only the advertising-expense error. Both the stock dividend
+      and the treasury gain still need correcting, as in the other wrong answers above.
+  - id: C
+    text: $1,413,600; $846,000
+    rationale: 'Correct retained earnings: $1,150,000 − $31,000 + $420,000 − $110,000 − $15,400 = $1,413,600.
+      Correct additional paid-in capital: $820,000 + $26,000 = $846,000.'
+  - id: D
+    text: $1,444,600; $846,000
+    rationale: Leaves beginning retained earnings at its previously reported $1,150,000. The $31,000 of
+      Year 1 advertising expense that was never recorded understated Year 1 expense, so it is corrected
+      by reducing beginning retained earnings.
+  answer: C
+  explanation: 'The 28% stock dividend is large enough to be accounted for like a stock split in dividend
+    form (ASC 505-20-25): retained earnings is reduced only by the $15,400 par value of the new shares,
+    and no additional paid-in capital is recognized, so the draft''s $261,800 addition to additional paid-in
+    capital is reversed. The $26,000 gain on reissuing treasury stock belongs in additional paid-in capital,
+    not retained earnings. The unrecorded $31,000 of Year 1 advertising expense is a correction of an
+    error, reducing beginning retained earnings. Corrected retained earnings = $1,413,600; corrected additional
+    paid-in capital = $846,000.'
+- stem: Chagford Corp.'s draft Year 2 statement of changes in equity reports ending retained earnings
+    of $857,800, built from beginning retained earnings of $760,000 (as previously reported), plus net
+    income of $265,000, less cash dividends of $70,000, less a 32% stock dividend recorded at its $115,200
+    fair value (par value $9,600), plus an $18,000 gain on reissuing treasury shares, credited to retained
+    earnings. It reports ending additional paid-in capital of $645,600, made up of a beginning balance
+    of $540,000 plus the $105,600 excess of the stock dividend's fair value over par. During the review,
+    the controller finds that $24,000 of Year 1 advertising expense, properly incurred that year, was
+    never recorded in any period. What should Chagford's corrected ending retained earnings and ending
+    additional paid-in capital be?
+  choices:
+  - id: A
+    text: $833,800; $645,600
+    rationale: Keeps the stock dividend at its $115,200 fair value and keeps the $18,000 treasury-stock
+      gain in retained earnings, correcting only the advertising-expense error. Both the stock dividend
+      and the treasury gain still need correcting, as in the other wrong answers above.
+  - id: B
+    text: $921,400; $558,000
+    rationale: 'Correct retained earnings: $760,000 − $24,000 + $265,000 − $70,000 − $9,600 = $921,400.
+      Correct additional paid-in capital: $540,000 + $18,000 = $558,000.'
+  - id: C
+    text: $939,400; $540,000
+    rationale: Keeps the $18,000 gain on reissuing the treasury shares in retained earnings. Gains on
+      treasury stock transactions are credited to additional paid-in capital, not retained earnings.
+  - id: D
+    text: $945,400; $558,000
+    rationale: Leaves beginning retained earnings at its previously reported $760,000. The $24,000 of
+      Year 1 advertising expense that was never recorded understated Year 1 expense, so it is corrected
+      by reducing beginning retained earnings.
+  answer: B
+  explanation: 'The 32% stock dividend is large enough to be accounted for like a stock split in dividend
+    form (ASC 505-20-25): retained earnings is reduced only by the $9,600 par value of the new shares,
+    and no additional paid-in capital is recognized, so the draft''s $105,600 addition to additional paid-in
+    capital is reversed. The $18,000 gain on reissuing treasury stock belongs in additional paid-in capital,
+    not retained earnings. The unrecorded $24,000 of Year 1 advertising expense is a correction of an
+    error, reducing beginning retained earnings. Corrected retained earnings = $921,400; corrected additional
+    paid-in capital = $558,000.'
+- stem: Doddiscombe Corp.'s draft Year 2 statement of changes in equity reports ending retained earnings
+    of $1,493,400, built from beginning retained earnings of $1,340,000 (as previously reported), plus
+    net income of $485,000, less cash dividends of $128,000, less a 26% stock dividend recorded at its
+    $236,600 fair value (par value $33,800), plus a $33,000 gain on reissuing treasury shares, credited
+    to retained earnings. It reports ending additional paid-in capital of $1,162,800, made up of a beginning
+    balance of $960,000 plus the $202,800 excess of the stock dividend's fair value over par. During the
+    review, the controller finds that $26,000 of Year 1 advertising expense, properly incurred that year,
+    was never recorded in any period. What should Doddiscombe's corrected ending retained earnings and
+    ending additional paid-in capital be?
+  choices:
+  - id: A
+    text: $1,434,400; $1,195,800
+    rationale: 'Keeps the stock dividend at its $236,600 fair value, crediting $202,800 to additional
+      paid-in capital. A dividend of 26% of the shares outstanding is large enough that ASC 505-20 treats
+      it like a stock split effected in dividend form: retained earnings is reduced only by the $33,800
+      par value of the new shares, with no additional paid-in capital.'
+  - id: B
+    text: $1,637,200; $993,000
+    rationale: 'Correct retained earnings: $1,340,000 − $26,000 + $485,000 − $128,000 − $33,800 = $1,637,200.
+      Correct additional paid-in capital: $960,000 + $33,000 = $993,000.'
+  - id: C
+    text: $1,663,200; $993,000
+    rationale: Leaves beginning retained earnings at its previously reported $1,340,000. The $26,000 of
+      Year 1 advertising expense that was never recorded understated Year 1 expense, so it is corrected
+      by reducing beginning retained earnings.
+  - id: D
+    text: $1,670,200; $960,000
+    rationale: Keeps the $33,000 gain on reissuing the treasury shares in retained earnings. Gains on
+      treasury stock transactions are credited to additional paid-in capital, not retained earnings.
+  answer: B
+  explanation: 'The 26% stock dividend is large enough to be accounted for like a stock split in dividend
+    form (ASC 505-20-25): retained earnings is reduced only by the $33,800 par value of the new shares,
+    and no additional paid-in capital is recognized, so the draft''s $202,800 addition to additional paid-in
+    capital is reversed. The $33,000 gain on reissuing treasury stock belongs in additional paid-in capital,
+    not retained earnings. The unrecorded $26,000 of Year 1 advertising expense is a correction of an
+    error, reducing beginning retained earnings. Corrected retained earnings = $1,637,200; corrected additional
+    paid-in capital = $993,000.'

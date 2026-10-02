@@ -1,0 +1,147 @@
+id: far-consolidated-statements-0012
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Consolidated financial statements
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 810-10-45-20 (unrealized intercompany profit eliminated before allocating subsidiary income between
+    the parent and the noncontrolling interest)
+  - ASC 810-10-45-1 (intercompany dividends eliminated in consolidation)
+  - ASC 810-10-45-16 (allocating net income between the controlling and noncontrolling interests)
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Allendale Corp. owns 90% of Blanchland Inc.'s voting stock, acquired in an earlier year; Allendale
+  Corp. does not use the equity method on its own books. For Year 2, Allendale Corp. reports net income
+  from its own operations, including $36,000 of dividend income it received from Blanchland Inc., of $500,000;
+  Blanchland Inc. reports net income of $300,000. During Year 2, Blanchland Inc. sold goods to Allendale
+  Corp. for $120,000 that cost Blanchland Inc. $80,000, and Allendale Corp. still held 25% of those goods
+  at year-end. Blanchland Inc. also sold equipment to Allendale Corp. in an earlier year at a gain, and
+  Year 2 is the first year in which Allendale Corp.'s depreciation on that equipment, based on its cost
+  to Allendale Corp., exceeds what consolidated depreciation should be (based on Blanchland Inc.'s original
+  cost) by $8,000. What net income is attributable to Allendale's shareholders for Year 2?
+choices:
+- id: A
+  text: $732,200
+  rationale: Correct. $500,000 − $36,000 + 90% × ($300,000 − $10,000 + $8,000).
+- id: B
+  text: $741,200
+  rationale: Leaves the $10,000 of unrealized profit on Blanchland Inc.'s upstream sale in Blanchland
+    Inc.'s income before allocating it. The unrealized profit must be removed before splitting Blanchland
+    Inc.'s income between Allendale and the noncontrolling interest.
+- id: C
+  text: $762,000
+  rationale: Treats all of Blanchland Inc.'s adjusted income as Allendale's, allocating none of it to
+    the 10% noncontrolling interest.
+- id: D
+  text: $768,200
+  rationale: Keeps the $36,000 of dividend income Allendale recorded from Blanchland Inc.. An intercompany
+    dividend is eliminated entirely against the investment account; it isn't part of either company's
+    income in the consolidated statements.
+answer: A
+explanation: The $36,000 of intercompany dividend income is eliminated entirely; it isn't consolidated
+  income. Blanchland Inc.'s income is reduced by the $10,000 unrealized profit on its upstream sale ($40,000
+  gross profit × 25% unsold) and increased by the $8,000 of excess depreciation being eliminated this
+  year, both before the income is split 90/10. Net income attributable to Allendale's shareholders = $500,000
+  − $36,000 + 90% × ($300,000 − $10,000 + $8,000) = $732,200.
+variants:
+- stem: Catton Corp. owns 90% of Dotland Inc.'s voting stock, acquired in an earlier year; Catton Corp.
+    does not use the equity method on its own books. For Year 2, Catton Corp. reports net income from
+    its own operations, including $45,000 of dividend income it received from Dotland Inc., of $640,000;
+    Dotland Inc. reports net income of $380,000. During Year 2, Dotland Inc. sold goods to Catton Corp.
+    for $150,000 that cost Dotland Inc. $95,000, and Catton Corp. still held 30% of those goods at year-end.
+    Dotland Inc. also sold equipment to Catton Corp. in an earlier year at a gain, and Year 2 is the first
+    year in which Catton Corp.'s depreciation on that equipment, based on its cost to Catton Corp., exceeds
+    what consolidated depreciation should be (based on Dotland Inc.'s original cost) by $11,000. What
+    net income is attributable to Catton's shareholders for Year 2?
+  choices:
+  - id: A
+    text: $922,150
+    rationale: Leaves out the $11,000 of excess depreciation that continues to be added back from Dotland
+      Inc.'s intercompany equipment sale in an earlier year.
+  - id: B
+    text: $932,050
+    rationale: Correct. $640,000 − $45,000 + 90% × ($380,000 − $16,500 + $11,000).
+  - id: C
+    text: $946,900
+    rationale: Leaves the $16,500 of unrealized profit on Dotland Inc.'s upstream sale in Dotland Inc.'s
+      income before allocating it. The unrealized profit must be removed before splitting Dotland Inc.'s
+      income between Catton and the noncontrolling interest.
+  - id: D
+    text: $969,500
+    rationale: Treats all of Dotland Inc.'s adjusted income as Catton's, allocating none of it to the
+      10% noncontrolling interest.
+  answer: B
+  explanation: The $45,000 of intercompany dividend income is eliminated entirely; it isn't consolidated
+    income. Dotland Inc.'s income is reduced by the $16,500 unrealized profit on its upstream sale ($55,000
+    gross profit × 30% unsold) and increased by the $11,000 of excess depreciation being eliminated this
+    year, both before the income is split 90/10. Net income attributable to Catton's shareholders = $640,000
+    − $45,000 + 90% × ($380,000 − $16,500 + $11,000) = $932,050.
+- stem: Elsdon Corp. owns 90% of Featherstone Inc.'s voting stock, acquired in an earlier year; Elsdon
+    Corp. does not use the equity method on its own books. For Year 2, Elsdon Corp. reports net income
+    from its own operations, including $27,000 of dividend income it received from Featherstone Inc.,
+    of $420,000; Featherstone Inc. reports net income of $255,000. During Year 2, Featherstone Inc. sold
+    goods to Elsdon Corp. for $95,000 that cost Featherstone Inc. $62,000, and Elsdon Corp. still held
+    20% of those goods at year-end. Featherstone Inc. also sold equipment to Elsdon Corp. in an earlier
+    year at a gain, and Year 2 is the first year in which Elsdon Corp.'s depreciation on that equipment,
+    based on its cost to Elsdon Corp., exceeds what consolidated depreciation should be (based on Featherstone
+    Inc.'s original cost) by $6,500. What net income is attributable to Elsdon's shareholders for Year
+    2?
+  choices:
+  - id: A
+    text: $616,560
+    rationale: Leaves out the $6,500 of excess depreciation that continues to be added back from Featherstone
+      Inc.'s intercompany equipment sale in an earlier year.
+  - id: B
+    text: $622,410
+    rationale: Correct. $420,000 − $27,000 + 90% × ($255,000 − $6,600 + $6,500).
+  - id: C
+    text: $647,900
+    rationale: Treats all of Featherstone Inc.'s adjusted income as Elsdon's, allocating none of it to
+      the 10% noncontrolling interest.
+  - id: D
+    text: $649,410
+    rationale: Keeps the $27,000 of dividend income Elsdon recorded from Featherstone Inc.. An intercompany
+      dividend is eliminated entirely against the investment account; it isn't part of either company's
+      income in the consolidated statements.
+  answer: B
+  explanation: The $27,000 of intercompany dividend income is eliminated entirely; it isn't consolidated
+    income. Featherstone Inc.'s income is reduced by the $6,600 unrealized profit on its upstream sale
+    ($33,000 gross profit × 20% unsold) and increased by the $6,500 of excess depreciation being eliminated
+    this year, both before the income is split 90/10. Net income attributable to Elsdon's shareholders
+    = $420,000 − $27,000 + 90% × ($255,000 − $6,600 + $6,500) = $622,410.
+- stem: Gunnerton Corp. owns 90% of Harwood Inc.'s voting stock, acquired in an earlier year; Gunnerton
+    Corp. does not use the equity method on its own books. For Year 2, Gunnerton Corp. reports net income
+    from its own operations, including $39,000 of dividend income it received from Harwood Inc., of $575,000;
+    Harwood Inc. reports net income of $330,000. During Year 2, Harwood Inc. sold goods to Gunnerton Corp.
+    for $130,000 that cost Harwood Inc. $88,000, and Gunnerton Corp. still held 35% of those goods at
+    year-end. Harwood Inc. also sold equipment to Gunnerton Corp. in an earlier year at a gain, and Year
+    2 is the first year in which Gunnerton Corp.'s depreciation on that equipment, based on its cost to
+    Gunnerton Corp., exceeds what consolidated depreciation should be (based on Harwood Inc.'s original
+    cost) by $9,500. What net income is attributable to Gunnerton's shareholders for Year 2?
+  choices:
+  - id: A
+    text: $819,770
+    rationale: Leaves out the $9,500 of excess depreciation that continues to be added back from Harwood
+      Inc.'s intercompany equipment sale in an earlier year.
+  - id: B
+    text: $828,320
+    rationale: Correct. $575,000 − $39,000 + 90% × ($330,000 − $14,700 + $9,500).
+  - id: C
+    text: $841,550
+    rationale: Leaves the $14,700 of unrealized profit on Harwood Inc.'s upstream sale in Harwood Inc.'s
+      income before allocating it. The unrealized profit must be removed before splitting Harwood Inc.'s
+      income between Gunnerton and the noncontrolling interest.
+  - id: D
+    text: $867,320
+    rationale: Keeps the $39,000 of dividend income Gunnerton recorded from Harwood Inc.. An intercompany
+      dividend is eliminated entirely against the investment account; it isn't part of either company's
+      income in the consolidated statements.
+  answer: B
+  explanation: The $39,000 of intercompany dividend income is eliminated entirely; it isn't consolidated
+    income. Harwood Inc.'s income is reduced by the $14,700 unrealized profit on its upstream sale ($42,000
+    gross profit × 35% unsold) and increased by the $9,500 of excess depreciation being eliminated this
+    year, both before the income is split 90/10. Net income attributable to Gunnerton's shareholders =
+    $575,000 − $39,000 + 90% × ($330,000 − $14,700 + $9,500) = $828,320.
