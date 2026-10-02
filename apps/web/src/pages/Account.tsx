@@ -121,7 +121,51 @@ function SignIn({ github, email }: AuthStatus) {
           )}
         </article>
       )}
+      {(github || email) && (
+        <p className="muted">
+          By signing in you agree to the <Link to="/terms">Terms of Use</Link> and{' '}
+          <Link to="/privacy">Privacy Policy</Link>.
+        </p>
+      )}
+      <DeleteData
+        title="This device’s data"
+        text="Not signing in? You can still delete the answers and progress saved for this device."
+        button="Delete this device’s data"
+        confirmText="Delete all progress saved for this device? This can’t be undone."
+      />
     </>
+  );
+}
+
+/** Delete everything stored for this account, or, signed out, for this device. */
+function DeleteData(props: { title: string; text: string; button: string; confirmText: string }) {
+  const [state, setState] = useState<'idle' | 'busy' | 'done' | string>('idle');
+  async function remove() {
+    if (!confirm(props.confirmText)) return;
+    setState('busy');
+    try {
+      await api.deleteMyData();
+      setState('done');
+      setSession(null);
+    } catch (e) {
+      setState(errorMessage(e));
+    }
+  }
+  return (
+    <article className="card">
+      <h2>{props.title}</h2>
+      {state === 'done' ? (
+        <p>Deleted.</p>
+      ) : (
+        <>
+          <p className="muted">{props.text}</p>
+          {state !== 'idle' && state !== 'busy' && <p className="error">{state}</p>}
+          <button className="link danger" onClick={remove} disabled={state === 'busy'}>
+            {props.button}
+          </button>
+        </>
+      )}
+    </article>
   );
 }
 
@@ -136,20 +180,28 @@ function SignedIn({ account }: { account: Account }) {
     }
   }
   return (
-    <article className="card">
-      <h2>{accountName(account)}</h2>
-      <ul>
-        {account.githubLogin && <li>GitHub: @{account.githubLogin}</li>}
-        {account.email && <li>Email: {account.email}</li>}
-        <li>Member since {new Date(account.createdAt).toLocaleDateString()}</li>
-      </ul>
-      <p className="muted">
-        Your progress, review schedule and Claude connector link are saved to this account.
-      </p>
-      <button className="button" onClick={signOut} disabled={busy}>
-        Sign out
-      </button>
-    </article>
+    <>
+      <article className="card">
+        <h2>{accountName(account)}</h2>
+        <ul>
+          {account.githubLogin && <li>GitHub: @{account.githubLogin}</li>}
+          {account.email && <li>Email: {account.email}</li>}
+          <li>Member since {new Date(account.createdAt).toLocaleDateString()}</li>
+        </ul>
+        <p className="muted">
+          Your progress, review schedule and Claude connector link are saved to this account.
+        </p>
+        <button className="button" onClick={signOut} disabled={busy}>
+          Sign out
+        </button>
+      </article>
+      <DeleteData
+        title="Delete your account"
+        text="Permanently delete your account and everything saved to it: answers, review schedule, sessions and your Claude connector link."
+        button="Delete my account"
+        confirmText="Delete your OpenCPA account and all its progress? This can’t be undone."
+      />
+    </>
   );
 }
 

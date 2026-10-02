@@ -265,6 +265,7 @@ export const api = {
   emailVerify: (token: string) =>
     call<NewSession>('/auth/email/verify', { method: 'POST', body: JSON.stringify({ token }) }),
   signOut: () => call<{ signedOut: true }>('/auth/signout', { method: 'POST' }),
+  deleteMyData: () => call<{ deleted: true }>('/me/account', { method: 'DELETE' }),
   questions: (section?: string) =>
     call<PublicMcq[]>(`/questions${section ? `?section=${section}` : ''}`),
   attempt: (itemId: string, selected: string, durationMs: number, sessionId?: string) =>

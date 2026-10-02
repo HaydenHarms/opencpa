@@ -632,6 +632,32 @@ app.all('/mcp/:token', async (c) => {
   return handleMcp(c.req.raw, c.env.DB, row.user_id);
 });
 
+/**
+ * Delete everything stored for the student: the account (or, signed out, this device's
+ * anonymous data), its answers, review schedule, sessions, Claude connector link and
+ * sign-ins. Not reversible.
+ */
+app.delete('/me/account', async (c) => {
+  const userId = c.get('userId');
+  const db = c.env.DB;
+  const byUser = (table: string) =>
+    db.prepare(`DELETE FROM ${table} WHERE user_id = ?`).bind(userId);
+  await db.batch([
+    byUser('attempts'),
+    byUser('review_cards'),
+    byUser('practice_sessions'),
+    byUser('connector_tokens'),
+    byUser('auth_sessions'),
+    db
+      .prepare(
+        'DELETE FROM auth_tokens WHERE user_id = ? OR email = (SELECT email FROM users WHERE id = ?)',
+      )
+      .bind(userId, userId),
+    db.prepare('DELETE FROM users WHERE id = ?').bind(userId),
+  ]);
+  return c.json({ deleted: true });
+});
+
 /** Tutor: wired up in a later milestone (Claude API, bring-your-own-key). */
 app.post('/me/tutor', (c) => c.json({ error: 'The tutor is not available yet.' }, 501));
 

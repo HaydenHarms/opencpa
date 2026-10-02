@@ -50,7 +50,7 @@ Hayden's direction (2026-09-29): finish FAR completely before any more BAR, AUD,
    - Write the next simulation batches (use the `select` task type for classification choices).
 5. **Other sections, after FAR is done.** BAR batch 02 first (gaps in `docs/reviews/bar-batch-01.md`; lean toward Area I and II Analysis). BAR targets: Area I 40–50%, II 35–45%, III 10–20%; R&U 10–20%, Application 45–55%, Analysis 30–40%. Then AUD and REG, then the disciplines.
 6. **Advanced settings** letting users weight questions toward strengths or weaknesses; brainstorm others.
-7. **Accounts** (GitHub OAuth or email magic link), moving anonymous progress into the account. **Built 2026-10-02** (`docs/accounts.md`); GitHub goes live once Hayden adds the OAuth app secrets, email once there is a custom domain. Still open: account deletion.
+7. **Accounts** (GitHub OAuth or email magic link), moving anonymous progress into the account. **Built 2026-10-02** (`docs/accounts.md`); GitHub sign-in is live; email waits for a custom domain. Account and device-data deletion, a Privacy Policy (`/privacy`) and Terms of Use (`/terms`) are live; update those pages whenever the data stored or the services used change.
 8. **Before any publicity:** rate limiting, a UI redesign (Hayden wants it less bland) and a custom domain.
 9. Exam-day mode.
 
