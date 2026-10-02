@@ -1,0 +1,188 @@
+id: far-tbs-receivables-reconciliation-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 310-10 (trade receivables)
+  - ASC 326-20 (expected credit losses; pooling by aging; write-offs and recoveries)
+  - ASC 606-10-25-30 (control transfers, for the FOB destination shipment)
+  - ASC 210-10-45 (customer credit balances presented as liabilities)
+  notes: FAR simulations batch 03. Written from scratch; every number computed in code.
+title: Year 2 receivables reconciliation and allowance
+scenario: Tamsin Supply Co. sells building materials on 30-day terms and closes its books on December
+  31, Year 2. Its accounts receivable subledger (the customer aging in Exhibit 1) does not agree with
+  the general ledger control account (Exhibit 2). The controller has pulled the documents in Exhibit 3,
+  and Exhibit 4 gives Tamsin's credit loss rates. Before the investigation, no entry has been made for
+  any item in Exhibit 3. Round every amount to the nearest dollar.
+exhibits:
+- title: 'Exhibit 1: Accounts receivable aging, December 31, Year 2 (subledger)'
+  body: '| Customer | Current | 1–30 days past due | 31–60 days past due | Over 60 days past due | Balance
+    |
+
+    |---|---|---|---|---|---|
+
+    | Ashdown Builders | 39,000 | 12,600 | — | — | 51,600 |
+
+    | Calloway Hardware | 31,500 | — | 8,400 | — | 39,900 |
+
+    | Drummond Supply | 22,800 | 9,700 | — | — | 32,500 |
+
+    | Feltham Contractors | — | 6,300 | 11,200 | — | 17,500 |
+
+    | Hexley Homes | 55,700 | — | — | — | 55,700 |
+
+    | Kenmure Lumber | 26,400 | 14,100 | — | 9,800 | 50,300 |
+
+    | Ormsby Fixtures | — | — | — | 8,700 | 8,700 |
+
+    | Pryor & Sons | — | — | 5,600 | 26,600 | 32,200 |
+
+    | Tolland Renovations | 18,300 | 7,500 | — | — | 25,800 |
+
+    | **Total customer debit balances** | 193,700 | 50,200 | 25,200 | 45,100 | 314,200 |
+
+    | Marlowe Interiors (credit balance from an overpayment) |  |  |  |  | (3,600) |
+
+    | **Net subledger balance** |  |  |  |  | 310,600 |'
+- title: 'Exhibit 2: General ledger, accounts receivable control account, December, Year 2'
+  body: '| Date | Posting | Debit | Credit | Balance |
+
+    |---|---|---|---|---|
+
+    | Dec 1 | Balance forward |  |  | 302,100 |
+
+    | Dec 20 | Write-off approved by the controller (Ormsby Fixtures); debit allowance for credit losses
+    |  | 8,700 | 293,400 |
+
+    | Dec 31 | Sales journal total | 268,400 |  | 561,800 |
+
+    | Dec 31 | Cash receipts journal, accounts receivable column total |  | 266,300 | 295,500 |'
+- title: 'Exhibit 3: Documents pulled by the controller'
+  body: '| Document | Detail |
+
+    |---|---|
+
+    | Remittance advice, Pryor & Sons, received Dec 22 | Check for $9,200 "in payment of invoices 4471
+    and 4476" (both dated September 28, due October 28). The cashier''s deposit slip shows the check;
+    the receivables clerk applied it to Ashdown Builders'' account, against Ashdown''s current (not yet
+    due) invoices. |
+
+    | Bill of lading 8821 and invoice 5190, Dec 30 | Goods invoiced to Hexley Homes for $15,800, terms
+    FOB destination. The carrier''s delivery receipt is signed by Hexley on January 3. The invoice is
+    in the December sales journal and in Hexley''s account. |
+
+    | Cash receipts journal, Dec 14 | Receipt of $6,400 from Garside Equipment for a used forklift Tamsin
+    sold, entered in the accounts receivable column. Garside has never been a customer, and the forklift''s
+    cost and accumulated depreciation are still in the equipment accounts. |
+
+    | Credit committee minutes, Dec 20 | Ormsby Fixtures'' account ($8,700, all over 60 days past due)
+    is uncollectible; the business has closed. Approved for write-off. |
+
+    | Customer correspondence, Jan 6, Year 3 | Ashdown Builders paid $12,600 by wire, settling its 1–30
+    day balance. |
+
+    | Allowance for credit losses, Year 2 | January 1 balance $14,500 (credit). Write-offs January–November
+    $11,900. A $1,300 account written off in Year 1 was recovered in August and reinstated. No credit
+    loss expense has been recorded for Year 2. |'
+- title: 'Exhibit 4: Credit loss rates'
+  body: '| Aging category | Expected loss rate |
+
+    |---|---|
+
+    | Current | 1% |
+
+    | 1–30 days past due | 4% |
+
+    | 31–60 days past due | 12% |
+
+    | Over 60 days past due | 40% |
+
+
+    The rates are based on Tamsin''s loss history for customers of this kind, adjusted for current conditions
+    and reasonable and supportable forecasts. Tamsin, a private company, does not elect the practical
+    expedient in ASU 2025-05. The rates apply to every customer balance, measured on the corrected aging.'
+tasks:
+- id: t1
+  type: select
+  points: 2
+  prompt: For each document in Exhibit 3, indicate which record must be corrected to state accounts receivable
+    correctly at December 31, Year 2.
+  options:
+  - Subledger only
+  - General ledger only
+  - Both the subledger and the general ledger
+  - Neither
+  rows:
+  - id: r1
+    label: Pryor & Sons remittance (December 22)
+    answer: Subledger only
+  - id: r2
+    label: Invoice 5190 to Hexley Homes (December 30)
+    answer: Both the subledger and the general ledger
+  - id: r3
+    label: Garside Equipment receipt (December 14)
+    answer: General ledger only
+  - id: r4
+    label: Ormsby Fixtures write-off (December 20)
+    answer: Subledger only
+  - id: r5
+    label: Ashdown Builders wire (January 6, Year 3)
+    answer: Neither
+  explanation: 'The misapplied payment moved $9,200 between two customer accounts; the control account
+    total was right, so only the subledger changes (and the aging, since the payment settled Pryor''s
+    over-60 invoices, not Ashdown''s current ones). Hexley''s goods were shipped FOB destination and delivered
+    January 3, so control had not transferred at year end: the invoice comes out of both records. The
+    forklift proceeds were never a customer receivable, so only the control account was wrongly credited.
+    The write-off was posted to the control account but the customer is still in the aging. The January
+    wire is a Year 3 collection; the December 31 balance stands.'
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the correct net balance of Tamsin's accounts receivable control account at December
+    31, Year 2, after the investigation (customer debit balances less customer credit balances, before
+    the allowance)?
+  answer: 28610000
+  explanation: 'Start from the control account $295,500: remove the Hexley invoice for goods not yet delivered
+    (− $15,800) and reverse the forklift proceeds wrongly credited to receivables (+ $6,400): $295,500
+    − $15,800 + $6,400 = $286,100. Check from the subledger: $310,600 − $15,800 − $8,700 write-off = $286,100;
+    the misapplied payment does not change the total.'
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount should Tamsin report as accounts receivable (before the allowance) in its December
+    31, Year 2, balance sheet?
+  answer: 28970000
+  explanation: Report the customer debit balances, $289,700. Marlowe Interiors's $3,600 credit balance
+    is an amount Tamsin owes, reported with liabilities rather than netted against receivables (netting
+    gives $286,100).
+- id: t4
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What balance should Tamsin's allowance for credit losses have at December 31, Year 2?
+  answer: 1778300
+  explanation: 'Apply the rates to the corrected aging: current $187,100 × 1%; 1–30 days past due $50,200
+    × 4%; 31–60 days past due $25,200 × 12%; over 60 days past due $27,200 × 40%, a total of $17,783.
+    The corrected aging reflects Pryor''s payment against its over-60 invoices, removes Ormsby Fixtures
+    and Hexley''s December 30 invoice. Applying the rates to the unadjusted aging gives $25,009; correcting
+    the totals but leaving Pryor''s payment against Ashdown''s current balance gives $21,371. The January
+    wire does not change the December 31 aging.'
+- id: t5
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What credit loss expense should Tamsin recognize for Year 2?
+  answer: 2258300
+  explanation: 'Allowance before adjustment: $14,500 − write-offs $11,900 − $8,700 (December) + recovery
+    $1,300 = ($4,800). Expense = required $17,783 − ($4,800) = $22,583.'

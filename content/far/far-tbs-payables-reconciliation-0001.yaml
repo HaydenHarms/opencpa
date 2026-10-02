@@ -1,0 +1,155 @@
+id: far-tbs-payables-reconciliation-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 405-10 (liabilities)
+  - 'ASC 330-10 (title to goods in transit: FOB shipping point and FOB destination)'
+  - Search for unrecorded liabilities and vendor statement reconciliation practice
+  notes: FAR simulations batch 03. Written from scratch; every number computed in code.
+title: 'Year-end accounts payable: unrecorded liabilities and reconciliation'
+scenario: Brackwell Manufacturing Co. closes its books on December 31, Year 2. It reports every amount
+  owed to vendors for goods and services it has received, or that it owns in transit, as accounts payable,
+  whether or not the invoice has arrived. The controller is closing accounts payable. The exhibits show
+  the subledger and control account balances, a December entry in the cash disbursements journal, Brackwell's
+  January, Year 3, disbursements, and a statement from its largest resin supplier, Corran Polymers. No
+  entry has been made for any finding yet. Enter every amount in whole dollars, and enter a decrease as
+  a negative number.
+exhibits:
+- title: 'Exhibit 1: Balances at December 31, Year 2'
+  body: '|  | Amount |
+
+    |---|---|
+
+    | Accounts payable subledger (vendor trial balance), December 31, Year 2 | $581,340 |
+
+    | General ledger accounts payable control account, December 31, Year 2 | $558,740 |
+
+
+    Cash disbursements journal, December 14, Year 2: check 10377 for $22,600 to Varley Machinery, cash
+    on delivery for a drill press, entered in the accounts payable column. Varley has no vendor account
+    in the subledger.'
+- title: 'Exhibit 2: Cash disbursements, January, Year 3'
+  body: '| Check | Date paid | Payee | Amount | Supporting documents |
+
+    |---|---|---|---|---|
+
+    | 10412 | January 4, Year 3 | Ferris Steel | $31,250 | Invoice dated December 3, Year 2; recorded
+    in accounts payable in December |
+
+    | 10418 | January 9, Year 3 | Lindqvist Fasteners | $9,800 | Invoice dated December 30, Year 2; terms
+    FOB destination; receiving report January 3, Year 3 |
+
+    | 10426 | January 12, Year 3 | Oakhurst Resin | $18,450 | Invoice dated December 27, Year 2; terms
+    FOB shipping point; receiving report December 28, Year 2; not in the December 31 subledger |
+
+    | 10431 | January 15, Year 3 | Penrose Maintenance | $4,300 | Invoice dated January 2, Year 3, for
+    the January service contract |
+
+    | 10440 | January 25, Year 3 | Whitcombe & Hale LLP | $7,200 | Invoice dated January 9, Year 3, for
+    contract review performed November 28 – December 19, Year 2 |
+
+    | 10447 | January 28, Year 3 | Ferris Steel | $26,400 | Invoice dated January 11, Year 3; receiving
+    report January 10, Year 3 |'
+- title: 'Exhibit 3: Corran Polymers statement of account, December, Year 2'
+  body: '| Date | Description | Charges | Credits | Balance |
+
+    |---|---|---|---|---|
+
+    | Dec 1 | Balance forward |  |  | $33,900 |
+
+    | Dec 8 | Invoice 7731 | $21,800 |  | $55,700 |
+
+    | Dec 15 | Invoice 7768 | $9,400 |  | $65,100 |
+
+    | Dec 20 | Credit memo CM-212, returned pallets of resin |  | $5,900 | $59,200 |
+
+    | Dec 29 | Invoice 7810, shipped FOB shipping point | $13,750 |  | $72,950 |
+
+
+    Brackwell''s subledger shows Corran Polymers at $48,900. Brackwell mailed a $16,200 check to Corran
+    on December 31 and recorded it that day; the goods on invoice 7810 arrived January 5, Year 3, and
+    the invoice was recorded then. Brackwell''s receiving dock shipped the returned pallets on December
+    18.'
+tasks:
+- id: t1
+  type: select
+  points: 2
+  prompt: For each item, indicate its effect on Brackwell's accounts payable at December 31, Year 2.
+  options:
+  - Increase accounts payable
+  - Decrease accounts payable
+  - No adjustment
+  rows:
+  - id: r1
+    label: Check 10418 to Lindqvist Fasteners
+    answer: No adjustment
+  - id: r2
+    label: Check 10426 to Oakhurst Resin
+    answer: Increase accounts payable
+  - id: r3
+    label: Check 10440 to Whitcombe & Hale LLP
+    answer: Increase accounts payable
+  - id: r4
+    label: Corran Polymers invoice 7810
+    answer: Increase accounts payable
+  - id: r5
+    label: Corran Polymers credit memo CM-212
+    answer: Decrease accounts payable
+  - id: r6
+    label: Brackwell's December 31 check to Corran Polymers
+    answer: No adjustment
+  explanation: Lindqvist's goods were shipped FOB destination and received January 3, so Brackwell owed
+    nothing at year end. Oakhurst's goods were received December 28 under FOB shipping point terms; the
+    invoice was simply not recorded. Whitcombe & Hale's services were performed in December, so the obligation
+    existed at year end even though the bill came in January. Corran's invoice 7810 was shipped FOB shipping
+    point on December 29, so title passed in transit. Corran's credit memo for goods Brackwell returned
+    in December reduces what Brackwell owes. The December 31 check was recorded correctly; it is a timing
+    difference on Corran's statement.
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What amount should Brackwell report as accounts payable at December 31, Year 2?
+  answer: 61484000
+  explanation: Subledger $581,340 + Oakhurst $18,450 + Whitcombe & Hale $7,200 + Corran invoice 7810 $13,750
+    − Corran credit memo $5,900 = $614,840. Including Lindqvist's FOB destination invoice gives $624,640;
+    adding back the check in the mail gives $631,040. The January service contract and the January Ferris
+    invoice are Year 3 liabilities, and the December Ferris invoice is already recorded.
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: By what net amount must Brackwell adjust its general ledger accounts payable control account?
+    Enter a decrease as a negative number.
+  answer: 5610000
+  explanation: 'The control account ($558,740) is also understated by the $22,600 cash-on-delivery payment
+    debited to it; that purchase never created a payable. Correct balance $614,840 − $558,740 = $56,100:
+    the four findings, net $33,500, plus $22,600.'
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: By what net amount must Brackwell adjust its accounts payable subledger? Enter a decrease as
+    a negative number.
+  answer: 3350000
+  explanation: $18,450 + $7,200 + $13,750 − $5,900 = $33,500. The cash-on-delivery error was in the general
+    ledger only.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: After the adjustments, what balance should Brackwell's subledger show for Corran Polymers at
+    December 31, Year 2?
+  answer: 5675000
+  explanation: Corran's statement $72,950 − Brackwell's check in transit to Corran $16,200 = $56,750,
+    which agrees with Brackwell's $48,900 + invoice 7810 $13,750 − credit memo $5,900.

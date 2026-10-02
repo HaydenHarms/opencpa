@@ -1,0 +1,116 @@
+id: far-tbs-equity-method-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Investments (Equity method investments)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 323-10-35 (equity method: share of earnings from the date significant influence is obtained,
+    basis differences, dividends, OCI)'
+  - ASC 323-10-35-7 to 35-10 (intra-entity profits in assets still held by the investor)
+  - ASC 350-20 (equity method goodwill is not amortized)
+  notes: FAR simulations batch 03. Written from scratch; every number computed in code.
+title: Equity method investment over two years
+scenario: On April 1, Year 1, Hartwell Corp., a public company, paid $1,890,000 for 30% of the common
+  stock of Bexley Inc., which gives Hartwell significant influence over Bexley. Hartwell accounts for
+  the investment by the equity method and has not elected the fair value option. Both companies have calendar
+  years. Use the exhibits; ignore income taxes, and round every amount to the nearest dollar.
+exhibits:
+- title: 'Exhibit 1: Purchase price analysis, April 1, Year 1'
+  body: '| Item | Amount |
+
+    |---|---|
+
+    | Bexley''s net assets at book value | $4,800,000 |
+
+    | Inventory: fair value in excess of book value (all sold to Bexley''s customers by December, Year
+    1) | $150,000 |
+
+    | Warehouse: fair value in excess of book value (remaining life 20 years, straight-line) | $600,000
+    |
+
+    | Patent: fair value in excess of book value (remaining life 5 years, straight-line) | $240,000 |
+
+    | Land: Hartwell''s valuation found fair value equal to book value. (An appraisal Bexley obtained
+    for its lender, on a replacement-cost basis, showed $310,000 more.) | — |
+
+    | Any remaining excess of cost | Goodwill |'
+- title: 'Exhibit 2: Bexley''s reported results'
+  body: '|  | Year 1 | Year 2 |
+
+    |---|---|---|
+
+    | Net income, full year | $920,000 | $1,040,000 |
+
+    | Net income, April 1 – December 31 | $700,000 | — |
+
+    | Other comprehensive income (unrealized gains (losses) on debt securities); Year 1 is April 1 – December
+    31 | $60,000 | ($40,000) |
+
+    | Cash dividends declared and paid | $200,000 (November) | $260,000 (October) |'
+- title: 'Exhibit 3: Hartwell''s purchases from Bexley'
+  body: 'Bexley sells components to Hartwell at its usual gross margin of 30% of selling price. Hartwell
+    bought $400,000 of components from Bexley in Year 1 (all after April 1); $90,000 of them, at Hartwell''s
+    cost, were in Hartwell''s inventory at December 31, Year 1, and were used in production in Year 2.
+    Of Hartwell''s Year 2 purchases from Bexley, $50,000 at Hartwell''s cost were in its inventory at
+    December 31, Year 2.
+
+
+    Hartwell''s broker values its Bexley shares at $2,110,000 at December 31, Year 1, and $2,275,000 at
+    December 31, Year 2.'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount of goodwill is implicit in Hartwell's investment at April 1, Year 1?
+  answer: 15300000
+  explanation: 'Cost $1,890,000 − 30% of book value $1,440,000 − 30% of the excess fair values: inventory
+    $45,000, warehouse $180,000, patent $72,000 = $153,000. Hartwell''s valuation puts the land at book
+    value, so there is no land basis difference; the lender''s replacement-cost appraisal is not fair
+    value.'
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What equity in Bexley's earnings should Hartwell report for Year 1?
+  answer: 13935000
+  explanation: 30% of Bexley's April–December income $210,000 − basis-difference amortization $62,550
+    (inventory $45,000, all sold in Year 1; warehouse $180,000 ÷ 20 × 9/12; patent $72,000 ÷ 5 × 9/12)
+    − 30% of the profit in components Hartwell still holds, $90,000 × 30% × 30% = $8,100. Equity in earnings
+    = $139,350. Using Bexley's full-year income gives $205,350; eliminating all the unrealized profit
+    rather than Hartwell's 30% gives $120,450.
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the carrying amount of Hartwell's investment in Bexley at December 31, Year 1?
+  answer: 198735000
+  explanation: $1,890,000 + equity in earnings $139,350 + 30% of OCI $18,000 − dividends $60,000 = $1,987,350.
+    Dividends reduce the investment; they are not income. The broker's value is not used under the equity
+    method.
+- id: t4
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What equity in Bexley's earnings should Hartwell report for Year 2?
+  answer: 29220000
+  explanation: 30% of $1,040,000 = $312,000 − amortization $23,400 (warehouse $9,000, patent $14,400;
+    goodwill is not amortized) + Year 1 profit now realized $8,100 − profit in components held at year
+    end, $50,000 × 30% × 30% = $4,500. Total $292,200. Forgetting to recognize the Year 1 deferral gives
+    $284,100.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the carrying amount of Hartwell's investment in Bexley at December 31, Year 2?
+  answer: 218955000
+  explanation: $1,987,350 + $292,200 + 30% of OCI ($12,000) − dividends $78,000 = $2,189,550.

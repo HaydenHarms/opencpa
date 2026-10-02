@@ -1,0 +1,138 @@
+id: far-tbs-inventory-measurement-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 330-10-30 (inventory cost, including freight-in)
+  - ASC 330-10-35-1B (lower of cost and net realizable value for inventory measured using FIFO or average
+    cost)
+  - ASC 330-10-35 (applying the measurement test to individual items, categories or the total inventory)
+  - ASC 606-10-55-79 to 55-80 (consignment arrangements)
+  notes: FAR simulations batch 03. Written from scratch; every number computed in code.
+title: Year 2 inventory costing and measurement
+scenario: Pellworth Outfitters Co. sells camping equipment in three product lines and closes its books
+  on December 31, Year 2. It uses FIFO for tents and stoves and the periodic weighted-average method for
+  fuel canisters, and it applies its year-end inventory measurement test to each product line as a whole
+  (the category level), as its accounting policy states. The exhibits show the year's purchase records,
+  the year-end count and market data. No adjustment has been recorded for any item in the exhibits. Round
+  each amount to the nearest dollar, and do not round the weighted-average unit cost before multiplying.
+exhibits:
+- title: 'Exhibit 1: Year 2 purchase records'
+  body: '| Product line (method) | Date | Units | Unit cost |
+
+    |---|---|---|---|
+
+    | Tents (FIFO) | Beginning inventory | 120 | $84.00 |
+
+    | Tents (FIFO) | March 9 purchase | 300 | $88.00 |
+
+    | Tents (FIFO) | July 22 purchase | 260 | $91.00 |
+
+    | Tents (FIFO) | November 3 purchase | 180 | $95.00 |
+
+    | Tents (FIFO) | November 20 return to supplier (from the November 3 purchase) | (20) | $95.00 |
+
+    | Stoves (FIFO) | Beginning inventory | 200 | $41.00 |
+
+    | Stoves (FIFO) | April 14 purchase | 450 | $43.00 |
+
+    | Stoves (FIFO) | October 2 purchase | 300 | $46.00 |
+
+    | Fuel canisters (weighted average, periodic) | Beginning inventory | 2,400 | $5.10 |
+
+    | Fuel canisters (weighted average, periodic) | February purchase | 6,000 | $5.30 |
+
+    | Fuel canisters (weighted average, periodic) | June purchase | 5,000 | $5.55 |
+
+    | Fuel canisters (weighted average, periodic) | September purchase | 4,600 | $5.80 |
+
+
+    Freight-in of $1,800 was paid on the June canister purchase and charged to a freight expense account.
+    Units sold during Year 2: tents 590, stoves 640, fuel canisters 14,100.'
+- title: 'Exhibit 2: December 31, Year 2 physical count'
+  body: '| Product line | Units counted | Count notes |
+
+    |---|---|---|
+
+    | Tents | 250 | All saleable. |
+
+    | Stoves | 310 | 30 units in the October 2 lot were water-damaged in a roof leak in December and can
+    only be sold as seconds. |
+
+    | Fuel canisters | 4,800 | Includes 900 canisters Ridgeline Supply shipped to Pellworth on consignment;
+    Pellworth sells them for Ridgeline on commission. |'
+- title: 'Exhibit 3: Year-end market data'
+  body: '| Product line | Expected selling price per unit | Costs to sell per unit | Current replacement
+    cost per unit |
+
+    |---|---|---|---|
+
+    | Tents | $128.00 | $14.00 | $90.00 |
+
+    | Stoves (undamaged) | $52.00 | $8.00 | $44.00 |
+
+    | Stoves (damaged, sold as seconds) | $30.00 | $6.00 | — |
+
+    | Fuel canisters | $6.20 | $0.90 | $5.40 |
+
+
+    Pellworth''s normal profit margin is 25% of selling price. Selling prices are those expected in the
+    ordinary course of business in January, Year 3.'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the cost of Pellworth's tent inventory at December 31, Year 2?
+  answer: 2339000
+  explanation: 'Units on hand: 860 acquired − 20 returned − 590 sold = 250. FIFO leaves the latest costs:
+    160 × $95 + 90 × $91 = $23,390. The 20 returned tents come out of the November 3 layer, leaving 160
+    at $95.'
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is the cost of Pellworth's fuel canister inventory at December 31, Year 2?
+  answer: 2172500
+  explanation: Pellworth owns 18,000 − 14,100 = 3,900 canisters; the 900 consigned canisters belong to
+    Ridgeline. Cost of goods available = purchases at invoice cost $98,470 + freight-in $1,800 (a cost
+    of bringing the goods to their location) = $100,270, for an average of about $5.5706 per canister.
+    3,900 × $100,270 ÷ 18,000 = $21,725. Leaving out freight gives $21,335; counting the consigned goods
+    gives $26,739; a simple average of the four unit prices gives $21,206.
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the net realizable value of Pellworth's stove inventory at December 31, Year 2?
+  answer: 1304000
+  explanation: 'Undamaged: 280 × ($52 − $8) = $12,320. Damaged: 30 × ($30 − $6) = $720. Total $13,040.
+    Replacement cost is not part of NRV.'
+- id: t4
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What total inventory write-down should Pellworth recognize at December 31, Year 2?
+  answer: 224500
+  explanation: 'By product line, cost against NRV: Tents $23,390 against $28,500; Stoves $14,230 against
+    $13,040; Fuel canisters $21,725 against $20,670. Tents need no write-down (NRV is higher); stoves
+    are written down $1,190 and fuel canisters $1,055, a total of $2,245. FIFO and average-cost inventories
+    use the lower of cost and NRV, not the lower of cost or market, so replacement cost and the normal
+    profit margin don''t enter. Comparing total cost $59,345 with total NRV $62,210 would show no write-down,
+    but Pellworth''s policy is the product-line level.'
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount should Pellworth report as inventory in its December 31, Year 2, balance sheet?
+  answer: 5710000
+  explanation: Tents at cost $23,390 + stoves at NRV $13,040 + fuel canisters at NRV $20,670 = $57,100.

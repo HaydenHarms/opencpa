@@ -1,0 +1,143 @@
+id: far-tbs-ppe-rollforward-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 360-10-30 (cost of PP&E: costs to bring an asset to the condition and location for its intended
+    use)'
+  - ASC 360-10-35 (depreciation)
+  - 'ASC 845-10-30 (nonmonetary exchanges: fair value and commercial substance)'
+  - 'ASC 360-10-40 (derecognition: gain or loss on disposal)'
+  notes: FAR simulations batch 03. Written from scratch; every number computed in code.
+title: Year 2 equipment rollforward review
+scenario: Garroway Freight Co. owns trucks and trailers. Its staff accountant drafted the Year 2 rollforward
+  of the equipment account and its accumulated depreciation (Exhibit 1). You are reviewing it against
+  the supporting documents (Exhibit 2). Garroway uses the straight-line method and takes a full month
+  of depreciation in the month an asset is acquired and none in the month it is disposed of. The January
+  1 balances are correct, and the staff's depreciation figure for equipment held all year is correct.
+  Round every amount to the nearest dollar.
+exhibits:
+- title: 'Exhibit 1: Draft rollforward prepared by the staff accountant'
+  body: '|  | Equipment, at cost | Accumulated depreciation |
+
+    |---|---|---|
+
+    | Balance, January 1, Year 2 | 4,860,000 | 1,934,000 |
+
+    | Additions | 251,100 |  |
+
+    | Depreciation expense |  | 556,450 |
+
+    | Disposals | (111,500) | (181,550) |
+
+    | Balance, December 31, Year 2 | 4,999,600 | 2,308,900 |
+
+
+    The staff''s notes: additions are the tractor (invoice and registration) and the flatbed trailer (the
+    old trailer''s book value plus the cash paid); disposals are the refrigerated trailer at cost and
+    the April sale at its proceeds. No gain or loss was recorded on either disposal. Depreciation on the
+    tractor is a full year, as for all assets bought during the year.'
+- title: 'Exhibit 2: Supporting documents'
+  body: '| Date | Document | Detail |
+
+    |---|---|---|
+
+    | April 1 | Bill of sale | Sold a tractor (cost $142,000; accumulated depreciation at January 1, Year
+    2, $118,000; depreciation $14,200 a year) for $15,500 cash. |
+
+    | July 1 | Exchange agreement with Coyle Trailer Sales | Garroway traded its refrigerated trailer
+    (cost $96,000; accumulated depreciation at January 1, Year 2, $54,000; 8-year life, no residual value)
+    plus $27,000 cash for a new flatbed trailer. An independent appraiser Garroway engaged valued the
+    refrigerated trailer at $38,000 on that date; Coyle''s advertised list price for flatbeds of this
+    model is $78,000; dealers in the region commonly sell them at 10% to 20% below list. The flatbed hauls
+    steel and lumber under a new three-year construction-materials contract; the refrigerated trailer
+    hauled produce for grocery customers. The flatbed has a 10-year life and no residual value. |
+
+    | October 1 | Dealer invoice, Kestrel Truck Center | New tractor $186,000; dealer preparation and
+    installation of the federally required electronic logging device and USDOT identification markings
+    $9,400 (charged to repairs expense); Year 2–3 registration and road tax $2,100, covering October 1,
+    Year 2, to September 30, Year 3. The tractor has a 6-year life and no residual value. |
+
+    | November 30 | Disposal form | Scrapped a fully depreciated loading dolly (cost $61,000); no proceeds.
+    No entry was made. |
+
+    | December 31 | Depreciation schedule | Depreciation on equipment held all year (excluding the assets
+    above): $512,400. The insurer''s December appraisal values the fleet at $3,410,000. |'
+tasks:
+- id: t1
+  type: select
+  points: 2
+  prompt: For each item, indicate how Garroway should account for it in its equipment records for Year
+    2.
+  options:
+  - Add to equipment cost
+  - Charge to expense or a prepaid asset
+  - Remove from equipment and accumulated depreciation
+  - No entry
+  rows:
+  - id: r1
+    label: 'Kestrel invoice: dealer preparation, logging device and USDOT markings'
+    answer: Add to equipment cost
+  - id: r2
+    label: 'Kestrel invoice: registration and road tax'
+    answer: Charge to expense or a prepaid asset
+  - id: r3
+    label: Loading dolly scrapped November 30
+    answer: Remove from equipment and accumulated depreciation
+  - id: r4
+    label: Insurer's December appraisal of the fleet
+    answer: No entry
+  explanation: Preparing a new tractor for service is part of the cost of getting it ready for its intended
+    use, so the preparation, the required logging device and the USDOT markings (the tractor can't legally
+    operate without them) are capitalized (the staff expensed them). The registration buys the right to
+    operate the tractor for twelve months, so it is a prepaid operating cost, not equipment (the staff
+    capitalized it). The scrapped dolly must come out of both accounts even though it is fully depreciated.
+    PP&E is carried at cost less depreciation, so an appraisal changes nothing.
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What should Garroway report as equipment, at cost, at December 31, Year 2?
+  answer: 482140000
+  explanation: $4,860,000 + tractor $186,000 + preparation, logging device and markings $9,400 + flatbed
+    $65,000 (the refrigerated trailer's fair value $38,000 + cash $27,000; the exchange has commercial
+    substance because the flatbed's cash flows, from a new contract and different customers, differ significantly
+    from the refrigerated trailer's) − refrigerated trailer $96,000 − tractor sold $142,000 − dolly $61,000
+    = $4,821,400. The registration is a prepaid operating cost, and the flatbed's list price is not evidence
+    of fair value when the trade-in's appraised value is available.
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is Garroway's depreciation expense on equipment for Year 2?
+  answer: 53334200
+  explanation: Assets held all year $512,400 + tractor $195,400 ÷ 6 × 3/12 = $8,142 + flatbed $65,000
+    ÷ 10 × 6/12 = $3,250 + refrigerated trailer to June 30, $12,000 × 6/12 = $6,000 + tractor sold, $14,200
+    × 3/12 = $3,550. Total $533,342.
+- id: t4
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What should Garroway report as accumulated depreciation on equipment at December 31, Year 2?
+  answer: 222479200
+  explanation: $1,934,000 + depreciation $533,342 − refrigerated trailer $60,000 ($54,000 + $6,000) −
+    tractor sold $121,550 ($118,000 + $3,550) − dolly $61,000 = $2,224,792.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What net gain or loss on equipment disposals should Garroway report for Year 2? Enter a net
+    loss as a negative number.
+  answer: -295000
+  explanation: 'Exchange: fair value $38,000 − book value $36,000 ($96,000 − $60,000) = gain $2,000. Sale:
+    $15,500 − book value $20,450 = loss $4,950. The dolly was fully depreciated and scrapped for nothing:
+    no gain or loss. Net ($2,950).'

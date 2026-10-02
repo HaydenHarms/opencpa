@@ -1,0 +1,133 @@
+id: far-tbs-bonds-payable-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 835-30-35 (interest method: amortization of discount)'
+  - 'ASC 470-50-40 (extinguishment of debt: gain or loss is the difference between the reacquisition price
+    and the net carrying amount)'
+  notes: FAR simulations batch 03. Written from scratch; every number computed in code.
+title: 'Bonds payable: issue, interest and a partial retirement'
+scenario: Halvard Corp. issued bonds on January 1, Year 1 (Exhibit 1). It amortizes discount or premium
+  by the effective interest method and keeps a separate discount or premium account. On October 1, Year
+  2, it bought back part of the issue in the open market (Exhibit 3) and cancelled the bonds. Round every
+  amount to the nearest dollar at each step, and compute interest for part of a period by prorating the
+  period's effective interest by months.
+exhibits:
+- title: 'Exhibit 1: Bond terms (from the indenture)'
+  body: '| Term | Detail |
+
+    |---|---|
+
+    | Face amount | $2,400,000 |
+
+    | Stated rate | 5% a year, paid each June 30 and December 31 |
+
+    | Dated and issued | January 1, Year 1 |
+
+    | Maturity | December 31, Year 8 |
+
+    | Call provision | Callable at Halvard''s option at 102 on any interest date after December 31, Year
+    3 |
+
+    | Market yield at issue | 6% a year, compounded semiannually |'
+- title: 'Exhibit 2: Present value factors (3% per period)'
+  body: '| Factor | 8 periods | 16 periods |
+
+    |---|---|---|
+
+    | Present value of 1 | 0.78941 | 0.62317 |
+
+    | Present value of an ordinary annuity of 1 | 7.01969 | 12.56110 |
+
+
+    At 2.5% per period, the present value of 1 for 16 periods is 0.67362 and of an ordinary annuity of
+    1 is 13.05500.'
+- title: 'Exhibit 3: Broker''s confirmation, October 1, Year 2'
+  body: 'Halvard purchased $960,000 face amount of its 5% bonds due Year 8 at 98, plus accrued interest
+    from July 1. Settlement $952,800: principal $940,800, accrued interest $12,000. The bonds were delivered
+    to the trustee for cancellation.'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: At what amount should Halvard record the bonds on January 1, Year 1?
+  answer: 224927400
+  explanation: '16 semiannual periods at 3%: $2,400,000 × 0.62317 = $1,495,608, plus interest $60,000
+    × 12.56110 = $753,666, a total of $2,249,274 (a discount of $150,726). The 2.5% factors would discount
+    at the stated rate.'
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is Halvard's interest expense on the bonds for Year 1?
+  answer: 13518100
+  explanation: 'June 30: $2,249,274 × 3% = $67,478; the carrying amount rises by $7,478 to $2,256,752.
+    December 31: $2,256,752 × 3% = $67,703. Total $135,181, against cash interest of $120,000.'
+- id: t3
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What gain or loss should Halvard recognize on the October 1, Year 2, retirement? Enter a loss
+    as a negative number.
+  answer: -3021000
+  explanation: 'Carrying amount at June 30, Year 2: $2,272,389; the retired 40% is $908,956. Interest
+    to October 1 on that portion: $908,956 × 3% × 3/6 = $13,634, of which $12,000 is paid in cash, so
+    the carrying amount rises to $910,590. Reacquisition price $940,800 (the accrued interest is not part
+    of it). Net carrying amount $910,590 − reacquisition price $940,800 = ($30,210), a loss of $30,210.
+    Skipping the July–September amortization gives ($31,844); the call price doesn''t apply to an open-market
+    purchase (using it gives ($68,610)).'
+- id: t4
+  type: journal_entry
+  points: 2
+  prompt: Prepare Halvard's journal entry on October 1, Year 2, for the interest to that date on the bonds
+    retired and their retirement, as a single entry.
+  accounts:
+  - Bonds payable
+  - Discount on bonds payable
+  - Premium on bonds payable
+  - Interest expense
+  - Interest payable
+  - Cash
+  - Gain on extinguishment of debt
+  - Loss on extinguishment of debt
+  answer:
+  - account: Bonds payable
+    debit: 96000000
+    credit: 0
+  - account: Interest expense
+    debit: 1363400
+    credit: 0
+  - account: Discount on bonds payable
+    debit: 0
+    credit: 5104400
+  - account: Cash
+    debit: 0
+    credit: 95280000
+  - account: Loss on extinguishment of debt
+    debit: 3021000
+    credit: 0
+  explanation: 'Debit bonds payable for the face retired, $960,000, and interest expense for July–September,
+    $13,634. Credit the whole discount on those bonds at July 1, $960,000 − $908,956 = $51,044: $1,634
+    of it is the July–September amortization and the remaining $49,410 is removed with the bonds. Credit
+    cash for the settlement, $940,800 + $12,000 accrued interest = $952,800. The difference is the loss
+    on extinguishment, $30,210.'
+- id: t5
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is Halvard's interest expense on the bonds for Year 2?
+  answer: 12247100
+  explanation: 'January–June on all the bonds: $2,264,455 × 3% = $67,934. July–September on the retired
+    40%: $13,634. July–December on the 60% still outstanding: ($2,272,389 − $908,956) × 3% = $40,903.
+    Total $122,471.'
