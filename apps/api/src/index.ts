@@ -9,19 +9,17 @@ import {
   gradeSimulation,
   masteryByArea,
   masteryByTopic,
-  newCard,
   ratingFor,
   ratingForScore,
-  review,
   selectDiagnosticItems,
   selectPracticeItems,
   simulationCount,
-  type Card,
-  type GradeResult,
 } from '@opencpa/engine';
 import { byId, items, mcqs, simulations } from './content';
 import { auth, originAllowed, sessionUser, type Env } from './auth';
 import { handleMcp, hashToken, newToken } from './mcp';
+import { cardFor, saveAttempt, taskResponse } from './attempts';
+import { exams } from './exams';
 import {
   checkSession,
   completeIfDone,
@@ -139,6 +137,9 @@ app.use('/me/*', async (c, next) => {
   await next();
 });
 
+/** Mock exams. See `src/exams.ts`. */
+app.route('/me/exams', exams);
+
 const attemptBody = z.object({
   itemId: z.string(),
   selected: z.string().regex(/^[A-F]$/),
@@ -165,11 +166,10 @@ app.post('/me/attempts', async (c) => {
   const result = gradeMcq(version, selected);
   const now = new Date();
 
-  const row = await c.env.DB.prepare('SELECT * FROM review_cards WHERE user_id = ? AND item_id = ?')
-    .bind(userId, itemId)
-    .first<CardRow>();
-  const card = review(
-    row ? rowToCard(row) : newCard(now),
+  const card = await cardFor(
+    c.env.DB,
+    userId,
+    itemId,
     ratingFor(result.correct, lowConfidence),
     now,
   );
@@ -196,23 +196,6 @@ app.post('/me/attempts', async (c) => {
   });
 });
 
-const cents = z.number().int().nonnegative();
-const taskResponse = z.discriminatedUnion('type', [
-  z.object({ type: z.literal('numeric'), value: z.number().finite() }),
-  z.object({
-    type: z.literal('journal_entry'),
-    lines: z
-      .array(z.object({ account: z.string(), debit: cents.optional(), credit: cents.optional() }))
-      .max(20),
-  }),
-  z.object({ type: z.literal('research'), citation: z.string().max(100) }),
-  z.object({
-    type: z.literal('select'),
-    choices: z
-      .record(z.string().max(300))
-      .refine((c) => Object.keys(c).length <= 50, 'at most 50 rows'),
-  }),
-]);
 const simulationAttemptBody = z.object({
   responses: z.record(taskResponse),
   durationMs: z.number().int().nonnegative().optional(),
@@ -231,11 +214,10 @@ app.post('/me/simulations/:id/attempts', async (c) => {
   if ('error' in check) return c.json({ error: check.error }, check.status);
   const result = gradeSimulation(item, responses);
   const now = new Date();
-  const row = await c.env.DB.prepare('SELECT * FROM review_cards WHERE user_id = ? AND item_id = ?')
-    .bind(userId, item.id)
-    .first<CardRow>();
-  const card = review(
-    row ? rowToCard(row) : newCard(now),
+  const card = await cardFor(
+    c.env.DB,
+    userId,
+    item.id,
     ratingForScore(result.possible ? result.earned / result.possible : 0),
     now,
   );
@@ -646,6 +628,7 @@ app.delete('/me/account', async (c) => {
     byUser('attempts'),
     byUser('review_cards'),
     byUser('practice_sessions'),
+    byUser('exams'),
     byUser('connector_tokens'),
     byUser('auth_sessions'),
     db
@@ -657,87 +640,5 @@ app.delete('/me/account', async (c) => {
   ]);
   return c.json({ deleted: true });
 });
-
-/** Record one attempt and the item's updated review card in a single batch. */
-function saveAttempt(
-  db: D1Database,
-  userId: string,
-  item: Item,
-  response: unknown,
-  result: GradeResult,
-  durationMs: number | undefined,
-  card: Card,
-  sessionId?: string,
-  variant = 0,
-) {
-  return db.batch([
-    db
-      .prepare(
-        `INSERT INTO attempts (user_id, item_id, section, area, response, earned, possible, correct, duration_ms, session_id, variant)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-      )
-      .bind(
-        userId,
-        item.id,
-        item.blueprint.section,
-        item.blueprint.area,
-        JSON.stringify(response),
-        result.earned,
-        result.possible,
-        result.correct ? 1 : 0,
-        durationMs ?? null,
-        sessionId ?? null,
-        variant,
-      ),
-    db
-      .prepare(
-        `INSERT INTO review_cards (user_id, item_id, due, stability, difficulty, elapsed_days, scheduled_days, reps, lapses, state, last_review)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-       ON CONFLICT(user_id, item_id) DO UPDATE SET
-         due = excluded.due, stability = excluded.stability, difficulty = excluded.difficulty,
-         elapsed_days = excluded.elapsed_days, scheduled_days = excluded.scheduled_days,
-         reps = excluded.reps, lapses = excluded.lapses, state = excluded.state, last_review = excluded.last_review`,
-      )
-      .bind(
-        userId,
-        item.id,
-        card.due.getTime(),
-        card.stability,
-        card.difficulty,
-        card.elapsed_days,
-        card.scheduled_days,
-        card.reps,
-        card.lapses,
-        card.state,
-        card.last_review?.getTime() ?? null,
-      ),
-  ]);
-}
-
-type CardRow = {
-  due: number;
-  stability: number;
-  difficulty: number;
-  elapsed_days: number;
-  scheduled_days: number;
-  reps: number;
-  lapses: number;
-  state: number;
-  last_review: number | null;
-};
-
-function rowToCard(r: CardRow): Card {
-  return {
-    due: new Date(r.due),
-    stability: r.stability,
-    difficulty: r.difficulty,
-    elapsed_days: r.elapsed_days,
-    scheduled_days: r.scheduled_days,
-    reps: r.reps,
-    lapses: r.lapses,
-    state: r.state,
-    last_review: r.last_review ? new Date(r.last_review) : undefined,
-  } as Card;
-}
 
 export default app;

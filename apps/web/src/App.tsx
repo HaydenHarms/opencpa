@@ -2,6 +2,7 @@ import { Link, NavLink, Navigate, Route, Routes } from 'react-router-dom';
 import AccountPage, { SigninDone, SigninEmail, useAuthStatus } from './pages/Account';
 import Claude from './pages/Claude';
 import { Privacy, Terms } from './pages/Legal';
+import ExamPage, { ExamReportPage } from './pages/Exam';
 import Home from './pages/Home';
 import {
   LegacySimulationRedirect,
@@ -34,6 +35,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/practice" element={<Practice />} />
+          <Route path="/exam/:section" element={<ExamPage />} />
+          <Route path="/exam/:section/:id" element={<ExamReportPage />} />
           <Route path="/simulations" element={<Navigate to="/library" replace />} />
           <Route path="/simulations/:id" element={<LegacySimulationRedirect />} />
           <Route path="/library" element={<LibraryHome />} />

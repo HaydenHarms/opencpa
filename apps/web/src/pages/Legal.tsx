@@ -21,7 +21,9 @@ export function Privacy() {
       <ul>
         <li>
           <b>Your study activity:</b> the questions and simulations you answer, what you answered,
-          your score, how long you took, your practice sessions and your review schedule.
+          your score, how long you took, your practice sessions and your review schedule. For mock
+          exams, also your saved answers and flags, and the exam's timing (when you started, breaks
+          and pauses).
         </li>
         <li>
           <b>A random device ID</b> kept in your browser, which links that activity to you while
@@ -48,7 +50,8 @@ export function Privacy() {
       </ul>
       <p>
         The site uses your browser’s local storage for the device ID, the sign-in token and small
-        preferences such as your last-chosen exam section. It doesn’t use cookies.
+        preferences such as your last-chosen exam section and the choices you struck out in a mock
+        exam. It doesn’t use cookies.
       </p>
 
       <h2>How we use it</h2>
@@ -87,9 +90,9 @@ export function Privacy() {
       <p>
         We keep your data until you delete it. On the <Link to="/account">Account page</Link> you
         can delete your account, or, if you’re not signed in, this device’s data. Deleting removes
-        your answers, review schedule, sessions, Claude connector link and sign-ins right away, and
-        it can’t be undone. You can also ask us to delete or export your data through the contact
-        below.
+        your answers, review schedule, sessions, mock exams, Claude connector link and sign-ins
+        right away, and it can’t be undone. You can also ask us to delete or export your data
+        through the contact below.
       </p>
 
       <h2>Security</h2>

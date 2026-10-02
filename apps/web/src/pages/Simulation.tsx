@@ -333,6 +333,8 @@ export default function Simulation() {
 /**
  * Work through and submit one simulation. Inside a practice session it is given the
  * session id, and the previous result when the student comes back to a finished one.
+ * In a mock exam it gets `onResponses` instead: there is no Submit button and no feedback,
+ * and every change is handed back for the exam to save.
  */
 export function SimulationPlayer({
   sim,
@@ -340,18 +342,26 @@ export function SimulationPlayer({
   sessionId,
   previous,
   onSubmitted,
+  initialResponses,
+  onResponses,
 }: {
   sim: PublicTbs;
   crumb: ReactNode;
   sessionId?: string;
   previous?: SimulationReveal;
   onSubmitted?: (r: SimulationResult) => void;
+  /** Mock exam: the responses saved so far. */
+  initialResponses?: Record<string, TaskResponse>;
+  /** Mock exam: called with the current responses whenever they change. */
+  onResponses?: (responses: Record<string, TaskResponse>) => void;
 }) {
   const [error, setError] = useState<string | null>(null);
   const [current, setCurrent] = useState(0);
   const [exhibit, setExhibit] = useState(0);
   const [drafts, setDrafts] = useState<Record<string, Draft>>(() =>
-    Object.fromEntries(sim.tasks.map((t) => [t.id, draftFrom(t, previous?.responses[t.id])])),
+    Object.fromEntries(
+      sim.tasks.map((t) => [t.id, draftFrom(t, (previous?.responses ?? initialResponses)?.[t.id])]),
+    ),
   );
   const [result, setResult] = useState<SimulationReveal | null>(previous ?? null);
   const [submitting, setSubmitting] = useState(false);
@@ -364,13 +374,26 @@ export function SimulationPlayer({
   const taskResult = result?.tasks.find((t) => t.id === task.id);
   const answered = sim.tasks.filter((t) => toResponse(t, drafts[t.id] ?? emptyDraft())).length;
 
-  async function submit() {
-    if (!sim) return;
+  function collect() {
     const responses: Record<string, TaskResponse> = {};
     for (const t of sim.tasks) {
       const r = toResponse(t, drafts[t.id] ?? emptyDraft());
       if (r) responses[t.id] = r;
     }
+    return responses;
+  }
+
+  // Mock exam: hand each change back to be saved (not the initial state, which is already saved).
+  const changed = useRef(false);
+  useEffect(() => {
+    if (!onResponses) return;
+    if (changed.current) onResponses(collect());
+    changed.current = true;
+  }, [drafts]);
+
+  async function submit() {
+    if (!sim) return;
+    const responses = collect();
     setSubmitting(true);
     try {
       const r = await api.submitSimulation(
@@ -492,7 +515,11 @@ export function SimulationPlayer({
             </div>
           </article>
 
-          {!result ? (
+          {onResponses ? (
+            <p className="muted">
+              {answered} of {sim.tasks.length} tasks answered. Your work is saved as you go.
+            </p>
+          ) : !result ? (
             <button className="button" disabled={submitting} onClick={submit}>
               {submitting
                 ? 'Grading…'

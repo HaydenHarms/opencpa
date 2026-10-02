@@ -132,7 +132,8 @@ async function consume(db: D1Database, kind: string, token: string): Promise<Tok
  * Move an anonymous device's progress into an account, then delete the device row.
  * Attempts and practice sessions move as they are. Where both have a review card for the
  * same item, the more recently reviewed one wins. Where both have an unfinished session for
- * the same section (or Library topic), the older one is abandoned. The device's Claude
+ * the same section (or Library topic), the older one is abandoned, and the same for unfinished
+ * mock exams in the same section. The device's Claude
  * connector link moves too, unless the account already has one.
  * Does nothing unless `from` is an anonymous device row.
  */
@@ -155,6 +156,14 @@ export async function mergeInto(db: D1Database, from: string, to: string) {
            AND p.topic IS practice_sessions.topic AND p.created_at > practice_sessions.created_at)`,
     ),
     run('UPDATE practice_sessions SET user_id = ?2 WHERE user_id = ?1'),
+    run(
+      `UPDATE exams SET status = 'abandoned', finished_at = unixepoch() * 1000
+       WHERE user_id IN (?1, ?2) AND status = 'active' AND EXISTS (
+         SELECT 1 FROM exams e
+         WHERE e.user_id IN (?1, ?2) AND e.user_id != exams.user_id
+           AND e.status = 'active' AND e.section = exams.section AND e.started_at > exams.started_at)`,
+    ),
+    run('UPDATE exams SET user_id = ?2 WHERE user_id = ?1'),
     run('UPDATE attempts SET user_id = ?2 WHERE user_id = ?1'),
     run(
       `INSERT INTO review_cards (user_id, item_id, due, stability, difficulty, elapsed_days, scheduled_days, reps, lapses, state, last_review)

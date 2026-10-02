@@ -22,12 +22,13 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 - **Blueprint-aligned content.** Every question and simulation is tagged to the AICPA blueprint by section, content area, topic and skill level, and every item passes an independent review before it's served.
 - **Adaptive review.** Spaced repetition (FSRS) schedules individual questions, and results roll up into a mastery map by blueprint area.
 - **Study with Claude.** Add OpenCPA as a connector in your own Claude account, and Claude can look up the question you just answered and explain it, using the official rationale. It explains; it never grades.
+- **Mock exams.** A full-length, timed FAR exam in the real format: 5 testlets (25 and 25 questions, then 2, 3 and 2 simulations), a 4-hour clock kept by the server, the optional 15-minute break, flags, strike-outs and locked testlets, plus a pause button for studying at home. Nothing is graded until the end; the report scores multiple choice and simulations 50/50 and breaks results down by area, topic and skill.
 - **Accounts.** Sign in with GitHub to keep your progress on every device; whatever you did before signing in moves into your account. Signing in is optional, and you can delete your account (or a device's data) at any time.
 
 **Planned**
 
 - **More FAR simulations,** to 50 across all three blueprint areas (21 so far), then simulations for the other sections.
-- **Exam-day mode.** Timed testlets modeled on the real exam interface, with a calculator, flag-for-review, and a literature panel.
+- **A literature panel** for simulations, with research tasks.
 - **Email sign-in** (a one-time link, no password), once the site has its own domain.
 - **Advanced settings** for weighting practice toward your strengths or weaknesses.
 
@@ -67,6 +68,7 @@ opencpa/
 - [x] Task-based simulations (journal-entry grid, numeric, research, select)
 - [x] Library: browse by exam and topic, topic practice, question archive
 - [x] Library search: finds related topics and questions, not just exact wording (synonyms, ASC numbers, typos)
+- [x] Mock exams: timed FAR exam in the real testlet format, with a score report
 - [x] Two or more reviewed questions for every FAR blueprint task (318 questions)
 - [ ] Finish FAR: 50 simulations across all three areas (21 done), skill mix inside the blueprint ranges
 - [ ] Remaining sections, in reviewed batches (BAR, then AUD and REG, then ISC and TCP)

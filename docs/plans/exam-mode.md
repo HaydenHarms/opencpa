@@ -15,6 +15,8 @@ Three phases, each shippable on its own: **A** the practice tabs, **B** exam mod
 
 ## Phase B: exam mode
 
+**Done 2026-10-02.** As designed below, with one change: exams live in their own `exams` table (migration `0009_exams`) instead of `practice_sessions` plus `exam_state`, so practice queries didn't need an exam filter. Pages: `/exam/:section` (intro, the exam) and `/exam/:section/:id` (the report). Code: `packages/engine/src/exam.ts`, `apps/api/src/exams.ts`, `apps/web/src/pages/Exam.tsx`. Items from earlier mock exams are used only once fresh ones run out, even across areas, so the 21 FAR simulations give three exams with no repeat. The connector withholds every item of an unfinished exam, including ones answered earlier in Practice.
+
 ### What the student gets
 
 A **Mock exam** entry on the Practice page, with a short page on what to expect, then the exam:
@@ -56,10 +58,9 @@ Today `POST /me/attempts` grades and reveals at once. Exam mode can't use it, or
 
 ### Data
 
-Migration `0008`:
+Migration `0009_exams` (as built; the first draft extended `practice_sessions`):
 
-- `practice_sessions.kind` gains `'exam'`.
-- A new `exam_state` table, keyed by session id: the testlet layout (item ids per testlet), the current testlet, the start time, break start and end, pause start and total paused time (with a pause count), and the saved responses and flags per item as JSON. Time used is the time since starting, less the break (up to 15 minutes) and pauses.
+- A new `exams` table, one row per exam: the testlet layout (item ids per testlet), the current testlet, the start time, break start and end, pause start and total paused time (with a pause count), and the saved responses and flags per item as JSON. Time used is the time since starting, less the break (up to 15 minutes) and pauses.
 - Starting a new exam abandons an unfinished one (after a confirmation in the UI); its submitted testlets still count toward mastery.
 
 ### Size

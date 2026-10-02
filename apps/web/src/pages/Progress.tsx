@@ -1,16 +1,19 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { api, type LibrarySection, type Mastery } from '../api';
+import { api, type ExamSummary, type LibrarySection, type Mastery } from '../api';
+import { ExamHistory } from './Exam';
 
 export default function Progress() {
   const [rows, setRows] = useState<Mastery[] | null>(null);
   const [library, setLibrary] = useState<LibrarySection[] | null>(null);
+  const [exams, setExams] = useState<ExamSummary[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fail = (e: Error) => setError(e.message);
     api.mastery().then(setRows, fail);
     api.library().then(setLibrary, fail);
+    api.examHistory().then(setExams, () => setExams([]));
   }, []);
 
   if (error) return <p className="error">Couldn’t load progress: {error}</p>;
@@ -58,6 +61,13 @@ export default function Progress() {
           })}
         </tbody>
       </table>
+
+      {exams.length > 0 && (
+        <>
+          <h2>Mock exams</h2>
+          <ExamHistory rows={exams} />
+        </>
+      )}
 
       <h2>Mastery by blueprint area</h2>
       <table className="mastery">

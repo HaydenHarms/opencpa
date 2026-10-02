@@ -248,6 +248,97 @@ export interface SearchDoc {
   refs: string[];
 }
 
+/** The real exam's format: testlets of questions or simulations, the clock and the break. */
+export interface ExamLayout {
+  testlets: { kind: 'mcq' | 'tbs'; count: number }[];
+  minutes: number;
+  breakAfter: number;
+  breakMinutes: number;
+}
+
+/** The exam clock as the server last reported it. Times are ms. */
+export interface ExamClock {
+  limitMs: number;
+  usedMs: number;
+  remainingMs: number;
+  paused: boolean;
+  onBreak: boolean;
+  breakRemainingMs: number;
+  pausedMs: number;
+  pauses: number;
+  breakTaken: boolean;
+  breakAvailable: boolean;
+}
+
+/** A saved exam response: the choice picked, or a simulation's task responses. */
+export type ExamResponse = { selected: string } | Record<string, TaskResponse>;
+
+/** A mock exam in progress. Only the open testlet's items are sent, and none while paused. */
+export interface Exam {
+  id: string;
+  section: string;
+  status: 'active' | 'finished' | 'abandoned';
+  endedBy: 'submitted' | 'time' | null;
+  current: number;
+  layout: ExamLayout;
+  testlets: { kind: 'mcq' | 'tbs'; count: number; submitted: boolean; usedMs: number | null }[];
+  clock: ExamClock;
+  serverTime: number;
+  items: (PublicMcq | PublicTbs)[] | null;
+  responses: Record<string, ExamResponse>;
+  flags: string[];
+}
+
+export interface ExamSummary {
+  id: string;
+  section: string;
+  startedAt: number;
+  finishedAt: number | null;
+  endedBy: 'submitted' | 'time' | null;
+  mcq: { right: number; total: number };
+  sim: { earned: number; possible: number };
+  mcqPct: number;
+  simPct: number;
+  combined: number;
+  usedMs: number;
+  pausedMs: number;
+  pauses: number;
+}
+
+export interface ExamStatus {
+  layout: ExamLayout | null;
+  questions: number;
+  simulations: number;
+  /** Simulations not yet used in one of the student's mock exams. */
+  freshSimulations: number;
+  active: { id: string; startedAt: number; current: number; clock: ExamClock } | null;
+  history: ExamSummary[];
+}
+
+/** A report row: questions right of total, and simulation points earned of possible. */
+export interface ExamTally {
+  name: string;
+  right: number;
+  total: number;
+  earned: number;
+  possible: number;
+  weight?: number | null;
+}
+
+export interface ExamReport extends ExamSummary {
+  layout: ExamLayout;
+  testlets: Exam['testlets'];
+  byArea: ExamTally[];
+  byTopic: ExamTally[];
+  bySkill: ExamTally[];
+  review: {
+    item: PublicMcq | PublicTbs;
+    flagged: boolean;
+    answered: boolean;
+    result: Revealed | SimulationReveal;
+  }[][];
+}
+
 const q = (params: Record<string, string | undefined>) => {
   const s = new URLSearchParams(
     Object.entries(params).filter((e): e is [string, string] => !!e[1]),
@@ -298,6 +389,34 @@ export const api = {
   simulations: (section?: string) =>
     call<PublicTbs[]>(`/simulations${section ? `?section=${section}` : ''}`),
   simulation: (id: string) => call<PublicTbs>(`/simulations/${encodeURIComponent(id)}`),
+  examStatus: (section: string) => call<ExamStatus>(`/me/exams/current${q({ section })}`),
+  examHistory: () => call<ExamSummary[]>('/me/exams'),
+  startExam: (section: string) =>
+    call<Exam>('/me/exams', { method: 'POST', body: JSON.stringify({ section }) }),
+  exam: (id: string) => call<Exam>(`/me/exams/${id}`),
+  saveExam: (
+    id: string,
+    testlet: number,
+    responses: Record<string, ExamResponse>,
+    flags: string[],
+  ) =>
+    call<{ saved: true; clock: ExamClock }>(`/me/exams/${id}/responses`, {
+      method: 'PUT',
+      body: JSON.stringify({ testlet, responses, flags }),
+    }),
+  submitTestlet: (
+    id: string,
+    testlet: number,
+    responses: Record<string, ExamResponse>,
+    flags: string[],
+  ) =>
+    call<Exam>(`/me/exams/${id}/submit`, {
+      method: 'POST',
+      body: JSON.stringify({ testlet, responses, flags }),
+    }),
+  examAction: (id: string, action: 'pause' | 'resume' | 'break/start' | 'break/end') =>
+    call<Exam>(`/me/exams/${id}/${action}`, { method: 'POST' }),
+  examReport: (id: string) => call<ExamReport>(`/me/exams/${id}/report`),
   submitSimulation: (
     id: string,
     responses: Record<string, TaskResponse>,

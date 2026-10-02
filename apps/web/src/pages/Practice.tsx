@@ -4,6 +4,7 @@ import type { PublicMcq, PublicTbs } from '@opencpa/schema';
 import {
   api,
   SECTIONS,
+  type ExamStatus,
   type Revealed,
   type Session,
   type SessionOption,
@@ -25,11 +26,14 @@ export default function Practice() {
   const [status, setStatus] = useState<SessionStatus | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [exam, setExam] = useState<ExamStatus | null>(null);
 
   function load(s: string) {
     setStatus(null);
     setSession(null);
     setError(null);
+    setExam(null);
+    api.examStatus(s).then(setExam, () => setExam(null));
     api.currentSession(s).then((st) => {
       setStatus(st);
       setSession(st.session);
@@ -71,6 +75,7 @@ export default function Practice() {
       {error && <p className="error">Couldn’t reach the API: {error}</p>}
       {!status && !error && <p className="muted">Loading…</p>}
       {status && !session && <StartPanel section={section} status={status} onStart={start} />}
+      {status && !session && exam?.layout && <MockExamCard section={section} exam={exam} />}
       {session && (
         <SessionRunner
           key={session.id}
@@ -139,6 +144,23 @@ export function StartPanel({
           </button>
         ))}
       </div>
+    </article>
+  );
+}
+
+/** The way into a mock exam, from the Practice page. */
+function MockExamCard({ section, exam }: { section: string; exam: ExamStatus }) {
+  return (
+    <article className="card mock-card">
+      <h2>Mock exam</h2>
+      <p className="muted">
+        {exam.active
+          ? `You have a ${section} mock exam in progress (testlet ${exam.active.current + 1} of ${exam.layout!.testlets.length}).`
+          : `A full-length, timed ${section} exam in the real format: ${exam.layout!.testlets.length} testlets, ${exam.layout!.minutes / 60} hours, scored at the end.`}
+      </p>
+      <Link className="button" to={`/exam/${section}`}>
+        {exam.active ? 'Resume the mock exam' : 'About the mock exam'}
+      </Link>
     </article>
   );
 }

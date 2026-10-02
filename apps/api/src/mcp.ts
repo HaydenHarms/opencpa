@@ -21,6 +21,7 @@ import {
 } from '@opencpa/schema';
 import { masteryByArea, masteryByTopic } from '@opencpa/engine';
 import { byId } from './content';
+import { activeExamItems } from './exams';
 import {
   reveal,
   revealSimulation,
@@ -36,7 +37,8 @@ const INSTRUCTIONS = `OpenCPA is a free CPA exam study site. The student practic
 - Before an attempt you only get the public question. Help with hints and the relevant concept, but don't work out or reveal the answer unless the student asks you to.
 - After an attempt you get the answer key, the rationale for every choice and the official explanation. Explain why the student's choice was wrong (or right), using that material.
 - OpenCPA grades answers; you don't. If you think a key is wrong, say so and explain why, but don't tell the student they were marked unfairly without checking the rationale.
-- Cite ASC/GASB topics the way the explanation does. Don't invent paragraph numbers.`;
+- Cite ASC/GASB topics the way the explanation does. Don't invent paragraph numbers.
+- Items in a mock exam the student hasn't finished are withheld until it ends, as on the real exam.`;
 
 type Attempt = {
   item_id: string;
@@ -168,17 +170,29 @@ function buildServer(db: D1Database, userId: string) {
       annotations: { readOnlyHint: true },
     },
     async ({ count }) => {
-      const { results } = await db
-        .prepare(
-          'SELECT item_id, response, correct, earned, possible, created_at, variant FROM attempts WHERE user_id = ? ORDER BY created_at DESC, id DESC LIMIT ?',
-        )
-        .bind(userId, count ?? 1)
-        .all<Attempt>();
-      const out = results.flatMap((a) => {
-        const item = byId.get(a.item_id);
-        return item ? [attemptDetail(item, a)] : [];
+      const [{ results }, inExam] = await Promise.all([
+        db
+          .prepare(
+            'SELECT item_id, response, correct, earned, possible, created_at, variant FROM attempts WHERE user_id = ? ORDER BY created_at DESC, id DESC LIMIT 50',
+          )
+          .bind(userId)
+          .all<Attempt>(),
+        activeExamItems(db, userId),
+      ]);
+      // Nothing about an item in an unfinished mock exam, or Claude could give away its key.
+      const out = results
+        .filter((a) => !inExam.has(a.item_id))
+        .slice(0, count ?? 1)
+        .flatMap((a) => {
+          const item = byId.get(a.item_id);
+          return item ? [attemptDetail(item, a)] : [];
+        });
+      if (out.length) return text(out);
+      return text({
+        message: inExam.size
+          ? 'Nothing to show: the student’s recent answers are in a mock exam that isn’t finished. Its items are withheld until it ends.'
+          : 'The student has not answered anything yet.',
       });
-      return text(out.length ? out : { message: 'The student has not answered anything yet.' });
     },
   );
 
@@ -230,6 +244,11 @@ function buildServer(db: D1Database, userId: string) {
     async ({ id }) => {
       const item = byId.get(id);
       if (!item) return text({ error: `No item with id ${id}.` });
+      if ((await activeExamItems(db, userId)).has(id))
+        return text({
+          withheld: true,
+          note: 'This item is in a mock exam the student hasn’t finished. It is withheld until the exam ends.',
+        });
       const a = await db
         .prepare(
           'SELECT item_id, response, correct, earned, possible, created_at, variant FROM attempts WHERE user_id = ? AND item_id = ? ORDER BY created_at DESC, id DESC LIMIT 1',
