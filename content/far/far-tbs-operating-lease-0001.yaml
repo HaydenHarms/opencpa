@@ -1,0 +1,169 @@
+id: far-tbs-operating-lease-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 842-20-30-1 and 30-5 (initial measurement of the lease liability and right-of-use asset; incentives;
+    initial direct costs)
+  - ASC 842-10-30-2 and 842-10-15-37 (initial direct costs; combining lease and nonlease components)
+  - 'ASC 842-10-30-5 and 842-10-35-5 (variable payments that depend on an index: initial measurement and
+    remeasurement)'
+  - ASC 842-10-35-1 and 35-4 (reassessing the lease term; updating the discount rate)
+  - ASC 842-20-25-6, 25-8 and 35-3 through 35-5 (operating lease cost; remaining cost after remeasurement)
+  notes: FAR simulations batch 04. Written from scratch; every number computed in code.
+title: 'Operating lease of production space: two years and a remeasurement'
+scenario: Kerrow Precision Parts closes its books each December 31. Exhibit 1 summarizes its lease of
+  production space, Exhibit 2 gives information from the first two years, and Exhibit 3 gives present
+  value factors. Kerrow makes any reassessment of the lease as of December 31, Year 2. Treat December
+  31 and the following January 1 as the same date for discounting. Round every amount to the nearest dollar,
+  including interest each year.
+exhibits:
+- title: 'Exhibit 1: Lease summary'
+  body: '| Term | Detail |
+
+    |---|---|
+
+    | Premises | Production space in a multi-tenant industrial building, leased by Kerrow Precision Parts,
+    a public business entity, from Stellan Properties |
+
+    | Term | 5 years from January 1, Year 1, noncancelable. Kerrow may renew once for 3 more years by
+    giving notice before January 1, Year 5. |
+
+    | Rent | Paid each January 1 in advance. The Year 1 rent is $120,000. Each later year''s rent through
+    Year 5 is $120,000 × (the consumer price index at the preceding December 31 ÷ 100.0, the index at
+    commencement). Rent during the renewal term is fixed at $132,000 a year. |
+
+    | Common area maintenance | Kerrow reimburses Stellan for its share of the building''s actual maintenance
+    costs each year. |
+
+    | Incentive | Stellan paid Kerrow $40,000 in cash at commencement to induce it to sign the lease.
+    |
+
+    | Costs of signing | Kerrow paid a leasing broker a $6,000 commission that was owed only because the
+    lease was signed. Kerrow''s in-house legal staff spent time reviewing the lease that Kerrow values
+    at $3,500. |'
+- title: 'Exhibit 2: Lease information, Years 1 and 2'
+  body: '| Date or period | Information |
+
+    |---|---|
+
+    | January 1, Year 1 | Kerrow classified the lease as an operating lease and concluded that it was
+    not reasonably certain to renew: the renewal rent was expected to approximate market, and Kerrow had
+    no significant improvements in the space. Kerrow''s incremental borrowing rate was 6%; Stellan''s
+    implicit rate is not known to Kerrow. |
+
+    | Consumer price index | December 31, Year 1: 103.5. December 31, Year 2: 106.0. |
+
+    | Common area maintenance billed and paid | Year 1: $18,600. Year 2: $21,300. |
+
+    | Year 2 | Kerrow built a clean room in the space at a cost of $480,000, completed December 20, Year
+    2. The clean room has a 10-year useful life and cannot be removed; building another one elsewhere
+    would cost about $520,000. Kerrow''s board approved the clean room on a plan to operate it in this
+    space through at least Year 8. Market rent for comparable space is now about $165,000 a year. |
+
+    | December 31, Year 2 | Kerrow''s incremental borrowing rate is now 7%. |
+
+    | Policy elections | For leases of real estate, Kerrow accounts for each lease component and its nonlease
+    components together as a single lease component. |'
+- title: 'Exhibit 3: Present value factors'
+  body: 'Present value of an annuity due of 1 (payments at the start of each period):
+
+
+    | Periods | 6% | 7% |
+
+    |---|---|---|
+
+    | 3 | 2.83339 | 2.80802 |
+
+    | 5 | 4.46511 | 4.38721 |
+
+    | 6 | 5.21236 | 5.10020 |
+
+    | 8 | 6.58238 | 6.38929 |'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount should Kerrow recognize as its right-of-use asset at commencement on January 1,
+    Year 1?
+  answer: 50181300
+  explanation: 'Lease liability: $120,000 × 4.46511 = $535,813 (rounded), the present value of five payments
+    due in advance at 6%, measured with the index at commencement. Right-of-use asset: $535,813 − the
+    $40,000 incentive received + the $6,000 broker''s commission = $501,813. The in-house legal time is
+    not incremental, so it is not an initial direct cost (including it gives $505,313).'
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What total lease cost should Kerrow recognize for Year 1?
+  answer: 13180000
+  explanation: 'Straight-line single lease cost: (5 × $120,000 − $40,000 + $6,000) ÷ 5 = $113,200. Because
+    Kerrow combines lease and nonlease components, the common area maintenance payments are variable lease
+    payments, recognized as variable lease cost when incurred: $18,600. Total $113,200 + $18,600 = $131,800.'
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the carrying amount of Kerrow's right-of-use asset at December 31, Year 1?
+  answer: 41356200
+  explanation: 'Liability after the January 1 payment: $535,813 − $120,000 = $415,813; Year 1 accretion
+    at 6% = $24,949 (rounded). The asset''s amortization is the single lease cost less the accretion:
+    $113,200 − $24,949 = $88,251. $501,813 − $88,251 = $413,562.'
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What total lease cost should Kerrow recognize for Year 2?
+  answer: 13870000
+  explanation: Single lease cost $113,200. The January 1, Year 2, rent is $120,000 × 103.5/100.0 = $124,200;
+    the $4,200 above the $120,000 in the lease liability is variable lease cost, since an index change
+    alone doesn't trigger remeasurement. Common area maintenance $21,300. Total $113,200 + $4,200 + $21,300
+    = $138,700. Leaving out the index increase gives $134,500.
+- id: t5
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What lease liability should Kerrow report at December 31, Year 2?
+  answer: 65974800
+  explanation: 'Building a costly, immovable clean room is a significant event within Kerrow''s control
+    that makes renewal reasonably certain, so Kerrow reassesses the lease term to eight years and remeasures
+    the liability for the six remaining payments, with an updated 7% rate. The remeasurement updates the
+    index-based payments to the current index: $120,000 × 106.0/100.0 = $127,200 for Years 3–5, then $132,000
+    for Years 6–8. Liability = $127,200 × 2.80802 + $132,000 × (5.10020 − 2.80802) = $659,748 (rounded).
+    Keeping the 6% rate gives $674,431; keeping the $120,000 payments gives $639,530. Before remeasurement
+    the liability was $340,008.'
+- id: t6
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the carrying amount of Kerrow's right-of-use asset at December 31, Year 2?
+  answer: 63934800
+  explanation: 'Before remeasurement: Year 2 accretion is ($440,762 − $120,000) × 6% = $19,246 (rounded),
+    so the liability is $340,008 and the asset is $413,562 − ($113,200 − $19,246) = $319,608. The remeasurement
+    adjusts the asset by the change in the liability, $659,748 − $340,008 = $319,740: $319,608 + $319,740
+    = $639,348.'
+- id: t7
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What single (straight-line) lease cost should Kerrow recognize for Year 3? Exclude variable
+    lease cost.
+  answer: 12620000
+  explanation: After a remeasurement, the remaining cost is spread straight-line over the remaining term.
+    Remaining cost = remaining lease payments + right-of-use asset − lease liability = ($381,600 + $396,000)
+    + $639,348 − $659,748 = $757,200, over 6 years = $126,200 (rounded). Equivalently, total lease payments
+    ($120,000 × 2 + $777,600 − $40,000 incentive) + $6,000 initial direct costs − $226,400 cost recognized
+    in Years 1–2, over 6 years.

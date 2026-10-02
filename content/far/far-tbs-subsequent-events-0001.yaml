@@ -1,0 +1,159 @@
+id: far-tbs-subsequent-events-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 855-10 (recognized and nonrecognized subsequent events; evaluation through the date the statements
+    are issued)
+  - 'ASC 470-10-45-11 (callable obligations: covenant waivers obtained before issuance)'
+  - ASC 470-10-45-14 (short-term obligations refinanced after the balance sheet date)
+  - 'ASC 360-10-35-43 (long-lived assets held for sale: fair value less cost to sell)'
+  - 'ASC 260-10-55-12 (stock splits after the period end: retroactive adjustment of EPS)'
+  - ASC 420-10 (exit costs recognized when incurred)
+  notes: FAR simulations batch 04. Written from scratch; every number computed in code.
+title: Year 1 subsequent events review
+scenario: Penwortham Fixtures Inc., a public company that makes refrigerated display cases, filed its
+  December 31, Year 1, financial statements with the SEC on March 12, Year 2. Exhibit 1 shows amounts
+  from the staff's draft, prepared in early January, Year 2, before any of the events in Exhibit 2 were
+  considered. Exhibit 2 is the controller's log of documents received after year end. Ignore income taxes.
+  Round dollar amounts to the nearest dollar and earnings per share to the nearest cent.
+exhibits:
+- title: 'Exhibit 1: Draft amounts, December 31, Year 1'
+  body: '| Item | Amount |
+
+    |---|---|
+
+    | Net income, Year 1 | 1,742,000 |
+
+    | Common shares outstanding, January 1 through December 31, Year 1 (no other issuances or repurchases)
+    | 400,000 |
+
+    | Current liabilities: accounts payable and accrued liabilities | 1,860,000 |
+
+    | Current liabilities: note payable to Brannock Bank, due June 30, Year 2 | 1,000,000 |
+
+    | Current liabilities: term loan from Calder Trust (see note) | 2,400,000 |
+
+    | Total current liabilities | 5,260,000 |
+
+    | Equipment held for sale (classified as held for sale on November 30, Year 1, when its carrying amount
+    was below its fair value less cost to sell, estimated then at $655,000) | 640,000 |
+
+
+    Note on the term loan: the loan is repayable in installments of $300,000 each December 31 from Year
+    2 through Year 9. At December 31, Year 1, Penwortham''s debt service coverage ratio was below the
+    minimum in the loan agreement, which allows Calder Trust to demand immediate repayment of the whole
+    loan. The staff therefore classified all $2,400,000 as current.'
+- title: 'Exhibit 2: Controller''s log of documents received, Year 2'
+  body: '| Date (Year 2) | Document | Summary |
+
+    |---|---|---|
+
+    | January 9 | Purchase agreement | Penwortham bought the commercial lighting division of Tellwood
+    Electric for $3,100,000 in cash. |
+
+    | January 18 | Letter from Ostler Foods | Ostler reports that the display cases Penwortham shipped
+    on December 18, Year 1 (invoice $168,000, unpaid), do not meet the refrigeration specification in
+    Ostler''s order. Penwortham''s engineers confirmed that the cases left the factory that way. |
+
+    | January 28 | Board minutes | The board approved a plan, announced to employees on February 2, to
+    close the Wrexley plant in June, Year 2. Severance under the plan will total $260,000. |
+
+    | February 3 | Credit memo | Penwortham agreed to a $42,000 price reduction on the December 18 invoice,
+    and Ostler is keeping the cases. |
+
+    | February 10 | Bond indenture | Penwortham issued $1,500,000 of 10-year bonds to refinance the Brannock
+    Bank note. |
+
+    | February 12 | Letter from Calder Trust | Calder Trust waives the December 31, Year 1, covenant violation
+    and gives up any right to demand repayment because of it, or because of any other covenant violation,
+    before March 31, Year 3. The installment schedule is unchanged. |
+
+    | February 14 | Bill of sale and broker''s statement | The equipment held for sale was sold for $575,000;
+    the broker''s commission is 3% of the price. The buyer''s offer, made January 10, was based on an
+    inspection of the equipment as it stood at year end; prices for similar used equipment did not change
+    between November and February. |
+
+    | February 15 | Bank statement | The Brannock Bank note was repaid in full with the bond proceeds.
+    |
+
+    | February 20 | Board minutes | The board declared a 2-for-1 stock split, distributed on March 2.
+    |
+
+    | March 20 | Complaint | A customer sued Penwortham for $125,000, alleging that a cooler Penwortham
+    installed in October, Year 1, caused a fire in its store in December, Year 1. |'
+tasks:
+- id: t1
+  type: select
+  points: 2
+  prompt: For each event, indicate how Penwortham should reflect it in its Year 1 financial statements,
+    as filed on March 12, Year 2.
+  options:
+  - Recognize in the Year 1 statements
+  - Disclose in the notes only
+  - Not reflected in the Year 1 statements
+  rows:
+  - id: r1
+    label: Acquisition of Tellwood's lighting division (January 9)
+    answer: Disclose in the notes only
+  - id: r2
+    label: Ostler Foods price reduction (February 3)
+    answer: Recognize in the Year 1 statements
+  - id: r3
+    label: Wrexley plant closing and severance (January 28)
+    answer: Disclose in the notes only
+  - id: r4
+    label: Evidence from the sale of the equipment held for sale (February 14)
+    answer: Recognize in the Year 1 statements
+  - id: r5
+    label: Customer suit over the December store fire (March 20)
+    answer: Not reflected in the Year 1 statements
+  explanation: The acquisition and the plant closing arise from decisions made after year end; they are
+    nonrecognized subsequent events, disclosed because they are material (the severance is a Year 2 exit
+    cost under ASC 420-10). The price reduction settles a dispute over goods that did not meet the order
+    when they were shipped in December, so it gives evidence about a condition that existed at year end
+    and reduces Year 1 revenue and the receivable. The sale, at a price based on the equipment as it stood
+    at year end in an unchanged market, is evidence of its fair value at December 31, so the held-for-sale
+    equipment is written down. A public company evaluates subsequent events through the date it issues
+    (files) its statements; the March 20 suit came after March 12, so it is not reflected, even though
+    the fire occurred in Year 1.
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What net income should Penwortham report for Year 1?
+  answer: 161775000
+  explanation: 'Revenue falls by the $42,000 price reduction. The held-for-sale equipment is written down
+    to fair value less cost to sell: $575,000 − $17,250 commission (3% × $575,000) = $557,750, a loss
+    of $640,000 − $557,750 = $82,250. Net income: $1,742,000 − $42,000 − $82,250 = $1,617,750. The acquisition,
+    the bond issue, the plant closing and the split don''t change Year 1 net income.'
+- id: t3
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What total current liabilities should Penwortham report at December 31, Year 1?
+  answer: 216000000
+  explanation: 'The term loan: Calder Trust''s waiver, obtained before the statements were issued, gives
+    up the right to demand repayment for more than one year after the balance sheet date, so only the
+    $300,000 installment due December 31, Year 2, is current (ASC 470-10-45-11). The Brannock note: bonds
+    were issued to refinance it after year end and before issuance, so it is excluded from current liabilities
+    (ASC 470-10-45-14); the long-term bonds were issued before the note was repaid. Current liabilities:
+    $1,860,000 + $300,000 = $2,160,000. Leaving the note current gives $3,160,000; the draft''s $5,260,000
+    ignores both events.'
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 0
+  prompt: What basic earnings per share should Penwortham report for Year 1?
+  answer: 202
+  explanation: 'A stock split after year end but before issuance is applied retroactively in EPS: 400,000
+    × 2 = 800,000 shares. EPS = $1,617,750 ÷ 800,000 = $2.0222, rounded to $2.02. Ignoring the split gives
+    $4.04; using the draft net income gives $2.18.'

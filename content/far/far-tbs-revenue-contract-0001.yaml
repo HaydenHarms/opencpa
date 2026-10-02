@@ -1,0 +1,162 @@
+id: far-tbs-revenue-contract-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 606-10-25-14 through 25-22 (identifying performance obligations; distinct goods and services;
+    set-up activities)
+  - ASC 606-10-32-28 through 32-41 (allocating the transaction price on relative standalone selling prices;
+    estimation methods)
+  - ASC 606-10-25-23 through 25-37 (satisfaction at a point in time and over time; measuring progress)
+  - ASC 606-10-55-30 through 55-35 (assurance-type warranties)
+  - ASC 606-10-45-1 through 45-4 (contract assets and contract liabilities)
+  notes: FAR simulations batch 04. Written from scratch; every number computed in code.
+title: Imaging equipment contract with installation, training and maintenance
+scenario: Stannard Imaging Systems, a calendar-year company, manufactures MRI scanners. Exhibit 1 summarizes
+  its contract with Pellew Valley Hospital, Exhibit 2 gives Stannard's pricing data, and Exhibit 3 lists
+  what happened under the contract in Year 1. The contract has no significant financing component, and
+  the price is not subject to any discounts, refunds or other variable amounts. Round every amount to
+  the nearest dollar.
+exhibits:
+- title: 'Exhibit 1: Contract summary'
+  body: '| Term | Detail |
+
+    |---|---|
+
+    | Parties and date | Stannard Imaging Systems and Pellew Valley Hospital, signed January 20, Year
+    1 |
+
+    | Scanner | One SX-7 MRI scanner, with its operating software installed. The scanner cannot operate
+    without the software, and the software runs only on Stannard scanners; Stannard does not sell or license
+    it separately. |
+
+    | Site survey | Before delivery, Stannard''s engineers will inspect the hospital''s imaging suite
+    to plan the delivery route and installation. The survey report is for Stannard''s use and is not given
+    to the hospital. |
+
+    | Installation | Stannard will install the scanner and test it. The installation is standard and does
+    not modify the scanner; several independent firms are qualified to install SX-7 scanners. |
+
+    | Training | A 10-session course for the hospital''s technicians, scheduled at the hospital''s request.
+    |
+
+    | Maintenance | Preventive maintenance and on-call repair for 3 years from acceptance of the installation.
+    Stannard stands ready to respond throughout the term. Neither party may cancel the maintenance before
+    the end of the term. |
+
+    | Warranty | Stannard''s standard warranty that the scanner will operate as specified for one year
+    from acceptance, the same warranty it gives every buyer. It covers repairs of defects only. |
+
+    | Price and payment | $1,705,000 for the scanner, installation and training, due on acceptance of
+    the installation; $138,000 for each year of maintenance, billed and due at the start of each maintenance
+    year. |'
+- title: 'Exhibit 2: Pricing data'
+  body: '| Item | Stannard''s pricing data |
+
+    |---|---|
+
+    | SX-7 scanner (with its software) | List price $2,050,000. Stannard regularly sells the scanner,
+    without installation, training or maintenance, at prices clustered around $1,820,000. |
+
+    | Installation | Not sold separately. Expected cost to Stannard $62,400. Independent installers charge
+    about $95,000. |
+
+    | Training course | Sold separately for $46,000. |
+
+    | Maintenance | Sold separately for $148,000 a year. |
+
+    | Policy | Where a standalone selling price is not observable, Stannard estimates it using the expected
+    cost plus a margin approach, with its normal margin of 25% on cost. Stannard measures progress on
+    training by sessions delivered. |'
+- title: 'Exhibit 3: Year 1 contract log'
+  body: '| Date (Year 1) | Event |
+
+    |---|---|
+
+    | February 2 | Site survey completed. |
+
+    | February 24 | Scanner delivered to the hospital. Title and risk of loss passed to the hospital on
+    delivery. |
+
+    | March 31 | Installation completed and accepted by the hospital. The hospital paid $1,705,000. |
+
+    | April 1 | Maintenance term began. The hospital paid $138,000 for the first maintenance year. |
+
+    | April – December | 6 of the 10 training sessions delivered; the rest are scheduled for Year 2. |'
+tasks:
+- id: t1
+  type: select
+  points: 3
+  prompt: For each promise or activity in the contract, indicate how Stannard should treat it in identifying
+    performance obligations.
+  options:
+  - A separate performance obligation
+  - Part of the scanner performance obligation
+  - Not a performance obligation
+  rows:
+  - id: r1
+    label: Operating software
+    answer: Part of the scanner performance obligation
+  - id: r2
+    label: Site survey
+    answer: Not a performance obligation
+  - id: r3
+    label: Installation
+    answer: A separate performance obligation
+  - id: r4
+    label: Training course
+    answer: A separate performance obligation
+  - id: r5
+    label: Maintenance
+    answer: A separate performance obligation
+  - id: r6
+    label: One-year warranty
+    answer: Not a performance obligation
+  explanation: 'The software is not distinct: the scanner can''t operate without it and it runs only on
+    Stannard scanners, so the two are inputs to one combined item. The site survey transfers nothing to
+    the hospital; it is a set-up activity. Installation is distinct: it is standard, doesn''t modify the
+    scanner, and other firms can perform it. Training and maintenance are sold separately and are distinct.
+    The warranty only assures that the scanner works as specified, so it is an assurance-type warranty
+    accounted for under ASC 460, not a performance obligation.'
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: How much of the transaction price should Stannard allocate to the installation?
+  answer: 6921400
+  explanation: 'Transaction price: $1,705,000 + 3 × $138,000 = $2,119,000. Standalone selling prices:
+    scanner $1,820,000 (observable; not the $2,050,000 list price), installation $62,400 × 1.25 = $78,000
+    under Stannard''s expected cost plus margin policy, training $46,000, maintenance 3 × $148,000 = $444,000;
+    total $2,388,000. Installation: $2,119,000 × 78,000 ÷ 2,388,000 = $69,214 (rounded). Using the independent
+    installers'' $95,000 gives $83,703. The discount is allocated to every obligation in proportion, because
+    nothing ties it to particular items.'
+- id: t3
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What revenue should Stannard recognize from the contract in Year 1?
+  answer: 180718400
+  explanation: 'Allocations: scanner $1,614,983, installation $69,214, training $40,818, maintenance $393,985
+    (total $2,119,000). Scanner: control passed on delivery, February 24, so all $1,614,983. Installation:
+    completed March 31, so all $69,214. Training: 6 of 10 sessions, $40,818 × 6/10 = $24,491. Maintenance:
+    9 of 36 months, $393,985 × 9/36 = $98,496 (rounded). Total $1,807,184. Recognizing all of the training
+    gives $1,823,511.'
+- id: t4
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What contract liability should Stannard report for the contract at December 31, Year 1? Enter
+    a contract asset as a negative number.
+  answer: 3581600
+  explanation: 'Consideration received in Year 1: $1,705,000 + $138,000 = $1,843,000. Revenue recognized:
+    $1,807,184. The excess, $1,843,000 − $1,807,184 = $35,816, is a contract liability: Stannard has been
+    paid for more than it has transferred. A contract is presented as a single net contract asset or contract
+    liability.'

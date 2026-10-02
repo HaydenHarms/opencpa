@@ -1,0 +1,143 @@
+id: far-tbs-nfp-contributions-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-605-25-2 and 25-8 through 25-13 (contributions; promises to give; conditional promises and
+    barriers)
+  - ASC 958-605-25-16 (contributed services)
+  - ASC 958-605-25-23 through 25-25 and 958-20 (agency transactions; transfers to a specified beneficiary)
+  - ASC 958-605-30-6 and 958-310-35 (measurement of promises to give)
+  - ASC 958-205-45 and 958-605-45-4 through 45-5 (donor restrictions; restrictions met in the same period;
+    implied time restrictions)
+  - ASC 958-225-45-17 (special events with an exchange element)
+  notes: FAR simulations batch 04. Written from scratch; every number computed in code.
+title: Year 1 contributions at a conservation not-for-profit
+scenario: Ashgrove River Conservancy, a not-for-profit entity, is preparing its Year 1 statement of activities.
+  Exhibit 1 is its development office's log of Year 1 gifts and grants, and Exhibit 2 gives its accounting
+  policies. No donor has variance power over any gift. Exhibit 1 lists every contribution and grant Ashgrove
+  received in Year 1. Round every amount to the nearest dollar.
+exhibits:
+- title: 'Exhibit 1: Development office log, Year 1'
+  body: '| Date (Year 1) | Source | Detail |
+
+    |---|---|---|
+
+    | February 10 | Halsall Foundation | Written pledge to match, dollar for dollar, gifts from other
+    donors for Ashgrove''s planned nature center received by June 30, Year 2, up to $400,000. Halsall
+    will pay the matched amount on July 15, Year 2; it owes nothing for gifts it has not matched. By December
+    31, Year 1, other donors had given $265,000 in cash for the nature center. Construction begins in
+    Year 2. |
+
+    | March 1 | State Department of Natural Resources | Grant to reimburse allowable costs of Ashgrove''s
+    Tillet Marsh restoration, up to $180,000 of costs incurred in Years 1 and 2. The state receives nothing
+    in return beyond the restoration of public land, and pays only for costs incurred. Ashgrove incurred
+    $117,500 of allowable costs in Year 1, and the state had paid $90,000 of them by December 31. |
+
+    | June 6 | Kittering Nursery | Donated native plant seedlings with a fair value of $23,400, all planted
+    in the marsh restoration in Year 1. |
+
+    | September 20 | Annual gala | 300 tickets sold at $250 each. The dinner served had a fair value of
+    $90 a guest; Ashgrove paid the caterer separately. |
+
+    | October 4 | Pellow Design | An architect designed the nature center without charge. Ashgrove would
+    otherwise have hired an architect; the fee would have been $36,000. |
+
+    | Throughout Year 1 | Community volunteers | Led weekend trail walks. At local wage rates, their time
+    was worth $21,000. |
+
+    | November 12 | Ostrander family | $50,000 in cash, which the donors directed Ashgrove to give to
+    Marlbank Food Pantry, an unrelated organization. Ashgrove may not use it for anything else, and it
+    paid Marlbank in January, Year 2. |
+
+    | December 15 | Rhona Tullis, board member | Signed, unconditional promise to give $120,000 on January
+    31, Year 3, with no use specified. Its present value, measured under Ashgrove''s policy, is $112,800.
+    |'
+- title: 'Exhibit 2: Accounting policies'
+  body: '| Policy | Detail |
+
+    |---|---|
+
+    | Restrictions met in the same year | Ashgrove reports donor-restricted contributions whose restrictions
+    are met in the year they are received as contributions without donor restrictions. |
+
+    | Promises to give | Unconditional promises due in more than one year are measured at present value;
+    promises due within one year are measured at the amount expected to be collected, without discounting.
+    Ashgrove expects to collect every promise in full. |
+
+    | Long-lived assets | Gifts restricted to acquiring or building long-lived assets are released from
+    restriction when the asset is placed in service. |'
+tasks:
+- id: t1
+  type: select
+  points: 3
+  prompt: For each item, indicate how Ashgrove should report it in its Year 1 statement of activities.
+  options:
+  - Contribution revenue without donor restrictions
+  - Contribution revenue with donor restrictions
+  - No contribution revenue in Year 1
+  rows:
+  - id: r1
+    label: Halsall Foundation pledge
+    answer: Contribution revenue with donor restrictions
+  - id: r2
+    label: State marsh restoration grant
+    answer: Contribution revenue without donor restrictions
+  - id: r3
+    label: Pellow Design architect services
+    answer: Contribution revenue without donor restrictions
+  - id: r4
+    label: Trail walk volunteers
+    answer: No contribution revenue in Year 1
+  - id: r5
+    label: Ostrander family gift for Marlbank
+    answer: No contribution revenue in Year 1
+  - id: r6
+    label: Rhona Tullis promise
+    answer: Contribution revenue with donor restrictions
+  explanation: Halsall's pledge is conditional on a barrier (matching gifts) with a right of release for
+    unmatched amounts; it becomes unconditional as each matching gift arrives, so the matched part is
+    recognized now, restricted to the nature center. The state grant is a contribution (the state receives
+    no commensurate value) conditioned on incurring allowable costs; as costs are incurred the condition
+    and the purpose restriction are met in the same year, which the policy reports as without donor restrictions.
+    The architect's services require specialized skills Ashgrove would otherwise buy and create a nonfinancial
+    asset, so they are recognized. The trail walk volunteers meet neither test. The Ostrander gift passes
+    through to a specified beneficiary, so Ashgrove is an agent and records a liability, not revenue.
+    The Tullis promise is due in a later year, so it carries an implied time restriction.
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What total contribution revenue without donor restrictions should Ashgrove report for Year 1?
+  answer: 22490000
+  explanation: 'State grant: $117,500 of costs incurred (not the $180,000 ceiling or the $90,000 paid).
+    Architect: $36,000. Seedlings: $23,400. Gala: the contribution is the ticket price less the dinner''s
+    fair value, 300 × ($250 − $90) = $48,000; the other $27,000 is exchange revenue. Total $117,500 +
+    $36,000 + $23,400 + $48,000 = $224,900. Counting the full ticket price gives $251,900.'
+- id: t3
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What total contribution revenue with donor restrictions should Ashgrove report for Year 1?
+  answer: 64280000
+  explanation: Gifts from other donors for the nature center, $265,000; Halsall's matched amount, $265,000
+    (not the $400,000 maximum, which is still conditional for the unmatched part); the Tullis promise
+    at present value, $112,800. Total $642,800. Recognizing Halsall's full pledge gives $777,800.
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What total receivables from contributions and grants should Ashgrove report at December 31,
+    Year 1?
+  answer: 40530000
+  explanation: Halsall's matched pledge $265,000 (due within one year, not discounted) + the Tullis promise
+    at present value $112,800 + the state's unpaid reimbursement $117,500 − $90,000 = $27,500; total $405,300.
+    Using the Tullis promise's face amount gives $412,500.

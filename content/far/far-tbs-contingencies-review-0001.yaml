@@ -1,0 +1,159 @@
+id: far-tbs-contingencies-review-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 450-20 (loss contingencies: accrual, ranges with no best estimate, unasserted claims, disclosure)'
+  - ASC 450-30 (gain contingencies)
+  - ASC 330-10-35-17 and 35-18 (losses on firm purchase commitments)
+  notes: FAR simulations batch 04. Written from scratch; every number computed in code.
+title: Year 1 contingencies and commitments review
+scenario: Larkhall Industrial Supply Co., a distributor of industrial pumps that costs its inventory by
+  FIFO, is finalizing its December 31, Year 1, financial statements, which have not been issued. The controller's
+  draft treatment of six matters is in Exhibit 3. Exhibit 1 is an excerpt from outside counsel's letter,
+  dated February 20, Year 2, and Exhibit 2 is from the minutes of Larkhall's board of directors. Nothing
+  relevant has happened since counsel's letter. Ignore income taxes, and round every amount to the nearest
+  dollar.
+exhibits:
+- title: 'Exhibit 1: Outside counsel''s letter (excerpt), February 20, Year 2'
+  body: '| Matter | Counsel''s comments |
+
+    |---|---|
+
+    | 1. Arrandale Paper Mills v. Larkhall (filed March, Year 1) | A paper mill alleges that a pump Larkhall
+    supplied failed and flooded its plant. Discovery is complete. We expect the jury to find for the plaintiff.
+    We estimate damages at between $340,000 and $760,000; on the evidence so far, no amount in that range
+    is a better estimate than any other. Larkhall''s insurer has denied coverage under a policy exclusion,
+    and Larkhall does not dispute the denial. |
+
+    | 2. State sales tax assessment | In November, Year 1, after auditing Larkhall''s returns for the
+    three years ended December 31, Year 0, the state''s revenue department proposed an assessment of $186,000,
+    including interest, on sales Larkhall treated as exempt. Larkhall has appealed. The appeals board
+    has upheld the department on this issue for other distributors, but has generally reduced the amounts
+    assessed. We expect Larkhall to pay between $90,000 and $186,000, with $124,000 the most likely result.
+    |
+
+    | 3. Quarrendon Holdings v. Larkhall (shareholder suit) | The plaintiff sought $2,000,000, alleging
+    that Larkhall''s Year 0 annual report misstated its backlog. The trial court dismissed the suit in
+    November, Year 1, and the plaintiff has appealed. The state''s appellate court has affirmed the dismissal
+    of every suit raising this claim in the past ten years, and we know of nothing that distinguishes
+    this one. |
+
+    | 4. Unasserted claim: warehouse injury (December 14, Year 1) | A contractor''s employee was injured
+    while installing racking in Larkhall''s Elmford warehouse. No claim has been made, but the employee''s
+    attorney has requested the incident report, and we expect a claim to be filed. Larkhall''s position
+    that the contractor controlled the work site has merit, but we cannot predict the outcome; if Larkhall
+    is found liable, damages would likely be between $150,000 and $400,000. |
+
+    | 5. Larkhall v. Haskett Castings | In December, Year 1, a jury awarded Larkhall $280,000 for defective
+    castings Haskett supplied. Haskett has appealed, and the appeal will not be heard before Year 3. |'
+- title: 'Exhibit 2: Board of directors'' minutes (excerpts)'
+  body: '| Date | Item |
+
+    |---|---|
+
+    | October 12, Year 1 | The board approved a noncancelable contract with Halvey Pumps Ltd. to buy 600
+    model HX-40 pumps at $1,850 each, for delivery in March, Year 2. Larkhall does not hedge its purchase
+    prices. |
+
+    | December 18, Year 1 | The sales director reported that a competitor''s price cuts in December have
+    lowered the market for the HX-40. Larkhall now expects to sell the pumps on the Halvey contract for
+    $1,900 each, with selling and delivery costs of $210 each, and does not expect prices to recover before
+    they are sold. Halvey''s price list for new HX-40 orders fell to $1,640 in December. |'
+- title: 'Exhibit 3: Controller''s draft treatment of contingencies and commitments'
+  body: '| Matter | Draft treatment | Amount |
+
+    |---|---|---|
+
+    | Arrandale Paper Mills suit | Accrued liability for litigation (midpoint of counsel''s range); charged
+    to Year 1 litigation expense | 550,000 |
+
+    | Sales tax assessment | Not accrued; note describes the assessment and the appeal | — |
+
+    | Quarrendon shareholder suit | Not accrued or disclosed | — |
+
+    | Warehouse injury | Not accrued; note describes the incident and counsel''s range of $150,000 to
+    $400,000 | — |
+
+    | Haskett jury award | Other receivable; gain recognized in Year 1 other income | 280,000 |
+
+    | Halvey purchase contract | Not recorded; note describes the commitment | — |'
+tasks:
+- id: t1
+  type: select
+  points: 3
+  prompt: For each matter, indicate how Larkhall should reflect it in its December 31, Year 1, financial
+    statements.
+  options:
+  - Recognize (accrue) in the statements
+  - Disclose in the notes only
+  - No recognition or disclosure required
+  rows:
+  - id: r1
+    label: Arrandale Paper Mills suit
+    answer: Recognize (accrue) in the statements
+  - id: r2
+    label: State sales tax assessment
+    answer: Recognize (accrue) in the statements
+  - id: r3
+    label: Quarrendon shareholder suit
+    answer: No recognition or disclosure required
+  - id: r4
+    label: Warehouse injury
+    answer: Disclose in the notes only
+  - id: r5
+    label: Haskett jury award
+    answer: Disclose in the notes only
+  - id: r6
+    label: Halvey purchase contract
+    answer: Recognize (accrue) in the statements
+  explanation: 'Arrandale: counsel expects a loss and gives a range, so a loss is probable and estimable;
+    accrue. Sales tax: payment of part of the assessment is probable and counsel gives a most likely amount;
+    accrue it (a non-income tax is a loss contingency under ASC 450-20). Quarrendon: after a dismissal
+    that the appellate court has affirmed in every comparable case, the chance of loss is remote; no accrual
+    or disclosure is required. Warehouse injury: an unasserted claim is disclosed when assertion is probable
+    and an unfavorable outcome is reasonably possible; counsel expects a claim but can''t predict the
+    outcome, so disclose, don''t accrue. Haskett: a jury award under appeal is a gain contingency; it
+    is not recognized until realized, but it is disclosed, with care not to mislead about its likelihood
+    (ASC 450-30-50-1). Halvey: a net loss on a firm, noncancelable, unhedged purchase commitment is recognized
+    when the goods'' expected net realizable value falls below the contract price (ASC 330-10-35-17).'
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What total liability should Larkhall report at December 31, Year 1, for the six matters?
+  answer: 56000000
+  explanation: 'Arrandale: no amount in the range is better, so accrue the minimum, $340,000 (not the
+    $550,000 midpoint). Sales tax: the most likely amount, $124,000. Halvey: the expected net realizable
+    value is $1,900 − $210 = $1,690 a pump, so the loss is 600 × ($1,850 − $1,690) = $96,000, recognized
+    as a liability for the purchase commitment (the $1,640 replacement price is not the measure; it gives
+    $126,000). Total: $340,000 + $124,000 + $96,000 = $560,000. Nothing is accrued for the warehouse injury,
+    the shareholder suit or the jury award.'
+- id: t3
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: By how much should Larkhall's draft Year 1 income before income taxes change as a result of
+    correcting the draft treatment? Enter a decrease as a negative number.
+  answer: -29000000
+  explanation: 'The draft charged $550,000 to Year 1 and recognized a $280,000 gain. The correct Year
+    1 losses are $560,000, so expenses rise by $560,000 − $550,000 = $10,000, and the gain is reversed.
+    Change: −$10,000 − $280,000 = ($290,000).'
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: Using the top of each range counsel gives, what total loss in excess of the amounts accrued
+    is reasonably possible and must be disclosed in Larkhall's notes?
+  answer: 88200000
+  explanation: 'Arrandale: $760,000 − $340,000 accrued = $420,000. Sales tax: $186,000 − $124,000 accrued
+    = $62,000. Warehouse injury (nothing accrued): $400,000. Total $882,000. Omitting the sales tax excess
+    gives $820,000; the remote shareholder suit is excluded.'
