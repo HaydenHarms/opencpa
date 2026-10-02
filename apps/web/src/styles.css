@@ -45,6 +45,10 @@ body {
   padding: 20px 0;
   border-bottom: 1px solid var(--line);
   margin-bottom: 32px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
 }
 .nav a {
   color: var(--muted);
@@ -215,7 +219,7 @@ body {
   }
   .sim-exhibits {
     position: sticky;
-    top: 16px;
+    top: 84px;
   }
 }
 .sim-exhibits {
