@@ -18,6 +18,8 @@ export type SessionRow = {
   kind: 'diagnostic' | 'practice';
   /** Set for a Library session scoped to one blueprint topic; null for a whole-section session. */
   topic: string | null;
+  /** Practice keeps questions and simulations apart; a Library topic session mixes them. */
+  mode: 'questions' | 'simulations' | 'mixed';
   status: 'active' | 'completed' | 'abandoned';
   item_ids: string;
   /** JSON array of the version served for each item, parallel to item_ids; null means all 0. */
@@ -152,6 +154,7 @@ export async function sessionView(db: D1Database, row: SessionRow) {
     section: row.section,
     kind: row.kind,
     topic: row.topic ?? null,
+    mode: row.mode,
     status: row.status,
     createdAt: row.created_at,
     completedAt: row.completed_at,

@@ -6,6 +6,8 @@ Three phases, each shippable on its own: **A** the practice split, **B** exam mo
 
 ## Phase A: split Practice into Questions and Simulations
 
+**Done 2026-10-02** (migration `0007_session_modes`; see `docs/history.md`).
+
 The Practice page gets two tabs under the section tabs: **Questions** and **Simulations**.
 
 - **Questions:** today's sessions with no simulations mixed in (10, 25 or 50 questions). The diagnostic becomes questions only.

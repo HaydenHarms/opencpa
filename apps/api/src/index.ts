@@ -283,46 +283,80 @@ app.get('/me/mastery', async (c) => {
  * Practice sessions. The server picks the questions (`packages/engine/src/selection.ts`),
  * and progress is the set of attempts tagged with the session id, so a student can
  * leave and come back.
+ *
+ * Practice keeps questions and simulations apart, as the exam does (`mode` 'questions' or
+ * 'simulations', each with its own active session). A Library topic session keeps both
+ * kinds ('mixed'), since it drills one topic rather than one exam format.
  */
 const sectionSchema = z.enum(['FAR', 'AUD', 'REG', 'BAR', 'ISC', 'TCP']);
+const modeSchema = z.enum(['questions', 'simulations']);
+type Mode = SessionRow['mode'];
+
+const SESSION_LENGTHS = [10, 25, 50];
+const SIMULATION_LENGTHS = [1, 2, 3];
+
+/** The session lengths on offer for a pool of `poolSize` items. */
+function lengthsFor(poolSize: number, steps: number[]) {
+  const lengths = steps.filter((n) => n < poolSize);
+  if (poolSize) lengths.push(Math.min(poolSize, steps[steps.length - 1]!));
+  return [...new Set(lengths)];
+}
 
 app.get('/me/sessions/current', async (c) => {
   const section = sectionSchema.safeParse(c.req.query('section')?.toUpperCase());
   if (!section.success) return c.json({ error: 'unknown section' }, 400);
-  const userId = c.get('userId');
   const topic = c.req.query('topic') || null;
+  const requested = modeSchema.safeParse(c.req.query('mode') ?? 'questions');
+  if (!requested.success) return c.json({ error: 'unknown mode' }, 400);
+  const mode: Mode = topic ? 'mixed' : requested.data;
+  const userId = c.get('userId');
   const inScope = (i: Item) =>
     i.blueprint.section === section.data && (!topic || i.blueprint.topic === topic);
   const row = await c.env.DB.prepare(
     `SELECT * FROM practice_sessions WHERE user_id = ? AND section = ? AND status = 'active'
-     AND topic IS ? ORDER BY created_at DESC LIMIT 1`,
+     AND topic IS ? AND mode = ? ORDER BY created_at DESC LIMIT 1`,
   )
-    .bind(userId, section.data, topic)
+    .bind(userId, section.data, topic, mode)
     .first<SessionRow>();
-  const poolSize = mcqs.filter(inScope).length;
+  const mcqPool = mcqs.filter(inScope).length;
   const simPool = simulations.filter(inScope).length;
+  const session = row ? await sessionView(c.env.DB, row) : null;
+
+  if (mode === 'simulations') {
+    const option = (n: number) => ({ size: n, questions: 0, simulations: n });
+    return c.json({
+      session,
+      nextKind: 'practice',
+      diagnostic: option(0),
+      options: lengthsFor(simPool, SIMULATION_LENGTHS).map(option),
+      poolSize: simPool,
+    });
+  }
+
   // A topic session from the Library never starts with the section diagnostic.
   const diagnostic = !topic && !(await hasMcqAttempts(c.env.DB, userId, section.data));
-  // The session lengths on offer, each with the simulations that come with it.
-  const option = (n: number) => ({ questions: n, simulations: simulationCount(n, simPool) });
-  const lengths = SESSION_LENGTHS.filter((n) => n < poolSize);
-  if (poolSize) lengths.push(Math.min(poolSize, SESSION_LENGTHS[SESSION_LENGTHS.length - 1]!));
+  // A topic session also carries simulations on the topic; a Practice session doesn't.
+  const option = (n: number) => ({
+    size: n,
+    questions: n,
+    simulations: mode === 'mixed' ? simulationCount(n, simPool) : 0,
+  });
   return c.json({
-    session: row ? await sessionView(c.env.DB, row) : null,
+    session,
     nextKind: diagnostic ? 'diagnostic' : 'practice',
-    diagnostic: option(Math.min(DIAGNOSTIC_SIZE, poolSize)),
-    options: [...new Set(lengths)].map(option),
-    poolSize,
+    diagnostic: option(Math.min(DIAGNOSTIC_SIZE, mcqPool)),
+    options: lengthsFor(mcqPool, SESSION_LENGTHS).map(option),
+    poolSize: mcqPool,
   });
 });
 
-const SESSION_LENGTHS = [10, 25, 50];
-
 const newSessionBody = z.object({
   section: sectionSchema,
+  /** Questions, or simulations in a 'simulations' session. */
   size: z.number().int().min(1).max(100),
   /** Library: limit the session to one blueprint topic. */
   topic: z.string().min(1).max(200).optional(),
+  mode: modeSchema.optional(),
 });
 
 app.post('/me/sessions', async (c) => {
@@ -330,25 +364,31 @@ app.post('/me/sessions', async (c) => {
   if (!body.success) return c.json({ error: body.error.flatten() }, 400);
   const { section, size } = body.data;
   const topic = body.data.topic ?? null;
+  const mode: Mode = topic ? 'mixed' : (body.data.mode ?? 'questions');
   const userId = c.get('userId');
   const db = c.env.DB;
 
   const toPool = (i: Item) => ({ id: i.id, area: i.blueprint.area, topic: i.blueprint.topic });
   const inScope = (i: Item) =>
     i.blueprint.section === section && (!topic || i.blueprint.topic === topic);
-  const pool = mcqs.filter(inScope).map(toPool);
-  const simPool = simulations.filter(inScope).map(toPool);
-  if (pool.length === 0 && (!topic || simPool.length === 0))
-    return c.json({ error: `no ${topic ?? section} questions yet` }, 404);
+  const pool = mode === 'simulations' ? [] : mcqs.filter(inScope).map(toPool);
+  const simPool = mode === 'questions' ? [] : simulations.filter(inScope).map(toPool);
+  if (pool.length === 0 && simPool.length === 0)
+    return c.json(
+      {
+        error: `no ${topic ?? section} ${mode === 'simulations' ? 'simulations' : 'questions'} yet`,
+      },
+      404,
+    );
 
   const weights = AREA_WEIGHTS[section];
   let kind: 'diagnostic' | 'practice';
   let ids: string[];
   let simIds: string[];
-  if (!topic && !(await hasMcqAttempts(db, userId, section))) {
+  if (mode !== 'simulations' && !topic && !(await hasMcqAttempts(db, userId, section))) {
     kind = 'diagnostic';
     ids = selectDiagnosticItems(pool, DIAGNOSTIC_SIZE, weights);
-    simIds = selectDiagnosticItems(simPool, simulationCount(ids.length, simPool.length), weights);
+    simIds = [];
   } else {
     kind = 'practice';
     const [cards, attempts] = await Promise.all([
@@ -375,33 +415,43 @@ app.post('/me/sessions', async (c) => {
         }),
       ),
     };
-    ids = selectPracticeItems({ ...history, pool, size });
-    simIds = selectPracticeItems({
-      ...history,
-      pool: simPool,
-      // A topic with simulations but no questions yet still gets one simulation.
-      size: ids.length ? simulationCount(ids.length, simPool.length) : Math.min(1, simPool.length),
-    });
+    if (mode === 'simulations') {
+      ids = [];
+      simIds = selectPracticeItems({ ...history, pool: simPool, size });
+    } else {
+      ids = selectPracticeItems({ ...history, pool, size });
+      simIds =
+        mode === 'mixed'
+          ? selectPracticeItems({
+              ...history,
+              pool: simPool,
+              // A topic with simulations but no questions yet still gets one simulation.
+              size: ids.length
+                ? simulationCount(ids.length, simPool.length)
+                : Math.min(1, simPool.length),
+            })
+          : [];
+    }
   }
-  // Simulations are spread through the questions (exam-day mode will use the exam's order).
+  // In a topic session, simulations are spread through the questions.
   ids = spreadThrough(ids, simIds);
   const variants = await pickVariants(db, userId, ids);
 
-  // Starting a new session abandons any unfinished one in the same section (or the same
-  // Library topic). Its answers still count toward mastery and review scheduling.
+  // Starting a new session abandons any unfinished one of the same mode in the same section
+  // (or the same Library topic). Its answers still count toward mastery and review scheduling.
   const id = crypto.randomUUID();
   await db.batch([
     db
       .prepare(
         `UPDATE practice_sessions SET status = 'abandoned'
-         WHERE user_id = ? AND section = ? AND status = 'active' AND topic IS ?`,
+         WHERE user_id = ? AND section = ? AND status = 'active' AND topic IS ? AND mode = ?`,
       )
-      .bind(userId, section, topic),
+      .bind(userId, section, topic, mode),
     db
       .prepare(
-        'INSERT INTO practice_sessions (id, user_id, section, kind, item_ids, variants, topic) VALUES (?, ?, ?, ?, ?, ?, ?)',
+        'INSERT INTO practice_sessions (id, user_id, section, kind, item_ids, variants, topic, mode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
       )
-      .bind(id, userId, section, kind, JSON.stringify(ids), JSON.stringify(variants), topic),
+      .bind(id, userId, section, kind, JSON.stringify(ids), JSON.stringify(variants), topic, mode),
   ]);
   const row = await loadSession(db, userId, id);
   return c.json(await sessionView(db, row!), 201);
