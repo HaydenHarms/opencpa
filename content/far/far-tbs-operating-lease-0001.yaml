@@ -23,9 +23,9 @@ title: 'Operating lease of production space: two years and a remeasurement'
 scenario: Kerrow Precision Parts closes its books each December 31. Exhibit 1 summarizes its lease of
   production space, Exhibit 2 gives information from the first two years, and Exhibit 3 gives present
   value factors. Kerrow makes any reassessment of the lease as of December 31, Year 2; the lease is an
-  operating lease throughout. Measure the fit-out reimbursement at the full amount, ignoring the time
-  until it is paid. Treat December 31 and the following January 1 as the same date for discounting. Round
-  every amount to the nearest dollar, including interest each year.
+  operating lease throughout. Treat the fit-out reimbursement as if received on January 1, Year 1. Treat
+  December 31 and the following January 1 as the same date for discounting. Round every amount to the
+  nearest dollar, including interest each year.
 exhibits:
 - title: 'Exhibit 1: Lease summary'
   body: '| Term | Detail |
@@ -101,11 +101,12 @@ tasks:
   prompt: What amount should Kerrow recognize as its right-of-use asset at commencement on January 1,
     Year 1?
   answer: 50181300
-  explanation: 'Lease liability: $120,000 × 4.46511 = $535,813 (rounded), the present value of five payments
-    due in advance at 6%, measured with the index at commencement. Right-of-use asset: $535,813 − the
-    $40,000 fit-out reimbursement, a lease incentive receivable at commencement + the $6,000 paid to the
-    previous tenant, an initial direct cost = $501,813. The inspection fee was owed whether or not the
-    lease was signed, so it is not an initial direct cost (including it gives $505,313).'
+  explanation: 'Lease liability at commencement, before the January 1 payment: $120,000 × 4.46511 = $535,813
+    (rounded), the present value of five payments due in advance at 6%, measured with the index at commencement.
+    Right-of-use asset: $535,813 − the $40,000 fit-out reimbursement, a lease incentive receivable at
+    commencement + the $6,000 paid to the previous tenant, an initial direct cost = $501,813. The inspection
+    fee was owed whether or not the lease was signed, so it is not an initial direct cost (including it
+    gives $505,313).'
 - id: t2
   type: numeric
   points: 1

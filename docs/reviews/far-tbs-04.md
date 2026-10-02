@@ -87,9 +87,10 @@ Not applied:
 
 Every simulation was gated in full, on Sonnet, with the standard brief adapted for simulations.
 
-| Run        | Average pass likelihood                                                                                | Verdicts | Outcome                                                                                                                                                    |
-| ---------- | ------------------------------------------------------------------------------------------------------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Revision 1 | **79.5%**: contingencies 80, subsequent events 80, revenue 79, accounting changes 84, NFP 78, lease 76 | 6 minor  | **Just under the ~80% bar.** Every key matched the reviewer's own solutions and every explanation's arithmetic held; no major items. Revised (revision 2). |
+| Run        | Average pass likelihood                                                                                | Verdicts              | Outcome                                                                                                                                                    |
+| ---------- | ------------------------------------------------------------------------------------------------------ | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Revision 1 | **79.5%**: contingencies 80, subsequent events 80, revenue 79, accounting changes 84, NFP 78, lease 76 | 6 minor               | **Just under the ~80% bar.** Every key matched the reviewer's own solutions and every explanation's arithmetic held; no major items. Revised (revision 2). |
+| Revision 2 | **81.8%**: contingencies 82, subsequent events 87, revenue 83, accounting changes 78, NFP 76, lease 85 | 3 exam-ready, 3 minor | **Passed.** The reviewer's own solutions agreed with every key (33 numeric answers, 30 select rows); no major items.                                       |
 
 The gate confirmed from public sources (PwC, Deloitte, RSM, Clark Nuber, Forvis Mazars, EisnerAmper, Crowe and the ASU text): a significant leasehold improvement triggers a lease term reassessment, with an updated discount rate and index payments at the current index; a waiver of more than one year allows noncurrent classification; a matching requirement is a barrier, met to the extent matched.
 
@@ -115,3 +116,22 @@ The gate confirmed from public sources (PwC, Deloitte, RSM, Clark Nuber, Forvis 
 - **NFP:** the same-year release policy now also covers conditional contributions (a separate election), and restoration costs are expensed as incurred, so the grant can't be argued restricted or capitalized.
 
 Suggestions applied: the Elmford indemnity's fair value at inception was immaterial and nothing was recorded; the covenant expectation sits in the waiver row; the lease stays an operating lease, and the fit-out reimbursement is measured at its full amount.
+
+**Revision 2 gate, required fixes applied (wording only, no key changed):**
+
+- **Accounting changes:** the memo's "costs of obtaining contracts that must be capitalized" gave away the judgment that expensing them was an error. It now reads "its policy for capitalized contract acquisition costs".
+- **NFP:** "No donor has variance power" misused the term (a donor grants variance power to the recipient). It now says no donor has given Ashgrove variance power, and Ashgrove is not financially interrelated with Marlbank.
+
+Optional findings applied: Halsall's obligation is limited to qualifying gifts received by June 30, Year 2; Penwortham's current assets line lists all its components instead of naming the two adjusted ones; the revenue contract no longer says Stannard "stands ready" (which handed over the ratable pattern); the lease explanation says $535,813 is the liability before the January 1 payment, and the fit-out reimbursement is treated as received at commencement.
+
+Optional findings not applied: the remaining echoes of MCQ templates (an inventory method change, a revised useful life, an appealed award, a log-style NFP exhibit). Each simulation now combines them with events no MCQ has, and the gate passed them; the next Area III batch (far-tbs-07) should avoid these event types.
+
+**Quality bar:** the gate's lessons are now in the Simulations section of `docs/content-pipeline.md`:
+
+- A prompt must not name an amount that exists only under the classification another task asks for.
+- A simulation task doesn't repeat an MCQ's exact ask (EPS after a split, retained earnings as adjusted, accrue-then-disclose).
+- Every amount a task uses gets its own exhibit row, not a mention inside another item's narrative.
+
+## Status
+
+FAR now has **21 simulations**: Area I 6, Area II 7, Area III 8, with 10 tagged Analysis. Next in the plan is far-tbs-05 (Area I).

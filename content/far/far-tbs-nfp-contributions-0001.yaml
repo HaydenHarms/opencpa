@@ -20,8 +20,9 @@ review:
 title: Year 1 contributions at a conservation not-for-profit
 scenario: Ashgrove River Conservancy, a not-for-profit entity, is preparing its Year 1 statement of activities.
   Exhibit 1 is its development office's log of Year 1 gifts and grants, and Exhibit 2 gives its accounting
-  policies. No donor has variance power over any gift. Exhibit 1 lists every contribution and grant Ashgrove
-  received in Year 1. Round every amount to the nearest dollar.
+  policies. No donor has given Ashgrove variance power over any gift, and Ashgrove is not financially
+  interrelated with Marlbank Food Pantry. Exhibit 1 lists every contribution and grant Ashgrove received
+  in Year 1. Round every amount to the nearest dollar.
 exhibits:
 - title: 'Exhibit 1: Development office log, Year 1'
   body: '| Date (Year 1) | Source | Detail |
@@ -30,8 +31,8 @@ exhibits:
 
     | February 10 | Halsall Foundation | Written pledge to match, dollar for dollar, gifts from other
     donors for Ashgrove''s planned nature center received by June 30, Year 2, up to $400,000. Halsall
-    will pay the matched amount on July 15, Year 2; it owes nothing for gifts it has not matched. Construction
-    of the nature center begins in Year 2. |
+    will pay the matched amount on July 15, Year 2; its obligation is limited to qualifying gifts received
+    by June 30, Year 2. Construction of the nature center begins in Year 2. |
 
     | March – December | Various donors | Cash gifts for the nature center totaling $265,000, all of which
     qualify for Halsall''s match. |

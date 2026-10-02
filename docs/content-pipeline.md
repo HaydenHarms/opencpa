@@ -50,6 +50,10 @@ These are hard requirements:
 - **A policy sentence that fixes a classification** (for example, which liability account is used) must not restate the recognition test the candidate is applying (far-tbs-03 gate).
 - **One task's prompt doesn't define its answer by contrast with another task's** (for example, "debit balances less credit balances" beside a task on gross receivables) (far-tbs-03 gate).
 - **ASU 2025-05:** whenever a collection after year end appears, state both elections (the practical expedient, and for private companies the collections election, which requires it) (far-tbs-03 gate).
+- **A prompt doesn't name an amount that exists only under one answer to another task** (asking for "the amount allocated to the installation" tells the candidate installation is a separate obligation) (far-tbs-04 gate).
+- **Don't repeat an MCQ's exact ask** in a simulation task (EPS after a split, retained earnings as adjusted at the start of the earliest period, accrue-then-disclose totals) (far-tbs-04 gate).
+- **Every amount a task uses gets its own exhibit row,** not a mention inside another item's narrative (far-tbs-04 gate).
+- **Policy sentences don't carry the judgment:** "costs that must be capitalized" decides whether expensing them was an error (far-tbs-04 gate).
 
 ## Scaling the bank (Hayden's decision, 2026-09-30)
 

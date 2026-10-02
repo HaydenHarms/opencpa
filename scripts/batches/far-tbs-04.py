@@ -173,7 +173,7 @@ assert BONDS >= NOTE_ST
 
 draft2 = table(["Item", "Amount"], [
     ("Net income, Year 1", amt(NI_DRAFT)),
-    ("Total current assets (including the Ostler receivable and the equipment held for sale)", amt(CA_DRAFT)),
+    ("Total current assets (cash, receivables, inventories, prepaid expenses and equipment held for sale)", amt(CA_DRAFT)),
     ("Current liabilities: accounts payable and accrued liabilities", amt(OTHER_CL)),
     ("Current liabilities: note payable to Brannock Bank, due June 30, Year 2", amt(NOTE_ST)),
     ("Current liabilities: term loan from Calder Trust (see note)", amt(LOAN)),
@@ -257,7 +257,7 @@ contract3 = table(["Term", "Detail"], [
     ("Site survey", "Before delivery, Stannard's engineers will inspect the hospital's imaging suite to plan the delivery route and installation. The survey report is for Stannard's use and is not given to the hospital."),
     ("Installation", "Stannard will install the scanner and test it. The installation is standard and does not modify the scanner; several independent firms are qualified to install SX-7 scanners."),
     ("Training", f"A {SESSIONS}-session course for the hospital's technicians, scheduled at the hospital's request."),
-    ("Maintenance", f"Preventive maintenance and on-call repair for {MAINT_YEARS} years from acceptance of the installation. Stannard stands ready to respond throughout the term. Neither party may cancel the maintenance before the end of the term."),
+    ("Maintenance", f"Preventive maintenance and on-call repair for {MAINT_YEARS} years from acceptance of the installation. Neither party may cancel the maintenance before the end of the term."),
     ("Warranty", "Stannard's standard warranty that the scanner will operate as specified for one year from acceptance, the same warranty it gives every buyer. It covers repairs of defects only."),
     ("Price and payment", f"{d(PKG_PRICE)} for the scanner, installation and training, due on acceptance of the installation; {d(MAINT_BILL)} for each year of maintenance, billed and due at the start of each maintenance year."),
 ])
@@ -349,7 +349,7 @@ assert (FLEET_COST - 2 * fleet_dep_old) % (FLEET_NEW_TOTAL - 2) == 0
 
 memo4 = table(["Matter", "Facts"], [
     ("Inventory method", "Through Year 2, Corrieside costed inventory by FIFO. On January 1, Year 3, it adopted the weighted-average method for all inventory, because its new purchasing system tracks costs that way and management concluded that weighted-average better matches the way it prices its products. Corrieside's records allow it to compute weighted-average inventory at every prior year end (Exhibit 2)."),
-    ("Sales commissions", f"On July 1, Year 2, Corrieside paid its sales staff commissions of {d(COMM)} for signing three-year service contracts that run from July 1, Year 2, to June 30, Year 5. The commissions were paid only because the contracts were signed, and Corrieside expects to recover them from the contract margins. Corrieside charged them to Year 2 expense. Its policy for costs of obtaining contracts that must be capitalized is to amortize them straight-line over the contract term; the contracts are not expected to be renewed."),
+    ("Sales commissions", f"On July 1, Year 2, Corrieside paid its sales staff commissions of {d(COMM)} for signing three-year service contracts that run from July 1, Year 2, to June 30, Year 5. The commissions were paid only because the contracts were signed, and Corrieside expects to recover them from the contract margins. Corrieside charged them to Year 2 expense. Its policy for capitalized contract acquisition costs is to amortize them straight-line over the contract term; the contracts are not expected to be renewed."),
     ("Delivery fleet", f"Bought January 1, Year 1, for {d(FLEET_COST)}, depreciated straight-line over {FLEET_LIFE} years with no residual value. In January, Year 3, an engineering study based on two years of route data concluded that the fleet's total useful life will be {FLEET_NEW_TOTAL} years, with no residual value."),
     ("Equipment leasing", "In Year 3, Corrieside began leasing forklifts to customers, a business it had never been in, and adopted lessor accounting policies for those leases."),
 ])
@@ -424,7 +424,7 @@ with_err_full_match = OTHER_GIFTS + MATCH_MAX + PROMISE_PV
 recv_err_face = match_recog + PROMISE_FACE + (GRANT_COSTS - GRANT_PAID)
 
 log5 = table(["Date (Year 1)", "Source", "Detail"], [
-    ("February 10", "Halsall Foundation", f"Written pledge to match, dollar for dollar, gifts from other donors for Ashgrove's planned nature center received by June 30, Year 2, up to {d(MATCH_MAX)}. Halsall will pay the matched amount on July 15, Year 2; it owes nothing for gifts it has not matched. Construction of the nature center begins in Year 2."),
+    ("February 10", "Halsall Foundation", f"Written pledge to match, dollar for dollar, gifts from other donors for Ashgrove's planned nature center received by June 30, Year 2, up to {d(MATCH_MAX)}. Halsall will pay the matched amount on July 15, Year 2; its obligation is limited to qualifying gifts received by June 30, Year 2. Construction of the nature center begins in Year 2."),
     ("March – December", "Various donors", f"Cash gifts for the nature center totaling {d(OTHER_GIFTS)}, all of which qualify for Halsall's match."),
     ("March 1", "State Department of Natural Resources", f"Grant to reimburse allowable costs of restoring Tillet Marsh, a preserve Ashgrove owns and opens to the public, up to {d(GRANT_MAX)} of costs incurred in Years 1 and 2. The state receives no goods or services from Ashgrove under the grant, and pays only for costs incurred. Ashgrove incurred {d(GRANT_COSTS)} of allowable costs in Year 1, and the state had paid {d(GRANT_PAID)} of them by December 31."),
     ("June 6", "Kittering Nursery", f"Donated native plant seedlings with a fair value of {d(SEEDLINGS)}, all planted in the marsh restoration in Year 1."),
@@ -450,7 +450,7 @@ SIM5 = tbs(
      "ASC 958-205-45 and 958-605-45-4 through 45-5 (donor restrictions; restrictions met in the same period; implied time restrictions)",
      "ASC 958-225-45-17 (special events with an exchange element)"],
     "Year 1 contributions at a conservation not-for-profit",
-    """Ashgrove River Conservancy, a not-for-profit entity, is preparing its Year 1 statement of activities. Exhibit 1 is its development office's log of Year 1 gifts and grants, and Exhibit 2 gives its accounting policies. No donor has variance power over any gift. Exhibit 1 lists every contribution and grant Ashgrove received in Year 1. Round every amount to the nearest dollar.""",
+    """Ashgrove River Conservancy, a not-for-profit entity, is preparing its Year 1 statement of activities. Exhibit 1 is its development office's log of Year 1 gifts and grants, and Exhibit 2 gives its accounting policies. No donor has given Ashgrove variance power over any gift, and Ashgrove is not financially interrelated with Marlbank Food Pantry. Exhibit 1 lists every contribution and grant Ashgrove received in Year 1. Round every amount to the nearest dollar.""",
     [("Exhibit 1: Development office log, Year 1", log5),
      ("Exhibit 2: Accounting policies", policy5)],
     [
@@ -548,13 +548,13 @@ SIM6 = tbs(
      "ASC 842-10-35-1 and 35-4 (reassessing the lease term; updating the discount rate)",
      "ASC 842-20-25-6, 25-8 and 35-3 through 35-5 (operating lease cost; remaining cost after remeasurement)"],
     "Operating lease of production space: two years and a remeasurement",
-    """Kerrow Precision Parts closes its books each December 31. Exhibit 1 summarizes its lease of production space, Exhibit 2 gives information from the first two years, and Exhibit 3 gives present value factors. Kerrow makes any reassessment of the lease as of December 31, Year 2; the lease is an operating lease throughout. Measure the fit-out reimbursement at the full amount, ignoring the time until it is paid. Treat December 31 and the following January 1 as the same date for discounting. Round every amount to the nearest dollar, including interest each year.""",
+    """Kerrow Precision Parts closes its books each December 31. Exhibit 1 summarizes its lease of production space, Exhibit 2 gives information from the first two years, and Exhibit 3 gives present value factors. Kerrow makes any reassessment of the lease as of December 31, Year 2; the lease is an operating lease throughout. Treat the fit-out reimbursement as if received on January 1, Year 1. Treat December 31 and the following January 1 as the same date for discounting. Round every amount to the nearest dollar, including interest each year.""",
     [("Exhibit 1: Lease summary", lease6),
      ("Exhibit 2: Lease information, Years 1 and 2", events6),
      ("Exhibit 3: Present value factors", factors6)],
     [
         num("t1", "What amount should Kerrow recognize as its right-of-use asset at commencement on January 1, Year 1?", rou0,
-            f"Lease liability: {d(BASE)} × {F[(R1, TERM)]} = {d(L0)} (rounded), the present value of five payments due in advance at {R1 * 100:.0f}%, measured with the index at commencement. Right-of-use asset: {d(L0)} − the {d(INCENTIVE)} fit-out reimbursement, a lease incentive receivable at commencement + the {d(IDC)} paid to the previous tenant, an initial direct cost = {d(rou0)}. The inspection fee was owed whether or not the lease was signed, so it is not an initial direct cost (including it gives {d(rou0_legal)})."),
+            f"Lease liability at commencement, before the January 1 payment: {d(BASE)} × {F[(R1, TERM)]} = {d(L0)} (rounded), the present value of five payments due in advance at {R1 * 100:.0f}%, measured with the index at commencement. Right-of-use asset: {d(L0)} − the {d(INCENTIVE)} fit-out reimbursement, a lease incentive receivable at commencement + the {d(IDC)} paid to the previous tenant, an initial direct cost = {d(rou0)}. The inspection fee was owed whether or not the lease was signed, so it is not an initial direct cost (including it gives {d(rou0_legal)})."),
         num("t2", "What total lease cost should Kerrow recognize for Year 1?", cost1,
             f"Straight-line single lease cost: ({TERM} × {d(BASE)} − {d(INCENTIVE)} + {d(IDC)}) ÷ {TERM} = {d(single)}. Because Kerrow combines lease and nonlease components, the common area maintenance payments are variable lease payments, recognized as variable lease cost when incurred: {d(CAM[1])}. Total {d(single)} + {d(CAM[1])} = {d(cost1)}."),
         num("t3", "What is the carrying amount of Kerrow's right-of-use asset at December 31, Year 1?", rou1,
