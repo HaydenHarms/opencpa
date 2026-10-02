@@ -6,7 +6,7 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 
 **Live:** [opencpa.pages.dev](https://opencpa.pages.dev)
 
-> **Status: alpha.** The platform is deployed end to end (site, API, database, CI). The question bank grows in reviewed batches, FAR first: today there are 150 FAR questions (with about 300 new-number versions), 3 FAR simulations and 25 BAR questions. AUD, REG, ISC and TCP come after FAR is complete. The long-term goal is about 2,000 questions per section.
+> **Status: alpha.** The platform is deployed end to end (site, API, database, CI). The question bank grows in reviewed batches, FAR first: today there are 318 FAR questions (with 771 new-number versions, 1,089 problems in all), 3 FAR simulations and 25 BAR questions. Every task in the 2026 FAR blueprint has at least two reviewed questions; FAR simulations are next. AUD, REG, ISC and TCP come after FAR is complete. The long-term goal is about 2,000 questions per section.
 
 ---
 
@@ -17,15 +17,15 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 - **Practice sessions.** Pick a section and a length; the server builds a session that mixes blueprint areas by weight, brings back questions when they're due for review and leans toward your weak topics. Your first session in a section is a short diagnostic, and leaving the page never loses your place.
 - **Question versions.** Numeric questions come in several versions with different numbers, so a repeat is a new problem, not a memorized answer.
 - **Library.** Browse every exam by blueprint area and topic, practice any single topic, and look up any question in the archive (unanswered, missed, correct). Search understands accounting synonyms and ASC numbers, so “fixed assets” finds PP&E and “DTL” finds income taxes. Answers stay hidden until you've attempted a question.
-- **Progress.** Coverage by section ("seen 12 of 150"), mastery by blueprint area, and mastery by topic, weakest first.
-- **Simulations.** Task-based simulations with exhibits, journal-entry grids, numeric and research tasks, graded deterministically with partial credit.
+- **Progress.** Coverage by section ("seen 12 of 318"), mastery by blueprint area, and mastery by topic, weakest first.
+- **Simulations.** Task-based simulations with exhibits, journal-entry grids, numeric, research and dropdown (select) tasks, graded deterministically with partial credit.
+- **Blueprint-aligned content.** Every question and simulation is tagged to the AICPA blueprint by section, content area, topic and skill level, and every item passes an independent review before it's served.
+- **Adaptive review.** Spaced repetition (FSRS) schedules individual questions, and results roll up into a mastery map by blueprint area.
 - **Study with Claude.** Add OpenCPA as a connector in your own Claude account, and Claude can look up the question you just answered and explain it, using the official rationale. It explains; it never grades.
 
 **Planned**
 
-- **Blueprint-aligned content.** Every question and simulation is tagged to the AICPA blueprint by section (FAR, AUD, REG, plus BAR/ISC/TCP), content area, and skill level.
-- **Adaptive review.** Spaced repetition (FSRS) schedules individual items, and results roll up into a mastery map by blueprint area so you can see your weak spots at a glance.
-- **More simulation task types,** starting with dropdown (select) tasks.
+- **More FAR simulations,** about 10+ across all three blueprint areas, then simulations for the other sections.
 - **Exam-day mode.** Timed testlets modeled on the real exam interface, with a calculator, flag-for-review, and a literature panel.
 - **In-app tutor** using your own Anthropic API key, so the project stays free to host and free to use.
 - **Advanced settings** for weighting practice toward your strengths or weaknesses.
@@ -63,10 +63,11 @@ opencpa/
 - [x] Practice sessions with adaptive selection and a diagnostic
 - [x] Claude connector: study with your own Claude account
 - [x] Question versions (new numbers on every numeric FAR question)
-- [x] Task-based simulations (journal-entry grid, numeric, research)
+- [x] Task-based simulations (journal-entry grid, numeric, research, select)
 - [x] Library: browse by exam and topic, topic practice, question archive
 - [x] Library search: finds related topics and questions, not just exact wording (synonyms, ASC numbers, typos)
-- [ ] Finish FAR: two or more reviewed questions for every blueprint task, about 10 simulations
+- [x] Two or more reviewed questions for every FAR blueprint task (318 questions)
+- [ ] Finish FAR: about 10+ simulations across all three areas, skill mix inside the blueprint ranges
 - [ ] Remaining sections, in reviewed batches (BAR, then AUD and REG, then ISC and TCP)
 - [ ] Advanced practice settings
 - [ ] Accounts (GitHub / email) so progress syncs across devices
