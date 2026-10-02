@@ -369,6 +369,9 @@ body {
 .prose a {
   color: var(--accent);
 }
+.prose a.button {
+  color: var(--bg);
+}
 .copy-row {
   display: flex;
   gap: 8px;

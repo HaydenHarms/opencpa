@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AUTH_EVENT, api, errorMessage, setSession, type Account, type AuthStatus } from '../api';
 
 /** The sign-in methods on offer and the signed-in account, refreshed when either changes. */
@@ -27,9 +27,13 @@ export const accountName = (a: Account) => a.displayName ?? a.githubLogin ?? a.e
 /** /account: sign in, or see who you're signed in as and sign out. */
 export default function AccountPage() {
   const { status, error } = useAuthStatus();
+  const welcome = (useLocation().state as { welcome?: boolean } | null)?.welcome;
   return (
     <section className="prose">
       <h1>{status?.account ? 'Your account' : 'Sign in'}</h1>
+      {welcome && status?.account && (
+        <p>You’re signed in. Your progress on this device is now part of your account.</p>
+      )}
       {error && <p className="error">Something went wrong: {error}</p>}
       {!status && !error && <p className="muted">Loading…</p>}
       {status && (status.account ? <SignedIn account={status.account} /> : <SignIn {...status} />)}
@@ -164,7 +168,8 @@ const GITHUB_ERRORS: Record<string, string> = {
 
 /** /signin/done: where the GitHub round trip lands, with a one-time code to swap for a session. */
 export function SigninDone() {
-  const [state, setState] = useState<'working' | 'done' | string>('working');
+  const [state, setState] = useState<'working' | string>('working');
+  const signedIn = useSignedIn();
   const started = useRef(false);
   useEffect(() => {
     if (started.current) return;
@@ -177,10 +182,7 @@ export function SigninDone() {
       return;
     }
     api.exchange(code).then(
-      (s) => {
-        setSession(s.token);
-        setState('done');
-      },
+      (s) => signedIn(s.token),
       (e) => setState(errorMessage(e)),
     );
   }, []);
@@ -194,14 +196,14 @@ export function SigninDone() {
 export function SigninEmail() {
   const [token] = useState(() => fragment('token'));
   useEffect(clearFragment, []);
-  const [state, setState] = useState<'ready' | 'working' | 'done' | string>(
+  const signedIn = useSignedIn();
+  const [state, setState] = useState<'ready' | 'working' | string>(
     token ? 'ready' : 'This sign-in link is incomplete. Ask for a new one.',
   );
   async function finish() {
     setState('working');
     try {
-      setSession((await api.emailVerify(token!)).token);
-      setState('done');
+      signedIn((await api.emailVerify(token!)).token);
     } catch (e) {
       setState(errorMessage(e));
     }
@@ -219,20 +221,21 @@ export function SigninEmail() {
   return <SigninResult state={state} />;
 }
 
+/** Store the new session and show the Account page, with a welcome line. */
+function useSignedIn() {
+  const navigate = useNavigate();
+  return (token: string) => {
+    setSession(token);
+    navigate('/account', { replace: true, state: { welcome: true } });
+  };
+}
+
 function SigninResult({ state }: { state: string }) {
   return (
     <section className="prose">
       <h1>Sign in</h1>
       {state === 'working' && <p className="muted">Signing you in…</p>}
-      {state === 'done' && (
-        <>
-          <p>You’re signed in. Your progress on this device is now part of your account.</p>
-          <Link to="/practice" className="button">
-            Keep practicing
-          </Link>
-        </>
-      )}
-      {state !== 'working' && state !== 'done' && (
+      {state !== 'working' && (
         <>
           <p className="error">{state}</p>
           <Link to="/account">Back to sign in</Link>
