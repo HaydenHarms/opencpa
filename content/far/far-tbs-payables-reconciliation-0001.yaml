@@ -10,16 +10,15 @@ review:
   references:
   - ASC 405-10 (liabilities)
   - 'ASC 330-10 (title to goods in transit: FOB shipping point and FOB destination)'
-  - Search for unrecorded liabilities and vendor statement reconciliation practice
   notes: FAR simulations batch 03. Written from scratch; every number computed in code.
 title: 'Year-end accounts payable: unrecorded liabilities and reconciliation'
-scenario: Brackwell Manufacturing Co. closes its books on December 31, Year 2. It reports every amount
-  owed to vendors for goods and services it has received, or that it owns in transit, as accounts payable,
-  whether or not the invoice has arrived. The controller is closing accounts payable. The exhibits show
-  the subledger and control account balances, a December entry in the cash disbursements journal, Brackwell's
-  January, Year 3, disbursements, and a statement from its largest resin supplier, Corran Polymers. No
-  entry has been made for any finding yet. Enter every amount in whole dollars, and enter a decrease as
-  a negative number.
+scenario: 'Brackwell Manufacturing Co. closes its books on December 31, Year 2. It has no accrued-liabilities
+  account: every amount it owes a vendor for goods or services is reported as accounts payable, whether
+  or not the invoice has arrived. The controller is closing accounts payable. The exhibits show the subledger
+  and control account balances, a December entry in the cash disbursements journal, Brackwell''s January,
+  Year 3, disbursements, and a statement from its largest resin supplier, Corran Polymers. No entry has
+  been made for any finding yet. Enter every amount in whole dollars, and enter a decrease as a negative
+  number.'
 exhibits:
 - title: 'Exhibit 1: Balances at December 31, Year 2'
   body: '|  | Amount |
@@ -131,7 +130,7 @@ tasks:
     Enter a decrease as a negative number.
   answer: 5610000
   explanation: 'The control account ($558,740) is also understated by the $22,600 cash-on-delivery payment
-    debited to it; that purchase never created a payable. Correct balance $614,840 − $558,740 = $56,100:
+    debited to it; that purchase never created a payable. Adjustment = $614,840 − $558,740 = $56,100:
     the four findings, net $33,500, plus $22,600.'
 - id: t4
   type: numeric

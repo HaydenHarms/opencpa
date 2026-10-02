@@ -1,0 +1,155 @@
+id: far-tbs-ppe-rollforward-0002
+type: tbs
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 360-10-30 (cost of PP&E, net of cash discounts taken)
+  - ASC 360-10-35 (depreciation; revising the remaining life after a life-extending expenditure is a change
+    in estimate, ASC 250-10-45-17)
+  - 'ASC 845-10 (nonmonetary exchanges: fair value, commercial substance, and the 25% monetary consideration
+    threshold)'
+  - 'ASC 360-10-40 (derecognition: gain or loss on disposal)'
+  notes: FAR simulations batch 03. Written from scratch; every number computed in code.
+title: Year 2 equipment rollforward review
+scenario: Garroway Freight Co. owns trucks and trailers. Its staff accountant drafted the Year 2 rollforward
+  of the equipment account and its accumulated depreciation (Exhibit 1); you are reviewing it against
+  the supporting documents (Exhibit 2). Garroway uses the straight-line method with no residual values,
+  takes a full month of depreciation in the month an asset is acquired and none in the month it is disposed
+  of, and capitalizes overhauls that extend an asset's useful life to the equipment account. The January
+  1 balances and the depreciation figure for equipment held all year (other than truck T-14) are correct.
+  Round every amount to the nearest dollar.
+exhibits:
+- title: 'Exhibit 1: Draft rollforward prepared by the staff accountant'
+  body: '|  | Equipment, at cost | Accumulated depreciation |
+
+    |---|---|---|
+
+    | Balance, January 1, Year 2 | 4,860,000 | 1,934,000 |
+
+    | Additions | 260,200 |  |
+
+    | Depreciation expense |  | 587,967 |
+
+    | Disposals | (238,000) | (181,550) |
+
+    | Balance, December 31, Year 2 | 4,882,200 | 2,340,417 |
+
+
+    Net gain (loss) on disposals recorded for Year 2: (4,950).'
+- title: 'Exhibit 2: Supporting documents'
+  body: '| Date | Document | Detail |
+
+    |---|---|---|
+
+    | April 1 | Bill of sale | Sold a tractor (cost $142,000; accumulated depreciation at January 1, Year
+    2, $118,000; depreciation $14,200 a year) for $15,500 cash. |
+
+    | July 1 | Exchange agreement with Coyle Trailer Sales | Garroway traded a refrigerated trailer (cost
+    $96,000; accumulated depreciation at January 1, Year 2, $54,000; 8-year life) plus $27,000 cash for
+    a new flatbed trailer. An independent appraiser Garroway engaged valued the trailer given up at $38,000.
+    Garroway''s dispatch plan: the flatbed will carry building materials on the return leg of routes that
+    the refrigerated trailer ran back empty, for customers Garroway hasn''t served before, raising the
+    routes'' expected annual revenue by about 30%. The flatbed has a 10-year life. |
+
+    | July 1 | Shop work order, truck T-14 | Engine overhaul, $54,000, charged to repairs expense. T-14
+    cost $240,000, had accumulated depreciation of $150,000 at January 1, Year 2, and was being depreciated
+    at $30,000 a year. The fleet manager''s memo: the overhaul extends T-14''s remaining life from two
+    and a half years to 5 years from July 1. |
+
+    | October 1 | Dealer invoice, Kestrel Truck Center | New tractor, list price $190,000, terms 2/10,
+    net 30; paid October 8, taking the discount (the discount was credited to other income). Three-year
+    extended service contract, separately priced, $7,200. The tractor has a 6-year life. |
+
+    | December 31 | Depreciation schedule | Depreciation on equipment held all year, other than truck
+    T-14: $512,400. The insurer''s December appraisal values the fleet at $3,410,000. |'
+tasks:
+- id: t1
+  type: select
+  points: 2
+  prompt: For each line of the staff's draft, indicate whether it is correct or misstated.
+  options:
+  - Correct
+  - Misstated
+  rows:
+  - id: r1
+    label: Additions
+    answer: Misstated
+  - id: r2
+    label: Depreciation expense
+    answer: Misstated
+  - id: r3
+    label: Disposals, equipment at cost
+    answer: Correct
+  - id: r4
+    label: Disposals, accumulated depreciation
+    answer: Correct
+  - id: r5
+    label: Net gain (loss) on disposals
+    answer: Misstated
+  explanation: Additions should hold the tractor at its cash price net of the discount (not list price
+    plus the service contract, which is a prepaid service), the flatbed at the fair value given up plus
+    cash (not book value plus cash), and the T-14 overhaul. Depreciation is misstated by all three. The
+    disposals remove the right cost ($96,000 + $142,000) and the right accumulated depreciation, brought
+    up to the disposal dates ($60,000 + $121,550). The draft's net loss leaves out the $2,000 gain on
+    the exchange.
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What should Garroway report as equipment, at cost, at December 31, Year 2?
+  answer: 492720000
+  explanation: 'Tractor: $190,000 × 98% = $186,200. Flatbed: fair value of the trailer given up $38,000
+    + cash $27,000 = $65,000. The exchange has commercial substance: the flatbed earns backhaul revenue
+    from new customers, so its cash flows differ significantly from the refrigerated trailer''s. (The
+    cash is also more than 25% of the exchange''s fair value, which makes it a monetary exchange measured
+    at fair value in any case, and derecognizing the trailer under ASC 610-20 gives the same fair value
+    and gain.) The flatbed''s own fair value isn''t given, so its cost is the fair value given up plus
+    the cash. Carrying over the $36,000 book value gives $63,000. Overhaul: $54,000. Equipment = $4,860,000
+    + $186,200 + $65,000 + $54,000 − $96,000 − $142,000 = $4,927,200.'
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is Garroway's depreciation expense on equipment for Year 2?
+  answer: 56085800
+  explanation: 'Equipment held all year other than T-14: $512,400. T-14: January–June $30,000 × 6/12 =
+    $15,000; carrying amount at July 1 is $240,000 − $150,000 − $15,000 + $54,000 = $129,000, and July–December
+    is $129,000 ÷ 5 × 6/12 = $12,900. New tractor: $186,200 ÷ 6 × 3/12 = $7,758.33, rounded to $7,758.
+    Flatbed: $65,000 ÷ 10 × 6/12 = $3,250. Old trailer, January–June: $6,000. Tractor sold, January–March:
+    $3,550. Total: $512,400 + $27,900 + $7,758 + $3,250 + $6,000 + $3,550 = $560,858.'
+- id: t4
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What should Garroway report as accumulated depreciation on equipment at December 31, Year 2?
+  answer: 231330800
+  explanation: $1,934,000 + depreciation $560,858 − old trailer $60,000 − tractor sold $121,550 = $2,313,308.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: By how much does the staff's draft overstate (understate) depreciation expense for Year 2? Enter
+    an understatement as a negative number.
+  answer: 2710900
+  explanation: Draft $587,967 − correct $560,858 = $27,109. The draft takes a full year on $197,200 for
+    the tractor ($32,867 against $7,758), keeps T-14 at $30,000 (against $27,900), and depreciates the
+    flatbed from $63,000 ($3,150 against $3,250).
+- id: t6
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What net gain or loss on equipment disposals should Garroway report for Year 2? Enter a net
+    loss as a negative number.
+  answer: -295000
+  explanation: 'Sale: $15,500 − book value $20,450 ($142,000 − $121,550) = ($4,950). Exchange: fair value
+    $38,000 − book value $36,000 = gain $2,000. Net ($2,950).'

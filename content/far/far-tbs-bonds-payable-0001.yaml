@@ -15,9 +15,10 @@ review:
 title: 'Bonds payable: issue, interest and a partial retirement'
 scenario: Halvard Corp. issued bonds on January 1, Year 1 (Exhibit 1). It amortizes discount or premium
   by the effective interest method and keeps a separate discount or premium account. On October 1, Year
-  2, it bought back part of the issue in the open market (Exhibit 3) and cancelled the bonds. Round every
-  amount to the nearest dollar at each step, and compute interest for part of a period by prorating the
-  period's effective interest by months.
+  2, it bought back part of the issue in the open market (Exhibit 3) and cancelled the bonds. Halvard
+  records interest only on the interest payment dates and when bonds are retired. Round every amount to
+  the nearest dollar at each step, and compute interest for part of a period by prorating the period's
+  effective interest by months.
 exhibits:
 - title: 'Exhibit 1: Bond terms (from the indenture)'
   body: '| Term | Detail |
@@ -36,18 +37,14 @@ exhibits:
     3 |
 
     | Market yield at issue | 6% a year, compounded semiannually |'
-- title: 'Exhibit 2: Present value factors (3% per period)'
-  body: '| Factor | 8 periods | 16 periods |
+- title: 'Exhibit 2: Present value factors'
+  body: '| Factor | 2.5%, 8 periods | 2.5%, 16 periods | 3%, 8 periods | 3%, 16 periods |
 
-    |---|---|---|
+    |---|---|---|---|---|
 
-    | Present value of 1 | 0.78941 | 0.62317 |
+    | Present value of 1 | 0.82075 | 0.67362 | 0.78941 | 0.62317 |
 
-    | Present value of an ordinary annuity of 1 | 7.01969 | 12.56110 |
-
-
-    At 2.5% per period, the present value of 1 for 16 periods is 0.67362 and of an ordinary annuity of
-    1 is 13.05500.'
+    | Present value of an ordinary annuity of 1 | 7.17014 | 13.05500 | 7.01969 | 12.56110 |'
 - title: 'Exhibit 3: Broker''s confirmation, October 1, Year 2'
   body: 'Halvard purchased $960,000 face amount of its 5% bonds due Year 8 at 98, plus accrued interest
     from July 1. Settlement $952,800: principal $940,800, accrued interest $12,000. The bonds were delivered
@@ -89,8 +86,8 @@ tasks:
 - id: t4
   type: journal_entry
   points: 2
-  prompt: Prepare Halvard's journal entry on October 1, Year 2, for the interest to that date on the bonds
-    retired and their retirement, as a single entry.
+  prompt: Prepare Halvard's journal entry on October 1, Year 2, to record the retirement, as a single
+    entry.
   accounts:
   - Bonds payable
   - Discount on bonds payable

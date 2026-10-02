@@ -104,8 +104,8 @@ tasks:
   explanation: Pellworth owns 18,000 − 14,100 = 3,900 canisters; the 900 consigned canisters belong to
     Ridgeline. Cost of goods available = purchases at invoice cost $98,470 + freight-in $1,800 (a cost
     of bringing the goods to their location) = $100,270, for an average of about $5.5706 per canister.
-    3,900 × $100,270 ÷ 18,000 = $21,725. Leaving out freight gives $21,335; counting the consigned goods
-    gives $26,739; a simple average of the four unit prices gives $21,206.
+    3,900 × $100,270 ÷ 18,000 = $21,725.17, rounded to $21,725. Leaving out freight gives $21,335; counting
+    the consigned goods gives $26,739; a simple average of the four unit prices gives $21,206.
 - id: t3
   type: numeric
   points: 1

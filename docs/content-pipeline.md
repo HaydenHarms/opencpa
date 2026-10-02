@@ -43,6 +43,13 @@ These are hard requirements:
 - **Explanations chain true arithmetic.** Every "=" in an explanation must hold literally; compute each subtotal separately rather than threading one long chain (far-tbs-02 gate).
 - **A total can be a giveaway.** Asking for an amount that exists only under one treatment (other comprehensive income, a noncash disclosure) tells the candidate that such an item exists, unless the exhibits offer more than one candidate (far-tbs-02 gate).
 - **Don't echo an MCQ's event set.** Check the MCQs on the same blueprint task before drafting: a simulation that strings together the same events (dates, instruments, restrictions) as an existing MCQ is a template reuse, even with new numbers (far-tbs-02 gate: the EPS and NFP simulations were rebuilt for this).
+- **Check events against all the MCQs on the task together,** not one at a time. A "staff-drafted schedule checked against documents" framing counts as an event (far-tbs-03 gate).
+- **Rounded steps in explanations** say so: "= $8,141.67, rounded to $8,142" (far-tbs-03 gate).
+- **Exhibit titles don't name the rate, period or method** the candidate must choose; show the alternatives side by side (far-tbs-03 gate).
+- **An Analysis simulation built on a draft** has at least one task that can't be answered without the draft, and the draft has some correct lines (far-tbs-03 gate).
+- **A policy sentence that fixes a classification** (for example, which liability account is used) must not restate the recognition test the candidate is applying (far-tbs-03 gate).
+- **One task's prompt doesn't define its answer by contrast with another task's** (for example, "debit balances less credit balances" beside a task on gross receivables) (far-tbs-03 gate).
+- **ASU 2025-05:** whenever a collection after year end appears, state both elections (the practical expedient, and for private companies the collections election, which requires it) (far-tbs-03 gate).
 
 ## Scaling the bank (Hayden's decision, 2026-09-30)
 

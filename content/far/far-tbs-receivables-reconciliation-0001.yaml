@@ -105,7 +105,9 @@ exhibits:
 
     The rates are based on Tamsin''s loss history for customers of this kind, adjusted for current conditions
     and reasonable and supportable forecasts. Tamsin, a private company, does not elect the practical
-    expedient in ASU 2025-05. The rates apply to every customer balance, measured on the corrected aging.'
+    expedient in ASU 2025-05, so the related election to consider collections received after the balance
+    sheet date is not available to it. The rates apply to every customer balance, by its age at December
+    31, Year 2.'
 tasks:
 - id: t1
   type: select
@@ -145,9 +147,8 @@ tasks:
   points: 1
   unit: cents
   tolerance: 100
-  prompt: What is the correct net balance of Tamsin's accounts receivable control account at December
-    31, Year 2, after the investigation (customer debit balances less customer credit balances, before
-    the allowance)?
+  prompt: What should the balance of Tamsin's accounts receivable control account be at December 31, Year
+    2, after the investigation?
   answer: 28610000
   explanation: 'Start from the control account $295,500: remove the Hexley invoice for goods not yet delivered
     (− $15,800) and reverse the forklift proceeds wrongly credited to receivables (+ $6,400): $295,500

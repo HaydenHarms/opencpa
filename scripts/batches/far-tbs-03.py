@@ -149,7 +149,7 @@ docs1 = table(["Document", "Detail"], [
     ("Allowance for credit losses, Year 2", f"January 1 balance {d(ALLOW_JAN1)} (credit). Write-offs January–November {d(WRITE_OFFS_BEFORE_DEC)}. A {d(RECOVERY)} account written off in Year 1 was recovered in August and reinstated. No credit loss expense has been recorded for Year 2."),
 ])
 rates_body = table(["Aging category", "Expected loss rate"], [(b, f"{int(r * 100)}%") for b, r in zip(BUCKETS, RATES)]) + (
-    "\n\nThe rates are based on Tamsin's loss history for customers of this kind, adjusted for current conditions and reasonable and supportable forecasts. Tamsin, a private company, does not elect the practical expedient in ASU 2025-05. The rates apply to every customer balance, measured on the corrected aging.")
+    "\n\nThe rates are based on Tamsin's loss history for customers of this kind, adjusted for current conditions and reasonable and supportable forecasts. Tamsin, a private company, does not elect the practical expedient in ASU 2025-05, so the related election to consider collections received after the balance sheet date is not available to it. The rates apply to every customer balance, by its age at December 31, Year 2.")
 
 SIM1 = tbs(
     "far-tbs-receivables-reconciliation-0001", "Trade receivables", "Analysis",
@@ -171,7 +171,7 @@ SIM1 = tbs(
                 ("r5", "Ashdown Builders wire (January 6, Year 3)", "Neither")],
                f"The misapplied payment moved {d(MISAPPLIED)} between two customer accounts; the control account total was right, so only the subledger changes (and the aging, since the payment settled Pryor's over-60 invoices, not Ashdown's current ones). Hexley's goods were shipped FOB destination and delivered January 3, so control had not transferred at year end: the invoice comes out of both records. The forklift proceeds were never a customer receivable, so only the control account was wrongly credited. The write-off was posted to the control account but the customer is still in the aging. The January wire is a Year 3 collection; the December 31 balance stands.",
                points=2),
-        num("t2", "What is the correct net balance of Tamsin's accounts receivable control account at December 31, Year 2, after the investigation (customer debit balances less customer credit balances, before the allowance)?", true_net,
+        num("t2", "What should the balance of Tamsin's accounts receivable control account be at December 31, Year 2, after the investigation?", true_net,
             f"Start from the control account {d(gl_shown)}: remove the Hexley invoice for goods not yet delivered (− {d(FOB_DEST)}) and reverse the forklift proceeds wrongly credited to receivables (+ {d(FORKLIFT)}): {d(gl_shown)} − {d(FOB_DEST)} + {d(FORKLIFT)} = {d(true_net)}. Check from the subledger: {d(sub_net)} − {d(FOB_DEST)} − {d(WRITE_OFF)} write-off = {d(true_net)}; the misapplied payment does not change the total."),
         num("t3", "What amount should Tamsin report as accounts receivable (before the allowance) in its December 31, Year 2, balance sheet?", ar_reported,
             f"Report the customer debit balances, {d(true_debit)}. {CREDIT_CUST}'s {d(CREDIT_BAL)} credit balance is an amount Tamsin owes, reported with liabilities rather than netted against receivables (netting gives {d(true_net)})."),
@@ -289,7 +289,7 @@ SIM2 = tbs(
             f"Units on hand: {sum(u for _, u, _ in TENT_LAYERS):,} acquired − {TENT_RETURN} returned − {TENT_SOLD} sold = {tent_units}. FIFO leaves the latest costs: "
             + " + ".join(f"{u} × ${p}" for _, u, p in tent_detail) + f" = {d(tent_cost)}. The 20 returned tents come out of the November 3 layer, leaving {TENT_LAYERS[3][1] - TENT_RETURN} at ${TENT_LAYERS[3][2]}."),
         num("t2", "What is the cost of Pellworth's fuel canister inventory at December 31, Year 2?", fuel_cost,
-            f"Pellworth owns {fuel_units_avail:,} − {FUEL_SOLD:,} = {fuel_units:,} canisters; the {CONSIGNED_FUEL:,} consigned canisters belong to Ridgeline. Cost of goods available = purchases at invoice cost {d(r0(fuel_cost_avail - FUEL_FREIGHT))} + freight-in {d(FUEL_FREIGHT)} (a cost of bringing the goods to their location) = {d(r0(fuel_cost_avail))}, for an average of about ${fuel_avg} per canister. {fuel_units:,} × {d(r0(fuel_cost_avail))} ÷ {fuel_units_avail:,} = {d(fuel_cost)}. Leaving out freight gives {d(fuel_cost_no_freight)}; counting the consigned goods gives {d(fuel_cost_with_consigned)}; a simple average of the four unit prices gives {d(fuel_simple)}.",
+            f"Pellworth owns {fuel_units_avail:,} − {FUEL_SOLD:,} = {fuel_units:,} canisters; the {CONSIGNED_FUEL:,} consigned canisters belong to Ridgeline. Cost of goods available = purchases at invoice cost {d(r0(fuel_cost_avail - FUEL_FREIGHT))} + freight-in {d(FUEL_FREIGHT)} (a cost of bringing the goods to their location) = {d(r0(fuel_cost_avail))}, for an average of about ${fuel_avg} per canister. {fuel_units:,} × {d(r0(fuel_cost_avail))} ÷ {fuel_units_avail:,} = ${fuel_units * fuel_cost_avail / fuel_units_avail:,.2f}, rounded to {d(fuel_cost)}. Leaving out freight gives {d(fuel_cost_no_freight)}; counting the consigned goods gives {d(fuel_cost_with_consigned)}; a simple average of the four unit prices gives {d(fuel_simple)}.",
             points=2),
         num("t3", "What is the net realizable value of Pellworth's stove inventory at December 31, Year 2?", stove_nrv,
             f"Undamaged: {stove_good} × (${STOVE_PRICE} − ${STOVE_SELL_COST}) = {d(r0(stove_good * (STOVE_PRICE - STOVE_SELL_COST)))}. Damaged: {STOVE_DAMAGED} × (${STOVE_DMG_PRICE} − ${STOVE_DMG_COST}) = {d(r0(STOVE_DAMAGED * (STOVE_DMG_PRICE - STOVE_DMG_COST)))}. Total {d(stove_nrv)}. Replacement cost is not part of NRV."),
@@ -303,88 +303,110 @@ SIM2 = tbs(
 )
 
 
-# ── Simulation 3: PP&E rollforward with an exchange (II.D.f, Analysis) ─────────────────────────────────────────
-# Garroway Freight's equipment (trucks and trailers). Straight-line, no residual unless stated, monthly convention:
-# a full month's depreciation in the month of acquisition, none in the month of disposal.
+# ── Simulation 3: PP&E rollforward review (II.D.f, Analysis) ─────────────────────────────────────────────────
+# Revision 2 (after the review gate): new id. far-tbs-ppe-rollforward-0001 is retired and must not be reused.
+# Garroway Freight's equipment. Straight-line, no residual value unless stated, monthly convention: a full month's
+# depreciation in the month of acquisition, none in the month of disposal.
 COST_JAN1, AD_JAN1 = 4860000, 1934000
-# Correct events
-NEW_TRACTOR, TRACTOR_LIFE, TRACTOR_MONTH = 186000, 6, 10        # bought Oct 1 (Oct-Dec = 3 months)
-TRACTOR_EXTRAS = 9400                                            # dealer prep and decals, capitalized
-TRACTOR_REG = 2100                                               # annual registration: expense (staff capitalized it)
-OLD_TRAILER_COST, OLD_TRAILER_AD_JAN1, OLD_TRAILER_LIFE = 96000, 54000, 8   # reefer trailer, $12,000 a year
-EXCH_MONTH = 7                       # exchanged July 1: 6 months of Year 2 depreciation before the exchange
-OLD_TRAILER_FV, BOOT_PAID = 38000, 27000
-NEW_FLATBED_LIFE = 10
-SOLD_COST, SOLD_AD_JAN1, SOLD_ANNUAL, SOLD_MONTH, SOLD_PRICE = 142000, 118000, 14200, 4, 15500   # sold April 1 (3 months)
-SCRAP_COST = 61000                   # fully depreciated dolly scrapped Nov 30, no proceeds
-DEP_ON_JAN1_ASSETS = 512400          # Year 2 depreciation on assets held all year (excludes the four assets above)
-# Commercial substance: the flatbed serves a new construction-materials contract, so cash flows differ.
-old_trailer_ad = OLD_TRAILER_AD_JAN1 + OLD_TRAILER_COST // OLD_TRAILER_LIFE * 6 // 12
-old_trailer_bv = OLD_TRAILER_COST - old_trailer_ad
-exch_gain = OLD_TRAILER_FV - old_trailer_bv
-flatbed_cost = OLD_TRAILER_FV + BOOT_PAID
-flatbed_dep = r0(Decimal(flatbed_cost) / NEW_FLATBED_LIFE * 6 / 12)
-tractor_cost = NEW_TRACTOR + TRACTOR_EXTRAS
-tractor_dep = r0(Decimal(tractor_cost) / TRACTOR_LIFE * 3 / 12)
-sold_ad = SOLD_AD_JAN1 + SOLD_ANNUAL * 3 // 12
-sale_loss = SOLD_PRICE - (SOLD_COST - sold_ad)
-trailer_dep_2 = OLD_TRAILER_COST // OLD_TRAILER_LIFE * 6 // 12
-sold_dep_2 = SOLD_ANNUAL * 3 // 12
-dep_exp = DEP_ON_JAN1_ASSETS + tractor_dep + flatbed_dep + trailer_dep_2 + sold_dep_2
-cost_dec31 = COST_JAN1 + tractor_cost + flatbed_cost - OLD_TRAILER_COST - SOLD_COST - SCRAP_COST
-ad_dec31 = AD_JAN1 + dep_exp - old_trailer_ad - sold_ad - SCRAP_COST
-net_gain = exch_gain + sale_loss
-assert exch_gain > 0 and sale_loss < 0
-# The staff's draft rollforward
-d_add = NEW_TRACTOR + TRACTOR_REG + (old_trailer_bv + BOOT_PAID)       # flatbed at book value + boot; registration capitalized; extras expensed
-d_disp = OLD_TRAILER_COST + SOLD_PRICE                                  # proceeds instead of cost for the sale; dolly left in
-d_cost = COST_JAN1 + d_add - d_disp
-d_dep = DEP_ON_JAN1_ASSETS + r0(Decimal(NEW_TRACTOR + TRACTOR_REG) / TRACTOR_LIFE) + r0(Decimal(old_trailer_bv + BOOT_PAID) / NEW_FLATBED_LIFE * 6 / 12) + trailer_dep_2 + sold_dep_2
-d_ad_disp = old_trailer_ad + sold_ad
-d_ad = AD_JAN1 + d_dep - d_ad_disp
-d_gain = 0
+DEP_OTHER = 512400                   # Year 2 depreciation on equipment held all year other than truck T-14
+# April 1: sale of a tractor (staff handled it correctly)
+SOLD_COST, SOLD_AD_JAN1, SOLD_ANNUAL, SOLD_PRICE = 142000, 118000, 14200, 15500
+sold_dep = SOLD_ANNUAL * 3 // 12
+sold_ad = SOLD_AD_JAN1 + sold_dep
+sale_gl = SOLD_PRICE - (SOLD_COST - sold_ad)
+# July 1: exchange of a refrigerated trailer for a flatbed that opens backhaul revenue (commercial substance; boot is
+# over 25% too, so fair value applies under every reading of ASC 845 and ASC 610-20)
+OLD_COST, OLD_AD_JAN1, OLD_LIFE = 96000, 54000, 8
+OLD_FV, BOOT = 38000, 27000
+NEW_TRAILER_LIFE = 10
+old_dep = OLD_COST // OLD_LIFE * 6 // 12
+old_ad = OLD_AD_JAN1 + old_dep
+old_bv = OLD_COST - old_ad
+new_trailer = OLD_FV + BOOT                       # fair value given up plus cash
+exch_gain = OLD_FV - old_bv
+new_trailer_dep = r0(Decimal(new_trailer) / NEW_TRAILER_LIFE * 6 / 12)
+staff_trailer = old_bv + BOOT                     # staff carried over book value and recorded no gain
+staff_exch_gain = 0
+staff_trailer_dep = r0(Decimal(staff_trailer) / NEW_TRAILER_LIFE * 6 / 12)
+assert OLD_FV > old_bv
+# July 1: engine overhaul on truck T-14 that extends its life (Garroway's policy capitalizes life-extending overhauls)
+T14_COST, T14_AD_JAN1, T14_ANNUAL = 240000, 150000, 30000      # 3 years of life left at January 1
+OVERHAUL, T14_NEW_REMAINING = 54000, 5
+t14_dep_h1 = T14_ANNUAL * 6 // 12
+t14_bv_jul1 = T14_COST - T14_AD_JAN1 - t14_dep_h1 + OVERHAUL
+t14_dep_h2 = r0(Decimal(t14_bv_jul1) / T14_NEW_REMAINING * 6 / 12)
+t14_dep = t14_dep_h1 + t14_dep_h2
+staff_t14_dep = T14_ANNUAL                       # staff expensed the overhaul and kept the old rate
+# October 1: new tractor; 2% cash discount taken (paid October 8); separately priced extended service contract
+TRACTOR_LIST, DISC_RATE, SERVICE, TRACTOR_LIFE = 190000, Decimal("0.02"), 7200, 6
+tractor_cost = r0(TRACTOR_LIST * (1 - DISC_RATE))
+tractor_dep_exact = Decimal(tractor_cost) / TRACTOR_LIFE * 3 / 12
+tractor_dep = r0(tractor_dep_exact)
+staff_tractor = TRACTOR_LIST + SERVICE            # staff capitalized the list price and the service contract
+staff_tractor_dep_exact = Decimal(staff_tractor) / TRACTOR_LIFE
+staff_tractor_dep = r0(staff_tractor_dep_exact)   # and took a full year
+# Correct figures
+dep_exp = DEP_OTHER + t14_dep + tractor_dep + new_trailer_dep + old_dep + sold_dep
+cost_dec31 = COST_JAN1 + tractor_cost + new_trailer + OVERHAUL - OLD_COST - SOLD_COST
+ad_dec31 = AD_JAN1 + dep_exp - old_ad - sold_ad
+net_gl = sale_gl + exch_gain
+assert net_gl < 0
+# The staff's draft
+d_add = staff_tractor + staff_trailer
+d_dep = DEP_OTHER + staff_t14_dep + staff_tractor_dep + staff_trailer_dep + old_dep + sold_dep
+d_disp_cost = OLD_COST + SOLD_COST
+d_disp_ad = old_ad + sold_ad
+d_cost = COST_JAN1 + d_add - d_disp_cost
+d_ad = AD_JAN1 + d_dep - d_disp_ad
+d_gl = staff_exch_gain + sale_gl
+dep_over = d_dep - dep_exp
+assert dep_over > 0 and d_disp_cost == OLD_COST + SOLD_COST
 rf_draft = table(["", "Equipment, at cost", "Accumulated depreciation"], [
     ("Balance, January 1, Year 2", amt(COST_JAN1), amt(AD_JAN1)),
     ("Additions", amt(d_add), ""),
     ("Depreciation expense", "", amt(d_dep)),
-    ("Disposals", amt(-d_disp), amt(-d_ad_disp)),
+    ("Disposals", amt(-d_disp_cost), amt(-d_disp_ad)),
     ("Balance, December 31, Year 2", amt(d_cost), amt(d_ad)),
-]) + "\n\nThe staff's notes: additions are the tractor (invoice and registration) and the flatbed trailer (the old trailer's book value plus the cash paid); disposals are the refrigerated trailer at cost and the April sale at its proceeds. No gain or loss was recorded on either disposal. Depreciation on the tractor is a full year, as for all assets bought during the year."
+]) + f"\n\nNet gain (loss) on disposals recorded for Year 2: {amt(d_gl)}."
 docs3 = table(["Date", "Document", "Detail"], [
     ("April 1", "Bill of sale", f"Sold a tractor (cost {d(SOLD_COST)}; accumulated depreciation at January 1, Year 2, {d(SOLD_AD_JAN1)}; depreciation {d(SOLD_ANNUAL)} a year) for {d(SOLD_PRICE)} cash."),
-    ("July 1", "Exchange agreement with Coyle Trailer Sales", f"Garroway traded its refrigerated trailer (cost {d(OLD_TRAILER_COST)}; accumulated depreciation at January 1, Year 2, {d(OLD_TRAILER_AD_JAN1)}; {OLD_TRAILER_LIFE}-year life, no residual value) plus {d(BOOT_PAID)} cash for a new flatbed trailer. An independent appraiser Garroway engaged valued the refrigerated trailer at {d(OLD_TRAILER_FV)} on that date; Coyle's advertised list price for flatbeds of this model is {d(78000)}; dealers in the region commonly sell them at 10% to 20% below list. The flatbed hauls steel and lumber under a new three-year construction-materials contract; the refrigerated trailer hauled produce for grocery customers. The flatbed has a {NEW_FLATBED_LIFE}-year life and no residual value."),
-    ("October 1", "Dealer invoice, Kestrel Truck Center", f"New tractor {d(NEW_TRACTOR)}; dealer preparation and installation of the federally required electronic logging device and USDOT identification markings {d(TRACTOR_EXTRAS)} (charged to repairs expense); Year 2–3 registration and road tax {d(TRACTOR_REG)}, covering October 1, Year 2, to September 30, Year 3. The tractor has a {TRACTOR_LIFE}-year life and no residual value."),
-    ("November 30", "Disposal form", f"Scrapped a fully depreciated loading dolly (cost {d(SCRAP_COST)}); no proceeds. No entry was made."),
-    ("December 31", "Depreciation schedule", f"Depreciation on equipment held all year (excluding the assets above): {d(DEP_ON_JAN1_ASSETS)}. The insurer's December appraisal values the fleet at {d(3410000)}."),
+    ("July 1", "Exchange agreement with Coyle Trailer Sales", f"Garroway traded a refrigerated trailer (cost {d(OLD_COST)}; accumulated depreciation at January 1, Year 2, {d(OLD_AD_JAN1)}; {OLD_LIFE}-year life) plus {d(BOOT)} cash for a new flatbed trailer. An independent appraiser Garroway engaged valued the trailer given up at {d(OLD_FV)}. Garroway's dispatch plan: the flatbed will carry building materials on the return leg of routes that the refrigerated trailer ran back empty, for customers Garroway hasn't served before, raising the routes' expected annual revenue by about 30%. The flatbed has a {NEW_TRAILER_LIFE}-year life."),
+    ("July 1", "Shop work order, truck T-14", f"Engine overhaul, {d(OVERHAUL)}, charged to repairs expense. T-14 cost {d(T14_COST)}, had accumulated depreciation of {d(T14_AD_JAN1)} at January 1, Year 2, and was being depreciated at {d(T14_ANNUAL)} a year. The fleet manager's memo: the overhaul extends T-14's remaining life from two and a half years to {T14_NEW_REMAINING} years from July 1."),
+    ("October 1", "Dealer invoice, Kestrel Truck Center", f"New tractor, list price {d(TRACTOR_LIST)}, terms 2/10, net 30; paid October 8, taking the discount (the discount was credited to other income). Three-year extended service contract, separately priced, {d(SERVICE)}. The tractor has a {TRACTOR_LIFE}-year life."),
+    ("December 31", "Depreciation schedule", f"Depreciation on equipment held all year, other than truck T-14: {d(DEP_OTHER)}. The insurer's December appraisal values the fleet at {d(3410000)}."),
 ])
 SIM3 = tbs(
-    "far-tbs-ppe-rollforward-0001", "Property, plant and equipment", "Analysis",
-    ["ASC 360-10-30 (cost of PP&E: costs to bring an asset to the condition and location for its intended use)",
-     "ASC 360-10-35 (depreciation)", "ASC 845-10-30 (nonmonetary exchanges: fair value and commercial substance)",
+    "far-tbs-ppe-rollforward-0002", "Property, plant and equipment", "Analysis",
+    ["ASC 360-10-30 (cost of PP&E, net of cash discounts taken)",
+     "ASC 360-10-35 (depreciation; revising the remaining life after a life-extending expenditure is a change in estimate, ASC 250-10-45-17)",
+     "ASC 845-10 (nonmonetary exchanges: fair value, commercial substance, and the 25% monetary consideration threshold)",
      "ASC 360-10-40 (derecognition: gain or loss on disposal)"],
     "Year 2 equipment rollforward review",
-    f"""Garroway Freight Co. owns trucks and trailers. Its staff accountant drafted the Year 2 rollforward of the equipment account and its accumulated depreciation (Exhibit 1). You are reviewing it against the supporting documents (Exhibit 2). Garroway uses the straight-line method and takes a full month of depreciation in the month an asset is acquired and none in the month it is disposed of. The January 1 balances are correct, and the staff's depreciation figure for equipment held all year is correct. Round every amount to the nearest dollar.""",
+    f"""Garroway Freight Co. owns trucks and trailers. Its staff accountant drafted the Year 2 rollforward of the equipment account and its accumulated depreciation (Exhibit 1); you are reviewing it against the supporting documents (Exhibit 2). Garroway uses the straight-line method with no residual values, takes a full month of depreciation in the month an asset is acquired and none in the month it is disposed of, and capitalizes overhauls that extend an asset's useful life to the equipment account. The January 1 balances and the depreciation figure for equipment held all year (other than truck T-14) are correct. Round every amount to the nearest dollar.""",
     [("Exhibit 1: Draft rollforward prepared by the staff accountant", rf_draft),
      ("Exhibit 2: Supporting documents", docs3)],
     [
-        select("t1", "For each item, indicate how Garroway should account for it in its equipment records for Year 2.",
-               ["Add to equipment cost", "Charge to expense or a prepaid asset", "Remove from equipment and accumulated depreciation", "No entry"],
-               [("r1", "Kestrel invoice: dealer preparation, logging device and USDOT markings", "Add to equipment cost"),
-                ("r2", "Kestrel invoice: registration and road tax", "Charge to expense or a prepaid asset"),
-                ("r3", "Loading dolly scrapped November 30", "Remove from equipment and accumulated depreciation"),
-                ("r4", "Insurer's December appraisal of the fleet", "No entry")],
-               "Preparing a new tractor for service is part of the cost of getting it ready for its intended use, so the preparation, the required logging device and the USDOT markings (the tractor can't legally operate without them) are capitalized (the staff expensed them). The registration buys the right to operate the tractor for twelve months, so it is a prepaid operating cost, not equipment (the staff capitalized it). The scrapped dolly must come out of both accounts even though it is fully depreciated. PP&E is carried at cost less depreciation, so an appraisal changes nothing.",
+        select("t1", "For each line of the staff's draft, indicate whether it is correct or misstated.",
+               ["Correct", "Misstated"],
+               [("r1", "Additions", "Misstated"),
+                ("r2", "Depreciation expense", "Misstated"),
+                ("r3", "Disposals, equipment at cost", "Correct"),
+                ("r4", "Disposals, accumulated depreciation", "Correct"),
+                ("r5", "Net gain (loss) on disposals", "Misstated")],
+               f"Additions should hold the tractor at its cash price net of the discount (not list price plus the service contract, which is a prepaid service), the flatbed at the fair value given up plus cash (not book value plus cash), and the T-14 overhaul. Depreciation is misstated by all three. The disposals remove the right cost ({d(OLD_COST)} + {d(SOLD_COST)}) and the right accumulated depreciation, brought up to the disposal dates ({d(old_ad)} + {d(sold_ad)}). The draft's net loss leaves out the {d(exch_gain)} gain on the exchange.",
                points=2),
         num("t2", "What should Garroway report as equipment, at cost, at December 31, Year 2?", cost_dec31,
-            f"{d(COST_JAN1)} + tractor {d(NEW_TRACTOR)} + preparation, logging device and markings {d(TRACTOR_EXTRAS)} + flatbed {d(flatbed_cost)} (the refrigerated trailer's fair value {d(OLD_TRAILER_FV)} + cash {d(BOOT_PAID)}; the exchange has commercial substance because the flatbed's cash flows, from a new contract and different customers, differ significantly from the refrigerated trailer's) − refrigerated trailer {d(OLD_TRAILER_COST)} − tractor sold {d(SOLD_COST)} − dolly {d(SCRAP_COST)} = {d(cost_dec31)}. The registration is a prepaid operating cost, and the flatbed's list price is not evidence of fair value when the trade-in's appraised value is available.",
+            f"Tractor: {d(TRACTOR_LIST)} × 98% = {d(tractor_cost)}. Flatbed: fair value of the trailer given up {d(OLD_FV)} + cash {d(BOOT)} = {d(new_trailer)}. The exchange has commercial substance: the flatbed earns backhaul revenue from new customers, so its cash flows differ significantly from the refrigerated trailer's. (The cash is also more than 25% of the exchange's fair value, which makes it a monetary exchange measured at fair value in any case, and derecognizing the trailer under ASC 610-20 gives the same fair value and gain.) The flatbed's own fair value isn't given, so its cost is the fair value given up plus the cash. Carrying over the {d(old_bv)} book value gives {d(staff_trailer)}. Overhaul: {d(OVERHAUL)}. Equipment = {d(COST_JAN1)} + {d(tractor_cost)} + {d(new_trailer)} + {d(OVERHAUL)} − {d(OLD_COST)} − {d(SOLD_COST)} = {d(cost_dec31)}.",
             points=2),
         num("t3", "What is Garroway's depreciation expense on equipment for Year 2?", dep_exp,
-            f"Assets held all year {d(DEP_ON_JAN1_ASSETS)} + tractor {d(tractor_cost)} ÷ {TRACTOR_LIFE} × 3/12 = {d(tractor_dep)} + flatbed {d(flatbed_cost)} ÷ {NEW_FLATBED_LIFE} × 6/12 = {d(flatbed_dep)} + refrigerated trailer to June 30, {d(OLD_TRAILER_COST // OLD_TRAILER_LIFE)} × 6/12 = {d(trailer_dep_2)} + tractor sold, {d(SOLD_ANNUAL)} × 3/12 = {d(sold_dep_2)}. Total {d(dep_exp)}."),
+            f"Equipment held all year other than T-14: {d(DEP_OTHER)}. T-14: January–June {d(T14_ANNUAL)} × 6/12 = {d(t14_dep_h1)}; carrying amount at July 1 is {d(T14_COST)} − {d(T14_AD_JAN1)} − {d(t14_dep_h1)} + {d(OVERHAUL)} = {d(t14_bv_jul1)}, and July–December is {d(t14_bv_jul1)} ÷ {T14_NEW_REMAINING} × 6/12 = {d(t14_dep_h2)}. New tractor: {d(tractor_cost)} ÷ {TRACTOR_LIFE} × 3/12 = ${tractor_dep_exact:,.2f}, rounded to {d(tractor_dep)}. Flatbed: {d(new_trailer)} ÷ {NEW_TRAILER_LIFE} × 6/12 = {d(new_trailer_dep)}. Old trailer, January–June: {d(old_dep)}. Tractor sold, January–March: {d(sold_dep)}. Total: {d(DEP_OTHER)} + {d(t14_dep)} + {d(tractor_dep)} + {d(new_trailer_dep)} + {d(old_dep)} + {d(sold_dep)} = {d(dep_exp)}."),
         num("t4", "What should Garroway report as accumulated depreciation on equipment at December 31, Year 2?", ad_dec31,
-            f"{d(AD_JAN1)} + depreciation {d(dep_exp)} − refrigerated trailer {d(old_trailer_ad)} ({d(OLD_TRAILER_AD_JAN1)} + {d(trailer_dep_2)}) − tractor sold {d(sold_ad)} ({d(SOLD_AD_JAN1)} + {d(sold_dep_2)}) − dolly {d(SCRAP_COST)} = {d(ad_dec31)}.",
+            f"{d(AD_JAN1)} + depreciation {d(dep_exp)} − old trailer {d(old_ad)} − tractor sold {d(sold_ad)} = {d(ad_dec31)}.",
             points=2),
-        num("t5", "What net gain or loss on equipment disposals should Garroway report for Year 2? Enter a net loss as a negative number.", net_gain,
-            f"Exchange: fair value {d(OLD_TRAILER_FV)} − book value {d(old_trailer_bv)} ({d(OLD_TRAILER_COST)} − {d(old_trailer_ad)}) = gain {d(exch_gain)}. Sale: {d(SOLD_PRICE)} − book value {d(SOLD_COST - sold_ad)} = loss {d(-sale_loss)}. The dolly was fully depreciated and scrapped for nothing: no gain or loss. Net {d(net_gain)}."),
+        num("t5", "By how much does the staff's draft overstate (understate) depreciation expense for Year 2? Enter an understatement as a negative number.", dep_over,
+            f"Draft {d(d_dep)} − correct {d(dep_exp)} = {d(dep_over)}. The draft takes a full year on {d(staff_tractor)} for the tractor ({d(staff_tractor_dep)} against {d(tractor_dep)}), keeps T-14 at {d(T14_ANNUAL)} (against {d(t14_dep)}), and depreciates the flatbed from {d(staff_trailer)} ({d(staff_trailer_dep)} against {d(new_trailer_dep)})."),
+        num("t6", "What net gain or loss on equipment disposals should Garroway report for Year 2? Enter a net loss as a negative number.", net_gl,
+            f"Sale: {d(SOLD_PRICE)} − book value {d(SOLD_COST - sold_ad)} ({d(SOLD_COST)} − {d(sold_ad)}) = {d(sale_gl)}. Exchange: fair value {d(OLD_FV)} − book value {d(old_bv)} = gain {d(exch_gain)}. Net {d(net_gl)}."),
     ],
 )
 
@@ -425,15 +447,15 @@ SIM4 = tbs(
     ["ASC 835-30-35 (interest method: amortization of discount)",
      "ASC 470-50-40 (extinguishment of debt: gain or loss is the difference between the reacquisition price and the net carrying amount)"],
     "Bonds payable: issue, interest and a partial retirement",
-    f"""Halvard Corp. issued bonds on January 1, Year 1 (Exhibit 1). It amortizes discount or premium by the effective interest method and keeps a separate discount or premium account. On October 1, Year 2, it bought back part of the issue in the open market (Exhibit 3) and cancelled the bonds. Round every amount to the nearest dollar at each step, and compute interest for part of a period by prorating the period's effective interest by months.""",
+    f"""Halvard Corp. issued bonds on January 1, Year 1 (Exhibit 1). It amortizes discount or premium by the effective interest method and keeps a separate discount or premium account. On October 1, Year 2, it bought back part of the issue in the open market (Exhibit 3) and cancelled the bonds. Halvard records interest only on the interest payment dates and when bonds are retired. Round every amount to the nearest dollar at each step, and compute interest for part of a period by prorating the period's effective interest by months.""",
     [("Exhibit 1: Bond terms (from the indenture)", table(["Term", "Detail"], [
         ("Face amount", d(FACE)), ("Stated rate", "5% a year, paid each June 30 and December 31"),
         ("Dated and issued", "January 1, Year 1"), ("Maturity", "December 31, Year 8"),
         ("Call provision", "Callable at Halvard's option at 102 on any interest date after December 31, Year 3"),
         ("Market yield at issue", "6% a year, compounded semiannually")])),
-     ("Exhibit 2: Present value factors (3% per period)", table(["Factor", "8 periods", "16 periods"], [
-        ("Present value of 1", "0.78941", str(PV_1)), ("Present value of an ordinary annuity of 1", "7.01969", str(PV_A))])
-        + "\n\nAt 2.5% per period, the present value of 1 for 16 periods is 0.67362 and of an ordinary annuity of 1 is 13.05500."),
+     ("Exhibit 2: Present value factors", table(["Factor", "2.5%, 8 periods", "2.5%, 16 periods", "3%, 8 periods", "3%, 16 periods"], [
+        ("Present value of 1", "0.82075", "0.67362", "0.78941", str(PV_1)),
+        ("Present value of an ordinary annuity of 1", "7.17014", "13.05500", "7.01969", str(PV_A))])),
      ("Exhibit 3: Broker's confirmation, October 1, Year 2", f"Halvard purchased {d(ret_face)} face amount of its 5% bonds due Year 8 at 98, plus accrued interest from July 1. Settlement {d(rep_cash + ret_cash_int)}: principal {d(rep_cash)}, accrued interest {d(ret_cash_int)}. The bonds were delivered to the trustee for cancellation.")],
     [
         num("t1", "At what amount should Halvard record the bonds on January 1, Year 1?", price,
@@ -443,7 +465,7 @@ SIM4 = tbs(
         num("t3", "What gain or loss should Halvard recognize on the October 1, Year 2, retirement? Enter a loss as a negative number.", gain_ret,
             f"Carrying amount at June 30, Year 2: {d(cv_jun30_y2)}; the retired 40% is {d(ret_cv_jul1)}. Interest to October 1 on that portion: {d(ret_cv_jul1)} × 3% × 3/6 = {d(ret_ie)}, of which {d(ret_cash_int)} is paid in cash, so the carrying amount rises to {d(ret_cv)}. Reacquisition price {d(rep_cash)} (the accrued interest is not part of it). Net carrying amount {d(ret_cv)} − reacquisition price {d(rep_cash)} = {d(gain_ret)}, a loss of {d(-gain_ret)}. Skipping the July–September amortization gives {d(gain_no_partial)}; the call price doesn't apply to an open-market purchase (using it gives {d(gain_at_call)}).",
             points=2),
-        je("t4", "Prepare Halvard's journal entry on October 1, Year 2, for the interest to that date on the bonds retired and their retirement, as a single entry.",
+        je("t4", "Prepare Halvard's journal entry on October 1, Year 2, to record the retirement, as a single entry.",
            ["Bonds payable", "Discount on bonds payable", "Premium on bonds payable", "Interest expense", "Interest payable",
             "Cash", "Gain on extinguishment of debt", "Loss on extinguishment of debt"],
            [("Bonds payable", ret_face, 0), ("Interest expense", ret_ie, 0),
@@ -571,9 +593,9 @@ gl6 = table(["", "Amount"], [
 SIM6 = tbs(
     "far-tbs-payables-reconciliation-0001", "Payables and accrued liabilities", "Analysis",
     ["ASC 405-10 (liabilities)", "ASC 330-10 (title to goods in transit: FOB shipping point and FOB destination)",
-     "Search for unrecorded liabilities and vendor statement reconciliation practice"],
+],
     "Year-end accounts payable: unrecorded liabilities and reconciliation",
-    f"""Brackwell Manufacturing Co. closes its books on December 31, Year 2. It reports every amount owed to vendors for goods and services it has received, or that it owns in transit, as accounts payable, whether or not the invoice has arrived. The controller is closing accounts payable. The exhibits show the subledger and control account balances, a December entry in the cash disbursements journal, Brackwell's January, Year 3, disbursements, and a statement from its largest resin supplier, Corran Polymers. No entry has been made for any finding yet. Enter every amount in whole dollars, and enter a decrease as a negative number.""",
+    f"""Brackwell Manufacturing Co. closes its books on December 31, Year 2. It has no accrued-liabilities account: every amount it owes a vendor for goods or services is reported as accounts payable, whether or not the invoice has arrived. The controller is closing accounts payable. The exhibits show the subledger and control account balances, a December entry in the cash disbursements journal, Brackwell's January, Year 3, disbursements, and a statement from its largest resin supplier, Corran Polymers. No entry has been made for any finding yet. Enter every amount in whole dollars, and enter a decrease as a negative number.""",
     [("Exhibit 1: Balances at December 31, Year 2", gl6),
      ("Exhibit 2: Cash disbursements, January, Year 3", disb6),
      ("Exhibit 3: Corran Polymers statement of account, December, Year 2", stmt6)],
@@ -592,7 +614,7 @@ SIM6 = tbs(
             f"Subledger {d(SUB6)} + Oakhurst {d(UNREC_RECEIVED)} + Whitcombe & Hale {d(LEGAL)} + Corran invoice 7810 {d(IN_TRANSIT)} − Corran credit memo {d(CREDIT_MEMO)} = {d(correct6)}. Including Lindqvist's FOB destination invoice gives {d(wrong_with_dest)}; adding back the check in the mail gives {d(wrong_with_mail)}. The January service contract and the January Ferris invoice are Year 3 liabilities, and the December Ferris invoice is already recorded.",
             points=2),
         num("t3", "By what net amount must Brackwell adjust its general ledger accounts payable control account? Enter a decrease as a negative number.", gl_adj,
-            f"The control account ({d(GL6)}) is also understated by the {d(COD_EQUIP)} cash-on-delivery payment debited to it; that purchase never created a payable. Correct balance {d(correct6)} − {d(GL6)} = {d(gl_adj)}: the four findings, net {d(sub_adj)}, plus {d(COD_EQUIP)}."),
+            f"The control account ({d(GL6)}) is also understated by the {d(COD_EQUIP)} cash-on-delivery payment debited to it; that purchase never created a payable. Adjustment = {d(correct6)} − {d(GL6)} = {d(gl_adj)}: the four findings, net {d(sub_adj)}, plus {d(COD_EQUIP)}."),
         num("t4", "By what net amount must Brackwell adjust its accounts payable subledger? Enter a decrease as a negative number.", sub_adj,
             f"{d(UNREC_RECEIVED)} + {d(LEGAL)} + {d(IN_TRANSIT)} − {d(CREDIT_MEMO)} = {d(sub_adj)}. The cash-on-delivery error was in the general ledger only."),
         num("t5", "After the adjustments, what balance should Brackwell's subledger show for Corran Polymers at December 31, Year 2?", correct_vendor,
@@ -614,7 +636,7 @@ if __name__ == "__main__":
         print(it["id"], it["blueprint"]["skill"], len(it["tasks"]), "tasks,", pts, "points")
     print("receivables", gl_shown, sub_net, true_net, true_debit, bucket_true, allow_req, allow_shown_aging, allow_no_misapp, allow_before, expense)
     print("inventory", tent_units, tent_cost, fuel_units, fuel_cost, stove_cost, stove_nrv, tent_nrv, fuel_nrv, writedown, carrying)
-    print("ppe", d_cost, d_ad, cost_dec31, dep_exp, ad_dec31, exch_gain, sale_loss, net_gain)
+    print("ppe", d_cost, d_ad, d_dep, d_gl, cost_dec31, dep_exp, ad_dec31, dep_over, net_gl)
     print("bonds", price, int_y1, cv_y1, cv_jun30_y2, ret_cv, gain_ret, ret_disc, int_y2)
     print("equity", goodwill5, amort_y1, eq_y1, ca_y1, amort_y2, eq_y2, ca_y2)
     print("payables", GL6, correct6, gl_adj, sub_adj, vend_stmt, correct_vendor)
