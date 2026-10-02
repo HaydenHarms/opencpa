@@ -39,6 +39,36 @@ def _amounts(text):
     return tuple(float(a.replace(",", "")) for a in found)
 
 
+_SIGNED = re.compile(r"\$([\d,]+(?:\.\d+)?)(?:\s+(increase|decrease|gain|loss)\b)?")
+
+
+def _signs(text):
+    """The direction word after each amount: -1 for a decrease or loss, +1 otherwise."""
+    return tuple(-1 if w in ("decrease", "loss") else 1 for _, w in _SIGNED.findall(text))
+
+
+def sort_keys(choices):
+    """Ascending sort keys for numeric choices. An amount position whose choices mix directions
+    ("$5,000 decrease" beside "$3,000 increase", losses beside gains) sorts by signed value, losses
+    first; a position where every choice runs the same way sorts by amount."""
+    vals = [_amounts(c["text"]) for c in choices]
+    signs = [_signs(c["text"]) for c in choices]
+    keys = []
+    for v, sg in zip(vals, signs):
+        k = []
+        for i, a in enumerate(v):
+            col = {s[i] for s in signs if i < len(s)}
+            k.append(a * sg[i] if len(col) > 1 and i < len(sg) else a)
+        keys.append(tuple(k))
+    return keys
+
+
+def sort_numeric(choices):
+    """Numeric choices in exam order (see sort_keys)."""
+    keys = sort_keys(choices)
+    return [c for _, c in sorted(zip(keys, choices), key=lambda kc: kc[0])]
+
+
 def is_numeric(choices):
     """True when every choice leads with a number or dollar amount, i.e. the item is a 'pick the number' item."""
     return all(_amount(c["text"]) is not None for c in choices)
@@ -47,7 +77,7 @@ def is_numeric(choices):
 def finalize(items):
     """Order choices the way the exam does, then report anything that cues the answer.
 
-    - Numeric items: choices sorted ascending by their leading amount (AICPA convention).
+    - Numeric items: choices sorted ascending (AICPA convention; mixed directions by signed value, see sort_keys).
       The correct answer lands wherever its value falls; do NOT shuffle these.
     - Word items: the correct choice rotates through A-D across word items so the key's
       position carries no signal. The relative order of the other choices is preserved.
@@ -57,7 +87,7 @@ def finalize(items):
         ch = it["choices"]
         right = next(c for c in ch if c["id"] == it["answer"])
         if is_numeric(ch):
-            new = sorted(ch, key=lambda c: _amounts(c["text"]))
+            new = sort_numeric(ch)
         else:
             others = [c for c in ch if c is not right]
             pos = word_n % len(ch)
@@ -107,7 +137,7 @@ def attach_variants(item, variants):
         ch = v["choices"]
         right = next(c for c in ch if c["id"] == v["answer"])
         if is_numeric(ch):
-            new = sorted(ch, key=lambda c: _amounts(c["text"]))
+            new = sort_numeric(ch)
         else:
             others = [c for c in ch if c is not right]
             pos = "ABCDEF".index(item["answer"])
@@ -162,7 +192,7 @@ def _audit_one(it):
     if len({c["text"] for c in ch}) != len(ch):
         warnings.append(f"{it['id']}: duplicate choice text")
     if is_numeric(ch):
-        vals = [_amounts(c["text"]) for c in ch]
+        vals = sort_keys(ch)
         if vals != sorted(vals):
             warnings.append(f"{it['id']}: numeric choices not ascending")
     return warnings

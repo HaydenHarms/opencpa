@@ -19,22 +19,22 @@ stem: 'Irwin Co. makes 10,000 units a year of a component at these costs per uni
   affect Irwin''s annual operating income?'
 choices:
 - id: A
-  text: $10,000 increase
-  rationale: Leaves out the $25,000 of rent Irwin could earn on the freed space, an opportunity cost of
-    continuing to make the part.
-- id: B
-  text: $35,000 increase
-  rationale: 'Correct. Relevant cost to make: $250,000 variable + $60,000 avoidable salary + $25,000 forgone
-    rent = $335,000, versus $300,000 to buy.'
-- id: C
   text: $50,000 decrease
   rationale: Compares only variable costs ($250,000) with the purchase price, ignoring the avoidable salary
     and the rent.
+- id: B
+  text: $10,000 increase
+  rationale: Leaves out the $25,000 of rent Irwin could earn on the freed space, an opportunity cost of
+    continuing to make the part.
+- id: C
+  text: $35,000 increase
+  rationale: 'Correct. Relevant cost to make: $250,000 variable + $60,000 avoidable salary + $25,000 forgone
+    rent = $335,000, versus $300,000 to buy.'
 - id: D
   text: $75,000 increase
   rationale: Treats all $100,000 of fixed overhead as avoidable. Only the $60,000 salary goes away if
     Irwin buys.
-answer: B
+answer: C
 explanation: 'Relevant costs are those that differ between the alternatives. Making: variable costs 10,000
   × $25 = $250,000, avoidable fixed overhead $60,000, and the $25,000 rent forgone = $335,000. Buying:
   10,000 × $30 = $300,000. Buying raises operating income by $35,000. The other $40,000 of fixed overhead

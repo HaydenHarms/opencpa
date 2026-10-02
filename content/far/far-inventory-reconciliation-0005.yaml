@@ -11,15 +11,16 @@ review:
   - ASC 330-10 (inventory; goods in transit between locations; freight-out is a selling cost)
   - 'ASC 606-10-55-85 to 55-88 (customer acceptance: products delivered for trial or evaluation)'
   notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'At December 31, Summercourt Housewares Co.''s perpetual inventory subledger totals $1,356,250,
-  and its general ledger inventory account shows $1,420,900. The controller''s investigation finds: goods
-  costing $21,850 that were shipped on December 30 from Summercourt''s east warehouse to its west warehouse,
-  arriving January 3, were removed from the east records but not yet added to the west records; goods
-  costing $48,200 were sent on December 22 to a customer that may examine them and return them by January
-  21 with no obligation to buy, and both records treated them as sold; a December cycle count found goods
-  costing $18,460 missing, which the subledger wrote off but the general ledger did not; and $24,340 of
-  freight paid to deliver goods to customers in December was debited to inventory in the general ledger.
-  What amount should Summercourt report as inventory at December 31?'
+stem: 'Summercourt''s staff accountant prepared a draft schedule reconciling the perpetual inventory subledger,
+  $1,356,250 at December 31, to the general ledger inventory account, $1,420,900. The controller finds
+  the draft: accepted both records'' treatment, as sold, of $48,200 of goods sent on December 22 to a
+  customer that may examine them and return them by January 21 with no obligation to buy; didn''t pick
+  up $21,850 of goods shipped on December 30 from Summercourt''s east warehouse to its west warehouse,
+  arriving January 3, which the subledger had removed from the east warehouse''s records but not yet added
+  to the west warehouse''s; omitted from the general ledger a December cycle count''s write-off of $18,460
+  of goods found missing, which the subledger had already recorded; and left $24,340 of freight paid in
+  December to deliver goods to customers debited to inventory in the general ledger. What amount should
+  Summercourt report as inventory at December 31?'
 choices:
 - id: A
   text: $1,356,250
@@ -45,15 +46,16 @@ explanation: 'Subledger: the goods between warehouses are still Summercourt''s (
   on approval, − $18,460 for the shrinkage and − $24,340 for the freight-out, a selling cost: $1,420,900
   + $48,200 − $18,460 − $24,340 = $1,426,300. Inventory = $1,426,300.'
 variants:
-- stem: 'At December 31, Mitchell Housewares Co.''s perpetual inventory subledger totals $935,500, and
-    its general ledger inventory account shows $1,003,870. The controller''s investigation finds: goods
-    costing $17,600 that were shipped on December 30 from Mitchell''s north warehouse to its south warehouse,
-    arriving January 3, were removed from the north records but not yet added to the south records; goods
-    costing $29,300 were sent on December 22 to a customer that may examine them and return them by January
-    21 with no obligation to buy, and both records treated them as sold; a December cycle count found
-    goods costing $15,850 missing, which the subledger wrote off but the general ledger did not; and $34,920
-    of freight paid to deliver goods to customers in December was debited to inventory in the general
-    ledger. What amount should Mitchell report as inventory at December 31?'
+- stem: 'Mitchell''s staff accountant prepared a draft schedule reconciling the perpetual inventory subledger,
+    $935,500 at December 31, to the general ledger inventory account, $1,003,870. The controller finds
+    the draft: accepted both records'' treatment, as sold, of $29,300 of goods sent on December 22 to
+    a customer that may examine them and return them by January 21 with no obligation to buy; didn''t
+    pick up $17,600 of goods shipped on December 30 from Mitchell''s north warehouse to its south warehouse,
+    arriving January 3, which the subledger had removed from the north warehouse''s records but not yet
+    added to the south warehouse''s; omitted from the general ledger a December cycle count''s write-off
+    of $15,850 of goods found missing, which the subledger had already recorded; and left $34,920 of freight
+    paid in December to deliver goods to customers debited to inventory in the general ledger. What amount
+    should Mitchell report as inventory at December 31?'
   choices:
   - id: A
     text: $953,100
@@ -78,15 +80,16 @@ variants:
     ended (+ $29,300): $935,500 + $17,600 + $29,300 = $982,400. General ledger: + $29,300 for the goods
     on approval, − $15,850 for the shrinkage and − $34,920 for the freight-out, a selling cost: $1,003,870
     + $29,300 − $15,850 − $34,920 = $982,400. Inventory = $982,400.'
-- stem: 'At December 31, Topsham Housewares Co.''s perpetual inventory subledger totals $1,767,400, and
-    its general ledger inventory account shows $1,866,900. The controller''s investigation finds: goods
-    costing $36,400 that were shipped on December 30 from Topsham''s city warehouse to its harbor warehouse,
-    arriving January 3, were removed from the city records but not yet added to the harbor records; goods
-    costing $70,700 were sent on December 22 to a customer that may examine them and return them by January
-    21 with no obligation to buy, and both records treated them as sold; a December cycle count found
-    goods costing $21,300 missing, which the subledger wrote off but the general ledger did not; and $41,800
-    of freight paid to deliver goods to customers in December was debited to inventory in the general
-    ledger. What amount should Topsham report as inventory at December 31?'
+- stem: 'Topsham''s staff accountant prepared a draft schedule reconciling the perpetual inventory subledger,
+    $1,767,400 at December 31, to the general ledger inventory account, $1,866,900. The controller finds
+    the draft: accepted both records'' treatment, as sold, of $70,700 of goods sent on December 22 to
+    a customer that may examine them and return them by January 21 with no obligation to buy; didn''t
+    pick up $36,400 of goods shipped on December 30 from Topsham''s city warehouse to its harbor warehouse,
+    arriving January 3, which the subledger had removed from the city warehouse''s records but not yet
+    added to the harbor warehouse''s; omitted from the general ledger a December cycle count''s write-off
+    of $21,300 of goods found missing, which the subledger had already recorded; and left $41,800 of freight
+    paid in December to deliver goods to customers debited to inventory in the general ledger. What amount
+    should Topsham report as inventory at December 31?'
   choices:
   - id: A
     text: $1,803,800
@@ -111,15 +114,16 @@ variants:
     ended (+ $70,700): $1,767,400 + $36,400 + $70,700 = $1,874,500. General ledger: + $70,700 for the
     goods on approval, − $21,300 for the shrinkage and − $41,800 for the freight-out, a selling cost:
     $1,866,900 + $70,700 − $21,300 − $41,800 = $1,874,500. Inventory = $1,874,500.'
-- stem: 'At December 31, Shaldon Housewares Co.''s perpetual inventory subledger totals $622,300, and
-    its general ledger inventory account shows $679,200. The controller''s investigation finds: goods
-    costing $12,900 that were shipped on December 30 from Shaldon''s riverside warehouse to its airport
-    warehouse, arriving January 3, were removed from the riverside records but not yet added to the airport
-    records; goods costing $19,600 were sent on December 22 to a customer that may examine them and return
-    them by January 21 with no obligation to buy, and both records treated them as sold; a December cycle
-    count found goods costing $14,700 missing, which the subledger wrote off but the general ledger did
-    not; and $29,300 of freight paid to deliver goods to customers in December was debited to inventory
-    in the general ledger. What amount should Shaldon report as inventory at December 31?'
+- stem: 'Shaldon''s staff accountant prepared a draft schedule reconciling the perpetual inventory subledger,
+    $622,300 at December 31, to the general ledger inventory account, $679,200. The controller finds the
+    draft: accepted both records'' treatment, as sold, of $19,600 of goods sent on December 22 to a customer
+    that may examine them and return them by January 21 with no obligation to buy; didn''t pick up $12,900
+    of goods shipped on December 30 from Shaldon''s riverside warehouse to its airport warehouse, arriving
+    January 3, which the subledger had removed from the riverside warehouse''s records but not yet added
+    to the airport warehouse''s; omitted from the general ledger a December cycle count''s write-off of
+    $14,700 of goods found missing, which the subledger had already recorded; and left $29,300 of freight
+    paid in December to deliver goods to customers debited to inventory in the general ledger. What amount
+    should Shaldon report as inventory at December 31?'
   choices:
   - id: A
     text: $641,900

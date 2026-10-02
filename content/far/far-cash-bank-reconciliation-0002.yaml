@@ -19,22 +19,22 @@ stem: 'Dunmore Co.''s general ledger cash balance at March 31 is $34,625, and it
   what adjustment should Dunmore make to its general ledger cash balance?'
 choices:
 - id: A
-  text: $1,125 decrease
-  rationale: Correct. −$45 + $1,200 − $2,280 = −$1,125, bringing the ledger to $33,500, which agrees with
-    the adjusted bank balance.
-- id: B
-  text: $1,155 increase
-  rationale: Records the service charge and the electronic payment but not the duplicate $2,280 deposit,
-    which overstates the ledger.
-- id: C
-  text: $1,625 decrease
-  rationale: Also deducts the $500 bank error in the ledger. The bank's error is corrected by the bank;
-    Dunmore's books are right for that item.
-- id: D
   text: $3,525 decrease
   rationale: Deducts the $1,200 electronic payment instead of adding it. Cash the bank received for Dunmore
     increases Dunmore's cash.
-answer: A
+- id: B
+  text: $1,625 decrease
+  rationale: Also deducts the $500 bank error in the ledger. The bank's error is corrected by the bank;
+    Dunmore's books are right for that item.
+- id: C
+  text: $1,125 decrease
+  rationale: Correct. −$45 + $1,200 − $2,280 = −$1,125, bringing the ledger to $33,500, which agrees with
+    the adjusted bank balance.
+- id: D
+  text: $1,155 increase
+  rationale: Records the service charge and the electronic payment but not the duplicate $2,280 deposit,
+    which overstates the ledger.
+answer: C
 explanation: 'Bank side: $35,200 + $4,100 deposits in transit − $6,300 outstanding checks + $500 bank
   error = $33,500. Book side: $34,625 − $45 service charge + $1,200 electronic payment − $2,280 duplicate
   deposit = $33,500. Only the book-side items need journal entries: a net decrease of $1,125.'
@@ -47,22 +47,22 @@ variants:
     the reconciliation, what adjustment should Elmore make to its general ledger cash balance?'
   choices:
   - id: A
-    text: $470 increase
-    rationale: Records the service charge and the electronic payment but not the duplicate $4,000 deposit,
-      which overstates the ledger.
-  - id: B
-    text: $2,800 decrease
-    rationale: Adjusts the books for the deposits in transit and outstanding checks. Those are timing
-      items that adjust the bank balance, not the ledger.
-  - id: C
-    text: $3,530 decrease
-    rationale: Correct. −$30 + $500 − $4,000 = −$3,530, bringing the ledger to $48,850, which agrees with
-      the adjusted bank balance.
-  - id: D
     text: $4,130 decrease
     rationale: Also deducts the $600 bank error in the ledger. The bank's error is corrected by the bank;
       Elmore's books are right for that item.
-  answer: C
+  - id: B
+    text: $3,530 decrease
+    rationale: Correct. −$30 + $500 − $4,000 = −$3,530, bringing the ledger to $48,850, which agrees with
+      the adjusted bank balance.
+  - id: C
+    text: $2,800 decrease
+    rationale: Adjusts the books for the deposits in transit and outstanding checks. Those are timing
+      items that adjust the bank balance, not the ledger.
+  - id: D
+    text: $470 increase
+    rationale: Records the service charge and the electronic payment but not the duplicate $4,000 deposit,
+      which overstates the ledger.
+  answer: B
   explanation: 'Bank side: $51,050 + $6,200 deposits in transit − $9,000 outstanding checks + $600 bank
     error = $48,850. Book side: $52,380 − $30 service charge + $500 electronic payment − $4,000 duplicate
     deposit = $48,850. Only the book-side items need journal entries: a net decrease of $3,530.'
@@ -74,22 +74,22 @@ variants:
     the reconciliation, what adjustment should Fenton make to its general ledger cash balance?'
   choices:
   - id: A
-    text: $1,600 decrease
-    rationale: Adjusts the books for the deposits in transit and outstanding checks. Those are timing
-      items that adjust the bank balance, not the ledger.
-  - id: B
-    text: $2,675 increase
-    rationale: Correct. −$25 + $3,600 − $900 = +$2,675, bringing the ledger to $21,125, which agrees with
-      the adjusted bank balance.
-  - id: C
-    text: $3,575 increase
-    rationale: Records the service charge and the electronic payment but not the duplicate $900 deposit,
-      which overstates the ledger.
-  - id: D
     text: $4,525 decrease
     rationale: Deducts the $3,600 electronic payment instead of adding it. Cash the bank received for
       Fenton increases Fenton's cash.
-  answer: B
+  - id: B
+    text: $1,600 decrease
+    rationale: Adjusts the books for the deposits in transit and outstanding checks. Those are timing
+      items that adjust the bank balance, not the ledger.
+  - id: C
+    text: $2,675 increase
+    rationale: Correct. −$25 + $3,600 − $900 = +$2,675, bringing the ledger to $21,125, which agrees with
+      the adjusted bank balance.
+  - id: D
+    text: $3,575 increase
+    rationale: Records the service charge and the electronic payment but not the duplicate $900 deposit,
+      which overstates the ledger.
+  answer: C
   explanation: 'Bank side: $22,325 + $2,500 deposits in transit − $4,100 outstanding checks + $400 bank
     error = $21,125. Book side: $18,450 − $25 service charge + $3,600 electronic payment − $900 duplicate
     deposit = $21,125. Only the book-side items need journal entries: a net increase of $2,675.'
@@ -101,22 +101,22 @@ variants:
     the reconciliation, what adjustment should Gorham make to its general ledger cash balance?'
   choices:
   - id: A
-    text: $1,745 increase
-    rationale: Records the service charge and the electronic payment but not the duplicate $5,150 deposit,
-      which overstates the ledger.
-  - id: B
-    text: $3,405 decrease
-    rationale: Correct. −$55 + $1,800 − $5,150 = −$3,405, bringing the ledger to $64,495, which agrees
-      with the adjusted bank balance.
-  - id: C
-    text: $3,755 decrease
-    rationale: Also deducts the $350 bank error in the ledger. The bank's error is corrected by the bank;
-      Gorham's books are right for that item.
-  - id: D
     text: $7,005 decrease
     rationale: Deducts the $1,800 electronic payment instead of adding it. Cash the bank received for
       Gorham increases Gorham's cash.
-  answer: B
+  - id: B
+    text: $3,755 decrease
+    rationale: Also deducts the $350 bank error in the ledger. The bank's error is corrected by the bank;
+      Gorham's books are right for that item.
+  - id: C
+    text: $3,405 decrease
+    rationale: Correct. −$55 + $1,800 − $5,150 = −$3,405, bringing the ledger to $64,495, which agrees
+      with the adjusted bank balance.
+  - id: D
+    text: $1,745 increase
+    rationale: Records the service charge and the electronic payment but not the duplicate $5,150 deposit,
+      which overstates the ledger.
+  answer: C
   explanation: 'Bank side: $59,845 + $7,400 deposits in transit − $3,100 outstanding checks + $350 bank
     error = $64,495. Book side: $67,900 − $55 service charge + $1,800 electronic payment − $5,150 duplicate
     deposit = $64,495. Only the book-side items need journal entries: a net decrease of $3,405.'

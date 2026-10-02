@@ -43,13 +43,13 @@ variants:
     the error?
   choices:
   - id: A
-    text: $59,250 decrease to January 1, Year 2, retained earnings; $0 change to Year 2 net income
-    rationale: Gets the prior-period adjustment right but leaves the $15,000 of Year 2 depreciation on
-      the repairs in Year 2 expense.
-  - id: B
     text: $59,250 decrease to January 1, Year 2, retained earnings; $11,850 decrease to Year 2 net income
     rationale: Gets the prior-period adjustment right but treats reversing the Year 2 depreciation as
       a decrease. Removing an expense raises Year 2 net income.
+  - id: B
+    text: $59,250 decrease to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Gets the prior-period adjustment right but leaves the $15,000 of Year 2 depreciation on
+      the repairs in Year 2 expense.
   - id: C
     text: $59,250 decrease to January 1, Year 2, retained earnings; $11,850 increase to Year 2 net income
     rationale: Correct. Year 1 was overstated by ($90,000 − $15,000) × 79%; reversing Year 2's $15,000
@@ -69,13 +69,13 @@ variants:
     the error?
   choices:
   - id: A
-    text: $21,000 decrease to January 1, Year 2, retained earnings; $0 change to Year 2 net income
-    rationale: Gets the prior-period adjustment right but leaves the $10,000 of Year 2 depreciation on
-      the repairs in Year 2 expense.
-  - id: B
     text: $21,000 decrease to January 1, Year 2, retained earnings; $7,000 decrease to Year 2 net income
     rationale: Gets the prior-period adjustment right but treats reversing the Year 2 depreciation as
       a decrease. Removing an expense raises Year 2 net income.
+  - id: B
+    text: $21,000 decrease to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Gets the prior-period adjustment right but leaves the $10,000 of Year 2 depreciation on
+      the repairs in Year 2 expense.
   - id: C
     text: $21,000 decrease to January 1, Year 2, retained earnings; $7,000 increase to Year 2 net income
     rationale: Correct. Year 1 was overstated by ($40,000 − $10,000) × 70%; reversing Year 2's $10,000

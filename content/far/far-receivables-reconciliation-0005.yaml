@@ -12,16 +12,16 @@ review:
   - Subsidiary ledger and control account reconciliation practice (finance charges; lockbox receipts;
     misposted payments)
   notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'At December 31, Pensilva Wholesale Co.''s accounts receivable subledger totals $986,050, and the
-  general ledger control account shows $950,175. The controller''s review finds: in November, Pensilva
-  advanced $18,000 to its operations manager for relocation costs, repayable through payroll deductions
-  during Year 2, and recorded the advance in the control account and in a subledger account opened in
-  the manager''s name; finance charges of $4,275 on overdue customer accounts were added to the customers''
-  subledger accounts in December, but no general ledger entry was made; customer remittances of $31,600
-  received in Pensilva''s bank lockbox on December 31 were recorded in the general ledger from the bank''s
-  report but not posted to the customers'' accounts until January 2; and a $7,820 payment from Trematon
-  Stores was credited to the account of Millbrook Grocers. What amount should Pensilva report as trade
-  accounts receivable, before any allowance, at December 31?'
+stem: 'Tracing differences between its records at December 31, Pensilva''s controller finds: in November,
+  Pensilva advanced $18,000 to its operations manager for relocation costs, repayable through payroll
+  deductions during Year 2, and recorded the advance in the control account and in a subledger account
+  opened in the manager''s name; finance charges of $4,275 on overdue customer accounts were added to
+  the customers'' subledger accounts in December, but no general ledger entry was made; customer remittances
+  of $31,600 received in Pensilva''s bank lockbox on December 31 were recorded in the general ledger from
+  the bank''s report but not posted to the customers'' accounts until January 2; and a $7,820 payment
+  from Trematon Stores was credited to the account of Millbrook Grocers. Before these items are addressed,
+  the accounts receivable subledger totals $986,050 and the general ledger control account shows $950,175.
+  What amount should Pensilva report as trade accounts receivable, before any allowance, at December 31?'
 choices:
 - id: A
   text: $932,175
@@ -46,16 +46,17 @@ explanation: 'Work out which record each finding affects. The relocation advance
   amount between two customer accounts and doesn''t change the subledger total. Control account: $950,175
   − $18,000 + $4,275 = $936,450. Subledger: $986,050 − $18,000 − $31,600 = $936,450.'
 variants:
-- stem: 'At December 31, Menheniot Wholesale Co.''s accounts receivable subledger totals $749,730, and
-    the general ledger control account shows $721,720. The controller''s review finds: in November, Menheniot
-    advanced $12,500 to its operations manager for relocation costs, repayable through payroll deductions
-    during Year 2, and recorded the advance in the control account and in a subledger account opened in
-    the manager''s name; finance charges of $3,160 on overdue customer accounts were added to the customers''
-    subledger accounts in December, but no general ledger entry was made; customer remittances of $24,850
-    received in Menheniot''s bank lockbox on December 31 were recorded in the general ledger from the
-    bank''s report but not posted to the customers'' accounts until January 2; and a $15,600 payment from
-    Kingsand Market was credited to the account of Cawsand Provisions. What amount should Menheniot report
-    as trade accounts receivable, before any allowance, at December 31?'
+- stem: 'Tracing differences between its records at December 31, Menheniot''s controller finds: in November,
+    Menheniot advanced $12,500 to its operations manager for relocation costs, repayable through payroll
+    deductions during Year 2, and recorded the advance in the control account and in a subledger account
+    opened in the manager''s name; finance charges of $3,160 on overdue customer accounts were added to
+    the customers'' subledger accounts in December, but no general ledger entry was made; customer remittances
+    of $24,850 received in Menheniot''s bank lockbox on December 31 were recorded in the general ledger
+    from the bank''s report but not posted to the customers'' accounts until January 2; and a $15,600
+    payment from Kingsand Market was credited to the account of Cawsand Provisions. Before these items
+    are addressed, the accounts receivable subledger totals $749,730 and the general ledger control account
+    shows $721,720. What amount should Menheniot report as trade accounts receivable, before any allowance,
+    at December 31?'
   choices:
   - id: A
     text: $696,780
@@ -80,16 +81,17 @@ variants:
     balances, and only the subledger is missing them: − $24,850 from the subledger. The misposted payment
     moves an amount between two customer accounts and doesn''t change the subledger total. Control account:
     $721,720 − $12,500 + $3,160 = $712,380. Subledger: $749,730 − $12,500 − $24,850 = $712,380.'
-- stem: 'At December 31, Herodsfoot Wholesale Co.''s accounts receivable subledger totals $1,245,900,
-    and the general ledger control account shows $1,201,620. The controller''s review finds: in November,
+- stem: 'Tracing differences between its records at December 31, Herodsfoot''s controller finds: in November,
     Herodsfoot advanced $22,400 to its operations manager for relocation costs, repayable through payroll
     deductions during Year 2, and recorded the advance in the control account and in a subledger account
     opened in the manager''s name; finance charges of $5,380 on overdue customer accounts were added to
     the customers'' subledger accounts in December, but no general ledger entry was made; customer remittances
     of $38,900 received in Herodsfoot''s bank lockbox on December 31 were recorded in the general ledger
     from the bank''s report but not posted to the customers'' accounts until January 2; and a $9,270 payment
-    from Duloe Farm Shop was credited to the account of Lanreath Stores. What amount should Herodsfoot
-    report as trade accounts receivable, before any allowance, at December 31?'
+    from Duloe Farm Shop was credited to the account of Lanreath Stores. Before these items are addressed,
+    the accounts receivable subledger totals $1,245,900 and the general ledger control account shows $1,201,620.
+    What amount should Herodsfoot report as trade accounts receivable, before any allowance, at December
+    31?'
   choices:
   - id: A
     text: $1,184,600
@@ -114,16 +116,16 @@ variants:
     balances, and only the subledger is missing them: − $38,900 from the subledger. The misposted payment
     moves an amount between two customer accounts and doesn''t change the subledger total. Control account:
     $1,201,620 − $22,400 + $5,380 = $1,184,600. Subledger: $1,245,900 − $22,400 − $38,900 = $1,184,600.'
-- stem: 'At December 31, Pelynt Wholesale Co.''s accounts receivable subledger totals $577,670, and the
-    general ledger control account shows $555,850. The controller''s review finds: in November, Pelynt
-    advanced $9,600 to its operations manager for relocation costs, repayable through payroll deductions
+- stem: 'Tracing differences between its records at December 31, Pelynt''s controller finds: in November,
+    Pelynt advanced $9,600 to its operations manager for relocation costs, repayable through payroll deductions
     during Year 2, and recorded the advance in the control account and in a subledger account opened in
     the manager''s name; finance charges of $2,470 on overdue customer accounts were added to the customers''
     subledger accounts in December, but no general ledger entry was made; customer remittances of $19,350
     received in Pelynt''s bank lockbox on December 31 were recorded in the general ledger from the bank''s
     report but not posted to the customers'' accounts until January 2; and an $8,800 payment from Lansallos
-    Store was credited to the account of Polruan Chandlery. What amount should Pelynt report as trade
-    accounts receivable, before any allowance, at December 31?'
+    Store was credited to the account of Polruan Chandlery. Before these items are addressed, the accounts
+    receivable subledger totals $577,670 and the general ledger control account shows $555,850. What amount
+    should Pelynt report as trade accounts receivable, before any allowance, at December 31?'
   choices:
   - id: A
     text: $539,920

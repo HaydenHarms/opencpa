@@ -13,16 +13,16 @@ review:
   - Subsidiary ledger and control account reconciliation practice (voided checks; trade discounts; misposted
     payments)
   notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'At December 31, Okehampton Builders Supply Co.''s accounts payable subledger totals $723,420, and
-  its general ledger accounts payable control account shows $718,880. The controller''s review finds:
-  a $38,500 purchase order issued on December 28, for goods the supplier will ship FOB shipping point
-  in mid-January, was entered as an invoice in both records; a $12,640 check to a supplier, recorded as
-  a payment in both records on December 27, was voided on December 30 because it was made out for the
-  wrong amount, and the void was posted to the supplier''s subledger account but not to the general ledger;
-  an invoice for goods received on December 20 was posted to the supplier''s subledger account at its
-  net amount of $45,900, after a 15% trade discount, but to the general ledger at its list price of $54,000;
-  and a $6,275 payment to Lydford Timber was posted to Tavistock Fixings''s subledger account. What amount
-  should Okehampton report as accounts payable at December 31?'
+stem: 'Reviewing Okehampton''s accounts payable at December 31, the controller finds: a $38,500 purchase
+  order issued on December 28, for goods the supplier will ship FOB shipping point in mid-January, was
+  entered as an invoice in both records; a $12,640 check to a supplier, recorded as a payment in both
+  records on December 27, was voided on December 30 because it was made out for the wrong amount, and
+  the void was posted to the supplier''s subledger account but not to the general ledger; an invoice for
+  goods received on December 20 was posted to the supplier''s subledger account at its net amount of $45,900,
+  after a 15% trade discount, but to the general ledger at its list price of $54,000; and a $6,275 payment
+  to Lydford Timber was posted to Tavistock Fixings''s subledger account. Before these items are corrected,
+  the subledger totals $723,420 and the control account shows $718,880. What amount should Okehampton
+  report as accounts payable at December 31?'
 choices:
 - id: A
   text: $672,280
@@ -47,16 +47,16 @@ explanation: 'The purchase order is in both records but isn''t a liability until
   between two supplier accounts. Subledger: $723,420 − $38,500 = $684,920. Control account: $718,880 −
   $38,500 + $12,640 − $8,100 = $684,920.'
 variants:
-- stem: 'At December 31, Crediton Builders Supply Co.''s accounts payable subledger totals $540,140, and
-    its general ledger accounts payable control account shows $537,880. The controller''s review finds:
-    a $27,800 purchase order issued on December 28, for goods the supplier will ship FOB shipping point
-    in mid-January, was entered as an invoice in both records; a $9,460 check to a supplier, recorded
-    as a payment in both records on December 27, was voided on December 30 because it was made out for
-    the wrong amount, and the void was posted to the supplier''s subledger account but not to the general
-    ledger; an invoice for goods received on December 20 was posted to the supplier''s subledger account
-    at its net amount of $28,800, after a 20% trade discount, but to the general ledger at its list price
-    of $36,000; and a $4,185 payment to Tiverton Steel was posted to Cullompton Glass''s subledger account.
-    What amount should Crediton report as accounts payable at December 31?'
+- stem: 'Reviewing Crediton''s accounts payable at December 31, the controller finds: a $27,800 purchase
+    order issued on December 28, for goods the supplier will ship FOB shipping point in mid-January, was
+    entered as an invoice in both records; a $9,460 check to a supplier, recorded as a payment in both
+    records on December 27, was voided on December 30 because it was made out for the wrong amount, and
+    the void was posted to the supplier''s subledger account but not to the general ledger; an invoice
+    for goods received on December 20 was posted to the supplier''s subledger account at its net amount
+    of $28,800, after a 20% trade discount, but to the general ledger at its list price of $36,000; and
+    a $4,185 payment to Tiverton Steel was posted to Cullompton Glass''s subledger account. Before these
+    items are corrected, the subledger totals $540,140 and the control account shows $537,880. What amount
+    should Crediton report as accounts payable at December 31?'
   choices:
   - id: A
     text: $502,880
@@ -80,16 +80,16 @@ variants:
     is owed at $28,800; the control account is overstated by $7,200. The misposted payment moves an amount
     between two supplier accounts. Subledger: $540,140 − $27,800 = $512,340. Control account: $537,880
     − $27,800 + $9,460 − $7,200 = $512,340.'
-- stem: 'At December 31, Honiton Builders Supply Co.''s accounts payable subledger totals $990,760, and
-    its general ledger accounts payable control account shows $980,680. The controller''s review finds:
-    a $52,300 purchase order issued on December 28, for goods the supplier will ship FOB shipping point
-    in mid-January, was entered as an invoice in both records; a $17,280 check to a supplier, recorded
-    as a payment in both records on December 27, was voided on December 30 because it was made out for
-    the wrong amount, and the void was posted to the supplier''s subledger account but not to the general
-    ledger; an invoice for goods received on December 20 was posted to the supplier''s subledger account
-    at its net amount of $64,800, after a 10% trade discount, but to the general ledger at its list price
-    of $72,000; and an $8,640 payment to Ottery Brickworks was posted to Moretonhampstead Timber''s subledger
-    account. What amount should Honiton report as accounts payable at December 31?'
+- stem: 'Reviewing Honiton''s accounts payable at December 31, the controller finds: a $52,300 purchase
+    order issued on December 28, for goods the supplier will ship FOB shipping point in mid-January, was
+    entered as an invoice in both records; a $17,280 check to a supplier, recorded as a payment in both
+    records on December 27, was voided on December 30 because it was made out for the wrong amount, and
+    the void was posted to the supplier''s subledger account but not to the general ledger; an invoice
+    for goods received on December 20 was posted to the supplier''s subledger account at its net amount
+    of $64,800, after a 10% trade discount, but to the general ledger at its list price of $72,000; and
+    an $8,640 payment to Ottery Brickworks was posted to Moretonhampstead Timber''s subledger account.
+    Before these items are corrected, the subledger totals $990,760 and the control account shows $980,680.
+    What amount should Honiton report as accounts payable at December 31?'
   choices:
   - id: A
     text: $938,460
@@ -113,16 +113,16 @@ variants:
     is owed at $64,800; the control account is overstated by $7,200. The misposted payment moves an amount
     between two supplier accounts. Subledger: $990,760 − $52,300 = $938,460. Control account: $980,680
     − $52,300 + $17,280 − $7,200 = $938,460.'
-- stem: 'At December 31, Bideford Builders Supply Co.''s accounts payable subledger totals $448,180, and
-    its general ledger accounts payable control account shows $443,860. The controller''s review finds:
-    a $21,400 purchase order issued on December 28, for goods the supplier will ship FOB shipping point
-    in mid-January, was entered as an invoice in both records; a $7,920 check to a supplier, recorded
-    as a payment in both records on December 27, was voided on December 30 because it was made out for
-    the wrong amount, and the void was posted to the supplier''s subledger account but not to the general
-    ledger; an invoice for goods received on December 20 was posted to the supplier''s subledger account
-    at its net amount of $26,400, after a 12% trade discount, but to the general ledger at its list price
-    of $30,000; and a $3,540 payment to Appledore Slate was posted to Torrington Fixings''s subledger
-    account. What amount should Bideford report as accounts payable at December 31?'
+- stem: 'Reviewing Bideford''s accounts payable at December 31, the controller finds: a $21,400 purchase
+    order issued on December 28, for goods the supplier will ship FOB shipping point in mid-January, was
+    entered as an invoice in both records; a $7,920 check to a supplier, recorded as a payment in both
+    records on December 27, was voided on December 30 because it was made out for the wrong amount, and
+    the void was posted to the supplier''s subledger account but not to the general ledger; an invoice
+    for goods received on December 20 was posted to the supplier''s subledger account at its net amount
+    of $26,400, after a 12% trade discount, but to the general ledger at its list price of $30,000; and
+    a $3,540 payment to Appledore Slate was posted to Torrington Fixings''s subledger account. Before
+    these items are corrected, the subledger totals $448,180 and the control account shows $443,860. What
+    amount should Bideford report as accounts payable at December 31?'
   choices:
   - id: A
     text: $418,860

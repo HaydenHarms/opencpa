@@ -62,4 +62,12 @@ One verifier solved all 94 versions from stems and choices only: **94 of 94 matc
 
 ## Review gate
 
-Pending; it runs on batches 12 and 13 together.
+**Stratified gate** (run on Sonnet, to save usage; same brief): 20 of 25 items. Seventeen in full: the 10 Analysis items; the items on recently changed standards (`notes-0008` for ASU 2016-02; `nfp-financial-position-0005` and `nfp-statement-of-activities-0004` for ASU 2016-14 and 2018-08; `investments-fair-value-0004` and `-0005` for ASU 2016-01 and 2016-13); and the items changed after blind verification (`cash-equivalents-0002`, `changes-in-equity-0007`). Three drawn at random from the other eight (seed 20261001): `cash-flows-0016`, `changes-in-equity-0008`, `ppe-held-for-sale-0003`. Not gated: `balance-sheet-0009`, `income-statement-0008`, `consolidated-statements-0011`, `special-purpose-frameworks-0006`, `ppe-held-for-sale-0004`.
+
+**Result: passed.** The 20 gated items average **89.6%** estimated pass likelihood (batch 11: 84.2%). 19 are exam-ready, 1 needs minor revision, none need major revision. Every key is correct in every version the gate solved (80 numeric amounts). All three sampled items were exam-ready, so escalation was not triggered. This is the first gate run on Sonnet and its score is above every earlier FAR gate (82–85%), so it may grade more leniently; watch the next gates for drift.
+
+| Item | Gate | Fix |
+| --- | --- | --- |
+| `far-investments-fair-value-0005` (83%) | Tagged II.E.1c ("calculate investment income ... and prepare journal entries") but asks for the OCI credit in the fair value entry, not investment income. | Not changed: the task covers preparing the entries, and the OCI credit is an amount in that entry. Retagging to II.E.1b would also reopen II.E.1c as a one-item task. |
+
+**Batch 13 gate finding applied here too:** choices that mix "increase" and "decrease" now sort by signed value bank-wide (see the batch 13 report); no batch 12 item was affected.

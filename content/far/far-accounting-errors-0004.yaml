@@ -17,13 +17,13 @@ stem: On January 1, Year 1, Pollard Co. paid $36,000 for a three-year insurance 
   the error?
 choices:
 - id: A
-  text: $18,000 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
-  rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
-    of the policy, $12,000, belongs in Year 2.
-- id: B
   text: $18,000 increase to January 1, Year 2, retained earnings; $9,000 decrease to Year 2 net income
   rationale: Correct. Year 1 expense was overstated by $24,000 ($18,000 after tax); Year 2 needs $12,000
     of expense ($9,000 after tax).
+- id: B
+  text: $18,000 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+  rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
+    of the policy, $12,000, belongs in Year 2.
 - id: C
   text: $24,000 increase to January 1, Year 2, retained earnings; $12,000 decrease to Year 2 net income
   rationale: Leaves out the 25% tax effect.
@@ -31,7 +31,7 @@ choices:
   text: $27,000 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
   rationale: Treats all $36,000 as overstated Year 1 expense. One year of coverage, $12,000, was a proper
     Year 1 expense.
-answer: B
+answer: A
 explanation: Pollard should have expensed $12,000 a year. Year 1 expense was overstated by $24,000, so
   Year 1 net income was understated by $18,000 after tax, and January 1, Year 2, retained earnings is
   increased by $18,000 as a prior-period adjustment (with prepaid insurance of $24,000). Year 2 then records
@@ -70,13 +70,13 @@ variants:
     the error?
   choices:
   - id: A
-    text: $16,800 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
-    rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
-      of the policy, $24,000, belongs in Year 2.
-  - id: B
     text: $16,800 increase to January 1, Year 2, retained earnings; $16,800 decrease to Year 2 net income
     rationale: Correct. Year 1 expense was overstated by $24,000 ($16,800 after tax); Year 2 needs $24,000
       of expense ($16,800 after tax).
+  - id: B
+    text: $16,800 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
+      of the policy, $24,000, belongs in Year 2.
   - id: C
     text: $24,000 increase to January 1, Year 2, retained earnings; $24,000 decrease to Year 2 net income
     rationale: Leaves out the 30% tax effect.
@@ -84,7 +84,7 @@ variants:
     text: $33,600 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
     rationale: Treats all $48,000 as overstated Year 1 expense. One year of coverage, $24,000, was a proper
       Year 1 expense.
-  answer: B
+  answer: A
   explanation: Radley should have expensed $24,000 a year. Year 1 expense was overstated by $24,000, so
     Year 1 net income was understated by $16,800 after tax, and January 1, Year 2, retained earnings is
     increased by $16,800 as a prior-period adjustment (with prepaid insurance of $24,000). Year 2 then
@@ -96,13 +96,13 @@ variants:
     the error?
   choices:
   - id: A
-    text: $54,000 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
-    rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
-      of the policy, $18,000, belongs in Year 2.
-  - id: B
     text: $54,000 increase to January 1, Year 2, retained earnings; $13,500 decrease to Year 2 net income
     rationale: Correct. Year 1 expense was overstated by $72,000 ($54,000 after tax); Year 2 needs $18,000
       of expense ($13,500 after tax).
+  - id: B
+    text: $54,000 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
+    rationale: Gets the prior-period adjustment right but records no Year 2 insurance expense. One year
+      of the policy, $18,000, belongs in Year 2.
   - id: C
     text: $54,000 increase to January 1, Year 2, retained earnings; $13,500 increase to Year 2 net income
     rationale: Gets the prior-period adjustment right but treats the Year 2 insurance expense as an increase
@@ -111,7 +111,7 @@ variants:
     text: $67,500 increase to January 1, Year 2, retained earnings; $0 change to Year 2 net income
     rationale: Treats all $90,000 as overstated Year 1 expense. One year of coverage, $18,000, was a proper
       Year 1 expense.
-  answer: B
+  answer: A
   explanation: Saxon should have expensed $18,000 a year. Year 1 expense was overstated by $72,000, so
     Year 1 net income was understated by $54,000 after tax, and January 1, Year 2, retained earnings is
     increased by $54,000 as a prior-period adjustment (with prepaid insurance of $72,000). Year 2 then

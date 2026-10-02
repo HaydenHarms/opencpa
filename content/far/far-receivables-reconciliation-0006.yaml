@@ -13,17 +13,17 @@ review:
   - ASC 405-20 (extinguishment of a liability; settlement of a receivable against a payable by agreement)
   - Subsidiary ledger and control account reconciliation practice (unposted batches; journal coding errors)
   notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'At December 31, Year 2, Golant Packaging Co.''s accounts receivable subledger totals $816,350,
-  and the general ledger control account shows $857,050. The controller''s investigation finds: a $23,400
-  invoice dated December 30 was recorded as a sale in both records, but the goods, sold FOB shipping point,
-  were not shipped until January 3; the sales journal batch for December 29, totaling $64,250, was posted
-  to the control account, but its invoices were never posted to the customers'' accounts; in December,
-  Golant agreed with Tywardreath Mills, which is both a customer and a supplier, to settle $14,900 of
-  Tywardreath Mills''s balance against an equal amount Golant owed it, and the general ledger recorded
-  the settlement (debit accounts payable, credit accounts receivable) but the customer''s subledger account
-  did not; and $8,650 of December cash sales was entered in the accounts receivable column of the cash
-  receipts journal, so its total was credited to the control account. By what net amount must Golant change
-  its subledger total so that it shows the correct balance?'
+stem: 'Events the controller traces into Golant Packaging Co.''s accounts receivable records: on December
+  29, Year 2, a sales journal batch totaling $64,250 was posted to the general ledger control account,
+  but its invoices were never posted to the customers'' accounts; on December 30, a $23,400 invoice was
+  recorded as a sale in both records, but the goods, sold FOB shipping point, were not shipped until January
+  3; during December, Golant agreed with Tywardreath Mills, which is both a customer and a supplier, to
+  settle $14,900 of Tywardreath Mills''s balance against an equal amount Golant owed it, and the general
+  ledger recorded the settlement (debit accounts payable, credit accounts receivable) but the customer''s
+  subledger account did not; and also in December, $8,650 of cash sales was entered in the accounts receivable
+  column of the cash receipts journal, so its total was credited to the control account. At December 31,
+  Year 2, before these items are corrected, the subledger totals $816,350 and the control account shows
+  $857,050. By what net amount must Golant change its subledger total so that it shows the correct balance?'
 choices:
 - id: A
   text: $14,750 decrease
@@ -51,64 +51,66 @@ explanation: 'The early invoice is in both records and must come out of both (�
   change = − $23,400 + $64,250 − $14,900 = $25,950 increase, to $842,300. Control account: $857,050 −
   $23,400 + $8,650 = $842,300, so the records agree.'
 variants:
-- stem: 'At December 31, Year 2, Lanlivery Packaging Co.''s accounts receivable subledger totals $634,000,
-    and the general ledger control account shows $640,400. The controller''s investigation finds: a $31,800
-    invoice dated December 30 was recorded as a sale in both records, but the goods, sold FOB shipping
-    point, were not shipped until January 3; the sales journal batch for December 29, totaling $26,400,
-    was posted to the control account, but its invoices were never posted to the customers'' accounts;
-    in December, Lanlivery agreed with Luxulyan Quarries, which is both a customer and a supplier, to
-    settle $12,700 of Luxulyan Quarries''s balance against an equal amount Lanlivery owed it, and the
-    general ledger recorded the settlement (debit accounts payable, credit accounts receivable) but the
-    customer''s subledger account did not; and $7,300 of December cash sales was entered in the accounts
-    receivable column of the cash receipts journal, so its total was credited to the control account.
-    By what net amount must Lanlivery change its subledger total so that it shows the correct balance?'
+- stem: 'Events the controller traces into Lanlivery Packaging Co.''s accounts receivable records: on
+    December 29, Year 2, a sales journal batch totaling $26,400 was posted to the general ledger control
+    account, but its invoices were never posted to the customers'' accounts; on December 30, a $31,800
+    invoice was recorded as a sale in both records, but the goods, sold FOB shipping point, were not shipped
+    until January 3; during December, Lanlivery agreed with Luxulyan Quarries, which is both a customer
+    and a supplier, to settle $12,700 of Luxulyan Quarries''s balance against an equal amount Lanlivery
+    owed it, and the general ledger recorded the settlement (debit accounts payable, credit accounts receivable)
+    but the customer''s subledger account did not; and also in December, $7,300 of cash sales was entered
+    in the accounts receivable column of the cash receipts journal, so its total was credited to the control
+    account. At December 31, Year 2, before these items are corrected, the subledger totals $634,000 and
+    the control account shows $640,400. By what net amount must Lanlivery change its subledger total so
+    that it shows the correct balance?'
   choices:
   - id: A
-    text: $5,400 decrease
-    rationale: Leaves the $12,700 settled against Lanlivery's payable in Luxulyan Quarries's subledger
-      account. The settlement extinguished that part of the receivable; only the general ledger has recorded
-      it.
+    text: $18,100 decrease
+    rationale: Correct. − $31,800 + $26,400 − $12,700; the subledger becomes $615,900, which agrees with
+      the corrected control account.
   - id: B
     text: $10,800 decrease
     rationale: Also adds the $7,300 of cash sales to the subledger. The cash sales were wrongly credited
       to the control account, but no customer account was touched, so only the general ledger needs that
       correction.
   - id: C
+    text: $5,400 decrease
+    rationale: Leaves the $12,700 settled against Lanlivery's payable in Luxulyan Quarries's subledger
+      account. The settlement extinguished that part of the receivable; only the general ledger has recorded
+      it.
+  - id: D
     text: $13,700 increase
     rationale: Leaves the $31,800 invoice for goods shipped in January in the subledger. The goods hadn't
       left Lanlivery's dock at December 31, so there was no sale or receivable in Year 2, and both records
       must remove it.
-  - id: D
-    text: $18,100 decrease
-    rationale: Correct. − $31,800 + $26,400 − $12,700; the subledger becomes $615,900, which agrees with
-      the corrected control account.
-  answer: D
+  answer: A
   explanation: 'The early invoice is in both records and must come out of both (− $31,800): the goods,
     sold FOB shipping point, hadn''t shipped, so control hadn''t passed. The December 29 batch is missing
     from the subledger (+ $26,400). The settlement against the payable is missing from the subledger (−
     $12,700). The cash sales error affects only the control account, which must be debited back $7,300.
     Subledger change = − $31,800 + $26,400 − $12,700 = $18,100 decrease, to $615,900. Control account:
     $640,400 − $31,800 + $7,300 = $615,900, so the records agree.'
-- stem: 'At December 31, Year 2, Stenalees Packaging Co.''s accounts receivable subledger totals $1,005,800,
-    and the general ledger control account shows $1,054,400. The controller''s investigation finds: a
-    $28,600 invoice dated December 30 was recorded as a sale in both records, but the goods, sold FOB
-    shipping point, were not shipped until January 3; the sales journal batch for December 29, totaling
-    $77,900, was posted to the control account, but its invoices were never posted to the customers''
-    accounts; in December, Stenalees agreed with Nanpean Clay Works, which is both a customer and a supplier,
-    to settle $18,400 of Nanpean Clay Works''s balance against an equal amount Stenalees owed it, and
-    the general ledger recorded the settlement (debit accounts payable, credit accounts receivable) but
-    the customer''s subledger account did not; and $10,900 of December cash sales was entered in the accounts
-    receivable column of the cash receipts journal, so its total was credited to the control account.
-    By what net amount must Stenalees change its subledger total so that it shows the correct balance?'
+- stem: 'Events the controller traces into Stenalees Packaging Co.''s accounts receivable records: on
+    December 29, Year 2, a sales journal batch totaling $77,900 was posted to the general ledger control
+    account, but its invoices were never posted to the customers'' accounts; on December 30, a $28,600
+    invoice was recorded as a sale in both records, but the goods, sold FOB shipping point, were not shipped
+    until January 3; during December, Stenalees agreed with Nanpean Clay Works, which is both a customer
+    and a supplier, to settle $18,400 of Nanpean Clay Works''s balance against an equal amount Stenalees
+    owed it, and the general ledger recorded the settlement (debit accounts payable, credit accounts receivable)
+    but the customer''s subledger account did not; and also in December, $10,900 of cash sales was entered
+    in the accounts receivable column of the cash receipts journal, so its total was credited to the control
+    account. At December 31, Year 2, before these items are corrected, the subledger totals $1,005,800
+    and the control account shows $1,054,400. By what net amount must Stenalees change its subledger total
+    so that it shows the correct balance?'
   choices:
   - id: A
-    text: $30,900 increase
-    rationale: Correct. − $28,600 + $77,900 − $18,400; the subledger becomes $1,036,700, which agrees
-      with the corrected control account.
-  - id: B
     text: $47,000 decrease
     rationale: Leaves out the $77,900 batch of invoices posted only to the control account. The sales
       were made and billed, so the customers' subledger accounts must be charged.
+  - id: B
+    text: $30,900 increase
+    rationale: Correct. − $28,600 + $77,900 − $18,400; the subledger becomes $1,036,700, which agrees
+      with the corrected control account.
   - id: C
     text: $49,300 increase
     rationale: Leaves the $18,400 settled against Stenalees's payable in Nanpean Clay Works's subledger
@@ -119,24 +121,25 @@ variants:
     rationale: Leaves the $28,600 invoice for goods shipped in January in the subledger. The goods hadn't
       left Stenalees's dock at December 31, so there was no sale or receivable in Year 2, and both records
       must remove it.
-  answer: A
+  answer: B
   explanation: 'The early invoice is in both records and must come out of both (− $28,600): the goods,
     sold FOB shipping point, hadn''t shipped, so control hadn''t passed. The December 29 batch is missing
     from the subledger (+ $77,900). The settlement against the payable is missing from the subledger (−
     $18,400). The cash sales error affects only the control account, which must be debited back $10,900.
     Subledger change = − $28,600 + $77,900 − $18,400 = $30,900 increase, to $1,036,700. Control account:
     $1,054,400 − $28,600 + $10,900 = $1,036,700, so the records agree.'
-- stem: 'At December 31, Year 2, Ladock Packaging Co.''s accounts receivable subledger totals $469,600,
-    and the general ledger control account shows $496,000. The controller''s investigation finds: a $12,900
-    invoice dated December 30 was recorded as a sale in both records, but the goods, sold FOB shipping
-    point, were not shipped until January 3; the sales journal batch for December 29, totaling $41,300,
-    was posted to the control account, but its invoices were never posted to the customers'' accounts;
-    in December, Ladock agreed with Tresillian Boatyard, which is both a customer and a supplier, to settle
-    $9,800 of Tresillian Boatyard''s balance against an equal amount Ladock owed it, and the general ledger
-    recorded the settlement (debit accounts payable, credit accounts receivable) but the customer''s subledger
-    account did not; and $5,100 of December cash sales was entered in the accounts receivable column of
-    the cash receipts journal, so its total was credited to the control account. By what net amount must
-    Ladock change its subledger total so that it shows the correct balance?'
+- stem: 'Events the controller traces into Ladock Packaging Co.''s accounts receivable records: on December
+    29, Year 2, a sales journal batch totaling $41,300 was posted to the general ledger control account,
+    but its invoices were never posted to the customers'' accounts; on December 30, a $12,900 invoice
+    was recorded as a sale in both records, but the goods, sold FOB shipping point, were not shipped until
+    January 3; during December, Ladock agreed with Tresillian Boatyard, which is both a customer and a
+    supplier, to settle $9,800 of Tresillian Boatyard''s balance against an equal amount Ladock owed it,
+    and the general ledger recorded the settlement (debit accounts payable, credit accounts receivable)
+    but the customer''s subledger account did not; and also in December, $5,100 of cash sales was entered
+    in the accounts receivable column of the cash receipts journal, so its total was credited to the control
+    account. At December 31, Year 2, before these items are corrected, the subledger totals $469,600 and
+    the control account shows $496,000. By what net amount must Ladock change its subledger total so that
+    it shows the correct balance?'
   choices:
   - id: A
     text: $7,800 decrease

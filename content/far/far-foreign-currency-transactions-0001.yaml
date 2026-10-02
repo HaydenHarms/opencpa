@@ -16,21 +16,21 @@ stem: On November 1, Year 1, Abbott Co., whose functional currency is the U.S. d
   foreign currency transaction gain or loss should Abbott report in Year 1 and in Year 2?
 choices:
 - id: A
-  text: $0 in Year 1; $2,000 loss in Year 2
-  rationale: Waits until settlement and compares the payment with the original rate. The payable is remeasured
-    at each balance sheet date.
-- id: B
-  text: $4,000 gain in Year 1; $2,000 loss in Year 2
-  rationale: Reverses the signs, as if Abbott held a euro receivable. A stronger euro increases what Abbott
-    owes.
-- id: C
-  text: $4,000 loss in Year 1; $2,000 gain in Year 2
-  rationale: 'Correct. Year 1: €100,000 × ($1.14 − $1.10). Year 2: €100,000 × ($1.14 − $1.12).'
-- id: D
   text: $4,000 loss in Year 1; $2,000 loss in Year 2
   rationale: Measures Year 2 against the original $1.10 rate instead of the December 31 rate, counting
     part of the Year 1 loss again.
-answer: C
+- id: B
+  text: $4,000 loss in Year 1; $2,000 gain in Year 2
+  rationale: 'Correct. Year 1: €100,000 × ($1.14 − $1.10). Year 2: €100,000 × ($1.14 − $1.12).'
+- id: C
+  text: $0 in Year 1; $2,000 loss in Year 2
+  rationale: Waits until settlement and compares the payment with the original rate. The payable is remeasured
+    at each balance sheet date.
+- id: D
+  text: $4,000 gain in Year 1; $2,000 loss in Year 2
+  rationale: Reverses the signs, as if Abbott held a euro receivable. A stronger euro increases what Abbott
+    owes.
+answer: B
 explanation: 'A payable denominated in a foreign currency is remeasured at the spot rate at each balance
   sheet date and at settlement, with changes reported in net income. December 31: the payable rises from
   $110,000 to $114,000, a $4,000 loss in Year 1. February 1: Abbott pays $112,000, so Year 2 has a $2,000
@@ -42,21 +42,21 @@ variants:
     What foreign currency transaction gain or loss should Garvey report in Year 1 and in Year 2?
   choices:
   - id: A
-    text: $0 in Year 1; $5,000 loss in Year 2
-    rationale: Waits until settlement and compares the payment with the original rate. The payable is
-      remeasured at each balance sheet date.
-  - id: B
     text: $12,500 loss in Year 1; $0 in Year 2
     rationale: Remeasures the payable at December 31 but records nothing when it is paid. The change from
       $1.13 to $1.10 is a Year 2 gain.
+  - id: B
+    text: $12,500 loss in Year 1; $7,500 gain in Year 2
+    rationale: 'Correct. Year 1: €250,000 × ($1.13 − $1.08). Year 2: €250,000 × ($1.13 − $1.10).'
   - id: C
+    text: $0 in Year 1; $5,000 loss in Year 2
+    rationale: Waits until settlement and compares the payment with the original rate. The payable is
+      remeasured at each balance sheet date.
+  - id: D
     text: $12,500 gain in Year 1; $7,500 loss in Year 2
     rationale: Reverses the signs, as if Garvey held a euro receivable. A stronger euro increases what
       Garvey owes.
-  - id: D
-    text: $12,500 loss in Year 1; $7,500 gain in Year 2
-    rationale: 'Correct. Year 1: €250,000 × ($1.13 − $1.08). Year 2: €250,000 × ($1.13 − $1.10).'
-  answer: D
+  answer: B
   explanation: 'A payable denominated in a foreign currency is remeasured at the spot rate at each balance
     sheet date and at settlement, with changes reported in net income. December 31: the payable rises
     from $270,000 to $282,500, a $12,500 loss in Year 1. February 1: Garvey pays $275,000, so Year 2 has
@@ -67,21 +67,21 @@ variants:
     foreign currency transaction gain or loss should Holt report in Year 1 and in Year 2?
   choices:
   - id: A
-    text: $4,800 loss in Year 1; $0 in Year 2
-    rationale: Remeasures the payable at December 31 but records nothing when it is paid. The change from
-      $1.11 to $1.07 is a Year 2 gain.
-  - id: B
     text: $4,800 loss in Year 1; $1,600 loss in Year 2
     rationale: Measures Year 2 against the original $1.05 rate instead of the December 31 rate, counting
       part of the Year 1 loss again.
+  - id: B
+    text: $4,800 loss in Year 1; $0 in Year 2
+    rationale: Remeasures the payable at December 31 but records nothing when it is paid. The change from
+      $1.11 to $1.07 is a Year 2 gain.
   - id: C
+    text: $4,800 loss in Year 1; $3,200 gain in Year 2
+    rationale: 'Correct. Year 1: €80,000 × ($1.11 − $1.05). Year 2: €80,000 × ($1.11 − $1.07).'
+  - id: D
     text: $4,800 gain in Year 1; $3,200 loss in Year 2
     rationale: Reverses the signs, as if Holt held a euro receivable. A stronger euro increases what Holt
       owes.
-  - id: D
-    text: $4,800 loss in Year 1; $3,200 gain in Year 2
-    rationale: 'Correct. Year 1: €80,000 × ($1.11 − $1.05). Year 2: €80,000 × ($1.11 − $1.07).'
-  answer: D
+  answer: C
   explanation: 'A payable denominated in a foreign currency is remeasured at the spot rate at each balance
     sheet date and at settlement, with changes reported in net income. December 31: the payable rises
     from $84,000 to $88,800, a $4,800 loss in Year 1. February 1: Holt pays $85,600, so Year 2 has a $3,200
@@ -92,21 +92,21 @@ variants:
     What foreign currency transaction gain or loss should Ingram report in Year 1 and in Year 2?
   choices:
   - id: A
-    text: $0 in Year 1; $3,000 loss in Year 2
-    rationale: Waits until settlement and compares the payment with the original rate. The payable is
-      remeasured at each balance sheet date.
-  - id: B
     text: $9,000 loss in Year 1; $0 in Year 2
     rationale: Remeasures the payable at December 31 but records nothing when it is paid. The change from
       $1.15 to $1.13 is a Year 2 gain.
+  - id: B
+    text: $9,000 loss in Year 1; $6,000 gain in Year 2
+    rationale: 'Correct. Year 1: €300,000 × ($1.15 − $1.12). Year 2: €300,000 × ($1.15 − $1.13).'
   - id: C
+    text: $0 in Year 1; $3,000 loss in Year 2
+    rationale: Waits until settlement and compares the payment with the original rate. The payable is
+      remeasured at each balance sheet date.
+  - id: D
     text: $9,000 gain in Year 1; $6,000 loss in Year 2
     rationale: Reverses the signs, as if Ingram held a euro receivable. A stronger euro increases what
       Ingram owes.
-  - id: D
-    text: $9,000 loss in Year 1; $6,000 gain in Year 2
-    rationale: 'Correct. Year 1: €300,000 × ($1.15 − $1.12). Year 2: €300,000 × ($1.15 − $1.13).'
-  answer: D
+  answer: B
   explanation: 'A payable denominated in a foreign currency is remeasured at the spot rate at each balance
     sheet date and at settlement, with changes reported in net income. December 31: the payable rises
     from $336,000 to $345,000, a $9,000 loss in Year 1. February 1: Ingram pays $339,000, so Year 2 has

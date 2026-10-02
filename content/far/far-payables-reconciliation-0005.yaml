@@ -14,36 +14,36 @@ review:
   - Subsidiary ledger and control account reconciliation practice (unreversed accruals; unposted invoices;
     unrecorded liabilities)
   notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'At December 31, Year 2, Clovelly Engineering Co.''s accounts payable subledger totals $757,050,
-  and its general ledger control account shows $736,250. The controller''s review finds: an invoice from
-  a German contractor for €150,000 of repair work done in December, payable in euros in February, was
-  recorded in both records at $1.08 per euro, the rate on the invoice date, and the rate at December 31
-  is $1.11; a $26,800 accrual for consulting services received in December, Year 1, recorded by a general
-  ledger journal entry at December 31, Year 1 (debit consulting expense, credit accounts payable), was
-  never reversed, and the consultant''s invoice was then recorded as consulting expense through accounts
-  payable in both records in January, Year 2; a $47,600 invoice for a delivery van received on December
-  30 and placed in service in January was posted to the dealer''s subledger account but not to the general
-  ledger; and an $11,850 invoice for advertising that ran in December was found in the unmatched-invoice
-  file and has not been recorded in either record. By how much does Clovelly''s Year 2 pretax income change
-  when these findings are corrected?'
+stem: At December 31, Year 1, Clovelly Engineering Co. recorded a $26,800 accrual for consulting services
+  received in December (debit consulting expense, credit accounts payable); the entry was never reversed,
+  and the consultant's invoice was then recorded as consulting expense through accounts payable in both
+  records in January, Year 2. During December, Year 2, a German contractor billed Clovelly €150,000 for
+  repair work, payable in euros in February; Clovelly recorded the invoice in both records at $1.08 per
+  euro, the rate on the invoice date, though the rate at December 31 is $1.11. Also in December, Year
+  2, an $11,850 advertising invoice for ads that ran that month was found in the unmatched-invoice file
+  and has not been recorded in either record; and, on December 30, Year 2, a $47,600 invoice for a delivery
+  van received that day and placed in service in January was posted to the dealer's subledger account
+  but not to the general ledger. At December 31, Year 2, before these items are corrected, Clovelly's
+  accounts payable subledger totals $757,050 and its general ledger control account shows $736,250. By
+  how much does Clovelly's Year 2 pretax income change when these findings are corrected?
 choices:
 - id: A
-  text: $10,450 increase
-  rationale: Correct. − $4,500 transaction loss + $26,800 duplicate expense − $11,850 advertising.
+  text: $37,150 decrease
+  rationale: Charges the $47,600 van to expense. The van is equipment; recording its invoice in the general
+    ledger adds an asset and a payable, and it wasn't in service in Year 2, so no depreciation is due.
 - id: B
-  text: $14,950 increase
-  rationale: Leaves the euro invoice at the invoice-date rate. A payable in a foreign currency is remeasured
-    at the year-end rate; the euro rose, so the payable grows by $4,500, a transaction loss.
-- id: C
   text: $16,350 decrease
   rationale: Ignores the unreversed accrual. Because the Year 1 accrual stayed in the control account,
     recording the invoice in Year 2 charged consulting expense a second time; removing it raises Year
     2 income by $26,800.
+- id: C
+  text: $10,450 increase
+  rationale: Correct. − $4,500 transaction loss + $26,800 duplicate expense − $11,850 advertising.
 - id: D
-  text: $37,150 decrease
-  rationale: Charges the $47,600 van to expense. The van is equipment; recording its invoice in the general
-    ledger adds an asset and a payable, and it wasn't in service in Year 2, so no depreciation is due.
-answer: A
+  text: $14,950 increase
+  rationale: Leaves the euro invoice at the invoice-date rate. A payable in a foreign currency is remeasured
+    at the year-end rate; the euro rose, so the payable grows by $4,500, a transaction loss.
+answer: C
 explanation: 'The euro payable is remeasured at the year-end rate: €150,000 × ($1.11 − $1.08) = $4,500
   more owed, a foreign-currency transaction loss (ASC 830-20-35-1), in both records. The unreversed accrual
   left the Year 1 liability in the control account, so the January invoice charged consulting expense
@@ -52,29 +52,29 @@ explanation: 'The euro payable is remeasured at the year-end rate: €150,000 ×
   invoice is a Year 2 expense and payable in both records: − $11,850. Pretax income changes by − $4,500
   + $26,800 − $11,850 = $10,450 increase.'
 variants:
-- stem: 'At December 31, Year 2, Hartland Engineering Co.''s accounts payable subledger totals $587,100,
-    and its general ledger control account shows $579,400. The controller''s review finds: an invoice
-    from a German contractor for €120,000 of repair work done in December, payable in euros in February,
-    was recorded in both records at $1.06 per euro, the rate on the invoice date, and the rate at December
-    31 is $1.10; a $31,200 accrual for consulting services received in December, Year 1, recorded by a
-    general ledger journal entry at December 31, Year 1 (debit consulting expense, credit accounts payable),
-    was never reversed, and the consultant''s invoice was then recorded as consulting expense through
-    accounts payable in both records in January, Year 2; a $38,900 invoice for a delivery van received
-    on December 30 and placed in service in January was posted to the dealer''s subledger account but
-    not to the general ledger; and a $6,300 invoice for advertising that ran in December was found in
-    the unmatched-invoice file and has not been recorded in either record. By how much does Hartland''s
-    Year 2 pretax income change when these findings are corrected?'
+- stem: At December 31, Year 1, Hartland Engineering Co. recorded a $31,200 accrual for consulting services
+    received in December (debit consulting expense, credit accounts payable); the entry was never reversed,
+    and the consultant's invoice was then recorded as consulting expense through accounts payable in both
+    records in January, Year 2. During December, Year 2, a German contractor billed Hartland €120,000
+    for repair work, payable in euros in February; Hartland recorded the invoice in both records at $1.06
+    per euro, the rate on the invoice date, though the rate at December 31 is $1.10. Also in December,
+    Year 2, a $6,300 advertising invoice for ads that ran that month was found in the unmatched-invoice
+    file and has not been recorded in either record; and, on December 30, Year 2, a $38,900 invoice for
+    a delivery van received that day and placed in service in January was posted to the dealer's subledger
+    account but not to the general ledger. At December 31, Year 2, before these items are corrected, Hartland's
+    accounts payable subledger totals $587,100 and its general ledger control account shows $579,400.
+    By how much does Hartland's Year 2 pretax income change when these findings are corrected?
   choices:
   - id: A
-    text: $11,100 decrease
-    rationale: Ignores the unreversed accrual. Because the Year 1 accrual stayed in the control account,
-      recording the invoice in Year 2 charged consulting expense a second time; removing it raises Year
-      2 income by $31,200.
-  - id: B
     text: $18,800 decrease
     rationale: Charges the $38,900 van to expense. The van is equipment; recording its invoice in the
       general ledger adds an asset and a payable, and it wasn't in service in Year 2, so no depreciation
       is due.
+  - id: B
+    text: $11,100 decrease
+    rationale: Ignores the unreversed accrual. Because the Year 1 accrual stayed in the control account,
+      recording the invoice in Year 2 charged consulting expense a second time; removing it raises Year
+      2 income by $31,200.
   - id: C
     text: $20,100 increase
     rationale: Correct. − $4,800 transaction loss + $31,200 duplicate expense − $6,300 advertising.
@@ -90,35 +90,35 @@ variants:
     van invoice is added to the control account with the van as equipment; no expense arises in Year 2.
     The advertising invoice is a Year 2 expense and payable in both records: − $6,300. Pretax income changes
     by − $4,800 + $31,200 − $6,300 = $20,100 increase.'
-- stem: 'At December 31, Year 2, Morwenstow Engineering Co.''s accounts payable subledger totals $1,012,700,
-    and its general ledger control account shows $970,900. The controller''s review finds: an invoice
-    from a German contractor for €200,000 of repair work done in December, payable in euros in February,
-    was recorded in both records at $1.09 per euro, the rate on the invoice date, and the rate at December
-    31 is $1.12; a $19,400 accrual for consulting services received in December, Year 1, recorded by a
-    general ledger journal entry at December 31, Year 1 (debit consulting expense, credit accounts payable),
-    was never reversed, and the consultant''s invoice was then recorded as consulting expense through
-    accounts payable in both records in January, Year 2; a $61,200 invoice for a delivery van received
-    on December 30 and placed in service in January was posted to the dealer''s subledger account but
-    not to the general ledger; and a $27,800 invoice for advertising that ran in December was found in
-    the unmatched-invoice file and has not been recorded in either record. By how much does Morwenstow''s
-    Year 2 pretax income change when these findings are corrected?'
+- stem: At December 31, Year 1, Morwenstow Engineering Co. recorded a $19,400 accrual for consulting services
+    received in December (debit consulting expense, credit accounts payable); the entry was never reversed,
+    and the consultant's invoice was then recorded as consulting expense through accounts payable in both
+    records in January, Year 2. During December, Year 2, a German contractor billed Morwenstow €200,000
+    for repair work, payable in euros in February; Morwenstow recorded the invoice in both records at
+    $1.09 per euro, the rate on the invoice date, though the rate at December 31 is $1.12. Also in December,
+    Year 2, a $27,800 advertising invoice for ads that ran that month was found in the unmatched-invoice
+    file and has not been recorded in either record; and, on December 30, Year 2, a $61,200 invoice for
+    a delivery van received that day and placed in service in January was posted to the dealer's subledger
+    account but not to the general ledger. At December 31, Year 2, before these items are corrected, Morwenstow's
+    accounts payable subledger totals $1,012,700 and its general ledger control account shows $970,900.
+    By how much does Morwenstow's Year 2 pretax income change when these findings are corrected?
   choices:
   - id: A
-    text: $2,400 decrease
-    rationale: 'Records the $6,000 remeasurement as a gain. The euro rose, so Morwenstow owes more dollars:
-      it is a loss.'
+    text: $14,400 decrease
+    rationale: Correct. − $6,000 transaction loss + $19,400 duplicate expense − $27,800 advertising.
   - id: B
     text: $8,400 decrease
     rationale: Leaves the euro invoice at the invoice-date rate. A payable in a foreign currency is remeasured
       at the year-end rate; the euro rose, so the payable grows by $6,000, a transaction loss.
   - id: C
+    text: $2,400 decrease
+    rationale: 'Records the $6,000 remeasurement as a gain. The euro rose, so Morwenstow owes more dollars:
+      it is a loss.'
+  - id: D
     text: $13,400 increase
     rationale: Leaves out the $27,800 advertising invoice. The advertising ran in December, so it is a
       Year 2 expense and liability even though the invoice was unrecorded.
-  - id: D
-    text: $14,400 decrease
-    rationale: Correct. − $6,000 transaction loss + $19,400 duplicate expense − $27,800 advertising.
-  answer: D
+  answer: A
   explanation: 'The euro payable is remeasured at the year-end rate: €200,000 × ($1.12 − $1.09) = $6,000
     more owed, a foreign-currency transaction loss (ASC 830-20-35-1), in both records. The unreversed
     accrual left the Year 1 liability in the control account, so the January invoice charged consulting
@@ -126,18 +126,18 @@ variants:
     van invoice is added to the control account with the van as equipment; no expense arises in Year 2.
     The advertising invoice is a Year 2 expense and payable in both records: − $27,800. Pretax income
     changes by − $6,000 + $19,400 − $27,800 = $14,400 decrease.'
-- stem: 'At December 31, Year 2, Holsworthy Engineering Co.''s accounts payable subledger totals $443,000,
-    and its general ledger control account shows $435,800. The controller''s review finds: an invoice
-    from a German contractor for €90,000 of repair work done in December, payable in euros in February,
-    was recorded in both records at $1.07 per euro, the rate on the invoice date, and the rate at December
-    31 is $1.12; a $22,600 accrual for consulting services received in December, Year 1, recorded by a
-    general ledger journal entry at December 31, Year 1 (debit consulting expense, credit accounts payable),
-    was never reversed, and the consultant''s invoice was then recorded as consulting expense through
-    accounts payable in both records in January, Year 2; a $29,800 invoice for a delivery van received
-    on December 30 and placed in service in January was posted to the dealer''s subledger account but
-    not to the general ledger; and a $5,400 invoice for advertising that ran in December was found in
-    the unmatched-invoice file and has not been recorded in either record. By how much does Holsworthy''s
-    Year 2 pretax income change when these findings are corrected?'
+- stem: At December 31, Year 1, Holsworthy Engineering Co. recorded a $22,600 accrual for consulting services
+    received in December (debit consulting expense, credit accounts payable); the entry was never reversed,
+    and the consultant's invoice was then recorded as consulting expense through accounts payable in both
+    records in January, Year 2. During December, Year 2, a German contractor billed Holsworthy €90,000
+    for repair work, payable in euros in February; Holsworthy recorded the invoice in both records at
+    $1.07 per euro, the rate on the invoice date, though the rate at December 31 is $1.12. Also in December,
+    Year 2, a $5,400 advertising invoice for ads that ran that month was found in the unmatched-invoice
+    file and has not been recorded in either record; and, on December 30, Year 2, a $29,800 invoice for
+    a delivery van received that day and placed in service in January was posted to the dealer's subledger
+    account but not to the general ledger. At December 31, Year 2, before these items are corrected, Holsworthy's
+    accounts payable subledger totals $443,000 and its general ledger control account shows $435,800.
+    By how much does Holsworthy's Year 2 pretax income change when these findings are corrected?
   choices:
   - id: A
     text: $9,900 decrease

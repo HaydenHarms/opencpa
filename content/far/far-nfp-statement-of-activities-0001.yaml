@@ -74,12 +74,12 @@ variants:
     net assets without donor restrictions for Year 1?'
   choices:
   - id: A
-    text: $25,000 increase
-    rationale: Correct. $400,000 + $150,000 + $120,000 released + $25,000 − $670,000.
-  - id: B
     text: $95,000 decrease
     rationale: Leaves out the $120,000 released from donor restrictions. Releases increase net assets
       without donor restrictions.
+  - id: B
+    text: $25,000 increase
+    rationale: Correct. $400,000 + $150,000 + $120,000 released + $25,000 − $670,000.
   - id: C
     text: $105,000 increase
     rationale: Also counts the $80,000 of restricted contributions. They increase net assets with donor
@@ -88,7 +88,7 @@ variants:
     text: $175,000 increase
     rationale: Subtracts only the $520,000 of program expenses. Management and general and fundraising
       expenses also reduce net assets without donor restrictions.
-  answer: A
+  answer: B
   explanation: 'Net assets without donor restrictions increase by unrestricted contributions ($400,000),
     program service fees ($150,000), releases from restrictions ($120,000) and net investment return ($25,000),
     and decrease by all expenses ($670,000): a $25,000 increase. The $80,000 of restricted contributions
