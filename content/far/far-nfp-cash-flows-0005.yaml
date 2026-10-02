@@ -1,0 +1,166 @@
+id: far-nfp-cash-flows-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 230-10-45-14 (financing inflows: contributions and investment income restricted to long-lived
+    assets or to a donor-restricted endowment)'
+  - 'ASC 230-10-45-21A (proceeds from donated financial assets sold almost immediately: operating unless
+    restricted to long-term purposes)'
+  - ASC 958-230 (not-for-profit statement of cash flows)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Mevagissey Health Clinic, a not-for-profit entity, is reviewing its draft Year 2 statement of cash
+  flows. The draft reports net cash provided by financing activities of $47,000, made up of: cash gifts
+  that donors require Mevagissey to hold as a permanent endowment, $480,000; proceeds from selling shares
+  of stock donated without restriction, which Mevagissey sold within a few days of receipt under its policy
+  of converting donated securities to cash at once, $72,000; purchases of investments for the endowment,
+  ($410,000); and principal payments on its mortgage, ($95,000). The draft''s operating section includes
+  a $315,000 cash gift that a donor restricted to constructing a new clinic building, and $38,000 of interest
+  and dividends that the endowment''s donors require to be added to the endowment''s principal. What net
+  cash provided by financing activities should Mevagissey''s corrected statement report?'
+choices:
+- id: A
+  text: $328,000
+  rationale: Leaves the $410,000 paid for endowment investments in financing activities. Buying investments
+    is an investing activity, even when the investments are held for an endowment.
+- id: B
+  text: $423,000
+  rationale: Leaves the $315,000 building gift in operating activities. Cash gifts that donors restrict
+    to acquiring or constructing long-lived assets are financing inflows.
+- id: C
+  text: $700,000
+  rationale: Leaves the $38,000 of endowment income in operating activities. Investment income that donors
+    require to be added to a donor-restricted endowment is a financing inflow, like the endowment gifts
+    themselves.
+- id: D
+  text: $738,000
+  rationale: Correct. $480,000 endowment gifts − $95,000 mortgage principal + $315,000 building gift +
+    $38,000 endowment income added to principal.
+answer: D
+explanation: Under ASC 230-10-45-14, financing inflows of a not-for-profit entity include cash contributions,
+  and investment income, that donors restrict to acquiring or constructing long-lived assets or to establishing
+  or increasing a donor-restricted endowment. So the $480,000 of endowment gifts stays in financing, and
+  the $315,000 building gift and the $38,000 of endowment income that must be added to principal move
+  in from operating activities. Proceeds from donated securities with no donor restriction that are sold
+  almost at once are operating inflows (ASC 230-10-45-21A), so the $72,000 moves out; purchases of investments
+  are investing outflows, so the $410,000 moves out. Mortgage principal payments are financing. Corrected
+  financing = $480,000 − $95,000 + $315,000 + $38,000 = $738,000.
+variants:
+- stem: 'Lostwithiel Arts Center, a not-for-profit entity, is reviewing its draft Year 2 statement of
+    cash flows. The draft reports net cash provided by financing activities of $39,000, made up of: cash
+    gifts that donors require Lostwithiel to hold as a permanent endowment, $360,000; proceeds from selling
+    shares of stock donated without restriction, which Lostwithiel sold within a few days of receipt under
+    its policy of converting donated securities to cash at once, $54,000; purchases of investments for
+    the endowment, ($305,000); and principal payments on its mortgage, ($70,000). The draft''s operating
+    section includes a $240,000 cash gift that a donor restricted to constructing a new gallery wing,
+    and $29,000 of interest and dividends that the endowment''s donors require to be added to the endowment''s
+    principal. What net cash provided by financing activities should Lostwithiel''s corrected statement
+    report?'
+  choices:
+  - id: A
+    text: $39,000
+    rationale: Accepts the draft's $39,000. The draft keeps the donated-share proceeds and the investment
+      purchases in financing activities and leaves the building gift and the endowment income in operating
+      activities.
+  - id: B
+    text: $319,000
+    rationale: Leaves the $240,000 building gift in operating activities. Cash gifts that donors restrict
+      to acquiring or constructing long-lived assets are financing inflows.
+  - id: C
+    text: $559,000
+    rationale: Correct. $360,000 endowment gifts − $70,000 mortgage principal + $240,000 building gift
+      + $29,000 endowment income added to principal.
+  - id: D
+    text: $613,000
+    rationale: Leaves the $54,000 from selling the donated shares in financing activities. Cash from selling
+      donated financial assets that carried no donor restriction and were converted to cash almost at
+      once is an operating inflow; only such proceeds that the donor restricted to long-term purposes
+      are financing.
+  answer: C
+  explanation: Under ASC 230-10-45-14, financing inflows of a not-for-profit entity include cash contributions,
+    and investment income, that donors restrict to acquiring or constructing long-lived assets or to establishing
+    or increasing a donor-restricted endowment. So the $360,000 of endowment gifts stays in financing,
+    and the $240,000 building gift and the $29,000 of endowment income that must be added to principal
+    move in from operating activities. Proceeds from donated securities with no donor restriction that
+    are sold almost at once are operating inflows (ASC 230-10-45-21A), so the $54,000 moves out; purchases
+    of investments are investing outflows, so the $305,000 moves out. Mortgage principal payments are
+    financing. Corrected financing = $360,000 − $70,000 + $240,000 + $29,000 = $559,000.
+- stem: 'Padstow Youth League, a not-for-profit entity, is reviewing its draft Year 2 statement of cash
+    flows. The draft reports net cash provided by financing activities of $53,000, made up of: cash gifts
+    that donors require Padstow to hold as a permanent endowment, $620,000; proceeds from selling shares
+    of stock donated without restriction, which Padstow sold within a few days of receipt under its policy
+    of converting donated securities to cash at once, $93,000; purchases of investments for the endowment,
+    ($540,000); and principal payments on its mortgage, ($120,000). The draft''s operating section includes
+    a $410,000 cash gift that a donor restricted to constructing a new sports hall, and $47,000 of interest
+    and dividends that the endowment''s donors require to be added to the endowment''s principal. What
+    net cash provided by financing activities should Padstow''s corrected statement report?'
+  choices:
+  - id: A
+    text: $53,000
+    rationale: Accepts the draft's $53,000. The draft keeps the donated-share proceeds and the investment
+      purchases in financing activities and leaves the building gift and the endowment income in operating
+      activities.
+  - id: B
+    text: $547,000
+    rationale: Leaves the $410,000 building gift in operating activities. Cash gifts that donors restrict
+      to acquiring or constructing long-lived assets are financing inflows.
+  - id: C
+    text: $957,000
+    rationale: Correct. $620,000 endowment gifts − $120,000 mortgage principal + $410,000 building gift
+      + $47,000 endowment income added to principal.
+  - id: D
+    text: $1,050,000
+    rationale: Leaves the $93,000 from selling the donated shares in financing activities. Cash from selling
+      donated financial assets that carried no donor restriction and were converted to cash almost at
+      once is an operating inflow; only such proceeds that the donor restricted to long-term purposes
+      are financing.
+  answer: C
+  explanation: Under ASC 230-10-45-14, financing inflows of a not-for-profit entity include cash contributions,
+    and investment income, that donors restrict to acquiring or constructing long-lived assets or to establishing
+    or increasing a donor-restricted endowment. So the $620,000 of endowment gifts stays in financing,
+    and the $410,000 building gift and the $47,000 of endowment income that must be added to principal
+    move in from operating activities. Proceeds from donated securities with no donor restriction that
+    are sold almost at once are operating inflows (ASC 230-10-45-21A), so the $93,000 moves out; purchases
+    of investments are investing outflows, so the $540,000 moves out. Mortgage principal payments are
+    financing. Corrected financing = $620,000 − $120,000 + $410,000 + $47,000 = $957,000.
+- stem: 'Bodmin Hospice Trust, a not-for-profit entity, is reviewing its draft Year 2 statement of cash
+    flows. The draft reports net cash provided by financing activities of $31,000, made up of: cash gifts
+    that donors require Bodmin to hold as a permanent endowment, $270,000; proceeds from selling shares
+    of stock donated without restriction, which Bodmin sold within a few days of receipt under its policy
+    of converting donated securities to cash at once, $41,000; purchases of investments for the endowment,
+    ($228,000); and principal payments on its mortgage, ($52,000). The draft''s operating section includes
+    a $185,000 cash gift that a donor restricted to constructing a new day-care wing, and $22,000 of interest
+    and dividends that the endowment''s donors require to be added to the endowment''s principal. What
+    net cash provided by financing activities should Bodmin''s corrected statement report?'
+  choices:
+  - id: A
+    text: $31,000
+    rationale: Accepts the draft's $31,000. The draft keeps the donated-share proceeds and the investment
+      purchases in financing activities and leaves the building gift and the endowment income in operating
+      activities.
+  - id: B
+    text: $197,000
+    rationale: Leaves the $228,000 paid for endowment investments in financing activities. Buying investments
+      is an investing activity, even when the investments are held for an endowment.
+  - id: C
+    text: $240,000
+    rationale: Leaves the $185,000 building gift in operating activities. Cash gifts that donors restrict
+      to acquiring or constructing long-lived assets are financing inflows.
+  - id: D
+    text: $425,000
+    rationale: Correct. $270,000 endowment gifts − $52,000 mortgage principal + $185,000 building gift
+      + $22,000 endowment income added to principal.
+  answer: D
+  explanation: Under ASC 230-10-45-14, financing inflows of a not-for-profit entity include cash contributions,
+    and investment income, that donors restrict to acquiring or constructing long-lived assets or to establishing
+    or increasing a donor-restricted endowment. So the $270,000 of endowment gifts stays in financing,
+    and the $185,000 building gift and the $22,000 of endowment income that must be added to principal
+    move in from operating activities. Proceeds from donated securities with no donor restriction that
+    are sold almost at once are operating inflows (ASC 230-10-45-21A), so the $41,000 moves out; purchases
+    of investments are investing outflows, so the $228,000 moves out. Mortgage principal payments are
+    financing. Corrected financing = $270,000 − $52,000 + $185,000 + $22,000 = $425,000.

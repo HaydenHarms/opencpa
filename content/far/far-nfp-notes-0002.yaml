@@ -1,0 +1,170 @@
+id: far-nfp-notes-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Notes to financial statements (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 958-205-50 (endowment disclosures: net asset composition by type of fund; underwater funds)'
+  - ASC 958-205-45 (underwater endowment funds reported in net assets with donor restrictions, as amended
+    by ASU 2016-14)
+  - 'ASC 958-205-20 (glossary: donor-restricted endowment fund, including term endowments; board-designated
+    quasi-endowment)'
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Helston Learning Trust, a not-for-profit entity, is reviewing the draft endowment note for its
+  June 30, Year 2, financial statements. The note''s table of endowment net assets by type of fund reports
+  donor-restricted endowment funds of $2,805,000 and no board-designated endowment funds. That amount
+  is the sum of: the $1,465,000 fair value of the Scholarship Fund, created with gifts of $1,200,000 that
+  donors require Helston to hold in perpetuity; the $800,000 of original gifts to the Library Fund, which
+  donors also require Helston to hold in perpetuity and whose investments have fallen in value to $712,000;
+  and investments of $540,000 that Helston''s board voted to set aside for long-term support and may release
+  by a later vote. The draft omits the Music Fund, a gift that its donor requires Helston to invest for
+  ten years before spending it, whose investments are worth $250,000 at June 30. What amount should the
+  corrected note report as donor-restricted endowment funds?'
+choices:
+- id: A
+  text: $2,427,000
+  rationale: Correct. $1,465,000 + $712,000 + $250,000.
+- id: B
+  text: $2,515,000
+  rationale: Reports the Library Fund at its $800,000 of original gifts. Before ASU 2016-14, the shortfall
+    of an underwater endowment fund was charged to unrestricted net assets, leaving the original gift
+    in restricted net assets; now the fund is reported in net assets with donor restrictions at its $712,000
+    fair value, and the shortfall is disclosed.
+- id: C
+  text: $2,805,000
+  rationale: Accepts the draft's $2,805,000, which reports the Library Fund at its original gifts, includes
+    the board-designated investments and omits the term endowment.
+- id: D
+  text: $2,967,000
+  rationale: Keeps the $540,000 that the board set aside. A board-designated (quasi-) endowment is without
+    donor restrictions, because the board can reverse its own decision; the note shows it separately as
+    a board-designated fund.
+answer: A
+explanation: Donor-restricted endowment funds are funds a donor requires to be invested in perpetuity
+  or for a specified term, reported in net assets with donor restrictions (ASC 958-205). The Scholarship
+  Fund is included at its $1,465,000 fair value, appreciation included, because returns stay with donor
+  restrictions until appropriated. Since ASU 2016-14, an underwater fund is reported at its fair value
+  in net assets with donor restrictions, so the Library Fund is $712,000, and the $88,000 shortfall below
+  the original gifts is disclosed. The Music Fund is a term endowment ($250,000). The board-designated
+  investments are without donor restrictions and are shown as a separate, board-designated fund. Donor-restricted
+  endowment funds = $1,465,000 + $712,000 + $250,000 = $2,427,000.
+variants:
+- stem: 'Marazion College Fund, a not-for-profit entity, is reviewing the draft endowment note for its
+    June 30, Year 2, financial statements. The note''s table of endowment net assets by type of fund reports
+    donor-restricted endowment funds of $2,146,000 and no board-designated endowment funds. That amount
+    is the sum of: the $1,086,000 fair value of the Scholarship Fund, created with gifts of $900,000 that
+    donors require Marazion to hold in perpetuity; the $650,000 of original gifts to the Library Fund,
+    which donors also require Marazion to hold in perpetuity and whose investments have fallen in value
+    to $574,000; and investments of $410,000 that Marazion''s board voted to set aside for long-term support
+    and may release by a later vote. The draft omits the Music Fund, a gift that its donor requires Marazion
+    to invest for eight years before spending it, whose investments are worth $190,000 at June 30. What
+    amount should the corrected note report as donor-restricted endowment funds?'
+  choices:
+  - id: A
+    text: $1,660,000
+    rationale: Leaves out the $190,000 Music Fund. A gift the donor requires to be invested for a specified
+      term is a donor-restricted (term) endowment fund.
+  - id: B
+    text: $1,850,000
+    rationale: Correct. $1,086,000 + $574,000 + $190,000.
+  - id: C
+    text: $1,926,000
+    rationale: Reports the Library Fund at its $650,000 of original gifts. Before ASU 2016-14, the shortfall
+      of an underwater endowment fund was charged to unrestricted net assets, leaving the original gift
+      in restricted net assets; now the fund is reported in net assets with donor restrictions at its
+      $574,000 fair value, and the shortfall is disclosed.
+  - id: D
+    text: $2,260,000
+    rationale: Keeps the $410,000 that the board set aside. A board-designated (quasi-) endowment is without
+      donor restrictions, because the board can reverse its own decision; the note shows it separately
+      as a board-designated fund.
+  answer: B
+  explanation: Donor-restricted endowment funds are funds a donor requires to be invested in perpetuity
+    or for a specified term, reported in net assets with donor restrictions (ASC 958-205). The Scholarship
+    Fund is included at its $1,086,000 fair value, appreciation included, because returns stay with donor
+    restrictions until appropriated. Since ASU 2016-14, an underwater fund is reported at its fair value
+    in net assets with donor restrictions, so the Library Fund is $574,000, and the $76,000 shortfall
+    below the original gifts is disclosed. The Music Fund is a term endowment ($190,000). The board-designated
+    investments are without donor restrictions and are shown as a separate, board-designated fund. Donor-restricted
+    endowment funds = $1,086,000 + $574,000 + $190,000 = $1,850,000.
+- stem: 'Porthleven Scholars Trust, a not-for-profit entity, is reviewing the draft endowment note for
+    its June 30, Year 2, financial statements. The note''s table of endowment net assets by type of fund
+    reports donor-restricted endowment funds of $3,462,000 and no board-designated endowment funds. That
+    amount is the sum of: the $1,742,000 fair value of the Scholarship Fund, created with gifts of $1,500,000
+    that donors require Porthleven to hold in perpetuity; the $1,100,000 of original gifts to the Library
+    Fund, which donors also require Porthleven to hold in perpetuity and whose investments have fallen
+    in value to $968,000; and investments of $620,000 that Porthleven''s board voted to set aside for
+    long-term support and may release by a later vote. The draft omits the Music Fund, a gift that its
+    donor requires Porthleven to invest for twelve years before spending it, whose investments are worth
+    $310,000 at June 30. What amount should the corrected note report as donor-restricted endowment funds?'
+  choices:
+  - id: A
+    text: $2,710,000
+    rationale: Leaves out the $310,000 Music Fund. A gift the donor requires to be invested for a specified
+      term is a donor-restricted (term) endowment fund.
+  - id: B
+    text: $2,778,000
+    rationale: Reports the Scholarship Fund at its $1,500,000 of original gifts, treating the $242,000
+      of appreciation as without donor restrictions. Accumulated returns on a donor-restricted endowment
+      fund stay with donor restrictions until the board appropriates them for spending.
+  - id: C
+    text: $3,020,000
+    rationale: Correct. $1,742,000 + $968,000 + $310,000.
+  - id: D
+    text: $3,152,000
+    rationale: Reports the Library Fund at its $1,100,000 of original gifts. Before ASU 2016-14, the shortfall
+      of an underwater endowment fund was charged to unrestricted net assets, leaving the original gift
+      in restricted net assets; now the fund is reported in net assets with donor restrictions at its
+      $968,000 fair value, and the shortfall is disclosed.
+  answer: C
+  explanation: Donor-restricted endowment funds are funds a donor requires to be invested in perpetuity
+    or for a specified term, reported in net assets with donor restrictions (ASC 958-205). The Scholarship
+    Fund is included at its $1,742,000 fair value, appreciation included, because returns stay with donor
+    restrictions until appropriated. Since ASU 2016-14, an underwater fund is reported at its fair value
+    in net assets with donor restrictions, so the Library Fund is $968,000, and the $132,000 shortfall
+    below the original gifts is disclosed. The Music Fund is a term endowment ($310,000). The board-designated
+    investments are without donor restrictions and are shown as a separate, board-designated fund. Donor-restricted
+    endowment funds = $1,742,000 + $968,000 + $310,000 = $3,020,000.
+- stem: 'Zennor Heritage Fund, a not-for-profit entity, is reviewing the draft endowment note for its
+    June 30, Year 2, financial statements. The note''s table of endowment net assets by type of fund reports
+    donor-restricted endowment funds of $1,666,000 and no board-designated endowment funds. That amount
+    is the sum of: the $846,000 fair value of the Scholarship Fund, created with gifts of $700,000 that
+    donors require Zennor to hold in perpetuity; the $500,000 of original gifts to the Library Fund, which
+    donors also require Zennor to hold in perpetuity and whose investments have fallen in value to $441,000;
+    and investments of $320,000 that Zennor''s board voted to set aside for long-term support and may
+    release by a later vote. The draft omits the Music Fund, a gift that its donor requires Zennor to
+    invest for five years before spending it, whose investments are worth $150,000 at June 30. What amount
+    should the corrected note report as donor-restricted endowment funds?'
+  choices:
+  - id: A
+    text: $1,291,000
+    rationale: Reports the Scholarship Fund at its $700,000 of original gifts, treating the $146,000 of
+      appreciation as without donor restrictions. Accumulated returns on a donor-restricted endowment
+      fund stay with donor restrictions until the board appropriates them for spending.
+  - id: B
+    text: $1,437,000
+    rationale: Correct. $846,000 + $441,000 + $150,000.
+  - id: C
+    text: $1,496,000
+    rationale: Reports the Library Fund at its $500,000 of original gifts. Before ASU 2016-14, the shortfall
+      of an underwater endowment fund was charged to unrestricted net assets, leaving the original gift
+      in restricted net assets; now the fund is reported in net assets with donor restrictions at its
+      $441,000 fair value, and the shortfall is disclosed.
+  - id: D
+    text: $1,757,000
+    rationale: Keeps the $320,000 that the board set aside. A board-designated (quasi-) endowment is without
+      donor restrictions, because the board can reverse its own decision; the note shows it separately
+      as a board-designated fund.
+  answer: B
+  explanation: Donor-restricted endowment funds are funds a donor requires to be invested in perpetuity
+    or for a specified term, reported in net assets with donor restrictions (ASC 958-205). The Scholarship
+    Fund is included at its $846,000 fair value, appreciation included, because returns stay with donor
+    restrictions until appropriated. Since ASU 2016-14, an underwater fund is reported at its fair value
+    in net assets with donor restrictions, so the Library Fund is $441,000, and the $59,000 shortfall
+    below the original gifts is disclosed. The Music Fund is a term endowment ($150,000). The board-designated
+    investments are without donor restrictions and are shown as a separate, board-designated fund. Donor-restricted
+    endowment funds = $846,000 + $441,000 + $150,000 = $1,437,000.

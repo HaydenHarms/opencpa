@@ -1,0 +1,171 @@
+id: far-inventory-reconciliation-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory; write-down to net realizable value)
+  - ASC 606-10-55-79 to 55-80 (consignment arrangements)
+  - ASC 606-10-55-81 to 55-84 (bill-and-hold arrangements)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Year 2, Budleigh Tableware Co.''s perpetual inventory subledger totals $1,063,100,
+  and its general ledger inventory account shows $1,068,200. Budleigh reports inventory write-downs in
+  cost of goods sold. The controller''s investigation finds: goods costing $41,600 that Budleigh shipped
+  in December to Sidmouth Interiors, a retailer that sells them on Budleigh''s behalf and returns any
+  it doesn''t sell, were removed from both records and charged to cost of goods sold; goods that a customer
+  returned on December 18, which had been sold for $29,400 and cost $18,900, were restored to the subledger
+  at cost, but the general ledger entry debited inventory and credited cost of goods sold at the selling
+  price; a $17,300 write-down of obsolete goods to net realizable value was recorded in the subledger
+  but not in the general ledger; and goods costing $22,700 that a customer bought in December and asked
+  Budleigh to hold until its new store opens in February, which are tagged with the customer''s name,
+  ready to ship and can''t be used to fill other orders, were removed from the general ledger as sold
+  but are still listed in the subledger. What net adjustment to Budleigh''s Year 2 cost of goods sold
+  results from these findings?'
+choices:
+- id: A
+  text: $13,800 decrease
+  rationale: Correct. − $41,600 consigned goods + $10,500 return error + $17,300 write-down.
+- id: B
+  text: $24,300 decrease
+  rationale: Ignores the return recorded at selling price. The general ledger credited cost of goods sold
+    for $29,400 instead of the goods' $18,900 cost, understating it by $10,500.
+- id: C
+  text: $27,800 increase
+  rationale: Leaves the $41,600 of goods at Sidmouth Interiors in cost of goods sold. The dealer sells
+    them on Budleigh's behalf and returns any it doesn't sell, so Budleigh still controls them; they go
+    back into inventory, reducing cost of goods sold.
+- id: D
+  text: $31,100 decrease
+  rationale: Records the $17,300 write-down in the general ledger without charging cost of goods sold.
+    Budleigh reports write-downs in cost of goods sold, so it rises by $17,300.
+answer: A
+explanation: 'Consigned goods remain Budleigh''s inventory until the dealer sells them, so $41,600 comes
+  back into inventory in both records and out of cost of goods sold. The return should have restored the
+  goods at cost: the general ledger credited cost of goods sold $10,500 too much, so cost of goods sold
+  rises by $10,500 and the general ledger inventory falls by the same amount. The write-down is missing
+  from the general ledger and is charged to cost of goods sold: + $17,300. The bill-and-hold sale stands
+  (the customer requested it, the goods are identified as the customer''s, ready to ship and can''t be
+  redirected), so only the subledger must remove the goods; cost of goods sold is unaffected. Net adjustment
+  = − $41,600 + $10,500 + $17,300 = $13,800 decrease.'
+variants:
+- stem: 'At December 31, Year 2, Exmouth Tableware Co.''s perpetual inventory subledger totals $834,900,
+    and its general ledger inventory account shows $853,800. Exmouth reports inventory write-downs in
+    cost of goods sold. The controller''s investigation finds: goods costing $28,900 that Exmouth shipped
+    in December to Dawlish Home Store, a retailer that sells them on Exmouth''s behalf and returns any
+    it doesn''t sell, were removed from both records and charged to cost of goods sold; goods that a customer
+    returned on December 18, which had been sold for $33,600 and cost $21,500, were restored to the subledger
+    at cost, but the general ledger entry debited inventory and credited cost of goods sold at the selling
+    price; a $24,600 write-down of obsolete goods to net realizable value was recorded in the subledger
+    but not in the general ledger; and goods costing $17,800 that a customer bought in December and asked
+    Exmouth to hold until its new store opens in February, which are tagged with the customer''s name,
+    ready to ship and can''t be used to fill other orders, were removed from the general ledger as sold
+    but are still listed in the subledger. What net adjustment to Exmouth''s Year 2 cost of goods sold
+    results from these findings?'
+  choices:
+  - id: A
+    text: $4,300 decrease
+    rationale: Ignores the return recorded at selling price. The general ledger credited cost of goods
+      sold for $33,600 instead of the goods' $21,500 cost, understating it by $12,100.
+  - id: B
+    text: $7,800 increase
+    rationale: Correct. − $28,900 consigned goods + $12,100 return error + $24,600 write-down.
+  - id: C
+    text: $10,000 decrease
+    rationale: Treats the $17,800 of goods held for the customer as Exmouth's inventory, reversing their
+      cost of goods sold. The customer asked for the arrangement and controls the goods, which are set
+      aside for it and ready to ship, so the sale stands; only the subledger needs correcting.
+  - id: D
+    text: $16,800 decrease
+    rationale: Records the $24,600 write-down in the general ledger without charging cost of goods sold.
+      Exmouth reports write-downs in cost of goods sold, so it rises by $24,600.
+  answer: B
+  explanation: 'Consigned goods remain Exmouth''s inventory until the dealer sells them, so $28,900 comes
+    back into inventory in both records and out of cost of goods sold. The return should have restored
+    the goods at cost: the general ledger credited cost of goods sold $12,100 too much, so cost of goods
+    sold rises by $12,100 and the general ledger inventory falls by the same amount. The write-down is
+    missing from the general ledger and is charged to cost of goods sold: + $24,600. The bill-and-hold
+    sale stands (the customer requested it, the goods are identified as the customer''s, ready to ship
+    and can''t be redirected), so only the subledger must remove the goods; cost of goods sold is unaffected.
+    Net adjustment = − $28,900 + $12,100 + $24,600 = $7,800 increase.'
+- stem: 'At December 31, Year 2, Teignmouth Tableware Co.''s perpetual inventory subledger totals $1,285,600,
+    and its general ledger inventory account shows $1,295,800. Teignmouth reports inventory write-downs
+    in cost of goods sold. The controller''s investigation finds: goods costing $18,300 that Teignmouth
+    shipped in December to Paignton Home Store, a retailer that sells them on Teignmouth''s behalf and
+    returns any it doesn''t sell, were removed from both records and charged to cost of goods sold; goods
+    that a customer returned on December 18, which had been sold for $41,200 and cost $26,800, were restored
+    to the subledger at cost, but the general ledger entry debited inventory and credited cost of goods
+    sold at the selling price; a $32,700 write-down of obsolete goods to net realizable value was recorded
+    in the subledger but not in the general ledger; and goods costing $36,900 that a customer bought in
+    December and asked Teignmouth to hold until its new store opens in February, which are tagged with
+    the customer''s name, ready to ship and can''t be used to fill other orders, were removed from the
+    general ledger as sold but are still listed in the subledger. What net adjustment to Teignmouth''s
+    Year 2 cost of goods sold results from these findings?'
+  choices:
+  - id: A
+    text: $3,900 decrease
+    rationale: Records the $32,700 write-down in the general ledger without charging cost of goods sold.
+      Teignmouth reports write-downs in cost of goods sold, so it rises by $32,700.
+  - id: B
+    text: $8,100 decrease
+    rationale: Treats the $36,900 of goods held for the customer as Teignmouth's inventory, reversing
+      their cost of goods sold. The customer asked for the arrangement and controls the goods, which are
+      set aside for it and ready to ship, so the sale stands; only the subledger needs correcting.
+  - id: C
+    text: $14,400 increase
+    rationale: Ignores the return recorded at selling price. The general ledger credited cost of goods
+      sold for $41,200 instead of the goods' $26,800 cost, understating it by $14,400.
+  - id: D
+    text: $28,800 increase
+    rationale: Correct. − $18,300 consigned goods + $14,400 return error + $32,700 write-down.
+  answer: D
+  explanation: 'Consigned goods remain Teignmouth''s inventory until the dealer sells them, so $18,300
+    comes back into inventory in both records and out of cost of goods sold. The return should have restored
+    the goods at cost: the general ledger credited cost of goods sold $14,400 too much, so cost of goods
+    sold rises by $14,400 and the general ledger inventory falls by the same amount. The write-down is
+    missing from the general ledger and is charged to cost of goods sold: + $32,700. The bill-and-hold
+    sale stands (the customer requested it, the goods are identified as the customer''s, ready to ship
+    and can''t be redirected), so only the subledger must remove the goods; cost of goods sold is unaffected.
+    Net adjustment = − $18,300 + $14,400 + $32,700 = $28,800 increase.'
+- stem: 'At December 31, Year 2, Brixham Tableware Co.''s perpetual inventory subledger totals $694,200,
+    and its general ledger inventory account shows $709,500. Brixham reports inventory write-downs in
+    cost of goods sold. The controller''s investigation finds: goods costing $14,700 that Brixham shipped
+    in December to Totnes Living, a retailer that sells them on Brixham''s behalf and returns any it doesn''t
+    sell, were removed from both records and charged to cost of goods sold; goods that a customer returned
+    on December 18, which had been sold for $26,800 and cost $17,100, were restored to the subledger at
+    cost, but the general ledger entry debited inventory and credited cost of goods sold at the selling
+    price; a $21,500 write-down of obsolete goods to net realizable value was recorded in the subledger
+    but not in the general ledger; and goods costing $15,900 that a customer bought in December and asked
+    Brixham to hold until its new store opens in February, which are tagged with the customer''s name,
+    ready to ship and can''t be used to fill other orders, were removed from the general ledger as sold
+    but are still listed in the subledger. What net adjustment to Brixham''s Year 2 cost of goods sold
+    results from these findings?'
+  choices:
+  - id: A
+    text: $5,000 decrease
+    rationale: Records the $21,500 write-down in the general ledger without charging cost of goods sold.
+      Brixham reports write-downs in cost of goods sold, so it rises by $21,500.
+  - id: B
+    text: $6,800 increase
+    rationale: Ignores the return recorded at selling price. The general ledger credited cost of goods
+      sold for $26,800 instead of the goods' $17,100 cost, understating it by $9,700.
+  - id: C
+    text: $16,500 increase
+    rationale: Correct. − $14,700 consigned goods + $9,700 return error + $21,500 write-down.
+  - id: D
+    text: $31,200 increase
+    rationale: Leaves the $14,700 of goods at Totnes Living in cost of goods sold. The dealer sells them
+      on Brixham's behalf and returns any it doesn't sell, so Brixham still controls them; they go back
+      into inventory, reducing cost of goods sold.
+  answer: C
+  explanation: 'Consigned goods remain Brixham''s inventory until the dealer sells them, so $14,700 comes
+    back into inventory in both records and out of cost of goods sold. The return should have restored
+    the goods at cost: the general ledger credited cost of goods sold $9,700 too much, so cost of goods
+    sold rises by $9,700 and the general ledger inventory falls by the same amount. The write-down is
+    missing from the general ledger and is charged to cost of goods sold: + $21,500. The bill-and-hold
+    sale stands (the customer requested it, the goods are identified as the customer''s, ready to ship
+    and can''t be redirected), so only the subledger must remove the goods; cost of goods sold is unaffected.
+    Net adjustment = − $14,700 + $9,700 + $21,500 = $16,500 increase.'

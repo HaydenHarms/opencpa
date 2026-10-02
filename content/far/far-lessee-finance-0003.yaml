@@ -1,0 +1,150 @@
+id: far-lessee-finance-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 842-10-30-5 (lease payments: variable payments that depend on an index, measured at the commencement-date
+    index)'
+  - 'ASC 842-10-15-37 (practical expedient: not separating lease and nonlease components)'
+  - ASC 842-10-35-5 (remeasurement for index changes only when remeasured for another reason)
+  - ASC 842-20-30-1 and 842-20-35-1 (initial and subsequent measurement of the lease liability)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Ludgvan Bakeries Co. leased a commercial oven line for six years and classified
+  the lease as a finance lease. Payments are due each January 1, starting at commencement. The first payment
+  is $84,000, of which $9,000 is for maintenance the lessor performs; Ludgvan has elected not to separate
+  lease and nonlease components for this class of asset. Each later payment is adjusted for the change
+  in the consumer price index, and in December, Year 1, the lessor told Ludgvan that the January 1, Year
+  2, payment will be $86,100. The rate implicit in the lease isn't readily determinable, and Ludgvan's
+  incremental borrowing rate is 6%. Present value factors at 6% for an annuity due are 5.2124 for six
+  periods and 4.4651 for five periods. Rounding each computation to the nearest dollar, what carrying
+  amount of the lease liability should Ludgvan report at December 31, Year 1?
+choices:
+- id: A
+  text: $334,886
+  rationale: Leaves the $9,000 maintenance charge out of the lease payments. Ludgvan elected not to separate
+    lease and nonlease components for this class of asset, so the whole $84,000 payment is a lease payment.
+- id: B
+  text: $353,842
+  rationale: 'Deducts the first payment but accrues no interest for Year 1. The liability accretes at
+    6% on the $353,842 balance: $21,231.'
+- id: C
+  text: $375,073
+  rationale: Correct. ($437,842 − $84,000) × 1.06.
+- id: D
+  text: $384,445
+  rationale: 'Remeasures the liability for the higher Year 2 payment: $86,100 × 4.4651. A change in a
+    payment tied to an index is variable lease cost when it occurs; the liability isn''t remeasured for
+    it unless it is remeasured for another reason.'
+answer: C
+explanation: 'Lease payments include variable payments that depend on an index, measured using the index
+  at commencement, and, because Ludgvan combines lease and nonlease components, the maintenance charge:
+  $84,000 a year. Initial liability = $84,000 × 5.2124 = $437,842. The first payment, made at commencement,
+  reduces it to $353,842. Interest for Year 1 = $353,842 × 6% = $21,231, so the liability at December
+  31 is $375,073. The CPI increase to $86,100 is recognized as variable lease cost in Year 2 and doesn''t
+  remeasure the liability (ASC 842-10-35-5).'
+variants:
+- stem: On January 1, Year 1, Madron Print Co. leased a digital press for six years and classified the
+    lease as a finance lease. Payments are due each January 1, starting at commencement. The first payment
+    is $126,000, of which $14,000 is for maintenance the lessor performs; Madron has elected not to separate
+    lease and nonlease components for this class of asset. Each later payment is adjusted for the change
+    in the consumer price index, and in December, Year 1, the lessor told Madron that the January 1, Year
+    2, payment will be $129,780. The rate implicit in the lease isn't readily determinable, and Madron's
+    incremental borrowing rate is 7%. Present value factors at 7% for an annuity due are 5.1002 for six
+    periods and 4.3872 for five periods. Rounding each computation to the nearest dollar, what carrying
+    amount of the lease liability should Madron report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $491,368
+    rationale: Leaves the $14,000 maintenance charge out of the lease payments. Madron elected not to
+      separate lease and nonlease components for this class of asset, so the whole $126,000 payment is
+      a lease payment.
+  - id: B
+    text: $552,789
+    rationale: Correct. ($642,625 − $126,000) × 1.07.
+  - id: C
+    text: $569,371
+    rationale: 'Remeasures the liability for the higher Year 2 payment: $129,780 × 4.3872. A change in
+      a payment tied to an index is variable lease cost when it occurs; the liability isn''t remeasured
+      for it unless it is remeasured for another reason.'
+  - id: D
+    text: $687,609
+    rationale: Accrues interest on the full $642,625 without deducting the $126,000 paid at commencement.
+      That payment reduced the liability at once.
+  answer: B
+  explanation: 'Lease payments include variable payments that depend on an index, measured using the index
+    at commencement, and, because Madron combines lease and nonlease components, the maintenance charge:
+    $126,000 a year. Initial liability = $126,000 × 5.1002 = $642,625. The first payment, made at commencement,
+    reduces it to $516,625. Interest for Year 1 = $516,625 × 7% = $36,164, so the liability at December
+    31 is $552,789. The CPI increase to $129,780 is recognized as variable lease cost in Year 2 and doesn''t
+    remeasure the liability (ASC 842-10-35-5).'
+- stem: On January 1, Year 1, Morvah Dairy Co. leased a milking system for six years and classified the
+    lease as a finance lease. Payments are due each January 1, starting at commencement. The first payment
+    is $58,000, of which $6,500 is for maintenance the lessor performs; Morvah has elected not to separate
+    lease and nonlease components for this class of asset. Each later payment is adjusted for the change
+    in the consumer price index, and in December, Year 1, the lessor told Morvah that the January 1, Year
+    2, payment will be $59,450. The rate implicit in the lease isn't readily determinable, and Morvah's
+    incremental borrowing rate is 5%. Present value factors at 5% for an annuity due are 5.3295 for six
+    periods and 4.5460 for five periods. Rounding each computation to the nearest dollar, what carrying
+    amount of the lease liability should Morvah report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $251,111
+    rationale: 'Deducts the first payment but accrues no interest for Year 1. The liability accretes at
+      5% on the $251,111 balance: $12,556.'
+  - id: B
+    text: $263,667
+    rationale: Correct. ($309,111 − $58,000) × 1.05.
+  - id: C
+    text: $270,260
+    rationale: 'Remeasures the liability for the higher Year 2 payment: $59,450 × 4.5460. A change in
+      a payment tied to an index is variable lease cost when it occurs; the liability isn''t remeasured
+      for it unless it is remeasured for another reason.'
+  - id: D
+    text: $324,567
+    rationale: Accrues interest on the full $309,111 without deducting the $58,000 paid at commencement.
+      That payment reduced the liability at once.
+  answer: B
+  explanation: 'Lease payments include variable payments that depend on an index, measured using the index
+    at commencement, and, because Morvah combines lease and nonlease components, the maintenance charge:
+    $58,000 a year. Initial liability = $58,000 × 5.3295 = $309,111. The first payment, made at commencement,
+    reduces it to $251,111. Interest for Year 1 = $251,111 × 5% = $12,556, so the liability at December
+    31 is $263,667. The CPI increase to $59,450 is recognized as variable lease cost in Year 2 and doesn''t
+    remeasure the liability (ASC 842-10-35-5).'
+- stem: On January 1, Year 1, Pendeen Mining Co. leased a rock crusher for six years and classified the
+    lease as a finance lease. Payments are due each January 1, starting at commencement. The first payment
+    is $97,000, of which $11,000 is for maintenance the lessor performs; Pendeen has elected not to separate
+    lease and nonlease components for this class of asset. Each later payment is adjusted for the change
+    in the consumer price index, and in December, Year 1, the lessor told Pendeen that the January 1,
+    Year 2, payment will be $99,910. The rate implicit in the lease isn't readily determinable, and Pendeen's
+    incremental borrowing rate is 8%. Present value factors at 8% for an annuity due are 4.9927 for six
+    periods and 4.3121 for five periods. Rounding each computation to the nearest dollar, what carrying
+    amount of the lease liability should Pendeen report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $370,842
+    rationale: Leaves the $11,000 maintenance charge out of the lease payments. Pendeen elected not to
+      separate lease and nonlease components for this class of asset, so the whole $97,000 payment is
+      a lease payment.
+  - id: B
+    text: $387,292
+    rationale: 'Deducts the first payment but accrues no interest for Year 1. The liability accretes at
+      8% on the $387,292 balance: $30,983.'
+  - id: C
+    text: $418,275
+    rationale: Correct. ($484,292 − $97,000) × 1.08.
+  - id: D
+    text: $523,035
+    rationale: Accrues interest on the full $484,292 without deducting the $97,000 paid at commencement.
+      That payment reduced the liability at once.
+  answer: C
+  explanation: 'Lease payments include variable payments that depend on an index, measured using the index
+    at commencement, and, because Pendeen combines lease and nonlease components, the maintenance charge:
+    $97,000 a year. Initial liability = $97,000 × 4.9927 = $484,292. The first payment, made at commencement,
+    reduces it to $387,292. Interest for Year 1 = $387,292 × 8% = $30,983, so the liability at December
+    31 is $418,275. The CPI increase to $99,910 is recognized as variable lease cost in Year 2 and doesn''t
+    remeasure the liability (ASC 842-10-35-5).'

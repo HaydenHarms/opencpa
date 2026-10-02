@@ -1,0 +1,44 @@
+id: far-nfp-agent-transfers-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 958-605-25-23 to 25-26 (recipient entity acting as an agent, trustee or intermediary; variance
+    power)
+  - ASC 958-605-25 (contributions with donor restrictions)
+  - ASC 958-605-30 (contributed financial assets measured at fair value)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 2, Gwennap Community Foundation, a not-for-profit entity, receives four gifts, each
+  worth $45,000. Which one should Gwennap report as a liability rather than as contribution revenue?
+choices:
+- id: A
+  text: A gift the donor directs to Polgooth Food Pantry, while explicitly granting Gwennap the unilateral
+    power to redirect it to another charity
+  rationale: When the donor explicitly grants the recipient variance power, the unilateral power to redirect
+    the gift to another beneficiary, the recipient has received a contribution and recognizes revenue.
+- id: B
+  text: A gift the donor directs to Polgooth Food Pantry, an unrelated charity, giving Gwennap no power
+    to redirect it
+  rationale: 'Correct. Gwennap accepted the cash to pass on to a beneficiary the donor specified, with
+    no power to redirect it, and it isn''t financially interrelated with the pantry. It acts as an agent:
+    it records the cash and a liability to the pantry.'
+- id: C
+  text: A gift the donor restricts to Gwennap's own youth sports program for the next two seasons
+  rationale: A gift for Gwennap's own program is a contribution to Gwennap. The donor's purpose and time
+    limits make it contribution revenue with donor restrictions, not a liability.
+- id: D
+  text: Listed shares given to Gwennap with no restriction, which it sells two days later
+  rationale: Shares given without restriction are a contribution, recognized at their fair value when
+    received. Selling them soon afterward doesn't change that.
+answer: B
+explanation: 'Under ASC 958-605-25-23 to 25-26, a recipient entity that accepts assets from a donor and
+  agrees to transfer them to a beneficiary the donor specifies acts as an agent or intermediary. It recognizes
+  the assets and an equal liability to the beneficiary, not contribution revenue. Two exceptions make
+  the transfer a contribution to the recipient: the donor explicitly grants it variance power (the unilateral
+  power to redirect the assets), or the recipient and the beneficiary are financially interrelated. Gifts
+  for the recipient''s own programs, with or without donor restrictions, and gifts of securities are contributions.'

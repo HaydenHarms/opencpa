@@ -1,0 +1,140 @@
+id: far-income-tax-basis-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Special Purpose Frameworks
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'AICPA AU-C 800 (financial statements prepared in accordance with a special purpose framework: income
+    tax basis)'
+  - IRC §§ 166, 168 and 1001 (specific charge-off of bad debts, tax depreciation, gain realized on sale)
+    as applied in income tax basis statements
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Fowey Marine Supply Co., a C corporation that uses the accrual method for federal income tax, prepares
+  its financial statements on the income tax basis of accounting. At December 31, Year 2, its records
+  show these balances measured under U.S. GAAP: cash $146,000; accounts receivable of $388,000 less an
+  allowance for credit losses of $23,000; inventory $512,000, which is also its tax basis; equity securities
+  held as an investment, at their fair value of $131,000, which cost $94,000; equipment that cost $860,000
+  less accumulated depreciation of $318,000; and a deferred tax asset of $52,000. On its tax returns,
+  Fowey has taken $497,000 of depreciation on the equipment to date, most of it bonus depreciation. What
+  total assets should Fowey report in its statement of assets, liabilities, and equity—income tax basis
+  at December 31, Year 2?'
+choices:
+- id: A
+  text: $1,503,000
+  rationale: Correct. $146,000 + $388,000 + $512,000 + $94,000 + ($860,000 − $497,000).
+- id: B
+  text: $1,540,000
+  rationale: Reports the equity securities at their $131,000 fair value. For tax, the $37,000 unrealized
+    gain isn't income until the shares are sold, so the securities stay at their $94,000 cost.
+- id: C
+  text: $1,555,000
+  rationale: Includes the $52,000 deferred tax asset. Statements on the income tax basis report income
+    taxes as currently payable and recognize no deferred taxes.
+- id: D
+  text: $1,682,000
+  rationale: Uses the $318,000 of GAAP accumulated depreciation. The income tax basis uses the depreciation
+    taken on the tax return, $497,000 to date.
+answer: A
+explanation: 'Income tax basis statements measure each item as the tax return does. Receivables are carried
+  gross ($388,000), because bad debts are deducted only when specific accounts are written off. The equity
+  securities stay at their $94,000 cost, because gains are taxed only when realized. Equipment is cost
+  less tax depreciation: $860,000 − $497,000 = $363,000. No deferred tax asset is recognized. Total assets
+  = $146,000 + $388,000 + $512,000 + $94,000 + $363,000 = $1,503,000.'
+variants:
+- stem: 'Mousehole Chandlery Co., a C corporation that uses the accrual method for federal income tax,
+    prepares its financial statements on the income tax basis of accounting. At December 31, Year 2, its
+    records show these balances measured under U.S. GAAP: cash $98,000; accounts receivable of $262,000
+    less an allowance for credit losses of $15,000; inventory $347,000, which is also its tax basis; equity
+    securities held as an investment, at their fair value of $88,000, which cost $61,000; equipment that
+    cost $590,000 less accumulated depreciation of $214,000; and a deferred tax asset of $36,000. On its
+    tax returns, Mousehole has taken $341,000 of depreciation on the equipment to date, most of it bonus
+    depreciation. What total assets should Mousehole report in its statement of assets, liabilities, and
+    equity—income tax basis at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $1,002,000
+    rationale: Deducts the $15,000 allowance for credit losses. Bad debts are deductible for tax only
+      when specific accounts are written off, so the income tax basis carries receivables without an allowance.
+  - id: B
+    text: $1,017,000
+    rationale: Correct. $98,000 + $262,000 + $347,000 + $61,000 + ($590,000 − $341,000).
+  - id: C
+    text: $1,044,000
+    rationale: Reports the equity securities at their $88,000 fair value. For tax, the $27,000 unrealized
+      gain isn't income until the shares are sold, so the securities stay at their $61,000 cost.
+  - id: D
+    text: $1,144,000
+    rationale: Uses the $214,000 of GAAP accumulated depreciation. The income tax basis uses the depreciation
+      taken on the tax return, $341,000 to date.
+  answer: B
+  explanation: 'Income tax basis statements measure each item as the tax return does. Receivables are
+    carried gross ($262,000), because bad debts are deducted only when specific accounts are written off.
+    The equity securities stay at their $61,000 cost, because gains are taxed only when realized. Equipment
+    is cost less tax depreciation: $590,000 − $341,000 = $249,000. No deferred tax asset is recognized.
+    Total assets = $98,000 + $262,000 + $347,000 + $61,000 + $249,000 = $1,017,000.'
+- stem: 'Polperro Fabrication Co., a C corporation that uses the accrual method for federal income tax,
+    prepares its financial statements on the income tax basis of accounting. At December 31, Year 2, its
+    records show these balances measured under U.S. GAAP: cash $203,000; accounts receivable of $541,000
+    less an allowance for credit losses of $32,000; inventory $716,000, which is also its tax basis; equity
+    securities held as an investment, at their fair value of $179,000, which cost $128,000; equipment
+    that cost $1,210,000 less accumulated depreciation of $446,000; and a deferred tax asset of $57,000.
+    On its tax returns, Polperro has taken $698,000 of depreciation on the equipment to date, most of
+    it bonus depreciation. What total assets should Polperro report in its statement of assets, liabilities,
+    and equity—income tax basis at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,068,000
+    rationale: Deducts the $32,000 allowance for credit losses. Bad debts are deductible for tax only
+      when specific accounts are written off, so the income tax basis carries receivables without an allowance.
+  - id: B
+    text: $2,100,000
+    rationale: Correct. $203,000 + $541,000 + $716,000 + $128,000 + ($1,210,000 − $698,000).
+  - id: C
+    text: $2,157,000
+    rationale: Includes the $57,000 deferred tax asset. Statements on the income tax basis report income
+      taxes as currently payable and recognize no deferred taxes.
+  - id: D
+    text: $2,352,000
+    rationale: Uses the $446,000 of GAAP accumulated depreciation. The income tax basis uses the depreciation
+      taken on the tax return, $698,000 to date.
+  answer: B
+  explanation: 'Income tax basis statements measure each item as the tax return does. Receivables are
+    carried gross ($541,000), because bad debts are deducted only when specific accounts are written off.
+    The equity securities stay at their $128,000 cost, because gains are taxed only when realized. Equipment
+    is cost less tax depreciation: $1,210,000 − $698,000 = $512,000. No deferred tax asset is recognized.
+    Total assets = $203,000 + $541,000 + $716,000 + $128,000 + $512,000 = $2,100,000.'
+- stem: 'Tintagel Print Works Co., a C corporation that uses the accrual method for federal income tax,
+    prepares its financial statements on the income tax basis of accounting. At December 31, Year 2, its
+    records show these balances measured under U.S. GAAP: cash $71,000; accounts receivable of $194,000
+    less an allowance for credit losses of $11,000; inventory $256,000, which is also its tax basis; equity
+    securities held as an investment, at their fair value of $65,000, which cost $46,000; equipment that
+    cost $430,000 less accumulated depreciation of $157,000; and a deferred tax asset of $33,000. On its
+    tax returns, Tintagel has taken $249,000 of depreciation on the equipment to date, most of it bonus
+    depreciation. What total assets should Tintagel report in its statement of assets, liabilities, and
+    equity—income tax basis at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $748,000
+    rationale: Correct. $71,000 + $194,000 + $256,000 + $46,000 + ($430,000 − $249,000).
+  - id: B
+    text: $767,000
+    rationale: Reports the equity securities at their $65,000 fair value. For tax, the $19,000 unrealized
+      gain isn't income until the shares are sold, so the securities stay at their $46,000 cost.
+  - id: C
+    text: $781,000
+    rationale: Includes the $33,000 deferred tax asset. Statements on the income tax basis report income
+      taxes as currently payable and recognize no deferred taxes.
+  - id: D
+    text: $840,000
+    rationale: Uses the $157,000 of GAAP accumulated depreciation. The income tax basis uses the depreciation
+      taken on the tax return, $249,000 to date.
+  answer: A
+  explanation: 'Income tax basis statements measure each item as the tax return does. Receivables are
+    carried gross ($194,000), because bad debts are deducted only when specific accounts are written off.
+    The equity securities stay at their $46,000 cost, because gains are taxed only when realized. Equipment
+    is cost less tax depreciation: $430,000 − $249,000 = $181,000. No deferred tax asset is recognized.
+    Total assets = $71,000 + $194,000 + $256,000 + $46,000 + $181,000 = $748,000.'

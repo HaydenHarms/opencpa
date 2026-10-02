@@ -1,0 +1,148 @@
+id: far-payables-reconciliation-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Payables and accrued liabilities
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 405-10 (liabilities)
+  - ASC 440-10 (purchase commitments are not liabilities until performance)
+  - Subsidiary ledger and control account reconciliation practice (voided checks; trade discounts; misposted
+    payments)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Okehampton Builders Supply Co.''s accounts payable subledger totals $723,420, and
+  its general ledger accounts payable control account shows $718,880. The controller''s review finds:
+  a $38,500 purchase order issued on December 28, for goods the supplier will ship FOB shipping point
+  in mid-January, was entered as an invoice in both records; a $12,640 check to a supplier, recorded as
+  a payment in both records on December 27, was voided on December 30 because it was made out for the
+  wrong amount, and the void was posted to the supplier''s subledger account but not to the general ledger;
+  an invoice for goods received on December 20 was posted to the supplier''s subledger account at its
+  net amount of $45,900, after a 15% trade discount, but to the general ledger at its list price of $54,000;
+  and a $6,275 payment to Lydford Timber was posted to Tavistock Fixings''s subledger account. What amount
+  should Okehampton report as accounts payable at December 31?'
+choices:
+- id: A
+  text: $672,280
+  rationale: Leaves the $12,640 voided check as a payment. The check was cancelled, so the supplier is
+    still owed; the void reinstates the payable.
+- id: B
+  text: $684,920
+  rationale: Correct. Subledger $723,420 − $38,500; control account $718,880 − $38,500 + $12,640 − $8,100.
+- id: C
+  text: $693,020
+  rationale: Uses the $54,000 list price. A trade discount reduces the invoice price itself; the amount
+    owed is $45,900.
+- id: D
+  text: $723,420
+  rationale: Keeps the $38,500 purchase order. Okehampton owes nothing until the supplier ships the goods
+    (FOB shipping point), so an order is a commitment, not a liability.
+answer: B
+explanation: 'The purchase order is in both records but isn''t a liability until the goods ship: − $38,500
+  from both. The voided check means the supplier is still owed; the subledger has reinstated the payable,
+  the control account must too (+ $12,640). A trade discount is a reduction of price, so the invoice is
+  owed at $45,900; the control account is overstated by $8,100. The misposted payment moves an amount
+  between two supplier accounts. Subledger: $723,420 − $38,500 = $684,920. Control account: $718,880 −
+  $38,500 + $12,640 − $8,100 = $684,920.'
+variants:
+- stem: 'At December 31, Crediton Builders Supply Co.''s accounts payable subledger totals $540,140, and
+    its general ledger accounts payable control account shows $537,880. The controller''s review finds:
+    a $27,800 purchase order issued on December 28, for goods the supplier will ship FOB shipping point
+    in mid-January, was entered as an invoice in both records; a $9,460 check to a supplier, recorded
+    as a payment in both records on December 27, was voided on December 30 because it was made out for
+    the wrong amount, and the void was posted to the supplier''s subledger account but not to the general
+    ledger; an invoice for goods received on December 20 was posted to the supplier''s subledger account
+    at its net amount of $28,800, after a 20% trade discount, but to the general ledger at its list price
+    of $36,000; and a $4,185 payment to Tiverton Steel was posted to Cullompton Glass''s subledger account.
+    What amount should Crediton report as accounts payable at December 31?'
+  choices:
+  - id: A
+    text: $502,880
+    rationale: Leaves the $9,460 voided check as a payment. The check was cancelled, so the supplier is
+      still owed; the void reinstates the payable.
+  - id: B
+    text: $508,155
+    rationale: Deducts the $4,185 payment posted to the wrong supplier. It is in both records, credited
+      to the wrong account in the subledger, so the total is unaffected.
+  - id: C
+    text: $512,340
+    rationale: Correct. Subledger $540,140 − $27,800; control account $537,880 − $27,800 + $9,460 − $7,200.
+  - id: D
+    text: $540,140
+    rationale: Keeps the $27,800 purchase order. Crediton owes nothing until the supplier ships the goods
+      (FOB shipping point), so an order is a commitment, not a liability.
+  answer: C
+  explanation: 'The purchase order is in both records but isn''t a liability until the goods ship: − $27,800
+    from both. The voided check means the supplier is still owed; the subledger has reinstated the payable,
+    the control account must too (+ $9,460). A trade discount is a reduction of price, so the invoice
+    is owed at $28,800; the control account is overstated by $7,200. The misposted payment moves an amount
+    between two supplier accounts. Subledger: $540,140 − $27,800 = $512,340. Control account: $537,880
+    − $27,800 + $9,460 − $7,200 = $512,340.'
+- stem: 'At December 31, Honiton Builders Supply Co.''s accounts payable subledger totals $990,760, and
+    its general ledger accounts payable control account shows $980,680. The controller''s review finds:
+    a $52,300 purchase order issued on December 28, for goods the supplier will ship FOB shipping point
+    in mid-January, was entered as an invoice in both records; a $17,280 check to a supplier, recorded
+    as a payment in both records on December 27, was voided on December 30 because it was made out for
+    the wrong amount, and the void was posted to the supplier''s subledger account but not to the general
+    ledger; an invoice for goods received on December 20 was posted to the supplier''s subledger account
+    at its net amount of $64,800, after a 10% trade discount, but to the general ledger at its list price
+    of $72,000; and an $8,640 payment to Ottery Brickworks was posted to Moretonhampstead Timber''s subledger
+    account. What amount should Honiton report as accounts payable at December 31?'
+  choices:
+  - id: A
+    text: $938,460
+    rationale: Correct. Subledger $990,760 − $52,300; control account $980,680 − $52,300 + $17,280 − $7,200.
+  - id: B
+    text: $945,660
+    rationale: Uses the $72,000 list price. A trade discount reduces the invoice price itself; the amount
+      owed is $64,800.
+  - id: C
+    text: $980,680
+    rationale: Accepts the control account's $980,680, which keeps the purchase order, omits the reinstated
+      payable and carries the invoice at list price.
+  - id: D
+    text: $990,760
+    rationale: Keeps the $52,300 purchase order. Honiton owes nothing until the supplier ships the goods
+      (FOB shipping point), so an order is a commitment, not a liability.
+  answer: A
+  explanation: 'The purchase order is in both records but isn''t a liability until the goods ship: − $52,300
+    from both. The voided check means the supplier is still owed; the subledger has reinstated the payable,
+    the control account must too (+ $17,280). A trade discount is a reduction of price, so the invoice
+    is owed at $64,800; the control account is overstated by $7,200. The misposted payment moves an amount
+    between two supplier accounts. Subledger: $990,760 − $52,300 = $938,460. Control account: $980,680
+    − $52,300 + $17,280 − $7,200 = $938,460.'
+- stem: 'At December 31, Bideford Builders Supply Co.''s accounts payable subledger totals $448,180, and
+    its general ledger accounts payable control account shows $443,860. The controller''s review finds:
+    a $21,400 purchase order issued on December 28, for goods the supplier will ship FOB shipping point
+    in mid-January, was entered as an invoice in both records; a $7,920 check to a supplier, recorded
+    as a payment in both records on December 27, was voided on December 30 because it was made out for
+    the wrong amount, and the void was posted to the supplier''s subledger account but not to the general
+    ledger; an invoice for goods received on December 20 was posted to the supplier''s subledger account
+    at its net amount of $26,400, after a 12% trade discount, but to the general ledger at its list price
+    of $30,000; and a $3,540 payment to Appledore Slate was posted to Torrington Fixings''s subledger
+    account. What amount should Bideford report as accounts payable at December 31?'
+  choices:
+  - id: A
+    text: $418,860
+    rationale: Leaves the $7,920 voided check as a payment. The check was cancelled, so the supplier is
+      still owed; the void reinstates the payable.
+  - id: B
+    text: $423,240
+    rationale: Deducts the $3,540 payment posted to the wrong supplier. It is in both records, credited
+      to the wrong account in the subledger, so the total is unaffected.
+  - id: C
+    text: $426,780
+    rationale: Correct. Subledger $448,180 − $21,400; control account $443,860 − $21,400 + $7,920 − $3,600.
+  - id: D
+    text: $430,380
+    rationale: Uses the $30,000 list price. A trade discount reduces the invoice price itself; the amount
+      owed is $26,400.
+  answer: C
+  explanation: 'The purchase order is in both records but isn''t a liability until the goods ship: − $21,400
+    from both. The voided check means the supplier is still owed; the subledger has reinstated the payable,
+    the control account must too (+ $7,920). A trade discount is a reduction of price, so the invoice
+    is owed at $26,400; the control account is overstated by $3,600. The misposted payment moves an amount
+    between two supplier accounts. Subledger: $448,180 − $21,400 = $426,780. Control account: $443,860
+    − $21,400 + $7,920 − $3,600 = $426,780.'

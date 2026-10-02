@@ -1,0 +1,129 @@
+id: far-budget-variance-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Budget-versus-actual analysis: static budget, flexible budget and sales-volume variances'
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Camelford Tools Co.'s static budget for Year 2 was based on selling 40,000 units at $85 each, with
+  variable manufacturing costs of $41 a unit, sales commissions of $7 a unit and fixed costs of $880,000.
+  Camelford actually sold 36,500 units for total revenue of $3,212,000; its variable manufacturing costs
+  were $1,551,250, sales commissions $255,500 and fixed costs $905,000. In its budget-to-actual report,
+  what sales-volume variance for operating income should Camelford show?
+choices:
+- id: A
+  text: $99,750 unfavorable
+  rationale: Compares actual operating income ($500,250) with the static budget's ($600,000). That is
+    the total static-budget variance, which combines the sales-volume variance with the flexible-budget
+    variance.
+- id: B
+  text: $129,500 unfavorable
+  rationale: Correct. (36,500 − 40,000) units × $37 budgeted contribution margin.
+- id: C
+  text: $154,000 unfavorable
+  rationale: Uses a margin of $44 a unit, deducting only variable manufacturing costs. The $7 of variable
+    selling costs a unit also changes with volume, so the budgeted contribution margin is $37.
+- id: D
+  text: $297,500 unfavorable
+  rationale: Prices the change in units at the $85 selling price. That is the sales-volume variance for
+    revenue; for operating income, each unit is worth its budgeted contribution margin of $37.
+answer: B
+explanation: The sales-volume variance is the difference between the flexible budget for the units actually
+  sold and the static budget, which comes down to the change in units times the budgeted contribution
+  margin per unit. Budgeted contribution margin = $85 − $41 − $7 = $37, because sales commissions vary
+  with units too. Variance = (36,500 − 40,000) × $37 = $129,500 unfavorable. Flexible-budget operating
+  income is $470,500 against the static budget's $600,000; actual operating income of $500,250 differs
+  from the flexible budget by the flexible-budget variance, $29,750 favorable.
+variants:
+- stem: Redruth Pumps Co.'s static budget for Year 2 was based on selling 25,000 units at $120 each, with
+    variable manufacturing costs of $58 a unit, sales commissions of $9 a unit and fixed costs of $760,000.
+    Redruth actually sold 27,200 units for total revenue of $3,182,400; its variable manufacturing costs
+    were $1,604,800, sales commissions $244,800 and fixed costs $772,000. In its budget-to-actual report,
+    what sales-volume variance for operating income should Redruth show?
+  choices:
+  - id: A
+    text: $4,200 unfavorable
+    rationale: Compares actual operating income ($560,800) with the static budget's ($565,000). That is
+      the total static-budget variance, which combines the sales-volume variance with the flexible-budget
+      variance.
+  - id: B
+    text: $116,600 favorable
+    rationale: Correct. (27,200 − 25,000) units × $53 budgeted contribution margin.
+  - id: C
+    text: $136,400 favorable
+    rationale: Uses a margin of $62 a unit, deducting only variable manufacturing costs. The $9 of variable
+      selling costs a unit also changes with volume, so the budgeted contribution margin is $53.
+  - id: D
+    text: $264,000 favorable
+    rationale: Prices the change in units at the $120 selling price. That is the sales-volume variance
+      for revenue; for operating income, each unit is worth its budgeted contribution margin of $53.
+  answer: B
+  explanation: The sales-volume variance is the difference between the flexible budget for the units actually
+    sold and the static budget, which comes down to the change in units times the budgeted contribution
+    margin per unit. Budgeted contribution margin = $120 − $58 − $9 = $53, because sales commissions vary
+    with units too. Variance = (27,200 − 25,000) × $53 = $116,600 favorable. Flexible-budget operating
+    income is $681,600 against the static budget's $565,000; actual operating income of $560,800 differs
+    from the flexible budget by the flexible-budget variance, $120,800 unfavorable.
+- stem: Camborne Valves Co.'s static budget for Year 2 was based on selling 60,000 units at $64 each,
+    with variable manufacturing costs of $29 a unit, sales commissions of $5 a unit and fixed costs of
+    $1,150,000. Camborne actually sold 54,800 units for total revenue of $3,616,800; its variable manufacturing
+    costs were $1,654,960, sales commissions $274,000 and fixed costs $1,138,000. In its budget-to-actual
+    report, what sales-volume variance for operating income should Camborne show?
+  choices:
+  - id: A
+    text: $55,840 favorable
+    rationale: Compares actual operating income ($549,840) with the flexible budget for 54,800 units ($494,000).
+      That is the flexible-budget variance, which measures prices, costs and efficiency, not volume.
+  - id: B
+    text: $100,160 unfavorable
+    rationale: Compares actual operating income ($549,840) with the static budget's ($650,000). That is
+      the total static-budget variance, which combines the sales-volume variance with the flexible-budget
+      variance.
+  - id: C
+    text: $156,000 unfavorable
+    rationale: Correct. (54,800 − 60,000) units × $30 budgeted contribution margin.
+  - id: D
+    text: $332,800 unfavorable
+    rationale: Prices the change in units at the $64 selling price. That is the sales-volume variance
+      for revenue; for operating income, each unit is worth its budgeted contribution margin of $30.
+  answer: C
+  explanation: The sales-volume variance is the difference between the flexible budget for the units actually
+    sold and the static budget, which comes down to the change in units times the budgeted contribution
+    margin per unit. Budgeted contribution margin = $64 − $29 − $5 = $30, because sales commissions vary
+    with units too. Variance = (54,800 − 60,000) × $30 = $156,000 unfavorable. Flexible-budget operating
+    income is $494,000 against the static budget's $650,000; actual operating income of $549,840 differs
+    from the flexible budget by the flexible-budget variance, $55,840 favorable.
+- stem: Hayle Fittings Co.'s static budget for Year 2 was based on selling 18,000 units at $150 each,
+    with variable manufacturing costs of $72 a unit, sales commissions of $12 a unit and fixed costs of
+    $640,000. Hayle actually sold 19,900 units for total revenue of $2,905,400; its variable manufacturing
+    costs were $1,452,700, sales commissions $238,800 and fixed costs $655,000. In its budget-to-actual
+    report, what sales-volume variance for operating income should Hayle show?
+  choices:
+  - id: A
+    text: $10,900 favorable
+    rationale: Compares actual operating income ($558,900) with the static budget's ($548,000). That is
+      the total static-budget variance, which combines the sales-volume variance with the flexible-budget
+      variance.
+  - id: B
+    text: $114,500 unfavorable
+    rationale: Compares actual operating income ($558,900) with the flexible budget for 19,900 units ($673,400).
+      That is the flexible-budget variance, which measures prices, costs and efficiency, not volume.
+  - id: C
+    text: $125,400 favorable
+    rationale: Correct. (19,900 − 18,000) units × $66 budgeted contribution margin.
+  - id: D
+    text: $148,200 favorable
+    rationale: Uses a margin of $78 a unit, deducting only variable manufacturing costs. The $12 of variable
+      selling costs a unit also changes with volume, so the budgeted contribution margin is $66.
+  answer: C
+  explanation: The sales-volume variance is the difference between the flexible budget for the units actually
+    sold and the static budget, which comes down to the change in units times the budgeted contribution
+    margin per unit. Budgeted contribution margin = $150 − $72 − $12 = $66, because sales commissions
+    vary with units too. Variance = (19,900 − 18,000) × $66 = $125,400 favorable. Flexible-budget operating
+    income is $673,400 against the static budget's $548,000; actual operating income of $558,900 differs
+    from the flexible budget by the flexible-budget variance, $114,500 unfavorable.

@@ -1,0 +1,174 @@
+id: far-revenue-contract-costs-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 340-40-25-1 to 25-4 (incremental costs of obtaining a contract)
+  - ASC 340-40-25-5 to 25-8 (costs to fulfill a contract; wasted resources expensed)
+  - ASC 340-40-35-1 (amortization consistent with the transfer of the goods or services, including anticipated
+    contracts)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On February 20, Year 1, Perranporth Systems Co. signed a five-year contract to host and support
+  a customer's online ordering system, with services running from April 1, Year 1; Perranporth expects
+  the customer to renew once, for three more years. Perranporth paid its salesperson a $96,000 commission
+  owed only because the contract was signed, and will pay the salesperson a commission at the same rate
+  on the renewal fees if the customer renews. Perranporth's sales director earned a $12,000 bonus based
+  on the region's total sales for the quarter. Before services began, Perranporth spent $220,800 setting
+  up the customer's platform, costs that relate directly to the contract, create resources Perranporth
+  will use to serve the customer for as long as it remains a customer, and are expected to be recovered;
+  $28,800 of that amount was for repeating a data migration that failed because of an error by Perranporth's
+  staff, a cost not reflected in the contract price. Perranporth amortizes capitalized contract costs
+  straight-line by month over the period to which they relate. What total contract cost assets should
+  Perranporth report at December 31, Year 1?
+choices:
+- id: A
+  text: $255,600
+  rationale: Correct. Commission $96,000 × 51/60 + setup $192,000 × 87/96.
+- id: B
+  text: $261,000
+  rationale: Amortizes the commission over the eight years Perranporth expects to serve the customer.
+    Because the renewal will earn a commission at the same rate, the initial commission relates only to
+    the five-year contract and is amortized over it; $14,400 is amortized in Year 1, not $9,000.
+- id: C
+  text: $265,800
+  rationale: Capitalizes the sales director's $12,000 bonus with the commission and amortizes it over
+    the same five years. A bonus based on total regional sales would have been earned without this contract,
+    so it isn't an incremental cost of obtaining it.
+- id: D
+  text: $281,700
+  rationale: Capitalizes the $28,800 cost of repeating the failed migration with the other setup costs,
+    amortized over eight years. Costs of wasted labor and resources not reflected in the contract price
+    are expensed as incurred.
+answer: A
+explanation: 'The commission is an incremental cost of obtaining the contract and is capitalized. The
+  renewal commission is at the same rate, so it is commensurate with the initial one, and the initial
+  commission is amortized over the five-year contract: $96,000 − $14,400 (9 months) = $81,600. The setup
+  costs meet the criteria for capitalizing costs to fulfill a contract (ASC 340-40-25-5), except the $28,800
+  of wasted labor, which is expensed (ASC 340-40-25-8). The $192,000 capitalized relates to services over
+  the expected eight-year customer relationship: $192,000 − $18,000 = $174,000. The bonus based on total
+  regional sales isn''t incremental to this contract and is expensed. Contract cost assets = $255,600.'
+variants:
+- stem: On May 12, Year 1, Newquay Data Co. signed a five-year contract to host and support a customer's
+    online ordering system, with services running from July 1, Year 1; Newquay expects the customer to
+    renew once, for three more years. Newquay paid its salesperson a $72,000 commission owed only because
+    the contract was signed, and will pay the salesperson a commission at the same rate on the renewal
+    fees if the customer renews. Newquay's sales director earned a $9,000 bonus based on the region's
+    total sales for the quarter. Before services began, Newquay spent $172,800 setting up the customer's
+    platform, costs that relate directly to the contract, create resources Newquay will use to serve the
+    customer for as long as it remains a customer, and are expected to be recovered; $19,200 of that amount
+    was for repeating a data migration that failed because of an error by Newquay's staff, a cost not
+    reflected in the contract price. Newquay amortizes capitalized contract costs straight-line by month
+    over the period to which they relate. What total contract cost assets should Newquay report at December
+    31, Year 1?
+  choices:
+  - id: A
+    text: $203,040
+    rationale: Amortizes the setup costs over the five-year contract. The setup will serve the customer
+      through the expected renewal, so it is amortized over eight years; $9,600 is amortized in Year 1,
+      not $15,360.
+  - id: B
+    text: $208,800
+    rationale: Correct. Commission $72,000 × 54/60 + setup $153,600 × 90/96.
+  - id: C
+    text: $211,500
+    rationale: Amortizes the commission over the eight years Newquay expects to serve the customer. Because
+      the renewal will earn a commission at the same rate, the initial commission relates only to the
+      five-year contract and is amortized over it; $7,200 is amortized in Year 1, not $4,500.
+  - id: D
+    text: $226,800
+    rationale: Capitalizes the $19,200 cost of repeating the failed migration with the other setup costs,
+      amortized over eight years. Costs of wasted labor and resources not reflected in the contract price
+      are expensed as incurred.
+  answer: B
+  explanation: 'The commission is an incremental cost of obtaining the contract and is capitalized. The
+    renewal commission is at the same rate, so it is commensurate with the initial one, and the initial
+    commission is amortized over the five-year contract: $72,000 − $7,200 (6 months) = $64,800. The setup
+    costs meet the criteria for capitalizing costs to fulfill a contract (ASC 340-40-25-5), except the
+    $19,200 of wasted labor, which is expensed (ASC 340-40-25-8). The $153,600 capitalized relates to
+    services over the expected eight-year customer relationship: $153,600 − $9,600 = $144,000. The bonus
+    based on total regional sales isn''t incremental to this contract and is expensed. Contract cost assets
+    = $208,800.'
+- stem: On January 15, Year 1, Boscastle Cloud Co. signed a five-year contract to host and support a customer's
+    online ordering system, with services running from March 1, Year 1; Boscastle expects the customer
+    to renew once, for three more years. Boscastle paid its salesperson a $124,800 commission owed only
+    because the contract was signed, and will pay the salesperson a commission at the same rate on the
+    renewal fees if the customer renews. Boscastle's sales director earned a $15,600 bonus based on the
+    region's total sales for the quarter. Before services began, Boscastle spent $264,960 setting up the
+    customer's platform, costs that relate directly to the contract, create resources Boscastle will use
+    to serve the customer for as long as it remains a customer, and are expected to be recovered; $34,560
+    of that amount was for repeating a data migration that failed because of an error by Boscastle's staff,
+    a cost not reflected in the contract price. Boscastle amortizes capitalized contract costs straight-line
+    by month over the period to which they relate. What total contract cost assets should Boscastle report
+    at December 31, Year 1?
+  choices:
+  - id: A
+    text: $296,000
+    rationale: Amortizes the setup costs over the five-year contract. The setup will serve the customer
+      through the expected renewal, so it is amortized over eight years; $24,000 is amortized in Year
+      1, not $38,400.
+  - id: B
+    text: $310,400
+    rationale: Correct. Commission $124,800 × 50/60 + setup $230,400 × 86/96.
+  - id: C
+    text: $323,400
+    rationale: Capitalizes the sales director's $15,600 bonus with the commission and amortizes it over
+      the same five years. A bonus based on total regional sales would have been earned without this contract,
+      so it isn't an incremental cost of obtaining it.
+  - id: D
+    text: $341,360
+    rationale: Capitalizes the $34,560 cost of repeating the failed migration with the other setup costs,
+      amortized over eight years. Costs of wasted labor and resources not reflected in the contract price
+      are expensed as incurred.
+  answer: B
+  explanation: 'The commission is an incremental cost of obtaining the contract and is capitalized. The
+    renewal commission is at the same rate, so it is commensurate with the initial one, and the initial
+    commission is amortized over the five-year contract: $124,800 − $20,800 (10 months) = $104,000. The
+    setup costs meet the criteria for capitalizing costs to fulfill a contract (ASC 340-40-25-5), except
+    the $34,560 of wasted labor, which is expensed (ASC 340-40-25-8). The $230,400 capitalized relates
+    to services over the expected eight-year customer relationship: $230,400 − $24,000 = $206,400. The
+    bonus based on total regional sales isn''t incremental to this contract and is expensed. Contract
+    cost assets = $310,400.'
+- stem: On June 2, Year 1, Wadebridge Hosting Co. signed a five-year contract to host and support a customer's
+    online ordering system, with services running from August 1, Year 1; Wadebridge expects the customer
+    to renew once, for three more years. Wadebridge paid its salesperson an $86,400 commission owed only
+    because the contract was signed, and will pay the salesperson a commission at the same rate on the
+    renewal fees if the customer renews. Wadebridge's sales director earned a $10,800 bonus based on the
+    region's total sales for the quarter. Before services began, Wadebridge spent $195,840 setting up
+    the customer's platform, costs that relate directly to the contract, create resources Wadebridge will
+    use to serve the customer for as long as it remains a customer, and are expected to be recovered;
+    $23,040 of that amount was for repeating a data migration that failed because of an error by Wadebridge's
+    staff, a cost not reflected in the contract price. Wadebridge amortizes capitalized contract costs
+    straight-line by month over the period to which they relate. What total contract cost assets should
+    Wadebridge report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $243,000
+    rationale: Correct. Commission $86,400 × 55/60 + setup $172,800 × 91/96.
+  - id: B
+    text: $252,900
+    rationale: Capitalizes the sales director's $10,800 bonus with the commission and amortizes it over
+      the same five years. A bonus based on total regional sales would have been earned without this contract,
+      so it isn't an incremental cost of obtaining it.
+  - id: C
+    text: $259,200
+    rationale: Records no amortization in Year 1. Amortization starts when the services to which the costs
+      relate begin, on August 1, Year 1.
+  - id: D
+    text: $264,840
+    rationale: Capitalizes the $23,040 cost of repeating the failed migration with the other setup costs,
+      amortized over eight years. Costs of wasted labor and resources not reflected in the contract price
+      are expensed as incurred.
+  answer: A
+  explanation: 'The commission is an incremental cost of obtaining the contract and is capitalized. The
+    renewal commission is at the same rate, so it is commensurate with the initial one, and the initial
+    commission is amortized over the five-year contract: $86,400 − $7,200 (5 months) = $79,200. The setup
+    costs meet the criteria for capitalizing costs to fulfill a contract (ASC 340-40-25-5), except the
+    $23,040 of wasted labor, which is expensed (ASC 340-40-25-8). The $172,800 capitalized relates to
+    services over the expected eight-year customer relationship: $172,800 − $9,000 = $163,800. The bonus
+    based on total regional sales isn''t incremental to this contract and is expensed. Contract cost assets
+    = $243,000.'

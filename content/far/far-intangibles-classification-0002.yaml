@@ -1,0 +1,43 @@
+id: far-intangibles-classification-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Intangible assets
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - ASC 350-30-25 (recognition of intangible assets acquired individually; costs of internally developing
+    intangibles that are not specifically identifiable expensed)
+  - 'ASC 350-30-35-1 to 35-4 (useful life: finite or indefinite; renewal)'
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Penhallow Co. spent money on each of the following in Year 1. Which should it recognize as an intangible
+  asset and amortize?
+choices:
+- id: A
+  text: A trademark it bought from a competitor, renewable every 10 years at little cost, that it plans
+    to use indefinitely
+  rationale: The trademark is recognized, but renewal is routine and inexpensive and Penhallow plans to
+    keep using it, so no limit on its useful life is foreseeable. It is indefinite-lived and isn't amortized.
+- id: B
+  text: Training for its sales staff, expected to raise sales for about five years
+  rationale: Penhallow doesn't control trained employees, who can leave, and training costs aren't a specifically
+    identifiable asset. They are expensed as incurred.
+- id: C
+  text: Payroll of staff who built a customer database from Penhallow's own sales records
+  rationale: Costs of developing an intangible internally that isn't specifically identifiable, or is
+    inherent in the continuing business, are expensed. A customer list is recognized as an asset only
+    when it is acquired.
+- id: D
+  text: A franchise it bought to operate in one county for 12 years, with no right to renew
+  rationale: Correct. A purchased franchise is recognized at cost. Its legal life is 12 years with no
+    renewal, so its useful life is finite and it is amortized over that period.
+answer: D
+explanation: An intangible asset acquired individually, such as a purchased franchise or trademark, is
+  recognized at cost (ASC 350-30-25). Costs of internally developing, maintaining or restoring intangibles
+  that aren't specifically identifiable, have indeterminate lives or are inherent in a continuing business,
+  such as building a customer database or training staff, are expensed. A recognized intangible is amortized
+  over its useful life if that life is finite; if no legal, regulatory, contractual, competitive or economic
+  factor limits it, it is indefinite-lived and is not amortized. A 12-year franchise without renewal rights
+  is finite-lived; a trademark renewable at little cost that the entity intends to keep using is indefinite-lived.

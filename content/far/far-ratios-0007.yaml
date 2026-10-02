@@ -1,0 +1,122 @@
+id: far-ratios-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Financial Statement Ratios and Performance Metrics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Financial statement analysis: profitability ratios (return on total assets, with interest added back
+    net of tax)'
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Launceston Corp. reports net income of $1,140,000 for Year 2, after interest expense of $360,000
+  and income taxes at 25% of pretax income. It declared and paid $150,000 of dividends on its preferred
+  stock during the year. Its total assets were $11,600,000 at January 1 and $12,500,000 at December 31.
+  Launceston measures return on assets independently of how the assets are financed, adding back interest
+  expense net of its tax effect, and uses average total assets. What is Launceston's return on assets
+  for Year 2, rounded to one decimal place?
+choices:
+- id: A
+  text: 9.5%
+  rationale: Uses net income alone, $1,140,000 ÷ $12,050,000. Launceston measures return on assets independently
+    of financing, so the after-tax interest is added back.
+- id: B
+  text: 10.5%
+  rationale: Deducts the $150,000 of preferred dividends. They are a distribution to one class of owners;
+    return on total assets measures the return to all providers of capital.
+- id: C
+  text: 11.7%
+  rationale: Correct. ($1,140,000 + $360,000 × (1 − 25%)) ÷ $12,050,000 = $1,410,000 ÷ $12,050,000.
+- id: D
+  text: 12.4%
+  rationale: Adds back all $360,000 of interest expense. Interest reduced income taxes, so only the after-tax
+    amount, $270,000, is added back.
+answer: C
+explanation: After-tax interest = $360,000 × (1 − 25%) = $270,000. Return before financing costs = $1,140,000
+  + $270,000 = $1,410,000. Average total assets = ($11,600,000 + $12,500,000) ÷ 2 = $12,050,000. Return
+  on assets = $1,410,000 ÷ $12,050,000 = 11.7%. Preferred dividends are a distribution of income, not
+  an expense, and don't enter return on total assets.
+variants:
+- stem: Liskeard Corp. reports net income of $820,000 for Year 2, after interest expense of $240,000 and
+    income taxes at 21% of pretax income. It declared and paid $90,000 of dividends on its preferred stock
+    during the year. Its total assets were $8,200,000 at January 1 and $8,800,000 at December 31. Liskeard
+    measures return on assets independently of how the assets are financed, adding back interest expense
+    net of its tax effect, and uses average total assets. What is Liskeard's return on assets for Year
+    2, rounded to one decimal place?
+  choices:
+  - id: A
+    text: 10.8%
+    rationale: Deducts the $90,000 of preferred dividends. They are a distribution to one class of owners;
+      return on total assets measures the return to all providers of capital.
+  - id: B
+    text: 11.9%
+    rationale: Correct. ($820,000 + $240,000 × (1 − 21%)) ÷ $8,500,000 = $1,009,600 ÷ $8,500,000.
+  - id: C
+    text: 12.3%
+    rationale: Divides by total assets at January 1, $8,200,000. Liskeard bases the ratio on average total
+      assets, $8,500,000.
+  - id: D
+    text: 12.5%
+    rationale: Adds back all $240,000 of interest expense. Interest reduced income taxes, so only the
+      after-tax amount, $189,600, is added back.
+  answer: B
+  explanation: After-tax interest = $240,000 × (1 − 21%) = $189,600. Return before financing costs = $820,000
+    + $189,600 = $1,009,600. Average total assets = ($8,200,000 + $8,800,000) ÷ 2 = $8,500,000. Return
+    on assets = $1,009,600 ÷ $8,500,000 = 11.9%. Preferred dividends are a distribution of income, not
+    an expense, and don't enter return on total assets.
+- stem: Saltash Corp. reports net income of $2,150,000 for Year 2, after interest expense of $520,000
+    and income taxes at 25% of pretax income. It declared and paid $300,000 of dividends on its preferred
+    stock during the year. Its total assets were $18,900,000 at January 1 and $20,300,000 at December
+    31. Saltash measures return on assets independently of how the assets are financed, adding back interest
+    expense net of its tax effect, and uses average total assets. What is Saltash's return on assets for
+    Year 2, rounded to one decimal place?
+  choices:
+  - id: A
+    text: 11.0%
+    rationale: Uses net income alone, $2,150,000 ÷ $19,600,000. Saltash measures return on assets independently
+      of financing, so the after-tax interest is added back.
+  - id: B
+    text: 11.4%
+    rationale: Deducts the $300,000 of preferred dividends. They are a distribution to one class of owners;
+      return on total assets measures the return to all providers of capital.
+  - id: C
+    text: 12.5%
+    rationale: Divides by year-end total assets of $20,300,000. Saltash bases the ratio on average total
+      assets, $19,600,000.
+  - id: D
+    text: 13.0%
+    rationale: Correct. ($2,150,000 + $520,000 × (1 − 25%)) ÷ $19,600,000 = $2,540,000 ÷ $19,600,000.
+  answer: D
+  explanation: After-tax interest = $520,000 × (1 − 25%) = $390,000. Return before financing costs = $2,150,000
+    + $390,000 = $2,540,000. Average total assets = ($18,900,000 + $20,300,000) ÷ 2 = $19,600,000. Return
+    on assets = $2,540,000 ÷ $19,600,000 = 13.0%. Preferred dividends are a distribution of income, not
+    an expense, and don't enter return on total assets.
+- stem: Callington Corp. reports net income of $640,000 for Year 2, after interest expense of $210,000
+    and income taxes at 25% of pretax income. It declared and paid $60,000 of dividends on its preferred
+    stock during the year. Its total assets were $6,100,000 at January 1 and $6,700,000 at December 31.
+    Callington measures return on assets independently of how the assets are financed, adding back interest
+    expense net of its tax effect, and uses average total assets. What is Callington's return on assets
+    for Year 2, rounded to one decimal place?
+  choices:
+  - id: A
+    text: 11.9%
+    rationale: Divides by year-end total assets of $6,700,000. Callington bases the ratio on average total
+      assets, $6,400,000.
+  - id: B
+    text: 12.5%
+    rationale: Correct. ($640,000 + $210,000 × (1 − 25%)) ÷ $6,400,000 = $797,500 ÷ $6,400,000.
+  - id: C
+    text: 13.1%
+    rationale: Divides by total assets at January 1, $6,100,000. Callington bases the ratio on average
+      total assets, $6,400,000.
+  - id: D
+    text: 13.3%
+    rationale: Adds back all $210,000 of interest expense. Interest reduced income taxes, so only the
+      after-tax amount, $157,500, is added back.
+  answer: B
+  explanation: After-tax interest = $210,000 × (1 − 25%) = $157,500. Return before financing costs = $640,000
+    + $157,500 = $797,500. Average total assets = ($6,100,000 + $6,700,000) ÷ 2 = $6,400,000. Return on
+    assets = $797,500 ÷ $6,400,000 = 12.5%. Preferred dividends are a distribution of income, not an expense,
+    and don't enter return on total assets.

@@ -1,0 +1,153 @@
+id: far-inventory-rollforward-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 330-10-30 (inventory cost: import duties; abnormal costs such as double freight expensed)'
+  - ASC 330-10-35-1B (lower of cost and net realizable value for FIFO, as amended by ASU 2015-11)
+  - 'ASC 606-10-25-30 (transfer of control: FOB shipping point)'
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Chacewater Imports Co., which uses FIFO and a perpetual inventory system, prepared this Year 2
+  inventory rollforward from its perpetual records: January 1 balance $742,000; purchases $5,384,000;
+  cost of goods sold ($5,291,000); December 31 balance $835,000. The controller''s review finds: customs
+  duties of $26,400 paid on imported goods, all still on hand at December 31, were charged to expense;
+  a supplier''s delivery went to the wrong city, and the $18,700 Chacewater paid to ship the goods a second
+  time to its warehouse was added to their cost (the goods are on hand); goods costing $33,500, shipped
+  by a supplier FOB shipping point on December 29 and received January 5, are not in the records; and
+  the December 31 balance includes patio heaters costing $96,000, which Chacewater expects to sell for
+  $88,000 after $7,200 of selling costs, whose current replacement cost is $64,500 and on which Chacewater''s
+  normal profit margin is $11,000. What inventory should the corrected rollforward report at December
+  31, Year 2?'
+choices:
+- id: A
+  text: $827,500
+  rationale: Leaves out the $33,500 of goods in transit. They were shipped FOB shipping point on December
+    29, so Chacewater owned them at year-end.
+- id: B
+  text: $834,600
+  rationale: Leaves the $26,400 of customs duties expensed. Import duties are part of the cost of acquiring
+    the goods, and all the goods are still on hand.
+- id: C
+  text: $850,000
+  rationale: Writes the patio heaters down to $69,800, net realizable value less the normal profit margin,
+    the market floor under the lower of cost or market rule. A FIFO entity measures inventory at the lower
+    of cost and net realizable value, $80,800, since ASU 2015-11.
+- id: D
+  text: $861,000
+  rationale: Correct. $835,000 + $26,400 − $18,700 + $33,500 − $15,200.
+answer: D
+explanation: 'Duties are part of the cost of acquiring the goods (+ $26,400). Double freight is an abnormal
+  cost, expensed (ASC 330-10-30-7) (− $18,700). Goods shipped FOB shipping point belong to Chacewater
+  once shipped (+ $33,500). A FIFO entity measures inventory at the lower of cost and net realizable value:
+  NRV = $88,000 − $7,200 = $80,800, so the patio heaters are written down by $96,000 − $80,800 = $15,200;
+  replacement cost and the normal profit margin are irrelevant. Corrected inventory = $835,000 + $26,400
+  − $18,700 + $33,500 − $15,200 = $861,000.'
+variants:
+- stem: 'Mithian Imports Co., which uses FIFO and a perpetual inventory system, prepared this Year 2 inventory
+    rollforward from its perpetual records: January 1 balance $516,000; purchases $3,912,000; cost of
+    goods sold ($3,851,000); December 31 balance $577,000. The controller''s review finds: customs duties
+    of $31,200 paid on imported goods, all still on hand at December 31, were charged to expense; a supplier''s
+    delivery went to the wrong city, and the $13,400 Mithian paid to ship the goods a second time to its
+    warehouse was added to their cost (the goods are on hand); goods costing $41,000, shipped by a supplier
+    FOB shipping point on December 29 and received January 5, are not in the records; and the December
+    31 balance includes garden lanterns costing $68,000, which Mithian expects to sell for $62,500 after
+    $5,100 of selling costs, whose current replacement cost is $44,000 and on which Mithian''s normal
+    profit margin is $12,400. What inventory should the corrected rollforward report at December 31, Year
+    2?'
+  choices:
+  - id: A
+    text: $584,200
+    rationale: Leaves out the $41,000 of goods in transit. They were shipped FOB shipping point on December
+      29, so Mithian owned them at year-end.
+  - id: B
+    text: $612,800
+    rationale: Writes the garden lanterns down to $45,000, net realizable value less the normal profit
+      margin, the market floor under the lower of cost or market rule. A FIFO entity measures inventory
+      at the lower of cost and net realizable value, $57,400, since ASU 2015-11.
+  - id: C
+    text: $625,200
+    rationale: Correct. $577,000 + $31,200 − $13,400 + $41,000 − $10,600.
+  - id: D
+    text: $638,600
+    rationale: Keeps the $13,400 of second-time freight in inventory. Double freight is an abnormal cost,
+      expensed as incurred, not a cost of bringing the goods to their location.
+  answer: C
+  explanation: 'Duties are part of the cost of acquiring the goods (+ $31,200). Double freight is an abnormal
+    cost, expensed (ASC 330-10-30-7) (− $13,400). Goods shipped FOB shipping point belong to Mithian once
+    shipped (+ $41,000). A FIFO entity measures inventory at the lower of cost and net realizable value:
+    NRV = $62,500 − $5,100 = $57,400, so the garden lanterns are written down by $68,000 − $57,400 = $10,600;
+    replacement cost and the normal profit margin are irrelevant. Corrected inventory = $577,000 + $31,200
+    − $13,400 + $41,000 − $10,600 = $625,200.'
+- stem: 'Goonhavern Imports Co., which uses FIFO and a perpetual inventory system, prepared this Year
+    2 inventory rollforward from its perpetual records: January 1 balance $1,028,000; purchases $7,466,000;
+    cost of goods sold ($7,342,000); December 31 balance $1,152,000. The controller''s review finds: customs
+    duties of $37,800 paid on imported goods, all still on hand at December 31, were charged to expense;
+    a supplier''s delivery went to the wrong city, and the $46,100 Goonhavern paid to ship the goods a
+    second time to its warehouse was added to their cost (the goods are on hand); goods costing $46,900,
+    shipped by a supplier FOB shipping point on December 29 and received January 5, are not in the records;
+    and the December 31 balance includes wood stoves costing $134,000, which Goonhavern expects to sell
+    for $123,000 after $10,100 of selling costs, whose current replacement cost is $88,000 and on which
+    Goonhavern''s normal profit margin is $19,500. What inventory should the corrected rollforward report
+    at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $1,150,000
+    rationale: Writes the wood stoves down to $93,400, net realizable value less the normal profit margin,
+      the market floor under the lower of cost or market rule. A FIFO entity measures inventory at the
+      lower of cost and net realizable value, $112,900, since ASU 2015-11.
+  - id: B
+    text: $1,169,500
+    rationale: Correct. $1,152,000 + $37,800 − $46,100 + $46,900 − $21,100.
+  - id: C
+    text: $1,190,600
+    rationale: Leaves the wood stoves at cost. Their net realizable value is $123,000 − $10,100 = $112,900,
+      below their $134,000 cost, so they are written down by $21,100.
+  - id: D
+    text: $1,215,600
+    rationale: Keeps the $46,100 of second-time freight in inventory. Double freight is an abnormal cost,
+      expensed as incurred, not a cost of bringing the goods to their location.
+  answer: B
+  explanation: 'Duties are part of the cost of acquiring the goods (+ $37,800). Double freight is an abnormal
+    cost, expensed (ASC 330-10-30-7) (− $46,100). Goods shipped FOB shipping point belong to Goonhavern
+    once shipped (+ $46,900). A FIFO entity measures inventory at the lower of cost and net realizable
+    value: NRV = $123,000 − $10,100 = $112,900, so the wood stoves are written down by $134,000 − $112,900
+    = $21,100; replacement cost and the normal profit margin are irrelevant. Corrected inventory = $1,152,000
+    + $37,800 − $46,100 + $46,900 − $21,100 = $1,169,500.'
+- stem: 'Zelah Imports Co., which uses FIFO and a perpetual inventory system, prepared this Year 2 inventory
+    rollforward from its perpetual records: January 1 balance $388,000; purchases $2,874,000; cost of
+    goods sold ($2,829,000); December 31 balance $433,000. The controller''s review finds: customs duties
+    of $14,600 paid on imported goods, all still on hand at December 31, were charged to expense; a supplier''s
+    delivery went to the wrong city, and the $9,800 Zelah paid to ship the goods a second time to its
+    warehouse was added to their cost (the goods are on hand); goods costing $17,900, shipped by a supplier
+    FOB shipping point on December 29 and received January 5, are not in the records; and the December
+    31 balance includes camping stoves costing $52,000, which Zelah expects to sell for $47,500 after
+    $3,900 of selling costs, whose current replacement cost is $33,000 and on which Zelah''s normal profit
+    margin is $6,400. What inventory should the corrected rollforward report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $429,400
+    rationale: Leaves out the $17,900 of goods in transit. They were shipped FOB shipping point on December
+      29, so Zelah owned them at year-end.
+  - id: B
+    text: $436,700
+    rationale: Writes the camping stoves down to their $33,000 replacement cost. Replacement cost doesn't
+      enter the lower of cost and net realizable value test.
+  - id: C
+    text: $447,300
+    rationale: Correct. $433,000 + $14,600 − $9,800 + $17,900 − $8,400.
+  - id: D
+    text: $455,700
+    rationale: Leaves the camping stoves at cost. Their net realizable value is $47,500 − $3,900 = $43,600,
+      below their $52,000 cost, so they are written down by $8,400.
+  answer: C
+  explanation: 'Duties are part of the cost of acquiring the goods (+ $14,600). Double freight is an abnormal
+    cost, expensed (ASC 330-10-30-7) (− $9,800). Goods shipped FOB shipping point belong to Zelah once
+    shipped (+ $17,900). A FIFO entity measures inventory at the lower of cost and net realizable value:
+    NRV = $47,500 − $3,900 = $43,600, so the camping stoves are written down by $52,000 − $43,600 = $8,400;
+    replacement cost and the normal profit margin are irrelevant. Corrected inventory = $433,000 + $14,600
+    − $9,800 + $17,900 − $8,400 = $447,300.'

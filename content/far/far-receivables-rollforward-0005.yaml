@@ -1,0 +1,155 @@
+id: far-receivables-rollforward-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 310-10 (receivables)
+  - 'ASC 860-10-40 (sales of financial assets: derecognition of receivables factored without recourse)'
+  - 'ASC 606-10-45-2 (contract liabilities: payments received before performance)'
+  - ASC 606-10-32-2A (sales taxes collected from customers excluded from revenue)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Delabole Slate Supply Co.''s staff prepared this Year 2 rollforward of the accounts receivable
+  control account: January 1 balance $618,000; plus credit sales $4,250,000; less cash collected from
+  customers $4,236,000; less accounts written off $29,000; December 31 balance $603,000. All of Delabole''s
+  sales are on account. The controller compares the schedule with the supporting records. The credit sales
+  figure is sales revenue from the income statement; every invoice also charged the customer 6% sales
+  tax, which Delabole records as a liability until it remits it. The cash collected is the total of the
+  customer receipts column, which includes $46,000 of deposits that customers paid in December on orders
+  Delabole will ship in Year 3. In November, Delabole sold $180,000 of receivables to a factor without
+  recourse, for $172,800 in cash, keeping no involvement with them; the factored accounts were closed
+  in the subledger, but the general ledger recorded the cash as a short-term borrowing and left the receivables
+  in the control account. What balance should the corrected rollforward show for accounts receivable,
+  before any allowance, at December 31, Year 2?'
+choices:
+- id: A
+  text: $469,000
+  rationale: Leaves out the $255,000 of sales tax billed. Customers owe the tax along with the price,
+    so the receivables include it, even though the tax is a liability, not revenue.
+- id: B
+  text: $603,000
+  rationale: Accepts the draft's $603,000, which omits the sales tax billed, counts the deposits as collections
+    and keeps the factored receivables.
+- id: C
+  text: $678,000
+  rationale: Treats the $46,000 of deposits as collections of receivables. Advance payments for orders
+    not yet shipped are contract liabilities; they don't reduce receivables.
+- id: D
+  text: $724,000
+  rationale: Correct. $618,000 + $4,250,000 + $255,000 − ($4,236,000 − $46,000) − $29,000 − $180,000.
+answer: D
+explanation: 'Billings to customers include the sales tax: $4,250,000 × 6% = $255,000 is added. The deposits
+  are contract liabilities, not collections of receivables, so collections fall to $4,190,000. The factored
+  receivables were sold (a transfer without recourse with no continuing involvement), so the $180,000
+  comes out of receivables; the $7,200 difference from the cash received is a loss, and the borrowing
+  is reversed. Corrected balance = $618,000 + $4,505,000 − $4,190,000 − $29,000 − $180,000 = $724,000.'
+variants:
+- stem: 'Davidstow Creamery Supply Co.''s staff prepared this Year 2 rollforward of the accounts receivable
+    control account: January 1 balance $455,000; plus credit sales $3,120,000; less cash collected from
+    customers $3,088,000; less accounts written off $21,000; December 31 balance $466,000. All of Davidstow''s
+    sales are on account. The controller compares the schedule with the supporting records. The credit
+    sales figure is sales revenue from the income statement; every invoice also charged the customer 5%
+    sales tax, which Davidstow records as a liability until it remits it. The cash collected is the total
+    of the customer receipts column, which includes $38,000 of deposits that customers paid in December
+    on orders Davidstow will ship in Year 3. In November, Davidstow sold $130,000 of receivables to a
+    factor without recourse, for $124,800 in cash, keeping no involvement with them; the factored accounts
+    were closed in the subledger, but the general ledger recorded the cash as a short-term borrowing and
+    left the receivables in the control account. What balance should the corrected rollforward show for
+    accounts receivable, before any allowance, at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $374,000
+    rationale: Leaves out the $156,000 of sales tax billed. Customers owe the tax along with the price,
+      so the receivables include it, even though the tax is a liability, not revenue.
+  - id: B
+    text: $466,000
+    rationale: Accepts the draft's $466,000, which omits the sales tax billed, counts the deposits as
+      collections and keeps the factored receivables.
+  - id: C
+    text: $530,000
+    rationale: Correct. $455,000 + $3,120,000 + $156,000 − ($3,088,000 − $38,000) − $21,000 − $130,000.
+  - id: D
+    text: $660,000
+    rationale: Leaves the $130,000 of factored receivables in the control account. They were sold without
+      recourse and Davidstow kept no involvement, so they are derecognized; the cash is not a borrowing.
+  answer: C
+  explanation: 'Billings to customers include the sales tax: $3,120,000 × 5% = $156,000 is added. The
+    deposits are contract liabilities, not collections of receivables, so collections fall to $3,050,000.
+    The factored receivables were sold (a transfer without recourse with no continuing involvement), so
+    the $130,000 comes out of receivables; the $5,200 difference from the cash received is a loss, and
+    the borrowing is reversed. Corrected balance = $455,000 + $3,276,000 − $3,050,000 − $21,000 − $130,000
+    = $530,000.'
+- stem: 'Altarnun Timber Co.''s staff prepared this Year 2 rollforward of the accounts receivable control
+    account: January 1 balance $812,000; plus credit sales $5,680,000; less cash collected from customers
+    $5,602,000; less accounts written off $37,000; December 31 balance $853,000. All of Altarnun''s sales
+    are on account. The controller compares the schedule with the supporting records. The credit sales
+    figure is sales revenue from the income statement; every invoice also charged the customer 7% sales
+    tax, which Altarnun records as a liability until it remits it. The cash collected is the total of
+    the customer receipts column, which includes $63,000 of deposits that customers paid in December on
+    orders Altarnun will ship in Year 3. In November, Altarnun sold $240,000 of receivables to a factor
+    without recourse, for $231,600 in cash, keeping no involvement with them; the factored accounts were
+    closed in the subledger, but the general ledger recorded the cash as a short-term borrowing and left
+    the receivables in the control account. What balance should the corrected rollforward show for accounts
+    receivable, before any allowance, at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $676,000
+    rationale: Leaves out the $397,600 of sales tax billed. Customers owe the tax along with the price,
+      so the receivables include it, even though the tax is a liability, not revenue.
+  - id: B
+    text: $1,010,600
+    rationale: Treats the $63,000 of deposits as collections of receivables. Advance payments for orders
+      not yet shipped are contract liabilities; they don't reduce receivables.
+  - id: C
+    text: $1,073,600
+    rationale: Correct. $812,000 + $5,680,000 + $397,600 − ($5,602,000 − $63,000) − $37,000 − $240,000.
+  - id: D
+    text: $1,313,600
+    rationale: Leaves the $240,000 of factored receivables in the control account. They were sold without
+      recourse and Altarnun kept no involvement, so they are derecognized; the cash is not a borrowing.
+  answer: C
+  explanation: 'Billings to customers include the sales tax: $5,680,000 × 7% = $397,600 is added. The
+    deposits are contract liabilities, not collections of receivables, so collections fall to $5,539,000.
+    The factored receivables were sold (a transfer without recourse with no continuing involvement), so
+    the $240,000 comes out of receivables; the $8,400 difference from the cash received is a loss, and
+    the borrowing is reversed. Corrected balance = $812,000 + $6,077,600 − $5,539,000 − $37,000 − $240,000
+    = $1,073,600.'
+- stem: 'Bolventor Feed Co.''s staff prepared this Year 2 rollforward of the accounts receivable control
+    account: January 1 balance $346,000; plus credit sales $2,480,000; less cash collected from customers
+    $2,452,000; less accounts written off $16,000; December 31 balance $358,000. All of Bolventor''s sales
+    are on account. The controller compares the schedule with the supporting records. The credit sales
+    figure is sales revenue from the income statement; every invoice also charged the customer 6% sales
+    tax, which Bolventor records as a liability until it remits it. The cash collected is the total of
+    the customer receipts column, which includes $27,000 of deposits that customers paid in December on
+    orders Bolventor will ship in Year 3. In November, Bolventor sold $96,000 of receivables to a factor
+    without recourse, for $92,200 in cash, keeping no involvement with them; the factored accounts were
+    closed in the subledger, but the general ledger recorded the cash as a short-term borrowing and left
+    the receivables in the control account. What balance should the corrected rollforward show for accounts
+    receivable, before any allowance, at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $289,000
+    rationale: Leaves out the $148,800 of sales tax billed. Customers owe the tax along with the price,
+      so the receivables include it, even though the tax is a liability, not revenue.
+  - id: B
+    text: $358,000
+    rationale: Accepts the draft's $358,000, which omits the sales tax billed, counts the deposits as
+      collections and keeps the factored receivables.
+  - id: C
+    text: $410,800
+    rationale: Treats the $27,000 of deposits as collections of receivables. Advance payments for orders
+      not yet shipped are contract liabilities; they don't reduce receivables.
+  - id: D
+    text: $437,800
+    rationale: Correct. $346,000 + $2,480,000 + $148,800 − ($2,452,000 − $27,000) − $16,000 − $96,000.
+  answer: D
+  explanation: 'Billings to customers include the sales tax: $2,480,000 × 6% = $148,800 is added. The
+    deposits are contract liabilities, not collections of receivables, so collections fall to $2,425,000.
+    The factored receivables were sold (a transfer without recourse with no continuing involvement), so
+    the $96,000 comes out of receivables; the $3,800 difference from the cash received is a loss, and
+    the borrowing is reversed. Corrected balance = $346,000 + $2,628,800 − $2,425,000 − $16,000 − $96,000
+    = $437,800.'

@@ -1,0 +1,151 @@
+id: far-nfp-contributions-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 958-605-25 (unconditional promises to give; intentions to give, such as revocable bequests, not
+    recognized)
+  - ASC 958-605-30 (contributions measured at fair value; promises to give at present value)
+  - ASC 958-320 (gains and losses on investments after receipt)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 1, Gorran Animal Rescue, a not-for-profit entity, received the following. On December
+  31, a donor signed an unconditional promise to pay Gorran $60,000 on each December 31 of Years 2, 3
+  and 4; Gorran measures such promises at present value using a 5% discount rate, and the present value
+  of an ordinary annuity of 1 for three periods at 5% is 2.7232. A local company donated kennel equipment
+  that Gorran uses in its programs; the equipment's fair value was $48,000, and its carrying amount in
+  the company's records was $21,000. A donor gave Gorran corporate bonds with a fair value of $125,000
+  on the date of the gift, which Gorran sold three weeks later for $119,500. A longtime supporter told
+  Gorran's director that she has left Gorran $250,000 in her will. What total contribution revenue should
+  Gorran recognize for Year 1?
+choices:
+- id: A
+  text: $309,392
+  rationale: Records the equipment at the donor's $21,000 carrying amount. Contributed nonfinancial assets
+    are measured at their fair value when received, $48,000.
+- id: B
+  text: $330,892
+  rationale: Records the bonds at the $119,500 Gorran received when it sold them. The contribution is
+    measured at the bonds' fair value on the date of the gift, $125,000; the later difference is a loss
+    on sale, not contribution revenue.
+- id: C
+  text: $336,392
+  rationale: Correct. $60,000 × 2.7232 = $163,392; + $48,000 + $125,000.
+- id: D
+  text: $353,000
+  rationale: Records the pledge at the $180,000 total to be received. An unconditional promise to give
+    that will be collected over more than a year is measured at the present value of the future payments,
+    $163,392.
+answer: C
+explanation: 'Contributions are measured at fair value when received (ASC 958-605-30). The pledge is unconditional
+  and is measured at the present value of the payments: $60,000 × 2.7232 = $163,392. The equipment is
+  recognized at its $48,000 fair value, not the donor''s carrying amount. The bonds are recognized at
+  their $125,000 fair value on the date of the gift; the sale three weeks later gives a separate loss
+  of $5,500. A bequest in a living person''s will is revocable, so it isn''t a promise to give. Contribution
+  revenue = $163,392 + $48,000 + $125,000 = $336,392.'
+variants:
+- stem: During Year 1, Mullion Wildlife Trust, a not-for-profit entity, received the following. On December
+    31, a donor signed an unconditional promise to pay Mullion $45,000 on each December 31 of Years 2,
+    3 and 4; Mullion measures such promises at present value using a 4% discount rate, and the present
+    value of an ordinary annuity of 1 for three periods at 4% is 2.7751. A local company donated a boat
+    and outboard motor that Mullion uses in its programs; the equipment's fair value was $36,000, and
+    its carrying amount in the company's records was $14,500. A donor gave Mullion corporate bonds with
+    a fair value of $92,000 on the date of the gift, which Mullion sold three weeks later for $98,800.
+    A longtime supporter told Mullion's director that she has left Mullion $180,000 in her will. What
+    total contribution revenue should Mullion recognize for Year 1?
+  choices:
+  - id: A
+    text: $231,380
+    rationale: Records the equipment at the donor's $14,500 carrying amount. Contributed nonfinancial
+      assets are measured at their fair value when received, $36,000.
+  - id: B
+    text: $252,880
+    rationale: Correct. $45,000 × 2.7751 = $124,880; + $36,000 + $92,000.
+  - id: C
+    text: $263,000
+    rationale: Records the pledge at the $135,000 total to be received. An unconditional promise to give
+      that will be collected over more than a year is measured at the present value of the future payments,
+      $124,880.
+  - id: D
+    text: $432,880
+    rationale: Includes the $180,000 the donor says she has left Mullion in her will. A will can be changed
+      until death, so the bequest is an intention to give, not an unconditional promise, and isn't recognized.
+  answer: B
+  explanation: 'Contributions are measured at fair value when received (ASC 958-605-30). The pledge is
+    unconditional and is measured at the present value of the payments: $45,000 × 2.7751 = $124,880. The
+    equipment is recognized at its $36,000 fair value, not the donor''s carrying amount. The bonds are
+    recognized at their $92,000 fair value on the date of the gift; the sale three weeks later gives a
+    separate gain of $6,800. A bequest in a living person''s will is revocable, so it isn''t a promise
+    to give. Contribution revenue = $124,880 + $36,000 + $92,000 = $252,880.'
+- stem: During Year 1, Coverack Lifeboat Fund, a not-for-profit entity, received the following. On December
+    31, a donor signed an unconditional promise to pay Coverack $80,000 on each December 31 of Years 2,
+    3 and 4; Coverack measures such promises at present value using a 6% discount rate, and the present
+    value of an ordinary annuity of 1 for three periods at 6% is 2.6730. A local company donated rescue
+    equipment that Coverack uses in its programs; the equipment's fair value was $64,000, and its carrying
+    amount in the company's records was $29,000. A donor gave Coverack corporate bonds with a fair value
+    of $170,000 on the date of the gift, which Coverack sold three weeks later for $184,000. A longtime
+    supporter told Coverack's director that she has left Coverack $400,000 in her will. What total contribution
+    revenue should Coverack recognize for Year 1?
+  choices:
+  - id: A
+    text: $447,840
+    rationale: Correct. $80,000 × 2.6730 = $213,840; + $64,000 + $170,000.
+  - id: B
+    text: $461,840
+    rationale: Records the bonds at the $184,000 Coverack received when it sold them. The contribution
+      is measured at the bonds' fair value on the date of the gift, $170,000; the later difference is
+      a gain on sale, not contribution revenue.
+  - id: C
+    text: $474,000
+    rationale: Records the pledge at the $240,000 total to be received. An unconditional promise to give
+      that will be collected over more than a year is measured at the present value of the future payments,
+      $213,840.
+  - id: D
+    text: $847,840
+    rationale: Includes the $400,000 the donor says she has left Coverack in her will. A will can be changed
+      until death, so the bequest is an intention to give, not an unconditional promise, and isn't recognized.
+  answer: A
+  explanation: 'Contributions are measured at fair value when received (ASC 958-605-30). The pledge is
+    unconditional and is measured at the present value of the payments: $80,000 × 2.6730 = $213,840. The
+    equipment is recognized at its $64,000 fair value, not the donor''s carrying amount. The bonds are
+    recognized at their $170,000 fair value on the date of the gift; the sale three weeks later gives
+    a separate gain of $14,000. A bequest in a living person''s will is revocable, so it isn''t a promise
+    to give. Contribution revenue = $213,840 + $64,000 + $170,000 = $447,840.'
+- stem: During Year 1, Porthcurno Heritage Society, a not-for-profit entity, received the following. On
+    December 31, a donor signed an unconditional promise to pay Porthcurno $50,000 on each December 31
+    of Years 2, 3 and 4; Porthcurno measures such promises at present value using a 5% discount rate,
+    and the present value of an ordinary annuity of 1 for three periods at 5% is 2.7232. A local company
+    donated display cases that Porthcurno uses in its programs; the equipment's fair value was $42,000,
+    and its carrying amount in the company's records was $17,500. A donor gave Porthcurno corporate bonds
+    with a fair value of $108,000 on the date of the gift, which Porthcurno sold three weeks later for
+    $102,500. A longtime supporter told Porthcurno's director that she has left Porthcurno $150,000 in
+    her will. What total contribution revenue should Porthcurno recognize for Year 1?
+  choices:
+  - id: A
+    text: $261,660
+    rationale: Records the equipment at the donor's $17,500 carrying amount. Contributed nonfinancial
+      assets are measured at their fair value when received, $42,000.
+  - id: B
+    text: $286,160
+    rationale: Correct. $50,000 × 2.7232 = $136,160; + $42,000 + $108,000.
+  - id: C
+    text: $300,000
+    rationale: Records the pledge at the $150,000 total to be received. An unconditional promise to give
+      that will be collected over more than a year is measured at the present value of the future payments,
+      $136,160.
+  - id: D
+    text: $436,160
+    rationale: Includes the $150,000 the donor says she has left Porthcurno in her will. A will can be
+      changed until death, so the bequest is an intention to give, not an unconditional promise, and isn't
+      recognized.
+  answer: B
+  explanation: 'Contributions are measured at fair value when received (ASC 958-605-30). The pledge is
+    unconditional and is measured at the present value of the payments: $50,000 × 2.7232 = $136,160. The
+    equipment is recognized at its $42,000 fair value, not the donor''s carrying amount. The bonds are
+    recognized at their $108,000 fair value on the date of the gift; the sale three weeks later gives
+    a separate loss of $5,500. A bequest in a living person''s will is revocable, so it isn''t a promise
+    to give. Contribution revenue = $136,160 + $42,000 + $108,000 = $286,160.'

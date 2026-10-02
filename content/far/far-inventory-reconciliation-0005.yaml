@@ -1,0 +1,145 @@
+id: far-inventory-reconciliation-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory; goods in transit between locations; freight-out is a selling cost)
+  - 'ASC 606-10-55-85 to 55-88 (customer acceptance: products delivered for trial or evaluation)'
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Summercourt Housewares Co.''s perpetual inventory subledger totals $1,356,250,
+  and its general ledger inventory account shows $1,420,900. The controller''s investigation finds: goods
+  costing $21,850 that were shipped on December 30 from Summercourt''s east warehouse to its west warehouse,
+  arriving January 3, were removed from the east records but not yet added to the west records; goods
+  costing $48,200 were sent on December 22 to a customer that may examine them and return them by January
+  21 with no obligation to buy, and both records treated them as sold; a December cycle count found goods
+  costing $18,460 missing, which the subledger wrote off but the general ledger did not; and $24,340 of
+  freight paid to deliver goods to customers in December was debited to inventory in the general ledger.
+  What amount should Summercourt report as inventory at December 31?'
+choices:
+- id: A
+  text: $1,356,250
+  rationale: Accepts the subledger's $1,356,250. It omits the goods in transit between warehouses and
+    the goods on approval.
+- id: B
+  text: $1,378,100
+  rationale: Treats the $48,200 of goods on approval as sold. The customer may return them with no obligation
+    to buy, so control hasn't passed until it accepts them or the period ends; they are still Summercourt's
+    inventory.
+- id: C
+  text: $1,404,450
+  rationale: Leaves out the $21,850 of goods moving between Summercourt's own warehouses. They were removed
+    from one location's records and not yet added to the other's, but Summercourt owns them.
+- id: D
+  text: $1,426,300
+  rationale: Correct. Subledger $1,356,250 + $21,850 + $48,200; general ledger $1,420,900 + $48,200 −
+    $18,460 − $24,340.
+answer: D
+explanation: 'Subledger: the goods between warehouses are still Summercourt''s (+ $21,850), and the goods
+  on approval haven''t been sold, because the customer hasn''t accepted them and the return period hasn''t
+  ended (+ $48,200): $1,356,250 + $21,850 + $48,200 = $1,426,300. General ledger: + $48,200 for the goods
+  on approval, − $18,460 for the shrinkage and − $24,340 for the freight-out, a selling cost: $1,420,900
+  + $48,200 − $18,460 − $24,340 = $1,426,300. Inventory = $1,426,300.'
+variants:
+- stem: 'At December 31, Mitchell Housewares Co.''s perpetual inventory subledger totals $935,500, and
+    its general ledger inventory account shows $1,003,870. The controller''s investigation finds: goods
+    costing $17,600 that were shipped on December 30 from Mitchell''s north warehouse to its south warehouse,
+    arriving January 3, were removed from the north records but not yet added to the south records; goods
+    costing $29,300 were sent on December 22 to a customer that may examine them and return them by January
+    21 with no obligation to buy, and both records treated them as sold; a December cycle count found
+    goods costing $15,850 missing, which the subledger wrote off but the general ledger did not; and $34,920
+    of freight paid to deliver goods to customers in December was debited to inventory in the general
+    ledger. What amount should Mitchell report as inventory at December 31?'
+  choices:
+  - id: A
+    text: $953,100
+    rationale: Treats the $29,300 of goods on approval as sold. The customer may return them with no obligation
+      to buy, so control hasn't passed until it accepts them or the period ends; they are still Mitchell's
+      inventory.
+  - id: B
+    text: $982,400
+    rationale: Correct. Subledger $935,500 + $17,600 + $29,300; general ledger $1,003,870 + $29,300 −
+      $15,850 − $34,920.
+  - id: C
+    text: $998,250
+    rationale: Keeps the $15,850 of goods the cycle count found missing. The subledger wrote them off;
+      the general ledger must too.
+  - id: D
+    text: $1,017,320
+    rationale: Keeps the $34,920 of freight on deliveries to customers in inventory. Freight-out is a
+      selling cost, not a cost of inventory.
+  answer: B
+  explanation: 'Subledger: the goods between warehouses are still Mitchell''s (+ $17,600), and the goods
+    on approval haven''t been sold, because the customer hasn''t accepted them and the return period hasn''t
+    ended (+ $29,300): $935,500 + $17,600 + $29,300 = $982,400. General ledger: + $29,300 for the goods
+    on approval, − $15,850 for the shrinkage and − $34,920 for the freight-out, a selling cost: $1,003,870
+    + $29,300 − $15,850 − $34,920 = $982,400. Inventory = $982,400.'
+- stem: 'At December 31, Topsham Housewares Co.''s perpetual inventory subledger totals $1,767,400, and
+    its general ledger inventory account shows $1,866,900. The controller''s investigation finds: goods
+    costing $36,400 that were shipped on December 30 from Topsham''s city warehouse to its harbor warehouse,
+    arriving January 3, were removed from the city records but not yet added to the harbor records; goods
+    costing $70,700 were sent on December 22 to a customer that may examine them and return them by January
+    21 with no obligation to buy, and both records treated them as sold; a December cycle count found
+    goods costing $21,300 missing, which the subledger wrote off but the general ledger did not; and $41,800
+    of freight paid to deliver goods to customers in December was debited to inventory in the general
+    ledger. What amount should Topsham report as inventory at December 31?'
+  choices:
+  - id: A
+    text: $1,803,800
+    rationale: Treats the $70,700 of goods on approval as sold. The customer may return them with no obligation
+      to buy, so control hasn't passed until it accepts them or the period ends; they are still Topsham's
+      inventory.
+  - id: B
+    text: $1,838,100
+    rationale: Leaves out the $36,400 of goods moving between Topsham's own warehouses. They were removed
+      from one location's records and not yet added to the other's, but Topsham owns them.
+  - id: C
+    text: $1,874,500
+    rationale: Correct. Subledger $1,767,400 + $36,400 + $70,700; general ledger $1,866,900 + $70,700
+      − $21,300 − $41,800.
+  - id: D
+    text: $1,916,300
+    rationale: Keeps the $41,800 of freight on deliveries to customers in inventory. Freight-out is a
+      selling cost, not a cost of inventory.
+  answer: C
+  explanation: 'Subledger: the goods between warehouses are still Topsham''s (+ $36,400), and the goods
+    on approval haven''t been sold, because the customer hasn''t accepted them and the return period hasn''t
+    ended (+ $70,700): $1,767,400 + $36,400 + $70,700 = $1,874,500. General ledger: + $70,700 for the
+    goods on approval, − $21,300 for the shrinkage and − $41,800 for the freight-out, a selling cost:
+    $1,866,900 + $70,700 − $21,300 − $41,800 = $1,874,500. Inventory = $1,874,500.'
+- stem: 'At December 31, Shaldon Housewares Co.''s perpetual inventory subledger totals $622,300, and
+    its general ledger inventory account shows $679,200. The controller''s investigation finds: goods
+    costing $12,900 that were shipped on December 30 from Shaldon''s riverside warehouse to its airport
+    warehouse, arriving January 3, were removed from the riverside records but not yet added to the airport
+    records; goods costing $19,600 were sent on December 22 to a customer that may examine them and return
+    them by January 21 with no obligation to buy, and both records treated them as sold; a December cycle
+    count found goods costing $14,700 missing, which the subledger wrote off but the general ledger did
+    not; and $29,300 of freight paid to deliver goods to customers in December was debited to inventory
+    in the general ledger. What amount should Shaldon report as inventory at December 31?'
+  choices:
+  - id: A
+    text: $641,900
+    rationale: Leaves out the $12,900 of goods moving between Shaldon's own warehouses. They were removed
+      from one location's records and not yet added to the other's, but Shaldon owns them.
+  - id: B
+    text: $654,800
+    rationale: Correct. Subledger $622,300 + $12,900 + $19,600; general ledger $679,200 + $19,600 − $14,700
+      − $29,300.
+  - id: C
+    text: $669,500
+    rationale: Keeps the $14,700 of goods the cycle count found missing. The subledger wrote them off;
+      the general ledger must too.
+  - id: D
+    text: $684,100
+    rationale: Keeps the $29,300 of freight on deliveries to customers in inventory. Freight-out is a
+      selling cost, not a cost of inventory.
+  answer: B
+  explanation: 'Subledger: the goods between warehouses are still Shaldon''s (+ $12,900), and the goods
+    on approval haven''t been sold, because the customer hasn''t accepted them and the return period hasn''t
+    ended (+ $19,600): $622,300 + $12,900 + $19,600 = $654,800. General ledger: + $19,600 for the goods
+    on approval, − $14,700 for the shrinkage and − $29,300 for the freight-out, a selling cost: $679,200
+    + $19,600 − $14,700 − $29,300 = $654,800. Inventory = $654,800.'

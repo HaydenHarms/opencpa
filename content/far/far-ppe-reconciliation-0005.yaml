@@ -1,0 +1,148 @@
+id: far-ppe-reconciliation-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 360-10-35 (depreciation; temporarily idle assets continue to be depreciated; construction in progress
+    not depreciated until ready for its intended use)
+  - ASC 835-20 (capitalized interest is part of the asset's cost)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Chagford Metalworks Co.''s fixed-asset subledger shows Year 2 depreciation of $1,278,100, while
+  its general ledger shows depreciation expense of $1,288,050. Chagford depreciates its assets straight-line
+  by month. The controller''s investigation finds: the subledger recorded $23,500 of depreciation on the
+  costs to date of a warehouse wing still under construction at December 31, while the general ledger
+  recorded none; $120,000 of interest capitalized during the construction of a machine Chagford built
+  for its own use, placed in service on July 1, Year 2, with a 10-year life and no residual value, is
+  in the machine''s cost in the general ledger but not in the subledger; the subledger suspended depreciation
+  on a press for the 4 months it stood idle during a temporary drop in orders, while the general ledger
+  recorded the press''s full annual depreciation of $72,000; and a forklift sold on September 30 was removed
+  from the subledger at that date, but the general ledger kept recording its depreciation of $1,150 a
+  month through December. What depreciation expense should Chagford report for Year 2?'
+choices:
+- id: A
+  text: $1,260,600
+  rationale: 'Suspends depreciation on the press for the 4 idle months. An asset that is temporarily idle
+    continues to be depreciated: its full $72,000 is recorded.'
+- id: B
+  text: $1,278,600
+  rationale: Depreciates the machine without the $120,000 of capitalized interest. Interest capitalized
+    during construction is part of the asset's cost, adding $6,000 of depreciation for six months.
+- id: C
+  text: $1,284,600
+  rationale: Correct. Subledger $1,278,100 − $23,500 + $6,000 + $24,000; general ledger $1,288,050 − $3,450.
+- id: D
+  text: $1,308,100
+  rationale: Keeps the $23,500 of depreciation on the wing still under construction. Depreciation begins
+    when an asset is ready for its intended use; construction in progress isn't depreciated.
+answer: C
+explanation: 'Subledger: remove the $23,500 on construction in progress, which isn''t depreciated until
+  it is ready for use; add depreciation on the capitalized interest, $120,000 ÷ 10 × 6/12 = $6,000; and
+  add the 4 idle months on the press, $72,000 × 4/12 = $24,000, because a temporarily idle asset is still
+  depreciated: $1,278,100 − $23,500 + $6,000 + $24,000 = $1,284,600. General ledger: remove the forklift''s
+  depreciation after the sale, 3 × $1,150 = $3,450: $1,288,050 − $3,450 = $1,284,600.'
+variants:
+- stem: 'Lustleigh Castings Co.''s fixed-asset subledger shows Year 2 depreciation of $939,700, while
+    its general ledger shows depreciation expense of $943,600. Lustleigh depreciates its assets straight-line
+    by month. The controller''s investigation finds: the subledger recorded $17,800 of depreciation on
+    the costs to date of a warehouse wing still under construction at December 31, while the general ledger
+    recorded none; $60,000 of interest capitalized during the construction of a machine Lustleigh built
+    for its own use, placed in service on July 1, Year 2, with a 12-year life and no residual value, is
+    in the machine''s cost in the general ledger but not in the subledger; the subledger suspended depreciation
+    on a press for the 3 months it stood idle during a temporary drop in orders, while the general ledger
+    recorded the press''s full annual depreciation of $48,000; and a forklift sold on September 30 was
+    removed from the subledger at that date, but the general ledger kept recording its depreciation of
+    $2,400 a month through December. What depreciation expense should Lustleigh report for Year 2?'
+  choices:
+  - id: A
+    text: $924,400
+    rationale: 'Suspends depreciation on the press for the 3 idle months. An asset that is temporarily
+      idle continues to be depreciated: its full $48,000 is recorded.'
+  - id: B
+    text: $936,400
+    rationale: Correct. Subledger $939,700 − $17,800 + $2,500 + $12,000; general ledger $943,600 − $7,200.
+  - id: C
+    text: $943,600
+    rationale: Accepts the general ledger's $943,600, which includes $7,200 of depreciation on the forklift
+      for the three months after it was sold.
+  - id: D
+    text: $954,200
+    rationale: Keeps the $17,800 of depreciation on the wing still under construction. Depreciation begins
+      when an asset is ready for its intended use; construction in progress isn't depreciated.
+  answer: B
+  explanation: 'Subledger: remove the $17,800 on construction in progress, which isn''t depreciated until
+    it is ready for use; add depreciation on the capitalized interest, $60,000 ÷ 12 × 6/12 = $2,500; and
+    add the 3 idle months on the press, $48,000 × 3/12 = $12,000, because a temporarily idle asset is
+    still depreciated: $939,700 − $17,800 + $2,500 + $12,000 = $936,400. General ledger: remove the forklift''s
+    depreciation after the sale, 3 × $2,400 = $7,200: $943,600 − $7,200 = $936,400.'
+- stem: 'Widecombe Forge Co.''s fixed-asset subledger shows Year 2 depreciation of $1,626,500, while its
+    general ledger shows depreciation expense of $1,648,500. Widecombe depreciates its assets straight-line
+    by month. The controller''s investigation finds: the subledger recorded $31,200 of depreciation on
+    the costs to date of a warehouse wing still under construction at December 31, while the general ledger
+    recorded none; $120,000 of interest capitalized during the construction of a machine Widecombe built
+    for its own use, placed in service on July 1, Year 2, with an 8-year life and no residual value, is
+    in the machine''s cost in the general ledger but not in the subledger; the subledger suspended depreciation
+    on a press for the 5 months it stood idle during a temporary drop in orders, while the general ledger
+    recorded the press''s full annual depreciation of $96,000; and a forklift sold on September 30 was
+    removed from the subledger at that date, but the general ledger kept recording its depreciation of
+    $1,900 a month through December. What depreciation expense should Widecombe report for Year 2?'
+  choices:
+  - id: A
+    text: $1,602,800
+    rationale: 'Suspends depreciation on the press for the 5 idle months. An asset that is temporarily
+      idle continues to be depreciated: its full $96,000 is recorded.'
+  - id: B
+    text: $1,626,500
+    rationale: Accepts the subledger's $1,626,500, which depreciates construction in progress, leaves
+      out the capitalized interest and suspends depreciation on the idle press.
+  - id: C
+    text: $1,635,300
+    rationale: Depreciates the machine without the $120,000 of capitalized interest. Interest capitalized
+      during construction is part of the asset's cost, adding $7,500 of depreciation for six months.
+  - id: D
+    text: $1,642,800
+    rationale: Correct. Subledger $1,626,500 − $31,200 + $7,500 + $40,000; general ledger $1,648,500 −
+      $5,700.
+  answer: D
+  explanation: 'Subledger: remove the $31,200 on construction in progress, which isn''t depreciated until
+    it is ready for use; add depreciation on the capitalized interest, $120,000 ÷ 8 × 6/12 = $7,500; and
+    add the 5 idle months on the press, $96,000 × 5/12 = $40,000, because a temporarily idle asset is
+    still depreciated: $1,626,500 − $31,200 + $7,500 + $40,000 = $1,642,800. General ledger: remove the
+    forklift''s depreciation after the sale, 3 × $1,900 = $5,700: $1,648,500 − $5,700 = $1,642,800.'
+- stem: 'Hatherleigh Steel Co.''s fixed-asset subledger shows Year 2 depreciation of $752,400, while its
+    general ledger shows depreciation expense of $761,950. Hatherleigh depreciates its assets straight-line
+    by month. The controller''s investigation finds: the subledger recorded $14,600 of depreciation on
+    the costs to date of a warehouse wing still under construction at December 31, while the general ledger
+    recorded none; $48,000 of interest capitalized during the construction of a machine Hatherleigh built
+    for its own use, placed in service on July 1, Year 2, with a 10-year life and no residual value, is
+    in the machine''s cost in the general ledger but not in the subledger; the subledger suspended depreciation
+    on a press for the 6 months it stood idle during a temporary drop in orders, while the general ledger
+    recorded the press''s full annual depreciation of $36,000; and a forklift sold on September 30 was
+    removed from the subledger at that date, but the general ledger kept recording its depreciation of
+    $1,250 a month through December. What depreciation expense should Hatherleigh report for Year 2?'
+  choices:
+  - id: A
+    text: $752,400
+    rationale: Accepts the subledger's $752,400, which depreciates construction in progress, leaves out
+      the capitalized interest and suspends depreciation on the idle press.
+  - id: B
+    text: $758,200
+    rationale: Correct. Subledger $752,400 − $14,600 + $2,400 + $18,000; general ledger $761,950 − $3,750.
+  - id: C
+    text: $761,950
+    rationale: Accepts the general ledger's $761,950, which includes $3,750 of depreciation on the forklift
+      for the three months after it was sold.
+  - id: D
+    text: $772,800
+    rationale: Keeps the $14,600 of depreciation on the wing still under construction. Depreciation begins
+      when an asset is ready for its intended use; construction in progress isn't depreciated.
+  answer: B
+  explanation: 'Subledger: remove the $14,600 on construction in progress, which isn''t depreciated until
+    it is ready for use; add depreciation on the capitalized interest, $48,000 ÷ 10 × 6/12 = $2,400; and
+    add the 6 idle months on the press, $36,000 × 6/12 = $18,000, because a temporarily idle asset is
+    still depreciated: $752,400 − $14,600 + $2,400 + $18,000 = $758,200. General ledger: remove the forklift''s
+    depreciation after the sale, 3 × $1,250 = $3,750: $761,950 − $3,750 = $758,200.'

@@ -1,0 +1,160 @@
+id: far-ppe-rollforward-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 360-10-35 (depreciation: from the date placed in service; land not depreciated)'
+  - ASC 842-20-35-12 (leasehold improvements amortized over the shorter of useful life and remaining lease
+    term)
+  - 'ASC 360-10-40 (derecognition: accumulated depreciation through the date of sale removed)'
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Kingsbridge Foods Co.''s staff prepared this Year 2 rollforward of accumulated depreciation: January
+  1 balance $2,846,000; depreciation expense $612,000; disposals ($95,000); December 31 balance $3,363,000.
+  The controller reviews the depreciation schedule and finds: a packaging line that cost $480,000, placed
+  in service on October 1, Year 2, received a full year of depreciation over its 8-year life with no residual
+  value; a building bought on January 2, Year 2, for $1,950,000, of which an appraisal assigned $550,000
+  to the land, was depreciated on the whole $1,950,000 over 40 years with no residual value; improvements
+  costing $270,000 that Kingsbridge made on January 2, Year 2, to a warehouse it leases, whose lease ends
+  in 5 years with no renewal or purchase option, were depreciated over their 15-year physical life; and
+  a truck that cost $150,000, depreciated straight-line over five years with no residual value, was sold
+  on July 31, Year 2, and the disposal entry removed its accumulated depreciation at January 1 without
+  recording any depreciation on it for Year 2. Kingsbridge depreciates straight-line by month. What accumulated
+  depreciation should the corrected rollforward report at December 31, Year 2?'
+choices:
+- id: A
+  text: $3,304,250
+  rationale: Keeps the leasehold improvements on their 15-year physical life. Improvements to a leased
+    asset are depreciated over the shorter of their useful life and the remaining lease term, 5 years
+    here.
+- id: B
+  text: $3,340,250
+  rationale: Correct. $3,363,000 − $45,000 − $13,750 + $36,000.
+- id: C
+  text: $3,357,750
+  rationale: Records the $17,500 of Year 2 depreciation on the truck sold but removes only its January
+    1 accumulated depreciation. The disposal must also remove that $17,500, so the two corrections cancel.
+- id: D
+  text: $3,385,250
+  rationale: Keeps the full year of depreciation on the packaging line. It was placed in service on October
+    1, so only 3 months ($15,000) are recorded.
+answer: B
+explanation: 'The packaging line is depreciated for 3 months, not 12: − $45,000. The land portion of the
+  building isn''t depreciable: − $550,000 ÷ 40 = − $13,750. The leasehold improvements are depreciated
+  over the 5-year remaining lease term: $270,000 ÷ 5 − $270,000 ÷ 15 = + $36,000. The truck needs $17,500
+  of depreciation for 7 months, which increases accumulated depreciation, and the disposal must then remove
+  that amount too, so the ending balance is unchanged (depreciation expense and the loss on sale change
+  instead). Corrected balance = $3,363,000 − $45,000 − $13,750 + $36,000 = $3,340,250.'
+variants:
+- stem: 'Salcombe Boats Co.''s staff prepared this Year 2 rollforward of accumulated depreciation: January
+    1 balance $1,934,000; depreciation expense $418,000; disposals ($66,000); December 31 balance $2,286,000.
+    The controller reviews the depreciation schedule and finds: a moulding press that cost $360,000, placed
+    in service on May 1, Year 2, received a full year of depreciation over its 6-year life with no residual
+    value; a building bought on January 2, Year 2, for $1,380,000, of which an appraisal assigned $520,000
+    to the land, was depreciated on the whole $1,380,000 over 40 years with no residual value; improvements
+    costing $216,000 that Salcombe made on January 2, Year 2, to a warehouse it leases, whose lease ends
+    in 4 years with no renewal or purchase option, were depreciated over their 15-year physical life;
+    and a truck that cost $180,000, depreciated straight-line over five years with no residual value,
+    was sold on October 31, Year 2, and the disposal entry removed its accumulated depreciation at January
+    1 without recording any depreciation on it for Year 2. Salcombe depreciates straight-line by month.
+    What accumulated depreciation should the corrected rollforward report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,253,000
+    rationale: Keeps the leasehold improvements on their 15-year physical life. Improvements to a leased
+      asset are depreciated over the shorter of their useful life and the remaining lease term, 4 years
+      here.
+  - id: B
+    text: $2,292,600
+    rationale: Correct. $2,286,000 − $20,000 − $13,000 + $39,600.
+  - id: C
+    text: $2,305,600
+    rationale: Keeps the $13,000 of depreciation on the $520,000 assigned to land. Land isn't depreciated,
+      so the building's depreciation is ($1,380,000 − $520,000) ÷ 40.
+  - id: D
+    text: $2,322,600
+    rationale: Records the $30,000 of Year 2 depreciation on the truck sold but removes only its January
+      1 accumulated depreciation. The disposal must also remove that $30,000, so the two corrections cancel.
+  answer: B
+  explanation: 'The moulding press is depreciated for 8 months, not 12: − $20,000. The land portion of
+    the building isn''t depreciable: − $520,000 ÷ 40 = − $13,000. The leasehold improvements are depreciated
+    over the 4-year remaining lease term: $216,000 ÷ 4 − $216,000 ÷ 15 = + $39,600. The truck needs $30,000
+    of depreciation for 10 months, which increases accumulated depreciation, and the disposal must then
+    remove that amount too, so the ending balance is unchanged (depreciation expense and the loss on sale
+    change instead). Corrected balance = $2,286,000 − $20,000 − $13,000 + $39,600 = $2,292,600.'
+- stem: 'Totnes Joinery Co.''s staff prepared this Year 2 rollforward of accumulated depreciation: January
+    1 balance $3,512,000; depreciation expense $744,000; disposals ($105,000); December 31 balance $4,151,000.
+    The controller reviews the depreciation schedule and finds: a CNC router that cost $495,000, placed
+    in service on September 1, Year 2, received a full year of depreciation over its 6-year life with
+    no residual value; a building bought on January 2, Year 2, for $2,400,000, of which an appraisal assigned
+    $720,000 to the land, was depreciated on the whole $2,400,000 over 40 years with no residual value;
+    improvements costing $330,000 that Totnes made on January 2, Year 2, to a warehouse it leases, whose
+    lease ends in 6 years with no renewal or purchase option, were depreciated over their 15-year physical
+    life; and a truck that cost $240,000, depreciated straight-line over five years with no residual value,
+    was sold on September 30, Year 2, and the disposal entry removed its accumulated depreciation at January
+    1 without recording any depreciation on it for Year 2. Totnes depreciates straight-line by month.
+    What accumulated depreciation should the corrected rollforward report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $4,111,000
+    rationale: Correct. $4,151,000 − $55,000 − $18,000 + $33,000.
+  - id: B
+    text: $4,129,000
+    rationale: Keeps the $18,000 of depreciation on the $720,000 assigned to land. Land isn't depreciated,
+      so the building's depreciation is ($2,400,000 − $720,000) ÷ 40.
+  - id: C
+    text: $4,147,000
+    rationale: Records the $36,000 of Year 2 depreciation on the truck sold but removes only its January
+      1 accumulated depreciation. The disposal must also remove that $36,000, so the two corrections cancel.
+  - id: D
+    text: $4,166,000
+    rationale: Keeps the full year of depreciation on the CNC router. It was placed in service on September
+      1, so only 4 months ($27,500) are recorded.
+  answer: A
+  explanation: 'The CNC router is depreciated for 4 months, not 12: − $55,000. The land portion of the
+    building isn''t depreciable: − $720,000 ÷ 40 = − $18,000. The leasehold improvements are depreciated
+    over the 6-year remaining lease term: $330,000 ÷ 6 − $330,000 ÷ 15 = + $33,000. The truck needs $36,000
+    of depreciation for 9 months, which increases accumulated depreciation, and the disposal must then
+    remove that amount too, so the ending balance is unchanged (depreciation expense and the loss on sale
+    change instead). Corrected balance = $4,151,000 − $55,000 − $18,000 + $33,000 = $4,111,000.'
+- stem: 'Ashburton Mills Co.''s staff prepared this Year 2 rollforward of accumulated depreciation: January
+    1 balance $1,468,000; depreciation expense $326,000; disposals ($61,600); December 31 balance $1,732,400.
+    The controller reviews the depreciation schedule and finds: a bottling line that cost $288,000, placed
+    in service on November 1, Year 2, received a full year of depreciation over its 6-year life with no
+    residual value; a building bought on January 2, Year 2, for $990,000, of which an appraisal assigned
+    $290,000 to the land, was depreciated on the whole $990,000 over 40 years with no residual value;
+    improvements costing $150,000 that Ashburton made on January 2, Year 2, to a warehouse it leases,
+    whose lease ends in 3 years with no renewal or purchase option, were depreciated over their 15-year
+    physical life; and a truck that cost $180,000, depreciated straight-line over five years with no residual
+    value, was sold on April 30, Year 2, and the disposal entry removed its accumulated depreciation at
+    January 1 without recording any depreciation on it for Year 2. Ashburton depreciates straight-line
+    by month. What accumulated depreciation should the corrected rollforward report at December 31, Year
+    2?'
+  choices:
+  - id: A
+    text: $1,685,150
+    rationale: Keeps the leasehold improvements on their 15-year physical life. Improvements to a leased
+      asset are depreciated over the shorter of their useful life and the remaining lease term, 3 years
+      here.
+  - id: B
+    text: $1,725,150
+    rationale: Correct. $1,732,400 − $40,000 − $7,250 + $40,000.
+  - id: C
+    text: $1,737,150
+    rationale: Records the $12,000 of Year 2 depreciation on the truck sold but removes only its January
+      1 accumulated depreciation. The disposal must also remove that $12,000, so the two corrections cancel.
+  - id: D
+    text: $1,765,150
+    rationale: Keeps the full year of depreciation on the bottling line. It was placed in service on November
+      1, so only 2 months ($8,000) are recorded.
+  answer: B
+  explanation: 'The bottling line is depreciated for 2 months, not 12: − $40,000. The land portion of
+    the building isn''t depreciable: − $290,000 ÷ 40 = − $7,250. The leasehold improvements are depreciated
+    over the 3-year remaining lease term: $150,000 ÷ 3 − $150,000 ÷ 15 = + $40,000. The truck needs $12,000
+    of depreciation for 4 months, which increases accumulated depreciation, and the disposal must then
+    remove that amount too, so the ending balance is unchanged (depreciation expense and the loss on sale
+    change instead). Corrected balance = $1,732,400 − $40,000 − $7,250 + $40,000 = $1,725,150.'

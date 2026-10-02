@@ -1,0 +1,126 @@
+id: far-lessee-operating-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 842-20-25-6 (operating lease cost: straight-line single lease cost; variable lease payments recognized
+    when incurred)'
+  - 'ASC 842-20-25-2 (short-term lease election: cost recognized straight-line over the term)'
+  - ASC 842-20-50-4 (total lease cost includes short-term and variable lease cost)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Botallack Outdoor Co. began a five-year lease of retail space, which it classifies
+  as an operating lease. Rent is $14,500 a month, except that no rent is due for the first six months.
+  Botallack also pays the landlord 3% of its annual sales at the location above $3,000,000; Year 1 sales
+  there were $3,860,000. On May 1, Year 1, Botallack rented a forklift for eight months at $2,400 a month,
+  and it has elected the short-term lease exemption for that class of asset. What total lease cost should
+  Botallack recognize for Year 1?
+choices:
+- id: A
+  text: $132,000
+  rationale: 'Uses the $87,000 of rent paid in Year 1. An operating lease''s fixed payments, free months
+    included, are recognized straight-line over the lease term: $783,000 ÷ 5 = $156,600 a year.'
+- id: B
+  text: $175,800
+  rationale: Leaves out the $25,800 of percentage rent. Variable payments based on sales aren't in the
+    lease liability, but they are lease cost in the period the obligation is incurred.
+- id: C
+  text: $182,400
+  rationale: Leaves out the $19,200 of forklift rent. A short-term lease isn't on the balance sheet, but
+    its cost is recognized straight-line over its term and is part of total lease cost.
+- id: D
+  text: $201,600
+  rationale: Correct. $156,600 straight-line + $25,800 variable + $19,200 short-term.
+answer: D
+explanation: 'Operating lease cost for the fixed payments is recognized straight-line over the lease term
+  (ASC 842-20-25-6): 54 months × $14,500 = $783,000 ÷ 5 = $156,600 a year, free months included. Variable
+  payments based on sales are excluded from the lease liability and recognized as incurred: 3% × ($3,860,000
+  − $3,000,000) = $25,800. The forklift is a short-term lease, recognized straight-line over its term:
+  8 × $2,400 = $19,200. Total lease cost = $201,600.'
+variants:
+- stem: On January 1, Year 1, Crantock Surf Co. began a five-year lease of retail space, which it classifies
+    as an operating lease. Rent is $9,800 a month, except that no rent is due for the first four months.
+    Crantock also pays the landlord 2% of its annual sales at the location above $2,200,000; Year 1 sales
+    there were $3,400,000. On June 1, Year 1, Crantock rented a forklift for seven months at $1,900 a
+    month, and it has elected the short-term lease exemption for that class of asset. What total lease
+    cost should Crantock recognize for Year 1?
+  choices:
+  - id: A
+    text: $115,700
+    rationale: 'Uses the $78,400 of rent paid in Year 1. An operating lease''s fixed payments, free months
+      included, are recognized straight-line over the lease term: $548,800 ÷ 5 = $109,760 a year.'
+  - id: B
+    text: $123,060
+    rationale: Leaves out the $24,000 of percentage rent. Variable payments based on sales aren't in the
+      lease liability, but they are lease cost in the period the obligation is incurred.
+  - id: C
+    text: $147,060
+    rationale: Correct. $109,760 straight-line + $24,000 variable + $13,300 short-term.
+  - id: D
+    text: $154,900
+    rationale: Recognizes twelve months of rent at $9,800 as if there were no free months. Total fixed
+      payments are 56 months' rent, $548,800, spread evenly over the five years.
+  answer: C
+  explanation: 'Operating lease cost for the fixed payments is recognized straight-line over the lease
+    term (ASC 842-20-25-6): 56 months × $9,800 = $548,800 ÷ 5 = $109,760 a year, free months included.
+    Variable payments based on sales are excluded from the lease liability and recognized as incurred:
+    2% × ($3,400,000 − $2,200,000) = $24,000. The forklift is a short-term lease, recognized straight-line
+    over its term: 7 × $1,900 = $13,300. Total lease cost = $147,060.'
+- stem: On January 1, Year 1, Cubert Garden Co. began a five-year lease of retail space, which it classifies
+    as an operating lease. Rent is $21,000 a month, except that no rent is due for the first three months.
+    Cubert also pays the landlord 4% of its annual sales at the location above $4,400,000; Year 1 sales
+    there were $5,150,000. On April 1, Year 1, Cubert rented a forklift for nine months at $3,100 a month,
+    and it has elected the short-term lease exemption for that class of asset. What total lease cost should
+    Cubert recognize for Year 1?
+  choices:
+  - id: A
+    text: $246,900
+    rationale: 'Uses the $189,000 of rent paid in Year 1. An operating lease''s fixed payments, free months
+      included, are recognized straight-line over the lease term: $1,197,000 ÷ 5 = $239,400 a year.'
+  - id: B
+    text: $297,300
+    rationale: Correct. $239,400 straight-line + $30,000 variable + $27,900 short-term.
+  - id: C
+    text: $309,900
+    rationale: Recognizes twelve months of rent at $21,000 as if there were no free months. Total fixed
+      payments are 57 months' rent, $1,197,000, spread evenly over the five years.
+  - id: D
+    text: $473,300
+    rationale: Takes 4% of all $5,150,000 of sales. Rent is owed only on sales above $4,400,000.
+  answer: B
+  explanation: 'Operating lease cost for the fixed payments is recognized straight-line over the lease
+    term (ASC 842-20-25-6): 57 months × $21,000 = $1,197,000 ÷ 5 = $239,400 a year, free months included.
+    Variable payments based on sales are excluded from the lease liability and recognized as incurred:
+    4% × ($5,150,000 − $4,400,000) = $30,000. The forklift is a short-term lease, recognized straight-line
+    over its term: 9 × $3,100 = $27,900. Total lease cost = $297,300.'
+- stem: On January 1, Year 1, Polzeath Board Co. began a five-year lease of retail space, which it classifies
+    as an operating lease. Rent is $7,600 a month, except that no rent is due for the first six months.
+    Polzeath also pays the landlord 5% of its annual sales at the location above $1,500,000; Year 1 sales
+    there were $1,880,000. On March 1, Year 1, Polzeath rented a forklift for ten months at $1,450 a month,
+    and it has elected the short-term lease exemption for that class of asset. What total lease cost should
+    Polzeath recognize for Year 1?
+  choices:
+  - id: A
+    text: $79,100
+    rationale: 'Uses the $45,600 of rent paid in Year 1. An operating lease''s fixed payments, free months
+      included, are recognized straight-line over the lease term: $410,400 ÷ 5 = $82,080 a year.'
+  - id: B
+    text: $96,580
+    rationale: Leaves out the $19,000 of percentage rent. Variable payments based on sales aren't in the
+      lease liability, but they are lease cost in the period the obligation is incurred.
+  - id: C
+    text: $115,580
+    rationale: Correct. $82,080 straight-line + $19,000 variable + $14,500 short-term.
+  - id: D
+    text: $190,580
+    rationale: Takes 5% of all $1,880,000 of sales. Rent is owed only on sales above $1,500,000.
+  answer: C
+  explanation: 'Operating lease cost for the fixed payments is recognized straight-line over the lease
+    term (ASC 842-20-25-6): 54 months × $7,600 = $410,400 ÷ 5 = $82,080 a year, free months included.
+    Variable payments based on sales are excluded from the lease liability and recognized as incurred:
+    5% × ($1,880,000 − $1,500,000) = $19,000. The forklift is a short-term lease, recognized straight-line
+    over its term: 10 × $1,450 = $14,500. Total lease cost = $115,580.'

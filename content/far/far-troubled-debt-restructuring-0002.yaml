@@ -1,0 +1,50 @@
+id: far-troubled-debt-restructuring-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 470-60-15 (scope: what is and isn''t a troubled debt restructuring for a debtor)'
+  - 'ASC 470-60-55 (concession: decrease in the debtor''s effective borrowing rate)'
+  - ASU 2022-02 (eliminated troubled debt restructuring recognition and measurement for creditors; debtors'
+    guidance in ASC 470-60 unchanged)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Treliske Co. has missed several payments on a bank loan, and its lender has concluded that Treliske
+  can't meet the loan's original terms. ASU 2022-02 removed the troubled debt restructuring guidance for
+  creditors, but debtors still apply ASC 470-60. From Treliske's perspective as the debtor, which of the
+  following would NOT be a troubled debt restructuring?
+choices:
+- id: A
+  text: The lender cuts the rate from 9% to 6% for the rest of the term and forgives the accrued interest
+  rationale: 'Lowering the rate and forgiving interest because the debtor can''t pay lowers the debtor''s
+    effective borrowing rate: the lender has granted a concession, so this is a troubled debt restructuring.'
+- id: B
+  text: The lender accepts land worth less than the loan's carrying amount in full settlement of the loan
+  rationale: Accepting assets worth less than the carrying amount in full settlement is a concession to
+    a debtor in difficulty; Treliske recognizes a gain on restructuring for the shortfall.
+- id: C
+  text: Treliske transfers equipment whose fair value equals the loan's carrying amount, in full settlement
+  rationale: Correct. A debtor that settles a debt by transferring assets whose fair value at least equals
+    the debt's carrying amount has received no concession, so this isn't a troubled debt restructuring
+    even though Treliske is in financial difficulty. Treliske derecognizes the loan and recognizes a gain
+    or loss on the equipment for the difference between its fair value and carrying amount.
+- id: D
+  text: The lender cuts the rate from 10% to 7%, though Treliske's remaining payments still exceed the
+    carrying amount
+  rationale: Whether a gain arises doesn't decide whether the restructuring is troubled. The rate cut
+    is a concession; because the remaining undiscounted payments exceed the carrying amount, Treliske
+    recognizes no gain and accounts for the change prospectively at a new effective rate.
+answer: C
+explanation: For a debtor, a restructuring is troubled when the debtor is experiencing financial difficulties
+  and the creditor grants a concession it wouldn't otherwise consider (ASC 470-60). A concession exists
+  when the debtor's effective borrowing rate on the restructured debt is lower than on the old debt, or
+  when the creditor accepts assets or equity worth less than the debt's carrying amount in settlement.
+  ASC 470-60-15 excludes, among others, a settlement in which the fair value of the assets the debtor
+  transfers at least equals the carrying amount of the debt. Whether the debtor ends up recognizing a
+  gain is a measurement question, answered after the restructuring is found to be troubled. ASU 2022-02
+  eliminated the creditors' troubled debt restructuring guidance (creditors now apply the general loan
+  modification guidance) but left the debtors' guidance in ASC 470-60 in place.

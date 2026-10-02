@@ -1,0 +1,145 @@
+id: far-fair-value-techniques-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Fair value measurements
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 820-10-35-5 and 35-5A (principal market; most advantageous market only when there is no principal
+    market)
+  - ASC 820-10-35-9B and 35-9C (transaction costs not deducted; transport costs deducted when location
+    is a characteristic)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Grampound Civil Co. acquired 24 identical used excavators as part of a group of assets and must
+  measure their fair value under ASC 820 to allocate the purchase price. Grampound can access two markets
+  for excavators like these at the measurement date. In the dealer market, about 1,900 of them change
+  hands each year at $86,000 each; selling costs (commissions) are $4,300 a unit, and transporting them
+  there would cost $1,800 a unit. In the online auction market, about 260 change hands each year at $91,000
+  each; fees are $2,700 a unit, and transporting them there would cost $3,100 a unit. What is the fair
+  value of the 24 excavators?
+choices:
+- id: A
+  text: $1,917,600
+  rationale: Deducts the $4,300 of transaction costs a unit. Transaction costs are used to identify the
+    most advantageous market but aren't deducted from the price; transport costs are.
+- id: B
+  text: $2,020,800
+  rationale: Correct. 24 × ($86,000 − $1,800).
+- id: C
+  text: $2,064,000
+  rationale: Uses the $86,000 price without deducting the $1,800 a unit to transport the excavators to
+    the dealer market. Location is a characteristic of the asset, so transport costs are deducted.
+- id: D
+  text: $2,109,600
+  rationale: Uses the online auction market, where the price net of all costs is highest ($85,200 a unit).
+    That is the most advantageous market, which is used only when there is no principal market. The dealer
+    market, with far more activity, is the principal market.
+answer: B
+explanation: Fair value is measured in the principal market, the market with the greatest volume and level
+  of activity for the asset, when one exists, even if another market would give a better price. The dealer
+  market (1,900 a year) is the principal market. The price there is reduced by transport costs, because
+  location is a characteristic of the asset, but not by transaction costs, which belong to the transaction
+  rather than the asset (ASC 820-10-35-9B and 35-9C). Fair value = 24 × ($86,000 − $1,800) = $2,020,800.
+  The online auction market's higher net price ($85,200 against $79,900) would matter only if there were
+  no principal market.
+variants:
+- stem: Tregony Haulage Co. acquired 15 identical used tractor units as part of a group of assets and
+    must measure their fair value under ASC 820 to allocate the purchase price. Tregony can access two
+    markets for tractor units like these at the measurement date. In the auction market, about 3,400 of
+    them change hands each year at $58,000 each; selling costs (commissions) are $2,900 a unit, and transporting
+    them there would cost $1,600 a unit. In the dealer network, about 420 change hands each year at $63,500
+    each; fees are $1,800 a unit, and transporting them there would cost $2,600 a unit. What is the fair
+    value of the 15 tractor units?
+  choices:
+  - id: A
+    text: $846,000
+    rationale: Correct. 15 × ($58,000 − $1,600).
+  - id: B
+    text: $870,000
+    rationale: Uses the $58,000 price without deducting the $1,600 a unit to transport the tractor units
+      to the auction market. Location is a characteristic of the asset, so transport costs are deducted.
+  - id: C
+    text: $886,500
+    rationale: Uses the dealer network and deducts both its transaction and transport costs. The auction
+      market is the principal market, and transaction costs are not deducted from the price in any case.
+  - id: D
+    text: $913,500
+    rationale: Uses the dealer network, where the price net of all costs is highest ($59,100 a unit).
+      That is the most advantageous market, which is used only when there is no principal market. The
+      auction market, with far more activity, is the principal market.
+  answer: A
+  explanation: Fair value is measured in the principal market, the market with the greatest volume and
+    level of activity for the asset, when one exists, even if another market would give a better price.
+    The auction market (3,400 a year) is the principal market. The price there is reduced by transport
+    costs, because location is a characteristic of the asset, but not by transaction costs, which belong
+    to the transaction rather than the asset (ASC 820-10-35-9B and 35-9C). Fair value = 15 × ($58,000
+    − $1,600) = $846,000. The dealer network's higher net price ($59,100 against $53,500) would matter
+    only if there were no principal market.
+- stem: Veryan Forestry Co. acquired 40 identical used forwarder trailers as part of a group of assets
+    and must measure their fair value under ASC 820 to allocate the purchase price. Veryan can access
+    two markets for forwarder trailers like these at the measurement date. In the dealer market, about
+    1,250 of them change hands each year at $31,000 each; selling costs (commissions) are $1,550 a unit,
+    and transporting them there would cost $700 a unit. In the regional auction, about 180 change hands
+    each year at $33,400 each; fees are $900 a unit, and transporting them there would cost $1,300 a unit.
+    What is the fair value of the 40 forwarder trailers?
+  choices:
+  - id: A
+    text: $1,150,000
+    rationale: Deducts the $1,550 of transaction costs a unit. Transaction costs are used to identify
+      the most advantageous market but aren't deducted from the price; transport costs are.
+  - id: B
+    text: $1,212,000
+    rationale: Correct. 40 × ($31,000 − $700).
+  - id: C
+    text: $1,240,000
+    rationale: Uses the $31,000 price without deducting the $700 a unit to transport the forwarder trailers
+      to the dealer market. Location is a characteristic of the asset, so transport costs are deducted.
+  - id: D
+    text: $1,284,000
+    rationale: Uses the regional auction, where the price net of all costs is highest ($31,200 a unit).
+      That is the most advantageous market, which is used only when there is no principal market. The
+      dealer market, with far more activity, is the principal market.
+  answer: B
+  explanation: Fair value is measured in the principal market, the market with the greatest volume and
+    level of activity for the asset, when one exists, even if another market would give a better price.
+    The dealer market (1,250 a year) is the principal market. The price there is reduced by transport
+    costs, because location is a characteristic of the asset, but not by transaction costs, which belong
+    to the transaction rather than the asset (ASC 820-10-35-9B and 35-9C). Fair value = 40 × ($31,000
+    − $700) = $1,212,000. The regional auction's higher net price ($31,200 against $28,750) would matter
+    only if there were no principal market.
+- stem: Portscatho Plant Hire Co. acquired 12 identical used crawler cranes as part of a group of assets
+    and must measure their fair value under ASC 820 to allocate the purchase price. Portscatho can access
+    two markets for crawler cranes like these at the measurement date. In the broker market, about 640
+    of them change hands each year at $212,000 each; selling costs (commissions) are $10,600 a unit, and
+    transporting them there would cost $5,400 a unit. In the online auction market, about 95 change hands
+    each year at $224,000 each; fees are $6,700 a unit, and transporting them there would cost $8,100
+    a unit. What is the fair value of the 12 crawler cranes?
+  choices:
+  - id: A
+    text: $2,352,000
+    rationale: Deducts the $10,600 of transaction costs a unit. Transaction costs are used to identify
+      the most advantageous market but aren't deducted from the price; transport costs are.
+  - id: B
+    text: $2,479,200
+    rationale: Correct. 12 × ($212,000 − $5,400).
+  - id: C
+    text: $2,510,400
+    rationale: Uses the online auction market and deducts both its transaction and transport costs. The
+      broker market is the principal market, and transaction costs are not deducted from the price in
+      any case.
+  - id: D
+    text: $2,590,800
+    rationale: Uses the online auction market, where the price net of all costs is highest ($209,200 a
+      unit). That is the most advantageous market, which is used only when there is no principal market.
+      The broker market, with far more activity, is the principal market.
+  answer: B
+  explanation: Fair value is measured in the principal market, the market with the greatest volume and
+    level of activity for the asset, when one exists, even if another market would give a better price.
+    The broker market (640 a year) is the principal market. The price there is reduced by transport costs,
+    because location is a characteristic of the asset, but not by transaction costs, which belong to the
+    transaction rather than the asset (ASC 820-10-35-9B and 35-9C). Fair value = 12 × ($212,000 − $5,400)
+    = $2,479,200. The online auction market's higher net price ($209,200 against $196,000) would matter
+    only if there were no principal market.

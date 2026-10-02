@@ -1,0 +1,48 @@
+id: far-fair-value-approaches-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Fair value measurements
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 820-10-35 (valuation techniques: market, cost and income approaches)'
+  - 'ASC 820-10-55 (cost approach: current replacement cost, adjusted for obsolescence)'
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Trevose Co. must measure the fair value of a custom molding press that it obtained in an asset acquisition;
+  no prices exist for identical or similar used presses. Its appraiser estimates what it would cost a
+  market participant buyer to obtain a substitute press of comparable utility, and then deducts amounts
+  for physical deterioration and for functional and economic obsolescence. How should this measurement
+  be described under ASC 820?
+choices:
+- id: A
+  text: It is a cost approach measurement of fair value
+  rationale: Correct. The cost approach reflects the amount that would be required currently to replace
+    the asset's service capacity (current replacement cost). A market participant seller would receive
+    no more than a buyer would pay to obtain a substitute of comparable utility, adjusted for obsolescence.
+- id: B
+  text: It is a market approach measurement, because it estimates a buyer's price
+  rationale: The market approach uses prices and other information from market transactions in identical
+    or comparable assets, and there are none here. Estimating what it would cost a buyer to obtain a substitute
+    asset is the cost approach.
+- id: C
+  text: It is an income approach measurement, as obsolescence lowers future cash flows
+  rationale: The income approach converts future amounts, such as cash flows or earnings, to a single
+    discounted amount. Deducting obsolescence from the cost of a substitute is an adjustment within the
+    cost approach.
+- id: D
+  text: It isn't a fair value measurement, since fair value is an exit price and this is a cost
+  rationale: 'Fair value is an exit price, but ASC 820 permits estimating it by current replacement cost:
+    from a market participant seller''s view, the price received is based on what a buyer would pay for
+    a substitute of comparable utility.'
+answer: A
+explanation: 'ASC 820 recognizes three valuation approaches: the market approach (prices from transactions
+  in identical or comparable assets), the income approach (discounting future amounts) and the cost approach
+  (the amount that would be required currently to replace the asset''s service capacity, often called
+  current replacement cost). The cost approach estimates what a market participant buyer would pay to
+  acquire or construct a substitute asset of comparable utility, adjusted for physical deterioration and
+  functional and economic obsolescence, which is what the appraiser did. It is a way of estimating the
+  exit price, so it is a fair value measurement. Because the inputs are the entity''s estimates rather
+  than observable prices, the measurement would typically fall in Level 3 of the hierarchy.'

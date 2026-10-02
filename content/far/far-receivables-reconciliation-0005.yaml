@@ -1,0 +1,150 @@
+id: far-receivables-reconciliation-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 310-10-45 (receivables from officers and employees reported separately from trade receivables)
+  - Subsidiary ledger and control account reconciliation practice (finance charges; lockbox receipts;
+    misposted payments)
+  notes: Batch 13. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At December 31, Pensilva Wholesale Co.''s accounts receivable subledger totals $986,050, and the
+  general ledger control account shows $950,175. The controller''s review finds: in November, Pensilva
+  advanced $18,000 to its operations manager for relocation costs, repayable through payroll deductions
+  during Year 2, and recorded the advance in the control account and in a subledger account opened in
+  the manager''s name; finance charges of $4,275 on overdue customer accounts were added to the customers''
+  subledger accounts in December, but no general ledger entry was made; customer remittances of $31,600
+  received in Pensilva''s bank lockbox on December 31 were recorded in the general ledger from the bank''s
+  report but not posted to the customers'' accounts until January 2; and a $7,820 payment from Trematon
+  Stores was credited to the account of Millbrook Grocers. What amount should Pensilva report as trade
+  accounts receivable, before any allowance, at December 31?'
+choices:
+- id: A
+  text: $932,175
+  rationale: Leaves out the $4,275 of finance charges billed to customers. They are owed by customers
+    and are in the subledger; the general ledger entry is missing.
+- id: B
+  text: $936,450
+  rationale: Correct. Control account $950,175 − $18,000 + $4,275; subledger $986,050 − $18,000 − $31,600.
+- id: C
+  text: $954,450
+  rationale: Keeps the $18,000 relocation advance in trade receivables. A loan to an employee, repaid
+    through payroll, isn't a receivable from a customer; it is reported separately as another receivable.
+- id: D
+  text: $968,050
+  rationale: Leaves the $31,600 of December 31 lockbox receipts in customer balances. The cash was received
+    at year-end and is in the general ledger; the subledger posting was simply late.
+answer: B
+explanation: 'Work out which record each finding affects. The relocation advance is in both records but
+  isn''t a trade receivable, so it comes out of both: − $18,000. The finance charges are owed by customers
+  and are missing only from the control account: + $4,275. The lockbox receipts reduce customer balances,
+  and only the subledger is missing them: − $31,600 from the subledger. The misposted payment moves an
+  amount between two customer accounts and doesn''t change the subledger total. Control account: $950,175
+  − $18,000 + $4,275 = $936,450. Subledger: $986,050 − $18,000 − $31,600 = $936,450.'
+variants:
+- stem: 'At December 31, Menheniot Wholesale Co.''s accounts receivable subledger totals $749,730, and
+    the general ledger control account shows $721,720. The controller''s review finds: in November, Menheniot
+    advanced $12,500 to its operations manager for relocation costs, repayable through payroll deductions
+    during Year 2, and recorded the advance in the control account and in a subledger account opened in
+    the manager''s name; finance charges of $3,160 on overdue customer accounts were added to the customers''
+    subledger accounts in December, but no general ledger entry was made; customer remittances of $24,850
+    received in Menheniot''s bank lockbox on December 31 were recorded in the general ledger from the
+    bank''s report but not posted to the customers'' accounts until January 2; and a $15,600 payment from
+    Kingsand Market was credited to the account of Cawsand Provisions. What amount should Menheniot report
+    as trade accounts receivable, before any allowance, at December 31?'
+  choices:
+  - id: A
+    text: $696,780
+    rationale: Deducts the $15,600 payment posted to the wrong customer. The payment is in both records,
+      credited to the wrong account in the subledger, so moving it between accounts doesn't change the
+      total.
+  - id: B
+    text: $709,220
+    rationale: Leaves out the $3,160 of finance charges billed to customers. They are owed by customers
+      and are in the subledger; the general ledger entry is missing.
+  - id: C
+    text: $712,380
+    rationale: Correct. Control account $721,720 − $12,500 + $3,160; subledger $749,730 − $12,500 − $24,850.
+  - id: D
+    text: $724,880
+    rationale: Keeps the $12,500 relocation advance in trade receivables. A loan to an employee, repaid
+      through payroll, isn't a receivable from a customer; it is reported separately as another receivable.
+  answer: C
+  explanation: 'Work out which record each finding affects. The relocation advance is in both records
+    but isn''t a trade receivable, so it comes out of both: − $12,500. The finance charges are owed by
+    customers and are missing only from the control account: + $3,160. The lockbox receipts reduce customer
+    balances, and only the subledger is missing them: − $24,850 from the subledger. The misposted payment
+    moves an amount between two customer accounts and doesn''t change the subledger total. Control account:
+    $721,720 − $12,500 + $3,160 = $712,380. Subledger: $749,730 − $12,500 − $24,850 = $712,380.'
+- stem: 'At December 31, Herodsfoot Wholesale Co.''s accounts receivable subledger totals $1,245,900,
+    and the general ledger control account shows $1,201,620. The controller''s review finds: in November,
+    Herodsfoot advanced $22,400 to its operations manager for relocation costs, repayable through payroll
+    deductions during Year 2, and recorded the advance in the control account and in a subledger account
+    opened in the manager''s name; finance charges of $5,380 on overdue customer accounts were added to
+    the customers'' subledger accounts in December, but no general ledger entry was made; customer remittances
+    of $38,900 received in Herodsfoot''s bank lockbox on December 31 were recorded in the general ledger
+    from the bank''s report but not posted to the customers'' accounts until January 2; and a $9,270 payment
+    from Duloe Farm Shop was credited to the account of Lanreath Stores. What amount should Herodsfoot
+    report as trade accounts receivable, before any allowance, at December 31?'
+  choices:
+  - id: A
+    text: $1,184,600
+    rationale: Correct. Control account $1,201,620 − $22,400 + $5,380; subledger $1,245,900 − $22,400
+      − $38,900.
+  - id: B
+    text: $1,201,620
+    rationale: Accepts the control account's $1,201,620, which includes the relocation advance and lacks
+      the finance charges.
+  - id: C
+    text: $1,223,500
+    rationale: Leaves the $38,900 of December 31 lockbox receipts in customer balances. The cash was received
+      at year-end and is in the general ledger; the subledger posting was simply late.
+  - id: D
+    text: $1,245,900
+    rationale: Accepts the subledger's $1,245,900, which includes the relocation advance and the receipts
+      received in the lockbox at year-end.
+  answer: A
+  explanation: 'Work out which record each finding affects. The relocation advance is in both records
+    but isn''t a trade receivable, so it comes out of both: − $22,400. The finance charges are owed by
+    customers and are missing only from the control account: + $5,380. The lockbox receipts reduce customer
+    balances, and only the subledger is missing them: − $38,900 from the subledger. The misposted payment
+    moves an amount between two customer accounts and doesn''t change the subledger total. Control account:
+    $1,201,620 − $22,400 + $5,380 = $1,184,600. Subledger: $1,245,900 − $22,400 − $38,900 = $1,184,600.'
+- stem: 'At December 31, Pelynt Wholesale Co.''s accounts receivable subledger totals $577,670, and the
+    general ledger control account shows $555,850. The controller''s review finds: in November, Pelynt
+    advanced $9,600 to its operations manager for relocation costs, repayable through payroll deductions
+    during Year 2, and recorded the advance in the control account and in a subledger account opened in
+    the manager''s name; finance charges of $2,470 on overdue customer accounts were added to the customers''
+    subledger accounts in December, but no general ledger entry was made; customer remittances of $19,350
+    received in Pelynt''s bank lockbox on December 31 were recorded in the general ledger from the bank''s
+    report but not posted to the customers'' accounts until January 2; and an $8,800 payment from Lansallos
+    Store was credited to the account of Polruan Chandlery. What amount should Pelynt report as trade
+    accounts receivable, before any allowance, at December 31?'
+  choices:
+  - id: A
+    text: $539,920
+    rationale: Deducts the $8,800 payment posted to the wrong customer. The payment is in both records,
+      credited to the wrong account in the subledger, so moving it between accounts doesn't change the
+      total.
+  - id: B
+    text: $548,720
+    rationale: Correct. Control account $555,850 − $9,600 + $2,470; subledger $577,670 − $9,600 − $19,350.
+  - id: C
+    text: $558,320
+    rationale: Keeps the $9,600 relocation advance in trade receivables. A loan to an employee, repaid
+      through payroll, isn't a receivable from a customer; it is reported separately as another receivable.
+  - id: D
+    text: $577,670
+    rationale: Accepts the subledger's $577,670, which includes the relocation advance and the receipts
+      received in the lockbox at year-end.
+  answer: B
+  explanation: 'Work out which record each finding affects. The relocation advance is in both records
+    but isn''t a trade receivable, so it comes out of both: − $9,600. The finance charges are owed by
+    customers and are missing only from the control account: + $2,470. The lockbox receipts reduce customer
+    balances, and only the subledger is missing them: − $19,350 from the subledger. The misposted payment
+    moves an amount between two customer accounts and doesn''t change the subledger total. Control account:
+    $555,850 − $9,600 + $2,470 = $548,720. Subledger: $577,670 − $9,600 − $19,350 = $548,720.'
