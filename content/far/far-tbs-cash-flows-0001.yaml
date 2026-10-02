@@ -1,0 +1,189 @@
+id: far-tbs-cash-flows-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of cash flows
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 230-10 (classification of cash receipts and payments; indirect method; noncash investing and financing
+    activities; disclosure of interest and income taxes paid)
+  notes: FAR simulations batch 02. Written from scratch; every number computed in code.
+title: Year 2 statement of cash flows
+scenario: Brennick Corp. prepares its statement of cash flows using the indirect method. Use the comparative
+  balance sheets, the Year 2 income statement and the controller's notes in the exhibits. Brennick has
+  no cash equivalents and no deferred taxes. Enter every amount in whole dollars, and enter a net cash
+  outflow as a negative number.
+exhibits:
+- title: 'Exhibit 1: Comparative balance sheets'
+  body: '|  | December 31, Year 2 | December 31, Year 1 |
+
+    |---|---|---|
+
+    | Cash | 251,000 | 84,000 |
+
+    | Accounts receivable, net | 248,000 | 212,000 |
+
+    | Inventory | 281,000 | 305,000 |
+
+    | Prepaid expenses | 22,000 | 18,000 |
+
+    | Land | 450,000 | 450,000 |
+
+    | Equipment | 1,080,000 | 900,000 |
+
+    | Accumulated depreciation | (302,000) | (310,000) |
+
+    | **Total assets** | 2,030,000 | 1,659,000 |
+
+    | Accounts payable | 151,000 | 164,000 |
+
+    | Interest payable | 9,000 | 6,000 |
+
+    | Income taxes payable | 33,000 | 27,000 |
+
+    | Dividends payable | 25,000 | 20,000 |
+
+    | Note payable — equipment | 100,000 | 0 |
+
+    | Bonds payable, net of discount | 473,000 | 470,000 |
+
+    | Common stock, $1 par | 230,000 | 200,000 |
+
+    | Additional paid-in capital | 670,000 | 260,000 |
+
+    | Retained earnings | 399,000 | 512,000 |
+
+    | Treasury stock, at cost | (60,000) | 0 |
+
+    | **Total liabilities and equity** | 2,030,000 | 1,659,000 |'
+- title: 'Exhibit 2: Income statement for Year 2'
+  body: '|  | Year 2 |
+
+    |---|---|
+
+    | Sales | 2,450,000 |
+
+    | Cost of goods sold | (1,470,000) |
+
+    | Depreciation expense | (96,000) |
+
+    | Other operating expenses | (512,000) |
+
+    | Interest expense | (41,000) |
+
+    | Gain on sale of equipment | 14,000 |
+
+    | Income tax expense | (88,000) |
+
+    | **Net income** | 257,000 |'
+- title: 'Exhibit 3: Controller''s notes on Year 2 transactions'
+  body: '| Date | Note |
+
+    |---|---|
+
+    | February 10 | Sold equipment that had cost $150,000 and had accumulated depreciation of $104,000,
+    for $60,000 cash. |
+
+    | March 1 | Acquired a packaging machine by signing a $120,000 three-year note payable to the seller.
+    No cash changed hands. A $20,000 principal payment on the note was made on December 31. |
+
+    | May 15 | Declared and distributed a 10% stock dividend on the 200,000 shares then outstanding, when
+    the market price was $14 per share. |
+
+    | June 30 | Issued 10,000 shares of common stock for cash at $16 per share. |
+
+    | August 12 | Bought equipment for $210,000 cash. |
+
+    | October 5 | Repurchased 4,000 shares of its own common stock at $15 per share, to be held as treasury
+    stock. |
+
+    | Year 2 | Declared cash dividends of $90,000 during the year. Interest expense includes $3,000 of
+    bond discount amortization. No bonds were issued or retired. |'
+tasks:
+- id: t1
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is Brennick's net cash provided by (used in) operating activities for Year 2?
+  answer: 32200000
+  explanation: Net income $257,000 + depreciation $96,000 − gain on sale $14,000 + bond discount amortization
+    $3,000 − increase in receivables $36,000 + decrease in inventory $24,000 − increase in prepaid expenses
+    $4,000 − decrease in accounts payable $13,000 + increase in interest payable $3,000 + increase in
+    income taxes payable $6,000 = $322,000. The discount amortization is interest expense that used no
+    cash (leaving it out gives $319,000). The dividends payable change belongs with financing, and the
+    stock dividend and the note-financed machine involve no cash.
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is Brennick's net cash provided by (used in) investing activities for Year 2?
+  answer: -15000000
+  explanation: 'Proceeds from the equipment sale $60,000 − cash purchase of equipment $210,000 = ($150,000).
+    The $120,000 machine was acquired with a note, so it is a noncash investing and financing activity,
+    disclosed rather than reported as an outflow. The equipment account reconciles: $900,000 − $150,000
+    + $120,000 + $210,000 = $1,080,000.'
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is Brennick's net cash provided by (used in) financing activities for Year 2?
+  answer: -500000
+  explanation: Stock issued $160,000 − treasury stock $60,000 − dividends paid $85,000 − note principal
+    $20,000 = ($5,000). Dividends paid = $20,000 opening payable + $90,000 declared − $25,000 closing
+    payable = $85,000. The stock dividend moved $280,000 from retained earnings to paid-in capital and
+    used no cash.
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount of interest paid should Brennick disclose for Year 2?
+  answer: 3500000
+  explanation: Interest expense $41,000 − discount amortization $3,000 − increase in interest payable
+    $3,000 = $35,000.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount of income taxes paid should Brennick disclose for Year 2?
+  answer: 8200000
+  explanation: Income tax expense $88,000 − increase in income taxes payable $6,000 = $82,000. Brennick
+    has no deferred taxes.
+- id: t6
+  type: select
+  points: 2
+  prompt: Indicate how Brennick should report each Year 2 event in its statement of cash flows or the
+    related disclosures.
+  options:
+  - Operating activities
+  - Investing activities
+  - Financing activities
+  - Noncash investing and financing disclosure
+  - Not reported
+  rows:
+  - id: r1
+    label: Proceeds from the February 10 equipment sale
+    answer: Investing activities
+  - id: r2
+    label: Acquisition of the packaging machine on March 1
+    answer: Noncash investing and financing disclosure
+  - id: r3
+    label: December 31 payment on the equipment note
+    answer: Financing activities
+  - id: r4
+    label: Repurchase of shares on October 5
+    answer: Financing activities
+  - id: r5
+    label: Interest paid on the bonds
+    answer: Operating activities
+  explanation: The sale proceeds are investing. The machine bought with a note involves no cash at acquisition,
+    so it is disclosed as a noncash investing and financing activity, and the later principal payment
+    on the note is a financing outflow. Buying treasury stock is a financing outflow. Under U.S. GAAP,
+    interest paid is an operating cash flow, even on debt whose principal is a financing item.

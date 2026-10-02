@@ -1,0 +1,149 @@
+id: far-tbs-income-statement-review-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Income statement
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 205-20 (discontinued operations: strategic shift; presentation of results and the disposal loss,
+    net of tax)'
+  - ASC 360-10 (gains and losses on disposal of long-lived assets that are not discontinued operations)
+  - ASC 606-10 (timing of revenue recognition)
+  - 'ASC 320-10 (available-for-sale debt securities: unrealized holding gains and losses in other comprehensive
+    income)'
+  notes: FAR simulations batch 02. Written from scratch; every number computed in code.
+title: Reviewing a draft income statement
+scenario: Varga Co. distributes building products. Its accounting clerk drafted the Year 2 multi-step
+  income statement in Exhibit 1, and the controller's review notes are in Exhibit 2. Varga's income tax
+  rate is 25% on every item, including items of other comprehensive income, and the draft's tax amounts
+  are 25% of the pretax amounts shown. Enter every amount in whole dollars, and enter a loss as a negative
+  number.
+exhibits:
+- title: 'Exhibit 1: Draft income statement for Year 2'
+  body: '|  | Amount |
+
+    |---|---|
+
+    | Net sales | 2,940,000 |
+
+    | Cost of goods sold | (1,764,000) |
+
+    | **Gross profit** | 1,176,000 |
+
+    | Selling expenses | (310,000) |
+
+    | General and administrative expenses | (402,000) |
+
+    | **Income from operations** | 464,000 |
+
+    | Interest income | 9,000 |
+
+    | Gain on investments | 22,000 |
+
+    | Loss on sale of retail division | (90,000) |
+
+    | **Income before income taxes** | 405,000 |
+
+    | Income tax expense | (101,250) |
+
+    | **Income from continuing operations** | 303,750 |
+
+    | Discontinued operations: loss on sale of warehouse, net of tax | (25,500) |
+
+    | **Net income** | 278,250 |'
+- title: 'Exhibit 2: Controller''s review notes'
+  body: '| Ref | Note |
+
+    |---|---|
+
+    | 1 | Varga had two operating segments, wholesale and retail. On September 30, Year 2, it sold the
+    entire retail division (its 14 stores, their staff and their inventory) to a competitor, and it will
+    now sell only to contractors through its wholesale business. The draft includes the retail division''s
+    January 1 – September 30 results in its operating lines: sales $620,000, cost of goods sold $410,000,
+    selling expenses $95,000, general and administrative expenses $55,000. The $90,000 loss on the sale
+    is correctly measured. |
+
+    | 2 | On November 20, Year 2, Varga sold one of its six wholesale warehouses for a loss of $34,000
+    and moved that warehouse''s stock to the other five. The amount of the loss is correct. |
+
+    | 3 | Invoice 7742 for $40,000, dated December 30, Year 2, was recorded in net sales. The goods were
+    shipped on January 3, Year 3, under FOB shipping point terms, and were included in Varga''s December
+    31 count, which is correctly reflected in cost of goods sold. |
+
+    | 4 | General and administrative expenses include $48,000 of interest on Varga''s bank loan and a
+    $36,000 premium paid on October 1, Year 2, for a one-year property insurance policy. |
+
+    | 5 | "Gain on investments" is the increase in fair value during Year 2 of debt securities that Varga
+    classifies as available for sale. Varga sold none of them. |
+
+    | 6 | Interest income is from the same debt securities and is correct. Varga''s sales returns and
+    allowances of $26,000 were correctly deducted in arriving at net sales. |'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is Varga's correct gross profit for Year 2?
+  answer: 92600000
+  explanation: Net sales $2,940,000 − $620,000 retail division − $40,000 January shipment = $2,280,000;
+    cost of goods sold $1,764,000 − $410,000 retail = $1,354,000; gross profit $926,000. The retail division
+    was a component whose sale is a strategic shift (Varga left the retail business entirely), so its
+    results move to discontinued operations. The January 3 shipment is Year 3 revenue under FOB shipping
+    point terms, and its cost already sits in ending inventory.
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is Varga's correct income from operations for Year 2?
+  answer: 40500000
+  explanation: Gross profit $926,000 − selling $310,000 − $95,000 = $215,000 − general and administrative
+    $402,000 − $55,000 retail − $48,000 interest (a nonoperating expense) − $27,000 of insurance for January–September,
+    Year 3, which is a prepaid asset = $272,000 − $34,000 loss on the warehouse = $405,000. Selling one
+    of six warehouses is not a strategic shift, so the loss stays in continuing operations, and when income
+    from operations is presented it includes losses on disposals of long-lived assets (leaving the loss
+    out of operations gives $439,000).
+- id: t3
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is Varga's correct income from continuing operations (after income taxes) for Year 2?
+  answer: 27450000
+  explanation: Income from operations $405,000 + interest income $9,000 − interest expense $48,000 = $366,000
+    before tax; − 25% tax $91,500 = $274,500. The $22,000 fair value increase on available-for-sale debt
+    securities goes to other comprehensive income, not net income.
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount should Varga report for discontinued operations, net of tax, for Year 2?
+  answer: -2250000
+  explanation: Retail division results $620,000 − $410,000 − $95,000 − $55,000 = $60,000, less the $90,000
+    loss on the sale = ($30,000) before tax; net of the 25% tax benefit, ($22,500). The warehouse loss
+    is not a discontinued operation.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is Varga's correct net income for Year 2?
+  answer: 25200000
+  explanation: 'Income from continuing operations $274,500 + discontinued operations ($22,500) = $252,000.
+    Check against the draft''s $278,250: only three errors change net income, the $40,000 cutoff error
+    and the $22,000 OCI item (both overstating it) and the $27,000 of prepaid insurance (understating
+    it), a net $35,000 before tax, $26,250 after tax.'
+- id: t6
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What amount of other comprehensive income, net of tax, should Varga report for Year 2?
+  answer: 1650000
+  explanation: The $22,000 unrealized holding gain on available-for-sale debt securities, less 25% tax
+    of $5,500 = $16,500.

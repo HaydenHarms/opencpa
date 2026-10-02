@@ -1,0 +1,159 @@
+id: far-tbs-balance-sheet-review-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Balance sheet
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 210-10 (current assets and current liabilities)
+  - ASC 305-10 (cash and cash equivalents)
+  - ASC 505-30 (treasury stock)
+  - ASC 330-10 (inventory)
+  notes: FAR simulations batch 02. Written from scratch; every number computed in code.
+title: Reviewing a draft balance sheet
+scenario: Quillon Co.'s bookkeeper has prepared the draft classified balance sheet in Exhibit 1. Quillon
+  has closed its Year 2 books, and the draft reflects every entry recorded. You have pulled the supporting
+  detail in Exhibits 2 and 3. Quillon uses a periodic inventory system and a December 31 count. Quillon's
+  policy treats investments with original maturities of three months or less as cash equivalents. Ignore
+  income taxes, and enter every amount in whole dollars.
+exhibits:
+- title: 'Exhibit 1: Draft classified balance sheet, December 31, Year 2'
+  body: '|  | Amount |
+
+    |---|---|
+
+    | Cash and cash equivalents | 186,000 |
+
+    | Accounts receivable, net | 318,000 |
+
+    | Inventory | 412,000 |
+
+    | Prepaid expenses | 24,000 |
+
+    | Bond sinking fund | 75,000 |
+
+    | Treasury stock | 45,000 |
+
+    | **Total current assets** | 1,060,000 |
+
+    | Property, plant and equipment, net | 1,240,000 |
+
+    | **Total assets** | 2,300,000 |
+
+    | Accounts payable | 205,000 |
+
+    | Accrued liabilities | 38,000 |
+
+    | **Total current liabilities** | 243,000 |
+
+    | Term loan payable | 400,000 |
+
+    | Bonds payable, due Year 9 | 500,000 |
+
+    | **Total noncurrent liabilities** | 900,000 |
+
+    | Common stock, $5 par, 64,000 shares issued | 320,000 |
+
+    | Additional paid-in capital | 410,000 |
+
+    | Retained earnings | 427,000 |
+
+    | **Total stockholders'' equity** | 1,157,000 |
+
+    | **Total liabilities and stockholders'' equity** | 2,300,000 |'
+- title: 'Exhibit 2: Detail behind selected balances'
+  body: '| Balance | Detail |
+
+    |---|---|
+
+    | Cash and cash equivalents | Checking account $92,000; petty cash $1,000; U.S. Treasury bill bought
+    November 20, Year 2, maturing January 31, Year 3, $40,000; bank certificate of deposit bought October
+    1, Year 2, maturing March 31, Year 3, $53,000. |
+
+    | Accounts receivable, net | Aged trial balance: customer accounts with debit balances $335,000; two
+    customers who prepaid orders not yet shipped have credit balances totaling $7,000; allowance for credit
+    losses $10,000, per the credit manager''s estimate. The draft nets all three. |
+
+    | Inventory | Count at December 31: $412,000, including goods costing $36,000 that Sedley Co. shipped
+    to Quillon on consignment; Quillon sells them for Sedley on commission. Goods bought from Ames Supply,
+    FOB shipping point, were shipped December 29, Year 2, and arrived January 4, Year 3; Quillon recorded
+    the $18,000 invoice in purchases and accounts payable on December 29, but the goods were not in the
+    count. |
+
+    | Bond sinking fund | Cash and securities held by a trustee, to be used only to retire the bonds due
+    in Year 9. |
+
+    | Term loan payable | Five-year bank loan taken out on July 1, Year 2; the $400,000 balance is repaid
+    in equal installments of $80,000 each June 30. Quillon is in compliance with its covenants. |
+
+    | Treasury stock | 4,000 shares of Quillon''s own common stock bought back in August, Year 2, at cost;
+    market value at December 31 is $49,000. |'
+- title: 'Exhibit 3: Board minutes, December 18, Year 2 (extract)'
+  body: '| Item | Resolution |
+
+    |---|---|
+
+    | 4 | Declared a cash dividend of $0.50 per share on common stock outstanding, payable January 15,
+    Year 3, to holders of record on January 5, Year 3. |
+
+    | 5 | Approved a capital budget of $300,000 for Year 3 equipment purchases. |'
+tasks:
+- id: t1
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the correct amount of cash and cash equivalents at December 31, Year 2?
+  answer: 13300000
+  explanation: Checking $92,000 + petty cash $1,000 + Treasury bill $40,000 = $133,000. The Treasury bill
+    had an original maturity of about two and a half months, so it is a cash equivalent. The certificate
+    of deposit had a six-month original maturity; it is a short-term investment, still a current asset,
+    even though it matures within three months of year end.
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is the correct total of current assets at December 31, Year 2?
+  answer: 92900000
+  explanation: Cash and cash equivalents $133,000 + certificate of deposit $53,000 + receivables $335,000
+    − $10,000 = $325,000 (customer credit balances are liabilities, not reductions of receivables) + inventory
+    $412,000 − $36,000 consigned goods Quillon doesn't own + $18,000 goods in transit Quillon owned at
+    year end = $394,000 + prepaid expenses $24,000 = $929,000. The sinking fund is restricted to retiring
+    long-term debt, so it is noncurrent, and treasury stock is a reduction of equity, not an asset.
+- id: t3
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is the correct total of current liabilities at December 31, Year 2?
+  answer: 36000000
+  explanation: Accounts payable $205,000 + accrued liabilities $38,000 + customer credit balances $7,000
+    + dividends payable $30,000 (60,000 outstanding shares × $0.50; the dividend became a liability when
+    declared on December 18, and treasury shares receive none) + the term loan installment due June 30,
+    Year 3, $80,000 = $360,000. A dividend on all 64,000 issued shares would give $32,000.
+- id: t4
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is the correct retained earnings balance at December 31, Year 2?
+  answer: 37900000
+  explanation: Draft $427,000 − $30,000 dividend declared but not recorded − $36,000 consigned goods counted
+    in ending inventory (which understated cost of goods sold) + $18,000 purchased goods left out of the
+    count although the purchase was recorded (which overstated cost of goods sold) = $379,000. The reclassifications
+    (certificate of deposit, credit balances, sinking fund, term loan installment) and moving treasury
+    stock out of assets don't change retained earnings.
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What is the correct total stockholders' equity at December 31, Year 2?
+  answer: 106400000
+  explanation: 'Common stock $320,000 + additional paid-in capital $410,000 + retained earnings $379,000
+    − treasury stock at cost $45,000 = $1,064,000. Treasury stock is reported at cost; its $49,000 market
+    value is irrelevant. Check: corrected total assets $2,244,000 = liabilities $1,180,000 + equity $1,064,000.'

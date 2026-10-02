@@ -1,0 +1,104 @@
+id: far-tbs-eps-0001
+type: tbs
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Public Company Reporting Topics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 260-10 (basic and diluted EPS: weighted-average shares, stock dividends, treasury stock method,
+    if-converted method, antidilution, cumulative preferred dividends)'
+  notes: FAR simulations batch 02. Written from scratch; every number computed in code.
+title: Year 2 earnings per share
+scenario: Corwin Corp., a public company, reports net income of $1,480,000 for Year 2, its calendar year.
+  Its income tax rate is 21%. Use the share records and the potential common shares in the exhibits. Round
+  each earnings per share amount to the nearest cent (enter, for example, 1.23), and enter share counts
+  as whole numbers.
+exhibits:
+- title: 'Exhibit 1: Share records for Year 2'
+  body: '| Date | Event |
+
+    |---|---|
+
+    | January 1 | 400,000 common shares outstanding |
+
+    | April 1 | Issued 60,000 common shares for cash |
+
+    | July 1 | Distributed a 10% stock dividend on common stock |
+
+    | October 1 | Bought back 24,000 common shares, held as treasury stock |
+
+    | December 15 | Declared and paid a cash dividend of $0.50 per common share |
+
+    | All year | 20,000 shares of 6% cumulative, nonconvertible preferred stock, $100 par, outstanding.
+    The board did not declare a preferred dividend in Year 2. |'
+- title: 'Exhibit 2: Potential common shares and market data'
+  body: '| Item | Detail |
+
+    |---|---|
+
+    | Convertible bonds | $2,000,000 face, 5% interest paid annually, issued at par in Year 0. Each $1,000
+    bond converts into 25 common shares. None were converted in Year 2. |
+
+    | Options, Grant A | 60,000 options, exercise price $30, outstanding all year |
+
+    | Options, Grant B | 20,000 options, exercise price $45, outstanding all year |
+
+    | Market price of common stock | Average for Year 2, $40; December 31, Year 2, $44 |
+
+    | Note | Option counts, exercise prices and the conversion ratio are stated after the adjustment for
+    the July 1 stock dividend. |'
+tasks:
+- id: t1
+  type: numeric
+  points: 2
+  unit: units
+  tolerance: 0
+  prompt: What is Corwin's weighted-average number of common shares outstanding for basic EPS for Year
+    2?
+  answer: 483500
+  explanation: 'The stock dividend is applied retroactively to the shares outstanding before it: 400,000
+    × 1.10 × 12/12 = 440,000; 60,000 × 1.10 × 9/12 = 49,500; treasury shares 24,000 × 3/12 = 6,000 subtracted.
+    Total 483,500. Ignoring the stock dividend gives 439,000.'
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What income is available to common shareholders for basic EPS for Year 2?
+  answer: 136000000
+  explanation: $1,480,000 − $120,000 cumulative preferred dividends (20,000 × $100 × 6%) = $1,360,000.
+    Cumulative preferred dividends are deducted for the year whether or not declared. The common dividend
+    doesn't affect EPS.
+- id: t3
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 0
+  prompt: What is Corwin's basic EPS for Year 2?
+  answer: 281
+  explanation: $1,360,000 ÷ 483,500 = 2.81.
+- id: t4
+  type: numeric
+  points: 1
+  unit: units
+  tolerance: 0
+  prompt: How many incremental shares do Grant A's options add to the denominator of diluted EPS?
+  answer: 15000
+  explanation: 'Treasury stock method at the average market price: the assumed proceeds of 60,000 × $30
+    = $1,800,000 would buy back $1,800,000 ÷ $40 = 45,000 shares, so 60,000 − 45,000 = 15,000 incremental
+    shares. Using the year-end price would give about 19,091.'
+- id: t5
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 0
+  prompt: What is Corwin's diluted EPS for Year 2?
+  answer: 262
+  explanation: Grant A is dilutive (15,000 shares). Grant B's $45 exercise price is above the $40 average
+    market price, so it is antidilutive and excluded. The bonds add $79,000 of after-tax interest ($2,000,000
+    × 5% × (1 − 21%)) and 50,000 shares, 1.58 per incremental share, below the 2.73 EPS after the options,
+    so they are dilutive. ($1,360,000 + $79,000) ÷ (483,500 + 15,000 + 50,000) = 2.62. Adding back the
+    interest before tax would give 2.66.
