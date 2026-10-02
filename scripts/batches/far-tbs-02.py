@@ -428,7 +428,7 @@ SIM4 = tbs(
         num("t1", "What is Varga's correct gross profit for Year 2?", c_gp,
             f"Net sales {d(DR['sales'])} − {d(SEG['sales'])} retail division − {d(CUTOFF)} January shipment = {d(c_sales)}; cost of goods sold {d(DR['cogs'])} − {d(SEG['cogs'])} retail + {d(FREIGHT_IN)} freight-in = {d(c_cogs)}; gross profit {d(c_gp)}. The retail division was a component whose sale is a strategic shift (Varga left the retail business entirely), so its results move to discontinued operations. The January 3 shipment is Year 3 revenue under FOB shipping point terms, and its cost already sits in ending inventory. Freight on purchases is a cost of the inventory, and the goods were sold, so it belongs in cost of goods sold."),
         num("t2", "What is Varga's correct income from operations for Year 2?", c_oi,
-            f"Gross profit {d(c_gp)} − selling {d(DR['selling'])} − {d(SEG['selling'])} retail − {d(FREIGHT_IN)} freight-in = {d(c_selling)} − general and administrative {d(DR['ga'])} − {d(SEG['ga'])} retail − {d(ins_prepaid)} of insurance for January–September, Year 3, which is a prepaid asset = {d(c_ga)} − {d(WH_LOSS)} loss on the warehouse = {d(c_oi)}. Selling one of six warehouses is not a strategic shift, so the loss stays in continuing operations, and ASC 360-10-45-5 requires a subtotal such as income from operations to include it (leaving it out of operations gives {d(oi_with_wh_outside)}).",
+            f"Selling expenses {d(DR['selling'])} − {d(SEG['selling'])} retail − {d(FREIGHT_IN)} freight-in = {d(c_selling)}. General and administrative expenses {d(DR['ga'])} − {d(SEG['ga'])} retail − {d(ins_prepaid)} of insurance for January–September, Year 3, which is a prepaid asset = {d(c_ga)}. Income from operations = gross profit {d(c_gp)} − {d(c_selling)} − {d(c_ga)} − {d(WH_LOSS)} loss on the warehouse = {d(c_oi)}. Selling one of six warehouses is not a strategic shift, so the loss stays in continuing operations, and ASC 360-10-45-5 requires a subtotal such as income from operations to include it (leaving it out of operations gives {d(oi_with_wh_outside)}).",
             points=2),
         num("t3", "What is Varga's correct income from continuing operations (after income taxes) for Year 2?", c_cont,
             f"Income from operations {d(c_oi)} + interest income {d(DR['int_inc'])} = {d(c_pretax)} before tax; − 25% tax {d(c_tax)} = {d(c_cont)}. The {d(DR['afs'])} fair value increase on available-for-sale debt securities goes to other comprehensive income, not net income.",
@@ -563,7 +563,7 @@ SIM6 = tbs(
 | Item | Detail |
 |---|---|
 | Convertible bonds | {d(BONDS6)} face, {int(COUPON * 100)}% interest paid each December 31, issued at par in Year 0. Bonds converted during the year are paid interest accrued to the conversion date. Each $1,000 bond converts into {CONV} common shares. |
-| Stock options | {OPT:,} options with an exercise price of ${EX}, granted July 1, Year 2; none exercised or forfeited |
+| Stock options | Options to buy {OPT:,} common shares at ${EX} per share, granted July 1, Year 2; none exercised or forfeited |
 | Market price of common stock | Average for July–December, Year 2, ${AVG_PERIOD}; December 31, Year 2, ${YE} |
 | Note | Every share count, price and conversion ratio in Exhibits 1 and 2 is stated before the 3-for-2 split. |
 """)],

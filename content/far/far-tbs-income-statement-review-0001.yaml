@@ -106,12 +106,12 @@ tasks:
   tolerance: 100
   prompt: What is Varga's correct income from operations for Year 2?
   answer: 35700000
-  explanation: Gross profit $896,000 − selling $310,000 − $95,000 retail − $30,000 freight-in = $185,000
-    − general and administrative $402,000 − $55,000 retail − $27,000 of insurance for January–September,
-    Year 3, which is a prepaid asset = $320,000 − $34,000 loss on the warehouse = $357,000. Selling one
-    of six warehouses is not a strategic shift, so the loss stays in continuing operations, and ASC 360-10-45-5
-    requires a subtotal such as income from operations to include it (leaving it out of operations gives
-    $391,000).
+  explanation: Selling expenses $310,000 − $95,000 retail − $30,000 freight-in = $185,000. General and
+    administrative expenses $402,000 − $55,000 retail − $27,000 of insurance for January–September, Year
+    3, which is a prepaid asset = $320,000. Income from operations = gross profit $896,000 − $185,000
+    − $320,000 − $34,000 loss on the warehouse = $357,000. Selling one of six warehouses is not a strategic
+    shift, so the loss stays in continuing operations, and ASC 360-10-45-5 requires a subtotal such as
+    income from operations to include it (leaving it out of operations gives $391,000).
 - id: t3
   type: numeric
   points: 2

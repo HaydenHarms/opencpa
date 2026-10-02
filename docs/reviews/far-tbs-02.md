@@ -44,6 +44,8 @@ Suggestions also applied: neutral wording on consolidation tasks 2, 4 and 5 ("Wh
 | --- | --- | --- | --- |
 | Revision 1 | 80.3% (cash flows 84, consolidation 83, balance sheet 81, income statement 79, NFP 79, EPS 76) | 5 minor, 1 major | Failed: EPS was a major revision. All keys matched, with no second defensible answers, and every exhibit footed. |
 
+| Revision 2 | **85.0%** (cash flows 86, consolidation 85, balance sheet 86, income statement 81, NFP 86, EPS 86) | 5 exam-ready, 1 minor | **Passed.** All 34 keys matched, with no second defensible answers and no MCQ template reuse. |
+
 Revision 1 went to `main` at the owner's request before the gate fixes. Revision 2 applies them:
 
 | Simulation | Finding | Fix |
@@ -62,3 +64,15 @@ Revision 1 went to `main` at the owner's request before the gate fixes. Revision
 - **Income statement, task 2:** the verifier asked that the warehouse loss's placement be pinned. The key stays $357,000, because ASC 360-10-45-5 requires a disposal loss that is not a discontinued operation to be included in income from operations when that subtotal is presented. Textbook layouts that put it under "other gains and losses" are not GAAP, so the scenario doesn't state the placement; that is the judgment the task tests.
 
 The old ids `far-tbs-eps-0001` and `far-tbs-nfp-activities-0001` are retired and must not be reused.
+
+**After the revision 2 gate:** the one required fix is applied. Income statement task 2's explanation chained subtotals so that its "=" steps weren't literally true; it now computes selling, general and administrative, and income from operations separately. Also applied: the EPS exhibit reads "options to buy 40,000 common shares at $24 per share". The gate's two lessons are now in the Simulations section of the quality bar in `docs/content-pipeline.md`: explanations chain true arithmetic, and a total that exists only under one treatment can be a giveaway. A third rule, not to echo an MCQ's event set, comes from the revision 1 gate. No key changed.
+
+Optional suggestions left for a later pass:
+- Income statement task 6 (total comprehensive income) still hints that an OCI item exists; a second fair-value item whose gain stays in net income would fix it.
+- Recast the Varga notes as source documents.
+- Use the cash flow select's unused "Not reported" option.
+- Spread the balance sheet's dependence on the unrecorded dividend (tasks 3–5).
+
+## Status
+
+FAR now has **9 simulations**: Area I 6, Area II 1, Area III 2, with 4 tagged Analysis. Next per `docs/plans/far-simulations.md`: far-tbs-03 (Area II) and far-tbs-04 (Area III). The gate notes the bank is light on Area III.

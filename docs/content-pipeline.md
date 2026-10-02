@@ -40,6 +40,9 @@ These are hard requirements:
 - **Scope.** Aim for 6–10 points. A simulation must be harder than any MCQ on the same topic, and must not reuse an MCQ's template.
 - **Precision.** Say how to round. Scope every "balance" question (the checking account, or cash to report?). State the entity type wherever private companies have an election.
 - **Journal entries.** Keys have one line per account; the grader nets each account first. Where GAAP allows a gross or a net presentation, the prompt fixes which accounts to use.
+- **Explanations chain true arithmetic.** Every "=" in an explanation must hold literally; compute each subtotal separately rather than threading one long chain (far-tbs-02 gate).
+- **A total can be a giveaway.** Asking for an amount that exists only under one treatment (other comprehensive income, a noncash disclosure) tells the candidate that such an item exists, unless the exhibits offer more than one candidate (far-tbs-02 gate).
+- **Don't echo an MCQ's event set.** Check the MCQs on the same blueprint task before drafting: a simulation that strings together the same events (dates, instruments, restrictions) as an existing MCQ is a template reuse, even with new numbers (far-tbs-02 gate: the EPS and NFP simulations were rebuilt for this).
 
 ## Scaling the bank (Hayden's decision, 2026-09-30)
 
