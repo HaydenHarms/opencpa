@@ -1,0 +1,171 @@
+id: far-tbs-nfp-activities-0002
+type: tbs
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Statement of activities (Not-for-Profit)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 958-605 (contributions: unconditional and conditional promises, contributed services and nonfinancial
+    assets, donor-imposed restrictions, restrictions met in the same period)'
+  - ASC 958-205 (net asset classes; releases from restriction; endowment losses)
+  - ASC 958-225 (statement of activities)
+  notes: FAR simulations batch 02. Written from scratch; every number computed in code.
+title: Year 2 statement of activities
+scenario: Wrenfield Community Clinic is a not-for-profit health clinic preparing its Year 2 statement
+  of activities. As its accounting policy permits, Wrenfield reports donor-restricted contributions whose
+  restrictions are met in the same year they are received as support without donor restrictions. Enter
+  every amount in whole dollars, and enter a decrease as a negative number.
+exhibits:
+- title: 'Exhibit 1: Development office log of Year 2 gifts'
+  body: '| Date | Donor | Gift |
+
+    |---|---|---|
+
+    | Throughout Year 2 | Individuals and businesses | Cash gifts with no donor stipulations, $410,000
+    |
+
+    | February 8 | Pemberton Realty | Title to a building, with no stipulation on its use, which Wrenfield
+    opened as a satellite clinic in May. An independent appraisal put its fair value at $220,000; its
+    assessed value for property tax purposes is $160,000. |
+
+    | April 2 | Hollin family | $250,000 cash, to be invested permanently, with the investment return
+    used for nursing scholarships |
+
+    | June 15 | Larkspur Foundation | Written promise of $100,000 for a dental unit, payable only if Wrenfield
+    opens the unit with a licensed dentist on staff by June 30, Year 3; otherwise the foundation owes
+    nothing. Wrenfield has not yet hired a dentist. |
+
+    | October 1 | Delacroix family | $30,000 cash for the clinic''s flu vaccination drive, all spent on
+    vaccines in October and November |
+
+    | December 12 | Okafor Trust | Unconditional written promise of $60,000 for the diabetes education
+    program, payable in March, Year 3; collection is assured, and Wrenfield records it at the promised
+    amount |
+
+    | Throughout Year 2 | Volunteer physicians | 600 hours of patient care. Contract physicians in the
+    area bill $75 an hour for the same work, and Wrenfield would have had to hire them. |
+
+    | Throughout Year 2 | Community volunteers | Staffing the reception desk and mailing appeals, valued
+    at $18,000 at minimum wage |'
+- title: 'Exhibit 2: Controller''s schedule of Year 2 activity'
+  body: '| Item | Detail |
+
+    |---|---|
+
+    | Patient service revenue | $1,850,000, net of contractual adjustments |
+
+    | Program services expenses | $1,980,000, including $50,000 spent on the diabetes education program,
+    the $30,000 of flu vaccines and depreciation, including the satellite clinic''s; excludes any donated
+    services |
+
+    | Management and general expenses | $290,000 |
+
+    | Fundraising expenses | $85,000 |
+
+    | Endowment | The Hollin endowment had a net investment loss of $6,000 in Year 2. The board appropriated
+    nothing from it. |
+
+    | Ruiz promise | The Ruiz family''s promise (Exhibit 3) was collected in full in July, Year 2. |
+
+    | Operating reserve | Investments with no donor restrictions had a net gain of $7,000. In December
+    the board set aside $75,000 of these investments as a fund for future building repairs. |'
+- title: 'Exhibit 3: Net assets with donor restrictions at January 1, Year 2'
+  body: '| Item | Balance | Source |
+
+    |---|---|---|
+
+    | Diabetes education program | $80,000 | Cash grant received in Year 1, restricted to that program
+    |
+
+    | Ruiz family promise | $40,000 | Unconditional promise made in Year 1, payable in July, Year 2, with
+    no purpose stated |'
+tasks:
+- id: t1
+  type: select
+  points: 2
+  prompt: Indicate whether Wrenfield should recognize each item as revenue, gains or other support in
+    its Year 2 statement of activities, and if so in which net asset class.
+  options:
+  - Recognized — without donor restrictions
+  - Recognized — with donor restrictions
+  - Not recognized
+  rows:
+  - id: r1
+    label: Larkspur Foundation promise
+    answer: Not recognized
+  - id: r2
+    label: Okafor Trust promise
+    answer: Recognized — with donor restrictions
+  - id: r3
+    label: Volunteer physicians' services
+    answer: Recognized — without donor restrictions
+  - id: r4
+    label: Community volunteers' services
+    answer: Not recognized
+  - id: r5
+    label: Hollin family gift
+    answer: Recognized — with donor restrictions
+  - id: r6
+    label: Pemberton Realty building
+    answer: Recognized — without donor restrictions
+  - id: r7
+    label: Delacroix family gift
+    answer: Recognized — without donor restrictions
+  explanation: The Larkspur promise depends on a barrier Wrenfield hasn't overcome (opening a staffed
+    dental unit) and the foundation owes nothing if it fails, so it is conditional and not recognized.
+    The Okafor promise is unconditional and restricted to the diabetes program (and payable later), so
+    it is with donor restrictions. The physicians' services need specialized skills Wrenfield would otherwise
+    buy, so they are recognized (600 × $75 = $45,000) as revenue and as program expense. The reception
+    and mailing work needs no specialized skills and doesn't create or enhance a nonfinancial asset, so
+    it isn't recognized. The Hollin gift must be held in perpetuity, so it is with donor restrictions.
+    The building came with no donor stipulation, so it is support without donor restrictions at its $220,000
+    fair value; GAAP no longer lets an entity imply a time restriction on a gift of a long-lived asset.
+    The Delacroix gift was restricted to the flu drive, but the restriction was met in the year received,
+    so under Wrenfield's policy it is reported without donor restrictions.
+- id: t2
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is Wrenfield's change in net assets without donor restrictions for Year 2?
+  answer: 25200000
+  explanation: Patient service revenue $1,850,000 + cash gifts $410,000 + Delacroix gift $30,000 + donated
+    building $220,000 + contributed physician services $45,000 + investment gain $7,000 + net assets released
+    from restrictions $90,000 − expenses $2,400,000 = $252,000. Expenses = program $1,980,000 + donated
+    physician services $45,000 + management and general $290,000 + fundraising $85,000. The board's set-aside
+    is an internal designation and leaves the reserve without donor restrictions.
+- id: t3
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 100
+  prompt: What is Wrenfield's change in net assets with donor restrictions for Year 2?
+  answer: 21400000
+  explanation: Okafor promise $60,000 + Hollin endowment gift $250,000 − endowment investment loss $6,000
+    − net assets released $90,000 = $214,000. Losses on a donor-restricted endowment reduce net assets
+    with donor restrictions, even below the original gift.
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What total amount of net assets released from restrictions should Wrenfield report for Year
+    2?
+  answer: 9000000
+  explanation: Diabetes program spending $50,000 (purpose restriction met) + the Ruiz promise collected
+    in July $40,000 (time restriction expired) = $90,000. The Delacroix gift never entered net assets
+    with donor restrictions under Wrenfield's same-year policy, so it is not a release (without the policy,
+    releases would be $120,000).
+- id: t5
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: What total expenses should Wrenfield report for Year 2?
+  answer: 240000000
+  explanation: Program services $1,980,000 + donated physician services $45,000 + management and general
+    $290,000 + fundraising $85,000 = $2,400,000. The building is capitalized (only its depreciation, already
+    in program expenses, is an expense), and the unrecognized volunteer services create no expense.

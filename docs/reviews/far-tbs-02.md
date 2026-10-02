@@ -2,7 +2,7 @@
 
 **Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026.
 
-**6 simulations (45 points)**, all Area I, written from scratch in `scripts/batches/far-tbs-02.py` as the first batch of `docs/plans/far-simulations.md`. They use numeric, select and no journal-entry tasks. Research tasks still wait until cited paragraphs can be checked against the Codification. Every amount is computed in the script with `Decimal` and rounded half up. The script asserts that the comparative balance sheets, the corrected balance sheet and the draft-to-corrected net income reconciliations tie before it writes anything.
+**6 simulations (45 points)**, all Area I, written from scratch in `scripts/batches/far-tbs-02.py` as the first batch of `docs/plans/far-simulations.md`. They use numeric and select tasks, with no journal entries. The table shows the current version (revision 2, after the review gate). Research tasks still wait until cited paragraphs can be checked against the Codification. Every amount is computed in the script with `Decimal` and rounded half up. The script asserts that the comparative balance sheets, the corrected balance sheet and the draft-to-corrected net income reconciliations tie before it writes anything.
 
 | Simulation | Blueprint task | Skill | Tasks |
 | --- | --- | --- | --- |
@@ -10,8 +10,8 @@
 | `far-tbs-consolidation-review-0001` | I.A.6c Detect and correct consolidated financial statement discrepancies | Analysis | 1 select, 4 numeric (9 points) |
 | `far-tbs-balance-sheet-review-0001` | I.A.1c Detect and correct balance sheet discrepancies | Analysis | 5 numeric (8 points) |
 | `far-tbs-income-statement-review-0001` | I.A.2d Detect and correct income statement discrepancies | Analysis | 6 numeric (8 points) |
-| `far-tbs-nfp-activities-0001` | I.B.2b Prepare an NFP statement of activities | Application | 1 select, 4 numeric (8 points) |
-| `far-tbs-eps-0001` | I.D.c Calculate basic and diluted EPS | Application | 5 numeric (7 points) |
+| `far-tbs-nfp-activities-0002` | I.B.2b Prepare an NFP statement of activities | Application | 1 select, 4 numeric (8 points) |
+| `far-tbs-eps-0002` | I.D.c Calculate basic and diluted EPS | Application | 5 numeric (7 points) |
 
 FAR now has 9 simulations: Area I 6, Area II 1, Area III 2, with 4 of the 9 tagged Analysis.
 
@@ -20,9 +20,9 @@ FAR now has 9 simulations: Area I 6, Area II 1, Area III 2, with 4 of the 9 tagg
 - **Cash flows (Brennick).** Comparative balance sheets, an income statement and dated transaction notes. Data to reject or handle: equipment bought with a note (noncash disclosure, then a financing principal payment), a 10% stock dividend, dividends declared versus paid, bond discount amortization in interest expense, and a gain on sale. Tasks: operating, investing and financing totals, interest and taxes paid, and a five-row classification.
 - **Consolidation review (Pomeroy and Strand).** A wholly owned subsidiary held at cost, with an acquisition-date equipment step-up and goodwill, upstream intra-entity inventory sales with profit in both opening and closing inventory, an intra-entity loan and dividends. The staff accountant's draft has five errors and three correct lines; the candidate marks each line and computes corrected cost of goods sold, net income, equipment and retained earnings. An appraisal of the equipment and of Strand is data to reject.
 - **Balance sheet review (Quillon).** A draft classified balance sheet with a six-month certificate of deposit in cash equivalents (beside a Treasury bill that does qualify), customer credit balances netted in receivables, consigned-in goods counted and goods in transit left out, a sinking fund and treasury stock in current assets, a declared dividend not recorded (outstanding versus issued shares) and the current installment of a term loan left in noncurrent liabilities.
-- **Income statement review (Varga).** A draft multi-step statement where the sale of a whole operating segment sits in continuing operations and the sale of one warehouse is shown as discontinued, plus a cutoff error, interest in general and administrative expenses, a full-year insurance premium expensed in October, and an AFS fair value gain in net income. The warehouse loss belongs inside income from operations (ASC 360-10).
-- **NFP statement of activities (Wrenfield).** A conditional promise with a matching barrier, an unconditional promise payable next year (implied time restriction), skilled and unskilled contributed services, a perpetual endowment gift with an appropriated return, releases for a van placed in service and for program spending, and a board designation that is not a donor restriction. The scenario fixes the clinic's two policy elections (placed-in-service release; restricted gifts met in the same year stay with donor restrictions).
-- **EPS (Corwin).** A retroactive stock dividend, a mid-year issue and a treasury purchase in the weighted average, undeclared cumulative preferred dividends, one dilutive and one antidilutive option grant (average versus year-end price), and convertible bonds under the if-converted method (ASU 2020-06) with an after-tax add-back.
+- **Income statement review (Varga).** A draft multi-step statement where the sale of a whole operating segment sits in continuing operations and the sale of one warehouse is shown as discontinued, plus a cutoff error, freight-in charged to selling expenses, a full-year insurance premium expensed in October, and an AFS fair value gain in net income. The warehouse loss belongs inside income from operations (ASC 360-10-45-5). The last task asks for total comprehensive income.
+- **NFP statement of activities (Wrenfield).** A conditional promise with a performance barrier (a staffed dental unit), a purpose-restricted promise payable next year, skilled services valued at a billing rate and unskilled ones, a donated building with no stipulation (no implied time restriction after ASU 2016-14), a perpetual endowment gift with a negative return, a restricted gift spent in the year received under the same-year election, releases for program spending and a time restriction expiring on collection, and a board designation that is not a donor restriction.
+- **EPS (Corwin).** A 3-for-2 split declared after year end but before issuance (applied retroactively), a mid-year reissue of treasury shares, a partial bond conversion on September 1 (shares in basic from conversion, in diluted before it; interest add-back for both pieces), options granted July 1 (treasury stock method at the average price for the period outstanding, weighted for six months), and noncumulative preferred with no dividend declared.
 
 ## Blind verification
 
@@ -40,4 +40,19 @@ Suggestions also applied: neutral wording on consolidation tasks 2, 4 and 5 ("Wh
 
 ## Review gate
 
-(pending)
+| Run | Average pass likelihood | Verdicts | Outcome |
+| --- | --- | --- | --- |
+| Revision 1 | 80.3% (cash flows 84, consolidation 83, balance sheet 81, income statement 79, NFP 79, EPS 76) | 5 minor, 1 major | Failed: EPS was a major revision. All keys matched, with no second defensible answers, and every exhibit footed. |
+
+Revision 1 went to `main` at the owner's request before the gate fixes. Revision 2 applies them:
+
+| Simulation | Finding | Fix |
+| --- | --- | --- |
+| EPS (major) | Tasks 1–3 reused the events of `far-eps-basic-0001` (April issue, July 10% stock dividend, October buyback, undeclared cumulative preferred) and tasks 4–5 the template of `far-eps-diluted-0001`, so the simulation was barely harder than the MCQs. | Rebuilt under a new id, `far-tbs-eps-0002`, with new events: a split after year end, a treasury reissue, a partial mid-year conversion, a mid-year option grant and noncumulative preferred. Task 3 now asks about "the options", not one grant. |
+| NFP (required) | The scenario echoed `far-nfp-statement-of-activities-0003` (program gift, van placed in service, endowment return appropriated, pledge with no purpose, matching promise). | Rebuilt under a new id, `far-tbs-nfp-activities-0002`. It now has a donated building, a performance barrier, a negative endowment return, a same-year restricted gift and a time restriction expiring on collection. The two "policies" that GAAP requires were dropped; only the same-year election is stated, and it changes task 4. Physician services are valued from a billing rate. |
+| Income statement (required) | Task 6 (OCI net of tax) revealed that an OCI item existed. | Task 6 asks for total comprehensive income. The interest-in-G&A error, which echoed `far-income-statement-0002`, is replaced by freight-in in selling expenses. The retail exit is described through facts, and ASC 360-10-45-5 is cited at paragraph level. |
+| Consolidation (required) | Goodwill being "correct as drafted" depended on Pomeroy not electing the private-company goodwill amortization alternative. | Pomeroy is a public business entity. The draft now shows the (correctly eliminated) note receivable, and the margin moved from 25% to 20% to avoid echoing `far-consolidated-statements-0011`. |
+| Balance sheet | Exhibit 2 detailed only the balances that turned out wrong; the bonds' original term was missing. | Added clean detail for prepaid expenses and accrued liabilities; the bonds are ten-year bonds issued January 1, Year 1, due Year 10. |
+| Cash flows | "No cash changed hands" made the noncash classification easy. | Removed. |
+
+The old ids `far-tbs-eps-0001` and `far-tbs-nfp-activities-0001` are retired and must not be reused.

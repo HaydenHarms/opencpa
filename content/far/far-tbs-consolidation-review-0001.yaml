@@ -12,10 +12,10 @@ review:
   - ASC 805-20 (acquisition-date fair values; subsequent amortization of the step-up through depreciation)
   notes: FAR simulations batch 02. Written from scratch; every number computed in code.
 title: Reviewing a draft consolidation
-scenario: Pomeroy Inc. owns 100% of Strand Co. A staff accountant has prepared a draft of Pomeroy's Year
-  3 consolidated statements. You are reviewing it before the controller signs off. Pomeroy accounts for
-  its investment in Strand at cost in its own books. Ignore income taxes, and enter every amount in whole
-  dollars.
+scenario: Pomeroy Inc., a public business entity, owns 100% of Strand Co. A staff accountant has prepared
+  a draft of Pomeroy's Year 3 consolidated statements. You are reviewing it before the controller signs
+  off. Pomeroy accounts for its investment in Strand at cost in its own books. Ignore income taxes, and
+  enter every amount in whole dollars.
 exhibits:
 - title: 'Exhibit 1: Separate financial statements of Pomeroy and Strand'
   body: 'Income statements for Year 3:
@@ -92,6 +92,8 @@ exhibits:
 
     | Inventory | 670,000 |
 
+    | Note receivable | 0 |
+
     | Equipment, net | 2,200,000 |
 
     | Goodwill | 100,000 |
@@ -113,7 +115,7 @@ exhibits:
     | Appraisal | An appraisal commissioned in December, Year 3, values Strand''s equipment at $950,000
     and Strand as a whole at $2,100,000. |
 
-    | Merchandise | Strand sells goods to Pomeroy at a 25% gross margin on the selling price. Strand''s
+    | Merchandise | Strand sells goods to Pomeroy at a 20% gross margin on the selling price. Strand''s
     Year 3 sales to Pomeroy were $400,000. Pomeroy''s inventory included goods bought from Strand of $60,000
     at January 1, Year 3, and $100,000 at December 31, Year 3, at Pomeroy''s cost. Pomeroy sold the January
     1 goods to outside customers in Year 3. |
@@ -157,6 +159,9 @@ tasks:
   - id: goodwill
     label: Goodwill
     answer: Correct as drafted
+  - id: note_rec
+    label: Note receivable
+    answer: Correct as drafted
   - id: notes_pay
     label: Notes payable
     answer: Overstated
@@ -164,35 +169,36 @@ tasks:
     label: Retained earnings
     answer: Overstated
   explanation: 'Sales: the $400,000 of intra-entity sales were eliminated, so the draft is correct. Cost
-    of goods sold: the draft eliminated $400,000 but not the profit in inventory; it must add the $25,000
-    unrealized at year end and remove the $15,000 from January 1 that was realized in Year 3, so the draft
-    is understated by $10,000. Depreciation: the $20,000 a year on the equipment step-up is missing (understated).
+    of goods sold: the draft eliminated $400,000 but not the profit in inventory; it must add the $20,000
+    unrealized at year end and remove the $12,000 from January 1 that was realized in Year 3, so the draft
+    is understated by $8,000. Depreciation: the $20,000 a year on the equipment step-up is missing (understated).
     Interest expense: only the $15,000 on the intra-entity loan was eliminated, which is correct. Dividend
     income: the $80,000 from Strand is intra-entity and must be eliminated (overstated). Inventory includes
-    $25,000 of unrealized profit (overstated). Equipment includes the full $200,000 step-up with none
+    $20,000 of unrealized profit (overstated). Equipment includes the full $200,000 step-up with none
     of the $60,000 of depreciation for Years 1–3 (overstated). Goodwill = $1,500,000 − $1,200,000 − $200,000
-    = $100,000, correct. Notes payable still includes the $250,000 owed to Pomeroy (overstated). Retained
-    earnings added all of Strand''s retained earnings, including the $500,000 earned before the acquisition
-    (overstated).'
+    = $100,000, correct (a public business entity can''t elect to amortize goodwill). The note receivable
+    from Strand was eliminated, which is correct. Notes payable still includes the $250,000 owed to Pomeroy
+    (overstated). Retained earnings added all of Strand''s retained earnings, including the $500,000 earned
+    before the acquisition (overstated).'
 - id: t2
   type: numeric
   points: 1
   unit: cents
   tolerance: 100
   prompt: What amount should Pomeroy report as consolidated cost of goods sold for Year 3?
-  answer: 237000000
-  explanation: $1,920,000 + $840,000 − $400,000 intra-entity sales + $25,000 unrealized profit in ending
-    inventory ($100,000 × 25%) − $15,000 profit in beginning inventory realized this year ($60,000 × 25%)
-    = $2,370,000.
+  answer: 236800000
+  explanation: $1,920,000 + $840,000 − $400,000 intra-entity sales + $20,000 unrealized profit in ending
+    inventory ($100,000 × 20%) − $12,000 profit in beginning inventory realized this year ($60,000 × 20%)
+    = $2,368,000.
 - id: t3
   type: numeric
   points: 2
   unit: cents
   tolerance: 100
   prompt: What amount should Pomeroy report as consolidated net income for Year 3?
-  answer: 66460000
+  answer: 66660000
   explanation: Pomeroy $594,000 − $80,000 dividend from Strand + Strand $180,600 − $20,000 step-up depreciation
-    − $25,000 ending unrealized profit + $15,000 beginning profit realized = $664,600. The intra-entity
+    − $20,000 ending unrealized profit + $12,000 beginning profit realized = $666,600. The intra-entity
     interest ($15,000) is income to Pomeroy and expense to Strand, so eliminating it doesn't change net
     income.
 - id: t4
@@ -210,8 +216,8 @@ tasks:
   unit: cents
   tolerance: 100
   prompt: What amount should Pomeroy report as consolidated retained earnings at December 31, Year 3?
-  answer: 313500000
+  answer: 314000000
   explanation: Pomeroy's retained earnings $2,900,000 (which already include the dividends it received
     from Strand) + Strand's growth in retained earnings since the acquisition, $820,000 − $500,000 = $320,000,
-    − $60,000 step-up depreciation for Years 1–3 − $25,000 unrealized profit in ending inventory = $3,135,000.
+    − $60,000 step-up depreciation for Years 1–3 − $20,000 unrealized profit in ending inventory = $3,140,000.
     The profit in the January 1 inventory was realized in Year 3 and no longer affects retained earnings.

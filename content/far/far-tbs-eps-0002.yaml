@@ -1,0 +1,111 @@
+id: far-tbs-eps-0002
+type: tbs
+blueprint:
+  section: FAR
+  area: Area I — Financial Reporting
+  topic: Public Company Reporting Topics
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 260-10 (basic and diluted EPS: weighted-average shares, stock splits after the balance sheet
+    date, treasury stock method for options outstanding part of the period, if-converted method including
+    conversions during the period, noncumulative preferred stock)'
+  notes: FAR simulations batch 02. Written from scratch; every number computed in code.
+title: Year 2 earnings per share
+scenario: Corwin Corp., a public company, reports net income of $1,250,000 for Year 2, its calendar year.
+  Its income tax rate is 25%. Corwin's Year 2 financial statements will be issued on March 1, Year 3.
+  Use the exhibits, and give every share figure on the basis on which Corwin will report it in its Year
+  2 statements. Round each earnings per share amount to the nearest cent (enter, for example, 1.23), and
+  enter share counts as whole numbers.
+exhibits:
+- title: 'Exhibit 1: Share records'
+  body: '| Date | Event |
+
+    |---|---|
+
+    | January 1, Year 2 | 300,000 common shares outstanding; 20,000 shares held in treasury |
+
+    | May 1, Year 2 | Reissued 12,000 treasury shares for cash |
+
+    | September 1, Year 2 | Holders converted $500,000 face of the convertible bonds (Exhibit 2) into
+    common shares |
+
+    | December 15, Year 2 | Declared and paid a cash dividend of $0.40 per common share |
+
+    | February 10, Year 3 | The board declared a 3-for-2 stock split, distributed February 24, Year 3
+    |
+
+    | All year | 10,000 shares of 8% noncumulative, nonconvertible preferred stock, $50 par, outstanding.
+    The board declared no preferred dividend for Year 2. |'
+- title: 'Exhibit 2: Potential common shares and market data'
+  body: '| Item | Detail |
+
+    |---|---|
+
+    | Convertible bonds | $1,500,000 face, 4% interest paid each December 31 issued at par in Year 0.
+    Bonds converted during the year are paid interest accrued to the conversion date. Each $1,000 bond
+    converts into 30 common shares. |
+
+    | Stock options | 40,000 options with an exercise price of $24, granted July 1, Year 2; none exercised
+    or forfeited |
+
+    | Market price of common stock | Average for July–December, Year 2, $32; average for all of Year 2,
+    $30; December 31, Year 2, $35 |
+
+    | Note | Every share count, price and conversion ratio in Exhibits 1 and 2 is stated before the 3-for-2
+    split. |'
+tasks:
+- id: t1
+  type: numeric
+  points: 2
+  unit: units
+  tolerance: 0
+  prompt: What is Corwin's weighted-average number of common shares outstanding for basic EPS for Year
+    2?
+  answer: 469500
+  explanation: 'Before the split: 300,000 + 12,000 reissued treasury shares × 8/12 = 8,000 + 15,000 shares
+    issued on conversion (500 bonds × 30) × 4/12 = 5,000, a total of 313,000. A stock split declared after
+    year end but before the statements are issued is applied retroactively: 313,000 × 1.5 = 469,500.'
+- id: t2
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 0
+  prompt: What is Corwin's basic EPS for Year 2?
+  answer: 266
+  explanation: $1,250,000 ÷ 469,500 = 2.66. The preferred stock is noncumulative and no dividend was declared
+    for Year 2, so nothing is deducted (deducting a full year's $40,000 would give 2.58). The common dividend
+    doesn't affect EPS.
+- id: t3
+  type: numeric
+  points: 1
+  unit: units
+  tolerance: 0
+  prompt: How many incremental shares do the stock options add to the denominator of diluted EPS?
+  answer: 7500
+  explanation: 'Treasury stock method, using the average price for the period the options were outstanding:
+    40,000 − 40,000 × $24 ÷ $32 = 10,000 shares, weighted for the six months since the July 1 grant =
+    5,000, × 1.5 for the split = 7,500. Using the full-year average price would give 6,000.'
+- id: t4
+  type: numeric
+  points: 1
+  unit: cents
+  tolerance: 100
+  prompt: By what amount does Corwin adjust the numerator of diluted EPS for the convertible bonds?
+  answer: 4000000
+  explanation: 'Add back the after-tax interest recognized in Year 2 on all the bonds: $1,000,000 × 4%
+    = $40,000 on the bonds still outstanding, plus $500,000 × 4% × 8/12 = $13,333 on the converted bonds
+    until September 1, a total of $53,333, × (1 − 25%) = $40,000.'
+- id: t5
+  type: numeric
+  points: 2
+  unit: cents
+  tolerance: 0
+  prompt: What is Corwin's diluted EPS for Year 2?
+  answer: 240
+  explanation: The options add 7,500 shares. The bonds add $40,000 to income and 60,000 shares (after
+    the split, 30,000 for the bonds outstanding all year plus 15,000 × 8/12 for the converted bonds before
+    conversion, × 1.5), 0.67 per incremental share, below the 2.62 EPS after the options, so they are
+    dilutive. ($1,250,000 + $40,000) ÷ (469,500 + 7,500 + 60,000) = 2.40. Ignoring the converted bonds'
+    interest and shares before September 1 would give 2.45.

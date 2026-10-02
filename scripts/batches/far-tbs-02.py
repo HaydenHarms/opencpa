@@ -139,7 +139,7 @@ SIM1 = tbs(
 | Date | Note |
 |---|---|
 | February 10 | Sold equipment that had cost {d(SOLD_COST)} and had accumulated depreciation of {d(SOLD_AD)}, for {d(SOLD_PROCEEDS)} cash. |
-| March 1 | Acquired a packaging machine by signing a {d(NOTE_EQUIP)} three-year, 6% note payable to the seller, with interest paid each December 31 and included in interest expense. No cash changed hands. A {d(NOTE_PAID)} principal payment on the note was made on December 31. |
+| March 1 | Acquired a packaging machine by signing a {d(NOTE_EQUIP)} three-year, 6% note payable to the seller, with interest paid each December 31 and included in interest expense. A {d(NOTE_PAID)} principal payment on the note was made on December 31. |
 | May 15 | Declared and distributed a 10% stock dividend on the 200,000 shares then outstanding, when the market price was ${STOCK_DIV_PRICE} per share. |
 | June 30 | Issued {ISSUE_SH:,} shares of common stock for cash at ${ISSUE_PRICE} per share. |
 | August 12 | Bought equipment for {d(CASH_EQUIP)} cash. |
@@ -177,7 +177,7 @@ STEP_UP, LIFE = 200000, 10
 goodwill = PRICE - S_EQ_ACQ - STEP_UP
 extra_dep = STEP_UP // LIFE
 YEARS = 3
-IC_SALES, GM = 400000, Decimal("0.25")
+IC_SALES, GM = 400000, Decimal("0.20")
 END_HELD, BEG_HELD = 100000, 60000
 end_up, beg_up = int(END_HELD * GM), int(BEG_HELD * GM)
 LOAN, LOAN_RATE = 250000, Decimal("0.06")
@@ -227,7 +227,7 @@ sep_body = ("Income statements for Year 3:\n\n"
 draft_body = ("Consolidated income statement for Year 3 (draft):\n\n"
               + table(["", "Consolidated"], [(n, amt(s * draft[k])) for n, k, s in IS_LINES if k != "int_inc"])
               + "\n\nSelected consolidated balances at December 31, Year 3 (draft):\n\n"
-              + table(["", "Consolidated"], [(n, amt(draft_bs[k])) for n, k in BS_LINES if k not in ("note_rec", "invest")]))
+              + table(["", "Consolidated"], [(n, amt(draft_bs[k])) for n, k in BS_LINES if k != "invest"]))
 SEL = ["Correct as drafted", "Overstated", "Understated"]
 
 
@@ -238,7 +238,7 @@ def verdict(k, a, b):
 rows2 = [("sales", "Sales", draft, cor), ("cogs", "Cost of goods sold", draft, cor), ("dep", "Depreciation expense", draft, cor),
          ("int_exp", "Interest expense", draft, cor), ("div_inc", "Dividend income", draft, cor),
          ("inv", "Inventory", draft_bs, cor_bs), ("equip", "Equipment, net", draft_bs, cor_bs),
-         ("goodwill", "Goodwill", draft_bs, cor_bs), ("notes_pay", "Notes payable", draft_bs, cor_bs),
+         ("goodwill", "Goodwill", draft_bs, cor_bs), ("note_rec", "Note receivable", draft_bs, cor_bs), ("notes_pay", "Notes payable", draft_bs, cor_bs),
          ("re", "Retained earnings", draft_bs, cor_bs)]
 sel2 = [(k, label, verdict(k, a, b)) for k, label, a, b in rows2]
 assert {a for *_, a in sel2} == set(SEL)
@@ -247,7 +247,7 @@ SIM2 = tbs(
     ["ASC 810-10 (consolidation procedures: intra-entity balances, transactions and profits)",
      "ASC 805-20 (acquisition-date fair values; subsequent amortization of the step-up through depreciation)"],
     "Reviewing a draft consolidation",
-    """Pomeroy Inc. owns 100% of Strand Co. A staff accountant has prepared a draft of Pomeroy's Year 3 consolidated statements. You are reviewing it before the controller signs off. Pomeroy accounts for its investment in Strand at cost in its own books. Ignore income taxes, and enter every amount in whole dollars.""",
+    """Pomeroy Inc., a public business entity, owns 100% of Strand Co. A staff accountant has prepared a draft of Pomeroy's Year 3 consolidated statements. You are reviewing it before the controller signs off. Pomeroy accounts for its investment in Strand at cost in its own books. Ignore income taxes, and enter every amount in whole dollars.""",
     [("Exhibit 1: Separate financial statements of Pomeroy and Strand", sep_body),
      ("Exhibit 2: Draft consolidated statements prepared by the staff accountant", draft_body),
      ("Exhibit 3: Consolidation file notes", f"""
@@ -255,17 +255,17 @@ SIM2 = tbs(
 |---|---|
 | Acquisition | Pomeroy bought all of Strand's stock on January 1, Year 1, for {d(PRICE)} cash. Strand's book equity then was {d(S_EQ_ACQ)} (common stock and paid-in capital {d(S_CS_ACQ)}, retained earnings {d(S_RE_ACQ)}). Book values equaled fair values except Strand's equipment, whose fair value was {d(STEP_UP)} above book value; the equipment then had a {LIFE}-year remaining life with no residual value, is depreciated straight-line and is still in use. Any remaining excess is goodwill, which has not been impaired. |
 | Appraisal | An appraisal commissioned in December, Year 3, values Strand's equipment at $950,000 and Strand as a whole at $2,100,000. |
-| Merchandise | Strand sells goods to Pomeroy at a 25% gross margin on the selling price. Strand's Year 3 sales to Pomeroy were {d(IC_SALES)}. Pomeroy's inventory included goods bought from Strand of {d(BEG_HELD)} at January 1, Year 3, and {d(END_HELD)} at December 31, Year 3, at Pomeroy's cost. Pomeroy sold the January 1 goods to outside customers in Year 3. |
+| Merchandise | Strand sells goods to Pomeroy at a {int(GM * 100)}% gross margin on the selling price. Strand's Year 3 sales to Pomeroy were {d(IC_SALES)}. Pomeroy's inventory included goods bought from Strand of {d(BEG_HELD)} at January 1, Year 3, and {d(END_HELD)} at December 31, Year 3, at Pomeroy's cost. Pomeroy sold the January 1 goods to outside customers in Year 3. |
 | Loan | On January 1, Year 3, Pomeroy lent Strand {d(LOAN)} at {int(LOAN_RATE * 100)}%, interest paid each December 31. The rest of Strand's notes payable is owed to its bank. |
 | Dividends | Strand declared and paid {d(S_DIV)} of dividends in Year 3, all to Pomeroy. |
 """)],
     [
         select("t1", "For each line of the draft consolidated statements in Exhibit 2, indicate whether the draft amount is correct, overstated or understated.",
                SEL, sel2,
-               f"Sales: the {d(IC_SALES)} of intra-entity sales were eliminated, so the draft is correct. Cost of goods sold: the draft eliminated {d(IC_SALES)} but not the profit in inventory; it must add the {d(end_up)} unrealized at year end and remove the {d(beg_up)} from January 1 that was realized in Year 3, so the draft is understated by {d(cor['cogs'] - draft['cogs'])}. Depreciation: the {d(extra_dep)} a year on the equipment step-up is missing (understated). Interest expense: only the {d(loan_int)} on the intra-entity loan was eliminated, which is correct. Dividend income: the {d(S_DIV)} from Strand is intra-entity and must be eliminated (overstated). Inventory includes {d(end_up)} of unrealized profit (overstated). Equipment includes the full {d(STEP_UP)} step-up with none of the {d(extra_dep * YEARS)} of depreciation for Years 1–3 (overstated). Goodwill = {d(PRICE)} − {d(S_EQ_ACQ)} − {d(STEP_UP)} = {d(goodwill)}, correct. Notes payable still includes the {d(LOAN)} owed to Pomeroy (overstated). Retained earnings added all of Strand's retained earnings, including the {d(S_RE_ACQ)} earned before the acquisition (overstated).",
+               f"Sales: the {d(IC_SALES)} of intra-entity sales were eliminated, so the draft is correct. Cost of goods sold: the draft eliminated {d(IC_SALES)} but not the profit in inventory; it must add the {d(end_up)} unrealized at year end and remove the {d(beg_up)} from January 1 that was realized in Year 3, so the draft is understated by {d(cor['cogs'] - draft['cogs'])}. Depreciation: the {d(extra_dep)} a year on the equipment step-up is missing (understated). Interest expense: only the {d(loan_int)} on the intra-entity loan was eliminated, which is correct. Dividend income: the {d(S_DIV)} from Strand is intra-entity and must be eliminated (overstated). Inventory includes {d(end_up)} of unrealized profit (overstated). Equipment includes the full {d(STEP_UP)} step-up with none of the {d(extra_dep * YEARS)} of depreciation for Years 1–3 (overstated). Goodwill = {d(PRICE)} − {d(S_EQ_ACQ)} − {d(STEP_UP)} = {d(goodwill)}, correct (a public business entity can't elect to amortize goodwill). The note receivable from Strand was eliminated, which is correct. Notes payable still includes the {d(LOAN)} owed to Pomeroy (overstated). Retained earnings added all of Strand's retained earnings, including the {d(S_RE_ACQ)} earned before the acquisition (overstated).",
                points=3),
         num("t2", "What amount should Pomeroy report as consolidated cost of goods sold for Year 3?", cor["cogs"],
-            f"{d(P['cogs'])} + {d(S['cogs'])} − {d(IC_SALES)} intra-entity sales + {d(end_up)} unrealized profit in ending inventory ({d(END_HELD)} × 25%) − {d(beg_up)} profit in beginning inventory realized this year ({d(BEG_HELD)} × 25%) = {d(cor['cogs'])}."),
+            f"{d(P['cogs'])} + {d(S['cogs'])} − {d(IC_SALES)} intra-entity sales + {d(end_up)} unrealized profit in ending inventory ({d(END_HELD)} × {int(GM * 100)}%) − {d(beg_up)} profit in beginning inventory realized this year ({d(BEG_HELD)} × {int(GM * 100)}%) = {d(cor['cogs'])}."),
         num("t3", "What amount should Pomeroy report as consolidated net income for Year 3?", cor["ni"],
             f"Pomeroy {d(P['ni'])} − {d(S_DIV)} dividend from Strand + Strand {d(S['ni'])} − {d(extra_dep)} step-up depreciation − {d(end_up)} ending unrealized profit + {d(beg_up)} beginning profit realized = {d(cor['ni'])}. The intra-entity interest ({d(loan_int)}) is income to Pomeroy and expense to Strand, so eliminating it doesn't change net income.",
             points=2),
@@ -319,7 +319,7 @@ SIM3 = tbs(
         ("**Total current assets**", amt(dr_ca)), ("Property, plant and equipment, net", amt(PPE)),
         ("**Total assets**", amt(dr_total_assets)),
         ("Accounts payable", amt(AP)), ("Accrued liabilities", amt(ACCRUED)), ("**Total current liabilities**", amt(dr_cl)),
-        ("Term loan payable", amt(TERM_LOAN)), ("Bonds payable, due Year 9", amt(BONDS)),
+        ("Term loan payable", amt(TERM_LOAN)), ("Bonds payable, due Year 10", amt(BONDS)),
         ("**Total noncurrent liabilities**", amt(dr_ncl)),
         (f"Common stock, ${PAR} par, {ISSUED:,} shares issued", amt(ISSUED * PAR)), ("Additional paid-in capital", amt(APIC3)),
         ("Retained earnings", amt(dr_re)), ("**Total stockholders' equity**", amt(dr_eq)),
@@ -331,7 +331,9 @@ SIM3 = tbs(
 | Cash and cash equivalents | Checking account {d(CHECKING)}; petty cash {d(PETTY)}; U.S. Treasury bill bought November 20, Year 2, maturing January 31, Year 3, {d(TBILL)}; bank certificate of deposit bought October 1, Year 2, maturing March 31, Year 3, {d(CD)}. |
 | Accounts receivable, net | Aged trial balance: customer accounts with debit balances {d(AR_DEBIT)}; two customers who prepaid orders not yet shipped have credit balances totaling {d(AR_CREDIT)}; allowance for credit losses {d(ALLOW)}, per the credit manager's estimate. The draft nets all three. |
 | Inventory | Count at December 31: {d(INV_DRAFT)}, including goods costing {d(CONSIGNED)} that Sedley Co. shipped to Quillon on consignment; Quillon sells them for Sedley on commission and recorded no purchase for them. Goods bought from Ames Supply, FOB shipping point, were shipped December 29, Year 2, and arrived January 4, Year 3; Quillon recorded the {d(IN_TRANSIT)} invoice in purchases and accounts payable on December 29, but the goods were not in the count. |
-| Bond sinking fund | Cash and securities held by a trustee, to be used only to retire the bonds due in Year 9. |
+| Prepaid expenses | Insurance premiums for January–June, Year 3, $15,000; rent for January, Year 3, $9,000. |
+| Bond sinking fund | Cash and securities held by a trustee, to be used only to retire the ten-year bonds issued January 1, Year 1, and due December 31, Year 10. |
+| Accrued liabilities | December wages $26,500; interest on the bonds for the fourth quarter $11,500. |
 | Term loan payable | Five-year bank loan taken out on July 1, Year 2; the {d(TERM_LOAN)} balance is repaid in equal installments of {d(INSTALLMENT)} each June 30. Quillon is in compliance with its covenants. |
 | Treasury stock | {TS_SHARES:,} shares of Quillon's own common stock bought back in August, Year 2, at cost; market value at December 31 is $49,000. |
 """),
@@ -364,7 +366,7 @@ DR = dict(sales=2940000, cogs=1764000, selling=310000, ga=402000, int_inc=9000, 
 CUTOFF = 40000
 SEG = dict(sales=620000, cogs=410000, selling=95000, ga=55000)
 SEG_LOSS = DR["seg_loss"]
-WH_LOSS, INS, INS_MONTHS_Y2, INT_IN_GA = 34000, 36000, 3, 48000
+WH_LOSS, INS, INS_MONTHS_Y2, FREIGHT_IN = 34000, 36000, 3, 30000
 ins_prepaid = INS * (12 - INS_MONTHS_Y2) // 12
 
 
@@ -380,25 +382,27 @@ dr_cont = dr_pretax - dr_tax
 dr_disc = -(WH_LOSS - tax(WH_LOSS))
 dr_ni = dr_cont + dr_disc
 c_sales = DR["sales"] - SEG["sales"] - CUTOFF
-c_cogs = DR["cogs"] - SEG["cogs"]
+c_cogs = DR["cogs"] - SEG["cogs"] + FREIGHT_IN
 c_gp = c_sales - c_cogs
-c_selling = DR["selling"] - SEG["selling"]
-c_ga = DR["ga"] - SEG["ga"] - INT_IN_GA - ins_prepaid
+c_selling = DR["selling"] - SEG["selling"] - FREIGHT_IN
+c_ga = DR["ga"] - SEG["ga"] - ins_prepaid
 c_oi = c_gp - c_selling - c_ga - WH_LOSS
-c_pretax = c_oi + DR["int_inc"] - INT_IN_GA
+c_pretax = c_oi + DR["int_inc"]
 c_tax = tax(c_pretax)
 c_cont = c_pretax - c_tax
 seg_pretax = SEG["sales"] - SEG["cogs"] - SEG["selling"] - SEG["ga"] - SEG_LOSS
 c_disc = seg_pretax - tax(seg_pretax)
 c_ni = c_cont + c_disc
 c_oci = DR["afs"] - tax(DR["afs"])
+c_tci = c_ni + c_oci
 assert c_ni - dr_ni == -(CUTOFF + DR["afs"] - ins_prepaid) + tax(CUTOFF + DR["afs"] - ins_prepaid)
 oi_with_wh_outside = c_oi + WH_LOSS
 SIM4 = tbs(
     "far-tbs-income-statement-review-0001", "Income statement", "Analysis",
     ["ASC 205-20 (discontinued operations: strategic shift; presentation of results and the disposal loss, net of tax)",
-     "ASC 360-10 (gains and losses on disposal of long-lived assets that are not discontinued operations)",
-     "ASC 606-10 (timing of revenue recognition)", "ASC 320-10 (available-for-sale debt securities: unrealized holding gains and losses in other comprehensive income)"],
+     "ASC 360-10-45-5 (a gain or loss on a long-lived asset that is not a discontinued operation is included in income from continuing operations and, if presented, in income from operations)",
+     "ASC 330-10 (freight-in is a cost of inventory)", "ASC 606-10 (timing of revenue recognition)",
+     "ASC 320-10 (available-for-sale debt securities: unrealized holding gains and losses in other comprehensive income)"],
     "Reviewing a draft income statement",
     """Varga Co. distributes building products. Its accounting clerk drafted the Year 2 multi-step income statement in Exhibit 1, and the controller's review notes are in Exhibit 2. Varga's income tax rate is 25% on every item, including items of other comprehensive income, and the draft's tax amounts are 25% of the pretax amounts shown. Enter every amount in whole dollars, and enter a loss as a negative number.""",
     [("Exhibit 1: Draft income statement for Year 2", table(["", "Amount"], [
@@ -413,74 +417,77 @@ SIM4 = tbs(
      ("Exhibit 2: Controller's review notes", f"""
 | Ref | Note |
 |---|---|
-| 1 | Varga had two operating segments, wholesale and retail. On September 30, Year 2, it sold the entire retail division (its 14 stores, their staff and their inventory) to a competitor, and it will now sell only to contractors through its wholesale business. The draft includes the retail division's January 1 – September 30 results in its operating lines: sales {d(SEG['sales'])}, cost of goods sold {d(SEG['cogs'])}, selling expenses {d(SEG['selling'])}, general and administrative expenses {d(SEG['ga'])}. The {d(SEG_LOSS)} loss on the sale is correctly measured. |
+| 1 | Varga had two operating segments, wholesale and retail. On September 30, Year 2, it sold the entire retail division (its 14 stores, their staff and their inventory) to a competitor. Since then Varga has operated no stores, and all of its sales are to contractors through the wholesale business. The draft includes the retail division's January 1 – September 30 results in its operating lines: sales {d(SEG['sales'])}, cost of goods sold {d(SEG['cogs'])}, selling expenses {d(SEG['selling'])}, general and administrative expenses {d(SEG['ga'])}. The {d(SEG_LOSS)} loss on the sale is correctly measured. |
 | 2 | On November 20, Year 2, Varga sold one of its six wholesale warehouses for a loss of {d(WH_LOSS)} and moved that warehouse's stock to the other five. The amount of the loss is correct. |
 | 3 | Invoice 7742 for {d(CUTOFF)}, dated December 30, Year 2, was recorded in net sales. The goods were shipped on January 3, Year 3, under FOB shipping point terms, and were included in Varga's December 31 count, which is correctly reflected in cost of goods sold. |
-| 4 | General and administrative expenses include {d(INT_IN_GA)} of interest on Varga's bank loan and a {d(INS)} premium paid on October 1, Year 2, for a one-year property insurance policy. |
+| 4 | Selling expenses include {d(FREIGHT_IN)} of freight Varga paid on wholesale merchandise bought from suppliers under FOB shipping point terms; all of that merchandise was sold in Year 2. General and administrative expenses include a {d(INS)} premium paid on October 1, Year 2, for a one-year property insurance policy. |
 | 5 | "Gain on investments" is the increase in fair value during Year 2 of debt securities that Varga classifies as available for sale. Varga sold none of them. |
-| 6 | Interest income is from the same debt securities and is correct. Varga's sales returns and allowances of $26,000 were correctly deducted in arriving at net sales. |
+| 6 | Interest income is from the same debt securities and is correct. Varga's sales returns and allowances of $26,000 were correctly deducted in arriving at net sales. Varga has no debt. |
 """)],
     [
         num("t1", "What is Varga's correct gross profit for Year 2?", c_gp,
-            f"Net sales {d(DR['sales'])} − {d(SEG['sales'])} retail division − {d(CUTOFF)} January shipment = {d(c_sales)}; cost of goods sold {d(DR['cogs'])} − {d(SEG['cogs'])} retail = {d(c_cogs)}; gross profit {d(c_gp)}. The retail division was a component whose sale is a strategic shift (Varga left the retail business entirely), so its results move to discontinued operations. The January 3 shipment is Year 3 revenue under FOB shipping point terms, and its cost already sits in ending inventory."),
+            f"Net sales {d(DR['sales'])} − {d(SEG['sales'])} retail division − {d(CUTOFF)} January shipment = {d(c_sales)}; cost of goods sold {d(DR['cogs'])} − {d(SEG['cogs'])} retail + {d(FREIGHT_IN)} freight-in = {d(c_cogs)}; gross profit {d(c_gp)}. The retail division was a component whose sale is a strategic shift (Varga left the retail business entirely), so its results move to discontinued operations. The January 3 shipment is Year 3 revenue under FOB shipping point terms, and its cost already sits in ending inventory. Freight on purchases is a cost of the inventory, and the goods were sold, so it belongs in cost of goods sold."),
         num("t2", "What is Varga's correct income from operations for Year 2?", c_oi,
-            f"Gross profit {d(c_gp)} − selling {d(DR['selling'])} − {d(SEG['selling'])} = {d(c_selling)} − general and administrative {d(DR['ga'])} − {d(SEG['ga'])} retail − {d(INT_IN_GA)} interest (a nonoperating expense) − {d(ins_prepaid)} of insurance for January–September, Year 3, which is a prepaid asset = {d(c_ga)} − {d(WH_LOSS)} loss on the warehouse = {d(c_oi)}. Selling one of six warehouses is not a strategic shift, so the loss stays in continuing operations, and when income from operations is presented it includes losses on disposals of long-lived assets (leaving the loss out of operations gives {d(oi_with_wh_outside)}).",
+            f"Gross profit {d(c_gp)} − selling {d(DR['selling'])} − {d(SEG['selling'])} retail − {d(FREIGHT_IN)} freight-in = {d(c_selling)} − general and administrative {d(DR['ga'])} − {d(SEG['ga'])} retail − {d(ins_prepaid)} of insurance for January–September, Year 3, which is a prepaid asset = {d(c_ga)} − {d(WH_LOSS)} loss on the warehouse = {d(c_oi)}. Selling one of six warehouses is not a strategic shift, so the loss stays in continuing operations, and ASC 360-10-45-5 requires a subtotal such as income from operations to include it (leaving it out of operations gives {d(oi_with_wh_outside)}).",
             points=2),
         num("t3", "What is Varga's correct income from continuing operations (after income taxes) for Year 2?", c_cont,
-            f"Income from operations {d(c_oi)} + interest income {d(DR['int_inc'])} − interest expense {d(INT_IN_GA)} = {d(c_pretax)} before tax; − 25% tax {d(c_tax)} = {d(c_cont)}. The {d(DR['afs'])} fair value increase on available-for-sale debt securities goes to other comprehensive income, not net income.",
+            f"Income from operations {d(c_oi)} + interest income {d(DR['int_inc'])} = {d(c_pretax)} before tax; − 25% tax {d(c_tax)} = {d(c_cont)}. The {d(DR['afs'])} fair value increase on available-for-sale debt securities goes to other comprehensive income, not net income.",
             points=2),
         num("t4", "What amount should Varga report for discontinued operations, net of tax, for Year 2?", c_disc,
             f"Retail division results {d(SEG['sales'])} − {d(SEG['cogs'])} − {d(SEG['selling'])} − {d(SEG['ga'])} = {d(seg_pretax + SEG_LOSS)}, less the {d(SEG_LOSS)} loss on the sale = {d(seg_pretax)} before tax; net of the 25% tax benefit, {d(c_disc)}. The warehouse loss is not a discontinued operation."),
         num("t5", "What is Varga's correct net income for Year 2?", c_ni,
-            f"Income from continuing operations {d(c_cont)} + discontinued operations {d(c_disc)} = {d(c_ni)}. Check against the draft's {d(dr_ni)}: only three errors change net income, the {d(CUTOFF)} cutoff error and the {d(DR['afs'])} OCI item (both overstating it) and the {d(ins_prepaid)} of prepaid insurance (understating it), a net {d(CUTOFF + DR['afs'] - ins_prepaid)} before tax, {d(dr_ni - c_ni)} after tax."),
-        num("t6", "What amount of other comprehensive income, net of tax, should Varga report for Year 2?", c_oci,
-            f"The {d(DR['afs'])} unrealized holding gain on available-for-sale debt securities, less 25% tax of {d(tax(DR['afs']))} = {d(c_oci)}."),
+            f"Income from continuing operations {d(c_cont)} + discontinued operations {d(c_disc)} = {d(c_ni)}. Check against the draft's {d(dr_ni)}: only three errors change net income, the {d(CUTOFF)} cutoff error and the {d(DR['afs'])} fair value gain (both overstating it) and the {d(ins_prepaid)} of prepaid insurance (understating it), a net {d(CUTOFF + DR['afs'] - ins_prepaid)} before tax, {d(dr_ni - c_ni)} after tax."),
+        num("t6", "What is Varga's correct total comprehensive income for Year 2?", c_tci,
+            f"Net income {d(c_ni)} + other comprehensive income {d(c_oci)} (the {d(DR['afs'])} unrealized holding gain on available-for-sale debt securities, less 25% tax of {d(tax(DR['afs']))}) = {d(c_tci)}."),
     ],
 )
 
 # ── Simulation 5: NFP statement of activities (I.B.2b, Application) ───────────────────────────────────────────
-PATIENT, CASH_GIFTS, PHYS, UNSKILLED, INV_GAIN = 1850000, 410000, 45000, 18000, 7000
-VAN_GIFT, VAN_COST, GRANT, GRANT_SPENT = 120000, 95000, 80000, 50000
-PLEDGE, COND, COND_RAISED, ENDOW, ENDOW_RET, ENDOW_SPENT, BOARD = 60000, 100000, 30000, 250000, 14000, 9000, 75000
+PATIENT, CASH_GIFTS, PHYS_HOURS, PHYS_RATE, UNSKILLED, INV_GAIN = 1850000, 410000, 600, 75, 18000, 7000
+PHYS = PHYS_HOURS * PHYS_RATE
+FLU, BUILDING, BUILDING_TAX_VALUE = 30000, 220000, 160000
+GRANT, GRANT_SPENT, RUIZ = 80000, 50000, 40000
+PLEDGE, COND, ENDOW, ENDOW_RET, BOARD = 60000, 100000, 250000, -6000, 75000
 PROGRAM, MG, FR = 1980000, 290000, 85000
-released = VAN_COST + GRANT_SPENT + ENDOW_SPENT
+released = GRANT_SPENT + RUIZ
 expenses = PROGRAM + PHYS + MG + FR
-wodr = PATIENT + CASH_GIFTS + PHYS + INV_GAIN + released - expenses
+wodr = PATIENT + CASH_GIFTS + FLU + BUILDING + PHYS + INV_GAIN + released - expenses
 wdr = PLEDGE + ENDOW + ENDOW_RET - released
-contrib_total = CASH_GIFTS + PHYS + PLEDGE + ENDOW
+released_no_election = released + FLU
 assert wodr > 0 and wdr > 0
-wodr_if_unskilled = wodr  # unskilled services would add equal revenue and expense; shown for the explanation
 SIM5 = tbs(
-    "far-tbs-nfp-activities-0001", "Statement of activities (Not-for-Profit)", "Application",
-    ["ASC 958-605 (contributions: unconditional and conditional promises, contributed services, donor-imposed restrictions)",
-     "ASC 958-205 (net asset classes; releases from restriction; long-lived asset policy)",
+    "far-tbs-nfp-activities-0002", "Statement of activities (Not-for-Profit)", "Application",
+    ["ASC 958-605 (contributions: unconditional and conditional promises, contributed services and nonfinancial assets, donor-imposed restrictions, restrictions met in the same period)",
+     "ASC 958-205 (net asset classes; releases from restriction; endowment losses)",
      "ASC 958-225 (statement of activities)"],
     "Year 2 statement of activities",
-    """Wrenfield Community Clinic is a not-for-profit health clinic preparing its Year 2 statement of activities. Wrenfield's policies: restrictions on gifts of long-lived assets, or of cash to buy them, expire when the asset is placed in service; donor-restricted contributions and investment returns are reported as increases in net assets with donor restrictions even when the restriction is met in the same year; and all expenses are reported as decreases in net assets without donor restrictions. Enter every amount in whole dollars, and enter a decrease as a negative number.""",
+    """Wrenfield Community Clinic is a not-for-profit health clinic preparing its Year 2 statement of activities. As its accounting policy permits, Wrenfield reports donor-restricted contributions whose restrictions are met in the same year they are received as support without donor restrictions. Enter every amount in whole dollars, and enter a decrease as a negative number.""",
     [("Exhibit 1: Development office log of Year 2 gifts", f"""
 | Date | Donor | Gift |
 |---|---|---|
 | Throughout Year 2 | Individuals and businesses | Cash gifts with no donor stipulations, {d(CASH_GIFTS)} |
+| February 8 | Pemberton Realty | Title to a building, with no stipulation on its use, which Wrenfield opened as a satellite clinic in May. An independent appraisal put its fair value at {d(BUILDING)}; its assessed value for property tax purposes is {d(BUILDING_TAX_VALUE)}. |
 | April 2 | Hollin family | {d(ENDOW)} cash, to be invested permanently, with the investment return used for nursing scholarships |
-| June 15 | Larkspur Foundation | Written promise of {d(COND)}, to be paid only if Wrenfield raises {d(COND)} in new gifts from other donors by June 30, Year 3; {d(COND_RAISED)} had been raised by December 31, Year 2 |
-| December 12 | Okafor Trust | Unconditional written promise of {d(PLEDGE)}, payable in March, Year 3, with no purpose stated; collection is assured, and Wrenfield records it at the promised amount |
-| Throughout Year 2 | Volunteer physicians | 600 hours of patient care. Wrenfield would otherwise have paid contract physicians {d(PHYS)} for this work. |
+| June 15 | Larkspur Foundation | Written promise of {d(COND)} for a dental unit, payable only if Wrenfield opens the unit with a licensed dentist on staff by June 30, Year 3; otherwise the foundation owes nothing. Wrenfield has not yet hired a dentist. |
+| October 1 | Delacroix family | {d(FLU)} cash for the clinic's flu vaccination drive, all spent on vaccines in October and November |
+| December 12 | Okafor Trust | Unconditional written promise of {d(PLEDGE)} for the diabetes education program, payable in March, Year 3; collection is assured, and Wrenfield records it at the promised amount |
+| Throughout Year 2 | Volunteer physicians | {PHYS_HOURS} hours of patient care. Contract physicians in the area bill ${PHYS_RATE} an hour for the same work, and Wrenfield would have had to hire them. |
 | Throughout Year 2 | Community volunteers | Staffing the reception desk and mailing appeals, valued at {d(UNSKILLED)} at minimum wage |
 """),
      ("Exhibit 2: Controller's schedule of Year 2 activity", f"""
 | Item | Detail |
 |---|---|
 | Patient service revenue | {d(PATIENT)}, net of contractual adjustments |
-| Program services expenses | {d(PROGRAM)}, including {d(GRANT_SPENT)} spent on the diabetes education program, {d(ENDOW_SPENT)} of nursing scholarships and depreciation; excludes any donated services |
+| Program services expenses | {d(PROGRAM)}, including {d(GRANT_SPENT)} spent on the diabetes education program, the {d(FLU)} of flu vaccines and depreciation, including the satellite clinic's; excludes any donated services |
 | Management and general expenses | {d(MG)} |
 | Fundraising expenses | {d(FR)} |
-| Mobile clinic van | Bought for {d(VAN_COST)} in March, Year 2, with the van fund (Exhibit 3), and placed in service on March 20 |
-| Endowment | The Hollin endowment earned a return of {d(ENDOW_RET)} in Year 2. The board appropriated {d(ENDOW_SPENT)} of it, which was paid out as nursing scholarships. |
+| Endowment | The Hollin endowment had a net investment loss of {d(-ENDOW_RET)} in Year 2. The board appropriated nothing from it. |
+| Ruiz promise | The Ruiz family's promise (Exhibit 3) was collected in full in July, Year 2. |
 | Operating reserve | Investments with no donor restrictions had a net gain of {d(INV_GAIN)}. In December the board set aside {d(BOARD)} of these investments as a fund for future building repairs. |
 """),
-     ("Exhibit 3: Net assets with donor restrictions at January 1, Year 2", table(["Purpose", "Balance", "Source"], [
-         ("Mobile clinic van fund", d(VAN_GIFT), "Cash gift received in Year 1, restricted to buying and equipping a mobile clinic van; the donor's agreement requires any unspent balance to be used for the van's medical equipment"),
+     ("Exhibit 3: Net assets with donor restrictions at January 1, Year 2", table(["Item", "Balance", "Source"], [
          ("Diabetes education program", d(GRANT), "Cash grant received in Year 1, restricted to that program"),
+         ("Ruiz family promise", d(RUIZ), "Unconditional promise made in Year 1, payable in July, Year 2, with no purpose stated"),
      ]))],
     [
         select("t1", "Indicate whether Wrenfield should recognize each item as revenue, gains or other support in its Year 2 statement of activities, and if so in which net asset class.",
@@ -490,85 +497,93 @@ SIM5 = tbs(
                 ("r3", "Volunteer physicians' services", "Recognized — without donor restrictions"),
                 ("r4", "Community volunteers' services", "Not recognized"),
                 ("r5", "Hollin family gift", "Recognized — with donor restrictions"),
-                ("r6", "Net gain on the operating reserve investments", "Recognized — without donor restrictions")],
-               f"The Larkspur promise depends on a barrier Wrenfield hasn't overcome (a matching requirement) with a right of release, so it is conditional and not recognized. The Okafor promise is unconditional; because the cash comes in a later period, it carries an implied time restriction and is revenue with donor restrictions. The physicians' services need specialized skills Wrenfield would otherwise buy, so they are recognized ({d(PHYS)}) as revenue and as program expense. The reception and mailing work needs no specialized skills and doesn't create or enhance a nonfinancial asset, so it isn't recognized. The Hollin gift must be held in perpetuity, so it is with donor restrictions. The operating reserve gain has no donor stipulation; the board's December set-aside of {d(BOARD)} is an internal designation, not a donor restriction, so the gain stays without donor restrictions.",
+                ("r6", "Pemberton Realty building", "Recognized — without donor restrictions"),
+                ("r7", "Delacroix family gift", "Recognized — without donor restrictions")],
+               f"The Larkspur promise depends on a barrier Wrenfield hasn't overcome (opening a staffed dental unit) and the foundation owes nothing if it fails, so it is conditional and not recognized. The Okafor promise is unconditional and restricted to the diabetes program (and payable later), so it is with donor restrictions. The physicians' services need specialized skills Wrenfield would otherwise buy, so they are recognized ({PHYS_HOURS} × ${PHYS_RATE} = {d(PHYS)}) as revenue and as program expense. The reception and mailing work needs no specialized skills and doesn't create or enhance a nonfinancial asset, so it isn't recognized. The Hollin gift must be held in perpetuity, so it is with donor restrictions. The building came with no donor stipulation, so it is support without donor restrictions at its {d(BUILDING)} fair value; GAAP no longer lets an entity imply a time restriction on a gift of a long-lived asset. The Delacroix gift was restricted to the flu drive, but the restriction was met in the year received, so under Wrenfield's policy it is reported without donor restrictions.",
                points=2),
         num("t2", "What is Wrenfield's change in net assets without donor restrictions for Year 2?", wodr,
-            f"Patient service revenue {d(PATIENT)} + cash gifts {d(CASH_GIFTS)} + contributed physician services {d(PHYS)} + investment gain {d(INV_GAIN)} + net assets released from restrictions {d(released)} − expenses {d(expenses)} = {d(wodr)}. Expenses = program {d(PROGRAM)} + donated physician services {d(PHYS)} + management and general {d(MG)} + fundraising {d(FR)}. The van is capitalized, so only its depreciation (already in program expenses) is an expense.",
+            f"Patient service revenue {d(PATIENT)} + cash gifts {d(CASH_GIFTS)} + Delacroix gift {d(FLU)} + donated building {d(BUILDING)} + contributed physician services {d(PHYS)} + investment gain {d(INV_GAIN)} + net assets released from restrictions {d(released)} − expenses {d(expenses)} = {d(wodr)}. Expenses = program {d(PROGRAM)} + donated physician services {d(PHYS)} + management and general {d(MG)} + fundraising {d(FR)}. The board's set-aside is an internal designation and leaves the reserve without donor restrictions.",
             points=2),
         num("t3", "What is Wrenfield's change in net assets with donor restrictions for Year 2?", wdr,
-            f"Okafor promise {d(PLEDGE)} + Hollin endowment gift {d(ENDOW)} + endowment return {d(ENDOW_RET)} − net assets released {d(released)} = {d(wdr)}. Under Wrenfield's policy the endowment return is reported with donor restrictions until appropriated and spent.",
+            f"Okafor promise {d(PLEDGE)} + Hollin endowment gift {d(ENDOW)} − endowment investment loss {d(-ENDOW_RET)} − net assets released {d(released)} = {d(wdr)}. Losses on a donor-restricted endowment reduce net assets with donor restrictions, even below the original gift.",
             points=2),
         num("t4", "What total amount of net assets released from restrictions should Wrenfield report for Year 2?", released,
-            f"Van placed in service {d(VAN_COST)} (only the amount spent; the remaining {d(VAN_GIFT - VAN_COST)} of the van fund stays restricted) + diabetes program spending {d(GRANT_SPENT)} + endowment return appropriated and spent {d(ENDOW_SPENT)} = {d(released)}."),
+            f"Diabetes program spending {d(GRANT_SPENT)} (purpose restriction met) + the Ruiz promise collected in July {d(RUIZ)} (time restriction expired) = {d(released)}. The Delacroix gift never entered net assets with donor restrictions under Wrenfield's same-year policy, so it is not a release (without the policy, releases would be {d(released_no_election)})."),
         num("t5", "What total expenses should Wrenfield report for Year 2?", expenses,
-            f"Program services {d(PROGRAM)} + donated physician services {d(PHYS)} + management and general {d(MG)} + fundraising {d(FR)} = {d(expenses)}. The van purchase is capitalized, and the unrecognized volunteer services create no expense."),
+            f"Program services {d(PROGRAM)} + donated physician services {d(PHYS)} + management and general {d(MG)} + fundraising {d(FR)} = {d(expenses)}. The building is capitalized (only its depreciation, already in program expenses, is an expense), and the unrecognized volunteer services create no expense."),
     ],
 )
 
 # ── Simulation 6: basic and diluted EPS (I.D.c, Application) ──────────────────────────────────────────────────
-NI6, CT = 1480000, Decimal("0.21")
-PREF_SH, PREF_PAR, PREF_RATE = 20000, 100, Decimal("0.06")
-pref_div = int(PREF_SH * PREF_PAR * PREF_RATE)
-SH_JAN1, ISSUE_APR1, STOCK_DIV, TS_OCT1 = 400000, 60000, Decimal("0.10"), 24000
-wa = (Decimal(SH_JAN1) * (1 + STOCK_DIV) * 12 / 12 + Decimal(ISSUE_APR1) * (1 + STOCK_DIV) * 9 / 12
-      - Decimal(TS_OCT1) * 3 / 12)
+NI6, CT = 1250000, Decimal("0.25")
+PREF_SH, PREF_PAR, PREF_RATE = 10000, 50, Decimal("0.08")
+SH_JAN1, REISSUE_MAY1, SPLIT = 300000, 12000, Decimal("1.5")
+BONDS6, COUPON, CONV, CONVERTED = 1500000, Decimal("0.04"), 30, 500000
+conv_sh = CONVERTED // 1000 * CONV
+remain = BONDS6 - CONVERTED
+wa_pre = Decimal(SH_JAN1) + Decimal(REISSUE_MAY1) * 8 / 12 + Decimal(conv_sh) * 4 / 12
+wa = wa_pre * SPLIT
 assert wa == wa.to_integral_value()
 wa = int(wa)
-wa_no_sd = SH_JAN1 + ISSUE_APR1 * 9 // 12 - TS_OCT1 * 3 // 12
-avail = NI6 - pref_div
+wa_no_split = int(wa_pre)
+avail = NI6  # noncumulative preferred, no dividend declared
 basic = cents2(Decimal(avail) / wa)
-OPT_A, EX_A, OPT_B, EX_B, AVG, YE = 60000, 30, 20000, 45, 40, 44
-inc_a = OPT_A - OPT_A * EX_A // AVG
-inc_a_ye = OPT_A - Decimal(OPT_A * EX_A) / YE
-BONDS6, COUPON, CONV = 2000000, Decimal("0.05"), 25
-bond_sh = BONDS6 // 1000 * CONV
-bond_int = int(BONDS6 * COUPON * (1 - CT))
+pref_full = int(PREF_SH * PREF_PAR * PREF_RATE)
+basic_if_pref = cents2(Decimal(NI6 - pref_full) / wa)
+OPT, EX, AVG_PERIOD, AVG_YEAR, YE = 40000, 24, 32, 30, 35
+inc_pre = Decimal(OPT - OPT * EX / AVG_PERIOD) * 6 / 12
+inc = inc_pre * SPLIT
+assert inc == inc.to_integral_value()
+inc = int(inc)
+inc_year_avg = int((Decimal(OPT - Decimal(OPT * EX) / AVG_YEAR) * 6 / 12 * SPLIT).to_integral_value(ROUND_HALF_UP))
+bond_int_pre = Decimal(remain) * COUPON + Decimal(CONVERTED) * COUPON * 8 / 12
+bond_int = int((bond_int_pre * (1 - CT)).to_integral_value(ROUND_HALF_UP))
+assert bond_int == bond_int_pre * (1 - CT)
+bond_sh = int((Decimal(remain // 1000 * CONV) + Decimal(conv_sh) * 8 / 12) * SPLIT)
 per_bond = Decimal(bond_int) / bond_sh
-after_opt = Decimal(avail) / (wa + inc_a)
+after_opt = Decimal(avail) / (wa + inc)
 assert per_bond < after_opt
-diluted = cents2((Decimal(avail) + bond_int) / (wa + inc_a + bond_sh))
-assert EX_B > AVG
-diluted_no_tax = cents2((Decimal(avail) + BONDS6 * COUPON) / (wa + inc_a + bond_sh))
+diluted = cents2((Decimal(avail) + bond_int) / (wa + inc + bond_sh))
+diluted_remaining_only = cents2((Decimal(avail) + int(remain * COUPON * (1 - CT))) / (wa + inc + int(remain // 1000 * CONV * SPLIT)))
 SIM6 = tbs(
-    "far-tbs-eps-0001", "Public Company Reporting Topics", "Application",
-    ["ASC 260-10 (basic and diluted EPS: weighted-average shares, stock dividends, treasury stock method, if-converted method, antidilution, cumulative preferred dividends)"],
+    "far-tbs-eps-0002", "Public Company Reporting Topics", "Application",
+    ["ASC 260-10 (basic and diluted EPS: weighted-average shares, stock splits after the balance sheet date, treasury stock method for options outstanding part of the period, if-converted method including conversions during the period, noncumulative preferred stock)"],
     "Year 2 earnings per share",
-    f"""Corwin Corp., a public company, reports net income of {d(NI6)} for Year 2, its calendar year. Its income tax rate is 21%. Use the share records and the potential common shares in the exhibits. Round each earnings per share amount to the nearest cent (enter, for example, 1.23), and enter share counts as whole numbers.""",
-    [("Exhibit 1: Share records for Year 2", f"""
+    f"""Corwin Corp., a public company, reports net income of {d(NI6)} for Year 2, its calendar year. Its income tax rate is 25%. Corwin's Year 2 financial statements will be issued on March 1, Year 3. Use the exhibits, and give every share figure on the basis on which Corwin will report it in its Year 2 statements. Round each earnings per share amount to the nearest cent (enter, for example, 1.23), and enter share counts as whole numbers.""",
+    [("Exhibit 1: Share records", f"""
 | Date | Event |
 |---|---|
-| January 1 | {SH_JAN1:,} common shares outstanding |
-| April 1 | Issued {ISSUE_APR1:,} common shares for cash |
-| July 1 | Distributed a 10% stock dividend on common stock |
-| October 1 | Bought back {TS_OCT1:,} common shares, held as treasury stock |
-| December 15 | Declared and paid a cash dividend of $0.50 per common share |
-| All year | {PREF_SH:,} shares of {int(PREF_RATE * 100)}% cumulative, nonconvertible preferred stock, ${PREF_PAR} par, outstanding. The board did not declare a preferred dividend in Year 2. |
+| January 1, Year 2 | {SH_JAN1:,} common shares outstanding; 20,000 shares held in treasury |
+| May 1, Year 2 | Reissued {REISSUE_MAY1:,} treasury shares for cash |
+| September 1, Year 2 | Holders converted {d(CONVERTED)} face of the convertible bonds (Exhibit 2) into common shares |
+| December 15, Year 2 | Declared and paid a cash dividend of $0.40 per common share |
+| February 10, Year 3 | The board declared a 3-for-2 stock split, distributed February 24, Year 3 |
+| All year | {PREF_SH:,} shares of {int(PREF_RATE * 100)}% noncumulative, nonconvertible preferred stock, ${PREF_PAR} par, outstanding. The board declared no preferred dividend for Year 2. |
 """),
      ("Exhibit 2: Potential common shares and market data", f"""
 | Item | Detail |
 |---|---|
-| Convertible bonds | {d(BONDS6)} face, {int(COUPON * 100)}% interest paid annually, issued at par in Year 0. Each $1,000 bond converts into {CONV} common shares. None were converted in Year 2. |
-| Options, Grant A | {OPT_A:,} options, exercise price ${EX_A}, outstanding all year |
-| Options, Grant B | {OPT_B:,} options, exercise price ${EX_B}, outstanding all year |
-| Market price of common stock | Average for Year 2, ${AVG}; December 31, Year 2, ${YE} |
-| Note | Option counts, exercise prices and the conversion ratio are stated after the adjustment for the July 1 stock dividend. |
+| Convertible bonds | {d(BONDS6)} face, {int(COUPON * 100)}% interest paid each December 31 issued at par in Year 0. Bonds converted during the year are paid interest accrued to the conversion date. Each $1,000 bond converts into {CONV} common shares. |
+| Stock options | {OPT:,} options with an exercise price of ${EX}, granted July 1, Year 2; none exercised or forfeited |
+| Market price of common stock | Average for July–December, Year 2, ${AVG_PERIOD}; average for all of Year 2, ${AVG_YEAR}; December 31, Year 2, ${YE} |
+| Note | Every share count, price and conversion ratio in Exhibits 1 and 2 is stated before the 3-for-2 split. |
 """)],
     [
         units("t1", "What is Corwin's weighted-average number of common shares outstanding for basic EPS for Year 2?", wa,
-              f"The stock dividend is applied retroactively to the shares outstanding before it: {SH_JAN1:,} × 1.10 × 12/12 = {int(SH_JAN1 * Decimal('1.1')):,}; {ISSUE_APR1:,} × 1.10 × 9/12 = {int(ISSUE_APR1 * Decimal('1.1') * 9 / 12):,}; treasury shares {TS_OCT1:,} × 3/12 = {TS_OCT1 * 3 // 12:,} subtracted. Total {wa:,}. Ignoring the stock dividend gives {wa_no_sd:,}.",
+              f"Before the split: {SH_JAN1:,} + {REISSUE_MAY1:,} reissued treasury shares × 8/12 = {REISSUE_MAY1 * 8 // 12:,} + {conv_sh:,} shares issued on conversion ({CONVERTED // 1000:,} bonds × {CONV}) × 4/12 = {conv_sh * 4 // 12:,}, a total of {wa_no_split:,}. A stock split declared after year end but before the statements are issued is applied retroactively: {wa_no_split:,} × 1.5 = {wa:,}.",
               points=2),
-        num("t2", "What income is available to common shareholders for basic EPS for Year 2?", avail,
-            f"{d(NI6)} − {d(pref_div)} cumulative preferred dividends ({PREF_SH:,} × ${PREF_PAR} × {int(PREF_RATE * 100)}%) = {d(avail)}. Cumulative preferred dividends are deducted for the year whether or not declared. The common dividend doesn't affect EPS."),
-        num("t3", "What is Corwin's basic EPS for Year 2?", basic,
-            f"{d(avail)} ÷ {wa:,} = {basic}.", tolerance=0),
-        units("t4", "How many incremental shares do Grant A's options add to the denominator of diluted EPS?", inc_a,
-              f"Treasury stock method at the average market price: the assumed proceeds of {OPT_A:,} × ${EX_A} = {d(OPT_A * EX_A)} would buy back {d(OPT_A * EX_A)} ÷ ${AVG} = {OPT_A * EX_A // AVG:,} shares, so {OPT_A:,} − {OPT_A * EX_A // AVG:,} = {inc_a:,} incremental shares. Using the year-end price would give about {int(inc_a_ye.to_integral_value(ROUND_HALF_UP)):,}."),
+        num("t2", "What is Corwin's basic EPS for Year 2?", basic,
+            f"{d(avail)} ÷ {wa:,} = {basic}. The preferred stock is noncumulative and no dividend was declared for Year 2, so nothing is deducted (deducting a full year's {d(pref_full)} would give {basic_if_pref}). The common dividend doesn't affect EPS.", tolerance=0),
+        units("t3", "How many incremental shares do the stock options add to the denominator of diluted EPS?", inc,
+              f"Treasury stock method, using the average price for the period the options were outstanding: {OPT:,} − {OPT:,} × ${EX} ÷ ${AVG_PERIOD} = {OPT - OPT * EX // AVG_PERIOD:,} shares, weighted for the six months since the July 1 grant = {int(inc_pre):,}, × 1.5 for the split = {inc:,}. Using the full-year average price would give {inc_year_avg:,}."),
+        num("t4", "By what amount does Corwin adjust the numerator of diluted EPS for the convertible bonds?", bond_int,
+            f"Add back the after-tax interest recognized in Year 2 on all the bonds: {d(remain)} × {int(COUPON * 100)}% = {d(int(remain * COUPON))} on the bonds still outstanding, plus {d(CONVERTED)} × {int(COUPON * 100)}% × 8/12 = {d(int(CONVERTED * COUPON * 8 / 12))} on the converted bonds until September 1, a total of {d(int(bond_int_pre))}, × (1 − 25%) = {d(bond_int)}."),
         num("t5", "What is Corwin's diluted EPS for Year 2?", diluted,
-            f"Grant A is dilutive ({inc_a:,} shares). Grant B's ${EX_B} exercise price is above the ${AVG} average market price, so it is antidilutive and excluded. The bonds add {d(bond_int)} of after-tax interest ({d(BONDS6)} × {int(COUPON * 100)}% × (1 − 21%)) and {bond_sh:,} shares, {per_bond.quantize(Decimal('0.01'))} per incremental share, below the {after_opt.quantize(Decimal('0.01'))} EPS after the options, so they are dilutive. ({d(avail)} + {d(bond_int)}) ÷ ({wa:,} + {inc_a:,} + {bond_sh:,}) = {diluted}. Adding back the interest before tax would give {diluted_no_tax}.",
+            f"The options add {inc:,} shares. The bonds add {d(bond_int)} to income and {bond_sh:,} shares (after the split, {remain // 1000 * CONV:,} for the bonds outstanding all year plus {conv_sh:,} × 8/12 for the converted bonds before conversion, × 1.5), {per_bond.quantize(Decimal('0.01'))} per incremental share, below the {after_opt.quantize(Decimal('0.01'))} EPS after the options, so they are dilutive. ({d(avail)} + {d(bond_int)}) ÷ ({wa:,} + {inc:,} + {bond_sh:,}) = {diluted}. Ignoring the converted bonds' interest and shares before September 1 would give {diluted_remaining_only}.",
             points=2, tolerance=0),
     ],
 )
+
 
 ITEMS = [SIM1, SIM2, SIM3, SIM4, SIM5, SIM6]
 
@@ -584,6 +599,6 @@ if __name__ == "__main__":
     print("cash flows", ni, cfo, cfi, cff, y2["cash"], int_paid, tax_paid, div_paid)
     print("consolidation", cor["cogs"], cor["ni"], draft["ni"], cor_bs["equip"], cor_bs["re"], [a for *_, a in sel2])
     print("balance sheet", cr_cash, cr_ca, cr_cl, cr_re, cr_eq, dr_re)
-    print("income statement", c_gp, c_oi, c_cont, c_disc, c_ni, c_oci, dr_ni)
+    print("income statement", c_gp, c_oi, c_cont, c_disc, c_ni, c_tci, dr_ni)
     print("nfp", wodr, wdr, released, expenses)
-    print("eps", wa, avail, basic, inc_a, bond_int, diluted)
+    print("eps", wa, basic, inc, bond_int, bond_sh, diluted)
