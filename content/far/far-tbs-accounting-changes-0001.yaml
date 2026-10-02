@@ -33,7 +33,7 @@ exhibits:
     Corrieside''s records allow it to compute weighted-average inventory at every prior year end (Exhibit
     2). |
 
-    | Sales commissions | On July 1, Year 2, Corrieside paid its sales staff commissions of $96,000 for
+    | Sales commissions | On July 1, Year 2, Corrieside paid its sales staff commissions of $108,000 for
     signing three-year service contracts that run from July 1, Year 2, to June 30, Year 5. The commissions
     were paid only because the contracts were signed, and Corrieside expects to recover them from the
     contract margins. Corrieside charged them to Year 2 expense. Its policy for costs of obtaining contracts
@@ -63,13 +63,13 @@ exhibits:
 
     | Year 2 net income, as originally reported | 1,180,000 |
 
-    | Staff adjustment: capitalize the July 1, Year 2, commissions, less Year 2 amortization of $32,000,
-    net of tax | 48,000 |
+    | Staff adjustment: July 1, Year 2, sales commissions, net of tax (the staff''s Year 2 amortization
+    is $36,000) | 54,000 |
 
     | Staff adjustment: depreciation on the fleet under its revised 6-year life ($225,000 a year, against
     $135,000 reported), net of tax | (67,500) |
 
-    | Year 2 net income, as adjusted by the staff | 1,160,500 |
+    | Year 2 net income, as adjusted by the staff | 1,166,500 |
 
     | Retained earnings, January 1, Year 2, as originally reported | 4,620,000 |
 
@@ -80,7 +80,7 @@ exhibits:
 
     The Year 3 draft uses weighted-average cost for Year 3 purchases and for ending inventory ($930,000).
     Its cost of goods sold starts from the December 31, Year 2, inventory as reported in the Year 2 balance
-    sheet. It includes $32,000 of commission amortization and fleet depreciation of $270,000, computed
+    sheet. It includes $36,000 of commission amortization and fleet depreciation of $270,000, computed
     on the fleet''s carrying amount at December 31, Year 2, as originally reported. The staff made no
     other adjustments. All net income and adjustment amounts in this exhibit are after income taxes.'
 tasks:
@@ -119,25 +119,26 @@ tasks:
   unit: cents
   tolerance: 100
   prompt: What net income should Corrieside report for Year 2 in its comparative statements?
-  answer: 122650000
+  answer: 123400000
   explanation: 'Start from $1,180,000 as reported. Commissions: Year 2 expense should have been amortization
-    of $96,000 × 6/36 = $16,000, not $96,000: + ($96,000 − $16,000) × 75% = $60,000 (the staff amortized
-    a full year, $32,000, though the contracts began July 1, giving $48,000). Inventory: weighted average
+    of $108,000 × 6/36 = $18,000, not $108,000: + ($108,000 − $18,000) × 75% = $67,500 (the staff amortized
+    a full year, $36,000, though the contracts began July 1, giving $54,000). Inventory: weighted average
     lowers December 31, Year 1, inventory by $36,000 and December 31, Year 2, inventory by $54,000, so
     Year 2 cost of goods sold rises by $54,000 − $36,000 = $18,000: − $18,000 × 75% = $13,500. The fleet
-    change is prospective, so the staff''s $67,500 reduction is reversed. Year 2: $1,180,000 + $60,000
-    − $13,500 = $1,226,500. Charging the whole Year 2 inventory difference to Year 2 gives $1,199,500.'
+    change is prospective, so the staff''s $67,500 reduction is reversed. Year 2: $1,180,000 + $67,500
+    − $13,500 = $1,234,000. Charging the whole Year 2 inventory difference to Year 2 gives $1,207,000.'
 - id: t3
   type: numeric
   points: 1
   unit: cents
   tolerance: 100
-  prompt: What retained earnings should Corrieside report at January 1, Year 2, as adjusted, in its comparative
-    statements?
-  answer: 459300000
-  explanation: 'Only the inventory change reaches periods before Year 2: weighted average lowers December
-    31, Year 1, inventory by $36,000, and so cumulative income before Year 2 by $36,000 × 75% = $27,000.
-    $4,620,000 − $27,000 = $4,593,000. The commission error arose in Year 2, and the fleet change is prospective.'
+  prompt: What retained earnings should Corrieside report at December 31, Year 2, as adjusted, in its
+    comparative statements?
+  answer: 552700000
+  explanation: 'Opening balance: only the inventory change reaches periods before Year 2. Weighted average
+    lowers December 31, Year 1, inventory by $36,000, so cumulative income before Year 2 falls by $36,000
+    × 75% = $27,000: $4,620,000 − $27,000 = $4,593,000. Then + Year 2 net income as restated $1,234,000
+    − dividends $300,000 = $5,527,000. The staff''s figures give $5,486,500.'
 - id: t4
   type: numeric
   points: 2
@@ -148,14 +149,14 @@ tasks:
   explanation: 'The draft''s Year 3 cost of goods sold starts from FIFO inventory of $905,000; under retrospective
     application, beginning inventory is the weighted-average $851,000. Cost of goods sold falls by $54,000,
     and net income rises by $54,000 × 75% = $40,500: $1,306,000 + $40,500 = $1,346,500. The draft''s commission
-    amortization ($96,000 × 12/36 = $32,000) and fleet depreciation (($1,350,000 − 2 × $135,000) ÷ 4 remaining
-    years = $270,000) are already correct.'
+    amortization ($108,000 × 12/36 = $36,000) and fleet depreciation (($1,350,000 − 2 × $135,000) ÷ 4
+    remaining years = $270,000) are already correct.'
 - id: t5
   type: numeric
   points: 1
   unit: cents
   tolerance: 100
   prompt: What retained earnings should Corrieside report at December 31, Year 3?
-  answer: 654600000
-  explanation: $4,593,000 + Year 2 net income $1,226,500 − dividends $300,000 + Year 3 net income $1,346,500
-    − dividends $320,000 = $6,546,000.
+  answer: 655350000
+  explanation: December 31, Year 2, as adjusted $5,527,000 + Year 3 net income $1,346,500 − dividends
+    $320,000 = $6,553,500.

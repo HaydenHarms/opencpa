@@ -10,6 +10,7 @@ review:
   references:
   - 'ASC 450-20 (loss contingencies: accrual, ranges with no best estimate, unasserted claims, disclosure)'
   - ASC 450-30 (gain contingencies)
+  - ASC 460-10 (indemnifications; contingent losses under ASC 450-20)
   - ASC 330-10-35-17 and 35-18 (losses on firm purchase commitments)
   notes: FAR simulations batch 04. Written from scratch; every number computed in code.
 title: Year 1 contingencies and commitments review
@@ -42,13 +43,15 @@ exhibits:
     that Larkhall''s Year 0 annual report misstated its backlog. The trial court dismissed the suit in
     November, Year 1, and the plaintiff has appealed. The state''s appellate court has affirmed the dismissal
     of every suit raising this claim in the past ten years, and we know of nothing that distinguishes
-    this one. |
+    this one. We see no reasonable prospect that the appeal will succeed. |
 
-    | 4. Unasserted claim: warehouse injury (December 14, Year 1) | A contractor''s employee was injured
-    while installing racking in Larkhall''s Elmford warehouse. No claim has been made, but the employee''s
-    attorney has requested the incident report, and we expect a claim to be filed. Larkhall''s position
-    that the contractor controlled the work site has merit, but we cannot predict the outcome; if Larkhall
-    is found liable, damages would likely be between $150,000 and $400,000. |
+    | 4. Indemnification claim: Elmford Valve Co. | When Larkhall sold its valve division to Elmford Valve
+    Co. in Year 0, it agreed to indemnify Elmford for losses from any breach of its representations about
+    the division''s customer contracts; the indemnity''s fair value when given was immaterial, and no
+    liability was recorded. In December, Year 1, Elmford gave notice of a claim under the indemnity, alleging
+    that two contracts were less profitable than represented. Larkhall''s defense that the contracts were
+    disclosed accurately has merit, but we cannot predict the outcome; if the claim succeeds, Larkhall
+    would likely pay between $150,000 and $400,000. |
 
     | 5. Larkhall v. Haskett Castings | In December, Year 1, a jury awarded Larkhall $280,000 for defective
     castings Haskett supplied. Haskett has appealed, and the appeal will not be heard before Year 3. |'
@@ -77,8 +80,8 @@ exhibits:
 
     | Quarrendon shareholder suit | Not accrued or disclosed | — |
 
-    | Warehouse injury | Not accrued; note describes the incident and counsel''s range of $150,000 to
-    $400,000 | — |
+    | Elmford indemnification claim | Not accrued; note describes the claim and counsel''s range of $150,000
+    to $400,000 | — |
 
     | Haskett jury award | Other receivable; gain recognized in Year 1 other income | 280,000 |
 
@@ -104,7 +107,7 @@ tasks:
     label: Quarrendon shareholder suit
     answer: No recognition or disclosure required
   - id: r4
-    label: Warehouse injury
+    label: Elmford indemnification claim
     answer: Disclose in the notes only
   - id: r5
     label: Haskett jury award
@@ -116,12 +119,12 @@ tasks:
     accrue. Sales tax: payment of part of the assessment is probable and counsel gives a most likely amount;
     accrue it (a non-income tax is a loss contingency under ASC 450-20). Quarrendon: after a dismissal
     that the appellate court has affirmed in every comparable case, the chance of loss is remote; no accrual
-    or disclosure is required. Warehouse injury: an unasserted claim is disclosed when assertion is probable
-    and an unfavorable outcome is reasonably possible; counsel expects a claim but can''t predict the
-    outcome, so disclose, don''t accrue. Haskett: a jury award under appeal is a gain contingency; it
-    is not recognized until realized, but it is disclosed, with care not to mislead about its likelihood
-    (ASC 450-30-50-1). Halvey: a net loss on a firm, noncancelable, unhedged purchase commitment is recognized
-    when the goods'' expected net realizable value falls below the contract price (ASC 330-10-35-17).'
+    or disclosure is required. Elmford: the indemnification claim has been asserted, and counsel can''t
+    predict the outcome, so a loss is reasonably possible but not probable; disclose the claim and the
+    range, don''t accrue. Haskett: a jury award under appeal is a gain contingency; it is not recognized
+    until realized, but it is disclosed, with care not to mislead about its likelihood (ASC 450-30-50-1).
+    Halvey: a net loss on a firm, noncancelable, unhedged purchase commitment is recognized when the goods''
+    expected net realizable value falls below the contract price (ASC 330-10-35-17).'
 - id: t2
   type: numeric
   points: 2
@@ -133,8 +136,8 @@ tasks:
     $550,000 midpoint). Sales tax: the most likely amount, $124,000. Halvey: the expected net realizable
     value is $1,900 − $210 = $1,690 a pump, so the loss is 600 × ($1,850 − $1,690) = $96,000, recognized
     as a liability for the purchase commitment (the $1,640 replacement price is not the measure; it gives
-    $126,000). Total: $340,000 + $124,000 + $96,000 = $560,000. Nothing is accrued for the warehouse injury,
-    the shareholder suit or the jury award.'
+    $126,000). Total: $340,000 + $124,000 + $96,000 = $560,000. Nothing is accrued for the indemnification
+    claim, the shareholder suit or the jury award.'
 - id: t3
   type: numeric
   points: 2
@@ -151,9 +154,9 @@ tasks:
   points: 1
   unit: cents
   tolerance: 100
-  prompt: Using the top of each range counsel gives, what total loss in excess of the amounts accrued
-    is reasonably possible and must be disclosed in Larkhall's notes?
+  prompt: Up to the top of each range counsel gives, what total additional loss, beyond any amount Larkhall
+    accrues, should its notes disclose for the six matters?
   answer: 88200000
   explanation: 'Arrandale: $760,000 − $340,000 accrued = $420,000. Sales tax: $186,000 − $124,000 accrued
-    = $62,000. Warehouse injury (nothing accrued): $400,000. Total $882,000. Omitting the sales tax excess
+    = $62,000. Elmford claim (nothing accrued): $400,000. Total $882,000. Omitting the sales tax excess
     gives $820,000; the remote shareholder suit is excluded.'

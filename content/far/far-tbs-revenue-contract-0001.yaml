@@ -128,14 +128,15 @@ tasks:
   points: 1
   unit: cents
   tolerance: 100
-  prompt: How much of the transaction price should Stannard allocate to the installation?
-  answer: 6921400
+  prompt: How much of the transaction price should Stannard allocate to the scanner?
+  answer: 161498300
   explanation: 'Transaction price: $1,705,000 + 3 × $138,000 = $2,119,000. Standalone selling prices:
     scanner $1,820,000 (observable; not the $2,050,000 list price), installation $62,400 × 1.25 = $78,000
     under Stannard''s expected cost plus margin policy, training $46,000, maintenance 3 × $148,000 = $444,000;
-    total $2,388,000. Installation: $2,119,000 × 78,000 ÷ 2,388,000 = $69,214 (rounded). Using the independent
-    installers'' $95,000 gives $83,703. The discount is allocated to every obligation in proportion, because
-    nothing ties it to particular items.'
+    total $2,388,000. Scanner: $2,119,000 × 1,820,000 ÷ 2,388,000 = $1,614,983 (rounded). The software
+    is part of the scanner, so it gets no separate share. Using the $2,050,000 list price gives $1,659,263;
+    using the independent installers'' $95,000 for installation gives $1,603,568. The discount is allocated
+    to every obligation in proportion, because nothing ties it to particular items.'
 - id: t3
   type: numeric
   points: 2
@@ -143,11 +144,11 @@ tasks:
   tolerance: 100
   prompt: What revenue should Stannard recognize from the contract in Year 1?
   answer: 180718400
-  explanation: 'Allocations: scanner $1,614,983, installation $69,214, training $40,818, maintenance $393,985
-    (total $2,119,000). Scanner: control passed on delivery, February 24, so all $1,614,983. Installation:
-    completed March 31, so all $69,214. Training: 6 of 10 sessions, $40,818 × 6/10 = $24,491. Maintenance:
-    9 of 36 months, $393,985 × 9/36 = $98,496 (rounded). Total $1,807,184. Recognizing all of the training
-    gives $1,823,511.'
+  explanation: 'Allocations, computed as in task 2: scanner $1,614,983, installation $69,214, training
+    $40,818, maintenance $393,985 (total $2,119,000). Scanner: control passed on delivery, February 24,
+    so all $1,614,983. Installation: completed March 31, so all $69,214. Training: 6 of 10 sessions, $40,818
+    × 6/10 = $24,491. Maintenance: 9 of 36 months, $393,985 × 9/36 = $98,496 (rounded). Total $1,807,184.
+    Recognizing all of the training gives $1,823,511.'
 - id: t4
   type: numeric
   points: 2

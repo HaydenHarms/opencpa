@@ -10,7 +10,10 @@ review:
   references:
   - ASC 842-20-30-1 and 30-5 (initial measurement of the lease liability and right-of-use asset; incentives;
     initial direct costs)
-  - ASC 842-10-30-2 and 842-10-15-37 (initial direct costs; combining lease and nonlease components)
+  - ASC 842-10-30-9 and 30-10 (initial direct costs, including payments to an existing tenant to end its
+    lease)
+  - ASC 842-10-30-5 (lease incentives reduce lease payments) and 842-10-15-37 (combining lease and nonlease
+    components)
   - 'ASC 842-10-30-5 and 842-10-35-5 (variable payments that depend on an index: initial measurement and
     remeasurement)'
   - ASC 842-10-35-1 and 35-4 (reassessing the lease term; updating the discount rate)
@@ -19,9 +22,10 @@ review:
 title: 'Operating lease of production space: two years and a remeasurement'
 scenario: Kerrow Precision Parts closes its books each December 31. Exhibit 1 summarizes its lease of
   production space, Exhibit 2 gives information from the first two years, and Exhibit 3 gives present
-  value factors. Kerrow makes any reassessment of the lease as of December 31, Year 2. Treat December
-  31 and the following January 1 as the same date for discounting. Round every amount to the nearest dollar,
-  including interest each year.
+  value factors. Kerrow makes any reassessment of the lease as of December 31, Year 2; the lease is an
+  operating lease throughout. Measure the fit-out reimbursement at the full amount, ignoring the time
+  until it is paid. Treat December 31 and the following January 1 as the same date for discounting. Round
+  every amount to the nearest dollar, including interest each year.
 exhibits:
 - title: 'Exhibit 1: Lease summary'
   body: '| Term | Detail |
@@ -41,12 +45,14 @@ exhibits:
     | Common area maintenance | Kerrow reimburses Stellan for its share of the building''s actual maintenance
     costs each year. |
 
-    | Incentive | Stellan paid Kerrow $40,000 in cash at commencement to induce it to sign the lease.
-    |
+    | Fit-out | Kerrow fits out the space at its own cost and owns the fit-out. Stellan agrees to reimburse
+    $40,000 of the fit-out costs; at commencement Kerrow had already spent more than that, and Stellan
+    paid the $40,000 on February 10, Year 1. |
 
-    | Costs of signing | Kerrow paid a leasing broker a $6,000 commission that was owed only because the
-    lease was signed. Kerrow''s in-house legal staff spent time reviewing the lease that Kerrow values
-    at $3,500. |'
+    | Other costs | To free the space for Kerrow, Kerrow paid the previous tenant $6,000 on January 1,
+    Year 1, to end its lease early, a payment Kerrow would not have made without this lease. Before deciding
+    to lease, Kerrow paid an engineer $3,500 to inspect the building, a fee owed whether or not Kerrow
+    signed. |'
 - title: 'Exhibit 2: Lease information, Years 1 and 2'
   body: '| Date or period | Information |
 
@@ -57,7 +63,8 @@ exhibits:
     no significant improvements in the space. Kerrow''s incremental borrowing rate was 6%; Stellan''s
     implicit rate is not known to Kerrow. |
 
-    | Consumer price index | December 31, Year 1: 103.5. December 31, Year 2: 106.0. |
+    | Consumer price index | December 31, Year 1: 103.5. December 31, Year 2: 106.0. Kerrow paid the rent
+    due January 1, Year 2, on time. |
 
     | Common area maintenance billed and paid | Year 1: $18,600. Year 2: $21,300. |
 
@@ -96,8 +103,9 @@ tasks:
   answer: 50181300
   explanation: 'Lease liability: $120,000 × 4.46511 = $535,813 (rounded), the present value of five payments
     due in advance at 6%, measured with the index at commencement. Right-of-use asset: $535,813 − the
-    $40,000 incentive received + the $6,000 broker''s commission = $501,813. The in-house legal time is
-    not incremental, so it is not an initial direct cost (including it gives $505,313).'
+    $40,000 fit-out reimbursement, a lease incentive receivable at commencement + the $6,000 paid to the
+    previous tenant, an initial direct cost = $501,813. The inspection fee was owed whether or not the
+    lease was signed, so it is not an initial direct cost (including it gives $505,313).'
 - id: t2
   type: numeric
   points: 1

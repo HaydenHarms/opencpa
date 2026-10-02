@@ -13,7 +13,6 @@ review:
   - 'ASC 470-10-45-11 (callable obligations: covenant waivers obtained before issuance)'
   - ASC 470-10-45-14 (short-term obligations refinanced after the balance sheet date)
   - 'ASC 360-10-35-43 (long-lived assets held for sale: fair value less cost to sell)'
-  - 'ASC 260-10-55-12 (stock splits after the period end: retroactive adjustment of EPS)'
   - ASC 420-10 (exit costs recognized when incurred)
   notes: FAR simulations batch 04. Written from scratch; every number computed in code.
 title: Year 1 subsequent events review
@@ -21,7 +20,7 @@ scenario: Penwortham Fixtures Inc., a public company that makes refrigerated dis
   December 31, Year 1, financial statements with the SEC on March 12, Year 2. Exhibit 1 shows amounts
   from the staff's draft, prepared in early January, Year 2, before any of the events in Exhibit 2 were
   considered. Exhibit 2 is the controller's log of documents received after year end. Ignore income taxes.
-  Round dollar amounts to the nearest dollar and earnings per share to the nearest cent.
+  Round every amount to the nearest dollar.
 exhibits:
 - title: 'Exhibit 1: Draft amounts, December 31, Year 1'
   body: '| Item | Amount |
@@ -30,8 +29,8 @@ exhibits:
 
     | Net income, Year 1 | 1,742,000 |
 
-    | Common shares outstanding, January 1 through December 31, Year 1 (no other issuances or repurchases)
-    | 400,000 |
+    | Total current assets (including the Ostler receivable and the equipment held for sale) | 6,480,000
+    |
 
     | Current liabilities: accounts payable and accrued liabilities | 1,860,000 |
 
@@ -41,8 +40,8 @@ exhibits:
 
     | Total current liabilities | 5,260,000 |
 
-    | Equipment held for sale (classified as held for sale on November 30, Year 1, when its carrying amount
-    was below its fair value less cost to sell, estimated then at $655,000) | 640,000 |
+    | Equipment held for sale (classified as held for sale on November 30, Year 1, at its carrying amount)
+    | 640,000 |
 
 
     Note on the term loan: the loan is repayable in installments of $300,000 each December 31 from Year
@@ -72,7 +71,8 @@ exhibits:
 
     | February 12 | Letter from Calder Trust | Calder Trust waives the December 31, Year 1, covenant violation
     and gives up any right to demand repayment because of it, or because of any other covenant violation,
-    before March 31, Year 3. The installment schedule is unchanged. |
+    before March 31, Year 3. The installment schedule is unchanged. Penwortham expects to meet the covenant
+    at every measurement date in Year 2. |
 
     | February 14 | Bill of sale and broker''s statement | The equipment held for sale was sold for $575,000;
     the broker''s commission is 3% of the price. The buyer''s offer, made January 10, was based on an
@@ -80,9 +80,6 @@ exhibits:
     between November and February. |
 
     | February 15 | Bank statement | The Brannock Bank note was repaid in full with the bond proceeds.
-    |
-
-    | February 20 | Board minutes | The board declared a 2-for-1 stock split, distributed on March 2.
     |
 
     | March 20 | Complaint | A customer sued Penwortham for $125,000, alleging that a cooler Penwortham
@@ -132,7 +129,7 @@ tasks:
   explanation: 'Revenue falls by the $42,000 price reduction. The held-for-sale equipment is written down
     to fair value less cost to sell: $575,000 − $17,250 commission (3% × $575,000) = $557,750, a loss
     of $640,000 − $557,750 = $82,250. Net income: $1,742,000 − $42,000 − $82,250 = $1,617,750. The acquisition,
-    the bond issue, the plant closing and the split don''t change Year 1 net income.'
+    the bond issue and the plant closing don''t change Year 1 net income.'
 - id: t3
   type: numeric
   points: 2
@@ -151,9 +148,9 @@ tasks:
   type: numeric
   points: 1
   unit: cents
-  tolerance: 0
-  prompt: What basic earnings per share should Penwortham report for Year 1?
-  answer: 202
-  explanation: 'A stock split after year end but before issuance is applied retroactively in EPS: 400,000
-    × 2 = 800,000 shares. EPS = $1,617,750 ÷ 800,000 = $2.0222, rounded to $2.02. Ignoring the split gives
-    $4.04; using the draft net income gives $2.18.'
+  tolerance: 100
+  prompt: What working capital should Penwortham report at December 31, Year 1?
+  answer: 419575000
+  explanation: 'Current assets: $6,480,000 − the $42,000 reduction of the Ostler receivable − the $82,250
+    write-down of the equipment held for sale = $6,355,750. Current liabilities (task 3): $2,160,000.
+    Working capital: $6,355,750 − $2,160,000 = $4,195,750. Correcting only the liabilities gives $4,320,000.'

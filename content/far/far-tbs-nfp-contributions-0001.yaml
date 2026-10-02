@@ -30,14 +30,17 @@ exhibits:
 
     | February 10 | Halsall Foundation | Written pledge to match, dollar for dollar, gifts from other
     donors for Ashgrove''s planned nature center received by June 30, Year 2, up to $400,000. Halsall
-    will pay the matched amount on July 15, Year 2; it owes nothing for gifts it has not matched. By December
-    31, Year 1, other donors had given $265,000 in cash for the nature center. Construction begins in
-    Year 2. |
+    will pay the matched amount on July 15, Year 2; it owes nothing for gifts it has not matched. Construction
+    of the nature center begins in Year 2. |
 
-    | March 1 | State Department of Natural Resources | Grant to reimburse allowable costs of Ashgrove''s
-    Tillet Marsh restoration, up to $180,000 of costs incurred in Years 1 and 2. The state receives nothing
-    in return beyond the restoration of public land, and pays only for costs incurred. Ashgrove incurred
-    $117,500 of allowable costs in Year 1, and the state had paid $90,000 of them by December 31. |
+    | March – December | Various donors | Cash gifts for the nature center totaling $265,000, all of which
+    qualify for Halsall''s match. |
+
+    | March 1 | State Department of Natural Resources | Grant to reimburse allowable costs of restoring
+    Tillet Marsh, a preserve Ashgrove owns and opens to the public, up to $180,000 of costs incurred in
+    Years 1 and 2. The state receives no goods or services from Ashgrove under the grant, and pays only
+    for costs incurred. Ashgrove incurred $117,500 of allowable costs in Year 1, and the state had paid
+    $90,000 of them by December 31. |
 
     | June 6 | Kittering Nursery | Donated native plant seedlings with a fair value of $23,400, all planted
     in the marsh restoration in Year 1. |
@@ -46,7 +49,8 @@ exhibits:
     $90 a guest; Ashgrove paid the caterer separately. |
 
     | October 4 | Pellow Design | An architect designed the nature center without charge. Ashgrove would
-    otherwise have hired an architect; the fee would have been $36,000. |
+    otherwise have hired an architect; the fee would have been $36,000. Pellow placed no conditions or
+    restrictions on the gift. |
 
     | Throughout Year 1 | Community volunteers | Led weekend trail walks. At local wage rates, their time
     was worth $21,000. |
@@ -64,7 +68,11 @@ exhibits:
     |---|---|
 
     | Restrictions met in the same year | Ashgrove reports donor-restricted contributions whose restrictions
-    are met in the year they are received as contributions without donor restrictions. |
+    are met in the year they are recognized as contributions without donor restrictions. The policy also
+    covers conditional contributions whose conditions and restrictions are met in the same year. |
+
+    | Marsh restoration | Restoration costs (planting, earthwork and monitoring) are program expenses
+    as incurred; the restoration creates no asset Ashgrove capitalizes. |
 
     | Promises to give | Unconditional promises due in more than one year are measured at present value;
     promises due within one year are measured at the amount expected to be collected, without discounting.
@@ -127,7 +135,7 @@ tasks:
   tolerance: 100
   prompt: What total contribution revenue with donor restrictions should Ashgrove report for Year 1?
   answer: 64280000
-  explanation: Gifts from other donors for the nature center, $265,000; Halsall's matched amount, $265,000
+  explanation: Gifts from various donors for the nature center, $265,000; Halsall's matched amount, $265,000
     (not the $400,000 maximum, which is still conditional for the unmatched part); the Tullis promise
     at present value, $112,800. Total $642,800. Recognizing Halsall's full pledge gives $777,800.
 - id: t4
