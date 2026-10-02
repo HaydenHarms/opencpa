@@ -19,7 +19,7 @@ Three phases, each shippable on its own: **A** the practice tabs, **B** exam mod
 
 ### What the student gets
 
-A **Mock exam** entry on the Practice page, with a short page on what to expect, then the exam:
+A **Mock exam** entry on the Practice page, with a short page on what to expect, then the exam (the intro doesn't mention a calculator; Hayden had a line about it removed):
 
 - **FAR format:** 5 testlets. Testlets 1 and 2: 25 multiple-choice questions each. Testlets 3, 4 and 5: 2, 3 and 2 simulations. The real exam scores multiple choice and simulations 50/50.
 - **Clock:** 4 hours, counting down, run by the server so a refresh or a different device can't reset it. Leaving the page doesn't stop it (as on the real exam), but the student can come back and resume.

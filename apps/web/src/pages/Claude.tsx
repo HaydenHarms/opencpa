@@ -58,7 +58,8 @@ export default function Claude() {
       </p>
       <p className="muted">
         Claude sees only your OpenCPA answers and progress. It can’t see answers to questions you
-        haven’t attempted, and it can’t change anything here. Grading stays with OpenCPA.
+        haven’t attempted or anything from a mock exam you haven’t finished, and it can’t change
+        anything here. Grading stays with OpenCPA.
       </p>
 
       {error && <p className="error">Something went wrong: {error}</p>}

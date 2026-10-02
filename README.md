@@ -14,15 +14,15 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 
 **Live now**
 
-- **Practice sessions.** Pick a section and a length; the server builds a session, with questions and simulations on separate tabs as on the exam, that mixes blueprint areas by weight, brings back questions when they're due for review and leans toward your weak topics. Your first session in a section is a short diagnostic, and leaving the page never loses your place.
+- **Practice sessions.** Pick a section and a length; the server builds a session, with questions and simulations on separate tabs as on the exam, that mixes blueprint areas by weight, brings back questions when they're due for review and leans toward your weak topics. Move back and forth between questions with Previous and Next; a pick you haven't submitted is kept. Your first session in a section is a short diagnostic, and leaving the page never loses your place.
 - **Question versions.** Numeric questions come in several versions with different numbers, so a repeat is a new problem, not a memorized answer.
 - **Library.** Browse every exam by blueprint area and topic, practice any single topic, and look up any question in the archive (unanswered, missed, correct). Search understands accounting synonyms and ASC numbers, so “fixed assets” finds PP&E and “DTL” finds income taxes. Answers stay hidden until you've attempted a question.
 - **Progress.** Coverage by section ("seen 12 of 318"), mastery by blueprint area, and mastery by topic, weakest first.
 - **Simulations.** Task-based simulations with exhibits, journal-entry grids, numeric, research and dropdown (select) tasks, graded deterministically with partial credit.
 - **Blueprint-aligned content.** Every question and simulation is tagged to the AICPA blueprint by section, content area, topic and skill level, and every item passes an independent review before it's served.
 - **Adaptive review.** Spaced repetition (FSRS) schedules individual questions, and results roll up into a mastery map by blueprint area.
-- **Study with Claude.** Add OpenCPA as a connector in your own Claude account, and Claude can look up the question you just answered and explain it, using the official rationale. It explains; it never grades.
-- **Mock exams.** A full-length, timed FAR exam in the real format: 5 testlets (25 and 25 questions, then 2, 3 and 2 simulations), a 4-hour clock kept by the server, the optional 15-minute break, flags, strike-outs and locked testlets, plus a pause button for studying at home. Nothing is graded until the end; the report scores multiple choice and simulations 50/50 and breaks results down by area, topic and skill.
+- **Study with Claude.** Add OpenCPA as a connector in your own Claude account, and Claude can look up the question you just answered and explain it, using the official rationale. It explains; it never grades, and it won't reveal anything from a mock exam you haven't finished.
+- **Mock exams.** A full-length, timed FAR exam in the real format: 5 testlets (25 and 25 questions, then 2, 3 and 2 simulations), a 4-hour clock kept by the server, the optional 15-minute break, flags, strike-outs and locked testlets, plus a pause button for studying at home. Nothing is graded until the end; the report scores multiple choice and simulations 50/50 (no invented 0–99 scaled score), breaks results down by area, topic and skill, shows time per testlet and any pauses, and lets you review every item with its answer. Past exams are listed on the Progress page. Start one from Practice.
 - **Accounts.** Sign in with GitHub to keep your progress on every device; whatever you did before signing in moves into your account. Signing in is optional, and you can delete your account (or a device's data) at any time.
 
 **Planned**
@@ -49,7 +49,7 @@ opencpa/
 │   ├── web/          # React + Vite frontend
 │   └── api/          # Hono Worker API, D1 migrations
 ├── packages/
-│   ├── engine/       # Grading, FSRS scheduling, mastery rollups
+│   ├── engine/       # Grading, FSRS scheduling, mastery, session and mock exam selection, exam clock
 │   └── schema/       # Content schema (zod), shared types
 ├── content/          # One YAML file per question/simulation
 │   ├── far/  aud/  reg/
@@ -75,8 +75,9 @@ opencpa/
 - [ ] Advanced practice settings
 - [x] Accounts: GitHub sign-in, progress syncs across devices, account deletion
 - [ ] Email sign-in (needs a custom domain)
+- [x] Practice tabs: questions and simulations on separate tabs in a session, as on the exam
 - [ ] Rate limiting, UI redesign, custom domain
-- [ ] Exam-day mode
+- [ ] Literature panel and research tasks
 
 ## Content
 

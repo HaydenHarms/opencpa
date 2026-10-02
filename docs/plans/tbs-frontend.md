@@ -10,20 +10,23 @@ Task-based simulations are about half of the FAR score. The MCQ bank now touches
 
 **In:** a simulation list and player on the web app; the three existing task types; exhibits; grading and review through the existing attempts and FSRS tables; three original FAR simulations to exercise every task type.
 
-**Out for now:** document-review (drop-down edit) tasks, spreadsheet-style free-form workpapers, timers and exam-day mode, importing the 34 legacy simulations (a later content milestone, each one rebuilt and verified like an MCQ batch).
+**Out for now:** document-review (drop-down edit) tasks, spreadsheet-style free-form workpapers, timers and exam-day mode (since built: `docs/plans/exam-mode.md`), importing the 34 legacy simulations (a later content milestone, each one rebuilt and verified like an MCQ batch).
 
 ## Design
 
 ### Schema (`packages/schema`)
+
 - Add `PublicTbs` and `toPublicTbs(t)`: keeps `id`, `type`, `blueprint`, `title`, `scenario`, `exhibits`, and for each task its `id`, `type`, `prompt`, `points`, plus `accounts` (journal entries) and `unit` (numeric). Strips `answer`, `explanation` and `tolerance`. Unit tests in `index.test.ts` assert that no answer field survives, mirroring `toPublicMcq`.
 - Add a TBS rule to the content validator: every task has an explanation, points total to a whole number, and research answers use the `ASC xxx-xx-xx-x` form.
 
 ### API (`apps/api`)
+
 - `GET /simulations?section=` and `GET /simulations/:id`: public projections only.
 - `POST /me/simulations/:id/attempts` with `{ responses: Record<taskId, TaskResponse>, durationMs? }`. Grades each task with `gradeTask`, stores one `attempts` row per simulation (`earned` and `possible` summed, `response` holding the per-task JSON), updates the FSRS card with a rating from the score (for example at least 75% = Good, 50–75% = Hard, under 50% = Again), and returns per-task results with answers and explanations. No migration is needed: the existing tables already hold `earned`, `possible` and a JSON `response`.
 - Journal-entry amounts travel as whole cents, matching the schema.
 
 ### Web (`apps/web`)
+
 - New route `/simulations` (list, filtered by section like Practice) and `/simulations/:id` (player).
 - Player layout: scenario and a task list on the left; an exhibits panel with tabs on the right (stacked on phones). One task visible at a time with previous/next, and a submit-all button, as on the exam.
 - **Numeric task:** a currency input that accepts `1,234.56` or `(1,234)` and converts to cents; percent and unit tasks use plain number inputs.
@@ -33,6 +36,7 @@ Task-based simulations are about half of the FAR score. The MCQ bank now touches
 - After submission: per-task score, the correct answer, and the explanation; journal-entry rows marked matched or missing.
 
 ### Content
+
 - Write three original FAR simulations in `scripts/batches/far-tbs-01.py` (same pipeline as MCQ batches: compute every number in code, blind verification, review gate). Candidates: (1) lessee finance lease — journal entries at commencement and year-end plus a numeric year-2 expense; (2) bank reconciliation — numeric adjusted balance plus the adjusting entries; (3) contingencies — a research task plus a numeric accrual.
 - **Open issue — research answers.** A research task needs an exact paragraph citation, and the quality bar forbids unverified paragraph cites. Before shipping research tasks, confirm each cited paragraph against the Codification (the FASB basic view is free with registration) and record how it was checked in the review report. Until then, ship simulations with numeric and journal-entry tasks only.
 
