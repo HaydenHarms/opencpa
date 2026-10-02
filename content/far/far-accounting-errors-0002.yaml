@@ -37,3 +37,89 @@ explanation: Overstated ending inventory in Year 1 understated Year 1 cost of go
   cost of goods sold and understating Year 2 net income by $40,000. The two errors counterbalance, so
   retained earnings at December 31, Year 2, was correct, and no adjustment to Year 3 opening retained
   earnings is needed; the Year 2 comparative figures are restated if presented.
+variants:
+- stem: In Year 3, before its Year 3 statements are issued, Finch Co. discovers that its inventory at
+    December 31, Year 1, was understated by $55,000. Inventory at December 31, Year 2, was correct. Ignore
+    income taxes. As originally reported, by how much were Finch's Year 2 net income and its December
+    31, Year 2, retained earnings misstated?
+  choices:
+  - id: A
+    text: $0 net income; $0 retained earnings
+    rationale: Believes the error is fully resolved because Year 2 ending inventory was stated correctly,
+      overlooking that Year 2 beginning inventory, Year 1's understated ending inventory, still understated
+      Year 2 cost of goods sold.
+  - id: B
+    text: $0 net income; $55,000 understated retained earnings
+    rationale: Treats the error as affecting only Year 1 and carrying into retained earnings. The understated
+      beginning inventory also understated Year 2 cost of goods sold.
+  - id: C
+    text: $0 net income; $55,000 overstated retained earnings
+    rationale: Treats the Year 1 error as a direct adjustment to retained earnings, overstated it by $55,000,
+      without recognizing that Year 2's own understated cost of goods sold already reversed the effect.
+  - id: D
+    text: $55,000 overstated net income; $0 retained earnings
+    rationale: Correct. Year 2 cost of goods sold was understated, overstating Year 2 income by $55,000
+      and offsetting Year 1's understatement, so retained earnings at the end of Year 2 was correct.
+  answer: D
+  explanation: Understated ending inventory in Year 1 overstated Year 1 cost of goods sold and understated
+    Year 1 net income by $55,000. That inventory became Year 2's beginning inventory, understating Year
+    2 cost of goods sold and overstating Year 2 net income by $55,000. The two errors counterbalance,
+    so retained earnings at December 31, Year 2, was correct, and no adjustment to Year 3 opening retained
+    earnings is needed; the Year 2 comparative figures are restated if presented.
+- stem: In Year 3, before its Year 3 statements are issued, Garrow Co. discovers that its inventory at
+    December 31, Year 1, was overstated by $28,000. Inventory at December 31, Year 2, was correct. Ignore
+    income taxes. As originally reported, by how much were Garrow's Year 2 net income and its December
+    31, Year 2, retained earnings misstated?
+  choices:
+  - id: A
+    text: $0 net income; $0 retained earnings
+    rationale: Believes the error is fully resolved because Year 2 ending inventory was stated correctly,
+      overlooking that Year 2 beginning inventory, Year 1's overstated ending inventory, still overstated
+      Year 2 cost of goods sold.
+  - id: B
+    text: $0 net income; $28,000 understated retained earnings
+    rationale: Treats the Year 1 error as a direct adjustment to retained earnings, understated it by
+      $28,000, without recognizing that Year 2's own overstated cost of goods sold already reversed the
+      effect.
+  - id: C
+    text: $28,000 understated net income; $0 retained earnings
+    rationale: Correct. Year 2 cost of goods sold was overstated, understating Year 2 income by $28,000
+      and offsetting Year 1's overstatement, so retained earnings at the end of Year 2 was correct.
+  - id: D
+    text: $28,000 overstated net income; $28,000 overstated retained earnings
+    rationale: Reverses the direction for Year 2. An overstated beginning inventory raises cost of goods
+      sold and lowers income.
+  answer: C
+  explanation: Overstated ending inventory in Year 1 understated Year 1 cost of goods sold and overstated
+    Year 1 net income by $28,000. That inventory became Year 2's beginning inventory, overstating Year
+    2 cost of goods sold and understating Year 2 net income by $28,000. The two errors counterbalance,
+    so retained earnings at December 31, Year 2, was correct, and no adjustment to Year 3 opening retained
+    earnings is needed; the Year 2 comparative figures are restated if presented.
+- stem: In Year 3, before its Year 3 statements are issued, Holt Co. discovers that its inventory at December
+    31, Year 1, was understated by $63,000. Inventory at December 31, Year 2, was correct. Ignore income
+    taxes. As originally reported, by how much were Holt's Year 2 net income and its December 31, Year
+    2, retained earnings misstated?
+  choices:
+  - id: A
+    text: $0 net income; $0 retained earnings
+    rationale: Believes the error is fully resolved because Year 2 ending inventory was stated correctly,
+      overlooking that Year 2 beginning inventory, Year 1's understated ending inventory, still understated
+      Year 2 cost of goods sold.
+  - id: B
+    text: $0 net income; $63,000 overstated retained earnings
+    rationale: Treats the Year 1 error as a direct adjustment to retained earnings, overstated it by $63,000,
+      without recognizing that Year 2's own understated cost of goods sold already reversed the effect.
+  - id: C
+    text: $63,000 overstated net income; $0 retained earnings
+    rationale: Correct. Year 2 cost of goods sold was understated, overstating Year 2 income by $63,000
+      and offsetting Year 1's understatement, so retained earnings at the end of Year 2 was correct.
+  - id: D
+    text: $63,000 overstated net income; $63,000 overstated retained earnings
+    rationale: Counts the Year 2 overstatement in retained earnings without the Year 1 understatement
+      it offsets.
+  answer: C
+  explanation: Understated ending inventory in Year 1 overstated Year 1 cost of goods sold and understated
+    Year 1 net income by $63,000. That inventory became Year 2's beginning inventory, understating Year
+    2 cost of goods sold and overstating Year 2 net income by $63,000. The two errors counterbalance,
+    so retained earnings at December 31, Year 2, was correct, and no adjustment to Year 3 opening retained
+    earnings is needed; the Year 2 comparative figures are restated if presented.

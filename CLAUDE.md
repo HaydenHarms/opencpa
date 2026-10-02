@@ -30,7 +30,7 @@ Commands: `pnpm install`, `pnpm dev`, `pnpm test`, `pnpm typecheck`, `pnpm conte
 ## Current state (as of 2026-10-01)
 
 - **Live:** web, API, D1 (migrations 0001–0005), practice sessions with adaptive selection and a 20-question diagnostic, the Library (topic browsing, archive, in-browser search), the simulations player (`/simulations`, incl. `select` tasks) and the Claude connector (MCP, four read-only tools at `/mcp/<token>`). Design notes and API routes: `docs/history.md`.
-- **Variants:** `McqItem.variants` holds new-number versions; sessions rotate through them. Every numeric FAR MCQ has three, except `far-accounting-errors-0002`, `far-contingencies-0005`, `far-debt-covenant-0001`, `far-revenue-allocation-0003`. Simulations have none yet.
+- **Variants:** `McqItem.variants` holds new-number versions; sessions rotate through them. Every numeric FAR MCQ has three (variants 10 covered the last four). Simulations have none yet.
 - **Bank:** 300 FAR MCQs (13.7% / 49.3% / 37.0% by skill, 35.7% / 35.3% / 29.0% by area) with 744 variants, 1,044 problems in all; 25 BAR MCQs; 3 FAR simulations. `python3 scripts/far-coverage.py` prints the blueprint tasks with fewer than two items: after batches 12 and 13, 100 of 113 have two or more, and the 13 left are all Remembering and Understanding (13.7%, cap 15%).
 - **Gate record:** every batch has passed the review gate (FAR 82–90%, BAR 01 84%, simulations 79.7%, no major items). Per-batch results: `docs/reviews/` and `docs/history.md`.
 - **Claude leads this project.** Hayden has asked Claude to decide priorities and run the pipeline end to end, then report outcomes.

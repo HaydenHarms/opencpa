@@ -42,3 +42,95 @@ explanation: 'The implementation does not modify the software and is available f
   discount relates to those two. Implementation gets its $100,000 standalone selling price, and the remaining
   $270,000 is split between license and support by their standalone selling prices: $270,000 × $240,000
   ÷ $300,000 = $216,000.'
+variants:
+- stem: 'Blythe Software enters into a contract to sell a software license, implementation services, and
+    one year of post-contract support for a total of $405,000. Blythe regularly sells each item separately
+    at these standalone selling prices: license $280,000, implementation $90,000, and support $70,000.
+    It also regularly sells the license and one year of support together, without implementation, for
+    $315,000. The implementation is a standard installation that does not modify the software, and several
+    other firms offer it. How much of the transaction price should Blythe allocate to the license?'
+  choices:
+  - id: A
+    text: $252,000
+    rationale: 'Correct. The $35,000 discount matches the regular license-and-support bundle, so it is
+      allocated to those two only: $315,000 × $280,000 ÷ $350,000.'
+  - id: B
+    text: $257,727
+    rationale: Spreads the discount across all three obligations ($405,000 × $280,000 ÷ $440,000). Observable
+      evidence shows the discount relates only to the license and support.
+  - id: C
+    text: $268,333
+    rationale: 'Divides the $35,000 discount equally among the three performance obligations instead of
+      by standalone selling price: $280,000 − ($35,000 ÷ 3) = $280,000 − $11,667.'
+  - id: D
+    text: $280,000
+    rationale: Uses the license's standalone selling price and ignores the discount.
+  answer: A
+  explanation: 'The implementation does not modify the software and is available from other firms, so
+    the license, implementation, and support are distinct performance obligations. The contract''s discount
+    is $440,000 − $405,000 = $35,000. Blythe regularly sells each item separately, and regularly sells
+    the license and support together at the same $35,000 discount, which is observable evidence that the
+    whole discount relates to those two. Implementation gets its $90,000 standalone selling price, and
+    the remaining $315,000 is split between license and support by their standalone selling prices: $315,000
+    × $280,000 ÷ $350,000 = $252,000.'
+- stem: 'Cantrell Systems enters into a contract to sell a software license, implementation services,
+    and one year of post-contract support for a total of $450,000. Cantrell regularly sells each item
+    separately at these standalone selling prices: license $320,000, implementation $120,000, and support
+    $60,000. It also regularly sells the license and one year of support together, without implementation,
+    for $330,000. The implementation is a standard installation that does not modify the software, and
+    several other firms offer it. How much of the transaction price should Cantrell allocate to the license?'
+  choices:
+  - id: A
+    text: $270,000
+    rationale: 'Uses the residual approach: $450,000 − $120,000 − $60,000 = $270,000. The residual approach
+      isn''t available for the license because it has an observable standalone selling price (ASC 606-10-32-34(c)).'
+  - id: B
+    text: $277,895
+    rationale: 'Correct. The $50,000 discount matches the regular license-and-support bundle, so it is
+      allocated to those two only: $330,000 × $320,000 ÷ $380,000.'
+  - id: C
+    text: $303,333
+    rationale: 'Divides the $50,000 discount equally among the three performance obligations instead of
+      by standalone selling price: $320,000 − ($50,000 ÷ 3) = $320,000 − $16,667.'
+  - id: D
+    text: $320,000
+    rationale: Uses the license's standalone selling price and ignores the discount.
+  answer: B
+  explanation: 'The implementation does not modify the software and is available from other firms, so
+    the license, implementation, and support are distinct performance obligations. The contract''s discount
+    is $500,000 − $450,000 = $50,000. Cantrell regularly sells each item separately, and regularly sells
+    the license and support together at the same $50,000 discount, which is observable evidence that the
+    whole discount relates to those two. Implementation gets its $120,000 standalone selling price, and
+    the remaining $330,000 is split between license and support by their standalone selling prices: $330,000
+    × $320,000 ÷ $380,000 = $277,895.'
+- stem: 'Delacroix Media enters into a contract to sell a software license, implementation services, and
+    one year of post-contract support for a total of $380,000. Delacroix regularly sells each item separately
+    at these standalone selling prices: license $260,000, implementation $110,000, and support $50,000.
+    It also regularly sells the license and one year of support together, without implementation, for
+    $270,000. The implementation is a standard installation that does not modify the software, and several
+    other firms offer it. How much of the transaction price should Delacroix allocate to the license?'
+  choices:
+  - id: A
+    text: $220,000
+    rationale: 'Uses the residual approach: $380,000 − $110,000 − $50,000 = $220,000. The residual approach
+      isn''t available for the license because it has an observable standalone selling price (ASC 606-10-32-34(c)).'
+  - id: B
+    text: $226,452
+    rationale: 'Correct. The $40,000 discount matches the regular license-and-support bundle, so it is
+      allocated to those two only: $270,000 × $260,000 ÷ $310,000.'
+  - id: C
+    text: $235,238
+    rationale: Spreads the discount across all three obligations ($380,000 × $260,000 ÷ $420,000). Observable
+      evidence shows the discount relates only to the license and support.
+  - id: D
+    text: $246,667
+    rationale: 'Divides the $40,000 discount equally among the three performance obligations instead of
+      by standalone selling price: $260,000 − ($40,000 ÷ 3) = $260,000 − $13,333.'
+  answer: B
+  explanation: 'The implementation does not modify the software and is available from other firms, so
+    the license, implementation, and support are distinct performance obligations. The contract''s discount
+    is $420,000 − $380,000 = $40,000. Delacroix regularly sells each item separately, and regularly sells
+    the license and support together at the same $40,000 discount, which is observable evidence that the
+    whole discount relates to those two. Implementation gets its $110,000 standalone selling price, and
+    the remaining $270,000 is split between license and support by their standalone selling prices: $270,000
+    × $260,000 ÷ $310,000 = $226,452.'

@@ -39,3 +39,86 @@ explanation: Both adjustments increase liabilities and decrease equity. The warr
   (reducing retained earnings) and a liability; the declared dividend reduces retained earnings and creates
   dividends payable. Liabilities = $1,800,000 + $60,000 + $50,000 = $1,910,000. Equity = $1,250,000 −
   $110,000 = $1,140,000. Ratio = $1,910,000 ÷ $1,140,000 = 1.68, above the 1.60 covenant.
+variants:
+- stem: 'Larchmont Inc.''s loan agreement requires its ratio of total liabilities to total stockholders''
+    equity to be no more than 1.50 at each year-end. Before year-end adjustments, Larchmont''s December
+    31 balance sheet shows total liabilities of $2,400,000 and total stockholders'' equity of $1,600,000.
+    Two adjustments have not yet been recorded: an accrual for $80,000 of warranty costs on Year 1 sales,
+    and a $70,000 cash dividend the board declared on December 18, payable January 15. Ignore income taxes.
+    What is Larchmont''s debt-to-equity ratio for the covenant test?'
+  choices:
+  - id: A
+    text: '1.50'
+    rationale: Uses the balances before the year-end adjustments.
+  - id: B
+    text: '1.61'
+    rationale: Records the dividend payable but not the warranty accrual, which is also a liability at
+      year-end for sales already made.
+  - id: C
+    text: '1.76'
+    rationale: Correct. ($2,400,000 + $150,000) ÷ ($1,600,000 − $150,000) = 1.76, which violates the 1.50
+      limit.
+  - id: D
+    text: '1.81'
+    rationale: Double-posts the dividend payable, counting it twice in liabilities while equity reflects
+      both adjustments only once.
+  answer: C
+  explanation: Both adjustments increase liabilities and decrease equity. The warranty accrual is an expense
+    (reducing retained earnings) and a liability; the declared dividend reduces retained earnings and
+    creates dividends payable. Liabilities = $2,400,000 + $80,000 + $70,000 = $2,550,000. Equity = $1,600,000
+    − $150,000 = $1,450,000. Ratio = $2,550,000 ÷ $1,450,000 = 1.76, above the 1.50 covenant.
+- stem: 'Marchetti Inc.''s loan agreement requires its ratio of total liabilities to total stockholders''
+    equity to be no more than 1.40 at each year-end. Before year-end adjustments, Marchetti''s December
+    31 balance sheet shows total liabilities of $900,000 and total stockholders'' equity of $620,000.
+    Two adjustments have not yet been recorded: an accrual for $25,000 of warranty costs on Year 1 sales,
+    and a $35,000 cash dividend the board declared on December 22, payable January 15. Ignore income taxes.
+    What is Marchetti''s debt-to-equity ratio for the covenant test?'
+  choices:
+  - id: A
+    text: '1.55'
+    rationale: Adds the $60,000 to liabilities but does not reduce stockholders' equity for the warranty
+      expense and the dividend.
+  - id: B
+    text: '1.71'
+    rationale: Correct. ($900,000 + $60,000) ÷ ($620,000 − $60,000) = 1.71, which violates the 1.40 limit.
+  - id: C
+    text: '1.78'
+    rationale: Double-posts the dividend payable, counting it twice in liabilities while equity reflects
+      both adjustments only once.
+  - id: D
+    text: '1.82'
+    rationale: Double-posts both year-end adjustments, counting the $60,000 warranty-and-dividend effect
+      twice in liabilities while equity reflects it only once.
+  answer: B
+  explanation: Both adjustments increase liabilities and decrease equity. The warranty accrual is an expense
+    (reducing retained earnings) and a liability; the declared dividend reduces retained earnings and
+    creates dividends payable. Liabilities = $900,000 + $25,000 + $35,000 = $960,000. Equity = $620,000
+    − $60,000 = $560,000. Ratio = $960,000 ÷ $560,000 = 1.71, above the 1.40 covenant.
+- stem: 'Norwood Inc.''s loan agreement requires its ratio of total liabilities to total stockholders''
+    equity to be no more than 1.30 at each year-end. Before year-end adjustments, Norwood''s December
+    31 balance sheet shows total liabilities of $3,100,000 and total stockholders'' equity of $2,200,000.
+    Two adjustments have not yet been recorded: an accrual for $95,000 of warranty costs on Year 1 sales,
+    and a $60,000 cash dividend the board declared on December 27, payable January 15. Ignore income taxes.
+    What is Norwood''s debt-to-equity ratio for the covenant test?'
+  choices:
+  - id: A
+    text: '1.48'
+    rationale: Records the dividend payable but not the warranty accrual, which is also a liability at
+      year-end for sales already made.
+  - id: B
+    text: '1.52'
+    rationale: Records the warranty accrual but not the dividend declared December 27, which is a liability
+      at year-end.
+  - id: C
+    text: '1.59'
+    rationale: Correct. ($3,100,000 + $155,000) ÷ ($2,200,000 − $155,000) = 1.59, which violates the 1.30
+      limit.
+  - id: D
+    text: '1.67'
+    rationale: Double-posts both year-end adjustments, counting the $155,000 warranty-and-dividend effect
+      twice in liabilities while equity reflects it only once.
+  answer: C
+  explanation: Both adjustments increase liabilities and decrease equity. The warranty accrual is an expense
+    (reducing retained earnings) and a liability; the declared dividend reduces retained earnings and
+    creates dividends payable. Liabilities = $3,100,000 + $95,000 + $60,000 = $3,255,000. Equity = $2,200,000
+    − $155,000 = $2,045,000. Ratio = $3,255,000 ÷ $2,045,000 = 1.59, above the 1.30 covenant.

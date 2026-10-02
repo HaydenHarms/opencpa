@@ -41,3 +41,93 @@ explanation: '(1) The loss is probable and estimable, so Quenby accrues $200,000
   An unasserted claim is accrued when it is probable a claim will be asserted and probable that the outcome
   will be unfavorable: $30,000. (3) The expected award is a gain contingency, not recognized. Liabilities
   = $230,000.'
+variants:
+- stem: 'Ransome Co. is preparing its December 31 statements, which have not been issued. Counsel''s letter
+    and other files show: (1) a customer sued Ransome in November over a defective product; counsel expects
+    Ransome to lose and estimates damages of $320,000, and Ransome''s insurer has confirmed in writing
+    that it will reimburse $260,000 of any damages; (2) an employee was injured in a December accident
+    at Ransome''s plant; no claim has been filed yet, but counsel expects one and expects Ransome to pay
+    about $45,000; and (3) Ransome is suing a competitor for patent infringement and counsel expects an
+    award of about $95,000. What total liabilities should Ransome report for these matters?'
+  choices:
+  - id: A
+    text: $60,000
+    rationale: Nets the insurance recovery against the lawsuit liability and omits the unasserted claim.
+  - id: B
+    text: $105,000
+    rationale: Nets the $260,000 insurance recovery against the $320,000 liability. The liability and
+      the recovery receivable are reported separately.
+  - id: C
+    text: $365,000
+    rationale: Correct. The $320,000 lawsuit liability, reported gross, plus the $45,000 expected claim;
+      the insurance recovery is a separate receivable.
+  - id: D
+    text: $625,000
+    rationale: Adds the confirmed $260,000 insurance reimbursement as an additional liability instead
+      of recording it as a separate receivable.
+  answer: C
+  explanation: '(1) The loss is probable and estimable, so Ransome accrues $320,000; the confirmed insurance
+    reimbursement is recognized as a separate $260,000 receivable, not netted against the liability. (2)
+    An unasserted claim is accrued when it is probable a claim will be asserted and probable that the
+    outcome will be unfavorable: $45,000. (3) The expected award is a gain contingency, not recognized.
+    Liabilities = $365,000.'
+- stem: 'Sorrel Co. is preparing its December 31 statements, which have not been issued. Counsel''s letter
+    and other files show: (1) a customer sued Sorrel in November over a defective product; counsel expects
+    Sorrel to lose and estimates damages of $150,000, and Sorrel''s insurer has confirmed in writing that
+    it will reimburse $90,000 of any damages; (2) an employee was injured in a December accident at Sorrel''s
+    plant; no claim has been filed yet, but counsel expects one and expects Sorrel to pay about $20,000;
+    and (3) Sorrel is suing a competitor for patent infringement and counsel expects an award of about
+    $60,000. What total liabilities should Sorrel report for these matters?'
+  choices:
+  - id: A
+    text: $150,000
+    rationale: Omits the $20,000 unasserted claim. An unasserted claim is accrued when assertion is probable
+      and a loss is probable and estimable.
+  - id: B
+    text: $170,000
+    rationale: Correct. The $150,000 lawsuit liability, reported gross, plus the $20,000 expected claim;
+      the insurance recovery is a separate receivable.
+  - id: C
+    text: $230,000
+    rationale: Misreads the patent-infringement matter, a gain contingency to Sorrel, as a loss and adds
+      the expected $60,000 award to the accrual.
+  - id: D
+    text: $260,000
+    rationale: Adds the confirmed $90,000 insurance reimbursement as an additional liability instead of
+      recording it as a separate receivable.
+  answer: B
+  explanation: '(1) The loss is probable and estimable, so Sorrel accrues $150,000; the confirmed insurance
+    reimbursement is recognized as a separate $90,000 receivable, not netted against the liability. (2)
+    An unasserted claim is accrued when it is probable a claim will be asserted and probable that the
+    outcome will be unfavorable: $20,000. (3) The expected award is a gain contingency, not recognized.
+    Liabilities = $170,000.'
+- stem: 'Trevane Co. is preparing its December 31 statements, which have not been issued. Counsel''s letter
+    and other files show: (1) a customer sued Trevane in November over a defective product; counsel expects
+    Trevane to lose and estimates damages of $400,000, and Trevane''s insurer has confirmed in writing
+    that it will reimburse $310,000 of any damages; (2) an employee was injured in a December accident
+    at Trevane''s plant; no claim has been filed yet, but counsel expects one and expects Trevane to pay
+    about $55,000; and (3) Trevane is suing a competitor for patent infringement and counsel expects an
+    award of about $120,000. What total liabilities should Trevane report for these matters?'
+  choices:
+  - id: A
+    text: $145,000
+    rationale: Nets the $310,000 insurance recovery against the $400,000 liability. The liability and
+      the recovery receivable are reported separately.
+  - id: B
+    text: $455,000
+    rationale: Correct. The $400,000 lawsuit liability, reported gross, plus the $55,000 expected claim;
+      the insurance recovery is a separate receivable.
+  - id: C
+    text: $575,000
+    rationale: Misreads the patent-infringement matter, a gain contingency to Trevane, as a loss and adds
+      the expected $120,000 award to the accrual.
+  - id: D
+    text: $765,000
+    rationale: Adds the confirmed $310,000 insurance reimbursement as an additional liability instead
+      of recording it as a separate receivable.
+  answer: B
+  explanation: '(1) The loss is probable and estimable, so Trevane accrues $400,000; the confirmed insurance
+    reimbursement is recognized as a separate $310,000 receivable, not netted against the liability. (2)
+    An unasserted claim is accrued when it is probable a claim will be asserted and probable that the
+    outcome will be unfavorable: $55,000. (3) The expected award is a gain contingency, not recognized.
+    Liabilities = $455,000.'
