@@ -30,7 +30,7 @@ Until the secrets below exist, both buttons stay hidden and the site works exact
    - **Type:** `Secret`, **Variable name:** `GITHUB_CLIENT_ID`, **Value:** the Client ID.
    - Click **+ Add** again: **Type:** `Secret`, **Variable name:** `GITHUB_CLIENT_SECRET`, **Value:** the secret.
    - Click **Deploy**.
-   - Use the **Secret** type for both. CI's `wrangler deploy` keeps secrets but deletes plain-text variables added in the dashboard.
+   - `wrangler.toml` sets `keep_vars = true`, so CI deploys keep dashboard variables too: the Client ID can be a plain **Variable** (it isn't secret; it appears in every sign-in URL), but the client secret must be a **Secret**.
 6. Open https://opencpa.pages.dev/account. The **Continue with GitHub** button should appear.
 
 ### Email sign-in

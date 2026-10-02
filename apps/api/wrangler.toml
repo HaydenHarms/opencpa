@@ -1,6 +1,9 @@
 name = "opencpa-api"
 main = "src/index.ts"
 compatibility_date = "2024-09-23"
+# Keep variables set in the Cloudflare dashboard (GITHUB_CLIENT_ID; see docs/accounts.md) when
+# CI deploys. Without this, every deploy deletes any plain-text variable not listed under [vars].
+keep_vars = true
 
 [[d1_databases]]
 binding = "DB"
