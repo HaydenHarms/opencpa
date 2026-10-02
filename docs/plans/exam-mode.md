@@ -22,7 +22,7 @@ The Practice page gets two tabs under the section tabs: **Questions** and **Simu
 A **Mock exam** entry on the Practice page (a third tab), with a short page on what to expect, then the exam:
 
 - **FAR format:** 5 testlets. Testlets 1 and 2: 25 multiple-choice questions each. Testlets 3, 4 and 5: 2, 3 and 2 simulations. The real exam scores multiple choice and simulations 50/50.
-- **Clock:** 4 hours, counting down, run by the server so a refresh or a different device can't reset it. Leaving the page doesn't stop it (as on the real exam), but the student can come back and resume.
+- **Clock:** 4 hours, counting down, run by the server so a refresh or a different device can't reset it. Leaving the page doesn't stop it (as on the real exam), but the student can come back and resume. Add pause button for studying at home.
 - **Optional 15-minute break after testlet 3**, which doesn't count against the clock. Time past 15 minutes does.
 - **Within a testlet:** move freely, change answers, flag items for review, strike out choices, and see a navigator showing answered, unanswered and flagged items. Nothing is graded or revealed until the end.
 - **Submitting a testlet locks it.** A warning lists unanswered and flagged items first. No going back.
