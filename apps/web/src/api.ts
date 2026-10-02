@@ -2,28 +2,107 @@ import type { JournalLine, PublicMcq, PublicTbs } from '@opencpa/schema';
 
 const BASE = import.meta.env.VITE_API_URL ?? '/api';
 
-/** Anonymous device id until accounts land. */
-function userId(): string {
+const DEVICE_KEY = 'opencpa:user';
+const SESSION_KEY = 'opencpa:session';
+const memory: Record<string, string | undefined> = {};
+
+function load(key: string): string | null {
   try {
-    let id = localStorage.getItem('opencpa:user');
-    if (!id) {
-      id = crypto.randomUUID();
-      localStorage.setItem('opencpa:user', id);
-    }
-    return id;
+    return localStorage.getItem(key);
   } catch {
-    return ((window as unknown as { __opencpaUser?: string }).__opencpaUser ??=
-      crypto.randomUUID());
+    return memory[key] ?? null;
   }
 }
 
-async function call<T>(path: string, init?: RequestInit): Promise<T> {
+function store(key: string, value: string | null) {
+  try {
+    if (value === null) localStorage.removeItem(key);
+    else localStorage.setItem(key, value);
+  } catch {
+    memory[key] = value ?? undefined;
+  }
+}
+
+/** The anonymous device id, used while signed out. */
+function deviceId(): string {
+  let id = load(DEVICE_KEY);
+  if (!id) {
+    id = crypto.randomUUID();
+    store(DEVICE_KEY, id);
+  }
+  return id;
+}
+
+/** Fired whenever this browser signs in or out, so the nav and pages can refresh. */
+export const AUTH_EVENT = 'opencpa:auth';
+
+/**
+ * Sign this browser in or out. Either way the device starts over with a fresh anonymous id:
+ * signing in moved the old one's progress into the account, and signing out shouldn't leave
+ * the account's progress on screen.
+ */
+export function setSession(token: string | null) {
+  store(SESSION_KEY, token);
+  store(DEVICE_KEY, null);
+  window.dispatchEvent(new Event(AUTH_EVENT));
+}
+
+export const signedIn = () => !!load(SESSION_KEY);
+
+async function call<T>(path: string, init?: RequestInit, retried = false): Promise<T> {
+  const token = load(SESSION_KEY);
   const res = await fetch(BASE + path, {
     ...init,
-    headers: { 'Content-Type': 'application/json', 'X-OpenCPA-User': userId(), ...init?.headers },
+    headers: {
+      'Content-Type': 'application/json',
+      ...(token ? { Authorization: `Bearer ${token}` } : { 'X-OpenCPA-User': deviceId() }),
+      ...init?.headers,
+    },
   });
+  if (res.status === 401 && !retried) {
+    // An expired session, or a device id that now belongs to an account: carry on signed out.
+    const body = (await res
+      .clone()
+      .json()
+      .catch(() => null)) as { signedOut?: boolean } | null;
+    if (body?.signedOut) {
+      setSession(null);
+      return call<T>(path, init, true);
+    }
+  }
   if (!res.ok) throw new Error(`${res.status} ${await res.text()}`);
   return res.json() as Promise<T>;
+}
+
+/** Errors from the sign-in endpoints carry a sentence meant for the student. */
+export function errorMessage(e: unknown): string {
+  const text = (e as Error).message.replace(/^\d+ /, '');
+  try {
+    const { error } = JSON.parse(text) as { error?: unknown };
+    if (typeof error === 'string') return error;
+  } catch {
+    // Not JSON.
+  }
+  return text;
+}
+
+export interface Account {
+  githubLogin: string | null;
+  email: string | null;
+  displayName: string | null;
+  createdAt: number;
+}
+
+/** Which sign-in methods the API has set up, and who is signed in (null if no one). */
+export interface AuthStatus {
+  github: boolean;
+  email: boolean;
+  account: Account | null;
+}
+
+export interface NewSession {
+  token: string;
+  expiresAt: number;
 }
 
 /** What an answered question reveals. */
@@ -177,6 +256,15 @@ const q = (params: Record<string, string | undefined>) => {
 };
 
 export const api = {
+  authStatus: () => call<AuthStatus>('/auth/status'),
+  githubStart: () => call<{ url: string }>('/auth/github/start', { method: 'POST' }),
+  exchange: (code: string) =>
+    call<NewSession>('/auth/exchange', { method: 'POST', body: JSON.stringify({ code }) }),
+  emailStart: (email: string) =>
+    call<{ sent: true }>('/auth/email/start', { method: 'POST', body: JSON.stringify({ email }) }),
+  emailVerify: (token: string) =>
+    call<NewSession>('/auth/email/verify', { method: 'POST', body: JSON.stringify({ token }) }),
+  signOut: () => call<{ signedOut: true }>('/auth/signout', { method: 'POST' }),
   questions: (section?: string) =>
     call<PublicMcq[]>(`/questions${section ? `?section=${section}` : ''}`),
   attempt: (itemId: string, selected: string, durationMs: number, sessionId?: string) =>

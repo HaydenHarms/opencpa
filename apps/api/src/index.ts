@@ -21,6 +21,7 @@ import {
   type GradeResult,
 } from '@opencpa/engine';
 import { byId, items, mcqs, simulations } from './content';
+import { auth, originAllowed, sessionUser, type Env } from './auth';
 import { handleMcp, hashToken, newToken } from './mcp';
 import {
   checkSession,
@@ -35,31 +36,21 @@ import {
   type SessionRow,
 } from './sessions';
 
-type Env = { DB: D1Database; ALLOWED_ORIGINS: string };
 type Vars = { userId: string };
 
 const app = new Hono<{ Bindings: Env; Variables: Vars }>();
 
-/** ALLOWED_ORIGINS entries are exact origins or wildcards like https://*.opencpa.pages.dev. */
-function originAllowed(origin: string, allowed: string): boolean {
-  return allowed.split(',').some((raw) => {
-    const rule = raw.trim();
-    if (!rule.includes('*')) return rule === origin;
-    const re = new RegExp(
-      '^' + rule.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace('*', '[a-z0-9-]+') + '$',
-    );
-    return re.test(origin);
-  });
-}
-
 app.use('*', (c, next) =>
   cors({
     origin: (origin) => (originAllowed(origin, c.env.ALLOWED_ORIGINS) ? origin : null),
-    allowHeaders: ['Content-Type', 'X-OpenCPA-User'],
+    allowHeaders: ['Content-Type', 'Authorization', 'X-OpenCPA-User'],
   })(c, next),
 );
 
 app.get('/health', (c) => c.json({ ok: true, items: items.length }));
+
+/** Accounts: sign in with GitHub or an emailed link. See `src/auth.ts`. */
+app.route('/auth', auth);
 
 /** Question list. Answers and rationales never leave the server. */
 app.get('/questions', (c) => {
@@ -125,12 +116,26 @@ app.get('/library/search-index', (c) => {
   );
 });
 
-// Everything below needs a student id. Until auth lands, the browser sends an anonymous device id.
+// Everything below needs a student: a signed-in account (Authorization: Bearer) or, signed
+// out, the browser's anonymous device id (X-OpenCPA-User).
 const userIdSchema = z.string().uuid();
 app.use('/me/*', async (c, next) => {
+  const db = c.env.DB;
+  if (c.req.header('Authorization')) {
+    const userId = await sessionUser(db, c.executionCtx, c.req.header('Authorization'));
+    if (!userId) return c.json({ error: 'signed out', signedOut: true }, 401);
+    c.set('userId', userId);
+    return next();
+  }
   const parsed = userIdSchema.safeParse(c.req.header('X-OpenCPA-User'));
   if (!parsed.success) return c.json({ error: 'missing or invalid X-OpenCPA-User header' }, 401);
-  await c.env.DB.prepare('INSERT OR IGNORE INTO users (id) VALUES (?)').bind(parsed.data).run();
+  const [, found] = await db.batch<{ github_id: string | null; email: string | null }>([
+    db.prepare('INSERT OR IGNORE INTO users (id) VALUES (?)').bind(parsed.data),
+    db.prepare('SELECT github_id, email FROM users WHERE id = ?').bind(parsed.data),
+  ]);
+  // An account is reachable only through a session, never by its id.
+  const row = found?.results[0];
+  if (row?.github_id || row?.email) return c.json({ error: 'sign in', signedOut: true }, 401);
   c.set('userId', parsed.data);
   await next();
 });

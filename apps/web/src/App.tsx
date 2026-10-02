@@ -1,4 +1,5 @@
 import { NavLink, Route, Routes } from 'react-router-dom';
+import AccountPage, { SigninDone, SigninEmail, useAuthStatus } from './pages/Account';
 import Claude from './pages/Claude';
 import Home from './pages/Home';
 import {
@@ -13,6 +14,7 @@ import Simulation from './pages/Simulation';
 import Simulations from './pages/Simulations';
 
 export default function App() {
+  const { status } = useAuthStatus();
   return (
     <div className="shell">
       <header className="nav">
@@ -25,6 +27,7 @@ export default function App() {
           <NavLink to="/library">Library</NavLink>
           <NavLink to="/progress">Progress</NavLink>
           <NavLink to="/claude">Claude</NavLink>
+          <NavLink to="/account">{status?.account ? 'Account' : 'Sign in'}</NavLink>
         </nav>
       </header>
       <main>
@@ -39,6 +42,9 @@ export default function App() {
           <Route path="/library/:section/q/:id" element={<LibraryQuestionPage />} />
           <Route path="/progress" element={<Progress />} />
           <Route path="/claude" element={<Claude />} />
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/signin/done" element={<SigninDone />} />
+          <Route path="/signin/email" element={<SigninEmail />} />
         </Routes>
       </main>
     </div>

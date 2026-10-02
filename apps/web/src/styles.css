@@ -388,9 +388,19 @@ body {
 .copy-row .button {
   margin-top: 0;
 }
-@media (max-width: 480px) {
-  .nav a {
-    margin-left: 12px;
+@media (max-width: 640px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 0;
+  }
+  .nav nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+  }
+  .nav nav a {
+    margin-left: 0;
   }
 }
 
