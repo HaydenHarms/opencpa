@@ -1,6 +1,6 @@
 """FAR coverage map: every representative task in the 2026 FAR blueprint, and the MCQs that test it.
 
-Roadmap step 4 ("Finish FAR") is done for MCQs when every task has at least two reviewed items. Each FAR MCQ
+Roadmap step 4 ("Finish FAR") is done for MCQs at 1,600 reviewed items (TARGET) with every task at two or more. Each FAR MCQ
 is mapped to exactly one task, its main one. Skills follow the blueprint's task verbs, as in the quality bar
 in CLAUDE.md (check the PDF's skill column when in doubt).
 
@@ -137,6 +137,7 @@ TASKS = [
 ]
 
 CONTENT = os.path.join(os.path.dirname(__file__), "..", "content", "far")
+TARGET = 1600  # reviewed FAR MCQs, variants not counted (Hayden, 2026-10-03: the size of Becker's FAR bank)
 
 
 def main():
@@ -153,6 +154,11 @@ def main():
     gaps = [(code, skill, task, len(ids)) for code, skill, task, ids in TASKS if len(ids) < 2]
     print(f"{len(TASKS)} tasks; {len(TASKS) - len(gaps)} with two or more items; {len(mcqs)} FAR MCQs")
     print(f"items still needed for two per task: {sum(2 - c for *_, c in gaps)}")
+    print(f"toward the {TARGET:,} goal: {len(mcqs):,} ({len(mcqs) / TARGET:.1%}), {max(TARGET - len(mcqs), 0):,} to go")
+    if not gaps:
+        print("thinnest tasks (write here first):")
+        for code, skill, task, ids in sorted(TASKS, key=lambda t: len(t[3]))[:15]:
+            print(f"  {code:8} {skill}  has {len(ids)}  {task}")
     for code, skill, task, c in gaps:
         print(f"  {code:8} {skill}  has {c}  {task}")
     for label, ids in (("mapped but not in content (not written yet?)", missing), ("mapped twice", twice),

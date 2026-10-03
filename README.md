@@ -6,7 +6,7 @@ OpenCPA is a free, community-maintained alternative to commercial CPA review cou
 
 **Live:** [opencpa.pages.dev](https://opencpa.pages.dev)
 
-> **Status: alpha.** The platform is deployed end to end (site, API, database, CI). The question bank grows in reviewed batches, FAR first: today there are 318 FAR questions (with 771 new-number versions, 1,089 problems in all), 21 FAR simulations and 25 BAR questions. Every task in the 2026 FAR blueprint has at least two reviewed questions, and FAR simulations are under way toward 50 across all three blueprint areas. AUD, REG, ISC and TCP come after FAR is complete. The long-term goal is about 2,000 questions per section.
+> **Status: alpha.** The platform is deployed end to end (site, API, database, CI). The question bank grows in reviewed batches, FAR first: today there are 318 FAR questions (with 771 new-number versions, 1,089 problems in all), 21 FAR simulations and 25 BAR questions. Every task in the 2026 FAR blueprint has at least two reviewed questions, and FAR simulations are under way toward 50 across all three blueprint areas. The FAR goal is 1,600 distinct questions, the size of Becker's FAR bank; AUD, REG, ISC and TCP come after FAR is complete, with a long-term goal of about 2,000 questions per section.
 
 ---
 
@@ -70,7 +70,7 @@ opencpa/
 - [x] Library search: finds related topics and questions, not just exact wording (synonyms, ASC numbers, typos)
 - [x] Mock exams: timed FAR exam in the real testlet format, with a score report
 - [x] Two or more reviewed questions for every FAR blueprint task (318 questions)
-- [ ] Finish FAR: 50 simulations across all three areas (21 done), skill mix inside the blueprint ranges
+- [ ] Finish FAR: 1,600 reviewed questions (318 done), 50 simulations across all three areas (21 done), skill mix inside the blueprint ranges
 - [ ] Remaining sections, in reviewed batches (BAR, then AUD and REG, then ISC and TCP)
 - [ ] Advanced practice settings
 - [x] Accounts: GitHub sign-in, progress syncs across devices, account deletion
