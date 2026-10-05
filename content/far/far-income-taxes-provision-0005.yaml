@@ -17,9 +17,9 @@ stem: Alresford Corp. posts its tax provision as one combined entry at year-end,
   accounts. Taxable income for Year 2 comes to $540,000, taxed at the 25% rate enacted for every year.
   Alresford began the year with cumulative taxable temporary differences of $160,000 and deductible temporary
   differences of $90,000, carrying a $5,000 allowance against the deferred tax asset those create; by
-  year-end the temporary differences had grown to $210,000 and $70,000, and a revised forecast calls for
-  the allowance to stand at $12,000 instead. For the entry recording this provision, what amount belongs
-  on the debit side of income tax expense?
+  year-end the taxable and deductible temporary differences stood at $210,000 and $70,000, and a revised
+  forecast calls for the allowance to stand at $12,000 instead. For the entry recording this provision,
+  what amount belongs on the debit side of income tax expense?
 choices:
 - id: A
   text: $145,500
@@ -37,24 +37,24 @@ choices:
     net deferred tax liability.
 - id: D
   text: $159,500
-  rationale: Correct. Current tax $135,000 + $12,500 increase in the deferred tax liability − ($-5,000)
-    change in the deferred tax asset + $7,000 increase in the valuation allowance.
+  rationale: Correct. Current tax $135,000 + $12,500 increase in the deferred tax liability + $5,000 decrease
+    in the deferred tax asset + $7,000 increase in the valuation allowance.
 answer: D
 explanation: The entry debits income tax expense and credits income taxes payable for current tax, $540,000
   × 25% = $135,000. The deferred tax liability increases by ($210,000 − $160,000) × 25% = $12,500, a credit
-  and a debit to expense. The deferred tax asset changes by ($70,000 − $90,000) × 25% = $-5,000; a decrease
-  is a debit to expense. The valuation allowance increases by $12,000 − $5,000 = $7,000, also debited
-  to expense, because a larger allowance means less of the deferred tax asset will be realized. Total
-  debit to income tax expense = $135,000 + $12,500 − ($-5,000) + $7,000 = $159,500.
+  and a debit to expense. The deferred tax asset changes by ($70,000 − $90,000) × 25% = a decrease of
+  $5,000; a decrease is a debit to expense. The valuation allowance increases by $12,000 − $5,000 = $7,000,
+  also debited to expense, because a larger allowance means less of the deferred tax asset will be realized.
+  Total debit to income tax expense = $135,000 + $12,500 + $5,000 + $7,000 = $159,500.
 variants:
 - stem: Bramhope Corp. posts its tax provision as one combined entry at year-end, carrying its deferred
     tax asset, deferred tax liability and the valuation allowance against that asset in separate ledger
     accounts. Taxable income for Year 2 comes to $360,000, taxed at the 21% rate enacted for every year.
     Bramhope began the year with cumulative taxable temporary differences of $120,000 and deductible temporary
     differences of $60,000, carrying a $4,000 allowance against the deferred tax asset those create; by
-    year-end the temporary differences had grown to $150,000 and $45,000, and a revised forecast calls
-    for the allowance to stand at $9,000 instead. For the entry recording this provision, what amount
-    belongs on the debit side of income tax expense?
+    year-end the taxable and deductible temporary differences stood at $150,000 and $45,000, and a revised
+    forecast calls for the allowance to stand at $9,000 instead. For the entry recording this provision,
+    what amount belongs on the debit side of income tax expense?
   choices:
   - id: A
     text: $83,750
@@ -68,8 +68,8 @@ variants:
       net deferred tax liability.
   - id: C
     text: $90,050
-    rationale: Correct. Current tax $75,600 + $6,300 increase in the deferred tax liability − ($-3,150)
-      change in the deferred tax asset + $5,000 increase in the valuation allowance.
+    rationale: Correct. Current tax $75,600 + $6,300 increase in the deferred tax liability + $3,150 decrease
+      in the deferred tax asset + $5,000 increase in the valuation allowance.
   - id: D
     text: $102,650
     rationale: Uses the December 31 deferred tax balances directly instead of the year's change in each
@@ -77,18 +77,18 @@ variants:
   answer: C
   explanation: The entry debits income tax expense and credits income taxes payable for current tax, $360,000
     × 21% = $75,600. The deferred tax liability increases by ($150,000 − $120,000) × 21% = $6,300, a credit
-    and a debit to expense. The deferred tax asset changes by ($45,000 − $60,000) × 21% = $-3,150; a decrease
-    is a debit to expense. The valuation allowance increases by $9,000 − $4,000 = $5,000, also debited
-    to expense, because a larger allowance means less of the deferred tax asset will be realized. Total
-    debit to income tax expense = $75,600 + $6,300 − ($-3,150) + $5,000 = $90,050.
+    and a debit to expense. The deferred tax asset changes by ($45,000 − $60,000) × 21% = a decrease of
+    $3,150; a decrease is a debit to expense. The valuation allowance increases by $9,000 − $4,000 = $5,000,
+    also debited to expense, because a larger allowance means less of the deferred tax asset will be realized.
+    Total debit to income tax expense = $75,600 + $6,300 + $3,150 + $5,000 = $90,050.
 - stem: Charlecote Corp. posts its tax provision as one combined entry at year-end, carrying its deferred
     tax asset, deferred tax liability and the valuation allowance against that asset in separate ledger
     accounts. Taxable income for Year 2 comes to $620,000, taxed at the 25% rate enacted for every year.
     Charlecote began the year with cumulative taxable temporary differences of $200,000 and deductible
     temporary differences of $110,000, carrying a $6,000 allowance against the deferred tax asset those
-    create; by year-end the temporary differences had grown to $260,000 and $80,000, and a revised forecast
-    calls for the allowance to stand at $15,000 instead. For the entry recording this provision, what
-    amount belongs on the debit side of income tax expense?
+    create; by year-end the taxable and deductible temporary differences stood at $260,000 and $80,000,
+    and a revised forecast calls for the allowance to stand at $15,000 instead. For the entry recording
+    this provision, what amount belongs on the debit side of income tax expense?
   choices:
   - id: A
     text: $168,500
@@ -101,8 +101,8 @@ variants:
       the net deferred tax liability.
   - id: C
     text: $186,500
-    rationale: Correct. Current tax $155,000 + $15,000 increase in the deferred tax liability − ($-7,500)
-      change in the deferred tax asset + $9,000 increase in the valuation allowance.
+    rationale: Correct. Current tax $155,000 + $15,000 increase in the deferred tax liability + $7,500
+      decrease in the deferred tax asset + $9,000 increase in the valuation allowance.
   - id: D
     text: $209,000
     rationale: Uses the December 31 deferred tax balances directly instead of the year's change in each
@@ -110,18 +110,18 @@ variants:
   answer: C
   explanation: The entry debits income tax expense and credits income taxes payable for current tax, $620,000
     × 25% = $155,000. The deferred tax liability increases by ($260,000 − $200,000) × 25% = $15,000, a
-    credit and a debit to expense. The deferred tax asset changes by ($80,000 − $110,000) × 25% = $-7,500;
-    a decrease is a debit to expense. The valuation allowance increases by $15,000 − $6,000 = $9,000,
-    also debited to expense, because a larger allowance means less of the deferred tax asset will be realized.
-    Total debit to income tax expense = $155,000 + $15,000 − ($-7,500) + $9,000 = $186,500.
+    credit and a debit to expense. The deferred tax asset changes by ($80,000 − $110,000) × 25% = a decrease
+    of $7,500; a decrease is a debit to expense. The valuation allowance increases by $15,000 − $6,000
+    = $9,000, also debited to expense, because a larger allowance means less of the deferred tax asset
+    will be realized. Total debit to income tax expense = $155,000 + $15,000 + $7,500 + $9,000 = $186,500.
 - stem: Dalbury Corp. posts its tax provision as one combined entry at year-end, carrying its deferred
     tax asset, deferred tax liability and the valuation allowance against that asset in separate ledger
     accounts. Taxable income for Year 2 comes to $430,000, taxed at the 24% rate enacted for every year.
     Dalbury began the year with cumulative taxable temporary differences of $140,000 and deductible temporary
     differences of $75,000, carrying a $3,000 allowance against the deferred tax asset those create; by
-    year-end the temporary differences had grown to $175,000 and $55,000, and a revised forecast calls
-    for the allowance to stand at $10,000 instead. For the entry recording this provision, what amount
-    belongs on the debit side of income tax expense?
+    year-end the taxable and deductible temporary differences stood at $175,000 and $55,000, and a revised
+    forecast calls for the allowance to stand at $10,000 instead. For the entry recording this provision,
+    what amount belongs on the debit side of income tax expense?
   choices:
   - id: A
     text: $109,400
@@ -134,8 +134,8 @@ variants:
       benefit, which reduces expense; a decrease increases it.
   - id: C
     text: $123,400
-    rationale: Correct. Current tax $103,200 + $8,400 increase in the deferred tax liability − ($-4,800)
-      change in the deferred tax asset + $7,000 increase in the valuation allowance.
+    rationale: Correct. Current tax $103,200 + $8,400 increase in the deferred tax liability + $4,800
+      decrease in the deferred tax asset + $7,000 increase in the valuation allowance.
   - id: D
     text: $139,000
     rationale: Uses the December 31 deferred tax balances directly instead of the year's change in each
@@ -143,7 +143,7 @@ variants:
   answer: C
   explanation: The entry debits income tax expense and credits income taxes payable for current tax, $430,000
     × 24% = $103,200. The deferred tax liability increases by ($175,000 − $140,000) × 24% = $8,400, a
-    credit and a debit to expense. The deferred tax asset changes by ($55,000 − $75,000) × 24% = $-4,800;
-    a decrease is a debit to expense. The valuation allowance increases by $10,000 − $3,000 = $7,000,
-    also debited to expense, because a larger allowance means less of the deferred tax asset will be realized.
-    Total debit to income tax expense = $103,200 + $8,400 − ($-4,800) + $7,000 = $123,400.
+    credit and a debit to expense. The deferred tax asset changes by ($55,000 − $75,000) × 24% = a decrease
+    of $4,800; a decrease is a debit to expense. The valuation allowance increases by $10,000 − $3,000
+    = $7,000, also debited to expense, because a larger allowance means less of the deferred tax asset
+    will be realized. Total debit to income tax expense = $103,200 + $8,400 + $4,800 + $7,000 = $123,400.

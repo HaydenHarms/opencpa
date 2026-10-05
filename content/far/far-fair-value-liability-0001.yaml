@@ -56,8 +56,8 @@ variants:
     rationale: Discounts the obligation as if it were payable in 5 years instead of 4, one year too many.
   - id: B
     text: $514,865
-    rationale: Correct. $650,000 discounted 4 years at 3.52.5% (3.5% risk-free + 2.5% for Ventongimps's
-      own nonperformance risk).
+    rationale: Correct. $650,000 discounted 4 years at 6% (3.5% risk-free + 2.5% for Ventongimps's own
+      nonperformance risk).
   - id: C
     text: $545,090
     rationale: Uses the 1% premium a stronger prospective buyer of Ventongimps said it would need. Fair
@@ -73,8 +73,7 @@ variants:
     standing and must include the effect of the reporting entity's own nonperformance risk, including
     its own credit risk, measured as of the measurement date — not a stronger counterparty's credit standing
     and not a stale, pre-downgrade spread (ASC 820-10-35-16 to 35-17A). The discount rate is 3.5% risk-free
-    + 2.5% for Ventongimps's own current nonperformance risk = 3.52.5%. Fair value = $650,000 × 0.7921
-    = $514,865.
+    + 2.5% for Ventongimps's own current nonperformance risk = 6%. Fair value = $650,000 × 0.7921 = $514,865.
 - stem: Wendron Mutual Co. must measure the fair value of a $380,000 obligation it owes a counterparty,
     payable in a lump sum in 6 years, assuming the obligation is transferred to a market participant of
     comparable credit standing. The risk-free rate for a 6-year term is 4.5%. Because of a recent downgrade,
@@ -88,8 +87,8 @@ variants:
     rationale: Discounts the obligation as if it were payable in 7 years instead of 6, one year too many.
   - id: B
     text: $239,476
-    rationale: Correct. $380,000 discounted 6 years at 4.53.5% (4.5% risk-free + 3.5% for Wendron's own
-      nonperformance risk).
+    rationale: Correct. $380,000 discounted 6 years at 8% (4.5% risk-free + 3.5% for Wendron's own nonperformance
+      risk).
   - id: C
     text: $267,900
     rationale: Uses the 1.5% premium that applied before Wendron's downgrade. Nonperformance risk is measured
@@ -104,12 +103,12 @@ variants:
     standing and must include the effect of the reporting entity's own nonperformance risk, including
     its own credit risk, measured as of the measurement date — not a stronger counterparty's credit standing
     and not a stale, pre-downgrade spread (ASC 820-10-35-16 to 35-17A). The discount rate is 4.5% risk-free
-    + 3.5% for Wendron's own current nonperformance risk = 4.53.5%. Fair value = $380,000 × 0.6302 = $239,476.
+    + 3.5% for Wendron's own current nonperformance risk = 8%. Fair value = $380,000 × 0.6302 = $239,476.
 - stem: Yelverton Guaranty Co. must measure the fair value of a $720,000 obligation it owes a counterparty,
     payable in a lump sum in 3 years, assuming the obligation is transferred to a market participant of
     comparable credit standing. The risk-free rate for a 3-year term is 3%. Because of a recent downgrade,
     market participants would require a 2% premium for Yelverton's own nonperformance risk as of the measurement
-    date; before the downgrade, that premium was only 0%. A prospective buyer of Yelverton with a stronger
+    date; before the downgrade, that premium was only 1%. A prospective buyer of Yelverton with a stronger
     credit profile said it would need only a 0.5% premium for the same obligation, but Yelverton itself
     hasn't transferred the obligation to that buyer. What is the fair value of Yelverton's obligation?
   choices:
@@ -121,14 +120,14 @@ variants:
     rationale: Correct. $720,000 discounted 3 years at 5% (3% risk-free + 2% for Yelverton's own nonperformance
       risk).
   - id: C
+    text: $640,080
+    rationale: Uses the 1% premium that applied before Yelverton's downgrade. Nonperformance risk is measured
+      at Yelverton's credit standing as of the measurement date, not an earlier one.
+  - id: D
     text: $649,368
     rationale: Uses the 0.5% premium a stronger prospective buyer of Yelverton said it would need. Fair
       value reflects Yelverton's own nonperformance risk as the obligor, not a third party's stronger
       credit standing, because Yelverton hasn't transferred the obligation.
-  - id: D
-    text: $658,872
-    rationale: Uses the 0% premium that applied before Yelverton's downgrade. Nonperformance risk is measured
-      at Yelverton's credit standing as of the measurement date, not an earlier one.
   answer: B
   explanation: Fair value of a liability assumes transfer to a market participant of comparable credit
     standing and must include the effect of the reporting entity's own nonperformance risk, including

@@ -609,6 +609,11 @@ def blind_files(items, scratch):
 
 
 def main():
+    # 2026-10-05: this script was mid-rewrite when the local session that built batch 17 ended. Its
+    # builders now produce different questions under the same ids, so running it would overwrite the
+    # committed batch 17 items (the reviewed versions in content/far) and reuse their ids. The YAML in
+    # content/far is the source of truth for batch 17; give any new questions here new ids first.
+    sys.exit("far-batch-17.py is out of sync with content/far; see the note in main()")
     items = [family(*f) for f in FAMILIES] + WORD_ITEMS
     finalize(items)
     failed = False

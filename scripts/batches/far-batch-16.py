@@ -307,6 +307,10 @@ def fv_in_use(p):
     )
 
 
+def pc(x):
+    return format(D(x).normalize(), "f")
+
+
 def fv_liability_nonperformance(p):
     co, s = p["co"], short(p["co"])
     face, n = D(p["face"]), p["n"]
@@ -323,12 +327,12 @@ def fv_liability_nonperformance(p):
         "undiscounted": (m(face), f"Reports the {m(face)} face amount with no discount for the time value of money."),
         "extra_year": (m(whole(rd(face * extra_f))), f"Discounts the obligation as if it were payable in {n + 1} years instead of {n}, one year too many."),
     }
-    key = (m(key_v), f"Correct. {m(face)} discounted {n} years at {p['rf'] + p['r']}% ({p['rf']}% risk-free + {p['r']}% for {s}'s own nonperformance risk).")
+    key = (m(key_v), f"Correct. {m(face)} discounted {n} years at {pc(D(p['rf']) + D(p['r']))}% ({p['rf']}% risk-free + {p['r']}% for {s}'s own nonperformance risk).")
     choices, ans = build(pool, key, p["use"])
     return variant(
         f"""{co} must measure the fair value of a {m(face)} obligation it owes a counterparty, payable in a lump sum in {n} years, assuming the obligation is transferred to a market participant of comparable credit standing. The risk-free rate for a {n}-year term is {p['rf']}%. Because of a recent downgrade, market participants would require a {p['r']}% premium for {s}'s own nonperformance risk as of the measurement date; before the downgrade, that premium was only {p['stale']}%. A prospective buyer of {s} with a stronger credit profile said it would need only a {p['r2']}% premium for the same obligation, but {s} itself hasn't transferred the obligation to that buyer. What is the fair value of {s}'s obligation?""",
         choices, ans,
-        f"""Fair value of a liability assumes transfer to a market participant of comparable credit standing and must include the effect of the reporting entity's own nonperformance risk, including its own credit risk, measured as of the measurement date — not a stronger counterparty's credit standing and not a stale, pre-downgrade spread (ASC 820-10-35-16 to 35-17A). The discount rate is {p['rf']}% risk-free + {p['r']}% for {s}'s own current nonperformance risk = {p['rf'] + p['r']}%. Fair value = {m(face)} × {key_f} = {m(key_v)}.""",
+        f"""Fair value of a liability assumes transfer to a market participant of comparable credit standing and must include the effect of the reporting entity's own nonperformance risk, including its own credit risk, measured as of the measurement date — not a stronger counterparty's credit standing and not a stale, pre-downgrade spread (ASC 820-10-35-16 to 35-17A). The discount rate is {p['rf']}% risk-free + {p['r']}% for {s}'s own current nonperformance risk = {pc(D(p['rf']) + D(p['r']))}%. Fair value = {m(face)} × {key_f} = {m(key_v)}.""",
     )
 
 
@@ -505,6 +509,11 @@ def tax_provision_entry_va(p):
     d_dtl = whole(rd((dtl_e - dtl_b) * r / 100))
     d_dta = whole(rd((dta_e - dta_b) * r / 100))
     d_va = va_e - va_b
+    dec = d_dta < 0
+    dta_txt = (f"+ {m(-d_dta)} decrease in the deferred tax asset" if dec else f"− {m(d_dta)} increase in the deferred tax asset")
+    dta_chg = f"a decrease of {m(-d_dta)}" if dec else f"an increase of {m(d_dta)}"
+    dta_rule = "a decrease is a debit to expense." if dec else "an increase is a credit to expense (a deferred tax benefit)."
+    dta_op = "+" if dec else "−"
     key_v = cur + d_dtl - d_dta + d_va
     pool = {
         "omit_va": (m(cur + d_dtl - d_dta), f"Leaves out the {m(d_va)} increase in the valuation allowance against the deferred tax asset. {s} debits income tax expense for an increase in the allowance, just like an increase in the net deferred tax liability."),
@@ -512,12 +521,12 @@ def tax_provision_entry_va(p):
         "swap_dta": (m(cur + d_dtl + d_dta + d_va), f"Debits income tax expense for the {m(abs(d_dta))} change in the deferred tax asset in the same direction as the change in the deferred tax liability. An increase in a deferred tax asset is a deferred tax benefit, which reduces expense; a decrease increases it."),
         "end_balances": (m(cur + whole(rd(dtl_e * r / 100)) - whole(rd(dta_e * r / 100)) + d_va), f"Uses the December 31 deferred tax balances directly instead of the year's change in each account. The January 1 balances were already recorded in earlier years."),
     }
-    key = (m(key_v), f"Correct. Current tax {m(cur)} + {m(d_dtl)} increase in the deferred tax liability − ({m(d_dta)}) change in the deferred tax asset + {m(d_va)} increase in the valuation allowance.")
+    key = (m(key_v), f"Correct. Current tax {m(cur)} + {m(d_dtl)} increase in the deferred tax liability {dta_txt} + {m(d_va)} increase in the valuation allowance.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} posts its tax provision as one combined entry at year-end, carrying its deferred tax asset, deferred tax liability and the valuation allowance against that asset in separate ledger accounts. Taxable income for Year 2 comes to {m(ti)}, taxed at the {p['r']}% rate enacted for every year. {s} began the year with cumulative taxable temporary differences of {m(dtl_b)} and deductible temporary differences of {m(dta_b)}, carrying a {m(va_b)} allowance against the deferred tax asset those create; by year-end the temporary differences had grown to {m(dtl_e)} and {m(dta_e)}, and a revised forecast calls for the allowance to stand at {m(va_e)} instead. For the entry recording this provision, what amount belongs on the debit side of income tax expense?""",
+        f"""{co} posts its tax provision as one combined entry at year-end, carrying its deferred tax asset, deferred tax liability and the valuation allowance against that asset in separate ledger accounts. Taxable income for Year 2 comes to {m(ti)}, taxed at the {p['r']}% rate enacted for every year. {s} began the year with cumulative taxable temporary differences of {m(dtl_b)} and deductible temporary differences of {m(dta_b)}, carrying a {m(va_b)} allowance against the deferred tax asset those create; by year-end the taxable and deductible temporary differences stood at {m(dtl_e)} and {m(dta_e)}, and a revised forecast calls for the allowance to stand at {m(va_e)} instead. For the entry recording this provision, what amount belongs on the debit side of income tax expense?""",
         choices, ans,
-        f"""The entry debits income tax expense and credits income taxes payable for current tax, {m(ti)} × {p['r']}% = {m(cur)}. The deferred tax liability increases by ({m(dtl_e)} − {m(dtl_b)}) × {p['r']}% = {m(d_dtl)}, a credit and a debit to expense. The deferred tax asset changes by ({m(dta_e)} − {m(dta_b)}) × {p['r']}% = {m(d_dta)}; a decrease is a debit to expense. The valuation allowance increases by {m(va_e)} − {m(va_b)} = {m(d_va)}, also debited to expense, because a larger allowance means less of the deferred tax asset will be realized. Total debit to income tax expense = {m(cur)} + {m(d_dtl)} − ({m(d_dta)}) + {m(d_va)} = {m(key_v)}.""",
+        f"""The entry debits income tax expense and credits income taxes payable for current tax, {m(ti)} × {p['r']}% = {m(cur)}. The deferred tax liability increases by ({m(dtl_e)} − {m(dtl_b)}) × {p['r']}% = {m(d_dtl)}, a credit and a debit to expense. The deferred tax asset changes by ({m(dta_e)} − {m(dta_b)}) × {p['r']}% = {dta_chg}; {dta_rule} The valuation allowance increases by {m(va_e)} − {m(va_b)} = {m(d_va)}, also debited to expense, because a larger allowance means less of the deferred tax asset will be realized. Total debit to income tax expense = {m(cur)} + {m(d_dtl)} {dta_op} {m(abs(d_dta))} + {m(d_va)} = {m(key_v)}.""",
     )
 
 
@@ -592,7 +601,7 @@ FAMILIES = [
         dict(co="Trewince Insurance Co.", face=500000, n=5, rf=4, r=3, r2="1.5", stale=1, use=["risk_free_only", "counterparty", "stale"]),
         dict(co="Ventongimps Assurance Co.", face=650000, n=4, rf="3.5", r="2.5", r2=1, stale="0.5", use=["risk_free_only", "counterparty", "extra_year"]),
         dict(co="Wendron Mutual Co.", face=380000, n=6, rf="4.5", r="3.5", r2=2, stale="1.5", use=["risk_free_only", "stale", "extra_year"]),
-        dict(co="Yelverton Guaranty Co.", face=720000, n=3, rf=3, r=2, r2="0.5", stale=0, use=["counterparty", "stale", "extra_year"]),
+        dict(co="Yelverton Guaranty Co.", face=720000, n=3, rf=3, r=2, r2="0.5", stale=1, use=["counterparty", "stale", "extra_year"]),
      ], "risk_free_only"),
     ("far-lessee-finance-0004", A3, "Lessee accounting", AP,
      ["ASC 842-10-15-30 to 15-35 (lease payments; residual value guarantees)", "ASC 842-20-30 (initial measurement of the right-of-use asset)"],
