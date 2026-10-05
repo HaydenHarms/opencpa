@@ -8,135 +8,152 @@ blueprint:
 review:
   status: draft
   references:
-  - 'ASC 855-10-25-1 and 25-3 (recognized subsequent events: conditions existing at the balance sheet
-    date)'
-  - 'ASC 855-10-50 (nonrecognized subsequent events: conditions arising after that date, disclosed)'
+  - 'ASC 855-10-25-1 (recognized subsequent events: conditions existing at the balance sheet date)'
+  - 'ASC 855-10-25-3 and 855-10-55-2 (nonrecognized subsequent events: conditions arising after that date)'
   notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'Ellersby Components Co.''s draft December 31, 1, balance sheet reports current assets of $2,460,000
-  and current liabilities of $1,180,000; the statements will be issued on March 10, 2. Between those dates:
-  a warranty claim on units Ellersby sold before year-end, for which Ellersby had accrued $52,000, was
-  settled for $81,000; a lawsuit over a 1 incident, for which Ellersby had accrued $160,000, was settled
-  for $215,000; and Marbury Exports Ltd., a customer that owed $140,000 at year-end and was current and
-  creditworthy then, defaulted on the balance after a new export-licensing regulation took effect in January,
-  2, cutting off its export business. What working capital (current assets minus current liabilities)
-  should Ellersby report at December 31, 1?'
+stem: 'Ellersby Components Co.''s draft December 31, Year 1, balance sheet reports current assets of $2,460,000
+  and current liabilities of $1,180,000; the statements will be issued on March 10, Year 2. Between those
+  dates: a warranty claim on units Ellersby sold before year-end, for which Ellersby had accrued $52,000,
+  was settled for $81,000; on February 9, Year 2, a state audit of Ellersby''s Year 1 sales concluded
+  that Ellersby had failed to collect sales tax on certain Year 1 sales and assessed $46,000, payable
+  in April, for which Ellersby had accrued nothing; and Marbury Exports, a customer that owed $140,000
+  at year-end, defaulted on its balance after an export-licensing regulation that the government announced
+  and put into effect in January, Year 2, cut off its export business. Through December, Marbury Exports
+  had paid every invoice within terms, and its bank had renewed its credit line in December. Ellersby
+  has not elected the ASU 2025-05 practical expedient for current receivables. What working capital (current
+  assets minus current liabilities) should Ellersby report at December 31, Year 1?'
 choices:
 - id: A
-  text: $1,056,000
-  rationale: Also writes down $140,000 of the receivable from Marbury Exports Ltd.. That customer was
-    current and financially sound at year-end; its default resulted from the export-licensing regulation
-    enacted in January, a condition that arose after year-end, so it is disclosed, not recognized.
+  text: $1,065,000
+  rationale: Also writes off the $140,000 owed by Marbury Exports. The customer was paying within terms
+    and its credit line had just been renewed at year-end; its default came from a regulation that took
+    effect after year-end, a condition that arose after the balance sheet date, so it is disclosed, not
+    recognized.
 - id: B
-  text: $1,196,000
-  rationale: Correct. $2,460,000 current assets − ($1,180,000 current liabilities + $84,000 additional
-    accruals).
+  text: $1,205,000
+  rationale: Correct. $2,460,000 − ($1,180,000 + $29,000 warranty + $46,000 sales tax).
 - id: C
-  text: $1,225,000
-  rationale: Leaves out the additional $29,000 Ellersby owes on the warranty claim, which settled for
-    more than the $52,000 accrued at year-end for units sold before then.
+  text: $1,234,000
+  rationale: Leaves out the additional $29,000 owed on the warranty claim, which settled for more than
+    the $52,000 accrued at year-end for units sold before then.
 - id: D
   text: $1,251,000
-  rationale: Leaves out the additional $55,000 Ellersby owes on the lawsuit, which settled for more than
-    the $160,000 accrued at year-end.
+  rationale: Leaves out the $46,000 sales-tax assessment. It arises from Year 1 sales, a condition that
+    existed at year-end, so it is recognized even though the audit concluded after year-end.
 answer: B
-explanation: 'The warranty and lawsuit settlements confirm conditions that existed at year-end and provide
-  a better estimate of amounts already accrued, so both are recognized: current liabilities rise by $29,000
-  and $55,000. Marbury Exports Ltd.''s default resulted from a regulation enacted after year-end, a condition
-  arising after the balance sheet date, so it is disclosed, not recognized, and the receivable isn''t
-  written down. Working capital = $2,460,000 − ($1,180,000 + $84,000) = $1,196,000.'
+explanation: 'The warranty settlement and the sales-tax assessment both give evidence about conditions
+  that existed at year-end (units already sold, Year 1 sales already made), so both are recognized (ASC
+  855-10-25-1): current liabilities rise by $81,000 − $52,000 = $29,000 and by $46,000. Marbury Exports''
+  default resulted from a regulation announced and effective after year-end, a condition arising after
+  the balance sheet date, so it is disclosed, not recognized, and the receivable isn''t written down (ASC
+  855-10-25-3, 855-10-55-2). Working capital = $2,460,000 − ($1,180,000 + $75,000) = $1,205,000.'
 variants:
-- stem: 'Thornleigh Devices Co.''s draft December 31, 2, balance sheet reports current assets of $3,180,000
-    and current liabilities of $1,540,000; the statements will be issued on March 18, 3. Between those
-    dates: a warranty claim on units Thornleigh sold before year-end, for which Thornleigh had accrued
-    $68,000, was settled for $97,000; a lawsuit over a 2 incident, for which Thornleigh had accrued $210,000,
-    was settled for $270,000; and Castleport Traders Ltd., a customer that owed $175,000 at year-end and
-    was current and creditworthy then, defaulted on the balance after a new customs-tariff order took
-    effect in February, 3, cutting off its export business. What working capital (current assets minus
-    current liabilities) should Thornleigh report at December 31, 2?'
+- stem: 'Thornleigh Devices Co.''s draft December 31, Year 2, balance sheet reports current assets of
+    $3,180,000 and current liabilities of $1,540,000; the statements will be issued on March 18, Year
+    3. Between those dates: a warranty claim on units Thornleigh sold before year-end, for which Thornleigh
+    had accrued $68,000, was settled for $97,000; on February 16, Year 3, a state audit of Thornleigh''s
+    Year 2 sales concluded that Thornleigh had failed to collect sales tax on certain Year 2 sales and
+    assessed $58,000, payable in April, for which Thornleigh had accrued nothing; and Castleport Traders,
+    a customer that owed $175,000 at year-end, defaulted on its balance after a customs-tariff order that
+    the government announced and put into effect in February, Year 3, cut off its export business. Through
+    December, Castleport Traders had paid every invoice within terms, and its bank had renewed its credit
+    line in December. Thornleigh has not elected the ASU 2025-05 practical expedient for current receivables.
+    What working capital (current assets minus current liabilities) should Thornleigh report at December
+    31, Year 2?'
   choices:
   - id: A
-    text: $1,551,000
-    rationale: Correct. $3,180,000 current assets − ($1,540,000 current liabilities + $89,000 additional
-      accruals).
+    text: $1,553,000
+    rationale: Correct. $3,180,000 − ($1,540,000 + $29,000 warranty + $58,000 sales tax).
   - id: B
-    text: $1,580,000
-    rationale: Leaves out the additional $29,000 Thornleigh owes on the warranty claim, which settled
-      for more than the $68,000 accrued at year-end for units sold before then.
+    text: $1,582,000
+    rationale: Leaves out the additional $29,000 owed on the warranty claim, which settled for more than
+      the $68,000 accrued at year-end for units sold before then.
   - id: C
     text: $1,611,000
-    rationale: Leaves out the additional $60,000 Thornleigh owes on the lawsuit, which settled for more
-      than the $210,000 accrued at year-end.
+    rationale: Leaves out the $58,000 sales-tax assessment. It arises from Year 2 sales, a condition that
+      existed at year-end, so it is recognized even though the audit concluded after year-end.
   - id: D
     text: $1,640,000
     rationale: Accepts the draft balances, $3,180,000 of current assets and $1,540,000 of current liabilities,
-      without adjusting for either settlement.
+      without recognizing either the warranty settlement or the tax assessment.
   answer: A
-  explanation: 'The warranty and lawsuit settlements confirm conditions that existed at year-end and provide
-    a better estimate of amounts already accrued, so both are recognized: current liabilities rise by
-    $29,000 and $60,000. Castleport Traders Ltd.''s default resulted from a regulation enacted after year-end,
-    a condition arising after the balance sheet date, so it is disclosed, not recognized, and the receivable
-    isn''t written down. Working capital = $3,180,000 − ($1,540,000 + $89,000) = $1,551,000.'
-- stem: 'Mossgate Fabrications Co.''s draft December 31, 3, balance sheet reports current assets of $1,920,000
-    and current liabilities of $940,000; the statements will be issued on March 5, 4. Between those dates:
-    a warranty claim on units Mossgate sold before year-end, for which Mossgate had accrued $41,000, was
-    settled for $63,000; a lawsuit over a 3 incident, for which Mossgate had accrued $125,000, was settled
-    for $168,000; and Harrowfield Freight Ltd., a customer that owed $110,000 at year-end and was current
-    and creditworthy then, defaulted on the balance after a new trade-sanctions order took effect in January,
-    4, cutting off its export business. What working capital (current assets minus current liabilities)
-    should Mossgate report at December 31, 3?'
+  explanation: 'The warranty settlement and the sales-tax assessment both give evidence about conditions
+    that existed at year-end (units already sold, Year 2 sales already made), so both are recognized (ASC
+    855-10-25-1): current liabilities rise by $97,000 − $68,000 = $29,000 and by $58,000. Castleport Traders''
+    default resulted from a regulation announced and effective after year-end, a condition arising after
+    the balance sheet date, so it is disclosed, not recognized, and the receivable isn''t written down
+    (ASC 855-10-25-3, 855-10-55-2). Working capital = $3,180,000 − ($1,540,000 + $87,000) = $1,553,000.'
+- stem: 'Mossgate Fabrications Co.''s draft December 31, Year 3, balance sheet reports current assets
+    of $1,920,000 and current liabilities of $940,000; the statements will be issued on March 5, Year
+    4. Between those dates: a warranty claim on units Mossgate sold before year-end, for which Mossgate
+    had accrued $41,000, was settled for $63,000; on February 2, Year 4, a state audit of Mossgate''s
+    Year 3 sales concluded that Mossgate had failed to collect sales tax on certain Year 3 sales and assessed
+    $37,000, payable in April, for which Mossgate had accrued nothing; and Harrowfield Freight, a customer
+    that owed $110,000 at year-end, defaulted on its balance after a trade-sanctions order that the government
+    announced and put into effect in January, Year 4, cut off its export business. Through December, Harrowfield
+    Freight had paid every invoice within terms, and its bank had renewed its credit line in December.
+    Mossgate has not elected the ASU 2025-05 practical expedient for current receivables. What working
+    capital (current assets minus current liabilities) should Mossgate report at December 31, Year 3?'
   choices:
   - id: A
-    text: $805,000
-    rationale: Also writes down $110,000 of the receivable from Harrowfield Freight Ltd.. That customer
-      was current and financially sound at year-end; its default resulted from the trade-sanctions order
-      enacted in January, a condition that arose after year-end, so it is disclosed, not recognized.
+    text: $811,000
+    rationale: Also writes off the $110,000 owed by Harrowfield Freight. The customer was paying within
+      terms and its credit line had just been renewed at year-end; its default came from a regulation
+      that took effect after year-end, a condition that arose after the balance sheet date, so it is disclosed,
+      not recognized.
   - id: B
-    text: $915,000
-    rationale: Correct. $1,920,000 current assets − ($940,000 current liabilities + $65,000 additional
-      accruals).
+    text: $921,000
+    rationale: Correct. $1,920,000 − ($940,000 + $22,000 warranty + $37,000 sales tax).
   - id: C
     text: $958,000
-    rationale: Leaves out the additional $43,000 Mossgate owes on the lawsuit, which settled for more
-      than the $125,000 accrued at year-end.
+    rationale: Leaves out the $37,000 sales-tax assessment. It arises from Year 3 sales, a condition that
+      existed at year-end, so it is recognized even though the audit concluded after year-end.
   - id: D
     text: $980,000
     rationale: Accepts the draft balances, $1,920,000 of current assets and $940,000 of current liabilities,
-      without adjusting for either settlement.
+      without recognizing either the warranty settlement or the tax assessment.
   answer: B
-  explanation: 'The warranty and lawsuit settlements confirm conditions that existed at year-end and provide
-    a better estimate of amounts already accrued, so both are recognized: current liabilities rise by
-    $22,000 and $43,000. Harrowfield Freight Ltd.''s default resulted from a regulation enacted after
-    year-end, a condition arising after the balance sheet date, so it is disclosed, not recognized, and
-    the receivable isn''t written down. Working capital = $1,920,000 − ($940,000 + $65,000) = $915,000.'
-- stem: 'Pemberfield Alloys Co.''s draft December 31, 4, balance sheet reports current assets of $2,720,000
-    and current liabilities of $1,360,000; the statements will be issued on March 22, 5. Between those
-    dates: a warranty claim on units Pemberfield sold before year-end, for which Pemberfield had accrued
-    $59,000, was settled for $88,000; a lawsuit over a 4 incident, for which Pemberfield had accrued $185,000,
-    was settled for $240,000; and Greystoke Imports Ltd., a customer that owed $155,000 at year-end and
-    was current and creditworthy then, defaulted on the balance after a new export-control amendment took
-    effect in February, 5, cutting off its export business. What working capital (current assets minus
-    current liabilities) should Pemberfield report at December 31, 4?'
+  explanation: 'The warranty settlement and the sales-tax assessment both give evidence about conditions
+    that existed at year-end (units already sold, Year 3 sales already made), so both are recognized (ASC
+    855-10-25-1): current liabilities rise by $63,000 − $41,000 = $22,000 and by $37,000. Harrowfield
+    Freight''s default resulted from a regulation announced and effective after year-end, a condition
+    arising after the balance sheet date, so it is disclosed, not recognized, and the receivable isn''t
+    written down (ASC 855-10-25-3, 855-10-55-2). Working capital = $1,920,000 − ($940,000 + $59,000) =
+    $921,000.'
+- stem: 'Pemberfield Alloys Co.''s draft December 31, Year 4, balance sheet reports current assets of
+    $2,720,000 and current liabilities of $1,360,000; the statements will be issued on March 22, Year
+    5. Between those dates: a warranty claim on units Pemberfield sold before year-end, for which Pemberfield
+    had accrued $59,000, was settled for $88,000; on March 3, Year 5, a state audit of Pemberfield''s
+    Year 4 sales concluded that Pemberfield had failed to collect sales tax on certain Year 4 sales and
+    assessed $52,000, payable in April, for which Pemberfield had accrued nothing; and Greystoke Imports,
+    a customer that owed $155,000 at year-end, defaulted on its balance after an export-control amendment
+    that the government announced and put into effect in February, Year 5, cut off its export business.
+    Through December, Greystoke Imports had paid every invoice within terms, and its bank had renewed
+    its credit line in December. Pemberfield has not elected the ASU 2025-05 practical expedient for current
+    receivables. What working capital (current assets minus current liabilities) should Pemberfield report
+    at December 31, Year 4?'
   choices:
   - id: A
-    text: $1,121,000
-    rationale: Also writes down $155,000 of the receivable from Greystoke Imports Ltd.. That customer
-      was current and financially sound at year-end; its default resulted from the export-control amendment
-      enacted in February, a condition that arose after year-end, so it is disclosed, not recognized.
+    text: $1,124,000
+    rationale: Also writes off the $155,000 owed by Greystoke Imports. The customer was paying within
+      terms and its credit line had just been renewed at year-end; its default came from a regulation
+      that took effect after year-end, a condition that arose after the balance sheet date, so it is disclosed,
+      not recognized.
   - id: B
-    text: $1,276,000
-    rationale: Correct. $2,720,000 current assets − ($1,360,000 current liabilities + $84,000 additional
-      accruals).
+    text: $1,279,000
+    rationale: Correct. $2,720,000 − ($1,360,000 + $29,000 warranty + $52,000 sales tax).
   - id: C
-    text: $1,305,000
-    rationale: Leaves out the additional $29,000 Pemberfield owes on the warranty claim, which settled
-      for more than the $59,000 accrued at year-end for units sold before then.
+    text: $1,308,000
+    rationale: Leaves out the additional $29,000 owed on the warranty claim, which settled for more than
+      the $59,000 accrued at year-end for units sold before then.
   - id: D
     text: $1,360,000
     rationale: Accepts the draft balances, $2,720,000 of current assets and $1,360,000 of current liabilities,
-      without adjusting for either settlement.
+      without recognizing either the warranty settlement or the tax assessment.
   answer: B
-  explanation: 'The warranty and lawsuit settlements confirm conditions that existed at year-end and provide
-    a better estimate of amounts already accrued, so both are recognized: current liabilities rise by
-    $29,000 and $55,000. Greystoke Imports Ltd.''s default resulted from a regulation enacted after year-end,
-    a condition arising after the balance sheet date, so it is disclosed, not recognized, and the receivable
-    isn''t written down. Working capital = $2,720,000 − ($1,360,000 + $84,000) = $1,276,000.'
+  explanation: 'The warranty settlement and the sales-tax assessment both give evidence about conditions
+    that existed at year-end (units already sold, Year 4 sales already made), so both are recognized (ASC
+    855-10-25-1): current liabilities rise by $88,000 − $59,000 = $29,000 and by $52,000. Greystoke Imports''
+    default resulted from a regulation announced and effective after year-end, a condition arising after
+    the balance sheet date, so it is disclosed, not recognized, and the receivable isn''t written down
+    (ASC 855-10-25-3, 855-10-55-2). Working capital = $2,720,000 − ($1,360,000 + $81,000) = $1,279,000.'

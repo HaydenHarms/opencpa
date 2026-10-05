@@ -8,111 +8,133 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 855-10-25 (subsequent event confirming a condition that existed at the balance sheet date)
-  - 'ASC 855-10-50 (nonrecognized subsequent events: dividend declarations)'
+  - 'ASC 855-10-25-1 and 855-10-55-1 (recognized subsequent events: a customer''s bankruptcy from deterioration
+    before year-end)'
+  - ASC 855-10-25-3 (nonrecognized subsequent events)
+  - ASC 326-20-30 (expected credit losses)
   notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Marrowbrook Supply Co.'s draft Year 1 income before income taxes is $1,860,000, which reflects a
-  $140,000 accrual for a lawsuit over a Year 1 incident at one of Marrowbrook's facilities. Before the
-  financial statements are issued, Marrowbrook settled the suit for $205,000. Separately, in February,
-  Marrowbrook's board declared a $90,000 cash dividend. Ignore income taxes. What income before income
-  taxes should Marrowbrook report for Year 1?
+stem: Marrowbrook Supply Co.'s draft Year 1 income before income taxes is $1,860,000. Its allowance for
+  credit losses at December 31, Year 1, includes $30,000 for the $220,000 owed by Hollins Retail, a customer
+  that had reported losses in each quarter of Year 1 and had paid its last three invoices of the year
+  more than 90 days late. On January 17, Year 2, Hollins Retail filed for bankruptcy, and Marrowbrook
+  now expects to collect $44,000 of the balance. On February 8, Year 2, Marrowbrook's board declared a
+  cash dividend of $90,000. The statements will be issued in March, Year 2, and Marrowbrook has not elected
+  the ASU 2025-05 practical expedient for current receivables. Ignore income taxes. What income before
+  income taxes should Marrowbrook report for Year 1?
 choices:
 - id: A
-  text: $1,655,000
-  rationale: Deducts the full $205,000 settlement instead of only the $65,000 by which it exceeds the
-    $140,000 already accrued.
+  text: $1,624,000
+  rationale: Also deducts the $90,000 dividend declared in February. A dividend declared after year-end
+    is a Year 2 distribution, not a Year 1 expense; it is disclosed.
 - id: B
-  text: $1,795,000
-  rationale: Correct. $1,860,000 − ($205,000 − $140,000).
+  text: $1,670,000
+  rationale: Writes off the whole $220,000 balance, ignoring the $44,000 Marrowbrook still expects to
+    collect from the bankruptcy estate.
 - id: C
-  text: $1,860,000
-  rationale: Leaves the draft $1,860,000 unchanged. The settlement confirms that Marrowbrook owed more
-    than the $140,000 it had accrued for a condition that existed at year-end.
+  text: $1,684,000
+  rationale: Charges the full $176,000 expected shortfall to Year 1 income without counting the $30,000
+    already provided for this customer in the year-end allowance.
 - id: D
-  text: $1,925,000
-  rationale: Adds the $65,000 instead of subtracting it. The suit settled for more than Marrowbrook had
-    accrued, so the additional $65,000 is an additional expense.
-answer: B
-explanation: 'The settlement confirms conditions that existed at year-end and provides a better estimate
-  of the liability, so it is recognized: the additional $205,000 − $140,000 = $65,000 of expense is recorded.
-  The dividend declaration is a nonrecognized subsequent event, disclosed but not reflected in Year 1
-  income. Corrected income before income taxes = $1,860,000 − $65,000 = $1,795,000.'
+  text: $1,714,000
+  rationale: Correct. $1,860,000 − ($220,000 − $44,000 expected recovery − $30,000 already allowed).
+answer: D
+explanation: 'The bankruptcy resulted from financial difficulties that existed at December 31, so it is
+  evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected loss
+  on the balance = $220,000 − $44,000 = $176,000, of which $30,000 is already in the allowance, so Year
+  1 credit loss expense rises by $146,000. The dividend, declared after year-end, is a nonrecognized subsequent
+  event, disclosed but not reflected in Year 1 (ASC 855-10-25-3); a dividend isn''t an expense in any
+  case. Income before income taxes = $1,860,000 − $146,000 = $1,714,000.'
 variants:
-- stem: Clearmont Industries Co.'s draft Year 2 income before income taxes is $2,340,000, which reflects
-    a $180,000 accrual for a lawsuit over a Year 2 incident at one of Clearmont's facilities. Before the
-    financial statements are issued, Clearmont settled the suit for $260,000. Separately, in March, Clearmont's
-    board declared a $120,000 cash dividend. Ignore income taxes. What income before income taxes should
-    Clearmont report for Year 2?
+- stem: Clearmont Industries Co.'s draft Year 2 income before income taxes is $2,340,000. Its allowance
+    for credit losses at December 31, Year 2, includes $45,000 for the $310,000 owed by Dalby Outfitters,
+    a customer that had reported losses in each quarter of Year 2 and had paid its last three invoices
+    of the year more than 90 days late. On January 24, Year 3, Dalby Outfitters filed for bankruptcy,
+    and Clearmont now expects to collect $93,000 of the balance. On February 12, Year 3, Clearmont's board
+    declared a cash dividend of $120,000. The statements will be issued in March, Year 3, and Clearmont
+    has not elected the ASU 2025-05 practical expedient for current receivables. Ignore income taxes.
+    What income before income taxes should Clearmont report for Year 2?
   choices:
   - id: A
-    text: $2,080,000
-    rationale: Deducts the full $260,000 settlement instead of only the $80,000 by which it exceeds the
-      $180,000 already accrued.
+    text: $2,048,000
+    rationale: Also deducts the $120,000 dividend declared in February. A dividend declared after year-end
+      is a Year 3 distribution, not a Year 2 expense; it is disclosed.
   - id: B
-    text: $2,140,000
-    rationale: Also deducts the $120,000 dividend the board declared in March. A dividend declared after
-      year-end doesn't affect Year 2 income; it is disclosed.
+    text: $2,123,000
+    rationale: Charges the full $217,000 expected shortfall to Year 2 income without counting the $45,000
+      already provided for this customer in the year-end allowance.
   - id: C
-    text: $2,260,000
-    rationale: Correct. $2,340,000 − ($260,000 − $180,000).
+    text: $2,168,000
+    rationale: Correct. $2,340,000 − ($310,000 − $93,000 expected recovery − $45,000 already allowed).
   - id: D
-    text: $2,420,000
-    rationale: Adds the $80,000 instead of subtracting it. The suit settled for more than Clearmont had
-      accrued, so the additional $80,000 is an additional expense.
+    text: $2,340,000
+    rationale: Leaves the draft unchanged. The bankruptcy confirms losses the customer was already suffering
+      at year-end, so the allowance is increased for Year 2.
   answer: C
-  explanation: 'The settlement confirms conditions that existed at year-end and provides a better estimate
-    of the liability, so it is recognized: the additional $260,000 − $180,000 = $80,000 of expense is
-    recorded. The dividend declaration is a nonrecognized subsequent event, disclosed but not reflected
-    in Year 2 income. Corrected income before income taxes = $2,340,000 − $80,000 = $2,260,000.'
-- stem: Fallowgate Products Co.'s draft Year 3 income before income taxes is $1,420,000, which reflects
-    a $95,000 accrual for a lawsuit over a Year 3 incident at one of Fallowgate's facilities. Before the
-    financial statements are issued, Fallowgate settled the suit for $150,000. Separately, in January,
-    Fallowgate's board declared a $60,000 cash dividend. Ignore income taxes. What income before income
-    taxes should Fallowgate report for Year 3?
+  explanation: 'The bankruptcy resulted from financial difficulties that existed at December 31, so it
+    is evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected
+    loss on the balance = $310,000 − $93,000 = $217,000, of which $45,000 is already in the allowance,
+    so Year 2 credit loss expense rises by $172,000. The dividend, declared after year-end, is a nonrecognized
+    subsequent event, disclosed but not reflected in Year 2 (ASC 855-10-25-3); a dividend isn''t an expense
+    in any case. Income before income taxes = $2,340,000 − $172,000 = $2,168,000.'
+- stem: Fallowgate Products Co.'s draft Year 3 income before income taxes is $1,420,000. Its allowance
+    for credit losses at December 31, Year 3, includes $16,000 for the $160,000 owed by Penrose Hardware,
+    a customer that had reported losses in each quarter of Year 3 and had paid its last three invoices
+    of the year more than 90 days late. On January 9, Year 4, Penrose Hardware filed for bankruptcy, and
+    Fallowgate now expects to collect $36,000 of the balance. On February 19, Year 4, Fallowgate's board
+    declared a cash dividend of $60,000. The statements will be issued in March, Year 4, and Fallowgate
+    has not elected the ASU 2025-05 practical expedient for current receivables. Ignore income taxes.
+    What income before income taxes should Fallowgate report for Year 3?
   choices:
   - id: A
-    text: $1,270,000
-    rationale: Deducts the full $150,000 settlement instead of only the $55,000 by which it exceeds the
-      $95,000 already accrued.
+    text: $1,276,000
+    rationale: Writes off the whole $160,000 balance, ignoring the $36,000 Fallowgate still expects to
+      collect from the bankruptcy estate.
   - id: B
-    text: $1,305,000
-    rationale: Also deducts the $60,000 dividend the board declared in January. A dividend declared after
-      year-end doesn't affect Year 3 income; it is disclosed.
+    text: $1,296,000
+    rationale: Charges the full $124,000 expected shortfall to Year 3 income without counting the $16,000
+      already provided for this customer in the year-end allowance.
   - id: C
-    text: $1,365,000
-    rationale: Correct. $1,420,000 − ($150,000 − $95,000).
+    text: $1,312,000
+    rationale: Correct. $1,420,000 − ($160,000 − $36,000 expected recovery − $16,000 already allowed).
   - id: D
     text: $1,420,000
-    rationale: Leaves the draft $1,420,000 unchanged. The settlement confirms that Fallowgate owed more
-      than the $95,000 it had accrued for a condition that existed at year-end.
+    rationale: Leaves the draft unchanged. The bankruptcy confirms losses the customer was already suffering
+      at year-end, so the allowance is increased for Year 3.
   answer: C
-  explanation: 'The settlement confirms conditions that existed at year-end and provides a better estimate
-    of the liability, so it is recognized: the additional $150,000 − $95,000 = $55,000 of expense is recorded.
-    The dividend declaration is a nonrecognized subsequent event, disclosed but not reflected in Year
-    3 income. Corrected income before income taxes = $1,420,000 − $55,000 = $1,365,000.'
-- stem: Berrowfield Co.'s draft Year 4 income before income taxes is $2,960,000, which reflects a $220,000
-    accrual for a lawsuit over a Year 4 incident at one of Berrowfield's facilities. Before the financial
-    statements are issued, Berrowfield settled the suit for $310,000. Separately, in February, Berrowfield's
-    board declared a $150,000 cash dividend. Ignore income taxes. What income before income taxes should
-    Berrowfield report for Year 4?
+  explanation: 'The bankruptcy resulted from financial difficulties that existed at December 31, so it
+    is evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected
+    loss on the balance = $160,000 − $36,000 = $124,000, of which $16,000 is already in the allowance,
+    so Year 3 credit loss expense rises by $108,000. The dividend, declared after year-end, is a nonrecognized
+    subsequent event, disclosed but not reflected in Year 3 (ASC 855-10-25-3); a dividend isn''t an expense
+    in any case. Income before income taxes = $1,420,000 − $108,000 = $1,312,000.'
+- stem: Berrowfield Co.'s draft Year 4 income before income taxes is $2,960,000. Its allowance for credit
+    losses at December 31, Year 4, includes $60,000 for the $380,000 owed by Gatley Stores, a customer
+    that had reported losses in each quarter of Year 4 and had paid its last three invoices of the year
+    more than 90 days late. On January 13, Year 5, Gatley Stores filed for bankruptcy, and Berrowfield
+    now expects to collect $114,000 of the balance. On February 4, Year 5, Berrowfield's board declared
+    a cash dividend of $150,000. The statements will be issued in March, Year 5, and Berrowfield has not
+    elected the ASU 2025-05 practical expedient for current receivables. Ignore income taxes. What income
+    before income taxes should Berrowfield report for Year 4?
   choices:
   - id: A
-    text: $2,720,000
-    rationale: Also deducts the $150,000 dividend the board declared in February. A dividend declared
-      after year-end doesn't affect Year 4 income; it is disclosed.
+    text: $2,604,000
+    rationale: Also deducts the $150,000 dividend declared in February. A dividend declared after year-end
+      is a Year 5 distribution, not a Year 4 expense; it is disclosed.
   - id: B
-    text: $2,870,000
-    rationale: Correct. $2,960,000 − ($310,000 − $220,000).
+    text: $2,640,000
+    rationale: Writes off the whole $380,000 balance, ignoring the $114,000 Berrowfield still expects
+      to collect from the bankruptcy estate.
   - id: C
-    text: $2,960,000
-    rationale: Leaves the draft $2,960,000 unchanged. The settlement confirms that Berrowfield owed more
-      than the $220,000 it had accrued for a condition that existed at year-end.
+    text: $2,754,000
+    rationale: Correct. $2,960,000 − ($380,000 − $114,000 expected recovery − $60,000 already allowed).
   - id: D
-    text: $3,050,000
-    rationale: Adds the $90,000 instead of subtracting it. The suit settled for more than Berrowfield
-      had accrued, so the additional $90,000 is an additional expense.
-  answer: B
-  explanation: 'The settlement confirms conditions that existed at year-end and provides a better estimate
-    of the liability, so it is recognized: the additional $310,000 − $220,000 = $90,000 of expense is
-    recorded. The dividend declaration is a nonrecognized subsequent event, disclosed but not reflected
-    in Year 4 income. Corrected income before income taxes = $2,960,000 − $90,000 = $2,870,000.'
+    text: $2,960,000
+    rationale: Leaves the draft unchanged. The bankruptcy confirms losses the customer was already suffering
+      at year-end, so the allowance is increased for Year 4.
+  answer: C
+  explanation: 'The bankruptcy resulted from financial difficulties that existed at December 31, so it
+    is evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected
+    loss on the balance = $380,000 − $114,000 = $266,000, of which $60,000 is already in the allowance,
+    so Year 4 credit loss expense rises by $206,000. The dividend, declared after year-end, is a nonrecognized
+    subsequent event, disclosed but not reflected in Year 4 (ASC 855-10-25-3); a dividend isn''t an expense
+    in any case. Income before income taxes = $2,960,000 − $206,000 = $2,754,000.'

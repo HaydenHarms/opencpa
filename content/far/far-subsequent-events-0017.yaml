@@ -8,118 +8,137 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 855-10-25 (correction of a count error found before issuance) versus ASC 855-10-50 (nonrecognized
-    events disclosed only)
+  - ASC 855-10-25-1 (recognized subsequent events)
+  - ASC 855-10-25-3 and 855-10-55-2 (nonrecognized subsequent events)
+  - ASC 450-30-25-1 (gain contingencies not recognized before realization)
   notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'Longstone Materials Co.''s draft December 31, 1, balance sheet reports total assets of $8,460,000.
-  The statements will be issued on March 14, 2. Before issuance: in January, Longstone found that one
-  storage area had been counted twice in the December 31 physical inventory, overstating the count by
-  $54,000; in February, a broad decline in equity markets cut $72,000 from the fair value of Longstone''s
-  portfolio of listed securities; and also in February, Longstone issued bonds for $900,000 in cash. What
-  total assets should Longstone report at December 31, 1?'
+stem: 'Longstone Materials Co.''s draft December 31, Year 1, balance sheet reports total assets of $8,460,000.
+  In December, a hailstorm damaged Longstone''s delivery vans; Longstone wrote them down and recorded
+  a $96,000 receivable for the insurance recovery it expected. The statements will be issued on March
+  14, Year 2. Before then: in January, the insurer completed its assessment under the policy in force
+  at the time of the storm and paid $58,000 in full settlement of the claim; in February, a court awarded
+  Longstone $150,000 in its suit against a former supplier, and the supplier has appealed; and also in
+  February, a broad decline in equity markets cut $120,000 from the fair value of Longstone''s portfolio
+  of listed securities. What total assets should Longstone report at December 31, Year 1?'
 choices:
 - id: A
-  text: $8,334,000
-  rationale: Also writes down the $72,000 drop in the fair value of Longstone's equity securities. The
-    decline followed a general market move after year-end and doesn't reflect conditions that existed
-    at December 31.
+  text: $8,302,000
+  rationale: Also writes down the securities for the $120,000 decline in February. The fall in prices
+    came from a market move after year-end and doesn't reflect conditions at December 31.
 - id: B
-  text: $8,406,000
-  rationale: Correct. $8,460,000 − $54,000 count correction.
+  text: $8,364,000
+  rationale: Removes the whole $96,000 receivable, as if an insurance recovery could be recognized only
+    when paid. The $58,000 the insurer paid was recoverable at year-end.
 - id: C
-  text: $8,460,000
-  rationale: Leaves the $54,000 inventory count error uncorrected, even though it was found before the
-    statements were issued.
+  text: $8,422,000
+  rationale: Correct. $8,460,000 − ($96,000 − $58,000) insurance shortfall.
 - id: D
-  text: $9,288,000
-  rationale: Leaves the count error uncorrected while also deducting the equity securities decline and
-    adding the bond proceeds, the two events that don't affect the December 31 balance.
-answer: B
-explanation: 'The double-counted storage area is an error in the December 31 count, found before the statements
-  were issued, and is corrected in the December 31 balance: $8,460,000 − $54,000 = $8,406,000. The equity
-  market decline and the bond issuance both reflect conditions arising after year-end; they are disclosed
-  but don''t change the assets reported at December 31.'
+  text: $8,460,000
+  rationale: Leaves the $96,000 insurance receivable as recorded. The insurer's assessment shows how much
+    of the December loss was recoverable at year-end, so the receivable is reduced to the $58,000 it paid.
+answer: C
+explanation: 'The insurer''s assessment applies the policy in force at the time of the December storm,
+  so it is evidence of the amount recoverable at year-end and is recognized: the receivable falls from
+  $96,000 to $58,000, a $38,000 reduction (ASC 855-10-25-1). The court award is a gain contingency, still
+  under appeal; it isn''t recognized until realized (ASC 450-30-25-1) and is disclosed. The market decline
+  reflects conditions that arose after year-end and is disclosed, not recognized (ASC 855-10-25-3, 855-10-55-2).
+  Total assets = $8,460,000 − $38,000 = $8,422,000.'
 variants:
-- stem: 'Castlebrook Supply Co.''s draft December 31, 2, balance sheet reports total assets of $6,240,000.
-    The statements will be issued on April 2, 3. Before issuance: in February, Castlebrook found that
-    one storage area had been counted twice in the December 31 physical inventory, overstating the count
-    by $38,000; in March, a broad decline in equity markets cut $51,000 from the fair value of Castlebrook''s
-    portfolio of listed securities; and also in March, Castlebrook issued bonds for $650,000 in cash.
-    What total assets should Castlebrook report at December 31, 2?'
+- stem: 'Castlebrook Supply Co.''s draft December 31, Year 2, balance sheet reports total assets of $6,240,000.
+    In December, a hailstorm damaged Castlebrook''s forklifts; Castlebrook wrote them down and recorded
+    a $74,000 receivable for the insurance recovery it expected. The statements will be issued on March
+    20, Year 3. Before then: in January, the insurer completed its assessment under the policy in force
+    at the time of the storm and paid $49,000 in full settlement of the claim; in February, a court awarded
+    Castlebrook $120,000 in its suit against a former supplier, and the supplier has appealed; and also
+    in February, a broad decline in equity markets cut $88,000 from the fair value of Castlebrook''s portfolio
+    of listed securities. What total assets should Castlebrook report at December 31, Year 2?'
   choices:
   - id: A
-    text: $6,202,000
-    rationale: Correct. $6,240,000 − $38,000 count correction.
+    text: $6,127,000
+    rationale: Also writes down the securities for the $88,000 decline in February. The fall in prices
+      came from a market move after year-end and doesn't reflect conditions at December 31.
   - id: B
+    text: $6,215,000
+    rationale: Correct. $6,240,000 − ($74,000 − $49,000) insurance shortfall.
+  - id: C
     text: $6,240,000
-    rationale: Leaves the $38,000 inventory count error uncorrected, even though it was found before the
-      statements were issued.
-  - id: C
-    text: $6,839,000
-    rationale: Leaves the count error uncorrected while also deducting the equity securities decline and
-      adding the bond proceeds, the two events that don't affect the December 31 balance.
+    rationale: Leaves the $74,000 insurance receivable as recorded. The insurer's assessment shows how
+      much of the December loss was recoverable at year-end, so the receivable is reduced to the $49,000
+      it paid.
   - id: D
-    text: $6,852,000
-    rationale: Adds the $650,000 Castlebrook received from issuing bonds in March. That financing occurred
-      after year-end; the cash isn't on hand at December 31.
-  answer: A
-  explanation: 'The double-counted storage area is an error in the December 31 count, found before the
-    statements were issued, and is corrected in the December 31 balance: $6,240,000 − $38,000 = $6,202,000.
-    The equity market decline and the bond issuance both reflect conditions arising after year-end; they
-    are disclosed but don''t change the assets reported at December 31.'
-- stem: 'Ferrybridge Traders Co.''s draft December 31, 3, balance sheet reports total assets of $10,180,000.
-    The statements will be issued on March 20, 4. Before issuance: in January, Ferrybridge found that
-    one storage area had been counted twice in the December 31 physical inventory, overstating the count
-    by $71,000; in February, a broad decline in equity markets cut $96,000 from the fair value of Ferrybridge''s
-    portfolio of listed securities; and also in February, Ferrybridge issued bonds for $1,200,000 in cash.
-    What total assets should Ferrybridge report at December 31, 3?'
-  choices:
-  - id: A
-    text: $10,013,000
-    rationale: Also writes down the $96,000 drop in the fair value of Ferrybridge's equity securities.
-      The decline followed a general market move after year-end and doesn't reflect conditions that existed
-      at December 31.
-  - id: B
-    text: $10,109,000
-    rationale: Correct. $10,180,000 − $71,000 count correction.
-  - id: C
-    text: $11,284,000
-    rationale: Leaves the count error uncorrected while also deducting the equity securities decline and
-      adding the bond proceeds, the two events that don't affect the December 31 balance.
-  - id: D
-    text: $11,309,000
-    rationale: Adds the $1,200,000 Ferrybridge received from issuing bonds in February. That financing
-      occurred after year-end; the cash isn't on hand at December 31.
+    text: $6,335,000
+    rationale: Also adds the $120,000 court award. The supplier has appealed; a gain contingency isn't
+      recognized before it is realized, even when a favorable judgment comes before the statements are
+      issued.
   answer: B
-  explanation: 'The double-counted storage area is an error in the December 31 count, found before the
-    statements were issued, and is corrected in the December 31 balance: $10,180,000 − $71,000 = $10,109,000.
-    The equity market decline and the bond issuance both reflect conditions arising after year-end; they
-    are disclosed but don''t change the assets reported at December 31.'
-- stem: 'Oldfen Mercantile Co.''s draft December 31, 4, balance sheet reports total assets of $4,920,000.
-    The statements will be issued on April 8, 5. Before issuance: in February, Oldfen found that one storage
-    area had been counted twice in the December 31 physical inventory, overstating the count by $29,000;
-    in March, a broad decline in equity markets cut $40,000 from the fair value of Oldfen''s portfolio
-    of listed securities; and also in March, Oldfen issued bonds for $480,000 in cash. What total assets
-    should Oldfen report at December 31, 4?'
+  explanation: 'The insurer''s assessment applies the policy in force at the time of the December storm,
+    so it is evidence of the amount recoverable at year-end and is recognized: the receivable falls from
+    $74,000 to $49,000, a $25,000 reduction (ASC 855-10-25-1). The court award is a gain contingency,
+    still under appeal; it isn''t recognized until realized (ASC 450-30-25-1) and is disclosed. The market
+    decline reflects conditions that arose after year-end and is disclosed, not recognized (ASC 855-10-25-3,
+    855-10-55-2). Total assets = $6,240,000 − $25,000 = $6,215,000.'
+- stem: 'Ferrybridge Traders Co.''s draft December 31, Year 3, balance sheet reports total assets of $10,180,000.
+    In December, a hailstorm damaged Ferrybridge''s warehouse roofs; Ferrybridge wrote them down and recorded
+    a $132,000 receivable for the insurance recovery it expected. The statements will be issued on March
+    11, Year 4. Before then: in January, the insurer completed its assessment under the policy in force
+    at the time of the storm and paid $87,000 in full settlement of the claim; in February, a court awarded
+    Ferrybridge $210,000 in its suit against a former supplier, and the supplier has appealed; and also
+    in February, a broad decline in equity markets cut $96,000 from the fair value of Ferrybridge''s portfolio
+    of listed securities. What total assets should Ferrybridge report at December 31, Year 3?'
   choices:
   - id: A
-    text: $4,851,000
-    rationale: Also writes down the $40,000 drop in the fair value of Oldfen's equity securities. The
-      decline followed a general market move after year-end and doesn't reflect conditions that existed
-      at December 31.
+    text: $10,048,000
+    rationale: Removes the whole $132,000 receivable, as if an insurance recovery could be recognized
+      only when paid. The $87,000 the insurer paid was recoverable at year-end.
   - id: B
-    text: $4,891,000
-    rationale: Correct. $4,920,000 − $29,000 count correction.
+    text: $10,135,000
+    rationale: Correct. $10,180,000 − ($132,000 − $87,000) insurance shortfall.
   - id: C
+    text: $10,180,000
+    rationale: Leaves the $132,000 insurance receivable as recorded. The insurer's assessment shows how
+      much of the December loss was recoverable at year-end, so the receivable is reduced to the $87,000
+      it paid.
+  - id: D
+    text: $10,345,000
+    rationale: Also adds the $210,000 court award. The supplier has appealed; a gain contingency isn't
+      recognized before it is realized, even when a favorable judgment comes before the statements are
+      issued.
+  answer: B
+  explanation: 'The insurer''s assessment applies the policy in force at the time of the December storm,
+    so it is evidence of the amount recoverable at year-end and is recognized: the receivable falls from
+    $132,000 to $87,000, a $45,000 reduction (ASC 855-10-25-1). The court award is a gain contingency,
+    still under appeal; it isn''t recognized until realized (ASC 450-30-25-1) and is disclosed. The market
+    decline reflects conditions that arose after year-end and is disclosed, not recognized (ASC 855-10-25-3,
+    855-10-55-2). Total assets = $10,180,000 − $45,000 = $10,135,000.'
+- stem: 'Oldfen Mercantile Co.''s draft December 31, Year 4, balance sheet reports total assets of $4,920,000.
+    In December, a hailstorm damaged Oldfen''s greenhouses; Oldfen wrote them down and recorded a $61,000
+    receivable for the insurance recovery it expected. The statements will be issued on March 8, Year
+    5. Before then: in January, the insurer completed its assessment under the policy in force at the
+    time of the storm and paid $38,000 in full settlement of the claim; in February, a court awarded Oldfen
+    $95,000 in its suit against a former supplier, and the supplier has appealed; and also in February,
+    a broad decline in equity markets cut $67,000 from the fair value of Oldfen''s portfolio of listed
+    securities. What total assets should Oldfen report at December 31, Year 4?'
+  choices:
+  - id: A
+    text: $4,830,000
+    rationale: Also writes down the securities for the $67,000 decline in February. The fall in prices
+      came from a market move after year-end and doesn't reflect conditions at December 31.
+  - id: B
+    text: $4,859,000
+    rationale: Removes the whole $61,000 receivable, as if an insurance recovery could be recognized only
+      when paid. The $38,000 the insurer paid was recoverable at year-end.
+  - id: C
+    text: $4,897,000
+    rationale: Correct. $4,920,000 − ($61,000 − $38,000) insurance shortfall.
+  - id: D
     text: $4,920,000
-    rationale: Leaves the $29,000 inventory count error uncorrected, even though it was found before the
-      statements were issued.
-  - id: D
-    text: $5,371,000
-    rationale: Adds the $480,000 Oldfen received from issuing bonds in March. That financing occurred
-      after year-end; the cash isn't on hand at December 31.
-  answer: B
-  explanation: 'The double-counted storage area is an error in the December 31 count, found before the
-    statements were issued, and is corrected in the December 31 balance: $4,920,000 − $29,000 = $4,891,000.
-    The equity market decline and the bond issuance both reflect conditions arising after year-end; they
-    are disclosed but don''t change the assets reported at December 31.'
+    rationale: Leaves the $61,000 insurance receivable as recorded. The insurer's assessment shows how
+      much of the December loss was recoverable at year-end, so the receivable is reduced to the $38,000
+      it paid.
+  answer: C
+  explanation: 'The insurer''s assessment applies the policy in force at the time of the December storm,
+    so it is evidence of the amount recoverable at year-end and is recognized: the receivable falls from
+    $61,000 to $38,000, a $23,000 reduction (ASC 855-10-25-1). The court award is a gain contingency,
+    still under appeal; it isn''t recognized until realized (ASC 450-30-25-1) and is disclosed. The market
+    decline reflects conditions that arose after year-end and is disclosed, not recognized (ASC 855-10-25-3,
+    855-10-55-2). Total assets = $4,920,000 − $23,000 = $4,897,000.'

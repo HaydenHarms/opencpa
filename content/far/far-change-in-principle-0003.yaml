@@ -8,127 +8,156 @@ blueprint:
 review:
   status: draft
   references:
-  - 'ASC 250-10-45-5 to 45-8 (change in accounting principle: retrospective application when practicable)'
+  - ASC 250-10-45-5 to 45-8 (retrospective application of a change in accounting principle; indirect effects)
   notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'At the start of Year 3, Verity Hardware Co. changes its inventory cost-flow method from weighted-average
-  to FIFO because FIFO better reflects the actual flow of its goods, and it can determine the effect on
-  every prior period. Inventory under each method was: December 31, Year 1 -- weighted-average $480,000,
-  FIFO $560,000; December 31, Year 2 -- weighted-average $520,000, FIFO $640,000. Verity''s tax rate is
-  25% for all years and all effects, and it presents comparative statements for Year 2 and Year 3. What
-  net-of-tax adjustment should Verity make to its January 1, Year 2, balance of retained earnings?'
+stem: 'At the start of Year 4, Verity Hardware Co. changes its inventory cost-flow method from FIFO to
+  weighted-average because weighted-average better matches the cost of its interchangeable stock, and
+  it can determine the effect on every prior period. Its year-end inventories under the two methods were:
+  December 31, Year 1, FIFO $560,000 and weighted-average $500,000; December 31, Year 2, FIFO $640,000
+  and weighted-average $555,000; December 31, Year 3, FIFO $700,000 and weighted-average $570,000. Verity
+  pays employees a profit-sharing bonus equal to 10% of income before the bonus and income taxes; bonuses
+  for prior years were based on income as originally reported and will not be recalculated. Verity''s
+  Year 3 net income as originally reported was $620,000, and its tax rate is 25% for all years and all
+  effects. In its comparative statements for Years 2, 3 and 4, what net income should Verity report for
+  Year 3?'
 choices:
 - id: A
-  text: $60,000 decrease
-  rationale: Subtracts the FIFO amount from the weighted-average amount instead of the reverse. Fifo inventory
-    of $560,000 exceeds weighted-average inventory of $480,000, raising retained earnings.
+  text: $586,250
+  rationale: Correct. $620,000 − ($130,000 − $85,000) × 75% = $586,250; the bonus isn't recomputed.
 - id: B
-  text: $60,000 increase
-  rationale: Correct. ($560,000 − $480,000) × 75%.
+  text: $589,625
+  rationale: Also recomputes the 10% profit-sharing bonus on the restated income. A change in the bonus
+    is an indirect effect of the change in principle, and indirect effects aren't recognized in the restated
+    prior periods (ASC 250-10-45-8).
 - id: C
-  text: $80,000 increase
-  rationale: Reports the pretax $80,000 cumulative effect without its tax effect. The adjustment to opening
-    retained earnings is net of the 25% tax rate.
+  text: $601,250
+  rationale: Uses the change in the difference between the methods during Year 2 (from December 31, Year
+    1, to December 31, Year 2) instead of during Year 3.
 - id: D
-  text: $90,000 increase
-  rationale: Uses the $120,000 difference between the two methods at December 31, Year 2, rather than
-    at December 31, Year 1. The cumulative effect through the end of the earliest year presented, Year
-    1, is what adjusts the January 1, Year 2, balance.
-answer: B
+  text: $653,750
+  rationale: Applies the Year 3 effect in the wrong direction. Weighted-average inventory moved from $85,000
+    below FIFO at the start of Year 3 to $130,000 below FIFO at its end, so restated Year 3 cost of goods
+    sold is higher and income lower.
+answer: A
 explanation: 'A change in inventory cost-flow method is a change in accounting principle, applied retrospectively
-  when the effect on every prior period can be determined (ASC 250-10-45-5). The cumulative effect on
-  periods before the earliest period presented adjusts the opening balance of retained earnings for that
-  period, net of tax: ($560,000 − $480,000) = $80,000 pretax, × 75% after-tax = $60,000. The December
-  31, Year 2, difference is restated separately within the comparative Year 2 statements; it doesn''t
-  change the January 1, Year 2, opening balance.'
+  when its effect on every prior period can be determined (ASC 250-10-45-5). Each prior year presented
+  is restated as if weighted-average had always been used. Year 3 income changes by the change during
+  Year 3 in the difference between the methods'' inventories: weighted-average inventory moved from $85,000
+  below FIFO at the start of Year 3 to $130,000 below FIFO at its end, so restated Year 3 cost of goods
+  sold is $45,000 higher and pretax income $45,000 lower, or $33,750 after the 25% tax. The profit-sharing
+  bonus would have differed under weighted-average, but that is an indirect effect, which is not recognized
+  in the restated periods (ASC 250-10-45-8); prior bonuses won''t be recalculated, so nothing changes
+  in any period. Restated Year 3 net income = $620,000 − $33,750 = $586,250.'
 variants:
-- stem: 'At the start of Year 4, Linwood Supply Co. changes its inventory cost-flow method from LIFO to
-    weighted-average because weighted-average better reflects the actual flow of its goods, and it can
-    determine the effect on every prior period. Inventory under each method was: December 31, Year 2 --
-    LIFO $360,000, weighted-average $430,000; December 31, Year 3 -- LIFO $395,000, weighted-average $470,000.
-    Linwood''s tax rate is 21% for all years and all effects, and it presents comparative statements for
-    Year 3 and Year 4. What net-of-tax adjustment should Linwood make to its January 1, Year 3, balance
-    of retained earnings?'
+- stem: 'At the start of Year 5, Linwood Supply Co. changes its inventory cost-flow method from weighted-average
+    to FIFO because FIFO better reflects the current cost of its goods on hand, and it can determine the
+    effect on every prior period. Its year-end inventories under the two methods were: December 31, Year
+    2, weighted-average $430,000 and FIFO $510,000; December 31, Year 3, weighted-average $470,000 and
+    FIFO $580,000; December 31, Year 4, weighted-average $520,000 and FIFO $670,000. Linwood pays employees
+    a profit-sharing bonus equal to 10% of income before the bonus and income taxes; bonuses for prior
+    years were based on income as originally reported and will not be recalculated. Linwood''s Year 4
+    net income as originally reported was $540,000, and its tax rate is 21% for all years and all effects.
+    In its comparative statements for Years 3, 4 and 5, what net income should Linwood report for Year
+    4?'
   choices:
   - id: A
-    text: $55,300 decrease
-    rationale: Subtracts the weighted-average amount from the LIFO amount instead of the reverse. Weighted-average
-      inventory of $430,000 exceeds LIFO inventory of $360,000, raising retained earnings.
+    text: $563,700
+    rationale: Uses the change in the difference between the methods during Year 3 (from December 31,
+      Year 2, to December 31, Year 3) instead of during Year 4.
   - id: B
-    text: $14,700 increase
-    rationale: Multiplies the $70,000 difference by the 21% tax rate instead of by one minus the tax rate.
-      The adjustment keeps only the after-tax 79% of the pretax difference.
+    text: $568,440
+    rationale: Also recomputes the 10% profit-sharing bonus on the restated income. A change in the bonus
+      is an indirect effect of the change in principle, and indirect effects aren't recognized in the
+      restated prior periods (ASC 250-10-45-8).
   - id: C
-    text: $55,300 increase
-    rationale: Correct. ($430,000 − $360,000) × 79%.
+    text: $571,600
+    rationale: Correct. $540,000 + ($150,000 − $110,000) × 79% = $571,600; the bonus isn't recomputed.
   - id: D
-    text: $59,250 increase
-    rationale: Uses the $75,000 difference between the two methods at December 31, Year 3, rather than
-      at December 31, Year 2. The cumulative effect through the end of the earliest year presented, Year
-      2, is what adjusts the January 1, Year 3, balance.
+    text: $658,500
+    rationale: Applies the whole $150,000 cumulative difference between the methods at December 31, Year
+      4, net of tax, to Year 4 income. Year 4 income changes only by the change in that difference during
+      Year 4; the effect of earlier years goes to opening retained earnings.
   answer: C
   explanation: 'A change in inventory cost-flow method is a change in accounting principle, applied retrospectively
-    when the effect on every prior period can be determined (ASC 250-10-45-5). The cumulative effect on
-    periods before the earliest period presented adjusts the opening balance of retained earnings for
-    that period, net of tax: ($430,000 − $360,000) = $70,000 pretax, × 79% after-tax = $55,300. The December
-    31, Year 3, difference is restated separately within the comparative Year 3 statements; it doesn''t
-    change the January 1, Year 3, opening balance.'
-- stem: 'At the start of Year 5, Marchant Trading Co. changes its inventory cost-flow method from FIFO
-    to weighted-average because weighted-average better reflects the actual flow of its goods, and it
-    can determine the effect on every prior period. Inventory under each method was: December 31, Year
-    3 -- FIFO $610,000, weighted-average $560,000; December 31, Year 4 -- FIFO $655,000, weighted-average
-    $615,000. Marchant''s tax rate is 25% for all years and all effects, and it presents comparative statements
-    for Year 4 and Year 5. What net-of-tax adjustment should Marchant make to its January 1, Year 4, balance
-    of retained earnings?'
+    when its effect on every prior period can be determined (ASC 250-10-45-5). Each prior year presented
+    is restated as if FIFO had always been used. Year 4 income changes by the change during Year 4 in
+    the difference between the methods'' inventories: FIFO inventory moved from $110,000 above weighted-average
+    at the start of Year 4 to $150,000 above weighted-average at its end, so restated Year 4 cost of goods
+    sold is $40,000 lower and pretax income $40,000 higher, or $31,600 after the 21% tax. The profit-sharing
+    bonus would have differed under FIFO, but that is an indirect effect, which is not recognized in the
+    restated periods (ASC 250-10-45-8); prior bonuses won''t be recalculated, so nothing changes in any
+    period. Restated Year 4 net income = $540,000 + $31,600 = $571,600.'
+- stem: 'At the start of Year 4, Marchant Trading Co. changes its inventory cost-flow method from LIFO
+    to FIFO because FIFO better reflects the current cost of its goods on hand, and it can determine the
+    effect on every prior period. Its year-end inventories under the two methods were: December 31, Year
+    1, LIFO $380,000 and FIFO $470,000; December 31, Year 2, LIFO $410,000 and FIFO $530,000; December
+    31, Year 3, LIFO $430,000 and FIFO $600,000. Marchant pays employees a profit-sharing bonus equal
+    to 12% of income before the bonus and income taxes; bonuses for prior years were based on income as
+    originally reported and will not be recalculated. Marchant''s Year 3 net income as originally reported
+    was $760,000, and its tax rate is 25% for all years and all effects. In its comparative statements
+    for Years 2, 3 and 4, what net income should Marchant report for Year 3?'
   choices:
   - id: A
-    text: $50,000 decrease
-    rationale: Reports the pretax $50,000 cumulative effect without its tax effect. The adjustment to
-      opening retained earnings is net of the 25% tax rate.
+    text: $722,500
+    rationale: Applies the Year 3 effect in the wrong direction. FIFO inventory moved from $120,000 above
+      LIFO at the start of Year 3 to $170,000 above LIFO at its end, so restated Year 3 cost of goods
+      sold is lower and income higher.
   - id: B
-    text: $37,500 decrease
-    rationale: Correct. ($560,000 − $610,000) × 75%.
+    text: $782,500
+    rationale: Uses the change in the difference between the methods during Year 2 (from December 31,
+      Year 1, to December 31, Year 2) instead of during Year 3.
   - id: C
-    text: $12,500 decrease
-    rationale: Multiplies the $50,000 difference by the 25% tax rate instead of by one minus the tax rate.
-      The adjustment keeps only the after-tax 75% of the pretax difference.
+    text: $793,000
+    rationale: Also recomputes the 12% profit-sharing bonus on the restated income. A change in the bonus
+      is an indirect effect of the change in principle, and indirect effects aren't recognized in the
+      restated prior periods (ASC 250-10-45-8).
   - id: D
-    text: $37,500 increase
-    rationale: Subtracts the weighted-average amount from the FIFO amount instead of the reverse. Weighted-average
-      inventory of $560,000 exceeds FIFO inventory of $610,000, raising retained earnings.
-  answer: B
+    text: $797,500
+    rationale: Correct. $760,000 + ($170,000 − $120,000) × 75% = $797,500; the bonus isn't recomputed.
+  answer: D
   explanation: 'A change in inventory cost-flow method is a change in accounting principle, applied retrospectively
-    when the effect on every prior period can be determined (ASC 250-10-45-5). The cumulative effect on
-    periods before the earliest period presented adjusts the opening balance of retained earnings for
-    that period, net of tax: ($560,000 − $610,000) = $-50,000 pretax, × 75% after-tax = $-37,500. The
-    December 31, Year 4, difference is restated separately within the comparative Year 4 statements; it
-    doesn''t change the January 1, Year 4, opening balance.'
-- stem: 'At the start of Year 3, Oswestry Goods Co. changes its inventory cost-flow method from weighted-average
-    to LIFO because LIFO better reflects the actual flow of its goods, and it can determine the effect
-    on every prior period. Inventory under each method was: December 31, Year 1 -- weighted-average $290,000,
-    LIFO $245,000; December 31, Year 2 -- weighted-average $315,000, LIFO $260,000. Oswestry''s tax rate
-    is 21% for all years and all effects, and it presents comparative statements for Year 2 and Year 3.
-    What net-of-tax adjustment should Oswestry make to its January 1, Year 2, balance of retained earnings?'
+    when its effect on every prior period can be determined (ASC 250-10-45-5). Each prior year presented
+    is restated as if FIFO had always been used. Year 3 income changes by the change during Year 3 in
+    the difference between the methods'' inventories: FIFO inventory moved from $120,000 above LIFO at
+    the start of Year 3 to $170,000 above LIFO at its end, so restated Year 3 cost of goods sold is $50,000
+    lower and pretax income $50,000 higher, or $37,500 after the 25% tax. The profit-sharing bonus would
+    have differed under FIFO, but that is an indirect effect, which is not recognized in the restated
+    periods (ASC 250-10-45-8); prior bonuses won''t be recalculated, so nothing changes in any period.
+    Restated Year 3 net income = $760,000 + $37,500 = $797,500.'
+- stem: 'At the start of Year 5, Oswestry Goods Co. changes its inventory cost-flow method from LIFO to
+    weighted-average because weighted-average better matches the cost of its interchangeable stock, and
+    it can determine the effect on every prior period. Its year-end inventories under the two methods
+    were: December 31, Year 2, LIFO $245,000 and weighted-average $290,000; December 31, Year 3, LIFO
+    $260,000 and weighted-average $325,000; December 31, Year 4, LIFO $280,000 and weighted-average $375,000.
+    Oswestry pays employees a profit-sharing bonus equal to 12% of income before the bonus and income
+    taxes; bonuses for prior years were based on income as originally reported and will not be recalculated.
+    Oswestry''s Year 4 net income as originally reported was $450,000, and its tax rate is 21% for all
+    years and all effects. In its comparative statements for Years 3, 4 and 5, what net income should
+    Oswestry report for Year 4?'
   choices:
   - id: A
-    text: $9,450 decrease
-    rationale: Multiplies the $45,000 difference by the 21% tax rate instead of by one minus the tax rate.
-      The adjustment keeps only the after-tax 79% of the pretax difference.
+    text: $470,856
+    rationale: Also recomputes the 12% profit-sharing bonus on the restated income. A change in the bonus
+      is an indirect effect of the change in principle, and indirect effects aren't recognized in the
+      restated prior periods (ASC 250-10-45-8).
   - id: B
-    text: $35,550 decrease
-    rationale: Correct. ($245,000 − $290,000) × 79%.
+    text: $473,700
+    rationale: Correct. $450,000 + ($95,000 − $65,000) × 79% = $473,700; the bonus isn't recomputed.
   - id: C
-    text: $43,450 decrease
-    rationale: Uses the $55,000 difference between the two methods at December 31, Year 2, rather than
-      at December 31, Year 1. The cumulative effect through the end of the earliest year presented, Year
-      1, is what adjusts the January 1, Year 2, balance.
+    text: $480,000
+    rationale: Applies the $30,000 pretax effect on Year 4 income without its 21% tax effect.
   - id: D
-    text: $45,000 decrease
-    rationale: Reports the pretax $45,000 cumulative effect without its tax effect. The adjustment to
-      opening retained earnings is net of the 21% tax rate.
+    text: $525,050
+    rationale: Applies the whole $95,000 cumulative difference between the methods at December 31, Year
+      4, net of tax, to Year 4 income. Year 4 income changes only by the change in that difference during
+      Year 4; the effect of earlier years goes to opening retained earnings.
   answer: B
   explanation: 'A change in inventory cost-flow method is a change in accounting principle, applied retrospectively
-    when the effect on every prior period can be determined (ASC 250-10-45-5). The cumulative effect on
-    periods before the earliest period presented adjusts the opening balance of retained earnings for
-    that period, net of tax: ($245,000 − $290,000) = $-45,000 pretax, × 79% after-tax = $-35,550. The
-    December 31, Year 2, difference is restated separately within the comparative Year 2 statements; it
-    doesn''t change the January 1, Year 2, opening balance.'
+    when its effect on every prior period can be determined (ASC 250-10-45-5). Each prior year presented
+    is restated as if weighted-average had always been used. Year 4 income changes by the change during
+    Year 4 in the difference between the methods'' inventories: weighted-average inventory moved from
+    $65,000 above LIFO at the start of Year 4 to $95,000 above LIFO at its end, so restated Year 4 cost
+    of goods sold is $30,000 lower and pretax income $30,000 higher, or $23,700 after the 21% tax. The
+    profit-sharing bonus would have differed under weighted-average, but that is an indirect effect, which
+    is not recognized in the restated periods (ASC 250-10-45-8); prior bonuses won''t be recalculated,
+    so nothing changes in any period. Restated Year 4 net income = $450,000 + $23,700 = $473,700.'

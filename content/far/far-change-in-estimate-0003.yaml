@@ -18,27 +18,29 @@ stem: On January 1, Year 1, Pelton Fixtures Co. bought equipment for $720,000, e
   5, after that year's depreciation?
 choices:
 - id: A
-  text: $351,000
-  rationale: Correct. Carrying amount $456,000 ($720,000 − 4 × $66,000) less new depreciation of $105,000
-    (($456,000 − $36,000) ÷ 4).
+  text: $292,500
+  rationale: Restates depreciation for the 4 years already recorded using the revised 8-year total useful
+    life and $36,000 salvage value, as if the revision applied retroactively. A change in estimate is
+    applied prospectively.
 - id: B
-  text: $357,000
-  rationale: Keeps the original $60,000 salvage value when computing the new depreciation. Pelton revised
-    the salvage estimate to $36,000 along with the remaining life, and both revised estimates apply.
+  text: $342,000
+  rationale: Ignores the revised $36,000 salvage value, depreciating the whole $456,000 carrying amount
+    over the 4 remaining years. Only the carrying amount in excess of salvage value is depreciated.
 - id: C
-  text: $386,000
-  rationale: Uses the original remaining life of 6 years. Pelton revised the remaining life to 4 years.
+  text: $351,000
+  rationale: Correct. Carrying amount $456,000 ($720,000 − 4 × $66,000) less Year 5 depreciation of $105,000
+    (($456,000 − $36,000) ÷ 4).
 - id: D
-  text: $615,000
-  rationale: Deducts the new depreciation from the asset's original $720,000 cost instead of its $456,000
-    carrying amount at the date of the change.
-answer: A
+  text: $386,000
+  rationale: Spreads the remaining depreciable base over the original remaining life of 6 years. Pelton
+    now expects only 4 more years of use.
+answer: C
 explanation: 'A change in the estimated useful life or salvage value of a depreciable asset is a change
-  in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Carrying
-  amount at the date of change = $720,000 − 4 years × $66,000 = $456,000. The remaining depreciable base
-  is spread over the revised 4-year remaining life: ($456,000 − $36,000) ÷ 4 = $105,000 for Year 5. Carrying
-  amount at the end of Year 5 = $456,000 − $105,000 = $351,000. The change is not applied retroactively
-  to years already reported.'
+  in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Annual
+  depreciation before the change = ($720,000 − $60,000) ÷ 10 = $66,000. Carrying amount at the date of
+  change = $720,000 − 4 × $66,000 = $456,000. The remaining depreciable base is spread over the revised
+  remaining life of 8 − 4 = 4 years: ($456,000 − $36,000) ÷ 4 = $105,000 for Year 5. Carrying amount at
+  the end of Year 5 = $456,000 − $105,000 = $351,000. Years already reported are not restated.'
 variants:
 - stem: On January 1, Year 1, Ashgrove Metalworks Co. bought equipment for $900,000, estimated a 9-year
     useful life and a $72,000 salvage value, and has depreciated it straight-line. On January 1, Year
@@ -48,27 +50,28 @@ variants:
     at the end of Year 4, after that year's depreciation?
   choices:
   - id: A
-    text: $477,000
-    rationale: Restates depreciation for the 3 years already recorded using the revised 5-year total useful
-      life and $54,000 salvage value, as if the revision applied retroactively.
-  - id: B
     text: $510,000
-    rationale: Correct. Carrying amount $624,000 ($900,000 − 3 × $92,000) less new depreciation of $114,000
-      (($624,000 − $54,000) ÷ 5).
+    rationale: Correct. Carrying amount $624,000 ($900,000 − 3 × $92,000) less Year 4 depreciation of
+      $114,000 (($624,000 − $54,000) ÷ 5).
+  - id: B
+    text: $513,600
+    rationale: Keeps the original $72,000 salvage value when computing the new depreciation. Ashgrove
+      revised the salvage estimate to $54,000 along with the useful life, and both revised estimates apply.
   - id: C
     text: $529,000
-    rationale: Uses the original remaining life of 6 years. Ashgrove revised the remaining life to 5 years.
+    rationale: Spreads the remaining depreciable base over the original remaining life of 6 years. Ashgrove
+      now expects only 5 more years of use.
   - id: D
-    text: $786,000
-    rationale: Deducts the new depreciation from the asset's original $900,000 cost instead of its $624,000
-      carrying amount at the date of the change.
-  answer: B
+    text: $552,750
+    rationale: Spreads the remaining depreciable base over the revised 8-year total life instead of the
+      5 years that remain at the date of the change.
+  answer: A
   explanation: 'A change in the estimated useful life or salvage value of a depreciable asset is a change
-    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Carrying
-    amount at the date of change = $900,000 − 3 years × $92,000 = $624,000. The remaining depreciable
-    base is spread over the revised 5-year remaining life: ($624,000 − $54,000) ÷ 5 = $114,000 for Year
-    4. Carrying amount at the end of Year 4 = $624,000 − $114,000 = $510,000. The change is not applied
-    retroactively to years already reported.'
+    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Annual
+    depreciation before the change = ($900,000 − $72,000) ÷ 9 = $92,000. Carrying amount at the date of
+    change = $900,000 − 3 × $92,000 = $624,000. The remaining depreciable base is spread over the revised
+    remaining life of 8 − 3 = 5 years: ($624,000 − $54,000) ÷ 5 = $114,000 for Year 4. Carrying amount
+    at the end of Year 4 = $624,000 − $114,000 = $510,000. Years already reported are not restated.'
 - stem: On January 1, Year 1, Dunmore Fabrication Co. bought equipment for $540,000, estimated an 8-year
     useful life and a $48,000 salvage value, and has depreciated it straight-line. On January 1, Year
     3, after 2 years of use, Dunmore determines, based on new information about the equipment's condition,
@@ -78,26 +81,28 @@ variants:
   choices:
   - id: A
     text: $282,000
-    rationale: Restates depreciation for the 2 years already recorded using the revised 4-year total useful
-      life and $24,000 salvage value, as if the revision applied retroactively.
+    rationale: Restates depreciation for the 2 years already recorded using the revised 6-year total useful
+      life and $24,000 salvage value, as if the revision applied retroactively. A change in estimate is
+      applied prospectively.
   - id: B
     text: $318,750
-    rationale: Correct. Carrying amount $417,000 ($540,000 − 2 × $61,500) less new depreciation of $98,250
-      (($417,000 − $24,000) ÷ 4).
+    rationale: Correct. Carrying amount $417,000 ($540,000 − 2 × $61,500) less Year 3 depreciation of
+      $98,250 (($417,000 − $24,000) ÷ 4).
   - id: C
     text: $324,750
     rationale: Keeps the original $48,000 salvage value when computing the new depreciation. Dunmore revised
-      the salvage estimate to $24,000 along with the remaining life, and both revised estimates apply.
+      the salvage estimate to $24,000 along with the useful life, and both revised estimates apply.
   - id: D
     text: $351,500
-    rationale: Uses the original remaining life of 6 years. Dunmore revised the remaining life to 4 years.
+    rationale: Spreads the remaining depreciable base over the original remaining life of 6 years. Dunmore
+      now expects only 4 more years of use.
   answer: B
   explanation: 'A change in the estimated useful life or salvage value of a depreciable asset is a change
-    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Carrying
-    amount at the date of change = $540,000 − 2 years × $61,500 = $417,000. The remaining depreciable
-    base is spread over the revised 4-year remaining life: ($417,000 − $24,000) ÷ 4 = $98,250 for Year
-    3. Carrying amount at the end of Year 3 = $417,000 − $98,250 = $318,750. The change is not applied
-    retroactively to years already reported.'
+    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Annual
+    depreciation before the change = ($540,000 − $48,000) ÷ 8 = $61,500. Carrying amount at the date of
+    change = $540,000 − 2 × $61,500 = $417,000. The remaining depreciable base is spread over the revised
+    remaining life of 6 − 2 = 4 years: ($417,000 − $24,000) ÷ 4 = $98,250 for Year 3. Carrying amount
+    at the end of Year 3 = $417,000 − $98,250 = $318,750. Years already reported are not restated.'
 - stem: On January 1, Year 1, Kellerton Casting Co. bought equipment for $1,080,000, estimated a 12-year
     useful life and a $90,000 salvage value, and has depreciated it straight-line. On January 1, Year
     6, after 5 years of use, Kellerton determines, based on new information about the equipment's condition,
@@ -107,25 +112,25 @@ variants:
   choices:
   - id: A
     text: $468,000
-    rationale: Restates depreciation for the 5 years already recorded using the revised 5-year total useful
-      life and $60,000 salvage value, as if the revision applied retroactively.
+    rationale: Restates depreciation for the 5 years already recorded using the revised 10-year total
+      useful life and $60,000 salvage value, as if the revision applied retroactively. A change in estimate
+      is applied prospectively.
   - id: B
-    text: $546,000
-    rationale: Correct. Carrying amount $667,500 ($1,080,000 − 5 × $82,500) less new depreciation of $121,500
-      (($667,500 − $60,000) ÷ 5).
+    text: $534,000
+    rationale: Ignores the revised $60,000 salvage value, depreciating the whole $667,500 carrying amount
+      over the 5 remaining years. Only the carrying amount in excess of salvage value is depreciated.
   - id: C
-    text: $552,000
-    rationale: Keeps the original $90,000 salvage value when computing the new depreciation. Kellerton
-      revised the salvage estimate to $60,000 along with the remaining life, and both revised estimates
-      apply.
+    text: $546,000
+    rationale: Correct. Carrying amount $667,500 ($1,080,000 − 5 × $82,500) less Year 6 depreciation of
+      $121,500 (($667,500 − $60,000) ÷ 5).
   - id: D
-    text: $958,500
-    rationale: Deducts the new depreciation from the asset's original $1,080,000 cost instead of its $667,500
-      carrying amount at the date of the change.
-  answer: B
+    text: $606,750
+    rationale: Spreads the remaining depreciable base over the revised 10-year total life instead of the
+      5 years that remain at the date of the change.
+  answer: C
   explanation: 'A change in the estimated useful life or salvage value of a depreciable asset is a change
-    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Carrying
-    amount at the date of change = $1,080,000 − 5 years × $82,500 = $667,500. The remaining depreciable
-    base is spread over the revised 5-year remaining life: ($667,500 − $60,000) ÷ 5 = $121,500 for Year
-    6. Carrying amount at the end of Year 6 = $667,500 − $121,500 = $546,000. The change is not applied
-    retroactively to years already reported.'
+    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Annual
+    depreciation before the change = ($1,080,000 − $90,000) ÷ 12 = $82,500. Carrying amount at the date
+    of change = $1,080,000 − 5 × $82,500 = $667,500. The remaining depreciable base is spread over the
+    revised remaining life of 10 − 5 = 5 years: ($667,500 − $60,000) ÷ 5 = $121,500 for Year 6. Carrying
+    amount at the end of Year 6 = $667,500 − $121,500 = $546,000. Years already reported are not restated.'

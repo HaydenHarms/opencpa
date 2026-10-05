@@ -8,122 +8,132 @@ blueprint:
 review:
   status: draft
   references:
-  - 'ASC 855-10-25 (recognized subsequent events: error corrections found before issuance)'
-  - 'ASC 855-10-50 (nonrecognized subsequent events: disclosed, not reflected)'
+  - ASC 855-10-25-1 (recognized subsequent events)
+  - ASC 855-10-25-3 (nonrecognized subsequent events)
   notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Harpenfield Supply Co.'s December 31, Year 1, physical inventory count, as first extended and priced,
-  totaled $1,240,000. Before the financial statements were issued, Harpenfield's staff found that a clerk
-  had multiplied the quantity of one item by the wrong unit cost on the count sheet, overstating the count
-  by $37,000; a second count sheet for the same storage bin, filled out by a different counter that day,
-  showed the same item at its correct cost and was discarded at the time as a duplicate. In February,
-  after year-end, Harpenfield also received $600,000 from a new bank line of credit. What amount should
-  Harpenfield report as inventory at December 31, Year 1?
+stem: 'Brockley Instruments Co.''s bonus plan pays employees a Year 1 bonus pool equal to 8% of Year 1
+  income before the bonus and income taxes, as finally reported in the Year 1 financial statements. At
+  December 31, Year 1, Brockley accrued $270,000 as its estimate of the pool. Its draft Year 1 income
+  before the bonus and income taxes is $3,450,000. The statements will be issued on March 6, Year 2. Before
+  then: on January 28, Brockley received the county''s final property tax bill for Year 1, which is $42,000
+  higher than the amount Brockley accrued for Year 1; and on February 12, Brockley sold a warehouse at
+  a gain of $380,000. What bonus expense should Brockley report for Year 1?'
 choices:
 - id: A
-  text: $1,166,000
-  rationale: Removes the $37,000 pricing error twice, once for the clerk's extension error and again because
-    the same item also appeared on a separate recount sheet; the recount sheet was a duplicate copy of
-    the same count, not a second error.
+  text: $252,444
+  rationale: Computes the bonus on income after deducting the bonus itself. The plan bases it on income
+    before the bonus and income taxes.
 - id: B
-  text: $1,203,000
-  rationale: Correct. $1,240,000 − $37,000.
+  text: $272,640
+  rationale: Correct. 8% × ($3,450,000 − $42,000).
 - id: C
-  text: $1,240,000
-  rationale: Leaves the $37,000 pricing error in the reported balance. It was found before the statements
-    were issued and corrects the December 31 count.
+  text: $276,000
+  rationale: Computes the bonus on the draft $3,450,000. The final Year 1 property tax bill shows a Year
+    1 expense $42,000 higher than accrued, a condition that existed at year-end, so Year 1 income and
+    the bonus base fall by $42,000.
 - id: D
-  text: $1,803,000
-  rationale: Adds the $600,000 Harpenfield received from a new bank line of credit in February. That event
-    arose after year-end and is disclosed, not reflected in the December 31 balance.
+  text: $303,040
+  rationale: Adds the $380,000 gain on the February warehouse sale to the bonus base. That sale is a Year
+    2 transaction; it isn't part of Year 1 income.
 answer: B
-explanation: 'An error found in the December 31 count before the statements are issued is corrected in
-  the balance it misstated, here by removing the $37,000 pricing error: $1,240,000 − $37,000 = $1,203,000.
-  The $600,000 Harpenfield received from a new bank line of credit is a condition that arose after year-end;
-  it is disclosed, not reflected in the December 31 inventory balance.'
+explanation: 'The final property tax bill gives better evidence of a Year 1 expense, a condition that
+  existed at December 31, so it is a recognized subsequent event (ASC 855-10-25-1): Year 1 income before
+  the bonus and taxes becomes $3,450,000 − $42,000 = $3,408,000. The warehouse sale is a Year 2 transaction,
+  a nonrecognized subsequent event (ASC 855-10-25-3), and doesn''t enter Year 1 income. The bonus is earned
+  in Year 1, and its final amount, fixed after year-end by Year 1 results, adjusts the $270,000 accrual:
+  8% × $3,408,000 = $272,640.'
 variants:
-- stem: Oldmarsh Trading Co.'s December 31, Year 2, physical inventory count, as first extended and priced,
-    totaled $980,000. Before the financial statements were issued, Oldmarsh's staff found that a clerk
-    had multiplied the quantity of one item by the wrong unit cost on the count sheet, overstating the
-    count by $29,000; a second count sheet for the same storage bin, filled out by a different counter
-    that day, showed the same item at its correct cost and was discarded at the time as a duplicate. In
-    January, after year-end, Oldmarsh also received $450,000 from issuing common stock. What amount should
-    Oldmarsh report as inventory at December 31, Year 2?
+- stem: 'Kelsall Plastics Co.''s bonus plan pays employees a Year 1 bonus pool equal to 6% of Year 1 income
+    before the bonus and income taxes, as finally reported in the Year 1 financial statements. At December
+    31, Year 1, Kelsall accrued $165,000 as its estimate of the pool. Its draft Year 1 income before the
+    bonus and income taxes is $2,860,000. The statements will be issued on March 11, Year 2. Before then:
+    on January 22, Kelsall received the county''s final property tax bill for Year 1, which is $35,000
+    higher than the amount Kelsall accrued for Year 1; and on February 9, Kelsall sold a warehouse at
+    a gain of $290,000. What bonus expense should Kelsall report for Year 1?'
   choices:
   - id: A
-    text: $922,000
-    rationale: Removes the $29,000 pricing error twice, once for the clerk's extension error and again
-      because the same item also appeared on a separate recount sheet; the recount sheet was a duplicate
-      copy of the same count, not a second error.
+    text: $159,906
+    rationale: Computes the bonus on income after deducting the bonus itself. The plan bases it on income
+      before the bonus and income taxes.
   - id: B
-    text: $951,000
-    rationale: Correct. $980,000 − $29,000.
+    text: $165,000
+    rationale: Keeps the $165,000 year-end estimate. The bonus is fixed by Year 1 income as finally reported,
+      which subsequent events determine, so the accrual is adjusted to that amount.
   - id: C
-    text: $1,009,000
-    rationale: Adds the $29,000 error instead of removing it. The extension error overstated the count,
-      so cost is reduced.
+    text: $169,500
+    rationale: Correct. 6% × ($2,860,000 − $35,000).
   - id: D
-    text: $1,401,000
-    rationale: Adds the $450,000 Oldmarsh received from issuing common stock in January. That event arose
-      after year-end and is disclosed, not reflected in the December 31 balance.
-  answer: B
-  explanation: 'An error found in the December 31 count before the statements are issued is corrected
-    in the balance it misstated, here by removing the $29,000 pricing error: $980,000 − $29,000 = $951,000.
-    The $450,000 Oldmarsh received from issuing common stock is a condition that arose after year-end;
-    it is disclosed, not reflected in the December 31 inventory balance.'
-- stem: Beckworth Goods Co.'s December 31, Year 3, physical inventory count, as first extended and priced,
-    totaled $1,560,000. Before the financial statements were issued, Beckworth's staff found that a clerk
-    had multiplied the quantity of one item by the wrong unit cost on the count sheet, overstating the
-    count by $48,000; a second count sheet for the same storage bin, filled out by a different counter
-    that day, showed the same item at its correct cost and was discarded at the time as a duplicate. In
-    February, after year-end, Beckworth also received $800,000 from a bond offering. What amount should
-    Beckworth report as inventory at December 31, Year 3?
+    text: $171,600
+    rationale: Computes the bonus on the draft $2,860,000. The final Year 1 property tax bill shows a
+      Year 1 expense $35,000 higher than accrued, a condition that existed at year-end, so Year 1 income
+      and the bonus base fall by $35,000.
+  answer: C
+  explanation: 'The final property tax bill gives better evidence of a Year 1 expense, a condition that
+    existed at December 31, so it is a recognized subsequent event (ASC 855-10-25-1): Year 1 income before
+    the bonus and taxes becomes $2,860,000 − $35,000 = $2,825,000. The warehouse sale is a Year 2 transaction,
+    a nonrecognized subsequent event (ASC 855-10-25-3), and doesn''t enter Year 1 income. The bonus is
+    earned in Year 1, and its final amount, fixed after year-end by Year 1 results, adjusts the $165,000
+    accrual: 6% × $2,825,000 = $169,500.'
+- stem: 'Ravensworth Foods Co.''s bonus plan pays employees a Year 1 bonus pool equal to 10% of Year 1
+    income before the bonus and income taxes, as finally reported in the Year 1 financial statements.
+    At December 31, Year 1, Ravensworth accrued $205,000 as its estimate of the pool. Its draft Year 1
+    income before the bonus and income taxes is $1,980,000. The statements will be issued on March 4,
+    Year 2. Before then: on January 30, Ravensworth received the county''s final property tax bill for
+    Year 1, which is $26,000 higher than the amount Ravensworth accrued for Year 1; and on February 17,
+    Ravensworth sold a warehouse at a gain of $240,000. What bonus expense should Ravensworth report for
+    Year 1?'
   choices:
   - id: A
-    text: $1,464,000
-    rationale: Removes the $48,000 pricing error twice, once for the clerk's extension error and again
-      because the same item also appeared on a separate recount sheet; the recount sheet was a duplicate
-      copy of the same count, not a second error.
+    text: $195,400
+    rationale: Correct. 10% × ($1,980,000 − $26,000).
   - id: B
-    text: $1,512,000
-    rationale: Correct. $1,560,000 − $48,000.
+    text: $198,000
+    rationale: Computes the bonus on the draft $1,980,000. The final Year 1 property tax bill shows a
+      Year 1 expense $26,000 higher than accrued, a condition that existed at year-end, so Year 1 income
+      and the bonus base fall by $26,000.
   - id: C
-    text: $1,560,000
-    rationale: Leaves the $48,000 pricing error in the reported balance. It was found before the statements
-      were issued and corrects the December 31 count.
+    text: $205,000
+    rationale: Keeps the $205,000 year-end estimate. The bonus is fixed by Year 1 income as finally reported,
+      which subsequent events determine, so the accrual is adjusted to that amount.
   - id: D
-    text: $1,608,000
-    rationale: Adds the $48,000 error instead of removing it. The extension error overstated the count,
-      so cost is reduced.
-  answer: B
-  explanation: 'An error found in the December 31 count before the statements are issued is corrected
-    in the balance it misstated, here by removing the $48,000 pricing error: $1,560,000 − $48,000 = $1,512,000.
-    The $800,000 Beckworth received from a bond offering is a condition that arose after year-end; it
-    is disclosed, not reflected in the December 31 inventory balance.'
-- stem: Drayfield Mercantile Co.'s December 31, Year 1, physical inventory count, as first extended and
-    priced, totaled $760,000. Before the financial statements were issued, Drayfield's staff found that
-    a clerk had multiplied the quantity of one item by the wrong unit cost on the count sheet, overstating
-    the count by $21,000; a second count sheet for the same storage bin, filled out by a different counter
-    that day, showed the same item at its correct cost and was discarded at the time as a duplicate. In
-    March, after year-end, Drayfield also received $300,000 from a shareholder's capital contribution.
-    What amount should Drayfield report as inventory at December 31, Year 1?
-  choices:
-  - id: A
-    text: $739,000
-    rationale: Correct. $760,000 − $21,000.
-  - id: B
-    text: $760,000
-    rationale: Leaves the $21,000 pricing error in the reported balance. It was found before the statements
-      were issued and corrects the December 31 count.
-  - id: C
-    text: $781,000
-    rationale: Adds the $21,000 error instead of removing it. The extension error overstated the count,
-      so cost is reduced.
-  - id: D
-    text: $1,039,000
-    rationale: Adds the $300,000 Drayfield received from a shareholder's capital contribution in March.
-      That event arose after year-end and is disclosed, not reflected in the December 31 balance.
+    text: $219,400
+    rationale: Adds the $240,000 gain on the February warehouse sale to the bonus base. That sale is a
+      Year 2 transaction; it isn't part of Year 1 income.
   answer: A
-  explanation: 'An error found in the December 31 count before the statements are issued is corrected
-    in the balance it misstated, here by removing the $21,000 pricing error: $760,000 − $21,000 = $739,000.
-    The $300,000 Drayfield received from a shareholder''s capital contribution is a condition that arose
-    after year-end; it is disclosed, not reflected in the December 31 inventory balance.'
+  explanation: 'The final property tax bill gives better evidence of a Year 1 expense, a condition that
+    existed at December 31, so it is a recognized subsequent event (ASC 855-10-25-1): Year 1 income before
+    the bonus and taxes becomes $1,980,000 − $26,000 = $1,954,000. The warehouse sale is a Year 2 transaction,
+    a nonrecognized subsequent event (ASC 855-10-25-3), and doesn''t enter Year 1 income. The bonus is
+    earned in Year 1, and its final amount, fixed after year-end by Year 1 results, adjusts the $205,000
+    accrual: 10% × $1,954,000 = $195,400.'
+- stem: 'Tilshead Components Co.''s bonus plan pays employees a Year 1 bonus pool equal to 5% of Year
+    1 income before the bonus and income taxes, as finally reported in the Year 1 financial statements.
+    At December 31, Year 1, Tilshead accrued $196,000 as its estimate of the pool. Its draft Year 1 income
+    before the bonus and income taxes is $4,120,000. The statements will be issued on March 13, Year 2.
+    Before then: on January 26, Tilshead received the county''s final property tax bill for Year 1, which
+    is $58,000 higher than the amount Tilshead accrued for Year 1; and on February 20, Tilshead sold a
+    warehouse at a gain of $450,000. What bonus expense should Tilshead report for Year 1?'
+  choices:
+  - id: A
+    text: $193,429
+    rationale: Computes the bonus on income after deducting the bonus itself. The plan bases it on income
+      before the bonus and income taxes.
+  - id: B
+    text: $196,000
+    rationale: Keeps the $196,000 year-end estimate. The bonus is fixed by Year 1 income as finally reported,
+      which subsequent events determine, so the accrual is adjusted to that amount.
+  - id: C
+    text: $203,100
+    rationale: Correct. 5% × ($4,120,000 − $58,000).
+  - id: D
+    text: $206,000
+    rationale: Computes the bonus on the draft $4,120,000. The final Year 1 property tax bill shows a
+      Year 1 expense $58,000 higher than accrued, a condition that existed at year-end, so Year 1 income
+      and the bonus base fall by $58,000.
+  answer: C
+  explanation: 'The final property tax bill gives better evidence of a Year 1 expense, a condition that
+    existed at December 31, so it is a recognized subsequent event (ASC 855-10-25-1): Year 1 income before
+    the bonus and taxes becomes $4,120,000 − $58,000 = $4,062,000. The warehouse sale is a Year 2 transaction,
+    a nonrecognized subsequent event (ASC 855-10-25-3), and doesn''t enter Year 1 income. The bonus is
+    earned in Year 1, and its final amount, fixed after year-end by Year 1 results, adjusts the $196,000
+    accrual: 5% × $4,062,000 = $203,100.'

@@ -8,115 +8,143 @@ blueprint:
 review:
   status: draft
   references:
-  - 'ASC 450-20-25 (loss contingencies: accrual when probable and estimable)'
-  - ASC 460-10 (product warranties)
+  - ASC 450-20-25-2 and 450-20-50-6 (accrual of loss contingencies, including unasserted claims)
+  - 'ASC 450-20-30-1 (range of loss with no best estimate: accrue the minimum)'
+  - ASC 250-10-45-17 (change in estimate)
   notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Oldcastle Mills Co. had accrued $180,000 at the start of the year for a lawsuit over a Year 1 defect
-  in its products. During the year, Oldcastle paid $70,000 toward the case and, based on a revised assessment,
-  increased its remaining estimate of the total cost by $55,000. Separately, Oldcastle sold $2,600,000
-  of products during the year that carry a one-year warranty included in the price; based on experience,
-  Oldcastle estimates warranty costs at 4% of sales, and it paid $38,000 of warranty claims on those sales
-  during the year. What total liability for the litigation and the warranty should Oldcastle report at
-  year-end?
+stem: At the start of the year, Oldcastle Mills Co. had a $180,000 liability for a customer's lawsuit
+  over a defect in a product it sold two years ago. During the year, Oldcastle paid $70,000 toward the
+  case under an interim agreement and, based on new evidence, revised its estimate of the suit's total
+  cost upward by $55,000. In November, Oldcastle recalled a space heater model after reports that a faulty
+  thermostat had damaged customers' property. No customer has filed a claim yet, but counsel's letter
+  says customers are expected to file claims that Oldcastle will have to pay, and puts the total at between
+  $60,000 and $140,000, with no amount in that range a better estimate than any other. What total liability
+  for the lawsuit and the recall claims should Oldcastle report at year-end?
 choices:
 - id: A
-  text: $176,000
-  rationale: Leaves out the $55,000 that Oldcastle must add to the litigation accrual because the case
-    turned out to cost more than the $180,000 first estimated.
+  text: $225,000
+  rationale: Correct. Lawsuit $165,000 ($180,000 − $70,000 + $55,000) + recall claims at the $60,000 minimum.
 - id: B
-  text: $231,000
-  rationale: Correct. Litigation $165,000 + warranty $66,000.
+  text: $265,000
+  rationale: Accrues the $100,000 midpoint of the range for the recall claims. When no amount in a range
+    is a better estimate than another, the minimum, $60,000, is accrued (ASC 450-20-30-1).
 - id: C
-  text: $269,000
-  rationale: Doesn't reduce the warranty estimate for the $38,000 of claims Oldcastle already paid during
-    the year.
+  text: $295,000
+  rationale: Doesn't reduce the lawsuit accrual for the $70,000 already paid; those payments settle part
+    of the liability.
 - id: D
-  text: $301,000
-  rationale: Doesn't reduce the litigation accrual for the $70,000 already paid toward the settlement
-    during the year.
-answer: B
-explanation: Litigation liability = $180,000 beginning accrual − $70,000 paid + $55,000 added for the
-  revised estimate = $165,000. Warranty liability = 4% × $2,600,000 of covered sales − $38,000 of claims
-  already paid = $66,000. Total liability = $165,000 + $66,000 = $231,000.
+  text: $305,000
+  rationale: Accrues the $140,000 top of the range for the recall claims. With no best estimate in the
+    range, the minimum is accrued and the rest is disclosed.
+answer: A
+explanation: 'Lawsuit: the liability rolls forward from the opening $180,000, less the $70,000 paid, plus
+  the $55,000 increase in the estimated total cost, a change in estimate recognized in the current year:
+  $165,000. Recall claims: an unasserted claim is accrued when it is probable that the claim will be asserted
+  and that the outcome will be unfavorable, and the loss can be reasonably estimated (ASC 450-20-25-2,
+  450-20-50-6); counsel expects both, and the range estimates the loss. With no best estimate in the range,
+  the minimum, $60,000, is accrued and the possible additional loss is disclosed (ASC 450-20-30-1). Total
+  liability = $165,000 + $60,000 = $225,000.'
 variants:
-- stem: Ferngate Products Co. had accrued $240,000 at the start of the year for a lawsuit over a Year
-    1 defect in its products. During the year, Ferngate paid $90,000 toward the case and, based on a revised
-    assessment, increased its remaining estimate of the total cost by $65,000. Separately, Ferngate sold
-    $3,400,000 of products during the year that carry a one-year warranty included in the price; based
-    on experience, Ferngate estimates warranty costs at 3% of sales, and it paid $51,000 of warranty claims
-    on those sales during the year. What total liability for the litigation and the warranty should Ferngate
-    report at year-end?
+- stem: At the start of the year, Ferngate Products Co. had a $240,000 liability for a customer's lawsuit
+    over a defect in a product it sold two years ago. During the year, Ferngate paid $90,000 toward the
+    case under an interim agreement and, based on new evidence, revised its estimate of the suit's total
+    cost upward by $65,000. In November, Ferngate recalled a dehumidifier model after reports that a faulty
+    fan motor had damaged customers' property. No customer has filed a claim yet, but counsel's letter
+    says customers are expected to file claims that Ferngate will have to pay, and puts the total at between
+    $85,000 and $205,000, with no amount in that range a better estimate than any other. What total liability
+    for the lawsuit and the recall claims should Ferngate report at year-end?
   choices:
   - id: A
-    text: $51,000
-    rationale: Treats the litigation matter as fully resolved with no liability remaining, leaving out
-      the litigation accrual entirely.
-  - id: B
-    text: $266,000
-    rationale: Correct. Litigation $215,000 + warranty $51,000.
-  - id: C
-    text: $317,000
-    rationale: Doesn't reduce the warranty estimate for the $51,000 of claims Ferngate already paid during
-      the year.
-  - id: D
-    text: $356,000
-    rationale: Doesn't reduce the litigation accrual for the $90,000 already paid toward the settlement
-      during the year.
-  answer: B
-  explanation: Litigation liability = $240,000 beginning accrual − $90,000 paid + $65,000 added for the
-    revised estimate = $215,000. Warranty liability = 3% × $3,400,000 of covered sales − $51,000 of claims
-    already paid = $51,000. Total liability = $215,000 + $51,000 = $266,000.
-- stem: Brackendale Goods Co. had accrued $130,000 at the start of the year for a lawsuit over a Year
-    1 defect in its products. During the year, Brackendale paid $50,000 toward the case and, based on
-    a revised assessment, increased its remaining estimate of the total cost by $40,000. Separately, Brackendale
-    sold $1,900,000 of products during the year that carry a one-year warranty included in the price;
-    based on experience, Brackendale estimates warranty costs at 5% of sales, and it paid $29,000 of warranty
-    claims on those sales during the year. What total liability for the litigation and the warranty should
-    Brackendale report at year-end?
-  choices:
-  - id: A
-    text: $66,000
-    rationale: Treats the litigation matter as fully resolved with no liability remaining, leaving out
-      the litigation accrual entirely.
-  - id: B
-    text: $146,000
-    rationale: Leaves out the $40,000 that Brackendale must add to the litigation accrual because the
-      case turned out to cost more than the $130,000 first estimated.
-  - id: C
-    text: $186,000
-    rationale: Correct. Litigation $120,000 + warranty $66,000.
-  - id: D
     text: $215,000
-    rationale: Doesn't reduce the warranty estimate for the $29,000 of claims Brackendale already paid
-      during the year.
+    rationale: Accrues nothing for the recall claims because no customer has filed one yet. An unasserted
+      claim is accrued when its assertion and an unfavorable outcome are both probable and the loss can
+      be estimated, as counsel's letter indicates here.
+  - id: B
+    text: $235,000
+    rationale: Leaves out the $65,000 upward revision of the lawsuit's total cost, as if the original
+      $240,000 estimate still held.
+  - id: C
+    text: $300,000
+    rationale: Correct. Lawsuit $215,000 ($240,000 − $90,000 + $65,000) + recall claims at the $85,000
+      minimum.
+  - id: D
+    text: $360,000
+    rationale: Accrues the $145,000 midpoint of the range for the recall claims. When no amount in a range
+      is a better estimate than another, the minimum, $85,000, is accrued (ASC 450-20-30-1).
   answer: C
-  explanation: Litigation liability = $130,000 beginning accrual − $50,000 paid + $40,000 added for the
-    revised estimate = $120,000. Warranty liability = 5% × $1,900,000 of covered sales − $29,000 of claims
-    already paid = $66,000. Total liability = $120,000 + $66,000 = $186,000.
-- stem: Southmoor Appliance Co. had accrued $310,000 at the start of the year for a lawsuit over a Year
-    1 defect in its products. During the year, Southmoor paid $120,000 toward the case and, based on a
-    revised assessment, increased its remaining estimate of the total cost by $80,000. Separately, Southmoor
-    sold $4,100,000 of products during the year that carry a one-year warranty included in the price;
-    based on experience, Southmoor estimates warranty costs at 3% of sales, and it paid $58,000 of warranty
-    claims on those sales during the year. What total liability for the litigation and the warranty should
-    Southmoor report at year-end?
+  explanation: 'Lawsuit: the liability rolls forward from the opening $240,000, less the $90,000 paid,
+    plus the $65,000 increase in the estimated total cost, a change in estimate recognized in the current
+    year: $215,000. Recall claims: an unasserted claim is accrued when it is probable that the claim will
+    be asserted and that the outcome will be unfavorable, and the loss can be reasonably estimated (ASC
+    450-20-25-2, 450-20-50-6); counsel expects both, and the range estimates the loss. With no best estimate
+    in the range, the minimum, $85,000, is accrued and the possible additional loss is disclosed (ASC
+    450-20-30-1). Total liability = $215,000 + $85,000 = $300,000.'
+- stem: At the start of the year, Brackendale Goods Co. had a $130,000 liability for a customer's lawsuit
+    over a defect in a product it sold two years ago. During the year, Brackendale paid $50,000 toward
+    the case under an interim agreement and, based on new evidence, revised its estimate of the suit's
+    total cost upward by $40,000. In November, Brackendale recalled a toaster oven model after reports
+    that a faulty heating element had damaged customers' property. No customer has filed a claim yet,
+    but counsel's letter says customers are expected to file claims that Brackendale will have to pay,
+    and puts the total at between $45,000 and $115,000, with no amount in that range a better estimate
+    than any other. What total liability for the lawsuit and the recall claims should Brackendale report
+    at year-end?
   choices:
   - id: A
-    text: $65,000
-    rationale: Treats the litigation matter as fully resolved with no liability remaining, leaving out
-      the litigation accrual entirely.
+    text: $120,000
+    rationale: Accrues nothing for the recall claims because no customer has filed one yet. An unasserted
+      claim is accrued when its assertion and an unfavorable outcome are both probable and the loss can
+      be estimated, as counsel's letter indicates here.
   - id: B
-    text: $255,000
-    rationale: Leaves out the $80,000 that Southmoor must add to the litigation accrual because the case
-      turned out to cost more than the $310,000 first estimated.
+    text: $165,000
+    rationale: Correct. Lawsuit $120,000 ($130,000 − $50,000 + $40,000) + recall claims at the $45,000
+      minimum.
   - id: C
-    text: $335,000
-    rationale: Correct. Litigation $270,000 + warranty $65,000.
+    text: $200,000
+    rationale: Accrues the $80,000 midpoint of the range for the recall claims. When no amount in a range
+      is a better estimate than another, the minimum, $45,000, is accrued (ASC 450-20-30-1).
   - id: D
-    text: $455,000
-    rationale: Doesn't reduce the litigation accrual for the $120,000 already paid toward the settlement
-      during the year.
+    text: $235,000
+    rationale: Accrues the $115,000 top of the range for the recall claims. With no best estimate in the
+      range, the minimum is accrued and the rest is disclosed.
+  answer: B
+  explanation: 'Lawsuit: the liability rolls forward from the opening $130,000, less the $50,000 paid,
+    plus the $40,000 increase in the estimated total cost, a change in estimate recognized in the current
+    year: $120,000. Recall claims: an unasserted claim is accrued when it is probable that the claim will
+    be asserted and that the outcome will be unfavorable, and the loss can be reasonably estimated (ASC
+    450-20-25-2, 450-20-50-6); counsel expects both, and the range estimates the loss. With no best estimate
+    in the range, the minimum, $45,000, is accrued and the possible additional loss is disclosed (ASC
+    450-20-30-1). Total liability = $120,000 + $45,000 = $165,000.'
+- stem: At the start of the year, Southmoor Appliance Co. had a $310,000 liability for a customer's lawsuit
+    over a defect in a product it sold two years ago. During the year, Southmoor paid $120,000 toward
+    the case under an interim agreement and, based on new evidence, revised its estimate of the suit's
+    total cost upward by $80,000. In November, Southmoor recalled a dishwasher model after reports that
+    a faulty water valve had damaged customers' property. No customer has filed a claim yet, but counsel's
+    letter says customers are expected to file claims that Southmoor will have to pay, and puts the total
+    at between $110,000 and $250,000, with no amount in that range a better estimate than any other. What
+    total liability for the lawsuit and the recall claims should Southmoor report at year-end?
+  choices:
+  - id: A
+    text: $270,000
+    rationale: Accrues nothing for the recall claims because no customer has filed one yet. An unasserted
+      claim is accrued when its assertion and an unfavorable outcome are both probable and the loss can
+      be estimated, as counsel's letter indicates here.
+  - id: B
+    text: $300,000
+    rationale: Leaves out the $80,000 upward revision of the lawsuit's total cost, as if the original
+      $310,000 estimate still held.
+  - id: C
+    text: $380,000
+    rationale: Correct. Lawsuit $270,000 ($310,000 − $120,000 + $80,000) + recall claims at the $110,000
+      minimum.
+  - id: D
+    text: $500,000
+    rationale: Doesn't reduce the lawsuit accrual for the $120,000 already paid; those payments settle
+      part of the liability.
   answer: C
-  explanation: Litigation liability = $310,000 beginning accrual − $120,000 paid + $80,000 added for the
-    revised estimate = $270,000. Warranty liability = 3% × $4,100,000 of covered sales − $58,000 of claims
-    already paid = $65,000. Total liability = $270,000 + $65,000 = $335,000.
+  explanation: 'Lawsuit: the liability rolls forward from the opening $310,000, less the $120,000 paid,
+    plus the $80,000 increase in the estimated total cost, a change in estimate recognized in the current
+    year: $270,000. Recall claims: an unasserted claim is accrued when it is probable that the claim will
+    be asserted and that the outcome will be unfavorable, and the loss can be reasonably estimated (ASC
+    450-20-25-2, 450-20-50-6); counsel expects both, and the range estimates the loss. With no best estimate
+    in the range, the minimum, $110,000, is accrued and the possible additional loss is disclosed (ASC
+    450-20-30-1). Total liability = $270,000 + $110,000 = $380,000.'

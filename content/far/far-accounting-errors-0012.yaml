@@ -8,127 +8,139 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 340-10-25 (prepaid costs recognized as an asset until consumed)
-  - 'ASC 606-10-25-30 (transfer of control: FOB shipping point)'
+  - ASC 310-10 and ASC 835-30 (interest on notes receivable accrues as earned)
+  - ASC 321-10-35-1 (equity securities measured at fair value through net income)
+  - ASC 606-10-55-79 to 55-80 (consignment arrangements)
   notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Before Hartswell Logistics Co.'s Year 2 financial statements are issued, its controller finds two
-  problems with the draft December 31, Year 2, balance sheet, which reports total assets of $7,840,000.
-  On September 1, Year 2, Hartswell had paid $72,000 for a service contract covering the next three years
-  and charged the entire payment to Year 2 expense, though two of the three years of that term remains
-  unused at year-end, representing $48,000 of the payment. Also, $63,000 of merchandise that Hartswell
-  had purchased FOB shipping point was in transit at year-end and was left out of both the physical count
-  and the accounting records; it arrived in January. What total assets should Hartswell's corrected balance
-  sheet report at December 31, Year 2?
+stem: Hartswell Logistics Co.'s draft December 31, Year 2, balance sheet reports total assets of $2,360,000.
+  Before the statements are issued, its controller traces three balances to their support. On September
+  1, Year 2, Hartswell accepted from a customer a $600,000, 9-month note bearing simple interest at 9%
+  a year, with principal and interest due at maturity; the draft reports the note at $600,000 and no interest
+  receivable. The draft carries Hartswell's holding of a listed company's common shares, a small stake
+  that gives Hartswell no influence over the company, at their $310,000 cost; the shares' quoted price
+  at December 31 puts the holding at $270,000. And inventory includes, at their $63,000 cost, goods Hartswell
+  shipped in December to a retailer that sells them for Hartswell on consignment; the retailer had sold
+  none of them by year-end. Ignore income taxes. What total assets should the corrected balance sheet
+  report?
 choices:
 - id: A
-  text: $7,888,000
-  rationale: Leaves out the $63,000 of goods Hartswell had purchased FOB shipping point and that were
-    in transit, but not yet received, at year-end.
+  text: $2,275,000
+  rationale: Also removes the $63,000 of goods held by the consignee. Goods out on consignment remain
+    the consignor's inventory until the consignee sells them, so they are correctly included.
 - id: B
-  text: $7,903,000
-  rationale: Leaves out the $48,000 of unexpired service-contract cost that Hartswell charged entirely
-    to expense, even though two of the three years of the contract's term remains unused.
+  text: $2,338,000
+  rationale: Correct. $2,360,000 + $18,000 interest receivable − $40,000 fair value decrease.
 - id: C
-  text: $7,951,000
-  rationale: Correct. $7,840,000 + $48,000 + $63,000.
+  text: $2,360,500
+  rationale: Accrues the interest for the note's whole 9-month term. Only the 4 months through December
+    31 have been earned.
 - id: D
-  text: $7,999,000
-  rationale: Adds back the full $72,000 paid for the service contract instead of only the $48,000 that
-    is unexpired at year-end.
-answer: C
-explanation: 'The unexpired portion of the service contract is a prepaid asset, not an expense of the
-  year it was paid: $48,000 of the $72,000 payment relates to two of the three years of coverage still
-  to come and is added back. Title to goods shipped FOB shipping point passes when the carrier takes them,
-  so the $63,000 of goods in transit belonged to Hartswell at year-end and are added to inventory. Corrected
-  total assets = $7,840,000 + $48,000 + $63,000 = $7,951,000.'
+  text: $2,378,000
+  rationale: Leaves the shares at their $310,000 cost. Equity securities with a readily determinable fair
+    value are measured at fair value, here $270,000, with the change in net income.
+answer: B
+explanation: 'Interest on the note accrues from September 1: $600,000 × 9% × 4/12 = $18,000 of interest
+  receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
+  at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $310,000
+  to $270,000, a $40,000 loss. Goods on consignment remain the consignor''s inventory until the consignee
+  sells them (ASC 606-10-55-79 to 55-80), so the $63,000 is correctly included. Corrected total assets
+  = $2,360,000 + $18,000 − $40,000 = $2,338,000.'
 variants:
-- stem: Before Candleford Distribution Co.'s Year 3 financial statements are issued, its controller finds
-    two problems with the draft December 31, Year 3, balance sheet, which reports total assets of $5,260,000.
-    On September 1, Year 3, Candleford had paid $54,000 for a service contract covering the next three
-    years and charged the entire payment to Year 3 expense, though two of the three years of that term
-    remains unused at year-end, representing $36,000 of the payment. Also, $41,000 of raw materials that
-    Candleford had purchased FOB shipping point was in transit at year-end and was left out of both the
-    physical count and the accounting records; it arrived in January. What total assets should Candleford's
-    corrected balance sheet report at December 31, Year 3?
+- stem: Candleford Distribution Co.'s draft December 31, Year 3, balance sheet reports total assets of
+    $1,980,000. Before the statements are issued, its controller traces three balances to their support.
+    On October 1, Year 3, Candleford accepted from a customer a $480,000, 6-month note bearing simple
+    interest at 10% a year, with principal and interest due at maturity; the draft reports the note at
+    $480,000 and no interest receivable. The draft carries Candleford's holding of a listed company's
+    common shares, a small stake that gives Candleford no influence over the company, at their $240,000
+    cost; the shares' quoted price at December 31 puts the holding at $275,000. And inventory includes,
+    at their $41,000 cost, goods Candleford shipped in December to a retailer that sells them for Candleford
+    on consignment; the retailer had sold none of them by year-end. Ignore income taxes. What total assets
+    should the corrected balance sheet report?
   choices:
   - id: A
-    text: $5,260,000
-    rationale: Accepts the draft's $5,260,000, which expensed the full service-contract payment and excluded
-      the goods in transit from inventory.
+    text: $1,980,000
+    rationale: Accepts the draft total, with no interest receivable and the shares at cost.
   - id: B
-    text: $5,296,000
-    rationale: Leaves out the $41,000 of goods Candleford had purchased FOB shipping point and that were
-      in transit, but not yet received, at year-end.
+    text: $1,992,000
+    rationale: Leaves the shares at their $240,000 cost. Equity securities with a readily determinable
+      fair value are measured at fair value, here $275,000, with the change in net income.
   - id: C
-    text: $5,337,000
-    rationale: Correct. $5,260,000 + $36,000 + $41,000.
+    text: $2,027,000
+    rationale: Correct. $1,980,000 + $12,000 interest receivable + $35,000 fair value increase.
   - id: D
-    text: $5,373,000
-    rationale: Adds back the full $54,000 paid for the service contract instead of only the $36,000 that
-      is unexpired at year-end.
+    text: $2,063,000
+    rationale: Accrues a full year of interest on the note. It was accepted on October 1, so only 3 months
+      of interest ($12,000) had accrued by December 31.
   answer: C
-  explanation: 'The unexpired portion of the service contract is a prepaid asset, not an expense of the
-    year it was paid: $36,000 of the $54,000 payment relates to two of the three years of coverage still
-    to come and is added back. Title to goods shipped FOB shipping point passes when the carrier takes
-    them, so the $41,000 of goods in transit belonged to Candleford at year-end and are added to inventory.
-    Corrected total assets = $5,260,000 + $36,000 + $41,000 = $5,337,000.'
-- stem: Before Marldon Freight Co.'s Year 1 financial statements are issued, its controller finds two
-    problems with the draft December 31, Year 1, balance sheet, which reports total assets of $9,120,000.
-    On September 1, Year 1, Marldon had paid $90,000 for a service contract covering the next three years
-    and charged the entire payment to Year 1 expense, though two of the three years of that term remains
-    unused at year-end, representing $60,000 of the payment. Also, $78,000 of merchandise that Marldon
-    had purchased FOB shipping point was in transit at year-end and was left out of both the physical
-    count and the accounting records; it arrived in January. What total assets should Marldon's corrected
-    balance sheet report at December 31, Year 1?
+  explanation: 'Interest on the note accrues from October 1: $480,000 × 10% × 3/12 = $12,000 of interest
+    receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
+    at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $240,000
+    to $275,000, a $35,000 gain. Goods on consignment remain the consignor''s inventory until the consignee
+    sells them (ASC 606-10-55-79 to 55-80), so the $41,000 is correctly included. Corrected total assets
+    = $1,980,000 + $12,000 + $35,000 = $2,027,000.'
+- stem: Marldon Freight Co.'s draft December 31, Year 1, balance sheet reports total assets of $3,120,000.
+    Before the statements are issued, its controller traces three balances to their support. On August
+    1, Year 1, Marldon accepted from a customer a $720,000, 6-month note bearing simple interest at 8%
+    a year, with principal and interest due at maturity; the draft reports the note at $720,000 and no
+    interest receivable. The draft carries Marldon's holding of a listed company's common shares, a small
+    stake that gives Marldon no influence over the company, at their $420,000 cost; the shares' quoted
+    price at December 31 puts the holding at $372,000. And inventory includes, at their $78,000 cost,
+    goods Marldon shipped in December to a retailer that sells them for Marldon on consignment; the retailer
+    had sold none of them by year-end. Ignore income taxes. What total assets should the corrected balance
+    sheet report?
   choices:
   - id: A
-    text: $9,120,000
-    rationale: Accepts the draft's $9,120,000, which expensed the full service-contract payment and excluded
-      the goods in transit from inventory.
+    text: $3,018,000
+    rationale: Also removes the $78,000 of goods held by the consignee. Goods out on consignment remain
+      the consignor's inventory until the consignee sells them, so they are correctly included.
   - id: B
-    text: $9,198,000
-    rationale: Leaves out the $60,000 of unexpired service-contract cost that Marldon charged entirely
-      to expense, even though two of the three years of the contract's term remains unused.
+    text: $3,096,000
+    rationale: Correct. $3,120,000 + $24,000 interest receivable − $48,000 fair value decrease.
   - id: C
-    text: $9,258,000
-    rationale: Correct. $9,120,000 + $60,000 + $78,000.
+    text: $3,129,600
+    rationale: Accrues a full year of interest on the note. It was accepted on August 1, so only 5 months
+      of interest ($24,000) had accrued by December 31.
   - id: D
-    text: $9,318,000
-    rationale: Adds back the full $90,000 paid for the service contract instead of only the $60,000 that
-      is unexpired at year-end.
-  answer: C
-  explanation: 'The unexpired portion of the service contract is a prepaid asset, not an expense of the
-    year it was paid: $60,000 of the $90,000 payment relates to two of the three years of coverage still
-    to come and is added back. Title to goods shipped FOB shipping point passes when the carrier takes
-    them, so the $78,000 of goods in transit belonged to Marldon at year-end and are added to inventory.
-    Corrected total assets = $9,120,000 + $60,000 + $78,000 = $9,258,000.'
-- stem: Before Ellenbridge Supply Co.'s Year 4 financial statements are issued, its controller finds two
-    problems with the draft December 31, Year 4, balance sheet, which reports total assets of $3,980,000.
-    On September 1, Year 4, Ellenbridge had paid $42,000 for a service contract covering the next three
-    years and charged the entire payment to Year 4 expense, though two of the three years of that term
-    remains unused at year-end, representing $28,000 of the payment. Also, $34,000 of component parts
-    that Ellenbridge had purchased FOB shipping point was in transit at year-end and was left out of both
-    the physical count and the accounting records; it arrived in January. What total assets should Ellenbridge's
-    corrected balance sheet report at December 31, Year 4?
+    text: $3,144,000
+    rationale: Leaves the shares at their $420,000 cost. Equity securities with a readily determinable
+      fair value are measured at fair value, here $372,000, with the change in net income.
+  answer: B
+  explanation: 'Interest on the note accrues from August 1: $720,000 × 8% × 5/12 = $24,000 of interest
+    receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
+    at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $420,000
+    to $372,000, a $48,000 loss. Goods on consignment remain the consignor''s inventory until the consignee
+    sells them (ASC 606-10-55-79 to 55-80), so the $78,000 is correctly included. Corrected total assets
+    = $3,120,000 + $24,000 − $48,000 = $3,096,000.'
+- stem: Ellenbridge Supply Co.'s draft December 31, Year 4, balance sheet reports total assets of $1,540,000.
+    Before the statements are issued, its controller traces three balances to their support. On July 1,
+    Year 4, Ellenbridge accepted from a customer a $360,000, 9-month note bearing simple interest at 10%
+    a year, with principal and interest due at maturity; the draft reports the note at $360,000 and no
+    interest receivable. The draft carries Ellenbridge's holding of a listed company's common shares,
+    a small stake that gives Ellenbridge no influence over the company, at their $180,000 cost; the shares'
+    quoted price at December 31 puts the holding at $207,000. And inventory includes, at their $34,000
+    cost, goods Ellenbridge shipped in December to a retailer that sells them for Ellenbridge on consignment;
+    the retailer had sold none of them by year-end. Ignore income taxes. What total assets should the
+    corrected balance sheet report?
   choices:
   - id: A
-    text: $3,980,000
-    rationale: Accepts the draft's $3,980,000, which expensed the full service-contract payment and excluded
-      the goods in transit from inventory.
+    text: $1,551,000
+    rationale: Also removes the $34,000 of goods held by the consignee. Goods out on consignment remain
+      the consignor's inventory until the consignee sells them, so they are correctly included.
   - id: B
-    text: $4,008,000
-    rationale: Leaves out the $34,000 of goods Ellenbridge had purchased FOB shipping point and that were
-      in transit, but not yet received, at year-end.
+    text: $1,585,000
+    rationale: Correct. $1,540,000 + $18,000 interest receivable + $27,000 fair value increase.
   - id: C
-    text: $4,014,000
-    rationale: Leaves out the $28,000 of unexpired service-contract cost that Ellenbridge charged entirely
-      to expense, even though two of the three years of the contract's term remains unused.
+    text: $1,594,000
+    rationale: Accrues the interest for the note's whole 9-month term. Only the 6 months through December
+      31 have been earned.
   - id: D
-    text: $4,042,000
-    rationale: Correct. $3,980,000 + $28,000 + $34,000.
-  answer: D
-  explanation: 'The unexpired portion of the service contract is a prepaid asset, not an expense of the
-    year it was paid: $28,000 of the $42,000 payment relates to two of the three years of coverage still
-    to come and is added back. Title to goods shipped FOB shipping point passes when the carrier takes
-    them, so the $34,000 of goods in transit belonged to Ellenbridge at year-end and are added to inventory.
-    Corrected total assets = $3,980,000 + $28,000 + $34,000 = $4,042,000.'
+    text: $1,603,000
+    rationale: Accrues a full year of interest on the note. It was accepted on July 1, so only 6 months
+      of interest ($18,000) had accrued by December 31.
+  answer: B
+  explanation: 'Interest on the note accrues from July 1: $360,000 × 10% × 6/12 = $18,000 of interest
+    receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
+    at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $180,000
+    to $207,000, a $27,000 gain. Goods on consignment remain the consignor''s inventory until the consignee
+    sells them (ASC 606-10-55-79 to 55-80), so the $34,000 is correctly included. Corrected total assets
+    = $1,540,000 + $18,000 + $27,000 = $1,585,000.'

@@ -8,136 +8,159 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 250-10-45-23 (correction of an error in the period discovered)
-  - ASC 606-10-55 (estimated sales returns)
-  - ASC 350-40-25 (capitalized costs of internal-use software)
-  - ASC 350-40-35 (amortization of capitalized software costs)
+  - ASC 606-10-55-22 to 55-29 (sales with a right of return)
+  - ASC 360-10-30-1 (cost of property includes costs to bring it to its intended use)
+  - ASC 606-10-45-2 (contract liabilities)
   notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Before issuing its Year 2 financial statements, Westerham Devices Co.'s controller finds two errors
-  made during Year 2. First, Westerham recorded $85,000 of customer sales in December without estimating
-  the returns customers were expected to make under its standard return policy; no allowance for returns
-  was recorded. Second, on September 1, Year 2, Westerham placed into service new internal-use software
-  that cost $270,000 to develop, which it recorded entirely as Year 2 expense; Westerham amortizes capitalized
-  software costs straight-line over 3 years, beginning when the software is placed in service. Westerham's
-  draft Year 2 net income, before correcting these errors, is $2,400,000, and its weighted-average common
-  shares outstanding for the year are 600,000. Ignore income taxes. What corrected basic earnings per
-  share should Westerham report for Year 2?
+stem: Westerham Devices Co.'s draft Year 2 income statement reports net income of $640,000. Before the
+  statements are issued, the controller reviews three entries in the supporting records. In December,
+  Westerham sold goods for $180,000 under a policy that lets customers return them within 60 days for
+  a full refund; from experience, Westerham expects 10% of those goods to come back in resalable condition,
+  and the goods cost 60% of their selling price. The entry recorded the full $180,000 as revenue and the
+  cost of all of the goods as cost of goods sold. On September 1, Year 2, Westerham placed in service
+  a packaging machine recorded at its $270,000 purchase price; the $9,000 paid to ship it and the $51,000
+  paid to install it were charged to repairs and maintenance expense. Westerham depreciates equipment
+  straight-line over 5 years with no salvage value, starting in the month an asset is placed in service,
+  and the draft includes that depreciation on the $270,000. On December 20, a customer paid a $25,000
+  deposit on goods to be delivered in January, Year 3, and Westerham recorded it as a liability. Ignore
+  income taxes. What net income should Westerham report for Year 2?
 choices:
 - id: A
-  text: $3.86
-  rationale: Corrects only the sales returns, leaving the $270,000 software cost fully expensed instead
-    of capitalized and amortized.
+  text: $678,000
+  rationale: Reverses the $18,000 of revenue on goods expected to be returned but not the $10,800 cost
+    of those goods. The goods come back to inventory, so a return asset reduces cost of goods sold, and
+    income falls only by the $7,200 margin.
 - id: B
-  text: $4.16
-  rationale: Correct. Corrected net income ($2,400,000 − $85,000 + $180,000) ÷ 600,000 shares.
+  text: $680,800
+  rationale: Depreciates the $60,000 of freight and installation for a full year. The machine was placed
+    in service on September 1, so Year 2 bears 4 months of depreciation ($4,000).
 - id: C
-  text: $4.30
-  rationale: Corrects only the capitalized software cost, leaving the $85,000 of unrecorded sales returns
-    in revenue.
+  text: $688,800
+  rationale: Correct. $640,000 − $7,200 return margin + $60,000 capitalized − $4,000 depreciation.
 - id: D
-  text: $4.31
-  rationale: Capitalizes the full $270,000 software cost with no amortization in Year 2, even though the
-    software was placed in service on September 1, Year 2, and Westerham amortizes capitalized software
-    straight-line over 3 years.
-answer: B
-explanation: 'The unrecorded sales returns overstated revenue and net income by $85,000; correcting it
-  reduces net income by that amount. The software cost meets the criteria for capitalization and should
-  be amortized over 3 years from September 1, Year 2: only $90,000 of Year 2 amortization belongs in expense,
-  so $180,000 of the $270,000 expensed is added back. Corrected net income = $2,400,000 − $85,000 + $180,000
-  = $2,495,000. Basic EPS = $2,495,000 ÷ 600,000 shares = $4.16.'
+  text: $713,800
+  rationale: Also moves the $25,000 December deposit into revenue. The goods won't be delivered until
+    January, Year 3, so the deposit is correctly a liability.
+answer: C
+explanation: 'Sales with a right of return are recognized only for the goods not expected to be returned,
+  with a refund liability for the rest and an asset for the right to recover the returned goods, which
+  reduces cost of goods sold (ASC 606-10-55-22 to 55-29): revenue falls by 10% × $180,000 = $18,000, cost
+  of goods sold by 60% × $18,000 = $10,800, and income by $7,200. Freight and installation are costs of
+  bringing the machine to its working condition and location and are capitalized (ASC 360-10-30-1): $9,000
+  + $51,000 = $60,000 comes out of expense, and depreciation from September 1 adds $60,000 ÷ 5 × 4/12
+  = $4,000. The deposit on goods not yet delivered is a contract liability, as recorded (ASC 606-10-45-2).
+  Corrected net income = $640,000 − $7,200 + $60,000 − $4,000 = $688,800.'
 variants:
-- stem: Before issuing its Year 3 financial statements, Allerton Systems Co.'s controller finds two errors
-    made during Year 3. First, Allerton recorded $55,000 of customer sales in December without estimating
-    the returns customers were expected to make under its standard return policy; no allowance for returns
-    was recorded. Second, on July 1, Year 3, Allerton placed into service new internal-use software that
-    cost $180,000 to develop, which it recorded entirely as Year 3 expense; Allerton amortizes capitalized
-    software costs straight-line over 3 years, beginning when the software is placed in service. Allerton's
-    draft Year 3 net income, before correcting these errors, is $1,800,000, and its weighted-average common
-    shares outstanding for the year are 450,000. Ignore income taxes. What corrected basic earnings per
-    share should Allerton report for Year 3?
+- stem: Allerton Systems Co.'s draft Year 3 income statement reports net income of $520,000. Before the
+    statements are issued, the controller reviews three entries in the supporting records. In December,
+    Allerton sold goods for $150,000 under a policy that lets customers return them within 60 days for
+    a full refund; from experience, Allerton expects 12% of those goods to come back in resalable condition,
+    and the goods cost 40% of their selling price. The entry recorded the full $150,000 as revenue and
+    the cost of all of the goods as cost of goods sold. On July 1, Year 3, Allerton placed in service
+    a laser cutter recorded at its $210,000 purchase price; the $6,000 paid to ship it and the $42,000
+    paid to install it were charged to repairs and maintenance expense. Allerton depreciates equipment
+    straight-line over 4 years with no salvage value, starting in the month an asset is placed in service,
+    and the draft includes that depreciation on the $210,000. On December 18, a customer paid a $19,000
+    deposit on goods to be delivered in January, Year 4, and Allerton recorded it as a liability. Ignore
+    income taxes. What net income should Allerton report for Year 3?
   choices:
   - id: A
-    text: $3.86
-    rationale: 'Reverses both corrections: adds back the sales returns and deducts the software amortization,
-      instead of the other way around.'
+    text: $551,200
+    rationale: Correct. $520,000 − $10,800 return margin + $48,000 capitalized − $6,000 depreciation.
   - id: B
-    text: $3.88
-    rationale: Corrects only the sales returns, leaving the $180,000 software cost fully expensed instead
-      of capitalized and amortized.
+    text: $557,200
+    rationale: Capitalizes the $48,000 of freight and installation but records no depreciation on it,
+      though the machine has been in service since July 1.
   - id: C
-    text: $4.14
-    rationale: Correct. Corrected net income ($1,800,000 − $55,000 + $120,000) ÷ 450,000 shares.
+    text: $562,000
+    rationale: Leaves the December sales as recorded. Because customers are expected to return 12% of
+      those goods, revenue is recognized only for the goods not expected to be returned.
   - id: D
-    text: $4.27
-    rationale: Corrects only the capitalized software cost, leaving the $55,000 of unrecorded sales returns
-      in revenue.
-  answer: C
-  explanation: 'The unrecorded sales returns overstated revenue and net income by $55,000; correcting
-    it reduces net income by that amount. The software cost meets the criteria for capitalization and
-    should be amortized over 3 years from July 1, Year 3: only $60,000 of Year 3 amortization belongs
-    in expense, so $120,000 of the $180,000 expensed is added back. Corrected net income = $1,800,000
-    − $55,000 + $120,000 = $1,865,000. Basic EPS = $1,865,000 ÷ 450,000 shares = $4.14.'
-- stem: Before issuing its Year 1 financial statements, Brockhollow Data Co.'s controller finds two errors
-    made during Year 1. First, Brockhollow recorded $115,000 of customer sales in December without estimating
-    the returns customers were expected to make under its standard return policy; no allowance for returns
-    was recorded. Second, on October 1, Year 1, Brockhollow placed into service new internal-use software
-    that cost $360,000 to develop, which it recorded entirely as Year 1 expense; Brockhollow amortizes
-    capitalized software costs straight-line over 4 years, beginning when the software is placed in service.
-    Brockhollow's draft Year 1 net income, before correcting these errors, is $3,200,000, and its weighted-average
-    common shares outstanding for the year are 800,000. Ignore income taxes. What corrected basic earnings
-    per share should Brockhollow report for Year 1?
+    text: $570,200
+    rationale: Also moves the $19,000 December deposit into revenue. The goods won't be delivered until
+      January, Year 4, so the deposit is correctly a liability.
+  answer: A
+  explanation: 'Sales with a right of return are recognized only for the goods not expected to be returned,
+    with a refund liability for the rest and an asset for the right to recover the returned goods, which
+    reduces cost of goods sold (ASC 606-10-55-22 to 55-29): revenue falls by 12% × $150,000 = $18,000,
+    cost of goods sold by 40% × $18,000 = $7,200, and income by $10,800. Freight and installation are
+    costs of bringing the machine to its working condition and location and are capitalized (ASC 360-10-30-1):
+    $6,000 + $42,000 = $48,000 comes out of expense, and depreciation from July 1 adds $48,000 ÷ 4 × 6/12
+    = $6,000. The deposit on goods not yet delivered is a contract liability, as recorded (ASC 606-10-45-2).
+    Corrected net income = $520,000 − $10,800 + $48,000 − $6,000 = $551,200.'
+- stem: Brockhollow Data Co.'s draft Year 1 income statement reports net income of $780,000. Before the
+    statements are issued, the controller reviews three entries in the supporting records. In December,
+    Brockhollow sold goods for $240,000 under a policy that lets customers return them within 60 days
+    for a full refund; from experience, Brockhollow expects 8% of those goods to come back in resalable
+    condition, and the goods cost 65% of their selling price. The entry recorded the full $240,000 as
+    revenue and the cost of all of the goods as cost of goods sold. On October 1, Year 1, Brockhollow
+    placed in service a bottling line recorded at its $390,000 purchase price; the $12,000 paid to ship
+    it and the $60,000 paid to install it were charged to repairs and maintenance expense. Brockhollow
+    depreciates equipment straight-line over 4 years with no salvage value, starting in the month an asset
+    is placed in service, and the draft includes that depreciation on the $390,000. On December 22, a
+    customer paid a $34,000 deposit on goods to be delivered in January, Year 2, and Brockhollow recorded
+    it as a liability. Ignore income taxes. What net income should Brockhollow report for Year 1?
   choices:
   - id: A
-    text: $3.81
-    rationale: 'Reverses both corrections: adds back the sales returns and deducts the software amortization,
-      instead of the other way around.'
+    text: $828,300
+    rationale: Reverses the $19,200 of revenue on goods expected to be returned but not the $12,480 cost
+      of those goods. The goods come back to inventory, so a return asset reduces cost of goods sold,
+      and income falls only by the $6,720 margin.
   - id: B
-    text: $4.19
-    rationale: Correct. Corrected net income ($3,200,000 − $115,000 + $270,000) ÷ 800,000 shares.
+    text: $840,780
+    rationale: Correct. $780,000 − $6,720 return margin + $72,000 capitalized − $4,500 depreciation.
   - id: C
-    text: $4.31
-    rationale: Capitalizes the full $360,000 software cost with no amortization in Year 1, even though
-      the software was placed in service on October 1, Year 1, and Brockhollow amortizes capitalized software
-      straight-line over 4 years.
+    text: $845,280
+    rationale: Capitalizes the $72,000 of freight and installation but records no depreciation on it,
+      though the machine has been in service since October 1.
   - id: D
-    text: $4.34
-    rationale: Corrects only the capitalized software cost, leaving the $115,000 of unrecorded sales returns
-      in revenue.
+    text: $874,780
+    rationale: Also moves the $34,000 December deposit into revenue. The goods won't be delivered until
+      January, Year 2, so the deposit is correctly a liability.
   answer: B
-  explanation: 'The unrecorded sales returns overstated revenue and net income by $115,000; correcting
-    it reduces net income by that amount. The software cost meets the criteria for capitalization and
-    should be amortized over 4 years from October 1, Year 1: only $90,000 of Year 1 amortization belongs
-    in expense, so $270,000 of the $360,000 expensed is added back. Corrected net income = $3,200,000
-    − $115,000 + $270,000 = $3,355,000. Basic EPS = $3,355,000 ÷ 800,000 shares = $4.19.'
-- stem: Before issuing its Year 4 financial statements, Pennycross Tech Co.'s controller finds two errors
-    made during Year 4. First, Pennycross recorded $45,000 of customer sales in December without estimating
-    the returns customers were expected to make under its standard return policy; no allowance for returns
-    was recorded. Second, on August 1, Year 4, Pennycross placed into service new internal-use software
-    that cost $150,000 to develop, which it recorded entirely as Year 4 expense; Pennycross amortizes
-    capitalized software costs straight-line over 3 years, beginning when the software is placed in service.
-    Pennycross's draft Year 4 net income, before correcting these errors, is $1,500,000, and its weighted-average
-    common shares outstanding for the year are 375,000. Ignore income taxes. What corrected basic earnings
-    per share should Pennycross report for Year 4?
+  explanation: 'Sales with a right of return are recognized only for the goods not expected to be returned,
+    with a refund liability for the rest and an asset for the right to recover the returned goods, which
+    reduces cost of goods sold (ASC 606-10-55-22 to 55-29): revenue falls by 8% × $240,000 = $19,200,
+    cost of goods sold by 65% × $19,200 = $12,480, and income by $6,720. Freight and installation are
+    costs of bringing the machine to its working condition and location and are capitalized (ASC 360-10-30-1):
+    $12,000 + $60,000 = $72,000 comes out of expense, and depreciation from October 1 adds $72,000 ÷ 4
+    × 3/12 = $4,500. The deposit on goods not yet delivered is a contract liability, as recorded (ASC
+    606-10-45-2). Corrected net income = $780,000 − $6,720 + $72,000 − $4,500 = $840,780.'
+- stem: Pennycross Tech Co.'s draft Year 4 income statement reports net income of $455,000. Before the
+    statements are issued, the controller reviews three entries in the supporting records. In December,
+    Pennycross sold goods for $120,000 under a policy that lets customers return them within 60 days for
+    a full refund; from experience, Pennycross expects 15% of those goods to come back in resalable condition,
+    and the goods cost 45% of their selling price. The entry recorded the full $120,000 as revenue and
+    the cost of all of the goods as cost of goods sold. On August 1, Year 4, Pennycross placed in service
+    a milling machine recorded at its $180,000 purchase price; the $5,000 paid to ship it and the $31,000
+    paid to install it were charged to repairs and maintenance expense. Pennycross depreciates equipment
+    straight-line over 3 years with no salvage value, starting in the month an asset is placed in service,
+    and the draft includes that depreciation on the $180,000. On December 19, a customer paid a $16,000
+    deposit on goods to be delivered in January, Year 5, and Pennycross recorded it as a liability. Ignore
+    income taxes. What net income should Pennycross report for Year 4?
   choices:
   - id: A
-    text: $3.85
-    rationale: 'Reverses both corrections: adds back the sales returns and deducts the software amortization,
-      instead of the other way around.'
+    text: $468,000
+    rationale: Reverses the $18,000 of revenue on goods expected to be returned but not the $8,100 cost
+      of those goods. The goods come back to inventory, so a return asset reduces cost of goods sold,
+      and income falls only by the $9,900 margin.
   - id: B
-    text: $3.88
-    rationale: Corrects only the sales returns, leaving the $150,000 software cost fully expensed instead
-      of capitalized and amortized.
+    text: $476,100
+    rationale: Correct. $455,000 − $9,900 return margin + $36,000 capitalized − $5,000 depreciation.
   - id: C
-    text: $4.15
-    rationale: Correct. Corrected net income ($1,500,000 − $45,000 + $100,000) ÷ 375,000 shares.
+    text: $481,100
+    rationale: Capitalizes the $36,000 of freight and installation but records no depreciation on it,
+      though the machine has been in service since August 1.
   - id: D
-    text: $4.28
-    rationale: Capitalizes the full $150,000 software cost with no amortization in Year 4, even though
-      the software was placed in service on August 1, Year 4, and Pennycross amortizes capitalized software
-      straight-line over 3 years.
-  answer: C
-  explanation: 'The unrecorded sales returns overstated revenue and net income by $45,000; correcting
-    it reduces net income by that amount. The software cost meets the criteria for capitalization and
-    should be amortized over 3 years from August 1, Year 4: only $50,000 of Year 4 amortization belongs
-    in expense, so $100,000 of the $150,000 expensed is added back. Corrected net income = $1,500,000
-    − $45,000 + $100,000 = $1,555,000. Basic EPS = $1,555,000 ÷ 375,000 shares = $4.15.'
+    text: $486,000
+    rationale: Leaves the December sales as recorded. Because customers are expected to return 15% of
+      those goods, revenue is recognized only for the goods not expected to be returned.
+  answer: B
+  explanation: 'Sales with a right of return are recognized only for the goods not expected to be returned,
+    with a refund liability for the rest and an asset for the right to recover the returned goods, which
+    reduces cost of goods sold (ASC 606-10-55-22 to 55-29): revenue falls by 15% × $120,000 = $18,000,
+    cost of goods sold by 45% × $18,000 = $8,100, and income by $9,900. Freight and installation are costs
+    of bringing the machine to its working condition and location and are capitalized (ASC 360-10-30-1):
+    $5,000 + $31,000 = $36,000 comes out of expense, and depreciation from August 1 adds $36,000 ÷ 3 ×
+    5/12 = $5,000. The deposit on goods not yet delivered is a contract liability, as recorded (ASC 606-10-45-2).
+    Corrected net income = $455,000 − $9,900 + $36,000 − $5,000 = $476,100.'
