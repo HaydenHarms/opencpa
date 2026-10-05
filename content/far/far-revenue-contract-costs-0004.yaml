@@ -8,152 +8,151 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 340-40-15-3 (scope exclusion for costs within the scope of another Topic)
+  - ASC 340-40-15-3 (costs within the scope of another Topic)
   - ASC 340-40-25-1 to 25-8 (incremental costs of obtaining a contract; costs to fulfill a contract)
   - ASC 340-40-35-1 (amortization)
   notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'Trebarwith Systems Co. signed a three-year contract on January 10, Year 1, to provide outsourced
-  logistics services beginning March 1, Year 1; no renewal is expected. Four amounts went on Trebarwith''s
-  books because of this engagement: a $54,000 commission the salesperson earned only by closing the deal;
-  $72,000 paid for labor configuring the customer''s shipment-tracking workflows — work tied specifically
-  to this contract, built to be used for as long as Trebarwith serves this customer, and priced into the
-  fees Trebarwith will collect; $38,000 for forklifts that Trebarwith will dedicate to this customer for
-  now but redeploy to other jobs once the contract ends; and $9,000 for packing materials that will be
-  used up in delivering the services. Each capitalized cost is written off evenly by the month, over the
-  span it benefits. What should Trebarwith carry as its contract cost assets under ASC 340-40 at December
-  31, Year 1?'
+    Reworked after the 2026-10-05 review gate.
+stem: On January 1, Year 1, Trebarwith Systems Co. signed a three-year contract to run a customer's outbound
+  logistics, with services beginning March 1, Year 1, and running 36 months; renewal isn't expected. On
+  signing, Trebarwith paid its salesperson a $54,000 commission on the contract. Before services began,
+  it spent $72,000 on technician labor configuring the customer's shipment-tracking workflows on Trebarwith's
+  platform; the contract's fee schedule includes a setup charge. Trebarwith also bought $36,000 of forklifts
+  that it will use on this customer's account and move to other jobs when the contract ends, and $7,200
+  of packing materials that will be used up in providing the services. Trebarwith amortizes any capitalized
+  contract cost straight-line by month over the period of the services it relates to. What amortization
+  of contract cost assets should Trebarwith recognize for Year 1?
 choices:
 - id: A
-  text: $91,000
-  rationale: Correct. ($54,000 + $72,000) × 26/36.
+  text: $15,000
+  rationale: Amortizes only the commission, expensing the $72,000 of configuration labor as incurred.
+    That labor relates directly to this contract, sets up the resources Trebarwith uses to serve the customer,
+    and is recovered through the fees, so it is a capitalized cost to fulfill the contract (ASC 340-40-25-5).
 - id: B
-  text: $100,000
-  rationale: Capitalizes the $9,000 of packing materials as a contract cost asset. Materials and supplies
-    to be consumed in performing the services are inventory within the scope of ASC 330 until used, not
-    a contract cost asset.
+  text: $35,000
+  rationale: Correct. ($54,000 + $72,000) × 10/36.
 - id: C
-  text: $126,000
-  rationale: Reports the full $126,000 capitalized, without amortization. Both the commission and the
-    setup labor are amortized consistent with the transfer of the services to which they relate.
+  text: $42,000
+  rationale: 'Amortizes from the January 1 signing date, 12 months, instead of from March 1, when services
+    began. A contract cost asset is amortized as the services it relates to are transferred (ASC 340-40-35-1),
+    so amortization starts with the services: 10 months.'
 - id: D
-  text: $129,000
-  rationale: Capitalizes the $38,000 of forklifts as a contract cost asset. Property, plant and equipment
-    is within the scope of ASC 360, not ASC 340-40 (ASC 340-40-15-3), even though Trebarwith bought it
-    only for this contract.
-answer: A
+  text: $45,000
+  rationale: Adds the $36,000 of forklifts to the contract cost asset and amortizes it over the contract.
+    Equipment Trebarwith will redeploy after the contract is property, plant and equipment within ASC
+    360, outside ASC 340-40 (ASC 340-40-15-3), and is depreciated, not amortized as a contract cost.
+answer: B
 explanation: 'The commission is an incremental cost of obtaining the contract, and the configuration labor
-  meets the criteria for a cost to fulfill a contract (ASC 340-40-25-1 to 25-8); both are capitalized
-  and amortized from March 1, when the related services begin, over the 36-month term: ($54,000 + $72,000)
-  × 26/36 = $91,000. The forklifts is property, plant and equipment Trebarwith will use beyond this contract,
-  within the scope of ASC 360 (ASC 340-40-15-3), and the packing materials is inventory within the scope
-  of ASC 330 until consumed; neither is a contract cost asset under ASC 340-40, even though both relate
-  to this contract.'
+  is a cost to fulfill it: it relates directly to the contract, creates resources Trebarwith will use
+  to provide the services, and is recovered through the fees (ASC 340-40-25-1 to 25-8). Both are capitalized,
+  $54,000 + $72,000 = $126,000, and amortized over the 36 months of services starting March 1 (ASC 340-40-35-1):
+  $126,000 × 10/36 = $35,000. The forklifts are property, plant and equipment within ASC 360 and the packing
+  materials are inventory within ASC 330, so neither is a contract cost asset (ASC 340-40-15-3), even
+  though both were bought for this contract.'
 variants:
-- stem: 'Delabole Systems Co. signed a three-year contract on February 14, Year 1, to provide outsourced
-    logistics services beginning April 1, Year 1; no renewal is expected. Four amounts went on Delabole''s
-    books because of this engagement: a $48,000 commission the salesperson earned only by closing the
-    deal; $60,000 paid for labor configuring the customer''s shipment-tracking workflows — work tied specifically
-    to this contract, built to be used for as long as Delabole serves this customer, and priced into the
-    fees Delabole will collect; $25,000 for handling carts that Delabole will dedicate to this customer
-    for now but redeploy to other jobs once the contract ends; and $7,000 for shipping supplies that will
-    be used up in delivering the services. Each capitalized cost is written off evenly by the month, over
-    the span it benefits. What should Delabole carry as its contract cost assets under ASC 340-40 at December
-    31, Year 1?'
+- stem: On February 1, Year 1, Delabole Systems Co. signed a three-year contract to run a customer's outbound
+    logistics, with services beginning April 1, Year 1, and running 36 months; renewal isn't expected.
+    On signing, Delabole paid its salesperson a $43,200 commission on the contract. Before services began,
+    it spent $57,600 on technician labor configuring the customer's shipment-tracking workflows on Delabole's
+    platform; the contract's fee schedule includes a setup charge. Delabole also bought $28,800 of handling
+    carts that it will use on this customer's account and move to other jobs when the contract ends, and
+    $10,800 of shipping supplies that will be used up in providing the services. Delabole amortizes any
+    capitalized contract cost straight-line by month over the period of the services it relates to. What
+    amortization of contract cost assets should Delabole recognize for Year 1?
   choices:
   - id: A
-    text: $78,000
-    rationale: Starts amortizing from the February 14 signing date instead of the April 1 service start.
-      Amortization of a capitalized contract cost begins when the services to which it relates begin (ASC
-      340-40-35-1).
+    text: $10,800
+    rationale: Amortizes only the commission, expensing the $57,600 of configuration labor as incurred.
+      That labor relates directly to this contract, sets up the resources Delabole uses to serve the customer,
+      and is recovered through the fees, so it is a capitalized cost to fulfill the contract (ASC 340-40-25-5).
   - id: B
-    text: $81,000
-    rationale: Correct. ($48,000 + $60,000) × 27/36.
+    text: $14,400
+    rationale: Amortizes only the configuration labor, expensing the $43,200 commission when paid. A commission
+      owed only because the contract was signed is an incremental cost of obtaining it and is capitalized,
+      since the amortization period exceeds one year (ASC 340-40-25-1 to 25-4).
   - id: C
-    text: $106,000
-    rationale: Capitalizes the $25,000 of handling carts as a contract cost asset. Property, plant and
-      equipment is within the scope of ASC 360, not ASC 340-40 (ASC 340-40-15-3), even though Delabole
-      bought it only for this contract.
+    text: $25,200
+    rationale: Correct. ($43,200 + $57,600) × 9/36.
   - id: D
-    text: $108,000
-    rationale: Reports the full $108,000 capitalized, without amortization. Both the commission and the
-      setup labor are amortized consistent with the transfer of the services to which they relate.
-  answer: B
+    text: $27,900
+    rationale: Adds the $10,800 of shipping supplies to the contract cost asset. Supplies used up in performing
+      the services are inventory within ASC 330 until consumed, outside ASC 340-40.
+  answer: C
   explanation: 'The commission is an incremental cost of obtaining the contract, and the configuration
-    labor meets the criteria for a cost to fulfill a contract (ASC 340-40-25-1 to 25-8); both are capitalized
-    and amortized from April 1, when the related services begin, over the 36-month term: ($48,000 + $60,000)
-    × 27/36 = $81,000. The handling carts is property, plant and equipment Delabole will use beyond this
-    contract, within the scope of ASC 360 (ASC 340-40-15-3), and the shipping supplies is inventory within
-    the scope of ASC 330 until consumed; neither is a contract cost asset under ASC 340-40, even though
-    both relate to this contract.'
-- stem: 'Zennor Systems Co. signed a three-year contract on March 5, Year 1, to provide outsourced logistics
-    services beginning May 1, Year 1; no renewal is expected. Four amounts went on Zennor''s books because
-    of this engagement: a $72,000 commission the salesperson earned only by closing the deal; $90,000
-    paid for labor configuring the customer''s shipment-tracking workflows — work tied specifically to
-    this contract, built to be used for as long as Zennor serves this customer, and priced into the fees
-    Zennor will collect; $48,000 for pallet jacks that Zennor will dedicate to this customer for now but
-    redeploy to other jobs once the contract ends; and $14,000 for crating materials that will be used
-    up in delivering the services. Each capitalized cost is written off evenly by the month, over the
-    span it benefits. What should Zennor carry as its contract cost assets under ASC 340-40 at December
-    31, Year 1?'
+    labor is a cost to fulfill it: it relates directly to the contract, creates resources Delabole will
+    use to provide the services, and is recovered through the fees (ASC 340-40-25-1 to 25-8). Both are
+    capitalized, $43,200 + $57,600 = $100,800, and amortized over the 36 months of services starting April
+    1 (ASC 340-40-35-1): $100,800 × 9/36 = $25,200. The handling carts are property, plant and equipment
+    within ASC 360 and the shipping supplies are inventory within ASC 330, so neither is a contract cost
+    asset (ASC 340-40-15-3), even though both were bought for this contract.'
+- stem: On March 1, Year 1, Zennor Systems Co. signed a three-year contract to run a customer's outbound
+    logistics, with services beginning May 1, Year 1, and running 36 months; renewal isn't expected. On
+    signing, Zennor paid its salesperson a $64,800 commission on the contract. Before services began,
+    it spent $86,400 on technician labor configuring the customer's shipment-tracking workflows on Zennor's
+    platform; the contract's fee schedule includes a setup charge. Zennor also bought $43,200 of pallet
+    jacks that it will use on this customer's account and move to other jobs when the contract ends, and
+    $14,400 of crating materials that will be used up in providing the services. Zennor amortizes any
+    capitalized contract cost straight-line by month over the period of the services it relates to. What
+    amortization of contract cost assets should Zennor recognize for Year 1?
   choices:
   - id: A
-    text: $117,000
-    rationale: Starts amortizing from the March 5 signing date instead of the May 1 service start. Amortization
-      of a capitalized contract cost begins when the services to which it relates begin (ASC 340-40-35-1).
+    text: $33,600
+    rationale: Correct. ($64,800 + $86,400) × 8/36.
   - id: B
-    text: $126,000
-    rationale: Correct. ($72,000 + $90,000) × 28/36.
+    text: $36,800
+    rationale: Adds the $14,400 of crating materials to the contract cost asset. Supplies used up in performing
+      the services are inventory within ASC 330 until consumed, outside ASC 340-40.
   - id: C
-    text: $140,000
-    rationale: Capitalizes the $14,000 of crating materials as a contract cost asset. Materials and supplies
-      to be consumed in performing the services are inventory within the scope of ASC 330 until used,
-      not a contract cost asset.
+    text: $42,000
+    rationale: 'Amortizes from the March 1 signing date, 10 months, instead of from May 1, when services
+      began. A contract cost asset is amortized as the services it relates to are transferred (ASC 340-40-35-1),
+      so amortization starts with the services: 8 months.'
   - id: D
-    text: $174,000
-    rationale: Capitalizes the $48,000 of pallet jacks as a contract cost asset. Property, plant and equipment
-      is within the scope of ASC 360, not ASC 340-40 (ASC 340-40-15-3), even though Zennor bought it only
-      for this contract.
-  answer: B
-  explanation: 'The commission is an incremental cost of obtaining the contract, and the configuration
-    labor meets the criteria for a cost to fulfill a contract (ASC 340-40-25-1 to 25-8); both are capitalized
-    and amortized from May 1, when the related services begin, over the 36-month term: ($72,000 + $90,000)
-    × 28/36 = $126,000. The pallet jacks is property, plant and equipment Zennor will use beyond this
-    contract, within the scope of ASC 360 (ASC 340-40-15-3), and the crating materials is inventory within
-    the scope of ASC 330 until consumed; neither is a contract cost asset under ASC 340-40, even though
-    both relate to this contract.'
-- stem: 'Marazion Systems Co. signed a three-year contract on April 20, Year 1, to provide outsourced
-    logistics services beginning June 1, Year 1; no renewal is expected. Four amounts went on Marazion''s
-    books because of this engagement: a $75,000 commission the salesperson earned only by closing the
-    deal; $105,000 paid for labor configuring the customer''s shipment-tracking workflows — work tied
-    specifically to this contract, built to be used for as long as Marazion serves this customer, and
-    priced into the fees Marazion will collect; $50,000 for loading equipment that Marazion will dedicate
-    to this customer for now but redeploy to other jobs once the contract ends; and $15,000 for packaging
-    stock that will be used up in delivering the services. Each capitalized cost is written off evenly
-    by the month, over the span it benefits. What should Marazion carry as its contract cost assets under
-    ASC 340-40 at December 31, Year 1?'
-  choices:
-  - id: A
-    text: $145,000
-    rationale: Correct. ($75,000 + $105,000) × 29/36.
-  - id: B
-    text: $160,000
-    rationale: Capitalizes the $15,000 of packaging stock as a contract cost asset. Materials and supplies
-      to be consumed in performing the services are inventory within the scope of ASC 330 until used,
-      not a contract cost asset.
-  - id: C
-    text: $180,000
-    rationale: Reports the full $180,000 capitalized, without amortization. Both the commission and the
-      setup labor are amortized consistent with the transfer of the services to which they relate.
-  - id: D
-    text: $195,000
-    rationale: Capitalizes the $50,000 of loading equipment as a contract cost asset. Property, plant
-      and equipment is within the scope of ASC 360, not ASC 340-40 (ASC 340-40-15-3), even though Marazion
-      bought it only for this contract.
+    text: $43,200
+    rationale: Adds the $43,200 of pallet jacks to the contract cost asset and amortizes it over the contract.
+      Equipment Zennor will redeploy after the contract is property, plant and equipment within ASC 360,
+      outside ASC 340-40 (ASC 340-40-15-3), and is depreciated, not amortized as a contract cost.
   answer: A
   explanation: 'The commission is an incremental cost of obtaining the contract, and the configuration
-    labor meets the criteria for a cost to fulfill a contract (ASC 340-40-25-1 to 25-8); both are capitalized
-    and amortized from June 1, when the related services begin, over the 36-month term: ($75,000 + $105,000)
-    × 29/36 = $145,000. The loading equipment is property, plant and equipment Marazion will use beyond
-    this contract, within the scope of ASC 360 (ASC 340-40-15-3), and the packaging stock is inventory
-    within the scope of ASC 330 until consumed; neither is a contract cost asset under ASC 340-40, even
-    though both relate to this contract.'
+    labor is a cost to fulfill it: it relates directly to the contract, creates resources Zennor will
+    use to provide the services, and is recovered through the fees (ASC 340-40-25-1 to 25-8). Both are
+    capitalized, $64,800 + $86,400 = $151,200, and amortized over the 36 months of services starting May
+    1 (ASC 340-40-35-1): $151,200 × 8/36 = $33,600. The pallet jacks are property, plant and equipment
+    within ASC 360 and the crating materials are inventory within ASC 330, so neither is a contract cost
+    asset (ASC 340-40-15-3), even though both were bought for this contract.'
+- stem: On April 1, Year 1, Marazion Systems Co. signed a three-year contract to run a customer's outbound
+    logistics, with services beginning July 1, Year 1, and running 36 months; renewal isn't expected.
+    On signing, Marazion paid its salesperson a $72,000 commission on the contract. Before services began,
+    it spent $108,000 on technician labor configuring the customer's shipment-tracking workflows on Marazion's
+    platform; the contract's fee schedule includes a setup charge. Marazion also bought $54,000 of dock
+    lifts that it will use on this customer's account and move to other jobs when the contract ends, and
+    $18,000 of packaging supplies that will be used up in providing the services. Marazion amortizes any
+    capitalized contract cost straight-line by month over the period of the services it relates to. What
+    amortization of contract cost assets should Marazion recognize for Year 1?
+  choices:
+  - id: A
+    text: $12,000
+    rationale: Amortizes only the commission, expensing the $108,000 of configuration labor as incurred.
+      That labor relates directly to this contract, sets up the resources Marazion uses to serve the customer,
+      and is recovered through the fees, so it is a capitalized cost to fulfill the contract (ASC 340-40-25-5).
+  - id: B
+    text: $18,000
+    rationale: Amortizes only the configuration labor, expensing the $72,000 commission when paid. A commission
+      owed only because the contract was signed is an incremental cost of obtaining it and is capitalized,
+      since the amortization period exceeds one year (ASC 340-40-25-1 to 25-4).
+  - id: C
+    text: $30,000
+    rationale: Correct. ($72,000 + $108,000) × 6/36.
+  - id: D
+    text: $45,000
+    rationale: 'Amortizes from the April 1 signing date, 9 months, instead of from July 1, when services
+      began. A contract cost asset is amortized as the services it relates to are transferred (ASC 340-40-35-1),
+      so amortization starts with the services: 6 months.'
+  answer: C
+  explanation: 'The commission is an incremental cost of obtaining the contract, and the configuration
+    labor is a cost to fulfill it: it relates directly to the contract, creates resources Marazion will
+    use to provide the services, and is recovered through the fees (ASC 340-40-25-1 to 25-8). Both are
+    capitalized, $72,000 + $108,000 = $180,000, and amortized over the 36 months of services starting
+    July 1 (ASC 340-40-35-1): $180,000 × 6/36 = $30,000. The dock lifts are property, plant and equipment
+    within ASC 360 and the packaging supplies are inventory within ASC 330, so neither is a contract cost
+    asset (ASC 340-40-15-3), even though both were bought for this contract.'

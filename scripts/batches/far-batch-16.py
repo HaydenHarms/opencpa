@@ -1,23 +1,26 @@
 """FAR batch 16 — 16 items written from scratch, Area III — Select Transactions only (a slice run in
-parallel with batch 17, which covers III.A.*, III.B.*, III.G.*; no shared ids or tasks).
+parallel with batches 15 and 17, which cover Area II and III.A.*, III.B.*, III.G.*; no shared ids or tasks).
 
 Plan: a third item on III.C.d (five-step model: variable consideration under the constraint, principal
-versus agent in a different industry, and the sales-/usage-based royalty exception for licenses of IP —
-aspects the existing seven III.C.d items don't cover), a fourth on III.C.e (contract costs: the scope
-exclusion for costs within other Topics, such as PP&E and inventory), a third and fourth on III.C.f (NFP
-contributed services: unskilled labor that creates or enhances a nonfinancial asset, and a specialized
-interpreter), a third on III.C.g (NFP contributions: a short-term promise not discounted, a measurable
-barrier, fair value versus carrying amount), a second and third on III.E.b (fair value: the in-use versus
-in-exchange premise, and nonperformance risk in measuring a liability), a fourth and fifth on III.F.c
-(lessee assets/liabilities: a third-party residual value guarantee excluded from lease payments, and the
-private-company risk-free rate election with a security deposit excluded), a sixth and seventh on III.F.d
-(lessee lease cost: amortizing the right-of-use asset over the asset's useful life when a purchase option
-is reasonably certain, and a decreasing rent schedule with a lease incentive and a non-index variable
-payment), and a fourth on III.D.c, III.D.d and III.D.e (income taxes: an installment sale and permanent
-differences; an installment sale, a litigation accrual and a valuation allowance; and a tax provision
-journal entry with a valuation allowance change). Every Analysis item... there are none in this batch;
-every item is Application. Target mix: 16 Application items, Area III only. Scope and skill tags follow
-the AICPA CPA Exam Blueprints effective January 2026.
+versus agent in a different industry, and the sales-/usage-based royalty exception for licenses of IP),
+a fourth on III.C.e (contract costs: PP&E and supplies outside ASC 340-40, amortization from the service
+start), a third and fourth on III.C.f (NFP contributed services: revenue and expense for services that
+create an asset versus services expensed; services capitalized into construction in progress, including
+staff lent by an affiliate), a third on III.C.g (NFP contributions: a short-term promise, a condition not
+yet met, donated supplies, a donor's forgiveness of a loan), a second and third on III.E.b (fair value:
+the in-use premise judged from market evidence, and nonperformance risk in measuring a liability), a
+fourth and fifth on III.F.c (lessee assets and liabilities: a residual value guarantee bought by the
+lessor from an insurer, and the private-company risk-free rate election with a security deposit), a sixth
+and seventh on III.F.d (lessee lease cost: a purchase option the candidate must judge, with initial direct
+costs, and a decreasing rent schedule with a lease incentive and a non-index variable payment), and a
+fourth on III.D.c, III.D.d and III.D.e (income taxes: the current component of expense; deferred tax
+ledger balances with a valuation allowance; deferred tax expense with a change in the allowance). Every
+item is Application (none of these tasks is marked Analysis). Scope and skill tags follow the AICPA CPA
+Exam Blueprints effective January 2026.
+
+Rework after the review gate (2026-10-05, 78.2%, two majors): lessee-finance-0005 and
+nfp-contributed-services-0004 were rebuilt; every other finding was applied here, and items stay
+`status: draft` until the gate re-passes. See docs/reviews/far-batch-16.md.
 
 Every number and distractor below is computed in code (Decimal, rounded half up). Each family's four
 parameter sets move the key's letter across at least two versions (batch 11 gate), and parameter set 0
@@ -33,14 +36,16 @@ import sys
 from decimal import Decimal as D
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import AP, attach_variants, audit, finalize, fix_articles, mcq as _mcq, variant, write_items  # noqa: E402
+from common import AP, _amounts, attach_variants, audit, finalize, fix_articles, mcq as _mcq, variant, write_items  # noqa: E402
 from variants import m, pick, rd  # noqa: E402
 
 A3 = "Area III — Select Transactions"
-NOTE = "Batch 16. Written from scratch; answers solved and every number and distractor computed in code."
+NOTE = ("Batch 16. Written from scratch; answers solved and every number and distractor computed in code. "
+        "Reworked after the 2026-10-05 review gate.")
 CONTENT = os.path.join(os.path.dirname(__file__), "..", "..", "content", "far")
 SCRATCH = os.environ.get("B16_SCRATCH")
 ASOF_TAX = "U.S. GAAP (ASC 740) and federal tax law in effect for 2026; the rate is as stated in the stem"
+STATUS = "draft"  # stays unserved until the review gate re-passes; the lead flips it to reviewed
 
 
 def mcq(*a, **k):
@@ -50,7 +55,7 @@ def mcq(*a, **k):
 def family(id, area, topic, skill, refs, build, params, twist, asof=None):
     assert twist in params[0]["use"], f"{id}: version 0 doesn't show the central-twist distractor {twist}"
     base = build(params[0])
-    review = dict(status="reviewed", references=refs, notes=NOTE)
+    review = dict(status=STATUS, references=refs, notes=NOTE)
     if asof:
         review["asOf"] = asof
     it = dict(id=id, type="mcq", blueprint=dict(section="FAR", area=area, topic=topic, skill=skill),
@@ -70,22 +75,14 @@ def repeats(label, v):
     dup = sorted({a for a in amts if amts.count(a) > 1})
     if dup:
         print(f"REPEAT {label}: stem repeats {', '.join(dup)}", file=sys.stderr)
-    for c in v["choices"]:
-        for a in re.findall(r"[$][0-9,]+(?:[.][0-9]+)?", c["text"]):
-            if a in amts:
-                print(f"REPEAT {label}: choice {a} equals a stem amount", file=sys.stderr)
 
 
 def spacing(label, v):
-    vals = []
-    for c in v["choices"]:
-        mm = re.match(r"^\$?([\d,]+(?:\.\d+)?)", c["text"])
-        if mm:
-            vals.append(float(mm.group(1).replace(",", "")))
-    vals.sort()
+    """Flag two choices whose amounts are all within 0.4% of each other (a cluster the bar warns about)."""
+    vals = sorted(_amounts(c["text"]) for c in v["choices"])
     for a, b in zip(vals, vals[1:]):
-        if b - a < 0.004 * b:
-            print(f"CLOSE {label}: {a:,.2f} and {b:,.2f}", file=sys.stderr)
+        if all(abs(y - x) < 0.004 * max(abs(y), 1) for x, y in zip(a, b)):
+            print(f"CLOSE {label}: {a} and {b}", file=sys.stderr)
 
 
 def short(name):
@@ -101,8 +98,8 @@ def whole(x):
 def distinct(pool, key):
     vals = [t for t, _ in pool.values()] + [key[0]]
     assert len(set(vals)) == len(vals), f"coinciding choices: {vals}"
-    nums = [float(re.match(r"^\$?([\d,]+(?:\.\d+)?)", v).group(1).replace(",", "")) for v in vals]
-    assert len(set(nums)) == len(nums), f"two choices share a leading amount: {vals}"
+    nums = [_amounts(v) for v in vals]
+    assert len(set(nums)) == len(nums), f"two choices share every amount: {vals}"
 
 
 def build(pool, key, use):
@@ -122,8 +119,14 @@ def pv_annuity_ordinary(rate_pct, n):
 
 
 def pv_annuity_due(rate_pct, n):
+    """Annuity-due factor computed exactly, then rounded once (the batch 16 gate found a $6 error from
+    rounding the ordinary factor first and then multiplying by 1 + i)."""
     i = D(rate_pct) / 100
-    return rd(pv_annuity_ordinary(rate_pct, n) * (D(1) + i), "0.0001")
+    return rd((D(1) - (D(1) + i) ** -n) / i * (D(1) + i), "0.0001")
+
+
+def pc(x):
+    return format(D(x).normalize(), "f")
 
 
 # ── III.C.d — Determine revenue under the five-step model ──────────────────
@@ -148,7 +151,7 @@ def revenue_variable_constraint(p):
     return variant(
         f"""On July 1, Year 1, {co} begins shipping a newly developed sensor to a customer under a multi-year supply contract; the contract price is {m(P)} a unit, and {s} expects to ship about {int(Ntot):,} units over the contract's life. In addition, {s} will earn a {m(B)}-a-unit bonus on every unit shipped in Year 1 if an industry standards board approves the sensor's new calibration method by December 31, Year 1 — a decision {s}'s president calls a coin flip, because the board has never evaluated a method like this one and has given no indication which way it will rule. {s} shipped {int(N):,} units in Year 1. How much revenue should {s} recognize for the units shipped in Year 1?""",
         choices, ans,
-        f"""The {m(P)} base price is unconditional and is recognized as each unit ships: {int(N):,} × {m(P)} = {m(key_v)}. The {m(B)}-a-unit bonus is variable consideration, but the board's decision is highly susceptible to factors outside {s}'s influence and {s} has no relevant experience with a similar method, so including any part of it in the transaction price is excluded under the constraint on estimates of variable consideration (ASC 606-10-32-11 to 32-13) until the board rules. Revenue for Year 1 = {m(key_v)}.""",
+        f"""The {m(P)} base price is unconditional and is recognized as each unit ships: {int(N):,} × {m(P)} = {m(key_v)}. The {m(B)}-a-unit bonus is variable consideration, but the board's decision is highly susceptible to factors outside {s}'s influence and {s} has no relevant experience with a similar method, so it is not probable that including any part of the bonus would avoid a significant revenue reversal; the constraint on estimates of variable consideration (ASC 606-10-32-11 to 32-12) keeps it out of the transaction price until the board rules. A 50% expected value doesn't change that. Revenue for Year 1 = {m(key_v)}.""",
     )
 
 
@@ -170,29 +173,34 @@ def revenue_principal_agent2(p):
     return variant(
         f"""{co} operates a ride-hailing app. Drivers are independent contractors who own their vehicles, decide whether to accept each ride request, and are responsible for safely completing the trip and resolving any problem with it; {s} sets the fare for every ride with its own pricing algorithm and collects the fare from the rider, then pays the driver {100 - int(pct)}% of each fare and keeps the remaining {p['pct']}%. During the month, riders paid total fares of {m(Z)}. {s} also sells its own "Plus" subscription, a flat {m(Sub)} a month for perks that {s} alone provides; {int(Mn):,} riders held active subscriptions during the month. What total revenue should {s} recognize for the month?""",
         choices, ans,
-        f"""An entity is a principal if it controls the good or service before it transfers to the customer; a key indicator is primary responsibility for fulfilling the promise. Here the drivers, not {s}, are responsible for completing each ride and bear the risk of a problem with it, so {s} is an agent for the ride fares even though it sets the price and collects the cash: it recognizes only its {m(commission)} fee ({p['pct']}% × {m(Z)}). The subscription is {s}'s own service, with no other party involved, so it is recognized gross: {m(Sub)} × {int(Mn):,} = {m(sub_rev)}. Total revenue = {m(key_v)}.""",
+        f"""An entity is a principal if it controls the specified service before it is transferred to the customer (ASC 606-10-55-36 to 55-40). The indicators point in different directions here: {s} sets the price, which is a principal indicator, but the drivers decide whether to accept each ride, provide it with their own vehicles and are primarily responsible for completing it and resolving any problem. {s} never directs a driver to perform a ride, so it doesn't control the ride service before the rider receives it; pricing discretion alone doesn't establish control. {s} is therefore an agent for the fares and recognizes only its fee: {p['pct']}% × {m(Z)} = {m(commission)}. The subscription is {s}'s own service, with no other party involved, so it is recognized gross: {m(Sub)} × {int(Mn):,} = {m(sub_rev)}. Total revenue = {m(key_v)}.""",
     )
 
 
 def revenue_royalty_license(p):
     co, s = p["co"], short(p["co"])
     ppct, ppat, pproj = D(p["ppct"]), D(p["ppat"]), D(p["pproj"])
-    F, fpct, fsales = D(p["F"]), D(p["fpct"]), D(p["fsales"])
+    Fy, fpct, fsales = D(p["Fy"]), D(p["fpct"]), D(p["fsales"])
     patent_roy = rd(ppat * ppct / 100)
+    fq = whole(Fy / 4)
     franch_roy = rd(fsales * fpct / 100)
-    key_v = patent_roy + F + franch_roy
+    key_v = patent_roy + fq + franch_roy
+    proj_roy = rd(pproj * ppct / 100)
+    qproj_roy = rd(pproj / 4 * ppct / 100)
+    assert qproj_roy != patent_roy, "a quarter of the projection must not equal actual sales (gate finding)"
     pool = {
-        "estimate_upfront": (m(rd(pproj * ppct / 100) + F + franch_roy), f"Applies the {p['ppct']}% rate to the {m(pproj)} of sales the manufacturer projected for the year when the agreement was signed, instead of the {m(ppat)} actually sold this quarter. A sales-based royalty for a license of intellectual property is recognized only as the underlying sales occur, never estimated in advance (ASC 606-10-55-65)."),
-        "omit_patent": (m(F + franch_roy), f"Leaves out the {m(patent_roy)} patent royalty entirely."),
-        "omit_fixed": (m(patent_roy + franch_roy), f"Leaves out the {m(F)} fixed brand license fee for the quarter."),
-        "gross_no_rate": (m(ppat + F + fsales), f"Adds the full {m(ppat)} and {m(fsales)} of sales to the {m(F)} fee without applying either royalty rate."),
+        "estimate_upfront": (m(proj_roy + fq + franch_roy), f"Recognizes the royalty on the full {m(pproj)} of sales {s} projected for the year, {p['ppct']}% × {m(pproj)} = {m(proj_roy)}, when the license is granted. A sales-based royalty for a license of intellectual property is recognized only as the underlying sales occur (ASC 606-10-55-65)."),
+        "quarter_projection": (m(qproj_roy + fq + franch_roy), f"Estimates the patent royalty from one quarter of the projected sales, {p['ppct']}% × {m(pproj / 4)} = {m(qproj_roy)}, instead of the {m(ppat)} of sales that actually occurred. The royalty is recognized as the sales occur, at the actual amount."),
+        "full_fee": (m(patent_roy + Fy + franch_roy), f"Recognizes the whole {m(Fy)} brand fee when the license is granted. The brand license gives the franchisee access to {s}'s brand as {s} keeps supporting it over the year, so the fixed fee is recognized over the year: {m(fq)} for the quarter."),
+        "omit_patent": (m(fq + franch_roy), f"Leaves out the {m(patent_roy)} patent royalty, as if a license with no fixed fee earned nothing until the year's total is known."),
+        "omit_fixed": (m(patent_roy + franch_roy), f"Leaves out the {m(fq)} share of the fixed brand fee earned in the quarter, as if the fee were unearned until the year ends."),
     }
-    key = (m(key_v), f"Correct. ({p['ppct']}% × {m(ppat)}) + {m(F)} + ({p['fpct']}% × {m(fsales)}).")
+    key = (m(key_v), f"Correct. ({p['ppct']}% × {m(ppat)}) + ({m(Fy)} ÷ 4) + ({p['fpct']}% × {m(fsales)}).")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} licenses two pieces of intellectual property for the quarter. It licenses a patented sensor-calibration process, mature functional technology {s} doesn't plan to update, to a manufacturer in exchange for a {p['ppct']}% royalty on the manufacturer's net sales of products using the process, with no fixed fee and no minimum guarantee; when the agreement was signed, {s} projected those sales would be about {m(pproj)} for the year, but actual sales using the process were {m(ppat)} for the quarter. {s} also licenses its brand name to a franchisee, together with marketing support {s} will keep providing, for a fixed {m(F)} a quarter plus a {p['fpct']}% royalty on the franchisee's sales; franchisee sales for the quarter were {m(fsales)}. How much revenue should {s} recognize for the quarter from these two licenses?""",
+        f"""On January 1, Year 1, {co} granted two licenses. The first lets a manufacturer use {s}'s patented sensor-calibration process, mature technology that {s} doesn't plan to update, for a {p['ppct']}% royalty on the manufacturer's net sales of products using the process, with no fixed fee and no minimum; at signing, {s} projected those sales at about {m(pproj)} for Year 1. The second gives a franchisee the use of {s}'s brand name for Year 1, with marketing support {s} provides evenly throughout the year, for a fixed {m(Fy)} paid at signing plus a {p['fpct']}% royalty on the franchisee's sales. In the first quarter of Year 1, the manufacturer's sales using the process were {m(ppat)} and the franchisee's sales were {m(fsales)}. How much revenue should {s} recognize from the two licenses for the first quarter of Year 1?""",
         choices, ans,
-        f"""Consideration in the form of a sales- or usage-based royalty for a license of intellectual property is recognized only as the underlying sales occur, regardless of whether the license is a right to use (the patent) or a right to access (the brand name, supported by {s}'s ongoing marketing) (ASC 606-10-55-65); {s} doesn't estimate the royalty from its sales projection. Patent royalty = {p['ppct']}% × {m(ppat)} = {m(patent_roy)}. The brand license's fixed fee, {m(F)}, is earned for the quarter, and its royalty = {p['fpct']}% × {m(fsales)} = {m(franch_roy)}. Total revenue = {m(key_v)}.""",
+        f"""A sales- or usage-based royalty for a license of intellectual property is recognized only when the later of the sale occurring and the performance obligation being satisfied takes place (ASC 606-10-55-65), whether the license is a right to use (the patent, functional and not updated) or a right to access (the brand, supported by {s} through the year); {s} doesn't estimate the royalty from its projection. Patent royalty = {p['ppct']}% × {m(ppat)} = {m(patent_roy)}. The brand license is satisfied over the year, so the fixed fee is recognized evenly: {m(Fy)} ÷ 4 = {m(fq)}, and its royalty = {p['fpct']}% × {m(fsales)} = {m(franch_roy)}. Total revenue = {m(key_v)}.""",
     )
 
 
@@ -202,22 +210,23 @@ def revenue_royalty_license(p):
 def contract_costs_scope(p):
     co, s = p["co"], short(p["co"])
     term = 36
-    Cm, Setup = D(p["Cm"]), D(p["S"])
+    Cm, Setup, EQ, INV = D(p["Cm"]), D(p["S"]), D(p["EQ"]), D(p["INV"])
+    mo, off = p["mo"], p["off"]
     total = Cm + Setup
-    key_v = whole(total * (term - p["mo"]) / term)
-    wrong_v = whole(total * (term - p["mo"] - p["off"]) / term)
+    key_v = whole(total * mo / term)
     pool = {
-        "wrong_start": (m(wrong_v), f"Starts amortizing from the {p['sd']} signing date instead of the {p['start']} service start. Amortization of a capitalized contract cost begins when the services to which it relates begin (ASC 340-40-35-1)."),
-        "include_eq": (m(key_v + p["EQ"]), f"Capitalizes the {m(p['EQ'])} of {p['eq']} as a contract cost asset. Property, plant and equipment is within the scope of ASC 360, not ASC 340-40 (ASC 340-40-15-3), even though {s} bought it only for this contract."),
-        "include_inv": (m(key_v + p["INV"]), f"Capitalizes the {m(p['INV'])} of {p['sup']} as a contract cost asset. Materials and supplies to be consumed in performing the services are inventory within the scope of ASC 330 until used, not a contract cost asset."),
-        "no_amort": (m(total), f"Reports the full {m(total)} capitalized, without amortization. Both the commission and the setup labor are amortized consistent with the transfer of the services to which they relate."),
+        "wrong_start": (m(whole(total * (mo + off) / term)), f"Amortizes from the {p['sd']} signing date, {mo + off} months, instead of from {p['start']}, when services began. A contract cost asset is amortized as the services it relates to are transferred (ASC 340-40-35-1), so amortization starts with the services: {mo} months."),
+        "include_eq": (m(whole((total + EQ) * mo / term)), f"Adds the {m(EQ)} of {p['eq']} to the contract cost asset and amortizes it over the contract. Equipment {s} will redeploy after the contract is property, plant and equipment within ASC 360, outside ASC 340-40 (ASC 340-40-15-3), and is depreciated, not amortized as a contract cost."),
+        "include_inv": (m(whole((total + INV) * mo / term)), f"Adds the {m(INV)} of {p['sup']} to the contract cost asset. Supplies used up in performing the services are inventory within ASC 330 until consumed, outside ASC 340-40."),
+        "comm_only": (m(whole(Cm * mo / term)), f"Amortizes only the commission, expensing the {m(Setup)} of configuration labor as incurred. That labor relates directly to this contract, sets up the resources {s} uses to serve the customer, and is recovered through the fees, so it is a capitalized cost to fulfill the contract (ASC 340-40-25-5)."),
+        "setup_only": (m(whole(Setup * mo / term)), f"Amortizes only the configuration labor, expensing the {m(Cm)} commission when paid. A commission owed only because the contract was signed is an incremental cost of obtaining it and is capitalized, since the amortization period exceeds one year (ASC 340-40-25-1 to 25-4)."),
     }
-    key = (m(key_v), f"Correct. ({m(Cm)} + {m(Setup)}) × {term - p['mo']}/{term}.")
+    key = (m(key_v), f"Correct. ({m(Cm)} + {m(Setup)}) × {mo}/{term}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} signed a three-year contract on {p['sd']}, Year 1, to provide outsourced logistics services beginning {p['start']}, Year 1; no renewal is expected. Four amounts went on {s}'s books because of this engagement: a {m(Cm)} commission the salesperson earned only by closing the deal; {m(Setup)} paid for labor configuring the customer's shipment-tracking workflows — work tied specifically to this contract, built to be used for as long as {s} serves this customer, and priced into the fees {s} will collect; {m(p['EQ'])} for {p['eq']} that {s} will dedicate to this customer for now but redeploy to other jobs once the contract ends; and {m(p['INV'])} for {p['sup']} that will be used up in delivering the services. Each capitalized cost is written off evenly by the month, over the span it benefits. What should {s} carry as its contract cost assets under ASC 340-40 at December 31, Year 1?""",
+        f"""On {p['sd']}, Year 1, {co} signed a three-year contract to run a customer's outbound logistics, with services beginning {p['start']}, Year 1, and running 36 months; renewal isn't expected. On signing, {s} paid its salesperson a {m(Cm)} commission on the contract. Before services began, it spent {m(Setup)} on technician labor configuring the customer's shipment-tracking workflows on {s}'s platform; the contract's fee schedule includes a setup charge. {s} also bought {m(EQ)} of {p['eq']} that it will use on this customer's account and move to other jobs when the contract ends, and {m(INV)} of {p['sup']} that will be used up in providing the services. {s} amortizes any capitalized contract cost straight-line by month over the period of the services it relates to. What amortization of contract cost assets should {s} recognize for Year 1?""",
         choices, ans,
-        f"""The commission is an incremental cost of obtaining the contract, and the configuration labor meets the criteria for a cost to fulfill a contract (ASC 340-40-25-1 to 25-8); both are capitalized and amortized from {p['start']}, when the related services begin, over the 36-month term: ({m(Cm)} + {m(Setup)}) × {term - p['mo']}/{term} = {m(key_v)}. The {p['eq']} is property, plant and equipment {s} will use beyond this contract, within the scope of ASC 360 (ASC 340-40-15-3), and the {p['sup']} is inventory within the scope of ASC 330 until consumed; neither is a contract cost asset under ASC 340-40, even though both relate to this contract.""",
+        f"""The commission is an incremental cost of obtaining the contract, and the configuration labor is a cost to fulfill it: it relates directly to the contract, creates resources {s} will use to provide the services, and is recovered through the fees (ASC 340-40-25-1 to 25-8). Both are capitalized, {m(Cm)} + {m(Setup)} = {m(total)}, and amortized over the 36 months of services starting {p['start']} (ASC 340-40-35-1): {m(total)} × {mo}/{term} = {m(key_v)}. The {p['eq']} are property, plant and equipment within ASC 360 and the {p['sup']} are inventory within ASC 330, so neither is a contract cost asset (ASC 340-40-15-3), even though both were bought for this contract.""",
     )
 
 
@@ -227,38 +236,47 @@ def contract_costs_scope(p):
 def nfp_services_asset(p):
     org, s = p["org"], short(p["org"])
     A, C, Dv, E = D(p["A"]), D(p["C"]), D(p["D"]), D(p["E"])
-    key_v = A + C
+    rev, exp = A + C, A
+
+    def ch(r, e):
+        return f"{m(r)} revenue; {m(e)} expense"
+
     pool = {
-        "skip_unskilled": (m(A), f"Omits the {m(C)} shed. Recognizing contributed services that create or enhance a nonfinancial asset doesn't require the volunteers who provide them to have specialized skills (ASC 958-605-25-16)."),
-        "skip_architect": (m(C), f"Omits the architect's {m(A)} design work, a specialized service {s} would otherwise have purchased."),
-        "include_d": (m(A + C + Dv), f"Includes the {m(Dv)} of the database consultant's time helping organize the raffle. Her specialized skill wasn't used in its specialty that day, so those services aren't recognized."),
-        "include_e": (m(A + C + E), f"Includes the {m(E)} of lawn mowing. Routine upkeep needs no specialized skill and doesn't enhance a nonfinancial asset, so it isn't recognized."),
+        "skip_shed": (ch(A, A), f"Omits the {m(C)} of shed assembly. Services that create or enhance a nonfinancial asset are recognized whether or not the people providing them have specialized skills (ASC 958-605-25-16)."),
+        "expense_shed": (ch(A + C, A + C), f"Recognizes the shed assembly as revenue but expenses it. Contributed services that create a nonfinancial asset are capitalized as part of that asset (debit property), so only the technician's {m(A)} is expensed."),
+        "skip_tech": (ch(C, 0), f"Leaves out the piano technician's {m(A)}. Tuning and regulating concert pianos takes a specialized skill she has, and {s} would otherwise have paid for it, so it is recognized (and expensed, since it maintains rather than creates an asset)."),
+        "include_mail": (ch(A + C + Dv, A + Dv), f"Includes the {m(Dv)} of volunteer time stuffing and mailing fundraising letters. That work needs no specialized skill and creates no nonfinancial asset, so it isn't recognized."),
+        "include_lawn": (ch(A + C + E, A + E), f"Includes the {m(E)} of lawn mowing. Routine upkeep needs no specialized skill and creates no nonfinancial asset, so it isn't recognized."),
     }
-    key = (m(key_v), f"Correct. The architect's design work ({m(A)}) and the volunteer-built shed, which enhanced {s}'s property ({m(C)}).")
+    key = (ch(rev, exp), f"Correct. Revenue: technician {m(A)} + shed {m(C)}; the shed labor is capitalized, so only the technician's {m(A)} is expensed.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""During Year 1, {org}, a not-for-profit entity, received these donated services. A volunteer architect designed a new gallery wing, services {s} would otherwise have paid {m(A)} for. A group of volunteers with no construction training built a storage shed from a prefabricated kit, work worth {m(C)} at the rates a handyman service would charge, enhancing {s}'s property even though the volunteers used no specialized skill. A volunteer who is a database consultant spent a day helping organize {s}'s annual raffle, time worth {m(Dv)} at her usual consulting rate, work that didn't call on her database expertise. Other volunteers mowed {s}'s lawn throughout the year, time worth {m(E)} at local wage rates. What amount should {s} recognize as contributed services revenue for Year 1?""",
+        f"""During Year 1, {org}, a not-for-profit entity, received these donated services. A professional piano technician tuned and regulated the center's two concert pianos, work {s} would otherwise have paid {m(A)} for. A group of volunteers assembled a prefabricated storage shed, from a kit {s} bought, on a slab behind the building, labor worth {m(C)} at the rates a handyman service would charge. Volunteers stuffed and mailed {s}'s fundraising letters, time worth {m(Dv)} at local wage rates. Other volunteers mowed {s}'s lawn throughout the year, time worth {m(E)} at local wage rates. Ignoring depreciation, what amounts should {s} recognize for these services in Year 1 as contribution revenue and as expense?""",
         choices, ans,
-        f"""Contributed services are recognized if they (a) create or enhance a nonfinancial asset, whether or not the people providing them have specialized skills, or (b) require specialized skills, are provided by people with those skills, and would typically need to be purchased if not donated (ASC 958-605-25-16). The architect's design work meets both tests ({m(A)}); the shed meets only the first, but that is enough ({m(C)}). The consultant's specialized skill wasn't used in its specialty, and routine lawn care needs no special skill and creates no asset, so neither is recognized. Contributed services revenue = {m(key_v)}.""",
+        f"""Contributed services are recognized if they (a) create or enhance a nonfinancial asset, or (b) require specialized skills, are provided by people with those skills, and would typically need to be purchased if not donated (ASC 958-605-25-16). The technician's work meets (b) and maintains existing assets, so it is revenue and expense of {m(A)}. The shed labor meets (a), whatever the volunteers' skills: revenue of {m(C)}, debited to the shed rather than to expense. Mailing letters and mowing meet neither test and aren't recognized. Revenue = {m(A)} + {m(C)} = {m(rev)}; expense = {m(exp)}.""",
     )
 
 
-def nfp_services_three(p):
+def nfp_services_construction(p):
     org, s = p["org"], short(p["org"])
-    A, B, C, Dv, E = D(p["A"]), D(p["B"]), D(p["C"]), D(p["D"]), D(p["E"])
-    key_v = A + B + C
+    cash, A, P, Cv = D(p["cash"]), D(p["A"]), D(p["P"]), D(p["Cv"])
+    cip, rev = cash + A + P, A + P
+
+    def ch(c, r):
+        return f"{m(c)} construction in progress; {m(r)} revenue"
+
     pool = {
-        "omit_interp": (m(A + B), f"Leaves out the {m(C)} interpreter. Translating for attendees at the fair uses her specialized skill, which {s} would otherwise have paid an agency for, so it meets the second recognition test."),
-        "include_d": (m(A + B + C + Dv), f"Includes the {m(Dv)} of front-desk volunteers. Answering phones needs no specialized skill and creates no nonfinancial asset."),
-        "include_e": (m(A + B + C + E), f"Includes the {m(E)} of the board member's time. Reviewing financial reports as a board member is governance, not the specialized skill {s} would otherwise purchase."),
-        "omit_plumb": (m(A + C), f"Leaves out the {m(B)} kitchen renovation. The plumbers' work enhanced a nonfinancial asset, {s}'s kitchen, which is recognized whether or not the volunteers had a specialized skill."),
+        "omit_aff": (ch(cash + A, A), f"Leaves out the project manager's {m(P)}. Services from an affiliate's personnel that directly benefit {s} are recognized, and her supervision of the construction also creates a nonfinancial asset, so the services are recognized as revenue and capitalized into the building."),
+        "expense_aff": (ch(cash + A, A + P), f"Recognizes the project manager's {m(P)} as revenue but expenses it instead of capitalizing it. Supervising the construction is part of the cost of creating the building, so it is added to construction in progress, as the architect's drawings are."),
+        "expense_all": (ch(cash, rev), f"Recognizes the donated services as revenue but expenses them, so construction in progress holds only the {m(cash)} paid to the contractor. Contributed services that create a nonfinancial asset are capitalized into that asset."),
+        "include_cer": (ch(cip + Cv, rev + Cv), f"Includes the {m(Cv)} of volunteer time at the groundbreaking ceremony. Handing out programs needs no specialized skill and creates no asset, so it isn't recognized."),
     }
-    key = (m(key_v), f"Correct. Dentist ({m(A)}) + kitchen renovation ({m(B)}) + interpreter ({m(C)}).")
+    key = (ch(cip, rev), f"Correct. Construction in progress = {m(cash)} + {m(A)} + {m(P)}; revenue = {m(A)} + {m(P)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""During Year 1, {org}, a not-for-profit entity, received these donated services. A volunteer dentist provided free dental care at {s}'s clinic, care {s} would otherwise have paid a local practice {m(A)} for. Volunteer plumbers, tradespeople who normally charge for their work, renovated {s}'s community kitchen, replacing its fixtures and layout, labor worth {m(B)}. A professional interpreter translated for non-English-speaking families at {s}'s one-day benefits fair, work {s} would otherwise have hired an agency to do, valued at {m(C)} at her usual rate. Other volunteers answered phones at {s}'s front desk, time worth {m(Dv)} at local wage rates. A retired engineer who serves on {s}'s board spent time reviewing {s}'s financial reports at board meetings, time valued at {m(E)} at her former consulting rate. What amount should {s} recognize as contributed services revenue for Year 1?""",
+        f"""During Year 1, {org}, a not-for-profit entity, began building a clinic, which it will finish in Year 2. It paid its general contractor {m(cash)} for work through December 31. A licensed architect donated the clinic's design drawings, work her firm would normally bill at {m(A)}. {s}'s affiliate, a regional hospital, assigned one of its construction project managers to oversee the clinic's construction part-time from March through December; the hospital kept paying her and charged {s} nothing, and her pay and benefits for that time, {m(P)}, are about what an outside construction manager would have charged. Neighborhood volunteers handed out programs and served refreshments at the groundbreaking ceremony, time worth {m(Cv)} at local wage rates. What should {s} report at December 31, Year 1, as construction in progress, and as contribution revenue from contributed services for Year 1?""",
         choices, ans,
-        f"""Contributed services are recognized if they (a) create or enhance a nonfinancial asset, or (b) require specialized skills, are provided by people with those skills, and would typically need to be purchased if not donated (ASC 958-605-25-16). The dentist's care meets test (b) ({m(A)}); the plumbers' renovation enhances {s}'s kitchen, meeting test (a) regardless of their skill ({m(B)}); the interpreter's specialized skill is used in its specialty and {s} would otherwise have hired an agency, meeting test (b) ({m(C)}). Front-desk volunteers need no specialized skill and create no asset, and the engineer is exercising board governance, not the specialized skill {s} would otherwise purchase. Contributed services revenue = {m(key_v)}.""",
+        f"""The architect's drawings require specialized skills {s} would otherwise buy, and both they and the project manager's supervision create a nonfinancial asset, the clinic (ASC 958-605-25-16). Services that an affiliate's personnel provide and that directly benefit {s} are also recognized (ASC 958-605-25, as amended by ASU 2013-06), measured here at {m(P)}, the hospital's cost, which is about their fair value. Each is recognized as contribution revenue and, because it creates the building, capitalized: construction in progress = {m(cash)} + {m(A)} + {m(P)} = {m(cip)}; revenue = {m(A)} + {m(P)} = {m(rev)}. The ceremony volunteers' time needs no specialized skill and creates no asset, so it isn't recognized.""",
     )
 
 
@@ -267,21 +285,20 @@ def nfp_services_three(p):
 
 def nfp_contributions_current(p):
     org, s = p["org"], short(p["org"])
-    P, Mv, R, V, Vb = D(p["P"]), D(p["M"]), D(p["R"]), D(p["V"]), D(p["Vb"])
-    disc = D(p["disc"])
-    key_v = P + Mv + V
+    P, Mv, R, L = D(p["P"]), D(p["M"]), D(p["R"]), D(p["L"])
+    key_v = P + Mv + L
     pool = {
-        "pv_short": (m(rd(P * disc) + Mv + V), f"Discounts the {m(P)} promise by a present value factor even though it is due in 60 days, within {s}'s operating cycle. An unconditional promise collectible currently is recognized at the amount expected to be collected, without discounting (ASC 958-605-30-7)."),
-        "include_r": (m(key_v + R), f"Includes the {m(R)} foundation pledge. It is conditioned on a measurable barrier, opening the satellite clinic, that {s} hasn't yet overcome, so it isn't revenue yet."),
-        "book_vehicle": (m(P + Mv + Vb), f"Records the van at the donor's {m(Vb)} carrying amount. Contributed nonfinancial assets are measured at their fair value when received, {m(V)}."),
-        "omit_inv": (m(P + V), f"Leaves out the {m(Mv)} of donated medical supplies, as if giving them away later means {s} recognizes no contribution now. Contributed goods are recognized at fair value when received, even though {s} will distribute them."),
+        "include_r": (m(key_v + R), f"Includes the {m(R)} foundation pledge. The foundation pays only if {s} opens the satellite clinic by June 30, Year 2, and has the right not to pay otherwise; until that barrier is overcome the promise is conditional and isn't recognized (ASC 958-605-25)."),
+        "omit_inv": (m(P + L), f"Leaves out the {m(Mv)} of donated medical supplies. Contributed nonfinancial assets are recognized at fair value when received (ASC 958-605-30)."),
+        "omit_forgive": (m(P + Mv), f"Leaves out the {m(L)} loan the donor forgave. A donor's voluntary cancellation of a liability is a contribution (ASC 958-605-20, definition of a contribution), recognized when the liability is cancelled."),
+        "omit_promise": (m(Mv + L), f"Leaves out the {m(P)} promise because no cash had arrived by year-end. An unconditional promise to give is recognized as revenue and a receivable when it is received (ASC 958-605-25)."),
     }
-    key = (m(key_v), f"Correct. {m(P)} (not discounted) + {m(Mv)} + {m(V)}.")
+    key = (m(key_v), f"Correct. {m(P)} + {m(Mv)} + {m(L)}; the conditional pledge isn't recognized.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""During Year 1, {org}, a not-for-profit entity, received the following. A donor signed an unconditional promise to pay {s} {m(P)} within 60 days, collectible in the ordinary course of {s}'s operations. A local pharmaceutical distributor donated medical supplies for {s} to distribute to patients, with a fair value of {m(Mv)}. A regional foundation pledged {m(R)}, payable only if {s} opens a satellite clinic by a specified date, a measurable barrier {s} hasn't yet overcome. A donor gave {s} a used van for transporting patients, with a fair value of {m(V)}, which was carried on the donor's own books at {m(Vb)}. What total contribution revenue should {s} recognize for Year 1?""",
+        f"""During Year 1, {org}, a not-for-profit entity, had the following transactions. In December, a donor signed an unconditional promise to pay {s} {m(P)} within 60 days. A pharmaceutical distributor donated medical supplies for use in {s}'s patient-care programs, with a fair value of {m(Mv)}. A regional foundation pledged {m(R)}, which it will pay only if {s} opens a satellite clinic by June 30, Year 2; construction of the clinic hasn't begun. In Year 0, a supporter had lent {s} {m(L)} at a market rate of interest; in December, Year 1, with all interest paid to date, she notified {s} in writing that she was cancelling the loan. {s} measures promises to give that are due within one year at the amount it expects to collect, and expects to collect this one in full. What total contribution revenue should {s} recognize for Year 1?""",
         choices, ans,
-        f"""An unconditional promise to give that is collectible currently is recognized at the amount expected to be collected, with no present value discount (ASC 958-605-30-7): {m(P)}. The medical supplies and the van are contributed nonfinancial assets, measured at fair value when received rather than the donor's carrying amount: {m(Mv)} and {m(V)}. The foundation's pledge depends on a measurable barrier {s} hasn't overcome, so it isn't revenue until the barrier is met. Contribution revenue = {m(P)} + {m(Mv)} + {m(V)} = {m(key_v)}.""",
+        f"""The unconditional promise is recognized when received, at the {m(P)} {s} expects to collect, its stated measurement for promises due within one year (ASC 958-310-35; ASC 958-605-30). The supplies are contributed nonfinancial assets, recognized at fair value: {m(Mv)}. A donor's cancellation of a liability is a contribution (ASC 958-605-20), so the forgiven loan adds {m(L)}. The foundation's pledge depends on a barrier {s} hasn't overcome, opening the clinic, with a right for the foundation not to pay, so it is conditional and isn't recognized until the condition is met (ASC 958-605-25). Contribution revenue = {m(P)} + {m(Mv)} + {m(L)} = {m(key_v)}.""",
     )
 
 
@@ -291,9 +308,11 @@ def nfp_contributions_current(p):
 def fv_in_use(p):
     co, s = p["co"], short(p["co"])
     scrap, new_cost, phys, func = D(p["scrap"]), D(p["new_cost"]), D(p["phys"]), D(p["func"])
+    Lin, Lsep = D(p["Lin"]), D(p["Lsep"])
+    assert Lin > Lsep
     key_v = new_cost - phys - func
     pool = {
-        "scrap": (m(scrap), f"Uses the {m(scrap)} the {p['asset']} would bring sold apart from the line, for parts or scrap. That is its value on an in-exchange (standalone) premise, which applies only if a standalone sale maximized its value; here using it within the line does."),
+        "scrap": (m(scrap), f"Uses the {m(scrap)} a dealer would pay for the {p['asset']} on its own. That is its value on a standalone (in-exchange) basis, but the line is worth more installed and working ({m(Lin)}) than sold piece by piece ({m(Lsep)}), so highest and best use is in combination with the line's other assets."),
         "no_func": (m(new_cost - phys), f"Deducts only physical deterioration. Functional obsolescence, the {m(func)} newer models' extra speed is worth, is also deducted in a cost approach."),
         "no_phys": (m(new_cost - func), f"Deducts only functional obsolescence. Physical deterioration, {m(phys)}, is also deducted in a cost approach."),
         "gross_new": (m(new_cost), f"Uses the {m(new_cost)} cost of a new substitute without any deduction for deterioration or obsolescence."),
@@ -301,14 +320,10 @@ def fv_in_use(p):
     key = (m(key_v), f"Correct. {m(new_cost)} − {m(phys)} − {m(func)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} owns a specialized {p['asset']} that is part of an integrated production line; used together with the line's other equipment, which market participants could also acquire, the {p['asset']} lets the whole line run at its highest and best use, generating far more value in combination than any single piece would generate alone. No active market exists for secondhand {p['asset']}s identical to this one, and sold apart from the line, for parts or scrap, it would bring only {m(scrap)}. {s}'s appraiser instead estimates what it would cost currently to construct a new substitute {p['asset']} of comparable utility, {m(new_cost)}, and reduces that amount by {m(phys)} of physical deterioration and {m(func)} of functional obsolescence, because newer models run faster. What is the fair value of the {p['asset']}?""",
+        f"""{co} owns a specialized {p['asset']} that is part of an integrated {p['line']} line. A market participant buying the whole line, installed and running, would pay about {m(Lin)} for it; sold off one machine at a time, the line's machines would bring only about {m(Lsep)} in total, and the {p['asset']} on its own would bring {m(scrap)} from a dealer, for parts. No active market exists for secondhand {p['asset']}s like this one, so {s}'s appraiser estimates the current cost to construct a new substitute {p['asset']} of comparable utility, {m(new_cost)}, and reduces it by {m(phys)} of physical deterioration and {m(func)} of functional obsolescence, because newer models run faster. What is the fair value of the {p['asset']} under ASC 820?""",
         choices, ans,
-        f"""Fair value of a nonfinancial asset reflects its highest and best use by market participants, which may be in combination with other assets as a group (an in-use premise) rather than on a standalone basis (in-exchange), when using it that way maximizes its value and the complementary assets are available to market participants (ASC 820-10-35-10 to 35-14). Because the {p['asset']} is worth more used within the line, fair value is measured on the in-use premise, here estimated with a cost approach: {m(new_cost)} − {m(phys)} − {m(func)} = {m(key_v)}. The {m(scrap)} standalone price is its in-exchange value, which would govern only if a standalone sale maximized its value instead.""",
+        f"""Fair value of a nonfinancial asset reflects its highest and best use by market participants, which may be in combination with other assets as a group rather than on a standalone basis (ASC 820-10-35-10A to 35-10E). Market participants would pay more for the working line ({m(Lin)}) than for its machines sold separately ({m(Lsep)}), and they can acquire the complementary machines with it, so the {p['asset']}'s highest and best use is in combination with the line. Its fair value is then measured assuming it is used with those assets, here with a cost approach (ASC 820-10-55-3D): {m(new_cost)} − {m(phys)} − {m(func)} = {m(key_v)}. The {m(scrap)} standalone price would govern only if a standalone sale maximized its value.""",
     )
-
-
-def pc(x):
-    return format(D(x).normalize(), "f")
 
 
 def fv_liability_nonperformance(p):
@@ -321,18 +336,17 @@ def fv_liability_nonperformance(p):
     extra_f = pv_single(D(p["rf"]) + D(p["r"]), n + 1)
     key_v = whole(rd(face * key_f))
     pool = {
-        "risk_free_only": (m(whole(rd(face * rf_f))), f"Discounts at the {p['rf']}% risk-free rate alone, leaving out {s}'s own nonperformance risk. Fair value of a liability must include the effect of the reporting entity's own credit standing (ASC 820-10-35-16 to 35-17A)."),
-        "counterparty": (m(whole(rd(face * comp_f))), f"Uses the {p['r2']}% premium a stronger prospective buyer of {s} said it would need. Fair value reflects {s}'s own nonperformance risk as the obligor, not a third party's stronger credit standing, because {s} hasn't transferred the obligation."),
-        "stale": (m(whole(rd(face * stale_f))), f"Uses the {p['stale']}% premium that applied before {s}'s downgrade. Nonperformance risk is measured at {s}'s credit standing as of the measurement date, not an earlier one."),
-        "undiscounted": (m(face), f"Reports the {m(face)} face amount with no discount for the time value of money."),
-        "extra_year": (m(whole(rd(face * extra_f))), f"Discounts the obligation as if it were payable in {n + 1} years instead of {n}, one year too many."),
+        "risk_free_only": (m(whole(rd(face * rf_f))), f"Discounts at the {p['rf']}% risk-free rate alone ({m(face)} × {rf_f}), leaving out {s}'s own nonperformance risk. Fair value of a liability includes the effect of the reporting entity's own credit standing (ASC 820-10-35-17)."),
+        "counterparty": (m(whole(rd(face * comp_f))), f"Uses the {p['r2']}% premium a stronger prospective buyer of {s} said it would need ({m(face)} × {comp_f}). Fair value reflects {s}'s own nonperformance risk as the obligor, not a third party's stronger credit standing, because {s} hasn't transferred the obligation."),
+        "stale": (m(whole(rd(face * stale_f))), f"Uses the {p['stale']}% premium that applied before {s}'s downgrade ({m(face)} × {stale_f}). Nonperformance risk is measured at {s}'s credit standing as of the measurement date, not an earlier one."),
+        "extra_year": (m(whole(rd(face * extra_f))), f"Discounts the obligation for {n + 1} years instead of {n} ({m(face)} × {extra_f}), one year too many."),
     }
     key = (m(key_v), f"Correct. {m(face)} discounted {n} years at {pc(D(p['rf']) + D(p['r']))}% ({p['rf']}% risk-free + {p['r']}% for {s}'s own nonperformance risk).")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} must measure the fair value of a {m(face)} obligation it owes a counterparty, payable in a lump sum in {n} years, assuming the obligation is transferred to a market participant of comparable credit standing. The risk-free rate for a {n}-year term is {p['rf']}%. Because of a recent downgrade, market participants would require a {p['r']}% premium for {s}'s own nonperformance risk as of the measurement date; before the downgrade, that premium was only {p['stale']}%. A prospective buyer of {s} with a stronger credit profile said it would need only a {p['r2']}% premium for the same obligation, but {s} itself hasn't transferred the obligation to that buyer. What is the fair value of {s}'s obligation?""",
+        f"""{co} must measure the fair value of a {m(face)} obligation it owes a counterparty, payable in a lump sum in {n} years, assuming the obligation is transferred to a market participant of comparable credit standing. The risk-free rate for a {n}-year term is {p['rf']}%. Because of a recent downgrade, market participants would require a {p['r']}% premium for {s}'s own nonperformance risk as of the measurement date; before the downgrade, that premium was only {p['stale']}%. A prospective buyer of {s} with a stronger credit profile said it would need only a {p['r2']}% premium for the same obligation, but {s} itself hasn't transferred the obligation to that buyer. Using present value factors rounded to four decimal places, what is the fair value of {s}'s obligation?""",
         choices, ans,
-        f"""Fair value of a liability assumes transfer to a market participant of comparable credit standing and must include the effect of the reporting entity's own nonperformance risk, including its own credit risk, measured as of the measurement date — not a stronger counterparty's credit standing and not a stale, pre-downgrade spread (ASC 820-10-35-16 to 35-17A). The discount rate is {p['rf']}% risk-free + {p['r']}% for {s}'s own current nonperformance risk = {pc(D(p['rf']) + D(p['r']))}%. Fair value = {m(face)} × {key_f} = {m(key_v)}.""",
+        f"""Fair value of a liability assumes transfer to a market participant of comparable credit standing (ASC 820-10-35-16) and includes the effect of the reporting entity's own nonperformance risk, including its own credit risk, measured as of the measurement date and assumed to be the same before and after the transfer (ASC 820-10-35-17 to 35-18) — not a stronger counterparty's credit standing and not a stale, pre-downgrade spread. The discount rate is {p['rf']}% risk-free + {p['r']}% for {s}'s own current nonperformance risk = {pc(D(p['rf']) + D(p['r']))}%. Fair value = {m(face)} × {key_f} = {m(key_v)}.""",
     )
 
 
@@ -349,17 +363,17 @@ def lessee_third_party_rvg(p):
     liab = rd(pay * af)
     key_v = whole(liab + idc)
     pool = {
-        "include_g": (m(whole(liab + rd(g * sf) + idc)), f"Adds {m(g)} × {sf} = {m(rd(g * sf))} for the insurer's residual value guarantee. A residual value guarantee by a party unrelated to {s} isn't a lease payment, no matter how likely it is to be paid (ASC 842-10-15-30 to 15-35); only a guarantee by the lessee or a party related to the lessee is included."),
-        "half_g": (m(whole(liab + rd(g * sf / 2) + idc)), f"Includes half of {m(g)} × {sf}, as if only the probable part of the insurer's guarantee counted. The guarantee is excluded entirely because an unrelated third party made it, not because of how likely it is to be paid."),
-        "omit_idc": (m(whole(liab)), f"Leaves out the {m(idc)} of initial direct costs, which {s} adds to the right-of-use asset."),
-        "wrong_annuity": (m(whole(rd(pay * af_due) + idc)), f"Discounts the payments as an annuity due. Payments are due at the end of each year, so the ordinary annuity factor applies."),
+        "include_g": (m(whole(liab + rd(g * sf) + idc)), f"Adds {m(g)} × {sf} = {m(rd(g * sf))} for {p['ins']}'s residual value guarantee. Lease payments include only amounts probable of being owed by the lessee under a residual value guarantee (ASC 842-10-30-5(f)); {s} owes nothing under insurance the lessor bought from an unrelated insurer."),
+        "undiscounted_g": (m(whole(liab + g + idc)), f"Adds the full {m(g)} guarantee, undiscounted. {s} owes nothing under the insurer's guarantee, so it isn't a lease payment at all (ASC 842-10-30-5(f))."),
+        "omit_idc": (m(whole(liab)), f"Leaves out the {m(idc)} broker commission. A commission owed only because the lease was signed is an initial direct cost, added to the right-of-use asset (ASC 842-20-30-5)."),
+        "wrong_annuity": (m(whole(rd(pay * af_due) + idc)), f"Discounts the payments as an annuity due ({m(pay)} × {af_due}). Payments are due at the end of each year, so the ordinary annuity factor applies."),
     }
     key = (m(key_v), f"Correct. {m(pay)} × {af} = {m(liab)}, + {m(idc)} of initial direct costs.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""On January 1, Year 1, {co} leases {p['asset']}, which has no alternative use to the lessor at the end of the term, for {n} years and classifies the lease as a finance lease. Payments of {m(pay)} are due each December 31. An insurance company unrelated to {s} — not {s} itself and not a party related to {s} — has separately guaranteed the lessor a residual value of {m(g)} for the equipment at lease end. {s} paid {m(idc)} at commencement, an incremental cost of obtaining the lease. The rate implicit in the lease isn't readily determinable, and {s}'s incremental borrowing rate is {i}%. What amount should {s} initially recognize as its right-of-use asset?""",
+        f"""On January 1, Year 1, {co} leases {p['asset']} for {n} years and classifies the lease as a finance lease. Payments of {m(pay)} are due each December 31. The lessor separately bought residual value insurance from {p['ins']}, which guarantees the lessor {m(g)} for the equipment at lease end. {s} paid a {m(idc)} broker commission, due only because the lease was signed. The rate implicit in the lease isn't readily determinable, and {s}'s incremental borrowing rate is {i}%; present value factors at {i}% for {n} periods are {af} for an ordinary annuity, {af_due} for an annuity due and {sf} for a single sum. What amount should {s} initially recognize as its right-of-use asset?""",
         choices, ans,
-        f"""Lease payments include an amount probable of being owed under a residual value guarantee only when the lessee or a party related to the lessee made the guarantee; a guarantee by an unrelated third party, such as the insurer here, isn't a lease payment at all (ASC 842-10-15-30 to 15-35), whatever its amount or probability. The lease liability is the present value of the payments: {m(pay)} × {af} = {m(liab)}. The right-of-use asset adds the {m(idc)} of initial direct costs {s} paid: {m(liab)} + {m(idc)} = {m(key_v)}.""",
+        f"""Lease payments include amounts probable of being owed by the lessee under a residual value guarantee (ASC 842-10-30-5(f)). The guarantee here is insurance the lessor bought from {p['ins']}; {s} isn't a party to it and owes nothing under it, so it isn't a lease payment, whatever its amount. The lease liability is the present value of the payments, due at year-end: {m(pay)} × {af} = {m(liab)}. The right-of-use asset adds the {m(idc)} commission, an initial direct cost (ASC 842-20-30-5): {m(liab)} + {m(idc)} = {m(key_v)}.""",
     )
 
 
@@ -372,17 +386,17 @@ def lessee_riskfree_deposit(p):
     full = rd(pay * af_due)
     key_v = whole(full - pay)
     pool = {
-        "full_annuity": (m(whole(full)), f"Doesn't deduct the {m(pay)} payment {s} made at commencement. That payment reduces the liability at once."),
-        "add_sd": (m(whole(full - pay + sd)), f"Adds the {m(sd)} security deposit to the liability. The deposit is refundable and isn't rent, so it is a separate deposit asset, not a lease payment (ASC 842-10-15)."),
+        "full_annuity": (m(whole(full)), f"Doesn't deduct the {m(pay)} Year 1 rent paid at commencement ({m(pay)} × {af_due} = {m(full)}). The lease liability is the present value of payments not yet made."),
+        "add_sd": (m(whole(full - pay + sd)), f"Adds the {m(sd)} security deposit to the liability. A refundable deposit isn't a lease payment (ASC 842-10-30-5); it is a separate receivable from the landlord."),
         "subtract_sd": (m(whole(full - pay - sd)), f"Subtracts the {m(sd)} security deposit from the liability instead of recording it as a separate asset."),
-        "ordinary_af": (m(whole(rd(pay * af_ord))), f"Discounts the payments with the ordinary annuity factor, {af_ord}, as if each payment were due at year end. Payments here are due at the start of each year, including at commencement."),
+        "ordinary_af": (m(whole(rd(pay * af_ord))), f"Discounts all {n} payments with the ordinary annuity factor ({m(pay)} × {af_ord}), as if each were due at year-end. Rent is paid in advance, and the first payment has already been made."),
     }
     key = (m(key_v), f"Correct. {m(pay)} × {af_due} = {m(full)}, less the {m(pay)} paid at commencement.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}, a private company that has elected the risk-free rate practical expedient for all its asset classes (ASC 842-20-30-3), leases warehouse space for {n} years under an operating lease. Annual payments of {m(pay)} are due each January 1, beginning at commencement, and {s} made the first payment on January 1, Year 1. {s} also paid the landlord a refundable security deposit of {m(sd)} at commencement, which isn't rent and will be returned, undamaged space permitting, when the lease ends. The risk-free rate for a {n}-year lease term is {rf}%, which {s} uses instead of determining a rate implicit in the lease or its own incremental borrowing rate. What amount should {s} initially measure as its lease liability, immediately after the first payment?""",
+        f"""{co}, a private company, leases warehouse space for {n} years under an operating lease that begins January 1, Year 1. Rent is {m(pay)} a year, payable in advance each January 1, and {s} paid the Year 1 rent when the lease began. At commencement, {s} also gave the landlord a {m(sd)} security deposit, which comes back at the end of the lease if the space is returned undamaged. The rate implicit in the lease isn't readily determinable. For its real estate leases, {s} has elected to discount lease payments at a risk-free rate, which for a {n}-year term is {rf}%; present value factors at {rf}% for {n} periods are {af_due} for an annuity due and {af_ord} for an ordinary annuity. What lease liability should {s} report immediately after paying the Year 1 rent?""",
         choices, ans,
-        f"""As a private company, {s} may elect to discount its leases at a risk-free rate instead of determining its incremental borrowing rate (ASC 842-20-30-3), which it has done here. The security deposit is refundable and isn't rent, so it is recognized as a separate deposit asset, not part of the lease liability. Because payments are due at the start of each period, the liability uses an annuity-due factor: {m(pay)} × {af_due} = {m(full)}, less the {m(pay)} paid at commencement, leaving {m(key_v)}.""",
+        f"""A lessee uses the rate implicit in the lease whenever it is readily determinable; when it isn't, a private company may elect, by class of underlying asset, to use a risk-free rate instead of its incremental borrowing rate (ASC 842-20-30-3, as amended by ASU 2021-09). {s} made that election for real estate, so it discounts at {rf}%. A refundable security deposit isn't a lease payment (ASC 842-10-30-5); it is a separate receivable. Rent is paid in advance, so the {n} payments are an annuity due: {m(pay)} × {af_due} = {m(full)}, less the {m(pay)} already paid, leaves {m(key_v)}.""",
     )
 
 
@@ -392,26 +406,43 @@ def lessee_riskfree_deposit(p):
 def lessee_purchase_option_cost(p):
     co, s = p["co"], short(p["co"])
     n, u, i = p["n"], p["u"], D(p["i"])
-    liab, pay = D(p["liab"]), D(p["pay"])
-    interest1 = rd(liab * i)
-    principal1 = pay - interest1
-    bal1 = liab - principal1
-    interest2 = rd(bal1 * i)
-    amort_correct = whole(rd(liab / u))
-    amort_wrong = whole(rd(liab / n))
-    key_v = interest2 + amort_correct
+    pay, opt, fvexp, idc = D(p["pay"]), D(p["opt"]), D(p["fvexp"]), D(p["idc"])
+    assert fvexp >= 3 * opt
+    af, sf = pv_annuity_ordinary(i, n), pv_single(i, n)
+    r = i / 100
+
+    def sched(liab):
+        int1 = rd(liab * r)
+        bal1 = liab - (pay - int1)
+        return int1, bal1, rd(bal1 * r)
+
+    pv_pay, pv_opt = rd(pay * af), rd(opt * sf)
+    liab = pv_pay + pv_opt
+    int1, bal1, int2 = sched(liab)
+    rou = liab + idc
+    amort = rd(rou / u)
+    # the liability must roll forward to the option price (gate: the old version's liability was impossible)
+    bal = liab
+    for _ in range(n):
+        bal = bal + rd(bal * r) - pay
+    assert abs(bal - opt) < 25, f"{co}: liability rolls to {bal}, not the {opt} option price"
+    _, _, int2_no = sched(pv_pay)
+
+    def ch(a, b):
+        return f"{m(a)} interest; {m(b)} amortization"
+
     pool = {
-        "term_amort": (m(interest2 + amort_wrong), f"Amortizes the right-of-use asset over the {n}-year lease term, {m(liab)} ÷ {n} = {m(amort_wrong)}. Because the purchase option is reasonably certain to be exercised, {s} amortizes it over the equipment's {u}-year useful life instead (ASC 842-20-25-4 to 25-6)."),
-        "only_interest": (m(interest2), f"Includes only interest. A finance lease also amortizes the right-of-use asset."),
-        "only_amort": (m(amort_correct), f"Includes only amortization. A finance lease also has interest expense."),
-        "wrong_year": (m(interest1 + amort_correct), f"Uses Year 1 interest, {m(interest1)}, instead of reducing the liability for the Year 1 principal payment first."),
+        "term_amort": (ch(int2, rd(rou / n)), f"Amortizes the right-of-use asset over the {n}-year lease term, {m(rou)} ÷ {n}. A {m(opt)} option on a machine expected to be worth {m(fvexp)} makes exercise reasonably certain, so the asset is amortized over the {u}-year useful life (ASC 842-20-35-8)."),
+        "no_option": (ch(int2_no, rd((pv_pay + idc) / n)), f"Leaves the purchase option out of the lease payments, measuring the liability at {m(pv_pay)}, and so amortizes over the {n}-year term. With the option priced far below the machine's expected value, exercise is reasonably certain, so the {m(opt)} price is a lease payment (ASC 842-10-30-5(c)) and the asset is amortized over its useful life."),
+        "omit_idc": (ch(int2, rd(liab / u)), f"Amortizes only the {m(liab)} lease liability, leaving the {m(idc)} of initial direct costs out of the right-of-use asset (ASC 842-20-30-5)."),
+        "year1_interest": (ch(int1, amort), f"Uses Year 1 interest, {m(liab)} × {pc(i)}%, instead of interest on the {m(bal1)} balance after the Year 1 payment."),
     }
-    key = (m(key_v), f"Correct. Year 2 interest {m(interest2)} on a {m(bal1)} opening liability, plus {m(amort_correct)} of amortization over the equipment's {u}-year useful life.")
+    key = (ch(int2, amort), f"Correct. Interest {m(bal1)} × {pc(i)}% = {m(int2)}; amortization ({m(liab)} + {m(idc)}) ÷ {u} = {m(amort)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""On January 1, Year 1, {co} leases {p['asset']} under a lease it classifies as a finance lease. The lease term is {n} years, but the equipment's total useful life is {u} years, and the lease grants {s} an option to purchase the equipment at a price so far below its expected fair value at that date that {s} is reasonably certain to exercise it. The lease liability at commencement is {m(liab)} (rounded), the annual payment of {m(pay)} is due each December 31, and the discount rate is {i * 100}%. {s} amortizes the right-of-use asset straight-line. What total lease-related expense does {s} recognize in Year 2?""",
+        f"""On January 1, Year 1, {co} leases {p['asset']} for {n} years and classifies the lease as a finance lease. Payments of {m(pay)} are due each December 31. The lease lets {s} buy the {p['short']} at the end of Year {n} for {m(opt)}; {s} expects it to be worth about {m(fvexp)} then, and the {p['short']} has a total useful life of {u} years with no residual value. {s} paid {m(idc)} of initial direct costs at commencement. The rate implicit in the lease isn't readily determinable, and {s}'s incremental borrowing rate is {pc(i)}%; present value factors at {pc(i)}% for {n} periods are {af} for an ordinary annuity and {sf} for a single sum. {s} amortizes right-of-use assets straight-line. Rounding each computation to the nearest dollar, what interest expense and what amortization expense should {s} recognize on the lease for Year 2?""",
         choices, ans,
-        f"""Because the purchase option is reasonably certain to be exercised, {s} expects to own the equipment after the lease, so it amortizes the right-of-use asset over the equipment's {u}-year useful life rather than the {n}-year lease term (ASC 842-20-25-4 to 25-6): {m(liab)} ÷ {u} = {m(amort_correct)}. Year 1: interest {m(interest1)}, principal reduction {m(principal1)}, ending liability {m(bal1)}. Year 2 interest = {m(bal1)} × {i * 100}% = {m(interest2)}. Total Year 2 expense = {m(interest2)} + {m(amort_correct)} = {m(key_v)}.""",
+        f"""An option to buy for {m(opt)} an asset expected to be worth {m(fvexp)} gives {s} a strong economic incentive to exercise, so exercise is reasonably certain and the price is a lease payment (ASC 842-10-30-5(c)). Liability = {m(pay)} × {af} + {m(opt)} × {sf} = {m(pv_pay)} + {m(pv_opt)} = {m(liab)}. Year 1 interest = {m(liab)} × {pc(i)}% = {m(int1)}, so the balance after the first payment is {m(liab)} + {m(int1)} − {m(pay)} = {m(bal1)}, and Year 2 interest = {m(bal1)} × {pc(i)}% = {m(int2)}. The right-of-use asset is the liability plus initial direct costs, {m(rou)}; because {s} is reasonably certain to buy the {p['short']}, it is amortized over the {u}-year useful life rather than the lease term (ASC 842-20-35-8): {m(rou)} ÷ {u} = {m(amort)}.""",
     )
 
 
@@ -424,17 +455,18 @@ def lessee_stepdown_cost(p):
     key_v = core + pt
     no_incentive = whole(rd(total_pay / 5))
     pool = {
-        "cash_basis": (m(pays[0] + pt), f"Uses the Year 1 cash payment of {m(pays[0])} instead of the straight-line average. Operating lease cost is recognized straight-line over the term, free of the year-to-year payment schedule."),
-        "no_incentive": (m(no_incentive + pt), f"Spreads the full {m(total_pay)} of payments without deducting the {m(incentive)} leasehold improvement allowance. Lease incentives received reduce the amount recognized as lease cost (ASC 842-20-25-6 to 25-7)."),
+        "cash_basis": (m(pays[0] + pt), f"Uses the Year 1 cash payment of {m(pays[0])} instead of the straight-line average. Operating lease cost is recognized straight-line over the term, regardless of the payment schedule."),
+        "no_incentive": (m(no_incentive + pt), f"Spreads the full {m(total_pay)} of payments without deducting the {m(incentive)} leasehold improvement allowance. Lease incentives received reduce the lease payments recognized as cost over the term."),
         "omit_pt": (m(core), f"Leaves out the {m(pt)} of property tax reimbursement. It is a variable payment that isn't based on an index or a rate, so it isn't part of the straight-line calculation, but it is still lease cost, recognized as incurred."),
         "incentive_as_revenue": (m(no_incentive + pt + whole(rd(incentive / 5))), f"Adds a {m(whole(rd(incentive / 5)))} share of the {m(incentive)} incentive to cost instead of subtracting it from the payments being spread."),
+        "incentive_upfront": (m(no_incentive - incentive + pt), f"Deducts the whole {m(incentive)} incentive from Year 1 cost instead of spreading it over the 5-year term with the payments."),
     }
     key = (m(key_v), f"Correct. ({m(total_pay)} total payments − {m(incentive)} incentive) ÷ 5 = {m(core)}, plus {m(pt)} of variable property tax reimbursement.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""On January 1, Year 1, {co} leases retail space for 5 years, which it classifies as an operating lease. Rent, due each December 31, is {m(pays[0])} in Year 1 and falls each year after that: {m(pays[1])} in Year 2, {m(pays[2])} in Year 3, {m(pays[3])} in Year 4 and {m(pays[4])} in Year 5, reflecting the landlord's higher cost of the space while {s}'s leasehold improvements are newest. At commencement, the landlord paid {s} {m(incentive)} in cash as a leasehold improvement allowance. {s} also reimburses the landlord each year for its pro-rata share of the property taxes actually assessed on the building, a variable payment that isn't fixed or tied to an index; the reimbursement for Year 1 is {m(pt)}. What total lease cost should {s} recognize for Year 1?""",
+        f"""On January 1, Year 1, {co} leases retail space for 5 years, which it classifies as an operating lease. Rent, due each December 31, is {m(pays[0])} in Year 1 and falls each year after that: {m(pays[1])} in Year 2, {m(pays[2])} in Year 3, {m(pays[3])} in Year 4 and {m(pays[4])} in Year 5. At commencement, the landlord paid {s} {m(incentive)} in cash as a leasehold improvement allowance. {s} also reimburses the landlord each year for its pro-rata share of the property taxes actually assessed on the building, a variable payment that isn't fixed or tied to an index; the reimbursement for Year 1 is {m(pt)}. What total lease cost should {s} recognize for Year 1?""",
         choices, ans,
-        f"""Operating lease cost for the fixed payments, net of lease incentives received, is recognized straight-line over the lease term (ASC 842-20-25-6 to 25-7): ({m(total_pay)} total payments − {m(incentive)} incentive) ÷ 5 = {m(core)}. The property tax reimbursement doesn't depend on an index or a rate, so it is excluded from that calculation and recognized as incurred: {m(pt)}. Total lease cost = {m(core)} + {m(pt)} = {m(key_v)}.""",
+        f"""For an operating lease, the fixed payments net of lease incentives received are recognized straight-line over the lease term (ASC 842-20-25-6(a)), unless another systematic basis better represents the pattern in which the lessee uses the space. {s} uses the space evenly, so a falling rent schedule doesn't change the straight-line pattern: ({m(total_pay)} total payments − {m(incentive)} incentive) ÷ 5 = {m(core)}. The property tax reimbursement doesn't depend on an index or a rate, so it is excluded from the lease payments and recognized as incurred (ASC 842-20-25-6(b)): {m(pt)}. Total lease cost = {m(core)} + {m(pt)} = {m(key_v)}.""",
     )
 
 
@@ -446,56 +478,52 @@ def tax_provision_installment(p):
     bi, lip, golf = D(p["bi"]), D(p["lip"]), D(p["golf"])
     gp, coll, est, r = D(p["gp"]), D(p["coll"]), D(p["est"]), D(p["r"])
 
-    def pair(taxable, expense):
-        cur = whole(rd(taxable * r / 100))
-        return cur, whole(rd(expense * r / 100))
+    def tax(x):
+        return whole(rd(x * r / 100))
 
-    cur, exp = pair(bi - lip + golf - (gp - coll), bi - lip + golf)
-    payable = cur - est
-    key_v = (payable, exp)
-
-    cur_lip, exp_lip = pair(bi + golf - (gp - coll), bi + golf)
-    pay_lip = cur_lip - est
-
-    cur_ig, exp_ig = pair(bi - lip + golf, bi - lip + golf)
-    pay_ig = cur_ig - est
-
-    cur_ng, exp_ng = pair(bi - lip - (gp - coll), bi - lip)
-    pay_ng = cur_ng - est
-
+    ti = bi - lip + golf - (gp - coll)
+    cur = tax(ti)
     pool = {
-        "tax_lip": (f"{m(pay_lip)} payable; {m(exp_lip)} expense", f"Taxes the {m(lip)} of life insurance proceeds. Proceeds from life insurance on an executive, where {s} is the beneficiary, are a permanent difference excluded from taxable income and from tax expense."),
-        "ignore_installment": (f"{m(pay_ig)} payable; {m(exp_ig)} expense", f"Taxes the full {m(gp)} installment sale gross profit currently, as books do, and records no deferred tax on it. For tax, {s} uses the installment method and is taxed only on the {m(coll)} collected this year; the remaining {m(gp - coll)} gives rise to a deferred tax liability, which happens to leave total expense unchanged but understates current tax payable."),
-        "no_golf_adjust": (f"{m(pay_ng)} payable; {m(exp_ng)} expense", f"Deducts the {m(golf)} of club dues for tax as well as for books. Nondeductible club dues are a permanent difference, added back for both current tax and total tax expense."),
-        "full_payable": (f"{m(cur)} payable; {m(exp)} expense", f"Reports the whole {m(cur)} of current tax as payable, without applying the {m(est)} of estimated payments {s} already made."),
+        "tax_lip": (m(tax(ti + lip)), f"Taxes the {m(lip)} of life insurance proceeds. Proceeds from company-owned life insurance on an executive, with {s} as beneficiary, are excluded from taxable income, a permanent difference."),
+        "golf_ded": (m(tax(ti - golf)), f"Deducts the {m(golf)} of club dues for tax as well as for books. The tax law doesn't allow them, so they are added back to pretax income in computing taxable income."),
+        "ignore_inst": (m(tax(ti + gp - coll)), f"Taxes the whole {m(gp)} gain currently, as books recognize it. On the tax return only the {m(coll)} collected is taxed in Year 2; the tax on the other {m(gp - coll)} is deferred tax expense, not current. This figure is total income tax expense."),
+        "net_est": (m(cur - est), f"Subtracts the {m(est)} of estimated payments. They settle part of the liability (income taxes payable), but they don't reduce current tax expense, which is the tax on Year 2 taxable income."),
+        "deduct_all_gp": (m(tax(ti - coll)), f"Removes the whole {m(gp)} gain from taxable income, overlooking the {m(coll)} of it collected, and so taxed, in Year 2."),
     }
-    key = (f"{m(payable)} payable; {m(exp)} expense", f"Correct. Current tax {m(cur)} − {m(est)} prepaid = {m(payable)} payable; expense = taxable income adjusted only for permanent differences, ({m(bi)} − {m(lip)} + {m(golf)}) × {p['r']}% = {m(exp)}.")
+    key = (m(cur), f"Correct. ({m(bi)} − {m(lip)} + {m(golf)} − {m(gp - coll)}) × {p['r']}% = {m(ti)} × {p['r']}%.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} must work out both its Year 2 income taxes payable and its Year 2 income tax expense. Pretax financial income for the year is {m(bi)}, which includes {m(lip)} of proceeds from company-owned life insurance on an executive's death, a nontaxable amount, and is stated after deducting {m(golf)} of nondeductible country club dues. {s} books the full {m(gp)} gross profit on an installment sale in the year of sale, but on its tax return the gross profit is taxed only as collected under the installment method, and only {m(coll)} was collected (and taxed) this year. The enacted tax rate is {p['r']}% for every year, {s} anticipates plenty of future taxable income, and during the year it remitted {m(est)} of estimated tax payments, carried on its books as a prepaid asset. Netting those prepayments against current tax, what should {s} report as Year 2 income taxes payable, and what is its Year 2 income tax expense?""",
+        f"""{co} discloses the current and deferred components of its income tax expense. Its pretax financial income for Year 2 is {m(bi)}. That amount includes {m(lip)} of proceeds from company-owned life insurance on an executive who died during the year, with {s} as beneficiary, and is after deducting {m(golf)} of country club dues, which the tax law doesn't allow as a deduction. In Year 2, {s} also sold land on installment terms and recognized the full {m(gp)} gain in its books; for tax it reports the gain under the installment method, and {m(coll)} of the gain relates to Year 2 collections. The enacted tax rate is {p['r']}% for all years. During Year 2, {s} paid {m(est)} of estimated tax, recorded as prepaid income taxes. What current income tax expense should {s} disclose for Year 2?""",
         choices, ans,
-        f"""Taxable income = {m(bi)} − {m(lip)} (nontaxable, permanent) + {m(golf)} (nondeductible, permanent) − {m(gp - coll)} (installment gross profit not yet taxed) = {m(bi - lip + golf - (gp - coll))}; current tax = {m(cur)}, less {m(est)} of estimated payments = {m(payable)} payable. The installment sale creates a deferred tax liability of {m(gp - coll)} × {p['r']}%, which exactly offsets the current-tax effect of deferring that gross profit, so total expense equals the rate applied to book income adjusted only for the permanent differences: ({m(bi)} − {m(lip)} + {m(golf)}) × {p['r']}% = {m(exp)}.""",
+        f"""Current tax expense is the tax on the year's taxable income. Taxable income = {m(bi)} − {m(lip)} (life insurance proceeds, excluded) + {m(golf)} (club dues, not deductible) − {m(gp - coll)} (installment gain not yet taxed: {m(gp)} − {m(coll)}) = {m(ti)}. Current tax expense = {m(ti)} × {p['r']}% = {m(cur)}. The {m(est)} of estimated payments reduces income taxes payable, not expense, and the tax on the uncollected gain is deferred tax expense.""",
     )
 
 
 def tax_deferred_installment_litigation(p):
     co, s = p["co"], short(p["co"])
     inst, lit, va, r, litc = D(p["inst"]), D(p["lit"]), D(p["va"]), D(p["r"]), D(p["litc"])
-    net_before_va = whole(rd((lit - inst) * r / 100))
-    key_v = net_before_va - va
+
+    def tax(x):
+        return whole(rd(x * r / 100))
+
+    dta, dtl = tax(lit), tax(inst)
+
+    def ch(a, b):
+        return f"{m(a)} asset; {m(b)} liability"
+
     pool = {
-        "no_va": (m(net_before_va), f"Omits the {m(va)} valuation allowance. Management has concluded it is more likely than not that {m(va)} of the deferred tax asset won't be realized (ASC 740-10-30-5)."),
-        "va_wrong_sign": (m(net_before_va + va), f"Adds the {m(va)} allowance to the asset instead of deducting it. A valuation allowance reduces a deferred tax asset to the amount more likely than not to be realized."),
-        "no_inst": (m(whole(rd(lit * r / 100)) - va), f"Leaves out the deferred tax liability on the installment sale. Its untaxed gross profit is a taxable temporary difference that offsets part of the litigation accrual's deferred tax asset."),
-        "pretax_no_rate": (m((lit - inst) - va), f"Doesn't multiply the {m(lit - inst)} net temporary difference by the {p['r']}% tax rate before deducting the allowance."),
-        "cur_portion": (m(whole(rd((litc - inst) * r / 100)) - va), f"Limits the deferred tax asset to the {m(litc)} of the litigation accrual {s} expects to pay within a year, leaving out the {m(lit - litc)} expected in later years. A deferred tax asset is based on the entire temporary difference; deferred taxes aren't classified as current or noncurrent at all (ASC 740-10-45-4)."),
+        "no_va": (ch(dta, dtl), f"Doesn't deduct the {m(va)} valuation allowance from the deferred tax asset."),
+        "va_sign": (ch(dta + va, dtl), f"Adds the {m(va)} allowance to the deferred tax asset instead of deducting it. A valuation allowance reduces a deferred tax asset to the amount expected to be realized."),
+        "cur_portion": (ch(tax(litc) - va, dtl), f"Bases the deferred tax asset on only the {m(litc)} of the accrual {s} expects to pay in Year 3. A deferred tax asset arises on the whole {m(lit)} deductible temporary difference; deferred taxes aren't split into current and noncurrent parts (ASC 740-10-45-4)."),
+        "no_inst": (ch(dta - va, 0), f"Records no deferred tax liability on the {m(inst)} of gain not yet taxed. Gain recognized in the books but taxed when collected is a taxable temporary difference (ASC 740-10-25-20)."),
+        "va_on_dtl": (ch(dta, dtl - va), f"Deducts the {m(va)} allowance from the deferred tax liability. The allowance reduces the deferred tax asset it relates to."),
     }
-    key = (m(key_v), f"Correct. ({m(lit)} − {m(inst)}) × {p['r']}% = {m(net_before_va)}, less the {m(va)} valuation allowance.")
+    key = (ch(dta - va, dtl), f"Correct. Asset {m(lit)} × {p['r']}% = {m(dta)}, less the {m(va)} allowance; liability {m(inst)} × {p['r']}%.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} is measuring its deferred taxes at December 31, Year 2. It has a taxable temporary difference of {m(inst)} from an installment sale: it recognized the full gross profit for books in the year of sale, but for tax the gross profit is taxed only as collected. It has also accrued a {m(lit)} loss contingency from pending litigation, deductible for tax only when paid; of that accrual, {s} expects to pay {m(litc)} within the next year and the rest later. The enacted tax rate is {p['r']}% for all years. Based on its forecast of future taxable income, {s}'s management concludes that it is more likely than not that {m(va)} of the resulting deferred tax asset will not be realized. What net deferred tax asset should {s} report at December 31, Year 2?""",
+        f"""{co} keeps separate deferred tax asset and deferred tax liability accounts in its ledger and is measuring them at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the whole gain in its books; {m(inst)} of that gain hasn't yet been collected and will be taxed as it is. In Year 2 it accrued a {m(lit)} loss for a lawsuit it expects to settle; the loss is deductible when paid, and {s} expects to pay {m(litc)} of it in Year 3 and the rest in Year 4. The enacted tax rate is {p['r']}% for all years. Weighing its recent losses against its forecasts, {s} concludes that it needs a valuation allowance of {m(va)} against its deferred tax asset. At December 31, Year 2, what amounts should {s} carry in its deferred tax asset account, net of the allowance, and in its deferred tax liability account?""",
         choices, ans,
-        f"""The installment sale gives a taxable temporary difference ({m(inst)}), a deferred tax liability of {m(inst)} × {p['r']}%; the full litigation accrual gives a deductible temporary difference ({m(lit)}), a deferred tax asset of {m(lit)} × {p['r']}%, regardless of when the cash will be paid (deferred taxes are never classified as current). Net deferred tax asset before considering realization = ({m(lit)} − {m(inst)}) × {p['r']}% = {m(net_before_va)}. A valuation allowance reduces it by the {m(va)} management concludes is not more likely than not to be realized (ASC 740-10-30-5): {m(net_before_va)} − {m(va)} = {m(key_v)}.""",
+        f"""The uncollected installment gain is a taxable temporary difference: deferred tax liability = {m(inst)} × {p['r']}% = {m(dtl)}. The litigation accrual is a deductible temporary difference in full, whenever it will be paid: deferred tax asset = {m(lit)} × {p['r']}% = {m(dta)}. The valuation allowance reduces the asset to the amount expected to be realized (ASC 740-10-30-5(e)): {m(dta)} − {m(va)} = {m(dta - va)}. Net of the allowance, the asset account carries {m(dta - va)} and the liability account {m(dtl)}.""",
     )
 
 
@@ -505,36 +533,38 @@ def tax_provision_entry_va(p):
     dtl_b, dtl_e = D(p["dtl_beg"]), D(p["dtl_end"])
     dta_b, dta_e = D(p["dta_beg"]), D(p["dta_end"])
     va_b, va_e = D(p["va_beg"]), D(p["va_end"])
-    cur = whole(rd(ti * r / 100))
-    d_dtl = whole(rd((dtl_e - dtl_b) * r / 100))
-    d_dta = whole(rd((dta_e - dta_b) * r / 100))
+
+    def tax(x):
+        return whole(rd(x * r / 100))
+
+    cur = tax(ti)
+    d_dtl = tax(dtl_e - dtl_b)
+    d_dta = tax(dta_e - dta_b)
     d_va = va_e - va_b
-    dec = d_dta < 0
-    dta_txt = (f"+ {m(-d_dta)} decrease in the deferred tax asset" if dec else f"− {m(d_dta)} increase in the deferred tax asset")
-    dta_chg = f"a decrease of {m(-d_dta)}" if dec else f"an increase of {m(d_dta)}"
-    dta_rule = "a decrease is a debit to expense." if dec else "an increase is a credit to expense (a deferred tax benefit)."
-    dta_op = "+" if dec else "−"
-    key_v = cur + d_dtl - d_dta + d_va
+    assert d_dtl > 0 and d_dta < 0 and d_va > 0
+    key_v = d_dtl - d_dta + d_va
+    end_v = tax(dtl_e) - tax(dta_e) + va_e
     pool = {
-        "omit_va": (m(cur + d_dtl - d_dta), f"Leaves out the {m(d_va)} increase in the valuation allowance against the deferred tax asset. {s} debits income tax expense for an increase in the allowance, just like an increase in the net deferred tax liability."),
-        "va_sign": (m(cur + d_dtl - d_dta - d_va), f"Credits income tax expense for the {m(d_va)} increase in the valuation allowance. Increasing an allowance against a deferred tax asset increases, not decreases, income tax expense."),
-        "swap_dta": (m(cur + d_dtl + d_dta + d_va), f"Debits income tax expense for the {m(abs(d_dta))} change in the deferred tax asset in the same direction as the change in the deferred tax liability. An increase in a deferred tax asset is a deferred tax benefit, which reduces expense; a decrease increases it."),
-        "end_balances": (m(cur + whole(rd(dtl_e * r / 100)) - whole(rd(dta_e * r / 100)) + d_va), f"Uses the December 31 deferred tax balances directly instead of the year's change in each account. The January 1 balances were already recorded in earlier years."),
+        "omit_va": (m(d_dtl - d_dta), f"Leaves out the {m(d_va)} increase in the valuation allowance. Raising the allowance against a deferred tax asset is deferred tax expense."),
+        "va_sign": (m(d_dtl - d_dta - d_va), f"Treats the {m(d_va)} increase in the valuation allowance as a deferred tax benefit. A larger allowance means less of the asset will be realized, which increases expense."),
+        "swap_dta": (m(d_dtl + d_dta + d_va), f"Treats the {m(-d_dta)} decrease in the deferred tax asset as a benefit. A decrease in a deferred tax asset increases deferred tax expense, just as an increase in a deferred tax liability does."),
+        "total": (m(cur + key_v), f"Adds the {m(cur)} of current tax ({m(ti)} × {p['r']}%). That is total income tax expense, not its deferred part."),
+        "end_balances": (m(end_v), f"Uses the December 31 balances of all three accounts as if they were the year's changes: {m(tax(dtl_e))} liability − {m(tax(dta_e))} asset + {m(va_e)} allowance."),
     }
-    key = (m(key_v), f"Correct. Current tax {m(cur)} + {m(d_dtl)} increase in the deferred tax liability {dta_txt} + {m(d_va)} increase in the valuation allowance.")
+    key = (m(key_v), f"Correct. {m(d_dtl)} increase in the deferred tax liability + {m(-d_dta)} decrease in the deferred tax asset + {m(d_va)} increase in the valuation allowance.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} posts its tax provision as one combined entry at year-end, carrying its deferred tax asset, deferred tax liability and the valuation allowance against that asset in separate ledger accounts. Taxable income for Year 2 comes to {m(ti)}, taxed at the {p['r']}% rate enacted for every year. {s} began the year with cumulative taxable temporary differences of {m(dtl_b)} and deductible temporary differences of {m(dta_b)}, carrying a {m(va_b)} allowance against the deferred tax asset those create; by year-end the taxable and deductible temporary differences stood at {m(dtl_e)} and {m(dta_e)}, and a revised forecast calls for the allowance to stand at {m(va_e)} instead. For the entry recording this provision, what amount belongs on the debit side of income tax expense?""",
+        f"""{co} records its Year 2 tax provision at December 31, keeping its deferred tax asset, deferred tax liability and valuation allowance in separate accounts. Taxable income for Year 2 is {m(ti)}, and the enacted tax rate is {p['r']}% for all years. {s}'s only temporary differences are prepaid expenses, deducted for tax when paid, of {m(dtl_b)} at January 1 and {m(dtl_e)} at December 31, and its allowance for credit losses, deductible for tax when receivables are written off, of {m(dta_b)} at January 1 and {m(dta_e)} at December 31. The valuation allowance against the deferred tax asset was {m(va_b)} at January 1; after updating its forecasts, {s} sets it at {m(va_e)} at December 31. What deferred income tax expense should {s} record for Year 2?""",
         choices, ans,
-        f"""The entry debits income tax expense and credits income taxes payable for current tax, {m(ti)} × {p['r']}% = {m(cur)}. The deferred tax liability increases by ({m(dtl_e)} − {m(dtl_b)}) × {p['r']}% = {m(d_dtl)}, a credit and a debit to expense. The deferred tax asset changes by ({m(dta_e)} − {m(dta_b)}) × {p['r']}% = {dta_chg}; {dta_rule} The valuation allowance increases by {m(va_e)} − {m(va_b)} = {m(d_va)}, also debited to expense, because a larger allowance means less of the deferred tax asset will be realized. Total debit to income tax expense = {m(cur)} + {m(d_dtl)} {dta_op} {m(abs(d_dta))} + {m(d_va)} = {m(key_v)}.""",
+        f"""Deferred tax expense is the year's change in the deferred tax accounts. The prepaid expenses are a taxable temporary difference: the deferred tax liability rises by ({m(dtl_e)} − {m(dtl_b)}) × {p['r']}% = {m(d_dtl)}, an expense. The allowance for credit losses is a deductible temporary difference: the deferred tax asset falls by ({m(dta_b)} − {m(dta_e)}) × {p['r']}% = {m(-d_dta)}, also an expense. The valuation allowance rises by {m(va_e)} − {m(va_b)} = {m(d_va)}, an expense, because less of the asset is expected to be realized (ASC 740-10-30-5(e)). Deferred tax expense = {m(d_dtl)} + {m(-d_dta)} + {m(d_va)} = {m(key_v)}. The {m(cur)} of current tax ({m(ti)} × {p['r']}%) is recorded in the same entry but isn't deferred.""",
     )
 
 
 FAMILIES = [
     ("far-revenue-variable-consideration-0003", A3, "Revenue recognition", AP,
-     ["ASC 606-10-32-11 to 32-13 (constraining estimates of variable consideration)"],
+     ["ASC 606-10-32-11 to 32-12 (constraining estimates of variable consideration)"],
      revenue_variable_constraint, [
-        dict(co="Larkspur Sensors Co.", N=8000, P=40, B=6, use=["full_bonus", "total_units", "defer_all"]),
+        dict(co="Larkspur Sensors Co.", N=8000, P=40, B=6, use=["full_bonus", "ev_bonus", "total_units"]),
         dict(co="Mertens Sensors Co.", N=5000, P=65, B=9, use=["ev_bonus", "total_units", "defer_all"]),
         dict(co="Oswego Sensors Co.", N=12000, P=28, B=4, use=["full_bonus", "ev_bonus", "defer_all"]),
         dict(co="Prescott Sensors Co.", N=6500, P=52, B=7, use=["full_bonus", "ev_bonus", "total_units"]),
@@ -542,122 +572,134 @@ FAMILIES = [
     ("far-revenue-principal-agent-0002", A3, "Revenue recognition", AP,
      ["ASC 606-10-55-36 to 55-40 (principal versus agent indicators)"],
      revenue_principal_agent2, [
-        dict(co="BrightRide Inc.", Z=850000, pct=20, Sub=15, M=4000, use=["gross", "flip", "no_sub"]),
-        dict(co="SwiftHail Co.", Z=620000, pct=25, Sub=12, M=3500, use=["gross", "no_sub", "no_comm"]),
-        dict(co="UrbanGo Co.", Z=1040000, pct=18, Sub=10, M=6000, use=["gross", "flip", "no_comm"]),
+        dict(co="BrightRide Inc.", Z=850000, pct=20, Sub=15, M=4000, use=["gross", "no_sub", "no_comm"]),
+        dict(co="SwiftHail Co.", Z=620000, pct=25, Sub=12, M=3500, use=["gross", "flip", "no_sub"]),
+        dict(co="UrbanGo Co.", Z=1040000, pct=18, Sub=10, M=6000, use=["gross", "no_sub", "no_comm"]),
         dict(co="ZipFleet Co.", Z=430000, pct=22, Sub=18, M=2500, use=["flip", "no_sub", "no_comm"]),
      ], "gross"),
     ("far-revenue-licenses-0002", A3, "Revenue recognition", AP,
-     ["ASC 606-10-55-65 (sales- and usage-based royalties for a license of intellectual property)"],
+     ["ASC 606-10-55-65 (sales- and usage-based royalties for a license of intellectual property)",
+      "ASC 606-10-55-58 to 55-63 (right to access versus right to use)"],
      revenue_royalty_license, [
-        dict(co="Kestrel Photonics Co.", ppct=6, ppat=250000, pproj=1000000, F=8000, fpct=2, fsales=180000, use=["estimate_upfront", "omit_patent", "omit_fixed"]),
-        dict(co="Harrow Acoustics Co.", ppct=5, ppat=320000, pproj=1500000, F=6000, fpct=3, fsales=140000, use=["estimate_upfront", "omit_fixed", "gross_no_rate"]),
-        dict(co="Ivymoor Robotics Co.", ppct=8, ppat=180000, pproj=820000, F=10000, fpct="2.5", fsales=220000, use=["estimate_upfront", "omit_patent", "gross_no_rate"]),
-        dict(co="Juniper Dynamics Co.", ppct=4, ppat=410000, pproj=2000000, F=12000, fpct=3, fsales=260000, use=["omit_patent", "omit_fixed", "gross_no_rate"]),
+        dict(co="Kestrel Photonics Co.", ppct=6, ppat=250000, pproj=1200000, Fy=32000, fpct=2, fsales=180000, use=["estimate_upfront", "full_fee", "omit_fixed"]),
+        dict(co="Harrow Acoustics Co.", ppct=5, ppat=320000, pproj=1100000, Fy=24000, fpct=3, fsales=140000, use=["quarter_projection", "omit_fixed", "full_fee"]),
+        dict(co="Ivymoor Robotics Co.", ppct=8, ppat=180000, pproj=880000, Fy=40000, fpct="2.5", fsales=220000, use=["estimate_upfront", "quarter_projection", "full_fee"]),
+        dict(co="Juniper Dynamics Co.", ppct=4, ppat=410000, pproj=1400000, Fy=48000, fpct=3, fsales=260000, use=["quarter_projection", "omit_patent", "omit_fixed"]),
      ], "estimate_upfront"),
     ("far-revenue-contract-costs-0004", A3, "Revenue recognition", AP,
-     ["ASC 340-40-15-3 (scope exclusion for costs within the scope of another Topic)", "ASC 340-40-25-1 to 25-8 (incremental costs of obtaining a contract; costs to fulfill a contract)", "ASC 340-40-35-1 (amortization)"],
+     ["ASC 340-40-15-3 (costs within the scope of another Topic)",
+      "ASC 340-40-25-1 to 25-8 (incremental costs of obtaining a contract; costs to fulfill a contract)",
+      "ASC 340-40-35-1 (amortization)"],
      contract_costs_scope, [
-        dict(co="Trebarwith Systems Co.", sd="January 10", start="March 1", mo=10, off=2, Cm=54000, S=72000, EQ=38000, INV=9000, eq="forklifts", sup="packing materials", use=["include_eq", "include_inv", "no_amort"]),
-        dict(co="Delabole Systems Co.", sd="February 14", start="April 1", mo=9, off=1, Cm=48000, S=60000, EQ=25000, INV=7000, eq="handling carts", sup="shipping supplies", use=["wrong_start", "include_eq", "no_amort"]),
-        dict(co="Zennor Systems Co.", sd="March 5", start="May 1", mo=8, off=2, Cm=72000, S=90000, EQ=48000, INV=14000, eq="pallet jacks", sup="crating materials", use=["wrong_start", "include_eq", "include_inv"]),
-        dict(co="Marazion Systems Co.", sd="April 20", start="June 1", mo=7, off=2, Cm=75000, S=105000, EQ=50000, INV=15000, eq="loading equipment", sup="packaging stock", use=["include_eq", "include_inv", "no_amort"]),
+        dict(co="Trebarwith Systems Co.", sd="January 1", start="March 1", mo=10, off=2, Cm=54000, S=72000, EQ=36000, INV=7200, eq="forklifts", sup="packing materials", use=["include_eq", "wrong_start", "comm_only"]),
+        dict(co="Delabole Systems Co.", sd="February 1", start="April 1", mo=9, off=2, Cm=43200, S=57600, EQ=28800, INV=10800, eq="handling carts", sup="shipping supplies", use=["comm_only", "setup_only", "include_inv"]),
+        dict(co="Zennor Systems Co.", sd="March 1", start="May 1", mo=8, off=2, Cm=64800, S=86400, EQ=43200, INV=14400, eq="pallet jacks", sup="crating materials", use=["wrong_start", "include_eq", "include_inv"]),
+        dict(co="Marazion Systems Co.", sd="April 1", start="July 1", mo=6, off=3, Cm=72000, S=108000, EQ=54000, INV=18000, eq="dock lifts", sup="packaging supplies", use=["comm_only", "setup_only", "wrong_start"]),
      ], "include_eq"),
     ("far-nfp-contributed-services-0003", A3, "Revenue recognition", AP,
      ["ASC 958-605-25-16 (contributed services: creating or enhancing a nonfinancial asset; specialized skills)"],
      nfp_services_asset, [
-        dict(org="Fenwick Arts Center", A=22000, C=9000, D=6000, E=4000, use=["skip_unskilled", "include_d", "include_e"]),
-        dict(org="Garrity Arts Center", A=18000, C=7000, D=5000, E=3500, use=["skip_architect", "include_d", "include_e"]),
-        dict(org="Holloway Arts Center", A=30000, C=12000, D=8000, E=5000, use=["skip_unskilled", "skip_architect", "include_d"]),
-        dict(org="Ivester Arts Center", A=16000, C=6000, D=4500, E=3000, use=["skip_unskilled", "skip_architect", "include_e"]),
-     ], "skip_unskilled"),
+        dict(org="Fenwick Arts Center", A=14000, C=9000, D=5000, E=4000, use=["skip_shed", "expense_shed", "include_mail"]),
+        dict(org="Garrity Arts Center", A=11000, C=7000, D=4500, E=3500, use=["skip_shed", "skip_tech", "include_lawn"]),
+        dict(org="Holloway Arts Center", A=18000, C=12000, D=8000, E=5000, use=["expense_shed", "include_mail", "include_lawn"]),
+        dict(org="Ivester Arts Center", A=9500, C=6000, D=4000, E=3000, use=["skip_shed", "skip_tech", "expense_shed"]),
+     ], "skip_shed"),
     ("far-nfp-contributed-services-0004", A3, "Revenue recognition", AP,
-     ["ASC 958-605-25-16 (contributed services: creating or enhancing a nonfinancial asset; specialized skills)"],
-     nfp_services_three, [
-        dict(org="Brantley Health Outreach", A=26000, B=15000, C=5000, D=7000, E=9000, use=["omit_interp", "include_d", "include_e"]),
-        dict(org="Castleton Health Outreach", A=19000, B=11000, C=4000, D=5000, E=6000, use=["omit_interp", "include_e", "omit_plumb"]),
-        dict(org="Dunwoody Health Outreach", A=32000, B=20000, C=6000, D=8000, E=10000, use=["include_d", "include_e", "omit_plumb"]),
-        dict(org="Elmcrest Health Outreach", A=15000, B=9000, C=3500, D=4000, E=5000, use=["omit_interp", "include_d", "omit_plumb"]),
-     ], "omit_interp"),
+     ["ASC 958-605-25-16 (contributed services: creating or enhancing a nonfinancial asset; specialized skills)",
+      "ASC 958-605 (services received from personnel of an affiliate, ASU 2013-06)"],
+     nfp_services_construction, [
+        dict(org="Brantley Health Outreach", cash=410000, A=26000, P=18000, Cv=3000, use=["omit_aff", "expense_aff", "expense_all"]),
+        dict(org="Castleton Health Outreach", cash=325000, A=21000, P=15000, Cv=2500, use=["omit_aff", "expense_all", "include_cer"]),
+        dict(org="Dunwoody Health Outreach", cash=540000, A=34000, P=24000, Cv=4000, use=["expense_aff", "expense_all", "include_cer"]),
+        dict(org="Elmcrest Health Outreach", cash=275000, A=17000, P=12000, Cv=2000, use=["omit_aff", "expense_aff", "expense_all"]),
+     ], "omit_aff"),
     ("far-nfp-contributions-0003", A3, "Revenue recognition", AP,
-     ["ASC 958-605-25 (conditional versus unconditional promises; measurable barriers)", "ASC 958-605-30-7 (promises collectible currently; nonfinancial assets at fair value)"],
+     ["ASC 958-605-25 (unconditional and conditional promises to give)",
+      "ASC 958-605-20 (definition of a contribution, including cancellation of a liability)",
+      "ASC 958-605-30 and ASC 958-310-35 (measuring contributions and promises to give)"],
      nfp_contributions_current, [
-        dict(org="Perrin Community Clinic", P=45000, disc="0.97", M=18000, R=60000, V=22000, Vb=9000, use=["pv_short", "include_r", "book_vehicle"]),
-        dict(org="Quimby Community Clinic", P=60000, disc="0.95", M=25000, R=80000, V=30000, Vb=12000, use=["pv_short", "include_r", "omit_inv"]),
-        dict(org="Radburn Community Clinic", P=36000, disc="0.98", M=14000, R=50000, V=16000, Vb=6000, use=["pv_short", "book_vehicle", "omit_inv"]),
-        dict(org="Sawbridge Community Clinic", P=72000, disc="0.96", M=30000, R=100000, V=38000, Vb=15000, use=["include_r", "book_vehicle", "omit_inv"]),
-     ], "pv_short"),
+        dict(org="Perrin Community Clinic", P=45000, M=18000, R=60000, L=25000, use=["include_r", "omit_inv", "omit_forgive"]),
+        dict(org="Quimby Community Clinic", P=60000, M=25000, R=80000, L=32000, use=["omit_inv", "omit_forgive", "omit_promise"]),
+        dict(org="Radburn Community Clinic", P=36000, M=14000, R=50000, L=20000, use=["include_r", "omit_forgive", "omit_promise"]),
+        dict(org="Sawbridge Community Clinic", P=72000, M=30000, R=100000, L=40000, use=["omit_inv", "omit_forgive", "omit_promise"]),
+     ], "include_r"),
     ("far-fair-value-in-use-0001", A3, "Fair value measurements", AP,
-     ["ASC 820-10-35-10 to 35-14 (highest and best use; in-use versus in-exchange premise)", "ASC 820-10-55 (cost approach)"],
+     ["ASC 820-10-35-10A to 35-10E (highest and best use; assets used in combination)", "ASC 820-10-55-3D (cost approach)"],
      fv_in_use, [
-        dict(co="Pentire Bottling Co.", asset="capping machine", scrap=85000, new_cost=240000, phys=38000, func=22000, use=["scrap", "no_func", "no_phys"]),
-        dict(co="Quethiock Dairy Co.", asset="filling machine", scrap=60000, new_cost=190000, phys=25000, func=15000, use=["scrap", "no_phys", "gross_new"]),
-        dict(co="Rosudgeon Canning Co.", asset="seaming machine", scrap=100000, new_cost=300000, phys=50000, func=30000, use=["scrap", "no_func", "gross_new"]),
-        dict(co="Stithians Brewing Co.", asset="pasteurizer", scrap=70000, new_cost=210000, phys=28000, func=17000, use=["no_func", "no_phys", "gross_new"]),
+        dict(co="Pentire Bottling Co.", asset="capping machine", line="bottling", Lin=1150000, Lsep=700000, scrap=85000, new_cost=240000, phys=38000, func=22000, use=["scrap", "no_func", "no_phys"]),
+        dict(co="Quethiock Dairy Co.", asset="filling machine", line="dairy-packaging", Lin=940000, Lsep=560000, scrap=60000, new_cost=190000, phys=25000, func=15000, use=["scrap", "no_phys", "gross_new"]),
+        dict(co="Rosudgeon Canning Co.", asset="seaming machine", line="canning", Lin=1400000, Lsep=820000, scrap=100000, new_cost=300000, phys=50000, func=30000, use=["no_func", "no_phys", "gross_new"]),
+        dict(co="Stithian Brewing Co.", asset="pasteurizer", line="brewing", Lin=1020000, Lsep=610000, scrap=70000, new_cost=210000, phys=28000, func=17000, use=["no_func", "no_phys", "gross_new"]),
      ], "scrap"),
     ("far-fair-value-liability-0001", A3, "Fair value measurements", AP,
-     ["ASC 820-10-35-16 to 35-17A (fair value of liabilities; nonperformance risk)"],
+     ["ASC 820-10-35-16 (fair value of liabilities: transfer assumption)", "ASC 820-10-35-17 to 35-18 (nonperformance risk)"],
      fv_liability_nonperformance, [
         dict(co="Trewince Insurance Co.", face=500000, n=5, rf=4, r=3, r2="1.5", stale=1, use=["risk_free_only", "counterparty", "stale"]),
-        dict(co="Ventongimps Assurance Co.", face=650000, n=4, rf="3.5", r="2.5", r2=1, stale="0.5", use=["risk_free_only", "counterparty", "extra_year"]),
+        dict(co="Ventongimps Assurance Co.", face=650000, n=4, rf="3.5", r="2.5", r2=1, stale="0.5", use=["risk_free_only", "counterparty", "stale"]),
         dict(co="Wendron Mutual Co.", face=380000, n=6, rf="4.5", r="3.5", r2=2, stale="1.5", use=["risk_free_only", "stale", "extra_year"]),
         dict(co="Yelverton Guaranty Co.", face=720000, n=3, rf=3, r=2, r2="0.5", stale=1, use=["counterparty", "stale", "extra_year"]),
      ], "risk_free_only"),
     ("far-lessee-finance-0004", A3, "Lessee accounting", AP,
-     ["ASC 842-10-15-30 to 15-35 (lease payments; residual value guarantees)", "ASC 842-20-30 (initial measurement of the right-of-use asset)"],
+     ["ASC 842-10-30-5(f) (lease payments: residual value guarantees owed by the lessee)",
+      "ASC 842-20-30-5 (initial measurement of the right-of-use asset; initial direct costs)"],
      lessee_third_party_rvg, [
-        dict(co="Tredinnick Fabrication Co.", asset="a forging press", n=5, i=7, pay=60000, g=30000, idc=9000, use=["include_g", "omit_idc", "wrong_annuity"]),
-        dict(co="Ushant Mills Co.", asset="an extrusion line", n=6, i=6, pay=45000, g=22000, idc=7000, use=["include_g", "half_g", "omit_idc"]),
-        dict(co="Veryan Forgeworks Co.", asset="a stamping press", n=4, i=8, pay=80000, g=35000, idc=12000, use=["half_g", "omit_idc", "wrong_annuity"]),
-        dict(co="Wendron Castings Co.", asset="a die-casting machine", n=5, i="6.5", pay=52000, g=26000, idc=8000, use=["include_g", "half_g", "wrong_annuity"]),
+        dict(co="Tredinnick Fabrication Co.", asset="a forging press", ins="Harbor Mutual", n=5, i=7, pay=60000, g=30000, idc=9000, use=["include_g", "omit_idc", "wrong_annuity"]),
+        dict(co="Ushant Mills Co.", asset="an extrusion line", ins="Keystone Surety", n=6, i=6, pay=45000, g=22000, idc=7000, use=["include_g", "undiscounted_g", "wrong_annuity"]),
+        dict(co="Veryan Forgeworks Co.", asset="a stamping press", ins="Lantern Indemnity", n=4, i=8, pay=80000, g=35000, idc=12000, use=["omit_idc", "undiscounted_g", "wrong_annuity"]),
+        dict(co="Wendron Castings Co.", asset="a die-casting machine", ins="Meridian Assurance", n=5, i="6.5", pay=52000, g=26000, idc=8000, use=["include_g", "undiscounted_g", "wrong_annuity"]),
      ], "include_g"),
     ("far-lessee-operating-0006", A3, "Lessee accounting", AP,
-     ["ASC 842-20-30-3 (private-company risk-free rate practical expedient)", "ASC 842-10-15 (lease payments exclude a refundable security deposit)"],
+     ["ASC 842-20-30-3 (discount rate; private-company risk-free rate election by class of asset, as amended by ASU 2021-09)",
+      "ASC 842-10-30-5 (lease payments)"],
      lessee_riskfree_deposit, [
         dict(co="Antrobus Textiles Co.", n=6, pay=54000, sd=10000, rf="4.5", use=["add_sd", "full_annuity", "ordinary_af"]),
         dict(co="Bowness Textiles Co.", n=5, pay=72000, sd=15000, rf=4, use=["add_sd", "subtract_sd", "ordinary_af"]),
-        dict(co="Calstock Textiles Co.", n=7, pay=40000, sd=8000, rf=5, use=["add_sd", "full_annuity", "subtract_sd"]),
+        dict(co="Calstock Textiles Co.", n=7, pay=40000, sd=8000, rf=5, use=["add_sd", "full_annuity", "ordinary_af"]),
         dict(co="Delamere Textiles Co.", n=4, pay=95000, sd=20000, rf="3.5", use=["full_annuity", "subtract_sd", "ordinary_af"]),
      ], "add_sd"),
     ("far-lessee-finance-0005", A3, "Lessee accounting", AP,
-     ["ASC 842-20-25-4 to 25-6 (amortization of the right-of-use asset; purchase option reasonably certain)"],
+     ["ASC 842-10-30-5(c) (lease payments: purchase option reasonably certain to be exercised)",
+      "ASC 842-20-30-5 (right-of-use asset; initial direct costs)",
+      "ASC 842-20-35-8 (amortization period of the right-of-use asset)"],
      lessee_purchase_option_cost, [
-        dict(co="Elmsworth Fabrication Co.", asset="a CNC machining center", n=5, u=10, liab=320000, pay=78000, i="0.06", use=["term_amort", "only_interest", "only_amort"]),
-        dict(co="Framlingham Textiles Co.", asset="a weaving machine", n=4, u=8, liab=210000, pay=62000, i="0.05", use=["term_amort", "only_amort", "wrong_year"]),
-        dict(co="Gillingham Robotics Co.", asset="a robotic welding cell", n=6, u=12, liab=480000, pay=97000, i="0.07", use=["term_amort", "only_interest", "wrong_year"]),
-        dict(co="Harpenden Logistics Co.", asset="an automated sorting system", n=5, u=10, liab=360000, pay=88000, i="0.065", use=["only_interest", "only_amort", "wrong_year"]),
-     ], "term_amort"),
+        dict(co="Elmsworth Fabrication Co.", asset="a CNC machining center", short="machine", n=5, u=10, pay=78000, opt=40000, fvexp=150000, idc=15000, i=6, use=["term_amort", "no_option", "omit_idc"]),
+        dict(co="Framlingham Textiles Co.", asset="a weaving machine", short="machine", n=4, u=8, pay=62000, opt=30000, fvexp=110000, idc=9000, i=5, use=["term_amort", "year1_interest", "omit_idc"]),
+        dict(co="Gillingham Robotics Co.", asset="a robotic welding cell", short="cell", n=6, u=12, pay=97000, opt=45000, fvexp=180000, idc=20000, i=7, use=["no_option", "omit_idc", "year1_interest"]),
+        dict(co="Harpenden Logistics Co.", asset="an automated sorting system", short="system", n=5, u=10, pay=88000, opt=50000, fvexp=170000, idc=16000, i="6.5", use=["term_amort", "no_option", "year1_interest"]),
+     ], "no_option"),
     ("far-lessee-operating-0007", A3, "Lessee accounting", AP,
-     ["ASC 842-20-25-6 to 25-7 (single lease cost; lease incentives)", "ASC 842-10-15 (variable lease payments not based on an index or a rate)"],
+     ["ASC 842-20-25-6 (operating lease cost; variable payments not based on an index or a rate)",
+      "ASC 842-10-30-5 (lease payments net of lease incentives)"],
      lessee_stepdown_cost, [
         dict(co="Inkberrow Retail Co.", pays=[70000, 62000, 54000, 46000, 38000], incentive=20000, pt=9000, use=["cash_basis", "no_incentive", "omit_pt"]),
-        dict(co="Juniper Retail Co.", pays=[90000, 80000, 70000, 60000, 50000], incentive=25000, pt=12000, use=["cash_basis", "omit_pt", "incentive_as_revenue"]),
-        dict(co="Kelmarsh Retail Co.", pays=[55000, 49000, 43000, 37000, 31000], incentive=15000, pt=7000, use=["no_incentive", "omit_pt", "incentive_as_revenue"]),
+        dict(co="Juniper Retail Co.", pays=[90000, 80000, 70000, 60000, 50000], incentive=25000, pt=12000, use=["omit_pt", "incentive_upfront", "incentive_as_revenue"]),
+        dict(co="Kelmarsh Retail Co.", pays=[55000, 49000, 43000, 37000, 31000], incentive=15000, pt=7000, use=["no_incentive", "omit_pt", "incentive_upfront"]),
         dict(co="Lillington Retail Co.", pays=[110000, 98000, 86000, 74000, 62000], incentive=30000, pt=15000, use=["cash_basis", "no_incentive", "incentive_as_revenue"]),
      ], "no_incentive"),
     ("far-income-taxes-provision-0004", A3, "Accounting for income taxes", AP,
      ["ASC 740-10-25 (temporary and permanent differences)", "ASC 740-10-30 (current and deferred tax expense)"],
      tax_provision_installment, [
-        dict(co="Oakhurst Corp.", bi=640000, lip=50000, golf=18000, gp=120000, coll=40000, est=110000, r=25, use=["tax_lip", "ignore_installment", "full_payable"]),
-        dict(co="Pinehollow Corp.", bi=480000, lip=35000, golf=12000, gp=90000, coll=30000, est=70000, r=21, use=["tax_lip", "ignore_installment", "no_golf_adjust"]),
-        dict(co="Queensgate Corp.", bi=720000, lip=60000, golf=24000, gp=150000, coll=50000, est=130000, r=25, use=["ignore_installment", "no_golf_adjust", "full_payable"]),
-        dict(co="Ridgemont Corp.", bi=560000, lip=42000, golf=15000, gp=100000, coll=35000, est=95000, r=24, use=["tax_lip", "no_golf_adjust", "full_payable"]),
-     ], "ignore_installment", ASOF_TAX),
+        dict(co="Oakhurst Corp.", bi=640000, lip=50000, golf=18000, gp=120000, coll=40000, est=110000, r=25, use=["ignore_inst", "net_est", "golf_ded"]),
+        dict(co="Pinehollow Corp.", bi=480000, lip=35000, golf=12000, gp=90000, coll=30000, est=70000, r=21, use=["golf_ded", "net_est", "deduct_all_gp"]),
+        dict(co="Queensgate Corp.", bi=720000, lip=60000, golf=24000, gp=150000, coll=50000, est=130000, r=25, use=["tax_lip", "ignore_inst", "deduct_all_gp"]),
+        dict(co="Ridgemont Corp.", bi=560000, lip=42000, golf=15000, gp=100000, coll=35000, est=95000, r=24, use=["golf_ded", "deduct_all_gp", "tax_lip"]),
+     ], "ignore_inst", ASOF_TAX),
     ("far-income-taxes-deferred-0004", A3, "Accounting for income taxes", AP,
-     ["ASC 740-10-25 (temporary differences)", "ASC 740-10-30-5 (valuation allowance)"],
+     ["ASC 740-10-25 (temporary differences)", "ASC 740-10-30-5 (measuring deferred taxes; valuation allowance)",
+      "ASC 740-10-45-4 (deferred taxes classified as noncurrent)"],
      tax_deferred_installment_litigation, [
-        dict(co="Saltburn Corp.", inst=180000, lit=260000, litc=220000, va=8000, r=25, use=["no_va", "va_wrong_sign", "no_inst"]),
-        dict(co="Tissington Corp.", inst=140000, lit=210000, litc=200000, va=6000, r=21, use=["no_va", "no_inst", "cur_portion"]),
-        dict(co="Ulverscroft Corp.", inst=220000, lit=320000, litc=300000, va=10000, r=25, use=["no_va", "va_wrong_sign", "pretax_no_rate"]),
-        dict(co="Wrenbury Corp.", inst=160000, lit=235000, litc=225000, va=7000, r=24, use=["va_wrong_sign", "no_inst", "cur_portion"]),
-     ], "no_va", ASOF_TAX),
+        dict(co="Saltburn Corp.", inst=180000, lit=260000, litc=220000, va=8000, r=25, use=["cur_portion", "no_va", "no_inst"]),
+        dict(co="Tissington Corp.", inst=140000, lit=210000, litc=150000, va=6000, r=21, use=["cur_portion", "no_inst", "no_va"]),
+        dict(co="Ulverscroft Corp.", inst=220000, lit=320000, litc=240000, va=10000, r=25, use=["no_va", "va_sign", "va_on_dtl"]),
+        dict(co="Wrenbury Corp.", inst=160000, lit=235000, litc=175000, va=7000, r=24, use=["cur_portion", "no_inst", "va_on_dtl"]),
+     ], "cur_portion", ASOF_TAX),
     ("far-income-taxes-provision-0005", A3, "Accounting for income taxes", AP,
-     ["ASC 740-10 (current and deferred tax expense)", "ASC 740-10-30-5 (valuation allowance)"],
+     ["ASC 740-10-30-5 (measuring deferred tax assets and liabilities; valuation allowance)", "ASC 740-10-25 (temporary differences)"],
      tax_provision_entry_va, [
         dict(co="Alresford Corp.", ti=540000, r=25, dtl_beg=160000, dtl_end=210000, dta_beg=90000, dta_end=70000, va_beg=5000, va_end=12000, use=["omit_va", "va_sign", "swap_dta"]),
-        dict(co="Bramhope Corp.", ti=360000, r=21, dtl_beg=120000, dtl_end=150000, dta_beg=60000, dta_end=45000, va_beg=4000, va_end=9000, use=["omit_va", "swap_dta", "end_balances"]),
-        dict(co="Charlecote Corp.", ti=620000, r=25, dtl_beg=200000, dtl_end=260000, dta_beg=110000, dta_end=80000, va_beg=6000, va_end=15000, use=["omit_va", "va_sign", "end_balances"]),
-        dict(co="Dalbury Corp.", ti=430000, r=24, dtl_beg=140000, dtl_end=175000, dta_beg=75000, dta_end=55000, va_beg=3000, va_end=10000, use=["va_sign", "swap_dta", "end_balances"]),
+        dict(co="Bramhope Corp.", ti=360000, r=21, dtl_beg=120000, dtl_end=150000, dta_beg=60000, dta_end=45000, va_beg=4000, va_end=9000, use=["omit_va", "total", "end_balances"]),
+        dict(co="Charlecote Corp.", ti=620000, r=25, dtl_beg=200000, dtl_end=260000, dta_beg=110000, dta_end=80000, va_beg=6000, va_end=15000, use=["va_sign", "swap_dta", "total"]),
+        dict(co="Dalbury Corp.", ti=430000, r=24, dtl_beg=140000, dtl_end=175000, dta_beg=75000, dta_end=55000, va_beg=3000, va_end=10000, use=["omit_va", "va_sign", "swap_dta"]),
      ], "omit_va", ASOF_TAX),
 ]
 

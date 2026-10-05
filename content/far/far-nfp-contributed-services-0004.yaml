@@ -10,148 +10,156 @@ review:
   references:
   - 'ASC 958-605-25-16 (contributed services: creating or enhancing a nonfinancial asset; specialized
     skills)'
+  - ASC 958-605 (services received from personnel of an affiliate, ASU 2013-06)
   notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
-stem: During Year 1, Brantley Health Outreach, a not-for-profit entity, received these donated services.
-  A volunteer dentist provided free dental care at Brantley's clinic, care Brantley would otherwise have
-  paid a local practice $26,000 for. Volunteer plumbers, tradespeople who normally charge for their work,
-  renovated Brantley's community kitchen, replacing its fixtures and layout, labor worth $15,000. A professional
-  interpreter translated for non-English-speaking families at Brantley's one-day benefits fair, work Brantley
-  would otherwise have hired an agency to do, valued at $5,000 at her usual rate. Other volunteers answered
-  phones at Brantley's front desk, time worth $7,000 at local wage rates. A retired engineer who serves
-  on Brantley's board spent time reviewing Brantley's financial reports at board meetings, time valued
-  at $9,000 at her former consulting rate. What amount should Brantley recognize as contributed services
-  revenue for Year 1?
+    Reworked after the 2026-10-05 review gate.
+stem: During Year 1, Brantley Health Outreach, a not-for-profit entity, began building a clinic, which
+  it will finish in Year 2. It paid its general contractor $410,000 for work through December 31. A licensed
+  architect donated the clinic's design drawings, work her firm would normally bill at $26,000. Brantley's
+  affiliate, a regional hospital, assigned one of its construction project managers to oversee the clinic's
+  construction part-time from March through December; the hospital kept paying her and charged Brantley
+  nothing, and her pay and benefits for that time, $18,000, are about what an outside construction manager
+  would have charged. Neighborhood volunteers handed out programs and served refreshments at the groundbreaking
+  ceremony, time worth $3,000 at local wage rates. What should Brantley report at December 31, Year 1,
+  as construction in progress, and as contribution revenue from contributed services for Year 1?
 choices:
 - id: A
-  text: $41,000
-  rationale: Leaves out the $5,000 interpreter. Translating for attendees at the fair uses her specialized
-    skill, which Brantley would otherwise have paid an agency for, so it meets the second recognition
-    test.
+  text: $410,000 construction in progress; $44,000 revenue
+  rationale: Recognizes the donated services as revenue but expenses them, so construction in progress
+    holds only the $410,000 paid to the contractor. Contributed services that create a nonfinancial asset
+    are capitalized into that asset.
 - id: B
-  text: $46,000
-  rationale: Correct. Dentist ($26,000) + kitchen renovation ($15,000) + interpreter ($5,000).
+  text: $436,000 construction in progress; $26,000 revenue
+  rationale: Leaves out the project manager's $18,000. Services from an affiliate's personnel that directly
+    benefit Brantley are recognized, and her supervision of the construction also creates a nonfinancial
+    asset, so the services are recognized as revenue and capitalized into the building.
 - id: C
-  text: $53,000
-  rationale: Includes the $7,000 of front-desk volunteers. Answering phones needs no specialized skill
-    and creates no nonfinancial asset.
+  text: $436,000 construction in progress; $44,000 revenue
+  rationale: Recognizes the project manager's $18,000 as revenue but expenses it instead of capitalizing
+    it. Supervising the construction is part of the cost of creating the building, so it is added to construction
+    in progress, as the architect's drawings are.
 - id: D
-  text: $55,000
-  rationale: Includes the $9,000 of the board member's time. Reviewing financial reports as a board member
-    is governance, not the specialized skill Brantley would otherwise purchase.
-answer: B
-explanation: Contributed services are recognized if they (a) create or enhance a nonfinancial asset, or
-  (b) require specialized skills, are provided by people with those skills, and would typically need to
-  be purchased if not donated (ASC 958-605-25-16). The dentist's care meets test (b) ($26,000); the plumbers'
-  renovation enhances Brantley's kitchen, meeting test (a) regardless of their skill ($15,000); the interpreter's
-  specialized skill is used in its specialty and Brantley would otherwise have hired an agency, meeting
-  test (b) ($5,000). Front-desk volunteers need no specialized skill and create no asset, and the engineer
-  is exercising board governance, not the specialized skill Brantley would otherwise purchase. Contributed
-  services revenue = $46,000.
+  text: $454,000 construction in progress; $44,000 revenue
+  rationale: Correct. Construction in progress = $410,000 + $26,000 + $18,000; revenue = $26,000 + $18,000.
+answer: D
+explanation: 'The architect''s drawings require specialized skills Brantley would otherwise buy, and both
+  they and the project manager''s supervision create a nonfinancial asset, the clinic (ASC 958-605-25-16).
+  Services that an affiliate''s personnel provide and that directly benefit Brantley are also recognized
+  (ASC 958-605-25, as amended by ASU 2013-06), measured here at $18,000, the hospital''s cost, which is
+  about their fair value. Each is recognized as contribution revenue and, because it creates the building,
+  capitalized: construction in progress = $410,000 + $26,000 + $18,000 = $454,000; revenue = $26,000 +
+  $18,000 = $44,000. The ceremony volunteers'' time needs no specialized skill and creates no asset, so
+  it isn''t recognized.'
 variants:
-- stem: During Year 1, Castleton Health Outreach, a not-for-profit entity, received these donated services.
-    A volunteer dentist provided free dental care at Castleton's clinic, care Castleton would otherwise
-    have paid a local practice $19,000 for. Volunteer plumbers, tradespeople who normally charge for their
-    work, renovated Castleton's community kitchen, replacing its fixtures and layout, labor worth $11,000.
-    A professional interpreter translated for non-English-speaking families at Castleton's one-day benefits
-    fair, work Castleton would otherwise have hired an agency to do, valued at $4,000 at her usual rate.
-    Other volunteers answered phones at Castleton's front desk, time worth $5,000 at local wage rates.
-    A retired engineer who serves on Castleton's board spent time reviewing Castleton's financial reports
-    at board meetings, time valued at $6,000 at her former consulting rate. What amount should Castleton
-    recognize as contributed services revenue for Year 1?
+- stem: During Year 1, Castleton Health Outreach, a not-for-profit entity, began building a clinic, which
+    it will finish in Year 2. It paid its general contractor $325,000 for work through December 31. A
+    licensed architect donated the clinic's design drawings, work her firm would normally bill at $21,000.
+    Castleton's affiliate, a regional hospital, assigned one of its construction project managers to oversee
+    the clinic's construction part-time from March through December; the hospital kept paying her and
+    charged Castleton nothing, and her pay and benefits for that time, $15,000, are about what an outside
+    construction manager would have charged. Neighborhood volunteers handed out programs and served refreshments
+    at the groundbreaking ceremony, time worth $2,500 at local wage rates. What should Castleton report
+    at December 31, Year 1, as construction in progress, and as contribution revenue from contributed
+    services for Year 1?
   choices:
   - id: A
-    text: $23,000
-    rationale: Leaves out the $11,000 kitchen renovation. The plumbers' work enhanced a nonfinancial asset,
-      Castleton's kitchen, which is recognized whether or not the volunteers had a specialized skill.
+    text: $325,000 construction in progress; $36,000 revenue
+    rationale: Recognizes the donated services as revenue but expenses them, so construction in progress
+      holds only the $325,000 paid to the contractor. Contributed services that create a nonfinancial
+      asset are capitalized into that asset.
   - id: B
-    text: $30,000
-    rationale: Leaves out the $4,000 interpreter. Translating for attendees at the fair uses her specialized
-      skill, which Castleton would otherwise have paid an agency for, so it meets the second recognition
-      test.
+    text: $346,000 construction in progress; $21,000 revenue
+    rationale: Leaves out the project manager's $15,000. Services from an affiliate's personnel that directly
+      benefit Castleton are recognized, and her supervision of the construction also creates a nonfinancial
+      asset, so the services are recognized as revenue and capitalized into the building.
   - id: C
-    text: $34,000
-    rationale: Correct. Dentist ($19,000) + kitchen renovation ($11,000) + interpreter ($4,000).
+    text: $361,000 construction in progress; $36,000 revenue
+    rationale: Correct. Construction in progress = $325,000 + $21,000 + $15,000; revenue = $21,000 + $15,000.
   - id: D
-    text: $40,000
-    rationale: Includes the $6,000 of the board member's time. Reviewing financial reports as a board
-      member is governance, not the specialized skill Castleton would otherwise purchase.
+    text: $363,500 construction in progress; $38,500 revenue
+    rationale: Includes the $2,500 of volunteer time at the groundbreaking ceremony. Handing out programs
+      needs no specialized skill and creates no asset, so it isn't recognized.
   answer: C
-  explanation: Contributed services are recognized if they (a) create or enhance a nonfinancial asset,
-    or (b) require specialized skills, are provided by people with those skills, and would typically need
-    to be purchased if not donated (ASC 958-605-25-16). The dentist's care meets test (b) ($19,000); the
-    plumbers' renovation enhances Castleton's kitchen, meeting test (a) regardless of their skill ($11,000);
-    the interpreter's specialized skill is used in its specialty and Castleton would otherwise have hired
-    an agency, meeting test (b) ($4,000). Front-desk volunteers need no specialized skill and create no
-    asset, and the engineer is exercising board governance, not the specialized skill Castleton would
-    otherwise purchase. Contributed services revenue = $34,000.
-- stem: During Year 1, Dunwoody Health Outreach, a not-for-profit entity, received these donated services.
-    A volunteer dentist provided free dental care at Dunwoody's clinic, care Dunwoody would otherwise
-    have paid a local practice $32,000 for. Volunteer plumbers, tradespeople who normally charge for their
-    work, renovated Dunwoody's community kitchen, replacing its fixtures and layout, labor worth $20,000.
-    A professional interpreter translated for non-English-speaking families at Dunwoody's one-day benefits
-    fair, work Dunwoody would otherwise have hired an agency to do, valued at $6,000 at her usual rate.
-    Other volunteers answered phones at Dunwoody's front desk, time worth $8,000 at local wage rates.
-    A retired engineer who serves on Dunwoody's board spent time reviewing Dunwoody's financial reports
-    at board meetings, time valued at $10,000 at her former consulting rate. What amount should Dunwoody
-    recognize as contributed services revenue for Year 1?
+  explanation: 'The architect''s drawings require specialized skills Castleton would otherwise buy, and
+    both they and the project manager''s supervision create a nonfinancial asset, the clinic (ASC 958-605-25-16).
+    Services that an affiliate''s personnel provide and that directly benefit Castleton are also recognized
+    (ASC 958-605-25, as amended by ASU 2013-06), measured here at $15,000, the hospital''s cost, which
+    is about their fair value. Each is recognized as contribution revenue and, because it creates the
+    building, capitalized: construction in progress = $325,000 + $21,000 + $15,000 = $361,000; revenue
+    = $21,000 + $15,000 = $36,000. The ceremony volunteers'' time needs no specialized skill and creates
+    no asset, so it isn''t recognized.'
+- stem: During Year 1, Dunwoody Health Outreach, a not-for-profit entity, began building a clinic, which
+    it will finish in Year 2. It paid its general contractor $540,000 for work through December 31. A
+    licensed architect donated the clinic's design drawings, work her firm would normally bill at $34,000.
+    Dunwoody's affiliate, a regional hospital, assigned one of its construction project managers to oversee
+    the clinic's construction part-time from March through December; the hospital kept paying her and
+    charged Dunwoody nothing, and her pay and benefits for that time, $24,000, are about what an outside
+    construction manager would have charged. Neighborhood volunteers handed out programs and served refreshments
+    at the groundbreaking ceremony, time worth $4,000 at local wage rates. What should Dunwoody report
+    at December 31, Year 1, as construction in progress, and as contribution revenue from contributed
+    services for Year 1?
   choices:
   - id: A
-    text: $38,000
-    rationale: Leaves out the $20,000 kitchen renovation. The plumbers' work enhanced a nonfinancial asset,
-      Dunwoody's kitchen, which is recognized whether or not the volunteers had a specialized skill.
+    text: $540,000 construction in progress; $58,000 revenue
+    rationale: Recognizes the donated services as revenue but expenses them, so construction in progress
+      holds only the $540,000 paid to the contractor. Contributed services that create a nonfinancial
+      asset are capitalized into that asset.
   - id: B
-    text: $58,000
-    rationale: Correct. Dentist ($32,000) + kitchen renovation ($20,000) + interpreter ($6,000).
+    text: $574,000 construction in progress; $58,000 revenue
+    rationale: Recognizes the project manager's $24,000 as revenue but expenses it instead of capitalizing
+      it. Supervising the construction is part of the cost of creating the building, so it is added to
+      construction in progress, as the architect's drawings are.
   - id: C
-    text: $66,000
-    rationale: Includes the $8,000 of front-desk volunteers. Answering phones needs no specialized skill
-      and creates no nonfinancial asset.
+    text: $598,000 construction in progress; $58,000 revenue
+    rationale: Correct. Construction in progress = $540,000 + $34,000 + $24,000; revenue = $34,000 + $24,000.
   - id: D
-    text: $68,000
-    rationale: Includes the $10,000 of the board member's time. Reviewing financial reports as a board
-      member is governance, not the specialized skill Dunwoody would otherwise purchase.
-  answer: B
-  explanation: Contributed services are recognized if they (a) create or enhance a nonfinancial asset,
-    or (b) require specialized skills, are provided by people with those skills, and would typically need
-    to be purchased if not donated (ASC 958-605-25-16). The dentist's care meets test (b) ($32,000); the
-    plumbers' renovation enhances Dunwoody's kitchen, meeting test (a) regardless of their skill ($20,000);
-    the interpreter's specialized skill is used in its specialty and Dunwoody would otherwise have hired
-    an agency, meeting test (b) ($6,000). Front-desk volunteers need no specialized skill and create no
-    asset, and the engineer is exercising board governance, not the specialized skill Dunwoody would otherwise
-    purchase. Contributed services revenue = $58,000.
-- stem: During Year 1, Elmcrest Health Outreach, a not-for-profit entity, received these donated services.
-    A volunteer dentist provided free dental care at Elmcrest's clinic, care Elmcrest would otherwise
-    have paid a local practice $15,000 for. Volunteer plumbers, tradespeople who normally charge for their
-    work, renovated Elmcrest's community kitchen, replacing its fixtures and layout, labor worth $9,000.
-    A professional interpreter translated for non-English-speaking families at Elmcrest's one-day benefits
-    fair, work Elmcrest would otherwise have hired an agency to do, valued at $3,500 at her usual rate.
-    Other volunteers answered phones at Elmcrest's front desk, time worth $4,000 at local wage rates.
-    A retired engineer who serves on Elmcrest's board spent time reviewing Elmcrest's financial reports
-    at board meetings, time valued at $5,000 at her former consulting rate. What amount should Elmcrest
-    recognize as contributed services revenue for Year 1?
-  choices:
-  - id: A
-    text: $18,500
-    rationale: Leaves out the $9,000 kitchen renovation. The plumbers' work enhanced a nonfinancial asset,
-      Elmcrest's kitchen, which is recognized whether or not the volunteers had a specialized skill.
-  - id: B
-    text: $24,000
-    rationale: Leaves out the $3,500 interpreter. Translating for attendees at the fair uses her specialized
-      skill, which Elmcrest would otherwise have paid an agency for, so it meets the second recognition
-      test.
-  - id: C
-    text: $27,500
-    rationale: Correct. Dentist ($15,000) + kitchen renovation ($9,000) + interpreter ($3,500).
-  - id: D
-    text: $31,500
-    rationale: Includes the $4,000 of front-desk volunteers. Answering phones needs no specialized skill
-      and creates no nonfinancial asset.
+    text: $602,000 construction in progress; $62,000 revenue
+    rationale: Includes the $4,000 of volunteer time at the groundbreaking ceremony. Handing out programs
+      needs no specialized skill and creates no asset, so it isn't recognized.
   answer: C
-  explanation: Contributed services are recognized if they (a) create or enhance a nonfinancial asset,
-    or (b) require specialized skills, are provided by people with those skills, and would typically need
-    to be purchased if not donated (ASC 958-605-25-16). The dentist's care meets test (b) ($15,000); the
-    plumbers' renovation enhances Elmcrest's kitchen, meeting test (a) regardless of their skill ($9,000);
-    the interpreter's specialized skill is used in its specialty and Elmcrest would otherwise have hired
-    an agency, meeting test (b) ($3,500). Front-desk volunteers need no specialized skill and create no
-    asset, and the engineer is exercising board governance, not the specialized skill Elmcrest would otherwise
-    purchase. Contributed services revenue = $27,500.
+  explanation: 'The architect''s drawings require specialized skills Dunwoody would otherwise buy, and
+    both they and the project manager''s supervision create a nonfinancial asset, the clinic (ASC 958-605-25-16).
+    Services that an affiliate''s personnel provide and that directly benefit Dunwoody are also recognized
+    (ASC 958-605-25, as amended by ASU 2013-06), measured here at $24,000, the hospital''s cost, which
+    is about their fair value. Each is recognized as contribution revenue and, because it creates the
+    building, capitalized: construction in progress = $540,000 + $34,000 + $24,000 = $598,000; revenue
+    = $34,000 + $24,000 = $58,000. The ceremony volunteers'' time needs no specialized skill and creates
+    no asset, so it isn''t recognized.'
+- stem: During Year 1, Elmcrest Health Outreach, a not-for-profit entity, began building a clinic, which
+    it will finish in Year 2. It paid its general contractor $275,000 for work through December 31. A
+    licensed architect donated the clinic's design drawings, work her firm would normally bill at $17,000.
+    Elmcrest's affiliate, a regional hospital, assigned one of its construction project managers to oversee
+    the clinic's construction part-time from March through December; the hospital kept paying her and
+    charged Elmcrest nothing, and her pay and benefits for that time, $12,000, are about what an outside
+    construction manager would have charged. Neighborhood volunteers handed out programs and served refreshments
+    at the groundbreaking ceremony, time worth $2,000 at local wage rates. What should Elmcrest report
+    at December 31, Year 1, as construction in progress, and as contribution revenue from contributed
+    services for Year 1?
+  choices:
+  - id: A
+    text: $275,000 construction in progress; $29,000 revenue
+    rationale: Recognizes the donated services as revenue but expenses them, so construction in progress
+      holds only the $275,000 paid to the contractor. Contributed services that create a nonfinancial
+      asset are capitalized into that asset.
+  - id: B
+    text: $292,000 construction in progress; $17,000 revenue
+    rationale: Leaves out the project manager's $12,000. Services from an affiliate's personnel that directly
+      benefit Elmcrest are recognized, and her supervision of the construction also creates a nonfinancial
+      asset, so the services are recognized as revenue and capitalized into the building.
+  - id: C
+    text: $292,000 construction in progress; $29,000 revenue
+    rationale: Recognizes the project manager's $12,000 as revenue but expenses it instead of capitalizing
+      it. Supervising the construction is part of the cost of creating the building, so it is added to
+      construction in progress, as the architect's drawings are.
+  - id: D
+    text: $304,000 construction in progress; $29,000 revenue
+    rationale: Correct. Construction in progress = $275,000 + $17,000 + $12,000; revenue = $17,000 + $12,000.
+  answer: D
+  explanation: 'The architect''s drawings require specialized skills Elmcrest would otherwise buy, and
+    both they and the project manager''s supervision create a nonfinancial asset, the clinic (ASC 958-605-25-16).
+    Services that an affiliate''s personnel provide and that directly benefit Elmcrest are also recognized
+    (ASC 958-605-25, as amended by ASU 2013-06), measured here at $12,000, the hospital''s cost, which
+    is about their fair value. Each is recognized as contribution revenue and, because it creates the
+    building, capitalized: construction in progress = $275,000 + $17,000 + $12,000 = $304,000; revenue
+    = $17,000 + $12,000 = $29,000. The ceremony volunteers'' time needs no specialized skill and creates
+    no asset, so it isn''t recognized.'

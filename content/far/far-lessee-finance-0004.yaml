@@ -8,134 +8,134 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 842-10-15-30 to 15-35 (lease payments; residual value guarantees)
-  - ASC 842-20-30 (initial measurement of the right-of-use asset)
+  - 'ASC 842-10-30-5(f) (lease payments: residual value guarantees owed by the lessee)'
+  - ASC 842-20-30-5 (initial measurement of the right-of-use asset; initial direct costs)
   notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
-stem: On January 1, Year 1, Tredinnick Fabrication Co. leases a forging press, which has no alternative
-  use to the lessor at the end of the term, for 5 years and classifies the lease as a finance lease. Payments
-  of $60,000 are due each December 31. An insurance company unrelated to Tredinnick — not Tredinnick itself
-  and not a party related to Tredinnick — has separately guaranteed the lessor a residual value of $30,000
-  for the equipment at lease end. Tredinnick paid $9,000 at commencement, an incremental cost of obtaining
-  the lease. The rate implicit in the lease isn't readily determinable, and Tredinnick's incremental borrowing
-  rate is 7%. What amount should Tredinnick initially recognize as its right-of-use asset?
+    Reworked after the 2026-10-05 review gate.
+stem: On January 1, Year 1, Tredinnick Fabrication Co. leases a forging press for 5 years and classifies
+  the lease as a finance lease. Payments of $60,000 are due each December 31. The lessor separately bought
+  residual value insurance from Harbor Mutual, which guarantees the lessor $30,000 for the equipment at
+  lease end. Tredinnick paid a $9,000 broker commission, due only because the lease was signed. The rate
+  implicit in the lease isn't readily determinable, and Tredinnick's incremental borrowing rate is 7%;
+  present value factors at 7% for 5 periods are 4.1002 for an ordinary annuity, 4.3872 for an annuity
+  due and 0.7130 for a single sum. What amount should Tredinnick initially recognize as its right-of-use
+  asset?
 choices:
 - id: A
   text: $246,012
-  rationale: Leaves out the $9,000 of initial direct costs, which Tredinnick adds to the right-of-use
-    asset.
+  rationale: Leaves out the $9,000 broker commission. A commission owed only because the lease was signed
+    is an initial direct cost, added to the right-of-use asset (ASC 842-20-30-5).
 - id: B
   text: $255,012
   rationale: Correct. $60,000 × 4.1002 = $246,012, + $9,000 of initial direct costs.
 - id: C
   text: $272,232
-  rationale: Discounts the payments as an annuity due. Payments are due at the end of each year, so the
-    ordinary annuity factor applies.
+  rationale: Discounts the payments as an annuity due ($60,000 × 4.3872). Payments are due at the end
+    of each year, so the ordinary annuity factor applies.
 - id: D
   text: $276,402
-  rationale: Adds $30,000 × 0.7130 = $21,390 for the insurer's residual value guarantee. A residual value
-    guarantee by a party unrelated to Tredinnick isn't a lease payment, no matter how likely it is to
-    be paid (ASC 842-10-15-30 to 15-35); only a guarantee by the lessee or a party related to the lessee
-    is included.
+  rationale: Adds $30,000 × 0.7130 = $21,390 for Harbor Mutual's residual value guarantee. Lease payments
+    include only amounts probable of being owed by the lessee under a residual value guarantee (ASC 842-10-30-5(f));
+    Tredinnick owes nothing under insurance the lessor bought from an unrelated insurer.
 answer: B
-explanation: 'Lease payments include an amount probable of being owed under a residual value guarantee
-  only when the lessee or a party related to the lessee made the guarantee; a guarantee by an unrelated
-  third party, such as the insurer here, isn''t a lease payment at all (ASC 842-10-15-30 to 15-35), whatever
-  its amount or probability. The lease liability is the present value of the payments: $60,000 × 4.1002
-  = $246,012. The right-of-use asset adds the $9,000 of initial direct costs Tredinnick paid: $246,012
-  + $9,000 = $255,012.'
+explanation: 'Lease payments include amounts probable of being owed by the lessee under a residual value
+  guarantee (ASC 842-10-30-5(f)). The guarantee here is insurance the lessor bought from Harbor Mutual;
+  Tredinnick isn''t a party to it and owes nothing under it, so it isn''t a lease payment, whatever its
+  amount. The lease liability is the present value of the payments, due at year-end: $60,000 × 4.1002
+  = $246,012. The right-of-use asset adds the $9,000 commission, an initial direct cost (ASC 842-20-30-5):
+  $246,012 + $9,000 = $255,012.'
 variants:
-- stem: On January 1, Year 1, Ushant Mills Co. leases an extrusion line, which has no alternative use
-    to the lessor at the end of the term, for 6 years and classifies the lease as a finance lease. Payments
-    of $45,000 are due each December 31. An insurance company unrelated to Ushant — not Ushant itself
-    and not a party related to Ushant — has separately guaranteed the lessor a residual value of $22,000
-    for the equipment at lease end. Ushant paid $7,000 at commencement, an incremental cost of obtaining
-    the lease. The rate implicit in the lease isn't readily determinable, and Ushant's incremental borrowing
-    rate is 6%. What amount should Ushant initially recognize as its right-of-use asset?
+- stem: On January 1, Year 1, Ushant Mills Co. leases an extrusion line for 6 years and classifies the
+    lease as a finance lease. Payments of $45,000 are due each December 31. The lessor separately bought
+    residual value insurance from Keystone Surety, which guarantees the lessor $22,000 for the equipment
+    at lease end. Ushant paid a $7,000 broker commission, due only because the lease was signed. The rate
+    implicit in the lease isn't readily determinable, and Ushant's incremental borrowing rate is 6%; present
+    value factors at 6% for 6 periods are 4.9173 for an ordinary annuity, 5.2124 for an annuity due and
+    0.7050 for a single sum. What amount should Ushant initially recognize as its right-of-use asset?
   choices:
   - id: A
-    text: $221,279
-    rationale: Leaves out the $7,000 of initial direct costs, which Ushant adds to the right-of-use asset.
-  - id: B
     text: $228,279
     rationale: Correct. $45,000 × 4.9173 = $221,279, + $7,000 of initial direct costs.
+  - id: B
+    text: $241,558
+    rationale: Discounts the payments as an annuity due ($45,000 × 5.2124). Payments are due at the end
+      of each year, so the ordinary annuity factor applies.
   - id: C
-    text: $236,034
-    rationale: Includes half of $22,000 × 0.7050, as if only the probable part of the insurer's guarantee
-      counted. The guarantee is excluded entirely because an unrelated third party made it, not because
-      of how likely it is to be paid.
-  - id: D
     text: $243,789
-    rationale: Adds $22,000 × 0.7050 = $15,510 for the insurer's residual value guarantee. A residual
-      value guarantee by a party unrelated to Ushant isn't a lease payment, no matter how likely it is
-      to be paid (ASC 842-10-15-30 to 15-35); only a guarantee by the lessee or a party related to the
-      lessee is included.
-  answer: B
-  explanation: 'Lease payments include an amount probable of being owed under a residual value guarantee
-    only when the lessee or a party related to the lessee made the guarantee; a guarantee by an unrelated
-    third party, such as the insurer here, isn''t a lease payment at all (ASC 842-10-15-30 to 15-35),
-    whatever its amount or probability. The lease liability is the present value of the payments: $45,000
-    × 4.9173 = $221,279. The right-of-use asset adds the $7,000 of initial direct costs Ushant paid: $221,279
-    + $7,000 = $228,279.'
-- stem: On January 1, Year 1, Veryan Forgeworks Co. leases a stamping press, which has no alternative
-    use to the lessor at the end of the term, for 4 years and classifies the lease as a finance lease.
-    Payments of $80,000 are due each December 31. An insurance company unrelated to Veryan — not Veryan
-    itself and not a party related to Veryan — has separately guaranteed the lessor a residual value of
-    $35,000 for the equipment at lease end. Veryan paid $12,000 at commencement, an incremental cost of
-    obtaining the lease. The rate implicit in the lease isn't readily determinable, and Veryan's incremental
-    borrowing rate is 8%. What amount should Veryan initially recognize as its right-of-use asset?
+    rationale: Adds $22,000 × 0.7050 = $15,510 for Keystone Surety's residual value guarantee. Lease payments
+      include only amounts probable of being owed by the lessee under a residual value guarantee (ASC
+      842-10-30-5(f)); Ushant owes nothing under insurance the lessor bought from an unrelated insurer.
+  - id: D
+    text: $250,279
+    rationale: Adds the full $22,000 guarantee, undiscounted. Ushant owes nothing under the insurer's
+      guarantee, so it isn't a lease payment at all (ASC 842-10-30-5(f)).
+  answer: A
+  explanation: 'Lease payments include amounts probable of being owed by the lessee under a residual value
+    guarantee (ASC 842-10-30-5(f)). The guarantee here is insurance the lessor bought from Keystone Surety;
+    Ushant isn''t a party to it and owes nothing under it, so it isn''t a lease payment, whatever its
+    amount. The lease liability is the present value of the payments, due at year-end: $45,000 × 4.9173
+    = $221,279. The right-of-use asset adds the $7,000 commission, an initial direct cost (ASC 842-20-30-5):
+    $221,279 + $7,000 = $228,279.'
+- stem: On January 1, Year 1, Veryan Forgeworks Co. leases a stamping press for 4 years and classifies
+    the lease as a finance lease. Payments of $80,000 are due each December 31. The lessor separately
+    bought residual value insurance from Lantern Indemnity, which guarantees the lessor $35,000 for the
+    equipment at lease end. Veryan paid a $12,000 broker commission, due only because the lease was signed.
+    The rate implicit in the lease isn't readily determinable, and Veryan's incremental borrowing rate
+    is 8%; present value factors at 8% for 4 periods are 3.3121 for an ordinary annuity, 3.5771 for an
+    annuity due and 0.7350 for a single sum. What amount should Veryan initially recognize as its right-of-use
+    asset?
   choices:
   - id: A
     text: $264,968
-    rationale: Leaves out the $12,000 of initial direct costs, which Veryan adds to the right-of-use asset.
+    rationale: Leaves out the $12,000 broker commission. A commission owed only because the lease was
+      signed is an initial direct cost, added to the right-of-use asset (ASC 842-20-30-5).
   - id: B
     text: $276,968
     rationale: Correct. $80,000 × 3.3121 = $264,968, + $12,000 of initial direct costs.
   - id: C
-    text: $289,831
-    rationale: Includes half of $35,000 × 0.7350, as if only the probable part of the insurer's guarantee
-      counted. The guarantee is excluded entirely because an unrelated third party made it, not because
-      of how likely it is to be paid.
-  - id: D
     text: $298,168
-    rationale: Discounts the payments as an annuity due. Payments are due at the end of each year, so
-      the ordinary annuity factor applies.
+    rationale: Discounts the payments as an annuity due ($80,000 × 3.5771). Payments are due at the end
+      of each year, so the ordinary annuity factor applies.
+  - id: D
+    text: $311,968
+    rationale: Adds the full $35,000 guarantee, undiscounted. Veryan owes nothing under the insurer's
+      guarantee, so it isn't a lease payment at all (ASC 842-10-30-5(f)).
   answer: B
-  explanation: 'Lease payments include an amount probable of being owed under a residual value guarantee
-    only when the lessee or a party related to the lessee made the guarantee; a guarantee by an unrelated
-    third party, such as the insurer here, isn''t a lease payment at all (ASC 842-10-15-30 to 15-35),
-    whatever its amount or probability. The lease liability is the present value of the payments: $80,000
-    × 3.3121 = $264,968. The right-of-use asset adds the $12,000 of initial direct costs Veryan paid:
+  explanation: 'Lease payments include amounts probable of being owed by the lessee under a residual value
+    guarantee (ASC 842-10-30-5(f)). The guarantee here is insurance the lessor bought from Lantern Indemnity;
+    Veryan isn''t a party to it and owes nothing under it, so it isn''t a lease payment, whatever its
+    amount. The lease liability is the present value of the payments, due at year-end: $80,000 × 3.3121
+    = $264,968. The right-of-use asset adds the $12,000 commission, an initial direct cost (ASC 842-20-30-5):
     $264,968 + $12,000 = $276,968.'
-- stem: On January 1, Year 1, Wendron Castings Co. leases a die-casting machine, which has no alternative
-    use to the lessor at the end of the term, for 5 years and classifies the lease as a finance lease.
-    Payments of $52,000 are due each December 31. An insurance company unrelated to Wendron — not Wendron
-    itself and not a party related to Wendron — has separately guaranteed the lessor a residual value
-    of $26,000 for the equipment at lease end. Wendron paid $8,000 at commencement, an incremental cost
-    of obtaining the lease. The rate implicit in the lease isn't readily determinable, and Wendron's incremental
-    borrowing rate is 6.5%. What amount should Wendron initially recognize as its right-of-use asset?
+- stem: On January 1, Year 1, Wendron Castings Co. leases a die-casting machine for 5 years and classifies
+    the lease as a finance lease. Payments of $52,000 are due each December 31. The lessor separately
+    bought residual value insurance from Meridian Assurance, which guarantees the lessor $26,000 for the
+    equipment at lease end. Wendron paid an $8,000 broker commission, due only because the lease was signed.
+    The rate implicit in the lease isn't readily determinable, and Wendron's incremental borrowing rate
+    is 6.5%; present value factors at 6.5% for 5 periods are 4.1557 for an ordinary annuity, 4.4258 for
+    an annuity due and 0.7299 for a single sum. What amount should Wendron initially recognize as its
+    right-of-use asset?
   choices:
   - id: A
     text: $224,096
     rationale: Correct. $52,000 × 4.1557 = $216,096, + $8,000 of initial direct costs.
   - id: B
-    text: $233,585
-    rationale: Includes half of $26,000 × 0.7299, as if only the probable part of the insurer's guarantee
-      counted. The guarantee is excluded entirely because an unrelated third party made it, not because
-      of how likely it is to be paid.
-  - id: C
     text: $238,142
-    rationale: Discounts the payments as an annuity due. Payments are due at the end of each year, so
-      the ordinary annuity factor applies.
-  - id: D
+    rationale: Discounts the payments as an annuity due ($52,000 × 4.4258). Payments are due at the end
+      of each year, so the ordinary annuity factor applies.
+  - id: C
     text: $243,073
-    rationale: Adds $26,000 × 0.7299 = $18,977 for the insurer's residual value guarantee. A residual
-      value guarantee by a party unrelated to Wendron isn't a lease payment, no matter how likely it is
-      to be paid (ASC 842-10-15-30 to 15-35); only a guarantee by the lessee or a party related to the
-      lessee is included.
+    rationale: Adds $26,000 × 0.7299 = $18,977 for Meridian Assurance's residual value guarantee. Lease
+      payments include only amounts probable of being owed by the lessee under a residual value guarantee
+      (ASC 842-10-30-5(f)); Wendron owes nothing under insurance the lessor bought from an unrelated insurer.
+  - id: D
+    text: $250,096
+    rationale: Adds the full $26,000 guarantee, undiscounted. Wendron owes nothing under the insurer's
+      guarantee, so it isn't a lease payment at all (ASC 842-10-30-5(f)).
   answer: A
-  explanation: 'Lease payments include an amount probable of being owed under a residual value guarantee
-    only when the lessee or a party related to the lessee made the guarantee; a guarantee by an unrelated
-    third party, such as the insurer here, isn''t a lease payment at all (ASC 842-10-15-30 to 15-35),
-    whatever its amount or probability. The lease liability is the present value of the payments: $52,000
-    × 4.1557 = $216,096. The right-of-use asset adds the $8,000 of initial direct costs Wendron paid:
+  explanation: 'Lease payments include amounts probable of being owed by the lessee under a residual value
+    guarantee (ASC 842-10-30-5(f)). The guarantee here is insurance the lessor bought from Meridian Assurance;
+    Wendron isn''t a party to it and owes nothing under it, so it isn''t a lease payment, whatever its
+    amount. The lease liability is the present value of the payments, due at year-end: $52,000 × 4.1557
+    = $216,096. The right-of-use asset adds the $8,000 commission, an initial direct cost (ASC 842-20-30-5):
     $216,096 + $8,000 = $224,096.'

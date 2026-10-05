@@ -10,6 +10,7 @@ review:
   references:
   - ASC 606-10-55-36 to 55-40 (principal versus agent indicators)
   notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+    Reworked after the 2026-10-05 review gate.
 stem: BrightRide Inc. operates a ride-hailing app. Drivers are independent contractors who own their vehicles,
   decide whether to accept each ride request, and are responsible for safely completing the trip and resolving
   any problem with it; BrightRide sets the fare for every ride with its own pricing algorithm and collects
@@ -19,28 +20,32 @@ stem: BrightRide Inc. operates a ride-hailing app. Drivers are independent contr
   the month. What total revenue should BrightRide recognize for the month?
 choices:
 - id: A
+  text: $60,000
+  rationale: Omits the $170,000 ride commission, as if BrightRide earned nothing from arranging rides.
+    As an agent, BrightRide still recognizes its own fee.
+- id: B
   text: $170,000
   rationale: Omits the $60,000 of subscription revenue. BrightRide provides the subscription perks itself,
     with no third party involved, so that revenue is recognized gross.
-- id: B
+- id: C
   text: $230,000
   rationale: Correct. Ride commission (20% × $850,000 = $170,000) as agent, plus subscription revenue
     ($15 × 4,000 = $60,000) as principal.
-- id: C
-  text: $740,000
-  rationale: Recognizes the 80% of each fare paid to the driver instead of the 20% BrightRide keeps.
 - id: D
   text: $910,000
   rationale: Reports the ride fares gross, $850,000. The drivers — not BrightRide — are responsible for
     safely completing each trip and bear the risk of a problem with it, so BrightRide is an agent for
     the fares despite setting the price, and recognizes only its 20% fee.
-answer: B
-explanation: 'An entity is a principal if it controls the good or service before it transfers to the customer;
-  a key indicator is primary responsibility for fulfilling the promise. Here the drivers, not BrightRide,
-  are responsible for completing each ride and bear the risk of a problem with it, so BrightRide is an
-  agent for the ride fares even though it sets the price and collects the cash: it recognizes only its
-  $170,000 fee (20% × $850,000). The subscription is BrightRide''s own service, with no other party involved,
-  so it is recognized gross: $15 × 4,000 = $60,000. Total revenue = $230,000.'
+answer: C
+explanation: 'An entity is a principal if it controls the specified service before it is transferred to
+  the customer (ASC 606-10-55-36 to 55-40). The indicators point in different directions here: BrightRide
+  sets the price, which is a principal indicator, but the drivers decide whether to accept each ride,
+  provide it with their own vehicles and are primarily responsible for completing it and resolving any
+  problem. BrightRide never directs a driver to perform a ride, so it doesn''t control the ride service
+  before the rider receives it; pricing discretion alone doesn''t establish control. BrightRide is therefore
+  an agent for the fares and recognizes only its fee: 20% × $850,000 = $170,000. The subscription is BrightRide''s
+  own service, with no other party involved, so it is recognized gross: $15 × 4,000 = $60,000. Total revenue
+  = $230,000.'
 variants:
 - stem: SwiftHail Co. operates a ride-hailing app. Drivers are independent contractors who own their vehicles,
     decide whether to accept each ride request, and are responsible for safely completing the trip and
@@ -51,29 +56,31 @@ variants:
     during the month. What total revenue should SwiftHail recognize for the month?
   choices:
   - id: A
-    text: $42,000
-    rationale: Omits the $155,000 ride commission, as if SwiftHail earned nothing from arranging rides.
-      As an agent, SwiftHail still recognizes its own fee.
-  - id: B
     text: $155,000
     rationale: Omits the $42,000 of subscription revenue. SwiftHail provides the subscription perks itself,
       with no third party involved, so that revenue is recognized gross.
-  - id: C
+  - id: B
     text: $197,000
     rationale: Correct. Ride commission (25% × $620,000 = $155,000) as agent, plus subscription revenue
       ($12 × 3,500 = $42,000) as principal.
+  - id: C
+    text: $507,000
+    rationale: Recognizes the 75% of each fare paid to the driver instead of the 25% SwiftHail keeps.
   - id: D
     text: $662,000
     rationale: Reports the ride fares gross, $620,000. The drivers — not SwiftHail — are responsible for
       safely completing each trip and bear the risk of a problem with it, so SwiftHail is an agent for
       the fares despite setting the price, and recognizes only its 25% fee.
-  answer: C
-  explanation: 'An entity is a principal if it controls the good or service before it transfers to the
-    customer; a key indicator is primary responsibility for fulfilling the promise. Here the drivers,
-    not SwiftHail, are responsible for completing each ride and bear the risk of a problem with it, so
-    SwiftHail is an agent for the ride fares even though it sets the price and collects the cash: it recognizes
-    only its $155,000 fee (25% × $620,000). The subscription is SwiftHail''s own service, with no other
-    party involved, so it is recognized gross: $12 × 3,500 = $42,000. Total revenue = $197,000.'
+  answer: B
+  explanation: 'An entity is a principal if it controls the specified service before it is transferred
+    to the customer (ASC 606-10-55-36 to 55-40). The indicators point in different directions here: SwiftHail
+    sets the price, which is a principal indicator, but the drivers decide whether to accept each ride,
+    provide it with their own vehicles and are primarily responsible for completing it and resolving any
+    problem. SwiftHail never directs a driver to perform a ride, so it doesn''t control the ride service
+    before the rider receives it; pricing discretion alone doesn''t establish control. SwiftHail is therefore
+    an agent for the fares and recognizes only its fee: 25% × $620,000 = $155,000. The subscription is
+    SwiftHail''s own service, with no other party involved, so it is recognized gross: $12 × 3,500 = $42,000.
+    Total revenue = $197,000.'
 - stem: UrbanGo Co. operates a ride-hailing app. Drivers are independent contractors who own their vehicles,
     decide whether to accept each ride request, and are responsible for safely completing the trip and
     resolving any problem with it; UrbanGo sets the fare for every ride with its own pricing algorithm
@@ -87,24 +94,28 @@ variants:
     rationale: Omits the $187,200 ride commission, as if UrbanGo earned nothing from arranging rides.
       As an agent, UrbanGo still recognizes its own fee.
   - id: B
+    text: $187,200
+    rationale: Omits the $60,000 of subscription revenue. UrbanGo provides the subscription perks itself,
+      with no third party involved, so that revenue is recognized gross.
+  - id: C
     text: $247,200
     rationale: Correct. Ride commission (18% × $1,040,000 = $187,200) as agent, plus subscription revenue
       ($10 × 6,000 = $60,000) as principal.
-  - id: C
-    text: $912,800
-    rationale: Recognizes the 82% of each fare paid to the driver instead of the 18% UrbanGo keeps.
   - id: D
     text: $1,100,000
     rationale: Reports the ride fares gross, $1,040,000. The drivers — not UrbanGo — are responsible for
       safely completing each trip and bear the risk of a problem with it, so UrbanGo is an agent for the
       fares despite setting the price, and recognizes only its 18% fee.
-  answer: B
-  explanation: 'An entity is a principal if it controls the good or service before it transfers to the
-    customer; a key indicator is primary responsibility for fulfilling the promise. Here the drivers,
-    not UrbanGo, are responsible for completing each ride and bear the risk of a problem with it, so UrbanGo
-    is an agent for the ride fares even though it sets the price and collects the cash: it recognizes
-    only its $187,200 fee (18% × $1,040,000). The subscription is UrbanGo''s own service, with no other
-    party involved, so it is recognized gross: $10 × 6,000 = $60,000. Total revenue = $247,200.'
+  answer: C
+  explanation: 'An entity is a principal if it controls the specified service before it is transferred
+    to the customer (ASC 606-10-55-36 to 55-40). The indicators point in different directions here: UrbanGo
+    sets the price, which is a principal indicator, but the drivers decide whether to accept each ride,
+    provide it with their own vehicles and are primarily responsible for completing it and resolving any
+    problem. UrbanGo never directs a driver to perform a ride, so it doesn''t control the ride service
+    before the rider receives it; pricing discretion alone doesn''t establish control. UrbanGo is therefore
+    an agent for the fares and recognizes only its fee: 18% × $1,040,000 = $187,200. The subscription
+    is UrbanGo''s own service, with no other party involved, so it is recognized gross: $10 × 6,000 =
+    $60,000. Total revenue = $247,200.'
 - stem: ZipFleet Co. operates a ride-hailing app. Drivers are independent contractors who own their vehicles,
     decide whether to accept each ride request, and are responsible for safely completing the trip and
     resolving any problem with it; ZipFleet sets the fare for every ride with its own pricing algorithm
@@ -129,9 +140,12 @@ variants:
     text: $380,400
     rationale: Recognizes the 78% of each fare paid to the driver instead of the 22% ZipFleet keeps.
   answer: C
-  explanation: 'An entity is a principal if it controls the good or service before it transfers to the
-    customer; a key indicator is primary responsibility for fulfilling the promise. Here the drivers,
-    not ZipFleet, are responsible for completing each ride and bear the risk of a problem with it, so
-    ZipFleet is an agent for the ride fares even though it sets the price and collects the cash: it recognizes
-    only its $94,600 fee (22% × $430,000). The subscription is ZipFleet''s own service, with no other
-    party involved, so it is recognized gross: $18 × 2,500 = $45,000. Total revenue = $139,600.'
+  explanation: 'An entity is a principal if it controls the specified service before it is transferred
+    to the customer (ASC 606-10-55-36 to 55-40). The indicators point in different directions here: ZipFleet
+    sets the price, which is a principal indicator, but the drivers decide whether to accept each ride,
+    provide it with their own vehicles and are primarily responsible for completing it and resolving any
+    problem. ZipFleet never directs a driver to perform a ride, so it doesn''t control the ride service
+    before the rider receives it; pricing discretion alone doesn''t establish control. ZipFleet is therefore
+    an agent for the fares and recognizes only its fee: 22% × $430,000 = $94,600. The subscription is
+    ZipFleet''s own service, with no other party involved, so it is recognized gross: $18 × 2,500 = $45,000.
+    Total revenue = $139,600.'
