@@ -1,0 +1,125 @@
+id: far-subsequent-events-0018
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: draft
+  references:
+  - ASC 855-10-25 (subsequent event confirming a condition that existed at the balance sheet date)
+  - ASC 855-10-50 (nonrecognized subsequent events, including later equity transactions)
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Hallowfield Textiles Co.'s draft December 31, 1, balance sheet reports retained earnings of $5,240,000,
+  which includes a $140,000 accrual for a penalty Hallowfield expected to owe a customer for missing a
+  1 delivery deadline specified in their contract. The statements will be issued on March 12, 2. In January,
+  Hallowfield and the customer finished negotiating the penalty and fixed it at $95,000. In February,
+  Hallowfield's board also declared a 5% stock dividend, recorded at $260,000. Hallowfield's tax rate
+  is 25% for all effects. What retained earnings should Hallowfield report at December 31, 1?
+choices:
+- id: A
+  text: $5,013,750
+  rationale: Also deducts $260,000 for the stock dividend the board declared in February. A stock dividend
+    declared after year-end is recorded in 2; it doesn't change the December 31, 1, balance of retained
+    earnings.
+- id: B
+  text: $5,206,250
+  rationale: Subtracts the adjustment. The renegotiated penalty is lower than the amount accrued at year-end,
+    so the correction raises retained earnings, net of tax.
+- id: C
+  text: $5,273,750
+  rationale: Correct. $5,240,000 + ($140,000 − $95,000) × 75%.
+- id: D
+  text: $5,285,000
+  rationale: Adds the full pretax $45,000 reduction in the penalty, without its 25% tax effect.
+answer: C
+explanation: 'The negotiated penalty confirms the amount of an obligation that existed at year-end, so
+  the $140,000 accrual is adjusted down to $95,000: a $45,000 reduction in expense, net of tax at 75%
+  = $33,750 increase to retained earnings. The stock dividend is declared and recorded in 2; it has no
+  effect on the December 31, 1, balance. Corrected retained earnings = $5,240,000 + $33,750 = $5,273,750.'
+variants:
+- stem: Marplewood Fabrics Co.'s draft December 31, 2, balance sheet reports retained earnings of $4,180,000,
+    which includes a $110,000 accrual for a penalty Marplewood expected to owe a customer for missing
+    a 2 delivery deadline specified in their contract. The statements will be issued on April 1, 3. In
+    February, Marplewood and the customer finished negotiating the penalty and fixed it at $72,000. In
+    March, Marplewood's board also declared a 4% stock dividend, recorded at $190,000. Marplewood's tax
+    rate is 21% for all effects. What retained earnings should Marplewood report at December 31, 2?
+  choices:
+  - id: A
+    text: $4,020,020
+    rationale: Also deducts $190,000 for the stock dividend the board declared in March. A stock dividend
+      declared after year-end is recorded in 3; it doesn't change the December 31, 2, balance of retained
+      earnings.
+  - id: B
+    text: $4,149,980
+    rationale: Subtracts the adjustment. The renegotiated penalty is lower than the amount accrued at
+      year-end, so the correction raises retained earnings, net of tax.
+  - id: C
+    text: $4,180,000
+    rationale: Accepts the draft $4,180,000 without adjusting for the penalty renegotiation, which confirms
+      that the liability at year-end was lower than accrued.
+  - id: D
+    text: $4,210,020
+    rationale: Correct. $4,180,000 + ($110,000 − $72,000) × 79%.
+  answer: D
+  explanation: 'The negotiated penalty confirms the amount of an obligation that existed at year-end,
+    so the $110,000 accrual is adjusted down to $72,000: a $38,000 reduction in expense, net of tax at
+    79% = $30,020 increase to retained earnings. The stock dividend is declared and recorded in 3; it
+    has no effect on the December 31, 2, balance. Corrected retained earnings = $4,180,000 + $30,020 =
+    $4,210,020.'
+- stem: Oakenshaw Goods Co.'s draft December 31, 3, balance sheet reports retained earnings of $6,360,000,
+    which includes a $175,000 accrual for a penalty Oakenshaw expected to owe a customer for missing a
+    3 delivery deadline specified in their contract. The statements will be issued on March 9, 4. In January,
+    Oakenshaw and the customer finished negotiating the penalty and fixed it at $120,000. In February,
+    Oakenshaw's board also declared a 6% stock dividend, recorded at $340,000. Oakenshaw's tax rate is
+    25% for all effects. What retained earnings should Oakenshaw report at December 31, 3?
+  choices:
+  - id: A
+    text: $6,061,250
+    rationale: Also deducts $340,000 for the stock dividend the board declared in February. A stock dividend
+      declared after year-end is recorded in 4; it doesn't change the December 31, 3, balance of retained
+      earnings.
+  - id: B
+    text: $6,360,000
+    rationale: Accepts the draft $6,360,000 without adjusting for the penalty renegotiation, which confirms
+      that the liability at year-end was lower than accrued.
+  - id: C
+    text: $6,401,250
+    rationale: Correct. $6,360,000 + ($175,000 − $120,000) × 75%.
+  - id: D
+    text: $6,415,000
+    rationale: Adds the full pretax $55,000 reduction in the penalty, without its 25% tax effect.
+  answer: C
+  explanation: 'The negotiated penalty confirms the amount of an obligation that existed at year-end,
+    so the $175,000 accrual is adjusted down to $120,000: a $55,000 reduction in expense, net of tax at
+    75% = $41,250 increase to retained earnings. The stock dividend is declared and recorded in 4; it
+    has no effect on the December 31, 3, balance. Corrected retained earnings = $6,360,000 + $41,250 =
+    $6,401,250.'
+- stem: Brimsdale Products Co.'s draft December 31, 4, balance sheet reports retained earnings of $3,540,000,
+    which includes a $90,000 accrual for a penalty Brimsdale expected to owe a customer for missing a
+    4 delivery deadline specified in their contract. The statements will be issued on April 5, 5. In February,
+    Brimsdale and the customer finished negotiating the penalty and fixed it at $58,000. In March, Brimsdale's
+    board also declared a 5% stock dividend, recorded at $160,000. Brimsdale's tax rate is 21% for all
+    effects. What retained earnings should Brimsdale report at December 31, 4?
+  choices:
+  - id: A
+    text: $3,514,720
+    rationale: Subtracts the adjustment. The renegotiated penalty is lower than the amount accrued at
+      year-end, so the correction raises retained earnings, net of tax.
+  - id: B
+    text: $3,540,000
+    rationale: Accepts the draft $3,540,000 without adjusting for the penalty renegotiation, which confirms
+      that the liability at year-end was lower than accrued.
+  - id: C
+    text: $3,565,280
+    rationale: Correct. $3,540,000 + ($90,000 − $58,000) × 79%.
+  - id: D
+    text: $3,572,000
+    rationale: Adds the full pretax $32,000 reduction in the penalty, without its 21% tax effect.
+  answer: C
+  explanation: 'The negotiated penalty confirms the amount of an obligation that existed at year-end,
+    so the $90,000 accrual is adjusted down to $58,000: a $32,000 reduction in expense, net of tax at
+    79% = $25,280 increase to retained earnings. The stock dividend is declared and recorded in 5; it
+    has no effect on the December 31, 4, balance. Corrected retained earnings = $3,540,000 + $25,280 =
+    $3,565,280.'

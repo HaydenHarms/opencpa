@@ -17,16 +17,16 @@ stem: During Year 2, Hask Co. buys several financial assets, in each case giving
   no election available to do otherwise?
 choices:
 - id: A
+  text: Shares of a publicly traded company that Hask does not intend to sell soon
+  rationale: Correct. An equity security with a readily determinable fair value is measured at fair value
+    through net income; since ASU 2016-01 eliminated the available-for-sale category for equity securities,
+    there is no election to defer the change in other comprehensive income.
+- id: B
   text: Shares of a private company with no readily determinable fair value, for which Hask elects the
     measurement alternative
   rationale: An equity security without a readily determinable fair value may be measured under the measurement
     alternative, cost less impairment, adjusted for observable price changes; that is an election, not
     a required fair value measurement.
-- id: B
-  text: Shares of a publicly traded company that Hask does not intend to sell soon
-  rationale: Correct. An equity security with a readily determinable fair value is measured at fair value
-    through net income; since ASU 2016-01 eliminated the available-for-sale category for equity securities,
-    there is no election to defer the change in other comprehensive income.
 - id: C
   text: A bond that Hask classifies as held to maturity
   rationale: A debt security classified as held to maturity is measured at amortized cost, not fair value.
@@ -34,7 +34,7 @@ choices:
   text: Shares in a company in which Hask also has board representation and significant influence
   rationale: An investment over which Hask has significant influence is accounted for by the equity method,
     not fair value, unless Hask elects the fair value option.
-answer: B
+answer: A
 explanation: 'Since ASU 2016-01, an equity security with a readily determinable fair value has no available-for-sale
   alternative: it is measured at fair value, with changes recognized in net income, as a matter of required
   measurement rather than election. An equity security without a readily determinable fair value may instead

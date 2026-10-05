@@ -1,0 +1,141 @@
+id: far-inventory-rollforward-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: draft
+  references:
+  - ASC 330-10 (inventory; abnormal costs)
+  - ASC 330-10-30 (purchase rebates and cost of inventory)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Hayle''s perpetual inventory records show a Year 2 rollforward of beginning inventory $340,000,
+  purchases $2,150,000, and cost of goods sold $2,015,000, for a draft December 31 balance of $475,000.
+  Reviewing the count, the controller finds: $21,000 of raw materials ruined in an equipment malfunction
+  during the year, included in the count at full cost; $38,000 of goods purchased under terms that passed
+  title to Hayle at shipment, which were sitting in a customs bonded warehouse awaiting clearance at year-end
+  and so weren''t included in the physical count; and a $16,000 volume purchase rebate, for which Hayle
+  met the purchase threshold before year-end but which the supplier hadn''t yet billed or recorded. What
+  inventory should the corrected rollforward report at December 31, Year 2?'
+choices:
+- id: A
+  text: $438,000
+  rationale: Leaves out the $38,000 of goods sitting in the customs bonded warehouse. Title passed to
+    Hayle when the goods were shipped, so they are Hayle's inventory even though they hadn't yet cleared
+    customs and weren't in the physical count.
+- id: B
+  text: $476,000
+  rationale: Correct. $475,000 − $21,000 + $38,000 − $16,000.
+- id: C
+  text: $492,000
+  rationale: Ignores the $16,000 volume purchase rebate Hayle earned by year-end but hadn't yet billed.
+    The rebate reduces the cost of the inventory still on hand.
+- id: D
+  text: $497,000
+  rationale: Keeps the $21,000 of raw materials ruined in an equipment malfunction at full cost. Abnormal
+    spoilage is expensed as incurred, not carried in inventory.
+answer: B
+explanation: Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized
+  in inventory (ASC 330-10-30), so the $21,000 comes out. The bonded-warehouse goods belong to Hayle once
+  title passed at shipment, even though they hadn't cleared customs and weren't physically counted, so
+  the $38,000 is added. The $16,000 rebate, earned before year-end, reduces the cost of the inventory
+  still on hand even though it hasn't been billed. Corrected inventory = $475,000 − $21,000 + $38,000
+  − $16,000 = $476,000.
+variants:
+- stem: 'Camborne''s perpetual inventory records show a Year 2 rollforward of beginning inventory $410,000,
+    purchases $2,480,000, and cost of goods sold $2,322,000, for a draft December 31 balance of $568,000.
+    Reviewing the count, the controller finds: $25,000 of raw materials ruined in an equipment malfunction
+    during the year, included in the count at full cost; $44,000 of goods purchased under terms that passed
+    title to Camborne at shipment, which were sitting in a customs bonded warehouse awaiting clearance
+    at year-end and so weren''t included in the physical count; and a $20,000 volume purchase rebate,
+    for which Camborne met the purchase threshold before year-end but which the supplier hadn''t yet billed
+    or recorded. What inventory should the corrected rollforward report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $523,000
+    rationale: Leaves out the $44,000 of goods sitting in the customs bonded warehouse. Title passed to
+      Camborne when the goods were shipped, so they are Camborne's inventory even though they hadn't yet
+      cleared customs and weren't in the physical count.
+  - id: B
+    text: $567,000
+    rationale: Correct. $568,000 − $25,000 + $44,000 − $20,000.
+  - id: C
+    text: $568,000
+    rationale: Accepts the draft's $568,000, which keeps the spoiled materials at cost, omits the bonded-warehouse
+      goods and ignores the rebate.
+  - id: D
+    text: $587,000
+    rationale: Ignores the $20,000 volume purchase rebate Camborne earned by year-end but hadn't yet billed.
+      The rebate reduces the cost of the inventory still on hand.
+  answer: B
+  explanation: Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized
+    in inventory (ASC 330-10-30), so the $25,000 comes out. The bonded-warehouse goods belong to Camborne
+    once title passed at shipment, even though they hadn't cleared customs and weren't physically counted,
+    so the $44,000 is added. The $20,000 rebate, earned before year-end, reduces the cost of the inventory
+    still on hand even though it hasn't been billed. Corrected inventory = $568,000 − $25,000 + $44,000
+    − $20,000 = $567,000.
+- stem: 'Redruth''s perpetual inventory records show a Year 2 rollforward of beginning inventory $255,000,
+    purchases $1,640,000, and cost of goods sold $1,538,000, for a draft December 31 balance of $357,000.
+    Reviewing the count, the controller finds: $16,000 of raw materials ruined in an equipment malfunction
+    during the year, included in the count at full cost; $29,000 of goods purchased under terms that passed
+    title to Redruth at shipment, which were sitting in a customs bonded warehouse awaiting clearance
+    at year-end and so weren''t included in the physical count; and a $12,000 volume purchase rebate,
+    for which Redruth met the purchase threshold before year-end but which the supplier hadn''t yet billed
+    or recorded. What inventory should the corrected rollforward report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $357,000
+    rationale: Accepts the draft's $357,000, which keeps the spoiled materials at cost, omits the bonded-warehouse
+      goods and ignores the rebate.
+  - id: B
+    text: $358,000
+    rationale: Correct. $357,000 − $16,000 + $29,000 − $12,000.
+  - id: C
+    text: $370,000
+    rationale: Ignores the $12,000 volume purchase rebate Redruth earned by year-end but hadn't yet billed.
+      The rebate reduces the cost of the inventory still on hand.
+  - id: D
+    text: $374,000
+    rationale: Keeps the $16,000 of raw materials ruined in an equipment malfunction at full cost. Abnormal
+      spoilage is expensed as incurred, not carried in inventory.
+  answer: B
+  explanation: Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized
+    in inventory (ASC 330-10-30), so the $16,000 comes out. The bonded-warehouse goods belong to Redruth
+    once title passed at shipment, even though they hadn't cleared customs and weren't physically counted,
+    so the $29,000 is added. The $12,000 rebate, earned before year-end, reduces the cost of the inventory
+    still on hand even though it hasn't been billed. Corrected inventory = $357,000 − $16,000 + $29,000
+    − $12,000 = $358,000.
+- stem: 'Helston''s perpetual inventory records show a Year 2 rollforward of beginning inventory $298,000,
+    purchases $1,920,000, and cost of goods sold $1,801,000, for a draft December 31 balance of $417,000.
+    Reviewing the count, the controller finds: $18,000 of raw materials ruined in an equipment malfunction
+    during the year, included in the count at full cost; $33,000 of goods purchased under terms that passed
+    title to Helston at shipment, which were sitting in a customs bonded warehouse awaiting clearance
+    at year-end and so weren''t included in the physical count; and a $14,000 volume purchase rebate,
+    for which Helston met the purchase threshold before year-end but which the supplier hadn''t yet billed
+    or recorded. What inventory should the corrected rollforward report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $385,000
+    rationale: Leaves out the $33,000 of goods sitting in the customs bonded warehouse. Title passed to
+      Helston when the goods were shipped, so they are Helston's inventory even though they hadn't yet
+      cleared customs and weren't in the physical count.
+  - id: B
+    text: $417,000
+    rationale: Accepts the draft's $417,000, which keeps the spoiled materials at cost, omits the bonded-warehouse
+      goods and ignores the rebate.
+  - id: C
+    text: $418,000
+    rationale: Correct. $417,000 − $18,000 + $33,000 − $14,000.
+  - id: D
+    text: $436,000
+    rationale: Keeps the $18,000 of raw materials ruined in an equipment malfunction at full cost. Abnormal
+      spoilage is expensed as incurred, not carried in inventory.
+  answer: C
+  explanation: Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized
+    in inventory (ASC 330-10-30), so the $18,000 comes out. The bonded-warehouse goods belong to Helston
+    once title passed at shipment, even though they hadn't cleared customs and weren't physically counted,
+    so the $33,000 is added. The $14,000 rebate, earned before year-end, reduces the cost of the inventory
+    still on hand even though it hasn't been billed. Corrected inventory = $417,000 − $18,000 + $33,000
+    − $14,000 = $418,000.

@@ -1,0 +1,143 @@
+id: far-accounting-errors-0010
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: draft
+  references:
+  - ASC 250-10-45-23 (correction of an error in the period discovered)
+  - ASC 606-10-55 (estimated sales returns)
+  - ASC 350-40-25 (capitalized costs of internal-use software)
+  - ASC 350-40-35 (amortization of capitalized software costs)
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Before issuing its Year 2 financial statements, Westerham Devices Co.'s controller finds two errors
+  made during Year 2. First, Westerham recorded $85,000 of customer sales in December without estimating
+  the returns customers were expected to make under its standard return policy; no allowance for returns
+  was recorded. Second, on September 1, Year 2, Westerham placed into service new internal-use software
+  that cost $270,000 to develop, which it recorded entirely as Year 2 expense; Westerham amortizes capitalized
+  software costs straight-line over 3 years, beginning when the software is placed in service. Westerham's
+  draft Year 2 net income, before correcting these errors, is $2,400,000, and its weighted-average common
+  shares outstanding for the year are 600,000. Ignore income taxes. What corrected basic earnings per
+  share should Westerham report for Year 2?
+choices:
+- id: A
+  text: $3.86
+  rationale: Corrects only the sales returns, leaving the $270,000 software cost fully expensed instead
+    of capitalized and amortized.
+- id: B
+  text: $4.16
+  rationale: Correct. Corrected net income ($2,400,000 − $85,000 + $180,000) ÷ 600,000 shares.
+- id: C
+  text: $4.30
+  rationale: Corrects only the capitalized software cost, leaving the $85,000 of unrecorded sales returns
+    in revenue.
+- id: D
+  text: $4.31
+  rationale: Capitalizes the full $270,000 software cost with no amortization in Year 2, even though the
+    software was placed in service on September 1, Year 2, and Westerham amortizes capitalized software
+    straight-line over 3 years.
+answer: B
+explanation: 'The unrecorded sales returns overstated revenue and net income by $85,000; correcting it
+  reduces net income by that amount. The software cost meets the criteria for capitalization and should
+  be amortized over 3 years from September 1, Year 2: only $90,000 of Year 2 amortization belongs in expense,
+  so $180,000 of the $270,000 expensed is added back. Corrected net income = $2,400,000 − $85,000 + $180,000
+  = $2,495,000. Basic EPS = $2,495,000 ÷ 600,000 shares = $4.16.'
+variants:
+- stem: Before issuing its Year 3 financial statements, Allerton Systems Co.'s controller finds two errors
+    made during Year 3. First, Allerton recorded $55,000 of customer sales in December without estimating
+    the returns customers were expected to make under its standard return policy; no allowance for returns
+    was recorded. Second, on July 1, Year 3, Allerton placed into service new internal-use software that
+    cost $180,000 to develop, which it recorded entirely as Year 3 expense; Allerton amortizes capitalized
+    software costs straight-line over 3 years, beginning when the software is placed in service. Allerton's
+    draft Year 3 net income, before correcting these errors, is $1,800,000, and its weighted-average common
+    shares outstanding for the year are 450,000. Ignore income taxes. What corrected basic earnings per
+    share should Allerton report for Year 3?
+  choices:
+  - id: A
+    text: $3.86
+    rationale: 'Reverses both corrections: adds back the sales returns and deducts the software amortization,
+      instead of the other way around.'
+  - id: B
+    text: $3.88
+    rationale: Corrects only the sales returns, leaving the $180,000 software cost fully expensed instead
+      of capitalized and amortized.
+  - id: C
+    text: $4.14
+    rationale: Correct. Corrected net income ($1,800,000 − $55,000 + $120,000) ÷ 450,000 shares.
+  - id: D
+    text: $4.27
+    rationale: Corrects only the capitalized software cost, leaving the $55,000 of unrecorded sales returns
+      in revenue.
+  answer: C
+  explanation: 'The unrecorded sales returns overstated revenue and net income by $55,000; correcting
+    it reduces net income by that amount. The software cost meets the criteria for capitalization and
+    should be amortized over 3 years from July 1, Year 3: only $60,000 of Year 3 amortization belongs
+    in expense, so $120,000 of the $180,000 expensed is added back. Corrected net income = $1,800,000
+    − $55,000 + $120,000 = $1,865,000. Basic EPS = $1,865,000 ÷ 450,000 shares = $4.14.'
+- stem: Before issuing its Year 1 financial statements, Brockhollow Data Co.'s controller finds two errors
+    made during Year 1. First, Brockhollow recorded $115,000 of customer sales in December without estimating
+    the returns customers were expected to make under its standard return policy; no allowance for returns
+    was recorded. Second, on October 1, Year 1, Brockhollow placed into service new internal-use software
+    that cost $360,000 to develop, which it recorded entirely as Year 1 expense; Brockhollow amortizes
+    capitalized software costs straight-line over 4 years, beginning when the software is placed in service.
+    Brockhollow's draft Year 1 net income, before correcting these errors, is $3,200,000, and its weighted-average
+    common shares outstanding for the year are 800,000. Ignore income taxes. What corrected basic earnings
+    per share should Brockhollow report for Year 1?
+  choices:
+  - id: A
+    text: $3.81
+    rationale: 'Reverses both corrections: adds back the sales returns and deducts the software amortization,
+      instead of the other way around.'
+  - id: B
+    text: $4.19
+    rationale: Correct. Corrected net income ($3,200,000 − $115,000 + $270,000) ÷ 800,000 shares.
+  - id: C
+    text: $4.31
+    rationale: Capitalizes the full $360,000 software cost with no amortization in Year 1, even though
+      the software was placed in service on October 1, Year 1, and Brockhollow amortizes capitalized software
+      straight-line over 4 years.
+  - id: D
+    text: $4.34
+    rationale: Corrects only the capitalized software cost, leaving the $115,000 of unrecorded sales returns
+      in revenue.
+  answer: B
+  explanation: 'The unrecorded sales returns overstated revenue and net income by $115,000; correcting
+    it reduces net income by that amount. The software cost meets the criteria for capitalization and
+    should be amortized over 4 years from October 1, Year 1: only $90,000 of Year 1 amortization belongs
+    in expense, so $270,000 of the $360,000 expensed is added back. Corrected net income = $3,200,000
+    − $115,000 + $270,000 = $3,355,000. Basic EPS = $3,355,000 ÷ 800,000 shares = $4.19.'
+- stem: Before issuing its Year 4 financial statements, Pennycross Tech Co.'s controller finds two errors
+    made during Year 4. First, Pennycross recorded $45,000 of customer sales in December without estimating
+    the returns customers were expected to make under its standard return policy; no allowance for returns
+    was recorded. Second, on August 1, Year 4, Pennycross placed into service new internal-use software
+    that cost $150,000 to develop, which it recorded entirely as Year 4 expense; Pennycross amortizes
+    capitalized software costs straight-line over 3 years, beginning when the software is placed in service.
+    Pennycross's draft Year 4 net income, before correcting these errors, is $1,500,000, and its weighted-average
+    common shares outstanding for the year are 375,000. Ignore income taxes. What corrected basic earnings
+    per share should Pennycross report for Year 4?
+  choices:
+  - id: A
+    text: $3.85
+    rationale: 'Reverses both corrections: adds back the sales returns and deducts the software amortization,
+      instead of the other way around.'
+  - id: B
+    text: $3.88
+    rationale: Corrects only the sales returns, leaving the $150,000 software cost fully expensed instead
+      of capitalized and amortized.
+  - id: C
+    text: $4.15
+    rationale: Correct. Corrected net income ($1,500,000 − $45,000 + $100,000) ÷ 375,000 shares.
+  - id: D
+    text: $4.28
+    rationale: Capitalizes the full $150,000 software cost with no amortization in Year 4, even though
+      the software was placed in service on August 1, Year 4, and Pennycross amortizes capitalized software
+      straight-line over 3 years.
+  answer: C
+  explanation: 'The unrecorded sales returns overstated revenue and net income by $45,000; correcting
+    it reduces net income by that amount. The software cost meets the criteria for capitalization and
+    should be amortized over 3 years from August 1, Year 4: only $50,000 of Year 4 amortization belongs
+    in expense, so $100,000 of the $150,000 expensed is added back. Corrected net income = $1,500,000
+    − $45,000 + $100,000 = $1,555,000. Basic EPS = $1,555,000 ÷ 375,000 shares = $4.15.'

@@ -1,0 +1,134 @@
+id: far-cash-bank-reconciliation-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: draft
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'While preparing Perranporth Marine Co.''s December 31 bank reconciliation, the accountant finds
+  that the bank collected a $1,350 note receivable on Perranporth''s behalf, including interest, which
+  hasn''t been recorded in the cash account; that a $1,620 batch of credit-card sales was deposited by
+  the processor net of its $90 discount fee, though Perranporth recorded the deposit at the full $1,620
+  sale amount; and that check #498, for $420, on which Perranporth placed a stop-payment order after a
+  vendor dispute, is still recorded as a disbursement even though the bank never paid it. The bank statement
+  also lists deposits in transit of $5,800 and outstanding checks (other than #498) totaling $9,150. If
+  the bank statement shows a balance of $52,400 and the general ledger cash account shows $47,370, what
+  is Perranporth''s correct cash balance at December 31?'
+choices:
+- id: A
+  text: $47,700
+  rationale: Leaves out the $1,350 note receivable the bank collected for Perranporth, including interest,
+    which the books haven't recorded.
+- id: B
+  text: $48,630
+  rationale: Leaves the $420 stopped check recorded as a disbursement, even though the bank never paid
+    it.
+- id: C
+  text: $49,050
+  rationale: Correct. $52,400 + $5,800 − $9,150 (bank side) = $47,370 + $1,350 − $90 + $420 (book side).
+- id: D
+  text: $49,140
+  rationale: Leaves the $1,620 card-sale deposit at its gross amount. The processor deposited only $1,530
+    after its $90 discount fee, which Perranporth hasn't recorded.
+answer: C
+explanation: 'The bank side is $52,400 + $5,800 − $9,150 = $49,050. On the book side: the $1,350 note
+  the bank collected is added; the card-sale deposit was recorded at $1,620 but only $1,530 was actually
+  received, so cash is reduced by the $90 fee; and the stopped check never left the bank, so its $420
+  disbursement is reversed (added back): $47,370 + $1,350 − $90 + $420 = $49,050.'
+variants:
+- stem: 'While preparing Mullion Boatworks Co.''s December 31 bank reconciliation, the accountant finds
+    that the bank collected a $980 note receivable on Mullion''s behalf, including interest, which hasn''t
+    been recorded in the cash account; that a $2,040 batch of credit-card sales was deposited by the processor
+    net of its $60 discount fee, though Mullion recorded the deposit at the full $2,040 sale amount; and
+    that check #512, for $560, on which Mullion placed a stop-payment order after a vendor dispute, is
+    still recorded as a disbursement even though the bank never paid it. The bank statement also lists
+    deposits in transit of $7,200 and outstanding checks (other than #512) totaling $11,450. If the bank
+    statement shows a balance of $68,900 and the general ledger cash account shows $63,170, what is Mullion''s
+    correct cash balance at December 31?'
+  choices:
+  - id: A
+    text: $63,670
+    rationale: Leaves out the $980 note receivable the bank collected for Mullion, including interest,
+      which the books haven't recorded.
+  - id: B
+    text: $64,090
+    rationale: Leaves the $560 stopped check recorded as a disbursement, even though the bank never paid
+      it.
+  - id: C
+    text: $64,150
+    rationale: Records only the $980 note collected, without correcting the card-sale deposit or reversing
+      the stopped check.
+  - id: D
+    text: $64,650
+    rationale: Correct. $68,900 + $7,200 − $11,450 (bank side) = $63,170 + $980 − $60 + $560 (book side).
+  answer: D
+  explanation: 'The bank side is $68,900 + $7,200 − $11,450 = $64,650. On the book side: the $980 note
+    the bank collected is added; the card-sale deposit was recorded at $2,040 but only $1,980 was actually
+    received, so cash is reduced by the $60 fee; and the stopped check never left the bank, so its $560
+    disbursement is reversed (added back): $63,170 + $980 − $60 + $560 = $64,650.'
+- stem: 'While preparing Falmouth Chandlery Co.''s December 31 bank reconciliation, the accountant finds
+    that the bank collected a $1,150 note receivable on Falmouth''s behalf, including interest, which
+    hasn''t been recorded in the cash account; that a $1,890 batch of credit-card sales was deposited
+    by the processor net of its $30 discount fee, though Falmouth recorded the deposit at the full $1,890
+    sale amount; and that check #305, for $480, on which Falmouth placed a stop-payment order after a
+    vendor dispute, is still recorded as a disbursement even though the bank never paid it. The bank statement
+    also lists deposits in transit of $6,400 and outstanding checks (other than #305) totaling $13,700.
+    If the bank statement shows a balance of $81,200 and the general ledger cash account shows $72,300,
+    what is Falmouth''s correct cash balance at December 31?'
+  choices:
+  - id: A
+    text: $73,420
+    rationale: Leaves the $480 stopped check recorded as a disbursement, even though the bank never paid
+      it.
+  - id: B
+    text: $73,450
+    rationale: Records only the $1,150 note collected, without correcting the card-sale deposit or reversing
+      the stopped check.
+  - id: C
+    text: $73,900
+    rationale: Correct. $81,200 + $6,400 − $13,700 (bank side) = $72,300 + $1,150 − $30 + $480 (book side).
+  - id: D
+    text: $73,930
+    rationale: Leaves the $1,890 card-sale deposit at its gross amount. The processor deposited only $1,860
+      after its $30 discount fee, which Falmouth hasn't recorded.
+  answer: C
+  explanation: 'The bank side is $81,200 + $6,400 − $13,700 = $73,900. On the book side: the $1,150 note
+    the bank collected is added; the card-sale deposit was recorded at $1,890 but only $1,860 was actually
+    received, so cash is reduced by the $30 fee; and the stopped check never left the bank, so its $480
+    disbursement is reversed (added back): $72,300 + $1,150 − $30 + $480 = $73,900.'
+- stem: 'While preparing Padstow Marine Supply Co.''s December 31 bank reconciliation, the accountant
+    finds that the bank collected an $860 note receivable on Padstow''s behalf, including interest, which
+    hasn''t been recorded in the cash account; that a $1,480 batch of credit-card sales was deposited
+    by the processor net of its $60 discount fee, though Padstow recorded the deposit at the full $1,480
+    sale amount; and that check #221, for $350, on which Padstow placed a stop-payment order after a vendor
+    dispute, is still recorded as a disbursement even though the bank never paid it. The bank statement
+    also lists deposits in transit of $4,900 and outstanding checks (other than #221) totaling $8,300.
+    If the bank statement shows a balance of $45,600 and the general ledger cash account shows $41,050,
+    what is Padstow''s correct cash balance at December 31?'
+  choices:
+  - id: A
+    text: $41,340
+    rationale: Leaves out the $860 note receivable the bank collected for Padstow, including interest,
+      which the books haven't recorded.
+  - id: B
+    text: $41,910
+    rationale: Records only the $860 note collected, without correcting the card-sale deposit or reversing
+      the stopped check.
+  - id: C
+    text: $42,200
+    rationale: Correct. $45,600 + $4,900 − $8,300 (bank side) = $41,050 + $860 − $60 + $350 (book side).
+  - id: D
+    text: $42,260
+    rationale: Leaves the $1,480 card-sale deposit at its gross amount. The processor deposited only $1,420
+      after its $60 discount fee, which Padstow hasn't recorded.
+  answer: C
+  explanation: 'The bank side is $45,600 + $4,900 − $8,300 = $42,200. On the book side: the $860 note
+    the bank collected is added; the card-sale deposit was recorded at $1,480 but only $1,420 was actually
+    received, so cash is reduced by the $60 fee; and the stopped check never left the bank, so its $350
+    disbursement is reversed (added back): $41,050 + $860 − $60 + $350 = $42,200.'

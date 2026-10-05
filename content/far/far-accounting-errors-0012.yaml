@@ -1,0 +1,134 @@
+id: far-accounting-errors-0012
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: draft
+  references:
+  - ASC 340-10-25 (prepaid costs recognized as an asset until consumed)
+  - 'ASC 606-10-25-30 (transfer of control: FOB shipping point)'
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Before Hartswell Logistics Co.'s Year 2 financial statements are issued, its controller finds two
+  problems with the draft December 31, Year 2, balance sheet, which reports total assets of $7,840,000.
+  On September 1, Year 2, Hartswell had paid $72,000 for a service contract covering the next three years
+  and charged the entire payment to Year 2 expense, though two of the three years of that term remains
+  unused at year-end, representing $48,000 of the payment. Also, $63,000 of merchandise that Hartswell
+  had purchased FOB shipping point was in transit at year-end and was left out of both the physical count
+  and the accounting records; it arrived in January. What total assets should Hartswell's corrected balance
+  sheet report at December 31, Year 2?
+choices:
+- id: A
+  text: $7,888,000
+  rationale: Leaves out the $63,000 of goods Hartswell had purchased FOB shipping point and that were
+    in transit, but not yet received, at year-end.
+- id: B
+  text: $7,903,000
+  rationale: Leaves out the $48,000 of unexpired service-contract cost that Hartswell charged entirely
+    to expense, even though two of the three years of the contract's term remains unused.
+- id: C
+  text: $7,951,000
+  rationale: Correct. $7,840,000 + $48,000 + $63,000.
+- id: D
+  text: $7,999,000
+  rationale: Adds back the full $72,000 paid for the service contract instead of only the $48,000 that
+    is unexpired at year-end.
+answer: C
+explanation: 'The unexpired portion of the service contract is a prepaid asset, not an expense of the
+  year it was paid: $48,000 of the $72,000 payment relates to two of the three years of coverage still
+  to come and is added back. Title to goods shipped FOB shipping point passes when the carrier takes them,
+  so the $63,000 of goods in transit belonged to Hartswell at year-end and are added to inventory. Corrected
+  total assets = $7,840,000 + $48,000 + $63,000 = $7,951,000.'
+variants:
+- stem: Before Candleford Distribution Co.'s Year 3 financial statements are issued, its controller finds
+    two problems with the draft December 31, Year 3, balance sheet, which reports total assets of $5,260,000.
+    On September 1, Year 3, Candleford had paid $54,000 for a service contract covering the next three
+    years and charged the entire payment to Year 3 expense, though two of the three years of that term
+    remains unused at year-end, representing $36,000 of the payment. Also, $41,000 of raw materials that
+    Candleford had purchased FOB shipping point was in transit at year-end and was left out of both the
+    physical count and the accounting records; it arrived in January. What total assets should Candleford's
+    corrected balance sheet report at December 31, Year 3?
+  choices:
+  - id: A
+    text: $5,260,000
+    rationale: Accepts the draft's $5,260,000, which expensed the full service-contract payment and excluded
+      the goods in transit from inventory.
+  - id: B
+    text: $5,296,000
+    rationale: Leaves out the $41,000 of goods Candleford had purchased FOB shipping point and that were
+      in transit, but not yet received, at year-end.
+  - id: C
+    text: $5,337,000
+    rationale: Correct. $5,260,000 + $36,000 + $41,000.
+  - id: D
+    text: $5,373,000
+    rationale: Adds back the full $54,000 paid for the service contract instead of only the $36,000 that
+      is unexpired at year-end.
+  answer: C
+  explanation: 'The unexpired portion of the service contract is a prepaid asset, not an expense of the
+    year it was paid: $36,000 of the $54,000 payment relates to two of the three years of coverage still
+    to come and is added back. Title to goods shipped FOB shipping point passes when the carrier takes
+    them, so the $41,000 of goods in transit belonged to Candleford at year-end and are added to inventory.
+    Corrected total assets = $5,260,000 + $36,000 + $41,000 = $5,337,000.'
+- stem: Before Marldon Freight Co.'s Year 1 financial statements are issued, its controller finds two
+    problems with the draft December 31, Year 1, balance sheet, which reports total assets of $9,120,000.
+    On September 1, Year 1, Marldon had paid $90,000 for a service contract covering the next three years
+    and charged the entire payment to Year 1 expense, though two of the three years of that term remains
+    unused at year-end, representing $60,000 of the payment. Also, $78,000 of merchandise that Marldon
+    had purchased FOB shipping point was in transit at year-end and was left out of both the physical
+    count and the accounting records; it arrived in January. What total assets should Marldon's corrected
+    balance sheet report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $9,120,000
+    rationale: Accepts the draft's $9,120,000, which expensed the full service-contract payment and excluded
+      the goods in transit from inventory.
+  - id: B
+    text: $9,198,000
+    rationale: Leaves out the $60,000 of unexpired service-contract cost that Marldon charged entirely
+      to expense, even though two of the three years of the contract's term remains unused.
+  - id: C
+    text: $9,258,000
+    rationale: Correct. $9,120,000 + $60,000 + $78,000.
+  - id: D
+    text: $9,318,000
+    rationale: Adds back the full $90,000 paid for the service contract instead of only the $60,000 that
+      is unexpired at year-end.
+  answer: C
+  explanation: 'The unexpired portion of the service contract is a prepaid asset, not an expense of the
+    year it was paid: $60,000 of the $90,000 payment relates to two of the three years of coverage still
+    to come and is added back. Title to goods shipped FOB shipping point passes when the carrier takes
+    them, so the $78,000 of goods in transit belonged to Marldon at year-end and are added to inventory.
+    Corrected total assets = $9,120,000 + $60,000 + $78,000 = $9,258,000.'
+- stem: Before Ellenbridge Supply Co.'s Year 4 financial statements are issued, its controller finds two
+    problems with the draft December 31, Year 4, balance sheet, which reports total assets of $3,980,000.
+    On September 1, Year 4, Ellenbridge had paid $42,000 for a service contract covering the next three
+    years and charged the entire payment to Year 4 expense, though two of the three years of that term
+    remains unused at year-end, representing $28,000 of the payment. Also, $34,000 of component parts
+    that Ellenbridge had purchased FOB shipping point was in transit at year-end and was left out of both
+    the physical count and the accounting records; it arrived in January. What total assets should Ellenbridge's
+    corrected balance sheet report at December 31, Year 4?
+  choices:
+  - id: A
+    text: $3,980,000
+    rationale: Accepts the draft's $3,980,000, which expensed the full service-contract payment and excluded
+      the goods in transit from inventory.
+  - id: B
+    text: $4,008,000
+    rationale: Leaves out the $34,000 of goods Ellenbridge had purchased FOB shipping point and that were
+      in transit, but not yet received, at year-end.
+  - id: C
+    text: $4,014,000
+    rationale: Leaves out the $28,000 of unexpired service-contract cost that Ellenbridge charged entirely
+      to expense, even though two of the three years of the contract's term remains unused.
+  - id: D
+    text: $4,042,000
+    rationale: Correct. $3,980,000 + $28,000 + $34,000.
+  answer: D
+  explanation: 'The unexpired portion of the service contract is a prepaid asset, not an expense of the
+    year it was paid: $28,000 of the $42,000 payment relates to two of the three years of coverage still
+    to come and is added back. Title to goods shipped FOB shipping point passes when the carrier takes
+    them, so the $34,000 of goods in transit belonged to Ellenbridge at year-end and are added to inventory.
+    Corrected total assets = $3,980,000 + $28,000 + $34,000 = $4,042,000.'

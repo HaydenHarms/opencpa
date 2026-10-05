@@ -20,18 +20,18 @@ choices:
   rationale: Item 1A discloses material risks facing the registrant generally; cybersecurity governance
     and process disclosures have their own item, 1C.
 - id: B
-  text: Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations
-  rationale: Item 7 discusses financial condition and operating results, not cybersecurity risk management
-    and governance.
-- id: C
   text: Item 1C, Cybersecurity
   rationale: Correct. Item 1C requires disclosure of the registrant's cybersecurity risk management processes,
     strategy, and board and management oversight of cybersecurity risks.
+- id: C
+  text: Item 7, Management's Discussion and Analysis of Financial Condition and Results of Operations
+  rationale: Item 7 discusses financial condition and operating results, not cybersecurity risk management
+    and governance.
 - id: D
   text: Item 9A, Controls and Procedures
   rationale: Item 9A addresses disclosure controls and internal control over financial reporting, a narrower
     topic than the cybersecurity risk management and governance Item 1C covers.
-answer: C
+answer: B
 explanation: Form 10-K Item 1C requires a registrant to describe its processes, if any, for assessing,
   identifying and managing material risks from cybersecurity threats, whether any risks from cybersecurity
   threats have materially affected it, and the board of directors' and management's oversight of cybersecurity

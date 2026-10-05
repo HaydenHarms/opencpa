@@ -23,14 +23,14 @@ stem: During Year 2, Dunwich Corp. (1) recognizes an unrealized holding gain on 
   than other comprehensive income?
 choices:
 - id: A
-  text: The unrealized holding gain on the available-for-sale debt security
-  rationale: Unrealized holding gains and losses on available-for-sale debt securities, apart from any
-    credit loss component, are reported in other comprehensive income.
-- id: B
   text: The credit loss recognized on the available-for-sale debt security
   rationale: Correct. Since ASU 2016-13, a credit loss on an available-for-sale debt security is recognized
     through an allowance for credit losses, with the loss (and any later recovery) in net income, rather
     than as a direct write-down through other comprehensive income.
+- id: B
+  text: The unrealized holding gain on the available-for-sale debt security
+  rationale: Unrealized holding gains and losses on available-for-sale debt securities, apart from any
+    credit loss component, are reported in other comprehensive income.
 - id: C
   text: The instrument-specific credit risk portion of the fair-value-option liability's fair value change
   rationale: The portion of the change in fair value of a liability measured under the fair value option
@@ -40,7 +40,7 @@ choices:
   text: The foreign currency translation adjustment
   rationale: Foreign currency translation adjustments from consolidating a foreign subsidiary are reported
     in other comprehensive income, not net income.
-answer: B
+answer: A
 explanation: Other comprehensive income includes unrealized holding gains and losses on available-for-sale
   debt securities (apart from credit losses), the instrument-specific credit risk portion of a fair-value-option
   liability's change in fair value (ASC 825-10-45-5), and foreign currency translation adjustments (ASC

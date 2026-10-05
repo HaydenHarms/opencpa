@@ -1,0 +1,121 @@
+id: far-error-correction-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Application
+review:
+  status: draft
+  references:
+  - 'ASC 250-10-45-23 (correction of a prior-period error: retained earnings adjustment, net of tax)'
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Halloway Freight Co. borrowed $500,000 on a 7% note, with all interest and
+  principal due at maturity in 5 years. Before closing its Year 2 books, Halloway's controller finds that
+  Halloway has never recorded any interest on the note; no interest has been paid. This is the only error
+  in Halloway's records, Halloway's tax rate is 25% for all effects, and it presents single-year financial
+  statements. What adjustment should Halloway make to its January 1, Year 3, balance of retained earnings
+  to correct this error?
+choices:
+- id: A
+  text: $70,000 decrease
+  rationale: Decreases retained earnings by the full pretax $70,000 of unaccrued interest. The correction
+    is made net of the 25% tax rate.
+- id: B
+  text: $52,500 decrease
+  rationale: Correct. $500,000 × 7% × 2 years = $70,000, × 75% after tax.
+- id: C
+  text: $26,250 decrease
+  rationale: Accrues interest for only 1 year, not the full 2 years the note has been outstanding without
+    an accrual.
+- id: D
+  text: $52,500 increase
+  rationale: Increases retained earnings. Failing to accrue interest expense understated expenses and
+    overstated retained earnings in each of the 2 years, so the correction decreases retained earnings.
+answer: B
+explanation: 'Unaccrued interest on an outstanding note understates interest expense, and so overstates
+  net income and retained earnings, in every year it is missed. The error is corrected by adjusting the
+  opening balance of retained earnings, net of tax (ASC 250-10-45-23). Unaccrued interest: $500,000 ×
+  7% × 2 years = $70,000. After the 25% tax effect: $70,000 × 75% = $52,500 decrease.'
+variants:
+- stem: On January 1, Year 1, Brindlewood Supply Co. borrowed $800,000 on a 6% note, with all interest
+    and principal due at maturity in 6 years. Before closing its Year 3 books, Brindlewood's controller
+    finds that Brindlewood has never recorded any interest on the note; no interest has been paid. This
+    is the only error in Brindlewood's records, Brindlewood's tax rate is 21% for all effects, and it
+    presents single-year financial statements. What adjustment should Brindlewood make to its January
+    1, Year 4, balance of retained earnings to correct this error?
+  choices:
+  - id: A
+    text: $151,680 decrease
+    rationale: Accrues interest for 4 years. The note has been outstanding, with interest unaccrued, for
+      3 years as of the date the error was found.
+  - id: B
+    text: $113,760 decrease
+    rationale: Correct. $800,000 × 6% × 3 years = $144,000, × 79% after tax.
+  - id: C
+    text: $75,840 decrease
+    rationale: Accrues interest for only 2 year, not the full 3 years the note has been outstanding without
+      an accrual.
+  - id: D
+    text: $113,760 increase
+    rationale: Increases retained earnings. Failing to accrue interest expense understated expenses and
+      overstated retained earnings in each of the 3 years, so the correction decreases retained earnings.
+  answer: B
+  explanation: 'Unaccrued interest on an outstanding note understates interest expense, and so overstates
+    net income and retained earnings, in every year it is missed. The error is corrected by adjusting
+    the opening balance of retained earnings, net of tax (ASC 250-10-45-23). Unaccrued interest: $800,000
+    × 6% × 3 years = $144,000. After the 21% tax effect: $144,000 × 79% = $113,760 decrease.'
+- stem: On January 1, Year 1, Castlemain Equipment Co. borrowed $350,000 on an 8% note, with all interest
+    and principal due at maturity in 5 years. Before closing its Year 2 books, Castlemain's controller
+    finds that Castlemain has never recorded any interest on the note; no interest has been paid. This
+    is the only error in Castlemain's records, Castlemain's tax rate is 25% for all effects, and it presents
+    single-year financial statements. What adjustment should Castlemain make to its January 1, Year 3,
+    balance of retained earnings to correct this error?
+  choices:
+  - id: A
+    text: $63,000 decrease
+    rationale: Accrues interest for 3 years. The note has been outstanding, with interest unaccrued, for
+      2 years as of the date the error was found.
+  - id: B
+    text: $56,000 decrease
+    rationale: Decreases retained earnings by the full pretax $56,000 of unaccrued interest. The correction
+      is made net of the 25% tax rate.
+  - id: C
+    text: $42,000 decrease
+    rationale: Correct. $350,000 × 8% × 2 years = $56,000, × 75% after tax.
+  - id: D
+    text: $42,000 increase
+    rationale: Increases retained earnings. Failing to accrue interest expense understated expenses and
+      overstated retained earnings in each of the 2 years, so the correction decreases retained earnings.
+  answer: C
+  explanation: 'Unaccrued interest on an outstanding note understates interest expense, and so overstates
+    net income and retained earnings, in every year it is missed. The error is corrected by adjusting
+    the opening balance of retained earnings, net of tax (ASC 250-10-45-23). Unaccrued interest: $350,000
+    × 8% × 2 years = $56,000. After the 25% tax effect: $56,000 × 75% = $42,000 decrease.'
+- stem: On January 1, Year 1, Fenwright Leasing Co. borrowed $650,000 on a 5% note, with all interest
+    and principal due at maturity in 7 years. Before closing its Year 4 books, Fenwright's controller
+    finds that Fenwright has never recorded any interest on the note; no interest has been paid. This
+    is the only error in Fenwright's records, Fenwright's tax rate is 21% for all effects, and it presents
+    single-year financial statements. What adjustment should Fenwright make to its January 1, Year 5,
+    balance of retained earnings to correct this error?
+  choices:
+  - id: A
+    text: $77,025 decrease
+    rationale: Accrues interest for only 3 year, not the full 4 years the note has been outstanding without
+      an accrual.
+  - id: B
+    text: $102,700 decrease
+    rationale: Correct. $650,000 × 5% × 4 years = $130,000, × 79% after tax.
+  - id: C
+    text: $128,375 decrease
+    rationale: Accrues interest for 5 years. The note has been outstanding, with interest unaccrued, for
+      4 years as of the date the error was found.
+  - id: D
+    text: $130,000 decrease
+    rationale: Decreases retained earnings by the full pretax $130,000 of unaccrued interest. The correction
+      is made net of the 21% tax rate.
+  answer: B
+  explanation: 'Unaccrued interest on an outstanding note understates interest expense, and so overstates
+    net income and retained earnings, in every year it is missed. The error is corrected by adjusting
+    the opening balance of retained earnings, net of tax (ASC 250-10-45-23). Unaccrued interest: $650,000
+    × 5% × 4 years = $130,000. After the 21% tax effect: $130,000 × 79% = $102,700 decrease.'

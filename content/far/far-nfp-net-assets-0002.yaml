@@ -24,16 +24,16 @@ choices:
   rationale: That description fits the statement of financial position, which reports balances at a point
     in time, not activity over a period.
 - id: C
-  text: Each program's and supporting activity's expenses, classified by both their natural and functional
-    categories
-  rationale: That description fits the statement of functional expenses (or an equivalent note), one of
-    several ways functional expense information may be presented, not the statement of activities.
-- id: D
   text: The entity's revenues, expenses, gains, losses and reclassifications, by net asset class and in
     total
   rationale: Correct. The statement of activities reports the change in net assets for the period, both
     in total and separately for the classes with and without donor restrictions.
-answer: D
+- id: D
+  text: Each program's and supporting activity's expenses, classified by both their natural and functional
+    categories
+  rationale: That description fits the statement of functional expenses (or an equivalent note), one of
+    several ways functional expense information may be presented, not the statement of activities.
+answer: C
 explanation: 'The statement of activities reports the change in a not-for-profit entity''s net assets
   for a period: its revenues, expenses, gains, losses, and reclassifications between net assets with and
   without donor restrictions, presented in total and by net asset class (ASC 958-225). It is a period

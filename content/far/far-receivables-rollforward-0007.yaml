@@ -1,0 +1,160 @@
+id: far-receivables-rollforward-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: draft
+  references:
+  - ASC 310-10 (receivables)
+  - ASC 326-20-35 (write-offs and recoveries)
+  - ASC 606-10-25 (cutoff for sales returns)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'All of Mylor''s sales are on credit. Its accounts receivable control account began Year 2 at $480,000;
+  credit sales for the year were $2,920,000, cash collected from customers was $2,865,000, and $24,000
+  of accounts were written off, which a staff accountant used to arrive at a preliminary December 31 figure
+  of $511,000. Examining that figure, the internal auditor notes three things: customer accounts with
+  credit balances, from overpayments and returns, totaling $15,000, were netted against the debit balances
+  of other customers rather than reported separately; a $9,000 credit memo for goods a customer returned
+  on December 29, logged by the shipping department that day, wasn''t entered in the accounting records
+  until the memo was processed in January; and a $6,000 recovery of an account written off in an earlier
+  year, paid in cash by the customer in December, was recorded as a direct credit to bad debt expense.
+  For Mylor, what should corrected accounts receivable, before any allowance, be at December 31, Year
+  2?'
+choices:
+- id: A
+  text: $502,000
+  rationale: Leaves the $15,000 of customer credit balances netted against the receivables total. Credit
+    balances, from overpayments and returns, are a liability and aren't netted against other customers'
+    debit balances.
+- id: B
+  text: $517,000
+  rationale: Correct. $511,000 + $15,000 − $9,000.
+- id: C
+  text: $523,000
+  rationale: Adds the $6,000 recovery of a previously written-off account back into receivables. Because
+    the recovery was recorded directly as a credit to bad debt expense rather than by reinstating the
+    account and then recording its collection, it never touched accounts receivable and needs no correction
+    here.
+- id: D
+  text: $526,000
+  rationale: Leaves out the $9,000 credit memo for goods a customer returned in December, which wasn't
+    recorded until January.
+answer: B
+explanation: Credit balances in customer accounts are a liability, not a reduction of other customers'
+  receivables, so the $15,000 is added back (+ $15,000). The December return is a Year 2 event and must
+  be recorded in Year 2, reducing receivables (− $9,000). The recovery, recorded as a direct credit to
+  bad debt expense rather than by reinstating the account and then recording its collection, never ran
+  through accounts receivable, so it needs no correction here. Corrected balance = $511,000 + $15,000
+  − $9,000 = $517,000.
+variants:
+- stem: 'All of Flushing''s sales are on credit. Its accounts receivable control account began Year 2
+    at $365,000; credit sales for the year were $2,210,000, cash collected from customers was $2,168,000,
+    and $19,000 of accounts were written off, which a staff accountant used to arrive at a preliminary
+    December 31 figure of $388,000. Examining that figure, the internal auditor notes three things: customer
+    accounts with credit balances, from overpayments and returns, totaling $11,000, were netted against
+    the debit balances of other customers rather than reported separately; a $7,000 credit memo for goods
+    a customer returned on December 29, logged by the shipping department that day, wasn''t entered in
+    the accounting records until the memo was processed in January; and a $5,000 recovery of an account
+    written off in an earlier year, paid in cash by the customer in December, was recorded as a direct
+    credit to bad debt expense. For Flushing, what should corrected accounts receivable, before any allowance,
+    be at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $381,000
+    rationale: Leaves the $11,000 of customer credit balances netted against the receivables total. Credit
+      balances, from overpayments and returns, are a liability and aren't netted against other customers'
+      debit balances.
+  - id: B
+    text: $388,000
+    rationale: Accepts the draft's $388,000, which nets the customer credit balances against receivables
+      and omits the December return.
+  - id: C
+    text: $392,000
+    rationale: Correct. $388,000 + $11,000 − $7,000.
+  - id: D
+    text: $397,000
+    rationale: Adds the $5,000 recovery of a previously written-off account back into receivables. Because
+      the recovery was recorded directly as a credit to bad debt expense rather than by reinstating the
+      account and then recording its collection, it never touched accounts receivable and needs no correction
+      here.
+  answer: C
+  explanation: Credit balances in customer accounts are a liability, not a reduction of other customers'
+    receivables, so the $11,000 is added back (+ $11,000). The December return is a Year 2 event and must
+    be recorded in Year 2, reducing receivables (− $7,000). The recovery, recorded as a direct credit
+    to bad debt expense rather than by reinstating the account and then recording its collection, never
+    ran through accounts receivable, so it needs no correction here. Corrected balance = $388,000 + $11,000
+    − $7,000 = $392,000.
+- stem: 'All of Gweek''s sales are on credit. Its accounts receivable control account began Year 2 at
+    $545,000; credit sales for the year were $3,340,000, cash collected from customers was $3,268,000,
+    and $28,000 of accounts were written off, which a staff accountant used to arrive at a preliminary
+    December 31 figure of $589,000. Examining that figure, the internal auditor notes three things: customer
+    accounts with credit balances, from overpayments and returns, totaling $18,000, were netted against
+    the debit balances of other customers rather than reported separately; an $11,000 credit memo for
+    goods a customer returned on December 29, logged by the shipping department that day, wasn''t entered
+    in the accounting records until the memo was processed in January; and an $8,000 recovery of an account
+    written off in an earlier year, paid in cash by the customer in December, was recorded as a direct
+    credit to bad debt expense. For Gweek, what should corrected accounts receivable, before any allowance,
+    be at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $589,000
+    rationale: Accepts the draft's $589,000, which nets the customer credit balances against receivables
+      and omits the December return.
+  - id: B
+    text: $596,000
+    rationale: Correct. $589,000 + $18,000 − $11,000.
+  - id: C
+    text: $604,000
+    rationale: Adds the $8,000 recovery of a previously written-off account back into receivables. Because
+      the recovery was recorded directly as a credit to bad debt expense rather than by reinstating the
+      account and then recording its collection, it never touched accounts receivable and needs no correction
+      here.
+  - id: D
+    text: $607,000
+    rationale: Leaves out the $11,000 credit memo for goods a customer returned in December, which wasn't
+      recorded until January.
+  answer: B
+  explanation: Credit balances in customer accounts are a liability, not a reduction of other customers'
+    receivables, so the $18,000 is added back (+ $18,000). The December return is a Year 2 event and must
+    be recorded in Year 2, reducing receivables (− $11,000). The recovery, recorded as a direct credit
+    to bad debt expense rather than by reinstating the account and then recording its collection, never
+    ran through accounts receivable, so it needs no correction here. Corrected balance = $589,000 + $18,000
+    − $11,000 = $596,000.
+- stem: 'All of Constantine''s sales are on credit. Its accounts receivable control account began Year
+    2 at $298,000; credit sales for the year were $1,860,000, cash collected from customers was $1,819,000,
+    and $15,000 of accounts were written off, which a staff accountant used to arrive at a preliminary
+    December 31 figure of $324,000. Examining that figure, the internal auditor notes three things: customer
+    accounts with credit balances, from overpayments and returns, totaling $9,000, were netted against
+    the debit balances of other customers rather than reported separately; a $6,000 credit memo for goods
+    a customer returned on December 29, logged by the shipping department that day, wasn''t entered in
+    the accounting records until the memo was processed in January; and a $4,000 recovery of an account
+    written off in an earlier year, paid in cash by the customer in December, was recorded as a direct
+    credit to bad debt expense. For Constantine, what should corrected accounts receivable, before any
+    allowance, be at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $318,000
+    rationale: Leaves the $9,000 of customer credit balances netted against the receivables total. Credit
+      balances, from overpayments and returns, are a liability and aren't netted against other customers'
+      debit balances.
+  - id: B
+    text: $324,000
+    rationale: Accepts the draft's $324,000, which nets the customer credit balances against receivables
+      and omits the December return.
+  - id: C
+    text: $327,000
+    rationale: Correct. $324,000 + $9,000 − $6,000.
+  - id: D
+    text: $333,000
+    rationale: Leaves out the $6,000 credit memo for goods a customer returned in December, which wasn't
+      recorded until January.
+  answer: C
+  explanation: Credit balances in customer accounts are a liability, not a reduction of other customers'
+    receivables, so the $9,000 is added back (+ $9,000). The December return is a Year 2 event and must
+    be recorded in Year 2, reducing receivables (− $6,000). The recovery, recorded as a direct credit
+    to bad debt expense rather than by reinstating the account and then recording its collection, never
+    ran through accounts receivable, so it needs no correction here. Corrected balance = $324,000 + $9,000
+    − $6,000 = $327,000.

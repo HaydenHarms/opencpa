@@ -1,0 +1,146 @@
+id: far-fair-value-in-use-0001
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Fair value measurements
+  skill: Application
+review:
+  status: draft
+  references:
+  - ASC 820-10-35-10 to 35-14 (highest and best use; in-use versus in-exchange premise)
+  - ASC 820-10-55 (cost approach)
+  notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Pentire Bottling Co. owns a specialized capping machine that is part of an integrated production
+  line; used together with the line's other equipment, which market participants could also acquire, the
+  capping machine lets the whole line run at its highest and best use, generating far more value in combination
+  than any single piece would generate alone. No active market exists for secondhand capping machines
+  identical to this one, and sold apart from the line, for parts or scrap, it would bring only $85,000.
+  Pentire's appraiser instead estimates what it would cost currently to construct a new substitute capping
+  machine of comparable utility, $240,000, and reduces that amount by $38,000 of physical deterioration
+  and $22,000 of functional obsolescence, because newer models run faster. What is the fair value of the
+  capping machine?
+choices:
+- id: A
+  text: $85,000
+  rationale: Uses the $85,000 the capping machine would bring sold apart from the line, for parts or scrap.
+    That is its value on an in-exchange (standalone) premise, which applies only if a standalone sale
+    maximized its value; here using it within the line does.
+- id: B
+  text: $180,000
+  rationale: Correct. $240,000 − $38,000 − $22,000.
+- id: C
+  text: $202,000
+  rationale: Deducts only physical deterioration. Functional obsolescence, the $22,000 newer models' extra
+    speed is worth, is also deducted in a cost approach.
+- id: D
+  text: $218,000
+  rationale: Deducts only functional obsolescence. Physical deterioration, $38,000, is also deducted in
+    a cost approach.
+answer: B
+explanation: 'Fair value of a nonfinancial asset reflects its highest and best use by market participants,
+  which may be in combination with other assets as a group (an in-use premise) rather than on a standalone
+  basis (in-exchange), when using it that way maximizes its value and the complementary assets are available
+  to market participants (ASC 820-10-35-10 to 35-14). Because the capping machine is worth more used within
+  the line, fair value is measured on the in-use premise, here estimated with a cost approach: $240,000
+  − $38,000 − $22,000 = $180,000. The $85,000 standalone price is its in-exchange value, which would govern
+  only if a standalone sale maximized its value instead.'
+variants:
+- stem: Quethiock Dairy Co. owns a specialized filling machine that is part of an integrated production
+    line; used together with the line's other equipment, which market participants could also acquire,
+    the filling machine lets the whole line run at its highest and best use, generating far more value
+    in combination than any single piece would generate alone. No active market exists for secondhand
+    filling machines identical to this one, and sold apart from the line, for parts or scrap, it would
+    bring only $60,000. Quethiock's appraiser instead estimates what it would cost currently to construct
+    a new substitute filling machine of comparable utility, $190,000, and reduces that amount by $25,000
+    of physical deterioration and $15,000 of functional obsolescence, because newer models run faster.
+    What is the fair value of the filling machine?
+  choices:
+  - id: A
+    text: $60,000
+    rationale: Uses the $60,000 the filling machine would bring sold apart from the line, for parts or
+      scrap. That is its value on an in-exchange (standalone) premise, which applies only if a standalone
+      sale maximized its value; here using it within the line does.
+  - id: B
+    text: $150,000
+    rationale: Correct. $190,000 − $25,000 − $15,000.
+  - id: C
+    text: $175,000
+    rationale: Deducts only functional obsolescence. Physical deterioration, $25,000, is also deducted
+      in a cost approach.
+  - id: D
+    text: $190,000
+    rationale: Uses the $190,000 cost of a new substitute without any deduction for deterioration or obsolescence.
+  answer: B
+  explanation: 'Fair value of a nonfinancial asset reflects its highest and best use by market participants,
+    which may be in combination with other assets as a group (an in-use premise) rather than on a standalone
+    basis (in-exchange), when using it that way maximizes its value and the complementary assets are available
+    to market participants (ASC 820-10-35-10 to 35-14). Because the filling machine is worth more used
+    within the line, fair value is measured on the in-use premise, here estimated with a cost approach:
+    $190,000 − $25,000 − $15,000 = $150,000. The $60,000 standalone price is its in-exchange value, which
+    would govern only if a standalone sale maximized its value instead.'
+- stem: Rosudgeon Canning Co. owns a specialized seaming machine that is part of an integrated production
+    line; used together with the line's other equipment, which market participants could also acquire,
+    the seaming machine lets the whole line run at its highest and best use, generating far more value
+    in combination than any single piece would generate alone. No active market exists for secondhand
+    seaming machines identical to this one, and sold apart from the line, for parts or scrap, it would
+    bring only $100,000. Rosudgeon's appraiser instead estimates what it would cost currently to construct
+    a new substitute seaming machine of comparable utility, $300,000, and reduces that amount by $50,000
+    of physical deterioration and $30,000 of functional obsolescence, because newer models run faster.
+    What is the fair value of the seaming machine?
+  choices:
+  - id: A
+    text: $100,000
+    rationale: Uses the $100,000 the seaming machine would bring sold apart from the line, for parts or
+      scrap. That is its value on an in-exchange (standalone) premise, which applies only if a standalone
+      sale maximized its value; here using it within the line does.
+  - id: B
+    text: $220,000
+    rationale: Correct. $300,000 − $50,000 − $30,000.
+  - id: C
+    text: $250,000
+    rationale: Deducts only physical deterioration. Functional obsolescence, the $30,000 newer models'
+      extra speed is worth, is also deducted in a cost approach.
+  - id: D
+    text: $300,000
+    rationale: Uses the $300,000 cost of a new substitute without any deduction for deterioration or obsolescence.
+  answer: B
+  explanation: 'Fair value of a nonfinancial asset reflects its highest and best use by market participants,
+    which may be in combination with other assets as a group (an in-use premise) rather than on a standalone
+    basis (in-exchange), when using it that way maximizes its value and the complementary assets are available
+    to market participants (ASC 820-10-35-10 to 35-14). Because the seaming machine is worth more used
+    within the line, fair value is measured on the in-use premise, here estimated with a cost approach:
+    $300,000 − $50,000 − $30,000 = $220,000. The $100,000 standalone price is its in-exchange value, which
+    would govern only if a standalone sale maximized its value instead.'
+- stem: Stithians Brewing Co. owns a specialized pasteurizer that is part of an integrated production
+    line; used together with the line's other equipment, which market participants could also acquire,
+    the pasteurizer lets the whole line run at its highest and best use, generating far more value in
+    combination than any single piece would generate alone. No active market exists for secondhand pasteurizers
+    identical to this one, and sold apart from the line, for parts or scrap, it would bring only $70,000.
+    Stithians's appraiser instead estimates what it would cost currently to construct a new substitute
+    pasteurizer of comparable utility, $210,000, and reduces that amount by $28,000 of physical deterioration
+    and $17,000 of functional obsolescence, because newer models run faster. What is the fair value of
+    the pasteurizer?
+  choices:
+  - id: A
+    text: $165,000
+    rationale: Correct. $210,000 − $28,000 − $17,000.
+  - id: B
+    text: $182,000
+    rationale: Deducts only physical deterioration. Functional obsolescence, the $17,000 newer models'
+      extra speed is worth, is also deducted in a cost approach.
+  - id: C
+    text: $193,000
+    rationale: Deducts only functional obsolescence. Physical deterioration, $28,000, is also deducted
+      in a cost approach.
+  - id: D
+    text: $210,000
+    rationale: Uses the $210,000 cost of a new substitute without any deduction for deterioration or obsolescence.
+  answer: A
+  explanation: 'Fair value of a nonfinancial asset reflects its highest and best use by market participants,
+    which may be in combination with other assets as a group (an in-use premise) rather than on a standalone
+    basis (in-exchange), when using it that way maximizes its value and the complementary assets are available
+    to market participants (ASC 820-10-35-10 to 35-14). Because the pasteurizer is worth more used within
+    the line, fair value is measured on the in-use premise, here estimated with a cost approach: $210,000
+    − $28,000 − $17,000 = $165,000. The $70,000 standalone price is its in-exchange value, which would
+    govern only if a standalone sale maximized its value instead.'

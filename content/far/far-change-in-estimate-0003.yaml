@@ -1,0 +1,131 @@
+id: far-change-in-estimate-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Application
+review:
+  status: draft
+  references:
+  - 'ASC 250-10-45-17 (change in accounting estimate: prospective application)'
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Pelton Fixtures Co. bought equipment for $720,000, estimated a 10-year useful
+  life and a $60,000 salvage value, and has depreciated it straight-line. On January 1, Year 5, after
+  4 years of use, Pelton determines, based on new information about the equipment's condition, that its
+  total useful life will be 8 years rather than 10, and revises the salvage value to $36,000; the depreciation
+  method is unchanged. What carrying amount should Pelton report for the equipment at the end of Year
+  5, after that year's depreciation?
+choices:
+- id: A
+  text: $351,000
+  rationale: Correct. Carrying amount $456,000 ($720,000 − 4 × $66,000) less new depreciation of $105,000
+    (($456,000 − $36,000) ÷ 4).
+- id: B
+  text: $357,000
+  rationale: Keeps the original $60,000 salvage value when computing the new depreciation. Pelton revised
+    the salvage estimate to $36,000 along with the remaining life, and both revised estimates apply.
+- id: C
+  text: $386,000
+  rationale: Uses the original remaining life of 6 years. Pelton revised the remaining life to 4 years.
+- id: D
+  text: $615,000
+  rationale: Deducts the new depreciation from the asset's original $720,000 cost instead of its $456,000
+    carrying amount at the date of the change.
+answer: A
+explanation: 'A change in the estimated useful life or salvage value of a depreciable asset is a change
+  in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Carrying
+  amount at the date of change = $720,000 − 4 years × $66,000 = $456,000. The remaining depreciable base
+  is spread over the revised 4-year remaining life: ($456,000 − $36,000) ÷ 4 = $105,000 for Year 5. Carrying
+  amount at the end of Year 5 = $456,000 − $105,000 = $351,000. The change is not applied retroactively
+  to years already reported.'
+variants:
+- stem: On January 1, Year 1, Ashgrove Metalworks Co. bought equipment for $900,000, estimated a 9-year
+    useful life and a $72,000 salvage value, and has depreciated it straight-line. On January 1, Year
+    4, after 3 years of use, Ashgrove determines, based on new information about the equipment's condition,
+    that its total useful life will be 8 years rather than 9, and revises the salvage value to $54,000;
+    the depreciation method is unchanged. What carrying amount should Ashgrove report for the equipment
+    at the end of Year 4, after that year's depreciation?
+  choices:
+  - id: A
+    text: $477,000
+    rationale: Restates depreciation for the 3 years already recorded using the revised 5-year total useful
+      life and $54,000 salvage value, as if the revision applied retroactively.
+  - id: B
+    text: $510,000
+    rationale: Correct. Carrying amount $624,000 ($900,000 − 3 × $92,000) less new depreciation of $114,000
+      (($624,000 − $54,000) ÷ 5).
+  - id: C
+    text: $529,000
+    rationale: Uses the original remaining life of 6 years. Ashgrove revised the remaining life to 5 years.
+  - id: D
+    text: $786,000
+    rationale: Deducts the new depreciation from the asset's original $900,000 cost instead of its $624,000
+      carrying amount at the date of the change.
+  answer: B
+  explanation: 'A change in the estimated useful life or salvage value of a depreciable asset is a change
+    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Carrying
+    amount at the date of change = $900,000 − 3 years × $92,000 = $624,000. The remaining depreciable
+    base is spread over the revised 5-year remaining life: ($624,000 − $54,000) ÷ 5 = $114,000 for Year
+    4. Carrying amount at the end of Year 4 = $624,000 − $114,000 = $510,000. The change is not applied
+    retroactively to years already reported.'
+- stem: On January 1, Year 1, Dunmore Fabrication Co. bought equipment for $540,000, estimated an 8-year
+    useful life and a $48,000 salvage value, and has depreciated it straight-line. On January 1, Year
+    3, after 2 years of use, Dunmore determines, based on new information about the equipment's condition,
+    that its total useful life will be 6 years rather than 8, and revises the salvage value to $24,000;
+    the depreciation method is unchanged. What carrying amount should Dunmore report for the equipment
+    at the end of Year 3, after that year's depreciation?
+  choices:
+  - id: A
+    text: $282,000
+    rationale: Restates depreciation for the 2 years already recorded using the revised 4-year total useful
+      life and $24,000 salvage value, as if the revision applied retroactively.
+  - id: B
+    text: $318,750
+    rationale: Correct. Carrying amount $417,000 ($540,000 − 2 × $61,500) less new depreciation of $98,250
+      (($417,000 − $24,000) ÷ 4).
+  - id: C
+    text: $324,750
+    rationale: Keeps the original $48,000 salvage value when computing the new depreciation. Dunmore revised
+      the salvage estimate to $24,000 along with the remaining life, and both revised estimates apply.
+  - id: D
+    text: $351,500
+    rationale: Uses the original remaining life of 6 years. Dunmore revised the remaining life to 4 years.
+  answer: B
+  explanation: 'A change in the estimated useful life or salvage value of a depreciable asset is a change
+    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Carrying
+    amount at the date of change = $540,000 − 2 years × $61,500 = $417,000. The remaining depreciable
+    base is spread over the revised 4-year remaining life: ($417,000 − $24,000) ÷ 4 = $98,250 for Year
+    3. Carrying amount at the end of Year 3 = $417,000 − $98,250 = $318,750. The change is not applied
+    retroactively to years already reported.'
+- stem: On January 1, Year 1, Kellerton Casting Co. bought equipment for $1,080,000, estimated a 12-year
+    useful life and a $90,000 salvage value, and has depreciated it straight-line. On January 1, Year
+    6, after 5 years of use, Kellerton determines, based on new information about the equipment's condition,
+    that its total useful life will be 10 years rather than 12, and revises the salvage value to $60,000;
+    the depreciation method is unchanged. What carrying amount should Kellerton report for the equipment
+    at the end of Year 6, after that year's depreciation?
+  choices:
+  - id: A
+    text: $468,000
+    rationale: Restates depreciation for the 5 years already recorded using the revised 5-year total useful
+      life and $60,000 salvage value, as if the revision applied retroactively.
+  - id: B
+    text: $546,000
+    rationale: Correct. Carrying amount $667,500 ($1,080,000 − 5 × $82,500) less new depreciation of $121,500
+      (($667,500 − $60,000) ÷ 5).
+  - id: C
+    text: $552,000
+    rationale: Keeps the original $90,000 salvage value when computing the new depreciation. Kellerton
+      revised the salvage estimate to $60,000 along with the remaining life, and both revised estimates
+      apply.
+  - id: D
+    text: $958,500
+    rationale: Deducts the new depreciation from the asset's original $1,080,000 cost instead of its $667,500
+      carrying amount at the date of the change.
+  answer: B
+  explanation: 'A change in the estimated useful life or salvage value of a depreciable asset is a change
+    in accounting estimate, applied prospectively from the date of the change (ASC 250-10-45-17). Carrying
+    amount at the date of change = $1,080,000 − 5 years × $82,500 = $667,500. The remaining depreciable
+    base is spread over the revised 5-year remaining life: ($667,500 − $60,000) ÷ 5 = $121,500 for Year
+    6. Carrying amount at the end of Year 6 = $667,500 − $121,500 = $546,000. The change is not applied
+    retroactively to years already reported.'

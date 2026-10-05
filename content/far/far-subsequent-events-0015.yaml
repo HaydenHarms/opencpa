@@ -1,0 +1,118 @@
+id: far-subsequent-events-0015
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Application
+review:
+  status: draft
+  references:
+  - ASC 855-10-25 (subsequent event confirming a condition that existed at the balance sheet date)
+  - 'ASC 855-10-50 (nonrecognized subsequent events: dividend declarations)'
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Marrowbrook Supply Co.'s draft Year 1 income before income taxes is $1,860,000, which reflects a
+  $140,000 accrual for a lawsuit over a Year 1 incident at one of Marrowbrook's facilities. Before the
+  financial statements are issued, Marrowbrook settled the suit for $205,000. Separately, in February,
+  Marrowbrook's board declared a $90,000 cash dividend. Ignore income taxes. What income before income
+  taxes should Marrowbrook report for Year 1?
+choices:
+- id: A
+  text: $1,655,000
+  rationale: Deducts the full $205,000 settlement instead of only the $65,000 by which it exceeds the
+    $140,000 already accrued.
+- id: B
+  text: $1,795,000
+  rationale: Correct. $1,860,000 − ($205,000 − $140,000).
+- id: C
+  text: $1,860,000
+  rationale: Leaves the draft $1,860,000 unchanged. The settlement confirms that Marrowbrook owed more
+    than the $140,000 it had accrued for a condition that existed at year-end.
+- id: D
+  text: $1,925,000
+  rationale: Adds the $65,000 instead of subtracting it. The suit settled for more than Marrowbrook had
+    accrued, so the additional $65,000 is an additional expense.
+answer: B
+explanation: 'The settlement confirms conditions that existed at year-end and provides a better estimate
+  of the liability, so it is recognized: the additional $205,000 − $140,000 = $65,000 of expense is recorded.
+  The dividend declaration is a nonrecognized subsequent event, disclosed but not reflected in Year 1
+  income. Corrected income before income taxes = $1,860,000 − $65,000 = $1,795,000.'
+variants:
+- stem: Clearmont Industries Co.'s draft Year 2 income before income taxes is $2,340,000, which reflects
+    a $180,000 accrual for a lawsuit over a Year 2 incident at one of Clearmont's facilities. Before the
+    financial statements are issued, Clearmont settled the suit for $260,000. Separately, in March, Clearmont's
+    board declared a $120,000 cash dividend. Ignore income taxes. What income before income taxes should
+    Clearmont report for Year 2?
+  choices:
+  - id: A
+    text: $2,080,000
+    rationale: Deducts the full $260,000 settlement instead of only the $80,000 by which it exceeds the
+      $180,000 already accrued.
+  - id: B
+    text: $2,140,000
+    rationale: Also deducts the $120,000 dividend the board declared in March. A dividend declared after
+      year-end doesn't affect Year 2 income; it is disclosed.
+  - id: C
+    text: $2,260,000
+    rationale: Correct. $2,340,000 − ($260,000 − $180,000).
+  - id: D
+    text: $2,420,000
+    rationale: Adds the $80,000 instead of subtracting it. The suit settled for more than Clearmont had
+      accrued, so the additional $80,000 is an additional expense.
+  answer: C
+  explanation: 'The settlement confirms conditions that existed at year-end and provides a better estimate
+    of the liability, so it is recognized: the additional $260,000 − $180,000 = $80,000 of expense is
+    recorded. The dividend declaration is a nonrecognized subsequent event, disclosed but not reflected
+    in Year 2 income. Corrected income before income taxes = $2,340,000 − $80,000 = $2,260,000.'
+- stem: Fallowgate Products Co.'s draft Year 3 income before income taxes is $1,420,000, which reflects
+    a $95,000 accrual for a lawsuit over a Year 3 incident at one of Fallowgate's facilities. Before the
+    financial statements are issued, Fallowgate settled the suit for $150,000. Separately, in January,
+    Fallowgate's board declared a $60,000 cash dividend. Ignore income taxes. What income before income
+    taxes should Fallowgate report for Year 3?
+  choices:
+  - id: A
+    text: $1,270,000
+    rationale: Deducts the full $150,000 settlement instead of only the $55,000 by which it exceeds the
+      $95,000 already accrued.
+  - id: B
+    text: $1,305,000
+    rationale: Also deducts the $60,000 dividend the board declared in January. A dividend declared after
+      year-end doesn't affect Year 3 income; it is disclosed.
+  - id: C
+    text: $1,365,000
+    rationale: Correct. $1,420,000 − ($150,000 − $95,000).
+  - id: D
+    text: $1,420,000
+    rationale: Leaves the draft $1,420,000 unchanged. The settlement confirms that Fallowgate owed more
+      than the $95,000 it had accrued for a condition that existed at year-end.
+  answer: C
+  explanation: 'The settlement confirms conditions that existed at year-end and provides a better estimate
+    of the liability, so it is recognized: the additional $150,000 − $95,000 = $55,000 of expense is recorded.
+    The dividend declaration is a nonrecognized subsequent event, disclosed but not reflected in Year
+    3 income. Corrected income before income taxes = $1,420,000 − $55,000 = $1,365,000.'
+- stem: Berrowfield Co.'s draft Year 4 income before income taxes is $2,960,000, which reflects a $220,000
+    accrual for a lawsuit over a Year 4 incident at one of Berrowfield's facilities. Before the financial
+    statements are issued, Berrowfield settled the suit for $310,000. Separately, in February, Berrowfield's
+    board declared a $150,000 cash dividend. Ignore income taxes. What income before income taxes should
+    Berrowfield report for Year 4?
+  choices:
+  - id: A
+    text: $2,720,000
+    rationale: Also deducts the $150,000 dividend the board declared in February. A dividend declared
+      after year-end doesn't affect Year 4 income; it is disclosed.
+  - id: B
+    text: $2,870,000
+    rationale: Correct. $2,960,000 − ($310,000 − $220,000).
+  - id: C
+    text: $2,960,000
+    rationale: Leaves the draft $2,960,000 unchanged. The settlement confirms that Berrowfield owed more
+      than the $220,000 it had accrued for a condition that existed at year-end.
+  - id: D
+    text: $3,050,000
+    rationale: Adds the $90,000 instead of subtracting it. The suit settled for more than Berrowfield
+      had accrued, so the additional $90,000 is an additional expense.
+  answer: B
+  explanation: 'The settlement confirms conditions that existed at year-end and provides a better estimate
+    of the liability, so it is recognized: the additional $310,000 − $220,000 = $90,000 of expense is
+    recorded. The dividend declaration is a nonrecognized subsequent event, disclosed but not reflected
+    in Year 4 income. Corrected income before income taxes = $2,960,000 − $90,000 = $2,870,000.'

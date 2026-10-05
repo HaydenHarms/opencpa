@@ -19,21 +19,21 @@ choices:
   rationale: A classified presentation is permitted but not required. An unclassified presentation, sequenced
     by nearness to cash and maturity, is also acceptable.
 - id: B
-  text: It must report each donor restriction in a separate column of net assets
-  rationale: Net assets are reported in only two classes, with and without donor restrictions; the composition
-    of each class, including individual restrictions, is disclosed in the notes, not displayed in separate
-    columns.
-- id: C
   text: It may order assets and liabilities by nearness to cash and maturity
   rationale: Correct. A not-for-profit entity is not required to present a classified balance sheet; it
     may instead order items by nearness to cash and maturity, so long as the statement, the notes, or
     both convey information about liquidity and the availability of resources.
+- id: C
+  text: It must report each donor restriction in a separate column of net assets
+  rationale: Net assets are reported in only two classes, with and without donor restrictions; the composition
+    of each class, including individual restrictions, is disclosed in the notes, not displayed in separate
+    columns.
 - id: D
   text: It must report three classes of net assets, matching the entity's unrestricted, temporarily restricted
     and permanently restricted funds
   rationale: Since ASU 2016-14, net assets are reported in two classes, with and without donor restrictions,
     not three.
-answer: C
+answer: B
 explanation: ASC 958-210 does not require a not-for-profit entity to classify assets and liabilities as
   current and noncurrent. It may instead present them in order of nearness to cash and maturity, so long
   as the statement, the notes, or both convey information about liquidity and the availability of resources

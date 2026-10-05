@@ -1,0 +1,143 @@
+id: far-nfp-contributions-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: draft
+  references:
+  - ASC 958-605-25 (conditional versus unconditional promises; measurable barriers)
+  - ASC 958-605-30-7 (promises collectible currently; nonfinancial assets at fair value)
+  notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 1, Perrin Community Clinic, a not-for-profit entity, received the following. A donor
+  signed an unconditional promise to pay Perrin $45,000 within 60 days, collectible in the ordinary course
+  of Perrin's operations. A local pharmaceutical distributor donated medical supplies for Perrin to distribute
+  to patients, with a fair value of $18,000. A regional foundation pledged $60,000, payable only if Perrin
+  opens a satellite clinic by a specified date, a measurable barrier Perrin hasn't yet overcome. A donor
+  gave Perrin a used van for transporting patients, with a fair value of $22,000, which was carried on
+  the donor's own books at $9,000. What total contribution revenue should Perrin recognize for Year 1?
+choices:
+- id: A
+  text: $72,000
+  rationale: Records the van at the donor's $9,000 carrying amount. Contributed nonfinancial assets are
+    measured at their fair value when received, $22,000.
+- id: B
+  text: $83,650
+  rationale: Discounts the $45,000 promise by a present value factor even though it is due in 60 days,
+    within Perrin's operating cycle. An unconditional promise collectible currently is recognized at the
+    amount expected to be collected, without discounting (ASC 958-605-30-7).
+- id: C
+  text: $85,000
+  rationale: Correct. $45,000 (not discounted) + $18,000 + $22,000.
+- id: D
+  text: $145,000
+  rationale: Includes the $60,000 foundation pledge. It is conditioned on a measurable barrier, opening
+    the satellite clinic, that Perrin hasn't yet overcome, so it isn't revenue yet.
+answer: C
+explanation: 'An unconditional promise to give that is collectible currently is recognized at the amount
+  expected to be collected, with no present value discount (ASC 958-605-30-7): $45,000. The medical supplies
+  and the van are contributed nonfinancial assets, measured at fair value when received rather than the
+  donor''s carrying amount: $18,000 and $22,000. The foundation''s pledge depends on a measurable barrier
+  Perrin hasn''t overcome, so it isn''t revenue until the barrier is met. Contribution revenue = $45,000
+  + $18,000 + $22,000 = $85,000.'
+variants:
+- stem: During Year 1, Quimby Community Clinic, a not-for-profit entity, received the following. A donor
+    signed an unconditional promise to pay Quimby $60,000 within 60 days, collectible in the ordinary
+    course of Quimby's operations. A local pharmaceutical distributor donated medical supplies for Quimby
+    to distribute to patients, with a fair value of $25,000. A regional foundation pledged $80,000, payable
+    only if Quimby opens a satellite clinic by a specified date, a measurable barrier Quimby hasn't yet
+    overcome. A donor gave Quimby a used van for transporting patients, with a fair value of $30,000,
+    which was carried on the donor's own books at $12,000. What total contribution revenue should Quimby
+    recognize for Year 1?
+  choices:
+  - id: A
+    text: $90,000
+    rationale: Leaves out the $25,000 of donated medical supplies, as if giving them away later means
+      Quimby recognizes no contribution now. Contributed goods are recognized at fair value when received,
+      even though Quimby will distribute them.
+  - id: B
+    text: $112,000
+    rationale: Discounts the $60,000 promise by a present value factor even though it is due in 60 days,
+      within Quimby's operating cycle. An unconditional promise collectible currently is recognized at
+      the amount expected to be collected, without discounting (ASC 958-605-30-7).
+  - id: C
+    text: $115,000
+    rationale: Correct. $60,000 (not discounted) + $25,000 + $30,000.
+  - id: D
+    text: $195,000
+    rationale: Includes the $80,000 foundation pledge. It is conditioned on a measurable barrier, opening
+      the satellite clinic, that Quimby hasn't yet overcome, so it isn't revenue yet.
+  answer: C
+  explanation: 'An unconditional promise to give that is collectible currently is recognized at the amount
+    expected to be collected, with no present value discount (ASC 958-605-30-7): $60,000. The medical
+    supplies and the van are contributed nonfinancial assets, measured at fair value when received rather
+    than the donor''s carrying amount: $25,000 and $30,000. The foundation''s pledge depends on a measurable
+    barrier Quimby hasn''t overcome, so it isn''t revenue until the barrier is met. Contribution revenue
+    = $60,000 + $25,000 + $30,000 = $115,000.'
+- stem: During Year 1, Radburn Community Clinic, a not-for-profit entity, received the following. A donor
+    signed an unconditional promise to pay Radburn $36,000 within 60 days, collectible in the ordinary
+    course of Radburn's operations. A local pharmaceutical distributor donated medical supplies for Radburn
+    to distribute to patients, with a fair value of $14,000. A regional foundation pledged $50,000, payable
+    only if Radburn opens a satellite clinic by a specified date, a measurable barrier Radburn hasn't
+    yet overcome. A donor gave Radburn a used van for transporting patients, with a fair value of $16,000,
+    which was carried on the donor's own books at $6,000. What total contribution revenue should Radburn
+    recognize for Year 1?
+  choices:
+  - id: A
+    text: $52,000
+    rationale: Leaves out the $14,000 of donated medical supplies, as if giving them away later means
+      Radburn recognizes no contribution now. Contributed goods are recognized at fair value when received,
+      even though Radburn will distribute them.
+  - id: B
+    text: $56,000
+    rationale: Records the van at the donor's $6,000 carrying amount. Contributed nonfinancial assets
+      are measured at their fair value when received, $16,000.
+  - id: C
+    text: $65,280
+    rationale: Discounts the $36,000 promise by a present value factor even though it is due in 60 days,
+      within Radburn's operating cycle. An unconditional promise collectible currently is recognized at
+      the amount expected to be collected, without discounting (ASC 958-605-30-7).
+  - id: D
+    text: $66,000
+    rationale: Correct. $36,000 (not discounted) + $14,000 + $16,000.
+  answer: D
+  explanation: 'An unconditional promise to give that is collectible currently is recognized at the amount
+    expected to be collected, with no present value discount (ASC 958-605-30-7): $36,000. The medical
+    supplies and the van are contributed nonfinancial assets, measured at fair value when received rather
+    than the donor''s carrying amount: $14,000 and $16,000. The foundation''s pledge depends on a measurable
+    barrier Radburn hasn''t overcome, so it isn''t revenue until the barrier is met. Contribution revenue
+    = $36,000 + $14,000 + $16,000 = $66,000.'
+- stem: During Year 1, Sawbridge Community Clinic, a not-for-profit entity, received the following. A
+    donor signed an unconditional promise to pay Sawbridge $72,000 within 60 days, collectible in the
+    ordinary course of Sawbridge's operations. A local pharmaceutical distributor donated medical supplies
+    for Sawbridge to distribute to patients, with a fair value of $30,000. A regional foundation pledged
+    $100,000, payable only if Sawbridge opens a satellite clinic by a specified date, a measurable barrier
+    Sawbridge hasn't yet overcome. A donor gave Sawbridge a used van for transporting patients, with a
+    fair value of $38,000, which was carried on the donor's own books at $15,000. What total contribution
+    revenue should Sawbridge recognize for Year 1?
+  choices:
+  - id: A
+    text: $110,000
+    rationale: Leaves out the $30,000 of donated medical supplies, as if giving them away later means
+      Sawbridge recognizes no contribution now. Contributed goods are recognized at fair value when received,
+      even though Sawbridge will distribute them.
+  - id: B
+    text: $117,000
+    rationale: Records the van at the donor's $15,000 carrying amount. Contributed nonfinancial assets
+      are measured at their fair value when received, $38,000.
+  - id: C
+    text: $140,000
+    rationale: Correct. $72,000 (not discounted) + $30,000 + $38,000.
+  - id: D
+    text: $240,000
+    rationale: Includes the $100,000 foundation pledge. It is conditioned on a measurable barrier, opening
+      the satellite clinic, that Sawbridge hasn't yet overcome, so it isn't revenue yet.
+  answer: C
+  explanation: 'An unconditional promise to give that is collectible currently is recognized at the amount
+    expected to be collected, with no present value discount (ASC 958-605-30-7): $72,000. The medical
+    supplies and the van are contributed nonfinancial assets, measured at fair value when received rather
+    than the donor''s carrying amount: $30,000 and $38,000. The foundation''s pledge depends on a measurable
+    barrier Sawbridge hasn''t overcome, so it isn''t revenue until the barrier is met. Contribution revenue
+    = $72,000 + $30,000 + $38,000 = $140,000.'

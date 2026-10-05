@@ -1,0 +1,141 @@
+id: far-revenue-licenses-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: draft
+  references:
+  - ASC 606-10-55-65 (sales- and usage-based royalties for a license of intellectual property)
+  notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Kestrel Photonics Co. licenses two pieces of intellectual property for the quarter. It licenses
+  a patented sensor-calibration process, mature functional technology Kestrel doesn't plan to update,
+  to a manufacturer in exchange for a 6% royalty on the manufacturer's net sales of products using the
+  process, with no fixed fee and no minimum guarantee; when the agreement was signed, Kestrel projected
+  those sales would be about $1,000,000 for the year, but actual sales using the process were $250,000
+  for the quarter. Kestrel also licenses its brand name to a franchisee, together with marketing support
+  Kestrel will keep providing, for a fixed $8,000 a quarter plus a 2% royalty on the franchisee's sales;
+  franchisee sales for the quarter were $180,000. How much revenue should Kestrel recognize for the quarter
+  from these two licenses?
+choices:
+- id: A
+  text: $11,600
+  rationale: Leaves out the $15,000 patent royalty entirely.
+- id: B
+  text: $18,600
+  rationale: Leaves out the $8,000 fixed brand license fee for the quarter.
+- id: C
+  text: $26,600
+  rationale: Correct. (6% × $250,000) + $8,000 + (2% × $180,000).
+- id: D
+  text: $71,600
+  rationale: Applies the 6% rate to the $1,000,000 of sales the manufacturer projected for the year when
+    the agreement was signed, instead of the $250,000 actually sold this quarter. A sales-based royalty
+    for a license of intellectual property is recognized only as the underlying sales occur, never estimated
+    in advance (ASC 606-10-55-65).
+answer: C
+explanation: Consideration in the form of a sales- or usage-based royalty for a license of intellectual
+  property is recognized only as the underlying sales occur, regardless of whether the license is a right
+  to use (the patent) or a right to access (the brand name, supported by Kestrel's ongoing marketing)
+  (ASC 606-10-55-65); Kestrel doesn't estimate the royalty from its sales projection. Patent royalty =
+  6% × $250,000 = $15,000. The brand license's fixed fee, $8,000, is earned for the quarter, and its royalty
+  = 2% × $180,000 = $3,600. Total revenue = $26,600.
+variants:
+- stem: Harrow Acoustics Co. licenses two pieces of intellectual property for the quarter. It licenses
+    a patented sensor-calibration process, mature functional technology Harrow doesn't plan to update,
+    to a manufacturer in exchange for a 5% royalty on the manufacturer's net sales of products using the
+    process, with no fixed fee and no minimum guarantee; when the agreement was signed, Harrow projected
+    those sales would be about $1,500,000 for the year, but actual sales using the process were $320,000
+    for the quarter. Harrow also licenses its brand name to a franchisee, together with marketing support
+    Harrow will keep providing, for a fixed $6,000 a quarter plus a 3% royalty on the franchisee's sales;
+    franchisee sales for the quarter were $140,000. How much revenue should Harrow recognize for the quarter
+    from these two licenses?
+  choices:
+  - id: A
+    text: $20,200
+    rationale: Leaves out the $6,000 fixed brand license fee for the quarter.
+  - id: B
+    text: $26,200
+    rationale: Correct. (5% × $320,000) + $6,000 + (3% × $140,000).
+  - id: C
+    text: $85,200
+    rationale: Applies the 5% rate to the $1,500,000 of sales the manufacturer projected for the year
+      when the agreement was signed, instead of the $320,000 actually sold this quarter. A sales-based
+      royalty for a license of intellectual property is recognized only as the underlying sales occur,
+      never estimated in advance (ASC 606-10-55-65).
+  - id: D
+    text: $466,000
+    rationale: Adds the full $320,000 and $140,000 of sales to the $6,000 fee without applying either
+      royalty rate.
+  answer: B
+  explanation: Consideration in the form of a sales- or usage-based royalty for a license of intellectual
+    property is recognized only as the underlying sales occur, regardless of whether the license is a
+    right to use (the patent) or a right to access (the brand name, supported by Harrow's ongoing marketing)
+    (ASC 606-10-55-65); Harrow doesn't estimate the royalty from its sales projection. Patent royalty
+    = 5% × $320,000 = $16,000. The brand license's fixed fee, $6,000, is earned for the quarter, and its
+    royalty = 3% × $140,000 = $4,200. Total revenue = $26,200.
+- stem: Ivymoor Robotics Co. licenses two pieces of intellectual property for the quarter. It licenses
+    a patented sensor-calibration process, mature functional technology Ivymoor doesn't plan to update,
+    to a manufacturer in exchange for an 8% royalty on the manufacturer's net sales of products using
+    the process, with no fixed fee and no minimum guarantee; when the agreement was signed, Ivymoor projected
+    those sales would be about $820,000 for the year, but actual sales using the process were $180,000
+    for the quarter. Ivymoor also licenses its brand name to a franchisee, together with marketing support
+    Ivymoor will keep providing, for a fixed $10,000 a quarter plus a 2.5% royalty on the franchisee's
+    sales; franchisee sales for the quarter were $220,000. How much revenue should Ivymoor recognize for
+    the quarter from these two licenses?
+  choices:
+  - id: A
+    text: $15,500
+    rationale: Leaves out the $14,400 patent royalty entirely.
+  - id: B
+    text: $29,900
+    rationale: Correct. (8% × $180,000) + $10,000 + (2.5% × $220,000).
+  - id: C
+    text: $81,100
+    rationale: Applies the 8% rate to the $820,000 of sales the manufacturer projected for the year when
+      the agreement was signed, instead of the $180,000 actually sold this quarter. A sales-based royalty
+      for a license of intellectual property is recognized only as the underlying sales occur, never estimated
+      in advance (ASC 606-10-55-65).
+  - id: D
+    text: $410,000
+    rationale: Adds the full $180,000 and $220,000 of sales to the $10,000 fee without applying either
+      royalty rate.
+  answer: B
+  explanation: Consideration in the form of a sales- or usage-based royalty for a license of intellectual
+    property is recognized only as the underlying sales occur, regardless of whether the license is a
+    right to use (the patent) or a right to access (the brand name, supported by Ivymoor's ongoing marketing)
+    (ASC 606-10-55-65); Ivymoor doesn't estimate the royalty from its sales projection. Patent royalty
+    = 8% × $180,000 = $14,400. The brand license's fixed fee, $10,000, is earned for the quarter, and
+    its royalty = 2.5% × $220,000 = $5,500. Total revenue = $29,900.
+- stem: Juniper Dynamics Co. licenses two pieces of intellectual property for the quarter. It licenses
+    a patented sensor-calibration process, mature functional technology Juniper doesn't plan to update,
+    to a manufacturer in exchange for a 4% royalty on the manufacturer's net sales of products using the
+    process, with no fixed fee and no minimum guarantee; when the agreement was signed, Juniper projected
+    those sales would be about $2,000,000 for the year, but actual sales using the process were $410,000
+    for the quarter. Juniper also licenses its brand name to a franchisee, together with marketing support
+    Juniper will keep providing, for a fixed $12,000 a quarter plus a 3% royalty on the franchisee's sales;
+    franchisee sales for the quarter were $260,000. How much revenue should Juniper recognize for the
+    quarter from these two licenses?
+  choices:
+  - id: A
+    text: $19,800
+    rationale: Leaves out the $16,400 patent royalty entirely.
+  - id: B
+    text: $24,200
+    rationale: Leaves out the $12,000 fixed brand license fee for the quarter.
+  - id: C
+    text: $36,200
+    rationale: Correct. (4% × $410,000) + $12,000 + (3% × $260,000).
+  - id: D
+    text: $682,000
+    rationale: Adds the full $410,000 and $260,000 of sales to the $12,000 fee without applying either
+      royalty rate.
+  answer: C
+  explanation: Consideration in the form of a sales- or usage-based royalty for a license of intellectual
+    property is recognized only as the underlying sales occur, regardless of whether the license is a
+    right to use (the patent) or a right to access (the brand name, supported by Juniper's ongoing marketing)
+    (ASC 606-10-55-65); Juniper doesn't estimate the royalty from its sales projection. Patent royalty
+    = 4% × $410,000 = $16,400. The brand license's fixed fee, $12,000, is earned for the quarter, and
+    its royalty = 3% × $260,000 = $7,800. Total revenue = $36,200.

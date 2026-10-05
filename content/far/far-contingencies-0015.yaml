@@ -1,0 +1,122 @@
+id: far-contingencies-0015
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Application
+review:
+  status: draft
+  references:
+  - 'ASC 450-20-25 (loss contingencies: accrual when probable and estimable)'
+  - ASC 460-10 (product warranties)
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Oldcastle Mills Co. had accrued $180,000 at the start of the year for a lawsuit over a Year 1 defect
+  in its products. During the year, Oldcastle paid $70,000 toward the case and, based on a revised assessment,
+  increased its remaining estimate of the total cost by $55,000. Separately, Oldcastle sold $2,600,000
+  of products during the year that carry a one-year warranty included in the price; based on experience,
+  Oldcastle estimates warranty costs at 4% of sales, and it paid $38,000 of warranty claims on those sales
+  during the year. What total liability for the litigation and the warranty should Oldcastle report at
+  year-end?
+choices:
+- id: A
+  text: $176,000
+  rationale: Leaves out the $55,000 that Oldcastle must add to the litigation accrual because the case
+    turned out to cost more than the $180,000 first estimated.
+- id: B
+  text: $231,000
+  rationale: Correct. Litigation $165,000 + warranty $66,000.
+- id: C
+  text: $269,000
+  rationale: Doesn't reduce the warranty estimate for the $38,000 of claims Oldcastle already paid during
+    the year.
+- id: D
+  text: $301,000
+  rationale: Doesn't reduce the litigation accrual for the $70,000 already paid toward the settlement
+    during the year.
+answer: B
+explanation: Litigation liability = $180,000 beginning accrual − $70,000 paid + $55,000 added for the
+  revised estimate = $165,000. Warranty liability = 4% × $2,600,000 of covered sales − $38,000 of claims
+  already paid = $66,000. Total liability = $165,000 + $66,000 = $231,000.
+variants:
+- stem: Ferngate Products Co. had accrued $240,000 at the start of the year for a lawsuit over a Year
+    1 defect in its products. During the year, Ferngate paid $90,000 toward the case and, based on a revised
+    assessment, increased its remaining estimate of the total cost by $65,000. Separately, Ferngate sold
+    $3,400,000 of products during the year that carry a one-year warranty included in the price; based
+    on experience, Ferngate estimates warranty costs at 3% of sales, and it paid $51,000 of warranty claims
+    on those sales during the year. What total liability for the litigation and the warranty should Ferngate
+    report at year-end?
+  choices:
+  - id: A
+    text: $51,000
+    rationale: Treats the litigation matter as fully resolved with no liability remaining, leaving out
+      the litigation accrual entirely.
+  - id: B
+    text: $266,000
+    rationale: Correct. Litigation $215,000 + warranty $51,000.
+  - id: C
+    text: $317,000
+    rationale: Doesn't reduce the warranty estimate for the $51,000 of claims Ferngate already paid during
+      the year.
+  - id: D
+    text: $356,000
+    rationale: Doesn't reduce the litigation accrual for the $90,000 already paid toward the settlement
+      during the year.
+  answer: B
+  explanation: Litigation liability = $240,000 beginning accrual − $90,000 paid + $65,000 added for the
+    revised estimate = $215,000. Warranty liability = 3% × $3,400,000 of covered sales − $51,000 of claims
+    already paid = $51,000. Total liability = $215,000 + $51,000 = $266,000.
+- stem: Brackendale Goods Co. had accrued $130,000 at the start of the year for a lawsuit over a Year
+    1 defect in its products. During the year, Brackendale paid $50,000 toward the case and, based on
+    a revised assessment, increased its remaining estimate of the total cost by $40,000. Separately, Brackendale
+    sold $1,900,000 of products during the year that carry a one-year warranty included in the price;
+    based on experience, Brackendale estimates warranty costs at 5% of sales, and it paid $29,000 of warranty
+    claims on those sales during the year. What total liability for the litigation and the warranty should
+    Brackendale report at year-end?
+  choices:
+  - id: A
+    text: $66,000
+    rationale: Treats the litigation matter as fully resolved with no liability remaining, leaving out
+      the litigation accrual entirely.
+  - id: B
+    text: $146,000
+    rationale: Leaves out the $40,000 that Brackendale must add to the litigation accrual because the
+      case turned out to cost more than the $130,000 first estimated.
+  - id: C
+    text: $186,000
+    rationale: Correct. Litigation $120,000 + warranty $66,000.
+  - id: D
+    text: $215,000
+    rationale: Doesn't reduce the warranty estimate for the $29,000 of claims Brackendale already paid
+      during the year.
+  answer: C
+  explanation: Litigation liability = $130,000 beginning accrual − $50,000 paid + $40,000 added for the
+    revised estimate = $120,000. Warranty liability = 5% × $1,900,000 of covered sales − $29,000 of claims
+    already paid = $66,000. Total liability = $120,000 + $66,000 = $186,000.
+- stem: Southmoor Appliance Co. had accrued $310,000 at the start of the year for a lawsuit over a Year
+    1 defect in its products. During the year, Southmoor paid $120,000 toward the case and, based on a
+    revised assessment, increased its remaining estimate of the total cost by $80,000. Separately, Southmoor
+    sold $4,100,000 of products during the year that carry a one-year warranty included in the price;
+    based on experience, Southmoor estimates warranty costs at 3% of sales, and it paid $58,000 of warranty
+    claims on those sales during the year. What total liability for the litigation and the warranty should
+    Southmoor report at year-end?
+  choices:
+  - id: A
+    text: $65,000
+    rationale: Treats the litigation matter as fully resolved with no liability remaining, leaving out
+      the litigation accrual entirely.
+  - id: B
+    text: $255,000
+    rationale: Leaves out the $80,000 that Southmoor must add to the litigation accrual because the case
+      turned out to cost more than the $310,000 first estimated.
+  - id: C
+    text: $335,000
+    rationale: Correct. Litigation $270,000 + warranty $65,000.
+  - id: D
+    text: $455,000
+    rationale: Doesn't reduce the litigation accrual for the $120,000 already paid toward the settlement
+      during the year.
+  answer: C
+  explanation: Litigation liability = $310,000 beginning accrual − $120,000 paid + $80,000 added for the
+    revised estimate = $270,000. Warranty liability = 3% × $4,100,000 of covered sales − $58,000 of claims
+    already paid = $65,000. Total liability = $270,000 + $65,000 = $335,000.

@@ -1,0 +1,130 @@
+id: far-accounting-errors-0011
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Analysis
+review:
+  status: draft
+  references:
+  - 'ASC 450-20-25 (customer rebate programs: liability for amounts estimable on sales made)'
+  - ASC 440-10 (purchase commitments not liabilities until performance)
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Thistlewood Retail Co.'s draft December 31, Year 2, balance sheet reports total liabilities of $4,860,000.
+  Reviewing the records before the statements are issued, the controller finds two errors. First, Thistlewood
+  offers customers a cash rebate on store-brand appliances purchased during the year, redeemable through
+  June of next year; Thistlewood can reasonably estimate that $84,000 of rebates will be claimed on Year
+  2 sales, but nothing has been accrued. Second, the draft includes, as a recorded liability, a $52,000
+  purchase order that Thistlewood issued on December 29 for replacement parts the supplier will ship FOB
+  shipping point in mid-January. What total liabilities should Thistlewood's corrected balance sheet report
+  at December 31, Year 2?
+choices:
+- id: A
+  text: $4,808,000
+  rationale: Leaves out the $84,000 customer rebate liability that Thistlewood never accrued, even though
+    it owes the rebates on sales already made.
+- id: B
+  text: $4,828,000
+  rationale: Subtracts the $84,000 rebate liability and adds the $52,000 purchase order, the opposite
+    of the correction each error needs.
+- id: C
+  text: $4,892,000
+  rationale: Correct. $4,860,000 + $84,000 − $52,000.
+- id: D
+  text: $4,944,000
+  rationale: Leaves the $52,000 purchase order in the draft total. Thistlewood owes nothing until the
+    supplier ships the goods, so a mere order is a commitment, not a liability.
+answer: C
+explanation: The rebate program obligates Thistlewood to pay amounts it can estimate on sales already
+  made, so the $84,000 of expected rebates is accrued as a liability (ASC 450-20-25). The purchase order
+  isn't a liability until the supplier performs by shipping the goods (FOB shipping point means that hasn't
+  happened); it is removed. Corrected total liabilities = $4,860,000 + $84,000 − $52,000 = $4,892,000.
+variants:
+- stem: Grantley Mercantile Co.'s draft December 31, Year 3, balance sheet reports total liabilities of
+    $3,240,000. Reviewing the records before the statements are issued, the controller finds two errors.
+    First, Grantley offers customers a cash rebate on winter apparel purchased during the year, redeemable
+    through March of next year; Grantley can reasonably estimate that $61,000 of rebates will be claimed
+    on Year 3 sales, but nothing has been accrued. Second, the draft includes, as a recorded liability,
+    a $38,000 purchase order that Grantley issued on December 29 for packaging supplies the supplier will
+    ship FOB shipping point in mid-January. What total liabilities should Grantley's corrected balance
+    sheet report at December 31, Year 3?
+  choices:
+  - id: A
+    text: $3,217,000
+    rationale: Subtracts the $61,000 rebate liability and adds the $38,000 purchase order, the opposite
+      of the correction each error needs.
+  - id: B
+    text: $3,240,000
+    rationale: Accepts the draft's $3,240,000, which omits the unaccrued rebate liability and keeps the
+      purchase order as a recorded liability.
+  - id: C
+    text: $3,263,000
+    rationale: Correct. $3,240,000 + $61,000 − $38,000.
+  - id: D
+    text: $3,301,000
+    rationale: Leaves the $38,000 purchase order in the draft total. Grantley owes nothing until the supplier
+      ships the goods, so a mere order is a commitment, not a liability.
+  answer: C
+  explanation: The rebate program obligates Grantley to pay amounts it can estimate on sales already made,
+    so the $61,000 of expected rebates is accrued as a liability (ASC 450-20-25). The purchase order isn't
+    a liability until the supplier performs by shipping the goods (FOB shipping point means that hasn't
+    happened); it is removed. Corrected total liabilities = $3,240,000 + $61,000 − $38,000 = $3,263,000.
+- stem: Oakhurst Wholesale Co.'s draft December 31, Year 1, balance sheet reports total liabilities of
+    $5,920,000. Reviewing the records before the statements are issued, the controller finds two errors.
+    First, Oakhurst offers customers a cash rebate on kitchenware purchased during the year, redeemable
+    through August of next year; Oakhurst can reasonably estimate that $103,000 of rebates will be claimed
+    on Year 1 sales, but nothing has been accrued. Second, the draft includes, as a recorded liability,
+    a $67,000 purchase order that Oakhurst issued on December 29 for display fixtures the supplier will
+    ship FOB shipping point in mid-January. What total liabilities should Oakhurst's corrected balance
+    sheet report at December 31, Year 1?
+  choices:
+  - id: A
+    text: $5,853,000
+    rationale: Leaves out the $103,000 customer rebate liability that Oakhurst never accrued, even though
+      it owes the rebates on sales already made.
+  - id: B
+    text: $5,884,000
+    rationale: Subtracts the $103,000 rebate liability and adds the $67,000 purchase order, the opposite
+      of the correction each error needs.
+  - id: C
+    text: $5,920,000
+    rationale: Accepts the draft's $5,920,000, which omits the unaccrued rebate liability and keeps the
+      purchase order as a recorded liability.
+  - id: D
+    text: $5,956,000
+    rationale: Correct. $5,920,000 + $103,000 − $67,000.
+  answer: D
+  explanation: The rebate program obligates Oakhurst to pay amounts it can estimate on sales already made,
+    so the $103,000 of expected rebates is accrued as a liability (ASC 450-20-25). The purchase order
+    isn't a liability until the supplier performs by shipping the goods (FOB shipping point means that
+    hasn't happened); it is removed. Corrected total liabilities = $5,920,000 + $103,000 − $67,000 = $5,956,000.
+- stem: Welbridge Trading Co.'s draft December 31, Year 4, balance sheet reports total liabilities of
+    $2,680,000. Reviewing the records before the statements are issued, the controller finds two errors.
+    First, Welbridge offers customers a cash rebate on garden tools purchased during the year, redeemable
+    through May of next year; Welbridge can reasonably estimate that $47,000 of rebates will be claimed
+    on Year 4 sales, but nothing has been accrued. Second, the draft includes, as a recorded liability,
+    a $29,000 purchase order that Welbridge issued on December 29 for replacement blades the supplier
+    will ship FOB shipping point in mid-January. What total liabilities should Welbridge's corrected balance
+    sheet report at December 31, Year 4?
+  choices:
+  - id: A
+    text: $2,651,000
+    rationale: Leaves out the $47,000 customer rebate liability that Welbridge never accrued, even though
+      it owes the rebates on sales already made.
+  - id: B
+    text: $2,680,000
+    rationale: Accepts the draft's $2,680,000, which omits the unaccrued rebate liability and keeps the
+      purchase order as a recorded liability.
+  - id: C
+    text: $2,698,000
+    rationale: Correct. $2,680,000 + $47,000 − $29,000.
+  - id: D
+    text: $2,727,000
+    rationale: Leaves the $29,000 purchase order in the draft total. Welbridge owes nothing until the
+      supplier ships the goods, so a mere order is a commitment, not a liability.
+  answer: C
+  explanation: The rebate program obligates Welbridge to pay amounts it can estimate on sales already
+    made, so the $47,000 of expected rebates is accrued as a liability (ASC 450-20-25). The purchase order
+    isn't a liability until the supplier performs by shipping the goods (FOB shipping point means that
+    hasn't happened); it is removed. Corrected total liabilities = $2,680,000 + $47,000 − $29,000 = $2,698,000.

@@ -1,0 +1,43 @@
+id: far-debt-modification-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Notes and bonds payable)
+  skill: Remembering and Understanding
+review:
+  status: reviewed
+  references:
+  - 'ASC 470-50-40 (the 10% cash flow test: present value of the new cash flows, including fees paid to
+    or received from the lender, compared with the present value of the remaining original cash flows,
+    both discounted at the original effective rate)'
+  notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Harwell Co. and its lender change the terms of a note. To decide whether the change is a modification
+  or an extinguishment, ASC 470-50 compares the present value of the cash flows under the new terms with
+  the present value of the remaining cash flows under the old terms, each discounted at the original effective
+  rate. Which of the following belongs in the present value of the new cash flows for that comparison?
+choices:
+- id: A
+  text: A fee the borrower pays its own outside legal counsel to negotiate the new terms
+  rationale: A cost paid to a third party, such as the borrower's own legal counsel, is not a cash flow
+    between the borrower and the lender and is left out of the test; it is expensed as incurred.
+- id: B
+  text: The undiscounted total of the new principal and interest payments
+  rationale: The test compares present values, not undiscounted totals; leaving out discounting overstates
+    the new cash flows and can misclassify a modification as an extinguishment, or the reverse.
+- id: C
+  text: The difference between the old and new notes' stated interest rates
+  rationale: The test compares the present value of cash flows, not stated interest rates; a rate change
+    matters only through the payments it produces.
+- id: D
+  text: A fee the borrower pays the lender, discounted along with the new payments
+  rationale: Correct. A fee exchanged between the borrower and the lender, including one the borrower
+    pays for agreeing to the new terms, is one of the new debt's cash flows and is discounted along with
+    the new principal and interest payments.
+answer: D
+explanation: Under ASC 470-50-40, a change in a note's terms is an extinguishment if the present value
+  of the cash flows under the new terms differs by at least 10% from the present value of the remaining
+  cash flows under the old terms, both discounted at the original effective rate; otherwise it is a modification.
+  The new cash flows include any fee exchanged between the borrower and the lender. A fee the borrower
+  pays to a third party, such as its own legal counsel, is not part of either side's cash flows and is
+  expensed as incurred rather than included in the test.

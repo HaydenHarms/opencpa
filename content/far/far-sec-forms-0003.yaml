@@ -15,14 +15,13 @@ stem: A newly public company's controller is planning next year's SEC filing cal
   correctly describes one of Form 10-K, Form 10-Q or Form 8-K?
 choices:
 - id: A
+  text: Form 10-Q's interim statements, for the first three fiscal quarters, need not be audited
+  rationale: Correct. Form 10-Q is filed after each of the first three fiscal quarters and presents condensed
+    interim financial statements that need not be audited.
+- id: B
   text: Form 10-K's financial statements may be unaudited if the audit committee has reviewed them
   rationale: Form 10-K's annual financial statements must be audited by an independent registered public
     accounting firm; a review by the audit committee is not a substitute.
-- id: B
-  text: Form 10-Q reports condensed interim statements, which may be unaudited, for the first three fiscal
-    quarters
-  rationale: Correct. Form 10-Q is filed after each of the first three fiscal quarters and presents condensed
-    interim financial statements that need not be audited.
 - id: C
   text: Form 8-K is filed on a quarterly schedule to update the registrant's management's discussion and
     analysis
@@ -33,7 +32,7 @@ choices:
     results
   rationale: No Form 10-Q is filed for the fourth quarter; the full year's results are reported on the
     annual Form 10-K instead.
-answer: B
+answer: A
 explanation: Form 10-Q is the quarterly report, filed after each of a registrant's first three fiscal
   quarters, and its interim financial statements are condensed and need not be audited. Form 10-K is the
   annual report, with audited financial statements, and covers the full fiscal year, including what would
