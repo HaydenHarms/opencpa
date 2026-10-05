@@ -349,7 +349,7 @@ WORD_ITEMS = [
     mcq("far-ratios-0008", A1, "Financial Statement Ratios and Performance Metrics", RU,
         ["Financial statement analysis: the quick (acid-test) ratio excludes inventory and prepaid items from current assets"],
         """Bewdley Retail Co. is negotiating 30-day trade credit terms with a new supplier. Most of Bewdley's current assets are inventory, which turns over only about twice a year; cash and receivables make up a much smaller share of current assets. Which ratio should the supplier compute before extending the credit?""",
-        [("The quick (acid-test) ratio", "Correct. The quick ratio excludes inventory (and other current assets not readily convertible to cash) from the numerator, testing whether more liquid assets alone cover current liabilities."),
+        [("The quick ratio: quick assets divided by current liabilities", "Correct. The quick ratio excludes inventory (and other current assets not readily convertible to cash) from the numerator, testing whether more liquid assets alone cover current liabilities."),
          ("The current ratio: current assets divided by current liabilities", "The current ratio includes inventory in the numerator, so a company could show adequate current assets while still depending on selling inventory to pay its bills."),
          ("Inventory turnover: cost of goods sold divided by average inventory", "Inventory turnover measures how quickly inventory is sold and replaced; it does not test whether obligations can be paid without selling it."),
          ("Working capital: current assets minus current liabilities", "Working capital is a dollar amount, not scaled to the size of the obligations, and it still includes inventory in current assets.")],

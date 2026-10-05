@@ -29,7 +29,7 @@ choices:
   rationale: Working capital is a dollar amount, not scaled to the size of the obligations, and it still
     includes inventory in current assets.
 - id: D
-  text: The quick (acid-test) ratio
+  text: "The quick ratio: quick assets divided by current liabilities"
   rationale: Correct. The quick ratio excludes inventory (and other current assets not readily convertible
     to cash) from the numerator, testing whether more liquid assets alone cover current liabilities.
 answer: D
