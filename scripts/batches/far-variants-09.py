@@ -167,22 +167,24 @@ def cloud_costs(p):
     co, ev, cfg, conv, train, term, renew = (p[k] for k in ("co", "eval", "config", "conversion", "training", "term", "renew"))
     short = co.split()[0]
     life = term + renew
-    half = lambda base, yrs: whole(D(base) / yrs / 2)
+    left = 12 * life - 6  # months of the hosting term remaining when the software is ready on July 1
+    half = lambda base, months: rd(D(base) * 6 / months)  # Year 1 amortization, July to December
     exp = ev + conv + train
-    key_v = exp + half(cfg, life)
+    key_v = exp + half(cfg, left)
     pool = {
-        "cap_conv": (m(ev + train + half(cfg + conv, life)), f"Capitalizes the {m(conv)} of data conversion with the configuration costs ({m(ev)} + {m(train)} + {m(cfg + conv)} ÷ {life} × ½). Data conversion costs are expensed as incurred."),
-        "term_only": (m(exp + half(cfg, term)), f"Amortizes over the {term}-year noncancellable term. The term includes renewal periods {short} is reasonably certain to exercise, so it is {life} years."),
-        "full_year": (m(exp + whole(D(cfg) / life)), "Amortizes for the full year. Amortization begins when the software is ready for its intended use on July 1."),
-        "cap_eval": (m(conv + train + half(cfg + ev, life)), f"Capitalizes the {m(ev)} of vendor evaluation. Costs of evaluating and selecting a vendor come before the project and are expensed as incurred."),
+        "cap_conv": (m(ev + train + half(cfg + conv, left)), f"Capitalizes the {m(conv)} of data conversion with the configuration costs ({m(ev)} + {m(train)} + {m(cfg + conv)} × 6/{left}). Data conversion costs are expensed as incurred."),
+        "term_only": (m(exp + half(cfg, 12 * term - 6)), f"Amortizes over the {12 * term - 6} months left in the {term}-year noncancellable term. The term includes renewal periods {short} is reasonably certain to exercise, so {left} months remain."),
+        "full_year": (m(exp + rd(D(cfg) / life)), f"Amortizes for the full year, as if amortization began when the contract started on January 1 ({m(cfg)} ÷ {life}). Amortization begins when the software is ready for its intended use on July 1."),
+        "full_term": (m(exp + half(cfg, 12 * life)), f"Spreads the costs over a full {life} years starting July 1 ({m(cfg)} ÷ {life} × ½), which runs six months past the end of the arrangement on December 31, Year {life}. Only {left} months of the term remain when amortization begins."),
+        "cap_eval": (m(conv + train + half(cfg + ev, left)), f"Capitalizes the {m(ev)} of vendor evaluation. Costs of evaluating and selecting a vendor come before the project and are expensed as incurred."),
         "expense_all": (m(ev + cfg + conv + train), f"Expenses the {m(cfg)} of configuration, coding, and testing. Application-development costs of a hosting arrangement are capitalized."),
     }
-    key = (m(key_v), f"Correct. {m(ev)} + {m(conv)} + {m(train)} expensed as incurred, plus {m(cfg)} ÷ {life} years × ½ year = {m(half(cfg, life))} of amortization.")
+    key = (m(key_v), f"Correct. {m(ev)} + {m(conv)} + {m(train)} expensed as incurred, plus {m(cfg)} × 6/{left} months = {m(half(cfg, left))} of amortization.")
     choices, ans = pick(pool, key, p["use"])
     return variant(
-        f"""On January 1, Year 1, {co} signs a noncancellable {term}-year contract to access a vendor's cloud-hosted ERP software. {short} has no right to take possession of the software, and it is reasonably certain to exercise its option to renew the contract for {renew} more years. Before the software became ready for its intended use on July 1, Year 1, {short} incurred these costs: {m(ev)} to evaluate vendors before selecting this one; {m(cfg)} for configuration, coding, and testing of interfaces; {m(conv)} to convert and cleanse legacy data; and {m(train)} to train employees. {short} amortizes capitalized costs straight-line. Excluding the hosting fees, what total expense should {short} recognize in Year 1 related to these costs?""",
+        f"""On January 1, Year 1, {co} signs a noncancellable {term}-year contract, running from that date, to access a vendor's cloud-hosted ERP software. {short} has no right to take possession of the software, and it is reasonably certain to exercise its option to renew the contract for {renew} more years. Before the software became ready for its intended use on July 1, Year 1, {short} incurred these costs: {m(ev)} to evaluate vendors before selecting this one; {m(cfg)} for configuration, coding, and testing of interfaces; {m(conv)} to convert and cleanse legacy data; and {m(train)} to train employees. {short} amortizes capitalized costs straight-line. Excluding the hosting fees, what total expense should {short} recognize in Year 1 related to these costs?""",
         choices, ans,
-        f"""A cloud computing arrangement without a right to take possession of the software is a service contract, and its implementation costs are capitalized or expensed as for internal-use software. Evaluating and selecting a vendor ({m(ev)}) happens before the entity commits to a project, and data conversion ({m(conv)}) and training ({m(train)}) are not costs of developing the software, so all three are expensed as incurred. (ASU 2025-06, which removes the project-stage model from ASC 350-40, does not change these conclusions.) Application-development costs (configuration, coding, and testing, {m(cfg)}) are capitalized and amortized straight-line over the term of the arrangement, including renewals {short} is reasonably certain to exercise ({life} years), starting when the software is ready for its intended use: {m(cfg)} ÷ {life} × ½ = {m(half(cfg, life))}. Total Year 1 expense: {m(ev)} + {m(conv)} + {m(train)} + {m(half(cfg, life))} = {m(key_v)}.""",
+        f"""A cloud computing arrangement without a right to take possession of the software is a service contract, and its implementation costs are capitalized or expensed as for internal-use software. Evaluating and selecting a vendor ({m(ev)}) happens before the entity commits to a project, and data conversion ({m(conv)}) and training ({m(train)}) are not costs of developing the software, so all three are expensed as incurred. (ASU 2025-06, which removes the project-stage model from ASC 350-40, does not change these conclusions.) Application-development costs (configuration, coding, and testing, {m(cfg)}) are capitalized and amortized straight-line over the term of the hosting arrangement, starting when the software is ready for its intended use. The term runs from January 1, Year 1, through the renewal {short} is reasonably certain to exercise ({life} years in all, ending December 31, Year {life}), so {left} months of it remain on July 1: {m(cfg)} × 6/{left} = {m(half(cfg, left))} for July through December. Total Year 1 expense: {m(ev)} + {m(conv)} + {m(train)} + {m(half(cfg, left))} = {m(key_v)}.""",
     )
 
 
@@ -308,7 +310,7 @@ FAMILIES = {
         dict(co="Lambert Supply Co.", correct=1500000, dup=25000, memo=9000, bankrupt=200000, recover=20, hist=3, fwd=2, allow=30000, use=["pool_all", "hist", "uncorrected"]),
     ]),
     "far-intangibles-cloud-computing-0001": (cloud_costs, [
-        dict(co="Lark Co.", eval=25000, config=180000, conversion=30000, training=20000, term=3, renew=2, use=["cap_conv", "term_only", "full_year"]),
+        dict(co="Lark Co.", eval=25000, config=180000, conversion=30000, training=20000, term=3, renew=2, use=["full_term", "term_only", "cap_conv"]),
         dict(co="Mabry Co.", eval=36000, config=300000, conversion=60000, training=30000, term=4, renew=2, use=["term_only", "full_year", "expense_all"]),
         dict(co="Nance Co.", eval=20000, config=150000, conversion=25000, training=15000, term=3, renew=2, use=["cap_conv", "cap_eval", "term_only"]),
         dict(co="Orvis Co.", eval=30000, config=264000, conversion=48000, training=25000, term=4, renew=2, use=["cap_conv", "term_only", "full_year"]),

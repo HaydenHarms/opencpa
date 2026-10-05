@@ -12,64 +12,70 @@ review:
     contract)
   - ASU 2018-15 (customer's accounting for implementation costs in a cloud computing arrangement)
   - ASU 2025-06 (targeted improvements to internal-use software; same result here)
-  notes: Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint's task
-    frames). Answers re-solved and every number and distractor computed in code.
-stem: 'On January 1, Year 1, Lark Co. signs a noncancellable 3-year contract to access a vendor''s cloud-hosted
-  ERP software. Lark has no right to take possession of the software, and it is reasonably certain to
-  exercise its option to renew the contract for 2 more years. Before the software became ready for its
-  intended use on July 1, Year 1, Lark incurred these costs: $25,000 to evaluate vendors before selecting
-  this one; $180,000 for configuration, coding, and testing of interfaces; $30,000 to convert and cleanse
-  legacy data; and $20,000 to train employees. Lark amortizes capitalized costs straight-line. Excluding
-  the hosting fees, what total expense should Lark recognize in Year 1 related to these costs?'
+  notes: 'Batch 01, revision 3 (2026 blueprint scope, four choices, Analysis items in the blueprint''s
+    task frames). Answers re-solved and every number and distractor computed in code. Revision 4 (2026-10-05,
+    batch 15 gate): the key now amortizes over the term remaining when the software is ready for use (54
+    of 60 months), not a full five years from July 1.'
+stem: 'On January 1, Year 1, Lark Co. signs a noncancellable 3-year contract, running from that date,
+  to access a vendor''s cloud-hosted ERP software. Lark has no right to take possession of the software,
+  and it is reasonably certain to exercise its option to renew the contract for 2 more years. Before the
+  software became ready for its intended use on July 1, Year 1, Lark incurred these costs: $25,000 to
+  evaluate vendors before selecting this one; $180,000 for configuration, coding, and testing of interfaces;
+  $30,000 to convert and cleanse legacy data; and $20,000 to train employees. Lark amortizes capitalized
+  costs straight-line. Excluding the hosting fees, what total expense should Lark recognize in Year 1
+  related to these costs?'
 choices:
 - id: A
-  text: $66,000
+  text: $68,333
   rationale: Capitalizes the $30,000 of data conversion with the configuration costs ($25,000 + $20,000
-    + $210,000 ÷ 5 × ½). Data conversion costs are expensed as incurred.
+    + $210,000 × 6/54). Data conversion costs are expensed as incurred.
 - id: B
   text: $93,000
-  rationale: Correct. $25,000 + $30,000 + $20,000 expensed as incurred, plus $180,000 ÷ 5 years × ½ year
-    = $18,000 of amortization.
+  rationale: Spreads the costs over a full 5 years starting July 1 ($180,000 ÷ 5 × ½), which runs six
+    months past the end of the arrangement on December 31, Year 5. Only 54 months of the term remain when
+    amortization begins.
 - id: C
-  text: $105,000
-  rationale: Amortizes over the 3-year noncancellable term. The term includes renewal periods Lark is
-    reasonably certain to exercise, so it is 5 years.
+  text: $95,000
+  rationale: Correct. $25,000 + $30,000 + $20,000 expensed as incurred, plus $180,000 × 6/54 months =
+    $20,000 of amortization.
 - id: D
   text: $111,000
-  rationale: Amortizes for the full year. Amortization begins when the software is ready for its intended
-    use on July 1.
-answer: B
+  rationale: Amortizes over the 30 months left in the 3-year noncancellable term. The term includes renewal
+    periods Lark is reasonably certain to exercise, so 54 months remain.
+answer: C
 explanation: 'A cloud computing arrangement without a right to take possession of the software is a service
   contract, and its implementation costs are capitalized or expensed as for internal-use software. Evaluating
   and selecting a vendor ($25,000) happens before the entity commits to a project, and data conversion
   ($30,000) and training ($20,000) are not costs of developing the software, so all three are expensed
   as incurred. (ASU 2025-06, which removes the project-stage model from ASC 350-40, does not change these
   conclusions.) Application-development costs (configuration, coding, and testing, $180,000) are capitalized
-  and amortized straight-line over the term of the arrangement, including renewals Lark is reasonably
-  certain to exercise (5 years), starting when the software is ready for its intended use: $180,000 ÷
-  5 × ½ = $18,000. Total Year 1 expense: $25,000 + $30,000 + $20,000 + $18,000 = $93,000.'
+  and amortized straight-line over the term of the hosting arrangement, starting when the software is
+  ready for its intended use. The term runs from January 1, Year 1, through the renewal Lark is reasonably
+  certain to exercise (5 years in all, ending December 31, Year 5), so 54 months of it remain on July
+  1: $180,000 × 6/54 = $20,000 for July through December. Total Year 1 expense: $25,000 + $30,000 + $20,000
+  + $20,000 = $95,000.'
 variants:
-- stem: 'On January 1, Year 1, Mabry Co. signs a noncancellable 4-year contract to access a vendor''s
-    cloud-hosted ERP software. Mabry has no right to take possession of the software, and it is reasonably
-    certain to exercise its option to renew the contract for 2 more years. Before the software became
-    ready for its intended use on July 1, Year 1, Mabry incurred these costs: $36,000 to evaluate vendors
-    before selecting this one; $300,000 for configuration, coding, and testing of interfaces; $60,000
-    to convert and cleanse legacy data; and $30,000 to train employees. Mabry amortizes capitalized costs
-    straight-line. Excluding the hosting fees, what total expense should Mabry recognize in Year 1 related
-    to these costs?'
+- stem: 'On January 1, Year 1, Mabry Co. signs a noncancellable 4-year contract, running from that date,
+    to access a vendor''s cloud-hosted ERP software. Mabry has no right to take possession of the software,
+    and it is reasonably certain to exercise its option to renew the contract for 2 more years. Before
+    the software became ready for its intended use on July 1, Year 1, Mabry incurred these costs: $36,000
+    to evaluate vendors before selecting this one; $300,000 for configuration, coding, and testing of
+    interfaces; $60,000 to convert and cleanse legacy data; and $30,000 to train employees. Mabry amortizes
+    capitalized costs straight-line. Excluding the hosting fees, what total expense should Mabry recognize
+    in Year 1 related to these costs?'
   choices:
   - id: A
-    text: $151,000
-    rationale: Correct. $36,000 + $60,000 + $30,000 expensed as incurred, plus $300,000 ÷ 6 years × ½
-      year = $25,000 of amortization.
+    text: $153,273
+    rationale: Correct. $36,000 + $60,000 + $30,000 expensed as incurred, plus $300,000 × 6/66 months
+      = $27,273 of amortization.
   - id: B
-    text: $163,500
-    rationale: Amortizes over the 4-year noncancellable term. The term includes renewal periods Mabry
-      is reasonably certain to exercise, so it is 6 years.
+    text: $168,857
+    rationale: Amortizes over the 42 months left in the 4-year noncancellable term. The term includes
+      renewal periods Mabry is reasonably certain to exercise, so 66 months remain.
   - id: C
     text: $176,000
-    rationale: Amortizes for the full year. Amortization begins when the software is ready for its intended
-      use on July 1.
+    rationale: Amortizes for the full year, as if amortization began when the contract started on January
+      1 ($300,000 ÷ 6). Amortization begins when the software is ready for its intended use on July 1.
   - id: D
     text: $426,000
     rationale: Expenses the $300,000 of configuration, coding, and testing. Application-development costs
@@ -81,35 +87,36 @@ variants:
     conversion ($60,000) and training ($30,000) are not costs of developing the software, so all three
     are expensed as incurred. (ASU 2025-06, which removes the project-stage model from ASC 350-40, does
     not change these conclusions.) Application-development costs (configuration, coding, and testing,
-    $300,000) are capitalized and amortized straight-line over the term of the arrangement, including
-    renewals Mabry is reasonably certain to exercise (6 years), starting when the software is ready for
-    its intended use: $300,000 ÷ 6 × ½ = $25,000. Total Year 1 expense: $36,000 + $60,000 + $30,000 +
-    $25,000 = $151,000.'
-- stem: 'On January 1, Year 1, Nance Co. signs a noncancellable 3-year contract to access a vendor''s
-    cloud-hosted ERP software. Nance has no right to take possession of the software, and it is reasonably
-    certain to exercise its option to renew the contract for 2 more years. Before the software became
-    ready for its intended use on July 1, Year 1, Nance incurred these costs: $20,000 to evaluate vendors
-    before selecting this one; $150,000 for configuration, coding, and testing of interfaces; $25,000
-    to convert and cleanse legacy data; and $15,000 to train employees. Nance amortizes capitalized costs
-    straight-line. Excluding the hosting fees, what total expense should Nance recognize in Year 1 related
-    to these costs?'
+    $300,000) are capitalized and amortized straight-line over the term of the hosting arrangement, starting
+    when the software is ready for its intended use. The term runs from January 1, Year 1, through the
+    renewal Mabry is reasonably certain to exercise (6 years in all, ending December 31, Year 6), so 66
+    months of it remain on July 1: $300,000 × 6/66 = $27,273 for July through December. Total Year 1 expense:
+    $36,000 + $60,000 + $30,000 + $27,273 = $153,273.'
+- stem: 'On January 1, Year 1, Nance Co. signs a noncancellable 3-year contract, running from that date,
+    to access a vendor''s cloud-hosted ERP software. Nance has no right to take possession of the software,
+    and it is reasonably certain to exercise its option to renew the contract for 2 more years. Before
+    the software became ready for its intended use on July 1, Year 1, Nance incurred these costs: $20,000
+    to evaluate vendors before selecting this one; $150,000 for configuration, coding, and testing of
+    interfaces; $25,000 to convert and cleanse legacy data; and $15,000 to train employees. Nance amortizes
+    capitalized costs straight-line. Excluding the hosting fees, what total expense should Nance recognize
+    in Year 1 related to these costs?'
   choices:
   - id: A
-    text: $52,500
+    text: $54,444
     rationale: Capitalizes the $25,000 of data conversion with the configuration costs ($20,000 + $15,000
-      + $175,000 ÷ 5 × ½). Data conversion costs are expensed as incurred.
+      + $175,000 × 6/54). Data conversion costs are expensed as incurred.
   - id: B
-    text: $57,000
+    text: $58,889
     rationale: Capitalizes the $20,000 of vendor evaluation. Costs of evaluating and selecting a vendor
       come before the project and are expensed as incurred.
   - id: C
-    text: $75,000
-    rationale: Correct. $20,000 + $25,000 + $15,000 expensed as incurred, plus $150,000 ÷ 5 years × ½
-      year = $15,000 of amortization.
+    text: $76,667
+    rationale: Correct. $20,000 + $25,000 + $15,000 expensed as incurred, plus $150,000 × 6/54 months
+      = $16,667 of amortization.
   - id: D
-    text: $85,000
-    rationale: Amortizes over the 3-year noncancellable term. The term includes renewal periods Nance
-      is reasonably certain to exercise, so it is 5 years.
+    text: $90,000
+    rationale: Amortizes over the 30 months left in the 3-year noncancellable term. The term includes
+      renewal periods Nance is reasonably certain to exercise, so 54 months remain.
   answer: C
   explanation: 'A cloud computing arrangement without a right to take possession of the software is a
     service contract, and its implementation costs are capitalized or expensed as for internal-use software.
@@ -117,35 +124,36 @@ variants:
     conversion ($25,000) and training ($15,000) are not costs of developing the software, so all three
     are expensed as incurred. (ASU 2025-06, which removes the project-stage model from ASC 350-40, does
     not change these conclusions.) Application-development costs (configuration, coding, and testing,
-    $150,000) are capitalized and amortized straight-line over the term of the arrangement, including
-    renewals Nance is reasonably certain to exercise (5 years), starting when the software is ready for
-    its intended use: $150,000 ÷ 5 × ½ = $15,000. Total Year 1 expense: $20,000 + $25,000 + $15,000 +
-    $15,000 = $75,000.'
-- stem: 'On January 1, Year 1, Orvis Co. signs a noncancellable 4-year contract to access a vendor''s
-    cloud-hosted ERP software. Orvis has no right to take possession of the software, and it is reasonably
-    certain to exercise its option to renew the contract for 2 more years. Before the software became
-    ready for its intended use on July 1, Year 1, Orvis incurred these costs: $30,000 to evaluate vendors
-    before selecting this one; $264,000 for configuration, coding, and testing of interfaces; $48,000
-    to convert and cleanse legacy data; and $25,000 to train employees. Orvis amortizes capitalized costs
-    straight-line. Excluding the hosting fees, what total expense should Orvis recognize in Year 1 related
-    to these costs?'
+    $150,000) are capitalized and amortized straight-line over the term of the hosting arrangement, starting
+    when the software is ready for its intended use. The term runs from January 1, Year 1, through the
+    renewal Nance is reasonably certain to exercise (5 years in all, ending December 31, Year 5), so 54
+    months of it remain on July 1: $150,000 × 6/54 = $16,667 for July through December. Total Year 1 expense:
+    $20,000 + $25,000 + $15,000 + $16,667 = $76,667.'
+- stem: 'On January 1, Year 1, Orvis Co. signs a noncancellable 4-year contract, running from that date,
+    to access a vendor''s cloud-hosted ERP software. Orvis has no right to take possession of the software,
+    and it is reasonably certain to exercise its option to renew the contract for 2 more years. Before
+    the software became ready for its intended use on July 1, Year 1, Orvis incurred these costs: $30,000
+    to evaluate vendors before selecting this one; $264,000 for configuration, coding, and testing of
+    interfaces; $48,000 to convert and cleanse legacy data; and $25,000 to train employees. Orvis amortizes
+    capitalized costs straight-line. Excluding the hosting fees, what total expense should Orvis recognize
+    in Year 1 related to these costs?'
   choices:
   - id: A
-    text: $81,000
+    text: $83,364
     rationale: Capitalizes the $48,000 of data conversion with the configuration costs ($30,000 + $25,000
-      + $312,000 ÷ 6 × ½). Data conversion costs are expensed as incurred.
+      + $312,000 × 6/66). Data conversion costs are expensed as incurred.
   - id: B
-    text: $125,000
-    rationale: Correct. $30,000 + $48,000 + $25,000 expensed as incurred, plus $264,000 ÷ 6 years × ½
-      year = $22,000 of amortization.
+    text: $127,000
+    rationale: Correct. $30,000 + $48,000 + $25,000 expensed as incurred, plus $264,000 × 6/66 months
+      = $24,000 of amortization.
   - id: C
-    text: $136,000
-    rationale: Amortizes over the 4-year noncancellable term. The term includes renewal periods Orvis
-      is reasonably certain to exercise, so it is 6 years.
+    text: $140,714
+    rationale: Amortizes over the 42 months left in the 4-year noncancellable term. The term includes
+      renewal periods Orvis is reasonably certain to exercise, so 66 months remain.
   - id: D
     text: $147,000
-    rationale: Amortizes for the full year. Amortization begins when the software is ready for its intended
-      use on July 1.
+    rationale: Amortizes for the full year, as if amortization began when the contract started on January
+      1 ($264,000 ÷ 6). Amortization begins when the software is ready for its intended use on July 1.
   answer: B
   explanation: 'A cloud computing arrangement without a right to take possession of the software is a
     service contract, and its implementation costs are capitalized or expensed as for internal-use software.
@@ -153,7 +161,8 @@ variants:
     conversion ($48,000) and training ($25,000) are not costs of developing the software, so all three
     are expensed as incurred. (ASU 2025-06, which removes the project-stage model from ASC 350-40, does
     not change these conclusions.) Application-development costs (configuration, coding, and testing,
-    $264,000) are capitalized and amortized straight-line over the term of the arrangement, including
-    renewals Orvis is reasonably certain to exercise (6 years), starting when the software is ready for
-    its intended use: $264,000 ÷ 6 × ½ = $22,000. Total Year 1 expense: $30,000 + $48,000 + $25,000 +
-    $22,000 = $125,000.'
+    $264,000) are capitalized and amortized straight-line over the term of the hosting arrangement, starting
+    when the software is ready for its intended use. The term runs from January 1, Year 1, through the
+    renewal Orvis is reasonably certain to exercise (6 years in all, ending December 31, Year 6), so 66
+    months of it remain on July 1: $264,000 × 6/66 = $24,000 for July through December. Total Year 1 expense:
+    $30,000 + $48,000 + $25,000 + $24,000 = $127,000.'
