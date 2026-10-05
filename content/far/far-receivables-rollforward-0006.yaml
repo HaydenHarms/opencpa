@@ -9,155 +9,175 @@ review:
   status: draft
   references:
   - ASC 310-10 (receivables)
-  - 'ASC 860-10-40 (transfers of receivables failing sale accounting: secured borrowing)'
-  - ASC 606-10-25 (transfer of control; bill-and-hold arrangements)
-  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'Tregony''s staff drafted this Year 2 rollforward of the accounts receivable control account: January
-  1 balance $520,000; plus credit sales $3,150,000; less cash collected from customers $3,080,000; less
-  accounts written off $26,000; December 31 balance $564,000. All of Tregony''s sales are on account.
-  Reviewing the draft, the controller finds: $72,000 of receivables that Tregony factored to a bank with
-  recourse, for which the draft removed the receivables and recorded the cash as a sale, though Tregony
-  remains obligated to repay the bank for any accounts the bank can''t collect; a $48,000 order that a
-  customer asked Tregony to invoice and hold in Tregony''s warehouse until the customer''s new store opens,
-  which the draft recorded as a completed sale even though the goods haven''t been shipped, aren''t identified
-  as the customer''s and remain available to fill other orders; and a $19,000 volume rebate owed to a
-  customer, which the draft''s cash collected figure already reflects as a reduction, rather than as a
-  separate liability. What amount of accounts receivable, before any allowance, should the corrected rollforward
-  report for Tregony at December 31, Year 2?'
+  - ASC 860-10-40-5 (conditions for a transfer of financial assets to be a sale; otherwise a secured borrowing)
+  - ASC 606-10-55-81 to 55-84 (bill-and-hold arrangements)
+  - 'ASC 606-10-45-4 (receivables: unconditional right to consideration)'
+  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
+    solved and every number and distractor computed in code.
+stem: Portreath Supply Co.'s accounts receivable control account began Year 2 at $520,000. Its Year 2
+  postings were debits for sales of $3,150,000, credits for cash collected of $3,080,000, credits for
+  accounts written off of $26,000, and a $72,000 credit on October 1, when Portreath transferred that
+  amount of customer accounts to a bank for cash, leaving a December 31 balance of $492,000. Testing the
+  postings, internal audit learns that Portreath must reimburse the bank for any transferred account that
+  isn't collected, and the transfer agreement forbids the bank from selling or pledging the accounts.
+  The sales debits include a $48,000 invoice dated December 28 for goods a customer asked Portreath to
+  hold until its new store opens in March; the goods sit with Portreath's other stock, are available to
+  fill other orders, and are payable 30 days after delivery. Both the sales debits and the cash-collected
+  credits include $94,000 of showroom cash sales, which Portreath's cashiers post through the receivables
+  account on the day of each sale. What balance, before any allowance, should Portreath's accounts receivable
+  control account show at December 31, Year 2?
 choices:
 - id: A
-  text: $497,000
-  rationale: Leaves the $72,000 of receivables factored with recourse out of the rollforward. Because
-    Tregony kept the risk of nonpayment, the transfer doesn't qualify as a sale; the receivables, and
-    an offsetting liability, stay on the books.
+  text: $422,000
+  rationale: Removes the $94,000 of cash sales from the sales debits only. They were also posted as collections,
+    so the debit and credit cancel and the year-end balance needs no correction for them.
 - id: B
-  text: $564,000
-  rationale: Accepts the draft's $564,000, which removed the recourse-factored receivables as if sold,
-    counted the bill-and-hold order as a sale and left the rebate netted against collections.
+  text: $444,000
+  rationale: Accepts the $72,000 credit for the transfer as a sale. Because the agreement bars the bank
+    from selling or pledging the accounts, the transfer fails the conditions for sale accounting in ASC
+    860-10-40-5; it is a secured borrowing, so the receivables stay in the control account and the cash
+    is a liability.
 - id: C
-  text: $569,000
-  rationale: Correct. $564,000 + $72,000 − $48,000 − $19,000.
+  text: $516,000
+  rationale: Correct. $492,000 + $72,000 − $48,000; the cash sales were debited and credited to the account,
+    so they net to zero.
 - id: D
-  text: $617,000
-  rationale: Keeps the $48,000 bill-and-hold order as a completed sale. Control hadn't passed to the customer,
-    so it isn't a receivable.
+  text: $564,000
+  rationale: Keeps the $48,000 bill-and-hold invoice as a receivable. The goods sit with Portreath's other
+    stock and can fill other orders, so control hasn't passed and there is no sale yet; payment isn't
+    due until 30 days after delivery, so Portreath has no unconditional right to payment either.
 answer: C
-explanation: 'Receivables factored with recourse, where Tregony keeps the risk of nonpayment, are accounted
-  for as a secured borrowing, not a sale (ASC 860-10-40-5): the $72,000 stays in receivables (+ $72,000).
-  The bill-and-hold order doesn''t meet the criteria for control to have passed (the goods aren''t shipped,
-  aren''t identified as the customer''s, and Tregony can still redirect them), so it is removed (− $48,000).
-  Netting the $19,000 rebate against cash collected understated collections applied to customer accounts,
-  leaving ending receivables $19,000 too high (− $19,000). Corrected balance = $564,000 + $72,000 − $48,000
-  − $19,000 = $569,000.'
+explanation: 'The transfer is a secured borrowing, not a sale: Portreath keeps the credit risk, and the
+  agreement forbids the bank from selling or pledging the accounts, so the transferee lacks the right
+  to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The $72,000 goes back
+  into receivables, and the cash received is a liability to the bank. The December 28 invoice is not a
+  sale: the goods aren''t set apart as the customer''s and can be used to fill other orders, so control
+  hasn''t passed (ASC 606-10-55-83), and with payment due only after delivery there is no unconditional
+  right to payment; the $48,000 comes out. The showroom cash sales were debited and credited to the account
+  for the same $94,000, so they leave the balance unchanged. Corrected balance = $492,000 + $72,000 −
+  $48,000 = $516,000.'
 variants:
-- stem: 'Portreath''s staff drafted this Year 2 rollforward of the accounts receivable control account:
-    January 1 balance $410,000; plus credit sales $2,460,000; less cash collected from customers $2,395,000;
-    less accounts written off $21,000; December 31 balance $454,000. All of Portreath''s sales are on
-    account. Reviewing the draft, the controller finds: $58,000 of receivables that Portreath factored
-    to a bank with recourse, for which the draft removed the receivables and recorded the cash as a sale,
-    though Portreath remains obligated to repay the bank for any accounts the bank can''t collect; a $36,000
-    order that a customer asked Portreath to invoice and hold in Portreath''s warehouse until the customer''s
-    new store opens, which the draft recorded as a completed sale even though the goods haven''t been
-    shipped, aren''t identified as the customer''s and remain available to fill other orders; and a $15,000
-    volume rebate owed to a customer, which the draft''s cash collected figure already reflects as a reduction,
-    rather than as a separate liability. What amount of accounts receivable, before any allowance, should
-    the corrected rollforward report for Portreath at December 31, Year 2?'
+- stem: Porthtowan Traders Co.'s accounts receivable control account began Year 2 at $410,000. Its Year
+    2 postings were debits for sales of $2,460,000, credits for cash collected of $2,395,000, credits
+    for accounts written off of $21,000, and a $58,000 credit on October 1, when Porthtowan transferred
+    that amount of customer accounts to a bank for cash, leaving a December 31 balance of $396,000. Testing
+    the postings, internal audit learns that Porthtowan must reimburse the bank for any transferred account
+    that isn't collected, and the transfer agreement forbids the bank from selling or pledging the accounts.
+    The sales debits include a $36,000 invoice dated December 28 for goods a customer asked Porthtowan
+    to hold until its new store opens in March; the goods sit with Porthtowan's other stock, are available
+    to fill other orders, and are payable 30 days after delivery. Both the sales debits and the cash-collected
+    credits include $77,000 of showroom cash sales, which Porthtowan's cashiers post through the receivables
+    account on the day of each sale. What balance, before any allowance, should Porthtowan's accounts
+    receivable control account show at December 31, Year 2?
   choices:
   - id: A
+    text: $341,000
+    rationale: Removes the $77,000 of cash sales from the sales debits only. They were also posted as
+      collections, so the debit and credit cancel and the year-end balance needs no correction for them.
+  - id: B
+    text: $396,000
+    rationale: Accepts the balance as posted, $396,000, keeping the transfer as a sale and the bill-and-hold
+      invoice as a receivable.
+  - id: C
+    text: $418,000
+    rationale: Correct. $396,000 + $58,000 − $36,000; the cash sales were debited and credited to the
+      account, so they net to zero.
+  - id: D
     text: $454,000
-    rationale: Accepts the draft's $454,000, which removed the recourse-factored receivables as if sold,
-      counted the bill-and-hold order as a sale and left the rebate netted against collections.
-  - id: B
-    text: $461,000
-    rationale: Correct. $454,000 + $58,000 − $36,000 − $15,000.
-  - id: C
-    text: $476,000
-    rationale: Leaves the $15,000 volume rebate netted against cash collected. Recording it there understated
-      collections applied to customer accounts by $15,000, so ending receivables is $15,000 too high.
-  - id: D
-    text: $497,000
-    rationale: Keeps the $36,000 bill-and-hold order as a completed sale. Control hadn't passed to the
-      customer, so it isn't a receivable.
-  answer: B
-  explanation: 'Receivables factored with recourse, where Portreath keeps the risk of nonpayment, are
-    accounted for as a secured borrowing, not a sale (ASC 860-10-40-5): the $58,000 stays in receivables
-    (+ $58,000). The bill-and-hold order doesn''t meet the criteria for control to have passed (the goods
-    aren''t shipped, aren''t identified as the customer''s, and Portreath can still redirect them), so
-    it is removed (− $36,000). Netting the $15,000 rebate against cash collected understated collections
-    applied to customer accounts, leaving ending receivables $15,000 too high (− $15,000). Corrected balance
-    = $454,000 + $58,000 − $36,000 − $15,000 = $461,000.'
-- stem: 'Perranarworthal''s staff drafted this Year 2 rollforward of the accounts receivable control account:
-    January 1 balance $630,000; plus credit sales $3,820,000; less cash collected from customers $3,725,000;
-    less accounts written off $31,000; December 31 balance $694,000. All of Perranarworthal''s sales are
-    on account. Reviewing the draft, the controller finds: $85,000 of receivables that Perranarworthal
-    factored to a bank with recourse, for which the draft removed the receivables and recorded the cash
-    as a sale, though Perranarworthal remains obligated to repay the bank for any accounts the bank can''t
-    collect; a $55,000 order that a customer asked Perranarworthal to invoice and hold in Perranarworthal''s
-    warehouse until the customer''s new store opens, which the draft recorded as a completed sale even
-    though the goods haven''t been shipped, aren''t identified as the customer''s and remain available
-    to fill other orders; and a $23,000 volume rebate owed to a customer, which the draft''s cash collected
-    figure already reflects as a reduction, rather than as a separate liability. What amount of accounts
-    receivable, before any allowance, should the corrected rollforward report for Perranarworthal at December
-    31, Year 2?'
-  choices:
-  - id: A
-    text: $616,000
-    rationale: Leaves the $85,000 of receivables factored with recourse out of the rollforward. Because
-      Perranarworthal kept the risk of nonpayment, the transfer doesn't qualify as a sale; the receivables,
-      and an offsetting liability, stay on the books.
-  - id: B
-    text: $694,000
-    rationale: Accepts the draft's $694,000, which removed the recourse-factored receivables as if sold,
-      counted the bill-and-hold order as a sale and left the rebate netted against collections.
-  - id: C
-    text: $701,000
-    rationale: Correct. $694,000 + $85,000 − $55,000 − $23,000.
-  - id: D
-    text: $724,000
-    rationale: Leaves the $23,000 volume rebate netted against cash collected. Recording it there understated
-      collections applied to customer accounts by $23,000, so ending receivables is $23,000 too high.
+    rationale: Keeps the $36,000 bill-and-hold invoice as a receivable. The goods sit with Porthtowan's
+      other stock and can fill other orders, so control hasn't passed and there is no sale yet; payment
+      isn't due until 30 days after delivery, so Porthtowan has no unconditional right to payment either.
   answer: C
-  explanation: 'Receivables factored with recourse, where Perranarworthal keeps the risk of nonpayment,
-    are accounted for as a secured borrowing, not a sale (ASC 860-10-40-5): the $85,000 stays in receivables
-    (+ $85,000). The bill-and-hold order doesn''t meet the criteria for control to have passed (the goods
-    aren''t shipped, aren''t identified as the customer''s, and Perranarworthal can still redirect them),
-    so it is removed (− $55,000). Netting the $23,000 rebate against cash collected understated collections
-    applied to customer accounts, leaving ending receivables $23,000 too high (− $23,000). Corrected balance
-    = $694,000 + $85,000 − $55,000 − $23,000 = $701,000.'
-- stem: 'St''s staff drafted this Year 2 rollforward of the accounts receivable control account: January
-    1 balance $355,000; plus credit sales $2,080,000; less cash collected from customers $2,030,000; less
-    accounts written off $17,000; December 31 balance $388,000. All of St''s sales are on account. Reviewing
-    the draft, the controller finds: $46,000 of receivables that St factored to a bank with recourse,
-    for which the draft removed the receivables and recorded the cash as a sale, though St remains obligated
-    to repay the bank for any accounts the bank can''t collect; a $29,000 order that a customer asked
-    St to invoice and hold in St''s warehouse until the customer''s new store opens, which the draft recorded
-    as a completed sale even though the goods haven''t been shipped, aren''t identified as the customer''s
-    and remain available to fill other orders; and a $12,000 volume rebate owed to a customer, which the
-    draft''s cash collected figure already reflects as a reduction, rather than as a separate liability.
-    What amount of accounts receivable, before any allowance, should the corrected rollforward report
-    for St at December 31, Year 2?'
+  explanation: 'The transfer is a secured borrowing, not a sale: Porthtowan keeps the credit risk, and
+    the agreement forbids the bank from selling or pledging the accounts, so the transferee lacks the
+    right to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The $58,000 goes
+    back into receivables, and the cash received is a liability to the bank. The December 28 invoice is
+    not a sale: the goods aren''t set apart as the customer''s and can be used to fill other orders, so
+    control hasn''t passed (ASC 606-10-55-83), and with payment due only after delivery there is no unconditional
+    right to payment; the $36,000 comes out. The showroom cash sales were debited and credited to the
+    account for the same $77,000, so they leave the balance unchanged. Corrected balance = $396,000 +
+    $58,000 − $36,000 = $418,000.'
+- stem: Perranarworthal Wholesale Co.'s accounts receivable control account began Year 2 at $630,000.
+    Its Year 2 postings were debits for sales of $3,820,000, credits for cash collected of $3,725,000,
+    credits for accounts written off of $31,000, and an $85,000 credit on October 1, when Perranarworthal
+    transferred that amount of customer accounts to a bank for cash, leaving a December 31 balance of
+    $609,000. Testing the postings, internal audit learns that Perranarworthal must reimburse the bank
+    for any transferred account that isn't collected, and the transfer agreement forbids the bank from
+    selling or pledging the accounts. The sales debits include a $55,000 invoice dated December 28 for
+    goods a customer asked Perranarworthal to hold until its new store opens in March; the goods sit with
+    Perranarworthal's other stock, are available to fill other orders, and are payable 30 days after delivery.
+    Both the sales debits and the cash-collected credits include $112,000 of showroom cash sales, which
+    Perranarworthal's cashiers post through the receivables account on the day of each sale. What balance,
+    before any allowance, should Perranarworthal's accounts receivable control account show at December
+    31, Year 2?
   choices:
   - id: A
-    text: $347,000
-    rationale: Leaves the $46,000 of receivables factored with recourse out of the rollforward. Because
-      St kept the risk of nonpayment, the transfer doesn't qualify as a sale; the receivables, and an
-      offsetting liability, stay on the books.
+    text: $527,000
+    rationale: Removes the $112,000 of cash sales from the sales debits only. They were also posted as
+      collections, so the debit and credit cancel and the year-end balance needs no correction for them.
   - id: B
-    text: $393,000
-    rationale: Correct. $388,000 + $46,000 − $29,000 − $12,000.
+    text: $554,000
+    rationale: Accepts the $85,000 credit for the transfer as a sale. Because the agreement bars the bank
+      from selling or pledging the accounts, the transfer fails the conditions for sale accounting in
+      ASC 860-10-40-5; it is a secured borrowing, so the receivables stay in the control account and the
+      cash is a liability.
   - id: C
-    text: $405,000
-    rationale: Leaves the $12,000 volume rebate netted against cash collected. Recording it there understated
-      collections applied to customer accounts by $12,000, so ending receivables is $12,000 too high.
+    text: $609,000
+    rationale: Accepts the balance as posted, $609,000, keeping the transfer as a sale and the bill-and-hold
+      invoice as a receivable.
   - id: D
-    text: $422,000
-    rationale: Keeps the $29,000 bill-and-hold order as a completed sale. Control hadn't passed to the
-      customer, so it isn't a receivable.
-  answer: B
-  explanation: 'Receivables factored with recourse, where St keeps the risk of nonpayment, are accounted
-    for as a secured borrowing, not a sale (ASC 860-10-40-5): the $46,000 stays in receivables (+ $46,000).
-    The bill-and-hold order doesn''t meet the criteria for control to have passed (the goods aren''t shipped,
-    aren''t identified as the customer''s, and St can still redirect them), so it is removed (− $29,000).
-    Netting the $12,000 rebate against cash collected understated collections applied to customer accounts,
-    leaving ending receivables $12,000 too high (− $12,000). Corrected balance = $388,000 + $46,000 −
-    $29,000 − $12,000 = $393,000.'
+    text: $639,000
+    rationale: Correct. $609,000 + $85,000 − $55,000; the cash sales were debited and credited to the
+      account, so they net to zero.
+  answer: D
+  explanation: 'The transfer is a secured borrowing, not a sale: Perranarworthal keeps the credit risk,
+    and the agreement forbids the bank from selling or pledging the accounts, so the transferee lacks
+    the right to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The $85,000
+    goes back into receivables, and the cash received is a liability to the bank. The December 28 invoice
+    is not a sale: the goods aren''t set apart as the customer''s and can be used to fill other orders,
+    so control hasn''t passed (ASC 606-10-55-83), and with payment due only after delivery there is no
+    unconditional right to payment; the $55,000 comes out. The showroom cash sales were debited and credited
+    to the account for the same $112,000, so they leave the balance unchanged. Corrected balance = $609,000
+    + $85,000 − $55,000 = $639,000.'
+- stem: St Agnes Wholesale Co.'s accounts receivable control account began Year 2 at $355,000. Its Year
+    2 postings were debits for sales of $2,080,000, credits for cash collected of $2,030,000, credits
+    for accounts written off of $17,000, and a $46,000 credit on October 1, when St Agnes transferred
+    that amount of customer accounts to a bank for cash, leaving a December 31 balance of $342,000. Testing
+    the postings, internal audit learns that St Agnes must reimburse the bank for any transferred account
+    that isn't collected, and the transfer agreement forbids the bank from selling or pledging the accounts.
+    The sales debits include a $29,000 invoice dated December 28 for goods a customer asked St Agnes to
+    hold until its new store opens in March; the goods sit with St Agnes's other stock, are available
+    to fill other orders, and are payable 30 days after delivery. Both the sales debits and the cash-collected
+    credits include $63,000 of showroom cash sales, which St Agnes's cashiers post through the receivables
+    account on the day of each sale. What balance, before any allowance, should St Agnes's accounts receivable
+    control account show at December 31, Year 2?
+  choices:
+  - id: A
+    text: $313,000
+    rationale: Accepts the $46,000 credit for the transfer as a sale. Because the agreement bars the bank
+      from selling or pledging the accounts, the transfer fails the conditions for sale accounting in
+      ASC 860-10-40-5; it is a secured borrowing, so the receivables stay in the control account and the
+      cash is a liability.
+  - id: B
+    text: $342,000
+    rationale: Accepts the balance as posted, $342,000, keeping the transfer as a sale and the bill-and-hold
+      invoice as a receivable.
+  - id: C
+    text: $359,000
+    rationale: Correct. $342,000 + $46,000 − $29,000; the cash sales were debited and credited to the
+      account, so they net to zero.
+  - id: D
+    text: $388,000
+    rationale: Keeps the $29,000 bill-and-hold invoice as a receivable. The goods sit with St Agnes's
+      other stock and can fill other orders, so control hasn't passed and there is no sale yet; payment
+      isn't due until 30 days after delivery, so St Agnes has no unconditional right to payment either.
+  answer: C
+  explanation: 'The transfer is a secured borrowing, not a sale: St Agnes keeps the credit risk, and the
+    agreement forbids the bank from selling or pledging the accounts, so the transferee lacks the right
+    to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The $46,000 goes back
+    into receivables, and the cash received is a liability to the bank. The December 28 invoice is not
+    a sale: the goods aren''t set apart as the customer''s and can be used to fill other orders, so control
+    hasn''t passed (ASC 606-10-55-83), and with payment due only after delivery there is no unconditional
+    right to payment; the $29,000 comes out. The showroom cash sales were debited and credited to the
+    account for the same $63,000, so they leave the balance unchanged. Corrected balance = $342,000 +
+    $46,000 − $29,000 = $359,000.'

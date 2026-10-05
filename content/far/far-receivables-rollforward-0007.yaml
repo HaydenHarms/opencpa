@@ -8,153 +8,155 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 310-10 (receivables)
+  - ASC 310-10 (receivables; credit balances in customer accounts)
   - ASC 326-20-35 (write-offs and recoveries)
   - ASC 606-10-25 (cutoff for sales returns)
-  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'All of Mylor''s sales are on credit. Its accounts receivable control account began Year 2 at $480,000;
-  credit sales for the year were $2,920,000, cash collected from customers was $2,865,000, and $24,000
-  of accounts were written off, which a staff accountant used to arrive at a preliminary December 31 figure
-  of $511,000. Examining that figure, the internal auditor notes three things: customer accounts with
-  credit balances, from overpayments and returns, totaling $15,000, were netted against the debit balances
-  of other customers rather than reported separately; a $9,000 credit memo for goods a customer returned
-  on December 29, logged by the shipping department that day, wasn''t entered in the accounting records
-  until the memo was processed in January; and a $6,000 recovery of an account written off in an earlier
-  year, paid in cash by the customer in December, was recorded as a direct credit to bad debt expense.
-  For Mylor, what should corrected accounts receivable, before any allowance, be at December 31, Year
-  2?'
+  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
+    solved and every number and distractor computed in code.
+stem: All of Flushing Yacht Supply Co.'s sales are on credit. Its accounts receivable control account
+  began Year 2 at $480,000; credit sales for the year were $2,920,000, cash collected from customers was
+  $2,865,000, and $24,000 of accounts were written off, which a staff accountant used to arrive at a preliminary
+  December 31 figure of $511,000. That figure agrees with the aged subledger, which lists customer debit
+  balances of $526,000 and customer credit balances, from overpayments and returns, of $15,000. Examining
+  the figure, the internal auditor notes that a $9,000 credit memo for goods a customer returned on December
+  29, logged by the receiving dock that day, wasn't entered in the accounting records until the memo was
+  processed in January, and that a $6,000 recovery of an account written off in an earlier year, paid
+  in cash by the customer in December, was recorded as a direct credit to bad debt expense and isn't included
+  in the cash collected figure. For Flushing, what should corrected accounts receivable, before any allowance,
+  be at December 31, Year 2?
 choices:
 - id: A
   text: $502,000
-  rationale: Leaves the $15,000 of customer credit balances netted against the receivables total. Credit
-    balances, from overpayments and returns, are a liability and aren't netted against other customers'
-    debit balances.
+  rationale: Reports receivables net of the $15,000 of customer credit balances. Credit balances, from
+    overpayments and returns, are amounts Flushing owes customers; they are a liability, not a reduction
+    of other customers' debit balances.
 - id: B
   text: $517,000
-  rationale: Correct. $511,000 + $15,000 − $9,000.
+  rationale: Correct. Customer debit balances of $526,000 less the $9,000 December return.
 - id: C
   text: $523,000
-  rationale: Adds the $6,000 recovery of a previously written-off account back into receivables. Because
-    the recovery was recorded directly as a credit to bad debt expense rather than by reinstating the
-    account and then recording its collection, it never touched accounts receivable and needs no correction
-    here.
+  rationale: Adds the $6,000 recovery of a previously written-off account to receivables. The recovery
+    was recorded directly as a credit to bad debt expense, and the cash collected figure excludes it,
+    so it never passed through accounts receivable and needs no correction here.
 - id: D
   text: $526,000
-  rationale: Leaves out the $9,000 credit memo for goods a customer returned in December, which wasn't
-    recorded until January.
+  rationale: Leaves out the $9,000 credit memo for goods a customer returned on December 29. The return
+    is a Year 2 event, so receivables are reduced in Year 2 even though the memo was entered in January.
 answer: B
-explanation: Credit balances in customer accounts are a liability, not a reduction of other customers'
-  receivables, so the $15,000 is added back (+ $15,000). The December return is a Year 2 event and must
-  be recorded in Year 2, reducing receivables (− $9,000). The recovery, recorded as a direct credit to
-  bad debt expense rather than by reinstating the account and then recording its collection, never ran
-  through accounts receivable, so it needs no correction here. Corrected balance = $511,000 + $15,000
-  − $9,000 = $517,000.
+explanation: The preliminary $511,000 is the subledger's debit balances of $526,000 less its $15,000 of
+  credit balances. Credit balances are amounts owed to customers, a liability, so receivables are the
+  gross debit balances (+ $15,000). The December 29 return is a Year 2 event and reduces Year 2 receivables
+  (− $9,000). The recovery was recorded as a direct credit to bad debt expense rather than by reinstating
+  the account and then recording its collection, and the cash collected figure excludes it, so it never
+  touched accounts receivable and needs no correction here. Corrected balance = $511,000 + $15,000 − $9,000
+  = $517,000.
 variants:
-- stem: 'All of Flushing''s sales are on credit. Its accounts receivable control account began Year 2
-    at $365,000; credit sales for the year were $2,210,000, cash collected from customers was $2,168,000,
+- stem: All of Gweek Boatyard Co.'s sales are on credit. Its accounts receivable control account began
+    Year 2 at $365,000; credit sales for the year were $2,210,000, cash collected from customers was $2,168,000,
     and $19,000 of accounts were written off, which a staff accountant used to arrive at a preliminary
-    December 31 figure of $388,000. Examining that figure, the internal auditor notes three things: customer
-    accounts with credit balances, from overpayments and returns, totaling $11,000, were netted against
-    the debit balances of other customers rather than reported separately; a $7,000 credit memo for goods
-    a customer returned on December 29, logged by the shipping department that day, wasn''t entered in
-    the accounting records until the memo was processed in January; and a $5,000 recovery of an account
-    written off in an earlier year, paid in cash by the customer in December, was recorded as a direct
-    credit to bad debt expense. For Flushing, what should corrected accounts receivable, before any allowance,
-    be at December 31, Year 2?'
+    December 31 figure of $388,000. That figure agrees with the aged subledger, which lists customer debit
+    balances of $399,000 and customer credit balances, from overpayments and returns, of $11,000. Examining
+    the figure, the internal auditor notes that a $7,000 credit memo for goods a customer returned on
+    December 29, logged by the receiving dock that day, wasn't entered in the accounting records until
+    the memo was processed in January, and that a $5,000 recovery of an account written off in an earlier
+    year, paid in cash by the customer in December, was recorded as a direct credit to bad debt expense
+    and isn't included in the cash collected figure. For Gweek, what should corrected accounts receivable,
+    before any allowance, be at December 31, Year 2?
   choices:
   - id: A
     text: $381,000
-    rationale: Leaves the $11,000 of customer credit balances netted against the receivables total. Credit
-      balances, from overpayments and returns, are a liability and aren't netted against other customers'
-      debit balances.
+    rationale: Reports receivables net of the $11,000 of customer credit balances. Credit balances, from
+      overpayments and returns, are amounts Gweek owes customers; they are a liability, not a reduction
+      of other customers' debit balances.
   - id: B
     text: $388,000
-    rationale: Accepts the draft's $388,000, which nets the customer credit balances against receivables
-      and omits the December return.
+    rationale: Accepts the preliminary $388,000, the net of debit and credit balances, without recording
+      the December return.
   - id: C
     text: $392,000
-    rationale: Correct. $388,000 + $11,000 − $7,000.
+    rationale: Correct. Customer debit balances of $399,000 less the $7,000 December return.
   - id: D
     text: $397,000
-    rationale: Adds the $5,000 recovery of a previously written-off account back into receivables. Because
-      the recovery was recorded directly as a credit to bad debt expense rather than by reinstating the
-      account and then recording its collection, it never touched accounts receivable and needs no correction
-      here.
+    rationale: Adds the $5,000 recovery of a previously written-off account to receivables. The recovery
+      was recorded directly as a credit to bad debt expense, and the cash collected figure excludes it,
+      so it never passed through accounts receivable and needs no correction here.
   answer: C
-  explanation: Credit balances in customer accounts are a liability, not a reduction of other customers'
-    receivables, so the $11,000 is added back (+ $11,000). The December return is a Year 2 event and must
-    be recorded in Year 2, reducing receivables (− $7,000). The recovery, recorded as a direct credit
-    to bad debt expense rather than by reinstating the account and then recording its collection, never
-    ran through accounts receivable, so it needs no correction here. Corrected balance = $388,000 + $11,000
-    − $7,000 = $392,000.
-- stem: 'All of Gweek''s sales are on credit. Its accounts receivable control account began Year 2 at
-    $545,000; credit sales for the year were $3,340,000, cash collected from customers was $3,268,000,
+  explanation: The preliminary $388,000 is the subledger's debit balances of $399,000 less its $11,000
+    of credit balances. Credit balances are amounts owed to customers, a liability, so receivables are
+    the gross debit balances (+ $11,000). The December 29 return is a Year 2 event and reduces Year 2
+    receivables (− $7,000). The recovery was recorded as a direct credit to bad debt expense rather than
+    by reinstating the account and then recording its collection, and the cash collected figure excludes
+    it, so it never touched accounts receivable and needs no correction here. Corrected balance = $388,000
+    + $11,000 − $7,000 = $392,000.
+- stem: All of Helford Marine Co.'s sales are on credit. Its accounts receivable control account began
+    Year 2 at $545,000; credit sales for the year were $3,340,000, cash collected from customers was $3,268,000,
     and $28,000 of accounts were written off, which a staff accountant used to arrive at a preliminary
-    December 31 figure of $589,000. Examining that figure, the internal auditor notes three things: customer
-    accounts with credit balances, from overpayments and returns, totaling $18,000, were netted against
-    the debit balances of other customers rather than reported separately; an $11,000 credit memo for
-    goods a customer returned on December 29, logged by the shipping department that day, wasn''t entered
-    in the accounting records until the memo was processed in January; and an $8,000 recovery of an account
-    written off in an earlier year, paid in cash by the customer in December, was recorded as a direct
-    credit to bad debt expense. For Gweek, what should corrected accounts receivable, before any allowance,
-    be at December 31, Year 2?'
+    December 31 figure of $589,000. That figure agrees with the aged subledger, which lists customer debit
+    balances of $607,000 and customer credit balances, from overpayments and returns, of $18,000. Examining
+    the figure, the internal auditor notes that an $11,000 credit memo for goods a customer returned on
+    December 29, logged by the receiving dock that day, wasn't entered in the accounting records until
+    the memo was processed in January, and that an $8,000 recovery of an account written off in an earlier
+    year, paid in cash by the customer in December, was recorded as a direct credit to bad debt expense
+    and isn't included in the cash collected figure. For Helford, what should corrected accounts receivable,
+    before any allowance, be at December 31, Year 2?
   choices:
   - id: A
     text: $589,000
-    rationale: Accepts the draft's $589,000, which nets the customer credit balances against receivables
-      and omits the December return.
+    rationale: Accepts the preliminary $589,000, the net of debit and credit balances, without recording
+      the December return.
   - id: B
     text: $596,000
-    rationale: Correct. $589,000 + $18,000 − $11,000.
+    rationale: Correct. Customer debit balances of $607,000 less the $11,000 December return.
   - id: C
     text: $604,000
-    rationale: Adds the $8,000 recovery of a previously written-off account back into receivables. Because
-      the recovery was recorded directly as a credit to bad debt expense rather than by reinstating the
-      account and then recording its collection, it never touched accounts receivable and needs no correction
-      here.
+    rationale: Adds the $8,000 recovery of a previously written-off account to receivables. The recovery
+      was recorded directly as a credit to bad debt expense, and the cash collected figure excludes it,
+      so it never passed through accounts receivable and needs no correction here.
   - id: D
     text: $607,000
-    rationale: Leaves out the $11,000 credit memo for goods a customer returned in December, which wasn't
-      recorded until January.
+    rationale: Leaves out the $11,000 credit memo for goods a customer returned on December 29. The return
+      is a Year 2 event, so receivables are reduced in Year 2 even though the memo was entered in January.
   answer: B
-  explanation: Credit balances in customer accounts are a liability, not a reduction of other customers'
-    receivables, so the $18,000 is added back (+ $18,000). The December return is a Year 2 event and must
-    be recorded in Year 2, reducing receivables (− $11,000). The recovery, recorded as a direct credit
-    to bad debt expense rather than by reinstating the account and then recording its collection, never
-    ran through accounts receivable, so it needs no correction here. Corrected balance = $589,000 + $18,000
-    − $11,000 = $596,000.
-- stem: 'All of Constantine''s sales are on credit. Its accounts receivable control account began Year
-    2 at $298,000; credit sales for the year were $1,860,000, cash collected from customers was $1,819,000,
+  explanation: The preliminary $589,000 is the subledger's debit balances of $607,000 less its $18,000
+    of credit balances. Credit balances are amounts owed to customers, a liability, so receivables are
+    the gross debit balances (+ $18,000). The December 29 return is a Year 2 event and reduces Year 2
+    receivables (− $11,000). The recovery was recorded as a direct credit to bad debt expense rather than
+    by reinstating the account and then recording its collection, and the cash collected figure excludes
+    it, so it never touched accounts receivable and needs no correction here. Corrected balance = $589,000
+    + $18,000 − $11,000 = $596,000.
+- stem: All of Manaccan Chandlers Co.'s sales are on credit. Its accounts receivable control account began
+    Year 2 at $298,000; credit sales for the year were $1,860,000, cash collected from customers was $1,819,000,
     and $15,000 of accounts were written off, which a staff accountant used to arrive at a preliminary
-    December 31 figure of $324,000. Examining that figure, the internal auditor notes three things: customer
-    accounts with credit balances, from overpayments and returns, totaling $9,000, were netted against
-    the debit balances of other customers rather than reported separately; a $6,000 credit memo for goods
-    a customer returned on December 29, logged by the shipping department that day, wasn''t entered in
-    the accounting records until the memo was processed in January; and a $4,000 recovery of an account
-    written off in an earlier year, paid in cash by the customer in December, was recorded as a direct
-    credit to bad debt expense. For Constantine, what should corrected accounts receivable, before any
-    allowance, be at December 31, Year 2?'
+    December 31 figure of $324,000. That figure agrees with the aged subledger, which lists customer debit
+    balances of $333,000 and customer credit balances, from overpayments and returns, of $9,000. Examining
+    the figure, the internal auditor notes that a $6,000 credit memo for goods a customer returned on
+    December 29, logged by the receiving dock that day, wasn't entered in the accounting records until
+    the memo was processed in January, and that a $4,000 recovery of an account written off in an earlier
+    year, paid in cash by the customer in December, was recorded as a direct credit to bad debt expense
+    and isn't included in the cash collected figure. For Manaccan, what should corrected accounts receivable,
+    before any allowance, be at December 31, Year 2?
   choices:
   - id: A
     text: $318,000
-    rationale: Leaves the $9,000 of customer credit balances netted against the receivables total. Credit
-      balances, from overpayments and returns, are a liability and aren't netted against other customers'
-      debit balances.
+    rationale: Reports receivables net of the $9,000 of customer credit balances. Credit balances, from
+      overpayments and returns, are amounts Manaccan owes customers; they are a liability, not a reduction
+      of other customers' debit balances.
   - id: B
     text: $324,000
-    rationale: Accepts the draft's $324,000, which nets the customer credit balances against receivables
-      and omits the December return.
+    rationale: Accepts the preliminary $324,000, the net of debit and credit balances, without recording
+      the December return.
   - id: C
     text: $327,000
-    rationale: Correct. $324,000 + $9,000 − $6,000.
+    rationale: Correct. Customer debit balances of $333,000 less the $6,000 December return.
   - id: D
     text: $333,000
-    rationale: Leaves out the $6,000 credit memo for goods a customer returned in December, which wasn't
-      recorded until January.
+    rationale: Leaves out the $6,000 credit memo for goods a customer returned on December 29. The return
+      is a Year 2 event, so receivables are reduced in Year 2 even though the memo was entered in January.
   answer: C
-  explanation: Credit balances in customer accounts are a liability, not a reduction of other customers'
-    receivables, so the $9,000 is added back (+ $9,000). The December return is a Year 2 event and must
-    be recorded in Year 2, reducing receivables (− $6,000). The recovery, recorded as a direct credit
-    to bad debt expense rather than by reinstating the account and then recording its collection, never
-    ran through accounts receivable, so it needs no correction here. Corrected balance = $324,000 + $9,000
-    − $6,000 = $327,000.
+  explanation: The preliminary $324,000 is the subledger's debit balances of $333,000 less its $9,000
+    of credit balances. Credit balances are amounts owed to customers, a liability, so receivables are
+    the gross debit balances (+ $9,000). The December 29 return is a Year 2 event and reduces Year 2 receivables
+    (− $6,000). The recovery was recorded as a direct credit to bad debt expense rather than by reinstating
+    the account and then recording its collection, and the cash collected figure excludes it, so it never
+    touched accounts receivable and needs no correction here. Corrected balance = $324,000 + $9,000 −
+    $6,000 = $327,000.

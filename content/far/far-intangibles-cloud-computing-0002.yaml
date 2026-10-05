@@ -9,151 +9,160 @@ review:
   status: draft
   references:
   - ASC 350-40 (internal-use software; implementation costs of a hosting arrangement that is a service
-    contract)
+    contract; amortization over the term of the hosting arrangement from each module's ready-for-use date)
   - ASU 2018-15 (customer's accounting for implementation costs in a cloud computing arrangement)
   - ASU 2025-06 (targeted improvements to internal-use software; same result here)
-  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Perrancombe Logistics Co. runs its inventory management entirely through a vendor's cloud platform
-  under a 4-year contract that began January 1, Year 1; Perrancombe never takes possession of the underlying
-  software, and management is confident Perrancombe will exercise the contract's renewal option for another
-  2 years once the initial term ends, since switching platforms would be disruptive. Perrancombe did not
-  begin using the system until July 1, Year 1, once setup was finished; getting there cost $22,000 to
-  compare and select a vendor, $216,000 to configure the system and build and test its interfaces, $30,000
-  to clean up and load historical data, and $16,000 to train staff on the new system. Perrancombe amortizes
-  capitalized implementation costs straight-line over the period it benefits from the arrangement. What
-  amount should Perrancombe report as its capitalized cloud computing implementation asset, net of amortization,
-  at December 31, Year 1?
+  - ASC 720-45 (business process reengineering costs expensed)
+  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
+    solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Perrancombe Logistics Co. signs a noncancellable 4-year contract, running
+  from that date, for access to a vendor's cloud-hosted warehouse management system. Perrancombe has no
+  right to take the software onto its own servers. The contract lets Perrancombe extend it for 2 more
+  years at the vendor's list prices at that time, and management hasn't decided whether it will. After
+  the board approved and funded the project, Perrancombe paid consultants $36,000 to redesign its receiving
+  and picking processes before configuration began, $225,000 to configure and test the inventory module,
+  which was ready for its intended use on April 1, Year 1, and $117,000 to configure and test the shipping
+  module, ready on October 1, Year 1. Each module works independently of the other. Perrancombe amortizes
+  capitalized implementation costs straight-line by month. What amount should Perrancombe report as capitalized
+  implementation costs, net of accumulated amortization, at December 31, Year 1?
 choices:
 - id: A
-  text: $180,000
-  rationale: Amortizes a full year's amount, $36,000, instead of the 6 months since the software became
-    ready for its intended use on July 1, Year 1.
+  text: $273,600
+  rationale: Starts amortizing both modules on April 1, when the first one went live. Because the modules
+    work independently, each is amortized from its own ready-for-use date, and the second wasn't ready
+    until October 1.
 - id: B
-  text: $189,000
-  rationale: Amortizes the implementation costs only over the 4-year initial term, ignoring the 2-year
-    renewal. Because Perrancombe is reasonably certain to renew, the amortization period is the 6-year
-    combined term, the same period used to decide the arrangement isn't a lease.
+  text: $288,000
+  rationale: Correct. ($225,000 − $45,000) + ($117,000 − $9,000).
 - id: C
-  text: $198,000
-  rationale: Correct. $216,000 − ($36,000 × 6/12).
+  text: $292,499
+  rationale: Spreads each module's costs over the full 4-year term starting at its go-live date, so amortization
+    would run past the contract's end on December 31, Year 4. Implementation costs are amortized over
+    the hosting arrangement's term, which by then has only 45 and 39 months left.
 - id: D
-  text: $225,500
-  rationale: Capitalizes the $30,000 of data conversion costs along with the implementation costs. Data
-    conversion costs are expensed as incurred, not capitalized, under ASC 350-40.
-answer: C
-explanation: 'Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and testing
-  the hosting arrangement''s interfaces are capitalized; selecting a vendor ($22,000) is a preliminary-stage
-  cost and training ($16,000) and data conversion ($30,000) are expensed as incurred, whether or not the
-  project is likely to succeed. (ASU 2025-06''s revisions to internal-use software capitalization give
-  the same result for a hosting arrangement like this one.) The capitalized $216,000 is amortized over
-  the 6-year period Perrancombe benefits from the arrangement, the initial 4-year term plus the 2-year
-  renewal Perrancombe is reasonably certain to exercise, straight-line from July 1: $36,000 a year, or
-  $18,000 for the 6 months remaining in Year 1. Net asset = $216,000 − $18,000 = $198,000.'
+  text: $307,081
+  rationale: Includes the 2-year renewal in the amortization period. Management hasn't decided whether
+    to renew, so the renewal isn't reasonably certain and the term is the 4-year noncancellable period.
+answer: B
+explanation: 'A hosting arrangement Perrancombe can''t take possession of is a service contract, and its
+  implementation costs follow ASC 350-40, as amended by ASU 2018-15. Configuring and testing each module
+  is capitalized; redesigning business processes ($36,000) is expensed as incurred. (ASU 2025-06, which
+  replaces the project stages with a probable-to-complete threshold that this funded project meets, gives
+  the same result.) The costs are amortized straight-line over the term of the hosting arrangement, the
+  4-year noncancellable period ending December 31, Year 4; the renewal is excluded because management
+  hasn''t decided to exercise it. Each module''s amortization starts when that module is ready for its
+  intended use and runs over the term remaining at that date. Inventory module: $225,000 × 9/45 = $45,000.
+  Shipping module: $117,000 × 3/39 = $9,000. Net asset = $342,000 − $45,000 − $9,000 = $288,000.'
 variants:
-- stem: Trebarwith Freight Co. runs its inventory management entirely through a vendor's cloud platform
-    under a 5-year contract that began January 1, Year 1; Trebarwith never takes possession of the underlying
-    software, and management is confident Trebarwith will exercise the contract's renewal option for another
-    3 years once the initial term ends, since switching platforms would be disruptive. Trebarwith did
-    not begin using the system until April 1, Year 1, once setup was finished; getting there cost $26,000
-    to compare and select a vendor, $256,000 to configure the system and build and test its interfaces,
-    $32,000 to clean up and load historical data, and $18,000 to train staff on the new system. Trebarwith
-    amortizes capitalized implementation costs straight-line over the period it benefits from the arrangement.
-    What amount should Trebarwith report as its capitalized cloud computing implementation asset, net
-    of amortization, at December 31, Year 1?
+- stem: On January 1, Year 1, Lanivet Freight Co. signs a noncancellable 5-year contract, running from
+    that date, for access to a vendor's cloud-hosted warehouse management system. Lanivet has no right
+    to take the software onto its own servers. The contract lets Lanivet extend it for 3 more years at
+    the vendor's list prices at that time, and management hasn't decided whether it will. After the board
+    approved and funded the project, Lanivet paid consultants $42,000 to redesign its receiving and picking
+    processes before configuration began, $232,000 to configure and test the inventory module, which was
+    ready for its intended use on March 1, Year 1, and $130,000 to configure and test the shipping module,
+    ready on September 1, Year 1. Each module works independently of the other. Lanivet amortizes capitalized
+    implementation costs straight-line by month. What amount should Lanivet report as capitalized implementation
+    costs, net of accumulated amortization, at December 31, Year 1?
   choices:
   - id: A
-    text: $224,000
-    rationale: Amortizes a full year's amount, $32,000, instead of the 9 months since the software became
-      ready for its intended use on April 1, Year 1.
+    text: $289,600
+    rationale: Amortizes both modules for all of Year 1, from the contract's January 1 start. Amortization
+      of each module begins only when that module is ready for its intended use.
   - id: B
-    text: $232,000
-    rationale: Correct. $256,000 − ($32,000 × 9/12).
+    text: $299,586
+    rationale: Starts amortizing both modules on March 1, when the first one went live. Because the modules
+      work independently, each is amortized from its own ready-for-use date, and the second wasn't ready
+      until September 1.
   - id: C
-    text: $256,000
-    rationale: Reports the implementation costs at their full $256,000, with no amortization for Year
-      1.
+    text: $312,000
+    rationale: Correct. ($232,000 − $40,000) + ($130,000 − $10,000).
   - id: D
-    text: $261,000
-    rationale: Capitalizes the $32,000 of data conversion costs along with the implementation costs. Data
-      conversion costs are expensed as incurred, not capitalized, under ASC 350-40.
-  answer: B
-  explanation: 'Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and
-    testing the hosting arrangement''s interfaces are capitalized; selecting a vendor ($26,000) is a preliminary-stage
-    cost and training ($18,000) and data conversion ($32,000) are expensed as incurred, whether or not
-    the project is likely to succeed. (ASU 2025-06''s revisions to internal-use software capitalization
-    give the same result for a hosting arrangement like this one.) The capitalized $256,000 is amortized
-    over the 8-year period Trebarwith benefits from the arrangement, the initial 5-year term plus the
-    3-year renewal Trebarwith is reasonably certain to exercise, straight-line from April 1: $32,000 a
-    year, or $24,000 for the 9 months remaining in Year 1. Net asset = $256,000 − $24,000 = $232,000.'
-- stem: Delabole Transport Co. runs its inventory management entirely through a vendor's cloud platform
-    under a 3-year contract that began January 1, Year 1; Delabole never takes possession of the underlying
-    software, and management is confident Delabole will exercise the contract's renewal option for another
-    3 years once the initial term ends, since switching platforms would be disruptive. Delabole did not
-    begin using the system until October 1, Year 1, once setup was finished; getting there cost $19,000
-    to compare and select a vendor, $198,000 to configure the system and build and test its interfaces,
-    $27,000 to clean up and load historical data, and $14,000 to train staff on the new system. Delabole
-    amortizes capitalized implementation costs straight-line over the period it benefits from the arrangement.
-    What amount should Delabole report as its capitalized cloud computing implementation asset, net of
-    amortization, at December 31, Year 1?
-  choices:
-  - id: A
-    text: $165,000
-    rationale: Amortizes a full year's amount, $33,000, instead of the 3 months since the software became
-      ready for its intended use on October 1, Year 1.
-  - id: B
-    text: $181,500
-    rationale: Amortizes the implementation costs only over the 3-year initial term, ignoring the 3-year
-      renewal. Because Delabole is reasonably certain to renew, the amortization period is the 6-year
-      combined term, the same period used to decide the arrangement isn't a lease.
-  - id: C
-    text: $189,750
-    rationale: Correct. $198,000 − ($33,000 × 3/12).
-  - id: D
-    text: $198,000
-    rationale: Reports the implementation costs at their full $198,000, with no amortization for Year
-      1.
+    text: $346,759
+    rationale: Capitalizes the $42,000 paid to redesign business processes. Process reengineering is expensed
+      as incurred, not capitalized as a cost of implementing the software.
   answer: C
-  explanation: 'Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and
-    testing the hosting arrangement''s interfaces are capitalized; selecting a vendor ($19,000) is a preliminary-stage
-    cost and training ($14,000) and data conversion ($27,000) are expensed as incurred, whether or not
-    the project is likely to succeed. (ASU 2025-06''s revisions to internal-use software capitalization
-    give the same result for a hosting arrangement like this one.) The capitalized $198,000 is amortized
-    over the 6-year period Delabole benefits from the arrangement, the initial 3-year term plus the 3-year
-    renewal Delabole is reasonably certain to exercise, straight-line from October 1: $33,000 a year,
-    or $8,250 for the 3 months remaining in Year 1. Net asset = $198,000 − $8,250 = $189,750.'
-- stem: Bodmin Haulage Co. runs its inventory management entirely through a vendor's cloud platform under
-    a 4-year contract that began January 1, Year 1; Bodmin never takes possession of the underlying software,
-    and management is confident Bodmin will exercise the contract's renewal option for another 4 years
-    once the initial term ends, since switching platforms would be disruptive. Bodmin did not begin using
-    the system until May 1, Year 1, once setup was finished; getting there cost $24,000 to compare and
-    select a vendor, $264,000 to configure the system and build and test its interfaces, $36,000 to clean
-    up and load historical data, and $17,000 to train staff on the new system. Bodmin amortizes capitalized
-    implementation costs straight-line over the period it benefits from the arrangement. What amount should
-    Bodmin report as its capitalized cloud computing implementation asset, net of amortization, at December
-    31, Year 1?
+  explanation: 'A hosting arrangement Lanivet can''t take possession of is a service contract, and its
+    implementation costs follow ASC 350-40, as amended by ASU 2018-15. Configuring and testing each module
+    is capitalized; redesigning business processes ($42,000) is expensed as incurred. (ASU 2025-06, which
+    replaces the project stages with a probable-to-complete threshold that this funded project meets,
+    gives the same result.) The costs are amortized straight-line over the term of the hosting arrangement,
+    the 5-year noncancellable period ending December 31, Year 5; the renewal is excluded because management
+    hasn''t decided to exercise it. Each module''s amortization starts when that module is ready for its
+    intended use and runs over the term remaining at that date. Inventory module: $232,000 × 10/58 = $40,000.
+    Shipping module: $130,000 × 4/52 = $10,000. Net asset = $362,000 − $40,000 − $10,000 = $312,000.'
+- stem: On January 1, Year 1, St Breward Transport Co. signs a noncancellable 3-year contract, running
+    from that date, for access to a vendor's cloud-hosted warehouse management system. St Breward has
+    no right to take the software onto its own servers. The contract lets St Breward extend it for 2 more
+    years at the vendor's list prices at that time, and management hasn't decided whether it will. After
+    the board approved and funded the project, St Breward paid consultants $28,000 to redesign its receiving
+    and picking processes before configuration began, $180,000 to configure and test the inventory module,
+    which was ready for its intended use on July 1, Year 1, and $104,000 to configure and test the shipping
+    module, ready on November 1, Year 1. Each module works independently of the other. St Breward amortizes
+    capitalized implementation costs straight-line by month. What amount should St Breward report as capitalized
+    implementation costs, net of accumulated amortization, at December 31, Year 1?
   choices:
   - id: A
-    text: $220,000
-    rationale: Amortizes the implementation costs only over the 4-year initial term, ignoring the 4-year
-      renewal. Because Bodmin is reasonably certain to renew, the amortization period is the 8-year combined
-      term, the same period used to decide the arrangement isn't a lease.
+    text: $240,000
+    rationale: Correct. ($180,000 − $36,000) + ($104,000 − $8,000).
   - id: B
-    text: $242,000
-    rationale: Correct. $264,000 − ($33,000 × 8/12).
+    text: $248,222
+    rationale: Spreads each module's costs over the full 3-year term starting at its go-live date, so
+      amortization would run past the contract's end on December 31, Year 3. Implementation costs are
+      amortized over the hosting arrangement's term, which by then has only 30 and 26 months left.
   - id: C
-    text: $264,000
-    rationale: Reports the implementation costs at their full $264,000, with no amortization for Year
-      1.
+    text: $259,840
+    rationale: Includes the 2-year renewal in the amortization period. Management hasn't decided whether
+      to renew, so the renewal isn't reasonably certain and the term is the 3-year noncancellable period.
   - id: D
-    text: $275,000
-    rationale: Capitalizes the $36,000 of data conversion costs along with the implementation costs. Data
-      conversion costs are expensed as incurred, not capitalized, under ASC 350-40.
-  answer: B
-  explanation: 'Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and
-    testing the hosting arrangement''s interfaces are capitalized; selecting a vendor ($24,000) is a preliminary-stage
-    cost and training ($17,000) and data conversion ($36,000) are expensed as incurred, whether or not
-    the project is likely to succeed. (ASU 2025-06''s revisions to internal-use software capitalization
-    give the same result for a hosting arrangement like this one.) The capitalized $264,000 is amortized
-    over the 8-year period Bodmin benefits from the arrangement, the initial 4-year term plus the 4-year
-    renewal Bodmin is reasonably certain to exercise, straight-line from May 1: $33,000 a year, or $22,000
-    for the 8 months remaining in Year 1. Net asset = $264,000 − $22,000 = $242,000.'
+    text: $262,400
+    rationale: Capitalizes the $28,000 paid to redesign business processes. Process reengineering is expensed
+      as incurred, not capitalized as a cost of implementing the software.
+  answer: A
+  explanation: 'A hosting arrangement St Breward can''t take possession of is a service contract, and
+    its implementation costs follow ASC 350-40, as amended by ASU 2018-15. Configuring and testing each
+    module is capitalized; redesigning business processes ($28,000) is expensed as incurred. (ASU 2025-06,
+    which replaces the project stages with a probable-to-complete threshold that this funded project meets,
+    gives the same result.) The costs are amortized straight-line over the term of the hosting arrangement,
+    the 3-year noncancellable period ending December 31, Year 3; the renewal is excluded because management
+    hasn''t decided to exercise it. Each module''s amortization starts when that module is ready for its
+    intended use and runs over the term remaining at that date. Inventory module: $180,000 × 6/30 = $36,000.
+    Shipping module: $104,000 × 2/26 = $8,000. Net asset = $284,000 − $36,000 − $8,000 = $240,000.'
+- stem: On January 1, Year 1, Blisland Haulage Co. signs a noncancellable 4-year contract, running from
+    that date, for access to a vendor's cloud-hosted warehouse management system. Blisland has no right
+    to take the software onto its own servers. The contract lets Blisland extend it for 2 more years at
+    the vendor's list prices at that time, and management hasn't decided whether it will. After the board
+    approved and funded the project, Blisland paid consultants $33,000 to redesign its receiving and picking
+    processes before configuration began, $198,000 to configure and test the inventory module, which was
+    ready for its intended use on May 1, Year 1, and $164,000 to configure and test the shipping module,
+    ready on August 1, Year 1. Each module works independently of the other. Blisland amortizes capitalized
+    implementation costs straight-line by month. What amount should Blisland report as capitalized implementation
+    costs, net of accumulated amortization, at December 31, Year 1?
+  choices:
+  - id: A
+    text: $271,500
+    rationale: Amortizes both modules for all of Year 1, from the contract's January 1 start. Amortization
+      of each module begins only when that module is ready for its intended use.
+  - id: B
+    text: $296,182
+    rationale: Starts amortizing both modules on May 1, when the first one went live. Because the modules
+      work independently, each is amortized from its own ready-for-use date, and the second wasn't ready
+      until August 1.
+  - id: C
+    text: $306,000
+    rationale: Correct. ($198,000 − $36,000) + ($164,000 − $20,000).
+  - id: D
+    text: $311,917
+    rationale: Spreads each module's costs over the full 4-year term starting at its go-live date, so
+      amortization would run past the contract's end on December 31, Year 4. Implementation costs are
+      amortized over the hosting arrangement's term, which by then has only 44 and 41 months left.
+  answer: C
+  explanation: 'A hosting arrangement Blisland can''t take possession of is a service contract, and its
+    implementation costs follow ASC 350-40, as amended by ASU 2018-15. Configuring and testing each module
+    is capitalized; redesigning business processes ($33,000) is expensed as incurred. (ASU 2025-06, which
+    replaces the project stages with a probable-to-complete threshold that this funded project meets,
+    gives the same result.) The costs are amortized straight-line over the term of the hosting arrangement,
+    the 4-year noncancellable period ending December 31, Year 4; the renewal is excluded because management
+    hasn''t decided to exercise it. Each module''s amortization starts when that module is ready for its
+    intended use and runs over the term remaining at that date. Inventory module: $198,000 × 8/44 = $36,000.
+    Shipping module: $164,000 × 5/41 = $20,000. Net asset = $362,000 − $36,000 − $20,000 = $306,000.'

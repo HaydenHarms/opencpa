@@ -8,136 +8,143 @@ blueprint:
 review:
   status: draft
   references:
-  - 'ASC 470-20-25 (debt issued with detachable stock warrants: relative fair value allocation)'
+  - 'ASC 470-20-25-2 (debt issued with detachable stock purchase warrants: allocation by relative fair
+    value)'
   - ASC 835-30 (interest method)
-  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
-stem: On January 1, Year 1, Padstow Energy Corp. issues $1,000,000 face amount of ten-year, 5% bonds,
-  paying interest each June 30 and December 31, together with detachable stock warrants, for total cash
-  proceeds of $955,000. Immediately after issuance, the warrants trade separately at a total fair value
-  of $50,000, and the bonds alone, without the warrants, would have sold to yield 7.4%, compounded semiannually,
-  for $950,000. Padstow allocates the proceeds between the bonds and the warrants by relative fair value,
-  uses the effective interest method for the bonds, and rounds to the nearest dollar at each step. What
-  total interest expense should Padstow recognize on the bonds for Year 1?
+  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
+    solved and every number and distractor computed in code.
+stem: On April 1, Year 1, St Germans Energy Corp. issues $1,000,000 face amount of ten-year, 6% bonds,
+  paying interest each September 30 and March 31, together with detachable stock warrants, for total cash
+  proceeds of $922,879. Immediately after issuance, the bonds trade without the warrants at a total fair
+  value of $882,000, and the warrants trade at a total fair value of $60,000. Measured on the share of
+  the proceeds that belongs to the bonds, the bonds' effective interest rate is 8%, compounded semiannually.
+  St Germans applies the effective interest method, accrues interest at year-end and rounds each computation
+  to the nearest dollar. How much bond interest expense should St Germans recognize for Year 1?
 choices:
 - id: A
-  text: $50,000
-  rationale: Uses the two $25,000 stated interest payments with no discount amortization. Allocating part
-    of the proceeds to the warrants creates a bond discount, which the effective interest method amortizes
-    into interest expense.
+  text: $34,564
+  rationale: Stops at the September 30 payment. Interest from then to December 31 (3 months) also belongs
+    in Year 1 and is accrued at year-end.
 - id: B
-  text: $67,136
-  rationale: Uses the $907,250 carrying amount for both semiannual periods. The carrying amount rises
-    as the discount amortizes each period, to $915,818 for the second period, raising its interest.
+  text: $45,000
+  rationale: Uses only the stated interest, $30,000 for the first period and 3/6 of $30,000 accrued at
+    year-end, with no discount amortization. The effective interest method applies the effective rate
+    to the carrying amount.
 - id: C
-  text: $67,453
-  rationale: Correct. $907,250 × 7.4%/2 + $915,818 × 7.4%/2.
+  text: $51,937
+  rationale: Correct. $864,097 × 8%/2 = $34,564; then $868,661 × 8%/2 × 3/6 = $17,373.
 - id: D
-  text: $71,052
-  rationale: Treats the full $955,000 of proceeds as the bonds' initial carrying amount. Because the warrants
-    are detachable and trade separately, part of the proceeds, allocated by relative fair value, belongs
-    to additional paid-in capital, not the bonds.
+  text: $55,511
+  rationale: 'Uses the full $922,879 of proceeds as the bonds'' carrying amount. Part of the proceeds
+    belongs to the detachable warrants: the bonds get $922,879 × $882,000/$942,000 = $864,097, and the
+    rest is credited to additional paid-in capital.'
 answer: C
-explanation: 'Because the warrants are detachable, proceeds are allocated between the bonds and the warrants
-  by relative fair value (ASC 470-20-25-2): bonds'' share = $955,000 × $950,000/($950,000 + $50,000) =
-  $907,250, with the remaining $47,750 credited to additional paid-in capital for the warrants. The $25,000
-  semiannual coupon is $50,000 a year on the face amount. First-period interest = $907,250 × 7.4%/2 =
-  $33,568, increasing the carrying amount to $915,818; second-period interest = $915,818 × 7.4%/2 = $33,885.
-  Total Year 1 interest expense = $33,568 + $33,885 = $67,453.'
+explanation: 'Detachable warrants are accounted for separately, and with both fair values known the proceeds
+  are allocated in proportion to them (ASC 470-20-25-2): bonds = $922,879 × $882,000/($882,000 + $60,000)
+  = $864,097, with the remaining $58,782 credited to additional paid-in capital. The 8% effective rate
+  applies to that $864,097 carrying amount. First period, April 1 to September 30: $864,097 × 8%/2 = $34,564,
+  against $30,000 of cash interest, so the carrying amount rises by $4,564 to $868,661. Accrual for the
+  3 months to December 31: $868,661 × 8%/2 × 3/6 = $17,373. Year 1 interest expense = $34,564 + $17,373
+  = $51,937.'
 variants:
-- stem: On January 1, Year 1, Bodmin Power Corp. issues $800,000 face amount of ten-year, 6% bonds, paying
-    interest each June 30 and December 31, together with detachable stock warrants, for total cash proceeds
-    of $776,000. Immediately after issuance, the warrants trade separately at a total fair value of $40,000,
-    and the bonds alone, without the warrants, would have sold to yield 8.6%, compounded semiannually,
-    for $780,000. Bodmin allocates the proceeds between the bonds and the warrants by relative fair value,
-    uses the effective interest method for the bonds, and rounds to the nearest dollar at each step. What
-    total interest expense should Bodmin recognize on the bonds for Year 1?
+- stem: On May 1, Year 1, Gunnislake Power Corp. issues $800,000 face amount of ten-year, 5% bonds, paying
+    interest each October 31 and April 30, together with detachable stock warrants, for total cash proceeds
+    of $730,420. Immediately after issuance, the bonds trade without the warrants at a total fair value
+    of $700,000, and the warrants trade at a total fair value of $45,000. Measured on the share of the
+    proceeds that belongs to the bonds, the bonds' effective interest rate is 7%, compounded semiannually.
+    Gunnislake applies the effective interest method, accrues interest at year-end and rounds each computation
+    to the nearest dollar. How much bond interest expense should Gunnislake recognize for Year 1?
   choices:
   - id: A
-    text: $2,294
-    rationale: Allocates to the bonds the $40,000 share of proceeds that belongs to the warrants, and
-      to the warrants the bonds' $780,000 share. The relative-fair-value method allocates proceeds in
-      proportion to each component's own fair value.
+    text: $24,021
+    rationale: Stops at the October 31 payment. Interest from then to December 31 (2 months) also belongs
+      in Year 1 and is accrued at year-end.
   - id: B
-    text: $48,000
-    rationale: Uses the two $24,000 stated interest payments with no discount amortization. Allocating
-      part of the proceeds to the warrants creates a bond discount, which the effective interest method
-      amortizes into interest expense.
+    text: $32,075
+    rationale: Correct. $686,301 × 7%/2 = $24,021; then $690,322 × 7%/2 × 2/6 = $8,054.
   - id: C
-    text: $63,480
-    rationale: Uses the $738,146 carrying amount for both semiannual periods. The carrying amount rises
-      as the discount amortizes each period, to $745,886 for the second period, raising its interest.
+    text: $32,719
+    rationale: Carries the bonds at their own $700,000 fair value. Proceeds are allocated in proportion
+      to the two fair values, which gives the bonds $686,301, because the $730,420 received is less than
+      the $745,000 the bonds and warrants are worth together.
   - id: D
-    text: $63,813
-    rationale: Correct. $738,146 × 8.6%/2 + $745,886 × 8.6%/2.
-  answer: D
-  explanation: 'Because the warrants are detachable, proceeds are allocated between the bonds and the
-    warrants by relative fair value (ASC 470-20-25-2): bonds'' share = $776,000 × $780,000/($780,000 +
-    $40,000) = $738,146, with the remaining $37,854 credited to additional paid-in capital for the warrants.
-    The $24,000 semiannual coupon is $48,000 a year on the face amount. First-period interest = $738,146
-    × 8.6%/2 = $31,740, increasing the carrying amount to $745,886; second-period interest = $745,886
-    × 8.6%/2 = $32,073. Total Year 1 interest expense = $31,740 + $32,073 = $63,813.'
-- stem: On January 1, Year 1, Liskeard Utilities Corp. issues $1,200,000 face amount of ten-year, 4% bonds,
-    paying interest each June 30 and December 31, together with detachable stock warrants, for total cash
-    proceeds of $1,134,000. Immediately after issuance, the warrants trade separately at a total fair
-    value of $60,000, and the bonds alone, without the warrants, would have sold to yield 6.8%, compounded
-    semiannually, for $1,140,000. Liskeard allocates the proceeds between the bonds and the warrants by
-    relative fair value, uses the effective interest method for the bonds, and rounds to the nearest dollar
-    at each step. What total interest expense should Liskeard recognize on the bonds for Year 1?
+    text: $34,151
+    rationale: 'Uses the full $730,420 of proceeds as the bonds'' carrying amount. Part of the proceeds
+      belongs to the detachable warrants: the bonds get $730,420 × $700,000/$745,000 = $686,301, and the
+      rest is credited to additional paid-in capital.'
+  answer: B
+  explanation: 'Detachable warrants are accounted for separately, and with both fair values known the
+    proceeds are allocated in proportion to them (ASC 470-20-25-2): bonds = $730,420 × $700,000/($700,000
+    + $45,000) = $686,301, with the remaining $44,119 credited to additional paid-in capital. The 7% effective
+    rate applies to that $686,301 carrying amount. First period, May 1 to October 31: $686,301 × 7%/2
+    = $24,021, against $20,000 of cash interest, so the carrying amount rises by $4,021 to $690,322. Accrual
+    for the 2 months to December 31: $690,322 × 7%/2 × 2/6 = $8,054. Year 1 interest expense = $24,021
+    + $8,054 = $32,075.'
+- stem: On February 1, Year 1, St Cleer Utilities Corp. issues $1,200,000 face amount of ten-year, 4%
+    bonds, paying interest each July 31 and January 31, together with detachable stock warrants, for total
+    cash proceeds of $1,090,091. Immediately after issuance, the bonds trade without the warrants at a
+    total fair value of $1,042,000, and the warrants trade at a total fair value of $70,000. Measured
+    on the share of the proceeds that belongs to the bonds, the bonds' effective interest rate is 6%,
+    compounded semiannually. St Cleer applies the effective interest method, accrues interest at year-end
+    and rounds each computation to the nearest dollar. How much bond interest expense should St Cleer
+    recognize for Year 1?
   choices:
   - id: A
-    text: $3,105
-    rationale: Allocates to the bonds the $60,000 share of proceeds that belongs to the warrants, and
-      to the warrants the bonds' $1,140,000 share. The relative-fair-value method allocates proceeds in
-      proportion to each component's own fair value.
+    text: $30,644
+    rationale: Stops at the July 31 payment. Interest from then to December 31 (5 months) also belongs
+      in Year 1 and is accrued at year-end.
   - id: B
-    text: $48,000
-    rationale: Uses the two $24,000 stated interest payments with no discount amortization. Allocating
-      part of the proceeds to the warrants creates a bond discount, which the effective interest method
-      amortizes into interest expense.
+    text: $44,000
+    rationale: Uses only the stated interest, $24,000 for the first period and 5/6 of $24,000 accrued
+      at year-end, with no discount amortization. The effective interest method applies the effective
+      rate to the carrying amount.
   - id: C
-    text: $73,686
-    rationale: Correct. $1,077,300 × 6.8%/2 + $1,089,928 × 6.8%/2.
+    text: $56,347
+    rationale: Correct. $1,021,470 × 6%/2 = $30,644; then $1,028,114 × 6%/2 × 5/6 = $25,703.
   - id: D
-    text: $77,607
-    rationale: Treats the full $1,134,000 of proceeds as the bonds' initial carrying amount. Because the
-      warrants are detachable and trade separately, part of the proceeds, allocated by relative fair value,
-      belongs to additional paid-in capital, not the bonds.
+    text: $57,492
+    rationale: Carries the bonds at their own $1,042,000 fair value. Proceeds are allocated in proportion
+      to the two fair values, which gives the bonds $1,021,470, because the $1,090,091 received is less
+      than the $1,112,000 the bonds and warrants are worth together.
   answer: C
-  explanation: 'Because the warrants are detachable, proceeds are allocated between the bonds and the
-    warrants by relative fair value (ASC 470-20-25-2): bonds'' share = $1,134,000 × $1,140,000/($1,140,000
-    + $60,000) = $1,077,300, with the remaining $56,700 credited to additional paid-in capital for the
-    warrants. The $24,000 semiannual coupon is $48,000 a year on the face amount. First-period interest
-    = $1,077,300 × 6.8%/2 = $36,628, increasing the carrying amount to $1,089,928; second-period interest
-    = $1,089,928 × 6.8%/2 = $37,058. Total Year 1 interest expense = $36,628 + $37,058 = $73,686.'
-- stem: On January 1, Year 1, Saltash Energy Corp. issues $600,000 face amount of ten-year, 7% bonds,
-    paying interest each June 30 and December 31, together with detachable stock warrants, for total cash
-    proceeds of $584,000. Immediately after issuance, the warrants trade separately at a total fair value
-    of $30,000, and the bonds alone, without the warrants, would have sold to yield 9.4%, compounded semiannually,
-    for $585,000. Saltash allocates the proceeds between the bonds and the warrants by relative fair value,
-    uses the effective interest method for the bonds, and rounds to the nearest dollar at each step. What
-    total interest expense should Saltash recognize on the bonds for Year 1?
+  explanation: 'Detachable warrants are accounted for separately, and with both fair values known the
+    proceeds are allocated in proportion to them (ASC 470-20-25-2): bonds = $1,090,091 × $1,042,000/($1,042,000
+    + $70,000) = $1,021,470, with the remaining $68,621 credited to additional paid-in capital. The 6%
+    effective rate applies to that $1,021,470 carrying amount. First period, February 1 to July 31: $1,021,470
+    × 6%/2 = $30,644, against $24,000 of cash interest, so the carrying amount rises by $6,644 to $1,028,114.
+    Accrual for the 5 months to December 31: $1,028,114 × 6%/2 × 5/6 = $25,703. Year 1 interest expense
+    = $30,644 + $25,703 = $56,347.'
+- stem: On June 1, Year 1, Darite Energy Corp. issues $600,000 face amount of ten-year, 7% bonds, paying
+    interest each November 30 and May 31, together with detachable stock warrants, for total cash proceeds
+    of $551,331. Immediately after issuance, the bonds trade without the warrants at a total fair value
+    of $533,000, and the warrants trade at a total fair value of $30,000. Measured on the share of the
+    proceeds that belongs to the bonds, the bonds' effective interest rate is 9%, compounded semiannually.
+    Darite applies the effective interest method, accrues interest at year-end and rounds each computation
+    to the nearest dollar. How much bond interest expense should Darite recognize for Year 1?
   choices:
   - id: A
-    text: $42,000
-    rationale: Uses the two $21,000 stated interest payments with no discount amortization. Allocating
-      part of the proceeds to the warrants creates a bond discount, which the effective interest method
-      amortizes into interest expense.
+    text: $24,500
+    rationale: Uses only the stated interest, $21,000 for the first period and 1/6 of $21,000 accrued
+      at year-end, with no discount amortization. The effective interest method applies the effective
+      rate to the carrying amount.
   - id: B
-    text: $52,218
-    rationale: Uses the $555,512 carrying amount for both semiannual periods. The carrying amount rises
-      as the discount amortizes each period, to $560,621 for the second period, raising its interest.
+    text: $27,421
+    rationale: Correct. $521,953 × 9%/2 = $23,488; then $524,441 × 9%/2 × 1/6 = $3,933.
   - id: C
-    text: $52,458
-    rationale: Correct. $555,512 × 9.4%/2 + $560,621 × 9.4%/2.
+    text: $28,005
+    rationale: Carries the bonds at their own $533,000 fair value. Proceeds are allocated in proportion
+      to the two fair values, which gives the bonds $521,953, because the $551,331 received is less than
+      the $563,000 the bonds and warrants are worth together.
   - id: D
-    text: $55,199
-    rationale: Treats the full $584,000 of proceeds as the bonds' initial carrying amount. Because the
-      warrants are detachable and trade separately, part of the proceeds, allocated by relative fair value,
-      belongs to additional paid-in capital, not the bonds.
-  answer: C
-  explanation: 'Because the warrants are detachable, proceeds are allocated between the bonds and the
-    warrants by relative fair value (ASC 470-20-25-2): bonds'' share = $584,000 × $585,000/($585,000 +
-    $30,000) = $555,512, with the remaining $28,488 credited to additional paid-in capital for the warrants.
-    The $21,000 semiannual coupon is $42,000 a year on the face amount. First-period interest = $555,512
-    × 9.4%/2 = $26,109, increasing the carrying amount to $560,621; second-period interest = $560,621
-    × 9.4%/2 = $26,349. Total Year 1 interest expense = $26,109 + $26,349 = $52,458.'
+    text: $28,974
+    rationale: 'Uses the full $551,331 of proceeds as the bonds'' carrying amount. Part of the proceeds
+      belongs to the detachable warrants: the bonds get $551,331 × $533,000/$563,000 = $521,953, and the
+      rest is credited to additional paid-in capital.'
+  answer: B
+  explanation: 'Detachable warrants are accounted for separately, and with both fair values known the
+    proceeds are allocated in proportion to them (ASC 470-20-25-2): bonds = $551,331 × $533,000/($533,000
+    + $30,000) = $521,953, with the remaining $29,378 credited to additional paid-in capital. The 9% effective
+    rate applies to that $521,953 carrying amount. First period, June 1 to November 30: $521,953 × 9%/2
+    = $23,488, against $21,000 of cash interest, so the carrying amount rises by $2,488 to $524,441. Accrual
+    for the 1 months to December 31: $524,441 × 9%/2 × 1/6 = $3,933. Year 1 interest expense = $23,488
+    + $3,933 = $27,421.'

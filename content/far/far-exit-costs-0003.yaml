@@ -8,158 +8,172 @@ blueprint:
 review:
   status: draft
   references:
-  - 'ASC 420-10-25 (one-time employee termination benefits: recognition when future service isn''t required;
-    contract termination costs; other associated costs)'
-  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
-stem: On November 1, Year 1, Wadebridge Freight Co.'s board approves a plan to close a distribution center
-  on April 1, Year 2, and communicates the plan to the center's 70 employees that day. Under the plan,
-  each terminated employee will receive a severance payment based on years of service, a total of $840,000,
-  whether the employee stays until the center closes or leaves immediately; Wadebridge expects no significant
-  retention problem and plans no further communication. Wadebridge will also pay a $65,000 fee to cancel
-  an equipment maintenance contract once it stops using the service, which won't happen until the center
-  closes, and expects to spend $38,000 relocating equipment to another facility once the move actually
-  takes place. What liability for exit costs should Wadebridge report at December 31, Year 1?
+  - 'ASC 420-10-25-4 to 25-9 (one-time employee termination benefits: no future service required, or ratable
+    recognition when service extends beyond the minimum retention period)'
+  - ASC 420-10-25-11 (contract termination costs)
+  - ASC 420-10-25-15 (other associated costs)
+  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
+    solved and every number and distractor computed in code.
+stem: On November 1, Year 1, Penzance Contact Services Co.'s board approves a plan to close a regional
+  call center on April 30, Year 2, and that day tells the center's 70 employees which positions will end,
+  when, and what each employee will receive; Penzance doesn't expect to change the plan. Each employee
+  will receive severance based on years of service, $840,000 in total, payable at termination whether
+  the employee stays until the center closes or leaves earlier. Each of the center's 12 team leaders will
+  also receive a $15,000 bonus, but only if he or she stays until the center closes, and Penzance expects
+  all of them to stay. No law or agreement requires Penzance to give notice of termination. The center's
+  cleaning contract, which isn't a lease, can be ended early for a $65,000 fee by written notice; Penzance
+  plans to send the notice in March, Year 2, and will use the service until then. Penzance also expects
+  to pay $38,000 in Year 2 to move retained employees to another office. Treat each month as equal in
+  length. What liability for exit costs should Penzance report at December 31, Year 1?
 choices:
 - id: A
-  text: $336,000
-  rationale: Accrues only 2/5 of the $840,000 of termination benefits, as though employees must render
-    future service to earn them. Because the benefit formula pays employees the same amount whether or
-    not they stay until the facility closes, Wadebridge recognizes the whole $840,000 at the communication
-    date.
+  text: $340,000
+  rationale: Accrues only 2/6 of the $840,000 of severance, as though employees had to keep working to
+    earn it. Employees receive it whether they stay or leave early, so all of it is recognized when the
+    plan is communicated.
 - id: B
-  text: $840,000
-  rationale: Correct. The full $840,000 of termination benefits, recognized at the communication date
-    because no significant future service is required to earn them.
+  text: $900,000
+  rationale: Correct. $840,000 of severance, recognized in full at the communication date, plus 2/6 ×
+    $180,000 = $60,000 of team-leader bonuses.
 - id: C
-  text: $878,000
-  rationale: Also accrues the $38,000 estimated cost of relocating equipment to another facility. Costs
-    associated with an exit activity, other than one-time termination benefits and contract termination
-    costs, are recognized in the period they are incurred, not when the exit plan is communicated.
+  text: $965,000
+  rationale: Also accrues the $65,000 fee to end the cleaning contract early. A contract termination cost
+    is recognized when the contract is terminated under its terms, here by written notice, which Penzance
+    won't send until March, Year 2.
 - id: D
-  text: $905,000
-  rationale: Also accrues the $65,000 fee to cancel the equipment maintenance contract early. Wadebridge
-    will keep using the contracted service until the facility closes, so that cost isn't recognized until
-    Wadebridge ceases using the right under the contract.
+  text: $1,020,000
+  rationale: 'Accrues the whole $180,000 of team-leader bonuses at the communication date. The bonuses
+    are paid only to those who stay until the center closes, a service period longer than 60 days, so
+    they are recognized ratably over the 6 months: 2/6 by December 31.'
 answer: B
-explanation: 'A one-time termination benefit is recognized in full at the communication date when, as
-  here, employees aren''t required to render significant future service to receive it (ASC 420-10-25-4):
-  the full $840,000 is a liability once the plan is communicated. A contract termination cost is recognized
-  when the contract is terminated or, if earlier, when the entity ceases using the right under the contract
-  (ASC 420-10-25-11); Wadebridge keeps using the maintenance service until closure, so the $65,000 fee
-  isn''t yet a liability. Other costs associated with an exit activity, such as the $38,000 of relocation,
-  are recognized as incurred (ASC 420-10-25-15), not when the plan is announced. Exit-cost liability at
-  December 31, Year 1 = $840,000.'
+explanation: 'One-time termination benefits that employees receive without rendering further service are
+  recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the $840,000 of severance.
+  The team-leader bonuses require service until the center closes, 6 months after the communication date,
+  which is longer than the 60-day minimum retention period that applies when no law sets one, so they
+  are recognized ratably over that service period (ASC 420-10-25-9): $180,000 × 2/6 = $60,000 by December
+  31. A contract termination cost is recognized when the entity terminates the contract under its terms,
+  for example by giving written notice (ASC 420-10-25-11); Penzance hasn''t given notice, so the $65,000
+  fee isn''t a liability yet. Moving retained employees is an other associated cost, recognized when incurred
+  (ASC 420-10-25-15). Liability = $840,000 + $60,000 = $900,000.'
 variants:
-- stem: On October 1, Year 1, Launceston Carriers Co.'s board approves a plan to close a distribution
-    center on April 1, Year 2, and communicates the plan to the center's 55 employees that day. Under
-    the plan, each terminated employee will receive a severance payment based on years of service, a total
-    of $615,000, whether the employee stays until the center closes or leaves immediately; Launceston
-    expects no significant retention problem and plans no further communication. Launceston will also
-    pay a $48,000 fee to cancel an equipment maintenance contract once it stops using the service, which
-    won't happen until the center closes, and expects to spend $27,000 relocating equipment to another
-    facility once the move actually takes place. What liability for exit costs should Launceston report
-    at December 31, Year 1?
+- stem: On October 1, Year 1, Truro Customer Care Co.'s board approves a plan to close a regional call
+    center on March 31, Year 2, and that day tells the center's 55 employees which positions will end,
+    when, and what each employee will receive; Truro doesn't expect to change the plan. Each employee
+    will receive severance based on years of service, $615,000 in total, payable at termination whether
+    the employee stays until the center closes or leaves earlier. Each of the center's 9 team leaders
+    will also receive a $12,000 bonus, but only if he or she stays until the center closes, and Truro
+    expects all of them to stay. No law or agreement requires Truro to give notice of termination. The
+    center's cleaning contract, which isn't a lease, can be ended early for a $48,000 fee by written notice;
+    Truro plans to send the notice in March, Year 2, and will use the service until then. Truro also expects
+    to pay $27,000 in Year 2 to move retained employees to another office. Treat each month as equal in
+    length. What liability for exit costs should Truro report at December 31, Year 1?
   choices:
   - id: A
+    text: $361,500
+    rationale: Accrues only 3/6 of the $615,000 of severance, as though employees had to keep working
+      to earn it. Employees receive it whether they stay or leave early, so all of it is recognized when
+      the plan is communicated.
+  - id: B
     text: $615,000
-    rationale: Correct. The full $615,000 of termination benefits, recognized at the communication date
-      because no significant future service is required to earn them.
-  - id: B
-    text: $642,000
-    rationale: Also accrues the $27,000 estimated cost of relocating equipment to another facility. Costs
-      associated with an exit activity, other than one-time termination benefits and contract termination
-      costs, are recognized in the period they are incurred, not when the exit plan is communicated.
+    rationale: 'Leaves out the team-leader bonuses until the center closes. A benefit that requires service
+      until closure is still recognized as the service is rendered, ratably from the communication date:
+      3/6 of $108,000 by December 31.'
   - id: C
-    text: $663,000
-    rationale: Also accrues the $48,000 fee to cancel the equipment maintenance contract early. Launceston
-      will keep using the contracted service until the facility closes, so that cost isn't recognized
-      until Launceston ceases using the right under the contract.
+    text: $669,000
+    rationale: Correct. $615,000 of severance, recognized in full at the communication date, plus 3/6
+      × $108,000 = $54,000 of team-leader bonuses.
   - id: D
-    text: $690,000
-    rationale: Also accrues both the $48,000 contract termination fee and the $27,000 relocation cost.
-      Neither is recognized at the communication date.
-  answer: A
-  explanation: 'A one-time termination benefit is recognized in full at the communication date when, as
-    here, employees aren''t required to render significant future service to receive it (ASC 420-10-25-4):
-    the full $615,000 is a liability once the plan is communicated. A contract termination cost is recognized
-    when the contract is terminated or, if earlier, when the entity ceases using the right under the contract
-    (ASC 420-10-25-11); Launceston keeps using the maintenance service until closure, so the $48,000 fee
-    isn''t yet a liability. Other costs associated with an exit activity, such as the $27,000 of relocation,
-    are recognized as incurred (ASC 420-10-25-15), not when the plan is announced. Exit-cost liability
-    at December 31, Year 1 = $615,000.'
-- stem: On September 1, Year 1, Bideford Shipping Co.'s board approves a plan to close a distribution
-    center on April 1, Year 2, and communicates the plan to the center's 85 employees that day. Under
-    the plan, each terminated employee will receive a severance payment based on years of service, a total
-    of $980,000, whether the employee stays until the center closes or leaves immediately; Bideford expects
-    no significant retention problem and plans no further communication. Bideford will also pay a $72,000
-    fee to cancel an equipment maintenance contract once it stops using the service, which won't happen
-    until the center closes, and expects to spend $44,000 relocating equipment to another facility once
-    the move actually takes place. What liability for exit costs should Bideford report at December 31,
-    Year 1?
+    text: $696,000
+    rationale: Also accrues the $27,000 to move retained employees to another office. Other costs of an
+      exit activity, such as relocating employees, are recognized when incurred, in Year 2.
+  answer: C
+  explanation: 'One-time termination benefits that employees receive without rendering further service
+    are recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the $615,000 of severance.
+    The team-leader bonuses require service until the center closes, 6 months after the communication
+    date, which is longer than the 60-day minimum retention period that applies when no law sets one,
+    so they are recognized ratably over that service period (ASC 420-10-25-9): $108,000 × 3/6 = $54,000
+    by December 31. A contract termination cost is recognized when the entity terminates the contract
+    under its terms, for example by giving written notice (ASC 420-10-25-11); Truro hasn''t given notice,
+    so the $48,000 fee isn''t a liability yet. Moving retained employees is an other associated cost,
+    recognized when incurred (ASC 420-10-25-15). Liability = $615,000 + $54,000 = $669,000.'
+- stem: On September 1, Year 1, Kenwyn Teleservices Co.'s board approves a plan to close a regional call
+    center on March 31, Year 2, and that day tells the center's 85 employees which positions will end,
+    when, and what each employee will receive; Kenwyn doesn't expect to change the plan. Each employee
+    will receive severance based on years of service, $980,000 in total, payable at termination whether
+    the employee stays until the center closes or leaves earlier. Each of the center's 14 team leaders
+    will also receive a $14,000 bonus, but only if he or she stays until the center closes, and Kenwyn
+    expects all of them to stay. No law or agreement requires Kenwyn to give notice of termination. The
+    center's cleaning contract, which isn't a lease, can be ended early for a $72,000 fee by written notice;
+    Kenwyn plans to send the notice in March, Year 2, and will use the service until then. Kenwyn also
+    expects to pay $44,000 in Year 2 to move retained employees to another office. Treat each month as
+    equal in length. What liability for exit costs should Kenwyn report at December 31, Year 1?
   choices:
   - id: A
-    text: $560,000
-    rationale: Accrues only 4/7 of the $980,000 of termination benefits, as though employees must render
-      future service to earn them. Because the benefit formula pays employees the same amount whether
-      or not they stay until the facility closes, Bideford recognizes the whole $980,000 at the communication
-      date.
-  - id: B
     text: $980,000
-    rationale: Correct. The full $980,000 of termination benefits, recognized at the communication date
-      because no significant future service is required to earn them.
+    rationale: 'Leaves out the team-leader bonuses until the center closes. A benefit that requires service
+      until closure is still recognized as the service is rendered, ratably from the communication date:
+      4/7 of $196,000 by December 31.'
+  - id: B
+    text: $1,092,000
+    rationale: Correct. $980,000 of severance, recognized in full at the communication date, plus 4/7
+      × $196,000 = $112,000 of team-leader bonuses.
   - id: C
-    text: $1,024,000
-    rationale: Also accrues the $44,000 estimated cost of relocating equipment to another facility. Costs
-      associated with an exit activity, other than one-time termination benefits and contract termination
-      costs, are recognized in the period they are incurred, not when the exit plan is communicated.
+    text: $1,136,000
+    rationale: Also accrues the $44,000 to move retained employees to another office. Other costs of an
+      exit activity, such as relocating employees, are recognized when incurred, in Year 2.
   - id: D
-    text: $1,096,000
-    rationale: Also accrues both the $72,000 contract termination fee and the $44,000 relocation cost.
-      Neither is recognized at the communication date.
+    text: $1,176,000
+    rationale: 'Accrues the whole $196,000 of team-leader bonuses at the communication date. The bonuses
+      are paid only to those who stay until the center closes, a service period longer than 60 days, so
+      they are recognized ratably over the 7 months: 4/7 by December 31.'
   answer: B
-  explanation: 'A one-time termination benefit is recognized in full at the communication date when, as
-    here, employees aren''t required to render significant future service to receive it (ASC 420-10-25-4):
-    the full $980,000 is a liability once the plan is communicated. A contract termination cost is recognized
-    when the contract is terminated or, if earlier, when the entity ceases using the right under the contract
-    (ASC 420-10-25-11); Bideford keeps using the maintenance service until closure, so the $72,000 fee
-    isn''t yet a liability. Other costs associated with an exit activity, such as the $44,000 of relocation,
-    are recognized as incurred (ASC 420-10-25-15), not when the plan is announced. Exit-cost liability
-    at December 31, Year 1 = $980,000.'
-- stem: On December 1, Year 1, Barnstaple Transit Co.'s board approves a plan to close a distribution
-    center on April 1, Year 2, and communicates the plan to the center's 60 employees that day. Under
-    the plan, each terminated employee will receive a severance payment based on years of service, a total
-    of $725,000, whether the employee stays until the center closes or leaves immediately; Barnstaple
-    expects no significant retention problem and plans no further communication. Barnstaple will also
-    pay a $55,000 fee to cancel an equipment maintenance contract once it stops using the service, which
-    won't happen until the center closes, and expects to spend $31,000 relocating equipment to another
-    facility once the move actually takes place. What liability for exit costs should Barnstaple report
-    at December 31, Year 1?
+  explanation: 'One-time termination benefits that employees receive without rendering further service
+    are recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the $980,000 of severance.
+    The team-leader bonuses require service until the center closes, 7 months after the communication
+    date, which is longer than the 60-day minimum retention period that applies when no law sets one,
+    so they are recognized ratably over that service period (ASC 420-10-25-9): $196,000 × 4/7 = $112,000
+    by December 31. A contract termination cost is recognized when the entity terminates the contract
+    under its terms, for example by giving written notice (ASC 420-10-25-11); Kenwyn hasn''t given notice,
+    so the $72,000 fee isn''t a liability yet. Moving retained employees is an other associated cost,
+    recognized when incurred (ASC 420-10-25-15). Liability = $980,000 + $112,000 = $1,092,000.'
+- stem: On December 1, Year 1, Holywell Support Services Co.'s board approves a plan to close a regional
+    call center on March 31, Year 2, and that day tells the center's 60 employees which positions will
+    end, when, and what each employee will receive; Holywell doesn't expect to change the plan. Each employee
+    will receive severance based on years of service, $725,000 in total, payable at termination whether
+    the employee stays until the center closes or leaves earlier. Each of the center's 10 team leaders
+    will also receive a $16,000 bonus, but only if he or she stays until the center closes, and Holywell
+    expects all of them to stay. No law or agreement requires Holywell to give notice of termination.
+    The center's cleaning contract, which isn't a lease, can be ended early for a $55,000 fee by written
+    notice; Holywell plans to send the notice in March, Year 2, and will use the service until then. Holywell
+    also expects to pay $31,000 in Year 2 to move retained employees to another office. Treat each month
+    as equal in length. What liability for exit costs should Holywell report at December 31, Year 1?
   choices:
   - id: A
-    text: $181,250
-    rationale: Accrues only 1/4 of the $725,000 of termination benefits, as though employees must render
-      future service to earn them. Because the benefit formula pays employees the same amount whether
-      or not they stay until the facility closes, Barnstaple recognizes the whole $725,000 at the communication
-      date.
+    text: $221,250
+    rationale: Accrues only 1/4 of the $725,000 of severance, as though employees had to keep working
+      to earn it. Employees receive it whether they stay or leave early, so all of it is recognized when
+      the plan is communicated.
   - id: B
     text: $725,000
-    rationale: Correct. The full $725,000 of termination benefits, recognized at the communication date
-      because no significant future service is required to earn them.
+    rationale: 'Leaves out the team-leader bonuses until the center closes. A benefit that requires service
+      until closure is still recognized as the service is rendered, ratably from the communication date:
+      1/4 of $160,000 by December 31.'
   - id: C
-    text: $780,000
-    rationale: Also accrues the $55,000 fee to cancel the equipment maintenance contract early. Barnstaple
-      will keep using the contracted service until the facility closes, so that cost isn't recognized
-      until Barnstaple ceases using the right under the contract.
+    text: $765,000
+    rationale: Correct. $725,000 of severance, recognized in full at the communication date, plus 1/4
+      × $160,000 = $40,000 of team-leader bonuses.
   - id: D
-    text: $811,000
-    rationale: Also accrues both the $55,000 contract termination fee and the $31,000 relocation cost.
-      Neither is recognized at the communication date.
-  answer: B
-  explanation: 'A one-time termination benefit is recognized in full at the communication date when, as
-    here, employees aren''t required to render significant future service to receive it (ASC 420-10-25-4):
-    the full $725,000 is a liability once the plan is communicated. A contract termination cost is recognized
-    when the contract is terminated or, if earlier, when the entity ceases using the right under the contract
-    (ASC 420-10-25-11); Barnstaple keeps using the maintenance service until closure, so the $55,000 fee
-    isn''t yet a liability. Other costs associated with an exit activity, such as the $31,000 of relocation,
-    are recognized as incurred (ASC 420-10-25-15), not when the plan is announced. Exit-cost liability
-    at December 31, Year 1 = $725,000.'
+    text: $820,000
+    rationale: Also accrues the $55,000 fee to end the cleaning contract early. A contract termination
+      cost is recognized when the contract is terminated under its terms, here by written notice, which
+      Holywell won't send until March, Year 2.
+  answer: C
+  explanation: 'One-time termination benefits that employees receive without rendering further service
+    are recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the $725,000 of severance.
+    The team-leader bonuses require service until the center closes, 4 months after the communication
+    date, which is longer than the 60-day minimum retention period that applies when no law sets one,
+    so they are recognized ratably over that service period (ASC 420-10-25-9): $160,000 × 1/4 = $40,000
+    by December 31. A contract termination cost is recognized when the entity terminates the contract
+    under its terms, for example by giving written notice (ASC 420-10-25-11); Holywell hasn''t given notice,
+    so the $55,000 fee isn''t a liability yet. Moving retained employees is an other associated cost,
+    recognized when incurred (ASC 420-10-25-15). Liability = $725,000 + $40,000 = $765,000.'

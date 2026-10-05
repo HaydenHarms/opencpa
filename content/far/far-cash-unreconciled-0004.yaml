@@ -9,130 +9,142 @@ review:
   status: draft
   references:
   - ASC 305-10 (cash)
-  - Bank reconciliation practice (errors by the bank and by the depositor)
-  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'Tywardreath Supply Co.''s bank reconciliation, after deposits in transit and outstanding checks,
-  shows an adjusted bank balance of $58,900 at November 30. Its general ledger cash account, after recording
-  the bank''s service charges and collections already identified, shows $60,330, an unreconciled difference
-  of $1,430. Investigating, the controller finds: a $2,300 wire transfer that a customer''s remittance
-  advice said was sent to pay its account was actually misdirected by the customer''s bank to another
-  company''s account, and was never credited to Tywardreath''s account, though the collections department
-  recorded it as received; a $180 fee the bank charged for honoring Tywardreath''s stop-payment request
-  on an earlier check has not been recorded; and a $1,050 petty-cash replenishment check was recorded
-  twice in the cash disbursements journal. What is Tywardreath''s correct cash balance at November 30?'
+  - Bank reconciliation practice (errors by the bank and by the depositor; unlocated differences)
+  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
+    solved and every number and distractor computed in code.
+stem: 'Lerryn Supply Co.''s accountant could not reconcile the November 30 bank statement. Her reconciliation
+  shows an adjusted bank balance of $58,900, after adding deposits in transit and subtracting outstanding
+  checks, while the general ledger cash account, after recording the bank''s charges and credits, shows
+  $62,270. The controller traces the $3,370 difference and finds: the deposits in transit include a $1,240
+  deposit made on November 27, which the bank credited on November 28 and which appears on the November
+  statement; a $3,400 wire transfer, recorded as received because a customer''s remittance advice said
+  it had been sent, was misdirected by the customer''s bank to another company''s account and never reached
+  Lerryn; and a $650 check to replenish petty cash was entered twice in the cash disbursements journal.
+  No other errors can be found, and Lerryn will write off whatever difference remains as a cash shortage.
+  What cash shortage should Lerryn record?'
 choices:
 - id: A
-  text: $57,850
-  rationale: Leaves the $1,050 petty-cash replenishment check recorded twice in the cash disbursements
-    journal.
+  text: $620
+  rationale: Accepts the reconciliation's $58,900 adjusted bank balance. The $1,240 deposit of November
+    27 already appears on the November statement, so counting it again as a deposit in transit overstates
+    the bank side by $1,240.
 - id: B
-  text: $58,900
-  rationale: Correct. $60,330 − $2,300 − $180 + $1,050 = $58,900, agreeing with the adjusted bank balance.
+  text: $1,860
+  rationale: Correct. Corrected book balance $62,270 − $3,400 + $650 = $59,520; corrected bank balance
+    $58,900 − $1,240 = $57,660; shortage = $59,520 − $57,660.
 - id: C
-  text: $59,080
-  rationale: Leaves out the $180 fee the bank charged for honoring Tywardreath's stop-payment request,
-    which hasn't been recorded.
+  text: $3,370
+  rationale: Writes off the whole $3,370 difference without first correcting the double-counted deposit,
+    the misdirected wire and the duplicate disbursement.
 - id: D
-  text: $61,200
-  rationale: Keeps the $2,300 wire transfer as a collection. The customer's bank sent it to another company's
-    account, so Tywardreath never received it.
+  text: $5,260
+  rationale: Leaves the $3,400 wire in book cash. The customer's bank sent it to another company's account,
+    so Lerryn never received it and the receipt must be reversed (the customer still owes the amount).
 answer: B
-explanation: 'The adjusted bank balance, after deposits in transit and outstanding checks, is already
-  correct at $58,900. On the book side: the $2,300 wire was never actually received, since the customer''s
-  bank sent it to the wrong account, so it comes out; the $180 stop-payment fee reduces cash and hasn''t
-  been recorded; and the duplicate $1,050 disbursement overstated total disbursements, so it is added
-  back: $60,330 − $2,300 − $180 + $1,050 = $58,900.'
+explanation: 'Correct each side first. Bank side: the $1,240 deposit is already in the statement balance,
+  so it isn''t in transit: $58,900 − $1,240 = $57,660, the true cash balance. Book side: reverse the $3,400
+  wire that never arrived and reverse the duplicate $650 disbursement: $62,270 − $3,400 + $650 = $59,520.
+  The books still show $59,520 − $57,660 = $1,860 more cash than the bank holds, and with no other error
+  to be found, that is the cash shortage to write off.'
 variants:
-- stem: 'Mevagissey Fisheries Co.''s bank reconciliation, after deposits in transit and outstanding checks,
-    shows an adjusted bank balance of $74,500 at November 30. Its general ledger cash account, after recording
-    the bank''s service charges and collections already identified, shows $76,440, an unreconciled difference
-    of $1,940. Investigating, the controller finds: a $3,100 wire transfer that a customer''s remittance
-    advice said was sent to pay its account was actually misdirected by the customer''s bank to another
-    company''s account, and was never credited to Mevagissey''s account, though the collections department
-    recorded it as received; a $220 fee the bank charged for honoring Mevagissey''s stop-payment request
-    on an earlier check has not been recorded; and a $1,380 petty-cash replenishment check was recorded
-    twice in the cash disbursements journal. What is Mevagissey''s correct cash balance at November 30?'
+- stem: 'Polkerris Fisheries Co.''s accountant could not reconcile the November 30 bank statement. Her
+    reconciliation shows an adjusted bank balance of $74,500, after adding deposits in transit and subtracting
+    outstanding checks, while the general ledger cash account, after recording the bank''s charges and
+    credits, shows $78,550. The controller traces the $4,050 difference and finds: the deposits in transit
+    include a $1,580 deposit made on November 27, which the bank credited on November 28 and which appears
+    on the November statement; a $4,100 wire transfer, recorded as received because a customer''s remittance
+    advice said it had been sent, was misdirected by the customer''s bank to another company''s account
+    and never reached Polkerris; and an $820 check to replenish petty cash was entered twice in the cash
+    disbursements journal. No other errors can be found, and Polkerris will write off whatever difference
+    remains as a cash shortage. What cash shortage should Polkerris record?'
   choices:
   - id: A
-    text: $73,120
-    rationale: Leaves the $1,380 petty-cash replenishment check recorded twice in the cash disbursements
-      journal.
+    text: $1,530
+    rationale: Leaves the $820 petty-cash check recorded twice. The duplicate entry understates book cash,
+      so reversing it raises the book side by $820.
   - id: B
-    text: $74,500
-    rationale: Correct. $76,440 − $3,100 − $220 + $1,380 = $74,500, agreeing with the adjusted bank balance.
+    text: $2,350
+    rationale: Correct. Corrected book balance $78,550 − $4,100 + $820 = $75,270; corrected bank balance
+      $74,500 − $1,580 = $72,920; shortage = $75,270 − $72,920.
   - id: C
-    text: $74,720
-    rationale: Leaves out the $220 fee the bank charged for honoring Mevagissey's stop-payment request,
-      which hasn't been recorded.
+    text: $4,050
+    rationale: Writes off the whole $4,050 difference without first correcting the double-counted deposit,
+      the misdirected wire and the duplicate disbursement.
   - id: D
-    text: $76,440
-    rationale: Accepts the book side's $76,440, which keeps the misdirected wire, omits the stop-payment
-      fee and leaves the duplicate disbursement.
+    text: $6,450
+    rationale: Leaves the $4,100 wire in book cash. The customer's bank sent it to another company's account,
+      so Polkerris never received it and the receipt must be reversed (the customer still owes the amount).
   answer: B
-  explanation: 'The adjusted bank balance, after deposits in transit and outstanding checks, is already
-    correct at $74,500. On the book side: the $3,100 wire was never actually received, since the customer''s
-    bank sent it to the wrong account, so it comes out; the $220 stop-payment fee reduces cash and hasn''t
-    been recorded; and the duplicate $1,380 disbursement overstated total disbursements, so it is added
-    back: $76,440 − $3,100 − $220 + $1,380 = $74,500.'
-- stem: 'Polruan Chandlery Co.''s bank reconciliation, after deposits in transit and outstanding checks,
-    shows an adjusted bank balance of $49,200 at November 30. Its general ledger cash account, after recording
-    the bank''s service charges and collections already identified, shows $50,270, an unreconciled difference
-    of $1,070. Investigating, the controller finds: a $1,850 wire transfer that a customer''s remittance
-    advice said was sent to pay its account was actually misdirected by the customer''s bank to another
-    company''s account, and was never credited to Polruan''s account, though the collections department
-    recorded it as received; a $140 fee the bank charged for honoring Polruan''s stop-payment request
-    on an earlier check has not been recorded; and a $920 petty-cash replenishment check was recorded
-    twice in the cash disbursements journal. What is Polruan''s correct cash balance at November 30?'
+  explanation: 'Correct each side first. Bank side: the $1,580 deposit is already in the statement balance,
+    so it isn''t in transit: $74,500 − $1,580 = $72,920, the true cash balance. Book side: reverse the
+    $4,100 wire that never arrived and reverse the duplicate $820 disbursement: $78,550 − $4,100 + $820
+    = $75,270. The books still show $75,270 − $72,920 = $2,350 more cash than the bank holds, and with
+    no other error to be found, that is the cash shortage to write off.'
+- stem: 'Pentewan Chandlery Co.''s accountant could not reconcile the November 30 bank statement. Her
+    reconciliation shows an adjusted bank balance of $49,200, after adding deposits in transit and subtracting
+    outstanding checks, while the general ledger cash account, after recording the bank''s charges and
+    credits, shows $51,820. The controller traces the $2,620 difference and finds: the deposits in transit
+    include a $960 deposit made on November 27, which the bank credited on November 28 and which appears
+    on the November statement; a $2,700 wire transfer, recorded as received because a customer''s remittance
+    advice said it had been sent, was misdirected by the customer''s bank to another company''s account
+    and never reached Pentewan; and a $540 check to replenish petty cash was entered twice in the cash
+    disbursements journal. No other errors can be found, and Pentewan will write off whatever difference
+    remains as a cash shortage. What cash shortage should Pentewan record?'
   choices:
   - id: A
-    text: $48,280
-    rationale: Leaves the $920 petty-cash replenishment check recorded twice in the cash disbursements
-      journal.
+    text: $460
+    rationale: Accepts the reconciliation's $49,200 adjusted bank balance. The $960 deposit of November
+      27 already appears on the November statement, so counting it again as a deposit in transit overstates
+      the bank side by $960.
   - id: B
-    text: $49,200
-    rationale: Correct. $50,270 − $1,850 − $140 + $920 = $49,200, agreeing with the adjusted bank balance.
+    text: $880
+    rationale: Leaves the $540 petty-cash check recorded twice. The duplicate entry understates book cash,
+      so reversing it raises the book side by $540.
   - id: C
-    text: $50,270
-    rationale: Accepts the book side's $50,270, which keeps the misdirected wire, omits the stop-payment
-      fee and leaves the duplicate disbursement.
+    text: $1,420
+    rationale: Correct. Corrected book balance $51,820 − $2,700 + $540 = $49,660; corrected bank balance
+      $49,200 − $960 = $48,240; shortage = $49,660 − $48,240.
   - id: D
-    text: $51,050
-    rationale: Keeps the $1,850 wire transfer as a collection. The customer's bank sent it to another
-      company's account, so Polruan never received it.
-  answer: B
-  explanation: 'The adjusted bank balance, after deposits in transit and outstanding checks, is already
-    correct at $49,200. On the book side: the $1,850 wire was never actually received, since the customer''s
-    bank sent it to the wrong account, so it comes out; the $140 stop-payment fee reduces cash and hasn''t
-    been recorded; and the duplicate $920 disbursement overstated total disbursements, so it is added
-    back: $50,270 − $1,850 − $140 + $920 = $49,200.'
-- stem: 'Fowey Harbour Traders Co.''s bank reconciliation, after deposits in transit and outstanding checks,
-    shows an adjusted bank balance of $83,600 at November 30. Its general ledger cash account, after recording
-    the bank''s service charges and collections already identified, shows $85,290, an unreconciled difference
-    of $1,690. Investigating, the controller finds: a $2,950 wire transfer that a customer''s remittance
-    advice said was sent to pay its account was actually misdirected by the customer''s bank to another
-    company''s account, and was never credited to Fowey''s account, though the collections department
-    recorded it as received; a $260 fee the bank charged for honoring Fowey''s stop-payment request on
-    an earlier check has not been recorded; and a $1,520 petty-cash replenishment check was recorded twice
-    in the cash disbursements journal. What is Fowey''s correct cash balance at November 30?'
+    text: $4,120
+    rationale: Leaves the $2,700 wire in book cash. The customer's bank sent it to another company's account,
+      so Pentewan never received it and the receipt must be reversed (the customer still owes the amount).
+  answer: C
+  explanation: 'Correct each side first. Bank side: the $960 deposit is already in the statement balance,
+    so it isn''t in transit: $49,200 − $960 = $48,240, the true cash balance. Book side: reverse the $2,700
+    wire that never arrived and reverse the duplicate $540 disbursement: $51,820 − $2,700 + $540 = $49,660.
+    The books still show $49,660 − $48,240 = $1,420 more cash than the bank holds, and with no other error
+    to be found, that is the cash shortage to write off.'
+- stem: 'Charlestown Harbour Traders Co.''s accountant could not reconcile the November 30 bank statement.
+    Her reconciliation shows an adjusted bank balance of $83,600, after adding deposits in transit and
+    subtracting outstanding checks, while the general ledger cash account, after recording the bank''s
+    charges and credits, shows $88,160. The controller traces the $4,560 difference and finds: the deposits
+    in transit include a $1,870 deposit made on November 27, which the bank credited on November 28 and
+    which appears on the November statement; a $4,600 wire transfer, recorded as received because a customer''s
+    remittance advice said it had been sent, was misdirected by the customer''s bank to another company''s
+    account and never reached Charlestown; and a $910 check to replenish petty cash was entered twice
+    in the cash disbursements journal. No other errors can be found, and Charlestown will write off whatever
+    difference remains as a cash shortage. What cash shortage should Charlestown record?'
   choices:
   - id: A
-    text: $83,600
-    rationale: Correct. $85,290 − $2,950 − $260 + $1,520 = $83,600, agreeing with the adjusted bank balance.
+    text: $870
+    rationale: Accepts the reconciliation's $83,600 adjusted bank balance. The $1,870 deposit of November
+      27 already appears on the November statement, so counting it again as a deposit in transit overstates
+      the bank side by $1,870.
   - id: B
-    text: $83,860
-    rationale: Leaves out the $260 fee the bank charged for honoring Fowey's stop-payment request, which
-      hasn't been recorded.
+    text: $1,830
+    rationale: Leaves the $910 petty-cash check recorded twice. The duplicate entry understates book cash,
+      so reversing it raises the book side by $910.
   - id: C
-    text: $85,290
-    rationale: Accepts the book side's $85,290, which keeps the misdirected wire, omits the stop-payment
-      fee and leaves the duplicate disbursement.
+    text: $2,740
+    rationale: Correct. Corrected book balance $88,160 − $4,600 + $910 = $84,470; corrected bank balance
+      $83,600 − $1,870 = $81,730; shortage = $84,470 − $81,730.
   - id: D
-    text: $86,550
-    rationale: Keeps the $2,950 wire transfer as a collection. The customer's bank sent it to another
-      company's account, so Fowey never received it.
-  answer: A
-  explanation: 'The adjusted bank balance, after deposits in transit and outstanding checks, is already
-    correct at $83,600. On the book side: the $2,950 wire was never actually received, since the customer''s
-    bank sent it to the wrong account, so it comes out; the $260 stop-payment fee reduces cash and hasn''t
-    been recorded; and the duplicate $1,520 disbursement overstated total disbursements, so it is added
-    back: $85,290 − $2,950 − $260 + $1,520 = $83,600.'
+    text: $4,560
+    rationale: Writes off the whole $4,560 difference without first correcting the double-counted deposit,
+      the misdirected wire and the duplicate disbursement.
+  answer: C
+  explanation: 'Correct each side first. Bank side: the $1,870 deposit is already in the statement balance,
+    so it isn''t in transit: $83,600 − $1,870 = $81,730, the true cash balance. Book side: reverse the
+    $4,600 wire that never arrived and reverse the duplicate $910 disbursement: $88,160 − $4,600 + $910
+    = $84,470. The books still show $84,470 − $81,730 = $2,740 more cash than the bank holds, and with
+    no other error to be found, that is the cash shortage to write off.'

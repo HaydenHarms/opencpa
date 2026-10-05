@@ -8,133 +8,155 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 330-10 (inventory)
-  - ASC 606-10-55 (consignment arrangements)
-  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'Pendeen''s perpetual inventory records show a Year 2 rollforward of beginning inventory $210,000,
-  purchases $1,480,000, and cost of goods sold $1,395,000, for a draft December 31 balance of $295,000.
-  Reviewing the count and the purchase records, the controller finds: the count includes $34,000 of goods
-  a supplier shipped to Pendeen on consignment, which Pendeen may return unsold; $52,000 of Pendeen''s
-  own inventory, pledged as collateral for a bank loan, was removed from the inventory account when the
-  loan was obtained; and purchases are recorded under the net method, so $12,000 of discounts on invoices
-  Pendeen paid after the discount period, and so never took, reduced the recorded cost of goods still
-  on hand. What inventory should the corrected rollforward report at December 31, Year 2?'
+  - ASC 330-10-30 (cost of inventory; cash discounts)
+  - ASC 606-10-55-79 to 55-80 (consignment arrangements)
+  - 'Inventory cutoff: FOB shipping point and purchase returns'
+  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
+    solved and every number and distractor computed in code.
+stem: Trewellard Hardware Co. uses a perpetual inventory system and records purchases net of cash discounts.
+  Its staff's Year 2 inventory rollforward shows beginning inventory of $210,000, purchases (net of returns)
+  of $1,480,000, cost of goods sold of $1,395,000 and ending inventory of $295,000; the purchases figure
+  is the purchases journal total. Testing that figure, the controller finds that $34,000 of goods a supplier
+  shipped to Trewellard on consignment, which Trewellard may return unsold, were entered as purchases
+  when they arrived; that when Trewellard paid invoices after the discount period, it charged the $12,000
+  of discounts it lost to purchases; that goods costing $21,000, which Trewellard shipped back to a supplier
+  on December 18, weren't entered as a purchase return until the supplier's credit memo arrived in January;
+  and that the journal includes $27,000 of goods a supplier shipped FOB shipping point on December 29,
+  still in transit at year-end. What purchases (net of returns) should the corrected rollforward report
+  for Year 2?
 choices:
 - id: A
-  text: $273,000
-  rationale: Leaves out the $52,000 of inventory Pendeen pledged as collateral for a loan. Pledging goods
-    as security doesn't transfer ownership, so they remain Pendeen's inventory.
+  text: $1,386,000
+  rationale: Removes the $27,000 of goods in transit at year-end. Shipped FOB shipping point, they became
+    Trewellard's when the supplier shipped them on December 29, so they are properly in Year 2 purchases.
 - id: B
-  text: $313,000
-  rationale: Leaves purchases recorded net of the $12,000 of discounts Pendeen didn't take. Because Pendeen
-    paid after the discount period, the $12,000 is a financing cost, not a permanent reduction of inventory
-    cost.
+  text: $1,413,000
+  rationale: Correct. $1,480,000 − $34,000 − $12,000 − $21,000; the in-transit goods stay in.
 - id: C
-  text: $325,000
-  rationale: Correct. $295,000 − $34,000 + $52,000 + $12,000.
+  text: $1,425,000
+  rationale: Keeps the $12,000 of discounts lost in purchases. Under the net method, inventory is recorded
+    at the discounted price, and discounts lost by paying late are a financing expense, not inventory
+    cost.
 - id: D
-  text: $359,000
-  rationale: Keeps the $34,000 of goods Pendeen holds on consignment from a supplier in inventory. Title
-    to consigned-in goods stays with the consignor until Pendeen sells them; they aren't Pendeen's inventory.
-answer: C
-explanation: Goods held on consignment from a supplier aren't Pendeen's inventory until Pendeen sells
-  them (ASC 606-10-55-80), so the $34,000 comes out. Pledging inventory as loan collateral doesn't change
-  who owns it, so the $52,000 of pledged goods belongs back in inventory. Discounts lost because an invoice
-  was paid late are a financing cost, not a reduction of inventory cost, so the $12,000 is restored. Corrected
-  inventory = $295,000 − $34,000 + $52,000 + $12,000 = $325,000.
+  text: $1,447,000
+  rationale: Keeps the $34,000 of consigned goods in purchases. Title stays with the supplier until Trewellard
+    sells them, so receiving them isn't a purchase.
+answer: B
+explanation: Consigned goods belong to the supplier until Trewellard sells them (ASC 606-10-55-79 to 55-80),
+  so the $34,000 isn't a purchase. Under the net method, purchases are recorded at the discounted price
+  and a discount lost by paying late is a financing expense, so the $12,000 comes out of purchases. The
+  goods returned on December 18 reduce Year 2 purchases (− $21,000), whenever the credit memo arrives.
+  Goods shipped FOB shipping point belong to Trewellard from the shipment date, so the $27,000 in transit
+  is properly a Year 2 purchase and stays. Corrected purchases = $1,480,000 − $34,000 − $12,000 − $21,000
+  = $1,413,000.
 variants:
-- stem: 'Trewellard''s perpetual inventory records show a Year 2 rollforward of beginning inventory $165,000,
-    purchases $1,120,000, and cost of goods sold $1,055,000, for a draft December 31 balance of $230,000.
-    Reviewing the count and the purchase records, the controller finds: the count includes $26,000 of
-    goods a supplier shipped to Trewellard on consignment, which Trewellard may return unsold; $40,000
-    of Trewellard''s own inventory, pledged as collateral for a bank loan, was removed from the inventory
-    account when the loan was obtained; and purchases are recorded under the net method, so $9,000 of
-    discounts on invoices Trewellard paid after the discount period, and so never took, reduced the recorded
-    cost of goods still on hand. What inventory should the corrected rollforward report at December 31,
-    Year 2?'
+- stem: St Just Builders Supply Co. uses a perpetual inventory system and records purchases net of cash
+    discounts. Its staff's Year 2 inventory rollforward shows beginning inventory of $165,000, purchases
+    (net of returns) of $1,120,000, cost of goods sold of $1,055,000 and ending inventory of $230,000;
+    the purchases figure is the purchases journal total. Testing that figure, the controller finds that
+    $26,000 of goods a supplier shipped to St Just on consignment, which St Just may return unsold, were
+    entered as purchases when they arrived; that when St Just paid invoices after the discount period,
+    it charged the $9,000 of discounts it lost to purchases; that goods costing $16,000, which St Just
+    shipped back to a supplier on December 18, weren't entered as a purchase return until the supplier's
+    credit memo arrived in January; and that the journal includes $22,000 of goods a supplier shipped
+    FOB shipping point on December 29, still in transit at year-end. What purchases (net of returns) should
+    the corrected rollforward report for Year 2?
   choices:
   - id: A
-    text: $213,000
-    rationale: Leaves out the $40,000 of inventory Trewellard pledged as collateral for a loan. Pledging
-      goods as security doesn't transfer ownership, so they remain Trewellard's inventory.
+    text: $1,069,000
+    rationale: Correct. $1,120,000 − $26,000 − $9,000 − $16,000; the in-transit goods stay in.
   - id: B
-    text: $230,000
-    rationale: Accepts the draft's $230,000, which includes the consigned-in goods, excludes the pledged
-      inventory and records purchases net of the unclaimed discount.
-  - id: C
-    text: $244,000
-    rationale: Leaves purchases recorded net of the $9,000 of discounts Trewellard didn't take. Because
-      Trewellard paid after the discount period, the $9,000 is a financing cost, not a permanent reduction
-      of inventory cost.
-  - id: D
-    text: $253,000
-    rationale: Correct. $230,000 − $26,000 + $40,000 + $9,000.
-  answer: D
-  explanation: Goods held on consignment from a supplier aren't Trewellard's inventory until Trewellard
-    sells them (ASC 606-10-55-80), so the $26,000 comes out. Pledging inventory as loan collateral doesn't
-    change who owns it, so the $40,000 of pledged goods belongs back in inventory. Discounts lost because
-    an invoice was paid late are a financing cost, not a reduction of inventory cost, so the $9,000 is
-    restored. Corrected inventory = $230,000 − $26,000 + $40,000 + $9,000 = $253,000.
-- stem: 'St''s perpetual inventory records show a Year 2 rollforward of beginning inventory $295,000,
-    purchases $1,860,000, and cost of goods sold $1,742,000, for a draft December 31 balance of $413,000.
-    Reviewing the count and the purchase records, the controller finds: the count includes $44,000 of
-    goods a supplier shipped to St on consignment, which St may return unsold; $66,000 of St''s own inventory,
-    pledged as collateral for a bank loan, was removed from the inventory account when the loan was obtained;
-    and purchases are recorded under the net method, so $15,000 of discounts on invoices St paid after
-    the discount period, and so never took, reduced the recorded cost of goods still on hand. What inventory
-    should the corrected rollforward report at December 31, Year 2?'
-  choices:
-  - id: A
-    text: $413,000
-    rationale: Accepts the draft's $413,000, which includes the consigned-in goods, excludes the pledged
-      inventory and records purchases net of the unclaimed discount.
-  - id: B
-    text: $435,000
-    rationale: Leaves purchases recorded net of the $15,000 of discounts St didn't take. Because St paid
-      after the discount period, the $15,000 is a financing cost, not a permanent reduction of inventory
+    text: $1,078,000
+    rationale: Keeps the $9,000 of discounts lost in purchases. Under the net method, inventory is recorded
+      at the discounted price, and discounts lost by paying late are a financing expense, not inventory
       cost.
   - id: C
-    text: $450,000
-    rationale: Correct. $413,000 − $44,000 + $66,000 + $15,000.
+    text: $1,085,000
+    rationale: Leaves out the $16,000 of goods returned to the supplier on December 18. The return happened
+      in Year 2, so Year 2 purchases (net of returns) are reduced even though the credit memo arrived
+      in January.
   - id: D
-    text: $494,000
-    rationale: Keeps the $44,000 of goods St holds on consignment from a supplier in inventory. Title
-      to consigned-in goods stays with the consignor until St sells them; they aren't St's inventory.
-  answer: C
-  explanation: Goods held on consignment from a supplier aren't St's inventory until St sells them (ASC
-    606-10-55-80), so the $44,000 comes out. Pledging inventory as loan collateral doesn't change who
-    owns it, so the $66,000 of pledged goods belongs back in inventory. Discounts lost because an invoice
-    was paid late are a financing cost, not a reduction of inventory cost, so the $15,000 is restored.
-    Corrected inventory = $413,000 − $44,000 + $66,000 + $15,000 = $450,000.
-- stem: 'Botallack''s perpetual inventory records show a Year 2 rollforward of beginning inventory $138,000,
-    purchases $940,000, and cost of goods sold $882,000, for a draft December 31 balance of $196,000.
-    Reviewing the count and the purchase records, the controller finds: the count includes $19,000 of
-    goods a supplier shipped to Botallack on consignment, which Botallack may return unsold; $31,000 of
-    Botallack''s own inventory, pledged as collateral for a bank loan, was removed from the inventory
-    account when the loan was obtained; and purchases are recorded under the net method, so $7,000 of
-    discounts on invoices Botallack paid after the discount period, and so never took, reduced the recorded
-    cost of goods still on hand. What inventory should the corrected rollforward report at December 31,
-    Year 2?'
+    text: $1,095,000
+    rationale: Keeps the $26,000 of consigned goods in purchases. Title stays with the supplier until
+      St Just sells them, so receiving them isn't a purchase.
+  answer: A
+  explanation: Consigned goods belong to the supplier until St Just sells them (ASC 606-10-55-79 to 55-80),
+    so the $26,000 isn't a purchase. Under the net method, purchases are recorded at the discounted price
+    and a discount lost by paying late is a financing expense, so the $9,000 comes out of purchases. The
+    goods returned on December 18 reduce Year 2 purchases (− $16,000), whenever the credit memo arrives.
+    Goods shipped FOB shipping point belong to St Just from the shipment date, so the $22,000 in transit
+    is properly a Year 2 purchase and stays. Corrected purchases = $1,120,000 − $26,000 − $9,000 − $16,000
+    = $1,069,000.
+- stem: Sennen Timber Co. uses a perpetual inventory system and records purchases net of cash discounts.
+    Its staff's Year 2 inventory rollforward shows beginning inventory of $295,000, purchases (net of
+    returns) of $1,860,000, cost of goods sold of $1,742,000 and ending inventory of $413,000; the purchases
+    figure is the purchases journal total. Testing that figure, the controller finds that $44,000 of goods
+    a supplier shipped to Sennen on consignment, which Sennen may return unsold, were entered as purchases
+    when they arrived; that when Sennen paid invoices after the discount period, it charged the $15,000
+    of discounts it lost to purchases; that goods costing $27,000, which Sennen shipped back to a supplier
+    on December 18, weren't entered as a purchase return until the supplier's credit memo arrived in January;
+    and that the journal includes $36,000 of goods a supplier shipped FOB shipping point on December 29,
+    still in transit at year-end. What purchases (net of returns) should the corrected rollforward report
+    for Year 2?
   choices:
   - id: A
-    text: $184,000
-    rationale: Leaves out the $31,000 of inventory Botallack pledged as collateral for a loan. Pledging
-      goods as security doesn't transfer ownership, so they remain Botallack's inventory.
+    text: $1,738,000
+    rationale: Removes the $36,000 of goods in transit at year-end. Shipped FOB shipping point, they became
+      Sennen's when the supplier shipped them on December 29, so they are properly in Year 2 purchases.
   - id: B
-    text: $196,000
-    rationale: Accepts the draft's $196,000, which includes the consigned-in goods, excludes the pledged
-      inventory and records purchases net of the unclaimed discount.
+    text: $1,774,000
+    rationale: Correct. $1,860,000 − $44,000 − $15,000 − $27,000; the in-transit goods stay in.
   - id: C
-    text: $215,000
-    rationale: Correct. $196,000 − $19,000 + $31,000 + $7,000.
+    text: $1,789,000
+    rationale: Keeps the $15,000 of discounts lost in purchases. Under the net method, inventory is recorded
+      at the discounted price, and discounts lost by paying late are a financing expense, not inventory
+      cost.
   - id: D
-    text: $234,000
-    rationale: Keeps the $19,000 of goods Botallack holds on consignment from a supplier in inventory.
-      Title to consigned-in goods stays with the consignor until Botallack sells them; they aren't Botallack's
-      inventory.
-  answer: C
-  explanation: Goods held on consignment from a supplier aren't Botallack's inventory until Botallack
-    sells them (ASC 606-10-55-80), so the $19,000 comes out. Pledging inventory as loan collateral doesn't
-    change who owns it, so the $31,000 of pledged goods belongs back in inventory. Discounts lost because
-    an invoice was paid late are a financing cost, not a reduction of inventory cost, so the $7,000 is
-    restored. Corrected inventory = $196,000 − $19,000 + $31,000 + $7,000 = $215,000.
+    text: $1,801,000
+    rationale: Leaves out the $27,000 of goods returned to the supplier on December 18. The return happened
+      in Year 2, so Year 2 purchases (net of returns) are reduced even though the credit memo arrived
+      in January.
+  answer: B
+  explanation: Consigned goods belong to the supplier until Sennen sells them (ASC 606-10-55-79 to 55-80),
+    so the $44,000 isn't a purchase. Under the net method, purchases are recorded at the discounted price
+    and a discount lost by paying late is a financing expense, so the $15,000 comes out of purchases.
+    The goods returned on December 18 reduce Year 2 purchases (− $27,000), whenever the credit memo arrives.
+    Goods shipped FOB shipping point belong to Sennen from the shipment date, so the $36,000 in transit
+    is properly a Year 2 purchase and stays. Corrected purchases = $1,860,000 − $44,000 − $15,000 − $27,000
+    = $1,774,000.
+- stem: St Buryan Supply Co. uses a perpetual inventory system and records purchases net of cash discounts.
+    Its staff's Year 2 inventory rollforward shows beginning inventory of $138,000, purchases (net of
+    returns) of $940,000, cost of goods sold of $882,000 and ending inventory of $196,000; the purchases
+    figure is the purchases journal total. Testing that figure, the controller finds that $19,000 of goods
+    a supplier shipped to St Buryan on consignment, which St Buryan may return unsold, were entered as
+    purchases when they arrived; that when St Buryan paid invoices after the discount period, it charged
+    the $7,000 of discounts it lost to purchases; that goods costing $13,000, which St Buryan shipped
+    back to a supplier on December 18, weren't entered as a purchase return until the supplier's credit
+    memo arrived in January; and that the journal includes $17,000 of goods a supplier shipped FOB shipping
+    point on December 29, still in transit at year-end. What purchases (net of returns) should the corrected
+    rollforward report for Year 2?
+  choices:
+  - id: A
+    text: $884,000
+    rationale: Removes the $17,000 of goods in transit at year-end. Shipped FOB shipping point, they became
+      St Buryan's when the supplier shipped them on December 29, so they are properly in Year 2 purchases.
+  - id: B
+    text: $901,000
+    rationale: Correct. $940,000 − $19,000 − $7,000 − $13,000; the in-transit goods stay in.
+  - id: C
+    text: $914,000
+    rationale: Leaves out the $13,000 of goods returned to the supplier on December 18. The return happened
+      in Year 2, so Year 2 purchases (net of returns) are reduced even though the credit memo arrived
+      in January.
+  - id: D
+    text: $920,000
+    rationale: Keeps the $19,000 of consigned goods in purchases. Title stays with the supplier until
+      St Buryan sells them, so receiving them isn't a purchase.
+  answer: B
+  explanation: Consigned goods belong to the supplier until St Buryan sells them (ASC 606-10-55-79 to
+    55-80), so the $19,000 isn't a purchase. Under the net method, purchases are recorded at the discounted
+    price and a discount lost by paying late is a financing expense, so the $7,000 comes out of purchases.
+    The goods returned on December 18 reduce Year 2 purchases (− $13,000), whenever the credit memo arrives.
+    Goods shipped FOB shipping point belong to St Buryan from the shipment date, so the $17,000 in transit
+    is properly a Year 2 purchase and stays. Corrected purchases = $940,000 − $19,000 − $7,000 − $13,000
+    = $901,000.

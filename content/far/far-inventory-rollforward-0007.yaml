@@ -8,134 +8,148 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 330-10 (inventory; abnormal costs)
-  - ASC 330-10-30 (purchase rebates and cost of inventory)
-  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
-stem: 'Hayle''s perpetual inventory records show a Year 2 rollforward of beginning inventory $340,000,
-  purchases $2,150,000, and cost of goods sold $2,015,000, for a draft December 31 balance of $475,000.
-  Reviewing the count, the controller finds: $21,000 of raw materials ruined in an equipment malfunction
-  during the year, included in the count at full cost; $38,000 of goods purchased under terms that passed
-  title to Hayle at shipment, which were sitting in a customs bonded warehouse awaiting clearance at year-end
-  and so weren''t included in the physical count; and a $16,000 volume purchase rebate, for which Hayle
-  met the purchase threshold before year-end but which the supplier hadn''t yet billed or recorded. What
-  inventory should the corrected rollforward report at December 31, Year 2?'
+  - ASC 330-10-35 (inventory write-downs; goods with no value)
+  - 'ASC 705-20 (consideration received from a vendor: volume rebates reduce the cost of purchases, allocated
+    to goods on hand and goods sold)'
+  - 'Inventory ownership: title passing at shipment'
+  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
+    solved and every number and distractor computed in code.
+stem: Before closing Year 2, Illogan Metals Supply Co.'s controller reviews the December 31 perpetual
+  inventory balance of $475,000. She finds that steel coils costing $21,000, ruined in August when a warehouse
+  sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods costing
+  $38,000, bought on terms that passed title to Illogan when the supplier shipped them in December, were
+  in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't been recorded
+  because the supplier's invoice arrived in January; and that Illogan's Year 2 purchases of one supplier's
+  alloy bar, $400,000 in all, reached that supplier's volume threshold for a 4% rebate on the year's purchases.
+  The supplier issued the credit memo in January, and Illogan hasn't recorded the rebate. Alloy bar costing
+  $150,000 from those purchases is still on hand at December 31; the rest has been sold. What net adjustment
+  should the controller make to the perpetual inventory balance?
 choices:
 - id: A
-  text: $438,000
-  rationale: Leaves out the $38,000 of goods sitting in the customs bonded warehouse. Title passed to
-    Hayle when the goods were shipped, so they are Hayle's inventory even though they hadn't yet cleared
-    customs and weren't in the physical count.
+  text: $27,000 decrease
+  rationale: Leaves out the $38,000 of goods in the bonded warehouse. Title passed to Illogan when the
+    supplier shipped them, so they are Illogan's inventory and the unrecorded purchase must be added,
+    cleared through customs or not.
 - id: B
-  text: $476,000
-  rationale: Correct. $475,000 − $21,000 + $38,000 − $16,000.
+  text: $1,000 increase
+  rationale: Takes the whole $16,000 rebate out of inventory. The rebate reduces the cost of all $400,000
+    of qualifying purchases, so only the share on goods still on hand, $6,000, reduces inventory; the
+    rest reduces cost of goods sold.
 - id: C
-  text: $492,000
-  rationale: Ignores the $16,000 volume purchase rebate Hayle earned by year-end but hadn't yet billed.
-    The rebate reduces the cost of the inventory still on hand.
+  text: $11,000 increase
+  rationale: Correct. + $38,000 − $21,000 − $6,000 (4% of the $150,000 of rebated goods still on hand).
 - id: D
-  text: $497,000
-  rationale: Keeps the $21,000 of raw materials ruined in an equipment malfunction at full cost. Abnormal
-    spoilage is expensed as incurred, not carried in inventory.
-answer: B
-explanation: Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized
-  in inventory (ASC 330-10-30), so the $21,000 comes out. The bonded-warehouse goods belong to Hayle once
-  title passed at shipment, even though they hadn't cleared customs and weren't physically counted, so
-  the $38,000 is added. The $16,000 rebate, earned before year-end, reduces the cost of the inventory
-  still on hand even though it hasn't been billed. Corrected inventory = $475,000 − $21,000 + $38,000
-  − $16,000 = $476,000.
+  text: $32,000 increase
+  rationale: Leaves the $21,000 of ruined coils in inventory. Goods with no resale or scrap value are
+    written off as a loss; they can't be carried at cost.
+answer: C
+explanation: 'The ruined coils have no value, so their $21,000 cost is written off (ASC 330-10-35). The
+  bonded-warehouse goods became Illogan''s when they were shipped, so the $38,000 purchase is recorded
+  and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): 4% × $400,000 =
+  $16,000 in all, of which the share on the $150,000 of alloy bar still on hand, 4% × $150,000 = $6,000,
+  reduces inventory and the remaining $10,000 reduces cost of goods sold. Net adjustment = $38,000 − $21,000
+  − $6,000 = $11,000, an increase.'
 variants:
-- stem: 'Camborne''s perpetual inventory records show a Year 2 rollforward of beginning inventory $410,000,
-    purchases $2,480,000, and cost of goods sold $2,322,000, for a draft December 31 balance of $568,000.
-    Reviewing the count, the controller finds: $25,000 of raw materials ruined in an equipment malfunction
-    during the year, included in the count at full cost; $44,000 of goods purchased under terms that passed
-    title to Camborne at shipment, which were sitting in a customs bonded warehouse awaiting clearance
-    at year-end and so weren''t included in the physical count; and a $20,000 volume purchase rebate,
-    for which Camborne met the purchase threshold before year-end but which the supplier hadn''t yet billed
-    or recorded. What inventory should the corrected rollforward report at December 31, Year 2?'
+- stem: Before closing Year 2, Tuckingmill Steel Co.'s controller reviews the December 31 perpetual inventory
+    balance of $568,000. She finds that steel coils costing $25,000, ruined in August when a warehouse
+    sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods
+    costing $44,000, bought on terms that passed title to Tuckingmill when the supplier shipped them in
+    December, were in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't
+    been recorded because the supplier's invoice arrived in January; and that Tuckingmill's Year 2 purchases
+    of one supplier's alloy bar, $500,000 in all, reached that supplier's volume threshold for a 3% rebate
+    on the year's purchases. The supplier issued the credit memo in January, and Tuckingmill hasn't recorded
+    the rebate. Alloy bar costing $200,000 from those purchases is still on hand at December 31; the rest
+    has been sold. What net adjustment should the controller make to the perpetual inventory balance?
   choices:
   - id: A
-    text: $523,000
-    rationale: Leaves out the $44,000 of goods sitting in the customs bonded warehouse. Title passed to
-      Camborne when the goods were shipped, so they are Camborne's inventory even though they hadn't yet
-      cleared customs and weren't in the physical count.
+    text: $4,000 increase
+    rationale: Takes the whole $15,000 rebate out of inventory. The rebate reduces the cost of all $500,000
+      of qualifying purchases, so only the share on goods still on hand, $6,000, reduces inventory; the
+      rest reduces cost of goods sold.
   - id: B
-    text: $567,000
-    rationale: Correct. $568,000 − $25,000 + $44,000 − $20,000.
+    text: $13,000 increase
+    rationale: Correct. + $44,000 − $25,000 − $6,000 (3% of the $200,000 of rebated goods still on hand).
   - id: C
-    text: $568,000
-    rationale: Accepts the draft's $568,000, which keeps the spoiled materials at cost, omits the bonded-warehouse
-      goods and ignores the rebate.
+    text: $19,000 increase
+    rationale: Ignores the volume rebate. Tuckingmill earned it in Year 2, so it reduces the cost of the
+      qualifying purchases, including the $200,000 still on hand, by $6,000.
   - id: D
-    text: $587,000
-    rationale: Ignores the $20,000 volume purchase rebate Camborne earned by year-end but hadn't yet billed.
-      The rebate reduces the cost of the inventory still on hand.
+    text: $38,000 increase
+    rationale: Leaves the $25,000 of ruined coils in inventory. Goods with no resale or scrap value are
+      written off as a loss; they can't be carried at cost.
   answer: B
-  explanation: Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized
-    in inventory (ASC 330-10-30), so the $25,000 comes out. The bonded-warehouse goods belong to Camborne
-    once title passed at shipment, even though they hadn't cleared customs and weren't physically counted,
-    so the $44,000 is added. The $20,000 rebate, earned before year-end, reduces the cost of the inventory
-    still on hand even though it hasn't been billed. Corrected inventory = $568,000 − $25,000 + $44,000
-    − $20,000 = $567,000.
-- stem: 'Redruth''s perpetual inventory records show a Year 2 rollforward of beginning inventory $255,000,
-    purchases $1,640,000, and cost of goods sold $1,538,000, for a draft December 31 balance of $357,000.
-    Reviewing the count, the controller finds: $16,000 of raw materials ruined in an equipment malfunction
-    during the year, included in the count at full cost; $29,000 of goods purchased under terms that passed
-    title to Redruth at shipment, which were sitting in a customs bonded warehouse awaiting clearance
-    at year-end and so weren''t included in the physical count; and a $12,000 volume purchase rebate,
-    for which Redruth met the purchase threshold before year-end but which the supplier hadn''t yet billed
-    or recorded. What inventory should the corrected rollforward report at December 31, Year 2?'
+  explanation: 'The ruined coils have no value, so their $25,000 cost is written off (ASC 330-10-35).
+    The bonded-warehouse goods became Tuckingmill''s when they were shipped, so the $44,000 purchase is
+    recorded and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): 3% ×
+    $500,000 = $15,000 in all, of which the share on the $200,000 of alloy bar still on hand, 3% × $200,000
+    = $6,000, reduces inventory and the remaining $9,000 reduces cost of goods sold. Net adjustment =
+    $44,000 − $25,000 − $6,000 = $13,000, an increase.'
+- stem: Before closing Year 2, Troon Alloys Co.'s controller reviews the December 31 perpetual inventory
+    balance of $342,000. She finds that steel coils costing $29,000, ruined in August when a warehouse
+    sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods
+    costing $16,000, bought on terms that passed title to Troon when the supplier shipped them in December,
+    were in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't been recorded
+    because the supplier's invoice arrived in January; and that Troon's Year 2 purchases of one supplier's
+    alloy bar, $300,000 in all, reached that supplier's volume threshold for a 5% rebate on the year's
+    purchases. The supplier issued the credit memo in January, and Troon hasn't recorded the rebate. Alloy
+    bar costing $120,000 from those purchases is still on hand at December 31; the rest has been sold.
+    What net adjustment should the controller make to the perpetual inventory balance?
   choices:
   - id: A
-    text: $357,000
-    rationale: Accepts the draft's $357,000, which keeps the spoiled materials at cost, omits the bonded-warehouse
-      goods and ignores the rebate.
+    text: $35,000 decrease
+    rationale: Leaves out the $16,000 of goods in the bonded warehouse. Title passed to Troon when the
+      supplier shipped them, so they are Troon's inventory and the unrecorded purchase must be added,
+      cleared through customs or not.
   - id: B
-    text: $358,000
-    rationale: Correct. $357,000 − $16,000 + $29,000 − $12,000.
+    text: $28,000 decrease
+    rationale: Takes the whole $15,000 rebate out of inventory. The rebate reduces the cost of all $300,000
+      of qualifying purchases, so only the share on goods still on hand, $6,000, reduces inventory; the
+      rest reduces cost of goods sold.
   - id: C
-    text: $370,000
-    rationale: Ignores the $12,000 volume purchase rebate Redruth earned by year-end but hadn't yet billed.
-      The rebate reduces the cost of the inventory still on hand.
+    text: $19,000 decrease
+    rationale: Correct. + $16,000 − $29,000 − $6,000 (5% of the $120,000 of rebated goods still on hand).
   - id: D
-    text: $374,000
-    rationale: Keeps the $16,000 of raw materials ruined in an equipment malfunction at full cost. Abnormal
-      spoilage is expensed as incurred, not carried in inventory.
-  answer: B
-  explanation: Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized
-    in inventory (ASC 330-10-30), so the $16,000 comes out. The bonded-warehouse goods belong to Redruth
-    once title passed at shipment, even though they hadn't cleared customs and weren't physically counted,
-    so the $29,000 is added. The $12,000 rebate, earned before year-end, reduces the cost of the inventory
-    still on hand even though it hasn't been billed. Corrected inventory = $357,000 − $16,000 + $29,000
-    − $12,000 = $358,000.
-- stem: 'Helston''s perpetual inventory records show a Year 2 rollforward of beginning inventory $298,000,
-    purchases $1,920,000, and cost of goods sold $1,801,000, for a draft December 31 balance of $417,000.
-    Reviewing the count, the controller finds: $18,000 of raw materials ruined in an equipment malfunction
-    during the year, included in the count at full cost; $33,000 of goods purchased under terms that passed
-    title to Helston at shipment, which were sitting in a customs bonded warehouse awaiting clearance
-    at year-end and so weren''t included in the physical count; and a $14,000 volume purchase rebate,
-    for which Helston met the purchase threshold before year-end but which the supplier hadn''t yet billed
-    or recorded. What inventory should the corrected rollforward report at December 31, Year 2?'
-  choices:
-  - id: A
-    text: $385,000
-    rationale: Leaves out the $33,000 of goods sitting in the customs bonded warehouse. Title passed to
-      Helston when the goods were shipped, so they are Helston's inventory even though they hadn't yet
-      cleared customs and weren't in the physical count.
-  - id: B
-    text: $417,000
-    rationale: Accepts the draft's $417,000, which keeps the spoiled materials at cost, omits the bonded-warehouse
-      goods and ignores the rebate.
-  - id: C
-    text: $418,000
-    rationale: Correct. $417,000 − $18,000 + $33,000 − $14,000.
-  - id: D
-    text: $436,000
-    rationale: Keeps the $18,000 of raw materials ruined in an equipment malfunction at full cost. Abnormal
-      spoilage is expensed as incurred, not carried in inventory.
+    text: $10,000 increase
+    rationale: Leaves the $29,000 of ruined coils in inventory. Goods with no resale or scrap value are
+      written off as a loss; they can't be carried at cost.
   answer: C
-  explanation: Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized
-    in inventory (ASC 330-10-30), so the $18,000 comes out. The bonded-warehouse goods belong to Helston
-    once title passed at shipment, even though they hadn't cleared customs and weren't physically counted,
-    so the $33,000 is added. The $14,000 rebate, earned before year-end, reduces the cost of the inventory
-    still on hand even though it hasn't been billed. Corrected inventory = $417,000 − $18,000 + $33,000
-    − $14,000 = $418,000.
+  explanation: 'The ruined coils have no value, so their $29,000 cost is written off (ASC 330-10-35).
+    The bonded-warehouse goods became Troon''s when they were shipped, so the $16,000 purchase is recorded
+    and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): 5% × $300,000
+    = $15,000 in all, of which the share on the $120,000 of alloy bar still on hand, 5% × $120,000 = $6,000,
+    reduces inventory and the remaining $9,000 reduces cost of goods sold. Net adjustment = $16,000 −
+    $29,000 − $6,000 = −$19,000, a decrease of $19,000.'
+- stem: Before closing Year 2, Praze Metals Co.'s controller reviews the December 31 perpetual inventory
+    balance of $418,000. She finds that steel coils costing $18,000, ruined in August when a warehouse
+    sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods
+    costing $33,000, bought on terms that passed title to Praze when the supplier shipped them in December,
+    were in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't been recorded
+    because the supplier's invoice arrived in January; and that Praze's Year 2 purchases of one supplier's
+    alloy bar, $450,000 in all, reached that supplier's volume threshold for a 4% rebate on the year's
+    purchases. The supplier issued the credit memo in January, and Praze hasn't recorded the rebate. Alloy
+    bar costing $125,000 from those purchases is still on hand at December 31; the rest has been sold.
+    What net adjustment should the controller make to the perpetual inventory balance?
+  choices:
+  - id: A
+    text: $23,000 decrease
+    rationale: Leaves out the $33,000 of goods in the bonded warehouse. Title passed to Praze when the
+      supplier shipped them, so they are Praze's inventory and the unrecorded purchase must be added,
+      cleared through customs or not.
+  - id: B
+    text: $10,000 increase
+    rationale: Correct. + $33,000 − $18,000 − $5,000 (4% of the $125,000 of rebated goods still on hand).
+  - id: C
+    text: $15,000 increase
+    rationale: Ignores the volume rebate. Praze earned it in Year 2, so it reduces the cost of the qualifying
+      purchases, including the $125,000 still on hand, by $5,000.
+  - id: D
+    text: $28,000 increase
+    rationale: Leaves the $18,000 of ruined coils in inventory. Goods with no resale or scrap value are
+      written off as a loss; they can't be carried at cost.
+  answer: B
+  explanation: 'The ruined coils have no value, so their $18,000 cost is written off (ASC 330-10-35).
+    The bonded-warehouse goods became Praze''s when they were shipped, so the $33,000 purchase is recorded
+    and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): 4% × $450,000
+    = $18,000 in all, of which the share on the $125,000 of alloy bar still on hand, 4% × $125,000 = $5,000,
+    reduces inventory and the remaining $13,000 reduces cost of goods sold. Net adjustment = $33,000 −
+    $18,000 − $5,000 = $10,000, an increase.'
