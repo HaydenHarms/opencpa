@@ -6,15 +6,19 @@ investigate unreconciled cash x2, II.B.c receivables rollforward x2, II.C.c inve
 II.D.f PP&E rollforward x1), each changing at least two component events from every existing item on its
 task and using a stem format none of them uses. 4 Application items on the four of these Area II tasks
 with the fewest existing items chosen for topic spread: II.F.c (cloud computing), II.G.c (exit/disposal
-liabilities), II.H.1c (bond interest, with detachable warrants) and II.H.2a (debt covenant, interest
-coverage). Target mix: 9 Analysis / 4 Application, all Area II. Scope and skill tags follow the AICPA CPA
-Exam Blueprints effective January 2026.
+liabilities), II.H.1c (bond interest, with detachable warrants) and II.H.2a (debt covenant). Target mix:
+9 Analysis / 4 Application, all Area II. Scope and skill tags follow the AICPA CPA Exam Blueprints
+effective January 2026.
+
+Revision 2 (2026-10-05) applies the blind verifier's required fixes and every gate finding (gate: 47.4%,
+8 major, 4 wrong keys). Eight items were rebuilt with new events and new stem formats; the other five were
+revised. See docs/reviews/far-batch-15.md. Items are written as `status: draft` until the gate re-passes.
 
 Every numeric answer and distractor is computed in code (Decimal, rounded half up). Each item is a
-builder: parameter set 0 is the reviewed item and sets 1-3 become its variants; every family moves the
-key's letter across versions; parameter set 0 shows the distractor for the item's central twist.
+builder: parameter set 0 is the item and sets 1-3 become its variants; every family moves the key's letter
+across versions; parameter set 0 shows the distractor for the item's central twist.
 
-Run: python scripts/batches/far-batch-15.py [--dry-run]
+Run: python scripts/batches/far-batch-15.py [--dry-run]   (B15_SCRATCH=<dir> also writes the blind file)
 """
 import json
 import os
@@ -27,9 +31,11 @@ from common import AN, AP, attach_variants, audit, finalize, fix_articles, varia
 from variants import m, pick, rd  # noqa: E402
 
 A2 = "Area II — Select Balance Sheet Accounts"
-NOTE = "Batch 15. Written from scratch; answers solved and every number and distractor computed in code."
+NOTE = ("Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers "
+        "solved and every number and distractor computed in code.")
 CONTENT = os.path.join(os.path.dirname(__file__), "..", "..", "content", "far")
 SCRATCH = os.environ.get("B15_SCRATCH")
+STATUS = "draft"  # served only after the review gate re-passes
 
 
 def family(id, area, topic, skill, refs, build, params, twist, asof=None):
@@ -38,7 +44,7 @@ def family(id, area, topic, skill, refs, build, params, twist, asof=None):
     `twist` names the pool distractor for the item's central twist; parameter set 0 must show it."""
     assert twist in params[0]["use"], f"{id}: version 0 doesn't show the central-twist distractor {twist}"
     base = build(params[0])
-    review = dict(status="reviewed", references=refs, notes=NOTE)
+    review = dict(status=STATUS, references=refs, notes=NOTE)
     if asof:
         review["asOf"] = asof
     it = dict(id=id, type="mcq", blueprint=dict(section="FAR", area=area, topic=topic, skill=skill),
@@ -55,12 +61,12 @@ def family(id, area, topic, skill, refs, build, params, twist, asof=None):
 
 def repeats(label, v):
     """Report any dollar amount that appears more than once in a stem, or a choice that equals a stem amount."""
-    amts = re.findall(r"[$][0-9,]+(?:[.][0-9]+)?", v["stem"])
+    amts = [a.rstrip(",") for a in re.findall(r"[$][0-9,]+(?:[.][0-9]+)?", v["stem"])]
     dup = sorted({a for a in amts if amts.count(a) > 1})
     if dup:
         print(f"REPEAT {label}: stem repeats {', '.join(dup)}", file=sys.stderr)
     for c in v["choices"]:
-        for a in re.findall(r"[$][0-9,]+(?:[.][0-9]+)?", c["text"]):
+        for a in [x.rstrip(",") for x in re.findall(r"[$][0-9,]+(?:[.][0-9]+)?", c["text"])]:
             if a in amts:
                 print(f"REPEAT {label}: choice {a} equals a stem amount", file=sys.stderr)
 
@@ -78,8 +84,9 @@ def spacing(label, v):
             print(f"CLOSE {label}: {a:,.2f} and {b:,.2f}", file=sys.stderr)
 
 
-def short(name):
-    return name.split()[0]
+def short(p):
+    """The company's short name: given explicitly (`s`) or the first word of a one-word place name."""
+    return p.get("s") or p["co"].split()[0]
 
 
 def distinct(pool, key):
@@ -96,423 +103,498 @@ def build(pool, key, use):
     return pick(pool, key, use)
 
 
-def ratio(x):
-    """A ratio to two decimal places, no dollar sign."""
-    return str(rd(x, "0.01"))
+def signed(v, up, down):
+    """'$1,400 understated' / '$620 overstated': a nonzero amount with its direction word."""
+    v = D(v)
+    assert v != 0
+    return f"{m(abs(v))} {up if v > 0 else down}"
+
+
+MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+          "November", "December"]
+LAST = {1: 31, 2: 28, 3: 31, 4: 30, 5: 31, 6: 30, 7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
+
+
+def month_end(mo):
+    mo = (mo - 1) % 12 + 1
+    return f"{MONTHS[mo - 1]} {LAST[mo]}"
 
 
 # ── Area II Analysis: II.A.b reconcile the bank balance to the general ledger ────────────────
 
 
 def bank_recon_stop(p):
-    co, s = p["co"], short(p["co"])
-    key_v = p["BB"] + p["DIT"] - p["OC"]
+    """Note collected (principal plus interest), card-processor fee, and a stopped check that sits on both
+    sides: the books still show it as paid and the bookkeeper's outstanding list still includes it."""
+    co, s = p["co"], short(p)
+    NR = p["NRp"] + p["NRi"]
     fee = p["CCg"] - p["CCn"]
-    GB = key_v - p["NR"] + fee - p["SP"]
+    OCL = p["OC"] + p["SP"]
+    key_v = p["BB"] + p["DIT"] - p["OC"]
+    GB = key_v - NR + fee - p["SP"]
     assert fee > 0 and GB > 0
     pool = {
-        "no_nr": (m(key_v - p["NR"]), f"Leaves out the {m(p['NR'])} note receivable the bank collected for {s}, including interest, which the books haven't recorded."),
-        "no_fee": (m(key_v + fee), f"Leaves the {m(p['CCg'])} card-sale deposit at its gross amount. The processor deposited only {m(p['CCn'])} after its {m(fee)} discount fee, which {s} hasn't recorded."),
-        "no_stop": (m(key_v - p["SP"]), f"Leaves the {m(p['SP'])} stopped check recorded as a disbursement, even though the bank never paid it."),
-        "draft": (m(GB + p["NR"]), f"Records only the {m(p['NR'])} note collected, without correcting the card-sale deposit or reversing the stopped check."),
+        "no_nr": (m(key_v - NR), f"Leaves out the {m(NR)} the bank collected on {s}'s note receivable ({m(p['NRp'])} of principal and {m(p['NRi'])} of interest), which the books haven't recorded."),
+        "nr_principal": (m(key_v - p["NRi"]), f"Records only the {m(p['NRp'])} principal of the note the bank collected. The bank credited {m(NR)}, including {m(p['NRi'])} of interest that {s} also hasn't recorded."),
+        "no_fee": (m(key_v + fee), f"Leaves the card-sale deposit at its gross {m(p['CCg'])}. The processor deposited only {m(p['CCn'])} after its {m(fee)} discount fee, which {s} hasn't recorded."),
+        "no_stop": (m(key_v - p["SP"]), f"Treats check #{p['chk']} as a valid payment, either by leaving it on the outstanding list (bank side) or by leaving its {m(p['SP'])} disbursement in the books (book side); both give this amount. The bank has stopped the check and will never pay it, so it comes off the outstanding list and the disbursement is reversed."),
     }
-    key = (m(key_v), f"Correct. {m(p['BB'])} + {m(p['DIT'])} − {m(p['OC'])} (bank side) = {m(GB)} + {m(p['NR'])} − {m(fee)} + {m(p['SP'])} (book side).")
+    key = (m(key_v), f"Correct. Bank side: {m(p['BB'])} + {m(p['DIT'])} − ({m(OCL)} − {m(p['SP'])}) = {m(key_v)}. Book side: {m(GB)} + {m(NR)} − {m(fee)} + {m(p['SP'])} = {m(key_v)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""While preparing {co}'s December 31 bank reconciliation, the accountant finds that the bank collected a {m(p['NR'])} note receivable on {s}'s behalf, including interest, which hasn't been recorded in the cash account; that a {m(p['CCg'])} batch of credit-card sales was deposited by the processor net of its {m(fee)} discount fee, though {s} recorded the deposit at the full {m(p['CCg'])} sale amount; and that check #{p['chk']}, for {m(p['SP'])}, on which {s} placed a stop-payment order after a vendor dispute, is still recorded as a disbursement even though the bank never paid it. The bank statement also lists deposits in transit of {m(p['DIT'])} and outstanding checks (other than #{p['chk']}) totaling {m(p['OC'])}. If the bank statement shows a balance of {m(p['BB'])} and the general ledger cash account shows {m(GB)}, what is {s}'s correct cash balance at December 31?""",
+        f"""{co}'s December 31 bank statement shows a balance of {m(p['BB'])}, and its general ledger cash account shows {m(GB)}. The bookkeeper's reconciliation lists deposits in transit of {m(p['DIT'])} and outstanding checks of {m(OCL)}. Reviewing the statement and the reconciliation, the accountant finds that the bank collected a note receivable for {s}, crediting the account with {m(p['NRp'])} of principal and {m(p['NRi'])} of interest, which {s} hasn't recorded; that a credit-card processor deposited a batch of card sales net of its {m(fee)} discount fee, while {s} recorded the deposit at the {m(p['CCg'])} gross sale amount; and that the outstanding checks include check #{p['chk']}, for {m(p['SP'])}, on which {s} placed a stop-payment order after a vendor dispute. The bank has confirmed the stop-payment order, and {s}'s books still show the check as a disbursement. What is {s}'s correct cash balance at December 31?""",
         choices, ans,
-        f"""The bank side is {m(p['BB'])} + {m(p['DIT'])} − {m(p['OC'])} = {m(key_v)}. On the book side: the {m(p['NR'])} note the bank collected is added; the card-sale deposit was recorded at {m(p['CCg'])} but only {m(p['CCn'])} was actually received, so cash is reduced by the {m(fee)} fee; and the stopped check never left the bank, so its {m(p['SP'])} disbursement is reversed (added back): {m(GB)} + {m(p['NR'])} − {m(fee)} + {m(p['SP'])} = {m(key_v)}.""",
+        f"""Bank side: the stopped check will never clear, so it comes off the outstanding list, leaving {m(OCL)} − {m(p['SP'])} = {m(p['OC'])} of checks outstanding: {m(p['BB'])} + {m(p['DIT'])} − {m(p['OC'])} = {m(key_v)}. Book side: add the {m(NR)} the bank collected on the note ({m(p['NRp'])} + {m(p['NRi'])}); subtract the {m(fee)} processor fee, because only {m(p['CCn'])} of the {m(p['CCg'])} recorded was actually deposited; and add back the {m(p['SP'])} disbursement for the stopped check, which never left the account: {m(GB)} + {m(NR)} − {m(fee)} + {m(p['SP'])} = {m(key_v)}. Both sides agree at {m(key_v)}.""",
     )
 
 
 def bank_recon_error(p):
-    co, s = p["co"], short(p["co"])
-    key_v = p["BB"] + p["DIT"] - p["OC"] - p["BE"]
-    GB = key_v - p["INT"]
+    """Bank error (another customer's deposit), uncredited interest and an unrecorded automatic payment,
+    and a postdated customer check counted both in deposits in transit and in book cash."""
+    co, s = p["co"], short(p)
+    key_v = p["BB"] + p["DIT"] - p["PD"] - p["OC"] - p["BE"]
+    GB = key_v - p["INT"] + p["AD"] + p["PD"]
     assert GB > 0
     pool = {
-        "no_be": (m(key_v + p["BE"]), f"Leaves the {m(p['BE'])} deposit that the bank credited to {s}'s account in error in the bank balance. It belongs to another of the bank's customers and must be removed."),
-        "no_int": (m(GB), f"Leaves out the {m(p['INT'])} of interest the bank credited on the account, which {s} hasn't recorded."),
-        "noadj_wrong": (m(key_v + p["STALE"]), f"Removes the {m(p['STALE'])} check {s} wrote and mailed on December 29 from the outstanding list because the payee hadn't cashed it by year-end. A check mailed before year-end stays outstanding until it clears, however long that takes; no adjustment is needed."),
-        "draft": (m(key_v + p["BE"] - p["INT"]), f"Corrects neither the bank's {m(p['BE'])} misdirected deposit nor the uncredited {m(p['INT'])} of interest."),
+        "no_be": (m(key_v + p["BE"]), f"Leaves the {m(p['BE'])} deposit the bank credited to {s}'s account in error in the bank balance. It belongs to another of the bank's customers and must be removed."),
+        "no_pd": (m(key_v + p["PD"]), f"Counts the customer's {m(p['PD'])} postdated check as cash. A check dated after year-end can't be deposited until its date, so it is still a receivable at December 31; it comes out of deposits in transit and out of book cash."),
+        "no_int": (m(key_v - p["INT"]), f"Leaves out the {m(p['INT'])} of interest the bank credited on the account, which {s} hasn't recorded."),
+        "no_ad": (m(key_v + p["AD"]), f"Leaves out the {m(p['AD'])} automatic payment to the utility company that the bank deducted under {s}'s standing authorization, which {s} hasn't recorded."),
     }
-    key = (m(key_v), f"Correct. {m(p['BB'])} + {m(p['DIT'])} − {m(p['OC'])} − {m(p['BE'])} (bank side) = {m(GB)} + {m(p['INT'])} (book side).")
+    key = (m(key_v), f"Correct. Bank side: {m(p['BB'])} + ({m(p['DIT'])} − {m(p['PD'])}) − {m(p['OC'])} − {m(p['BE'])} = {m(key_v)}. Book side: {m(GB)} + {m(p['INT'])} − {m(p['AD'])} − {m(p['PD'])} = {m(key_v)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}'s December 31 bank statement shows a balance of {m(p['BB'])}, which includes a {m(p['BE'])} deposit the bank credited to {s}'s account in error; the deposit belongs to another of the bank's customers. The statement also shows {m(p['INT'])} of interest the bank credited on the account, which {s} hasn't recorded. Deposits in transit total {m(p['DIT'])} and outstanding checks total {m(p['OC'])}, including a {m(p['STALE'])} check {s} wrote and mailed to a supplier on December 29 that the supplier had not yet cashed by December 31. {s}'s general ledger cash account shows {m(GB)}. What is {s}'s correct cash balance at December 31?""",
+        f"""{co}'s December 31 bank statement shows a balance of {m(p['BB'])}. It includes a {m(p['BE'])} deposit that belongs to another of the bank's customers but was credited to {s}'s account, {m(p['INT'])} of interest the bank credited for the quarter, and a {m(p['AD'])} automatic payment to the utility company that the bank deducted under {s}'s standing authorization; {s} hasn't recorded the interest or the payment. {s}'s list of deposits in transit totals {m(p['DIT'])}. It includes a {m(p['PD'])} check that a customer handed over on December 30, dated January 8 of the following year, which {s} recorded as a December 30 cash receipt and will deposit on its date. Outstanding checks total {m(p['OC'])}, and {s}'s general ledger cash account shows {m(GB)}. What is {s}'s correct cash balance at December 31?""",
         choices, ans,
-        f"""Bank side: {m(p['BB'])} + {m(p['DIT'])} − {m(p['OC'])} − {m(p['BE'])} (removing the bank's misdirected deposit) = {m(key_v)}. Book side: {m(GB)} + {m(p['INT'])} (the uncredited interest) = {m(key_v)}. The {m(p['STALE'])} check mailed before year-end properly stays on the outstanding list until the bank pays it; the delay in cashing it, by itself, calls for no adjustment.""",
+        f"""Bank side: remove the {m(p['BE'])} deposit the bank credited to {s} in error, and take the postdated {m(p['PD'])} check out of deposits in transit, because it can't be deposited until January: {m(p['BB'])} + ({m(p['DIT'])} − {m(p['PD'])}) − {m(p['OC'])} − {m(p['BE'])} = {m(key_v)}. Book side: add the {m(p['INT'])} of interest, subtract the {m(p['AD'])} automatic payment, and reverse the {m(p['PD'])} receipt, since a postdated check is still a receivable at year-end: {m(GB)} + {m(p['INT'])} − {m(p['AD'])} − {m(p['PD'])} = {m(key_v)}. Both sides agree at {m(key_v)}.""",
     )
 
 
 # ── Area II Analysis: II.A.c investigate unreconciled cash balances ──────────────────────────
 
 
-def cash_unrecon_wire(p):
-    co, s = p["co"], short(p["co"])
-    key_v = p["ABB"]
-    ABK = key_v + p["WIRE"] + p["FEE"] - p["DUP"]
+def cash_unrecon_shortage(p):
+    """Both sides of the reconciliation are wrong; the untraced remainder is the cash shortage asked for."""
+    co, s = p["co"], short(p)
+    bank_ok = p["ABB"] - p["DD"]
+    ABK = bank_ok + p["SH"] + p["WIRE"] - p["DUP"]
+    diff = ABK - p["ABB"]
+    book_ok = ABK - p["WIRE"] + p["DUP"]
+    key_v = book_ok - bank_ok
+    assert key_v == p["SH"] and diff > 0 and p["SH"] > p["DD"] and p["SH"] > p["DUP"]
     pool = {
-        "no_wire": (m(key_v + p["WIRE"]), f"Keeps the {m(p['WIRE'])} wire transfer as a collection. The customer's bank sent it to another company's account, so {s} never received it."),
-        "no_fee": (m(key_v + p["FEE"]), f"Leaves out the {m(p['FEE'])} fee the bank charged for honoring {s}'s stop-payment request, which hasn't been recorded."),
-        "no_dup": (m(key_v - p["DUP"]), f"Leaves the {m(p['DUP'])} petty-cash replenishment check recorded twice in the cash disbursements journal."),
-        "draft": (m(ABK), f"Accepts the book side's {m(ABK)}, which keeps the misdirected wire, omits the stop-payment fee and leaves the duplicate disbursement."),
+        "no_dd": (m(key_v - p["DD"]), f"Accepts the reconciliation's {m(p['ABB'])} adjusted bank balance. The {m(p['DD'])} deposit of November 27 already appears on the November statement, so counting it again as a deposit in transit overstates the bank side by {m(p['DD'])}."),
+        "no_wire": (m(key_v + p["WIRE"]), f"Leaves the {m(p['WIRE'])} wire in book cash. The customer's bank sent it to another company's account, so {s} never received it and the receipt must be reversed (the customer still owes the amount)."),
+        "no_dup": (m(key_v - p["DUP"]), f"Leaves the {m(p['DUP'])} petty-cash check recorded twice. The duplicate entry understates book cash, so reversing it raises the book side by {m(p['DUP'])}."),
+        "whole": (m(diff), f"Writes off the whole {m(diff)} difference without first correcting the double-counted deposit, the misdirected wire and the duplicate disbursement."),
     }
-    key = (m(key_v), f"Correct. {m(ABK)} − {m(p['WIRE'])} − {m(p['FEE'])} + {m(p['DUP'])} = {m(key_v)}, agreeing with the adjusted bank balance.")
+    key = (m(key_v), f"Correct. Corrected book balance {m(ABK)} − {m(p['WIRE'])} + {m(p['DUP'])} = {m(book_ok)}; corrected bank balance {m(p['ABB'])} − {m(p['DD'])} = {m(bank_ok)}; shortage = {m(book_ok)} − {m(bank_ok)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}'s bank reconciliation, after deposits in transit and outstanding checks, shows an adjusted bank balance of {m(key_v)} at November 30. Its general ledger cash account, after recording the bank's service charges and collections already identified, shows {m(ABK)}, an unreconciled difference of {m(ABK - key_v)}. Investigating, the controller finds: a {m(p['WIRE'])} wire transfer that a customer's remittance advice said was sent to pay its account was actually misdirected by the customer's bank to another company's account, and was never credited to {s}'s account, though the collections department recorded it as received; a {m(p['FEE'])} fee the bank charged for honoring {s}'s stop-payment request on an earlier check has not been recorded; and a {m(p['DUP'])} petty-cash replenishment check was recorded twice in the cash disbursements journal. What is {s}'s correct cash balance at November 30?""",
+        f"""{co}'s accountant could not reconcile the November 30 bank statement. Her reconciliation shows an adjusted bank balance of {m(p['ABB'])}, after adding deposits in transit and subtracting outstanding checks, while the general ledger cash account, after recording the bank's charges and credits, shows {m(ABK)}. The controller traces the {m(diff)} difference and finds: the deposits in transit include a {m(p['DD'])} deposit made on November 27, which the bank credited on November 28 and which appears on the November statement; a {m(p['WIRE'])} wire transfer, recorded as received because a customer's remittance advice said it had been sent, was misdirected by the customer's bank to another company's account and never reached {s}; and a {m(p['DUP'])} check to replenish petty cash was entered twice in the cash disbursements journal. No other errors can be found, and {s} will write off whatever difference remains as a cash shortage. What cash shortage should {s} record?""",
         choices, ans,
-        f"""The adjusted bank balance, after deposits in transit and outstanding checks, is already correct at {m(key_v)}. On the book side: the {m(p['WIRE'])} wire was never actually received, since the customer's bank sent it to the wrong account, so it comes out; the {m(p['FEE'])} stop-payment fee reduces cash and hasn't been recorded; and the duplicate {m(p['DUP'])} disbursement overstated total disbursements, so it is added back: {m(ABK)} − {m(p['WIRE'])} − {m(p['FEE'])} + {m(p['DUP'])} = {m(key_v)}.""",
+        f"""Correct each side first. Bank side: the {m(p['DD'])} deposit is already in the statement balance, so it isn't in transit: {m(p['ABB'])} − {m(p['DD'])} = {m(bank_ok)}, the true cash balance. Book side: reverse the {m(p['WIRE'])} wire that never arrived and reverse the duplicate {m(p['DUP'])} disbursement: {m(ABK)} − {m(p['WIRE'])} + {m(p['DUP'])} = {m(book_ok)}. The books still show {m(book_ok)} − {m(bank_ok)} = {m(key_v)} more cash than the bank holds, and with no other error to be found, that is the cash shortage to write off.""",
     )
 
 
-def cash_unrecon_je(p):
-    co, s = p["co"], short(p["co"])
-    key_v = p["ABB"]
-    two_dep = 2 * p["DEP"]
-    ABK = key_v + p["INSUR"] - two_dep + p["CF"]
+def cash_unrecon_misstated(p):
+    """A bank encoding error on one side, three book errors on the other; the ask is the direction and size
+    of the general ledger's misstatement."""
+    co, s = p["co"], short(p)
+    E = p["CKe"] - p["CK"]
+    T = p["BB"] + p["DIT"] - p["OC"] + E
+    GB = T + p["INSUR"] - 2 * p["DEP"] + p["CF"]
+    key_v = T - GB  # positive: the ledger is understated
+    draft = (p["BB"] + p["DIT"] - p["OC"]) - GB
+    assert E > 0 and key_v > 0 and GB > 0
+    U, O = "understated", "overstated"
     pool = {
-        "no_insur": (m(key_v + p["INSUR"]), f"Leaves out the {m(p['INSUR'])} insurance premium the bank auto-debited under a standing authorization, which {s} hasn't recorded."),
-        "no_je": (m(key_v - p["DEP"]), f"Adds back only the {m(p['DEP'])} deposit itself. Because the deposit was recorded in the disbursements journal instead of the receipts journal, cash was reduced when it should have been increased, a {m(two_dep)} swing that must be corrected in full."),
-        "no_cf": (m(key_v + p["CF"]), f"Leaves the {m(p['CF'])} counterfeit bill in the recorded deposit. The bank didn't credit it, and {s} hasn't yet written it off."),
-        "draft": (m(ABK), f"Accepts the book side's {m(ABK)}, which keeps the insurance debit unrecorded, corrects the misposted deposit by only half its effect and leaves the counterfeit bill in cash."),
+        "no_je": (signed(p["DEP"] - p["INSUR"] - p["CF"], U, O), f"Corrects the misposted {m(p['DEP'])} deposit by only {m(p['DEP'])}. Recording a receipt in the disbursements journal reduced cash by {m(p['DEP'])} when it should have increased it by {m(p['DEP'])}, so the books are {m(2 * p['DEP'])} too low on that item."),
+        "no_insur": (signed(2 * p["DEP"] - p["CF"], U, O), f"Leaves out the {m(p['INSUR'])} insurance premium the bank deducted under a standing authorization, which {s} hasn't recorded."),
+        "no_cf": (signed(2 * p["DEP"] - p["INSUR"], U, O), f"Leaves the {m(p['CF'])} counterfeit bill in book cash. The bank didn't credit it, so it was never cash in the account."),
+        "no_be": (signed(draft, U, O), f"Compares the ledger with the bank balance plus deposits in transit less outstanding checks, {m(p['BB'] + p['DIT'] - p['OC'])}, without correcting the bank's error: the bank charged check #{p['chk']} at {m(p['CKe'])} instead of the {m(p['CK'])} written on it, so the bank side is {m(E)} too low."),
     }
-    key = (m(key_v), f"Correct. {m(ABK)} + {m(p['INSUR'])} − {m(two_dep)} + {m(p['CF'])} = {m(key_v)}, agreeing with the adjusted bank balance.")
+    key = (signed(key_v, U, O), f"Correct. Correct cash is {m(p['BB'])} + {m(p['DIT'])} − {m(p['OC'])} + {m(E)} = {m(T)}; the ledger's {m(GB)} is {m(key_v)} lower. Book-side check: {m(GB)} − {m(p['INSUR'])} + {m(2 * p['DEP'])} − {m(p['CF'])} = {m(T)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}'s bank reconciliation shows an adjusted bank balance of {m(key_v)} at October 31. Its general ledger cash account shows {m(ABK)}, an unreconciled difference of {m(ABK - key_v)}. Investigating, the controller finds: a {m(p['INSUR'])} insurance premium that the bank auto-debited under a standing authorization has not been recorded; a {m(p['DEP'])} cash deposit was recorded in the cash disbursements journal instead of the cash receipts journal; and a {m(p['CF'])} bill included in an earlier deposit turned out to be counterfeit, which the bank did not credit and which {s} has not yet written off. What is {s}'s correct cash balance at October 31?""",
+        f"""Internal audit is testing {co}'s October 31 cash. The bank statement shows {m(p['BB'])}, deposits in transit total {m(p['DIT'])}, outstanding checks total {m(p['OC'])}, and the general ledger cash account shows {m(GB)}; the bookkeeper's reconciliation does not balance. The auditors find that the bank charged check #{p['chk']}, written and recorded for {m(p['CK'])}, against the account at {m(p['CKe'])} and has agreed to correct the error; that a {m(p['INSUR'])} insurance premium the bank deducted under {s}'s standing authorization hasn't been recorded; that a {m(p['DEP'])} deposit of customer receipts was entered in the cash disbursements journal instead of the cash receipts journal; and that a {m(p['CF'])} bill in an earlier deposit was counterfeit, so the bank didn't credit it, and {s} hasn't written it off. Before any correction, by what amount, and in which direction, is {s}'s general ledger cash balance misstated at October 31?""",
         choices, ans,
-        f"""The {m(p['INSUR'])} auto-debited premium reduces book cash and hasn't been recorded. Recording the {m(p['DEP'])} deposit in the disbursements journal instead of the receipts journal reduced cash when it should have increased it, a {m(two_dep)} swing to correct. The {m(p['CF'])} counterfeit bill was never real cash and must be written off. {m(ABK)} + {m(p['INSUR'])} − {m(two_dep)} + {m(p['CF'])} = {m(key_v)}.""",
+        f"""Correct cash comes from the bank side once the bank's error is fixed: the bank charged {m(p['CKe'])} for a {m(p['CK'])} check, so {m(E)} goes back: {m(p['BB'])} + {m(p['DIT'])} − {m(p['OC'])} + {m(E)} = {m(T)}. The book side confirms it: subtract the {m(p['INSUR'])} premium; add {m(2 * p['DEP'])} for the deposit entered as a disbursement (removing the wrong {m(p['DEP'])} reduction and recording the {m(p['DEP'])} receipt); and subtract the {m(p['CF'])} counterfeit bill: {m(GB)} − {m(p['INSUR'])} + {m(2 * p['DEP'])} − {m(p['CF'])} = {m(T)}. The ledger shows {m(GB)}, which is {m(key_v)} below the correct {m(T)}, so it is understated by {m(key_v)}.""",
     )
 
 
 # ── Area II Analysis: II.B.c prepare a rollforward of trade receivables ──────────────────────
 
 
-def ar_rollforward_recourse(p):
-    co, s = p["co"], short(p["co"])
-    E_draft = p["B"] + p["Rv"] - p["Cc"] - p["Wo"]
-    key_v = E_draft + p["Rec"] - p["BH"] - p["Reb"]
+def ar_ledger_postings(p):
+    """Control-account postings: a transfer of receivables that can't be a sale, a bill-and-hold invoice that
+    isn't a receivable yet, and cash sales posted through AR (no net effect)."""
+    co, s = p["co"], short(p)
+    E = p["B"] + p["Rv"] - p["Cc"] - p["Wo"] - p["Rec"]
+    key_v = E + p["Rec"] - p["BH"]
     pool = {
-        "no_rec": (m(key_v - p["Rec"]), f"Leaves the {m(p['Rec'])} of receivables factored with recourse out of the rollforward. Because {s} kept the risk of nonpayment, the transfer doesn't qualify as a sale; the receivables, and an offsetting liability, stay on the books."),
-        "no_bh": (m(key_v + p["BH"]), f"Keeps the {m(p['BH'])} bill-and-hold order as a completed sale. Control hadn't passed to the customer, so it isn't a receivable."),
-        "no_reb": (m(key_v + p["Reb"]), f"Leaves the {m(p['Reb'])} volume rebate netted against cash collected. Recording it there understated collections applied to customer accounts by {m(p['Reb'])}, so ending receivables is {m(p['Reb'])} too high."),
-        "draft": (m(E_draft), f"Accepts the draft's {m(E_draft)}, which removed the recourse-factored receivables as if sold, counted the bill-and-hold order as a sale and left the rebate netted against collections."),
+        "no_rec": (m(key_v - p["Rec"]), f"Accepts the {m(p['Rec'])} credit for the transfer as a sale. Because the agreement bars the bank from selling or pledging the accounts, the transfer fails the conditions for sale accounting in ASC 860-10-40-5; it is a secured borrowing, so the receivables stay in the control account and the cash is a liability."),
+        "no_bh": (m(key_v + p["BH"]), f"Keeps the {m(p['BH'])} bill-and-hold invoice as a receivable. The goods sit with {s}'s other stock and can fill other orders, so control hasn't passed and there is no sale yet; payment isn't due until 30 days after delivery, so {s} has no unconditional right to payment either."),
+        "cs_wrong": (m(key_v - p["CS"]), f"Removes the {m(p['CS'])} of cash sales from the sales debits only. They were also posted as collections, so the debit and credit cancel and the year-end balance needs no correction for them."),
+        "posted": (m(E), f"Accepts the balance as posted, {m(E)}, keeping the transfer as a sale and the bill-and-hold invoice as a receivable."),
     }
-    key = (m(key_v), f"Correct. {m(E_draft)} + {m(p['Rec'])} − {m(p['BH'])} − {m(p['Reb'])}.")
+    key = (m(key_v), f"Correct. {m(E)} + {m(p['Rec'])} − {m(p['BH'])}; the cash sales were debited and credited to the account, so they net to zero.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{s}'s staff drafted this Year 2 rollforward of the accounts receivable control account: January 1 balance {m(p['B'])}; plus credit sales {m(p['Rv'])}; less cash collected from customers {m(p['Cc'])}; less accounts written off {m(p['Wo'])}; December 31 balance {m(E_draft)}. All of {s}'s sales are on account. Reviewing the draft, the controller finds: {m(p['Rec'])} of receivables that {s} factored to a bank with recourse, for which the draft removed the receivables and recorded the cash as a sale, though {s} remains obligated to repay the bank for any accounts the bank can't collect; a {m(p['BH'])} order that a customer asked {s} to invoice and hold in {s}'s warehouse until the customer's new store opens, which the draft recorded as a completed sale even though the goods haven't been shipped, aren't identified as the customer's and remain available to fill other orders; and a {m(p['Reb'])} volume rebate owed to a customer, which the draft's cash collected figure already reflects as a reduction, rather than as a separate liability. What amount of accounts receivable, before any allowance, should the corrected rollforward report for {s} at December 31, Year 2?""",
+        f"""{co}'s accounts receivable control account began Year 2 at {m(p['B'])}. Its Year 2 postings were debits for sales of {m(p['Rv'])}, credits for cash collected of {m(p['Cc'])}, credits for accounts written off of {m(p['Wo'])}, and a {m(p['Rec'])} credit on October 1, when {s} transferred that amount of customer accounts to a bank for cash, leaving a December 31 balance of {m(E)}. Testing the postings, internal audit learns that {s} must reimburse the bank for any transferred account that isn't collected, and the transfer agreement forbids the bank from selling or pledging the accounts. The sales debits include a {m(p['BH'])} invoice dated December 28 for goods a customer asked {s} to hold until its new store opens in March; the goods sit with {s}'s other stock, are available to fill other orders, and are payable 30 days after delivery. Both the sales debits and the cash-collected credits include {m(p['CS'])} of showroom cash sales, which {s}'s cashiers post through the receivables account on the day of each sale. What balance, before any allowance, should {s}'s accounts receivable control account show at December 31, Year 2?""",
         choices, ans,
-        f"""Receivables factored with recourse, where {s} keeps the risk of nonpayment, are accounted for as a secured borrowing, not a sale (ASC 860-10-40-5): the {m(p['Rec'])} stays in receivables (+ {m(p['Rec'])}). The bill-and-hold order doesn't meet the criteria for control to have passed (the goods aren't shipped, aren't identified as the customer's, and {s} can still redirect them), so it is removed (− {m(p['BH'])}). Netting the {m(p['Reb'])} rebate against cash collected understated collections applied to customer accounts, leaving ending receivables {m(p['Reb'])} too high (− {m(p['Reb'])}). Corrected balance = {m(E_draft)} + {m(p['Rec'])} − {m(p['BH'])} − {m(p['Reb'])} = {m(key_v)}.""",
+        f"""The transfer is a secured borrowing, not a sale: {s} keeps the credit risk, and the agreement forbids the bank from selling or pledging the accounts, so the transferee lacks the right to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The {m(p['Rec'])} goes back into receivables, and the cash received is a liability to the bank. The December 28 invoice is not a sale: the goods aren't set apart as the customer's and can be used to fill other orders, so control hasn't passed (ASC 606-10-55-83), and with payment due only after delivery there is no unconditional right to payment; the {m(p['BH'])} comes out. The showroom cash sales were debited and credited to the account for the same {m(p['CS'])}, so they leave the balance unchanged. Corrected balance = {m(E)} + {m(p['Rec'])} − {m(p['BH'])} = {m(key_v)}.""",
     )
 
 
 def ar_rollforward_creditbal(p):
-    co, s = p["co"], short(p["co"])
+    co, s = p["co"], short(p)
     E_draft = p["B"] + p["Rv"] - p["Cc"] - p["Wo"]
-    key_v = E_draft + p["CB"] - p["RA"]
+    DR = E_draft + p["CB"]
+    key_v = DR - p["RA"]
     pool = {
-        "no_cb": (m(key_v - p["CB"]), f"Leaves the {m(p['CB'])} of customer credit balances netted against the receivables total. Credit balances, from overpayments and returns, are a liability and aren't netted against other customers' debit balances."),
-        "no_ra": (m(key_v + p["RA"]), f"Leaves out the {m(p['RA'])} credit memo for goods a customer returned in December, which wasn't recorded until January."),
-        "wr_wrong": (m(key_v + p["WR"]), f"Adds the {m(p['WR'])} recovery of a previously written-off account back into receivables. Because the recovery was recorded directly as a credit to bad debt expense rather than by reinstating the account and then recording its collection, it never touched accounts receivable and needs no correction here."),
-        "draft": (m(E_draft), f"Accepts the draft's {m(E_draft)}, which nets the customer credit balances against receivables and omits the December return."),
+        "no_cb": (m(key_v - p["CB"]), f"Reports receivables net of the {m(p['CB'])} of customer credit balances. Credit balances, from overpayments and returns, are amounts {s} owes customers; they are a liability, not a reduction of other customers' debit balances."),
+        "no_ra": (m(key_v + p["RA"]), f"Leaves out the {m(p['RA'])} credit memo for goods a customer returned on December 29. The return is a Year 2 event, so receivables are reduced in Year 2 even though the memo was entered in January."),
+        "wr_wrong": (m(key_v + p["WR"]), f"Adds the {m(p['WR'])} recovery of a previously written-off account to receivables. The recovery was recorded directly as a credit to bad debt expense, and the cash collected figure excludes it, so it never passed through accounts receivable and needs no correction here."),
+        "draft": (m(E_draft), f"Accepts the preliminary {m(E_draft)}, the net of debit and credit balances, without recording the December return."),
     }
-    key = (m(key_v), f"Correct. {m(E_draft)} + {m(p['CB'])} − {m(p['RA'])}.")
+    key = (m(key_v), f"Correct. Customer debit balances of {m(DR)} less the {m(p['RA'])} December return.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""All of {s}'s sales are on credit. Its accounts receivable control account began Year 2 at {m(p['B'])}; credit sales for the year were {m(p['Rv'])}, cash collected from customers was {m(p['Cc'])}, and {m(p['Wo'])} of accounts were written off, which a staff accountant used to arrive at a preliminary December 31 figure of {m(E_draft)}. Examining that figure, the internal auditor notes three things: customer accounts with credit balances, from overpayments and returns, totaling {m(p['CB'])}, were netted against the debit balances of other customers rather than reported separately; a {m(p['RA'])} credit memo for goods a customer returned on December 29, logged by the shipping department that day, wasn't entered in the accounting records until the memo was processed in January; and a {m(p['WR'])} recovery of an account written off in an earlier year, paid in cash by the customer in December, was recorded as a direct credit to bad debt expense. For {s}, what should corrected accounts receivable, before any allowance, be at December 31, Year 2?""",
+        f"""All of {co}'s sales are on credit. Its accounts receivable control account began Year 2 at {m(p['B'])}; credit sales for the year were {m(p['Rv'])}, cash collected from customers was {m(p['Cc'])}, and {m(p['Wo'])} of accounts were written off, which a staff accountant used to arrive at a preliminary December 31 figure of {m(E_draft)}. That figure agrees with the aged subledger, which lists customer debit balances of {m(DR)} and customer credit balances, from overpayments and returns, of {m(p['CB'])}. Examining the figure, the internal auditor notes that a {m(p['RA'])} credit memo for goods a customer returned on December 29, logged by the receiving dock that day, wasn't entered in the accounting records until the memo was processed in January, and that a {m(p['WR'])} recovery of an account written off in an earlier year, paid in cash by the customer in December, was recorded as a direct credit to bad debt expense and isn't included in the cash collected figure. For {s}, what should corrected accounts receivable, before any allowance, be at December 31, Year 2?""",
         choices, ans,
-        f"""Credit balances in customer accounts are a liability, not a reduction of other customers' receivables, so the {m(p['CB'])} is added back (+ {m(p['CB'])}). The December return is a Year 2 event and must be recorded in Year 2, reducing receivables (− {m(p['RA'])}). The recovery, recorded as a direct credit to bad debt expense rather than by reinstating the account and then recording its collection, never ran through accounts receivable, so it needs no correction here. Corrected balance = {m(E_draft)} + {m(p['CB'])} − {m(p['RA'])} = {m(key_v)}.""",
+        f"""The preliminary {m(E_draft)} is the subledger's debit balances of {m(DR)} less its {m(p['CB'])} of credit balances. Credit balances are amounts owed to customers, a liability, so receivables are the gross debit balances (+ {m(p['CB'])}). The December 29 return is a Year 2 event and reduces Year 2 receivables (− {m(p['RA'])}). The recovery was recorded as a direct credit to bad debt expense rather than by reinstating the account and then recording its collection, and the cash collected figure excludes it, so it never touched accounts receivable and needs no correction here. Corrected balance = {m(E_draft)} + {m(p['CB'])} − {m(p['RA'])} = {m(key_v)}.""",
     )
 
 
 # ── Area II Analysis: II.C.c prepare a rollforward of inventory ──────────────────────────────
 
 
-def inv_rollforward_consign_in(p):
-    co, s = p["co"], short(p["co"])
-    E_draft = p["B"] + p["P"] - p["C"]
-    key_v = E_draft - p["CI"] + p["COL"] + p["PD"]
+def inv_purchases_line(p):
+    """The purchases line of the rollforward: consigned-in goods recorded as purchases, net-method discounts
+    lost charged to purchases, an unrecorded December purchase return, and an in-transit FOB shipping
+    point purchase that is correctly included."""
+    co, s = p["co"], short(p)
+    E = p["B"] + p["P"] - p["C"]
+    key_v = p["P"] - p["CI"] - p["PD"] - p["RT"]
     pool = {
-        "no_ci": (m(key_v + p["CI"]), f"Keeps the {m(p['CI'])} of goods {s} holds on consignment from a supplier in inventory. Title to consigned-in goods stays with the consignor until {s} sells them; they aren't {s}'s inventory."),
-        "no_col": (m(key_v - p["COL"]), f"Leaves out the {m(p['COL'])} of inventory {s} pledged as collateral for a loan. Pledging goods as security doesn't transfer ownership, so they remain {s}'s inventory."),
-        "no_pd": (m(key_v - p["PD"]), f"Leaves purchases recorded net of the {m(p['PD'])} of discounts {s} didn't take. Because {s} paid after the discount period, the {m(p['PD'])} is a financing cost, not a permanent reduction of inventory cost."),
-        "draft": (m(E_draft), f"Accepts the draft's {m(E_draft)}, which includes the consigned-in goods, excludes the pledged inventory and records purchases net of the unclaimed discount."),
+        "no_ci": (m(key_v + p["CI"]), f"Keeps the {m(p['CI'])} of consigned goods in purchases. Title stays with the supplier until {s} sells them, so receiving them isn't a purchase."),
+        "no_pd": (m(key_v + p["PD"]), f"Keeps the {m(p['PD'])} of discounts lost in purchases. Under the net method, inventory is recorded at the discounted price, and discounts lost by paying late are a financing expense, not inventory cost."),
+        "no_rt": (m(key_v + p["RT"]), f"Leaves out the {m(p['RT'])} of goods returned to the supplier on December 18. The return happened in Year 2, so Year 2 purchases (net of returns) are reduced even though the credit memo arrived in January."),
+        "tr_wrong": (m(key_v - p["TR"]), f"Removes the {m(p['TR'])} of goods in transit at year-end. Shipped FOB shipping point, they became {s}'s when the supplier shipped them on December 29, so they are properly in Year 2 purchases."),
     }
-    key = (m(key_v), f"Correct. {m(E_draft)} − {m(p['CI'])} + {m(p['COL'])} + {m(p['PD'])}.")
+    key = (m(key_v), f"Correct. {m(p['P'])} − {m(p['CI'])} − {m(p['PD'])} − {m(p['RT'])}; the in-transit goods stay in.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{s}'s perpetual inventory records show a Year 2 rollforward of beginning inventory {m(p['B'])}, purchases {m(p['P'])}, and cost of goods sold {m(p['C'])}, for a draft December 31 balance of {m(E_draft)}. Reviewing the count and the purchase records, the controller finds: the count includes {m(p['CI'])} of goods a supplier shipped to {s} on consignment, which {s} may return unsold; {m(p['COL'])} of {s}'s own inventory, pledged as collateral for a bank loan, was removed from the inventory account when the loan was obtained; and purchases are recorded under the net method, so {m(p['PD'])} of discounts on invoices {s} paid after the discount period, and so never took, reduced the recorded cost of goods still on hand. What inventory should the corrected rollforward report at December 31, Year 2?""",
+        f"""{co} uses a perpetual inventory system and records purchases net of cash discounts. Its staff's Year 2 inventory rollforward shows beginning inventory of {m(p['B'])}, purchases (net of returns) of {m(p['P'])}, cost of goods sold of {m(p['C'])} and ending inventory of {m(E)}; the purchases figure is the purchases journal total. Testing that figure, the controller finds that {m(p['CI'])} of goods a supplier shipped to {s} on consignment, which {s} may return unsold, were entered as purchases when they arrived; that when {s} paid invoices after the discount period, it charged the {m(p['PD'])} of discounts it lost to purchases; that goods costing {m(p['RT'])}, which {s} shipped back to a supplier on December 18, weren't entered as a purchase return until the supplier's credit memo arrived in January; and that the journal includes {m(p['TR'])} of goods a supplier shipped FOB shipping point on December 29, still in transit at year-end. What purchases (net of returns) should the corrected rollforward report for Year 2?""",
         choices, ans,
-        f"""Goods held on consignment from a supplier aren't {s}'s inventory until {s} sells them (ASC 606-10-55-80), so the {m(p['CI'])} comes out. Pledging inventory as loan collateral doesn't change who owns it, so the {m(p['COL'])} of pledged goods belongs back in inventory. Discounts lost because an invoice was paid late are a financing cost, not a reduction of inventory cost, so the {m(p['PD'])} is restored. Corrected inventory = {m(E_draft)} − {m(p['CI'])} + {m(p['COL'])} + {m(p['PD'])} = {m(key_v)}.""",
+        f"""Consigned goods belong to the supplier until {s} sells them (ASC 606-10-55-79 to 55-80), so the {m(p['CI'])} isn't a purchase. Under the net method, purchases are recorded at the discounted price and a discount lost by paying late is a financing expense, so the {m(p['PD'])} comes out of purchases. The goods returned on December 18 reduce Year 2 purchases (− {m(p['RT'])}), whenever the credit memo arrives. Goods shipped FOB shipping point belong to {s} from the shipment date, so the {m(p['TR'])} in transit is properly a Year 2 purchase and stays. Corrected purchases = {m(p['P'])} − {m(p['CI'])} − {m(p['PD'])} − {m(p['RT'])} = {m(key_v)}.""",
     )
 
 
-def inv_rollforward_bonded(p):
-    co, s = p["co"], short(p["co"])
-    E_draft = p["B"] + p["P"] - p["C"]
-    key_v = E_draft - p["SP"] + p["BW"] - p["RB"]
+def inv_perpetual_adjust(p):
+    """Net adjustment to the perpetual balance: worthless damaged stock, an unrecorded purchase sitting in a
+    bonded warehouse, and a volume rebate allocated between goods sold and goods on hand (ASC 705-20)."""
+    co, s = p["co"], short(p)
+    rate = D(p["r"]) / 100
+    RB = rd(rate * p["Q"])
+    RBh = rd(rate * p["H"])
+    key_v = p["BW"] - p["SP"] - RBh
+    I, Dn = "increase", "decrease"
     pool = {
-        "no_sp": (m(key_v + p["SP"]), f"Keeps the {m(p['SP'])} of raw materials ruined in an equipment malfunction at full cost. Abnormal spoilage is expensed as incurred, not carried in inventory."),
-        "no_bw": (m(key_v - p["BW"]), f"Leaves out the {m(p['BW'])} of goods sitting in the customs bonded warehouse. Title passed to {s} when the goods were shipped, so they are {s}'s inventory even though they hadn't yet cleared customs and weren't in the physical count."),
-        "no_rb": (m(key_v + p["RB"]), f"Ignores the {m(p['RB'])} volume purchase rebate {s} earned by year-end but hadn't yet billed. The rebate reduces the cost of the inventory still on hand."),
-        "draft": (m(E_draft), f"Accepts the draft's {m(E_draft)}, which keeps the spoiled materials at cost, omits the bonded-warehouse goods and ignores the rebate."),
+        "no_sp": (signed(key_v + p["SP"], I, Dn), f"Leaves the {m(p['SP'])} of ruined coils in inventory. Goods with no resale or scrap value are written off as a loss; they can't be carried at cost."),
+        "no_bw": (signed(key_v - p["BW"], I, Dn), f"Leaves out the {m(p['BW'])} of goods in the bonded warehouse. Title passed to {s} when the supplier shipped them, so they are {s}'s inventory and the unrecorded purchase must be added, cleared through customs or not."),
+        "rb_full": (signed(p["BW"] - p["SP"] - RB, I, Dn), f"Takes the whole {m(RB)} rebate out of inventory. The rebate reduces the cost of all {m(p['Q'])} of qualifying purchases, so only the share on goods still on hand, {m(RBh)}, reduces inventory; the rest reduces cost of goods sold."),
+        "no_rb": (signed(key_v + RBh, I, Dn), f"Ignores the volume rebate. {s} earned it in Year 2, so it reduces the cost of the qualifying purchases, including the {m(p['H'])} still on hand, by {m(RBh)}."),
     }
-    key = (m(key_v), f"Correct. {m(E_draft)} − {m(p['SP'])} + {m(p['BW'])} − {m(p['RB'])}.")
+    key = (signed(key_v, I, Dn), f"Correct. + {m(p['BW'])} − {m(p['SP'])} − {m(RBh)} ({p['r']}% of the {m(p['H'])} of rebated goods still on hand).")
     choices, ans = build(pool, key, p["use"])
+    result = f"{m(key_v)}, an increase" if key_v > 0 else f"−{m(-key_v)}, a decrease of {m(-key_v)}"
     return variant(
-        f"""{s}'s perpetual inventory records show a Year 2 rollforward of beginning inventory {m(p['B'])}, purchases {m(p['P'])}, and cost of goods sold {m(p['C'])}, for a draft December 31 balance of {m(E_draft)}. Reviewing the count, the controller finds: {m(p['SP'])} of raw materials ruined in an equipment malfunction during the year, included in the count at full cost; {m(p['BW'])} of goods purchased under terms that passed title to {s} at shipment, which were sitting in a customs bonded warehouse awaiting clearance at year-end and so weren't included in the physical count; and a {m(p['RB'])} volume purchase rebate, for which {s} met the purchase threshold before year-end but which the supplier hadn't yet billed or recorded. What inventory should the corrected rollforward report at December 31, Year 2?""",
+        f"""Before closing Year 2, {co}'s controller reviews the December 31 perpetual inventory balance of {m(p['E'])}. She finds that steel coils costing {m(p['SP'])}, ruined in August when a warehouse sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods costing {m(p['BW'])}, bought on terms that passed title to {s} when the supplier shipped them in December, were in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't been recorded because the supplier's invoice arrived in January; and that {s}'s Year 2 purchases of one supplier's alloy bar, {m(p['Q'])} in all, reached that supplier's volume threshold for a {p['r']}% rebate on the year's purchases. The supplier issued the credit memo in January, and {s} hasn't recorded the rebate. Alloy bar costing {m(p['H'])} from those purchases is still on hand at December 31; the rest has been sold. What net adjustment should the controller make to the perpetual inventory balance?""",
         choices, ans,
-        f"""Abnormal spoilage from an equipment malfunction is expensed as incurred, not capitalized in inventory (ASC 330-10-30), so the {m(p['SP'])} comes out. The bonded-warehouse goods belong to {s} once title passed at shipment, even though they hadn't cleared customs and weren't physically counted, so the {m(p['BW'])} is added. The {m(p['RB'])} rebate, earned before year-end, reduces the cost of the inventory still on hand even though it hasn't been billed. Corrected inventory = {m(E_draft)} − {m(p['SP'])} + {m(p['BW'])} − {m(p['RB'])} = {m(key_v)}.""",
+        f"""The ruined coils have no value, so their {m(p['SP'])} cost is written off (ASC 330-10-35). The bonded-warehouse goods became {s}'s when they were shipped, so the {m(p['BW'])} purchase is recorded and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): {p['r']}% × {m(p['Q'])} = {m(RB)} in all, of which the share on the {m(p['H'])} of alloy bar still on hand, {p['r']}% × {m(p['H'])} = {m(RBh)}, reduces inventory and the remaining {m(RB - RBh)} reduces cost of goods sold. Net adjustment = {m(p['BW'])} − {m(p['SP'])} − {m(RBh)} = {result}.""",
     )
 
 
 # ── Area II Analysis: II.D.f prepare a rollforward of PP&E ───────────────────────────────────
 
 
-def ppe_rollforward_cost(p):
-    co, s = p["co"], short(p["co"])
-    E_draft = p["B"] + p["P"] - p["Disp"]
-    key_v = E_draft + p["ST"] - p["REMOVE"]
+def ppe_additions(p):
+    """The additions line: an overweight-load fine and post-installation insurance wrongly capitalized,
+    transit insurance wrongly expensed, and a new parking lot recorded in the wrong PP&E account."""
+    co, s = p["co"], short(p)
+    key_v = p["AD"] - p["FINE"] + p["TI"] - p["INS"]
     pool = {
-        "no_st": (m(key_v - p["ST"]), f"Leaves the {m(p['ST'])} of sales tax and delivery charges on the new machine expensed. These costs are necessary to bring the asset to its intended location and condition and are part of its cost."),
-        "reclass_wrong": (m(key_v - p["RECLASS"]), f"Removes the {m(p['RECLASS'])} resurfacing cost entirely because it belongs in a separate land improvements account rather than buildings. Moving it between property, plant and equipment accounts doesn't change the {m(p['RECLASS'])} total reported for property, plant and equipment."),
-        "no_remove": (m(key_v + p["REMOVE"]), f"Keeps the {m(p['REMOVE'])} insurance premium to cover the new equipment during shipment capitalized. Insuring an asset in transit is a period cost, not part of the asset's cost."),
-        "draft": (m(E_draft), f"Accepts the draft's {m(E_draft)}, which expenses the sales tax and delivery charges and capitalizes the shipping insurance."),
+        "no_fine": (m(key_v + p["FINE"]), f"Keeps the {m(p['FINE'])} overweight-load fine in the press's cost. A fine for breaking the law isn't a necessary cost of bringing the asset to its location; it is expensed."),
+        "no_ti": (m(key_v - p["TI"]), f"Leaves the {m(p['TI'])} premium for insuring the press in transit in expense. Insurance while the asset is being brought to its site is a cost of getting it ready for use and is capitalized."),
+        "no_ins": (m(key_v + p["INS"]), f"Keeps the {m(p['INS'])} premium for the press's first year of coverage after installation in its cost. Insurance once the asset is in service is a period cost (a prepaid expense until used)."),
+        "lot_wrong": (m(key_v - p["LOT"]), f"Removes the {m(p['LOT'])} parking lot from additions because it was posted to buildings. A new parking lot is a land improvement, still property, plant and equipment; moving it between accounts doesn't change total additions."),
     }
-    key = (m(key_v), f"Correct. {m(E_draft)} + {m(p['ST'])} − {m(p['REMOVE'])}; the {m(p['RECLASS'])} resurfacing cost changes which account it's in, not the total.")
+    key = (m(key_v), f"Correct. {m(p['AD'])} − {m(p['FINE'])} + {m(p['TI'])} − {m(p['INS'])}; the parking lot is reclassified within property, plant and equipment.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{s}'s staff prepared this Year 2 rollforward of total property, plant and equipment, at cost: January 1 balance {m(p['B'])}; additions {m(p['P'])}; disposals ({m(p['Disp'])}); December 31 balance {m(E_draft)}. Reviewing the capital expenditures report, the controller finds: {m(p['ST'])} of sales tax and delivery charges on a new machine, paid in cash, was charged to a shipping and tax expense account instead of being added to the machine's cost; a {m(p['RECLASS'])} cost to resurface the parking lot was added to the buildings account as an addition, though {s} carries land improvements in a separate account depreciated over a shorter life; and a {m(p['REMOVE'])} premium to insure a new piece of equipment during shipment was added to the equipment's cost. What should the corrected rollforward report as total property, plant and equipment, at cost, at December 31, Year 2?""",
+        f"""The additions line of {co}'s Year 2 rollforward of property, plant and equipment, at cost, is the capital expenditures report, which totals {m(p['AD'])}. Testing the report, the controller finds that {s} paid a {m(p['FINE'])} fine when its own truck was stopped for carrying an overweight load while hauling a new press from the port, and added the fine to the press's cost; that the {m(p['TI'])} premium to insure the press during its voyage from the manufacturer was charged to insurance expense; that the {m(p['INS'])} premium for the press's first year of property coverage, which began when the press went into service, was added to its cost; and that the {m(p['LOT'])} cost of paving a new parking lot at the plant, where there was none before, was added to the buildings account, though {s} records land improvements in a separate account depreciated over a shorter life. What total additions should the corrected rollforward report for Year 2?""",
         choices, ans,
-        f"""Sales tax and delivery charges are necessary to bring an asset to its intended location and condition and are capitalized (ASC 360-10-30), so the {m(p['ST'])} is added. Moving the {m(p['RECLASS'])} resurfacing cost from buildings to land improvements changes which account it sits in, but not the {m(p['RECLASS'])} total for property, plant and equipment as a whole, so no dollar change is needed. Insurance on an asset in transit is a period cost and is removed from the equipment's cost (− {m(p['REMOVE'])}). Corrected total = {m(E_draft)} + {m(p['ST'])} − {m(p['REMOVE'])} = {m(key_v)}.""",
+        f"""The cost of property, plant and equipment includes what is necessary to bring the asset to the condition and location for its intended use (ASC 360-10-30). Insurance during transit is such a cost, so the {m(p['TI'])} is capitalized (+ {m(p['TI'])}). A fine for an overweight load is a penalty, not a necessary cost, and insurance after the press is in service is a period cost, so both come out (− {m(p['FINE'])} and − {m(p['INS'])}). The new parking lot is a land improvement; moving it out of buildings changes the account, not total property, plant and equipment, so additions don't change for it. Corrected additions = {m(p['AD'])} − {m(p['FINE'])} + {m(p['TI'])} − {m(p['INS'])} = {m(key_v)}.""",
     )
 
 
 # ── Area II Application ───────────────────────────────────────────────────────────────────────
 
 
-def cloud_computing_asset(p):
-    co, s = p["co"], short(p["co"])
-    N = p["T1"] + p["T2"]
-    months = 13 - p["GLM"]
-    annual = rd(D(p["INT"]) / N)
-    key_v = p["INT"] - rd(annual * months / 12)
-    annual_t1 = rd(D(p["INT"]) / p["T1"])
-    no_renewal = p["INT"] - rd(annual_t1 * months / 12)
-    combo = p["INT"] + p["DM"]
-    annual_combo = rd(D(combo) / N)
-    capitalize_dm = combo - rd(annual_combo * months / 12)
-    full_year = p["INT"] - annual
-    no_amort = D(p["INT"])
-    assert months < 12
+def cloud_modules(p):
+    """Two modules going live on different dates, each amortized from its own ready-for-use date over the
+    remaining hosting term (the renewal is not included), with process-redesign costs expensed."""
+    co, s = p["co"], short(p)
+    T, mA, mB = p["T"], p["mA"], p["mB"]
+    term_m = 12 * T
+
+    def amort(cost, mo, months):
+        """Year 1 amortization for a module ready on the 1st of month `mo`, over `months` from Jan 1."""
+        remaining = months - (mo - 1)
+        return rd(D(cost) * (13 - mo) / remaining)
+
+    aA, aB = amort(p["X"], mA, term_m), amort(p["Y"], mB, term_m)
+    key_v = p["X"] + p["Y"] - aA - aB
+    full_term = p["X"] + p["Y"] - rd(D(p["X"]) * (13 - mA) / term_m) - rd(D(p["Y"]) * (13 - mB) / term_m)
+    from_start = p["X"] + p["Y"] - rd(D(p["X"] + p["Y"]) * 12 / term_m)
+    same_date = p["X"] + p["Y"] - amort(p["X"] + p["Y"], mA, term_m)
+    renew_m = 12 * (T + p["Rn"])
+    with_renewal = p["X"] + p["Y"] - amort(p["X"], mA, renew_m) - amort(p["Y"], mB, renew_m)
+    cap_bpr = p["X"] + p["BPR"] + p["Y"] - amort(p["X"] + p["BPR"], mA, term_m) - aB
+    dA, dB = f"{MONTHS[mA - 1]} 1", f"{MONTHS[mB - 1]} 1"
+    endY = f"December 31, Year {T}"
+    rA, rB = term_m - (mA - 1), term_m - (mB - 1)
     pool = {
-        "no_renewal": (m(no_renewal), f"Amortizes the implementation costs only over the {p['T1']}-year initial term, ignoring the {p['T2']}-year renewal. Because {s} is reasonably certain to renew, the amortization period is the {N}-year combined term, the same period used to decide the arrangement isn't a lease."),
-        "capitalize_dm": (m(capitalize_dm), f"Capitalizes the {m(p['DM'])} of data conversion costs along with the implementation costs. Data conversion costs are expensed as incurred, not capitalized, under ASC 350-40."),
-        "full_year": (m(full_year), f"Amortizes a full year's amount, {m(annual)}, instead of the {months} months since the software became ready for its intended use on {p['glive']}, Year 1."),
-        "no_amort": (m(no_amort), f"Reports the implementation costs at their full {m(p['INT'])}, with no amortization for Year 1."),
+        "full_term": (m(full_term), f"Spreads each module's costs over the full {T}-year term starting at its go-live date, so amortization would run past the contract's end on {endY}. Implementation costs are amortized over the hosting arrangement's term, which by then has only {rA} and {rB} months left."),
+        "from_start": (m(from_start), f"Amortizes both modules for all of Year 1, from the contract's January 1 start. Amortization of each module begins only when that module is ready for its intended use."),
+        "same_date": (m(same_date), f"Starts amortizing both modules on {dA}, when the first one went live. Because the modules work independently, each is amortized from its own ready-for-use date, and the second wasn't ready until {dB}."),
+        "with_renewal": (m(with_renewal), f"Includes the {p['Rn']}-year renewal in the amortization period. Management hasn't decided whether to renew, so the renewal isn't reasonably certain and the term is the {T}-year noncancellable period."),
+        "cap_bpr": (m(cap_bpr), f"Capitalizes the {m(p['BPR'])} paid to redesign business processes. Process reengineering is expensed as incurred, not capitalized as a cost of implementing the software."),
     }
-    key = (m(key_v), f"Correct. {m(p['INT'])} − ({m(annual)} × {months}/12).")
+    key = (m(key_v), f"Correct. ({m(p['X'])} − {m(aA)}) + ({m(p['Y'])} − {m(aB)}).")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} runs its inventory management entirely through a vendor's cloud platform under a {p['T1']}-year contract that began January 1, Year 1; {s} never takes possession of the underlying software, and management is confident {s} will exercise the contract's renewal option for another {p['T2']} years once the initial term ends, since switching platforms would be disruptive. {s} did not begin using the system until {p['glive']}, Year 1, once setup was finished; getting there cost {m(p['EV'])} to compare and select a vendor, {m(p['INT'])} to configure the system and build and test its interfaces, {m(p['DM'])} to clean up and load historical data, and {m(p['TRAIN'])} to train staff on the new system. {s} amortizes capitalized implementation costs straight-line over the period it benefits from the arrangement. What amount should {s} report as its capitalized cloud computing implementation asset, net of amortization, at December 31, Year 1?""",
+        f"""On January 1, Year 1, {co} signs a noncancellable {T}-year contract, running from that date, for access to a vendor's cloud-hosted warehouse management system. {s} has no right to take the software onto its own servers. The contract lets {s} extend it for {p['Rn']} more years at the vendor's list prices at that time, and management hasn't decided whether it will. After the board approved and funded the project, {s} paid consultants {m(p['BPR'])} to redesign its receiving and picking processes before configuration began, {m(p['X'])} to configure and test the inventory module, which was ready for its intended use on {dA}, Year 1, and {m(p['Y'])} to configure and test the shipping module, ready on {dB}, Year 1. Each module works independently of the other. {s} amortizes capitalized implementation costs straight-line by month. What amount should {s} report as capitalized implementation costs, net of accumulated amortization, at December 31, Year 1?""",
         choices, ans,
-        f"""Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and testing the hosting arrangement's interfaces are capitalized; selecting a vendor ({m(p['EV'])}) is a preliminary-stage cost and training ({m(p['TRAIN'])}) and data conversion ({m(p['DM'])}) are expensed as incurred, whether or not the project is likely to succeed. (ASU 2025-06's revisions to internal-use software capitalization give the same result for a hosting arrangement like this one.) The capitalized {m(p['INT'])} is amortized over the {N}-year period {s} benefits from the arrangement, the initial {p['T1']}-year term plus the {p['T2']}-year renewal {s} is reasonably certain to exercise, straight-line from {p['glive']}: {m(annual)} a year, or {m(rd(annual * months / 12))} for the {months} months remaining in Year 1. Net asset = {m(p['INT'])} − {m(rd(annual * months / 12))} = {m(key_v)}.""",
+        f"""A hosting arrangement {s} can't take possession of is a service contract, and its implementation costs follow ASC 350-40, as amended by ASU 2018-15. Configuring and testing each module is capitalized; redesigning business processes ({m(p['BPR'])}) is expensed as incurred. (ASU 2025-06, which replaces the project stages with a probable-to-complete threshold that this funded project meets, gives the same result.) The costs are amortized straight-line over the term of the hosting arrangement, the {T}-year noncancellable period ending {endY}; the renewal is excluded because management hasn't decided to exercise it. Each module's amortization starts when that module is ready for its intended use and runs over the term remaining at that date. Inventory module: {m(p['X'])} × {13 - mA}/{rA} = {m(aA)}. Shipping module: {m(p['Y'])} × {13 - mB}/{rB} = {m(aB)}. Net asset = {m(p['X'] + p['Y'])} − {m(aA)} − {m(aB)} = {m(key_v)}.""",
     )
 
 
 def exit_cost_timing(p):
-    co, s = p["co"], short(p["co"])
-    prorate_wrong = rd(D(p["A"]) * p["elapsed"] / p["total"])
-    key_v = D(p["A"])
+    co, s = p["co"], short(p)
+    e, t = p["elapsed"], p["total"]
+    stay_total = p["NB"] * p["SB"]
+    stay = rd(D(stay_total) * e / t)
+    key_v = p["A"] + stay
     pool = {
-        "prorate_wrong": (m(prorate_wrong), f"Accrues only {p['elapsed']}/{p['total']} of the {m(p['A'])} of termination benefits, as though employees must render future service to earn them. Because the benefit formula pays employees the same amount whether or not they stay until the facility closes, {s} recognizes the whole {m(p['A'])} at the communication date."),
-        "incl_k": (m(key_v + p["K"]), f"Also accrues the {m(p['K'])} fee to cancel the equipment maintenance contract early. {s} will keep using the contracted service until the facility closes, so that cost isn't recognized until {s} ceases using the right under the contract."),
-        "incl_rel": (m(key_v + p["REL"]), f"Also accrues the {m(p['REL'])} estimated cost of relocating equipment to another facility. Costs associated with an exit activity, other than one-time termination benefits and contract termination costs, are recognized in the period they are incurred, not when the exit plan is communicated."),
-        "incl_both": (m(key_v + p["K"] + p["REL"]), f"Also accrues both the {m(p['K'])} contract termination fee and the {m(p['REL'])} relocation cost. Neither is recognized at the communication date."),
+        "prorate_wrong": (m(rd(D(p["A"]) * e / t) + stay), f"Accrues only {e}/{t} of the {m(p['A'])} of severance, as though employees had to keep working to earn it. Employees receive it whether they stay or leave early, so all of it is recognized when the plan is communicated."),
+        "stay_full": (m(p["A"] + stay_total), f"Accrues the whole {m(stay_total)} of team-leader bonuses at the communication date. The bonuses are paid only to those who stay until the center closes, a service period longer than 60 days, so they are recognized ratably over the {t} months: {e}/{t} by December 31."),
+        "no_stay": (m(p["A"]), f"Leaves out the team-leader bonuses until the center closes. A benefit that requires service until closure is still recognized as the service is rendered, ratably from the communication date: {e}/{t} of {m(stay_total)} by December 31."),
+        "incl_k": (m(key_v + p["K"]), f"Also accrues the {m(p['K'])} fee to end the cleaning contract early. A contract termination cost is recognized when the contract is terminated under its terms, here by written notice, which {s} won't send until March, Year 2."),
+        "incl_rel": (m(key_v + p["REL"]), f"Also accrues the {m(p['REL'])} to move retained employees to another office. Other costs of an exit activity, such as relocating employees, are recognized when incurred, in Year 2."),
     }
-    key = (m(key_v), f"Correct. The full {m(p['A'])} of termination benefits, recognized at the communication date because no significant future service is required to earn them.")
+    key = (m(key_v), f"Correct. {m(p['A'])} of severance, recognized in full at the communication date, plus {e}/{t} × {m(stay_total)} = {m(stay)} of team-leader bonuses.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""On {p['comm']}, Year 1, {co}'s board approves a plan to close a distribution center on {p['close']}, Year 2, and communicates the plan to the center's {p['n']} employees that day. Under the plan, each terminated employee will receive a severance payment based on years of service, a total of {m(p['A'])}, whether the employee stays until the center closes or leaves immediately; {s} expects no significant retention problem and plans no further communication. {s} will also pay a {m(p['K'])} fee to cancel an equipment maintenance contract once it stops using the service, which won't happen until the center closes, and expects to spend {m(p['REL'])} relocating equipment to another facility once the move actually takes place. What liability for exit costs should {s} report at December 31, Year 1?""",
+        f"""On {p['comm']}, Year 1, {co}'s board approves a plan to close a regional call center on {p['close']}, Year 2, and that day tells the center's {p['n']} employees which positions will end, when, and what each employee will receive; {s} doesn't expect to change the plan. Each employee will receive severance based on years of service, {m(p['A'])} in total, payable at termination whether the employee stays until the center closes or leaves earlier. Each of the center's {p['NB']} team leaders will also receive a {m(p['SB'])} bonus, but only if he or she stays until the center closes, and {s} expects all of them to stay. No law or agreement requires {s} to give notice of termination. The center's cleaning contract, which isn't a lease, can be ended early for a {m(p['K'])} fee by written notice; {s} plans to send the notice in March, Year 2, and will use the service until then. {s} also expects to pay {m(p['REL'])} in Year 2 to move retained employees to another office. Treat each month as equal in length. What liability for exit costs should {s} report at December 31, Year 1?""",
         choices, ans,
-        f"""A one-time termination benefit is recognized in full at the communication date when, as here, employees aren't required to render significant future service to receive it (ASC 420-10-25-4): the full {m(p['A'])} is a liability once the plan is communicated. A contract termination cost is recognized when the contract is terminated or, if earlier, when the entity ceases using the right under the contract (ASC 420-10-25-11); {s} keeps using the maintenance service until closure, so the {m(p['K'])} fee isn't yet a liability. Other costs associated with an exit activity, such as the {m(p['REL'])} of relocation, are recognized as incurred (ASC 420-10-25-15), not when the plan is announced. Exit-cost liability at December 31, Year 1 = {m(key_v)}.""",
+        f"""One-time termination benefits that employees receive without rendering further service are recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the {m(p['A'])} of severance. The team-leader bonuses require service until the center closes, {t} months after the communication date, which is longer than the 60-day minimum retention period that applies when no law sets one, so they are recognized ratably over that service period (ASC 420-10-25-9): {m(stay_total)} × {e}/{t} = {m(stay)} by December 31. A contract termination cost is recognized when the entity terminates the contract under its terms, for example by giving written notice (ASC 420-10-25-11); {s} hasn't given notice, so the {m(p['K'])} fee isn't a liability yet. Moving retained employees is an other associated cost, recognized when incurred (ASC 420-10-25-15). Liability = {m(p['A'])} + {m(stay)} = {m(key_v)}.""",
     )
 
 
 def bonds_warrants_interest(p):
-    co, s = p["co"], short(p["co"])
-    i = D(p["MR"]) / 100 / 2
-    coupon = rd(D(p["F"]) * D(p["SR"]) / 100 / 2)
-    denom = p["BFV"] + p["FVW"]
-    CV0 = rd(D(p["PR"]) * p["BFV"] / denom)
-    int1 = rd(CV0 * i)
-    CV1 = CV0 + (int1 - coupon)
-    int2 = rd(CV1 * i)
-    key_v = int1 + int2
-    CV0f = D(p["PR"])
-    int1f = rd(CV0f * i)
-    CV1f = CV0f + (int1f - coupon)
-    int2f = rd(CV1f * i)
-    face_alloc = int1f + int2f
-    CV0s = rd(D(p["PR"]) * p["FVW"] / denom)
-    int1s = rd(CV0s * i)
-    CV1s = CV0s + (int1s - coupon)
-    int2s = rd(CV1s * i)
-    swap_alloc = int1s + int2s
-    stated_only = coupon * 2
-    no_second_amort = int1 * 2
+    """Bonds with detachable warrants, issued mid-year: relative fair value allocation, then the effective
+    rate (computed in code from the allocated amount) for one full period and an accrued part period."""
+    co, s = p["co"], short(p)
+    r = D(p["ER"]) / 100 / 2
+    n = 20
+    C = rd(D(p["F"]) * D(p["SR"]) / 100 / 2)
+    pv = C * (1 - (1 + r) ** -n) / r + D(p["F"]) * (1 + r) ** -n
+    PR = rd(pv * (p["BFV"] + p["FVW"]) / p["BFV"])
+    CV0 = rd(D(PR) * p["BFV"] / (p["BFV"] + p["FVW"]))
+    assert abs(CV0 - pv) <= 1, (CV0, pv)
+    assert C < CV0 * r and CV0 < p["BFV"] < p["F"]
+    assert D("0.95") < PR / D(p["BFV"] + p["FVW"]) < D("0.995"), "proceeds should sit just below the two fair values"
+    cv = CV0  # the stated rate amortizes the allocated amount to face (within rounding) at maturity
+    for _ in range(n):
+        cv = cv + rd(cv * r) - C
+    assert abs(cv - p["F"]) <= 10, cv
+    acc = p["acc"]
+
+    def year1(start):
+        i1 = rd(start * r)
+        cv1 = start + i1 - C
+        return i1, cv1, rd(cv1 * r * acc / 6)
+
+    def total(start):
+        a, _, b = year1(start)
+        return a + b
+
+    i1, CV1, i2 = year1(CV0)
+    key_v = i1 + i2
     pool = {
-        "face_alloc": (m(face_alloc), f"Treats the full {m(p['PR'])} of proceeds as the bonds' initial carrying amount. Because the warrants are detachable and trade separately, part of the proceeds, allocated by relative fair value, belongs to additional paid-in capital, not the bonds."),
-        "swap_alloc": (m(swap_alloc), f"Allocates to the bonds the {m(p['FVW'])} share of proceeds that belongs to the warrants, and to the warrants the bonds' {m(p['BFV'])} share. The relative-fair-value method allocates proceeds in proportion to each component's own fair value."),
-        "stated_only": (m(stated_only), f"Uses the two {m(coupon)} stated interest payments with no discount amortization. Allocating part of the proceeds to the warrants creates a bond discount, which the effective interest method amortizes into interest expense."),
-        "no_second_amort": (m(no_second_amort), f"Uses the {m(CV0)} carrying amount for both semiannual periods. The carrying amount rises as the discount amortizes each period, to {m(CV1)} for the second period, raising its interest."),
+        "face_alloc": (m(total(D(PR))), f"Uses the full {m(PR)} of proceeds as the bonds' carrying amount. Part of the proceeds belongs to the detachable warrants: the bonds get {m(PR)} × {m(p['BFV'])}/{m(p['BFV'] + p['FVW'])} = {m(CV0)}, and the rest is credited to additional paid-in capital."),
+        "bfv_alloc": (m(total(D(p['BFV']))), f"Carries the bonds at their own {m(p['BFV'])} fair value. Proceeds are allocated in proportion to the two fair values, which gives the bonds {m(CV0)}, because the {m(PR)} received is less than the {m(p['BFV'] + p['FVW'])} the bonds and warrants are worth together."),
+        "stated_only": (m(C + rd(C * acc / 6)), f"Uses only the stated interest, {m(C)} for the first period and {acc}/6 of {m(C)} accrued at year-end, with no discount amortization. The effective interest method applies the effective rate to the carrying amount."),
+        "no_accrual": (m(i1), f"Stops at the {p['pay1']} payment. Interest from then to December 31 ({acc} months) also belongs in Year 1 and is accrued at year-end."),
     }
-    key = (m(key_v), f"Correct. {m(CV0)} × {p['MR']}%/2 + {m(CV1)} × {p['MR']}%/2.")
+    key = (m(key_v), f"Correct. {m(CV0)} × {p['ER']}%/2 = {m(i1)}; then {m(CV1)} × {p['ER']}%/2 × {acc}/6 = {m(i2)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""On January 1, Year 1, {co} issues {m(p['F'])} face amount of ten-year, {p['SR']}% bonds, paying interest each June 30 and December 31, together with detachable stock warrants, for total cash proceeds of {m(p['PR'])}. Immediately after issuance, the warrants trade separately at a total fair value of {m(p['FVW'])}, and the bonds alone, without the warrants, would have sold to yield {p['MR']}%, compounded semiannually, for {m(p['BFV'])}. {s} allocates the proceeds between the bonds and the warrants by relative fair value, uses the effective interest method for the bonds, and rounds to the nearest dollar at each step. What total interest expense should {s} recognize on the bonds for Year 1?""",
+        f"""On {p['issue']}, Year 1, {co} issues {m(p['F'])} face amount of ten-year, {p['SR']}% bonds, paying interest each {p['pay1']} and {p['pay2']}, together with detachable stock warrants, for total cash proceeds of {m(PR)}. Immediately after issuance, the bonds trade without the warrants at a total fair value of {m(p['BFV'])}, and the warrants trade at a total fair value of {m(p['FVW'])}. Measured on the share of the proceeds that belongs to the bonds, the bonds' effective interest rate is {p['ER']}%, compounded semiannually. {s} applies the effective interest method, accrues interest at year-end and rounds each computation to the nearest dollar. How much bond interest expense should {s} recognize for Year 1?""",
         choices, ans,
-        f"""Because the warrants are detachable, proceeds are allocated between the bonds and the warrants by relative fair value (ASC 470-20-25-2): bonds' share = {m(p['PR'])} × {m(p['BFV'])}/({m(p['BFV'])} + {m(p['FVW'])}) = {m(CV0)}, with the remaining {m(D(p['PR']) - CV0)} credited to additional paid-in capital for the warrants. The {m(coupon)} semiannual coupon is {m(D(p['F']) * D(p['SR']) / 100)} a year on the face amount. First-period interest = {m(CV0)} × {p['MR']}%/2 = {m(int1)}, increasing the carrying amount to {m(CV1)}; second-period interest = {m(CV1)} × {p['MR']}%/2 = {m(int2)}. Total Year 1 interest expense = {m(int1)} + {m(int2)} = {m(key_v)}.""",
+        f"""Detachable warrants are accounted for separately, and with both fair values known the proceeds are allocated in proportion to them (ASC 470-20-25-2): bonds = {m(PR)} × {m(p['BFV'])}/({m(p['BFV'])} + {m(p['FVW'])}) = {m(CV0)}, with the remaining {m(PR - CV0)} credited to additional paid-in capital. The {p['ER']}% effective rate applies to that {m(CV0)} carrying amount. First period, {p['issue']} to {p['pay1']}: {m(CV0)} × {p['ER']}%/2 = {m(i1)}, against {m(C)} of cash interest, so the carrying amount rises by {m(i1 - C)} to {m(CV1)}. Accrual for the {acc} months to December 31: {m(CV1)} × {p['ER']}%/2 × {acc}/6 = {m(i2)}. Year 1 interest expense = {m(i1)} + {m(i2)} = {m(key_v)}.""",
     )
 
 
-def debt_covenant_ratio(p):
-    co, s = p["co"], short(p["co"])
-    EBIT_adj = p["NI"] + p["IE"] + p["TAX"] - p["GAIN"] + p["REST"]
-    key_v = D(EBIT_adj) / p["IE"]
-    incl_gain = D(p["NI"] + p["IE"] + p["TAX"] + p["REST"]) / p["IE"]
-    excl_rest = D(p["NI"] + p["IE"] + p["TAX"] - p["GAIN"]) / p["IE"]
-    no_tax_add = D(p["NI"] + p["IE"] - p["GAIN"] + p["REST"]) / p["IE"]
-    draft = D(p["NI"] + p["IE"] + p["TAX"]) / p["IE"]
+def debt_covenant_cushion(p):
+    """How far defined EBIT could fall before the coverage covenant breaks; an impairment loss on assets
+    still in use is not a loss on a sale, so it stays in the defined figure."""
+    co, s = p["co"], short(p)
+    mn = D(p["min"])
+    EBIT = p["NI"] + p["IE"] + p["TAX"] - p["GAIN"] + p["REST"]
+    floor = rd(mn * p["IE"])
+    key_v = EBIT - floor
+    assert key_v > 0
     pool = {
-        "incl_gain": (ratio(incl_gain), f"Includes the {m(p['GAIN'])} gain on the sale of equipment in earnings before interest and taxes. The loan agreement's definition excludes gains and losses on asset sales."),
-        "excl_rest": (ratio(excl_rest), f"Leaves the {m(p['REST'])} restructuring charge as a reduction of earnings before interest and taxes. The agreement's definition adds restructuring charges back."),
-        "no_tax_add": (ratio(no_tax_add), f"Leaves out the {m(p['TAX'])} of income tax expense. The agreement defines earnings before interest and taxes as net income plus interest expense and income taxes, before the gain and restructuring adjustments."),
-        "draft": (ratio(draft), f"Uses net income plus interest and taxes, {m(p['NI'] + p['IE'] + p['TAX'])}, without excluding the gain or adding back the restructuring charge."),
+        "imp_wrong": (m(key_v + p["IMP"]), f"Adds back the {m(p['IMP'])} impairment loss as if the agreement excluded it. The agreement excludes only gains and losses on sales of long-lived assets; the production line is still in use, so its impairment stays in earnings before interest and taxes."),
+        "incl_gain": (m(key_v + p["GAIN"]), f"Leaves the {m(p['GAIN'])} gain on the equipment sale in earnings before interest and taxes. The agreement excludes gains on sales of long-lived assets."),
+        "excl_rest": (m(key_v - p["REST"]), f"Doesn't add back the {m(p['REST'])} restructuring charge, which the agreement's definition adds back."),
+        "no_tax": (m(key_v - p["TAX"]), f"Doesn't add back the {m(p['TAX'])} of income tax expense. The agreement starts from net income plus interest and income taxes."),
     }
-    key = (ratio(key_v), f"Correct. ({m(p['NI'])} + {m(p['IE'])} + {m(p['TAX'])} − {m(p['GAIN'])} + {m(p['REST'])}) ÷ {m(p['IE'])}.")
+    key = (m(key_v), f"Correct. Defined earnings of {m(EBIT)} less the {m(floor)} minimum ({p['min']} × {m(p['IE'])}).")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}'s loan agreement requires its ratio of earnings before interest and taxes to interest expense to be at least {p['min']} at each year-end, where earnings before interest and taxes is defined as net income plus interest expense and income taxes, excluding gains and losses on sales of long-lived assets and excluding restructuring charges. For Year 1, {s} reports net income of {m(p['NI'])}, interest expense of {m(p['IE'])}, and income tax expense of {m(p['TAX'])}. Net income includes a {m(p['GAIN'])} gain on the sale of idle equipment and a {m(p['REST'])} restructuring charge for closing an underperforming store. What interest coverage ratio should {s} report for the covenant test, rounded to two decimal places?""",
+        f"""{co}'s loan agreement requires its ratio of earnings before interest and taxes to interest expense to be at least {p['min']} at each year-end. The agreement defines earnings before interest and taxes as net income plus interest expense and income tax expense, excluding gains and losses on sales of long-lived assets and adding back restructuring charges. For Year 1, {s} reports net income of {m(p['NI'])}, interest expense of {m(p['IE'])} and income tax expense of {m(p['TAX'])}. Net income includes a {m(p['GAIN'])} gain on the sale of idle equipment, a {m(p['REST'])} restructuring charge for closing an underperforming store, and a {m(p['IMP'])} impairment loss on a production line that {s} continues to operate. With interest expense unchanged, by how much could {s}'s Year 1 earnings before interest and taxes, as the agreement defines them, have been lower without breaching the covenant?""",
         choices, ans,
-        f"""Starting from net income, add back interest expense and income taxes, then apply the agreement's own adjustments: exclude the {m(p['GAIN'])} gain on the equipment sale, and add back the {m(p['REST'])} restructuring charge. Earnings before interest and taxes, as defined = {m(p['NI'])} + {m(p['IE'])} + {m(p['TAX'])} − {m(p['GAIN'])} + {m(p['REST'])} = {m(EBIT_adj)}. Ratio = {m(EBIT_adj)} ÷ {m(p['IE'])} = {ratio(key_v)}.""",
+        f"""Earnings before interest and taxes, as defined = {m(p['NI'])} + {m(p['IE'])} + {m(p['TAX'])} − {m(p['GAIN'])} (gain on a sale, excluded) + {m(p['REST'])} (restructuring, added back) = {m(EBIT)}. The impairment loss isn't a gain or loss on a sale, because the line is still in use, so it stays in the figure. The covenant needs at least {p['min']} × {m(p['IE'])} = {m(floor)}. Cushion = {m(EBIT)} − {m(floor)} = {m(key_v)}.""",
     )
 
 
 FAMILIES = [
     ("far-cash-bank-reconciliation-0006", A2, "Cash and cash equivalents", AN,
-     ["ASC 305-10 (cash)", "Bank reconciliation practice"],
+     ["ASC 305-10 (cash)", "Bank reconciliation practice (stop-payment orders, items collected by the bank)"],
      bank_recon_stop, [
-        dict(co="Perranporth Marine Co.", BB=52400, DIT=5800, OC=9150, NR=1350, CCg=1620, CCn=1530, SP=420, chk="498", use=["no_nr", "no_fee", "no_stop"]),
-        dict(co="Mullion Boatworks Co.", BB=68900, DIT=7200, OC=11450, NR=980, CCg=2040, CCn=1980, SP=560, chk="512", use=["no_nr", "no_stop", "draft"]),
-        dict(co="Falmouth Chandlery Co.", BB=81200, DIT=6400, OC=13700, NR=1150, CCg=1890, CCn=1860, SP=480, chk="305", use=["no_fee", "no_stop", "draft"]),
-        dict(co="Padstow Marine Supply Co.", BB=45600, DIT=4900, OC=8300, NR=860, CCg=1480, CCn=1420, SP=350, chk="221", use=["no_nr", "no_fee", "draft"]),
+        dict(co="Falmouth Marine Co.", BB=52400, DIT=5800, OC=9150, NRp=8000, NRi=640, CCg=24000, CCn=23400, SP=1850, chk="498", use=["no_nr", "no_fee", "no_stop"]),
+        dict(co="Gerrans Boatworks Co.", BB=68900, DIT=7200, OC=11450, NRp=10000, NRi=750, CCg=31500, CCn=30690, SP=2240, chk="512", use=["nr_principal", "no_stop", "no_nr"]),
+        dict(co="Penryn Chandlery Co.", BB=81200, DIT=6400, OC=13700, NRp=12000, NRi=900, CCg=28000, CCn=27300, SP=2600, chk="305", use=["no_fee", "no_stop", "nr_principal"]),
+        dict(co="Portmellon Marine Supply Co.", BB=45600, DIT=4900, OC=8300, NRp=6000, NRi=420, CCg=19200, CCn=18720, SP=1460, chk="221", use=["no_nr", "no_fee", "nr_principal"]),
      ], "no_stop"),
     ("far-cash-bank-reconciliation-0007", A2, "Cash and cash equivalents", AN,
-     ["ASC 305-10 (cash)", "Bank reconciliation practice (errors by the bank and by the depositor)"],
+     ["ASC 305-10 (cash; a postdated check is a receivable, not cash)", "Bank reconciliation practice (errors by the bank and by the depositor)"],
      bank_recon_error, [
-        dict(co="Mevagissey Trawler Co.", BB=61200, DIT=4300, OC=8750, BE=610, INT=85, STALE=940, use=["no_be", "no_int", "noadj_wrong"]),
-        dict(co="Porthallow Fisheries Co.", BB=74500, DIT=5600, OC=10200, BE=780, INT=110, STALE=1150, use=["no_be", "noadj_wrong", "draft"]),
-        dict(co="Looe Harbour Supply Co.", BB=58300, DIT=3900, OC=7650, BE=520, INT=70, STALE=860, use=["no_int", "noadj_wrong", "draft"]),
-        dict(co="Newlyn Fish Market Co.", BB=86700, DIT=6100, OC=12400, BE=690, INT=95, STALE=1020, use=["no_be", "no_int", "draft"]),
-     ], "noadj_wrong"),
+        dict(co="Newlyn Trawler Co.", BB=61200, DIT=4300, OC=8750, BE=1460, INT=420, AD=2240, PD=1850, use=["no_be", "no_pd", "no_int"]),
+        dict(co="Porthallow Fisheries Co.", BB=74500, DIT=5600, OC=10200, BE=1720, INT=510, AD=2630, PD=2180, use=["no_pd", "no_ad", "no_be"]),
+        dict(co="Looe Harbour Supply Co.", BB=58300, DIT=3900, OC=7650, BE=1240, INT=380, AD=1960, PD=1590, use=["no_int", "no_pd", "no_ad"]),
+        dict(co="Cadgwith Fish Market Co.", BB=86700, DIT=6100, OC=12400, BE=1980, INT=560, AD=3050, PD=2470, use=["no_be", "no_int", "no_ad"]),
+     ], "no_pd"),
     ("far-cash-unreconciled-0004", A2, "Cash and cash equivalents", AN,
-     ["ASC 305-10 (cash)", "Bank reconciliation practice (errors by the bank and by the depositor)"],
-     cash_unrecon_wire, [
-        dict(co="Tywardreath Supply Co.", ABB=58900, WIRE=2300, FEE=180, DUP=1050, use=["no_wire", "no_fee", "no_dup"]),
-        dict(co="Mevagissey Fisheries Co.", ABB=74500, WIRE=3100, FEE=220, DUP=1380, use=["no_fee", "no_dup", "draft"]),
-        dict(co="Polruan Chandlery Co.", ABB=49200, WIRE=1850, FEE=140, DUP=920, use=["no_wire", "no_dup", "draft"]),
-        dict(co="Fowey Harbour Traders Co.", ABB=83600, WIRE=2950, FEE=260, DUP=1520, use=["no_wire", "no_fee", "draft"]),
-     ], "no_wire"),
+     ["ASC 305-10 (cash)", "Bank reconciliation practice (errors by the bank and by the depositor; unlocated differences)"],
+     cash_unrecon_shortage, [
+        dict(co="Lerryn Supply Co.", ABB=58900, DD=1240, WIRE=3400, DUP=650, SH=1860, use=["no_dd", "no_wire", "whole"]),
+        dict(co="Polkerris Fisheries Co.", ABB=74500, DD=1580, WIRE=4100, DUP=820, SH=2350, use=["no_wire", "no_dup", "whole"]),
+        dict(co="Pentewan Chandlery Co.", ABB=49200, DD=960, WIRE=2700, DUP=540, SH=1420, use=["no_dd", "no_dup", "no_wire"]),
+        dict(co="Charlestown Harbour Traders Co.", s="Charlestown", ABB=83600, DD=1870, WIRE=4600, DUP=910, SH=2740, use=["no_dd", "no_dup", "whole"]),
+     ], "no_dd"),
     ("far-cash-unreconciled-0005", A2, "Cash and cash equivalents", AN,
      ["ASC 305-10 (cash)", "Bank reconciliation practice (errors by the bank and by the depositor)"],
-     cash_unrecon_je, [
-        dict(co="St Mawes Marine Co.", ABB=67400, INSUR=410, DEP=980, CF=150, use=["no_insur", "no_je", "no_cf"]),
-        dict(co="Portloe Seafood Co.", ABB=54900, INSUR=320, DEP=740, CF=110, use=["no_je", "no_cf", "draft"]),
-        dict(co="Gorran Haven Fisheries Co.", ABB=72100, INSUR=460, DEP=1050, CF=190, use=["no_insur", "no_cf", "draft"]),
-        dict(co="Veryan Bay Traders Co.", ABB=46300, INSUR=270, DEP=610, CF=95, use=["no_insur", "no_je", "draft"]),
-     ], "no_je"),
+     cash_unrecon_misstated, [
+        dict(co="St Keverne Marine Co.", s="St Keverne", BB=66150, DIT=5070, OC=4250, chk="2217", CK=2180, CKe=2810, INSUR=410, DEP=980, CF=300, use=["no_je", "no_be", "no_insur"]),
+        dict(co="Portloe Seafood Co.", BB=53400, DIT=3960, OC=3120, chk="1408", CK=1640, CKe=2840, INSUR=320, DEP=740, CF=200, use=["no_be", "no_cf", "no_insur"]),
+        dict(co="Gorran Haven Fisheries Co.", s="Gorran Haven", BB=70230, DIT=5140, OC=4010, chk="3365", CK=2350, CKe=3250, INSUR=460, DEP=1050, CF=400, use=["no_je", "no_cf", "no_insur"]),
+        dict(co="Philleigh Traders Co.", BB=45060, DIT=3390, OC=2680, chk="0952", CK=1270, CKe=2470, INSUR=270, DEP=610, CF=100, use=["no_je", "no_be", "no_cf"]),
+     ], "no_be"),
     ("far-receivables-rollforward-0006", A2, "Trade receivables", AN,
-     ["ASC 310-10 (receivables)", "ASC 860-10-40 (transfers of receivables failing sale accounting: secured borrowing)", "ASC 606-10-25 (transfer of control; bill-and-hold arrangements)"],
-     ar_rollforward_recourse, [
-        dict(co="Tregony Supply Co.", B=520000, Rv=3150000, Cc=3080000, Wo=26000, Rec=72000, BH=48000, Reb=19000, use=["no_rec", "no_bh", "draft"]),
-        dict(co="Portreath Traders Co.", B=410000, Rv=2460000, Cc=2395000, Wo=21000, Rec=58000, BH=36000, Reb=15000, use=["no_bh", "no_reb", "draft"]),
-        dict(co="Perranarworthal Co.", B=630000, Rv=3820000, Cc=3725000, Wo=31000, Rec=85000, BH=55000, Reb=23000, use=["no_rec", "no_reb", "draft"]),
-        dict(co="St Agnes Wholesale Co.", B=355000, Rv=2080000, Cc=2030000, Wo=17000, Rec=46000, BH=29000, Reb=12000, use=["no_rec", "no_bh", "no_reb"]),
+     ["ASC 310-10 (receivables)", "ASC 860-10-40-5 (conditions for a transfer of financial assets to be a sale; otherwise a secured borrowing)", "ASC 606-10-55-81 to 55-84 (bill-and-hold arrangements)", "ASC 606-10-45-4 (receivables: unconditional right to consideration)"],
+     ar_ledger_postings, [
+        dict(co="Portreath Supply Co.", B=520000, Rv=3150000, Cc=3080000, Wo=26000, Rec=72000, BH=48000, CS=94000, use=["no_rec", "no_bh", "cs_wrong"]),
+        dict(co="Porthtowan Traders Co.", B=410000, Rv=2460000, Cc=2395000, Wo=21000, Rec=58000, BH=36000, CS=77000, use=["no_bh", "cs_wrong", "posted"]),
+        dict(co="Perranarworthal Wholesale Co.", B=630000, Rv=3820000, Cc=3725000, Wo=31000, Rec=85000, BH=55000, CS=112000, use=["no_rec", "cs_wrong", "posted"]),
+        dict(co="St Agnes Wholesale Co.", s="St Agnes", B=355000, Rv=2080000, Cc=2030000, Wo=17000, Rec=46000, BH=29000, CS=63000, use=["no_rec", "no_bh", "posted"]),
      ], "no_rec"),
     ("far-receivables-rollforward-0007", A2, "Trade receivables", AN,
-     ["ASC 310-10 (receivables)", "ASC 326-20-35 (write-offs and recoveries)", "ASC 606-10-25 (cutoff for sales returns)"],
+     ["ASC 310-10 (receivables; credit balances in customer accounts)", "ASC 326-20-35 (write-offs and recoveries)", "ASC 606-10-25 (cutoff for sales returns)"],
      ar_rollforward_creditbal, [
-        dict(co="Mylor Yacht Supply Co.", B=480000, Rv=2920000, Cc=2865000, Wo=24000, CB=15000, RA=9000, WR=6000, use=["no_cb", "no_ra", "wr_wrong"]),
-        dict(co="Flushing Marine Co.", B=365000, Rv=2210000, Cc=2168000, Wo=19000, CB=11000, RA=7000, WR=5000, use=["no_cb", "wr_wrong", "draft"]),
-        dict(co="Gweek Boatyard Co.", B=545000, Rv=3340000, Cc=3268000, Wo=28000, CB=18000, RA=11000, WR=8000, use=["no_ra", "wr_wrong", "draft"]),
-        dict(co="Constantine Chandlers Co.", B=298000, Rv=1860000, Cc=1819000, Wo=15000, CB=9000, RA=6000, WR=4000, use=["no_cb", "no_ra", "draft"]),
+        dict(co="Flushing Yacht Supply Co.", B=480000, Rv=2920000, Cc=2865000, Wo=24000, CB=15000, RA=9000, WR=6000, use=["no_cb", "no_ra", "wr_wrong"]),
+        dict(co="Gweek Boatyard Co.", B=365000, Rv=2210000, Cc=2168000, Wo=19000, CB=11000, RA=7000, WR=5000, use=["no_cb", "wr_wrong", "draft"]),
+        dict(co="Helford Marine Co.", B=545000, Rv=3340000, Cc=3268000, Wo=28000, CB=18000, RA=11000, WR=8000, use=["no_ra", "wr_wrong", "draft"]),
+        dict(co="Manaccan Chandlers Co.", B=298000, Rv=1860000, Cc=1819000, Wo=15000, CB=9000, RA=6000, WR=4000, use=["no_cb", "no_ra", "draft"]),
      ], "wr_wrong"),
     ("far-inventory-rollforward-0006", A2, "Inventory", AN,
-     ["ASC 330-10 (inventory)", "ASC 606-10-55 (consignment arrangements)"],
-     inv_rollforward_consign_in, [
-        dict(co="Pendeen Hardware Co.", B=210000, P=1480000, C=1395000, CI=34000, COL=52000, PD=12000, use=["no_ci", "no_col", "no_pd"]),
-        dict(co="Trewellard Supply Co.", B=165000, P=1120000, C=1055000, CI=26000, COL=40000, PD=9000, use=["no_col", "no_pd", "draft"]),
-        dict(co="St Just Builders Supply Co.", B=295000, P=1860000, C=1742000, CI=44000, COL=66000, PD=15000, use=["no_ci", "no_pd", "draft"]),
-        dict(co="Botallack Timber Co.", B=138000, P=940000, C=882000, CI=19000, COL=31000, PD=7000, use=["no_ci", "no_col", "draft"]),
-     ], "no_ci"),
+     ["ASC 330-10-30 (cost of inventory; cash discounts)", "ASC 606-10-55-79 to 55-80 (consignment arrangements)", "Inventory cutoff: FOB shipping point and purchase returns"],
+     inv_purchases_line, [
+        dict(co="Trewellard Hardware Co.", B=210000, P=1480000, C=1395000, CI=34000, PD=12000, RT=21000, TR=27000, use=["no_pd", "no_ci", "tr_wrong"]),
+        dict(co="St Just Builders Supply Co.", s="St Just", B=165000, P=1120000, C=1055000, CI=26000, PD=9000, RT=16000, TR=22000, use=["no_ci", "no_rt", "no_pd"]),
+        dict(co="Sennen Timber Co.", B=295000, P=1860000, C=1742000, CI=44000, PD=15000, RT=27000, TR=36000, use=["no_pd", "no_rt", "tr_wrong"]),
+        dict(co="St Buryan Supply Co.", s="St Buryan", B=138000, P=940000, C=882000, CI=19000, PD=7000, RT=13000, TR=17000, use=["tr_wrong", "no_ci", "no_rt"]),
+     ], "no_pd"),
     ("far-inventory-rollforward-0007", A2, "Inventory", AN,
-     ["ASC 330-10 (inventory; abnormal costs)", "ASC 330-10-30 (purchase rebates and cost of inventory)"],
-     inv_rollforward_bonded, [
-        dict(co="Hayle Industrial Co.", B=340000, P=2150000, C=2015000, SP=21000, BW=38000, RB=16000, use=["no_sp", "no_bw", "no_rb"]),
-        dict(co="Camborne Metals Co.", B=410000, P=2480000, C=2322000, SP=25000, BW=44000, RB=20000, use=["no_bw", "no_rb", "draft"]),
-        dict(co="Redruth Forge Co.", B=255000, P=1640000, C=1538000, SP=16000, BW=29000, RB=12000, use=["no_sp", "no_rb", "draft"]),
-        dict(co="Helston Steelworks Co.", B=298000, P=1920000, C=1801000, SP=18000, BW=33000, RB=14000, use=["no_sp", "no_bw", "draft"]),
-     ], "no_bw"),
+     ["ASC 330-10-35 (inventory write-downs; goods with no value)", "ASC 705-20 (consideration received from a vendor: volume rebates reduce the cost of purchases, allocated to goods on hand and goods sold)", "Inventory ownership: title passing at shipment"],
+     inv_perpetual_adjust, [
+        dict(co="Illogan Metals Supply Co.", E=475000, SP=21000, BW=38000, Q=400000, r=4, H=150000, use=["no_sp", "rb_full", "no_bw"]),
+        dict(co="Tuckingmill Steel Co.", E=568000, SP=25000, BW=44000, Q=500000, r=3, H=200000, use=["no_sp", "no_rb", "rb_full"]),
+        dict(co="Troon Alloys Co.", E=342000, SP=29000, BW=16000, Q=300000, r=5, H=120000, use=["no_sp", "no_bw", "rb_full"]),
+        dict(co="Praze Metals Co.", E=418000, SP=18000, BW=33000, Q=450000, r=4, H=125000, use=["no_sp", "no_rb", "no_bw"]),
+     ], "rb_full"),
     ("far-ppe-rollforward-0006", A2, "Property, plant and equipment", AN,
-     ["ASC 360-10-30 (cost of property, plant and equipment: sales tax and delivery charges capitalized)", "ASC 360-10-25 (insurance and other period costs expensed)"],
-     ppe_rollforward_cost, [
-        dict(co="Zelah Fabrication Co.", B=2850000, P=640000, Disp=85000, ST=28000, RECLASS=52000, REMOVE=15000, use=["no_st", "reclass_wrong", "no_remove"]),
-        dict(co="Goonhavern Castings Co.", B=1960000, P=430000, Disp=58000, ST=19000, RECLASS=36000, REMOVE=10000, use=["reclass_wrong", "no_remove", "draft"]),
-        dict(co="Indian Queens Metalworks Co.", B=3340000, P=790000, Disp=102000, ST=34000, RECLASS=61000, REMOVE=18000, use=["no_st", "no_remove", "draft"]),
-        dict(co="Bugle Quarry Equipment Co.", B=2240000, P=510000, Disp=66000, ST=22000, RECLASS=41000, REMOVE=12000, use=["no_st", "reclass_wrong", "draft"]),
-     ], "reclass_wrong"),
+     ["ASC 360-10-30 (cost of property, plant and equipment: costs to bring an asset to its location and condition for use)", "Land improvements as a separate class of property, plant and equipment"],
+     ppe_additions, [
+        dict(co="Indian Queens Fabrication Co.", s="Indian Queens", AD=640000, FINE=4800, TI=6500, INS=11200, LOT=52000, use=["no_ti", "no_fine", "lot_wrong"]),
+        dict(co="Fraddon Castings Co.", AD=430000, FINE=3600, TI=4900, INS=8400, LOT=36000, use=["lot_wrong", "no_ins", "no_ti"]),
+        dict(co="St Dennis Metalworks Co.", s="St Dennis", AD=790000, FINE=5200, TI=7800, INS=13600, LOT=61000, use=["no_fine", "no_ins", "no_ti"]),
+        dict(co="Roche Quarry Equipment Co.", AD=510000, FINE=4100, TI=5600, INS=9800, LOT=41000, use=["no_ti", "no_ins", "lot_wrong"]),
+     ], "no_ti"),
     ("far-intangibles-cloud-computing-0002", A2, "Intangible assets", AP,
-     ["ASC 350-40 (internal-use software; implementation costs of a hosting arrangement that is a service contract)", "ASU 2018-15 (customer's accounting for implementation costs in a cloud computing arrangement)", "ASU 2025-06 (targeted improvements to internal-use software; same result here)"],
-     cloud_computing_asset, [
-        dict(co="Perrancombe Logistics Co.", T1=4, T2=2, INT=216000, EV=22000, DM=30000, TRAIN=16000, GLM=7, glive="July 1", use=["no_renewal", "capitalize_dm", "full_year"]),
-        dict(co="Trebarwith Freight Co.", T1=5, T2=3, INT=256000, EV=26000, DM=32000, TRAIN=18000, GLM=4, glive="April 1", use=["capitalize_dm", "full_year", "no_amort"]),
-        dict(co="Delabole Transport Co.", T1=3, T2=3, INT=198000, EV=19000, DM=27000, TRAIN=14000, GLM=10, glive="October 1", use=["no_renewal", "full_year", "no_amort"]),
-        dict(co="Bodmin Haulage Co.", T1=4, T2=4, INT=264000, EV=24000, DM=36000, TRAIN=17000, GLM=5, glive="May 1", use=["no_renewal", "capitalize_dm", "no_amort"]),
-     ], "no_renewal"),
+     ["ASC 350-40 (internal-use software; implementation costs of a hosting arrangement that is a service contract; amortization over the term of the hosting arrangement from each module's ready-for-use date)", "ASU 2018-15 (customer's accounting for implementation costs in a cloud computing arrangement)", "ASU 2025-06 (targeted improvements to internal-use software; same result here)", "ASC 720-45 (business process reengineering costs expensed)"],
+     cloud_modules, [
+        dict(co="Perrancombe Logistics Co.", T=4, Rn=2, X=225000, mA=4, Y=117000, mB=10, BPR=36000, use=["full_term", "same_date", "with_renewal"]),
+        dict(co="Lanivet Freight Co.", T=5, Rn=3, X=232000, mA=3, Y=130000, mB=9, BPR=42000, use=["from_start", "same_date", "cap_bpr"]),
+        dict(co="St Breward Transport Co.", s="St Breward", T=3, Rn=2, X=180000, mA=7, Y=104000, mB=11, BPR=28000, use=["with_renewal", "cap_bpr", "full_term"]),
+        dict(co="Blisland Haulage Co.", T=4, Rn=2, X=198000, mA=5, Y=164000, mB=8, BPR=33000, use=["full_term", "from_start", "same_date"]),
+     ], "full_term"),
     ("far-exit-costs-0003", A2, "Payables and accrued liabilities", AP,
-     ["ASC 420-10-25 (one-time employee termination benefits: recognition when future service isn't required; contract termination costs; other associated costs)"],
+     ["ASC 420-10-25-4 to 25-9 (one-time employee termination benefits: no future service required, or ratable recognition when service extends beyond the minimum retention period)", "ASC 420-10-25-11 (contract termination costs)", "ASC 420-10-25-15 (other associated costs)"],
      exit_cost_timing, [
-        dict(co="Wadebridge Freight Co.", A=840000, K=65000, REL=38000, elapsed=2, total=5, n=70, comm="November 1", close="April 1", use=["prorate_wrong", "incl_k", "incl_rel"]),
-        dict(co="Launceston Carriers Co.", A=615000, K=48000, REL=27000, elapsed=3, total=6, n=55, comm="October 1", close="April 1", use=["incl_k", "incl_rel", "incl_both"]),
-        dict(co="Bideford Shipping Co.", A=980000, K=72000, REL=44000, elapsed=4, total=7, n=85, comm="September 1", close="April 1", use=["prorate_wrong", "incl_rel", "incl_both"]),
-        dict(co="Barnstaple Transit Co.", A=725000, K=55000, REL=31000, elapsed=1, total=4, n=60, comm="December 1", close="April 1", use=["prorate_wrong", "incl_k", "incl_both"]),
+        dict(co="Penzance Contact Services Co.", s="Penzance", A=840000, NB=12, SB=15000, K=65000, REL=38000, elapsed=2, total=6, n=70, comm="November 1", close="April 30", use=["prorate_wrong", "stay_full", "incl_k"]),
+        dict(co="Truro Customer Care Co.", s="Truro", A=615000, NB=9, SB=12000, K=48000, REL=27000, elapsed=3, total=6, n=55, comm="October 1", close="March 31", use=["no_stay", "incl_rel", "prorate_wrong"]),
+        dict(co="Kenwyn Teleservices Co.", A=980000, NB=14, SB=14000, K=72000, REL=44000, elapsed=4, total=7, n=85, comm="September 1", close="March 31", use=["stay_full", "incl_rel", "no_stay"]),
+        dict(co="Holywell Support Services Co.", A=725000, NB=10, SB=16000, K=55000, REL=31000, elapsed=1, total=4, n=60, comm="December 1", close="March 31", use=["prorate_wrong", "incl_k", "no_stay"]),
      ], "prorate_wrong"),
     ("far-bonds-premium-0002", A2, "Debt (Notes and bonds payable)", AP,
-     ["ASC 470-20-25 (debt issued with detachable stock warrants: relative fair value allocation)", "ASC 835-30 (interest method)"],
+     ["ASC 470-20-25-2 (debt issued with detachable stock purchase warrants: allocation by relative fair value)", "ASC 835-30 (interest method)"],
      bonds_warrants_interest, [
-        dict(co="Padstow Energy Corp.", F=1000000, SR=5, PR=955000, FVW=50000, BFV=950000, MR="7.4", use=["face_alloc", "stated_only", "no_second_amort"]),
-        dict(co="Bodmin Power Corp.", F=800000, SR=6, PR=776000, FVW=40000, BFV=780000, MR="8.6", use=["swap_alloc", "stated_only", "no_second_amort"]),
-        dict(co="Liskeard Utilities Corp.", F=1200000, SR=4, PR=1134000, FVW=60000, BFV=1140000, MR="6.8", use=["face_alloc", "swap_alloc", "stated_only"]),
-        dict(co="Saltash Energy Corp.", F=600000, SR=7, PR=584000, FVW=30000, BFV=585000, MR="9.4", use=["face_alloc", "stated_only", "no_second_amort"]),
-     ], "stated_only"),
+        dict(co="St Germans Energy Corp.", s="St Germans", F=1000000, SR=6, ER=8, BFV=882000, FVW=60000, issue="April 1", pay1="September 30", pay2="March 31", acc=3, use=["face_alloc", "stated_only", "no_accrual"]),
+        dict(co="Gunnislake Power Corp.", F=800000, SR=5, ER=7, BFV=700000, FVW=45000, issue="May 1", pay1="October 31", pay2="April 30", acc=2, use=["bfv_alloc", "face_alloc", "no_accrual"]),
+        dict(co="St Cleer Utilities Corp.", s="St Cleer", F=1200000, SR=4, ER=6, BFV=1042000, FVW=70000, issue="February 1", pay1="July 31", pay2="January 31", acc=5, use=["stated_only", "bfv_alloc", "no_accrual"]),
+        dict(co="Darite Energy Corp.", F=600000, SR=7, ER=9, BFV=533000, FVW=30000, issue="June 1", pay1="November 30", pay2="May 31", acc=1, use=["face_alloc", "bfv_alloc", "stated_only"]),
+     ], "face_alloc"),
     ("far-debt-covenant-0003", A2, "Debt (Debt covenant compliance)", AP,
-     ["Debt covenant compliance: interest coverage ratio as defined in the loan agreement"],
-     debt_covenant_ratio, [
-        dict(co="Wadebridge Components Inc.", NI=1240000, IE=310000, TAX=360000, GAIN=85000, REST=140000, min="4.00", use=["incl_gain", "excl_rest", "draft"]),
-        dict(co="Truro Fabrication Inc.", NI=980000, IE=245000, TAX=285000, GAIN=62000, REST=108000, min="4.25", use=["excl_rest", "no_tax_add", "draft"]),
-        dict(co="Penzance Castings Inc.", NI=1460000, IE=365000, TAX=420000, GAIN=96000, REST=172000, min="4.10", use=["incl_gain", "no_tax_add", "draft"]),
-        dict(co="Bodmin Machine Works Inc.", NI=870000, IE=218000, TAX=252000, GAIN=54000, REST=95000, min="4.00", use=["incl_gain", "excl_rest", "no_tax_add"]),
-     ], "draft"),
+     ["Debt covenant compliance: interest coverage as defined in the loan agreement"],
+     debt_covenant_cushion, [
+        dict(co="St Columb Components Inc.", s="St Columb", NI=1265000, IE=310000, TAX=360000, GAIN=85000, REST=140000, IMP=120000, min="4.00", use=["imp_wrong", "incl_gain", "excl_rest"]),
+        dict(co="Stratton Fabrication Inc.", NI=980000, IE=245000, TAX=285000, GAIN=62000, REST=108000, IMP=94000, min="4.25", use=["excl_rest", "no_tax", "imp_wrong"]),
+        dict(co="Kilkhampton Castings Inc.", NI=1460000, IE=365000, TAX=420000, GAIN=96000, REST=172000, IMP=138000, min="4.10", use=["incl_gain", "no_tax", "imp_wrong"]),
+        dict(co="Widemouth Machine Works Inc.", NI=870000, IE=218000, TAX=252000, GAIN=54000, REST=95000, IMP=77000, min="4.00", use=["incl_gain", "excl_rest", "no_tax"]),
+     ], "imp_wrong"),
 ]
+
+
+def names_unique():
+    """No company name or short name repeats within the batch (gate finding)."""
+    seen = {}
+    for fid, *_rest in FAMILIES:
+        for k, p in enumerate(_rest[-2]):
+            for nm in (p["co"], short(p)):
+                assert nm not in seen, f"{fid} v{k}: {nm!r} already used by {seen[nm]}"
+                seen[nm] = f"{fid} v{k}"
+            assert len(short(p)) > 3 or short(p) == "Looe", f"{fid} v{k}: short name {short(p)!r} is too short"
 
 
 def blind_files(items, scratch):
     """Stems and lettered choices only, for the blind verifier, plus a separate key file."""
-    lines, keys = ["# FAR batch 15: blind verification input", "",
+    lines, keys = ["# FAR batch 15 (revision 2): blind verification input", "",
                    "Each block is one version of a question. Solve each independently; choose one letter.", ""], {}
     for it in items:
         for k, v in enumerate([it] + list(it.get("variants") or [])):
@@ -528,6 +610,7 @@ def blind_files(items, scratch):
 
 
 def main():
+    names_unique()
     items = [family(*f) for f in FAMILIES]
     finalize(items)
     failed = False
