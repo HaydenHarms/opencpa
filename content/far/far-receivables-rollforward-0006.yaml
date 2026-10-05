@@ -1,0 +1,163 @@
+id: far-receivables-rollforward-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Trade receivables
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 310-10 (receivables)
+  - 'ASC 860-10-40 (transfers of receivables failing sale accounting: secured borrowing)'
+  - ASC 606-10-25 (transfer of control; bill-and-hold arrangements)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Tregony''s staff drafted this Year 2 rollforward of the accounts receivable control account: January
+  1 balance $520,000; plus credit sales $3,150,000; less cash collected from customers $3,080,000; less
+  accounts written off $26,000; December 31 balance $564,000. All of Tregony''s sales are on account.
+  Reviewing the draft, the controller finds: $72,000 of receivables that Tregony factored to a bank with
+  recourse, for which the draft removed the receivables and recorded the cash as a sale, though Tregony
+  remains obligated to repay the bank for any accounts the bank can''t collect; a $48,000 order that a
+  customer asked Tregony to invoice and hold in Tregony''s warehouse until the customer''s new store opens,
+  which the draft recorded as a completed sale even though the goods haven''t been shipped, aren''t identified
+  as the customer''s and remain available to fill other orders; and a $19,000 volume rebate owed to a
+  customer, which the draft''s cash collected figure already reflects as a reduction, rather than as a
+  separate liability. What amount of accounts receivable, before any allowance, should the corrected rollforward
+  report for Tregony at December 31, Year 2?'
+choices:
+- id: A
+  text: $497,000
+  rationale: Leaves the $72,000 of receivables factored with recourse out of the rollforward. Because
+    Tregony kept the risk of nonpayment, the transfer doesn't qualify as a sale; the receivables, and
+    an offsetting liability, stay on the books.
+- id: B
+  text: $564,000
+  rationale: Accepts the draft's $564,000, which removed the recourse-factored receivables as if sold,
+    counted the bill-and-hold order as a sale and left the rebate netted against collections.
+- id: C
+  text: $569,000
+  rationale: Correct. $564,000 + $72,000 − $48,000 − $19,000.
+- id: D
+  text: $617,000
+  rationale: Keeps the $48,000 bill-and-hold order as a completed sale. Control hadn't passed to the customer,
+    so it isn't a receivable.
+answer: C
+explanation: 'Receivables factored with recourse, where Tregony keeps the risk of nonpayment, are accounted
+  for as a secured borrowing, not a sale (ASC 860-10-40-5): the $72,000 stays in receivables (+ $72,000).
+  The bill-and-hold order doesn''t meet the criteria for control to have passed (the goods aren''t shipped,
+  aren''t identified as the customer''s, and Tregony can still redirect them), so it is removed (− $48,000).
+  Netting the $19,000 rebate against cash collected understated collections applied to customer accounts,
+  leaving ending receivables $19,000 too high (− $19,000). Corrected balance = $564,000 + $72,000 − $48,000
+  − $19,000 = $569,000.'
+variants:
+- stem: 'Portreath''s staff drafted this Year 2 rollforward of the accounts receivable control account:
+    January 1 balance $410,000; plus credit sales $2,460,000; less cash collected from customers $2,395,000;
+    less accounts written off $21,000; December 31 balance $454,000. All of Portreath''s sales are on
+    account. Reviewing the draft, the controller finds: $58,000 of receivables that Portreath factored
+    to a bank with recourse, for which the draft removed the receivables and recorded the cash as a sale,
+    though Portreath remains obligated to repay the bank for any accounts the bank can''t collect; a $36,000
+    order that a customer asked Portreath to invoice and hold in Portreath''s warehouse until the customer''s
+    new store opens, which the draft recorded as a completed sale even though the goods haven''t been
+    shipped, aren''t identified as the customer''s and remain available to fill other orders; and a $15,000
+    volume rebate owed to a customer, which the draft''s cash collected figure already reflects as a reduction,
+    rather than as a separate liability. What amount of accounts receivable, before any allowance, should
+    the corrected rollforward report for Portreath at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $454,000
+    rationale: Accepts the draft's $454,000, which removed the recourse-factored receivables as if sold,
+      counted the bill-and-hold order as a sale and left the rebate netted against collections.
+  - id: B
+    text: $461,000
+    rationale: Correct. $454,000 + $58,000 − $36,000 − $15,000.
+  - id: C
+    text: $476,000
+    rationale: Leaves the $15,000 volume rebate netted against cash collected. Recording it there understated
+      collections applied to customer accounts by $15,000, so ending receivables is $15,000 too high.
+  - id: D
+    text: $497,000
+    rationale: Keeps the $36,000 bill-and-hold order as a completed sale. Control hadn't passed to the
+      customer, so it isn't a receivable.
+  answer: B
+  explanation: 'Receivables factored with recourse, where Portreath keeps the risk of nonpayment, are
+    accounted for as a secured borrowing, not a sale (ASC 860-10-40-5): the $58,000 stays in receivables
+    (+ $58,000). The bill-and-hold order doesn''t meet the criteria for control to have passed (the goods
+    aren''t shipped, aren''t identified as the customer''s, and Portreath can still redirect them), so
+    it is removed (− $36,000). Netting the $15,000 rebate against cash collected understated collections
+    applied to customer accounts, leaving ending receivables $15,000 too high (− $15,000). Corrected balance
+    = $454,000 + $58,000 − $36,000 − $15,000 = $461,000.'
+- stem: 'Perranarworthal''s staff drafted this Year 2 rollforward of the accounts receivable control account:
+    January 1 balance $630,000; plus credit sales $3,820,000; less cash collected from customers $3,725,000;
+    less accounts written off $31,000; December 31 balance $694,000. All of Perranarworthal''s sales are
+    on account. Reviewing the draft, the controller finds: $85,000 of receivables that Perranarworthal
+    factored to a bank with recourse, for which the draft removed the receivables and recorded the cash
+    as a sale, though Perranarworthal remains obligated to repay the bank for any accounts the bank can''t
+    collect; a $55,000 order that a customer asked Perranarworthal to invoice and hold in Perranarworthal''s
+    warehouse until the customer''s new store opens, which the draft recorded as a completed sale even
+    though the goods haven''t been shipped, aren''t identified as the customer''s and remain available
+    to fill other orders; and a $23,000 volume rebate owed to a customer, which the draft''s cash collected
+    figure already reflects as a reduction, rather than as a separate liability. What amount of accounts
+    receivable, before any allowance, should the corrected rollforward report for Perranarworthal at December
+    31, Year 2?'
+  choices:
+  - id: A
+    text: $616,000
+    rationale: Leaves the $85,000 of receivables factored with recourse out of the rollforward. Because
+      Perranarworthal kept the risk of nonpayment, the transfer doesn't qualify as a sale; the receivables,
+      and an offsetting liability, stay on the books.
+  - id: B
+    text: $694,000
+    rationale: Accepts the draft's $694,000, which removed the recourse-factored receivables as if sold,
+      counted the bill-and-hold order as a sale and left the rebate netted against collections.
+  - id: C
+    text: $701,000
+    rationale: Correct. $694,000 + $85,000 − $55,000 − $23,000.
+  - id: D
+    text: $724,000
+    rationale: Leaves the $23,000 volume rebate netted against cash collected. Recording it there understated
+      collections applied to customer accounts by $23,000, so ending receivables is $23,000 too high.
+  answer: C
+  explanation: 'Receivables factored with recourse, where Perranarworthal keeps the risk of nonpayment,
+    are accounted for as a secured borrowing, not a sale (ASC 860-10-40-5): the $85,000 stays in receivables
+    (+ $85,000). The bill-and-hold order doesn''t meet the criteria for control to have passed (the goods
+    aren''t shipped, aren''t identified as the customer''s, and Perranarworthal can still redirect them),
+    so it is removed (− $55,000). Netting the $23,000 rebate against cash collected understated collections
+    applied to customer accounts, leaving ending receivables $23,000 too high (− $23,000). Corrected balance
+    = $694,000 + $85,000 − $55,000 − $23,000 = $701,000.'
+- stem: 'St''s staff drafted this Year 2 rollforward of the accounts receivable control account: January
+    1 balance $355,000; plus credit sales $2,080,000; less cash collected from customers $2,030,000; less
+    accounts written off $17,000; December 31 balance $388,000. All of St''s sales are on account. Reviewing
+    the draft, the controller finds: $46,000 of receivables that St factored to a bank with recourse,
+    for which the draft removed the receivables and recorded the cash as a sale, though St remains obligated
+    to repay the bank for any accounts the bank can''t collect; a $29,000 order that a customer asked
+    St to invoice and hold in St''s warehouse until the customer''s new store opens, which the draft recorded
+    as a completed sale even though the goods haven''t been shipped, aren''t identified as the customer''s
+    and remain available to fill other orders; and a $12,000 volume rebate owed to a customer, which the
+    draft''s cash collected figure already reflects as a reduction, rather than as a separate liability.
+    What amount of accounts receivable, before any allowance, should the corrected rollforward report
+    for St at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $347,000
+    rationale: Leaves the $46,000 of receivables factored with recourse out of the rollforward. Because
+      St kept the risk of nonpayment, the transfer doesn't qualify as a sale; the receivables, and an
+      offsetting liability, stay on the books.
+  - id: B
+    text: $393,000
+    rationale: Correct. $388,000 + $46,000 − $29,000 − $12,000.
+  - id: C
+    text: $405,000
+    rationale: Leaves the $12,000 volume rebate netted against cash collected. Recording it there understated
+      collections applied to customer accounts by $12,000, so ending receivables is $12,000 too high.
+  - id: D
+    text: $422,000
+    rationale: Keeps the $29,000 bill-and-hold order as a completed sale. Control hadn't passed to the
+      customer, so it isn't a receivable.
+  answer: B
+  explanation: 'Receivables factored with recourse, where St keeps the risk of nonpayment, are accounted
+    for as a secured borrowing, not a sale (ASC 860-10-40-5): the $46,000 stays in receivables (+ $46,000).
+    The bill-and-hold order doesn''t meet the criteria for control to have passed (the goods aren''t shipped,
+    aren''t identified as the customer''s, and St can still redirect them), so it is removed (− $29,000).
+    Netting the $12,000 rebate against cash collected understated collections applied to customer accounts,
+    leaving ending receivables $12,000 too high (− $12,000). Corrected balance = $388,000 + $46,000 −
+    $29,000 − $12,000 = $393,000.'

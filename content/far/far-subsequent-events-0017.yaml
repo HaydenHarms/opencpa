@@ -1,0 +1,125 @@
+id: far-subsequent-events-0017
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 855-10-25 (correction of a count error found before issuance) versus ASC 855-10-50 (nonrecognized
+    events disclosed only)
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Longstone Materials Co.''s draft December 31, 1, balance sheet reports total assets of $8,460,000.
+  The statements will be issued on March 14, 2. Before issuance: in January, Longstone found that one
+  storage area had been counted twice in the December 31 physical inventory, overstating the count by
+  $54,000; in February, a broad decline in equity markets cut $72,000 from the fair value of Longstone''s
+  portfolio of listed securities; and also in February, Longstone issued bonds for $900,000 in cash. What
+  total assets should Longstone report at December 31, 1?'
+choices:
+- id: A
+  text: $8,334,000
+  rationale: Also writes down the $72,000 drop in the fair value of Longstone's equity securities. The
+    decline followed a general market move after year-end and doesn't reflect conditions that existed
+    at December 31.
+- id: B
+  text: $8,406,000
+  rationale: Correct. $8,460,000 − $54,000 count correction.
+- id: C
+  text: $8,460,000
+  rationale: Leaves the $54,000 inventory count error uncorrected, even though it was found before the
+    statements were issued.
+- id: D
+  text: $9,288,000
+  rationale: Leaves the count error uncorrected while also deducting the equity securities decline and
+    adding the bond proceeds, the two events that don't affect the December 31 balance.
+answer: B
+explanation: 'The double-counted storage area is an error in the December 31 count, found before the statements
+  were issued, and is corrected in the December 31 balance: $8,460,000 − $54,000 = $8,406,000. The equity
+  market decline and the bond issuance both reflect conditions arising after year-end; they are disclosed
+  but don''t change the assets reported at December 31.'
+variants:
+- stem: 'Castlebrook Supply Co.''s draft December 31, 2, balance sheet reports total assets of $6,240,000.
+    The statements will be issued on April 2, 3. Before issuance: in February, Castlebrook found that
+    one storage area had been counted twice in the December 31 physical inventory, overstating the count
+    by $38,000; in March, a broad decline in equity markets cut $51,000 from the fair value of Castlebrook''s
+    portfolio of listed securities; and also in March, Castlebrook issued bonds for $650,000 in cash.
+    What total assets should Castlebrook report at December 31, 2?'
+  choices:
+  - id: A
+    text: $6,202,000
+    rationale: Correct. $6,240,000 − $38,000 count correction.
+  - id: B
+    text: $6,240,000
+    rationale: Leaves the $38,000 inventory count error uncorrected, even though it was found before the
+      statements were issued.
+  - id: C
+    text: $6,839,000
+    rationale: Leaves the count error uncorrected while also deducting the equity securities decline and
+      adding the bond proceeds, the two events that don't affect the December 31 balance.
+  - id: D
+    text: $6,852,000
+    rationale: Adds the $650,000 Castlebrook received from issuing bonds in March. That financing occurred
+      after year-end; the cash isn't on hand at December 31.
+  answer: A
+  explanation: 'The double-counted storage area is an error in the December 31 count, found before the
+    statements were issued, and is corrected in the December 31 balance: $6,240,000 − $38,000 = $6,202,000.
+    The equity market decline and the bond issuance both reflect conditions arising after year-end; they
+    are disclosed but don''t change the assets reported at December 31.'
+- stem: 'Ferrybridge Traders Co.''s draft December 31, 3, balance sheet reports total assets of $10,180,000.
+    The statements will be issued on March 20, 4. Before issuance: in January, Ferrybridge found that
+    one storage area had been counted twice in the December 31 physical inventory, overstating the count
+    by $71,000; in February, a broad decline in equity markets cut $96,000 from the fair value of Ferrybridge''s
+    portfolio of listed securities; and also in February, Ferrybridge issued bonds for $1,200,000 in cash.
+    What total assets should Ferrybridge report at December 31, 3?'
+  choices:
+  - id: A
+    text: $10,013,000
+    rationale: Also writes down the $96,000 drop in the fair value of Ferrybridge's equity securities.
+      The decline followed a general market move after year-end and doesn't reflect conditions that existed
+      at December 31.
+  - id: B
+    text: $10,109,000
+    rationale: Correct. $10,180,000 − $71,000 count correction.
+  - id: C
+    text: $11,284,000
+    rationale: Leaves the count error uncorrected while also deducting the equity securities decline and
+      adding the bond proceeds, the two events that don't affect the December 31 balance.
+  - id: D
+    text: $11,309,000
+    rationale: Adds the $1,200,000 Ferrybridge received from issuing bonds in February. That financing
+      occurred after year-end; the cash isn't on hand at December 31.
+  answer: B
+  explanation: 'The double-counted storage area is an error in the December 31 count, found before the
+    statements were issued, and is corrected in the December 31 balance: $10,180,000 − $71,000 = $10,109,000.
+    The equity market decline and the bond issuance both reflect conditions arising after year-end; they
+    are disclosed but don''t change the assets reported at December 31.'
+- stem: 'Oldfen Mercantile Co.''s draft December 31, 4, balance sheet reports total assets of $4,920,000.
+    The statements will be issued on April 8, 5. Before issuance: in February, Oldfen found that one storage
+    area had been counted twice in the December 31 physical inventory, overstating the count by $29,000;
+    in March, a broad decline in equity markets cut $40,000 from the fair value of Oldfen''s portfolio
+    of listed securities; and also in March, Oldfen issued bonds for $480,000 in cash. What total assets
+    should Oldfen report at December 31, 4?'
+  choices:
+  - id: A
+    text: $4,851,000
+    rationale: Also writes down the $40,000 drop in the fair value of Oldfen's equity securities. The
+      decline followed a general market move after year-end and doesn't reflect conditions that existed
+      at December 31.
+  - id: B
+    text: $4,891,000
+    rationale: Correct. $4,920,000 − $29,000 count correction.
+  - id: C
+    text: $4,920,000
+    rationale: Leaves the $29,000 inventory count error uncorrected, even though it was found before the
+      statements were issued.
+  - id: D
+    text: $5,371,000
+    rationale: Adds the $480,000 Oldfen received from issuing bonds in March. That financing occurred
+      after year-end; the cash isn't on hand at December 31.
+  answer: B
+  explanation: 'The double-counted storage area is an error in the December 31 count, found before the
+    statements were issued, and is corrected in the December 31 balance: $4,920,000 − $29,000 = $4,891,000.
+    The equity market decline and the bond issuance both reflect conditions arising after year-end; they
+    are disclosed but don''t change the assets reported at December 31.'

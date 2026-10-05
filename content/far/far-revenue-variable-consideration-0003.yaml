@@ -1,0 +1,146 @@
+id: far-revenue-variable-consideration-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 606-10-32-11 to 32-13 (constraining estimates of variable consideration)
+  notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On July 1, Year 1, Larkspur Sensors Co. begins shipping a newly developed sensor to a customer under
+  a multi-year supply contract; the contract price is $40 a unit, and Larkspur expects to ship about 24,000
+  units over the contract's life. In addition, Larkspur will earn a $6-a-unit bonus on every unit shipped
+  in Year 1 if an industry standards board approves the sensor's new calibration method by December 31,
+  Year 1 — a decision Larkspur's president calls a coin flip, because the board has never evaluated a
+  method like this one and has given no indication which way it will rule. Larkspur shipped 8,000 units
+  in Year 1. How much revenue should Larkspur recognize for the units shipped in Year 1?
+choices:
+- id: A
+  text: $0
+  rationale: Defers all Year 1 revenue until the board decides. The $40-a-unit base price isn't contingent
+    on the board's decision and is unconditional revenue as the units ship; only the uncertain bonus is
+    excluded.
+- id: B
+  text: $320,000
+  rationale: Correct. 8,000 units × $40 base price; the uncertain bonus is excluded from the transaction
+    price.
+- id: C
+  text: $368,000
+  rationale: Includes the full $6-a-unit bonus, as if the board's approval were already certain. The outcome
+    is highly uncertain and outside Larkspur's control, with no comparable experience to draw on, so the
+    bonus is constrained out of the transaction price until the board decides.
+- id: D
+  text: $960,000
+  rationale: Multiplies the price by the 24,000 units Larkspur expects to ship over the whole contract
+    instead of the 8,000 units actually shipped in Year 1.
+answer: B
+explanation: 'The $40 base price is unconditional and is recognized as each unit ships: 8,000 × $40 =
+  $320,000. The $6-a-unit bonus is variable consideration, but the board''s decision is highly susceptible
+  to factors outside Larkspur''s influence and Larkspur has no relevant experience with a similar method,
+  so including any part of it in the transaction price is excluded under the constraint on estimates of
+  variable consideration (ASC 606-10-32-11 to 32-13) until the board rules. Revenue for Year 1 = $320,000.'
+variants:
+- stem: On July 1, Year 1, Mertens Sensors Co. begins shipping a newly developed sensor to a customer
+    under a multi-year supply contract; the contract price is $65 a unit, and Mertens expects to ship
+    about 15,000 units over the contract's life. In addition, Mertens will earn a $9-a-unit bonus on every
+    unit shipped in Year 1 if an industry standards board approves the sensor's new calibration method
+    by December 31, Year 1 — a decision Mertens's president calls a coin flip, because the board has never
+    evaluated a method like this one and has given no indication which way it will rule. Mertens shipped
+    5,000 units in Year 1. How much revenue should Mertens recognize for the units shipped in Year 1?
+  choices:
+  - id: A
+    text: $0
+    rationale: Defers all Year 1 revenue until the board decides. The $65-a-unit base price isn't contingent
+      on the board's decision and is unconditional revenue as the units ship; only the uncertain bonus
+      is excluded.
+  - id: B
+    text: $325,000
+    rationale: Correct. 5,000 units × $65 base price; the uncertain bonus is excluded from the transaction
+      price.
+  - id: C
+    text: $347,500
+    rationale: Weights the bonus by a 50% chance of approval ($9 × 50%) and adds it to the price. An expected-value
+      estimate doesn't cure the constraint when the outcome is highly uncertain and outside Mertens's
+      control; the bonus is excluded entirely until the board decides.
+  - id: D
+    text: $975,000
+    rationale: Multiplies the price by the 15,000 units Mertens expects to ship over the whole contract
+      instead of the 5,000 units actually shipped in Year 1.
+  answer: B
+  explanation: 'The $65 base price is unconditional and is recognized as each unit ships: 5,000 × $65
+    = $325,000. The $9-a-unit bonus is variable consideration, but the board''s decision is highly susceptible
+    to factors outside Mertens''s influence and Mertens has no relevant experience with a similar method,
+    so including any part of it in the transaction price is excluded under the constraint on estimates
+    of variable consideration (ASC 606-10-32-11 to 32-13) until the board rules. Revenue for Year 1 =
+    $325,000.'
+- stem: On July 1, Year 1, Oswego Sensors Co. begins shipping a newly developed sensor to a customer under
+    a multi-year supply contract; the contract price is $28 a unit, and Oswego expects to ship about 36,000
+    units over the contract's life. In addition, Oswego will earn a $4-a-unit bonus on every unit shipped
+    in Year 1 if an industry standards board approves the sensor's new calibration method by December
+    31, Year 1 — a decision Oswego's president calls a coin flip, because the board has never evaluated
+    a method like this one and has given no indication which way it will rule. Oswego shipped 12,000 units
+    in Year 1. How much revenue should Oswego recognize for the units shipped in Year 1?
+  choices:
+  - id: A
+    text: $0
+    rationale: Defers all Year 1 revenue until the board decides. The $28-a-unit base price isn't contingent
+      on the board's decision and is unconditional revenue as the units ship; only the uncertain bonus
+      is excluded.
+  - id: B
+    text: $336,000
+    rationale: Correct. 12,000 units × $28 base price; the uncertain bonus is excluded from the transaction
+      price.
+  - id: C
+    text: $360,000
+    rationale: Weights the bonus by a 50% chance of approval ($4 × 50%) and adds it to the price. An expected-value
+      estimate doesn't cure the constraint when the outcome is highly uncertain and outside Oswego's control;
+      the bonus is excluded entirely until the board decides.
+  - id: D
+    text: $384,000
+    rationale: Includes the full $4-a-unit bonus, as if the board's approval were already certain. The
+      outcome is highly uncertain and outside Oswego's control, with no comparable experience to draw
+      on, so the bonus is constrained out of the transaction price until the board decides.
+  answer: B
+  explanation: 'The $28 base price is unconditional and is recognized as each unit ships: 12,000 × $28
+    = $336,000. The $4-a-unit bonus is variable consideration, but the board''s decision is highly susceptible
+    to factors outside Oswego''s influence and Oswego has no relevant experience with a similar method,
+    so including any part of it in the transaction price is excluded under the constraint on estimates
+    of variable consideration (ASC 606-10-32-11 to 32-13) until the board rules. Revenue for Year 1 =
+    $336,000.'
+- stem: On July 1, Year 1, Prescott Sensors Co. begins shipping a newly developed sensor to a customer
+    under a multi-year supply contract; the contract price is $52 a unit, and Prescott expects to ship
+    about 19,500 units over the contract's life. In addition, Prescott will earn a $7-a-unit bonus on
+    every unit shipped in Year 1 if an industry standards board approves the sensor's new calibration
+    method by December 31, Year 1 — a decision Prescott's president calls a coin flip, because the board
+    has never evaluated a method like this one and has given no indication which way it will rule. Prescott
+    shipped 6,500 units in Year 1. How much revenue should Prescott recognize for the units shipped in
+    Year 1?
+  choices:
+  - id: A
+    text: $338,000
+    rationale: Correct. 6,500 units × $52 base price; the uncertain bonus is excluded from the transaction
+      price.
+  - id: B
+    text: $360,750
+    rationale: Weights the bonus by a 50% chance of approval ($7 × 50%) and adds it to the price. An expected-value
+      estimate doesn't cure the constraint when the outcome is highly uncertain and outside Prescott's
+      control; the bonus is excluded entirely until the board decides.
+  - id: C
+    text: $383,500
+    rationale: Includes the full $7-a-unit bonus, as if the board's approval were already certain. The
+      outcome is highly uncertain and outside Prescott's control, with no comparable experience to draw
+      on, so the bonus is constrained out of the transaction price until the board decides.
+  - id: D
+    text: $1,014,000
+    rationale: Multiplies the price by the 19,500 units Prescott expects to ship over the whole contract
+      instead of the 6,500 units actually shipped in Year 1.
+  answer: A
+  explanation: 'The $52 base price is unconditional and is recognized as each unit ships: 6,500 × $52
+    = $338,000. The $7-a-unit bonus is variable consideration, but the board''s decision is highly susceptible
+    to factors outside Prescott''s influence and Prescott has no relevant experience with a similar method,
+    so including any part of it in the transaction price is excluded under the constraint on estimates
+    of variable consideration (ASC 606-10-32-11 to 32-13) until the board rules. Revenue for Year 1 =
+    $338,000.'

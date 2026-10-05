@@ -1,0 +1,151 @@
+id: far-ppe-rollforward-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Property, plant and equipment
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 360-10-30 (cost of property, plant and equipment: sales tax and delivery charges capitalized)'
+  - ASC 360-10-25 (insurance and other period costs expensed)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Zelah''s staff prepared this Year 2 rollforward of total property, plant and equipment, at cost:
+  January 1 balance $2,850,000; additions $640,000; disposals ($85,000); December 31 balance $3,405,000.
+  Reviewing the capital expenditures report, the controller finds: $28,000 of sales tax and delivery charges
+  on a new machine, paid in cash, was charged to a shipping and tax expense account instead of being added
+  to the machine''s cost; a $52,000 cost to resurface the parking lot was added to the buildings account
+  as an addition, though Zelah carries land improvements in a separate account depreciated over a shorter
+  life; and a $15,000 premium to insure a new piece of equipment during shipment was added to the equipment''s
+  cost. What should the corrected rollforward report as total property, plant and equipment, at cost,
+  at December 31, Year 2?'
+choices:
+- id: A
+  text: $3,366,000
+  rationale: Removes the $52,000 resurfacing cost entirely because it belongs in a separate land improvements
+    account rather than buildings. Moving it between property, plant and equipment accounts doesn't change
+    the $52,000 total reported for property, plant and equipment.
+- id: B
+  text: $3,390,000
+  rationale: Leaves the $28,000 of sales tax and delivery charges on the new machine expensed. These costs
+    are necessary to bring the asset to its intended location and condition and are part of its cost.
+- id: C
+  text: $3,418,000
+  rationale: Correct. $3,405,000 + $28,000 − $15,000; the $52,000 resurfacing cost changes which account
+    it's in, not the total.
+- id: D
+  text: $3,433,000
+  rationale: Keeps the $15,000 insurance premium to cover the new equipment during shipment capitalized.
+    Insuring an asset in transit is a period cost, not part of the asset's cost.
+answer: C
+explanation: Sales tax and delivery charges are necessary to bring an asset to its intended location and
+  condition and are capitalized (ASC 360-10-30), so the $28,000 is added. Moving the $52,000 resurfacing
+  cost from buildings to land improvements changes which account it sits in, but not the $52,000 total
+  for property, plant and equipment as a whole, so no dollar change is needed. Insurance on an asset in
+  transit is a period cost and is removed from the equipment's cost (− $15,000). Corrected total = $3,405,000
+  + $28,000 − $15,000 = $3,418,000.
+variants:
+- stem: 'Goonhavern''s staff prepared this Year 2 rollforward of total property, plant and equipment,
+    at cost: January 1 balance $1,960,000; additions $430,000; disposals ($58,000); December 31 balance
+    $2,332,000. Reviewing the capital expenditures report, the controller finds: $19,000 of sales tax
+    and delivery charges on a new machine, paid in cash, was charged to a shipping and tax expense account
+    instead of being added to the machine''s cost; a $36,000 cost to resurface the parking lot was added
+    to the buildings account as an addition, though Goonhavern carries land improvements in a separate
+    account depreciated over a shorter life; and a $10,000 premium to insure a new piece of equipment
+    during shipment was added to the equipment''s cost. What should the corrected rollforward report as
+    total property, plant and equipment, at cost, at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,305,000
+    rationale: Removes the $36,000 resurfacing cost entirely because it belongs in a separate land improvements
+      account rather than buildings. Moving it between property, plant and equipment accounts doesn't
+      change the $36,000 total reported for property, plant and equipment.
+  - id: B
+    text: $2,332,000
+    rationale: Accepts the draft's $2,332,000, which expenses the sales tax and delivery charges and capitalizes
+      the shipping insurance.
+  - id: C
+    text: $2,341,000
+    rationale: Correct. $2,332,000 + $19,000 − $10,000; the $36,000 resurfacing cost changes which account
+      it's in, not the total.
+  - id: D
+    text: $2,351,000
+    rationale: Keeps the $10,000 insurance premium to cover the new equipment during shipment capitalized.
+      Insuring an asset in transit is a period cost, not part of the asset's cost.
+  answer: C
+  explanation: Sales tax and delivery charges are necessary to bring an asset to its intended location
+    and condition and are capitalized (ASC 360-10-30), so the $19,000 is added. Moving the $36,000 resurfacing
+    cost from buildings to land improvements changes which account it sits in, but not the $36,000 total
+    for property, plant and equipment as a whole, so no dollar change is needed. Insurance on an asset
+    in transit is a period cost and is removed from the equipment's cost (− $10,000). Corrected total
+    = $2,332,000 + $19,000 − $10,000 = $2,341,000.
+- stem: 'Indian''s staff prepared this Year 2 rollforward of total property, plant and equipment, at cost:
+    January 1 balance $3,340,000; additions $790,000; disposals ($102,000); December 31 balance $4,028,000.
+    Reviewing the capital expenditures report, the controller finds: $34,000 of sales tax and delivery
+    charges on a new machine, paid in cash, was charged to a shipping and tax expense account instead
+    of being added to the machine''s cost; a $61,000 cost to resurface the parking lot was added to the
+    buildings account as an addition, though Indian carries land improvements in a separate account depreciated
+    over a shorter life; and an $18,000 premium to insure a new piece of equipment during shipment was
+    added to the equipment''s cost. What should the corrected rollforward report as total property, plant
+    and equipment, at cost, at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $4,010,000
+    rationale: Leaves the $34,000 of sales tax and delivery charges on the new machine expensed. These
+      costs are necessary to bring the asset to its intended location and condition and are part of its
+      cost.
+  - id: B
+    text: $4,028,000
+    rationale: Accepts the draft's $4,028,000, which expenses the sales tax and delivery charges and capitalizes
+      the shipping insurance.
+  - id: C
+    text: $4,044,000
+    rationale: Correct. $4,028,000 + $34,000 − $18,000; the $61,000 resurfacing cost changes which account
+      it's in, not the total.
+  - id: D
+    text: $4,062,000
+    rationale: Keeps the $18,000 insurance premium to cover the new equipment during shipment capitalized.
+      Insuring an asset in transit is a period cost, not part of the asset's cost.
+  answer: C
+  explanation: Sales tax and delivery charges are necessary to bring an asset to its intended location
+    and condition and are capitalized (ASC 360-10-30), so the $34,000 is added. Moving the $61,000 resurfacing
+    cost from buildings to land improvements changes which account it sits in, but not the $61,000 total
+    for property, plant and equipment as a whole, so no dollar change is needed. Insurance on an asset
+    in transit is a period cost and is removed from the equipment's cost (− $18,000). Corrected total
+    = $4,028,000 + $34,000 − $18,000 = $4,044,000.
+- stem: 'Bugle''s staff prepared this Year 2 rollforward of total property, plant and equipment, at cost:
+    January 1 balance $2,240,000; additions $510,000; disposals ($66,000); December 31 balance $2,684,000.
+    Reviewing the capital expenditures report, the controller finds: $22,000 of sales tax and delivery
+    charges on a new machine, paid in cash, was charged to a shipping and tax expense account instead
+    of being added to the machine''s cost; a $41,000 cost to resurface the parking lot was added to the
+    buildings account as an addition, though Bugle carries land improvements in a separate account depreciated
+    over a shorter life; and a $12,000 premium to insure a new piece of equipment during shipment was
+    added to the equipment''s cost. What should the corrected rollforward report as total property, plant
+    and equipment, at cost, at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $2,653,000
+    rationale: Removes the $41,000 resurfacing cost entirely because it belongs in a separate land improvements
+      account rather than buildings. Moving it between property, plant and equipment accounts doesn't
+      change the $41,000 total reported for property, plant and equipment.
+  - id: B
+    text: $2,672,000
+    rationale: Leaves the $22,000 of sales tax and delivery charges on the new machine expensed. These
+      costs are necessary to bring the asset to its intended location and condition and are part of its
+      cost.
+  - id: C
+    text: $2,684,000
+    rationale: Accepts the draft's $2,684,000, which expenses the sales tax and delivery charges and capitalizes
+      the shipping insurance.
+  - id: D
+    text: $2,694,000
+    rationale: Correct. $2,684,000 + $22,000 − $12,000; the $41,000 resurfacing cost changes which account
+      it's in, not the total.
+  answer: D
+  explanation: Sales tax and delivery charges are necessary to bring an asset to its intended location
+    and condition and are capitalized (ASC 360-10-30), so the $22,000 is added. Moving the $41,000 resurfacing
+    cost from buildings to land improvements changes which account it sits in, but not the $41,000 total
+    for property, plant and equipment as a whole, so no dollar change is needed. Insurance on an asset
+    in transit is a period cost and is removed from the equipment's cost (− $12,000). Corrected total
+    = $2,684,000 + $22,000 − $12,000 = $2,694,000.

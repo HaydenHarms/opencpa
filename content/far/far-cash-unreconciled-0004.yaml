@@ -1,0 +1,138 @@
+id: far-cash-unreconciled-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice (errors by the bank and by the depositor)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Tywardreath Supply Co.''s bank reconciliation, after deposits in transit and outstanding checks,
+  shows an adjusted bank balance of $58,900 at November 30. Its general ledger cash account, after recording
+  the bank''s service charges and collections already identified, shows $60,330, an unreconciled difference
+  of $1,430. Investigating, the controller finds: a $2,300 wire transfer that a customer''s remittance
+  advice said was sent to pay its account was actually misdirected by the customer''s bank to another
+  company''s account, and was never credited to Tywardreath''s account, though the collections department
+  recorded it as received; a $180 fee the bank charged for honoring Tywardreath''s stop-payment request
+  on an earlier check has not been recorded; and a $1,050 petty-cash replenishment check was recorded
+  twice in the cash disbursements journal. What is Tywardreath''s correct cash balance at November 30?'
+choices:
+- id: A
+  text: $57,850
+  rationale: Leaves the $1,050 petty-cash replenishment check recorded twice in the cash disbursements
+    journal.
+- id: B
+  text: $58,900
+  rationale: Correct. $60,330 − $2,300 − $180 + $1,050 = $58,900, agreeing with the adjusted bank balance.
+- id: C
+  text: $59,080
+  rationale: Leaves out the $180 fee the bank charged for honoring Tywardreath's stop-payment request,
+    which hasn't been recorded.
+- id: D
+  text: $61,200
+  rationale: Keeps the $2,300 wire transfer as a collection. The customer's bank sent it to another company's
+    account, so Tywardreath never received it.
+answer: B
+explanation: 'The adjusted bank balance, after deposits in transit and outstanding checks, is already
+  correct at $58,900. On the book side: the $2,300 wire was never actually received, since the customer''s
+  bank sent it to the wrong account, so it comes out; the $180 stop-payment fee reduces cash and hasn''t
+  been recorded; and the duplicate $1,050 disbursement overstated total disbursements, so it is added
+  back: $60,330 − $2,300 − $180 + $1,050 = $58,900.'
+variants:
+- stem: 'Mevagissey Fisheries Co.''s bank reconciliation, after deposits in transit and outstanding checks,
+    shows an adjusted bank balance of $74,500 at November 30. Its general ledger cash account, after recording
+    the bank''s service charges and collections already identified, shows $76,440, an unreconciled difference
+    of $1,940. Investigating, the controller finds: a $3,100 wire transfer that a customer''s remittance
+    advice said was sent to pay its account was actually misdirected by the customer''s bank to another
+    company''s account, and was never credited to Mevagissey''s account, though the collections department
+    recorded it as received; a $220 fee the bank charged for honoring Mevagissey''s stop-payment request
+    on an earlier check has not been recorded; and a $1,380 petty-cash replenishment check was recorded
+    twice in the cash disbursements journal. What is Mevagissey''s correct cash balance at November 30?'
+  choices:
+  - id: A
+    text: $73,120
+    rationale: Leaves the $1,380 petty-cash replenishment check recorded twice in the cash disbursements
+      journal.
+  - id: B
+    text: $74,500
+    rationale: Correct. $76,440 − $3,100 − $220 + $1,380 = $74,500, agreeing with the adjusted bank balance.
+  - id: C
+    text: $74,720
+    rationale: Leaves out the $220 fee the bank charged for honoring Mevagissey's stop-payment request,
+      which hasn't been recorded.
+  - id: D
+    text: $76,440
+    rationale: Accepts the book side's $76,440, which keeps the misdirected wire, omits the stop-payment
+      fee and leaves the duplicate disbursement.
+  answer: B
+  explanation: 'The adjusted bank balance, after deposits in transit and outstanding checks, is already
+    correct at $74,500. On the book side: the $3,100 wire was never actually received, since the customer''s
+    bank sent it to the wrong account, so it comes out; the $220 stop-payment fee reduces cash and hasn''t
+    been recorded; and the duplicate $1,380 disbursement overstated total disbursements, so it is added
+    back: $76,440 − $3,100 − $220 + $1,380 = $74,500.'
+- stem: 'Polruan Chandlery Co.''s bank reconciliation, after deposits in transit and outstanding checks,
+    shows an adjusted bank balance of $49,200 at November 30. Its general ledger cash account, after recording
+    the bank''s service charges and collections already identified, shows $50,270, an unreconciled difference
+    of $1,070. Investigating, the controller finds: a $1,850 wire transfer that a customer''s remittance
+    advice said was sent to pay its account was actually misdirected by the customer''s bank to another
+    company''s account, and was never credited to Polruan''s account, though the collections department
+    recorded it as received; a $140 fee the bank charged for honoring Polruan''s stop-payment request
+    on an earlier check has not been recorded; and a $920 petty-cash replenishment check was recorded
+    twice in the cash disbursements journal. What is Polruan''s correct cash balance at November 30?'
+  choices:
+  - id: A
+    text: $48,280
+    rationale: Leaves the $920 petty-cash replenishment check recorded twice in the cash disbursements
+      journal.
+  - id: B
+    text: $49,200
+    rationale: Correct. $50,270 − $1,850 − $140 + $920 = $49,200, agreeing with the adjusted bank balance.
+  - id: C
+    text: $50,270
+    rationale: Accepts the book side's $50,270, which keeps the misdirected wire, omits the stop-payment
+      fee and leaves the duplicate disbursement.
+  - id: D
+    text: $51,050
+    rationale: Keeps the $1,850 wire transfer as a collection. The customer's bank sent it to another
+      company's account, so Polruan never received it.
+  answer: B
+  explanation: 'The adjusted bank balance, after deposits in transit and outstanding checks, is already
+    correct at $49,200. On the book side: the $1,850 wire was never actually received, since the customer''s
+    bank sent it to the wrong account, so it comes out; the $140 stop-payment fee reduces cash and hasn''t
+    been recorded; and the duplicate $920 disbursement overstated total disbursements, so it is added
+    back: $50,270 − $1,850 − $140 + $920 = $49,200.'
+- stem: 'Fowey Harbour Traders Co.''s bank reconciliation, after deposits in transit and outstanding checks,
+    shows an adjusted bank balance of $83,600 at November 30. Its general ledger cash account, after recording
+    the bank''s service charges and collections already identified, shows $85,290, an unreconciled difference
+    of $1,690. Investigating, the controller finds: a $2,950 wire transfer that a customer''s remittance
+    advice said was sent to pay its account was actually misdirected by the customer''s bank to another
+    company''s account, and was never credited to Fowey''s account, though the collections department
+    recorded it as received; a $260 fee the bank charged for honoring Fowey''s stop-payment request on
+    an earlier check has not been recorded; and a $1,520 petty-cash replenishment check was recorded twice
+    in the cash disbursements journal. What is Fowey''s correct cash balance at November 30?'
+  choices:
+  - id: A
+    text: $83,600
+    rationale: Correct. $85,290 − $2,950 − $260 + $1,520 = $83,600, agreeing with the adjusted bank balance.
+  - id: B
+    text: $83,860
+    rationale: Leaves out the $260 fee the bank charged for honoring Fowey's stop-payment request, which
+      hasn't been recorded.
+  - id: C
+    text: $85,290
+    rationale: Accepts the book side's $85,290, which keeps the misdirected wire, omits the stop-payment
+      fee and leaves the duplicate disbursement.
+  - id: D
+    text: $86,550
+    rationale: Keeps the $2,950 wire transfer as a collection. The customer's bank sent it to another
+      company's account, so Fowey never received it.
+  answer: A
+  explanation: 'The adjusted bank balance, after deposits in transit and outstanding checks, is already
+    correct at $83,600. On the book side: the $2,950 wire was never actually received, since the customer''s
+    bank sent it to the wrong account, so it comes out; the $260 stop-payment fee reduces cash and hasn''t
+    been recorded; and the duplicate $1,520 disbursement overstated total disbursements, so it is added
+    back: $85,290 − $2,950 − $260 + $1,520 = $83,600.'

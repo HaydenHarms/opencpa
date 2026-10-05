@@ -1,0 +1,142 @@
+id: far-subsequent-events-0016
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - 'ASC 855-10-25-1 and 25-3 (recognized subsequent events: conditions existing at the balance sheet
+    date)'
+  - 'ASC 855-10-50 (nonrecognized subsequent events: conditions arising after that date, disclosed)'
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Ellersby Components Co.''s draft December 31, 1, balance sheet reports current assets of $2,460,000
+  and current liabilities of $1,180,000; the statements will be issued on March 10, 2. Between those dates:
+  a warranty claim on units Ellersby sold before year-end, for which Ellersby had accrued $52,000, was
+  settled for $81,000; a lawsuit over a 1 incident, for which Ellersby had accrued $160,000, was settled
+  for $215,000; and Marbury Exports Ltd., a customer that owed $140,000 at year-end and was current and
+  creditworthy then, defaulted on the balance after a new export-licensing regulation took effect in January,
+  2, cutting off its export business. What working capital (current assets minus current liabilities)
+  should Ellersby report at December 31, 1?'
+choices:
+- id: A
+  text: $1,056,000
+  rationale: Also writes down $140,000 of the receivable from Marbury Exports Ltd.. That customer was
+    current and financially sound at year-end; its default resulted from the export-licensing regulation
+    enacted in January, a condition that arose after year-end, so it is disclosed, not recognized.
+- id: B
+  text: $1,196,000
+  rationale: Correct. $2,460,000 current assets − ($1,180,000 current liabilities + $84,000 additional
+    accruals).
+- id: C
+  text: $1,225,000
+  rationale: Leaves out the additional $29,000 Ellersby owes on the warranty claim, which settled for
+    more than the $52,000 accrued at year-end for units sold before then.
+- id: D
+  text: $1,251,000
+  rationale: Leaves out the additional $55,000 Ellersby owes on the lawsuit, which settled for more than
+    the $160,000 accrued at year-end.
+answer: B
+explanation: 'The warranty and lawsuit settlements confirm conditions that existed at year-end and provide
+  a better estimate of amounts already accrued, so both are recognized: current liabilities rise by $29,000
+  and $55,000. Marbury Exports Ltd.''s default resulted from a regulation enacted after year-end, a condition
+  arising after the balance sheet date, so it is disclosed, not recognized, and the receivable isn''t
+  written down. Working capital = $2,460,000 − ($1,180,000 + $84,000) = $1,196,000.'
+variants:
+- stem: 'Thornleigh Devices Co.''s draft December 31, 2, balance sheet reports current assets of $3,180,000
+    and current liabilities of $1,540,000; the statements will be issued on March 18, 3. Between those
+    dates: a warranty claim on units Thornleigh sold before year-end, for which Thornleigh had accrued
+    $68,000, was settled for $97,000; a lawsuit over a 2 incident, for which Thornleigh had accrued $210,000,
+    was settled for $270,000; and Castleport Traders Ltd., a customer that owed $175,000 at year-end and
+    was current and creditworthy then, defaulted on the balance after a new customs-tariff order took
+    effect in February, 3, cutting off its export business. What working capital (current assets minus
+    current liabilities) should Thornleigh report at December 31, 2?'
+  choices:
+  - id: A
+    text: $1,551,000
+    rationale: Correct. $3,180,000 current assets − ($1,540,000 current liabilities + $89,000 additional
+      accruals).
+  - id: B
+    text: $1,580,000
+    rationale: Leaves out the additional $29,000 Thornleigh owes on the warranty claim, which settled
+      for more than the $68,000 accrued at year-end for units sold before then.
+  - id: C
+    text: $1,611,000
+    rationale: Leaves out the additional $60,000 Thornleigh owes on the lawsuit, which settled for more
+      than the $210,000 accrued at year-end.
+  - id: D
+    text: $1,640,000
+    rationale: Accepts the draft balances, $3,180,000 of current assets and $1,540,000 of current liabilities,
+      without adjusting for either settlement.
+  answer: A
+  explanation: 'The warranty and lawsuit settlements confirm conditions that existed at year-end and provide
+    a better estimate of amounts already accrued, so both are recognized: current liabilities rise by
+    $29,000 and $60,000. Castleport Traders Ltd.''s default resulted from a regulation enacted after year-end,
+    a condition arising after the balance sheet date, so it is disclosed, not recognized, and the receivable
+    isn''t written down. Working capital = $3,180,000 − ($1,540,000 + $89,000) = $1,551,000.'
+- stem: 'Mossgate Fabrications Co.''s draft December 31, 3, balance sheet reports current assets of $1,920,000
+    and current liabilities of $940,000; the statements will be issued on March 5, 4. Between those dates:
+    a warranty claim on units Mossgate sold before year-end, for which Mossgate had accrued $41,000, was
+    settled for $63,000; a lawsuit over a 3 incident, for which Mossgate had accrued $125,000, was settled
+    for $168,000; and Harrowfield Freight Ltd., a customer that owed $110,000 at year-end and was current
+    and creditworthy then, defaulted on the balance after a new trade-sanctions order took effect in January,
+    4, cutting off its export business. What working capital (current assets minus current liabilities)
+    should Mossgate report at December 31, 3?'
+  choices:
+  - id: A
+    text: $805,000
+    rationale: Also writes down $110,000 of the receivable from Harrowfield Freight Ltd.. That customer
+      was current and financially sound at year-end; its default resulted from the trade-sanctions order
+      enacted in January, a condition that arose after year-end, so it is disclosed, not recognized.
+  - id: B
+    text: $915,000
+    rationale: Correct. $1,920,000 current assets − ($940,000 current liabilities + $65,000 additional
+      accruals).
+  - id: C
+    text: $958,000
+    rationale: Leaves out the additional $43,000 Mossgate owes on the lawsuit, which settled for more
+      than the $125,000 accrued at year-end.
+  - id: D
+    text: $980,000
+    rationale: Accepts the draft balances, $1,920,000 of current assets and $940,000 of current liabilities,
+      without adjusting for either settlement.
+  answer: B
+  explanation: 'The warranty and lawsuit settlements confirm conditions that existed at year-end and provide
+    a better estimate of amounts already accrued, so both are recognized: current liabilities rise by
+    $22,000 and $43,000. Harrowfield Freight Ltd.''s default resulted from a regulation enacted after
+    year-end, a condition arising after the balance sheet date, so it is disclosed, not recognized, and
+    the receivable isn''t written down. Working capital = $1,920,000 − ($940,000 + $65,000) = $915,000.'
+- stem: 'Pemberfield Alloys Co.''s draft December 31, 4, balance sheet reports current assets of $2,720,000
+    and current liabilities of $1,360,000; the statements will be issued on March 22, 5. Between those
+    dates: a warranty claim on units Pemberfield sold before year-end, for which Pemberfield had accrued
+    $59,000, was settled for $88,000; a lawsuit over a 4 incident, for which Pemberfield had accrued $185,000,
+    was settled for $240,000; and Greystoke Imports Ltd., a customer that owed $155,000 at year-end and
+    was current and creditworthy then, defaulted on the balance after a new export-control amendment took
+    effect in February, 5, cutting off its export business. What working capital (current assets minus
+    current liabilities) should Pemberfield report at December 31, 4?'
+  choices:
+  - id: A
+    text: $1,121,000
+    rationale: Also writes down $155,000 of the receivable from Greystoke Imports Ltd.. That customer
+      was current and financially sound at year-end; its default resulted from the export-control amendment
+      enacted in February, a condition that arose after year-end, so it is disclosed, not recognized.
+  - id: B
+    text: $1,276,000
+    rationale: Correct. $2,720,000 current assets − ($1,360,000 current liabilities + $84,000 additional
+      accruals).
+  - id: C
+    text: $1,305,000
+    rationale: Leaves out the additional $29,000 Pemberfield owes on the warranty claim, which settled
+      for more than the $59,000 accrued at year-end for units sold before then.
+  - id: D
+    text: $1,360,000
+    rationale: Accepts the draft balances, $2,720,000 of current assets and $1,360,000 of current liabilities,
+      without adjusting for either settlement.
+  answer: B
+  explanation: 'The warranty and lawsuit settlements confirm conditions that existed at year-end and provide
+    a better estimate of amounts already accrued, so both are recognized: current liabilities rise by
+    $29,000 and $55,000. Greystoke Imports Ltd.''s default resulted from a regulation enacted after year-end,
+    a condition arising after the balance sheet date, so it is disclosed, not recognized, and the receivable
+    isn''t written down. Working capital = $2,720,000 − ($1,360,000 + $84,000) = $1,276,000.'

@@ -1,0 +1,148 @@
+id: far-nfp-contributed-services-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Revenue recognition
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 958-605-25-16 (contributed services: creating or enhancing a nonfinancial asset; specialized
+    skills)'
+  notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+stem: During Year 1, Fenwick Arts Center, a not-for-profit entity, received these donated services. A
+  volunteer architect designed a new gallery wing, services Fenwick would otherwise have paid $22,000
+  for. A group of volunteers with no construction training built a storage shed from a prefabricated kit,
+  work worth $9,000 at the rates a handyman service would charge, enhancing Fenwick's property even though
+  the volunteers used no specialized skill. A volunteer who is a database consultant spent a day helping
+  organize Fenwick's annual raffle, time worth $6,000 at her usual consulting rate, work that didn't call
+  on her database expertise. Other volunteers mowed Fenwick's lawn throughout the year, time worth $4,000
+  at local wage rates. What amount should Fenwick recognize as contributed services revenue for Year 1?
+choices:
+- id: A
+  text: $22,000
+  rationale: Omits the $9,000 shed. Recognizing contributed services that create or enhance a nonfinancial
+    asset doesn't require the volunteers who provide them to have specialized skills (ASC 958-605-25-16).
+- id: B
+  text: $31,000
+  rationale: Correct. The architect's design work ($22,000) and the volunteer-built shed, which enhanced
+    Fenwick's property ($9,000).
+- id: C
+  text: $35,000
+  rationale: Includes the $4,000 of lawn mowing. Routine upkeep needs no specialized skill and doesn't
+    enhance a nonfinancial asset, so it isn't recognized.
+- id: D
+  text: $37,000
+  rationale: Includes the $6,000 of the database consultant's time helping organize the raffle. Her specialized
+    skill wasn't used in its specialty that day, so those services aren't recognized.
+answer: B
+explanation: Contributed services are recognized if they (a) create or enhance a nonfinancial asset, whether
+  or not the people providing them have specialized skills, or (b) require specialized skills, are provided
+  by people with those skills, and would typically need to be purchased if not donated (ASC 958-605-25-16).
+  The architect's design work meets both tests ($22,000); the shed meets only the first, but that is enough
+  ($9,000). The consultant's specialized skill wasn't used in its specialty, and routine lawn care needs
+  no special skill and creates no asset, so neither is recognized. Contributed services revenue = $31,000.
+variants:
+- stem: During Year 1, Garrity Arts Center, a not-for-profit entity, received these donated services.
+    A volunteer architect designed a new gallery wing, services Garrity would otherwise have paid $18,000
+    for. A group of volunteers with no construction training built a storage shed from a prefabricated
+    kit, work worth $7,000 at the rates a handyman service would charge, enhancing Garrity's property
+    even though the volunteers used no specialized skill. A volunteer who is a database consultant spent
+    a day helping organize Garrity's annual raffle, time worth $5,000 at her usual consulting rate, work
+    that didn't call on her database expertise. Other volunteers mowed Garrity's lawn throughout the year,
+    time worth $3,500 at local wage rates. What amount should Garrity recognize as contributed services
+    revenue for Year 1?
+  choices:
+  - id: A
+    text: $7,000
+    rationale: Omits the architect's $18,000 design work, a specialized service Garrity would otherwise
+      have purchased.
+  - id: B
+    text: $25,000
+    rationale: Correct. The architect's design work ($18,000) and the volunteer-built shed, which enhanced
+      Garrity's property ($7,000).
+  - id: C
+    text: $28,500
+    rationale: Includes the $3,500 of lawn mowing. Routine upkeep needs no specialized skill and doesn't
+      enhance a nonfinancial asset, so it isn't recognized.
+  - id: D
+    text: $30,000
+    rationale: Includes the $5,000 of the database consultant's time helping organize the raffle. Her
+      specialized skill wasn't used in its specialty that day, so those services aren't recognized.
+  answer: B
+  explanation: Contributed services are recognized if they (a) create or enhance a nonfinancial asset,
+    whether or not the people providing them have specialized skills, or (b) require specialized skills,
+    are provided by people with those skills, and would typically need to be purchased if not donated
+    (ASC 958-605-25-16). The architect's design work meets both tests ($18,000); the shed meets only the
+    first, but that is enough ($7,000). The consultant's specialized skill wasn't used in its specialty,
+    and routine lawn care needs no special skill and creates no asset, so neither is recognized. Contributed
+    services revenue = $25,000.
+- stem: During Year 1, Holloway Arts Center, a not-for-profit entity, received these donated services.
+    A volunteer architect designed a new gallery wing, services Holloway would otherwise have paid $30,000
+    for. A group of volunteers with no construction training built a storage shed from a prefabricated
+    kit, work worth $12,000 at the rates a handyman service would charge, enhancing Holloway's property
+    even though the volunteers used no specialized skill. A volunteer who is a database consultant spent
+    a day helping organize Holloway's annual raffle, time worth $8,000 at her usual consulting rate, work
+    that didn't call on her database expertise. Other volunteers mowed Holloway's lawn throughout the
+    year, time worth $5,000 at local wage rates. What amount should Holloway recognize as contributed
+    services revenue for Year 1?
+  choices:
+  - id: A
+    text: $12,000
+    rationale: Omits the architect's $30,000 design work, a specialized service Holloway would otherwise
+      have purchased.
+  - id: B
+    text: $30,000
+    rationale: Omits the $12,000 shed. Recognizing contributed services that create or enhance a nonfinancial
+      asset doesn't require the volunteers who provide them to have specialized skills (ASC 958-605-25-16).
+  - id: C
+    text: $42,000
+    rationale: Correct. The architect's design work ($30,000) and the volunteer-built shed, which enhanced
+      Holloway's property ($12,000).
+  - id: D
+    text: $50,000
+    rationale: Includes the $8,000 of the database consultant's time helping organize the raffle. Her
+      specialized skill wasn't used in its specialty that day, so those services aren't recognized.
+  answer: C
+  explanation: Contributed services are recognized if they (a) create or enhance a nonfinancial asset,
+    whether or not the people providing them have specialized skills, or (b) require specialized skills,
+    are provided by people with those skills, and would typically need to be purchased if not donated
+    (ASC 958-605-25-16). The architect's design work meets both tests ($30,000); the shed meets only the
+    first, but that is enough ($12,000). The consultant's specialized skill wasn't used in its specialty,
+    and routine lawn care needs no special skill and creates no asset, so neither is recognized. Contributed
+    services revenue = $42,000.
+- stem: During Year 1, Ivester Arts Center, a not-for-profit entity, received these donated services.
+    A volunteer architect designed a new gallery wing, services Ivester would otherwise have paid $16,000
+    for. A group of volunteers with no construction training built a storage shed from a prefabricated
+    kit, work worth $6,000 at the rates a handyman service would charge, enhancing Ivester's property
+    even though the volunteers used no specialized skill. A volunteer who is a database consultant spent
+    a day helping organize Ivester's annual raffle, time worth $4,500 at her usual consulting rate, work
+    that didn't call on her database expertise. Other volunteers mowed Ivester's lawn throughout the year,
+    time worth $3,000 at local wage rates. What amount should Ivester recognize as contributed services
+    revenue for Year 1?
+  choices:
+  - id: A
+    text: $6,000
+    rationale: Omits the architect's $16,000 design work, a specialized service Ivester would otherwise
+      have purchased.
+  - id: B
+    text: $16,000
+    rationale: Omits the $6,000 shed. Recognizing contributed services that create or enhance a nonfinancial
+      asset doesn't require the volunteers who provide them to have specialized skills (ASC 958-605-25-16).
+  - id: C
+    text: $22,000
+    rationale: Correct. The architect's design work ($16,000) and the volunteer-built shed, which enhanced
+      Ivester's property ($6,000).
+  - id: D
+    text: $25,000
+    rationale: Includes the $3,000 of lawn mowing. Routine upkeep needs no specialized skill and doesn't
+      enhance a nonfinancial asset, so it isn't recognized.
+  answer: C
+  explanation: Contributed services are recognized if they (a) create or enhance a nonfinancial asset,
+    whether or not the people providing them have specialized skills, or (b) require specialized skills,
+    are provided by people with those skills, and would typically need to be purchased if not donated
+    (ASC 958-605-25-16). The architect's design work meets both tests ($16,000); the shed meets only the
+    first, but that is enough ($6,000). The consultant's specialized skill wasn't used in its specialty,
+    and routine lawn care needs no special skill and creates no asset, so neither is recognized. Contributed
+    services revenue = $22,000.

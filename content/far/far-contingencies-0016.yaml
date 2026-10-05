@@ -1,0 +1,119 @@
+id: far-contingencies-0016
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 330-10-35-17 (losses on noncancelable purchase commitments)
+  - 'ASC 450-20-25 (premium offers: liability for estimable redemption costs)'
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Harmondsgate Textiles Co. has a noncancelable, unhedged commitment to buy 40,000 units of cotton
+  yarn next year at a fixed price of $4.80 each; the year-end market price for the same delivery is $4.05
+  each. Separately, Harmondsgate offers a rebate-card premium offer with each unit it sells: 18,000 premiums
+  have been issued and are expected to be redeemed, each at a cost to Harmondsgate of $3.50, and 11,000
+  have been redeemed so far. What total liability should Harmondsgate report at year-end for the purchase
+  commitment and the premium offer?'
+choices:
+- id: A
+  text: $24,500
+  rationale: Leaves out the $30,000 loss on the purchase commitment, treating it as executory and unrecognized
+    even though it is noncancelable and enforceable and the loss is evident.
+- id: B
+  text: $30,000
+  rationale: Leaves out the $24,500 liability for premiums Harmondsgate expects customers to redeem.
+- id: C
+  text: $54,500
+  rationale: Correct. Commitment loss $30,000 + premium liability $24,500.
+- id: D
+  text: $216,500
+  rationale: Treats the whole $192,000 contract price as a current loss, rather than only the $30,000
+    by which the price exceeds the current market price.
+answer: C
+explanation: 'A noncancelable purchase commitment is recognized as a loss when the fixed price exceeds
+  the market price (ASC 330-10-35-17): 40,000 × ($4.80 − $4.05) = $30,000. The premium liability is the
+  estimated cost of premiums not yet redeemed: (18,000 − 11,000) × $3.50 = $24,500. Total liability =
+  $30,000 + $24,500 = $54,500.'
+variants:
+- stem: 'Westrill Fabrics Co. has a noncancelable, unhedged commitment to buy 60,000 units of synthetic
+    fiber next year at a fixed price of $3.20 each; the year-end market price for the same delivery is
+    $2.85 each. Separately, Westrill offers a loyalty-coupon premium offer with each unit it sells: 25,000
+    premiums have been issued and are expected to be redeemed, each at a cost to Westrill of $2.20, and
+    16,000 have been redeemed so far. What total liability should Westrill report at year-end for the
+    purchase commitment and the premium offer?'
+  choices:
+  - id: A
+    text: $21,000
+    rationale: Leaves out the $19,800 liability for premiums Westrill expects customers to redeem.
+  - id: B
+    text: $40,800
+    rationale: Correct. Commitment loss $21,000 + premium liability $19,800.
+  - id: C
+    text: $60,600
+    rationale: Bases the premium liability on all 25,000 premiums Westrill has issued to customers, rather
+      than the 9,000 still outstanding after the 16,000 already redeemed.
+  - id: D
+    text: $211,800
+    rationale: Treats the whole $192,000 contract price as a current loss, rather than only the $21,000
+      by which the price exceeds the current market price.
+  answer: B
+  explanation: 'A noncancelable purchase commitment is recognized as a loss when the fixed price exceeds
+    the market price (ASC 330-10-35-17): 60,000 × ($3.20 − $2.85) = $21,000. The premium liability is
+    the estimated cost of premiums not yet redeemed: (25,000 − 16,000) × $2.20 = $19,800. Total liability
+    = $21,000 + $19,800 = $40,800.'
+- stem: 'Allonby Weaving Co. has a noncancelable, unhedged commitment to buy 28,000 units of wool roving
+    next year at a fixed price of $6.40 each; the year-end market price for the same delivery is $5.60
+    each. Separately, Allonby offers a mail-in premium offer with each unit it sells: 14,000 premiums
+    have been issued and are expected to be redeemed, each at a cost to Allonby of $4.10, and 9,000 have
+    been redeemed so far. What total liability should Allonby report at year-end for the purchase commitment
+    and the premium offer?'
+  choices:
+  - id: A
+    text: $20,500
+    rationale: Leaves out the $22,400 loss on the purchase commitment, treating it as executory and unrecognized
+      even though it is noncancelable and enforceable and the loss is evident.
+  - id: B
+    text: $42,900
+    rationale: Correct. Commitment loss $22,400 + premium liability $20,500.
+  - id: C
+    text: $63,400
+    rationale: Bases the premium liability on all 14,000 premiums Allonby has issued to customers, rather
+      than the 5,000 still outstanding after the 9,000 already redeemed.
+  - id: D
+    text: $199,700
+    rationale: Treats the whole $179,200 contract price as a current loss, rather than only the $22,400
+      by which the price exceeds the current market price.
+  answer: B
+  explanation: 'A noncancelable purchase commitment is recognized as a loss when the fixed price exceeds
+    the market price (ASC 330-10-35-17): 28,000 × ($6.40 − $5.60) = $22,400. The premium liability is
+    the estimated cost of premiums not yet redeemed: (14,000 − 9,000) × $4.10 = $20,500. Total liability
+    = $22,400 + $20,500 = $42,900.'
+- stem: 'Pennybridge Mills Co. has a noncancelable, unhedged commitment to buy 52,000 units of dyed thread
+    next year at a fixed price of $2.95 each; the year-end market price for the same delivery is $2.50
+    each. Separately, Pennybridge offers a bonus-gift premium offer with each unit it sells: 21,000 premiums
+    have been issued and are expected to be redeemed, each at a cost to Pennybridge of $2.80, and 13,000
+    have been redeemed so far. What total liability should Pennybridge report at year-end for the purchase
+    commitment and the premium offer?'
+  choices:
+  - id: A
+    text: $22,400
+    rationale: Leaves out the $23,400 loss on the purchase commitment, treating it as executory and unrecognized
+      even though it is noncancelable and enforceable and the loss is evident.
+  - id: B
+    text: $23,400
+    rationale: Leaves out the $22,400 liability for premiums Pennybridge expects customers to redeem.
+  - id: C
+    text: $45,800
+    rationale: Correct. Commitment loss $23,400 + premium liability $22,400.
+  - id: D
+    text: $68,200
+    rationale: Bases the premium liability on all 21,000 premiums Pennybridge has issued to customers,
+      rather than the 8,000 still outstanding after the 13,000 already redeemed.
+  answer: C
+  explanation: 'A noncancelable purchase commitment is recognized as a loss when the fixed price exceeds
+    the market price (ASC 330-10-35-17): 52,000 × ($2.95 − $2.50) = $23,400. The premium liability is
+    the estimated cost of premiums not yet redeemed: (21,000 − 13,000) × $2.80 = $22,400. Total liability
+    = $23,400 + $22,400 = $45,800.'

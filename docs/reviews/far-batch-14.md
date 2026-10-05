@@ -63,7 +63,37 @@ Re-ran `audit()`, `lint.py` and `content:validate` after all fixes: zero warning
 
 ## Review gate
 
-TODO — per the stratified policy, all 5 Analysis items are gated in full (none rely on a template already seen, and `far-consolidated-statements-0012` and `far-notes-0009` are new templates for their tasks); the 13 Remembering and Understanding items are sampled at roughly 1 in 3 (about 4 items) since none carry variants and none touch a recently changed standard badly enough to require full-gate treatment, except `far-investments-fair-value-0006` (ASU 2016-01) and `far-sec-forms-0004` (current SEC Item 1C, adopted since the bank's earlier SEC-forms items), which should be gated in full as items relying on recently changed/updated standards and current forms.
+The batch has 18 items. The first gate pass covered 14 of them; the other 4 (all Remembering and Understanding recall items not yet touched by the first pass) went through a second, escalated pass. Both passes are below.
+
+### First pass (14 items)
+
+**Stratified gate** (independent gate agent, no access to this report or git history until after findings were drafted): 11 of 14 gated in full (the 5 Analysis families plus items on recently changed standards or new templates — `far-comprehensive-income-0006`, `far-investments-fair-value-0006`, `far-sec-forms-0004`, `far-nfp-financial-position-0006`, `far-nfp-net-assets-0002`, `far-nfp-cash-flows-0006`), and a random 3-item sample of the remaining 7 Remembering and Understanding recall items (`far-debt-modification-0002`, `far-equity-method-0004`, `far-sec-forms-0003`).
+
+**Result: passed.** Average estimated pass likelihood **86.3%** (up from batch 13's 84.2%), no wrong keys found in any of the 33 versions (including all 12 numeric Analysis variants, independently re-derived), no second defensible answer found on any item, no major-revision items. Two minor findings, both fixed:
+
+| Item | Gate finding | Fix |
+| --- | --- | --- |
+| `far-debt-modification-0002` | Mapped to II.H.1a ("Recall modification versus extinguishment criteria"), but the stem states the cash-flow test's conclusion outright ("after performing the required cash flow test, the change is accounted for as a modification") and tests fee treatment instead — it doesn't exercise the task's own judgment, and states as a given the one thing that judgment should test. | Deleted `far-debt-modification-0002` (never served; the project's never-reuse-an-id rule still applies, so the replacement is a new id) and wrote `far-debt-modification-0003` on the same task: it gives the facts for the 10% present-value cash-flow test under ASC 470-50-40 and asks what belongs in the new cash flows (a fee paid to/received from the lender, discounted at the original effective rate) versus what doesn't (third-party costs, an undiscounted total, a bare rate comparison). Updated `scripts/far-coverage.py`'s II.H.1a mapping from `-0002` to `-0003`. |
+| `far-sec-forms-0003` | Key B (107 characters) tied with distractor D (107 characters) for longest, and was built on a "which may be unaudited" hedge — a style tell the quality bar's length rule doesn't catch when the key only ties rather than uniquely exceeds. | Shortened and de-hedged the key to "Form 10-Q's interim statements, for the first three fiscal quarters, need not be audited" (88 characters, a flat statement, not a hedge); now shorter than every distractor (90/105/107). |
+
+A recheck blind file covering the two changed items (`far-debt-modification-0003` v0, `far-sec-forms-0003` v0) matched the key on a fresh blind pass: 2 of 2, no required fixes.
+
+### Escalation pass (the other 4 items)
+
+The first pass's 1-in-3 recall sample found minor issues on 2 of 3 items (67%), above the stratified policy's ~30% escalation trigger, so the lead escalated the 4 not-yet-gated recall items to a full gate: `far-comprehensive-income-0005`, `far-special-purpose-frameworks-0007`, `far-ratios-0008`, `far-investments-amortized-cost-0002`.
+
+**Result: average estimated pass likelihood ~72%** (below the ~80% bar), no wrong keys and no second defensible answer on any of the 4, but 3 of 4 needed fixes before shipping — all applied:
+
+| Item | Gate finding | Fix |
+| --- | --- | --- |
+| `far-comprehensive-income-0005` | Distractor C's stated dollar figure didn't match its own described computation ($340,000 − $25,000 − $60,000 − $45,000 + $200,000 = $410,000, not the $390,000 it said), and the choices led with narrative text instead of amounts, so they weren't in ascending numeric order (both hard requirements). | Rewrote all four choices as amount-only ($270,000 / $315,000 / $340,000 / $410,000, each a `Decimal` computed in the script), so `finalize()` sorts them ascending and assigns the key's letter from that order (now B); each rationale still names its specific error. |
+| `far-ratios-0008` | The stem's phrase "...could pay its currently maturing obligations even if it sold no additional inventory before they are due" restated the quick ratio's own defining logic almost verbatim — a quality-bar item 4 giveaway risk for an "identify the appropriate ratio" task. | Reworded the stem to state facts instead: most of Bewdley's current assets are inventory that turns over only about twice a year, with cash and receivables a much smaller share, and asks which ratio the supplier should compute — no mention of "selling inventory" or what any ratio measures. Checked the other three choices (current ratio, inventory turnover, working capital) are still each a distinct, non-defensible wrong answer against these facts. |
+| `far-investments-amortized-cost-0002` | Tagged to II.E.2a ("Identify investments eligible for amortized cost"), but the question tested whether a sale taints an *already-classified* held-to-maturity portfolio's continuing classification — a related but distinct judgment from initial eligibility. | Reworded the question to frame it as an eligibility question under the task's own verb: "which... sale would NOT prevent Teel from continuing to report its remaining held-to-maturity securities at amortized cost" — same facts, same four choices, same key (continuing eligibility for amortized-cost reporting is the content II.E.2a is read to cover here). |
+| `far-special-purpose-frameworks-0007` | Clean; exam-ready as written. | No change. |
+
+Re-ran `audit()`, `lint.py` and `pnpm`/`tsx content:validate` after all three fixes: zero new warnings, 113/113 FAR tasks still covered (other builders' parallel work added more mapped-but-unwritten ids in `far-coverage.py`, unrelated to this batch, and 380 total content files now validate). A recheck blind file covering the three changed items (`far-comprehensive-income-0005` v0, `far-ratios-0008` v0, `far-investments-amortized-cost-0002` v0) is at the scratch path for a fresh blind pass.
+
+Both gate passes also logged non-blocking suggestions for future batches (a harder Application-level NFP companion item, a sign-error distractor variant for `far-consolidated-statements-0012`, testing the stock-dividend 20–25% gray zone on a sibling I.A.4c item, coverage gaps for ASU 2025-12/2026-01, and a quality-bar wording clarification for word choices that embed a dollar figure) — left for the lead to prioritize, not actioned here since they're new-item requests or pipeline-doc changes, not fixes to this batch's existing items.
 
 ## Things I was unsure about
 

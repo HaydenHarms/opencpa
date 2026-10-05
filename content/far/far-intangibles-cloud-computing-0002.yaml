@@ -1,0 +1,159 @@
+id: far-intangibles-cloud-computing-0002
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Intangible assets
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 350-40 (internal-use software; implementation costs of a hosting arrangement that is a service
+    contract)
+  - ASU 2018-15 (customer's accounting for implementation costs in a cloud computing arrangement)
+  - ASU 2025-06 (targeted improvements to internal-use software; same result here)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Perrancombe Logistics Co. runs its inventory management entirely through a vendor's cloud platform
+  under a 4-year contract that began January 1, Year 1; Perrancombe never takes possession of the underlying
+  software, and management is confident Perrancombe will exercise the contract's renewal option for another
+  2 years once the initial term ends, since switching platforms would be disruptive. Perrancombe did not
+  begin using the system until July 1, Year 1, once setup was finished; getting there cost $22,000 to
+  compare and select a vendor, $216,000 to configure the system and build and test its interfaces, $30,000
+  to clean up and load historical data, and $16,000 to train staff on the new system. Perrancombe amortizes
+  capitalized implementation costs straight-line over the period it benefits from the arrangement. What
+  amount should Perrancombe report as its capitalized cloud computing implementation asset, net of amortization,
+  at December 31, Year 1?
+choices:
+- id: A
+  text: $180,000
+  rationale: Amortizes a full year's amount, $36,000, instead of the 6 months since the software became
+    ready for its intended use on July 1, Year 1.
+- id: B
+  text: $189,000
+  rationale: Amortizes the implementation costs only over the 4-year initial term, ignoring the 2-year
+    renewal. Because Perrancombe is reasonably certain to renew, the amortization period is the 6-year
+    combined term, the same period used to decide the arrangement isn't a lease.
+- id: C
+  text: $198,000
+  rationale: Correct. $216,000 − ($36,000 × 6/12).
+- id: D
+  text: $225,500
+  rationale: Capitalizes the $30,000 of data conversion costs along with the implementation costs. Data
+    conversion costs are expensed as incurred, not capitalized, under ASC 350-40.
+answer: C
+explanation: 'Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and testing
+  the hosting arrangement''s interfaces are capitalized; selecting a vendor ($22,000) is a preliminary-stage
+  cost and training ($16,000) and data conversion ($30,000) are expensed as incurred, whether or not the
+  project is likely to succeed. (ASU 2025-06''s revisions to internal-use software capitalization give
+  the same result for a hosting arrangement like this one.) The capitalized $216,000 is amortized over
+  the 6-year period Perrancombe benefits from the arrangement, the initial 4-year term plus the 2-year
+  renewal Perrancombe is reasonably certain to exercise, straight-line from July 1: $36,000 a year, or
+  $18,000 for the 6 months remaining in Year 1. Net asset = $216,000 − $18,000 = $198,000.'
+variants:
+- stem: Trebarwith Freight Co. runs its inventory management entirely through a vendor's cloud platform
+    under a 5-year contract that began January 1, Year 1; Trebarwith never takes possession of the underlying
+    software, and management is confident Trebarwith will exercise the contract's renewal option for another
+    3 years once the initial term ends, since switching platforms would be disruptive. Trebarwith did
+    not begin using the system until April 1, Year 1, once setup was finished; getting there cost $26,000
+    to compare and select a vendor, $256,000 to configure the system and build and test its interfaces,
+    $32,000 to clean up and load historical data, and $18,000 to train staff on the new system. Trebarwith
+    amortizes capitalized implementation costs straight-line over the period it benefits from the arrangement.
+    What amount should Trebarwith report as its capitalized cloud computing implementation asset, net
+    of amortization, at December 31, Year 1?
+  choices:
+  - id: A
+    text: $224,000
+    rationale: Amortizes a full year's amount, $32,000, instead of the 9 months since the software became
+      ready for its intended use on April 1, Year 1.
+  - id: B
+    text: $232,000
+    rationale: Correct. $256,000 − ($32,000 × 9/12).
+  - id: C
+    text: $256,000
+    rationale: Reports the implementation costs at their full $256,000, with no amortization for Year
+      1.
+  - id: D
+    text: $261,000
+    rationale: Capitalizes the $32,000 of data conversion costs along with the implementation costs. Data
+      conversion costs are expensed as incurred, not capitalized, under ASC 350-40.
+  answer: B
+  explanation: 'Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and
+    testing the hosting arrangement''s interfaces are capitalized; selecting a vendor ($26,000) is a preliminary-stage
+    cost and training ($18,000) and data conversion ($32,000) are expensed as incurred, whether or not
+    the project is likely to succeed. (ASU 2025-06''s revisions to internal-use software capitalization
+    give the same result for a hosting arrangement like this one.) The capitalized $256,000 is amortized
+    over the 8-year period Trebarwith benefits from the arrangement, the initial 5-year term plus the
+    3-year renewal Trebarwith is reasonably certain to exercise, straight-line from April 1: $32,000 a
+    year, or $24,000 for the 9 months remaining in Year 1. Net asset = $256,000 − $24,000 = $232,000.'
+- stem: Delabole Transport Co. runs its inventory management entirely through a vendor's cloud platform
+    under a 3-year contract that began January 1, Year 1; Delabole never takes possession of the underlying
+    software, and management is confident Delabole will exercise the contract's renewal option for another
+    3 years once the initial term ends, since switching platforms would be disruptive. Delabole did not
+    begin using the system until October 1, Year 1, once setup was finished; getting there cost $19,000
+    to compare and select a vendor, $198,000 to configure the system and build and test its interfaces,
+    $27,000 to clean up and load historical data, and $14,000 to train staff on the new system. Delabole
+    amortizes capitalized implementation costs straight-line over the period it benefits from the arrangement.
+    What amount should Delabole report as its capitalized cloud computing implementation asset, net of
+    amortization, at December 31, Year 1?
+  choices:
+  - id: A
+    text: $165,000
+    rationale: Amortizes a full year's amount, $33,000, instead of the 3 months since the software became
+      ready for its intended use on October 1, Year 1.
+  - id: B
+    text: $181,500
+    rationale: Amortizes the implementation costs only over the 3-year initial term, ignoring the 3-year
+      renewal. Because Delabole is reasonably certain to renew, the amortization period is the 6-year
+      combined term, the same period used to decide the arrangement isn't a lease.
+  - id: C
+    text: $189,750
+    rationale: Correct. $198,000 − ($33,000 × 3/12).
+  - id: D
+    text: $198,000
+    rationale: Reports the implementation costs at their full $198,000, with no amortization for Year
+      1.
+  answer: C
+  explanation: 'Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and
+    testing the hosting arrangement''s interfaces are capitalized; selecting a vendor ($19,000) is a preliminary-stage
+    cost and training ($14,000) and data conversion ($27,000) are expensed as incurred, whether or not
+    the project is likely to succeed. (ASU 2025-06''s revisions to internal-use software capitalization
+    give the same result for a hosting arrangement like this one.) The capitalized $198,000 is amortized
+    over the 6-year period Delabole benefits from the arrangement, the initial 3-year term plus the 3-year
+    renewal Delabole is reasonably certain to exercise, straight-line from October 1: $33,000 a year,
+    or $8,250 for the 3 months remaining in Year 1. Net asset = $198,000 − $8,250 = $189,750.'
+- stem: Bodmin Haulage Co. runs its inventory management entirely through a vendor's cloud platform under
+    a 4-year contract that began January 1, Year 1; Bodmin never takes possession of the underlying software,
+    and management is confident Bodmin will exercise the contract's renewal option for another 4 years
+    once the initial term ends, since switching platforms would be disruptive. Bodmin did not begin using
+    the system until May 1, Year 1, once setup was finished; getting there cost $24,000 to compare and
+    select a vendor, $264,000 to configure the system and build and test its interfaces, $36,000 to clean
+    up and load historical data, and $17,000 to train staff on the new system. Bodmin amortizes capitalized
+    implementation costs straight-line over the period it benefits from the arrangement. What amount should
+    Bodmin report as its capitalized cloud computing implementation asset, net of amortization, at December
+    31, Year 1?
+  choices:
+  - id: A
+    text: $220,000
+    rationale: Amortizes the implementation costs only over the 4-year initial term, ignoring the 4-year
+      renewal. Because Bodmin is reasonably certain to renew, the amortization period is the 8-year combined
+      term, the same period used to decide the arrangement isn't a lease.
+  - id: B
+    text: $242,000
+    rationale: Correct. $264,000 − ($33,000 × 8/12).
+  - id: C
+    text: $264,000
+    rationale: Reports the implementation costs at their full $264,000, with no amortization for Year
+      1.
+  - id: D
+    text: $275,000
+    rationale: Capitalizes the $36,000 of data conversion costs along with the implementation costs. Data
+      conversion costs are expensed as incurred, not capitalized, under ASC 350-40.
+  answer: B
+  explanation: 'Under ASC 350-40, as amended by ASU 2018-15, only the costs of configuring, coding and
+    testing the hosting arrangement''s interfaces are capitalized; selecting a vendor ($24,000) is a preliminary-stage
+    cost and training ($17,000) and data conversion ($36,000) are expensed as incurred, whether or not
+    the project is likely to succeed. (ASU 2025-06''s revisions to internal-use software capitalization
+    give the same result for a hosting arrangement like this one.) The capitalized $264,000 is amortized
+    over the 8-year period Bodmin benefits from the arrangement, the initial 4-year term plus the 4-year
+    renewal Bodmin is reasonably certain to exercise, straight-line from May 1: $33,000 a year, or $22,000
+    for the 8 months remaining in Year 1. Net asset = $264,000 − $22,000 = $242,000.'

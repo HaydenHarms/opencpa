@@ -1,0 +1,134 @@
+id: far-lessee-operating-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 842-20-30-3 (private-company risk-free rate practical expedient)
+  - ASC 842-10-15 (lease payments exclude a refundable security deposit)
+  notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Antrobus Textiles Co., a private company that has elected the risk-free rate practical expedient
+  for all its asset classes (ASC 842-20-30-3), leases warehouse space for 6 years under an operating lease.
+  Annual payments of $54,000 are due each January 1, beginning at commencement, and Antrobus made the
+  first payment on January 1, Year 1. Antrobus also paid the landlord a refundable security deposit of
+  $10,000 at commencement, which isn't rent and will be returned, undamaged space permitting, when the
+  lease ends. The risk-free rate for a 6-year lease term is 4.5%, which Antrobus uses instead of determining
+  a rate implicit in the lease or its own incremental borrowing rate. What amount should Antrobus initially
+  measure as its lease liability, immediately after the first payment?
+choices:
+- id: A
+  text: $237,060
+  rationale: Correct. $54,000 × 5.3900 = $291,060, less the $54,000 paid at commencement.
+- id: B
+  text: $247,060
+  rationale: Adds the $10,000 security deposit to the liability. The deposit is refundable and isn't rent,
+    so it is a separate deposit asset, not a lease payment (ASC 842-10-15).
+- id: C
+  text: $278,527
+  rationale: Discounts the payments with the ordinary annuity factor, 5.1579, as if each payment were
+    due at year end. Payments here are due at the start of each year, including at commencement.
+- id: D
+  text: $291,060
+  rationale: Doesn't deduct the $54,000 payment Antrobus made at commencement. That payment reduces the
+    liability at once.
+answer: A
+explanation: 'As a private company, Antrobus may elect to discount its leases at a risk-free rate instead
+  of determining its incremental borrowing rate (ASC 842-20-30-3), which it has done here. The security
+  deposit is refundable and isn''t rent, so it is recognized as a separate deposit asset, not part of
+  the lease liability. Because payments are due at the start of each period, the liability uses an annuity-due
+  factor: $54,000 × 5.3900 = $291,060, less the $54,000 paid at commencement, leaving $237,060.'
+variants:
+- stem: Bowness Textiles Co., a private company that has elected the risk-free rate practical expedient
+    for all its asset classes (ASC 842-20-30-3), leases warehouse space for 5 years under an operating
+    lease. Annual payments of $72,000 are due each January 1, beginning at commencement, and Bowness made
+    the first payment on January 1, Year 1. Bowness also paid the landlord a refundable security deposit
+    of $15,000 at commencement, which isn't rent and will be returned, undamaged space permitting, when
+    the lease ends. The risk-free rate for a 5-year lease term is 4%, which Bowness uses instead of determining
+    a rate implicit in the lease or its own incremental borrowing rate. What amount should Bowness initially
+    measure as its lease liability, immediately after the first payment?
+  choices:
+  - id: A
+    text: $246,353
+    rationale: Subtracts the $15,000 security deposit from the liability instead of recording it as a
+      separate asset.
+  - id: B
+    text: $261,353
+    rationale: Correct. $72,000 × 4.6299 = $333,353, less the $72,000 paid at commencement.
+  - id: C
+    text: $276,353
+    rationale: Adds the $15,000 security deposit to the liability. The deposit is refundable and isn't
+      rent, so it is a separate deposit asset, not a lease payment (ASC 842-10-15).
+  - id: D
+    text: $320,530
+    rationale: Discounts the payments with the ordinary annuity factor, 4.4518, as if each payment were
+      due at year end. Payments here are due at the start of each year, including at commencement.
+  answer: B
+  explanation: 'As a private company, Bowness may elect to discount its leases at a risk-free rate instead
+    of determining its incremental borrowing rate (ASC 842-20-30-3), which it has done here. The security
+    deposit is refundable and isn''t rent, so it is recognized as a separate deposit asset, not part of
+    the lease liability. Because payments are due at the start of each period, the liability uses an annuity-due
+    factor: $72,000 × 4.6299 = $333,353, less the $72,000 paid at commencement, leaving $261,353.'
+- stem: Calstock Textiles Co., a private company that has elected the risk-free rate practical expedient
+    for all its asset classes (ASC 842-20-30-3), leases warehouse space for 7 years under an operating
+    lease. Annual payments of $40,000 are due each January 1, beginning at commencement, and Calstock
+    made the first payment on January 1, Year 1. Calstock also paid the landlord a refundable security
+    deposit of $8,000 at commencement, which isn't rent and will be returned, undamaged space permitting,
+    when the lease ends. The risk-free rate for a 7-year lease term is 5%, which Calstock uses instead
+    of determining a rate implicit in the lease or its own incremental borrowing rate. What amount should
+    Calstock initially measure as its lease liability, immediately after the first payment?
+  choices:
+  - id: A
+    text: $195,028
+    rationale: Subtracts the $8,000 security deposit from the liability instead of recording it as a separate
+      asset.
+  - id: B
+    text: $203,028
+    rationale: Correct. $40,000 × 6.0757 = $243,028, less the $40,000 paid at commencement.
+  - id: C
+    text: $211,028
+    rationale: Adds the $8,000 security deposit to the liability. The deposit is refundable and isn't
+      rent, so it is a separate deposit asset, not a lease payment (ASC 842-10-15).
+  - id: D
+    text: $243,028
+    rationale: Doesn't deduct the $40,000 payment Calstock made at commencement. That payment reduces
+      the liability at once.
+  answer: B
+  explanation: 'As a private company, Calstock may elect to discount its leases at a risk-free rate instead
+    of determining its incremental borrowing rate (ASC 842-20-30-3), which it has done here. The security
+    deposit is refundable and isn''t rent, so it is recognized as a separate deposit asset, not part of
+    the lease liability. Because payments are due at the start of each period, the liability uses an annuity-due
+    factor: $40,000 × 6.0757 = $243,028, less the $40,000 paid at commencement, leaving $203,028.'
+- stem: Delamere Textiles Co., a private company that has elected the risk-free rate practical expedient
+    for all its asset classes (ASC 842-20-30-3), leases warehouse space for 4 years under an operating
+    lease. Annual payments of $95,000 are due each January 1, beginning at commencement, and Delamere
+    made the first payment on January 1, Year 1. Delamere also paid the landlord a refundable security
+    deposit of $20,000 at commencement, which isn't rent and will be returned, undamaged space permitting,
+    when the lease ends. The risk-free rate for a 4-year lease term is 3.5%, which Delamere uses instead
+    of determining a rate implicit in the lease or its own incremental borrowing rate. What amount should
+    Delamere initially measure as its lease liability, immediately after the first payment?
+  choices:
+  - id: A
+    text: $246,162
+    rationale: Subtracts the $20,000 security deposit from the liability instead of recording it as a
+      separate asset.
+  - id: B
+    text: $266,162
+    rationale: Correct. $95,000 × 3.8017 = $361,162, less the $95,000 paid at commencement.
+  - id: C
+    text: $348,945
+    rationale: Discounts the payments with the ordinary annuity factor, 3.6731, as if each payment were
+      due at year end. Payments here are due at the start of each year, including at commencement.
+  - id: D
+    text: $361,162
+    rationale: Doesn't deduct the $95,000 payment Delamere made at commencement. That payment reduces
+      the liability at once.
+  answer: B
+  explanation: 'As a private company, Delamere may elect to discount its leases at a risk-free rate instead
+    of determining its incremental borrowing rate (ASC 842-20-30-3), which it has done here. The security
+    deposit is refundable and isn''t rent, so it is recognized as a separate deposit asset, not part of
+    the lease liability. Because payments are due at the start of each period, the liability uses an annuity-due
+    factor: $95,000 × 3.8017 = $361,162, less the $95,000 paid at commencement, leaving $266,162.'

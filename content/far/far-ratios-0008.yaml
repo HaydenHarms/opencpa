@@ -11,27 +11,28 @@ review:
   - 'Financial statement analysis: the quick (acid-test) ratio excludes inventory and prepaid items from
     current assets'
   notes: Batch 14. Written from scratch; answers solved and every number and distractor computed in code.
-stem: A supplier is deciding whether to extend 30-day trade credit to Bewdley Retail Co. and wants to
-  know whether Bewdley could pay its currently maturing obligations even if it sold no additional inventory
-  before they are due. Which measure best answers that question?
+stem: Bewdley Retail Co. is negotiating 30-day trade credit terms with a new supplier. Most of Bewdley's
+  current assets are inventory, which turns over only about twice a year; cash and receivables make up
+  a much smaller share of current assets. Which ratio should the supplier compute before extending the
+  credit?
 choices:
 - id: A
-  text: The quick (acid-test) ratio
-  rationale: Correct. The quick ratio excludes inventory (and other current assets not readily convertible
-    to cash) from the numerator, testing whether more liquid assets alone cover current liabilities.
-- id: B
   text: 'The current ratio: current assets divided by current liabilities'
   rationale: The current ratio includes inventory in the numerator, so a company could show adequate current
     assets while still depending on selling inventory to pay its bills.
-- id: C
+- id: B
   text: 'Inventory turnover: cost of goods sold divided by average inventory'
   rationale: Inventory turnover measures how quickly inventory is sold and replaced; it does not test
     whether obligations can be paid without selling it.
-- id: D
+- id: C
   text: 'Working capital: current assets minus current liabilities'
   rationale: Working capital is a dollar amount, not scaled to the size of the obligations, and it still
     includes inventory in current assets.
-answer: A
+- id: D
+  text: The quick (acid-test) ratio
+  rationale: Correct. The quick ratio excludes inventory (and other current assets not readily convertible
+    to cash) from the numerator, testing whether more liquid assets alone cover current liabilities.
+answer: D
 explanation: The quick (acid-test) ratio divides the most liquid current assets, cash, marketable securities
   and receivables, by current liabilities, testing whether obligations could be met without relying on
   inventory sales. The current ratio and working capital both include inventory in current assets, and

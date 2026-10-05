@@ -1,0 +1,140 @@
+id: far-inventory-rollforward-0006
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Inventory
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 330-10 (inventory)
+  - ASC 606-10-55 (consignment arrangements)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Pendeen''s perpetual inventory records show a Year 2 rollforward of beginning inventory $210,000,
+  purchases $1,480,000, and cost of goods sold $1,395,000, for a draft December 31 balance of $295,000.
+  Reviewing the count and the purchase records, the controller finds: the count includes $34,000 of goods
+  a supplier shipped to Pendeen on consignment, which Pendeen may return unsold; $52,000 of Pendeen''s
+  own inventory, pledged as collateral for a bank loan, was removed from the inventory account when the
+  loan was obtained; and purchases are recorded under the net method, so $12,000 of discounts on invoices
+  Pendeen paid after the discount period, and so never took, reduced the recorded cost of goods still
+  on hand. What inventory should the corrected rollforward report at December 31, Year 2?'
+choices:
+- id: A
+  text: $273,000
+  rationale: Leaves out the $52,000 of inventory Pendeen pledged as collateral for a loan. Pledging goods
+    as security doesn't transfer ownership, so they remain Pendeen's inventory.
+- id: B
+  text: $313,000
+  rationale: Leaves purchases recorded net of the $12,000 of discounts Pendeen didn't take. Because Pendeen
+    paid after the discount period, the $12,000 is a financing cost, not a permanent reduction of inventory
+    cost.
+- id: C
+  text: $325,000
+  rationale: Correct. $295,000 − $34,000 + $52,000 + $12,000.
+- id: D
+  text: $359,000
+  rationale: Keeps the $34,000 of goods Pendeen holds on consignment from a supplier in inventory. Title
+    to consigned-in goods stays with the consignor until Pendeen sells them; they aren't Pendeen's inventory.
+answer: C
+explanation: Goods held on consignment from a supplier aren't Pendeen's inventory until Pendeen sells
+  them (ASC 606-10-55-80), so the $34,000 comes out. Pledging inventory as loan collateral doesn't change
+  who owns it, so the $52,000 of pledged goods belongs back in inventory. Discounts lost because an invoice
+  was paid late are a financing cost, not a reduction of inventory cost, so the $12,000 is restored. Corrected
+  inventory = $295,000 − $34,000 + $52,000 + $12,000 = $325,000.
+variants:
+- stem: 'Trewellard''s perpetual inventory records show a Year 2 rollforward of beginning inventory $165,000,
+    purchases $1,120,000, and cost of goods sold $1,055,000, for a draft December 31 balance of $230,000.
+    Reviewing the count and the purchase records, the controller finds: the count includes $26,000 of
+    goods a supplier shipped to Trewellard on consignment, which Trewellard may return unsold; $40,000
+    of Trewellard''s own inventory, pledged as collateral for a bank loan, was removed from the inventory
+    account when the loan was obtained; and purchases are recorded under the net method, so $9,000 of
+    discounts on invoices Trewellard paid after the discount period, and so never took, reduced the recorded
+    cost of goods still on hand. What inventory should the corrected rollforward report at December 31,
+    Year 2?'
+  choices:
+  - id: A
+    text: $213,000
+    rationale: Leaves out the $40,000 of inventory Trewellard pledged as collateral for a loan. Pledging
+      goods as security doesn't transfer ownership, so they remain Trewellard's inventory.
+  - id: B
+    text: $230,000
+    rationale: Accepts the draft's $230,000, which includes the consigned-in goods, excludes the pledged
+      inventory and records purchases net of the unclaimed discount.
+  - id: C
+    text: $244,000
+    rationale: Leaves purchases recorded net of the $9,000 of discounts Trewellard didn't take. Because
+      Trewellard paid after the discount period, the $9,000 is a financing cost, not a permanent reduction
+      of inventory cost.
+  - id: D
+    text: $253,000
+    rationale: Correct. $230,000 − $26,000 + $40,000 + $9,000.
+  answer: D
+  explanation: Goods held on consignment from a supplier aren't Trewellard's inventory until Trewellard
+    sells them (ASC 606-10-55-80), so the $26,000 comes out. Pledging inventory as loan collateral doesn't
+    change who owns it, so the $40,000 of pledged goods belongs back in inventory. Discounts lost because
+    an invoice was paid late are a financing cost, not a reduction of inventory cost, so the $9,000 is
+    restored. Corrected inventory = $230,000 − $26,000 + $40,000 + $9,000 = $253,000.
+- stem: 'St''s perpetual inventory records show a Year 2 rollforward of beginning inventory $295,000,
+    purchases $1,860,000, and cost of goods sold $1,742,000, for a draft December 31 balance of $413,000.
+    Reviewing the count and the purchase records, the controller finds: the count includes $44,000 of
+    goods a supplier shipped to St on consignment, which St may return unsold; $66,000 of St''s own inventory,
+    pledged as collateral for a bank loan, was removed from the inventory account when the loan was obtained;
+    and purchases are recorded under the net method, so $15,000 of discounts on invoices St paid after
+    the discount period, and so never took, reduced the recorded cost of goods still on hand. What inventory
+    should the corrected rollforward report at December 31, Year 2?'
+  choices:
+  - id: A
+    text: $413,000
+    rationale: Accepts the draft's $413,000, which includes the consigned-in goods, excludes the pledged
+      inventory and records purchases net of the unclaimed discount.
+  - id: B
+    text: $435,000
+    rationale: Leaves purchases recorded net of the $15,000 of discounts St didn't take. Because St paid
+      after the discount period, the $15,000 is a financing cost, not a permanent reduction of inventory
+      cost.
+  - id: C
+    text: $450,000
+    rationale: Correct. $413,000 − $44,000 + $66,000 + $15,000.
+  - id: D
+    text: $494,000
+    rationale: Keeps the $44,000 of goods St holds on consignment from a supplier in inventory. Title
+      to consigned-in goods stays with the consignor until St sells them; they aren't St's inventory.
+  answer: C
+  explanation: Goods held on consignment from a supplier aren't St's inventory until St sells them (ASC
+    606-10-55-80), so the $44,000 comes out. Pledging inventory as loan collateral doesn't change who
+    owns it, so the $66,000 of pledged goods belongs back in inventory. Discounts lost because an invoice
+    was paid late are a financing cost, not a reduction of inventory cost, so the $15,000 is restored.
+    Corrected inventory = $413,000 − $44,000 + $66,000 + $15,000 = $450,000.
+- stem: 'Botallack''s perpetual inventory records show a Year 2 rollforward of beginning inventory $138,000,
+    purchases $940,000, and cost of goods sold $882,000, for a draft December 31 balance of $196,000.
+    Reviewing the count and the purchase records, the controller finds: the count includes $19,000 of
+    goods a supplier shipped to Botallack on consignment, which Botallack may return unsold; $31,000 of
+    Botallack''s own inventory, pledged as collateral for a bank loan, was removed from the inventory
+    account when the loan was obtained; and purchases are recorded under the net method, so $7,000 of
+    discounts on invoices Botallack paid after the discount period, and so never took, reduced the recorded
+    cost of goods still on hand. What inventory should the corrected rollforward report at December 31,
+    Year 2?'
+  choices:
+  - id: A
+    text: $184,000
+    rationale: Leaves out the $31,000 of inventory Botallack pledged as collateral for a loan. Pledging
+      goods as security doesn't transfer ownership, so they remain Botallack's inventory.
+  - id: B
+    text: $196,000
+    rationale: Accepts the draft's $196,000, which includes the consigned-in goods, excludes the pledged
+      inventory and records purchases net of the unclaimed discount.
+  - id: C
+    text: $215,000
+    rationale: Correct. $196,000 − $19,000 + $31,000 + $7,000.
+  - id: D
+    text: $234,000
+    rationale: Keeps the $19,000 of goods Botallack holds on consignment from a supplier in inventory.
+      Title to consigned-in goods stays with the consignor until Botallack sells them; they aren't Botallack's
+      inventory.
+  answer: C
+  explanation: Goods held on consignment from a supplier aren't Botallack's inventory until Botallack
+    sells them (ASC 606-10-55-80), so the $19,000 comes out. Pledging inventory as loan collateral doesn't
+    change who owns it, so the $31,000 of pledged goods belongs back in inventory. Discounts lost because
+    an invoice was paid late are a financing cost, not a reduction of inventory cost, so the $7,000 is
+    restored. Corrected inventory = $196,000 − $19,000 + $31,000 + $7,000 = $215,000.

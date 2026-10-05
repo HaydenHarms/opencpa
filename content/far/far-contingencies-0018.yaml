@@ -1,0 +1,153 @@
+id: far-contingencies-0018
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 460-10-25 and 30 (guarantees recognized at inception fair value regardless of the likelihood of
+    payment)
+  - ASC 450-20-50 (disclosure of a loss contingency that cannot be estimated)
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Minutes of Marrowfield Industries Co.'s board meeting on November 14 record two matters. First,
+  directors discussed a patent-infringement suit a competitor filed against Marrowfield; the minutes note
+  counsel's statement that defending the suit will be costly and that, at this stage, counsel cannot assess
+  how the case is likely to come out or size any exposure. Second, the minutes record the board's approval,
+  that same day and for a separate fee paid by Dunscar Co., an unrelated company, of Marrowfield's guarantee
+  of Dunscar Co.'s $400,000 bank loan; Marrowfield's treasury staff estimated the guarantee's fair value
+  at inception at $14,000, based on market rates for comparable guarantees. At year-end, a credit report
+  in Marrowfield's files shows Dunscar Co. current on every loan payment and carrying an investment-grade
+  rating. What liability should Marrowfield report at year-end for these two matters?
+choices:
+- id: A
+  text: $0
+  rationale: Records no liability for the guarantee, because Dunscar Co. is still current on its payments.
+    A guarantee is recognized at its inception fair value when issued, regardless of whether a claim under
+    it is likely.
+- id: B
+  text: $14,000
+  rationale: Correct. Only the guarantee's $14,000 inception fair value is recognized.
+- id: C
+  text: $264,000
+  rationale: Adds $250,000 for the patent suit. The minutes record only that defense costs will be substantial
+    and that the board's own counsel could not yet size the exposure; with no estimate counsel will stand
+    behind, nothing is accrued.
+- id: D
+  text: $400,000
+  rationale: Uses the full $400,000 balance of the guaranteed loan. Marrowfield records the guarantee
+    at its $14,000 inception fair value, not the amount it would have to pay only if Dunscar Co. defaulted.
+answer: B
+explanation: 'A guarantee is recognized at its fair value when issued (ASC 460-10-25 and 30), regardless
+  of the likelihood that the guarantor will have to pay: Marrowfield recognizes the $14,000 inception
+  fair value as a liability (with an offsetting asset or expense, depending on what Marrowfield received
+  for giving it), and continues to carry it until the guarantee expires or Dunscar Co.''s performance
+  is assessed under the contingency guidance. Dunscar Co.''s current payment history doesn''t change that
+  initial recognition. The patent suit has no estimate counsel will support, so nothing is accrued for
+  it; Marrowfield discloses its existence.'
+variants:
+- stem: Minutes of Caldervale Products Co.'s board meeting on October 9 record two matters. First, directors
+    discussed a patent-infringement suit a competitor filed against Caldervale; the minutes note counsel's
+    statement that defending the suit will be costly and that, at this stage, counsel cannot assess how
+    the case is likely to come out or size any exposure. Second, the minutes record the board's approval,
+    that same day and for a separate fee paid by Brinton Co., an unrelated company, of Caldervale's guarantee
+    of Brinton Co.'s $550,000 bank loan; Caldervale's treasury staff estimated the guarantee's fair value
+    at inception at $19,000, based on market rates for comparable guarantees. At year-end, a credit report
+    in Caldervale's files shows Brinton Co. current on every loan payment and carrying an investment-grade
+    rating. What liability should Caldervale report at year-end for these two matters?
+  choices:
+  - id: A
+    text: $0
+    rationale: Records no liability for the guarantee, because Brinton Co. is still current on its payments.
+      A guarantee is recognized at its inception fair value when issued, regardless of whether a claim
+      under it is likely.
+  - id: B
+    text: $19,000
+    rationale: Correct. Only the guarantee's $19,000 inception fair value is recognized.
+  - id: C
+    text: $239,000
+    rationale: Accrues $220,000 for the patent suit based on a figure mentioned only in passing at the
+      board meeting, and $19,000 for the guarantee.
+  - id: D
+    text: $550,000
+    rationale: Uses the full $550,000 balance of the guaranteed loan. Caldervale records the guarantee
+      at its $19,000 inception fair value, not the amount it would have to pay only if Brinton Co. defaulted.
+  answer: B
+  explanation: 'A guarantee is recognized at its fair value when issued (ASC 460-10-25 and 30), regardless
+    of the likelihood that the guarantor will have to pay: Caldervale recognizes the $19,000 inception
+    fair value as a liability (with an offsetting asset or expense, depending on what Caldervale received
+    for giving it), and continues to carry it until the guarantee expires or Brinton Co.''s performance
+    is assessed under the contingency guidance. Brinton Co.''s current payment history doesn''t change
+    that initial recognition. The patent suit has no estimate counsel will support, so nothing is accrued
+    for it; Caldervale discloses its existence.'
+- stem: Minutes of Thornbury Mills Co.'s board meeting on December 3 record two matters. First, directors
+    discussed a patent-infringement suit a competitor filed against Thornbury; the minutes note counsel's
+    statement that defending the suit will be costly and that, at this stage, counsel cannot assess how
+    the case is likely to come out or size any exposure. Second, the minutes record the board's approval,
+    that same day and for a separate fee paid by Esher Co., an unrelated company, of Thornbury's guarantee
+    of Esher Co.'s $320,000 bank loan; Thornbury's treasury staff estimated the guarantee's fair value
+    at inception at $11,000, based on market rates for comparable guarantees. At year-end, a credit report
+    in Thornbury's files shows Esher Co. current on every loan payment and carrying an investment-grade
+    rating. What liability should Thornbury report at year-end for these two matters?
+  choices:
+  - id: A
+    text: $11,000
+    rationale: Correct. Only the guarantee's $11,000 inception fair value is recognized.
+  - id: B
+    text: $151,000
+    rationale: Accrues $140,000 for the patent suit based on a figure mentioned only in passing at the
+      board meeting, and $11,000 for the guarantee.
+  - id: C
+    text: $201,000
+    rationale: Adds $190,000 for the patent suit. The minutes record only that defense costs will be substantial
+      and that the board's own counsel could not yet size the exposure; with no estimate counsel will
+      stand behind, nothing is accrued.
+  - id: D
+    text: $320,000
+    rationale: Uses the full $320,000 balance of the guaranteed loan. Thornbury records the guarantee
+      at its $11,000 inception fair value, not the amount it would have to pay only if Esher Co. defaulted.
+  answer: A
+  explanation: 'A guarantee is recognized at its fair value when issued (ASC 460-10-25 and 30), regardless
+    of the likelihood that the guarantor will have to pay: Thornbury recognizes the $11,000 inception
+    fair value as a liability (with an offsetting asset or expense, depending on what Thornbury received
+    for giving it), and continues to carry it until the guarantee expires or Esher Co.''s performance
+    is assessed under the contingency guidance. Esher Co.''s current payment history doesn''t change that
+    initial recognition. The patent suit has no estimate counsel will support, so nothing is accrued for
+    it; Thornbury discloses its existence.'
+- stem: Minutes of Westvale Holdings Co.'s board meeting on September 22 record two matters. First, directors
+    discussed a patent-infringement suit a competitor filed against Westvale; the minutes note counsel's
+    statement that defending the suit will be costly and that, at this stage, counsel cannot assess how
+    the case is likely to come out or size any exposure. Second, the minutes record the board's approval,
+    that same day and for a separate fee paid by Garthwick Co., an unrelated company, of Westvale's guarantee
+    of Garthwick Co.'s $680,000 bank loan; Westvale's treasury staff estimated the guarantee's fair value
+    at inception at $24,000, based on market rates for comparable guarantees. At year-end, a credit report
+    in Westvale's files shows Garthwick Co. current on every loan payment and carrying an investment-grade
+    rating. What liability should Westvale report at year-end for these two matters?
+  choices:
+  - id: A
+    text: $0
+    rationale: Records no liability for the guarantee, because Garthwick Co. is still current on its payments.
+      A guarantee is recognized at its inception fair value when issued, regardless of whether a claim
+      under it is likely.
+  - id: B
+    text: $24,000
+    rationale: Correct. Only the guarantee's $24,000 inception fair value is recognized.
+  - id: C
+    text: $284,000
+    rationale: Accrues $260,000 for the patent suit based on a figure mentioned only in passing at the
+      board meeting, and $24,000 for the guarantee.
+  - id: D
+    text: $404,000
+    rationale: Adds $380,000 for the patent suit. The minutes record only that defense costs will be substantial
+      and that the board's own counsel could not yet size the exposure; with no estimate counsel will
+      stand behind, nothing is accrued.
+  answer: B
+  explanation: 'A guarantee is recognized at its fair value when issued (ASC 460-10-25 and 30), regardless
+    of the likelihood that the guarantor will have to pay: Westvale recognizes the $24,000 inception fair
+    value as a liability (with an offsetting asset or expense, depending on what Westvale received for
+    giving it), and continues to carry it until the guarantee expires or Garthwick Co.''s performance
+    is assessed under the contingency guidance. Garthwick Co.''s current payment history doesn''t change
+    that initial recognition. The patent suit has no estimate counsel will support, so nothing is accrued
+    for it; Westvale discloses its existence.'

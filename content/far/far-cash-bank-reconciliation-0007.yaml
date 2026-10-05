@@ -1,0 +1,124 @@
+id: far-cash-bank-reconciliation-0007
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice (errors by the bank and by the depositor)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Mevagissey Trawler Co.'s December 31 bank statement shows a balance of $61,200, which includes a
+  $610 deposit the bank credited to Mevagissey's account in error; the deposit belongs to another of the
+  bank's customers. The statement also shows $85 of interest the bank credited on the account, which Mevagissey
+  hasn't recorded. Deposits in transit total $4,300 and outstanding checks total $8,750, including a $940
+  check Mevagissey wrote and mailed to a supplier on December 29 that the supplier had not yet cashed
+  by December 31. Mevagissey's general ledger cash account shows $56,055. What is Mevagissey's correct
+  cash balance at December 31?
+choices:
+- id: A
+  text: $56,055
+  rationale: Leaves out the $85 of interest the bank credited on the account, which Mevagissey hasn't
+    recorded.
+- id: B
+  text: $56,140
+  rationale: Correct. $61,200 + $4,300 − $8,750 − $610 (bank side) = $56,055 + $85 (book side).
+- id: C
+  text: $56,750
+  rationale: Leaves the $610 deposit that the bank credited to Mevagissey's account in error in the bank
+    balance. It belongs to another of the bank's customers and must be removed.
+- id: D
+  text: $57,080
+  rationale: Removes the $940 check Mevagissey wrote and mailed on December 29 from the outstanding list
+    because the payee hadn't cashed it by year-end. A check mailed before year-end stays outstanding until
+    it clears, however long that takes; no adjustment is needed.
+answer: B
+explanation: 'Bank side: $61,200 + $4,300 − $8,750 − $610 (removing the bank''s misdirected deposit) =
+  $56,140. Book side: $56,055 + $85 (the uncredited interest) = $56,140. The $940 check mailed before
+  year-end properly stays on the outstanding list until the bank pays it; the delay in cashing it, by
+  itself, calls for no adjustment.'
+variants:
+- stem: Porthallow Fisheries Co.'s December 31 bank statement shows a balance of $74,500, which includes
+    a $780 deposit the bank credited to Porthallow's account in error; the deposit belongs to another
+    of the bank's customers. The statement also shows $110 of interest the bank credited on the account,
+    which Porthallow hasn't recorded. Deposits in transit total $5,600 and outstanding checks total $10,200,
+    including a $1,150 check Porthallow wrote and mailed to a supplier on December 29 that the supplier
+    had not yet cashed by December 31. Porthallow's general ledger cash account shows $69,010. What is
+    Porthallow's correct cash balance at December 31?
+  choices:
+  - id: A
+    text: $69,120
+    rationale: Correct. $74,500 + $5,600 − $10,200 − $780 (bank side) = $69,010 + $110 (book side).
+  - id: B
+    text: $69,790
+    rationale: Corrects neither the bank's $780 misdirected deposit nor the uncredited $110 of interest.
+  - id: C
+    text: $69,900
+    rationale: Leaves the $780 deposit that the bank credited to Porthallow's account in error in the
+      bank balance. It belongs to another of the bank's customers and must be removed.
+  - id: D
+    text: $70,270
+    rationale: Removes the $1,150 check Porthallow wrote and mailed on December 29 from the outstanding
+      list because the payee hadn't cashed it by year-end. A check mailed before year-end stays outstanding
+      until it clears, however long that takes; no adjustment is needed.
+  answer: A
+  explanation: 'Bank side: $74,500 + $5,600 − $10,200 − $780 (removing the bank''s misdirected deposit)
+    = $69,120. Book side: $69,010 + $110 (the uncredited interest) = $69,120. The $1,150 check mailed
+    before year-end properly stays on the outstanding list until the bank pays it; the delay in cashing
+    it, by itself, calls for no adjustment.'
+- stem: Looe Harbour Supply Co.'s December 31 bank statement shows a balance of $58,300, which includes
+    a $520 deposit the bank credited to Looe's account in error; the deposit belongs to another of the
+    bank's customers. The statement also shows $70 of interest the bank credited on the account, which
+    Looe hasn't recorded. Deposits in transit total $3,900 and outstanding checks total $7,650, including
+    an $860 check Looe wrote and mailed to a supplier on December 29 that the supplier had not yet cashed
+    by December 31. Looe's general ledger cash account shows $53,960. What is Looe's correct cash balance
+    at December 31?
+  choices:
+  - id: A
+    text: $53,960
+    rationale: Leaves out the $70 of interest the bank credited on the account, which Looe hasn't recorded.
+  - id: B
+    text: $54,030
+    rationale: Correct. $58,300 + $3,900 − $7,650 − $520 (bank side) = $53,960 + $70 (book side).
+  - id: C
+    text: $54,480
+    rationale: Corrects neither the bank's $520 misdirected deposit nor the uncredited $70 of interest.
+  - id: D
+    text: $54,890
+    rationale: Removes the $860 check Looe wrote and mailed on December 29 from the outstanding list because
+      the payee hadn't cashed it by year-end. A check mailed before year-end stays outstanding until it
+      clears, however long that takes; no adjustment is needed.
+  answer: B
+  explanation: 'Bank side: $58,300 + $3,900 − $7,650 − $520 (removing the bank''s misdirected deposit)
+    = $54,030. Book side: $53,960 + $70 (the uncredited interest) = $54,030. The $860 check mailed before
+    year-end properly stays on the outstanding list until the bank pays it; the delay in cashing it, by
+    itself, calls for no adjustment.'
+- stem: Newlyn Fish Market Co.'s December 31 bank statement shows a balance of $86,700, which includes
+    a $690 deposit the bank credited to Newlyn's account in error; the deposit belongs to another of the
+    bank's customers. The statement also shows $95 of interest the bank credited on the account, which
+    Newlyn hasn't recorded. Deposits in transit total $6,100 and outstanding checks total $12,400, including
+    a $1,020 check Newlyn wrote and mailed to a supplier on December 29 that the supplier had not yet
+    cashed by December 31. Newlyn's general ledger cash account shows $79,615. What is Newlyn's correct
+    cash balance at December 31?
+  choices:
+  - id: A
+    text: $79,615
+    rationale: Leaves out the $95 of interest the bank credited on the account, which Newlyn hasn't recorded.
+  - id: B
+    text: $79,710
+    rationale: Correct. $86,700 + $6,100 − $12,400 − $690 (bank side) = $79,615 + $95 (book side).
+  - id: C
+    text: $80,305
+    rationale: Corrects neither the bank's $690 misdirected deposit nor the uncredited $95 of interest.
+  - id: D
+    text: $80,400
+    rationale: Leaves the $690 deposit that the bank credited to Newlyn's account in error in the bank
+      balance. It belongs to another of the bank's customers and must be removed.
+  answer: B
+  explanation: 'Bank side: $86,700 + $6,100 − $12,400 − $690 (removing the bank''s misdirected deposit)
+    = $79,710. Book side: $79,615 + $95 (the uncredited interest) = $79,710. The $1,020 check mailed before
+    year-end properly stays on the outstanding list until the bank pays it; the delay in cashing it, by
+    itself, calls for no adjustment.'

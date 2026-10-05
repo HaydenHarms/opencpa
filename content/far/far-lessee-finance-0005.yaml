@@ -1,0 +1,130 @@
+id: far-lessee-finance-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Lessee accounting
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 842-20-25-4 to 25-6 (amortization of the right-of-use asset; purchase option reasonably certain)
+  notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+stem: On January 1, Year 1, Elmsworth Fabrication Co. leases a CNC machining center under a lease it classifies
+  as a finance lease. The lease term is 5 years, but the equipment's total useful life is 10 years, and
+  the lease grants Elmsworth an option to purchase the equipment at a price so far below its expected
+  fair value at that date that Elmsworth is reasonably certain to exercise it. The lease liability at
+  commencement is $320,000 (rounded), the annual payment of $78,000 is due each December 31, and the discount
+  rate is 6.00%. Elmsworth amortizes the right-of-use asset straight-line. What total lease-related expense
+  does Elmsworth recognize in Year 2?
+choices:
+- id: A
+  text: $15,672
+  rationale: Includes only interest. A finance lease also amortizes the right-of-use asset.
+- id: B
+  text: $32,000
+  rationale: Includes only amortization. A finance lease also has interest expense.
+- id: C
+  text: $47,672
+  rationale: Correct. Year 2 interest $15,672 on a $261,200 opening liability, plus $32,000 of amortization
+    over the equipment's 10-year useful life.
+- id: D
+  text: $79,672
+  rationale: Amortizes the right-of-use asset over the 5-year lease term, $320,000 ÷ 5 = $64,000. Because
+    the purchase option is reasonably certain to be exercised, Elmsworth amortizes it over the equipment's
+    10-year useful life instead (ASC 842-20-25-4 to 25-6).
+answer: C
+explanation: 'Because the purchase option is reasonably certain to be exercised, Elmsworth expects to
+  own the equipment after the lease, so it amortizes the right-of-use asset over the equipment''s 10-year
+  useful life rather than the 5-year lease term (ASC 842-20-25-4 to 25-6): $320,000 ÷ 10 = $32,000. Year
+  1: interest $19,200, principal reduction $58,800, ending liability $261,200. Year 2 interest = $261,200
+  × 6.00% = $15,672. Total Year 2 expense = $15,672 + $32,000 = $47,672.'
+variants:
+- stem: On January 1, Year 1, Framlingham Textiles Co. leases a weaving machine under a lease it classifies
+    as a finance lease. The lease term is 4 years, but the equipment's total useful life is 8 years, and
+    the lease grants Framlingham an option to purchase the equipment at a price so far below its expected
+    fair value at that date that Framlingham is reasonably certain to exercise it. The lease liability
+    at commencement is $210,000 (rounded), the annual payment of $62,000 is due each December 31, and
+    the discount rate is 5.00%. Framlingham amortizes the right-of-use asset straight-line. What total
+    lease-related expense does Framlingham recognize in Year 2?
+  choices:
+  - id: A
+    text: $26,250
+    rationale: Includes only amortization. A finance lease also has interest expense.
+  - id: B
+    text: $34,175
+    rationale: Correct. Year 2 interest $7,925 on a $158,500 opening liability, plus $26,250 of amortization
+      over the equipment's 8-year useful life.
+  - id: C
+    text: $36,750
+    rationale: Uses Year 1 interest, $10,500, instead of reducing the liability for the Year 1 principal
+      payment first.
+  - id: D
+    text: $60,425
+    rationale: Amortizes the right-of-use asset over the 4-year lease term, $210,000 ÷ 4 = $52,500. Because
+      the purchase option is reasonably certain to be exercised, Framlingham amortizes it over the equipment's
+      8-year useful life instead (ASC 842-20-25-4 to 25-6).
+  answer: B
+  explanation: 'Because the purchase option is reasonably certain to be exercised, Framlingham expects
+    to own the equipment after the lease, so it amortizes the right-of-use asset over the equipment''s
+    8-year useful life rather than the 4-year lease term (ASC 842-20-25-4 to 25-6): $210,000 ÷ 8 = $26,250.
+    Year 1: interest $10,500, principal reduction $51,500, ending liability $158,500. Year 2 interest
+    = $158,500 × 5.00% = $7,925. Total Year 2 expense = $7,925 + $26,250 = $34,175.'
+- stem: On January 1, Year 1, Gillingham Robotics Co. leases a robotic welding cell under a lease it classifies
+    as a finance lease. The lease term is 6 years, but the equipment's total useful life is 12 years,
+    and the lease grants Gillingham an option to purchase the equipment at a price so far below its expected
+    fair value at that date that Gillingham is reasonably certain to exercise it. The lease liability
+    at commencement is $480,000 (rounded), the annual payment of $97,000 is due each December 31, and
+    the discount rate is 7.00%. Gillingham amortizes the right-of-use asset straight-line. What total
+    lease-related expense does Gillingham recognize in Year 2?
+  choices:
+  - id: A
+    text: $29,162
+    rationale: Includes only interest. A finance lease also amortizes the right-of-use asset.
+  - id: B
+    text: $69,162
+    rationale: Correct. Year 2 interest $29,162 on a $416,600 opening liability, plus $40,000 of amortization
+      over the equipment's 12-year useful life.
+  - id: C
+    text: $73,600
+    rationale: Uses Year 1 interest, $33,600, instead of reducing the liability for the Year 1 principal
+      payment first.
+  - id: D
+    text: $109,162
+    rationale: Amortizes the right-of-use asset over the 6-year lease term, $480,000 ÷ 6 = $80,000. Because
+      the purchase option is reasonably certain to be exercised, Gillingham amortizes it over the equipment's
+      12-year useful life instead (ASC 842-20-25-4 to 25-6).
+  answer: B
+  explanation: 'Because the purchase option is reasonably certain to be exercised, Gillingham expects
+    to own the equipment after the lease, so it amortizes the right-of-use asset over the equipment''s
+    12-year useful life rather than the 6-year lease term (ASC 842-20-25-4 to 25-6): $480,000 ÷ 12 = $40,000.
+    Year 1: interest $33,600, principal reduction $63,400, ending liability $416,600. Year 2 interest
+    = $416,600 × 7.00% = $29,162. Total Year 2 expense = $29,162 + $40,000 = $69,162.'
+- stem: On January 1, Year 1, Harpenden Logistics Co. leases an automated sorting system under a lease
+    it classifies as a finance lease. The lease term is 5 years, but the equipment's total useful life
+    is 10 years, and the lease grants Harpenden an option to purchase the equipment at a price so far
+    below its expected fair value at that date that Harpenden is reasonably certain to exercise it. The
+    lease liability at commencement is $360,000 (rounded), the annual payment of $88,000 is due each December
+    31, and the discount rate is 6.500%. Harpenden amortizes the right-of-use asset straight-line. What
+    total lease-related expense does Harpenden recognize in Year 2?
+  choices:
+  - id: A
+    text: $19,201
+    rationale: Includes only interest. A finance lease also amortizes the right-of-use asset.
+  - id: B
+    text: $36,000
+    rationale: Includes only amortization. A finance lease also has interest expense.
+  - id: C
+    text: $55,201
+    rationale: Correct. Year 2 interest $19,201 on a $295,400 opening liability, plus $36,000 of amortization
+      over the equipment's 10-year useful life.
+  - id: D
+    text: $59,400
+    rationale: Uses Year 1 interest, $23,400, instead of reducing the liability for the Year 1 principal
+      payment first.
+  answer: C
+  explanation: 'Because the purchase option is reasonably certain to be exercised, Harpenden expects to
+    own the equipment after the lease, so it amortizes the right-of-use asset over the equipment''s 10-year
+    useful life rather than the 5-year lease term (ASC 842-20-25-4 to 25-6): $360,000 ÷ 10 = $36,000.
+    Year 1: interest $23,400, principal reduction $64,600, ending liability $295,400. Year 2 interest
+    = $295,400 × 6.500% = $19,201. Total Year 2 expense = $19,201 + $36,000 = $55,201.'

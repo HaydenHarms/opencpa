@@ -1,0 +1,567 @@
+[
+ {
+  "code": "I.A.1a",
+  "skill": "App",
+  "task": "Prepare a classified balance sheet"
+ },
+ {
+  "code": "I.A.1b",
+  "skill": "App",
+  "task": "Adjust the balance sheet to correct identified errors"
+ },
+ {
+  "code": "I.A.1c",
+  "skill": "Ana",
+  "task": "Detect and correct balance sheet discrepancies"
+ },
+ {
+  "code": "I.A.2a",
+  "skill": "App",
+  "task": "Prepare a single-step or multi-step income statement"
+ },
+ {
+  "code": "I.A.2b",
+  "skill": "App",
+  "task": "Adjust the income statement to correct identified errors"
+ },
+ {
+  "code": "I.A.2c",
+  "skill": "App",
+  "task": "Calculate foreign-currency transaction gains or losses"
+ },
+ {
+  "code": "I.A.2d",
+  "skill": "Ana",
+  "task": "Detect and correct income statement discrepancies"
+ },
+ {
+  "code": "I.A.3a",
+  "skill": "R&U",
+  "task": "Recall the purpose, objectives and structure of the statement of comprehensive income"
+ },
+ {
+  "code": "I.A.3b",
+  "skill": "R&U",
+  "task": "Identify items classified as other comprehensive income"
+ },
+ {
+  "code": "I.A.4a",
+  "skill": "App",
+  "task": "Prepare a statement of changes in equity"
+ },
+ {
+  "code": "I.A.4b",
+  "skill": "App",
+  "task": "Adjust the statement of changes in equity to correct identified errors"
+ },
+ {
+  "code": "I.A.4c",
+  "skill": "Ana",
+  "task": "Detect and correct statement of changes in equity discrepancies"
+ },
+ {
+  "code": "I.A.5a",
+  "skill": "App",
+  "task": "Prepare a statement of cash flows (indirect method) and required disclosures"
+ },
+ {
+  "code": "I.A.5b",
+  "skill": "App",
+  "task": "Adjust a statement of cash flows to correct identified errors"
+ },
+ {
+  "code": "I.A.5c",
+  "skill": "Ana",
+  "task": "Detect and correct statement of cash flows discrepancies"
+ },
+ {
+  "code": "I.A.5d",
+  "skill": "Ana",
+  "task": "Derive the impact of transactions on the statement of cash flows"
+ },
+ {
+  "code": "I.A.6a",
+  "skill": "App",
+  "task": "Prepare consolidated financial statements (adjustments and eliminations)"
+ },
+ {
+  "code": "I.A.6b",
+  "skill": "App",
+  "task": "Adjust consolidated financial statements to correct identified errors"
+ },
+ {
+  "code": "I.A.6c",
+  "skill": "Ana",
+  "task": "Detect and correct consolidated financial statement discrepancies"
+ },
+ {
+  "code": "I.A.7a",
+  "skill": "App",
+  "task": "Adjust the notes to correct identified errors and omissions"
+ },
+ {
+  "code": "I.A.7b",
+  "skill": "Ana",
+  "task": "Compare the notes with the statements to identify inconsistencies"
+ },
+ {
+  "code": "I.B.1a",
+  "skill": "R&U",
+  "task": "Recall the purpose of the NFP statement of financial position"
+ },
+ {
+  "code": "I.B.1b",
+  "skill": "App",
+  "task": "Prepare an NFP statement of financial position"
+ },
+ {
+  "code": "I.B.1c",
+  "skill": "App",
+  "task": "Adjust an NFP statement of financial position to correct identified errors"
+ },
+ {
+  "code": "I.B.2a",
+  "skill": "R&U",
+  "task": "Recall the purpose of the NFP statement of activities"
+ },
+ {
+  "code": "I.B.2b",
+  "skill": "App",
+  "task": "Prepare an NFP statement of activities"
+ },
+ {
+  "code": "I.B.2c",
+  "skill": "App",
+  "task": "Adjust an NFP statement of activities to correct identified errors"
+ },
+ {
+  "code": "I.B.2d",
+  "skill": "App",
+  "task": "Report NFP expenses by nature and function"
+ },
+ {
+  "code": "I.B.3a",
+  "skill": "R&U",
+  "task": "Recall the purpose of the NFP statement of cash flows"
+ },
+ {
+  "code": "I.B.3b",
+  "skill": "App",
+  "task": "Prepare an NFP statement of cash flows"
+ },
+ {
+  "code": "I.B.3c",
+  "skill": "App",
+  "task": "Adjust an NFP statement of cash flows to correct identified errors"
+ },
+ {
+  "code": "I.B.4a",
+  "skill": "App",
+  "task": "Adjust NFP notes to correct identified errors and omissions"
+ },
+ {
+  "code": "I.C.1a",
+  "skill": "R&U",
+  "task": "Recall government measurement focus and basis of accounting"
+ },
+ {
+  "code": "I.C.2a",
+  "skill": "App",
+  "task": "Determine the appropriate fund(s)"
+ },
+ {
+  "code": "I.D.a",
+  "skill": "R&U",
+  "task": "Recall the purpose of Forms 10-Q, 10-K and 8-K"
+ },
+ {
+  "code": "I.D.b",
+  "skill": "R&U",
+  "task": "Identify the items of Form 10-Q and Form 10-K"
+ },
+ {
+  "code": "I.D.c",
+  "skill": "App",
+  "task": "Calculate basic and diluted EPS"
+ },
+ {
+  "code": "I.E.a",
+  "skill": "R&U",
+  "task": "Recall special purpose framework statement titles"
+ },
+ {
+  "code": "I.E.b",
+  "skill": "App",
+  "task": "Convert cash or modified cash basis statements to accrual basis"
+ },
+ {
+  "code": "I.E.c",
+  "skill": "App",
+  "task": "Prepare cash basis or modified cash basis statements"
+ },
+ {
+  "code": "I.E.d",
+  "skill": "App",
+  "task": "Prepare income tax basis statements"
+ },
+ {
+  "code": "I.F.a",
+  "skill": "R&U",
+  "task": "Identify the appropriate ratio or metric for an analysis"
+ },
+ {
+  "code": "I.F.b",
+  "skill": "App",
+  "task": "Calculate profitability ratios"
+ },
+ {
+  "code": "I.F.c",
+  "skill": "App",
+  "task": "Calculate liquidity ratios"
+ },
+ {
+  "code": "I.F.d",
+  "skill": "App",
+  "task": "Calculate solvency ratios"
+ },
+ {
+  "code": "I.F.e",
+  "skill": "App",
+  "task": "Calculate performance metrics"
+ },
+ {
+  "code": "I.F.f",
+  "skill": "App",
+  "task": "Calculate budget-to-actual variances"
+ },
+ {
+  "code": "II.A.a",
+  "skill": "App",
+  "task": "Calculate cash and cash equivalents"
+ },
+ {
+  "code": "II.A.b",
+  "skill": "Ana",
+  "task": "Reconcile the bank balance to the general ledger"
+ },
+ {
+  "code": "II.A.c",
+  "skill": "Ana",
+  "task": "Investigate unreconciled cash balances to determine an adjustment"
+ },
+ {
+  "code": "II.B.a",
+  "skill": "App",
+  "task": "Calculate trade receivables and allowances and prepare journal entries"
+ },
+ {
+  "code": "II.B.b",
+  "skill": "App",
+  "task": "Record transfers of trade receivables"
+ },
+ {
+  "code": "II.B.c",
+  "skill": "Ana",
+  "task": "Prepare a rollforward of trade receivables"
+ },
+ {
+  "code": "II.B.d",
+  "skill": "Ana",
+  "task": "Reconcile the receivables subledger to the general ledger"
+ },
+ {
+  "code": "II.C.a",
+  "skill": "App",
+  "task": "Calculate inventory using various costing methods"
+ },
+ {
+  "code": "II.C.b",
+  "skill": "App",
+  "task": "Apply lower of cost and NRV or lower of cost or market"
+ },
+ {
+  "code": "II.C.c",
+  "skill": "Ana",
+  "task": "Prepare a rollforward of inventory"
+ },
+ {
+  "code": "II.C.d",
+  "skill": "Ana",
+  "task": "Reconcile the inventory subledger to the general ledger"
+ },
+ {
+  "code": "II.D.a",
+  "skill": "App",
+  "task": "Calculate gross and net PP&E and prepare journal entries"
+ },
+ {
+  "code": "II.D.b",
+  "skill": "App",
+  "task": "Calculate gains or losses on disposals of long-lived assets"
+ },
+ {
+  "code": "II.D.c",
+  "skill": "App",
+  "task": "Calculate impairment losses on long-lived assets"
+ },
+ {
+  "code": "II.D.d",
+  "skill": "App",
+  "task": "Determine whether an asset qualifies as held for sale"
+ },
+ {
+  "code": "II.D.e",
+  "skill": "App",
+  "task": "Adjust the carrying amount of assets held for sale"
+ },
+ {
+  "code": "II.D.f",
+  "skill": "Ana",
+  "task": "Prepare a rollforward of PP&E"
+ },
+ {
+  "code": "II.D.g",
+  "skill": "Ana",
+  "task": "Reconcile the PP&E subledger to the general ledger"
+ },
+ {
+  "code": "II.E.1a",
+  "skill": "R&U",
+  "task": "Identify investments eligible or required to be reported at fair value"
+ },
+ {
+  "code": "II.E.1b",
+  "skill": "App",
+  "task": "Calculate the carrying amount of investments at fair value"
+ },
+ {
+  "code": "II.E.1c",
+  "skill": "App",
+  "task": "Calculate investment income on investments at fair value and prepare journal entries"
+ },
+ {
+  "code": "II.E.1d",
+  "skill": "App",
+  "task": "Calculate impairment losses on investments at fair value"
+ },
+ {
+  "code": "II.E.2a",
+  "skill": "R&U",
+  "task": "Identify investments eligible for amortized cost"
+ },
+ {
+  "code": "II.E.2b",
+  "skill": "App",
+  "task": "Calculate the carrying amount of investments at amortized cost"
+ },
+ {
+  "code": "II.E.2c",
+  "skill": "App",
+  "task": "Calculate impairment losses on investments at amortized cost"
+ },
+ {
+  "code": "II.E.3a",
+  "skill": "R&U",
+  "task": "Identify when the equity method applies"
+ },
+ {
+  "code": "II.E.3b",
+  "skill": "App",
+  "task": "Calculate the carrying amount of equity method investments"
+ },
+ {
+  "code": "II.F.a",
+  "skill": "R&U",
+  "task": "Identify recognition criteria and classify intangibles as finite- or indefinite-lived"
+ },
+ {
+  "code": "II.F.b",
+  "skill": "App",
+  "task": "Calculate the carrying amount of finite-lived intangibles"
+ },
+ {
+  "code": "II.F.c",
+  "skill": "App",
+  "task": "Calculate the carrying amount of purchased software and cloud computing arrangements"
+ },
+ {
+  "code": "II.G.a",
+  "skill": "R&U",
+  "task": "Recall asset retirement obligation recognition and measurement"
+ },
+ {
+  "code": "II.G.b",
+  "skill": "App",
+  "task": "Calculate payables and accrued liabilities"
+ },
+ {
+  "code": "II.G.c",
+  "skill": "App",
+  "task": "Calculate exit or disposal liabilities and their timing"
+ },
+ {
+  "code": "II.G.d",
+  "skill": "Ana",
+  "task": "Reconcile the payables subledger to the general ledger"
+ },
+ {
+  "code": "II.H.1a",
+  "skill": "R&U",
+  "task": "Recall modification versus extinguishment criteria"
+ },
+ {
+  "code": "II.H.1b",
+  "skill": "R&U",
+  "task": "Understand when a change in terms is a troubled debt restructuring"
+ },
+ {
+  "code": "II.H.1c",
+  "skill": "App",
+  "task": "Calculate interest expense on notes and bonds"
+ },
+ {
+  "code": "II.H.1d",
+  "skill": "App",
+  "task": "Calculate the carrying amount of notes and bonds and prepare journal entries"
+ },
+ {
+  "code": "II.H.2a",
+  "skill": "App",
+  "task": "Perform debt covenant calculations"
+ },
+ {
+  "code": "II.I.a",
+  "skill": "App",
+  "task": "Prepare journal entries for equity transactions"
+ },
+ {
+  "code": "III.A.a",
+  "skill": "App",
+  "task": "Calculate adjustments for accounting changes and error corrections"
+ },
+ {
+  "code": "III.A.b",
+  "skill": "Ana",
+  "task": "Derive the impact of an accounting change or error correction"
+ },
+ {
+  "code": "III.B.a",
+  "skill": "R&U",
+  "task": "Recall recognition and disclosure criteria for commitments and contingencies"
+ },
+ {
+  "code": "III.B.b",
+  "skill": "App",
+  "task": "Calculate amounts of contingencies and prepare journal entries"
+ },
+ {
+  "code": "III.B.c",
+  "skill": "Ana",
+  "task": "Review documentation for recognition versus disclosure"
+ },
+ {
+  "code": "III.C.a",
+  "skill": "R&U",
+  "task": "Recall five-step model concepts"
+ },
+ {
+  "code": "III.C.b",
+  "skill": "R&U",
+  "task": "Recall recognition of NFP conditional and unconditional promises to give"
+ },
+ {
+  "code": "III.C.c",
+  "skill": "R&U",
+  "task": "Identify NFP agent or intermediary transfers that are not contributions"
+ },
+ {
+  "code": "III.C.d",
+  "skill": "App",
+  "task": "Determine revenue under the five-step model"
+ },
+ {
+  "code": "III.C.e",
+  "skill": "App",
+  "task": "Determine recognition and measurement of contract costs"
+ },
+ {
+  "code": "III.C.f",
+  "skill": "App",
+  "task": "Determine NFP revenue for contributed services"
+ },
+ {
+  "code": "III.C.g",
+  "skill": "App",
+  "task": "Calculate NFP contributions of financial and nonfinancial assets"
+ },
+ {
+  "code": "III.D.a",
+  "skill": "R&U",
+  "task": "Recall accounting for uncertain tax positions"
+ },
+ {
+  "code": "III.D.b",
+  "skill": "R&U",
+  "task": "Recall valuation allowance criteria"
+ },
+ {
+  "code": "III.D.c",
+  "skill": "App",
+  "task": "Calculate income tax expense and current taxes payable"
+ },
+ {
+  "code": "III.D.d",
+  "skill": "App",
+  "task": "Calculate deferred tax assets and liabilities"
+ },
+ {
+  "code": "III.D.e",
+  "skill": "App",
+  "task": "Prepare journal entries to record the tax provision"
+ },
+ {
+  "code": "III.E.a",
+  "skill": "R&U",
+  "task": "Identify valuation techniques used to measure fair value"
+ },
+ {
+  "code": "III.E.b",
+  "skill": "App",
+  "task": "Use assumptions and approaches to measure fair value"
+ },
+ {
+  "code": "III.F.a",
+  "skill": "R&U",
+  "task": "Recall lessee treatment of residual value guarantees, purchase options and variable payments"
+ },
+ {
+  "code": "III.F.b",
+  "skill": "R&U",
+  "task": "Identify lease classification criteria"
+ },
+ {
+  "code": "III.F.c",
+  "skill": "App",
+  "task": "Calculate lessee assets and liabilities and prepare journal entries"
+ },
+ {
+  "code": "III.F.d",
+  "skill": "App",
+  "task": "Calculate lessee lease costs"
+ },
+ {
+  "code": "III.G.a",
+  "skill": "R&U",
+  "task": "Identify a subsequent event and recall its treatment"
+ },
+ {
+  "code": "III.G.b",
+  "skill": "App",
+  "task": "Calculate adjustments for identified subsequent events"
+ },
+ {
+  "code": "III.G.c",
+  "skill": "Ana",
+  "task": "Derive the impact of identified subsequent events"
+ }
+]

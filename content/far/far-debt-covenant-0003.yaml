@@ -1,0 +1,132 @@
+id: far-debt-covenant-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Debt (Debt covenant compliance)
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'Debt covenant compliance: interest coverage ratio as defined in the loan agreement'
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Wadebridge Components Inc.'s loan agreement requires its ratio of earnings before interest and taxes
+  to interest expense to be at least 4.00 at each year-end, where earnings before interest and taxes is
+  defined as net income plus interest expense and income taxes, excluding gains and losses on sales of
+  long-lived assets and excluding restructuring charges. For Year 1, Wadebridge reports net income of
+  $1,240,000, interest expense of $310,000, and income tax expense of $360,000. Net income includes an
+  $85,000 gain on the sale of idle equipment and a $140,000 restructuring charge for closing an underperforming
+  store. What interest coverage ratio should Wadebridge report for the covenant test, rounded to two decimal
+  places?
+choices:
+- id: A
+  text: '5.89'
+  rationale: Leaves the $140,000 restructuring charge as a reduction of earnings before interest and taxes.
+    The agreement's definition adds restructuring charges back.
+- id: B
+  text: '6.16'
+  rationale: Uses net income plus interest and taxes, $1,910,000, without excluding the gain or adding
+    back the restructuring charge.
+- id: C
+  text: '6.34'
+  rationale: Correct. ($1,240,000 + $310,000 + $360,000 − $85,000 + $140,000) ÷ $310,000.
+- id: D
+  text: '6.61'
+  rationale: Includes the $85,000 gain on the sale of equipment in earnings before interest and taxes.
+    The loan agreement's definition excludes gains and losses on asset sales.
+answer: C
+explanation: 'Starting from net income, add back interest expense and income taxes, then apply the agreement''s
+  own adjustments: exclude the $85,000 gain on the equipment sale, and add back the $140,000 restructuring
+  charge. Earnings before interest and taxes, as defined = $1,240,000 + $310,000 + $360,000 − $85,000
+  + $140,000 = $1,965,000. Ratio = $1,965,000 ÷ $310,000 = 6.34.'
+variants:
+- stem: Truro Fabrication Inc.'s loan agreement requires its ratio of earnings before interest and taxes
+    to interest expense to be at least 4.25 at each year-end, where earnings before interest and taxes
+    is defined as net income plus interest expense and income taxes, excluding gains and losses on sales
+    of long-lived assets and excluding restructuring charges. For Year 1, Truro reports net income of
+    $980,000, interest expense of $245,000, and income tax expense of $285,000. Net income includes a
+    $62,000 gain on the sale of idle equipment and a $108,000 restructuring charge for closing an underperforming
+    store. What interest coverage ratio should Truro report for the covenant test, rounded to two decimal
+    places?
+  choices:
+  - id: A
+    text: '5.19'
+    rationale: Leaves out the $285,000 of income tax expense. The agreement defines earnings before interest
+      and taxes as net income plus interest expense and income taxes, before the gain and restructuring
+      adjustments.
+  - id: B
+    text: '5.91'
+    rationale: Leaves the $108,000 restructuring charge as a reduction of earnings before interest and
+      taxes. The agreement's definition adds restructuring charges back.
+  - id: C
+    text: '6.16'
+    rationale: Uses net income plus interest and taxes, $1,510,000, without excluding the gain or adding
+      back the restructuring charge.
+  - id: D
+    text: '6.35'
+    rationale: Correct. ($980,000 + $245,000 + $285,000 − $62,000 + $108,000) ÷ $245,000.
+  answer: D
+  explanation: 'Starting from net income, add back interest expense and income taxes, then apply the agreement''s
+    own adjustments: exclude the $62,000 gain on the equipment sale, and add back the $108,000 restructuring
+    charge. Earnings before interest and taxes, as defined = $980,000 + $245,000 + $285,000 − $62,000
+    + $108,000 = $1,556,000. Ratio = $1,556,000 ÷ $245,000 = 6.35.'
+- stem: Penzance Castings Inc.'s loan agreement requires its ratio of earnings before interest and taxes
+    to interest expense to be at least 4.10 at each year-end, where earnings before interest and taxes
+    is defined as net income plus interest expense and income taxes, excluding gains and losses on sales
+    of long-lived assets and excluding restructuring charges. For Year 1, Penzance reports net income
+    of $1,460,000, interest expense of $365,000, and income tax expense of $420,000. Net income includes
+    a $96,000 gain on the sale of idle equipment and a $172,000 restructuring charge for closing an underperforming
+    store. What interest coverage ratio should Penzance report for the covenant test, rounded to two decimal
+    places?
+  choices:
+  - id: A
+    text: '5.21'
+    rationale: Leaves out the $420,000 of income tax expense. The agreement defines earnings before interest
+      and taxes as net income plus interest expense and income taxes, before the gain and restructuring
+      adjustments.
+  - id: B
+    text: '6.15'
+    rationale: Uses net income plus interest and taxes, $2,245,000, without excluding the gain or adding
+      back the restructuring charge.
+  - id: C
+    text: '6.36'
+    rationale: Correct. ($1,460,000 + $365,000 + $420,000 − $96,000 + $172,000) ÷ $365,000.
+  - id: D
+    text: '6.62'
+    rationale: Includes the $96,000 gain on the sale of equipment in earnings before interest and taxes.
+      The loan agreement's definition excludes gains and losses on asset sales.
+  answer: C
+  explanation: 'Starting from net income, add back interest expense and income taxes, then apply the agreement''s
+    own adjustments: exclude the $96,000 gain on the equipment sale, and add back the $172,000 restructuring
+    charge. Earnings before interest and taxes, as defined = $1,460,000 + $365,000 + $420,000 − $96,000
+    + $172,000 = $2,321,000. Ratio = $2,321,000 ÷ $365,000 = 6.36.'
+- stem: Bodmin Machine Works Inc.'s loan agreement requires its ratio of earnings before interest and
+    taxes to interest expense to be at least 4.00 at each year-end, where earnings before interest and
+    taxes is defined as net income plus interest expense and income taxes, excluding gains and losses
+    on sales of long-lived assets and excluding restructuring charges. For Year 1, Bodmin reports net
+    income of $870,000, interest expense of $218,000, and income tax expense of $252,000. Net income includes
+    a $54,000 gain on the sale of idle equipment and a $95,000 restructuring charge for closing an underperforming
+    store. What interest coverage ratio should Bodmin report for the covenant test, rounded to two decimal
+    places?
+  choices:
+  - id: A
+    text: '5.18'
+    rationale: Leaves out the $252,000 of income tax expense. The agreement defines earnings before interest
+      and taxes as net income plus interest expense and income taxes, before the gain and restructuring
+      adjustments.
+  - id: B
+    text: '5.90'
+    rationale: Leaves the $95,000 restructuring charge as a reduction of earnings before interest and
+      taxes. The agreement's definition adds restructuring charges back.
+  - id: C
+    text: '6.33'
+    rationale: Correct. ($870,000 + $218,000 + $252,000 − $54,000 + $95,000) ÷ $218,000.
+  - id: D
+    text: '6.58'
+    rationale: Includes the $54,000 gain on the sale of equipment in earnings before interest and taxes.
+      The loan agreement's definition excludes gains and losses on asset sales.
+  answer: C
+  explanation: 'Starting from net income, add back interest expense and income taxes, then apply the agreement''s
+    own adjustments: exclude the $54,000 gain on the equipment sale, and add back the $95,000 restructuring
+    charge. Earnings before interest and taxes, as defined = $870,000 + $218,000 + $252,000 − $54,000
+    + $95,000 = $1,381,000. Ratio = $1,381,000 ÷ $218,000 = 6.33.'

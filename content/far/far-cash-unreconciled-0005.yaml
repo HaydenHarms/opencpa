@@ -1,0 +1,129 @@
+id: far-cash-unreconciled-0005
+type: mcq
+blueprint:
+  section: FAR
+  area: Area II — Select Balance Sheet Accounts
+  topic: Cash and cash equivalents
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 305-10 (cash)
+  - Bank reconciliation practice (errors by the bank and by the depositor)
+  notes: Batch 15. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'St Mawes Marine Co.''s bank reconciliation shows an adjusted bank balance of $67,400 at October
+  31. Its general ledger cash account shows $66,000, an unreconciled difference of $-1,400. Investigating,
+  the controller finds: a $410 insurance premium that the bank auto-debited under a standing authorization
+  has not been recorded; a $980 cash deposit was recorded in the cash disbursements journal instead of
+  the cash receipts journal; and a $150 bill included in an earlier deposit turned out to be counterfeit,
+  which the bank did not credit and which St has not yet written off. What is St''s correct cash balance
+  at October 31?'
+choices:
+- id: A
+  text: $66,420
+  rationale: Adds back only the $980 deposit itself. Because the deposit was recorded in the disbursements
+    journal instead of the receipts journal, cash was reduced when it should have been increased, a $1,960
+    swing that must be corrected in full.
+- id: B
+  text: $67,400
+  rationale: Correct. $66,000 + $410 − $1,960 + $150 = $67,400, agreeing with the adjusted bank balance.
+- id: C
+  text: $67,550
+  rationale: Leaves the $150 counterfeit bill in the recorded deposit. The bank didn't credit it, and
+    St hasn't yet written it off.
+- id: D
+  text: $67,810
+  rationale: Leaves out the $410 insurance premium the bank auto-debited under a standing authorization,
+    which St hasn't recorded.
+answer: B
+explanation: The $410 auto-debited premium reduces book cash and hasn't been recorded. Recording the $980
+  deposit in the disbursements journal instead of the receipts journal reduced cash when it should have
+  increased it, a $1,960 swing to correct. The $150 counterfeit bill was never real cash and must be written
+  off. $66,000 + $410 − $1,960 + $150 = $67,400.
+variants:
+- stem: 'Portloe Seafood Co.''s bank reconciliation shows an adjusted bank balance of $54,900 at October
+    31. Its general ledger cash account shows $53,850, an unreconciled difference of $-1,050. Investigating,
+    the controller finds: a $320 insurance premium that the bank auto-debited under a standing authorization
+    has not been recorded; a $740 cash deposit was recorded in the cash disbursements journal instead
+    of the cash receipts journal; and a $110 bill included in an earlier deposit turned out to be counterfeit,
+    which the bank did not credit and which Portloe has not yet written off. What is Portloe''s correct
+    cash balance at October 31?'
+  choices:
+  - id: A
+    text: $53,850
+    rationale: Accepts the book side's $53,850, which keeps the insurance debit unrecorded, corrects the
+      misposted deposit by only half its effect and leaves the counterfeit bill in cash.
+  - id: B
+    text: $54,160
+    rationale: Adds back only the $740 deposit itself. Because the deposit was recorded in the disbursements
+      journal instead of the receipts journal, cash was reduced when it should have been increased, a
+      $1,480 swing that must be corrected in full.
+  - id: C
+    text: $54,900
+    rationale: Correct. $53,850 + $320 − $1,480 + $110 = $54,900, agreeing with the adjusted bank balance.
+  - id: D
+    text: $55,010
+    rationale: Leaves the $110 counterfeit bill in the recorded deposit. The bank didn't credit it, and
+      Portloe hasn't yet written it off.
+  answer: C
+  explanation: The $320 auto-debited premium reduces book cash and hasn't been recorded. Recording the
+    $740 deposit in the disbursements journal instead of the receipts journal reduced cash when it should
+    have increased it, a $1,480 swing to correct. The $110 counterfeit bill was never real cash and must
+    be written off. $53,850 + $320 − $1,480 + $110 = $54,900.
+- stem: 'Gorran Haven Fisheries Co.''s bank reconciliation shows an adjusted bank balance of $72,100 at
+    October 31. Its general ledger cash account shows $70,650, an unreconciled difference of $-1,450.
+    Investigating, the controller finds: a $460 insurance premium that the bank auto-debited under a standing
+    authorization has not been recorded; a $1,050 cash deposit was recorded in the cash disbursements
+    journal instead of the cash receipts journal; and a $190 bill included in an earlier deposit turned
+    out to be counterfeit, which the bank did not credit and which Gorran has not yet written off. What
+    is Gorran''s correct cash balance at October 31?'
+  choices:
+  - id: A
+    text: $70,650
+    rationale: Accepts the book side's $70,650, which keeps the insurance debit unrecorded, corrects the
+      misposted deposit by only half its effect and leaves the counterfeit bill in cash.
+  - id: B
+    text: $72,100
+    rationale: Correct. $70,650 + $460 − $2,100 + $190 = $72,100, agreeing with the adjusted bank balance.
+  - id: C
+    text: $72,290
+    rationale: Leaves the $190 counterfeit bill in the recorded deposit. The bank didn't credit it, and
+      Gorran hasn't yet written it off.
+  - id: D
+    text: $72,560
+    rationale: Leaves out the $460 insurance premium the bank auto-debited under a standing authorization,
+      which Gorran hasn't recorded.
+  answer: B
+  explanation: The $460 auto-debited premium reduces book cash and hasn't been recorded. Recording the
+    $1,050 deposit in the disbursements journal instead of the receipts journal reduced cash when it should
+    have increased it, a $2,100 swing to correct. The $190 counterfeit bill was never real cash and must
+    be written off. $70,650 + $460 − $2,100 + $190 = $72,100.
+- stem: 'Veryan Bay Traders Co.''s bank reconciliation shows an adjusted bank balance of $46,300 at October
+    31. Its general ledger cash account shows $45,445, an unreconciled difference of $-855. Investigating,
+    the controller finds: a $270 insurance premium that the bank auto-debited under a standing authorization
+    has not been recorded; a $610 cash deposit was recorded in the cash disbursements journal instead
+    of the cash receipts journal; and a $95 bill included in an earlier deposit turned out to be counterfeit,
+    which the bank did not credit and which Veryan has not yet written off. What is Veryan''s correct
+    cash balance at October 31?'
+  choices:
+  - id: A
+    text: $45,445
+    rationale: Accepts the book side's $45,445, which keeps the insurance debit unrecorded, corrects the
+      misposted deposit by only half its effect and leaves the counterfeit bill in cash.
+  - id: B
+    text: $45,690
+    rationale: Adds back only the $610 deposit itself. Because the deposit was recorded in the disbursements
+      journal instead of the receipts journal, cash was reduced when it should have been increased, a
+      $1,220 swing that must be corrected in full.
+  - id: C
+    text: $46,300
+    rationale: Correct. $45,445 + $270 − $1,220 + $95 = $46,300, agreeing with the adjusted bank balance.
+  - id: D
+    text: $46,570
+    rationale: Leaves out the $270 insurance premium the bank auto-debited under a standing authorization,
+      which Veryan hasn't recorded.
+  answer: C
+  explanation: The $270 auto-debited premium reduces book cash and hasn't been recorded. Recording the
+    $610 deposit in the disbursements journal instead of the receipts journal reduced cash when it should
+    have increased it, a $1,220 swing to correct. The $95 counterfeit bill was never real cash and must
+    be written off. $45,445 + $270 − $1,220 + $95 = $46,300.

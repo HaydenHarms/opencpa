@@ -15,24 +15,24 @@ stem: A donor asks Mendip Wildlife Trust's treasurer what the statement of cash 
   a reader that the statement of activities does not. Which answer best describes that purpose?
 choices:
 - id: A
-  text: It helps users assess the entity's ability to generate future cash flows and meet its obligations
-  rationale: Correct. The statement of cash flows provides information about cash receipts and payments
-    that helps users evaluate liquidity, the ability to meet obligations, and the need for external financing,
-    which an accrual-basis statement of activities does not show directly.
-- id: B
   text: It shows which donor restrictions were satisfied during the period and which remain outstanding
   rationale: That information comes from the statement of activities and the net asset disclosures, not
     from the statement of cash flows.
-- id: C
+- id: B
   text: It measures how efficiently the entity used its resources on its programs compared with fundraising
     and management
   rationale: Program efficiency is conveyed by expenses reported by function, not by the statement of
     cash flows.
-- id: D
+- id: C
   text: It reports each fund's beginning and ending cash balance, reconciled to budgeted amounts
   rationale: Not-for-profit entities are not required to report by fund, and reconciling to a budget is
     not a function of the statement of cash flows.
-answer: A
+- id: D
+  text: It helps users assess the entity's ability to generate future cash flows and meet its obligations
+  rationale: Correct. The statement of cash flows provides information about cash receipts and payments
+    that helps users evaluate liquidity, the ability to meet obligations, and the need for external financing,
+    which an accrual-basis statement of activities does not show directly.
+answer: D
 explanation: Like the statement of cash flows of a business entity, a not-for-profit entity's statement
   of cash flows (ASC 958-230) provides information about cash receipts and payments during a period that
   helps users assess the entity's ability to generate positive future cash flows, meet its obligations

@@ -18,23 +18,23 @@ stem: During Year 2, Thornbury Co. reports net income of $340,000 and an unreali
   report as comprehensive income for Year 2?
 choices:
 - id: A
-  text: Net income less the unrealized holding loss, $315,000
+  text: $270,000
+  rationale: Deducts the unrealized OCI loss and the treasury stock purchase. A treasury purchase is a
+    transaction with an owner (the selling shareholder) and does not affect comprehensive income.
+- id: B
+  text: $315,000
   rationale: Correct. Comprehensive income is net income plus other comprehensive income. The stock issuance,
     dividends and treasury purchase are transactions with owners and are excluded.
-- id: B
-  text: Net income alone, $340,000, since the loss is unrealized and stays out of any performance measure
-  rationale: Other comprehensive income is still part of comprehensive income even though its components
-    are unrealized; it is simply kept out of net income.
 - id: C
-  text: Net income, less the OCI loss, less the dividends and the treasury purchase, plus the stock issuance,
-    $390,000
-  rationale: Mixes in transactions with owners. Issuing stock, paying dividends and buying treasury stock
-    change equity, but not through nonowner sources, so none of them enters comprehensive income.
+  text: $340,000
+  rationale: Uses net income alone, as if the unrealized OCI loss stayed out of any performance measure.
+    Other comprehensive income is still part of comprehensive income even though its components are unrealized;
+    it is simply kept out of net income.
 - id: D
-  text: Net income, less the OCI loss and the treasury purchase, $270,000
-  rationale: The treasury stock purchase is a transaction with an owner (the selling shareholder) and
-    does not affect comprehensive income.
-answer: A
+  text: $410,000
+  rationale: Nets in the stock issuance, dividends and treasury purchase along with the OCI loss. Transactions
+    with owners change equity but not through nonowner sources, so none of them enters comprehensive income.
+answer: B
 explanation: 'Comprehensive income is the change in equity from nonowner sources during a period: net
   income plus other comprehensive income (ASC 220-10-05). Transactions with owners, such as issuing stock,
   declaring dividends and purchasing treasury stock, change equity but are excluded from both net income

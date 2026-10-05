@@ -1,0 +1,160 @@
+id: far-income-taxes-provision-0004
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting for income taxes
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 740-10-25 (temporary and permanent differences)
+  - ASC 740-10-30 (current and deferred tax expense)
+  notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
+  asOf: U.S. GAAP (ASC 740) and federal tax law in effect for 2026; the rate is as stated in the stem
+stem: Oakhurst Corp. must work out both its Year 2 income taxes payable and its Year 2 income tax expense.
+  Pretax financial income for the year is $640,000, which includes $50,000 of proceeds from company-owned
+  life insurance on an executive's death, a nontaxable amount, and is stated after deducting $18,000 of
+  nondeductible country club dues. Oakhurst books the full $120,000 gross profit on an installment sale
+  in the year of sale, but on its tax return the gross profit is taxed only as collected under the installment
+  method, and only $40,000 was collected (and taxed) this year. The enacted tax rate is 25% for every
+  year, Oakhurst anticipates plenty of future taxable income, and during the year it remitted $110,000
+  of estimated tax payments, carried on its books as a prepaid asset. Netting those prepayments against
+  current tax, what should Oakhurst report as Year 2 income taxes payable, and what is its Year 2 income
+  tax expense?
+choices:
+- id: A
+  text: $22,000 payable; $152,000 expense
+  rationale: Correct. Current tax $132,000 − $110,000 prepaid = $22,000 payable; expense = taxable income
+    adjusted only for permanent differences, ($640,000 − $50,000 + $18,000) × 25% = $152,000.
+- id: B
+  text: $34,500 payable; $164,500 expense
+  rationale: Taxes the $50,000 of life insurance proceeds. Proceeds from life insurance on an executive,
+    where Oakhurst is the beneficiary, are a permanent difference excluded from taxable income and from
+    tax expense.
+- id: C
+  text: $42,000 payable; $152,000 expense
+  rationale: Taxes the full $120,000 installment sale gross profit currently, as books do, and records
+    no deferred tax on it. For tax, Oakhurst uses the installment method and is taxed only on the $40,000
+    collected this year; the remaining $80,000 gives rise to a deferred tax liability, which happens to
+    leave total expense unchanged but understates current tax payable.
+- id: D
+  text: $132,000 payable; $152,000 expense
+  rationale: Reports the whole $132,000 of current tax as payable, without applying the $110,000 of estimated
+    payments Oakhurst already made.
+answer: A
+explanation: 'Taxable income = $640,000 − $50,000 (nontaxable, permanent) + $18,000 (nondeductible, permanent)
+  − $80,000 (installment gross profit not yet taxed) = $528,000; current tax = $132,000, less $110,000
+  of estimated payments = $22,000 payable. The installment sale creates a deferred tax liability of $80,000
+  × 25%, which exactly offsets the current-tax effect of deferring that gross profit, so total expense
+  equals the rate applied to book income adjusted only for the permanent differences: ($640,000 − $50,000
+  + $18,000) × 25% = $152,000.'
+variants:
+- stem: Pinehollow Corp. must work out both its Year 2 income taxes payable and its Year 2 income tax
+    expense. Pretax financial income for the year is $480,000, which includes $35,000 of proceeds from
+    company-owned life insurance on an executive's death, a nontaxable amount, and is stated after deducting
+    $12,000 of nondeductible country club dues. Pinehollow books the full $90,000 gross profit on an installment
+    sale in the year of sale, but on its tax return the gross profit is taxed only as collected under
+    the installment method, and only $30,000 was collected (and taxed) this year. The enacted tax rate
+    is 21% for every year, Pinehollow anticipates plenty of future taxable income, and during the year
+    it remitted $70,000 of estimated tax payments, carried on its books as a prepaid asset. Netting those
+    prepayments against current tax, what should Pinehollow report as Year 2 income taxes payable, and
+    what is its Year 2 income tax expense?
+  choices:
+  - id: A
+    text: $10,850 payable; $93,450 expense
+    rationale: Deducts the $12,000 of club dues for tax as well as for books. Nondeductible club dues
+      are a permanent difference, added back for both current tax and total tax expense.
+  - id: B
+    text: $13,370 payable; $95,970 expense
+    rationale: Correct. Current tax $83,370 − $70,000 prepaid = $13,370 payable; expense = taxable income
+      adjusted only for permanent differences, ($480,000 − $35,000 + $12,000) × 21% = $95,970.
+  - id: C
+    text: $20,720 payable; $103,320 expense
+    rationale: Taxes the $35,000 of life insurance proceeds. Proceeds from life insurance on an executive,
+      where Pinehollow is the beneficiary, are a permanent difference excluded from taxable income and
+      from tax expense.
+  - id: D
+    text: $25,970 payable; $95,970 expense
+    rationale: Taxes the full $90,000 installment sale gross profit currently, as books do, and records
+      no deferred tax on it. For tax, Pinehollow uses the installment method and is taxed only on the
+      $30,000 collected this year; the remaining $60,000 gives rise to a deferred tax liability, which
+      happens to leave total expense unchanged but understates current tax payable.
+  answer: B
+  explanation: 'Taxable income = $480,000 − $35,000 (nontaxable, permanent) + $12,000 (nondeductible,
+    permanent) − $60,000 (installment gross profit not yet taxed) = $397,000; current tax = $83,370, less
+    $70,000 of estimated payments = $13,370 payable. The installment sale creates a deferred tax liability
+    of $60,000 × 21%, which exactly offsets the current-tax effect of deferring that gross profit, so
+    total expense equals the rate applied to book income adjusted only for the permanent differences:
+    ($480,000 − $35,000 + $12,000) × 21% = $95,970.'
+- stem: Queensgate Corp. must work out both its Year 2 income taxes payable and its Year 2 income tax
+    expense. Pretax financial income for the year is $720,000, which includes $60,000 of proceeds from
+    company-owned life insurance on an executive's death, a nontaxable amount, and is stated after deducting
+    $24,000 of nondeductible country club dues. Queensgate books the full $150,000 gross profit on an
+    installment sale in the year of sale, but on its tax return the gross profit is taxed only as collected
+    under the installment method, and only $50,000 was collected (and taxed) this year. The enacted tax
+    rate is 25% for every year, Queensgate anticipates plenty of future taxable income, and during the
+    year it remitted $130,000 of estimated tax payments, carried on its books as a prepaid asset. Netting
+    those prepayments against current tax, what should Queensgate report as Year 2 income taxes payable,
+    and what is its Year 2 income tax expense?
+  choices:
+  - id: A
+    text: $10,000 payable; $165,000 expense
+    rationale: Deducts the $24,000 of club dues for tax as well as for books. Nondeductible club dues
+      are a permanent difference, added back for both current tax and total tax expense.
+  - id: B
+    text: $16,000 payable; $171,000 expense
+    rationale: Correct. Current tax $146,000 − $130,000 prepaid = $16,000 payable; expense = taxable income
+      adjusted only for permanent differences, ($720,000 − $60,000 + $24,000) × 25% = $171,000.
+  - id: C
+    text: $41,000 payable; $171,000 expense
+    rationale: Taxes the full $150,000 installment sale gross profit currently, as books do, and records
+      no deferred tax on it. For tax, Queensgate uses the installment method and is taxed only on the
+      $50,000 collected this year; the remaining $100,000 gives rise to a deferred tax liability, which
+      happens to leave total expense unchanged but understates current tax payable.
+  - id: D
+    text: $146,000 payable; $171,000 expense
+    rationale: Reports the whole $146,000 of current tax as payable, without applying the $130,000 of
+      estimated payments Queensgate already made.
+  answer: B
+  explanation: 'Taxable income = $720,000 − $60,000 (nontaxable, permanent) + $24,000 (nondeductible,
+    permanent) − $100,000 (installment gross profit not yet taxed) = $584,000; current tax = $146,000,
+    less $130,000 of estimated payments = $16,000 payable. The installment sale creates a deferred tax
+    liability of $100,000 × 25%, which exactly offsets the current-tax effect of deferring that gross
+    profit, so total expense equals the rate applied to book income adjusted only for the permanent differences:
+    ($720,000 − $60,000 + $24,000) × 25% = $171,000.'
+- stem: Ridgemont Corp. must work out both its Year 2 income taxes payable and its Year 2 income tax expense.
+    Pretax financial income for the year is $560,000, which includes $42,000 of proceeds from company-owned
+    life insurance on an executive's death, a nontaxable amount, and is stated after deducting $15,000
+    of nondeductible country club dues. Ridgemont books the full $100,000 gross profit on an installment
+    sale in the year of sale, but on its tax return the gross profit is taxed only as collected under
+    the installment method, and only $35,000 was collected (and taxed) this year. The enacted tax rate
+    is 24% for every year, Ridgemont anticipates plenty of future taxable income, and during the year
+    it remitted $95,000 of estimated tax payments, carried on its books as a prepaid asset. Netting those
+    prepayments against current tax, what should Ridgemont report as Year 2 income taxes payable, and
+    what is its Year 2 income tax expense?
+  choices:
+  - id: A
+    text: $13,720 payable; $124,320 expense
+    rationale: Deducts the $15,000 of club dues for tax as well as for books. Nondeductible club dues
+      are a permanent difference, added back for both current tax and total tax expense.
+  - id: B
+    text: $17,320 payable; $127,920 expense
+    rationale: Correct. Current tax $112,320 − $95,000 prepaid = $17,320 payable; expense = taxable income
+      adjusted only for permanent differences, ($560,000 − $42,000 + $15,000) × 24% = $127,920.
+  - id: C
+    text: $27,400 payable; $138,000 expense
+    rationale: Taxes the $42,000 of life insurance proceeds. Proceeds from life insurance on an executive,
+      where Ridgemont is the beneficiary, are a permanent difference excluded from taxable income and
+      from tax expense.
+  - id: D
+    text: $112,320 payable; $127,920 expense
+    rationale: Reports the whole $112,320 of current tax as payable, without applying the $95,000 of estimated
+      payments Ridgemont already made.
+  answer: B
+  explanation: 'Taxable income = $560,000 − $42,000 (nontaxable, permanent) + $15,000 (nondeductible,
+    permanent) − $65,000 (installment gross profit not yet taxed) = $468,000; current tax = $112,320,
+    less $95,000 of estimated payments = $17,320 payable. The installment sale creates a deferred tax
+    liability of $65,000 × 24%, which exactly offsets the current-tax effect of deferring that gross profit,
+    so total expense equals the rate applied to book income adjusted only for the permanent differences:
+    ($560,000 − $42,000 + $15,000) × 24% = $127,920.'

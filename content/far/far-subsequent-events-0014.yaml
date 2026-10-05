@@ -1,0 +1,129 @@
+id: far-subsequent-events-0014
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 855-10-25 (recognized subsequent events: error corrections found before issuance)'
+  - 'ASC 855-10-50 (nonrecognized subsequent events: disclosed, not reflected)'
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Harpenfield Supply Co.'s December 31, Year 1, physical inventory count, as first extended and priced,
+  totaled $1,240,000. Before the financial statements were issued, Harpenfield's staff found that a clerk
+  had multiplied the quantity of one item by the wrong unit cost on the count sheet, overstating the count
+  by $37,000; a second count sheet for the same storage bin, filled out by a different counter that day,
+  showed the same item at its correct cost and was discarded at the time as a duplicate. In February,
+  after year-end, Harpenfield also received $600,000 from a new bank line of credit. What amount should
+  Harpenfield report as inventory at December 31, Year 1?
+choices:
+- id: A
+  text: $1,166,000
+  rationale: Removes the $37,000 pricing error twice, once for the clerk's extension error and again because
+    the same item also appeared on a separate recount sheet; the recount sheet was a duplicate copy of
+    the same count, not a second error.
+- id: B
+  text: $1,203,000
+  rationale: Correct. $1,240,000 − $37,000.
+- id: C
+  text: $1,240,000
+  rationale: Leaves the $37,000 pricing error in the reported balance. It was found before the statements
+    were issued and corrects the December 31 count.
+- id: D
+  text: $1,803,000
+  rationale: Adds the $600,000 Harpenfield received from a new bank line of credit in February. That event
+    arose after year-end and is disclosed, not reflected in the December 31 balance.
+answer: B
+explanation: 'An error found in the December 31 count before the statements are issued is corrected in
+  the balance it misstated, here by removing the $37,000 pricing error: $1,240,000 − $37,000 = $1,203,000.
+  The $600,000 Harpenfield received from a new bank line of credit is a condition that arose after year-end;
+  it is disclosed, not reflected in the December 31 inventory balance.'
+variants:
+- stem: Oldmarsh Trading Co.'s December 31, Year 2, physical inventory count, as first extended and priced,
+    totaled $980,000. Before the financial statements were issued, Oldmarsh's staff found that a clerk
+    had multiplied the quantity of one item by the wrong unit cost on the count sheet, overstating the
+    count by $29,000; a second count sheet for the same storage bin, filled out by a different counter
+    that day, showed the same item at its correct cost and was discarded at the time as a duplicate. In
+    January, after year-end, Oldmarsh also received $450,000 from issuing common stock. What amount should
+    Oldmarsh report as inventory at December 31, Year 2?
+  choices:
+  - id: A
+    text: $922,000
+    rationale: Removes the $29,000 pricing error twice, once for the clerk's extension error and again
+      because the same item also appeared on a separate recount sheet; the recount sheet was a duplicate
+      copy of the same count, not a second error.
+  - id: B
+    text: $951,000
+    rationale: Correct. $980,000 − $29,000.
+  - id: C
+    text: $1,009,000
+    rationale: Adds the $29,000 error instead of removing it. The extension error overstated the count,
+      so cost is reduced.
+  - id: D
+    text: $1,401,000
+    rationale: Adds the $450,000 Oldmarsh received from issuing common stock in January. That event arose
+      after year-end and is disclosed, not reflected in the December 31 balance.
+  answer: B
+  explanation: 'An error found in the December 31 count before the statements are issued is corrected
+    in the balance it misstated, here by removing the $29,000 pricing error: $980,000 − $29,000 = $951,000.
+    The $450,000 Oldmarsh received from issuing common stock is a condition that arose after year-end;
+    it is disclosed, not reflected in the December 31 inventory balance.'
+- stem: Beckworth Goods Co.'s December 31, Year 3, physical inventory count, as first extended and priced,
+    totaled $1,560,000. Before the financial statements were issued, Beckworth's staff found that a clerk
+    had multiplied the quantity of one item by the wrong unit cost on the count sheet, overstating the
+    count by $48,000; a second count sheet for the same storage bin, filled out by a different counter
+    that day, showed the same item at its correct cost and was discarded at the time as a duplicate. In
+    February, after year-end, Beckworth also received $800,000 from a bond offering. What amount should
+    Beckworth report as inventory at December 31, Year 3?
+  choices:
+  - id: A
+    text: $1,464,000
+    rationale: Removes the $48,000 pricing error twice, once for the clerk's extension error and again
+      because the same item also appeared on a separate recount sheet; the recount sheet was a duplicate
+      copy of the same count, not a second error.
+  - id: B
+    text: $1,512,000
+    rationale: Correct. $1,560,000 − $48,000.
+  - id: C
+    text: $1,560,000
+    rationale: Leaves the $48,000 pricing error in the reported balance. It was found before the statements
+      were issued and corrects the December 31 count.
+  - id: D
+    text: $1,608,000
+    rationale: Adds the $48,000 error instead of removing it. The extension error overstated the count,
+      so cost is reduced.
+  answer: B
+  explanation: 'An error found in the December 31 count before the statements are issued is corrected
+    in the balance it misstated, here by removing the $48,000 pricing error: $1,560,000 − $48,000 = $1,512,000.
+    The $800,000 Beckworth received from a bond offering is a condition that arose after year-end; it
+    is disclosed, not reflected in the December 31 inventory balance.'
+- stem: Drayfield Mercantile Co.'s December 31, Year 1, physical inventory count, as first extended and
+    priced, totaled $760,000. Before the financial statements were issued, Drayfield's staff found that
+    a clerk had multiplied the quantity of one item by the wrong unit cost on the count sheet, overstating
+    the count by $21,000; a second count sheet for the same storage bin, filled out by a different counter
+    that day, showed the same item at its correct cost and was discarded at the time as a duplicate. In
+    March, after year-end, Drayfield also received $300,000 from a shareholder's capital contribution.
+    What amount should Drayfield report as inventory at December 31, Year 1?
+  choices:
+  - id: A
+    text: $739,000
+    rationale: Correct. $760,000 − $21,000.
+  - id: B
+    text: $760,000
+    rationale: Leaves the $21,000 pricing error in the reported balance. It was found before the statements
+      were issued and corrects the December 31 count.
+  - id: C
+    text: $781,000
+    rationale: Adds the $21,000 error instead of removing it. The extension error overstated the count,
+      so cost is reduced.
+  - id: D
+    text: $1,039,000
+    rationale: Adds the $300,000 Drayfield received from a shareholder's capital contribution in March.
+      That event arose after year-end and is disclosed, not reflected in the December 31 balance.
+  answer: A
+  explanation: 'An error found in the December 31 count before the statements are issued is corrected
+    in the balance it misstated, here by removing the $21,000 pricing error: $760,000 − $21,000 = $739,000.
+    The $300,000 Drayfield received from a shareholder''s capital contribution is a condition that arose
+    after year-end; it is disclosed, not reflected in the December 31 inventory balance.'

@@ -1,0 +1,152 @@
+id: far-contingencies-0019
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Analysis
+review:
+  status: reviewed
+  references:
+  - ASC 450-20-30-1 (accrual at a best estimate within a range when one exists)
+  - ASC 450-20-50 (disclosure when a loss cannot yet be estimated)
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'Ambersgate Holdings Co.''s files on two matters, before its Year 1 statements are issued, include
+  a letter from outside counsel and minutes of its compliance committee. Counsel''s letter concerns an
+  indemnification clause in the agreement under which Ambersgate sold its packaging division: Ambersgate
+  indemnified the buyer for up to $420,000 of environmental remediation costs at a site the division used,
+  and counsel, citing a consultant''s site assessment, estimates the cost at between $180,000 and $420,000,
+  naming $310,000 as the best estimate within that range. The compliance committee''s minutes describe
+  a whistleblower complaint received in October, under investigation by outside counsel, who told the
+  committee it is too early in the inquiry to gauge either the outcome or the exposure; the minutes mention,
+  only as background on why the complaint was escalated, that the employee''s initial estimate of amounts
+  involved was $95,000. What liability should Ambersgate accrue at year-end for these two matters?'
+choices:
+- id: A
+  text: $180,000
+  rationale: Accrues the $180,000 low end of counsel's range. When counsel's letter names $310,000 as
+    the best estimate within the range, Ambersgate accrues that amount rather than the minimum.
+- id: B
+  text: $310,000
+  rationale: Correct. Ambersgate accrues counsel's stated best estimate, $310,000.
+- id: C
+  text: $405,000
+  rationale: Also accrues $95,000 for the whistleblower matter. The compliance committee's minutes say
+    the investigation is still open and counsel's letter gives no estimate Ambersgate can rely on for
+    it, so it isn't accrued.
+- id: D
+  text: $420,000
+  rationale: Accrues the $420,000 high end of counsel's range, rather than the $310,000 counsel's letter
+    names as the best estimate.
+answer: B
+explanation: 'The indemnification exposure is probable and counsel''s letter names a best estimate within
+  the range, $310,000, which Ambersgate accrues (ASC 450-20-30-1); the range''s minimum or midpoint is
+  used only when no amount in the range is a better estimate than another. The whistleblower matter has
+  reached no conclusion: counsel told the committee it is too early to assess the outcome or size the
+  exposure, so no amount is accruable, and the one dollar figure in the minutes is background, not an
+  estimate counsel supports. Liability = $310,000.'
+variants:
+- stem: 'Follyfield Group Co.''s files on two matters, before its Year 2 statements are issued, include
+    a letter from outside counsel and minutes of its compliance committee. Counsel''s letter concerns
+    an indemnification clause in the agreement under which Follyfield sold its logistics division: Follyfield
+    indemnified the buyer for up to $560,000 of environmental remediation costs at a site the division
+    used, and counsel, citing a consultant''s site assessment, estimates the cost at between $240,000
+    and $560,000, naming $380,000 as the best estimate within that range. The compliance committee''s
+    minutes describe a whistleblower complaint received in November, under investigation by outside counsel,
+    who told the committee it is too early in the inquiry to gauge either the outcome or the exposure;
+    the minutes mention, only as background on why the complaint was escalated, that the employee''s initial
+    estimate of amounts involved was $130,000. What liability should Follyfield accrue at year-end for
+    these two matters?'
+  choices:
+  - id: A
+    text: $380,000
+    rationale: Correct. Follyfield accrues counsel's stated best estimate, $380,000.
+  - id: B
+    text: $400,000
+    rationale: Accrues the $240,000-to-$560,000 range's midpoint. Counsel's letter names $380,000, not
+      the midpoint, as the best estimate.
+  - id: C
+    text: $510,000
+    rationale: Also accrues $130,000 for the whistleblower matter. The compliance committee's minutes
+      say the investigation is still open and counsel's letter gives no estimate Follyfield can rely on
+      for it, so it isn't accrued.
+  - id: D
+    text: $560,000
+    rationale: Accrues the $560,000 high end of counsel's range, rather than the $380,000 counsel's letter
+      names as the best estimate.
+  answer: A
+  explanation: 'The indemnification exposure is probable and counsel''s letter names a best estimate within
+    the range, $380,000, which Follyfield accrues (ASC 450-20-30-1); the range''s minimum or midpoint
+    is used only when no amount in the range is a better estimate than another. The whistleblower matter
+    has reached no conclusion: counsel told the committee it is too early to assess the outcome or size
+    the exposure, so no amount is accruable, and the one dollar figure in the minutes is background, not
+    an estimate counsel supports. Liability = $380,000.'
+- stem: 'Ridgemont Holdings Co.''s files on two matters, before its Year 3 statements are issued, include
+    a letter from outside counsel and minutes of its compliance committee. Counsel''s letter concerns
+    an indemnification clause in the agreement under which Ridgemont sold its distribution division: Ridgemont
+    indemnified the buyer for up to $350,000 of environmental remediation costs at a site the division
+    used, and counsel, citing a consultant''s site assessment, estimates the cost at between $150,000
+    and $350,000, naming $230,000 as the best estimate within that range. The compliance committee''s
+    minutes describe a whistleblower complaint received in September, under investigation by outside counsel,
+    who told the committee it is too early in the inquiry to gauge either the outcome or the exposure;
+    the minutes mention, only as background on why the complaint was escalated, that the employee''s initial
+    estimate of amounts involved was $70,000. What liability should Ridgemont accrue at year-end for these
+    two matters?'
+  choices:
+  - id: A
+    text: $150,000
+    rationale: Accrues the $150,000 low end of counsel's range. When counsel's letter names $230,000 as
+      the best estimate within the range, Ridgemont accrues that amount rather than the minimum.
+  - id: B
+    text: $230,000
+    rationale: Correct. Ridgemont accrues counsel's stated best estimate, $230,000.
+  - id: C
+    text: $250,000
+    rationale: Accrues the $150,000-to-$350,000 range's midpoint. Counsel's letter names $230,000, not
+      the midpoint, as the best estimate.
+  - id: D
+    text: $300,000
+    rationale: Also accrues $70,000 for the whistleblower matter. The compliance committee's minutes say
+      the investigation is still open and counsel's letter gives no estimate Ridgemont can rely on for
+      it, so it isn't accrued.
+  answer: B
+  explanation: 'The indemnification exposure is probable and counsel''s letter names a best estimate within
+    the range, $230,000, which Ridgemont accrues (ASC 450-20-30-1); the range''s minimum or midpoint is
+    used only when no amount in the range is a better estimate than another. The whistleblower matter
+    has reached no conclusion: counsel told the committee it is too early to assess the outcome or size
+    the exposure, so no amount is accruable, and the one dollar figure in the minutes is background, not
+    an estimate counsel supports. Liability = $230,000.'
+- stem: 'Oversley Group Co.''s files on two matters, before its Year 1 statements are issued, include
+    a letter from outside counsel and minutes of its compliance committee. Counsel''s letter concerns
+    an indemnification clause in the agreement under which Oversley sold its specialty chemicals division:
+    Oversley indemnified the buyer for up to $680,000 of environmental remediation costs at a site the
+    division used, and counsel, citing a consultant''s site assessment, estimates the cost at between
+    $300,000 and $680,000, naming $470,000 as the best estimate within that range. The compliance committee''s
+    minutes describe a whistleblower complaint received in December, under investigation by outside counsel,
+    who told the committee it is too early in the inquiry to gauge either the outcome or the exposure;
+    the minutes mention, only as background on why the complaint was escalated, that the employee''s initial
+    estimate of amounts involved was $150,000. What liability should Oversley accrue at year-end for these
+    two matters?'
+  choices:
+  - id: A
+    text: $300,000
+    rationale: Accrues the $300,000 low end of counsel's range. When counsel's letter names $470,000 as
+      the best estimate within the range, Oversley accrues that amount rather than the minimum.
+  - id: B
+    text: $470,000
+    rationale: Correct. Oversley accrues counsel's stated best estimate, $470,000.
+  - id: C
+    text: $490,000
+    rationale: Accrues the $300,000-to-$680,000 range's midpoint. Counsel's letter names $470,000, not
+      the midpoint, as the best estimate.
+  - id: D
+    text: $680,000
+    rationale: Accrues the $680,000 high end of counsel's range, rather than the $470,000 counsel's letter
+      names as the best estimate.
+  answer: B
+  explanation: 'The indemnification exposure is probable and counsel''s letter names a best estimate within
+    the range, $470,000, which Oversley accrues (ASC 450-20-30-1); the range''s minimum or midpoint is
+    used only when no amount in the range is a better estimate than another. The whistleblower matter
+    has reached no conclusion: counsel told the committee it is too early to assess the outcome or size
+    the exposure, so no amount is accruable, and the one dollar figure in the minutes is background, not
+    an estimate counsel supports. Liability = $470,000.'

@@ -1,0 +1,134 @@
+id: far-change-in-principle-0003
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Accounting changes and error corrections
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 250-10-45-5 to 45-8 (change in accounting principle: retrospective application when practicable)'
+  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+stem: 'At the start of Year 3, Verity Hardware Co. changes its inventory cost-flow method from weighted-average
+  to FIFO because FIFO better reflects the actual flow of its goods, and it can determine the effect on
+  every prior period. Inventory under each method was: December 31, Year 1 -- weighted-average $480,000,
+  FIFO $560,000; December 31, Year 2 -- weighted-average $520,000, FIFO $640,000. Verity''s tax rate is
+  25% for all years and all effects, and it presents comparative statements for Year 2 and Year 3. What
+  net-of-tax adjustment should Verity make to its January 1, Year 2, balance of retained earnings?'
+choices:
+- id: A
+  text: $60,000 decrease
+  rationale: Subtracts the FIFO amount from the weighted-average amount instead of the reverse. Fifo inventory
+    of $560,000 exceeds weighted-average inventory of $480,000, raising retained earnings.
+- id: B
+  text: $60,000 increase
+  rationale: Correct. ($560,000 − $480,000) × 75%.
+- id: C
+  text: $80,000 increase
+  rationale: Reports the pretax $80,000 cumulative effect without its tax effect. The adjustment to opening
+    retained earnings is net of the 25% tax rate.
+- id: D
+  text: $90,000 increase
+  rationale: Uses the $120,000 difference between the two methods at December 31, Year 2, rather than
+    at December 31, Year 1. The cumulative effect through the end of the earliest year presented, Year
+    1, is what adjusts the January 1, Year 2, balance.
+answer: B
+explanation: 'A change in inventory cost-flow method is a change in accounting principle, applied retrospectively
+  when the effect on every prior period can be determined (ASC 250-10-45-5). The cumulative effect on
+  periods before the earliest period presented adjusts the opening balance of retained earnings for that
+  period, net of tax: ($560,000 − $480,000) = $80,000 pretax, × 75% after-tax = $60,000. The December
+  31, Year 2, difference is restated separately within the comparative Year 2 statements; it doesn''t
+  change the January 1, Year 2, opening balance.'
+variants:
+- stem: 'At the start of Year 4, Linwood Supply Co. changes its inventory cost-flow method from LIFO to
+    weighted-average because weighted-average better reflects the actual flow of its goods, and it can
+    determine the effect on every prior period. Inventory under each method was: December 31, Year 2 --
+    LIFO $360,000, weighted-average $430,000; December 31, Year 3 -- LIFO $395,000, weighted-average $470,000.
+    Linwood''s tax rate is 21% for all years and all effects, and it presents comparative statements for
+    Year 3 and Year 4. What net-of-tax adjustment should Linwood make to its January 1, Year 3, balance
+    of retained earnings?'
+  choices:
+  - id: A
+    text: $55,300 decrease
+    rationale: Subtracts the weighted-average amount from the LIFO amount instead of the reverse. Weighted-average
+      inventory of $430,000 exceeds LIFO inventory of $360,000, raising retained earnings.
+  - id: B
+    text: $14,700 increase
+    rationale: Multiplies the $70,000 difference by the 21% tax rate instead of by one minus the tax rate.
+      The adjustment keeps only the after-tax 79% of the pretax difference.
+  - id: C
+    text: $55,300 increase
+    rationale: Correct. ($430,000 − $360,000) × 79%.
+  - id: D
+    text: $59,250 increase
+    rationale: Uses the $75,000 difference between the two methods at December 31, Year 3, rather than
+      at December 31, Year 2. The cumulative effect through the end of the earliest year presented, Year
+      2, is what adjusts the January 1, Year 3, balance.
+  answer: C
+  explanation: 'A change in inventory cost-flow method is a change in accounting principle, applied retrospectively
+    when the effect on every prior period can be determined (ASC 250-10-45-5). The cumulative effect on
+    periods before the earliest period presented adjusts the opening balance of retained earnings for
+    that period, net of tax: ($430,000 − $360,000) = $70,000 pretax, × 79% after-tax = $55,300. The December
+    31, Year 3, difference is restated separately within the comparative Year 3 statements; it doesn''t
+    change the January 1, Year 3, opening balance.'
+- stem: 'At the start of Year 5, Marchant Trading Co. changes its inventory cost-flow method from FIFO
+    to weighted-average because weighted-average better reflects the actual flow of its goods, and it
+    can determine the effect on every prior period. Inventory under each method was: December 31, Year
+    3 -- FIFO $610,000, weighted-average $560,000; December 31, Year 4 -- FIFO $655,000, weighted-average
+    $615,000. Marchant''s tax rate is 25% for all years and all effects, and it presents comparative statements
+    for Year 4 and Year 5. What net-of-tax adjustment should Marchant make to its January 1, Year 4, balance
+    of retained earnings?'
+  choices:
+  - id: A
+    text: $50,000 decrease
+    rationale: Reports the pretax $50,000 cumulative effect without its tax effect. The adjustment to
+      opening retained earnings is net of the 25% tax rate.
+  - id: B
+    text: $37,500 decrease
+    rationale: Correct. ($560,000 − $610,000) × 75%.
+  - id: C
+    text: $12,500 decrease
+    rationale: Multiplies the $50,000 difference by the 25% tax rate instead of by one minus the tax rate.
+      The adjustment keeps only the after-tax 75% of the pretax difference.
+  - id: D
+    text: $37,500 increase
+    rationale: Subtracts the weighted-average amount from the FIFO amount instead of the reverse. Weighted-average
+      inventory of $560,000 exceeds FIFO inventory of $610,000, raising retained earnings.
+  answer: B
+  explanation: 'A change in inventory cost-flow method is a change in accounting principle, applied retrospectively
+    when the effect on every prior period can be determined (ASC 250-10-45-5). The cumulative effect on
+    periods before the earliest period presented adjusts the opening balance of retained earnings for
+    that period, net of tax: ($560,000 − $610,000) = $-50,000 pretax, × 75% after-tax = $-37,500. The
+    December 31, Year 4, difference is restated separately within the comparative Year 4 statements; it
+    doesn''t change the January 1, Year 4, opening balance.'
+- stem: 'At the start of Year 3, Oswestry Goods Co. changes its inventory cost-flow method from weighted-average
+    to LIFO because LIFO better reflects the actual flow of its goods, and it can determine the effect
+    on every prior period. Inventory under each method was: December 31, Year 1 -- weighted-average $290,000,
+    LIFO $245,000; December 31, Year 2 -- weighted-average $315,000, LIFO $260,000. Oswestry''s tax rate
+    is 21% for all years and all effects, and it presents comparative statements for Year 2 and Year 3.
+    What net-of-tax adjustment should Oswestry make to its January 1, Year 2, balance of retained earnings?'
+  choices:
+  - id: A
+    text: $9,450 decrease
+    rationale: Multiplies the $45,000 difference by the 21% tax rate instead of by one minus the tax rate.
+      The adjustment keeps only the after-tax 79% of the pretax difference.
+  - id: B
+    text: $35,550 decrease
+    rationale: Correct. ($245,000 − $290,000) × 79%.
+  - id: C
+    text: $43,450 decrease
+    rationale: Uses the $55,000 difference between the two methods at December 31, Year 2, rather than
+      at December 31, Year 1. The cumulative effect through the end of the earliest year presented, Year
+      1, is what adjusts the January 1, Year 2, balance.
+  - id: D
+    text: $45,000 decrease
+    rationale: Reports the pretax $45,000 cumulative effect without its tax effect. The adjustment to
+      opening retained earnings is net of the 21% tax rate.
+  answer: B
+  explanation: 'A change in inventory cost-flow method is a change in accounting principle, applied retrospectively
+    when the effect on every prior period can be determined (ASC 250-10-45-5). The cumulative effect on
+    periods before the earliest period presented adjusts the opening balance of retained earnings for
+    that period, net of tax: ($245,000 − $290,000) = $-45,000 pretax, × 79% after-tax = $-35,550. The
+    December 31, Year 2, difference is restated separately within the comparative Year 2 statements; it
+    doesn''t change the January 1, Year 2, opening balance.'
