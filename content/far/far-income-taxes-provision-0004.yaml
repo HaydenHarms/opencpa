@@ -15,11 +15,12 @@ review:
   asOf: U.S. GAAP (ASC 740) and federal tax law in effect for 2026; the rate is as stated in the stem
 stem: Oakhurst Corp. discloses the current and deferred components of its income tax expense. Its pretax
   financial income for Year 2 is $640,000. That amount includes $50,000 of proceeds from company-owned
-  life insurance on an executive who died during the year, with Oakhurst as beneficiary, and is after
-  deducting $18,000 of country club dues, which the tax law doesn't allow as a deduction. In Year 2, Oakhurst
-  also sold land on installment terms and recognized the full $120,000 gain in its books; for tax it reports
-  the gain under the installment method, and $40,000 of the gain relates to Year 2 collections. The enacted
-  tax rate is 25% for all years. During Year 2, Oakhurst paid $110,000 of estimated tax, recorded as prepaid
+  life insurance on an executive who died during the year, with Oakhurst as beneficiary, under a policy
+  that meets the tax law's requirements for excluding the proceeds, and is after deducting $18,000 of
+  country club dues, which the tax law doesn't allow as a deduction. In Year 2, Oakhurst also sold land
+  on installment terms and recognized the full $120,000 gain in its books; for tax it reports the gain
+  under the installment method, and $40,000 of the gain relates to Year 2 collections. The enacted tax
+  rate is 25% for all years. During Year 2, Oakhurst paid $110,000 of estimated tax, recorded as prepaid
   income taxes. What current income tax expense should Oakhurst disclose for Year 2?
 choices:
 - id: A
@@ -47,13 +48,13 @@ explanation: 'Current tax expense is the tax on the year''s taxable income. Taxa
 variants:
 - stem: Pinehollow Corp. discloses the current and deferred components of its income tax expense. Its
     pretax financial income for Year 2 is $480,000. That amount includes $35,000 of proceeds from company-owned
-    life insurance on an executive who died during the year, with Pinehollow as beneficiary, and is after
-    deducting $12,000 of country club dues, which the tax law doesn't allow as a deduction. In Year 2,
-    Pinehollow also sold land on installment terms and recognized the full $90,000 gain in its books;
-    for tax it reports the gain under the installment method, and $30,000 of the gain relates to Year
-    2 collections. The enacted tax rate is 21% for all years. During Year 2, Pinehollow paid $70,000 of
-    estimated tax, recorded as prepaid income taxes. What current income tax expense should Pinehollow
-    disclose for Year 2?
+    life insurance on an executive who died during the year, with Pinehollow as beneficiary, under a policy
+    that meets the tax law's requirements for excluding the proceeds, and is after deducting $12,000 of
+    country club dues, which the tax law doesn't allow as a deduction. In Year 2, Pinehollow also sold
+    land on installment terms and recognized the full $90,000 gain in its books; for tax it reports the
+    gain under the installment method, and $30,000 of the gain relates to Year 2 collections. The enacted
+    tax rate is 21% for all years. During Year 2, Pinehollow paid $70,000 of estimated tax, recorded as
+    prepaid income taxes. What current income tax expense should Pinehollow disclose for Year 2?
   choices:
   - id: A
     text: $13,370
@@ -78,13 +79,13 @@ variants:
     gain is deferred tax expense.'
 - stem: Queensgate Corp. discloses the current and deferred components of its income tax expense. Its
     pretax financial income for Year 2 is $720,000. That amount includes $60,000 of proceeds from company-owned
-    life insurance on an executive who died during the year, with Queensgate as beneficiary, and is after
-    deducting $24,000 of country club dues, which the tax law doesn't allow as a deduction. In Year 2,
-    Queensgate also sold land on installment terms and recognized the full $150,000 gain in its books;
-    for tax it reports the gain under the installment method, and $50,000 of the gain relates to Year
-    2 collections. The enacted tax rate is 25% for all years. During Year 2, Queensgate paid $130,000
-    of estimated tax, recorded as prepaid income taxes. What current income tax expense should Queensgate
-    disclose for Year 2?
+    life insurance on an executive who died during the year, with Queensgate as beneficiary, under a policy
+    that meets the tax law's requirements for excluding the proceeds, and is after deducting $24,000 of
+    country club dues, which the tax law doesn't allow as a deduction. In Year 2, Queensgate also sold
+    land on installment terms and recognized the full $150,000 gain in its books; for tax it reports the
+    gain under the installment method, and $50,000 of the gain relates to Year 2 collections. The enacted
+    tax rate is 25% for all years. During Year 2, Queensgate paid $130,000 of estimated tax, recorded
+    as prepaid income taxes. What current income tax expense should Queensgate disclose for Year 2?
   choices:
   - id: A
     text: $133,500
@@ -110,13 +111,13 @@ variants:
     gain is deferred tax expense.'
 - stem: Ridgemont Corp. discloses the current and deferred components of its income tax expense. Its pretax
     financial income for Year 2 is $560,000. That amount includes $42,000 of proceeds from company-owned
-    life insurance on an executive who died during the year, with Ridgemont as beneficiary, and is after
-    deducting $15,000 of country club dues, which the tax law doesn't allow as a deduction. In Year 2,
-    Ridgemont also sold land on installment terms and recognized the full $100,000 gain in its books;
-    for tax it reports the gain under the installment method, and $35,000 of the gain relates to Year
-    2 collections. The enacted tax rate is 24% for all years. During Year 2, Ridgemont paid $95,000 of
-    estimated tax, recorded as prepaid income taxes. What current income tax expense should Ridgemont
-    disclose for Year 2?
+    life insurance on an executive who died during the year, with Ridgemont as beneficiary, under a policy
+    that meets the tax law's requirements for excluding the proceeds, and is after deducting $15,000 of
+    country club dues, which the tax law doesn't allow as a deduction. In Year 2, Ridgemont also sold
+    land on installment terms and recognized the full $100,000 gain in its books; for tax it reports the
+    gain under the installment method, and $35,000 of the gain relates to Year 2 collections. The enacted
+    tax rate is 24% for all years. During Year 2, Ridgemont paid $95,000 of estimated tax, recorded as
+    prepaid income taxes. What current income tax expense should Ridgemont disclose for Year 2?
   choices:
   - id: A
     text: $103,920

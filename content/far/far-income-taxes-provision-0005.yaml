@@ -27,18 +27,18 @@ choices:
   rationale: Treats the $7,000 increase in the valuation allowance as a deferred tax benefit. A larger
     allowance means less of the asset will be realized, which increases expense.
 - id: B
-  text: $14,500
-  rationale: Treats the $5,000 decrease in the deferred tax asset as a benefit. A decrease in a deferred
-    tax asset increases deferred tax expense, just as an increase in a deferred tax liability does.
-- id: C
   text: $17,500
   rationale: Leaves out the $7,000 increase in the valuation allowance. Raising the allowance against
     a deferred tax asset is deferred tax expense.
-- id: D
+- id: C
   text: $24,500
   rationale: Correct. $12,500 increase in the deferred tax liability + $5,000 decrease in the deferred
     tax asset + $7,000 increase in the valuation allowance.
-answer: D
+- id: D
+  text: $159,500
+  rationale: Adds the $135,000 of current tax ($540,000 × 25%). That is total income tax expense, not
+    its deferred part.
+answer: C
 explanation: 'Deferred tax expense is the year''s change in the deferred tax accounts. The prepaid expenses
   are a taxable temporary difference: the deferred tax liability rises by ($210,000 − $160,000) × 25%
   = $12,500, an expense. The allowance for credit losses is a deductible temporary difference: the deferred
@@ -53,32 +53,32 @@ variants:
     prepaid expenses, deducted for tax when paid, of $120,000 at January 1 and $150,000 at December 31,
     and its allowance for credit losses, deductible for tax when receivables are written off, of $60,000
     at January 1 and $45,000 at December 31. The valuation allowance against the deferred tax asset was
-    $4,000 at January 1; after updating its forecasts, Bramhope sets it at $9,000 at December 31. What
+    $1,500 at January 1; after updating its forecasts, Bramhope sets it at $4,000 at December 31. What
     deferred income tax expense should Bramhope record for Year 2?
   choices:
   - id: A
-    text: $9,450
-    rationale: Leaves out the $5,000 increase in the valuation allowance. Raising the allowance against
-      a deferred tax asset is deferred tax expense.
+    text: $5,650
+    rationale: Treats the $3,150 decrease in the deferred tax asset as a benefit. A decrease in a deferred
+      tax asset increases deferred tax expense, just as an increase in a deferred tax liability does.
   - id: B
-    text: $14,450
-    rationale: Correct. $6,300 increase in the deferred tax liability + $3,150 decrease in the deferred
-      tax asset + $5,000 increase in the valuation allowance.
+    text: $9,450
+    rationale: Leaves out the $2,500 increase in the valuation allowance. Raising the allowance against
+      a deferred tax asset is deferred tax expense.
   - id: C
-    text: $31,050
-    rationale: 'Uses the December 31 balances of all three accounts as if they were the year''s changes:
-      $31,500 liability − $9,450 asset + $9,000 allowance.'
+    text: $11,950
+    rationale: Correct. $6,300 increase in the deferred tax liability + $3,150 decrease in the deferred
+      tax asset + $2,500 increase in the valuation allowance.
   - id: D
-    text: $90,050
+    text: $87,550
     rationale: Adds the $75,600 of current tax ($360,000 × 21%). That is total income tax expense, not
       its deferred part.
-  answer: B
+  answer: C
   explanation: 'Deferred tax expense is the year''s change in the deferred tax accounts. The prepaid expenses
     are a taxable temporary difference: the deferred tax liability rises by ($150,000 − $120,000) × 21%
     = $6,300, an expense. The allowance for credit losses is a deductible temporary difference: the deferred
     tax asset falls by ($60,000 − $45,000) × 21% = $3,150, also an expense. The valuation allowance rises
-    by $9,000 − $4,000 = $5,000, an expense, because less of the asset is expected to be realized (ASC
-    740-10-30-5(e)). Deferred tax expense = $6,300 + $3,150 + $5,000 = $14,450. The $75,600 of current
+    by $4,000 − $1,500 = $2,500, an expense, because less of the asset is expected to be realized (ASC
+    740-10-30-5(e)). Deferred tax expense = $6,300 + $3,150 + $2,500 = $11,950. The $75,600 of current
     tax ($360,000 × 21%) is recorded in the same entry but isn''t deferred.'
 - stem: Charlecote Corp. records its Year 2 tax provision at December 31, keeping its deferred tax asset,
     deferred tax liability and valuation allowance in separate accounts. Taxable income for Year 2 is

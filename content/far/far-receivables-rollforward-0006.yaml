@@ -12,20 +12,21 @@ review:
   - ASC 860-10-40-5 (conditions for a transfer of financial assets to be a sale; otherwise a secured borrowing)
   - ASC 606-10-55-81 to 55-84 (bill-and-hold arrangements)
   - 'ASC 606-10-45-4 (receivables: unconditional right to consideration)'
-  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
-    solved and every number and distractor computed in code.
+  notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: Portreath Supply Co.'s accounts receivable control account began Year 2 at $520,000. Its Year 2
   postings were debits for sales of $3,150,000, credits for cash collected of $3,080,000, credits for
   accounts written off of $26,000, and a $72,000 credit on October 1, when Portreath transferred that
   amount of customer accounts to a bank for cash, leaving a December 31 balance of $492,000. Testing the
   postings, internal audit learns that Portreath must reimburse the bank for any transferred account that
-  isn't collected, and the transfer agreement forbids the bank from selling or pledging the accounts.
-  The sales debits include a $48,000 invoice dated December 28 for goods a customer asked Portreath to
-  hold until its new store opens in March; the goods sit with Portreath's other stock, are available to
-  fill other orders, and are payable 30 days after delivery. Both the sales debits and the cash-collected
-  credits include $94,000 of showroom cash sales, which Portreath's cashiers post through the receivables
-  account on the day of each sale. What balance, before any allowance, should Portreath's accounts receivable
-  control account show at December 31, Year 2?
+  isn't collected, and that the transfer agreement forbids the bank from selling or pledging the accounts,
+  a restriction Portreath insisted on to protect its customer relationships; none of the transferred accounts
+  had been collected by December 31. The sales debits include a $48,000 invoice dated December 28 for
+  goods a customer asked Portreath to hold until its new store opens in March; the goods sit with Portreath's
+  other stock, are available to fill other orders, and are payable 30 days after delivery. Both the sales
+  debits and the cash-collected credits include $94,000 of showroom cash sales, which Portreath's cashiers
+  post through the receivables account on the day of each sale. What balance, before any allowance, should
+  Portreath's accounts receivable control account show at December 31, Year 2?
 choices:
 - id: A
   text: $422,000
@@ -47,69 +48,75 @@ choices:
     stock and can fill other orders, so control hasn't passed and there is no sale yet; payment isn't
     due until 30 days after delivery, so Portreath has no unconditional right to payment either.
 answer: C
-explanation: 'The transfer is a secured borrowing, not a sale: Portreath keeps the credit risk, and the
-  agreement forbids the bank from selling or pledging the accounts, so the transferee lacks the right
-  to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The $72,000 goes back
-  into receivables, and the cash received is a liability to the bank. The December 28 invoice is not a
-  sale: the goods aren''t set apart as the customer''s and can be used to fill other orders, so control
-  hasn''t passed (ASC 606-10-55-83), and with payment due only after delivery there is no unconditional
-  right to payment; the $48,000 comes out. The showroom cash sales were debited and credited to the account
-  for the same $94,000, so they leave the balance unchanged. Corrected balance = $492,000 + $72,000 −
-  $48,000 = $516,000.'
+explanation: 'The transfer is a secured borrowing, not a sale: the agreement forbids the bank from selling
+  or pledging the accounts, a constraint that benefits Portreath, so the transferee lacks the right to
+  pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). (The recourse by itself
+  wouldn''t prevent sale accounting.) None of the accounts had been collected by December 31, so all of
+  them are still Portreath''s receivables. The $72,000 goes back into receivables, and the cash received
+  is a liability to the bank. The December 28 invoice is not a sale: the goods aren''t set apart as the
+  customer''s and can be used to fill other orders, so control hasn''t passed (ASC 606-10-55-83), and
+  with payment due only after delivery there is no unconditional right to payment; the $48,000 comes out.
+  The showroom cash sales were debited and credited to the account for the same $94,000, so they leave
+  the balance unchanged. Corrected balance = $492,000 + $72,000 − $48,000 = $516,000.'
 variants:
 - stem: Porthtowan Traders Co.'s accounts receivable control account began Year 2 at $410,000. Its Year
     2 postings were debits for sales of $2,460,000, credits for cash collected of $2,395,000, credits
     for accounts written off of $21,000, and a $58,000 credit on October 1, when Porthtowan transferred
     that amount of customer accounts to a bank for cash, leaving a December 31 balance of $396,000. Testing
     the postings, internal audit learns that Porthtowan must reimburse the bank for any transferred account
-    that isn't collected, and the transfer agreement forbids the bank from selling or pledging the accounts.
-    The sales debits include a $36,000 invoice dated December 28 for goods a customer asked Porthtowan
-    to hold until its new store opens in March; the goods sit with Porthtowan's other stock, are available
-    to fill other orders, and are payable 30 days after delivery. Both the sales debits and the cash-collected
-    credits include $77,000 of showroom cash sales, which Porthtowan's cashiers post through the receivables
-    account on the day of each sale. What balance, before any allowance, should Porthtowan's accounts
-    receivable control account show at December 31, Year 2?
+    that isn't collected, and that the transfer agreement forbids the bank from selling or pledging the
+    accounts, a restriction Porthtowan insisted on to protect its customer relationships; none of the
+    transferred accounts had been collected by December 31. The sales debits include a $36,000 invoice
+    dated December 28 for goods a customer asked Porthtowan to hold until its new store opens in March;
+    the goods sit with Porthtowan's other stock, are available to fill other orders, and are payable 30
+    days after delivery. Both the sales debits and the cash-collected credits include $77,000 of showroom
+    cash sales, which Porthtowan's cashiers post through the receivables account on the day of each sale.
+    What balance, before any allowance, should Porthtowan's accounts receivable control account show at
+    December 31, Year 2?
   choices:
   - id: A
     text: $341,000
     rationale: Removes the $77,000 of cash sales from the sales debits only. They were also posted as
       collections, so the debit and credit cancel and the year-end balance needs no correction for them.
   - id: B
-    text: $396,000
-    rationale: Accepts the balance as posted, $396,000, keeping the transfer as a sale and the bill-and-hold
-      invoice as a receivable.
-  - id: C
     text: $418,000
     rationale: Correct. $396,000 + $58,000 − $36,000; the cash sales were debited and credited to the
       account, so they net to zero.
-  - id: D
+  - id: C
     text: $454,000
     rationale: Keeps the $36,000 bill-and-hold invoice as a receivable. The goods sit with Porthtowan's
       other stock and can fill other orders, so control hasn't passed and there is no sale yet; payment
       isn't due until 30 days after delivery, so Porthtowan has no unconditional right to payment either.
-  answer: C
-  explanation: 'The transfer is a secured borrowing, not a sale: Porthtowan keeps the credit risk, and
-    the agreement forbids the bank from selling or pledging the accounts, so the transferee lacks the
-    right to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The $58,000 goes
-    back into receivables, and the cash received is a liability to the bank. The December 28 invoice is
-    not a sale: the goods aren''t set apart as the customer''s and can be used to fill other orders, so
-    control hasn''t passed (ASC 606-10-55-83), and with payment due only after delivery there is no unconditional
-    right to payment; the $36,000 comes out. The showroom cash sales were debited and credited to the
-    account for the same $77,000, so they leave the balance unchanged. Corrected balance = $396,000 +
-    $58,000 − $36,000 = $418,000.'
+  - id: D
+    text: $495,000
+    rationale: Removes the $77,000 of cash sales from the collection credits only. They were also posted
+      as sales debits, so the debit and credit cancel and the year-end balance needs no correction for
+      them.
+  answer: B
+  explanation: 'The transfer is a secured borrowing, not a sale: the agreement forbids the bank from selling
+    or pledging the accounts, a constraint that benefits Porthtowan, so the transferee lacks the right
+    to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). (The recourse by itself
+    wouldn''t prevent sale accounting.) None of the accounts had been collected by December 31, so all
+    of them are still Porthtowan''s receivables. The $58,000 goes back into receivables, and the cash
+    received is a liability to the bank. The December 28 invoice is not a sale: the goods aren''t set
+    apart as the customer''s and can be used to fill other orders, so control hasn''t passed (ASC 606-10-55-83),
+    and with payment due only after delivery there is no unconditional right to payment; the $36,000 comes
+    out. The showroom cash sales were debited and credited to the account for the same $77,000, so they
+    leave the balance unchanged. Corrected balance = $396,000 + $58,000 − $36,000 = $418,000.'
 - stem: Perranarworthal Wholesale Co.'s accounts receivable control account began Year 2 at $630,000.
     Its Year 2 postings were debits for sales of $3,820,000, credits for cash collected of $3,725,000,
     credits for accounts written off of $31,000, and an $85,000 credit on October 1, when Perranarworthal
     transferred that amount of customer accounts to a bank for cash, leaving a December 31 balance of
     $609,000. Testing the postings, internal audit learns that Perranarworthal must reimburse the bank
-    for any transferred account that isn't collected, and the transfer agreement forbids the bank from
-    selling or pledging the accounts. The sales debits include a $55,000 invoice dated December 28 for
-    goods a customer asked Perranarworthal to hold until its new store opens in March; the goods sit with
-    Perranarworthal's other stock, are available to fill other orders, and are payable 30 days after delivery.
-    Both the sales debits and the cash-collected credits include $112,000 of showroom cash sales, which
-    Perranarworthal's cashiers post through the receivables account on the day of each sale. What balance,
-    before any allowance, should Perranarworthal's accounts receivable control account show at December
-    31, Year 2?
+    for any transferred account that isn't collected, and that the transfer agreement forbids the bank
+    from selling or pledging the accounts, a restriction Perranarworthal insisted on to protect its customer
+    relationships; none of the transferred accounts had been collected by December 31. The sales debits
+    include a $55,000 invoice dated December 28 for goods a customer asked Perranarworthal to hold until
+    its new store opens in March; the goods sit with Perranarworthal's other stock, are available to fill
+    other orders, and are payable 30 days after delivery. Both the sales debits and the cash-collected
+    credits include $112,000 of showroom cash sales, which Perranarworthal's cashiers post through the
+    receivables account on the day of each sale. What balance, before any allowance, should Perranarworthal's
+    accounts receivable control account show at December 31, Year 2?
   choices:
   - id: A
     text: $527,000
@@ -122,35 +129,39 @@ variants:
       ASC 860-10-40-5; it is a secured borrowing, so the receivables stay in the control account and the
       cash is a liability.
   - id: C
-    text: $609,000
-    rationale: Accepts the balance as posted, $609,000, keeping the transfer as a sale and the bill-and-hold
-      invoice as a receivable.
-  - id: D
     text: $639,000
     rationale: Correct. $609,000 + $85,000 − $55,000; the cash sales were debited and credited to the
       account, so they net to zero.
-  answer: D
-  explanation: 'The transfer is a secured borrowing, not a sale: Perranarworthal keeps the credit risk,
-    and the agreement forbids the bank from selling or pledging the accounts, so the transferee lacks
-    the right to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The $85,000
-    goes back into receivables, and the cash received is a liability to the bank. The December 28 invoice
-    is not a sale: the goods aren''t set apart as the customer''s and can be used to fill other orders,
-    so control hasn''t passed (ASC 606-10-55-83), and with payment due only after delivery there is no
-    unconditional right to payment; the $55,000 comes out. The showroom cash sales were debited and credited
-    to the account for the same $112,000, so they leave the balance unchanged. Corrected balance = $609,000
-    + $85,000 − $55,000 = $639,000.'
+  - id: D
+    text: $751,000
+    rationale: Removes the $112,000 of cash sales from the collection credits only. They were also posted
+      as sales debits, so the debit and credit cancel and the year-end balance needs no correction for
+      them.
+  answer: C
+  explanation: 'The transfer is a secured borrowing, not a sale: the agreement forbids the bank from selling
+    or pledging the accounts, a constraint that benefits Perranarworthal, so the transferee lacks the
+    right to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). (The recourse
+    by itself wouldn''t prevent sale accounting.) None of the accounts had been collected by December
+    31, so all of them are still Perranarworthal''s receivables. The $85,000 goes back into receivables,
+    and the cash received is a liability to the bank. The December 28 invoice is not a sale: the goods
+    aren''t set apart as the customer''s and can be used to fill other orders, so control hasn''t passed
+    (ASC 606-10-55-83), and with payment due only after delivery there is no unconditional right to payment;
+    the $55,000 comes out. The showroom cash sales were debited and credited to the account for the same
+    $112,000, so they leave the balance unchanged. Corrected balance = $609,000 + $85,000 − $55,000 =
+    $639,000.'
 - stem: St Agnes Wholesale Co.'s accounts receivable control account began Year 2 at $355,000. Its Year
     2 postings were debits for sales of $2,080,000, credits for cash collected of $2,030,000, credits
     for accounts written off of $17,000, and a $46,000 credit on October 1, when St Agnes transferred
     that amount of customer accounts to a bank for cash, leaving a December 31 balance of $342,000. Testing
     the postings, internal audit learns that St Agnes must reimburse the bank for any transferred account
-    that isn't collected, and the transfer agreement forbids the bank from selling or pledging the accounts.
-    The sales debits include a $29,000 invoice dated December 28 for goods a customer asked St Agnes to
-    hold until its new store opens in March; the goods sit with St Agnes's other stock, are available
-    to fill other orders, and are payable 30 days after delivery. Both the sales debits and the cash-collected
-    credits include $63,000 of showroom cash sales, which St Agnes's cashiers post through the receivables
-    account on the day of each sale. What balance, before any allowance, should St Agnes's accounts receivable
-    control account show at December 31, Year 2?
+    that isn't collected, and that the transfer agreement forbids the bank from selling or pledging the
+    accounts, a restriction St Agnes insisted on to protect its customer relationships; none of the transferred
+    accounts had been collected by December 31. The sales debits include a $29,000 invoice dated December
+    28 for goods a customer asked St Agnes to hold until its new store opens in March; the goods sit with
+    St Agnes's other stock, are available to fill other orders, and are payable 30 days after delivery.
+    Both the sales debits and the cash-collected credits include $63,000 of showroom cash sales, which
+    St Agnes's cashiers post through the receivables account on the day of each sale. What balance, before
+    any allowance, should St Agnes's accounts receivable control account show at December 31, Year 2?
   choices:
   - id: A
     text: $313,000
@@ -159,25 +170,27 @@ variants:
       ASC 860-10-40-5; it is a secured borrowing, so the receivables stay in the control account and the
       cash is a liability.
   - id: B
-    text: $342,000
-    rationale: Accepts the balance as posted, $342,000, keeping the transfer as a sale and the bill-and-hold
-      invoice as a receivable.
-  - id: C
     text: $359,000
     rationale: Correct. $342,000 + $46,000 − $29,000; the cash sales were debited and credited to the
       account, so they net to zero.
-  - id: D
+  - id: C
     text: $388,000
     rationale: Keeps the $29,000 bill-and-hold invoice as a receivable. The goods sit with St Agnes's
       other stock and can fill other orders, so control hasn't passed and there is no sale yet; payment
       isn't due until 30 days after delivery, so St Agnes has no unconditional right to payment either.
-  answer: C
-  explanation: 'The transfer is a secured borrowing, not a sale: St Agnes keeps the credit risk, and the
-    agreement forbids the bank from selling or pledging the accounts, so the transferee lacks the right
-    to pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). The $46,000 goes back
-    into receivables, and the cash received is a liability to the bank. The December 28 invoice is not
-    a sale: the goods aren''t set apart as the customer''s and can be used to fill other orders, so control
-    hasn''t passed (ASC 606-10-55-83), and with payment due only after delivery there is no unconditional
-    right to payment; the $29,000 comes out. The showroom cash sales were debited and credited to the
-    account for the same $63,000, so they leave the balance unchanged. Corrected balance = $342,000 +
-    $46,000 − $29,000 = $359,000.'
+  - id: D
+    text: $422,000
+    rationale: Removes the $63,000 of cash sales from the collection credits only. They were also posted
+      as sales debits, so the debit and credit cancel and the year-end balance needs no correction for
+      them.
+  answer: B
+  explanation: 'The transfer is a secured borrowing, not a sale: the agreement forbids the bank from selling
+    or pledging the accounts, a constraint that benefits St Agnes, so the transferee lacks the right to
+    pledge or exchange them that sale accounting requires (ASC 860-10-40-5(b)). (The recourse by itself
+    wouldn''t prevent sale accounting.) None of the accounts had been collected by December 31, so all
+    of them are still St Agnes''s receivables. The $46,000 goes back into receivables, and the cash received
+    is a liability to the bank. The December 28 invoice is not a sale: the goods aren''t set apart as
+    the customer''s and can be used to fill other orders, so control hasn''t passed (ASC 606-10-55-83),
+    and with payment due only after delivery there is no unconditional right to payment; the $29,000 comes
+    out. The showroom cash sales were debited and credited to the account for the same $63,000, so they
+    leave the balance unchanged. Corrected balance = $342,000 + $46,000 − $29,000 = $359,000.'

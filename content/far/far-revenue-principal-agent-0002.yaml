@@ -137,8 +137,10 @@ variants:
     rationale: Correct. Ride commission (22% × $430,000 = $94,600) as agent, plus subscription revenue
       ($18 × 2,500 = $45,000) as principal.
   - id: D
-    text: $380,400
-    rationale: Recognizes the 78% of each fare paid to the driver instead of the 22% ZipFleet keeps.
+    text: $475,000
+    rationale: Reports the ride fares gross, $430,000. The drivers — not ZipFleet — are responsible for
+      safely completing each trip and bear the risk of a problem with it, so ZipFleet is an agent for
+      the fares despite setting the price, and recognizes only its 22% fee.
   answer: C
   explanation: 'An entity is a principal if it controls the specified service before it is transferred
     to the customer (ASC 606-10-55-36 to 55-40). The indicators point in different directions here: ZipFleet

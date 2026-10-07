@@ -8,158 +8,165 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 450-20-25-2 and 450-20-30-1 (accrual at the best estimate within a range when one exists)
-  - ASC 450-20-50-3 to 50-5 (disclosure when a loss cannot yet be estimated)
-  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+  - ASC 460-10-35 and ASC 450-20-25-2 (a guarantor's contingent liability once a loss is probable)
+  - ASC 450-20-30-1 (accrual at the best estimate within a range when one exists)
+  - ASC 450-20-50-3 to 50-5 (disclosure of a reasonably possible loss)
+  notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: 'Before its Year 1 statements are issued, Ambersgate Holdings Co.''s files on two matters include
-  a letter from outside counsel and minutes of its compliance committee. Counsel''s letter concerns an
-  indemnity in the agreement under which Ambersgate sold its packaging division in an earlier year: Ambersgate
-  agreed to reimburse the buyer for up to $420,000 of environmental cleanup costs at a site the division
-  used. The indemnity''s fair value when it was given was immaterial, and Ambersgate recognized no liability
-  for it then. In September, Year 1, the state ordered the buyer to clean up the site, and the buyer has
-  submitted its claim under the indemnity; counsel, citing a consultant''s site assessment, estimates
-  the cost at between $180,000 and $420,000 and names $310,000 as the best estimate within that range.
-  The committee''s minutes describe a whistleblower complaint received in October, alleging $95,000 of
-  improper payments to a supplier; the outside counsel investigating it told the committee it is too early
-  in the inquiry to gauge either the outcome or the exposure. What liability should Ambersgate accrue
-  at year-end for these two matters?'
+  letters from outside counsel. The first concerns an indemnity in the agreement under which Ambersgate
+  sold its packaging division in an earlier year: Ambersgate agreed to reimburse the buyer for 80% of
+  any environmental cleanup costs at a site the division used, up to a total of $420,000. The indemnity''s
+  fair value when it was given was immaterial, and Ambersgate recognized no liability for it then. In
+  September, Year 1, the state ordered the buyer to clean up the site, and the buyer has submitted its
+  claim under the indemnity. A consultant''s site assessment puts the total cleanup cost at between $380,000
+  and $760,000, most likely $590,000. The second letter concerns a suit a former distributor filed in
+  October, claiming $260,000 for wrongful termination; counsel''s letter says Ambersgate will more likely
+  than not prevail, though the distributor''s case is not without merit, and estimates that if Ambersgate
+  loses, the loss would be about $95,000. What liability should Ambersgate accrue at year-end for these
+  two matters?'
 choices:
 - id: A
-  text: $180,000
-  rationale: Accrues the $180,000 low end of the consultant's range. When counsel's letter names $310,000
-    as the best estimate within the range, that amount is accrued rather than the minimum.
+  text: $304,000
+  rationale: Accrues 80% of the $380,000 low end of the consultant's range. When an amount within the
+    range is a better estimate than any other, here the $590,000 most likely cost, that amount is used;
+    the minimum is used only when none is.
 - id: B
-  text: $300,000
-  rationale: Accrues the $180,000-to-$420,000 range's midpoint. Counsel's letter names $310,000, not the
-    midpoint, as the best estimate.
+  text: $420,000
+  rationale: Correct. 80% × $590,000 = $472,000, limited to the $420,000 cap; nothing for the distributor's
+    claim.
 - id: C
-  text: $310,000
-  rationale: Correct. Ambersgate accrues counsel's stated best estimate for the indemnity, $310,000, and
-    nothing for the whistleblower matter.
+  text: $472,000
+  rationale: Accrues 80% of the $590,000 most likely cost without applying the $420,000 cap. Ambersgate's
+    obligation under the indemnity can't exceed the cap.
 - id: D
-  text: $405,000
-  rationale: Also accrues the $95,000 the complaint alleges. Counsel told the committee it is too early
-    to gauge the outcome or the exposure, so the matter isn't accrued; an allegation isn't an estimate
-    of loss.
-answer: C
-explanation: 'With the cleanup ordered and the buyer''s claim submitted, payment under the indemnity is
-  probable, and counsel''s letter names a best estimate within the range, $310,000, which Ambersgate accrues
-  (ASC 450-20-25-2; ASC 450-20-30-1); the minimum or midpoint is used only when no amount in the range
-  is a better estimate than another. The whistleblower matter has reached no conclusion: counsel can''t
-  yet assess the outcome or the exposure, so no amount is accrued, and the $95,000 the complaint alleges
-  is not an estimate of loss; the matter is considered for disclosure (ASC 450-20-50-3 to 50-5). Liability
-  = $310,000.'
+  text: $515,000
+  rationale: Also accrues counsel's $95,000 estimate for the distributor's claim. Counsel expects Ambersgate
+    more likely than not to prevail, so a loss is reasonably possible, not probable; it is disclosed with
+    the estimate, not accrued.
+answer: B
+explanation: 'Once the cleanup was ordered and the buyer claimed, a loss under the indemnity became probable,
+  so Ambersgate recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2). The
+  consultant''s most likely amount is a better estimate than any other in the range, so it is used (ASC
+  450-20-30-1), and Ambersgate''s share is 80% × $590,000 = $472,000, which exceeds the $420,000 cap,
+  so the accrual is limited to $420,000. Counsel expects Ambersgate more likely than not to prevail but
+  doesn''t consider the case without merit, so a loss on the distributor''s suit is reasonably possible,
+  not probable: nothing is accrued; the nature of the claim and the $95,000 estimate are disclosed (ASC
+  450-20-50-3 to 50-5). Liability = $420,000.'
 variants:
 - stem: 'Before its Year 2 statements are issued, Follyfield Group Co.''s files on two matters include
-    a letter from outside counsel and minutes of its compliance committee. Counsel''s letter concerns
-    an indemnity in the agreement under which Follyfield sold its logistics division in an earlier year:
-    Follyfield agreed to reimburse the buyer for up to $560,000 of environmental cleanup costs at a site
-    the division used. The indemnity''s fair value when it was given was immaterial, and Follyfield recognized
-    no liability for it then. In August, Year 2, the state ordered the buyer to clean up the site, and
-    the buyer has submitted its claim under the indemnity; counsel, citing a consultant''s site assessment,
-    estimates the cost at between $240,000 and $560,000 and names $380,000 as the best estimate within
-    that range. The committee''s minutes describe a whistleblower complaint received in November, alleging
-    $130,000 of improper payments to a supplier; the outside counsel investigating it told the committee
-    it is too early in the inquiry to gauge either the outcome or the exposure. What liability should
-    Follyfield accrue at year-end for these two matters?'
+    letters from outside counsel. The first concerns an indemnity in the agreement under which Follyfield
+    sold its logistics division in an earlier year: Follyfield agreed to reimburse the buyer for 60% of
+    any environmental cleanup costs at a site the division used, up to a total of $560,000. The indemnity''s
+    fair value when it was given was immaterial, and Follyfield recognized no liability for it then. In
+    August, Year 2, the state ordered the buyer to clean up the site, and the buyer has submitted its
+    claim under the indemnity. A consultant''s site assessment puts the total cleanup cost at between
+    $520,000 and $1,150,000, most likely $780,000. The second letter concerns a suit a former distributor
+    filed in November, claiming $340,000 for wrongful termination; counsel''s letter says Follyfield will
+    more likely than not prevail, though the distributor''s case is not without merit, and estimates that
+    if Follyfield loses, the loss would be about $130,000. What liability should Follyfield accrue at
+    year-end for these two matters?'
   choices:
   - id: A
-    text: $380,000
-    rationale: Correct. Follyfield accrues counsel's stated best estimate for the indemnity, $380,000,
-      and nothing for the whistleblower matter.
+    text: $468,000
+    rationale: Correct. 60% × $780,000 = $468,000, within the cap; nothing for the distributor's claim.
   - id: B
-    text: $400,000
-    rationale: Accrues the $240,000-to-$560,000 range's midpoint. Counsel's letter names $380,000, not
-      the midpoint, as the best estimate.
+    text: $560,000
+    rationale: Accrues the full $780,000 most likely cost, limited to the cap, as if Follyfield had agreed
+      to reimburse all of it. The indemnity covers only 60% of the buyer's costs.
   - id: C
-    text: $510,000
-    rationale: Also accrues the $130,000 the complaint alleges. Counsel told the committee it is too early
-      to gauge the outcome or the exposure, so the matter isn't accrued; an allegation isn't an estimate
-      of loss.
+    text: $598,000
+    rationale: Also accrues counsel's $130,000 estimate for the distributor's claim. Counsel expects Follyfield
+      more likely than not to prevail, so a loss is reasonably possible, not probable; it is disclosed
+      with the estimate, not accrued.
+  - id: D
+    text: $808,000
+    rationale: Also accrues the $340,000 the distributor claims. A loss that is only reasonably possible
+      isn't accrued, and the amount claimed isn't an estimate of the loss.
+  answer: A
+  explanation: 'Once the cleanup was ordered and the buyer claimed, a loss under the indemnity became
+    probable, so Follyfield recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2).
+    The consultant''s most likely amount is a better estimate than any other in the range, so it is used
+    (ASC 450-20-30-1), and Follyfield''s share is 60% × $780,000 = $468,000, which is within the $560,000
+    cap. Counsel expects Follyfield more likely than not to prevail but doesn''t consider the case without
+    merit, so a loss on the distributor''s suit is reasonably possible, not probable: nothing is accrued;
+    the nature of the claim and the $130,000 estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability
+    = $468,000.'
+- stem: 'Before its Year 3 statements are issued, Ridgemont Holdings Co.''s files on two matters include
+    letters from outside counsel. The first concerns an indemnity in the agreement under which Ridgemont
+    sold its distribution division in an earlier year: Ridgemont agreed to reimburse the buyer for 75%
+    of any environmental cleanup costs at a site the division used, up to a total of $350,000. The indemnity''s
+    fair value when it was given was immaterial, and Ridgemont recognized no liability for it then. In
+    July, Year 3, the state ordered the buyer to clean up the site, and the buyer has submitted its claim
+    under the indemnity. A consultant''s site assessment puts the total cleanup cost at between $330,000
+    and $640,000, most likely $520,000. The second letter concerns a suit a former distributor filed in
+    September, claiming $210,000 for wrongful termination; counsel''s letter says Ridgemont will more
+    likely than not prevail, though the distributor''s case is not without merit, and estimates that if
+    Ridgemont loses, the loss would be about $70,000. What liability should Ridgemont accrue at year-end
+    for these two matters?'
+  choices:
+  - id: A
+    text: $247,500
+    rationale: Accrues 75% of the $330,000 low end of the consultant's range. When an amount within the
+      range is a better estimate than any other, here the $520,000 most likely cost, that amount is used;
+      the minimum is used only when none is.
+  - id: B
+    text: $350,000
+    rationale: Correct. 75% × $520,000 = $390,000, limited to the $350,000 cap; nothing for the distributor's
+      claim.
+  - id: C
+    text: $390,000
+    rationale: Accrues 75% of the $520,000 most likely cost without applying the $350,000 cap. Ridgemont's
+      obligation under the indemnity can't exceed the cap.
   - id: D
     text: $560,000
-    rationale: Accrues the $560,000 cap, the top of the range, rather than the $380,000 counsel names
-      as the best estimate.
-  answer: A
-  explanation: 'With the cleanup ordered and the buyer''s claim submitted, payment under the indemnity
-    is probable, and counsel''s letter names a best estimate within the range, $380,000, which Follyfield
-    accrues (ASC 450-20-25-2; ASC 450-20-30-1); the minimum or midpoint is used only when no amount in
-    the range is a better estimate than another. The whistleblower matter has reached no conclusion: counsel
-    can''t yet assess the outcome or the exposure, so no amount is accrued, and the $130,000 the complaint
-    alleges is not an estimate of loss; the matter is considered for disclosure (ASC 450-20-50-3 to 50-5).
-    Liability = $380,000.'
-- stem: 'Before its Year 3 statements are issued, Ridgemont Holdings Co.''s files on two matters include
-    a letter from outside counsel and minutes of its compliance committee. Counsel''s letter concerns
-    an indemnity in the agreement under which Ridgemont sold its distribution division in an earlier year:
-    Ridgemont agreed to reimburse the buyer for up to $350,000 of environmental cleanup costs at a site
-    the division used. The indemnity''s fair value when it was given was immaterial, and Ridgemont recognized
-    no liability for it then. In July, Year 3, the state ordered the buyer to clean up the site, and the
-    buyer has submitted its claim under the indemnity; counsel, citing a consultant''s site assessment,
-    estimates the cost at between $150,000 and $350,000 and names $230,000 as the best estimate within
-    that range. The committee''s minutes describe a whistleblower complaint received in September, alleging
-    $70,000 of improper payments to a supplier; the outside counsel investigating it told the committee
-    it is too early in the inquiry to gauge either the outcome or the exposure. What liability should
-    Ridgemont accrue at year-end for these two matters?'
-  choices:
-  - id: A
-    text: $150,000
-    rationale: Accrues the $150,000 low end of the consultant's range. When counsel's letter names $230,000
-      as the best estimate within the range, that amount is accrued rather than the minimum.
-  - id: B
-    text: $230,000
-    rationale: Correct. Ridgemont accrues counsel's stated best estimate for the indemnity, $230,000,
-      and nothing for the whistleblower matter.
-  - id: C
-    text: $300,000
-    rationale: Also accrues the $70,000 the complaint alleges. Counsel told the committee it is too early
-      to gauge the outcome or the exposure, so the matter isn't accrued; an allegation isn't an estimate
-      of loss.
-  - id: D
-    text: $350,000
-    rationale: Accrues the $350,000 cap, the top of the range, rather than the $230,000 counsel names
-      as the best estimate.
+    rationale: Also accrues the $210,000 the distributor claims. A loss that is only reasonably possible
+      isn't accrued, and the amount claimed isn't an estimate of the loss.
   answer: B
-  explanation: 'With the cleanup ordered and the buyer''s claim submitted, payment under the indemnity
-    is probable, and counsel''s letter names a best estimate within the range, $230,000, which Ridgemont
-    accrues (ASC 450-20-25-2; ASC 450-20-30-1); the minimum or midpoint is used only when no amount in
-    the range is a better estimate than another. The whistleblower matter has reached no conclusion: counsel
-    can''t yet assess the outcome or the exposure, so no amount is accrued, and the $70,000 the complaint
-    alleges is not an estimate of loss; the matter is considered for disclosure (ASC 450-20-50-3 to 50-5).
-    Liability = $230,000.'
-- stem: 'Before its Year 1 statements are issued, Oversley Group Co.''s files on two matters include a
-    letter from outside counsel and minutes of its compliance committee. Counsel''s letter concerns an
-    indemnity in the agreement under which Oversley sold its specialty chemicals division in an earlier
-    year: Oversley agreed to reimburse the buyer for up to $680,000 of environmental cleanup costs at
-    a site the division used. The indemnity''s fair value when it was given was immaterial, and Oversley
-    recognized no liability for it then. In October, Year 1, the state ordered the buyer to clean up the
-    site, and the buyer has submitted its claim under the indemnity; counsel, citing a consultant''s site
-    assessment, estimates the cost at between $300,000 and $680,000 and names $470,000 as the best estimate
-    within that range. The committee''s minutes describe a whistleblower complaint received in December,
-    alleging $150,000 of improper payments to a supplier; the outside counsel investigating it told the
-    committee it is too early in the inquiry to gauge either the outcome or the exposure. What liability
-    should Oversley accrue at year-end for these two matters?'
+  explanation: 'Once the cleanup was ordered and the buyer claimed, a loss under the indemnity became
+    probable, so Ridgemont recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2).
+    The consultant''s most likely amount is a better estimate than any other in the range, so it is used
+    (ASC 450-20-30-1), and Ridgemont''s share is 75% × $520,000 = $390,000, which exceeds the $350,000
+    cap, so the accrual is limited to $350,000. Counsel expects Ridgemont more likely than not to prevail
+    but doesn''t consider the case without merit, so a loss on the distributor''s suit is reasonably possible,
+    not probable: nothing is accrued; the nature of the claim and the $70,000 estimate are disclosed (ASC
+    450-20-50-3 to 50-5). Liability = $350,000.'
+- stem: 'Before its Year 1 statements are issued, Oversley Group Co.''s files on two matters include letters
+    from outside counsel. The first concerns an indemnity in the agreement under which Oversley sold its
+    specialty chemicals division in an earlier year: Oversley agreed to reimburse the buyer for 70% of
+    any environmental cleanup costs at a site the division used, up to a total of $680,000. The indemnity''s
+    fair value when it was given was immaterial, and Oversley recognized no liability for it then. In
+    October, Year 1, the state ordered the buyer to clean up the site, and the buyer has submitted its
+    claim under the indemnity. A consultant''s site assessment puts the total cleanup cost at between
+    $640,000 and $1,300,000, most likely $900,000. The second letter concerns a suit a former distributor
+    filed in December, claiming $410,000 for wrongful termination; counsel''s letter says Oversley will
+    more likely than not prevail, though the distributor''s case is not without merit, and estimates that
+    if Oversley loses, the loss would be about $150,000. What liability should Oversley accrue at year-end
+    for these two matters?'
   choices:
   - id: A
-    text: $300,000
-    rationale: Accrues the $300,000 low end of the consultant's range. When counsel's letter names $470,000
-      as the best estimate within the range, that amount is accrued rather than the minimum.
+    text: $448,000
+    rationale: Accrues 70% of the $640,000 low end of the consultant's range. When an amount within the
+      range is a better estimate than any other, here the $900,000 most likely cost, that amount is used;
+      the minimum is used only when none is.
   - id: B
-    text: $470,000
-    rationale: Correct. Oversley accrues counsel's stated best estimate for the indemnity, $470,000, and
-      nothing for the whistleblower matter.
+    text: $630,000
+    rationale: Correct. 70% × $900,000 = $630,000, within the cap; nothing for the distributor's claim.
   - id: C
-    text: $490,000
-    rationale: Accrues the $300,000-to-$680,000 range's midpoint. Counsel's letter names $470,000, not
-      the midpoint, as the best estimate.
-  - id: D
     text: $680,000
-    rationale: Accrues the $680,000 cap, the top of the range, rather than the $470,000 counsel names
-      as the best estimate.
+    rationale: Accrues the full $900,000 most likely cost, limited to the cap, as if Oversley had agreed
+      to reimburse all of it. The indemnity covers only 70% of the buyer's costs.
+  - id: D
+    text: $780,000
+    rationale: Also accrues counsel's $150,000 estimate for the distributor's claim. Counsel expects Oversley
+      more likely than not to prevail, so a loss is reasonably possible, not probable; it is disclosed
+      with the estimate, not accrued.
   answer: B
-  explanation: 'With the cleanup ordered and the buyer''s claim submitted, payment under the indemnity
-    is probable, and counsel''s letter names a best estimate within the range, $470,000, which Oversley
-    accrues (ASC 450-20-25-2; ASC 450-20-30-1); the minimum or midpoint is used only when no amount in
-    the range is a better estimate than another. The whistleblower matter has reached no conclusion: counsel
-    can''t yet assess the outcome or the exposure, so no amount is accrued, and the $150,000 the complaint
-    alleges is not an estimate of loss; the matter is considered for disclosure (ASC 450-20-50-3 to 50-5).
-    Liability = $470,000.'
+  explanation: 'Once the cleanup was ordered and the buyer claimed, a loss under the indemnity became
+    probable, so Oversley recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2).
+    The consultant''s most likely amount is a better estimate than any other in the range, so it is used
+    (ASC 450-20-30-1), and Oversley''s share is 70% × $900,000 = $630,000, which is within the $680,000
+    cap. Counsel expects Oversley more likely than not to prevail but doesn''t consider the case without
+    merit, so a loss on the distributor''s suit is reasonably possible, not probable: nothing is accrued;
+    the nature of the claim and the $150,000 estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability
+    = $630,000.'

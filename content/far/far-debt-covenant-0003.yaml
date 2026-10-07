@@ -9,8 +9,8 @@ review:
   status: draft
   references:
   - 'Debt covenant compliance: interest coverage as defined in the loan agreement'
-  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
-    solved and every number and distractor computed in code.
+  notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: St Columb Components Inc.'s loan agreement requires its ratio of earnings before interest and taxes
   to interest expense to be at least 4.00 at each year-end. The agreement defines earnings before interest
   and taxes as net income plus interest expense and income tax expense, excluding gains and losses on

@@ -10,7 +10,8 @@ review:
   references:
   - 'ASC 250-10-45-23 (correction of a prior-period error: adjustment to opening retained earnings, net
     of tax)'
-  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+  notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: On April 1, Year 1, Halloway Freight Co. borrowed $480,000 on a 4-year note bearing simple interest
   at 6% a year, with all interest and principal due at maturity. On May 1, Year 3, after its Year 2 financial
   statements had been issued, Halloway's controller found that no interest on the note had ever been recorded;
@@ -128,5 +129,5 @@ variants:
     Year 1 and Year 2 statements overstated those years' income, and the correction of a prior-period
     error adjusts the opening balance of retained earnings of the current year, net of tax (ASC 250-10-45-23).
     Year 1 interest = $600,000 × 5% × 8/12 = $20,000; Year 2 interest = $600,000 × 5% = $30,000; total
-    $50,000, or $39,500 after the 21% tax effect ($50,000 × 79%). The 1 months of Year 3 interest through
+    $50,000, or $39,500 after the 21% tax effect ($50,000 × 79%). The 1 month of Year 3 interest through
     February 1 belong in Year 3 income. Adjustment = $39,500 decrease.

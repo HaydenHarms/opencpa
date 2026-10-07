@@ -16,8 +16,8 @@ stem: Pentire Bottling Co. owns a specialized capping machine that is part of an
   A market participant buying the whole line, installed and running, would pay about $1,150,000 for it;
   sold off one machine at a time, the line's machines would bring only about $700,000 in total, and the
   capping machine on its own would bring $85,000 from a dealer, for parts. No active market exists for
-  secondhand capping machines like this one, so Pentire's appraiser estimates the current cost to construct
-  a new substitute capping machine of comparable utility, $240,000, and reduces it by $38,000 of physical
+  secondhand capping machines like this one, so Pentire's appraiser estimates the current cost of a new
+  capping machine with the same capacity and features, $240,000, and reduces it by $38,000 of physical
   deterioration and $22,000 of functional obsolescence, because newer models run faster. What is the fair
   value of the capping machine under ASC 820?
 choices:
@@ -52,9 +52,9 @@ variants:
     for it; sold off one machine at a time, the line's machines would bring only about $560,000 in total,
     and the filling machine on its own would bring $60,000 from a dealer, for parts. No active market
     exists for secondhand filling machines like this one, so Quethiock's appraiser estimates the current
-    cost to construct a new substitute filling machine of comparable utility, $190,000, and reduces it
-    by $25,000 of physical deterioration and $15,000 of functional obsolescence, because newer models
-    run faster. What is the fair value of the filling machine under ASC 820?
+    cost of a new filling machine with the same capacity and features, $190,000, and reduces it by $25,000
+    of physical deterioration and $15,000 of functional obsolescence, because newer models run faster.
+    What is the fair value of the filling machine under ASC 820?
   choices:
   - id: A
     text: $60,000
@@ -85,25 +85,27 @@ variants:
     for it; sold off one machine at a time, the line's machines would bring only about $820,000 in total,
     and the seaming machine on its own would bring $100,000 from a dealer, for parts. No active market
     exists for secondhand seaming machines like this one, so Rosudgeon's appraiser estimates the current
-    cost to construct a new substitute seaming machine of comparable utility, $300,000, and reduces it
-    by $50,000 of physical deterioration and $30,000 of functional obsolescence, because newer models
-    run faster. What is the fair value of the seaming machine under ASC 820?
+    cost of a new seaming machine with the same capacity and features, $300,000, and reduces it by $50,000
+    of physical deterioration and $30,000 of functional obsolescence, because newer models run faster.
+    What is the fair value of the seaming machine under ASC 820?
   choices:
   - id: A
+    text: $100,000
+    rationale: Uses the $100,000 a dealer would pay for the seaming machine on its own. That is its value
+      on a standalone (in-exchange) basis, but the line is worth more installed and working ($1,400,000)
+      than sold piece by piece ($820,000), so highest and best use is in combination with the line's other
+      assets.
+  - id: B
     text: $220,000
     rationale: Correct. $300,000 − $50,000 − $30,000.
-  - id: B
+  - id: C
     text: $250,000
     rationale: Deducts only physical deterioration. Functional obsolescence, the $30,000 newer models'
       extra speed is worth, is also deducted in a cost approach.
-  - id: C
-    text: $270,000
-    rationale: Deducts only functional obsolescence. Physical deterioration, $50,000, is also deducted
-      in a cost approach.
   - id: D
     text: $300,000
     rationale: Uses the $300,000 cost of a new substitute without any deduction for deterioration or obsolescence.
-  answer: A
+  answer: B
   explanation: 'Fair value of a nonfinancial asset reflects its highest and best use by market participants,
     which may be in combination with other assets as a group rather than on a standalone basis (ASC 820-10-35-10A
     to 35-10E). Market participants would pay more for the working line ($1,400,000) than for its machines
@@ -115,8 +117,8 @@ variants:
     A market participant buying the whole line, installed and running, would pay about $1,020,000 for
     it; sold off one machine at a time, the line's machines would bring only about $610,000 in total,
     and the pasteurizer on its own would bring $70,000 from a dealer, for parts. No active market exists
-    for secondhand pasteurizers like this one, so Stithian's appraiser estimates the current cost to construct
-    a new substitute pasteurizer of comparable utility, $210,000, and reduces it by $28,000 of physical
+    for secondhand pasteurizers like this one, so Stithian's appraiser estimates the current cost of a
+    new pasteurizer with the same capacity and features, $210,000, and reduces it by $28,000 of physical
     deterioration and $17,000 of functional obsolescence, because newer models run faster. What is the
     fair value of the pasteurizer under ASC 820?
   choices:

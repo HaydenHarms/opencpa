@@ -30,17 +30,17 @@ choices:
     in Year 3. A deferred tax asset arises on the whole $260,000 deductible temporary difference; deferred
     taxes aren't split into current and noncurrent parts (ASC 740-10-45-4).
 - id: B
-  text: $57,000 asset; $0 liability
-  rationale: Records no deferred tax liability on the $180,000 of gain not yet taxed. Gain recognized
-    in the books but taxed when collected is a taxable temporary difference (ASC 740-10-25-20).
-- id: C
   text: $57,000 asset; $45,000 liability
   rationale: Correct. Asset $260,000 × 25% = $65,000, less the $8,000 allowance; liability $180,000 ×
     25%.
+- id: C
+  text: $65,000 asset; $37,000 liability
+  rationale: Deducts the $8,000 allowance from the deferred tax liability. The allowance reduces the deferred
+    tax asset it relates to.
 - id: D
   text: $65,000 asset; $45,000 liability
   rationale: Doesn't deduct the $8,000 valuation allowance from the deferred tax asset.
-answer: C
+answer: B
 explanation: 'The uncollected installment gain is a taxable temporary difference: deferred tax liability
   = $180,000 × 25% = $45,000. The litigation accrual is a deductible temporary difference in full, whenever
   it will be paid: deferred tax asset = $260,000 × 25% = $65,000. The valuation allowance reduces the
@@ -63,17 +63,17 @@ variants:
       pay in Year 3. A deferred tax asset arises on the whole $210,000 deductible temporary difference;
       deferred taxes aren't split into current and noncurrent parts (ASC 740-10-45-4).
   - id: B
-    text: $38,100 asset; $0 liability
-    rationale: Records no deferred tax liability on the $140,000 of gain not yet taxed. Gain recognized
-      in the books but taxed when collected is a taxable temporary difference (ASC 740-10-25-20).
-  - id: C
     text: $38,100 asset; $29,400 liability
     rationale: Correct. Asset $210,000 × 21% = $44,100, less the $6,000 allowance; liability $140,000
       × 21%.
+  - id: C
+    text: $44,100 asset; $23,400 liability
+    rationale: Deducts the $6,000 allowance from the deferred tax liability. The allowance reduces the
+      deferred tax asset it relates to.
   - id: D
     text: $44,100 asset; $29,400 liability
     rationale: Doesn't deduct the $6,000 valuation allowance from the deferred tax asset.
-  answer: C
+  answer: B
   explanation: 'The uncollected installment gain is a taxable temporary difference: deferred tax liability
     = $140,000 × 21% = $29,400. The litigation accrual is a deductible temporary difference in full, whenever
     it will be paid: deferred tax asset = $210,000 × 21% = $44,100. The valuation allowance reduces the
@@ -90,21 +90,24 @@ variants:
     and in its deferred tax liability account?
   choices:
   - id: A
+    text: $50,000 asset; $55,000 liability
+    rationale: Bases the deferred tax asset on only the $240,000 of the accrual Ulverscroft expects to
+      pay in Year 3. A deferred tax asset arises on the whole $320,000 deductible temporary difference;
+      deferred taxes aren't split into current and noncurrent parts (ASC 740-10-45-4).
+  - id: B
+    text: $70,000 asset; $0 liability
+    rationale: Records no deferred tax liability, as if the $220,000 of gain not yet collected had already
+      been taxed. Gain recognized in the books but taxed when collected is a taxable temporary difference
+      (ASC 740-10-25-20).
+  - id: C
     text: $70,000 asset; $55,000 liability
     rationale: Correct. Asset $320,000 × 25% = $80,000, less the $10,000 allowance; liability $220,000
       × 25%.
-  - id: B
+  - id: D
     text: $80,000 asset; $45,000 liability
     rationale: Deducts the $10,000 allowance from the deferred tax liability. The allowance reduces the
       deferred tax asset it relates to.
-  - id: C
-    text: $80,000 asset; $55,000 liability
-    rationale: Doesn't deduct the $10,000 valuation allowance from the deferred tax asset.
-  - id: D
-    text: $90,000 asset; $55,000 liability
-    rationale: Adds the $10,000 allowance to the deferred tax asset instead of deducting it. A valuation
-      allowance reduces a deferred tax asset to the amount expected to be realized.
-  answer: A
+  answer: C
   explanation: 'The uncollected installment gain is a taxable temporary difference: deferred tax liability
     = $220,000 × 25% = $55,000. The litigation accrual is a deductible temporary difference in full, whenever
     it will be paid: deferred tax asset = $320,000 × 25% = $80,000. The valuation allowance reduces the
@@ -127,16 +130,16 @@ variants:
       taxes aren't split into current and noncurrent parts (ASC 740-10-45-4).
   - id: B
     text: $49,400 asset; $0 liability
-    rationale: Records no deferred tax liability on the $160,000 of gain not yet taxed. Gain recognized
-      in the books but taxed when collected is a taxable temporary difference (ASC 740-10-25-20).
+    rationale: Records no deferred tax liability, as if the $160,000 of gain not yet collected had already
+      been taxed. Gain recognized in the books but taxed when collected is a taxable temporary difference
+      (ASC 740-10-25-20).
   - id: C
     text: $49,400 asset; $38,400 liability
     rationale: Correct. Asset $235,000 × 24% = $56,400, less the $7,000 allowance; liability $160,000
       × 24%.
   - id: D
-    text: $56,400 asset; $31,400 liability
-    rationale: Deducts the $7,000 allowance from the deferred tax liability. The allowance reduces the
-      deferred tax asset it relates to.
+    text: $56,400 asset; $38,400 liability
+    rationale: Doesn't deduct the $7,000 valuation allowance from the deferred tax asset.
   answer: C
   explanation: 'The uncollected installment gain is a taxable temporary difference: deferred tax liability
     = $160,000 × 24% = $38,400. The litigation accrual is a deductible temporary difference in full, whenever

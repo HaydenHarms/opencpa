@@ -9,134 +9,144 @@ review:
   status: draft
   references:
   - ASC 305-10 (cash; a postdated check is a receivable, not cash)
-  - Bank reconciliation practice (errors by the bank and by the depositor)
-  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
-    solved and every number and distractor computed in code.
-stem: Newlyn Trawler Co.'s December 31 bank statement shows a balance of $61,200. It includes a $1,460
-  deposit that belongs to another of the bank's customers but was credited to Newlyn's account, $420 of
-  interest the bank credited for the quarter, and a $2,240 automatic payment to the utility company that
-  the bank deducted under Newlyn's standing authorization; Newlyn hasn't recorded the interest or the
-  payment. Newlyn's list of deposits in transit totals $4,300. It includes a $1,850 check that a customer
-  handed over on December 30, dated January 8 of the following year, which Newlyn recorded as a December
-  30 cash receipt and will deposit on its date. Outstanding checks total $8,750, and Newlyn's general
-  ledger cash account shows $57,110. What is Newlyn's correct cash balance at December 31?
+  - Bank reconciliation practice (errors by the bank are corrected on the bank side; unrecorded items
+    adjust the books)
+  notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
+stem: Newlyn Trawler Co.'s December 31 bank statement shows a balance of $61,200. It reflects a $1,460
+  check drawn by another of the bank's customers that the bank charged to Newlyn's account in error and
+  has agreed to reverse, $420 of interest the bank credited for the quarter, and a $2,240 automatic payment
+  to the utility company that the bank deducted under Newlyn's standing authorization; Newlyn hasn't recorded
+  the interest or the payment. Newlyn's list of deposits in transit totals $4,300. It includes a $1,850
+  check that a customer handed over on December 30, dated January 8 of the following year, which Newlyn
+  recorded as a December 30 cash receipt and will deposit on its date. Outstanding checks total $8,750,
+  and Newlyn's general ledger cash account shows $60,030. What net adjustment should Newlyn make to its
+  general ledger cash balance at December 31?
 choices:
 - id: A
-  text: $53,020
-  rationale: Leaves out the $420 of interest the bank credited on the account, which Newlyn hasn't recorded.
-- id: B
-  text: $53,440
-  rationale: 'Correct. Bank side: $61,200 + ($4,300 − $1,850) − $8,750 − $1,460 = $53,440. Book side:
-    $57,110 + $420 − $2,240 − $1,850 = $53,440.'
-- id: C
-  text: $54,900
-  rationale: Leaves the $1,460 deposit the bank credited to Newlyn's account in error in the bank balance.
-    It belongs to another of the bank's customers and must be removed.
-- id: D
-  text: $55,290
+  text: $1,820 decrease
   rationale: Counts the customer's $1,850 postdated check as cash. A check dated after year-end can't
-    be deposited until its date, so it is still a receivable at December 31; it comes out of deposits
-    in transit and out of book cash.
+    be deposited until its date, so it is still a receivable at December 31; the December 30 receipt is
+    reversed.
+- id: B
+  text: $3,670 decrease
+  rationale: Correct. + $420 interest − $2,240 automatic payment − $1,850 postdated check = $3,670 decrease;
+    the bank's error is corrected on the bank side.
+- id: C
+  text: $4,090 decrease
+  rationale: Leaves out the $420 of interest the bank credited on the account, which Newlyn hasn't recorded.
+- id: D
+  text: $5,130 decrease
+  rationale: Also records the $1,460 check the bank charged to Newlyn's account in error. It was drawn
+    by another of the bank's customers; the bank will reverse the charge, so it is an addition on the
+    bank side, not an entry in Newlyn's books.
 answer: B
-explanation: 'Bank side: remove the $1,460 deposit the bank credited to Newlyn in error, and take the
-  postdated $1,850 check out of deposits in transit, because it can''t be deposited until January: $61,200
-  + ($4,300 − $1,850) − $8,750 − $1,460 = $53,440. Book side: add the $420 of interest, subtract the $2,240
-  automatic payment, and reverse the $1,850 receipt, since a postdated check is still a receivable at
-  year-end: $57,110 + $420 − $2,240 − $1,850 = $53,440. Both sides agree at $53,440.'
+explanation: 'Book side: record the $420 of interest, record the $2,240 automatic payment, and reverse
+  the $1,850 receipt, since a postdated check can''t be deposited until January and is still a receivable
+  at year-end: $420 − $2,240 − $1,850 = a decrease of $3,670. The $1,460 check belongs to another depositor;
+  the bank will reverse the charge, so it is added back on the bank side and doesn''t touch Newlyn''s
+  books. Check against the bank side: $61,200 + ($4,300 − $1,850) − $8,750 + $1,460 = $56,360, and $60,030
+  − $3,670 = $56,360.'
 variants:
-- stem: Porthallow Fisheries Co.'s December 31 bank statement shows a balance of $74,500. It includes
-    a $1,720 deposit that belongs to another of the bank's customers but was credited to Porthallow's
-    account, $510 of interest the bank credited for the quarter, and a $2,630 automatic payment to the
-    utility company that the bank deducted under Porthallow's standing authorization; Porthallow hasn't
-    recorded the interest or the payment. Porthallow's list of deposits in transit totals $5,600. It includes
-    a $2,180 check that a customer handed over on December 30, dated January 8 of the following year,
-    which Porthallow recorded as a December 30 cash receipt and will deposit on its date. Outstanding
-    checks total $10,200, and Porthallow's general ledger cash account shows $70,300. What is Porthallow's
-    correct cash balance at December 31?
+- stem: Porthallow Fisheries Co.'s December 31 bank statement shows a balance of $74,500. It reflects
+    a $1,720 check drawn by another of the bank's customers that the bank charged to Porthallow's account
+    in error and has agreed to reverse, $510 of interest the bank credited for the quarter, and a $2,630
+    automatic payment to the utility company that the bank deducted under Porthallow's standing authorization;
+    Porthallow hasn't recorded the interest or the payment. Porthallow's list of deposits in transit totals
+    $5,600. It includes a $2,180 check that a customer handed over on December 30, dated January 8 of
+    the following year, which Porthallow recorded as a December 30 cash receipt and will deposit on its
+    date. Outstanding checks total $10,200, and Porthallow's general ledger cash account shows $73,740.
+    What net adjustment should Porthallow make to its general ledger cash balance at December 31?
   choices:
   - id: A
-    text: $66,000
-    rationale: 'Correct. Bank side: $74,500 + ($5,600 − $2,180) − $10,200 − $1,720 = $66,000. Book side:
-      $70,300 + $510 − $2,630 − $2,180 = $66,000.'
-  - id: B
-    text: $67,720
-    rationale: Leaves the $1,720 deposit the bank credited to Porthallow's account in error in the bank
-      balance. It belongs to another of the bank's customers and must be removed.
-  - id: C
-    text: $68,180
-    rationale: Counts the customer's $2,180 postdated check as cash. A check dated after year-end can't
-      be deposited until its date, so it is still a receivable at December 31; it comes out of deposits
-      in transit and out of book cash.
-  - id: D
-    text: $68,630
+    text: $1,670 decrease
     rationale: Leaves out the $2,630 automatic payment to the utility company that the bank deducted under
       Porthallow's standing authorization, which Porthallow hasn't recorded.
-  answer: A
-  explanation: 'Bank side: remove the $1,720 deposit the bank credited to Porthallow in error, and take
-    the postdated $2,180 check out of deposits in transit, because it can''t be deposited until January:
-    $74,500 + ($5,600 − $2,180) − $10,200 − $1,720 = $66,000. Book side: add the $510 of interest, subtract
-    the $2,630 automatic payment, and reverse the $2,180 receipt, since a postdated check is still a receivable
-    at year-end: $70,300 + $510 − $2,630 − $2,180 = $66,000. Both sides agree at $66,000.'
-- stem: Looe Harbour Supply Co.'s December 31 bank statement shows a balance of $58,300. It includes a
-    $1,240 deposit that belongs to another of the bank's customers but was credited to Looe's account,
-    $380 of interest the bank credited for the quarter, and a $1,960 automatic payment to the utility
-    company that the bank deducted under Looe's standing authorization; Looe hasn't recorded the interest
-    or the payment. Looe's list of deposits in transit totals $3,900. It includes a $1,590 check that
-    a customer handed over on December 30, dated January 8 of the following year, which Looe recorded
-    as a December 30 cash receipt and will deposit on its date. Outstanding checks total $7,650, and Looe's
-    general ledger cash account shows $54,890. What is Looe's correct cash balance at December 31?
+  - id: B
+    text: $2,120 decrease
+    rationale: Counts the customer's $2,180 postdated check as cash. A check dated after year-end can't
+      be deposited until its date, so it is still a receivable at December 31; the December 30 receipt
+      is reversed.
+  - id: C
+    text: $4,300 decrease
+    rationale: Correct. + $510 interest − $2,630 automatic payment − $2,180 postdated check = $4,300 decrease;
+      the bank's error is corrected on the bank side.
+  - id: D
+    text: $6,020 decrease
+    rationale: Also records the $1,720 check the bank charged to Porthallow's account in error. It was
+      drawn by another of the bank's customers; the bank will reverse the charge, so it is an addition
+      on the bank side, not an entry in Porthallow's books.
+  answer: C
+  explanation: 'Book side: record the $510 of interest, record the $2,630 automatic payment, and reverse
+    the $2,180 receipt, since a postdated check can''t be deposited until January and is still a receivable
+    at year-end: $510 − $2,630 − $2,180 = a decrease of $4,300. The $1,720 check belongs to another depositor;
+    the bank will reverse the charge, so it is added back on the bank side and doesn''t touch Porthallow''s
+    books. Check against the bank side: $74,500 + ($5,600 − $2,180) − $10,200 + $1,720 = $69,440, and
+    $73,740 − $4,300 = $69,440.'
+- stem: Looe Harbour Supply Co.'s December 31 bank statement shows a balance of $58,300. It reflects a
+    $1,240 check drawn by another of the bank's customers that the bank charged to Looe's account in error
+    and has agreed to reverse, $380 of interest the bank credited for the quarter, and a $1,960 automatic
+    payment to the utility company that the bank deducted under Looe's standing authorization; Looe hasn't
+    recorded the interest or the payment. Looe's list of deposits in transit totals $3,900. It includes
+    a $1,590 check that a customer handed over on December 30, dated January 8 of the following year,
+    which Looe recorded as a December 30 cash receipt and will deposit on its date. Outstanding checks
+    total $7,650, and Looe's general ledger cash account shows $57,370. What net adjustment should Looe
+    make to its general ledger cash balance at December 31?
   choices:
   - id: A
-    text: $51,340
-    rationale: Leaves out the $380 of interest the bank credited on the account, which Looe hasn't recorded.
-  - id: B
-    text: $51,720
-    rationale: 'Correct. Bank side: $58,300 + ($3,900 − $1,590) − $7,650 − $1,240 = $51,720. Book side:
-      $54,890 + $380 − $1,960 − $1,590 = $51,720.'
-  - id: C
-    text: $53,310
-    rationale: Counts the customer's $1,590 postdated check as cash. A check dated after year-end can't
-      be deposited until its date, so it is still a receivable at December 31; it comes out of deposits
-      in transit and out of book cash.
-  - id: D
-    text: $53,680
+    text: $1,210 decrease
     rationale: Leaves out the $1,960 automatic payment to the utility company that the bank deducted under
       Looe's standing authorization, which Looe hasn't recorded.
-  answer: B
-  explanation: 'Bank side: remove the $1,240 deposit the bank credited to Looe in error, and take the
-    postdated $1,590 check out of deposits in transit, because it can''t be deposited until January: $58,300
-    + ($3,900 − $1,590) − $7,650 − $1,240 = $51,720. Book side: add the $380 of interest, subtract the
-    $1,960 automatic payment, and reverse the $1,590 receipt, since a postdated check is still a receivable
-    at year-end: $54,890 + $380 − $1,960 − $1,590 = $51,720. Both sides agree at $51,720.'
-- stem: Cadgwith Fish Market Co.'s December 31 bank statement shows a balance of $86,700. It includes
-    a $1,980 deposit that belongs to another of the bank's customers but was credited to Cadgwith's account,
-    $560 of interest the bank credited for the quarter, and a $3,050 automatic payment to the utility
-    company that the bank deducted under Cadgwith's standing authorization; Cadgwith hasn't recorded the
-    interest or the payment. Cadgwith's list of deposits in transit totals $6,100. It includes a $2,470
-    check that a customer handed over on December 30, dated January 8 of the following year, which Cadgwith
-    recorded as a December 30 cash receipt and will deposit on its date. Outstanding checks total $12,400,
-    and Cadgwith's general ledger cash account shows $80,910. What is Cadgwith's correct cash balance
-    at December 31?
+  - id: B
+    text: $1,580 decrease
+    rationale: Counts the customer's $1,590 postdated check as cash. A check dated after year-end can't
+      be deposited until its date, so it is still a receivable at December 31; the December 30 receipt
+      is reversed.
+  - id: C
+    text: $3,170 decrease
+    rationale: Correct. + $380 interest − $1,960 automatic payment − $1,590 postdated check = $3,170 decrease;
+      the bank's error is corrected on the bank side.
+  - id: D
+    text: $3,550 decrease
+    rationale: Leaves out the $380 of interest the bank credited on the account, which Looe hasn't recorded.
+  answer: C
+  explanation: 'Book side: record the $380 of interest, record the $1,960 automatic payment, and reverse
+    the $1,590 receipt, since a postdated check can''t be deposited until January and is still a receivable
+    at year-end: $380 − $1,960 − $1,590 = a decrease of $3,170. The $1,240 check belongs to another depositor;
+    the bank will reverse the charge, so it is added back on the bank side and doesn''t touch Looe''s
+    books. Check against the bank side: $58,300 + ($3,900 − $1,590) − $7,650 + $1,240 = $54,200, and $57,370
+    − $3,170 = $54,200.'
+- stem: Cadgwith Fish Market Co.'s December 31 bank statement shows a balance of $86,700. It reflects
+    a $1,980 check drawn by another of the bank's customers that the bank charged to Cadgwith's account
+    in error and has agreed to reverse, $560 of interest the bank credited for the quarter, and a $3,050
+    automatic payment to the utility company that the bank deducted under Cadgwith's standing authorization;
+    Cadgwith hasn't recorded the interest or the payment. Cadgwith's list of deposits in transit totals
+    $6,100. It includes a $2,470 check that a customer handed over on December 30, dated January 8 of
+    the following year, which Cadgwith recorded as a December 30 cash receipt and will deposit on its
+    date. Outstanding checks total $12,400, and Cadgwith's general ledger cash account shows $84,870.
+    What net adjustment should Cadgwith make to its general ledger cash balance at December 31?
   choices:
   - id: A
-    text: $75,390
-    rationale: Leaves out the $560 of interest the bank credited on the account, which Cadgwith hasn't
-      recorded.
-  - id: B
-    text: $75,950
-    rationale: 'Correct. Bank side: $86,700 + ($6,100 − $2,470) − $12,400 − $1,980 = $75,950. Book side:
-      $80,910 + $560 − $3,050 − $2,470 = $75,950.'
-  - id: C
-    text: $77,930
-    rationale: Leaves the $1,980 deposit the bank credited to Cadgwith's account in error in the bank
-      balance. It belongs to another of the bank's customers and must be removed.
-  - id: D
-    text: $79,000
+    text: $1,910 decrease
     rationale: Leaves out the $3,050 automatic payment to the utility company that the bank deducted under
       Cadgwith's standing authorization, which Cadgwith hasn't recorded.
+  - id: B
+    text: $4,960 decrease
+    rationale: Correct. + $560 interest − $3,050 automatic payment − $2,470 postdated check = $4,960 decrease;
+      the bank's error is corrected on the bank side.
+  - id: C
+    text: $5,520 decrease
+    rationale: Leaves out the $560 of interest the bank credited on the account, which Cadgwith hasn't
+      recorded.
+  - id: D
+    text: $6,940 decrease
+    rationale: Also records the $1,980 check the bank charged to Cadgwith's account in error. It was drawn
+      by another of the bank's customers; the bank will reverse the charge, so it is an addition on the
+      bank side, not an entry in Cadgwith's books.
   answer: B
-  explanation: 'Bank side: remove the $1,980 deposit the bank credited to Cadgwith in error, and take
-    the postdated $2,470 check out of deposits in transit, because it can''t be deposited until January:
-    $86,700 + ($6,100 − $2,470) − $12,400 − $1,980 = $75,950. Book side: add the $560 of interest, subtract
-    the $3,050 automatic payment, and reverse the $2,470 receipt, since a postdated check is still a receivable
-    at year-end: $80,910 + $560 − $3,050 − $2,470 = $75,950. Both sides agree at $75,950.'
+  explanation: 'Book side: record the $560 of interest, record the $3,050 automatic payment, and reverse
+    the $2,470 receipt, since a postdated check can''t be deposited until January and is still a receivable
+    at year-end: $560 − $3,050 − $2,470 = a decrease of $4,960. The $1,980 check belongs to another depositor;
+    the bank will reverse the charge, so it is added back on the bank side and doesn''t touch Cadgwith''s
+    books. Check against the bank side: $86,700 + ($6,100 − $2,470) − $12,400 + $1,980 = $79,910, and
+    $84,870 − $4,960 = $79,910.'

@@ -11,145 +11,168 @@ review:
   - ASC 330-10-35 (inventory write-downs; goods with no value)
   - 'ASC 705-20 (consideration received from a vendor: volume rebates reduce the cost of purchases, allocated
     to goods on hand and goods sold)'
-  - 'Inventory ownership: title passing at shipment'
-  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
-    solved and every number and distractor computed in code.
-stem: Before closing Year 2, Illogan Metals Supply Co.'s controller reviews the December 31 perpetual
-  inventory balance of $475,000. She finds that steel coils costing $21,000, ruined in August when a warehouse
-  sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods costing
-  $38,000, bought on terms that passed title to Illogan when the supplier shipped them in December, were
-  in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't been recorded
-  because the supplier's invoice arrived in January; and that Illogan's Year 2 purchases of one supplier's
-  alloy bar, $400,000 in all, reached that supplier's volume threshold for a 4% rebate on the year's purchases.
-  The supplier issued the credit memo in January, and Illogan hasn't recorded the rebate. Alloy bar costing
-  $150,000 from those purchases is still on hand at December 31; the rest has been sold. What net adjustment
-  should the controller make to the perpetual inventory balance?
+  - 'ASC 606-10-55-79 to 55-80 (consignment arrangements: the consignor keeps the goods in inventory)'
+  notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
+stem: 'Illogan Metals Supply Co.''s staff prepared this Year 2 inventory rollforward from its perpetual
+  records: beginning inventory $452,000, purchases $1,860,000, cost of goods sold $1,837,000, ending inventory
+  $475,000. Reviewing it, the controller finds that steel coils costing $21,000, ruined in August when
+  a warehouse sprinkler line burst and with no resale or scrap value, are still carried in inventory at
+  full cost; Illogan reports casualty losses separately from cost of goods sold. In December, Illogan
+  shipped goods costing $38,000 to a dealer that sells them on consignment, and the perpetual system recorded
+  them as sold when they left the warehouse; the dealer hadn''t sold any of them by December 31. And Illogan''s
+  Year 2 purchases of one supplier''s alloy bar, $600,000 in all, reached that supplier''s volume threshold
+  for a 5% rebate on the year''s purchases; the supplier issued the credit memo in January, and Illogan
+  hasn''t recorded the rebate. Alloy bar costing $240,000 from those purchases is still on hand at December
+  31; the rest has been sold. What cost of goods sold should the corrected rollforward report for Year
+  2?'
 choices:
 - id: A
-  text: $27,000 decrease
-  rationale: Leaves out the $38,000 of goods in the bonded warehouse. Title passed to Illogan when the
-    supplier shipped them, so they are Illogan's inventory and the unrecorded purchase must be added,
-    cleared through customs or not.
+  text: $1,769,000
+  rationale: Takes the whole $30,000 rebate out of cost of goods sold. The rebate reduces the cost of
+    all $600,000 of qualifying purchases, so the share on goods still on hand, $12,000, reduces inventory;
+    only $18,000 reduces cost of goods sold.
 - id: B
-  text: $1,000 increase
-  rationale: Takes the whole $16,000 rebate out of inventory. The rebate reduces the cost of all $400,000
-    of qualifying purchases, so only the share on goods still on hand, $6,000, reduces inventory; the
-    rest reduces cost of goods sold.
+  text: $1,781,000
+  rationale: Correct. $1,837,000 − $38,000 (consigned goods still on hand) − $18,000 (rebate on goods
+    sold).
 - id: C
-  text: $11,000 increase
-  rationale: Correct. + $38,000 − $21,000 − $6,000 (4% of the $150,000 of rebated goods still on hand).
+  text: $1,802,000
+  rationale: Adds the $21,000 of ruined coils to cost of goods sold. Illogan reports casualty losses separately,
+    so the write-off comes out of inventory as a loss and doesn't pass through cost of goods sold.
 - id: D
-  text: $32,000 increase
-  rationale: Leaves the $21,000 of ruined coils in inventory. Goods with no resale or scrap value are
-    written off as a loss; they can't be carried at cost.
-answer: C
-explanation: 'The ruined coils have no value, so their $21,000 cost is written off (ASC 330-10-35). The
-  bonded-warehouse goods became Illogan''s when they were shipped, so the $38,000 purchase is recorded
-  and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): 4% × $400,000 =
-  $16,000 in all, of which the share on the $150,000 of alloy bar still on hand, 4% × $150,000 = $6,000,
-  reduces inventory and the remaining $10,000 reduces cost of goods sold. Net adjustment = $38,000 − $21,000
-  − $6,000 = $11,000, an increase.'
+  text: $1,819,000
+  rationale: Leaves the $38,000 of goods at the dealer in cost of goods sold. Goods out on consignment
+    still belong to Illogan until the dealer sells them, so they go back into inventory.
+answer: B
+explanation: 'Goods out on consignment remain Illogan''s inventory until the dealer sells them (ASC 606-10-55-79
+  to 55-80), so the $38,000 comes out of cost of goods sold and back into inventory. The rebate reduces
+  the cost of the purchases that earned it (ASC 705-20): 5% × $600,000 = $30,000 in all. The share on
+  the $240,000 still on hand, 5% × $240,000 = $12,000, reduces ending inventory, and the remaining $18,000
+  reduces cost of goods sold. The ruined coils have no value, so their $21,000 cost is written off (ASC
+  330-10-35); Illogan reports that as a casualty loss, so it reduces inventory without touching cost of
+  goods sold. Corrected cost of goods sold = $1,837,000 − $38,000 − $18,000 = $1,781,000. (The corrected
+  rollforward: $452,000 + ($1,860,000 − $30,000) − $21,000 casualty loss − $1,781,000 = ending inventory
+  of $480,000.)'
 variants:
-- stem: Before closing Year 2, Tuckingmill Steel Co.'s controller reviews the December 31 perpetual inventory
-    balance of $568,000. She finds that steel coils costing $25,000, ruined in August when a warehouse
-    sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods
-    costing $44,000, bought on terms that passed title to Tuckingmill when the supplier shipped them in
-    December, were in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't
-    been recorded because the supplier's invoice arrived in January; and that Tuckingmill's Year 2 purchases
-    of one supplier's alloy bar, $500,000 in all, reached that supplier's volume threshold for a 3% rebate
-    on the year's purchases. The supplier issued the credit memo in January, and Tuckingmill hasn't recorded
-    the rebate. Alloy bar costing $200,000 from those purchases is still on hand at December 31; the rest
-    has been sold. What net adjustment should the controller make to the perpetual inventory balance?
+- stem: 'Tuckingmill Steel Co.''s staff prepared this Year 2 inventory rollforward from its perpetual
+    records: beginning inventory $530,000, purchases $2,240,000, cost of goods sold $2,202,000, ending
+    inventory $568,000. Reviewing it, the controller finds that steel coils costing $25,000, ruined in
+    August when a warehouse sprinkler line burst and with no resale or scrap value, are still carried
+    in inventory at full cost; Tuckingmill reports casualty losses separately from cost of goods sold.
+    In December, Tuckingmill shipped goods costing $44,000 to a dealer that sells them on consignment,
+    and the perpetual system recorded them as sold when they left the warehouse; the dealer hadn''t sold
+    any of them by December 31. And Tuckingmill''s Year 2 purchases of one supplier''s alloy bar, $700,000
+    in all, reached that supplier''s volume threshold for a 4% rebate on the year''s purchases; the supplier
+    issued the credit memo in January, and Tuckingmill hasn''t recorded the rebate. Alloy bar costing
+    $300,000 from those purchases is still on hand at December 31; the rest has been sold. What cost of
+    goods sold should the corrected rollforward report for Year 2?'
   choices:
   - id: A
-    text: $4,000 increase
-    rationale: Takes the whole $15,000 rebate out of inventory. The rebate reduces the cost of all $500,000
-      of qualifying purchases, so only the share on goods still on hand, $6,000, reduces inventory; the
-      rest reduces cost of goods sold.
+    text: $2,142,000
+    rationale: Correct. $2,202,000 − $44,000 (consigned goods still on hand) − $16,000 (rebate on goods
+      sold).
   - id: B
-    text: $13,000 increase
-    rationale: Correct. + $44,000 − $25,000 − $6,000 (3% of the $200,000 of rebated goods still on hand).
-  - id: C
-    text: $19,000 increase
+    text: $2,158,000
     rationale: Ignores the volume rebate. Tuckingmill earned it in Year 2, so it reduces the cost of the
-      qualifying purchases, including the $200,000 still on hand, by $6,000.
+      qualifying purchases, and the $16,000 share on goods already sold reduces cost of goods sold.
+  - id: C
+    text: $2,167,000
+    rationale: Adds the $25,000 of ruined coils to cost of goods sold. Tuckingmill reports casualty losses
+      separately, so the write-off comes out of inventory as a loss and doesn't pass through cost of goods
+      sold.
   - id: D
-    text: $38,000 increase
-    rationale: Leaves the $25,000 of ruined coils in inventory. Goods with no resale or scrap value are
-      written off as a loss; they can't be carried at cost.
-  answer: B
-  explanation: 'The ruined coils have no value, so their $25,000 cost is written off (ASC 330-10-35).
-    The bonded-warehouse goods became Tuckingmill''s when they were shipped, so the $44,000 purchase is
-    recorded and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): 3% ×
-    $500,000 = $15,000 in all, of which the share on the $200,000 of alloy bar still on hand, 3% × $200,000
-    = $6,000, reduces inventory and the remaining $9,000 reduces cost of goods sold. Net adjustment =
-    $44,000 − $25,000 − $6,000 = $13,000, an increase.'
-- stem: Before closing Year 2, Troon Alloys Co.'s controller reviews the December 31 perpetual inventory
-    balance of $342,000. She finds that steel coils costing $29,000, ruined in August when a warehouse
-    sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods
-    costing $16,000, bought on terms that passed title to Troon when the supplier shipped them in December,
-    were in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't been recorded
-    because the supplier's invoice arrived in January; and that Troon's Year 2 purchases of one supplier's
-    alloy bar, $300,000 in all, reached that supplier's volume threshold for a 5% rebate on the year's
-    purchases. The supplier issued the credit memo in January, and Troon hasn't recorded the rebate. Alloy
-    bar costing $120,000 from those purchases is still on hand at December 31; the rest has been sold.
-    What net adjustment should the controller make to the perpetual inventory balance?
+    text: $2,186,000
+    rationale: Leaves the $44,000 of goods at the dealer in cost of goods sold. Goods out on consignment
+      still belong to Tuckingmill until the dealer sells them, so they go back into inventory.
+  answer: A
+  explanation: 'Goods out on consignment remain Tuckingmill''s inventory until the dealer sells them (ASC
+    606-10-55-79 to 55-80), so the $44,000 comes out of cost of goods sold and back into inventory. The
+    rebate reduces the cost of the purchases that earned it (ASC 705-20): 4% × $700,000 = $28,000 in all.
+    The share on the $300,000 still on hand, 4% × $300,000 = $12,000, reduces ending inventory, and the
+    remaining $16,000 reduces cost of goods sold. The ruined coils have no value, so their $25,000 cost
+    is written off (ASC 330-10-35); Tuckingmill reports that as a casualty loss, so it reduces inventory
+    without touching cost of goods sold. Corrected cost of goods sold = $2,202,000 − $44,000 − $16,000
+    = $2,142,000. (The corrected rollforward: $530,000 + ($2,240,000 − $28,000) − $25,000 casualty loss
+    − $2,142,000 = ending inventory of $575,000.)'
+- stem: 'Troon Alloys Co.''s staff prepared this Year 2 inventory rollforward from its perpetual records:
+    beginning inventory $330,000, purchases $1,450,000, cost of goods sold $1,438,000, ending inventory
+    $342,000. Reviewing it, the controller finds that steel coils costing $29,000, ruined in August when
+    a warehouse sprinkler line burst and with no resale or scrap value, are still carried in inventory
+    at full cost; Troon reports casualty losses separately from cost of goods sold. In December, Troon
+    shipped goods costing $26,000 to a dealer that sells them on consignment, and the perpetual system
+    recorded them as sold when they left the warehouse; the dealer hadn''t sold any of them by December
+    31. And Troon''s Year 2 purchases of one supplier''s alloy bar, $450,000 in all, reached that supplier''s
+    volume threshold for a 5% rebate on the year''s purchases; the supplier issued the credit memo in
+    January, and Troon hasn''t recorded the rebate. Alloy bar costing $180,000 from those purchases is
+    still on hand at December 31; the rest has been sold. What cost of goods sold should the corrected
+    rollforward report for Year 2?'
   choices:
   - id: A
-    text: $35,000 decrease
-    rationale: Leaves out the $16,000 of goods in the bonded warehouse. Title passed to Troon when the
-      supplier shipped them, so they are Troon's inventory and the unrecorded purchase must be added,
-      cleared through customs or not.
+    text: $1,369,500
+    rationale: Takes the $29,000 of ruined coils out of cost of goods sold. The coils were never sold
+      or charged to cost of goods sold; they are still in inventory, and their write-off is a separate
+      casualty loss.
   - id: B
-    text: $28,000 decrease
-    rationale: Takes the whole $15,000 rebate out of inventory. The rebate reduces the cost of all $300,000
-      of qualifying purchases, so only the share on goods still on hand, $6,000, reduces inventory; the
-      rest reduces cost of goods sold.
+    text: $1,389,500
+    rationale: Takes the whole $22,500 rebate out of cost of goods sold. The rebate reduces the cost of
+      all $450,000 of qualifying purchases, so the share on goods still on hand, $9,000, reduces inventory;
+      only $13,500 reduces cost of goods sold.
   - id: C
-    text: $19,000 decrease
-    rationale: Correct. + $16,000 − $29,000 − $6,000 (5% of the $120,000 of rebated goods still on hand).
+    text: $1,398,500
+    rationale: Correct. $1,438,000 − $26,000 (consigned goods still on hand) − $13,500 (rebate on goods
+      sold).
   - id: D
-    text: $10,000 increase
-    rationale: Leaves the $29,000 of ruined coils in inventory. Goods with no resale or scrap value are
-      written off as a loss; they can't be carried at cost.
+    text: $1,424,500
+    rationale: Leaves the $26,000 of goods at the dealer in cost of goods sold. Goods out on consignment
+      still belong to Troon until the dealer sells them, so they go back into inventory.
   answer: C
-  explanation: 'The ruined coils have no value, so their $29,000 cost is written off (ASC 330-10-35).
-    The bonded-warehouse goods became Troon''s when they were shipped, so the $16,000 purchase is recorded
-    and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): 5% × $300,000
-    = $15,000 in all, of which the share on the $120,000 of alloy bar still on hand, 5% × $120,000 = $6,000,
-    reduces inventory and the remaining $9,000 reduces cost of goods sold. Net adjustment = $16,000 −
-    $29,000 − $6,000 = −$19,000, a decrease of $19,000.'
-- stem: Before closing Year 2, Praze Metals Co.'s controller reviews the December 31 perpetual inventory
-    balance of $418,000. She finds that steel coils costing $18,000, ruined in August when a warehouse
-    sprinkler line burst and with no resale or scrap value, are still carried at full cost; that goods
-    costing $33,000, bought on terms that passed title to Praze when the supplier shipped them in December,
-    were in a customs bonded warehouse awaiting clearance at year-end, and the purchase hasn't been recorded
-    because the supplier's invoice arrived in January; and that Praze's Year 2 purchases of one supplier's
-    alloy bar, $450,000 in all, reached that supplier's volume threshold for a 4% rebate on the year's
-    purchases. The supplier issued the credit memo in January, and Praze hasn't recorded the rebate. Alloy
-    bar costing $125,000 from those purchases is still on hand at December 31; the rest has been sold.
-    What net adjustment should the controller make to the perpetual inventory balance?
+  explanation: 'Goods out on consignment remain Troon''s inventory until the dealer sells them (ASC 606-10-55-79
+    to 55-80), so the $26,000 comes out of cost of goods sold and back into inventory. The rebate reduces
+    the cost of the purchases that earned it (ASC 705-20): 5% × $450,000 = $22,500 in all. The share on
+    the $180,000 still on hand, 5% × $180,000 = $9,000, reduces ending inventory, and the remaining $13,500
+    reduces cost of goods sold. The ruined coils have no value, so their $29,000 cost is written off (ASC
+    330-10-35); Troon reports that as a casualty loss, so it reduces inventory without touching cost of
+    goods sold. Corrected cost of goods sold = $1,438,000 − $26,000 − $13,500 = $1,398,500. (The corrected
+    rollforward: $330,000 + ($1,450,000 − $22,500) − $29,000 casualty loss − $1,398,500 = ending inventory
+    of $330,000.)'
+- stem: 'Praze Metals Co.''s staff prepared this Year 2 inventory rollforward from its perpetual records:
+    beginning inventory $390,000, purchases $1,700,000, cost of goods sold $1,672,000, ending inventory
+    $418,000. Reviewing it, the controller finds that steel coils costing $18,000, ruined in August when
+    a warehouse sprinkler line burst and with no resale or scrap value, are still carried in inventory
+    at full cost; Praze reports casualty losses separately from cost of goods sold. In December, Praze
+    shipped goods costing $33,000 to a dealer that sells them on consignment, and the perpetual system
+    recorded them as sold when they left the warehouse; the dealer hadn''t sold any of them by December
+    31. And Praze''s Year 2 purchases of one supplier''s alloy bar, $650,000 in all, reached that supplier''s
+    volume threshold for a 4% rebate on the year''s purchases; the supplier issued the credit memo in
+    January, and Praze hasn''t recorded the rebate. Alloy bar costing $250,000 from those purchases is
+    still on hand at December 31; the rest has been sold. What cost of goods sold should the corrected
+    rollforward report for Year 2?'
   choices:
   - id: A
-    text: $23,000 decrease
-    rationale: Leaves out the $33,000 of goods in the bonded warehouse. Title passed to Praze when the
-      supplier shipped them, so they are Praze's inventory and the unrecorded purchase must be added,
-      cleared through customs or not.
+    text: $1,613,000
+    rationale: Takes the whole $26,000 rebate out of cost of goods sold. The rebate reduces the cost of
+      all $650,000 of qualifying purchases, so the share on goods still on hand, $10,000, reduces inventory;
+      only $16,000 reduces cost of goods sold.
   - id: B
-    text: $10,000 increase
-    rationale: Correct. + $33,000 − $18,000 − $5,000 (4% of the $125,000 of rebated goods still on hand).
+    text: $1,623,000
+    rationale: Correct. $1,672,000 − $33,000 (consigned goods still on hand) − $16,000 (rebate on goods
+      sold).
   - id: C
-    text: $15,000 increase
-    rationale: Ignores the volume rebate. Praze earned it in Year 2, so it reduces the cost of the qualifying
-      purchases, including the $125,000 still on hand, by $5,000.
+    text: $1,641,000
+    rationale: Adds the $18,000 of ruined coils to cost of goods sold. Praze reports casualty losses separately,
+      so the write-off comes out of inventory as a loss and doesn't pass through cost of goods sold.
   - id: D
-    text: $28,000 increase
-    rationale: Leaves the $18,000 of ruined coils in inventory. Goods with no resale or scrap value are
-      written off as a loss; they can't be carried at cost.
+    text: $1,656,000
+    rationale: Leaves the $33,000 of goods at the dealer in cost of goods sold. Goods out on consignment
+      still belong to Praze until the dealer sells them, so they go back into inventory.
   answer: B
-  explanation: 'The ruined coils have no value, so their $18,000 cost is written off (ASC 330-10-35).
-    The bonded-warehouse goods became Praze''s when they were shipped, so the $33,000 purchase is recorded
-    and added. The rebate reduces the cost of the purchases that earned it (ASC 705-20): 4% × $450,000
-    = $18,000 in all, of which the share on the $125,000 of alloy bar still on hand, 4% × $125,000 = $5,000,
-    reduces inventory and the remaining $13,000 reduces cost of goods sold. Net adjustment = $33,000 −
-    $18,000 − $5,000 = $10,000, an increase.'
+  explanation: 'Goods out on consignment remain Praze''s inventory until the dealer sells them (ASC 606-10-55-79
+    to 55-80), so the $33,000 comes out of cost of goods sold and back into inventory. The rebate reduces
+    the cost of the purchases that earned it (ASC 705-20): 4% × $650,000 = $26,000 in all. The share on
+    the $250,000 still on hand, 4% × $250,000 = $10,000, reduces ending inventory, and the remaining $16,000
+    reduces cost of goods sold. The ruined coils have no value, so their $18,000 cost is written off (ASC
+    330-10-35); Praze reports that as a casualty loss, so it reduces inventory without touching cost of
+    goods sold. Corrected cost of goods sold = $1,672,000 − $33,000 − $16,000 = $1,623,000. (The corrected
+    rollforward: $390,000 + ($1,700,000 − $26,000) − $18,000 casualty loss − $1,623,000 = ending inventory
+    of $423,000.)'

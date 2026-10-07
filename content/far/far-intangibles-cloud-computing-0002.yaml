@@ -13,8 +13,8 @@ review:
   - ASU 2018-15 (customer's accounting for implementation costs in a cloud computing arrangement)
   - ASU 2025-06 (targeted improvements to internal-use software; same result here)
   - ASC 720-45 (business process reengineering costs expensed)
-  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
-    solved and every number and distractor computed in code.
+  notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: On January 1, Year 1, Perrancombe Logistics Co. signs a noncancellable 4-year contract, running
   from that date, for access to a vendor's cloud-hosted warehouse management system. Perrancombe has no
   right to take the software onto its own servers. The contract lets Perrancombe extend it for 2 more
@@ -35,7 +35,7 @@ choices:
   text: $288,000
   rationale: Correct. ($225,000 − $45,000) + ($117,000 − $9,000).
 - id: C
-  text: $292,499
+  text: $292,500
   rationale: Spreads each module's costs over the full 4-year term starting at its go-live date, so amortization
     would run past the contract's end on December 31, Year 4. Implementation costs are amortized over
     the hosting arrangement's term, which by then has only 45 and 39 months left.
@@ -79,8 +79,9 @@ variants:
     rationale: Correct. ($232,000 − $40,000) + ($130,000 − $10,000).
   - id: D
     text: $346,759
-    rationale: Capitalizes the $42,000 paid to redesign business processes. Process reengineering is expensed
-      as incurred, not capitalized as a cost of implementing the software.
+    rationale: Capitalizes the $42,000 paid to redesign business processes and amortizes it with the inventory
+      module from March 1 (about $7,241 for Year 1). Process reengineering is expensed as incurred, not
+      capitalized as a cost of implementing the software.
   answer: C
   explanation: 'A hosting arrangement Lanivet can''t take possession of is a service contract, and its
     implementation costs follow ASC 350-40, as amended by ASU 2018-15. Configuring and testing each module
@@ -116,8 +117,9 @@ variants:
       to renew, so the renewal isn't reasonably certain and the term is the 3-year noncancellable period.
   - id: D
     text: $262,400
-    rationale: Capitalizes the $28,000 paid to redesign business processes. Process reengineering is expensed
-      as incurred, not capitalized as a cost of implementing the software.
+    rationale: Capitalizes the $28,000 paid to redesign business processes and amortizes it with the inventory
+      module from July 1 (about $5,600 for Year 1). Process reengineering is expensed as incurred, not
+      capitalized as a cost of implementing the software.
   answer: A
   explanation: 'A hosting arrangement St Breward can''t take possession of is a service contract, and
     its implementation costs follow ASC 350-40, as amended by ASU 2018-15. Configuring and testing each

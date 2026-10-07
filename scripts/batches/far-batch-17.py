@@ -15,6 +15,13 @@ in Decimal and rounded half up; every amount that depends on a date (months of i
 computed from the dates the stem states, and no derived amount is stated in a stem. Items are written with
 review.status "draft" so they stay unserved until the gate re-passes.
 
+Revision 3 (2026-10-07) applies the second-round findings (gate 78.5%, one major): subsequent-events-0015 is
+rebuilt around a licensee's royalty report and a supplier's final rebate statement (recognized) and the
+licensee's later exit (nonrecognized); contingencies-0019's indemnity now turns on a cost share and a cap, with
+a reasonably possible claim in place of a second "too early" matter; contingencies-0017 discounts two deferred
+installments for an SEC registrant; accounting-errors-0010 to -0012, current-year draft corrections, move to the
+Area I "detect and correct" tasks; double-error and implausible distractors are replaced throughout.
+
 Run: python3 scripts/batches/far-batch-17.py [--dry-run]
 Blind file (set B17_SCRATCH to a directory): stems/choices and keys written there, never in the repo.
 """
@@ -32,7 +39,9 @@ A3 = "Area III — Select Transactions"
 T_CHG = "Accounting changes and error corrections"
 T_CON = "Contingencies and commitments"
 T_SUB = "Subsequent events"
-NOTE = "Batch 17. Written from scratch; answers solved and every number and distractor computed in code."
+A1 = "Area I — Financial Reporting"
+NOTE = ("Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch; "
+        "answers solved and every number and distractor computed in code.")
 CONTENT = os.path.join(os.path.dirname(__file__), "..", "..", "content", "far")
 SCRATCH = os.environ.get("B17_SCRATCH")
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
@@ -129,6 +138,10 @@ def months_to(month):
     return MONTHS.index(month)
 
 
+def months(k):
+    return f"{k} month" if k == 1 else f"{k} months"
+
+
 def poss(name):
     return name + ("'" if name.endswith("s") else "'s")
 
@@ -191,9 +204,9 @@ def change_in_principle(p):
     choices, ans = build(pool, key, p["use"])
     tbl = "; ".join(f"December 31, Year {yr}, {old} {m(o[i])} and {new} {m(nw[i])}" for i, yr in enumerate((y1, y2, y3)))
     return variant(
-        f"""At the start of Year {Y}, {co} changes its inventory cost-flow method from {old} to {new} because {p['why']}, and it can determine the effect on every prior period. Its year-end inventories under the two methods were: {tbl}. {s} pays employees a profit-sharing bonus equal to {p['b']}% of income before the bonus and income taxes; bonuses for prior years were based on income as originally reported and will not be recalculated. {s}'s Year {y3} net income as originally reported was {m(NI)}, and its tax rate is {p['t']}% for all years and all effects. In its comparative statements for Years {y2}, {y3} and {Y}, what net income should {s} report for Year {y3}?""",
+        f"""At the start of Year {Y}, {co} changes its inventory cost-flow method from {old} to {new} because {p['why']}, and it can determine the effect on every prior period. Its year-end inventories under the two methods were: {tbl}. {s} pays employees a profit-sharing bonus equal to {p['b']}% of income before the bonus and income taxes. {s}'s Year {y3} net income as originally reported was {m(NI)}, and its tax rate is {p['t']}% for all years and all effects. In its comparative statements for Years {y2}, {y3} and {Y}, what net income should {s} report for Year {y3}?""",
         choices, ans,
-        f"""A change in inventory cost-flow method is a change in accounting principle, applied retrospectively when its effect on every prior period can be determined (ASC 250-10-45-5). Each prior year presented is restated as if {new} had always been used. Year {y3} income changes by the change during Year {y3} in the difference between the methods' inventories: {new} inventory moved {moved}, so restated Year {y3} cost of goods sold is {m(abs(delta))} {'lower' if up else 'higher'} and pretax income {m(abs(delta))} {'higher' if up else 'lower'}, or {m(abs(eff))} after the {p['t']}% tax. The profit-sharing bonus would have differed under {new}, but that is an indirect effect, which is not recognized in the restated periods (ASC 250-10-45-8); prior bonuses won't be recalculated, so nothing changes in any period. Restated Year {y3} net income = {m(NI)} {'+' if eff > 0 else '−'} {m(abs(eff))} = {m(key_v)}.""",
+        f"""A change in inventory cost-flow method is a change in accounting principle, applied retrospectively when its effect on every prior period can be determined (ASC 250-10-45-5). Each prior year presented is restated as if {new} had always been used. Year {y3} income changes by the change during Year {y3} in the difference between the methods' inventories: {new} inventory moved {moved}, so restated Year {y3} cost of goods sold is {m(abs(delta))} {'lower' if up else 'higher'} and pretax income {m(abs(delta))} {'higher' if up else 'lower'}, or {m(abs(eff))} after the {p['t']}% tax. The profit-sharing bonus would have differed under {new}, but that is an indirect effect of the change: indirect effects aren't included in the restated periods, and any actually incurred are recognized in the period of the change (ASC 250-10-45-8), so the bonus isn't recomputed for Year {y3}. Restated Year {y3} net income = {m(NI)} {'+' if eff > 0 else '−'} {m(abs(eff))} = {m(key_v)}.""",
     )
 
 
@@ -209,16 +222,16 @@ def error_correction(p):
     keep = 100 - int(p["t"])
     pool = {
         "pretax": (chg(-cum), f"Decreases retained earnings by the full pretax {m(cum)} of unrecorded interest. The prior-period adjustment is made net of the {p['t']}% tax effect."),
-        "full_y1": (chg(-rd(P * r * 2 * (1 - t))), f"Charges a full year of interest for Year 1. The note was signed on {p['start']} 1, Year 1, so Year 1 bore only {m1} months of interest ({m(i1)})."),
+        "full_y1": (chg(-rd(P * r * 2 * (1 - t))), f"Charges a full year of interest for Year 1. The note was signed on {p['start']} 1, Year 1, so Year 1 bore only {months(m1)} of interest ({m(i1)})."),
         "only_y1": (chg(-rd(i1 * (1 - t))), f"Adjusts only for the Year 1 interest, as if Year 2 were still open. The Year 2 statements have been issued, so the Year 2 interest is also part of the adjustment to January 1, Year 3, retained earnings."),
-        "thru_found": (chg(-rd((cum + rd(P * r * md / 12)) * (1 - t))), f"Also includes the {md} months of Year 3 interest through {p['found']} 1, Year 3. That interest is a Year 3 expense, recorded in Year 3 income, not part of the adjustment to opening retained earnings."),
+        "thru_found": (chg(-rd((cum + rd(P * r * md / 12)) * (1 - t))), f"Also includes the {months(md)} of Year 3 interest through {p['found']} 1, Year 3. That interest is a Year 3 expense, recorded in Year 3 income, not part of the adjustment to opening retained earnings."),
     }
     key = (chg(key_v), f"Correct. ({m(i1)} for Year 1 + {m(i2)} for Year 2) × {keep}% after tax.")
     choices, ans = build(pool, key, p["use"])
     return variant(
         f"""On {p['start']} 1, Year 1, {co} borrowed {m(P)} on a {p['term']}-year note bearing simple interest at {pct(p['r'])} a year, with all interest and principal due at maturity. On {p['found']} 1, Year 3, after its Year 2 financial statements had been issued, {s}'s controller found that no interest on the note had ever been recorded; none has been paid. {s} has found no other errors, its tax rate is {p['t']}% for all effects, and it presents single-year financial statements. What adjustment should {s} make to its January 1, Year 3, balance of retained earnings?""",
         choices, ans,
-        f"""Interest accrues from the day the note is signed. Unrecorded interest expense in the issued Year 1 and Year 2 statements overstated those years' income, and the correction of a prior-period error adjusts the opening balance of retained earnings of the current year, net of tax (ASC 250-10-45-23). Year 1 interest = {m(P)} × {pct(p['r'])} × {m1}/12 = {m(i1)}; Year 2 interest = {m(P)} × {pct(p['r'])} = {m(i2)}; total {m(cum)}, or {m(-key_v)} after the {p['t']}% tax effect ({m(cum)} × {keep}%). The {md} months of Year 3 interest through {p['found']} 1 belong in Year 3 income. Adjustment = {chg(key_v)}.""",
+        f"""Interest accrues from the day the note is signed. Unrecorded interest expense in the issued Year 1 and Year 2 statements overstated those years' income, and the correction of a prior-period error adjusts the opening balance of retained earnings of the current year, net of tax (ASC 250-10-45-23). Year 1 interest = {m(P)} × {pct(p['r'])} × {m1}/12 = {m(i1)}; Year 2 interest = {m(P)} × {pct(p['r'])} = {m(i2)}; total {m(cum)}, or {m(-key_v)} after the {p['t']}% tax effect ({m(cum)} × {keep}%). The {months(md)} of Year 3 interest through {p['found']} 1 belong in Year 3 income. Adjustment = {chg(key_v)}.""",
     )
 
 
@@ -268,7 +281,7 @@ def ae_liabilities(p):
     key = (m(key_v), f"Correct. {m(TL)} − {m(PO)} purchase order + {m(div)} dividend payable.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}'s draft December 31, Year {Y}, balance sheet reports total liabilities of {m(TL)}. Before the statements are issued, the controller questions three items. Accounts payable includes {m(PO)} for a purchase order {s} issued on December 29 for {p['po_item']} that the supplier will ship, FOB shipping point, in mid-January. On December {p['dday']}, {s}'s board declared a cash dividend of {m(p['dps'])} a share on its common stock, payable January {p['pday']}, Year {Y + 1}; {s} has {p['sh']:,} common shares issued, {p['tr']:,} of them held in treasury, and records dividends when it pays them. Accounts payable also includes a {m(INV)} supplier invoice for {p['inv_item']} that were shipped FOB destination and delivered to {s}'s store on December 30. What total liabilities should the corrected balance sheet report?""",
+        f"""{co}'s draft December 31, Year {Y}, balance sheet reports total liabilities of {m(TL)}. Before the statements are issued, the controller questions three items. Accounts payable includes {m(PO)} for a purchase order {s} issued on December 29 for {p['po_item']} that the supplier will ship, FOB shipping point, in mid-January. On December {p['dday']}, {s}'s board declared a cash dividend of {m(p['dps'])} a share on its common stock, payable January {p['pday']}, Year {Y + 1}; {s} has {p['sh']:,} common shares issued, {p['tr']:,} of them held in treasury, and has made no entry for the declaration. Accounts payable also includes a {m(INV)} supplier invoice for {p['inv_item']} that were shipped FOB destination and delivered to {s}'s store on December 30. What total liabilities should the corrected balance sheet report?""",
         choices, ans,
         f"""A purchase order is an executory contract: until the supplier performs by shipping the goods, {s} has no present obligation, so the {m(PO)} comes out of accounts payable (ASC 440-10). A declared cash dividend is a present obligation from the declaration date (FASB Concepts Statement No. 8, chapter 4), so {m(p['dps'])} × {out:,} outstanding shares (treasury shares receive no dividend) = {m(div)} is added as a dividend payable. Goods shipped FOB destination transfer to the buyer on delivery; the {p['inv_item']} arrived on December 30, so that invoice is correctly in accounts payable. Corrected total liabilities = {m(TL)} − {m(PO)} + {m(div)} = {m(key_v)}.""",
     )
@@ -317,9 +330,9 @@ def litigation_and_recall(p):
     key = (m(key_v), f"Correct. Lawsuit {m(lit)} ({m(A)} − {m(Pd)} + {m(Inc)}) + recall claims at the {m(L)} minimum.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""At the start of the year, {co} had a {m(A)} liability for a customer's lawsuit over a defect in a product it sold two years ago. During the year, {s} paid {m(Pd)} toward the case under an interim agreement and, based on new evidence, revised its estimate of the suit's total cost upward by {m(Inc)}. In November, {s} recalled a {p['product']} model after reports that a faulty {p['part']} had damaged customers' property. No customer has filed a claim yet, but counsel's letter says customers are expected to file claims that {s} will have to pay, and puts the total at between {m(L)} and {m(H)}, with no amount in that range a better estimate than any other. What total liability for the lawsuit and the recall claims should {s} report at year-end?""",
+        f"""At the start of the year, {co} had a {m(A)} liability for a customer's lawsuit over a defect in a product it sold two years ago. During the year, {s} paid {m(Pd)} toward the case under an interim agreement and, based on new evidence, revised its estimate of the suit's total cost upward by {m(Inc)}. In November, {s} recalled a {p['product']} model after reports that a faulty {p['part']} had damaged customers' property. No customer has filed a claim yet, but {p['calls']} customers have reported damage to {poss(s)} hotline, and in its two earlier recalls {s} paid nearly every reported claim. Counsel's letter puts the total at between {m(L)} and {m(H)}, with no amount in that range a better estimate than any other. What total liability for the lawsuit and the recall claims should {s} report at year-end?""",
         choices, ans,
-        f"""Lawsuit: the liability rolls forward from the opening {m(A)}, less the {m(Pd)} paid, plus the {m(Inc)} increase in the estimated total cost, a change in estimate recognized in the current year: {m(lit)}. Recall claims: an unasserted claim is accrued when it is probable that the claim will be asserted and that the outcome will be unfavorable, and the loss can be reasonably estimated (ASC 450-20-25-2, 450-20-50-6); counsel expects both, and the range estimates the loss. With no best estimate in the range, the minimum, {m(L)}, is accrued and the possible additional loss is disclosed (ASC 450-20-30-1). Total liability = {m(lit)} + {m(L)} = {m(key_v)}.""",
+        f"""Lawsuit: the liability rolls forward from the opening {m(A)}, less the {m(Pd)} paid, plus the {m(Inc)} increase in the estimated total cost, a change in estimate recognized in the current year: {m(lit)}. Recall claims: an unasserted claim is accrued when it is probable that the claim will be asserted and that the outcome will be unfavorable, and the loss can be reasonably estimated (ASC 450-20-25-2, 450-20-50-6); customers are reporting damage and {s} has paid nearly every reported claim in past recalls, so both are probable, and counsel's range estimates the loss. With no best estimate in the range, the minimum, {m(L)}, is accrued and the possible additional loss is disclosed (ASC 450-20-30-1). Total liability = {m(lit)} + {m(L)} = {m(key_v)}.""",
     )
 
 
@@ -341,31 +354,33 @@ def commitment_and_rebate(p):
     key = (m(key_v), f"Correct. Commitment loss {m(loss)} + rebate refund liability {m(reb)}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} has a noncancelable, unhedged commitment to buy {int(Q):,} {p['unit']}s of {p['mat']} next year at a fixed {m(Pc)} a {p['unit']}; at year-end, the market price for the same delivery is {m(Pm)} a {p['unit']}. {s} also sold {int(N):,} {p['goods']} during the year with a {m(r)} mail-in cash rebate, claimable through {p['through']} of next year; from experience with similar offers, {s} expects {pct(p['rp'])} of buyers to claim it, and it has paid {m(paid)} of claims so far. What total liability should {s} report at year-end for the purchase commitment and the rebate offer?""",
+        f"""{co} has a noncancelable, unhedged commitment to buy {int(Q):,} {p['unit']}s of {p['mat']} next year at a fixed {m(Pc)} a {p['unit']}; at year-end, the market price for the same delivery is {m(Pm)} a {p['unit']}. {s} measures inventory at the lower of FIFO cost and net realizable value; the {p['mat']}'s net realizable value is its {m(Pm)} market price, and no firm sales contracts cover the goods {s} will make from it. {s} also sold {int(N):,} {p['goods']} during the year with a {m(r)} mail-in cash rebate, claimable through {p['through']} of next year; from experience with similar offers, {s} expects {pct(p['rp'])} of buyers to claim it, and it has paid {m(paid)} of claims so far. What total liability should {s} report at year-end for the purchase commitment and the rebate offer?""",
         choices, ans,
-        f"""A loss on a noncancelable, unhedged purchase commitment is recognized when the market price falls below the contract price (ASC 330-10-35-17 to 35-18): {int(Q):,} × ({m(Pc)} − {m(Pm)}) = {m(loss)}. Cash rebates are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the rebates {s} expects to pay on sales already made are a refund liability (ASC 606-10-32-10): {int(N):,} × {pct(p['rp'])} × {m(r)} = {m(expected)} expected, less {m(paid)} paid = {m(reb)}. Total liability = {m(loss)} + {m(reb)} = {m(key_v)}.""",
+        f"""A loss on a noncancelable, unhedged purchase commitment is measured the same way as an inventory loss, here against net realizable value for a FIFO entity, and is recognized unless firm sales contracts protect it (ASC 330-10-35-17 to 35-18): {int(Q):,} × ({m(Pc)} − {m(Pm)}) = {m(loss)}. Cash rebates are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the rebates {s} expects to pay on sales already made are a refund liability (ASC 606-10-32-10): {int(N):,} × {pct(p['rp'])} × {m(r)} = {m(expected)} expected, less {m(paid)} paid = {m(reb)}. Total liability = {m(loss)} + {m(reb)} = {m(key_v)}.""",
     )
 
 
 def settlement_and_selfinsurance(p):
+    """A settlement paid now and in two later installments (each installment discounted for its own term) and
+    self-insured injury claims (reported and incurred but not reported; next year's injuries excluded)."""
     co, s = p["co"], short(p["co"])
-    now, later, i = D(p["now"]), D(p["later"]), D(p["i"]) / 100
+    now, l1, l2, i = D(p["now"]), D(p["l1"]), D(p["l2"]), D(p["i"]) / 100
     Ar, Ai, B = D(p["Ar"]), D(p["Ai"]), D(p["B"])
-    pv = rd(later / (1 + i))
+    f1, f2 = rd(1 / (1 + i), "0.0001"), rd(1 / (1 + i) ** 2, "0.0001")
+    pv = rd(l1 * f1 + l2 * f2)
     key_v = now + pv + Ar + Ai
     pool = {
-        "undiscounted": (m(now + later + Ar + Ai), f"Adds the {m(later)} due in a year at its face amount. {s}'s policy is to discount fixed, scheduled settlement payments, so it is carried at present value, {m(pv)}."),
-        "compounded": (m(now + rd(later * (1 + i)) + Ar + Ai), f"Compounds the deferred payment forward at {pct(p['i'])} instead of discounting it back to present value."),
-        "omit_now": (m(pv + Ar + Ai), f"Leaves out the {m(now)} due within 30 days; it is unpaid at year-end and part of the settlement liability."),
-        "reported": (m(now + pv + Ar), f"Accrues only the {m(Ar)} for injuries already reported. The {m(Ai)} for injuries that occurred during the year but haven't been reported is also a loss incurred by year-end and is accrued."),
+        "undiscounted": (m(now + l1 + l2 + Ar + Ai), f"Adds the two later installments at their face amounts, {m(l1 + l2)}. {s} discounts the deferred payments, so they are carried at present value, {m(pv)}."),
+        "one_year": (m(now + rd((l1 + l2) * f1) + Ar + Ai), f"Discounts both later installments for one year ({m(l1 + l2)} × {f1}). The second is due in two years, so it is discounted with the two-year factor, {f2}."),
+        "reported": (m(key_v - Ai), f"Accrues only the {m(Ar)} for injuries already reported. The {m(Ai)} for injuries that occurred during the year but haven't been reported is also a loss incurred by year-end and is accrued."),
         "future": (m(key_v + B), f"Also accrues the {m(B)} the actuary expects next year's injuries to cost. No liability exists for injuries that haven't occurred, whatever the self-insurance arrangement."),
     }
-    key = (m(key_v), f"Correct. Settlement {m(now)} + {m(pv)} present value + injuries {m(Ar)} reported and {m(Ai)} not yet reported.")
+    key = (m(key_v), f"Correct. Settlement {m(now)} + {m(pv)} ({m(l1)} × {f1} + {m(l2)} × {f2}) + injuries {m(Ar)} reported and {m(Ai)} not yet reported.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} settled a product-liability suit at year-end, agreeing to pay {m(now)} within 30 days and {m(later)} one year later; because the amounts and dates are fixed, {s}'s policy is to discount such payments, and it uses {pct(p['i'])}. {s} is also self-insured for injuries to its {p['workers']}. Its actuary estimates that settling injuries that occurred during the year will cost {m(Ar)} for claims already filed and unpaid and {m(Ai)} for injuries that have occurred but haven't been reported yet, and expects injuries next year to cost {m(B)}. What total liability should {s} report at year-end for the settlement and the injuries?""",
+        f"""{co}, an SEC registrant, settled a product-liability suit at year-end, agreeing to pay {m(now)} within 30 days, {m(l1)} one year later and {m(l2)} two years later. Because the amounts and dates are fixed, {s} discounts the two later installments, using {pct(p['i'])}; present value factors at {pct(p['i'])} are {f1} for one year and {f2} for two years. {s} is also self-insured for injuries to its {p['workers']}. Its actuary estimates that settling injuries that occurred during the year will cost {m(Ar)} for claims already filed and unpaid and {m(Ai)} for injuries that have occurred but haven't been reported yet, and expects injuries next year to cost {m(B)}. What total liability should {s} report at year-end for the settlement and the injuries?""",
         choices, ans,
-        f"""The settlement is a fixed obligation; under {s}'s discounting policy, which GAAP permits when the amount and timing of payments are fixed or reliably determinable (SEC SAB Topic 5Y; ASC 835-30), it is measured at {m(now)} + {m(later)} ÷ {1 + i:.2f} = {m(now)} + {m(pv)} = {m(now + pv)}. For self-insured risks, losses from injuries that occurred by year-end, both reported and incurred but not reported, are accrued when probable and estimable (ASC 450-20-25-2): {m(Ar)} + {m(Ai)} = {m(Ar + Ai)}. Injuries that haven't happened create no liability, so next year's {m(B)} is not accrued. Total liability = {m(now + pv)} + {m(Ar + Ai)} = {m(key_v)}.""",
+        f"""The settlement is a fixed obligation. When the amount and timing of payments are fixed or reliably determinable, an SEC registrant may discount the liability (SAB Topic 5Y, ASC 450-20-S99-1), and {s} does: the {m(now)} due within 30 days isn't discounted, and each later installment is discounted for its own term: {m(l1)} × {f1} + {m(l2)} × {f2} = {m(pv)}, so the settlement liability is {m(now)} + {m(pv)} = {m(now + pv)}. For self-insured risks, losses from injuries that occurred by year-end, both reported and incurred but not reported, are accrued when probable and estimable (ASC 450-20-25-2): {m(Ar)} + {m(Ai)} = {m(Ar + Ai)}. Injuries that haven't happened create no liability, so next year's {m(B)} is not accrued. Total liability = {m(now + pv)} + {m(Ar + Ai)} = {m(key_v)}.""",
     )
 
 
@@ -391,22 +406,31 @@ def draft_note_penalty(p):
     )
 
 
-def indemnity_and_whistleblower(p):
+def indemnity_and_claim(p):
+    """An indemnity of a share of cleanup costs up to a cap, with the consultant's most likely cost: the
+    accrual is the lesser of the share and the cap. A second claim is reasonably possible, with an estimate:
+    disclosed, not accrued."""
     co, s, Y = p["co"], short(p["co"]), p["Y"]
-    cap, lo, best, W = D(p["cap"]), D(p["lo"]), D(p["best"]), D(p["W"])
-    mid = (lo + cap) / 2
+    sh, cap, lo, hi, ml = D(p["sh"]) / 100, D(p["cap"]), D(p["lo"]), D(p["hi"]), D(p["ml"])
+    W, E = D(p["W"]), D(p["E"])
+    share_ml = rd(sh * ml)
+    key_v = min(share_ml, cap)
+    capped = share_ml > cap
     pool = {
-        "low": (m(lo), f"Accrues the {m(lo)} low end of the consultant's range. When counsel's letter names {m(best)} as the best estimate within the range, that amount is accrued rather than the minimum."),
-        "mid": (m(mid), f"Accrues the {m(lo)}-to-{m(cap)} range's midpoint. Counsel's letter names {m(best)}, not the midpoint, as the best estimate."),
-        "high": (m(cap), f"Accrues the {m(cap)} cap, the top of the range, rather than the {m(best)} counsel names as the best estimate."),
-        "whistle": (m(best + W), f"Also accrues the {m(W)} the complaint alleges. Counsel told the committee it is too early to gauge the outcome or the exposure, so the matter isn't accrued; an allegation isn't an estimate of loss."),
+        "no_cap": (m(share_ml), f"Accrues {pct(p['sh'])} of the {m(ml)} most likely cost without applying the {m(cap)} cap. {s}'s obligation under the indemnity can't exceed the cap."),
+        "no_share": (m(min(ml, cap)), f"Accrues the full {m(ml)} most likely cost{', limited to the cap,' if ml > cap else ''} as if {s} had agreed to reimburse all of it. The indemnity covers only {pct(p['sh'])} of the buyer's costs."),
+        "low": (m(min(rd(sh * lo), cap)), f"Accrues {pct(p['sh'])} of the {m(lo)} low end of the consultant's range. When an amount within the range is a better estimate than any other, here the {m(ml)} most likely cost, that amount is used; the minimum is used only when none is."),
+        "rp": (m(key_v + E), f"Also accrues counsel's {m(E)} estimate for the distributor's claim. Counsel expects {s} more likely than not to prevail, so a loss is reasonably possible, not probable; it is disclosed with the estimate, not accrued."),
+        "claim": (m(key_v + W), f"Also accrues the {m(W)} the distributor claims. A loss that is only reasonably possible isn't accrued, and the amount claimed isn't an estimate of the loss."),
     }
-    key = (m(best), f"Correct. {s} accrues counsel's stated best estimate for the indemnity, {m(best)}, and nothing for the whistleblower matter.")
+    key = (m(key_v), f"Correct. {pct(p['sh'])} × {m(ml)} = {m(share_ml)}{f', limited to the {m(cap)} cap' if capped else ', within the cap'}; nothing for the distributor's claim.")
     choices, ans = build(pool, key, p["use"])
+    lim = (f"which exceeds the {m(cap)} cap, so the accrual is limited to {m(cap)}" if capped
+           else f"which is within the {m(cap)} cap")
     return variant(
-        f"""Before its Year {Y} statements are issued, {co}'s files on two matters include a letter from outside counsel and minutes of its compliance committee. Counsel's letter concerns an indemnity in the agreement under which {s} sold its {p['division']} division in an earlier year: {s} agreed to reimburse the buyer for up to {m(cap)} of environmental cleanup costs at a site the division used. The indemnity's fair value when it was given was immaterial, and {s} recognized no liability for it then. In {p['order']}, Year {Y}, the state ordered the buyer to clean up the site, and the buyer has submitted its claim under the indemnity; counsel, citing a consultant's site assessment, estimates the cost at between {m(lo)} and {m(cap)} and names {m(best)} as the best estimate within that range. The committee's minutes describe a whistleblower complaint received in {p['wmonth']}, alleging {m(W)} of improper payments to a supplier; the outside counsel investigating it told the committee it is too early in the inquiry to gauge either the outcome or the exposure. What liability should {s} accrue at year-end for these two matters?""",
+        f"""Before its Year {Y} statements are issued, {co}'s files on two matters include letters from outside counsel. The first concerns an indemnity in the agreement under which {s} sold its {p['division']} division in an earlier year: {s} agreed to reimburse the buyer for {pct(p['sh'])} of any environmental cleanup costs at a site the division used, up to a total of {m(cap)}. The indemnity's fair value when it was given was immaterial, and {s} recognized no liability for it then. In {p['order']}, Year {Y}, the state ordered the buyer to clean up the site, and the buyer has submitted its claim under the indemnity. A consultant's site assessment puts the total cleanup cost at between {m(lo)} and {m(hi)}, most likely {m(ml)}. The second letter concerns a suit a former distributor filed in {p['wmonth']}, claiming {m(W)} for wrongful termination; counsel's letter says {s} will more likely than not prevail, though the distributor's case is not without merit, and estimates that if {s} loses, the loss would be about {m(E)}. What liability should {s} accrue at year-end for these two matters?""",
         choices, ans,
-        f"""With the cleanup ordered and the buyer's claim submitted, payment under the indemnity is probable, and counsel's letter names a best estimate within the range, {m(best)}, which {s} accrues (ASC 450-20-25-2; ASC 450-20-30-1); the minimum or midpoint is used only when no amount in the range is a better estimate than another. The whistleblower matter has reached no conclusion: counsel can't yet assess the outcome or the exposure, so no amount is accrued, and the {m(W)} the complaint alleges is not an estimate of loss; the matter is considered for disclosure (ASC 450-20-50-3 to 50-5). Liability = {m(best)}.""",
+        f"""Once the cleanup was ordered and the buyer claimed, a loss under the indemnity became probable, so {s} recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2). The consultant's most likely amount is a better estimate than any other in the range, so it is used (ASC 450-20-30-1), and {s}'s share is {pct(p['sh'])} × {m(ml)} = {m(share_ml)}, {lim}. Counsel expects {s} more likely than not to prevail but doesn't consider the case without merit, so a loss on the distributor's suit is reasonably possible, not probable: nothing is accrued; the nature of the claim and the {m(E)} estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability = {m(key_v)}.""",
     )
 
 
@@ -433,23 +457,30 @@ def se_bonus(p):
     )
 
 
-def se_bankruptcy(p):
+def se_royalty_rebate(p):
+    """A licensee's royalty report and a supplier's final rebate statement, both received after year-end, fix
+    Year 1 amounts estimated at December 31 (recognized); the licensee's later decision to stop selling the
+    licensed product cuts only Year 2 royalties (nonrecognized)."""
     co, s, Y = p["co"], short(p["co"]), p["Y"]
-    I, R, K, S, Dv = D(p["I"]), D(p["R"]), D(p["K"]), D(p["S"]), D(p["Div"])
-    loss = R - K - S
-    key_v = I - loss
+    I, rr, SA, E = D(p["I"]), D(p["rr"]) / 100, D(p["SA"]), D(p["E"])
+    A1, A2, X = D(p["A1"]), D(p["A2"]), D(p["X"])
+    roy = rd(rr * SA)
+    d_roy, d_reb = roy - E, A2 - A1
+    key_v = I + d_roy + d_reb
+    assert d_reb > 0 and d_roy != 0
     pool = {
-        "whole": (m(I - (R - S)), f"Writes off the whole {m(R)} balance, ignoring the {m(K)} {s} still expects to collect from the bankruptcy estate."),
-        "no_allow": (m(I - (R - K)), f"Charges the full {m(R - K)} expected shortfall to Year {Y} income without counting the {m(S)} already provided for this customer in the year-end allowance."),
-        "div": (m(key_v - Dv), f"Also deducts the {m(Dv)} dividend declared in February. A dividend declared after year-end is a Year {Y + 1} distribution, not a Year {Y} expense; it is disclosed."),
-        "draft": (m(I), f"Leaves the draft unchanged. The bankruptcy confirms losses the customer was already suffering at year-end, so the allowance is increased for Year {Y}."),
+        "cut": (m(key_v - X), f"Also deducts the {m(X)} fall in expected Year {Y + 1} royalties. The licensee's decision came after year-end and affects only royalties on its Year {Y + 1} sales, which {s} recognizes only as those sales occur; it is a nonrecognized subsequent event."),
+        "no_roy": (m(I + d_reb), f"Keeps the {m(E)} royalty estimate. The licensee's report shows what its Year {Y} sales actually were, a condition that existed at year-end, so Year {Y} royalty revenue is adjusted to {pct(p['rr'])} × {m(SA)} = {m(roy)}."),
+        "no_reb": (m(I + d_roy), f"Leaves the rebate at the {m(A1)} accrued. The supplier's statement fixes the rebate earned on Year {Y} purchases, so the extra {m(d_reb)} reduces Year {Y} cost of goods sold."),
+        "roy_add": (m(I + roy + d_reb), f"Adds the whole {m(roy)} reported royalty without removing the {m(E)} already accrued, counting Year {Y} royalties twice."),
+        "reb_add": (m(I + d_roy + A2), f"Adds the whole {m(A2)} final rebate without removing the {m(A1)} already accrued, counting part of the rebate twice."),
     }
-    key = (m(key_v), f"Correct. {m(I)} − ({m(R)} − {m(K)} expected recovery − {m(S)} already allowed).")
+    key = (m(key_v), f"Correct. {m(I)} {'+' if d_roy > 0 else '−'} {m(abs(d_roy))} royalty true-up + {m(d_reb)} rebate true-up; the Year {Y + 1} royalty decline isn't recognized.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}'s draft Year {Y} income before income taxes is {m(I)}. Its allowance for credit losses at December 31, Year {Y}, includes {m(S)} for the {m(R)} owed by {p['cust']}, a customer that had reported losses in each quarter of Year {Y} and had paid its last three invoices of the year more than 90 days late. On January {p['bday']}, Year {Y + 1}, {p['cust']} filed for bankruptcy, and {s} now expects to collect {m(K)} of the balance. On February {p['dday']}, Year {Y + 1}, {s}'s board declared a cash dividend of {m(Dv)}. The statements will be issued in March, Year {Y + 1}, and {s} has not elected the ASU 2025-05 practical expedient for current receivables. Ignore income taxes. What income before income taxes should {s} report for Year {Y}?""",
+        f"""{co}'s draft Year {Y} income before income taxes is {m(I)}; the statements will be issued on March {p['iday']}, Year {Y + 1}. The draft includes {m(E)} of royalty revenue that {s} estimated at year-end under a license that pays it {pct(p['rr'])} of a licensee's sales of products made with {poss(s)} technology. It also includes, as a reduction of cost of goods sold, a {m(A1)} volume rebate {s} estimated it had earned on its Year {Y} purchases from its main supplier; all of the goods bought from that supplier in Year {Y} were sold during the year. Before the statements are issued: on January {p['rday']}, the licensee's annual royalty report showed Year {Y} sales of {m(SA)} of the licensed products; on January {p['bday']}, the supplier's final statement fixed the Year {Y} rebate at {m(A2)}, paid in February; and on February {p['xday']}, the licensee announced that it will stop selling the licensed products in April, Year {Y + 1}, which {s} expects to reduce its Year {Y + 1} royalties by {m(X)}. Ignore income taxes. What income before income taxes should {s} report for Year {Y}?""",
         choices, ans,
-        f"""The bankruptcy resulted from financial difficulties that existed at December 31, so it is evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected loss on the balance = {m(R)} − {m(K)} = {m(R - K)}, of which {m(S)} is already in the allowance, so Year {Y} credit loss expense rises by {m(loss)}. The dividend, declared after year-end, is a nonrecognized subsequent event, disclosed but not reflected in Year {Y} (ASC 855-10-25-3); a dividend isn't an expense in any case. Income before income taxes = {m(I)} − {m(loss)} = {m(key_v)}.""",
+        f"""The royalty report and the rebate statement give better evidence of amounts that arose from Year {Y} activity, conditions that existed at December 31, so both are recognized subsequent events (ASC 855-10-25-1). A sales-based royalty is recognized as the licensee's sales occur (ASC 606-10-55-65), so Year {Y} royalty revenue is {pct(p['rr'])} × {m(SA)} = {m(roy)}, a change of {'+' if d_roy > 0 else '−'}{m(abs(d_roy))} from the {m(E)} estimate. A vendor rebate reduces the cost of the purchases that earned it (ASC 705-20-25); the goods were all sold, so the {m(A2)} − {m(A1)} = {m(d_reb)} increase reduces Year {Y} cost of goods sold. The licensee's decision to stop selling arose after year-end and affects only Year {Y + 1} royalties; it is a nonrecognized subsequent event, disclosed if material (ASC 855-10-25-3). Income before income taxes = {m(I)} {'+' if d_roy > 0 else '−'} {m(abs(d_roy))} + {m(d_reb)} = {m(key_v)}.""",
     )
 
 
@@ -465,12 +496,12 @@ def se_working_capital(p):
         "write_off": (m(key_v - Rc), f"Also writes off the {m(Rc)} owed by {p['cust']}. The customer was paying within terms and its credit line had just been renewed at year-end; its default came from a regulation that took effect after year-end, a condition that arose after the balance sheet date, so it is disclosed, not recognized."),
         "no_warranty": (m(CA - (CL + X)), f"Leaves out the additional {m(wS - wA)} owed on the warranty claim, which settled for more than the {m(wA)} accrued at year-end for units sold before then."),
         "no_tax": (m(CA - (CL + wS - wA)), f"Leaves out the {m(X)} sales-tax assessment. It arises from Year {Y} sales, a condition that existed at year-end, so it is recognized even though the audit concluded after year-end."),
-        "draft": (m(CA - CL), f"Accepts the draft balances, {m(CA)} of current assets and {m(CL)} of current liabilities, without recognizing either the warranty settlement or the tax assessment."),
+        "w_full": (m(CA - (CL + wS + X)), f"Adds the whole {m(wS)} warranty settlement to current liabilities without removing the {m(wA)} already accrued for the same claim; only the {m(wS - wA)} excess is new."),
     }
     key = (m(key_v), f"Correct. {m(CA)} − ({m(CL)} + {m(wS - wA)} warranty + {m(X)} sales tax).")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}'s draft December 31, Year {Y}, balance sheet reports current assets of {m(CA)} and current liabilities of {m(CL)}; the statements will be issued on March {p['iday']}, Year {Y + 1}. Between those dates: a warranty claim on units {s} sold before year-end, for which {s} had accrued {m(wA)}, was settled for {m(wS)}; on {p['tdate']}, Year {Y + 1}, a state audit of {s}'s Year {Y} sales concluded that {s} had failed to collect sales tax on certain Year {Y} sales and assessed {m(X)}, payable in April, for which {s} had accrued nothing; and {p['cust']}, a customer that owed {m(Rc)} at year-end, defaulted on its balance after {article(p['reg'])} {p['reg']} that the government announced and put into effect in {p['rmonth']}, Year {Y + 1}, cut off its export business. Through December, {p['cust']} had paid every invoice within terms, and its bank had renewed its credit line in December. {s} has not elected the ASU 2025-05 practical expedient for current receivables. What working capital (current assets minus current liabilities) should {s} report at December 31, Year {Y}?""",
+        f"""{co}'s draft December 31, Year {Y}, balance sheet reports current assets of {m(CA)} and current liabilities of {m(CL)}; the statements will be issued on March {p['iday']}, Year {Y + 1}. Between those dates: a warranty claim on units {s} sold before year-end, for which {s} had accrued {m(wA)}, was settled for {m(wS)}; on {p['tdate']}, Year {Y + 1}, a state audit of {s}'s Year {Y} sales concluded that {s} had failed to collect sales tax on certain Year {Y} sales and assessed {m(X)}, payable in April, for which {s} had accrued nothing; and {p['cust']}, a customer that owed {m(Rc)} at year-end, defaulted on its balance after {article(p['reg'])} {p['reg']} that the government announced and put into effect in {p['rmonth']}, Year {Y + 1}, cut off its export business. Through December, {p['cust']} had paid every invoice within terms, and its bank had renewed its credit line in December. {s} has not elected the ASU 2025-05 practical expedient for current receivables. Ignore income taxes. What working capital (current assets minus current liabilities) should {s} report at December 31, Year {Y}?""",
         choices, ans,
         f"""The warranty settlement and the sales-tax assessment both give evidence about conditions that existed at year-end (units already sold, Year {Y} sales already made), so both are recognized (ASC 855-10-25-1): current liabilities rise by {m(wS)} − {m(wA)} = {m(wS - wA)} and by {m(X)}. {poss(p['cust'])} default resulted from a regulation announced and effective after year-end, a condition arising after the balance sheet date, so it is disclosed, not recognized, and the receivable isn't written down (ASC 855-10-25-3, 855-10-55-2). Working capital = {m(CA)} − ({m(CL)} + {m(add)}) = {m(key_v)}.""",
     )
@@ -489,7 +520,7 @@ def se_total_assets(p):
     key = (m(key_v), f"Correct. {m(TA)} − ({m(R)} − {m(Ap)}) insurance shortfall.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co}'s draft December 31, Year {Y}, balance sheet reports total assets of {m(TA)}. In December, a hailstorm damaged {s}'s {p['assets']}; {s} wrote them down and recorded a {m(R)} receivable for the insurance recovery it expected. The statements will be issued on March {p['iday']}, Year {Y + 1}. Before then: in January, the insurer completed its assessment under the policy in force at the time of the storm and paid {m(Ap)} in full settlement of the claim; in February, a court awarded {s} {m(aw)} in its suit against a former supplier, and the supplier has appealed; and also in February, a broad decline in equity markets cut {m(dec)} from the fair value of {s}'s portfolio of listed securities. What total assets should {s} report at December 31, Year {Y}?""",
+        f"""{co}'s draft December 31, Year {Y}, balance sheet reports total assets of {m(TA)}. In December, a hailstorm damaged {s}'s {p['assets']}; {s} wrote them down and recorded a {m(R)} receivable for the insurance recovery it expected. The statements will be issued on March {p['iday']}, Year {Y + 1}. Before then: in January, the insurer completed its assessment under the policy in force at the time of the storm and paid {m(Ap)} in full settlement of the claim; in February, a court awarded {s} {m(aw)} in its suit against a former supplier, and the supplier has appealed; and also in February, a broad decline in equity markets cut {m(dec)} from the fair value of {s}'s portfolio of listed securities. Ignore income taxes. What total assets should {s} report at December 31, Year {Y}?""",
         choices, ans,
         f"""The insurer's assessment applies the policy in force at the time of the December storm, so it is evidence of the amount recoverable at year-end and is recognized: the receivable falls from {m(R)} to {m(Ap)}, a {m(R - Ap)} reduction (ASC 855-10-25-1). The court award is a gain contingency, still under appeal; it isn't recognized until realized (ASC 450-30-25-1) and is disclosed. The market decline reflects conditions that arose after year-end and is disclosed, not recognized (ASC 855-10-25-3, 855-10-55-2). Total assets = {m(TA)} − {m(R - Ap)} = {m(key_v)}.""",
     )
@@ -530,7 +561,7 @@ FAMILIES = [
      ["ASC 250-10-45-5 to 45-8 (retrospective application of a change in accounting principle; indirect effects)"],
      change_in_principle, [
         dict(co="Verity Hardware Co.", old="FIFO", new="weighted-average", Y=4, why="weighted-average better matches the cost of its interchangeable stock",
-             old_inv=[560000, 640000, 700000], new_inv=[500000, 555000, 570000], t=25, b=10, NI=620000, use=["bonus", "prior", "sign"]),
+             old_inv=[560000, 640000, 700000], new_inv=[500000, 555000, 570000], t=25, b=10, NI=620000, use=["bonus", "cum", "sign"]),
         dict(co="Linwood Supply Co.", old="weighted-average", new="FIFO", Y=5, why="FIFO better reflects the current cost of its goods on hand",
              old_inv=[430000, 470000, 520000], new_inv=[510000, 580000, 670000], t=21, b=10, NI=540000, use=["bonus", "cum", "prior"]),
         dict(co="Marchant Trading Co.", old="LIFO", new="FIFO", Y=4, why="FIFO better reflects the current cost of its goods on hand",
@@ -546,7 +577,7 @@ FAMILIES = [
         dict(co="Castlemain Equipment Co.", P=360000, r=8, start="October", term=4, found="April", t=25, use=["thru_found", "pretax", "full_y1"]),
         dict(co="Fenwright Leasing Co.", P=600000, r=5, start="May", term=6, found="February", t=21, use=["only_y1", "full_y1", "pretax"]),
      ], "only_y1"),
-    ("far-accounting-errors-0010", A3, T_CHG, AN,
+    ("far-accounting-errors-0010", A1, "Income statement", AN,
      ["ASC 606-10-55-22 to 55-29 (sales with a right of return)", "ASC 360-10-30-1 (cost of property includes costs to bring it to its intended use)", "ASC 606-10-45-2 (contract liabilities)"],
      ae_returns_install, [
         dict(co="Westerham Devices Co.", Y=2, NI=640000, S=180000, rp=10, cp=60, month="September", asset="packaging machine", P=270000, f=9000, i=51000, L=5, dday=20, Dp=25000, use=["gross_ret", "full_year", "deposit"]),
@@ -554,46 +585,46 @@ FAMILIES = [
         dict(co="Brockhollow Data Co.", Y=1, NI=780000, S=240000, rp=8, cp=65, month="October", asset="bottling line", P=390000, f=12000, i=60000, L=4, dday=22, Dp=34000, use=["gross_ret", "no_dep", "deposit"]),
         dict(co="Pennycross Tech Co.", Y=4, NI=455000, S=120000, rp=15, cp=45, month="August", asset="milling machine", P=180000, f=5000, i=31000, L=3, dday=19, Dp=16000, use=["gross_ret", "no_dep", "no_returns"]),
      ], "gross_ret"),
-    ("far-accounting-errors-0011", A3, T_CHG, AN,
+    ("far-accounting-errors-0011", A1, "Balance sheet", AN,
      ["ASC 440-10 (purchase commitments: executory until performance)", "FASB Concepts Statement No. 8, chapter 4 (definition of a liability; dividends payable on declaration)", "ASC 606-10-25-30 (transfer of control: shipping terms)"],
      ae_liabilities, [
-        dict(co="Thistlewood Retail Co.", Y=2, TL=1860000, PO=52000, po_item="replacement parts", dday=18, dps="0.60", sh=225000, tr=15000, pday=20, INV=38000, inv_item="display racks", use=["drop_inv", "no_div", "draft"]),
+        dict(co="Thistlewood Retail Co.", Y=2, TL=1860000, PO=52000, po_item="replacement parts", dday=18, dps="0.60", sh=225000, tr=15000, pday=20, INV=38000, inv_item="display racks", use=["drop_inv", "no_div", "issued"]),
         dict(co="Grantley Mercantile Co.", Y=3, TL=1240000, PO=61000, po_item="packaging supplies", dday=16, dps="0.25", sh=128000, tr=24000, pday=15, INV=27000, inv_item="checkout counters", use=["drop_inv", "issued", "keep_po"]),
-        dict(co="Oakhurst Wholesale Co.", Y=1, TL=2920000, PO=67000, po_item="warehouse racking", dday=19, dps="0.50", sh=320000, tr=40000, pday=22, INV=44000, inv_item="sales-floor fixtures", use=["draft", "issued", "keep_po"]),
+        dict(co="Oakhurst Wholesale Co.", Y=1, TL=2920000, PO=67000, po_item="warehouse racking", dday=19, dps="0.50", sh=320000, tr=40000, pday=22, INV=44000, inv_item="sales-floor fixtures", use=["no_div", "issued", "keep_po"]),
         dict(co="Welbridge Trading Co.", Y=4, TL=980000, PO=29000, po_item="replacement blades", dday=17, dps="0.40", sh=150000, tr=10000, pday=18, INV=21000, inv_item="storage cabinets", use=["drop_inv", "no_div", "keep_po"]),
      ], "drop_inv"),
-    ("far-accounting-errors-0012", A3, T_CHG, AN,
+    ("far-accounting-errors-0012", A1, "Balance sheet", AN,
      ["ASC 310-10 and ASC 835-30 (interest on notes receivable accrues as earned)", "ASC 321-10-35-1 (equity securities measured at fair value through net income)", "ASC 606-10-55-79 to 55-80 (consignment arrangements)"],
      ae_assets, [
         dict(co="Hartswell Logistics Co.", Y=2, TA=2360000, N=600000, r=9, month="September", term=9, C=310000, FV=270000, G=63000, use=["consigned", "term", "at_cost"]),
-        dict(co="Candleford Distribution Co.", Y=3, TA=1980000, N=480000, r=10, month="October", term=6, C=240000, FV=275000, G=41000, use=["draft", "full_year", "at_cost"]),
-        dict(co="Marldon Freight Co.", Y=1, TA=3120000, N=720000, r=8, month="August", term=6, C=420000, FV=372000, G=78000, use=["full_year", "at_cost", "consigned"]),
-        dict(co="Ellenbridge Supply Co.", Y=4, TA=1540000, N=360000, r=10, month="July", term=9, C=180000, FV=207000, G=34000, use=["full_year", "term", "consigned"]),
+        dict(co="Candleford Distribution Co.", Y=3, TA=1980000, N=480000, r=10, month="October", term=6, C=240000, FV=275000, G=41000, use=["draft", "term", "at_cost"]),
+        dict(co="Marldon Freight Co.", Y=1, TA=3120000, N=720000, r=8, month="August", term=6, C=420000, FV=372000, G=78000, use=["at_cost", "consigned", "draft"]),
+        dict(co="Ellenbridge Supply Co.", Y=4, TA=1540000, N=360000, r=10, month="July", term=9, C=180000, FV=211000, G=34000, use=["term", "at_cost", "draft"]),
      ], "consigned"),
     ("far-contingencies-0015", A3, T_CON, AP,
      ["ASC 450-20-25-2 and 450-20-50-6 (accrual of loss contingencies, including unasserted claims)", "ASC 450-20-30-1 (range of loss with no best estimate: accrue the minimum)", "ASC 250-10-45-17 (change in estimate)"],
      litigation_and_recall, [
-        dict(co="Oldcastle Mills Co.", A=180000, Pd=70000, Inc=55000, L=60000, H=140000, product="space heater", part="thermostat", use=["mid", "high", "no_paid"]),
-        dict(co="Ferngate Products Co.", A=240000, Pd=90000, Inc=65000, L=85000, H=205000, product="dehumidifier", part="fan motor", use=["unasserted", "mid", "no_inc"]),
-        dict(co="Brackendale Goods Co.", A=130000, Pd=50000, Inc=40000, L=45000, H=115000, product="toaster oven", part="heating element", use=["unasserted", "mid", "high"]),
-        dict(co="Southmoor Appliance Co.", A=310000, Pd=120000, Inc=80000, L=110000, H=250000, product="dishwasher", part="water valve", use=["unasserted", "no_inc", "no_paid"]),
+        dict(co="Oldcastle Mills Co.", A=180000, Pd=70000, Inc=55000, L=60000, H=140000, product="space heater", part="thermostat", calls=312, use=["mid", "unasserted", "no_paid"]),
+        dict(co="Ferngate Products Co.", A=240000, Pd=90000, Inc=65000, L=85000, H=205000, product="dehumidifier", part="fan motor", calls=268, use=["unasserted", "mid", "no_inc"]),
+        dict(co="Brackendale Goods Co.", A=130000, Pd=50000, Inc=40000, L=45000, H=115000, product="toaster oven", part="heating element", calls=185, use=["unasserted", "mid", "high"]),
+        dict(co="Southmoor Appliance Co.", A=310000, Pd=120000, Inc=80000, L=110000, H=250000, product="dishwasher", part="water valve", calls=407, use=["unasserted", "no_inc", "no_paid"]),
      ], "mid"),
     ("far-contingencies-0016", A3, T_CON, AP,
-     ["ASC 330-10-35-17 to 35-18 (losses on firm purchase commitments)", "ASC 606-10-32-25 (consideration payable to a customer)", "ASC 606-10-32-10 (refund liabilities)"],
+     ["ASC 330-10-35-17 to 35-18 (losses on firm purchase commitments, measured like inventory losses, as amended by ASU 2015-11)", "ASC 606-10-32-25 (consideration payable to a customer)", "ASC 606-10-32-10 (refund liabilities)"],
      commitment_and_rebate, [
-        dict(co="Harmondsgate Textiles Co.", Q=40000, unit="pound", mat="cotton yarn", Pc="4.80", Pm="4.05", N=30000, goods="packs of towels", r=2, rp=35, paid=9600, through="March", use=["all_claim", "no_paid", "full_contract"]),
+        dict(co="Harmondsgate Textiles Co.", Q=40000, unit="pound", mat="cotton yarn", Pc="4.80", Pm="4.05", N=30000, goods="packs of towels", r=2, rp=35, paid=9600, through="March", use=["all_claim", "no_paid", "no_rebate"]),
         dict(co="Westrill Fabrics Co.", Q=60000, unit="yard", mat="synthetic fiber", Pc="3.40", Pm="2.95", N=24000, goods="sets of bed linens", r=5, rp=30, paid=14000, through="April", use=["no_commit", "no_rebate", "all_claim"]),
-        dict(co="Allonby Weaving Co.", Q=28000, unit="pound", mat="wool roving", Pc="6.40", Pm="5.60", N=18000, goods="wool blankets", r=4, rp=40, paid=11000, through="February", use=["no_rebate", "no_paid", "full_contract"]),
+        dict(co="Allonby Weaving Co.", Q=28000, unit="pound", mat="wool roving", Pc="6.40", Pm="5.60", N=18000, goods="wool blankets", r=4, rp=40, paid=11000, through="February", use=["no_rebate", "no_paid", "all_claim"]),
         dict(co="Pennybridge Mills Co.", Q=52000, unit="spool", mat="dyed thread", Pc="2.95", Pm="2.50", N=36000, goods="tablecloths", r=3, rp=25, paid=8500, through="May", use=["no_commit", "no_rebate", "no_paid"]),
      ], "all_claim"),
     ("far-contingencies-0017", A3, T_CON, AP,
-     ["ASC 450-20-25-2 (accrual of probable, estimable losses, including incurred-but-not-reported claims of a self-insured entity)", "SEC SAB Topic 5Y and ASC 835-30 (discounting when the amount and timing of payments are fixed)"],
+     ["ASC 450-20-25-2 (accrual of probable, estimable losses, including incurred-but-not-reported claims of a self-insured entity)", "SEC SAB Topic 5Y (ASC 450-20-S99-1): discounting a liability whose amount and timing are fixed or reliably determinable"],
      settlement_and_selfinsurance, [
-        dict(co="Cranmoor Devices Co.", now=120000, later=90000, i=6, Ar=38000, Ai=26000, B=70000, workers="warehouse workers", use=["undiscounted", "compounded", "future"]),
-        dict(co="Bellingfield Products Co.", now=160000, later=130000, i=8, Ar=52000, Ai=31000, B=95000, workers="delivery drivers", use=["undiscounted", "omit_now", "reported"]),
-        dict(co="Oaktree Instruments Co.", now=95000, later=70000, i=5, Ar=27000, Ai=18000, B=50000, workers="assembly workers", use=["compounded", "reported", "future"]),
-        dict(co="Longmarsh Appliances Co.", now=210000, later=180000, i=7, Ar=64000, Ai=43000, B=120000, workers="installation crews", use=["omit_now", "reported", "compounded"]),
-     ], "future"),
+        dict(co="Cranmoor Devices Co.", now=120000, l1=60000, l2=50000, i=6, Ar=38000, Ai=26000, B=70000, workers="warehouse workers", use=["reported", "one_year", "future"]),
+        dict(co="Bellingfield Products Co.", now=160000, l1=80000, l2=70000, i=8, Ar=52000, Ai=31000, B=95000, workers="delivery drivers", use=["undiscounted", "one_year", "future"]),
+        dict(co="Oaktree Instruments Co.", now=95000, l1=40000, l2=45000, i=5, Ar=27000, Ai=18000, B=50000, workers="assembly workers", use=["reported", "future", "undiscounted"]),
+        dict(co="Longmarsh Appliances Co.", now=210000, l1=110000, l2=90000, i=7, Ar=64000, Ai=43000, B=120000, workers="installation crews", use=["reported", "one_year", "undiscounted"]),
+     ], "reported"),
     ("far-contingencies-0018", A3, T_CON, AN,
      ["ASC 450-20-25-2 and 450-20-50-6 (accrual of unasserted claims)", "ASC 450-20-50-3 to 50-5 (disclosure of a loss contingency that cannot be estimated)"],
      draft_note_penalty, [
@@ -603,13 +634,13 @@ FAMILIES = [
         dict(co="Westvale Holdings Co.", days=12, P=11000, Pmax=27500, Dm=1500000, insp="September", sued="August", use=["zero", "demand", "demand_only"]),
      ], "zero"),
     ("far-contingencies-0019", A3, T_CON, AN,
-     ["ASC 450-20-25-2 and 450-20-30-1 (accrual at the best estimate within a range when one exists)", "ASC 450-20-50-3 to 50-5 (disclosure when a loss cannot yet be estimated)"],
-     indemnity_and_whistleblower, [
-        dict(co="Ambersgate Holdings Co.", Y=1, division="packaging", cap=420000, lo=180000, best=310000, order="September", W=95000, wmonth="October", use=["low", "mid", "whistle"]),
-        dict(co="Follyfield Group Co.", Y=2, division="logistics", cap=560000, lo=240000, best=380000, order="August", W=130000, wmonth="November", use=["mid", "whistle", "high"]),
-        dict(co="Ridgemont Holdings Co.", Y=3, division="distribution", cap=350000, lo=150000, best=230000, order="July", W=70000, wmonth="September", use=["low", "whistle", "high"]),
-        dict(co="Oversley Group Co.", Y=1, division="specialty chemicals", cap=680000, lo=300000, best=470000, order="October", W=150000, wmonth="December", use=["low", "mid", "high"]),
-     ], "whistle"),
+     ["ASC 460-10-35 and ASC 450-20-25-2 (a guarantor's contingent liability once a loss is probable)", "ASC 450-20-30-1 (accrual at the best estimate within a range when one exists)", "ASC 450-20-50-3 to 50-5 (disclosure of a reasonably possible loss)"],
+     indemnity_and_claim, [
+        dict(co="Ambersgate Holdings Co.", Y=1, division="packaging", sh=80, cap=420000, lo=380000, hi=760000, ml=590000, order="September", W=260000, E=95000, wmonth="October", use=["no_cap", "low", "rp"]),
+        dict(co="Follyfield Group Co.", Y=2, division="logistics", sh=60, cap=560000, lo=520000, hi=1150000, ml=780000, order="August", W=340000, E=130000, wmonth="November", use=["no_share", "rp", "claim"]),
+        dict(co="Ridgemont Holdings Co.", Y=3, division="distribution", sh=75, cap=350000, lo=330000, hi=640000, ml=520000, order="July", W=210000, E=70000, wmonth="September", use=["no_cap", "low", "claim"]),
+        dict(co="Oversley Group Co.", Y=1, division="specialty chemicals", sh=70, cap=680000, lo=640000, hi=1300000, ml=900000, order="October", W=410000, E=150000, wmonth="December", use=["low", "rp", "no_share"]),
+     ], "no_cap"),
     ("far-subsequent-events-0014", A3, T_SUB, AP,
      ["ASC 855-10-25-1 (recognized subsequent events)", "ASC 855-10-25-3 (nonrecognized subsequent events)"],
      se_bonus, [
@@ -619,20 +650,20 @@ FAMILIES = [
         dict(co="Tilshead Components Co.", b=5, I=4120000, A=196000, T=58000, G=450000, iday=13, tday=26, gday=20, use=["ignore_tax", "accrued", "net"]),
      ], "ignore_tax"),
     ("far-subsequent-events-0015", A3, T_SUB, AP,
-     ["ASC 855-10-25-1 and 855-10-55-1 (recognized subsequent events: a customer's bankruptcy from deterioration before year-end)", "ASC 855-10-25-3 (nonrecognized subsequent events)", "ASC 326-20-30 (expected credit losses)"],
-     se_bankruptcy, [
-        dict(co="Marrowbrook Supply Co.", Y=1, I=1860000, R=220000, K=44000, S=30000, Div=90000, cust="Hollins Retail", bday=17, dday=8, use=["div", "whole", "no_allow"]),
-        dict(co="Clearmont Industries Co.", Y=2, I=2340000, R=310000, K=93000, S=45000, Div=120000, cust="Dalby Outfitters", bday=24, dday=12, use=["div", "draft", "no_allow"]),
-        dict(co="Fallowgate Products Co.", Y=3, I=1420000, R=160000, K=36000, S=16000, Div=60000, cust="Penrose Hardware", bday=9, dday=19, use=["whole", "no_allow", "draft"]),
-        dict(co="Berrowfield Co.", Y=4, I=2960000, R=380000, K=114000, S=60000, Div=150000, cust="Gatley Stores", bday=13, dday=4, use=["div", "whole", "draft"]),
-     ], "div"),
+     ["ASC 855-10-25-1 (recognized subsequent events: better evidence of amounts arising from conditions at year-end)", "ASC 855-10-25-3 (nonrecognized subsequent events)", "ASC 606-10-55-65 (sales-based royalties recognized as the licensee's sales occur)", "ASC 705-20-25 (vendor rebates reduce the cost of purchases)"],
+     se_royalty_rebate, [
+        dict(co="Marrowbrook Instruments Co.", Y=1, I=1860000, rr=5, SA=2840000, E=128000, A1=36000, A2=51000, X=95000, iday=9, rday=24, bday=29, xday=11, use=["cut", "no_roy", "reb_add"]),
+        dict(co="Clearmont Optics Co.", Y=2, I=2340000, rr=4, SA=3150000, E=137000, A1=42000, A2=55000, X=110000, iday=13, rday=20, bday=27, xday=6, use=["cut", "no_reb", "roy_add"]),
+        dict(co="Fallowgate Sensors Co.", Y=3, I=1420000, rr=6, SA=1880000, E=104000, A1=24000, A2=33000, X=70000, iday=5, rday=18, bday=25, xday=14, use=["no_roy", "reb_add", "roy_add"]),
+        dict(co="Berrowfield Controls Co.", Y=4, I=2960000, rr="4.5", SA=4120000, E=160000, A1=46000, A2=90000, X=140000, iday=16, rday=22, bday=30, xday=9, use=["cut", "no_roy", "no_reb"]),
+     ], "cut"),
     ("far-subsequent-events-0016", A3, T_SUB, AN,
      ["ASC 855-10-25-1 (recognized subsequent events: conditions existing at the balance sheet date)", "ASC 855-10-25-3 and 855-10-55-2 (nonrecognized subsequent events: conditions arising after that date)"],
      se_working_capital, [
         dict(co="Ellersby Components Co.", Y=1, CA=2460000, CL=1180000, wA=52000, wS=81000, X=46000, Rc=140000, cust="Marbury Exports", reg="export-licensing regulation", rmonth="January", tdate="February 9", iday=10, use=["write_off", "no_warranty", "no_tax"]),
-        dict(co="Thornleigh Devices Co.", Y=2, CA=3180000, CL=1540000, wA=68000, wS=97000, X=58000, Rc=175000, cust="Castleport Traders", reg="customs-tariff order", rmonth="February", tdate="February 16", iday=18, use=["no_warranty", "no_tax", "draft"]),
-        dict(co="Mossgate Fabrications Co.", Y=3, CA=1920000, CL=940000, wA=41000, wS=63000, X=37000, Rc=110000, cust="Harrowfield Freight", reg="trade-sanctions order", rmonth="January", tdate="February 2", iday=5, use=["write_off", "no_tax", "draft"]),
-        dict(co="Pemberfield Alloys Co.", Y=4, CA=2720000, CL=1360000, wA=59000, wS=88000, X=52000, Rc=155000, cust="Greystoke Imports", reg="export-control amendment", rmonth="February", tdate="March 3", iday=22, use=["write_off", "no_warranty", "draft"]),
+        dict(co="Thornleigh Devices Co.", Y=2, CA=3180000, CL=1540000, wA=68000, wS=97000, X=58000, Rc=175000, cust="Castleport Traders", reg="export-quota order", rmonth="February", tdate="February 16", iday=18, use=["w_full", "write_off", "no_tax"]),
+        dict(co="Mossgate Fabrications Co.", Y=3, CA=1920000, CL=940000, wA=41000, wS=63000, X=37000, Rc=110000, cust="Harrowfield Freight", reg="trade-sanctions order", rmonth="January", tdate="February 2", iday=5, use=["write_off", "no_tax", "no_warranty"]),
+        dict(co="Pemberfield Alloys Co.", Y=4, CA=2720000, CL=1360000, wA=59000, wS=88000, X=52000, Rc=155000, cust="Greystoke Exports", reg="export-control amendment", rmonth="February", tdate="March 3", iday=22, use=["w_full", "no_warranty", "no_tax"]),
      ], "write_off"),
     ("far-subsequent-events-0017", A3, T_SUB, AN,
      ["ASC 855-10-25-1 (recognized subsequent events)", "ASC 855-10-25-3 and 855-10-55-2 (nonrecognized subsequent events)", "ASC 450-30-25-1 (gain contingencies not recognized before realization)"],

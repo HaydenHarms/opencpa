@@ -2,8 +2,8 @@ id: far-accounting-errors-0012
 type: mcq
 blueprint:
   section: FAR
-  area: Area III — Select Transactions
-  topic: Accounting changes and error corrections
+  area: Area I — Financial Reporting
+  topic: Balance sheet
   skill: Analysis
 review:
   status: draft
@@ -11,7 +11,8 @@ review:
   - ASC 310-10 and ASC 835-30 (interest on notes receivable accrues as earned)
   - ASC 321-10-35-1 (equity securities measured at fair value through net income)
   - ASC 606-10-55-79 to 55-80 (consignment arrangements)
-  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+  notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: Hartswell Logistics Co.'s draft December 31, Year 2, balance sheet reports total assets of $2,360,000.
   Before the statements are issued, its controller traces three balances to their support. On September
   1, Year 2, Hartswell accepted from a customer a $600,000, 9-month note bearing simple interest at 9%
@@ -68,9 +69,9 @@ variants:
     text: $2,027,000
     rationale: Correct. $1,980,000 + $12,000 interest receivable + $35,000 fair value increase.
   - id: D
-    text: $2,063,000
-    rationale: Accrues a full year of interest on the note. It was accepted on October 1, so only 3 months
-      of interest ($12,000) had accrued by December 31.
+    text: $2,039,000
+    rationale: Accrues the interest for the note's whole 6-month term. Only the 3 months through December
+      31 have been earned.
   answer: C
   explanation: 'Interest on the note accrues from October 1: $480,000 × 10% × 3/12 = $12,000 of interest
     receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
@@ -97,9 +98,8 @@ variants:
     text: $3,096,000
     rationale: Correct. $3,120,000 + $24,000 interest receivable − $48,000 fair value decrease.
   - id: C
-    text: $3,129,600
-    rationale: Accrues a full year of interest on the note. It was accepted on August 1, so only 5 months
-      of interest ($24,000) had accrued by December 31.
+    text: $3,120,000
+    rationale: Accepts the draft total, with no interest receivable and the shares at cost.
   - id: D
     text: $3,144,000
     rationale: Leaves the shares at their $420,000 cost. Equity securities with a readily determinable
@@ -117,30 +117,29 @@ variants:
     a year, with principal and interest due at maturity; the draft reports the note at $360,000 and no
     interest receivable. The draft carries Ellenbridge's holding of a listed company's common shares,
     a small stake that gives Ellenbridge no influence over the company, at their $180,000 cost; the shares'
-    quoted price at December 31 puts the holding at $207,000. And inventory includes, at their $34,000
+    quoted price at December 31 puts the holding at $211,000. And inventory includes, at their $34,000
     cost, goods Ellenbridge shipped in December to a retailer that sells them for Ellenbridge on consignment;
     the retailer had sold none of them by year-end. Ignore income taxes. What total assets should the
     corrected balance sheet report?
   choices:
   - id: A
-    text: $1,551,000
-    rationale: Also removes the $34,000 of goods held by the consignee. Goods out on consignment remain
-      the consignor's inventory until the consignee sells them, so they are correctly included.
+    text: $1,540,000
+    rationale: Accepts the draft total, with no interest receivable and the shares at cost.
   - id: B
-    text: $1,585,000
-    rationale: Correct. $1,540,000 + $18,000 interest receivable + $27,000 fair value increase.
+    text: $1,558,000
+    rationale: Leaves the shares at their $180,000 cost. Equity securities with a readily determinable
+      fair value are measured at fair value, here $211,000, with the change in net income.
   - id: C
-    text: $1,594,000
+    text: $1,589,000
+    rationale: Correct. $1,540,000 + $18,000 interest receivable + $31,000 fair value increase.
+  - id: D
+    text: $1,598,000
     rationale: Accrues the interest for the note's whole 9-month term. Only the 6 months through December
       31 have been earned.
-  - id: D
-    text: $1,603,000
-    rationale: Accrues a full year of interest on the note. It was accepted on July 1, so only 6 months
-      of interest ($18,000) had accrued by December 31.
-  answer: B
+  answer: C
   explanation: 'Interest on the note accrues from July 1: $360,000 × 10% × 6/12 = $18,000 of interest
     receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
     at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $180,000
-    to $207,000, a $27,000 gain. Goods on consignment remain the consignor''s inventory until the consignee
+    to $211,000, a $31,000 gain. Goods on consignment remain the consignor''s inventory until the consignee
     sells them (ASC 606-10-55-79 to 55-80), so the $34,000 is correctly included. Corrected total assets
-    = $1,540,000 + $18,000 + $27,000 = $1,585,000.'
+    = $1,540,000 + $18,000 + $31,000 = $1,589,000.'

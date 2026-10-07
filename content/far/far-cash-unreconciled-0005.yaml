@@ -10,8 +10,8 @@ review:
   references:
   - ASC 305-10 (cash)
   - Bank reconciliation practice (errors by the bank and by the depositor)
-  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
-    solved and every number and distractor computed in code.
+  notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: 'Internal audit is testing St Keverne Marine Co.''s October 31 cash. The bank statement shows $66,150,
   deposits in transit total $5,070, outstanding checks total $4,250, and the general ledger cash account
   shows $66,350; the bookkeeper''s reconciliation does not balance. The auditors find that the bank charged

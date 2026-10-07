@@ -8,133 +8,169 @@ blueprint:
 review:
   status: draft
   references:
-  - 'ASC 855-10-25-1 and 855-10-55-1 (recognized subsequent events: a customer''s bankruptcy from deterioration
-    before year-end)'
+  - 'ASC 855-10-25-1 (recognized subsequent events: better evidence of amounts arising from conditions
+    at year-end)'
   - ASC 855-10-25-3 (nonrecognized subsequent events)
-  - ASC 326-20-30 (expected credit losses)
-  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Marrowbrook Supply Co.'s draft Year 1 income before income taxes is $1,860,000. Its allowance for
-  credit losses at December 31, Year 1, includes $30,000 for the $220,000 owed by Hollins Retail, a customer
-  that had reported losses in each quarter of Year 1 and had paid its last three invoices of the year
-  more than 90 days late. On January 17, Year 2, Hollins Retail filed for bankruptcy, and Marrowbrook
-  now expects to collect $44,000 of the balance. On February 8, Year 2, Marrowbrook's board declared a
-  cash dividend of $90,000. The statements will be issued in March, Year 2, and Marrowbrook has not elected
-  the ASU 2025-05 practical expedient for current receivables. Ignore income taxes. What income before
-  income taxes should Marrowbrook report for Year 1?
+  - ASC 606-10-55-65 (sales-based royalties recognized as the licensee's sales occur)
+  - ASC 705-20-25 (vendor rebates reduce the cost of purchases)
+  notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
+stem: 'Marrowbrook Instruments Co.''s draft Year 1 income before income taxes is $1,860,000; the statements
+  will be issued on March 9, Year 2. The draft includes $128,000 of royalty revenue that Marrowbrook estimated
+  at year-end under a license that pays it 5% of a licensee''s sales of products made with Marrowbrook''s
+  technology. It also includes, as a reduction of cost of goods sold, a $36,000 volume rebate Marrowbrook
+  estimated it had earned on its Year 1 purchases from its main supplier; all of the goods bought from
+  that supplier in Year 1 were sold during the year. Before the statements are issued: on January 24,
+  the licensee''s annual royalty report showed Year 1 sales of $2,840,000 of the licensed products; on
+  January 29, the supplier''s final statement fixed the Year 1 rebate at $51,000, paid in February; and
+  on February 11, the licensee announced that it will stop selling the licensed products in April, Year
+  2, which Marrowbrook expects to reduce its Year 2 royalties by $95,000. Ignore income taxes. What income
+  before income taxes should Marrowbrook report for Year 1?'
 choices:
 - id: A
-  text: $1,624,000
-  rationale: Also deducts the $90,000 dividend declared in February. A dividend declared after year-end
-    is a Year 2 distribution, not a Year 1 expense; it is disclosed.
+  text: $1,794,000
+  rationale: Also deducts the $95,000 fall in expected Year 2 royalties. The licensee's decision came
+    after year-end and affects only royalties on its Year 2 sales, which Marrowbrook recognizes only as
+    those sales occur; it is a nonrecognized subsequent event.
 - id: B
-  text: $1,670,000
-  rationale: Writes off the whole $220,000 balance, ignoring the $44,000 Marrowbrook still expects to
-    collect from the bankruptcy estate.
+  text: $1,875,000
+  rationale: Keeps the $128,000 royalty estimate. The licensee's report shows what its Year 1 sales actually
+    were, a condition that existed at year-end, so Year 1 royalty revenue is adjusted to 5% × $2,840,000
+    = $142,000.
 - id: C
-  text: $1,684,000
-  rationale: Charges the full $176,000 expected shortfall to Year 1 income without counting the $30,000
-    already provided for this customer in the year-end allowance.
+  text: $1,889,000
+  rationale: Correct. $1,860,000 + $14,000 royalty true-up + $15,000 rebate true-up; the Year 2 royalty
+    decline isn't recognized.
 - id: D
-  text: $1,714,000
-  rationale: Correct. $1,860,000 − ($220,000 − $44,000 expected recovery − $30,000 already allowed).
-answer: D
-explanation: 'The bankruptcy resulted from financial difficulties that existed at December 31, so it is
-  evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected loss
-  on the balance = $220,000 − $44,000 = $176,000, of which $30,000 is already in the allowance, so Year
-  1 credit loss expense rises by $146,000. The dividend, declared after year-end, is a nonrecognized subsequent
-  event, disclosed but not reflected in Year 1 (ASC 855-10-25-3); a dividend isn''t an expense in any
-  case. Income before income taxes = $1,860,000 − $146,000 = $1,714,000.'
+  text: $1,925,000
+  rationale: Adds the whole $51,000 final rebate without removing the $36,000 already accrued, counting
+    part of the rebate twice.
+answer: C
+explanation: The royalty report and the rebate statement give better evidence of amounts that arose from
+  Year 1 activity, conditions that existed at December 31, so both are recognized subsequent events (ASC
+  855-10-25-1). A sales-based royalty is recognized as the licensee's sales occur (ASC 606-10-55-65),
+  so Year 1 royalty revenue is 5% × $2,840,000 = $142,000, a change of +$14,000 from the $128,000 estimate.
+  A vendor rebate reduces the cost of the purchases that earned it (ASC 705-20-25); the goods were all
+  sold, so the $51,000 − $36,000 = $15,000 increase reduces Year 1 cost of goods sold. The licensee's
+  decision to stop selling arose after year-end and affects only Year 2 royalties; it is a nonrecognized
+  subsequent event, disclosed if material (ASC 855-10-25-3). Income before income taxes = $1,860,000 +
+  $14,000 + $15,000 = $1,889,000.
 variants:
-- stem: Clearmont Industries Co.'s draft Year 2 income before income taxes is $2,340,000. Its allowance
-    for credit losses at December 31, Year 2, includes $45,000 for the $310,000 owed by Dalby Outfitters,
-    a customer that had reported losses in each quarter of Year 2 and had paid its last three invoices
-    of the year more than 90 days late. On January 24, Year 3, Dalby Outfitters filed for bankruptcy,
-    and Clearmont now expects to collect $93,000 of the balance. On February 12, Year 3, Clearmont's board
-    declared a cash dividend of $120,000. The statements will be issued in March, Year 3, and Clearmont
-    has not elected the ASU 2025-05 practical expedient for current receivables. Ignore income taxes.
-    What income before income taxes should Clearmont report for Year 2?
+- stem: 'Clearmont Optics Co.''s draft Year 2 income before income taxes is $2,340,000; the statements
+    will be issued on March 13, Year 3. The draft includes $137,000 of royalty revenue that Clearmont
+    estimated at year-end under a license that pays it 4% of a licensee''s sales of products made with
+    Clearmont''s technology. It also includes, as a reduction of cost of goods sold, a $42,000 volume
+    rebate Clearmont estimated it had earned on its Year 2 purchases from its main supplier; all of the
+    goods bought from that supplier in Year 2 were sold during the year. Before the statements are issued:
+    on January 20, the licensee''s annual royalty report showed Year 2 sales of $3,150,000 of the licensed
+    products; on January 27, the supplier''s final statement fixed the Year 2 rebate at $55,000, paid
+    in February; and on February 6, the licensee announced that it will stop selling the licensed products
+    in April, Year 3, which Clearmont expects to reduce its Year 3 royalties by $110,000. Ignore income
+    taxes. What income before income taxes should Clearmont report for Year 2?'
   choices:
   - id: A
-    text: $2,048,000
-    rationale: Also deducts the $120,000 dividend declared in February. A dividend declared after year-end
-      is a Year 3 distribution, not a Year 2 expense; it is disclosed.
+    text: $2,232,000
+    rationale: Also deducts the $110,000 fall in expected Year 3 royalties. The licensee's decision came
+      after year-end and affects only royalties on its Year 3 sales, which Clearmont recognizes only as
+      those sales occur; it is a nonrecognized subsequent event.
   - id: B
-    text: $2,123,000
-    rationale: Charges the full $217,000 expected shortfall to Year 2 income without counting the $45,000
-      already provided for this customer in the year-end allowance.
+    text: $2,329,000
+    rationale: Leaves the rebate at the $42,000 accrued. The supplier's statement fixes the rebate earned
+      on Year 2 purchases, so the extra $13,000 reduces Year 2 cost of goods sold.
   - id: C
-    text: $2,168,000
-    rationale: Correct. $2,340,000 − ($310,000 − $93,000 expected recovery − $45,000 already allowed).
+    text: $2,342,000
+    rationale: Correct. $2,340,000 − $11,000 royalty true-up + $13,000 rebate true-up; the Year 3 royalty
+      decline isn't recognized.
   - id: D
-    text: $2,340,000
-    rationale: Leaves the draft unchanged. The bankruptcy confirms losses the customer was already suffering
-      at year-end, so the allowance is increased for Year 2.
+    text: $2,479,000
+    rationale: Adds the whole $126,000 reported royalty without removing the $137,000 already accrued,
+      counting Year 2 royalties twice.
   answer: C
-  explanation: 'The bankruptcy resulted from financial difficulties that existed at December 31, so it
-    is evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected
-    loss on the balance = $310,000 − $93,000 = $217,000, of which $45,000 is already in the allowance,
-    so Year 2 credit loss expense rises by $172,000. The dividend, declared after year-end, is a nonrecognized
-    subsequent event, disclosed but not reflected in Year 2 (ASC 855-10-25-3); a dividend isn''t an expense
-    in any case. Income before income taxes = $2,340,000 − $172,000 = $2,168,000.'
-- stem: Fallowgate Products Co.'s draft Year 3 income before income taxes is $1,420,000. Its allowance
-    for credit losses at December 31, Year 3, includes $16,000 for the $160,000 owed by Penrose Hardware,
-    a customer that had reported losses in each quarter of Year 3 and had paid its last three invoices
-    of the year more than 90 days late. On January 9, Year 4, Penrose Hardware filed for bankruptcy, and
-    Fallowgate now expects to collect $36,000 of the balance. On February 19, Year 4, Fallowgate's board
-    declared a cash dividend of $60,000. The statements will be issued in March, Year 4, and Fallowgate
-    has not elected the ASU 2025-05 practical expedient for current receivables. Ignore income taxes.
-    What income before income taxes should Fallowgate report for Year 3?
+  explanation: The royalty report and the rebate statement give better evidence of amounts that arose
+    from Year 2 activity, conditions that existed at December 31, so both are recognized subsequent events
+    (ASC 855-10-25-1). A sales-based royalty is recognized as the licensee's sales occur (ASC 606-10-55-65),
+    so Year 2 royalty revenue is 4% × $3,150,000 = $126,000, a change of −$11,000 from the $137,000 estimate.
+    A vendor rebate reduces the cost of the purchases that earned it (ASC 705-20-25); the goods were all
+    sold, so the $55,000 − $42,000 = $13,000 increase reduces Year 2 cost of goods sold. The licensee's
+    decision to stop selling arose after year-end and affects only Year 3 royalties; it is a nonrecognized
+    subsequent event, disclosed if material (ASC 855-10-25-3). Income before income taxes = $2,340,000
+    − $11,000 + $13,000 = $2,342,000.
+- stem: 'Fallowgate Sensors Co.''s draft Year 3 income before income taxes is $1,420,000; the statements
+    will be issued on March 5, Year 4. The draft includes $104,000 of royalty revenue that Fallowgate
+    estimated at year-end under a license that pays it 6% of a licensee''s sales of products made with
+    Fallowgate''s technology. It also includes, as a reduction of cost of goods sold, a $24,000 volume
+    rebate Fallowgate estimated it had earned on its Year 3 purchases from its main supplier; all of the
+    goods bought from that supplier in Year 3 were sold during the year. Before the statements are issued:
+    on January 18, the licensee''s annual royalty report showed Year 3 sales of $1,880,000 of the licensed
+    products; on January 25, the supplier''s final statement fixed the Year 3 rebate at $33,000, paid
+    in February; and on February 14, the licensee announced that it will stop selling the licensed products
+    in April, Year 4, which Fallowgate expects to reduce its Year 4 royalties by $70,000. Ignore income
+    taxes. What income before income taxes should Fallowgate report for Year 3?'
   choices:
   - id: A
-    text: $1,276,000
-    rationale: Writes off the whole $160,000 balance, ignoring the $36,000 Fallowgate still expects to
-      collect from the bankruptcy estate.
+    text: $1,429,000
+    rationale: Keeps the $104,000 royalty estimate. The licensee's report shows what its Year 3 sales
+      actually were, a condition that existed at year-end, so Year 3 royalty revenue is adjusted to 6%
+      × $1,880,000 = $112,800.
   - id: B
-    text: $1,296,000
-    rationale: Charges the full $124,000 expected shortfall to Year 3 income without counting the $16,000
-      already provided for this customer in the year-end allowance.
+    text: $1,437,800
+    rationale: Correct. $1,420,000 + $8,800 royalty true-up + $9,000 rebate true-up; the Year 4 royalty
+      decline isn't recognized.
   - id: C
-    text: $1,312,000
-    rationale: Correct. $1,420,000 − ($160,000 − $36,000 expected recovery − $16,000 already allowed).
+    text: $1,461,800
+    rationale: Adds the whole $33,000 final rebate without removing the $24,000 already accrued, counting
+      part of the rebate twice.
   - id: D
-    text: $1,420,000
-    rationale: Leaves the draft unchanged. The bankruptcy confirms losses the customer was already suffering
-      at year-end, so the allowance is increased for Year 3.
-  answer: C
-  explanation: 'The bankruptcy resulted from financial difficulties that existed at December 31, so it
-    is evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected
-    loss on the balance = $160,000 − $36,000 = $124,000, of which $16,000 is already in the allowance,
-    so Year 3 credit loss expense rises by $108,000. The dividend, declared after year-end, is a nonrecognized
-    subsequent event, disclosed but not reflected in Year 3 (ASC 855-10-25-3); a dividend isn''t an expense
-    in any case. Income before income taxes = $1,420,000 − $108,000 = $1,312,000.'
-- stem: Berrowfield Co.'s draft Year 4 income before income taxes is $2,960,000. Its allowance for credit
-    losses at December 31, Year 4, includes $60,000 for the $380,000 owed by Gatley Stores, a customer
-    that had reported losses in each quarter of Year 4 and had paid its last three invoices of the year
-    more than 90 days late. On January 13, Year 5, Gatley Stores filed for bankruptcy, and Berrowfield
-    now expects to collect $114,000 of the balance. On February 4, Year 5, Berrowfield's board declared
-    a cash dividend of $150,000. The statements will be issued in March, Year 5, and Berrowfield has not
-    elected the ASU 2025-05 practical expedient for current receivables. Ignore income taxes. What income
-    before income taxes should Berrowfield report for Year 4?
+    text: $1,541,800
+    rationale: Adds the whole $112,800 reported royalty without removing the $104,000 already accrued,
+      counting Year 3 royalties twice.
+  answer: B
+  explanation: The royalty report and the rebate statement give better evidence of amounts that arose
+    from Year 3 activity, conditions that existed at December 31, so both are recognized subsequent events
+    (ASC 855-10-25-1). A sales-based royalty is recognized as the licensee's sales occur (ASC 606-10-55-65),
+    so Year 3 royalty revenue is 6% × $1,880,000 = $112,800, a change of +$8,800 from the $104,000 estimate.
+    A vendor rebate reduces the cost of the purchases that earned it (ASC 705-20-25); the goods were all
+    sold, so the $33,000 − $24,000 = $9,000 increase reduces Year 3 cost of goods sold. The licensee's
+    decision to stop selling arose after year-end and affects only Year 4 royalties; it is a nonrecognized
+    subsequent event, disclosed if material (ASC 855-10-25-3). Income before income taxes = $1,420,000
+    + $8,800 + $9,000 = $1,437,800.
+- stem: 'Berrowfield Controls Co.''s draft Year 4 income before income taxes is $2,960,000; the statements
+    will be issued on March 16, Year 5. The draft includes $160,000 of royalty revenue that Berrowfield
+    estimated at year-end under a license that pays it 4.5% of a licensee''s sales of products made with
+    Berrowfield''s technology. It also includes, as a reduction of cost of goods sold, a $46,000 volume
+    rebate Berrowfield estimated it had earned on its Year 4 purchases from its main supplier; all of
+    the goods bought from that supplier in Year 4 were sold during the year. Before the statements are
+    issued: on January 22, the licensee''s annual royalty report showed Year 4 sales of $4,120,000 of
+    the licensed products; on January 30, the supplier''s final statement fixed the Year 4 rebate at $90,000,
+    paid in February; and on February 9, the licensee announced that it will stop selling the licensed
+    products in April, Year 5, which Berrowfield expects to reduce its Year 5 royalties by $140,000. Ignore
+    income taxes. What income before income taxes should Berrowfield report for Year 4?'
   choices:
   - id: A
-    text: $2,604,000
-    rationale: Also deducts the $150,000 dividend declared in February. A dividend declared after year-end
-      is a Year 5 distribution, not a Year 4 expense; it is disclosed.
+    text: $2,889,400
+    rationale: Also deducts the $140,000 fall in expected Year 5 royalties. The licensee's decision came
+      after year-end and affects only royalties on its Year 5 sales, which Berrowfield recognizes only
+      as those sales occur; it is a nonrecognized subsequent event.
   - id: B
-    text: $2,640,000
-    rationale: Writes off the whole $380,000 balance, ignoring the $114,000 Berrowfield still expects
-      to collect from the bankruptcy estate.
+    text: $2,985,400
+    rationale: Leaves the rebate at the $46,000 accrued. The supplier's statement fixes the rebate earned
+      on Year 4 purchases, so the extra $44,000 reduces Year 4 cost of goods sold.
   - id: C
-    text: $2,754,000
-    rationale: Correct. $2,960,000 − ($380,000 − $114,000 expected recovery − $60,000 already allowed).
+    text: $3,004,000
+    rationale: Keeps the $160,000 royalty estimate. The licensee's report shows what its Year 4 sales
+      actually were, a condition that existed at year-end, so Year 4 royalty revenue is adjusted to 4.5%
+      × $4,120,000 = $185,400.
   - id: D
-    text: $2,960,000
-    rationale: Leaves the draft unchanged. The bankruptcy confirms losses the customer was already suffering
-      at year-end, so the allowance is increased for Year 4.
-  answer: C
-  explanation: 'The bankruptcy resulted from financial difficulties that existed at December 31, so it
-    is evidence about the year-end allowance and is recognized (ASC 855-10-55-1; ASC 326-20-30): expected
-    loss on the balance = $380,000 − $114,000 = $266,000, of which $60,000 is already in the allowance,
-    so Year 4 credit loss expense rises by $206,000. The dividend, declared after year-end, is a nonrecognized
-    subsequent event, disclosed but not reflected in Year 4 (ASC 855-10-25-3); a dividend isn''t an expense
-    in any case. Income before income taxes = $2,960,000 − $206,000 = $2,754,000.'
+    text: $3,029,400
+    rationale: Correct. $2,960,000 + $25,400 royalty true-up + $44,000 rebate true-up; the Year 5 royalty
+      decline isn't recognized.
+  answer: D
+  explanation: The royalty report and the rebate statement give better evidence of amounts that arose
+    from Year 4 activity, conditions that existed at December 31, so both are recognized subsequent events
+    (ASC 855-10-25-1). A sales-based royalty is recognized as the licensee's sales occur (ASC 606-10-55-65),
+    so Year 4 royalty revenue is 4.5% × $4,120,000 = $185,400, a change of +$25,400 from the $160,000
+    estimate. A vendor rebate reduces the cost of the purchases that earned it (ASC 705-20-25); the goods
+    were all sold, so the $90,000 − $46,000 = $44,000 increase reduces Year 4 cost of goods sold. The
+    licensee's decision to stop selling arose after year-end and affects only Year 5 royalties; it is
+    a nonrecognized subsequent event, disclosed if material (ASC 855-10-25-3). Income before income taxes
+    = $2,960,000 + $25,400 + $44,000 = $3,029,400.

@@ -2,8 +2,8 @@ id: far-accounting-errors-0010
 type: mcq
 blueprint:
   section: FAR
-  area: Area III — Select Transactions
-  topic: Accounting changes and error corrections
+  area: Area I — Financial Reporting
+  topic: Income statement
   skill: Analysis
 review:
   status: draft
@@ -11,7 +11,8 @@ review:
   - ASC 606-10-55-22 to 55-29 (sales with a right of return)
   - ASC 360-10-30-1 (cost of property includes costs to bring it to its intended use)
   - ASC 606-10-45-2 (contract liabilities)
-  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+  notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: Westerham Devices Co.'s draft Year 2 income statement reports net income of $640,000. Before the
   statements are issued, the controller reviews three entries in the supporting records. In December,
   Westerham sold goods for $180,000 under a policy that lets customers return them within 60 days for

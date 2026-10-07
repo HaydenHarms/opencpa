@@ -16,9 +16,8 @@ stem: 'On January 1, Year 1, Inkberrow Retail Co. leases retail space for 5 year
   as an operating lease. Rent, due each December 31, is $70,000 in Year 1 and falls each year after that:
   $62,000 in Year 2, $54,000 in Year 3, $46,000 in Year 4 and $38,000 in Year 5. At commencement, the
   landlord paid Inkberrow $20,000 in cash as a leasehold improvement allowance. Inkberrow also reimburses
-  the landlord each year for its pro-rata share of the property taxes actually assessed on the building,
-  a variable payment that isn''t fixed or tied to an index; the reimbursement for Year 1 is $9,000. What
-  total lease cost should Inkberrow recognize for Year 1?'
+  the landlord each year for its pro-rata share of the property taxes actually assessed on the building;
+  the reimbursement for Year 1 is $9,000. What total lease cost should Inkberrow recognize for Year 1?'
 choices:
 - id: A
   text: $50,000
@@ -40,7 +39,7 @@ choices:
 answer: B
 explanation: 'For an operating lease, the fixed payments net of lease incentives received are recognized
   straight-line over the lease term (ASC 842-20-25-6(a)), unless another systematic basis better represents
-  the pattern in which the lessee uses the space. Inkberrow uses the space evenly, so a falling rent schedule
+  the pattern in which the lessee uses the space; nothing suggests one does, and a falling rent schedule
   doesn''t change the straight-line pattern: ($270,000 total payments − $20,000 incentive) ÷ 5 = $50,000.
   The property tax reimbursement doesn''t depend on an index or a rate, so it is excluded from the lease
   payments and recognized as incurred (ASC 842-20-25-6(b)): $9,000. Total lease cost = $50,000 + $9,000
@@ -50,9 +49,8 @@ variants:
     as an operating lease. Rent, due each December 31, is $90,000 in Year 1 and falls each year after
     that: $80,000 in Year 2, $70,000 in Year 3, $60,000 in Year 4 and $50,000 in Year 5. At commencement,
     the landlord paid Juniper $25,000 in cash as a leasehold improvement allowance. Juniper also reimburses
-    the landlord each year for its pro-rata share of the property taxes actually assessed on the building,
-    a variable payment that isn''t fixed or tied to an index; the reimbursement for Year 1 is $12,000.
-    What total lease cost should Juniper recognize for Year 1?'
+    the landlord each year for its pro-rata share of the property taxes actually assessed on the building;
+    the reimbursement for Year 1 is $12,000. What total lease cost should Juniper recognize for Year 1?'
   choices:
   - id: A
     text: $57,000
@@ -74,7 +72,7 @@ variants:
   answer: C
   explanation: 'For an operating lease, the fixed payments net of lease incentives received are recognized
     straight-line over the lease term (ASC 842-20-25-6(a)), unless another systematic basis better represents
-    the pattern in which the lessee uses the space. Juniper uses the space evenly, so a falling rent schedule
+    the pattern in which the lessee uses the space; nothing suggests one does, and a falling rent schedule
     doesn''t change the straight-line pattern: ($350,000 total payments − $25,000 incentive) ÷ 5 = $65,000.
     The property tax reimbursement doesn''t depend on an index or a rate, so it is excluded from the lease
     payments and recognized as incurred (ASC 842-20-25-6(b)): $12,000. Total lease cost = $65,000 + $12,000
@@ -83,9 +81,8 @@ variants:
     as an operating lease. Rent, due each December 31, is $55,000 in Year 1 and falls each year after
     that: $49,000 in Year 2, $43,000 in Year 3, $37,000 in Year 4 and $31,000 in Year 5. At commencement,
     the landlord paid Kelmarsh $15,000 in cash as a leasehold improvement allowance. Kelmarsh also reimburses
-    the landlord each year for its pro-rata share of the property taxes actually assessed on the building,
-    a variable payment that isn''t fixed or tied to an index; the reimbursement for Year 1 is $7,000.
-    What total lease cost should Kelmarsh recognize for Year 1?'
+    the landlord each year for its pro-rata share of the property taxes actually assessed on the building;
+    the reimbursement for Year 1 is $7,000. What total lease cost should Kelmarsh recognize for Year 1?'
   choices:
   - id: A
     text: $35,000
@@ -107,18 +104,18 @@ variants:
   answer: C
   explanation: 'For an operating lease, the fixed payments net of lease incentives received are recognized
     straight-line over the lease term (ASC 842-20-25-6(a)), unless another systematic basis better represents
-    the pattern in which the lessee uses the space. Kelmarsh uses the space evenly, so a falling rent
-    schedule doesn''t change the straight-line pattern: ($215,000 total payments − $15,000 incentive)
-    ÷ 5 = $40,000. The property tax reimbursement doesn''t depend on an index or a rate, so it is excluded
-    from the lease payments and recognized as incurred (ASC 842-20-25-6(b)): $7,000. Total lease cost
-    = $40,000 + $7,000 = $47,000.'
+    the pattern in which the lessee uses the space; nothing suggests one does, and a falling rent schedule
+    doesn''t change the straight-line pattern: ($215,000 total payments − $15,000 incentive) ÷ 5 = $40,000.
+    The property tax reimbursement doesn''t depend on an index or a rate, so it is excluded from the lease
+    payments and recognized as incurred (ASC 842-20-25-6(b)): $7,000. Total lease cost = $40,000 + $7,000
+    = $47,000.'
 - stem: 'On January 1, Year 1, Lillington Retail Co. leases retail space for 5 years, which it classifies
     as an operating lease. Rent, due each December 31, is $110,000 in Year 1 and falls each year after
     that: $98,000 in Year 2, $86,000 in Year 3, $74,000 in Year 4 and $62,000 in Year 5. At commencement,
     the landlord paid Lillington $30,000 in cash as a leasehold improvement allowance. Lillington also
     reimburses the landlord each year for its pro-rata share of the property taxes actually assessed on
-    the building, a variable payment that isn''t fixed or tied to an index; the reimbursement for Year
-    1 is $15,000. What total lease cost should Lillington recognize for Year 1?'
+    the building; the reimbursement for Year 1 is $15,000. What total lease cost should Lillington recognize
+    for Year 1?'
   choices:
   - id: A
     text: $95,000
@@ -139,8 +136,8 @@ variants:
   answer: A
   explanation: 'For an operating lease, the fixed payments net of lease incentives received are recognized
     straight-line over the lease term (ASC 842-20-25-6(a)), unless another systematic basis better represents
-    the pattern in which the lessee uses the space. Lillington uses the space evenly, so a falling rent
-    schedule doesn''t change the straight-line pattern: ($430,000 total payments − $30,000 incentive)
-    ÷ 5 = $80,000. The property tax reimbursement doesn''t depend on an index or a rate, so it is excluded
-    from the lease payments and recognized as incurred (ASC 842-20-25-6(b)): $15,000. Total lease cost
-    = $80,000 + $15,000 = $95,000.'
+    the pattern in which the lessee uses the space; nothing suggests one does, and a falling rent schedule
+    doesn''t change the straight-line pattern: ($430,000 total payments − $30,000 incentive) ÷ 5 = $80,000.
+    The property tax reimbursement doesn''t depend on an index or a rate, so it is excluded from the lease
+    payments and recognized as incurred (ASC 842-20-25-6(b)): $15,000. Total lease cost = $80,000 + $15,000
+    = $95,000.'

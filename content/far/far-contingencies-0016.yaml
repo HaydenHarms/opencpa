@@ -8,44 +8,51 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 330-10-35-17 to 35-18 (losses on firm purchase commitments)
+  - ASC 330-10-35-17 to 35-18 (losses on firm purchase commitments, measured like inventory losses, as
+    amended by ASU 2015-11)
   - ASC 606-10-32-25 (consideration payable to a customer)
   - ASC 606-10-32-10 (refund liabilities)
-  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+  notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: Harmondsgate Textiles Co. has a noncancelable, unhedged commitment to buy 40,000 pounds of cotton
   yarn next year at a fixed $4.80 a pound; at year-end, the market price for the same delivery is $4.05
-  a pound. Harmondsgate also sold 30,000 packs of towels during the year with a $2 mail-in cash rebate,
-  claimable through March of next year; from experience with similar offers, Harmondsgate expects 35%
-  of buyers to claim it, and it has paid $9,600 of claims so far. What total liability should Harmondsgate
+  a pound. Harmondsgate measures inventory at the lower of FIFO cost and net realizable value; the cotton
+  yarn's net realizable value is its $4.05 market price, and no firm sales contracts cover the goods Harmondsgate
+  will make from it. Harmondsgate also sold 30,000 packs of towels during the year with a $2 mail-in cash
+  rebate, claimable through March of next year; from experience with similar offers, Harmondsgate expects
+  35% of buyers to claim it, and it has paid $9,600 of claims so far. What total liability should Harmondsgate
   report at year-end for the purchase commitment and the rebate offer?
 choices:
 - id: A
+  text: $30,000
+  rationale: Accrues nothing for rebates not yet claimed. Rebates expected on sales already made are consideration
+    payable to customers and reduce revenue, with a refund liability for the amount still to be paid.
+- id: B
   text: $41,400
   rationale: Correct. Commitment loss $30,000 + rebate refund liability $11,400.
-- id: B
+- id: C
   text: $51,000
   rationale: Doesn't reduce the expected rebates for the $9,600 already paid; those claims are settled.
-- id: C
+- id: D
   text: $80,400
   rationale: Assumes every buyer will claim the rebate. The refund liability is based on the 35% of buyers
     Harmondsgate expects to claim it.
-- id: D
-  text: $203,400
-  rationale: Treats the whole $192,000 contract price as the liability, rather than only the $30,000 by
-    which the contract price exceeds the market price.
-answer: A
-explanation: 'A loss on a noncancelable, unhedged purchase commitment is recognized when the market price
-  falls below the contract price (ASC 330-10-35-17 to 35-18): 40,000 × ($4.80 − $4.05) = $30,000. Cash
-  rebates are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the rebates
-  Harmondsgate expects to pay on sales already made are a refund liability (ASC 606-10-32-10): 30,000
-  × 35% × $2 = $21,000 expected, less $9,600 paid = $11,400. Total liability = $30,000 + $11,400 = $41,400.'
+answer: B
+explanation: 'A loss on a noncancelable, unhedged purchase commitment is measured the same way as an inventory
+  loss, here against net realizable value for a FIFO entity, and is recognized unless firm sales contracts
+  protect it (ASC 330-10-35-17 to 35-18): 40,000 × ($4.80 − $4.05) = $30,000. Cash rebates are consideration
+  payable to a customer, which reduces revenue (ASC 606-10-32-25); the rebates Harmondsgate expects to
+  pay on sales already made are a refund liability (ASC 606-10-32-10): 30,000 × 35% × $2 = $21,000 expected,
+  less $9,600 paid = $11,400. Total liability = $30,000 + $11,400 = $41,400.'
 variants:
 - stem: Westrill Fabrics Co. has a noncancelable, unhedged commitment to buy 60,000 yards of synthetic
     fiber next year at a fixed $3.40 a yard; at year-end, the market price for the same delivery is $2.95
-    a yard. Westrill also sold 24,000 sets of bed linens during the year with a $5 mail-in cash rebate,
-    claimable through April of next year; from experience with similar offers, Westrill expects 30% of
-    buyers to claim it, and it has paid $14,000 of claims so far. What total liability should Westrill
-    report at year-end for the purchase commitment and the rebate offer?
+    a yard. Westrill measures inventory at the lower of FIFO cost and net realizable value; the synthetic
+    fiber's net realizable value is its $2.95 market price, and no firm sales contracts cover the goods
+    Westrill will make from it. Westrill also sold 24,000 sets of bed linens during the year with a $5
+    mail-in cash rebate, claimable through April of next year; from experience with similar offers, Westrill
+    expects 30% of buyers to claim it, and it has paid $14,000 of claims so far. What total liability
+    should Westrill report at year-end for the purchase commitment and the rebate offer?
   choices:
   - id: A
     text: $22,000
@@ -64,18 +71,20 @@ variants:
     rationale: Assumes every buyer will claim the rebate. The refund liability is based on the 30% of
       buyers Westrill expects to claim it.
   answer: C
-  explanation: 'A loss on a noncancelable, unhedged purchase commitment is recognized when the market
-    price falls below the contract price (ASC 330-10-35-17 to 35-18): 60,000 × ($3.40 − $2.95) = $27,000.
-    Cash rebates are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the
-    rebates Westrill expects to pay on sales already made are a refund liability (ASC 606-10-32-10): 24,000
-    × 30% × $5 = $36,000 expected, less $14,000 paid = $22,000. Total liability = $27,000 + $22,000 =
-    $49,000.'
+  explanation: 'A loss on a noncancelable, unhedged purchase commitment is measured the same way as an
+    inventory loss, here against net realizable value for a FIFO entity, and is recognized unless firm
+    sales contracts protect it (ASC 330-10-35-17 to 35-18): 60,000 × ($3.40 − $2.95) = $27,000. Cash rebates
+    are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the rebates Westrill
+    expects to pay on sales already made are a refund liability (ASC 606-10-32-10): 24,000 × 30% × $5
+    = $36,000 expected, less $14,000 paid = $22,000. Total liability = $27,000 + $22,000 = $49,000.'
 - stem: Allonby Weaving Co. has a noncancelable, unhedged commitment to buy 28,000 pounds of wool roving
     next year at a fixed $6.40 a pound; at year-end, the market price for the same delivery is $5.60 a
-    pound. Allonby also sold 18,000 wool blankets during the year with a $4 mail-in cash rebate, claimable
-    through February of next year; from experience with similar offers, Allonby expects 40% of buyers
-    to claim it, and it has paid $11,000 of claims so far. What total liability should Allonby report
-    at year-end for the purchase commitment and the rebate offer?
+    pound. Allonby measures inventory at the lower of FIFO cost and net realizable value; the wool roving's
+    net realizable value is its $5.60 market price, and no firm sales contracts cover the goods Allonby
+    will make from it. Allonby also sold 18,000 wool blankets during the year with a $4 mail-in cash rebate,
+    claimable through February of next year; from experience with similar offers, Allonby expects 40%
+    of buyers to claim it, and it has paid $11,000 of claims so far. What total liability should Allonby
+    report at year-end for the purchase commitment and the rebate offer?
   choices:
   - id: A
     text: $22,400
@@ -89,22 +98,24 @@ variants:
     text: $51,200
     rationale: Doesn't reduce the expected rebates for the $11,000 already paid; those claims are settled.
   - id: D
-    text: $197,000
-    rationale: Treats the whole $179,200 contract price as the liability, rather than only the $22,400
-      by which the contract price exceeds the market price.
+    text: $83,400
+    rationale: Assumes every buyer will claim the rebate. The refund liability is based on the 40% of
+      buyers Allonby expects to claim it.
   answer: B
-  explanation: 'A loss on a noncancelable, unhedged purchase commitment is recognized when the market
-    price falls below the contract price (ASC 330-10-35-17 to 35-18): 28,000 × ($6.40 − $5.60) = $22,400.
-    Cash rebates are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the
-    rebates Allonby expects to pay on sales already made are a refund liability (ASC 606-10-32-10): 18,000
-    × 40% × $4 = $28,800 expected, less $11,000 paid = $17,800. Total liability = $22,400 + $17,800 =
-    $40,200.'
+  explanation: 'A loss on a noncancelable, unhedged purchase commitment is measured the same way as an
+    inventory loss, here against net realizable value for a FIFO entity, and is recognized unless firm
+    sales contracts protect it (ASC 330-10-35-17 to 35-18): 28,000 × ($6.40 − $5.60) = $22,400. Cash rebates
+    are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the rebates Allonby
+    expects to pay on sales already made are a refund liability (ASC 606-10-32-10): 18,000 × 40% × $4
+    = $28,800 expected, less $11,000 paid = $17,800. Total liability = $22,400 + $17,800 = $40,200.'
 - stem: Pennybridge Mills Co. has a noncancelable, unhedged commitment to buy 52,000 spools of dyed thread
     next year at a fixed $2.95 a spool; at year-end, the market price for the same delivery is $2.50 a
-    spool. Pennybridge also sold 36,000 tablecloths during the year with a $3 mail-in cash rebate, claimable
-    through May of next year; from experience with similar offers, Pennybridge expects 25% of buyers to
-    claim it, and it has paid $8,500 of claims so far. What total liability should Pennybridge report
-    at year-end for the purchase commitment and the rebate offer?
+    spool. Pennybridge measures inventory at the lower of FIFO cost and net realizable value; the dyed
+    thread's net realizable value is its $2.50 market price, and no firm sales contracts cover the goods
+    Pennybridge will make from it. Pennybridge also sold 36,000 tablecloths during the year with a $3
+    mail-in cash rebate, claimable through May of next year; from experience with similar offers, Pennybridge
+    expects 25% of buyers to claim it, and it has paid $8,500 of claims so far. What total liability should
+    Pennybridge report at year-end for the purchase commitment and the rebate offer?
   choices:
   - id: A
     text: $18,500
@@ -122,9 +133,9 @@ variants:
     text: $50,400
     rationale: Doesn't reduce the expected rebates for the $8,500 already paid; those claims are settled.
   answer: C
-  explanation: 'A loss on a noncancelable, unhedged purchase commitment is recognized when the market
-    price falls below the contract price (ASC 330-10-35-17 to 35-18): 52,000 × ($2.95 − $2.50) = $23,400.
-    Cash rebates are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the
-    rebates Pennybridge expects to pay on sales already made are a refund liability (ASC 606-10-32-10):
-    36,000 × 25% × $3 = $27,000 expected, less $8,500 paid = $18,500. Total liability = $23,400 + $18,500
-    = $41,900.'
+  explanation: 'A loss on a noncancelable, unhedged purchase commitment is measured the same way as an
+    inventory loss, here against net realizable value for a FIFO entity, and is recognized unless firm
+    sales contracts protect it (ASC 330-10-35-17 to 35-18): 52,000 × ($2.95 − $2.50) = $23,400. Cash rebates
+    are consideration payable to a customer, which reduces revenue (ASC 606-10-32-25); the rebates Pennybridge
+    expects to pay on sales already made are a refund liability (ASC 606-10-32-10): 36,000 × 25% × $3
+    = $27,000 expected, less $8,500 paid = $18,500. Total liability = $23,400 + $18,500 = $41,900.'

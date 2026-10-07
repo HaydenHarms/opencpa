@@ -11,7 +11,8 @@ review:
   - ASC 855-10-25-1 (recognized subsequent events)
   - ASC 855-10-25-3 and 855-10-55-2 (nonrecognized subsequent events)
   - ASC 450-30-25-1 (gain contingencies not recognized before realization)
-  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
+  notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: 'Longstone Materials Co.''s draft December 31, Year 1, balance sheet reports total assets of $8,460,000.
   In December, a hailstorm damaged Longstone''s delivery vans; Longstone wrote them down and recorded
   a $96,000 receivable for the insurance recovery it expected. The statements will be issued on March
@@ -19,7 +20,8 @@ stem: 'Longstone Materials Co.''s draft December 31, Year 1, balance sheet repor
   at the time of the storm and paid $58,000 in full settlement of the claim; in February, a court awarded
   Longstone $150,000 in its suit against a former supplier, and the supplier has appealed; and also in
   February, a broad decline in equity markets cut $120,000 from the fair value of Longstone''s portfolio
-  of listed securities. What total assets should Longstone report at December 31, Year 1?'
+  of listed securities. Ignore income taxes. What total assets should Longstone report at December 31,
+  Year 1?'
 choices:
 - id: A
   text: $8,302,000
@@ -51,7 +53,8 @@ variants:
     at the time of the storm and paid $49,000 in full settlement of the claim; in February, a court awarded
     Castlebrook $120,000 in its suit against a former supplier, and the supplier has appealed; and also
     in February, a broad decline in equity markets cut $88,000 from the fair value of Castlebrook''s portfolio
-    of listed securities. What total assets should Castlebrook report at December 31, Year 2?'
+    of listed securities. Ignore income taxes. What total assets should Castlebrook report at December
+    31, Year 2?'
   choices:
   - id: A
     text: $6,127,000
@@ -84,7 +87,8 @@ variants:
     at the time of the storm and paid $87,000 in full settlement of the claim; in February, a court awarded
     Ferrybridge $210,000 in its suit against a former supplier, and the supplier has appealed; and also
     in February, a broad decline in equity markets cut $96,000 from the fair value of Ferrybridge''s portfolio
-    of listed securities. What total assets should Ferrybridge report at December 31, Year 3?'
+    of listed securities. Ignore income taxes. What total assets should Ferrybridge report at December
+    31, Year 3?'
   choices:
   - id: A
     text: $10,048,000
@@ -117,7 +121,7 @@ variants:
     time of the storm and paid $38,000 in full settlement of the claim; in February, a court awarded Oldfen
     $95,000 in its suit against a former supplier, and the supplier has appealed; and also in February,
     a broad decline in equity markets cut $67,000 from the fair value of Oldfen''s portfolio of listed
-    securities. What total assets should Oldfen report at December 31, Year 4?'
+    securities. Ignore income taxes. What total assets should Oldfen report at December 31, Year 4?'
   choices:
   - id: A
     text: $4,830,000

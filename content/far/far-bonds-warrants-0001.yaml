@@ -1,4 +1,4 @@
-id: far-bonds-premium-0002
+id: far-bonds-warrants-0001
 type: mcq
 blueprint:
   section: FAR
@@ -10,35 +10,35 @@ review:
   references:
   - 'ASC 470-20-25-2 (debt issued with detachable stock purchase warrants: allocation by relative fair
     value)'
-  - ASC 835-30 (interest method)
-  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
-    solved and every number and distractor computed in code.
+  - ASC 835-30-35-2 (effective interest method)
+  notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: On April 1, Year 1, St Germans Energy Corp. issues $1,000,000 face amount of ten-year, 6% bonds,
   paying interest each September 30 and March 31, together with detachable stock warrants, for total cash
   proceeds of $922,879. Immediately after issuance, the bonds trade without the warrants at a total fair
-  value of $882,000, and the warrants trade at a total fair value of $60,000. Measured on the share of
-  the proceeds that belongs to the bonds, the bonds' effective interest rate is 8%, compounded semiannually.
-  St Germans applies the effective interest method, accrues interest at year-end and rounds each computation
-  to the nearest dollar. How much bond interest expense should St Germans recognize for Year 1?
+  value of $882,000, and the warrants trade at a total fair value of $60,000. The bonds' effective interest
+  rate, based on their initial carrying amount, is 8%, compounded semiannually. St Germans applies the
+  effective interest method, accrues interest at year-end and rounds each computation to the nearest dollar.
+  How much bond interest expense should St Germans recognize for Year 1?
 choices:
 - id: A
   text: $34,564
   rationale: Stops at the September 30 payment. Interest from then to December 31 (3 months) also belongs
     in Year 1 and is accrued at year-end.
 - id: B
-  text: $45,000
-  rationale: Uses only the stated interest, $30,000 for the first period and 3/6 of $30,000 accrued at
-    year-end, with no discount amortization. The effective interest method applies the effective rate
-    to the carrying amount.
-- id: C
   text: $51,937
   rationale: Correct. $864,097 × 8%/2 = $34,564; then $868,661 × 8%/2 × 3/6 = $17,373.
+- id: C
+  text: $53,026
+  rationale: Carries the bonds at their own $882,000 fair value. Proceeds are allocated in proportion
+    to the two fair values, which gives the bonds $864,097, because the $922,879 received is less than
+    the $942,000 the bonds and warrants are worth together.
 - id: D
   text: $55,511
   rationale: 'Uses the full $922,879 of proceeds as the bonds'' carrying amount. Part of the proceeds
     belongs to the detachable warrants: the bonds get $922,879 × $882,000/$942,000 = $864,097, and the
     rest is credited to additional paid-in capital.'
-answer: C
+answer: B
 explanation: 'Detachable warrants are accounted for separately, and with both fair values known the proceeds
   are allocated in proportion to them (ASC 470-20-25-2): bonds = $922,879 × $882,000/($882,000 + $60,000)
   = $864,097, with the remaining $58,782 credited to additional paid-in capital. The 8% effective rate
@@ -50,10 +50,10 @@ variants:
 - stem: On May 1, Year 1, Gunnislake Power Corp. issues $800,000 face amount of ten-year, 5% bonds, paying
     interest each October 31 and April 30, together with detachable stock warrants, for total cash proceeds
     of $730,420. Immediately after issuance, the bonds trade without the warrants at a total fair value
-    of $700,000, and the warrants trade at a total fair value of $45,000. Measured on the share of the
-    proceeds that belongs to the bonds, the bonds' effective interest rate is 7%, compounded semiannually.
-    Gunnislake applies the effective interest method, accrues interest at year-end and rounds each computation
-    to the nearest dollar. How much bond interest expense should Gunnislake recognize for Year 1?
+    of $700,000, and the warrants trade at a total fair value of $45,000. The bonds' effective interest
+    rate, based on their initial carrying amount, is 7%, compounded semiannually. Gunnislake applies the
+    effective interest method, accrues interest at year-end and rounds each computation to the nearest
+    dollar. How much bond interest expense should Gunnislake recognize for Year 1?
   choices:
   - id: A
     text: $24,021
@@ -83,11 +83,10 @@ variants:
 - stem: On February 1, Year 1, St Cleer Utilities Corp. issues $1,200,000 face amount of ten-year, 4%
     bonds, paying interest each July 31 and January 31, together with detachable stock warrants, for total
     cash proceeds of $1,090,091. Immediately after issuance, the bonds trade without the warrants at a
-    total fair value of $1,042,000, and the warrants trade at a total fair value of $70,000. Measured
-    on the share of the proceeds that belongs to the bonds, the bonds' effective interest rate is 6%,
-    compounded semiannually. St Cleer applies the effective interest method, accrues interest at year-end
-    and rounds each computation to the nearest dollar. How much bond interest expense should St Cleer
-    recognize for Year 1?
+    total fair value of $1,042,000, and the warrants trade at a total fair value of $70,000. The bonds'
+    effective interest rate, based on their initial carrying amount, is 6%, compounded semiannually. St
+    Cleer applies the effective interest method, accrues interest at year-end and rounds each computation
+    to the nearest dollar. How much bond interest expense should St Cleer recognize for Year 1?
   choices:
   - id: A
     text: $30,644
@@ -117,10 +116,10 @@ variants:
 - stem: On June 1, Year 1, Darite Energy Corp. issues $600,000 face amount of ten-year, 7% bonds, paying
     interest each November 30 and May 31, together with detachable stock warrants, for total cash proceeds
     of $551,331. Immediately after issuance, the bonds trade without the warrants at a total fair value
-    of $533,000, and the warrants trade at a total fair value of $30,000. Measured on the share of the
-    proceeds that belongs to the bonds, the bonds' effective interest rate is 9%, compounded semiannually.
-    Darite applies the effective interest method, accrues interest at year-end and rounds each computation
-    to the nearest dollar. How much bond interest expense should Darite recognize for Year 1?
+    of $533,000, and the warrants trade at a total fair value of $30,000. The bonds' effective interest
+    rate, based on their initial carrying amount, is 9%, compounded semiannually. Darite applies the effective
+    interest method, accrues interest at year-end and rounds each computation to the nearest dollar. How
+    much bond interest expense should Darite recognize for Year 1?
   choices:
   - id: A
     text: $24,500

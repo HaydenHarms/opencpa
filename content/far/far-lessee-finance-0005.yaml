@@ -16,10 +16,10 @@ review:
 stem: On January 1, Year 1, Elmsworth Fabrication Co. leases a CNC machining center for 5 years and classifies
   the lease as a finance lease. Payments of $78,000 are due each December 31. The lease lets Elmsworth
   buy the machine at the end of Year 5 for $40,000; Elmsworth expects it to be worth about $150,000 then,
-  and the machine has a total useful life of 10 years with no residual value. Elmsworth paid $15,000 of
-  initial direct costs at commencement. The rate implicit in the lease isn't readily determinable, and
-  Elmsworth's incremental borrowing rate is 6%; present value factors at 6% for 5 periods are 4.2124 for
-  an ordinary annuity and 0.7473 for a single sum. Elmsworth amortizes right-of-use assets straight-line.
+  and the machine, new at commencement, has a useful life of 10 years with no residual value. Elmsworth
+  paid $15,000 of initial direct costs at commencement. The rate implicit in the lease isn't readily determinable,
+  and Elmsworth's incremental borrowing rate is 6%; present value factors at 6% for 5 periods are 4.2124
+  for an ordinary annuity and 0.7473 for a single sum. Elmsworth amortizes right-of-use assets straight-line.
   Rounding each computation to the nearest dollar, what interest expense and what amortization expense
   should Elmsworth recognize on the lease for Year 2?
 choices:
@@ -54,12 +54,12 @@ variants:
 - stem: On January 1, Year 1, Framlingham Textiles Co. leases a weaving machine for 4 years and classifies
     the lease as a finance lease. Payments of $62,000 are due each December 31. The lease lets Framlingham
     buy the machine at the end of Year 4 for $30,000; Framlingham expects it to be worth about $110,000
-    then, and the machine has a total useful life of 8 years with no residual value. Framlingham paid
-    $9,000 of initial direct costs at commencement. The rate implicit in the lease isn't readily determinable,
-    and Framlingham's incremental borrowing rate is 5%; present value factors at 5% for 4 periods are
-    3.5460 for an ordinary annuity and 0.8227 for a single sum. Framlingham amortizes right-of-use assets
-    straight-line. Rounding each computation to the nearest dollar, what interest expense and what amortization
-    expense should Framlingham recognize on the lease for Year 2?
+    then, and the machine, new at commencement, has a useful life of 8 years with no residual value. Framlingham
+    paid $9,000 of initial direct costs at commencement. The rate implicit in the lease isn't readily
+    determinable, and Framlingham's incremental borrowing rate is 5%; present value factors at 5% for
+    4 periods are 3.5460 for an ordinary annuity and 0.8227 for a single sum. Framlingham amortizes right-of-use
+    assets straight-line. Rounding each computation to the nearest dollar, what interest expense and what
+    amortization expense should Framlingham recognize on the lease for Year 2?
   choices:
   - id: A
     text: $9,738 interest; $30,567 amortization
@@ -89,12 +89,12 @@ variants:
 - stem: On January 1, Year 1, Gillingham Robotics Co. leases a robotic welding cell for 6 years and classifies
     the lease as a finance lease. Payments of $97,000 are due each December 31. The lease lets Gillingham
     buy the cell at the end of Year 6 for $45,000; Gillingham expects it to be worth about $180,000 then,
-    and the cell has a total useful life of 12 years with no residual value. Gillingham paid $20,000 of
-    initial direct costs at commencement. The rate implicit in the lease isn't readily determinable, and
-    Gillingham's incremental borrowing rate is 7%; present value factors at 7% for 6 periods are 4.7665
-    for an ordinary annuity and 0.6663 for a single sum. Gillingham amortizes right-of-use assets straight-line.
-    Rounding each computation to the nearest dollar, what interest expense and what amortization expense
-    should Gillingham recognize on the lease for Year 2?
+    and the cell, new at commencement, has a useful life of 12 years with no residual value. Gillingham
+    paid $20,000 of initial direct costs at commencement. The rate implicit in the lease isn't readily
+    determinable, and Gillingham's incremental borrowing rate is 7%; present value factors at 7% for 6
+    periods are 4.7665 for an ordinary annuity and 0.6663 for a single sum. Gillingham amortizes right-of-use
+    assets straight-line. Rounding each computation to the nearest dollar, what interest expense and what
+    amortization expense should Gillingham recognize on the lease for Year 2?
   choices:
   - id: A
     text: $27,840 interest; $80,392 amortization
@@ -125,12 +125,12 @@ variants:
 - stem: On January 1, Year 1, Harpenden Logistics Co. leases an automated sorting system for 5 years and
     classifies the lease as a finance lease. Payments of $88,000 are due each December 31. The lease lets
     Harpenden buy the system at the end of Year 5 for $50,000; Harpenden expects it to be worth about
-    $170,000 then, and the system has a total useful life of 10 years with no residual value. Harpenden
-    paid $16,000 of initial direct costs at commencement. The rate implicit in the lease isn't readily
-    determinable, and Harpenden's incremental borrowing rate is 6.5%; present value factors at 6.5% for
-    5 periods are 4.1557 for an ordinary annuity and 0.7299 for a single sum. Harpenden amortizes right-of-use
-    assets straight-line. Rounding each computation to the nearest dollar, what interest expense and what
-    amortization expense should Harpenden recognize on the lease for Year 2?
+    $170,000 then, and the system, new at commencement, has a useful life of 10 years with no residual
+    value. Harpenden paid $16,000 of initial direct costs at commencement. The rate implicit in the lease
+    isn't readily determinable, and Harpenden's incremental borrowing rate is 6.5%; present value factors
+    at 6.5% for 5 periods are 4.1557 for an ordinary annuity and 0.7299 for a single sum. Harpenden amortizes
+    right-of-use assets straight-line. Rounding each computation to the nearest dollar, what interest
+    expense and what amortization expense should Harpenden recognize on the lease for Year 2?
   choices:
   - id: A
     text: $19,596 interest; $76,340 amortization

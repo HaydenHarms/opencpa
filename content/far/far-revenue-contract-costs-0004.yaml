@@ -17,11 +17,12 @@ stem: On January 1, Year 1, Trebarwith Systems Co. signed a three-year contract 
   logistics, with services beginning March 1, Year 1, and running 36 months; renewal isn't expected. On
   signing, Trebarwith paid its salesperson a $54,000 commission on the contract. Before services began,
   it spent $72,000 on technician labor configuring the customer's shipment-tracking workflows on Trebarwith's
-  platform; the contract's fee schedule includes a setup charge. Trebarwith also bought $36,000 of forklifts
-  that it will use on this customer's account and move to other jobs when the contract ends, and $7,200
-  of packing materials that will be used up in providing the services. Trebarwith amortizes any capitalized
-  contract cost straight-line by month over the period of the services it relates to. What amortization
-  of contract cost assets should Trebarwith recognize for Year 1?
+  platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced
+  to recover it. Trebarwith also bought $36,000 of forklifts that it will use on this customer's account
+  and move to other jobs when the contract ends, and $7,200 of packing materials that will be used up
+  in providing the services. Trebarwith amortizes any capitalized contract cost straight-line by month
+  over the period of the services it relates to. What amortization of contract cost assets should Trebarwith
+  recognize for Year 1?
 choices:
 - id: A
   text: $15,000
@@ -54,11 +55,12 @@ variants:
     logistics, with services beginning April 1, Year 1, and running 36 months; renewal isn't expected.
     On signing, Delabole paid its salesperson a $43,200 commission on the contract. Before services began,
     it spent $57,600 on technician labor configuring the customer's shipment-tracking workflows on Delabole's
-    platform; the contract's fee schedule includes a setup charge. Delabole also bought $28,800 of handling
-    carts that it will use on this customer's account and move to other jobs when the contract ends, and
-    $10,800 of shipping supplies that will be used up in providing the services. Delabole amortizes any
-    capitalized contract cost straight-line by month over the period of the services it relates to. What
-    amortization of contract cost assets should Delabole recognize for Year 1?
+    platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced
+    to recover it. Delabole also bought $28,800 of handling carts that it will use on this customer's
+    account and move to other jobs when the contract ends, and $10,800 of shipping supplies that will
+    be used up in providing the services. Delabole amortizes any capitalized contract cost straight-line
+    by month over the period of the services it relates to. What amortization of contract cost assets
+    should Delabole recognize for Year 1?
   choices:
   - id: A
     text: $10,800
@@ -89,11 +91,12 @@ variants:
     logistics, with services beginning May 1, Year 1, and running 36 months; renewal isn't expected. On
     signing, Zennor paid its salesperson a $64,800 commission on the contract. Before services began,
     it spent $86,400 on technician labor configuring the customer's shipment-tracking workflows on Zennor's
-    platform; the contract's fee schedule includes a setup charge. Zennor also bought $43,200 of pallet
-    jacks that it will use on this customer's account and move to other jobs when the contract ends, and
-    $14,400 of crating materials that will be used up in providing the services. Zennor amortizes any
-    capitalized contract cost straight-line by month over the period of the services it relates to. What
-    amortization of contract cost assets should Zennor recognize for Year 1?
+    platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced
+    to recover it. Zennor also bought $46,800 of pallet jacks that it will use on this customer's account
+    and move to other jobs when the contract ends, and $14,400 of crating materials that will be used
+    up in providing the services. Zennor amortizes any capitalized contract cost straight-line by month
+    over the period of the services it relates to. What amortization of contract cost assets should Zennor
+    recognize for Year 1?
   choices:
   - id: A
     text: $33,600
@@ -108,8 +111,8 @@ variants:
       began. A contract cost asset is amortized as the services it relates to are transferred (ASC 340-40-35-1),
       so amortization starts with the services: 8 months.'
   - id: D
-    text: $43,200
-    rationale: Adds the $43,200 of pallet jacks to the contract cost asset and amortizes it over the contract.
+    text: $44,000
+    rationale: Adds the $46,800 of pallet jacks to the contract cost asset and amortizes it over the contract.
       Equipment Zennor will redeploy after the contract is property, plant and equipment within ASC 360,
       outside ASC 340-40 (ASC 340-40-15-3), and is depreciated, not amortized as a contract cost.
   answer: A
@@ -124,11 +127,12 @@ variants:
     logistics, with services beginning July 1, Year 1, and running 36 months; renewal isn't expected.
     On signing, Marazion paid its salesperson a $72,000 commission on the contract. Before services began,
     it spent $108,000 on technician labor configuring the customer's shipment-tracking workflows on Marazion's
-    platform; the contract's fee schedule includes a setup charge. Marazion also bought $54,000 of dock
-    lifts that it will use on this customer's account and move to other jobs when the contract ends, and
-    $18,000 of packaging supplies that will be used up in providing the services. Marazion amortizes any
-    capitalized contract cost straight-line by month over the period of the services it relates to. What
-    amortization of contract cost assets should Marazion recognize for Year 1?
+    platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced
+    to recover it. Marazion also bought $54,000 of dock lifts that it will use on this customer's account
+    and move to other jobs when the contract ends, and $16,200 of packaging supplies that will be used
+    up in providing the services. Marazion amortizes any capitalized contract cost straight-line by month
+    over the period of the services it relates to. What amortization of contract cost assets should Marazion
+    recognize for Year 1?
   choices:
   - id: A
     text: $12,000

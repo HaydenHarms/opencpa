@@ -30,15 +30,15 @@ choices:
   text: $26,600
   rationale: Correct. (6% × $250,000) + ($32,000 ÷ 4) + (2% × $180,000).
 - id: C
+  text: $29,600
+  rationale: Estimates the patent royalty from one quarter of the projected sales, 6% × $300,000 = $18,000,
+    instead of the $250,000 of sales that actually occurred. The royalty is recognized as the sales occur,
+    at the actual amount.
+- id: D
   text: $50,600
   rationale: 'Recognizes the whole $32,000 brand fee when the license is granted. The brand license gives
     the franchisee access to Kestrel''s brand as Kestrel keeps supporting it over the year, so the fixed
     fee is recognized over the year: $8,000 for the quarter.'
-- id: D
-  text: $83,600
-  rationale: Recognizes the royalty on the full $1,200,000 of sales Kestrel projected for the year, 6%
-    × $1,200,000 = $72,000, when the license is granted. A sales-based royalty for a license of intellectual
-    property is recognized only as the underlying sales occur (ASC 606-10-55-65).
 answer: B
 explanation: 'A sales- or usage-based royalty for a license of intellectual property is recognized only
   when the later of the sale occurring and the performance obligation being satisfied takes place (ASC
@@ -86,7 +86,7 @@ variants:
 - stem: On January 1, Year 1, Ivymoor Robotics Co. granted two licenses. The first lets a manufacturer
     use Ivymoor's patented sensor-calibration process, mature technology that Ivymoor doesn't plan to
     update, for an 8% royalty on the manufacturer's net sales of products using the process, with no fixed
-    fee and no minimum; at signing, Ivymoor projected those sales at about $880,000 for Year 1. The second
+    fee and no minimum; at signing, Ivymoor projected those sales at about $920,000 for Year 1. The second
     gives a franchisee the use of Ivymoor's brand name for Year 1, with marketing support Ivymoor provides
     evenly throughout the year, for a fixed $40,000 paid at signing plus a 2.5% royalty on the franchisee's
     sales. In the first quarter of Year 1, the manufacturer's sales using the process were $180,000 and
@@ -97,8 +97,8 @@ variants:
     text: $29,900
     rationale: Correct. (8% × $180,000) + ($40,000 ÷ 4) + (2.5% × $220,000).
   - id: B
-    text: $33,100
-    rationale: Estimates the patent royalty from one quarter of the projected sales, 8% × $220,000 = $17,600,
+    text: $33,900
+    rationale: Estimates the patent royalty from one quarter of the projected sales, 8% × $230,000 = $18,400,
       instead of the $180,000 of sales that actually occurred. The royalty is recognized as the sales
       occur, at the actual amount.
   - id: C
@@ -107,9 +107,9 @@ variants:
       gives the franchisee access to Ivymoor''s brand as Ivymoor keeps supporting it over the year, so
       the fixed fee is recognized over the year: $10,000 for the quarter.'
   - id: D
-    text: $85,900
-    rationale: Recognizes the royalty on the full $880,000 of sales Ivymoor projected for the year, 8%
-      × $880,000 = $70,400, when the license is granted. A sales-based royalty for a license of intellectual
+    text: $89,100
+    rationale: Recognizes the royalty on the full $920,000 of sales Ivymoor projected for the year, 8%
+      × $920,000 = $73,600, when the license is granted. A sales-based royalty for a license of intellectual
       property is recognized only as the underlying sales occur (ASC 606-10-55-65).
   answer: A
   explanation: 'A sales- or usage-based royalty for a license of intellectual property is recognized only

@@ -12,14 +12,13 @@ review:
   - ASC 820-10-35-17 to 35-18 (nonperformance risk)
   notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
     Reworked after the 2026-10-05 review gate.
-stem: Trewince Insurance Co. must measure the fair value of a $500,000 obligation it owes a counterparty,
-  payable in a lump sum in 5 years, assuming the obligation is transferred to a market participant of
-  comparable credit standing. The risk-free rate for a 5-year term is 4%. Because of a recent downgrade,
-  market participants would require a 3% premium for Trewince's own nonperformance risk as of the measurement
-  date; before the downgrade, that premium was only 1%. A prospective buyer of Trewince with a stronger
-  credit profile said it would need only a 1.5% premium for the same obligation, but Trewince itself hasn't
-  transferred the obligation to that buyer. Using present value factors rounded to four decimal places,
-  what is the fair value of Trewince's obligation?
+stem: Trewince Insurance Co. must measure, on the transfer basis ASC 820 requires, the fair value of a
+  $500,000 obligation it owes a counterparty, payable in a lump sum in 5 years. The risk-free rate for
+  a 5-year term is 4%. After a recent credit downgrade, market participants would require a 3% premium
+  for Trewince's own nonperformance risk as of the measurement date; before the downgrade, that premium
+  was only 1%. A higher-rated insurer that might assume the obligation said it would price it at only
+  a 1.5% premium. Using present value factors rounded to four decimal places, what is the fair value of
+  Trewince's obligation?
 choices:
 - id: A
   text: $356,500
@@ -27,9 +26,9 @@ choices:
     risk).
 - id: B
   text: $382,550
-  rationale: Uses the 1.5% premium a stronger prospective buyer of Trewince said it would need ($500,000
-    × 0.7651). Fair value reflects Trewince's own nonperformance risk as the obligor, not a third party's
-    stronger credit standing, because Trewince hasn't transferred the obligation.
+  rationale: Uses the 1.5% premium the higher-rated insurer quoted ($500,000 × 0.7651). Fair value reflects
+    Trewince's own nonperformance risk, assumed to be the same after a transfer, not a stronger transferee's
+    credit standing.
 - id: C
   text: $391,750
   rationale: Uses the 1% premium that applied before Trewince's downgrade ($500,000 × 0.7835). Nonperformance
@@ -47,57 +46,56 @@ explanation: Fair value of a liability assumes transfer to a market participant 
   pre-downgrade spread. The discount rate is 4% risk-free + 3% for Trewince's own current nonperformance
   risk = 7%. Fair value = $500,000 × 0.7130 = $356,500.
 variants:
-- stem: Ventongimps Assurance Co. must measure the fair value of a $650,000 obligation it owes a counterparty,
-    payable in a lump sum in 4 years, assuming the obligation is transferred to a market participant of
-    comparable credit standing. The risk-free rate for a 4-year term is 3.5%. Because of a recent downgrade,
-    market participants would require a 2.5% premium for Ventongimps's own nonperformance risk as of the
-    measurement date; before the downgrade, that premium was only 0.5%. A prospective buyer of Ventongimps
-    with a stronger credit profile said it would need only a 1% premium for the same obligation, but Ventongimps
-    itself hasn't transferred the obligation to that buyer. Using present value factors rounded to four
-    decimal places, what is the fair value of Ventongimps's obligation?
+- stem: Ventongimps Assurance Co. must measure, on the transfer basis ASC 820 requires, the fair value
+    of a $650,000 obligation it owes a counterparty, payable in a lump sum in 4 years. The risk-free rate
+    for a 4-year term is 3.5%. After a recent credit upgrade, market participants would require a 2.5%
+    premium for Ventongimps's own nonperformance risk as of the measurement date; before the upgrade,
+    that premium was 4%. A higher-rated insurer that might assume the obligation said it would price it
+    at only a 1% premium. Using present value factors rounded to four decimal places, what is the fair
+    value of Ventongimps's obligation?
   choices:
   - id: A
+    text: $486,720
+    rationale: Uses the 4% premium that applied before Ventongimps's upgrade ($650,000 × 0.7488). Nonperformance
+      risk is measured at Ventongimps's credit standing as of the measurement date, not an earlier one.
+  - id: B
     text: $514,865
     rationale: Correct. $650,000 discounted 4 years at 6% (3.5% risk-free + 2.5% for Ventongimps's own
       nonperformance risk).
-  - id: B
-    text: $545,090
-    rationale: Uses the 1% premium a stronger prospective buyer of Ventongimps said it would need ($650,000
-      × 0.8386). Fair value reflects Ventongimps's own nonperformance risk as the obligor, not a third
-      party's stronger credit standing, because Ventongimps hasn't transferred the obligation.
   - id: C
-    text: $555,620
-    rationale: Uses the 0.5% premium that applied before Ventongimps's downgrade ($650,000 × 0.8548).
-      Nonperformance risk is measured at Ventongimps's credit standing as of the measurement date, not
-      an earlier one.
+    text: $545,090
+    rationale: Uses the 1% premium the higher-rated insurer quoted ($650,000 × 0.8386). Fair value reflects
+      Ventongimps's own nonperformance risk, assumed to be the same after a transfer, not a stronger transferee's
+      credit standing.
   - id: D
     text: $566,410
     rationale: Discounts at the 3.5% risk-free rate alone ($650,000 × 0.8714), leaving out Ventongimps's
       own nonperformance risk. Fair value of a liability includes the effect of the reporting entity's
       own credit standing (ASC 820-10-35-17).
-  answer: A
+  answer: B
   explanation: Fair value of a liability assumes transfer to a market participant of comparable credit
     standing (ASC 820-10-35-16) and includes the effect of the reporting entity's own nonperformance risk,
     including its own credit risk, measured as of the measurement date and assumed to be the same before
     and after the transfer (ASC 820-10-35-17 to 35-18) — not a stronger counterparty's credit standing
     and not a stale, pre-downgrade spread. The discount rate is 3.5% risk-free + 2.5% for Ventongimps's
     own current nonperformance risk = 6%. Fair value = $650,000 × 0.7921 = $514,865.
-- stem: Wendron Mutual Co. must measure the fair value of a $380,000 obligation it owes a counterparty,
-    payable in a lump sum in 6 years, assuming the obligation is transferred to a market participant of
-    comparable credit standing. The risk-free rate for a 6-year term is 4.5%. Because of a recent downgrade,
-    market participants would require a 3.5% premium for Wendron's own nonperformance risk as of the measurement
-    date; before the downgrade, that premium was only 1.5%. A prospective buyer of Wendron with a stronger
-    credit profile said it would need only a 2% premium for the same obligation, but Wendron itself hasn't
-    transferred the obligation to that buyer. Using present value factors rounded to four decimal places,
-    what is the fair value of Wendron's obligation?
+- stem: Wendron Mutual Co. must measure, on the transfer basis ASC 820 requires, the fair value of a $380,000
+    obligation it owes a counterparty, payable in a lump sum in 6 years. The risk-free rate for a 6-year
+    term is 4.5%. After a recent credit downgrade, market participants would require a 3.5% premium for
+    Wendron's own nonperformance risk as of the measurement date; before the downgrade, that premium was
+    only 1.5%. A higher-rated insurer that might assume the obligation said it would price it at only
+    a 2% premium. Using present value factors rounded to four decimal places, what is the fair value of
+    Wendron's obligation?
   choices:
   - id: A
-    text: $221,730
-    rationale: Discounts the obligation for 7 years instead of 6 ($380,000 × 0.5835), one year too many.
-  - id: B
     text: $239,476
     rationale: Correct. $380,000 discounted 6 years at 8% (4.5% risk-free + 3.5% for Wendron's own nonperformance
       risk).
+  - id: B
+    text: $260,414
+    rationale: Uses the 2% premium the higher-rated insurer quoted ($380,000 × 0.6853). Fair value reflects
+      Wendron's own nonperformance risk, assumed to be the same after a transfer, not a stronger transferee's
+      credit standing.
   - id: C
     text: $267,900
     rationale: Uses the 1.5% premium that applied before Wendron's downgrade ($380,000 × 0.7050). Nonperformance
@@ -107,38 +105,39 @@ variants:
     rationale: Discounts at the 4.5% risk-free rate alone ($380,000 × 0.7679), leaving out Wendron's own
       nonperformance risk. Fair value of a liability includes the effect of the reporting entity's own
       credit standing (ASC 820-10-35-17).
-  answer: B
+  answer: A
   explanation: Fair value of a liability assumes transfer to a market participant of comparable credit
     standing (ASC 820-10-35-16) and includes the effect of the reporting entity's own nonperformance risk,
     including its own credit risk, measured as of the measurement date and assumed to be the same before
     and after the transfer (ASC 820-10-35-17 to 35-18) — not a stronger counterparty's credit standing
     and not a stale, pre-downgrade spread. The discount rate is 4.5% risk-free + 3.5% for Wendron's own
     current nonperformance risk = 8%. Fair value = $380,000 × 0.6302 = $239,476.
-- stem: Yelverton Guaranty Co. must measure the fair value of a $720,000 obligation it owes a counterparty,
-    payable in a lump sum in 3 years, assuming the obligation is transferred to a market participant of
-    comparable credit standing. The risk-free rate for a 3-year term is 3%. Because of a recent downgrade,
-    market participants would require a 2% premium for Yelverton's own nonperformance risk as of the measurement
-    date; before the downgrade, that premium was only 1%. A prospective buyer of Yelverton with a stronger
-    credit profile said it would need only a 0.5% premium for the same obligation, but Yelverton itself
-    hasn't transferred the obligation to that buyer. Using present value factors rounded to four decimal
-    places, what is the fair value of Yelverton's obligation?
+- stem: Yelverton Guaranty Co. must measure, on the transfer basis ASC 820 requires, the fair value of
+    a $720,000 obligation it owes a counterparty, payable in a lump sum in 3 years. The risk-free rate
+    for a 3-year term is 3%. After a recent credit upgrade, market participants would require a 2% premium
+    for Yelverton's own nonperformance risk as of the measurement date; before the upgrade, that premium
+    was 3%. A higher-rated insurer that might assume the obligation said it would price it at only a 0.5%
+    premium. Using present value factors rounded to four decimal places, what is the fair value of Yelverton's
+    obligation?
   choices:
   - id: A
-    text: $592,344
-    rationale: Discounts the obligation for 4 years instead of 3 ($720,000 × 0.8227), one year too many.
+    text: $604,512
+    rationale: Uses the 3% premium that applied before Yelverton's upgrade ($720,000 × 0.8396). Nonperformance
+      risk is measured at Yelverton's credit standing as of the measurement date, not an earlier one.
   - id: B
     text: $621,936
     rationale: Correct. $720,000 discounted 3 years at 5% (3% risk-free + 2% for Yelverton's own nonperformance
       risk).
   - id: C
-    text: $640,080
-    rationale: Uses the 1% premium that applied before Yelverton's downgrade ($720,000 × 0.8890). Nonperformance
-      risk is measured at Yelverton's credit standing as of the measurement date, not an earlier one.
-  - id: D
     text: $649,368
-    rationale: Uses the 0.5% premium a stronger prospective buyer of Yelverton said it would need ($720,000
-      × 0.9019). Fair value reflects Yelverton's own nonperformance risk as the obligor, not a third party's
-      stronger credit standing, because Yelverton hasn't transferred the obligation.
+    rationale: Uses the 0.5% premium the higher-rated insurer quoted ($720,000 × 0.9019). Fair value reflects
+      Yelverton's own nonperformance risk, assumed to be the same after a transfer, not a stronger transferee's
+      credit standing.
+  - id: D
+    text: $658,872
+    rationale: Discounts at the 3% risk-free rate alone ($720,000 × 0.9151), leaving out Yelverton's own
+      nonperformance risk. Fair value of a liability includes the effect of the reporting entity's own
+      credit standing (ASC 820-10-35-17).
   answer: B
   explanation: Fair value of a liability assumes transfer to a market participant of comparable credit
     standing (ASC 820-10-35-16) and includes the effect of the reporting entity's own nonperformance risk,

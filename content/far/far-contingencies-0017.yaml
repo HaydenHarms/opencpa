@@ -10,133 +10,144 @@ review:
   references:
   - ASC 450-20-25-2 (accrual of probable, estimable losses, including incurred-but-not-reported claims
     of a self-insured entity)
-  - SEC SAB Topic 5Y and ASC 835-30 (discounting when the amount and timing of payments are fixed)
-  notes: Batch 17. Written from scratch; answers solved and every number and distractor computed in code.
-stem: Cranmoor Devices Co. settled a product-liability suit at year-end, agreeing to pay $120,000 within
-  30 days and $90,000 one year later; because the amounts and dates are fixed, Cranmoor's policy is to
-  discount such payments, and it uses 6%. Cranmoor is also self-insured for injuries to its warehouse
-  workers. Its actuary estimates that settling injuries that occurred during the year will cost $38,000
-  for claims already filed and unpaid and $26,000 for injuries that have occurred but haven't been reported
-  yet, and expects injuries next year to cost $70,000. What total liability should Cranmoor report at
-  year-end for the settlement and the injuries?
+  - 'SEC SAB Topic 5Y (ASC 450-20-S99-1): discounting a liability whose amount and timing are fixed or
+    reliably determinable'
+  notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
+stem: Cranmoor Devices Co., an SEC registrant, settled a product-liability suit at year-end, agreeing
+  to pay $120,000 within 30 days, $60,000 one year later and $50,000 two years later. Because the amounts
+  and dates are fixed, Cranmoor discounts the two later installments, using 6%; present value factors
+  at 6% are 0.9434 for one year and 0.8900 for two years. Cranmoor is also self-insured for injuries to
+  its warehouse workers. Its actuary estimates that settling injuries that occurred during the year will
+  cost $38,000 for claims already filed and unpaid and $26,000 for injuries that have occurred but haven't
+  been reported yet, and expects injuries next year to cost $70,000. What total liability should Cranmoor
+  report at year-end for the settlement and the injuries?
 choices:
 - id: A
-  text: $268,906
-  rationale: Correct. Settlement $120,000 + $84,906 present value + injuries $38,000 reported and $26,000
-    not yet reported.
+  text: $259,104
+  rationale: Accrues only the $38,000 for injuries already reported. The $26,000 for injuries that occurred
+    during the year but haven't been reported is also a loss incurred by year-end and is accrued.
 - id: B
-  text: $274,000
-  rationale: Adds the $90,000 due in a year at its face amount. Cranmoor's policy is to discount fixed,
-    scheduled settlement payments, so it is carried at present value, $84,906.
+  text: $285,104
+  rationale: Correct. Settlement $120,000 + $101,104 ($60,000 × 0.9434 + $50,000 × 0.8900) + injuries
+    $38,000 reported and $26,000 not yet reported.
 - id: C
-  text: $279,400
-  rationale: Compounds the deferred payment forward at 6% instead of discounting it back to present value.
+  text: $287,774
+  rationale: Discounts both later installments for one year ($110,000 × 0.9434). The second is due in
+    two years, so it is discounted with the two-year factor, 0.8900.
 - id: D
-  text: $338,906
+  text: $355,104
   rationale: Also accrues the $70,000 the actuary expects next year's injuries to cost. No liability exists
     for injuries that haven't occurred, whatever the self-insurance arrangement.
-answer: A
-explanation: 'The settlement is a fixed obligation; under Cranmoor''s discounting policy, which GAAP permits
-  when the amount and timing of payments are fixed or reliably determinable (SEC SAB Topic 5Y; ASC 835-30),
-  it is measured at $120,000 + $90,000 ÷ 1.06 = $120,000 + $84,906 = $204,906. For self-insured risks,
-  losses from injuries that occurred by year-end, both reported and incurred but not reported, are accrued
-  when probable and estimable (ASC 450-20-25-2): $38,000 + $26,000 = $64,000. Injuries that haven''t happened
-  create no liability, so next year''s $70,000 is not accrued. Total liability = $204,906 + $64,000 =
-  $268,906.'
+answer: B
+explanation: 'The settlement is a fixed obligation. When the amount and timing of payments are fixed or
+  reliably determinable, an SEC registrant may discount the liability (SAB Topic 5Y, ASC 450-20-S99-1),
+  and Cranmoor does: the $120,000 due within 30 days isn''t discounted, and each later installment is
+  discounted for its own term: $60,000 × 0.9434 + $50,000 × 0.8900 = $101,104, so the settlement liability
+  is $120,000 + $101,104 = $221,104. For self-insured risks, losses from injuries that occurred by year-end,
+  both reported and incurred but not reported, are accrued when probable and estimable (ASC 450-20-25-2):
+  $38,000 + $26,000 = $64,000. Injuries that haven''t happened create no liability, so next year''s $70,000
+  is not accrued. Total liability = $221,104 + $64,000 = $285,104.'
 variants:
-- stem: Bellingfield Products Co. settled a product-liability suit at year-end, agreeing to pay $160,000
-    within 30 days and $130,000 one year later; because the amounts and dates are fixed, Bellingfield's
-    policy is to discount such payments, and it uses 8%. Bellingfield is also self-insured for injuries
+- stem: Bellingfield Products Co., an SEC registrant, settled a product-liability suit at year-end, agreeing
+    to pay $160,000 within 30 days, $80,000 one year later and $70,000 two years later. Because the amounts
+    and dates are fixed, Bellingfield discounts the two later installments, using 8%; present value factors
+    at 8% are 0.9259 for one year and 0.8573 for two years. Bellingfield is also self-insured for injuries
     to its delivery drivers. Its actuary estimates that settling injuries that occurred during the year
     will cost $52,000 for claims already filed and unpaid and $31,000 for injuries that have occurred
     but haven't been reported yet, and expects injuries next year to cost $95,000. What total liability
     should Bellingfield report at year-end for the settlement and the injuries?
   choices:
   - id: A
-    text: $203,370
-    rationale: Leaves out the $160,000 due within 30 days; it is unpaid at year-end and part of the settlement
-      liability.
+    text: $377,083
+    rationale: Correct. Settlement $160,000 + $134,083 ($80,000 × 0.9259 + $70,000 × 0.8573) + injuries
+      $52,000 reported and $31,000 not yet reported.
   - id: B
-    text: $332,370
-    rationale: Accrues only the $52,000 for injuries already reported. The $31,000 for injuries that occurred
-      during the year but haven't been reported is also a loss incurred by year-end and is accrued.
+    text: $381,885
+    rationale: Discounts both later installments for one year ($150,000 × 0.9259). The second is due in
+      two years, so it is discounted with the two-year factor, 0.8573.
   - id: C
-    text: $363,370
-    rationale: Correct. Settlement $160,000 + $120,370 present value + injuries $52,000 reported and $31,000
-      not yet reported.
+    text: $393,000
+    rationale: Adds the two later installments at their face amounts, $150,000. Bellingfield discounts
+      the deferred payments, so they are carried at present value, $134,083.
   - id: D
-    text: $373,000
-    rationale: Adds the $130,000 due in a year at its face amount. Bellingfield's policy is to discount
-      fixed, scheduled settlement payments, so it is carried at present value, $120,370.
-  answer: C
-  explanation: 'The settlement is a fixed obligation; under Bellingfield''s discounting policy, which
-    GAAP permits when the amount and timing of payments are fixed or reliably determinable (SEC SAB Topic
-    5Y; ASC 835-30), it is measured at $160,000 + $130,000 ÷ 1.08 = $160,000 + $120,370 = $280,370. For
-    self-insured risks, losses from injuries that occurred by year-end, both reported and incurred but
-    not reported, are accrued when probable and estimable (ASC 450-20-25-2): $52,000 + $31,000 = $83,000.
-    Injuries that haven''t happened create no liability, so next year''s $95,000 is not accrued. Total
-    liability = $280,370 + $83,000 = $363,370.'
-- stem: Oaktree Instruments Co. settled a product-liability suit at year-end, agreeing to pay $95,000
-    within 30 days and $70,000 one year later; because the amounts and dates are fixed, Oaktree's policy
-    is to discount such payments, and it uses 5%. Oaktree is also self-insured for injuries to its assembly
-    workers. Its actuary estimates that settling injuries that occurred during the year will cost $27,000
-    for claims already filed and unpaid and $18,000 for injuries that have occurred but haven't been reported
-    yet, and expects injuries next year to cost $50,000. What total liability should Oaktree report at
-    year-end for the settlement and the injuries?
+    text: $472,083
+    rationale: Also accrues the $95,000 the actuary expects next year's injuries to cost. No liability
+      exists for injuries that haven't occurred, whatever the self-insurance arrangement.
+  answer: A
+  explanation: 'The settlement is a fixed obligation. When the amount and timing of payments are fixed
+    or reliably determinable, an SEC registrant may discount the liability (SAB Topic 5Y, ASC 450-20-S99-1),
+    and Bellingfield does: the $160,000 due within 30 days isn''t discounted, and each later installment
+    is discounted for its own term: $80,000 × 0.9259 + $70,000 × 0.8573 = $134,083, so the settlement
+    liability is $160,000 + $134,083 = $294,083. For self-insured risks, losses from injuries that occurred
+    by year-end, both reported and incurred but not reported, are accrued when probable and estimable
+    (ASC 450-20-25-2): $52,000 + $31,000 = $83,000. Injuries that haven''t happened create no liability,
+    so next year''s $95,000 is not accrued. Total liability = $294,083 + $83,000 = $377,083.'
+- stem: Oaktree Instruments Co., an SEC registrant, settled a product-liability suit at year-end, agreeing
+    to pay $95,000 within 30 days, $40,000 one year later and $45,000 two years later. Because the amounts
+    and dates are fixed, Oaktree discounts the two later installments, using 5%; present value factors
+    at 5% are 0.9524 for one year and 0.9070 for two years. Oaktree is also self-insured for injuries
+    to its assembly workers. Its actuary estimates that settling injuries that occurred during the year
+    will cost $27,000 for claims already filed and unpaid and $18,000 for injuries that have occurred
+    but haven't been reported yet, and expects injuries next year to cost $50,000. What total liability
+    should Oaktree report at year-end for the settlement and the injuries?
   choices:
   - id: A
-    text: $188,667
+    text: $200,911
     rationale: Accrues only the $27,000 for injuries already reported. The $18,000 for injuries that occurred
       during the year but haven't been reported is also a loss incurred by year-end and is accrued.
   - id: B
-    text: $206,667
-    rationale: Correct. Settlement $95,000 + $66,667 present value + injuries $27,000 reported and $18,000
-      not yet reported.
+    text: $218,911
+    rationale: Correct. Settlement $95,000 + $78,911 ($40,000 × 0.9524 + $45,000 × 0.9070) + injuries
+      $27,000 reported and $18,000 not yet reported.
   - id: C
-    text: $213,500
-    rationale: Compounds the deferred payment forward at 5% instead of discounting it back to present
-      value.
+    text: $225,000
+    rationale: Adds the two later installments at their face amounts, $85,000. Oaktree discounts the deferred
+      payments, so they are carried at present value, $78,911.
   - id: D
-    text: $256,667
+    text: $268,911
     rationale: Also accrues the $50,000 the actuary expects next year's injuries to cost. No liability
       exists for injuries that haven't occurred, whatever the self-insurance arrangement.
   answer: B
-  explanation: 'The settlement is a fixed obligation; under Oaktree''s discounting policy, which GAAP
-    permits when the amount and timing of payments are fixed or reliably determinable (SEC SAB Topic 5Y;
-    ASC 835-30), it is measured at $95,000 + $70,000 ÷ 1.05 = $95,000 + $66,667 = $161,667. For self-insured
-    risks, losses from injuries that occurred by year-end, both reported and incurred but not reported,
-    are accrued when probable and estimable (ASC 450-20-25-2): $27,000 + $18,000 = $45,000. Injuries that
-    haven''t happened create no liability, so next year''s $50,000 is not accrued. Total liability = $161,667
-    + $45,000 = $206,667.'
-- stem: Longmarsh Appliances Co. settled a product-liability suit at year-end, agreeing to pay $210,000
-    within 30 days and $180,000 one year later; because the amounts and dates are fixed, Longmarsh's policy
-    is to discount such payments, and it uses 7%. Longmarsh is also self-insured for injuries to its installation
-    crews. Its actuary estimates that settling injuries that occurred during the year will cost $64,000
-    for claims already filed and unpaid and $43,000 for injuries that have occurred but haven't been reported
-    yet, and expects injuries next year to cost $120,000. What total liability should Longmarsh report
-    at year-end for the settlement and the injuries?
+  explanation: 'The settlement is a fixed obligation. When the amount and timing of payments are fixed
+    or reliably determinable, an SEC registrant may discount the liability (SAB Topic 5Y, ASC 450-20-S99-1),
+    and Oaktree does: the $95,000 due within 30 days isn''t discounted, and each later installment is
+    discounted for its own term: $40,000 × 0.9524 + $45,000 × 0.9070 = $78,911, so the settlement liability
+    is $95,000 + $78,911 = $173,911. For self-insured risks, losses from injuries that occurred by year-end,
+    both reported and incurred but not reported, are accrued when probable and estimable (ASC 450-20-25-2):
+    $27,000 + $18,000 = $45,000. Injuries that haven''t happened create no liability, so next year''s
+    $50,000 is not accrued. Total liability = $173,911 + $45,000 = $218,911.'
+- stem: Longmarsh Appliances Co., an SEC registrant, settled a product-liability suit at year-end, agreeing
+    to pay $210,000 within 30 days, $110,000 one year later and $90,000 two years later. Because the amounts
+    and dates are fixed, Longmarsh discounts the two later installments, using 7%; present value factors
+    at 7% are 0.9346 for one year and 0.8734 for two years. Longmarsh is also self-insured for injuries
+    to its installation crews. Its actuary estimates that settling injuries that occurred during the year
+    will cost $64,000 for claims already filed and unpaid and $43,000 for injuries that have occurred
+    but haven't been reported yet, and expects injuries next year to cost $120,000. What total liability
+    should Longmarsh report at year-end for the settlement and the injuries?
   choices:
   - id: A
-    text: $275,224
-    rationale: Leaves out the $210,000 due within 30 days; it is unpaid at year-end and part of the settlement
-      liability.
-  - id: B
-    text: $442,224
+    text: $455,412
     rationale: Accrues only the $64,000 for injuries already reported. The $43,000 for injuries that occurred
       during the year but haven't been reported is also a loss incurred by year-end and is accrued.
+  - id: B
+    text: $498,412
+    rationale: Correct. Settlement $210,000 + $181,412 ($110,000 × 0.9346 + $90,000 × 0.8734) + injuries
+      $64,000 reported and $43,000 not yet reported.
   - id: C
-    text: $485,224
-    rationale: Correct. Settlement $210,000 + $168,224 present value + injuries $64,000 reported and $43,000
-      not yet reported.
+    text: $503,920
+    rationale: Discounts both later installments for one year ($200,000 × 0.9346). The second is due in
+      two years, so it is discounted with the two-year factor, 0.8734.
   - id: D
-    text: $509,600
-    rationale: Compounds the deferred payment forward at 7% instead of discounting it back to present
-      value.
-  answer: C
-  explanation: 'The settlement is a fixed obligation; under Longmarsh''s discounting policy, which GAAP
-    permits when the amount and timing of payments are fixed or reliably determinable (SEC SAB Topic 5Y;
-    ASC 835-30), it is measured at $210,000 + $180,000 ÷ 1.07 = $210,000 + $168,224 = $378,224. For self-insured
-    risks, losses from injuries that occurred by year-end, both reported and incurred but not reported,
-    are accrued when probable and estimable (ASC 450-20-25-2): $64,000 + $43,000 = $107,000. Injuries
-    that haven''t happened create no liability, so next year''s $120,000 is not accrued. Total liability
-    = $378,224 + $107,000 = $485,224.'
+    text: $517,000
+    rationale: Adds the two later installments at their face amounts, $200,000. Longmarsh discounts the
+      deferred payments, so they are carried at present value, $181,412.
+  answer: B
+  explanation: 'The settlement is a fixed obligation. When the amount and timing of payments are fixed
+    or reliably determinable, an SEC registrant may discount the liability (SAB Topic 5Y, ASC 450-20-S99-1),
+    and Longmarsh does: the $210,000 due within 30 days isn''t discounted, and each later installment
+    is discounted for its own term: $110,000 × 0.9346 + $90,000 × 0.8734 = $181,412, so the settlement
+    liability is $210,000 + $181,412 = $391,412. For self-insured risks, losses from injuries that occurred
+    by year-end, both reported and incurred but not reported, are accrued when probable and estimable
+    (ASC 450-20-25-2): $64,000 + $43,000 = $107,000. Injuries that haven''t happened create no liability,
+    so next year''s $120,000 is not accrued. Total liability = $391,412 + $107,000 = $498,412.'

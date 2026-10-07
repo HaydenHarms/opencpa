@@ -9,148 +9,160 @@ review:
   status: draft
   references:
   - ASC 305-10 (cash)
-  - Bank reconciliation practice (stop-payment orders, items collected by the bank)
-  notes: Batch 15, revision 2 (blind verifier and gate findings applied). Written from scratch; answers
-    solved and every number and distractor computed in code.
+  - Bank reconciliation practice (stop-payment orders, checks returned by the bank, processor fees)
+  notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
+    answers solved and every number and distractor computed in code.
 stem: 'Falmouth Marine Co.''s December 31 bank statement shows a balance of $52,400, and its general ledger
-  cash account shows $39,160. The bookkeeper''s reconciliation lists deposits in transit of $5,800 and
-  outstanding checks of $11,000. Reviewing the statement and the reconciliation, the accountant finds
-  that the bank collected a note receivable for Falmouth, crediting the account with $8,000 of principal
-  and $640 of interest, which Falmouth hasn''t recorded; that a credit-card processor deposited a batch
-  of card sales net of its $600 discount fee, while Falmouth recorded the deposit at the $24,000 gross
-  sale amount; and that the outstanding checks include check #498, for $1,850, on which Falmouth placed
-  a stop-payment order after a vendor dispute. The bank has confirmed the stop-payment order, and Falmouth''s
-  books still show the check as a disbursement. What is Falmouth''s correct cash balance at December 31?'
+  cash account shows $48,160. The bookkeeper''s reconciliation lists deposits in transit of $5,800 and
+  outstanding checks of $12,000. Reviewing the statement and the reconciliation, the accountant finds
+  that a $1,360 check from a customer, deposited on December 20, was returned by the bank on December
+  30 marked "account closed," and Falmouth hasn''t recorded the return; that a credit-card processor deposited
+  a batch of card sales net of its $600 discount fee, while Falmouth recorded the deposit at the $24,000
+  gross sale amount; and that the outstanding checks include check #498, for $2,850, on which Falmouth
+  placed a stop-payment order after a vendor dispute. The bank has confirmed the stop-payment order, and
+  Falmouth''s books still show the check as a disbursement. What net adjustment should Falmouth make to
+  its general ledger cash balance at December 31?'
 choices:
 - id: A
-  text: $40,410
-  rationale: Leaves out the $8,640 the bank collected on Falmouth's note receivable ($8,000 of principal
-    and $640 of interest), which the books haven't recorded.
+  text: $1,960 decrease
+  rationale: 'Treats check #498 as a valid payment, leaving its $2,850 disbursement in the books. The
+    bank has stopped the check and will never pay it, so the disbursement is reversed (and the check comes
+    off the outstanding list on the bank side).'
 - id: B
-  text: $47,200
-  rationale: 'Treats check #498 as a valid payment, either by leaving it on the outstanding list (bank
-    side) or by leaving its $1,850 disbursement in the books (book side); both give this amount. The bank
-    has stopped the check and will never pay it, so it comes off the outstanding list and the disbursement
-    is reversed.'
+  text: $890 increase
+  rationale: 'Correct. + $2,850 (stopped check) − $1,360 (returned check) − $600 (processor fee). Check:
+    $48,160 adjusted to $49,050 = $52,400 + $5,800 − ($12,000 − $2,850).'
 - id: C
-  text: $49,050
-  rationale: 'Correct. Bank side: $52,400 + $5,800 − ($11,000 − $1,850) = $49,050. Book side: $39,160
-    + $8,640 − $600 + $1,850 = $49,050.'
-- id: D
-  text: $49,650
+  text: $1,490 increase
   rationale: Leaves the card-sale deposit at its gross $24,000. The processor deposited only $23,400 after
     its $600 discount fee, which Falmouth hasn't recorded.
-answer: C
-explanation: 'Bank side: the stopped check will never clear, so it comes off the outstanding list, leaving
-  $11,000 − $1,850 = $9,150 of checks outstanding: $52,400 + $5,800 − $9,150 = $49,050. Book side: add
-  the $8,640 the bank collected on the note ($8,000 + $640); subtract the $600 processor fee, because
-  only $23,400 of the $24,000 recorded was actually deposited; and add back the $1,850 disbursement for
-  the stopped check, which never left the account: $39,160 + $8,640 − $600 + $1,850 = $49,050. Both sides
-  agree at $49,050.'
+- id: D
+  text: $2,250 increase
+  rationale: Leaves out the $1,360 customer check the bank returned from a closed account. The bank deducted
+    it from Falmouth's balance, so the receipt must be reversed in the books (the customer still owes
+    the amount).
+answer: B
+explanation: 'Only items the books haven''t recorded adjust the general ledger; deposits in transit and
+  outstanding checks are timing items on the bank side. The returned check came back from a closed account,
+  so the receipt is reversed (− $1,360) and the amount goes back to accounts receivable. Only $23,400
+  of the $24,000 card deposit reached the account, so the $600 processor fee is recorded (− $600). The
+  stopped check will never clear, so its disbursement is reversed (+ $2,850). Net adjustment = $2,850
+  − $1,360 − $600 = an increase of $890. Check against the bank side: the stopped check also comes off
+  the outstanding list, leaving $12,000 − $2,850 = $9,150, so correct cash is $52,400 + $5,800 − $9,150
+  = $49,050, and $48,160 adjusted by the net amount gives the same $49,050.'
 variants:
 - stem: 'Gerrans Boatworks Co.''s December 31 bank statement shows a balance of $68,900, and its general
-    ledger cash account shows $52,470. The bookkeeper''s reconciliation lists deposits in transit of $7,200
+    ledger cash account shows $66,200. The bookkeeper''s reconciliation lists deposits in transit of $7,200
     and outstanding checks of $13,690. Reviewing the statement and the reconciliation, the accountant
-    finds that the bank collected a note receivable for Gerrans, crediting the account with $10,000 of
-    principal and $750 of interest, which Gerrans hasn''t recorded; that a credit-card processor deposited
-    a batch of card sales net of its $810 discount fee, while Gerrans recorded the deposit at the $31,500
-    gross sale amount; and that the outstanding checks include check #512, for $2,240, on which Gerrans
-    placed a stop-payment order after a vendor dispute. The bank has confirmed the stop-payment order,
-    and Gerrans''s books still show the check as a disbursement. What is Gerrans''s correct cash balance
-    at December 31?'
+    finds that a $2,980 check from a customer, deposited on December 20, was returned by the bank on December
+    30 marked "account closed," and Gerrans hasn''t recorded the return; that a credit-card processor
+    deposited a batch of card sales net of its $810 discount fee, while Gerrans recorded the deposit at
+    the $31,500 gross sale amount; and that the outstanding checks include check #512, for $2,240, on
+    which Gerrans placed a stop-payment order after a vendor dispute. The bank has confirmed the stop-payment
+    order, and Gerrans''s books still show the check as a disbursement. What net adjustment should Gerrans
+    make to its general ledger cash balance at December 31?'
   choices:
   - id: A
-    text: $53,900
-    rationale: Leaves out the $10,750 the bank collected on Gerrans's note receivable ($10,000 of principal
-      and $750 of interest), which the books haven't recorded.
+    text: $3,790 decrease
+    rationale: 'Treats check #512 as a valid payment, leaving its $2,240 disbursement in the books. The
+      bank has stopped the check and will never pay it, so the disbursement is reversed (and the check
+      comes off the outstanding list on the bank side).'
   - id: B
-    text: $62,410
-    rationale: 'Treats check #512 as a valid payment, either by leaving it on the outstanding list (bank
-      side) or by leaving its $2,240 disbursement in the books (book side); both give this amount. The
-      bank has stopped the check and will never pay it, so it comes off the outstanding list and the disbursement
-      is reversed.'
+    text: $1,550 decrease
+    rationale: 'Correct. + $2,240 (stopped check) − $2,980 (returned check) − $810 (processor fee). Check:
+      $66,200 adjusted to $64,650 = $68,900 + $7,200 − ($13,690 − $2,240).'
   - id: C
-    text: $63,900
-    rationale: Records only the $10,000 principal of the note the bank collected. The bank credited $10,750,
-      including $750 of interest that Gerrans also hasn't recorded.
+    text: $1,430 increase
+    rationale: Leaves out the $2,980 customer check the bank returned from a closed account. The bank
+      deducted it from Gerrans's balance, so the receipt must be reversed in the books (the customer still
+      owes the amount).
   - id: D
-    text: $64,650
-    rationale: 'Correct. Bank side: $68,900 + $7,200 − ($13,690 − $2,240) = $64,650. Book side: $52,470
-      + $10,750 − $810 + $2,240 = $64,650.'
-  answer: D
-  explanation: 'Bank side: the stopped check will never clear, so it comes off the outstanding list, leaving
-    $13,690 − $2,240 = $11,450 of checks outstanding: $68,900 + $7,200 − $11,450 = $64,650. Book side:
-    add the $10,750 the bank collected on the note ($10,000 + $750); subtract the $810 processor fee,
-    because only $30,690 of the $31,500 recorded was actually deposited; and add back the $2,240 disbursement
-    for the stopped check, which never left the account: $52,470 + $10,750 − $810 + $2,240 = $64,650.
-    Both sides agree at $64,650.'
+    text: $2,700 increase
+    rationale: Adjusts the books by the whole difference between the $68,900 bank statement balance and
+      the $66,200 ledger balance, as though the deposits in transit and outstanding checks were errors
+      in the books. Those are timing items that adjust the bank side only.
+  answer: B
+  explanation: 'Only items the books haven''t recorded adjust the general ledger; deposits in transit
+    and outstanding checks are timing items on the bank side. The returned check came back from a closed
+    account, so the receipt is reversed (− $2,980) and the amount goes back to accounts receivable. Only
+    $30,690 of the $31,500 card deposit reached the account, so the $810 processor fee is recorded (−
+    $810). The stopped check will never clear, so its disbursement is reversed (+ $2,240). Net adjustment
+    = $2,240 − $2,980 − $810 = a decrease of $1,550. Check against the bank side: the stopped check also
+    comes off the outstanding list, leaving $13,690 − $2,240 = $11,450, so correct cash is $68,900 + $7,200
+    − $11,450 = $64,650, and $66,200 adjusted by the net amount gives the same $64,650.'
 - stem: 'Penryn Chandlery Co.''s December 31 bank statement shows a balance of $81,200, and its general
-    ledger cash account shows $59,100. The bookkeeper''s reconciliation lists deposits in transit of $6,400
-    and outstanding checks of $16,300. Reviewing the statement and the reconciliation, the accountant
-    finds that the bank collected a note receivable for Penryn, crediting the account with $12,000 of
-    principal and $900 of interest, which Penryn hasn''t recorded; that a credit-card processor deposited
+    ledger cash account shows $72,290. The bookkeeper''s reconciliation lists deposits in transit of $6,400
+    and outstanding checks of $17,160. Reviewing the statement and the reconciliation, the accountant
+    finds that a $1,150 check from a customer, deposited on December 20, was returned by the bank on December
+    30 marked "account closed," and Penryn hasn''t recorded the return; that a credit-card processor deposited
     a batch of card sales net of its $700 discount fee, while Penryn recorded the deposit at the $28,000
-    gross sale amount; and that the outstanding checks include check #305, for $2,600, on which Penryn
+    gross sale amount; and that the outstanding checks include check #305, for $3,460, on which Penryn
     placed a stop-payment order after a vendor dispute. The bank has confirmed the stop-payment order,
-    and Penryn''s books still show the check as a disbursement. What is Penryn''s correct cash balance
-    at December 31?'
+    and Penryn''s books still show the check as a disbursement. What net adjustment should Penryn make
+    to its general ledger cash balance at December 31?'
   choices:
   - id: A
-    text: $71,300
-    rationale: 'Treats check #305 as a valid payment, either by leaving it on the outstanding list (bank
-      side) or by leaving its $2,600 disbursement in the books (book side); both give this amount. The
-      bank has stopped the check and will never pay it, so it comes off the outstanding list and the disbursement
-      is reversed.'
+    text: $1,850 decrease
+    rationale: 'Treats check #305 as a valid payment, leaving its $3,460 disbursement in the books. The
+      bank has stopped the check and will never pay it, so the disbursement is reversed (and the check
+      comes off the outstanding list on the bank side).'
   - id: B
-    text: $73,000
-    rationale: Records only the $12,000 principal of the note the bank collected. The bank credited $12,900,
-      including $900 of interest that Penryn also hasn't recorded.
+    text: $1,610 increase
+    rationale: 'Correct. + $3,460 (stopped check) − $1,150 (returned check) − $700 (processor fee). Check:
+      $72,290 adjusted to $73,900 = $81,200 + $6,400 − ($17,160 − $3,460).'
   - id: C
-    text: $73,900
-    rationale: 'Correct. Bank side: $81,200 + $6,400 − ($16,300 − $2,600) = $73,900. Book side: $59,100
-      + $12,900 − $700 + $2,600 = $73,900.'
-  - id: D
-    text: $74,600
+    text: $2,310 increase
     rationale: Leaves the card-sale deposit at its gross $28,000. The processor deposited only $27,300
       after its $700 discount fee, which Penryn hasn't recorded.
-  answer: C
-  explanation: 'Bank side: the stopped check will never clear, so it comes off the outstanding list, leaving
-    $16,300 − $2,600 = $13,700 of checks outstanding: $81,200 + $6,400 − $13,700 = $73,900. Book side:
-    add the $12,900 the bank collected on the note ($12,000 + $900); subtract the $700 processor fee,
-    because only $27,300 of the $28,000 recorded was actually deposited; and add back the $2,600 disbursement
-    for the stopped check, which never left the account: $59,100 + $12,900 − $700 + $2,600 = $73,900.
-    Both sides agree at $73,900.'
+  - id: D
+    text: $8,910 increase
+    rationale: Adjusts the books by the whole difference between the $81,200 bank statement balance and
+      the $72,290 ledger balance, as though the deposits in transit and outstanding checks were errors
+      in the books. Those are timing items that adjust the bank side only.
+  answer: B
+  explanation: 'Only items the books haven''t recorded adjust the general ledger; deposits in transit
+    and outstanding checks are timing items on the bank side. The returned check came back from a closed
+    account, so the receipt is reversed (− $1,150) and the amount goes back to accounts receivable. Only
+    $27,300 of the $28,000 card deposit reached the account, so the $700 processor fee is recorded (−
+    $700). The stopped check will never clear, so its disbursement is reversed (+ $3,460). Net adjustment
+    = $3,460 − $1,150 − $700 = an increase of $1,610. Check against the bank side: the stopped check also
+    comes off the outstanding list, leaving $17,160 − $3,460 = $13,700, so correct cash is $81,200 + $6,400
+    − $13,700 = $73,900, and $72,290 adjusted by the net amount gives the same $73,900.'
 - stem: 'Portmellon Marine Supply Co.''s December 31 bank statement shows a balance of $45,600, and its
-    general ledger cash account shows $34,800. The bookkeeper''s reconciliation lists deposits in transit
+    general ledger cash account shows $42,940. The bookkeeper''s reconciliation lists deposits in transit
     of $4,900 and outstanding checks of $9,760. Reviewing the statement and the reconciliation, the accountant
-    finds that the bank collected a note receivable for Portmellon, crediting the account with $6,000
-    of principal and $420 of interest, which Portmellon hasn''t recorded; that a credit-card processor
+    finds that a $1,720 check from a customer, deposited on December 20, was returned by the bank on December
+    30 marked "account closed," and Portmellon hasn''t recorded the return; that a credit-card processor
     deposited a batch of card sales net of its $480 discount fee, while Portmellon recorded the deposit
     at the $19,200 gross sale amount; and that the outstanding checks include check #221, for $1,460,
     on which Portmellon placed a stop-payment order after a vendor dispute. The bank has confirmed the
-    stop-payment order, and Portmellon''s books still show the check as a disbursement. What is Portmellon''s
-    correct cash balance at December 31?'
+    stop-payment order, and Portmellon''s books still show the check as a disbursement. What net adjustment
+    should Portmellon make to its general ledger cash balance at December 31?'
   choices:
   - id: A
-    text: $35,780
-    rationale: Leaves out the $6,420 the bank collected on Portmellon's note receivable ($6,000 of principal
-      and $420 of interest), which the books haven't recorded.
+    text: $740 decrease
+    rationale: 'Correct. + $1,460 (stopped check) − $1,720 (returned check) − $480 (processor fee). Check:
+      $42,940 adjusted to $42,200 = $45,600 + $4,900 − ($9,760 − $1,460).'
   - id: B
-    text: $41,780
-    rationale: Records only the $6,000 principal of the note the bank collected. The bank credited $6,420,
-      including $420 of interest that Portmellon also hasn't recorded.
-  - id: C
-    text: $42,200
-    rationale: 'Correct. Bank side: $45,600 + $4,900 − ($9,760 − $1,460) = $42,200. Book side: $34,800
-      + $6,420 − $480 + $1,460 = $42,200.'
-  - id: D
-    text: $42,680
+    text: $260 decrease
     rationale: Leaves the card-sale deposit at its gross $19,200. The processor deposited only $18,720
       after its $480 discount fee, which Portmellon hasn't recorded.
-  answer: C
-  explanation: 'Bank side: the stopped check will never clear, so it comes off the outstanding list, leaving
-    $9,760 − $1,460 = $8,300 of checks outstanding: $45,600 + $4,900 − $8,300 = $42,200. Book side: add
-    the $6,420 the bank collected on the note ($6,000 + $420); subtract the $480 processor fee, because
-    only $18,720 of the $19,200 recorded was actually deposited; and add back the $1,460 disbursement
-    for the stopped check, which never left the account: $34,800 + $6,420 − $480 + $1,460 = $42,200. Both
-    sides agree at $42,200.'
+  - id: C
+    text: $980 increase
+    rationale: Leaves out the $1,720 customer check the bank returned from a closed account. The bank
+      deducted it from Portmellon's balance, so the receipt must be reversed in the books (the customer
+      still owes the amount).
+  - id: D
+    text: $2,660 increase
+    rationale: Adjusts the books by the whole difference between the $45,600 bank statement balance and
+      the $42,940 ledger balance, as though the deposits in transit and outstanding checks were errors
+      in the books. Those are timing items that adjust the bank side only.
+  answer: A
+  explanation: 'Only items the books haven''t recorded adjust the general ledger; deposits in transit
+    and outstanding checks are timing items on the bank side. The returned check came back from a closed
+    account, so the receipt is reversed (− $1,720) and the amount goes back to accounts receivable. Only
+    $18,720 of the $19,200 card deposit reached the account, so the $480 processor fee is recorded (−
+    $480). The stopped check will never clear, so its disbursement is reversed (+ $1,460). Net adjustment
+    = $1,460 − $1,720 − $480 = a decrease of $740. Check against the bank side: the stopped check also
+    comes off the outstanding list, leaving $9,760 − $1,460 = $8,300, so correct cash is $45,600 + $4,900
+    − $8,300 = $42,200, and $42,940 adjusted by the net amount gives the same $42,200.'
