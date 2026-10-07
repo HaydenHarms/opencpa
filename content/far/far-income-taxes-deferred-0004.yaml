@@ -21,8 +21,7 @@ stem: Saltburn Corp. keeps separate deferred tax asset and deferred tax liabilit
   when paid, and Saltburn expects to pay $220,000 of it in Year 3 and the rest in Year 4. The enacted
   tax rate is 25% for all years. Weighing its recent losses against its forecasts, Saltburn concludes
   that it needs a valuation allowance of $8,000 against its deferred tax asset. At December 31, Year 2,
-  what amounts should Saltburn carry in its deferred tax asset account, net of the allowance, and in its
-  deferred tax liability account?
+  what amounts should Saltburn report for its deferred tax asset and its deferred tax liability?
 choices:
 - id: A
   text: $47,000 asset; $45,000 liability
@@ -54,8 +53,8 @@ variants:
     is deductible when paid, and Tissington expects to pay $150,000 of it in Year 3 and the rest in Year
     4. The enacted tax rate is 21% for all years. Weighing its recent losses against its forecasts, Tissington
     concludes that it needs a valuation allowance of $6,000 against its deferred tax asset. At December
-    31, Year 2, what amounts should Tissington carry in its deferred tax asset account, net of the allowance,
-    and in its deferred tax liability account?
+    31, Year 2, what amounts should Tissington report for its deferred tax asset and its deferred tax
+    liability?
   choices:
   - id: A
     text: $25,500 asset; $29,400 liability
@@ -86,8 +85,8 @@ variants:
     is deductible when paid, and Ulverscroft expects to pay $240,000 of it in Year 3 and the rest in Year
     4. The enacted tax rate is 25% for all years. Weighing its recent losses against its forecasts, Ulverscroft
     concludes that it needs a valuation allowance of $10,000 against its deferred tax asset. At December
-    31, Year 2, what amounts should Ulverscroft carry in its deferred tax asset account, net of the allowance,
-    and in its deferred tax liability account?
+    31, Year 2, what amounts should Ulverscroft report for its deferred tax asset and its deferred tax
+    liability?
   choices:
   - id: A
     text: $50,000 asset; $55,000 liability
@@ -120,8 +119,7 @@ variants:
     when paid, and Wrenbury expects to pay $175,000 of it in Year 3 and the rest in Year 4. The enacted
     tax rate is 24% for all years. Weighing its recent losses against its forecasts, Wrenbury concludes
     that it needs a valuation allowance of $7,000 against its deferred tax asset. At December 31, Year
-    2, what amounts should Wrenbury carry in its deferred tax asset account, net of the allowance, and
-    in its deferred tax liability account?
+    2, what amounts should Wrenbury report for its deferred tax asset and its deferred tax liability?
   choices:
   - id: A
     text: $35,000 asset; $38,400 liability

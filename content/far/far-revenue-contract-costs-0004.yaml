@@ -20,9 +20,8 @@ stem: On January 1, Year 1, Trebarwith Systems Co. signed a three-year contract 
   platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced
   to recover it. Trebarwith also bought $36,000 of forklifts that it will use on this customer's account
   and move to other jobs when the contract ends, and $7,200 of packing materials that will be used up
-  in providing the services. Trebarwith amortizes any capitalized contract cost straight-line by month
-  over the period of the services it relates to. What amortization of contract cost assets should Trebarwith
-  recognize for Year 1?
+  in providing the services. Trebarwith amortizes any capitalized contract cost straight-line by month.
+  What amortization of contract cost assets should Trebarwith recognize for Year 1?
 choices:
 - id: A
   text: $15,000
@@ -59,8 +58,7 @@ variants:
     to recover it. Delabole also bought $28,800 of handling carts that it will use on this customer's
     account and move to other jobs when the contract ends, and $10,800 of shipping supplies that will
     be used up in providing the services. Delabole amortizes any capitalized contract cost straight-line
-    by month over the period of the services it relates to. What amortization of contract cost assets
-    should Delabole recognize for Year 1?
+    by month. What amortization of contract cost assets should Delabole recognize for Year 1?
   choices:
   - id: A
     text: $10,800
@@ -94,9 +92,8 @@ variants:
     platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced
     to recover it. Zennor also bought $46,800 of pallet jacks that it will use on this customer's account
     and move to other jobs when the contract ends, and $14,400 of crating materials that will be used
-    up in providing the services. Zennor amortizes any capitalized contract cost straight-line by month
-    over the period of the services it relates to. What amortization of contract cost assets should Zennor
-    recognize for Year 1?
+    up in providing the services. Zennor amortizes any capitalized contract cost straight-line by month.
+    What amortization of contract cost assets should Zennor recognize for Year 1?
   choices:
   - id: A
     text: $33,600
@@ -130,9 +127,8 @@ variants:
     platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced
     to recover it. Marazion also bought $54,000 of dock lifts that it will use on this customer's account
     and move to other jobs when the contract ends, and $16,200 of packaging supplies that will be used
-    up in providing the services. Marazion amortizes any capitalized contract cost straight-line by month
-    over the period of the services it relates to. What amortization of contract cost assets should Marazion
-    recognize for Year 1?
+    up in providing the services. Marazion amortizes any capitalized contract cost straight-line by month.
+    What amortization of contract cost assets should Marazion recognize for Year 1?
   choices:
   - id: A
     text: $12,000

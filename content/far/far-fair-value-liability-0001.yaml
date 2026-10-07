@@ -14,11 +14,11 @@ review:
     Reworked after the 2026-10-05 review gate.
 stem: Trewince Insurance Co. must measure, on the transfer basis ASC 820 requires, the fair value of a
   $500,000 obligation it owes a counterparty, payable in a lump sum in 5 years. The risk-free rate for
-  a 5-year term is 4%. After a recent credit downgrade, market participants would require a 3% premium
-  for Trewince's own nonperformance risk as of the measurement date; before the downgrade, that premium
-  was only 1%. A higher-rated insurer that might assume the obligation said it would price it at only
-  a 1.5% premium. Using present value factors rounded to four decimal places, what is the fair value of
-  Trewince's obligation?
+  a 5-year term is 4%. Market participants now price obligations of Trewince's credit standing at a 3%
+  premium over the risk-free rate; before a recent credit downgrade, they priced them at 1%. A higher-rated
+  insurer that might assume the obligation said it would price it at a 1.5% premium. Present value factors
+  for a single sum due in 5 years are 0.8219 at 4%, 0.7835 at 5%, 0.7651 at 5.5% and 0.7130 at 7%. What
+  is the fair value of Trewince's obligation?
 choices:
 - id: A
   text: $356,500
@@ -48,11 +48,11 @@ explanation: Fair value of a liability assumes transfer to a market participant 
 variants:
 - stem: Ventongimps Assurance Co. must measure, on the transfer basis ASC 820 requires, the fair value
     of a $650,000 obligation it owes a counterparty, payable in a lump sum in 4 years. The risk-free rate
-    for a 4-year term is 3.5%. After a recent credit upgrade, market participants would require a 2.5%
-    premium for Ventongimps's own nonperformance risk as of the measurement date; before the upgrade,
-    that premium was 4%. A higher-rated insurer that might assume the obligation said it would price it
-    at only a 1% premium. Using present value factors rounded to four decimal places, what is the fair
-    value of Ventongimps's obligation?
+    for a 4-year term is 3.5%. Market participants now price obligations of Ventongimps's credit standing
+    at a 2.5% premium over the risk-free rate; before a recent credit upgrade, they priced them at 4%.
+    A higher-rated insurer that might assume the obligation said it would price it at a 1% premium. Present
+    value factors for a single sum due in 4 years are 0.8714 at 3.5%, 0.8386 at 4.5%, 0.7921 at 6% and
+    0.7488 at 7.5%. What is the fair value of Ventongimps's obligation?
   choices:
   - id: A
     text: $486,720
@@ -81,11 +81,11 @@ variants:
     own current nonperformance risk = 6%. Fair value = $650,000 × 0.7921 = $514,865.
 - stem: Wendron Mutual Co. must measure, on the transfer basis ASC 820 requires, the fair value of a $380,000
     obligation it owes a counterparty, payable in a lump sum in 6 years. The risk-free rate for a 6-year
-    term is 4.5%. After a recent credit downgrade, market participants would require a 3.5% premium for
-    Wendron's own nonperformance risk as of the measurement date; before the downgrade, that premium was
-    only 1.5%. A higher-rated insurer that might assume the obligation said it would price it at only
-    a 2% premium. Using present value factors rounded to four decimal places, what is the fair value of
-    Wendron's obligation?
+    term is 4.5%. Market participants now price obligations of Wendron's credit standing at a 3.5% premium
+    over the risk-free rate; before a recent credit downgrade, they priced them at 1.5%. A higher-rated
+    insurer that might assume the obligation said it would price it at a 2% premium. Present value factors
+    for a single sum due in 6 years are 0.7679 at 4.5%, 0.7050 at 6%, 0.6853 at 6.5% and 0.6302 at 8%.
+    What is the fair value of Wendron's obligation?
   choices:
   - id: A
     text: $239,476
@@ -114,11 +114,11 @@ variants:
     current nonperformance risk = 8%. Fair value = $380,000 × 0.6302 = $239,476.
 - stem: Yelverton Guaranty Co. must measure, on the transfer basis ASC 820 requires, the fair value of
     a $720,000 obligation it owes a counterparty, payable in a lump sum in 3 years. The risk-free rate
-    for a 3-year term is 3%. After a recent credit upgrade, market participants would require a 2% premium
-    for Yelverton's own nonperformance risk as of the measurement date; before the upgrade, that premium
-    was 3%. A higher-rated insurer that might assume the obligation said it would price it at only a 0.5%
-    premium. Using present value factors rounded to four decimal places, what is the fair value of Yelverton's
-    obligation?
+    for a 3-year term is 3%. Market participants now price obligations of Yelverton's credit standing
+    at a 2% premium over the risk-free rate; before a recent credit upgrade, they priced them at 3%. A
+    higher-rated insurer that might assume the obligation said it would price it at a 0.5% premium. Present
+    value factors for a single sum due in 3 years are 0.9151 at 3%, 0.9019 at 3.5%, 0.8638 at 5% and 0.8396
+    at 6%. What is the fair value of Yelverton's obligation?
   choices:
   - id: A
     text: $604,512

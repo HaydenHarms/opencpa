@@ -9,137 +9,133 @@ review:
   status: draft
   references:
   - ASC 310-10 and ASC 835-30 (interest on notes receivable accrues as earned)
-  - ASC 321-10-35-1 (equity securities measured at fair value through net income)
-  - ASC 606-10-55-79 to 55-80 (consignment arrangements)
+  - Prepayments for goods not yet received are assets
+  - ASC 360-10-35 (property held for use carried at historical cost; no write-up to fair value)
   notes: Batch 17, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
     answers solved and every number and distractor computed in code.
 stem: Hartswell Logistics Co.'s draft December 31, Year 2, balance sheet reports total assets of $2,360,000.
-  Before the statements are issued, its controller traces three balances to their support. On September
-  1, Year 2, Hartswell accepted from a customer a $600,000, 9-month note bearing simple interest at 9%
+  Before the statements are issued, its controller traces three balances to their support. On November
+  1, Year 2, Hartswell accepted from a customer a $600,000, 9-month note bearing simple interest at 10%
   a year, with principal and interest due at maturity; the draft reports the note at $600,000 and no interest
-  receivable. The draft carries Hartswell's holding of a listed company's common shares, a small stake
-  that gives Hartswell no influence over the company, at their $310,000 cost; the shares' quoted price
-  at December 31 puts the holding at $270,000. And inventory includes, at their $63,000 cost, goods Hartswell
-  shipped in December to a retailer that sells them for Hartswell on consignment; the retailer had sold
-  none of them by year-end. Ignore income taxes. What total assets should the corrected balance sheet
-  report?
+  receivable. In December, Hartswell paid a supplier a $46,000 advance for goods to be delivered in February,
+  Year 3, and charged the payment to cost of goods sold. And the draft carries land Hartswell bought as
+  the site of a future warehouse at its $410,000 cost; an appraisal in December valued the land at $530,000.
+  Ignore income taxes. What total assets should the corrected balance sheet report?
 choices:
 - id: A
-  text: $2,275,000
-  rationale: Also removes the $63,000 of goods held by the consignee. Goods out on consignment remain
-    the consignor's inventory until the consignee sells them, so they are correctly included.
+  text: $2,370,000
+  rationale: Leaves the $46,000 advance in cost of goods sold. The goods haven't been delivered, so the
+    payment is a prepayment, an asset, until Hartswell receives them in February.
 - id: B
-  text: $2,338,000
-  rationale: Correct. $2,360,000 + $18,000 interest receivable − $40,000 fair value decrease.
+  text: $2,416,000
+  rationale: Correct. $2,360,000 + $10,000 interest receivable + $46,000 advance to the supplier; the
+    land stays at cost.
 - id: C
-  text: $2,360,500
-  rationale: Accrues the interest for the note's whole 9-month term. Only the 4 months through December
+  text: $2,451,000
+  rationale: Accrues the interest for the note's whole 9-month term. Only the 2 months through December
     31 have been earned.
 - id: D
-  text: $2,378,000
-  rationale: Leaves the shares at their $310,000 cost. Equity securities with a readily determinable fair
-    value are measured at fair value, here $270,000, with the change in net income.
+  text: $2,536,000
+  rationale: Also writes the land up to its $530,000 appraised value. Land held for use is carried at
+    cost; GAAP doesn't permit writing it up to a higher fair value.
 answer: B
-explanation: 'Interest on the note accrues from September 1: $600,000 × 9% × 4/12 = $18,000 of interest
-  receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
-  at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $310,000
-  to $270,000, a $40,000 loss. Goods on consignment remain the consignor''s inventory until the consignee
-  sells them (ASC 606-10-55-79 to 55-80), so the $63,000 is correctly included. Corrected total assets
-  = $2,360,000 + $18,000 − $40,000 = $2,338,000.'
+explanation: 'Interest on the note accrues from November 1: $600,000 × 10% × 2/12 = $10,000 of interest
+  receivable, which the draft omits. The advance pays for goods Hartswell hasn''t yet received, so it
+  is a prepayment (an asset), not cost of goods sold: $46,000 is added back to assets. Land held for use
+  is carried at historical cost, with no write-up to an appraised value (ASC 360-10-35), so the land stays
+  at $410,000. Corrected total assets = $2,360,000 + $10,000 + $46,000 = $2,416,000.'
 variants:
 - stem: Candleford Distribution Co.'s draft December 31, Year 3, balance sheet reports total assets of
     $1,980,000. Before the statements are issued, its controller traces three balances to their support.
-    On October 1, Year 3, Candleford accepted from a customer a $480,000, 6-month note bearing simple
-    interest at 10% a year, with principal and interest due at maturity; the draft reports the note at
-    $480,000 and no interest receivable. The draft carries Candleford's holding of a listed company's
-    common shares, a small stake that gives Candleford no influence over the company, at their $240,000
-    cost; the shares' quoted price at December 31 puts the holding at $275,000. And inventory includes,
-    at their $41,000 cost, goods Candleford shipped in December to a retailer that sells them for Candleford
-    on consignment; the retailer had sold none of them by year-end. Ignore income taxes. What total assets
-    should the corrected balance sheet report?
+    On August 1, Year 3, Candleford accepted from a customer a $480,000, 6-month note bearing simple interest
+    at 8% a year, with principal and interest due at maturity; the draft reports the note at $480,000
+    and no interest receivable. In December, Candleford paid a supplier a $38,000 advance for goods to
+    be delivered in February, Year 4, and charged the payment to cost of goods sold. And the draft carries
+    land Candleford bought as the site of a future warehouse at its $320,000 cost; an appraisal in December
+    valued the land at $395,000. Ignore income taxes. What total assets should the corrected balance sheet
+    report?
   choices:
   - id: A
-    text: $1,980,000
-    rationale: Accepts the draft total, with no interest receivable and the shares at cost.
+    text: $1,996,000
+    rationale: Leaves the $38,000 advance in cost of goods sold. The goods haven't been delivered, so
+      the payment is a prepayment, an asset, until Candleford receives them in February.
   - id: B
-    text: $1,992,000
-    rationale: Leaves the shares at their $240,000 cost. Equity securities with a readily determinable
-      fair value are measured at fair value, here $275,000, with the change in net income.
+    text: $2,018,000
+    rationale: 'Records no interest receivable, as if interest on a note due at maturity were earned only
+      when collected. Interest accrues as time passes: 5 months ($16,000) by December 31.'
   - id: C
-    text: $2,027,000
-    rationale: Correct. $1,980,000 + $12,000 interest receivable + $35,000 fair value increase.
+    text: $2,034,000
+    rationale: Correct. $1,980,000 + $16,000 interest receivable + $38,000 advance to the supplier; the
+      land stays at cost.
   - id: D
-    text: $2,039,000
-    rationale: Accrues the interest for the note's whole 6-month term. Only the 3 months through December
-      31 have been earned.
+    text: $2,109,000
+    rationale: Also writes the land up to its $395,000 appraised value. Land held for use is carried at
+      cost; GAAP doesn't permit writing it up to a higher fair value.
   answer: C
-  explanation: 'Interest on the note accrues from October 1: $480,000 × 10% × 3/12 = $12,000 of interest
-    receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
-    at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $240,000
-    to $275,000, a $35,000 gain. Goods on consignment remain the consignor''s inventory until the consignee
-    sells them (ASC 606-10-55-79 to 55-80), so the $41,000 is correctly included. Corrected total assets
-    = $1,980,000 + $12,000 + $35,000 = $2,027,000.'
+  explanation: 'Interest on the note accrues from August 1: $480,000 × 8% × 5/12 = $16,000 of interest
+    receivable, which the draft omits. The advance pays for goods Candleford hasn''t yet received, so
+    it is a prepayment (an asset), not cost of goods sold: $38,000 is added back to assets. Land held
+    for use is carried at historical cost, with no write-up to an appraised value (ASC 360-10-35), so
+    the land stays at $320,000. Corrected total assets = $1,980,000 + $16,000 + $38,000 = $2,034,000.'
 - stem: Marldon Freight Co.'s draft December 31, Year 1, balance sheet reports total assets of $3,120,000.
-    Before the statements are issued, its controller traces three balances to their support. On August
-    1, Year 1, Marldon accepted from a customer a $720,000, 6-month note bearing simple interest at 8%
+    Before the statements are issued, its controller traces three balances to their support. On October
+    1, Year 1, Marldon accepted from a customer a $720,000, 6-month note bearing simple interest at 7%
     a year, with principal and interest due at maturity; the draft reports the note at $720,000 and no
-    interest receivable. The draft carries Marldon's holding of a listed company's common shares, a small
-    stake that gives Marldon no influence over the company, at their $420,000 cost; the shares' quoted
-    price at December 31 puts the holding at $372,000. And inventory includes, at their $78,000 cost,
-    goods Marldon shipped in December to a retailer that sells them for Marldon on consignment; the retailer
-    had sold none of them by year-end. Ignore income taxes. What total assets should the corrected balance
-    sheet report?
+    interest receivable. In December, Marldon paid a supplier a $57,000 advance for goods to be delivered
+    in February, Year 2, and charged the payment to cost of goods sold. And the draft carries land Marldon
+    bought as the site of a future warehouse at its $560,000 cost; an appraisal in December valued the
+    land at $690,000. Ignore income taxes. What total assets should the corrected balance sheet report?
   choices:
   - id: A
-    text: $3,018,000
-    rationale: Also removes the $78,000 of goods held by the consignee. Goods out on consignment remain
-      the consignor's inventory until the consignee sells them, so they are correctly included.
+    text: $3,132,600
+    rationale: Leaves the $57,000 advance in cost of goods sold. The goods haven't been delivered, so
+      the payment is a prepayment, an asset, until Marldon receives them in February.
   - id: B
-    text: $3,096,000
-    rationale: Correct. $3,120,000 + $24,000 interest receivable − $48,000 fair value decrease.
+    text: $3,189,600
+    rationale: Correct. $3,120,000 + $12,600 interest receivable + $57,000 advance to the supplier; the
+      land stays at cost.
   - id: C
-    text: $3,120,000
-    rationale: Accepts the draft total, with no interest receivable and the shares at cost.
+    text: $3,227,400
+    rationale: Accrues a full year of interest on the note. It was accepted on October 1, so only 3 months
+      of interest ($12,600) had accrued by December 31.
   - id: D
-    text: $3,144,000
-    rationale: Leaves the shares at their $420,000 cost. Equity securities with a readily determinable
-      fair value are measured at fair value, here $372,000, with the change in net income.
+    text: $3,319,600
+    rationale: Also writes the land up to its $690,000 appraised value. Land held for use is carried at
+      cost; GAAP doesn't permit writing it up to a higher fair value.
   answer: B
-  explanation: 'Interest on the note accrues from August 1: $720,000 × 8% × 5/12 = $24,000 of interest
-    receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
-    at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $420,000
-    to $372,000, a $48,000 loss. Goods on consignment remain the consignor''s inventory until the consignee
-    sells them (ASC 606-10-55-79 to 55-80), so the $78,000 is correctly included. Corrected total assets
-    = $3,120,000 + $24,000 − $48,000 = $3,096,000.'
+  explanation: 'Interest on the note accrues from October 1: $720,000 × 7% × 3/12 = $12,600 of interest
+    receivable, which the draft omits. The advance pays for goods Marldon hasn''t yet received, so it
+    is a prepayment (an asset), not cost of goods sold: $57,000 is added back to assets. Land held for
+    use is carried at historical cost, with no write-up to an appraised value (ASC 360-10-35), so the
+    land stays at $560,000. Corrected total assets = $3,120,000 + $12,600 + $57,000 = $3,189,600.'
 - stem: Ellenbridge Supply Co.'s draft December 31, Year 4, balance sheet reports total assets of $1,540,000.
-    Before the statements are issued, its controller traces three balances to their support. On July 1,
-    Year 4, Ellenbridge accepted from a customer a $360,000, 9-month note bearing simple interest at 10%
+    Before the statements are issued, its controller traces three balances to their support. On June 1,
+    Year 4, Ellenbridge accepted from a customer a $360,000, 9-month note bearing simple interest at 11%
     a year, with principal and interest due at maturity; the draft reports the note at $360,000 and no
-    interest receivable. The draft carries Ellenbridge's holding of a listed company's common shares,
-    a small stake that gives Ellenbridge no influence over the company, at their $180,000 cost; the shares'
-    quoted price at December 31 puts the holding at $211,000. And inventory includes, at their $34,000
-    cost, goods Ellenbridge shipped in December to a retailer that sells them for Ellenbridge on consignment;
-    the retailer had sold none of them by year-end. Ignore income taxes. What total assets should the
-    corrected balance sheet report?
+    interest receivable. In December, Ellenbridge paid a supplier a $29,000 advance for goods to be delivered
+    in February, Year 5, and charged the payment to cost of goods sold. And the draft carries land Ellenbridge
+    bought as the site of a future warehouse at its $240,000 cost; an appraisal in December valued the
+    land at $301,000. Ignore income taxes. What total assets should the corrected balance sheet report?
   choices:
   - id: A
-    text: $1,540,000
-    rationale: Accepts the draft total, with no interest receivable and the shares at cost.
+    text: $1,569,000
+    rationale: 'Records no interest receivable, as if interest on a note due at maturity were earned only
+      when collected. Interest accrues as time passes: 7 months ($23,100) by December 31.'
   - id: B
-    text: $1,558,000
-    rationale: Leaves the shares at their $180,000 cost. Equity securities with a readily determinable
-      fair value are measured at fair value, here $211,000, with the change in net income.
+    text: $1,592,100
+    rationale: Correct. $1,540,000 + $23,100 interest receivable + $29,000 advance to the supplier; the
+      land stays at cost.
   - id: C
-    text: $1,589,000
-    rationale: Correct. $1,540,000 + $18,000 interest receivable + $31,000 fair value increase.
-  - id: D
-    text: $1,598,000
-    rationale: Accrues the interest for the note's whole 9-month term. Only the 6 months through December
+    text: $1,598,700
+    rationale: Accrues the interest for the note's whole 9-month term. Only the 7 months through December
       31 have been earned.
-  answer: C
-  explanation: 'Interest on the note accrues from July 1: $360,000 × 10% × 6/12 = $18,000 of interest
-    receivable, which the draft omits. Equity securities with a readily determinable fair value are measured
-    at fair value, with changes in net income (ASC 321-10-35-1), so the shares are remeasured from $180,000
-    to $211,000, a $31,000 gain. Goods on consignment remain the consignor''s inventory until the consignee
-    sells them (ASC 606-10-55-79 to 55-80), so the $34,000 is correctly included. Corrected total assets
-    = $1,540,000 + $18,000 + $31,000 = $1,589,000.'
+  - id: D
+    text: $1,653,100
+    rationale: Also writes the land up to its $301,000 appraised value. Land held for use is carried at
+      cost; GAAP doesn't permit writing it up to a higher fair value.
+  answer: B
+  explanation: 'Interest on the note accrues from June 1: $360,000 × 11% × 7/12 = $23,100 of interest
+    receivable, which the draft omits. The advance pays for goods Ellenbridge hasn''t yet received, so
+    it is a prepayment (an asset), not cost of goods sold: $29,000 is added back to assets. Land held
+    for use is carried at historical cost, with no write-up to an appraised value (ASC 360-10-35), so
+    the land stays at $240,000. Corrected total assets = $1,540,000 + $23,100 + $29,000 = $1,592,100.'

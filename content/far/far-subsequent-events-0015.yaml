@@ -22,39 +22,39 @@ stem: 'Marrowbrook Instruments Co.''s draft Year 1 income before income taxes is
   estimated it had earned on its Year 1 purchases from its main supplier; all of the goods bought from
   that supplier in Year 1 were sold during the year. Before the statements are issued: on January 24,
   the licensee''s annual royalty report showed Year 1 sales of $2,840,000 of the licensed products; on
-  January 29, the supplier''s final statement fixed the Year 1 rebate at $51,000, paid in February; and
+  January 29, the supplier''s final statement fixed the Year 1 rebate at $61,000, paid in February; and
   on February 11, the licensee announced that it will stop selling the licensed products in April, Year
   2, which Marrowbrook expects to reduce its Year 2 royalties by $95,000. Ignore income taxes. What income
   before income taxes should Marrowbrook report for Year 1?'
 choices:
 - id: A
-  text: $1,794,000
+  text: $1,804,000
   rationale: Also deducts the $95,000 fall in expected Year 2 royalties. The licensee's decision came
     after year-end and affects only royalties on its Year 2 sales, which Marrowbrook recognizes only as
     those sales occur; it is a nonrecognized subsequent event.
 - id: B
-  text: $1,875,000
+  text: $1,874,000
+  rationale: Leaves the rebate at the $36,000 accrued. The supplier's statement fixes the rebate earned
+    on Year 1 purchases, so the extra $25,000 reduces Year 1 cost of goods sold.
+- id: C
+  text: $1,885,000
   rationale: Keeps the $128,000 royalty estimate. The licensee's report shows what its Year 1 sales actually
     were, a condition that existed at year-end, so Year 1 royalty revenue is adjusted to 5% × $2,840,000
     = $142,000.
-- id: C
-  text: $1,889,000
-  rationale: Correct. $1,860,000 + $14,000 royalty true-up + $15,000 rebate true-up; the Year 2 royalty
-    decline isn't recognized.
 - id: D
-  text: $1,925,000
-  rationale: Adds the whole $51,000 final rebate without removing the $36,000 already accrued, counting
-    part of the rebate twice.
-answer: C
+  text: $1,899,000
+  rationale: Correct. $1,860,000 + $14,000 royalty true-up + $25,000 rebate true-up; the Year 2 royalty
+    decline isn't recognized.
+answer: D
 explanation: The royalty report and the rebate statement give better evidence of amounts that arose from
   Year 1 activity, conditions that existed at December 31, so both are recognized subsequent events (ASC
   855-10-25-1). A sales-based royalty is recognized as the licensee's sales occur (ASC 606-10-55-65),
   so Year 1 royalty revenue is 5% × $2,840,000 = $142,000, a change of +$14,000 from the $128,000 estimate.
   A vendor rebate reduces the cost of the purchases that earned it (ASC 705-20-25); the goods were all
-  sold, so the $51,000 − $36,000 = $15,000 increase reduces Year 1 cost of goods sold. The licensee's
+  sold, so the $61,000 − $36,000 = $25,000 increase reduces Year 1 cost of goods sold. The licensee's
   decision to stop selling arose after year-end and affects only Year 2 royalties; it is a nonrecognized
   subsequent event, disclosed if material (ASC 855-10-25-3). Income before income taxes = $1,860,000 +
-  $14,000 + $15,000 = $1,889,000.
+  $14,000 + $25,000 = $1,899,000.
 variants:
 - stem: 'Clearmont Optics Co.''s draft Year 2 income before income taxes is $2,340,000; the statements
     will be issued on March 13, Year 3. The draft includes $137,000 of royalty revenue that Clearmont
@@ -82,9 +82,10 @@ variants:
     rationale: Correct. $2,340,000 − $11,000 royalty true-up + $13,000 rebate true-up; the Year 3 royalty
       decline isn't recognized.
   - id: D
-    text: $2,479,000
-    rationale: Adds the whole $126,000 reported royalty without removing the $137,000 already accrued,
-      counting Year 2 royalties twice.
+    text: $2,353,000
+    rationale: Keeps the $137,000 royalty estimate. The licensee's report shows what its Year 2 sales
+      actually were, a condition that existed at year-end, so Year 2 royalty revenue is adjusted to 4%
+      × $3,150,000 = $126,000.
   answer: C
   explanation: The royalty report and the rebate statement give better evidence of amounts that arose
     from Year 2 activity, conditions that existed at December 31, so both are recognized subsequent events
@@ -102,40 +103,41 @@ variants:
     rebate Fallowgate estimated it had earned on its Year 3 purchases from its main supplier; all of the
     goods bought from that supplier in Year 3 were sold during the year. Before the statements are issued:
     on January 18, the licensee''s annual royalty report showed Year 3 sales of $1,880,000 of the licensed
-    products; on January 25, the supplier''s final statement fixed the Year 3 rebate at $33,000, paid
+    products; on January 25, the supplier''s final statement fixed the Year 3 rebate at $41,000, paid
     in February; and on February 14, the licensee announced that it will stop selling the licensed products
     in April, Year 4, which Fallowgate expects to reduce its Year 4 royalties by $70,000. Ignore income
     taxes. What income before income taxes should Fallowgate report for Year 3?'
   choices:
   - id: A
-    text: $1,429,000
+    text: $1,375,800
+    rationale: Also deducts the $70,000 fall in expected Year 4 royalties. The licensee's decision came
+      after year-end and affects only royalties on its Year 4 sales, which Fallowgate recognizes only
+      as those sales occur; it is a nonrecognized subsequent event.
+  - id: B
+    text: $1,428,800
+    rationale: Leaves the rebate at the $24,000 accrued. The supplier's statement fixes the rebate earned
+      on Year 3 purchases, so the extra $17,000 reduces Year 3 cost of goods sold.
+  - id: C
+    text: $1,437,000
     rationale: Keeps the $104,000 royalty estimate. The licensee's report shows what its Year 3 sales
       actually were, a condition that existed at year-end, so Year 3 royalty revenue is adjusted to 6%
       × $1,880,000 = $112,800.
-  - id: B
-    text: $1,437,800
-    rationale: Correct. $1,420,000 + $8,800 royalty true-up + $9,000 rebate true-up; the Year 4 royalty
-      decline isn't recognized.
-  - id: C
-    text: $1,461,800
-    rationale: Adds the whole $33,000 final rebate without removing the $24,000 already accrued, counting
-      part of the rebate twice.
   - id: D
-    text: $1,541,800
-    rationale: Adds the whole $112,800 reported royalty without removing the $104,000 already accrued,
-      counting Year 3 royalties twice.
-  answer: B
+    text: $1,445,800
+    rationale: Correct. $1,420,000 + $8,800 royalty true-up + $17,000 rebate true-up; the Year 4 royalty
+      decline isn't recognized.
+  answer: D
   explanation: The royalty report and the rebate statement give better evidence of amounts that arose
     from Year 3 activity, conditions that existed at December 31, so both are recognized subsequent events
     (ASC 855-10-25-1). A sales-based royalty is recognized as the licensee's sales occur (ASC 606-10-55-65),
     so Year 3 royalty revenue is 6% × $1,880,000 = $112,800, a change of +$8,800 from the $104,000 estimate.
     A vendor rebate reduces the cost of the purchases that earned it (ASC 705-20-25); the goods were all
-    sold, so the $33,000 − $24,000 = $9,000 increase reduces Year 3 cost of goods sold. The licensee's
+    sold, so the $41,000 − $24,000 = $17,000 increase reduces Year 3 cost of goods sold. The licensee's
     decision to stop selling arose after year-end and affects only Year 4 royalties; it is a nonrecognized
     subsequent event, disclosed if material (ASC 855-10-25-3). Income before income taxes = $1,420,000
-    + $8,800 + $9,000 = $1,437,800.
+    + $8,800 + $17,000 = $1,445,800.
 - stem: 'Berrowfield Controls Co.''s draft Year 4 income before income taxes is $2,960,000; the statements
-    will be issued on March 16, Year 5. The draft includes $160,000 of royalty revenue that Berrowfield
+    will be issued on March 16, Year 5. The draft includes $198,000 of royalty revenue that Berrowfield
     estimated at year-end under a license that pays it 4.5% of a licensee''s sales of products made with
     Berrowfield''s technology. It also includes, as a reduction of cost of goods sold, a $46,000 volume
     rebate Berrowfield estimated it had earned on its Year 4 purchases from its main supplier; all of
@@ -147,30 +149,30 @@ variants:
     income taxes. What income before income taxes should Berrowfield report for Year 4?'
   choices:
   - id: A
-    text: $2,889,400
+    text: $2,851,400
     rationale: Also deducts the $140,000 fall in expected Year 5 royalties. The licensee's decision came
       after year-end and affects only royalties on its Year 5 sales, which Berrowfield recognizes only
       as those sales occur; it is a nonrecognized subsequent event.
   - id: B
-    text: $2,985,400
+    text: $2,947,400
     rationale: Leaves the rebate at the $46,000 accrued. The supplier's statement fixes the rebate earned
       on Year 4 purchases, so the extra $44,000 reduces Year 4 cost of goods sold.
   - id: C
+    text: $2,991,400
+    rationale: Correct. $2,960,000 − $12,600 royalty true-up + $44,000 rebate true-up; the Year 5 royalty
+      decline isn't recognized.
+  - id: D
     text: $3,004,000
-    rationale: Keeps the $160,000 royalty estimate. The licensee's report shows what its Year 4 sales
+    rationale: Keeps the $198,000 royalty estimate. The licensee's report shows what its Year 4 sales
       actually were, a condition that existed at year-end, so Year 4 royalty revenue is adjusted to 4.5%
       × $4,120,000 = $185,400.
-  - id: D
-    text: $3,029,400
-    rationale: Correct. $2,960,000 + $25,400 royalty true-up + $44,000 rebate true-up; the Year 5 royalty
-      decline isn't recognized.
-  answer: D
+  answer: C
   explanation: The royalty report and the rebate statement give better evidence of amounts that arose
     from Year 4 activity, conditions that existed at December 31, so both are recognized subsequent events
     (ASC 855-10-25-1). A sales-based royalty is recognized as the licensee's sales occur (ASC 606-10-55-65),
-    so Year 4 royalty revenue is 4.5% × $4,120,000 = $185,400, a change of +$25,400 from the $160,000
+    so Year 4 royalty revenue is 4.5% × $4,120,000 = $185,400, a change of −$12,600 from the $198,000
     estimate. A vendor rebate reduces the cost of the purchases that earned it (ASC 705-20-25); the goods
     were all sold, so the $90,000 − $46,000 = $44,000 increase reduces Year 4 cost of goods sold. The
     licensee's decision to stop selling arose after year-end and affects only Year 5 royalties; it is
     a nonrecognized subsequent event, disclosed if material (ASC 855-10-25-3). Income before income taxes
-    = $2,960,000 + $25,400 + $44,000 = $3,029,400.
+    = $2,960,000 − $12,600 + $44,000 = $2,991,400.

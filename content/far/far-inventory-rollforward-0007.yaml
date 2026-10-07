@@ -8,7 +8,7 @@ blueprint:
 review:
   status: draft
   references:
-  - ASC 330-10-35 (inventory write-downs; goods with no value)
+  - ASC 330-10-30-1 (cost of inventory includes freight-in)
   - 'ASC 705-20 (consideration received from a vendor: volume rebates reduce the cost of purchases, allocated
     to goods on hand and goods sold)'
   - 'ASC 606-10-55-79 to 55-80 (consignment arrangements: the consignor keeps the goods in inventory)'
@@ -16,163 +16,161 @@ review:
     answers solved and every number and distractor computed in code.
 stem: 'Illogan Metals Supply Co.''s staff prepared this Year 2 inventory rollforward from its perpetual
   records: beginning inventory $452,000, purchases $1,860,000, cost of goods sold $1,837,000, ending inventory
-  $475,000. Reviewing it, the controller finds that steel coils costing $21,000, ruined in August when
-  a warehouse sprinkler line burst and with no resale or scrap value, are still carried in inventory at
-  full cost; Illogan reports casualty losses separately from cost of goods sold. In December, Illogan
-  shipped goods costing $38,000 to a dealer that sells them on consignment, and the perpetual system recorded
-  them as sold when they left the warehouse; the dealer hadn''t sold any of them by December 31. And Illogan''s
-  Year 2 purchases of one supplier''s alloy bar, $600,000 in all, reached that supplier''s volume threshold
-  for a 5% rebate on the year''s purchases; the supplier issued the credit memo in January, and Illogan
-  hasn''t recorded the rebate. Alloy bar costing $240,000 from those purchases is still on hand at December
-  31; the rest has been sold. What cost of goods sold should the corrected rollforward report for Year
-  2?'
+  $475,000. Reviewing it, the controller finds that $27,000 of freight charges on incoming shipments from
+  suppliers, all for goods sold during Year 2, and $19,000 of freight on shipments to customers were both
+  charged to delivery expense. In December, Illogan shipped goods costing $38,000 to a dealer that sells
+  them on consignment, and the perpetual system recorded them as sold when they left the warehouse; the
+  dealer hadn''t sold any of them by December 31. And Illogan''s Year 2 purchases of one supplier''s alloy
+  bar, $600,000 in all, reached that supplier''s volume threshold for a 5% rebate on the year''s purchases;
+  the supplier issued the credit memo in January, and Illogan hasn''t recorded the rebate. Alloy bar costing
+  $240,000 from those purchases is still on hand at December 31; the rest has been sold. What cost of
+  goods sold should the corrected rollforward report for Year 2?'
 choices:
 - id: A
-  text: $1,769,000
+  text: $1,781,000
+  rationale: Leaves the $27,000 of freight on incoming purchases in delivery expense. Freight-in is part
+    of the cost of inventory; those goods have all been sold, so it belongs in cost of goods sold.
+- id: B
+  text: $1,796,000
   rationale: Takes the whole $30,000 rebate out of cost of goods sold. The rebate reduces the cost of
     all $600,000 of qualifying purchases, so the share on goods still on hand, $12,000, reduces inventory;
     only $18,000 reduces cost of goods sold.
-- id: B
-  text: $1,781,000
-  rationale: Correct. $1,837,000 − $38,000 (consigned goods still on hand) − $18,000 (rebate on goods
-    sold).
 - id: C
-  text: $1,802,000
-  rationale: Adds the $21,000 of ruined coils to cost of goods sold. Illogan reports casualty losses separately,
-    so the write-off comes out of inventory as a loss and doesn't pass through cost of goods sold.
+  text: $1,808,000
+  rationale: Correct. $1,837,000 + $27,000 freight-in − $38,000 consigned goods still on hand − $18,000
+    rebate on goods sold.
 - id: D
-  text: $1,819,000
+  text: $1,846,000
   rationale: Leaves the $38,000 of goods at the dealer in cost of goods sold. Goods out on consignment
     still belong to Illogan until the dealer sells them, so they go back into inventory.
-answer: B
-explanation: 'Goods out on consignment remain Illogan''s inventory until the dealer sells them (ASC 606-10-55-79
-  to 55-80), so the $38,000 comes out of cost of goods sold and back into inventory. The rebate reduces
-  the cost of the purchases that earned it (ASC 705-20): 5% × $600,000 = $30,000 in all. The share on
-  the $240,000 still on hand, 5% × $240,000 = $12,000, reduces ending inventory, and the remaining $18,000
-  reduces cost of goods sold. The ruined coils have no value, so their $21,000 cost is written off (ASC
-  330-10-35); Illogan reports that as a casualty loss, so it reduces inventory without touching cost of
-  goods sold. Corrected cost of goods sold = $1,837,000 − $38,000 − $18,000 = $1,781,000. (The corrected
-  rollforward: $452,000 + ($1,860,000 − $30,000) − $21,000 casualty loss − $1,781,000 = ending inventory
-  of $480,000.)'
+answer: C
+explanation: 'Freight-in is a cost of bringing goods to their location for sale, so it is part of inventory
+  cost (ASC 330-10-30-1); the goods it relates to were all sold, so the $27,000 moves from delivery expense
+  into cost of goods sold. Freight-out is a selling cost and stays in delivery expense. Goods out on consignment
+  remain Illogan''s inventory until the dealer sells them (ASC 606-10-55-79 to 55-80), so the $38,000
+  comes out of cost of goods sold and back into inventory. The rebate reduces the cost of the purchases
+  that earned it (ASC 705-20): 5% × $600,000 = $30,000 in all. The share on the $240,000 still on hand,
+  5% × $240,000 = $12,000, reduces ending inventory, and the remaining $18,000 reduces cost of goods sold.
+  Corrected cost of goods sold = $1,837,000 + $27,000 − $38,000 − $18,000 = $1,808,000. (The corrected
+  rollforward: $452,000 + ($1,860,000 + $27,000 − $30,000) − $1,808,000 = ending inventory of $501,000.)'
 variants:
 - stem: 'Tuckingmill Steel Co.''s staff prepared this Year 2 inventory rollforward from its perpetual
     records: beginning inventory $530,000, purchases $2,240,000, cost of goods sold $2,202,000, ending
-    inventory $568,000. Reviewing it, the controller finds that steel coils costing $25,000, ruined in
-    August when a warehouse sprinkler line burst and with no resale or scrap value, are still carried
-    in inventory at full cost; Tuckingmill reports casualty losses separately from cost of goods sold.
-    In December, Tuckingmill shipped goods costing $44,000 to a dealer that sells them on consignment,
-    and the perpetual system recorded them as sold when they left the warehouse; the dealer hadn''t sold
-    any of them by December 31. And Tuckingmill''s Year 2 purchases of one supplier''s alloy bar, $700,000
-    in all, reached that supplier''s volume threshold for a 4% rebate on the year''s purchases; the supplier
-    issued the credit memo in January, and Tuckingmill hasn''t recorded the rebate. Alloy bar costing
-    $300,000 from those purchases is still on hand at December 31; the rest has been sold. What cost of
-    goods sold should the corrected rollforward report for Year 2?'
+    inventory $568,000. Reviewing it, the controller finds that $31,000 of freight charges on incoming
+    shipments from suppliers, all for goods sold during Year 2, and $33,000 of freight on shipments to
+    customers were both charged to delivery expense. In December, Tuckingmill shipped goods costing $44,000
+    to a dealer that sells them on consignment, and the perpetual system recorded them as sold when they
+    left the warehouse; the dealer hadn''t sold any of them by December 31. And Tuckingmill''s Year 2
+    purchases of one supplier''s alloy bar, $700,000 in all, reached that supplier''s volume threshold
+    for a 4% rebate on the year''s purchases; the supplier issued the credit memo in January, and Tuckingmill
+    hasn''t recorded the rebate. Alloy bar costing $300,000 from those purchases is still on hand at December
+    31; the rest has been sold. What cost of goods sold should the corrected rollforward report for Year
+    2?'
   choices:
   - id: A
-    text: $2,142,000
-    rationale: Correct. $2,202,000 − $44,000 (consigned goods still on hand) − $16,000 (rebate on goods
-      sold).
+    text: $2,173,000
+    rationale: Correct. $2,202,000 + $31,000 freight-in − $44,000 consigned goods still on hand − $16,000
+      rebate on goods sold.
   - id: B
-    text: $2,158,000
+    text: $2,189,000
     rationale: Ignores the volume rebate. Tuckingmill earned it in Year 2, so it reduces the cost of the
       qualifying purchases, and the $16,000 share on goods already sold reduces cost of goods sold.
   - id: C
-    text: $2,167,000
-    rationale: Adds the $25,000 of ruined coils to cost of goods sold. Tuckingmill reports casualty losses
-      separately, so the write-off comes out of inventory as a loss and doesn't pass through cost of goods
-      sold.
+    text: $2,206,000
+    rationale: Also moves the $33,000 of freight on shipments to customers into cost of goods sold. Freight-out
+      is a selling (delivery) cost, not a cost of inventory, so it stays where it is.
   - id: D
-    text: $2,186,000
+    text: $2,217,000
     rationale: Leaves the $44,000 of goods at the dealer in cost of goods sold. Goods out on consignment
       still belong to Tuckingmill until the dealer sells them, so they go back into inventory.
   answer: A
-  explanation: 'Goods out on consignment remain Tuckingmill''s inventory until the dealer sells them (ASC
-    606-10-55-79 to 55-80), so the $44,000 comes out of cost of goods sold and back into inventory. The
-    rebate reduces the cost of the purchases that earned it (ASC 705-20): 4% × $700,000 = $28,000 in all.
-    The share on the $300,000 still on hand, 4% × $300,000 = $12,000, reduces ending inventory, and the
-    remaining $16,000 reduces cost of goods sold. The ruined coils have no value, so their $25,000 cost
-    is written off (ASC 330-10-35); Tuckingmill reports that as a casualty loss, so it reduces inventory
-    without touching cost of goods sold. Corrected cost of goods sold = $2,202,000 − $44,000 − $16,000
-    = $2,142,000. (The corrected rollforward: $530,000 + ($2,240,000 − $28,000) − $25,000 casualty loss
-    − $2,142,000 = ending inventory of $575,000.)'
+  explanation: 'Freight-in is a cost of bringing goods to their location for sale, so it is part of inventory
+    cost (ASC 330-10-30-1); the goods it relates to were all sold, so the $31,000 moves from delivery
+    expense into cost of goods sold. Freight-out is a selling cost and stays in delivery expense. Goods
+    out on consignment remain Tuckingmill''s inventory until the dealer sells them (ASC 606-10-55-79 to
+    55-80), so the $44,000 comes out of cost of goods sold and back into inventory. The rebate reduces
+    the cost of the purchases that earned it (ASC 705-20): 4% × $700,000 = $28,000 in all. The share on
+    the $300,000 still on hand, 4% × $300,000 = $12,000, reduces ending inventory, and the remaining $16,000
+    reduces cost of goods sold. Corrected cost of goods sold = $2,202,000 + $31,000 − $44,000 − $16,000
+    = $2,173,000. (The corrected rollforward: $530,000 + ($2,240,000 + $31,000 − $28,000) − $2,173,000
+    = ending inventory of $600,000.)'
 - stem: 'Troon Alloys Co.''s staff prepared this Year 2 inventory rollforward from its perpetual records:
     beginning inventory $330,000, purchases $1,450,000, cost of goods sold $1,438,000, ending inventory
-    $342,000. Reviewing it, the controller finds that steel coils costing $29,000, ruined in August when
-    a warehouse sprinkler line burst and with no resale or scrap value, are still carried in inventory
-    at full cost; Troon reports casualty losses separately from cost of goods sold. In December, Troon
-    shipped goods costing $26,000 to a dealer that sells them on consignment, and the perpetual system
-    recorded them as sold when they left the warehouse; the dealer hadn''t sold any of them by December
-    31. And Troon''s Year 2 purchases of one supplier''s alloy bar, $450,000 in all, reached that supplier''s
-    volume threshold for a 5% rebate on the year''s purchases; the supplier issued the credit memo in
-    January, and Troon hasn''t recorded the rebate. Alloy bar costing $180,000 from those purchases is
-    still on hand at December 31; the rest has been sold. What cost of goods sold should the corrected
-    rollforward report for Year 2?'
+    $342,000. Reviewing it, the controller finds that $34,000 of freight charges on incoming shipments
+    from suppliers, all for goods sold during Year 2, and $21,000 of freight on shipments to customers
+    were both charged to delivery expense. In December, Troon shipped goods costing $26,000 to a dealer
+    that sells them on consignment, and the perpetual system recorded them as sold when they left the
+    warehouse; the dealer hadn''t sold any of them by December 31. And Troon''s Year 2 purchases of one
+    supplier''s alloy bar, $450,000 in all, reached that supplier''s volume threshold for a 5% rebate
+    on the year''s purchases; the supplier issued the credit memo in January, and Troon hasn''t recorded
+    the rebate. Alloy bar costing $180,000 from those purchases is still on hand at December 31; the rest
+    has been sold. What cost of goods sold should the corrected rollforward report for Year 2?'
   choices:
   - id: A
-    text: $1,369,500
-    rationale: Takes the $29,000 of ruined coils out of cost of goods sold. The coils were never sold
-      or charged to cost of goods sold; they are still in inventory, and their write-off is a separate
-      casualty loss.
+    text: $1,398,500
+    rationale: Leaves the $34,000 of freight on incoming purchases in delivery expense. Freight-in is
+      part of the cost of inventory; those goods have all been sold, so it belongs in cost of goods sold.
   - id: B
-    text: $1,389,500
+    text: $1,423,500
     rationale: Takes the whole $22,500 rebate out of cost of goods sold. The rebate reduces the cost of
       all $450,000 of qualifying purchases, so the share on goods still on hand, $9,000, reduces inventory;
       only $13,500 reduces cost of goods sold.
   - id: C
-    text: $1,398,500
-    rationale: Correct. $1,438,000 − $26,000 (consigned goods still on hand) − $13,500 (rebate on goods
-      sold).
+    text: $1,432,500
+    rationale: Correct. $1,438,000 + $34,000 freight-in − $26,000 consigned goods still on hand − $13,500
+      rebate on goods sold.
   - id: D
-    text: $1,424,500
+    text: $1,458,500
     rationale: Leaves the $26,000 of goods at the dealer in cost of goods sold. Goods out on consignment
       still belong to Troon until the dealer sells them, so they go back into inventory.
   answer: C
-  explanation: 'Goods out on consignment remain Troon''s inventory until the dealer sells them (ASC 606-10-55-79
-    to 55-80), so the $26,000 comes out of cost of goods sold and back into inventory. The rebate reduces
-    the cost of the purchases that earned it (ASC 705-20): 5% × $450,000 = $22,500 in all. The share on
-    the $180,000 still on hand, 5% × $180,000 = $9,000, reduces ending inventory, and the remaining $13,500
-    reduces cost of goods sold. The ruined coils have no value, so their $29,000 cost is written off (ASC
-    330-10-35); Troon reports that as a casualty loss, so it reduces inventory without touching cost of
-    goods sold. Corrected cost of goods sold = $1,438,000 − $26,000 − $13,500 = $1,398,500. (The corrected
-    rollforward: $330,000 + ($1,450,000 − $22,500) − $29,000 casualty loss − $1,398,500 = ending inventory
-    of $330,000.)'
+  explanation: 'Freight-in is a cost of bringing goods to their location for sale, so it is part of inventory
+    cost (ASC 330-10-30-1); the goods it relates to were all sold, so the $34,000 moves from delivery
+    expense into cost of goods sold. Freight-out is a selling cost and stays in delivery expense. Goods
+    out on consignment remain Troon''s inventory until the dealer sells them (ASC 606-10-55-79 to 55-80),
+    so the $26,000 comes out of cost of goods sold and back into inventory. The rebate reduces the cost
+    of the purchases that earned it (ASC 705-20): 5% × $450,000 = $22,500 in all. The share on the $180,000
+    still on hand, 5% × $180,000 = $9,000, reduces ending inventory, and the remaining $13,500 reduces
+    cost of goods sold. Corrected cost of goods sold = $1,438,000 + $34,000 − $26,000 − $13,500 = $1,432,500.
+    (The corrected rollforward: $330,000 + ($1,450,000 + $34,000 − $22,500) − $1,432,500 = ending inventory
+    of $359,000.)'
 - stem: 'Praze Metals Co.''s staff prepared this Year 2 inventory rollforward from its perpetual records:
     beginning inventory $390,000, purchases $1,700,000, cost of goods sold $1,672,000, ending inventory
-    $418,000. Reviewing it, the controller finds that steel coils costing $18,000, ruined in August when
-    a warehouse sprinkler line burst and with no resale or scrap value, are still carried in inventory
-    at full cost; Praze reports casualty losses separately from cost of goods sold. In December, Praze
-    shipped goods costing $33,000 to a dealer that sells them on consignment, and the perpetual system
-    recorded them as sold when they left the warehouse; the dealer hadn''t sold any of them by December
-    31. And Praze''s Year 2 purchases of one supplier''s alloy bar, $650,000 in all, reached that supplier''s
-    volume threshold for a 4% rebate on the year''s purchases; the supplier issued the credit memo in
-    January, and Praze hasn''t recorded the rebate. Alloy bar costing $250,000 from those purchases is
-    still on hand at December 31; the rest has been sold. What cost of goods sold should the corrected
-    rollforward report for Year 2?'
+    $418,000. Reviewing it, the controller finds that $22,000 of freight charges on incoming shipments
+    from suppliers, all for goods sold during Year 2, and $16,000 of freight on shipments to customers
+    were both charged to delivery expense. In December, Praze shipped goods costing $33,000 to a dealer
+    that sells them on consignment, and the perpetual system recorded them as sold when they left the
+    warehouse; the dealer hadn''t sold any of them by December 31. And Praze''s Year 2 purchases of one
+    supplier''s alloy bar, $650,000 in all, reached that supplier''s volume threshold for a 4% rebate
+    on the year''s purchases; the supplier issued the credit memo in January, and Praze hasn''t recorded
+    the rebate. Alloy bar costing $250,000 from those purchases is still on hand at December 31; the rest
+    has been sold. What cost of goods sold should the corrected rollforward report for Year 2?'
   choices:
   - id: A
-    text: $1,613,000
+    text: $1,623,000
+    rationale: Leaves the $22,000 of freight on incoming purchases in delivery expense. Freight-in is
+      part of the cost of inventory; those goods have all been sold, so it belongs in cost of goods sold.
+  - id: B
+    text: $1,635,000
     rationale: Takes the whole $26,000 rebate out of cost of goods sold. The rebate reduces the cost of
       all $650,000 of qualifying purchases, so the share on goods still on hand, $10,000, reduces inventory;
       only $16,000 reduces cost of goods sold.
-  - id: B
-    text: $1,623,000
-    rationale: Correct. $1,672,000 − $33,000 (consigned goods still on hand) − $16,000 (rebate on goods
-      sold).
   - id: C
-    text: $1,641,000
-    rationale: Adds the $18,000 of ruined coils to cost of goods sold. Praze reports casualty losses separately,
-      so the write-off comes out of inventory as a loss and doesn't pass through cost of goods sold.
+    text: $1,645,000
+    rationale: Correct. $1,672,000 + $22,000 freight-in − $33,000 consigned goods still on hand − $16,000
+      rebate on goods sold.
   - id: D
-    text: $1,656,000
-    rationale: Leaves the $33,000 of goods at the dealer in cost of goods sold. Goods out on consignment
-      still belong to Praze until the dealer sells them, so they go back into inventory.
-  answer: B
-  explanation: 'Goods out on consignment remain Praze''s inventory until the dealer sells them (ASC 606-10-55-79
-    to 55-80), so the $33,000 comes out of cost of goods sold and back into inventory. The rebate reduces
-    the cost of the purchases that earned it (ASC 705-20): 4% × $650,000 = $26,000 in all. The share on
-    the $250,000 still on hand, 4% × $250,000 = $10,000, reduces ending inventory, and the remaining $16,000
-    reduces cost of goods sold. The ruined coils have no value, so their $18,000 cost is written off (ASC
-    330-10-35); Praze reports that as a casualty loss, so it reduces inventory without touching cost of
-    goods sold. Corrected cost of goods sold = $1,672,000 − $33,000 − $16,000 = $1,623,000. (The corrected
-    rollforward: $390,000 + ($1,700,000 − $26,000) − $18,000 casualty loss − $1,623,000 = ending inventory
-    of $423,000.)'
+    text: $1,661,000
+    rationale: Also moves the $16,000 of freight on shipments to customers into cost of goods sold. Freight-out
+      is a selling (delivery) cost, not a cost of inventory, so it stays where it is.
+  answer: C
+  explanation: 'Freight-in is a cost of bringing goods to their location for sale, so it is part of inventory
+    cost (ASC 330-10-30-1); the goods it relates to were all sold, so the $22,000 moves from delivery
+    expense into cost of goods sold. Freight-out is a selling cost and stays in delivery expense. Goods
+    out on consignment remain Praze''s inventory until the dealer sells them (ASC 606-10-55-79 to 55-80),
+    so the $33,000 comes out of cost of goods sold and back into inventory. The rebate reduces the cost
+    of the purchases that earned it (ASC 705-20): 4% × $650,000 = $26,000 in all. The share on the $250,000
+    still on hand, 4% × $250,000 = $10,000, reduces ending inventory, and the remaining $16,000 reduces
+    cost of goods sold. Corrected cost of goods sold = $1,672,000 + $22,000 − $33,000 − $16,000 = $1,645,000.
+    (The corrected rollforward: $390,000 + ($1,700,000 + $22,000 − $26,000) − $1,645,000 = ending inventory
+    of $441,000.)'

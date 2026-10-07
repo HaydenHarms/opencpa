@@ -20,175 +20,166 @@ stem: On November 1, Year 1, Penzance Contact Services Co.'s board approves a pl
   when, and what each employee will receive; Penzance doesn't expect to change the plan. Each employee
   will receive severance based on years of service, $840,000 in total, payable at termination whether
   the employee stays until the center closes or leaves earlier. Each of the center's 12 team leaders will
-  also receive a $15,000 bonus, but only if he or she stays until the center closes, and Penzance expects
-  all of them to stay. No law or agreement requires Penzance to give notice of termination. The center's
-  cleaning contract, which isn't a lease, can be ended early for a $65,000 fee by written notice; Penzance
-  plans to send the notice in March, Year 2, and will use the service until then. The center's telephone-service
-  contract, which can't be cancelled, runs through September 30, Year 2, at $4,200 a month; Penzance will
-  stop using the service when the center closes. Treat each month as equal in length. What liability for
-  exit costs should Penzance report at December 31, Year 1?
+  also receive a $15,000 bonus, but only if he or she stays until the center closes, and all of them do.
+  No law or agreement requires Penzance to give notice of termination. The center's cleaning contract,
+  which isn't a lease, can be ended early for a $65,000 fee by written notice; Penzance sends the notice
+  in March, Year 2, and uses the service until then. The center's telephone-service contract, which can't
+  be cancelled, runs through September 30, Year 2, at $4,200 a month; Penzance stops using the service
+  when the center closes. Treat each month as equal in length, and ignore discounting. What exit-cost
+  expense should Penzance recognize in Year 2?
 choices:
 - id: A
-  text: $340,000
-  rationale: Accrues only 2/6 of the $840,000 of severance, as though employees had to keep working to
-    earn it. Employees receive it whether they stay or leave early, so all of it is recognized when the
-    plan is communicated.
+  text: $141,000
+  rationale: Leaves out the $65,000 fee to end the cleaning contract. A contract termination cost is recognized
+    when the contract is terminated under its terms, by the written notice Penzance sends in March, Year
+    2.
 - id: B
-  text: $900,000
-  rationale: Correct. $840,000 of severance, recognized in full at the communication date, plus 2/6 ×
-    $180,000 = $60,000 of team-leader bonuses.
+  text: $206,000
+  rationale: Correct. $120,000 remaining bonuses + $65,000 termination fee + $21,000 telephone fees after
+    the cease-use date.
 - id: C
-  text: $965,000
-  rationale: Also accrues the $65,000 fee to end the cleaning contract early. A contract termination cost
-    is recognized when the contract is terminated under its terms, here by written notice, which Penzance
-    won't send until March, Year 2.
+  text: $266,000
+  rationale: Charges the whole $180,000 of team-leader bonuses to Year 2, when they are paid. They are
+    recognized ratably over the 6-month service period, so 2/6 ($60,000) was already recognized in Year
+    1.
 - id: D
-  text: $1,020,000
-  rationale: 'Accrues the whole $180,000 of team-leader bonuses at the communication date. The bonuses
-    are paid only to those who stay until the center closes, a service period longer than 60 days, so
-    they are recognized ratably over the 6 months: 2/6 by December 31.'
+  text: $1,046,000
+  rationale: Also charges the $840,000 of severance to Year 2, when it is paid. Employees receive it whether
+    they stay or leave early, so all of it was recognized when the plan was communicated in Year 1.
 answer: B
-explanation: 'One-time termination benefits that employees receive without rendering further service are
-  recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the $840,000 of severance.
-  The team-leader bonuses require service until the center closes, 6 months after the communication date,
-  which is longer than the 60-day minimum retention period that applies when no law sets one, so they
-  are recognized ratably over that service period (ASC 420-10-25-9): $180,000 × 2/6 = $60,000 by December
-  31. A contract termination cost is recognized when the entity terminates the contract under its terms,
-  for example by giving written notice (ASC 420-10-25-11); Penzance hasn''t given notice, so the $65,000
-  fee isn''t a liability yet. The telephone-service fees due after the center closes, 5 × $4,200 = $21,000,
-  are a cost that continues under a contract without economic benefit, recognized at the cease-use date
-  in Year 2 (ASC 420-10-25-13), so none of it is a liability at December 31, Year 1. Liability = $840,000
-  + $60,000 = $900,000.'
+explanation: 'Severance that employees receive without further service was recognized in full when the
+  plan was communicated in Year 1 (ASC 420-10-25-4 and 25-8), so none of the $840,000 is Year 2 expense.
+  The team-leader bonuses require service until the center closes, 6 months after communication and longer
+  than the 60-day minimum retention period, so they are recognized ratably (ASC 420-10-25-9): 2/6 of $180,000
+  = $60,000 in Year 1, leaving $120,000 for Year 2. The cleaning-contract fee is recognized when Penzance
+  terminates the contract by giving notice in March, Year 2 (ASC 420-10-25-11): $65,000. The telephone
+  fees due after the center closes, 5 × $4,200 = $21,000, continue without economic benefit and are recognized
+  at the cease-use date (ASC 420-10-25-13). Year 2 exit-cost expense = $120,000 + $65,000 + $21,000 =
+  $206,000.'
 variants:
 - stem: On October 1, Year 1, Truro Customer Care Co.'s board approves a plan to close a regional call
     center on March 31, Year 2, and that day tells the center's 55 employees which positions will end,
     when, and what each employee will receive; Truro doesn't expect to change the plan. Each employee
     will receive severance based on years of service, $615,000 in total, payable at termination whether
     the employee stays until the center closes or leaves earlier. Each of the center's 9 team leaders
-    will also receive a $12,000 bonus, but only if he or she stays until the center closes, and Truro
-    expects all of them to stay. No law or agreement requires Truro to give notice of termination. The
-    center's cleaning contract, which isn't a lease, can be ended early for a $48,000 fee by written notice;
-    Truro plans to send the notice in March, Year 2, and will use the service until then. The center's
-    telephone-service contract, which can't be cancelled, runs through July 31, Year 2, at $3,600 a month;
-    Truro will stop using the service when the center closes. Treat each month as equal in length. What
-    liability for exit costs should Truro report at December 31, Year 1?
+    will also receive a $12,000 bonus, but only if he or she stays until the center closes, and all of
+    them do. No law or agreement requires Truro to give notice of termination. The center's cleaning contract,
+    which isn't a lease, can be ended early for a $48,000 fee by written notice; Truro sends the notice
+    in March, Year 2, and uses the service until then. The center's telephone-service contract, which
+    can't be cancelled, runs through July 31, Year 2, at $3,600 a month; Truro stops using the service
+    when the center closes. Treat each month as equal in length, and ignore discounting. What exit-cost
+    expense should Truro recognize in Year 2?
   choices:
   - id: A
-    text: $361,500
-    rationale: Accrues only 3/6 of the $615,000 of severance, as though employees had to keep working
-      to earn it. Employees receive it whether they stay or leave early, so all of it is recognized when
-      the plan is communicated.
+    text: $68,400
+    rationale: Leaves out the $48,000 fee to end the cleaning contract. A contract termination cost is
+      recognized when the contract is terminated under its terms, by the written notice Truro sends in
+      March, Year 2.
   - id: B
-    text: $615,000
-    rationale: 'Leaves out the team-leader bonuses until the center closes. A benefit that requires service
-      until closure is still recognized as the service is rendered, ratably from the communication date:
-      3/6 of $108,000 by December 31.'
+    text: $102,000
+    rationale: Leaves out the $14,400 of telephone-service fees due after the center closes (4 months
+      × $3,600). They continue without benefit to Truro, so they are recognized in full at the cease-use
+      date, March 31, Year 2.
   - id: C
-    text: $669,000
-    rationale: Correct. $615,000 of severance, recognized in full at the communication date, plus 3/6
-      × $108,000 = $54,000 of team-leader bonuses.
+    text: $116,400
+    rationale: Correct. $54,000 remaining bonuses + $48,000 termination fee + $14,400 telephone fees after
+      the cease-use date.
   - id: D
-    text: $683,400
-    rationale: Also accrues the $14,400 of telephone-service fees due after the center closes (4 months
-      × $3,600). Costs that continue under a contract without benefit to the entity are recognized at
-      the cease-use date, March 31, Year 2, not when the plan is approved.
+    text: $170,400
+    rationale: Charges the whole $108,000 of team-leader bonuses to Year 2, when they are paid. They are
+      recognized ratably over the 6-month service period, so 3/6 ($54,000) was already recognized in Year
+      1.
   answer: C
-  explanation: 'One-time termination benefits that employees receive without rendering further service
-    are recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the $615,000 of severance.
-    The team-leader bonuses require service until the center closes, 6 months after the communication
-    date, which is longer than the 60-day minimum retention period that applies when no law sets one,
-    so they are recognized ratably over that service period (ASC 420-10-25-9): $108,000 × 3/6 = $54,000
-    by December 31. A contract termination cost is recognized when the entity terminates the contract
-    under its terms, for example by giving written notice (ASC 420-10-25-11); Truro hasn''t given notice,
-    so the $48,000 fee isn''t a liability yet. The telephone-service fees due after the center closes,
-    4 × $3,600 = $14,400, are a cost that continues under a contract without economic benefit, recognized
-    at the cease-use date in Year 2 (ASC 420-10-25-13), so none of it is a liability at December 31, Year
-    1. Liability = $615,000 + $54,000 = $669,000.'
+  explanation: 'Severance that employees receive without further service was recognized in full when the
+    plan was communicated in Year 1 (ASC 420-10-25-4 and 25-8), so none of the $615,000 is Year 2 expense.
+    The team-leader bonuses require service until the center closes, 6 months after communication and
+    longer than the 60-day minimum retention period, so they are recognized ratably (ASC 420-10-25-9):
+    3/6 of $108,000 = $54,000 in Year 1, leaving $54,000 for Year 2. The cleaning-contract fee is recognized
+    when Truro terminates the contract by giving notice in March, Year 2 (ASC 420-10-25-11): $48,000.
+    The telephone fees due after the center closes, 4 × $3,600 = $14,400, continue without economic benefit
+    and are recognized at the cease-use date (ASC 420-10-25-13). Year 2 exit-cost expense = $54,000 +
+    $48,000 + $14,400 = $116,400.'
 - stem: On September 1, Year 1, Kenwyn Teleservices Co.'s board approves a plan to close a regional call
     center on March 31, Year 2, and that day tells the center's 85 employees which positions will end,
     when, and what each employee will receive; Kenwyn doesn't expect to change the plan. Each employee
     will receive severance based on years of service, $980,000 in total, payable at termination whether
     the employee stays until the center closes or leaves earlier. Each of the center's 14 team leaders
-    will also receive a $14,000 bonus, but only if he or she stays until the center closes, and Kenwyn
-    expects all of them to stay. No law or agreement requires Kenwyn to give notice of termination. The
-    center's cleaning contract, which isn't a lease, can be ended early for a $72,000 fee by written notice;
-    Kenwyn plans to send the notice in March, Year 2, and will use the service until then. The center's
-    telephone-service contract, which can't be cancelled, runs through June 30, Year 2, at $5,100 a month;
-    Kenwyn will stop using the service when the center closes. Treat each month as equal in length. What
-    liability for exit costs should Kenwyn report at December 31, Year 1?
+    will also receive a $14,000 bonus, but only if he or she stays until the center closes, and all of
+    them do. No law or agreement requires Kenwyn to give notice of termination. The center's cleaning
+    contract, which isn't a lease, can be ended early for a $72,000 fee by written notice; Kenwyn sends
+    the notice in March, Year 2, and uses the service until then. The center's telephone-service contract,
+    which can't be cancelled, runs through June 30, Year 2, at $5,100 a month; Kenwyn stops using the
+    service when the center closes. Treat each month as equal in length, and ignore discounting. What
+    exit-cost expense should Kenwyn recognize in Year 2?
   choices:
   - id: A
-    text: $980,000
-    rationale: 'Leaves out the team-leader bonuses until the center closes. A benefit that requires service
-      until closure is still recognized as the service is rendered, ratably from the communication date:
-      4/7 of $196,000 by December 31.'
+    text: $156,000
+    rationale: Leaves out the $15,300 of telephone-service fees due after the center closes (3 months
+      × $5,100). They continue without benefit to Kenwyn, so they are recognized in full at the cease-use
+      date, March 31, Year 2.
   - id: B
-    text: $1,092,000
-    rationale: Correct. $980,000 of severance, recognized in full at the communication date, plus 4/7
-      × $196,000 = $112,000 of team-leader bonuses.
+    text: $171,300
+    rationale: Correct. $84,000 remaining bonuses + $72,000 termination fee + $15,300 telephone fees after
+      the cease-use date.
   - id: C
-    text: $1,107,300
-    rationale: Also accrues the $15,300 of telephone-service fees due after the center closes (3 months
-      × $5,100). Costs that continue under a contract without benefit to the entity are recognized at
-      the cease-use date, March 31, Year 2, not when the plan is approved.
+    text: $283,300
+    rationale: Charges the whole $196,000 of team-leader bonuses to Year 2, when they are paid. They are
+      recognized ratably over the 7-month service period, so 4/7 ($112,000) was already recognized in
+      Year 1.
   - id: D
-    text: $1,176,000
-    rationale: 'Accrues the whole $196,000 of team-leader bonuses at the communication date. The bonuses
-      are paid only to those who stay until the center closes, a service period longer than 60 days, so
-      they are recognized ratably over the 7 months: 4/7 by December 31.'
+    text: $1,151,300
+    rationale: Also charges the $980,000 of severance to Year 2, when it is paid. Employees receive it
+      whether they stay or leave early, so all of it was recognized when the plan was communicated in
+      Year 1.
   answer: B
-  explanation: 'One-time termination benefits that employees receive without rendering further service
-    are recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the $980,000 of severance.
-    The team-leader bonuses require service until the center closes, 7 months after the communication
-    date, which is longer than the 60-day minimum retention period that applies when no law sets one,
-    so they are recognized ratably over that service period (ASC 420-10-25-9): $196,000 × 4/7 = $112,000
-    by December 31. A contract termination cost is recognized when the entity terminates the contract
-    under its terms, for example by giving written notice (ASC 420-10-25-11); Kenwyn hasn''t given notice,
-    so the $72,000 fee isn''t a liability yet. The telephone-service fees due after the center closes,
-    3 × $5,100 = $15,300, are a cost that continues under a contract without economic benefit, recognized
-    at the cease-use date in Year 2 (ASC 420-10-25-13), so none of it is a liability at December 31, Year
-    1. Liability = $980,000 + $112,000 = $1,092,000.'
+  explanation: 'Severance that employees receive without further service was recognized in full when the
+    plan was communicated in Year 1 (ASC 420-10-25-4 and 25-8), so none of the $980,000 is Year 2 expense.
+    The team-leader bonuses require service until the center closes, 7 months after communication and
+    longer than the 60-day minimum retention period, so they are recognized ratably (ASC 420-10-25-9):
+    4/7 of $196,000 = $112,000 in Year 1, leaving $84,000 for Year 2. The cleaning-contract fee is recognized
+    when Kenwyn terminates the contract by giving notice in March, Year 2 (ASC 420-10-25-11): $72,000.
+    The telephone fees due after the center closes, 3 × $5,100 = $15,300, continue without economic benefit
+    and are recognized at the cease-use date (ASC 420-10-25-13). Year 2 exit-cost expense = $84,000 +
+    $72,000 + $15,300 = $171,300.'
 - stem: On December 1, Year 1, Holywell Support Services Co.'s board approves a plan to close a regional
     call center on March 31, Year 2, and that day tells the center's 60 employees which positions will
     end, when, and what each employee will receive; Holywell doesn't expect to change the plan. Each employee
     will receive severance based on years of service, $725,000 in total, payable at termination whether
     the employee stays until the center closes or leaves earlier. Each of the center's 10 team leaders
-    will also receive a $16,000 bonus, but only if he or she stays until the center closes, and Holywell
-    expects all of them to stay. No law or agreement requires Holywell to give notice of termination.
-    The center's cleaning contract, which isn't a lease, can be ended early for a $55,000 fee by written
-    notice; Holywell plans to send the notice in March, Year 2, and will use the service until then. The
-    center's telephone-service contract, which can't be cancelled, runs through September 30, Year 2,
-    at $3,900 a month; Holywell will stop using the service when the center closes. Treat each month as
-    equal in length. What liability for exit costs should Holywell report at December 31, Year 1?
+    will also receive a $16,000 bonus, but only if he or she stays until the center closes, and all of
+    them do. No law or agreement requires Holywell to give notice of termination. The center's cleaning
+    contract, which isn't a lease, can be ended early for a $55,000 fee by written notice; Holywell sends
+    the notice in March, Year 2, and uses the service until then. The center's telephone-service contract,
+    which can't be cancelled, runs through September 30, Year 2, at $3,900 a month; Holywell stops using
+    the service when the center closes. Treat each month as equal in length, and ignore discounting. What
+    exit-cost expense should Holywell recognize in Year 2?
   choices:
   - id: A
-    text: $221,250
-    rationale: Accrues only 1/4 of the $725,000 of severance, as though employees had to keep working
-      to earn it. Employees receive it whether they stay or leave early, so all of it is recognized when
-      the plan is communicated.
+    text: $143,400
+    rationale: Leaves out the $55,000 fee to end the cleaning contract. A contract termination cost is
+      recognized when the contract is terminated under its terms, by the written notice Holywell sends
+      in March, Year 2.
   - id: B
-    text: $725,000
-    rationale: 'Leaves out the team-leader bonuses until the center closes. A benefit that requires service
-      until closure is still recognized as the service is rendered, ratably from the communication date:
-      1/4 of $160,000 by December 31.'
+    text: $175,000
+    rationale: Leaves out the $23,400 of telephone-service fees due after the center closes (6 months
+      × $3,900). They continue without benefit to Holywell, so they are recognized in full at the cease-use
+      date, March 31, Year 2.
   - id: C
-    text: $765,000
-    rationale: Correct. $725,000 of severance, recognized in full at the communication date, plus 1/4
-      × $160,000 = $40,000 of team-leader bonuses.
+    text: $198,400
+    rationale: Correct. $120,000 remaining bonuses + $55,000 termination fee + $23,400 telephone fees
+      after the cease-use date.
   - id: D
-    text: $820,000
-    rationale: Also accrues the $55,000 fee to end the cleaning contract early. A contract termination
-      cost is recognized when the contract is terminated under its terms, here by written notice, which
-      Holywell won't send until March, Year 2.
+    text: $238,400
+    rationale: Charges the whole $160,000 of team-leader bonuses to Year 2, when they are paid. They are
+      recognized ratably over the 4-month service period, so 1/4 ($40,000) was already recognized in Year
+      1.
   answer: C
-  explanation: 'One-time termination benefits that employees receive without rendering further service
-    are recognized in full when the plan is communicated (ASC 420-10-25-4 and 25-8): the $725,000 of severance.
-    The team-leader bonuses require service until the center closes, 4 months after the communication
-    date, which is longer than the 60-day minimum retention period that applies when no law sets one,
-    so they are recognized ratably over that service period (ASC 420-10-25-9): $160,000 × 1/4 = $40,000
-    by December 31. A contract termination cost is recognized when the entity terminates the contract
-    under its terms, for example by giving written notice (ASC 420-10-25-11); Holywell hasn''t given notice,
-    so the $55,000 fee isn''t a liability yet. The telephone-service fees due after the center closes,
-    6 × $3,900 = $23,400, are a cost that continues under a contract without economic benefit, recognized
-    at the cease-use date in Year 2 (ASC 420-10-25-13), so none of it is a liability at December 31, Year
-    1. Liability = $725,000 + $40,000 = $765,000.'
+  explanation: 'Severance that employees receive without further service was recognized in full when the
+    plan was communicated in Year 1 (ASC 420-10-25-4 and 25-8), so none of the $725,000 is Year 2 expense.
+    The team-leader bonuses require service until the center closes, 4 months after communication and
+    longer than the 60-day minimum retention period, so they are recognized ratably (ASC 420-10-25-9):
+    1/4 of $160,000 = $40,000 in Year 1, leaving $120,000 for Year 2. The cleaning-contract fee is recognized
+    when Holywell terminates the contract by giving notice in March, Year 2 (ASC 420-10-25-11): $55,000.
+    The telephone fees due after the center closes, 6 × $3,900 = $23,400, continue without economic benefit
+    and are recognized at the cease-use date (ASC 420-10-25-13). Year 2 exit-cost expense = $120,000 +
+    $55,000 + $23,400 = $198,400.'

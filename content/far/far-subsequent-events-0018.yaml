@@ -17,10 +17,11 @@ stem: Hallowfield Textiles Co., a private company that is not an SEC filer, has 
   1, balance sheet that reports retained earnings of $1,240,000. That balance reflects a $140,000 penalty,
   recorded as a reduction of revenue, that Hallowfield expected to owe a customer under their contract
   for missing a Year 1 delivery deadline. The statements will be available to be issued on March 12, Year
-  2. In January, Year 2, Hallowfield and the customer finished negotiating the penalty and fixed it at
-  $95,000. In February, Year 2, Hallowfield's board declared a 5% stock dividend, recorded at $260,000.
-  Hallowfield's tax rate is 25% for all effects. What retained earnings should Hallowfield report at December
-  31, Year 1?
+  2. The contract sets the penalty at $5,000 for each day the delivery was late, measured by the customer's
+  receiving records, which the contract makes final. In January, Year 2, those records arrived and showed
+  the delivery was 19 days late, so the penalty is $95,000. In February, Year 2, Hallowfield's board declared
+  a 5% stock dividend, recorded at $260,000. Hallowfield's tax rate is 25% for all effects. What retained
+  earnings should Hallowfield report at December 31, Year 1?
 choices:
 - id: A
   text: $1,013,750
@@ -29,8 +30,8 @@ choices:
     31, Year 1, retained earnings; it is disclosed.
 - id: B
   text: $1,206,250
-  rationale: Subtracts the adjustment. The negotiated penalty is lower than the amount accrued at year-end,
-    so the correction raises revenue and retained earnings, net of tax.
+  rationale: Subtracts the adjustment. The penalty under the contract formula is lower than the amount
+    accrued at year-end, so the correction raises revenue and retained earnings, net of tax.
 - id: C
   text: $1,273,750
   rationale: Correct. $1,240,000 + ($140,000 − $95,000) × 75%.
@@ -39,8 +40,8 @@ choices:
   rationale: Adds the full pretax $45,000 reduction in the penalty, without its 25% tax effect.
 answer: C
 explanation: 'A penalty payable to a customer is variable consideration, which reduces revenue (ASC 606-10-32-5
-  to 32-9). The negotiation, completed before the statements were available to be issued, fixes the amount
-  of an obligation that existed at year-end, so it is a recognized subsequent event (ASC 855-10-25-1):
+  to 32-9). The receiving records, which arrived before the statements were available to be issued, fix
+  the amount of an obligation that existed at year-end, so it is a recognized subsequent event (ASC 855-10-25-1):
   the $140,000 accrual falls to $95,000, raising Year 1 revenue by $45,000, or $33,750 after the 25% tax.
   For a company that isn''t an SEC filer, a stock dividend declared after year-end is recorded when declared,
   in Year 2, and disclosed (ASC 855-10-25-3); only SEC registrants give such dividends retroactive effect
@@ -50,10 +51,11 @@ variants:
     2, balance sheet that reports retained earnings of $1,180,000. That balance reflects a $110,000 penalty,
     recorded as a reduction of revenue, that Marplewood expected to owe a customer under their contract
     for missing a Year 2 delivery deadline. The statements will be available to be issued on March 27,
-    Year 3. In February, Year 3, Marplewood and the customer finished negotiating the penalty and fixed
-    it at $72,000. In March, Year 3, Marplewood's board declared a 4% stock dividend, recorded at $190,000.
-    Marplewood's tax rate is 21% for all effects. What retained earnings should Marplewood report at December
-    31, Year 2?
+    Year 3. The contract sets the penalty at $4,000 for each day the delivery was late, measured by the
+    customer's receiving records, which the contract makes final. In February, Year 3, those records arrived
+    and showed the delivery was 18 days late, so the penalty is $72,000. In March, Year 3, Marplewood's
+    board declared a 4% stock dividend, recorded at $190,000. Marplewood's tax rate is 21% for all effects.
+    What retained earnings should Marplewood report at December 31, Year 2?
   choices:
   - id: A
     text: $1,020,020
@@ -62,32 +64,33 @@ variants:
       31, Year 2, retained earnings; it is disclosed.
   - id: B
     text: $1,149,980
-    rationale: Subtracts the adjustment. The negotiated penalty is lower than the amount accrued at year-end,
-      so the correction raises revenue and retained earnings, net of tax.
+    rationale: Subtracts the adjustment. The penalty under the contract formula is lower than the amount
+      accrued at year-end, so the correction raises revenue and retained earnings, net of tax.
   - id: C
     text: $1,180,000
-    rationale: Accepts the draft $1,180,000. The negotiation fixes the amount of an obligation that existed
-      at year-end, so the accrual is adjusted.
+    rationale: Accepts the draft $1,180,000. The receiving records fix the amount of an obligation that
+      existed at year-end, so the accrual is adjusted.
   - id: D
     text: $1,210,020
     rationale: Correct. $1,180,000 + ($110,000 − $72,000) × 79%.
   answer: D
   explanation: 'A penalty payable to a customer is variable consideration, which reduces revenue (ASC
-    606-10-32-5 to 32-9). The negotiation, completed before the statements were available to be issued,
-    fixes the amount of an obligation that existed at year-end, so it is a recognized subsequent event
-    (ASC 855-10-25-1): the $110,000 accrual falls to $72,000, raising Year 2 revenue by $38,000, or $30,020
-    after the 21% tax. For a company that isn''t an SEC filer, a stock dividend declared after year-end
-    is recorded when declared, in Year 3, and disclosed (ASC 855-10-25-3); only SEC registrants give such
-    dividends retroactive effect in the balance sheet (SEC SAB Topic 4C). Retained earnings = $1,180,000
-    + $30,020 = $1,210,020.'
+    606-10-32-5 to 32-9). The receiving records, which arrived before the statements were available to
+    be issued, fix the amount of an obligation that existed at year-end, so it is a recognized subsequent
+    event (ASC 855-10-25-1): the $110,000 accrual falls to $72,000, raising Year 2 revenue by $38,000,
+    or $30,020 after the 21% tax. For a company that isn''t an SEC filer, a stock dividend declared after
+    year-end is recorded when declared, in Year 3, and disclosed (ASC 855-10-25-3); only SEC registrants
+    give such dividends retroactive effect in the balance sheet (SEC SAB Topic 4C). Retained earnings
+    = $1,180,000 + $30,020 = $1,210,020.'
 - stem: Oakenshaw Goods Co., a private company that is not an SEC filer, has a draft December 31, Year
     3, balance sheet that reports retained earnings of $2,360,000. That balance reflects a $175,000 penalty,
     recorded as a reduction of revenue, that Oakenshaw expected to owe a customer under their contract
     for missing a Year 3 delivery deadline. The statements will be available to be issued on March 9,
-    Year 4. In January, Year 4, Oakenshaw and the customer finished negotiating the penalty and fixed
-    it at $120,000. In February, Year 4, Oakenshaw's board declared a 6% stock dividend, recorded at $340,000.
-    Oakenshaw's tax rate is 25% for all effects. What retained earnings should Oakenshaw report at December
-    31, Year 3?
+    Year 4. The contract sets the penalty at $5,000 for each day the delivery was late, measured by the
+    customer's receiving records, which the contract makes final. In January, Year 4, those records arrived
+    and showed the delivery was 24 days late, so the penalty is $120,000. In February, Year 4, Oakenshaw's
+    board declared a 6% stock dividend, recorded at $340,000. Oakenshaw's tax rate is 25% for all effects.
+    What retained earnings should Oakenshaw report at December 31, Year 3?
   choices:
   - id: A
     text: $2,061,250
@@ -96,8 +99,8 @@ variants:
       31, Year 3, retained earnings; it is disclosed.
   - id: B
     text: $2,360,000
-    rationale: Accepts the draft $2,360,000. The negotiation fixes the amount of an obligation that existed
-      at year-end, so the accrual is adjusted.
+    rationale: Accepts the draft $2,360,000. The receiving records fix the amount of an obligation that
+      existed at year-end, so the accrual is adjusted.
   - id: C
     text: $2,401,250
     rationale: Correct. $2,360,000 + ($175,000 − $120,000) × 75%.
@@ -106,30 +109,31 @@ variants:
     rationale: Adds the full pretax $55,000 reduction in the penalty, without its 25% tax effect.
   answer: C
   explanation: 'A penalty payable to a customer is variable consideration, which reduces revenue (ASC
-    606-10-32-5 to 32-9). The negotiation, completed before the statements were available to be issued,
-    fixes the amount of an obligation that existed at year-end, so it is a recognized subsequent event
-    (ASC 855-10-25-1): the $175,000 accrual falls to $120,000, raising Year 3 revenue by $55,000, or $41,250
-    after the 25% tax. For a company that isn''t an SEC filer, a stock dividend declared after year-end
-    is recorded when declared, in Year 4, and disclosed (ASC 855-10-25-3); only SEC registrants give such
-    dividends retroactive effect in the balance sheet (SEC SAB Topic 4C). Retained earnings = $2,360,000
-    + $41,250 = $2,401,250.'
+    606-10-32-5 to 32-9). The receiving records, which arrived before the statements were available to
+    be issued, fix the amount of an obligation that existed at year-end, so it is a recognized subsequent
+    event (ASC 855-10-25-1): the $175,000 accrual falls to $120,000, raising Year 3 revenue by $55,000,
+    or $41,250 after the 25% tax. For a company that isn''t an SEC filer, a stock dividend declared after
+    year-end is recorded when declared, in Year 4, and disclosed (ASC 855-10-25-3); only SEC registrants
+    give such dividends retroactive effect in the balance sheet (SEC SAB Topic 4C). Retained earnings
+    = $2,360,000 + $41,250 = $2,401,250.'
 - stem: Brimsdale Products Co., a private company that is not an SEC filer, has a draft December 31, Year
     4, balance sheet that reports retained earnings of $1,140,000. That balance reflects a $90,000 penalty,
     recorded as a reduction of revenue, that Brimsdale expected to owe a customer under their contract
     for missing a Year 4 delivery deadline. The statements will be available to be issued on March 24,
-    Year 5. In February, Year 5, Brimsdale and the customer finished negotiating the penalty and fixed
-    it at $58,000. In March, Year 5, Brimsdale's board declared a 5% stock dividend, recorded at $160,000.
-    Brimsdale's tax rate is 21% for all effects. What retained earnings should Brimsdale report at December
-    31, Year 4?
+    Year 5. The contract sets the penalty at $2,000 for each day the delivery was late, measured by the
+    customer's receiving records, which the contract makes final. In February, Year 5, those records arrived
+    and showed the delivery was 29 days late, so the penalty is $58,000. In March, Year 5, Brimsdale's
+    board declared a 5% stock dividend, recorded at $160,000. Brimsdale's tax rate is 21% for all effects.
+    What retained earnings should Brimsdale report at December 31, Year 4?
   choices:
   - id: A
     text: $1,114,720
-    rationale: Subtracts the adjustment. The negotiated penalty is lower than the amount accrued at year-end,
-      so the correction raises revenue and retained earnings, net of tax.
+    rationale: Subtracts the adjustment. The penalty under the contract formula is lower than the amount
+      accrued at year-end, so the correction raises revenue and retained earnings, net of tax.
   - id: B
     text: $1,140,000
-    rationale: Accepts the draft $1,140,000. The negotiation fixes the amount of an obligation that existed
-      at year-end, so the accrual is adjusted.
+    rationale: Accepts the draft $1,140,000. The receiving records fix the amount of an obligation that
+      existed at year-end, so the accrual is adjusted.
   - id: C
     text: $1,165,280
     rationale: Correct. $1,140,000 + ($90,000 − $58,000) × 79%.
@@ -138,10 +142,10 @@ variants:
     rationale: Adds the full pretax $32,000 reduction in the penalty, without its 21% tax effect.
   answer: C
   explanation: 'A penalty payable to a customer is variable consideration, which reduces revenue (ASC
-    606-10-32-5 to 32-9). The negotiation, completed before the statements were available to be issued,
-    fixes the amount of an obligation that existed at year-end, so it is a recognized subsequent event
-    (ASC 855-10-25-1): the $90,000 accrual falls to $58,000, raising Year 4 revenue by $32,000, or $25,280
-    after the 21% tax. For a company that isn''t an SEC filer, a stock dividend declared after year-end
-    is recorded when declared, in Year 5, and disclosed (ASC 855-10-25-3); only SEC registrants give such
-    dividends retroactive effect in the balance sheet (SEC SAB Topic 4C). Retained earnings = $1,140,000
-    + $25,280 = $1,165,280.'
+    606-10-32-5 to 32-9). The receiving records, which arrived before the statements were available to
+    be issued, fix the amount of an obligation that existed at year-end, so it is a recognized subsequent
+    event (ASC 855-10-25-1): the $90,000 accrual falls to $58,000, raising Year 4 revenue by $32,000,
+    or $25,280 after the 21% tax. For a company that isn''t an SEC filer, a stock dividend declared after
+    year-end is recorded when declared, in Year 5, and disclosed (ASC 855-10-25-3); only SEC registrants
+    give such dividends retroactive effect in the balance sheet (SEC SAB Topic 4C). Retained earnings
+    = $1,140,000 + $25,280 = $1,165,280.'

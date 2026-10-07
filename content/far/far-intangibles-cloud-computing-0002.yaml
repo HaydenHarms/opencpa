@@ -17,14 +17,15 @@ review:
     answers solved and every number and distractor computed in code.
 stem: On January 1, Year 1, Perrancombe Logistics Co. signs a noncancellable 4-year contract, running
   from that date, for access to a vendor's cloud-hosted warehouse management system. Perrancombe has no
-  right to take the software onto its own servers. The contract lets Perrancombe extend it for 2 more
-  years at the vendor's list prices at that time, and management hasn't decided whether it will. After
-  the board approved and funded the project, Perrancombe paid consultants $36,000 to redesign its receiving
-  and picking processes before configuration began, $225,000 to configure and test the inventory module,
-  which was ready for its intended use on April 1, Year 1, and $117,000 to configure and test the shipping
-  module, ready on October 1, Year 1. Each module works independently of the other. Perrancombe amortizes
-  capitalized implementation costs straight-line by month. What amount should Perrancombe report as capitalized
-  implementation costs, net of accumulated amortization, at December 31, Year 1?
+  right to take the software onto its own servers. The system is in general release and needs only configuration
+  for Perrancombe's operations. The contract lets Perrancombe extend it for 2 more years at the vendor's
+  list prices at that time, and management hasn't decided whether it will. After the board approved and
+  funded the project, Perrancombe paid consultants $36,000 to redesign its receiving and picking processes
+  before configuration began, $225,000 to configure and test the inventory module, which was ready for
+  its intended use on April 1, Year 1, and $117,000 to configure and test the shipping module, ready on
+  October 1, Year 1. Each module works independently of the other. Perrancombe amortizes capitalized implementation
+  costs straight-line by month. What amount should Perrancombe report as capitalized implementation costs,
+  net of accumulated amortization, at December 31, Year 1?
 choices:
 - id: A
   text: $273,600
@@ -56,14 +57,15 @@ explanation: 'A hosting arrangement Perrancombe can''t take possession of is a s
 variants:
 - stem: On January 1, Year 1, Lanivet Freight Co. signs a noncancellable 5-year contract, running from
     that date, for access to a vendor's cloud-hosted warehouse management system. Lanivet has no right
-    to take the software onto its own servers. The contract lets Lanivet extend it for 3 more years at
-    the vendor's list prices at that time, and management hasn't decided whether it will. After the board
-    approved and funded the project, Lanivet paid consultants $42,000 to redesign its receiving and picking
-    processes before configuration began, $232,000 to configure and test the inventory module, which was
-    ready for its intended use on March 1, Year 1, and $130,000 to configure and test the shipping module,
-    ready on September 1, Year 1. Each module works independently of the other. Lanivet amortizes capitalized
-    implementation costs straight-line by month. What amount should Lanivet report as capitalized implementation
-    costs, net of accumulated amortization, at December 31, Year 1?
+    to take the software onto its own servers. The system is in general release and needs only configuration
+    for Lanivet's operations. The contract lets Lanivet extend it for 3 more years at the vendor's list
+    prices at that time, and management hasn't decided whether it will. After the board approved and funded
+    the project, Lanivet paid consultants $42,000 to redesign its receiving and picking processes before
+    configuration began, $232,000 to configure and test the inventory module, which was ready for its
+    intended use on March 1, Year 1, and $130,000 to configure and test the shipping module, ready on
+    September 1, Year 1. Each module works independently of the other. Lanivet amortizes capitalized implementation
+    costs straight-line by month. What amount should Lanivet report as capitalized implementation costs,
+    net of accumulated amortization, at December 31, Year 1?
   choices:
   - id: A
     text: $289,600
@@ -94,9 +96,10 @@ variants:
     Shipping module: $130,000 × 4/52 = $10,000. Net asset = $362,000 − $40,000 − $10,000 = $312,000.'
 - stem: On January 1, Year 1, St Breward Transport Co. signs a noncancellable 3-year contract, running
     from that date, for access to a vendor's cloud-hosted warehouse management system. St Breward has
-    no right to take the software onto its own servers. The contract lets St Breward extend it for 2 more
-    years at the vendor's list prices at that time, and management hasn't decided whether it will. After
-    the board approved and funded the project, St Breward paid consultants $28,000 to redesign its receiving
+    no right to take the software onto its own servers. The system is in general release and needs only
+    configuration for St Breward's operations. The contract lets St Breward extend it for 2 more years
+    at the vendor's list prices at that time, and management hasn't decided whether it will. After the
+    board approved and funded the project, St Breward paid consultants $28,000 to redesign its receiving
     and picking processes before configuration began, $180,000 to configure and test the inventory module,
     which was ready for its intended use on July 1, Year 1, and $104,000 to configure and test the shipping
     module, ready on November 1, Year 1. Each module works independently of the other. St Breward amortizes
@@ -132,14 +135,15 @@ variants:
     Shipping module: $104,000 × 2/26 = $8,000. Net asset = $284,000 − $36,000 − $8,000 = $240,000.'
 - stem: On January 1, Year 1, Blisland Haulage Co. signs a noncancellable 4-year contract, running from
     that date, for access to a vendor's cloud-hosted warehouse management system. Blisland has no right
-    to take the software onto its own servers. The contract lets Blisland extend it for 2 more years at
-    the vendor's list prices at that time, and management hasn't decided whether it will. After the board
-    approved and funded the project, Blisland paid consultants $33,000 to redesign its receiving and picking
-    processes before configuration began, $198,000 to configure and test the inventory module, which was
-    ready for its intended use on May 1, Year 1, and $164,000 to configure and test the shipping module,
-    ready on August 1, Year 1. Each module works independently of the other. Blisland amortizes capitalized
-    implementation costs straight-line by month. What amount should Blisland report as capitalized implementation
-    costs, net of accumulated amortization, at December 31, Year 1?
+    to take the software onto its own servers. The system is in general release and needs only configuration
+    for Blisland's operations. The contract lets Blisland extend it for 2 more years at the vendor's list
+    prices at that time, and management hasn't decided whether it will. After the board approved and funded
+    the project, Blisland paid consultants $33,000 to redesign its receiving and picking processes before
+    configuration began, $198,000 to configure and test the inventory module, which was ready for its
+    intended use on May 1, Year 1, and $164,000 to configure and test the shipping module, ready on August
+    1, Year 1. Each module works independently of the other. Blisland amortizes capitalized implementation
+    costs straight-line by month. What amount should Blisland report as capitalized implementation costs,
+    net of accumulated amortization, at December 31, Year 1?
   choices:
   - id: A
     text: $271,500

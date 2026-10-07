@@ -16,14 +16,14 @@ review:
 stem: 'Before its Year 1 statements are issued, Ambersgate Holdings Co.''s files on two matters include
   letters from outside counsel. The first concerns an indemnity in the agreement under which Ambersgate
   sold its packaging division in an earlier year: Ambersgate agreed to reimburse the buyer for 80% of
-  any environmental cleanup costs at a site the division used, up to a total of $420,000. The indemnity''s
+  any environmental cleanup costs at a site the division used, up to a total of $520,000. The indemnity''s
   fair value when it was given was immaterial, and Ambersgate recognized no liability for it then. In
   September, Year 1, the state ordered the buyer to clean up the site, and the buyer has submitted its
   claim under the indemnity. A consultant''s site assessment puts the total cleanup cost at between $380,000
   and $760,000, most likely $590,000. The second letter concerns a suit a former distributor filed in
-  October, claiming $260,000 for wrongful termination; counsel''s letter says Ambersgate will more likely
-  than not prevail, though the distributor''s case is not without merit, and estimates that if Ambersgate
-  loses, the loss would be about $95,000. What liability should Ambersgate accrue at year-end for these
+  October, claiming $260,000 for wrongful termination; counsel''s letter says the claim turns on a disputed
+  oral promise, puts the chance of an adverse judgment at about one in three, and estimates that a loss,
+  if one occurred, would be about $95,000. What liability should Ambersgate accrue at year-end for these
   two matters?'
 choices:
 - id: A
@@ -32,27 +32,25 @@ choices:
     range is a better estimate than any other, here the $590,000 most likely cost, that amount is used;
     the minimum is used only when none is.
 - id: B
-  text: $420,000
-  rationale: Correct. 80% × $590,000 = $472,000, limited to the $420,000 cap; nothing for the distributor's
-    claim.
-- id: C
   text: $472,000
-  rationale: Accrues 80% of the $590,000 most likely cost without applying the $420,000 cap. Ambersgate's
-    obligation under the indemnity can't exceed the cap.
+  rationale: Correct. 80% × $590,000 = $472,000, within the cap; nothing for the distributor's claim.
+- id: C
+  text: $520,000
+  rationale: Accrues the full $590,000 most likely cost, limited to the cap, as if Ambersgate had agreed
+    to reimburse all of it. The indemnity covers only 80% of the buyer's costs.
 - id: D
-  text: $515,000
-  rationale: Also accrues counsel's $95,000 estimate for the distributor's claim. Counsel expects Ambersgate
-    more likely than not to prevail, so a loss is reasonably possible, not probable; it is disclosed with
-    the estimate, not accrued.
+  text: $567,000
+  rationale: Also accrues counsel's $95,000 estimate for the distributor's claim. With about a one-in-three
+    chance of losing, the loss is reasonably possible, not probable; it is disclosed with the estimate,
+    not accrued.
 answer: B
 explanation: 'Once the cleanup was ordered and the buyer claimed, a loss under the indemnity became probable,
   so Ambersgate recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2). The
   consultant''s most likely amount is a better estimate than any other in the range, so it is used (ASC
-  450-20-30-1), and Ambersgate''s share is 80% × $590,000 = $472,000, which exceeds the $420,000 cap,
-  so the accrual is limited to $420,000. Counsel expects Ambersgate more likely than not to prevail but
-  doesn''t consider the case without merit, so a loss on the distributor''s suit is reasonably possible,
-  not probable: nothing is accrued; the nature of the claim and the $95,000 estimate are disclosed (ASC
-  450-20-50-3 to 50-5). Liability = $420,000.'
+  450-20-30-1), and Ambersgate''s share is 80% × $590,000 = $472,000, which is within the $520,000 cap.
+  Counsel puts the chance of losing the distributor''s suit at about one in three, more than remote but
+  not likely, so the loss is reasonably possible, not probable: nothing is accrued; the nature of the
+  claim and the $95,000 estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability = $472,000.'
 variants:
 - stem: 'Before its Year 2 statements are issued, Follyfield Group Co.''s files on two matters include
     letters from outside counsel. The first concerns an indemnity in the agreement under which Follyfield
@@ -62,9 +60,9 @@ variants:
     August, Year 2, the state ordered the buyer to clean up the site, and the buyer has submitted its
     claim under the indemnity. A consultant''s site assessment puts the total cleanup cost at between
     $520,000 and $1,150,000, most likely $780,000. The second letter concerns a suit a former distributor
-    filed in November, claiming $340,000 for wrongful termination; counsel''s letter says Follyfield will
-    more likely than not prevail, though the distributor''s case is not without merit, and estimates that
-    if Follyfield loses, the loss would be about $130,000. What liability should Follyfield accrue at
+    filed in November, claiming $340,000 for wrongful termination; counsel''s letter says the claim turns
+    on a disputed oral promise, puts the chance of an adverse judgment at about one in three, and estimates
+    that a loss, if one occurred, would be about $130,000. What liability should Follyfield accrue at
     year-end for these two matters?'
   choices:
   - id: A
@@ -76,9 +74,9 @@ variants:
       to reimburse all of it. The indemnity covers only 60% of the buyer's costs.
   - id: C
     text: $598,000
-    rationale: Also accrues counsel's $130,000 estimate for the distributor's claim. Counsel expects Follyfield
-      more likely than not to prevail, so a loss is reasonably possible, not probable; it is disclosed
-      with the estimate, not accrued.
+    rationale: Also accrues counsel's $130,000 estimate for the distributor's claim. With about a one-in-three
+      chance of losing, the loss is reasonably possible, not probable; it is disclosed with the estimate,
+      not accrued.
   - id: D
     text: $808,000
     rationale: Also accrues the $340,000 the distributor claims. A loss that is only reasonably possible
@@ -88,21 +86,20 @@ variants:
     probable, so Follyfield recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2).
     The consultant''s most likely amount is a better estimate than any other in the range, so it is used
     (ASC 450-20-30-1), and Follyfield''s share is 60% × $780,000 = $468,000, which is within the $560,000
-    cap. Counsel expects Follyfield more likely than not to prevail but doesn''t consider the case without
-    merit, so a loss on the distributor''s suit is reasonably possible, not probable: nothing is accrued;
-    the nature of the claim and the $130,000 estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability
-    = $468,000.'
+    cap. Counsel puts the chance of losing the distributor''s suit at about one in three, more than remote
+    but not likely, so the loss is reasonably possible, not probable: nothing is accrued; the nature of
+    the claim and the $130,000 estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability = $468,000.'
 - stem: 'Before its Year 3 statements are issued, Ridgemont Holdings Co.''s files on two matters include
     letters from outside counsel. The first concerns an indemnity in the agreement under which Ridgemont
     sold its distribution division in an earlier year: Ridgemont agreed to reimburse the buyer for 75%
-    of any environmental cleanup costs at a site the division used, up to a total of $350,000. The indemnity''s
+    of any environmental cleanup costs at a site the division used, up to a total of $450,000. The indemnity''s
     fair value when it was given was immaterial, and Ridgemont recognized no liability for it then. In
     July, Year 3, the state ordered the buyer to clean up the site, and the buyer has submitted its claim
     under the indemnity. A consultant''s site assessment puts the total cleanup cost at between $330,000
     and $640,000, most likely $520,000. The second letter concerns a suit a former distributor filed in
-    September, claiming $210,000 for wrongful termination; counsel''s letter says Ridgemont will more
-    likely than not prevail, though the distributor''s case is not without merit, and estimates that if
-    Ridgemont loses, the loss would be about $70,000. What liability should Ridgemont accrue at year-end
+    September, claiming $210,000 for wrongful termination; counsel''s letter says the claim turns on a
+    disputed oral promise, puts the chance of an adverse judgment at about one in three, and estimates
+    that a loss, if one occurred, would be about $70,000. What liability should Ridgemont accrue at year-end
     for these two matters?'
   choices:
   - id: A
@@ -111,26 +108,24 @@ variants:
       range is a better estimate than any other, here the $520,000 most likely cost, that amount is used;
       the minimum is used only when none is.
   - id: B
-    text: $350,000
-    rationale: Correct. 75% × $520,000 = $390,000, limited to the $350,000 cap; nothing for the distributor's
-      claim.
-  - id: C
     text: $390,000
-    rationale: Accrues 75% of the $520,000 most likely cost without applying the $350,000 cap. Ridgemont's
-      obligation under the indemnity can't exceed the cap.
+    rationale: Correct. 75% × $520,000 = $390,000, within the cap; nothing for the distributor's claim.
+  - id: C
+    text: $450,000
+    rationale: Accrues the full $520,000 most likely cost, limited to the cap, as if Ridgemont had agreed
+      to reimburse all of it. The indemnity covers only 75% of the buyer's costs.
   - id: D
-    text: $560,000
+    text: $600,000
     rationale: Also accrues the $210,000 the distributor claims. A loss that is only reasonably possible
       isn't accrued, and the amount claimed isn't an estimate of the loss.
   answer: B
   explanation: 'Once the cleanup was ordered and the buyer claimed, a loss under the indemnity became
     probable, so Ridgemont recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2).
     The consultant''s most likely amount is a better estimate than any other in the range, so it is used
-    (ASC 450-20-30-1), and Ridgemont''s share is 75% × $520,000 = $390,000, which exceeds the $350,000
-    cap, so the accrual is limited to $350,000. Counsel expects Ridgemont more likely than not to prevail
-    but doesn''t consider the case without merit, so a loss on the distributor''s suit is reasonably possible,
-    not probable: nothing is accrued; the nature of the claim and the $70,000 estimate are disclosed (ASC
-    450-20-50-3 to 50-5). Liability = $350,000.'
+    (ASC 450-20-30-1), and Ridgemont''s share is 75% × $520,000 = $390,000, which is within the $450,000
+    cap. Counsel puts the chance of losing the distributor''s suit at about one in three, more than remote
+    but not likely, so the loss is reasonably possible, not probable: nothing is accrued; the nature of
+    the claim and the $70,000 estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability = $390,000.'
 - stem: 'Before its Year 1 statements are issued, Oversley Group Co.''s files on two matters include letters
     from outside counsel. The first concerns an indemnity in the agreement under which Oversley sold its
     specialty chemicals division in an earlier year: Oversley agreed to reimburse the buyer for 70% of
@@ -139,9 +134,9 @@ variants:
     October, Year 1, the state ordered the buyer to clean up the site, and the buyer has submitted its
     claim under the indemnity. A consultant''s site assessment puts the total cleanup cost at between
     $640,000 and $1,300,000, most likely $900,000. The second letter concerns a suit a former distributor
-    filed in December, claiming $410,000 for wrongful termination; counsel''s letter says Oversley will
-    more likely than not prevail, though the distributor''s case is not without merit, and estimates that
-    if Oversley loses, the loss would be about $150,000. What liability should Oversley accrue at year-end
+    filed in December, claiming $410,000 for wrongful termination; counsel''s letter says the claim turns
+    on a disputed oral promise, puts the chance of an adverse judgment at about one in three, and estimates
+    that a loss, if one occurred, would be about $150,000. What liability should Oversley accrue at year-end
     for these two matters?'
   choices:
   - id: A
@@ -158,15 +153,14 @@ variants:
       to reimburse all of it. The indemnity covers only 70% of the buyer's costs.
   - id: D
     text: $780,000
-    rationale: Also accrues counsel's $150,000 estimate for the distributor's claim. Counsel expects Oversley
-      more likely than not to prevail, so a loss is reasonably possible, not probable; it is disclosed
-      with the estimate, not accrued.
+    rationale: Also accrues counsel's $150,000 estimate for the distributor's claim. With about a one-in-three
+      chance of losing, the loss is reasonably possible, not probable; it is disclosed with the estimate,
+      not accrued.
   answer: B
   explanation: 'Once the cleanup was ordered and the buyer claimed, a loss under the indemnity became
     probable, so Oversley recognizes the contingent liability under ASC 450 (ASC 460-10-35; ASC 450-20-25-2).
     The consultant''s most likely amount is a better estimate than any other in the range, so it is used
     (ASC 450-20-30-1), and Oversley''s share is 70% × $900,000 = $630,000, which is within the $680,000
-    cap. Counsel expects Oversley more likely than not to prevail but doesn''t consider the case without
-    merit, so a loss on the distributor''s suit is reasonably possible, not probable: nothing is accrued;
-    the nature of the claim and the $150,000 estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability
-    = $630,000.'
+    cap. Counsel puts the chance of losing the distributor''s suit at about one in three, more than remote
+    but not likely, so the loss is reasonably possible, not probable: nothing is accrued; the nature of
+    the claim and the $150,000 estimate are disclosed (ASC 450-20-50-3 to 50-5). Liability = $630,000.'

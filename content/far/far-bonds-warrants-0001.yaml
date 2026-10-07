@@ -14,12 +14,12 @@ review:
   notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
     answers solved and every number and distractor computed in code.
 stem: On April 1, Year 1, St Germans Energy Corp. issues $1,000,000 face amount of ten-year, 6% bonds,
-  paying interest each September 30 and March 31, together with detachable stock warrants, for total cash
-  proceeds of $922,879. Immediately after issuance, the bonds trade without the warrants at a total fair
-  value of $882,000, and the warrants trade at a total fair value of $60,000. The bonds' effective interest
-  rate, based on their initial carrying amount, is 8%, compounded semiannually. St Germans applies the
-  effective interest method, accrues interest at year-end and rounds each computation to the nearest dollar.
-  How much bond interest expense should St Germans recognize for Year 1?
+  paying interest each September 30 and March 31, together with detachable stock warrants, which are classified
+  in equity, for total cash proceeds of $922,879. Immediately after issuance, the bonds trade without
+  the warrants at a total fair value of $882,000, and the warrants trade at a total fair value of $60,000.
+  The bonds' effective interest rate, based on their initial carrying amount, is 8%, compounded semiannually.
+  St Germans applies the effective interest method, accrues interest at year-end and rounds each computation
+  to the nearest dollar. How much bond interest expense should St Germans recognize for Year 1?
 choices:
 - id: A
   text: $34,564
@@ -48,12 +48,12 @@ explanation: 'Detachable warrants are accounted for separately, and with both fa
   = $51,937.'
 variants:
 - stem: On May 1, Year 1, Gunnislake Power Corp. issues $800,000 face amount of ten-year, 5% bonds, paying
-    interest each October 31 and April 30, together with detachable stock warrants, for total cash proceeds
-    of $730,420. Immediately after issuance, the bonds trade without the warrants at a total fair value
-    of $700,000, and the warrants trade at a total fair value of $45,000. The bonds' effective interest
-    rate, based on their initial carrying amount, is 7%, compounded semiannually. Gunnislake applies the
-    effective interest method, accrues interest at year-end and rounds each computation to the nearest
-    dollar. How much bond interest expense should Gunnislake recognize for Year 1?
+    interest each October 31 and April 30, together with detachable stock warrants, which are classified
+    in equity, for total cash proceeds of $730,420. Immediately after issuance, the bonds trade without
+    the warrants at a total fair value of $700,000, and the warrants trade at a total fair value of $45,000.
+    The bonds' effective interest rate, based on their initial carrying amount, is 7%, compounded semiannually.
+    Gunnislake applies the effective interest method, accrues interest at year-end and rounds each computation
+    to the nearest dollar. How much bond interest expense should Gunnislake recognize for Year 1?
   choices:
   - id: A
     text: $24,021
@@ -81,12 +81,13 @@ variants:
     for the 2 months to December 31: $690,322 × 7%/2 × 2/6 = $8,054. Year 1 interest expense = $24,021
     + $8,054 = $32,075.'
 - stem: On February 1, Year 1, St Cleer Utilities Corp. issues $1,200,000 face amount of ten-year, 4%
-    bonds, paying interest each July 31 and January 31, together with detachable stock warrants, for total
-    cash proceeds of $1,090,091. Immediately after issuance, the bonds trade without the warrants at a
-    total fair value of $1,042,000, and the warrants trade at a total fair value of $70,000. The bonds'
-    effective interest rate, based on their initial carrying amount, is 6%, compounded semiannually. St
-    Cleer applies the effective interest method, accrues interest at year-end and rounds each computation
-    to the nearest dollar. How much bond interest expense should St Cleer recognize for Year 1?
+    bonds, paying interest each July 31 and January 31, together with detachable stock warrants, which
+    are classified in equity, for total cash proceeds of $1,090,091. Immediately after issuance, the bonds
+    trade without the warrants at a total fair value of $1,042,000, and the warrants trade at a total
+    fair value of $70,000. The bonds' effective interest rate, based on their initial carrying amount,
+    is 6%, compounded semiannually. St Cleer applies the effective interest method, accrues interest at
+    year-end and rounds each computation to the nearest dollar. How much bond interest expense should
+    St Cleer recognize for Year 1?
   choices:
   - id: A
     text: $30,644
@@ -114,12 +115,12 @@ variants:
     Accrual for the 5 months to December 31: $1,028,114 × 6%/2 × 5/6 = $25,703. Year 1 interest expense
     = $30,644 + $25,703 = $56,347.'
 - stem: On June 1, Year 1, Darite Energy Corp. issues $600,000 face amount of ten-year, 7% bonds, paying
-    interest each November 30 and May 31, together with detachable stock warrants, for total cash proceeds
-    of $551,331. Immediately after issuance, the bonds trade without the warrants at a total fair value
-    of $533,000, and the warrants trade at a total fair value of $30,000. The bonds' effective interest
-    rate, based on their initial carrying amount, is 9%, compounded semiannually. Darite applies the effective
-    interest method, accrues interest at year-end and rounds each computation to the nearest dollar. How
-    much bond interest expense should Darite recognize for Year 1?
+    interest each November 30 and May 31, together with detachable stock warrants, which are classified
+    in equity, for total cash proceeds of $551,331. Immediately after issuance, the bonds trade without
+    the warrants at a total fair value of $533,000, and the warrants trade at a total fair value of $30,000.
+    The bonds' effective interest rate, based on their initial carrying amount, is 9%, compounded semiannually.
+    Darite applies the effective interest method, accrues interest at year-end and rounds each computation
+    to the nearest dollar. How much bond interest expense should Darite recognize for Year 1?
   choices:
   - id: A
     text: $24,500
@@ -145,5 +146,5 @@ variants:
     + $30,000) = $521,953, with the remaining $29,378 credited to additional paid-in capital. The 9% effective
     rate applies to that $521,953 carrying amount. First period, June 1 to November 30: $521,953 × 9%/2
     = $23,488, against $21,000 of cash interest, so the carrying amount rises by $2,488 to $524,441. Accrual
-    for the 1 months to December 31: $524,441 × 9%/2 × 1/6 = $3,933. Year 1 interest expense = $23,488
+    for the 1 month to December 31: $524,441 × 9%/2 × 1/6 = $3,933. Year 1 interest expense = $23,488
     + $3,933 = $27,421.'

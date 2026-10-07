@@ -24,9 +24,8 @@ choices:
 - id: A
   text: $85,000
   rationale: Uses the $85,000 a dealer would pay for the capping machine on its own. That is its value
-    on a standalone (in-exchange) basis, but the line is worth more installed and working ($1,150,000)
-    than sold piece by piece ($700,000), so highest and best use is in combination with the line's other
-    assets.
+    on a standalone basis, but the line is worth more installed and working ($1,150,000) than sold piece
+    by piece ($700,000), so highest and best use is in combination with the line's other assets.
 - id: B
   text: $180,000
   rationale: Correct. $240,000 − $38,000 − $22,000.
@@ -59,9 +58,8 @@ variants:
   - id: A
     text: $60,000
     rationale: Uses the $60,000 a dealer would pay for the filling machine on its own. That is its value
-      on a standalone (in-exchange) basis, but the line is worth more installed and working ($940,000)
-      than sold piece by piece ($560,000), so highest and best use is in combination with the line's other
-      assets.
+      on a standalone basis, but the line is worth more installed and working ($940,000) than sold piece
+      by piece ($560,000), so highest and best use is in combination with the line's other assets.
   - id: B
     text: $150,000
     rationale: Correct. $190,000 − $25,000 − $15,000.
@@ -92,9 +90,8 @@ variants:
   - id: A
     text: $100,000
     rationale: Uses the $100,000 a dealer would pay for the seaming machine on its own. That is its value
-      on a standalone (in-exchange) basis, but the line is worth more installed and working ($1,400,000)
-      than sold piece by piece ($820,000), so highest and best use is in combination with the line's other
-      assets.
+      on a standalone basis, but the line is worth more installed and working ($1,400,000) than sold piece
+      by piece ($820,000), so highest and best use is in combination with the line's other assets.
   - id: B
     text: $220,000
     rationale: Correct. $300,000 − $50,000 − $30,000.

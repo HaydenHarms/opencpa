@@ -12,126 +12,138 @@ review:
   notes: Batch 15, revision 3 (second-round blind verifier and gate findings applied). Written from scratch;
     answers solved and every number and distractor computed in code.
 stem: St Columb Components Inc.'s loan agreement requires its ratio of earnings before interest and taxes
-  to interest expense to be at least 4.00 at each year-end. The agreement defines earnings before interest
-  and taxes as net income plus interest expense and income tax expense, excluding gains and losses on
-  sales of long-lived assets and adding back restructuring charges. For Year 1, St Columb reports net
-  income of $1,265,000, interest expense of $310,000 and income tax expense of $360,000. Net income includes
-  an $85,000 gain on the sale of idle equipment, a $140,000 restructuring charge for closing an underperforming
-  store, and a $120,000 impairment loss on a production line that St Columb continues to operate. With
-  interest expense unchanged, by how much could St Columb's Year 1 earnings before interest and taxes,
-  as the agreement defines them, have been lower without breaching the covenant?
+  to interest expense to be at least 4.00 at each year-end. For the covenant, earnings before interest
+  and taxes start from net income, add back interest expense, income tax expense and restructuring charges,
+  and remove the effect of any gain or loss on disposing of property and equipment. For Year 1, St Columb
+  reports net income of $1,265,000, interest expense of $310,000 and income tax expense of $360,000. Net
+  income includes an $85,000 gain on the sale of idle equipment, a $36,000 loss on the sale of a delivery
+  truck, a $140,000 restructuring charge for closing an underperforming store, and a $120,000 impairment
+  loss on a production line that St Columb continues to operate. With interest expense unchanged, by how
+  much could St Columb's Year 1 earnings before interest and taxes, as the agreement defines them, have
+  been lower without breaching the covenant?
 choices:
 - id: A
-  text: $610,000
+  text: $646,000
   rationale: Doesn't add back the $140,000 restructuring charge, which the agreement's definition adds
     back.
 - id: B
   text: $750,000
-  rationale: Correct. Defined earnings of $1,990,000 less the $1,240,000 minimum (4.00 × $310,000).
+  rationale: Leaves the $36,000 loss on the delivery truck in the figure. The agreement removes every
+    gain or loss on disposing of property and equipment, losses as well as gains, so the loss is added
+    back.
 - id: C
-  text: $835,000
-  rationale: Leaves the $85,000 gain on the equipment sale in earnings before interest and taxes. The
-    agreement excludes gains on sales of long-lived assets.
+  text: $786,000
+  rationale: Correct. Defined earnings of $2,026,000 less the $1,240,000 minimum (4.00 × $310,000).
 - id: D
-  text: $870,000
-  rationale: Adds back the $120,000 impairment loss as if the agreement excluded it. The agreement excludes
-    only gains and losses on sales of long-lived assets; the production line is still in use, so its impairment
-    stays in earnings before interest and taxes.
-answer: B
+  text: $906,000
+  rationale: Adds back the $120,000 impairment loss as if the agreement excluded it. The agreement removes
+    only gains and losses on disposals; the production line is still in use, so its impairment stays in
+    earnings before interest and taxes.
+answer: C
 explanation: Earnings before interest and taxes, as defined = $1,265,000 + $310,000 + $360,000 − $85,000
-  (gain on a sale, excluded) + $140,000 (restructuring, added back) = $1,990,000. The impairment loss
-  isn't a gain or loss on a sale, because the line is still in use, so it stays in the figure. The covenant
-  needs at least 4.00 × $310,000 = $1,240,000. Cushion = $1,990,000 − $1,240,000 = $750,000.
+  (gain on a disposal, removed) + $36,000 (loss on a disposal, removed) + $140,000 (restructuring, added
+  back) = $2,026,000. The impairment loss isn't a gain or loss on a disposal, because the line is still
+  in use, so it stays in the figure. The covenant needs at least 4.00 × $310,000 = $1,240,000. Cushion
+  = $2,026,000 − $1,240,000 = $786,000.
 variants:
 - stem: Stratton Fabrication Inc.'s loan agreement requires its ratio of earnings before interest and
-    taxes to interest expense to be at least 4.25 at each year-end. The agreement defines earnings before
-    interest and taxes as net income plus interest expense and income tax expense, excluding gains and
-    losses on sales of long-lived assets and adding back restructuring charges. For Year 1, Stratton reports
-    net income of $980,000, interest expense of $245,000 and income tax expense of $285,000. Net income
-    includes a $62,000 gain on the sale of idle equipment, a $108,000 restructuring charge for closing
-    an underperforming store, and a $94,000 impairment loss on a production line that Stratton continues
-    to operate. With interest expense unchanged, by how much could Stratton's Year 1 earnings before interest
-    and taxes, as the agreement defines them, have been lower without breaching the covenant?
+    taxes to interest expense to be at least 4.25 at each year-end. For the covenant, earnings before
+    interest and taxes start from net income, add back interest expense, income tax expense and restructuring
+    charges, and remove the effect of any gain or loss on disposing of property and equipment. For Year
+    1, Stratton reports net income of $980,000, interest expense of $245,000 and income tax expense of
+    $285,000. Net income includes a $62,000 gain on the sale of idle equipment, a $27,000 loss on the
+    sale of a delivery truck, a $108,000 restructuring charge for closing an underperforming store, and
+    a $94,000 impairment loss on a production line that Stratton continues to operate. With interest expense
+    unchanged, by how much could Stratton's Year 1 earnings before interest and taxes, as the agreement
+    defines them, have been lower without breaching the covenant?
   choices:
   - id: A
-    text: $229,750
-    rationale: Doesn't add back the $285,000 of income tax expense. The agreement starts from net income
-      plus interest and income taxes.
-  - id: B
-    text: $406,750
+    text: $433,750
     rationale: Doesn't add back the $108,000 restructuring charge, which the agreement's definition adds
       back.
-  - id: C
+  - id: B
     text: $514,750
-    rationale: Correct. Defined earnings of $1,556,000 less the $1,041,250 minimum (4.25 × $245,000).
-  - id: D
-    text: $608,750
-    rationale: Adds back the $94,000 impairment loss as if the agreement excluded it. The agreement excludes
-      only gains and losses on sales of long-lived assets; the production line is still in use, so its
-      impairment stays in earnings before interest and taxes.
-  answer: C
-  explanation: Earnings before interest and taxes, as defined = $980,000 + $245,000 + $285,000 − $62,000
-    (gain on a sale, excluded) + $108,000 (restructuring, added back) = $1,556,000. The impairment loss
-    isn't a gain or loss on a sale, because the line is still in use, so it stays in the figure. The covenant
-    needs at least 4.25 × $245,000 = $1,041,250. Cushion = $1,556,000 − $1,041,250 = $514,750.
-- stem: Kilkhampton Castings Inc.'s loan agreement requires its ratio of earnings before interest and
-    taxes to interest expense to be at least 4.10 at each year-end. The agreement defines earnings before
-    interest and taxes as net income plus interest expense and income tax expense, excluding gains and
-    losses on sales of long-lived assets and adding back restructuring charges. For Year 1, Kilkhampton
-    reports net income of $1,460,000, interest expense of $365,000 and income tax expense of $420,000.
-    Net income includes a $96,000 gain on the sale of idle equipment, a $172,000 restructuring charge
-    for closing an underperforming store, and a $138,000 impairment loss on a production line that Kilkhampton
-    continues to operate. With interest expense unchanged, by how much could Kilkhampton's Year 1 earnings
-    before interest and taxes, as the agreement defines them, have been lower without breaching the covenant?
-  choices:
-  - id: A
-    text: $404,500
-    rationale: Doesn't add back the $420,000 of income tax expense. The agreement starts from net income
-      plus interest and income taxes.
-  - id: B
-    text: $824,500
-    rationale: Correct. Defined earnings of $2,321,000 less the $1,496,500 minimum (4.10 × $365,000).
-  - id: C
-    text: $920,500
-    rationale: Leaves the $96,000 gain on the equipment sale in earnings before interest and taxes. The
-      agreement excludes gains on sales of long-lived assets.
-  - id: D
-    text: $962,500
-    rationale: Adds back the $138,000 impairment loss as if the agreement excluded it. The agreement excludes
-      only gains and losses on sales of long-lived assets; the production line is still in use, so its
-      impairment stays in earnings before interest and taxes.
-  answer: B
-  explanation: Earnings before interest and taxes, as defined = $1,460,000 + $365,000 + $420,000 − $96,000
-    (gain on a sale, excluded) + $172,000 (restructuring, added back) = $2,321,000. The impairment loss
-    isn't a gain or loss on a sale, because the line is still in use, so it stays in the figure. The covenant
-    needs at least 4.10 × $365,000 = $1,496,500. Cushion = $2,321,000 − $1,496,500 = $824,500.
-- stem: Widemouth Machine Works Inc.'s loan agreement requires its ratio of earnings before interest and
-    taxes to interest expense to be at least 4.00 at each year-end. The agreement defines earnings before
-    interest and taxes as net income plus interest expense and income tax expense, excluding gains and
-    losses on sales of long-lived assets and adding back restructuring charges. For Year 1, Widemouth
-    reports net income of $870,000, interest expense of $218,000 and income tax expense of $252,000. Net
-    income includes a $54,000 gain on the sale of idle equipment, a $95,000 restructuring charge for closing
-    an underperforming store, and a $77,000 impairment loss on a production line that Widemouth continues
-    to operate. With interest expense unchanged, by how much could Widemouth's Year 1 earnings before
-    interest and taxes, as the agreement defines them, have been lower without breaching the covenant?
-  choices:
-  - id: A
-    text: $257,000
-    rationale: Doesn't add back the $252,000 of income tax expense. The agreement starts from net income
-      plus interest and income taxes.
-  - id: B
-    text: $414,000
-    rationale: Doesn't add back the $95,000 restructuring charge, which the agreement's definition adds
+    rationale: Leaves the $27,000 loss on the delivery truck in the figure. The agreement removes every
+      gain or loss on disposing of property and equipment, losses as well as gains, so the loss is added
       back.
   - id: C
-    text: $509,000
-    rationale: Correct. Defined earnings of $1,381,000 less the $872,000 minimum (4.00 × $218,000).
+    text: $541,750
+    rationale: Correct. Defined earnings of $1,583,000 less the $1,041,250 minimum (4.25 × $245,000).
   - id: D
-    text: $563,000
+    text: $635,750
+    rationale: Adds back the $94,000 impairment loss as if the agreement excluded it. The agreement removes
+      only gains and losses on disposals; the production line is still in use, so its impairment stays
+      in earnings before interest and taxes.
+  answer: C
+  explanation: Earnings before interest and taxes, as defined = $980,000 + $245,000 + $285,000 − $62,000
+    (gain on a disposal, removed) + $27,000 (loss on a disposal, removed) + $108,000 (restructuring, added
+    back) = $1,583,000. The impairment loss isn't a gain or loss on a disposal, because the line is still
+    in use, so it stays in the figure. The covenant needs at least 4.25 × $245,000 = $1,041,250. Cushion
+    = $1,583,000 − $1,041,250 = $541,750.
+- stem: Kilkhampton Castings Inc.'s loan agreement requires its ratio of earnings before interest and
+    taxes to interest expense to be at least 4.10 at each year-end. For the covenant, earnings before
+    interest and taxes start from net income, add back interest expense, income tax expense and restructuring
+    charges, and remove the effect of any gain or loss on disposing of property and equipment. For Year
+    1, Kilkhampton reports net income of $1,460,000, interest expense of $365,000 and income tax expense
+    of $420,000. Net income includes a $96,000 gain on the sale of idle equipment, a $41,000 loss on the
+    sale of a delivery truck, a $172,000 restructuring charge for closing an underperforming store, and
+    a $138,000 impairment loss on a production line that Kilkhampton continues to operate. With interest
+    expense unchanged, by how much could Kilkhampton's Year 1 earnings before interest and taxes, as the
+    agreement defines them, have been lower without breaching the covenant?
+  choices:
+  - id: A
+    text: $824,500
+    rationale: Leaves the $41,000 loss on the delivery truck in the figure. The agreement removes every
+      gain or loss on disposing of property and equipment, losses as well as gains, so the loss is added
+      back.
+  - id: B
+    text: $865,500
+    rationale: Correct. Defined earnings of $2,362,000 less the $1,496,500 minimum (4.10 × $365,000).
+  - id: C
+    text: $961,500
+    rationale: Leaves the $96,000 gain on the equipment sale in earnings before interest and taxes. The
+      agreement removes gains and losses on disposals of property and equipment.
+  - id: D
+    text: $1,003,500
+    rationale: Adds back the $138,000 impairment loss as if the agreement excluded it. The agreement removes
+      only gains and losses on disposals; the production line is still in use, so its impairment stays
+      in earnings before interest and taxes.
+  answer: B
+  explanation: Earnings before interest and taxes, as defined = $1,460,000 + $365,000 + $420,000 − $96,000
+    (gain on a disposal, removed) + $41,000 (loss on a disposal, removed) + $172,000 (restructuring, added
+    back) = $2,362,000. The impairment loss isn't a gain or loss on a disposal, because the line is still
+    in use, so it stays in the figure. The covenant needs at least 4.10 × $365,000 = $1,496,500. Cushion
+    = $2,362,000 − $1,496,500 = $865,500.
+- stem: Widemouth Machine Works Inc.'s loan agreement requires its ratio of earnings before interest and
+    taxes to interest expense to be at least 4.00 at each year-end. For the covenant, earnings before
+    interest and taxes start from net income, add back interest expense, income tax expense and restructuring
+    charges, and remove the effect of any gain or loss on disposing of property and equipment. For Year
+    1, Widemouth reports net income of $870,000, interest expense of $218,000 and income tax expense of
+    $252,000. Net income includes a $54,000 gain on the sale of idle equipment, a $23,000 loss on the
+    sale of a delivery truck, a $95,000 restructuring charge for closing an underperforming store, and
+    a $77,000 impairment loss on a production line that Widemouth continues to operate. With interest
+    expense unchanged, by how much could Widemouth's Year 1 earnings before interest and taxes, as the
+    agreement defines them, have been lower without breaching the covenant?
+  choices:
+  - id: A
+    text: $437,000
+    rationale: Doesn't add back the $95,000 restructuring charge, which the agreement's definition adds
+      back.
+  - id: B
+    text: $509,000
+    rationale: Leaves the $23,000 loss on the delivery truck in the figure. The agreement removes every
+      gain or loss on disposing of property and equipment, losses as well as gains, so the loss is added
+      back.
+  - id: C
+    text: $532,000
+    rationale: Correct. Defined earnings of $1,404,000 less the $872,000 minimum (4.00 × $218,000).
+  - id: D
+    text: $586,000
     rationale: Leaves the $54,000 gain on the equipment sale in earnings before interest and taxes. The
-      agreement excludes gains on sales of long-lived assets.
+      agreement removes gains and losses on disposals of property and equipment.
   answer: C
   explanation: Earnings before interest and taxes, as defined = $870,000 + $218,000 + $252,000 − $54,000
-    (gain on a sale, excluded) + $95,000 (restructuring, added back) = $1,381,000. The impairment loss
-    isn't a gain or loss on a sale, because the line is still in use, so it stays in the figure. The covenant
-    needs at least 4.00 × $218,000 = $872,000. Cushion = $1,381,000 − $872,000 = $509,000.
+    (gain on a disposal, removed) + $23,000 (loss on a disposal, removed) + $95,000 (restructuring, added
+    back) = $1,404,000. The impairment loss isn't a gain or loss on a disposal, because the line is still
+    in use, so it stays in the figure. The covenant needs at least 4.00 × $218,000 = $872,000. Cushion
+    = $1,404,000 − $872,000 = $532,000.

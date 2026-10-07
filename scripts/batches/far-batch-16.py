@@ -224,7 +224,7 @@ def contract_costs_scope(p):
     key = (m(key_v), f"Correct. ({m(Cm)} + {m(Setup)}) × {mo}/{term}.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""On {p['sd']}, Year 1, {co} signed a three-year contract to run a customer's outbound logistics, with services beginning {p['start']}, Year 1, and running 36 months; renewal isn't expected. On signing, {s} paid its salesperson a {m(Cm)} commission on the contract. Before services began, it spent {m(Setup)} on technician labor configuring the customer's shipment-tracking workflows on {s}'s platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced to recover it. {s} also bought {m(EQ)} of {p['eq']} that it will use on this customer's account and move to other jobs when the contract ends, and {m(INV)} of {p['sup']} that will be used up in providing the services. {s} amortizes any capitalized contract cost straight-line by month over the period of the services it relates to. What amortization of contract cost assets should {s} recognize for Year 1?""",
+        f"""On {p['sd']}, Year 1, {co} signed a three-year contract to run a customer's outbound logistics, with services beginning {p['start']}, Year 1, and running 36 months; renewal isn't expected. On signing, {s} paid its salesperson a {m(Cm)} commission on the contract. Before services began, it spent {m(Setup)} on technician labor configuring the customer's shipment-tracking workflows on {s}'s platform; the setup gives the customer nothing it can use on its own, and the monthly fees are priced to recover it. {s} also bought {m(EQ)} of {p['eq']} that it will use on this customer's account and move to other jobs when the contract ends, and {m(INV)} of {p['sup']} that will be used up in providing the services. {s} amortizes any capitalized contract cost straight-line by month. What amortization of contract cost assets should {s} recognize for Year 1?""",
         choices, ans,
         f"""The commission is an incremental cost of obtaining the contract, and the configuration labor is a cost to fulfill it: it relates directly to the contract, creates resources {s} will use to provide the services, and is recovered through the fees (ASC 340-40-25-1 to 25-8). Both are capitalized, {m(Cm)} + {m(Setup)} = {m(total)}, and amortized over the 36 months of services starting {p['start']} (ASC 340-40-35-1): {m(total)} × {mo}/{term} = {m(key_v)}. The {p['eq']} are property, plant and equipment within ASC 360 and the {p['sup']} are inventory within ASC 330, so neither is a contract cost asset (ASC 340-40-15-3), even though both were bought for this contract.""",
     )
@@ -312,7 +312,7 @@ def fv_in_use(p):
     assert Lin > Lsep
     key_v = new_cost - phys - func
     pool = {
-        "scrap": (m(scrap), f"Uses the {m(scrap)} a dealer would pay for the {p['asset']} on its own. That is its value on a standalone (in-exchange) basis, but the line is worth more installed and working ({m(Lin)}) than sold piece by piece ({m(Lsep)}), so highest and best use is in combination with the line's other assets."),
+        "scrap": (m(scrap), f"Uses the {m(scrap)} a dealer would pay for the {p['asset']} on its own. That is its value on a standalone basis, but the line is worth more installed and working ({m(Lin)}) than sold piece by piece ({m(Lsep)}), so highest and best use is in combination with the line's other assets."),
         "no_func": (m(new_cost - phys), f"Deducts only physical deterioration. Functional obsolescence, the {m(func)} newer models' extra speed is worth, is also deducted in a cost approach."),
         "no_phys": (m(new_cost - func), f"Deducts only functional obsolescence. Physical deterioration, {m(phys)}, is also deducted in a cost approach."),
         "gross_new": (m(new_cost), f"Uses the {m(new_cost)} cost of a new substitute without any deduction for deterioration or obsolescence."),
@@ -336,7 +336,8 @@ def fv_liability_nonperformance(p):
     extra_f = pv_single(D(p["rf"]) + D(p["r"]), n + 1)
     key_v = whole(rd(face * key_f))
     chg = "downgrade" if D(p["stale"]) < D(p["r"]) else "upgrade"
-    before = "only " if chg == "downgrade" else ""
+    rates = sorted({D(p["rf"]), D(p["rf"]) + D(p["r"]), D(p["rf"]) + D(p["r2"]), D(p["rf"]) + D(p["stale"])})
+    fac = ", ".join(f"{pv_single(x, n)} at {pc(x)}%" for x in rates[:-1]) + f" and {pv_single(rates[-1], n)} at {pc(rates[-1])}%"
     pool = {
         "risk_free_only": (m(whole(rd(face * rf_f))), f"Discounts at the {p['rf']}% risk-free rate alone ({m(face)} × {rf_f}), leaving out {s}'s own nonperformance risk. Fair value of a liability includes the effect of the reporting entity's own credit standing (ASC 820-10-35-17)."),
         "counterparty": (m(whole(rd(face * comp_f))), f"Uses the {p['r2']}% premium the higher-rated insurer quoted ({m(face)} × {comp_f}). Fair value reflects {s}'s own nonperformance risk, assumed to be the same after a transfer, not a stronger transferee's credit standing."),
@@ -346,7 +347,7 @@ def fv_liability_nonperformance(p):
     key = (m(key_v), f"Correct. {m(face)} discounted {n} years at {pc(D(p['rf']) + D(p['r']))}% ({p['rf']}% risk-free + {p['r']}% for {s}'s own nonperformance risk).")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} must measure, on the transfer basis ASC 820 requires, the fair value of a {m(face)} obligation it owes a counterparty, payable in a lump sum in {n} years. The risk-free rate for a {n}-year term is {p['rf']}%. After a recent credit {chg}, market participants would require a {p['r']}% premium for {s}'s own nonperformance risk as of the measurement date; before the {chg}, that premium was {before}{p['stale']}%. A higher-rated insurer that might assume the obligation said it would price it at only a {p['r2']}% premium. Using present value factors rounded to four decimal places, what is the fair value of {s}'s obligation?""",
+        f"""{co} must measure, on the transfer basis ASC 820 requires, the fair value of a {m(face)} obligation it owes a counterparty, payable in a lump sum in {n} years. The risk-free rate for a {n}-year term is {p['rf']}%. Market participants now price obligations of {s}'s credit standing at a {p['r']}% premium over the risk-free rate; before a recent credit {chg}, they priced them at {p['stale']}%. A higher-rated insurer that might assume the obligation said it would price it at a {p['r2']}% premium. Present value factors for a single sum due in {n} years are {fac}. What is the fair value of {s}'s obligation?""",
         choices, ans,
         f"""Fair value of a liability assumes transfer to a market participant of comparable credit standing (ASC 820-10-35-16) and includes the effect of the reporting entity's own nonperformance risk, including its own credit risk, measured as of the measurement date and assumed to be the same before and after the transfer (ASC 820-10-35-17 to 35-18) — not a stronger counterparty's credit standing and not a stale, pre-downgrade spread. The discount rate is {p['rf']}% risk-free + {p['r']}% for {s}'s own current nonperformance risk = {pc(D(p['rf']) + D(p['r']))}%. Fair value = {m(face)} × {key_f} = {m(key_v)}.""",
     )
@@ -459,6 +460,7 @@ def lessee_stepdown_cost(p):
     total_pay = sum(pays)
     core = whole(rd((total_pay - incentive) / 5))
     key_v = core + pt
+    assert pays[0] - incentive + pt != key_v, "cash rent less the whole incentive must not reach the key"
     no_incentive = whole(rd(total_pay / 5))
     pool = {
         "cash_basis": (m(pays[0] + pt), f"Uses the Year 1 cash payment of {m(pays[0])} instead of the straight-line average. Operating lease cost is recognized straight-line over the term, regardless of the payment schedule."),
@@ -527,7 +529,7 @@ def tax_deferred_installment_litigation(p):
     key = (ch(dta - va, dtl), f"Correct. Asset {m(lit)} × {p['r']}% = {m(dta)}, less the {m(va)} allowance; liability {m(inst)} × {p['r']}%.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} keeps separate deferred tax asset and deferred tax liability accounts in its ledger and is measuring them at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the whole gain in its books; {m(inst)} of that gain hasn't yet been collected and will be taxed as it is. In Year 2 it accrued a {m(lit)} loss for a lawsuit it expects to settle; the loss is deductible when paid, and {s} expects to pay {m(litc)} of it in Year 3 and the rest in Year 4. The enacted tax rate is {p['r']}% for all years. Weighing its recent losses against its forecasts, {s} concludes that it needs a valuation allowance of {m(va)} against its deferred tax asset. At December 31, Year 2, what amounts should {s} carry in its deferred tax asset account, net of the allowance, and in its deferred tax liability account?""",
+        f"""{co} keeps separate deferred tax asset and deferred tax liability accounts in its ledger and is measuring them at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the whole gain in its books; {m(inst)} of that gain hasn't yet been collected and will be taxed as it is. In Year 2 it accrued a {m(lit)} loss for a lawsuit it expects to settle; the loss is deductible when paid, and {s} expects to pay {m(litc)} of it in Year 3 and the rest in Year 4. The enacted tax rate is {p['r']}% for all years. Weighing its recent losses against its forecasts, {s} concludes that it needs a valuation allowance of {m(va)} against its deferred tax asset. At December 31, Year 2, what amounts should {s} report for its deferred tax asset and its deferred tax liability?""",
         choices, ans,
         f"""The uncollected installment gain is a taxable temporary difference: deferred tax liability = {m(inst)} × {p['r']}% = {m(dtl)}. The litigation accrual is a deductible temporary difference in full, whenever it will be paid: deferred tax asset = {m(lit)} × {p['r']}% = {m(dta)}. The valuation allowance reduces the asset to the amount expected to be realized (ASC 740-10-30-5(e)): {m(dta)} − {m(va)} = {m(dta - va)}. Net of the allowance, the asset account carries {m(dta - va)} and the liability account {m(dtl)}.""",
     )
@@ -670,17 +672,17 @@ FAMILIES = [
      lessee_purchase_option_cost, [
         dict(co="Elmsworth Fabrication Co.", asset="a CNC machining center", short="machine", n=5, u=10, pay=78000, opt=40000, fvexp=150000, idc=15000, i=6, use=["term_amort", "no_option", "omit_idc"]),
         dict(co="Framlingham Textiles Co.", asset="a weaving machine", short="machine", n=4, u=8, pay=62000, opt=30000, fvexp=110000, idc=9000, i=5, use=["term_amort", "year1_interest", "omit_idc"]),
-        dict(co="Gillingham Robotics Co.", asset="a robotic welding cell", short="cell", n=6, u=12, pay=97000, opt=45000, fvexp=180000, idc=20000, i=7, use=["no_option", "omit_idc", "year1_interest"]),
+        dict(co="Gillingham Robotics Co.", asset="a robotic welding cell", short="cell", n=6, u=12, pay=96000, opt=46000, fvexp=180000, idc=21000, i=7, use=["no_option", "omit_idc", "year1_interest"]),
         dict(co="Harpenden Logistics Co.", asset="an automated sorting system", short="system", n=5, u=10, pay=88000, opt=50000, fvexp=170000, idc=16000, i="6.5", use=["term_amort", "no_option", "year1_interest"]),
      ], "no_option"),
     ("far-lessee-operating-0007", A3, "Lessee accounting", AP,
      ["ASC 842-20-25-6 (operating lease cost; variable payments not based on an index or a rate)",
       "ASC 842-10-30-5 (lease payments net of lease incentives)"],
      lessee_stepdown_cost, [
-        dict(co="Inkberrow Retail Co.", pays=[70000, 62000, 54000, 46000, 38000], incentive=20000, pt=9000, use=["cash_basis", "no_incentive", "omit_pt"]),
-        dict(co="Juniper Retail Co.", pays=[90000, 80000, 70000, 60000, 50000], incentive=25000, pt=12000, use=["omit_pt", "incentive_upfront", "incentive_as_revenue"]),
-        dict(co="Kelmarsh Retail Co.", pays=[55000, 49000, 43000, 37000, 31000], incentive=15000, pt=7000, use=["no_incentive", "omit_pt", "incentive_upfront"]),
-        dict(co="Lillington Retail Co.", pays=[110000, 98000, 86000, 74000, 62000], incentive=30000, pt=15000, use=["cash_basis", "no_incentive", "incentive_as_revenue"]),
+        dict(co="Inkberrow Retail Co.", pays=[70000, 62000, 54000, 46000, 38000], incentive=25000, pt=9000, use=["cash_basis", "no_incentive", "omit_pt"]),
+        dict(co="Juniper Retail Co.", pays=[90000, 80000, 70000, 60000, 50000], incentive=30000, pt=12000, use=["omit_pt", "incentive_upfront", "incentive_as_revenue"]),
+        dict(co="Kelmarsh Retail Co.", pays=[55000, 49000, 43000, 37000, 31000], incentive=20000, pt=7000, use=["no_incentive", "omit_pt", "incentive_upfront"]),
+        dict(co="Lillington Retail Co.", pays=[110000, 98000, 86000, 74000, 62000], incentive=35000, pt=15000, use=["cash_basis", "no_incentive", "incentive_as_revenue"]),
      ], "no_incentive"),
     ("far-income-taxes-provision-0004", A3, "Accounting for income taxes", AP,
      ["ASC 740-10-25 (temporary and permanent differences)", "ASC 740-10-30 (current and deferred tax expense)"],
