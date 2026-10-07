@@ -144,3 +144,12 @@ Gate findings not applied as suggested, and why:
 
 Suggested additions to the quality bar from the gate (section 4 of its report) are for the lead to decide;
 the shared docs and scripts weren't edited in this revision.
+
+## Second round (2026-10-07)
+
+Both second-round passes ran on the rebuilt items; reports in `docs/reviews/far-batches-15-17-round2/`.
+
+- **Blind verifier:** all 52 versions agree with the key (and all 4 versions of the corrected live item `far-intangibles-cloud-computing-0001`, committed in ca3ba37). Two required fixes: `far-receivables-rollforward-0007` should ask for accounts receivable to report on the balance sheet (the "control account" framing makes choice A defensible) and state that the returning customer's debit balance exceeds the credit memo; `far-intangibles-cloud-computing-0002` v0 choice C should be $292,500, not $292,499.
+- **Gate:** **78.8%** average (first gate 47.4%), no major items, no wrong keys. Just under the ~80% bar; the minor fixes are listed per item in the gate report, with receivables-rollforward-0006 and -0007 the ones pulling the average down.
+
+**Still to do before the items are served:** apply both reports' fixes in `far-batch-15.py`, re-run the blind verifier on the changed versions, and re-gate the changed items. Then set the builder's status to `reviewed` and rebuild.

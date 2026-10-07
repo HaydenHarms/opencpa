@@ -127,3 +127,12 @@ Not applied, with reasons:
 - **Citations at Subtopic level** where the paragraph couldn't be confirmed: the ASU 2013-06 affiliate
   services rule (ASC 958-605-25) and the conditional and unconditional promise paragraphs (ASC
   958-605-25). Confirm the paragraphs against the Codification if it becomes reachable.
+
+## Second round (2026-10-07)
+
+Reports in `docs/reviews/far-batches-15-17-round2/`.
+
+- **Blind verifier:** keys agree on 15 of 16 items. Required: `far-revenue-variable-consideration-0003` (all versions) has the board ruling "by December 31, Year 1", the reporting date, so the outcome is known and the constraint no longer applies; move the ruling past issuance. Also: deferred-0004 v0/v1/v3 distractor B matches no error; fair-value-liability-0001 v2/v3 distractor A uses an error no other version uses; lessee-finance-0004 v1 and lessee-finance-0005 v2 keys sit on a .5 rounding tie.
+- **Gate:** **80.3%** average (first gate 78.2%), all keys correct, **1 major** (variable-consideration-0003, same defect), 9 minor, listed with fixes in the gate report.
+
+A third round of fixes was started and cut off by a usage limit; the partial edit was discarded, so `far-batch-16.py` on `main` is the round 2 version. **Still to do:** apply both reports' fixes, re-run the blind verifier and gate on the changed items, then set the builder's status to `reviewed` and rebuild.

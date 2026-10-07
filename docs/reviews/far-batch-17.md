@@ -121,3 +121,12 @@ All other items were clean, with advisories on `contingencies-0015`, `-0016`, `-
 1. **The rebuilt items haven't been through the blind verifier or the gate.** They stay `draft` until both pass.
 2. **`far-contingencies-0016` and the III.B.b task.** A cash-rebate refund liability is ASC 606 measurement sitting on a contingencies task, as the gate recommended. If the second gate prefers a pure ASC 450 component, the rebate can be swapped without touching the commitment half.
 3. **`far-subsequent-events-0014`** tests a bonus whose base depends on a recognized subsequent event. The gate should confirm that the bonus-determination framing reads as III.G.b ("calculate adjustments for identified subsequent events") and not as a payroll-accrual item.
+
+## Second round (2026-10-07)
+
+Reports in `docs/reviews/far-batches-15-17-round2/`.
+
+- **Blind verifier:** all 64 versions agree with the key; no required fixes. Recommended: spread key positions (A 13, B 24, C 23, D 4, so the largest value is almost never the key); add "Ignore income taxes" to subsequent-events-0016 and -0017; state in contingencies-0017 that only the one-year payment is discounted.
+- **Gate:** **78.5%** average (first gate 62.0%), all keys correct, **1 major**: `far-subsequent-events-0015` repeats the customer-bankruptcy event of subsequent-events-0002 and -0008 and the post-year-end dividend of four others; rebuild with two events new to III.G.b. Eleven minor findings with fixes are in the gate report, including an ASU 2015-11 currency gap in contingencies-0016 (commitment losses measured at NRV for a FIFO entity).
+
+**Still to do:** apply both reports' fixes in `far-batch-17.py`, re-run the blind verifier and gate on the changed items, then set the builder's status to `reviewed` and rebuild.
