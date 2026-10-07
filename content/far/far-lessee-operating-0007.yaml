@@ -48,35 +48,35 @@ variants:
 - stem: 'On January 1, Year 1, Juniper Retail Co. leases retail space for 5 years, which it classifies
     as an operating lease. Rent, due each December 31, is $90,000 in Year 1 and falls each year after
     that: $80,000 in Year 2, $70,000 in Year 3, $60,000 in Year 4 and $50,000 in Year 5. At commencement,
-    the landlord paid Juniper $30,000 in cash as a leasehold improvement allowance. Juniper also reimburses
+    the landlord paid Juniper $28,000 in cash as a leasehold improvement allowance. Juniper also reimburses
     the landlord each year for its pro-rata share of the property taxes actually assessed on the building;
     the reimbursement for Year 1 is $12,000. What total lease cost should Juniper recognize for Year 1?'
   choices:
   - id: A
-    text: $52,000
-    rationale: Deducts the whole $30,000 incentive from Year 1 cost instead of spreading it over the 5-year
+    text: $54,000
+    rationale: Deducts the whole $28,000 incentive from Year 1 cost instead of spreading it over the 5-year
       term with the payments.
   - id: B
-    text: $64,000
+    text: $64,400
     rationale: Leaves out the $12,000 of property tax reimbursement. It is a variable payment that isn't
       based on an index or a rate, so it isn't part of the straight-line calculation, but it is still
       lease cost, recognized as incurred.
   - id: C
-    text: $76,000
-    rationale: Correct. ($350,000 total payments − $30,000 incentive) ÷ 5 = $64,000, plus $12,000 of variable
+    text: $76,400
+    rationale: Correct. ($350,000 total payments − $28,000 incentive) ÷ 5 = $64,400, plus $12,000 of variable
       property tax reimbursement.
   - id: D
-    text: $88,000
-    rationale: Adds a $6,000 share of the $30,000 incentive to cost instead of subtracting it from the
+    text: $87,600
+    rationale: Adds a $5,600 share of the $28,000 incentive to cost instead of subtracting it from the
       payments being spread.
   answer: C
   explanation: 'For an operating lease, the fixed payments net of lease incentives received are recognized
     straight-line over the lease term (ASC 842-20-25-6(a)), unless another systematic basis better represents
     the pattern in which the lessee uses the space; nothing suggests one does, and a falling rent schedule
-    doesn''t change the straight-line pattern: ($350,000 total payments − $30,000 incentive) ÷ 5 = $64,000.
+    doesn''t change the straight-line pattern: ($350,000 total payments − $28,000 incentive) ÷ 5 = $64,400.
     The property tax reimbursement doesn''t depend on an index or a rate, so it is excluded from the lease
-    payments and recognized as incurred (ASC 842-20-25-6(b)): $12,000. Total lease cost = $64,000 + $12,000
-    = $76,000.'
+    payments and recognized as incurred (ASC 842-20-25-6(b)): $12,000. Total lease cost = $64,400 + $12,000
+    = $76,400.'
 - stem: 'On January 1, Year 1, Kelmarsh Retail Co. leases retail space for 5 years, which it classifies
     as an operating lease. Rent, due each December 31, is $55,000 in Year 1 and falls each year after
     that: $49,000 in Year 2, $43,000 in Year 3, $37,000 in Year 4 and $31,000 in Year 5. At commencement,

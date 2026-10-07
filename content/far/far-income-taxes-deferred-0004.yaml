@@ -14,14 +14,16 @@ review:
   notes: Batch 16. Written from scratch; answers solved and every number and distractor computed in code.
     Reworked after the 2026-10-05 review gate.
   asOf: U.S. GAAP (ASC 740) and federal tax law in effect for 2026; the rate is as stated in the stem
-stem: Saltburn Corp. keeps separate deferred tax asset and deferred tax liability accounts in its ledger
-  and is measuring them at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing
-  the whole gain in its books; $180,000 of that gain hasn't yet been collected and will be taxed as it
-  is. In Year 2 it accrued a $260,000 loss for a lawsuit it expects to settle; the loss is deductible
-  when paid, and Saltburn expects to pay $220,000 of it in Year 3 and the rest in Year 4. The enacted
-  tax rate is 25% for all years. Weighing its recent losses against its forecasts, Saltburn concludes
-  that it needs a valuation allowance of $8,000 against its deferred tax asset. At December 31, Year 2,
-  what amounts should Saltburn report for its deferred tax asset and its deferred tax liability?
+stem: Saltburn Corp. keeps separate deferred tax asset and deferred tax liability accounts in its ledger,
+  records any valuation allowance directly in the deferred tax asset account, and is measuring both accounts
+  at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the whole gain in its
+  books; $180,000 of that gain hasn't yet been collected and will be taxed as it is. In Year 2 it accrued
+  a $260,000 loss for a lawsuit it expects to settle; the loss is deductible when paid, and Saltburn expects
+  to pay $220,000 of it in Year 3 and the rest in Year 4. The enacted tax rate is 25% for all years. Weighing
+  its recent losses against its forecasts, Saltburn concludes that it needs a valuation allowance of $8,000
+  against its deferred tax asset. Before any offsetting for balance sheet presentation, what balances
+  should Saltburn's deferred tax asset account and deferred tax liability account show at December 31,
+  Year 2?
 choices:
 - id: A
   text: $47,000 asset; $45,000 liability
@@ -47,14 +49,15 @@ explanation: 'The uncollected installment gain is a taxable temporary difference
   the allowance, the asset account carries $57,000 and the liability account $45,000.'
 variants:
 - stem: Tissington Corp. keeps separate deferred tax asset and deferred tax liability accounts in its
-    ledger and is measuring them at December 31, Year 2. In Year 1 it sold land on installment terms,
-    recognizing the whole gain in its books; $140,000 of that gain hasn't yet been collected and will
-    be taxed as it is. In Year 2 it accrued a $210,000 loss for a lawsuit it expects to settle; the loss
-    is deductible when paid, and Tissington expects to pay $150,000 of it in Year 3 and the rest in Year
-    4. The enacted tax rate is 21% for all years. Weighing its recent losses against its forecasts, Tissington
-    concludes that it needs a valuation allowance of $6,000 against its deferred tax asset. At December
-    31, Year 2, what amounts should Tissington report for its deferred tax asset and its deferred tax
-    liability?
+    ledger, records any valuation allowance directly in the deferred tax asset account, and is measuring
+    both accounts at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the
+    whole gain in its books; $140,000 of that gain hasn't yet been collected and will be taxed as it is.
+    In Year 2 it accrued a $210,000 loss for a lawsuit it expects to settle; the loss is deductible when
+    paid, and Tissington expects to pay $150,000 of it in Year 3 and the rest in Year 4. The enacted tax
+    rate is 21% for all years. Weighing its recent losses against its forecasts, Tissington concludes
+    that it needs a valuation allowance of $6,000 against its deferred tax asset. Before any offsetting
+    for balance sheet presentation, what balances should Tissington's deferred tax asset account and deferred
+    tax liability account show at December 31, Year 2?
   choices:
   - id: A
     text: $25,500 asset; $29,400 liability
@@ -79,25 +82,26 @@ variants:
     asset to the amount expected to be realized (ASC 740-10-30-5(e)): $44,100 − $6,000 = $38,100. Net
     of the allowance, the asset account carries $38,100 and the liability account $29,400.'
 - stem: Ulverscroft Corp. keeps separate deferred tax asset and deferred tax liability accounts in its
-    ledger and is measuring them at December 31, Year 2. In Year 1 it sold land on installment terms,
-    recognizing the whole gain in its books; $220,000 of that gain hasn't yet been collected and will
-    be taxed as it is. In Year 2 it accrued a $320,000 loss for a lawsuit it expects to settle; the loss
-    is deductible when paid, and Ulverscroft expects to pay $240,000 of it in Year 3 and the rest in Year
-    4. The enacted tax rate is 25% for all years. Weighing its recent losses against its forecasts, Ulverscroft
-    concludes that it needs a valuation allowance of $10,000 against its deferred tax asset. At December
-    31, Year 2, what amounts should Ulverscroft report for its deferred tax asset and its deferred tax
-    liability?
+    ledger, records any valuation allowance directly in the deferred tax asset account, and is measuring
+    both accounts at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the
+    whole gain in its books; $220,000 of that gain hasn't yet been collected and will be taxed as it is.
+    In Year 2 it accrued a $320,000 loss for a lawsuit it expects to settle; the loss is deductible when
+    paid, and Ulverscroft expects to pay $240,000 of it in Year 3 and the rest in Year 4. The enacted
+    tax rate is 25% for all years. Weighing its recent losses against its forecasts, Ulverscroft concludes
+    that it needs a valuation allowance of $10,000 against its deferred tax asset. Before any offsetting
+    for balance sheet presentation, what balances should Ulverscroft's deferred tax asset account and
+    deferred tax liability account show at December 31, Year 2?
   choices:
   - id: A
+    text: $15,000 asset; $0 liability
+    rationale: 'Offsets the liability against the asset. The two may be netted for balance sheet presentation
+      within one tax jurisdiction (ASC 740-10-45-6), but the question asks for each account''s balance
+      before that offsetting: $70,000 and $55,000.'
+  - id: B
     text: $50,000 asset; $55,000 liability
     rationale: Bases the deferred tax asset on only the $240,000 of the accrual Ulverscroft expects to
       pay in Year 3. A deferred tax asset arises on the whole $320,000 deductible temporary difference;
       deferred taxes aren't split into current and noncurrent parts (ASC 740-10-45-4).
-  - id: B
-    text: $70,000 asset; $0 liability
-    rationale: Records no deferred tax liability, as if the $220,000 of gain not yet collected had already
-      been taxed. Gain recognized in the books but taxed when collected is a taxable temporary difference
-      (ASC 740-10-25-20).
   - id: C
     text: $70,000 asset; $55,000 liability
     rationale: Correct. Asset $320,000 × 25% = $80,000, less the $10,000 allowance; liability $220,000
@@ -112,25 +116,27 @@ variants:
     it will be paid: deferred tax asset = $320,000 × 25% = $80,000. The valuation allowance reduces the
     asset to the amount expected to be realized (ASC 740-10-30-5(e)): $80,000 − $10,000 = $70,000. Net
     of the allowance, the asset account carries $70,000 and the liability account $55,000.'
-- stem: Wrenbury Corp. keeps separate deferred tax asset and deferred tax liability accounts in its ledger
-    and is measuring them at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing
-    the whole gain in its books; $160,000 of that gain hasn't yet been collected and will be taxed as
-    it is. In Year 2 it accrued a $235,000 loss for a lawsuit it expects to settle; the loss is deductible
-    when paid, and Wrenbury expects to pay $175,000 of it in Year 3 and the rest in Year 4. The enacted
-    tax rate is 24% for all years. Weighing its recent losses against its forecasts, Wrenbury concludes
-    that it needs a valuation allowance of $7,000 against its deferred tax asset. At December 31, Year
-    2, what amounts should Wrenbury report for its deferred tax asset and its deferred tax liability?
+- stem: Wrenbury Corp. keeps separate deferred tax asset and deferred tax liability accounts in its ledger,
+    records any valuation allowance directly in the deferred tax asset account, and is measuring both
+    accounts at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the whole
+    gain in its books; $160,000 of that gain hasn't yet been collected and will be taxed as it is. In
+    Year 2 it accrued a $235,000 loss for a lawsuit it expects to settle; the loss is deductible when
+    paid, and Wrenbury expects to pay $175,000 of it in Year 3 and the rest in Year 4. The enacted tax
+    rate is 24% for all years. Weighing its recent losses against its forecasts, Wrenbury concludes that
+    it needs a valuation allowance of $7,000 against its deferred tax asset. Before any offsetting for
+    balance sheet presentation, what balances should Wrenbury's deferred tax asset account and deferred
+    tax liability account show at December 31, Year 2?
   choices:
   - id: A
+    text: $11,000 asset; $0 liability
+    rationale: 'Offsets the liability against the asset. The two may be netted for balance sheet presentation
+      within one tax jurisdiction (ASC 740-10-45-6), but the question asks for each account''s balance
+      before that offsetting: $49,400 and $38,400.'
+  - id: B
     text: $35,000 asset; $38,400 liability
     rationale: Bases the deferred tax asset on only the $175,000 of the accrual Wrenbury expects to pay
       in Year 3. A deferred tax asset arises on the whole $235,000 deductible temporary difference; deferred
       taxes aren't split into current and noncurrent parts (ASC 740-10-45-4).
-  - id: B
-    text: $49,400 asset; $0 liability
-    rationale: Records no deferred tax liability, as if the $160,000 of gain not yet collected had already
-      been taxed. Gain recognized in the books but taxed when collected is a taxable temporary difference
-      (ASC 740-10-25-20).
   - id: C
     text: $49,400 asset; $38,400 liability
     rationale: Correct. Asset $235,000 × 24% = $56,400, less the $7,000 allowance; liability $160,000

@@ -18,13 +18,14 @@ stem: 'Illogan Metals Supply Co.''s staff prepared this Year 2 inventory rollfor
   records: beginning inventory $452,000, purchases $1,860,000, cost of goods sold $1,837,000, ending inventory
   $475,000. Reviewing it, the controller finds that $27,000 of freight charges on incoming shipments from
   suppliers, all for goods sold during Year 2, and $19,000 of freight on shipments to customers were both
-  charged to delivery expense. In December, Illogan shipped goods costing $38,000 to a dealer that sells
-  them on consignment, and the perpetual system recorded them as sold when they left the warehouse; the
-  dealer hadn''t sold any of them by December 31. And Illogan''s Year 2 purchases of one supplier''s alloy
-  bar, $600,000 in all, reached that supplier''s volume threshold for a 5% rebate on the year''s purchases;
-  the supplier issued the credit memo in January, and Illogan hasn''t recorded the rebate. Alloy bar costing
-  $240,000 from those purchases is still on hand at December 31; the rest has been sold. What cost of
-  goods sold should the corrected rollforward report for Year 2?'
+  charged to delivery expense; Illogan reports shipping costs to customers as a selling expense. In December,
+  Illogan shipped goods costing $38,000 to a dealer that sells them on consignment, and the perpetual
+  system recorded them as sold when they left the warehouse; the dealer hadn''t sold any of them by December
+  31. And Illogan''s Year 2 purchases of one supplier''s alloy bar, $600,000 in all, reached that supplier''s
+  volume threshold for a 5% rebate on the year''s purchases; the supplier issued the credit memo in January,
+  and Illogan hasn''t recorded the rebate. Alloy bar costing $240,000 from those purchases is still on
+  hand at December 31; the rest has been sold. What cost of goods sold should the corrected rollforward
+  report for Year 2?'
 choices:
 - id: A
   text: $1,781,000
@@ -58,14 +59,14 @@ variants:
     records: beginning inventory $530,000, purchases $2,240,000, cost of goods sold $2,202,000, ending
     inventory $568,000. Reviewing it, the controller finds that $31,000 of freight charges on incoming
     shipments from suppliers, all for goods sold during Year 2, and $33,000 of freight on shipments to
-    customers were both charged to delivery expense. In December, Tuckingmill shipped goods costing $44,000
-    to a dealer that sells them on consignment, and the perpetual system recorded them as sold when they
-    left the warehouse; the dealer hadn''t sold any of them by December 31. And Tuckingmill''s Year 2
-    purchases of one supplier''s alloy bar, $700,000 in all, reached that supplier''s volume threshold
-    for a 4% rebate on the year''s purchases; the supplier issued the credit memo in January, and Tuckingmill
-    hasn''t recorded the rebate. Alloy bar costing $300,000 from those purchases is still on hand at December
-    31; the rest has been sold. What cost of goods sold should the corrected rollforward report for Year
-    2?'
+    customers were both charged to delivery expense; Tuckingmill reports shipping costs to customers as
+    a selling expense. In December, Tuckingmill shipped goods costing $44,000 to a dealer that sells them
+    on consignment, and the perpetual system recorded them as sold when they left the warehouse; the dealer
+    hadn''t sold any of them by December 31. And Tuckingmill''s Year 2 purchases of one supplier''s alloy
+    bar, $700,000 in all, reached that supplier''s volume threshold for a 4% rebate on the year''s purchases;
+    the supplier issued the credit memo in January, and Tuckingmill hasn''t recorded the rebate. Alloy
+    bar costing $300,000 from those purchases is still on hand at December 31; the rest has been sold.
+    What cost of goods sold should the corrected rollforward report for Year 2?'
   choices:
   - id: A
     text: $2,173,000
@@ -78,7 +79,8 @@ variants:
   - id: C
     text: $2,206,000
     rationale: Also moves the $33,000 of freight on shipments to customers into cost of goods sold. Freight-out
-      is a selling (delivery) cost, not a cost of inventory, so it stays where it is.
+      isn't a cost of inventory, and Tuckingmill reports shipping costs to customers as a selling expense,
+      so it stays where it is.
   - id: D
     text: $2,217,000
     rationale: Leaves the $44,000 of goods at the dealer in cost of goods sold. Goods out on consignment
@@ -98,13 +100,14 @@ variants:
     beginning inventory $330,000, purchases $1,450,000, cost of goods sold $1,438,000, ending inventory
     $342,000. Reviewing it, the controller finds that $34,000 of freight charges on incoming shipments
     from suppliers, all for goods sold during Year 2, and $21,000 of freight on shipments to customers
-    were both charged to delivery expense. In December, Troon shipped goods costing $26,000 to a dealer
-    that sells them on consignment, and the perpetual system recorded them as sold when they left the
-    warehouse; the dealer hadn''t sold any of them by December 31. And Troon''s Year 2 purchases of one
-    supplier''s alloy bar, $450,000 in all, reached that supplier''s volume threshold for a 5% rebate
-    on the year''s purchases; the supplier issued the credit memo in January, and Troon hasn''t recorded
-    the rebate. Alloy bar costing $180,000 from those purchases is still on hand at December 31; the rest
-    has been sold. What cost of goods sold should the corrected rollforward report for Year 2?'
+    were both charged to delivery expense; Troon reports shipping costs to customers as a selling expense.
+    In December, Troon shipped goods costing $26,000 to a dealer that sells them on consignment, and the
+    perpetual system recorded them as sold when they left the warehouse; the dealer hadn''t sold any of
+    them by December 31. And Troon''s Year 2 purchases of one supplier''s alloy bar, $450,000 in all,
+    reached that supplier''s volume threshold for a 5% rebate on the year''s purchases; the supplier issued
+    the credit memo in January, and Troon hasn''t recorded the rebate. Alloy bar costing $180,000 from
+    those purchases is still on hand at December 31; the rest has been sold. What cost of goods sold should
+    the corrected rollforward report for Year 2?'
   choices:
   - id: A
     text: $1,398,500
@@ -138,13 +141,14 @@ variants:
     beginning inventory $390,000, purchases $1,700,000, cost of goods sold $1,672,000, ending inventory
     $418,000. Reviewing it, the controller finds that $22,000 of freight charges on incoming shipments
     from suppliers, all for goods sold during Year 2, and $16,000 of freight on shipments to customers
-    were both charged to delivery expense. In December, Praze shipped goods costing $33,000 to a dealer
-    that sells them on consignment, and the perpetual system recorded them as sold when they left the
-    warehouse; the dealer hadn''t sold any of them by December 31. And Praze''s Year 2 purchases of one
-    supplier''s alloy bar, $650,000 in all, reached that supplier''s volume threshold for a 4% rebate
-    on the year''s purchases; the supplier issued the credit memo in January, and Praze hasn''t recorded
-    the rebate. Alloy bar costing $250,000 from those purchases is still on hand at December 31; the rest
-    has been sold. What cost of goods sold should the corrected rollforward report for Year 2?'
+    were both charged to delivery expense; Praze reports shipping costs to customers as a selling expense.
+    In December, Praze shipped goods costing $33,000 to a dealer that sells them on consignment, and the
+    perpetual system recorded them as sold when they left the warehouse; the dealer hadn''t sold any of
+    them by December 31. And Praze''s Year 2 purchases of one supplier''s alloy bar, $650,000 in all,
+    reached that supplier''s volume threshold for a 4% rebate on the year''s purchases; the supplier issued
+    the credit memo in January, and Praze hasn''t recorded the rebate. Alloy bar costing $250,000 from
+    those purchases is still on hand at December 31; the rest has been sold. What cost of goods sold should
+    the corrected rollforward report for Year 2?'
   choices:
   - id: A
     text: $1,623,000
@@ -162,7 +166,8 @@ variants:
   - id: D
     text: $1,661,000
     rationale: Also moves the $16,000 of freight on shipments to customers into cost of goods sold. Freight-out
-      is a selling (delivery) cost, not a cost of inventory, so it stays where it is.
+      isn't a cost of inventory, and Praze reports shipping costs to customers as a selling expense, so
+      it stays where it is.
   answer: C
   explanation: 'Freight-in is a cost of bringing goods to their location for sale, so it is part of inventory
     cost (ASC 330-10-30-1); the goods it relates to were all sold, so the $22,000 moves from delivery

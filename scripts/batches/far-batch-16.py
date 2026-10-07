@@ -461,6 +461,7 @@ def lessee_stepdown_cost(p):
     core = whole(rd((total_pay - incentive) / 5))
     key_v = core + pt
     assert pays[0] - incentive + pt != key_v, "cash rent less the whole incentive must not reach the key"
+    assert whole(rd((total_pay + incentive) / 5)) != key_v, "adding the incentive and omitting the tax must not reach the key"
     no_incentive = whole(rd(total_pay / 5))
     pool = {
         "cash_basis": (m(pays[0] + pt), f"Uses the Year 1 cash payment of {m(pays[0])} instead of the straight-line average. Operating lease cost is recognized straight-line over the term, regardless of the payment schedule."),
@@ -519,17 +520,19 @@ def tax_deferred_installment_litigation(p):
     def ch(a, b):
         return f"{m(a)} asset; {m(b)} liability"
 
+    assert dta - va > dtl, "the offset choice must be a net asset"
     pool = {
         "no_va": (ch(dta, dtl), f"Doesn't deduct the {m(va)} valuation allowance from the deferred tax asset."),
         "va_sign": (ch(dta + va, dtl), f"Adds the {m(va)} allowance to the deferred tax asset instead of deducting it. A valuation allowance reduces a deferred tax asset to the amount expected to be realized."),
         "cur_portion": (ch(tax(litc) - va, dtl), f"Bases the deferred tax asset on only the {m(litc)} of the accrual {s} expects to pay in Year 3. A deferred tax asset arises on the whole {m(lit)} deductible temporary difference; deferred taxes aren't split into current and noncurrent parts (ASC 740-10-45-4)."),
+        "offset": (ch(dta - va - dtl, 0), f"Offsets the liability against the asset. The two may be netted for balance sheet presentation within one tax jurisdiction (ASC 740-10-45-6), but the question asks for each account's balance before that offsetting: {m(dta - va)} and {m(dtl)}."),
         "no_inst": (ch(dta - va, 0), f"Records no deferred tax liability, as if the {m(inst)} of gain not yet collected had already been taxed. Gain recognized in the books but taxed when collected is a taxable temporary difference (ASC 740-10-25-20)."),
         "va_on_dtl": (ch(dta, dtl - va), f"Deducts the {m(va)} allowance from the deferred tax liability. The allowance reduces the deferred tax asset it relates to."),
     }
     key = (ch(dta - va, dtl), f"Correct. Asset {m(lit)} × {p['r']}% = {m(dta)}, less the {m(va)} allowance; liability {m(inst)} × {p['r']}%.")
     choices, ans = build(pool, key, p["use"])
     return variant(
-        f"""{co} keeps separate deferred tax asset and deferred tax liability accounts in its ledger and is measuring them at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the whole gain in its books; {m(inst)} of that gain hasn't yet been collected and will be taxed as it is. In Year 2 it accrued a {m(lit)} loss for a lawsuit it expects to settle; the loss is deductible when paid, and {s} expects to pay {m(litc)} of it in Year 3 and the rest in Year 4. The enacted tax rate is {p['r']}% for all years. Weighing its recent losses against its forecasts, {s} concludes that it needs a valuation allowance of {m(va)} against its deferred tax asset. At December 31, Year 2, what amounts should {s} report for its deferred tax asset and its deferred tax liability?""",
+        f"""{co} keeps separate deferred tax asset and deferred tax liability accounts in its ledger, records any valuation allowance directly in the deferred tax asset account, and is measuring both accounts at December 31, Year 2. In Year 1 it sold land on installment terms, recognizing the whole gain in its books; {m(inst)} of that gain hasn't yet been collected and will be taxed as it is. In Year 2 it accrued a {m(lit)} loss for a lawsuit it expects to settle; the loss is deductible when paid, and {s} expects to pay {m(litc)} of it in Year 3 and the rest in Year 4. The enacted tax rate is {p['r']}% for all years. Weighing its recent losses against its forecasts, {s} concludes that it needs a valuation allowance of {m(va)} against its deferred tax asset. Before any offsetting for balance sheet presentation, what balances should {s}'s deferred tax asset account and deferred tax liability account show at December 31, Year 2?""",
         choices, ans,
         f"""The uncollected installment gain is a taxable temporary difference: deferred tax liability = {m(inst)} × {p['r']}% = {m(dtl)}. The litigation accrual is a deductible temporary difference in full, whenever it will be paid: deferred tax asset = {m(lit)} × {p['r']}% = {m(dta)}. The valuation allowance reduces the asset to the amount expected to be realized (ASC 740-10-30-5(e)): {m(dta)} − {m(va)} = {m(dta - va)}. Net of the allowance, the asset account carries {m(dta - va)} and the liability account {m(dtl)}.""",
     )
@@ -680,7 +683,7 @@ FAMILIES = [
       "ASC 842-10-30-5 (lease payments net of lease incentives)"],
      lessee_stepdown_cost, [
         dict(co="Inkberrow Retail Co.", pays=[70000, 62000, 54000, 46000, 38000], incentive=25000, pt=9000, use=["cash_basis", "no_incentive", "omit_pt"]),
-        dict(co="Juniper Retail Co.", pays=[90000, 80000, 70000, 60000, 50000], incentive=30000, pt=12000, use=["omit_pt", "incentive_upfront", "incentive_as_revenue"]),
+        dict(co="Juniper Retail Co.", pays=[90000, 80000, 70000, 60000, 50000], incentive=28000, pt=12000, use=["omit_pt", "incentive_upfront", "incentive_as_revenue"]),
         dict(co="Kelmarsh Retail Co.", pays=[55000, 49000, 43000, 37000, 31000], incentive=20000, pt=7000, use=["no_incentive", "omit_pt", "incentive_upfront"]),
         dict(co="Lillington Retail Co.", pays=[110000, 98000, 86000, 74000, 62000], incentive=35000, pt=15000, use=["cash_basis", "no_incentive", "incentive_as_revenue"]),
      ], "no_incentive"),
@@ -698,8 +701,8 @@ FAMILIES = [
      tax_deferred_installment_litigation, [
         dict(co="Saltburn Corp.", inst=180000, lit=260000, litc=220000, va=8000, r=25, use=["cur_portion", "no_va", "va_on_dtl"]),
         dict(co="Tissington Corp.", inst=140000, lit=210000, litc=150000, va=6000, r=21, use=["cur_portion", "va_on_dtl", "no_va"]),
-        dict(co="Ulverscroft Corp.", inst=220000, lit=320000, litc=240000, va=10000, r=25, use=["cur_portion", "va_on_dtl", "no_inst"]),
-        dict(co="Wrenbury Corp.", inst=160000, lit=235000, litc=175000, va=7000, r=24, use=["no_inst", "no_va", "cur_portion"]),
+        dict(co="Ulverscroft Corp.", inst=220000, lit=320000, litc=240000, va=10000, r=25, use=["cur_portion", "va_on_dtl", "offset"]),
+        dict(co="Wrenbury Corp.", inst=160000, lit=235000, litc=175000, va=7000, r=24, use=["offset", "no_va", "cur_portion"]),
      ], "cur_portion", ASOF_TAX),
     ("far-income-taxes-provision-0005", A3, "Accounting for income taxes", AP,
      ["ASC 740-10-30-5 (measuring deferred tax assets and liabilities; valuation allowance)", "ASC 740-10-25 (temporary differences)"],
