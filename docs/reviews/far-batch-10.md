@@ -1,6 +1,6 @@
 # Review report: FAR batch 10
 
-**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026.
+**Standard:** AICPA _Uniform CPA Examination Blueprints_, effective January 2026.
 
 **25 items**, all written from scratch in `scripts/batches/far-batch-10.py`. Each of the 18 numeric items ships with three variants (54 in all), so the batch adds 79 problems. Every variant family moves the key's letter.
 
@@ -8,33 +8,33 @@
 
 The batch takes the two FAR tasks that had no items (I.A.3a, I.F.a), a second item on four Remembering and Understanding tasks, a second item on nine Application tasks, and a further item on ten Analysis tasks, so it leans toward Areas I and II with Analysis at 40%. Only two items are in Area III, because the bank's Area III share is near its ceiling.
 
-| Item | Blueprint task | Skill |
-| --- | --- | --- |
-| `far-comprehensive-income-0004` | I.A.3a Recall the purpose, objectives and structure of the statement of comprehensive income (one continuous statement or two consecutive statements; NCI attribution; tax presentation) | Remembering and Understanding |
-| `far-ratios-0005` | I.F.a Identify the appropriate ratio or metric for an analysis (coverage of interest: times interest earned) | Remembering and Understanding |
-| `far-governmental-measurement-focus-0002` | I.C.1a Recall government measurement focus and basis of accounting (general fund capital purchase is an expenditure) | Remembering and Understanding |
-| `far-asset-retirement-obligations-0002` | II.G.a Recall asset retirement obligation recognition and measurement (upward revision discounted at the current credit-adjusted risk-free rate) | Remembering and Understanding |
-| `far-valuation-allowance-0002` | III.D.b Recall valuation allowance criteria (more-likely-than-not threshold and measurement) | Remembering and Understanding |
-| `far-subsequent-events-0009` | III.G.a Identify a subsequent event and recall its treatment (customer casualty after year-end is nonrecognized) | Remembering and Understanding |
-| `far-consolidated-statements-0009` | I.A.6a Prepare consolidated financial statements (NCI in net income: upstream equipment gain and its realization, fair value amortization, downstream inventory profit and fees as decoys) | Application |
-| `far-nfp-functional-expenses-0002` | I.B.2d Report NFP expenses by nature and function (fundraising: time-record allocations, grant writer, joint mailing that fails the audience criterion, unrecognized volunteer services) | Application |
-| `far-nfp-cash-flows-0004` | I.B.3b Prepare an NFP statement of cash flows (net cash used in investing: restricted gift for equipment, donated shares sold at once, unrestricted investment income, donated land) | Application |
-| `far-special-purpose-frameworks-0005` | I.E.b Convert cash basis statements to accrual basis (net income: receivables, accrued expenses, prepaid insurance, equipment and depreciation) | Application |
-| `far-ratios-0006` | I.F.d Calculate solvency ratios (times interest earned with capitalized interest and cash interest paid) | Application |
-| `far-ppe-involuntary-conversion-0001` | II.D.b Calculate gains or losses on disposals of long-lived assets (involuntary conversion: partial-year depreciation, deductible, reinvestment) | Application |
-| `far-ppe-impairment-0003` | II.D.c Calculate impairment losses on long-lived assets (held and used: recoverability test, then fair value; costs to sell and value in use as distractors) | Application |
-| `far-investments-htm-credit-loss-0002` | II.E.2c Calculate impairment losses on investments at amortized cost (CECL pool loss rate on HTM bonds, write-off net of settlement, rate-driven fair value decline; accrued interest elections stated) | Application |
-| `far-exit-costs-0002` | II.G.c Calculate exit or disposal liabilities and their timing (termination benefits inside and beyond the minimum retention period, contract termination penalty, cease-use costs, relocation) | Application |
-| `far-balance-sheet-0007` | I.A.1c Detect and correct balance sheet discrepancies (working capital: postdated checks, restricted construction cash, consigned-out goods, current installment) | Analysis |
-| `far-income-statement-0006` | I.A.2d Detect and correct income statement discrepancies (draft built up line by line: customer deposit in sales, goods in transit left out of the count, prepaid insurance, equity securities gain as a decoy) | Analysis |
-| `far-cash-flows-0012` | I.A.5d Derive the impact of transactions on the statement of cash flows (investing cash from equipment and accumulated depreciation balances, a seller-financed machine and a sale at a gain) | Analysis |
-| `far-consolidated-statements-0010` | I.A.6c Detect and correct consolidated financial statement discrepancies (current liabilities: in-transit intercompany payable, uneliminated fees, NCI share of a subsidiary dividend payable) | Analysis |
-| `far-notes-0007` | I.A.7b Compare the notes with the statements to identify inconsistencies (inventory including consigned-in goods; equity method, revenue and other liabilities notes consistent) | Analysis |
-| `far-cash-unreconciled-0002` | II.A.c Investigate unreconciled cash balances to determine an adjustment (omitted outstanding check, misrecorded disbursement, prior-month deposit in transit) | Analysis |
-| `far-receivables-rollforward-0004` | II.B.c Prepare a rollforward of trade receivables (ending balance: cash sales, recovery of a written-off account, noncash settlement, refund liability) | Analysis |
-| `far-inventory-reconciliation-0004` | II.C.d Reconcile the inventory subledger to the general ledger (duplicate receiving posting, goods in a public warehouse, inbound freight split between units on hand and sold, unposted customer return) | Analysis |
-| `far-ppe-reconciliation-0004` | II.D.g Reconcile the PP&E subledger to the general ledger (accumulated depreciation: sold machine left in subledger, fully depreciated press, change in useful life applied with a catch-up) | Analysis |
-| `far-payables-reconciliation-0003` | II.G.d Reconcile the payables subledger to the general ledger (debit balances, checks held at year-end, net-method invoice posted gross, unposted debit memo) | Analysis |
+| Item                                      | Blueprint task                                                                                                                                                                                                  | Skill                         |
+| ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| `far-comprehensive-income-0004`           | I.A.3a Recall the purpose, objectives and structure of the statement of comprehensive income (one continuous statement or two consecutive statements; NCI attribution; tax presentation)                        | Remembering and Understanding |
+| `far-ratios-0005`                         | I.F.a Identify the appropriate ratio or metric for an analysis (coverage of interest: times interest earned)                                                                                                    | Remembering and Understanding |
+| `far-governmental-measurement-focus-0002` | I.C.1a Recall government measurement focus and basis of accounting (general fund capital purchase is an expenditure)                                                                                            | Remembering and Understanding |
+| `far-asset-retirement-obligations-0002`   | II.G.a Recall asset retirement obligation recognition and measurement (upward revision discounted at the current credit-adjusted risk-free rate)                                                                | Remembering and Understanding |
+| `far-valuation-allowance-0002`            | III.D.b Recall valuation allowance criteria (more-likely-than-not threshold and measurement)                                                                                                                    | Remembering and Understanding |
+| `far-subsequent-events-0009`              | III.G.a Identify a subsequent event and recall its treatment (customer casualty after year-end is nonrecognized)                                                                                                | Remembering and Understanding |
+| `far-consolidated-statements-0009`        | I.A.6a Prepare consolidated financial statements (NCI in net income: upstream equipment gain and its realization, fair value amortization, downstream inventory profit and fees as decoys)                      | Application                   |
+| `far-nfp-functional-expenses-0002`        | I.B.2d Report NFP expenses by nature and function (fundraising: time-record allocations, grant writer, joint mailing that fails the audience criterion, unrecognized volunteer services)                        | Application                   |
+| `far-nfp-cash-flows-0004`                 | I.B.3b Prepare an NFP statement of cash flows (net cash used in investing: restricted gift for equipment, donated shares sold at once, unrestricted investment income, donated land)                            | Application                   |
+| `far-special-purpose-frameworks-0005`     | I.E.b Convert cash basis statements to accrual basis (net income: receivables, accrued expenses, prepaid insurance, equipment and depreciation)                                                                 | Application                   |
+| `far-ratios-0006`                         | I.F.d Calculate solvency ratios (times interest earned with capitalized interest and cash interest paid)                                                                                                        | Application                   |
+| `far-ppe-involuntary-conversion-0001`     | II.D.b Calculate gains or losses on disposals of long-lived assets (involuntary conversion: partial-year depreciation, deductible, reinvestment)                                                                | Application                   |
+| `far-ppe-impairment-0003`                 | II.D.c Calculate impairment losses on long-lived assets (held and used: recoverability test, then fair value; costs to sell and value in use as distractors)                                                    | Application                   |
+| `far-investments-htm-credit-loss-0002`    | II.E.2c Calculate impairment losses on investments at amortized cost (CECL pool loss rate on HTM bonds, write-off net of settlement, rate-driven fair value decline; accrued interest elections stated)         | Application                   |
+| `far-exit-costs-0002`                     | II.G.c Calculate exit or disposal liabilities and their timing (termination benefits inside and beyond the minimum retention period, contract termination penalty, cease-use costs, relocation)                 | Application                   |
+| `far-balance-sheet-0007`                  | I.A.1c Detect and correct balance sheet discrepancies (working capital: postdated checks, restricted construction cash, consigned-out goods, current installment)                                               | Analysis                      |
+| `far-income-statement-0006`               | I.A.2d Detect and correct income statement discrepancies (draft built up line by line: customer deposit in sales, goods in transit left out of the count, prepaid insurance, equity securities gain as a decoy) | Analysis                      |
+| `far-cash-flows-0012`                     | I.A.5d Derive the impact of transactions on the statement of cash flows (investing cash from equipment and accumulated depreciation balances, a seller-financed machine and a sale at a gain)                   | Analysis                      |
+| `far-consolidated-statements-0010`        | I.A.6c Detect and correct consolidated financial statement discrepancies (current liabilities: in-transit intercompany payable, uneliminated fees, NCI share of a subsidiary dividend payable)                  | Analysis                      |
+| `far-notes-0007`                          | I.A.7b Compare the notes with the statements to identify inconsistencies (inventory including consigned-in goods; equity method, revenue and other liabilities notes consistent)                                | Analysis                      |
+| `far-cash-unreconciled-0002`              | II.A.c Investigate unreconciled cash balances to determine an adjustment (omitted outstanding check, misrecorded disbursement, prior-month deposit in transit)                                                  | Analysis                      |
+| `far-receivables-rollforward-0004`        | II.B.c Prepare a rollforward of trade receivables (ending balance: cash sales, recovery of a written-off account, noncash settlement, refund liability)                                                         | Analysis                      |
+| `far-inventory-reconciliation-0004`       | II.C.d Reconcile the inventory subledger to the general ledger (duplicate receiving posting, goods in a public warehouse, inbound freight split between units on hand and sold, unposted customer return)       | Analysis                      |
+| `far-ppe-reconciliation-0004`             | II.D.g Reconcile the PP&E subledger to the general ledger (accumulated depreciation: sold machine left in subledger, fully depreciated press, change in useful life applied with a catch-up)                    | Analysis                      |
+| `far-payables-reconciliation-0003`        | II.G.d Reconcile the payables subledger to the general ledger (debit balances, checks held at year-end, net-method invoice posted gross, unposted debit memo)                                                   | Analysis                      |
 
 - **Batch mix:** by skill, 6 / 9 / 10 (24% / 36% / 40%); by area, 13 / 10 / 2.
 - **Variants:** 54 (18 numeric items × 3). Items plus variants: 79.
@@ -48,26 +48,26 @@ The batch takes the two FAR tasks that had no items (I.A.3a, I.F.a), a second it
 - Overall: A 4, B 7, C 7, D 7 (after the gate fixes; A 5, B 7, C 6, D 7 as built).
 - Across all 79 versions: A 9, B 26, C 36, D 8 (the variants lean to B and C because each mixes overstating and understating distractors).
 
-| Item | Key letters (version 0, variants 1–3) |
-| --- | --- |
-| `consolidated-statements-0009` | C B C A |
-| `nfp-functional-expenses-0002` | D C C C |
-| `nfp-cash-flows-0004` | D B C C |
-| `special-purpose-frameworks-0005` | B A C C |
-| `ratios-0006` | D C C C |
-| `ppe-involuntary-conversion-0001` | C C B C |
-| `ppe-impairment-0003` | B B C C |
-| `investments-htm-credit-loss-0002` | B B A B |
-| `exit-costs-0002` | B C A C |
-| `balance-sheet-0007` | C B C B |
-| `income-statement-0006` | D B C B |
-| `cash-flows-0012` | A C B C |
-| `consolidated-statements-0010` | C B B C |
-| `cash-unreconciled-0002` | A B B B |
-| `receivables-rollforward-0004` | D C B C |
-| `inventory-reconciliation-0004` | C D C C |
-| `ppe-reconciliation-0004` | B C B B |
-| `payables-reconciliation-0003` | D C C C |
+| Item                               | Key letters (version 0, variants 1–3) |
+| ---------------------------------- | ------------------------------------- |
+| `consolidated-statements-0009`     | C B C A                               |
+| `nfp-functional-expenses-0002`     | D C C C                               |
+| `nfp-cash-flows-0004`              | D B C C                               |
+| `special-purpose-frameworks-0005`  | B A C C                               |
+| `ratios-0006`                      | D C C C                               |
+| `ppe-involuntary-conversion-0001`  | C C B C                               |
+| `ppe-impairment-0003`              | B B C C                               |
+| `investments-htm-credit-loss-0002` | B B A B                               |
+| `exit-costs-0002`                  | B C A C                               |
+| `balance-sheet-0007`               | C B C B                               |
+| `income-statement-0006`            | D B C B                               |
+| `cash-flows-0012`                  | A C B C                               |
+| `consolidated-statements-0010`     | C B B C                               |
+| `cash-unreconciled-0002`           | A B B B                               |
+| `receivables-rollforward-0004`     | D C B C                               |
+| `inventory-reconciliation-0004`    | C D C C                               |
+| `ppe-reconciliation-0004`          | B C B B                               |
+| `payables-reconciliation-0003`     | D C C C                               |
 
 ## Process
 
@@ -82,6 +82,7 @@ The batch takes the two FAR tasks that had no items (I.A.3a, I.F.a), a second it
 ## Blind verification
 
 One verifier solved all 79 versions blind, and its answers matched the key on every one. Fixes applied:
+
 - `subsequent-events-0009`: choice D (a tax examination of a prior year settled after year-end) was a second defensible "don't adjust" answer, because ASC 740-10-25-15 recognizes a change in an uncertain tax position in the period the change happens. It is replaced with a lawsuit over a Year 3 defect that is settled for more than the amount accrued, which is clearly a recognized event.
 - `ppe-involuntary-conversion-0001`: in variant 3 the insurer paid in August, before a September 30 fire. In every version the payment is now in November and the replacement purchase in December. No amounts changed.
 - `consolidated-statements-0009` (optional fix): the stem now says the noncontrolling interest was measured at fair value at acquisition. That supports the NCI bearing its share of the step-up amortization.
@@ -96,16 +97,16 @@ One verifier solved all 79 versions blind, and its answers matched the key on ev
 
 **Result: passed.** The 25 items average **84.6%** estimated pass likelihood (batch 09: 84.9%). 21 are exam-ready, 4 need minor revision and none need major revision. No key is wrong in any of the 88 versions the gate solved. The gate checked every skill tag against the blueprint's skill marks and found them all correct, and it confirmed the currency points: ASU 2025-05 doesn't reach HTM debt, and the ASC 420-10-25-9 minimum retention period is 60 days when no notice is legally required.
 
-| Item | Gate | Fix |
-| --- | --- | --- |
-| `far-receivables-rollforward-0004` (82%) | Distractor A's rationale ("subtracts all of the cash received") didn't describe the error that produces its number. | The rationale now says the cash sales were not removed from cash receipts, which is exactly the error behind the number (all versions). |
-| `far-payables-reconciliation-0003` (84%) | The reference "ASC 310-10 (cash discounts: net method)" is wrong, because Topic 310 covers receivables. | The reference is now ASC 330-10-30 (purchases recorded net of cash discounts). |
-| `far-ratios-0005` (76%) | The stem's wording ("earnings large enough to meet the interest") nearly named the key, and return on assets was a weak distractor. | The stem now asks how far operating profit could fall before it no longer covers the annual cost of borrowing. Choice D is now cash debt coverage. |
-| `far-ppe-impairment-0003` (80%) | In version 0, D (cost less fair value, ignoring depreciation) was implausible, and the strongest error was missing: measuring against value in use, as IFRS does. | Version 0 now uses the value-in-use distractor ($270,000). Choices are $270,000 / **$345,000** / $363,000 / $495,000, so the key moves to B. |
-| Optional, applied | `cash-flows-0012` variant 1 used $105,000 for three different facts; `consolidated-statements-0010` variant 1 had the corrected payable equal to the dividend; version 0 of `ppe-involuntary-conversion-0001` lacked the "gain deferred because reinvested" error; the HTM stem's accrued-interest election sentence was clutter once interest is ignored. | Cash-flows variant 1: the machine costs $140,000 and depreciation is $180,000. Consolidation variant 1: the dividend is $70,000 (key $1,677,000). Involuntary conversion version 0: $0 replaces the deductible add-back (key C). HTM stem: "Ignore interest in this question." |
+| Item                                     | Gate                                                                                                                                                                                                                                                                                                                                                       | Fix                                                                                                                                                                                                                                                                            |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `far-receivables-rollforward-0004` (82%) | Distractor A's rationale ("subtracts all of the cash received") didn't describe the error that produces its number.                                                                                                                                                                                                                                        | The rationale now says the cash sales were not removed from cash receipts, which is exactly the error behind the number (all versions).                                                                                                                                        |
+| `far-payables-reconciliation-0003` (84%) | The reference "ASC 310-10 (cash discounts: net method)" is wrong, because Topic 310 covers receivables.                                                                                                                                                                                                                                                    | The reference is now ASC 330-10-30 (purchases recorded net of cash discounts).                                                                                                                                                                                                 |
+| `far-ratios-0005` (76%)                  | The stem's wording ("earnings large enough to meet the interest") nearly named the key, and return on assets was a weak distractor.                                                                                                                                                                                                                        | The stem now asks how far operating profit could fall before it no longer covers the annual cost of borrowing. Choice D is now cash debt coverage.                                                                                                                             |
+| `far-ppe-impairment-0003` (80%)          | In version 0, D (cost less fair value, ignoring depreciation) was implausible, and the strongest error was missing: measuring against value in use, as IFRS does.                                                                                                                                                                                          | Version 0 now uses the value-in-use distractor ($270,000). Choices are $270,000 / **$345,000** / $363,000 / $495,000, so the key moves to B.                                                                                                                                   |
+| Optional, applied                        | `cash-flows-0012` variant 1 used $105,000 for three different facts; `consolidated-statements-0010` variant 1 had the corrected payable equal to the dividend; version 0 of `ppe-involuntary-conversion-0001` lacked the "gain deferred because reinvested" error; the HTM stem's accrued-interest election sentence was clutter once interest is ignored. | Cash-flows variant 1: the machine costs $140,000 and depreciation is $180,000. Consolidation variant 1: the dividend is $70,000 (key $1,677,000). Involuntary conversion version 0: $0 replaces the deductible add-back (key C). HTM stem: "Ignore interest in this question." |
 
 **Not changed:** the gate noted that `ratios-0006` defines times interest earned in its stem, which could cue a student who meets it before `ratios-0005`. Changing 0005 to a different ratio would make it a different question under a live id, so the reworded stem stands. The next item on I.F.a should test a different ratio. The gate also noted that a flood is now the nonrecognized event in three subsequent-events items, so the next one should use a different event.
 
 **Gate suggestions for the pipeline** (open): (1) a builder check that no two different facts in one version share an amount; (2) a check that each distractor's rationale describes the computation that produces its number.
 
-**Blind re-check after the fixes:** a fresh verifier re-solved all 26 versions of the eight items changed after the first blind pass. It matched every key. Its one required fix is applied: in `consolidated-statements-0010`, the $118,000 eliminated balance could be read as including the management fees receivable, which would make the "fees missed" figure correct. The stem now calls it Cracoe's *trade* receivable and says the fees sit in a separate management fees receivable (all versions; no amounts changed). It found the `cash-flows-0012` variant 1–3 distractors weak. They are kept, because the first verifier traced each one to a named error (cost of equipment sold not added back when solving for purchases; net change in equipment less proceeds).
+**Blind re-check after the fixes:** a fresh verifier re-solved all 26 versions of the eight items changed after the first blind pass. It matched every key. Its one required fix is applied: in `consolidated-statements-0010`, the $118,000 eliminated balance could be read as including the management fees receivable, which would make the "fees missed" figure correct. The stem now calls it Cracoe's _trade_ receivable and says the fees sit in a separate management fees receivable (all versions; no amounts changed). It found the `cash-flows-0012` variant 1–3 distractors weak. They are kept, because the first verifier traced each one to a named error (cost of equipment sold not added back when solving for purchases; net change in equipment less proceeds).

@@ -95,28 +95,28 @@ Hayden asked for the remaining too-easy items to be rewritten. **13 items were r
 
 **Blind verification of the 13:** solved by a separate agent without the key. It matched the key on 13 of 13. Fixes applied:
 
-| Item | Finding | Fix |
-| --- | --- | --- |
-| `far-nfp-contributions-0001` | Second defensible answer: ASC 958 lets an entity report a restricted gift met in the same period as without donor restrictions | Stem now states the foundation reports it with donor restrictions |
-| `far-comprehensive-income-0001` | Tax-rate wording ambiguous for the reclassified gain | Stem states the rate applies to all AFS gains and losses, not the translation gain |
-| `far-governmental-fund-types-0001`, `far-subsequent-events-0001` | Correct choice longest | Choices rebalanced |
-| `far-intangibles-goodwill-0001` | Missing status fact | Stem says the entity is a public business entity |
-| `far-fair-value-highest-best-use-0001` | Stem restated the highest-and-best-use tests | Reworded to facts only |
-| `far-income-taxes-deferred-0001` | Valuation allowance unsupported; stem said a deferred tax asset exists | Stem cites the taxable income forecast; "resulting deferred tax asset" removed |
-| Six items | Tagged Analysis but are multi-step computation | Retagged Application (property tax, comprehensive income, equity method, error correction, fair value, deferred taxes) |
-| `far-equity-method-0001` | Verifier asked whether downstream profit is eliminated at 100% | Checked: ASC 323-10-35-11 eliminates the investor's ownership share; key stands |
+| Item                                                             | Finding                                                                                                                        | Fix                                                                                                                    |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| `far-nfp-contributions-0001`                                     | Second defensible answer: ASC 958 lets an entity report a restricted gift met in the same period as without donor restrictions | Stem now states the foundation reports it with donor restrictions                                                      |
+| `far-comprehensive-income-0001`                                  | Tax-rate wording ambiguous for the reclassified gain                                                                           | Stem states the rate applies to all AFS gains and losses, not the translation gain                                     |
+| `far-governmental-fund-types-0001`, `far-subsequent-events-0001` | Correct choice longest                                                                                                         | Choices rebalanced                                                                                                     |
+| `far-intangibles-goodwill-0001`                                  | Missing status fact                                                                                                            | Stem says the entity is a public business entity                                                                       |
+| `far-fair-value-highest-best-use-0001`                           | Stem restated the highest-and-best-use tests                                                                                   | Reworded to facts only                                                                                                 |
+| `far-income-taxes-deferred-0001`                                 | Valuation allowance unsupported; stem said a deferred tax asset exists                                                         | Stem cites the taxable income forecast; "resulting deferred tax asset" removed                                         |
+| Six items                                                        | Tagged Analysis but are multi-step computation                                                                                 | Retagged Application (property tax, comprehensive income, equity method, error correction, fair value, deferred taxes) |
+| `far-equity-method-0001`                                         | Verifier asked whether downstream profit is eliminated at 100%                                                                 | Checked: ASC 323-10-35-11 eliminates the investor's ownership share; key stands                                        |
 
 **Other changes in this revision:** topic strings moved to the current FAR blueprint wording; every paragraph-level citation in the batch replaced with a Subtopic-level citation (unverified paragraph cites removed); the generator now deletes retired files.
 
 **Batch 01 tallies (25 items)**
 
-| Measure | Result | Blueprint target |
-| --- | --- | --- |
-| Area I / II / III | 8 / 10 / 7 (32% / 40% / 28%) | 30–40% / 30–40% / 25–35% |
-| Remembering and Understanding | 2 (8%) | 5–15% |
-| Application | 19 (76%) | 45–55% |
-| Analysis | 4 (16%) | 35–45% |
-| Multi-step items | about 22 of 25 | at least half |
+| Measure                       | Result                       | Blueprint target         |
+| ----------------------------- | ---------------------------- | ------------------------ |
+| Area I / II / III             | 8 / 10 / 7 (32% / 40% / 28%) | 30–40% / 30–40% / 25–35% |
+| Remembering and Understanding | 2 (8%)                       | 5–15%                    |
+| Application                   | 19 (76%)                     | 45–55%                   |
+| Analysis                      | 4 (16%)                      | 35–45%                   |
+| Multi-step items              | about 22 of 25               | at least half            |
 
 Topics covered: cash flows (2), NFP (2), government (2), EPS, comprehensive income, PP&E (2), inventory, equity (2), AFS credit loss, receivables, debt, intangibles, equity method, contingencies, revenue allocation, lessee finance lease, accounting errors, fair value, income taxes, subsequent events.
 
@@ -128,33 +128,33 @@ Topics covered: cash flows (2), NFP (2), government (2), EPS, comprehensive inco
 
 ## Revision 3: second independent review and 2026 blueprint scope
 
-**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026. Scope claims below were checked against the official PDF.
+**Standard:** AICPA _Uniform CPA Examination Blueprints_, effective January 2026. Scope claims below were checked against the official PDF.
 
 A fresh review agent graded Revision 2 without reading this report first. All 25 keys matched its own solutions and every numeric distractor reproduced, but it rated 8 items exam-ready, 15 minor revision and 2 major revision, with an average estimated pass likelihood of 74% (up from about 67%). Analysis was about 12–16% against a 35–45% target.
 
-**Correction to Revision 1.** Revision 1 said the 2026 blueprint "moved no topics." That was wrong. Under the 2026 edition, goodwill and other indefinite-lived intangibles are BAR Area II A, and government nonexchange-revenue calculations are BAR Area III. FAR keeps only state and local government *concepts* (recall measurement focus and basis of accounting; determine the appropriate fund). Consolidated financial statements with wholly-owned subsidiaries and noncontrolling interests, on the other hand, are FAR Area I (the old CLAUDE.md wrongly listed consolidations as BAR).
+**Correction to Revision 1.** Revision 1 said the 2026 blueprint "moved no topics." That was wrong. Under the 2026 edition, goodwill and other indefinite-lived intangibles are BAR Area II A, and government nonexchange-revenue calculations are BAR Area III. FAR keeps only state and local government _concepts_ (recall measurement focus and basis of accounting; determine the appropriate fund). Consolidated financial statements with wholly-owned subsidiaries and noncontrolling interests, on the other hand, are FAR Area I (the old CLAUDE.md wrongly listed consolidations as BAR).
 
 **Moved to BAR** (new ids, content unchanged, now in `content/bar/` via `scripts/batches/bar-batch-01.py`):
 
-| Old FAR id | New BAR id | BAR task |
-| --- | --- | --- |
-| `far-intangibles-goodwill-0001` | `bar-goodwill-impairment-0001` | Area II A: goodwill and indefinite-lived intangibles, including impairment |
-| `far-governmental-property-tax-0001` | `bar-nonexchange-revenue-0001` | Area III: nonexchange revenue on the modified accrual and accrual bases |
+| Old FAR id                           | New BAR id                     | BAR task                                                                   |
+| ------------------------------------ | ------------------------------ | -------------------------------------------------------------------------- |
+| `far-intangibles-goodwill-0001`      | `bar-goodwill-impairment-0001` | Area II A: goodwill and indefinite-lived intangibles, including impairment |
+| `far-governmental-property-tax-0001` | `bar-nonexchange-revenue-0001` | Area III: nonexchange revenue on the modified accrual and accrual bases    |
 
 **Retired and replaced** (a changed answer or a different question gets a new id):
 
-| Retired | Replacement | Change |
-| --- | --- | --- |
-| `far-cash-flows-0001` (easy) | `far-cash-flows-0003` | Analysis: correct a staff accountant's draft operating section (proceeds, gain, dividends) |
-| `far-comprehensive-income-0001` (CTA is BAR; stem cued the reclassification) | `far-comprehensive-income-0002` | Analysis: correct a draft that put a foreign-currency *transaction* gain in OCI and omitted the reclassification adjustment |
-| `far-contingencies-0001` (definition wording; recall) | `far-contingencies-0002` | Analysis: read counsel's letter on two claims; accrue the minimum of a range with no best estimate |
-| `far-equity-paid-in-capital-0001` ("more clearly evident" gave it away) | `far-equity-paid-in-capital-0002` | Analysis: find and correct a draft that used an appraisal instead of an active share price and expensed offering costs |
-| `far-equity-retirement-0001` (stated policy was the solution) | `far-equity-retirement-0002` | Policy named, not spelled out; APIC from treasury transactions of the same class must also be applied |
-| `far-investments-afs-credit-loss-0001` (conceptual; swapped-component distractor) | `far-investments-afs-credit-loss-0002` | Numeric: credit loss from the present value of expected cash flows, net of an existing allowance |
-| `far-receivables-credit-losses-0001` (tagged Analysis; five choices) | `far-receivables-credit-losses-0002` | Analysis: reconcile a subledger and a control account that are both wrong (duplicate GL batch, unposted credit memo), then CECL expense net of the existing allowance |
-| `far-revenue-allocation-0001` (one step; stem said "distinct") | `far-revenue-allocation-0003` | Student decides distinctness from facts and allocates the discount to a regularly sold bundle (ASC 606-10-32-37) |
-| (goodwill, moved to BAR) | `far-intangibles-cloud-computing-0001` | FAR task on cloud computing arrangements: expense versus capitalize implementation costs, amortization term and start |
-| (property tax, moved to BAR) | `far-consolidated-statements-0001` | Analysis: find and correct a draft NCI balance (fair value at acquisition, share of adjusted income, dividends) |
+| Retired                                                                           | Replacement                            | Change                                                                                                                                                                |
+| --------------------------------------------------------------------------------- | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `far-cash-flows-0001` (easy)                                                      | `far-cash-flows-0003`                  | Analysis: correct a staff accountant's draft operating section (proceeds, gain, dividends)                                                                            |
+| `far-comprehensive-income-0001` (CTA is BAR; stem cued the reclassification)      | `far-comprehensive-income-0002`        | Analysis: correct a draft that put a foreign-currency _transaction_ gain in OCI and omitted the reclassification adjustment                                           |
+| `far-contingencies-0001` (definition wording; recall)                             | `far-contingencies-0002`               | Analysis: read counsel's letter on two claims; accrue the minimum of a range with no best estimate                                                                    |
+| `far-equity-paid-in-capital-0001` ("more clearly evident" gave it away)           | `far-equity-paid-in-capital-0002`      | Analysis: find and correct a draft that used an appraisal instead of an active share price and expensed offering costs                                                |
+| `far-equity-retirement-0001` (stated policy was the solution)                     | `far-equity-retirement-0002`           | Policy named, not spelled out; APIC from treasury transactions of the same class must also be applied                                                                 |
+| `far-investments-afs-credit-loss-0001` (conceptual; swapped-component distractor) | `far-investments-afs-credit-loss-0002` | Numeric: credit loss from the present value of expected cash flows, net of an existing allowance                                                                      |
+| `far-receivables-credit-losses-0001` (tagged Analysis; five choices)              | `far-receivables-credit-losses-0002`   | Analysis: reconcile a subledger and a control account that are both wrong (duplicate GL batch, unposted credit memo), then CECL expense net of the existing allowance |
+| `far-revenue-allocation-0001` (one step; stem said "distinct")                    | `far-revenue-allocation-0003`          | Student decides distinctness from facts and allocates the discount to a regularly sold bundle (ASC 606-10-32-37)                                                      |
+| (goodwill, moved to BAR)                                                          | `far-intangibles-cloud-computing-0001` | FAR task on cloud computing arrangements: expense versus capitalize implementation costs, amortization term and start                                                 |
+| (property tax, moved to BAR)                                                      | `far-consolidated-statements-0001`     | Analysis: find and correct a draft NCI balance (fair value at acquisition, share of adjusted income, dividends)                                                       |
 
 **Edited in place** (same question and key): four items cut from five choices to four (`far-debt-extinguishment-0001`, `far-equity-method-0001`, `far-income-taxes-deferred-0001`, `far-accounting-errors-0001`); `far-debt-extinguishment-0001` no longer states the required presentation and says straight-line issuance-cost amortization is used because it is not materially different; `far-ppe-exchange-0001` describes the change in cash flows instead of saying "has commercial substance"; `far-nfp-contributions-0001` asks for the "net change." Retagged: `far-nfp-net-assets-0001` to Remembering and Understanding (one rule); `far-accounting-errors-0001` to Analysis (the blueprint's "derive the impact ... of an error correction" task).
 
@@ -162,47 +162,47 @@ A fresh review agent graded Revision 2 without reading this report first. All 25
 
 **Batch 01 tallies after Revision 3 (25 items)**
 
-| Measure | Result | Blueprint target |
-| --- | --- | --- |
-| Area I / II / III | 8 / 10 / 7 (32% / 40% / 28%) | 30–40% / 30–40% / 25–35% |
-| Remembering and Understanding | 3 (12%) | 5–15% |
-| Application | 13 (52%) | 45–55% |
-| Analysis | 9 (36%) | 35–45% |
+| Measure                       | Result                       | Blueprint target         |
+| ----------------------------- | ---------------------------- | ------------------------ |
+| Area I / II / III             | 8 / 10 / 7 (32% / 40% / 28%) | 30–40% / 30–40% / 25–35% |
+| Remembering and Understanding | 3 (12%)                      | 5–15%                    |
+| Application                   | 13 (52%)                     | 45–55%                   |
+| Analysis                      | 9 (36%)                      | 35–45%                   |
 
 **Blind verification of the 13 new or changed items:** a separate agent solved them from stems and choices only. It **matched the key on 13 of 13** and confirmed FAR scope for all 13 against the 2026 blueprint PDF. Fixes applied:
 
-| Item | Finding | Fix |
-| --- | --- | --- |
-| `far-equity-retirement-0002` | ASC 505-30 allows APIC from treasury transactions of the same *issue*, not class, so $6,000 was arguable | Stem says the treasury APIC comes from the same issue |
-| `far-ppe-exchange-0001` | "Cash flows differ significantly in amount and timing" is the commercial-substance definition | Stem now gives only business facts (different product, customers, contracts) |
-| `far-consolidated-statements-0001`, `far-equity-paid-in-capital-0002`, `far-receivables-credit-losses-0002` | The stem described the error, so these were Application, not Analysis | Stems now give only the draft figures (and, for receivables, two reconciling items affecting different records); the student finds the errors |
-| `far-intangibles-cloud-computing-0001` | Explanation leaned on project-stage wording that ASU 2025-06 removes | Explanation justifies each treatment directly and notes ASU 2025-06 does not change the answer |
-| `far-consolidated-statements-0001` | Subsidiary shared a name with the debt item's issuer | Renamed to Tern Inc. |
+| Item                                                                                                        | Finding                                                                                                  | Fix                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `far-equity-retirement-0002`                                                                                | ASC 505-30 allows APIC from treasury transactions of the same _issue_, not class, so $6,000 was arguable | Stem says the treasury APIC comes from the same issue                                                                                         |
+| `far-ppe-exchange-0001`                                                                                     | "Cash flows differ significantly in amount and timing" is the commercial-substance definition            | Stem now gives only business facts (different product, customers, contracts)                                                                  |
+| `far-consolidated-statements-0001`, `far-equity-paid-in-capital-0002`, `far-receivables-credit-losses-0002` | The stem described the error, so these were Application, not Analysis                                    | Stems now give only the draft figures (and, for receivables, two reconciling items affecting different records); the student finds the errors |
+| `far-intangibles-cloud-computing-0001`                                                                      | Explanation leaned on project-stage wording that ASU 2025-06 removes                                     | Explanation justifies each treatment directly and notes ASU 2025-06 does not change the answer                                                |
+| `far-consolidated-statements-0001`                                                                          | Subsidiary shared a name with the debt item's issuer                                                     | Renamed to Tern Inc.                                                                                                                          |
 
 ## Revision 3b: review gate passed; minor findings applied
 
 A fresh review agent graded Revision 3 using `docs/prompts/review-agent.md`, without reading this report first. **All 25 keys correct; average estimated pass likelihood 84.3% (up from 74%); 18 exam-ready, 7 minor revision, 0 major.** That clears the gate in `CLAUDE.md`. It read the blueprint's skill marks from their positions in the PDF and found five tags that did not match the task's mark, which would have left Analysis at 28%. Changes:
 
-| Item | Finding | Fix |
-| --- | --- | --- |
-| `far-eps-diluted-0001` | The only EPS task is marked Application | Retagged Application |
-| `far-nfp-contributions-0001` | The NFP statement of activities has no Analysis task | Retagged Area III, Revenue recognition ("calculate the amount to be recognized for contributions"), Application |
-| `far-governmental-fund-types-0001` | "Determine the appropriate fund(s)" is marked Application | Retagged Application |
-| `far-comprehensive-income-0002` | The statement of comprehensive income has only recall tasks | Topic changed to Income statement (its "detect, investigate and correct" task), still Analysis |
-| `far-equity-paid-in-capital-0002` | The Equity topic has only an Application task; explanation cited ASC 845 | Retagged Area I, Statement of changes in equity (Analysis); explanation now cites ASC 718 after ASU 2018-07 (same answer) |
-| `far-receivables-credit-losses-0002` | ASU 2025-05 adds an election the stem did not fix; two distractors clustered within $720 of the key | Stem says the practical expedient is not elected; the subledger-based distractor is replaced with the 3% historical-rate error |
-| `far-ppe-exchange-0001` | Paired numeric choices were not in ascending order | Choices lead with the dollar amount; `finalize()` now sorts on every amount in a choice |
-| `far-ppe-impairment-0001` (easiest item) | Retired to restore the Analysis share | Replaced by `far-ppe-reconciliation-0001`: reconcile the fixed-asset subledger to the GL and correct pretax income |
-| `far-cash-flows-0002` | Retired to restore the Analysis share (indirect method is still covered by `far-cash-flows-0003`) | Replaced by `far-cash-flows-0004`: derive the financing section from six transactions, including a noncash conversion and interest paid |
+| Item                                     | Finding                                                                                             | Fix                                                                                                                                     |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `far-eps-diluted-0001`                   | The only EPS task is marked Application                                                             | Retagged Application                                                                                                                    |
+| `far-nfp-contributions-0001`             | The NFP statement of activities has no Analysis task                                                | Retagged Area III, Revenue recognition ("calculate the amount to be recognized for contributions"), Application                         |
+| `far-governmental-fund-types-0001`       | "Determine the appropriate fund(s)" is marked Application                                           | Retagged Application                                                                                                                    |
+| `far-comprehensive-income-0002`          | The statement of comprehensive income has only recall tasks                                         | Topic changed to Income statement (its "detect, investigate and correct" task), still Analysis                                          |
+| `far-equity-paid-in-capital-0002`        | The Equity topic has only an Application task; explanation cited ASC 845                            | Retagged Area I, Statement of changes in equity (Analysis); explanation now cites ASC 718 after ASU 2018-07 (same answer)               |
+| `far-receivables-credit-losses-0002`     | ASU 2025-05 adds an election the stem did not fix; two distractors clustered within $720 of the key | Stem says the practical expedient is not elected; the subledger-based distractor is replaced with the 3% historical-rate error          |
+| `far-ppe-exchange-0001`                  | Paired numeric choices were not in ascending order                                                  | Choices lead with the dollar amount; `finalize()` now sorts on every amount in a choice                                                 |
+| `far-ppe-impairment-0001` (easiest item) | Retired to restore the Analysis share                                                               | Replaced by `far-ppe-reconciliation-0001`: reconcile the fixed-asset subledger to the GL and correct pretax income                      |
+| `far-cash-flows-0002`                    | Retired to restore the Analysis share (indirect method is still covered by `far-cash-flows-0003`)   | Replaced by `far-cash-flows-0004`: derive the financing section from six transactions, including a noncash conversion and interest paid |
 
 **Batch 01 tallies after Revision 3b (25 items)**
 
-| Measure | Result | Blueprint target |
-| --- | --- | --- |
-| Area I / II / III | 8 / 9 / 8 (32% / 36% / 32%) | 30–40% / 30–40% / 25–35% |
-| Remembering and Understanding | 2 (8%) | 5–15% |
-| Application | 14 (56%) | 45–55% |
-| Analysis | 9 (36%) | 35–45% |
+| Measure                       | Result                      | Blueprint target         |
+| ----------------------------- | --------------------------- | ------------------------ |
+| Area I / II / III             | 8 / 9 / 8 (32% / 36% / 32%) | 30–40% / 30–40% / 25–35% |
+| Remembering and Understanding | 2 (8%)                      | 5–15%                    |
+| Application                   | 14 (56%)                    | 45–55%                   |
+| Analysis                      | 9 (36%)                     | 35–45%                   |
 
 **Still open:** Application is one item over its range; batch 02 should be about 40% Analysis to pull the bank toward the middle. Numeric keys land in D only once in 25, a side effect of ascending order; watch it as the bank grows. Coverage gaps (cash, payables, debt covenants, balance sheet classification, notes, SEC forms, special purpose frameworks, ratios, held-to-maturity, contract costs, operating leases) are the batch 02 plan.
 

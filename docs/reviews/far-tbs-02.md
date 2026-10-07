@@ -1,17 +1,17 @@
 # Review report: FAR simulations batch 02
 
-**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026.
+**Standard:** AICPA _Uniform CPA Examination Blueprints_, effective January 2026.
 
 **6 simulations (45 points)**, all Area I, written from scratch in `scripts/batches/far-tbs-02.py` as the first batch of `docs/plans/far-simulations.md`. They use numeric and select tasks, with no journal entries. The table shows the current version (revision 2, after the review gate). Research tasks still wait until cited paragraphs can be checked against the Codification. Every amount is computed in the script with `Decimal` and rounded half up. The script asserts that the comparative balance sheets, the corrected balance sheet and the draft-to-corrected net income reconciliations tie before it writes anything.
 
-| Simulation | Blueprint task | Skill | Tasks |
-| --- | --- | --- | --- |
-| `far-tbs-cash-flows-0001` | I.A.5a Prepare a statement of cash flows (indirect method) and required disclosures | Application | 5 numeric, 1 select (8 points) |
-| `far-tbs-consolidation-review-0001` | I.A.6c Detect and correct consolidated financial statement discrepancies | Analysis | 1 select, 4 numeric (9 points) |
-| `far-tbs-balance-sheet-review-0001` | I.A.1c Detect and correct balance sheet discrepancies | Analysis | 5 numeric (8 points) |
-| `far-tbs-income-statement-review-0001` | I.A.2d Detect and correct income statement discrepancies | Analysis | 6 numeric (8 points) |
-| `far-tbs-nfp-activities-0002` | I.B.2b Prepare an NFP statement of activities | Application | 1 select, 4 numeric (8 points) |
-| `far-tbs-eps-0002` | I.D.c Calculate basic and diluted EPS | Application | 5 numeric (7 points) |
+| Simulation                             | Blueprint task                                                                      | Skill       | Tasks                          |
+| -------------------------------------- | ----------------------------------------------------------------------------------- | ----------- | ------------------------------ |
+| `far-tbs-cash-flows-0001`              | I.A.5a Prepare a statement of cash flows (indirect method) and required disclosures | Application | 5 numeric, 1 select (8 points) |
+| `far-tbs-consolidation-review-0001`    | I.A.6c Detect and correct consolidated financial statement discrepancies            | Analysis    | 1 select, 4 numeric (9 points) |
+| `far-tbs-balance-sheet-review-0001`    | I.A.1c Detect and correct balance sheet discrepancies                               | Analysis    | 5 numeric (8 points)           |
+| `far-tbs-income-statement-review-0001` | I.A.2d Detect and correct income statement discrepancies                            | Analysis    | 6 numeric (8 points)           |
+| `far-tbs-nfp-activities-0002`          | I.B.2b Prepare an NFP statement of activities                                       | Application | 1 select, 4 numeric (8 points) |
+| `far-tbs-eps-0002`                     | I.D.c Calculate basic and diluted EPS                                               | Application | 5 numeric (7 points)           |
 
 FAR now has 9 simulations: Area I 6, Area II 1, Area III 2, with 4 of the 9 tagged Analysis.
 
@@ -30,32 +30,32 @@ One verifier solved all 33 tasks from the scenarios, exhibits and prompts alone,
 
 Required fixes, all applied (no key changed):
 
-| Simulation | Finding | Fix |
-| --- | --- | --- |
-| Balance sheet review | A candidate had to infer that the December 18 dividend wasn't recorded; assuming it was booked to accrued liabilities gives $409,000 retained earnings. | The board-minutes exhibit now notes that no entry has been made for the dividend. The consignment line also says Quillon recorded no purchase for the consigned goods. |
-| NFP activities | The van fund didn't say what happens to the $25,000 not spent on the van, so a $120,000 release was defensible (changing tasks 2–4). | The fund is restricted to buying and equipping the van, and the donor's agreement requires any unspent balance to go to the van's medical equipment. |
-| Income statement review | Confirm that task 2's key puts the warehouse loss inside income from operations (ASC 360-10). | It does ($405,000), and the explanation says why. The prompt doesn't state the placement, since that is what the task tests. |
+| Simulation              | Finding                                                                                                                                                 | Fix                                                                                                                                                                    |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Balance sheet review    | A candidate had to infer that the December 18 dividend wasn't recorded; assuming it was booked to accrued liabilities gives $409,000 retained earnings. | The board-minutes exhibit now notes that no entry has been made for the dividend. The consignment line also says Quillon recorded no purchase for the consigned goods. |
+| NFP activities          | The van fund didn't say what happens to the $25,000 not spent on the van, so a $120,000 release was defensible (changing tasks 2–4).                    | The fund is restricted to buying and equipping the van, and the donor's agreement requires any unspent balance to go to the van's medical equipment.                   |
+| Income statement review | Confirm that task 2's key puts the warehouse loss inside income from operations (ASC 360-10).                                                           | It does ($405,000), and the explanation says why. The prompt doesn't state the placement, since that is what the task tests.                                           |
 
 Suggestions also applied: neutral wording on consolidation tasks 2, 4 and 5 ("What amount should Pomeroy report…" rather than "the correct…", which hinted that those lines were wrong); the revalued equipment is stated to be still in use; the NFP classification options read "Recognized — …" so they cover gains; and the equipment note's interest terms are stated. The verifier also asked whether currency tasks accept whole-dollar entries. They do: the player converts dollars to cents.
 
 ## Review gate
 
-| Run | Average pass likelihood | Verdicts | Outcome |
-| --- | --- | --- | --- |
+| Run        | Average pass likelihood                                                                        | Verdicts         | Outcome                                                                                                          |
+| ---------- | ---------------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Revision 1 | 80.3% (cash flows 84, consolidation 83, balance sheet 81, income statement 79, NFP 79, EPS 76) | 5 minor, 1 major | Failed: EPS was a major revision. All keys matched, with no second defensible answers, and every exhibit footed. |
 
 | Revision 2 | **85.0%** (cash flows 86, consolidation 85, balance sheet 86, income statement 81, NFP 86, EPS 86) | 5 exam-ready, 1 minor | **Passed.** All 34 keys matched, with no second defensible answers and no MCQ template reuse. |
 
 Revision 1 went to `main` at the owner's request before the gate fixes. Revision 2 applies them:
 
-| Simulation | Finding | Fix |
-| --- | --- | --- |
-| EPS (major) | Tasks 1–3 reused the events of `far-eps-basic-0001` (April issue, July 10% stock dividend, October buyback, undeclared cumulative preferred) and tasks 4–5 the template of `far-eps-diluted-0001`, so the simulation was barely harder than the MCQs. | Rebuilt under a new id, `far-tbs-eps-0002`, with new events: a split after year end, a treasury reissue, a partial mid-year conversion, a mid-year option grant and noncumulative preferred. Task 3 now asks about "the options", not one grant. |
-| NFP (required) | The scenario echoed `far-nfp-statement-of-activities-0003` (program gift, van placed in service, endowment return appropriated, pledge with no purpose, matching promise). | Rebuilt under a new id, `far-tbs-nfp-activities-0002`. It now has a donated building, a performance barrier, a negative endowment return, a same-year restricted gift and a time restriction expiring on collection. The two "policies" that GAAP requires were dropped; only the same-year election is stated, and it changes task 4. Physician services are valued from a billing rate. |
-| Income statement (required) | Task 6 (OCI net of tax) revealed that an OCI item existed. | Task 6 asks for total comprehensive income. The interest-in-G&A error, which echoed `far-income-statement-0002`, is replaced by freight-in in selling expenses. The retail exit is described through facts, and ASC 360-10-45-5 is cited at paragraph level. |
-| Consolidation (required) | Goodwill being "correct as drafted" depended on Pomeroy not electing the private-company goodwill amortization alternative. | Pomeroy is a public business entity. The draft now shows the (correctly eliminated) note receivable, and the margin moved from 25% to 20% to avoid echoing `far-consolidated-statements-0011`. |
-| Balance sheet | Exhibit 2 detailed only the balances that turned out wrong; the bonds' original term was missing. | Added clean detail for prepaid expenses and accrued liabilities; the bonds are ten-year bonds issued January 1, Year 1, due Year 10. |
-| Cash flows | "No cash changed hands" made the noncash classification easy. | Removed. |
+| Simulation                  | Finding                                                                                                                                                                                                                                               | Fix                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| EPS (major)                 | Tasks 1–3 reused the events of `far-eps-basic-0001` (April issue, July 10% stock dividend, October buyback, undeclared cumulative preferred) and tasks 4–5 the template of `far-eps-diluted-0001`, so the simulation was barely harder than the MCQs. | Rebuilt under a new id, `far-tbs-eps-0002`, with new events: a split after year end, a treasury reissue, a partial mid-year conversion, a mid-year option grant and noncumulative preferred. Task 3 now asks about "the options", not one grant.                                                                                                                                          |
+| NFP (required)              | The scenario echoed `far-nfp-statement-of-activities-0003` (program gift, van placed in service, endowment return appropriated, pledge with no purpose, matching promise).                                                                            | Rebuilt under a new id, `far-tbs-nfp-activities-0002`. It now has a donated building, a performance barrier, a negative endowment return, a same-year restricted gift and a time restriction expiring on collection. The two "policies" that GAAP requires were dropped; only the same-year election is stated, and it changes task 4. Physician services are valued from a billing rate. |
+| Income statement (required) | Task 6 (OCI net of tax) revealed that an OCI item existed.                                                                                                                                                                                            | Task 6 asks for total comprehensive income. The interest-in-G&A error, which echoed `far-income-statement-0002`, is replaced by freight-in in selling expenses. The retail exit is described through facts, and ASC 360-10-45-5 is cited at paragraph level.                                                                                                                              |
+| Consolidation (required)    | Goodwill being "correct as drafted" depended on Pomeroy not electing the private-company goodwill amortization alternative.                                                                                                                           | Pomeroy is a public business entity. The draft now shows the (correctly eliminated) note receivable, and the margin moved from 25% to 20% to avoid echoing `far-consolidated-statements-0011`.                                                                                                                                                                                            |
+| Balance sheet               | Exhibit 2 detailed only the balances that turned out wrong; the bonds' original term was missing.                                                                                                                                                     | Added clean detail for prepaid expenses and accrued liabilities; the bonds are ten-year bonds issued January 1, Year 1, due Year 10.                                                                                                                                                                                                                                                      |
+| Cash flows                  | "No cash changed hands" made the noncash classification easy.                                                                                                                                                                                         | Removed.                                                                                                                                                                                                                                                                                                                                                                                  |
 
 **Blind verification of revision 2.** A fresh verifier re-solved every task in all six simulations and matched every key. It found two required fixes and one point to confirm:
 
@@ -68,6 +68,7 @@ The old ids `far-tbs-eps-0001` and `far-tbs-nfp-activities-0001` are retired and
 **After the revision 2 gate:** the one required fix is applied. Income statement task 2's explanation chained subtotals so that its "=" steps weren't literally true; it now computes selling, general and administrative, and income from operations separately. Also applied: the EPS exhibit reads "options to buy 40,000 common shares at $24 per share". The gate's two lessons are now in the Simulations section of the quality bar in `docs/content-pipeline.md`: explanations chain true arithmetic, and a total that exists only under one treatment can be a giveaway. A third rule, not to echo an MCQ's event set, comes from the revision 1 gate. No key changed.
 
 Optional suggestions left for a later pass:
+
 - Income statement task 6 (total comprehensive income) still hints that an OCI item exists; a second fair-value item whose gain stays in net income would fix it.
 - Recast the Varga notes as source documents.
 - Use the cash flow select's unused "Not reported" option.

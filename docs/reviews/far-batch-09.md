@@ -1,6 +1,6 @@
 # Review report: FAR batch 09
 
-**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026.
+**Standard:** AICPA _Uniform CPA Examination Blueprints_, effective January 2026.
 
 **25 items**, all written from scratch in `scripts/batches/far-batch-09.py`. Each of the 21 numeric items ships with three variants (63 in all), so the batch adds 88 problems. Every variant family moves the key's letter.
 
@@ -8,33 +8,33 @@
 
 The batch takes the three FAR tasks that had no items (II.E.1a, II.E.3a, II.F.a), the Area I "adjust ... to correct identified errors" tasks, and a further item on each Area I and Area II Analysis task, so the batch leans toward Areas I and II with Analysis at 40%. There are no Area III items, because the bank's Area III share is near its ceiling.
 
-| Item | Blueprint task | Skill |
-| --- | --- | --- |
-| `far-investments-fair-value-0003` | II.E.1a Identify investments eligible or required to be reported at fair value (fair value option scope: a consolidated subsidiary is excluded) | Remembering and Understanding |
-| `far-equity-method-0003` | II.E.3a Identify when the equity method applies (presumptions overcome both ways; control) | Remembering and Understanding |
-| `far-intangibles-classification-0001` | II.F.a Identify recognition criteria and classify intangibles as finite- or indefinite-lived (renewable license; internally built brand not recognized) | Remembering and Understanding |
-| `far-balance-sheet-0006` | I.A.1b Adjust the balance sheet to correct identified errors (total assets: prepaid insurance, depreciation, credit balances, unrecorded dividend, accrued interest) | Application |
-| `far-income-statement-0005` | I.A.2b Adjust the income statement to correct identified errors (expensed equipment, warranty accrual, loss charged to retained earnings, FOB destination sale) | Application |
-| `far-changes-in-equity-0004` | I.A.4b Adjust the statement of changes in equity to correct identified errors (APIC: issuance excess, treasury reissue gain and shortfall, large stock dividend) | Application |
-| `far-cash-flows-0010` | I.A.5b Adjust a statement of cash flows to correct identified errors (financing section: dividends declared vs paid, interest, conversion, treasury shares) | Application |
-| `far-notes-0005` | I.A.7a Adjust the notes to correct identified errors and omissions (debt maturities for next year) | Application |
-| `far-nfp-statement-of-activities-0002` | I.B.2c Adjust an NFP statement of activities to correct identified errors (endowment return, missing release, gala gross vs net, unrealized loss) | Application |
-| `far-special-purpose-frameworks-0004` | I.E.d Prepare income tax basis statements (net income from GAAP: depreciation, advance rent, warranties, bad debts) | Application |
-| `far-ppe-held-for-sale-0002` | II.D.d Determine whether an asset qualifies as held for sale (five assets; total carrying amount classified) | Application |
-| `far-foreign-currency-transactions-0002` | I.A.2c Calculate foreign-currency transaction gains or losses (receivable remeasured, payable settled, nonmonetary advance) | Application |
-| `far-receivables-factoring-0002` | II.B.b Record transfers of trade receivables (sale with recourse; recourse obligation at fair value; holdback) | Application |
-| `far-inventory-lcm-0001` | II.C.b Apply lower of cost or market (LIFO; ceiling, floor and replacement cost cases) | Application |
-| `far-debt-noninterest-note-0001` | II.H.1c Calculate interest expense on notes and bonds (noninterest-bearing note, imputed rate, interest across note years) | Application |
-| `far-changes-in-equity-0005` | I.A.4c Detect and correct statement of changes in equity discrepancies (total equity: OCI double count, property dividend, treasury retirement, conversion) | Analysis |
-| `far-cash-flows-0011` | I.A.5c Detect and correct statement of cash flows discrepancies (operating section: premium amortization, prepaid sign, dividends payable, equity method income) | Analysis |
-| `far-notes-0006` | I.A.7b Compare the notes with the statements to identify inconsistencies (property, leases, debt, dividends declared) | Analysis |
-| `far-cash-bank-reconciliation-0004` | II.A.b Reconcile the bank balance to the general ledger (certified check, unmailed check, loan payment, dividend received) | Analysis |
-| `far-receivables-rollforward-0003` | II.B.c Prepare a rollforward of trade receivables (collections: cash sales, returns, discounts, write-offs, note conversion) | Analysis |
-| `far-receivables-reconciliation-0003` | II.B.d Reconcile the receivables subledger to the general ledger (duplicated memo, underfooting, unposted write-off, misposted payment) | Analysis |
-| `far-inventory-rollforward-0003` | II.C.c Prepare a rollforward of inventory (cost of goods sold: consigned-in goods, fire loss, freight-out, discounts) | Analysis |
-| `far-inventory-reconciliation-0003` | II.C.d Reconcile the inventory subledger to the general ledger (pricing error, write-down, shipment cutoff, consigned-in goods) | Analysis |
-| `far-ppe-rollforward-0003` | II.D.f Prepare a rollforward of PP&E (depreciation expense from accumulated depreciation with a sale and a retirement) | Analysis |
-| `far-ppe-reconciliation-0003` | II.D.g Reconcile the PP&E subledger to the general ledger (net carrying amount: excess depreciation, land in equipment, capitalized repairs) | Analysis |
+| Item                                     | Blueprint task                                                                                                                                                       | Skill                         |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| `far-investments-fair-value-0003`        | II.E.1a Identify investments eligible or required to be reported at fair value (fair value option scope: a consolidated subsidiary is excluded)                      | Remembering and Understanding |
+| `far-equity-method-0003`                 | II.E.3a Identify when the equity method applies (presumptions overcome both ways; control)                                                                           | Remembering and Understanding |
+| `far-intangibles-classification-0001`    | II.F.a Identify recognition criteria and classify intangibles as finite- or indefinite-lived (renewable license; internally built brand not recognized)              | Remembering and Understanding |
+| `far-balance-sheet-0006`                 | I.A.1b Adjust the balance sheet to correct identified errors (total assets: prepaid insurance, depreciation, credit balances, unrecorded dividend, accrued interest) | Application                   |
+| `far-income-statement-0005`              | I.A.2b Adjust the income statement to correct identified errors (expensed equipment, warranty accrual, loss charged to retained earnings, FOB destination sale)      | Application                   |
+| `far-changes-in-equity-0004`             | I.A.4b Adjust the statement of changes in equity to correct identified errors (APIC: issuance excess, treasury reissue gain and shortfall, large stock dividend)     | Application                   |
+| `far-cash-flows-0010`                    | I.A.5b Adjust a statement of cash flows to correct identified errors (financing section: dividends declared vs paid, interest, conversion, treasury shares)          | Application                   |
+| `far-notes-0005`                         | I.A.7a Adjust the notes to correct identified errors and omissions (debt maturities for next year)                                                                   | Application                   |
+| `far-nfp-statement-of-activities-0002`   | I.B.2c Adjust an NFP statement of activities to correct identified errors (endowment return, missing release, gala gross vs net, unrealized loss)                    | Application                   |
+| `far-special-purpose-frameworks-0004`    | I.E.d Prepare income tax basis statements (net income from GAAP: depreciation, advance rent, warranties, bad debts)                                                  | Application                   |
+| `far-ppe-held-for-sale-0002`             | II.D.d Determine whether an asset qualifies as held for sale (five assets; total carrying amount classified)                                                         | Application                   |
+| `far-foreign-currency-transactions-0002` | I.A.2c Calculate foreign-currency transaction gains or losses (receivable remeasured, payable settled, nonmonetary advance)                                          | Application                   |
+| `far-receivables-factoring-0002`         | II.B.b Record transfers of trade receivables (sale with recourse; recourse obligation at fair value; holdback)                                                       | Application                   |
+| `far-inventory-lcm-0001`                 | II.C.b Apply lower of cost or market (LIFO; ceiling, floor and replacement cost cases)                                                                               | Application                   |
+| `far-debt-noninterest-note-0001`         | II.H.1c Calculate interest expense on notes and bonds (noninterest-bearing note, imputed rate, interest across note years)                                           | Application                   |
+| `far-changes-in-equity-0005`             | I.A.4c Detect and correct statement of changes in equity discrepancies (total equity: OCI double count, property dividend, treasury retirement, conversion)          | Analysis                      |
+| `far-cash-flows-0011`                    | I.A.5c Detect and correct statement of cash flows discrepancies (operating section: premium amortization, prepaid sign, dividends payable, equity method income)     | Analysis                      |
+| `far-notes-0006`                         | I.A.7b Compare the notes with the statements to identify inconsistencies (property, leases, debt, dividends declared)                                                | Analysis                      |
+| `far-cash-bank-reconciliation-0004`      | II.A.b Reconcile the bank balance to the general ledger (certified check, unmailed check, loan payment, dividend received)                                           | Analysis                      |
+| `far-receivables-rollforward-0003`       | II.B.c Prepare a rollforward of trade receivables (collections: cash sales, returns, discounts, write-offs, note conversion)                                         | Analysis                      |
+| `far-receivables-reconciliation-0003`    | II.B.d Reconcile the receivables subledger to the general ledger (duplicated memo, underfooting, unposted write-off, misposted payment)                              | Analysis                      |
+| `far-inventory-rollforward-0003`         | II.C.c Prepare a rollforward of inventory (cost of goods sold: consigned-in goods, fire loss, freight-out, discounts)                                                | Analysis                      |
+| `far-inventory-reconciliation-0003`      | II.C.d Reconcile the inventory subledger to the general ledger (pricing error, write-down, shipment cutoff, consigned-in goods)                                      | Analysis                      |
+| `far-ppe-rollforward-0003`               | II.D.f Prepare a rollforward of PP&E (depreciation expense from accumulated depreciation with a sale and a retirement)                                               | Analysis                      |
+| `far-ppe-reconciliation-0003`            | II.D.g Reconcile the PP&E subledger to the general ledger (net carrying amount: excess depreciation, land in equipment, capitalized repairs)                         | Analysis                      |
 
 - **Batch mix:** by skill, 3 / 12 / 10 (12% / 48% / 40%); by area, 11 / 14 / 0.
 - **Variants:** 63 (21 numeric items × 3). Items plus variants: 88.
@@ -46,29 +46,29 @@ The batch takes the three FAR tasks that had no items (II.E.1a, II.E.3a, II.F.a)
 - Word items (rotated by `finalize()`): `investments-fair-value-0003` A, `equity-method-0003` B, `intangibles-classification-0001` C, `notes-0006` D.
 - Overall: A 1, B 11, C 12, D 1.
 
-| Item | Key letters (version 0, variants 1–3) |
-| --- | --- |
-| `balance-sheet-0006` | C B C C |
-| `income-statement-0005` | B C B C |
-| `changes-in-equity-0004` | B B C C |
-| `cash-flows-0010` | C B C C |
-| `notes-0005` | B C C B |
-| `nfp-statement-of-activities-0002` | C C B B |
-| `special-purpose-frameworks-0004` | C C C D |
-| `foreign-currency-transactions-0002` | B A B A |
-| `changes-in-equity-0005` | B C C B |
-| `cash-flows-0011` | B C B B |
-| `ppe-held-for-sale-0002` | B A B B |
-| `receivables-factoring-0002` | C B B C |
-| `inventory-lcm-0001` | C B C B |
-| `debt-noninterest-note-0001` | C B B C |
-| `cash-bank-reconciliation-0004` | C C C D |
-| `receivables-rollforward-0003` | B B B A |
-| `receivables-reconciliation-0003` | C B B B |
-| `inventory-rollforward-0003` | B B C A |
-| `inventory-reconciliation-0003` | B C B B |
-| `ppe-rollforward-0003` | C C C D |
-| `ppe-reconciliation-0003` | C B C B |
+| Item                                 | Key letters (version 0, variants 1–3) |
+| ------------------------------------ | ------------------------------------- |
+| `balance-sheet-0006`                 | C B C C                               |
+| `income-statement-0005`              | B C B C                               |
+| `changes-in-equity-0004`             | B B C C                               |
+| `cash-flows-0010`                    | C B C C                               |
+| `notes-0005`                         | B C C B                               |
+| `nfp-statement-of-activities-0002`   | C C B B                               |
+| `special-purpose-frameworks-0004`    | C C C D                               |
+| `foreign-currency-transactions-0002` | B A B A                               |
+| `changes-in-equity-0005`             | B C C B                               |
+| `cash-flows-0011`                    | B C B B                               |
+| `ppe-held-for-sale-0002`             | B A B B                               |
+| `receivables-factoring-0002`         | C B B C                               |
+| `inventory-lcm-0001`                 | C B C B                               |
+| `debt-noninterest-note-0001`         | C B B C                               |
+| `cash-bank-reconciliation-0004`      | C C C D                               |
+| `receivables-rollforward-0003`       | B B B A                               |
+| `receivables-reconciliation-0003`    | C B B B                               |
+| `inventory-rollforward-0003`         | B B C A                               |
+| `inventory-reconciliation-0003`      | B C B B                               |
+| `ppe-rollforward-0003`               | C C C D                               |
+| `ppe-reconciliation-0003`            | C B C B                               |
 
 ## Process
 
@@ -81,6 +81,7 @@ The batch takes the three FAR tasks that had no items (II.E.1a, II.E.3a, II.F.a)
 ## Blind verification
 
 One verifier solved all 88 versions and matched every key. Fixes applied:
+
 - `ppe-rollforward-0003`: the "proceeds taken as carrying amount" distractor now uses the right figure (key − gain).
 - `inventory-rollforward-0003`: the consigned goods are counted but were never recorded as a purchase, so they matter in one place; new distractors are "consigned goods left in the count" and "all freight treated as selling expense". The key changed.
 - `notes-0005`: dropped "although it has no refinancing agreement".
@@ -102,12 +103,12 @@ One verifier solved all 88 versions and matched every key. Fixes applied:
 
 **Result: passed.** The gated items average **84.9%** estimated pass likelihood (batches 07–08: 84.0%). 20 are exam-ready, 3 need minor revision and none need major revision, with no wrong keys in 81 versions. The sampled item was exam-ready, so escalation was not triggered. The gate mapped every item to a blueprint task independently and agreed with `far-coverage.py` on all 23, and it judged the mostly-B/C version-0 keys not to be a cue.
 
-| Item | Gate | Fix |
-| --- | --- | --- |
-| `far-notes-0005` (78%) | Nothing said the note due June 30, Year 2 was long-term, so leaving it out of the maturities note was defensible. | The note was "originally issued with a three-year term". |
-| `far-changes-in-equity-0004` (78%) | The "treasury excess left in income" distractor still charged the shortfall to paid-in capital from treasury stock, which that error would leave at zero; and "requires only par value … of that size" hinted at the correction. | The distractor is recomputed with the errors interacting ($2,130,000 / $1,367,000 / $3,320,000 / $869,000), and the stem says neutrally that state law requires par value to be capitalized for stock dividends. |
-| `far-investments-fair-value-0003` (80%) | The key's "a company it must consolidate" echoed the ASC 825-10-15-5 exclusion wording. | The key is now "common shares giving it 70% of the voting shares of a regional distributor". |
-| Nits | Held-for-sale move-out timing; "site of a future plant"; FX variant 1 ordering. | "Will vacate the building at closing"; "land for the new plant"; FX variant 1 swaps the loss distractor so its choices sort cleanly. |
+| Item                                    | Gate                                                                                                                                                                                                                             | Fix                                                                                                                                                                                                              |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `far-notes-0005` (78%)                  | Nothing said the note due June 30, Year 2 was long-term, so leaving it out of the maturities note was defensible.                                                                                                                | The note was "originally issued with a three-year term".                                                                                                                                                         |
+| `far-changes-in-equity-0004` (78%)      | The "treasury excess left in income" distractor still charged the shortfall to paid-in capital from treasury stock, which that error would leave at zero; and "requires only par value … of that size" hinted at the correction. | The distractor is recomputed with the errors interacting ($2,130,000 / $1,367,000 / $3,320,000 / $869,000), and the stem says neutrally that state law requires par value to be capitalized for stock dividends. |
+| `far-investments-fair-value-0003` (80%) | The key's "a company it must consolidate" echoed the ASC 825-10-15-5 exclusion wording.                                                                                                                                          | The key is now "common shares giving it 70% of the voting shares of a regional distributor".                                                                                                                     |
+| Nits                                    | Held-for-sale move-out timing; "site of a future plant"; FX variant 1 ordering.                                                                                                                                                  | "Will vacate the building at closing"; "land for the new plant"; FX variant 1 swaps the loss distractor so its choices sort cleanly.                                                                             |
 
 **Blind re-check after the fixes:** a fresh verifier re-solved all 21 versions of the six changed items. It matched every key and found no second answers. Its one item-level fix is applied: variant 2 of `ppe-reconciliation-0003` swaps the weak "repair deducted twice" distractor ($3,286,600) for "no depreciation fix" ($3,250,000), as in the other versions.
 

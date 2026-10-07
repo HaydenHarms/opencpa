@@ -1,6 +1,6 @@
 # FAR variants 10
 
-**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026.
+**Standard:** AICPA _Uniform CPA Examination Blueprints_, effective January 2026.
 
 **What this adds:** 12 variants, three for each of the four numeric FAR MCQs left without variants by
 variants 04, 06 and 09 (`far-contingencies-0005`, `far-debt-covenant-0001`, `far-revenue-allocation-0003`)
@@ -16,7 +16,7 @@ could put the key above, below or between the others:
 - `far-contingencies-0005`: the three original distractors (netting the insurance recovery against the
   liability with and without the unasserted claim, and reporting the lawsuit gross but omitting the
   unasserted claim) are all subsets of the key's liabilities. Added: adding the confirmed insurance
-  recovery back in as an *additional* liability instead of a receivable, and misreading the gain
+  recovery back in as an _additional_ liability instead of a receivable, and misreading the gain
   contingency (the patent suit) as a loss and adding its expected award to the accrual. Both land above
   the key.
 - `far-debt-covenant-0001`: the three original distractors (no adjustment, both adjustments added to
@@ -45,12 +45,12 @@ could put the key above, below or between the others:
   below the key. This item's variants also flip the error's direction (overstated/understated) across
   versions, which changes the facts but tests the identical concept, as the brief for this batch allows.
 
-| Item | Area | Key letters by version | New distractor errors |
-| --- | --- | --- | --- |
-| `far-accounting-errors-0002` | III | B D A C | believes the error fully resolved; treats it as a direct retained-earnings adjustment |
-| `far-contingencies-0005` | III | D C B B | confirmed insurance recovery added as a liability; gain contingency misread as a loss |
-| `far-debt-covenant-0001` | II | D C D C | dividend recorded without the warranty accrual; confuses the ratio with the equity multiplier (total assets ÷ equity = the ratio + 1) |
-| `far-revenue-allocation-0003` | III | B A B B | discount split equally among the three obligations; residual approach (ASC 606-10-32-34(c) bars it here) |
+| Item                          | Area | Key letters by version | New distractor errors                                                                                                                 |
+| ----------------------------- | ---- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `far-accounting-errors-0002`  | III  | B D A C                | believes the error fully resolved; treats it as a direct retained-earnings adjustment                                                 |
+| `far-contingencies-0005`      | III  | D C B B                | confirmed insurance recovery added as a liability; gain contingency misread as a loss                                                 |
+| `far-debt-covenant-0001`      | II   | D C D C                | dividend recorded without the warranty accrual; confuses the ratio with the equity multiplier (total assets ÷ equity = the ratio + 1) |
+| `far-revenue-allocation-0003` | III  | B A B B                | discount split equally among the three obligations; residual approach (ASC 606-10-32-34(c) bars it here)                              |
 
 Three families' key letters move across at least three of the four letters; `far-revenue-allocation-0003`
 moves between two (B and A) once the two undeliverable distractors described above were dropped, since the

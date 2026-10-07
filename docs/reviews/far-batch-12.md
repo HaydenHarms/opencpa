@@ -1,6 +1,6 @@
 # Review report: FAR batch 12
 
-**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026.
+**Standard:** AICPA _Uniform CPA Examination Blueprints_, effective January 2026.
 
 **25 items**, all written from scratch in `scripts/batches/far-batch-12.py`. 23 numeric items ship with three variants each (69 in all), so the batch adds 94 problems. Every variant family moves the key's letter. Built alongside batch 13, which takes no task or topic this batch uses.
 
@@ -8,33 +8,33 @@
 
 No Remembering and Understanding items (that skill is at its 15% cap). The batch closes 15 one-item Application tasks in Areas I and II and adds 10 Analysis items in Area III, each changing at least two scenario events against every existing item on its task.
 
-| Item | Blueprint task | Skill |
-| --- | --- | --- |
-| `far-balance-sheet-0009` | I.A.1b Adjust the balance sheet to correct identified errors (working capital: unrecorded accrued interest, customer deposit, overdraft, treasury stock, current maturity) | Application |
-| `far-income-statement-0008` | I.A.2b Adjust the income statement to correct identified errors (dividends, equity security fair value change, consignment) | Application |
-| `far-changes-in-equity-0007` | I.A.4a Prepare a statement of changes in equity (retained earnings: property dividend at fair value, small stock dividend, treasury reissue below cost) | Application |
-| `far-changes-in-equity-0008` | I.A.4b Adjust the statement of changes in equity to correct identified errors (issuance costs, treasury stock, AFS loss) | Application |
-| `far-cash-flows-0016` | I.A.5b Adjust a statement of cash flows to correct identified errors (operating section: gain, bond premium, receivables) | Application |
-| `far-consolidated-statements-0011` | I.A.6b Adjust consolidated financial statements to correct identified errors (wholly owned; intercompany inventory profit, intercompany receivable) | Application |
-| `far-notes-0008` | I.A.7a Adjust the notes to correct identified errors and omissions (lease maturity analysis: omitted operating lease, short-term lease, warehouse liability shown discounted) | Application |
-| `far-nfp-financial-position-0005` | I.B.1c Adjust an NFP statement of financial position to correct identified errors (perpetually restricted land at fair value, agency transfer, time-restricted pledge, release) | Application |
-| `far-nfp-statement-of-activities-0004` | I.B.2c Adjust an NFP statement of activities to correct identified errors (contributed van depreciation, netted investment fees, unskilled volunteers) | Application |
-| `far-special-purpose-frameworks-0006` | I.E.c Prepare cash basis or modified cash basis statements (modified cash basis: capitalized equipment, no receivables or prepaids) | Application |
-| `far-cash-equivalents-0002` | II.A.a Calculate cash and cash equivalents (original maturity, postdated and NSF checks; policy stated) | Application |
-| `far-ppe-held-for-sale-0003` | II.D.d Determine whether an asset qualifies as held for sale (word item; criteria judged from facts) | Application |
-| `far-ppe-held-for-sale-0004` | II.D.e Adjust the carrying amount of assets held for sale (write-down, capped recovery, no depreciation while held for sale) | Application |
-| `far-investments-fair-value-0004` | II.E.1b Calculate the carrying amount of investments at fair value (fair value option on an equity-method stake, AFS debt with credit loss) | Application |
-| `far-investments-fair-value-0005` | II.E.1c Calculate investment income on investments at fair value and prepare journal entries (AFS debt: OCI credit in the fair value entry) | Application |
-| `far-change-in-principle-0002` | III.A.b Derive the impact of an accounting change or error correction (LIFO to FIFO plus a prior-year error: opening retained earnings of the earliest period) | Analysis |
-| `far-change-in-estimate-0002` | III.A.b (change in useful life with two material errors: Year 3 pretax income) | Analysis |
-| `far-accounting-errors-0008` | III.A.b (bond discount never amortized, inventory errors: restated equity) | Analysis |
-| `far-accounting-errors-0009` | III.A.b (purchase cutoff, consignment, freight: restated cost of goods sold) | Analysis |
-| `far-contingencies-0012` | III.B.c Review documentation for recognition versus disclosure (word item; legal letter) | Analysis |
-| `far-contingencies-0013` | III.B.c (corrected liability for litigation and claims: settled claim, range, self-insurance reserve) | Analysis |
-| `far-contingencies-0014` | III.B.c (receivables: insurance recovery accepted, signed settlement; jury award under appeal and denied claim excluded) | Analysis |
-| `far-subsequent-events-0011` | III.G.c Derive the impact of identified subsequent events (SEC filer; equity) | Analysis |
-| `far-subsequent-events-0012` | III.G.c (non-SEC filer, available-to-be-issued date; pretax income) | Analysis |
-| `far-subsequent-events-0013` | III.G.c (tax rate change enacted after year-end; net deferred tax liability) | Analysis |
+| Item                                   | Blueprint task                                                                                                                                                                  | Skill       |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `far-balance-sheet-0009`               | I.A.1b Adjust the balance sheet to correct identified errors (working capital: unrecorded accrued interest, customer deposit, overdraft, treasury stock, current maturity)      | Application |
+| `far-income-statement-0008`            | I.A.2b Adjust the income statement to correct identified errors (dividends, equity security fair value change, consignment)                                                     | Application |
+| `far-changes-in-equity-0007`           | I.A.4a Prepare a statement of changes in equity (retained earnings: property dividend at fair value, small stock dividend, treasury reissue below cost)                         | Application |
+| `far-changes-in-equity-0008`           | I.A.4b Adjust the statement of changes in equity to correct identified errors (issuance costs, treasury stock, AFS loss)                                                        | Application |
+| `far-cash-flows-0016`                  | I.A.5b Adjust a statement of cash flows to correct identified errors (operating section: gain, bond premium, receivables)                                                       | Application |
+| `far-consolidated-statements-0011`     | I.A.6b Adjust consolidated financial statements to correct identified errors (wholly owned; intercompany inventory profit, intercompany receivable)                             | Application |
+| `far-notes-0008`                       | I.A.7a Adjust the notes to correct identified errors and omissions (lease maturity analysis: omitted operating lease, short-term lease, warehouse liability shown discounted)   | Application |
+| `far-nfp-financial-position-0005`      | I.B.1c Adjust an NFP statement of financial position to correct identified errors (perpetually restricted land at fair value, agency transfer, time-restricted pledge, release) | Application |
+| `far-nfp-statement-of-activities-0004` | I.B.2c Adjust an NFP statement of activities to correct identified errors (contributed van depreciation, netted investment fees, unskilled volunteers)                          | Application |
+| `far-special-purpose-frameworks-0006`  | I.E.c Prepare cash basis or modified cash basis statements (modified cash basis: capitalized equipment, no receivables or prepaids)                                             | Application |
+| `far-cash-equivalents-0002`            | II.A.a Calculate cash and cash equivalents (original maturity, postdated and NSF checks; policy stated)                                                                         | Application |
+| `far-ppe-held-for-sale-0003`           | II.D.d Determine whether an asset qualifies as held for sale (word item; criteria judged from facts)                                                                            | Application |
+| `far-ppe-held-for-sale-0004`           | II.D.e Adjust the carrying amount of assets held for sale (write-down, capped recovery, no depreciation while held for sale)                                                    | Application |
+| `far-investments-fair-value-0004`      | II.E.1b Calculate the carrying amount of investments at fair value (fair value option on an equity-method stake, AFS debt with credit loss)                                     | Application |
+| `far-investments-fair-value-0005`      | II.E.1c Calculate investment income on investments at fair value and prepare journal entries (AFS debt: OCI credit in the fair value entry)                                     | Application |
+| `far-change-in-principle-0002`         | III.A.b Derive the impact of an accounting change or error correction (LIFO to FIFO plus a prior-year error: opening retained earnings of the earliest period)                  | Analysis    |
+| `far-change-in-estimate-0002`          | III.A.b (change in useful life with two material errors: Year 3 pretax income)                                                                                                  | Analysis    |
+| `far-accounting-errors-0008`           | III.A.b (bond discount never amortized, inventory errors: restated equity)                                                                                                      | Analysis    |
+| `far-accounting-errors-0009`           | III.A.b (purchase cutoff, consignment, freight: restated cost of goods sold)                                                                                                    | Analysis    |
+| `far-contingencies-0012`               | III.B.c Review documentation for recognition versus disclosure (word item; legal letter)                                                                                        | Analysis    |
+| `far-contingencies-0013`               | III.B.c (corrected liability for litigation and claims: settled claim, range, self-insurance reserve)                                                                           | Analysis    |
+| `far-contingencies-0014`               | III.B.c (receivables: insurance recovery accepted, signed settlement; jury award under appeal and denied claim excluded)                                                        | Analysis    |
+| `far-subsequent-events-0011`           | III.G.c Derive the impact of identified subsequent events (SEC filer; equity)                                                                                                   | Analysis    |
+| `far-subsequent-events-0012`           | III.G.c (non-SEC filer, available-to-be-issued date; pretax income)                                                                                                             | Analysis    |
+| `far-subsequent-events-0013`           | III.G.c (tax rate change enacted after year-end; net deferred tax liability)                                                                                                    | Analysis    |
 
 - **Batch mix:** by skill, 0 / 15 / 10 (0% / 60% / 40%); by area, 10 / 5 / 10.
 - **Variants:** 69. Items plus variants: 94.
@@ -66,8 +66,8 @@ One verifier solved all 94 versions from stems and choices only: **94 of 94 matc
 
 **Result: passed.** The 20 gated items average **89.6%** estimated pass likelihood (batch 11: 84.2%). 19 are exam-ready, 1 needs minor revision, none need major revision. Every key is correct in every version the gate solved (80 numeric amounts). All three sampled items were exam-ready, so escalation was not triggered. This is the first gate run on Sonnet and its score is above every earlier FAR gate (82–85%), so it may grade more leniently; watch the next gates for drift.
 
-| Item | Gate | Fix |
-| --- | --- | --- |
+| Item                                    | Gate                                                                                                                                                       | Fix                                                                                                                                                                   |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `far-investments-fair-value-0005` (83%) | Tagged II.E.1c ("calculate investment income ... and prepare journal entries") but asks for the OCI credit in the fair value entry, not investment income. | Not changed: the task covers preparing the entries, and the OCI credit is an amount in that entry. Retagging to II.E.1b would also reopen II.E.1c as a one-item task. |
 
 **Batch 13 gate finding applied here too:** choices that mix "increase" and "decrease" now sort by signed value bank-wide (see the batch 13 report); no batch 12 item was affected.

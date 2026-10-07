@@ -1,6 +1,6 @@
 # Review report: FAR batch 11
 
-**Standard:** AICPA *Uniform CPA Examination Blueprints*, effective January 2026.
+**Standard:** AICPA _Uniform CPA Examination Blueprints_, effective January 2026.
 
 **25 items**, all written from scratch in `scripts/batches/far-batch-11.py`. Each of the 19 numeric items ships with three variants (57 in all), so the batch adds 82 problems. Every variant family moves the key's letter.
 
@@ -8,33 +8,33 @@
 
 The batch takes a second item on six Area III Remembering and Understanding tasks, a second item on nine Application tasks in Areas I and II, and a further item on ten Analysis tasks, each Analysis item in a format its task's existing items don't use. Area III gets eight items, to bring the bank's Area III share back up from 27.1%.
 
-| Item | Blueprint task | Skill |
-| --- | --- | --- |
-| `far-contingencies-0011` | III.B.a Recall recognition and disclosure criteria for commitments and contingencies (gain contingency: a jury award under appeal is disclosed, not recognized) | Remembering and Understanding |
-| `far-revenue-five-step-0002` | III.C.a Recall five-step model concepts (step 1: collectibility; oral contracts, variable consideration and timing as distractors) | Remembering and Understanding |
-| `far-nfp-promises-to-give-0002` | III.C.b Recall recognition of NFP conditional and unconditional promises to give (all-or-nothing matching barrier with release; not recognized, disclosed) | Remembering and Understanding |
-| `far-uncertain-tax-positions-0002` | III.D.a Recall accounting for uncertain tax positions (new information after the reporting date is recognized in the later period, not as an adjusting subsequent event) | Remembering and Understanding |
-| `far-lessee-residual-value-0001` | III.F.a Recall lessee treatment of residual value guarantees, purchase options and variable payments (amount probable of being owed under a guarantee; option not reasonably certain) | Remembering and Understanding |
-| `far-lessee-classification-0002` | III.F.b Identify lease classification criteria (four leases described by facts: bargain purchase option, commencement near the end of economic life, thresholds missed) | Remembering and Understanding |
-| `far-balance-sheet-0008` | I.A.1a Prepare a classified balance sheet (total current liabilities: customer credit balances, stock dividend distributable, current portions of lease and warranty liabilities, deferred tax liability) | Application |
-| `far-income-statement-0007` | I.A.2a Prepare a single-step or multi-step income statement (income from operations: impairment loss and gain on sale included, interest, dividends and discontinued operations excluded) | Application |
-| `far-cash-flows-0013` | I.A.5a Prepare a statement of cash flows and required disclosures (income taxes paid: deferred taxes, tax charged to OCI, deferred tax asset) | Application |
-| `far-nfp-financial-position-0004` | I.B.1b Prepare an NFP statement of financial position (net assets without donor restrictions: underwater endowment, board designation, refundable advance) | Application |
-| `far-nfp-statement-of-activities-0003` | I.B.2b Prepare an NFP statement of activities (net change in net assets with donor restrictions: releases, placed-in-service equipment, endowment return and appropriation, implied time restriction, conditional pledge) | Application |
-| `far-receivables-credit-losses-0003` | II.B.a Calculate trade receivables and allowances (CECL aging, write-offs and a recovery; ASU 2025-05 practical expedient elected, so the recession forecast is excluded) | Application |
-| `far-ppe-lump-sum-0001` | II.D.a Calculate gross and net PP&E (lump-sum purchase allocated on appraised values, acquisition costs, renovation before use, partial-year depreciation) | Application |
-| `far-investments-htm-0002` | II.E.2b Calculate the carrying amount of investments at amortized cost (held-to-maturity bonds bought at a premium, semiannual effective interest) | Application |
-| `far-accrued-liabilities-0002` | II.G.b Calculate payables and accrued liabilities (sales tax included in receipts, payroll withholdings and employer taxes, vested vacation, accrued interest) | Application |
-| `far-changes-in-equity-0006` | I.A.4c Detect and correct statement of changes in equity discrepancies (AOCI column: equity securities gain, AFS credit loss, missing reclassification adjustment) | Analysis |
-| `far-cash-flows-0014` | I.A.5c Detect and correct statement of cash flows discrepancies (full draft statement, financing section: assumed mortgage, prepayment penalty, finance lease interest) | Analysis |
-| `far-cash-flows-0015` | I.A.5d Derive the impact of transactions on the statement of cash flows (direct method cash paid to suppliers: write-down inside cost of goods sold, payable settled by a note) | Analysis |
-| `far-cash-bank-reconciliation-0005` | II.A.b Reconcile the bank balance to the general ledger (outstanding checks found by matching the check register to cleared checks; prior-month items; bank error; transposed disbursement) | Analysis |
-| `far-cash-unreconciled-0003` | II.A.c Investigate unreconciled cash balances to determine an adjustment (difference plugged to expense; check entered as a receipt, misrecorded deposit, omitted outstanding check, automatic loan payment) | Analysis |
-| `far-receivables-reconciliation-0004` | II.B.d Reconcile the receivables subledger to the general ledger (net adjustment to the control account: NSF charge-back, discounts, note conversion, subledger posting error) | Analysis |
-| `far-inventory-rollforward-0004` | II.C.c Prepare a rollforward of inventory (perpetual shrinkage after cutoff: FOB destination purchase, FOB destination sale that cancels out, consigned-out goods) | Analysis |
-| `far-ppe-rollforward-0004` | II.D.f Prepare a rollforward of PP&E (draft rollforward at cost: capitalized repairs, expensed sales tax and installation, disposal at carrying amount, unrecorded scrapping) | Analysis |
-| `far-accounting-errors-0007` | III.A.b Derive the impact of an accounting change or error correction (restated prior-year net income in comparative statements: customer deposit, prior-year interest, prepaid rent; warranty estimate revision as a decoy) | Analysis |
-| `far-subsequent-events-0010` | III.G.c Derive the impact of identified subsequent events (total liabilities: settlement below the accrual, warranty defect in goods sold before year-end; new injury, dividend and loan as nonrecognized) | Analysis |
+| Item                                   | Blueprint task                                                                                                                                                                                                               | Skill                         |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| `far-contingencies-0011`               | III.B.a Recall recognition and disclosure criteria for commitments and contingencies (gain contingency: a jury award under appeal is disclosed, not recognized)                                                              | Remembering and Understanding |
+| `far-revenue-five-step-0002`           | III.C.a Recall five-step model concepts (step 1: collectibility; oral contracts, variable consideration and timing as distractors)                                                                                           | Remembering and Understanding |
+| `far-nfp-promises-to-give-0002`        | III.C.b Recall recognition of NFP conditional and unconditional promises to give (all-or-nothing matching barrier with release; not recognized, disclosed)                                                                   | Remembering and Understanding |
+| `far-uncertain-tax-positions-0002`     | III.D.a Recall accounting for uncertain tax positions (new information after the reporting date is recognized in the later period, not as an adjusting subsequent event)                                                     | Remembering and Understanding |
+| `far-lessee-residual-value-0001`       | III.F.a Recall lessee treatment of residual value guarantees, purchase options and variable payments (amount probable of being owed under a guarantee; option not reasonably certain)                                        | Remembering and Understanding |
+| `far-lessee-classification-0002`       | III.F.b Identify lease classification criteria (four leases described by facts: bargain purchase option, commencement near the end of economic life, thresholds missed)                                                      | Remembering and Understanding |
+| `far-balance-sheet-0008`               | I.A.1a Prepare a classified balance sheet (total current liabilities: customer credit balances, stock dividend distributable, current portions of lease and warranty liabilities, deferred tax liability)                    | Application                   |
+| `far-income-statement-0007`            | I.A.2a Prepare a single-step or multi-step income statement (income from operations: impairment loss and gain on sale included, interest, dividends and discontinued operations excluded)                                    | Application                   |
+| `far-cash-flows-0013`                  | I.A.5a Prepare a statement of cash flows and required disclosures (income taxes paid: deferred taxes, tax charged to OCI, deferred tax asset)                                                                                | Application                   |
+| `far-nfp-financial-position-0004`      | I.B.1b Prepare an NFP statement of financial position (net assets without donor restrictions: underwater endowment, board designation, refundable advance)                                                                   | Application                   |
+| `far-nfp-statement-of-activities-0003` | I.B.2b Prepare an NFP statement of activities (net change in net assets with donor restrictions: releases, placed-in-service equipment, endowment return and appropriation, implied time restriction, conditional pledge)    | Application                   |
+| `far-receivables-credit-losses-0003`   | II.B.a Calculate trade receivables and allowances (CECL aging, write-offs and a recovery; ASU 2025-05 practical expedient elected, so the recession forecast is excluded)                                                    | Application                   |
+| `far-ppe-lump-sum-0001`                | II.D.a Calculate gross and net PP&E (lump-sum purchase allocated on appraised values, acquisition costs, renovation before use, partial-year depreciation)                                                                   | Application                   |
+| `far-investments-htm-0002`             | II.E.2b Calculate the carrying amount of investments at amortized cost (held-to-maturity bonds bought at a premium, semiannual effective interest)                                                                           | Application                   |
+| `far-accrued-liabilities-0002`         | II.G.b Calculate payables and accrued liabilities (sales tax included in receipts, payroll withholdings and employer taxes, vested vacation, accrued interest)                                                               | Application                   |
+| `far-changes-in-equity-0006`           | I.A.4c Detect and correct statement of changes in equity discrepancies (AOCI column: equity securities gain, AFS credit loss, missing reclassification adjustment)                                                           | Analysis                      |
+| `far-cash-flows-0014`                  | I.A.5c Detect and correct statement of cash flows discrepancies (full draft statement, financing section: assumed mortgage, prepayment penalty, finance lease interest)                                                      | Analysis                      |
+| `far-cash-flows-0015`                  | I.A.5d Derive the impact of transactions on the statement of cash flows (direct method cash paid to suppliers: write-down inside cost of goods sold, payable settled by a note)                                              | Analysis                      |
+| `far-cash-bank-reconciliation-0005`    | II.A.b Reconcile the bank balance to the general ledger (outstanding checks found by matching the check register to cleared checks; prior-month items; bank error; transposed disbursement)                                  | Analysis                      |
+| `far-cash-unreconciled-0003`           | II.A.c Investigate unreconciled cash balances to determine an adjustment (difference plugged to expense; check entered as a receipt, misrecorded deposit, omitted outstanding check, automatic loan payment)                 | Analysis                      |
+| `far-receivables-reconciliation-0004`  | II.B.d Reconcile the receivables subledger to the general ledger (net adjustment to the control account: NSF charge-back, discounts, note conversion, subledger posting error)                                               | Analysis                      |
+| `far-inventory-rollforward-0004`       | II.C.c Prepare a rollforward of inventory (perpetual shrinkage after cutoff: FOB destination purchase, FOB destination sale that cancels out, consigned-out goods)                                                           | Analysis                      |
+| `far-ppe-rollforward-0004`             | II.D.f Prepare a rollforward of PP&E (draft rollforward at cost: capitalized repairs, expensed sales tax and installation, disposal at carrying amount, unrecorded scrapping)                                                | Analysis                      |
+| `far-accounting-errors-0007`           | III.A.b Derive the impact of an accounting change or error correction (restated prior-year net income in comparative statements: customer deposit, prior-year interest, prepaid rent; warranty estimate revision as a decoy) | Analysis                      |
+| `far-subsequent-events-0010`           | III.G.c Derive the impact of identified subsequent events (total liabilities: settlement below the accrual, warranty defect in goods sold before year-end; new injury, dividend and loan as nonrecognized)                   | Analysis                      |
 
 - **Batch mix:** by skill, 6 / 9 / 10 (24% / 36% / 40%); by area, 8 / 9 / 8.
 - **Variants:** 57 (19 numeric items × 3). Items plus variants: 82.
@@ -50,27 +50,27 @@ The batch takes a second item on six Area III Remembering and Understanding task
 - Overall: A 6, B 7, C 7, D 5 (after the gate fixes; A 6, B 6, C 6, D 7 as built).
 - Across all 82 versions: A 20, B 30, C 20, D 12 (after the blind-verifier fixes). Nine families have only one natural error on the low side of the key (for example, a forgotten NSF charge-back is the only error that lowers the receivables adjustment), so their versions alternate between A and B; the D keys come from the families with three or more low-side errors.
 
-| Item | Key letters (version 0, variants 1–3) |
-| --- | --- |
-| `balance-sheet-0008` | D A C B |
-| `income-statement-0007` | D B C C |
-| `cash-flows-0013` | C A B C |
-| `nfp-financial-position-0004` | C B C B |
-| `nfp-statement-of-activities-0003` | D A C B |
-| `changes-in-equity-0006` | B A B A |
-| `cash-flows-0014` | B A B B |
-| `cash-flows-0015` | C C B C |
-| `receivables-credit-losses-0003` | A B B B |
-| `ppe-lump-sum-0001` | C D C D |
-| `investments-htm-0002` | A C B A |
-| `accrued-liabilities-0002` | C A D D |
-| `cash-bank-reconciliation-0005` | D A C C |
-| `cash-unreconciled-0003` | B A C A |
-| `receivables-reconciliation-0004` | A B B B |
-| `inventory-rollforward-0004` | B A B B |
-| `ppe-rollforward-0004` | A B B B |
-| `accounting-errors-0007` | C D B C |
-| `subsequent-events-0010` | B A B A |
+| Item                               | Key letters (version 0, variants 1–3) |
+| ---------------------------------- | ------------------------------------- |
+| `balance-sheet-0008`               | D A C B                               |
+| `income-statement-0007`            | D B C C                               |
+| `cash-flows-0013`                  | C A B C                               |
+| `nfp-financial-position-0004`      | C B C B                               |
+| `nfp-statement-of-activities-0003` | D A C B                               |
+| `changes-in-equity-0006`           | B A B A                               |
+| `cash-flows-0014`                  | B A B B                               |
+| `cash-flows-0015`                  | C C B C                               |
+| `receivables-credit-losses-0003`   | A B B B                               |
+| `ppe-lump-sum-0001`                | C D C D                               |
+| `investments-htm-0002`             | A C B A                               |
+| `accrued-liabilities-0002`         | C A D D                               |
+| `cash-bank-reconciliation-0005`    | D A C C                               |
+| `cash-unreconciled-0003`           | B A C A                               |
+| `receivables-reconciliation-0004`  | A B B B                               |
+| `inventory-rollforward-0004`       | B A B B                               |
+| `ppe-rollforward-0004`             | A B B B                               |
+| `accounting-errors-0007`           | C D B C                               |
+| `subsequent-events-0010`           | B A B A                               |
 
 ## Process
 
@@ -96,6 +96,7 @@ The batch takes a second item on six Area III Remembering and Understanding task
 ## Blind verification
 
 One verifier solved all 82 versions blind, and its answers matched the key on every one. Fixes applied:
+
 - `accrued-liabilities-0002` (required): the question asked for the "total liability for these items", and the note principal was one of the items, so the strict answer wasn't a choice. The stem now says the principal is reported separately as a note payable, and asks for the other liabilities. In variant 3, receipts of $354,000 gave a non-round sales tax; they are now $349,800 (tax $19,800, key $78,362). A builder check requires the sales-tax split to be exact.
 - `income-statement-0007`: the key puts the gain on the equipment sale and the impairment loss inside income from operations. That is what ASC 360-10-45-4 and 45-5 require when the subtotal is presented, but it differs from the textbook "other gains" layout. The references, the key's rationale and the "gain left out" rationale now cite those paragraphs.
 - `ppe-lump-sum-0001`: variant 2 rounded an intermediate allocation, so one distractor was a dollar off. Allocations are now exact by construction, with an assert to enforce it. Depreciation is rounded once, and the stem says so. Variant 2 now has a distractor above the key, so its key moves from D to C.
@@ -112,11 +113,11 @@ One verifier solved all 82 versions blind, and its answers matched the key on ev
 
 **Result: passed.** The 21 gated items average **84.2%** estimated pass likelihood (batch 10: 84.6%). 19 are exam-ready, 2 need minor revision and none need major revision. Every key is correct in all the versions the gate solved. Both sampled items were exam-ready, so escalation was not triggered. The gate checked ASU 2025-05 against the FASB text: stating that the entity is a public business entity correctly rules out the additional election that is available only to entities other than PBEs.
 
-| Item | Gate | Fix |
-| --- | --- | --- |
-| `far-cash-flows-0015` (78%) | Version 0 had no distractor for the item's main twist: payables settled by issuing a note, treated as paid in cash. Only variants 1 and 2 had one. | Version 0 swaps "inventory change ignored" ($2,718,000) for "note settlement treated as cash" ($2,869,000). Choices are $2,652,000 / $2,738,000 / **$2,784,000** / $2,869,000, so the key moves from D to C. |
-| `far-subsequent-events-0010` (80%) | Version 0's distractors tested only the recognized events, and A ($3,292,000) was weak. | Version 0 swaps "suit removed altogether" for "February dividend accrued" ($3,627,000). Choices are $3,405,000 / **$3,477,000** / $3,532,000 / $3,627,000, so the key moves from C to B. |
-| Optional, applied | `accrued-liabilities-0002` version 0 lacked the classic error of computing sales tax on gross receipts; `receivables-reconciliation-0004` said "a suspense expense account"; `nfp-promises-to-give-0002` cited 958-605-50 for the conditional-promise disclosure. | Version 0 swaps "vacation left out" for "tax at 7% of gross receipts" ($150,798), so the key moves from D to C, between two distractors. The receivables item now reads "debiting miscellaneous expense". The NFP reference is now Subtopic ASC 958-310-50. |
+| Item                               | Gate                                                                                                                                                                                                                                                              | Fix                                                                                                                                                                                                                                                         |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `far-cash-flows-0015` (78%)        | Version 0 had no distractor for the item's main twist: payables settled by issuing a note, treated as paid in cash. Only variants 1 and 2 had one.                                                                                                                | Version 0 swaps "inventory change ignored" ($2,718,000) for "note settlement treated as cash" ($2,869,000). Choices are $2,652,000 / $2,738,000 / **$2,784,000** / $2,869,000, so the key moves from D to C.                                                |
+| `far-subsequent-events-0010` (80%) | Version 0's distractors tested only the recognized events, and A ($3,292,000) was weak.                                                                                                                                                                           | Version 0 swaps "suit removed altogether" for "February dividend accrued" ($3,627,000). Choices are $3,405,000 / **$3,477,000** / $3,532,000 / $3,627,000, so the key moves from C to B.                                                                    |
+| Optional, applied                  | `accrued-liabilities-0002` version 0 lacked the classic error of computing sales tax on gross receipts; `receivables-reconciliation-0004` said "a suspense expense account"; `nfp-promises-to-give-0002` cited 958-605-50 for the conditional-promise disclosure. | Version 0 swaps "vacation left out" for "tax at 7% of gross receipts" ($150,798), so the key moves from D to C, between two distractors. The receivables item now reads "debiting miscellaneous expense". The NFP reference is now Subtopic ASC 958-310-50. |
 
 **Not changed:** the gate called `cash-flows-0015`'s Analysis tag borderline but accepted it under I.A.5d ("derive the impact of transactions on the statement of cash flows"), which the blueprint marks Analysis.
 
