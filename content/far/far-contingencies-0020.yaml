@@ -26,12 +26,14 @@ choices:
     Co. will have to pay a former customer, and $350,000 is the single most likely amount, with a 50%
     likelihood against 20% for $200,000 and 30% for $500,000. When a loss is probable and a single amount
     within a range of possible outcomes is a better estimate than any other, Marchwood Fabrication Co.
-    accrues that amount.
+    accrues that amount rather than a probability-weighted average of the outcomes (ASC 450-20).
 - id: C
   text: $365,000
   rationale: Accrues the probability-weighted expected value of the three outcomes (20% × $200,000 + 50%
-    × $350,000 + 30% × $500,000 = $365,000) rather than the single most likely amount. GAAP uses the expected
-    value only when no single amount in a range is more likely than any other.
+    × $350,000 + 30% × $500,000 = $365,000) rather than the single most likely amount. GAAP does not use
+    a probability-weighted average to measure a loss contingency; it accrues the single amount within
+    a range that is a better estimate than any other, or, when no amount is a better estimate, the range
+    minimum.
 - id: D
   text: $500,000
   rationale: Accrues the largest amount in the range of possible outcomes. A single amount, $350,000,
@@ -42,7 +44,7 @@ explanation: Correct. Marchwood Fabrication Co.'s attorney believes it is probab
   Co. will have to pay a former customer, and $350,000 is the single most likely amount, with a 50% likelihood
   against 20% for $200,000 and 30% for $500,000. When a loss is probable and a single amount within a
   range of possible outcomes is a better estimate than any other, Marchwood Fabrication Co. accrues that
-  amount.
+  amount rather than a probability-weighted average of the outcomes (ASC 450-20).
 variants:
 - stem: 'Hallowfield Instruments Co.''s attorney believes it is probable that Hallowfield Instruments
     Co. will have to pay damages to a supplier in a pending lawsuit, and estimates three possible outcomes:
@@ -60,12 +62,14 @@ variants:
       Instruments Co. will have to pay a supplier, and $300,000 is the single most likely amount, with
       a 60% likelihood against 10% for $120,000 and 30% for $600,000. When a loss is probable and a single
       amount within a range of possible outcomes is a better estimate than any other, Hallowfield Instruments
-      Co. accrues that amount.
+      Co. accrues that amount rather than a probability-weighted average of the outcomes (ASC 450-20).
   - id: C
     text: $372,000
     rationale: Accrues the probability-weighted expected value of the three outcomes (10% × $120,000 +
-      60% × $300,000 + 30% × $600,000 = $372,000) rather than the single most likely amount. GAAP uses
-      the expected value only when no single amount in a range is more likely than any other.
+      60% × $300,000 + 30% × $600,000 = $372,000) rather than the single most likely amount. GAAP does
+      not use a probability-weighted average to measure a loss contingency; it accrues the single amount
+      within a range that is a better estimate than any other, or, when no amount is a better estimate,
+      the range minimum.
   - id: D
     text: $600,000
     rationale: Accrues the largest amount in the range of possible outcomes. A single amount, $300,000,
@@ -76,7 +80,7 @@ variants:
     Instruments Co. will have to pay a supplier, and $300,000 is the single most likely amount, with a
     60% likelihood against 10% for $120,000 and 30% for $600,000. When a loss is probable and a single
     amount within a range of possible outcomes is a better estimate than any other, Hallowfield Instruments
-    Co. accrues that amount.
+    Co. accrues that amount rather than a probability-weighted average of the outcomes (ASC 450-20).
 - stem: 'Birchmoor Devices Co.''s attorney believes it is probable that Birchmoor Devices Co. will have
     to pay damages to a competitor in a pending lawsuit, and estimates three possible outcomes: a 35%
     chance of $100,000, a 50% chance of $320,000 and a 15% chance of $600,000. No settlement offer has
@@ -90,15 +94,17 @@ variants:
   - id: B
     text: $285,000
     rationale: Accrues the probability-weighted expected value of the three outcomes (35% × $100,000 +
-      50% × $320,000 + 15% × $600,000 = $285,000) rather than the single most likely amount. GAAP uses
-      the expected value only when no single amount in a range is more likely than any other.
+      50% × $320,000 + 15% × $600,000 = $285,000) rather than the single most likely amount. GAAP does
+      not use a probability-weighted average to measure a loss contingency; it accrues the single amount
+      within a range that is a better estimate than any other, or, when no amount is a better estimate,
+      the range minimum.
   - id: C
     text: $320,000
     rationale: Correct. Birchmoor Devices Co.'s attorney believes it is probable that Birchmoor Devices
       Co. will have to pay a competitor, and $320,000 is the single most likely amount, with a 50% likelihood
       against 35% for $100,000 and 15% for $600,000. When a loss is probable and a single amount within
       a range of possible outcomes is a better estimate than any other, Birchmoor Devices Co. accrues
-      that amount.
+      that amount rather than a probability-weighted average of the outcomes (ASC 450-20).
   - id: D
     text: $600,000
     rationale: Accrues the largest amount in the range of possible outcomes. A single amount, $320,000,
@@ -109,7 +115,7 @@ variants:
     Co. will have to pay a competitor, and $320,000 is the single most likely amount, with a 50% likelihood
     against 35% for $100,000 and 15% for $600,000. When a loss is probable and a single amount within
     a range of possible outcomes is a better estimate than any other, Birchmoor Devices Co. accrues that
-    amount.
+    amount rather than a probability-weighted average of the outcomes (ASC 450-20).
 - stem: 'Thaxted Mechanical Co.''s attorney believes it is probable that Thaxted Mechanical Co. will have
     to pay damages to a distributor in a pending lawsuit, and estimates three possible outcomes: a 40%
     chance of $80,000, a 45% chance of $260,000 and a 15% chance of $700,000. No settlement offer has
@@ -123,15 +129,17 @@ variants:
   - id: B
     text: $254,000
     rationale: Accrues the probability-weighted expected value of the three outcomes (40% × $80,000 +
-      45% × $260,000 + 15% × $700,000 = $254,000) rather than the single most likely amount. GAAP uses
-      the expected value only when no single amount in a range is more likely than any other.
+      45% × $260,000 + 15% × $700,000 = $254,000) rather than the single most likely amount. GAAP does
+      not use a probability-weighted average to measure a loss contingency; it accrues the single amount
+      within a range that is a better estimate than any other, or, when no amount is a better estimate,
+      the range minimum.
   - id: C
     text: $260,000
     rationale: Correct. Thaxted Mechanical Co.'s attorney believes it is probable that Thaxted Mechanical
       Co. will have to pay a distributor, and $260,000 is the single most likely amount, with a 45% likelihood
       against 40% for $80,000 and 15% for $700,000. When a loss is probable and a single amount within
       a range of possible outcomes is a better estimate than any other, Thaxted Mechanical Co. accrues
-      that amount.
+      that amount rather than a probability-weighted average of the outcomes (ASC 450-20).
   - id: D
     text: $700,000
     rationale: Accrues the largest amount in the range of possible outcomes. A single amount, $260,000,
@@ -142,4 +150,4 @@ variants:
     Co. will have to pay a distributor, and $260,000 is the single most likely amount, with a 45% likelihood
     against 40% for $80,000 and 15% for $700,000. When a loss is probable and a single amount within a
     range of possible outcomes is a better estimate than any other, Thaxted Mechanical Co. accrues that
-    amount.
+    amount rather than a probability-weighted average of the outcomes (ASC 450-20).

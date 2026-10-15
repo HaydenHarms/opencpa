@@ -174,8 +174,10 @@ def probable_outcome(p):
         "expected": (m(expected),
                      f"Accrues the probability-weighted expected value of the three outcomes "
                      f"({lop:.0f}% × {m(lo)} + {midp:.0f}% × {m(mid)} + {hip:.0f}% × {m(hi)} = "
-                     f"{m(expected)}) rather than the single most likely amount. GAAP uses the expected "
-                     f"value only when no single amount in a range is more likely than any other."),
+                     f"{m(expected)}) rather than the single most likely amount. GAAP does not use a "
+                     f"probability-weighted average to measure a loss contingency; it accrues the single "
+                     f"amount within a range that is a better estimate than any other, or, when no amount "
+                     f"is a better estimate, the range minimum."),
         "max": (m(hi), f"Accrues the largest amount in the range of possible outcomes. A single amount, "
                        f"{m(mid)}, is more likely than any other single amount, so {co} accrues that "
                        f"amount rather than the range maximum."),
@@ -184,7 +186,8 @@ def probable_outcome(p):
            f"Correct. {co}'s attorney believes it is probable that {co} will have to pay {cust}, and "
            f"{m(mid)} is the single most likely amount, with a {midp:.0f}% likelihood against {lop:.0f}% "
            f"for {m(lo)} and {hip:.0f}% for {m(hi)}. When a loss is probable and a single amount within "
-           f"a range of possible outcomes is a better estimate than any other, {co} accrues that amount.")
+           f"a range of possible outcomes is a better estimate than any other, {co} accrues that amount "
+           f"rather than a probability-weighted average of the outcomes (ASC 450-20).")
     choices = [pool[k] for k in ("min", "expected", "max")] + [key]
     answer = "ABCD"[len(choices) - 1]
     return variant(
@@ -211,10 +214,10 @@ CONT_PROBABLE = [
 
 
 def self_insured_ibnr(p):
-    co, reported, ibnr = (p[k] for k in ("co", "reported", "ibnr"))
-    reported, ibnr = D(reported), D(ibnr)
+    co, reported, ibnr, general = (p[k] for k in ("co", "reported", "ibnr", "general"))
+    reported, ibnr, general = D(reported), D(ibnr), D(general)
     key_amt = reported + ibnr
-    margin = key_amt + D(30000)
+    reserve = key_amt + general
     zero = D(0)
     pool = {
         "reported": (m(reported),
@@ -227,15 +230,19 @@ def self_insured_ibnr(p):
                  f"Treats carrying no third-party policy as a reason not to accrue anything. {co} retains "
                  f"the risk itself, so it accrues the claims exactly as an insurer would reserve for them: "
                  f"both reported and incurred-but-not-reported claims that are probable and estimable."),
-        "margin": (m(margin),
-                   f"Adds an additional {m(D(30000))} margin on top of the reported and unreported claims. "
-                   f"GAAP measures the accrual at the best estimate, not a cushion above it."),
+        "reserve": (m(reserve),
+                    f"Adds the board's {m(general)} general contingency reserve for unspecified future "
+                    f"claims to the {m(key_amt)} of claims actually probable and estimable. GAAP prohibits "
+                    f"accruing a general or unspecified business risk; {co} accrues only claims that are "
+                    f"probable and reasonably estimable."),
     }
     key = (m(key_amt),
            f"Correct. {co} retains the risk for product-liability claims instead of transferring it to an "
            f"insurer, so it accrues claims the same way an insurer would reserve for them: the {m(reported)} "
            f"already reported and unpaid, plus the {m(ibnr)} of claims incurred before year end but not "
-           f"yet reported, both judged probable and reasonably estimable, for {m(key_amt)}.")
+           f"yet reported, both judged probable and reasonably estimable, for {m(key_amt)}. The board's "
+           f"separate general contingency reserve for unspecified future claims is not accrued; GAAP "
+           f"does not permit a general reserve for risks not tied to a specific, probable, estimable loss.")
     choices = [pool[k] for k in p["use"]] + [key]
     answer = "ABCD"[len(choices) - 1]
     return variant(
@@ -244,16 +251,22 @@ def self_insured_ibnr(p):
         f"that occurred before year end, all deemed probable and reasonably estimable. Its claims actuary "
         f"also estimates that {m(ibnr)} of additional claims will likely be filed for incidents that "
         f"occurred before year end but had not yet been reported to {co} as of December 31, Year 1, an "
-        f"amount it judges probable and reasonably estimable. What amount should {co} accrue for "
-        f"product-liability claims at December 31, Year 1?",
+        f"amount it judges probable and reasonably estimable. {co}'s board has separately approved setting "
+        f"aside an additional {m(general)} general contingency reserve for unspecified future claims, as a "
+        f"matter of prudent risk management rather than for any claim incurred before year end. What amount "
+        f"should {co} accrue for product-liability claims at December 31, Year 1?",
         choices, answer, key[1])
 
 
 CONT_IBNR = [
-    dict(co="Marchwood Fabrication Co.", reported="180000", ibnr="95000", use=["reported", "ibnr", "zero"]),
-    dict(co="Hallowfield Instruments Co.", reported="240000", ibnr="60000", use=["reported", "ibnr", "margin"]),
-    dict(co="Birchmoor Devices Co.", reported="90000", ibnr="140000", use=["reported", "zero", "margin"]),
-    dict(co="Thaxted Mechanical Co.", reported="310000", ibnr="40000", use=["ibnr", "zero", "reported"]),
+    dict(co="Marchwood Fabrication Co.", reported="180000", ibnr="95000", general="65000",
+         use=["reported", "ibnr", "zero"]),
+    dict(co="Hallowfield Instruments Co.", reported="240000", ibnr="60000", general="65000",
+         use=["reported", "ibnr", "reserve"]),
+    dict(co="Birchmoor Devices Co.", reported="90000", ibnr="140000", general="65000",
+         use=["reported", "zero", "reserve"]),
+    dict(co="Thaxted Mechanical Co.", reported="310000", ibnr="40000", general="65000",
+         use=["ibnr", "zero", "reported"]),
 ]
 
 

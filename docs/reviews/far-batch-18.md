@@ -39,7 +39,13 @@ I hand-solved all 16 versions before writing the builder code and again after ge
 
 ## Blind verification
 
-One independent verifier (Sonnet, no access to the key or to `content/`) solved all 16 versions from stems and choices only. Findings and any required fixes are recorded here once the verifier reports back; this report will be updated in a follow-up commit if any fix is needed.
+One independent verifier (Sonnet, no access to the key or to `content/`) solved all 16 versions from stems and choices only, with every calculation done in Python.
+
+- **`far-subsequent-events-0019`/`-0020` (and all variants): matched the key in every version, clean.** One soft note on `-0019` v3 (distractor B, half of face value) as a "weak but defensible" derivation; no change made.
+- **`far-contingencies-0020` (and all variants): the verifier answered with the probability-weighted expected value, not the key (the single most likely amount).** This is a methodology disagreement, not an arithmetic one. Resolved against the verifier: US GAAP (ASC 450-20-55-23 to 55-24, formerly FAS 5 ¶3) measures a loss contingency within a range at the single amount that is a better estimate than any other, or the range minimum if none is; it has no expected-value method for a single obligation (that is an IFRS, IAS 37, convention, not ASC 450-20). The bank's own existing item on this exact rule, `far-contingencies-0007`, is built the same way (its Year 2 remeasurement uses "$720,000 the most likely amount," not a weighted average). Kept the key. Fixed instead: the "expected value" distractor's rationale originally said "GAAP uses the expected value only when no single amount in a range is more likely than any other," which misstated the actual minimum-amount rule; corrected to say GAAP has no expected-value method and uses the minimum when no amount is a better estimate. The key's own explanation now says explicitly that the accrual is not a probability-weighted average.
+- **`far-contingencies-0021`: the verifier flagged a real defect.** The fourth distractor (originally "the key amount plus an unexplained $30,000 margin") had no derivation a real student error would produce. Replaced it with a stated fact: the stem now gives a board-approved general contingency reserve for unspecified future claims, and the distractor adds that reserve to the real accrual, a concrete and GAAP-grounded error (ASC 450-20-25 does not permit accruing a general or unspecified business risk). Regenerated all four versions; `audit()` and the lint are still clean, and the keys and other three choices in each version are unchanged.
+
+Both fixes are in this same commit (the batch had not yet been pushed when the verifier reported back).
 
 ## Review gate
 
