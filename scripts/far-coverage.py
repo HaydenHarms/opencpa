@@ -111,7 +111,7 @@ TASKS = [
     ("III.A.a", AP, "Calculate adjustments for accounting changes and error corrections", ["change-in-estimate-0001", "change-in-principle-0001", "change-in-estimate-0003", "change-in-principle-0003", "error-correction-0001"]),
     ("III.A.b", AN, "Derive the impact of an accounting change or error correction", ["accounting-errors-0001", "accounting-errors-0002", "accounting-errors-0003", "accounting-errors-0004", "accounting-errors-0005", "accounting-errors-0006", "accounting-errors-0007", "change-in-principle-0002", "change-in-estimate-0002", "accounting-errors-0008", "accounting-errors-0009"]),
     ("III.B.a", RU, "Recall recognition and disclosure criteria for commitments and contingencies", ["contingencies-0010", "contingencies-0011"]),
-    ("III.B.b", AP, "Calculate amounts of contingencies and prepare journal entries", ["contingencies-0006", "contingencies-0007", "contingencies-0015", "contingencies-0016", "contingencies-0017"]),
+    ("III.B.b", AP, "Calculate amounts of contingencies and prepare journal entries", ["contingencies-0006", "contingencies-0007", "contingencies-0015", "contingencies-0016", "contingencies-0017", "contingencies-0020", "contingencies-0021"]),
     ("III.B.c", AN, "Review documentation for recognition versus disclosure", ["contingencies-0002", "contingencies-0003", "contingencies-0004", "contingencies-0005", "contingencies-0008", "contingencies-0009", "contingencies-0012", "contingencies-0013", "contingencies-0014", "contingencies-0018", "contingencies-0019"]),
     ("III.C.a", RU, "Recall five-step model concepts", ["revenue-five-step-0001", "revenue-five-step-0002"]),
     ("III.C.b", RU, "Recall recognition of NFP conditional and unconditional promises to give", ["nfp-promises-to-give-0001", "nfp-promises-to-give-0002"]),
@@ -132,7 +132,7 @@ TASKS = [
     ("III.F.c", AP, "Calculate lessee assets and liabilities and prepare journal entries", ["lessee-finance-0002", "lessee-operating-0004", "lessee-finance-0003", "lessee-finance-0004", "lessee-operating-0006"]),
     ("III.F.d", AP, "Calculate lessee lease costs", ["lessee-finance-0001", "lessee-operating-0003", "lessee-operating-0005", "lessee-finance-0005", "lessee-operating-0007"]),
     ("III.G.a", RU, "Identify a subsequent event and recall its treatment", ["subsequent-events-0001", "subsequent-events-0009"]),
-    ("III.G.b", AP, "Calculate adjustments for identified subsequent events", ["subsequent-events-0005", "subsequent-events-0006", "subsequent-events-0014", "subsequent-events-0015"]),
+    ("III.G.b", AP, "Calculate adjustments for identified subsequent events", ["subsequent-events-0005", "subsequent-events-0006", "subsequent-events-0014", "subsequent-events-0015", "subsequent-events-0019", "subsequent-events-0020"]),
     ("III.G.c", AN, "Derive the impact of identified subsequent events", ["subsequent-events-0002", "subsequent-events-0003", "subsequent-events-0004", "subsequent-events-0007", "subsequent-events-0008", "subsequent-events-0010", "subsequent-events-0011", "subsequent-events-0012", "subsequent-events-0013", "subsequent-events-0016", "subsequent-events-0017", "subsequent-events-0018"]),
 ]
 

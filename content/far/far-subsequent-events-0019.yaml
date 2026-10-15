@@ -1,0 +1,148 @@
+id: far-subsequent-events-0019
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 855-10 (recognized and nonrecognized subsequent events; evaluation through the date the statements
+    are issued)
+  notes: Batch 18. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Firthway Appliances Co.'s December 31, Year 1, financial statements will be issued on March 15,
+  Year 2. At year end, Firthway Appliances Co. carried a $340,000 trade receivable from Major Buyer Corp.,
+  which it judged fully collectible based on information available at that date. Major Buyer Corp.'s finances
+  had, in fact, been deteriorating since October, Year 1, and Major Buyer Corp. had stopped paying nearly
+  all of its trade creditors by December, Year 1, though Firthway Appliances Co. did not learn this until
+  Major Buyer Corp. filed for bankruptcy on February 10, Year 2. The bankruptcy filing disclosed this
+  history and Firthway Appliances Co. now expects to collect only $90,000 of the receivable. What adjustment
+  should Firthway Appliances Co. make to its December 31, Year 1, financial statements?
+choices:
+- id: A
+  text: $90,000
+  rationale: Reports the $90,000 Major Buyer Corp. is now expected to pay as the adjustment, rather than
+    the amount of the write-down.
+- id: B
+  text: $170,000
+  rationale: Writes the receivable down by half of its $340,000 balance instead of down to the $90,000
+    Firthway Appliances Co. now expects to collect based on the bankruptcy filing.
+- id: C
+  text: $250,000
+  rationale: 'Correct. This is a recognized subsequent event: the bankruptcy filing provides evidence
+    about a condition, Major Buyer Corp.''s deteriorating finances, that already existed at year end.
+    Firthway Appliances Co. writes the receivable down to the $90,000 it now expects to collect, a $250,000
+    adjustment ($340,000 − $90,000).'
+- id: D
+  text: $340,000
+  rationale: Writes off the entire $340,000 receivable, ignoring the $90,000 Firthway Appliances Co. still
+    expects to collect from Major Buyer Corp..
+answer: C
+explanation: 'Correct. This is a recognized subsequent event: the bankruptcy filing provides evidence
+  about a condition, Major Buyer Corp.''s deteriorating finances, that already existed at year end. Firthway
+  Appliances Co. writes the receivable down to the $90,000 it now expects to collect, a $250,000 adjustment
+  ($340,000 − $90,000).'
+variants:
+- stem: Gorsefield Marine Co.'s December 31, Year 1, financial statements will be issued on February 28,
+    Year 2. At year end, Gorsefield Marine Co. carried a $480,000 trade receivable from Anchor Traders
+    Inc., which it judged fully collectible based on information available at that date. Anchor Traders
+    Inc.'s finances had, in fact, been deteriorating since September, Year 1, and Anchor Traders Inc.
+    had stopped paying nearly all of its trade creditors by November, Year 1, though Gorsefield Marine
+    Co. did not learn this until Anchor Traders Inc. filed for bankruptcy on January 20, Year 2. The bankruptcy
+    filing disclosed this history and Gorsefield Marine Co. now expects to collect only $60,000 of the
+    receivable. What adjustment should Gorsefield Marine Co. make to its December 31, Year 1, financial
+    statements?
+  choices:
+  - id: A
+    text: $0
+    rationale: Treats the bankruptcy filing as a nonrecognized subsequent event requiring disclosure only.
+      The filing provides evidence about Anchor Traders Inc.'s deteriorating finances, a condition that
+      already existed at the balance sheet date, so it is recognized.
+  - id: B
+    text: $60,000
+    rationale: Reports the $60,000 Anchor Traders Inc. is now expected to pay as the adjustment, rather
+      than the amount of the write-down.
+  - id: C
+    text: $240,000
+    rationale: Writes the receivable down by half of its $480,000 balance instead of down to the $60,000
+      Gorsefield Marine Co. now expects to collect based on the bankruptcy filing.
+  - id: D
+    text: $420,000
+    rationale: 'Correct. This is a recognized subsequent event: the bankruptcy filing provides evidence
+      about a condition, Anchor Traders Inc.''s deteriorating finances, that already existed at year end.
+      Gorsefield Marine Co. writes the receivable down to the $60,000 it now expects to collect, a $420,000
+      adjustment ($480,000 − $60,000).'
+  answer: D
+  explanation: 'Correct. This is a recognized subsequent event: the bankruptcy filing provides evidence
+    about a condition, Anchor Traders Inc.''s deteriorating finances, that already existed at year end.
+    Gorsefield Marine Co. writes the receivable down to the $60,000 it now expects to collect, a $420,000
+    adjustment ($480,000 − $60,000).'
+- stem: Thornbury Logistics Co.'s December 31, Year 1, financial statements will be issued on April 2,
+    Year 2. At year end, Thornbury Logistics Co. carried a $300,000 trade receivable from Westcote Freight
+    Ltd., which it judged fully collectible based on information available at that date. Westcote Freight
+    Ltd.'s finances had, in fact, been deteriorating since November, Year 1, and Westcote Freight Ltd.
+    had stopped paying nearly all of its trade creditors by January, Year 1, though Thornbury Logistics
+    Co. did not learn this until Westcote Freight Ltd. filed for bankruptcy on February 15, Year 2. The
+    bankruptcy filing disclosed this history and Thornbury Logistics Co. now expects to collect only $200,000
+    of the receivable. What adjustment should Thornbury Logistics Co. make to its December 31, Year 1,
+    financial statements?
+  choices:
+  - id: A
+    text: $0
+    rationale: Treats the bankruptcy filing as a nonrecognized subsequent event requiring disclosure only.
+      The filing provides evidence about Westcote Freight Ltd.'s deteriorating finances, a condition that
+      already existed at the balance sheet date, so it is recognized.
+  - id: B
+    text: $100,000
+    rationale: 'Correct. This is a recognized subsequent event: the bankruptcy filing provides evidence
+      about a condition, Westcote Freight Ltd.''s deteriorating finances, that already existed at year
+      end. Thornbury Logistics Co. writes the receivable down to the $200,000 it now expects to collect,
+      a $100,000 adjustment ($300,000 − $200,000).'
+  - id: C
+    text: $200,000
+    rationale: Reports the $200,000 Westcote Freight Ltd. is now expected to pay as the adjustment, rather
+      than the amount of the write-down.
+  - id: D
+    text: $300,000
+    rationale: Writes off the entire $300,000 receivable, ignoring the $200,000 Thornbury Logistics Co.
+      still expects to collect from Westcote Freight Ltd..
+  answer: B
+  explanation: 'Correct. This is a recognized subsequent event: the bankruptcy filing provides evidence
+    about a condition, Westcote Freight Ltd.''s deteriorating finances, that already existed at year end.
+    Thornbury Logistics Co. writes the receivable down to the $200,000 it now expects to collect, a $100,000
+    adjustment ($300,000 − $200,000).'
+- stem: Pemberton Hardware Co.'s December 31, Year 1, financial statements will be issued on March 20,
+    Year 2. At year end, Pemberton Hardware Co. carried a $150,000 trade receivable from Caldwell Supply
+    Co., which it judged fully collectible based on information available at that date. Caldwell Supply
+    Co.'s finances had, in fact, been deteriorating since August, Year 1, and Caldwell Supply Co. had
+    stopped paying nearly all of its trade creditors by November, Year 1, though Pemberton Hardware Co.
+    did not learn this until Caldwell Supply Co. filed for bankruptcy on January 30, Year 2. The bankruptcy
+    filing disclosed this history and Pemberton Hardware Co. now expects to collect only $40,000 of the
+    receivable. What adjustment should Pemberton Hardware Co. make to its December 31, Year 1, financial
+    statements?
+  choices:
+  - id: A
+    text: $0
+    rationale: Treats the bankruptcy filing as a nonrecognized subsequent event requiring disclosure only.
+      The filing provides evidence about Caldwell Supply Co.'s deteriorating finances, a condition that
+      already existed at the balance sheet date, so it is recognized.
+  - id: B
+    text: $75,000
+    rationale: Writes the receivable down by half of its $150,000 balance instead of down to the $40,000
+      Pemberton Hardware Co. now expects to collect based on the bankruptcy filing.
+  - id: C
+    text: $110,000
+    rationale: 'Correct. This is a recognized subsequent event: the bankruptcy filing provides evidence
+      about a condition, Caldwell Supply Co.''s deteriorating finances, that already existed at year end.
+      Pemberton Hardware Co. writes the receivable down to the $40,000 it now expects to collect, a $110,000
+      adjustment ($150,000 − $40,000).'
+  - id: D
+    text: $150,000
+    rationale: Writes off the entire $150,000 receivable, ignoring the $40,000 Pemberton Hardware Co.
+      still expects to collect from Caldwell Supply Co..
+  answer: C
+  explanation: 'Correct. This is a recognized subsequent event: the bankruptcy filing provides evidence
+    about a condition, Caldwell Supply Co.''s deteriorating finances, that already existed at year end.
+    Pemberton Hardware Co. writes the receivable down to the $40,000 it now expects to collect, a $110,000
+    adjustment ($150,000 − $40,000).'

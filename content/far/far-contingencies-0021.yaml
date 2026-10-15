@@ -1,0 +1,140 @@
+id: far-contingencies-0021
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Contingencies and commitments
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - 'ASC 450-20 (loss contingencies: recognition and measurement)'
+  notes: Batch 18. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Marchwood Fabrication Co. retains the risk for product-liability claims rather than carrying third-party
+  insurance. At December 31, Year 1, it has received and not yet paid $180,000 of claims for incidents
+  that occurred before year end, all deemed probable and reasonably estimable. Its claims actuary also
+  estimates that $95,000 of additional claims will likely be filed for incidents that occurred before
+  year end but had not yet been reported to Marchwood Fabrication Co. as of December 31, Year 1, an amount
+  it judges probable and reasonably estimable. What amount should Marchwood Fabrication Co. accrue for
+  product-liability claims at December 31, Year 1?
+choices:
+- id: A
+  text: $0
+  rationale: 'Treats carrying no third-party policy as a reason not to accrue anything. Marchwood Fabrication
+    Co. retains the risk itself, so it accrues the claims exactly as an insurer would reserve for them:
+    both reported and incurred-but-not-reported claims that are probable and estimable.'
+- id: B
+  text: $95,000
+  rationale: Accrues only the estimated $95,000 of claims incurred but not reported, leaving out the $180,000
+    already reported and unpaid.
+- id: C
+  text: $180,000
+  rationale: Accrues only the $180,000 of claims already reported and unpaid, leaving out the claims incurred
+    before year end but not yet reported.
+- id: D
+  text: $275,000
+  rationale: 'Correct. Marchwood Fabrication Co. retains the risk for product-liability claims instead
+    of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
+    the $180,000 already reported and unpaid, plus the $95,000 of claims incurred before year end but
+    not yet reported, both judged probable and reasonably estimable, for $275,000.'
+answer: D
+explanation: 'Correct. Marchwood Fabrication Co. retains the risk for product-liability claims instead
+  of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
+  the $180,000 already reported and unpaid, plus the $95,000 of claims incurred before year end but not
+  yet reported, both judged probable and reasonably estimable, for $275,000.'
+variants:
+- stem: Hallowfield Instruments Co. retains the risk for product-liability claims rather than carrying
+    third-party insurance. At December 31, Year 1, it has received and not yet paid $240,000 of claims
+    for incidents that occurred before year end, all deemed probable and reasonably estimable. Its claims
+    actuary also estimates that $60,000 of additional claims will likely be filed for incidents that occurred
+    before year end but had not yet been reported to Hallowfield Instruments Co. as of December 31, Year
+    1, an amount it judges probable and reasonably estimable. What amount should Hallowfield Instruments
+    Co. accrue for product-liability claims at December 31, Year 1?
+  choices:
+  - id: A
+    text: $60,000
+    rationale: Accrues only the estimated $60,000 of claims incurred but not reported, leaving out the
+      $240,000 already reported and unpaid.
+  - id: B
+    text: $240,000
+    rationale: Accrues only the $240,000 of claims already reported and unpaid, leaving out the claims
+      incurred before year end but not yet reported.
+  - id: C
+    text: $300,000
+    rationale: 'Correct. Hallowfield Instruments Co. retains the risk for product-liability claims instead
+      of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for
+      them: the $240,000 already reported and unpaid, plus the $60,000 of claims incurred before year
+      end but not yet reported, both judged probable and reasonably estimable, for $300,000.'
+  - id: D
+    text: $330,000
+    rationale: Adds an additional $30,000 margin on top of the reported and unreported claims. GAAP measures
+      the accrual at the best estimate, not a cushion above it.
+  answer: C
+  explanation: 'Correct. Hallowfield Instruments Co. retains the risk for product-liability claims instead
+    of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
+    the $240,000 already reported and unpaid, plus the $60,000 of claims incurred before year end but
+    not yet reported, both judged probable and reasonably estimable, for $300,000.'
+- stem: Birchmoor Devices Co. retains the risk for product-liability claims rather than carrying third-party
+    insurance. At December 31, Year 1, it has received and not yet paid $90,000 of claims for incidents
+    that occurred before year end, all deemed probable and reasonably estimable. Its claims actuary also
+    estimates that $140,000 of additional claims will likely be filed for incidents that occurred before
+    year end but had not yet been reported to Birchmoor Devices Co. as of December 31, Year 1, an amount
+    it judges probable and reasonably estimable. What amount should Birchmoor Devices Co. accrue for product-liability
+    claims at December 31, Year 1?
+  choices:
+  - id: A
+    text: $0
+    rationale: 'Treats carrying no third-party policy as a reason not to accrue anything. Birchmoor Devices
+      Co. retains the risk itself, so it accrues the claims exactly as an insurer would reserve for them:
+      both reported and incurred-but-not-reported claims that are probable and estimable.'
+  - id: B
+    text: $90,000
+    rationale: Accrues only the $90,000 of claims already reported and unpaid, leaving out the claims
+      incurred before year end but not yet reported.
+  - id: C
+    text: $230,000
+    rationale: 'Correct. Birchmoor Devices Co. retains the risk for product-liability claims instead of
+      transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
+      the $90,000 already reported and unpaid, plus the $140,000 of claims incurred before year end but
+      not yet reported, both judged probable and reasonably estimable, for $230,000.'
+  - id: D
+    text: $260,000
+    rationale: Adds an additional $30,000 margin on top of the reported and unreported claims. GAAP measures
+      the accrual at the best estimate, not a cushion above it.
+  answer: C
+  explanation: 'Correct. Birchmoor Devices Co. retains the risk for product-liability claims instead of
+    transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
+    the $90,000 already reported and unpaid, plus the $140,000 of claims incurred before year end but
+    not yet reported, both judged probable and reasonably estimable, for $230,000.'
+- stem: Thaxted Mechanical Co. retains the risk for product-liability claims rather than carrying third-party
+    insurance. At December 31, Year 1, it has received and not yet paid $310,000 of claims for incidents
+    that occurred before year end, all deemed probable and reasonably estimable. Its claims actuary also
+    estimates that $40,000 of additional claims will likely be filed for incidents that occurred before
+    year end but had not yet been reported to Thaxted Mechanical Co. as of December 31, Year 1, an amount
+    it judges probable and reasonably estimable. What amount should Thaxted Mechanical Co. accrue for
+    product-liability claims at December 31, Year 1?
+  choices:
+  - id: A
+    text: $0
+    rationale: 'Treats carrying no third-party policy as a reason not to accrue anything. Thaxted Mechanical
+      Co. retains the risk itself, so it accrues the claims exactly as an insurer would reserve for them:
+      both reported and incurred-but-not-reported claims that are probable and estimable.'
+  - id: B
+    text: $40,000
+    rationale: Accrues only the estimated $40,000 of claims incurred but not reported, leaving out the
+      $310,000 already reported and unpaid.
+  - id: C
+    text: $310,000
+    rationale: Accrues only the $310,000 of claims already reported and unpaid, leaving out the claims
+      incurred before year end but not yet reported.
+  - id: D
+    text: $350,000
+    rationale: 'Correct. Thaxted Mechanical Co. retains the risk for product-liability claims instead
+      of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for
+      them: the $310,000 already reported and unpaid, plus the $40,000 of claims incurred before year
+      end but not yet reported, both judged probable and reasonably estimable, for $350,000.'
+  answer: D
+  explanation: 'Correct. Thaxted Mechanical Co. retains the risk for product-liability claims instead
+    of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
+    the $310,000 already reported and unpaid, plus the $40,000 of claims incurred before year end but
+    not yet reported, both judged probable and reasonably estimable, for $350,000.'

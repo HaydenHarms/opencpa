@@ -1,0 +1,149 @@
+id: far-subsequent-events-0020
+type: mcq
+blueprint:
+  section: FAR
+  area: Area III — Select Transactions
+  topic: Subsequent events
+  skill: Application
+review:
+  status: reviewed
+  references:
+  - ASC 855-10 (recognized and nonrecognized subsequent events; evaluation through the date the statements
+    are issued)
+  notes: Batch 18. Written from scratch; answers solved and every number and distractor computed in code.
+stem: Oakhurst Fabrication Co.'s Year 1 financial statements, which report a specialized machine at its
+  $460,000 carrying amount, will be issued on March 10, Year 2. At December 31, Year 1, Calder Industrial
+  Group, the only customer for the machine's output, was past due on payments and had told Oakhurst Fabrication
+  Co. that it intended to cancel their purchase contract once the contract's notice period ran, though
+  Oakhurst Fabrication Co. had not yet received formal cancellation. On January 25, Year 2, before the
+  statements are issued, Calder Industrial Group delivered the formal cancellation notice. With no other
+  customer for the machine's specialized output, Oakhurst Fabrication Co. determines the machine's fair
+  value is $150,000. This is a recognized subsequent event. What adjustment should Oakhurst Fabrication
+  Co. make to the carrying amount of the machine in its December 31, Year 1, financial statements?
+choices:
+- id: A
+  text: $150,000
+  rationale: Reports the machine's $150,000 fair value as the adjustment, rather than the loss needed
+    to write the machine down to that amount.
+- id: B
+  text: $230,000
+  rationale: Writes the machine down by half of its $460,000 carrying amount instead of down to its confirmed
+    $150,000 fair value.
+- id: C
+  text: $310,000
+  rationale: 'Correct. This is a recognized subsequent event: Calder Industrial Group''s formal cancellation
+    confirms a condition that existed at year end, Calder Industrial Group''s stated intent to cancel.
+    Oakhurst Fabrication Co. writes the machine down from its $460,000 carrying amount to its confirmed
+    $150,000 fair value, a $310,000 loss ($460,000 − $150,000).'
+- id: D
+  text: $460,000
+  rationale: Writes the machine's entire $460,000 carrying amount off, as if it had no remaining value,
+    when its confirmed fair value is $150,000.
+answer: C
+explanation: 'Correct. This is a recognized subsequent event: Calder Industrial Group''s formal cancellation
+  confirms a condition that existed at year end, Calder Industrial Group''s stated intent to cancel. Oakhurst
+  Fabrication Co. writes the machine down from its $460,000 carrying amount to its confirmed $150,000
+  fair value, a $310,000 loss ($460,000 − $150,000).'
+variants:
+- stem: Westmarch Tooling Co.'s Year 1 financial statements, which report a specialized machine at its
+    $600,000 carrying amount, will be issued on February 20, Year 2. At December 31, Year 1, Dunbarton
+    Freight Lines, the only customer for the machine's output, was past due on payments and had told Westmarch
+    Tooling Co. that it intended to cancel their purchase contract once the contract's notice period ran,
+    though Westmarch Tooling Co. had not yet received formal cancellation. On January 8, Year 2, before
+    the statements are issued, Dunbarton Freight Lines delivered the formal cancellation notice. With
+    no other customer for the machine's specialized output, Westmarch Tooling Co. determines the machine's
+    fair value is $90,000. This is a recognized subsequent event. What adjustment should Westmarch Tooling
+    Co. make to the carrying amount of the machine in its December 31, Year 1, financial statements?
+  choices:
+  - id: A
+    text: $0
+    rationale: Treats Dunbarton Freight Lines's cancellation as a nonrecognized subsequent event requiring
+      disclosure only. Westmarch Tooling Co. already had notice of the condition causing the loss, Dunbarton
+      Freight Lines's intent to cancel, before year end, so the impairment is recognized.
+  - id: B
+    text: $90,000
+    rationale: Reports the machine's $90,000 fair value as the adjustment, rather than the loss needed
+      to write the machine down to that amount.
+  - id: C
+    text: $300,000
+    rationale: Writes the machine down by half of its $600,000 carrying amount instead of down to its
+      confirmed $90,000 fair value.
+  - id: D
+    text: $510,000
+    rationale: 'Correct. This is a recognized subsequent event: Dunbarton Freight Lines''s formal cancellation
+      confirms a condition that existed at year end, Dunbarton Freight Lines''s stated intent to cancel.
+      Westmarch Tooling Co. writes the machine down from its $600,000 carrying amount to its confirmed
+      $90,000 fair value, a $510,000 loss ($600,000 − $90,000).'
+  answer: D
+  explanation: 'Correct. This is a recognized subsequent event: Dunbarton Freight Lines''s formal cancellation
+    confirms a condition that existed at year end, Dunbarton Freight Lines''s stated intent to cancel.
+    Westmarch Tooling Co. writes the machine down from its $600,000 carrying amount to its confirmed $90,000
+    fair value, a $510,000 loss ($600,000 − $90,000).'
+- stem: Ashgrove Precision Co.'s Year 1 financial statements, which report a specialized machine at its
+    $520,000 carrying amount, will be issued on March 28, Year 2. At December 31, Year 1, Pemberton Retail
+    Group, the only customer for the machine's output, was past due on payments and had told Ashgrove
+    Precision Co. that it intended to cancel their purchase contract once the contract's notice period
+    ran, though Ashgrove Precision Co. had not yet received formal cancellation. On February 2, Year 2,
+    before the statements are issued, Pemberton Retail Group delivered the formal cancellation notice.
+    With no other customer for the machine's specialized output, Ashgrove Precision Co. determines the
+    machine's fair value is $340,000. This is a recognized subsequent event. What adjustment should Ashgrove
+    Precision Co. make to the carrying amount of the machine in its December 31, Year 1, financial statements?
+  choices:
+  - id: A
+    text: $0
+    rationale: Treats Pemberton Retail Group's cancellation as a nonrecognized subsequent event requiring
+      disclosure only. Ashgrove Precision Co. already had notice of the condition causing the loss, Pemberton
+      Retail Group's intent to cancel, before year end, so the impairment is recognized.
+  - id: B
+    text: $180,000
+    rationale: 'Correct. This is a recognized subsequent event: Pemberton Retail Group''s formal cancellation
+      confirms a condition that existed at year end, Pemberton Retail Group''s stated intent to cancel.
+      Ashgrove Precision Co. writes the machine down from its $520,000 carrying amount to its confirmed
+      $340,000 fair value, a $180,000 loss ($520,000 − $340,000).'
+  - id: C
+    text: $340,000
+    rationale: Reports the machine's $340,000 fair value as the adjustment, rather than the loss needed
+      to write the machine down to that amount.
+  - id: D
+    text: $520,000
+    rationale: Writes the machine's entire $520,000 carrying amount off, as if it had no remaining value,
+      when its confirmed fair value is $340,000.
+  answer: B
+  explanation: 'Correct. This is a recognized subsequent event: Pemberton Retail Group''s formal cancellation
+    confirms a condition that existed at year end, Pemberton Retail Group''s stated intent to cancel.
+    Ashgrove Precision Co. writes the machine down from its $520,000 carrying amount to its confirmed
+    $340,000 fair value, a $180,000 loss ($520,000 − $340,000).'
+- stem: Nettlefold Machining Co.'s Year 1 financial statements, which report a specialized machine at
+    its $280,000 carrying amount, will be issued on February 12, Year 2. At December 31, Year 1, Harrowgate
+    Supply Co., the only customer for the machine's output, was past due on payments and had told Nettlefold
+    Machining Co. that it intended to cancel their purchase contract once the contract's notice period
+    ran, though Nettlefold Machining Co. had not yet received formal cancellation. On January 15, Year
+    2, before the statements are issued, Harrowgate Supply Co. delivered the formal cancellation notice.
+    With no other customer for the machine's specialized output, Nettlefold Machining Co. determines the
+    machine's fair value is $60,000. This is a recognized subsequent event. What adjustment should Nettlefold
+    Machining Co. make to the carrying amount of the machine in its December 31, Year 1, financial statements?
+  choices:
+  - id: A
+    text: $0
+    rationale: Treats Harrowgate Supply Co.'s cancellation as a nonrecognized subsequent event requiring
+      disclosure only. Nettlefold Machining Co. already had notice of the condition causing the loss,
+      Harrowgate Supply Co.'s intent to cancel, before year end, so the impairment is recognized.
+  - id: B
+    text: $140,000
+    rationale: Writes the machine down by half of its $280,000 carrying amount instead of down to its
+      confirmed $60,000 fair value.
+  - id: C
+    text: $220,000
+    rationale: 'Correct. This is a recognized subsequent event: Harrowgate Supply Co.''s formal cancellation
+      confirms a condition that existed at year end, Harrowgate Supply Co.''s stated intent to cancel.
+      Nettlefold Machining Co. writes the machine down from its $280,000 carrying amount to its confirmed
+      $60,000 fair value, a $220,000 loss ($280,000 − $60,000).'
+  - id: D
+    text: $280,000
+    rationale: Writes the machine's entire $280,000 carrying amount off, as if it had no remaining value,
+      when its confirmed fair value is $60,000.
+  answer: C
+  explanation: 'Correct. This is a recognized subsequent event: Harrowgate Supply Co.''s formal cancellation
+    confirms a condition that existed at year end, Harrowgate Supply Co.''s stated intent to cancel. Nettlefold
+    Machining Co. writes the machine down from its $280,000 carrying amount to its confirmed $60,000 fair
+    value, a $220,000 loss ($280,000 − $60,000).'
