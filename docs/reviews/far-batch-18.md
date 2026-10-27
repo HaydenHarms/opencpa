@@ -22,7 +22,7 @@ As drafted, `far-subsequent-events-0020` stated that the cancellation was a reco
 - **Batch mix:** all four Application, all Area III. (Area III is at 27.4% of the reviewed bank before this batch, inside its 25–35% range, with room to grow; the batch doesn't touch Remembering and Understanding, which stays over its 15% cap pending batches 15-17.)
 - **Variants:** 12. Items plus variants: 16.
 - **Version-0 key letters:** C, C, B, C. All versions: A 0, B 5, C 11, D 0. The skew is a side effect of every version now carrying the $0 or general-reserve distractor (the $0 choice always sorts first, the general reserve always sorts above the key); the bank-wide position balance absorbs it, but the next batch should lean toward A and D keys.
-- **Bank after batch 18:** 367 FAR MCQs (22.9% toward the 1,600 goal). Every one of the 113 blueprint tasks still has two or more items.
+- **Bank after batch 18:** 322 reviewed FAR MCQs (20.1% toward the 1,600 goal). Every one of the 113 blueprint tasks still has two or more items.
 
 ## Process
 
