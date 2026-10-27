@@ -138,4 +138,4 @@ OpenCPA is not affiliated with the AICPA, NASBA, or any state board of accountan
 
 ## License
 
-Code: MIT. Content: CC BY-SA 4.0.
+Code: [MPL-2.0](LICENSE). Content: CC BY-SA 4.0.

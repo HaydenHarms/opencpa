@@ -189,8 +189,8 @@ export function Terms() {
       <p>
         OpenCPA’s questions and explanations are licensed under{' '}
         <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and its code
-        under the MIT License. You may reuse them under those licenses, with attribution. The source
-        is at <a href={REPO}>github.com/HaydenHarms/opencpa</a>.
+        under the Mozilla Public License 2.0. You may reuse them under those licenses, with
+        attribution. The source is at <a href={REPO}>github.com/HaydenHarms/opencpa</a>.
       </p>
 
       <h2>Claude</h2>
