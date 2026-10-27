@@ -54,14 +54,11 @@ def receivable_writedown(p):
         p[k] for k in ("co", "cust", "filed", "issue", "deteriorate", "stopped", "r", "rec"))
     r, rec = D(r), D(rec)
     writedown = r - rec
-    balance, half, full, zero = rec, r / 2, r, D(0)
+    balance, full = rec, r
     pool = {
         "balance": (m(balance),
                     f"Reports the {m(balance)} {cust} is now expected to pay as the adjustment, rather "
                     f"than the amount of the write-down."),
-        "half": (m(half),
-                 f"Writes the receivable down by half of its {m(r)} balance instead of down to the "
-                 f"{m(rec)} {co} now expects to collect based on the bankruptcy filing."),
         "full": (m(full),
                  f"Writes off the entire {m(r)} receivable, ignoring the {m(rec)} {co} still expects to "
                  f"collect from {cust}."),
@@ -91,13 +88,13 @@ def receivable_writedown(p):
 
 SE_RECEIVABLE = [
     dict(co="Firthway Appliances Co.", cust="Major Buyer Corp.", filed="February 10", issue="March 15",
-         deteriorate="October", stopped="December", r="340000", rec="90000", use=["balance", "half", "full"]),
+         deteriorate="October", stopped="December", r="340000", rec="90000", use=["balance", "full", "zero"]),
     dict(co="Gorsefield Marine Co.", cust="Anchor Traders Inc.", filed="January 20", issue="February 28",
-         deteriorate="September", stopped="November", r="480000", rec="60000", use=["balance", "half", "zero"]),
+         deteriorate="September", stopped="November", r="480000", rec="60000", use=["balance", "full", "zero"]),
     dict(co="Thornbury Logistics Co.", cust="Westcote Freight Ltd.", filed="February 15", issue="April 2",
-         deteriorate="November", stopped="January", r="300000", rec="200000", use=["balance", "full", "zero"]),
+         deteriorate="November", stopped="December", r="300000", rec="200000", use=["balance", "full", "zero"]),
     dict(co="Pemberton Hardware Co.", cust="Caldwell Supply Co.", filed="January 30", issue="March 20",
-         deteriorate="August", stopped="November", r="150000", rec="40000", use=["half", "full", "zero"]),
+         deteriorate="August", stopped="November", r="150000", rec="40000", use=["balance", "full", "zero"]),
 ]
 
 
@@ -109,14 +106,11 @@ def impairment_confirmed(p):
         p[k] for k in ("co", "cust", "cancel", "issue", "notice", "x", "fv"))
     x, fv = D(x), D(fv)
     loss = x - fv
-    balance, half, full, zero = fv, x / 2, x, D(0)
+    balance, full = fv, x
     pool = {
         "balance": (m(balance),
                     f"Reports the machine's {m(balance)} fair value as the adjustment, rather than the "
                     f"loss needed to write the machine down to that amount."),
-        "half": (m(half),
-                 f"Writes the machine down by half of its {m(x)} carrying amount instead of down to its "
-                 f"confirmed {m(fv)} fair value."),
         "full": (m(full),
                  f"Writes the machine's entire {m(x)} carrying amount off, as if it had no remaining "
                  f"value, when its confirmed fair value is {m(fv)}."),
@@ -139,7 +133,7 @@ def impairment_confirmed(p):
         f"their purchase contract once the contract's notice period ran, though {co} had not yet received "
         f"formal cancellation. On {notice}, Year 2, before the statements are issued, {cust} delivered the "
         f"formal cancellation notice. With no other customer for the machine's specialized output, {co} "
-        f"determines the machine's fair value is {m(fv)}. This is a recognized subsequent event. What "
+        f"determines the machine's fair value is {m(fv)}. What "
         f"adjustment should {co} make to the carrying amount of the machine in its December 31, Year 1, "
         f"financial statements?",
         choices, answer, key[1])
@@ -147,13 +141,13 @@ def impairment_confirmed(p):
 
 SE_IMPAIRMENT = [
     dict(co="Oakhurst Fabrication Co.", cust="Calder Industrial Group", cancel="cancel", issue="March 10",
-         notice="January 25", x="460000", fv="150000", use=["balance", "half", "full"]),
+         notice="January 25", x="460000", fv="150000", use=["balance", "full", "zero"]),
     dict(co="Westmarch Tooling Co.", cust="Dunbarton Freight Lines", cancel="cancel", issue="February 20",
-         notice="January 8", x="600000", fv="90000", use=["balance", "half", "zero"]),
+         notice="January 8", x="600000", fv="90000", use=["balance", "full", "zero"]),
     dict(co="Ashgrove Precision Co.", cust="Pemberton Retail Group", cancel="cancel", issue="March 28",
          notice="February 2", x="520000", fv="340000", use=["balance", "full", "zero"]),
     dict(co="Nettlefold Machining Co.", cust="Harrowgate Supply Co.", cancel="cancel", issue="February 12",
-         notice="January 15", x="280000", fv="60000", use=["half", "full", "zero"]),
+         notice="January 15", x="280000", fv="60000", use=["balance", "full", "zero"]),
 ]
 
 
@@ -218,7 +212,7 @@ def self_insured_ibnr(p):
     reported, ibnr, general = D(reported), D(ibnr), D(general)
     key_amt = reported + ibnr
     reserve = key_amt + general
-    zero = D(0)
+    swap = reported + general
     pool = {
         "reported": (m(reported),
                      f"Accrues only the {m(reported)} of claims already reported and unpaid, leaving out "
@@ -230,6 +224,11 @@ def self_insured_ibnr(p):
                  f"Treats carrying no third-party policy as a reason not to accrue anything. {co} retains "
                  f"the risk itself, so it accrues the claims exactly as an insurer would reserve for them: "
                  f"both reported and incurred-but-not-reported claims that are probable and estimable."),
+        "swap": (m(swap),
+                 f"Accrues the {m(reported)} of reported claims plus the board's {m(general)} general "
+                 f"reserve in place of the actuary's {m(ibnr)} estimate of claims incurred but not reported. "
+                 f"The general reserve covers unspecified future claims, not incidents before year end, so "
+                 f"it is not accrued; the IBNR estimate is."),
         "reserve": (m(reserve),
                     f"Adds the board's {m(general)} general contingency reserve for unspecified future "
                     f"claims to the {m(key_amt)} of claims actually probable and estimable. GAAP prohibits "
@@ -260,18 +259,21 @@ def self_insured_ibnr(p):
 
 CONT_IBNR = [
     dict(co="Marchwood Fabrication Co.", reported="180000", ibnr="95000", general="65000",
-         use=["reported", "ibnr", "zero"]),
+         use=["reported", "ibnr", "reserve"]),
     dict(co="Hallowfield Instruments Co.", reported="240000", ibnr="60000", general="65000",
          use=["reported", "ibnr", "reserve"]),
     dict(co="Birchmoor Devices Co.", reported="90000", ibnr="140000", general="65000",
          use=["reported", "zero", "reserve"]),
     dict(co="Thaxted Mechanical Co.", reported="310000", ibnr="40000", general="65000",
-         use=["ibnr", "zero", "reported"]),
+         use=["reported", "swap", "reserve"]),
 ]
 
 
-def build(id, area, topic, skill, refs, fn, params):
-    """One item from params[0] (finalized, so choices sort ascending), with params[1:] as its variants."""
+def build(id, area, topic, skill, refs, fn, params, twist=None):
+    """One item from params[0] (finalized, so choices sort ascending), with params[1:] as its variants.
+    `twist` names the family's central-twist distractor, which every version must offer."""
+    if twist:
+        assert all(twist in p["use"] for p in params), f"{id}: a version lacks the {twist!r} distractor"
     base = fn(params[0])
     it = mcq(id, area, topic, skill, refs, base["stem"],
              [(c["text"], c["rationale"]) for c in base["choices"]], base["answer"], base["explanation"])
@@ -286,13 +288,13 @@ def build(id, area, topic, skill, refs, fn, params):
 def main():
     items = [
         build("far-subsequent-events-0019", A3, "Subsequent events", AP, REFS_SE,
-              receivable_writedown, SE_RECEIVABLE),
+              receivable_writedown, SE_RECEIVABLE, twist="zero"),
         build("far-subsequent-events-0020", A3, "Subsequent events", AP, REFS_SE,
-              impairment_confirmed, SE_IMPAIRMENT),
+              impairment_confirmed, SE_IMPAIRMENT, twist="zero"),
         build("far-contingencies-0020", A3, "Contingencies and commitments", AP, REFS_CONT,
               probable_outcome, CONT_PROBABLE),
         build("far-contingencies-0021", A3, "Contingencies and commitments", AP, REFS_CONT,
-              self_insured_ibnr, CONT_IBNR),
+              self_insured_ibnr, CONT_IBNR, twist="reserve"),
     ]
     n = audit(items)
     print(f"{len(items)} items, {sum(len(it.get('variants') or []) for it in items)} variants, "

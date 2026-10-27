@@ -21,19 +21,14 @@ stem: Marchwood Fabrication Co. retains the risk for product-liability claims ra
   Marchwood Fabrication Co. accrue for product-liability claims at December 31, Year 1?
 choices:
 - id: A
-  text: $0
-  rationale: 'Treats carrying no third-party policy as a reason not to accrue anything. Marchwood Fabrication
-    Co. retains the risk itself, so it accrues the claims exactly as an insurer would reserve for them:
-    both reported and incurred-but-not-reported claims that are probable and estimable.'
-- id: B
   text: $95,000
   rationale: Accrues only the estimated $95,000 of claims incurred but not reported, leaving out the $180,000
     already reported and unpaid.
-- id: C
+- id: B
   text: $180,000
   rationale: Accrues only the $180,000 of claims already reported and unpaid, leaving out the claims incurred
     before year end but not yet reported.
-- id: D
+- id: C
   text: $275,000
   rationale: 'Correct. Marchwood Fabrication Co. retains the risk for product-liability claims instead
     of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
@@ -41,7 +36,12 @@ choices:
     not yet reported, both judged probable and reasonably estimable, for $275,000. The board''s separate
     general contingency reserve for unspecified future claims is not accrued; GAAP does not permit a general
     reserve for risks not tied to a specific, probable, estimable loss.'
-answer: D
+- id: D
+  text: $340,000
+  rationale: Adds the board's $65,000 general contingency reserve for unspecified future claims to the
+    $275,000 of claims actually probable and estimable. GAAP prohibits accruing a general or unspecified
+    business risk; Marchwood Fabrication Co. accrues only claims that are probable and reasonably estimable.
+answer: C
 explanation: 'Correct. Marchwood Fabrication Co. retains the risk for product-liability claims instead
   of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
   the $180,000 already reported and unpaid, plus the $95,000 of claims incurred before year end but not
@@ -139,19 +139,10 @@ variants:
     should Thaxted Mechanical Co. accrue for product-liability claims at December 31, Year 1?
   choices:
   - id: A
-    text: $0
-    rationale: 'Treats carrying no third-party policy as a reason not to accrue anything. Thaxted Mechanical
-      Co. retains the risk itself, so it accrues the claims exactly as an insurer would reserve for them:
-      both reported and incurred-but-not-reported claims that are probable and estimable.'
-  - id: B
-    text: $40,000
-    rationale: Accrues only the estimated $40,000 of claims incurred but not reported, leaving out the
-      $310,000 already reported and unpaid.
-  - id: C
     text: $310,000
     rationale: Accrues only the $310,000 of claims already reported and unpaid, leaving out the claims
       incurred before year end but not yet reported.
-  - id: D
+  - id: B
     text: $350,000
     rationale: 'Correct. Thaxted Mechanical Co. retains the risk for product-liability claims instead
       of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for
@@ -159,7 +150,18 @@ variants:
       end but not yet reported, both judged probable and reasonably estimable, for $350,000. The board''s
       separate general contingency reserve for unspecified future claims is not accrued; GAAP does not
       permit a general reserve for risks not tied to a specific, probable, estimable loss.'
-  answer: D
+  - id: C
+    text: $375,000
+    rationale: Accrues the $310,000 of reported claims plus the board's $65,000 general reserve in place
+      of the actuary's $40,000 estimate of claims incurred but not reported. The general reserve covers
+      unspecified future claims, not incidents before year end, so it is not accrued; the IBNR estimate
+      is.
+  - id: D
+    text: $415,000
+    rationale: Adds the board's $65,000 general contingency reserve for unspecified future claims to the
+      $350,000 of claims actually probable and estimable. GAAP prohibits accruing a general or unspecified
+      business risk; Thaxted Mechanical Co. accrues only claims that are probable and reasonably estimable.
+  answer: B
   explanation: 'Correct. Thaxted Mechanical Co. retains the risk for product-liability claims instead
     of transferring it to an insurer, so it accrues claims the same way an insurer would reserve for them:
     the $310,000 already reported and unpaid, plus the $40,000 of claims incurred before year end but
