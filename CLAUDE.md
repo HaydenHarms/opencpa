@@ -21,7 +21,7 @@ Commands: `pnpm install`, `pnpm dev`, `pnpm test`, `pnpm typecheck`, `pnpm conte
 
 ## Principles (non-negotiable)
 
-- **Original content only.** Nothing from AICPA released questions, Becker, UWorld, Gleim or Roger. Content is CC BY-SA; code is MIT.
+- **Original content only.** Nothing from AICPA released questions, Becker, UWorld, Gleim or Roger. Content is CC BY-SA; code is MPL-2.0.
 - **The tutor explains, it never grades.** Grading stays deterministic in `packages/engine`.
 - **Answers never reach the browser before an attempt.** `toPublicMcq` strips the answer, rationales and explanation.
 - **Students bring their own Claude** through the connector, with their own Claude account, so OpenCPA never pays for model calls and hosting stays on Cloudflare's free tier. There is no in-app tutor and no API-key option (Hayden dropped both on 2026-10-02); the connector is the only Claude integration.
